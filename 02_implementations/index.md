@@ -13,22 +13,22 @@ tags: [implementations, niveau-3]
 
 ## Place dans la hiérarchie documentaire
 
-Niveau **3** de la hiérarchie du [Cadre d'Architecture d'Entreprise](../framework/overview/index.md). Chaque document de ce dossier correspond à **une initiative** inscrite au [portefeuille national](../framework/portfolio/index.md).
+Niveau **3** de la hiérarchie du [Cadre d'Architecture d'Entreprise](../00_framework/overview/index.md). Chaque document de ce dossier correspond à **une initiative** inscrite au [portefeuille national](../00_framework/portfolio/index.md).
 
 | Niveau | Dossier | Document |
 |--------|---------|----------|
-| 1 | [`framework/`](../framework/) | Cadre d'Architecture d'Entreprise (CAESN) |
-| 2 | [`reference-technique/`](../reference-technique/) | Architecture de Référence Technique (ART) |
+| 1 | [`framework/`](../00_framework/) | Cadre d'Architecture d'Entreprise (CAESN) |
+| 2 | [`reference-technique/`](../01_reference-technique/) | Architecture de Référence Technique (ART) |
 | 3 | [`implementations/`](./index.md) | Spécifications par initiative (ce dossier) |
 
 ## Rôle
 
 Les spécifications d'implémentation déclinent, pour chaque initiative, le niveau 2 (ART) au niveau propre de la solution : **configurations**, **API**, **contrats d'interfaces**, paramétrages, scénarios de déploiement et de test. Elles s'adressent aux développeurs, fournisseurs et équipes techniques.
 
-Elles sont encadrées par la [fiche d'initiative](../framework/portfolio/initiative-card.md) (alignement valeur) et doivent respecter :
-- les [principes](../framework/principles/index.md) du niveau 1 ;
+Elles sont encadrées par la [fiche d'initiative](../00_framework/portfolio/initiative-card.md) (alignement valeur) et doivent respecter :
+- les [principes](../00_framework/principles/index.md) du niveau 1 ;
 - les standards techniques du niveau 2 (déclinés de l'ART) ;
-- les [critères d'homologation](../framework/application/lifecycle.md).
+- les [critères d'homologation](../00_framework/application/lifecycle.md).
 
 ## Convention de nommage
 
@@ -45,5 +45,5 @@ implementations/
 
 ## Liens
 
-- [Cadre (niveau 1)](../framework/overview/index.md)
-- [ART (niveau 2)](../reference-technique/index.md)
+- [Cadre (niveau 1)](../00_framework/overview/index.md)
+- [ART (niveau 2)](../01_reference-technique/index.md)

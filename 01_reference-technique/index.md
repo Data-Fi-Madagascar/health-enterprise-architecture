@@ -13,13 +13,13 @@ tags: [art, niveau-2, standards]
 
 ## Place dans la hiérarchie documentaire
 
-Niveau **2** de la hiérarchie du [Cadre d'Architecture d'Entreprise](../framework/overview/index.md). Ce dossier est volontairement distinct du dossier [`framework/`](../framework/) qui contient le niveau 1 (valeur, capabilités, principes, gouvernance).
+Niveau **2** de la hiérarchie du [Cadre d'Architecture d'Entreprise](../00_framework/overview/index.md). Ce dossier est volontairement distinct du dossier [`framework/`](../00_framework/) qui contient le niveau 1 (valeur, capabilités, principes, gouvernance).
 
 | Niveau | Dossier | Document |
 |--------|---------|----------|
-| 1 | [`framework/`](../framework/) | Cadre d'Architecture d'Entreprise (CAESN) |
+| 1 | [`framework/`](../00_framework/) | Cadre d'Architecture d'Entreprise (CAESN) |
 | 2 | [`reference-technique/`](./index.md) | Architecture de Référence Technique (ce dossier) |
-| 3 | [`implementations/`](../implementations/) | Spécifications d'implémentation par initiative |
+| 3 | [`implementations/`](../02_implementations/) | Spécifications d'implémentation par initiative |
 
 ## Rôle de l'ART
 
@@ -29,10 +29,10 @@ Contrairement au cadre (niveau 1), l'ART peut intégrer la sélection de produit
 
 Points couverts (à compléter) :
 - Standards d'échange et formats (FHIR, HL7, OpenHIE, etc.)
-- Solutions logicielles et briques retenues pour les [couches applicatives](../framework/application/layers.md)
+- Solutions logicielles et briques retenues pour les [couches applicatives](../00_framework/application/layers.md)
 - Règles d'homologation et critères de conformité technique
 - Modèle d'hébergement, cybersécurité, journalisation
-- Normes et standards déclinés depuis [`framework/standards/`](../framework/standards/index.md)
+- Normes et standards déclinés depuis [`framework/standards/`](../00_framework/standards/index.md)
 
 ## Structure proposée
 
@@ -42,5 +42,5 @@ Points couverts (à compléter) :
 
 ## Liens
 
-- [Cadre (niveau 1)](../framework/overview/index.md)
-- [Implémentations (niveau 3)](../implementations/index.md)
+- [Cadre (niveau 1)](../00_framework/overview/index.md)
+- [Implémentations (niveau 3)](../02_implementations/index.md)
