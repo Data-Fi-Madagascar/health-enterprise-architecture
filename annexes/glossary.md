@@ -1,0 +1,58 @@
+---
+title: Glossaire
+id: annexe-glossary
+domain: annexes
+version: "0.1.0"
+status: draft
+last_reviewed: 2026-07-03
+owner: Bureau de Réalisation de la Valeur
+tags: [glossaire, terminologie]
+---
+
+# Glossaire
+
+**Architecture d'entreprise** — Discipline de management qui décrit de façon structurée et cohérente l'ensemble d'une organisation : sa stratégie, ses processus métier, ses systèmes d'information, ses données et son infrastructure technologique. Elle permet d'aligner les investissements sur les priorités stratégiques et d'assurer la cohérence de l'ensemble.
+
+**Architecture de Référence Technique** — Document de niveau 2, distinct du présent cadre, qui traduit les principes architecturaux en standards techniques précis, solutions logicielles retenues, configurations et règles d'homologation. Il s'adresse aux équipes techniques et aux intégrateurs.
+
+**Architecture runway** — Ensemble des capabilités fondamentales qui doivent être développées en priorité car leur absence bloque le développement de toutes les autres. Dans le présent cadre, il s'agit de CAP-13, CAP-14, CAP-15 et CAP-16.
+
+**Bureau de Réalisation de la Valeur** — Instance institutionnelle chargée de vérifier que les initiatives financées produisent réellement les bénéfices attendus, d'arbitrer les décisions de portefeuille et de rendre compte aux instances de gouvernance nationale. Traduction française de *Value Realization Office*.
+
+**Capabilité** — Ce que le système de santé doit être en mesure de faire de façon durable pour exécuter ses flux de valeur. Une capabilité repose sur la combinaison de compétences humaines, de processus organisationnels, de données et de technologies.
+
+**Chaîne de valeur d'une initiative** — Représentation explicite du lien causal entre l'*output* technique d'une initiative, le résultat intermédiaire qu'elle génère dans le fonctionnement du système, et la valeur finale pour le bénéficiaire. Appelée *Benefit Dependency Network* dans la terminologie internationale de l'architecture d'entreprise.
+
+**Comité National d'Architecture Santé Numérique** — Instance collégiale qui garantit la cohérence architecturale du système d'information sanitaire, homologue les solutions, arbitre les standards, statue sur les dérogations et suit la rationalisation du paysage applicatif. Présidée par le Secrétaire Général du Ministère ou son représentant.
+
+**Coût total de possession** — Coût complet d'un système ou d'une initiative sur l'ensemble de sa durée de vie : investissement initial, déploiement, exploitation, maintenance, formation des utilisateurs et support technique. En anglais : *Total Cost of Ownership* (TCO).
+
+**Delta de maturité** — Écart entre le niveau de maturité actuel d'une capabilité et le niveau cible défini pour une échéance. C'est cet écart qui doit guider la priorisation des investissements.
+
+**DPI-H** — *Digital Public Infrastructure for Health*. Cadre normatif de l'OMS définissant les six composantes d'infrastructure numérique que tout système de santé national doit développer comme biens communs : identité, échange de données, registre des formations sanitaires, terminologie, analyse, et confiance et sécurité.
+
+**Flux de valeur** — Séquence complète des activités qui permettent de produire un résultat de valeur pour un bénéficiaire identifié, depuis le déclenchement du besoin jusqu'à la livraison du résultat. Appelé *value stream* dans la terminologie internationale.
+
+**GovStack Building Blocks** — Référentiel international définissant les composantes numériques transversales à l'ensemble de l'administration publique : identité civile, paiements, échanges inter-administrations, consentement, entre autres.
+
+**Homologation** — Processus par lequel le Comité National d'Architecture Santé Numérique vérifie qu'une solution numérique respecte les principes du cadre et les standards définis dans l'Architecture de Référence Technique, avant d'autoriser son déploiement dans le secteur santé.
+
+**Interopérabilité** — Capabilité de systèmes informatiques distincts à échanger des données et à les utiliser mutuellement, de façon automatisée et fiable, sans transformation manuelle.
+
+**Niveau de maturité** — Mesure du degré de développement d'une capabilité, selon une échelle de 1 (initial) à 5 (optimisé).
+
+**OpenHIE** — *Open Health Information Exchange*. Architecture de référence internationale définissant comment organiser les composantes d'un système d'information sanitaire en couches interopérables : couche de médiation, couche de référence (registres et terminologies) et couche de points de service.
+
+**Portefeuille d'initiatives** — Ensemble structuré des projets et programmes numériques en cours ou planifiés dans le secteur santé, géré collectivement en fonction de leur contribution à la valeur nationale.
+
+**Référentiel national** — Base de données de référence partagée par l'ensemble des systèmes d'information sanitaire, garantissant que tous les systèmes utilisent les mêmes identifiants, définitions et codifications. Les référentiels nationaux sont des biens communs qui ne peuvent être fragmentés par des solutions propriétaires.
+
+**Soutenabilité** — Capabilité d'un système ou d'une initiative à continuer de fonctionner et de produire de la valeur après la fin du financement initial, grâce à des ressources nationales propres.
+
+**Value-Driven Enterprise Architecture** — Approche de l'architecture d'entreprise qui part des résultats attendus pour les bénéficiaires et remonte vers les capabilités et les technologies nécessaires pour les produire, plutôt que de partir des technologies disponibles. Approche retenue par le présent cadre.
+
+## Liens
+
+- [Annexes](./index.md)
+- [Matrice de lecture](./reading-matrix.md)
+- [Acronymes](./acronyms.md)

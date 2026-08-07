@@ -1,0 +1,78 @@
+---
+title: Fiche standard d'initiative orientée valeur
+id: initiative-card
+domain: portfolio
+version: "0.1.0"
+status: draft
+last_reviewed: 2026-07-03
+owner: Bureau de Réalisation de la Valeur
+tags: [portefeuille, fiche, initiative]
+---
+
+# Fiche standard d'initiative orientée valeur
+
+Toute initiative soumise au portefeuille national doit être décrite selon une fiche standard. L'incapacité à renseigner les champs essentiels signifie que l'initiative n'est pas assez mûre pour être financée, déployée ou généralisée.
+
+## Identification
+
+| Élément | Question à renseigner |
+|---------|------------------------|
+| Nom | Comment l'initiative est-elle désignée ? |
+| Porteur métier | Quelle direction porte la valeur attendue ? |
+| Responsable technique | Quelle entité porte la solution technique ? |
+| Partenaire / financeur | Qui finance ou appuie ? |
+| Périmètre géographique | National, régional, district, FOSA, communautaire, pilote ? |
+| Statut | Proposition, cadrage, conception, pilote, déploiement, exploitation, extension ? |
+
+## Alignement stratégique
+
+| Élément | Question |
+|---------|----------|
+| Priorité nationale | À quelle priorité (PDSS, SNSD, PSRSIS) contribue-t-elle ? |
+| Flux de valeur | Quel flux national est servi ? |
+| Étape du flux | Quelle étape précise est améliorée ou corrigée ? |
+| Principe de domaine | Quel PD permet-elle de respecter ? |
+| Principes d'architecture | Quels PA sont concernés ? |
+
+## Problème métier et valeur attendue
+
+| Élément | Question |
+|---------|----------|
+| Problème métier | Quelle rupture, inefficacité ou difficulté est corrigée ? |
+| Bénéficiaire principal | Qui reçoit directement la valeur ? |
+| Bénéficiaires secondaires | Quels autres acteurs bénéficient ? |
+| Bénéfice attendu | Quel changement mesurable doit être observé ? |
+| Indicateur de valeur | Comment vérifier la production du bénéfice ? |
+| Responsable de la valeur | Qui rend compte du bénéfice attendu ? |
+
+## Capabilités, données et applications
+
+| Élément | Question |
+|---------|----------|
+| Capabilité principale | Quelle capabilité nationale est renforcée ? |
+| Capabilités secondaires | Quelles autres capabilités sont concernées ? |
+| Maturité actuelle | Niveau actuel de la capabilité |
+| Maturité cible | Niveau visé |
+| Données | Quelles données sont collectées, échangées, analysées ? |
+| Référentiels | Quels référentiels nationaux sont utilisés ? |
+| Application / plateforme | Quel système est concerné ? |
+| Services partagés | Identité, référentiels, échange, notification, authentification, entrepôt ? |
+
+## Soutenabilité et conformité
+
+| Élément | Question |
+|---------|----------|
+| Interopérabilité | Comment l'initiative échange-t-elle ? |
+| Protection des données | Mesures de confidentialité, accès, traçabilité ? |
+| Adaptation terrain | Contexte connecté, intermittent ou hors ligne ? |
+| Coût total de possession | Coût complet sur la durée de vie |
+| Maintenance et support | Qui assure l'exploitation et les évolutions ? |
+| Transfert de compétences | Comment les compétences sont-elles internalisées ? |
+| Réversibilité | Données et configurations récupérables ? |
+| Risques principaux | Risques à maîtriser avant déploiement ? |
+
+## Liens
+
+- [Portefeuille](./index.md)
+- [Chaîne de valeur](./value-chain.md)
+- [Registre des initiatives](./index.md#registre-national-des-initiatives)

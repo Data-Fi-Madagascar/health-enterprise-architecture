@@ -1,0 +1,44 @@
+---
+title: Chaîne de valeur d'une initiative
+id: value-chain
+domain: portfolio
+version: "0.1.0"
+status: draft
+last_reviewed: 2026-07-03
+owner: Bureau de Réalisation de la Valeur
+tags: [portefeuille, chaîne-de-valeur, bénéfices]
+---
+
+# Chaîne de valeur d'une initiative
+
+Chaque initiative doit présenter une chaîne de valeur qui explicite le lien causal entre ce qu'elle produit techniquement, ce qu'elle change dans le fonctionnement du système, et la valeur finale créée pour un bénéficiaire.
+
+Cette chaîne évite de confondre livrable technique et bénéfice.
+
+| Output technique | Résultat intermédiaire | Valeur finale |
+|------------------|------------------------|---------------|
+| Dossier patient électronique déployé | L'historique médical est accessible lors des consultations et références | Continuité et qualité de prise en charge améliorées |
+| Alertes sanitaires notifiées par mobile | Les alertes sont reçues et investiguées plus rapidement | Population mieux protégée contre les épidémies |
+| Registre des bénéficiaires opérationnel | Les droits sont vérifiables au point de service | Ménages vulnérables accèdent aux soins sans paiement direct indu |
+| Entrepôt national alimenté | Les décisions de pilotage s'appuient sur des données consolidées | Performance du système mieux suivie et améliorée |
+
+> Une initiative sans chaîne de valeur explicite ne doit pas être considérée comme suffisamment justifiée.
+
+## Suivi des bénéfices
+
+Le suivi ne se limite pas au calendrier, budget ou livrables. Quatre niveaux sont suivis, sous la responsabilité du Bureau de Réalisation de la Valeur :
+
+| Niveau | Question suivie |
+|--------|-----------------|
+| Output technique | Le système ou service prévu a-t-il été livré ? |
+| Usage effectif | Les utilisateurs ciblés l'utilisent-ils dans leurs conditions de travail ? |
+| Changement métier | Le fonctionnement du service ou processus a-t-il changé ? |
+| Bénéfice final | Le bénéficiaire reçoit-il la valeur attendue ? |
+
+Une initiative qui livre ses outputs sans produire les changements métier attendus doit être réorientée. Une initiative qui ne produit pas les bénéfices malgré corrections doit pouvoir être arrêtée.
+
+## Liens
+
+- [Portefeuille](./index.md)
+- [Fiche d'initiative](./initiative-card.md)
+- [Priorisation](./prioritization.md)
