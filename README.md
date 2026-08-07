@@ -10,42 +10,50 @@ owner: Bureau de Réalisation de la Valeur
 
 # Cadre d'Architecture d'Entreprise de la Santé Numérique
 
-Ce dépôt contient le Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN), documenté comme architecture *as code* : Markdown structuré avec frontmatter YAML, versionné et relisible par machine. Il traduit le document source `[Draft]HEA-Framework.docx` en une structure par concepts, orientée valeur.
+Ce dépôt contient la documentation d'architecture du secteur santé numérique de Madagascar, organisée selon la hiérarchie documentaire du [CAESN](framework/overview/index.md) en **trois familles de documents** : cadre, architecture de référence technique et spécifications d'implémentation. L'ensemble est documenté *as code* : Markdown structuré avec frontmatter YAML, versionné et relisible par machine.
 
 L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des résultats attendus pour les bénéficiaires et remonter vers les capabilités et les technologies nécessaires pour les produire.
 
-## Structure
+## Structure (3 familles)
+
+| Niveau | Dossier | Document | Destinataires |
+|--------|---------|----------|---------------|
+| 1 | [`framework/`](./framework/) | Cadre d'Architecture d'Entreprise : valeur, capabilités, principes, gouvernance | Décideurs, directions métiers, partenaires |
+| 2 | [`reference-technique/`](./reference-technique/) | Architecture de Référence Technique : standards, solutions, homologation | DEPSI, architectes, intégrateurs |
+| 3 | [`implementations/`](./implementations/) | Spécifications par initiative : API, contrats d'interfaces, configurations | Développeurs, fournisseurs, équipes techniques |
+
+### Niveau 1 — `framework/` (CAESN)
 
 | Domaine | Chemin | Contenu |
 |---------|--------|---------|
-| Vue d'ensemble | [`overview/`](./overview/) | Fondements stratégiques, modèle national de valeur |
-| Flux de valeur | [`value-streams/`](./value-streams/) | Flux de valeur nationaux de santé |
-| Principes | [`principles/`](./principles/) | Principes transversaux et de domaine |
-| Capabilités | [`capabilities/`](./capabilities/) | Capabilités du système de santé et maturité |
-| Données | [`data/`](./data/) | Architecture des données et de l'information sanitaire |
-| Applications | [`application/`](./application/) | Architecture applicative et systèmes numériques |
-| Portefeuille | [`portfolio/`](./portfolio/) | Portefeuille d'initiatives orienté valeur |
-| Gouvernance | [`governance/`](./governance/) | Instances, RACI, Bureau de Réalisation de la Valeur |
-| Décisions | [`decisions/`](./decisions/) | Architecture Decision Records (ADR) |
-| Normes | [`standards/`](./standards/) | Normes obligatoires et standards recommandés |
-| Annexes | [`annexes/`](./annexes/) | Matrice de lecture, glossaire, acronymes |
+| Vue d'ensemble | [`framework/overview/`](./framework/overview/) | Fondements stratégiques, modèle national de valeur |
+| Flux de valeur | [`framework/value-streams/`](./framework/value-streams/) | Flux de valeur nationaux de santé (VS-01 à VS-04) |
+| Principes | [`framework/principles/`](./framework/principles/) | Principes transversaux (PA) et de domaine (PD) |
+| Capabilités | [`framework/capabilities/`](./framework/capabilities/) | Capabilités CAP-01..16, maturité, runway |
+| Données | [`framework/data/`](./framework/data/) | Architecture des données et de l'information sanitaire |
+| Applications | [`framework/application/`](./framework/application/) | Architecture applicative et systèmes numériques |
+| Portefeuille | [`framework/portfolio/`](./framework/portfolio/) | Portefeuille d'initiatives orienté valeur |
+| Gouvernance | [`framework/governance/`](./framework/governance/) | Instances, RACI, Bureau de Réalisation de la Valeur |
+| Décisions | [`framework/decisions/`](./framework/decisions/) | Architecture Decision Records (ADR) |
+| Normes | [`framework/standards/`](./framework/standards/) | Normes obligatoires et standards recommandés |
+| Annexes | [`framework/annexes/`](./framework/annexes/) | Matrice de lecture, glossaire, acronymes |
 
 ## Conventions
 
 - Chaque fichier inclut un frontmatter YAML (title, id, domain, version, status, last_reviewed, owner, tags)
 - Les références croisées utilisent des liens Markdown relatifs
-- Les ADR suivent le [modèle de décision](decisions/adr-0000-template.md)
-- Les normes suivent le [modèle de norme](standards/std-0000-template.md)
+- Les ADR suivent le [modèle de décision](framework/decisions/adr-0000-template.md)
+- Les normes suivent le [modèle de norme](framework/standards/std-0000-template.md)
 - Statuts : `draft`, `review`, `approved`, `deprecated`, `superseded`
 - Les tags et identifiants utilisent le kebab-case
 
 ## Guide de lecture
 
-La [matrice de lecture par profil](annexes/reading-matrix.md) indique quelles sections lire selon le profil (décideurs institutionnels, directions métier, DEPSI / équipes techniques, SIS / données, partenaires techniques et financiers).
+La [matrice de lecture par profil](framework/annexes/reading-matrix.md) indique quelles sections lire selon le profil (décideurs institutionnels, directions métier, DEPSI / équipes techniques, SIS / données, partenaires techniques et financiers).
 
 ## Liens utiles
 
-- [Modèle de valeur](overview/value-model.md)
-- [Registre national des initiatives](portfolio/index.md)
-- [Gouvernance](governance/index.md)
-- [Glossaire](annexes/glossary.md)
+- [Modèle de valeur](framework/overview/value-model.md)
+- [Registre national des initiatives](framework/portfolio/index.md)
+- [Gouvernance](framework/governance/index.md)
+- [Glossaire](framework/annexes/glossary.md)
