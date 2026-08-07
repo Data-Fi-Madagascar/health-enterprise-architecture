@@ -1,7 +1,7 @@
 ---
 title: Contraintes d'exploitation différenciées
 id: application-constraints
-domain: application
+domain: 05_application
 version: "0.1.0"
 status: draft
 last_reviewed: 2026-07-03

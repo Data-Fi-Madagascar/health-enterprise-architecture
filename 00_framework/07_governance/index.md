@@ -1,7 +1,7 @@
 ---
 title: Gouvernance du cadre d'architecture
 id: governance
-domain: governance
+domain: 07_governance
 version: "0.1.0"
 status: draft
 last_reviewed: 2026-07-03

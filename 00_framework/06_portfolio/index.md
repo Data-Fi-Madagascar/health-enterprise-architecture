@@ -1,7 +1,7 @@
 ---
 title: Portefeuille d'initiatives numériques orienté valeur
 id: portfolio
-domain: portfolio
+domain: 06_portfolio
 version: "0.1.0"
 status: draft
 last_reviewed: 2026-07-03

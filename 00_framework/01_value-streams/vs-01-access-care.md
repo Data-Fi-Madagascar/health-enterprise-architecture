@@ -1,7 +1,7 @@
 ---
 title: VS-01 — Accéder à des services de santé essentiels, intégrés, équitables et de qualité
 id: VS-01
-domain: value-streams
+domain: 01_value-streams
 version: "0.1.0"
 status: draft
 last_reviewed: 2026-07-03

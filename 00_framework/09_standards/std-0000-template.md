@@ -1,7 +1,7 @@
 ---
 title: "STD-0000 — <Titre de la norme>"
 id: std-0000
-domain: standards
+domain: 09_standards
 version: "0.1.0"
 status: draft
 last_reviewed: 2026-07-03

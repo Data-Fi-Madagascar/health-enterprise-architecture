@@ -1,7 +1,7 @@
 ---
 title: Spécifications d'implémentation par initiative
 id: implementations
-domain: implementations
+domain: 02_implementations
 version: "0.0.1"
 status: draft
 last_reviewed: 2026-08-07

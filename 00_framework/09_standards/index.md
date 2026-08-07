@@ -1,7 +1,7 @@
 ---
 title: Normes et standards d'architecture
 id: standards
-domain: standards
+domain: 09_standards
 version: "0.1.0"
 status: draft
 last_reviewed: 2026-07-03

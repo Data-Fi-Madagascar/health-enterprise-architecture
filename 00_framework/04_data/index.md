@@ -1,7 +1,7 @@
 ---
 title: Architecture des données et de l'information sanitaire
 id: data-architecture
-domain: data
+domain: 04_data
 version: "0.1.0"
 status: draft
 last_reviewed: 2026-07-03

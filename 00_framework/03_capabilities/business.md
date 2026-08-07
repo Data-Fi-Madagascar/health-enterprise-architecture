@@ -1,7 +1,7 @@
 ---
 title: Capabilités métier de santé
 id: capabilities-business
-domain: capabilities
+domain: 03_capabilities
 version: "0.1.0"
 status: draft
 last_reviewed: 2026-07-03

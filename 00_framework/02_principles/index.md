@@ -1,7 +1,7 @@
 ---
 title: Principes d'architecture
 id: principles
-domain: principles
+domain: 02_principles
 version: "0.1.0"
 status: draft
 last_reviewed: 2026-07-03

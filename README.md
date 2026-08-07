@@ -41,6 +41,7 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 ## Conventions
 
 - Chaque fichier inclut un frontmatter YAML (title, id, domain, version, status, last_reviewed, owner, tags)
+- **Règle « le nom reflète la localisation »** : le champ `domain:` porte le nom du dossier d'appartenance, préfixe numérique inclus (ex. `domain: 01_value-streams`). Voir [`AGENTS.md`](./AGENTS.md)
 - Les références croisées utilisent des liens Markdown relatifs
 - Les ADR suivent le [modèle de décision](00_framework/08_decisions/adr-0000-template.md)
 - Les normes suivent le [modèle de norme](00_framework/09_standards/std-0000-template.md)

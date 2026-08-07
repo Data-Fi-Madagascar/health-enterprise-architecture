@@ -1,7 +1,7 @@
 ---
 title: Domaines de données prioritaires
 id: data-domains
-domain: data
+domain: 04_data
 version: "0.1.0"
 status: draft
 last_reviewed: 2026-07-03

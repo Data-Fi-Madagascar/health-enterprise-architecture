@@ -1,7 +1,7 @@
 ---
 title: Architecture de Référence Technique (ART)
 id: art
-domain: reference-technique
+domain: 01_reference-technique
 version: "0.0.1"
 status: draft
 last_reviewed: 2026-08-07

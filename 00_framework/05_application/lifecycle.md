@@ -1,7 +1,7 @@
 ---
 title: Cycle de vie applicatif et critères d'homologation
 id: application-lifecycle
-domain: application
+domain: 05_application
 version: "0.1.0"
 status: draft
 last_reviewed: 2026-07-03

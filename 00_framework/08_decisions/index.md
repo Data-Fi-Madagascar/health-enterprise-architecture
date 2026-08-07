@@ -1,7 +1,7 @@
 ---
 title: Décisions d'architecture (ADR)
 id: decisions
-domain: decisions
+domain: 08_decisions
 version: "0.1.0"
 status: draft
 last_reviewed: 2026-07-03

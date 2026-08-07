@@ -1,7 +1,7 @@
 ---
 title: Glossaire
 id: annexe-glossary
-domain: annexes
+domain: 10_annexes
 version: "0.1.0"
 status: draft
 last_reviewed: 2026-07-03

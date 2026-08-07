@@ -1,7 +1,7 @@
 ---
 title: Dépendances, revues du portefeuille et règles d'entrée/sortie
 id: portfolio-governance
-domain: portfolio
+domain: 06_portfolio
 version: "0.1.0"
 status: draft
 last_reviewed: 2026-07-03
