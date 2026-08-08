@@ -40,8 +40,9 @@ Il ne couvre pas les équipements biomédicaux ni les infrastructures physiques 
 | Niveau | Document | Destinataires |
 |--------|----------|---------------|
 | 1 | Cadre d'Architecture d'Entreprise (ce document) : valeur, capabilités, principes, gouvernance | Décideurs, directions métiers, partenaires |
-| 2 | Architecture de Référence Technique : standards, solutions retenues, règles d'homologation | DEPSI, architectes, intégrateurs |
-| 3 | Spécifications d'implémentations (par initiative) : configurations, API, contrats d'interfaces | Développeurs, fournisseurs, équipes techniques |
+| 2 | Cadre National d'Interopérabilité : standards d'échange, référentiels, profils | DEPSI, architectes, intégrateurs |
+| 3 | Architecture de Référence Technique : standards, solutions retenues, règles d'homologation | DEPSI, architectes, intégrateurs |
+| 4 | Profils techniques d'implémentation (par initiative) : configurations, API, contrats d'interfaces | Développeurs, fournisseurs, équipes techniques |
 
 ## Structure du référentiel
 

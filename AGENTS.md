@@ -4,7 +4,7 @@ Règles de travail pour toute tâche dans ce dépôt. À lire avant de créer ou
 
 ## Projet
 
-Dépôt d'architecture documentée **as code** du secteur santé numérique de Madagascar, organisé selon la hiérarchie documentaire du CAESN en **trois familles de documents**, chacune dans un dossier numéroté à la racine.
+Dépôt d'architecture documentée **as code** du secteur santé numérique de Madagascar, organisé selon la hiérarchie documentaire du CAESN en **quatre familles de documents**, chacune dans un dossier numéroté à la racine.
 
 ## Structure : dossiers numérotés
 
@@ -12,11 +12,12 @@ Tout dossier structurel du dépôt reçoit un **préfixe numérique de tri** sur
 
 | Niveau | Dossier | Contenu |
 |--------|---------|---------|
-| 1 | `00_framework/` | Cadre d'Architecture d'Entreprise (CAESN) |
-| 2 | `01_reference-technique/` | Architecture de Référence Technique (ART) |
-| 3 | `02_implementations/` | Spécifications d'implémentation par initiative |
+| 1 | `00_caesn/` | Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) |
+| 2 | `01_cnisn/` | Cadre National d'Interopérabilité de la Santé Numérique (CNISN) |
+| 3 | `02_artsn/` | Architecture de Référence Technique de la Santé Numérique (ARTSN) |
+| 4 | `03_ptisn/` | Profils techniques d'implémentation par initiative (PTISN) |
 
-## Sous-dossiers numérotés de `00_framework/`
+## Sous-dossiers numérotés de `00_caesn/`
 
 | Dossier | Contenu |
 |---------|---------|
