@@ -28,18 +28,31 @@ L'Architecture de Référence Technique décline le CAESN au niveau opérationne
 
 Contrairement au cadre (niveau 1), l'ARTSN peut intégrer la sélection de produits, formats, API, protocoles, hébergements et configurations. Elle s'adresse au DEPSI, aux architectes et aux intégrateurs.
 
-Points couverts (à compléter) :
+Points couverts :
 - Standards d'échange et formats (FHIR, HL7, OpenHIE, etc.)
 - Solutions logicielles et briques retenues pour les [couches applicatives](../00_caesn/05_application/layers.md)
 - Règles d'homologation et critères de conformité technique
 - Modèle d'hébergement, cybersécurité, journalisation
 - Normes et standards déclinés depuis [`00_caesn/09_standards/`](../00_caesn/09_standards/index.md)
 
-## Structure proposée
+## Structure du document
 
-| Document | Objet | État |
-|----------|-------|------|
-| (ARTSN en cours de constitution) | Standards techniques, solutions, homologation | à rédiger |
+| Partie | Document | Objet | État |
+|--------|----------|-------|------|
+| I | [Fondations invariantes](./00_fondations.md) | F.1 résilience géographique, F.2 souveraineté intersectorielle, F.3 éradication des silos, F.4 homologation obligatoire | rédigé |
+| II | [Flux de valeur](./01_flux-de-valeur.md) | VS-01 à VS-04 déclinés en exigences techniques | rédigé |
+| III | [Exigences contextuelles nationales](./02_exigences-contextuelles.md) | ENF-1 à ENF-5 | rédigé |
+| IV | [Chapitres et patterns de référence](./03_chapitres/index.md) | ART-0 à ART-9 (règles d'or et contrats d'interfaces) | rédigé |
+| V | [Cartographie conceptuelle cible](./04_cartographie-cible.md) | 6 couches + 2 axes verticaux | rédigé |
+| VI | [Dictionnaire de données fonctionnelles](./05_dictionnaire.md) | Sémantique universelle interministérielle | cadre posé |
+| VI | [Gouvernance de l'ARTSN](./06_gouvernance.md) | Cycle de vie, versionnement, revue, rôle du CNASN | rédigé |
+| A | [Table de maturité par chapitre](./07_annexes/a-table-de-maturite.md) | Statuts et conditions de promotion | rédigé |
+| B | [Glossaire des patterns cités](./07_annexes/b-glossaire-patterns.md) | Définitions des patterns techniques | rédigé |
+| C | [Renvoi CAESN et capacités candidates](./07_annexes/c-renvoi-capacites-candidates.md) | Écarts CAESN, One Health | rédigé |
+
+## Source et version
+
+Ce dossier est la déclinaison **as code** du document source `[Draft]TECHNICAL-Reference-Architecture-1.pdf` (version 0.1, 17/07/2026, archivé dans ce dossier). Les statuts de chapitres (Stable / Provisoire / Proposition ouverte) sont reportés tels quels dans la [table de maturité](./07_annexes/a-table-de-maturite.md).
 
 ## Liens
 

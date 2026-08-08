@@ -11,7 +11,7 @@ tags: [standards, normes, homologation]
 
 # Normes et standards d'architecture
 
-Ce domaine regroupe les **normes** (exigences obligatoires) et les **standards** (guides recommandés) applicables aux solutions numériques du secteur santé. Le catalogue détaillé est défini dans l'Architecture de Référence Technique (ART), document de niveau 2 distinct. La présente section fixe les règles de gouvernance des normes.
+Ce domaine regroupe les **normes** (exigences obligatoires) et les **standards** (guides recommandés) applicables aux solutions numériques du secteur santé. Le catalogue détaillé est défini dans l'[Architecture de Référence Technique de la Santé Numérique](../../02_artsn/index.md) (ARTSN), document de niveau 3 distinct. La présente section fixe les règles de gouvernance des normes.
 
 ## Distinction normes / standards
 

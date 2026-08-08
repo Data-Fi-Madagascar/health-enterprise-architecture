@@ -1,0 +1,30 @@
+---
+title: ART-8 — Orchestration de processus borné
+id: art-8-orchestration-processus-borne
+domain: 02_artsn
+version: "0.1.0"
+status: draft
+last_reviewed: 2026-08-08
+owner: DEPSI
+tags: [artsn, chapitres, art-8, orchestration, niveau-3]
+---
+
+# ART-8 — Orchestration de processus borné
+
+**Contenu normatif.** Pour tout processus métier distribué, asynchrone et à étapes multiples, l'architecture impose l'utilisation d'un **gestionnaire de transactions longues**. Ce composant doit suivre l'état du parcours, maintenir la cohérence sans verrouiller les bases distantes, et déclencher obligatoirement des transactions d'annulation ou de correction en cas d'échec d'une étape.
+
+**Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (établissements hospitaliers autonomes, cliniques privées, rupture de liaison réseau d'un des nœuds) : elle seule permet d'assurer la continuité et la traçabilité complète du parcours patient sans bloquer les systèmes locaux et sans rompre le pipeline.
+
+- **Rattachement** : [CAP-13](../../00_caesn/03_capabilities/index.md), [CAP-14](../../00_caesn/03_capabilities/index.md).
+- **Pattern cible** : Saga / Process Manager (transactions de compensation).
+
+Ce chapitre se décline en quatre sous-chapitres :
+- [ART-8a — Orchestration de processus borné](./art-8a-orchestration-processus-borne.md)
+- [ART-8b — Modélisation de relations en graphe](./art-8b-modelisation-graphe.md)
+- [ART-8c — Agrégation par lot](./art-8c-agregation-par-lot.md)
+- [ART-8d — Chorégraphie inter-institutionnelle](./art-8d-choregraphie-interinstitutionnelle.md)
+
+## Liens
+
+- [Index des chapitres](./index.md)
+- [Exigences contextuelles — ENF-5](../02_exigences-contextuelles.md)

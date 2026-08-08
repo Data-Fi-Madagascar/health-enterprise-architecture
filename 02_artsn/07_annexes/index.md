@@ -1,0 +1,23 @@
+---
+title: Annexes de l'ARTSN
+id: artsn-annexes
+domain: 02_artsn
+version: "0.1.0"
+status: draft
+last_reviewed: 2026-08-08
+owner: DEPSI
+tags: [artsn, annexes, niveau-3]
+---
+
+# Annexes de l'ARTSN
+
+| Annexe | Contenu |
+|--------|---------|
+| [A — Table de maturité par chapitre](./a-table-de-maturite.md) | Statut de chaque chapitre et conditions de passage au statut supérieur |
+| [B — Glossaire des patterns cités](./b-glossaire-patterns.md) | Définitions des patterns techniques mobilisés par les chapitres |
+| [C — Renvoi CAESN et capacités candidates](./c-renvoi-capacites-candidates.md) | Écarts constatés avec le CAESN et référentiels normatifs One Health |
+
+## Liens
+
+- [Chapitres et patterns de référence](../03_chapitres/index.md)
+- [Gouvernance de l'ARTSN](../06_gouvernance.md)

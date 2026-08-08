@@ -1,0 +1,36 @@
+---
+title: Annexe C — Renvoi CAESN et capacités candidates
+id: artsn-annexe-c-renvoi
+domain: 02_artsn
+version: "0.1.0"
+status: draft
+last_reviewed: 2026-08-08
+owner: DEPSI
+tags: [artsn, annexes, renvoi, capacites-candidates, one-health, niveau-3]
+---
+
+# Annexe C — Renvoi CAESN et capacités candidates
+
+## Point de vigilance CAESN — capacité et référentiel manquants
+
+Une capacité de **coordination intersectorielle** et un **référentiel normatif** (Tripartite Plus OMS-WOAH-FAO-PNUE, RSI) potentiellement absents du [CAESN](../../00_caesn/03_capabilities/index.md) sont documentés séparément dans la note « Point de vigilance CAESN — capacité et référentiel manquants pour la coordination intersectorielle (One Health) », destinée à l'instance de gouvernance du CAESN.
+
+Ce point de vigilance porte sur deux écarts constatés lors du peuplement de l'ARTSN :
+
+1. **Capacité candidate « Coordination intersectorielle »** — rattachement des chapitres [ART-0](../03_chapitres/art-0-accords-partage.md) (accords de partage) et [ART-8d](../03_chapitres/art-8d-choregraphie-interinstitutionnelle.md) (chorégraphie inter-institutionnelle), absente du catalogue CAP-01..16 du CAESN.
+2. **Capacité candidate « Surveillance spatio-temporelle »** — rattachement du chapitre [ART-4d](../03_chapitres/art-4d-referentiel-geospatial.md), absente du catalogue.
+3. **CAP-04bis « Engagement patient et identitovigilance »** — supposée par [ART-4a](../03_chapitres/art-4a-resolution-identite.md) et [ART-4b](../03_chapitres/art-4b-bases-autorisation.md) ; le CAESN définit pour l'instant CAP-04 comme « Santé communautaire », sans sous-capacité d'identitovigilance.
+
+## Référentiels normatifs cités
+
+| Référentiel | Portée |
+|-------------|--------|
+| Tripartite Plus OMS–WOAH–FAO–PNUE | Coordination One Health (santé humaine, animale, environnementale) |
+| RSI (Règlement Sanitaire International) | Obligations de surveillance et de notification des événements de santé publique |
+
+## Liens
+
+- [CAESN — capacités](../../00_caesn/03_capabilities/index.md)
+- [ART-0 — Accords de partage](../03_chapitres/art-0-accords-partage.md)
+- [ART-4a — Résolution d'identité](../03_chapitres/art-4a-resolution-identite.md)
+- [ART-4d — Référentiel géospatial](../03_chapitres/art-4d-referentiel-geospatial.md)
