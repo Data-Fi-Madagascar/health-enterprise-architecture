@@ -58,9 +58,12 @@ Le document source annonce **18 principes (P-01 à P-18)** ; le catalogue en vig
 
 Cette note est consignée dans le dossier [gouvernance](./index.md) et référencée par l'[Annexe C de l'ARTSN](../../02_artsn/07_annexes/c-renvoi-capacites-candidates.md). Son statut reste **draft** tant que l'instance de gouvernance n'a pas statué.
 
+Lorsqu'une décision D-1 à D-5 entre en instruction, elle fait l'objet d'un [ADR (Architecture Decision Record)](../08_decisions/index.md) au statut `proposé`, puis `accepté` ou `appliqué` après arbitrage du Comité National d'Architecture Santé Numérique. Chaque ADR référencera cette note comme source de l'écart constaté.
+
 ## Liens
 
 - [CAESN — capabilités](../03_capabilities/index.md)
 - [CAESN — normes et standards](../09_standards/index.md)
+- [CAESN — registre des ADR](../08_decisions/index.md)
 - [ARTSN — Annexe C (renvoi CAESN)](../../02_artsn/07_annexes/c-renvoi-capacites-candidates.md)
 - [ARTSN — chapitres ART-0, 4a, 4b, 4d, 8d](../../02_artsn/03_chapitres/index.md)
