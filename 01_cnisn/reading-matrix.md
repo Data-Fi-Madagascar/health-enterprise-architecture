@@ -18,6 +18,8 @@ Le CNISN fixe **quoi échanger, avec quelles normes et sous quelles conditions**
 | Document du niveau 2 | Décideurs institutionnels | Directions métier / programmes | DEPSI / équipes techniques | SIS / données / suivi-évaluation | Partenaires techniques et financiers |
 |----------------------|---------------------------|-------------------------------|----------------------------|----------------------------------|--------------------------------------|
 | [Index et rôle du CNISN](./index.md) | ◐ | ◐ | ● | ◐ | ◐ |
+| [Glossaire du CNISN](./glossary.md) | ○ | ◐ | ● | ◐ | ◐ |
+| [Acronymes du CNISN](./acronyms.md) | ○ | ◐ | ● | ◐ | ◐ |
 
 Le contenu du CNISN est en cours de constitution : les documents à venir (standards d'échange, référentiels, profils d'interopérabilité, cadre de test) seront ajoutés à cette matrice au fur et à mesure.
 
@@ -30,5 +32,7 @@ Le contenu du CNISN est en cours de constitution : les documents à venir (stand
 ## Liens
 
 - [Index du CNISN](./index.md)
+- [Glossaire du CNISN](./glossary.md)
+- [Acronymes du CNISN](./acronyms.md)
 - [CAESN (niveau 1)](../00_caesn/00_overview/index.md)
 - [ARTSN (niveau 3)](../02_artsn/index.md)

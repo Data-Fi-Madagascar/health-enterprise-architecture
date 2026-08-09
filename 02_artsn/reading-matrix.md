@@ -45,6 +45,8 @@ L'ARTSN décline le niveau 1 en **standards techniques précis**, **solutions lo
 | [Partie VI — Gouvernance de l'ARTSN](./06_gouvernance.md) | ● | ◐ | ● | ◐ | ● |
 | [Annexe A — Table de maturité](./07_annexes/a-table-de-maturite.md) | ○ | ◐ | ● | ◐ | ◐ |
 | [Annexe B — Glossaire des patterns](./07_annexes/b-glossaire-patterns.md) | ○ | ○ | ● | ◐ | ◐ |
+| [Glossaire de l'ARTSN](./glossary.md) | ○ | ◐ | ● | ◐ | ◐ |
+| [Acronymes de l'ARTSN](./acronyms.md) | ○ | ◐ | ● | ◐ | ◐ |
 | [Annexe C — Renvoi CAESN et capacités candidates](./07_annexes/c-renvoi-capacites-candidates.md) | ● | ● | ● | ◐ | ● |
 
 ## Lectures croisées
@@ -62,5 +64,7 @@ L'ARTSN décline le niveau 1 en **standards techniques précis**, **solutions lo
 ## Liens
 
 - [Index de l'ARTSN](./index.md)
+- [Glossaire de l'ARTSN](./glossary.md)
+- [Acronymes de l'ARTSN](./acronyms.md)
 - [Chapitres ART-0..ART-9](./03_chapitres/index.md)
 - [CAESN (niveau 1)](../00_caesn/00_overview/index.md)

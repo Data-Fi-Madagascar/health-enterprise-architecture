@@ -1,0 +1,49 @@
+---
+title: Glossaire du CNISN (niveau 2)
+id: cnisn-glossary
+domain: 01_cnisn
+version: "0.0.1"
+status: draft
+last_reviewed: 2026-08-09
+owner: DEPSI
+tags: [cnisn, glossaire, terminologie, niveau-2]
+---
+
+# Glossaire du CNISN (niveau 2)
+
+## Pour qui lire ce document
+
+**Niveau :** niveau 2 — Cadre National d'Interopérabilité de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](./reading-matrix.md).
+
+Termes propres au périmètre d'interopérabilité du niveau 2. Les termes transverses de l'architecture (capabilité, flux de valeur, gouvernance, homologation…) sont définis dans le [glossaire du CAESN](../00_caesn/10_annexes/glossary.md).
+
+**Cadre de test et de conformité** — Dispositif définissant les scénarios de validation, les outils et les jeux de données permettant de vérifier qu'une interface ou un système respecte les profils d'interopérabilité du CNISN avant son intégration au SI santé national.
+
+**Identifiant national de santé** — Identifiant unique et pérenne attribué à chaque citoyen et utilisé par l'ensemble des systèmes d'information sanitaire comme clé d'échange et de rapprochement des données de santé.
+
+**Modèle de données partagé** — Représentation canonique des objets d'information échangés entre systèmes (patient, prestation, professionnel, structure…), définie indépendamment des systèmes sources et servant de contrat sémantique des échanges.
+
+**Profil d'interopérabilité** — Spécification d'usage d'une ou plusieurs normes standard (FHIR, HL7, IHE…) adaptée à un besoin d'échange précis du secteur santé, combinant contraintes, ressources, messages et règles de sécurité.
+
+**Référentiel national partagé** — Base de données de référence (identifiants, terminologies, codes) que tout système doit utiliser pour échanger, garantissant l'unicité des identifiants et la cohérence sémantique entre les systèmes.
+
+**Standard d'échange** — Norme ou spécification technique retenue pour transporter et structurer les données entre systèmes (FHIR, HL7 v2, HL7 v3, IHE XDS, DICOM…).
+
+**Terminologie de référence** — Vocabulaire contrôlé (codes, libellés, relations) utilisé pour coder les données cliniques et administratives échangées (ICD, SNOMED CT, LOINC, ATC…).
+
+## Liens
+
+- [Index du CNISN](./index.md)
+- [Matrice de lecture du CNISN](./reading-matrix.md)
+- [Acronymes du CNISN](./acronyms.md)
+- [Glossaire du CAESN (niveau 1)](../00_caesn/10_annexes/glossary.md)

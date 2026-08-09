@@ -65,3 +65,5 @@ ptisn/
 - [CNISN (niveau 2)](../01_cnisn/index.md)
 - [ARTSN (niveau 3)](../02_artsn/index.md)
 - [Matrice de lecture du PTISN](./reading-matrix.md)
+- [Glossaire du PTISN](./glossary.md)
+- [Acronymes du PTISN](./acronyms.md)

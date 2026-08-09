@@ -63,6 +63,8 @@ Points couverts :
 | A | [Table de maturité par chapitre](./07_annexes/a-table-de-maturite.md) | Statuts et conditions de promotion | rédigé |
 | B | [Glossaire des patterns cités](./07_annexes/b-glossaire-patterns.md) | Définitions des patterns techniques | rédigé |
 | C | [Renvoi CAESN et capacités candidates](./07_annexes/c-renvoi-capacites-candidates.md) | Écarts CAESN, One Health | rédigé |
+| — | [Glossaire de l'ARTSN](./glossary.md) | Termes du périmètre technique | rédigé |
+| — | [Acronymes de l'ARTSN](./acronyms.md) | Sigles du périmètre technique | rédigé |
 
 ## Source et version
 
@@ -74,3 +76,5 @@ Ce dossier est la déclinaison **as code** du document source `[Draft]TECHNICAL-
 - [CNISN (niveau 2)](../01_cnisn/index.md)
 - [PTISN (niveau 4)](../03_ptisn/index.md)
 - [Matrice de lecture de l'ARTSN](./reading-matrix.md)
+- [Glossaire de l'ARTSN](./glossary.md)
+- [Acronymes de l'ARTSN](./acronyms.md)

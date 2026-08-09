@@ -18,6 +18,8 @@ Le PTISN décline, pour chaque initiative, le niveau 3 au niveau propre de la so
 | Document du niveau 4 | Décideurs institutionnels | Directions métier / programmes | DEPSI / équipes techniques | SIS / données / suivi-évaluation | Partenaires techniques et financiers |
 |----------------------|---------------------------|-------------------------------|----------------------------|----------------------------------|--------------------------------------|
 | [Index et convention du PTISN](./index.md) | ◐ | ◐ | ● | ◐ | ◐ |
+| [Glossaire du PTISN](./glossary.md) | ○ | ◐ | ● | ◐ | ◐ |
+| [Acronymes du PTISN](./acronyms.md) | ○ | ◐ | ● | ◐ | ◐ |
 
 Les profils d'implémentation sont créés **un dossier par initiative** du [registre national des initiatives](../00_caesn/06_portfolio/index.md) : chaque profil (index, contrats d'interfaces, configuration, tests) sera ajouté à cette matrice lors de sa rédaction.
 
@@ -30,5 +32,7 @@ Les profils d'implémentation sont créés **un dossier par initiative** du [reg
 ## Liens
 
 - [Index du PTISN](./index.md)
+- [Glossaire du PTISN](./glossary.md)
+- [Acronymes du PTISN](./acronyms.md)
 - [ARTSN (niveau 3)](../02_artsn/index.md)
 - [Portefeuille national d'initiatives](../00_caesn/06_portfolio/index.md)

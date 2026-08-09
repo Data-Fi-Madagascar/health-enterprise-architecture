@@ -63,6 +63,15 @@ Chaque niveau dispose de sa **matrice de lecture** croisant ses documents avec l
 
 Chaque document commence par un bloc **« Pour qui lire ce document »** qui indique, pour les cinq profils, le niveau de lecture recommandé (● prioritaire, ◐ complémentaire, ○ ponctuelle) et renvoie à la matrice de son niveau.
 
+Chaque niveau dispose aussi de son **glossaire** et de ses **acronymes** (périmètre propre du niveau, avec renvoi au glossaire/acronymes du niveau 1 pour les termes transverses) :
+
+| Niveau | Glossaire | Acronymes |
+|--------|-----------|-----------|
+| 1 — CAESN | [Glossaire](00_caesn/10_annexes/glossary.md) | [Acronymes](00_caesn/10_annexes/acronyms.md) |
+| 2 — CNISN | [Glossaire](01_cnisn/glossary.md) | [Acronymes](01_cnisn/acronyms.md) |
+| 3 — ARTSN | [Glossaire](02_artsn/glossary.md) | [Acronymes](02_artsn/acronyms.md) |
+| 4 — PTISN | [Glossaire](03_ptisn/glossary.md) | [Acronymes](03_ptisn/acronyms.md) |
+
 ## Liens utiles
 
 - [Modèle de valeur](00_caesn/00_overview/value-model.md)

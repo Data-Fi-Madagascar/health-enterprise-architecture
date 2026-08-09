@@ -53,7 +53,9 @@ Points couverts (à compléter) :
 
 | Document | Objet | État |
 |----------|-------|------|
-| (CNISN en cours de constitution) | Standards d'échange, référentiels, profils | à rédiger |
+| Documents du CNISN (à rédiger) | Standards d'échange, référentiels, profils | à rédiger |
+| [Glossaire du CNISN](./glossary.md) | Termes du périmètre d'interopérabilité | rédigé |
+| [Acronymes du CNISN](./acronyms.md) | Sigles du périmètre d'interopérabilité | rédigé |
 
 ## Liens
 
@@ -61,3 +63,5 @@ Points couverts (à compléter) :
 - [ARTSN (niveau 3)](../02_artsn/index.md)
 - [PTISN (niveau 4)](../03_ptisn/index.md)
 - [Matrice de lecture du CNISN](./reading-matrix.md)
+- [Glossaire du CNISN](./glossary.md)
+- [Acronymes du CNISN](./acronyms.md)
