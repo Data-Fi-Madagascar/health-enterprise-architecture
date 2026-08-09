@@ -11,6 +11,20 @@ tags: [artsn, cartographie, couches, axes, niveau-3]
 
 # Cartographie conceptuelle cible
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](reading-matrix.md).
+
 L'architecture conceptuelle présentée dans cette section est l'incarnation visuelle et l'application physique stricte des contraintes et des patterns définis dans les [chapitres](./03_chapitres/index.md). Chaque bloc horizontal et vertical exécute techniquement un ou plusieurs chapitres normatifs de l'ARTSN.
 
 La cartographie est structurée en **six couches horizontales** (de l'infrastructure à la gouvernance) traversées par **deux axes verticaux** transversaux. Elle s'articule avec les [six couches applicatives du CAESN](../00_caesn/05_application/layers.md).

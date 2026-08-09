@@ -11,6 +11,20 @@ tags: [capabilités, catalogue]
 
 # Capabilités du système de santé
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 ## Définition et rôle
 
 Une **capabilité** désigne ce que le système de santé doit être durablement capable de faire pour produire la valeur attendue des bénéficiaires. Elle n'est pas une activité ponctuelle, un projet, une application ou un outil. Elle repose sur la combinaison de :

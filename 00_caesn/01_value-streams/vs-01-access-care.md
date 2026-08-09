@@ -11,6 +11,20 @@ tags: [flux-de-valeur, parcours-patient, soins]
 
 # VS-01 — Accéder à des services de santé essentiels, intégrés, équitables et de qualité
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ◐ |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 ## Valeur produite
 
 Un patient ou usager reçoit des soins accessibles, continus, sûrs et de qualité, quel que soit son lieu de résidence, son niveau de revenu ou son profil.

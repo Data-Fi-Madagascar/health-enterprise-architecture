@@ -11,6 +11,20 @@ tags: [artsn, gouvernance, versionnement, cnasn, niveau-3]
 
 # Gouvernance de l'ARTSN
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ● |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ● |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](reading-matrix.md).
+
 L'ARTSN évolue selon le même mécanisme qu'elle impose aux contrats d'événements ([F.3](./00_fondations.md#f3--éradication-des-silos-technologiques)) : versions sémantiques, compatibilité ascendante et descendante documentée avant toute publication d'une nouvelle version, dépréciation explicite des chapitres retirés. Chaque spécification d'implémentation déclare la version d'ARTSN à laquelle elle se conforme.
 
 ## Cycle de vie et versionnement

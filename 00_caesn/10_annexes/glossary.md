@@ -11,6 +11,20 @@ tags: [glossaire, terminologie]
 
 # Glossaire
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ● |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ● |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](reading-matrix.md).
+
 **Architecture d'entreprise** — Discipline de management qui décrit de façon structurée et cohérente l'ensemble d'une organisation : sa stratégie, ses processus métier, ses systèmes d'information, ses données et son infrastructure technologique. Elle permet d'aligner les investissements sur les priorités stratégiques et d'assurer la cohérence de l'ensemble.
 
 **Architecture de Référence Technique** — Architecture de Référence Technique de la Santé Numérique (ARTSN), document de niveau 3, distinct du présent cadre, qui traduit les principes architecturaux en standards techniques précis, solutions logicielles retenues, configurations et règles d'homologation. Il s'adresse aux équipes techniques et aux intégrateurs.

@@ -11,6 +11,20 @@ tags: [artsn, chapitres, art-0, partage, niveau-3]
 
 # ART-0 — Accords de partage inter-institutionnels
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+
 **Contenu normatif.** Avant toute interconnexion technique, échange ou ingestion de données provenant d'une entité extérieure à la gouvernance directe de la santé, un accord formel (*Data Sharing Agreement*) doit obligatoirement fixer le périmètre de partage, les clauses de réciprocité, les obligations de notification en cas de faille, et sanctuariser la souveraineté et la résidence physique de la donnée de santé sur le territoire national.
 
 **Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (ministères partenaires, secteurs tiers) : elle seule permet de fixer les frontières de la responsabilité juridique et de configurer dynamiquement les filtres de sécurité automatiques sans rompre le pipeline.

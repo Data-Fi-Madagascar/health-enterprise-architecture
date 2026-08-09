@@ -11,6 +11,20 @@ tags: [artsn, chapitres, patterns, niveau-3]
 
 # Chapitres et patterns de référence
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+
 La Partie IV de l'ARTSN définit l'ensemble des **règles d'or et des contrats techniques d'interfaces obligatoires** imposés pour surmonter les contraintes contextuelles nationales décrites en [Partie III](../02_exigences-contextuelles.md). Les chapitres constituent le **cadre normatif opposable** par le Ministère de la Santé Publique pour valider ou rejeter toute solution numérique.
 
 ## Vue d'ensemble

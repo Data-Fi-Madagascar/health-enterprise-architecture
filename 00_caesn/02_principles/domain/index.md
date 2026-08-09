@@ -11,6 +11,20 @@ tags: [principes, domaine]
 
 # Principes de domaine par flux de valeur
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../../10_annexes/reading-matrix.md).
+
 ## Rôle des principes de domaine
 
 Les principes de domaine traduisent les principes d'architecture dans les domaines métiers correspondant aux quatre flux de valeur nationaux. Ils précisent les règles propres à chaque domaine de valeur : parcours de soins, santé publique, protection financière et pilotage du système.

@@ -11,6 +11,20 @@ tags: [artsn, annexes, maturite, statuts, niveau-3]
 
 # Annexe A — Table de maturité par chapitre
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ○ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+
 La table de maturité fixe le statut de chaque chapitre et la condition de passage au statut supérieur. Elle est mise à jour par l'instance de gouvernance lors de chaque [revue du document](../06_gouvernance.md#processus-de-revue-du-document).
 
 | Chapitre | Statut | Condition de passage au statut supérieur |

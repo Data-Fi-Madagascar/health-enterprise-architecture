@@ -11,6 +11,20 @@ tags: [gouvernance, vigilance, one-health, capabilites, identitovigilance]
 
 # Point de vigilance CAESN — capacité et référentiel manquants pour la coordination intersectorielle (One Health)
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ● |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ● |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 Cette note est destinée à l'instance de gouvernance du [CAESN](./index.md). Elle documente les écarts constatés lors du peuplement de l'[ARTSN](../../02_artsn/index.md) entre la doctrine exprimée par le document source *[Draft] TECHNICAL-Reference-Architecture-1.pdf* et le catalogue en vigueur du CAESN. Aucun élément du catalogue n'est modifié par cette note : elle porte une **décision à instruire**.
 
 ## Contexte

@@ -11,6 +11,20 @@ tags: [artsn, chapitres, art-6, analytique, cqrs, niveau-3]
 
 # ART-6 — Analytique et restitution
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+
 **Contenu normatif.** L'architecture doit imposer une **séparation étanche entre le stockage opérationnel et le stockage analytique** (CQRS). L'entrepôt analytique doit être alimenté par des pipelines automatisés intégrant un moteur de masquage irréversible, et doit supporter nativement quatre types de requêtes : projections tabulaires, parcours de graphes, réconciliation comptable et fusion de signaux géospatiaux.
 
 **Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (requêtes lourdes des décideurs, extractions massives pour la recherche) : elle seule permet de garantir des performances de restitution constantes et une sécurité réglementaire absolue sans surcharger les serveurs de soins et sans rompre le pipeline.

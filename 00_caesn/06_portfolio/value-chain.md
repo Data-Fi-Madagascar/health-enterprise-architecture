@@ -11,6 +11,20 @@ tags: [portefeuille, chaîne-de-valeur, bénéfices]
 
 # Chaîne de valeur d'une initiative
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ● |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ◐ |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 Chaque initiative doit présenter une chaîne de valeur qui explicite le lien causal entre ce qu'elle produit techniquement, ce qu'elle change dans le fonctionnement du système, et la valeur finale créée pour un bénéficiaire.
 
 Cette chaîne évite de confondre livrable technique et bénéfice.

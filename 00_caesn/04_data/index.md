@@ -11,6 +11,20 @@ tags: [données, architecture, sis]
 
 # Architecture des données et de l'information sanitaire
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ○ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 ## Rôle de l'architecture des données
 
 Les données de santé constituent un actif stratégique national. Elles ne valent que si elles sont de qualité suffisante, disponibles au bon moment, accessibles aux acteurs autorisés, protégées contre les usages non autorisés et effectivement utilisées pour améliorer les décisions, les services et les résultats de santé.

@@ -11,6 +11,20 @@ tags: [applications, rationalisation]
 
 # Trajectoire de rationalisation du paysage applicatif
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ○ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 Le système existant comprend déjà plusieurs applications, plateformes et outils issus de programmes et partenaires. L'objectif n'est pas une remise à neuf brutale, mais une rationalisation progressive.
 
 Chaque application existante est classée selon l'une des trajectoires :

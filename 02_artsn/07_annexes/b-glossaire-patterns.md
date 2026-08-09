@@ -11,6 +11,20 @@ tags: [artsn, annexes, glossaire, patterns, niveau-3]
 
 # Annexe B — Glossaire des patterns cités
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ○ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+
 Définitions des patterns techniques mobilisés par les chapitres de l'ARTSN.
 
 ## Event sourcing (historisation événementielle)

@@ -11,6 +11,8 @@ tags: [annexes, lecture, profils]
 
 # Matrice de lecture par profil
 
+Matrice de référence du **niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique**. Les matrices des autres niveaux sont listées en fin de document.
+
 Légende : **●** = lecture prioritaire, **◐** = lecture complémentaire, **○** = lecture ponctuelle.
 
 | Section du cadre | Décideurs institutionnels | Directions métier / programmes | DEPSI / équipes techniques | SIS / données / suivi-évaluation | Partenaires techniques et financiers |
@@ -38,6 +40,12 @@ La vue croisée entre flux de valeur, capabilités, domaines de données et appl
 - Capabilités : [`../capabilities/index.md`](../03_capabilities/index.md)
 - Données : [`../data/index.md`](../04_data/index.md)
 - Applications : [`../application/index.md`](../05_application/index.md)
+
+## Matrices des autres niveaux
+
+- [Niveau 2 — CNISN](../../01_cnisn/reading-matrix.md)
+- [Niveau 3 — ARTSN](../../02_artsn/reading-matrix.md)
+- [Niveau 4 — PTISN](../../03_ptisn/reading-matrix.md)
 
 ## Liens
 

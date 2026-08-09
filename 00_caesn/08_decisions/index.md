@@ -11,6 +11,20 @@ tags: [décisions, adr]
 
 # Décisions d'architecture (ADR)
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 Les décisions d'architecture sont enregistrées sous forme d'Architecture Decision Records (ADR). Chaque ADR documente un choix structurant de façon concise, datée et traçable, afin de préserver la mémoire des choix et de leurs justifications.
 
 Un ADR est produit lorsque le Comité National d'Architecture Santé Numérique statue sur un arbitrage, une homologation, un standard, une dérogation ou un choix technique structurant. Les ADR applicables au domaine applicatif sont mentionnés dans [`../application/index.md`](../05_application/index.md).

@@ -11,6 +11,20 @@ tags: [données, principes]
 
 # Principes de l'architecture des données
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ○ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 Les principes d'architecture transversaux s'appliquent à toutes les données du système d'information sanitaire. Ils se traduisent en règles spécifiques ci-dessous.
 
 | Code | Principe | Signification | Implications |

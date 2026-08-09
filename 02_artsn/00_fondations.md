@@ -11,6 +11,20 @@ tags: [artsn, fondations, invariants, niveau-3]
 
 # Fondations invariantes
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ● |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ● |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](reading-matrix.md).
+
 Les fondations invariantes constituent le **socle** sur lequel s'appuient tous les chapitres de l'ARTSN. Elles sont la partie la plus stable de l'architecture de référence et ne devraient être révisées qu'exceptionnellement. Elles émanent de la doctrine souveraine d'urbanisation de l'État de Madagascar et s'alignent sur les directives stratégiques du [CAESN](../00_caesn/00_overview/index.md). Sur le plan international, elles traduisent les meilleures pratiques portées par OpenHIE (interopérabilité des systèmes de santé) et GovStack (sous l'égide de l'UIT).
 
 Dans la hiérarchie des normes du Système National d'Information de Santé (SNIS), la Partie I fait office de **bloc de constitutionnalité technique** : ces règles s'imposent de manière absolue, universelle et transversale à l'ensemble des couches de la plateforme, ainsi qu'à tout système périphérique, ministériel ou international tiers qui ambitionne de s'y connecter.

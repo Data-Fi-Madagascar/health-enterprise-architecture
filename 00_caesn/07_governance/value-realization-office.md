@@ -11,6 +11,20 @@ tags: [gouvernance, valeur, portefeuille, bénéfices]
 
 # Bureau de Réalisation de la Valeur
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ● |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ● |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 ## Rôle et mandat
 
 Le Bureau de Réalisation de la Valeur est le mécanisme institutionnel chargé de vérifier que les initiatives financées produisent réellement les bénéfices attendus. Il ne gère pas les projets — c'est le rôle des responsables techniques. Il gouverne la valeur : il définit les bénéfices attendus, suit leur réalisation, détecte les écarts, recommande les arbitrages et rend compte aux instances de gouvernance nationale.

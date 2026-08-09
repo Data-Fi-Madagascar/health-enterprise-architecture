@@ -11,6 +11,20 @@ tags: [capabilités, maturité, priorisation]
 
 # Évaluation de la maturité des capabilités
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ○ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 ## Échelle de maturité
 
 Chaque capabilité est évaluée sur une échelle à cinq niveaux. L'évaluation mesure l'écart entre l'état actuel et le niveau cible nécessaire pour produire la valeur attendue.

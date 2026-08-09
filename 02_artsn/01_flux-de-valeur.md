@@ -11,6 +11,20 @@ tags: [artsn, flux-de-valeur, niveau-3]
 
 # Flux de valeur
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](reading-matrix.md).
+
 Les quatre flux de valeur stratégiques dictent la finalité de santé publique de la plateforme numérique nationale. Ils constituent les **piliers directeurs non négociables** auxquels toute brique logicielle de l'architecture doit apporter une contribution mesurable. Cette partie définit l'intention politique et la traduit en actions humaines sur le terrain (macro-processus), posant la matrice de déduction des besoins en données.
 
 Les flux de valeur sont identiques à ceux définis par le [CAESN](../00_caesn/01_value-streams/index.md). L'ARTSN les décline en exigences techniques opposables.

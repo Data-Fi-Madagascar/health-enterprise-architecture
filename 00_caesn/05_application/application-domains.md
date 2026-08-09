@@ -11,6 +11,20 @@ tags: [applications, domaines, flux]
 
 # Domaines applicatifs cibles par flux de valeur
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ○ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 Le cadre retient les domaines applicatifs suivants, qui décrivent des familles de systèmes sans imposer un logiciel particulier.
 
 | Flux de valeur | Domaine applicatif | Services numériques | Capabilités |

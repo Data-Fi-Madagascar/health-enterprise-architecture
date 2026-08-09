@@ -11,6 +11,20 @@ tags: [artsn, chapitres, art-4, referentiels, niveau-3]
 
 # ART-4 — Référentiels de métadonnées de gestion
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ○ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+
 **Contenu normatif.** La maintenance et le stockage des structures de gestion (établissements, programmes sanitaires, indicateurs) doivent obligatoirement utiliser une **modélisation temporelle**. Tout changement ou divergence de hiérarchie organisationnelle doit être historisé et versionné, selon le pattern cible *Slowly Changing Dimension* (SCD) **type 2**.
 
 **Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (évolutions administratives, réorganisations territoriales) : elle seule permet de garantir qu'une analyse ou un rapport statistique passé pointe vers l'arborescence exacte en vigueur au moment précis de l'événement sans rompre le pipeline.

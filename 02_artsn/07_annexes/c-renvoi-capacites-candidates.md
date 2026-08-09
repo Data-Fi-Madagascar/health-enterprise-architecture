@@ -11,6 +11,20 @@ tags: [artsn, annexes, renvoi, capacites-candidates, one-health, niveau-3]
 
 # Annexe C — Renvoi CAESN et capacités candidates
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ● |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ● |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+
 ## Point de vigilance CAESN — capacité et référentiel manquants
 
 Une capacité de **coordination intersectorielle** et un **référentiel normatif** (Tripartite Plus OMS-WOAH-FAO-PNUE, RSI) potentiellement absents du [CAESN](../../00_caesn/03_capabilities/index.md) sont documentés séparément dans la [note « Point de vigilance CAESN — capacité et référentiel manquants pour la coordination intersectorielle (One Health) »](../../00_caesn/07_governance/point-de-vigilance-caesn.md), destinée à l'instance de gouvernance du CAESN.

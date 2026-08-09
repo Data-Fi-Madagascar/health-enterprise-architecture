@@ -11,6 +11,20 @@ tags: [données, gouvernance, qualité, protection]
 
 # Gouvernance, qualité et protection des données
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ○ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 ## Gouvernance des données
 
 La gouvernance garantit que les données sont fiables, protégées, accessibles aux autorisés et utilisées pour produire de la valeur. Elle définit les responsabilités, règles et mécanismes. Elle est reliée à la gouvernance globale du cadre : le Comité National statue sur les règles structurantes d'architecture des données, tandis que les responsables métier et de capabilités veillent à leur application.

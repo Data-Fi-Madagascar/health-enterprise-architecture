@@ -11,6 +11,20 @@ tags: [capabilités, métier, catalogue]
 
 # Capabilités métier de santé
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ◐ |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 Les capabilités métier sont directement liées à la production de valeur dans les quatre flux de valeur nationaux.
 
 | Code | Capabilité | Flux de valeur | Rôle dans le système |

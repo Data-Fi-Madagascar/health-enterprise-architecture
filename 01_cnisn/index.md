@@ -11,6 +11,20 @@ tags: [cnisn, niveau-2, interopérabilité]
 
 # Cadre National d'Interopérabilité de la Santé Numérique (CNISN)
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 2 — Cadre National d'Interopérabilité de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](reading-matrix.md).
+
 ## Place dans la hiérarchie documentaire
 
 Niveau **2** de la hiérarchie du [Cadre d'Architecture d'Entreprise](../00_caesn/00_overview/index.md). Le CNISN définit les règles d'interopérabilité entre les systèmes d'information de santé, à mi-chemin entre le cadre (niveau 1) et l'Architecture de Référence Technique (niveau 3).
@@ -46,3 +60,4 @@ Points couverts (à compléter) :
 - [Cadre (niveau 1)](../00_caesn/00_overview/index.md)
 - [ARTSN (niveau 3)](../02_artsn/index.md)
 - [PTISN (niveau 4)](../03_ptisn/index.md)
+- [Matrice de lecture du CNISN](./reading-matrix.md)

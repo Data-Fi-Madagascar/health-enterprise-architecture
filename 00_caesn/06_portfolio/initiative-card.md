@@ -11,6 +11,20 @@ tags: [portefeuille, fiche, initiative]
 
 # Fiche standard d'initiative orientée valeur
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ○ |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 Toute initiative soumise au portefeuille national doit être décrite selon une fiche standard. L'incapacité à renseigner les champs essentiels signifie que l'initiative n'est pas assez mûre pour être financée, déployée ou généralisée.
 
 ## Identification

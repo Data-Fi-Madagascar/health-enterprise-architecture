@@ -11,6 +11,20 @@ tags: [gouvernance, instances, décisions, redevabilité]
 
 # Gouvernance du cadre d'architecture
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ● |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ● |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 ## Objet
 
 La gouvernance transforme les principes du cadre en décisions concrètes. Elle garantit que les investissements numériques restent orientés par la valeur, cohérents sur le plan architectural et redevables des bénéfices produits. Elle distingue explicitement deux validations complémentaires :

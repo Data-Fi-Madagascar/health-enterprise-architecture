@@ -11,6 +11,20 @@ tags: [données, référentiels, normes]
 
 # Référentiels nationaux
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ○ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 Les référentiels nationaux sont les socles communs qui permettent à tous les systèmes d'information de parler le même langage : identifier les mêmes structures, personnes, produits, zones géographiques, indicateurs et bénéficiaires.
 
 Ils constituent des **biens communs nationaux**. Ils ne doivent pas être fragmentés, dupliqués ou remplacés par des référentiels propriétaires de programmes, de projets ou de partenaires.

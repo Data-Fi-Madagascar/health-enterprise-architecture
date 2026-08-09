@@ -11,6 +11,20 @@ tags: [capabilités, habilitantes, catalogue]
 
 # Capabilités habilitantes du système
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 Les capabilités habilitantes ne produisent pas toujours directement une valeur visible pour le patient, mais leur absence bloque l'exécution des flux de valeur. Elles doivent être développées comme capabilités nationales durables, et non comme appuis ponctuels liés à des projets isolés.
 
 | Code | Capabilité | Rôle dans le système |

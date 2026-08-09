@@ -11,6 +11,20 @@ tags: [artsn, exigences, contraintes, niveau-3]
 
 # Exigences et contraintes contextuelles nationales
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](reading-matrix.md).
+
 Pour transposer les flux de valeur en patterns techniques de référence applicables, la plateforme numérique nationale de santé doit résoudre des contraintes physiques, infrastructurelles et réglementaires propres au contexte malgache. Ces exigences dictent la transition logique entre l'objectif de santé publique et la conception du système d'information.
 
 ## ENF-1 — Résilience à l'instabilité réseau

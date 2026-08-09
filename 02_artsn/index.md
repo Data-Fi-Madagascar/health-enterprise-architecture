@@ -11,6 +11,20 @@ tags: [artsn, niveau-3, standards]
 
 # Architecture de Référence Technique de la Santé Numérique (ARTSN)
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ● |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ● |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](reading-matrix.md).
+
 ## Place dans la hiérarchie documentaire
 
 Niveau **3** de la hiérarchie du [Cadre d'Architecture d'Entreprise](../00_caesn/00_overview/index.md). Ce dossier est volontairement distinct du dossier [`00_caesn/`](../00_caesn/) qui contient le niveau 1 (valeur, capabilités, principes, gouvernance).
@@ -59,3 +73,4 @@ Ce dossier est la déclinaison **as code** du document source `[Draft]TECHNICAL-
 - [Cadre (niveau 1)](../00_caesn/00_overview/index.md)
 - [CNISN (niveau 2)](../01_cnisn/index.md)
 - [PTISN (niveau 4)](../03_ptisn/index.md)
+- [Matrice de lecture de l'ARTSN](./reading-matrix.md)

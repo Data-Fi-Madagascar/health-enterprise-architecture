@@ -11,6 +11,20 @@ tags: [portefeuille, dépendances, revues]
 
 # Dépendances, revues et règles de gouvernance du portefeuille
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ● |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ◐ |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ● |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 ## Gestion des dépendances
 
 Une initiative peut être pertinente mais non réalisable immédiatement si des dépendances ne sont pas satisfaites. Les dépendances peuvent concerner : un référentiel national, une couche d'échange, une règle juridique, une capabilité de cybersécurité, une connectivité minimale, un support, des ressources humaines, un budget récurrent, une gouvernance de données, un arbitrage institutionnel.

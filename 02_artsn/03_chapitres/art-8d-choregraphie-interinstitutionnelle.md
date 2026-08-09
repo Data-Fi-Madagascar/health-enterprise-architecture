@@ -11,6 +11,20 @@ tags: [artsn, chapitres, art-8d, choregraphie, pubsub, niveau-3]
 
 # ART-8d — Chorégraphie inter-institutionnelle
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ○ |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+
 **Contenu normatif.** Lorsque l'intégration implique plusieurs ministères co-égaux, l'architecture **proscrit l'orchestration centralisée** et impose un modèle de coordination par messagerie décentralisée. Les systèmes partenaires doivent s'abonner de manière autonome à des files d'événements publics sans qu'aucun nœud n'ait d'autorité informatique sur le système de l'autre (pattern cible : Publication/Abonnement, Pub/Sub).
 
 **Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (systèmes d'information autonomes des ministères de l'Agriculture ou de l'Environnement) : elle seule permet de déclencher des actions conjointes et simultanées lors d'un signal épidémique tout en préservant l'indépendance informatique et la souveraineté de chaque institution, sans rompre le pipeline.

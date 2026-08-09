@@ -11,6 +11,20 @@ tags: [artsn, chapitres, art-1, ingestion, niveau-3]
 
 # ART-1 — Intégration et ingestion
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ○ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+
 **Contenu normatif.** Tout flux entrant doit transiter par un point d'accès central unique qui garantit l'authentification forte de la source, la validation d'intégrité, la limitation de débit (*rate limiting*) et la distribution asynchrone des messages selon un contrat de livraison au moins une fois (*at-least-once*). Le système doit supporter nativement trois topologies d'ingestion : **Point à point**, **Diffusion** (*fan-out*) et **Interrogation fédérée** (*pull*).
 
 **Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (logiciels hospitaliers privés, applications mobiles terrain) : elle seule permet de protéger les serveurs centraux contre les saturations, les cyberattaques et les pertes de données induites par les micro-coupures réseau sans rompre le pipeline.

@@ -11,6 +11,20 @@ tags: [capabilités, numérique, snsd]
 
 # Capabilités numériques transversales et composants DPI-H
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 Les capabilités numériques transversales traduisent les axes de la Stratégie Nationale de Santé Digitale (SNSD) et les exigences des référentiels DPI-H, OpenHIE et GovStack. Elles ne constituent pas des finalités autonomes, mais un socle numérique au service des flux de valeur santé.
 
 ## Capabilités numériques issues de la SNSD

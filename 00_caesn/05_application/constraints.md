@@ -11,6 +11,20 @@ tags: [applications, exploitation, terrain]
 
 # Contraintes d'exploitation différenciées
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ○ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 Madagascar présente plusieurs contextes d'exploitation numérique. Les applications doivent être conçues en fonction du contexte réel d'utilisation, non uniquement des conditions du niveau central.
 
 | Contexte | Caractéristiques | Exigences applicatives |

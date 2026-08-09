@@ -11,6 +11,20 @@ tags: [artsn, chapitres, art-4d, geospatial, one-health, niveau-3]
 
 # ART-4d — Référentiel géospatial et d'exploitation partagé
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ○ |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+
 **Contenu normatif.** L'architecture doit fournir une **clé de rapprochement universelle** basée exclusivement sur des coordonnées spatiales ou codes de zones et des périodes de temps. Ce référentiel neutre est le **seul point de contact autorisé** pour croiser des bases de données sectorielles hétérogènes.
 
 **Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (bases de données météorologiques, registres de suivi des cheptels d'élevage) : elle seule permet de corréler des indicateurs environnementaux et cliniques sans jamais interconnecter les identités humaines, garantissant l'étanchéité One Health sans rompre le pipeline.

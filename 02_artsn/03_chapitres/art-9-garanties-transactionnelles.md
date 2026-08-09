@@ -11,6 +11,20 @@ tags: [artsn, chapitres, art-9, transactions, anti-fraude, niveau-3]
 
 # ART-9 — Garanties transactionnelles fortes
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ○ |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+
 **Contenu normatif.** Pour tout mouvement de valeur monétaire ou physique, l'architecture impose une contrainte de **grade comptable strict** basée sur un registre immuable, garantissant l'équilibre parfait des comptes (équation cible : *entrées − sorties = solde*). Toute écriture doit être associée à une signature non répudiable et un numéro de suivi de lot.
 
 **Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (officines pharmaceutiques privées, gestionnaires de stocks régionaux, caisses de subventions) : elle seule permet d'empêcher les détournements de médicaments, de bloquer les marchés noirs et d'assurer la réconciliation à somme nulle de l'argent public, sans rompre le pipeline.

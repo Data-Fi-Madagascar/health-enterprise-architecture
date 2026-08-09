@@ -11,6 +11,20 @@ tags: [ptisn, niveau-4]
 
 # Profils techniques d'implémentation de la Santé Numérique (PTISN)
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 4 — Profils techniques d'implémentation de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](reading-matrix.md).
+
 ## Place dans la hiérarchie documentaire
 
 Niveau **4** de la hiérarchie du [Cadre d'Architecture d'Entreprise](../00_caesn/00_overview/index.md). Chaque document de ce dossier correspond à **une initiative** inscrite au [portefeuille national](../00_caesn/06_portfolio/index.md).
@@ -50,3 +64,4 @@ ptisn/
 - [Cadre (niveau 1)](../00_caesn/00_overview/index.md)
 - [CNISN (niveau 2)](../01_cnisn/index.md)
 - [ARTSN (niveau 3)](../02_artsn/index.md)
+- [Matrice de lecture du PTISN](./reading-matrix.md)

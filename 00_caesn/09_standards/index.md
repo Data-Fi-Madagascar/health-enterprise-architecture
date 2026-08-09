@@ -11,6 +11,20 @@ tags: [standards, normes, homologation]
 
 # Normes et standards d'architecture
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ● |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 Ce domaine regroupe les **normes** (exigences obligatoires) et les **standards** (guides recommandés) applicables aux solutions numériques du secteur santé. Le catalogue détaillé est défini dans l'[Architecture de Référence Technique de la Santé Numérique](../../02_artsn/index.md) (ARTSN), document de niveau 3 distinct. La présente section fixe les règles de gouvernance des normes.
 
 ## Distinction normes / standards

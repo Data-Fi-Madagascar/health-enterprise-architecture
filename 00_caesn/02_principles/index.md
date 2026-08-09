@@ -11,6 +11,20 @@ tags: [principes, gouvernance]
 
 # Principes d'architecture
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ● |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 ## Rôle des principes d'architecture
 
 Les principes d'architecture définissent les règles transversales qui guident toute décision relative à l'organisation, aux données, aux systèmes numériques, aux infrastructures, aux investissements et à la gouvernance du système d'information sanitaire national.

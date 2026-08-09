@@ -11,6 +11,20 @@ tags: [flux-de-valeur, pilotage, performance, gouvernance]
 
 # VS-04 — Piloter, coordonner et améliorer la performance du système de santé
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ◐ |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 ## Valeur produite
 
 Le système de santé est planifié, coordonné, régulé et continuellement amélioré sur la base de données fiables, dans une logique de redevabilité envers la population et les partenaires.

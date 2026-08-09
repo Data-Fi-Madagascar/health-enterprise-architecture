@@ -11,6 +11,20 @@ tags: [applications, urbanisation]
 
 # Règles d'urbanisation applicative
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ○ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 L'urbanisation vise à organiser le paysage applicatif pour éviter les doublons, clarifier les responsabilités et faciliter l'évolution du système.
 
 1. **Une application ne doit pas devenir propriétaire d'un référentiel national.** Elle peut contribuer à l'alimenter ou le consommer, mais le référentiel reste un bien commun gouverné nationalement.

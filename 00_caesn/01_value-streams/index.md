@@ -11,6 +11,20 @@ tags: [flux-de-valeur, value-stream]
 
 # Flux de valeur nationaux de santé
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ● |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ◐ |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 ## Définition
 
 Un **flux de valeur** (value stream) est la séquence complète des activités qui permettent de produire un résultat de valeur pour un bénéficiaire, depuis le déclenchement du besoin jusqu'à la livraison du résultat et son amélioration continue. Il traverse les niveaux organisationnels, les programmes et les systèmes d'information. Il est défini du point de vue du bénéficiaire, non des institutions qui le servent.

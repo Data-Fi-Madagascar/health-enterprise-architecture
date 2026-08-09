@@ -11,6 +11,20 @@ tags: [portefeuille, initiatives, valeur]
 
 # Portefeuille d'initiatives orienté valeur
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ● |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ◐ |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ● |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 ## Définition et rôle
 
 Le portefeuille national d'initiatives numériques en santé est l'ensemble structuré des projets, programmes, plateformes, applications, services et investissements technologiques en cours, planifiés ou proposés dans le secteur santé. Il inclut les initiatives financées par le budget national, les partenaires, les programmes verticaux ou tout autre source.

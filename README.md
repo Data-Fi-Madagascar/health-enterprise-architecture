@@ -43,6 +43,7 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 
 - Chaque fichier inclut un frontmatter YAML (title, id, domain, version, status, last_reviewed, owner, tags)
 - **Règle « le nom reflète la localisation »** : le champ `domain:` porte le nom du dossier d'appartenance, préfixe numérique inclus (ex. `domain: 01_value-streams`). Voir [`AGENTS.md`](./AGENTS.md)
+- Chaque document ouvre sur un bloc **« Pour qui lire ce document »** : niveaux de lecture par profil (●◐○) + renvoi à la matrice de lecture de son niveau
 - Les références croisées utilisent des liens Markdown relatifs
 - Les ADR suivent le [modèle de décision](00_caesn/08_decisions/adr-0000-template.md)
 - Les normes suivent le [modèle de norme](00_caesn/09_standards/std-0000-template.md)
@@ -51,7 +52,16 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 
 ## Guide de lecture
 
-La [matrice de lecture par profil](00_caesn/10_annexes/reading-matrix.md) indique quelles sections lire selon le profil (décideurs institutionnels, directions métier, DEPSI / équipes techniques, SIS / données, partenaires techniques et financiers).
+Chaque niveau dispose de sa **matrice de lecture** croisant ses documents avec les profils d'utilisateur (décideurs institutionnels, directions métier, DEPSI / équipes techniques, SIS / données, partenaires techniques et financiers) :
+
+| Niveau | Matrice de lecture |
+|--------|--------------------|
+| 1 — CAESN | [Matrice de lecture](00_caesn/10_annexes/reading-matrix.md) |
+| 2 — CNISN | [Matrice de lecture](01_cnisn/reading-matrix.md) |
+| 3 — ARTSN | [Matrice de lecture](02_artsn/reading-matrix.md) |
+| 4 — PTISN | [Matrice de lecture](03_ptisn/reading-matrix.md) |
+
+Chaque document commence par un bloc **« Pour qui lire ce document »** qui indique, pour les cinq profils, le niveau de lecture recommandé (● prioritaire, ◐ complémentaire, ○ ponctuelle) et renvoie à la matrice de son niveau.
 
 ## Liens utiles
 

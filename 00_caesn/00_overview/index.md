@@ -11,6 +11,20 @@ tags: [cadre, gouvernance, santé-numérique, madagascar]
 
 # Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN)
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ● |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ◐ |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ● |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+
 ## Objet
 
 Le présent cadre fixe les principes, les méthodes et les mécanismes de gouvernance qui doivent guider la planification, le financement, le déploiement et le suivi de toute initiative numérique dans le secteur santé à Madagascar.

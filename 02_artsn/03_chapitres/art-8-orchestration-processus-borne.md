@@ -11,6 +11,20 @@ tags: [artsn, chapitres, art-8, orchestration, niveau-3]
 
 # ART-8 — Orchestration de processus borné
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ○ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+
 **Contenu normatif.** Pour tout processus métier distribué, asynchrone et à étapes multiples, l'architecture impose l'utilisation d'un **gestionnaire de transactions longues**. Ce composant doit suivre l'état du parcours, maintenir la cohérence sans verrouiller les bases distantes, et déclencher obligatoirement des transactions d'annulation ou de correction en cas d'échec d'une étape.
 
 **Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (établissements hospitaliers autonomes, cliniques privées, rupture de liaison réseau d'un des nœuds) : elle seule permet d'assurer la continuité et la traçabilité complète du parcours patient sans bloquer les systèmes locaux et sans rompre le pipeline.

@@ -11,6 +11,20 @@ tags: [artsn, chapitres, art-3, event-sourcing, niveau-3]
 
 # ART-3 — Historisation événementielle et profils de déploiement
 
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ○ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+
 **Contenu normatif.** Le stockage de la donnée de santé doit être structuré sous forme de **journal d'événements ordonnés, non modifiables et cumulatifs**, agissant comme la source unique de vérité opérationnelle (event sourcing). L'architecture doit supporter trois profils d'intégration :
 
 1. **Profil A** — historisation analytique en dérivation (*side-car*) ;
