@@ -1,5 +1,5 @@
 ---
-title: Acronymes du PTISN (niveau 4)
+title: Acronymes et abréviations du PTISN (niveau 4)
 id: ptisn-acronyms
 domain: 03_ptisn
 version: "0.0.1"

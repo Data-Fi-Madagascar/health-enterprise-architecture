@@ -1,5 +1,5 @@
 ---
-title: Flux de valeur (VS-01 à VS-04)
+title: Flux de valeur
 id: artsn-flux-de-valeur
 domain: 02_artsn
 version: "0.1.0"

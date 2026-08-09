@@ -1,5 +1,5 @@
 ---
-title: Paysage applicatif cible (six couches)
+title: Paysage applicatif cible
 id: application-target-layers
 domain: 05_application
 version: "0.1.0"

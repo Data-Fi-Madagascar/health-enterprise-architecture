@@ -1,5 +1,5 @@
 ---
-title: Chapitres et patterns de référence (ART-0 à ART-9)
+title: Chapitres et patterns de référence
 id: artsn-chapitres
 domain: 02_artsn
 version: "0.1.0"

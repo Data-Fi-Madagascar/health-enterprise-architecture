@@ -1,6 +1,6 @@
 ---
 title: VS-03 — Protéger financièrement la population face aux dépenses de santé
-id: VS-03
+id: vs-03
 domain: 01_value-streams
 version: "0.1.0"
 status: draft

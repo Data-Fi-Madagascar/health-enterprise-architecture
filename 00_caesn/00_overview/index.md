@@ -1,6 +1,6 @@
 ---
-title: Cadre d'Architecture d'Entreprise de la Santé Numérique
-id: CAESN
+title: Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN)
+id: caesn
 domain: 00_overview
 version: "0.1.0"
 status: draft

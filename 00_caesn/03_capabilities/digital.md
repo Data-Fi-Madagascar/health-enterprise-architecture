@@ -1,5 +1,5 @@
 ---
-title: Capabilités numériques transversales et composantes DPI-H
+title: Capabilités numériques transversales et composants DPI-H
 id: capabilities-digital
 domain: 03_capabilities
 version: "0.1.0"

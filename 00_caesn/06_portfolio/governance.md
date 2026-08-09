@@ -1,5 +1,5 @@
 ---
-title: Dépendances, revues du portefeuille et règles d'entrée/sortie
+title: Dépendances, revues et règles de gouvernance du portefeuille
 id: portfolio-governance
 domain: 06_portfolio
 version: "0.1.0"

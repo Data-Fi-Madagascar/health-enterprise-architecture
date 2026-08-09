@@ -1,5 +1,5 @@
 ---
-title: Fondations invariantes (F.1 à F.4)
+title: Fondations invariantes
 id: artsn-fondations
 domain: 02_artsn
 version: "0.1.0"

@@ -1,6 +1,6 @@
 ---
-title: Principes d'architecture transversaux (PA-01 à PA-12)
-id: PA
+title: Principes d'architecture transversaux
+id: pa
 domain: 02_principles
 version: "0.1.0"
 status: draft

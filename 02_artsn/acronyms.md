@@ -1,5 +1,5 @@
 ---
-title: Acronymes de l'ARTSN (niveau 3)
+title: Acronymes et abréviations de l'ARTSN (niveau 3)
 id: artsn-acronyms
 domain: 02_artsn
 version: "0.1.0"

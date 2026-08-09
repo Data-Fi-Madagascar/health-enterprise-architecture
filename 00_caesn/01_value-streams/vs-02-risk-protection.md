@@ -1,6 +1,6 @@
 ---
 title: VS-02 — Prévenir, détecter et répondre aux risques sanitaires
-id: VS-02
+id: vs-02
 domain: 01_value-streams
 version: "0.1.0"
 status: draft

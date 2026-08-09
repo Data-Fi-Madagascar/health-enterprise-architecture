@@ -1,5 +1,5 @@
 ---
-title: Portefeuille d'initiatives numériques orienté valeur
+title: Portefeuille d'initiatives orienté valeur
 id: portfolio
 domain: 06_portfolio
 version: "0.1.0"
