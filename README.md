@@ -56,7 +56,7 @@ Chaque niveau dispose de sa **matrice de lecture** croisant ses documents avec l
 
 | Niveau | Matrice de lecture |
 |--------|--------------------|
-| 1 — CAESN | [Matrice de lecture](00_caesn/10_annexes/reading-matrix.md) |
+| 1 — CAESN | [Matrice de lecture](00_caesn/reading-matrix.md) |
 | 2 — CNISN | [Matrice de lecture](01_cnisn/reading-matrix.md) |
 | 3 — ARTSN | [Matrice de lecture](02_artsn/reading-matrix.md) |
 | 4 — PTISN | [Matrice de lecture](03_ptisn/reading-matrix.md) |

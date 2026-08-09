@@ -23,7 +23,7 @@ tags: [données, principes]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
 Les principes d'architecture transversaux s'appliquent à toutes les données du système d'information sanitaire. Ils se traduisent en règles spécifiques ci-dessous.
 

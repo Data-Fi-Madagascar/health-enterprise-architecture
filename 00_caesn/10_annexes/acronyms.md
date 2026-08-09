@@ -23,7 +23,7 @@ tags: [annexes, acronymes]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ● |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
 | Acronyme | Signification |
 |----------|---------------|

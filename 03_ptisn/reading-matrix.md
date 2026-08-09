@@ -23,7 +23,7 @@ Les profils d'implémentation sont créés **un dossier par initiative** du [reg
 
 ## Matrices des autres niveaux
 
-- [Niveau 1 — CAESN](../00_caesn/10_annexes/reading-matrix.md)
+- [Niveau 1 — CAESN](../00_caesn/reading-matrix.md)
 - [Niveau 2 — CNISN](../01_cnisn/reading-matrix.md)
 - [Niveau 3 — ARTSN](../02_artsn/reading-matrix.md)
 

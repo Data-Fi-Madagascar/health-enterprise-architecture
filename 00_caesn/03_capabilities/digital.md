@@ -23,7 +23,7 @@ tags: [capabilités, numérique, snsd]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
 Les capabilités numériques transversales traduisent les axes de la Stratégie Nationale de Santé Digitale (SNSD) et les exigences des référentiels DPI-H, OpenHIE et GovStack. Elles ne constituent pas des finalités autonomes, mais un socle numérique au service des flux de valeur santé.
 

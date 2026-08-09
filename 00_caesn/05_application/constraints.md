@@ -23,7 +23,7 @@ tags: [applications, exploitation, terrain]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
 Madagascar présente plusieurs contextes d'exploitation numérique. Les applications doivent être conçues en fonction du contexte réel d'utilisation, non uniquement des conditions du niveau central.
 

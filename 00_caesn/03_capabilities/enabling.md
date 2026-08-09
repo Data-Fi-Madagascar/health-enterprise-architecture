@@ -23,7 +23,7 @@ tags: [capabilités, habilitantes, catalogue]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
 Les capabilités habilitantes ne produisent pas toujours directement une valeur visible pour le patient, mais leur absence bloque l'exécution des flux de valeur. Elles doivent être développées comme capabilités nationales durables, et non comme appuis ponctuels liés à des projets isolés.
 

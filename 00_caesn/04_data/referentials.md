@@ -23,7 +23,7 @@ tags: [données, référentiels, normes]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
 Les référentiels nationaux sont les socles communs qui permettent à tous les systèmes d'information de parler le même langage : identifier les mêmes structures, personnes, produits, zones géographiques, indicateurs et bénéficiaires.
 

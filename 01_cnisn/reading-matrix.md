@@ -23,7 +23,7 @@ Le contenu du CNISN est en cours de constitution : les documents à venir (stand
 
 ## Matrices des autres niveaux
 
-- [Niveau 1 — CAESN](../00_caesn/10_annexes/reading-matrix.md)
+- [Niveau 1 — CAESN](../00_caesn/reading-matrix.md)
 - [Niveau 3 — ARTSN](../02_artsn/reading-matrix.md)
 - [Niveau 4 — PTISN](../03_ptisn/reading-matrix.md)
 

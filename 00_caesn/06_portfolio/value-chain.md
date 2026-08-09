@@ -23,7 +23,7 @@ tags: [portefeuille, chaîne-de-valeur, bénéfices]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
 Chaque initiative doit présenter une chaîne de valeur qui explicite le lien causal entre ce qu'elle produit techniquement, ce qu'elle change dans le fonctionnement du système, et la valeur finale créée pour un bénéficiaire.
 

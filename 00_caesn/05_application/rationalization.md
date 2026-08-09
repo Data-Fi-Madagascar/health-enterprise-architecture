@@ -23,7 +23,7 @@ tags: [applications, rationalisation]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
 Le système existant comprend déjà plusieurs applications, plateformes et outils issus de programmes et partenaires. L'objectif n'est pas une remise à neuf brutale, mais une rationalisation progressive.
 

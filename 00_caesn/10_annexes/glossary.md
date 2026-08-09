@@ -23,7 +23,7 @@ tags: [glossaire, terminologie]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ● |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
 **Architecture d'entreprise** — Discipline de management qui décrit de façon structurée et cohérente l'ensemble d'une organisation : sa stratégie, ses processus métier, ses systèmes d'information, ses données et son infrastructure technologique. Elle permet d'aligner les investissements sur les priorités stratégiques et d'assurer la cohérence de l'ensemble.
 
@@ -68,5 +68,5 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 ## Liens
 
 - [Annexes](./index.md)
-- [Matrice de lecture](./reading-matrix.md)
+- [Matrice de lecture](../reading-matrix.md)
 - [Acronymes](./acronyms.md)

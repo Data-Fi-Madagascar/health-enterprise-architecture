@@ -55,7 +55,7 @@ L'ARTSN décline le niveau 1 en **standards techniques précis**, **solutions lo
 
 ## Matrices des autres niveaux
 
-- [Niveau 1 — CAESN](../00_caesn/10_annexes/reading-matrix.md)
+- [Niveau 1 — CAESN](../00_caesn/reading-matrix.md)
 - [Niveau 2 — CNISN](../01_cnisn/reading-matrix.md)
 - [Niveau 4 — PTISN](../03_ptisn/reading-matrix.md)
 

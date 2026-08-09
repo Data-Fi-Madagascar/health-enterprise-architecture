@@ -23,7 +23,7 @@ tags: [décisions, adr]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
 Les décisions d'architecture sont enregistrées sous forme d'Architecture Decision Records (ADR). Chaque ADR documente un choix structurant de façon concise, datée et traçable, afin de préserver la mémoire des choix et de leurs justifications.
 

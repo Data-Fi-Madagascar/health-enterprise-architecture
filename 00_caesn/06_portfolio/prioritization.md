@@ -23,7 +23,7 @@ tags: [portefeuille, priorisation, score]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
 La priorisation ne doit pas être fondée seulement sur l'urgence perçue, la disponibilité d'un financement ou la pression d'un partenaire.
 

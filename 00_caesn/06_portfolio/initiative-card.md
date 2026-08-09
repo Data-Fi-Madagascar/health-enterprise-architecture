@@ -23,7 +23,7 @@ tags: [portefeuille, fiche, initiative]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../10_annexes/reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
 Toute initiative soumise au portefeuille national doit être décrite selon une fiche standard. L'incapacité à renseigner les champs essentiels signifie que l'initiative n'est pas assez mûre pour être financée, déployée ou généralisée.
 
