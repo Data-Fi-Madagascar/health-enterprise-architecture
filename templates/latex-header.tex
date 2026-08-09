@@ -1,0 +1,35 @@
+% En-tête LaTeX injecté par pandoc (-H) pour une typographie soignée.
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+
+\definecolor{heablue}{HTML}{1F4E79}
+\definecolor{heagray}{HTML}{555555}
+
+% === En-tête / pied de page ===
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\itshape\color{heagray} Santé numérique de Madagascar}
+\fancyhead[R]{\small\color{heagray} version \editionversion}
+\fancyfoot[C]{\small\color{heagray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% === Titres (pandoc/document avec top-level-division=section par défaut) ===
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{heablue}}{\thesection}{0.6em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{heablue}}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries\color{heablue}}{\thesubsubsection}{0.6em}{}
+
+% === Tableaux : lignes aérées (matrices ●◐○) ===
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.15}
+
+% === Divers ===
+\setcounter{tocdepth}{2}

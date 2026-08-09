@@ -1,3 +1,10 @@
 .DS_Store
 *.swp
 *~
+
+# Sorties de build PDF (jamais committées)
+dist/
+
+# Python
+__pycache__/
+*.pyc
