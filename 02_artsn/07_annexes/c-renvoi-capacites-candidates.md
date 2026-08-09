@@ -13,9 +13,9 @@ tags: [artsn, annexes, renvoi, capacites-candidates, one-health, niveau-3]
 
 ## Point de vigilance CAESN — capacité et référentiel manquants
 
-Une capacité de **coordination intersectorielle** et un **référentiel normatif** (Tripartite Plus OMS-WOAH-FAO-PNUE, RSI) potentiellement absents du [CAESN](../../00_caesn/03_capabilities/index.md) sont documentés séparément dans la note « Point de vigilance CAESN — capacité et référentiel manquants pour la coordination intersectorielle (One Health) », destinée à l'instance de gouvernance du CAESN.
+Une capacité de **coordination intersectorielle** et un **référentiel normatif** (Tripartite Plus OMS-WOAH-FAO-PNUE, RSI) potentiellement absents du [CAESN](../../00_caesn/03_capabilities/index.md) sont documentés séparément dans la [note « Point de vigilance CAESN — capacité et référentiel manquants pour la coordination intersectorielle (One Health) »](../../00_caesn/07_governance/point-de-vigilance-caesn.md), destinée à l'instance de gouvernance du CAESN.
 
-Ce point de vigilance porte sur deux écarts constatés lors du peuplement de l'ARTSN :
+Ce point de vigilance porte sur trois écarts constatés lors du peuplement de l'ARTSN :
 
 1. **Capacité candidate « Coordination intersectorielle »** — rattachement des chapitres [ART-0](../03_chapitres/art-0-accords-partage.md) (accords de partage) et [ART-8d](../03_chapitres/art-8d-choregraphie-interinstitutionnelle.md) (chorégraphie inter-institutionnelle), absente du catalogue CAP-01..16 du CAESN.
 2. **Capacité candidate « Surveillance spatio-temporelle »** — rattachement du chapitre [ART-4d](../03_chapitres/art-4d-referentiel-geospatial.md), absente du catalogue.
@@ -30,6 +30,7 @@ Ce point de vigilance porte sur deux écarts constatés lors du peuplement de l'
 
 ## Liens
 
+- [Point de vigilance CAESN (note de gouvernance)](../../00_caesn/07_governance/point-de-vigilance-caesn.md)
 - [CAESN — capacités](../../00_caesn/03_capabilities/index.md)
 - [ART-0 — Accords de partage](../03_chapitres/art-0-accords-partage.md)
 - [ART-4a — Résolution d'identité](../03_chapitres/art-4a-resolution-identite.md)
