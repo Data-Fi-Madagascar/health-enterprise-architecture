@@ -2,7 +2,7 @@
 title: Services numériques partagés prioritaires
 id: application-shared-services
 domain: 05_application
-version: "0.1.0"
+version: "0.0.1"
 status: draft
 last_reviewed: 2026-07-03
 owner: Direction des Systèmes d'Information

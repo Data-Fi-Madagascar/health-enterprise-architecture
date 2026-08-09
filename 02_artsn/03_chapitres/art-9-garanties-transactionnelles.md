@@ -2,7 +2,7 @@
 title: ART-9 — Garanties transactionnelles fortes
 id: art-9-garanties-transactionnelles
 domain: 02_artsn
-version: "0.1.0"
+version: "0.0.1"
 status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI

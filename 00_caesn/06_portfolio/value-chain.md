@@ -2,7 +2,7 @@
 title: Chaîne de valeur d'une initiative
 id: value-chain
 domain: 06_portfolio
-version: "0.1.0"
+version: "0.0.1"
 status: draft
 last_reviewed: 2026-07-03
 owner: Bureau de Réalisation de la Valeur

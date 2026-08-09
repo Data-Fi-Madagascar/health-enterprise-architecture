@@ -2,7 +2,7 @@
 title: "ADR-0000 — <Titre de la décision>"
 id: adr-0000
 domain: 08_decisions
-version: "0.1.0"
+version: "0.0.1"
 status: proposé
 date: 2026-07-03
 owner: <Porteur de la décision>

@@ -2,10 +2,10 @@
 title: RACI de gouvernance et responsabilités
 id: governance-raci
 domain: 07_governance
-version: "0.1.0"
+version: "0.0.1"
 status: draft
 last_reviewed: 2026-07-03
-owner: Secrétariat Général du Ministère
+owner: Secrétariat Général
 tags: [gouvernance, raci, responsabilités, redevabilité]
 ---
 

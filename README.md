@@ -1,7 +1,7 @@
 ---
 title: Cadre d'Architecture d'Entreprise de la Santé Numérique
 description: Architecture d'entreprise du secteur santé numérique de Madagascar, documentée as code
-version: "0.1.0"
+version: "0.0.1"
 status: draft
 last_reviewed: 2026-08-07
 review_cycle: quarterly

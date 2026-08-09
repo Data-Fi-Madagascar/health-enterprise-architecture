@@ -2,10 +2,10 @@
 title: Capabilités numériques transversales et composants DPI-H
 id: capabilities-digital
 domain: 03_capabilities
-version: "0.1.0"
+version: "0.0.1"
 status: draft
 last_reviewed: 2026-07-03
-owner: Responsable des capabilités numériques
+owner: Responsable de capabilités numériques
 tags: [capabilités, numérique, snsd]
 ---
 

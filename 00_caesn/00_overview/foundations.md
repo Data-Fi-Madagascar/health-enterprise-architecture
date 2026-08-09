@@ -2,7 +2,7 @@
 title: Fondements stratégiques et normatifs
 id: fondements
 domain: 00_overview
-version: "0.1.0"
+version: "0.0.1"
 status: draft
 last_reviewed: 2026-07-03
 owner: Ministère de la Santé Publique

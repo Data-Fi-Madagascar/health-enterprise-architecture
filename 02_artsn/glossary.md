@@ -2,7 +2,7 @@
 title: Glossaire de l'ARTSN (niveau 3)
 id: artsn-glossary
 domain: 02_artsn
-version: "0.1.0"
+version: "0.0.1"
 status: draft
 last_reviewed: 2026-08-09
 owner: DEPSI

@@ -2,7 +2,7 @@
 title: Principes de l'architecture des données
 id: data-principles
 domain: 04_data
-version: "0.1.0"
+version: "0.0.1"
 status: draft
 last_reviewed: 2026-07-03
 owner: Cellule du Système d'Information Sanitaire

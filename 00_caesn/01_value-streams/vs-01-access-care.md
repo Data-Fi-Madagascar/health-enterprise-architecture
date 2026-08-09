@@ -2,7 +2,7 @@
 title: VS-01 — Accéder à des services de santé essentiels, intégrés, équitables et de qualité
 id: vs-01
 domain: 01_value-streams
-version: "0.1.0"
+version: "0.0.1"
 status: draft
 last_reviewed: 2026-07-03
 owner: Direction des soins

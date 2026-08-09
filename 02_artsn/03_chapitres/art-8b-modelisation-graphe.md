@@ -2,7 +2,7 @@
 title: ART-8b — Modélisation de relations en graphe
 id: art-8b-modelisation-graphe
 domain: 02_artsn
-version: "0.1.0"
+version: "0.0.1"
 status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI

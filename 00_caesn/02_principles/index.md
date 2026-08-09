@@ -2,7 +2,7 @@
 title: Principes d'architecture
 id: principles
 domain: 02_principles
-version: "0.1.0"
+version: "0.0.1"
 status: draft
 last_reviewed: 2026-07-03
 owner: Comité National d'Architecture Santé Numérique
