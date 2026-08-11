@@ -1,0 +1,54 @@
+---
+title: Partie VI — Indicateurs de suivi
+id: cnisn-indicateurs
+domain: 01_cnisn
+version: "0.5"
+status: draft
+last_reviewed: 2026-07-31
+owner: DEPSI
+tags: ["cnisn", "niveau-2", "interopérabilité", "indicateurs"]
+---
+
+# Partie VI — Indicateurs de suivi
+
+
+## Gouvernance
+
+- pourcentage de capacités avec propriétaire désigné ;
+- nombre de services enregistrés ;
+- nombre de contrats publiés ;
+- nombre de dérogations actives ;
+- délai moyen d’arbitrage.
+
+## Interopérabilité
+
+- nombre de systèmes intégrés par contrat publié ;
+- pourcentage d’interfaces versionnées ;
+- taux de réutilisation des services ;
+- délai moyen d’intégration d’une nouvelle source ;
+- nombre d’intégrations point à point non gouvernées.
+
+## Référentiels
+
+- taux d’utilisation des identifiants nationaux ;
+- taux de correspondance des unités organisationnelles ;
+- nombre de divergences ;
+- délai moyen de résolution.
+
+## Sécurité
+
+- pourcentage de services avec base d’autorisation documentée ;
+- pourcentage d’accès sensibles audités ;
+- nombre d’incidents ;
+- délai de révocation ;
+- taux de revue des droits.
+
+## Conformité
+
+- nombre d’initiatives évaluées ;
+- taux d’homologation ;
+- nombre de non-conformités ;
+- délai de remédiation ;
+- taux de réévaluation dans les délais.
+
+------------------------------------------------------------------------

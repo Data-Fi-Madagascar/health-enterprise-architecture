@@ -1,0 +1,78 @@
+---
+title: PT-05 — Profil technique national
+id: ptisn-pt-05-registre-professionnels
+domain: 03_ptisn
+version: "0.4"
+status: draft
+last_reviewed: 2026-07-31
+owner: Équipes techniques des initiatives
+tags: ["ptisn", "niveau-4", "profils", "pt-05"]
+---
+
+# PT-05 — Profil technique national
+
+
+## 1. Capacité CNISN
+
+Déclinaison de **CAP-INT-02**, complétée par les capacités relatives à la gouvernance des professionnels.
+
+## 2. Chapitres ART applicables
+
+- ART-4 ;
+- ART-4a — Résolution d'identité ;
+- ART-7.
+
+## 3. Service national
+
+**Registre national des professionnels et travailleurs de santé**
+
+## 4. Responsabilités
+
+Le service doit gérer :
+
+- l’identité du professionnel ;
+- la profession ;
+- la qualification ;
+- la spécialité ;
+- la licence ;
+- l’ordre ou l’autorité professionnelle ;
+- l’employeur ;
+- l’affectation ;
+- l’établissement ;
+- la période d’exercice ;
+- le statut ;
+- les habilitations métier.
+
+## 5. Profil cible
+
+Le profil mCSD peut être utilisé pour exposer les informations de découverte relatives aux organisations, localisations, services et professionnels, selon le périmètre national retenu. mCSD fournit des interfaces REST adaptées à des environnements fédérés et permet la recherche de ressources liées aux services de santé.
+
+## 6. Décisions
+
+| Élément                             | Statut           |
+|-------------------------------------|------------------|
+| Service national HWR                | Requis           |
+| Profil d’exposition mCSD            | Recommandé       |
+| Produit de registre                 | À sélectionner   |
+| Modèle métier national              | À définir        |
+| Lien avec l’identité fondationnelle | À définir        |
+| Authentification des professionnels | Service distinct |
+
+## 7. Principe de séparation
+
+Le registre professionnel ne constitue pas le fournisseur d’authentification.
+
+    Fournisseur d’identité
+    Authentifie la personne
+              │
+              ▼
+    Registre professionnel
+    Détermine sa qualité et son statut
+              │
+              ▼
+    Service d’autorisation
+    Détermine ce qu’elle peut faire
+
+Un utilisateur authentifié ne doit pas être considéré comme professionnel habilité sans vérification de son statut dans le registre approprié.
+
+------------------------------------------------------------------------

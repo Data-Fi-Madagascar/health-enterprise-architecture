@@ -1,0 +1,110 @@
+---
+title: Partie VI — Gouvernance du PTISN
+id: ptisn-gouvernance
+domain: 03_ptisn
+version: "0.4"
+status: draft
+last_reviewed: 2026-07-31
+owner: Équipes techniques des initiatives
+tags: ["ptisn", "niveau-4", "interopérabilité", "gouvernance"]
+---
+
+# Partie VI — Gouvernance du PTISN
+
+
+## 1. Instance porteuse
+
+Le PTISN est gouverné par l’instance d’architecture sectorielle de santé, en coordination avec :
+
+- l’Unité de Gouvernance Digitale ;
+- la direction des systèmes d’information du secteur ;
+- les directions métier ;
+- les responsables des registres ;
+- les autorités de cybersécurité ;
+- l’autorité de protection des données ;
+- les équipes d’exploitation.
+
+------------------------------------------------------------------------
+
+## 2. Processus d’adoption d’un profil
+
+    Besoin d’interopérabilité
+              │
+              ▼
+    Analyse du cas d’usage
+              │
+              ▼
+    Évaluation des standards existants
+              │
+              ▼
+    Sélection d’un profil candidat
+              │
+              ▼
+    Pilote et tests de conformité
+              │
+              ▼
+    Évaluation opérationnelle
+              │
+              ▼
+    Décision nationale
+              │
+              ▼
+    Publication dans le PTISN
+
+------------------------------------------------------------------------
+
+## 3. Critères d’évaluation
+
+Un standard, profil ou produit est évalué selon :
+
+- adéquation fonctionnelle ;
+- maturité ;
+- adoption ;
+- ouverture ;
+- interopérabilité ;
+- sécurité ;
+- souveraineté ;
+- capacité hors ligne ;
+- performance ;
+- exploitabilité ;
+- compétences disponibles ;
+- coût total de possession ;
+- réversibilité ;
+- conformité au cadre national.
+
+------------------------------------------------------------------------
+
+## 4. Homologation d’un produit
+
+Un produit n’est pas homologué uniquement parce qu’il implémente un standard reconnu.
+
+L’homologation doit vérifier :
+
+- la version réellement supportée ;
+- les options ;
+- les extensions ;
+- les tests ;
+- la sécurité ;
+- l’exploitation ;
+- la continuité ;
+- la portabilité ;
+- l’export des données ;
+- la documentation ;
+- les coûts ;
+- la stratégie de sortie.
+
+------------------------------------------------------------------------
+
+## 5. Gestion des versions
+
+Une nouvelle version du PTISN doit préciser :
+
+- les profils ajoutés ;
+- les profils modifiés ;
+- les profils dépréciés ;
+- les produits concernés ;
+- les impacts sur les initiatives ;
+- les périodes de transition ;
+- la date d’entrée en vigueur.
+
+------------------------------------------------------------------------
