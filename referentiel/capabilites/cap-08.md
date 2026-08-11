@@ -17,7 +17,7 @@ tags: ['caesn', 'niveau-1', 'capabilite', 'cap-08']
 
 ## Rôle dans le système
 
-Planifier, coordonner, réguler, suivre et rendre compte de la performance du système à tous les niveaux.
+La capabilité assure la gouvernance du système de santé : planification, coordination, régulation, suivi et redevabilité à tous les niveaux (national, régional, district, formation). Elle transforme les données et les plans en décisions de gestion, et garantit que chaque niveau rend compte de sa performance aux instances qui l’encadrent.
 
 ## Flux de valeur
 

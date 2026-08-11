@@ -6,8 +6,9 @@ title: CAP-INT-12 — Conformité et tests d’interopérabilité
 status: active
 owner: DEPSI
 version: "0.5"
+family: qualite-conformite
 source: 01_cnisn/02_capacites.md
-maps_to: ["p-int-19", "p-int-20", "p-int-21", "p-int-22", "p-int-23", "p-int-24", "p-int-25"]
+maps_to: ["p-int-19", "p-int-20", "p-int-21", "p-int-22", "p-int-23", "p-int-24", "p-int-25", "cap-14", "cap-16"]
 implements: []
 applies_to: []
 related: []
@@ -36,3 +37,7 @@ Permettre de vérifier objectivement qu’un système respecte les contrats et p
 ### Principes associés
 
 P-INT-19 à P-INT-25.
+
+### Réponse nationale
+
+La conformité ne se traduit pas par un service exposé mais par un **processus d’homologation** : cadre CNISN Partie IV, fondation F.4 (rattachement aux capacités) et dispositif CNASN. Les tests associés (validation de contrats, jeux de données, remédiation) sont portés par les profils et outils PTISN.

@@ -11,6 +11,8 @@ tags: ["ptisn", "niveau-4", "profils", "pt-04"]
 
 # PT-04 — Profil technique national
 
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
 
 ## 1. Capacité CNISN
 
@@ -19,8 +21,8 @@ tags: ["ptisn", "niveau-4", "profils", "pt-04"]
 ## 2. Chapitres ART applicables
 
 - ART-4 — référentiels ;
-- ART-4a — Résolution d'identité ;
-- ART-4b — bases d'autorisation ;
+- ART-4a — Résolution d’identité ;
+- ART-4b — bases d’autorisation ;
 - ART-7 — sécurité.
 
 ## 3. Service national
@@ -98,3 +100,7 @@ L’identifiant santé ne doit pas nécessairement être identique à l’identi
 Le lien entre les deux doit être gouverné, sécurisé et limité à une finalité.
 
 ------------------------------------------------------------------------
+
+*Rattachement : [CAP-INT-01](../../referentiel/capacites/cap-int-01.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-4A](../../referentiel/chapitres/art-4a.md), [ART-4B](../../referentiel/chapitres/art-4b.md), [ART-7](../../referentiel/chapitres/art-7.md) · [fiche](../../referentiel/profils/pt-04.md)*
+
+<!-- END:GENERATED -->

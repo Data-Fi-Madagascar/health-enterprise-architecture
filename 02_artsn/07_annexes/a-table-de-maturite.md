@@ -50,7 +50,7 @@ La table de maturité fixe le statut de chaque chapitre et la condition de passa
 
 ## Domaines non couverts par cette version
 
-La logistique des médicaments et intrants ([CAP-10](../../00_caesn/03_capabilities/index.md)) n'est pas couverte par cette version. Elle constitue un candidat pour un développement ultérieur, en particulier pour la réconciliation physique-numérique ([ART-5](../03_chapitres/art-5-coherence-qualite-donnees.md)) et une possible généralisation d'[ART-9](../03_chapitres/art-9-garanties-transactionnelles.md) au-delà du seul registre financier.
+La logistique des médicaments et intrants ([CAP-10](../../00_caesn/03_capabilities/index.md)) n'est pas couverte par cette version. Elle constitue un candidat pour un développement ultérieur, en particulier pour la réconciliation physique-numérique ([ART-5](../../referentiel/chapitres/art-5.md)) et une possible généralisation d'[ART-9](../../referentiel/chapitres/art-9.md) au-delà du seul registre financier.
 
 ## Liens
 

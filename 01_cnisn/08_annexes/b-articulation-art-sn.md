@@ -11,20 +11,16 @@ tags: ["cnisn", "niveau-2", "annexes"]
 
 # Annexe B — Articulation avec l'ART-SN
 
+Les 12 capacités du CNISN sont regroupées en cinq familles de réponse (voir [Partie II](../02_capacites.md)). Chaque famille se traduit par une ou plusieurs réponses architecturales de l'ART-SN : les couches 3 à 5 et les deux axes de la [cartographie cible](../../02_artsn/04_cartographie-cible.md), exécutés par les chapitres et fondations du référentiel.
 
-| Domaine CNISN                     | Chapitres ART-SN       |
-|-----------------------------------|------------------------|
-| Autorité et données de référence  | F.1, ART-4             |
-| Contractualisation                | F.2, F.3, ART-1, ART-2 |
-| Rattachement à la valeur          | F.4                    |
-| Protection et minimisation        | F.5, ART-7             |
-| Observabilité                     | F.6                    |
-| Gouvernance interinstitutionnelle | ART-0, ART-11          |
-| Historisation                     | ART-3                  |
-| Qualité et réconciliation         | ART-5                  |
-| Analytique                        | ART-6                  |
-| Coordination                      | ART-8                  |
-| Transactions fortes               | ART-9                  |
-| Logistique                        | ART-10                 |
+| Famille CNISN | Capacités | Réponse ART-SN |
+|---|---|---|
+| 1. Référentiels et identités | CAP-INT-01, 02, 04, 05 | Couche 4 — services partagés : [ART-4](../../referentiel/chapitres/art-4.md), [ART-4a](../../referentiel/chapitres/art-4a.md), [ART-4c](../../referentiel/chapitres/art-4c.md), [ART-4d](../../referentiel/chapitres/art-4d.md) |
+| 2. Échange, médiation et contractualisation | CAP-INT-03, 06 | Couches 3 et 4 — échange, transport et médiation : [ART-1](../../referentiel/chapitres/art-1.md), [ART-2](../../referentiel/chapitres/art-2.md), [ART-8a](../../referentiel/chapitres/art-8a.md), [ART-8c](../../referentiel/chapitres/art-8c.md) ; [F.2](../../referentiel/fondations/f-2.md), [F.3](../../referentiel/fondations/f-3.md) |
+| 3. Données analytiques et exposition | CAP-INT-07 | Couche 5 — projections analytiques : [ART-6](../../referentiel/chapitres/art-6.md), [ART-5](../../referentiel/chapitres/art-5.md), [ART-8b](../../referentiel/chapitres/art-8b.md), [ART-9](../../referentiel/chapitres/art-9.md) |
+| 4. Confiance, sécurité et autorisation | CAP-INT-08, 09, 10 | Axe 1 — sécurité et confiance : [ART-7](../../referentiel/chapitres/art-7.md), [ART-4b](../../referentiel/chapitres/art-4b.md), [ART-9](../../referentiel/chapitres/art-9.md) ; [F.5](../../referentiel/fondations/f-5.md) |
+| 5. Qualité et conformité | CAP-INT-11, 12 | Axe 2 — gouvernance de données : [F.4](../../referentiel/fondations/f-4.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-5](../../referentiel/chapitres/art-5.md) |
+
+Cette articulation couvre les réponses d'architecture ; la traduction en standards, profils et versions relève du PTISN (voir [matrice d'alignement](../../03_ptisn/04_matrice-alignement.md)).
 
 ------------------------------------------------------------------------

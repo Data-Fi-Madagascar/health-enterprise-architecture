@@ -17,7 +17,7 @@ tags: ['caesn', 'niveau-1', 'capabilite', 'cap-04']
 
 ## Rôle dans le système
 
-Intégrer agents communautaires, communautés et patients dans la prévention, l'alerte, le suivi, l'observance et l'amélioration des services.
+La capabilité intègre les agents communautaires, les communautés et les patients comme acteurs du système de santé : prévention, alerte précoce, suivi des cas, observance des traitements et amélioration des services. Elle étend la couverture sanitaire au-delà des formations sanitaires, en particulier dans les zones où la distance et le coût limitent le recours aux soins.
 
 ## Flux de valeur
 

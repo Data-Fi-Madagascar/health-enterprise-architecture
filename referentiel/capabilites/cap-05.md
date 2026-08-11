@@ -17,7 +17,7 @@ tags: ['caesn', 'niveau-1', 'capabilite', 'cap-05']
 
 ## Rôle dans le système
 
-Détecter, notifier, vérifier, investiguer et répondre aux risques sanitaires, épidémies et urgences.
+La capabilité couvre l’ensemble du cycle de gestion des risques sanitaires : détection des signaux, notification des cas, vérification, investigation, déclenchement de la riposte et retour d’expérience. Elle relie les formations sanitaires, les districts et le niveau central pour qu’une épidémie ou une urgence soit identifiée et traitée sans délai.
 
 ## Flux de valeur
 

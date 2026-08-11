@@ -7,7 +7,7 @@ status: active
 owner: DEPSI
 version: "0.5"
 source: 01_cnisn/01_principes.md
-maps_to: []
+maps_to: ["cap-14"]
 implements: []
 applies_to: []
 related: ["cap-int-03", "cap-int-05", "cap-int-06", "cap-int-07", "cap-int-11"]

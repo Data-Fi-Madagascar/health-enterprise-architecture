@@ -17,7 +17,7 @@ tags: ['caesn', 'niveau-1', 'capabilite', 'cap-07']
 
 ## Rôle dans le système
 
-Identifier les bénéficiaires, vérifier leurs droits, appliquer les mécanismes de protection et soutenir l'achat stratégique.
+La capabilité protège les ménages contre le risque financier lié aux soins : identification des bénéficiaires, vérification de leurs droits, application des mécanismes de protection financière et soutien à l’achat stratégique des services. Elle garantit que la couverture et la protection annoncées se traduisent effectivement au point de service, y compris en zone à connectivité limitée.
 
 ## Flux de valeur
 

@@ -27,7 +27,7 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 
 **Architecture d'entreprise** — Discipline de management qui décrit de façon structurée et cohérente l'ensemble d'une organisation : sa stratégie, ses processus métier, ses systèmes d'information, ses données et son infrastructure technologique. Elle permet d'aligner les investissements sur les priorités stratégiques et d'assurer la cohérence de l'ensemble.
 
-**Architecture de Référence Technique** — Architecture de Référence Technique de la Santé Numérique (ARTSN), document de niveau 3, distinct du présent cadre, qui traduit les principes architecturaux en standards techniques précis, solutions logicielles retenues, configurations et règles d'homologation. Il s'adresse aux équipes techniques et aux intégrateurs.
+**Architecture de Référence Technique** — Architecture de Référence Technique de la Santé Numérique (ARTSN), document de niveau 3, distinct du présent cadre, qui traduit les principes architecturaux en familles de patterns validées avec critères de sélection explicites, standards techniques et formats d'échange, contrats d'interfaces et règles d'homologation. Il s'adresse aux équipes techniques et aux intégrateurs.
 
 **Architecture runway** — Ensemble des capabilités fondamentales qui doivent être développées en priorité car leur absence bloque le développement de toutes les autres. Dans le présent cadre, il s'agit de CAP-13, CAP-14, CAP-15 et CAP-16.
 

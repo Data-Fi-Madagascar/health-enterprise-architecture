@@ -13,11 +13,11 @@ applies_to: ["vs-01", "vs-02"]
 related: []
 tags: ['caesn', 'niveau-1', 'capabilite', 'cap-10']
 ---
-# CAP-10 — Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement
+# CAP-10 — Gestion des médicaments, vaccins, intrants et chaîne d’approvisionnement
 
 ## Rôle dans le système
 
-Assurer la disponibilité des produits de santé au point de service, dont médicaments, vaccins, intrants, consommables.
+La capabilité assure la disponibilité des produits de santé au point de service : médicaments, vaccins, intrants et consommables. Elle couvre la chaîne d’approvisionnement, du stock central jusqu’au comptoir, et conditionne directement la qualité des soins : une rupture de stock peut empêcher un traitement ou une vaccination programmée.
 
 ## Flux de valeur
 

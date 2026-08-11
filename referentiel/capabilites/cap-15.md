@@ -17,7 +17,7 @@ tags: ['caesn', 'niveau-1', 'capabilite', 'cap-15']
 
 ## Rôle dans le système
 
-Garantir la confiance, la sécurité, la confidentialité et la protection des données personnelles de santé.
+La capabilité garantit la confiance, la sécurité, la confidentialité et la protection des données personnelles de santé. Elle est la condition de l’adoption du système par les patients et les agents : une protection défaillante érode la confiance de toute la population dans le numérique de santé, quel que soit le service concerné.
 
 ## Flux de valeur
 

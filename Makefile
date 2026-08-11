@@ -5,7 +5,9 @@
 # Usage:
 #   make pdf                # 5 PDF dans dist/ (version 0.0.1 par défaut)
 #   make pdf VERSION=1.2.3  # avec version précise
-#   make clean            # supprime dist/
+#   make wrappers           # régénère les 51 enveloppes (transclusion des 150 objets)
+#   make check              # idempotence des enveloppes + 0 lien relatif cassé
+#   make clean              # supprime dist/
 
 SHELL := /bin/bash
 VERSION ?= 0.0.1
@@ -16,11 +18,22 @@ DATE  := $(shell date +%F)
 
 export TAG_VERSION=$(VERSION)
 
-.PHONY: pdf clean release note
+.PHONY: pdf wrappers check clean release note
 
 pdf:
 	@echo "==> Génération des 5 PDF (version $(VERSION), moteur $(ENGINE))"
 	$(PY) scripts/build_pdf.py --version $(VERSION) --engine $(ENGINE) --font "$(FONT)"
+
+# Transclusion des 150 objets du référentiel dans les 51 enveloppes
+wrappers:
+	@echo "==> Régénération des enveloppes (transclusion des objets)"
+	$(PY) scripts/build_wrappers.py
+
+# Garde-fou : enveloppes à jour (A1/A4) + 0 lien relatif cassé (A2).
+# Lecture seule : ne régénère pas, pour détecter toute édition d'un bloc généré.
+check:
+	$(PY) scripts/build_wrappers.py --check
+	$(PY) scripts/check_links.py
 
 clean:
 	rm -rf dist

@@ -13,11 +13,11 @@ applies_to: ["vs-01", "vs-02", "vs-03", "vs-04"]
 related: []
 tags: ['caesn', 'niveau-1', 'capabilite', 'cap-13']
 ---
-# CAP-13 — Système d'information sanitaire, données et recherche
+# CAP-13 — Système d’information sanitaire, données et recherche
 
 ## Rôle dans le système
 
-Produire, gérer, intégrer, analyser et utiliser les données pour la décision, la recherche, le pilotage et la redevabilité.
+La capabilité transforme les données du système de santé en information utile : production, gestion, intégration, analyse et utilisation pour la décision, la recherche, le pilotage et la redevabilité. Elle est transversale à tous les flux de valeur, car aucun flux ne peut être mesuré, amélioré ou gouverné sans données fiables.
 
 ## Flux de valeur
 

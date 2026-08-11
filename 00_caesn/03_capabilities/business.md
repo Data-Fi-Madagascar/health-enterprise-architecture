@@ -1,5 +1,5 @@
 ---
-title: Capabilités métier de santé
+title: "Capabilités métier de santé"
 id: capabilities-business
 domain: 03_capabilities
 version: "0.0.1"
@@ -25,21 +25,114 @@ tags: [capabilités, métier, catalogue]
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
-Les capabilités métier sont directement liées à la production de valeur dans les quatre flux de valeur nationaux.
 
-| Code | Capabilité | Flux de valeur | Rôle dans le système |
-|------|------------|----------------|----------------------|
-| CAP-01 | Offre de soins et continuité des services | VS-01 | Assurer la disponibilité, l'accessibilité, la continuité et la qualité minimale des services de santé à tous les niveaux. |
-| CAP-02 | Gestion du parcours patient, référence et contre-référence | VS-01 | Organiser le parcours du patient entre les points de service, assurer la référence, la contre-référence et la continuité de l'information de soins. |
-| CAP-03 | Qualité, sécurité des soins et amélioration continue | VS-01, VS-04 | Mesurer, améliorer et sécuriser les services, en reliant les données de qualité aux mécanismes d'amélioration continue. |
-| CAP-04 | Santé communautaire et engagement des communautés | VS-01, VS-02 | Intégrer agents communautaires, communautés et patients dans la prévention, l'alerte, le suivi, l'observance et l'amélioration des services. |
-| CAP-05 | Surveillance épidémiologique, alerte, investigation et riposte | VS-02 | Détecter, notifier, vérifier, investiguer et répondre aux risques sanitaires, épidémies et urgences. |
-| CAP-06 | Vaccination, prévention et promotion de la santé | VS-02 | Prévenir les maladies, promouvoir les comportements favorables et assurer le suivi des interventions préventives, dont la vaccination. |
-| CAP-07 | Protection financière, couverture santé universelle | VS-03 | Identifier les bénéficiaires, vérifier leurs droits, appliquer les mécanismes de protection et soutenir l'achat stratégique. |
-| CAP-08 | Gouvernance institutionnelle, planification, coordination et redevabilité | VS-04 | Planifier, coordonner, réguler, suivre et rendre compte de la performance du système à tous les niveaux. |
+Chaque capabilité vit dans le référentiel : `referentiel/capabilites/cap-XX.md` (rôle, flux de valeur associés).
 
+## Catalogue des capabilités
+
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+
+### CAP-01 — Offre de soins et continuité des services
+
+#### Rôle dans le système
+
+La capabilité garantit que chaque citoyen accède à des services de santé essentiels, sûrs et de qualité, quel que soit son lieu de résidence ou sa situation. Elle couvre l’offre de soins à tous les niveaux de la pyramide sanitaire : disponibilité des services, accessibilité géographique et financière, continuité de la prise en charge et qualité minimale garantie. Elle conditionne le bon déroulement du parcours de soins décrit par le flux de valeur associé.
+
+#### Flux de valeur
+
+- [VS-01](../../referentiel/flux-valeur/vs-01.md)
+
+*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md) · [fiche](../../referentiel/capabilites/cap-01.md)*
+
+### CAP-02 — Gestion du parcours patient, référence et contre-référence
+
+#### Rôle dans le système
+
+La capabilité organise le parcours du patient entre les points de service : orientation vers le niveau adapté, référence vers une structure plus spécialisée et contre-référence vers la formation d’origine. Elle assure que l’information clinique suit le patient d’un niveau à l’autre, afin que la continuité des soins ne dépende pas d’un seul établissement. Sans elle, les ruptures de parcours (référence sans dossier, absence de retour d’information) fragmentent la prise en charge.
+
+#### Flux de valeur
+
+- [VS-01](../../referentiel/flux-valeur/vs-01.md)
+
+*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md) · [fiche](../../referentiel/capabilites/cap-02.md)*
+
+### CAP-03 — Qualité, sécurité des soins et amélioration continue
+
+#### Rôle dans le système
+
+La capabilité mesure, améliore et sécurise la qualité des services de santé. Elle relie les données de qualité (résultats, incidents, retours patients) aux mécanismes d’amélioration continue, pour que la performance se traduise en actions correctives et pas seulement en rapports. Elle alimente à la fois la qualité des soins et le pilotage du système de santé.
+
+#### Flux de valeur
+
+- [VS-01](../../referentiel/flux-valeur/vs-01.md)
+- [VS-04](../../referentiel/flux-valeur/vs-04.md)
+
+*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/capabilites/cap-03.md)*
+
+### CAP-04 — Santé communautaire et engagement des communautés
+
+#### Rôle dans le système
+
+La capabilité intègre les agents communautaires, les communautés et les patients comme acteurs du système de santé : prévention, alerte précoce, suivi des cas, observance des traitements et amélioration des services. Elle étend la couverture sanitaire au-delà des formations sanitaires, en particulier dans les zones où la distance et le coût limitent le recours aux soins.
+
+#### Flux de valeur
+
+- [VS-01](../../referentiel/flux-valeur/vs-01.md)
+- [VS-02](../../referentiel/flux-valeur/vs-02.md)
+
+*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md) · [fiche](../../referentiel/capabilites/cap-04.md)*
+
+### CAP-05 — Surveillance épidémiologique, alerte, investigation et riposte
+
+#### Rôle dans le système
+
+La capabilité couvre l’ensemble du cycle de gestion des risques sanitaires : détection des signaux, notification des cas, vérification, investigation, déclenchement de la riposte et retour d’expérience. Elle relie les formations sanitaires, les districts et le niveau central pour qu’une épidémie ou une urgence soit identifiée et traitée sans délai.
+
+#### Flux de valeur
+
+- [VS-02](../../referentiel/flux-valeur/vs-02.md)
+
+*Rattachement : [VS-02](../../referentiel/flux-valeur/vs-02.md) · [fiche](../../referentiel/capabilites/cap-05.md)*
+
+### CAP-06 — Vaccination, prévention et promotion de la santé
+
+#### Rôle dans le système
+
+La capabilité prévient les maladies et promeut les comportements favorables à la santé : prévention, promotion, campagnes et suivi des interventions préventives, dont la vaccination. Elle agit en amont du soin curatif pour réduire la morbidité et éviter les dépenses évitables, et sa planification est un des leviers de l’amélioration de la santé de la population.
+
+#### Flux de valeur
+
+- [VS-02](../../referentiel/flux-valeur/vs-02.md)
+
+*Rattachement : [VS-02](../../referentiel/flux-valeur/vs-02.md) · [fiche](../../referentiel/capabilites/cap-06.md)*
+
+### CAP-07 — Protection financière, couverture santé universelle
+
+#### Rôle dans le système
+
+La capabilité protège les ménages contre le risque financier lié aux soins : identification des bénéficiaires, vérification de leurs droits, application des mécanismes de protection financière et soutien à l’achat stratégique des services. Elle garantit que la couverture et la protection annoncées se traduisent effectivement au point de service, y compris en zone à connectivité limitée.
+
+#### Flux de valeur
+
+- [VS-03](../../referentiel/flux-valeur/vs-03.md)
+
+*Rattachement : [VS-03](../../referentiel/flux-valeur/vs-03.md) · [fiche](../../referentiel/capabilites/cap-07.md)*
+
+### CAP-08 — Gouvernance institutionnelle, planification, coordination et redevabilité
+
+#### Rôle dans le système
+
+La capabilité assure la gouvernance du système de santé : planification, coordination, régulation, suivi et redevabilité à tous les niveaux (national, régional, district, formation). Elle transforme les données et les plans en décisions de gestion, et garantit que chaque niveau rend compte de sa performance aux instances qui l’encadrent.
+
+#### Flux de valeur
+
+- [VS-03](../../referentiel/flux-valeur/vs-03.md)
+- [VS-04](../../referentiel/flux-valeur/vs-04.md)
+
+*Rattachement : [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/capabilites/cap-08.md)*
+
+<!-- END:GENERATED -->
 ## Liens
 
 - [Capabilités](./index.md)
-- [Flux de valeur](../01_value-streams/index.md)
-- [Maturité](./maturity.md)

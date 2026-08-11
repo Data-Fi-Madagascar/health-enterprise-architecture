@@ -11,6 +11,8 @@ tags: ["ptisn", "niveau-4", "profils", "pt-09"]
 
 # PT-09 — Profil technique national
 
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
 
 ## 1. Capacité CNISN
 
@@ -81,3 +83,7 @@ La plateforme de traçabilité RMA est reconnue comme **première initiative de 
 Son architecture ne devient pas automatiquement obligatoire pour toutes les initiatives.
 
 ------------------------------------------------------------------------
+
+*Rattachement : [CAP-INT-07](../../referentiel/capacites/cap-int-07.md), [ART-3](../../referentiel/chapitres/art-3.md), [ART-5](../../referentiel/chapitres/art-5.md), [ART-6](../../referentiel/chapitres/art-6.md), [ART-7](../../referentiel/chapitres/art-7.md) · [fiche](../../referentiel/profils/pt-09.md)*
+
+<!-- END:GENERATED -->

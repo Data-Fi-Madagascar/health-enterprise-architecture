@@ -17,7 +17,7 @@ tags: ['caesn', 'niveau-1', 'capabilite', 'cap-12']
 
 ## Rôle dans le système
 
-Soutenir l'exécution budgétaire, la planification financière, l'allocation équitable et la soutenabilité.
+La capabilité soutient le financement du système de santé : exécution budgétaire, planification financière, allocation équitable des ressources et soutenabilité des financements. Elle garantit que les moyens financiers suivent les priorités de santé publique et que chaque niveau dispose des ressources nécessaires pour assurer ses fonctions.
 
 ## Flux de valeur
 

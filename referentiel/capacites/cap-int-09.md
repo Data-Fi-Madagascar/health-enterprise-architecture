@@ -6,8 +6,9 @@ title: CAP-INT-09 — Gestion des consentements et bases d’autorisation
 status: active
 owner: DEPSI
 version: "0.5"
+family: confiance
 source: 01_cnisn/02_capacites.md
-maps_to: ["p-int-14", "p-int-15", "p-int-16", "p-int-17"]
+maps_to: ["p-int-14", "p-int-15", "p-int-16", "p-int-17", "cap-15"]
 implements: []
 applies_to: []
 related: []

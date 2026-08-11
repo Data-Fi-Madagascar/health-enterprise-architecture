@@ -38,13 +38,13 @@ Le document source de l'ARTSN décrit le CAESN comme comportant **18 principes (
 
 ### Écart 1 — CAP-04bis « Engagement patient et identitovigilance »
 
-L'ARTSN rattache [ART-4a (résolution d'identité)](../../02_artsn/03_chapitres/art-4a-resolution-identite.md) et [ART-4b (bases d'autorisation)](../../02_artsn/03_chapitres/art-4b-bases-autorisation.md) à une capabilité **CAP-04bis « Engagement patient et identitovigilance »**. Le catalogue CAESN ne comporte pas cette capabilité : CAP-04 est « Santé communautaire », et aucune capabilité ne couvre explicitement l'identitovigilance probabilitique ni l'engagement du patient dans le système numérique.
+L'ARTSN rattache [ART-4a (résolution d'identité)](../../referentiel/chapitres/art-4a.md) et [ART-4b (bases d'autorisation)](../../referentiel/chapitres/art-4b.md) à une capabilité **CAP-04bis « Engagement patient et identitovigilance »**. Le catalogue CAESN ne comporte pas cette capabilité : CAP-04 est « Santé communautaire », et aucune capabilité ne couvre explicitement l'identitovigilance probabilitique ni l'engagement du patient dans le système numérique.
 
 **Impact pour l'ARTSN** : l'Architecture de référence technique suppose une capabilité absente du CAESN. La promotion des chapitres 4a/4b vers un statut Stable exige au préalable l'arbitrage de cette capabilité.
 
 ## Écart 2 — Capacité candidate « Coordination intersectorielle »
 
-L'ARTSN rattache [ART-0 (accords de partage inter-institutionnels)](../../02_artsn/03_chapitres/art-0-accords-partage.md) et [ART-8d (chorégraphie inter-institutionnelle)](../../02_artsn/03_chapitres/art-8d-choregraphie-interinstitutionnelle.md) à une **capacité candidate « Coordination intersectorielle »** (One Health), absente du catalogue CAP-01..16.
+L'ARTSN rattache [ART-0 (accords de partage inter-institutionnels)](../../referentiel/chapitres/art-0.md) et [ART-8d (chorégraphie inter-institutionnelle)](../../referentiel/chapitres/art-8d.md) à une **capacité candidate « Coordination intersectorielle »** (One Health), absente du catalogue CAP-01..16.
 
 ### Écart 3 — Référentiel normatif « Tripartite Plus » (OMS-WOAH-FAO-PNUE, RSI)
 
@@ -52,7 +52,7 @@ La coordination intersectorielle s'appuie sur un référentiel normatif internat
 
 ### Écart 4 — Capacité candidate « Surveillance spatio-temporelle »
 
-[ART-4d (référentiel géospatial et d'exploitation partagé)](../../02_artsn/03_chapitres/art-4d-referentiel-geospatial.md) est rattaché à une capacité candidate « Surveillance spatio-temporelle » absente du catalogue, nécessaire au cloisonnement One Health.
+[ART-4d (référentiel géospatial et d'exploitation partagé)](../../referentiel/chapitres/art-4d.md) est rattaché à une capacité candidate « Surveillance spatio-temporelle » absente du catalogue, nécessaire au cloisonnement One Health.
 
 ### Écart 5 — Compte des principes : 18 dans le document source vs PA+PD dans le catalogue
 

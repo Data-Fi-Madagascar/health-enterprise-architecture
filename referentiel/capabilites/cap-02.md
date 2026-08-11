@@ -17,7 +17,7 @@ tags: ['caesn', 'niveau-1', 'capabilite', 'cap-02']
 
 ## Rôle dans le système
 
-Organiser le parcours du patient entre les points de service, assurer la référence, la contre-référence et la continuité de l'information de soins.
+La capabilité organise le parcours du patient entre les points de service : orientation vers le niveau adapté, référence vers une structure plus spécialisée et contre-référence vers la formation d’origine. Elle assure que l’information clinique suit le patient d’un niveau à l’autre, afin que la continuité des soins ne dépende pas d’un seul établissement. Sans elle, les ruptures de parcours (référence sans dossier, absence de retour d’information) fragmentent la prise en charge.
 
 ## Flux de valeur
 

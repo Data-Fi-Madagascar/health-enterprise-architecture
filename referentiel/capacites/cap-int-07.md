@@ -6,8 +6,9 @@ title: CAP-INT-07 — Accès et exposition des données analytiques
 status: active
 owner: DEPSI
 version: "0.5"
+family: analytique
 source: 01_cnisn/02_capacites.md
-maps_to: ["p-int-05", "p-int-06", "p-int-07", "p-int-08", "p-int-09", "p-int-17", "p-int-18", "p-int-19", "p-int-20", "p-int-21", "p-int-22", "p-int-23", "p-int-24", "p-int-25"]
+maps_to: ["p-int-05", "p-int-06", "p-int-07", "p-int-08", "p-int-09", "p-int-17", "p-int-18", "p-int-19", "p-int-20", "p-int-21", "p-int-22", "p-int-23", "p-int-24", "p-int-25", "cap-05", "cap-13"]
 implements: []
 applies_to: []
 related: []

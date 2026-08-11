@@ -31,14 +31,14 @@ La cartographie est structurée en **six couches horizontales** (de l'infrastruc
 
 | Couche | Intitulé | Chapitres ARTSN associés |
 |--------|----------|--------------------------|
-| [6](#couche-6--pilotage-gouvernance-et-actions-intersectorielles) | Pilotage, Gouvernance et actions intersectorielles | VS-04, [ART-0](./03_chapitres/art-0-accords-partage.md) |
-| [5](#couche-5--projections-analytiques-et-modèles) | Projections analytiques et Modèles | [ART-6](./03_chapitres/art-6-analytique-restitution.md), [ART-5](./03_chapitres/art-5-coherence-qualite-donnees.md), [ART-8b](./03_chapitres/art-8b-modelisation-graphe.md), [ART-4d](./03_chapitres/art-4d-referentiel-geospatial.md), [ART-9](./03_chapitres/art-9-garanties-transactionnelles.md) |
-| [4](#couche-4--interopérabilité-et-services-partagés) | Interopérabilité et services partagés | [ART-3](./03_chapitres/art-3-historisation-evenementielle.md), [ART-4](./03_chapitres/art-4-referentiels-metadonnees.md), [ART-2](./03_chapitres/art-2-mediation-normalisation.md), [ART-8a](./03_chapitres/art-8a-orchestration-processus-borne.md), [ART-4a](./03_chapitres/art-4a-resolution-identite.md), [ART-4c](./03_chapitres/art-4c-eligibilite-couverture.md) |
-| [3](#couche-3--échange-transport-et-ingestion) | Échange, transport et ingestion | [ART-1](./03_chapitres/art-1-integration-ingestion.md), F.3, [ART-8c](./03_chapitres/art-8c-agregation-par-lot.md) |
+| [6](#couche-6--pilotage-gouvernance-et-actions-intersectorielles) | Pilotage, Gouvernance et actions intersectorielles | VS-04, [ART-0](../referentiel/chapitres/art-0.md) |
+| [5](#couche-5--projections-analytiques-et-modèles) | Projections analytiques et Modèles | [ART-6](../referentiel/chapitres/art-6.md), [ART-5](../referentiel/chapitres/art-5.md), [ART-8b](../referentiel/chapitres/art-8b.md), [ART-4d](../referentiel/chapitres/art-4d.md), [ART-9](../referentiel/chapitres/art-9.md) |
+| [4](#couche-4--interopérabilité-et-services-partagés) | Interopérabilité et services partagés | [ART-3](../referentiel/chapitres/art-3.md), [ART-4](../referentiel/chapitres/art-4.md), [ART-2](../referentiel/chapitres/art-2.md), [ART-8a](../referentiel/chapitres/art-8a.md), [ART-4a](../referentiel/chapitres/art-4a.md), [ART-4c](../referentiel/chapitres/art-4c.md) |
+| [3](#couche-3--échange-transport-et-ingestion) | Échange, transport et ingestion | [ART-1](../referentiel/chapitres/art-1.md), F.3, [ART-8c](../referentiel/chapitres/art-8c.md) |
 | [2](#couche-2--point-de-service) | Point de service | F.1, ENF-1 |
-| [1](#couche-1--infrastructure) | Infrastructure | [ART-7](./03_chapitres/art-7-securite-controle-acces.md) |
-| Axe 1 | Sécurité et confiance numérique | [ART-7](./03_chapitres/art-7-securite-controle-acces.md) |
-| Axe 2 | Gouvernance de données | F.4, [ART-0](./03_chapitres/art-0-accords-partage.md) |
+| [1](#couche-1--infrastructure) | Infrastructure | [ART-7](../referentiel/chapitres/art-7.md) |
+| Axe 1 | Sécurité et confiance numérique | [ART-7](../referentiel/chapitres/art-7.md) |
+| Axe 2 | Gouvernance de données | F.4, [ART-0](../referentiel/chapitres/art-0.md) |
 
 ## Couche 6 — Pilotage, Gouvernance et actions intersectorielles
 
@@ -56,7 +56,7 @@ La cartographie est structurée en **six couches horizontales** (de l'infrastruc
 
 **Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (modèles prédictifs d'IA, requêtes lourdes des chercheurs, algorithmes de transmission) : elle seule permet d'exécuter des analyses de masse longitudinales transversales sans jamais ralentir les serveurs de soins et sans exposer l'identité des citoyens, sans rompre le pipeline.
 
-- **Rattachement** : application physique directe du pattern CQRS ([ART-6](./03_chapitres/art-6-analytique-restitution.md)).
+- **Rattachement** : application physique directe du pattern CQRS ([ART-6](../referentiel/chapitres/art-6.md)).
 - **Composants associés** : pipeline d'ingestion ETL, moteur d'IA prédictive, routeur d'escalade et d'alertes (ART-5), entrepôt Lakehouse / projections tabulaires, moteur de graphes (Graph Store — ART-8b), référentiel spatio-temporel (ART-4d), réconciliation analytique (Grand Livre — ART-9).
 - **Statut : Stable.**
 
@@ -66,7 +66,7 @@ La cartographie est structurée en **six couches horizontales** (de l'infrastruc
 
 **Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (échanges cliniques immédiats, consultations, identitovigilance probabiliste) : elle seule permet de recevoir et de valider la conformité des données médicales à la milliseconde et de fournir un dossier patient unique partagé sécurisé, sans rompre le pipeline.
 
-- **Rattachement** : exécution de la source de vérité au présent (Profil B d'[ART-3](./03_chapitres/art-3-historisation-evenementielle.md)) et des Référentiels Nationaux ([ART-4](./03_chapitres/art-4-referentiels-metadonnees.md)).
+- **Rattachement** : exécution de la source de vérité au présent (Profil B d'[ART-3](../referentiel/chapitres/art-3.md)) et des Référentiels Nationaux ([ART-4](../referentiel/chapitres/art-4.md)).
 - **Composants associés** : moteur d'intégration & médiation (ART-2), orchestrateur de parcours / gestionnaire de Sagas (ART-8a), répertoire de données cliniques opérationnelles, référentiel des métadonnées d'exploitation (ART-4), registre des terminologies, registre des clients / Index National des Patients (INP — ART-4a), registre d'éligibilité et de couverture (CSU — ART-4c), registre des personnels, registre des produits, intrants et indicateurs.
 - **Statut : Stable.**
 
@@ -76,7 +76,7 @@ La cartographie est structurée en **six couches horizontales** (de l'infrastruc
 
 **Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (connexions simultanées de milliers d'applications de terrain, micro-coupures télécoms) : elle seule permet d'encaisser la charge et de garantir la livraison des messages sans perte vers les couches supérieures, sans rompre le pipeline.
 
-- **Rattachement** : exécution technique du transport asynchrone ([ART-1](./03_chapitres/art-1-integration-ingestion.md) et [F.3](./00_fondations.md#f3--éradication-des-silos-technologiques)).
+- **Rattachement** : exécution technique du transport asynchrone ([ART-1](../referentiel/chapitres/art-1.md) et [F.3](../referentiel/fondations/f-3.md)).
 - **Composants associés** : API Gateway, registre de schémas (F.3), message broker asynchrone, compensateur / regroupeur de flux (Netting — ART-8c).
 - **Statut : Stable.**
 
@@ -86,7 +86,7 @@ La cartographie est structurée en **six couches horizontales** (de l'infrastruc
 
 **Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (prise en charge des patients dans les CSB isolés, saisie de stocks en entrepôts de brousse) : elle seule permet aux acteurs du terrain de travailler en toute autonomie sans dépendre d'une connexion centrale permanente, sans rompre le pipeline.
 
-- **Rattachement** : application du principe d'autonomie locale ([ENF-1](./02_exigences-contextuelles.md#enf-1--résilience-à-l-instabilité-réseau)) et de l'historisation à la source ([F.1](./00_fondations.md#f1--résilience-face-à-la-réalité-géographique-du-pays)).
+- **Rattachement** : application du principe d'autonomie locale ([ENF-1](./02_exigences-contextuelles.md#enf-1--résilience-à-l-instabilité-réseau)) et de l'historisation à la source ([F.1](../referentiel/fondations/f-1.md)).
 - **Composants associés** : dossiers & statistiques de santé (hôpitaux), gestion des pharmacies (PMIS), santé communautaire mobile (offline), espace santé patient, chaîne logistique (LMIS), surveillance de la santé animale (zoonoses), enquêtes & capteurs terrain.
 - **Statut : Stable.**
 
@@ -96,7 +96,7 @@ La cartographie est structurée en **six couches horizontales** (de l'infrastruc
 
 **Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (datacenters nationaux, serveurs de districts, tunnels VPN gouvernementaux) : elle seule garantit la souveraineté numérique de l'État et la sécurité physique des données contre les pannes massives et les ingérences extérieures, sans rompre le pipeline.
 
-- **Rattachement** : support matériel de la clause de résidence et de sécurité ([ART-7](./03_chapitres/art-7-securite-controle-acces.md)).
+- **Rattachement** : support matériel de la clause de résidence et de sécurité ([ART-7](../referentiel/chapitres/art-7.md)).
 - **Composants associés** : nœud central (datacenters nationaux certifiés HDS), nœuds régionaux (clusters de district — Fog), nœuds locaux (équipements chiffrés — Edge), liaisons dédiées & VPN, réseau privé MPLS, réseaux mobiles privés (APN sécurisés).
 - **Statut : Stable.**
 
@@ -110,7 +110,7 @@ Les deux axes traversent l'ensemble des six couches et exécutent des obligation
 
 **Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (tentatives de cyberattaques, connexions illégitimes, vol de tablettes sur le terrain) : elle seule permet de garantir le respect absolu du secret médical et de bloquer les intrusions à la périphérie, sans rompre le pipeline.
 
-- **Rattachement** : application transversale du cadre de cybersécurité ([ART-7](./03_chapitres/art-7-securite-controle-acces.md)).
+- **Rattachement** : application transversale du cadre de cybersécurité ([ART-7](../referentiel/chapitres/art-7.md)).
 - **Composants associés** : gestion des identités, contrôle d'accès fin (RBAC/ABAC), gestion des consentements, infrastructure de clés publiques (PKI), passerelle de confiance mondiale OMS (GDHCN), journal d'audit immuable, moteur de chiffrement.
 - **Statut : Stable.**
 
@@ -120,7 +120,7 @@ Les deux axes traversent l'ensemble des six couches et exécutent des obligation
 
 **Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (comités humains, signatures de conventions, chartes juridiques de protection) : elle seule permet d'asseoir la légitimité politique de la plateforme et de garantir le respect des accords interministériels de partage de données, sans rompre le pipeline.
 
-- **Rattachement** : cadre d'application du processus d'homologation obligatoire ([F.4](./00_fondations.md#f4--homologation-obligatoire)) et d'[ART-0](./03_chapitres/art-0-accords-partage.md).
+- **Rattachement** : cadre d'application du processus d'homologation obligatoire ([F.4](../referentiel/fondations/f-4.md)) et d'[ART-0](../referentiel/chapitres/art-0.md).
 - **Composants associés** : registre des accords inter-institutions, charte nationale de protection, conventions internationales, comité national d'homologation, registre des initiatives, comité d'éthique, cellule d'audit, arbitrage et risques.
 - **Statut : Stable.**
 

@@ -17,7 +17,7 @@ tags: ['caesn', 'niveau-1', 'capabilite', 'cap-14']
 
 ## Rôle dans le système
 
-Assurer la cohérence, l'intégration, la souveraineté et la réutilisation des données et composants communs.
+La capabilité assure la cohérence, l’intégration, la souveraineté et la réutilisation des données et composants communs : référentiels partagés, couche d’échange, standards et services transverses. Elle évite la fragmentation du système en garantissant que chaque initiative réutilise les briques nationales au lieu de les dupliquer.
 
 ## Flux de valeur
 

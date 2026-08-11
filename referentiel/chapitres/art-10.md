@@ -1,7 +1,7 @@
 ---
 id: art-10
 type: chapitre
-niveau: "4"
+niveau: "3"
 title: ART-10 — Logistique
 status: candidate
 owner: DEPSI
@@ -16,4 +16,4 @@ tags: ["artsn", "chapitre", "candidate"]
 
 # ART-10 — Logistique
 
-Chapitre référencé par la matrice d'alignement PTISN (§2) mais absent de l'ARTSN. Créé en `status: candidate` pendant le refactor. À instruire par la gouvernance ART-SN (chaîne d'approvisionnement, produits de santé).
+Chapitre référencé par la matrice d’alignement PTISN (§2) mais absent de l’ARTSN. Créé en `status: candidate` pendant le refactor. À instruire par la gouvernance ART-SN (chaîne d’approvisionnement, produits de santé).

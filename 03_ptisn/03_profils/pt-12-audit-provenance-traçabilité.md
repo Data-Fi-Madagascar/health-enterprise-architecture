@@ -11,6 +11,8 @@ tags: ["ptisn", "niveau-4", "profils", "pt-12"]
 
 # PT-12 — Profil technique national
 
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
 
 ## 1. Capacité CNISN
 
@@ -88,3 +90,7 @@ Les quatre catégories peuvent être corrélées mais peuvent utiliser :
 Un journal technique ne doit pas être utilisé comme seul mécanisme de preuve métier.
 
 ------------------------------------------------------------------------
+
+*Rattachement : [CAP-INT-10](../../referentiel/capacites/cap-int-10.md), [F-1](../../referentiel/fondations/f-1.md), [F-5](../../referentiel/fondations/f-5.md), [F-6](../../referentiel/fondations/f-6.md), [ART-3](../../referentiel/chapitres/art-3.md), [ART-7](../../referentiel/chapitres/art-7.md) · [fiche](../../referentiel/profils/pt-12.md)*
+
+<!-- END:GENERATED -->

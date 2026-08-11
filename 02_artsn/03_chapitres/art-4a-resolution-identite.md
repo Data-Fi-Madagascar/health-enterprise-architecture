@@ -1,12 +1,12 @@
 ---
-title: ART-4a — Résolution d'identité
-id: art-4a-resolution-identite
+title: "ART-4a — Résolution d'identité"
+id: art-4a
 domain: 02_artsn
 version: "0.0.1"
 status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
-tags: [artsn, chapitres, art-4a, identite, identitovigilance, niveau-3]
+tags: [artsn, chapitres, art-4a, niveau-3]
 ---
 
 # ART-4a — Résolution d'identité
@@ -17,7 +17,7 @@ tags: [artsn, chapitres, art-4a, identite, identitovigilance, niveau-3]
 
 | Profil | Lecture |
 |--------|---------|
-| Décideurs institutionnels | ○ |
+| Décideurs institutionnels | ◐ |
 | Directions métier / programmes | ◐ |
 | DEPSI / équipes techniques | ● |
 | SIS / données / suivi-évaluation | ● |
@@ -25,17 +25,25 @@ tags: [artsn, chapitres, art-4a, identite, identitovigilance, niveau-3]
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
-**Contenu normatif.** La plateforme doit intégrer un index centralisé chargé d'exécuter des algorithmes de **rapprochement démographique** sur les attributs transmis par le terrain. Ce système a l'obligation de réconcilier les fiches incomplètes avec le flux civil pour consolider un enregistrement unique (*Golden Record*) et attribuer le **matricule national** (Identifiant National de Santé, INS).
 
-**Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (erreurs de saisies manuelles, variations phonétiques des patronymes, logiciels distants en silos) : elle seule permet d'éviter l'attribution de données cliniques au mauvais patient et de bloquer les accidents médicaux sans rompre le pipeline.
+ART-4a — Résolution d'identité constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : [`art-4a`](../../referentiel/chapitres/art-4a.md).
 
-- **Rattachement** : [CAP-04bis](../../00_caesn/03_capabilities/index.md) (engagement patient et identitovigilance).
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+
+**Contenu normatif.** La plateforme doit intégrer un index centralisé chargé d’exécuter des algorithmes de **rapprochement démographique** sur les attributs transmis par le terrain. Ce système a l’obligation de réconcilier les fiches incomplètes avec le flux civil pour consolider un enregistrement unique (*Golden Record*) et attribuer le **matricule national** (Identifiant National de Santé, INS).
+
+**Discipline existentielle.** Dès lors qu’une source échappe à la gouvernance directe de l’initiative (erreurs de saisies manuelles, variations phonétiques des patronymes, logiciels distants en silos) : elle seule permet d’éviter l’attribution de données cliniques au mauvais patient et de bloquer les accidents médicaux sans rompre le pipeline.
+
+- **Rattachement** : [CAP-04bis](../07_annexes/c-renvoi-capacites-candidates.md) (engagement patient et identitovigilance).
 - **Concepts cibles** : Golden Record, Identifiant National de Santé (INS).
-- **Déduit selon** : [ENF-3](../02_exigences-contextuelles.md#enf-3--unicité-de-l-identité-et-résilience-face-à-la-fragmentation-applicative) (unicité de l'identité).
+- **Déduit selon** : [ENF-3](../../referentiel/exigences/enf-3.md) (unicité de l’identité).
 - **Statut : Provisoire.**
 
+*Rattachement : [ENF-3](../../referentiel/exigences/enf-3.md), [CAP-04](../../referentiel/capabilites/cap-04.md) · [fiche](../../referentiel/chapitres/art-4a.md)*
+
+<!-- END:GENERATED -->
 ## Liens
 
 - [Index des chapitres](./index.md)
-- [ART-4 — Référentiels de métadonnées de gestion](./art-4-referentiels-metadonnees.md)
-- [Exigences contextuelles — ENF-3](../02_exigences-contextuelles.md)
+- [Exigences contextuelles — Partie III](../02_exigences-contextuelles.md)

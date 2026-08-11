@@ -11,6 +11,8 @@ tags: ["ptisn", "niveau-4", "profils", "pt-06"]
 
 # PT-06 — Profil technique national
 
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
 
 ## 1. Capacité CNISN
 
@@ -81,3 +83,7 @@ Les correspondances entre identifiants DHIS2 et identifiants nationaux doivent �
 - gouvernées.
 
 ------------------------------------------------------------------------
+
+*Rattachement : [CAP-INT-04](../../referentiel/capacites/cap-int-04.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-5](../../referentiel/chapitres/art-5.md), [ART-6](../../referentiel/chapitres/art-6.md) · [fiche](../../referentiel/profils/pt-06.md)*
+
+<!-- END:GENERATED -->

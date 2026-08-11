@@ -13,7 +13,7 @@ tags: [artsn, lecture, niveau-3, profils]
 
 Légende : **●** = lecture prioritaire, **◐** = lecture complémentaire, **○** = lecture ponctuelle.
 
-L'ARTSN décline le niveau 1 en **standards techniques précis**, **solutions logicielles**, **configurations** et **règles d'homologation**. Elle s'adresse en priorité au DEPSI, aux architectes et aux intégrateurs ; les décideurs et directions métier ne la consultent que sur des points précis.
+L'ARTSN décline le niveau 1 en **familles de patterns validées**, **standards techniques et formats d'échange**, **contrats d'interfaces** et **règles d'homologation**. Elle s'adresse en priorité au DEPSI, aux architectes et aux intégrateurs ; les décideurs et directions métier ne la consultent que sur des points précis.
 
 | Document du niveau 3 | Décideurs institutionnels | Directions métier / programmes | DEPSI / équipes techniques | SIS / données / suivi-évaluation | Partenaires techniques et financiers |
 |----------------------|---------------------------|-------------------------------|----------------------------|----------------------------------|--------------------------------------|
@@ -22,24 +22,24 @@ L'ARTSN décline le niveau 1 en **standards techniques précis**, **solutions lo
 | [Partie II — Flux de valeur](./01_flux-de-valeur.md) | ◐ | ● | ● | ◐ | ◐ |
 | [Partie III — Exigences contextuelles nationales](./02_exigences-contextuelles.md) | ◐ | ◐ | ● | ◐ | ◐ |
 | [Partie IV — Chapitres et patterns de référence](./03_chapitres/index.md) | ○ | ◐ | ● | ● | ◐ |
-| [ART-0 — Accords de partage](./03_chapitres/art-0-accords-partage.md) | ◐ | ● | ● | ◐ | ◐ |
-| [ART-1 — Intégration et ingestion](./03_chapitres/art-1-integration-ingestion.md) | ○ | ○ | ● | ● | ◐ |
-| [ART-2 — Médiation et normalisation](./03_chapitres/art-2-mediation-normalisation.md) | ○ | ○ | ● | ● | ◐ |
-| [ART-3 — Historisation événementielle](./03_chapitres/art-3-historisation-evenementielle.md) | ○ | ○ | ● | ● | ◐ |
-| [ART-4 — Référentiels de métadonnées](./03_chapitres/art-4-referentiels-metadonnees.md) | ○ | ○ | ● | ● | ◐ |
-| [ART-4a — Résolution d'identité](./03_chapitres/art-4a-resolution-identite.md) | ○ | ○ | ● | ● | ◐ |
-| [ART-4b — Bases d'autorisation](./03_chapitres/art-4b-bases-autorisation.md) | ○ | ○ | ● | ● | ◐ |
-| [ART-4c — Éligibilité et couverture](./03_chapitres/art-4c-eligibilite-couverture.md) | ○ | ● | ● | ◐ | ◐ |
-| [ART-4d — Référentiel géospatial](./03_chapitres/art-4d-referentiel-geospatial.md) | ○ | ● | ● | ◐ | ◐ |
-| [ART-5 — Cohérence et qualité des données](./03_chapitres/art-5-coherence-qualite-donnees.md) | ○ | ○ | ● | ● | ◐ |
-| [ART-6 — Analytique et restitution](./03_chapitres/art-6-analytique-restitution.md) | ◐ | ● | ● | ● | ◐ |
-| [ART-7 — Sécurité et contrôle d'accès](./03_chapitres/art-7-securite-controle-acces.md) | ◐ | ◐ | ● | ● | ◐ |
-| [ART-8 — Orchestration de processus](./03_chapitres/art-8-orchestration-processus-borne.md) | ○ | ◐ | ● | ● | ◐ |
-| [ART-8a — Orchestration de processus borné](./03_chapitres/art-8a-orchestration-processus-borne.md) | ○ | ○ | ● | ● | ◐ |
-| [ART-8b — Modélisation en graphe](./03_chapitres/art-8b-modelisation-graphe.md) | ○ | ○ | ● | ● | ◐ |
-| [ART-8c — Agrégation par lot](./03_chapitres/art-8c-agregation-par-lot.md) | ○ | ○ | ● | ● | ◐ |
-| [ART-8d — Chorégraphie inter-institutionnelle](./03_chapitres/art-8d-choregraphie-interinstitutionnelle.md) | ◐ | ● | ● | ◐ | ◐ |
-| [ART-9 — Garanties transactionnelles](./03_chapitres/art-9-garanties-transactionnelles.md) | ○ | ● | ● | ◐ | ◐ |
+| [ART-0 — Accords de partage](../referentiel/chapitres/art-0.md) | ◐ | ● | ● | ◐ | ◐ |
+| [ART-1 — Intégration et ingestion](../referentiel/chapitres/art-1.md) | ○ | ○ | ● | ● | ◐ |
+| [ART-2 — Médiation et normalisation](../referentiel/chapitres/art-2.md) | ○ | ○ | ● | ● | ◐ |
+| [ART-3 — Historisation événementielle](../referentiel/chapitres/art-3.md) | ○ | ○ | ● | ● | ◐ |
+| [ART-4 — Référentiels de métadonnées](../referentiel/chapitres/art-4.md) | ○ | ○ | ● | ● | ◐ |
+| [ART-4a — Résolution d'identité](../referentiel/chapitres/art-4a.md) | ○ | ○ | ● | ● | ◐ |
+| [ART-4b — Bases d'autorisation](../referentiel/chapitres/art-4b.md) | ○ | ○ | ● | ● | ◐ |
+| [ART-4c — Éligibilité et couverture](../referentiel/chapitres/art-4c.md) | ○ | ● | ● | ◐ | ◐ |
+| [ART-4d — Référentiel géospatial](../referentiel/chapitres/art-4d.md) | ○ | ● | ● | ◐ | ◐ |
+| [ART-5 — Cohérence et qualité des données](../referentiel/chapitres/art-5.md) | ○ | ○ | ● | ● | ◐ |
+| [ART-6 — Analytique et restitution](../referentiel/chapitres/art-6.md) | ◐ | ● | ● | ● | ◐ |
+| [ART-7 — Sécurité et contrôle d'accès](../referentiel/chapitres/art-7.md) | ◐ | ◐ | ● | ● | ◐ |
+| [ART-8 — Orchestration de processus](../referentiel/chapitres/art-8.md) | ○ | ◐ | ● | ● | ◐ |
+| [ART-8a — Orchestration de processus borné](../referentiel/chapitres/art-8a.md) | ○ | ○ | ● | ● | ◐ |
+| [ART-8b — Modélisation en graphe](../referentiel/chapitres/art-8b.md) | ○ | ○ | ● | ● | ◐ |
+| [ART-8c — Agrégation par lot](../referentiel/chapitres/art-8c.md) | ○ | ○ | ● | ● | ◐ |
+| [ART-8d — Chorégraphie inter-institutionnelle](../referentiel/chapitres/art-8d.md) | ◐ | ● | ● | ◐ | ◐ |
+| [ART-9 — Garanties transactionnelles](../referentiel/chapitres/art-9.md) | ○ | ● | ● | ◐ | ◐ |
 | [Partie V — Cartographie conceptuelle cible](./04_cartographie-cible.md) | ◐ | ◐ | ● | ● | ◐ |
 | [Partie VI — Dictionnaire de données](./05_dictionnaire.md) | ○ | ◐ | ● | ● | ◐ |
 | [Partie VI — Gouvernance de l'ARTSN](./06_gouvernance.md) | ● | ◐ | ● | ◐ | ● |

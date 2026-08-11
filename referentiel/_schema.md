@@ -10,18 +10,18 @@ tags: ["referentiel", "schema", "gouvernance"]
 
 # Schéma du référentiel
 
-Ce document définit le modèle d'objets du référentiel. Il est la source de vérité pour la structure, le nommage et le frontmatter de tout objet.
+Ce document définit le modèle d’objets du référentiel. Il est la source de vérité pour la structure, le nommage et le frontmatter de tout objet.
 
 ## Principe
 
 - **Un objet = un fichier** dans `referentiel/<type>/<id>.md`.
-- Chaque objet est un bloc de contenu **auto-portant** : il n'a pas besoin du reste du document d'origine pour être compris.
+- Chaque objet est un bloc de contenu **auto-portant** : il n’a pas besoin du reste du document d’origine pour être compris.
 - Les documents historiques ne conservent que la **prose narrative**, les catalogues et les matrices ; ils **référencent** les objets par lien.
 - Le frontmatter est la seule source des **métadonnées de gouvernance** (statut, propriétaire, version, relations).
 
-## Types d'objets et répertoires
+## Types d’objets et répertoires
 
-| Type | Répertoire | Préfixe d'id | Sources (niveaux) |
+| Type | Répertoire | Préfixe d’id | Sources (niveaux) |
 |------|------------|--------------|-------------------|
 | `flux-valeur` | `referentiel/flux-valeur/` | `vs-` | CAESN (VS-01…04) |
 | `capabilite` | `referentiel/capabilites/` | `cap-` | CAESN (CAP-01…16) |
@@ -47,7 +47,7 @@ Ce document définit le modèle d'objets du référentiel. Il est la source de v
 ---
 id: p-int-01              # id normalisé, unique, kebab-case
 type: principe            # type de l'objet (cf. tableau)
-niveau: "2"               # niveau de référence : 1 (CAESN), 2 (CNISN), 3 (PTISN), 4 (ART-SN)
+niveau: "2"               # niveau de référence : 1 (CAESN), 2 (CNISN), 3 (ART-SN), 4 (PTISN)
 title: P-INT-01 — Autorité désignée
 status: active            # draft | active | deprecated | candidate
 owner: DEPSI              # entité responsable
@@ -66,18 +66,19 @@ tags: ["cnisn", "autorite", "donnees-de-reference"]
 | Champ | Obligatoire | Description |
 |-------|-------------|-------------|
 | `id` | oui | Identifiant normalisé unique dans le référentiel |
-| `type` | oui | Type d'objet (tableau ci-dessus) |
+| `type` | oui | Type d’objet (tableau ci-dessus) |
 | `niveau` | oui | Niveau de référence source |
-| `title` | oui | Titre canonique de l'objet |
+| `title` | oui | Titre canonique de l’objet |
 | `status` | oui | `draft`, `active`, `deprecated` ou `candidate` |
 | `owner` | oui | Responsable / entité de gouvernance |
 | `version` | non | Version héritée du document source |
-| `source` | oui | Chemin du document d'origine pré-refactor |
+| `source` | oui | Chemin du document d’origine pré-refactor |
+| `family` | non | Famille de réponse (type `capacite` uniquement) : `referentiels`, `echange`, `analytique`, `confiance`, `qualite-conformite` |
 | `maps_to` | non | Liens typés : correspondance vers un autre objet du référentiel (ids) |
 | `implements` | non | Liens typés : chapitres / objets mis en œuvre |
-| `applies_to` | non | Liens typés : objets auxquels il s'applique |
+| `applies_to` | non | Liens typés : objets auxquels il s’applique |
 | `related` | non | Liens typés : autres objets liés |
-| `tags` | non | Mots-clés pour l'indexation |
+| `tags` | non | Mots-clés pour l’indexation |
 
 ### Statuts
 
@@ -86,9 +87,9 @@ tags: ["cnisn", "autorite", "donnees-de-reference"]
 | `draft` | Non validé, en rédaction |
 | `active` | Validé et en vigueur |
 | `deprecated` | Remplacé, conservé pour historique |
-| `candidate` | Proposé, en attente d'arbitrage (ex. ART-10/11, F.5/6) |
+| `candidate` | Proposé, en attente d’arbitrage (ex. ART-10/11, F.5/6) |
 
-## Structure du corps d'un objet
+## Structure du corps d’un objet
 
 Le corps suit le gabarit `H1 (titre) → H2 (finalité / contenu) → H3 (sous-sections)`.
 
@@ -108,9 +109,10 @@ Le corps suit le gabarit `H1 (titre) → H2 (finalité / contenu) → H3 (sous-s
 - [CAP-INT-01 — Résolution d'identité du bénéficiaire](../capacites/cap-int-01.md)
 ```
 
-- Le **contenu textuel** des objets n'est **pas reformulé** : il est copié tel quel depuis la source (seule la structure de titres peut être normalisée).
-- Les relations transversales peuvent être portées par le frontmatter (`maps_to`, `implements`, `applies_to`, `related`) et/ou par une section `## Liens` en fin d'objet.
-- La **prose narrative** (paragraphes « pour qui lire », légendes, introductions) **reste dans le document source** et n'est pas dupliquée dans les objets.
+- Le **contenu textuel** des objets n’est **pas reformulé** : il est copié tel quel depuis la source (seule la structure de titres peut être normalisée).
+- Les relations transversales peuvent être portées par le frontmatter (`maps_to`, `implements`, `applies_to`, `related`) et/ou par une section `## Liens` en fin d’objet.
+- La **prose narrative** (paragraphes « pour qui lire », légendes, introductions) **reste dans le document source** et n’est pas dupliquée dans les objets.
+- Le champ `family` classe chaque capacité CNISN dans l’une des cinq familles de réponse alignées sur l’ART-SN (couches 3 à 5 et axes de la cartographie cible). Il est porté par le frontmatter des `cap-int-*.md` et sert d’en-tête de section dans `01_cnisn/02_capacites.md` (voir [annexe B](../01_cnisn/08_annexes/b-articulation-art-sn.md)).
 
 ## Registre des objets
 

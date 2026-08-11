@@ -6,8 +6,9 @@ title: CAP-INT-04 — Référentiel des structures et services de santé
 status: active
 owner: DEPSI
 version: "0.5"
+family: referentiels
 source: 01_cnisn/02_capacites.md
-maps_to: ["p-int-01", "p-int-02", "p-int-03", "p-int-04"]
+maps_to: ["p-int-01", "p-int-02", "p-int-03", "p-int-04", "cap-11", "cap-13", "cap-14"]
 implements: []
 applies_to: []
 related: []

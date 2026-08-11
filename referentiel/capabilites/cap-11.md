@@ -17,7 +17,7 @@ tags: ['caesn', 'niveau-1', 'capabilite', 'cap-11']
 
 ## Rôle dans le système
 
-Garantir un environnement physique fonctionnel de prestation : bâtiments, équipements, énergie, maintenance.
+La capabilité garantit un environnement physique fonctionnel pour la prestation de soins : bâtiments, équipements, énergie et maintenance. Sans elle, les autres capabilités s’effondrent : un équipement en panne ou un site sans énergie rend impossible l’acte clinique, même lorsque le personnel et les produits sont disponibles.
 
 ## Flux de valeur
 

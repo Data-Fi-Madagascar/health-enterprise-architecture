@@ -11,6 +11,8 @@ tags: ["ptisn", "niveau-4", "profils", "pt-01"]
 
 # PT-01 — Profil technique national
 
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
 
 ## 1. Capacité CNISN
 
@@ -78,3 +80,7 @@ Le service national d’échange ne remplace pas :
 - l’orchestration métier.
 
 ------------------------------------------------------------------------
+
+*Rattachement : [CAP-INT-03](../../referentiel/capacites/cap-int-03.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-1](../../referentiel/chapitres/art-1.md), [ART-7](../../referentiel/chapitres/art-7.md), [ART-11](../../referentiel/chapitres/art-11.md) · [fiche](../../referentiel/profils/pt-01.md)*
+
+<!-- END:GENERATED -->

@@ -11,6 +11,8 @@ tags: ["ptisn", "niveau-4", "profils", "pt-13"]
 
 # PT-13 — Profil technique national
 
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
 
 ## 1. Capacités CNISN
 
@@ -68,3 +70,7 @@ Les règles de qualité doivent rester :
 - indépendantes d’un outil de visualisation.
 
 ------------------------------------------------------------------------
+
+*Rattachement : [CAP-INT-11](../../referentiel/capacites/cap-int-11.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-5](../../referentiel/chapitres/art-5.md), [ART-6](../../referentiel/chapitres/art-6.md) · [fiche](../../referentiel/profils/pt-13.md)*
+
+<!-- END:GENERATED -->

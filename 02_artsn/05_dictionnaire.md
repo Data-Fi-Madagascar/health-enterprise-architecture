@@ -25,7 +25,7 @@ tags: [artsn, dictionnaire, donnees, semantique, niveau-3]
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](reading-matrix.md).
 
-Le dictionnaire de données fixe l'**atome d'information métier pur**, exempt de toute abréviation ou contrainte technologique. Il sert de **référentiel de sémantique universelle** pour la validation inter-ministérielle des contrats d'interfaces, conformément au [chapitre ART-2 (médiation et normalisation)](./03_chapitres/art-2-mediation-normalisation.md) et aux fondations [F.2](./00_fondations.md#f2--préservation-de-la-souveraineté-intersectorielle) et [F.3](./00_fondations.md#f3--éradication-des-silos-technologiques).
+Le dictionnaire de données fixe l'**atome d'information métier pur**, exempt de toute abréviation ou contrainte technologique. Il sert de **référentiel de sémantique universelle** pour la validation inter-ministérielle des contrats d'interfaces, conformément au [chapitre ART-2 (médiation et normalisation)](../referentiel/chapitres/art-2.md) et aux fondations [F.2](../referentiel/fondations/f-2.md) et [F.3](../referentiel/fondations/f-3.md).
 
 Chaque contrat technique d'interface publié dans le registre de schémas doit s'appuyer sur les concepts sémantiques définis dans ce dictionnaire. Les définitions s'organisent par domaines fonctionnels du [CAESN](../00_caesn/00_overview/index.md) :
 
@@ -45,5 +45,5 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 ## Liens
 
 - [Chapitres et patterns de référence](./03_chapitres/index.md)
-- [ART-2 — Médiation et normalisation](./03_chapitres/art-2-mediation-normalisation.md)
+- [ART-2 — Médiation et normalisation](../referentiel/chapitres/art-2.md)
 - [CAESN — données](../00_caesn/04_data/index.md)

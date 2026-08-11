@@ -25,7 +25,7 @@ tags: [artsn, gouvernance, versionnement, cnasn, niveau-3]
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](reading-matrix.md).
 
-L'ARTSN évolue selon le même mécanisme qu'elle impose aux contrats d'événements ([F.3](./00_fondations.md#f3--éradication-des-silos-technologiques)) : versions sémantiques, compatibilité ascendante et descendante documentée avant toute publication d'une nouvelle version, dépréciation explicite des chapitres retirés. Chaque spécification d'implémentation déclare la version d'ARTSN à laquelle elle se conforme.
+L'ARTSN évolue selon le même mécanisme qu'elle impose aux contrats d'événements ([F.3](../referentiel/fondations/f-3.md)) : versions sémantiques, compatibilité ascendante et descendante documentée avant toute publication d'une nouvelle version, dépréciation explicite des chapitres retirés. Chaque spécification d'implémentation déclare la version d'ARTSN à laquelle elle se conforme.
 
 ## Cycle de vie et versionnement
 
@@ -36,7 +36,7 @@ L'ARTSN évolue selon le même mécanisme qu'elle impose aux contrats d'événem
 
 ## Processus de revue du document
 
-L'ARTSN fait l'objet d'une revue périodique par l'instance de gouvernance du [CAESN](../00_caesn/07_governance/index.md), à une fréquence fixée par cette dernière, ainsi que d'une revue déclenchée par tout constat d'homologation qui révélerait qu'un composant ne peut être rattaché à aucun chapitre existant ([F.4](./00_fondations.md#f4--homologation-obligatoire)).
+L'ARTSN fait l'objet d'une revue périodique par l'instance de gouvernance du [CAESN](../00_caesn/07_governance/index.md), à une fréquence fixée par cette dernière, ainsi que d'une revue déclenchée par tout constat d'homologation qui révélerait qu'un composant ne peut être rattaché à aucun chapitre existant ([F.4](../referentiel/fondations/f-4.md)).
 
 Chaque revue statue sur :
 
@@ -82,6 +82,6 @@ Lorsque l'ARTSN documente un pattern d'intégration applicable selon des context
 
 ## Liens
 
-- [Fondations — F.4 (homologation)](./00_fondations.md#f4--homologation-obligatoire)
+- [Fondations — F.4 (homologation)](../referentiel/fondations/f-4.md)
 - [Table de maturité par chapitre](./07_annexes/a-table-de-maturite.md)
 - [CAESN — gouvernance](../00_caesn/07_governance/index.md)

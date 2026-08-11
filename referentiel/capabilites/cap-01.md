@@ -17,7 +17,7 @@ tags: ['caesn', 'niveau-1', 'capabilite', 'cap-01']
 
 ## Rôle dans le système
 
-Assurer la disponibilité, l'accessibilité, la continuité et la qualité minimale des services de santé à tous les niveaux.
+La capabilité garantit que chaque citoyen accède à des services de santé essentiels, sûrs et de qualité, quel que soit son lieu de résidence ou sa situation. Elle couvre l’offre de soins à tous les niveaux de la pyramide sanitaire : disponibilité des services, accessibilité géographique et financière, continuité de la prise en charge et qualité minimale garantie. Elle conditionne le bon déroulement du parcours de soins décrit par le flux de valeur associé.
 
 ## Flux de valeur
 

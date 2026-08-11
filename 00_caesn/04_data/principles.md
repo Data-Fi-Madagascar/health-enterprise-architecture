@@ -1,5 +1,5 @@
 ---
-title: Principes de l'architecture des données
+title: "Principes de l'architecture des données"
 id: data-principles
 domain: 04_data
 version: "0.0.1"
@@ -17,27 +17,119 @@ tags: [données, principes]
 
 | Profil | Lecture |
 |--------|---------|
-| Décideurs institutionnels | ○ |
-| Directions métier / programmes | ◐ |
-| DEPSI / équipes techniques | ● |
-| SIS / données / suivi-évaluation | ● |
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ◐ |
+| SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
-Les principes d'architecture transversaux s'appliquent à toutes les données du système d'information sanitaire. Ils se traduisent en règles spécifiques ci-dessous.
 
-| Code | Principe | Signification | Implications |
-|------|----------|---------------|--------------|
-| DA-01 | Les données de santé sont un actif stratégique national | Les données produites par le système de santé doivent être gouvernées comme un bien public national | Leur gouvernance relève du Ministère de la Santé Publique ; aucun partenaire ne peut les contrôler exclusivement |
-| DA-02 | Une donnée doit être collectée une seule fois et réutilisée plusieurs fois | La collecte répétée d'une même donnée crée de la charge, de l'incohérence et de la fragmentation | Toute nouvelle collecte vérifie l'existence de données déjà disponibles dans les systèmes ou référentiels nationaux |
-| DA-03 | Les référentiels nationaux sont les sources de vérité | Les données clés doivent être rattachées à des référentiels communs | Les systèmes utilisent les référentiels nationaux (FOSA, géographie, indicateurs, agents, produits, bénéficiaires) au lieu de créer leurs propres listes locales |
-| DA-04 | Les données opérationnelles et analytiques doivent être distinguées | Les systèmes de prestation ne doivent pas être confondus avec les systèmes de reporting | Les données circulent des systèmes opérationnels vers les systèmes analytiques selon des règles d'intégration, qualité et sécurité |
-| DA-05 | La qualité des données est une responsabilité partagée | La qualité ne peut être imposée uniquement par le niveau central | Les systèmes intègrent des contrôles, des retours aux producteurs et des revues régulières |
-| DA-06 | Les données doivent être utilisées pour des décisions réelles | Un tableau de bord n'a de valeur que s'il soutient un processus de décision effectif | Toute production de rapports ou visualisations est liée à une revue, un arbitrage, une allocation de ressources ou une action d'amélioration |
-| DA-07 | Les données personnelles de santé doivent être protégées dès la conception | La confiance dans le système dépend de la protection des données sensibles | Confidentialité, gestion des accès, traçabilité, consentement et limitation des usages sont intégrés dès la conception |
-| DA-08 | Les échanges de données doivent passer par des mécanismes gouvernés | Les échanges directs, informels ou propriétaires augmentent les risques de fragmentation et de fuite | Les échanges utilisent la couche nationale d'échange ou les mécanismes homologués par l'architecture de référence technique |
+Les principes d'architecture transversaux s'appliquent à toutes les données du système d'information sanitaire. Ils se traduisent en règles spécifiques. Chaque principe vit dans le référentiel : `referentiel/principes/da-XX.md`.
 
+## Catalogue des principes de données
+
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+
+### DA-01 — Les données de santé sont un actif stratégique national
+
+#### Signification
+
+Les données produites par le système de santé constituent un actif stratégique national : leur valeur dépasse les usages d’un seul système ou d’un seul partenaire. Elles doivent être gouvernées comme un bien public, au service de la santé de la population et du pilotage du système.
+
+#### Implications
+
+La gouvernance des données de santé relève du Ministère de la Santé Publique. Aucun partenaire ne peut en revendiquer le contrôle exclusif, ni restreindre l’accès des autorités nationales aux données dont la finalité de santé publique justifie l’usage. Les règles d’accès, de partage et de réutilisation sont définies par l’État, pas par les fournisseurs ou les bailleurs.
+
+*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/principes/da-01.md)*
+
+### DA-02 — Une donnée doit être collectée une seule fois et réutilisée plusieurs fois
+
+#### Signification
+
+La collecte répétée d’une même donnée à plusieurs endroits crée de la charge pour les agents, de l’incohérence entre les sources et de la fragmentation de l’information. Chaque saisie en double augmente aussi le risque d’erreur.
+
+#### Implications
+
+Toute nouvelle collecte vérifie d’abord l’existence de données déjà disponibles dans les systèmes ou référentiels nationaux. La donnée existante est réutilisée par référence ; une saisie supplémentaire n’est justifiée que si la donnée n’existe nulle part à la qualité requise.
+
+*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/principes/da-02.md)*
+
+### DA-03 — Les référentiels nationaux sont les sources de vérité
+
+#### Signification
+
+Les données clés du système de santé doivent être rattachées à des référentiels communs. Sans source de vérité unique, une même entité (formation sanitaire, produit, agent) existe en plusieurs versions divergentes selon le système qui la décrit.
+
+#### Implications
+
+Les systèmes utilisent les référentiels nationaux (formations sanitaires, géographie, indicateurs, agents, produits, bénéficiaires) au lieu de créer leurs propres listes locales. Les identifiants de référence sont partagés et résolus auprès du référentiel officiel, y compris en mode hors ligne via des copies synchronisées autorisées.
+
+*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/principes/da-03.md)*
+
+### DA-04 — Les données opérationnelles et analytiques doivent être distinguées
+
+#### Signification
+
+Les systèmes de prestation et les systèmes de reporting répondent à des besoins différents et ne doivent pas être confondus. Faire porter l’analyse sur un système opérationnel dégrade la prestation ; alimenter la décision uniquement par des saisies dédiées au reporting fausse les données.
+
+#### Implications
+
+Les données circulent des systèmes opérationnels vers les systèmes analytiques selon des règles d’intégration, de qualité et de sécurité. Les deux types de systèmes coexistent avec des responsabilités distinctes, et les flux entre eux sont définis, pas improvisés.
+
+*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/principes/da-04.md)*
+
+### DA-05 — La qualité des données est une responsabilité partagée
+
+#### Signification
+
+La qualité des données ne peut être imposée uniquement par le niveau central : elle se construit là où la donnée est saisie et utilisée. Une donnée mal renseignée à la source n’est réparable ni par les entrepôts ni par les tableaux de bord.
+
+#### Implications
+
+Les systèmes intègrent des contrôles à la saisie, des retours aux producteurs de données et des revues régulières de qualité. Les responsabilités sont réparties entre les producteurs, les gestionnaires de référentiels et le niveau central, chacun avec des indicateurs mesurables.
+
+*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/principes/da-05.md)*
+
+### DA-06 — Les données doivent être utilisées pour des décisions réelles
+
+#### Signification
+
+Un tableau de bord n’a de valeur que s’il soutient un processus de décision effectif. Produire des indicateurs sans revue qui les exploite crée de la charge de reporting sans amélioration du système.
+
+#### Implications
+
+Toute production de rapports ou de visualisations est liée à une revue, un arbitrage, une allocation de ressources ou une action d’amélioration. Chaque indicateur publié a un décideur, un rythme de revue et un usage concret documenté.
+
+*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/principes/da-06.md)*
+
+### DA-07 — Les données personnelles de santé doivent être protégées dès la conception
+
+#### Signification
+
+La confiance dans le système national dépend de la protection des données sensibles de santé. Une fuite ou un usage détourné n’atteint pas seulement un individu : elle érode la confiance de toute la population dans le numérique de santé.
+
+#### Implications
+
+Confidentialité, gestion des accès, traçabilité, consentement et limitation des usages sont intégrés dès la conception. Ces garanties s’appliquent à toutes les données personnelles de santé, quel que soit le système qui les traite, y compris en mode hors ligne et lors des échanges interinstitutionnels.
+
+*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/principes/da-07.md)*
+
+### DA-08 — Les échanges de données doivent passer par des mécanismes gouvernés
+
+#### Signification
+
+Les échanges directs, informels ou propriétaires entre systèmes augmentent les risques de fragmentation, de fuite de données et de dépendance à des formats privés. Chaque canal parallèle contourne les garanties de sécurité et de traçabilité du cadre national.
+
+#### Implications
+
+Les échanges utilisent la couche nationale d’échange ou les mécanismes homologués par l’architecture de référence technique. Un échange hors de ces mécanismes est une exception documentée, limitée dans le temps et soumise à validation.
+
+*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/principes/da-08.md)*
+
+<!-- END:GENERATED -->
 ## Liens
 
 - [Principes d'architecture](../02_principles/index.md)

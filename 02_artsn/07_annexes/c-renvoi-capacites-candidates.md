@@ -31,9 +31,9 @@ Une capacité de **coordination intersectorielle** et un **référentiel normati
 
 Ce point de vigilance porte sur trois écarts constatés lors du peuplement de l'ARTSN :
 
-1. **Capacité candidate « Coordination intersectorielle »** — rattachement des chapitres [ART-0](../03_chapitres/art-0-accords-partage.md) (accords de partage) et [ART-8d](../03_chapitres/art-8d-choregraphie-interinstitutionnelle.md) (chorégraphie inter-institutionnelle), absente du catalogue CAP-01..16 du CAESN.
-2. **Capacité candidate « Surveillance spatio-temporelle »** — rattachement du chapitre [ART-4d](../03_chapitres/art-4d-referentiel-geospatial.md), absente du catalogue.
-3. **CAP-04bis « Engagement patient et identitovigilance »** — supposée par [ART-4a](../03_chapitres/art-4a-resolution-identite.md) et [ART-4b](../03_chapitres/art-4b-bases-autorisation.md) ; le CAESN définit pour l'instant CAP-04 comme « Santé communautaire », sans sous-capacité d'identitovigilance.
+1. **Capacité candidate « Coordination intersectorielle »** — rattachement des chapitres [ART-0](../../referentiel/chapitres/art-0.md) (accords de partage) et [ART-8d](../../referentiel/chapitres/art-8d.md) (chorégraphie inter-institutionnelle), absente du catalogue CAP-01..16 du CAESN.
+2. **Capacité candidate « Surveillance spatio-temporelle »** — rattachement du chapitre [ART-4d](../../referentiel/chapitres/art-4d.md), absente du catalogue.
+3. **CAP-04bis « Engagement patient et identitovigilance »** — supposée par [ART-4a](../../referentiel/chapitres/art-4a.md) et [ART-4b](../../referentiel/chapitres/art-4b.md) ; le CAESN définit pour l'instant CAP-04 comme « Santé communautaire », sans sous-capacité d'identitovigilance.
 
 ## Référentiels normatifs cités
 
@@ -46,6 +46,6 @@ Ce point de vigilance porte sur trois écarts constatés lors du peuplement de l
 
 - [Point de vigilance CAESN (note de gouvernance)](../../00_caesn/07_governance/point-de-vigilance-caesn.md)
 - [CAESN — capacités](../../00_caesn/03_capabilities/index.md)
-- [ART-0 — Accords de partage](../03_chapitres/art-0-accords-partage.md)
-- [ART-4a — Résolution d'identité](../03_chapitres/art-4a-resolution-identite.md)
-- [ART-4d — Référentiel géospatial](../03_chapitres/art-4d-referentiel-geospatial.md)
+- [ART-0 — Accords de partage](../../referentiel/chapitres/art-0.md)
+- [ART-4a — Résolution d'identité](../../referentiel/chapitres/art-4a.md)
+- [ART-4d — Référentiel géospatial](../../referentiel/chapitres/art-4d.md)

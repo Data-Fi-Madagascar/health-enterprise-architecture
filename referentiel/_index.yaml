@@ -552,236 +552,236 @@
   chemin: capacites/cap-int-12.md
   status: active
 
-# --- PTISN (niveau 3) ---
+# --- PTISN (niveau 4) ---
 # profils (13)
 - id: pt-01
   type: profil
-  niveau: "3"
+  niveau: "4"
   chemin: profils/pt-01.md
   status: draft
 - id: pt-02
   type: profil
-  niveau: "3"
+  niveau: "4"
   chemin: profils/pt-02.md
   status: draft
 - id: pt-03
   type: profil
-  niveau: "3"
+  niveau: "4"
   chemin: profils/pt-03.md
   status: draft
 - id: pt-04
   type: profil
-  niveau: "3"
+  niveau: "4"
   chemin: profils/pt-04.md
   status: draft
 - id: pt-05
   type: profil
-  niveau: "3"
+  niveau: "4"
   chemin: profils/pt-05.md
   status: draft
 - id: pt-06
   type: profil
-  niveau: "3"
+  niveau: "4"
   chemin: profils/pt-06.md
   status: draft
 - id: pt-07
   type: profil
-  niveau: "3"
+  niveau: "4"
   chemin: profils/pt-07.md
   status: draft
 - id: pt-08
   type: profil
-  niveau: "3"
+  niveau: "4"
   chemin: profils/pt-08.md
   status: draft
 - id: pt-09
   type: profil
-  niveau: "3"
+  niveau: "4"
   chemin: profils/pt-09.md
   status: draft
 - id: pt-10
   type: profil
-  niveau: "3"
+  niveau: "4"
   chemin: profils/pt-10.md
   status: draft
 - id: pt-11
   type: profil
-  niveau: "3"
+  niveau: "4"
   chemin: profils/pt-11.md
   status: draft
 - id: pt-12
   type: profil
-  niveau: "3"
+  niveau: "4"
   chemin: profils/pt-12.md
   status: draft
 - id: pt-13
   type: profil
-  niveau: "3"
+  niveau: "4"
   chemin: profils/pt-13.md
   status: draft
 
-# --- ART-SN (niveau 4) ---
+# --- ART-SN (niveau 3) ---
 # fondations (4)
 - id: f-1
   type: fondation
-  niveau: "4"
+  niveau: "3"
   chemin: fondations/f-1.md
   status: draft
 - id: f-2
   type: fondation
-  niveau: "4"
+  niveau: "3"
   chemin: fondations/f-2.md
   status: draft
 - id: f-3
   type: fondation
-  niveau: "4"
+  niveau: "3"
   chemin: fondations/f-3.md
   status: draft
 - id: f-4
   type: fondation
-  niveau: "4"
+  niveau: "3"
   chemin: fondations/f-4.md
   status: draft
 
 # fondations stubs candidats (créés Phase 2)
 - id: f-5
   type: fondation
-  niveau: "4"
+  niveau: "3"
   chemin: fondations/f-5.md
   status: candidate
 - id: f-6
   type: fondation
-  niveau: "4"
+  niveau: "3"
   chemin: fondations/f-6.md
   status: candidate
 
 # exigences (5)
 - id: enf-1
   type: exigence
-  niveau: "4"
+  niveau: "3"
   chemin: exigences/enf-1.md
   status: draft
 - id: enf-2
   type: exigence
-  niveau: "4"
+  niveau: "3"
   chemin: exigences/enf-2.md
   status: draft
 - id: enf-3
   type: exigence
-  niveau: "4"
+  niveau: "3"
   chemin: exigences/enf-3.md
   status: draft
 - id: enf-4
   type: exigence
-  niveau: "4"
+  niveau: "3"
   chemin: exigences/enf-4.md
   status: draft
 - id: enf-5
   type: exigence
-  niveau: "4"
+  niveau: "3"
   chemin: exigences/enf-5.md
   status: draft
 
 # chapitres (18)
 - id: art-0
   type: chapitre
-  niveau: "4"
+  niveau: "3"
   chemin: chapitres/art-0.md
   status: draft
 - id: art-1
   type: chapitre
-  niveau: "4"
+  niveau: "3"
   chemin: chapitres/art-1.md
   status: draft
 - id: art-2
   type: chapitre
-  niveau: "4"
+  niveau: "3"
   chemin: chapitres/art-2.md
   status: draft
 - id: art-3
   type: chapitre
-  niveau: "4"
+  niveau: "3"
   chemin: chapitres/art-3.md
   status: draft
 - id: art-4
   type: chapitre
-  niveau: "4"
+  niveau: "3"
   chemin: chapitres/art-4.md
   status: draft
 - id: art-4a
   type: chapitre
-  niveau: "4"
+  niveau: "3"
   chemin: chapitres/art-4a.md
   status: draft
 - id: art-4b
   type: chapitre
-  niveau: "4"
+  niveau: "3"
   chemin: chapitres/art-4b.md
   status: draft
 - id: art-4c
   type: chapitre
-  niveau: "4"
+  niveau: "3"
   chemin: chapitres/art-4c.md
   status: draft
 - id: art-4d
   type: chapitre
-  niveau: "4"
+  niveau: "3"
   chemin: chapitres/art-4d.md
   status: draft
 - id: art-5
   type: chapitre
-  niveau: "4"
+  niveau: "3"
   chemin: chapitres/art-5.md
   status: draft
 - id: art-6
   type: chapitre
-  niveau: "4"
+  niveau: "3"
   chemin: chapitres/art-6.md
   status: draft
 - id: art-7
   type: chapitre
-  niveau: "4"
+  niveau: "3"
   chemin: chapitres/art-7.md
   status: draft
 - id: art-8
   type: chapitre
-  niveau: "4"
+  niveau: "3"
   chemin: chapitres/art-8.md
   status: draft
 - id: art-8a
   type: chapitre
-  niveau: "4"
+  niveau: "3"
   chemin: chapitres/art-8a.md
   status: draft
 - id: art-8b
   type: chapitre
-  niveau: "4"
+  niveau: "3"
   chemin: chapitres/art-8b.md
   status: draft
 - id: art-8c
   type: chapitre
-  niveau: "4"
+  niveau: "3"
   chemin: chapitres/art-8c.md
   status: draft
 - id: art-8d
   type: chapitre
-  niveau: "4"
+  niveau: "3"
   chemin: chapitres/art-8d.md
   status: draft
 - id: art-9
   type: chapitre
-  niveau: "4"
+  niveau: "3"
   chemin: chapitres/art-9.md
   status: draft
 
 # chapitres stubs candidats (créés Phase 2)
 - id: art-10
   type: chapitre
-  niveau: "4"
+  niveau: "3"
   chemin: chapitres/art-10.md
   status: candidate
 - id: art-11
   type: chapitre
-  niveau: "4"
+  niveau: "3"
   chemin: chapitres/art-11.md
   status: candidate

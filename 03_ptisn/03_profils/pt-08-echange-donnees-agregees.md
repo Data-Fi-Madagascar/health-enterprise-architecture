@@ -11,11 +11,13 @@ tags: ["ptisn", "niveau-4", "profils", "pt-08"]
 
 # PT-08 — Profil technique national
 
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
 
 ## 1. Capacités CNISN
 
-- **CAP-INT-03 — échange et médiation inter-systèmes** ;
-- contribution à **CAP-INT-07 — accès et exposition des données analytiques**.
+- **CAP-INT-03 — Échange et médiation inter-systèmes**
+- contribution à **CAP-INT-07 — Accès et exposition des données analytiques**
 
 ## 2. Chapitres ART applicables
 
@@ -80,3 +82,7 @@ La plateforme nationale de traçabilité RMA constitue une première initiative 
 Le profil mADX doit être évalué comme contrat cible d’entrée et de sortie pour les données agrégées, indépendamment du format interne du système opérationnel.
 
 ------------------------------------------------------------------------
+
+*Rattachement : [CAP-INT-03](../../referentiel/capacites/cap-int-03.md), [CAP-INT-07](../../referentiel/capacites/cap-int-07.md), [ART-1](../../referentiel/chapitres/art-1.md), [ART-2](../../referentiel/chapitres/art-2.md), [ART-5](../../referentiel/chapitres/art-5.md), [ART-6](../../referentiel/chapitres/art-6.md) · [fiche](../../referentiel/profils/pt-08.md)*
+
+<!-- END:GENERATED -->

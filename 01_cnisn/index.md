@@ -40,7 +40,7 @@ Niveau **2** de la hiérarchie du [Cadre d'Architecture d'Entreprise](../00_caes
 
 Le Cadre National d'Interopérabilité fixe les standards d'échange, les modèles de données partagés, les profils d'interopérabilité et les règles de sécurité applicables aux échanges entre les systèmes d'information du secteur santé. Il décline les [principes](../00_caesn/02_principles/index.md) du niveau 1 en contraintes d'interopérabilité concrètes.
 
-Contrairement à l'ARTSN (niveau 3), le CNISN ne sélectionne pas de produits ni de configurations : il définit **quoi échanger, avec quelles normes et sous quelles conditions**, indépendamment des solutions retenues.
+Contrairement au [PTISN (niveau 4)](../03_ptisn/index.md), le CNISN ne sélectionne pas de produits ni de configurations : il définit **quoi échanger, avec quelles normes et sous quelles conditions**, indépendamment des solutions retenues.
 
 Points couverts (à compléter) :
 - Standards d'échange et formats (FHIR, HL7, IHE, etc.)

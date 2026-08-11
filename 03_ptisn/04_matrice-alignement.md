@@ -6,7 +6,7 @@ version: "0.4"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
-tags: ["ptisn", "niveau-3", "interopérabilité", "alignement"]
+tags: ["ptisn", "niveau-4", "interopérabilité", "alignement"]
 ---
 
 # Partie IV — Matrice d'alignement
@@ -19,10 +19,10 @@ Les alignements ci-dessous ont été corrigés et vérifiés pendant la migratio
 |---|--|
 | [CAP-INT-01](../referentiel/capacites/cap-int-01.md) | [PT-04](../referentiel/profils/pt-04.md) |
 | [CAP-INT-02](../referentiel/capacites/cap-int-02.md) | [PT-05](../referentiel/profils/pt-05.md) |
-| [CAP-INT-03](../referentiel/capacites/cap-int-03.md) | [PT-01](../referentiel/profils/pt-01.md), [PT-02](../referentiel/profils/pt-02.md), [PT-03](../referentiel/profils/pt-03.md), [PT-08](../referentiel/profils/pt-08.md) |
+| [CAP-INT-03](../referentiel/capacites/cap-int-03.md) | [PT-01](../referentiel/profils/pt-01.md), [PT-02](../referentiel/profils/pt-02.md), [PT-08](../referentiel/profils/pt-08.md) |
 | [CAP-INT-04](../referentiel/capacites/cap-int-04.md) | [PT-06](../referentiel/profils/pt-06.md) |
 | [CAP-INT-05](../referentiel/capacites/cap-int-05.md) | [PT-07](../referentiel/profils/pt-07.md) |
-| [CAP-INT-06](../referentiel/capacites/cap-int-06.md) | — |
+| [CAP-INT-06](../referentiel/capacites/cap-int-06.md) | [PT-03](../referentiel/profils/pt-03.md) |
 | [CAP-INT-07](../referentiel/capacites/cap-int-07.md) | [PT-08](../referentiel/profils/pt-08.md), [PT-09](../referentiel/profils/pt-09.md) |
 | [CAP-INT-08](../referentiel/capacites/cap-int-08.md) | [PT-10](../referentiel/profils/pt-10.md) |
 | [CAP-INT-09](../referentiel/capacites/cap-int-09.md) | [PT-11](../referentiel/profils/pt-11.md) |

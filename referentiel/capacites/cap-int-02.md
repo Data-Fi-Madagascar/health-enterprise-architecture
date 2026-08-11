@@ -6,8 +6,9 @@ title: CAP-INT-02 — Registre et résolution des professionnels de santé
 status: active
 owner: DEPSI
 version: "0.5"
+family: referentiels
 source: 01_cnisn/02_capacites.md
-maps_to: ["p-int-01", "p-int-02", "p-int-03", "p-int-04", "p-int-14", "p-int-15"]
+maps_to: ["p-int-01", "p-int-02", "p-int-03", "p-int-04", "p-int-14", "p-int-15", "cap-09", "cap-14"]
 implements: []
 applies_to: []
 related: []

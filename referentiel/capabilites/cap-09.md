@@ -17,7 +17,7 @@ tags: ['caesn', 'niveau-1', 'capabilite', 'cap-09']
 
 ## Rôle dans le système
 
-Assurer la disponibilité, les compétences, l'affectation, la supervision et la motivation des agents de santé.
+La capabilité garantit la disponibilité et la compétence des ressources humaines en santé : recrutement, formation, affectation, supervision et motivation des agents. Elle est un facteur déterminant de la performance de toutes les autres capabilités, car un service de santé ne peut pas fonctionner sans personnel présent, compétent et soutenu.
 
 ## Flux de valeur
 

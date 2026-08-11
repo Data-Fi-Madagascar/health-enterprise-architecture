@@ -37,7 +37,7 @@ Termes techniques propres à l'ARTSN. Les définitions des patterns mobilisés p
 
 **Homologation technique** — Contrôle par lequel une solution est vérifiée pour conformité aux standards techniques et aux exigences de sécurité de l'ARTSN avant mise en production, indépendamment des règles d'homologation fonctionnelle du niveau 1.
 
-**Modèle d'hébergement** — Choix d'hébergement (sur site national, cloud souverain, hybride) conforme à l'exigence de [résidence de la donnée](./03_chapitres/art-7-securite-controle-acces.md) et aux fondations du niveau.
+**Modèle d'hébergement** — Choix d'hébergement (sur site national, cloud souverain, hybride) conforme à l'exigence de [résidence de la donnée](../referentiel/chapitres/art-7.md) et aux fondations du niveau.
 
 **Norme et standard technique** — Spécification technique normative (formats, protocoles, API) retenue par l'ARTSN et opposable lors d'une homologation ; déclinée depuis les standards du [niveau 1](../00_caesn/09_standards/index.md).
 

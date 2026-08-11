@@ -1,5 +1,5 @@
 ---
-title: Capabilités habilitantes du système
+title: "Capabilités habilitantes du système"
 id: capabilities-enabling
 domain: 03_capabilities
 version: "0.0.1"
@@ -18,28 +18,133 @@ tags: [capabilités, habilitantes, catalogue]
 | Profil | Lecture |
 |--------|---------|
 | Décideurs institutionnels | ◐ |
-| Directions métier / programmes | ◐ |
-| DEPSI / équipes techniques | ● |
-| SIS / données / suivi-évaluation | ● |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ◐ |
+| SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
-Les capabilités habilitantes ne produisent pas toujours directement une valeur visible pour le patient, mais leur absence bloque l'exécution des flux de valeur. Elles doivent être développées comme capabilités nationales durables, et non comme appuis ponctuels liés à des projets isolés.
 
-| Code | Capabilité | Rôle dans le système |
-|------|------------|----------------------|
-| CAP-09 | Gestion des ressources humaines en santé | Assurer la disponibilité, les compétences, l'affectation, la supervision et la motivation des agents de santé. |
-| CAP-10 | Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement | Assurer la disponibilité des produits de santé au point de service, dont médicaments, vaccins, intrants, consommables. |
-| CAP-11 | Gestion des infrastructures, équipements et maintenance | Garantir un environnement physique fonctionnel de prestation : bâtiments, équipements, énergie, maintenance. |
-| CAP-12 | Finances publiques, budget et allocation des ressources | Soutenir l'exécution budgétaire, la planification financière, l'allocation équitable et la soutenabilité. |
-| CAP-13 | Système d'information sanitaire, données et recherche | Produire, gérer, intégrer, analyser et utiliser les données pour la décision, la recherche, le pilotage et la redevabilité. |
-| CAP-14 | Interopérabilité, référentiels nationaux et infrastructure numérique partagée | Assurer la cohérence, l'intégration, la souveraineté et la réutilisation des données et composants communs. |
-| CAP-15 | Cybersécurité, confidentialité et gouvernance des données personnelles | Garantir la confiance, la sécurité, la confidentialité et la protection des données personnelles de santé. |
-| CAP-16 | Gestion du portefeuille d'initiatives numériques | Prioriser, coordonner, rationaliser, suivre et évaluer les investissements selon leur contribution aux flux de valeur. |
+Chaque capabilité vit dans le référentiel : `referentiel/capabilites/cap-XX.md` (rôle, flux de valeur associés).
 
+## Catalogue des capabilités
+
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+
+### CAP-09 — Gestion des ressources humaines en santé
+
+#### Rôle dans le système
+
+La capabilité garantit la disponibilité et la compétence des ressources humaines en santé : recrutement, formation, affectation, supervision et motivation des agents. Elle est un facteur déterminant de la performance de toutes les autres capabilités, car un service de santé ne peut pas fonctionner sans personnel présent, compétent et soutenu.
+
+#### Flux de valeur
+
+- [VS-01](../../referentiel/flux-valeur/vs-01.md)
+- [VS-02](../../referentiel/flux-valeur/vs-02.md)
+- [VS-04](../../referentiel/flux-valeur/vs-04.md)
+
+*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/capabilites/cap-09.md)*
+
+### CAP-10 — Gestion des médicaments, vaccins, intrants et chaîne d’approvisionnement
+
+#### Rôle dans le système
+
+La capabilité assure la disponibilité des produits de santé au point de service : médicaments, vaccins, intrants et consommables. Elle couvre la chaîne d’approvisionnement, du stock central jusqu’au comptoir, et conditionne directement la qualité des soins : une rupture de stock peut empêcher un traitement ou une vaccination programmée.
+
+#### Flux de valeur
+
+- [VS-01](../../referentiel/flux-valeur/vs-01.md)
+- [VS-02](../../referentiel/flux-valeur/vs-02.md)
+
+*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md) · [fiche](../../referentiel/capabilites/cap-10.md)*
+
+### CAP-11 — Gestion des infrastructures, équipements et maintenance
+
+#### Rôle dans le système
+
+La capabilité garantit un environnement physique fonctionnel pour la prestation de soins : bâtiments, équipements, énergie et maintenance. Sans elle, les autres capabilités s’effondrent : un équipement en panne ou un site sans énergie rend impossible l’acte clinique, même lorsque le personnel et les produits sont disponibles.
+
+#### Flux de valeur
+
+- [VS-01](../../referentiel/flux-valeur/vs-01.md)
+- [VS-02](../../referentiel/flux-valeur/vs-02.md)
+
+*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md) · [fiche](../../referentiel/capabilites/cap-11.md)*
+
+### CAP-12 — Finances publiques, budget et allocation des ressources
+
+#### Rôle dans le système
+
+La capabilité soutient le financement du système de santé : exécution budgétaire, planification financière, allocation équitable des ressources et soutenabilité des financements. Elle garantit que les moyens financiers suivent les priorités de santé publique et que chaque niveau dispose des ressources nécessaires pour assurer ses fonctions.
+
+#### Flux de valeur
+
+- [VS-03](../../referentiel/flux-valeur/vs-03.md)
+- [VS-04](../../referentiel/flux-valeur/vs-04.md)
+
+*Rattachement : [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/capabilites/cap-12.md)*
+
+### CAP-13 — Système d’information sanitaire, données et recherche
+
+#### Rôle dans le système
+
+La capabilité transforme les données du système de santé en information utile : production, gestion, intégration, analyse et utilisation pour la décision, la recherche, le pilotage et la redevabilité. Elle est transversale à tous les flux de valeur, car aucun flux ne peut être mesuré, amélioré ou gouverné sans données fiables.
+
+#### Flux de valeur
+
+- [VS-01](../../referentiel/flux-valeur/vs-01.md)
+- [VS-02](../../referentiel/flux-valeur/vs-02.md)
+- [VS-03](../../referentiel/flux-valeur/vs-03.md)
+- [VS-04](../../referentiel/flux-valeur/vs-04.md)
+
+*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/capabilites/cap-13.md)*
+
+### CAP-14 — Interopérabilité, référentiels nationaux et infrastructure numérique partagée
+
+#### Rôle dans le système
+
+La capabilité assure la cohérence, l’intégration, la souveraineté et la réutilisation des données et composants communs : référentiels partagés, couche d’échange, standards et services transverses. Elle évite la fragmentation du système en garantissant que chaque initiative réutilise les briques nationales au lieu de les dupliquer.
+
+#### Flux de valeur
+
+- [VS-01](../../referentiel/flux-valeur/vs-01.md)
+- [VS-02](../../referentiel/flux-valeur/vs-02.md)
+- [VS-03](../../referentiel/flux-valeur/vs-03.md)
+- [VS-04](../../referentiel/flux-valeur/vs-04.md)
+
+*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/capabilites/cap-14.md)*
+
+### CAP-15 — Cybersécurité, confidentialité et gouvernance des données personnelles
+
+#### Rôle dans le système
+
+La capabilité garantit la confiance, la sécurité, la confidentialité et la protection des données personnelles de santé. Elle est la condition de l’adoption du système par les patients et les agents : une protection défaillante érode la confiance de toute la population dans le numérique de santé, quel que soit le service concerné.
+
+#### Flux de valeur
+
+- [VS-01](../../referentiel/flux-valeur/vs-01.md)
+- [VS-02](../../referentiel/flux-valeur/vs-02.md)
+- [VS-03](../../referentiel/flux-valeur/vs-03.md)
+- [VS-04](../../referentiel/flux-valeur/vs-04.md)
+
+*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/capabilites/cap-15.md)*
+
+### CAP-16 — Gestion du portefeuille d’initiatives numériques
+
+#### Rôle dans le système
+
+La capabilité gouverne les investissements numériques du secteur : priorisation, coordination, rationalisation, suivi et évaluation selon leur contribution aux flux de valeur. Elle garantit que chaque financement sert une finalité de santé publique mesurable et que le portefeuille national évolue sans s’accumuler.
+
+#### Flux de valeur
+
+- [VS-03](../../referentiel/flux-valeur/vs-03.md)
+- [VS-04](../../referentiel/flux-valeur/vs-04.md)
+
+*Rattachement : [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/capabilites/cap-16.md)*
+
+<!-- END:GENERATED -->
 ## Liens
 
 - [Capabilités](./index.md)
-- [Runway](./runway.md)
-- [Maturité](./maturity.md)

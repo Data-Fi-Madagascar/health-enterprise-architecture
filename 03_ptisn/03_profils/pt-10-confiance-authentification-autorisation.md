@@ -11,6 +11,8 @@ tags: ["ptisn", "niveau-4", "profils", "pt-10"]
 
 # PT-10 — Profil technique national
 
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
 
 ## 1. Capacité CNISN
 
@@ -49,7 +51,7 @@ IHE IUA fournit un cadre d’autorisation fondé sur des jetons pour les service
 
 ## 5. Principe de séparation
 
-    Authentification
+Authentification
     Qui est l’utilisateur ou le système ?
                  │
                  ▼
@@ -79,3 +81,7 @@ IHE IUA fournit un cadre d’autorisation fondé sur des jetons pour les service
 - décision explicite.
 
 ------------------------------------------------------------------------
+
+*Rattachement : [CAP-INT-08](../../referentiel/capacites/cap-int-08.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-4B](../../referentiel/chapitres/art-4b.md), [ART-7](../../referentiel/chapitres/art-7.md), [ART-9](../../referentiel/chapitres/art-9.md) · [fiche](../../referentiel/profils/pt-10.md)*
+
+<!-- END:GENERATED -->

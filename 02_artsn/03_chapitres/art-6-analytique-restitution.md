@@ -1,12 +1,12 @@
 ---
-title: ART-6 — Analytique et restitution
-id: art-6-analytique-restitution
+title: "ART-6 — Analytique et restitution"
+id: art-6
 domain: 02_artsn
 version: "0.0.1"
 status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
-tags: [artsn, chapitres, art-6, analytique, cqrs, niveau-3]
+tags: [artsn, chapitres, art-6, niveau-3]
 ---
 
 # ART-6 — Analytique et restitution
@@ -18,25 +18,33 @@ tags: [artsn, chapitres, art-6, analytique, cqrs, niveau-3]
 | Profil | Lecture |
 |--------|---------|
 | Décideurs institutionnels | ◐ |
-| Directions métier / programmes | ● |
+| Directions métier / programmes | ◐ |
 | DEPSI / équipes techniques | ● |
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
-**Contenu normatif.** L'architecture doit imposer une **séparation étanche entre le stockage opérationnel et le stockage analytique** (CQRS). L'entrepôt analytique doit être alimenté par des pipelines automatisés intégrant un moteur de masquage irréversible, et doit supporter nativement quatre types de requêtes : projections tabulaires, parcours de graphes, réconciliation comptable et fusion de signaux géospatiaux.
 
-**Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (requêtes lourdes des décideurs, extractions massives pour la recherche) : elle seule permet de garantir des performances de restitution constantes et une sécurité réglementaire absolue sans surcharger les serveurs de soins et sans rompre le pipeline.
+ART-6 — Analytique et restitution constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : [`art-6`](../../referentiel/chapitres/art-6.md).
 
-- **Rattachement** : [CAP-13](../../00_caesn/03_capabilities/index.md), [CAP-08](../../00_caesn/03_capabilities/index.md) (analytics & décisionnel).
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+
+**Contenu normatif.** L’architecture doit imposer une **séparation étanche entre le stockage opérationnel et le stockage analytique** (CQRS). L’entrepôt analytique doit être alimenté par des pipelines automatisés intégrant un moteur de masquage irréversible, et doit supporter nativement quatre types de requêtes : projections tabulaires, parcours de graphes, réconciliation comptable et fusion de signaux géospatiaux.
+
+**Discipline existentielle.** Dès lors qu’une source échappe à la gouvernance directe de l’initiative (requêtes lourdes des décideurs, extractions massives pour la recherche) : elle seule permet de garantir des performances de restitution constantes et une sécurité réglementaire absolue sans surcharger les serveurs de soins et sans rompre le pipeline.
+
+- **Rattachement** : [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-08](../../referentiel/capabilites/cap-08.md) (analytics & décisionnel).
 - **Infrastructure cible** : Data Lakehouse.
 - **Pattern cible** : modèle de séparation CQRS.
-- **Déduit selon** : [ENF-4](../02_exigences-contextuelles.md#enf-4--cloisonnement-inter-institutionnel-et-étanchéité-des-données-one-health) (protection One Health).
+- **Déduit selon** : [ENF-4](../../referentiel/exigences/enf-4.md) (protection One Health).
 - **Statut : Provisoire.**
 
+*Rattachement : [ENF-4](../../referentiel/exigences/enf-4.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-08](../../referentiel/capabilites/cap-08.md) · [fiche](../../referentiel/chapitres/art-6.md)*
+
+<!-- END:GENERATED -->
 ## Liens
 
 - [Index des chapitres](./index.md)
-- [VS-04 — Pilotage et performance](../01_flux-de-valeur.md#vs-04--piloter-coordonner-et-améliorer-la-performance-du-système-de-santé)
-- [Couche 5 — Projections analytiques et modèles](../04_cartographie-cible.md)
+- [Exigences contextuelles — Partie III](../02_exigences-contextuelles.md)

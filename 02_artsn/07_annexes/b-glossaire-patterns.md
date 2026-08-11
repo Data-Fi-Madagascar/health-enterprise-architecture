@@ -29,43 +29,43 @@ Définitions des patterns techniques mobilisés par les chapitres de l'ARTSN.
 
 ## Event sourcing (historisation événementielle)
 
-Pattern dans lequel l'état d'un système n'est jamais stocké directement : seule la **séquence complète des événements** qui l'ont produit est conservée, l'état étant une projection reconstructible de cette séquence. Mobilisé par [ART-3](../03_chapitres/art-3-historisation-evenementielle.md) et [F.1](../00_fondations.md#f1--résilience-face-à-la-réalité-géographique-du-pays).
+Pattern dans lequel l'état d'un système n'est jamais stocké directement : seule la **séquence complète des événements** qui l'ont produit est conservée, l'état étant une projection reconstructible de cette séquence. Mobilisé par [ART-3](../../referentiel/chapitres/art-3.md) et [F.1](../../referentiel/fondations/f-1.md).
 
 ## CQRS (Command Query Responsibility Segregation)
 
-Séparation du modèle utilisé pour écrire des données (commandes) et du modèle utilisé pour les lire (requêtes), permettant à chacun d'être optimisé et mis à l'échelle indépendamment. Mobilisé par [ART-6](../03_chapitres/art-6-analytique-restitution.md).
+Séparation du modèle utilisé pour écrire des données (commandes) et du modèle utilisé pour les lire (requêtes), permettant à chacun d'être optimisé et mis à l'échelle indépendamment. Mobilisé par [ART-6](../../referentiel/chapitres/art-6.md).
 
 ## Idempotence
 
-Propriété garantissant qu'une même opération, répétée plusieurs fois, produit exactement le même effet qu'une seule exécution — condition nécessaire pour absorber sans risque une livraison « au moins une fois ». Mobilisée par [ART-1](../03_chapitres/art-1-integration-ingestion.md).
+Propriété garantissant qu'une même opération, répétée plusieurs fois, produit exactement le même effet qu'une seule exécution — condition nécessaire pour absorber sans risque une livraison « au moins une fois ». Mobilisée par [ART-1](../../referentiel/chapitres/art-1.md).
 
 ## Pattern médiateur
 
-Composant qui absorbe l'hétérogénéité des systèmes sources et expose une interface canonique unique en aval, sans que les sources aient à se connaître entre elles ; popularisé par l'architecture OpenHIE (*Health Information Mediator*). Mobilisé par [ART-2](../03_chapitres/art-2-mediation-normalisation.md).
+Composant qui absorbe l'hétérogénéité des systèmes sources et expose une interface canonique unique en aval, sans que les sources aient à se connaître entre elles ; popularisé par l'architecture OpenHIE (*Health Information Mediator*). Mobilisé par [ART-2](../../referentiel/chapitres/art-2.md).
 
 ## Saga / process manager
 
-Pattern d'orchestration d'un processus métier borné traversant plusieurs agrégats, sans les fusionner en un seul. Mobilisé par [ART-8a](../03_chapitres/art-8a-orchestration-processus-borne.md).
+Pattern d'orchestration d'un processus métier borné traversant plusieurs agrégats, sans les fusionner en un seul. Mobilisé par [ART-8a](../../referentiel/chapitres/art-8a.md).
 
 ## Chorégraphie
 
-Style de coordination où chaque partie réagit de façon autonome à des événements partagés, sans composant central ayant autorité sur l'ensemble du processus. Mobilisé par [ART-8d](../03_chapitres/art-8d-choregraphie-interinstitutionnelle.md).
+Style de coordination où chaque partie réagit de façon autonome à des événements partagés, sans composant central ayant autorité sur l'ensemble du processus. Mobilisé par [ART-8d](../../referentiel/chapitres/art-8d.md).
 
 ## SCD (Slowly Changing Dimension) type 2
 
-Technique de modélisation de données consistant à conserver l'historique complet des versions successives d'une métadonnée, chacune associée à sa période de validité. Mobilisée par [ART-4](../03_chapitres/art-4-referentiels-metadonnees.md) et [ART-4c](../03_chapitres/art-4c-eligibilite-couverture.md).
+Technique de modélisation de données consistant à conserver l'historique complet des versions successives d'une métadonnée, chacune associée à sa période de validité. Mobilisée par [ART-4](../../referentiel/chapitres/art-4.md) et [ART-4c](../../referentiel/chapitres/art-4c.md).
 
 ## Golden record
 
-Enregistrement pivot résultant d'un rapprochement probabiliste entre plusieurs représentations potentiellement divergentes d'une même entité (typiquement une identité individuelle). Mobilisé par [ART-4a](../03_chapitres/art-4a-resolution-identite.md).
+Enregistrement pivot résultant d'un rapprochement probabiliste entre plusieurs représentations potentiellement divergentes d'une même entité (typiquement une identité individuelle). Mobilisé par [ART-4a](../../referentiel/chapitres/art-4a.md).
 
 ## Netting
 
-Technique de compensation globale consistant à regrouper des micro-agrégats individuels en un seul agrégat consolidé de niveau supérieur. Mobilisée par [ART-8c](../03_chapitres/art-8c-agregation-par-lot.md).
+Technique de compensation globale consistant à regrouper des micro-agrégats individuels en un seul agrégat consolidé de niveau supérieur. Mobilisée par [ART-8c](../../referentiel/chapitres/art-8c.md).
 
 ## Publication / Abonnement (Pub/Sub)
 
-Modèle de messagerie décentralisée où les consommateurs s'abonnent de manière autonome à des files d'événements publics, sans autorité centrale. Mobilisé par [ART-8d](../03_chapitres/art-8d-choregraphie-interinstitutionnelle.md).
+Modèle de messagerie décentralisée où les consommateurs s'abonnent de manière autonome à des files d'événements publics, sans autorité centrale. Mobilisé par [ART-8d](../../referentiel/chapitres/art-8d.md).
 
 ## Liens
 

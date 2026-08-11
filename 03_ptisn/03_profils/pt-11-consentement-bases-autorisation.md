@@ -11,6 +11,8 @@ tags: ["ptisn", "niveau-4", "profils", "pt-11"]
 
 # PT-11 — Profil technique national
 
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
 
 ## 1. Capacité CNISN
 
@@ -65,3 +67,7 @@ Selon le contexte, un traitement peut reposer sur :
 - articulation avec les mandats de santé publique.
 
 ------------------------------------------------------------------------
+
+*Rattachement : [CAP-INT-09](../../referentiel/capacites/cap-int-09.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-4B](../../referentiel/chapitres/art-4b.md), [ART-7](../../referentiel/chapitres/art-7.md), [ART-11](../../referentiel/chapitres/art-11.md) · [fiche](../../referentiel/profils/pt-11.md)*
+
+<!-- END:GENERATED -->

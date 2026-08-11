@@ -6,8 +6,9 @@ title: CAP-INT-10 — Provenance, audit et traçabilité
 status: active
 owner: DEPSI
 version: "0.5"
+family: confiance
 source: 01_cnisn/02_capacites.md
-maps_to: ["p-int-07", "p-int-17", "p-int-18", "p-int-23"]
+maps_to: ["p-int-07", "p-int-17", "p-int-18", "p-int-23", "cap-13", "cap-15"]
 implements: []
 applies_to: []
 related: []

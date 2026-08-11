@@ -17,7 +17,7 @@ tags: ['caesn', 'niveau-1', 'capabilite', 'cap-03']
 
 ## Rôle dans le système
 
-Mesurer, améliorer et sécuriser les services, en reliant les données de qualité aux mécanismes d'amélioration continue.
+La capabilité mesure, améliore et sécurise la qualité des services de santé. Elle relie les données de qualité (résultats, incidents, retours patients) aux mécanismes d’amélioration continue, pour que la performance se traduise en actions correctives et pas seulement en rapports. Elle alimente à la fois la qualité des soins et le pilotage du système de santé.
 
 ## Flux de valeur
 

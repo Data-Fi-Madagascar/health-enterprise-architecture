@@ -11,6 +11,8 @@ tags: ["ptisn", "niveau-4", "profils", "pt-05"]
 
 # PT-05 — Profil technique national
 
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
 
 ## 1. Capacité CNISN
 
@@ -19,7 +21,7 @@ Déclinaison de **CAP-INT-02**, complétée par les capacités relatives à la g
 ## 2. Chapitres ART applicables
 
 - ART-4 ;
-- ART-4a — Résolution d'identité ;
+- ART-4a — Résolution d’identité ;
 - ART-7.
 
 ## 3. Service national
@@ -76,3 +78,7 @@ Le registre professionnel ne constitue pas le fournisseur d’authentification.
 Un utilisateur authentifié ne doit pas être considéré comme professionnel habilité sans vérification de son statut dans le registre approprié.
 
 ------------------------------------------------------------------------
+
+*Rattachement : [CAP-INT-02](../../referentiel/capacites/cap-int-02.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-4A](../../referentiel/chapitres/art-4a.md), [ART-7](../../referentiel/chapitres/art-7.md) · [fiche](../../referentiel/profils/pt-05.md)*
+
+<!-- END:GENERATED -->

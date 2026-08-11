@@ -17,7 +17,7 @@ tags: ['caesn', 'niveau-1', 'capabilite', 'cap-06']
 
 ## Rôle dans le système
 
-Prévenir les maladies, promouvoir les comportements favorables et assurer le suivi des interventions préventives, dont la vaccination.
+La capabilité prévient les maladies et promeut les comportements favorables à la santé : prévention, promotion, campagnes et suivi des interventions préventives, dont la vaccination. Elle agit en amont du soin curatif pour réduire la morbidité et éviter les dépenses évitables, et sa planification est un des leviers de l’amélioration de la santé de la population.
 
 ## Flux de valeur
 

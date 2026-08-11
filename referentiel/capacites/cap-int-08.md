@@ -6,8 +6,9 @@ title: CAP-INT-08 — Confiance, sécurité et autorisation
 status: active
 owner: DEPSI
 version: "0.5"
+family: confiance
 source: 01_cnisn/02_capacites.md
-maps_to: ["p-int-14", "p-int-15", "p-int-16", "p-int-17", "p-int-18", "p-int-19", "p-int-20"]
+maps_to: ["p-int-14", "p-int-15", "p-int-16", "p-int-17", "p-int-18", "p-int-19", "p-int-20", "cap-15"]
 implements: []
 applies_to: []
 related: []

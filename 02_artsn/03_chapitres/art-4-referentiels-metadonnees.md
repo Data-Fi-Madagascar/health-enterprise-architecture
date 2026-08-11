@@ -1,12 +1,12 @@
 ---
-title: ART-4 — Référentiels de métadonnées de gestion
-id: art-4-referentiels-metadonnees
+title: "ART-4 — Référentiels de métadonnées de gestion"
+id: art-4
 domain: 02_artsn
 version: "0.0.1"
 status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
-tags: [artsn, chapitres, art-4, referentiels, niveau-3]
+tags: [artsn, chapitres, art-4, niveau-3]
 ---
 
 # ART-4 — Référentiels de métadonnées de gestion
@@ -17,7 +17,7 @@ tags: [artsn, chapitres, art-4, referentiels, niveau-3]
 
 | Profil | Lecture |
 |--------|---------|
-| Décideurs institutionnels | ○ |
+| Décideurs institutionnels | ◐ |
 | Directions métier / programmes | ◐ |
 | DEPSI / équipes techniques | ● |
 | SIS / données / suivi-évaluation | ● |
@@ -25,22 +25,31 @@ tags: [artsn, chapitres, art-4, referentiels, niveau-3]
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
+
+ART-4 — Référentiels de métadonnées de gestion constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : [`art-4`](../../referentiel/chapitres/art-4.md).
+
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+
 **Contenu normatif.** La maintenance et le stockage des structures de gestion (établissements, programmes sanitaires, indicateurs) doivent obligatoirement utiliser une **modélisation temporelle**. Tout changement ou divergence de hiérarchie organisationnelle doit être historisé et versionné, selon le pattern cible *Slowly Changing Dimension* (SCD) **type 2**.
 
-**Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (évolutions administratives, réorganisations territoriales) : elle seule permet de garantir qu'une analyse ou un rapport statistique passé pointe vers l'arborescence exacte en vigueur au moment précis de l'événement sans rompre le pipeline.
+**Discipline existentielle.** Dès lors qu’une source échappe à la gouvernance directe de l’initiative (évolutions administratives, réorganisations territoriales) : elle seule permet de garantir qu’une analyse ou un rapport statistique passé pointe vers l’arborescence exacte en vigueur au moment précis de l’événement sans rompre le pipeline.
 
-- **Rattachement** : [CAP-14](../../00_caesn/03_capabilities/index.md) (interopérabilité et infrastructure partagée).
+- **Rattachement** : [CAP-14](../../referentiel/capabilites/cap-14.md) (interopérabilité et infrastructure partagée).
 - **Pattern cible** : SCD type 2.
-- **Déduit selon** : [ENF-4](../02_exigences-contextuelles.md#enf-4--cloisonnement-inter-institutionnel-et-étanchéité-des-données-one-health) (cloisonnement inter-institutionnel).
+- **Déduit selon** : [ENF-4](../../referentiel/exigences/enf-4.md) (cloisonnement inter-institutionnel).
 - **Statut : Stable.**
 
 Ce chapitre se décline en quatre sous-chapitres :
-- [ART-4a — Résolution d'identité](./art-4a-resolution-identite.md)
-- [ART-4b — Bases d'autorisation](./art-4b-bases-autorisation.md)
-- [ART-4c — Éligibilité et couverture](./art-4c-eligibilite-couverture.md)
-- [ART-4d — Référentiel géospatial et d'exploitation partagé](./art-4d-referentiel-geospatial.md)
+- [ART-4a — Résolution d’identité](../../referentiel/chapitres/art-4a.md)
+- [ART-4b — Bases d’autorisation](../../referentiel/chapitres/art-4b.md)
+- [ART-4c — Éligibilité et couverture](../../referentiel/chapitres/art-4c.md)
+- [ART-4d — Référentiel géospatial et d’exploitation partagé](../../referentiel/chapitres/art-4d.md)
 
+*Rattachement : [ENF-4](../../referentiel/exigences/enf-4.md), [CAP-14](../../referentiel/capabilites/cap-14.md) · [fiche](../../referentiel/chapitres/art-4.md)*
+
+<!-- END:GENERATED -->
 ## Liens
 
 - [Index des chapitres](./index.md)
-- [Couche 4 — Interopérabilité et services partagés](../04_cartographie-cible.md)
+- [Exigences contextuelles — Partie III](../02_exigences-contextuelles.md)

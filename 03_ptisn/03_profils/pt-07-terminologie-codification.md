@@ -11,6 +11,8 @@ tags: ["ptisn", "niveau-4", "profils", "pt-07"]
 
 # PT-07 — Profil technique national
 
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
 
 ## 1. Capacité CNISN
 
@@ -87,3 +89,7 @@ L’adoption d’une terminologie internationale doit être précédée d’une 
 - de la compatibilité avec les systèmes existants.
 
 ------------------------------------------------------------------------
+
+*Rattachement : [CAP-INT-05](../../referentiel/capacites/cap-int-05.md), [ART-2](../../referentiel/chapitres/art-2.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-5](../../referentiel/chapitres/art-5.md) · [fiche](../../referentiel/profils/pt-07.md)*
+
+<!-- END:GENERATED -->

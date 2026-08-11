@@ -13,11 +13,11 @@ applies_to: ["vs-03", "vs-04"]
 related: []
 tags: ['caesn', 'niveau-1', 'capabilite', 'cap-16']
 ---
-# CAP-16 — Gestion du portefeuille d'initiatives numériques
+# CAP-16 — Gestion du portefeuille d’initiatives numériques
 
 ## Rôle dans le système
 
-Prioriser, coordonner, rationaliser, suivre et évaluer les investissements selon leur contribution aux flux de valeur.
+La capabilité gouverne les investissements numériques du secteur : priorisation, coordination, rationalisation, suivi et évaluation selon leur contribution aux flux de valeur. Elle garantit que chaque financement sert une finalité de santé publique mesurable et que le portefeuille national évolue sans s’accumuler.
 
 ## Flux de valeur
 
