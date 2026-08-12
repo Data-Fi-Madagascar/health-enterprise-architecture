@@ -270,6 +270,76 @@ Proportion de formations sanitaires ayant réalisé une revue qualité dans le m
 *Rattachement : [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/etapes-valeur/ev-07.md)*
 
 <!-- END:GENERATED -->
+## Processus métier
+
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-01.md,referentiel/processus/prc-02.md,referentiel/processus/prc-03.md -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+
+### PRC-01 — Accès, orientation et admission du patient
+
+#### Objectif
+
+Assurer l'entrée du patient dans le système de soins : reconnaissance du besoin, orientation vers le niveau de soins approprié, accueil et enregistrement.
+
+#### Étapes couvertes
+
+- [EV-01 — Reconnaissance du besoin et orientation](../../referentiel/etapes-valeur/ev-01.md)
+- [EV-02 — Accueil et enregistrement](../../referentiel/etapes-valeur/ev-02.md)
+
+#### Acteurs
+
+Patient, famille, agent de santé communautaire, personnel d'accueil, registre patient
+
+#### Indicateurs
+
+Taux de recours aux soins, délai moyen d'accès à une formation sanitaire, taux de dossiers ouverts, délai d'enregistrement
+
+*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-02](../../referentiel/capabilites/cap-02.md), [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-04](../../referentiel/capabilites/cap-04.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [PP-01](../../referentiel/parties-prenantes/pp-01.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-04](../../referentiel/parties-prenantes/pp-04.md), [PP-05](../../referentiel/parties-prenantes/pp-05.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md) · [fiche](../../referentiel/processus/prc-01.md)*
+
+### PRC-02 — Prestation des soins cliniques
+
+#### Objectif
+
+Assurer le cœur clinique du parcours : consultation et diagnostic, traitement et prise en charge, référence et contre-référence vers le niveau de soins supérieur.
+
+#### Étapes couvertes
+
+- [EV-03 — Consultation et diagnostic](../../referentiel/etapes-valeur/ev-03.md)
+- [EV-04 — Traitement et prise en charge](../../referentiel/etapes-valeur/ev-04.md)
+- [EV-05 — Référence et contre-référence](../../referentiel/etapes-valeur/ev-05.md)
+
+#### Acteurs
+
+Clinicien, dossier patient, pharmacie, laboratoire, formation sanitaire référente, formation cible, système de transport
+
+#### Indicateurs
+
+Taux de consultations avec diagnostic documenté, taux de disponibilité des médicaments traceurs, taux de référence complétée avec retour d'information
+
+*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-02](../../referentiel/capabilites/cap-02.md), [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-04](../../referentiel/capabilites/cap-04.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [PP-01](../../referentiel/parties-prenantes/pp-01.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-04](../../referentiel/parties-prenantes/pp-04.md), [PP-05](../../referentiel/parties-prenantes/pp-05.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md) · [fiche](../../referentiel/processus/prc-02.md)*
+
+### PRC-03 — Continuité, suivi et qualité des soins
+
+#### Objectif
+
+Garantir la continuité des soins après l'épisode et l'amélioration continue de la qualité des services : suivi du patient, observance thérapeutique et revues qualité.
+
+#### Étapes couvertes
+
+- [EV-06 — Suivi et continuité des soins](../../referentiel/etapes-valeur/ev-06.md)
+- [EV-07 — Amélioration de la qualité](../../referentiel/etapes-valeur/ev-07.md)
+
+#### Acteurs
+
+Agent de santé communautaire, clinicien, patient, gestionnaire de formation sanitaire, district, comité qualité
+
+#### Indicateurs
+
+Taux de patients perdus de vue, taux d'observance thérapeutique, proportion de formations sanitaires ayant réalisé une revue qualité dans le mois
+
+*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-02](../../referentiel/capabilites/cap-02.md), [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-04](../../referentiel/capabilites/cap-04.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [PP-01](../../referentiel/parties-prenantes/pp-01.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-04](../../referentiel/parties-prenantes/pp-04.md), [PP-05](../../referentiel/parties-prenantes/pp-05.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md) · [fiche](../../referentiel/processus/prc-03.md)*
+
+<!-- END:GENERATED -->
 ## Liens
 
 - [Flux de valeur](./index.md)

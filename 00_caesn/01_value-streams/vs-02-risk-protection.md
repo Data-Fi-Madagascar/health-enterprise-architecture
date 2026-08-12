@@ -269,6 +269,76 @@ Nombre de revues après action, proportion de recommandations mises en œuvre
 *Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/etapes-valeur/ev-14.md)*
 
 <!-- END:GENERATED -->
+## Processus métier
+
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-04.md,referentiel/processus/prc-05.md,referentiel/processus/prc-06.md -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+
+### PRC-04 — Veille, prévention et surveillance sanitaire
+
+#### Objectif
+
+Maintenir une veille sanitaire permanente : identification des risques et promotion de la santé, surveillance et détection des signaux sanitaires.
+
+#### Étapes couvertes
+
+- [EV-08 — Identification des risques et promotion de la santé](../../referentiel/etapes-valeur/ev-08.md)
+- [EV-09 — Surveillance et détection](../../referentiel/etapes-valeur/ev-09.md)
+
+#### Acteurs
+
+Direction de la Protection Sociale et de la Promotion de la Santé, programmes, agents communautaires, formations sanitaires, laboratoires
+
+#### Indicateurs
+
+Couverture des campagnes de prévention, taux de vaccination, complétude et promptitude des rapports, taux de signaux détectés
+
+*Rattachement : [CAP-04](../../referentiel/capabilites/cap-04.md), [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-06](../../referentiel/capabilites/cap-06.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-04](../../referentiel/parties-prenantes/pp-04.md), [PP-07](../../referentiel/parties-prenantes/pp-07.md), [PP-08](../../referentiel/parties-prenantes/pp-08.md) · [fiche](../../referentiel/processus/prc-04.md)*
+
+### PRC-05 — Alerte, investigation et riposte
+
+#### Objectif
+
+Déclencher et conduire la réponse à un signal sanitaire validé : notification, vérification et investigation, et déploiement de la riposte.
+
+#### Étapes couvertes
+
+- [EV-10 — Notification et alerte](../../referentiel/etapes-valeur/ev-10.md)
+- [EV-11 — Vérification et investigation](../../referentiel/etapes-valeur/ev-11.md)
+- [EV-12 — Riposte](../../referentiel/etapes-valeur/ev-12.md)
+
+#### Acteurs
+
+District sanitaire, région, direction centrale, OMS, équipe d'investigation, laboratoire national de référence, partenaires internationaux
+
+#### Indicateurs
+
+Délai moyen de notification d'une alerte, délai d'investigation, proportion d'alertes vérifiées dans les délais, délai de déploiement de la riposte, taux de contrôle de l'épidémie
+
+*Rattachement : [CAP-04](../../referentiel/capabilites/cap-04.md), [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-06](../../referentiel/capabilites/cap-06.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-04](../../referentiel/parties-prenantes/pp-04.md), [PP-07](../../referentiel/parties-prenantes/pp-07.md), [PP-08](../../referentiel/parties-prenantes/pp-08.md) · [fiche](../../referentiel/processus/prc-05.md)*
+
+### PRC-06 — Clôture et capitalisation des épisodes
+
+#### Objectif
+
+Clore l'épisode épidémique ou d'urgence et en capitaliser les leçons pour renforcer la préparation : suivi de situation, bilan documenté et revues après action.
+
+#### Étapes couvertes
+
+- [EV-13 — Suivi de situation et clôture](../../referentiel/etapes-valeur/ev-13.md)
+- [EV-14 — Capitalisation et amélioration](../../referentiel/etapes-valeur/ev-14.md)
+
+#### Acteurs
+
+Comité de gestion de crise, direction centrale, comité technique national
+
+#### Indicateurs
+
+Taux de létalité, durée de l'épisode épidémique, nombre de revues après action, proportion de recommandations mises en œuvre
+
+*Rattachement : [CAP-04](../../referentiel/capabilites/cap-04.md), [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-06](../../referentiel/capabilites/cap-06.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-04](../../referentiel/parties-prenantes/pp-04.md), [PP-07](../../referentiel/parties-prenantes/pp-07.md), [PP-08](../../referentiel/parties-prenantes/pp-08.md) · [fiche](../../referentiel/processus/prc-06.md)*
+
+<!-- END:GENERATED -->
 ## Liens
 
 - [Flux de valeur](./index.md)

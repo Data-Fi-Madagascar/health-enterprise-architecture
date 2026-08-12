@@ -37,6 +37,10 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 
 **Chaîne de valeur d'une initiative** — Représentation explicite du lien causal entre l'*output* technique d'une initiative, le résultat intermédiaire qu'elle génère dans le fonctionnement du système, et la valeur finale pour le bénéficiaire. Appelée *Benefit Dependency Network* dans la terminologie internationale de l'architecture d'entreprise.
 
+**Étape de valeur** — Maillon séquentiel du cycle décrit par un flux de valeur du CAESN. Chaque flux (VS-01…04) en compte sept, documentées par leurs entrées, sorties, acteurs, ruptures fréquentes et indicateurs. Une étape décrit une transition du flux ; elle n'est pas un processus métier.
+
+**Processus métier** — Régroupement cohérent d'étapes de valeur d'un même flux, constituant une chaîne d'activités porteuse de finalité (ex. PRC-01 « Accès, orientation et admission du patient » regroupe les étapes EV-01 et EV-02 du flux VS-01). Les 12 processus métier (PRC-01…12) sont dérivés des 28 étapes et constituent la couche de rattachement des composants applicatifs.
+
 **Comité National d'Architecture Santé Numérique** — Instance collégiale qui garantit la cohérence architecturale du système d'information sanitaire, homologue les solutions, arbitre les standards, statue sur les dérogations et suit la rationalisation du paysage applicatif. Présidée par le Secrétaire Général du Ministère ou son représentant.
 
 **Coût total de possession** — Coût complet d'un système ou d'une initiative sur l'ensemble de sa durée de vie : investissement initial, déploiement, exploitation, maintenance, formation des utilisateurs et support technique. En anglais : *Total Cost of Ownership* (TCO).

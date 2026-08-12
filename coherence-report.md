@@ -311,3 +311,19 @@ L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspon
 - `make check` : **54 enveloppes à jour**, **0 lien relatif cassé sur 2819** vérifiés.
 - `/tmp/validate_ref.rb` : **202 fichiers, 201 objets uniques**, 2 erreurs attendues (`_schema.md`), **0 lien cassé, 0 relation non résolue**.
 - `/tmp/trace_check.py` : **197/201 objets tracés depuis les VS** — toutes les nouvelles familles couvertes (28/28 PRC, 13/13 CMP, 10/10 PP) ; seuls les 4 stubs candidats préexistants restent non tracés (art-10, art-11, f-5, f-6).
+
+## 12. Migration étapes de valeur / processus métier (2026-08-12) ✓
+
+**Constat :** les 28 objets créés en §11 sous le type `processus-metier` reproduisaient 1:1 les étapes des tables CAESN : le type était utilisé à contresens (une étape n'est pas un processus) et les 13 composants pointaient vers des maillons isolés.
+
+**Correctif appliqué (✓) — reclassement + couche de régroupement :**
+- **28 étapes de valeur** (`referentiel/etapes-valeur/ev-01…28.md`) — reclassement formel des ex-`prc-01…28` (id/type/title/tags, corps inchangé) ; `source:` = enveloppe VS-XX, `applies_to` granulaire conservé, `related` = flux.
+- **12 processus métier** (`referentiel/processus/prc-01…12.md`) — 3 par flux de valeur (VS-01…04), contenus **strictement dérivés** des étapes (Objectif de synthèse, Étapes couvertes, Acteurs et Indicateurs = unions) ; `applies_to` = héritage intégral de la VS, `related` = étapes couvertes + flux.
+- **13 composants** réaffectés au niveau processus (`applies_to` : étapes → processus couvrants, transformation mécanique depuis le découpage) — un composant soutient désormais des processus complets.
+- **Enveloppes** VS-01…04 : deux blocs catalogue distincts « Étapes de valeur » et « Processus métier ».
+- Traçabilité CAESN↔CNISN **intacte** ; aucun changement de `build_wrappers.py` ni de `manifest.json`.
+
+**Vérifications (✓) :**
+- `make check` : 54 enveloppes à jour, 0 lien relatif cassé.
+- `validate_ref.rb` : 213 fichiers, 212 objets uniques, 2 erreurs méta connues (`_schema.md`), 0 lien cassé, 0 relation non résolue.
+- `trace_check.py` : 213/213 objets tracés (les 12 processus via `related` → ev → vs → capabilités).

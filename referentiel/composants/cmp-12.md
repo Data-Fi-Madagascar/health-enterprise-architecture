@@ -9,7 +9,7 @@ version: "0.0.1"
 source: 00_caesn/05_application/shared-services.md
 maps_to: ["cap-int-02", "cap-int-04", "cap-int-05"]
 implements: ["art-4", "art-4d"]
-applies_to: ["ev-02", "ev-15", "ev-23"]
+applies_to: ["prc-01", "prc-07", "prc-10"]
 related: ["enf-1", "enf-3", "cap-13", "cap-14", "cap-15", "vs-01", "vs-02", "vs-03", "vs-04"]
 tags: ["caesn", "niveau-1", "composant-applicatif", "cmp-12"]
 ---
@@ -31,9 +31,9 @@ FOSA, géographie, produits de santé, indicateurs, agents, bénéficiaires, ter
 - [CAP-13 — Système d'information sanitaire, données et recherche](../capabilites/cap-13.md)
 - [CAP-14 — Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../capabilites/cap-14.md)
 - [CAP-15 — Cybersécurité, confidentialité et gouvernance des données personnelles](../capabilites/cap-15.md)
-- [EV-02](../etapes-valeur/ev-02.md)
-- [EV-15](../etapes-valeur/ev-15.md)
-- [EV-23](../etapes-valeur/ev-23.md)
+- [PRC-01](../processus/prc-01.md)
+- [PRC-07](../processus/prc-07.md)
+- [PRC-10](../processus/prc-10.md)
 - [CAP-INT-02 — Registre et résolution des professionnels de santé](../capacites/cap-int-02.md)
 - [CAP-INT-04 — Référentiel des structures et services de santé](../capacites/cap-int-04.md)
 - [CAP-INT-05 — Terminologie et codification communes](../capacites/cap-int-05.md)

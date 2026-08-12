@@ -267,6 +267,76 @@ Proportion de contrôles réalisés, montant des anomalies détectées
 *Rattachement : [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-16](../../referentiel/capabilites/cap-16.md) · [fiche](../../referentiel/etapes-valeur/ev-21.md)*
 
 <!-- END:GENERATED -->
+## Processus métier
+
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-07.md,referentiel/processus/prc-08.md,referentiel/processus/prc-09.md -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+
+### PRC-07 — Identification et droits des bénéficiaires
+
+#### Objectif
+
+Constituer la base de la couverture santé universelle : identification et enregistrement des bénéficiaires, définition et communication de leurs droits et du panier de soins.
+
+#### Étapes couvertes
+
+- [EV-15 — Identification et enregistrement des bénéficiaires](../../referentiel/etapes-valeur/ev-15.md)
+- [EV-16 — Définition des droits et du panier de soins](../../referentiel/etapes-valeur/ev-16.md)
+
+#### Acteurs
+
+Districts sanitaires, communes, fokontany, gestionnaires du registre, Ministère de la Santé, formations sanitaires, gestionnaires de la couverture santé
+
+#### Indicateurs
+
+Taux de couverture du registre, taux d'exclusion estimé, proportion de formations sanitaires informées des droits
+
+*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [CAP-16](../../referentiel/capabilites/cap-16.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md) · [fiche](../../referentiel/processus/prc-07.md)*
+
+### PRC-08 — Financement et exemption au point de service
+
+#### Objectif
+
+Garantir la disponibilité des fonds et l'accès effectif aux soins sans paiement direct : mobilisation des financements et application de l'exemption au point de service.
+
+#### Étapes couvertes
+
+- [EV-17 — Mobilisation des financements](../../referentiel/etapes-valeur/ev-17.md)
+- [EV-18 — Prise en charge et exemption au point de service](../../referentiel/etapes-valeur/ev-18.md)
+
+#### Acteurs
+
+Ministère de l'Économie et des Finances, Ministère de la Santé, partenaires, agent de santé, gestionnaire de la formation sanitaire
+
+#### Indicateurs
+
+Taux d'exécution budgétaire, part du budget santé allouée à la protection financière, taux d'exemption appliqué, taux de refus de soins signalés
+
+*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [CAP-16](../../referentiel/capabilites/cap-16.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md) · [fiche](../../referentiel/processus/prc-08.md)*
+
+### PRC-09 — Remboursement et régulation des mécanismes
+
+#### Objectif
+
+Boucler le cycle financier de la protection : facturation et traitement des demandes, remboursement des formations sanitaires, et contrôle, audit et ajustement des mécanismes pour préserver l'équité.
+
+#### Étapes couvertes
+
+- [EV-19 — Facturation et traitement des demandes de remboursement](../../referentiel/etapes-valeur/ev-19.md)
+- [EV-20 — Remboursement](../../referentiel/etapes-valeur/ev-20.md)
+- [EV-21 — Contrôle, audit et ajustement des mécanismes](../../referentiel/etapes-valeur/ev-21.md)
+
+#### Acteurs
+
+Gestionnaire de la formation sanitaire, vérificateur, fonds de remboursement, fonds de couverture santé, Ministère de l'Économie et des Finances, inspection sanitaire, structures d'audit, comité technique national
+
+#### Indicateurs
+
+Taux de factures rejetées, délai de validation des factures, délai moyen de remboursement, taux de remboursement effectif, proportion de contrôles réalisés, montant des anomalies détectées
+
+*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [CAP-16](../../referentiel/capabilites/cap-16.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md) · [fiche](../../referentiel/processus/prc-09.md)*
+
+<!-- END:GENERATED -->
 ## Liens
 
 - [Flux de valeur](./index.md)

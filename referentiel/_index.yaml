@@ -363,145 +363,207 @@
   status: draft
 
 # étapes de valeur (28)
-- id: prc-01
+- id: ev-01
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-01.md
   status: draft
-- id: prc-02
+- id: ev-02
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-02.md
   status: draft
-- id: prc-03
+- id: ev-03
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-03.md
   status: draft
-- id: prc-04
+- id: ev-04
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-04.md
   status: draft
-- id: prc-05
+- id: ev-05
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-05.md
   status: draft
-- id: prc-06
+- id: ev-06
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-06.md
   status: draft
-- id: prc-07
+- id: ev-07
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-07.md
   status: draft
-- id: prc-08
+- id: ev-08
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-08.md
   status: draft
-- id: prc-09
+- id: ev-09
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-09.md
   status: draft
-- id: prc-10
+- id: ev-10
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-10.md
   status: draft
-- id: prc-11
+- id: ev-11
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-11.md
   status: draft
-- id: prc-12
+- id: ev-12
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-12.md
   status: draft
-- id: prc-13
+- id: ev-13
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-13.md
   status: draft
-- id: prc-14
+- id: ev-14
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-14.md
   status: draft
-- id: prc-15
+- id: ev-15
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-15.md
   status: draft
-- id: prc-16
+- id: ev-16
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-16.md
   status: draft
-- id: prc-17
+- id: ev-17
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-17.md
   status: draft
-- id: prc-18
+- id: ev-18
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-18.md
   status: draft
-- id: prc-19
+- id: ev-19
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-19.md
   status: draft
-- id: prc-20
+- id: ev-20
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-20.md
   status: draft
-- id: prc-21
+- id: ev-21
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-21.md
   status: draft
-- id: prc-22
+- id: ev-22
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-22.md
   status: draft
-- id: prc-23
+- id: ev-23
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-23.md
   status: draft
-- id: prc-24
+- id: ev-24
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-24.md
   status: draft
-- id: prc-25
+- id: ev-25
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-25.md
   status: draft
-- id: prc-26
+- id: ev-26
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-26.md
   status: draft
-- id: prc-27
+- id: ev-27
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-27.md
   status: draft
-- id: prc-28
+- id: ev-28
   type: etape-valeur
   niveau: "1"
   chemin: etapes-valeur/ev-28.md
+  status: draft
+
+# processus métier (12)
+- id: prc-01
+  type: processus-metier
+  niveau: "1"
+  chemin: processus/prc-01.md
+  status: draft
+- id: prc-02
+  type: processus-metier
+  niveau: "1"
+  chemin: processus/prc-02.md
+  status: draft
+- id: prc-03
+  type: processus-metier
+  niveau: "1"
+  chemin: processus/prc-03.md
+  status: draft
+- id: prc-04
+  type: processus-metier
+  niveau: "1"
+  chemin: processus/prc-04.md
+  status: draft
+- id: prc-05
+  type: processus-metier
+  niveau: "1"
+  chemin: processus/prc-05.md
+  status: draft
+- id: prc-06
+  type: processus-metier
+  niveau: "1"
+  chemin: processus/prc-06.md
+  status: draft
+- id: prc-07
+  type: processus-metier
+  niveau: "1"
+  chemin: processus/prc-07.md
+  status: draft
+- id: prc-08
+  type: processus-metier
+  niveau: "1"
+  chemin: processus/prc-08.md
+  status: draft
+- id: prc-09
+  type: processus-metier
+  niveau: "1"
+  chemin: processus/prc-09.md
+  status: draft
+- id: prc-10
+  type: processus-metier
+  niveau: "1"
+  chemin: processus/prc-10.md
+  status: draft
+- id: prc-11
+  type: processus-metier
+  niveau: "1"
+  chemin: processus/prc-11.md
+  status: draft
+- id: prc-12
+  type: processus-metier
+  niveau: "1"
+  chemin: processus/prc-12.md
   status: draft
 
 # composants applicatifs (13)
