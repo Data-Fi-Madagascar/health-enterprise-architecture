@@ -325,5 +325,5 @@ L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspon
 
 **Vérifications (✓) :**
 - `make check` : 54 enveloppes à jour, 0 lien relatif cassé.
-- `validate_ref.rb` : 213 fichiers, 212 objets uniques, 2 erreurs méta connues (`_schema.md`), 0 lien cassé, 0 relation non résolue.
-- `trace_check.py` : 213/213 objets tracés (les 12 processus via `related` → ev → vs → capabilités).
+- `validate_ref.rb` : 214 fichiers, 214 objets uniques, 2 erreurs méta connues (`_schema.md`), 0 lien cassé, 0 relation non résolue.
+- `trace_check.py` : 209/213 objets tracés (les 12 processus via `related` → ev → vs → capabilités ; seuls les 4 stubs préexistants art-10, art-11, f-5, f-6 restent non tracés).
