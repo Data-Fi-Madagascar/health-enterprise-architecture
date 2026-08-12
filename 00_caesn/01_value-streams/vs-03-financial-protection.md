@@ -65,12 +65,12 @@ Ce flux couvre l’ensemble du cycle de la couverture santé universelle, depuis
 *Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [CAP-16](../../referentiel/capabilites/cap-16.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md) · [fiche](../../referentiel/flux-valeur/vs-03.md)*
 
 <!-- END:GENERATED -->
-## Processus métier
+## Étapes de valeur
 
-<!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-15.md,referentiel/processus/prc-16.md,referentiel/processus/prc-17.md,referentiel/processus/prc-18.md,referentiel/processus/prc-19.md,referentiel/processus/prc-20.md,referentiel/processus/prc-21.md -->
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/etapes-valeur/ev-15.md,referentiel/etapes-valeur/ev-16.md,referentiel/etapes-valeur/ev-17.md,referentiel/etapes-valeur/ev-18.md,referentiel/etapes-valeur/ev-19.md,referentiel/etapes-valeur/ev-20.md,referentiel/etapes-valeur/ev-21.md -->
 <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
 
-### PRC-15 — Identification et enregistrement des bénéficiaires
+### EV-15 — Identification et enregistrement des bénéficiaires
 
 #### Objectif
 
@@ -96,9 +96,9 @@ Absence d'identifiant unique national, exclusions liées à la méconnaissance d
 
 Taux de couverture du registre, taux d'exclusion estimé
 
-*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md) · [fiche](../../referentiel/processus/prc-15.md)*
+*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md) · [fiche](../../referentiel/etapes-valeur/ev-15.md)*
 
-### PRC-16 — Définition des droits et du panier de soins
+### EV-16 — Définition des droits et du panier de soins
 
 #### Objectif
 
@@ -124,9 +124,9 @@ Méconnaissance des droits par les agents, panier de soins non communiqué
 
 Proportion de formations sanitaires informées des droits
 
-*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md) · [fiche](../../referentiel/processus/prc-16.md)*
+*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md) · [fiche](../../referentiel/etapes-valeur/ev-16.md)*
 
-### PRC-17 — Mobilisation des financements
+### EV-17 — Mobilisation des financements
 
 #### Objectif
 
@@ -152,9 +152,9 @@ Retards de décaissement, imprévisibilité chronique du financement
 
 Taux d'exécution budgétaire, part du budget santé allouée à la protection financière
 
-*Rattachement : [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-08](../../referentiel/capabilites/cap-08.md) · [fiche](../../referentiel/processus/prc-17.md)*
+*Rattachement : [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-08](../../referentiel/capabilites/cap-08.md) · [fiche](../../referentiel/etapes-valeur/ev-17.md)*
 
-### PRC-18 — Prise en charge et exemption au point de service
+### EV-18 — Prise en charge et exemption au point de service
 
 #### Objectif
 
@@ -180,9 +180,9 @@ Refus de soins, paiement informel, formation non approvisionnée en intrants
 
 Taux d'exemption appliqué, taux de refus de soins signalés
 
-*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-15](../../referentiel/capabilites/cap-15.md) · [fiche](../../referentiel/processus/prc-18.md)*
+*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-15](../../referentiel/capabilites/cap-15.md) · [fiche](../../referentiel/etapes-valeur/ev-18.md)*
 
-### PRC-19 — Facturation et traitement des demandes de remboursement
+### EV-19 — Facturation et traitement des demandes de remboursement
 
 #### Objectif
 
@@ -208,9 +208,9 @@ Facturation incorrecte, absence de justificatifs, risques de fraude
 
 Taux de factures rejetées, délai de validation des factures
 
-*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/processus/prc-19.md)*
+*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/etapes-valeur/ev-19.md)*
 
-### PRC-20 — Remboursement
+### EV-20 — Remboursement
 
 #### Objectif
 
@@ -236,9 +236,9 @@ Retards chroniques de remboursement, insuffisance de liquidités
 
 Délai moyen de remboursement, taux de remboursement effectif
 
-*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-12](../../referentiel/capabilites/cap-12.md) · [fiche](../../referentiel/processus/prc-20.md)*
+*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-12](../../referentiel/capabilites/cap-12.md) · [fiche](../../referentiel/etapes-valeur/ev-20.md)*
 
-### PRC-21 — Contrôle, audit et ajustement des mécanismes
+### EV-21 — Contrôle, audit et ajustement des mécanismes
 
 #### Objectif
 
@@ -264,7 +264,7 @@ Absence de contrôle structuré, données de remboursement non exploitées
 
 Proportion de contrôles réalisés, montant des anomalies détectées
 
-*Rattachement : [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-16](../../referentiel/capabilites/cap-16.md) · [fiche](../../referentiel/processus/prc-21.md)*
+*Rattachement : [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-16](../../referentiel/capabilites/cap-16.md) · [fiche](../../referentiel/etapes-valeur/ev-21.md)*
 
 <!-- END:GENERATED -->
 ## Liens

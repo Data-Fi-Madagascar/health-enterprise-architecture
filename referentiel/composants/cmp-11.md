@@ -9,7 +9,7 @@ version: "0.0.1"
 source: 00_caesn/05_application/application-domains.md
 maps_to: ["cap-int-06", "cap-int-12"]
 implements: ["art-8d"]
-applies_to: ["prc-22", "prc-24", "prc-28"]
+applies_to: ["ev-22", "ev-24", "ev-28"]
 related: ["enf-5", "cap-16", "cap-08", "cap-13", "vs-04"]
 tags: ["caesn", "niveau-1", "composant-applicatif", "cmp-11"]
 ---
@@ -28,9 +28,9 @@ Registre des initiatives, suivi des financements, alignement stratégique, matur
 - [CAP-16 — Gestion du portefeuille d'initiatives numériques](../capabilites/cap-16.md)
 - [CAP-08 — Gouvernance institutionnelle, planification, coordination et redevabilité](../capabilites/cap-08.md)
 - [CAP-13 — Système d'information sanitaire, données et recherche](../capabilites/cap-13.md)
-- [PRC-22](../processus/prc-22.md)
-- [PRC-24](../processus/prc-24.md)
-- [PRC-28](../processus/prc-28.md)
+- [EV-22](../etapes-valeur/ev-22.md)
+- [EV-24](../etapes-valeur/ev-24.md)
+- [EV-28](../etapes-valeur/ev-28.md)
 - [CAP-INT-06 — Catalogue des services et registre des contrats](../capacites/cap-int-06.md)
 - [CAP-INT-12 — Conformité et tests d'interopérabilité](../capacites/cap-int-12.md)
 - [ART-8D — Chorégraphie inter-institutionnelle](../chapitres/art-8d.md)

@@ -66,12 +66,12 @@ Ce flux transversal conditionne l’efficacité de tous les autres. Il couvre l�
 *Rattachement : [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [CAP-16](../../referentiel/capabilites/cap-16.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-07](../../referentiel/parties-prenantes/pp-07.md), [PP-08](../../referentiel/parties-prenantes/pp-08.md), [PP-09](../../referentiel/parties-prenantes/pp-09.md), [PP-10](../../referentiel/parties-prenantes/pp-10.md) · [fiche](../../referentiel/flux-valeur/vs-04.md)*
 
 <!-- END:GENERATED -->
-## Processus métier
+## Étapes de valeur
 
-<!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-22.md,referentiel/processus/prc-23.md,referentiel/processus/prc-24.md,referentiel/processus/prc-25.md,referentiel/processus/prc-26.md,referentiel/processus/prc-27.md,referentiel/processus/prc-28.md -->
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/etapes-valeur/ev-22.md,referentiel/etapes-valeur/ev-23.md,referentiel/etapes-valeur/ev-24.md,referentiel/etapes-valeur/ev-25.md,referentiel/etapes-valeur/ev-26.md,referentiel/etapes-valeur/ev-27.md,referentiel/etapes-valeur/ev-28.md -->
 <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
 
-### PRC-22 — Définition des priorités et planification
+### EV-22 — Définition des priorités et planification
 
 #### Objectif
 
@@ -97,9 +97,9 @@ Plans élaborés sans données probantes, non-alignés sur les stratégies
 
 Proportion de plans opérationnels alignés sur le PDSS et la SNSD
 
-*Rattachement : [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-16](../../referentiel/capabilites/cap-16.md) · [fiche](../../referentiel/processus/prc-22.md)*
+*Rattachement : [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-16](../../referentiel/capabilites/cap-16.md) · [fiche](../../referentiel/etapes-valeur/ev-22.md)*
 
-### PRC-23 — Budgétisation et allocation des ressources
+### EV-23 — Budgétisation et allocation des ressources
 
 #### Objectif
 
@@ -125,9 +125,9 @@ Sous-financement chronique, allocations non basées sur les besoins réels
 
 Taux d'exécution budgétaire, part du budget national allouée à la santé
 
-*Rattachement : [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-08](../../referentiel/capabilites/cap-08.md) · [fiche](../../referentiel/processus/prc-23.md)*
+*Rattachement : [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-08](../../referentiel/capabilites/cap-08.md) · [fiche](../../referentiel/etapes-valeur/ev-23.md)*
 
-### PRC-24 — Coordination des acteurs et alignement des partenaires
+### EV-24 — Coordination des acteurs et alignement des partenaires
 
 #### Objectif
 
@@ -153,9 +153,9 @@ Fragmentation des interventions, coordination insuffisante
 
 Proportion d'initiatives partenaires alignées sur le portefeuille national
 
-*Rattachement : [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-16](../../referentiel/capabilites/cap-16.md) · [fiche](../../referentiel/processus/prc-24.md)*
+*Rattachement : [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-16](../../referentiel/capabilites/cap-16.md) · [fiche](../../referentiel/etapes-valeur/ev-24.md)*
 
-### PRC-25 — Suivi de l'exécution
+### EV-25 — Suivi de l'exécution
 
 #### Objectif
 
@@ -181,9 +181,9 @@ Données incomplètes ou hors délais, tableaux de bord non utilisés
 
 Complétude et promptitude des rapports, taux d'utilisation des tableaux de bord
 
-*Rattachement : [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-08](../../referentiel/capabilites/cap-08.md) · [fiche](../../referentiel/processus/prc-25.md)*
+*Rattachement : [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-08](../../referentiel/capabilites/cap-08.md) · [fiche](../../referentiel/etapes-valeur/ev-25.md)*
 
-### PRC-26 — Analyse de la performance et prise de décision
+### EV-26 — Analyse de la performance et prise de décision
 
 #### Objectif
 
@@ -209,9 +209,9 @@ Décisions sans appui sur les données, revues irrégulières
 
 Nombre de revues de performance, proportion de décisions documentées
 
-*Rattachement : [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-08](../../referentiel/capabilites/cap-08.md) · [fiche](../../referentiel/processus/prc-26.md)*
+*Rattachement : [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-08](../../referentiel/capabilites/cap-08.md) · [fiche](../../referentiel/etapes-valeur/ev-26.md)*
 
-### PRC-27 — Redevabilité et communication publique
+### EV-27 — Redevabilité et communication publique
 
 #### Objectif
 
@@ -237,9 +237,9 @@ Absence de rapport public annuel, faible transparence
 
 Existence et publication de rapports annuels de performance
 
-*Rattachement : [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/processus/prc-27.md)*
+*Rattachement : [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/etapes-valeur/ev-27.md)*
 
-### PRC-28 — Amélioration continue
+### EV-28 — Amélioration continue
 
 #### Objectif
 
@@ -265,7 +265,7 @@ Recommandations non mises en œuvre, absence de cycle structuré
 
 Proportion de recommandations mises en œuvre, évolution de la maturité des capabilités
 
-*Rattachement : [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-16](../../referentiel/capabilites/cap-16.md), [CAP-08](../../referentiel/capabilites/cap-08.md) · [fiche](../../referentiel/processus/prc-28.md)*
+*Rattachement : [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-16](../../referentiel/capabilites/cap-16.md), [CAP-08](../../referentiel/capabilites/cap-08.md) · [fiche](../../referentiel/etapes-valeur/ev-28.md)*
 
 <!-- END:GENERATED -->
 ## Liens

@@ -26,7 +26,8 @@ Ce document définit le modèle d’objets du référentiel. Il est la source de
 | `flux-valeur` | `referentiel/flux-valeur/` | `vs-` | CAESN (VS-01…04) |
 | `capabilite` | `referentiel/capabilites/` | `cap-` | CAESN (CAP-01…16) |
 | `principe` | `referentiel/principes/` | `p-` (CNISN `p-int-`, CAESN `pa-`/`pd-`) | CAESN (PA, PD), CNISN (P-INT) |
-| `processus-metier` | `referentiel/processus/` | `prc-` | CAESN (PRC-01…28) |
+| `etape-valeur` | `referentiel/etapes-valeur/` | `ev-` | CAESN (EV-01…28) |
+| `processus-metier` | `referentiel/processus/` | `prc-` | CAESN (PRC-01…12) |
 | `composant-applicatif` | `referentiel/composants/` | `cmp-` | CAESN (CMP-01…13) |
 | `partie-prenante` | `referentiel/parties-prenantes/` | `pp-` | CAESN (PP-01…10) |
 | `capacite` | `referentiel/capacites/` | `cap-int-` | CNISN (CAP-INT-01…12) |

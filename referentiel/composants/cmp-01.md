@@ -9,7 +9,7 @@ version: "0.0.1"
 source: 00_caesn/05_application/application-domains.md
 maps_to: ["cap-int-01", "cap-int-03"]
 implements: ["art-4a", "art-2"]
-applies_to: ["prc-02", "prc-03", "prc-05", "prc-06"]
+applies_to: ["ev-02", "ev-03", "ev-05", "ev-06"]
 related: ["enf-1", "enf-3", "cap-01", "cap-02", "cap-03", "cap-14", "cap-15", "vs-01"]
 tags: ["caesn", "niveau-1", "composant-applicatif", "cmp-01"]
 ---
@@ -30,10 +30,10 @@ Identification patient, dossier de soins, historique, consultation, référence,
 - [CAP-03 — Qualité, sécurité des soins et amélioration continue](../capabilites/cap-03.md)
 - [CAP-14 — Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../capabilites/cap-14.md)
 - [CAP-15 — Cybersécurité, confidentialité et gouvernance des données personnelles](../capabilites/cap-15.md)
-- [PRC-02](../processus/prc-02.md)
-- [PRC-03](../processus/prc-03.md)
-- [PRC-05](../processus/prc-05.md)
-- [PRC-06](../processus/prc-06.md)
+- [EV-02](../etapes-valeur/ev-02.md)
+- [EV-03](../etapes-valeur/ev-03.md)
+- [EV-05](../etapes-valeur/ev-05.md)
+- [EV-06](../etapes-valeur/ev-06.md)
 - [CAP-INT-01 — Résolution d'identité du bénéficiaire](../capacites/cap-int-01.md)
 - [CAP-INT-03 — Échange et médiation inter-systèmes](../capacites/cap-int-03.md)
 - [ART-4A — Résolution d'identité](../chapitres/art-4a.md)

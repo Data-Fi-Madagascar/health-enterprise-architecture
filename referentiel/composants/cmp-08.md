@@ -9,7 +9,7 @@ version: "0.0.1"
 source: 00_caesn/05_application/application-domains.md
 maps_to: ["cap-int-05"]
 implements: ["art-8c", "art-10"]
-applies_to: ["prc-04", "prc-12", "prc-18"]
+applies_to: ["ev-04", "ev-12", "ev-18"]
 related: ["enf-1", "enf-2", "cap-10", "cap-13", "cap-14", "vs-01", "vs-02", "vs-04"]
 tags: ["caesn", "niveau-1", "composant-applicatif", "cmp-08"]
 ---
@@ -30,9 +30,9 @@ Gestion des stocks, commandes, distribution, ruptures, traçabilité, chaîne du
 - [CAP-10 — Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement](../capabilites/cap-10.md)
 - [CAP-13 — Système d'information sanitaire, données et recherche](../capabilites/cap-13.md)
 - [CAP-14 — Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../capabilites/cap-14.md)
-- [PRC-04](../processus/prc-04.md)
-- [PRC-12](../processus/prc-12.md)
-- [PRC-18](../processus/prc-18.md)
+- [EV-04](../etapes-valeur/ev-04.md)
+- [EV-12](../etapes-valeur/ev-12.md)
+- [EV-18](../etapes-valeur/ev-18.md)
 - [CAP-INT-05 — Terminologie et codification communes](../capacites/cap-int-05.md)
 - [ART-8C — Agrégation par lot](../chapitres/art-8c.md)
 - [ART-10 — Logistique](../chapitres/art-10.md)

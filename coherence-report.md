@@ -296,6 +296,8 @@ L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspon
 
 ## 11. Ré-ancrage CAESN — processus métier, composants applicatifs, parties prenantes (2026-08-11) ✓
 
+> **NB (2026-08-12) :** les 28 objets décrits ci-dessous sont reclassés en **étapes de valeur** (`referentiel/etapes-valeur/ev-01…28.md`). Les **processus métier** (`referentiel/processus/prc-01…12.md`) les regroupent désormais — voir §12.
+
 **Constat :** le graphe CAESN s'arrêtait aux flux de valeur (VS-01…04) et aux capabilités (CAP-01…16) : ni les étapes de valeur (processus métier), ni les familles de systèmes (composants applicatifs), ni les bénéficiaires (parties prenantes) n'étaient représentés comme objets du référentiel, alors que les tables CAESN les décrivent (`01_value-streams/*.md`, `05_application/application-domains.md`, `05_application/shared-services.md`, `00_overview/value-model.md`).
 
 **Correctif appliqué (✓) — 51 nouveaux objets, ré-ancrage additif :**

@@ -58,7 +58,7 @@ FOSA, géographie, produits de santé, indicateurs, agents, bénéficiaires, ter
 - [VS-03 — Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md)
 - [VS-04 — Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md)
 
-*Rattachement : [PRC-02](../../referentiel/processus/prc-02.md), [PRC-15](../../referentiel/processus/prc-15.md), [PRC-23](../../referentiel/processus/prc-23.md), [CAP-INT-02](../../referentiel/capacites/cap-int-02.md), [CAP-INT-04](../../referentiel/capacites/cap-int-04.md), [CAP-INT-05](../../referentiel/capacites/cap-int-05.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-4D](../../referentiel/chapitres/art-4d.md) · [fiche](../../referentiel/composants/cmp-12.md)*
+*Rattachement : [EV-02](../../referentiel/etapes-valeur/ev-02.md), [EV-15](../../referentiel/etapes-valeur/ev-15.md), [EV-23](../../referentiel/etapes-valeur/ev-23.md), [CAP-INT-02](../../referentiel/capacites/cap-int-02.md), [CAP-INT-04](../../referentiel/capacites/cap-int-04.md), [CAP-INT-05](../../referentiel/capacites/cap-int-05.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-4D](../../referentiel/chapitres/art-4d.md) · [fiche](../../referentiel/composants/cmp-12.md)*
 
 ### CMP-13 — Services partagés de confiance et d'interopérabilité
 
@@ -73,7 +73,7 @@ Identité patient/bénéficiaire, identité agent, authentification et gestion d
 - [VS-03 — Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md)
 - [VS-04 — Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md)
 
-*Rattachement : [PRC-02](../../referentiel/processus/prc-02.md), [PRC-10](../../referentiel/processus/prc-10.md), [PRC-12](../../referentiel/processus/prc-12.md), [PRC-19](../../referentiel/processus/prc-19.md), [CAP-INT-01](../../referentiel/capacites/cap-int-01.md), [CAP-INT-06](../../referentiel/capacites/cap-int-06.md), [CAP-INT-08](../../referentiel/capacites/cap-int-08.md), [CAP-INT-09](../../referentiel/capacites/cap-int-09.md), [ART-1](../../referentiel/chapitres/art-1.md), [ART-2](../../referentiel/chapitres/art-2.md), [ART-4A](../../referentiel/chapitres/art-4a.md), [ART-4B](../../referentiel/chapitres/art-4b.md), [ART-7](../../referentiel/chapitres/art-7.md) · [fiche](../../referentiel/composants/cmp-13.md)*
+*Rattachement : [EV-02](../../referentiel/etapes-valeur/ev-02.md), [EV-10](../../referentiel/etapes-valeur/ev-10.md), [EV-12](../../referentiel/etapes-valeur/ev-12.md), [EV-19](../../referentiel/etapes-valeur/ev-19.md), [CAP-INT-01](../../referentiel/capacites/cap-int-01.md), [CAP-INT-06](../../referentiel/capacites/cap-int-06.md), [CAP-INT-08](../../referentiel/capacites/cap-int-08.md), [CAP-INT-09](../../referentiel/capacites/cap-int-09.md), [ART-1](../../referentiel/chapitres/art-1.md), [ART-2](../../referentiel/chapitres/art-2.md), [ART-4A](../../referentiel/chapitres/art-4a.md), [ART-4B](../../referentiel/chapitres/art-4b.md), [ART-7](../../referentiel/chapitres/art-7.md) · [fiche](../../referentiel/composants/cmp-13.md)*
 
 <!-- END:GENERATED -->
 ## Liens

@@ -67,12 +67,12 @@ Ce flux couvre l’ensemble du cycle de la santé publique, depuis l’identific
 *Rattachement : [CAP-04](../../referentiel/capabilites/cap-04.md), [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-06](../../referentiel/capabilites/cap-06.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-04](../../referentiel/parties-prenantes/pp-04.md), [PP-07](../../referentiel/parties-prenantes/pp-07.md), [PP-08](../../referentiel/parties-prenantes/pp-08.md) · [fiche](../../referentiel/flux-valeur/vs-02.md)*
 
 <!-- END:GENERATED -->
-## Processus métier
+## Étapes de valeur
 
-<!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-08.md,referentiel/processus/prc-09.md,referentiel/processus/prc-10.md,referentiel/processus/prc-11.md,referentiel/processus/prc-12.md,referentiel/processus/prc-13.md,referentiel/processus/prc-14.md -->
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/etapes-valeur/ev-08.md,referentiel/etapes-valeur/ev-09.md,referentiel/etapes-valeur/ev-10.md,referentiel/etapes-valeur/ev-11.md,referentiel/etapes-valeur/ev-12.md,referentiel/etapes-valeur/ev-13.md,referentiel/etapes-valeur/ev-14.md -->
 <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
 
-### PRC-08 — Identification des risques et promotion de la santé
+### EV-08 — Identification des risques et promotion de la santé
 
 #### Objectif
 
@@ -98,9 +98,9 @@ Données épidémiologiques non agrégées ou non actualisées, faible couvertur
 
 Couverture des campagnes de prévention, taux de vaccination
 
-*Rattachement : [CAP-06](../../referentiel/capabilites/cap-06.md), [CAP-04](../../referentiel/capabilites/cap-04.md) · [fiche](../../referentiel/processus/prc-08.md)*
+*Rattachement : [CAP-06](../../referentiel/capabilites/cap-06.md), [CAP-04](../../referentiel/capabilites/cap-04.md) · [fiche](../../referentiel/etapes-valeur/ev-08.md)*
 
-### PRC-09 — Surveillance et détection
+### EV-09 — Surveillance et détection
 
 #### Objectif
 
@@ -126,9 +126,9 @@ Sous-déclaration des cas, rapports incomplets ou hors délais
 
 Complétude et promptitude des rapports, taux de signaux détectés
 
-*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/processus/prc-09.md)*
+*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/etapes-valeur/ev-09.md)*
 
-### PRC-10 — Notification et alerte
+### EV-10 — Notification et alerte
 
 #### Objectif
 
@@ -154,9 +154,9 @@ Délai de notification trop long, chaîne d'alerte défaillante
 
 Délai moyen de notification d'une alerte
 
-*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/processus/prc-10.md)*
+*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/etapes-valeur/ev-10.md)*
 
-### PRC-11 — Vérification et investigation
+### EV-11 — Vérification et investigation
 
 #### Objectif
 
@@ -182,9 +182,9 @@ Capacité d'investigation insuffisante, réactifs manquants, accès géographiqu
 
 Délai d'investigation, proportion d'alertes vérifiées dans les délais
 
-*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/processus/prc-11.md)*
+*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/etapes-valeur/ev-11.md)*
 
-### PRC-12 — Riposte
+### EV-12 — Riposte
 
 #### Objectif
 
@@ -210,9 +210,9 @@ Ressources de riposte insuffisantes, coordination inter-agences défaillante
 
 Délai de déploiement de la riposte, taux de contrôle de l'épidémie
 
-*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md) · [fiche](../../referentiel/processus/prc-12.md)*
+*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md) · [fiche](../../referentiel/etapes-valeur/ev-12.md)*
 
-### PRC-13 — Suivi de situation et clôture
+### EV-13 — Suivi de situation et clôture
 
 #### Objectif
 
@@ -238,9 +238,9 @@ Manque de données en temps réel, communication insuffisante vers la population
 
 Taux de létalité, durée de l'épisode épidémique
 
-*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/processus/prc-13.md)*
+*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/etapes-valeur/ev-13.md)*
 
-### PRC-14 — Capitalisation et amélioration
+### EV-14 — Capitalisation et amélioration
 
 #### Objectif
 
@@ -266,7 +266,7 @@ Revues après action non systématiques, recommandations non suivies d'effet
 
 Nombre de revues après action, proportion de recommandations mises en œuvre
 
-*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/processus/prc-14.md)*
+*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/etapes-valeur/ev-14.md)*
 
 <!-- END:GENERATED -->
 ## Liens

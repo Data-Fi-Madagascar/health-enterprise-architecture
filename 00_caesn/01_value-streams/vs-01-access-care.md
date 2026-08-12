@@ -68,12 +68,12 @@ Ce flux couvre l’ensemble du parcours d’un patient, depuis la reconnaissance
 *Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-02](../../referentiel/capabilites/cap-02.md), [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-04](../../referentiel/capabilites/cap-04.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [PP-01](../../referentiel/parties-prenantes/pp-01.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-04](../../referentiel/parties-prenantes/pp-04.md), [PP-05](../../referentiel/parties-prenantes/pp-05.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md) · [fiche](../../referentiel/flux-valeur/vs-01.md)*
 
 <!-- END:GENERATED -->
-## Processus métier
+## Étapes de valeur
 
-<!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-01.md,referentiel/processus/prc-02.md,referentiel/processus/prc-03.md,referentiel/processus/prc-04.md,referentiel/processus/prc-05.md,referentiel/processus/prc-06.md,referentiel/processus/prc-07.md -->
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/etapes-valeur/ev-01.md,referentiel/etapes-valeur/ev-02.md,referentiel/etapes-valeur/ev-03.md,referentiel/etapes-valeur/ev-04.md,referentiel/etapes-valeur/ev-05.md,referentiel/etapes-valeur/ev-06.md,referentiel/etapes-valeur/ev-07.md -->
 <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
 
-### PRC-01 — Reconnaissance du besoin et orientation
+### EV-01 — Reconnaissance du besoin et orientation
 
 #### Objectif
 
@@ -99,9 +99,9 @@ Méconnaissance des services, distance géographique, coût perçu dissuasif
 
 Taux de recours aux soins, délai moyen d'accès à une formation sanitaire
 
-*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-04](../../referentiel/capabilites/cap-04.md) · [fiche](../../referentiel/processus/prc-01.md)*
+*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-04](../../referentiel/capabilites/cap-04.md) · [fiche](../../referentiel/etapes-valeur/ev-01.md)*
 
-### PRC-02 — Accueil et enregistrement
+### EV-02 — Accueil et enregistrement
 
 #### Objectif
 
@@ -127,9 +127,9 @@ Absence de registre, identité non vérifiable, files d'attente prolongées
 
 Taux de dossiers ouverts, délai d'enregistrement
 
-*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md) · [fiche](../../referentiel/processus/prc-02.md)*
+*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md) · [fiche](../../referentiel/etapes-valeur/ev-02.md)*
 
-### PRC-03 — Consultation et diagnostic
+### EV-03 — Consultation et diagnostic
 
 #### Objectif
 
@@ -155,9 +155,9 @@ Absence d'historique médical, rupture de stock d'intrants de diagnostic
 
 Taux de consultations avec diagnostic documenté
 
-*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/processus/prc-03.md)*
+*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/etapes-valeur/ev-03.md)*
 
-### PRC-04 — Traitement et prise en charge
+### EV-04 — Traitement et prise en charge
 
 #### Objectif
 
@@ -183,9 +183,9 @@ Ruptures de médicaments essentiels, absence de laboratoire fonctionnel
 
 Taux de disponibilité des médicaments traceurs
 
-*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md) · [fiche](../../referentiel/processus/prc-04.md)*
+*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md) · [fiche](../../referentiel/etapes-valeur/ev-04.md)*
 
-### PRC-05 — Référence et contre-référence
+### EV-05 — Référence et contre-référence
 
 #### Objectif
 
@@ -211,9 +211,9 @@ Référence effectuée sans dossier, absence de transport, absence de retour d'i
 
 Taux de référence complétée avec retour d'information
 
-*Rattachement : [CAP-02](../../referentiel/capabilites/cap-02.md) · [fiche](../../referentiel/processus/prc-05.md)*
+*Rattachement : [CAP-02](../../referentiel/capabilites/cap-02.md) · [fiche](../../referentiel/etapes-valeur/ev-05.md)*
 
-### PRC-06 — Suivi et continuité des soins
+### EV-06 — Suivi et continuité des soins
 
 #### Objectif
 
@@ -239,9 +239,9 @@ Perte de vue du patient, absence de système de rappel, dossier longitudinal abs
 
 Taux de patients perdus de vue, taux d'observance thérapeutique
 
-*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-02](../../referentiel/capabilites/cap-02.md) · [fiche](../../referentiel/processus/prc-06.md)*
+*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-02](../../referentiel/capabilites/cap-02.md) · [fiche](../../referentiel/etapes-valeur/ev-06.md)*
 
-### PRC-07 — Amélioration de la qualité
+### EV-07 — Amélioration de la qualité
 
 #### Objectif
 
@@ -267,7 +267,7 @@ Données collectées mais non analysées, absence de revue qualité régulière
 
 Proportion de formations sanitaires ayant réalisé une revue qualité dans le mois
 
-*Rattachement : [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/processus/prc-07.md)*
+*Rattachement : [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/etapes-valeur/ev-07.md)*
 
 <!-- END:GENERATED -->
 ## Liens
