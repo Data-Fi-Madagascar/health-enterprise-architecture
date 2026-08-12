@@ -25,7 +25,7 @@ tags: [flux-de-valeur, value-stream]
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
-<!-- BEGIN:GENERATED -->
+<!-- BEGIN:GENERATED mode=monographie source=referentiel/flux-valeur/vs-01.md -->
 <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
 
 ## Valeur produite
@@ -65,7 +65,209 @@ Ce flux couvre l’ensemble du parcours d’un patient, depuis la reconnaissance
 - [CAP-14](../../referentiel/capabilites/cap-14.md)
 - [CAP-15](../../referentiel/capabilites/cap-15.md)
 
-*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-02](../../referentiel/capabilites/cap-02.md), [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-04](../../referentiel/capabilites/cap-04.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md) · [fiche](../../referentiel/flux-valeur/vs-01.md)*
+*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-02](../../referentiel/capabilites/cap-02.md), [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-04](../../referentiel/capabilites/cap-04.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [PP-01](../../referentiel/parties-prenantes/pp-01.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-04](../../referentiel/parties-prenantes/pp-04.md), [PP-05](../../referentiel/parties-prenantes/pp-05.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md) · [fiche](../../referentiel/flux-valeur/vs-01.md)*
+
+<!-- END:GENERATED -->
+## Processus métier
+
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-01.md,referentiel/processus/prc-02.md,referentiel/processus/prc-03.md,referentiel/processus/prc-04.md,referentiel/processus/prc-05.md,referentiel/processus/prc-06.md,referentiel/processus/prc-07.md -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+
+### PRC-01 — Reconnaissance du besoin et orientation
+
+#### Objectif
+
+Réaliser l'étape de valeur « Reconnaissance du besoin et orientation » du flux VS-01.
+
+#### Entrées
+
+Symptôme ou besoin ressenti par le patient
+
+#### Sorties
+
+Patient orienté vers le niveau de soins approprié
+
+#### Acteurs
+
+Patient, famille, agent de santé communautaire
+
+#### Ruptures fréquentes
+
+Méconnaissance des services, distance géographique, coût perçu dissuasif
+
+#### Indicateurs
+
+Taux de recours aux soins, délai moyen d'accès à une formation sanitaire
+
+*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-04](../../referentiel/capabilites/cap-04.md) · [fiche](../../referentiel/processus/prc-01.md)*
+
+### PRC-02 — Accueil et enregistrement
+
+#### Objectif
+
+Réaliser l'étape de valeur « Accueil et enregistrement » du flux VS-01.
+
+#### Entrées
+
+Patient présent à la formation sanitaire
+
+#### Sorties
+
+Dossier ouvert, identité vérifiée, patient pris en charge
+
+#### Acteurs
+
+Personnel d'accueil, registre patient
+
+#### Ruptures fréquentes
+
+Absence de registre, identité non vérifiable, files d'attente prolongées
+
+#### Indicateurs
+
+Taux de dossiers ouverts, délai d'enregistrement
+
+*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md) · [fiche](../../referentiel/processus/prc-02.md)*
+
+### PRC-03 — Consultation et diagnostic
+
+#### Objectif
+
+Réaliser l'étape de valeur « Consultation et diagnostic » du flux VS-01.
+
+#### Entrées
+
+Dossier ouvert, patient examiné
+
+#### Sorties
+
+Diagnostic posé, plan de soins défini et documenté
+
+#### Acteurs
+
+Clinicien, dossier patient
+
+#### Ruptures fréquentes
+
+Absence d'historique médical, rupture de stock d'intrants de diagnostic
+
+#### Indicateurs
+
+Taux de consultations avec diagnostic documenté
+
+*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/processus/prc-03.md)*
+
+### PRC-04 — Traitement et prise en charge
+
+#### Objectif
+
+Réaliser l'étape de valeur « Traitement et prise en charge » du flux VS-01.
+
+#### Entrées
+
+Plan de soins validé
+
+#### Sorties
+
+Traitement administré ou prescrit et disponible
+
+#### Acteurs
+
+Clinicien, pharmacie, laboratoire
+
+#### Ruptures fréquentes
+
+Ruptures de médicaments essentiels, absence de laboratoire fonctionnel
+
+#### Indicateurs
+
+Taux de disponibilité des médicaments traceurs
+
+*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md) · [fiche](../../referentiel/processus/prc-04.md)*
+
+### PRC-05 — Référence et contre-référence
+
+#### Objectif
+
+Réaliser l'étape de valeur « Référence et contre-référence » du flux VS-01.
+
+#### Entrées
+
+Décision médicale de référer
+
+#### Sorties
+
+Patient reçu au niveau supérieur avec son dossier, information retournée à la formation d'origine
+
+#### Acteurs
+
+Formation sanitaire référente, formation cible, système de transport
+
+#### Ruptures fréquentes
+
+Référence effectuée sans dossier, absence de transport, absence de retour d'information
+
+#### Indicateurs
+
+Taux de référence complétée avec retour d'information
+
+*Rattachement : [CAP-02](../../referentiel/capabilites/cap-02.md) · [fiche](../../referentiel/processus/prc-05.md)*
+
+### PRC-06 — Suivi et continuité des soins
+
+#### Objectif
+
+Réaliser l'étape de valeur « Suivi et continuité des soins » du flux VS-01.
+
+#### Entrées
+
+Épisode de soins terminé
+
+#### Sorties
+
+Patient suivi, observance thérapeutique assurée
+
+#### Acteurs
+
+Agent de santé communautaire, clinicien, patient
+
+#### Ruptures fréquentes
+
+Perte de vue du patient, absence de système de rappel, dossier longitudinal absent
+
+#### Indicateurs
+
+Taux de patients perdus de vue, taux d'observance thérapeutique
+
+*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-02](../../referentiel/capabilites/cap-02.md) · [fiche](../../referentiel/processus/prc-06.md)*
+
+### PRC-07 — Amélioration de la qualité
+
+#### Objectif
+
+Réaliser l'étape de valeur « Amélioration de la qualité » du flux VS-01.
+
+#### Entrées
+
+Données issues des soins et des retours patients
+
+#### Sorties
+
+Actions correctives décidées et mises en œuvre
+
+#### Acteurs
+
+Gestionnaire de formation sanitaire, district, comité qualité
+
+#### Ruptures fréquentes
+
+Données collectées mais non analysées, absence de revue qualité régulière
+
+#### Indicateurs
+
+Proportion de formations sanitaires ayant réalisé une revue qualité dans le mois
+
+*Rattachement : [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/processus/prc-07.md)*
 
 <!-- END:GENERATED -->
 ## Liens

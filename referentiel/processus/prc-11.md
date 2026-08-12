@@ -1,0 +1,46 @@
+---
+id: prc-11
+type: processus-metier
+niveau: "1"
+title: PRC-11 — Vérification et investigation
+status: draft
+owner: Direction de la protection sociale et de la promotion de la santé
+version: "0.0.1"
+source: 00_caesn/01_value-streams/vs-02-risk-protection.md
+maps_to: []
+implements: []
+applies_to: ["cap-05", "cap-13"]
+related: ["vs-02"]
+tags: ["caesn", "niveau-1", "processus-metier", "prc-11"]
+---
+# PRC-11 — Vérification et investigation
+
+## Objectif
+
+Réaliser l'étape de valeur « Vérification et investigation » du flux VS-02.
+
+## Entrées
+
+Alerte notifiée
+
+## Sorties
+
+Alerte confirmée ou infirmée, cas investigués, source identifiée
+
+## Acteurs
+
+Équipe d'investigation, laboratoire national de référence
+
+## Ruptures fréquentes
+
+Capacité d'investigation insuffisante, réactifs manquants, accès géographique difficile
+
+## Indicateurs
+
+Délai d'investigation, proportion d'alertes vérifiées dans les délais
+
+## Liens
+
+- [VS-02 — Prévenir, détecter et répondre aux risques sanitaires](../flux-valeur/vs-02.md)
+- [CAP-05 — Surveillance épidémiologique, alerte, investigation et riposte](../capabilites/cap-05.md)
+- [CAP-13 — Système d'information sanitaire, données et recherche](../capabilites/cap-13.md)

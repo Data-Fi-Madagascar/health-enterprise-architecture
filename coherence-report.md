@@ -28,6 +28,7 @@
 | 7 | Correctifs recommandés | → voir §7 |
 | 9 | Topologie nationale cible (PTISN) vs architecture conceptuelle (ARTSN) | Ouvert — écarts X-Road, couche pilotage, axes transversaux |
 | 10 | CNISN vs ARTSN — traçabilité, taxonomie annexe B, homologation | ◐ Taxonomie résolue (5 familles) ; traçabilité ARTSN→CNISN, CNASN, logistique ouverts |
+| 11 | Ré-ancrage CAESN : processus, composants, parties prenantes | ✓ Résolu (51 objets, graphe VS → PRC → CMP ↔ CAP-INT/ART) |
 
 ---
 
@@ -292,3 +293,19 @@ L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspon
 2. ~~Aligner l'annexe B du CNISN sur les taxonomies P-INT/CAP-INT~~ — **résolu** : 5 familles de réponse couvrant les 12 CAP-INT (§10.2, §7).
 3. Clarifier le rôle du CNASN dans la gouvernance et la conformité du CNISN (hiérarchie, instance d'homologation, critères harmonisés).
 4. Réconcilier le traitement de la logistique (ART-10 candidat vs « non couverte » de la table de maturité ARTSN).
+
+## 11. Ré-ancrage CAESN — processus métier, composants applicatifs, parties prenantes (2026-08-11) ✓
+
+**Constat :** le graphe CAESN s'arrêtait aux flux de valeur (VS-01…04) et aux capabilités (CAP-01…16) : ni les étapes de valeur (processus métier), ni les familles de systèmes (composants applicatifs), ni les bénéficiaires (parties prenantes) n'étaient représentés comme objets du référentiel, alors que les tables CAESN les décrivent (`01_value-streams/*.md`, `05_application/application-domains.md`, `05_application/shared-services.md`, `00_overview/value-model.md`).
+
+**Correctif appliqué (✓) — 51 nouveaux objets, ré-ancrage additif :**
+- **28 processus métier** (`referentiel/processus/prc-01…28.md`) — un par étape de valeur (7 × 4 flux) : `source:` = enveloppe VS-XX, `applies_to` = capabilités mobilisées, `related` = flux de valeur.
+- **13 composants applicatifs** (`referentiel/composants/cmp-01…13.md`) — 11 domaines applicatifs (dont cmp-12 Référentiels nationaux) + 2 services partagés (cmp-13 confiance/interopérabilité) : `applies_to` = processus soutenus, `maps_to` = CAP-INT, `implements` = chapitres ART, `related` = exigences/capabilités/flux.
+- **10 parties prenantes** (`referentiel/parties-prenantes/pp-01…10.md`) — `related` = flux de valeur ; les 4 VS gagnent `applies_to` → pp-XX (17 liens).
+- Annexe E et traçabilité existantes **intactes** (aucun lien CAESN↔CNISN modifié) : approche strictement additive.
+- Enveloppes enrichies : VS-01…04 (+ « Processus métier » en catalogue), `value-model.md` (+ Parties prenantes), `application-domains.md` (+ Composants applicatifs cibles), `shared-services.md` (+ Composants des services partagés). `scripts/build_wrappers.py` supporte désormais un attribut `mode=monographie|mode=catalogue` explicite sur les blocs d'enveloppes mixtes.
+
+**Vérifications (✓) :**
+- `make check` : **54 enveloppes à jour**, **0 lien relatif cassé sur 2819** vérifiés.
+- `/tmp/validate_ref.rb` : **202 fichiers, 201 objets uniques**, 2 erreurs attendues (`_schema.md`), **0 lien cassé, 0 relation non résolue**.
+- `/tmp/trace_check.py` : **197/201 objets tracés depuis les VS** — toutes les nouvelles familles couvertes (28/28 PRC, 13/13 CMP, 10/10 PP) ; seuls les 4 stubs candidats préexistants restent non tracés (art-10, art-11, f-5, f-6).

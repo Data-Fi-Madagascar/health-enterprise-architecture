@@ -1,0 +1,47 @@
+---
+id: prc-21
+type: processus-metier
+niveau: "1"
+title: PRC-21 — Contrôle, audit et ajustement des mécanismes
+status: draft
+owner: Direction de la couverture santé universelle
+version: "0.0.1"
+source: 00_caesn/01_value-streams/vs-03-financial-protection.md
+maps_to: []
+implements: []
+applies_to: ["cap-08", "cap-13", "cap-16"]
+related: ["vs-03"]
+tags: ["caesn", "niveau-1", "processus-metier", "prc-21"]
+---
+# PRC-21 — Contrôle, audit et ajustement des mécanismes
+
+## Objectif
+
+Réaliser l'étape de valeur « Contrôle, audit et ajustement des mécanismes » du flux VS-03.
+
+## Entrées
+
+Données de remboursement, de couverture et de satisfaction
+
+## Sorties
+
+Mécanismes ajustés, fraudes détectées, équité améliorée
+
+## Acteurs
+
+Inspection sanitaire, structures d'audit, comité technique national
+
+## Ruptures fréquentes
+
+Absence de contrôle structuré, données de remboursement non exploitées
+
+## Indicateurs
+
+Proportion de contrôles réalisés, montant des anomalies détectées
+
+## Liens
+
+- [VS-03 — Protéger financièrement la population face aux dépenses de santé](../flux-valeur/vs-03.md)
+- [CAP-08 — Gouvernance institutionnelle, planification, coordination et redevabilité](../capabilites/cap-08.md)
+- [CAP-13 — Système d'information sanitaire, données et recherche](../capabilites/cap-13.md)
+- [CAP-16 — Gestion du portefeuille d'initiatives numériques](../capabilites/cap-16.md)

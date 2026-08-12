@@ -1,0 +1,46 @@
+---
+id: prc-25
+type: processus-metier
+niveau: "1"
+title: PRC-25 — Suivi de l'exécution
+status: draft
+owner: Secrétariat Général
+version: "0.0.1"
+source: 00_caesn/01_value-streams/vs-04-system-steering.md
+maps_to: []
+implements: []
+applies_to: ["cap-13", "cap-08"]
+related: ["vs-04"]
+tags: ["caesn", "niveau-1", "processus-metier", "prc-25"]
+---
+# PRC-25 — Suivi de l'exécution
+
+## Objectif
+
+Réaliser l'étape de valeur « Suivi de l'exécution » du flux VS-04.
+
+## Entrées
+
+Plans, budgets et indicateurs définis
+
+## Sorties
+
+Tableaux de bord de performance actualisés, alertes de dérive
+
+## Acteurs
+
+Directions techniques, régions, districts, SIS
+
+## Ruptures fréquentes
+
+Données incomplètes ou hors délais, tableaux de bord non utilisés
+
+## Indicateurs
+
+Complétude et promptitude des rapports, taux d'utilisation des tableaux de bord
+
+## Liens
+
+- [VS-04 — Piloter, coordonner et améliorer la performance du système de santé](../flux-valeur/vs-04.md)
+- [CAP-13 — Système d'information sanitaire, données et recherche](../capabilites/cap-13.md)
+- [CAP-08 — Gouvernance institutionnelle, planification, coordination et redevabilité](../capabilites/cap-08.md)

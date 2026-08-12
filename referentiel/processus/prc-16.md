@@ -1,0 +1,45 @@
+---
+id: prc-16
+type: processus-metier
+niveau: "1"
+title: PRC-16 — Définition des droits et du panier de soins
+status: draft
+owner: Direction de la couverture santé universelle
+version: "0.0.1"
+source: 00_caesn/01_value-streams/vs-03-financial-protection.md
+maps_to: []
+implements: []
+applies_to: ["cap-07"]
+related: ["vs-03"]
+tags: ["caesn", "niveau-1", "processus-metier", "prc-16"]
+---
+# PRC-16 — Définition des droits et du panier de soins
+
+## Objectif
+
+Réaliser l'étape de valeur « Définition des droits et du panier de soins » du flux VS-03.
+
+## Entrées
+
+Bénéficiaire enregistré
+
+## Sorties
+
+Droits connus du bénéficiaire et de la formation sanitaire qui le prend en charge
+
+## Acteurs
+
+Ministère de la Santé, formations sanitaires, gestionnaires de la couverture santé
+
+## Ruptures fréquentes
+
+Méconnaissance des droits par les agents, panier de soins non communiqué
+
+## Indicateurs
+
+Proportion de formations sanitaires informées des droits
+
+## Liens
+
+- [VS-03 — Protéger financièrement la population face aux dépenses de santé](../flux-valeur/vs-03.md)
+- [CAP-07 — Protection financière, couverture santé universelle](../capabilites/cap-07.md)

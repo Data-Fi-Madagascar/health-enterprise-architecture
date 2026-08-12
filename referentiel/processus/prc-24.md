@@ -1,0 +1,46 @@
+---
+id: prc-24
+type: processus-metier
+niveau: "1"
+title: PRC-24 — Coordination des acteurs et alignement des partenaires
+status: draft
+owner: Secrétariat Général
+version: "0.0.1"
+source: 00_caesn/01_value-streams/vs-04-system-steering.md
+maps_to: []
+implements: []
+applies_to: ["cap-08", "cap-16"]
+related: ["vs-04"]
+tags: ["caesn", "niveau-1", "processus-metier", "prc-24"]
+---
+# PRC-24 — Coordination des acteurs et alignement des partenaires
+
+## Objectif
+
+Réaliser l'étape de valeur « Coordination des acteurs et alignement des partenaires » du flux VS-04.
+
+## Entrées
+
+Priorités nationales définies
+
+## Sorties
+
+Engagements des partenaires alignés, doublons évités
+
+## Acteurs
+
+Ministère, partenaires, ONG
+
+## Ruptures fréquentes
+
+Fragmentation des interventions, coordination insuffisante
+
+## Indicateurs
+
+Proportion d'initiatives partenaires alignées sur le portefeuille national
+
+## Liens
+
+- [VS-04 — Piloter, coordonner et améliorer la performance du système de santé](../flux-valeur/vs-04.md)
+- [CAP-08 — Gouvernance institutionnelle, planification, coordination et redevabilité](../capabilites/cap-08.md)
+- [CAP-16 — Gestion du portefeuille d'initiatives numériques](../capabilites/cap-16.md)

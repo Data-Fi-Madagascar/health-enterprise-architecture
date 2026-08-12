@@ -13,6 +13,8 @@ Conventions (spec docs/superpowers/specs/2026-08-11-enveloppes-lisibilite-design
     - monographie : 1 objet attaché (`source:` == enveloppe), H1 supprimé, `##` conservés ;
     - catalogue    : N objets attachés, H1 -> ### et hiérarchie → #### maximale ;
     chaque objet reçoit la ligne *Rattachement : … · [fiche](…)*.
+    Le mode est déduit du nombre d'objets attachés à l'enveloppe, sauf si `mode=` est
+    précisé explicitement sur le bloc (ex. enveloppe mixte : `mode=monographie` + `mode=catalogue`).
 - Avec `mode=table`, un tableau `code | titre canonique | rattachement | statut | fiche`
   des objets qui matchent les motifs (réservé aux fichiers d'index et de matrices).
 - Le filtre `source=` s'applique aux objets attachés à l'enveloppe (D3 : champ `source:`),
@@ -323,7 +325,7 @@ def generate_file(objects, path_by_id, rel):
             if not covered:
                 raise SystemExit("bloc de transclusion vide (%s) dans %s" % (", ".join(globs), rel))
 
-            mode = "monographie" if len(attached) == 1 else "catalogue"
+            mode = attrs["mode"] or ("monographie" if len(attached) == 1 else "catalogue")
             bodies = [render_transclusion(objects[obj_rel], mode, path_by_id)
                       for obj_rel in covered]
             body = "\n\n".join(bodies)

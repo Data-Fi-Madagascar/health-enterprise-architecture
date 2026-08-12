@@ -1,0 +1,46 @@
+---
+id: prc-03
+type: processus-metier
+niveau: "1"
+title: PRC-03 — Consultation et diagnostic
+status: draft
+owner: Direction des soins
+version: "0.0.1"
+source: 00_caesn/01_value-streams/vs-01-access-care.md
+maps_to: []
+implements: []
+applies_to: ["cap-01", "cap-13"]
+related: ["vs-01"]
+tags: ["caesn", "niveau-1", "processus-metier", "prc-03"]
+---
+# PRC-03 — Consultation et diagnostic
+
+## Objectif
+
+Réaliser l'étape de valeur « Consultation et diagnostic » du flux VS-01.
+
+## Entrées
+
+Dossier ouvert, patient examiné
+
+## Sorties
+
+Diagnostic posé, plan de soins défini et documenté
+
+## Acteurs
+
+Clinicien, dossier patient
+
+## Ruptures fréquentes
+
+Absence d'historique médical, rupture de stock d'intrants de diagnostic
+
+## Indicateurs
+
+Taux de consultations avec diagnostic documenté
+
+## Liens
+
+- [VS-01 — Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../flux-valeur/vs-01.md)
+- [CAP-01 — Offre de soins et continuité des services](../capabilites/cap-01.md)
+- [CAP-13 — Système d'information sanitaire, données et recherche](../capabilites/cap-13.md)

@@ -72,6 +72,92 @@ Toute initiative numérique doit démontrer sa contribution à :
 
 > Une initiative qui ne peut pas démontrer ces éléments n'est pas suffisamment mûre pour être financée, déployée ou généralisée.
 
+## Parties prenantes
+
+<!-- BEGIN:GENERATED source=referentiel/parties-prenantes/pp-01.md,referentiel/parties-prenantes/pp-02.md,referentiel/parties-prenantes/pp-03.md,referentiel/parties-prenantes/pp-04.md,referentiel/parties-prenantes/pp-05.md,referentiel/parties-prenantes/pp-06.md,referentiel/parties-prenantes/pp-07.md,referentiel/parties-prenantes/pp-08.md,referentiel/parties-prenantes/pp-09.md,referentiel/parties-prenantes/pp-10.md -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+
+### PP-01 — Patient et usager
+
+#### Valeur attendue
+
+Recevoir des soins accessibles, sûrs, continus et de qualité
+
+*Rattachement : — · [fiche](../../referentiel/parties-prenantes/pp-01.md)*
+
+### PP-02 — Ménage et famille
+
+#### Valeur attendue
+
+Accéder aux soins sans appauvrissement ni dépenses catastrophiques
+
+*Rattachement : — · [fiche](../../referentiel/parties-prenantes/pp-02.md)*
+
+### PP-03 — Population
+
+#### Valeur attendue
+
+Être protégée contre les maladies, épidémies et urgences sanitaires
+
+*Rattachement : — · [fiche](../../referentiel/parties-prenantes/pp-03.md)*
+
+### PP-04 — Communauté
+
+#### Valeur attendue
+
+Participer à la santé et accéder à des services de proximité
+
+*Rattachement : — · [fiche](../../referentiel/parties-prenantes/pp-04.md)*
+
+### PP-05 — Agent de santé
+
+#### Valeur attendue
+
+Disposer des ressources, compétences, outils et informations nécessaires
+
+*Rattachement : — · [fiche](../../referentiel/parties-prenantes/pp-05.md)*
+
+### PP-06 — Formation sanitaire
+
+#### Valeur attendue
+
+Avoir les intrants, ressources humaines, équipements et données nécessaires
+
+*Rattachement : — · [fiche](../../referentiel/parties-prenantes/pp-06.md)*
+
+### PP-07 — District, région et Ministère
+
+#### Valeur attendue
+
+Piloter, coordonner et améliorer la performance sur la base de données fiables
+
+*Rattachement : — · [fiche](../../referentiel/parties-prenantes/pp-07.md)*
+
+### PP-08 — Partenaires techniques et financiers
+
+#### Valeur attendue
+
+Aligner leurs investissements sur les priorités nationales et vérifier les résultats
+
+*Rattachement : — · [fiche](../../referentiel/parties-prenantes/pp-08.md)*
+
+### PP-09 — Décideurs institutionnels
+
+#### Valeur attendue
+
+Définir les priorités, arbitrer les ressources et rendre compte des résultats
+
+*Rattachement : — · [fiche](../../referentiel/parties-prenantes/pp-09.md)*
+
+### PP-10 — Équipes techniques (DEPSI / SIS)
+
+#### Valeur attendue
+
+Concevoir, opérer et fiabiliser les systèmes numériques au service des flux de valeur
+
+*Rattachement : — · [fiche](../../referentiel/parties-prenantes/pp-10.md)*
+
+<!-- END:GENERATED -->
 ## Liens
 
 - [Flux de valeur](../01_value-streams/index.md)

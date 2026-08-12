@@ -1,0 +1,46 @@
+---
+id: prc-08
+type: processus-metier
+niveau: "1"
+title: PRC-08 — Identification des risques et promotion de la santé
+status: draft
+owner: Direction de la protection sociale et de la promotion de la santé
+version: "0.0.1"
+source: 00_caesn/01_value-streams/vs-02-risk-protection.md
+maps_to: []
+implements: []
+applies_to: ["cap-06", "cap-04"]
+related: ["vs-02"]
+tags: ["caesn", "niveau-1", "processus-metier", "prc-08"]
+---
+# PRC-08 — Identification des risques et promotion de la santé
+
+## Objectif
+
+Réaliser l'étape de valeur « Identification des risques et promotion de la santé » du flux VS-02.
+
+## Entrées
+
+Profil épidémiologique national et local
+
+## Sorties
+
+Plan de prévention et programme de communication en santé
+
+## Acteurs
+
+Direction de la Protection Sociale et de la Promotion de la Santé, programmes, agents communautaires
+
+## Ruptures fréquentes
+
+Données épidémiologiques non agrégées ou non actualisées, faible couverture communautaire
+
+## Indicateurs
+
+Couverture des campagnes de prévention, taux de vaccination
+
+## Liens
+
+- [VS-02 — Prévenir, détecter et répondre aux risques sanitaires](../flux-valeur/vs-02.md)
+- [CAP-06 — Vaccination, prévention et promotion de la santé](../capabilites/cap-06.md)
+- [CAP-04 — Santé communautaire et engagement des communautés](../capabilites/cap-04.md)

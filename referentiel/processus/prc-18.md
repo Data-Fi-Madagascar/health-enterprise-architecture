@@ -1,0 +1,46 @@
+---
+id: prc-18
+type: processus-metier
+niveau: "1"
+title: PRC-18 — Prise en charge et exemption au point de service
+status: draft
+owner: Direction de la couverture santé universelle
+version: "0.0.1"
+source: 00_caesn/01_value-streams/vs-03-financial-protection.md
+maps_to: []
+implements: []
+applies_to: ["cap-07", "cap-15"]
+related: ["vs-03"]
+tags: ["caesn", "niveau-1", "processus-metier", "prc-18"]
+---
+# PRC-18 — Prise en charge et exemption au point de service
+
+## Objectif
+
+Réaliser l'étape de valeur « Prise en charge et exemption au point de service » du flux VS-03.
+
+## Entrées
+
+Bénéficiaire se présentant dans une formation sanitaire
+
+## Sorties
+
+Soins reçus sans paiement direct, exemption appliquée
+
+## Acteurs
+
+Agent de santé, gestionnaire de la formation sanitaire
+
+## Ruptures fréquentes
+
+Refus de soins, paiement informel, formation non approvisionnée en intrants
+
+## Indicateurs
+
+Taux d'exemption appliqué, taux de refus de soins signalés
+
+## Liens
+
+- [VS-03 — Protéger financièrement la population face aux dépenses de santé](../flux-valeur/vs-03.md)
+- [CAP-07 — Protection financière, couverture santé universelle](../capabilites/cap-07.md)
+- [CAP-15 — Cybersécurité, confidentialité et gouvernance des données personnelles](../capabilites/cap-15.md)

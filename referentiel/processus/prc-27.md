@@ -1,0 +1,46 @@
+---
+id: prc-27
+type: processus-metier
+niveau: "1"
+title: PRC-27 — Redevabilité et communication publique
+status: draft
+owner: Secrétariat Général
+version: "0.0.1"
+source: 00_caesn/01_value-streams/vs-04-system-steering.md
+maps_to: []
+implements: []
+applies_to: ["cap-08", "cap-13"]
+related: ["vs-04"]
+tags: ["caesn", "niveau-1", "processus-metier", "prc-27"]
+---
+# PRC-27 — Redevabilité et communication publique
+
+## Objectif
+
+Réaliser l'étape de valeur « Redevabilité et communication publique » du flux VS-04.
+
+## Entrées
+
+Résultats de performance du système
+
+## Sorties
+
+Rapports publics, reddition de comptes aux instances
+
+## Acteurs
+
+Ministère, Parlement, société civile, partenaires
+
+## Ruptures fréquentes
+
+Absence de rapport public annuel, faible transparence
+
+## Indicateurs
+
+Existence et publication de rapports annuels de performance
+
+## Liens
+
+- [VS-04 — Piloter, coordonner et améliorer la performance du système de santé](../flux-valeur/vs-04.md)
+- [CAP-08 — Gouvernance institutionnelle, planification, coordination et redevabilité](../capabilites/cap-08.md)
+- [CAP-13 — Système d'information sanitaire, données et recherche](../capabilites/cap-13.md)

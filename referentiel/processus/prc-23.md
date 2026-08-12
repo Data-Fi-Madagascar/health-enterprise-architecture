@@ -1,0 +1,46 @@
+---
+id: prc-23
+type: processus-metier
+niveau: "1"
+title: PRC-23 — Budgétisation et allocation des ressources
+status: draft
+owner: Secrétariat Général
+version: "0.0.1"
+source: 00_caesn/01_value-streams/vs-04-system-steering.md
+maps_to: []
+implements: []
+applies_to: ["cap-12", "cap-08"]
+related: ["vs-04"]
+tags: ["caesn", "niveau-1", "processus-metier", "prc-23"]
+---
+# PRC-23 — Budgétisation et allocation des ressources
+
+## Objectif
+
+Réaliser l'étape de valeur « Budgétisation et allocation des ressources » du flux VS-04.
+
+## Entrées
+
+Plans opérationnels validés
+
+## Sorties
+
+Budget alloué par programme, niveau et région
+
+## Acteurs
+
+Direction des affaires financières, Ministère de l'Économie, partenaires
+
+## Ruptures fréquentes
+
+Sous-financement chronique, allocations non basées sur les besoins réels
+
+## Indicateurs
+
+Taux d'exécution budgétaire, part du budget national allouée à la santé
+
+## Liens
+
+- [VS-04 — Piloter, coordonner et améliorer la performance du système de santé](../flux-valeur/vs-04.md)
+- [CAP-12 — Finances publiques, budget et allocation des ressources](../capabilites/cap-12.md)
+- [CAP-08 — Gouvernance institutionnelle, planification, coordination et redevabilité](../capabilites/cap-08.md)

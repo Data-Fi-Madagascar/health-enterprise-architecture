@@ -1,0 +1,46 @@
+---
+id: prc-01
+type: processus-metier
+niveau: "1"
+title: PRC-01 — Reconnaissance du besoin et orientation
+status: draft
+owner: Direction des soins
+version: "0.0.1"
+source: 00_caesn/01_value-streams/vs-01-access-care.md
+maps_to: []
+implements: []
+applies_to: ["cap-01", "cap-04"]
+related: ["vs-01"]
+tags: ["caesn", "niveau-1", "processus-metier", "prc-01"]
+---
+# PRC-01 — Reconnaissance du besoin et orientation
+
+## Objectif
+
+Réaliser l'étape de valeur « Reconnaissance du besoin et orientation » du flux VS-01.
+
+## Entrées
+
+Symptôme ou besoin ressenti par le patient
+
+## Sorties
+
+Patient orienté vers le niveau de soins approprié
+
+## Acteurs
+
+Patient, famille, agent de santé communautaire
+
+## Ruptures fréquentes
+
+Méconnaissance des services, distance géographique, coût perçu dissuasif
+
+## Indicateurs
+
+Taux de recours aux soins, délai moyen d'accès à une formation sanitaire
+
+## Liens
+
+- [VS-01 — Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../flux-valeur/vs-01.md)
+- [CAP-01 — Offre de soins et continuité des services](../capabilites/cap-01.md)
+- [CAP-04 — Santé communautaire et engagement des communautés](../capabilites/cap-04.md)

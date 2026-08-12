@@ -1,0 +1,45 @@
+---
+id: prc-05
+type: processus-metier
+niveau: "1"
+title: PRC-05 — Référence et contre-référence
+status: draft
+owner: Direction des soins
+version: "0.0.1"
+source: 00_caesn/01_value-streams/vs-01-access-care.md
+maps_to: []
+implements: []
+applies_to: ["cap-02"]
+related: ["vs-01"]
+tags: ["caesn", "niveau-1", "processus-metier", "prc-05"]
+---
+# PRC-05 — Référence et contre-référence
+
+## Objectif
+
+Réaliser l'étape de valeur « Référence et contre-référence » du flux VS-01.
+
+## Entrées
+
+Décision médicale de référer
+
+## Sorties
+
+Patient reçu au niveau supérieur avec son dossier, information retournée à la formation d'origine
+
+## Acteurs
+
+Formation sanitaire référente, formation cible, système de transport
+
+## Ruptures fréquentes
+
+Référence effectuée sans dossier, absence de transport, absence de retour d'information
+
+## Indicateurs
+
+Taux de référence complétée avec retour d'information
+
+## Liens
+
+- [VS-01 — Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../flux-valeur/vs-01.md)
+- [CAP-02 — Gestion du parcours patient, référence et contre-référence](../capabilites/cap-02.md)

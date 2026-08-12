@@ -1,0 +1,46 @@
+---
+id: prc-14
+type: processus-metier
+niveau: "1"
+title: PRC-14 — Capitalisation et amélioration
+status: draft
+owner: Direction de la protection sociale et de la promotion de la santé
+version: "0.0.1"
+source: 00_caesn/01_value-streams/vs-02-risk-protection.md
+maps_to: []
+implements: []
+applies_to: ["cap-05", "cap-13"]
+related: ["vs-02"]
+tags: ["caesn", "niveau-1", "processus-metier", "prc-14"]
+---
+# PRC-14 — Capitalisation et amélioration
+
+## Objectif
+
+Réaliser l'étape de valeur « Capitalisation et amélioration » du flux VS-02.
+
+## Entrées
+
+Bilan de l'épisode
+
+## Sorties
+
+Leçons documentées, protocoles mis à jour, plan de préparation renforcé
+
+## Acteurs
+
+Direction centrale, comité technique national
+
+## Ruptures fréquentes
+
+Revues après action non systématiques, recommandations non suivies d'effet
+
+## Indicateurs
+
+Nombre de revues après action, proportion de recommandations mises en œuvre
+
+## Liens
+
+- [VS-02 — Prévenir, détecter et répondre aux risques sanitaires](../flux-valeur/vs-02.md)
+- [CAP-05 — Surveillance épidémiologique, alerte, investigation et riposte](../capabilites/cap-05.md)
+- [CAP-13 — Système d'information sanitaire, données et recherche](../capabilites/cap-13.md)

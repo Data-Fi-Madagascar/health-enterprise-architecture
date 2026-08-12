@@ -42,6 +42,147 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 | VS-04 | Gestion du portefeuille numérique | Registre des initiatives, suivi des financements, alignement stratégique, maturité des capabilités, bénéfices | CAP-16, 08, 13 |
 | Tous les VS | Référentiels nationaux et services partagés | FOSA, géographie, indicateurs, agents, produits, bénéficiaires, terminologies, identité, accès, consentement | CAP-13, 14, 15 |
 
+## Composants applicatifs cibles
+
+<!-- BEGIN:GENERATED source=referentiel/composants/cmp-01.md,referentiel/composants/cmp-02.md,referentiel/composants/cmp-03.md,referentiel/composants/cmp-04.md,referentiel/composants/cmp-05.md,referentiel/composants/cmp-06.md,referentiel/composants/cmp-07.md,referentiel/composants/cmp-08.md,referentiel/composants/cmp-09.md,referentiel/composants/cmp-10.md,referentiel/composants/cmp-11.md -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+
+### CMP-01 — Dossier patient et parcours de soins
+
+#### Services numériques
+
+Identification patient, dossier de soins, historique, consultation, référence, contre-référence, suivi
+
+#### Flux de valeur soutenus
+
+- [VS-01 — Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md)
+
+*Rattachement : [PRC-02](../../referentiel/processus/prc-02.md), [PRC-03](../../referentiel/processus/prc-03.md), [PRC-05](../../referentiel/processus/prc-05.md), [PRC-06](../../referentiel/processus/prc-06.md), [CAP-INT-01](../../referentiel/capacites/cap-int-01.md), [CAP-INT-03](../../referentiel/capacites/cap-int-03.md), [ART-4A](../../referentiel/chapitres/art-4a.md), [ART-2](../../referentiel/chapitres/art-2.md) · [fiche](../../referentiel/composants/cmp-01.md)*
+
+### CMP-02 — Système d'information hospitalier et formation sanitaire
+
+#### Services numériques
+
+Admissions, consultations, actes, services, statistiques opérationnelles
+
+#### Flux de valeur soutenus
+
+- [VS-01 — Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md)
+
+*Rattachement : [PRC-02](../../referentiel/processus/prc-02.md), [PRC-03](../../referentiel/processus/prc-03.md), [PRC-04](../../referentiel/processus/prc-04.md), [CAP-INT-03](../../referentiel/capacites/cap-int-03.md), [ART-1](../../referentiel/chapitres/art-1.md) · [fiche](../../referentiel/composants/cmp-02.md)*
+
+### CMP-03 — Santé communautaire
+
+#### Services numériques
+
+Suivi communautaire, sensibilisation, remontée d'alertes, visites à domicile, suivi des ménages, supervision
+
+#### Flux de valeur soutenus
+
+- [VS-01 — Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md)
+- [VS-02 — Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md)
+
+*Rattachement : [PRC-01](../../referentiel/processus/prc-01.md), [PRC-06](../../referentiel/processus/prc-06.md), [PRC-08](../../referentiel/processus/prc-08.md), [PRC-09](../../referentiel/processus/prc-09.md), [CAP-INT-03](../../referentiel/capacites/cap-int-03.md), [ART-8D](../../referentiel/chapitres/art-8d.md) · [fiche](../../referentiel/composants/cmp-03.md)*
+
+### CMP-04 — Surveillance épidémiologique et riposte
+
+#### Services numériques
+
+Notification des cas, alertes, investigation, confirmation, riposte, clôture
+
+#### Flux de valeur soutenus
+
+- [VS-02 — Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md)
+
+*Rattachement : [PRC-09](../../referentiel/processus/prc-09.md), [PRC-10](../../referentiel/processus/prc-10.md), [PRC-11](../../referentiel/processus/prc-11.md), [PRC-12](../../referentiel/processus/prc-12.md), [PRC-13](../../referentiel/processus/prc-13.md), [CAP-INT-03](../../referentiel/capacites/cap-int-03.md), [CAP-INT-07](../../referentiel/capacites/cap-int-07.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-8D](../../referentiel/chapitres/art-8d.md) · [fiche](../../referentiel/composants/cmp-04.md)*
+
+### CMP-05 — Vaccination, prévention et promotion de la santé
+
+#### Services numériques
+
+Registre vaccinal, suivi des campagnes, rappels, couverture, chaîne du froid
+
+#### Flux de valeur soutenus
+
+- [VS-02 — Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md)
+
+*Rattachement : [PRC-08](../../referentiel/processus/prc-08.md), [PRC-09](../../referentiel/processus/prc-09.md), [CAP-INT-05](../../referentiel/capacites/cap-int-05.md), [ART-4](../../referentiel/chapitres/art-4.md) · [fiche](../../referentiel/composants/cmp-05.md)*
+
+### CMP-06 — Couverture santé universelle et gestion des bénéficiaires
+
+#### Services numériques
+
+Enregistrement des bénéficiaires, vérification des droits, exemptions, panier de soins, éligibilité
+
+#### Flux de valeur soutenus
+
+- [VS-03 — Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md)
+
+*Rattachement : [PRC-15](../../referentiel/processus/prc-15.md), [PRC-16](../../referentiel/processus/prc-16.md), [PRC-18](../../referentiel/processus/prc-18.md), [CAP-INT-01](../../referentiel/capacites/cap-int-01.md), [CAP-INT-09](../../referentiel/capacites/cap-int-09.md), [ART-4C](../../referentiel/chapitres/art-4c.md) · [fiche](../../referentiel/composants/cmp-06.md)*
+
+### CMP-07 — Facturation, remboursement et achat stratégique
+
+#### Services numériques
+
+Facturation des prestations, validation, remboursement, contrôle, audit, suivi des coûts
+
+#### Flux de valeur soutenus
+
+- [VS-03 — Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md)
+
+*Rattachement : [PRC-19](../../referentiel/processus/prc-19.md), [PRC-20](../../referentiel/processus/prc-20.md), [PRC-21](../../referentiel/processus/prc-21.md), [CAP-INT-03](../../referentiel/capacites/cap-int-03.md), [CAP-INT-10](../../referentiel/capacites/cap-int-10.md), [ART-8C](../../referentiel/chapitres/art-8c.md), [ART-9](../../referentiel/chapitres/art-9.md) · [fiche](../../referentiel/composants/cmp-07.md)*
+
+### CMP-08 — Logistique et chaîne d'approvisionnement
+
+#### Services numériques
+
+Gestion des stocks, commandes, distribution, ruptures, traçabilité, chaîne du froid
+
+#### Flux de valeur soutenus
+
+- [VS-01 — Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md)
+- [VS-02 — Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md)
+- [VS-04 — Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md)
+
+*Rattachement : [PRC-04](../../referentiel/processus/prc-04.md), [PRC-12](../../referentiel/processus/prc-12.md), [PRC-18](../../referentiel/processus/prc-18.md), [CAP-INT-05](../../referentiel/capacites/cap-int-05.md), [ART-8C](../../referentiel/chapitres/art-8c.md), [ART-10](../../referentiel/chapitres/art-10.md) · [fiche](../../referentiel/composants/cmp-08.md)*
+
+### CMP-09 — Ressources humaines en santé
+
+#### Services numériques
+
+Référentiel agents, affectation, disponibilité, formation, supervision, compétences
+
+#### Flux de valeur soutenus
+
+- [VS-04 — Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md)
+
+*Rattachement : [PRC-22](../../referentiel/processus/prc-22.md), [PRC-23](../../referentiel/processus/prc-23.md), [PRC-25](../../referentiel/processus/prc-25.md), [CAP-INT-02](../../referentiel/capacites/cap-int-02.md), [ART-4](../../referentiel/chapitres/art-4.md) · [fiche](../../referentiel/composants/cmp-09.md)*
+
+### CMP-10 — Entrepôt national de données et tableaux de bord
+
+#### Services numériques
+
+Consolidation, analyse, indicateurs, visualisation, revues de performance
+
+#### Flux de valeur soutenus
+
+- [VS-04 — Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md)
+
+*Rattachement : [PRC-07](../../referentiel/processus/prc-07.md), [PRC-14](../../referentiel/processus/prc-14.md), [PRC-21](../../referentiel/processus/prc-21.md), [PRC-25](../../referentiel/processus/prc-25.md), [PRC-26](../../referentiel/processus/prc-26.md), [PRC-27](../../referentiel/processus/prc-27.md), [CAP-INT-07](../../referentiel/capacites/cap-int-07.md), [CAP-INT-11](../../referentiel/capacites/cap-int-11.md), [ART-6](../../referentiel/chapitres/art-6.md) · [fiche](../../referentiel/composants/cmp-10.md)*
+
+### CMP-11 — Gestion du portefeuille numérique
+
+#### Services numériques
+
+Registre des initiatives, suivi des financements, alignement stratégique, maturité des capabilités, bénéfices
+
+#### Flux de valeur soutenus
+
+- [VS-04 — Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md)
+
+*Rattachement : [PRC-22](../../referentiel/processus/prc-22.md), [PRC-24](../../referentiel/processus/prc-24.md), [PRC-28](../../referentiel/processus/prc-28.md), [CAP-INT-06](../../referentiel/capacites/cap-int-06.md), [CAP-INT-12](../../referentiel/capacites/cap-int-12.md), [ART-8D](../../referentiel/chapitres/art-8d.md) · [fiche](../../referentiel/composants/cmp-11.md)*
+
+<!-- END:GENERATED -->
 ## Liens
 
 - [Paysage applicatif cible](./layers.md)

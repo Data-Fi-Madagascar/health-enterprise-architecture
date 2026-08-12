@@ -25,7 +25,7 @@ tags: [flux-de-valeur, value-stream]
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
-<!-- BEGIN:GENERATED -->
+<!-- BEGIN:GENERATED mode=monographie source=referentiel/flux-valeur/vs-02.md -->
 <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
 
 ## Valeur produite
@@ -64,7 +64,209 @@ Ce flux couvre l’ensemble du cycle de la santé publique, depuis l’identific
 - [CAP-14](../../referentiel/capabilites/cap-14.md)
 - [CAP-15](../../referentiel/capabilites/cap-15.md)
 
-*Rattachement : [CAP-04](../../referentiel/capabilites/cap-04.md), [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-06](../../referentiel/capabilites/cap-06.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md) · [fiche](../../referentiel/flux-valeur/vs-02.md)*
+*Rattachement : [CAP-04](../../referentiel/capabilites/cap-04.md), [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-06](../../referentiel/capabilites/cap-06.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-04](../../referentiel/parties-prenantes/pp-04.md), [PP-07](../../referentiel/parties-prenantes/pp-07.md), [PP-08](../../referentiel/parties-prenantes/pp-08.md) · [fiche](../../referentiel/flux-valeur/vs-02.md)*
+
+<!-- END:GENERATED -->
+## Processus métier
+
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-08.md,referentiel/processus/prc-09.md,referentiel/processus/prc-10.md,referentiel/processus/prc-11.md,referentiel/processus/prc-12.md,referentiel/processus/prc-13.md,referentiel/processus/prc-14.md -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+
+### PRC-08 — Identification des risques et promotion de la santé
+
+#### Objectif
+
+Réaliser l'étape de valeur « Identification des risques et promotion de la santé » du flux VS-02.
+
+#### Entrées
+
+Profil épidémiologique national et local
+
+#### Sorties
+
+Plan de prévention et programme de communication en santé
+
+#### Acteurs
+
+Direction de la Protection Sociale et de la Promotion de la Santé, programmes, agents communautaires
+
+#### Ruptures fréquentes
+
+Données épidémiologiques non agrégées ou non actualisées, faible couverture communautaire
+
+#### Indicateurs
+
+Couverture des campagnes de prévention, taux de vaccination
+
+*Rattachement : [CAP-06](../../referentiel/capabilites/cap-06.md), [CAP-04](../../referentiel/capabilites/cap-04.md) · [fiche](../../referentiel/processus/prc-08.md)*
+
+### PRC-09 — Surveillance et détection
+
+#### Objectif
+
+Réaliser l'étape de valeur « Surveillance et détection » du flux VS-02.
+
+#### Entrées
+
+Données de routine des formations sanitaires et rapports communautaires
+
+#### Sorties
+
+Signaux sanitaires identifiés et validés
+
+#### Acteurs
+
+Formations sanitaires, agents communautaires, laboratoires
+
+#### Ruptures fréquentes
+
+Sous-déclaration des cas, rapports incomplets ou hors délais
+
+#### Indicateurs
+
+Complétude et promptitude des rapports, taux de signaux détectés
+
+*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/processus/prc-09.md)*
+
+### PRC-10 — Notification et alerte
+
+#### Objectif
+
+Réaliser l'étape de valeur « Notification et alerte » du flux VS-02.
+
+#### Entrées
+
+Signal sanitaire validé
+
+#### Sorties
+
+Alerte formellement notifiée aux autorités compétentes dans les délais
+
+#### Acteurs
+
+District sanitaire, région, direction centrale, OMS
+
+#### Ruptures fréquentes
+
+Délai de notification trop long, chaîne d'alerte défaillante
+
+#### Indicateurs
+
+Délai moyen de notification d'une alerte
+
+*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/processus/prc-10.md)*
+
+### PRC-11 — Vérification et investigation
+
+#### Objectif
+
+Réaliser l'étape de valeur « Vérification et investigation » du flux VS-02.
+
+#### Entrées
+
+Alerte notifiée
+
+#### Sorties
+
+Alerte confirmée ou infirmée, cas investigués, source identifiée
+
+#### Acteurs
+
+Équipe d'investigation, laboratoire national de référence
+
+#### Ruptures fréquentes
+
+Capacité d'investigation insuffisante, réactifs manquants, accès géographique difficile
+
+#### Indicateurs
+
+Délai d'investigation, proportion d'alertes vérifiées dans les délais
+
+*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/processus/prc-11.md)*
+
+### PRC-12 — Riposte
+
+#### Objectif
+
+Réaliser l'étape de valeur « Riposte » du flux VS-02.
+
+#### Entrées
+
+Alerte confirmée
+
+#### Sorties
+
+Mesures de contrôle déployées, populations protégées
+
+#### Acteurs
+
+Direction centrale, régions, districts, partenaires internationaux
+
+#### Ruptures fréquentes
+
+Ressources de riposte insuffisantes, coordination inter-agences défaillante
+
+#### Indicateurs
+
+Délai de déploiement de la riposte, taux de contrôle de l'épidémie
+
+*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md) · [fiche](../../referentiel/processus/prc-12.md)*
+
+### PRC-13 — Suivi de situation et clôture
+
+#### Objectif
+
+Réaliser l'étape de valeur « Suivi de situation et clôture » du flux VS-02.
+
+#### Entrées
+
+Riposte en cours
+
+#### Sorties
+
+Situation sous contrôle, bilan épidémiologique documenté
+
+#### Acteurs
+
+Comité de gestion de crise, direction centrale
+
+#### Ruptures fréquentes
+
+Manque de données en temps réel, communication insuffisante vers la population
+
+#### Indicateurs
+
+Taux de létalité, durée de l'épisode épidémique
+
+*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/processus/prc-13.md)*
+
+### PRC-14 — Capitalisation et amélioration
+
+#### Objectif
+
+Réaliser l'étape de valeur « Capitalisation et amélioration » du flux VS-02.
+
+#### Entrées
+
+Bilan de l'épisode
+
+#### Sorties
+
+Leçons documentées, protocoles mis à jour, plan de préparation renforcé
+
+#### Acteurs
+
+Direction centrale, comité technique national
+
+#### Ruptures fréquentes
+
+Revues après action non systématiques, recommandations non suivies d'effet
+
+#### Indicateurs
+
+Nombre de revues après action, proportion de recommandations mises en œuvre
+
+*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/processus/prc-14.md)*
 
 <!-- END:GENERATED -->
 ## Liens
