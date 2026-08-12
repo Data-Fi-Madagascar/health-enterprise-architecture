@@ -57,28 +57,6 @@ Les chapitres constituent le **cadre normatif opposable** par le Ministère de l
 | ART-11 | Coordination intersectorielle | — | candidate | [fiche](../../referentiel/chapitres/art-11.md) |
 
 <!-- END:GENERATED -->
-## Chapitres en cours d'instruction
-
-<!-- BEGIN:GENERATED source=referentiel/chapitres/art-10.md,referentiel/chapitres/art-11.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
-
-**Statut : candidate**
-
-### ART-10 — Logistique
-
-Chapitre référencé par la matrice d’alignement PTISN (§2) mais absent de l’ARTSN. Créé en `status: candidate` pendant le refactor. À instruire par la gouvernance ART-SN (chaîne d’approvisionnement, produits de santé).
-
-*Rattachement : — · [fiche](../../referentiel/chapitres/art-10.md)*
-
-**Statut : candidate**
-
-### ART-11 — Coordination intersectorielle
-
-Chapitre référencé par le PTISN (PT-01, PT-11) et la matrice d’alignement (§2) mais absent de l’ARTSN. Créé en `status: candidate` pendant le refactor. À instruire par la gouvernance ART-SN.
-
-*Rattachement : — · [fiche](../../referentiel/chapitres/art-11.md)*
-
-<!-- END:GENERATED -->
 ## Statuts
 
 Les chapitres évoluent selon trois statuts : **Stable** (contrat pleinement opposable lors d'une homologation), **Provisoire** (oriente la conception sans être un contrat opposable) et **Proposition ouverte** (hypothèse à confirmer par une ou plusieurs initiatives indépendantes). Voir la [table de maturité](../07_annexes/a-table-de-maturite.md) et la [gouvernance](../06_gouvernance.md).

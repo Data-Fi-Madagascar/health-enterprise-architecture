@@ -82,21 +82,29 @@ Discipline **existentielle** : elle seule permet au Comité National (CNASN) de 
 
 *Rattachement : [CAP-INT-12](../referentiel/capacites/cap-int-12.md), [CAP-16](../referentiel/capabilites/cap-16.md) · [fiche](../referentiel/fondations/f-4.md)*
 
-**Statut : candidate**
-
 ### F.5 — Protection et minimisation
 
-Objet référencé par le PTISN (PT-12) mais absent de l’ARTSN. Créé en `status: candidate` pendant le refactor en référence aux principes CNISN de minimisation, résidence et non-réplication (P-INT-16, P-INT-17). À instruire par la gouvernance ART-SN.
+**Contenu normatif.** La protection des données de santé ne repose pas sur la captation massive mais sur la minimisation : l'architecture impose de ne collecter, traiter et conserver que les données strictement nécessaires à la finalité documentée. La résidence de la donnée sur le territoire national et la non-réplication hors du périmètre autorisé sont des obligations : chaque flux précise sa finalité, sa base légale et sa durée de conservation, et tout traitement excédant le besoin est proscrit.
 
-*Rattachement : — · [fiche](../referentiel/fondations/f-5.md)*
+**Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (systèmes partenaires, prestataires, terrains) : elle seule permet de limiter l'exposition des données de santé en cas de fuite ou de compromission et de respecter la loi sans rompre le pipeline.
 
-**Statut : candidate**
+- **Rattachement** : [CAP-15](../referentiel/capabilites/cap-15.md) (cybersécurité, confidentialité, gouvernance des données personnelles).
+- **Déduit selon** : [P-INT-16](../referentiel/principes/p-int-16.md) (résidence et non-réplication), [P-INT-17](../referentiel/principes/p-int-17.md) (minimisation).
+- **Statut : Provisoire.**
+
+*Rattachement : [CAP-15](../referentiel/capabilites/cap-15.md) · [fiche](../referentiel/fondations/f-5.md)*
 
 ### F.6 — Observabilité
 
-Objet référencé par le PTISN (PT-12) mais absent de l’ARTSN. Créé en `status: candidate` pendant le refactor en référence au principe CNISN de traçabilité différenciée (P-INT-18). À instruire par la gouvernance ART-SN.
+**Contenu normatif.** La conduite du système sanitaire numérique exige une observabilité continue de bout en bout : événements, flux, traitements et accès doivent être tracés selon des niveaux différenciés (métadonnées de traçabilité, journaux d'audit immuables, indicateurs de fonctionnement). L'architecture impose que chaque composant expose des signaux de santé opérationnelle (disponibilité, latence, taux d'erreur, complétude des flux) exploitables par l'entrepôt national de données et les tableaux de bord.
 
-*Rattachement : — · [fiche](../referentiel/fondations/f-6.md)*
+**Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (systèmes partenaires, périphérie) : elle seule permet de détecter, diagnostiquer et corriger les défaillances d'un pipeline distribué et asynchrone sans rompre le pipeline.
+
+- **Rattachement** : [CAP-13](../referentiel/capabilites/cap-13.md) (SIS, données, analytique).
+- **Déduit selon** : [P-INT-18](../referentiel/principes/p-int-18.md) (traçabilité différenciée).
+- **Statut : Provisoire.**
+
+*Rattachement : [CAP-13](../referentiel/capabilites/cap-13.md) · [fiche](../referentiel/fondations/f-6.md)*
 
 <!-- END:GENERATED -->
 ## Liens
