@@ -2,9 +2,11 @@
 title: Schéma du référentiel
 id: schema-referentiel
 type: meta
+niveau: "0"
 status: draft
 version: "1.0"
 owner: DEPSI
+source: referentiel/_schema.md
 tags: ["referentiel", "schema", "gouvernance"]
 ---
 
