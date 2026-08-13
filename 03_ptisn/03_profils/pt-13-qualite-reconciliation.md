@@ -71,6 +71,6 @@ Les règles de qualité doivent rester :
 
 ------------------------------------------------------------------------
 
-*Rattachement : [CAP-INT-11](../../referentiel/capacites/cap-int-11.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-5](../../referentiel/chapitres/art-5.md), [ART-6](../../referentiel/chapitres/art-6.md) · [fiche](../../referentiel/profils/pt-13.md)*
+*Rattachement : [CMP-05](../../referentiel/composants/cmp-05.md), [CAP-INT-11](../../referentiel/capacites/cap-int-11.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-5](../../referentiel/chapitres/art-5.md), [ART-6](../../referentiel/chapitres/art-6.md) · [fiche](../../referentiel/profils/pt-13.md)*
 
 <!-- END:GENERATED -->

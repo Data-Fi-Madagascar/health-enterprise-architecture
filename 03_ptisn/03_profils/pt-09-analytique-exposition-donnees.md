@@ -84,6 +84,6 @@ Son architecture ne devient pas automatiquement obligatoire pour toutes les init
 
 ------------------------------------------------------------------------
 
-*Rattachement : [CAP-INT-07](../../referentiel/capacites/cap-int-07.md), [ART-3](../../referentiel/chapitres/art-3.md), [ART-5](../../referentiel/chapitres/art-5.md), [ART-6](../../referentiel/chapitres/art-6.md), [ART-7](../../referentiel/chapitres/art-7.md) · [fiche](../../referentiel/profils/pt-09.md)*
+*Rattachement : [CMP-03](../../referentiel/composants/cmp-03.md), [CMP-04](../../referentiel/composants/cmp-04.md), [CAP-INT-07](../../referentiel/capacites/cap-int-07.md), [ART-3](../../referentiel/chapitres/art-3.md), [ART-5](../../referentiel/chapitres/art-5.md), [ART-6](../../referentiel/chapitres/art-6.md), [ART-7](../../referentiel/chapitres/art-7.md) · [fiche](../../referentiel/profils/pt-09.md)*
 
 <!-- END:GENERATED -->

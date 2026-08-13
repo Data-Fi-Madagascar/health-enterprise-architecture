@@ -84,6 +84,6 @@ Les correspondances entre identifiants DHIS2 et identifiants nationaux doivent �
 
 ------------------------------------------------------------------------
 
-*Rattachement : [CAP-INT-04](../../referentiel/capacites/cap-int-04.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-5](../../referentiel/chapitres/art-5.md), [ART-6](../../referentiel/chapitres/art-6.md) · [fiche](../../referentiel/profils/pt-06.md)*
+*Rattachement : [CMP-08](../../referentiel/composants/cmp-08.md), [CAP-INT-04](../../referentiel/capacites/cap-int-04.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-5](../../referentiel/chapitres/art-5.md), [ART-6](../../referentiel/chapitres/art-6.md) · [fiche](../../referentiel/profils/pt-06.md)*
 
 <!-- END:GENERATED -->

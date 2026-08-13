@@ -291,7 +291,7 @@ Districts sanitaires, communes, fokontany, gestionnaires du registre, Ministère
 
 Taux de couverture du registre, taux d'exclusion estimé, proportion de formations sanitaires informées des droits
 
-*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [CAP-16](../../referentiel/capabilites/cap-16.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md) · [fiche](../../referentiel/processus/prc-07.md)*
+*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [CAP-16](../../referentiel/capabilites/cap-16.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md), [CMP-03](../../referentiel/composants/cmp-03.md), [CMP-05](../../referentiel/composants/cmp-05.md), [CMP-09](../../referentiel/composants/cmp-09.md), [CMP-10](../../referentiel/composants/cmp-10.md), [CMP-16](../../referentiel/composants/cmp-16.md) · [fiche](../../referentiel/processus/prc-07.md)*
 
 ### PRC-08 — Financement et exemption au point de service
 
@@ -312,7 +312,7 @@ Ministère de l'Économie et des Finances, Ministère de la Santé, partenaires,
 
 Taux d'exécution budgétaire, part du budget santé allouée à la protection financière, taux d'exemption appliqué, taux de refus de soins signalés
 
-*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [CAP-16](../../referentiel/capabilites/cap-16.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md) · [fiche](../../referentiel/processus/prc-08.md)*
+*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [CAP-16](../../referentiel/capabilites/cap-16.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md), [CMP-03](../../referentiel/composants/cmp-03.md), [CMP-05](../../referentiel/composants/cmp-05.md), [CMP-09](../../referentiel/composants/cmp-09.md), [CMP-10](../../referentiel/composants/cmp-10.md), [CMP-16](../../referentiel/composants/cmp-16.md) · [fiche](../../referentiel/processus/prc-08.md)*
 
 ### PRC-09 — Remboursement et régulation des mécanismes
 
@@ -334,7 +334,7 @@ Gestionnaire de la formation sanitaire, vérificateur, fonds de remboursement, f
 
 Taux de factures rejetées, délai de validation des factures, délai moyen de remboursement, taux de remboursement effectif, proportion de contrôles réalisés, montant des anomalies détectées
 
-*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [CAP-16](../../referentiel/capabilites/cap-16.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md) · [fiche](../../referentiel/processus/prc-09.md)*
+*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [CAP-16](../../referentiel/capabilites/cap-16.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md), [CMP-03](../../referentiel/composants/cmp-03.md), [CMP-12](../../referentiel/composants/cmp-12.md) · [fiche](../../referentiel/processus/prc-09.md)*
 
 <!-- END:GENERATED -->
 ## Liens

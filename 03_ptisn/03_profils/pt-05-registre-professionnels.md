@@ -79,6 +79,6 @@ Un utilisateur authentifié ne doit pas être considéré comme professionnel ha
 
 ------------------------------------------------------------------------
 
-*Rattachement : [CAP-INT-02](../../referentiel/capacites/cap-int-02.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-4A](../../referentiel/chapitres/art-4a.md), [ART-7](../../referentiel/chapitres/art-7.md) · [fiche](../../referentiel/profils/pt-05.md)*
+*Rattachement : [CMP-13](../../referentiel/composants/cmp-13.md), [CAP-INT-02](../../referentiel/capacites/cap-int-02.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-4A](../../referentiel/chapitres/art-4a.md), [ART-7](../../referentiel/chapitres/art-7.md) · [fiche](../../referentiel/profils/pt-05.md)*
 
 <!-- END:GENERATED -->

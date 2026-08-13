@@ -82,6 +82,6 @@ Authentification
 
 ------------------------------------------------------------------------
 
-*Rattachement : [CAP-INT-08](../../referentiel/capacites/cap-int-08.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-4B](../../referentiel/chapitres/art-4b.md), [ART-7](../../referentiel/chapitres/art-7.md), [ART-9](../../referentiel/chapitres/art-9.md) · [fiche](../../referentiel/profils/pt-10.md)*
+*Rattachement : [CMP-15](../../referentiel/composants/cmp-15.md), [CAP-INT-08](../../referentiel/capacites/cap-int-08.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-4B](../../referentiel/chapitres/art-4b.md), [ART-7](../../referentiel/chapitres/art-7.md), [ART-9](../../referentiel/chapitres/art-9.md) · [fiche](../../referentiel/profils/pt-10.md)*
 
 <!-- END:GENERATED -->

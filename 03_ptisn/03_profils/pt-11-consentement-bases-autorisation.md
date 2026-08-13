@@ -68,6 +68,6 @@ Selon le contexte, un traitement peut reposer sur :
 
 ------------------------------------------------------------------------
 
-*Rattachement : [CAP-INT-09](../../referentiel/capacites/cap-int-09.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-4B](../../referentiel/chapitres/art-4b.md), [ART-7](../../referentiel/chapitres/art-7.md), [ART-11](../../referentiel/chapitres/art-11.md) · [fiche](../../referentiel/profils/pt-11.md)*
+*Rattachement : [CMP-12](../../referentiel/composants/cmp-12.md), [CAP-INT-09](../../referentiel/capacites/cap-int-09.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-4B](../../referentiel/chapitres/art-4b.md), [ART-7](../../referentiel/chapitres/art-7.md), [ART-11](../../referentiel/chapitres/art-11.md) · [fiche](../../referentiel/profils/pt-11.md)*
 
 <!-- END:GENERATED -->

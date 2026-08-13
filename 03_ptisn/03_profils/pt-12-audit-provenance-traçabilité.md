@@ -91,6 +91,6 @@ Un journal technique ne doit pas être utilisé comme seul mécanisme de preuve 
 
 ------------------------------------------------------------------------
 
-*Rattachement : [CAP-INT-10](../../referentiel/capacites/cap-int-10.md), [F-1](../../referentiel/fondations/f-1.md), [F-5](../../referentiel/fondations/f-5.md), [F-6](../../referentiel/fondations/f-6.md), [ART-3](../../referentiel/chapitres/art-3.md), [ART-7](../../referentiel/chapitres/art-7.md) · [fiche](../../referentiel/profils/pt-12.md)*
+*Rattachement : [CMP-17](../../referentiel/composants/cmp-17.md), [CAP-INT-10](../../referentiel/capacites/cap-int-10.md), [F-1](../../referentiel/fondations/f-1.md), [F-5](../../referentiel/fondations/f-5.md), [F-6](../../referentiel/fondations/f-6.md), [ART-3](../../referentiel/chapitres/art-3.md), [ART-7](../../referentiel/chapitres/art-7.md) · [fiche](../../referentiel/profils/pt-12.md)*
 
 <!-- END:GENERATED -->

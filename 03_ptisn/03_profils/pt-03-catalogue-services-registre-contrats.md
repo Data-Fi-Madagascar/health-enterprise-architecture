@@ -83,6 +83,6 @@ Aucun produit national n’est encore retenu.
 
 ------------------------------------------------------------------------
 
-*Rattachement : [CAP-INT-06](../../referentiel/capacites/cap-int-06.md), [F-3](../../referentiel/fondations/f-3.md), [F-4](../../referentiel/fondations/f-4.md), [ART-1](../../referentiel/chapitres/art-1.md), [ART-2](../../referentiel/chapitres/art-2.md) · [fiche](../../referentiel/profils/pt-03.md)*
+*Rattachement : [CMP-16](../../referentiel/composants/cmp-16.md), [CAP-INT-06](../../referentiel/capacites/cap-int-06.md), [F-3](../../referentiel/fondations/f-3.md), [F-4](../../referentiel/fondations/f-4.md), [ART-1](../../referentiel/chapitres/art-1.md), [ART-2](../../referentiel/chapitres/art-2.md) · [fiche](../../referentiel/profils/pt-03.md)*
 
 <!-- END:GENERATED -->

@@ -90,6 +90,6 @@ L’adoption d’une terminologie internationale doit être précédée d’une 
 
 ------------------------------------------------------------------------
 
-*Rattachement : [CAP-INT-05](../../referentiel/capacites/cap-int-05.md), [ART-2](../../referentiel/chapitres/art-2.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-5](../../referentiel/chapitres/art-5.md) · [fiche](../../referentiel/profils/pt-07.md)*
+*Rattachement : [CMP-10](../../referentiel/composants/cmp-10.md), [CAP-INT-05](../../referentiel/capacites/cap-int-05.md), [ART-2](../../referentiel/chapitres/art-2.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-5](../../referentiel/chapitres/art-5.md) · [fiche](../../referentiel/profils/pt-07.md)*
 
 <!-- END:GENERATED -->
