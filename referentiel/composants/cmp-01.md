@@ -2,40 +2,23 @@
 id: cmp-01
 type: composant-applicatif
 niveau: "1"
-title: CMP-01 — Dossier patient et parcours de soins
+title: CMP-01 — Tableaux de bord & Portails nationaux (performance, CSU, ressources, veille)
 status: draft
-owner: Direction des Systèmes d'Information
+owner: DEPSI
 version: "0.0.1"
-source: 00_caesn/05_application/application-domains.md
-maps_to: ["cap-int-01", "cap-int-03"]
-implements: ["art-4a", "art-2"]
-applies_to: ["prc-01", "prc-02", "prc-03"]
-related: ["enf-1", "enf-3", "cap-01", "cap-02", "cap-03", "cap-14", "cap-15", "vs-01"]
-tags: ["caesn", "niveau-1", "composant-applicatif", "cmp-01"]
+source: 02_artsn/04_cartographie-cible.md
+maps_to: ["cap-int-07", "cap-int-11"]
+implements: ["art-6"]
+applies_to: ["prc-10", "prc-11", "prc-12"]
+related: ["enf-5", "cap-13", "cap-16", "vs-04"]
+tags: ["artsn", "niveau-1", "composant-applicatif", "cmp-01", "couche-6"]
 ---
-# CMP-01 — Dossier patient et parcours de soins
+# CMP-01 — Tableaux de bord & Portails nationaux
 
-## Services numériques
+**Contenu normatif.** Agrège les projections analytiques (Couche 5) et expose des tableaux de bord unifiés pour le pilotage national : performance sanitaire, suivi CSU, gestion des ressources, veille environnementale. Accès cloisonné par profil (décideurs, SIS, partenaires). Interopère avec l'entrepôt Lakehouse (CMP-03) et le moteur analytique (CMP-04).
 
-Identification patient, dossier de soins, historique, consultation, référence, contre-référence, suivi
+**Discipline existentielle.** Seule source de vérité décisionnelle pour l'État ; tout indicateur officiel transite par ce composant. Garantit l'unicité des métriques et la traçabilité des calculs.
 
-## Flux de valeur soutenus
-
-- [VS-01 — Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../flux-valeur/vs-01.md)
-
-## Liens
-
-- [CAP-01 — Offre de soins et continuité des services](../capabilites/cap-01.md)
-- [CAP-02 — Gestion du parcours patient, référence et contre-référence](../capabilites/cap-02.md)
-- [CAP-03 — Qualité, sécurité des soins et amélioration continue](../capabilites/cap-03.md)
-- [CAP-14 — Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../capabilites/cap-14.md)
-- [CAP-15 — Cybersécurité, confidentialité et gouvernance des données personnelles](../capabilites/cap-15.md)
-- [PRC-01](../processus/prc-01.md)
-- [PRC-02](../processus/prc-02.md)
-- [PRC-03](../processus/prc-03.md)
-- [CAP-INT-01 — Résolution d'identité du bénéficiaire](../capacites/cap-int-01.md)
-- [CAP-INT-03 — Échange et médiation inter-systèmes](../capacites/cap-int-03.md)
-- [ART-4A — Résolution d'identité](../chapitres/art-4a.md)
-- [ART-2 — Médiation et normalisation](../chapitres/art-2.md)
-- [ENF-1 — Résilience à l'instabilité réseau](../exigences/enf-1.md)
-- [ENF-3 — Unicité de l'identité et résilience face à la fragmentation applicative](../exigences/enf-3.md)
+- **Rattachement** : [ART-6](../chapitres/art-6.md) (projections analytiques), [CAP-INT-07](../capacites/cap-int-07.md), [CAP-INT-11](../capacites/cap-int-11.md).
+- **Processus soutenus** : [PRC-10](../processus/prc-10.md) (planification), [PRC-11](../processus/prc-11.md) (pilotage performance), [PRC-12](../processus/prc-12.md) (redevabilité).
+- **Statut : Stable.**

@@ -2,34 +2,23 @@
 id: cmp-09
 type: composant-applicatif
 niveau: "1"
-title: CMP-09 — Ressources humaines en santé
+title: CMP-09 — Référentiel des métadonnées d'exploitation (ART-4)
 status: draft
-owner: Direction des Systèmes d'Information
+owner: DEPSI
 version: "0.0.1"
-source: 00_caesn/05_application/application-domains.md
-maps_to: ["cap-int-02"]
+source: 02_artsn/04_cartographie-cible.md
+maps_to: ["cap-int-09"]
 implements: ["art-4"]
-applies_to: ["prc-10", "prc-11"]
-related: ["enf-1", "cap-09", "cap-13", "cap-14", "vs-04"]
-tags: ["caesn", "niveau-1", "composant-applicatif", "cmp-09"]
+applies_to: ["prc-07", "prc-08"]
+related: ["enf-4", "cap-09", "vs-03"]
+tags: ["artsn", "niveau-1", "composant-applicatif", "cmp-09", "couche-4"]
 ---
-# CMP-09 — Ressources humaines en santé
+# CMP-09 — Référentiel des métadonnées d'exploitation (ART-4)
 
-## Services numériques
+**Contenu normatif.** Définit et gère les métadonnées d'exploitation : nomenclatures, codifications, standards de données. Assure l'interopérabilité sémantique entre les systèmes. Garantit l'utilisation cohérente des terminologies et classifications.
 
-Référentiel agents, affectation, disponibilité, formation, supervision, compétences
+**Discipline existentielle.** Autorité sémantique de la plateforme. Toute définition de donnée clinique ou administrative passe par ce référentiel. Garantit l'unicité des définitions à l'échelle nationale.
 
-## Flux de valeur soutenus
-
-- [VS-04 — Piloter, coordonner et améliorer la performance du système de santé](../flux-valeur/vs-04.md)
-
-## Liens
-
-- [CAP-09 — Gestion des ressources humaines en santé](../capabilites/cap-09.md)
-- [CAP-13 — Système d'information sanitaire, données et recherche](../capabilites/cap-13.md)
-- [CAP-14 — Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../capabilites/cap-14.md)
-- [PRC-10](../processus/prc-10.md)
-- [PRC-11](../processus/prc-11.md)
-- [CAP-INT-02 — Registre et résolution des professionnels de santé](../capacites/cap-int-02.md)
-- [ART-4 — Référentiels de métadonnées de gestion](../chapitres/art-4.md)
-- [ENF-1 — Résilience à l'instabilité réseau](../exigences/enf-1.md)
+- **Rattachement** : [ART-4](../chapitres/art-4.md) (référentiel des métadonnées), [CAP-INT-09](../capacites/cap-int-09.md).
+- **Processus soutenus** : [PRC-07](../processus/prc-07.md) (production données), [PRC-08](../processus/prc-08.md) (qualité).
+- **Statut : Stable.**

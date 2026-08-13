@@ -2,37 +2,23 @@
 id: cmp-03
 type: composant-applicatif
 niveau: "1"
-title: CMP-03 — Santé communautaire
+title: CMP-03 — Entrepôt Lakehouse & Projections analytiques (pipeline ETL, Lakehouse, projections)
 status: draft
-owner: Direction des Systèmes d'Information
+owner: DEPSI
 version: "0.0.1"
-source: 00_caesn/05_application/application-domains.md
-maps_to: ["cap-int-03"]
-implements: ["art-8d"]
-applies_to: ["prc-01", "prc-03", "prc-04"]
-related: ["enf-1", "enf-4", "cap-04", "cap-05", "cap-06", "vs-01", "vs-02"]
-tags: ["caesn", "niveau-1", "composant-applicatif", "cmp-03"]
+source: 02_artsn/04_cartographie-cible.md
+maps_to: ["cap-int-07", "cap-int-11"]
+implements: ["art-6", "art-9"]
+applies_to: ["prc-09", "prc-11"]
+related: ["enf-5", "cap-13", "cap-16", "vs-04"]
+tags: ["artsn", "niveau-1", "composant-applicatif", "cmp-03", "couche-5"]
 ---
-# CMP-03 — Santé communautaire
+# CMP-03 — Entrepôt Lakehouse & Projections analytiques
 
-## Services numériques
+**Contenu normatif.** Stockage analytique central (Lakehouse) recevant les flux ETL depuis la Couche 4. Exécute les projections tabulaires, la réconciliation du Grand Livre (ART-9) et alimente les tableaux de bord (CMP-01). Séparation stricte CQRS (ART-6) : aucun traitement transactionnel.
 
-Suivi communautaire, sensibilisation, remontée d'alertes, visites à domicile, suivi des ménages, supervision
+**Discipline existentielle.** Garantit l'intégrité analytique (ENF-5) et l'irréversibilité du masquage des identités. Toute analyse officielle passe par cet entrepôt.
 
-## Flux de valeur soutenus
-
-- [VS-01 — Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../flux-valeur/vs-01.md)
-- [VS-02 — Prévenir, détecter et répondre aux risques sanitaires](../flux-valeur/vs-02.md)
-
-## Liens
-
-- [CAP-04 — Santé communautaire et engagement des communautés](../capabilites/cap-04.md)
-- [CAP-05 — Surveillance épidémiologique, alerte, investigation et riposte](../capabilites/cap-05.md)
-- [CAP-06 — Vaccination, prévention et promotion de la santé](../capabilites/cap-06.md)
-- [PRC-01](../processus/prc-01.md)
-- [PRC-03](../processus/prc-03.md)
-- [PRC-04](../processus/prc-04.md)
-- [CAP-INT-03 — Échange et médiation inter-systèmes](../capacites/cap-int-03.md)
-- [ART-8D — Chorégraphie inter-institutionnelle](../chapitres/art-8d.md)
-- [ENF-1 — Résilience à l'instabilité réseau](../exigences/enf-1.md)
-- [ENF-4 — Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../exigences/enf-4.md)
+- **Rattachement** : [ART-6](../chapitres/art-6.md) (CQRS), [ART-9](../chapitres/art-9.md) (Grand Livre), [CAP-INT-07](../capacites/cap-int-07.md), [CAP-INT-11](../capacites/cap-int-11.md).
+- **Processus soutenus** : [PRC-09](../processus/prc-09.md) (remboursement), [PRC-11](../processus/prc-11.md) (pilotage).
+- **Statut : Stable.**

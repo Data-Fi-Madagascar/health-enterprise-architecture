@@ -2,36 +2,23 @@
 id: cmp-07
 type: composant-applicatif
 niveau: "1"
-title: CMP-07 — Facturation, remboursement et achat stratégique
+title: CMP-07 — Orchestrateur de parcours & Gestionnaire de Sagas (ART-8a)
 status: draft
-owner: Direction des Systèmes d'Information
+owner: DEPSI
 version: "0.0.1"
-source: 00_caesn/05_application/application-domains.md
-maps_to: ["cap-int-03", "cap-int-10"]
-implements: ["art-8c", "art-9"]
-applies_to: ["prc-09"]
-related: ["enf-2", "cap-07", "cap-08", "cap-12", "cap-13", "vs-03"]
-tags: ["caesn", "niveau-1", "composant-applicatif", "cmp-07"]
+source: 02_artsn/04_cartographie-cible.md
+maps_to: ["cap-int-08"]
+implements: ["art-8a"]
+applies_to: ["prc-04", "prc-05", "prc-06"]
+related: ["enf-3", "cap-08", "vs-02"]
+tags: ["artsn", "niveau-1", "composant-applicatif", "cmp-07", "couche-4"]
 ---
-# CMP-07 — Facturation, remboursement et achat stratégique
+# CMP-07 — Orchestrateur de parcours & Gestionnaire de Sagas (ART-8a)
 
-## Services numériques
+**Contenu normatif.** Orchestre les flux inter-systèmes en gérant les transactions distribuées (Sagas) et les compensations. Garantit la cohérence des parcours patient跨机构跨系统跨部门. Assure la résilience des workflows cliniques critiques.
 
-Facturation des prestations, validation, remboursement, contrôle, audit, suivi des coûts
+**Discipline existentielle.** Point de coordination central pour tous les flux transactionnels : toute opération multi-systèmes transite par cet orchestrateur. Garantit l'atomicité logique des parcours complexes.
 
-## Flux de valeur soutenus
-
-- [VS-03 — Protéger financièrement la population face aux dépenses de santé](../flux-valeur/vs-03.md)
-
-## Liens
-
-- [CAP-07 — Protection financière, couverture santé universelle](../capabilites/cap-07.md)
-- [CAP-08 — Gouvernance institutionnelle, planification, coordination et redevabilité](../capabilites/cap-08.md)
-- [CAP-12 — Finances publiques, budget et allocation des ressources](../capabilites/cap-12.md)
-- [CAP-13 — Système d'information sanitaire, données et recherche](../capabilites/cap-13.md)
-- [PRC-09](../processus/prc-09.md)
-- [CAP-INT-03 — Échange et médiation inter-systèmes](../capacites/cap-int-03.md)
-- [CAP-INT-10 — Provenance, audit et traçabilité](../capacites/cap-int-10.md)
-- [ART-8C — Agrégation par lot](../chapitres/art-8c.md)
-- [ART-9 — Garanties transactionnelles fortes](../chapitres/art-9.md)
-- [ENF-2 — Intégrité des flux et traçabilité des valeurs](../exigences/enf-2.md)
+- **Rattachement** : [ART-8a](../chapitres/art-8a.md) (orchestrateur de parcours), [CAP-INT-08](../capacites/cap-int-08.md).
+- **Processus soutenus** : [PRC-04](../processus/prc-04.md) (soins), [PRC-05](../processus/prc-05.md) (pharmacie), [PRC-06](../processus/prc-06.md) (logistique).
+- **Statut : Stable.**

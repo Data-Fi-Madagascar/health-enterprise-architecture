@@ -2,39 +2,23 @@
 id: cmp-10
 type: composant-applicatif
 niveau: "1"
-title: CMP-10 — Entrepôt national de données et tableaux de bord
+title: CMP-10 — Registre des terminologies
 status: draft
-owner: Direction des Systèmes d'Information
+owner: DEPSI
 version: "0.0.1"
-source: 00_caesn/05_application/application-domains.md
-maps_to: ["cap-int-07", "cap-int-11"]
-implements: ["art-6"]
-applies_to: ["prc-03", "prc-06", "prc-09", "prc-11", "prc-12"]
-related: ["enf-1", "enf-5", "cap-13", "cap-08", "cap-16", "vs-04"]
-tags: ["caesn", "niveau-1", "composant-applicatif", "cmp-10"]
+source: 02_artsn/04_cartographie-cible.md
+maps_to: ["cap-int-09"]
+implements: ["art-4"]
+applies_to: ["prc-07", "prc-08"]
+related: ["enf-4", "cap-09", "vs-03"]
+tags: ["artsn", "niveau-1", "composant-applicatif", "cmp-10", "couche-4"]
 ---
-# CMP-10 — Entrepôt national de données et tableaux de bord
+# CMP-10 — Registre des terminologies
 
-## Services numériques
+**Contenu normatif.** Gère les terminologies médicales et de référence (CIM-10, SNOMED CT, LOINC, ATC, etc.). Assure la mapping sémantique entre les systèmes. Fournit les services de traduction et de validation des codages.
 
-Consolidation, analyse, indicateurs, visualisation, revues de performance
+**Discipline existentielle.** Pont sémantique entre les systèmes hétérogènes. Garantit que les données codées dans un système sont interprétables et exploitables par un autre.
 
-## Flux de valeur soutenus
-
-- [VS-04 — Piloter, coordonner et améliorer la performance du système de santé](../flux-valeur/vs-04.md)
-
-## Liens
-
-- [CAP-13 — Système d'information sanitaire, données et recherche](../capabilites/cap-13.md)
-- [CAP-08 — Gouvernance institutionnelle, planification, coordination et redevabilité](../capabilites/cap-08.md)
-- [CAP-16 — Gestion du portefeuille d'initiatives numériques](../capabilites/cap-16.md)
-- [PRC-03](../processus/prc-03.md)
-- [PRC-06](../processus/prc-06.md)
-- [PRC-09](../processus/prc-09.md)
-- [PRC-11](../processus/prc-11.md)
-- [PRC-12](../processus/prc-12.md)
-- [CAP-INT-07 — Accès et exposition des données analytiques](../capacites/cap-int-07.md)
-- [CAP-INT-11 — Qualité et réconciliation](../capacites/cap-int-11.md)
-- [ART-6 — Analytique et restitution](../chapitres/art-6.md)
-- [ENF-1 — Résilience à l'instabilité réseau](../exigences/enf-1.md)
-- [ENF-5 — Coordination des processus complexes décentralisés et asynchrones](../exigences/enf-5.md)
+- **Rattachement** : [ART-4](../chapitres/art-4.md) (référentiel des métadonnées), [CAP-INT-09](../capacites/cap-int-09.md).
+- **Processus soutenus** : [PRC-07](../processus/prc-07.md) (production données), [PRC-08](../processus/prc-08.md) (qualité).
+- **Statut : Stable.**

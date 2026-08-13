@@ -2,35 +2,22 @@
 id: cmp-06
 type: composant-applicatif
 niveau: "1"
-title: CMP-06 — Couverture santé universelle et gestion des bénéficiaires
+title: CMP-06 — Intégration, Médiation, API Gateway, Broker & Registre schémas
 status: draft
-owner: Direction des Systèmes d'Information
+owner: DEPSI
 version: "0.0.1"
-source: 00_caesn/05_application/application-domains.md
-maps_to: ["cap-int-01", "cap-int-09"]
-implements: ["art-4c"]
-applies_to: ["prc-07", "prc-08"]
-related: ["enf-3", "cap-07", "cap-14", "cap-15", "vs-03"]
-tags: ["caesn", "niveau-1", "composant-applicatif", "cmp-06"]
+source: 02_artsn/04_cartographie-cible.md
+maps_to: ["cap-int-01", "cap-int-03"]
+implements: ["art-1", "art-2", "f-3"]
+applies_to: []
+related: ["enf-1", "enf-3", "cap-13", "cap-14", "cap-15", "vs-01", "vs-02", "vs-03", "vs-04"]
+tags: ["artsn", "niveau-1", "composant-applicatif", "cmp-06", "couche-4"]
 ---
-# CMP-06 — Couverture santé universelle et gestion des bénéficiaires
+# CMP-06 — Intégration, Médiation, API Gateway, Broker & Registre schémas
 
-## Services numériques
+**Contenu normatif.** Point d'entrée unique de la plateforme : API Gateway (contrats, throttling, authentification), message broker asynchrone (files d'attente, durabilité), registre de schémas (F.3 — versioning, compatibilité ascendante/descendante), moteur de médiation sémantique (ART-2 — transformation, normalisation, enrichissement).
 
-Enregistrement des bénéficiaires, vérification des droits, exemptions, panier de soins, éligibilité
+**Discipline existentielle.** Bordure de la plateforme ; tout flux entrant/sortant traverse ce composant. Garantit l'éradication des silos (F.3) et la conformité aux contrats (ENF-1, ENF-3).
 
-## Flux de valeur soutenus
-
-- [VS-03 — Protéger financièrement la population face aux dépenses de santé](../flux-valeur/vs-03.md)
-
-## Liens
-
-- [CAP-07 — Protection financière, couverture santé universelle](../capabilites/cap-07.md)
-- [CAP-14 — Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../capabilites/cap-14.md)
-- [CAP-15 — Cybersécurité, confidentialité et gouvernance des données personnelles](../capabilites/cap-15.md)
-- [PRC-07](../processus/prc-07.md)
-- [PRC-08](../processus/prc-08.md)
-- [CAP-INT-01 — Résolution d'identité du bénéficiaire](../capacites/cap-int-01.md)
-- [CAP-INT-09 — Gestion des consentements et bases d'autorisation](../capacites/cap-int-09.md)
-- [ART-4C — Éligibilité et couverture](../chapitres/art-4c.md)
-- [ENF-3 — Unicité de l'identité et résilience face à la fragmentation applicative](../exigences/enf-3.md)
+- **Rattachement** : [ART-1](../chapitres/art-1.md) (ingestion), [ART-2](../chapitres/art-2.md) (médiation), [F.3](../fondations/f-3.md) (schémas), [CAP-INT-01](../capacites/cap-int-01.md), [CAP-INT-03](../capacites/cap-int-03.md).
+- **Statut : Stable.**

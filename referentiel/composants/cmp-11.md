@@ -2,35 +2,23 @@
 id: cmp-11
 type: composant-applicatif
 niveau: "1"
-title: CMP-11 — Gestion du portefeuille numérique
+title: CMP-11 — Registre des clients / Index National des Patients (INP — ART-4a)
 status: draft
-owner: Direction des Systèmes d'Information
+owner: DEPSI
 version: "0.0.1"
-source: 00_caesn/05_application/application-domains.md
-maps_to: ["cap-int-06", "cap-int-12"]
-implements: ["art-8d"]
-applies_to: ["prc-10", "prc-12"]
-related: ["enf-5", "cap-16", "cap-08", "cap-13", "vs-04"]
-tags: ["caesn", "niveau-1", "composant-applicatif", "cmp-11"]
+source: 02_artsn/04_cartographie-cible.md
+maps_to: ["cap-int-09"]
+implements: ["art-4a"]
+applies_to: ["prc-04", "prc-05", "prc-06"]
+related: ["enf-3", "cap-09", "vs-02"]
+tags: ["artsn", "niveau-1", "composant-applicatif", "cmp-11", "couche-4"]
 ---
-# CMP-11 — Gestion du portefeuille numérique
+# CMP-11 — Registre des clients / Index National des Patients (INP — ART-4a)
 
-## Services numériques
+**Contenu normatif.** Gère l'identité unique des patients à l'échelle nationale. Assure la déduplication et le matching des identités. Fournit les services de recherche et d'identification des patients.
 
-Registre des initiatives, suivi des financements, alignement stratégique, maturité des capabilités, bénéfices
+**Discipline existentielle.** Identité nationale de référence pour tous les systèmes de santé. Toute identification patient transite par cet index. Garantit l'unicité et la cohérence des identités.
 
-## Flux de valeur soutenus
-
-- [VS-04 — Piloter, coordonner et améliorer la performance du système de santé](../flux-valeur/vs-04.md)
-
-## Liens
-
-- [CAP-16 — Gestion du portefeuille d'initiatives numériques](../capabilites/cap-16.md)
-- [CAP-08 — Gouvernance institutionnelle, planification, coordination et redevabilité](../capabilites/cap-08.md)
-- [CAP-13 — Système d'information sanitaire, données et recherche](../capabilites/cap-13.md)
-- [PRC-10](../processus/prc-10.md)
-- [PRC-12](../processus/prc-12.md)
-- [CAP-INT-06 — Catalogue des services et registre des contrats](../capacites/cap-int-06.md)
-- [CAP-INT-12 — Conformité et tests d'interopérabilité](../capacites/cap-int-12.md)
-- [ART-8D — Chorégraphie inter-institutionnelle](../chapitres/art-8d.md)
-- [ENF-5 — Coordination des processus complexes décentralisés et asynchrones](../exigences/enf-5.md)
+- **Rattachement** : [ART-4a](../chapitres/art-4a.md) (INP), [CAP-INT-09](../capacites/cap-int-09.md).
+- **Processus soutenus** : [PRC-04](../processus/prc-04.md) (soins), [PRC-05](../processus/prc-05.md) (pharmacie), [PRC-06](../processus/prc-06.md) (logistique).
+- **Statut : Stable.**

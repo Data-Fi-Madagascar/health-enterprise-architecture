@@ -566,7 +566,7 @@
   chemin: processus/prc-12.md
   status: draft
 
-# composants applicatifs (13)
+# composants applicatifs (18)
 - id: cmp-01
   type: composant-applicatif
   niveau: "1"
@@ -631,6 +631,31 @@
   type: composant-applicatif
   niveau: "1"
   chemin: composants/cmp-13.md
+  status: draft
+- id: cmp-14
+  type: composant-applicatif
+  niveau: "1"
+  chemin: composants/cmp-14.md
+  status: draft
+- id: cmp-15
+  type: composant-applicatif
+  niveau: "1"
+  chemin: composants/cmp-15.md
+  status: draft
+- id: cmp-16
+  type: composant-applicatif
+  niveau: "1"
+  chemin: composants/cmp-16.md
+  status: draft
+- id: cmp-17
+  type: composant-applicatif
+  niveau: "1"
+  chemin: composants/cmp-17.md
+  status: draft
+- id: cmp-18
+  type: composant-applicatif
+  niveau: "1"
+  chemin: composants/cmp-18.md
   status: draft
 
 # parties prenantes (10)

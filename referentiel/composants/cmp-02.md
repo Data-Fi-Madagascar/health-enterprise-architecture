@@ -2,34 +2,23 @@
 id: cmp-02
 type: composant-applicatif
 niveau: "1"
-title: CMP-02 — Système d'information hospitalier et formation sanitaire
+title: CMP-02 — Centre de commande & Crises intersectorielles (alertes, crises, veille)
 status: draft
-owner: Direction des Systèmes d'Information
+owner: DEPSI
 version: "0.0.1"
-source: 00_caesn/05_application/application-domains.md
-maps_to: ["cap-int-03"]
-implements: ["art-1"]
-applies_to: ["prc-01", "prc-02"]
-related: ["enf-1", "cap-01", "cap-03", "cap-13", "vs-01"]
-tags: ["caesn", "niveau-1", "composant-applicatif", "cmp-02"]
+source: 02_artsn/04_cartographie-cible.md
+maps_to: ["cap-int-07"]
+implements: ["art-5", "art-0"]
+applies_to: ["prc-05", "prc-11"]
+related: ["enf-2", "cap-05", "cap-06", "vs-02", "vs-04"]
+tags: ["artsn", "niveau-1", "composant-applicatif", "cmp-02", "couche-6"]
 ---
-# CMP-02 — Système d'information hospitalier et formation sanitaire
+# CMP-02 — Centre de commande & Crises intersectorielles
 
-## Services numériques
+**Contenu normatif.** Centre unique de supervision des alertes épidémiques et de coordination des crises intersectorielles (santé, élevage, environnement). Agrège les signaux de la surveillance (CMP-14), du moteur d'alertes (CMP-04) et des registres de gouvernance (CMP-17). Fournit une vue temps réel pour la prise de décision multi-ministérielle.
 
-Admissions, consultations, actes, services, statistiques opérationnelles
+**Discipline existentielle.** Point de convergence obligatoire pour toute riposte coordonnée ; sans lui, les secteurs agissent en silos et la riposte est fragmentée.
 
-## Flux de valeur soutenus
-
-- [VS-01 — Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../flux-valeur/vs-01.md)
-
-## Liens
-
-- [CAP-01 — Offre de soins et continuité des services](../capabilites/cap-01.md)
-- [CAP-03 — Qualité, sécurité des soins et amélioration continue](../capabilites/cap-03.md)
-- [CAP-13 — Système d'information sanitaire, données et recherche](../capabilites/cap-13.md)
-- [PRC-01](../processus/prc-01.md)
-- [PRC-02](../processus/prc-02.md)
-- [CAP-INT-03 — Échange et médiation inter-systèmes](../capacites/cap-int-03.md)
-- [ART-1 — Intégration et ingestion](../chapitres/art-1.md)
-- [ENF-1 — Résilience à l'instabilité réseau](../exigences/enf-1.md)
+- **Rattachement** : [ART-5](../chapitres/art-5.md) (routeur alertes), [ART-0](../chapitres/art-0.md) (accords partage), [CAP-INT-07](../capacites/cap-int-07.md).
+- **Processus soutenus** : [PRC-05](../processus/prc-05.md) (alerte/investigation/riposte), [PRC-11](../processus/prc-11.md) (pilotage performance).
+- **Statut : Stable.**

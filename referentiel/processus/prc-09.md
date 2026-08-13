@@ -9,7 +9,7 @@ version: "0.0.1"
 source: 00_caesn/01_value-streams/vs-03-financial-protection.md
 maps_to: []
 implements: []
-applies_to: ["cap-07", "cap-08", "cap-12", "cap-13", "cap-14", "cap-15", "cap-16", "pp-02", "pp-03", "pp-06"]
+applies_to: ["cap-07", "cap-08", "cap-12", "cap-13", "cap-14", "cap-15", "cap-16", "pp-02", "pp-03", "pp-06", "cmp-03", "cmp-12"]
 related: ["ev-19", "ev-20", "ev-21", "vs-03"]
 tags: ["caesn", "niveau-1", "processus-metier", "prc-09"]
 ---

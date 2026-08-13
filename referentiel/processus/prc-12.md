@@ -9,7 +9,7 @@ version: "0.0.1"
 source: 00_caesn/01_value-streams/vs-04-system-steering.md
 maps_to: []
 implements: []
-applies_to: ["cap-03", "cap-08", "cap-09", "cap-12", "cap-13", "cap-14", "cap-15", "cap-16", "pp-03", "pp-07", "pp-08", "pp-09", "pp-10"]
+applies_to: ["cap-03", "cap-08", "cap-09", "cap-12", "cap-13", "cap-14", "cap-15", "cap-16", "pp-03", "pp-07", "pp-08", "pp-09", "pp-10", "cmp-01"]
 related: ["ev-27", "ev-28", "vs-04"]
 tags: ["caesn", "niveau-1", "processus-metier", "prc-12"]
 ---

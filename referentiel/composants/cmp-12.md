@@ -2,42 +2,23 @@
 id: cmp-12
 type: composant-applicatif
 niveau: "1"
-title: CMP-12 — Référentiels nationaux et données de référence
+title: CMP-12 — Registre d'éligibilité et de couverture (CSU — ART-4c)
 status: draft
-owner: Direction des Systèmes d'Information
+owner: DEPSI
 version: "0.0.1"
-source: 00_caesn/05_application/shared-services.md
-maps_to: ["cap-int-02", "cap-int-04", "cap-int-05"]
-implements: ["art-4", "art-4d"]
-applies_to: ["prc-01", "prc-07", "prc-10"]
-related: ["enf-1", "enf-3", "cap-13", "cap-14", "cap-15", "vs-01", "vs-02", "vs-03", "vs-04"]
-tags: ["caesn", "niveau-1", "composant-applicatif", "cmp-12"]
+source: 02_artsn/04_cartographie-cible.md
+maps_to: ["cap-int-09"]
+implements: ["art-4c"]
+applies_to: ["prc-09", "prc-10"]
+related: ["enf-5", "cap-09", "vs-04"]
+tags: ["artsn", "niveau-1", "composant-applicatif", "cmp-12", "couche-4"]
 ---
-# CMP-12 — Référentiels nationaux et données de référence
+# CMP-12 — Registre d'éligibilité et de couverture (CSU — ART-4c)
 
-## Services numériques
+**Contenu normatif.** Gère les données d'éligibilité et de couverture santé (CSU). Assure la vérification en temps réel des droits des patients. Fournit les services de contrôle d'éligibilité pour les applications métier.
 
-FOSA, géographie, produits de santé, indicateurs, agents, bénéficiaires, terminologies
+**Discipline existentielle.** Autorité de vérification des droits. Toute opération de soins nécessitant une vérification de couverture transite par ce registre. Garantit la conformité financière.
 
-## Flux de valeur soutenus
-
-- [VS-01 — Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../flux-valeur/vs-01.md)
-- [VS-02 — Prévenir, détecter et répondre aux risques sanitaires](../flux-valeur/vs-02.md)
-- [VS-03 — Protéger financièrement la population face aux dépenses de santé](../flux-valeur/vs-03.md)
-- [VS-04 — Piloter, coordonner et améliorer la performance du système de santé](../flux-valeur/vs-04.md)
-
-## Liens
-
-- [CAP-13 — Système d'information sanitaire, données et recherche](../capabilites/cap-13.md)
-- [CAP-14 — Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../capabilites/cap-14.md)
-- [CAP-15 — Cybersécurité, confidentialité et gouvernance des données personnelles](../capabilites/cap-15.md)
-- [PRC-01](../processus/prc-01.md)
-- [PRC-07](../processus/prc-07.md)
-- [PRC-10](../processus/prc-10.md)
-- [CAP-INT-02 — Registre et résolution des professionnels de santé](../capacites/cap-int-02.md)
-- [CAP-INT-04 — Référentiel des structures et services de santé](../capacites/cap-int-04.md)
-- [CAP-INT-05 — Terminologie et codification communes](../capacites/cap-int-05.md)
-- [ART-4 — Référentiels de métadonnées de gestion](../chapitres/art-4.md)
-- [ART-4D — Référentiel géospatial et d'exploitation partagé](../chapitres/art-4d.md)
-- [ENF-1 — Résilience à l'instabilité réseau](../exigences/enf-1.md)
-- [ENF-3 — Unicité de l'identité et résilience face à la fragmentation applicative](../exigences/enf-3.md)
+- **Rattachement** : [ART-4c](../chapitres/art-4c.md) (éligibilité/couverture), [CAP-INT-09](../capacites/cap-int-09.md).
+- **Processus soutenus** : [PRC-09](../processus/prc-09.md) (finance), [PRC-10](../processus/prc-10.md) (planification).
+- **Statut : Stable.**
