@@ -47,7 +47,7 @@ La cartographie est structurée en **six couches horizontales** (de l'infrastruc
 **Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (cellules de crise multi-ministérielles, directions stratégiques) : elle seule permet de garantir que les décisions politiques s'appuient sur une vision macro-sanitaire unifiée, épurée de toute altération, sans rompre le pipeline.
 
 - **Rattachement** : support du flux de valeur 4 ([VS-04](./01_flux-de-valeur.md#vs-04--piloter-coordonner-et-améliorer-la-performance-du-système-de-santé)).
-- **Composants associés** : tableaux de bord de performance sanitaire nationale, portail de suivi de la CSU, portail de gestion des ressources du système, centre de commande des alertes épidémiques, plateforme de gestion des crises intersectorielles, portail de veille environnementale et sanitaire.
+- **Composants associés** : [CMP-01](../referentiel/composants/cmp-01.md) tableaux de bord de performance sanitaire nationale, portail de suivi de la CSU, portail de gestion des ressources du système, [CMP-02](../referentiel/composants/cmp-02.md) centre de commande des alertes épidémiques, plateforme de gestion des crises intersectorielles, portail de veille environnementale et sanitaire.
 - **Statut : Stable.**
 
 ## Couche 5 — Projections analytiques et Modèles
@@ -57,7 +57,7 @@ La cartographie est structurée en **six couches horizontales** (de l'infrastruc
 **Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (modèles prédictifs d'IA, requêtes lourdes des chercheurs, algorithmes de transmission) : elle seule permet d'exécuter des analyses de masse longitudinales transversales sans jamais ralentir les serveurs de soins et sans exposer l'identité des citoyens, sans rompre le pipeline.
 
 - **Rattachement** : application physique directe du pattern CQRS ([ART-6](../referentiel/chapitres/art-6.md)).
-- **Composants associés** : pipeline d'ingestion ETL, moteur d'IA prédictive, routeur d'escalade et d'alertes (ART-5), entrepôt Lakehouse / projections tabulaires, moteur de graphes (Graph Store — ART-8b), référentiel spatio-temporel (ART-4d), réconciliation analytique (Grand Livre — ART-9).
+- **Composants associés** : pipeline d'ingestion ETL, moteur d'IA prédictive, routeur d'escalade et d'alertes (ART-5), [CMP-03](../referentiel/composants/cmp-03.md) entrepôt Lakehouse / projections tabulaires, [CMP-04](../referentiel/composants/cmp-04.md) moteur d'IA prédictive, [CMP-05](../referentiel/composants/cmp-05.md) moteur de graphes (Graph Store — ART-8b), référentiel spatio-temporel (ART-4d), réconciliation analytique (Grand Livre — ART-9).
 - **Statut : Stable.**
 
 ## Couche 4 — Interopérabilité et services partagés
@@ -67,7 +67,7 @@ La cartographie est structurée en **six couches horizontales** (de l'infrastruc
 **Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (échanges cliniques immédiats, consultations, identitovigilance probabiliste) : elle seule permet de recevoir et de valider la conformité des données médicales à la milliseconde et de fournir un dossier patient unique partagé sécurisé, sans rompre le pipeline.
 
 - **Rattachement** : exécution de la source de vérité au présent (Profil B d'[ART-3](../referentiel/chapitres/art-3.md)) et des Référentiels Nationaux ([ART-4](../referentiel/chapitres/art-4.md)).
-- **Composants associés** : moteur d'intégration & médiation (ART-2), orchestrateur de parcours / gestionnaire de Sagas (ART-8a), répertoire de données cliniques opérationnelles, référentiel des métadonnées d'exploitation (ART-4), registre des terminologies, registre des clients / Index National des Patients (INP — ART-4a), registre d'éligibilité et de couverture (CSU — ART-4c), registre des personnels, registre des produits, intrants et indicateurs.
+- **Composants associés** : [CMP-06](../referentiel/composants/cmp-06.md) moteur d'intégration & médiation (ART-2), [CMP-07](../referentiel/composants/cmp-07.md) orchestrateur de parcours / gestionnaire de Sagas (ART-8a), [CMP-08](../referentiel/composants/cmp-08.md) répertoire de données cliniques opérationnelles, [CMP-09](../referentiel/composants/cmp-09.md) référentiel des métadonnées d'exploitation (ART-4), [CMP-10](../referentiel/composants/cmp-10.md) registre des terminologies, [CMP-11](../referentiel/composants/cmp-11.md) registre des clients / Index National des Patients (INP — ART-4a), [CMP-12](../referentiel/composants/cmp-12.md) registre d'éligibilité et de couverture (CSU — ART-4c), [CMP-13](../referentiel/composants/cmp-13.md) registre des personnels, [CMP-14](../referentiel/composants/cmp-14.md) registre des produits, intrants et indicateurs.
 - **Statut : Stable.**
 
 ## Couche 3 — Échange, transport et ingestion
@@ -77,7 +77,7 @@ La cartographie est structurée en **six couches horizontales** (de l'infrastruc
 **Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (connexions simultanées de milliers d'applications de terrain, micro-coupures télécoms) : elle seule permet d'encaisser la charge et de garantir la livraison des messages sans perte vers les couches supérieures, sans rompre le pipeline.
 
 - **Rattachement** : exécution technique du transport asynchrone ([ART-1](../referentiel/chapitres/art-1.md) et [F.3](../referentiel/fondations/f-3.md)).
-- **Composants associés** : API Gateway, registre de schémas (F.3), message broker asynchrone, compensateur / regroupeur de flux (Netting — ART-8c).
+- **Composants associés** : [CMP-15](../referentiel/composants/cmp-15.md) API Gateway, [CMP-16](../referentiel/composants/cmp-16.md) registre de schémas (F.3), [CMP-17](../referentiel/composants/cmp-17.md) message broker asynchrone, [CMP-18](../referentiel/composants/cmp-18.md) compensateur / regroupeur de flux (Netting — ART-8c).
 - **Statut : Stable.**
 
 ## Couche 2 — Point de service
