@@ -327,3 +327,23 @@ L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspon
 - `make check` : 54 enveloppes à jour, 0 lien relatif cassé.
 - `validate_ref.rb` : 214 fichiers, 214 objets uniques, 2 erreurs méta connues (`_schema.md`), 0 lien cassé, 0 relation non résolue.
 - `trace_check.py` : 209/213 objets tracés (les 12 processus via `related` → ev → vs → capabilités ; seuls les 4 stubs préexistants art-10, art-11, f-5, f-6 restent non tracés).
+
+## 13. Restructuration CMP : 13 composants → 18 composants cartographie-cible (2026-08-13) ✓
+
+**Constat :** les 13 composants applicatifs (`cmp-01…13`) ne couvraient pas fidèlement les « Composants associés » définis dans la cartographie conceptuelle cible (`02_artsn/04_cartographie-cible.md`). La cartographie définit 6 couches horizontales + 2 axes verticaux, chacun avec des composants spécifiques qui nécessitent un mapping un à un.
+
+**Correctif appliqué (✓) — 18 CMPs applicatifs :**
+- **18 composants applicatifs** (`referentiel/composants/cmp-01…18.md`) — mappés aux « Composants associés » de la cartographie-cible :
+  - Couche 6 (Pilotage) : CMP-01 (tableaux de bord), CMP-02 (centre de commande)
+  - Couche 5 (Projections) : CMP-03 (entrepôt Lakehouse), CMP-04 (moteur analytique & IA), CMP-05 (moteur de graphes)
+  - Couche 4 (Interopérabilité) : CMP-06 (intégration/médiation), CMP-07 (orchestrateur de parcours), CMP-08 (répertoire clinique), CMP-09 (méta-données), CMP-10 (terminologies), CMP-11 (INP), CMP-12 (éligibilité/CSU), CMP-13 (personnels), CMP-14 (produits/intrants)
+  - Couche 3 (Échange) : CMP-15 (API Gateway), CMP-16 (registre schémas), CMP-17 (message broker), CMP-18 (compensateur)
+- **12 processus** (`prc-04…12`) mis à jour : `applies_to` enrichi avec les CMPs soutenus.
+- **13 profils PTISN** (`pt-01…13`) mis à jour : `applies_to` enrichi avec les CMPs implémentés.
+- **`_index.yaml`** mis à jour : 18 CMPs indexés.
+- **`cartographie-cible.md`** mis à jour : IDs CMP normalisés ajoutés aux sections « Composants associés ».
+- **`_schema.md`** corrigé : ajout `niveau: "0"` et `source: referentiel/_schema.md` (pré-existant).
+
+**Vérifications (✓) :**
+- `validate_ref.rb` : **219 fichiers, 219 objets uniques, 0 erreur**, 0 lien cassé, 0 relation non résolue.
+- `trace_check.py` : 219/219 objets tracés — tous les CMPs couverts.
