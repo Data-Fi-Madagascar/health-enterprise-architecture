@@ -6,7 +6,7 @@ title: P-INT-03 — Copies locales non autoritatives
 status: active
 owner: DEPSI
 version: "0.5"
-source: 01_cnisn/01_principes.md
+source: 01_cnisn/01_principes/index.md
 maps_to: ["cap-14"]
 implements: []
 applies_to: []

@@ -7,7 +7,7 @@ status: active
 owner: DEPSI
 version: "0.5"
 family: referentiels
-source: 01_cnisn/02_capacites.md
+source: 01_cnisn/02_capacites/index.md
 maps_to: ["p-int-01", "p-int-02", "p-int-03", "p-int-04", "p-int-14", "p-int-15", "p-int-16", "p-int-17", "p-int-18", "cap-02", "cap-14"]
 implements: []
 applies_to: []

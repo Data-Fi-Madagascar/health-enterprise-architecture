@@ -7,7 +7,7 @@ status: active
 owner: DEPSI
 version: "0.5"
 family: echange
-source: 01_cnisn/02_capacites.md
+source: 01_cnisn/02_capacites/index.md
 maps_to: ["p-int-05", "p-int-06", "p-int-07", "p-int-08", "p-int-09", "p-int-23", "p-int-24", "p-int-25", "cap-14", "cap-16"]
 implements: []
 applies_to: []

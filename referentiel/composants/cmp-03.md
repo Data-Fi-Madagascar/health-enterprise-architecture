@@ -6,7 +6,7 @@ title: CMP-03 — Entrepôt Lakehouse & Projections analytiques (pipeline ETL, L
 status: draft
 owner: DEPSI
 version: "0.0.1"
-source: 02_artsn/04_cartographie-cible.md
+source: 02_artsn/04_cartographie-cible/index.md
 maps_to: ["cap-int-07", "cap-int-11"]
 implements: ["art-6", "art-9"]
 applies_to: ["prc-09", "prc-11"]

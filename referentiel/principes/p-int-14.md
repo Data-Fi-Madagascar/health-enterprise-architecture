@@ -6,7 +6,7 @@ title: P-INT-14 — Base d’autorisation explicite
 status: active
 owner: DEPSI
 version: "0.5"
-source: 01_cnisn/01_principes.md
+source: 01_cnisn/01_principes/index.md
 maps_to: ["cap-15"]
 implements: []
 applies_to: []

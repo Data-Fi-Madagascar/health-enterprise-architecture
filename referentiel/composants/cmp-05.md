@@ -6,7 +6,7 @@ title: CMP-05 — Moteur de graphes & Référentiel spatio-temporel (Graph Store
 status: draft
 owner: DEPSI
 version: "0.0.1"
-source: 02_artsn/04_cartographie-cible.md
+source: 02_artsn/04_cartographie-cible/index.md
 maps_to: ["cap-int-03", "cap-int-12"]
 implements: ["art-8b", "art-4d"]
 applies_to: []

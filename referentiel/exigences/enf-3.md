@@ -6,7 +6,7 @@ title: ENF-3 — Unicité de l'identité et résilience face à la fragmentation
 status: draft
 owner: DEPSI
 version: "0.0.1"
-source: 02_artsn/02_exigences-contextuelles.md
+source: 02_artsn/02_exigences-contextuelles/index.md
 maps_to: []
 implements: []
 applies_to: []

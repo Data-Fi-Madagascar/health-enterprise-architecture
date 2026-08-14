@@ -144,6 +144,83 @@ La capabilité gouverne les investissements numériques du secteur : priorisatio
 
 *Rattachement : [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/capabilites/cap-16.md)*
 
+### CAP-17 — Engagement patient et identité numérique
+
+#### Rôle dans le système
+
+La capabilité garantit l'existence d'une identité unique, sécurisée et partagée pour chaque patient à travers le système d'information sanitaire national. Elle couvre :
+
+- **Résolution d'identité** : recherche démographique, rapprochement de dossiers, détection des doublons
+- **Gestion du consentement** : recueil, stockage et vérification du consentement du patient pour le partage de ses données
+- **Identitovigilance** : surveillance et correction des erreurs d'identité, protection contre les usurpations
+- **Engagement du patient** : accès du patient à ses données, participation active à la gestion de sa santé
+
+Cette capabilité est **habilitante** : son absence bloque la continuité des soins (VS-01) et la protection financière (VS-03).
+
+#### Flux de valeur
+
+- [VS-01](../../referentiel/flux-valeur/vs-01.md) — Soins essentiels
+- [VS-03](../../referentiel/flux-valeur/vs-03.md) — Protection financière
+
+#### Rattachement ARTSN
+
+- **F.1** — Fondation Identité et registres
+- **ART-4a** — Résolution d'identité
+- **ART-4b** — Bases d'autorisation
+- **PT-04** — Profil technique identité nationale
+
+#### Maturité
+
+| Niveau actuel | Niveau cible (2 ans) |
+|---------------|----------------------|
+| 1/5 | 3/5 |
+
+#### Propriétaire
+
+DEPSI + Direction des Systèmes d'Information
+
+*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [CAP-INT-01](../../referentiel/capacites/cap-int-01.md), [CAP-INT-09](../../referentiel/capacites/cap-int-09.md) · [fiche](../../referentiel/capabilites/cap-17.md)*
+
+### CAP-18 — Coordination intersectorielle (One Health)
+
+#### Rôle dans le système
+
+La capabilité organise les échanges de données entre le secteur santé et les autres secteurs de l'État impliqués dans la coordination One Health : agriculture (WOAH/FAO), environnement (PNUE), intérieur (administrations territoriales). Elle couvre :
+
+- **Échanges inter-institutionnels** : accords de partage, protocoles d'échange, médiation des données
+- **Coordination épidémique** : partage d'informations entre santé humaine, animale et environnementale
+- **Surveillance conjointe** : détection précoce des événements de santé publique à interface homme-animal-environnement
+- **Riposte coordonnée** : orchestration des réponses inter-ministérielles
+
+Cette capabilité est **habilitante** : son absence bloque la surveillance sanitaire (VS-02) conformément aux obligations du RSI.
+
+#### Flux de valeur
+
+- [VS-02](../../referentiel/flux-valeur/vs-02.md) — Prévention et surveillance
+
+#### Rattachement ARTSN
+
+- **ART-0** — Accords de partage inter-institutionnels
+- **ART-8d** — Chorégraphie inter-institutionnelle
+- **PT-01** — Profil technique échange interinstitutionnel (X-Road)
+
+#### Référentiels normatifs
+
+- **RSI** — Règlement Sanitaire International (2005)
+- **Tripartite Plus** — OMS–WOAH–FAO–PNUE
+
+#### Maturité
+
+| Niveau actuel | Niveau cible (3 ans) |
+|---------------|----------------------|
+| 1/5 | 2/5 |
+
+#### Propriétaire
+
+Secrétariat Général du Ministère + DEPSI
+
+*Rattachement : [VS-02](../../referentiel/flux-valeur/vs-02.md), [CAP-INT-03](../../referentiel/capacites/cap-int-03.md) · [fiche](../../referentiel/capabilites/cap-18.md)*
+
 <!-- END:GENERATED -->
 ## Liens
 

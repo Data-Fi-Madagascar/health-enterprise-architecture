@@ -49,13 +49,22 @@ La capabilité garantit que chaque citoyen accède à des services de santé ess
 
 #### Rôle dans le système
 
-La capabilité organise le parcours du patient entre les points de service : orientation vers le niveau adapté, référence vers une structure plus spécialisée et contre-référence vers la formation d’origine. Elle assure que l’information clinique suit le patient d’un niveau à l’autre, afin que la continuité des soins ne dépende pas d’un seul établissement. Sans elle, les ruptures de parcours (référence sans dossier, absence de retour d’information) fragmentent la prise en charge.
+La capabilité organise le parcours du patient entre les points de service : orientation vers le niveau adapté, référence vers une structure plus spécialisée et contre-référence vers la formation d'origine. Elle assure que l'information clinique suit le patient d'un niveau à l'autre, afin que la continuité des soins ne dépende pas d'un seul établissement. Sans elle, les ruptures de parcours (référence sans dossier, absence de retour d'information) fragmentent la prise en charge.
+
+#### Scénarios couverts
+
+| Scénario | Description | Profils consommés |
+|----------|-------------|-------------------|
+| **Référence (S-03)** | Orientation d'un patient d'un niveau de soins vers un autre (CSB → hôpital régional) | PT-01, PT-02 |
+| **Contre-référence (S-04)** | Retour du patient vers l'établissement d'origine avec compte-rendu et recommandations | PT-01, PT-02 |
+| **Évacuation sanitaire nationale (S-05)** | Transfert urgent entre établissements nationaux | PT-01, PT-02, PT-11 |
+| **Évacuation sanitaire internationale (S-05)** | Transfert vers un centre spécialisé à l'étranger | PT-01, PT-02, PT-11, PT-14 |
 
 #### Flux de valeur
 
 - [VS-01](../../referentiel/flux-valeur/vs-01.md)
 
-*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md) · [fiche](../../referentiel/capabilites/cap-02.md)*
+*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [CAP-INT-03](../../referentiel/capacites/cap-int-03.md), [CAP-INT-01](../../referentiel/capacites/cap-int-01.md), [CAP-INT-13](../../referentiel/capacites/cap-int-13.md) · [fiche](../../referentiel/capabilites/cap-02.md)*
 
 ### CAP-03 — Qualité, sécurité des soins et amélioration continue
 
@@ -87,11 +96,22 @@ La capabilité intègre les agents communautaires, les communautés et les patie
 
 #### Rôle dans le système
 
-La capabilité couvre l’ensemble du cycle de gestion des risques sanitaires : détection des signaux, notification des cas, vérification, investigation, déclenchement de la riposte et retour d’expérience. Elle relie les formations sanitaires, les districts et le niveau central pour qu’une épidémie ou une urgence soit identifiée et traitée sans délai.
+La capabilité couvre l'ensemble du cycle de gestion des risques sanitaires : détection des signaux, notification des cas, vérification, investigation, déclenchement de la riposte et retour d'expérience. Elle relie les formations sanitaires, les districts et le niveau central pour qu'une épidémie ou une urgence soit identifiée et traitée sans délai.
+
+La capabilité inclut désormais la **dimension géospatiale** :
+- **Géolocalisation des formations sanitaires** : positionnement GPS de toutes les structures de soins
+- **Cartographie des risques** : visualisation spatiale des foyers épidémiques et des zones à risque
+- **Suivi temporel** : analyse des tendances épidémiques par zone géographique
+- **Cloisonnement One Health** : surveillance conjointe santé humaine/animale/environnement par zone
 
 #### Flux de valeur
 
 - [VS-02](../../referentiel/flux-valeur/vs-02.md)
+
+#### Rattachement ARTSN
+
+- **ART-4d** — Référentiel géospatial et d'exploitation partagé
+- **PT-05** — Profil technique géolocalisation
 
 *Rattachement : [VS-02](../../referentiel/flux-valeur/vs-02.md) · [fiche](../../referentiel/capabilites/cap-05.md)*
 

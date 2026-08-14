@@ -14,130 +14,124 @@ tags: ["ptisn", "niveau-4", "profil", "one-health", "surveillance"]
 
 # PT-15 — Surveillance One Health
 
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+
 ## Objet
 
-Ce profil technique définit les standards, profils d'interface et configurations pour les échanges de données entre le secteur santé et les autres secteurs (élevage, environnement, météorologie) dans le cadre de l'approche One Health.
+Ce profil technique définit les standards, protocoles et configurations pour la surveillance intégrée des maladies zoonotiques et des risques sanitaires émergents, en lien avec les secteurs animal (OIE/WAHIS), environnemental (GBIF) et climatique (WMO).
 
 ## Périmètre
 
 | Dimension | Portée |
 |-----------|--------|
-| **Secteurs** | Santé humaine (MSP), Élevage (MINAE), Environnement (MEEF), Météo (DGM) |
-| **Flux** | Alertes intersectorielles, données agrégées de surveillance, corrélation signaux faibles |
-| **Standards** | FHIR R4 (santé humaine), OIE-WAHIS (animaux), GBIF (environnement), WMO (météo) |
-| **Chapitres ARTSN** | ART-11, ART-0, ART-4d, ART-8b |
+| **Partenaires** | OIE/WAHIS, FAO, GBIF, WMO, CDC Africa, instituts nationaux vétérinaires |
+| **Flux** | Surveillance zoonotique, alertes One Health, données climatiques, biodiversité |
+| **Standards** | FHIR R4, mADX, OIE-WAHIS, GBIF, WMO BUFR |
+| **Chapitres ARTSN** | ART-11 (Coordination intersectorielle), ART-0 (Accords), ART-4d (Référentiels vétérinaires), ART-8b (Surveillance) |
 
 ## Standards et profils applicables
 
-### Santé humaine
+### Échange de données
 
 | Standard | Usage | Version |
 |----------|-------|---------|
 | HL7 FHIR | Échange de données cliniques et de surveillance | R4 |
-| IHE PCD | Surveillance des événements indésirables | — |
-| IHE ADX | Échange de données agrégées (mADX) | — |
+| IHE mADX | Données agrégées de surveillance | — |
+| OIE-WAHIS | Données vétérinaires internationales | — |
+| GBIF | Données de biodiversité et de distribution des espèces | — |
+| WMO BUFR | Données climatiques et météorologiques | — |
 
-### Santé animale
-
-| Standard | Usage | Version |
-|----------|-------|---------|
-| OIE-WAHIS | Système mondial d'information sur la santé animale | — |
-| FHIR Veterinary Medicine | Données vétérinaires (en développement) | — |
-| RVF-FMIS | Fièvre de la Vallée du Rift — gestion des intrants | — |
-
-### Environnement
+### Identification
 
 | Standard | Usage | Version |
 |----------|-------|---------|
-| GBIF | Système mondial d'information sur la biodiversité | — |
-| INSPIRE | Données spatiales environnementales (UE) | — |
-| OGC SensorThings | Capteurs IoT environnementaux | — |
-
-### Météorologie
-
-| Standard | Usage | Version |
-|----------|-------|---------|
-| WMO BUFR | Données météorologiques binaires | — |
-| WMO GRIB | Données de grille | — |
+| OIE Code pays | Identification des pays pour les flux vétérinaires | — |
+| ISO 3166-1 | Codes pays internationaux | — |
+| FHIR Organization | Identification des organisations multi-sectorielles | R4 |
 
 ## Interfaces d'échange
 
-### Interface 1 — Alertes intersectorielles
+### Interface 1 — Collecte vétérinaire (OIE-WAHIS)
+
+| Propriété | Valeur |
+|-----------|--------|
+| **Producteur** | Instituts vétérinaires nationaux |
+| **Consommateur** | CMP-04 (Moteur analytique) |
+| **Format** | OIE-WAHIS API / FHIR Observation |
+| **Protocole** | REST (synchrone) |
+| **Fréquence** | Hebdomadaire + alertes temps réel |
+
+### Interface 2 — Données environnementales (GBIF)
+
+| Propriété | Valeur |
+|-----------|--------|
+| **Producteur** | GBIF, instituts de recherche |
+| **Consommateur** | CMP-04 (Moteur analytique) |
+| **Format** | GBIF API / Darwin Core |
+| **Protocole** | REST |
+| **Fréquence** | Mensuelle |
+
+### Interface 3 — Données climatiques (WMO)
+
+| Propriété | Valeur |
+|-----------|--------|
+| **Producteur** | Stations météo, WMO |
+| **Consommateur** | CMP-04 (Moteur analytique) |
+| **Format** | WMO BUFR / FHIR Observation |
+| **Protocole** | REST / FTP |
+| **Fréquence** | Quotidienne |
+
+### Interface 4 — Alerte One Health
 
 | Propriété | Valeur |
 |-----------|--------|
 | **Producteur** | CMP-04 (Moteur analytique) |
-| **Consommateur** | CMP-02 (Centre de commande) |
-| **Format** | FHIR R4 — Bundle de type alerte |
-| **Protocole** | REST (synchrone) + Broker asynchrone |
-| **Fréquence** | Temps réel (alertes) |
+| **Consommateur** | CMP-02 (Centre de commande), OIE, FAO, OMS |
+| **Format** | FHIR Communication (priority: urgent) |
+| **Protocole** | REST + SMS |
+| **Fréquence** | Événementielle (alertes) |
 
-### Interface 2 — Données agrégées animales
-
-| Propriété | Valeur |
-|-----------|--------|
-| **Producteur** | Système OIE-WAHIS |
-| **Consommateur** | CMP-03 (Entrepôt Lakehouse) |
-| **Format** | CSV/OIE standard → FHIR via médiation |
-| **Protocole** | API REST (polling) |
-| **Fréquence** | Quotidienne |
-
-### Interface 3 — Données environnementales
-
-| Propriété | Valeur |
-|-----------|--------|
-| **Producteur** | Système MEEF/GBIF |
-| **Consommateur** | CMP-05 (Moteur de graphes) |
-| **Format** | JSON-LD (GBIF) → RDF via médiation |
-| **Protocole** | API REST |
-| **Fréquence** | Horaire |
-
-### Interface 4 — Données météo
-
-| Propriété | Valeur |
-|-----------|--------|
-| **Producteur** | DGM (WMO BUFR/GRIB) |
-| **Consommateur** | CMP-03 (Entrepôt Lakehouse) |
-| **Format** | BUFR/GRIB → FHIR via médiation |
-| **Protocole** | FTP/API |
-| **Fréquence** | Horaire |
-
-## Règles de cloisonnement
+## Règles de souveraineté
 
 | Règle | Description |
 |-------|-------------|
-| **Règle 1** | Les identités humaines (INP) ne sont jamais croisées avec les identités animales (OIE ID) |
-| **Règle 2** | L'agrégation croisée spatiale/temporelle est autorisée sans désanonymisation |
-| **Règle 3** | Chaque secteur conserve la souveraineté sur ses données source |
-| **Règle 4** | Les données croisées sont irréversiblement agrégées avant exposition |
-| **Règle 5** | La journalisation est distincte par secteur avec audit séparé |
+| **Règle 1** | Les données génomiques de pathogènes sont pseudonymisées avant partage international |
+| **Règle 2** | Le partage avec les organisations internationales est limité aux données agrégées sauf accord spécifique |
+| **Règle 3** | Tous les accords de partage One Health sont validés par le CNASN |
+| **Règle 4** | Les données climatiques et environnementales sont librement partageables |
 
 ## Exigences de sécurité
 
 | Exigence | Description |
 |----------|-------------|
-| **EXG-S1** | Authentification mutuelle entre systèmes sectoriels (mTLS) |
+| **EXG-S1** | Authentification des organisations partenaires via certificats |
 | **EXG-S2** | Chiffrement TLS 1.3 pour tous les échanges |
-| **EXG-S3** | RBAC différencié par rôle sectoriel |
-| **EXG-S4** | Journalisation de tous les accès intersectoriels |
-| **EXG-S5** | Accord de partage (ART-0) préalable à tout flux |
+| **EXG-S3** | RBAC différencié par rôle (vétérinaire, épidémiologiste, environnementaliste) |
+| **EXG-S4** | Journalisation de tous les échanges One Health |
 
 ## Indicateurs de performance
 
 | Indicateur | Cible |
 |------------|-------|
-| Délai détection cluster intersectoriel | < 24h |
-| Volume données agrégées croisées/jour | 10 000 |
-| Disponibilité service alertes | 99,9% |
-| Taux de conformité accords de partage | 100% |
+| Délai de transmission alerte zoonose | < 1h |
+| Disponibilité service collecte OIE | 99,5% |
+| Taux de complétude données vétérinaires | > 90% |
+| Volume données One Health traitées/jour | 10 000 |
+| Taux de corrélation humain-animal | > 80% |
 
 ## Dépendances
 
 | Dépendance | Type | Statut |
 |------------|------|--------|
-| FHIR R4 | Standard | ✅ Validé |
 | OIE-WAHIS | Standard international | ✅ Disponible |
 | GBIF | Standard international | ✅ Disponible |
-| ART-11 | Chapitre ARTSN | Candidate → à promouvoir Stable |
+| WMO | Standard international | ✅ Disponible |
+| FHIR R4 | Standard | ✅ Validé |
+| ART-11 | Chapitre ARTSN | Active |
 | CAP-INT-14 | Capacité CNISN | Créée |
 | CAP-18 | Capabilité CAESN | Active |
+
+*Rattachement : [CAP-INT-14](../../referentiel/capacites/cap-int-14.md), [CAP-18](../../referentiel/capabilites/cap-18.md), [CAP-05](../../referentiel/capabilites/cap-05.md), [ART-11](../../referentiel/chapitres/art-11.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-4D](../../referentiel/chapitres/art-4d.md), [ART-8B](../../referentiel/chapitres/art-8b.md), [CMP-02](../../referentiel/composants/cmp-02.md), [CMP-04](../../referentiel/composants/cmp-04.md), [CMP-06](../../referentiel/composants/cmp-06.md) · [fiche](../../referentiel/profils/pt-15.md)*
+
+<!-- END:GENERATED -->

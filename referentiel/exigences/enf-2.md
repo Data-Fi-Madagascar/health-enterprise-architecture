@@ -6,7 +6,7 @@ title: ENF-2 — Intégrité des flux et traçabilité des valeurs
 status: draft
 owner: DEPSI
 version: "0.0.1"
-source: 02_artsn/02_exigences-contextuelles.md
+source: 02_artsn/02_exigences-contextuelles/index.md
 maps_to: []
 implements: []
 applies_to: []

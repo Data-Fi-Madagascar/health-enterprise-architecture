@@ -7,7 +7,7 @@ status: active
 owner: DEPSI
 version: "0.5"
 family: qualite-conformite
-source: 01_cnisn/02_capacites.md
+source: 01_cnisn/02_capacites/index.md
 maps_to: ["p-int-19", "p-int-20", "p-int-21", "p-int-22", "p-int-23", "p-int-24", "p-int-25", "cap-14", "cap-16"]
 implements: []
 applies_to: []

@@ -6,7 +6,7 @@ title: CMP-01 — Tableaux de bord & Portails nationaux (performance, CSU, resso
 status: draft
 owner: DEPSI
 version: "0.0.1"
-source: 02_artsn/04_cartographie-cible.md
+source: 02_artsn/04_cartographie-cible/index.md
 maps_to: ["cap-int-07", "cap-int-11"]
 implements: ["art-6"]
 applies_to: ["prc-10", "prc-11", "prc-12"]

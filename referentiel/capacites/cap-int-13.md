@@ -7,7 +7,7 @@ status: active
 owner: DEPSI
 version: "0.5"
 family: transfrontalier
-source: 01_cnisn/02_capacites.md
+source: 01_cnisn/02_capacites/index.md
 maps_to: ["p-int-01", "p-int-05", "p-int-10", "p-int-14", "p-int-16", "p-int-17", "p-int-19", "cap-15"]
 implements: []
 applies_to: []

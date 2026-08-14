@@ -6,7 +6,7 @@ title: CMP-07 — Orchestrateur de parcours & Gestionnaire de Sagas (ART-8a)
 status: draft
 owner: DEPSI
 version: "0.0.1"
-source: 02_artsn/04_cartographie-cible.md
+source: 02_artsn/04_cartographie-cible/index.md
 maps_to: ["cap-int-08"]
 implements: ["art-8a"]
 applies_to: ["prc-04", "prc-05", "prc-06"]

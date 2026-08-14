@@ -136,9 +136,9 @@ Ce template est utilisé pour soumettre toute modification au CAESN, à l'ARTSN 
 
 ### 9. Références
 
-- [Lien vers le document impacté](...)
-- [Lien vers le standard de référence](...)
-- [ADR associée si applicable](...)
+- [Lien vers le document impacté](#)
+- [Lien vers le standard de référence](#)
+- [ADR associée si applicable](#)
 
 ---
 

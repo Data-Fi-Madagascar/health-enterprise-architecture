@@ -6,7 +6,7 @@ title: CMP-12 — Registre d'éligibilité et de couverture (CSU — ART-4c)
 status: draft
 owner: DEPSI
 version: "0.0.1"
-source: 02_artsn/04_cartographie-cible.md
+source: 02_artsn/04_cartographie-cible/index.md
 maps_to: ["cap-int-09"]
 implements: ["art-4c"]
 applies_to: ["prc-09", "prc-10"]

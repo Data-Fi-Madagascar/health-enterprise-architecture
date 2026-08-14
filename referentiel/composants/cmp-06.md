@@ -6,7 +6,7 @@ title: CMP-06 — Intégration, Médiation, API Gateway, Broker & Registre sché
 status: draft
 owner: DEPSI
 version: "0.0.1"
-source: 02_artsn/04_cartographie-cible.md
+source: 02_artsn/04_cartographie-cible/index.md
 maps_to: ["cap-int-01", "cap-int-03"]
 implements: ["art-1", "art-2", "f-3"]
 applies_to: []

@@ -412,6 +412,7 @@ La conformité ne se traduit pas par un service exposé mais par un **processus 
 ## Famille 6 — Interopérabilité transfrontalière
 
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-13.md -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
 
 ### CAP-INT-13 — Interopérabilité transfrontalière et confiance internationale
 
@@ -432,7 +433,7 @@ Madagascar est membre de l'Union Africaine (UA), de la Commission Économique de
 
 #### Services attendus
 
-**Gouvernance des échanges transfrontaliers**
+#### Gouvernance des échanges transfrontaliers
 
 - identification des flux autorisés vers/lors de l'international ;
 - définition des données échangeables vs. les données souveraines ;
@@ -440,7 +441,7 @@ Madagascar est membre de l'Union Africaine (UA), de la Commission Économique de
 - gestion des autorisations d'accès pour les acteurs internationaux ;
 - arbitrage des conflits de juridiction.
 
-**Confiance mutuelle et certification**
+#### Confiance mutuelle et certification
 
 - adhésion et conformité au GDHCN (Global Digital Health Certification Network) ;
 - gestion des certificats de confiance mutuelle ;
@@ -448,27 +449,35 @@ Madagascar est membre de l'Union Africaine (UA), de la Commission Économique de
 - publication de la politique de confiance nationale ;
 - révocation en cas d'incident.
 
-**Identification transfrontalière**
+#### Identification transfrontalière
 
 - résolution d'identité pour patients étrangers sur le territoire national ;
 - mapping des identifiants nationaux vers les standards internationaux (OID, HL7) ;
 - gestion des identifiants temporaires pour patients de passage ;
 - prévention des confusions d'identité transfrontalières.
 
-**Consentement et autorisation pour échanges internationaux**
+#### Consentement et autorisation pour échanges internationaux
 
 - gestion du consentement spécifique aux échanges internationaux ;
 - vérification de la base légale pour chaque flux sortant ;
 - minimisation stricte des données exportées ;
 - pseudonymisation pour les flux de recherche.
 
-**Résidence et souveraineté**
+#### Résidence et souveraineté
 
 - contrôle de sortie des données sensibles ;
 - journalisation de tous les flux transfrontaliers ;
 - audit des accès internationaux ;
 - alertes en cas d'export non autorisé ;
 - rapport périodique aux autorités compétentes.
+
+#### Échange de résumé patient (IPS)
+
+- production et réception de résumés internationaux du patient (HL7 FHIR IPS) ;
+- mapping des données nationales vers les sections IPS (allergies, médicaments, problèmes, identité) ;
+- validation de conformité des IPS émis et reçus ;
+- minimisation stricte : seules les sections nécessaires à la finalité clinique sont incluses ;
+- conservation des IPS échangés selon la politique de rétention nationale.
 
 #### Exigences de conformité
 
@@ -481,18 +490,34 @@ Madagascar est membre de l'Union Africaine (UA), de la Commission Économique de
 | **EXG-TF-05** | Le GDHCN doit être le référentiel de confiance pour les échanges internationaux |
 | **EXG-TF-06** | Les données souveraines (identité nationale complète, données génomiques) ne quittent pas le territoire sauf dérogation |
 | **EXG-TF-07** | Les systèmes partenaires étrangers doivent démontrer leur conformité avant tout accès |
+| **EXG-TF-08** | Tout résumé patient échangé (IPS) doit être conforme au profil HL7 FHIR IPS et contenir au minimum les sections ALGY, MDCA, PROB, IDOI |
 
 #### Principes associés
 
-P-INT-01, P-INT-05, P-INT-10, P-INT-14, P-INT-16, P-INT-17, P-INT-19.
+- **P-INT-01** (Autorité désignée) : l'autorité nationale reste l'autorité pour les données malgaches, même lors d'échanges ;
+- **P-INT-05** (Contrat explicite) : tout flux transfrontalier nécessite un accord bilatéral ou multilatéral ;
+- **P-INT-10** (Accord préalable) : accord obligatoire avant tout échange avec une institution étrangère ;
+- **P-INT-14** (Base d'autorisation explicite) : base légale documentée pour chaque type de flux sortant ;
+- **P-INT-16** (Résidence) : les contraintes de résidence s'appliquent aux flux transfrontaliers ;
+- **P-INT-17** (Minimisation) : minimisation renforcée pour les échanges internationaux ;
+- **P-INT-19** (Neutralité technologique) : le GDHCN est un cadre de confiance, pas un produit.
 
-*Rattachement : [P-INT-01](../../referentiel/principes/p-int-01.md), [P-INT-05](../../referentiel/principes/p-int-05.md), [P-INT-10](../../referentiel/principes/p-int-10.md), [P-INT-14](../../referentiel/principes/p-int-14.md), [P-INT-16](../../referentiel/principes/p-int-16.md), [P-INT-17](../../referentiel/principes/p-int-17.md), [P-INT-19](../../referentiel/principes/p-int-19.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [CAP-18](../../referentiel/capabilites/cap-18.md) · [fiche](../../referentiel/capacites/cap-int-13.md)*
+#### Rattachement
+
+- [CAP-15](../../referentiel/capabilites/cap-15.md) (Sécurité, contrôle d'accès et résidence)
+- [CAP-18](../../referentiel/capabilites/cap-18.md) (Coordination intersectorielle — One Health)
+- [ART-7](../../referentiel/chapitres/art-7.md) (Sécurité, contrôle d'accès et résidence)
+- [ART-0](../../referentiel/chapitres/art-0.md) (Accords de partage inter-institutionnels)
+- [PT-14](../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md) (Profil technique transfrontalier — IPS)
+
+*Rattachement : [P-INT-01](../../referentiel/principes/p-int-01.md), [P-INT-05](../../referentiel/principes/p-int-05.md), [P-INT-10](../../referentiel/principes/p-int-10.md), [P-INT-14](../../referentiel/principes/p-int-14.md), [P-INT-16](../../referentiel/principes/p-int-16.md), [P-INT-17](../../referentiel/principes/p-int-17.md), [P-INT-19](../../referentiel/principes/p-int-19.md), [CAP-15](../../referentiel/capabilites/cap-15.md) · [fiche](../../referentiel/capacites/cap-int-13.md)*
 
 <!-- END:GENERATED -->
 
 ## Famille 7 — Échanges intersectoriels One Health
 
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-14.md -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
 
 ### CAP-INT-14 — Échanges intersectoriels One Health
 
@@ -522,7 +547,7 @@ Les secteurs concernés :
 
 #### Services attendus
 
-**Gouvernance des échanges intersectoriels**
+#### Gouvernance des échanges intersectoriels
 
 - enregistrement des accords de partage entre ministères ;
 - définition des flux autorisés par secteur et par finalité ;
@@ -530,21 +555,21 @@ Les secteurs concernés :
 - arbitrage des conflits d'autorité entre secteurs ;
 - suivi de la conformité des échanges.
 
-**Médiation intersectorielle**
+#### Médiation intersectorielle
 
 - transformation sémantique entre taxonomies sectorielles (CIM-10 pour santé humaine, OIE pour animaux, classification environnementale) ;
 - normalisation des dimensions communes (espace, temps, géographie) ;
 - corrélation des signaux faibles entre secteurs ;
 - détection de clusters intersectoriels.
 
-**Cloisonnement et étanchéité**
+#### Cloisonnement et étanchéité
 
 - séparation stricte des identités entre secteurs (pas de croisement d'identités humaines et animales) ;
 - agrégation croisée sans désanonymisation ;
 - journalisation distincte par secteur ;
 - contrôle d'accès différencié par rôle sectoriel.
 
-**Alertes et coordination**
+#### Alertes et coordination
 
 - déclenchement d'alertes intersectorielles ;
 - notification aux autorités compétentes de chaque secteur ;
@@ -565,8 +590,23 @@ Les secteurs concernés :
 
 #### Principes associés
 
-P-INT-01, P-INT-05, P-INT-10, P-INT-14, P-INT-16, P-INT-22.
+- **P-INT-01** (Autorité désignée) : chaque secteur reste l'autorité de ses données ;
+- **P-INT-05** (Contrat explicite) : tout flux intersectoriel nécessite un accord ;
+- **P-INT-10** (Accord préalable) : accord obligatoire entre ministères ;
+- **P-INT-14** (Base d'autorisation explicite) : base légale documentée par secteur ;
+- **P-INT-16** (Résidence) : les données restent dans leur secteur d'origine ;
+- **P-INT-22** (Connectivité contrainte) : les secteurs ont des niveaux de connectivité variables.
 
-*Rattachement : [P-INT-01](../../referentiel/principes/p-int-01.md), [P-INT-05](../../referentiel/principes/p-int-05.md), [P-INT-10](../../referentiel/principes/p-int-10.md), [P-INT-14](../../referentiel/principes/p-int-14.md), [P-INT-16](../../referentiel/principes/p-int-16.md), [P-INT-22](../../referentiel/principes/p-int-22.md), [CAP-18](../../referentiel/capabilites/cap-18.md), [CAP-05](../../referentiel/capabilites/cap-05.md) · [fiche](../../referentiel/capacites/cap-int-14.md)*
+#### Rattachement
+
+- [CAP-18](../../referentiel/capabilites/cap-18.md) (Coordination intersectorielle — One Health)
+- [CAP-05](../../referentiel/capabilites/cap-05.md) (Surveillance épidémiologique)
+- [ART-11](../../referentiel/chapitres/art-11.md) (Coordination intersectorielle)
+- [ART-0](../../referentiel/chapitres/art-0.md) (Accords de partage inter-institutionnels)
+- [ART-4d](../../referentiel/chapitres/art-4d.md) (Référentiel géospatial)
+- [F.2](../../referentiel/fondations/f-2.md) (Souveraineté intersectorielle)
+- [ENF-4](../../referentiel/exigences/enf-4.md) (Cloisonnement inter-institutionnel One Health)
+
+*Rattachement : [P-INT-01](../../referentiel/principes/p-int-01.md), [P-INT-05](../../referentiel/principes/p-int-05.md), [P-INT-10](../../referentiel/principes/p-int-10.md), [P-INT-14](../../referentiel/principes/p-int-14.md), [P-INT-16](../../referentiel/principes/p-int-16.md), [P-INT-22](../../referentiel/principes/p-int-22.md) · [fiche](../../referentiel/capacites/cap-int-14.md)*
 
 <!-- END:GENERATED -->

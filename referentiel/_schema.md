@@ -58,7 +58,7 @@ title: P-INT-01 — Autorité désignée
 status: active            # draft | active | deprecated | candidate
 owner: DEPSI              # entité responsable
 version: "0.5"            # version héritée de la source
-source: 01_cnisn/01_principes.md   # chemin de provenance pré-refactor
+source: 01_cnisn/01_principes/index.md   # chemin de provenance pré-refactor
 maps_to: ["cap-int-01"]   # correspondance vers autre référentiel (id)
 implements: []          # chapitre/objet mis en œuvre
 applies_to: []          # objets auxquels il s'applique
