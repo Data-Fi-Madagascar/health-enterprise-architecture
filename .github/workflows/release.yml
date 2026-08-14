@@ -1,4 +1,4 @@
-name: Release PDF
+name: Release DOCX
 
 on:
   push:
@@ -20,10 +20,10 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install pandoc + LaTeX + font
+      - name: Install pandoc
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc texlive-xetex texlive-lang-french fonts-dejavu-core
+          sudo apt-get install -y pandoc
         env:
           DEBIAN_FRONTEND: noninteractive
 
@@ -37,21 +37,75 @@ jobs:
           python3 scripts/check_links.py
         working-directory: ${{ github.workspace }}
 
-      - name: Build PDFs
+      - name: Build DOCXs
         run: |
           export TAG_VERSION=${{ steps.ver.outputs.VERSION }}
-          python3 scripts/build_pdf.py --engine xelatex --font "DejaVu Sans"
+          python3 scripts/build_docx.py
         working-directory: ${{ github.workspace }}
 
       - name: List artifacts
         run: ls -la dist/
+
+      - name: Generate release notes
+        id: notes
+        run: |
+          # Get previous tag
+          PREV_TAG=$(git tag --sort=-v:refname | head -2 | tail -1)
+          if [ -z "$PREV_TAG" ]; then
+            COMMITS=$(git log --oneline --no-decorate)
+          else
+            COMMITS=$(git log --oneline --no-decorate ${PREV_TAG}..HEAD)
+          fi
+          
+          # Count changed files by type
+          if [ -n "$PREV_TAG" ]; then
+            MD_COUNT=$(git diff --stat ${PREV_TAG}..HEAD -- '*.md' | tail -1 | awk '{print $1}' || echo "0")
+            YAML_COUNT=$(git diff --stat ${PREV_TAG}..HEAD -- '*.yaml' '*.yml' | tail -1 | awk '{print $1}' || echo "0")
+            PY_COUNT=$(git diff --stat ${PREV_TAG}..HEAD -- '*.py' | tail -1 | awk '{print $1}' || echo "0")
+          else
+            MD_COUNT=$(find . -name "*.md" | wc -l)
+            YAML_COUNT=$(find . -name "*.yaml" -o -name "*.yml" | wc -l)
+            PY_COUNT=$(find . -name "*.py" | wc -l)
+          fi
+          
+          # Build notes
+          {
+            echo "## Architecture d'Entreprise de la Santé Numérique de Madagascar"
+            echo ""
+            echo "### Documents inclus"
+            echo ""
+            echo "| Document | Description |"
+            echo "|----------|-------------|"
+            echo "| \`caesn-v*.docx\` | Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) |"
+            echo "| \`cnisn-v*.docx\` | Cadre National d'Interopérabilité de la Santé Numérique (CNISN) |"
+            echo "| \`artsn-v*.docx\` | Architecture de Référence Technique de la Santé Numérique (ARTSN) |"
+            echo "| \`ptisn-v*.docx\` | Profils techniques d'implémentation de la Santé Numérique (PTISN) |"
+            echo "| \`HEA-v*.docx\` | Document consolidé (tous niveaux) |"
+            echo ""
+            echo "### Statistiques"
+            echo ""
+            echo "- **Markdown** : ${MD_COUNT} fichiers"
+            echo "- **YAML** : ${YAML_COUNT} fichiers"
+            echo "- **Python** : ${PY_COUNT} fichiers"
+            echo ""
+            echo "### Changements"
+            echo ""
+            echo '```'
+            echo "$COMMITS"
+            echo '```'
+          } > /tmp/release_notes.md
+          
+          # Escape multiline for GitHub output
+          echo "body<<EOF" >> "$GITHUB_OUTPUT"
+          cat /tmp/release_notes.md >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
 
       - name: Create GitHub Release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh release create "$GITHUB_REF_NAME" \
-            dist/*.pdf \
+            dist/*.docx \
             --title "v${GITHUB_REF_NAME#v} — Santé numérique de Madagascar" \
-            --generate-notes \
+            --notes "${{ steps.notes.outputs.body }}" \
             --latest

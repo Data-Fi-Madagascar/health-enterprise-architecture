@@ -1,13 +1,18 @@
-# Build PDF consolidés + release GitHub
-# Prérequis : pandoc + un moteur LaTeX (xelatex ou tectonic) + DejaVu Sans.
-#   brew install pandoc tectonic font-dejavu  # Linux: sudo apt install pandoc texlive-xetex fonts-dejavu-core
+# Build DOCX consolidés + release GitHub
+# Prérequis : pandoc
+#   brew install pandoc  # Linux: sudo apt install pandoc
 #
 # Usage:
-#   make pdf                # 5 PDF dans dist/ (version 0.0.1 par défaut)
-#   make pdf VERSION=1.2.3  # avec version précise
+#   make docx               # 5 DOCX dans dist/ (version 0.0.1 par défaut)
+#   make docx VERSION=1.2.3 # avec version précise
+#   make pdf                # 5 PDF dans dist/ (optionnel, nécessite LaTeX)
 #   make wrappers           # régénère les 51 enveloppes (transclusion des 150 objets)
 #   make check              # idempotence des enveloppes + 0 lien relatif cassé
 #   make clean              # supprime dist/
+#
+# Release :
+#   git tag v0.0.2 && git push origin v0.0.2
+#   → l'action GitHub génère les DOCX et crée la release
 
 SHELL := /bin/bash
 VERSION ?= 0.0.1
@@ -18,11 +23,15 @@ DATE  := $(shell date +%F)
 
 export TAG_VERSION=$(VERSION)
 
-.PHONY: pdf wrappers check clean release note
+.PHONY: pdf docx wrappers check clean release note
 
 pdf:
 	@echo "==> Génération des 5 PDF (version $(VERSION), moteur $(ENGINE))"
 	$(PY) scripts/build_pdf.py --version $(VERSION) --engine $(ENGINE) --font "$(FONT)"
+
+docx:
+	@echo "==> Génération des 5 DOCX (version $(VERSION))"
+	$(PY) scripts/build_docx.py --version $(VERSION)
 
 # Transclusion des 150 objets du référentiel dans les 51 enveloppes
 wrappers:
@@ -42,9 +51,9 @@ clean:
 note:
 	@git log --oneline $(shell git describe --abbrev=0 --tags 2>/dev/null || echo HEAD~1)..HEAD -- . ':(exclude)dist' | sed 's/^/  * /'
 
-release: pdf
+release: docx
 	@echo "==> Release GitHub v$(VERSION)"
 	gh release create v$(VERSION) \
-		dist/*-v$(VERSION).pdf \
+		dist/*-v$(VERSION).docx \
 		--title "v$(VERSION) — Santé numérique de Madagascar" \
 		--notes "Documentation as code consolidée (CAESN / CNISN / ARTSN / PTISN)."
