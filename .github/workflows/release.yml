@@ -52,48 +52,42 @@ jobs:
           # Get previous tag
           PREV_TAG=$(git tag --sort=-v:refname | head -2 | tail -1)
           if [ -z "$PREV_TAG" ]; then
-            COMMITS=$(git log --oneline --no-decorate)
+            COMMITS=$(git log --oneline --no-decorate | head -20)
           else
             COMMITS=$(git log --oneline --no-decorate ${PREV_TAG}..HEAD)
           fi
           
-          # Count changed files by type
-          if [ -n "$PREV_TAG" ]; then
-            MD_COUNT=$(git diff --stat ${PREV_TAG}..HEAD -- '*.md' | tail -1 | awk '{print $1}' || echo "0")
-            YAML_COUNT=$(git diff --stat ${PREV_TAG}..HEAD -- '*.yaml' '*.yml' | tail -1 | awk '{print $1}' || echo "0")
-            PY_COUNT=$(git diff --stat ${PREV_TAG}..HEAD -- '*.py' | tail -1 | awk '{print $1}' || echo "0")
-          else
-            MD_COUNT=$(find . -name "*.md" | wc -l)
-            YAML_COUNT=$(find . -name "*.yaml" -o -name "*.yml" | wc -l)
-            PY_COUNT=$(find . -name "*.py" | wc -l)
-          fi
+          # Count files
+          MD_COUNT=$(find . -name "*.md" -not -path "./.git/*" -not -path "./dist/*" | wc -l | tr -d ' ')
+          YAML_COUNT=$(find . -name "*.yaml" -o -name "*.yml" | grep -v ".git" | wc -l | tr -d ' ')
+          PY_COUNT=$(find . -name "*.py" | grep -v ".git" | wc -l | tr -d ' ')
           
-          # Build notes
-          {
-            echo "## Architecture d'Entreprise de la Santé Numérique de Madagascar"
-            echo ""
-            echo "### Documents inclus"
-            echo ""
-            echo "| Document | Description |"
-            echo "|----------|-------------|"
-            echo "| caesn-v*.docx | Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) |"
-            echo "| cnisn-v*.docx | Cadre National d'Interopérabilité de la Santé Numérique (CNISN) |"
-            echo "| artsn-v*.docx | Architecture de Référence Technique de la Santé Numérique (ARTSN) |"
-            echo "| ptisn-v*.docx | Profils techniques d'implémentation de la Santé Numérique (PTISN) |"
-            echo "| HEA-v*.docx | Document consolidé (tous niveaux) |"
-            echo ""
-            echo "### Statistiques"
-            echo ""
-            echo "- **Markdown** : ${MD_COUNT} fichiers"
-            echo "- **YAML** : ${YAML_COUNT} fichiers"
-            echo "- **Python** : ${PY_COUNT} fichiers"
-            echo ""
-            echo "### Changements"
-            echo ""
-            echo '```'
-            echo "$COMMITS"
-            echo '```'
-          } > /tmp/release_notes.md
+          # Create release notes
+          cat > /tmp/release_notes.md << EOF
+## Architecture d'Entreprise de la Santé Numérique de Madagascar
+
+### Documents inclus
+
+| Document | Description |
+|----------|-------------|
+| caesn-v*.docx | Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) |
+| cnisn-v*.docx | Cadre National d'Interopérabilité de la Santé Numérique (CNISN) |
+| artsn-v*.docx | Architecture de Référence Technique de la Santé Numérique (ARTSN) |
+| ptisn-v*.docx | Profils techniques d'implémentation de la Santé Numérique (PTISN) |
+| HEA-v*.docx | Document consolidé (tous niveaux) |
+
+### Statistiques
+
+- **Markdown** : ${MD_COUNT} fichiers
+- **YAML** : ${YAML_COUNT} fichiers
+- **Python** : ${PY_COUNT} fichiers
+
+### Changements
+
+\`\`\`
+${COMMITS}
+\`\`\`
+EOF
           
           # Escape multiline for GitHub output
           echo "body<<EOF" >> "$GITHUB_OUTPUT"
