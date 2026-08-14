@@ -68,34 +68,32 @@ jobs:
             PY_COUNT=$(find . -name "*.py" | wc -l)
           fi
           
-          # Build notes file
-          cat > /tmp/release_notes.md << 'NOTES_EOF'
-## Architecture d'Entreprise de la Santé Numérique de Madagascar
-
-### Documents inclus
-
-| Document | Description |
-|----------|-------------|
-| caesn-v*.docx | Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) |
-| cnisn-v*.docx | Cadre National d'Interopérabilité de la Santé Numérique (CNISN) |
-| artsn-v*.docx | Architecture de Référence Technique de la Santé Numérique (ARTSN) |
-| ptisn-v*.docx | Profils techniques d'implémentation de la Santé Numérique (PTISN) |
-| HEA-v*.docx | Document consolidé (tous niveaux) |
-
-### Statistiques
-
-NOTES_EOF
-          
-          echo "- **Markdown** : ${MD_COUNT} fichiers" >> /tmp/release_notes.md
-          echo "- **YAML** : ${YAML_COUNT} fichiers" >> /tmp/release_notes.md
-          echo "- **Python** : ${PY_COUNT} fichiers" >> /tmp/release_notes.md
-          echo "" >> /tmp/release_notes.md
-          
-          echo "### Changements" >> /tmp/release_notes.md
-          echo "" >> /tmp/release_notes.md
-          echo '```' >> /tmp/release_notes.md
-          echo "$COMMITS" >> /tmp/release_notes.md
-          echo '```' >> /tmp/release_notes.md
+          # Build notes
+          {
+            echo "## Architecture d'Entreprise de la Santé Numérique de Madagascar"
+            echo ""
+            echo "### Documents inclus"
+            echo ""
+            echo "| Document | Description |"
+            echo "|----------|-------------|"
+            echo "| caesn-v*.docx | Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) |"
+            echo "| cnisn-v*.docx | Cadre National d'Interopérabilité de la Santé Numérique (CNISN) |"
+            echo "| artsn-v*.docx | Architecture de Référence Technique de la Santé Numérique (ARTSN) |"
+            echo "| ptisn-v*.docx | Profils techniques d'implémentation de la Santé Numérique (PTISN) |"
+            echo "| HEA-v*.docx | Document consolidé (tous niveaux) |"
+            echo ""
+            echo "### Statistiques"
+            echo ""
+            echo "- **Markdown** : ${MD_COUNT} fichiers"
+            echo "- **YAML** : ${YAML_COUNT} fichiers"
+            echo "- **Python** : ${PY_COUNT} fichiers"
+            echo ""
+            echo "### Changements"
+            echo ""
+            echo '```'
+            echo "$COMMITS"
+            echo '```'
+          } > /tmp/release_notes.md
           
           # Escape multiline for GitHub output
           echo "body<<EOF" >> "$GITHUB_OUTPUT"
