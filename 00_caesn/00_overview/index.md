@@ -76,3 +76,10 @@ Ce dépôt implémente le cadre comme **architecture as code** : chaque concept 
 | [Décisions](../08_decisions/) | Architecture Decision Records (ADR) |
 | [Normes](../09_standards/) | Standards et règles d'homologation |
 | [Annexes](../10_annexes/) | Matrice de lecture, glossaire |
+
+## Liens
+
+- [Guide de lecture du CAESN](../reading-guide.md)
+- [Matrice de lecture du CAESN](../reading-matrix.md)
+- [Glossaire](../10_annexes/glossary.md)
+- [Acronymes](../10_annexes/acronyms.md)

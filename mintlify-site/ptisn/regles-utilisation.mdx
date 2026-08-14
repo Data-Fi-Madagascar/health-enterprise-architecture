@@ -1,0 +1,170 @@
+---
+title: "Partie I — Règles d'utilisation du PTISN"
+description: "Niveau 4 — Configurations, API et contrats d'interfaces par initiative"
+owner: "Équipes techniques des initiatives"
+version: "0.4"
+status: "draft"
+last_reviewed: "2026-07-31"
+---
+
+## 1. Types de décisions techniques
+
+Le PTISN distingue six catégories de décisions.
+
+### 1.1 Service national
+
+Capacité applicative partagée mise à disposition de plusieurs systèmes.
+
+Exemples :
+
+- résolution d’identité ;
+- annuaire des formations sanitaires ;
+- service terminologique ;
+- catalogue de services ;
+- médiation inter-systèmes.
+
+### 1.2 Standard de base
+
+Spécification générale utilisée pour structurer ou échanger une information.
+
+Exemples :
+
+- HL7 FHIR ;
+- REST ;
+- JSON ;
+- OAuth ;
+- OpenAPI.
+
+### 1.3 Profil d’interopérabilité
+
+Contrainte appliquée à un ou plusieurs standards afin de répondre à un cas d’usage déterminé.
+
+Exemples :
+
+- PIXm ;
+- PDQm ;
+- mCSD ;
+- SVCM ;
+- mADX.
+
+### 1.4 Patron architectural
+
+Organisation de composants destinée à résoudre une catégorie de problème.
+
+Exemples :
+
+- médiateur ;
+- fédération ;
+- CQRS ;
+- historisation événementielle ;
+- publication-abonnement.
+
+Les patrons sont définis dans l’ART et non par le présent document.
+
+### 1.5 Produit ou implémentation candidate
+
+Solution concrète susceptible d’implémenter un service ou un patron.
+
+Exemples :
+
+- plateforme nationale d’échange ;
+- médiateur sectoriel ;
+- serveur terminologique ;
+- registre ;
+- moteur analytique.
+
+La conformité est évaluée sur les contrats et preuves, et non sur le seul nom du produit.
+
+### 1.6 Décision nationale
+
+Choix formellement validé par l’autorité compétente.
+
+Une décision nationale doit disposer :
+
+- d’une référence ;
+- d’une date ;
+- d’une autorité de validation ;
+- d’un périmètre ;
+- d’une version ;
+- d’une stratégie d’évolution.
+
+------------------------------------------------------------------------
+
+## 2. Statuts des décisions
+
+Les standards, profils et produits mentionnés dans le PTISN portent l’un des statuts suivants :
+
+| Statut | Signification |
+|----|----|
+| **À instruire** | Besoin identifié, solution non encore évaluée |
+| **Candidat** | Solution ou profil identifié pour évaluation |
+| **Recommandé** | Option privilégiée pour les nouvelles initiatives |
+| **Retenu pour pilote** | Choix limité à une initiative ou une expérimentation |
+| **Retenu nationalement** | Choix validé pour le périmètre national défini |
+| **Homologué** | Conformité démontrée par les tests et la gouvernance |
+| **Déprécié** | Maintenu temporairement pour compatibilité |
+| **Retiré** | Ne doit plus être utilisé |
+
+Le statut d’un produit est distinct du statut du standard qu’il implémente.
+
+------------------------------------------------------------------------
+
+## 3. Versionnement
+
+Toute référence à un profil doit préciser :
+
+- le nom officiel ;
+- l’organisme de publication ;
+- la version ;
+- la date de publication ;
+- la version du standard de base ;
+- les options obligatoires ;
+- les extensions nationales ;
+- la date de révision prévue.
+
+La mention générique d’un standard sans version n’est pas suffisante dans une spécification d’implémentation.
+
+Le registre national des profils conserve :
+
+- les versions actives ;
+- les versions en transition ;
+- les versions dépréciées ;
+- les dates de fin de support ;
+- les dépendances.
+
+------------------------------------------------------------------------
+
+## 4. Applicabilité
+
+L’applicabilité des chapitres de l’ART est définie dans le profil d’applicabilité de l’initiative.
+
+Le PTISN n’impose pas à toutes les initiatives l’ensemble des standards décrits.
+
+Une initiative applique uniquement les profils correspondant :
+
+- à son périmètre ;
+- à ses données ;
+- à ses interfaces ;
+- à ses risques ;
+- à ses consommateurs ;
+- à ses obligations d’interopérabilité.
+
+------------------------------------------------------------------------
+
+## 5. Extensions nationales
+
+Une extension nationale à un standard doit être :
+
+- justifiée ;
+- documentée ;
+- versionnée ;
+- publiée ;
+- soumise à un contrôle de compatibilité ;
+- limitée aux besoins non couverts par le standard ;
+- accompagnée d’exemples et de tests.
+
+Une extension ne doit pas modifier silencieusement la signification d’un élément standard.
+
+Lorsqu’une extension peut être proposée à la communauté internationale concernée, cette voie devrait être privilégiée avant la création d’une divergence nationale permanente.
+
+------------------------------------------------------------------------

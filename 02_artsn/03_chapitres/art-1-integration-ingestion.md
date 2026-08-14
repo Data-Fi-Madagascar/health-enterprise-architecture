@@ -45,4 +45,4 @@ ART-1 — Intégration et ingestion constitue un chapitre du **cadre normatif op
 ## Liens
 
 - [Index des chapitres](./index.md)
-- [Exigences contextuelles — Partie III](../02_exigences-contextuelles.md)
+- [Exigences contextuelles — Partie III](../02_exigences-contextuelles/index.md)

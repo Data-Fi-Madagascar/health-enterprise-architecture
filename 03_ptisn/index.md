@@ -61,9 +61,7 @@ ptisn/
 
 ## Liens
 
-- [Cadre (niveau 1)](../00_caesn/00_overview/index.md)
-- [CNISN (niveau 2)](../01_cnisn/index.md)
-- [ARTSN (niveau 3)](../02_artsn/index.md)
+- [Guide de lecture du PTISN](./reading-guide.md)
 - [Matrice de lecture du PTISN](./reading-matrix.md)
 - [Glossaire du PTISN](./glossary.md)
 - [Acronymes du PTISN](./acronyms.md)

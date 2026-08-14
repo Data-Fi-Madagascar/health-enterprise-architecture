@@ -16,18 +16,18 @@ tags: ["ptisn", "niveau-4", "profils", "pt-04"]
 
 ## 1. Capacité CNISN
 
-**CAP-INT-01 — Résolution d’identité du bénéficiaire**
+**CAP-INT-01 — Résolution d'identité du bénéficiaire**
 
 ## 2. Chapitres ART applicables
 
 - ART-4 — référentiels ;
-- ART-4a — Résolution d’identité ;
-- ART-4b — bases d’autorisation ;
+- ART-4a — Résolution d'identité ;
+- ART-4b — bases d'autorisation ;
 - ART-7 — sécurité.
 
 ## 3. Service national
 
-**Service national de résolution d’identité santé du bénéficiaire**
+**Service national de résolution d'identité santé du bénéficiaire**
 
 ## 4. Responsabilités
 
@@ -37,7 +37,7 @@ Le service doit permettre :
 - la résolution des identifiants ;
 - le rapprochement de dossiers ;
 - la gestion des identités temporaires ;
-- le lien avec l’identité fondationnelle ;
+- le lien avec l'identité fondationnelle ;
 - la détection des doublons ;
 - la fusion contrôlée ;
 - la séparation après erreur ;
@@ -48,12 +48,12 @@ Le service doit permettre :
 | Fonction | Profil recommandé |
 |----|----|
 | Recherche démographique | IHE PDQm |
-| Résolution d’identifiants | IHE PIXm |
+| Résolution d'identifiants | IHE PIXm |
 | Modèle de données | HL7 FHIR Patient |
 | Historique et origine | HL7 FHIR Provenance ou profil national équivalent |
 | Autorisation REST/FHIR | IHE IUA ou mécanisme national équivalent |
 
-PIXm fournit des transactions REST permettant de gérer et rechercher les identifiants d’un patient entre domaines. PDQm définit une interface REST légère permettant la recherche de patients à partir de données démographiques.
+PIXm fournit des transactions REST permettant de gérer et rechercher les identifiants d'un patient entre domaines. PDQm définit une interface REST légère permettant la recherche de patients à partir de données démographiques.
 
 ## 6. Statut
 
@@ -76,26 +76,40 @@ Les profils PIXm et PDQm ne définissent pas à eux seuls :
 - les contrôles humains ;
 - le traitement des identités temporaires ;
 - le lien juridique avec la CNIE ;
-- la gestion d’un faux rapprochement.
+- la gestion d'un faux rapprochement.
 
-Ces règles doivent être définies dans un profil national d’identité santé.
+Ces règles doivent être définies dans un profil national d'identité santé.
 
 ## 8. Séparation des identités
 
 Le PTISN distingue :
 
-    Identité fondationnelle
-    Preuve qu’une personne existe dans le registre national
-                     │
-                     ▼
-    Identité fonctionnelle santé
-    Identifiant utilisé dans les services de santé
-                     │
-                     ▼
-    Identifiants locaux
-    Dossier hospitalier, centre de santé, programme
+```plantuml
+@startuml
+skinparam activity {
+  BackgroundColor #E8F4FD
+  BorderColor #2196F3
+}
 
-L’identifiant santé ne doit pas nécessairement être identique à l’identifiant fondationnel.
+|Identité fondationnelle|
+start
+:Preuve qu'une personne existe
+dans le registre national;
+
+|Identité fonctionnelle santé|
+:Identifiant utilisé dans
+les services de santé;
+
+|Identifiants locaux|
+:Dossier hospitalier,
+centre de santé, programme;
+
+stop
+
+@enduml
+```
+
+L'identifiant santé ne doit pas nécessairement être identique à l'identifiant fondationnel.
 
 Le lien entre les deux doit être gouverné, sécurisé et limité à une finalité.
 

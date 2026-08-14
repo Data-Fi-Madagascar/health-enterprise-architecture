@@ -33,9 +33,9 @@ Ce document définit le modèle d’objets du référentiel. Il est la source de
 | `composant-applicatif` | `referentiel/composants/` | `cmp-` | CAESN (CMP-01…13) |
 | `partie-prenante` | `referentiel/parties-prenantes/` | `pp-` | CAESN (PP-01…10) |
 | `capacite` | `referentiel/capacites/` | `cap-int-` | CNISN (CAP-INT-01…12) |
-| `fondation` | `referentiel/fondations/` | `f-` | ART-SN (F.1…6) |
-| `exigence` | `referentiel/exigences/` | `enf-`, `ex-` | ART-SN (ENF-1…5, exigences) |
-| `chapitre` | `referentiel/chapitres/` | `art-` | ART-SN (ART-0…11) |
+| `fondation` | `referentiel/fondations/` | `f-` | ARTSN (F.1…6) |
+| `exigence` | `referentiel/exigences/` | `enf-`, `ex-` | ARTSN (ENF-1…5, exigences) |
+| `chapitre` | `referentiel/chapitres/` | `art-` | ARTSN (ART-0…11) |
 | `profil` | `referentiel/profils/` | `pt-` | PTISN (PT-01…13) |
 | `service` | `referentiel/services/` | — | éléments de services transverses |
 | `meta` | `referentiel/` (racine) | `_schema`, `_index` | — |
@@ -53,7 +53,7 @@ Ce document définit le modèle d’objets du référentiel. Il est la source de
 ---
 id: p-int-01              # id normalisé, unique, kebab-case
 type: principe            # type de l'objet (cf. tableau)
-niveau: "2"               # niveau de référence : 1 (CAESN), 2 (CNISN), 3 (ART-SN), 4 (PTISN)
+niveau: "2"               # niveau de référence : 1 (CAESN), 2 (CNISN), 3 (ARTSN), 4 (PTISN)
 title: P-INT-01 — Autorité désignée
 status: active            # draft | active | deprecated | candidate
 owner: DEPSI              # entité responsable
@@ -112,13 +112,13 @@ Le corps suit le gabarit `H1 (titre) → H2 (finalité / contenu) → H3 (sous-s
 
 ## Liens
 
-- [CAP-INT-01 — Résolution d'identité du bénéficiaire](../capacites/cap-int-01.md)
+- [CAP-INT-01 — Résolution d'identité du bénéficiaire](capacites/cap-int-01.md)
 ```
 
 - Le **contenu textuel** des objets n’est **pas reformulé** : il est copié tel quel depuis la source (seule la structure de titres peut être normalisée).
 - Les relations transversales peuvent être portées par le frontmatter (`maps_to`, `implements`, `applies_to`, `related`) et/ou par une section `## Liens` en fin d’objet.
 - La **prose narrative** (paragraphes « pour qui lire », légendes, introductions) **reste dans le document source** et n’est pas dupliquée dans les objets.
-- Le champ `family` classe chaque capacité CNISN dans l’une des cinq familles de réponse alignées sur l’ART-SN (couches 3 à 5 et axes de la cartographie cible). Il est porté par le frontmatter des `cap-int-*.md` et sert d’en-tête de section dans `01_cnisn/02_capacites.md` (voir [annexe B](../01_cnisn/08_annexes/b-articulation-art-sn.md)).
+- Le champ `family` classe chaque capacité CNISN dans l’une des cinq familles de réponse alignées sur l’ARTSN (couches 3 à 5 et axes de la cartographie cible). Il est porté par le frontmatter des `cap-int-*.md` et sert d’en-tête de section dans `01_cnisn/02_capacites.md` (voir [annexe B](../01_cnisn/08_annexes/b-articulation-art-sn.md)).
 
 ## Registre des objets
 

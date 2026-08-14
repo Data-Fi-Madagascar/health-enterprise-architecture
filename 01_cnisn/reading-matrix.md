@@ -17,6 +17,7 @@ Le CNISN fixe **quoi échanger, avec quelles normes et sous quelles conditions**
 
 | Document du niveau 2 | Décideurs institutionnels | Directions métier / programmes | DEPSI / équipes techniques | SIS / données / suivi-évaluation | Partenaires techniques et financiers |
 |----------------------|---------------------------|-------------------------------|----------------------------|----------------------------------|--------------------------------------|
+| [Guide de lecture du CNISN](./reading-guide.md) | ◐ | ◐ | ● | ◐ | ◐ |
 | [Index et rôle du CNISN](./index.md) | ◐ | ◐ | ● | ◐ | ◐ |
 | [Glossaire du CNISN](./glossary.md) | ○ | ◐ | ● | ◐ | ◐ |
 | [Acronymes du CNISN](./acronyms.md) | ○ | ◐ | ● | ◐ | ◐ |

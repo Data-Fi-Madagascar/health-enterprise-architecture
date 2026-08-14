@@ -17,9 +17,9 @@ Légende : **●** = lecture prioritaire, **◐** = lecture complémentaire, **�
 
 | Section du cadre | Décideurs institutionnels | Directions métier / programmes | DEPSI / équipes techniques | SIS / données / suivi-évaluation | Partenaires techniques et financiers |
 |------------------|---------------------------|-------------------------------|----------------------------|----------------------------------|--------------------------------------|
+| [Guide de lecture du CAESN](./reading-guide.md) | ● | ● | ◐ | ◐ | ● |
 | Avant-propos | ● | ● | ◐ | ◐ | ● |
 | Résumé exécutif | ● | ◐ | ◐ | ◐ | ● |
-| Guide de lecture | ● | ● | ● | ● | ● |
 | Objet et portée du cadre | ● | ● | ● | ● | ● |
 | Fondements stratégiques et normatifs | ● | ● | ◐ | ◐ | ● |
 | Modèle national de valeur | ● | ● | ◐ | ◐ | ● |

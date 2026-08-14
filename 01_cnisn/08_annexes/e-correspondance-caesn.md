@@ -83,4 +83,4 @@ Cette annexe documente le rattachement des objets CNISN (capacités CAP-INT et p
 
 ---
 
-*Rattachées au niveau 2 (CNISN) : [01_cnisn/02_capacites.md](../02_capacites.md), [01_cnisn/01_principes.md](../01_principes.md).*
+*Rattachées au niveau 2 (CNISN) : [01_cnisn/02_capacites.md](../02_capacites/index.md), [01_cnisn/01_principes.md](../01_principes/index.md).*

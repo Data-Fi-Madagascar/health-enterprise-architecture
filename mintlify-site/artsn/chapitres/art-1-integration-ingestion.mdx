@@ -1,0 +1,45 @@
+---
+title: "ART-1 — Intégration et ingestion"
+sidebarTitle: "ART-1"
+description: "Niveau 3 — Standards techniques, solutions et règles d'homologation"
+owner: "DEPSI"
+version: "0.0.1"
+status: "draft"
+last_reviewed: "2026-08-08"
+---
+
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](/artsn/reading-matrix).
+
+
+ART-1 — Intégration et ingestion constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-1`.
+
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+
+**Contenu normatif.** Tout flux entrant doit transiter par un point d’accès central unique qui garantit l’authentification forte de la source, la validation d’intégrité, la limitation de débit (*rate limiting*) et la distribution asynchrone des messages selon un contrat de livraison au moins une fois (*at-least-once*). Le système doit supporter nativement trois topologies d’ingestion : **Point à point**, **Diffusion** (*fan-out*) et **Interrogation fédérée** (*pull*).
+
+**Discipline existentielle.** Dès lors qu’une source échappe à la gouvernance directe de l’initiative (logiciels hospitaliers privés, applications mobiles terrain) : elle seule permet de protéger les serveurs centraux contre les saturations, les cyberattaques et les pertes de données induites par les micro-coupures réseau sans rompre le pipeline.
+
+- **Rattachement** : CAP-14 (interopérabilité et infrastructure partagée).
+- **Déduit selon** : ENF-1 (instabilité réseau).
+- **Statut : Stable.**
+
+*Rattachement : ENF-1, CAP-14 · fiche*
+
+<!-- END:GENERATED -->
+## Liens
+
+- [Index des chapitres](/artsn/chapitres/index)
+- [Exigences contextuelles — Partie III](/artsn/exigences-contextuelles)

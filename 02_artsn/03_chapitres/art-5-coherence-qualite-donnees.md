@@ -47,4 +47,4 @@ ART-5 — Cohérence et qualité des données constitue un chapitre du **cadre n
 ## Liens
 
 - [Index des chapitres](./index.md)
-- [Exigences contextuelles — Partie III](../02_exigences-contextuelles.md)
+- [Exigences contextuelles — Partie III](../02_exigences-contextuelles/index.md)

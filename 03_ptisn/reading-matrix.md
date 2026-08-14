@@ -17,6 +17,7 @@ Le PTISN décline, pour chaque initiative, le niveau 3 au niveau propre de la so
 
 | Document du niveau 4 | Décideurs institutionnels | Directions métier / programmes | DEPSI / équipes techniques | SIS / données / suivi-évaluation | Partenaires techniques et financiers |
 |----------------------|---------------------------|-------------------------------|----------------------------|----------------------------------|--------------------------------------|
+| [Guide de lecture du PTISN](./reading-guide.md) | ◐ | ◐ | ● | ◐ | ◐ |
 | [Index et convention du PTISN](./index.md) | ◐ | ◐ | ● | ◐ | ◐ |
 | [Glossaire du PTISN](./glossary.md) | ○ | ◐ | ● | ◐ | ◐ |
 | [Acronymes du PTISN](./acronyms.md) | ○ | ◐ | ● | ◐ | ◐ |

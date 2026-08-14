@@ -50,4 +50,4 @@ ART-3 — Historisation événementielle et profils de déploiement constitue un
 ## Liens
 
 - [Index des chapitres](./index.md)
-- [Exigences contextuelles — Partie III](../02_exigences-contextuelles.md)
+- [Exigences contextuelles — Partie III](../02_exigences-contextuelles/index.md)

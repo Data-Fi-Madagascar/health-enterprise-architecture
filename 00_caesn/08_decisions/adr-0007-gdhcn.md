@@ -1,0 +1,90 @@
+---
+title: "ADR-0007 — Adoption du GDHCN pour la confiance transfrontalière"
+id: adr-0007
+domain: 08_decisions
+version: "0.1.0"
+status: proposé
+date: 2026-08-13
+owner: DEPSI
+tags: [adr, confiance, gdhc, transfrontalier, certificat]
+---
+
+# ADR-0007 — Adoption du GDHCN pour la confiance transfrontalière
+
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ○ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ○ |
+| Partenaires techniques et financiers | ● |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle.
+
+- **Statut** : proposé
+- **Date** : 2026-08-13
+- **Groupe concerné** : DEPSI, Ministère des Affaires Étrangères, OMS-AFRO
+
+## Contexte
+
+L'interopérabilité transfrontalière exige un mécanisme de confiance pour vérifier l'authenticité, l'intégrité et la non-répudiation des données échangées entre pays. Sans ce mécanisme, aucun pays partenaire ne peut accepter un résumé patient (IPS) émis par le Madagascar.
+
+Le GDHCN (Global Digital Health Certification Network) est le standard mondial pour la confiance numérique en santé, promu par l'OMS et adopté par les pays du programme Smart Health. Il fournit :
+- Une autorité de certification nationale
+- Des certificats X.509v3 pour les systèmes et les praticiens
+- Un mécanisme de révocation en temps réel (CRL/OCSP)
+- Un anchoring international via les trust anchors régionaux
+
+## Décision
+
+Adopter le **GDHCN** comme mécanisme de confiance national pour les échanges de données de santé transfrontaliers, en particulier pour la validation des résumés patients internationaux (IPS).
+
+## Justification
+
+Le GDHCN répond aux exigences du cadre :
+
+- **CAP-INT-13** : Interopérabilité transfrontalière
+- **ART-7** : Sécurité, contrôle d'accès et résidence des données
+- **PT-14** : Interopérabilité transfrontalière
+- **PT-15** : Surveillance One Health (échanges OIE/FAO)
+- **Accords SADC** : Interopérabilité régionale
+
+Le GDHCN doit :
+- Être rattaché à une autorité de certification nationale reconnue
+- Être ancré dans le réseau régional (SADC/OMS-AFRO)
+- Fournir des certificats pour les systèmes et les praticiens
+- Supporter la révocation en temps réel
+
+## Conséquences
+
+### Positives
+- Confiance mutuelle avec les pays partenaires (SADC, OMS-AFRO)
+- Conformité aux standards mondiaux (OMS, ITU-T X.509)
+- Validation automatisée des IPS transfrontaliers
+- Préparation aux accords de réciprocité numérique
+
+### Négatives
+- Nécessite la création d'une autorité de certification nationale
+- Coût d'infrastructure (PKI, HSM, CRL/OCSP)
+- Dépendance au bon fonctionnement du trust anchor régional
+- Formation des administrateurs PKI
+
+## Alternatives considérées
+
+| Alternative | Raison du refus |
+|-------------|-----------------|
+| Certificats auto-signés | Pas de confiance mutuelle, pas d'interopérabilité |
+| PKI nationale propriétaire | Pas compatible avec les standards internationaux |
+| Confiance basée sur le papier (visa, tampon) | Pas numériquement vérifiable, pas temps réel |
+| Blockchain de santé | Technologie immature pour ce cas d'usage, coût élevé |
+
+## Références
+
+- [PT-14 — Interopérabilité transfrontalière](../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md)
+- [ART-7 — Sécurité](../../referentiel/chapitres/art-7.md)
+- [CAP-INT-13 — Interopérabilité transfrontalière](../../referentiel/capacites/cap-int-13.md)
+- [GDHCN — Global Digital Health Certification Network](https://gdadhn.org)

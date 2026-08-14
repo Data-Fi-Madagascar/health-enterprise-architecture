@@ -46,4 +46,4 @@ ART-8d — Chorégraphie inter-institutionnelle constitue un chapitre du **cadre
 ## Liens
 
 - [Index des chapitres](./index.md)
-- [Exigences contextuelles — Partie III](../02_exigences-contextuelles.md)
+- [Exigences contextuelles — Partie III](../02_exigences-contextuelles/index.md)

@@ -25,22 +25,53 @@ tags: [artsn, annexes, renvoi, capacites-candidates, one-health, niveau-3]
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
-## Point de vigilance CAESN — capacité et référentiel manquants
+## Écarts CAESN ↔ ARTSN — Arbitrages appliqués
 
-Une capacité de **coordination intersectorielle** et un **référentiel normatif** (Tripartite Plus OMS-WOAH-FAO-PNUE, RSI) potentiellement absents du [CAESN](../../00_caesn/03_capabilities/index.md) sont documentés séparément dans la [note « Point de vigilance CAESN — capacité et référentiel manquants pour la coordination intersectorielle (One Health) »](../../00_caesn/07_governance/point-de-vigilance-caesn.md), destinée à l'instance de gouvernance du CAESN.
+Les écarts initialement documentés dans la [note « Point de vigilance CAESN »](../../00_caesn/07_governance/point-de-vigilance-caesn.md) ont été arbitrés et implémentés le 2026-08-13. Voir le [document d'arbitrage](../../00_caesn/07_governance/arbitrage-ecarts-caesn-artsn.md) pour le détail des décisions.
 
-Ce point de vigilance porte sur trois écarts constatés lors du peuplement de l'ARTSN :
+### D-1 : CAP-17 « Engagement patient et identité numérique »
 
-1. **Capacité candidate « Coordination intersectorielle »** — rattachement des chapitres [ART-0](../../referentiel/chapitres/art-0.md) (accords de partage) et [ART-8d](../../referentiel/chapitres/art-8d.md) (chorégraphie inter-institutionnelle), absente du catalogue CAP-01..16 du CAESN.
-2. **Capacité candidate « Surveillance spatio-temporelle »** — rattachement du chapitre [ART-4d](../../referentiel/chapitres/art-4d.md), absente du catalogue.
-3. **CAP-04bis « Engagement patient et identitovigilance »** — supposée par [ART-4a](../../referentiel/chapitres/art-4a.md) et [ART-4b](../../referentiel/chapitres/art-4b.md) ; le CAESN définit pour l'instant CAP-04 comme « Santé communautaire », sans sous-capacité d'identitovigilance.
+La capacité **CAP-17** a été créée dans le catalogue CAESN. Elle couvre :
+- Résolution d'identité (rattachement [ART-4a](../../referentiel/chapitres/art-4a.md))
+- Bases d'autorisation (rattachement [ART-4b](../../referentiel/chapitres/art-4b.md))
+- Gestion du consentement
+- Identitovigilance
+
+**Statut** : ✅ Arbitré et implémenté
+
+### D-2 : CAP-18 « Coordination intersectorielle (One Health) »
+
+La capacité **CAP-18** a été créée dans le catalogue CAESN. Elle couvre :
+- Échanges inter-institutionnels (rattachement [ART-0](../../referentiel/chapitres/art-0.md))
+- Chorégraphie inter-institutionnelle (rattachement [ART-8d](../../referentiel/chapitres/art-8d.md))
+- Coordination One Health
+
+**Statut** : ✅ Arbitré et implémenté
+
+### D-3 : Référentiels normatifs Tripartite Plus / RSI
+
+Les normes **NORM-007** (RSI) et **NORM-008** (Tripartite Plus) ont été inscrites au registre des normes du CAESN.
+
+**Statut** : ✅ Arbitré et implémenté
+
+### D-4 : Surveillance spatio-temporelle intégrée à CAP-05
+
+La dimension géospatiale a été intégrée à **CAP-05** (Surveillance) au lieu de créer une capabilité séparée. Le chapitre [ART-4d](../../referentiel/chapitres/art-4d.md) est désormais rattaché à CAP-05.
+
+**Statut** : ✅ Arbitré et implémenté
+
+### D-5 : Nomenclature des principes
+
+La nomenclature CAESN (12 PA + PD) est confirmée comme référence. Un [tableau de mapping](../../00_caesn/02_principles/mapping-caesn-artsn.md) a été créé pour documenter la correspondance avec les 18 P de l'ARTSN.
+
+**Statut** : ✅ Arbitré et implémenté
 
 ## Référentiels normatifs cités
 
-| Référentiel | Portée |
-|-------------|--------|
-| Tripartite Plus OMS–WOAH–FAO–PNUE | Coordination One Health (santé humaine, animale, environnementale) |
-| RSI (Règlement Sanitaire International) | Obligations de surveillance et de notification des événements de santé publique |
+| Référentiel | Portée | Statut |
+|-------------|--------|--------|
+| Tripartite Plus OMS–WOAH–FAO–PNUE | Coordination One Health (santé humaine, animale, environnementale) | ✅ NORM-008 inscrit |
+| RSI (Règlement Sanitaire International) | Obligations de surveillance et de notification des événements de santé publique | ✅ NORM-007 inscrit |
 
 ## Liens
 

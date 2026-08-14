@@ -38,6 +38,22 @@ Chaque ADR suit le [modèle type](./adr-0000-template.md), avec un statut parmi 
 | ADR | Titre | Statut | Date |
 |-----|-------|--------|------|
 | ADR-0000 | [Template](./adr-0000-template.md) | modèle | — |
+| ADR-0001 | [X-Road — Plateforme d'échange](./adr-0001-x-road.md) | appliqué | 2026-07-01 |
+| ADR-0002 | [mADX — Données agrégées](./adr-0002-madx.md) | appliqué | 2026-07-01 |
+| ADR-0003 | [HL7 FHIR — Standard d'interopérabilité](./adr-0003-fhir.md) | appliqué | 2026-07-01 |
+| ADR-0004 | [PIXm/PDQm — Résolution d'identité](./adr-0004-identite.md) | appliqué | 2026-07-01 |
+| ADR-0005 | [FHIR Consent — Consentement structuré](./adr-0005-consentement.md) | proposé | 2026-08-13 |
+| ADR-0006 | [INP — Identité nationale patient](./adr-0006-inp.md) | proposé | 2026-08-13 |
+| ADR-0007 | [GDHCN — Confiance transfrontalière](./adr-0007-gdhcn.md) | proposé | 2026-08-13 |
+| ADR-0008 | [ATNA — Audit et traçabilité](./adr-0008-atna.md) | proposé | 2026-08-13 |
+| ADR-0009 | [Terminologie — CIM-10 + LOINC](./adr-0009-terminologie.md) | proposé | 2026-08-13 |
+
+## Outils de gestion des décisions
+
+| Outil | Description |
+|-------|-------------|
+| [Registre des décisions](./registre-decisions.md) | Tableau centralisé de toutes les ADRs avec statut et impact |
+| [Template de modification](./template-modification.md) | Structure standardisée pour proposer un changement architectural |
 
 ## Liens
 

@@ -1,0 +1,224 @@
+{
+  "main": {
+    "id": "e63b0311e55e3eae",
+    "type": "split",
+    "children": [
+      {
+        "id": "0859039fc328e8ed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7bbb389d22e9619f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_caesn/09_standards/std-0006-terminologie.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "std-0006-terminologie"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d282b15993d91e8a",
+    "type": "split",
+    "children": [
+      {
+        "id": "8c68c125b25e188c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a54adeb5377c6fd9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "20ad949e7ca9a4b5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "2e972f05311576c1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f81aa28f6f4a5f21",
+    "type": "split",
+    "children": [
+      {
+        "id": "3cf803d20088b6dd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6ab22aef377a11d4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "00_caesn/09_standards/std-0006-terminologie.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for std-0006-terminologie"
+            }
+          },
+          {
+            "id": "b8bfc57eb3090494",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "00_caesn/09_standards/std-0006-terminologie.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from std-0006-terminologie"
+            }
+          },
+          {
+            "id": "66be7a5972e7a7d4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "e2f72bdf00008f52",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "a6d8cb96187f496e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "00_caesn/09_standards/std-0006-terminologie.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of std-0006-terminologie"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "a54adeb5377c6fd9",
+  "lastOpenFiles": [
+    "dist/ptisn-v0.0.1.md",
+    "dist/artsn-v0.0.1.md",
+    "dist/cnisn-v0.0.1.md",
+    "dist/caesn-v0.0.1.md",
+    "dist/HEA-v0.0.1.md",
+    "dist/ptisn-v0.0.1.pdf",
+    "dist/artsn-v0.0.1.pdf",
+    "dist/cnisn-v0.0.1.pdf",
+    "dist/caesn-v0.0.1.pdf",
+    "dist/_version_header.tex",
+    "dist/HEA-v0.0.1.docx",
+    "dist/ptisn-v0.0.1.docx",
+    "dist/artsn-v0.0.1.docx",
+    "dist/cnisn-v0.0.1.docx",
+    "dist/caesn-v0.0.1.docx",
+    "dist/HEA-v1.0.0.md",
+    "dist/ptisn-v1.0.0.md",
+    "dist/artsn-v1.0.0.md",
+    "dist/cnisn-v1.0.0.md",
+    "dist/caesn-v1.0.0.md",
+    "00_caesn/09_standards/std-0005-identite-pixm.md",
+    "00_caesn/09_standards/std-0004-madx.md",
+    "00_caesn/09_standards/std-0003-x-road.md",
+    "00_caesn/09_standards/norm-008-tripartite.md",
+    "00_caesn/09_standards/index.md",
+    "00_caesn/09_standards/norm-007-rsi.md",
+    "00_caesn/09_standards/std-0006-terminologie.md",
+    "00_caesn/09_standards/std-0002-securite-chiffrement.md",
+    "00_caesn/09_standards/std-0001-interopabilite-fhir.md",
+    "README.md",
+    "01_cnisn/acronyms.md",
+    "01_cnisn/06_indicateurs/index.md",
+    "01_cnisn/05_trajectoire/index.md",
+    "01_cnisn/glossary.md",
+    "quick-start-guides.md"
+  ]
+}

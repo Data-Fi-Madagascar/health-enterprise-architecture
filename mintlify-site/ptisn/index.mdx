@@ -1,0 +1,65 @@
+---
+title: "Profils techniques d'implémentation de la Santé Numérique (PTISN)"
+description: "Niveau 4 — Configurations, API et contrats d'interfaces par initiative"
+owner: "Équipes techniques des initiatives"
+version: "0.0.1"
+status: "draft"
+last_reviewed: "2026-08-08"
+---
+
+## Pour qui lire ce document
+
+**Niveau :** niveau 4 — Profils techniques d'implémentation de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](/ptisn/reading-matrix).
+
+## Place dans la hiérarchie documentaire
+
+Niveau **4** de la hiérarchie du [Cadre d'Architecture d'Entreprise](/caesn/overview/index). Chaque document de ce dossier correspond à **une initiative** inscrite au [portefeuille national](/caesn/portfolio/index).
+
+| Niveau | Dossier | Document |
+|--------|---------|----------|
+| 1 | `00_caesn/` | Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) |
+| 2 | [`01_cnisn/`](/cnisn/index) | Cadre National d'Interopérabilité de la Santé Numérique (CNISN) |
+| 3 | [`02_artsn/`](/artsn/index) | Architecture de Référence Technique de la Santé Numérique (ARTSN) |
+| 4 | [`ptisn/`](/ptisn/index) | Profils techniques d'implémentation par initiative (ce dossier) |
+
+## Rôle
+
+Les profils techniques d'implémentation déclinent, pour chaque initiative, le niveau 3 (ARTSN) au niveau propre de la solution : **configurations**, **API**, **contrats d'interfaces**, paramétrages, scénarios de déploiement et de test. Ils s'adressent aux développeurs, fournisseurs et équipes techniques.
+
+Elles sont encadrées par la [fiche d'initiative](/caesn/portfolio/initiative-card) (alignement valeur) et doivent respecter :
+- les [principes](/caesn/principles/index) du niveau 1 ;
+- les standards d'interopérabilité du niveau 2 (CNISN) ;
+- les standards techniques du niveau 3 (déclinés de l'ARTSN) ;
+- les [critères d'homologation](/caesn/application/lifecycle).
+
+## Convention de nommage
+
+Un dossier (ou préfixe) par initiative du portefeuille, avec l'**identifiant du registre national des initiatives** comme racine :
+
+```
+ptisn/
+├── <initiative-id-N>/    # un dossier par initiative
+│   ├── index.md            # périmètre, objectifs, responsables
+│   ├── interface.md        # API, contrat d'interface, échanges
+│   ├── configuration.md    # paramétrage, déploiement
+│   └── tests.md            # scénarios de validation et d'homologation
+```
+
+## Liens
+
+- [Cadre (niveau 1)](/caesn/overview/index)
+- [CNISN (niveau 2)](/cnisn/index)
+- [ARTSN (niveau 3)](/artsn/index)
+- [Matrice de lecture du PTISN](/ptisn/reading-matrix)
+- [Glossaire du PTISN](/ptisn/glossary)
+- [Acronymes du PTISN](/ptisn/acronyms)

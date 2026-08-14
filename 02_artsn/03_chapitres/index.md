@@ -26,7 +26,7 @@ tags: [artsn, chapitres, patterns, niveau-3]
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
 
-Les chapitres constituent le **cadre normatif opposable** par le Ministère de la Santé Publique pour valider ou rejeter toute solution numérique : règles d'or et contrats techniques d'interfaces obligatoires imposés pour surmonter les contraintes contextuelles nationales décrites en [Partie III](../02_exigences-contextuelles.md). Chaque chapitre vit dans le référentiel : `referentiel/chapitres/art-X.md`.
+Les chapitres constituent le **cadre normatif opposable** par le Ministère de la Santé Publique pour valider ou rejeter toute solution numérique : règles d'or et contrats techniques d'interfaces obligatoires imposés pour surmonter les contraintes contextuelles nationales décrites en [Partie III](../02_exigences-contextuelles/index.md). Chaque chapitre vit dans le référentiel : `referentiel/chapitres/art-X.md`.
 
 ## Catalogue des chapitres
 
@@ -54,15 +54,15 @@ Les chapitres constituent le **cadre normatif opposable** par le Ministère de l
 | ART-8D | Chorégraphie inter-institutionnelle | [ENF-4](../../referentiel/exigences/enf-4.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md) | draft | [fiche](../../referentiel/chapitres/art-8d.md) |
 | ART-9 | Garanties transactionnelles fortes | [ENF-2](../../referentiel/exigences/enf-2.md), [CAP-07](../../referentiel/capabilites/cap-07.md) | draft | [fiche](../../referentiel/chapitres/art-9.md) |
 | ART-10 | Logistique | — | candidate | [fiche](../../referentiel/chapitres/art-10.md) |
-| ART-11 | Coordination intersectorielle | — | candidate | [fiche](../../referentiel/chapitres/art-11.md) |
+| ART-11 | Coordination intersectorielle | [ENF-4](../../referentiel/exigences/enf-4.md), [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-18](../../referentiel/capabilites/cap-18.md), [CAP-INT-14](../../referentiel/capacites/cap-int-14.md) | stable | [fiche](../../referentiel/chapitres/art-11.md) |
 
 <!-- END:GENERATED -->
 ## Statuts
 
-Les chapitres évoluent selon trois statuts : **Stable** (contrat pleinement opposable lors d'une homologation), **Provisoire** (oriente la conception sans être un contrat opposable) et **Proposition ouverte** (hypothèse à confirmer par une ou plusieurs initiatives indépendantes). Voir la [table de maturité](../07_annexes/a-table-de-maturite.md) et la [gouvernance](../06_gouvernance.md).
+Les chapitres évoluent selon trois statuts : **Stable** (contrat pleinement opposable lors d'une homologation), **Provisoire** (oriente la conception sans être un contrat opposable) et **Proposition ouverte** (hypothèse à confirmer par une ou plusieurs initiatives indépendantes). Voir la [table de maturité](../07_annexes/a-table-de-maturite.md) et la [gouvernance](../06_gouvernance/index.md).
 
 ## Liens
 
-- [Fondations](../00_fondations.md)
-- [Exigences contextuelles nationales](../02_exigences-contextuelles.md)
-- [Cartographie cible](../04_cartographie-cible.md)
+- [Fondations](../00_fondations/index.md)
+- [Exigences contextuelles nationales](../02_exigences-contextuelles/index.md)
+- [Cartographie cible](../04_cartographie-cible/index.md)

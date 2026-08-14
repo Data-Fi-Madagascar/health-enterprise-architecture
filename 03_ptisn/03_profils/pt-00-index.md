@@ -11,7 +11,7 @@ tags: ["ptisn", "niveau-4", "profils"]
 
 # Partie III — Profils techniques nationaux
 
-Catalogue des 13 profils techniques. Chaque profil est un objet du référentiel (`referentiel/profils/pt-XX.md`) ; les numéros de capacité et de chapitres ART ont été alignés sur le CNISN et l'ARTSN pendant la migration (voir `coherence-report.md`).
+Catalogue des 15 profils techniques. Chaque profil est un objet du référentiel (`referentiel/profils/pt-XX.md`) ; les numéros de capacité et de chapitres ART ont été alignés sur le CNISN et l'ARTSN pendant la migration (voir `coherence-report.md`).
 
 <!-- BEGIN:GENERATED mode=table source=referentiel/profils/pt-*.md -->
 <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
@@ -31,5 +31,7 @@ Catalogue des 13 profils techniques. Chaque profil est un objet du référentiel
 | PT-11 | Profil technique national | [CMP-12](../../referentiel/composants/cmp-12.md), [CAP-INT-09](../../referentiel/capacites/cap-int-09.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-4B](../../referentiel/chapitres/art-4b.md), [ART-7](../../referentiel/chapitres/art-7.md), [ART-11](../../referentiel/chapitres/art-11.md) | draft | [fiche](../../referentiel/profils/pt-11.md) |
 | PT-12 | Profil technique national | [CMP-17](../../referentiel/composants/cmp-17.md), [CAP-INT-10](../../referentiel/capacites/cap-int-10.md), [F-1](../../referentiel/fondations/f-1.md), [F-5](../../referentiel/fondations/f-5.md), [F-6](../../referentiel/fondations/f-6.md), [ART-3](../../referentiel/chapitres/art-3.md), [ART-7](../../referentiel/chapitres/art-7.md) | draft | [fiche](../../referentiel/profils/pt-12.md) |
 | PT-13 | Profil technique national | [CMP-05](../../referentiel/composants/cmp-05.md), [CAP-INT-11](../../referentiel/capacites/cap-int-11.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-5](../../referentiel/chapitres/art-5.md), [ART-6](../../referentiel/chapitres/art-6.md) | draft | [fiche](../../referentiel/profils/pt-13.md) |
+| PT-14 | Interopérabilité transfrontalière | [CMP-06](../../referentiel/composants/cmp-06.md), [CMP-15](../../referentiel/composants/cmp-15.md), [CAP-INT-13](../../referentiel/capacites/cap-int-13.md), [ART-7](../../referentiel/chapitres/art-7.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-1](../../referentiel/chapitres/art-1.md) | draft | [fiche](../../referentiel/profils/pt-14.md) |
+| PT-15 | Surveillance One Health | [CMP-02](../../referentiel/composants/cmp-02.md), [CMP-04](../../referentiel/composants/cmp-04.md), [CMP-06](../../referentiel/composants/cmp-06.md), [CAP-INT-14](../../referentiel/capacites/cap-int-14.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-4D](../../referentiel/chapitres/art-4d.md), [ART-8B](../../referentiel/chapitres/art-8b.md), [ART-11](../../referentiel/chapitres/art-11.md) | draft | [fiche](../../referentiel/profils/pt-15.md) |
 
 <!-- END:GENERATED -->

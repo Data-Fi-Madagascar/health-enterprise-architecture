@@ -53,13 +53,13 @@ Points couverts :
 
 | Partie | Document | Objet | État |
 |--------|----------|-------|------|
-| I | [Fondations invariantes](./00_fondations.md) | F.1 résilience géographique, F.2 souveraineté intersectorielle, F.3 éradication des silos, F.4 homologation obligatoire | rédigé |
-| II | [Flux de valeur](./01_flux-de-valeur.md) | VS-01 à VS-04 déclinés en exigences techniques | rédigé |
-| III | [Exigences contextuelles nationales](./02_exigences-contextuelles.md) | ENF-1 à ENF-5 | rédigé |
+| I | [Fondations invariantes](00_fondations/index.md) | F.1 résilience géographique, F.2 souveraineté intersectorielle, F.3 éradication des silos, F.4 homologation obligatoire | rédigé |
+| II | [Flux de valeur](01_flux-de-valeur/index.md) | VS-01 à VS-04 déclinés en exigences techniques | rédigé |
+| III | [Exigences contextuelles nationales](02_exigences-contextuelles/index.md) | ENF-1 à ENF-5 | rédigé |
 | IV | [Chapitres et patterns de référence](./03_chapitres/index.md) | ART-0 à ART-9 (règles d'or et contrats d'interfaces) | rédigé |
-| V | [Cartographie conceptuelle cible](./04_cartographie-cible.md) | 6 couches + 2 axes verticaux | rédigé |
-| VI | [Dictionnaire de données fonctionnelles](./05_dictionnaire.md) | Sémantique universelle interministérielle | cadre posé |
-| VI | [Gouvernance de l'ARTSN](./06_gouvernance.md) | Cycle de vie, versionnement, revue, rôle du CNASN | rédigé |
+| V | [Cartographie conceptuelle cible](04_cartographie-cible/index.md) | 6 couches + 2 axes verticaux | rédigé |
+| VI | [Dictionnaire de données fonctionnelles](05_dictionnaire/index.md) | Sémantique universelle interministérielle | cadre posé |
+| VI | [Gouvernance de l'ARTSN](06_gouvernance/index.md) | Cycle de vie, versionnement, revue, rôle du CNASN | rédigé |
 | A | [Table de maturité par chapitre](./07_annexes/a-table-de-maturite.md) | Statuts et conditions de promotion | rédigé |
 | B | [Glossaire des patterns cités](./07_annexes/b-glossaire-patterns.md) | Définitions des patterns techniques | rédigé |
 | C | [Renvoi CAESN et capacités candidates](./07_annexes/c-renvoi-capacites-candidates.md) | Écarts CAESN, One Health | rédigé |
@@ -72,9 +72,7 @@ Ce dossier est la déclinaison **as code** du document source `[Draft]TECHNICAL-
 
 ## Liens
 
-- [Cadre (niveau 1)](../00_caesn/00_overview/index.md)
-- [CNISN (niveau 2)](../01_cnisn/index.md)
-- [PTISN (niveau 4)](../03_ptisn/index.md)
+- [Guide de lecture de l'ARTSN](./reading-guide.md)
 - [Matrice de lecture de l'ARTSN](./reading-matrix.md)
 - [Glossaire de l'ARTSN](./glossary.md)
 - [Acronymes de l'ARTSN](./acronyms.md)

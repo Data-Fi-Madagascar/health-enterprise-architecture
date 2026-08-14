@@ -25,7 +25,7 @@ tags: [artsn, annexes, maturite, statuts, niveau-3]
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
 
-La table de maturité fixe le statut de chaque chapitre et la condition de passage au statut supérieur. Elle est mise à jour par l'instance de gouvernance lors de chaque [revue du document](../06_gouvernance.md#processus-de-revue-du-document).
+La table de maturité fixe le statut de chaque chapitre et la condition de passage au statut supérieur. Elle est mise à jour par l'instance de gouvernance lors de chaque [revue du document](../06_gouvernance/index.md#processus-de-revue-du-document).
 
 | Chapitre | Statut | Condition de passage au statut supérieur |
 |----------|--------|------------------------------------------|
@@ -55,4 +55,4 @@ La logistique des médicaments et intrants ([CAP-10](../../00_caesn/03_capabilit
 ## Liens
 
 - [Chapitres et patterns de référence](../03_chapitres/index.md)
-- [Gouvernance de l'ARTSN](../06_gouvernance.md)
+- [Gouvernance de l'ARTSN](../06_gouvernance/index.md)

@@ -13,7 +13,7 @@ tags: ["cnisn", "niveau-2", "annexes"]
 
 
 1.  Le CNISN fixe ce qui doit être garanti.
-2.  L’ART-SN fixe les contrats et patrons permettant de le garantir.
+2.  L’ARTSN fixe les contrats et patrons permettant de le garantir.
 3.  Le PTISN fixe les standards, profils et implémentations candidates.
 4.  Une autorité nationale n’implique pas toujours une base physique unique.
 5.  Les copies locales sont autorisées lorsqu’elles restent non autoritatives.

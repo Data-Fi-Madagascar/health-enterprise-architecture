@@ -45,4 +45,4 @@ ART-4d — Référentiel géospatial et d'exploitation partagé constitue un cha
 ## Liens
 
 - [Index des chapitres](./index.md)
-- [Exigences contextuelles — Partie III](../02_exigences-contextuelles.md)
+- [Exigences contextuelles — Partie III](../02_exigences-contextuelles/index.md)

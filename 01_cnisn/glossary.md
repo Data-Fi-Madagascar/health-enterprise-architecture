@@ -2,9 +2,9 @@
 title: Glossaire du CNISN (niveau 2)
 id: cnisn-glossary
 domain: 01_cnisn
-version: "0.0.1"
+version: "0.1.0"
 status: draft
-last_reviewed: 2026-08-09
+last_reviewed: 2026-08-13
 owner: DEPSI
 tags: [cnisn, glossaire, terminologie, niveau-2]
 ---
@@ -27,6 +27,8 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 
 Termes propres au périmètre d'interopérabilité du niveau 2. Les termes transverses de l'architecture (capabilité, flux de valeur, gouvernance, homologation…) sont définis dans le [glossaire du CAESN](../00_caesn/10_annexes/glossary.md).
 
+## Termes d'interopérabilité
+
 **Cadre de test et de conformité** — Dispositif définissant les scénarios de validation, les outils et les jeux de données permettant de vérifier qu'une interface ou un système respecte les profils d'interopérabilité du CNISN avant son intégration au SI santé national.
 
 **Identifiant national de santé** — Identifiant unique et pérenne attribué à chaque citoyen et utilisé par l'ensemble des systèmes d'information sanitaire comme clé d'échange et de rapprochement des données de santé.
@@ -40,6 +42,88 @@ Termes propres au périmètre d'interopérabilité du niveau 2. Les termes trans
 **Standard d'échange** — Norme ou spécification technique retenue pour transporter et structurer les données entre systèmes (FHIR, HL7 v2, HL7 v3, IHE XDS, DICOM…).
 
 **Terminologie de référence** — Vocabulaire contrôlé (codes, libellés, relations) utilisé pour coder les données cliniques et administratives échangées (ICD, SNOMED CT, LOINC, ATC…).
+
+## Termes de capacités d'interopérabilité
+
+**CAP-INT-01** — Résolution d'identité du bénéficiaire : recherche démographique, résolution d'identifiants, rapprochement de dossiers, gestion des identités temporaires.
+
+**CAP-INT-02** — Collecte et transmission des données : collecte de données terrain (applications mobiles, formulaires), validation, transmission sécurisée.
+
+**CAP-INT-03** — Échange et médiation inter-systèmes : transformation, routage, orchestration des échanges entre systèmes hétérogènes.
+
+**CAP-INT-04** — Gestion des stocks et chaîne d'approvisionnement : traçabilité des produits de santé de la réception à la dispensation.
+
+**CAP-INT-05** — Données agrégées de santé publique : collecte, consolidation et transmission des rapports périodiques.
+
+**CAP-INT-06** — Catalogue de services : registre des services numériques disponibles et de leurs métadonnées.
+
+**CAP-INT-07** — Accès et exposition des données analytiques : mise à disposition des données consolidées pour l'analyse et le pilotage.
+
+**CAP-INT-08** — Géolocalisation des services : localisation géographique des formations sanitaires et des points de service.
+
+**CAP-INT-09** — Authentification et autorisation : gestion des identités numériques des professionnels et des droits d'accès.
+
+**CAP-INT-10** — Traçabilité et audit : journalisation des accès, des modifications et des échanges de données.
+
+**CAP-INT-11** — Détection et réponse aux alertes : surveillance automatisée et notifications en temps réel.
+
+**CAP-INT-12** — Tests de conformité : vérification automatisée de la conformité des interfaces aux standards.
+
+**CAP-INT-13** — Interopérabilité transfrontalière : échange de données cliniques avec les systèmes des pays voisins, basé sur le profil HL7 FHIR IPS (International Patient Summary) et le réseau GDHCN.
+
+**CAP-INT-14** — Surveillance One Health : surveillance intégrée des zoonoses et des menaces sanitaires transversales (humain-animal-environnement), avec partage de données entre ministères de la Santé, de l'Agriculture et de l'Environnement.
+
+## Termes de trajectoire
+
+**Trajectoire CNISN** — Plan de déploiement des capacités d'interopérabilité en 7 phases, de T4 2026 à T2 2030 : Foundations → Interopérabilité → Couverture → Pilotage → Transfrontalier → One Health → Optimisation.
+
+**Phase Foundations** (T4 2026) — Première phase de la trajectoire CNISN, posant les fondations : résolution d'identité, échange interinstitutionnel, normes de sécurité.
+
+## Termes de principes
+
+**P-INT-01 à P-INT-04** — Autorité des données : les données sont gérées par des autorités clairement identifiées, avec des règles de gouvernance et de contrôle.
+
+**P-INT-05 à P-INT-07** — Qualité des données : les données sont exactes, complètes, cohérentes et opportunément disponibles.
+
+**P-INT-08 à P-INT-10** — Sécurité : les données sont protégées contre les accès non autorisés, les modifications et les pertes.
+
+**P-INT-11 à P-INT-13** — Interopérabilité : les systèmes échangent des données de façon standardisée et fiable.
+
+**P-INT-14 à P-INT-16** — Consentement : les données de santé sensibles ne sont échangées qu'avec le consentement éclairé du patient.
+
+**P-INT-17 à P-INT-19** — Neutralité technologique : les standards sont choisis indépendamment des éditeurs et des technologies propriétaires.
+
+**P-INT-20 à P-INT-22** — Adaptabilité : les solutions s'adaptent aux contraintes de connectivité, de puissance et de compétence du terrain.
+
+## Termes de conformité
+
+**Conformité obligatoire** — Exigence dont le non-respect empêche l'homologation et le déploiement d'une solution.
+
+**Conformité recommandée** — Exigence fortement encouragée mais dont le non-respect peut être justifié par des contraintes spécifiques.
+
+**Dérogation** — Autorisation exceptionnelle de ne pas respecter une exigence de conformité, soumise à justification et à validation par l'instance compétente.
+
+**Scénario de test** — Séquence de validation décrivant les données d'entrée, les étapes et les critères d'acceptation pour vérifier la conformité d'une interface.
+
+**Jeu de données de test** — Ensemble de données simulées utilisées pour valider le fonctionnement et la conformité des interfaces.
+
+## Termes techniques
+
+**API REST** — *Representational State Transfer Application Programming Interface*. Style d'architecture pour les interfaces web utilisant les méthodes HTTP (GET, POST, PUT, DELETE).
+
+**FHIR** — *Fast Healthcare Interoperability Resources*. Standard moderne pour l'échange de données de santé, basé sur des ressources modulaires et une API REST.
+
+**IHE** — *Integrating the Healthcare Enterprise*. Organisation internationale développant des profils d'intégration pour améliorer l'interopérabilité des systèmes de santé.
+
+**HL7** — *Health Level Seven*. Standard international pour l'échange de données de santé, couvrant les messages (v2), les documents (v3/CDA) et les ressources (FHIR).
+
+**PIXm** — *Patient Identifier Cross-referencing for mobile*. Profil IHE pour la gestion et la recherche des identifiants patients entre domaines via une API REST.
+
+**PDQm** — *Patient Demographics Query for mobile*. Profil IHE pour la recherche de patients à partir de données démographiques via une API REST.
+
+**mADX** — *Mobile Aggregate Data Exchange*. Profil IHE pour l'échange de données agrégées de santé publique, basé sur FHIR.
+
+**X-Road** — Plateforme d'échange de données sécurisé entre organisations membres, utilisant des serveurs de sécurité et une infrastructure de confiance commune.
 
 ## Liens
 

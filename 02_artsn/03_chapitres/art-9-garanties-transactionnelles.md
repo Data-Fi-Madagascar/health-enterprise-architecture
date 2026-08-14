@@ -46,4 +46,4 @@ ART-9 — Garanties transactionnelles fortes constitue un chapitre du **cadre no
 ## Liens
 
 - [Index des chapitres](./index.md)
-- [Exigences contextuelles — Partie III](../02_exigences-contextuelles.md)
+- [Exigences contextuelles — Partie III](../02_exigences-contextuelles/index.md)

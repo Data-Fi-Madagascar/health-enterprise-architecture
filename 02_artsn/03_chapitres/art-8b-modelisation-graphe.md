@@ -46,4 +46,4 @@ ART-8b — Modélisation de relations en graphe constitue un chapitre du **cadre
 ## Liens
 
 - [Index des chapitres](./index.md)
-- [Exigences contextuelles — Partie III](../02_exigences-contextuelles.md)
+- [Exigences contextuelles — Partie III](../02_exigences-contextuelles/index.md)

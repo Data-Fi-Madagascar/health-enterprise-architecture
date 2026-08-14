@@ -45,4 +45,4 @@ ART-2 — Médiation et normalisation constitue un chapitre du **cadre normatif 
 ## Liens
 
 - [Index des chapitres](./index.md)
-- [Exigences contextuelles — Partie III](../02_exigences-contextuelles.md)
+- [Exigences contextuelles — Partie III](../02_exigences-contextuelles/index.md)

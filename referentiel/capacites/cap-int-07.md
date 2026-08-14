@@ -36,7 +36,7 @@ Permettre l’accès gouverné aux données et indicateurs destinés à la déci
 
 Cette capacité concerne l’exposition et l’accès interopérables.
 
-La conception interne des entrepôts, projections et modèles analytiques relève de l’ART-SN et des architectures propres aux initiatives.
+La conception interne des entrepôts, projections et modèles analytiques relève de l’ARTSN et des architectures propres aux initiatives.
 
 ### Principes associés
 

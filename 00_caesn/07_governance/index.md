@@ -62,6 +62,8 @@ Il est présidé par le Secrétaire Général du Ministère ou son représentant
 - [Composition et fonctionnement du Bureau de Réalisation de la Valeur](./value-realization-office.md)
 - [RACI de gouvernance et responsabilités](./raci.md)
 - [Point de vigilance CAESN — capacité et référentiel manquants pour la coordination intersectorielle (One Health)](./point-de-vigilance-caesn.md)
+- [Guide du processus de gouvernance](./processus-gouvernance.md) — Workflows, délais, escalade et matrices de décision
+- [Workflow d'homologation](./homologation.md) — Checklist, matrice de décision et processus d'homologation des initiatives
 
 ## Déploiement progressif
 

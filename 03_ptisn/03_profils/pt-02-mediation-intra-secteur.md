@@ -28,7 +28,7 @@ tags: ["ptisn", "niveau-4", "profils", "pt-02"]
 
 ## 3. Service national
 
-**Service sectoriel de médiation et d’intégration sanitaire**
+**Service sectoriel de médiation et d'intégration sanitaire**
 
 ## 4. Fonctions
 
@@ -54,7 +54,7 @@ tags: ["ptisn", "niveau-4", "profils", "pt-02"]
 | Alternatives | Autorisées si les contrats ART sont satisfaits |
 | Périmètre | Médiation intra-secteur santé |
 
-OpenHIM fournit un point d’entrée pour les services, journalise les requêtes et permet d’étendre les traitements à travers des médiateurs indépendants. Il est présenté par sa documentation comme une implémentation de référence de la couche d’interopérabilité OpenHIE.
+OpenHIM fournit un point d'entrée pour les services, journalise les requêtes et permet d'étendre les traitements à travers des médiateurs indépendants. Il est présenté par sa documentation comme une implémentation de référence de la couche d'interopérabilité OpenHIE.
 
 ## 6. Exigences
 
@@ -72,21 +72,37 @@ Une solution alternative doit au minimum supporter :
 - déploiement de médiateurs indépendants ;
 - intégration avec les services nationaux.
 
-## 7. Articulation avec l’échange interinstitutionnel
+## 7. Articulation avec l'échange interinstitutionnel
 
-Système santé
-          │
-          ▼
-    Médiateur sectoriel
-          │
-          ▼
-    Service métier ou registre santé
-          │
-          ▼
-    Point d’échange sectoriel
-          │
-          ▼
-    Plateforme interinstitutionnelle
+```plantuml
+@startuml
+skinparam activity {
+  BackgroundColor #E8F4FD
+  BorderColor #2196F3
+}
+
+|Système santé|
+start
+:Envoie les données;
+
+|Médiateur sectoriel|
+:Traite la sémantique
+et les règles sectorielles;
+
+|Service métier ou registre santé|
+:Traite la demande;
+
+|Point d'échange sectoriel|
+:Route vers la plateforme;
+
+|Plateforme interinstitutionnelle|
+:Assure la confiance
+entre organisations;
+
+stop
+
+@enduml
+```
 
 Le médiateur traite la sémantique et les règles sectorielles.
 

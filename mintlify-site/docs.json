@@ -1,0 +1,317 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Santé numérique de Madagascar — Architecture d'entreprise",
+  "colors": {
+    "primary": "#0E7490",
+    "light": "#06B6D4",
+    "dark": "#155E75"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "CAESN",
+        "icon": "landmark",
+        "pages": [
+          {
+            "group": "Caesn/overview",
+            "pages": [
+              "/caesn/overview/foundations",
+              "/caesn/overview/value-model"
+            ],
+            "root": "/caesn/overview/index"
+          },
+          {
+            "group": "Caesn",
+            "pages": [
+              "/caesn/reading-matrix"
+            ]
+          },
+          {
+            "group": "Caesn/value streams",
+            "pages": [
+              "/caesn/value-streams/vs-01-access-care",
+              "/caesn/value-streams/vs-02-risk-protection",
+              "/caesn/value-streams/vs-03-financial-protection",
+              "/caesn/value-streams/vs-04-system-steering"
+            ],
+            "root": "/caesn/value-streams/index"
+          },
+          {
+            "group": "Caesn/principles",
+            "pages": [
+              "/caesn/principles/transversal"
+            ],
+            "root": "/caesn/principles/index"
+          },
+          {
+            "group": "Caesn/principles/domain",
+            "pages": [
+              "/caesn/principles/domain/vs01",
+              "/caesn/principles/domain/vs02",
+              "/caesn/principles/domain/vs03",
+              "/caesn/principles/domain/vs04"
+            ],
+            "root": "/caesn/principles/domain/index"
+          },
+          {
+            "group": "Caesn/capabilities",
+            "pages": [
+              "/caesn/capabilities/business",
+              "/caesn/capabilities/digital",
+              "/caesn/capabilities/enabling",
+              "/caesn/capabilities/maturity",
+              "/caesn/capabilities/runway"
+            ],
+            "root": "/caesn/capabilities/index"
+          },
+          {
+            "group": "Caesn/data",
+            "pages": [
+              "/caesn/data/domains",
+              "/caesn/data/governance",
+              "/caesn/data/lifecycle",
+              "/caesn/data/principles",
+              "/caesn/data/referentials"
+            ],
+            "root": "/caesn/data/index"
+          },
+          {
+            "group": "Caesn/application",
+            "pages": [
+              "/caesn/application/application-domains",
+              "/caesn/application/constraints",
+              "/caesn/application/layers",
+              "/caesn/application/lifecycle",
+              "/caesn/application/principles",
+              "/caesn/application/rationalization",
+              "/caesn/application/shared-services",
+              "/caesn/application/urbanisation"
+            ],
+            "root": "/caesn/application/index"
+          },
+          {
+            "group": "Caesn/portfolio",
+            "pages": [
+              "/caesn/portfolio/governance",
+              "/caesn/portfolio/initiative-card",
+              "/caesn/portfolio/prioritization",
+              "/caesn/portfolio/value-chain"
+            ],
+            "root": "/caesn/portfolio/index"
+          },
+          {
+            "group": "Caesn/governance",
+            "pages": [
+              "/caesn/governance/point-de-vigilance-caesn",
+              "/caesn/governance/raci",
+              "/caesn/governance/value-realization-office"
+            ],
+            "root": "/caesn/governance/index"
+          },
+          {
+            "group": "Caesn/decisions",
+            "pages": [
+              "/caesn/decisions/adr-0000-template"
+            ],
+            "root": "/caesn/decisions/index"
+          },
+          {
+            "group": "Caesn/standards",
+            "pages": [
+              "/caesn/standards/std-0000-template"
+            ],
+            "root": "/caesn/standards/index"
+          },
+          {
+            "group": "Caesn/annexes",
+            "pages": [
+              "/caesn/annexes/glossary",
+              "/caesn/annexes/acronyms"
+            ],
+            "root": "/caesn/annexes/index"
+          }
+        ]
+      },
+      {
+        "tab": "CNISN",
+        "icon": "handshake",
+        "pages": [
+          {
+            "group": "Cnisn",
+            "pages": [
+              "/cnisn/reading-matrix",
+              "/cnisn/introduction",
+              "/cnisn/principes",
+              "/cnisn/capacites",
+              "/cnisn/gouvernance",
+              "/cnisn/conformite",
+              "/cnisn/trajectoire",
+              "/cnisn/indicateurs",
+              "/cnisn/conclusion",
+              "/cnisn/glossary",
+              "/cnisn/acronyms"
+            ],
+            "root": "/cnisn/index"
+          },
+          {
+            "group": "Cnisn/annexes",
+            "pages": [
+              "/cnisn/annexes/a-matrice-principes-capacites",
+              "/cnisn/annexes/b-articulation-art-sn",
+              "/cnisn/annexes/c-articulation-ptisn",
+              "/cnisn/annexes/d-principes-lecture",
+              "/cnisn/annexes/e-correspondance-caesn"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "ARTSN",
+        "icon": "network",
+        "pages": [
+          {
+            "group": "Artsn",
+            "pages": [
+              "/artsn/reading-matrix",
+              "/artsn/fondations",
+              "/artsn/flux-de-valeur",
+              "/artsn/exigences-contextuelles",
+              "/artsn/cartographie-cible",
+              "/artsn/dictionnaire",
+              "/artsn/gouvernance",
+              "/artsn/glossary",
+              "/artsn/acronyms"
+            ],
+            "root": "/artsn/index"
+          },
+          {
+            "group": "Artsn/chapitres",
+            "pages": [
+              "/artsn/chapitres/art-0-accords-partage",
+              "/artsn/chapitres/art-1-integration-ingestion",
+              "/artsn/chapitres/art-2-mediation-normalisation",
+              "/artsn/chapitres/art-3-historisation-evenementielle",
+              "/artsn/chapitres/art-4-referentiels-metadonnees",
+              "/artsn/chapitres/art-4a-resolution-identite",
+              "/artsn/chapitres/art-4b-bases-autorisation",
+              "/artsn/chapitres/art-4c-eligibilite-couverture",
+              "/artsn/chapitres/art-4d-referentiel-geospatial",
+              "/artsn/chapitres/art-5-coherence-qualite-donnees",
+              "/artsn/chapitres/art-6-analytique-restitution",
+              "/artsn/chapitres/art-7-securite-controle-acces",
+              "/artsn/chapitres/art-8-orchestration-processus-borne",
+              "/artsn/chapitres/art-8a-orchestration-processus-borne",
+              "/artsn/chapitres/art-8b-modelisation-graphe",
+              "/artsn/chapitres/art-8c-agregation-par-lot",
+              "/artsn/chapitres/art-8d-choregraphie-interinstitutionnelle",
+              "/artsn/chapitres/art-9-garanties-transactionnelles"
+            ],
+            "root": "/artsn/chapitres/index"
+          },
+          {
+            "group": "Artsn/annexes",
+            "pages": [
+              "/artsn/annexes/a-table-de-maturite",
+              "/artsn/annexes/b-glossaire-patterns",
+              "/artsn/annexes/c-renvoi-capacites-candidates"
+            ],
+            "root": "/artsn/annexes/index"
+          }
+        ]
+      },
+      {
+        "tab": "PTISN",
+        "icon": "terminal",
+        "pages": [
+          {
+            "group": "Ptisn",
+            "pages": [
+              "/ptisn/reading-matrix",
+              "/ptisn/introduction",
+              "/ptisn/regles-utilisation",
+              "/ptisn/topologie-nationale-cible",
+              "/ptisn/matrice-alignement",
+              "/ptisn/profil-initiative",
+              "/ptisn/gouvernance",
+              "/ptisn/conclusion",
+              "/ptisn/glossary",
+              "/ptisn/acronyms"
+            ],
+            "root": "/ptisn/index"
+          },
+          {
+            "group": "Ptisn/profils",
+            "pages": [
+              "/ptisn/profils/pt-00-index",
+              "/ptisn/profils/pt-01-echange-interinstitutionnel",
+              "/ptisn/profils/pt-02-mediation-intra-secteur",
+              "/ptisn/profils/pt-03-catalogue-services-registre-contrats",
+              "/ptisn/profils/pt-04-resolution-identite-beneficiaire",
+              "/ptisn/profils/pt-05-registre-professionnels",
+              "/ptisn/profils/pt-06-referentiel-structures-services",
+              "/ptisn/profils/pt-07-terminologie-codification",
+              "/ptisn/profils/pt-08-echange-donnees-agregees",
+              "/ptisn/profils/pt-09-analytique-exposition-donnees",
+              "/ptisn/profils/pt-10-confiance-authentification-autorisation",
+              "/ptisn/profils/pt-11-consentement-bases-autorisation",
+              "/ptisn/profils/pt-12-audit-provenance-traçabilité",
+              "/ptisn/profils/pt-13-qualite-reconciliation"
+            ]
+          },
+          {
+            "group": "Ptisn/annexes",
+            "pages": [
+              "/ptisn/annexes/a-synthese-choix",
+              "/ptisn/annexes/b-decisions-instruire",
+              "/ptisn/annexes/c-principes-mise-en-oeuvre",
+              "/ptisn/annexes/d-glossaire"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Accueil",
+          "icon": "house",
+          "href": "/index"
+        },
+        {
+          "anchor": "Téléchargements",
+          "icon": "download",
+          "href": "https://github.com/Data-Fi-Madagascar/health-enterprise-architecture/releases"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/Data-Fi-Madagascar/health-enterprise-architecture"
+      }
+    ]
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
+  },
+  "metadata": {
+    "timestamp": true
+  }
+}

@@ -59,9 +59,7 @@ Points couverts (à compléter) :
 
 ## Liens
 
-- [Cadre (niveau 1)](../00_caesn/00_overview/index.md)
-- [ARTSN (niveau 3)](../02_artsn/index.md)
-- [PTISN (niveau 4)](../03_ptisn/index.md)
+- [Guide de lecture du CNISN](./reading-guide.md)
 - [Matrice de lecture du CNISN](./reading-matrix.md)
 - [Glossaire du CNISN](./glossary.md)
 - [Acronymes du CNISN](./acronyms.md)

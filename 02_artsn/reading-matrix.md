@@ -17,10 +17,11 @@ L'ARTSN décline le niveau 1 en **familles de patterns validées**, **standards 
 
 | Document du niveau 3 | Décideurs institutionnels | Directions métier / programmes | DEPSI / équipes techniques | SIS / données / suivi-évaluation | Partenaires techniques et financiers |
 |----------------------|---------------------------|-------------------------------|----------------------------|----------------------------------|--------------------------------------|
+| [Guide de lecture de l'ARTSN](./reading-guide.md) | ● | ◐ | ● | ◐ | ● |
 | [Index de l'ARTSN](./index.md) | ● | ◐ | ● | ◐ | ● |
-| [Partie I — Fondations invariantes](./00_fondations.md) | ● | ◐ | ● | ◐ | ● |
-| [Partie II — Flux de valeur](./01_flux-de-valeur.md) | ◐ | ● | ● | ◐ | ◐ |
-| [Partie III — Exigences contextuelles nationales](./02_exigences-contextuelles.md) | ◐ | ◐ | ● | ◐ | ◐ |
+| [Partie I — Fondations invariantes](00_fondations/index.md) | ● | ◐ | ● | ◐ | ● |
+| [Partie II — Flux de valeur](01_flux-de-valeur/index.md) | ◐ | ● | ● | ◐ | ◐ |
+| [Partie III — Exigences contextuelles nationales](02_exigences-contextuelles/index.md) | ◐ | ◐ | ● | ◐ | ◐ |
 | [Partie IV — Chapitres et patterns de référence](./03_chapitres/index.md) | ○ | ◐ | ● | ● | ◐ |
 | [ART-0 — Accords de partage](../referentiel/chapitres/art-0.md) | ◐ | ● | ● | ◐ | ◐ |
 | [ART-1 — Intégration et ingestion](../referentiel/chapitres/art-1.md) | ○ | ○ | ● | ● | ◐ |
@@ -40,9 +41,9 @@ L'ARTSN décline le niveau 1 en **familles de patterns validées**, **standards 
 | [ART-8c — Agrégation par lot](../referentiel/chapitres/art-8c.md) | ○ | ○ | ● | ● | ◐ |
 | [ART-8d — Chorégraphie inter-institutionnelle](../referentiel/chapitres/art-8d.md) | ◐ | ● | ● | ◐ | ◐ |
 | [ART-9 — Garanties transactionnelles](../referentiel/chapitres/art-9.md) | ○ | ● | ● | ◐ | ◐ |
-| [Partie V — Cartographie conceptuelle cible](./04_cartographie-cible.md) | ◐ | ◐ | ● | ● | ◐ |
-| [Partie VI — Dictionnaire de données](./05_dictionnaire.md) | ○ | ◐ | ● | ● | ◐ |
-| [Partie VI — Gouvernance de l'ARTSN](./06_gouvernance.md) | ● | ◐ | ● | ◐ | ● |
+| [Partie V — Cartographie conceptuelle cible](04_cartographie-cible/index.md) | ◐ | ◐ | ● | ● | ◐ |
+| [Partie VI — Dictionnaire de données](05_dictionnaire/index.md) | ○ | ◐ | ● | ● | ◐ |
+| [Partie VI — Gouvernance de l'ARTSN](06_gouvernance/index.md) | ● | ◐ | ● | ◐ | ● |
 | [Annexe A — Table de maturité](./07_annexes/a-table-de-maturite.md) | ○ | ◐ | ● | ◐ | ◐ |
 | [Annexe B — Glossaire des patterns](./07_annexes/b-glossaire-patterns.md) | ○ | ○ | ● | ◐ | ◐ |
 | [Glossaire de l'ARTSN](./glossary.md) | ○ | ◐ | ● | ◐ | ◐ |

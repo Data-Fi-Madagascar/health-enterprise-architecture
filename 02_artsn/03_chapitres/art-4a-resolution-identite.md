@@ -46,4 +46,4 @@ ART-4a — Résolution d'identité constitue un chapitre du **cadre normatif opp
 ## Liens
 
 - [Index des chapitres](./index.md)
-- [Exigences contextuelles — Partie III](../02_exigences-contextuelles.md)
+- [Exigences contextuelles — Partie III](../02_exigences-contextuelles/index.md)

@@ -45,4 +45,4 @@ ART-0 — Accords de partage inter-institutionnels constitue un chapitre du **ca
 ## Liens
 
 - [Index des chapitres](./index.md)
-- [Exigences contextuelles — Partie III](../02_exigences-contextuelles.md)
+- [Exigences contextuelles — Partie III](../02_exigences-contextuelles/index.md)

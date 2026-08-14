@@ -27,18 +27,49 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 
 Le paysage applicatif national est organisé en six couches complémentaires :
 
-```
-Utilisateurs et points de service
-        ↓
-Applications métier
-        ↓
-Plateformes et services partagés
-        ↓
-Couche nationale d'échange
-        ↓
-Données, analyse et pilotage
-        ↓
-Infrastructure, sécurité et exploitation
+```plantuml
+@startuml
+skinparam component {
+  BackgroundColor #E8F4FD
+  BorderColor #2196F3
+}
+skinparam package {
+  BackgroundColor #FFF3E0
+  BorderColor #FF9800
+}
+
+package "Utilisateurs et points de service" as L1 {
+  component " " as L1_DESC
+}
+
+package "Applications métier" as L2 {
+  component " " as L2_DESC
+}
+
+package "Plateformes et services partagés" as L3 {
+  component " " as L3_DESC
+}
+
+package "Couche nationale d'échange" as L4 {
+  component " " as L4_DESC
+}
+
+package "Données, analyse et pilotage" as L5 {
+  component " " as L5_DESC
+}
+
+package "Infrastructure, sécurité et exploitation" as L6 {
+  component " " as L6_DESC
+}
+
+' === Relations ===
+L1 --> L2
+L2 --> L3
+L3 --> L4
+L4 --> L5
+L5 --> L6
+
+@enduml
 ```
 
 ## 1. Utilisateurs et points de service

@@ -21,7 +21,7 @@ Déclinaison de **CAP-INT-02**, complétée par les capacités relatives à la g
 ## 2. Chapitres ART applicables
 
 - ART-4 ;
-- ART-4a — Résolution d’identité ;
+- ART-4a — Résolution d'identité ;
 - ART-7.
 
 ## 3. Service national
@@ -32,16 +32,16 @@ Déclinaison de **CAP-INT-02**, complétée par les capacités relatives à la g
 
 Le service doit gérer :
 
-- l’identité du professionnel ;
+- l'identité du professionnel ;
 - la profession ;
 - la qualification ;
 - la spécialité ;
 - la licence ;
-- l’ordre ou l’autorité professionnelle ;
-- l’employeur ;
-- l’affectation ;
-- l’établissement ;
-- la période d’exercice ;
+- l'ordre ou l'autorité professionnelle ;
+- l'employeur ;
+- l'affectation ;
+- l'établissement ;
+- la période d'exercice ;
 - le statut ;
 - les habilitations métier.
 
@@ -54,26 +54,37 @@ Le profil mCSD peut être utilisé pour exposer les informations de découverte 
 | Élément                             | Statut           |
 |-------------------------------------|------------------|
 | Service national HWR                | Requis           |
-| Profil d’exposition mCSD            | Recommandé       |
+| Profil d'exposition mCSD            | Recommandé       |
 | Produit de registre                 | À sélectionner   |
 | Modèle métier national              | À définir        |
-| Lien avec l’identité fondationnelle | À définir        |
+| Lien avec l'identité fondationnelle | À définir        |
 | Authentification des professionnels | Service distinct |
 
 ## 7. Principe de séparation
 
-Le registre professionnel ne constitue pas le fournisseur d’authentification.
+Le registre professionnel ne constitue pas le fournisseur d'authentification.
 
-    Fournisseur d’identité
-    Authentifie la personne
-              │
-              ▼
-    Registre professionnel
-    Détermine sa qualité et son statut
-              │
-              ▼
-    Service d’autorisation
-    Détermine ce qu’elle peut faire
+```plantuml
+@startuml
+skinparam activity {
+  BackgroundColor #E8F4FD
+  BorderColor #2196F3
+}
+
+|Fournisseur d'identité|
+start
+:Authentifie la personne;
+
+|Registre professionnel|
+:Détermine sa qualité et son statut;
+
+|Service d'autorisation|
+:Détermine ce qu'elle peut faire;
+
+stop
+
+@enduml
+```
 
 Un utilisateur authentifié ne doit pas être considéré comme professionnel habilité sans vérification de son statut dans le registre approprié.
 

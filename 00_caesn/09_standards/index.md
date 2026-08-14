@@ -2,9 +2,9 @@
 title: Normes et standards d'architecture
 id: standards
 domain: 09_standards
-version: "0.0.1"
-status: draft
-last_reviewed: 2026-07-03
+version: "1.0.0"
+status: approved
+last_reviewed: 2026-08-13
 owner: Comité National d'Architecture Santé Numérique
 tags: [standards, normes, homologation]
 ---
@@ -56,6 +56,14 @@ Un modèle de norme est proposé : [STD-0000 — modèle](./std-0000-template.md
 | Code | Titre | Type | Statut |
 |------|-------|------|--------|
 | STD-0000 | [Modèle de norme](./std-0000-template.md) | modèle | — |
+| **STD-0001** | [Norme d'interopérabilité — HL7 FHIR R4](./std-0001-interopabilite-fhir.md) | Norme obligatoire | Approuvé |
+| **STD-0002** | [Norme de sécurité — Chiffrement et contrôle d'accès](./std-0002-securite-chiffrement.md) | Norme obligatoire | Approuvé |
+| **STD-0003** | [Norme d'échange interinstitutionnel — X-Road](./std-0003-x-road.md) | Norme obligatoire | Approuvé |
+| **STD-0004** | [Norme de données agrégées — mADX](./std-0004-madx.md) | Norme obligatoire | Approuvé |
+| **STD-0005** | [Norme d'identité patient — PIXm/PDQm](./std-0005-identite-pixm.md) | Norme obligatoire | Approuvé |
+| **STD-0006** | [Norme terminologique — CIM-10 + LOINC](./std-0006-terminologie.md) | Norme obligatoire | Approuvé |
+| **NORM-007** | [Règlement Sanitaire International (RSI 2005)](./norm-007-rsi.md) | Norme internationale obligatoire | Actif |
+| **NORM-008** | [Tripartite Plus OMS–WOAH–FAO–PNUE](./norm-008-tripartite.md) | Cadre normatif international | Actif |
 
 ## Liens
 

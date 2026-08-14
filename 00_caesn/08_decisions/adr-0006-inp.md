@@ -1,0 +1,92 @@
+---
+title: "ADR-0006 — Adoption de l'Identité Nationale Patient (INP) via PIXm/PDQm"
+id: adr-0006
+domain: 08_decisions
+version: "0.1.0"
+status: proposé
+date: 2026-08-13
+owner: DEPSI
+tags: [adr, identité, patient, inp, pixm, pdqm]
+---
+
+# ADR-0006 — Adoption de l'Identité Nationale Patient (INP) via PIXm/PDQm
+
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ● |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle.
+
+- **Statut** : proposé
+- **Date** : 2026-08-13
+- **Groupe concerné** : DEPSI, INSTAT, CNIE, CNASN
+
+## Contexte
+
+L'identité patient est l'actif fondamental du système d'information sanitaire. Sans identifiant unique national (INP), il est impossible de :
+- Garantir la continuité des soins entre établissements
+- Éviter les doublons et les erreurs d'identification
+- Croiser les données pour le pilotage et la recherche
+- Protéger financièrement les bénéficiaires
+
+Actuellement, chaque programme (BPC, AMM, VIH, TB) gère ses propres identifiants, créant une fragmentation qui empêche l'interopérabilité. Le référentiel des bénéficiaires n'est pas consolidé.
+
+## Décision
+
+Adopter l'**Identité Nationale Patient (INP)** comme identifiant unique national pour tout patient interagissant avec le système de santé, implémenté via les profils IHE PIXm (Patient Identifier Cross-referencing for mobile) et PDQm (Patient Demographics Query for mobile).
+
+## Justification
+
+L'INP répond aux exigences du cadre :
+
+- **CAP-INT-01** : Résolution d'identité du bénéficiaire
+- **CAP-13** : Interopérabilité des données
+- **ART-4** : Référentiels nationaux
+- **ART-4a** : Résolution d'identité
+- **VS-01** : Parcours patient (continuité)
+- **VS-03** : Protection financière (éligibilité)
+
+L'INP doit :
+- Être attribué une seule fois par personne physique (unicité)
+- Être non modifiable après validation (stabilité)
+- Être partagé entre tous les systèmes (interopérabilité)
+- Être conforme au format INSTAT (12 chiffres)
+
+## Conséquences
+
+### Positives
+- Continuité des soins garantie entre établissements
+- Élimination des doublons et des erreurs d'identification
+- Croisement possible des données pour le pilotage
+- Base fiable pour la protection financière
+- Interopérabilité avec les systèmes existants (OpenMRS, LMIS)
+
+### Négatives
+- Nécessite la migration des identifiants existants (programmes)
+- Coût de déploiement de l'infrastructure INP
+- Résistance institutionnelle (perte d'autonomie des programmes)
+- Nécessite un accord avec la CNIE pour l'alignement état civil
+
+## Alternatives considérées
+
+| Alternative | Raison du refus |
+|-------------|-----------------|
+| Identifiants par programme | Fragmentation, pas d'interopérabilité |
+| NIN état civil seul | Pas adapté au contexte santé (enfants, sans papiers) |
+| Identifiant biométrique | Coût élevé, problèmes éthiques, infrastructure lourde |
+| Identifiant UUID aléatoire | Pas de signification métier, pas humainement lisible |
+
+## Références
+
+- [PT-04 — Résolution d'identité](../../03_ptisn/03_profils/pt-04-resolution-identite-beneficiaire.md)
+- [ADR-0004 — PIXm/PDQm](./adr-0004-identite.md)
+- [ART-4 — Référentiels nationaux](../../02_artsn/03_chapitres/art-4-referentiels-metadonnees.md)
+- [CAP-INT-01 — Résolution d'identité](../../referentiel/capacites/cap-int-01.md)

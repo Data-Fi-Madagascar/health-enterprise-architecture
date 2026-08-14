@@ -45,4 +45,4 @@ ART-10 — Logistique constitue un chapitre du **cadre normatif opposable** de l
 ## Liens
 
 - [Index des chapitres](./index.md)
-- [Exigences contextuelles — Partie III](../02_exigences-contextuelles.md)
+- [Exigences contextuelles — Partie III](../02_exigences-contextuelles/index.md)

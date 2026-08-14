@@ -3,7 +3,7 @@ title: "ART-11 — Coordination intersectorielle"
 id: art-11
 domain: 02_artsn
 version: "0.0.1"
-status: draft
+status: stable
 last_reviewed: 2026-08-12
 owner: DEPSI
 tags: [artsn, chapitres, art-11, niveau-3]
@@ -34,15 +34,15 @@ ART-11 — Coordination intersectorielle constitue un chapitre du **cadre normat
 
 **Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (ministères co-égaux, partenaires internationaux) : elle seule permet de déclencher des actions conjointes lors d'un signal épidémique ou d'une urgence sanitaire sans rompre le pipeline ni la souveraineté de chaque institution.
 
-- **Rattachement** : [CAP-08](../../referentiel/capabilites/cap-08.md) (gouvernance, coordination, redevabilité).
+- **Rattachement** : [CAP-08](../../referentiel/capabilites/cap-08.md) (gouvernance, coordination, redevabilité), [CAP-18](../../referentiel/capabilites/cap-18.md) (Coordination intersectorielle — One Health), [CAP-INT-14](../../referentiel/capacites/cap-int-14.md) (Échanges intersectoriels One Health).
 - **Modèles cibles** : accords de partage, chorégraphie inter-institutionnelle, espaces de rapprochement neutres.
 - **Déduit selon** : [ENF-4](../../referentiel/exigences/enf-4.md) (cloisonnement inter-institutionnel One Health).
-- **Statut : Provisoire.**
+- **Statut : Stable.**
 
-*Rattachement : [ENF-4](../../referentiel/exigences/enf-4.md), [CAP-08](../../referentiel/capabilites/cap-08.md) · [fiche](../../referentiel/chapitres/art-11.md)*
+*Rattachement : [ENF-4](../../referentiel/exigences/enf-4.md), [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-18](../../referentiel/capabilites/cap-18.md), [CAP-INT-14](../../referentiel/capacites/cap-int-14.md) · [fiche](../../referentiel/chapitres/art-11.md)*
 
 <!-- END:GENERATED -->
 ## Liens
 
 - [Index des chapitres](./index.md)
-- [Exigences contextuelles — Partie III](../02_exigences-contextuelles.md)
+- [Exigences contextuelles — Partie III](../02_exigences-contextuelles/index.md)

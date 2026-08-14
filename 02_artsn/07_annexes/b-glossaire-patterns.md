@@ -70,4 +70,4 @@ Modèle de messagerie décentralisée où les consommateurs s'abonnent de maniè
 ## Liens
 
 - [Chapitres et patterns de référence](../03_chapitres/index.md)
-- [Dictionnaire de données fonctionnelles](../05_dictionnaire.md)
+- [Dictionnaire de données fonctionnelles](../05_dictionnaire/index.md)
