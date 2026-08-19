@@ -43,6 +43,20 @@ Il s'applique aux systèmes d'information sanitaire, plateformes de données, ap
 
 Il ne couvre pas les équipements biomédicaux ni les infrastructures physiques des formations sanitaires, sauf dans leur interface avec les systèmes d'information.
 
+## Cadre légal et stratégique
+
+Le cadre s'inscrit dans un environnement juridique et stratégique structuré :
+
+**Stratégie Nationale de Santé Digitale (SNSD) 2023-2027** — Document directeur du numérique en santé, approuvé par le Ministère de la Santé Publique. Il définit quatre axes stratégiques : gouvernance digitale, solutions technologiques, ressources et financement pérenne. Le cadre CAESN décline ces orientations en principes, capabilités et mécanismes de gouvernance. Le SNSD 2023-2027 est la deuxième édition, succédant à la stratégie 2019-2023.
+
+**Plan Stratégique de Renforcement du Système d'Information Sanitaire (PSRSIS) 2023-2027** — Priorités relatives aux données de santé, adoptant DHIS2 comme entrepôt national et définissant six stratégies de renforcement du système d'information.
+
+**Loi n°2014-038 sur la protection des données à caractère personnel** — Cadre juridique de la protection des données personnelles, promulguée le 9 janvier 2015, avec décret d'application 2023-1541. Elle institue la Commission Malagasy de l'Informatique et des Libertés (CMIL) comme autorité indépendante de protection. Les principes de la loi (finalité, minimisation, consentement, sécurité, droit d'accès) sont intégrés dans les règles de gouvernance des données du cadre (§Protection des données personnelles de santé).
+
+**Convention de Malabo** — Convention de l'Union Africaine sur la cybersécurité et la protection des données à caractère personnel, ratifiée par Madagascar (loi 2024-004). Elle renforce le cadre juridique transfrontalier de protection des données.
+
+**Plan Stratégique quinquennal du Numérique 2023-2028** — Vision nationale de transformation numérique, intégrant la santé parmi les secteurs prioritaires.
+
 ## Ce que ce cadre n'est pas
 
 - **Un plan de projet** : il ne décrit pas les étapes de mise en œuvre d'une solution particulière.
@@ -64,7 +78,7 @@ Ce dépôt implémente le cadre comme **architecture as code** : chaque concept 
 
 | Domaine | Contenu |
 |---------|---------|
-| Fondements | Ancrage stratégique et normatif (PDSS, SNSD, PSRSIS, OMS DPI-H, OpenHIE, GovStack) |
+| Fondements | Ancrage stratégique et normatif (PDSS, SNSD, PSRSIS, Loi 2014-038, Convention de Malabo, OMS DPI-H, OpenHIE, GovStack) |
 | Modèle de valeur | Bénéficiaires, dimensions de valeur |
 | Flux de valeur | Les 4 flux de valeur nationaux (VS-01 à VS-04) |
 | Principes | Principes d'architecture transversaux (PA) et principes de domaine (PD) |

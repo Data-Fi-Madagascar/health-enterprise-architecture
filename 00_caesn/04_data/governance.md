@@ -51,7 +51,9 @@ L'accès obéit au principe du **besoin légitime d'accès** dans le cadre d'une
 
 ## Protection des données personnelles de santé
 
-Exigences retenues :
+Le cadre de protection des données personnelles de santé s'appuie sur la **Loi n°2014-038** sur la protection des données à caractère personnel (promulguée le 9 janvier 2015, décret d'application 2023-1541) et sur la **Convention de Malabo** (ratifiée par la loi 2024-004). La loi institue la Commission Malagasy de l'Informatique et des Libertés (CMIL) comme autorité indépendante chargée de veiller au respect des principes de protection.
+
+Exigences retenues, alignées sur les principes de la loi 2014-038 :
 
 | Exigence | Description |
 |----------|-------------|

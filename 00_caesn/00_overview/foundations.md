@@ -27,11 +27,19 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 
 ## Ancrage dans les stratégies nationales
 
-Le cadre tire sa légitimité et son orientation de trois documents stratégiques nationaux :
+Le cadre tire sa légitimité et son orientation de trois documents stratégiques nationaux et d'un cadre juridique structurant :
 
 - **Plan de Développement du Secteur Santé (PDSS) 2020-2024** — référence principale de planification. Définit huit axes stratégiques que le cadre traduit en flux de valeur et capabilités.
-- **Stratégie Nationale de Santé Digitale (SNSD) 2023-2027** — orientations pour le numérique en santé, repositionnées comme capabilités numériques transversales au service des priorités de santé.
+- **Stratégie Nationale de Santé Digitale (SNSD) 2023-2027** — orientations pour le numérique en santé, repositionnées comme capabilités numériques transversales au service des priorités de santé. Deuxième édition, succédant à la stratégie 2019-2023.
 - **Plan Stratégique de Renforcement du Système d'Information Sanitaire (PSRSIS) 2023-2027** — priorités relatives aux données de santé ; constitue la fondation informationnelle du cadre.
+
+## Cadre juridique
+
+Le cadre est structuré par un cadre juridique national et continental :
+
+- **Loi n°2014-038 sur la protection des données à caractère personnel** (promulguée le 9 janvier 2015, décret d'application 2023-1541) — La loi institue la Commission Malagasy de l'Informatique et des Libertés (CMIL) comme autorité indépendante. Elle définit les principes de protection des données personnelles (finalité, loyauté, minimisation, sécurité, droit d'accès, consentement) qui sont intégrés dans les règles de gouvernance des données du cadre (§Protection des données personnelles de santé). L'article 23 prévoit explicitement que les données de santé peuvent être communiquées à la personne concernée, directement ou par l'intermédiaire du médecin qu'elle désigne.
+- **Convention de Malabo** (ratifiée par Madagascar, loi 2024-004) — Convention de l'Union Africaine sur la cybersécurité et la protection des données à caractère personnel. Elle renforce le cadre juridique transfrontalier et s'aligne sur les principes de la loi 2014-038.
+- **Plan Stratégique quinquennal du Numérique 2023-2028** — Vision nationale de transformation numérique, intégrant la santé parmi les secteurs prioritaires.
 
 ## Lecture des axes stratégiques du PDSS dans le cadre
 

@@ -27,7 +27,13 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 
 ## Objet
 
-La gouvernance transforme les principes du cadre en décisions concrètes. Elle garantit que les investissements numériques restent orientés par la valeur, cohérents sur le plan architectural et redevables des bénéfices produits. Elle distingue explicitement deux validations complémentaires :
+La gouvernance transforme les principes du cadre en décisions concrètes. Elle garantit que les investissements numériques restent orientés par la valeur, cohérents sur le plan architectural et redevables des bénéfices produits. Elle s'inscrit dans un cadre juridique structuré :
+
+- **Loi n°2014-038** sur la protection des données à caractère personnel — la gouvernance des données de santé doit respecter les principes de la loi (finalité, minimisation, sécurité, consentement) et coopérer avec la CMIL.
+- **Stratégie Nationale de Santé Digitale 2023-2027** — la gouvernance décline les orientations de la SNSD en décisions opérationnelles.
+- **Convention de Malabo** (loi 2024-004) — les échanges transfrontaliers obéissent au cadre juridique continental.
+
+La gouvernance distingue explicitement deux validations complémentaires :
 
 | Validation | Objet | Instance principale |
 |------------|-------|----------------------|

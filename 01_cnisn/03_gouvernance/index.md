@@ -14,7 +14,7 @@ tags: ["cnisn", "niveau-2", "interopérabilité", "gouvernance"]
 
 ## 1. Instance porteuse
 
-Le CNISN est porté par l'instance sectorielle d'architecture de santé, qui exerce son mandat en coordination avec l'instance nationale d'architecture, l'Unité de Gouvernance Digitale, la direction des systèmes d'information du secteur, les directions métier, les responsables des référentiels, l'autorité nationale de protection des données, l'autorité nationale compétente en cybersécurité, et les institutions partenaires concernées.
+Le CNISN est porté par l'instance sectorielle d'architecture de santé, qui exerce son mandat en coordination avec l'instance nationale d'architecture, l'Unité de Gouvernance Digitale, la direction des systèmes d'information du secteur, les directions métier, les responsables des référentiels, la Commission Malagasy de l'Informatique et des Libertés (CMIL) en tant qu'autorité nationale de protection des données (Loi n°2014-038), l'autorité nationale compétente en cybersécurité, et les institutions partenaires concernées.
 
 ## 2. Fonctions de l'instance de gouvernance
 
