@@ -6,7 +6,7 @@ niveau: "4"
 title: PT-15 — Surveillance One Health
 status: draft
 owner: DEPSI
-version: "0.1"
+version: "1.0.0"
 source: 03_ptisn/03_profils/pt-15-surveillance-one-health.md
 maps_to: ["cap-int-14", "cap-18", "cap-05", "art-11", "art-0", "art-4d", "art-8b", "cmp-02", "cmp-04", "cmp-06"]
 tags: ["ptisn", "niveau-4", "profil", "one-health", "surveillance"]
@@ -132,6 +132,6 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 | CAP-INT-14 | Capacité CNISN | Créée |
 | CAP-18 | Capabilité CAESN | Active |
 
-*Rattachement : [CAP-INT-14](../../referentiel/capacites/cap-int-14.md), [CAP-18](../../referentiel/capabilites/cap-18.md), [CAP-05](../../referentiel/capabilites/cap-05.md), [ART-11](../../referentiel/chapitres/art-11.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-4D](../../referentiel/chapitres/art-4d.md), [ART-8B](../../referentiel/chapitres/art-8b.md), [CMP-02](../../referentiel/composants/cmp-02.md), [CMP-04](../../referentiel/composants/cmp-04.md), [CMP-06](../../referentiel/composants/cmp-06.md) · [fiche](../../referentiel/profils/pt-15.md)*
+*Rattachement : CAP-INT-14, CAP-18, CAP-05, ART-11, ART-0, ART-4D, ART-8B, CMP-02, CMP-04, CMP-06 · fiche PT-15*
 
 <!-- END:GENERATED -->

@@ -2,7 +2,7 @@
 title: PT-05 — Profil technique national
 id: ptisn-pt-05-registre-professionnels
 domain: 03_ptisn
-version: "0.4"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
@@ -90,6 +90,6 @@ Un utilisateur authentifié ne doit pas être considéré comme professionnel ha
 
 ------------------------------------------------------------------------
 
-*Rattachement : [CMP-13](../../referentiel/composants/cmp-13.md), [CAP-INT-02](../../referentiel/capacites/cap-int-02.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-4A](../../referentiel/chapitres/art-4a.md), [ART-7](../../referentiel/chapitres/art-7.md) · [fiche](../../referentiel/profils/pt-05.md)*
+*Rattachement : CMP-13, CAP-INT-02, ART-4, ART-4A, ART-7 · fiche PT-05*
 
 <!-- END:GENERATED -->

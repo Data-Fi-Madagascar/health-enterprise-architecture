@@ -2,7 +2,7 @@
 title: "Analyse PT-11 — Profil technique du consentement"
 id: ptisn-pt-11-analyse
 domain: 03_ptisn
-version: "0.1.0"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
@@ -23,7 +23,7 @@ tags: [ptisn, pt-11, consentement, analyse]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 ## 1. Contexte
 
@@ -192,8 +192,17 @@ T3      T4      T1      T2      T3      T4
 
 ## Liens
 
-- [PT-11 — Profil technique](../../referentiel/profils/pt-11.md)
-- [CAP-INT-09 — Gestion des consentements](../../referentiel/capacites/cap-int-09.md)
-- [ART-4b — Bases d'autorisation](../../referentiel/chapitres/art-4b.md)
-- [PT-04 — Résolution d'identité](../../referentiel/profils/pt-04.md)
-- [PT-06 — Authentification](../../referentiel/profils/pt-06.md)
+- PT-11 — Profil technique
+- CAP-INT-09 — Gestion des consentements
+- ART-4b — Bases d'autorisation
+- PT-04 — Résolution d'identité
+- PT-06 — Authentification
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
+- **PT-11 — Profil technique** — Profil technique national (`referentiel/profils/pt-11.md`)
+- **CAP-INT-09 — Gestion des consentements** — CAP-INT-09 — Gestion des consentements et bases d’autorisation (`referentiel/capacites/cap-int-09.md`)
+- **ART-4b — Bases d'autorisation** — Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
+- **PT-04 — Résolution d'identité** — Profil technique national (`referentiel/profils/pt-04.md`)
+- **PT-06 — Authentification** — Profil technique national (`referentiel/profils/pt-06.md`)

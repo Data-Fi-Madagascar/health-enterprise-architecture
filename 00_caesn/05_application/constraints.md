@@ -2,7 +2,7 @@
 title: Contraintes d'exploitation différenciées
 id: application-constraints
 domain: 05_application
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Direction des Systèmes d'Information
@@ -23,7 +23,7 @@ tags: [applications, exploitation, terrain]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 Madagascar présente plusieurs contextes d'exploitation numérique. Les applications doivent être conçues en fonction du contexte réel d'utilisation, non uniquement des conditions du niveau central.
 
@@ -38,5 +38,11 @@ Toute application destinée au terrain (formations sanitaires, districts, commun
 
 ## Liens
 
-- [Architecture applicative](./index.md)
-- [Principes AA-05](./principles.md)
+- Architecture applicative
+- Principes AA-05
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Architecture applicative** — Architecture applicative et systèmes numériques (`00_caesn/05_application/index.md`)
+- **Principes AA-05** — Principes de l'architecture applicative (`00_caesn/05_application/principles.md`)

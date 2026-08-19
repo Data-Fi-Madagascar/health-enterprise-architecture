@@ -2,7 +2,7 @@
 title: Portefeuille d'initiatives orienté valeur
 id: portfolio
 domain: 06_portfolio
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Bureau de Réalisation de la Valeur
@@ -23,7 +23,7 @@ tags: [portefeuille, initiatives, valeur]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ● |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 ## Définition et rôle
 
@@ -45,10 +45,10 @@ Cinq objectifs :
 
 | Document | Contenu |
 |----------|---------|
-| [Fiche d'initiative orientée valeur](./initiative-card.md) | Fiche standard et alignement |
-| [Chaîne de valeur d'une initiative](./value-chain.md) | Lien output → résultat → bénéfice |
-| [Priorisation des initiatives](./prioritization.md) | Critères et score |
-| [Gouvernance du portefeuille](./governance.md) | Décisions, dépendances, bénéfices, revues |
+| Fiche d'initiative orientée valeur | Fiche standard et alignement |
+| Chaîne de valeur d'une initiative | Lien output → résultat → bénéfice |
+| Priorisation des initiatives | Critères et score |
+| Gouvernance du portefeuille | Décisions, dépendances, bénéfices, revues |
 
 ## Registre national des initiatives
 
@@ -60,6 +60,17 @@ Il est placé sous la responsabilité du Bureau de Réalisation de la Valeur, en
 
 ## Liens
 
-- [Modèle de valeur](../00_overview/value-model.md)
-- [Capabilités](../03_capabilities/index.md)
-- [Gouvernance](../07_governance/index.md)
+- Modèle de valeur
+- Capabilités
+- Gouvernance
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Fiche d'initiative orientée valeur** — Fiche standard d'initiative orientée valeur (`00_caesn/06_portfolio/initiative-card.md`)
+- **Chaîne de valeur d'une initiative** — Chaîne de valeur d'une initiative (`00_caesn/06_portfolio/value-chain.md`)
+- **Priorisation des initiatives** — Critères et score de priorisation des initiatives (`00_caesn/06_portfolio/prioritization.md`)
+- **Gouvernance du portefeuille** — Dépendances, revues et règles de gouvernance du portefeuille (`00_caesn/06_portfolio/governance.md`)
+- **Modèle de valeur** — Modèle national de valeur (`00_caesn/00_overview/value-model.md`)
+- **Capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
+- **Gouvernance** — Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)

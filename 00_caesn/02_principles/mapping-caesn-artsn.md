@@ -2,7 +2,7 @@
 title: "Table de correspondance — Principes CAESN ↔ ARTSN"
 id: mapping-principes-caesn-artsn
 domain: 02_principles
-version: "0.1.0"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
@@ -23,7 +23,7 @@ tags: [principes, caesn, artsn, mapping, correspondance]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 ## Contexte
 
@@ -85,6 +85,13 @@ La nomenclature CAESN (12 PA + PD) est la référence. L'ARTSN peut référencer
 
 ## Liens
 
-- [CAESN — Principes architecturaux](../02_principles/index.md)
-- [ARTSN — Fondations](../../02_artsn/00_fondations/index.md)
-- [Point de vigilance CAESN](../07_governance/point-de-vigilance-caesn.md)
+- CAESN — Principes architecturaux
+- ARTSN — Fondations
+- Point de vigilance CAESN
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **CAESN — Principes architecturaux** — Principes d'architecture (`00_caesn/02_principles/index.md`)
+- **ARTSN — Fondations** — Fondations de l'ARTSN (`02_artsn/00_fondations/index.md`)
+- **Point de vigilance CAESN** — Point de vigilance CAESN — capacité et référentiel manquants pour la coordination intersectorielle (One Health) (`00_caesn/07_governance/point-de-vigilance-caesn.md`)

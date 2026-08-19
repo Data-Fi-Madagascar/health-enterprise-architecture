@@ -2,7 +2,7 @@
 title: Règles d'urbanisation applicative
 id: application-urbanisation
 domain: 05_application
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Direction des Systèmes d'Information
@@ -23,7 +23,7 @@ tags: [applications, urbanisation]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 L'urbanisation vise à organiser le paysage applicatif pour éviter les doublons, clarifier les responsabilités et faciliter l'évolution du système.
 
@@ -38,6 +38,13 @@ L'urbanisation vise à organiser le paysage applicatif pour éviter les doublons
 
 ## Liens
 
-- [Principes de l'architecture applicative](./principles.md)
-- [Rationalisation](./rationalization.md)
-- [Services partagés](./shared-services.md)
+- Principes de l'architecture applicative
+- Rationalisation
+- Services partagés
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Principes de l'architecture applicative** — Principes de l'architecture applicative (`00_caesn/05_application/principles.md`)
+- **Rationalisation** — Trajectoire de rationalisation du paysage applicatif (`00_caesn/05_application/rationalization.md`)
+- **Services partagés** — Services numériques partagés prioritaires (`00_caesn/05_application/shared-services.md`)

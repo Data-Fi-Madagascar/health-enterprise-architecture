@@ -36,9 +36,9 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 | Niveau | Dossier | Document | Destinataires |
 |--------|---------|----------|---------------|
 | 1 | [`00_caesn/`](./00_caesn/) | Cadre d'Architecture d'Entreprise de la Santé Numérique : valeur, capabilités, principes, gouvernance | Décideurs, directions métiers, partenaires |
-| 2 | [`01_cnisn/`](./01_cnisn/) | Cadre National d'Interopérabilité de la Santé Numérique : standards d'échange, référentiels, profils | DEPSI, architectes, intégrateurs |
-| 3 | [`02_artsn/`](./02_artsn/) | Architecture de Référence Technique de la Santé Numérique : standards, solutions, homologation | DEPSI, architectes, intégrateurs |
-| 4 | [`03_ptisn/`](./03_ptisn/) | Profils techniques d'implémentation par initiative : API, contrats d'interfaces, configurations | Développeurs, fournisseurs, équipes techniques |
+| 2 | [`01_cnisn/`](./01_cnisn/) | Cadre National d'Interopérabilité de la Santé Numérique : principes, capacités, gouvernance, standards, décisions | DEPSI, architectes, intégrateurs |
+| 3 | [`02_artsn/`](./02_artsn/) | Architecture de Référence Technique de la Santé Numérique : patterns, contrats, contraintes | DEPSI, architectes, intégrateurs |
+| 4 | [`03_ptisn/`](./03_ptisn/) | Profils techniques d'implémentation par initiative : API, contrats d'interfaces, configurations (découle de l'UGD) | Développeurs, fournisseurs, équipes techniques |
 | — | [`referentiel/`](./referentiel/) | Source de vérité : fondations, principes, capacités, chapitres, composants, profils | Machine, scripts de génération |
 
 ### Niveau 1 — `00_caesn/` (CAESN)
@@ -53,19 +53,21 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 | Applications | [`05_application/`](./00_caesn/05_application/) | Architecture applicative et systèmes numériques |
 | Portefeuille | [`06_portfolio/`](./00_caesn/06_portfolio/) | Portefeuille d'initiatives orienté valeur, migration existant |
 | Gouvernance | [`07_governance/`](./00_caesn/07_governance/) | Instances, RACI, homologation, processus gouvernance |
-| Décisions | [`08_decisions/`](./00_caesn/08_decisions/) | 9 Architecture Decision Records (ADR-0001..0009) |
-| Normes | [`09_standards/`](./00_caesn/09_standards/) | 6 normes obligatoires + 2 normes internationales |
 | Annexes | [`10_annexes/`](./00_caesn/10_annexes/) | Matrice de lecture, glossaire, acronymes |
+
+> **Note :** Les Décisions (ADR) et Standards sont désormais dans le CNISN (niveau 2), dans les dossiers `01_cnisn/06_decisions/` et `01_cnisn/05_standards/`.
 
 ### Niveau 2 — `01_cnisn/` (CNISN)
 
 | Domaine | Chemin | Contenu |
 |---------|--------|---------|
-| Introduction | [`00_introduction/`](./01_cnisn/00_introduction/) | Contexte, périmètre, objectifs |
+| Introduction | [`00_introduction/`](./01_cnisn/00_introduction/) | Contexte, périmètre, objectifs, articulation UGD |
 | Principes | [`01_principes/`](./01_cnisn/01_principes/) | Principes d'interopérabilité |
 | Capacités | [`02_capacites/`](./01_cnisn/02_capacites/) | 14 capabilités interopérabilité (7 familles) |
 | Gouvernance | [`03_gouvernance/`](./01_cnisn/03_gouvernance/) | Gouvernance de l'interopérabilité |
 | Conformité | [`04_conformite/`](./01_cnisn/04_conformite/) | Conformité et audit |
+| Standards | [`05_standards/`](./01_cnisn/05_standards/) | 6 normes obligatoires + 2 normes internationales |
+| Décisions | [`06_decisions/`](./01_cnisn/06_decisions/) | 9 Architecture Decision Records (ADR-0001..0009) |
 | Trajectoire | [`05_trajectoire/`](./01_cnisn/05_trajectoire/) | 7 phases T4 2026–T2 2030 |
 | Indicateurs | [`06_indicateurs/`](./01_cnisn/06_indicateurs/) | KPIs interopérabilité |
 | Annexes | [`08_annexes/`](./01_cnisn/08_annexes/) | Matrices de lecture, articulation CAESN/ARTSN |
@@ -114,8 +116,8 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 
 | Outil | Chemin | Description |
 |-------|--------|-------------|
-| Registre des décisions | [`00_caesn/08_decisions/registre-decisions.md`](./00_caesn/08_decisions/registre-decisions.md) | Tableau central des 9 ADR |
-| Template modification | [`00_caesn/08_decisions/template-modification.md`](./00_caesn/08_decisions/template-modification.md) | Formulaire de demande de changement |
+| Registre des décisions | [`01_cnisn/06_decisions/registre-decisions.md`](./01_cnisn/06_decisions/registre-decisions.md) | Tableau central des 9 ADR |
+| Template modification | [`01_cnisn/06_decisions/template-modification.md`](./01_cnisn/06_decisions/template-modification.md) | Formulaire de demande de changement |
 | Processus gouvernance | [`00_caesn/07_governance/processus-gouvernance.md`](./00_caesn/07_governance/processus-gouvernance.md) | Workflows de validation |
 | Homologation | [`00_caesn/07_governance/homologation.md`](./00_caesn/07_governance/homologation.md) | 12 critères, 5 phases |
 | Dépréciation | [`02_artsn/06_gouvernance/depreciation.md`](./02_artsn/06_gouvernance/depreciation.md) | Processus 15 mois |
@@ -128,7 +130,7 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 - **Règle « le nom reflète la localisation »** : le champ `domain:` porte le nom du dossier d'appartenance, préfixe numérique inclus (ex. `domain: 01_value-streams`). Voir [`AGENTS.md`](./AGENTS.md)
 - Chaque document ouvre sur un bloc **« Pour qui lire ce document »** : niveaux de lecture par profil (●◐○) + renvoi à la matrice de lecture de son niveau
 - Les références croisées utilisent des liens Markdown relatifs
-- Les ADR suivent le [modèle de décision](00_caesn/08_decisions/adr-0000-template.md)
+- Les ADR suivent le [modèle de décision](01_cnisn/06_decisions/adr-0000-template.md)
 - Statuts : `draft`, `review`, `approved`, `deprecated`, `superseded`
 - Tags et identifiants en kebab-case
 - Langue : français (noms de dossiers en kebab-case anglais)

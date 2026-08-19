@@ -2,7 +2,7 @@
 title: PT-01 — Profil technique national
 id: ptisn-pt-01-echange-interinstitutionnel
 domain: 03_ptisn
-version: "0.4"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
@@ -81,6 +81,6 @@ Le service national d’échange ne remplace pas :
 
 ------------------------------------------------------------------------
 
-*Rattachement : [CMP-06](../../referentiel/composants/cmp-06.md), [CAP-INT-03](../../referentiel/capacites/cap-int-03.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-1](../../referentiel/chapitres/art-1.md), [ART-7](../../referentiel/chapitres/art-7.md), [ART-11](../../referentiel/chapitres/art-11.md) · [fiche](../../referentiel/profils/pt-01.md)*
+*Rattachement : CMP-06, CAP-INT-03, ART-0, ART-1, ART-7, ART-11 · fiche PT-01*
 
 <!-- END:GENERATED -->

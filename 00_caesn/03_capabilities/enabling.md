@@ -23,7 +23,7 @@ tags: [capabilités, habilitantes, catalogue]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
 Chaque capabilité vit dans le référentiel : `referentiel/capabilites/cap-XX.md` (rôle, flux de valeur associés).
@@ -41,11 +41,11 @@ La capabilité garantit la disponibilité et la compétence des ressources humai
 
 #### Flux de valeur
 
-- [VS-01](../../referentiel/flux-valeur/vs-01.md)
-- [VS-02](../../referentiel/flux-valeur/vs-02.md)
-- [VS-04](../../referentiel/flux-valeur/vs-04.md)
+- VS-01
+- VS-02
+- VS-04
 
-*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/capabilites/cap-09.md)*
+*Rattachement : VS-01, VS-02, VS-04 · fiche CAP-09*
 
 ### CAP-10 — Gestion des médicaments, vaccins, intrants et chaîne d’approvisionnement
 
@@ -55,10 +55,10 @@ La capabilité assure la disponibilité des produits de santé au point de servi
 
 #### Flux de valeur
 
-- [VS-01](../../referentiel/flux-valeur/vs-01.md)
-- [VS-02](../../referentiel/flux-valeur/vs-02.md)
+- VS-01
+- VS-02
 
-*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md) · [fiche](../../referentiel/capabilites/cap-10.md)*
+*Rattachement : VS-01, VS-02 · fiche CAP-10*
 
 ### CAP-11 — Gestion des infrastructures, équipements et maintenance
 
@@ -68,10 +68,10 @@ La capabilité garantit un environnement physique fonctionnel pour la prestation
 
 #### Flux de valeur
 
-- [VS-01](../../referentiel/flux-valeur/vs-01.md)
-- [VS-02](../../referentiel/flux-valeur/vs-02.md)
+- VS-01
+- VS-02
 
-*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md) · [fiche](../../referentiel/capabilites/cap-11.md)*
+*Rattachement : VS-01, VS-02 · fiche CAP-11*
 
 ### CAP-12 — Finances publiques, budget et allocation des ressources
 
@@ -81,10 +81,10 @@ La capabilité soutient le financement du système de santé : exécution budgé
 
 #### Flux de valeur
 
-- [VS-03](../../referentiel/flux-valeur/vs-03.md)
-- [VS-04](../../referentiel/flux-valeur/vs-04.md)
+- VS-03
+- VS-04
 
-*Rattachement : [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/capabilites/cap-12.md)*
+*Rattachement : VS-03, VS-04 · fiche CAP-12*
 
 ### CAP-13 — Système d’information sanitaire, données et recherche
 
@@ -94,12 +94,12 @@ La capabilité transforme les données du système de santé en information util
 
 #### Flux de valeur
 
-- [VS-01](../../referentiel/flux-valeur/vs-01.md)
-- [VS-02](../../referentiel/flux-valeur/vs-02.md)
-- [VS-03](../../referentiel/flux-valeur/vs-03.md)
-- [VS-04](../../referentiel/flux-valeur/vs-04.md)
+- VS-01
+- VS-02
+- VS-03
+- VS-04
 
-*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/capabilites/cap-13.md)*
+*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche CAP-13*
 
 ### CAP-14 — Interopérabilité, référentiels nationaux et infrastructure numérique partagée
 
@@ -109,12 +109,12 @@ La capabilité assure la cohérence, l’intégration, la souveraineté et la r�
 
 #### Flux de valeur
 
-- [VS-01](../../referentiel/flux-valeur/vs-01.md)
-- [VS-02](../../referentiel/flux-valeur/vs-02.md)
-- [VS-03](../../referentiel/flux-valeur/vs-03.md)
-- [VS-04](../../referentiel/flux-valeur/vs-04.md)
+- VS-01
+- VS-02
+- VS-03
+- VS-04
 
-*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/capabilites/cap-14.md)*
+*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche CAP-14*
 
 ### CAP-15 — Cybersécurité, confidentialité et gouvernance des données personnelles
 
@@ -124,12 +124,12 @@ La capabilité garantit la confiance, la sécurité, la confidentialité et la p
 
 #### Flux de valeur
 
-- [VS-01](../../referentiel/flux-valeur/vs-01.md)
-- [VS-02](../../referentiel/flux-valeur/vs-02.md)
-- [VS-03](../../referentiel/flux-valeur/vs-03.md)
-- [VS-04](../../referentiel/flux-valeur/vs-04.md)
+- VS-01
+- VS-02
+- VS-03
+- VS-04
 
-*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/capabilites/cap-15.md)*
+*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche CAP-15*
 
 ### CAP-16 — Gestion du portefeuille d’initiatives numériques
 
@@ -139,10 +139,10 @@ La capabilité gouverne les investissements numériques du secteur : priorisatio
 
 #### Flux de valeur
 
-- [VS-03](../../referentiel/flux-valeur/vs-03.md)
-- [VS-04](../../referentiel/flux-valeur/vs-04.md)
+- VS-03
+- VS-04
 
-*Rattachement : [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/capabilites/cap-16.md)*
+*Rattachement : VS-03, VS-04 · fiche CAP-16*
 
 ### CAP-17 — Engagement patient et identité numérique
 
@@ -159,8 +159,8 @@ Cette capabilité est **habilitante** : son absence bloque la continuité des so
 
 #### Flux de valeur
 
-- [VS-01](../../referentiel/flux-valeur/vs-01.md) — Soins essentiels
-- [VS-03](../../referentiel/flux-valeur/vs-03.md) — Protection financière
+- VS-01 — Soins essentiels
+- VS-03 — Protection financière
 
 #### Rattachement ARTSN
 
@@ -179,7 +179,7 @@ Cette capabilité est **habilitante** : son absence bloque la continuité des so
 
 DEPSI + Direction des Systèmes d'Information
 
-*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [CAP-INT-01](../../referentiel/capacites/cap-int-01.md), [CAP-INT-09](../../referentiel/capacites/cap-int-09.md) · [fiche](../../referentiel/capabilites/cap-17.md)*
+*Rattachement : VS-01, VS-03, CAP-INT-01, CAP-INT-09 · fiche CAP-17*
 
 ### CAP-18 — Coordination intersectorielle (One Health)
 
@@ -196,7 +196,7 @@ Cette capabilité est **habilitante** : son absence bloque la surveillance sanit
 
 #### Flux de valeur
 
-- [VS-02](../../referentiel/flux-valeur/vs-02.md) — Prévention et surveillance
+- VS-02 — Prévention et surveillance
 
 #### Rattachement ARTSN
 
@@ -219,9 +219,13 @@ Cette capabilité est **habilitante** : son absence bloque la surveillance sanit
 
 Secrétariat Général du Ministère + DEPSI
 
-*Rattachement : [VS-02](../../referentiel/flux-valeur/vs-02.md), [CAP-INT-03](../../referentiel/capacites/cap-int-03.md) · [fiche](../../referentiel/capabilites/cap-18.md)*
+*Rattachement : VS-02, CAP-INT-03 · fiche CAP-18*
 
 <!-- END:GENERATED -->
 ## Liens
 
 - [Capabilités](./index.md)
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)

@@ -2,7 +2,7 @@
 title: Critères et score de priorisation des initiatives
 id: prioritization
 domain: 06_portfolio
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Bureau de Réalisation de la Valeur
@@ -23,7 +23,7 @@ tags: [portefeuille, priorisation, score]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 La priorisation ne doit pas être fondée seulement sur l'urgence perçue, la disponibilité d'un financement ou la pression d'un partenaire.
 
@@ -89,6 +89,13 @@ Toute décision est documentée dans le registre national.
 
 ## Liens
 
-- [Portefeuille](./index.md)
-- [Chaîne de valeur](./value-chain.md)
-- [Gouvernance](../07_governance/index.md)
+- Portefeuille
+- Chaîne de valeur
+- Gouvernance
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Portefeuille** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
+- **Chaîne de valeur** — Chaîne de valeur d'une initiative (`00_caesn/06_portfolio/value-chain.md`)
+- **Gouvernance** — Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)

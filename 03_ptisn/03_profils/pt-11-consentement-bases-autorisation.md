@@ -2,7 +2,7 @@
 title: PT-11 — Profil technique national
 id: ptisn-pt-11-consentement-bases-autorisation
 domain: 03_ptisn
-version: "0.4"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
@@ -68,6 +68,6 @@ Selon le contexte, un traitement peut reposer sur :
 
 ------------------------------------------------------------------------
 
-*Rattachement : [CMP-12](../../referentiel/composants/cmp-12.md), [CAP-INT-09](../../referentiel/capacites/cap-int-09.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-4B](../../referentiel/chapitres/art-4b.md), [ART-7](../../referentiel/chapitres/art-7.md), [ART-11](../../referentiel/chapitres/art-11.md) · [fiche](../../referentiel/profils/pt-11.md)*
+*Rattachement : CMP-12, CAP-INT-09, ART-0, ART-4B, ART-7, ART-11 · fiche PT-11*
 
 <!-- END:GENERATED -->

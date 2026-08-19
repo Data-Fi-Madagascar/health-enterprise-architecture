@@ -2,7 +2,7 @@
 title: "Cas d'usage — Remontée de données et pilotage du système"
 id: ptisn-cas-usage-pilotage
 domain: 03_ptisn
-version: "0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
@@ -19,8 +19,6 @@ tags: ["ptisn", "niveau-4", "cas-usage", "pilotage", "rapports", "performance", 
 | Directions métier / programmes | ● |
 | DEPSI / équipes techniques | ● |
 | Partenaires techniques et financiers | ◐ |
-
----
 
 ## Objectif
 
@@ -45,13 +43,11 @@ Le pilotage est un **cas d'usage transversal** qui consomme les profils de donn�
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
----
-
 ## Scénario — Cycle complet de pilotage
 
 ### Phase 1 — Collecte de données opérationnelles (VS-01/02/03 → VS-04)
 
-**Objectif** : Alimenter le système analytique avec les données provenant de tous les points de service.
+La phase de collecte vise à alimenter le système analytique avec les données provenant de tous les points de service. Les formations sanitaires transmettent leurs données cliniques terrain au RIS de district, qui assure une première consolidation avant que la médiation (PT-02) ne réalise l'ETL national vers l'entrepôt (CMP-03). Parallèlement, les programmes spécialisés (BPC, vaccination, etc.) envoient leurs données agrégées au format mADX via la médiation, directement à l'entrepôt.
 
 ```
 Formations sanitaires    RIS (district)    Médiation (PT-02)    Entrepôt (CMP-03)
@@ -71,7 +67,7 @@ Programmes (BPC,     Médiation (PT-02)  Entrepôt (CMP-03)
         │─────────────────▶│──────────────────▶│
 ```
 
-**Profils mobilisés** :
+Les profils mobilisés sont le PT-08 (échange de données agrégées au format mADX), le PT-02 (médiation sémantique assurant le formatage des données) et le PT-13 (qualité et réconciliation des données).
 
 | Profil | Rôle |
 |--------|------|
@@ -79,11 +75,9 @@ Programmes (BPC,     Médiation (PT-02)  Entrepôt (CMP-03)
 | **PT-02** | Médiation sémantique (formatage) |
 | **PT-13** | Qualité et réconciliation des données |
 
----
-
 ### Phase 2 — Agrégation et analyse (EV-25/EV-26)
 
-**Objectif** : Consolider les données, calculer les indicateurs, alimenter les tableaux de bord.
+La phase d'agrégation et d'analyse consiste à consolider les données collectées, à calculer les indicateurs de performance et à alimenter les tableaux de bord décisionnels. L'entrepôt (CMP-03) transmet les données consolidées au moteur analytique (CMP-04), qui applique trois modèles d'intelligence artificielle pour calculer les indicateurs. Les résultats sont ensuite exposés dans le dashboard national (CMP-01).
 
 ```
 Entrepôt (CMP-03)     Moteur analytique (CMP-04)    Tableaux de bord (CMP-01)
@@ -98,7 +92,7 @@ Entrepôt (CMP-03)     Moteur analytique (CMP-04)    Tableaux de bord (CMP-01)
         │◀────────────────────│◀───────────────────────────│
 ```
 
-**Profils mobilisés** :
+Les profils mobilisés sont le PT-09 (analytique et exposition des données), le PT-13 (qualité et réconciliation), le PT-08 (échange de données agrégées) et le PT-12 (audit des processus analytiques). Les données échangées comprennent les ressources FHIR `Indicator` (indicateurs calculés), les tableaux de bord décisionnels (`Dashboard`) et les rapports DHIS2 (`Report`).
 
 | Profil | Rôle |
 |--------|------|
@@ -107,16 +101,9 @@ Entrepôt (CMP-03)     Moteur analytique (CMP-04)    Tableaux de bord (CMP-01)
 | **PT-08** | Échange de données agrégées |
 | **PT-12** | Audit des processus analytiques |
 
-**Données échangées** :
-- `Indicator` (FHIR) — indicateurs calculés
-- `Dashboard` — tableaux de bord décisionnels
-- `Report` — rapports DHIS2
-
----
-
 ### Phase 3 — Tableaux de bord et alertes (CMP-01/CMP-02)
 
-**Objectif** : Exposer les données de performance aux décideurs et déclencher des alertes en cas de dérive.
+La phase de tableaux de bord et d'alertes a pour objectif d'exposer les données de performance aux décideurs et de déclencher des alertes en cas de dérive. Lorsqu'un indicateur descend en dessous du seuil prédéfini, le moteur analytique (CMP-04) envoie une alerte au centre de commande (CMP-02), qui la transmet à la direction technique. Après validation, l'alerte est confirmée et documentée.
 
 ```
 Moteur analytique (CMP-04)    Centre de commande (CMP-02)
@@ -132,18 +119,16 @@ Moteur analytique (CMP-04)    Centre de commande (CMP-02)
         │◀───────────────────────────│
 ```
 
-**Profils mobilisés** :
+Les profils mobilisés sont le PT-10 (confiance, RBAC pour l'accès aux tableaux de bord) et le PT-12 (audit des consultations de dashboards).
 
 | Profil | Rôle |
 |--------|------|
 | **PT-10** | Confiance (RBAC tableaux de bord) |
 | **PT-12** | Audit des consultations de dashboards |
 
----
-
 ### Phase 4 — Rapports et redevabilité (EV-27)
 
-**Objectif** : Produire les rapports publics et alimenter les instances de redevabilité (Parlement, partenaires).
+La phase de rapports et de redevabilité consiste à produire les rapports publics et à alimenter les instances de redevabilité — Parlement, partenaires et société civile. Les données annuelles consolidées sont extraites de l'entrepôt et transmises au moteur analytique, qui produit les rapports annuels de performance. Une fois validés, ces rapports sont publiés et transmis aux parties prenantes.
 
 ```
 Entrepôt (CMP-03)     Moteur analytique (CMP-04)    Rapports publics
@@ -163,7 +148,7 @@ Entrepôt (CMP-03)     Moteur analytique (CMP-04)    Rapports publics
         │                     │                           Société civile
 ```
 
-**Profils mobilisés** :
+Les profils mobilisés sont le PT-09 (analytique et restitution), le PT-12 (audit trail assurant la traçabilité des rapports) et le PT-01 (échange interinstitutionnel pour la transmission des rapports).
 
 | Profil | Rôle |
 |--------|------|
@@ -171,11 +156,9 @@ Entrepôt (CMP-03)     Moteur analytique (CMP-04)    Rapports publics
 | **PT-12** | Audit trail (traçabilité rapports) |
 | **PT-01** | Échange interinstitutionnel (transmission rapports) |
 
----
-
 ### Phase 5 — Amélioration continue (EV-28)
 
-**Objectif** : Utiliser les leçons tirées pour améliorer l'architecture et les processus.
+La phase d'amélioration continue mobilise les leçons tirées du pilotage pour améliorer l'architecture et les processus. Le comité de pilotage formule des recommandations d'amélioration, qui sont transmises au Bureau de réalisation de la valeur pour traduction en modifications de l'ARTSN. L'équipe architecture assure la mise à jour du référentiel en conséquence.
 
 ```
 Comité de pilotage     Bureau de réalisation     Équipe architecture
@@ -191,8 +174,6 @@ Comité de pilotage     Bureau de réalisation     Équipe architecture
         │                     │◀─────────────────────────│
 ```
 
----
-
 ## Matrice de composition
 
 | Étape | PT-01 | PT-02 | PT-08 | PT-09 | PT-10 | PT-12 | PT-13 |
@@ -203,8 +184,6 @@ Comité de pilotage     Bureau de réalisation     Équipe architecture
 | Rapports (EV-27) | ● | — | — | ● | — | ● | — |
 | Amélioration (EV-28) | — | — | — | ○ | — | ● | — |
 
----
-
 ## Exigences transversales
 
 | Exigence | Source | Applicable à |
@@ -213,13 +192,20 @@ Comité de pilotage     Bureau de réalisation     Équipe architecture
 | PT-10 — Confiance | CAP-INT-08 | Accès tableaux de bord sensibles |
 | PT-13 — Qualité et réconciliation | CAP-INT-11 | Agrégation multi-sources |
 
----
-
 ## Liens
 
-- [VS-04 — Piloter, coordonner et améliorer la performance](../../00_caesn/01_value-streams/vs-04-system-steering.md)
-- [PT-08 — Échange données agrégées](../03_profils/pt-08-echange-donnees-agregees.md)
-- [PT-09 — Analytique exposition données](../03_profils/pt-09-analytique-exposition-donnees.md)
-- [PT-10 — Confiance et autorisation](../03_profils/pt-10-confiance-authentification-autorisation.md)
-- [PT-12 — Audit et traçabilité](../03_profils/pt-12-audit-provenance-traçabilité.md)
-- [PT-13 — Qualité et réconciliation](../03_profils/pt-13-qualite-reconciliation.md)
+- VS-04 — Piloter, coordonner et améliorer la performance
+- PT-08 — Échange données agrégées
+- PT-09 — Analytique exposition données
+- PT-10 — Confiance et autorisation
+- PT-12 — Audit et traçabilité
+- PT-13 — Qualité et réconciliation
+
+## Références
+
+- **VS-04 — Piloter, coordonner et améliorer la performance** — Piloter, coordonner et améliorer la performance du système de santé (`00_caesn/01_value-streams/vs-04-system-steering.md`)
+- **PT-08 — Échange données agrégées** — Profil technique national (`03_ptisn/03_profils/pt-08-echange-donnees-agregees.md`)
+- **PT-09 — Analytique exposition données** — Profil technique national (`03_ptisn/03_profils/pt-09-analytique-exposition-donnees.md`)
+- **PT-10 — Confiance et autorisation** — Profil technique national (`03_ptisn/03_profils/pt-10-confiance-authentification-autorisation.md`)
+- **PT-12 — Audit et traçabilité** — Profil technique national (`03_ptisn/03_profils/pt-12-audit-provenance-traçabilité.md`)
+- **PT-13 — Qualité et réconciliation** — Profil technique national (`03_ptisn/03_profils/pt-13-qualite-reconciliation.md`)

@@ -2,7 +2,7 @@
 title: Acronymes et abréviations de l'ARTSN (niveau 3)
 id: artsn-acronyms
 domain: 02_artsn
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-09
 owner: DEPSI
@@ -23,9 +23,9 @@ tags: [artsn, acronymes, niveau-3]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](./reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
-Acronymes propres au périmètre technique de l'ARTSN. Les acronymes transverses (CAESN, CNISN, PTISN, DEPSI, SIS…) sont dans les [acronymes du CAESN](../00_caesn/10_annexes/acronyms.md).
+Acronymes propres au périmètre technique de l'ARTSN. Les acronymes transverses (CAESN, CNISN, PTISN, DEPSI, SIS…) sont dans les acronymes du CAESN.
 
 | Acronyme | Signification |
 |----------|---------------|
@@ -54,8 +54,14 @@ Acronymes propres au périmètre technique de l'ARTSN. Les acronymes transverses
 
 ## Liens
 
-- [Index de l'ARTSN](./index.md)
-- [Matrice de lecture de l'ARTSN](./reading-matrix.md)
-- [Glossaire de l'ARTSN](./glossary.md)
-- [Glossaire des patterns (Annexe B)](./07_annexes/b-glossaire-patterns.md)
-- [Acronymes du CAESN (niveau 1)](../00_caesn/10_annexes/acronyms.md)
+Les ressources complémentaires incluent l'Index de l'ARTSN, la Matrice de lecture de l'ARTSN, le Glossaire de l'ARTSN, le Glossaire des patterns (Annexe B) et les Acronymes du CAESN niveau 1.
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **acronymes du CAESN** — Acronymes et abréviations (`00_caesn/10_annexes/acronyms.md`)
+- **Index de l'ARTSN** — Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
+- **Matrice de lecture de l'ARTSN** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **Glossaire de l'ARTSN** — Glossaire de l'ARTSN (niveau 3) (`02_artsn/glossary.md`)
+- **Glossaire des patterns (Annexe B)** — Annexe B — Glossaire des patterns cités (`02_artsn/07_annexes/b-glossaire-patterns.md`)
+- **Acronymes du CAESN niveau 1** — Acronymes et abréviations (`00_caesn/10_annexes/acronyms.md`)

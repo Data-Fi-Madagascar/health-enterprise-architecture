@@ -2,7 +2,7 @@
 title: "Annexe E — SLA et métriques de performance par profil"
 id: artsn-sla-performance
 domain: 02_artsn
-version: "0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
@@ -15,23 +15,11 @@ tags: [artsn, annexe, SLA, performance, métriques, niveau-3]
 
 **Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
 
-| Profil | Lecture |
-|--------|---------|
-| Décideurs institutionnels | ◐ |
-| Directions métier / programmes | ◐ |
-| DEPSI / équipes techniques | ● |
-| SIS / données / suivi-évaluation | ● |
-| Partenaires techniques et financiers | ● |
-
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle.
-
----
+La lecture de ce document est **complémentaire** pour les décideurs institutionnels et les directions métier et programmes, et **prioritaire** pour l'équipe DEPSI et ses équipes techniques, les équipes SIS, données et suivi-évaluation, ainsi que les partenaires techniques et financiers. Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle.
 
 ## Objectif
 
 Ce document définit les objectifs de niveau de service (SLA) et les métriques de performance pour chaque profil technique national. Ces indicateurs servent de base contractuelle pour les prestataires, de cibles opérationnelles pour les équipes techniques et de référentiel de monitoring pour le Centre national des systèmes d'information (CNSI).
-
----
 
 ## 1. Définitions
 
@@ -44,8 +32,6 @@ Ce document définit les objectifs de niveau de service (SLA) et les métriques 
 | **RTO** (Recovery Time Objective) | Durée maximale d'interruption acceptable en cas de panne |
 | **RPO** (Recovery Point Objective) | Perte de données maximale acceptable (en temps) |
 
----
-
 ## 2. SLA globaux de la plateforme
 
 | Métrique | Niveau 1 (critique) | Niveau 2 (important) | Niveau 3 (standard) |
@@ -56,8 +42,6 @@ Ce document définit les objectifs de niveau de service (SLA) et les métriques 
 | **RTO** | < 15min | < 1h | < 4h |
 | **RPO** | < 1min | < 5min | < 1h |
 | **Disponibilité annuelle** | 99,9% | 99,5% | 99% |
-
----
 
 ## 3. SLA par profil technique
 
@@ -173,8 +157,6 @@ Ce document définit les objectifs de niveau de service (SLA) et les métriques 
 | Disponibilité | 99,5% | Uptime monthly | < 99% |
 | Intégration mADX | < 24h | Données intégrées | > 48h |
 
----
-
 ## 4. Métriques transversales
 
 ### 4.1 Qualité des données
@@ -206,8 +188,6 @@ Ce document définit les objectifs de niveau de service (SLA) et les métriques 
 | Satisfaction utilisateurs | > 80% | Enquête annuelle |
 | Temps de formation | < 2 jours | Nouvel utilisateur opérationnel |
 | Disponibilité support | 8h/24, 6j/7 | Assistance technique |
-
----
 
 ## 5. Monitoring et alerting
 
@@ -250,8 +230,6 @@ Ce document définit les objectifs de niveau de service (SLA) et les métriques 
 | **Téléphone** | Escalade P1 uniquement | 24/7 |
 | **Rapport hebdo** | Synthèse performance | Hebdomadaire |
 
----
-
 ## 6. Reporting et revue
 
 ### 6.1 Rapports automatisés
@@ -272,11 +250,13 @@ Ce document définit les objectifs de niveau de service (SLA) et les métriques 
 | **Revue mensuelle** | Mensuelle | Comité pilotage | SLA, budget, risques |
 | **Revue trimestrielle** | Trimestrielle | Direction + partenaires | Stratégie, investissements |
 
----
-
 ## Liens
 
-- [ART-7 — Sécurité, contrôle d'accès et résidence](../../referentiel/chapitres/art-7.md)
-- [Protocole de test](./d-protocole-test-interopabilite.md)
-- [Feuille de route](../09_feuille-route/index.md)
-- [Plan de migration](../../00_caesn/06_portfolio/migration-existant.md)
+Les liens utiles pour approfondir ce document sont les suivants : le chapitre ART-7 — Sécurité, contrôle d'accès et résidence, le Protocole de test, la Feuille de route et le Plan de migration.
+
+## Références
+
+- **ART-7 — Sécurité, contrôle d'accès et résidence** — Sécurité, contrôle d'accès et résidence de la donnée (`referentiel/chapitres/art-7.md`)
+- **Protocole de test** — Annexe D — Protocole de test d'interopérabilité (`02_artsn/07_annexes/d-protocole-test-interopabilite.md`)
+- **Feuille de route** — Feuille de route de déploiement progressif de l'ARTSN (`02_artsn/09_feuille-route/index.md`)
+- **Plan de migration** — Plan de migration — De l'existant au futur état (`00_caesn/06_portfolio/migration-existant.md`)

@@ -2,11 +2,12 @@
 title: "ART-4c — Éligibilité et couverture"
 id: art-4c
 domain: 02_artsn
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: [artsn, chapitres, art-4c, niveau-3]
+related: ['cap-int-07']
 ---
 
 # ART-4c — Éligibilité et couverture
@@ -23,10 +24,10 @@ tags: [artsn, chapitres, art-4c, niveau-3]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-ART-4c — Éligibilité et couverture constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : [`art-4c`](../../referentiel/chapitres/art-4c.md).
+ART-4c — Éligibilité et couverture constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-4c`.
 
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
@@ -35,15 +36,22 @@ ART-4c — Éligibilité et couverture constitue un chapitre du **cadre normatif
 
 **Discipline existentielle.** Dès lors qu’une source échappe à la gouvernance directe de l’initiative (comptoirs de pharmacies privées, caisses d’hôpitaux autonomes) : elle seule permet d’appliquer la gratuité légale en ligne de front sans imposer d’avance de frais aux ménages vulnérables et sans rompre le pipeline.
 
-- **Rattachement** : [CAP-07](../../referentiel/capabilites/cap-07.md) (protection financière, CSU).
+- **Rattachement** : CAP-07 (protection financière, CSU).
 - **Pattern cible** : modélisation temporelle SCD type 2.
-- **Déduit selon** : [ENF-2](../../referentiel/exigences/enf-2.md) (anti-fraude) et [ENF-1](../../referentiel/exigences/enf-1.md) (autonomie locale).
+- **Déduit selon** : ENF-2 (anti-fraude) et ENF-1 (autonomie locale).
 - **Statut : Proposition ouverte.**
 
-*Rattachement : [ENF-2](../../referentiel/exigences/enf-2.md), [ENF-1](../../referentiel/exigences/enf-1.md), [CAP-07](../../referentiel/capabilites/cap-07.md) · [fiche](../../referentiel/chapitres/art-4c.md)*
+*Rattachement : ENF-2, ENF-1, CAP-07 · fiche ART-4C*
 
 <!-- END:GENERATED -->
 ## Liens
 
-- [Index des chapitres](./index.md)
-- [Exigences contextuelles — Partie III](../02_exigences-contextuelles/index.md)
+- Index des chapitres
+- Exigences contextuelles — Partie III
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **`art-4c`** — Éligibilité et couverture (`referentiel/chapitres/art-4c.md`)
+- **Index des chapitres** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **Exigences contextuelles — Partie III** — Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

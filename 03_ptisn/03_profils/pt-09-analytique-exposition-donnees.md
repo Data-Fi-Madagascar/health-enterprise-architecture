@@ -2,7 +2,7 @@
 title: PT-09 — Profil technique national
 id: ptisn-pt-09-analytique-exposition-donnees
 domain: 03_ptisn
-version: "0.4"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
@@ -84,6 +84,6 @@ Son architecture ne devient pas automatiquement obligatoire pour toutes les init
 
 ------------------------------------------------------------------------
 
-*Rattachement : [CMP-03](../../referentiel/composants/cmp-03.md), [CMP-04](../../referentiel/composants/cmp-04.md), [CAP-INT-07](../../referentiel/capacites/cap-int-07.md), [ART-3](../../referentiel/chapitres/art-3.md), [ART-5](../../referentiel/chapitres/art-5.md), [ART-6](../../referentiel/chapitres/art-6.md), [ART-7](../../referentiel/chapitres/art-7.md) · [fiche](../../referentiel/profils/pt-09.md)*
+*Rattachement : CMP-03, CMP-04, CAP-INT-07, ART-3, ART-5, ART-6, ART-7 · fiche PT-09*
 
 <!-- END:GENERATED -->

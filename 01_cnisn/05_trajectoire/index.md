@@ -2,9 +2,9 @@
 title: Partie V — Trajectoire de mise en œuvre
 id: cnisn-trajectoire
 domain: 01_cnisn
-version: "0.6"
+version: "1.0.0"
 status: draft
-last_reviewed: 2026-07-31
+last_reviewed: 2026-08-18
 owner: DEPSI
 tags: ["cnisn", "niveau-2", "interopérabilité", "trajectoire"]
 ---
@@ -12,6 +12,8 @@ tags: ["cnisn", "niveau-2", "interopérabilité", "trajectoire"]
 # Partie V — Trajectoire de mise en œuvre
 
 ## Vue d'ensemble
+
+La mise en œuvre du CNISN s'articule en sept phases successives couvrant la période du quatrième trimestre 2026 au deuxième trimestre 2030. Chaque phase vise des objectifs spécifiques et aboutit à des jalons mesurables.
 
 | Phase | Intitulé | Période | Jalons clés |
 |-------|----------|---------|-------------|
@@ -23,64 +25,11 @@ tags: ["cnisn", "niveau-2", "interopérabilité", "trajectoire"]
 | **6** | Interopérabilité transfrontalière | T3 2029 — T4 2029 | GDHCN opérationnel, accords bilatéraux |
 | **7** | Coordination One Health | T1 2030 — T2 2030 | Flux intersectoriels opérationnels, PT-15 déployé |
 
-```
-2026        2027        2028        2029        2030
-T3  T4  T1  T2  T3  T4  T1  T2  T3  T4  T1  T2  T3  T4  T1  T2
-│   │   │   │   │   │   │   │   │   │   │   │   │   │   │   │
-├───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┤
-│   │   │   │   │   │   │   │   │   │   │   │   │   │   │   │
-│   ████████│   │   │   │   │   │   │   │   │   │   │   │  Phase 1
-│   │   │   │   │   │   │   │   │   │   │   │   │   │   │
-│   │   │   ████████│   │   │   │   │   │   │   │   │   │  Phase 2
-│   │   │   │   │   │   │   │   │   │   │   │   │   │   │
-│   │   │   │   │   ████████│   │   │   │   │   │   │   │  Phase 3
-│   │   │   │   │   │   │   │   │   │   │   │   │   │   │
-│   │   │   │   │   │   │   ████████│   │   │   │   │   │  Phase 4
-│   │   │   │   │   │   │   │   │   │   │   │   │   │   │
-│   │   │   │   │   │   │   │   │   ████████│   │   │   │  Phase 5
-│   │   │   │   │   │   │   │   │   │   │   │   │   │   │
-│   │   │   │   │   │   │   │   │   │   │   ████████│   │  Phase 6
-│   │   │   │   │   │   │   │   │   │   │   │   │   │   │
-│   │   │   │   │   │   │   │   │   │   │   │   │   ████████  Phase 7
-│   │   │   │   │   │   │   │   │   │   │   │   │   │   │
-└───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┘
-```
-2026        2027        2028        2029
-T3  T4  T1  T2  T3  T4  T1  T2  T3  T4  T1  T2  T3  T4
-│   │   │   │   │   │   │   │   │   │   │   │   │   │
-├───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┤
-│   │   │   │   │   │   │   │   │   │   │   │   │   │
-│   ████████│   │   │   │   │   │   │   │   │   │  Phase 1
-│   │   │   │   │   │   │   │   │   │   │   │   │
-│   │   │   ████████│   │   │   │   │   │   │   │  Phase 2
-│   │   │   │   │   │   │   │   │   │   │   │   │
-│   │   │   │   │   ████████│   │   │   │   │   │  Phase 3
-│   │   │   │   │   │   │   │   │   │   │   │   │
-│   │   │   │   │   │   │   ████████│   │   │   │  Phase 4
-│   │   │   │   │   │   │   │   │   │   │   │   │
-│   │   │   │   │   │   │   │   │   ████████│   │  Phase 5
-│   │   │   │   │   │   │   │   │   │   │   │   │
-│   │   │   │   │   │   │   │   │   │   │   ████████  Phase 6
-│   │   │   │   │   │   │   │   │   │   │   │   │
-└───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┘
-```
-
 ## Phase 1 — Gouvernance et inventaire
 
 **Période** : T4 2026 — T1 2027 (6 mois)
 
-### Actions
-
-- validation du CNISN ;
-- désignation des propriétaires ;
-- inventaire des systèmes ;
-- inventaire des services ;
-- inventaire des contrats ;
-- inventaire des référentiels ;
-- identification des doublons ;
-- identification des conflits d’autorité.
-
-### Jalons
+La première phase consiste à établir les fondations de la gouvernance et à réaliser un inventaire complet des systèmes, services, contrats et référentiels existants. Elle comprend la validation du CNISN, la désignation des propriétaires de capacités, l'identification des doublons et des conflits d'autorité.
 
 | Jalon | Date | Critère de succès |
 |-------|------|-------------------|
@@ -93,18 +42,7 @@ T3  T4  T1  T2  T3  T4  T1  T2  T3  T4  T1  T2  T3  T4
 
 **Période** : T2 2027 — T3 2027 (6 mois)
 
-### Actions
-
-Priorité aux capacités suivantes :
-
-- catalogue des services ;
-- registre des contrats ;
-- référentiel des structures ;
-- terminologie ;
-- confiance et sécurité ;
-- qualité et réconciliation.
-
-### Jalons
+La deuxième phase déploie les six services fondamentaux du cadre : le catalogue des services, le registre des contrats, le référentiel des structures, le service terminologique, les mécanismes de confiance et sécurité, et les services de qualité et réconciliation.
 
 | Jalon | Date | Critère de succès |
 |-------|------|-------------------|
@@ -117,15 +55,7 @@ Priorité aux capacités suivantes :
 
 **Période** : T4 2027 — T1 2028 (6 mois)
 
-### Actions
-
-- identité du bénéficiaire ;
-- registre professionnel ;
-- lien avec l’identité fondationnelle ;
-- règles de rapprochement ;
-- autorisation contextuelle.
-
-### Jalons
+La troisième phase met en place les services d'identité fonctionnelle : l'identité du bénéficiaire, le registre professionnel, le lien avec l'identité fondationnelle, les règles de rapprochement et l'autorisation contextuelle.
 
 | Jalon | Date | Critère de succès |
 |-------|------|-------------------|
@@ -138,16 +68,7 @@ Priorité aux capacités suivantes :
 
 **Période** : T2 2028 — T3 2028 (6 mois)
 
-### Actions
-
-- données agrégées ;
-- surveillance ;
-- laboratoire ;
-- référence, contre-référence et évacuation sanitaire ;
-- logistique ;
-- protection financière.
-
-### Jalons
+La quatrième phase déploie les échanges prioritaires : les données agrégées via mADX, la surveillance épidémique, les échanges laboratoire en FHIR, la référence et contre-référence, l'évacuation sanitaire, la logistique pharmaceutique et la protection financière.
 
 | Jalon | Date | Critère de succès |
 |-------|------|-------------------|
@@ -160,16 +81,7 @@ Priorité aux capacités suivantes :
 
 **Période** : T4 2028 — T2 2029 (9 mois)
 
-### Actions
-
-- tests de conformité ;
-- homologation ;
-- supervision ;
-- continuité ;
-- amélioration des niveaux de service ;
-- dépréciation des intégrations non conformes.
-
-### Jalons
+La cinquième phase industrialise le cadre through les tests de conformité, le processus d'homologation, la supervision des échanges, la continuité de service, l'amélioration des niveaux de service et la dépréciation des intégrations non conformes.
 
 | Jalon | Date | Critère de succès |
 |-------|------|-------------------|
@@ -182,18 +94,7 @@ Priorité aux capacités suivantes :
 
 **Période** : T3 2029 — T4 2029 (6 mois)
 
-### Actions
-
-- adhésion formelle au GDHCN ;
-- déploiement du point de confiance nationale (Trust Anchor) ;
-- signature des accords bilatéraux de confiance mutuelle (SADC, UA, OMS AFRO) ;
-- déploiement des services d'identification transfrontalière (PT-14) ;
-- déploiement du service de production/réception de résumés patients (HL7 FHIR IPS) ;
-- mise en place du contrôle de sortie des données ;
-- journalisation et audit des flux transfrontaliers ;
-- formation des équipes aux procédures transfrontalières.
-
-### Jalons
+La sixième phase établit l'interopérabilité transfrontalière through l'adhésion formelle au GDHCN, le déploiement du point de confiance nationale (Trust Anchor), la signature des accords bilatéraux de confiance mutuelle avec les partenaires SADC, UA et OMS AFRO, le déploiement des services d'identification transfrontalière (PT-14), la production et réception de résumés patients (HL7 FHIR IPS), le contrôle de sortie des données et la journalisation des flux transfrontaliers.
 
 | Jalon | Date | Critère de succès |
 |-------|------|-------------------|
@@ -208,17 +109,7 @@ Priorité aux capacités suivantes :
 
 **Période** : T1 2030 — T2 2030 (6 mois)
 
-### Actions
-
-- déploiement du profil PT-15 (Surveillance One Health) ;
-- signature des accords interministériels de partage de données (MSP–MINAE–MEEF) ;
-- déploiement de la médiation intersectorielle (CIM-10 ↔ OIE ↔ GBIF) ;
-- activation du centre de commande intersectoriel (CMP-02) ;
-- corrélation des signaux faibles entre santé humaine, animale et environnement ;
-- tests de cluster intersectoriel (peste, rage, fièvre de Rift Valley) ;
-- formation des équipes multi-ministérielles.
-
-### Jalons
+La septième phase met en place la coordination intersectorielle through le déploiement du profil PT-15 (Surveillance One Health), la signature des accords interministériels de partage de données entre le MSP, le MINAE et le MEEF, le déploiement de la médiation intersectorielle (CIM-10 ↔ OIE ↔ GBIF), l'activation du centre de commande intersectoriel (CMP-02), la corrélation des signaux faibles entre santé humaine, animale et environnement, et les tests de cluster intersectoriel.
 
 | Jalon | Date | Critère de succès |
 |-------|------|-------------------|
@@ -226,5 +117,3 @@ Priorité aux capacités suivantes :
 | **J7.2** | T1 2030 | PT-15 déployé en mode pilote (1 région) |
 | **J7.3** | T2 2030 | Médiation intersectorielle opérationnelle |
 | **J7.4** | T2 2030 | Premier cluster intersectoriel détecté et traité |
-
-------------------------------------------------------------------------

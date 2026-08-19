@@ -2,7 +2,7 @@
 title: "Tableau de bord de conformité architecturale"
 id: conformite
 domain: 02_artsn
-version: "0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: CNASN
@@ -15,23 +15,11 @@ tags: [artsn, gouvernance, conformité, dashboard, monitoring, niveau-3]
 
 **Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
 
-| Profil | Lecture |
-|--------|---------|
-| Décideurs institutionnels | ● |
-| Directions métier / programmes | ◐ |
-| DEPSI / équipes techniques | ● |
-| SIS / données / suivi-évaluation | ● |
-| Partenaires techniques et financiers | ◐ |
-
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle.
-
----
+Ce document s'adresse prioritairement aux décideurs institutionnels, aux équipes DEPSI et techniques, ainsi qu'aux équipes SIS, données et suivi-évaluation. Les directions métier et programmes, ainsi que les partenaires techniques et financiers, trouveront une lecture complémentaire utile.
 
 ## Objet
 
 Ce document définit les indicateurs et le processus de suivi de la conformité des initiatives numériques aux standards et principes de l'ARTSN. Il permet de détecter les écarts en temps réel et de mesurer l'efficacité de la gouvernance architecturale.
-
----
 
 ## 1. Indicateurs de conformité
 
@@ -64,8 +52,6 @@ Ce document définit les indicateurs et le processus de suivi de la conformité 
 | **Initiatives en risque** | Initiatives avec conformité < 70% | ≤ 10% | Calcul mensuel |
 | **Couverture homologation** | Initiatives homologuées / total actives | ≥ 90% | Registre initiatives |
 
----
-
 ## 2. Matrice de conformité par initiative
 
 ### 2.1 Template
@@ -87,15 +73,13 @@ Ce document définit les indicateurs et le processus de suivi de la conformité 
 - **Écarts** : 8-9/12
 - **Non conforme** : < 8/12
 
-### 2.2 Exemple填充
+### 2.2 Exemple
 
 | Initiative | C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 | C9 | C10 | C11 | C12 | Score | Statut |
 |------------|----|----|----|----|----|----|----|----|----|----|-----|-----|-------|--------|
 | Pilote référence District 1 | ● | ● | ● | ● | ● | ○ | ● | ● | ● | ● | ● | ● | 11/12 | Conforme |
 | LMIS national | ● | ● | ● | ● | ○ | — | ● | ○ | ● | ● | ◐ | ● | 8/12 | Écarts |
 | OpenMRS VIH | ● | ● | ◐ | ○ | ● | ● | ● | ○ | ● | ● | ● | ◐ | 8/12 | Écarts |
-
----
 
 ## 3. Processus de suivi
 
@@ -119,8 +103,6 @@ Ce document définit les indicateurs et le processus de suivi de la conformité 
 | **Audit sécurité** | Conformité RBAC, ATNA | Rapport audit |
 | **Registre initiatives** | Liste des initiatives actives | Base de données |
 
----
-
 ## 4. Alertes et escalade
 
 ### 4.1 Niveaux d'alerte
@@ -134,14 +116,14 @@ Ce document définit les indicateurs et le processus de suivi de la conformité 
 
 ### 4.2 Escalade
 
+En cas de conformité inférieure à 70%, une notification est adressée au responsable de l'initiative le jour même (J+0). Si aucune action n'est entreprise sous 7 jours, le CNASN est alerté (J+7). En l'absence de correction sous 30 jours, une suspension partielle est décidée (J+30), pouvant évoluer vers une suspension complète sous 60 jours si la situation persiste (J+60).
+
 ```
 Conformité < 70%  → Notification responsable initiative (J+0)
                    → Alerte CNASN (J+7 si pas d'action)
                    → Suspension partielle (J+30 si pas de correction)
                    → Suspension complète (J+60 si pas de correction)
 ```
-
----
 
 ## 5. Rapport trimestriel
 
@@ -194,8 +176,6 @@ Conformité < 70%  → Notification responsable initiative (J+0)
 3. ...
 ```
 
----
-
 ## 6. Tableau de bord visuel
 
 ### 6.1 Vue d'ensemble
@@ -232,11 +212,13 @@ Conformité < 70%  → Notification responsable initiative (J+0)
 └─────────────────────────────────────────────────────────────┘
 ```
 
----
-
 ## Liens
 
-- [Gouvernance ARTSN](./index.md)
-- [Workflow d'homologation](../../00_caesn/07_governance/homologation.md)
-- [Veille architecturale](./veille-architecturale.md)
-- [Registre des décisions](../../00_caesn/08_decisions/registre-decisions.md)
+Voir les documents suivants : Gouvernance ARTSN, Workflow d'homologation, Veille architecturale, et Registre des décisions.
+
+## Références
+
+- **Gouvernance ARTSN** — Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)
+- **Workflow d'homologation** — Workflow d'homologation architecturale (`00_caesn/07_governance/homologation.md`)
+- **Veille architecturale** — Veille architecturale (`02_artsn/06_gouvernance/veille-architecturale.md`)
+- **Registre des décisions** — Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)

@@ -2,11 +2,12 @@
 title: "ART-0 — Accords de partage inter-institutionnels"
 id: art-0
 domain: 02_artsn
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: [artsn, chapitres, art-0, niveau-3]
+related: []
 ---
 
 # ART-0 — Accords de partage inter-institutionnels
@@ -23,10 +24,10 @@ tags: [artsn, chapitres, art-0, niveau-3]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-ART-0 — Accords de partage inter-institutionnels constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : [`art-0`](../../referentiel/chapitres/art-0.md).
+ART-0 — Accords de partage inter-institutionnels constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-0`.
 
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
@@ -36,13 +37,20 @@ ART-0 — Accords de partage inter-institutionnels constitue un chapitre du **ca
 **Discipline existentielle.** Dès lors qu’une source échappe à la gouvernance directe de l’initiative (ministères partenaires, secteurs tiers) : elle seule permet de fixer les frontières de la responsabilité juridique et de configurer dynamiquement les filtres de sécurité automatiques sans rompre le pipeline.
 
 - **Rattachement** : capacité candidate « Coordination intersectorielle ».
-- **Déduit selon** : [ENF-4](../../referentiel/exigences/enf-4.md) (cloisonnement One Health).
+- **Déduit selon** : ENF-4 (cloisonnement One Health).
 - **Statut : Proposition ouverte.**
 
-*Rattachement : [ENF-4](../../referentiel/exigences/enf-4.md) · [fiche](../../referentiel/chapitres/art-0.md)*
+*Rattachement : ENF-4 · fiche ART-0*
 
 <!-- END:GENERATED -->
 ## Liens
 
-- [Index des chapitres](./index.md)
-- [Exigences contextuelles — Partie III](../02_exigences-contextuelles/index.md)
+- Index des chapitres
+- Exigences contextuelles — Partie III
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **`art-0`** — Accords de partage inter-institutionnels (`referentiel/chapitres/art-0.md`)
+- **Index des chapitres** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **Exigences contextuelles — Partie III** — Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

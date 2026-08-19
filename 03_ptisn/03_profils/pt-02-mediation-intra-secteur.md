@@ -2,7 +2,7 @@
 title: PT-02 — Profil technique national
 id: ptisn-pt-02-mediation-intra-secteur
 domain: 03_ptisn
-version: "0.4"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
@@ -110,6 +110,6 @@ La plateforme interinstitutionnelle assure la confiance entre organisations.
 
 ------------------------------------------------------------------------
 
-*Rattachement : [CMP-06](../../referentiel/composants/cmp-06.md), [CAP-INT-03](../../referentiel/capacites/cap-int-03.md), [ART-1](../../referentiel/chapitres/art-1.md), [ART-2](../../referentiel/chapitres/art-2.md), [ART-5](../../referentiel/chapitres/art-5.md), [ART-7](../../referentiel/chapitres/art-7.md), [ART-8](../../referentiel/chapitres/art-8.md) · [fiche](../../referentiel/profils/pt-02.md)*
+*Rattachement : CMP-06, CAP-INT-03, ART-1, ART-2, ART-5, ART-7, ART-8 · fiche PT-02*
 
 <!-- END:GENERATED -->

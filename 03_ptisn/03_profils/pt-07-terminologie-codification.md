@@ -2,7 +2,7 @@
 title: PT-07 — Profil technique national
 id: ptisn-pt-07-terminologie-codification
 domain: 03_ptisn
-version: "0.4"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
@@ -90,6 +90,6 @@ L’adoption d’une terminologie internationale doit être précédée d’une 
 
 ------------------------------------------------------------------------
 
-*Rattachement : [CMP-10](../../referentiel/composants/cmp-10.md), [CAP-INT-05](../../referentiel/capacites/cap-int-05.md), [ART-2](../../referentiel/chapitres/art-2.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-5](../../referentiel/chapitres/art-5.md) · [fiche](../../referentiel/profils/pt-07.md)*
+*Rattachement : CMP-10, CAP-INT-05, ART-2, ART-4, ART-5 · fiche PT-07*
 
 <!-- END:GENERATED -->

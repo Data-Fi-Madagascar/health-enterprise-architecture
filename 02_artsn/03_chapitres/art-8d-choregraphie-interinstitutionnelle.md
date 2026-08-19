@@ -2,11 +2,12 @@
 title: "ART-8d — Chorégraphie inter-institutionnelle"
 id: art-8d
 domain: 02_artsn
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: [artsn, chapitres, art-8d, niveau-3]
+related: ['cap-int-03']
 ---
 
 # ART-8d — Chorégraphie inter-institutionnelle
@@ -23,10 +24,10 @@ tags: [artsn, chapitres, art-8d, niveau-3]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-ART-8d — Chorégraphie inter-institutionnelle constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : [`art-8d`](../../referentiel/chapitres/art-8d.md).
+ART-8d — Chorégraphie inter-institutionnelle constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-8d`.
 
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
@@ -35,15 +36,22 @@ ART-8d — Chorégraphie inter-institutionnelle constitue un chapitre du **cadre
 
 **Discipline existentielle.** Dès lors qu’une source échappe à la gouvernance directe de l’initiative (systèmes d’information autonomes des ministères de l’Agriculture ou de l’Environnement) : elle seule permet de déclencher des actions conjointes et simultanées lors d’un signal épidémique tout en préservant l’indépendance informatique et la souveraineté de chaque institution, sans rompre le pipeline.
 
-- **Rattachement** : [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md).
+- **Rattachement** : CAP-13, CAP-14.
 - **Pattern cible** : Publication / Abonnement (Pub/Sub).
-- **Déduit selon** : [ENF-4](../../referentiel/exigences/enf-4.md) (souveraineté intersectorielle).
+- **Déduit selon** : ENF-4 (souveraineté intersectorielle).
 - **Statut : Proposition ouverte.**
 
-*Rattachement : [ENF-4](../../referentiel/exigences/enf-4.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md) · [fiche](../../referentiel/chapitres/art-8d.md)*
+*Rattachement : ENF-4, CAP-13, CAP-14 · fiche ART-8D*
 
 <!-- END:GENERATED -->
 ## Liens
 
-- [Index des chapitres](./index.md)
-- [Exigences contextuelles — Partie III](../02_exigences-contextuelles/index.md)
+- Index des chapitres
+- Exigences contextuelles — Partie III
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **`art-8d`** — Chorégraphie inter-institutionnelle (`referentiel/chapitres/art-8d.md`)
+- **Index des chapitres** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **Exigences contextuelles — Partie III** — Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

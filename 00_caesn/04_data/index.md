@@ -2,7 +2,7 @@
 title: Architecture des données et de l'information sanitaire
 id: data-architecture
 domain: 04_data
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Direction des Systèmes d'Information
@@ -23,7 +23,7 @@ tags: [données, architecture, sis]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 ## Rôle de l'architecture des données
 
@@ -37,11 +37,11 @@ Aucune initiative ne doit créer de nouvelles données, formulaires ou référen
 
 | Document | Contenu |
 |----------|---------|
-| [Principes de l'architecture des données](./principles.md) | Règles DA-01 à DA-08 |
-| [Domaines de données](./domains.md) | Domaines de données prioritaires et stewards |
-| [Référentiels nationaux](./referentials.md) | Socles communs aux systèmes sanitaires |
-| [Cycle de vie des données](./lifecycle.md) | De la création à l'archivage |
-| [Gouvernance et protection des données](./governance.md) | Rôles, qualité, accès, protection, entrepôt national |
+| Principes de l'architecture des données | Règles DA-01 à DA-08 |
+| Domaines de données | Domaines de données prioritaires et stewards |
+| Référentiels nationaux | Socles communs aux systèmes sanitaires |
+| Cycle de vie des données | De la création à l'archivage |
+| Gouvernance et protection des données | Rôles, qualité, accès, protection, entrepôt national |
 
 ## Données opérationnelles et analytiques
 
@@ -52,6 +52,18 @@ Les systèmes opérationnels soutiennent l'action ; les systèmes analytiques so
 
 ## Liens
 
-- [Capabilités](../03_capabilities/index.md)
-- [Architecture applicative](../05_application/index.md)
-- [Flux de valeur](../01_value-streams/index.md)
+- Capabilités
+- Architecture applicative
+- Flux de valeur
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Principes de l'architecture des données** — Principes de l'architecture des données (`00_caesn/04_data/principles.md`)
+- **Domaines de données** — Domaines de données prioritaires (`00_caesn/04_data/domains.md`)
+- **Référentiels nationaux** — Référentiels nationaux (`00_caesn/04_data/referentials.md`)
+- **Cycle de vie des données** — Cycle de vie des données (`00_caesn/04_data/lifecycle.md`)
+- **Gouvernance et protection des données** — Gouvernance, qualité et protection des données (`00_caesn/04_data/governance.md`)
+- **Capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
+- **Architecture applicative** — Architecture applicative et systèmes numériques (`00_caesn/05_application/index.md`)
+- **Flux de valeur** — Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)

@@ -2,7 +2,7 @@
 title: PT-06 — Profil technique national
 id: ptisn-pt-06-referentiel-structures-services
 domain: 03_ptisn
-version: "0.4"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
@@ -84,6 +84,6 @@ Les correspondances entre identifiants DHIS2 et identifiants nationaux doivent �
 
 ------------------------------------------------------------------------
 
-*Rattachement : [CMP-08](../../referentiel/composants/cmp-08.md), [CAP-INT-04](../../referentiel/capacites/cap-int-04.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-5](../../referentiel/chapitres/art-5.md), [ART-6](../../referentiel/chapitres/art-6.md) · [fiche](../../referentiel/profils/pt-06.md)*
+*Rattachement : CMP-08, CAP-INT-04, ART-4, ART-5, ART-6 · fiche PT-06*
 
 <!-- END:GENERATED -->

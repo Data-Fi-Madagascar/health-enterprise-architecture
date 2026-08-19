@@ -2,7 +2,7 @@
 title: Architecture applicative et systèmes numériques
 id: application-architecture
 domain: 05_application
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Direction des Systèmes d'Information
@@ -23,7 +23,7 @@ tags: [applications, systèmes, numériques]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 ## Rôle de l'architecture applicative
 
@@ -52,14 +52,14 @@ Cette distinction évite de confondre le besoin métier avec l'outil technique :
 
 | Document | Contenu |
 |----------|---------|
-| [Principes de l'architecture applicative](./principles.md) | Règles AA-01 à AA-09 |
-| [Paysage applicatif cible](./layers.md) | Les six couches du paysage national |
-| [Domaines applicatifs par flux de valeur](./application-domains.md) | Familles de systèmes et services |
-| [Services numériques partagés](./shared-services.md) | Composants partagés prioritaires |
-| [Urbanisation applicative](./urbanisation.md) | Règles d'organisation des systèmes |
-| [Contraintes d'exploitation](./constraints.md) | Contextes connecté / intermittent / hors ligne |
-| [Cycle de vie et homologation](./lifecycle.md) | De cadrage au retrait, de critères d'homologation |
-| [Rationalisation du paysage](./rationalization.md) | Trajectoires : conserver, intégrer, moderniser, fusion, remplacer, retirer |
+| Principes de l'architecture applicative | Règles AA-01 à AA-09 |
+| Paysage applicatif cible | Les six couches du paysage national |
+| Domaines applicatifs par flux de valeur | Familles de systèmes et services |
+| Services numériques partagés | Composants partagés prioritaires |
+| Urbanisation applicative | Règles d'organisation des systèmes |
+| Contraintes d'exploitation | Contextes connecté / intermittent / hors ligne |
+| Cycle de vie et homologation | De cadrage au retrait, de critères d'homologation |
+| Rationalisation du paysage | Trajectoires : conserver, intégrer, moderniser, fusion, remplacer, retirer |
 
 ## Relation avec l'Architecture de Référence Technique
 
@@ -67,7 +67,23 @@ Le présent cadre définit le **pourquoi et le quoi** (organisation fonctionnell
 
 ## Liens
 
-- [Données](../04_data/index.md)
-- [Capabilités](../03_capabilities/index.md)
-- [Flux de valeur](../01_value-streams/index.md)
-- [Portefeuille](../06_portfolio/index.md)
+- Données
+- Capabilités
+- Flux de valeur
+- Portefeuille
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Principes de l'architecture applicative** — Principes de l'architecture applicative (`00_caesn/05_application/principles.md`)
+- **Paysage applicatif cible** — Paysage applicatif cible (`00_caesn/05_application/layers.md`)
+- **Domaines applicatifs par flux de valeur** — Domaines applicatifs cibles par flux de valeur (`00_caesn/05_application/application-domains.md`)
+- **Services numériques partagés** — Services numériques partagés prioritaires (`00_caesn/05_application/shared-services.md`)
+- **Urbanisation applicative** — Règles d'urbanisation applicative (`00_caesn/05_application/urbanisation.md`)
+- **Contraintes d'exploitation** — Contraintes d'exploitation différenciées (`00_caesn/05_application/constraints.md`)
+- **Cycle de vie et homologation** — Cycle de vie applicatif et critères d'homologation (`00_caesn/05_application/lifecycle.md`)
+- **Rationalisation du paysage** — Trajectoire de rationalisation du paysage applicatif (`00_caesn/05_application/rationalization.md`)
+- **Données** — Architecture des données et de l'information sanitaire (`00_caesn/04_data/index.md`)
+- **Capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
+- **Flux de valeur** — Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)
+- **Portefeuille** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)

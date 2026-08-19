@@ -2,7 +2,7 @@
 title: Dictionnaire de données fonctionnelles
 id: artsn-dictionnaire-donnees
 domain: 02_artsn
-version: "0.2.0"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
@@ -23,11 +23,11 @@ tags: [artsn, dictionnaire, donnees, semantique, niveau-3]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
-Le dictionnaire de données fixe l'**atome d'information métier pur**, exempt de toute abréviation ou contrainte technologique. Il sert de **référentiel de sémantique universelle** pour la validation inter-ministérielle des contrats d'interfaces, conformément au [chapitre ART-2 (médiation et normalisation)](../../referentiel/chapitres/art-2.md) et aux fondations [F.2](../../referentiel/fondations/f-2.md) et [F.3](../../referentiel/fondations/f-3.md).
+Le dictionnaire de données fixe l'**atome d'information métier pur**, exempt de toute abréviation ou contrainte technologique. Il sert de **référentiel de sémantique universelle** pour la validation inter-ministérielle des contrats d'interfaces, conformément au chapitre ART-2 (médiation et normalisation) et aux fondations F.2 et F.3.
 
-Chaque contrat technique d'interface publié dans le registre de schémas doit s'appuyer sur les concepts sémantiques définis dans ce dictionnaire. Les définitions s'organisent par domaines fonctionnels du [CAESN](../../00_caesn/00_overview/index.md).
+Chaque contrat technique d'interface publié dans le registre de schémas doit s'appuyer sur les concepts sémantiques définis dans ce dictionnaire. Les définitions s'organisent par domaines fonctionnels du CAESN.
 
 ## Légende des champs
 
@@ -141,7 +141,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | Champ | Valeur |
 |-------|--------|
 | **Nom** | Évacuation sanitaire (medevac) |
-| **Définition** | Transfert urgent d'un patient d'un établissement vers un autre établissement ou vers un pays étranger, nécessitant des moyens de transport sanitaires spécialisés (ambulance, avion médicalisé, hélicoptère). L'évacuation sanitaire peut être nationale (de niveau初级 vers un hôpital régional/central) ou internationale (vers un centre spécialisé à l'étranger). Elle implique la continuité des soins pendant le transport et la conformité aux réglementations de sortie/entrée du territoire. |
+| **Définition** | Transfert urgent d'un patient d'un établissement vers un autre établissement ou vers un pays étranger, nécessitant des moyens de transport sanitaires spécialisés (ambulance, avion médicalisé, hélicoptère). L'évacuation sanitaire peut être nationale (de niveau faible vers un hôpital régional/central) ou internationale (vers un centre spécialisé à l'étranger). Elle implique la continuité des soins pendant le transport et la conformité aux réglementations de sortie/entrée du territoire. |
 | **Type** | Événement de transport sanitaire |
 | **Contraintes** | Établissement d'origine ; établissement/pays de destination ; motif médical de l'évacuation ; mode de transport ; équipe médicale accompagnatrice ; équipment médical embarqué ; autorisation de sortie du territoire (si international) ; accord du pays de réception (si international) ; couverture financière ; consentement éclairé du patient |
 | **Rattachement** | CAP-02, CAP-05, CAP-10, CAP-14, CAP-17, VS-01, VS-02 |
@@ -418,7 +418,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **IMMU** | Vaccinations | Immunization | Vaccin, date, lot, statut |
 | **VITAL** | Signes vitaux | Observation | Mesures (TA, FC, SpO2, température) |
 | **LAB** | Résultats de diagnostic | Observation | Résultats laboratoire |
-| **DEVI** | Dispositifs médicaux | DeviceUseStatement | Dis植入, date, statut |
+| **DEVI** | Dispositifs médicaux | DeviceUseStatement | Dispositif, date, statut |
 | **PROC** | Procédures | Procedure | Acte, date, résultat |
 | **IDOI** | Identité du patient | Patient | NIN, nom, naissance, sexe |
 
@@ -437,11 +437,27 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 
 ## Liens
 
-- [Chapitres et patterns de référence](../03_chapitres/index.md)
-- [ART-2 — Médiation et normalisation](../../referentiel/chapitres/art-2.md)
-- [ART-7 — Sécurité, contrôle d'accès et résidence](../../referentiel/chapitres/art-7.md)
-- [PT-14 — Interopérabilité transfrontalière](../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md)
-- [CAP-INT-13 — Interopérabilité transfrontalière](../../01_cnisn/02_capacites/index.md)
-- [CAESN — données](../../00_caesn/04_data/index.md)
-- [CAESN — domaines de données](../../00_caesn/04_data/domains.md)
-- [CAESN — référentiels nationaux](../../00_caesn/04_data/referentials.md)
+- Chapitres et patterns de référence
+- ART-2 — Médiation et normalisation
+- ART-7 — Sécurité, contrôle d'accès et résidence
+- PT-14 — Interopérabilité transfrontalière
+- CAP-INT-13 — Interopérabilité transfrontalière
+- CAESN — données
+- CAESN — domaines de données
+- CAESN — référentiels nationaux
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **chapitre ART-2 (médiation et normalisation)** — Médiation et normalisation (`referentiel/chapitres/art-2.md`)
+- **F.2** — F.2 — Préservation de la souveraineté intersectorielle (`referentiel/fondations/f-2.md`)
+- **F.3** — F.3 — Éradication des silos technologiques (`referentiel/fondations/f-3.md`)
+- **CAESN** — Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
+- **Chapitres et patterns de référence** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **ART-2 — Médiation et normalisation** — Médiation et normalisation (`referentiel/chapitres/art-2.md`)
+- **ART-7 — Sécurité, contrôle d'accès et résidence** — Sécurité, contrôle d'accès et résidence de la donnée (`referentiel/chapitres/art-7.md`)
+- **PT-14 — Interopérabilité transfrontalière** — Interopérabilité transfrontalière (`03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md`)
+- **CAP-INT-13 — Interopérabilité transfrontalière** — Partie II — Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
+- **CAESN — données** — Architecture des données et de l'information sanitaire (`00_caesn/04_data/index.md`)
+- **CAESN — domaines de données** — Domaines de données prioritaires (`00_caesn/04_data/domains.md`)
+- **CAESN — référentiels nationaux** — Référentiels nationaux (`00_caesn/04_data/referentials.md`)

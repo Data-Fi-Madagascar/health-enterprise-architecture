@@ -2,7 +2,7 @@
 title: Glossaire de l'ARTSN (niveau 3)
 id: artsn-glossary
 domain: 02_artsn
-version: "0.1.0"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
@@ -15,35 +15,27 @@ tags: [artsn, glossaire, terminologie, niveau-3]
 
 **Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
 
-| Profil | Lecture |
-|--------|---------|
-| Décideurs institutionnels | ○ |
-| Directions métier / programmes | ◐ |
-| DEPSI / équipes techniques | ● |
-| SIS / données / suivi-évaluation | ◐ |
-| Partenaires techniques et financiers | ◐ |
+Ce glossaire s'adresse prioritairement aux équipes DEPSI et techniques. Les directions métier et programmes ainsi que les équipes SIS, données et suivi-évaluation y trouveront un complément utile. Les décideurs institutionnels et les partenaires techniques et financiers peuvent le consulter ponctuellement lorsqu'ils rencontrent des termes techniques spécifiques. Pour une vue d'ensemble des niveaux de pertinence, consultez la matrice de lecture.
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](./reading-matrix.md).
-
-Termes techniques propres à l'ARTSN. Les définitions des patterns mobilisés par les chapitres (event sourcing, CQRS, médiateur, SCD, golden record…) sont détaillées dans l'[Annexe B — Glossaire des patterns](./07_annexes/b-glossaire-patterns.md) ; les termes transverses de l'architecture sont dans le [glossaire du CAESN](../00_caesn/10_annexes/glossary.md).
+Termes techniques propres à l'ARTSN. Les définitions des patterns mobilisés par les chapitres (event sourcing, CQRS, médiateur, SCD, golden record…) sont détaillées dans l'Annexe B — Glossaire des patterns ; les termes transverses de l'architecture sont dans le glossaire du CAESN.
 
 ## Termes d'architecture technique
 
-**Chapitre (ART-)** — Unité normative de la Partie IV de l'ARTSN définissant une règle d'or ou un contrat technique d'interface obligatoire. Les chapitres portent un statut Stable, Provisoire ou Proposition ouverte selon la [table de maturité](./07_annexes/a-table-de-maturite.md).
+**Chapitre (ART-)** — Unité normative de la Partie IV de l'ARTSN définissant une règle d'or ou un contrat technique d'interface obligatoire. Les chapitres portent un statut Stable, Provisoire ou Proposition ouverte selon la table de maturité.
 
 **Configurations et paramétrages** — Rapport des choix d'implémentation (valeurs, règles, réglages) qui transposent un standard technique dans une solution logicielle donnée, sur un périmètre et un environnement précis.
 
-**Contrat d'interface** — Spécification technique opposable d'un échange entre composants : format, schéma, version du standard, invariants de sécurité et de résidence de la donnée. Le respect du contrat conditionne l'[homologation](../00_caesn/10_annexes/glossary.md).
+**Contrat d'interface** — Spécification technique opposable d'un échange entre composants : format, schéma, version du standard, invariants de sécurité et de résidence de la donnée. Le respect du contrat conditionne l'homologation.
 
-**Couche applicative** — Niveau logique de la [cartographie cible](04_cartographie-cible/index.md) organisant les composants (infrastructure, données, services partagés, applications métier, intégration, présentation) selon des responsabilités séparées.
+**Couche applicative** — Niveau logique de la cartographie cible organisant les composants (infrastructure, données, services partagés, applications métier, intégration, présentation) selon des responsabilités séparées.
 
 **Homologation technique** — Contrôle par lequel une solution est vérifiée pour conformité aux standards techniques et aux exigences de sécurité de l'ARTSN avant mise en production, indépendamment des règles d'homologation fonctionnelle du niveau 1.
 
-**Modèle d'hébergement** — Choix d'hébergement (sur site national, cloud souverain, hybride) conforme à l'exigence de [résidence de la donnée](../referentiel/chapitres/art-7.md) et aux fondations du niveau.
+**Modèle d'hébergement** — Choix d'hébergement (sur site national, cloud souverain, hybride) conforme à l'exigence de résidence de la donnée et aux fondations du niveau.
 
-**Norme et standard technique** — Spécification technique normative (formats, protocoles, API) retenue par l'ARTSN et opposable lors d'une homologation ; déclinée depuis les standards du [niveau 1](../00_caesn/09_standards/index.md).
+**Norme et standard technique** — Spécification technique normative (formats, protocoles, API) retenue par l'ARTSN et opposable lors d'une homologation ; déclinée depuis les standards du niveau 1.
 
-**Pattern technique** — Solution réutilisable à niveau de conception d'un problème récurrent d'intégration, de données, de sécurité ou de processus (voir l'[Annexe B](./07_annexes/b-glossaire-patterns.md)).
+**Pattern technique** — Solution réutilisable à niveau de conception d'un problème récurrent d'intégration, de données, de sécurité ou de processus (voir l'Annexe B).
 
 ## Termes de fondations
 
@@ -135,8 +127,20 @@ Termes techniques propres à l'ARTSN. Les définitions des patterns mobilisés p
 
 ## Liens
 
-- [Index de l'ARTSN](./index.md)
-- [Matrice de lecture de l'ARTSN](./reading-matrix.md)
-- [Acronymes de l'ARTSN](./acronyms.md)
-- [Annexe B — Glossaire des patterns](./07_annexes/b-glossaire-patterns.md)
-- [Glossaire du CAESN (niveau 1)](../00_caesn/10_annexes/glossary.md)
+L'Index de l'ARTSN fournit la page d'accueil de l'architecture. La Matrice de lecture de l'ARTSN propose une vue croisée parties et lecteurs. Les Acronymes de l'ARTSN listent l'ensemble des acronymes. L'Annexe B — Glossaire des patterns détaille les définitions des patterns mobilisés. Le Glossaire du CAESN (niveau 1) couvre les termes transverses de l'architecture.
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **Annexe B — Glossaire des patterns** — Annexe B — Glossaire des patterns cités (`02_artsn/07_annexes/b-glossaire-patterns.md`)
+- **glossaire du CAESN** — Glossaire (`00_caesn/10_annexes/glossary.md`)
+- **table de maturité** — Annexe A — Table de maturité par chapitre (`02_artsn/07_annexes/a-table-de-maturite.md`)
+- **homologation** — Glossaire (`00_caesn/10_annexes/glossary.md`)
+- **cartographie cible** — Cartographie conceptuelle cible (`02_artsn/04_cartographie-cible/index.md`)
+- **résidence de la donnée** — Sécurité, contrôle d'accès et résidence de la donnée (`referentiel/chapitres/art-7.md`)
+- **niveau 1** — Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
+- **Annexe B** — Annexe B — Glossaire des patterns cités (`02_artsn/07_annexes/b-glossaire-patterns.md`)
+- **Index de l'ARTSN** — Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
+- **Matrice de lecture de l'ARTSN** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **Acronymes de l'ARTSN** — Acronymes et abréviations de l'ARTSN (niveau 3) (`02_artsn/acronyms.md`)
+- **Glossaire du CAESN (niveau 1)** — Glossaire (`00_caesn/10_annexes/glossary.md`)

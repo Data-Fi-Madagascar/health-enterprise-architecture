@@ -30,7 +30,7 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 | Action | Document | Comment |
 |--------|----------|---------|
 | Évaluer une initiative | [Registre des initiatives](00_caesn/06_portfolio/index.md) | Vérifier l'alignement avec les flux de valeur |
-| Lire une décision architecture | [Registre ADR](00_caesn/08_decisions/registre-decisions.md) | 9 ADR classées par statut |
+| Lire une décision architecture | [Registre ADR](01_cnisn/06_decisions/registre-decisions.md) | 9 ADR classées par statut |
 | Suivre la roadmap | [Feuille de route ARTSN](02_artsn/09_feuille-route/index.md) | 6 phases, jalons, budget 98 MGA |
 | Comprendre la gouvernance | [Processus gouvernance](00_caesn/07_governance/processus-gouvernance.md) | Workflows de validation |
 
@@ -57,7 +57,7 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 
 | Action | Document | Comment |
 |--------|----------|---------|
-| Décrire un besoin | [Template modification](00_caesn/08_decisions/template-modification.md) | Formulaire MOD-XXXX |
+| Décrire un besoin | [Template modification](01_cnisn/06_decisions/template-modification.md) | Formulaire MOD-XXXX |
 | Vérifier la maturité | [Matrice de maturité](02_artsn/07_annexes/a-table-de-maturite.md) | Évaluation par capabilité |
 | Comprendre l'interopérabilité | [CNISN capacités](01_cnisn/02_capacites/index.md) | 14 capacités, 7 familles |
 | Lire les cas d'usage | [VS-01](03_ptisn/08_annexes/cas-usage-reference-evacuation.md), [VS-02](03_ptisn/08_annexes/cas-usage-surveillance-epidemique.md), [VS-03](03_ptisn/08_annexes/cas-usage-couverture-sanitaire.md), [VS-04](03_ptisn/08_annexes/cas-usage-pilotage-systeme.md) | Exemples concrets par flux |
@@ -89,7 +89,7 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 | Créer un nouveau profil | [Règles d'utilisation](03_ptisn/01_regles-utilisation/index.md) | Template PT-XXXX |
 | Vérifier la conformité | [Conformité](02_artsn/06_gouvernance/conformite.md) | Dashboard de conformité |
 | Lister les composants | [Référentiel composants](referentiel/composants/) | Composants logiques |
-| Lire les standards | [STD-0001](00_caesn/09_standards/std-0001-interopabilite-fhir.md), [STD-0002](00_caesn/09_standards/std-0002-securite-chiffrement.md) | Normes obligatoires |
+| Lire les standards | [STD-0001](01_cnisn/05_standards/std-0001-interopabilite-fhir.md), [STD-0002](01_cnisn/05_standards/std-0002-securite-chiffrement.md) | Normes obligatoires |
 | Consulter le RBAC | [PT-10 RBAC](03_ptisn/03_profils/pt-10-confiance-authentification-autorisation.md) | 13 rôles, 10 politiques |
 
 ### Check-list d'implémentation d'un profil
@@ -141,7 +141,7 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 
 1. Lire la [vue d'ensemble](00_caesn/00_overview/index.md) — contexte stratégique Madagascar
 2. Consulter la [feuille de route](02_artsn/09_feuille-route/index.md) — phases de déploiement
-3. Vérifier les [standards obligatoires](00_caesn/09_standards/) — FHIR, sécurité, chiffrement
+3. Vérifier les [standards obligatoires](01_cnisn/05_standards/) — FHIR, sécurité, chiffrement
 
 ### Actions courantes
 
@@ -150,7 +150,7 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 | Évaluer la compatibilité | [Matrice d'alignement](03_ptisn/04_matrice-alignement/index.md) | Profils ↔ capacités |
 | Comprendre le budget | [Feuille de route](02_artsn/09_feuille-route/index.md) | 98 MGA, 6 phases |
 | Lister les initiatives | [Portefeuille](00_caesn/06_portfolio/index.md) | Portefeuille orienté valeur |
-| Vérifier la sécurité | [ATNA](00_caesn/08_decisions/adr-0008-atna.md), [Chiffrement](00_caesn/09_standards/std-0002-securite-chiffrement.md) | Exigences sécurité |
+| Vérifier la sécurité | [ATNA](01_cnisn/06_decisions/adr-0008-atna.md), [Chiffrement](01_cnisn/05_standards/std-0002-securite-chiffrement.md) | Exigences sécurité |
 | Consulter le glossaire | [Glossaire](00_caesn/10_annexes/glossary.md) | Termes transverses |
 
 ### Check-list d'évaluation d'un partenaire
@@ -168,7 +168,7 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 |-----------|--------|
 | README du dépôt | [`README.md`](./README.md) |
 | Matrice de lecture CAESN | [`00_caesn/reading-matrix.md`](./00_caesn/reading-matrix.md) |
-| Registre des ADR | [`00_caesn/08_decisions/registre-decisions.md`](./00_caesn/08_decisions/registre-decisions.md) |
+| Registre des ADR | [`01_cnisn/06_decisions/registre-decisions.md`](./01_cnisn/06_decisions/registre-decisions.md) |
 | Profils PTISN | [`03_ptisn/03_profils/pt-00-index.md`](./03_ptisn/03_profils/pt-00-index.md) |
 | Dictionnaire | [`02_artsn/05_dictionnaire/index.md`](./02_artsn/05_dictionnaire/index.md) |
 | Protocole de test | [`02_artsn/07_annexes/d-protocole-test-interopabilite.md`](./02_artsn/07_annexes/d-protocole-test-interopabilite.md) |

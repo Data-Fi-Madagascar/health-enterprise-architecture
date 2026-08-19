@@ -2,11 +2,12 @@
 title: "ART-9 — Garanties transactionnelles fortes"
 id: art-9
 domain: 02_artsn
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: [artsn, chapitres, art-9, niveau-3]
+related: ['cap-int-07']
 ---
 
 # ART-9 — Garanties transactionnelles fortes
@@ -23,10 +24,10 @@ tags: [artsn, chapitres, art-9, niveau-3]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-ART-9 — Garanties transactionnelles fortes constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : [`art-9`](../../referentiel/chapitres/art-9.md).
+ART-9 — Garanties transactionnelles fortes constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-9`.
 
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
@@ -35,15 +36,22 @@ ART-9 — Garanties transactionnelles fortes constitue un chapitre du **cadre no
 
 **Discipline existentielle.** Dès lors qu’une source échappe à la gouvernance directe de l’initiative (officines pharmaceutiques privées, gestionnaires de stocks régionaux, caisses de subventions) : elle seule permet d’empêcher les détournements de médicaments, de bloquer les marchés noirs et d’assurer la réconciliation à somme nulle de l’argent public, sans rompre le pipeline.
 
-- **Rattachement** : recouvre partiellement [CAP-07](../../referentiel/capabilites/cap-07.md) (protection financière).
+- **Rattachement** : recouvre partiellement CAP-07 (protection financière).
 - **Équation cible** : entrées − sorties = solde.
-- **Déduit selon** : [ENF-2](../../referentiel/exigences/enf-2.md) (grade comptable anti-fraude).
+- **Déduit selon** : ENF-2 (grade comptable anti-fraude).
 - **Statut : Proposition ouverte.**
 
-*Rattachement : [ENF-2](../../referentiel/exigences/enf-2.md), [CAP-07](../../referentiel/capabilites/cap-07.md) · [fiche](../../referentiel/chapitres/art-9.md)*
+*Rattachement : ENF-2, CAP-07 · fiche ART-9*
 
 <!-- END:GENERATED -->
 ## Liens
 
-- [Index des chapitres](./index.md)
-- [Exigences contextuelles — Partie III](../02_exigences-contextuelles/index.md)
+- Index des chapitres
+- Exigences contextuelles — Partie III
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **`art-9`** — Garanties transactionnelles fortes (`referentiel/chapitres/art-9.md`)
+- **Index des chapitres** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **Exigences contextuelles — Partie III** — Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

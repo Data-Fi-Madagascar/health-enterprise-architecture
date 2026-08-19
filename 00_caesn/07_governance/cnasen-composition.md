@@ -2,7 +2,7 @@
 title: "Composition et fonctionnement du Comité National"
 id: cnasen-composition
 domain: 07_governance
-version: "0.1.0"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: Secrétariat Général
@@ -23,7 +23,7 @@ tags: [gouvernance, cnasen, composition, fonctionnement]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 ## 1. Missions
 
@@ -134,8 +134,17 @@ Le Comité National d'Architecture Santé Numérique (CNASN) est l'instance coll
 
 ## Liens
 
-- [Gouvernance du cadre](./index.md)
-- [Bureau de Réalisation de la Valeur](./value-realization-office.md)
-- [RACI de gouvernance](./raci.md)
-- [Registre des ADR](../08_decisions/index.md)
-- [Registre des normes](../09_standards/index.md)
+- Gouvernance du cadre
+- Bureau de Réalisation de la Valeur
+- RACI de gouvernance
+- Registre des ADR
+- Registre des normes
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Gouvernance du cadre** — Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
+- **Bureau de Réalisation de la Valeur** — Bureau de Réalisation de la Valeur (`00_caesn/07_governance/value-realization-office.md`)
+- **RACI de gouvernance** — RACI de gouvernance et responsabilités (`00_caesn/07_governance/raci.md`)
+- **Registre des ADR** — Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
+- **Registre des normes** — Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)

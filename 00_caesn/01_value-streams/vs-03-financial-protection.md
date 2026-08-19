@@ -23,7 +23,7 @@ tags: [flux-de-valeur, value-stream]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 <!-- BEGIN:GENERATED mode=monographie source=referentiel/flux-valeur/vs-03.md -->
 <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
@@ -54,15 +54,15 @@ Ce flux couvre l’ensemble du cycle de la couverture santé universelle, depuis
 
 ## Capabilités mobilisées
 
-- [CAP-07](../../referentiel/capabilites/cap-07.md)
-- [CAP-08](../../referentiel/capabilites/cap-08.md)
-- [CAP-12](../../referentiel/capabilites/cap-12.md)
-- [CAP-13](../../referentiel/capabilites/cap-13.md)
-- [CAP-14](../../referentiel/capabilites/cap-14.md)
-- [CAP-15](../../referentiel/capabilites/cap-15.md)
-- [CAP-16](../../referentiel/capabilites/cap-16.md)
+- CAP-07
+- CAP-08
+- CAP-12
+- CAP-13
+- CAP-14
+- CAP-15
+- CAP-16
 
-*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [CAP-16](../../referentiel/capabilites/cap-16.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md) · [fiche](../../referentiel/flux-valeur/vs-03.md)*
+*Rattachement : CAP-07, CAP-08, CAP-12, CAP-13, CAP-14, CAP-15, CAP-16, PP-02, PP-03, PP-06 · fiche VS-03*
 
 <!-- END:GENERATED -->
 ## Étapes de valeur
@@ -96,7 +96,7 @@ Absence d'identifiant unique national, exclusions liées à la méconnaissance d
 
 Taux de couverture du registre, taux d'exclusion estimé
 
-*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md) · [fiche](../../referentiel/etapes-valeur/ev-15.md)*
+*Rattachement : CAP-07, CAP-14, CAP-15 · fiche EV-15*
 
 ### EV-16 — Définition des droits et du panier de soins
 
@@ -124,7 +124,7 @@ Méconnaissance des droits par les agents, panier de soins non communiqué
 
 Proportion de formations sanitaires informées des droits
 
-*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md) · [fiche](../../referentiel/etapes-valeur/ev-16.md)*
+*Rattachement : CAP-07 · fiche EV-16*
 
 ### EV-17 — Mobilisation des financements
 
@@ -152,7 +152,7 @@ Retards de décaissement, imprévisibilité chronique du financement
 
 Taux d'exécution budgétaire, part du budget santé allouée à la protection financière
 
-*Rattachement : [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-08](../../referentiel/capabilites/cap-08.md) · [fiche](../../referentiel/etapes-valeur/ev-17.md)*
+*Rattachement : CAP-12, CAP-08 · fiche EV-17*
 
 ### EV-18 — Prise en charge et exemption au point de service
 
@@ -180,7 +180,7 @@ Refus de soins, paiement informel, formation non approvisionnée en intrants
 
 Taux d'exemption appliqué, taux de refus de soins signalés
 
-*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-15](../../referentiel/capabilites/cap-15.md) · [fiche](../../referentiel/etapes-valeur/ev-18.md)*
+*Rattachement : CAP-07, CAP-15 · fiche EV-18*
 
 ### EV-19 — Facturation et traitement des demandes de remboursement
 
@@ -208,7 +208,7 @@ Facturation incorrecte, absence de justificatifs, risques de fraude
 
 Taux de factures rejetées, délai de validation des factures
 
-*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/etapes-valeur/ev-19.md)*
+*Rattachement : CAP-07, CAP-13 · fiche EV-19*
 
 ### EV-20 — Remboursement
 
@@ -236,7 +236,7 @@ Retards chroniques de remboursement, insuffisance de liquidités
 
 Délai moyen de remboursement, taux de remboursement effectif
 
-*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-12](../../referentiel/capabilites/cap-12.md) · [fiche](../../referentiel/etapes-valeur/ev-20.md)*
+*Rattachement : CAP-07, CAP-12 · fiche EV-20*
 
 ### EV-21 — Contrôle, audit et ajustement des mécanismes
 
@@ -264,7 +264,7 @@ Absence de contrôle structuré, données de remboursement non exploitées
 
 Proportion de contrôles réalisés, montant des anomalies détectées
 
-*Rattachement : [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-16](../../referentiel/capabilites/cap-16.md) · [fiche](../../referentiel/etapes-valeur/ev-21.md)*
+*Rattachement : CAP-08, CAP-13, CAP-16 · fiche EV-21*
 
 <!-- END:GENERATED -->
 ## Processus métier
@@ -280,8 +280,8 @@ Constituer la base de la couverture santé universelle : identification et enreg
 
 #### Étapes couvertes
 
-- [EV-15 — Identification et enregistrement des bénéficiaires](../../referentiel/etapes-valeur/ev-15.md)
-- [EV-16 — Définition des droits et du panier de soins](../../referentiel/etapes-valeur/ev-16.md)
+- EV-15 — Identification et enregistrement des bénéficiaires
+- EV-16 — Définition des droits et du panier de soins
 
 #### Acteurs
 
@@ -291,7 +291,7 @@ Districts sanitaires, communes, fokontany, gestionnaires du registre, Ministère
 
 Taux de couverture du registre, taux d'exclusion estimé, proportion de formations sanitaires informées des droits
 
-*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [CAP-16](../../referentiel/capabilites/cap-16.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md), [CMP-03](../../referentiel/composants/cmp-03.md), [CMP-05](../../referentiel/composants/cmp-05.md), [CMP-09](../../referentiel/composants/cmp-09.md), [CMP-10](../../referentiel/composants/cmp-10.md), [CMP-16](../../referentiel/composants/cmp-16.md) · [fiche](../../referentiel/processus/prc-07.md)*
+*Rattachement : CAP-07, CAP-08, CAP-12, CAP-13, CAP-14, CAP-15, CAP-16, PP-02, PP-03, PP-06, CMP-03, CMP-05, CMP-09, CMP-10, CMP-16 · fiche PRC-07*
 
 ### PRC-08 — Financement et exemption au point de service
 
@@ -301,8 +301,8 @@ Garantir la disponibilité des fonds et l'accès effectif aux soins sans paiemen
 
 #### Étapes couvertes
 
-- [EV-17 — Mobilisation des financements](../../referentiel/etapes-valeur/ev-17.md)
-- [EV-18 — Prise en charge et exemption au point de service](../../referentiel/etapes-valeur/ev-18.md)
+- EV-17 — Mobilisation des financements
+- EV-18 — Prise en charge et exemption au point de service
 
 #### Acteurs
 
@@ -312,7 +312,7 @@ Ministère de l'Économie et des Finances, Ministère de la Santé, partenaires,
 
 Taux d'exécution budgétaire, part du budget santé allouée à la protection financière, taux d'exemption appliqué, taux de refus de soins signalés
 
-*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [CAP-16](../../referentiel/capabilites/cap-16.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md), [CMP-03](../../referentiel/composants/cmp-03.md), [CMP-05](../../referentiel/composants/cmp-05.md), [CMP-09](../../referentiel/composants/cmp-09.md), [CMP-10](../../referentiel/composants/cmp-10.md), [CMP-16](../../referentiel/composants/cmp-16.md) · [fiche](../../referentiel/processus/prc-08.md)*
+*Rattachement : CAP-07, CAP-08, CAP-12, CAP-13, CAP-14, CAP-15, CAP-16, PP-02, PP-03, PP-06, CMP-03, CMP-05, CMP-09, CMP-10, CMP-16 · fiche PRC-08*
 
 ### PRC-09 — Remboursement et régulation des mécanismes
 
@@ -322,9 +322,9 @@ Boucler le cycle financier de la protection : facturation et traitement des dema
 
 #### Étapes couvertes
 
-- [EV-19 — Facturation et traitement des demandes de remboursement](../../referentiel/etapes-valeur/ev-19.md)
-- [EV-20 — Remboursement](../../referentiel/etapes-valeur/ev-20.md)
-- [EV-21 — Contrôle, audit et ajustement des mécanismes](../../referentiel/etapes-valeur/ev-21.md)
+- EV-19 — Facturation et traitement des demandes de remboursement
+- EV-20 — Remboursement
+- EV-21 — Contrôle, audit et ajustement des mécanismes
 
 #### Acteurs
 
@@ -334,10 +334,15 @@ Gestionnaire de la formation sanitaire, vérificateur, fonds de remboursement, f
 
 Taux de factures rejetées, délai de validation des factures, délai moyen de remboursement, taux de remboursement effectif, proportion de contrôles réalisés, montant des anomalies détectées
 
-*Rattachement : [CAP-07](../../referentiel/capabilites/cap-07.md), [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [CAP-16](../../referentiel/capabilites/cap-16.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md), [CMP-03](../../referentiel/composants/cmp-03.md), [CMP-12](../../referentiel/composants/cmp-12.md) · [fiche](../../referentiel/processus/prc-09.md)*
+*Rattachement : CAP-07, CAP-08, CAP-12, CAP-13, CAP-14, CAP-15, CAP-16, PP-02, PP-03, PP-06, CMP-03, CMP-12 · fiche PRC-09*
 
 <!-- END:GENERATED -->
 ## Liens
 
 - [Flux de valeur](./index.md)
-- [Capabilités](../03_capabilities/index.md)
+- Capabilités
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)

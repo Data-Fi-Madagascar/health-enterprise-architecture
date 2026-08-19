@@ -2,7 +2,7 @@
 title: Domaines de données prioritaires
 id: data-domains
 domain: 04_data
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Cellule du Système d'Information Sanitaire
@@ -23,7 +23,7 @@ tags: [données, domaines, gouvernance]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 Le système d'information sanitaire national couvre plusieurs domaines de données correspondant aux différentes dimensions de la valeur produite et aux capabilités nécessaires à son exécution.
 
@@ -62,6 +62,13 @@ Chaque domaine de données doit disposer de :
 
 ## Liens
 
-- [Référentiels nationaux](./referentials.md)
-- [Flux de valeur](../01_value-streams/index.md)
-- [Gouvernance des données](./governance.md)
+- Référentiels nationaux
+- Flux de valeur
+- Gouvernance des données
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Référentiels nationaux** — Référentiels nationaux (`00_caesn/04_data/referentials.md`)
+- **Flux de valeur** — Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)
+- **Gouvernance des données** — Gouvernance, qualité et protection des données (`00_caesn/04_data/governance.md`)

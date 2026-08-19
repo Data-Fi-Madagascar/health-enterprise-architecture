@@ -2,11 +2,12 @@
 title: "ART-8a — Orchestration de processus borné"
 id: art-8a
 domain: 02_artsn
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: [artsn, chapitres, art-8a, niveau-3]
+related: ['cap-int-03']
 ---
 
 # ART-8a — Orchestration de processus borné
@@ -23,10 +24,10 @@ tags: [artsn, chapitres, art-8a, niveau-3]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-ART-8a — Orchestration de processus borné constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : [`art-8a`](../../referentiel/chapitres/art-8a.md).
+ART-8a — Orchestration de processus borné constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-8a`.
 
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
@@ -35,15 +36,22 @@ ART-8a — Orchestration de processus borné constitue un chapitre du **cadre no
 
 **Discipline existentielle.** Dès lors qu’une source échappe à la gouvernance directe de l’initiative (établissements hospitaliers autonomes, cliniques privées, rupture de liaison réseau d’un des nœuds) : elle seule permet d’assurer la continuité et la traçabilité complète du parcours patient sans bloquer les systèmes locaux et sans rompre le pipeline.
 
-- **Rattachement** : [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md).
+- **Rattachement** : CAP-13, CAP-14.
 - **Pattern cible** : Saga / Process Manager (transactions de compensation).
-- **Déduit selon** : [ENF-5](../../referentiel/exigences/enf-5.md) (processus complexes).
+- **Déduit selon** : ENF-5 (processus complexes).
 - **Statut : Provisoire.**
 
-*Rattachement : [ENF-5](../../referentiel/exigences/enf-5.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md) · [fiche](../../referentiel/chapitres/art-8a.md)*
+*Rattachement : ENF-5, CAP-13, CAP-14 · fiche ART-8A*
 
 <!-- END:GENERATED -->
 ## Liens
 
-- [Index des chapitres](./index.md)
-- [Exigences contextuelles — Partie III](../02_exigences-contextuelles/index.md)
+- Index des chapitres
+- Exigences contextuelles — Partie III
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **`art-8a`** — Orchestration de processus borné (`referentiel/chapitres/art-8a.md`)
+- **Index des chapitres** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **Exigences contextuelles — Partie III** — Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

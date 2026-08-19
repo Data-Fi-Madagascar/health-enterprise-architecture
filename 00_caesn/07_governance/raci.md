@@ -2,7 +2,7 @@
 title: RACI de gouvernance et responsabilités
 id: governance-raci
 domain: 07_governance
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Secrétariat Général
@@ -23,7 +23,7 @@ tags: [gouvernance, raci, responsabilités, redevabilité]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 ## Responsabilités principales des acteurs
 
@@ -67,6 +67,13 @@ R = Responsable d'exécution, A = Approbateur (redevable), C = Consulté, I = In
 
 ## Liens
 
-- [Gouvernance](./index.md)
-- [Bureau de Réalisation de la Valeur](./value-realization-office.md)
-- [Portefeuille](../06_portfolio/index.md)
+- Gouvernance
+- Bureau de Réalisation de la Valeur
+- Portefeuille
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Gouvernance** — Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
+- **Bureau de Réalisation de la Valeur** — Bureau de Réalisation de la Valeur (`00_caesn/07_governance/value-realization-office.md`)
+- **Portefeuille** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)

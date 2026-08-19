@@ -2,7 +2,7 @@
 title: Guide de lecture de l'ARTSN (niveau 3)
 id: artsn-reading-guide
 domain: 02_artsn
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
@@ -15,17 +15,7 @@ tags: [artsn, lecture, niveau-3, guide]
 
 **Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
 
-| Profil | Lecture |
-|--------|---------|
-| Décideurs institutionnels | ● |
-| Directions métier / programmes | ◐ |
-| DEPSI / équipes techniques | ● |
-| SIS / données / suivi-évaluation | ◐ |
-| Partenaires techniques et financiers | ● |
-
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](reading-matrix.md).
-
----
+Ce document s'adresse prioritairement aux décideurs institutionnels, aux équipes DEPSI et techniques, et aux partenaires techniques et financiers. Les directions métier et programmes ainsi que les équipes SIS, données et suivi-évaluation y trouveront un complément utile. Pour une vue d'ensemble des niveaux de pertinence, consultez la matrice de lecture.
 
 ## 1. Qu'est-ce que l'ARTSN ?
 
@@ -40,23 +30,9 @@ Niveau 3 (ARTSN)  →  Patterns architecturaux, standards  ← CE DOCUMENT
 Niveau 4 (PTISN)  →  Services, profils, produits candidats
 ```
 
----
-
 ## 2. Structure de l'ARTSN
 
-L'ARTSN est organisée en **6 parties** + annexes :
-
-| Partie | Contenu | Qui la lit |
-|--------|---------|------------|
-| [Fondations](00_fondations/index.md) | 6 fondations invariantes (F.1-F.6) | Tous |
-| [Flux de valeur](01_flux-de-valeur/index.md) | VS-01 à VS-04 déclinés en exigences techniques | Architectes, intégrateurs |
-| [Exigences contextuelles](02_exigences-contextuelles/index.md) | ENF-1 à ENF-5 | DEPSI, architectes |
-| [Chapitres et patterns](03_chapitres/) | ART-0 à ART-11 (règles d'or et contrats) | Développeurs, intégrateurs |
-| [Cartographie cible](04_cartographie-cible/index.md) | 6 couches + 2 axes verticaux | Architectes |
-| [Dictionnaire de données](05_dictionnaire/index.md) | Sémantique universelle interministérielle | SIS, données |
-| [Gouvernance](06_gouvernance/index.md) | Cycle de vie, versionnement, revue | Décideurs, gouvernance |
-
----
+L'ARTSN est organisée en **6 parties** + annexes. Le tableau suivant présente chaque partie, son contenu et les profils de lecteurs concernés : la Fondations recense les 6 fondations invariantes F.1 à F.6 lues par tous les profils ; les Flux de valeur déclinent VS-01 à VS-04 en exigences techniques, principalement pour architectes et intégrateurs ; les Exigences contextuelles couvrent ENF-1 à ENF-5 pour les équipes DEPSI et architectes ; les Chapitres et patterns articulent ART-0 à ART-11 sous forme de règles d'or et contrats pour développeurs et intégrateurs ; la Cartographie cible présente 6 couches et 2 axes verticaux, principalement pour architectes ; le Dictionnaire de données assure la sémantique universelle interministérielle pour les équipes données ; et la Gouvernance organise le cycle de vie, le versionnement et la revue pour décideurs et gouvernance.
 
 ## 3. Parcours de lecture par profil
 
@@ -64,94 +40,56 @@ L'ARTSN est organisée en **6 parties** + annexes :
 
 **Objectif :** Comprendre l'architecture technique cible et les enjeux d'homologation.
 
-1. [Vue d'ensemble](index.md) — Rôle et positionnement
-2. [Fondations](00_fondations/index.md) — Les 6 obligations fondamentales
-3. [Gouvernance](06_gouvernance/index.md) — Processus de décision
-4. [Table de maturité](07_annexes/a-table-de-maturite.md) — Statuts des chapitres
+Le décideur institutionnel commence par la Vue d'ensemble pour saisir le rôle et le positionnement de l'ARTSN, poursuit avec les Fondations afin de comprendre les 6 obligations fondamentales, consulte la Gouvernance pour appréhender le processus de décision, et termine par la Table de maturité qui présente les statuts des chapitres.
 
 ### 3.2 Architecte / intégrateur
 
 **Objectif :** Concevoir une solution conforme à l'architecture de référence.
 
-1. [Fondations](00_fondations/index.md) — Contraintes invariantes
-2. [Cartographie cible](04_cartographie-cible/index.md) — Vue en couches
-3. [Chapitres et patterns](03_chapitres/) — Patterns applicables
-4. [Exigences contextuelles](02_exigences-contextuelles/index.md) — Contraintes nationales
-5. [Flux de valeur](01_flux-de-valeur/index.md) — Exigences par flux
+L'architecte ou l'intégrateur parcourt d'abord les Fondations pour identifier les contraintes invariantes, consulte la Cartographie cible pour disposer de la vue en couches, explore les Chapitres et patterns pour les patterns applicables, se réfère aux Exigences contextuelles pour les contraintes nationales, et achève par les Flux de valeur pour les exigences spécifiques par flux.
 
 ### 3.3 Développeur / intégrateur
 
 **Objectif :** Implémenter les interfaces selon les patterns validés.
 
-1. [Fondations](00_fondations/index.md) — §1 Résilience, §2 Souveraineté
-2. [Chapitres et patterns](03_chapitres/) — ART-0 à ART-11
-3. [Dictionnaire de données](05_dictionnaire/index.md) — Sémantique
-4. [PTISN (niveau 4)](../03_ptisn/index.md) — Standards et profils
+Le développeur ou l'intégrateur commence par les Fondations, en ciblant spécifiquement la section Résilience et la section Souveraineté, poursuit avec les Chapitres et patterns de ART-0 à ART-11, consulte le Dictionnaire de données pour la sémantique, et se réfère au PTISN (niveau 4) pour les standards et profils d'implémentation.
 
 ### 3.4 Partenaire technique / fournisseur
 
 **Objectif :** Évaluer la conformité d'un produit ou service.
 
-1. [Fondations](00_fondations/index.md) — §3 Éradication des silos, §4 Homologation
-2. [Chapitres et patterns](03_chapitres/) — Contrats applicables
-3. [Gouvernance](06_gouvernance/index.md) — Critères d'homologation
-4. [Table de maturité](07_annexes/a-table-de-maturite.md) — Conditions de promotion
-
----
+Le partenaire technique ou fournisseur examine les Fondations, en ciblant la section Éradication des silos et la section Homologation, analyse les Chapitres et patterns pour les contrats applicables, se réfère à la Gouvernance pour les critères d'homologation, et termine par la Table de maturité pour les conditions de promotion des chapitres.
 
 ## 4. Les 6 fondations invariantes
 
-| Fondation | Statut | Objet |
-|-----------|--------|-------|
-| F.1 — Résilience géographique | Stable | Immuabilité, idempotence, déduplication |
-| F.2 — Souveraineté intersectorielle | Stable | Contrats d'égal à égal, versionnement sémantique |
-| F.3 — Éradication des silos | Stable | Homologation obligatoire, alignement CAESN |
-| F.4 — Homologation obligatoire | Stable | Processus de validation des solutions |
-| F.5 — Protection et minimisation | Provisoire | Minimisation des données, résidence |
-| F.6 — Observabilité | Provisoire | Traçabilité de bout en bout |
-
----
+Le tableau suivant résume les fondations de l'ARTSN. F.1 Résilience géographique, F.2 Souveraineté intersectorielle, F.3 Éradication des silos et F.4 Homologation obligatoire portent un statut Stable, tandis que F.5 Protection et minimisation et F.6 Observabilité restent à ce stade au statut Provisoire.
 
 ## 5. Les chapitres et patterns de référence
 
-| Chapitre | Nom | Patterns couverts |
-|----------|-----|-------------------|
-| ART-0 | Accords de partage | Contrats interinstitutionnels |
-| ART-1 | Intégration et ingestion | Connecteurs, adapters |
-| ART-2 | Médiation et normalisation | Médiateur, transformation |
-| ART-3 | Historisation événementielle | Event sourcing, CQRS |
-| ART-4 | Référentiels de métadonnées | Registres, catalogues |
-| ART-4a | Résolution d'identité | Client Registry, PIX |
-| ART-4b | Bases d'autorisation | Consentement, RBAC |
-| ART-4c | Éligibilité et couverture | Benefits Registry |
-| ART-4d | Référentiel géospatial | Facility Registry |
-| ART-5 | Cohérence et qualité | Réconciliation, validation |
-| ART-6 | Analytique et restitution | Tableaux de bord, indicateurs |
-| ART-7 | Sécurité et contrôle d'accès | Authentification, autorisation |
-| ART-8 | Orchestration de processus | Workflow, BPM |
-| ART-8a | Orchestration bornée | Processus limités |
-| ART-8b | Modélisation en graphe | Flux relationnels |
-| ART-8c | Agrégation par lot | Batch processing |
-| ART-8d | Chorégraphie inter-institutionnelle | Échange décentralisé |
-| ART-9 | Garanties transactionnelles | ACID, sagas |
-| ART-10 | Logistique | Supply chain |
-| ART-11 | Coordination intersectorielle | One Health |
-
----
+Le tableau suivant recense les chapitres ART de ART-0 à ART-11 avec les patterns couverts : ART-0 couvre les accords de partage et contrats interinstitutionnels ; ART-1 traite de l'intégration et ingestion via connecteurs et adapters ; ART-2 aborde la médiation et normalisation avec médiateur et transformation ; ART-3 couvre l'historisation événementielle par event sourcing et CQRS ; ART-4 porte sur les référentiels de métadonnées sous forme de registres et catalogues ; ART-4a concerne la résolution d'identité via Client Registry et PIX ; ART-4b traite des bases d'autorisation par consentement et RBAC ; ART-4c couvre l'éligibilité et couverture par Benefits Registry ; ART-4d porte sur le référentiel géospatial par Facility Registry ; ART-5 aborde la cohérence et qualité par réconciliation et validation ; ART-6 traite de l'analytique et restitution avec tableaux de bord et indicateurs ; ART-7 porte sur la sécurité et contrôle d'accès par authentification et autorisation ; ART-8 couvre l'orchestration de processus par workflow et BPM ; ART-8a concerne l'orchestration bornée pour processus limités ; ART-8b traite de la modélisation en graphe pour flux relationnels ; ART-8c couvre l'agrégation par lot ; ART-8d porte sur la chorégraphie inter-institutionnelle pour l'échange décentralisé ; ART-9 aborde les garanties transactionnelles par ACID et sagas ; ART-10 traite de la logistique et supply chain ; ART-11 porte sur la coordination intersectorielle dans le cadre du One Health.
 
 ## 6. Liens vers les autres niveaux
 
-| Niveau | Document | Lien |
-|--------|----------|------|
-| 1 — CAESN | Cadre d'Architecture d'Entreprise | [../00_caesn/00_overview/index.md](../00_caesn/00_overview/index.md) |
-| 2 — CNISN | Cadre National d'Interopérabilité | [../01_cnisn/index.md](../01_cnisn/index.md) |
-| 4 — PTISN | Profils techniques d'implémentation | [../03_ptisn/index.md](../03_ptisn/index.md) |
-
----
+La CNISN (niveau 2) définit le Cadre National d'Interopérabilité. Le CAESN (niveau 1) établit le Cadre d'Architecture d'Entreprise. Le PTISN (niveau 4) fournit les profils techniques d'implémentation.
 
 ## 7. Documents complémentaires
 
-- [Matrice de lecture](reading-matrix.md) — Vue croisée parties × lecteurs
-- [Glossaire](glossary.md) — Définitions des termes techniques
-- [Acronymes](acronyms.md) — Liste des acronymes
-- [Annexes](07_annexes/) — Table de maturité, glossaire des patterns, renvoi CAESN
+La Matrice de lecture propose une vue croisée parties et lecteurs. Le Glossaire fournit les définitions des termes techniques. Les Acronymes listent l'ensemble des acronymes. Les Annexes comprennent la table de maturité, le glossaire des patterns et le renvoi au CAESN.
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **Fondations** — Fondations de l'ARTSN (`02_artsn/00_fondations/index.md`)
+- **Flux de valeur** — Flux de valeur (`02_artsn/01_flux-de-valeur/index.md`)
+- **Exigences contextuelles** — Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
+- **Cartographie cible** — Cartographie conceptuelle cible (`02_artsn/04_cartographie-cible/index.md`)
+- **Dictionnaire de données** — Dictionnaire de données fonctionnelles (`02_artsn/05_dictionnaire/index.md`)
+- **Gouvernance** — Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)
+- **Vue d'ensemble** — Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
+- **Table de maturité** — Annexe A — Table de maturité par chapitre (`02_artsn/07_annexes/a-table-de-maturite.md`)
+- **PTISN (niveau 4)** — Profils techniques d'implémentation de la Santé Numérique (PTISN) (`03_ptisn/index.md`)
+- **CNISN (niveau 2)** — Cadre National d'Interopérabilité de la Santé Numérique (CNISN) (`01_cnisn/index.md`)
+- **CAESN (niveau 1)** — Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
+- **Matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **Glossaire** — Glossaire de l'ARTSN (niveau 3) (`02_artsn/glossary.md`)
+- **Acronymes** — Acronymes et abréviations de l'ARTSN (niveau 3) (`02_artsn/acronyms.md`)

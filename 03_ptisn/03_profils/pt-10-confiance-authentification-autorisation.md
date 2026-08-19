@@ -2,7 +2,7 @@
 title: PT-10 — Profil technique national
 id: ptisn-pt-10-confiance-authentification-autorisation
 domain: 03_ptisn
-version: "0.4"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
@@ -177,6 +177,6 @@ En cas d'urgence vitale documentée (code U3 ou U4), les restrictions RBAC sont 
 
 ------------------------------------------------------------------------
 
-*Rattachement : [CMP-15](../../referentiel/composants/cmp-15.md), [CAP-INT-08](../../referentiel/capacites/cap-int-08.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-4B](../../referentiel/chapitres/art-4b.md), [ART-7](../../referentiel/chapitres/art-7.md), [ART-9](../../referentiel/chapitres/art-9.md) · [fiche](../../referentiel/profils/pt-10.md)*
+*Rattachement : CMP-15, CAP-INT-08, ART-0, ART-4B, ART-7, ART-9 · fiche PT-10*
 
 <!-- END:GENERATED -->

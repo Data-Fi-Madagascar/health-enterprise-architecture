@@ -23,7 +23,7 @@ tags: [capabilités, métier, catalogue]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
 Chaque capabilité vit dans le référentiel : `referentiel/capabilites/cap-XX.md` (rôle, flux de valeur associés).
@@ -41,9 +41,9 @@ La capabilité garantit que chaque citoyen accède à des services de santé ess
 
 #### Flux de valeur
 
-- [VS-01](../../referentiel/flux-valeur/vs-01.md)
+- VS-01
 
-*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md) · [fiche](../../referentiel/capabilites/cap-01.md)*
+*Rattachement : VS-01 · fiche CAP-01*
 
 ### CAP-02 — Gestion du parcours patient, référence et contre-référence
 
@@ -62,9 +62,9 @@ La capabilité organise le parcours du patient entre les points de service : ori
 
 #### Flux de valeur
 
-- [VS-01](../../referentiel/flux-valeur/vs-01.md)
+- VS-01
 
-*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [CAP-INT-03](../../referentiel/capacites/cap-int-03.md), [CAP-INT-01](../../referentiel/capacites/cap-int-01.md), [CAP-INT-13](../../referentiel/capacites/cap-int-13.md) · [fiche](../../referentiel/capabilites/cap-02.md)*
+*Rattachement : VS-01, CAP-INT-03, CAP-INT-01, CAP-INT-13 · fiche CAP-02*
 
 ### CAP-03 — Qualité, sécurité des soins et amélioration continue
 
@@ -74,10 +74,10 @@ La capabilité mesure, améliore et sécurise la qualité des services de santé
 
 #### Flux de valeur
 
-- [VS-01](../../referentiel/flux-valeur/vs-01.md)
-- [VS-04](../../referentiel/flux-valeur/vs-04.md)
+- VS-01
+- VS-04
 
-*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/capabilites/cap-03.md)*
+*Rattachement : VS-01, VS-04 · fiche CAP-03*
 
 ### CAP-04 — Santé communautaire et engagement des communautés
 
@@ -87,10 +87,10 @@ La capabilité intègre les agents communautaires, les communautés et les patie
 
 #### Flux de valeur
 
-- [VS-01](../../referentiel/flux-valeur/vs-01.md)
-- [VS-02](../../referentiel/flux-valeur/vs-02.md)
+- VS-01
+- VS-02
 
-*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md) · [fiche](../../referentiel/capabilites/cap-04.md)*
+*Rattachement : VS-01, VS-02 · fiche CAP-04*
 
 ### CAP-05 — Surveillance épidémiologique, alerte, investigation et riposte
 
@@ -106,14 +106,14 @@ La capabilité inclut désormais la **dimension géospatiale** :
 
 #### Flux de valeur
 
-- [VS-02](../../referentiel/flux-valeur/vs-02.md)
+- VS-02
 
 #### Rattachement ARTSN
 
 - **ART-4d** — Référentiel géospatial et d'exploitation partagé
 - **PT-05** — Profil technique géolocalisation
 
-*Rattachement : [VS-02](../../referentiel/flux-valeur/vs-02.md) · [fiche](../../referentiel/capabilites/cap-05.md)*
+*Rattachement : VS-02 · fiche CAP-05*
 
 ### CAP-06 — Vaccination, prévention et promotion de la santé
 
@@ -123,9 +123,9 @@ La capabilité prévient les maladies et promeut les comportements favorables à
 
 #### Flux de valeur
 
-- [VS-02](../../referentiel/flux-valeur/vs-02.md)
+- VS-02
 
-*Rattachement : [VS-02](../../referentiel/flux-valeur/vs-02.md) · [fiche](../../referentiel/capabilites/cap-06.md)*
+*Rattachement : VS-02 · fiche CAP-06*
 
 ### CAP-07 — Protection financière, couverture santé universelle
 
@@ -135,9 +135,9 @@ La capabilité protège les ménages contre le risque financier lié aux soins :
 
 #### Flux de valeur
 
-- [VS-03](../../referentiel/flux-valeur/vs-03.md)
+- VS-03
 
-*Rattachement : [VS-03](../../referentiel/flux-valeur/vs-03.md) · [fiche](../../referentiel/capabilites/cap-07.md)*
+*Rattachement : VS-03 · fiche CAP-07*
 
 ### CAP-08 — Gouvernance institutionnelle, planification, coordination et redevabilité
 
@@ -147,12 +147,16 @@ La capabilité assure la gouvernance du système de santé : planification, coor
 
 #### Flux de valeur
 
-- [VS-03](../../referentiel/flux-valeur/vs-03.md)
-- [VS-04](../../referentiel/flux-valeur/vs-04.md)
+- VS-03
+- VS-04
 
-*Rattachement : [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/capabilites/cap-08.md)*
+*Rattachement : VS-03, VS-04 · fiche CAP-08*
 
 <!-- END:GENERATED -->
 ## Liens
 
 - [Capabilités](./index.md)
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)

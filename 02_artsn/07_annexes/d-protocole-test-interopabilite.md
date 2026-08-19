@@ -2,7 +2,7 @@
 title: "Annexe D — Protocole de test d'interopérabilité"
 id: artsn-protocole-test
 domain: 02_artsn
-version: "0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
@@ -15,23 +15,11 @@ tags: [artsn, annexe, test, interopérabilité, validation, niveau-3]
 
 **Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
 
-| Profil | Lecture |
-|--------|---------|
-| Décideurs institutionnels | ○ |
-| Directions métier / programmes | ◐ |
-| DEPSI / équipes techniques | ● |
-| SIS / données / suivi-évaluation | ◐ |
-| Partenaires techniques et financiers | ● |
-
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle.
-
----
+La lecture de ce document est **ponctuelle** pour les décideurs institutionnels, **complémentaire** pour les directions métier et programmes ainsi que pour les équipes SIS, données et suivi-évaluation, et **prioritaire** pour l'équipe DEPSI et ses équipes techniques ainsi que pour les partenaires techniques et financiers. Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle.
 
 ## Objectif
 
 Ce document définit le protocole de validation de l'interopérabilité entre les profils techniques nationaux (PTISN). Il fournit les scénarios de test, les critères de succès et les procédures de certification pour garantir que les briques techniques composent correctement entre elles.
-
----
 
 ## 1. Principes de test
 
@@ -46,13 +34,7 @@ Ce document définit le protocole de validation de l'interopérabilité entre le
 
 ### 1.2 Règles de test
 
-1. **Indépendance** : chaque test est exécuté de manière isolée, sans dépendance aux résultats des tests précédents
-2. **Reproductibilité** : les tests doivent produire le même résultat quel que soit l'environnement
-3. **Traçabilité** : chaque test est identifié par un code unique et tracer ses résultats
-4. **Automatisation** : les tests N1 et N2 doivent pouvoir être automatisés via des scripts
-5. **Régression** : tout correctif de bug doit être accompagné d'un test de régression
-
----
+Chaque test est exécuté de manière isolée, sans dépendance aux résultats des tests précédents, ce qui garantit l'**indépendance**. Les tests doivent être **reproductibles**, c'est-à-dire produire le même résultat quel que soit l'environnement. Chaque test est identifié par un code unique et trace ses résultats, assurant ainsi la **traçabilité**. Les tests N1 et N2 doivent pouvoir être **automatisés** via des scripts. Enfin, tout correctif de bug doit être accompagné d'un test de **régression**.
 
 ## 2. Scénarios de test par profil
 
@@ -112,8 +94,6 @@ Ce document définit le protocole de validation de l'interopérabilité entre le
 | PT14-T03 | Échange transfrontalier | IPS vers pays partenaire | Accusé de réception pays | Protocole bilingue (FR/EN) |
 | PT14-T04 | Rejet IPS non conforme | IPS avec sections manquantes | Erreur de validation | Liste des sections manquantes |
 
----
-
 ## 3. Scénarios de test bout-en-bout (use cases)
 
 ### 3.1 VS-01 — Référence / Évacuation
@@ -151,8 +131,6 @@ Ce document définit le protocole de validation de l'interopérabilité entre le
 | VS04-E2E-02 | Alerte performance | 1. Indicateur < seuil → 2. Alerte direction → 3. Validation | Alerte < 1h après dérive |
 | VS04-E2E-03 | Rapport annuel | 1. Consolidation annuelle → 2. Production rapport → 3. Publication | Rapport conforme aux standards |
 
----
-
 ## 4. Environnement de test
 
 ### 4.1 Configuration minimale
@@ -184,8 +162,6 @@ Ce document définit le protocole de validation de l'interopérabilité entre le
 | **Schematron** | Validation de profils FHIR |
 | **Certif** (HL7) | Validation de conformité IPS |
 
----
-
 ## 5. Critères de certification
 
 ### 5.1 Niveaux de certification
@@ -198,13 +174,7 @@ Ce document définit le protocole de validation de l'interopérabilité entre le
 
 ### 5.2 Procédure de certification
 
-```
-1. Candidat soumet demande + preuves de test
-2. Vérification indépendante (labo de test accrédité)
-3. Comité de validation examine les résultats
-4. Délivrance du label (valable 12 mois)
-5. Audit annuel de renouvellement
-```
+La procédure de certification suit cinq étapes : le candidat soumet une demande accompagnée de preuves de test, puis une vérification indépendante est réalisée par un laboratoire de test accrédité, le comité de validation examine les résultats, le label est délivré (valable 12 mois), et enfin un audit annuel de renouvellement est organisé.
 
 ### 5.3 Non-conformités bloquantes
 
@@ -213,8 +183,6 @@ Ce document définit le protocole de validation de l'interopérabilité entre le
 | **Bloquante** | Perte de données, faille sécurité | Rejet immédiat, correction obligatoire |
 | **Majeure** | Temps de réponse > SLA, mapping erroné | Correction sous 30 jours |
 | **Mineure** | Message d'erreur non explicite | Correction sous 90 jours |
-
----
 
 ## 6. Plan de test par phase de déploiement
 
@@ -229,11 +197,13 @@ Ce document définit le protocole de validation de l'interopérabilité entre le
 | **Validation bout-en-bout** | Tous | N3 | T2 2028 |
 | **Tests de charge** | Tous | N4 | T3 2028 |
 
----
-
 ## Liens
 
-- [ART-7 — Sécurité, contrôle d'accès et résidence](../../referentiel/chapitres/art-7.md)
-- [PT-10 — Confiance et autorisation](../../03_ptisn/03_profils/pt-10-confiance-authentification-autorisation.md)
-- [Feuille de route](../09_feuille-route/index.md)
-- [Cartographie cible](../04_cartographie-cible/index.md)
+Les liens utiles pour approfondir ce document sont les suivants : le chapitre ART-7 — Sécurité, contrôle d'accès et résidence, le profil PT-10 — Confiance et autorisation, ainsi que la Feuille de route et la Cartographie cible.
+
+## Références
+
+- **ART-7 — Sécurité, contrôle d'accès et résidence** — Sécurité, contrôle d'accès et résidence de la donnée (`referentiel/chapitres/art-7.md`)
+- **PT-10 — Confiance et autorisation** — Profil technique national (`03_ptisn/03_profils/pt-10-confiance-authentification-autorisation.md`)
+- **Feuille de route** — Feuille de route de déploiement progressif de l'ARTSN (`02_artsn/09_feuille-route/index.md`)
+- **Cartographie cible** — Cartographie conceptuelle cible (`02_artsn/04_cartographie-cible/index.md`)

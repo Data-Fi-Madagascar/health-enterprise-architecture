@@ -2,7 +2,7 @@
 title: Glossaire
 id: annexe-glossary
 domain: 10_annexes
-version: "0.1.0"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: Bureau de Réalisation de la Valeur
@@ -23,7 +23,7 @@ tags: [glossaire, terminologie]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ● |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 ## Termes d'architecture d'entreprise
 
@@ -91,7 +91,7 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 
 ## Termes de gouvernance
 
-**Architecture Decision Record (ADR)** — Document formalisant une décision architecturale importante : contexte, options considérées, décision retenue, conséquences. Chaque ADR reçoit un numéro unique (ADR-0001, ADR-0002…) et un statut (proposé, accepté, refusé, déprécié). Voir le [registre des décisions](../08_decisions/registre-decisions.md).
+**Architecture Decision Record (ADR)** — Document formalisant une décision architecturale importante : contexte, options considérées, décision retenue, conséquences. Chaque ADR reçoit un numéro unique (ADR-0001, ADR-0002…) et un statut (proposé, accepté, refusé, déprécié). Voir le registre des décisions.
 
 **Autorité des données** — Institution ou rôle responsable de la définition des règles de gouvernance des données, de leur application et du contrôle de conformité.
 
@@ -153,6 +153,14 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 
 ## Liens
 
-- [Annexes](./index.md)
-- [Matrice de lecture](../reading-matrix.md)
-- [Acronymes](./acronyms.md)
+- Annexes
+- Matrice de lecture
+- Acronymes
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **registre des décisions** — Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
+- **Annexes** — Annexes (`00_caesn/10_annexes/index.md`)
+- **Matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Acronymes** — Acronymes et abréviations (`00_caesn/10_annexes/acronyms.md`)

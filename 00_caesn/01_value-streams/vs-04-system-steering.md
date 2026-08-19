@@ -23,7 +23,7 @@ tags: [flux-de-valeur, value-stream]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 <!-- BEGIN:GENERATED mode=monographie source=referentiel/flux-valeur/vs-04.md -->
 <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
@@ -54,16 +54,16 @@ Ce flux transversal conditionne l’efficacité de tous les autres. Il couvre l�
 
 ## Capabilités mobilisées
 
-- [CAP-03](../../referentiel/capabilites/cap-03.md)
-- [CAP-08](../../referentiel/capabilites/cap-08.md)
-- [CAP-09](../../referentiel/capabilites/cap-09.md)
-- [CAP-12](../../referentiel/capabilites/cap-12.md)
-- [CAP-13](../../referentiel/capabilites/cap-13.md)
-- [CAP-14](../../referentiel/capabilites/cap-14.md)
-- [CAP-15](../../referentiel/capabilites/cap-15.md)
-- [CAP-16](../../referentiel/capabilites/cap-16.md)
+- CAP-03
+- CAP-08
+- CAP-09
+- CAP-12
+- CAP-13
+- CAP-14
+- CAP-15
+- CAP-16
 
-*Rattachement : [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [CAP-16](../../referentiel/capabilites/cap-16.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-07](../../referentiel/parties-prenantes/pp-07.md), [PP-08](../../referentiel/parties-prenantes/pp-08.md), [PP-09](../../referentiel/parties-prenantes/pp-09.md), [PP-10](../../referentiel/parties-prenantes/pp-10.md) · [fiche](../../referentiel/flux-valeur/vs-04.md)*
+*Rattachement : CAP-03, CAP-08, CAP-09, CAP-12, CAP-13, CAP-14, CAP-15, CAP-16, PP-03, PP-07, PP-08, PP-09, PP-10 · fiche VS-04*
 
 <!-- END:GENERATED -->
 ## Étapes de valeur
@@ -97,7 +97,7 @@ Plans élaborés sans données probantes, non-alignés sur les stratégies
 
 Proportion de plans opérationnels alignés sur le PDSS et la SNSD
 
-*Rattachement : [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-16](../../referentiel/capabilites/cap-16.md) · [fiche](../../referentiel/etapes-valeur/ev-22.md)*
+*Rattachement : CAP-08, CAP-16 · fiche EV-22*
 
 ### EV-23 — Budgétisation et allocation des ressources
 
@@ -125,7 +125,7 @@ Sous-financement chronique, allocations non basées sur les besoins réels
 
 Taux d'exécution budgétaire, part du budget national allouée à la santé
 
-*Rattachement : [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-08](../../referentiel/capabilites/cap-08.md) · [fiche](../../referentiel/etapes-valeur/ev-23.md)*
+*Rattachement : CAP-12, CAP-08 · fiche EV-23*
 
 ### EV-24 — Coordination des acteurs et alignement des partenaires
 
@@ -153,7 +153,7 @@ Fragmentation des interventions, coordination insuffisante
 
 Proportion d'initiatives partenaires alignées sur le portefeuille national
 
-*Rattachement : [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-16](../../referentiel/capabilites/cap-16.md) · [fiche](../../referentiel/etapes-valeur/ev-24.md)*
+*Rattachement : CAP-08, CAP-16 · fiche EV-24*
 
 ### EV-25 — Suivi de l'exécution
 
@@ -181,7 +181,7 @@ Données incomplètes ou hors délais, tableaux de bord non utilisés
 
 Complétude et promptitude des rapports, taux d'utilisation des tableaux de bord
 
-*Rattachement : [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-08](../../referentiel/capabilites/cap-08.md) · [fiche](../../referentiel/etapes-valeur/ev-25.md)*
+*Rattachement : CAP-13, CAP-08 · fiche EV-25*
 
 ### EV-26 — Analyse de la performance et prise de décision
 
@@ -209,7 +209,7 @@ Décisions sans appui sur les données, revues irrégulières
 
 Nombre de revues de performance, proportion de décisions documentées
 
-*Rattachement : [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-08](../../referentiel/capabilites/cap-08.md) · [fiche](../../referentiel/etapes-valeur/ev-26.md)*
+*Rattachement : CAP-13, CAP-08 · fiche EV-26*
 
 ### EV-27 — Redevabilité et communication publique
 
@@ -237,7 +237,7 @@ Absence de rapport public annuel, faible transparence
 
 Existence et publication de rapports annuels de performance
 
-*Rattachement : [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/etapes-valeur/ev-27.md)*
+*Rattachement : CAP-08, CAP-13 · fiche EV-27*
 
 ### EV-28 — Amélioration continue
 
@@ -265,7 +265,7 @@ Recommandations non mises en œuvre, absence de cycle structuré
 
 Proportion de recommandations mises en œuvre, évolution de la maturité des capabilités
 
-*Rattachement : [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-16](../../referentiel/capabilites/cap-16.md), [CAP-08](../../referentiel/capabilites/cap-08.md) · [fiche](../../referentiel/etapes-valeur/ev-28.md)*
+*Rattachement : CAP-03, CAP-16, CAP-08 · fiche EV-28*
 
 <!-- END:GENERATED -->
 ## Processus métier
@@ -281,9 +281,9 @@ Définir les priorités nationales et traduire la stratégie en ressources : pla
 
 #### Étapes couvertes
 
-- [EV-22 — Définition des priorités et planification](../../referentiel/etapes-valeur/ev-22.md)
-- [EV-23 — Budgétisation et allocation des ressources](../../referentiel/etapes-valeur/ev-23.md)
-- [EV-24 — Coordination des acteurs et alignement des partenaires](../../referentiel/etapes-valeur/ev-24.md)
+- EV-22 — Définition des priorités et planification
+- EV-23 — Budgétisation et allocation des ressources
+- EV-24 — Coordination des acteurs et alignement des partenaires
 
 #### Acteurs
 
@@ -293,7 +293,7 @@ Ministère, directions techniques, régions, districts, Direction des affaires f
 
 Proportion de plans opérationnels alignés sur le PDSS et la SNSD, taux d'exécution budgétaire, part du budget national allouée à la santé, proportion d'initiatives partenaires alignées sur le portefeuille national
 
-*Rattachement : [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [CAP-16](../../referentiel/capabilites/cap-16.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-07](../../referentiel/parties-prenantes/pp-07.md), [PP-08](../../referentiel/parties-prenantes/pp-08.md), [PP-09](../../referentiel/parties-prenantes/pp-09.md), [PP-10](../../referentiel/parties-prenantes/pp-10.md), [CMP-01](../../referentiel/composants/cmp-01.md), [CMP-12](../../referentiel/composants/cmp-12.md) · [fiche](../../referentiel/processus/prc-10.md)*
+*Rattachement : CAP-03, CAP-08, CAP-09, CAP-12, CAP-13, CAP-14, CAP-15, CAP-16, PP-03, PP-07, PP-08, PP-09, PP-10, CMP-01, CMP-12 · fiche PRC-10*
 
 ### PRC-11 — Suivi et pilotage de la performance
 
@@ -303,8 +303,8 @@ Piloter l'exécution sur la base de données fiables : suivi des plans et budget
 
 #### Étapes couvertes
 
-- [EV-25 — Suivi de l'exécution](../../referentiel/etapes-valeur/ev-25.md)
-- [EV-26 — Analyse de la performance et prise de décision](../../referentiel/etapes-valeur/ev-26.md)
+- EV-25 — Suivi de l'exécution
+- EV-26 — Analyse de la performance et prise de décision
 
 #### Acteurs
 
@@ -314,7 +314,7 @@ Directions techniques, régions, districts, SIS, comités de pilotage
 
 Complétude et promptitude des rapports, taux d'utilisation des tableaux de bord, nombre de revues de performance, proportion de décisions documentées
 
-*Rattachement : [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [CAP-16](../../referentiel/capabilites/cap-16.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-07](../../referentiel/parties-prenantes/pp-07.md), [PP-08](../../referentiel/parties-prenantes/pp-08.md), [PP-09](../../referentiel/parties-prenantes/pp-09.md), [PP-10](../../referentiel/parties-prenantes/pp-10.md), [CMP-01](../../referentiel/composants/cmp-01.md) · [fiche](../../referentiel/processus/prc-11.md)*
+*Rattachement : CAP-03, CAP-08, CAP-09, CAP-12, CAP-13, CAP-14, CAP-15, CAP-16, PP-03, PP-07, PP-08, PP-09, PP-10, CMP-01 · fiche PRC-11*
 
 ### PRC-12 — Redevabilité et amélioration continue
 
@@ -324,8 +324,8 @@ Rendre compte à la population et aux instances et améliorer en continu le syst
 
 #### Étapes couvertes
 
-- [EV-27 — Redevabilité et communication publique](../../referentiel/etapes-valeur/ev-27.md)
-- [EV-28 — Amélioration continue](../../referentiel/etapes-valeur/ev-28.md)
+- EV-27 — Redevabilité et communication publique
+- EV-28 — Amélioration continue
 
 #### Acteurs
 
@@ -335,10 +335,15 @@ Ministère, Parlement, société civile, partenaires, Bureau de réalisation de 
 
 Existence et publication de rapports annuels de performance, proportion de recommandations mises en œuvre, évolution de la maturité des capabilités
 
-*Rattachement : [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-12](../../referentiel/capabilites/cap-12.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [CAP-16](../../referentiel/capabilites/cap-16.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-07](../../referentiel/parties-prenantes/pp-07.md), [PP-08](../../referentiel/parties-prenantes/pp-08.md), [PP-09](../../referentiel/parties-prenantes/pp-09.md), [PP-10](../../referentiel/parties-prenantes/pp-10.md), [CMP-01](../../referentiel/composants/cmp-01.md) · [fiche](../../referentiel/processus/prc-12.md)*
+*Rattachement : CAP-03, CAP-08, CAP-09, CAP-12, CAP-13, CAP-14, CAP-15, CAP-16, PP-03, PP-07, PP-08, PP-09, PP-10, CMP-01 · fiche PRC-12*
 
 <!-- END:GENERATED -->
 ## Liens
 
 - [Flux de valeur](./index.md)
-- [Capabilités](../03_capabilities/index.md)
+- Capabilités
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)

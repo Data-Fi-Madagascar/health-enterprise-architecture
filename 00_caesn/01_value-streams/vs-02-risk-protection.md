@@ -23,7 +23,7 @@ tags: [flux-de-valeur, value-stream]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 <!-- BEGIN:GENERATED mode=monographie source=referentiel/flux-valeur/vs-02.md -->
 <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
@@ -54,17 +54,17 @@ Ce flux couvre l’ensemble du cycle de la santé publique, depuis l’identific
 
 ## Capabilités mobilisées
 
-- [CAP-04](../../referentiel/capabilites/cap-04.md)
-- [CAP-05](../../referentiel/capabilites/cap-05.md)
-- [CAP-06](../../referentiel/capabilites/cap-06.md)
-- [CAP-09](../../referentiel/capabilites/cap-09.md)
-- [CAP-10](../../referentiel/capabilites/cap-10.md)
-- [CAP-11](../../referentiel/capabilites/cap-11.md)
-- [CAP-13](../../referentiel/capabilites/cap-13.md)
-- [CAP-14](../../referentiel/capabilites/cap-14.md)
-- [CAP-15](../../referentiel/capabilites/cap-15.md)
+- CAP-04
+- CAP-05
+- CAP-06
+- CAP-09
+- CAP-10
+- CAP-11
+- CAP-13
+- CAP-14
+- CAP-15
 
-*Rattachement : [CAP-04](../../referentiel/capabilites/cap-04.md), [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-06](../../referentiel/capabilites/cap-06.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-04](../../referentiel/parties-prenantes/pp-04.md), [PP-07](../../referentiel/parties-prenantes/pp-07.md), [PP-08](../../referentiel/parties-prenantes/pp-08.md) · [fiche](../../referentiel/flux-valeur/vs-02.md)*
+*Rattachement : CAP-04, CAP-05, CAP-06, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-03, PP-04, PP-07, PP-08 · fiche VS-02*
 
 <!-- END:GENERATED -->
 ## Étapes de valeur
@@ -98,7 +98,7 @@ Données épidémiologiques non agrégées ou non actualisées, faible couvertur
 
 Couverture des campagnes de prévention, taux de vaccination
 
-*Rattachement : [CAP-06](../../referentiel/capabilites/cap-06.md), [CAP-04](../../referentiel/capabilites/cap-04.md) · [fiche](../../referentiel/etapes-valeur/ev-08.md)*
+*Rattachement : CAP-06, CAP-04 · fiche EV-08*
 
 ### EV-09 — Surveillance et détection
 
@@ -126,7 +126,7 @@ Sous-déclaration des cas, rapports incomplets ou hors délais
 
 Complétude et promptitude des rapports, taux de signaux détectés
 
-*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/etapes-valeur/ev-09.md)*
+*Rattachement : CAP-05, CAP-13 · fiche EV-09*
 
 ### EV-10 — Notification et alerte
 
@@ -154,7 +154,7 @@ Délai de notification trop long, chaîne d'alerte défaillante
 
 Délai moyen de notification d'une alerte
 
-*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/etapes-valeur/ev-10.md)*
+*Rattachement : CAP-05, CAP-13 · fiche EV-10*
 
 ### EV-11 — Vérification et investigation
 
@@ -182,7 +182,7 @@ Capacité d'investigation insuffisante, réactifs manquants, accès géographiqu
 
 Délai d'investigation, proportion d'alertes vérifiées dans les délais
 
-*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/etapes-valeur/ev-11.md)*
+*Rattachement : CAP-05, CAP-13 · fiche EV-11*
 
 ### EV-12 — Riposte
 
@@ -210,7 +210,7 @@ Ressources de riposte insuffisantes, coordination inter-agences défaillante
 
 Délai de déploiement de la riposte, taux de contrôle de l'épidémie
 
-*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md) · [fiche](../../referentiel/etapes-valeur/ev-12.md)*
+*Rattachement : CAP-05, CAP-13, CAP-14 · fiche EV-12*
 
 ### EV-13 — Suivi de situation et clôture
 
@@ -238,7 +238,7 @@ Manque de données en temps réel, communication insuffisante vers la population
 
 Taux de létalité, durée de l'épisode épidémique
 
-*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/etapes-valeur/ev-13.md)*
+*Rattachement : CAP-05, CAP-13 · fiche EV-13*
 
 ### EV-14 — Capitalisation et amélioration
 
@@ -266,7 +266,7 @@ Revues après action non systématiques, recommandations non suivies d'effet
 
 Nombre de revues après action, proportion de recommandations mises en œuvre
 
-*Rattachement : [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/etapes-valeur/ev-14.md)*
+*Rattachement : CAP-05, CAP-13 · fiche EV-14*
 
 <!-- END:GENERATED -->
 ## Processus métier
@@ -282,8 +282,8 @@ Maintenir une veille sanitaire permanente : identification des risques et promot
 
 #### Étapes couvertes
 
-- [EV-08 — Identification des risques et promotion de la santé](../../referentiel/etapes-valeur/ev-08.md)
-- [EV-09 — Surveillance et détection](../../referentiel/etapes-valeur/ev-09.md)
+- EV-08 — Identification des risques et promotion de la santé
+- EV-09 — Surveillance et détection
 
 #### Acteurs
 
@@ -293,7 +293,7 @@ Direction de la Protection Sociale et de la Promotion de la Santé, programmes, 
 
 Couverture des campagnes de prévention, taux de vaccination, complétude et promptitude des rapports, taux de signaux détectés
 
-*Rattachement : [CAP-04](../../referentiel/capabilites/cap-04.md), [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-06](../../referentiel/capabilites/cap-06.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-04](../../referentiel/parties-prenantes/pp-04.md), [PP-07](../../referentiel/parties-prenantes/pp-07.md), [PP-08](../../referentiel/parties-prenantes/pp-08.md), [CMP-02](../../referentiel/composants/cmp-02.md), [CMP-04](../../referentiel/composants/cmp-04.md), [CMP-06](../../referentiel/composants/cmp-06.md), [CMP-07](../../referentiel/composants/cmp-07.md), [CMP-08](../../referentiel/composants/cmp-08.md), [CMP-11](../../referentiel/composants/cmp-11.md), [CMP-13](../../referentiel/composants/cmp-13.md), [CMP-15](../../referentiel/composants/cmp-15.md), [CMP-17](../../referentiel/composants/cmp-17.md), [CMP-18](../../referentiel/composants/cmp-18.md) · [fiche](../../referentiel/processus/prc-04.md)*
+*Rattachement : CAP-04, CAP-05, CAP-06, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-03, PP-04, PP-07, PP-08, CMP-02, CMP-04, CMP-06, CMP-07, CMP-08, CMP-11, CMP-13, CMP-15, CMP-17, CMP-18 · fiche PRC-04*
 
 ### PRC-05 — Alerte, investigation et riposte
 
@@ -303,9 +303,9 @@ Déclencher et conduire la réponse à un signal sanitaire validé : notificatio
 
 #### Étapes couvertes
 
-- [EV-10 — Notification et alerte](../../referentiel/etapes-valeur/ev-10.md)
-- [EV-11 — Vérification et investigation](../../referentiel/etapes-valeur/ev-11.md)
-- [EV-12 — Riposte](../../referentiel/etapes-valeur/ev-12.md)
+- EV-10 — Notification et alerte
+- EV-11 — Vérification et investigation
+- EV-12 — Riposte
 
 #### Acteurs
 
@@ -315,7 +315,7 @@ District sanitaire, région, direction centrale, OMS, équipe d'investigation, l
 
 Délai moyen de notification d'une alerte, délai d'investigation, proportion d'alertes vérifiées dans les délais, délai de déploiement de la riposte, taux de contrôle de l'épidémie
 
-*Rattachement : [CAP-04](../../referentiel/capabilites/cap-04.md), [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-06](../../referentiel/capabilites/cap-06.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-04](../../referentiel/parties-prenantes/pp-04.md), [PP-07](../../referentiel/parties-prenantes/pp-07.md), [PP-08](../../referentiel/parties-prenantes/pp-08.md), [CMP-02](../../referentiel/composants/cmp-02.md), [CMP-04](../../referentiel/composants/cmp-04.md), [CMP-06](../../referentiel/composants/cmp-06.md), [CMP-07](../../referentiel/composants/cmp-07.md), [CMP-08](../../referentiel/composants/cmp-08.md), [CMP-11](../../referentiel/composants/cmp-11.md), [CMP-13](../../referentiel/composants/cmp-13.md), [CMP-14](../../referentiel/composants/cmp-14.md), [CMP-15](../../referentiel/composants/cmp-15.md), [CMP-17](../../referentiel/composants/cmp-17.md), [CMP-18](../../referentiel/composants/cmp-18.md) · [fiche](../../referentiel/processus/prc-05.md)*
+*Rattachement : CAP-04, CAP-05, CAP-06, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-03, PP-04, PP-07, PP-08, CMP-02, CMP-04, CMP-06, CMP-07, CMP-08, CMP-11, CMP-13, CMP-14, CMP-15, CMP-17, CMP-18 · fiche PRC-05*
 
 ### PRC-06 — Clôture et capitalisation des épisodes
 
@@ -325,8 +325,8 @@ Clore l'épisode épidémique ou d'urgence et en capitaliser les leçons pour re
 
 #### Étapes couvertes
 
-- [EV-13 — Suivi de situation et clôture](../../referentiel/etapes-valeur/ev-13.md)
-- [EV-14 — Capitalisation et amélioration](../../referentiel/etapes-valeur/ev-14.md)
+- EV-13 — Suivi de situation et clôture
+- EV-14 — Capitalisation et amélioration
 
 #### Acteurs
 
@@ -336,10 +336,15 @@ Comité de gestion de crise, direction centrale, comité technique national
 
 Taux de létalité, durée de l'épisode épidémique, nombre de revues après action, proportion de recommandations mises en œuvre
 
-*Rattachement : [CAP-04](../../referentiel/capabilites/cap-04.md), [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-06](../../referentiel/capabilites/cap-06.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [PP-03](../../referentiel/parties-prenantes/pp-03.md), [PP-04](../../referentiel/parties-prenantes/pp-04.md), [PP-07](../../referentiel/parties-prenantes/pp-07.md), [PP-08](../../referentiel/parties-prenantes/pp-08.md), [CMP-02](../../referentiel/composants/cmp-02.md), [CMP-04](../../referentiel/composants/cmp-04.md), [CMP-06](../../referentiel/composants/cmp-06.md), [CMP-07](../../referentiel/composants/cmp-07.md), [CMP-11](../../referentiel/composants/cmp-11.md), [CMP-14](../../referentiel/composants/cmp-14.md), [CMP-15](../../referentiel/composants/cmp-15.md), [CMP-17](../../referentiel/composants/cmp-17.md), [CMP-18](../../referentiel/composants/cmp-18.md) · [fiche](../../referentiel/processus/prc-06.md)*
+*Rattachement : CAP-04, CAP-05, CAP-06, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-03, PP-04, PP-07, PP-08, CMP-02, CMP-04, CMP-06, CMP-07, CMP-11, CMP-14, CMP-15, CMP-17, CMP-18 · fiche PRC-06*
 
 <!-- END:GENERATED -->
 ## Liens
 
 - [Flux de valeur](./index.md)
-- [Capabilités](../03_capabilities/index.md)
+- Capabilités
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)

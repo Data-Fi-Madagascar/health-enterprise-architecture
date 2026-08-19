@@ -2,7 +2,7 @@
 title: Capabilités du système de santé
 id: capabilities
 domain: 03_capabilities
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Responsables de capabilités
@@ -23,7 +23,7 @@ tags: [capabilités, catalogue]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 ## Définition et rôle
 
@@ -62,9 +62,9 @@ Une initiative qui ne renforce aucune capabilité identifiée ni contribution à
 
 | Type | Rôle |
 |------|------|
-| [Capabilités métier](./business.md) | Capabilités directement orientées à la production de valeur pour les bénéficiaires. |
-| [Capabilités habilitantes](./enabling.md) | Conditions de fonctionnement dont l'absence bloque l'exécution des flux de valeur. |
-| [Capabilités numériques transversales](./digital.md) | Socle numérique issu de la SNSD et des référentiels DPI-H, OpenHIE, GovStack. |
+| Capabilités métier | Capabilités directement orientées à la production de valeur pour les bénéficiaires. |
+| Capabilités habilitantes | Conditions de fonctionnement dont l'absence bloque l'exécution des flux de valeur. |
+| Capabilités numériques transversales | Socle numérique issu de la SNSD et des référentiels DPI-H, OpenHIE, GovStack. |
 
 ## Lecture des capabilités par flux de valeur
 
@@ -77,14 +77,26 @@ Une initiative qui ne renforce aucune capabilité identifiée ni contribution à
 
 ## Maturité et priorisation
 
-Chaque capabilité est évaluée sur une échelle de maturité (1 à 5). Le delta entre niveau actuel et niveau critique guide la priorisation et la mesure du renfort. Voir [Maturité](./maturity.md).
+Chaque capabilité est évaluée sur une échelle de maturité (1 à 5). Le delta entre niveau actuel et niveau critique guide la priorisation et la mesure du renfort. Voir Maturité.
 
 ## Architecture runway
 
-Quatre capabilités constituent le socle commun (architecture runway) dont l'absence bloque de nombreuses initiatives : **CAP-13, CAP-14, CAP-15, CAP-16**. Voir [Runway](./runway.md).
+Quatre capabilités constituent le socle commun (architecture runway) dont l'absence bloque de nombreuses initiatives : **CAP-13, CAP-14, CAP-15, CAP-16**. Voir Runway.
 
 ## Liens
 
-- [Flux de valeur](../01_value-streams/index.md)
-- [Portefeuille](../06_portfolio/index.md)
-- [Données](../04_data/index.md)
+- Flux de valeur
+- Portefeuille
+- Données
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Capabilités métier** — Capabilités métier de santé (`00_caesn/03_capabilities/business.md`)
+- **Capabilités habilitantes** — Capabilités habilitantes du système (`00_caesn/03_capabilities/enabling.md`)
+- **Capabilités numériques transversales** — Capabilités numériques transversales et composants DPI-H (`00_caesn/03_capabilities/digital.md`)
+- **Maturité** — Évaluation de la maturité des capabilités (`00_caesn/03_capabilities/maturity.md`)
+- **Runway** — Capabilités critiques et architecture runway (`00_caesn/03_capabilities/runway.md`)
+- **Flux de valeur** — Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)
+- **Portefeuille** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
+- **Données** — Architecture des données et de l'information sanitaire (`00_caesn/04_data/index.md`)

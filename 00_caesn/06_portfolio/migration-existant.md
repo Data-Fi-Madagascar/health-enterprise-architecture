@@ -2,7 +2,7 @@
 title: "Plan de migration — De l'existant au futur état"
 id: caesn-migration
 domain: 06_portfolio
-version: "0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
@@ -244,7 +244,14 @@ Ce document décrit la stratégie et les étapes concrètes pour passer de l'ét
 
 ## Liens
 
-- [Portefeuille d'initiatives](./index.md)
-- [Feuille de route ARTSN](../../02_artsn/09_feuille-route/index.md)
-- [Trajectoire CNISN](../../01_cnisn/05_trajectoire/index.md)
-- [Protocole de test](../../02_artsn/07_annexes/d-protocole-test-interopabilite.md)
+- Portefeuille d'initiatives
+- Feuille de route ARTSN
+- Trajectoire CNISN
+- Protocole de test
+
+## Références
+
+- **Portefeuille d'initiatives** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
+- **Feuille de route ARTSN** — Feuille de route de déploiement progressif de l'ARTSN (`02_artsn/09_feuille-route/index.md`)
+- **Trajectoire CNISN** — Partie V — Trajectoire de mise en œuvre (`01_cnisn/05_trajectoire/index.md`)
+- **Protocole de test** — Annexe D — Protocole de test d'interopérabilité (`02_artsn/07_annexes/d-protocole-test-interopabilite.md`)

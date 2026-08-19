@@ -2,7 +2,7 @@
 title: "Chapitres et patterns de référence"
 id: artsn-chapitres
 domain: 02_artsn
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
@@ -15,18 +15,9 @@ tags: [artsn, chapitres, patterns, niveau-3]
 
 **Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
 
-| Profil | Lecture |
-|--------|---------|
-| Décideurs institutionnels | ● |
-| Directions métier / programmes | ◐ |
-| DEPSI / équipes techniques | ● |
-| SIS / données / suivi-évaluation | ◐ |
-| Partenaires techniques et financiers | ◐ |
+Ce document s'adresse prioritairement aux décideurs institutionnels et aux équipes techniques de la DEPSI. Les directions métier et programmes, les équipes SIS, données et suivi-évaluation, ainsi que les partenaires techniques et financiers trouveront également une lecture complémentaire utile. La lecture est ponctuelle pour les publics restants. Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
-
-
-Les chapitres constituent le **cadre normatif opposable** par le Ministère de la Santé Publique pour valider ou rejeter toute solution numérique : règles d'or et contrats techniques d'interfaces obligatoires imposés pour surmonter les contraintes contextuelles nationales décrites en [Partie III](../02_exigences-contextuelles/index.md). Chaque chapitre vit dans le référentiel : `referentiel/chapitres/art-X.md`.
+Les chapitres constituent le **cadre normatif opposable** par le Ministère de la Santé Publique pour valider ou rejeter toute solution numérique : règles d'or et contrats techniques d'interfaces obligatoires imposés pour surmonter les contraintes contextuelles nationales décrites en Partie III. Chaque chapitre vit dans le référentiel : `referentiel/chapitres/art-X.md`.
 
 ## Catalogue des chapitres
 
@@ -35,34 +26,58 @@ Les chapitres constituent le **cadre normatif opposable** par le Ministère de l
 
 | Code | Titre canonique | Rattachement | Statut | Fiche |
 |---|---|---|---|---|
-| ART-0 | Accords de partage inter-institutionnels | [ENF-4](../../referentiel/exigences/enf-4.md) | draft | [fiche](../../referentiel/chapitres/art-0.md) |
-| ART-1 | Intégration et ingestion | [ENF-1](../../referentiel/exigences/enf-1.md), [CAP-14](../../referentiel/capabilites/cap-14.md) | draft | [fiche](../../referentiel/chapitres/art-1.md) |
-| ART-2 | Médiation et normalisation | [ENF-3](../../referentiel/exigences/enf-3.md), [ENF-4](../../referentiel/exigences/enf-4.md), [CAP-14](../../referentiel/capabilites/cap-14.md) | draft | [fiche](../../referentiel/chapitres/art-2.md) |
-| ART-3 | Historisation événementielle et profils de déploiement | [ENF-1](../../referentiel/exigences/enf-1.md), [CAP-13](../../referentiel/capabilites/cap-13.md) | draft | [fiche](../../referentiel/chapitres/art-3.md) |
-| ART-4 | Référentiels de métadonnées de gestion | [ENF-4](../../referentiel/exigences/enf-4.md), [CAP-14](../../referentiel/capabilites/cap-14.md) | draft | [fiche](../../referentiel/chapitres/art-4.md) |
-| ART-4A | Résolution d'identité | [ENF-3](../../referentiel/exigences/enf-3.md), [CAP-04](../../referentiel/capabilites/cap-04.md) | draft | [fiche](../../referentiel/chapitres/art-4a.md) |
-| ART-4B | Bases d'autorisation | [ENF-4](../../referentiel/exigences/enf-4.md), [CAP-15](../../referentiel/capabilites/cap-15.md) | draft | [fiche](../../referentiel/chapitres/art-4b.md) |
-| ART-4C | Éligibilité et couverture | [ENF-2](../../referentiel/exigences/enf-2.md), [ENF-1](../../referentiel/exigences/enf-1.md), [CAP-07](../../referentiel/capabilites/cap-07.md) | draft | [fiche](../../referentiel/chapitres/art-4c.md) |
-| ART-4D | Référentiel géospatial et d'exploitation partagé | [ENF-4](../../referentiel/exigences/enf-4.md) | draft | [fiche](../../referentiel/chapitres/art-4d.md) |
-| ART-5 | Cohérence et qualité des données | [ENF-5](../../referentiel/exigences/enf-5.md), [CAP-13](../../referentiel/capabilites/cap-13.md) | draft | [fiche](../../referentiel/chapitres/art-5.md) |
-| ART-6 | Analytique et restitution | [ENF-4](../../referentiel/exigences/enf-4.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-08](../../referentiel/capabilites/cap-08.md) | draft | [fiche](../../referentiel/chapitres/art-6.md) |
-| ART-7 | Sécurité, contrôle d'accès et résidence de la donnée | [ENF-1](../../referentiel/exigences/enf-1.md), [CAP-15](../../referentiel/capabilites/cap-15.md) | draft | [fiche](../../referentiel/chapitres/art-7.md) |
-| ART-8 | Orchestration de processus | [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md) | draft | [fiche](../../referentiel/chapitres/art-8.md) |
-| ART-8A | Orchestration de processus borné | [ENF-5](../../referentiel/exigences/enf-5.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md) | draft | [fiche](../../referentiel/chapitres/art-8a.md) |
-| ART-8B | Modélisation de relations en graphe | [ENF-4](../../referentiel/exigences/enf-4.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md) | draft | [fiche](../../referentiel/chapitres/art-8b.md) |
-| ART-8C | Agrégation par lot | [ENF-1](../../referentiel/exigences/enf-1.md), [ENF-2](../../referentiel/exigences/enf-2.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md) | draft | [fiche](../../referentiel/chapitres/art-8c.md) |
-| ART-8D | Chorégraphie inter-institutionnelle | [ENF-4](../../referentiel/exigences/enf-4.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md) | draft | [fiche](../../referentiel/chapitres/art-8d.md) |
-| ART-9 | Garanties transactionnelles fortes | [ENF-2](../../referentiel/exigences/enf-2.md), [CAP-07](../../referentiel/capabilites/cap-07.md) | draft | [fiche](../../referentiel/chapitres/art-9.md) |
-| ART-10 | Logistique | — | candidate | [fiche](../../referentiel/chapitres/art-10.md) |
-| ART-11 | Coordination intersectorielle | [ENF-4](../../referentiel/exigences/enf-4.md), [CAP-08](../../referentiel/capabilites/cap-08.md), [CAP-18](../../referentiel/capabilites/cap-18.md), [CAP-INT-14](../../referentiel/capacites/cap-int-14.md) | stable | [fiche](../../referentiel/chapitres/art-11.md) |
+| ART-0 | Accords de partage inter-institutionnels | ENF-4 | draft | fiche |
+| ART-1 | Intégration et ingestion | ENF-1, CAP-14 | draft | fiche |
+| ART-2 | Médiation et normalisation | ENF-3, ENF-4, CAP-14 | draft | fiche |
+| ART-3 | Historisation événementielle et profils de déploiement | ENF-1, CAP-13 | draft | fiche |
+| ART-4 | Référentiels de métadonnées de gestion | ENF-4, CAP-14 | draft | fiche |
+| ART-4A | Résolution d'identité | ENF-3, CAP-04 | draft | fiche |
+| ART-4B | Bases d'autorisation | ENF-4, CAP-15 | draft | fiche |
+| ART-4C | Éligibilité et couverture | ENF-2, ENF-1, CAP-07 | draft | fiche |
+| ART-4D | Référentiel géospatial et d'exploitation partagé | ENF-4 | draft | fiche |
+| ART-5 | Cohérence et qualité des données | ENF-5, CAP-13 | draft | fiche |
+| ART-6 | Analytique et restitution | ENF-4, CAP-13, CAP-08 | draft | fiche |
+| ART-7 | Sécurité, contrôle d'accès et résidence de la donnée | ENF-1, CAP-15 | draft | fiche |
+| ART-8 | Orchestration de processus | CAP-13, CAP-14 | draft | fiche |
+| ART-8A | Orchestration de processus borné | ENF-5, CAP-13, CAP-14 | draft | fiche |
+| ART-8B | Modélisation de relations en graphe | ENF-4, CAP-13, CAP-14 | draft | fiche |
+| ART-8C | Agrégation par lot | ENF-1, ENF-2, CAP-13, CAP-14 | draft | fiche |
+| ART-8D | Chorégraphie inter-institutionnelle | ENF-4, CAP-13, CAP-14 | draft | fiche |
+| ART-9 | Garanties transactionnelles fortes | ENF-2, CAP-07 | draft | fiche |
+| ART-10 | Logistique | — | candidate | fiche |
+| ART-11 | Coordination intersectorielle | ENF-4, CAP-08, CAP-18, CAP-INT-14 | stable | fiche |
 
 <!-- END:GENERATED -->
+
 ## Statuts
 
-Les chapitres évoluent selon trois statuts : **Stable** (contrat pleinement opposable lors d'une homologation), **Provisoire** (oriente la conception sans être un contrat opposable) et **Proposition ouverte** (hypothèse à confirmer par une ou plusieurs initiatives indépendantes). Voir la [table de maturité](../07_annexes/a-table-de-maturite.md) et la [gouvernance](../06_gouvernance/index.md).
+Les chapitres évoluent selon trois statuts : **Stable** (contrat pleinement opposable lors d'une homologation), **Provisoire** (oriente la conception sans être un contrat opposable) et **Proposition ouverte** (hypothèse à confirmer par une ou plusieurs initiatives indépendantes). Voir la table de maturité et la gouvernance.
 
 ## Liens
 
-- [Fondations](../00_fondations/index.md)
-- [Exigences contextuelles nationales](../02_exigences-contextuelles/index.md)
-- [Cartographie cible](../04_cartographie-cible/index.md)
+Les chapitres de cette partie s'inscrivent dans une dépendance avec les Fondations, les Exigences contextuelles nationales et la Cartographie cible.
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **Partie III** — Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
+- **table de maturité** — Annexe A — Table de maturité par chapitre (`02_artsn/07_annexes/a-table-de-maturite.md`)
+- **gouvernance** — Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)
+- **Fondations** — Fondations de l'ARTSN (`02_artsn/00_fondations/index.md`)
+- **Exigences contextuelles nationales** — Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
+- **Cartographie cible** — Cartographie conceptuelle cible (`02_artsn/04_cartographie-cible/index.md`)
+
+- **ENF-4** — Cloisonnement inter-institutionnel et étanchéité des données (One Health) (`referentiel/exigences/enf-4.md`)
+- **fiche** — Accords de partage inter-institutionnels (`referentiel/chapitres/art-0.md`)
+- **ENF-1** — Résilience à l'instabilité réseau (`referentiel/exigences/enf-1.md`)
+- **CAP-14** — Interopérabilité, référentiels nationaux et infrastructure numérique partagée (`referentiel/capabilites/cap-14.md`)
+- **ENF-3** — Unicité de l'identité et résilience face à la fragmentation applicative (`referentiel/exigences/enf-3.md`)
+- **CAP-13** — Système d'information sanitaire, données et recherche (`referentiel/capabilites/cap-13.md`)
+- **CAP-04** — Santé communautaire et engagement des communautés (`referentiel/capabilites/cap-04.md`)
+- **CAP-15** — Cybersécurité, confidentialité et gouvernance des données personnelles (`referentiel/capabilites/cap-15.md`)
+- **ENF-2** — Intégrité des flux et traçabilité des valeurs (`referentiel/exigences/enf-2.md`)
+- **CAP-07** — Protection financière, couverture santé universelle (`referentiel/capabilites/cap-07.md`)
+- **ENF-5** — Coordination des processus complexes décentralisés et asynchrones (`referentiel/exigences/enf-5.md`)
+- **CAP-08** — Gouvernance institutionnelle, planification, coordination et redevabilité (`referentiel/capabilites/cap-08.md`)
+- **CAP-18** — Coordination intersectorielle (One Health) (`referentiel/capabilites/cap-18.md`)
+- **CAP-INT-14** — CAP-INT-14 — Échanges intersectoriels One Health (`referentiel/capacites/cap-int-14.md`)

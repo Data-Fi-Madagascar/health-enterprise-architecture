@@ -2,7 +2,7 @@
 title: PT-13 — Profil technique national
 id: ptisn-pt-13-qualite-reconciliation
 domain: 03_ptisn
-version: "0.4"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
@@ -71,6 +71,6 @@ Les règles de qualité doivent rester :
 
 ------------------------------------------------------------------------
 
-*Rattachement : [CMP-05](../../referentiel/composants/cmp-05.md), [CAP-INT-11](../../referentiel/capacites/cap-int-11.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-5](../../referentiel/chapitres/art-5.md), [ART-6](../../referentiel/chapitres/art-6.md) · [fiche](../../referentiel/profils/pt-13.md)*
+*Rattachement : CMP-05, CAP-INT-11, ART-4, ART-5, ART-6 · fiche PT-13*
 
 <!-- END:GENERATED -->

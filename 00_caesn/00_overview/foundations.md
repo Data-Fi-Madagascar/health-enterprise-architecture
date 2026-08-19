@@ -2,7 +2,7 @@
 title: Fondements stratégiques et normatifs
 id: fondements
 domain: 00_overview
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Ministère de la Santé Publique
@@ -23,7 +23,7 @@ tags: [fondements, stratégie, normes, madagascar]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ● |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 ## Ancrage dans les stratégies nationales
 
@@ -74,6 +74,13 @@ Spécifications des composantes transversales à l'administration publique (iden
 
 ## Liens
 
-- [Modèle de valeur](./value-model.md)
-- [Flux de valeur](../01_value-streams/index.md)
-- [Principes](../02_principles/index.md)
+- Modèle de valeur
+- Flux de valeur
+- Principes
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Modèle de valeur** — Modèle national de valeur (`00_caesn/00_overview/value-model.md`)
+- **Flux de valeur** — Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)
+- **Principes** — Principes d'architecture (`00_caesn/02_principles/index.md`)

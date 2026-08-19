@@ -2,7 +2,7 @@
 title: Gouvernance de l'ARTSN
 id: artsn-gouvernance
 domain: 02_artsn
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
@@ -15,56 +15,35 @@ tags: [artsn, gouvernance, versionnement, cnasn, niveau-3]
 
 **Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
 
-| Profil | Lecture |
-|--------|---------|
-| Décideurs institutionnels | ● |
-| Directions métier / programmes | ◐ |
-| DEPSI / équipes techniques | ● |
-| SIS / données / suivi-évaluation | ◐ |
-| Partenaires techniques et financiers | ● |
+Ce document s'adresse prioritairement aux décideurs institutionnels, aux directions métier et programmes, aux équipes DEPSI et techniques, aux partenaires techniques et financiers, ainsi qu'aux équipes SIS, données et suivi-évaluation. La lecture est complémentaire pour les directions métier et les équipes SIS, et prioritaire pour les décideurs, les équipes techniques et les partenaires.
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
-
-L'ARTSN évolue selon le même mécanisme qu'elle impose aux contrats d'événements ([F.3](../../referentiel/fondations/f-3.md)) : versions sémantiques, compatibilité ascendante et descendante documentée avant toute publication d'une nouvelle version, dépréciation explicite des chapitres retirés. Chaque spécification d'implémentation déclare la version d'ARTSN à laquelle elle se conforme.
+L'ARTSN évolue selon le même mécanisme qu'elle impose aux contrats d'événements (F.3) : versions sémantiques, compatibilité ascendante et descendante documentée avant toute publication d'une nouvelle version, dépréciation explicite des chapitres retirés. Chaque spécification d'implémentation déclare la version d'ARTSN à laquelle elle se conforme.
 
 ## Cycle de vie et versionnement
 
-- Versions sémantiques (majeure.mineure.correctif).
-- Compatibilité ascendante et descendante documentée avant toute publication.
-- Dépréciation explicite des chapitres retirés.
-- Déclaration obligatoire de la version d'ARTSN par chaque spécification d'implémentation.
+L'ARTSN suit un cycle de vie structuré reposant sur des versions sémantiques de la forme majeure.mineure.correctif. La compatibilité ascendante et descendante est documentée avant toute publication d'une nouvelle version. Les chapitres retirés font l'objet d'une dépréciation explicite, et chaque spécification d'implémentation doit obligatoirement déclarer la version d'ARTSN à laquelle elle se conforme.
 
 ## Processus de dépréciation
 
-Un processus structuré de dépréciation et de retrait des composants obsolètes est défini dans [depreciation.md](./depreciation.md). Il couvre la détection des signaux, l'instruction, la décision, la notification, la migration et le retrait final.
+Un processus structuré de dépréciation et de retrait des composants obsolètes est défini dans depreciation.md. Il couvre la détection des signaux, l'instruction, la décision, la notification, la migration et le retrait final.
 
 ## Veille architecturale
 
-Un processus de veille continue est défini dans [veille-architecturale.md](./veille-architecturale.md). Il couvre les sources de veille, les fiches d'analyse et les revues trimestrielles du CNASN.
+Un processus de veille continue est défini dans veille-architecturale.md. Il couvre les sources de veille, les fiches d'analyse et les revues trimestrielles du CNASN.
 
 ## Conformité architecturale
 
-Un tableau de bord de conformité est défini dans [conformite.md](./conformite.md). Il suit les indicateurs par initiative, par standard et les alertes de non-conformité.
+Un tableau de bord de conformité est défini dans conformite.md. Il suit les indicateurs par initiative, par standard et les alertes de non-conformité.
 
 ## Processus de revue du document
 
-L'ARTSN fait l'objet d'une revue périodique par l'instance de gouvernance du [CAESN](../../00_caesn/07_governance/index.md), à une fréquence fixée par cette dernière, ainsi que d'une revue déclenchée par tout constat d'homologation qui révélerait qu'un composant ne peut être rattaché à aucun chapitre existant ([F.4](../../referentiel/fondations/f-4.md)).
+L'ARTSN fait l'objet d'une revue périodique par l'instance de gouvernance du CAESN, à une fréquence fixée par cette dernière, ainsi que d'une revue déclenchée par tout constat d'homologation qui révélerait qu'un composant ne peut être rattaché à aucun chapitre existant (F.4).
 
-Chaque revue statue sur :
-
-1. La promotion d'un chapitre d'un statut à un autre (Proposition ouverte → Provisoire → Stable), sur la base des critères de confirmation propres à chaque chapitre ;
-2. L'ajout, la modification ou la dépréciation d'un chapitre ;
-3. La mise à jour de la [table de maturité](../07_annexes/a-table-de-maturite.md).
-
-Toute décision de revue est enregistrée et versionnée.
+Chaque revue statue sur la promotion d'un chapitre d'un statut à un autre (Proposition ouverte → Provisoire → Stable), sur la base des critères de confirmation propres à chaque chapitre, sur l'ajout, la modification ou la dépréciation d'un chapitre, ainsi que sur la mise à jour de la table de maturité. Toute décision de revue est enregistrée et versionnée.
 
 ## Processus d'ajout d'un nouveau chapitre
 
-Toute équipe d'initiative qui rencontre un composant applicatif ne pouvant être rattaché à un chapitre existant peut soumettre une proposition de nouveau chapitre à l'instance de gouvernance. Une proposition doit comporter :
-
-1. Le rattachement à une ou plusieurs capacités du CAESN et au référentiel normatif pertinent, ou la mention explicite qu'aucun rattachement n'a été trouvé (signal à traiter en priorité) ;
-2. Le contenu normatif proposé : les contrats et garanties que le chapitre imposerait ;
-3. Le statut initial proposé, par défaut « Proposition ouverte ».
+Toute équipe d'initiative qui rencontre un composant applicatif ne pouvant être rattaché à un chapitre existant peut soumettre une proposition de nouveau chapitre à l'instance de gouvernance. Une proposition doit comporter le rattachement à une ou plusieurs capacités du CAESN et au référentiel normatif pertinent (ou la mention explicite qu'aucun rattachement n'a été trouvé, signal à traiter en priorité), le contenu normatif proposé (les contrats et garanties que le chapitre imposerait), et le statut initial proposé (par défaut « Proposition ouverte »).
 
 ```plantuml
 @startuml
@@ -115,6 +94,17 @@ Lorsque l'ARTSN documente un pattern d'intégration applicable selon des context
 
 ## Liens
 
-- [Fondations — F.4 (homologation)](../../referentiel/fondations/f-4.md)
-- [Table de maturité par chapitre](../07_annexes/a-table-de-maturite.md)
-- [CAESN — gouvernance](../../00_caesn/07_governance/index.md)
+Voir les documents suivants : Fondations — F.4 (homologation), Table de maturité par chapitre, et CAESN — gouvernance.
+
+## Références
+
+- **F.3** — F.3 — Éradication des silos technologiques (`referentiel/fondations/f-3.md`)
+- **depreciation.md** — Processus de dépréciation des composants (`02_artsn/06_gouvernance/depreciation.md`)
+- **veille-architecturale.md** — Veille architecturale (`02_artsn/06_gouvernance/veille-architecturale.md`)
+- **conformite.md** — Tableau de bord de conformité architecturale (`02_artsn/06_gouvernance/conformite.md`)
+- **CAESN** — Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
+- **F.4** — F.4 — Homologation obligatoire (`referentiel/fondations/f-4.md`)
+- **table de maturité** — Annexe A — Table de maturité par chapitre (`02_artsn/07_annexes/a-table-de-maturite.md`)
+- **Fondations — F.4 (homologation)** — F.4 — Homologation obligatoire (`referentiel/fondations/f-4.md`)
+- **Table de maturité par chapitre** — Annexe A — Table de maturité par chapitre (`02_artsn/07_annexes/a-table-de-maturite.md`)
+- **CAESN — gouvernance** — Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)

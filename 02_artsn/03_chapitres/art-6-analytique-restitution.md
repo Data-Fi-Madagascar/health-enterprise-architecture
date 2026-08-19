@@ -2,11 +2,12 @@
 title: "ART-6 — Analytique et restitution"
 id: art-6
 domain: 02_artsn
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: [artsn, chapitres, art-6, niveau-3]
+related: ['cap-int-05']
 ---
 
 # ART-6 — Analytique et restitution
@@ -23,10 +24,10 @@ tags: [artsn, chapitres, art-6, niveau-3]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-ART-6 — Analytique et restitution constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : [`art-6`](../../referentiel/chapitres/art-6.md).
+ART-6 — Analytique et restitution constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-6`.
 
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
@@ -35,16 +36,23 @@ ART-6 — Analytique et restitution constitue un chapitre du **cadre normatif op
 
 **Discipline existentielle.** Dès lors qu’une source échappe à la gouvernance directe de l’initiative (requêtes lourdes des décideurs, extractions massives pour la recherche) : elle seule permet de garantir des performances de restitution constantes et une sécurité réglementaire absolue sans surcharger les serveurs de soins et sans rompre le pipeline.
 
-- **Rattachement** : [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-08](../../referentiel/capabilites/cap-08.md) (analytics & décisionnel).
+- **Rattachement** : CAP-13, CAP-08 (analytics & décisionnel).
 - **Infrastructure cible** : Data Lakehouse.
 - **Pattern cible** : modèle de séparation CQRS.
-- **Déduit selon** : [ENF-4](../../referentiel/exigences/enf-4.md) (protection One Health).
+- **Déduit selon** : ENF-4 (protection One Health).
 - **Statut : Provisoire.**
 
-*Rattachement : [ENF-4](../../referentiel/exigences/enf-4.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-08](../../referentiel/capabilites/cap-08.md) · [fiche](../../referentiel/chapitres/art-6.md)*
+*Rattachement : ENF-4, CAP-13, CAP-08 · fiche ART-6*
 
 <!-- END:GENERATED -->
 ## Liens
 
-- [Index des chapitres](./index.md)
-- [Exigences contextuelles — Partie III](../02_exigences-contextuelles/index.md)
+- Index des chapitres
+- Exigences contextuelles — Partie III
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **`art-6`** — Analytique et restitution (`referentiel/chapitres/art-6.md`)
+- **Index des chapitres** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **Exigences contextuelles — Partie III** — Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

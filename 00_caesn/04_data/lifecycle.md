@@ -2,7 +2,7 @@
 title: Cycle de vie des données
 id: data-lifecycle
 domain: 04_data
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Cellule du Système d'Information Sanitaire
@@ -23,7 +23,7 @@ tags: [données, cycle-de-vie]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 Chaque donnée de santé doit être gouvernée tout au long de son cycle de vie.
 
@@ -40,6 +40,13 @@ Chaque donnée de santé doit être gouvernée tout au long de son cycle de vie.
 
 ## Liens
 
-- [Principes de l'architecture des données](./principles.md)
-- [Gouvernance des données](./governance.md)
-- [Domaines de données](./domains.md)
+- Principes de l'architecture des données
+- Gouvernance des données
+- Domaines de données
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Principes de l'architecture des données** — Principes de l'architecture des données (`00_caesn/04_data/principles.md`)
+- **Gouvernance des données** — Gouvernance, qualité et protection des données (`00_caesn/04_data/governance.md`)
+- **Domaines de données** — Domaines de données prioritaires (`00_caesn/04_data/domains.md`)

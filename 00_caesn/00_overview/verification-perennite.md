@@ -2,7 +2,7 @@
 title: "Vérification de la pérennité — PDSS, SNSD, PSRSIS"
 id: verification-perennite-documents
 domain: 00_overview
-version: "0.1.0"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
@@ -23,7 +23,7 @@ tags: [strategie, pdss, sns, psrsis, perennite]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 ## Contexte
 
@@ -109,7 +109,13 @@ Si le PDSS 2020-2024 est confirmé obsolète sans successeur :
 
 ## Liens
 
-- [Fondements du cadre](./foundations.md)
-- [PDSS dans le cadre](./foundations.md#lecture-des-axes-stratégiques-du-pdss-dans-le-cadre)
-- [SNSD dans le cadre](./foundations.md#stratégie-nationale-de-santé-digitale)
-- [Point de vigilance C9](../../docs/content-analysis.md)
+- Fondements du cadre
+- PDSS dans le cadre
+- SNSD dans le cadre
+- Point de vigilance C9
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Fondements du cadre** — Fondements stratégiques et normatifs (`00_caesn/00_overview/foundations.md`)
+- **Point de vigilance C9** — Analyse de contenu — Synthèse des 4 niveaux (`docs/content-analysis.md`)

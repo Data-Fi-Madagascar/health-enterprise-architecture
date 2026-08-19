@@ -2,7 +2,7 @@
 title: "Workflow d'homologation architecturale"
 id: homologation
 domain: 07_governance
-version: "0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: CNASN
@@ -210,7 +210,14 @@ Durée totale : variable
 
 ## Liens
 
-- [Guide du processus de gouvernance](./processus-gouvernance.md)
-- [RACI de gouvernance](./raci.md)
-- [Registre des décisions](../08_decisions/registre-decisions.md)
-- [Template de modification](../08_decisions/template-modification.md)
+- Guide du processus de gouvernance
+- RACI de gouvernance
+- Registre des décisions
+- Template de modification
+
+## Références
+
+- **Guide du processus de gouvernance** — Guide du processus de gouvernance (`00_caesn/07_governance/processus-gouvernance.md`)
+- **RACI de gouvernance** — RACI de gouvernance et responsabilités (`00_caesn/07_governance/raci.md`)
+- **Registre des décisions** — Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
+- **Template de modification** — Template — Demande de modification architecturale (`01_cnisn/06_decisions/template-modification.md`)

@@ -23,7 +23,7 @@ tags: [flux-de-valeur, value-stream]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 <!-- BEGIN:GENERATED mode=monographie source=referentiel/flux-valeur/vs-01.md -->
 <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
@@ -54,18 +54,18 @@ Ce flux couvre l’ensemble du parcours d’un patient, depuis la reconnaissance
 
 ## Capabilités mobilisées
 
-- [CAP-01](../../referentiel/capabilites/cap-01.md)
-- [CAP-02](../../referentiel/capabilites/cap-02.md)
-- [CAP-03](../../referentiel/capabilites/cap-03.md)
-- [CAP-04](../../referentiel/capabilites/cap-04.md)
-- [CAP-09](../../referentiel/capabilites/cap-09.md)
-- [CAP-10](../../referentiel/capabilites/cap-10.md)
-- [CAP-11](../../referentiel/capabilites/cap-11.md)
-- [CAP-13](../../referentiel/capabilites/cap-13.md)
-- [CAP-14](../../referentiel/capabilites/cap-14.md)
-- [CAP-15](../../referentiel/capabilites/cap-15.md)
+- CAP-01
+- CAP-02
+- CAP-03
+- CAP-04
+- CAP-09
+- CAP-10
+- CAP-11
+- CAP-13
+- CAP-14
+- CAP-15
 
-*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-02](../../referentiel/capabilites/cap-02.md), [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-04](../../referentiel/capabilites/cap-04.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [PP-01](../../referentiel/parties-prenantes/pp-01.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-04](../../referentiel/parties-prenantes/pp-04.md), [PP-05](../../referentiel/parties-prenantes/pp-05.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md) · [fiche](../../referentiel/flux-valeur/vs-01.md)*
+*Rattachement : CAP-01, CAP-02, CAP-03, CAP-04, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-01, PP-02, PP-04, PP-05, PP-06 · fiche VS-01*
 
 <!-- END:GENERATED -->
 ## Étapes de valeur
@@ -99,7 +99,7 @@ Méconnaissance des services, distance géographique, coût perçu dissuasif
 
 Taux de recours aux soins, délai moyen d'accès à une formation sanitaire
 
-*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-04](../../referentiel/capabilites/cap-04.md) · [fiche](../../referentiel/etapes-valeur/ev-01.md)*
+*Rattachement : CAP-01, CAP-04 · fiche EV-01*
 
 ### EV-02 — Accueil et enregistrement
 
@@ -127,7 +127,7 @@ Absence de registre, identité non vérifiable, files d'attente prolongées
 
 Taux de dossiers ouverts, délai d'enregistrement
 
-*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md) · [fiche](../../referentiel/etapes-valeur/ev-02.md)*
+*Rattachement : CAP-01, CAP-14, CAP-15 · fiche EV-02*
 
 ### EV-03 — Consultation et diagnostic
 
@@ -155,7 +155,7 @@ Absence d'historique médical, rupture de stock d'intrants de diagnostic
 
 Taux de consultations avec diagnostic documenté
 
-*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/etapes-valeur/ev-03.md)*
+*Rattachement : CAP-01, CAP-13 · fiche EV-03*
 
 ### EV-04 — Traitement et prise en charge
 
@@ -183,7 +183,7 @@ Ruptures de médicaments essentiels, absence de laboratoire fonctionnel
 
 Taux de disponibilité des médicaments traceurs
 
-*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md) · [fiche](../../referentiel/etapes-valeur/ev-04.md)*
+*Rattachement : CAP-01, CAP-10, CAP-11 · fiche EV-04*
 
 ### EV-05 — Référence et contre-référence
 
@@ -211,7 +211,7 @@ Référence effectuée sans dossier, absence de transport, absence de retour d'i
 
 Taux de référence complétée avec retour d'information
 
-*Rattachement : [CAP-02](../../referentiel/capabilites/cap-02.md) · [fiche](../../referentiel/etapes-valeur/ev-05.md)*
+*Rattachement : CAP-02 · fiche EV-05*
 
 ### EV-06 — Suivi et continuité des soins
 
@@ -239,7 +239,7 @@ Perte de vue du patient, absence de système de rappel, dossier longitudinal abs
 
 Taux de patients perdus de vue, taux d'observance thérapeutique
 
-*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-02](../../referentiel/capabilites/cap-02.md) · [fiche](../../referentiel/etapes-valeur/ev-06.md)*
+*Rattachement : CAP-01, CAP-02 · fiche EV-06*
 
 ### EV-07 — Amélioration de la qualité
 
@@ -267,7 +267,7 @@ Données collectées mais non analysées, absence de revue qualité régulière
 
 Proportion de formations sanitaires ayant réalisé une revue qualité dans le mois
 
-*Rattachement : [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/etapes-valeur/ev-07.md)*
+*Rattachement : CAP-03, CAP-13 · fiche EV-07*
 
 <!-- END:GENERATED -->
 ## Processus métier
@@ -283,8 +283,8 @@ Assurer l'entrée du patient dans le système de soins : reconnaissance du besoi
 
 #### Étapes couvertes
 
-- [EV-01 — Reconnaissance du besoin et orientation](../../referentiel/etapes-valeur/ev-01.md)
-- [EV-02 — Accueil et enregistrement](../../referentiel/etapes-valeur/ev-02.md)
+- EV-01 — Reconnaissance du besoin et orientation
+- EV-02 — Accueil et enregistrement
 
 #### Acteurs
 
@@ -294,7 +294,7 @@ Patient, famille, agent de santé communautaire, personnel d'accueil, registre p
 
 Taux de recours aux soins, délai moyen d'accès à une formation sanitaire, taux de dossiers ouverts, délai d'enregistrement
 
-*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-02](../../referentiel/capabilites/cap-02.md), [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-04](../../referentiel/capabilites/cap-04.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [PP-01](../../referentiel/parties-prenantes/pp-01.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-04](../../referentiel/parties-prenantes/pp-04.md), [PP-05](../../referentiel/parties-prenantes/pp-05.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md) · [fiche](../../referentiel/processus/prc-01.md)*
+*Rattachement : CAP-01, CAP-02, CAP-03, CAP-04, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-01, PP-02, PP-04, PP-05, PP-06 · fiche PRC-01*
 
 ### PRC-02 — Prestation des soins cliniques
 
@@ -304,9 +304,9 @@ Assurer le cœur clinique du parcours : consultation et diagnostic, traitement e
 
 #### Étapes couvertes
 
-- [EV-03 — Consultation et diagnostic](../../referentiel/etapes-valeur/ev-03.md)
-- [EV-04 — Traitement et prise en charge](../../referentiel/etapes-valeur/ev-04.md)
-- [EV-05 — Référence et contre-référence](../../referentiel/etapes-valeur/ev-05.md)
+- EV-03 — Consultation et diagnostic
+- EV-04 — Traitement et prise en charge
+- EV-05 — Référence et contre-référence
 
 #### Acteurs
 
@@ -316,7 +316,7 @@ Clinicien, dossier patient, pharmacie, laboratoire, formation sanitaire référe
 
 Taux de consultations avec diagnostic documenté, taux de disponibilité des médicaments traceurs, taux de référence complétée avec retour d'information
 
-*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-02](../../referentiel/capabilites/cap-02.md), [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-04](../../referentiel/capabilites/cap-04.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [PP-01](../../referentiel/parties-prenantes/pp-01.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-04](../../referentiel/parties-prenantes/pp-04.md), [PP-05](../../referentiel/parties-prenantes/pp-05.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md) · [fiche](../../referentiel/processus/prc-02.md)*
+*Rattachement : CAP-01, CAP-02, CAP-03, CAP-04, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-01, PP-02, PP-04, PP-05, PP-06 · fiche PRC-02*
 
 ### PRC-03 — Continuité, suivi et qualité des soins
 
@@ -326,8 +326,8 @@ Garantir la continuité des soins après l'épisode et l'amélioration continue 
 
 #### Étapes couvertes
 
-- [EV-06 — Suivi et continuité des soins](../../referentiel/etapes-valeur/ev-06.md)
-- [EV-07 — Amélioration de la qualité](../../referentiel/etapes-valeur/ev-07.md)
+- EV-06 — Suivi et continuité des soins
+- EV-07 — Amélioration de la qualité
 
 #### Acteurs
 
@@ -337,10 +337,15 @@ Agent de santé communautaire, clinicien, patient, gestionnaire de formation san
 
 Taux de patients perdus de vue, taux d'observance thérapeutique, proportion de formations sanitaires ayant réalisé une revue qualité dans le mois
 
-*Rattachement : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-02](../../referentiel/capabilites/cap-02.md), [CAP-03](../../referentiel/capabilites/cap-03.md), [CAP-04](../../referentiel/capabilites/cap-04.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [PP-01](../../referentiel/parties-prenantes/pp-01.md), [PP-02](../../referentiel/parties-prenantes/pp-02.md), [PP-04](../../referentiel/parties-prenantes/pp-04.md), [PP-05](../../referentiel/parties-prenantes/pp-05.md), [PP-06](../../referentiel/parties-prenantes/pp-06.md) · [fiche](../../referentiel/processus/prc-03.md)*
+*Rattachement : CAP-01, CAP-02, CAP-03, CAP-04, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-01, PP-02, PP-04, PP-05, PP-06 · fiche PRC-03*
 
 <!-- END:GENERATED -->
 ## Liens
 
 - [Flux de valeur](./index.md)
-- [Capabilités](../03_capabilities/index.md)
+- Capabilités
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)

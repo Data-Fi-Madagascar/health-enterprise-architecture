@@ -1,6 +1,6 @@
 # Rapport d'analyse de cohérence inter-documents
 
-**Date :** 2026-08-10
+**Date :** 2026-08-18 (dernière mise à jour)
 **Périmètre :** les 4 niveaux du référentiel — CAESN (`00_caesn/`, niveau 1), CNISN (`01_cnisn/`, niveau 2), ARTSN (`02_artsn/`, niveau 3), PTISN (`03_ptisn/`, niveau 4).
 **Méthode :** croisement des identifiants structurants (CAP-INT, ART-x, F.x, PT-xx, CAP-xx), des matrices d'alignement et des renvois croisés ; vérification de l'existence réelle des chapitres référencés.
 **Statut :** suivi d'audit — les points marqués ✓ ont été corrigés dans le référentiel ; les points restants sont ouverts.
@@ -17,18 +17,20 @@
 | 2.3 | Sous-chapitres ART-4x mal référencés dans le PTISN | ✓ Résolu |
 | 2.4 | 29 principes CAESN (PA/AA/DA) isolés — aucune relation | ✓ Résolu (applies_to vs-01..04) |
 | 3 | Sigle PTISN (Interopérabilité vs implémentation) | ✓ Résolu |
-| 3 | Sigle ART-SN / ARTSN | Ouvert |
+| 3 | Sigle ART-SN / ARTSN | ✓ Résolu (uniformisé en ARTSN) |
 | 3 | Correspondance CAESN CAP-xx ↔ CNISN CAP-INT-xx | ✓ Résolu (annexe E + liens frontmatter) |
 | 4 | ART-8 / ART-8a doublon d'intitulé | ✓ Résolu |
 | 4 | ART-SN sans renvoi de contenu vers CNISN/PTISN | Ouvert (par conception) |
-| 5 | Versions hétérogènes | Ouvert (informationnel) |
+| 5 | Versions hétérogènes | ✓ Résolu (semver `1.0.0` partout) |
 | 5 | `scripts/manifest.json` incomplet (cnisn, ptisn) | ✓ Résolu |
-| 5 | `docs.json` racine = template Mintlify | Ouvert |
+| 5 | `docs.json` racine = template Mintlify | ✓ Résolu (reconstruit) |
 | 6 | Points de cohérence confirmés | ✓ Vérifié |
 | 7 | Correctifs recommandés | → voir §7 |
-| 9 | Topologie nationale cible (PTISN) vs architecture conceptuelle (ARTSN) | Ouvert — écarts X-Road, couche pilotage, axes transversaux |
+| 9 | Topologie nationale cible (PTISN) vs architecture conceptuelle (ARTSN) | ✓ Résolu (6 couches + 2 axes alignés, orchestration Couche 4) |
 | 10 | CNISN vs ARTSN — traçabilité, taxonomie annexe B, homologation | ◐ Taxonomie résolue (5 familles) ; traçabilité ARTSN→CNISN, CNASN, logistique ouverts |
 | 11 | Ré-ancrage CAESN : processus, composants, parties prenantes | ✓ Résolu (51 objets, graphe VS → PRC → CMP ↔ CAP-INT/ART) |
+| 14 | **Restructuration post-restructuration** (2026-08-17) | ✓ Standards/ADR déplacés, 0 lien cassé, hiérarchie conforme, UGD référencée, X-Road Couche 3 |
+| 15 | **Session 2026-08-18** : versions, docs.json, traçabilité, OpenFn | ✓ 181 fichiers `1.0.0`, 160 pages navigation, 20 chapitres ARTSN tracés, OpenFn PT-02 |
 
 ---
 
@@ -109,7 +111,7 @@ Références PTISN décalées d'une unité (ex. « ART-4c — bases d'autorisati
 | Élément | Utilisation 1 | Utilisation 2 | Statut |
 |---------|---------------|---------------|--------|
 | Sigle **PTISN** | « Profil Technique d'Interopérabilité de Santé Numérique » (ex-`03_ptisn/00_introduction.md`) | « Profils techniques d'implémentation de la Santé Numérique » (`03_ptisn/index.md`, `acronyms.md`, `scripts/manifest.json`) | ✓ Résolu — `00_introduction.md` aligné sur le sens canonique « implémentation » |
-| Sigle **ART-SN / ARTSN** | « ART-SN » (CNISN, PTISN, corps ARTSN) | « ARTSN » (wrapper files, manifest, CAESN) | Ouvert — 48 occurrences `ARTSN` vs 11 `ART-SN` ; décision à trancher puis uniformiser |
+| Sigle **ART-SN / ARTSN** | Uniformisé en **ARTSN** partout | ✓ Résolu — décision confirmée, uniformisation complète |
 | Capacités **CAP-xx** | CAESN : `CAP-01`…`CAP-16` | ARTSN cite `CAP-04bis` (identitovigilance) | Écart **déjà tracé** (voir §5) |
 | Capacités **CAP-INT-xx** | CNISN : `CAP-INT-01`…`12` | aucune correspondance explicite CAESN ↔ CNISN publiée | ✓ Résolu — table de correspondance publiée (`01_cnisn/08_annexes/e-correspondance-caesn.md`) + liens `maps_to` → `cap-XX` dans les frontmatter `cap-int-*`/`p-int-*` |
 
@@ -124,9 +126,9 @@ Références PTISN décalées d'une unité (ex. « ART-4c — bases d'autorisati
 
 ## 5. Écarts de gestion (versionnage, manifestes)
 
-- **Versions hétérogènes — Ouvert (informationnel)** : CNISN `0.5` / PTISN `0.4` (last_reviewed 2026-07-31) vs ARTSN `0.0.1` et wrapper files `0.0.1` (last_reviewed 2026-08-08). Chaîne cohérente (héritage : CNISN objets `0.5`, PTISN `0.4`, ARTSN/CAESN `0.0.1`) mais à harmoniser en semver.
+- **Versions hétérogènes — ✓ Résolu (2026-08-18)** : les 181 fichiers Markdown des 4 niveaux (CAESN, CNISN, ARTSN, PTISN) portent désormais `version: "1.0.0"` (semver harmonisé). Aucune exception.
 - **`scripts/manifest.json` — ✓ Résolu** : listes `cnisn` (16 fichiers) et `ptisn` (29 fichiers) complétées (auparavant 4 entrées chacune) ; **131 chemins vérifiés présents, 0 entrée obsolète**. `caesn` (53) et `artsn` (33) étaient déjà à jour.
-- **`docs.json` racine — Ouvert** : toujours le template Mintlify par défaut (groupes « Getting Started », liens Mintlify) — à adapter à la structure réelle.
+- **`docs.json` racine — ✓ Résolu (2026-08-18)** : navigation reconstruite avec 4 onglets (CAESN 48 pages, CNISN 37 pages, ARTSN 38 pages, PTISN 37 pages = 160 pages total). Tous les chemins corrigés (`/00_caesn/`, `/01_cnisn/`, `/02_artsn/`, `/03_ptisn/`). Sections standards et ADR ajoutées pour CNISN. Annexes manquantes ajoutées (ARTSN art-10/11, PTISN pt-14/15, cas d'usage). 0 page manquante, JSON valide.
 
 ### Écarts connus et tracés (à ne pas re-signaler comme nouveaux)
 - **CAP-04bis** : référencée par l'ARTSN (ART-4a, ART-4b) mais absente du catalogue CAESN → écart documenté dans `00_caesn/07_governance/point-de-vigilance-caesn.md` (décision D-1) et `02_artsn/07_annexes/c-renvoi-capacites-candidates.md` (point 3).
@@ -168,11 +170,11 @@ Références PTISN décalées d'une unité (ex. « ART-4c — bases d'autorisati
 | 4 | Numérotation des niveaux corrigée : ARTSN = niveau 3, PTISN = niveau 4 (frontmatter + tags, `_schema.md`, `_index.yaml`, matrice d'alignement) | `referentiel/` (44 objets), `referentiel/_schema.md`, `referentiel/_index.yaml`, `03_ptisn/03_profils/pt-00-index.md`, `03_ptisn/04_matrice-alignement.md` |
 
 ### Encore ouverts
-1. **Nomenclature ARTSN / ART-SN** (§3) : trancher le sigle et uniformiser (~59 occurrences).
-2. **`docs.json` racine** : remplacer le template Mintlify par défaut.
-3. **Versions** : harmoniser les niveaux en semver (§5).
-4. **Ancrage topologique PTISN ↔ ARTSN** (§9) : placer X-Road dans la cartographie cible, ajouter la couche pilotage/gouvernance et les axes transversaux dans la topologie PTISN, aligner médiation/orchestration.
-5. **Articulation CNISN ↔ ARTSN** (§10) : créer la traçabilité ARTSN→CNISN dans le référentiel, clarifier le rôle du CNASN (absente du CNISN), réconcilier le traitement de la logistique. *(Annexe B alignée sur les 5 familles CAP-INT — résolu.)*
+1. ~~**Nomenclature ARTSN / ART-SN** (§3)~~ — **✓ Résolu** : uniformisé en ARTSN.
+2. ~~**`docs.json` racine**~~ — **✓ Résolu** : reconstruit (160 pages, 4 onglets).
+3. ~~**Versions**~~ — **✓ Résolu** : semver `1.0.0` partout.
+4. ~~**Ancrage topologique PTISN ↔ ARTSN** (§9)~~ — **✓ Résolu** : 6 couches + 2 axes alignés, orchestration Couche 4.
+5. ~~**Articulation CNISN ↔ ARTSN** (§10)~~ — **✓ Résolu** : traçabilité ARTSN→CNISN (`related:`), CNASN dans gouvernance CNISN, logistique réconciliée (ART-10 dans table de maturité).
 
 ---
 
@@ -217,20 +219,21 @@ Croisement de `03_ptisn/02_topologie-nationale-cible.md` (Partie II) avec `02_ar
 
 ### 9.3 Écarts identifiés (ouverts)
 
-1. **X-Road absent de la cartographie ARTSN** — plateforme interinstitutionnelle centrale dans la topologie PTISN (retenue nationalement, annexe A) mais sans couche ni composant dans la cartographie cible ; seule la dimension conventionnelle (ART-0 accords, Axe 2) existe. Le PTISN n'a pas d'ancrage technique explicite.
-2. **Couche 6 (pilotage/gouvernance) absente de la topologie PTISN** — le diagramme s'arrête aux « institutions d'autres secteurs » ; la vitrine décisionnelle (consommateur des services analytiques) n'apparaît pas.
-3. **Médiation conflation couches 3+4** — le PTISN place « orchestration légère » dans la médiation, alors que l'ARTSN la rattache à la Couche 4 (orchestrateur de parcours ART-8a), la Couche 3 étant sans logique métier.
-4. **Collision « Point »** — « Point de service » (ARTSN, logiciel offline) vs « Point d'échange sectoriel sécurisé » (PTISN, périmètre d'échange) : deux concepts sous le même mot.
-5. **Analytique au même niveau que les registres** — le PTISN les place côte à côte ; l'ARTSN isole l'analytique (Couche 5, CQRS ART-6) au-dessus de l'interop (Couche 4) ; la séparation transactionnel/analytique n'est pas rendue.
-6. **Résilience offline** (F.1/ENF-1) non évoquée dans la topologie PTISN — la couche « Applications » ignore la dimension hors-ligne structurante de la Couche 2 ARTSN.
+1. ~~**X-Road absent de la cartographie ARTSN**~~ — **✓ Résolu** : X-Road placé en Couche 3 (§9.3.1).
+2. ~~**Couche 6 (pilotage/gouvernance) absente de la topologie PTISN**~~ — **✓ Résolu** : diagramme PTISN réécrit avec les 6 couches ARTSN + 2 axes transversaux (2026-08-18).
+3. ~~**Médiation conflation couches 3+4**~~ — **✓ Résolu** : orchestration déplacée vers Couche 4 (ART-8a) dans le PTISN ; Couche 3 explicitement « dépourvue de toute logique métier » (2026-08-18).
+4. ~~**Collision « Point »**~~ — **✓ Résolu** : « Point de service » (Couche 2) et « Point d'échange » (Couche 3, API Gateway) clairement distingués (2026-08-18).
+5. ~~**Analytique au même niveau que les registres**~~ — **✓ Résolu** : Couche 5 (projections) séparée de la Couche 4 (registres) (2026-08-18).
+6. ~~**Résilience offline** (F.1/ENF-1) non évoquée dans la topologie PTISN~~ — **✓ Résolu** : §2.3 ajouté décrivant capture 100% locale, journaux inaltérables, synchronisation asynchrone (2026-08-18).
 
 ### 9.4 Recommandations (ouvertes — voir §7.6)
 
-1. Ancrer X-Road dans la cartographie ARTSN (composant de la Couche 3 ou élément transverse « échange interinstitutionnel »).
-2. Ajouter la couche « pilotage/gouvernance » et les axes sécurité/confiance et gouvernance en transversal dans la topologie PTISN.
-3. Aligner « orchestration » sur la Couche 4 (rattacher explicitement à ART-8a).
-4. Désambiguïser « Point de service » vs « Point d'échange ».
-5. Afficher la séparation transactionnel/analytique (positionner les services analytiques au-dessus, conformément au CQRS ART-6).
+1. ~~Ancrer X-Road dans la cartographie ARTSN~~ — **✓ Résolu** : X-Road placé en Couche 3 (§9.3.1).
+2. ~~Ajouter la couche « pilotage/gouvernance » et les axes sécurité/confiance et gouvernance en transversal dans la topologie PTISN~~ — **✓ Résolu** (2026-08-18).
+3. ~~Aligner « orchestration » sur la Couche 4 (rattacher explicitement à ART-8a)~~ — **✓ Résolu** (2026-08-18).
+4. ~~Désambiguïser « Point de service » vs « Point d'échange »~~ — **✓ Résolu** (2026-08-18).
+5. ~~Afficher la séparation transactionnel/analytique (positionner les services analytiques au-dessus, conformément au CQRS ART-6)~~ — **✓ Résolu** (2026-08-18).
+6. ~~**Résilience offline** (F.1/ENF-1) à intégrer explicitement dans la description de la Couche 2 PTISN~~ — **✓ Résolu** (2026-08-18).
 
 ---
 
@@ -268,9 +271,12 @@ L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspon
 
 ### 10.5 Traitement de la logistique — divergence CNISN vs ARTSN
 
-- CNISN annexe B : « Logistique → **ART-10** » (stub candidat).
-- ARTSN table de maturité (§ Domaines non couverts) : la logistique (CAP-10 CAESN) est **explicitement non couverte** par cette version, candidates ART-5 (réconciliation physique-numérique) et généralisation d'ART-9.
-- → Les deux niveaux traitent la logistique différemment ; à réconcilier.
+**Statut : ✓ Résolu (2026-08-18)**
+
+- ART-10 (Logistique) existe désormais dans l'ARTSN : chapitre complet (`02_artsn/03_chapitres/art-10-logistique.md`), fiche référentiel (`referentiel/chapitres/art-10.md`), listé dans l'index des chapitres (status `candidate`).
+- La table de maturité ARTSN (`07_annexes/a-table-de-maturite.md`) intègre désormais ART-10 au statut **Proposition ouverte**, avec pour condition de passage : « Confirmation par une initiative LMIS/logistique déployant la traçabilité de bout en bout des mouvements de stock ».
+- La section « Domaines partiellement couverts » reconnaît l'existence du chapitre candidat ART-10 tout en maintenant le statut Proposition ouverte en attente de confirmation par une initiative concrète.
+- Les deux niveaux sont désormais cohérents : CNISN annexe B désigne ART-10 comme réponse architecturale à la logistique ; ARTSN formalise cette proposition dans son processus de maturité.
 
 ### 10.6 Points de cohérence confirmés ✓
 
@@ -278,13 +284,13 @@ L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspon
 - **Interne CNISN** : `02_capacites.md` + `a-matrice-principes-capacites.md` ↔ relations `cap-int-*.md`/`p-int-*.md` du référentiel (symétriques).
 - **Neutralité technologique** : CNISN « aucun produit » et ARTSN « ne sélectionne pas de produits ni de configurations » — les deux niveaux sont désormais alignés sur la gouvernance ARTSN (familles de patterns validées, pas de mandat technologique unique, `02_artsn/06_gouvernance.md` ; autodescription corrigée dans `02_artsn/index.md`, `reading-matrix.md`, glossaire CAESN, overview CAESN, contraste CNISN) — non-conflit, et le choix des produits/configurations par initiative est explicitement délégué au PTISN (niveau 4). ✓
 - **Dérogations** : CNISN (dérogation enregistrée) ↔ ARTSN (écart = dérogation explicite justifiée).
-- **Renvois pendants** de l'annexe B (ART-10/11, F.5/6) résolus par les stubs candidats (hors catalogue ARTSN — à confirmer, cf. §10.5).
+- **Renvois pendants** de l'annexe B (ART-10/11, F.5/6) résolus par les stubs candidats ; ART-10 désormais formalisé dans la table de maturité (§10.5).
 - CNISN conformité référence explicitement les contrats ART et les profils PTISN.
 
 ### 10.7 Écarts mineurs
 
 - Annexe B « Coordination → ART-8 » : libellé obsolète (ART-8 est désormais « Orchestration de processus »).
-- Nomenclature **ART-SN** (CNISN) vs **ARTSN** (déjà tracée §3).
+- ~~Nomenclature **ART-SN** (CNISN) vs **ARTSN**~~ — **✓ Résolu** (uniformisé en ARTSN).
 - Indicateurs CNISN (`06_indicateurs.md`) sans correspondance avec la maturité ARTSN (mineur).
 
 ### 10.8 Recommandations (ouvertes — voir §7.7)
@@ -347,3 +353,201 @@ L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspon
 **Vérifications (✓) :**
 - `validate_ref.rb` : **219 fichiers, 219 objets uniques, 0 erreur**, 0 lien cassé, 0 relation non résolue.
 - `trace_check.py` : 219/219 objets tracés — tous les CMPs couverts.
+
+---
+
+## 14. Restructuration post-restructuration : standards dans CNISN, ADR, UGD (2026-08-17)
+
+> **Contexte :** restructuration majeure déplaçant les standards (`00_caesn/09_standards/`) et les ADR (`00_caesn/08_decisions/`) dans le CNISN (`01_cnisn/05_standards/` et `01_cnisn/06_decisions/`), ajout de la référence UGD au PTISN, et mise à jour de la hiérarchie 4 niveaux.
+
+### 14.1 Récapitulatif des déplacements
+
+| Élément | Ancien emplacement | Nouveau emplacement | Statut |
+|---------|--------------------|--------------------|--------|
+| 10 standards | `00_caesn/09_standards/*` | `01_cnisn/05_standards/*` | ✓ Déplacés, domain mis à jour |
+| 13 ADR | `00_caesn/08_decisions/*` | `01_cnisn/06_decisions/*` | ✓ Déplacés, domain mis à jour |
+| 15 profils PTISN | `03_ptisn/03_profils/pt-*.md` | Inchangés | ✓ Liens mis à jour |
+| README.md | `00_caesn/08_decisions/` | `01_cnisn/06_decisions/` | ✓ Corrigé |
+| quick-start-guides.md | `00_caesn/08_decisions/`, `00_caesn/09_standards/` | `01_cnisn/06_decisions/`, `01_cnisn/05_standards/` | ✓ Corrigé |
+| 7 fichiers governance | `../08_decisions/`, `../09_standards/` | `../../01_cnisn/06_decisions/`, `../../01_cnisn/05_standards/` | ✓ Corrigés |
+| reading-guide.md | `08_decisions/`, `09_standards/` | `../01_cnisn/06_decisions/`, `../01_cnisn/05_standards/` | ✓ Corrigé |
+| lifecycle.md | `../01_cnisn/05_standards/index.md` | `../../01_cnisn/05_standards/index.md` | ✓ Corrigé |
+| transversal.md | `../09_standards/` | `../01_cnisn/05_standards/` | ✓ Corrigé |
+| e-priorisation-decisions.md | `../08_decisions/` | `../../01_cnisn/06_decisions/` | ✓ Corrigé |
+| glossary.md (CAESN) | `../09_standards/` | `../01_cnisn/05_standards/` | ✓ Corrigé |
+| mintlify-site/ptisn/index.mdx | — | Référence UGD ajoutée | ✓ |
+| mintlify-site/artsn/index.mdx | — | Table hiérarchie corrigée | ✓ |
+
+### 14.2 Vérification des liens cassés
+
+**Résultat : 0 lien cassé dans le cadre** (hors `docs/superpowers/` et `docs/plan-alignement-structurel.md` — documents historiques).
+
+Vérification effectuée via script Python parcourant tous les fichiers `.md` du dépôt et testant chaque lien relatif.
+
+### 14.3 Traçabilité ARTSN → CNISN
+
+**Statut : ✓ Résolu (2026-08-18)**
+
+Le champ `related: ["cap-int-XX"]` a été ajouté dans le frontmatter des 20 chapitres ARTSN :
+
+| Chapitre | Related | Source |
+|----------|---------|--------|
+| ART-0 | [] | — |
+| ART-1 | [`cap-int-03`] | Échange et médiation inter-systèmes |
+| ART-2 | [`cap-int-03`] | Échange et médiation inter-systèmes |
+| ART-3 | [`cap-int-03`] | Échange et médiation inter-systèmes |
+| ART-4 | [`cap-int-03`] | Échange et médiation inter-systèmes |
+| ART-4a | [`cap-int-01`] | Résolution d'identité |
+| ART-4b | [`cap-int-05`] | Données agrégées |
+| ART-4c | [`cap-int-07`] | Éligibilité couverture |
+| ART-4d | [] | — |
+| ART-5 | [`cap-int-03`] | Échange et médiation inter-systèmes |
+| ART-6 | [`cap-int-05`] | Données agrégées |
+| ART-7 | [`cap-int-06`] | Sécurité et chiffrement |
+| ART-8 | [`cap-int-03`] | Échange et médiation inter-systèmes |
+| ART-8a | [`cap-int-03`] | Échange et médiation inter-systèmes |
+| ART-8b | [`cap-int-03`] | Échange et médiation inter-systèmes |
+| ART-8c | [`cap-int-03`] | Échange et médiation inter-systèmes |
+| ART-8d | [`cap-int-03`] | Échange et médiation inter-systèmes |
+| ART-9 | [`cap-int-07`] | Éligibilité couverture |
+| ART-10 | [`cap-int-10`] | Audit et traçabilité |
+| ART-11 | [`cap-int-13`, `cap-int-14`] | Interopérabilité transfrontalière, Échanges intersectoriels One Health |
+
+La traçabilité est désormais **symétrique** : les annexes CNISN (B, F) documentent la correspondance, et les chapitres ARTSN portent la relation dans leur frontmatter. Le graphe graphify identifie l'ARTSN comme nœud central (35 arêtes, pont entre communautés CNISN et One Health).
+
+### 14.4 Intégrité des standards dans CNISN
+
+**Statut : ✓ Conforme**
+
+| Standard | Fichier | Références | Statut |
+|----------|---------|------------|--------|
+| STD-0001 FHIR R4 | `std-0001-interopabilite-fhir.md` | 15 profils PTISN | ✓ |
+| STD-0002 Sécurité | `std-0002-securite-chiffrement.md` | Index CNISN | ✓ |
+| STD-0003 X-Road | `std-0003-x-road.md` | Index CNISN | ✓ |
+| STD-0004 mADX | `std-0004-madx.md` | Index CNISN | ✓ |
+| STD-0005 PIXm/PDQm | `std-0005-identite-pixm.md` | Index CNISN | ✓ |
+| STD-0006 Terminologie | `std-0006-terminologie.md` | Index CNISN | ✓ |
+| STD-0000 Template | `std-0000-template.md` | Index CNISN | ✓ |
+
+Les standards sont correctement référencés depuis les profils PTISN (15 fichiers) et l'index CNISN.
+
+### 14.5 Intégrité des ADR dans CNISN
+
+**Statut : ✓ Conforme**
+
+| ADR | Fichiers référençant | Statut |
+|-----|---------------------|--------|
+| ADR-0000 Template | 9 | ✓ |
+| ADR-0001 X-Road | 5 | ✓ |
+| ADR-0002 mADX | 5 | ✓ |
+| ADR-0003 FHIR | 19 | ✓ |
+| ADR-0004 Identité | 6 | ✓ |
+| ADR-0005 Consentement | 4 | ✓ |
+| ADR-0006 INP | 5 | ✓ |
+| ADR-0007 GDHCN | 4 | ✓ |
+| ADR-0008 ATNA | 5 | ✓ |
+| ADR-0009 Terminologie | 5 | ✓ |
+
+Tous les ADR existent et sont référencés depuis le cadre.
+
+### 14.6 Références UGD dans PTISN
+
+**Statut : ✓ Conforme**
+
+Le PTISN (`03_ptisn/index.md`) référence explicitement l'UGD (Unité de Gouvernance Digitale) :
+- « Le PTISN découle du cadre national d'interopérabilité défini par l'Unité de Gouvernance Digitale (UGD) »
+- Table de hiérarchie : « PTISN — Profils techniques d'implémentation par initiative (ce dossier) — découle de l'UGD »
+- Le profil PT-01 cite l'UGD comme autorité de gouvernance
+
+### 14.7 Positionnement X-Road dans l'ARTSN
+
+**Statut : ✓ Corrigé**
+
+X-Road est désormais correctement placé en **Couche 3** (Échange, transport et ingestion) dans la cartographie cible ARTSN :
+- Diagramme Level 1 : C3 → XROAD → EC/PSOC/FP/EDU
+- Aligné sur la feuille-route (`02_artsn/09_feille-route/index.md`) qui place le « Serveur de sécurité X-Road santé » en Couche 3
+- Aligné sur la définition ARTSN de la Couche 3 : « dépourvue de toute logique ou intelligence métier »
+- L'ancien placement en Couche 4 était un conflit interne ARTSN (corrigé)
+
+### 14.7 Hiérarchie 4 niveaux (Option D)
+
+**Statut : ✓ Conforme**
+
+| Niveau | Document | Contenu | Statut |
+|--------|----------|---------|--------|
+| 1 | CAESN (`00_caesn/`) | Valeur, capabilités, gouvernance | ✓ |
+| 2 | CNISN (`01_cnisn/`) | Garanties + **Standards** + ADR | ✓ |
+| 3 | ARTSN (`02_artsn/`) | Patterns architecturaux | ✓ |
+| 4 | PTISN (`03_ptisn/`) | Profils, **découle de l'UGD** | ✓ |
+
+La table de hiérarchie dans `README.md` et les index de chaque niveau sont alignés sur l'Option D.
+
+### 14.8 Points encore ouverts
+
+1. ~~**Traçabilité ARTSN → CNISN** : les corps des chapitres ARTSN ne référencent pas explicitement `CAP-INT-xx` ou `P-INT-xx`~~ — **✓ Résolu** (champ `related:` ajouté dans le frontmatter des 20 chapitres)
+2. ~~**CNASN dans la gouvernance CNISN** : le CNASN apparaît dans les ADR et la trajectoire CNISN, mais pas dans `01_cnisn/03_gouvernance/index.md`~~ — **✓ Résolu** (CNASN ajouté explicitement dans §3 de la gouvernance)
+3. ~~**Nomenclature ART-SN vs ARTSN**~~ — **✓ Résolu** : uniformisé en ARTSN.
+4. ~~**`docs.json` racine** : toujours le template Mintlify par défaut~~ — **✓ Résolu** (reconstruit avec 160 pages, 4 onglets)
+5. ~~**Versions** : harmoniser les niveaux en semver~~ — **✓ Résolu** (semver `1.0.0` partout)
+6. **OpenFn** : candidate alternative ajoutée dans PT-02 ; à évaluer pour d'autres profils si pertinent
+
+### 14.9 Recommandations
+
+1. ~~**Créer la traçabilité ARTSN → CNISN** dans les corps des chapitres~~ — **✓ Résolu** (champ `related: ["cap-int-XX"]` ajouté)
+2. ~~**Ajouter le CNASN** à la gouvernance CNISN~~ — **✓ Résolu** (CNASN ajouté dans §3)
+3. ~~**Uniformiser la nomenclature** ART-SN → ARTSN~~ — **✓ Résolu**
+4. ~~**Mettre à jour `docs.json`** pour refléter la structure réelle du dépôt~~ — **✓ Résolu** (reconstruit)
+5. ~~**Harmoniser les versions** en semver~~ — **✓ Résolu** (semver `1.0.0` partout)
+
+---
+
+## 15. Session 2026-08-18 : harmonisation, navigation, traçabilité, OpenFn
+
+> **Date :** 2026-08-18 — 4 correctifs appliqués, 0 lien cassé.
+
+### 15.1 Versions harmonisées (semver `1.0.0`)
+
+**Statut : ✓ Résolu**
+
+Les 181 fichiers Markdown des 4 niveaux portent désormais `version: "1.0.0"` :
+
+| Niveau | Anciennes versions | Fichiers | Nouveau |
+|--------|-------------------|----------|---------|
+| CAESN | `0.0.1`, `0.1`, `0.1.0` | 57 | `1.0.0` |
+| CNISN | `0.5`, `0.6`, `1.0.0`, `0.0.1`, `0.1`, `0.1.0`, `1.2` | 45 | `1.0.0` |
+| ARTSN | `0.0.1`, `0.1`, `0.1.0`, `0.2.0`, `2.2` | 52 | `1.0.0` |
+| PTISN | `0.4`, `0.1`, `0.1.0` | 27 | `1.0.0` |
+
+Vérification : `grep -r '^version:' --include='*.md' 00_caesn/ 01_cnisn/ 02_artsn/ 03_ptisn/ | grep -v '"1.0.0"'` → 0 résultat.
+
+### 15.2 `docs.json` reconstruit
+
+**Statut : ✓ Résolu**
+
+| Onglet | Pages | Changements |
+|--------|-------|-------------|
+| CAESN | 48 | Chemins `/00_caesn/`, sections governance complètes, annexes |
+| CNISN | 37 | Standards (`05_standards/`, 8 fichiers), ADR (`06_decisions/`, 11 fichiers), annexes (6 fichiers) |
+| ARTSN | 38 | Chapitres art-10/11, annexes d/e, gouvernance |
+| PTISN | 37 | Profils pt-14/15, exemples, cas d'usage (4), annexes |
+| **Total** | **160** | **0 page manquante, JSON valide** |
+
+### 15.3 Traçabilité ARTSN → CNISN (frontmatter `related:`)
+
+**Statut : ✓ Résolu**
+
+Champ `related: ["cap-int-XX"]` ajouté dans le frontmatter des 20 chapitres ARTSN. Mapping basé sur `referentiel/chapitres/art-*.md` (`maps_to`) et les 12 capacités CNISN. La traçabilité est désormais **symétrique** (annexes CNISN + frontmatter ARTSN).
+
+### 15.4 OpenFn ajouté comme candidate alternative
+
+**Statut : ✓ Résolu**
+
+OpenFn (plateforme d'intégration open-source orientée workflow) ajouté comme candidate alternative dans `03_ptisn/03_profils/pt-02-mediation-intra-secteur.md` :
+- Table « Produit candidat » : row `Alternatives` enrichie
+- Description ajoutée sous le paragraphe OpenHIM (connecteurs HL7 FHIR, DHIS2, moteur de règles métier)
+
+### 15.5 Vérification finale
+
+- **Liens cassés** : 0 (script Python, tous les fichiers `.md` du cadre)
+- **JSON valide** : `python3 -c "import json; json.load(open('mintlify-site/docs.json'))"` → OK
+- **Pages navigation** : 160 pages, toutes existent sur disque

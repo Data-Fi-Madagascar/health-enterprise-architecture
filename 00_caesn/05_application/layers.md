@@ -2,7 +2,7 @@
 title: Paysage applicatif cible
 id: application-target-layers
 domain: 05_application
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Direction des Systèmes d'Information
@@ -23,7 +23,7 @@ tags: [applications, couches, paysage, cible]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 Le paysage applicatif national est organisé en six couches complémentaires :
 
@@ -78,11 +78,11 @@ Lieux et acteurs qui utilisent les services : patients et ménages, agents de sa
 
 ## 2. Applications métier
 
-Applications directement liées aux processus de santé : soins et parcours patient, santé communautaire, surveillance épidémiologique, vaccination et prévention, protection financière, logistique, ressources humaines, qualité des soins, planification et coordination. Voir [domaines applicatifs](./application-domains.md).
+Applications directement liées aux processus de santé : soins et parcours patient, santé communautaire, surveillance épidémiologique, vaccination et prévention, protection financière, logistique, ressources humaines, qualité des soins, planification et coordination. Voir domaines applicatifs.
 
 ## 3. Plateformes et services partagés
 
-Composants nationaux réutilisables : référentiels (FOSA, géographie, agents, produits, indicateurs), registre des bénéficiaires, services d'identité, d'authentification, d'accès, de notification, de consentement, catalogue des API, registre des initiatives. Voir [services partagés](./shared-services.md).
+Composants nationaux réutilisables : référentiels (FOSA, géographie, agents, produits, indicateurs), registre des bénéficiaires, services d'identité, d'authentification, d'accès, de notification, de consentement, catalogue des API, registre des initiatives. Voir services partagés.
 
 ## 4. Couche nationale d'échange
 
@@ -90,7 +90,7 @@ Assure la médiation entre systèmes, la transformation des formats, le routage,
 
 ## 5. Données, analyse et pilotage
 
-Composants d'usage décisionnel : entrepôt national, tableaux de bord, outils d'analyse, rapports nationaux, suivi des indicateurs et des bénéfices, revues de performance. Voir [entrepôt](../04_data/governance.md).
+Composants d'usage décisionnel : entrepôt national, tableaux de bord, outils d'analyse, rapports nationaux, suivi des indicateurs et des bénéfices, revues de performance. Voir entrepôt.
 
 ## 6. Infrastructure, sécurité et exploitation
 
@@ -98,6 +98,16 @@ Soutien de l'ensemble : hébergement souverain, connectivité différenciée, sa
 
 ## Liens
 
-- [Architecture applicative](./index.md)
-- [Référentiels](../04_data/referentials.md)
-- [Services partagés](./shared-services.md)
+- Architecture applicative
+- Référentiels
+- Services partagés
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **domaines applicatifs** — Domaines applicatifs cibles par flux de valeur (`00_caesn/05_application/application-domains.md`)
+- **services partagés** — Services numériques partagés prioritaires (`00_caesn/05_application/shared-services.md`)
+- **entrepôt** — Gouvernance, qualité et protection des données (`00_caesn/04_data/governance.md`)
+- **Architecture applicative** — Architecture applicative et systèmes numériques (`00_caesn/05_application/index.md`)
+- **Référentiels** — Référentiels nationaux (`00_caesn/04_data/referentials.md`)
+- **Services partagés** — Services numériques partagés prioritaires (`00_caesn/05_application/shared-services.md`)

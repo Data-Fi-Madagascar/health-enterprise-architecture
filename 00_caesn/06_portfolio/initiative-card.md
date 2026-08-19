@@ -2,7 +2,7 @@
 title: Fiche standard d'initiative orientée valeur
 id: initiative-card
 domain: 06_portfolio
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Bureau de Réalisation de la Valeur
@@ -23,7 +23,7 @@ tags: [portefeuille, fiche, initiative]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 Toute initiative soumise au portefeuille national doit être décrite selon une fiche standard. L'incapacité à renseigner les champs essentiels signifie que l'initiative n'est pas assez mûre pour être financée, déployée ou généralisée.
 
@@ -87,6 +87,12 @@ Toute initiative soumise au portefeuille national doit être décrite selon une 
 
 ## Liens
 
-- [Portefeuille](./index.md)
-- [Chaîne de valeur](./value-chain.md)
-- [Registre des initiatives](./index.md#registre-national-des-initiatives)
+- Portefeuille
+- Chaîne de valeur
+- Registre des initiatives
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Portefeuille** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
+- **Chaîne de valeur** — Chaîne de valeur d'une initiative (`00_caesn/06_portfolio/value-chain.md`)

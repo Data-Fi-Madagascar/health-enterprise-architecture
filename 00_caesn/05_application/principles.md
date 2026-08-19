@@ -2,7 +2,7 @@
 title: "Principes de l'architecture applicative"
 id: application-principles
 domain: 05_application
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Direction des Systèmes d'Information
@@ -23,7 +23,7 @@ tags: [applications, urbanisation, principes]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
 Les principes suivants s'appliquent à toute application ou plateforme numérique du secteur santé. Chaque principe vit dans le référentiel : `referentiel/principes/aa-XX.md`.
@@ -43,7 +43,7 @@ Une application n’a de légitimité que si elle soutient une capabilité néce
 
 Chaque application doit indiquer le flux de valeur, la capabilité, les données et les indicateurs qu’elle soutient. Ces informations permettent de détecter les doublons, de justifier les investissements et de retirer les applications qui ne servent plus aucune finalité de santé publique.
 
-*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/principes/aa-01.md)*
+*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-01*
 
 ### AA-02 — Les applications ne doivent pas dupliquer les référentiels nationaux
 
@@ -55,7 +55,7 @@ Les référentiels nationaux sont des biens communs, pas des composants internes
 
 Une application consomme les référentiels nationaux plutôt que de créer ses propres listes (formations sanitaires, agents, produits, indicateurs, bénéficiaires). Lorsqu’une donnée de référence est nécessaire, elle est résolue par le référentiel officiel et référencée par identifiant stable, jamais recopiée comme donnée locale.
 
-*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/principes/aa-02.md)*
+*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-02*
 
 ### AA-03 — Les applications doivent être interopérables par conception
 
@@ -67,7 +67,7 @@ L’interopérabilité est une exigence de conception, pas une option ajoutée a
 
 Toute application expose et consomme des interfaces documentées, sécurisées et conformes à l’Architecture de Référence Technique. Les échanges respectent les profils techniques nationaux dès la première version livrée, et non lors d’une mise à niveau ultérieure.
 
-*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/principes/aa-03.md)*
+*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-03*
 
 ### AA-04 — Les applications opérationnelles et analytiques doivent être séparées
 
@@ -79,7 +79,7 @@ Les finalités opérationnelles et analytiques imposent des architectures diffé
 
 Les systèmes opérationnels soutiennent l’action en temps réel (soins, logistique, enregistrement) ; les entrepôts et tableaux de bord soutiennent l’analyse rétrospective et la décision. Les données circulent des premiers vers les seconds par des mécanismes d’intégration gouvernés, sans que le reporting ne pèse sur l’acte de prestation.
 
-*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/principes/aa-04.md)*
+*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-04*
 
 ### AA-05 — Les applications doivent fonctionner dans les conditions réelles du terrain
 
@@ -91,7 +91,7 @@ Les usages de terrain se déroulent dans des conditions réelles de connectivit�
 
 Les applications destinées au terrain prévoient un mode hors ligne ou dégradé : saisie locale, persistance autonome, puis synchronisation asynchrone au retour de la connectivité. Cette capacité est prévue dès la conception et testée dans les conditions réelles d’usage, pas seulement sur réseau de laboratoire.
 
-*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/principes/aa-05.md)*
+*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-05*
 
 ### AA-06 — Les plateformes partagées doivent être réutilisées avant de créer de nouveaux composants
 
@@ -103,7 +103,7 @@ Le système doit éviter la multiplication de solutions parallèles qui se recou
 
 Avant de construire un nouveau composant, l’initiative vérifie l’existence d’un service partagé national répondant au besoin. Si le service existe, elle l’utilise ; si aucune plateforme ne convient, elle le documente et sollicite l’arbitrage avant tout développement.
 
-*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/principes/aa-06.md)*
+*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-06*
 
 ### AA-07 — Les applications doivent être soutenables
 
@@ -115,7 +115,7 @@ Une dépendance durable à un partenaire unique fragilise le système national :
 
 Toute application modélise la maintenance, le support, le transfert de compétences, le coût total de possession et la réversibilité. Le contrat prévoit les conditions de reprise, l’accès au code et aux données, et la continuité de service en cas de changement de fournisseur.
 
-*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/principes/aa-07.md)*
+*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-07*
 
 ### AA-08 — Les applications doivent être homologuées avant extension
 
@@ -127,7 +127,7 @@ Une application pilote ne doit pas être généralisée sans validation. Étendr
 
 L’extension est conditionnée à l’alignement sur le cadre, les standards, la sécurité et la valeur démontrée. Une homologation formelle valide le passage de l’échelle pilote à l’échelle nationale, sur la base de preuves issues du pilote et de l’absence d’écart bloquant.
 
-*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/principes/aa-08.md)*
+*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-08*
 
 ### AA-09 — Les applications obsolètes ou redondantes doivent être rationalisées
 
@@ -139,11 +139,18 @@ Le portefeuille applicatif doit évoluer, pas s’accumuler. Conserver des syst�
 
 Les doublons, systèmes non utilisés ou non conformes sont consolidés, remplacés ou retirés. La rationalisation est planifiée, avec des critères explicites (usage réel, alignement au cadre, coût, risque) et un calendrier de retrait pour chaque système concerné.
 
-*Rattachement : [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) · [fiche](../../referentiel/principes/aa-09.md)*
+*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-09*
 
 <!-- END:GENERATED -->
 ## Liens
 
-- [Architecture applicative](./index.md)
-- [Règles d'urbanisation](./urbanisation.md)
-- [Rationalisation](./rationalization.md)
+- Architecture applicative
+- Règles d'urbanisation
+- Rationalisation
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Architecture applicative** — Architecture applicative et systèmes numériques (`00_caesn/05_application/index.md`)
+- **Règles d'urbanisation** — Règles d'urbanisation applicative (`00_caesn/05_application/urbanisation.md`)
+- **Rationalisation** — Trajectoire de rationalisation du paysage applicatif (`00_caesn/05_application/rationalization.md`)

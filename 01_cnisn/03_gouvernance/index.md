@@ -2,9 +2,9 @@
 title: Partie III — Gouvernance
 id: cnisn-gouvernance
 domain: 01_cnisn
-version: "0.5"
+version: "1.0.0"
 status: draft
-last_reviewed: 2026-07-31
+last_reviewed: 2026-08-18
 owner: DEPSI
 tags: ["cnisn", "niveau-2", "interopérabilité", "gouvernance"]
 ---
@@ -14,127 +14,46 @@ tags: ["cnisn", "niveau-2", "interopérabilité", "gouvernance"]
 
 ## 1. Instance porteuse
 
-Le CNISN est porté par l’instance sectorielle d’architecture de santé.
+Le CNISN est porté par l'instance sectorielle d'architecture de santé, qui exerce son mandat en coordination avec l'instance nationale d'architecture, l'Unité de Gouvernance Digitale, la direction des systèmes d'information du secteur, les directions métier, les responsables des référentiels, l'autorité nationale de protection des données, l'autorité nationale compétente en cybersécurité, et les institutions partenaires concernées.
 
-Cette instance exerce son mandat en coordination avec :
+## 2. Fonctions de l'instance de gouvernance
 
-- l’instance nationale d’architecture ;
-- l’Unité de Gouvernance Digitale ;
-- la direction des systèmes d’information du secteur ;
-- les directions métier ;
-- les responsables des référentiels ;
-- l’autorité nationale de protection des données ;
-- l’autorité nationale compétente en cybersécurité ;
-- les institutions partenaires concernées.
-
-------------------------------------------------------------------------
-
-## 2. Fonctions de l’instance de gouvernance
-
-L’instance sectorielle assure :
+L'instance sectorielle assume six fonctions principales qui couvrent l'ensemble du cycle de vie du cadre d'interopérabilité.
 
 ### 2.1 Gouvernance des principes
 
-- interprétation du cadre ;
-- publication des décisions ;
-- revue des principes ;
-- gestion des évolutions.
+Elle assure l'interprétation du cadre, la publication des décisions, la revue des principes et la gestion de leurs évolutions dans le temps.
 
 ### 2.2 Gouvernance des capacités
 
-- désignation des propriétaires ;
-- évaluation de maturité ;
-- priorisation des investissements ;
-- suivi de disponibilité ;
-- arbitrage des chevauchements.
+Elle désigne les propriétaires de chaque capacité nationale, évalue leur niveau de maturité, priorise les investissements, suit leur disponibilité et arbitre les éventuels chevauchements entre capacités.
 
 ### 2.3 Gouvernance des services
 
-- validation du statut national ou sectoriel ;
-- enregistrement au catalogue ;
-- désignation du propriétaire ;
-- approbation des niveaux de service ;
-- décision de dépréciation.
+Elle valide le statut national ou sectoriel des services, procède à leur enregistrement au catalogue, désigne leurs propriétaires, approuve les niveaux de service et prend les décisions de dépréciation lorsqu'un service n'est plus soutenable.
 
 ### 2.4 Gouvernance des contrats
 
-- validation des versions ;
-- arbitrage des incompatibilités ;
-- validation des extensions nationales ;
-- suivi de dépréciation ;
-- homologation des contrats.
+Elle valide les versions des contrats d'échange, arbitre les incompatibilités entre versions, valide les extensions nationales, suit les dépréciations et procède à l'homologation des contrats conformes.
 
 ### 2.5 Gouvernance des dérogations
 
-- instruction ;
-- validation ;
-- enregistrement ;
-- limitation dans le temps ;
-- suivi des mesures compensatoires ;
-- clôture.
+Elle instruction les demandes de dérogation, les valide, les enregistre, les limite dans le temps, suit les mesures compensatoires associées et procède à leur clôture lorsque les conditions sont remplies.
 
 ### 2.6 Gouvernance interinstitutionnelle
 
-- validation des accords ;
-- coordination avec l’UGD ;
-- arbitrage des responsabilités ;
-- suivi des incidents ;
-- gestion des contraintes de résidence.
-
-------------------------------------------------------------------------
+Elle valide les accords interinstitutionnels, coordonne avec l'Unité de Gouvernance Digitale, arbitre les responsabilités entre institutions, suit les incidents transversaux et gère les contraintes de résidence des données.
 
 ## 3. Comité national et comité sectoriel
 
-Le comité national d’architecture :
+Le Comité National d'Architecture Santé Numérique (CNASN) constitue l'instance transversale de gouvernance. Il fixe les orientations stratégiques, gouverne les services pangouvernementaux, arbitre les divergences entre secteurs, valide les mécanismes interinstitutionnels, assure la cohérence nationale, instruit et valide les décisions d'architecture (ADR), et organise l'homologation des initiatives.
 
-- fixe les orientations transversales ;
-- gouverne les services pangouvernementaux ;
-- arbitre les divergences entre secteurs ;
-- valide les mécanismes interinstitutionnels ;
-- assure la cohérence nationale.
-
-Le comité sectoriel santé :
-
-- décline les orientations pour le secteur ;
-- gouverne les services de santé ;
-- valide les profils sectoriels ;
-- instruit les initiatives ;
-- organise l’homologation sectorielle ;
-- remonte les besoins transversaux.
-
-------------------------------------------------------------------------
+Le comité sectoriel santé décline les orientations nationales pour le secteur, gouverne les services de santé, valide les profils sectoriels, instruit les initiatives, organise l'homologation sectorielle et remonte les besoins transversaux au CNASN.
 
 ## 4. Rôle des propriétaires de capacités
 
-Chaque capacité nationale doit disposer :
-
-- d’un propriétaire institutionnel ;
-- d’un propriétaire fonctionnel ;
-- d’un responsable technique ;
-- d’un responsable de la sécurité ;
-- d’un modèle d’exploitation ;
-- d’un budget ;
-- d’indicateurs ;
-- d’une feuille de route.
-
-Une capacité sans propriétaire et sans modèle d’exploitation ne doit pas être considérée comme disponible au niveau national.
-
-------------------------------------------------------------------------
+Chaque capacité nationale doit disposer d'un propriétaire institutionnel, d'un propriétaire fonctionnel, d'un responsable technique, d'un responsable de la sécurité, d'un modèle d'exploitation, d'un budget, d'indicateurs de suivi et d'une feuille de route. Une capacité sans propriétaire et sans modèle d'exploitation ne doit pas être considérée comme disponible au niveau national.
 
 ## 5. Rôle du registre des décisions
 
-Toute décision structurante doit être enregistrée.
-
-Le registre contient :
-
-- la décision ;
-- le contexte ;
-- les options examinées ;
-- la justification ;
-- les impacts ;
-- les responsables ;
-- la date ;
-- la durée ;
-- les conditions de révision.
-
-------------------------------------------------------------------------
+Toute décision structurante doit être enregistrée dans le registre des décisions. Ce registre contient la décision elle-même, le contexte qui l'a motivée, les options examinées, la justification du choix retenu, les impacts identifiés, les responsables désignés, la date d'effet, la durée de validité et les conditions de révision.

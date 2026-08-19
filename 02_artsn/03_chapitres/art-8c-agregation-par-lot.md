@@ -2,11 +2,12 @@
 title: "ART-8c — Agrégation par lot"
 id: art-8c
 domain: 02_artsn
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: [artsn, chapitres, art-8c, niveau-3]
+related: ['cap-int-03']
 ---
 
 # ART-8c — Agrégation par lot
@@ -23,10 +24,10 @@ tags: [artsn, chapitres, art-8c, niveau-3]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-ART-8c — Agrégation par lot constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : [`art-8c`](../../referentiel/chapitres/art-8c.md).
+ART-8c — Agrégation par lot constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-8c`.
 
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
@@ -35,15 +36,22 @@ ART-8c — Agrégation par lot constitue un chapitre du **cadre normatif opposab
 
 **Discipline existentielle.** Dès lors qu’une source échappe à la gouvernance directe de l’initiative (demandes massives de remboursements des pharmacies rurales, vagues de facturations d’hôpitaux) : elle seule permet de compiler les flux locaux et de générer une compensation globale unifiée sans saturer les réseaux d’échange centraux et sans rompre le pipeline.
 
-- **Rattachement** : [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md).
+- **Rattachement** : CAP-13, CAP-14.
 - **Pattern cible** : Netting.
-- **Déduit selon** : [ENF-1](../../referentiel/exigences/enf-1.md) (réseau instable) et [ENF-2](../../referentiel/exigences/enf-2.md) (anti-fraude).
+- **Déduit selon** : ENF-1 (réseau instable) et ENF-2 (anti-fraude).
 - **Statut : Proposition ouverte.**
 
-*Rattachement : [ENF-1](../../referentiel/exigences/enf-1.md), [ENF-2](../../referentiel/exigences/enf-2.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md) · [fiche](../../referentiel/chapitres/art-8c.md)*
+*Rattachement : ENF-1, ENF-2, CAP-13, CAP-14 · fiche ART-8C*
 
 <!-- END:GENERATED -->
 ## Liens
 
-- [Index des chapitres](./index.md)
-- [Exigences contextuelles — Partie III](../02_exigences-contextuelles/index.md)
+- Index des chapitres
+- Exigences contextuelles — Partie III
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **`art-8c`** — Agrégation par lot (`referentiel/chapitres/art-8c.md`)
+- **Index des chapitres** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **Exigences contextuelles — Partie III** — Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

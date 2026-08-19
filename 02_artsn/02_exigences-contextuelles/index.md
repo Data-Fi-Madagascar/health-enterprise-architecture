@@ -2,7 +2,7 @@
 title: "Exigences contextuelles nationales"
 id: artsn-exigences-contextuelles
 domain: 02_artsn
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
@@ -23,7 +23,7 @@ tags: [artsn, exigences, contexte, niveau-3]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
 Les exigences contextuelles traduisent les contraintes nationales (géographie, réseau, interopérabilité inter-institutionnelle) en obligations qui s'imposent à tout chapitre et à toute solution. Chaque exigence vit dans le référentiel : `referentiel/exigences/enf-X.md`.
@@ -37,17 +37,17 @@ Les exigences contextuelles traduisent les contraintes nationales (géographie, 
 
 **Contenu normatif.** La connectivité internet et la couverture mobile (3G/4G/Fibre) sont hautement asymétriques, intermittentes, voire inexistantes dans la majorité des districts ruraux et des Centres de Santé de Base (CSB). L’indisponibilité, la coupure ou la dégradation du réseau ne doit en aucun cas bloquer, ralentir ou altérer l’acte clinique, la dispensation pharmaceutique au comptoir ou la saisie logistique. Tout logiciel et base de données utilisés sur le point de service a l’obligation structurelle de **capturer, valider et persister les transactions de manière 100% locale et autonome**, puis de gérer des mécanismes de **synchronisation asynchrone** pour différer la transmission centrale dès le retour de la connectivité.
 
-**Statut : Stable.** — appliqué par [F.1](../../referentiel/fondations/f-1.md), [ART-1](../../referentiel/chapitres/art-1.md), [Couche 2 (point de service)](../04_cartographie-cible/index.md#couche-2--point-de-service).
+**Statut : Stable.** — appliqué par F.1, ART-1, Couche 2 (point de service).
 
-*Rattachement : — · [fiche](../../referentiel/exigences/enf-1.md)*
+*Rattachement : — · fiche ENF-1*
 
 ### ENF-2 — Intégrité des flux et traçabilité des valeurs
 
 **Contenu normatif.** Le déploiement national de la gratuité ciblée, des subventions de l’État et des mécanismes de la Couverture Santé Universelle (CSU) présente un risque systémique élevé de fraude, de double facturation, de falsification d’ordonnances et de détournement de stocks. L’architecture doit interdire toute modification, suppression ou altération rétroactive des transactions logistiques et financières validées. Tout mouvement de valeur (Ariary ou unités physiques de médicaments) doit obéir à des règles strictes de **double écriture comptable** et de **conservation de quantité** (Entrées − Sorties = Solde), garantissant une réconciliation exacte à somme nulle.
 
-**Statut : Stable.** — appliqué par [ART-9 (garanties transactionnelles)](../../referentiel/chapitres/art-9.md), [ART-4c (éligibilité)](../../referentiel/chapitres/art-4c.md), [ART-8c (agrégation par lot)](../../referentiel/chapitres/art-8c.md).
+**Statut : Stable.** — appliqué par ART-9 (garanties transactionnelles), ART-4c (éligibilité), ART-8c (agrégation par lot).
 
-*Rattachement : — · [fiche](../../referentiel/exigences/enf-2.md)*
+*Rattachement : — · fiche ENF-2*
 
 ### ENF-3 — Unicité de l’identité et résilience face à la fragmentation applicative
 
@@ -55,9 +55,9 @@ Les exigences contextuelles traduisent les contraintes nationales (géographie, 
 
 **Contenu normatif.** Le système national doit posséder la capacité de rapprocher, consolider et unifier des identités de patients incertains, phonétiquement variables ou incomplètes. Cette brique d’**identitovigilance** doit générer un enregistrement pivot unique et souverain pour le citoyen, sans forcer le remplacement immédiat ou la refonte structurelle des bases locales des hôpitaux.
 
-**Statut : Stable.** — appliqué par [ART-4a (résolution d’identité)](../../referentiel/chapitres/art-4a.md), [ART-2 (médiation)](../../referentiel/chapitres/art-2.md).
+**Statut : Stable.** — appliqué par ART-4a (résolution d’identité), ART-2 (médiation).
 
-*Rattachement : — · [fiche](../../referentiel/exigences/enf-3.md)*
+*Rattachement : — · fiche ENF-3*
 
 ### ENF-4 — Cloisonnement inter-institutionnel et étanchéité des données (One Health)
 
@@ -65,9 +65,9 @@ Les exigences contextuelles traduisent les contraintes nationales (géographie, 
 
 **Contenu normatif.** Le partage d’informations intersectoriel à des fins de recherche ou d’alerte épidémique précoce doit préserver la souveraineté de chaque institution, respecter le secret médical et protéger la vie privée des citoyens. Les pipelines de traitement analytique ont l’obligation d’opérer sur des données **définitivement dépouillées de tout identifiant direct** (Noms, INS). Les corrélations entre secteurs ne doivent s’effectuer qu’avec des dimensions de rapprochement **neutres et non nominatives** : l’espace géographique et le temps.
 
-**Statut : Stable.** — appliqué par [ART-0 (accords de partage)](../../referentiel/chapitres/art-0.md), [ART-4b (bases d’autorisation)](../../referentiel/chapitres/art-4b.md), [ART-4d (référentiel géospatial)](../../referentiel/chapitres/art-4d.md).
+**Statut : Stable.** — appliqué par ART-0 (accords de partage), ART-4b (bases d’autorisation), ART-4d (référentiel géospatial).
 
-*Rattachement : — · [fiche](../../referentiel/exigences/enf-4.md)*
+*Rattachement : — · fiche ENF-4*
 
 ### ENF-5 — Coordination des processus complexes décentralisés et asynchrones
 
@@ -75,13 +75,20 @@ Les exigences contextuelles traduisent les contraintes nationales (géographie, 
 
 **Contenu normatif.** Le système national doit être capable de suivre et d'orchestrer l'état d'avancement d'un parcours de soins distribué à étapes multiples, de bout en bout. L'architecture doit tolérer les interruptions temporaires de transmission, tout en garantissant le déclenchement automatique d'alertes d'escalade ou d'annulations (compensations) fonctionnelles si un établissement de destination est saturé ou inaccessible.
 
-**Statut : Stable.** — appliqué par [ART-8a (orchestration de processus borné)](../../referentiel/chapitres/art-8a.md), [ART-5 (qualité des données)](../../referentiel/chapitres/art-5.md), [PT-14 (interopérabilité transfrontalière)](../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md).
+**Statut : Stable.** — appliqué par ART-8a (orchestration de processus borné), ART-5 (qualité des données), PT-14 (interopérabilité transfrontalière).
 
-*Rattachement : — · [fiche](../../referentiel/exigences/enf-5.md)*
+*Rattachement : — · fiche ENF-5*
 
 <!-- END:GENERATED -->
 ## Liens
 
-- [Fondations](../00_fondations/index.md)
-- [Chapitres et patterns de référence](../03_chapitres/index.md)
-- [Cartographie cible](../04_cartographie-cible/index.md)
+- Fondations
+- Chapitres et patterns de référence
+- Cartographie cible
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **Fondations** — Fondations de l'ARTSN (`02_artsn/00_fondations/index.md`)
+- **Chapitres et patterns de référence** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **Cartographie cible** — Cartographie conceptuelle cible (`02_artsn/04_cartographie-cible/index.md`)

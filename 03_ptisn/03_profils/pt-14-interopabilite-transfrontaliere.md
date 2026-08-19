@@ -2,7 +2,7 @@
 title: "PT-14 — Interopérabilité transfrontalière"
 id: pt-14-wrapper
 domain: 03_ptisn
-version: "0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
@@ -157,6 +157,6 @@ Ce profil technique définit les standards, protocoles et configurations pour le
 | CAP-15 | Capabilité CAESN | Active |
 | CAP-17 | Capabilité CAESN | Active |
 
-*Rattachement : [CAP-INT-13](../../referentiel/capacites/cap-int-13.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [CAP-17](../../referentiel/capabilites/cap-17.md), [ART-7](../../referentiel/chapitres/art-7.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-1](../../referentiel/chapitres/art-1.md), [CMP-06](../../referentiel/composants/cmp-06.md), [CMP-15](../../referentiel/composants/cmp-15.md) · [fiche](../../referentiel/profils/pt-14.md)*
+*Rattachement : CAP-INT-13, CAP-15, CAP-17, ART-7, ART-0, ART-1, CMP-06, CMP-15 · fiche PT-14*
 
 <!-- END:GENERATED -->

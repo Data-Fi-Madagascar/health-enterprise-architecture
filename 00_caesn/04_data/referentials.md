@@ -2,7 +2,7 @@
 title: Référentiels nationaux
 id: data-referentials
 domain: 04_data
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Cellule du Système d'Information Sanitaire
@@ -23,7 +23,7 @@ tags: [données, référentiels, normes]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 Les référentiels nationaux sont les socles communs qui permettent à tous les systèmes d'information de parler le même langage : identifier les mêmes structures, personnes, produits, zones géographiques, indicateurs et bénéficiaires.
 
@@ -54,6 +54,13 @@ Chaque référentiel national doit disposer de :
 
 ## Liens
 
-- [Domaines de données](./domains.md)
-- [Composants DPI-H](../03_capabilities/digital.md)
-- [Architecture applicative](../05_application/index.md)
+- Domaines de données
+- Composants DPI-H
+- Architecture applicative
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Domaines de données** — Domaines de données prioritaires (`00_caesn/04_data/domains.md`)
+- **Composants DPI-H** — Capabilités numériques transversales et composants DPI-H (`00_caesn/03_capabilities/digital.md`)
+- **Architecture applicative** — Architecture applicative et systèmes numériques (`00_caesn/05_application/index.md`)

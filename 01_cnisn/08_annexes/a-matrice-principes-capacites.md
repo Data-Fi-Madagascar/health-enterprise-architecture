@@ -2,7 +2,7 @@
 title: "Annexe A — Matrice principes–capacités"
 id: cnisn-annexe-a
 domain: 01_cnisn
-version: "0.5"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: DEPSI
@@ -20,45 +20,45 @@ Tableau généré depuis le référentiel : les 12 capacités nationales et les 
 
 | Code | Titre canonique | Rattachement | Statut | Fiche |
 |---|---|---|---|---|
-| CAP-INT-01 | Résolution d’identité du bénéficiaire | [P-INT-01](../../referentiel/principes/p-int-01.md), [P-INT-02](../../referentiel/principes/p-int-02.md), [P-INT-03](../../referentiel/principes/p-int-03.md), [P-INT-04](../../referentiel/principes/p-int-04.md), [P-INT-14](../../referentiel/principes/p-int-14.md), [P-INT-15](../../referentiel/principes/p-int-15.md), [P-INT-16](../../referentiel/principes/p-int-16.md), [P-INT-17](../../referentiel/principes/p-int-17.md), [P-INT-18](../../referentiel/principes/p-int-18.md), [CAP-02](../../referentiel/capabilites/cap-02.md), [CAP-14](../../referentiel/capabilites/cap-14.md) | active | [fiche](../../referentiel/capacites/cap-int-01.md) |
-| CAP-INT-02 | Registre et résolution des professionnels de santé | [P-INT-01](../../referentiel/principes/p-int-01.md), [P-INT-02](../../referentiel/principes/p-int-02.md), [P-INT-03](../../referentiel/principes/p-int-03.md), [P-INT-04](../../referentiel/principes/p-int-04.md), [P-INT-14](../../referentiel/principes/p-int-14.md), [P-INT-15](../../referentiel/principes/p-int-15.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-14](../../referentiel/capabilites/cap-14.md) | active | [fiche](../../referentiel/capacites/cap-int-02.md) |
-| CAP-INT-03 | Échange et médiation inter-systèmes | [P-INT-05](../../referentiel/principes/p-int-05.md), [P-INT-06](../../referentiel/principes/p-int-06.md), [P-INT-07](../../referentiel/principes/p-int-07.md), [P-INT-08](../../referentiel/principes/p-int-08.md), [P-INT-09](../../referentiel/principes/p-int-09.md), [P-INT-10](../../referentiel/principes/p-int-10.md), [P-INT-11](../../referentiel/principes/p-int-11.md), [P-INT-12](../../referentiel/principes/p-int-12.md), [P-INT-13](../../referentiel/principes/p-int-13.md), [P-INT-18](../../referentiel/principes/p-int-18.md), [P-INT-19](../../referentiel/principes/p-int-19.md), [P-INT-20](../../referentiel/principes/p-int-20.md), [P-INT-21](../../referentiel/principes/p-int-21.md), [P-INT-22](../../referentiel/principes/p-int-22.md), [P-INT-23](../../referentiel/principes/p-int-23.md), [P-INT-24](../../referentiel/principes/p-int-24.md), [P-INT-25](../../referentiel/principes/p-int-25.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md) | active | [fiche](../../referentiel/capacites/cap-int-03.md) |
-| CAP-INT-04 | Référentiel des structures et services de santé | [P-INT-01](../../referentiel/principes/p-int-01.md), [P-INT-02](../../referentiel/principes/p-int-02.md), [P-INT-03](../../referentiel/principes/p-int-03.md), [P-INT-04](../../referentiel/principes/p-int-04.md), [CAP-11](../../referentiel/capabilites/cap-11.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md) | active | [fiche](../../referentiel/capacites/cap-int-04.md) |
-| CAP-INT-05 | Terminologie et codification communes | [P-INT-01](../../referentiel/principes/p-int-01.md), [P-INT-02](../../referentiel/principes/p-int-02.md), [P-INT-03](../../referentiel/principes/p-int-03.md), [P-INT-04](../../referentiel/principes/p-int-04.md), [P-INT-05](../../referentiel/principes/p-int-05.md), [P-INT-06](../../referentiel/principes/p-int-06.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md) | active | [fiche](../../referentiel/capacites/cap-int-05.md) |
-| CAP-INT-06 | Catalogue des services et registre des contrats | [P-INT-05](../../referentiel/principes/p-int-05.md), [P-INT-06](../../referentiel/principes/p-int-06.md), [P-INT-07](../../referentiel/principes/p-int-07.md), [P-INT-08](../../referentiel/principes/p-int-08.md), [P-INT-09](../../referentiel/principes/p-int-09.md), [P-INT-23](../../referentiel/principes/p-int-23.md), [P-INT-24](../../referentiel/principes/p-int-24.md), [P-INT-25](../../referentiel/principes/p-int-25.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-16](../../referentiel/capabilites/cap-16.md) | active | [fiche](../../referentiel/capacites/cap-int-06.md) |
-| CAP-INT-07 | Accès et exposition des données analytiques | [P-INT-05](../../referentiel/principes/p-int-05.md), [P-INT-06](../../referentiel/principes/p-int-06.md), [P-INT-07](../../referentiel/principes/p-int-07.md), [P-INT-08](../../referentiel/principes/p-int-08.md), [P-INT-09](../../referentiel/principes/p-int-09.md), [P-INT-17](../../referentiel/principes/p-int-17.md), [P-INT-18](../../referentiel/principes/p-int-18.md), [P-INT-19](../../referentiel/principes/p-int-19.md), [P-INT-20](../../referentiel/principes/p-int-20.md), [P-INT-21](../../referentiel/principes/p-int-21.md), [P-INT-22](../../referentiel/principes/p-int-22.md), [P-INT-23](../../referentiel/principes/p-int-23.md), [P-INT-24](../../referentiel/principes/p-int-24.md), [P-INT-25](../../referentiel/principes/p-int-25.md), [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) | active | [fiche](../../referentiel/capacites/cap-int-07.md) |
-| CAP-INT-08 | Confiance, sécurité et autorisation | [P-INT-14](../../referentiel/principes/p-int-14.md), [P-INT-15](../../referentiel/principes/p-int-15.md), [P-INT-16](../../referentiel/principes/p-int-16.md), [P-INT-17](../../referentiel/principes/p-int-17.md), [P-INT-18](../../referentiel/principes/p-int-18.md), [P-INT-19](../../referentiel/principes/p-int-19.md), [P-INT-20](../../referentiel/principes/p-int-20.md), [CAP-15](../../referentiel/capabilites/cap-15.md) | active | [fiche](../../referentiel/capacites/cap-int-08.md) |
-| CAP-INT-09 | Gestion des consentements et bases d’autorisation | [P-INT-14](../../referentiel/principes/p-int-14.md), [P-INT-15](../../referentiel/principes/p-int-15.md), [P-INT-16](../../referentiel/principes/p-int-16.md), [P-INT-17](../../referentiel/principes/p-int-17.md), [CAP-15](../../referentiel/capabilites/cap-15.md) | active | [fiche](../../referentiel/capacites/cap-int-09.md) |
-| CAP-INT-10 | Provenance, audit et traçabilité | [P-INT-07](../../referentiel/principes/p-int-07.md), [P-INT-17](../../referentiel/principes/p-int-17.md), [P-INT-18](../../referentiel/principes/p-int-18.md), [P-INT-23](../../referentiel/principes/p-int-23.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-15](../../referentiel/capabilites/cap-15.md) | active | [fiche](../../referentiel/capacites/cap-int-10.md) |
-| CAP-INT-11 | Qualité et réconciliation | [P-INT-01](../../referentiel/principes/p-int-01.md), [P-INT-02](../../referentiel/principes/p-int-02.md), [P-INT-03](../../referentiel/principes/p-int-03.md), [P-INT-04](../../referentiel/principes/p-int-04.md), [P-INT-05](../../referentiel/principes/p-int-05.md), [P-INT-06](../../referentiel/principes/p-int-06.md), [P-INT-07](../../referentiel/principes/p-int-07.md), [P-INT-08](../../referentiel/principes/p-int-08.md), [P-INT-09](../../referentiel/principes/p-int-09.md), [P-INT-23](../../referentiel/principes/p-int-23.md), [P-INT-24](../../referentiel/principes/p-int-24.md), [P-INT-25](../../referentiel/principes/p-int-25.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md) | active | [fiche](../../referentiel/capacites/cap-int-11.md) |
-| CAP-INT-12 | Conformité et tests d’interopérabilité | [P-INT-19](../../referentiel/principes/p-int-19.md), [P-INT-20](../../referentiel/principes/p-int-20.md), [P-INT-21](../../referentiel/principes/p-int-21.md), [P-INT-22](../../referentiel/principes/p-int-22.md), [P-INT-23](../../referentiel/principes/p-int-23.md), [P-INT-24](../../referentiel/principes/p-int-24.md), [P-INT-25](../../referentiel/principes/p-int-25.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-16](../../referentiel/capabilites/cap-16.md) | active | [fiche](../../referentiel/capacites/cap-int-12.md) |
-| CAP-INT-13 | Interopérabilité transfrontalière et confiance internationale | [P-INT-01](../../referentiel/principes/p-int-01.md), [P-INT-05](../../referentiel/principes/p-int-05.md), [P-INT-10](../../referentiel/principes/p-int-10.md), [P-INT-14](../../referentiel/principes/p-int-14.md), [P-INT-16](../../referentiel/principes/p-int-16.md), [P-INT-17](../../referentiel/principes/p-int-17.md), [P-INT-19](../../referentiel/principes/p-int-19.md), [CAP-15](../../referentiel/capabilites/cap-15.md) | active | [fiche](../../referentiel/capacites/cap-int-13.md) |
-| CAP-INT-14 | Échanges intersectoriels One Health | [P-INT-01](../../referentiel/principes/p-int-01.md), [P-INT-05](../../referentiel/principes/p-int-05.md), [P-INT-10](../../referentiel/principes/p-int-10.md), [P-INT-14](../../referentiel/principes/p-int-14.md), [P-INT-16](../../referentiel/principes/p-int-16.md), [P-INT-22](../../referentiel/principes/p-int-22.md) | active | [fiche](../../referentiel/capacites/cap-int-14.md) |
-| P-INT-01 | Autorité désignée | [CAP-14](../../referentiel/capabilites/cap-14.md) | active | [fiche](../../referentiel/principes/p-int-01.md) |
-| P-INT-02 | Résolution contre l’autorité | [CAP-14](../../referentiel/capabilites/cap-14.md) | active | [fiche](../../referentiel/principes/p-int-02.md) |
-| P-INT-03 | Copies locales non autoritatives | [CAP-14](../../referentiel/capabilites/cap-14.md) | active | [fiche](../../referentiel/principes/p-int-03.md) |
-| P-INT-04 | Historisation des références | [CAP-14](../../referentiel/capabilites/cap-14.md) | active | [fiche](../../referentiel/principes/p-int-04.md) |
-| P-INT-05 | Contrat explicite | [CAP-14](../../referentiel/capabilites/cap-14.md) | active | [fiche](../../referentiel/principes/p-int-05.md) |
-| P-INT-06 | Versionnement et compatibilité | [CAP-14](../../referentiel/capabilites/cap-14.md) | active | [fiche](../../referentiel/principes/p-int-06.md) |
-| P-INT-07 | Responsabilité de la donnée | [CAP-13](../../referentiel/capabilites/cap-13.md) | active | [fiche](../../referentiel/principes/p-int-07.md) |
-| P-INT-08 | Publication au catalogue des services | [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-16](../../referentiel/capabilites/cap-16.md) | active | [fiche](../../referentiel/principes/p-int-08.md) |
-| P-INT-09 | Publication des contrats | [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-16](../../referentiel/capabilites/cap-16.md) | active | [fiche](../../referentiel/principes/p-int-09.md) |
-| P-INT-10 | Accord préalable | [CAP-14](../../referentiel/capabilites/cap-14.md) | active | [fiche](../../referentiel/principes/p-int-10.md) |
-| P-INT-11 | Arbitrage des conflits d’autorité | [CAP-14](../../referentiel/capabilites/cap-14.md) | active | [fiche](../../referentiel/principes/p-int-11.md) |
-| P-INT-12 | Dérogation explicite | [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-16](../../referentiel/capabilites/cap-16.md) | active | [fiche](../../referentiel/principes/p-int-12.md) |
-| P-INT-13 | Dérogation d’urgence | [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-16](../../referentiel/capabilites/cap-16.md) | active | [fiche](../../referentiel/principes/p-int-13.md) |
-| P-INT-14 | Base d’autorisation explicite | [CAP-15](../../referentiel/capabilites/cap-15.md) | active | [fiche](../../referentiel/principes/p-int-14.md) |
-| P-INT-15 | Limitation à la finalité | [CAP-15](../../referentiel/capabilites/cap-15.md) | active | [fiche](../../referentiel/principes/p-int-15.md) |
-| P-INT-16 | Résidence et non-réplication | [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-15](../../referentiel/capabilites/cap-15.md) | active | [fiche](../../referentiel/principes/p-int-16.md) |
-| P-INT-17 | Minimisation | [CAP-15](../../referentiel/capabilites/cap-15.md) | active | [fiche](../../referentiel/principes/p-int-17.md) |
-| P-INT-18 | Traçabilité différenciée | [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-15](../../referentiel/capabilites/cap-15.md) | active | [fiche](../../referentiel/principes/p-int-18.md) |
-| P-INT-19 | Neutralité technologique | [CAP-14](../../referentiel/capabilites/cap-14.md) | active | [fiche](../../referentiel/principes/p-int-19.md) |
-| P-INT-20 | Portabilité et réversibilité | [CAP-14](../../referentiel/capabilites/cap-14.md) | active | [fiche](../../referentiel/principes/p-int-20.md) |
-| P-INT-21 | Progressivité | [CAP-16](../../referentiel/capabilites/cap-16.md) | active | [fiche](../../referentiel/principes/p-int-21.md) |
-| P-INT-22 | Fonctionnement en connectivité contrainte | [CAP-14](../../referentiel/capabilites/cap-14.md) | active | [fiche](../../referentiel/principes/p-int-22.md) |
-| P-INT-23 | Conformité fondée sur des preuves | [CAP-16](../../referentiel/capabilites/cap-16.md) | active | [fiche](../../referentiel/principes/p-int-23.md) |
-| P-INT-24 | Applicabilité déclarée | [CAP-16](../../referentiel/capabilites/cap-16.md) | active | [fiche](../../referentiel/principes/p-int-24.md) |
-| P-INT-25 | Réévaluation continue | [CAP-16](../../referentiel/capabilites/cap-16.md) | active | [fiche](../../referentiel/principes/p-int-25.md) |
+| CAP-INT-01 | Résolution d’identité du bénéficiaire | P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-14, P-INT-15, P-INT-16, P-INT-17, P-INT-18, CAP-02, CAP-14 | active | CAP-INT-01 |
+| CAP-INT-02 | Registre et résolution des professionnels de santé | P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-14, P-INT-15, CAP-09, CAP-14 | active | CAP-INT-02 |
+| CAP-INT-03 | Échange et médiation inter-systèmes | P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-10, P-INT-11, P-INT-12, P-INT-13, P-INT-18, P-INT-19, P-INT-20, P-INT-21, P-INT-22, P-INT-23, P-INT-24, P-INT-25, CAP-13, CAP-14 | active | CAP-INT-03 |
+| CAP-INT-04 | Référentiel des structures et services de santé | P-INT-01, P-INT-02, P-INT-03, P-INT-04, CAP-11, CAP-13, CAP-14 | active | CAP-INT-04 |
+| CAP-INT-05 | Terminologie et codification communes | P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-05, P-INT-06, CAP-13, CAP-14 | active | CAP-INT-05 |
+| CAP-INT-06 | Catalogue des services et registre des contrats | P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-23, P-INT-24, P-INT-25, CAP-14, CAP-16 | active | CAP-INT-06 |
+| CAP-INT-07 | Accès et exposition des données analytiques | P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-17, P-INT-18, P-INT-19, P-INT-20, P-INT-21, P-INT-22, P-INT-23, P-INT-24, P-INT-25, CAP-05, CAP-13 | active | CAP-INT-07 |
+| CAP-INT-08 | Confiance, sécurité et autorisation | P-INT-14, P-INT-15, P-INT-16, P-INT-17, P-INT-18, P-INT-19, P-INT-20, CAP-15 | active | CAP-INT-08 |
+| CAP-INT-09 | Gestion des consentements et bases d’autorisation | P-INT-14, P-INT-15, P-INT-16, P-INT-17, CAP-15 | active | CAP-INT-09 |
+| CAP-INT-10 | Provenance, audit et traçabilité | P-INT-07, P-INT-17, P-INT-18, P-INT-23, CAP-13, CAP-15 | active | CAP-INT-10 |
+| CAP-INT-11 | Qualité et réconciliation | P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-23, P-INT-24, P-INT-25, CAP-13, CAP-14 | active | CAP-INT-11 |
+| CAP-INT-12 | Conformité et tests d’interopérabilité | P-INT-19, P-INT-20, P-INT-21, P-INT-22, P-INT-23, P-INT-24, P-INT-25, CAP-14, CAP-16 | active | CAP-INT-12 |
+| CAP-INT-13 | Interopérabilité transfrontalière et confiance internationale | P-INT-01, P-INT-05, P-INT-10, P-INT-14, P-INT-16, P-INT-17, P-INT-19, CAP-15 | active | CAP-INT-13 |
+| CAP-INT-14 | Échanges intersectoriels One Health | P-INT-01, P-INT-05, P-INT-10, P-INT-14, P-INT-16, P-INT-22 | active | CAP-INT-14 |
+| P-INT-01 | Autorité désignée | CAP-14 | active | P-INT-01 |
+| P-INT-02 | Résolution contre l’autorité | CAP-14 | active | P-INT-02 |
+| P-INT-03 | Copies locales non autoritatives | CAP-14 | active | P-INT-03 |
+| P-INT-04 | Historisation des références | CAP-14 | active | P-INT-04 |
+| P-INT-05 | Contrat explicite | CAP-14 | active | P-INT-05 |
+| P-INT-06 | Versionnement et compatibilité | CAP-14 | active | P-INT-06 |
+| P-INT-07 | Responsabilité de la donnée | CAP-13 | active | P-INT-07 |
+| P-INT-08 | Publication au catalogue des services | CAP-14, CAP-16 | active | P-INT-08 |
+| P-INT-09 | Publication des contrats | CAP-14, CAP-16 | active | P-INT-09 |
+| P-INT-10 | Accord préalable | CAP-14 | active | P-INT-10 |
+| P-INT-11 | Arbitrage des conflits d’autorité | CAP-14 | active | P-INT-11 |
+| P-INT-12 | Dérogation explicite | CAP-14, CAP-16 | active | P-INT-12 |
+| P-INT-13 | Dérogation d’urgence | CAP-14, CAP-16 | active | P-INT-13 |
+| P-INT-14 | Base d’autorisation explicite | CAP-15 | active | P-INT-14 |
+| P-INT-15 | Limitation à la finalité | CAP-15 | active | P-INT-15 |
+| P-INT-16 | Résidence et non-réplication | CAP-14, CAP-15 | active | P-INT-16 |
+| P-INT-17 | Minimisation | CAP-15 | active | P-INT-17 |
+| P-INT-18 | Traçabilité différenciée | CAP-13, CAP-15 | active | P-INT-18 |
+| P-INT-19 | Neutralité technologique | CAP-14 | active | P-INT-19 |
+| P-INT-20 | Portabilité et réversibilité | CAP-14 | active | P-INT-20 |
+| P-INT-21 | Progressivité | CAP-16 | active | P-INT-21 |
+| P-INT-22 | Fonctionnement en connectivité contrainte | CAP-14 | active | P-INT-22 |
+| P-INT-23 | Conformité fondée sur des preuves | CAP-16 | active | P-INT-23 |
+| P-INT-24 | Applicabilité déclarée | CAP-16 | active | P-INT-24 |
+| P-INT-25 | Réévaluation continue | CAP-16 | active | P-INT-25 |
 
 <!-- END:GENERATED -->
 ---

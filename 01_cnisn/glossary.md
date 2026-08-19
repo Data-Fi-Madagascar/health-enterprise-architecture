@@ -2,7 +2,7 @@
 title: Glossaire du CNISN (niveau 2)
 id: cnisn-glossary
 domain: 01_cnisn
-version: "0.1.0"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
@@ -23,9 +23,9 @@ tags: [cnisn, glossaire, terminologie, niveau-2]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](./reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
-Termes propres au périmètre d'interopérabilité du niveau 2. Les termes transverses de l'architecture (capabilité, flux de valeur, gouvernance, homologation…) sont définis dans le [glossaire du CAESN](../00_caesn/10_annexes/glossary.md).
+Termes propres au périmètre d'interopérabilité du niveau 2. Les termes transverses de l'architecture (capabilité, flux de valeur, gouvernance, homologation…) sont définis dans le glossaire du CAESN.
 
 ## Termes d'interopérabilité
 
@@ -127,7 +127,16 @@ Termes propres au périmètre d'interopérabilité du niveau 2. Les termes trans
 
 ## Liens
 
-- [Index du CNISN](./index.md)
-- [Matrice de lecture du CNISN](./reading-matrix.md)
-- [Acronymes du CNISN](./acronyms.md)
-- [Glossaire du CAESN (niveau 1)](../00_caesn/10_annexes/glossary.md)
+- Index du CNISN
+- Matrice de lecture du CNISN
+- Acronymes du CNISN
+- Glossaire du CAESN (niveau 1)
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
+- **glossaire du CAESN** — Glossaire (`00_caesn/10_annexes/glossary.md`)
+- **Index du CNISN** — Cadre National d'Interopérabilité de la Santé Numérique (CNISN) (`01_cnisn/index.md`)
+- **Matrice de lecture du CNISN** — Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
+- **Acronymes du CNISN** — Acronymes et abréviations du CNISN (niveau 2) (`01_cnisn/acronyms.md`)
+- **Glossaire du CAESN (niveau 1)** — Glossaire (`00_caesn/10_annexes/glossary.md`)

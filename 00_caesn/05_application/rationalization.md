@@ -2,7 +2,7 @@
 title: Trajectoire de rationalisation du paysage applicatif
 id: application-rationalization
 domain: 05_application
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Comité National d'Architecture Santé Numérique
@@ -23,7 +23,7 @@ tags: [applications, rationalisation]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 Le système existant comprend déjà plusieurs applications, plateformes et outils issus de programmes et partenaires. L'objectif n'est pas une remise à neuf brutale, mais une rationalisation progressive.
 
@@ -42,6 +42,13 @@ La rationalisation est conduite par le Comité National d'Architecture Santé Nu
 
 ## Liens
 
-- [Règles d'urbanisation](./urbanisation.md)
-- [Cycle de vie applicatif](./lifecycle.md)
-- [Portefeuille](../06_portfolio/index.md)
+- Règles d'urbanisation
+- Cycle de vie applicatif
+- Portefeuille
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Règles d'urbanisation** — Règles d'urbanisation applicative (`00_caesn/05_application/urbanisation.md`)
+- **Cycle de vie applicatif** — Cycle de vie applicatif et critères d'homologation (`00_caesn/05_application/lifecycle.md`)
+- **Portefeuille** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)

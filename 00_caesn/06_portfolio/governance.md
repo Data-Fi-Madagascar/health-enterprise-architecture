@@ -2,7 +2,7 @@
 title: Dépendances, revues et règles de gouvernance du portefeuille
 id: portfolio-governance
 domain: 06_portfolio
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Bureau de Réalisation de la Valeur
@@ -23,7 +23,7 @@ tags: [portefeuille, dépendances, revues]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ● |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 ## Gestion des dépendances
 
@@ -84,6 +84,13 @@ Tout partenaire proposant ou finançant une initiative doit : inscrire l'initiat
 
 ## Liens
 
-- [Portefeuille](./index.md)
-- [Gouvernance](../07_governance/index.md)
-- [Homologation](../05_application/lifecycle.md)
+- Portefeuille
+- Gouvernance
+- Homologation
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Portefeuille** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
+- **Gouvernance** — Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
+- **Homologation** — Cycle de vie applicatif et critères d'homologation (`00_caesn/05_application/lifecycle.md`)

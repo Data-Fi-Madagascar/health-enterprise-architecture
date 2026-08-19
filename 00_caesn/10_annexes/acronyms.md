@@ -2,7 +2,7 @@
 title: Acronymes et abréviations
 id: annexe-acronyms
 domain: 10_annexes
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Bureau de Réalisation de la Valeur
@@ -23,7 +23,7 @@ tags: [annexes, acronymes]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ● |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 | Acronyme | Signification |
 |----------|---------------|
@@ -50,5 +50,11 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 
 ## Liens
 
-- [Annexes](./index.md)
-- [Glossaire](./glossary.md)
+- Annexes
+- Glossaire
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Annexes** — Annexes (`00_caesn/10_annexes/index.md`)
+- **Glossaire** — Glossaire (`00_caesn/10_annexes/glossary.md`)

@@ -2,7 +2,7 @@
 title: PT-03 — Profil technique national
 id: ptisn-pt-03-catalogue-services-registre-contrats
 domain: 03_ptisn
-version: "0.4"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
@@ -83,6 +83,6 @@ Aucun produit national n’est encore retenu.
 
 ------------------------------------------------------------------------
 
-*Rattachement : [CMP-16](../../referentiel/composants/cmp-16.md), [CAP-INT-06](../../referentiel/capacites/cap-int-06.md), [F-3](../../referentiel/fondations/f-3.md), [F-4](../../referentiel/fondations/f-4.md), [ART-1](../../referentiel/chapitres/art-1.md), [ART-2](../../referentiel/chapitres/art-2.md) · [fiche](../../referentiel/profils/pt-03.md)*
+*Rattachement : CMP-16, CAP-INT-06, F-3, F-4, ART-1, ART-2 · fiche PT-03*
 
 <!-- END:GENERATED -->

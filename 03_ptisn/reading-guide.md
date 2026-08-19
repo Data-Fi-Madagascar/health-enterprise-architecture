@@ -2,7 +2,7 @@
 title: Guide de lecture du PTISN (niveau 4)
 id: ptisn-reading-guide
 domain: 03_ptisn
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: Équipes techniques des initiatives
@@ -23,13 +23,11 @@ tags: [ptisn, lecture, niveau-4, guide]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](reading-matrix.md).
-
----
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 ## 1. Qu'est-ce que le PTISN ?
 
-Le PTISN (Profils techniques d'implémentation de la Santé Numérique) est le **niveau 4** de la hiérarchie documentaire du secteur santé numérique de Madagascar. Il traduit les capacités et principes des niveaux supérieurs en **spécifications techniques concrètes** pour chaque initiative numérique.
+Le PTISN (Profils techniques d'implémentation de la Santé Numérique) est le **niveau 4** de la hiérarchie documentaire du secteur santé numérique de Madagascar. Il traduit les capacités et principes des niveaux supérieurs en **spécifications techniques concrètes** pour chaque initiative numérique. Le PTISN est le seul niveau qui peut nommer explicitement des standards, profils et produits candidats.
 
 ```
 Niveau 1 (CAESN)  →  Valeur, capabilités, gouvernance
@@ -38,100 +36,66 @@ Niveau 3 (ARTSN)  →  Patterns architecturaux, standards techniques
 Niveau 4 (PTISN)  →  Services, profils, standards, produits candidats
 ```
 
-**Le PTISN est le seul niveau qui peut nommer explicitement des standards, profils et produits.**
-
----
-
 ## 2. Structure du PTISN
 
-Le PTISN est organisé en **8 parties** + annexes :
+Le PTISN est organisé en huit parties complétées par des annexes. Le tableau suivant résume le contenu de chaque partie et identifie les publics concernés.
 
 | Partie | Contenu | Qui la lit |
 |--------|---------|------------|
-| [Préambule](00_introduction/index.md) | Positionnement, fonction, hiérarchie | Tous |
-| [Règles d'utilisation](01_regles-utilisation/index.md) | Types de décisions, statuts, versionnement | Équipes techniques, DEPSI |
-| [Topologie nationale cible](02_topologie-nationale-cible/index.md) | Architecture cible, couches, responsabilités | Architectes, intégrateurs |
-| [Profils techniques](03_profils/) | 13 profils PT-01 à PT-13 | Développeurs, fournisseurs |
-| [Matrice d'alignement](04_matrice-alignement/index.md) | Mapping capacités CNISN ↔ profils ↔ ART | DEPSI, validateurs |
-| [Profil d'initiative](05_profil-initiative/index.md) | Template pour chaque initiative | Équipes projet |
-| [Gouvernance](06_gouvernance/index.md) | Processus d'adoption, critères, homologation | Décideurs, gouvernance |
-| [Conclusion](07_conclusion/index.md) | Synthèse, principles | Tous |
-
----
+| Préambule | Positionnement, fonction, hiérarchie | Tous |
+| Règles d'utilisation | Types de décisions, statuts, versionnement | Équipes techniques, DEPSI |
+| Topologie nationale cible | Architecture cible, couches, responsabilités | Architectes, intégrateurs |
+| Profils techniques | 13 profils PT-01 à PT-13 | Développeurs, fournisseurs |
+| Matrice d'alignement | Mapping capacités CNISN ↔ profils ↔ ART | DEPSI, validateurs |
+| Profil d'initiative | Template pour chaque initiative | Équipes projet |
+| Gouvernance | Processus d'adoption, critères, homologation | Décideurs, gouvernance |
+| Conclusion | Synthèse, principes | Tous |
 
 ## 3. Parcours de lecture par profil
 
 ### 3.1 Décideur institutionnel
 
-**Objectif :** Comprendre le rôle du PTISN dans la hiérarchie et les enjeux de gouvernance.
-
-1. [Préambule](00_introduction/index.md) — §1 Fonction du PTISN
-2. [Gouvernance](06_gouvernance/index.md) — §1 Instance porteuse, §4 Homologation
-3. [Conclusion](07_conclusion/index.md)
+L'objectif pour le décideur institutionnel est de comprendre le rôle du PTISN dans la hiérarchie documentaire et les enjeux de gouvernance qui en découlent. La lecture recommandée débute par le Préambule (section « Fonction du PTISN »), se poursuit par la Gouvernance (sections « Instance porteuse » et « Homologation »), et s'achève par la Conclusion.
 
 ### 3.2 Direction métier / programme
 
-**Objectif :** Comprendre comment une initiative s'inscrit dans le cadre technique.
-
-1. [Préambule](00_introduction/index.md) — §2 Position hiérarchique
-2. [Règles d'utilisation](01_regles-utilisation/index.md) — §4 Applicabilité
-3. [Profil d'initiative](05_profil-initiative/index.md) — Template à produire
+L'objectif pour la direction métier ou le programme est de comprendre comment une initiative s'inscrit dans le cadre technique national. La lecture recommandée débute par le Préambule (section « Position hiérarchique »), se poursuit par les Règles d'utilisation (section « Applicabilité »), et s'achève par le Profil d'initiative, dont le template est à produire.
 
 ### 3.3 Équipe technique / développeur
 
-**Objectif :** Implémenter une initiative conforme aux standards nationaux.
-
-1. [Préambule](00_introduction/index.md) — Lecture complète
-2. [Règles d'utilisation](01_regles-utilisation/index.md) — Lecture complète
-3. [Topologie nationale cible](02_topologie-nationale-cible/index.md) — Comprendre l'architecture cible
-4. [Profils techniques](03_profils/) — Consulter les profils applicables (PT-XX)
-5. [Matrice d'alignement](04_matrice-alignement/index.md) — Vérifier l'alignement
-6. [Profil d'initiative](05_profil-initiative/index.md) — Produire sa fiche
+L'objectif pour l'équipe technique ou le développeur est d'implémenter une initiative conforme aux standards nationaux. La lecture recommandée comprend le Préambule (lecture complète), les Règles d'utilisation (lecture complète), la Topologie nationale cible (pour comprendre l'architecture cible), les Profils techniques (consulter les profils applicables PT-XX), la Matrice d'alignement (pour vérifier l'alignement), et le Profil d'initiative (pour produire sa fiche).
 
 ### 3.4 Architecte / intégrateur
 
-**Objectif :** Évaluer et sélectionner les standards et profils pour une initiative.
-
-1. [Topologie nationale cible](02_topologie-nationale-cible/index.md)
-2. [Profils techniques](03_profils/) — Tous les profils
-3. [Matrice d'alignement](04_matrice-alignement/index.md)
-4. [Gouvernance](06_gouvernance/index.md) — §2 Processus d'adoption, §3 Critères
+L'objectif pour l'architecte ou l'intégrateur est d'évaluer et de sélectionner les standards et profils applicables à une initiative. La lecture recommandée comprend la Topologie nationale cible, les Profils techniques (tous les profils), la Matrice d'alignement, et la Gouvernance (sections « Processus d'adoption » et « Critères »).
 
 ### 3.5 Partenaire technique / fournisseur
 
-**Objectif :** Évaluer la conformité d'un produit ou service.
-
-1. [Règles d'utilisation](01_regles-utilisation/index.md) — §2 Statuts, §3 Versionnement
-2. [Profils techniques](03_profils/) — Profils pertinents
-3. [Gouvernance](06_gouvernance/index.md) — §4 Homologation d'un produit
-
----
+L'objectif pour le partenaire technique ou le fournisseur est d'évaluer la conformité d'un produit ou d'un service aux exigences nationales. La lecture recommandée comprend les Règles d'utilisation (sections « Statuts » et « Versionnement »), les Profils techniques (profils pertinents), et la Gouvernance (section « Homologation d'un produit »).
 
 ## 4. Catalogue des profils techniques
 
-Les 13 profils couvrent l'ensemble des capacités d'interopérabilité du CNISN :
+Les treize profils couvrent l'ensemble des capacités d'interopérabilité du CNISN. Le tableau suivant présente chaque profil, la capacité CNISN associée et une description synthétique.
 
 | Profil | Capacité CNISN | Description |
 |--------|----------------|-------------|
-| [PT-01](03_profils/pt-01-echange-interinstitutionnel.md) | CAP-INT-03 | Échange interinstitutionnel (X-Road) |
-| [PT-02](03_profils/pt-02-mediation-intra-secteur.md) | CAP-INT-03 | Médiation intra-secteur |
-| [PT-03](03_profils/pt-03-catalogue-services-registre-contrats.md) | CAP-INT-06 | Catalogue de services et registre de contrats |
-| [PT-04](03_profils/pt-04-resolution-identite-beneficiaire.md) | CAP-INT-01 | Résolution d'identité bénéficiaire |
-| [PT-05](03_profils/pt-05-registre-professionnels.md) | CAP-INT-02 | Registre des professionnels |
-| [PT-06](03_profils/pt-06-referentiel-structures-services.md) | CAP-INT-04 | Référentiel des structures et services |
-| [PT-07](03_profils/pt-07-terminologie-codification.md) | CAP-INT-05 | Terminologie et codification |
-| [PT-08](03_profils/pt-08-echange-donnees-agregees.md) | CAP-INT-07 | Échange de données agrégées |
-| [PT-09](03_profils/pt-09-analytique-exposition-donnees.md) | CAP-INT-07 | Analytique et exposition de données |
-| [PT-10](03_profils/pt-10-confiance-authentification-autorisation.md) | CAP-INT-08 | Confiance, authentification, autorisation |
-| [PT-11](03_profils/pt-11-consentement-bases-autorisation.md) | CAP-INT-09 | Consentement et bases d'autorisation |
-| [PT-12](03_profils/pt-12-audit-provenance-traçabilité.md) | CAP-INT-10 | Audit, provenance, traçabilité |
-| [PT-13](03_profils/pt-13-qualite-reconciliation.md) | CAP-INT-11 | Qualité et réconciliation des données |
-
----
+| PT-01 | CAP-INT-03 | Échange interinstitutionnel (X-Road) |
+| PT-02 | CAP-INT-03 | Médiation intra-secteur |
+| PT-03 | CAP-INT-06 | Catalogue de services et registre de contrats |
+| PT-04 | CAP-INT-01 | Résolution d'identité bénéficiaire |
+| PT-05 | CAP-INT-02 | Registre des professionnels |
+| PT-06 | CAP-INT-04 | Référentiel des structures et services |
+| PT-07 | CAP-INT-05 | Terminologie et codification |
+| PT-08 | CAP-INT-07 | Échange de données agrégées |
+| PT-09 | CAP-INT-07 | Analytique et exposition de données |
+| PT-10 | CAP-INT-08 | Confiance, authentification, autorisation |
+| PT-11 | CAP-INT-09 | Consentement et bases d'autorisation |
+| PT-12 | CAP-INT-10 | Audit, provenance, traçabilité |
+| PT-13 | CAP-INT-11 | Qualité et réconciliation des données |
 
 ## 5. Statuts des décisions techniques
 
-Chaque standard, profil ou produit porteur l'un des statuts suivants :
+Chaque standard, profil ou produit porte l'un des statuts suivants, qui indiquent le stade de maturité de la décision technique. Le tableau ci-dessous définit le moment opportun pour consulter chaque statut.
 
 | Statut | Quand consulter |
 |--------|-----------------|
@@ -144,23 +108,48 @@ Chaque standard, profil ou produit porteur l'un des statuts suivants :
 | **Déprécié** | Compatibilité temporaire |
 | **Retiré** | Ne plus utiliser |
 
----
-
 ## 6. Liens vers les autres niveaux
+
+Le PTISN s'articule avec les trois niveaux supérieurs de la hiérarchie documentaire et avec le portefeuille national d'initiatives. Le tableau suivant synthétise ces liaisons.
 
 | Niveau | Document | Lien |
 |--------|----------|------|
-| 1 — CAESN | Cadre d'Architecture d'Entreprise | [../00_caesn/00_overview/index.md](../00_caesn/00_overview/index.md) |
-| 2 — CNISN | Cadre National d'Interopérabilité | [../01_cnisn/index.md](../01_cnisn/index.md) |
-| 3 — ARTSN | Architecture de Référence Technique | [../02_artsn/index.md](../02_artsn/index.md) |
-| — | Portefeuille national d'initiatives | [../00_caesn/06_portfolio/index.md](../00_caesn/06_portfolio/index.md) |
-| — | Référentiel des profils | [../referentiel/profils/](../referentiel/profils/) |
-
----
+| 1 — CAESN | Cadre d'Architecture d'Entreprise | ../00_caesn/00_overview/index.md |
+| 2 — CNISN | Cadre National d'Interopérabilité | ../01_cnisn/index.md |
+| 3 — ARTSN | Architecture de Référence Technique | ../02_artsn/index.md |
+| — | Portefeuille national d'initiatives | ../00_caesn/06_portfolio/index.md |
+| — | Référentiel des profils | ../referentiel/profils/ |
 
 ## 7. Documents complémentaires
 
-- [Matrice de lecture](reading-matrix.md) — Vue croisée profils × lecteurs
-- [Glossaire du PTISN](glossary.md) — Définitions des termes techniques
-- [Acronymes du PTISN](acronyms.md) — Liste des acronymes
-- [Annexes](08_annexes/) — Supports complémentaires
+Trois documents complémentaires accompagnent ce guide de lecture. La matrice de lecture propose une vue croisée profils par lecteurs. Le glossaire du PTISN fournit les définitions des termes techniques. La liste des acronymes du PTISN recense les abréviations utilisées dans ce dossier. Les annexes contiennent les supports complémentaires.
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
+- **Préambule** — Préambule du PTISN (`03_ptisn/00_introduction/index.md`)
+- **Règles d'utilisation** — Partie I — Règles d'utilisation du PTISN (`03_ptisn/01_regles-utilisation/index.md`)
+- **Topologie nationale cible** — Partie II — Topologie nationale cible (`03_ptisn/02_topologie-nationale-cible/index.md`)
+- **Matrice d'alignement** — Partie IV — Matrice d'alignement (`03_ptisn/04_matrice-alignement/index.md`)
+- **Profil d'initiative** — Partie V — Profil technique d'une initiative (`03_ptisn/05_profil-initiative/index.md`)
+- **Gouvernance** — Partie VI — Gouvernance du PTISN (`03_ptisn/06_gouvernance/index.md`)
+- **Conclusion** — Conclusion du PTISN (`03_ptisn/07_conclusion/index.md`)
+- **PT-01** — Profil technique national (`03_ptisn/03_profils/pt-01-echange-interinstitutionnel.md`)
+- **PT-02** — Profil technique national (`03_ptisn/03_profils/pt-02-mediation-intra-secteur.md`)
+- **PT-03** — Profil technique national (`03_ptisn/03_profils/pt-03-catalogue-services-registre-contrats.md`)
+- **PT-04** — Profil technique national (`03_ptisn/03_profils/pt-04-resolution-identite-beneficiaire.md`)
+- **PT-05** — Profil technique national (`03_ptisn/03_profils/pt-05-registre-professionnels.md`)
+- **PT-06** — Profil technique national (`03_ptisn/03_profils/pt-06-referentiel-structures-services.md`)
+- **PT-07** — Profil technique national (`03_ptisn/03_profils/pt-07-terminologie-codification.md`)
+- **PT-08** — Profil technique national (`03_ptisn/03_profils/pt-08-echange-donnees-agregees.md`)
+- **PT-09** — Profil technique national (`03_ptisn/03_profils/pt-09-analytique-exposition-donnees.md`)
+- **PT-10** — Profil technique national (`03_ptisn/03_profils/pt-10-confiance-authentification-autorisation.md`)
+- **PT-11** — Profil technique national (`03_ptisn/03_profils/pt-11-consentement-bases-autorisation.md`)
+- **PT-12** — Profil technique national (`03_ptisn/03_profils/pt-12-audit-provenance-traçabilité.md`)
+- **PT-13** — Profil technique national (`03_ptisn/03_profils/pt-13-qualite-reconciliation.md`)
+- **../00_caesn/00_overview/index.md** — Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
+- **../01_cnisn/index.md** — Cadre National d'Interopérabilité de la Santé Numérique (CNISN) (`01_cnisn/index.md`)
+- **../02_artsn/index.md** — Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
+- **../00_caesn/06_portfolio/index.md** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
+- **glossaire du PTISN** — Glossaire du PTISN (niveau 4) (`03_ptisn/glossary.md`)
+- **liste des acronymes du PTISN** — Acronymes et abréviations du PTISN (niveau 4) (`03_ptisn/acronyms.md`)

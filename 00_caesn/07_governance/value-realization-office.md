@@ -2,7 +2,7 @@
 title: Bureau de Réalisation de la Valeur
 id: governance-vro
 domain: 07_governance
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Secrétariat Général
@@ -23,7 +23,7 @@ tags: [gouvernance, valeur, portefeuille, bénéfices]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ● |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 ## Rôle et mandat
 
@@ -68,7 +68,15 @@ Le Bureau recommande et arbitre les décisions de portefeuille : poursuivre, acc
 
 ## Liens
 
-- [Gouvernance](./index.md)
-- [RACI de gouvernance](./raci.md)
-- [Portefeuille](../06_portfolio/index.md)
-- [Priorisation des initiatives](../06_portfolio/prioritization.md)
+- Gouvernance
+- RACI de gouvernance
+- Portefeuille
+- Priorisation des initiatives
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Gouvernance** — Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
+- **RACI de gouvernance** — RACI de gouvernance et responsabilités (`00_caesn/07_governance/raci.md`)
+- **Portefeuille** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
+- **Priorisation des initiatives** — Critères et score de priorisation des initiatives (`00_caesn/06_portfolio/prioritization.md`)

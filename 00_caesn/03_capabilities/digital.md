@@ -2,7 +2,7 @@
 title: Capabilités numériques transversales et composants DPI-H
 id: capabilities-digital
 domain: 03_capabilities
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Responsable de capabilités numériques
@@ -23,7 +23,7 @@ tags: [capabilités, numérique, snsd]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 Les capabilités numériques transversales traduisent les axes de la Stratégie Nationale de Santé Digitale (SNSD) et les exigences des référentiels DPI-H, OpenHIE et GovStack. Elles ne constituent pas des finalités autonomes, mais un socle numérique au service des flux de valeur santé.
 
@@ -51,6 +51,13 @@ Le présent cadre définit le rôle, la justification et les exigences auxquelle
 
 ## Liens
 
-- [Capabilités](./index.md)
-- [Runway](./runway.md)
-- [Données](../04_data/index.md)
+- Capabilités
+- Runway
+- Données
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
+- **Runway** — Capabilités critiques et architecture runway (`00_caesn/03_capabilities/runway.md`)
+- **Données** — Architecture des données et de l'information sanitaire (`00_caesn/04_data/index.md`)

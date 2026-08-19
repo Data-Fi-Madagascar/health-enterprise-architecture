@@ -2,7 +2,7 @@
 title: PT-12 — Profil technique national
 id: ptisn-pt-12-audit-provenance-traçabilité
 domain: 03_ptisn
-version: "0.4"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
@@ -91,6 +91,6 @@ Un journal technique ne doit pas être utilisé comme seul mécanisme de preuve 
 
 ------------------------------------------------------------------------
 
-*Rattachement : [CMP-17](../../referentiel/composants/cmp-17.md), [CAP-INT-10](../../referentiel/capacites/cap-int-10.md), [F-1](../../referentiel/fondations/f-1.md), [F-5](../../referentiel/fondations/f-5.md), [F-6](../../referentiel/fondations/f-6.md), [ART-3](../../referentiel/chapitres/art-3.md), [ART-7](../../referentiel/chapitres/art-7.md) · [fiche](../../referentiel/profils/pt-12.md)*
+*Rattachement : CMP-17, CAP-INT-10, F-1, F-5, F-6, ART-3, ART-7 · fiche PT-12*
 
 <!-- END:GENERATED -->

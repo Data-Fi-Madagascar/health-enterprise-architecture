@@ -2,7 +2,7 @@
 title: "Proposition d'arbitrage — 5 écarts CAESN ↔ ARTSN"
 id: arbitrage-ecarts-caesn-artsn
 domain: 07_governance
-version: "0.1.0"
+version: "1.0.0"
 status: proposé
 last_reviewed: 2026-08-13
 owner: DEPSI
@@ -23,9 +23,9 @@ tags: [gouvernance, arbitrage, caesn, artsn, ecarts]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
-Ce document présente les propositions d'arbitrage pour les 5 écarts identifiés entre le [CAESN](../03_capabilities/index.md) et l'[ARTSN](../../02_artsn/index.md), documentés dans le [point de vigilance](./point-de-vigilance-caesn.md).
+Ce document présente les propositions d'arbitrage pour les 5 écarts identifiés entre le CAESN et l'ARTSN, documentés dans le point de vigilance.
 
 ---
 
@@ -33,7 +33,7 @@ Ce document présente les propositions d'arbitrage pour les 5 écarts identifié
 
 ### Constat
 
-L'ARTSN rattache [ART-4a (résolution d'identité)](../../referentiel/chapitres/art-4a.md) et [ART-4b (bases d'autorisation)](../../referentiel/chapitres/art-4b.md) à une capabilité **CAP-04bis « Engagement patient et identitovigilance »**. Le catalogue CAESN ne comporte pas cette capabilité : CAP-04 est « Santé communautaire ».
+L'ARTSN rattache ART-4a (résolution d'identité) et ART-4b (bases d'autorisation) à une capabilité **CAP-04bis « Engagement patient et identitovigilance »**. Le catalogue CAESN ne comporte pas cette capabilité : CAP-04 est « Santé communautaire ».
 
 ### Proposition d'arbitrage
 
@@ -72,7 +72,7 @@ L'ARTSN rattache [ART-4a (résolution d'identité)](../../referentiel/chapitres/
 
 ### Constat
 
-L'ARTSN rattache [ART-0 (accords de partage)](../../referentiel/chapitres/art-0.md) et [ART-8d (chorégraphie inter-institutionnelle)](../../referentiel/chapitres/art-8d.md) à une capacité candidate « Coordination intersectorielle » (One Health), absente du catalogue CAP-01..16.
+L'ARTSN rattache ART-0 (accords de partage) et ART-8d (chorégraphie inter-institutionnelle) à une capacité candidate « Coordination intersectorielle » (One Health), absente du catalogue CAP-01..16.
 
 ### Proposition d'arbitrage
 
@@ -156,7 +156,7 @@ La coordination intersectorielle s'appuie sur un référentiel normatif internat
 
 ### Constat
 
-[ART-4d (référentiel géospatial et d'exploitation partagé)](../../referentiel/chapitres/art-4d.md) est rattaché à une capacité candidate « Surveillance spatio-temporelle » absente du catalogue, nécessaire au cloisonnement One Health.
+ART-4d (référentiel géospatial et d'exploitation partagé) est rattaché à une capacité candidate « Surveillance spatio-temporelle » absente du catalogue, nécessaire au cloisonnement One Health.
 
 ### Proposition d'arbitrage
 
@@ -242,8 +242,25 @@ Le document source de l'ARTSN annonce **18 principes (P-01 à P-18)** ; le catal
 
 ## Liens
 
-- [Point de vigilance CAESN](./point-de-vigilance-caesn.md)
-- [CAESN — capabilités](../03_capabilities/index.md)
-- [ARTSN — Annexe C](../../02_artsn/07_annexes/c-renvoi-capacites-candidates.md)
-- [CAESN — normes et standards](../09_standards/index.md)
-- [CAESN — registre des ADR](../08_decisions/index.md)
+- Point de vigilance CAESN
+- CAESN — capabilités
+- ARTSN — Annexe C
+- CAESN — normes et standards
+- CAESN — registre des ADR
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **CAESN** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
+- **ARTSN** — Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
+- **point de vigilance** — Point de vigilance CAESN — capacité et référentiel manquants pour la coordination intersectorielle (One Health) (`00_caesn/07_governance/point-de-vigilance-caesn.md`)
+- **ART-4a (résolution d'identité)** — Résolution d'identité (`referentiel/chapitres/art-4a.md`)
+- **ART-4b (bases d'autorisation)** — Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
+- **ART-0 (accords de partage)** — Accords de partage inter-institutionnels (`referentiel/chapitres/art-0.md`)
+- **ART-8d (chorégraphie inter-institutionnelle)** — Chorégraphie inter-institutionnelle (`referentiel/chapitres/art-8d.md`)
+- **ART-4d (référentiel géospatial et d'exploitation partagé)** — Référentiel géospatial et d'exploitation partagé (`referentiel/chapitres/art-4d.md`)
+- **Point de vigilance CAESN** — Point de vigilance CAESN — capacité et référentiel manquants pour la coordination intersectorielle (One Health) (`00_caesn/07_governance/point-de-vigilance-caesn.md`)
+- **CAESN — capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
+- **ARTSN — Annexe C** — Annexe C — Renvoi CAESN et capacités candidates (`02_artsn/07_annexes/c-renvoi-capacites-candidates.md`)
+- **CAESN — normes et standards** — Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
+- **CAESN — registre des ADR** — Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)

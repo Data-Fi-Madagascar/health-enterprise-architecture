@@ -2,7 +2,7 @@
 title: Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN)
 id: caesn
 domain: 00_overview
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Ministère de la Santé Publique
@@ -23,7 +23,7 @@ tags: [cadre, gouvernance, santé-numérique, madagascar]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ● |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 ## Objet
 
@@ -51,12 +51,12 @@ Il ne couvre pas les équipements biomédicaux ni les infrastructures physiques 
 
 ## Hiérarchie documentaire
 
-| Niveau | Document | Destinataires |
-|--------|----------|---------------|
-| 1 | Cadre d'Architecture d'Entreprise (ce document) : valeur, capabilités, principes, gouvernance | Décideurs, directions métiers, partenaires |
-| 2 | Cadre National d'Interopérabilité : standards d'échange, référentiels, profils | DEPSI, architectes, intégrateurs |
-| 3 | Architecture de Référence Technique : standards et formats, familles de patterns, règles d'homologation | DEPSI, architectes, intégrateurs |
-| 4 | Profils techniques d'implémentation (par initiative) : configurations, API, contrats d'interfaces | Développeurs, fournisseurs, équipes techniques |
+| Niveau | Document | Question | Destinataires |
+|--------|----------|----------|---------------|
+| 1 | Cadre d'Architecture d'Entreprise (ce document) | *Pourquoi?* — valeur, capabilités, principes, gouvernance | Décideurs, directions métiers, partenaires |
+| 2 | Cadre National d'Interopérabilité + Standards | *Quelles garanties et quelles normes?* — principes, capacités, gouvernance sectorielle, normes | DEPSI, architectes, intégrateurs |
+| 3 | Architecture de Référence Technique | *Comment garantir?* — contrats, patterns, règles d'homologation | DEPSI, architectes, intégrateurs |
+| 4 | Profils techniques d'implémentation (par initiative) | *Avec quoi?* — configurations, API, contrats d'interfaces (découle de l'UGD) | Développeurs, fournisseurs, équipes techniques |
 
 ## Structure du référentiel
 
@@ -64,22 +64,32 @@ Ce dépôt implémente le cadre comme **architecture as code** : chaque concept 
 
 | Domaine | Contenu |
 |---------|---------|
-| [Fondements](./foundations.md) | Ancrage stratégique et normatif (PDSS, SNSD, PSRSIS, OMS DPI-H, OpenHIE, GovStack) |
-| [Modèle de valeur](./value-model.md) | Bénéficiaires, dimensions de valeur |
-| [Flux de valeur](../01_value-streams/) | Les 4 flux de valeur nationaux (VS-01 à VS-04) |
-| [Principes](../02_principles/) | Principes d'architecture transversaux (PA) et principes de domaine (PD) |
-| [Capabilités](../03_capabilities/) | Catalogue CAP-01 à CAP-16, maturité, architecture runway |
-| [Données](../04_data/) | Principes DA, domaines de données, référentiels, gouvernance |
-| [Application](../05_application/) | Principes AA, paysage applicatif cible, services partagés |
-| [Portefeuille](../06_portfolio/) | Registre des initiatives, fiche initiative, priorisation |
-| [Gouvernance](../07_governance/) | Comité National, Bureau de Réalisation de la Valeur, responsabilités |
-| [Décisions](../08_decisions/) | Architecture Decision Records (ADR) |
-| [Normes](../09_standards/) | Standards et règles d'homologation |
-| [Annexes](../10_annexes/) | Matrice de lecture, glossaire |
+| Fondements | Ancrage stratégique et normatif (PDSS, SNSD, PSRSIS, OMS DPI-H, OpenHIE, GovStack) |
+| Modèle de valeur | Bénéficiaires, dimensions de valeur |
+| Flux de valeur | Les 4 flux de valeur nationaux (VS-01 à VS-04) |
+| Principes | Principes d'architecture transversaux (PA) et principes de domaine (PD) |
+| Capabilités | Catalogue CAP-01 à CAP-16, maturité, architecture runway |
+| Données | Principes DA, domaines de données, référentiels, gouvernance |
+| Application | Principes AA, paysage applicatif cible, services partagés |
+| Portefeuille | Registre des initiatives, fiche initiative, priorisation |
+| Gouvernance | Comité National, Bureau de Réalisation de la Valeur, responsabilités |
+| Annexes | Matrice de lecture, glossaire |
+
+> **Note :** Les Décisions (ADR) et Standards sont désormais dans le CNISN (niveau 2), dans les dossiers `01_cnisn/06_decisions/` et `01_cnisn/05_standards/`.
 
 ## Liens
 
-- [Guide de lecture du CAESN](../reading-guide.md)
-- [Matrice de lecture du CAESN](../reading-matrix.md)
-- [Glossaire](../10_annexes/glossary.md)
-- [Acronymes](../10_annexes/acronyms.md)
+- Guide de lecture du CAESN
+- Matrice de lecture du CAESN
+- Glossaire
+- Acronymes
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Fondements** — Fondements stratégiques et normatifs (`00_caesn/00_overview/foundations.md`)
+- **Modèle de valeur** — Modèle national de valeur (`00_caesn/00_overview/value-model.md`)
+- **Guide de lecture du CAESN** — Guide de lecture du CAESN (niveau 1) (`00_caesn/reading-guide.md`)
+- **Matrice de lecture du CAESN** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Glossaire** — Glossaire (`00_caesn/10_annexes/glossary.md`)
+- **Acronymes** — Acronymes et abréviations (`00_caesn/10_annexes/acronyms.md`)

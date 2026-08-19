@@ -2,7 +2,7 @@
 title: "Partie III — Profils techniques nationaux"
 id: ptisn-profils
 domain: 03_ptisn
-version: "0.4"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
@@ -18,20 +18,20 @@ Catalogue des 15 profils techniques. Chaque profil est un objet du référentiel
 
 | Code | Titre canonique | Rattachement | Statut | Fiche |
 |---|---|---|---|---|
-| PT-01 | Profil technique national | [CMP-06](../../referentiel/composants/cmp-06.md), [CAP-INT-03](../../referentiel/capacites/cap-int-03.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-1](../../referentiel/chapitres/art-1.md), [ART-7](../../referentiel/chapitres/art-7.md), [ART-11](../../referentiel/chapitres/art-11.md) | draft | [fiche](../../referentiel/profils/pt-01.md) |
-| PT-02 | Profil technique national | [CMP-06](../../referentiel/composants/cmp-06.md), [CAP-INT-03](../../referentiel/capacites/cap-int-03.md), [ART-1](../../referentiel/chapitres/art-1.md), [ART-2](../../referentiel/chapitres/art-2.md), [ART-5](../../referentiel/chapitres/art-5.md), [ART-7](../../referentiel/chapitres/art-7.md), [ART-8](../../referentiel/chapitres/art-8.md) | draft | [fiche](../../referentiel/profils/pt-02.md) |
-| PT-03 | Profil technique national | [CMP-16](../../referentiel/composants/cmp-16.md), [CAP-INT-06](../../referentiel/capacites/cap-int-06.md), [F-3](../../referentiel/fondations/f-3.md), [F-4](../../referentiel/fondations/f-4.md), [ART-1](../../referentiel/chapitres/art-1.md), [ART-2](../../referentiel/chapitres/art-2.md) | draft | [fiche](../../referentiel/profils/pt-03.md) |
-| PT-04 | Profil technique national | [CMP-11](../../referentiel/composants/cmp-11.md), [CAP-INT-01](../../referentiel/capacites/cap-int-01.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-4A](../../referentiel/chapitres/art-4a.md), [ART-4B](../../referentiel/chapitres/art-4b.md), [ART-7](../../referentiel/chapitres/art-7.md) | draft | [fiche](../../referentiel/profils/pt-04.md) |
-| PT-05 | Profil technique national | [CMP-13](../../referentiel/composants/cmp-13.md), [CAP-INT-02](../../referentiel/capacites/cap-int-02.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-4A](../../referentiel/chapitres/art-4a.md), [ART-7](../../referentiel/chapitres/art-7.md) | draft | [fiche](../../referentiel/profils/pt-05.md) |
-| PT-06 | Profil technique national | [CMP-08](../../referentiel/composants/cmp-08.md), [CAP-INT-04](../../referentiel/capacites/cap-int-04.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-5](../../referentiel/chapitres/art-5.md), [ART-6](../../referentiel/chapitres/art-6.md) | draft | [fiche](../../referentiel/profils/pt-06.md) |
-| PT-07 | Profil technique national | [CMP-10](../../referentiel/composants/cmp-10.md), [CAP-INT-05](../../referentiel/capacites/cap-int-05.md), [ART-2](../../referentiel/chapitres/art-2.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-5](../../referentiel/chapitres/art-5.md) | draft | [fiche](../../referentiel/profils/pt-07.md) |
-| PT-08 | Profil technique national | [CMP-03](../../referentiel/composants/cmp-03.md), [CMP-06](../../referentiel/composants/cmp-06.md), [CAP-INT-03](../../referentiel/capacites/cap-int-03.md), [CAP-INT-07](../../referentiel/capacites/cap-int-07.md), [ART-1](../../referentiel/chapitres/art-1.md), [ART-2](../../referentiel/chapitres/art-2.md), [ART-5](../../referentiel/chapitres/art-5.md), [ART-6](../../referentiel/chapitres/art-6.md) | draft | [fiche](../../referentiel/profils/pt-08.md) |
-| PT-09 | Profil technique national | [CMP-03](../../referentiel/composants/cmp-03.md), [CMP-04](../../referentiel/composants/cmp-04.md), [CAP-INT-07](../../referentiel/capacites/cap-int-07.md), [ART-3](../../referentiel/chapitres/art-3.md), [ART-5](../../referentiel/chapitres/art-5.md), [ART-6](../../referentiel/chapitres/art-6.md), [ART-7](../../referentiel/chapitres/art-7.md) | draft | [fiche](../../referentiel/profils/pt-09.md) |
-| PT-10 | Profil technique national | [CMP-15](../../referentiel/composants/cmp-15.md), [CAP-INT-08](../../referentiel/capacites/cap-int-08.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-4B](../../referentiel/chapitres/art-4b.md), [ART-7](../../referentiel/chapitres/art-7.md), [ART-9](../../referentiel/chapitres/art-9.md) | draft | [fiche](../../referentiel/profils/pt-10.md) |
-| PT-11 | Profil technique national | [CMP-12](../../referentiel/composants/cmp-12.md), [CAP-INT-09](../../referentiel/capacites/cap-int-09.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-4B](../../referentiel/chapitres/art-4b.md), [ART-7](../../referentiel/chapitres/art-7.md), [ART-11](../../referentiel/chapitres/art-11.md) | draft | [fiche](../../referentiel/profils/pt-11.md) |
-| PT-12 | Profil technique national | [CMP-17](../../referentiel/composants/cmp-17.md), [CAP-INT-10](../../referentiel/capacites/cap-int-10.md), [F-1](../../referentiel/fondations/f-1.md), [F-5](../../referentiel/fondations/f-5.md), [F-6](../../referentiel/fondations/f-6.md), [ART-3](../../referentiel/chapitres/art-3.md), [ART-7](../../referentiel/chapitres/art-7.md) | draft | [fiche](../../referentiel/profils/pt-12.md) |
-| PT-13 | Profil technique national | [CMP-05](../../referentiel/composants/cmp-05.md), [CAP-INT-11](../../referentiel/capacites/cap-int-11.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-5](../../referentiel/chapitres/art-5.md), [ART-6](../../referentiel/chapitres/art-6.md) | draft | [fiche](../../referentiel/profils/pt-13.md) |
-| PT-14 | Interopérabilité transfrontalière | [CAP-INT-13](../../referentiel/capacites/cap-int-13.md), [CAP-15](../../referentiel/capabilites/cap-15.md), [CAP-17](../../referentiel/capabilites/cap-17.md), [ART-7](../../referentiel/chapitres/art-7.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-1](../../referentiel/chapitres/art-1.md), [CMP-06](../../referentiel/composants/cmp-06.md), [CMP-15](../../referentiel/composants/cmp-15.md) | draft | [fiche](../../referentiel/profils/pt-14.md) |
-| PT-15 | Surveillance One Health | [CAP-INT-14](../../referentiel/capacites/cap-int-14.md), [CAP-18](../../referentiel/capabilites/cap-18.md), [CAP-05](../../referentiel/capabilites/cap-05.md), [ART-11](../../referentiel/chapitres/art-11.md), [ART-0](../../referentiel/chapitres/art-0.md), [ART-4D](../../referentiel/chapitres/art-4d.md), [ART-8B](../../referentiel/chapitres/art-8b.md), [CMP-02](../../referentiel/composants/cmp-02.md), [CMP-04](../../referentiel/composants/cmp-04.md), [CMP-06](../../referentiel/composants/cmp-06.md) | draft | [fiche](../../referentiel/profils/pt-15.md) |
+| PT-01 | Profil technique national | CMP-06, CAP-INT-03, ART-0, ART-1, ART-7, ART-11 | draft | PT-01 |
+| PT-02 | Profil technique national | CMP-06, CAP-INT-03, ART-1, ART-2, ART-5, ART-7, ART-8 | draft | PT-02 |
+| PT-03 | Profil technique national | CMP-16, CAP-INT-06, F-3, F-4, ART-1, ART-2 | draft | PT-03 |
+| PT-04 | Profil technique national | CMP-11, CAP-INT-01, ART-4, ART-4A, ART-4B, ART-7 | draft | PT-04 |
+| PT-05 | Profil technique national | CMP-13, CAP-INT-02, ART-4, ART-4A, ART-7 | draft | PT-05 |
+| PT-06 | Profil technique national | CMP-08, CAP-INT-04, ART-4, ART-5, ART-6 | draft | PT-06 |
+| PT-07 | Profil technique national | CMP-10, CAP-INT-05, ART-2, ART-4, ART-5 | draft | PT-07 |
+| PT-08 | Profil technique national | CMP-03, CMP-06, CAP-INT-03, CAP-INT-07, ART-1, ART-2, ART-5, ART-6 | draft | PT-08 |
+| PT-09 | Profil technique national | CMP-03, CMP-04, CAP-INT-07, ART-3, ART-5, ART-6, ART-7 | draft | PT-09 |
+| PT-10 | Profil technique national | CMP-15, CAP-INT-08, ART-0, ART-4B, ART-7, ART-9 | draft | PT-10 |
+| PT-11 | Profil technique national | CMP-12, CAP-INT-09, ART-0, ART-4B, ART-7, ART-11 | draft | PT-11 |
+| PT-12 | Profil technique national | CMP-17, CAP-INT-10, F-1, F-5, F-6, ART-3, ART-7 | draft | PT-12 |
+| PT-13 | Profil technique national | CMP-05, CAP-INT-11, ART-4, ART-5, ART-6 | draft | PT-13 |
+| PT-14 | Interopérabilité transfrontalière | CAP-INT-13, CAP-15, CAP-17, ART-7, ART-0, ART-1, CMP-06, CMP-15 | draft | PT-14 |
+| PT-15 | Surveillance One Health | CAP-INT-14, CAP-18, CAP-05, ART-11, ART-0, ART-4D, ART-8B, CMP-02, CMP-04, CMP-06 | draft | PT-15 |
 
 <!-- END:GENERATED -->

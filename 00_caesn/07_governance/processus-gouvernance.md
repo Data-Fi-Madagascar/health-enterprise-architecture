@@ -2,7 +2,7 @@
 title: "Guide du processus de gouvernance"
 id: processus-gouvernance
 domain: 07_governance
-version: "0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: Secrétariat Général
@@ -286,16 +286,26 @@ Mois 12 : Retiré du référentiel (statut « déprécié »)
 
 | Outil | Contenu | Mise à jour |
 |-------|---------|-------------|
-| [Registre des décisions](../08_decisions/registre-decisions.md) | Toutes les ADRs | À chaque décision |
-| [Template modification](../08_decisions/template-modification.md) | Structure des demandes | Statique |
-| [Table de maturité](../../02_artsn/07_annexes/a-table-de-maturite.md) | Statut des chapitres | À chaque revue |
-| [Feuille de route](../../02_artsn/09_feuille-route/index.md) | Planification | Mensuelle |
+| Registre des décisions | Toutes les ADRs | À chaque décision |
+| Template modification | Structure des demandes | Statique |
+| Table de maturité | Statut des chapitres | À chaque revue |
+| Feuille de route | Planification | Mensuelle |
 
 ---
 
 ## Liens
 
-- [Gouvernance — Instances et rôles](./index.md)
-- [Registre des décisions](../08_decisions/registre-decisions.md)
-- [RACI de gouvernance](./raci.md)
-- [Bureau de Réalisation de la Valeur](./value-realization-office.md)
+- Gouvernance — Instances et rôles
+- Registre des décisions
+- RACI de gouvernance
+- Bureau de Réalisation de la Valeur
+
+## Références
+
+- **Registre des décisions** — Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
+- **Template modification** — Template — Demande de modification architecturale (`01_cnisn/06_decisions/template-modification.md`)
+- **Table de maturité** — Annexe A — Table de maturité par chapitre (`02_artsn/07_annexes/a-table-de-maturite.md`)
+- **Feuille de route** — Feuille de route de déploiement progressif de l'ARTSN (`02_artsn/09_feuille-route/index.md`)
+- **Gouvernance — Instances et rôles** — Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
+- **RACI de gouvernance** — RACI de gouvernance et responsabilités (`00_caesn/07_governance/raci.md`)
+- **Bureau de Réalisation de la Valeur** — Bureau de Réalisation de la Valeur (`00_caesn/07_governance/value-realization-office.md`)

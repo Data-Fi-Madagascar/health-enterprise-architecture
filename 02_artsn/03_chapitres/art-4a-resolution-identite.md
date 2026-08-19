@@ -2,11 +2,12 @@
 title: "ART-4a — Résolution d'identité"
 id: art-4a
 domain: 02_artsn
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: [artsn, chapitres, art-4a, niveau-3]
+related: ['cap-int-01']
 ---
 
 # ART-4a — Résolution d'identité
@@ -23,10 +24,10 @@ tags: [artsn, chapitres, art-4a, niveau-3]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-ART-4a — Résolution d'identité constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : [`art-4a`](../../referentiel/chapitres/art-4a.md).
+ART-4a — Résolution d'identité constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-4a`.
 
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
@@ -35,15 +36,22 @@ ART-4a — Résolution d'identité constitue un chapitre du **cadre normatif opp
 
 **Discipline existentielle.** Dès lors qu’une source échappe à la gouvernance directe de l’initiative (erreurs de saisies manuelles, variations phonétiques des patronymes, logiciels distants en silos) : elle seule permet d’éviter l’attribution de données cliniques au mauvais patient et de bloquer les accidents médicaux sans rompre le pipeline.
 
-- **Rattachement** : [CAP-04bis](../07_annexes/c-renvoi-capacites-candidates.md) (engagement patient et identitovigilance).
+- **Rattachement** : CAP-04bis (engagement patient et identitovigilance).
 - **Concepts cibles** : Golden Record, Identifiant National de Santé (INS).
-- **Déduit selon** : [ENF-3](../../referentiel/exigences/enf-3.md) (unicité de l’identité).
+- **Déduit selon** : ENF-3 (unicité de l’identité).
 - **Statut : Provisoire.**
 
-*Rattachement : [ENF-3](../../referentiel/exigences/enf-3.md), [CAP-04](../../referentiel/capabilites/cap-04.md) · [fiche](../../referentiel/chapitres/art-4a.md)*
+*Rattachement : ENF-3, CAP-04 · fiche ART-4A*
 
 <!-- END:GENERATED -->
 ## Liens
 
-- [Index des chapitres](./index.md)
-- [Exigences contextuelles — Partie III](../02_exigences-contextuelles/index.md)
+- Index des chapitres
+- Exigences contextuelles — Partie III
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **`art-4a`** — Résolution d'identité (`referentiel/chapitres/art-4a.md`)
+- **Index des chapitres** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **Exigences contextuelles — Partie III** — Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

@@ -2,7 +2,7 @@
 title: "Partie II — Capacités nationales requises"
 id: cnisn-capacites
 domain: 01_cnisn
-version: "0.5"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: DEPSI
@@ -19,7 +19,7 @@ Ce catalogue référence les 14 capacités. Le texte de référence de chaque ca
 
 ## Catalogue des capacités
 
-Les 14 capacités sont regroupées en sept familles de réponse, calquées sur les réponses architecturales de l'ARTSN (couches 3 à 6, axes et extensions transfrontalière et intersectorielle de la cartographie cible — voir [annexe B](../08_annexes/b-articulation-art-sn.md)).
+Les 14 capacités sont regroupées en sept familles de réponse, calquées sur les réponses architecturales de l'ARTSN (couches 3 à 6, axes et extensions transfrontalière et intersectorielle de la cartographie cible — voir annexe B).
 
 | Famille | Capacités |
 |---|---|
@@ -66,7 +66,7 @@ Permettre aux systèmes autorisés de relier plusieurs représentations d’un m
 
 P-INT-01 à P-INT-04, P-INT-14 à P-INT-18.
 
-*Rattachement : [P-INT-01](../../referentiel/principes/p-int-01.md), [P-INT-02](../../referentiel/principes/p-int-02.md), [P-INT-03](../../referentiel/principes/p-int-03.md), [P-INT-04](../../referentiel/principes/p-int-04.md), [P-INT-14](../../referentiel/principes/p-int-14.md), [P-INT-15](../../referentiel/principes/p-int-15.md), [P-INT-16](../../referentiel/principes/p-int-16.md), [P-INT-17](../../referentiel/principes/p-int-17.md), [P-INT-18](../../referentiel/principes/p-int-18.md), [CAP-02](../../referentiel/capabilites/cap-02.md), [CAP-14](../../referentiel/capabilites/cap-14.md) · [fiche](../../referentiel/capacites/cap-int-01.md)*
+*Rattachement : P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-14, P-INT-15, P-INT-16, P-INT-17, P-INT-18, CAP-02, CAP-14 · fiche CAP-INT-01*
 
 ### CAP-INT-02 — Registre et résolution des professionnels de santé
 
@@ -98,7 +98,7 @@ Cette capacité est distincte :
 
 P-INT-01 à P-INT-04, P-INT-14 et P-INT-15.
 
-*Rattachement : [P-INT-01](../../referentiel/principes/p-int-01.md), [P-INT-02](../../referentiel/principes/p-int-02.md), [P-INT-03](../../referentiel/principes/p-int-03.md), [P-INT-04](../../referentiel/principes/p-int-04.md), [P-INT-14](../../referentiel/principes/p-int-14.md), [P-INT-15](../../referentiel/principes/p-int-15.md), [CAP-09](../../referentiel/capabilites/cap-09.md), [CAP-14](../../referentiel/capabilites/cap-14.md) · [fiche](../../referentiel/capacites/cap-int-02.md)*
+*Rattachement : P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-14, P-INT-15, CAP-09, CAP-14 · fiche CAP-INT-02*
 
 ### CAP-INT-04 — Référentiel des structures et services de santé
 
@@ -129,7 +129,7 @@ Fournir une autorité commune sur :
 
 P-INT-01 à P-INT-04.
 
-*Rattachement : [P-INT-01](../../referentiel/principes/p-int-01.md), [P-INT-02](../../referentiel/principes/p-int-02.md), [P-INT-03](../../referentiel/principes/p-int-03.md), [P-INT-04](../../referentiel/principes/p-int-04.md), [CAP-11](../../referentiel/capabilites/cap-11.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md) · [fiche](../../referentiel/capacites/cap-int-04.md)*
+*Rattachement : P-INT-01, P-INT-02, P-INT-03, P-INT-04, CAP-11, CAP-13, CAP-14 · fiche CAP-INT-04*
 
 ### CAP-INT-05 — Terminologie et codification communes
 
@@ -153,7 +153,7 @@ Permettre aux systèmes de partager des définitions et codifications cohérente
 
 P-INT-01 à P-INT-06.
 
-*Rattachement : [P-INT-01](../../referentiel/principes/p-int-01.md), [P-INT-02](../../referentiel/principes/p-int-02.md), [P-INT-03](../../referentiel/principes/p-int-03.md), [P-INT-04](../../referentiel/principes/p-int-04.md), [P-INT-05](../../referentiel/principes/p-int-05.md), [P-INT-06](../../referentiel/principes/p-int-06.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md) · [fiche](../../referentiel/capacites/cap-int-05.md)*
+*Rattachement : P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-05, P-INT-06, CAP-13, CAP-14 · fiche CAP-INT-05*
 
 <!-- END:GENERATED -->
 
@@ -187,7 +187,7 @@ Permettre aux systèmes de transmettre, recevoir, transformer et acheminer des d
 
 P-INT-05 à P-INT-13, P-INT-18 à P-INT-25.
 
-*Rattachement : [P-INT-05](../../referentiel/principes/p-int-05.md), [P-INT-06](../../referentiel/principes/p-int-06.md), [P-INT-07](../../referentiel/principes/p-int-07.md), [P-INT-08](../../referentiel/principes/p-int-08.md), [P-INT-09](../../referentiel/principes/p-int-09.md), [P-INT-10](../../referentiel/principes/p-int-10.md), [P-INT-11](../../referentiel/principes/p-int-11.md), [P-INT-12](../../referentiel/principes/p-int-12.md), [P-INT-13](../../referentiel/principes/p-int-13.md), [P-INT-18](../../referentiel/principes/p-int-18.md), [P-INT-19](../../referentiel/principes/p-int-19.md), [P-INT-20](../../referentiel/principes/p-int-20.md), [P-INT-21](../../referentiel/principes/p-int-21.md), [P-INT-22](../../referentiel/principes/p-int-22.md), [P-INT-23](../../referentiel/principes/p-int-23.md), [P-INT-24](../../referentiel/principes/p-int-24.md), [P-INT-25](../../referentiel/principes/p-int-25.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md) · [fiche](../../referentiel/capacites/cap-int-03.md)*
+*Rattachement : P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-10, P-INT-11, P-INT-12, P-INT-13, P-INT-18, P-INT-19, P-INT-20, P-INT-21, P-INT-22, P-INT-23, P-INT-24, P-INT-25, CAP-13, CAP-14 · fiche CAP-INT-03*
 
 ### CAP-INT-06 — Catalogue des services et registre des contrats
 
@@ -220,7 +220,7 @@ Rendre visibles, gouvernables et réutilisables les services et interfaces du se
 
 P-INT-05 à P-INT-09, P-INT-23 à P-INT-25.
 
-*Rattachement : [P-INT-05](../../referentiel/principes/p-int-05.md), [P-INT-06](../../referentiel/principes/p-int-06.md), [P-INT-07](../../referentiel/principes/p-int-07.md), [P-INT-08](../../referentiel/principes/p-int-08.md), [P-INT-09](../../referentiel/principes/p-int-09.md), [P-INT-23](../../referentiel/principes/p-int-23.md), [P-INT-24](../../referentiel/principes/p-int-24.md), [P-INT-25](../../referentiel/principes/p-int-25.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-16](../../referentiel/capabilites/cap-16.md) · [fiche](../../referentiel/capacites/cap-int-06.md)*
+*Rattachement : P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-23, P-INT-24, P-INT-25, CAP-14, CAP-16 · fiche CAP-INT-06*
 
 <!-- END:GENERATED -->
 
@@ -256,7 +256,7 @@ La conception interne des entrepôts, projections et modèles analytiques relèv
 
 P-INT-05 à P-INT-09, P-INT-17 à P-INT-25.
 
-*Rattachement : [P-INT-05](../../referentiel/principes/p-int-05.md), [P-INT-06](../../referentiel/principes/p-int-06.md), [P-INT-07](../../referentiel/principes/p-int-07.md), [P-INT-08](../../referentiel/principes/p-int-08.md), [P-INT-09](../../referentiel/principes/p-int-09.md), [P-INT-17](../../referentiel/principes/p-int-17.md), [P-INT-18](../../referentiel/principes/p-int-18.md), [P-INT-19](../../referentiel/principes/p-int-19.md), [P-INT-20](../../referentiel/principes/p-int-20.md), [P-INT-21](../../referentiel/principes/p-int-21.md), [P-INT-22](../../referentiel/principes/p-int-22.md), [P-INT-23](../../referentiel/principes/p-int-23.md), [P-INT-24](../../referentiel/principes/p-int-24.md), [P-INT-25](../../referentiel/principes/p-int-25.md), [CAP-05](../../referentiel/capabilites/cap-05.md), [CAP-13](../../referentiel/capabilites/cap-13.md) · [fiche](../../referentiel/capacites/cap-int-07.md)*
+*Rattachement : P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-17, P-INT-18, P-INT-19, P-INT-20, P-INT-21, P-INT-22, P-INT-23, P-INT-24, P-INT-25, CAP-05, CAP-13 · fiche CAP-INT-07*
 
 <!-- END:GENERATED -->
 
@@ -289,7 +289,7 @@ Fournir les mécanismes nécessaires à l’identification, l’authentification
 
 P-INT-14 à P-INT-20.
 
-*Rattachement : [P-INT-14](../../referentiel/principes/p-int-14.md), [P-INT-15](../../referentiel/principes/p-int-15.md), [P-INT-16](../../referentiel/principes/p-int-16.md), [P-INT-17](../../referentiel/principes/p-int-17.md), [P-INT-18](../../referentiel/principes/p-int-18.md), [P-INT-19](../../referentiel/principes/p-int-19.md), [P-INT-20](../../referentiel/principes/p-int-20.md), [CAP-15](../../referentiel/capabilites/cap-15.md) · [fiche](../../referentiel/capacites/cap-int-08.md)*
+*Rattachement : P-INT-14, P-INT-15, P-INT-16, P-INT-17, P-INT-18, P-INT-19, P-INT-20, CAP-15 · fiche CAP-INT-08*
 
 ### CAP-INT-09 — Gestion des consentements et bases d’autorisation
 
@@ -317,7 +317,7 @@ Le consentement est une base possible parmi plusieurs bases légales ou fonction
 
 P-INT-14 à P-INT-17.
 
-*Rattachement : [P-INT-14](../../referentiel/principes/p-int-14.md), [P-INT-15](../../referentiel/principes/p-int-15.md), [P-INT-16](../../referentiel/principes/p-int-16.md), [P-INT-17](../../referentiel/principes/p-int-17.md), [CAP-15](../../referentiel/capabilites/cap-15.md) · [fiche](../../referentiel/capacites/cap-int-09.md)*
+*Rattachement : P-INT-14, P-INT-15, P-INT-16, P-INT-17, CAP-15 · fiche CAP-INT-09*
 
 ### CAP-INT-10 — Provenance, audit et traçabilité
 
@@ -345,7 +345,7 @@ Permettre de comprendre :
 
 P-INT-07, P-INT-17, P-INT-18 et P-INT-23.
 
-*Rattachement : [P-INT-07](../../referentiel/principes/p-int-07.md), [P-INT-17](../../referentiel/principes/p-int-17.md), [P-INT-18](../../referentiel/principes/p-int-18.md), [P-INT-23](../../referentiel/principes/p-int-23.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-15](../../referentiel/capabilites/cap-15.md) · [fiche](../../referentiel/capacites/cap-int-10.md)*
+*Rattachement : P-INT-07, P-INT-17, P-INT-18, P-INT-23, CAP-13, CAP-15 · fiche CAP-INT-10*
 
 <!-- END:GENERATED -->
 
@@ -376,7 +376,7 @@ Permettre de détecter et traiter les divergences entre systèmes, référentiel
 
 P-INT-01 à P-INT-09, P-INT-23 à P-INT-25.
 
-*Rattachement : [P-INT-01](../../referentiel/principes/p-int-01.md), [P-INT-02](../../referentiel/principes/p-int-02.md), [P-INT-03](../../referentiel/principes/p-int-03.md), [P-INT-04](../../referentiel/principes/p-int-04.md), [P-INT-05](../../referentiel/principes/p-int-05.md), [P-INT-06](../../referentiel/principes/p-int-06.md), [P-INT-07](../../referentiel/principes/p-int-07.md), [P-INT-08](../../referentiel/principes/p-int-08.md), [P-INT-09](../../referentiel/principes/p-int-09.md), [P-INT-23](../../referentiel/principes/p-int-23.md), [P-INT-24](../../referentiel/principes/p-int-24.md), [P-INT-25](../../referentiel/principes/p-int-25.md), [CAP-13](../../referentiel/capabilites/cap-13.md), [CAP-14](../../referentiel/capabilites/cap-14.md) · [fiche](../../referentiel/capacites/cap-int-11.md)*
+*Rattachement : P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-23, P-INT-24, P-INT-25, CAP-13, CAP-14 · fiche CAP-INT-11*
 
 ### CAP-INT-12 — Conformité et tests d’interopérabilité
 
@@ -405,7 +405,7 @@ P-INT-19 à P-INT-25.
 
 La conformité ne se traduit pas par un service exposé mais par un **processus d’homologation** : cadre CNISN Partie IV, fondation F.4 (rattachement aux capacités) et dispositif CNASN. Les tests associés (validation de contrats, jeux de données, remédiation) sont portés par les profils et outils PTISN.
 
-*Rattachement : [P-INT-19](../../referentiel/principes/p-int-19.md), [P-INT-20](../../referentiel/principes/p-int-20.md), [P-INT-21](../../referentiel/principes/p-int-21.md), [P-INT-22](../../referentiel/principes/p-int-22.md), [P-INT-23](../../referentiel/principes/p-int-23.md), [P-INT-24](../../referentiel/principes/p-int-24.md), [P-INT-25](../../referentiel/principes/p-int-25.md), [CAP-14](../../referentiel/capabilites/cap-14.md), [CAP-16](../../referentiel/capabilites/cap-16.md) · [fiche](../../referentiel/capacites/cap-int-12.md)*
+*Rattachement : P-INT-19, P-INT-20, P-INT-21, P-INT-22, P-INT-23, P-INT-24, P-INT-25, CAP-14, CAP-16 · fiche CAP-INT-12*
 
 <!-- END:GENERATED -->
 
@@ -504,13 +504,13 @@ Madagascar est membre de l'Union Africaine (UA), de la Commission Économique de
 
 #### Rattachement
 
-- [CAP-15](../../referentiel/capabilites/cap-15.md) (Sécurité, contrôle d'accès et résidence)
-- [CAP-18](../../referentiel/capabilites/cap-18.md) (Coordination intersectorielle — One Health)
-- [ART-7](../../referentiel/chapitres/art-7.md) (Sécurité, contrôle d'accès et résidence)
-- [ART-0](../../referentiel/chapitres/art-0.md) (Accords de partage inter-institutionnels)
-- [PT-14](../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md) (Profil technique transfrontalier — IPS)
+- CAP-15 (Sécurité, contrôle d'accès et résidence)
+- CAP-18 (Coordination intersectorielle — One Health)
+- ART-7 (Sécurité, contrôle d'accès et résidence)
+- ART-0 (Accords de partage inter-institutionnels)
+- PT-14 (Profil technique transfrontalier — IPS)
 
-*Rattachement : [P-INT-01](../../referentiel/principes/p-int-01.md), [P-INT-05](../../referentiel/principes/p-int-05.md), [P-INT-10](../../referentiel/principes/p-int-10.md), [P-INT-14](../../referentiel/principes/p-int-14.md), [P-INT-16](../../referentiel/principes/p-int-16.md), [P-INT-17](../../referentiel/principes/p-int-17.md), [P-INT-19](../../referentiel/principes/p-int-19.md), [CAP-15](../../referentiel/capabilites/cap-15.md) · [fiche](../../referentiel/capacites/cap-int-13.md)*
+*Rattachement : P-INT-01, P-INT-05, P-INT-10, P-INT-14, P-INT-16, P-INT-17, P-INT-19, CAP-15 · fiche CAP-INT-13*
 
 <!-- END:GENERATED -->
 
@@ -599,14 +599,18 @@ Les secteurs concernés :
 
 #### Rattachement
 
-- [CAP-18](../../referentiel/capabilites/cap-18.md) (Coordination intersectorielle — One Health)
-- [CAP-05](../../referentiel/capabilites/cap-05.md) (Surveillance épidémiologique)
-- [ART-11](../../referentiel/chapitres/art-11.md) (Coordination intersectorielle)
-- [ART-0](../../referentiel/chapitres/art-0.md) (Accords de partage inter-institutionnels)
-- [ART-4d](../../referentiel/chapitres/art-4d.md) (Référentiel géospatial)
-- [F.2](../../referentiel/fondations/f-2.md) (Souveraineté intersectorielle)
-- [ENF-4](../../referentiel/exigences/enf-4.md) (Cloisonnement inter-institutionnel One Health)
+- CAP-18 (Coordination intersectorielle — One Health)
+- CAP-05 (Surveillance épidémiologique)
+- ART-11 (Coordination intersectorielle)
+- ART-0 (Accords de partage inter-institutionnels)
+- ART-4d (Référentiel géospatial)
+- F.2 (Souveraineté intersectorielle)
+- ENF-4 (Cloisonnement inter-institutionnel One Health)
 
-*Rattachement : [P-INT-01](../../referentiel/principes/p-int-01.md), [P-INT-05](../../referentiel/principes/p-int-05.md), [P-INT-10](../../referentiel/principes/p-int-10.md), [P-INT-14](../../referentiel/principes/p-int-14.md), [P-INT-16](../../referentiel/principes/p-int-16.md), [P-INT-22](../../referentiel/principes/p-int-22.md) · [fiche](../../referentiel/capacites/cap-int-14.md)*
+*Rattachement : P-INT-01, P-INT-05, P-INT-10, P-INT-14, P-INT-16, P-INT-22 · fiche CAP-INT-14*
 
 <!-- END:GENERATED -->
+
+## Références
+
+- **annexe B** — Annexe B — Articulation avec l'ARTSN (`01_cnisn/08_annexes/b-articulation-art-sn.md`)

@@ -2,7 +2,7 @@
 title: Flux de valeur nationaux de santé
 id: value-streams
 domain: 01_value-streams
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Responsables de flux de valeur
@@ -23,7 +23,7 @@ tags: [flux-de-valeur, value-stream]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 ## Définition
 
@@ -35,10 +35,10 @@ Cette notion permet de dépasser l'organisation en silos pour raisonner en terme
 
 | Flux | Finalité |
 |------|----------|
-| [VS-01](./vs-01-access-care.md) | **Accéder à des services de santé essentiels, intégrés, équitables et de qualité** — permettre aux personnes et communautés de recevoir des soins accessibles, continus, sûrs et de qualité. |
-| [VS-02](./vs-02-risk-protection.md) | **Prévenir, détecter et répondre aux risques sanitaires** — protéger la population contre les maladies, épidémies, urgences et risques de santé publique. |
-| [VS-03](./vs-03-financial-protection.md) | **Protéger financièrement la population face aux dépenses de santé** — réduire les barrières financières et permettre l'accès aux soins sans appauvrissement. |
-| [VS-04](./vs-04-system-steering.md) | **Piloter, coordonner et améliorer la performance du système de santé** — décider, planifier, coordonner, suivre et améliorer à partir de données fiables. |
+| VS-01 | **Accéder à des services de santé essentiels, intégrés, équitables et de qualité** — permettre aux personnes et communautés de recevoir des soins accessibles, continus, sûrs et de qualité. |
+| VS-02 | **Prévenir, détecter et répondre aux risques sanitaires** — protéger la population contre les maladies, épidémies, urgences et risques de santé publique. |
+| VS-03 | **Protéger financièrement la population face aux dépenses de santé** — réduire les barrières financières et permettre l'accès aux soins sans appauvrissement. |
+| VS-04 | **Piloter, coordonner et améliorer la performance du système de santé** — décider, planifier, coordonner, suivre et améliorer à partir de données fiables. |
 
 Ces flux ne remplacent pas les stratégies nationales : ils les traduisent en chaînes opérationnelles de valeur.
 
@@ -55,9 +55,19 @@ Chaque flux précise :
 
 ## Liens vers les capabilités
 
-Chaque flux mobilise plusieurs capabilités. Voir la [lecture des capabilités par flux](../03_capabilities/index.md#lecture-des-capabilités-par-flux-de-valeur).
+Chaque flux mobilise plusieurs capabilités. Voir la lecture des capabilités par flux.
 
 ## Liens
 
-- [Modèle de valeur](../00_overview/value-model.md)
-- [Principes d'architecture](../02_principles/index.md)
+- Modèle de valeur
+- Principes d'architecture
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **VS-01** — Accéder à des services de santé essentiels, intégrés, équitables et de qualité (`00_caesn/01_value-streams/vs-01-access-care.md`)
+- **VS-02** — Prévenir, détecter et répondre aux risques sanitaires (`00_caesn/01_value-streams/vs-02-risk-protection.md`)
+- **VS-03** — Protéger financièrement la population face aux dépenses de santé (`00_caesn/01_value-streams/vs-03-financial-protection.md`)
+- **VS-04** — Piloter, coordonner et améliorer la performance du système de santé (`00_caesn/01_value-streams/vs-04-system-steering.md`)
+- **Modèle de valeur** — Modèle national de valeur (`00_caesn/00_overview/value-model.md`)
+- **Principes d'architecture** — Principes d'architecture (`00_caesn/02_principles/index.md`)

@@ -2,7 +2,7 @@
 title: "Veille architecturale"
 id: veille-architecturale
 domain: 02_artsn
-version: "0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
@@ -15,23 +15,11 @@ tags: [artsn, gouvernance, veille, standards, tendances, niveau-3]
 
 **Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
 
-| Profil | Lecture |
-|--------|---------|
-| Décideurs institutionnels | ○ |
-| Directions métier / programmes | ◐ |
-| DEPSI / équipes techniques | ● |
-| SIS / données / suivi-évaluation | ◐ |
-| Partenaires techniques et financiers | ● |
-
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle.
-
----
+Ce document s'adresse prioritairement aux équipes DEPSI et techniques ainsi qu'aux partenaires techniques et financiers. Les directions métier et programmes, ainsi que les équipes SIS, données et suivi-évaluation, trouveront une lecture complémentaire utile. Les décideurs institutionnels peuvent y recourir ponctuellement.
 
 ## Objet
 
 Ce document définit le processus de veille architecturale pour maintenir l'ARTSN alignée sur les standards en vigueur, les évolutions technologiques et les besoins métier émergents. La veille alimente le processus de décision du CNASN et garantit la pertinence continue du cadre.
-
----
 
 ## 1. Périmètre de la veille
 
@@ -63,11 +51,11 @@ Ce document définit le processus de veille architecturale pour maintenir l'ARTS
 | **Articles scientifiques** | Recherche en eHealth | Trimestriel | DEPSI |
 | **Pays similaires** | Retours d'expérience | Semestriel | DEPSI |
 
----
-
 ## 2. Processus de veille
 
 ### 2.1 Collecte
+
+Le chargé de veille consulte les sources identifiées de manière continue, enregistre les veilles dans la fiche à chaque découverte et les classifie par domaine et priorité.
 
 | Étape | Action | Responsable | Fréquence |
 |-------|--------|-------------|-----------|
@@ -77,6 +65,8 @@ Ce document définit le processus de veille architecturale pour maintenir l'ARTS
 
 ### 2.2 Analyse
 
+Le comité technique évalue l'impact sur l'ARTSN, identifie les actions requises et le CNASN priorise ces actions, le tout de manière trimestrielle.
+
 | Étape | Action | Responsable | Fréquence |
 |-------|--------|-------------|-----------|
 | 2.2.1 | Évaluer l'impact sur l'ARTSN | Comité technique | Trimestriel |
@@ -85,13 +75,13 @@ Ce document définit le processus de veille architecturale pour maintenir l'ARTS
 
 ### 2.3 Intégration
 
+Le chargé de veille soumet les modifications au CNASN selon la priorité établie, la DEPSI met à jour l'ARTSN après décision et le CNASN communique les changements après publication.
+
 | Étape | Action | Responsable | Fréquence |
 |-------|--------|-------------|-----------|
 | 2.3.1 | Soumettre les modifications au CNASN | Chargé de veille | Selon priorité |
 | 2.3.2 | Mettre à jour l'ARTSN si nécessaire | DEPSI | Après décision |
 | 2.3.3 | Communiquer les changements | CNASN | Après publication |
-
----
 
 ## 3. Fiche de veille
 
@@ -118,17 +108,11 @@ Ce document définit le processus de veille architecturale pour maintenir l'ARTS
 | VEE-0002 | 2026-08-13 | IHE | Nouveau profil mCSD pour le community health | Moyen | Veille — à évaluer |
 | VEE-0003 | 2026-08-13 | OMS | Mise à jour GDHCN v2.0 | Élevé | Modification PT-14 |
 
----
-
 ## 4. Revue trimestrielle
 
 ### 4.1 Ordre du jour type
 
-1. **Bilan des veilles** : nombre de fiches, répartition par domaine
-2. **Impact ARTSN** : modifications à programmer
-3. **Standards émergents** : technologies à surveiller
-4. **Pays similaires** : retours d'expérience pertinentes
-5. **Plan d'action** : priorités du trimestre suivant
+L'ordre du jour de la revue trimestrielle comprend le bilan des veilles (nombre de fiches, répartition par domaine), l'analyse de l'impact sur l'ARTSN (modifications à programmer), l'examen des standards émergents (technologies à surveiller), les retours d'expérience de pays similaires pertinents, et la définition du plan d'action avec les priorités du trimestre suivant.
 
 ### 4.2 Participants
 
@@ -147,9 +131,9 @@ Ce document définit le processus de veille architecturale pour maintenir l'ARTS
 | **Plan d'action** | Modifications à programmer |
 | **Mise à jour des fiches** | Statuts et actions |
 
----
-
 ## 5. Intégration avec les autres processus
+
+La veille architecturale s'intègre aux processus de décision d'architecture (ADR) en alimentant les propositions d'ADR, à l'homologation en informant les critères de conformité, au processus de dépréciation en détectant les standards abandonnés, et à la roadmap en influençant la priorisation.
 
 | Processus | Lien avec la veille |
 |-----------|---------------------|
@@ -158,11 +142,13 @@ Ce document définit le processus de veille architecturale pour maintenir l'ARTS
 | **Dépréciation** | La veille détecte les standards abandonnés |
 | **Roadmap** | La veille influence la priorisation |
 
----
-
 ## Liens
 
-- [Gouvernance ARTSN](./index.md)
-- [Processus de dépréciation](./depreciation.md)
-- [Registre des décisions](../../00_caesn/08_decisions/registre-decisions.md)
-- [Feuille de route](../09_feuille-route/index.md)
+Voir les documents suivants : Gouvernance ARTSN, Processus de dépréciation, Registre des décisions, et Feuille de route.
+
+## Références
+
+- **Gouvernance ARTSN** — Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)
+- **Processus de dépréciation** — Processus de dépréciation des composants (`02_artsn/06_gouvernance/depreciation.md`)
+- **Registre des décisions** — Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
+- **Feuille de route** — Feuille de route de déploiement progressif de l'ARTSN (`02_artsn/09_feuille-route/index.md`)

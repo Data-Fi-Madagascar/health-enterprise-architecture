@@ -2,7 +2,7 @@
 title: PT-08 — Profil technique national
 id: ptisn-pt-08-echange-donnees-agregees
 domain: 03_ptisn
-version: "0.4"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
@@ -83,6 +83,6 @@ Le profil mADX doit être évalué comme contrat cible d’entrée et de sortie 
 
 ------------------------------------------------------------------------
 
-*Rattachement : [CMP-03](../../referentiel/composants/cmp-03.md), [CMP-06](../../referentiel/composants/cmp-06.md), [CAP-INT-03](../../referentiel/capacites/cap-int-03.md), [CAP-INT-07](../../referentiel/capacites/cap-int-07.md), [ART-1](../../referentiel/chapitres/art-1.md), [ART-2](../../referentiel/chapitres/art-2.md), [ART-5](../../referentiel/chapitres/art-5.md), [ART-6](../../referentiel/chapitres/art-6.md) · [fiche](../../referentiel/profils/pt-08.md)*
+*Rattachement : CMP-03, CMP-06, CAP-INT-03, CAP-INT-07, ART-1, ART-2, ART-5, ART-6 · fiche PT-08*
 
 <!-- END:GENERATED -->

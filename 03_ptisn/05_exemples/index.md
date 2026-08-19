@@ -2,7 +2,7 @@
 title: Exemples de profils d'initiative remplis
 id: ptisn-exemples
 domain: 03_ptisn
-version: "0.1.0"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
@@ -23,26 +23,13 @@ tags: [ptisn, exemples, profils, niveau-4]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
-Ce document présente **3 exemples concrets** de profils d'initiative remplis selon le template standard du PTISN. Chaque exemple illustre comment un projet réel est décrit, rattaché aux capabilités, aux chapitres ART et aux composants du référentiel.
+Ce document présente trois exemples concrets de profils d'initiative remplis selon le template standard du PTISN. Chaque exemple illustre la manière dont un projet réel est décrit, rattaché aux capacités, aux chapitres ART et aux composants du référentiel. Il s'agit de guides pratiques destinés aux équipes techniques chargées de rédiger les profils de leurs propres initiatives.
 
 ## Structure du template
 
-Chaque profil suit la structure standardisée :
-
-1. **Identifiant et titre** — Code de l'initiative (ex. : INIT-001)
-2. **Capacité(s) CNISN** — Rattachement aux capacités d'interopérabilité
-3. **Chapitres ART applicables** — Patterns architecturaux mobilisés
-4. **Description de l'initiative** — Objectif, contexte, parties prenantes
-5. **Profil(s) PTISN applicable(s)** — Profils techniques requis
-6. **Contrats d'interface** — Schémas, protocoles, formats d'échange
-7. **Composants techniques** — Infrastructure requise
-8. **Indicateurs de bénéfice** — Métriques de succès
-9. **Risques et mitigations** — Risques identifiés et mesures correctives
-10. **Calendrier prévisionnel** — Jalons clés
-
----
+Chaque profil suit une structure standardisée composée de dix rubriques. L'identification initiale renseigne le code de l'initiative, son titre, son type, sa portée et son statut. Le rattachement aux capacités CNISN et aux chapitres ART applicables permet de situer l'initiative dans le cadre national d'interopérabilité. La description de l'initiative précise son objectif, son contexte et ses parties prenantes. Les profils PTISN applicables identifient les patterns techniques requis. Les contrats d'interface spécifient les schémas, protocoles et formats d'échange. Les composants techniques décrivent l'infrastructure requise. Les indicateurs de bénéfice définissent les métriques de succès. Les risques et mitigations documentent les aléas identifiés et les mesures correctives. Enfin, le calendrier prévisionnel établit les jalons clés du projet.
 
 ## Exemple 1 : INIT-001 — Télésuivi des patients tuberculeux
 
@@ -65,19 +52,13 @@ Chaque profil suit la structure standardisée :
 
 ### 3. Chapitres ART applicables
 
-- **ART-0** — Accords de partage entre structures sanitaires et plateforme nationale
-- **ART-1** — Intégration et ingestion des données terrain
-- **ART-2** — Médiation et normalisation sémantique
-- **ART-7** — Sécurité et résidence des données
+Les chapitres ART mobilisés par cette initiative couvrent les accords de partage entre structures sanitaires et la plateforme nationale (ART-0), l'intégration et l'ingestion des données terrain (ART-1), la médiation et la normalisation sémantique (ART-2), ainsi que la sécurité et la résidence des données (ART-7).
 
 ### 4. Description de l'initiative
 
-**Objectif :** Améliorer l'observance du traitement tuberculose par un suivi quotidien des patients via SMS/WhatsApp, avec alertes automatiques en cas de non-réponse.
+**Objectif :** Améliorer l'observance du traitement tuberculose par un suivi quotidien des patients via SMS ou WhatsApp, avec alertes automatiques en cas de non-réponse. L'initiative vise à réduire significativement le nombre de patients perdus de vue et à rapprocher le taux d'observance national de la cible OMS de 90 %.
 
-**Contexte :**
-- 240 000 cas de TB en 2025
-- Taux d'observance national : 82% (cible OMS : 90%)
-- 12 districts pilotes retenus
+**Contexte :** En 2025, Madagascar comptait 240 000 cas de tuberculose, avec un taux d'observance national de 82 %. Douze districts pilotes ont été retenus pour la première phase de déploiement, couvrant des zones à forte densité de cas et disposant d'une connectivité réseau suffisante pour supporter les échanges numériques.
 
 **Parties prenantes :**
 
@@ -144,8 +125,6 @@ Chaque profil suit la structure standardisée :
 | Évaluation | T3 2027 | Rapport d'évaluation pilote |
 | Généralisation | T4 2027 | Déploiement 12 districts |
 
----
-
 ## Exemple 2 : INIT-002 — Collecte des données communautaires (ACS)
 
 ### 1. Identifiant et titre
@@ -167,19 +146,13 @@ Chaque profil suit la structure standardisée :
 
 ### 3. Chapitres ART applicables
 
-- **ART-1** — Intégration et ingestion des données communautaires
-- **ART-2** — Médiation et normalisation sémantique
-- **ART-3** — Authentification et autorisation des agents
-- **ART-8** — Qualité et validation des données terrain
+Les chapitres ART concernés sont l'intégration et l'ingestion des données communautaires (ART-1), la médiation et la normalisation sémantique (ART-2), l'authentification et l'autorisation des agents (ART-3), ainsi que la qualité et la validation des données terrain (ART-8).
 
 ### 4. Description de l'initiative
 
-**Objectif :** Remplacer la collecte papier des 8 000 Agents Communautaires de Santé (ACS) par une application mobile de collecte, avec transmission sécurisée des données vers DHIS2.
+**Objectif :** Remplacer la collecte papier des 8 000 Agents Communautaires de Santé (ACS) par une application mobile de collecte, avec transmission sécurisée des données vers DHIS2. L'initiative vise à réduire drastiquement le délai de remontée des données et à améliorer leur complétude et leur fiabilité.
 
-**Contexte :**
-- 8 000 ACS couvrant 16 000 fokontany
-- Collecte actuelle sur formulaires papier (retard de 2-4 semaines)
-- 4 flux de collecte : activités communautaires, alertes, suivi des ménages, sensibilisation
+**Contexte :** Les 8 000 ACS couvrent 16 000 fokontany à travers le territoire national. La collecte actuelle repose sur des formulaires papier, entraînant des retards de deux à quatre semaines avant que les données ne soient exploitable au niveau district. Quatre flux de collecte sont définis : activités communautaires, alertes, suivi des ménages et sensibilisation.
 
 **Parties prenantes :**
 
@@ -243,8 +216,6 @@ Chaque profil suit la structure standardisée :
 | Généralisation (22 districts) | T4 2026 — T2 2027 | 8 000 ACS équipés |
 | Intégration DHIS2 | T3 2027 | Flux automatisé |
 
----
-
 ## Exemple 3 : INIT-003 — Traçabilité des médicaments (mTrack)
 
 ### 1. Identifiant et titre
@@ -266,20 +237,13 @@ Chaque profil suit la structure standardisée :
 
 ### 3. Chapitres ART applicables
 
-- **ART-0** — Accords de partage entre formations sanitaires et plateau technique
-- **ART-1** — Intégration et ingestion des données de stock
-- **ART-2** — Médiation et normalisation sémantique (codification OMS ATC)
-- **ART-4** — Référentiels nationaux (produits de santé)
-- **ART-7** — Sécurité et résidence
+Les chapitres ART impliqués couvrent les accords de partage entre formations sanitaires et le plateau technique (ART-0), l'intégration et l'ingestion des données de stock (ART-1), la médiation et la normalisation sémantique selon la codification OMS ATC (ART-2), les référentiels nationaux de produits de santé (ART-4), ainsi que la sécurité et la résidence des données (ART-7).
 
 ### 4. Description de l'initiative
 
-**Objectif :** Assurer la traçabilité complète des médicaments essentiels de la réception à la dispensation, avec alertes automatiques de rupture de stock et de péremption.
+**Objectif :** Assurer la traçabilité complète des médicaments essentiels de la réception à la dispensation, avec alertes automatiques de rupture de stock et de péremption. L'initiative vise à réduire les pertes estimées à 15 % des stocks et à garantir la disponibilité des traitements dans les 1 800 formations sanitaires du territoire.
 
-**Contexte :**
-- 1 800 formations sanitaires (hôpitaux, centres de santé, case de santé)
-- 400+ médicaments essentiels dans la liste nationale
-- Pertes estimées à 15% des stocks (péremption, ruptures)
+**Contexte :** Le parc sanitaire national comprend 1 800 formations sanitaires (hôpitaux, centres de santé, cases de santé) desservant l'ensemble de la population. La liste nationale des médicaments essentiels compte plus de 400 produits. Les pertes actuelles, principalement imputables à la péremption et aux ruptures de stock, sont estimées à 15 % du volume total.
 
 **Parties prenantes :**
 
@@ -347,12 +311,19 @@ Chaque profil suit la structure standardisée :
 | Évaluation pilote | T3 2027 | Rapport d'évaluation |
 | Généralisation | T4 2027 | 1 800 formations équipées |
 
----
-
 ## Liens
 
-- [Profils techniques](../03_profils/pt-00-index.md)
-- [Référentiel — Profils](../03_profils/pt-00-index.md)
-- [PT-01 — Échange interinstitutionnel](../03_profils/pt-01-echange-interinstitutionnel.md)
-- [PT-04 — Résolution d'identité](../03_profils/pt-04-resolution-identite-beneficiaire.md)
-- [PT-08 — Données agrégées](../03_profils/pt-08-echange-donnees-agregees.md)
+- Profils techniques
+- Référentiel — Profils
+- PT-01 — Échange interinstitutionnel
+- PT-04 — Résolution d'identité
+- PT-08 — Données agrégées
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
+- **Profils techniques** — Partie III — Profils techniques nationaux (`03_ptisn/03_profils/pt-00-index.md`)
+- **Référentiel — Profils** — Partie III — Profils techniques nationaux (`03_ptisn/03_profils/pt-00-index.md`)
+- **PT-01 — Échange interinstitutionnel** — Profil technique national (`03_ptisn/03_profils/pt-01-echange-interinstitutionnel.md`)
+- **PT-04 — Résolution d'identité** — Profil technique national (`03_ptisn/03_profils/pt-04-resolution-identite-beneficiaire.md`)
+- **PT-08 — Données agrégées** — Profil technique national (`03_ptisn/03_profils/pt-08-echange-donnees-agregees.md`)

@@ -2,7 +2,7 @@
 title: "Processus de dépréciation des composants"
 id: depreciation
 domain: 02_artsn
-version: "0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: CNASN
@@ -15,31 +15,15 @@ tags: [artsn, gouvernance, dépréciation, retrait, cycle-de-vie, niveau-2]
 
 **Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
 
-| Profil | Lecture |
-|--------|---------|
-| Décideurs institutionnels | ◐ |
-| Directions métier / programmes | ● |
-| DEPSI / équipes techniques | ● |
-| SIS / données / suivi-évaluation | ◐ |
-| Partenaires techniques et financiers | ◐ |
-
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle.
-
----
+Ce document s'adresse prioritairement aux directions métier et programmes ainsi qu'aux équipes DEPSI et techniques. Les décideurs institutionnels, les équipes SIS, données et suivi-évaluation, et les partenaires techniques et financiers trouveront une lecture complémentaire utile.
 
 ## Objet
 
-Ce document définit le processus de retrait organizé de composants (standards, profils, chapitres, outils) du référentiel HEA. La dépréciation garantit que le paysage applicatif reste rationalisé, sécurisé et aligné sur les standards en vigueur.
-
----
+Ce document définit le processus de retrait organisé de composants (standards, profils, chapitres, outils) du référentiel HEA. La dépréciation garantit que le paysage applicatif reste rationalisé, sécurisé et aligné sur les standards en vigueur.
 
 ## 1. Principe
 
-Un composant est déprécié lorsqu'il n'est plus recommandé pour une nouvelle utilisation, mais peut encore être maintenu en production pendant une période de transition. Il est retiré lorsque toutes les initiatives qui l'utilisent ont migré vers une alternative.
-
-**Règle fondamentale** : aucun composant n'est retiré sans alternative validée et sans plan de migration pour les initiatives concernées.
-
----
+Un composant est déprécié lorsqu'il n'est plus recommandé pour une nouvelle utilisation, mais peut encore être maintenu en production pendant une période de transition. Il est retiré lorsque toutes les initiatives qui l'utilisent ont migré vers une alternative. La règle fondamentale stipule qu'aucun composant n'est retiré sans alternative validée et sans plan de migration pour les initiatives concernées.
 
 ## 2. Signaux de dépréciation
 
@@ -52,8 +36,6 @@ Un composant est déprécié lorsqu'il n'est plus recommandé pour une nouvelle 
 | **Faille sécurité** sans correctif | Audit, CVE | Critique | Immédiat |
 | **Non-conformité** réglementaire | Audit, juridique | Haute | 30 jours |
 
----
-
 ## 3. Types de dépréciation
 
 | Type | Description | Préavis | Exemple |
@@ -62,11 +44,11 @@ Un composant est déprécié lorsqu'il n'est plus recommandé pour une nouvelle 
 | **Dépréciation forte** | Le composant ne doit plus être utilisé pour de nouvelles initatives | 6 mois | Une technologie avec faille de sécurité |
 | **Retrait** | Le composant est supprimé du référentiel | 3 mois après fin de dépréciation | Un standard totalement abandonné |
 
----
-
 ## 4. Workflow de dépréciation
 
 ### 4.1 Phase 1 — Détection et proposition
+
+La veille technique ou le CNASN détecte le signal de dépréciation, l'auteur rédige la proposition de dépréciation sous 5 jours et la soumet au CNASN dans la journée. La proposition doit contenir le composant concerné (référence exacte : chapitre, profil, standard), le signal détecté (raison de la dépréciation), l'alternative recommandée (composant de remplacement), les initiatives impactées (liste des initiatives utilisant le composant), et les risques de non-action (conséquences si le composant n'est pas déprécié).
 
 | Étape | Action | Responsable | Délai |
 |-------|--------|-------------|-------|
@@ -74,17 +56,9 @@ Un composant est déprécié lorsqu'il n'est plus recommandé pour une nouvelle 
 | 1.2 | Rédiger la proposition de dépréciation | Auteur | 5 jours |
 | 1.3 | Soumettre au CNASN | Auteur | 1 jour |
 
-**Contenu de la proposition :**
-
-| Champ | Description |
-|-------|-------------|
-| Composant concerné | Référence exacte (chapitre, profil, standard) |
-| Signal détecté | Raison de la dépréciation |
-| Alternative recommandée | Composant de remplacement |
-| Initiatives impactées | Liste des initiatives utilisant le composant |
-| Risques de non-action | Conséquences si le composant n'est pas déprécié |
-
 ### 4.2 Phase 2 — Instruction
+
+Le secrétariat du CNASN vérifie les initiatives impactées, contacte les responsables d'initiative, le comité technique évalue le plan de migration et le secrétariat rédige le rapport d'instruction.
 
 | Étape | Action | Responsable | Délai |
 |-------|--------|-------------|-------|
@@ -95,6 +69,8 @@ Un composant est déprécié lorsqu'il n'est plus recommandé pour une nouvelle 
 
 ### 4.3 Phase 3 — Décision
 
+Le CNASN examine le rapport d'instruction, statue sur la dépréciation, le rejet ou le report, fixe la date de retrait et enregistre la décision sous forme d'ADR.
+
 | Étape | Action | Responsable | Délai |
 |-------|--------|-------------|-------|
 | 3.1 | Examiner le rapport d'instruction | CNASN | 2 jours |
@@ -104,6 +80,8 @@ Un composant est déprécié lorsqu'il n'est plus recommandé pour une nouvelle 
 
 ### 4.4 Phase 4 — Notification
 
+Le secrétariat du CNASN notifie les initiatives impactées, la DEPSI publie l'annonce de dépréciation et met à jour le statut du composant.
+
 | Étape | Action | Responsable | Délai |
 |-------|--------|-------------|-------|
 | 4.1 | Notifier les initiatives impactées | Secrétariat CNASN | 2 jours |
@@ -111,6 +89,8 @@ Un composant est déprécié lorsqu'il n'est plus recommandé pour une nouvelle 
 | 4.3 | Mettre à jour le statut du composant | DEPSI | 1 jour |
 
 ### 4.5 Phase 5 — Migration
+
+Les initiatives migrent vers l'alternative selon le plan établi, le CNASN assure un suivi trimestriel de la migration et le secrétariat émet des alertes aux initiatives en retard au-delà de 30 jours.
 
 | Étape | Action | Responsable | Délai |
 |-------|--------|-------------|-------|
@@ -120,14 +100,14 @@ Un composant est déprécié lorsqu'il n'est plus recommandé pour une nouvelle 
 
 ### 4.6 Phase 6 — Retrait
 
+Le secrétariat du CNASN vérifie que toutes les initiatives ont migré, la DEPSI retire le composant du référentiel, met à jour les documents impactés et archive le composant.
+
 | Étape | Action | Responsable | Délai |
 |-------|--------|-------------|-------|
 | 6.1 | Vérifier que toutes les initiatives ont migré | Secrétariat CNASN | 5 jours |
 | 6.2 | Retirer le composant du référentiel | DEPSI | 2 jours |
 | 6.3 | Mettre à jour les documents impactés | DEPSI | 5 jours |
 | 6.4 | Archiver le composant | DEPSI | 1 jour |
-
----
 
 ## 5. Timeline type
 
@@ -145,34 +125,29 @@ Mois 12   : Retiré du référentiel (statut « déprécié »)
 Mois 15   : Archivé (si aucune utilisation résiduelle)
 ```
 
----
-
 ## 6. Registre des composants dépréciés
 
 | Composant | Date dépréciation | Date retrait | Alternative | Initiatives migrées |
 |-----------|-------------------|--------------|-------------|---------------------|
 | *(Aucun pour le moment)* | — | — | — | — |
 
----
-
 ## 7. Exceptions
 
 ### 7.1 Maintien exceptionnel
 
-Un composant déprécié peut être maintenu au-delà du délai de retrait si :
-- Une initiative démontre une impossibilité technique de migration
-- Le coût de migration est disproportionné par rapport au risque
-- Une dérogation formelle est accordée par le CNASN
+Un composant déprécié peut être maintenu au-delà du délai de retrait si une initiative démontre une impossibilité technique de migration, si le coût de migration est disproportionné par rapport au risque, ou si une dérogation formelle est accordée par le CNASN.
 
 ### 7.2 Retrait d'urgence
 
 En cas de faille de sécurité critique (CVSS > 9), le composant peut être retiré immédiatement, sans préavis, avec communication d'urgence aux initiatives concernées.
 
----
-
 ## Liens
 
-- [Guide du processus de gouvernance](../../00_caesn/07_governance/processus-gouvernance.md)
-- [Registre des décisions](../../00_caesn/08_decisions/registre-decisions.md)
-- [Table de maturité](../07_annexes/a-table-de-maturite.md)
-- [Gouvernance ARTSN](./index.md)
+Voir les documents suivants : Guide du processus de gouvernance, Registre des décisions, Table de maturité, et Gouvernance ARTSN.
+
+## Références
+
+- **Guide du processus de gouvernance** — Guide du processus de gouvernance (`00_caesn/07_governance/processus-gouvernance.md`)
+- **Registre des décisions** — Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
+- **Table de maturité** — Annexe A — Table de maturité par chapitre (`02_artsn/07_annexes/a-table-de-maturite.md`)
+- **Gouvernance ARTSN** — Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)

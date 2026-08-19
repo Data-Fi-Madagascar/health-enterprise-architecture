@@ -41,7 +41,7 @@ BEGIN_RE = re.compile(r"^<!--\s*BEGIN:GENERATED\s*(.*?)\s*-->$")
 END_RE = re.compile(r"^<!--\s*END:GENERATED\s*-->$")
 ATTRIB = re.compile(r"(mode|source)=(?:(\"[^\"]*\")|([^\s]+))")
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.*)$")
-LINK_RE = re.compile(r"\]\(([^)]*)\)")
+LINK_RE = re.compile(r"\[([^\]]*)\]\(([^)]*)\)")
 FACE = ["candidate", "deprecated"]
 
 NATURAL_RE = re.compile(r"(\d+)")
@@ -124,22 +124,20 @@ def id_to_path(objects):
 
 
 def rewrite_links(text, from_dir, to_dir):
+    """Strip relative file links to plain text for autonomous documents.
+
+    External URLs (http/https) and anchors are preserved.
+    Relative file links like [label](../path.md) become just label.
+    """
     def repl(match):
-        target = match.group(1).strip()
+        label = match.group(1)
+        target = match.group(2).strip()
         if not target or "://" in target or target.startswith("#"):
             return match.group(0)
         if target.startswith("/") or target.startswith("mailto:"):
             return match.group(0)
-        fragment = ""
-        pth = target
-        if "#" in target:
-            pth, fragment = target.split("#", 1)
-            fragment = "#" + fragment
-        if not pth:
-            return match.group(0)
-        absolute = os.path.normpath(os.path.join(from_dir, pth))
-        relative = os.path.relpath(absolute, to_dir)
-        return "](" + relative + fragment + ")"
+        # Strip relative file link — keep label only
+        return label
 
     return LINK_RE.sub(repl, text)
 
@@ -165,23 +163,19 @@ def rattachement_links(obj, path_by_id, to_dir):
             if oid and oid not in seen:
                 seen.add(oid)
                 ids.append(oid)
-    links = []
+    labels = []
     for oid in ids:
-        orel = path_by_id.get(oid)
-        if not orel:
-            continue
-        label = oid.upper()
-        href = os.path.relpath(os.path.join(REPO_ROOT, orel), to_dir)
-        links.append("[%s](%s)" % (label, href))
-    return links
+        if oid:
+            labels.append(oid.upper())
+    return labels
 
 
 def render_footer(obj, path_by_id, to_dir):
     rattachements = rattachement_links(obj, path_by_id, to_dir)
-    fiche = os.path.relpath(os.path.join(REPO_ROOT, obj["rel"]), to_dir)
+    fiche_id = obj["id"].upper()
     if rattachements:
-        return "*Rattachement : %s · [fiche](%s)*" % (", ".join(rattachements), fiche)
-    return "*Rattachement : — · [fiche](%s)*" % fiche
+        return "*Rattachement : %s · fiche %s*" % (", ".join(rattachements), fiche_id)
+    return "*Rattachement : — · fiche %s*" % fiche_id
 
 
 def badge_for(obj):
@@ -238,10 +232,9 @@ def render_table(objects, source_glob, path_by_id, to_dir):
         rattachements = rattachement_links(obj, path_by_id, to_dir)
         rattachement = ", ".join(rattachements) if rattachements else "—"
         statut = obj["status"]
-        fiche = os.path.relpath(os.path.join(REPO_ROOT, obj["rel"]), to_dir)
-        lines.append("| %s | %s | %s | %s | [fiche](%s) |"
+        lines.append("| %s | %s | %s | %s | %s |"
                      % (code, titre.replace("|", "\\|"), rattachement.replace("|", "\\|"),
-                        statut, fiche))
+                        statut, code))
     return "\n".join(lines)
 
 

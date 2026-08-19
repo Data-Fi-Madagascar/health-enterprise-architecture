@@ -2,11 +2,12 @@
 title: "ART-10 — Logistique"
 id: art-10
 domain: 02_artsn
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-12
 owner: DEPSI
 tags: [artsn, chapitres, art-10, niveau-3]
+related: ['cap-int-10']
 ---
 # ART-10 — Logistique
 
@@ -22,10 +23,10 @@ tags: [artsn, chapitres, art-10, niveau-3]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-ART-10 — Logistique constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : [`art-10`](../../referentiel/chapitres/art-10.md).
+ART-10 — Logistique constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-10`.
 
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
@@ -34,15 +35,22 @@ ART-10 — Logistique constitue un chapitre du **cadre normatif opposable** de l
 
 **Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (centres de stockage isolés, ruptures de connectivité, circuits parallèles de distribution) : elle seule permet de garantir la disponibilité des intrants et la réconciliation à somme nulle des stocks sans rompre le pipeline.
 
-- **Rattachement** : [CAP-10](../../referentiel/capabilites/cap-10.md) (chaîne d'approvisionnement), [CAP-11](../../referentiel/capabilites/cap-11.md) (infrastructures et équipements).
+- **Rattachement** : CAP-10 (chaîne d'approvisionnement), CAP-11 (infrastructures et équipements).
 - **Modèles cibles** : événementisation des mouvements de stock, registres logistiques (ex. OpenLMIS), traçabilité par lot.
-- **Déduit selon** : [ENF-2](../../referentiel/exigences/enf-2.md) (traçabilité des valeurs).
+- **Déduit selon** : ENF-2 (traçabilité des valeurs).
 - **Statut : Provisoire.**
 
-*Rattachement : [ENF-2](../../referentiel/exigences/enf-2.md), [CAP-10](../../referentiel/capabilites/cap-10.md), [CAP-11](../../referentiel/capabilites/cap-11.md) · [fiche](../../referentiel/chapitres/art-10.md)*
+*Rattachement : ENF-2, CAP-10, CAP-11 · fiche ART-10*
 
 <!-- END:GENERATED -->
 ## Liens
 
-- [Index des chapitres](./index.md)
-- [Exigences contextuelles — Partie III](../02_exigences-contextuelles/index.md)
+- Index des chapitres
+- Exigences contextuelles — Partie III
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **`art-10`** — Logistique (`referentiel/chapitres/art-10.md`)
+- **Index des chapitres** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **Exigences contextuelles — Partie III** — Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

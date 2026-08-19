@@ -2,7 +2,7 @@
 title: "Cas d'usage — Référence, contre-référence et évacuation sanitaire"
 id: ptisn-cas-usage-reference
 domain: 03_ptisn
-version: "0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
@@ -20,15 +20,13 @@ tags: ["ptisn", "niveau-4", "cas-usage", "reference", "contre-reference", "evacu
 | DEPSI / équipes techniques | ● |
 | Partenaires techniques et financiers | ◐ |
 
----
-
 ## Objectif
 
-Ce document montre comment les **profils techniques existants** (PTISN) composent pour couvrir les 3 scénarios critiques du parcours patient inter-établissement. Il ne s'agit pas d'un profil technique, mais d'une **illustration d'assemblage** de briques techniques déjà définies.
+Ce document montre comment les **profils techniques existants** (PTISN) composent pour couvrir les trois scénarios critiques du parcours patient inter-établissement. Il ne s'agit pas d'un profil technique, mais d'une **illustration d'assemblage** de briques techniques déjà définies.
 
 ## Principe architectural
 
-Les scénarios métier (référence, contre-référence, évacuation) ne sont **pas** des profils techniques. Ce sont des **cas d'usage** qui consomment plusieurs profils existants :
+Les scénarios métier — référence, contre-référence et évacuation sanitaire — ne sont **pas** des profils techniques. Ce sont des **cas d'usage** qui consomment plusieurs profils existants. Leur assemblage illustre la complémentarité des profils d'échange, de médiation, de consentement, de terminologie transfrontalière et d'audit.
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -45,13 +43,9 @@ Les scénarios métier (référence, contre-référence, évacuation) ne sont **
 └─────────────────────────────────────────────────────────────┘
 ```
 
----
-
 ## Scénario 1 — Référence (S-03)
 
-**Définition** : Orientation d'un patient d'un niveau de soins vers un autre (ex. : CSB → hôpital régional).
-
-### Flux technique
+La référence désigne l'orientation d'un patient d'un niveau de soins vers un autre, par exemple d'un CSB vers un hôpital régional. Le CSB rural initie une demande de référence (`ServiceRequest` de type referral) qui est transmise via la médiation nationale à l'hôpital régional. Ce dernier valide et accepte la demande, puis le CSB transmet les données cliniques minimales du patient — résumé IPS comprenant allergies, médicaments, conditions et documents de référence — via la médiation nationale vers l'hôpital de destination.
 
 ```
 CSB rural                    Médiation nationale              Hôpital régional
@@ -68,7 +62,7 @@ CSB rural                    Médiation nationale              Hôpital régiona
     │                              │──────────────────────────────▶│
 ```
 
-### Profils consommés
+Les profils consommés sont le PT-01 (transport des messages via X-Road ou API Gateway), le PT-02 (médiation sémantique assurant la transformation des données CSB au format FHIR), le PT-04 (résolution d'identité patient pour vérifier ou créer l'identité dans l'INP), le PT-07 (mapping terminologique des codes CSB vers la CIM-10 ou LOINC) et le PT-12 (traçabilité de l'événement de référence). Les données échangées comprennent le `ServiceRequest` (type referral), le `Patient` (identité via l'INP), les ressources `AllergyIntolerance`, `MedicationStatement` et `Condition` (données cliniques minimales), ainsi que le `DocumentReference` (compte-rendu si disponible).
 
 | Profil | Rôle dans le scénario |
 |--------|----------------------|
@@ -78,20 +72,9 @@ CSB rural                    Médiation nationale              Hôpital régiona
 | **PT-07** | Mapping terminologique (codes CSB → CIM-10 / LOINC) |
 | **PT-12** | Traçabilité de l'événement de référence |
 
-### Données échangées
-
-- `ServiceRequest` (type: referral) — demande de référence
-- `Patient` — identité du patient (via INP)
-- `AllergyIntolerance`, `MedicationStatement`, `Condition` — données cliniques minimales
-- `DocumentReference` — compte-rendu si disponible
-
----
-
 ## Scénario 2 — Contre-référence (S-04)
 
-**Définition** : Retour du patient vers l'établissement d'origine après prise en charge spécialisée, avec compte-rendu et recommandations.
-
-### Flux technique
+La contre-référence correspond au retour du patient vers l'établissement d'origine après prise en charge spécialisée, accompagné d'un compte-rendu et de recommandations. L'hôpital régional transmet un `ServiceRequest` (type referral) enrichi d'un `DocumentReference` contenant le compte-rendu de la prise en charge spécialisée. La médiation nationale valide et route la demande vers le CSB rural d'origine. Ce dernier accepte le retour et transmet les instructions de suivi, incluant les `MedicationRequest` (traitements à poursuivre) et le `CarePlan` (plan de suivi recommandé).
 
 ```
 Hôpital régional              Médiation nationale              CSB rural
@@ -109,7 +92,7 @@ Hôpital régional              Médiation nationale              CSB rural
     │                              │──────────────────────────────▶│
 ```
 
-### Profils consommés
+Les profils consommés sont le PT-01 (transport des messages), le PT-02 (médiation sémantique), le PT-04 (résolution d'identité), le PT-11 (consentement pour le retour d'information) et le PT-12 (traçabilité). Les données échangées comprennent le `ServiceRequest` (type referral pour la contre-référence), le `DocumentReference` (compte-rendu de la prise en charge spécialisée), le `MedicationRequest` (traitements à poursuivre) et le `CarePlan` (plan de suivi recommandé).
 
 | Profil | Rôle dans le scénario |
 |--------|----------------------|
@@ -119,22 +102,11 @@ Hôpital régional              Médiation nationale              CSB rural
 | **PT-11** | Consentement pour le retour d'information |
 | **PT-12** | Traçabilité |
 
-### Données échangées
-
-- `ServiceRequest` (type: referral) — demande de contre-référence
-- `DocumentReference` — compte-rendu de la prise en charge spécialisée
-- `MedicationRequest` — traitements à poursuivre
-- `CarePlan` — plan de suivi recommandé
-
----
-
 ## Scénario 3 — Évacuation sanitaire (S-05)
 
 ### 3a. Évacuation nationale (EVA-N1/N2)
 
-**Définition** : Transfert urgent d'un patient entre établissements nationaux avec transport sanitaire spécialisé.
-
-### Flux technique
+L'évacuation nationale désigne le transfert urgent d'un patient entre établissements nationaux avec transport sanitaire spécialisé. Le CSB ou l'hôpital régional initie une `ServiceRequest` (type transfer avec indicateur d'urgence) qui est routée par la médiation vers le centre de commande. Ce dernier valide et accepte la demande, puis transmet l'acceptation à l'hôpital de destination. Le transport est géolocalisé en temps réel, et à l'arrivée, l'IPS complet du patient est transmis à l'hôpital de destination.
 
 ```
 CSB/Hôpital régional    Médiation    Centre de commande    Hôpital destination
@@ -155,7 +127,7 @@ CSB/Hôpital régional    Médiation    Centre de commande    Hôpital destinati
          │                   │──────────────▶│─────────────────────▶│
 ```
 
-### Profils consommés
+Les profils consommés sont le PT-01 (transport des messages), le PT-02 (médiation sémantique), le PT-04 (résolution d'identité), le PT-11 (consentement pour le transfert) et le PT-12 (traçabilité avec audit trail complet).
 
 | Profil | Rôle dans le scénario |
 |--------|----------------------|
@@ -167,9 +139,7 @@ CSB/Hôpital régional    Médiation    Centre de commande    Hôpital destinati
 
 ### 3b. Évacuation internationale (EVA-I1/I2)
 
-**Définition** : Transfert urgent vers un centre spécialisé à l'étranger.
-
-### Flux technique additionnel
+L'évacuation internationale désigne le transfert urgent vers un centre spécialisé à l'étranger. L'hôpital malgache transmet une `ServiceRequest` enrichie de l'IPS et de l'autorisation de sortie du territoire. La médiation vérifie la conformité au cadre GDHCN (Global Digital Health Certification Network) et l'accord bilatéral avec le pays de destination. Après acceptation, le transport est suivi en temps réel jusqu'à l'arrivée du patient.
 
 ```
 Hôpital Madagascar          Médiation          Pays de destination
@@ -188,20 +158,11 @@ Hôpital Madagascar          Médiation          Pays de destination
          │─────────────────────▶│─────────────────────▶│
 ```
 
-### Profils supplémentaires pour l'international
+Le profil supplémentaire mobilisé pour l'international est le PT-14 (confiance transfrontalière via GDHCN, IPS et accords bilatéraux). Les données échangées comprennent le `ServiceRequest` (type transfer pour la demande d'évacuation), la `Composition` IPS (résumé patient complet comprenant ALGY, MDCA, PROB, IDOI et VITAL), le `DocumentReference` (autorisation de sortie du territoire) et le `Coverage` (couverture financière).
 
 | Profil | Rôle dans le scénario |
 |--------|----------------------|
 | **PT-14** | Confiance transfrontalière (GDHCN), IPS, accords bilatéraux |
-
-### Données échangées (internationale)
-
-- `ServiceRequest` (type: transfer) — demande d'évacuation
-- `IPS Composition` — résumé patient complet (ALGY, MDCA, PROB, IDOI, VITAL)
-- `DocumentReference` — autorisation de sortie du territoire
-- `Coverage` — couverture financière
-
----
 
 ## Matrice de composition
 
@@ -214,8 +175,6 @@ Hôpital Madagascar          Médiation          Pays de destination
 
 Légende : ● requis · ○ optionnel · — non applicable
 
----
-
 ## Exigences transversales
 
 | Exigence | Source | Applicable à |
@@ -224,15 +183,24 @@ Légende : ● requis · ○ optionnel · — non applicable
 | EXG-TF-01 à TF-08 | CAP-INT-13 | Évacuation internationale |
 | Consentement (PT-11) | CAP-INT-09 | Tous les scénarios |
 
----
-
 ## Liens
 
-- [S-03 — Référence](../../02_artsn/05_dictionnaire/index.md)
-- [S-04 — Contre-référence](../../02_artsn/05_dictionnaire/index.md)
-- [S-05 — Évacuation sanitaire](../../02_artsn/05_dictionnaire/index.md)
-- [PT-01 — Échange interinstitutionnel](../03_profils/pt-01-echange-interinstitutionnel.md)
-- [PT-02 — Médiation intra-secteur](../03_profils/pt-02-mediation-intra-secteur.md)
-- [PT-11 — Consentement](../03_profils/pt-11-consentement-bases-autorisation.md)
-- [PT-14 — Interopérabilité transfrontalière](../03_profils/pt-14-interopabilite-transfrontaliere.md)
-- [ENF-5 — Coordination processus complexes](../../referentiel/exigences/enf-5.md)
+- S-03 — Référence
+- S-04 — Contre-référence
+- S-05 — Évacuation sanitaire
+- PT-01 — Échange interinstitutionnel
+- PT-02 — Médiation intra-secteur
+- PT-11 — Consentement
+- PT-14 — Interopérabilité transfrontalière
+- ENF-5 — Coordination processus complexes
+
+## Références
+
+- **S-03 — Référence** — Dictionnaire de données fonctionnelles (`02_artsn/05_dictionnaire/index.md`)
+- **S-04 — Contre-référence** — Dictionnaire de données fonctionnelles (`02_artsn/05_dictionnaire/index.md`)
+- **S-05 — Évacuation sanitaire** — Dictionnaire de données fonctionnelles (`02_artsn/05_dictionnaire/index.md`)
+- **PT-01 — Échange interinstitutionnel** — Profil technique national (`03_ptisn/03_profils/pt-01-echange-interinstitutionnel.md`)
+- **PT-02 — Médiation intra-secteur** — Profil technique national (`03_ptisn/03_profils/pt-02-mediation-intra-secteur.md`)
+- **PT-11 — Consentement** — Profil technique national (`03_ptisn/03_profils/pt-11-consentement-bases-autorisation.md`)
+- **PT-14 — Interopérabilité transfrontalière** — Interopérabilité transfrontalière (`03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md`)
+- **ENF-5 — Coordination processus complexes** — Coordination des processus complexes décentralisés et asynchrones (`referentiel/exigences/enf-5.md`)

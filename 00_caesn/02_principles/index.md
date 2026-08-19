@@ -2,7 +2,7 @@
 title: Principes d'architecture
 id: principles
 domain: 02_principles
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Comité National d'Architecture Santé Numérique
@@ -23,7 +23,7 @@ tags: [principes, gouvernance]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ● |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 ## Rôle des principes d'architecture
 
@@ -35,11 +35,11 @@ Un principe d'architecture est une **règle de décision**. Toute initiative qui
 
 ## Catalogue des principes
 
-Voir [Principes d'architecture transversaux (PA-01 à PA-12)](./transversal.md).
+Voir Principes d'architecture transversaux (PA-01 à PA-12).
 
 ## Principes de domaine
 
-Les [principes de domaine](./domain/) traduisent les principes d'architecture dans chaque flux de valeur métier : parcours de soins, surveillance sanitaire, protection financière et pilotage du système.
+Les principes de domaine traduisent les principes d'architecture dans chaque flux de valeur métier : parcours de soins, surveillance sanitaire, protection financière et pilotage du système.
 
 ## Application des principes
 
@@ -66,6 +66,14 @@ Une dérogation n'est acceptable que si elle est :
 
 ## Liens
 
-- [Principes transversaux](./transversal.md)
-- [Principes de domaine](./domain/index.md)
-- [Overview](../00_overview/index.md)
+- Principes transversaux
+- Principes de domaine
+- Overview
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Principes d'architecture transversaux (PA-01 à PA-12)** — Principes d'architecture transversaux (`00_caesn/02_principles/transversal.md`)
+- **Principes transversaux** — Principes d'architecture transversaux (`00_caesn/02_principles/transversal.md`)
+- **Principes de domaine** — Principes de domaine par flux de valeur (`00_caesn/02_principles/domain/index.md`)
+- **Overview** — Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)

@@ -2,7 +2,7 @@
 title: PT-04 — Profil technique national
 id: ptisn-pt-04-resolution-identite-beneficiaire
 domain: 03_ptisn
-version: "0.4"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
@@ -115,6 +115,6 @@ Le lien entre les deux doit être gouverné, sécurisé et limité à une finali
 
 ------------------------------------------------------------------------
 
-*Rattachement : [CMP-11](../../referentiel/composants/cmp-11.md), [CAP-INT-01](../../referentiel/capacites/cap-int-01.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-4A](../../referentiel/chapitres/art-4a.md), [ART-4B](../../referentiel/chapitres/art-4b.md), [ART-7](../../referentiel/chapitres/art-7.md) · [fiche](../../referentiel/profils/pt-04.md)*
+*Rattachement : CMP-11, CAP-INT-01, ART-4, ART-4A, ART-4B, ART-7 · fiche PT-04*
 
 <!-- END:GENERATED -->

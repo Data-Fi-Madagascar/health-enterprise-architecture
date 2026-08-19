@@ -2,7 +2,7 @@
 title: Modèle national de valeur
 id: valeur
 domain: 00_overview
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Ministère de la Santé Publique
@@ -23,7 +23,7 @@ tags: [valeur, bénéficiaires, indicateurs]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ● |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 ## Principe fondateur
 
@@ -83,7 +83,7 @@ Toute initiative numérique doit démontrer sa contribution à :
 
 Recevoir des soins accessibles, sûrs, continus et de qualité
 
-*Rattachement : — · [fiche](../../referentiel/parties-prenantes/pp-01.md)*
+*Rattachement : — · fiche PP-01*
 
 ### PP-02 — Ménage et famille
 
@@ -91,7 +91,7 @@ Recevoir des soins accessibles, sûrs, continus et de qualité
 
 Accéder aux soins sans appauvrissement ni dépenses catastrophiques
 
-*Rattachement : — · [fiche](../../referentiel/parties-prenantes/pp-02.md)*
+*Rattachement : — · fiche PP-02*
 
 ### PP-03 — Population
 
@@ -99,7 +99,7 @@ Accéder aux soins sans appauvrissement ni dépenses catastrophiques
 
 Être protégée contre les maladies, épidémies et urgences sanitaires
 
-*Rattachement : — · [fiche](../../referentiel/parties-prenantes/pp-03.md)*
+*Rattachement : — · fiche PP-03*
 
 ### PP-04 — Communauté
 
@@ -107,7 +107,7 @@ Accéder aux soins sans appauvrissement ni dépenses catastrophiques
 
 Participer à la santé et accéder à des services de proximité
 
-*Rattachement : — · [fiche](../../referentiel/parties-prenantes/pp-04.md)*
+*Rattachement : — · fiche PP-04*
 
 ### PP-05 — Agent de santé
 
@@ -115,7 +115,7 @@ Participer à la santé et accéder à des services de proximité
 
 Disposer des ressources, compétences, outils et informations nécessaires
 
-*Rattachement : — · [fiche](../../referentiel/parties-prenantes/pp-05.md)*
+*Rattachement : — · fiche PP-05*
 
 ### PP-06 — Formation sanitaire
 
@@ -123,7 +123,7 @@ Disposer des ressources, compétences, outils et informations nécessaires
 
 Avoir les intrants, ressources humaines, équipements et données nécessaires
 
-*Rattachement : — · [fiche](../../referentiel/parties-prenantes/pp-06.md)*
+*Rattachement : — · fiche PP-06*
 
 ### PP-07 — District, région et Ministère
 
@@ -131,7 +131,7 @@ Avoir les intrants, ressources humaines, équipements et données nécessaires
 
 Piloter, coordonner et améliorer la performance sur la base de données fiables
 
-*Rattachement : — · [fiche](../../referentiel/parties-prenantes/pp-07.md)*
+*Rattachement : — · fiche PP-07*
 
 ### PP-08 — Partenaires techniques et financiers
 
@@ -139,7 +139,7 @@ Piloter, coordonner et améliorer la performance sur la base de données fiables
 
 Aligner leurs investissements sur les priorités nationales et vérifier les résultats
 
-*Rattachement : — · [fiche](../../referentiel/parties-prenantes/pp-08.md)*
+*Rattachement : — · fiche PP-08*
 
 ### PP-09 — Décideurs institutionnels
 
@@ -147,7 +147,7 @@ Aligner leurs investissements sur les priorités nationales et vérifier les ré
 
 Définir les priorités, arbitrer les ressources et rendre compte des résultats
 
-*Rattachement : — · [fiche](../../referentiel/parties-prenantes/pp-09.md)*
+*Rattachement : — · fiche PP-09*
 
 ### PP-10 — Équipes techniques (DEPSI / SIS)
 
@@ -155,10 +155,16 @@ Définir les priorités, arbitrer les ressources et rendre compte des résultats
 
 Concevoir, opérer et fiabiliser les systèmes numériques au service des flux de valeur
 
-*Rattachement : — · [fiche](../../referentiel/parties-prenantes/pp-10.md)*
+*Rattachement : — · fiche PP-10*
 
 <!-- END:GENERATED -->
 ## Liens
 
-- [Flux de valeur](../01_value-streams/index.md)
-- [Portefeuille d'initiatives](../06_portfolio/index.md)
+- Flux de valeur
+- Portefeuille d'initiatives
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Flux de valeur** — Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)
+- **Portefeuille d'initiatives** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)

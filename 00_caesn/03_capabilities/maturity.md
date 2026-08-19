@@ -2,7 +2,7 @@
 title: Évaluation de la maturité des capabilités
 id: capabilities-maturity
 domain: 03_capabilities
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Bureau de Réalisation de la Valeur
@@ -23,7 +23,7 @@ tags: [capabilités, maturité, priorisation]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 ## Échelle de maturité
 
@@ -94,6 +94,13 @@ Les niveaux ci-dessous sont une estimation de cadrage, à valider avec les direc
 
 ## Liens
 
-- [Capabilités](./index.md)
-- [Runway](./runway.md)
-- [Portefeuille](../06_portfolio/index.md)
+- Capabilités
+- Runway
+- Portefeuille
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
+- **Runway** — Capabilités critiques et architecture runway (`00_caesn/03_capabilities/runway.md`)
+- **Portefeuille** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)

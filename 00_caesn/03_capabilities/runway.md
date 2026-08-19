@@ -2,7 +2,7 @@
 title: Capabilités critiques et architecture runway
 id: capabilities-runway
 domain: 03_capabilities
-version: "0.0.1"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Comité National d'Architecture Santé Numérique
@@ -23,7 +23,7 @@ tags: [capabilités, runway, critiques]
 | SIS / données / suivi-évaluation | ● |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 ## Distinction
 
@@ -70,6 +70,13 @@ Son absence bloque : la priorisation cohérente, l'identification des doublons, 
 
 ## Liens
 
-- [Capabilités](./index.md)
-- [Maturité](./maturity.md)
-- [Gouvernance](../07_governance/index.md)
+- Capabilités
+- Maturité
+- Gouvernance
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
+- **Maturité** — Évaluation de la maturité des capabilités (`00_caesn/03_capabilities/maturity.md`)
+- **Gouvernance** — Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)

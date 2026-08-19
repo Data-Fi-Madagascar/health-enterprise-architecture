@@ -2,7 +2,7 @@
 title: "Feuille de route de déploiement progressif de l'ARTSN"
 domain: 02_artsn
 id: roadmap-deploiement-artsn
-version: 2.2
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: "Direction du Numérique en Santé"
@@ -49,10 +49,10 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 | **Identité santé** | Axe 1 | DNS, ANM | Registre des identifiants (INP), module authentification | 100% agents identifiés |
 | **Sécurité** | Axe 1 | DNS, CNRAC | Politique chiffrement RBAC/ABAC, PKI, audit | Conformité NIST 800-53 |
 | **Gouvernance de données** | Axe 2 | DNS, Ministère | Charte protection, registre accords, comité homologation | Cadre réglementaire publié |
-| **Référentiels de base** | Couche 4 | DNS | Registre terminologies (CIM-10, SNOMED CT, LOINC), registre personnels, registre produits | 500 termes映射és, 100% agents référencés |
+| **Référentiels de base** | Couche 4 | DNS | Registre terminologies (CIM-10, SNOMED CT, LOINC), registre personnels, registre produits | 500 termes mappés, 100% agents référencés |
 | **Serveur de sécurité X-Road** | Couche 3 | DNS, UGD | Security Server santé connecté au backbone X-Road UGD existant | Serveur opérationnel, prêt pour échanges inter-institutionnels |
 
-**Note** : L'infrastructure X-Road est déjà opérationnelle via l'UGD (Union pour le Gouvernement du Numérique). La phase 1 déploie uniquement le serveur de sécurité (Security Server) côté santé pour s'y connecter.
+**Note** : L'infrastructure X-Road est déjà opérationnelle via l'UGD (Unité de Gouvernance Digitale). La phase 1 déploie uniquement le serveur de sécurité (Security Server) côté santé pour s'y connecter.
 
 **Livrable clé** : Infrastructure opérationnelle + cadre de sécurité + référentiels de base.
 
@@ -211,22 +211,6 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 
 ## 8. Prochaines étapes
 
-1. **Immédiat (Août–Sept 2026)** :
-   - Présenter la feuille de route au Comité de pilotage
-   - Valider le budget prévisionnel Phase 1 (infrastructure)
-   - Lancer l'appel d'offres data center national
-   - Coordonner avec l'UGD pour le déploiement du serveur de sécurité X-Road santé
-
-2. **Court terme (Oct–Déc 2026)** :
-   - Recruter l'équipe projet (8 personnes)
-   - Déployer l'environnement de développement
-   - Commencer la construction des nœuds régionaux
-
-3. **Moyen terme (2027)** :
-   - Atteindre les jalons J1, J2, J3
-   - Lancer les applications terrain (Phase 2)
-   - Évaluer les résultats Phase 1
-
----
+À l'horizon immédiate d'août à septembre 2026, la priorité consiste à présenter la feuille de route au Comité de pilotage, à valider le budget prévisionnel de la Phase 1 d'infrastructure, à lancer l'appel d'offres pour le data center national et à coordonner avec l'UGD le déploiement du serveur de sécurité X-Road santé. Sur la période court terme d'octobre à décembre 2026, l'équipe projet de huit personnes sera recrutée, l'environnement de développement sera déployé et la construction des nœuds régionaux sera amorcée. En milieu de parcours, au cours de l'année 2027, les jalons J1, J2 et J3 devront être atteints, les applications terrain de la Phase 2 lancées et les résultats de la Phase 1 évalués.
 
 **Prochaine révision** : Septembre 2026

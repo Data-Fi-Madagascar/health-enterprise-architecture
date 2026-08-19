@@ -2,7 +2,7 @@
 title: "Instances sectorielles et autorités spécialisées"
 id: instances-sectorielles
 domain: 07_governance
-version: "0.1.0"
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: Secrétariat Général
@@ -23,7 +23,7 @@ tags: [gouvernance, instances, sectorielles, autorites]
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](../reading-matrix.md).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 ## 1. Instances sectorielles
 
@@ -138,7 +138,15 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 
 ## Liens
 
-- [Gouvernance du cadre](./index.md)
-- [Composition du CNASN](./cnasen-composition.md)
-- [Bureau de Réalisation de la Valeur](./value-realization-office.md)
-- [RACI de gouvernance](./raci.md)
+- Gouvernance du cadre
+- Composition du CNASN
+- Bureau de Réalisation de la Valeur
+- RACI de gouvernance
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Gouvernance du cadre** — Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
+- **Composition du CNASN** — Composition et fonctionnement du Comité National (`00_caesn/07_governance/cnasen-composition.md`)
+- **Bureau de Réalisation de la Valeur** — Bureau de Réalisation de la Valeur (`00_caesn/07_governance/value-realization-office.md`)
+- **RACI de gouvernance** — RACI de gouvernance et responsabilités (`00_caesn/07_governance/raci.md`)
