@@ -11,10 +11,14 @@
             "id": "7bbb389d22e9619f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "00_caesn/05_application/layers.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "layers"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "00_caesn/05_application/layers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for layers"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "00_caesn/05_application/layers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from layers"
             }
           },
           {
@@ -150,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_caesn/09_standards/std-0006-terminologie.md",
+                "file": "00_caesn/05_application/layers.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of std-0006-terminologie"
+              "title": "Outline of layers"
             }
           }
         ]
@@ -179,41 +185,50 @@
   },
   "active": "a54adeb5377c6fd9",
   "lastOpenFiles": [
-    "scripts/export-autonome.py",
-    "dist/~$esn-v0.0.1.docx",
-    "01_cnisn/08_annexes/g-matrice-interop-types.md",
-    "graphify-out/graph.json",
-    "scripts/graphify-out/cache/dff7e26e500e7e78ea9bc36b86da752554769653106f43d941764c28803b7650.json",
-    "scripts/graphify-out/cache/fbff0fdbdad7643a003d2416652bcf8d26f2bd6c8229b912d103fcb9b34b5f24.json",
-    "scripts/graphify-out/cache/f9321b7dffa1f234211d35314acb7afc473a4feb670398e64325a59348f5f045.json",
-    "scripts/graphify-out/cache/eaf65a239698a49e46136aa49790ce310fdb66ae36da94a0321ecf9ec24bcf9a.json",
-    "scripts/graphify-out/cache/b90e8312de0d9efd5b424f7e8a2de7e2c39a06dbf21c728c1afbe463a335ebfe.json",
-    "scripts/graphify-out/cache",
-    "scripts/graphify-out",
-    "01_cnisn/06_decisions/template-modification.md",
-    "01_cnisn/06_decisions/registre-decisions.md",
-    "01_cnisn/06_decisions/index.md",
-    "01_cnisn/06_decisions/adr-0009-terminologie.md",
-    "01_cnisn/06_decisions/adr-0008-atna.md",
-    "01_cnisn/06_decisions/adr-0007-gdhcn.md",
-    "01_cnisn/06_decisions/adr-0006-inp.md",
-    "01_cnisn/06_decisions/adr-0005-consentement.md",
-    "01_cnisn/06_decisions/adr-0004-identite.md",
-    "01_cnisn/06_decisions/adr-0003-fhir.md",
-    "01_cnisn/06_decisions/adr-0002-madx.md",
-    "01_cnisn/06_decisions/adr-0001-x-road.md",
-    "01_cnisn/06_decisions/adr-0000-template.md",
-    "01_cnisn/06_decisions",
-    "01_cnisn/05_standards/std-0006-terminologie.md",
-    "01_cnisn/05_standards/std-0005-identite-pixm.md",
-    "01_cnisn/05_standards/std-0004-madx.md",
-    "01_cnisn/05_standards/std-0003-x-road.md",
-    "01_cnisn/05_standards/std-0002-securite-chiffrement.md",
-    "01_cnisn/05_standards/std-0001-interopabilite-fhir.md",
-    "01_cnisn/05_standards/std-0000-template.md",
-    "01_cnisn/05_standards/norm-008-tripartite.md",
-    "01_cnisn/05_standards/norm-007-rsi.md",
-    "01_cnisn/05_standards/index.md",
-    "graphify-out/GRAPH_REPORT.md"
+    "dist/HEA-v1.0.0.md",
+    "dist/ptisn-v1.0.0.md",
+    "dist/diagrams/ptisn/diagram-07-4576b73b.png",
+    "dist/diagrams/ptisn/diagram-07-4576b73b.puml",
+    "dist/diagrams/ptisn/diagram-06-df8917ec.png",
+    "dist/diagrams/ptisn/diagram-06-df8917ec.puml",
+    "dist/diagrams/ptisn/diagram-05-8d5c82a5.png",
+    "dist/diagrams/ptisn/diagram-05-8d5c82a5.puml",
+    "dist/diagrams/ptisn/diagram-04-1faf4640.png",
+    "dist/diagrams/ptisn/diagram-04-1faf4640.puml",
+    "dist/diagrams/ptisn/diagram-03-0bf8f617.png",
+    "dist/diagrams/ptisn/diagram-03-0bf8f617.puml",
+    "dist/diagrams/ptisn/diagram-02-10b3723f.puml",
+    "dist/diagrams/ptisn/diagram-01-86def96e.puml",
+    "dist/diagrams/ptisn",
+    "dist/artsn-v1.0.0.md",
+    "dist/diagrams/artsn/diagram-04-50d9a41f.png",
+    "dist/diagrams/artsn/diagram-04-50d9a41f.puml",
+    "dist/diagrams/artsn/diagram-03-a4086b5c.puml",
+    "dist/cnisn-v1.0.0.md",
+    "dist/caesn-v1.0.0.md",
+    "dist/diagrams/caesn/diagram-02-30e05c02.png",
+    "dist/diagrams/caesn/diagram-01-f2b1e322.png",
+    "00_caesn/05_application/application-domains.md",
+    "00_caesn/05_application/lifecycle.md",
+    "00_caesn/05_application/layers.md",
+    "00_caesn/05_application/constraints.md",
+    "00_caesn/05_application/index.md",
+    "00_caesn/00_overview/value-model.md",
+    "00_caesn/00_overview/foundations.md",
+    "00_caesn/00_overview/index.md",
+    "02_artsn/00_fondations/index.md",
+    "03_ptisn/07_conclusion/index.md",
+    "03_ptisn/06_gouvernance/index.md",
+    "03_ptisn/05_profil-initiative/index.md",
+    "03_ptisn/05_exemples/index.md",
+    "03_ptisn/04_matrice-alignement/index.md",
+    "03_ptisn/03_profils/pt-02-mediation-intra-secteur.md",
+    "03_ptisn/03_profils/pt-01-echange-interinstitutionnel.md",
+    "03_ptisn/03_profils/pt-00-index.md",
+    "03_ptisn/02_topologie-nationale-cible/index.md",
+    "03_ptisn/01_regles-utilisation/index.md",
+    "03_ptisn/00_introduction/index.md",
+    "dist/diagrams/ptisn/diagram-02-10b3723f.png",
+    "dist/diagrams/ptisn/diagram-01-86def96e.png"
   ]
 }

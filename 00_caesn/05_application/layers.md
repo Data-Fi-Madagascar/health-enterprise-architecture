@@ -25,7 +25,7 @@ tags: [applications, couches, paysage, cible]
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
-Le paysage applicatif national est organisé en six couches complémentaires :
+Le paysage applicatif national est organisé en six couches complémentaires, alignées sur les couches de l'ARTSN :
 
 ```plantuml
 @startuml
@@ -38,28 +38,28 @@ skinparam package {
   BorderColor #FF9800
 }
 
-package "Utilisateurs et points de service" as L1 {
-  component " " as L1_DESC
+package "L6 — Pilotage, Gouvernance et actions intersectorielles" as L6 {
+  component " " as L6_DESC
 }
 
-package "Applications métier" as L2 {
-  component " " as L2_DESC
-}
-
-package "Plateformes et services partagés" as L3 {
-  component " " as L3_DESC
-}
-
-package "Couche nationale d'échange" as L4 {
-  component " " as L4_DESC
-}
-
-package "Données, analyse et pilotage" as L5 {
+package "L5 — Projections analytiques et Modèles" as L5 {
   component " " as L5_DESC
 }
 
-package "Infrastructure, sécurité et exploitation" as L6 {
-  component " " as L6_DESC
+package "L4 — Interopérabilité et services partagés" as L4 {
+  component " " as L4_DESC
+}
+
+package "L3 — Échange, transport et ingestion" as L3 {
+  component " " as L3_DESC
+}
+
+package "L2 — Point de service" as L2 {
+  component " " as L2_DESC
+}
+
+package "L1 — Infrastructure" as L1 {
+  component " " as L1_DESC
 }
 
 ' === Relations ===
@@ -72,42 +72,35 @@ L5 --> L6
 @enduml
 ```
 
-## 1. Utilisateurs et points de service
+## L6 — Pilotage, Gouvernance et actions intersectorielles
 
-Lieux et acteurs qui utilisent les services : patients et ménages, agents de santé communautaire, formations sanitaires, districts, régions, directions centrales, programmes, partenaires autorisés, décideurs. Les applications sont conçues à partir des besoins réels de ces utilisateurs.
+Vitrine décisionnelle unique de l'État. Tableaux de bord de performance sanitaire nationale, portail de suivi de la CSU, centre de commande des alertes épidémiques, plateforme de gestion des crises intersectorielles. Couche rattachée à VS-04 et ART-0. Ne supporte aucune écriture opérationnelle — lecture exclusive sur les projections analytiques.
 
-## 2. Applications métier
+## L5 — Projections analytiques et Modèles
 
-Applications directement liées aux processus de santé : soins et parcours patient, santé communautaire, surveillance épidémiologique, vaccination et prévention, protection financière, logistique, ressources humaines, qualité des soins, planification et coordination. Voir domaines applicatifs.
+Sépare structurellement les flux analytiques du stockage transactionnel. Pipeline d'ingestion ETL, moteur d'IA prédictive, routeur d'escalade et d'alertes, entrepôt Lakehouse, moteur de graphes, référentiel spatio-temporel, réconciliation analytique. Applique le pattern CQRS (ART-6). Couche rattachée à ART-5, ART-6, ART-8b, ART-4d, ART-9.
 
-## 3. Plateformes et services partagés
+## L4 — Interopérabilité et services partagés
 
-Composants nationaux réutilisables : référentiels (FOSA, géographie, agents, produits, indicateurs), registre des bénéficiaires, services d'identité, d'authentification, d'accès, de notification, de consentement, catalogue des API, registre des initiatives. Voir services partagés.
+Cœur applicatif de la santé au présent. Centralise les registres nationaux et assure la persistance clinique temps réel. Orchestre les parcours et assure la médiation sémantique universelle. Moteur d'intégration, orchestrateur de parcours, répertoires cliniques, registres des terminologies, INP, couverture, personnels, produits. Couche rattachée à ART-2, ART-3, ART-4, ART-8a, ART-4a, ART-4c.
 
-## 4. Couche nationale d'échange
+## L3 — Échange, transport et ingestion
 
-Assure la médiation entre systèmes, la transformation des formats, le routage, la journalisation, l'application des règles de sécurité, la gestion des contrats d'interface et l'intégration avec DPI-H, OpenHIE et GovStack.
+Infrastructure d'ingestion réseau, dépourvue de logique métier. Intercepte les requêtes à la périphérie, bloque les messages non conformes, assure la persistance tampon et exécute les compensations par lots. API Gateway, registre de schémas, message broker asynchrone, compensateur. Couche rattachée à ART-1, F.3, ART-8c.
 
-## 5. Données, analyse et pilotage
+## L2 — Point de service
 
-Composants d'usage décisionnel : entrepôt national, tableaux de bord, outils d'analyse, rapports nationaux, suivi des indicateurs et des bénéfices, revues de performance. Voir entrepôt.
+Ligne de front logicielle. Applications capables de capturer les soins, dispensations et mouvements logistiques en l'absence totale de réseau Internet. Écritures locales sous forme de journaux d'événements inaltérables. Dossiers de santé, pharmacies, santé communautaire, espace patient, chaîne logistique, surveillance animale, capteurs terrain. Couche rattachée à F.1, ENF-1.
 
-## 6. Infrastructure, sécurité et exploitation
+## L1 — Infrastructure
 
-Soutien de l'ensemble : hébergement souverain, connectivité différenciée, sauvegarde, cybersécurité, supervision, support, incidents, maintenance, documentation. Les choix relèvent de l'Architecture de Référence Technique ; le cadre fixe les exigences.
-
-## Liens
-
-- Architecture applicative
-- Référentiels
-- Services partagés
+Socle matériel de la Nation. Hébergement souverain des données cliniques sur le territoire national, topologie distribuée en cascade, basculement automatique en cas de sinistre. Nœud central (datacenters certifiés HDS), nœuds régionaux (Fog), nœuds locaux (Edge), liaisons dédiées, VPN, MPLS, APN sécurisés. Couche rattachée à ART-7.
 
 ## Références
 
 - **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **domaines applicatifs** — Domaines applicatifs cibles par flux de valeur (`00_caesn/05_application/application-domains.md`)
+- **couches ARTSN** — Cartographie conceptuelle cible, 6 couches + 2 axes (`02_artsn/04_cartographie-cible/index.md`)
 - **services partagés** — Services numériques partagés prioritaires (`00_caesn/05_application/shared-services.md`)
 - **entrepôt** — Gouvernance, qualité et protection des données (`00_caesn/04_data/governance.md`)
 - **Architecture applicative** — Architecture applicative et systèmes numériques (`00_caesn/05_application/index.md`)
 - **Référentiels** — Référentiels nationaux (`00_caesn/04_data/referentials.md`)
-- **Services partagés** — Services numériques partagés prioritaires (`00_caesn/05_application/shared-services.md`)

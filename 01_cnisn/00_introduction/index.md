@@ -11,7 +11,6 @@ tags: ["cnisn", "niveau-2", "interopérabilité", "introduction"]
 
 # Préambule du CNISN
 
-
 ## 1. Nature du cadre
 
 Le Cadre National d'Interopérabilité de Santé Numérique (CNISN) constitue la déclinaison sectorielle du cadre national d'interopérabilité pour les besoins spécifiques de la santé numérique. Il définit l'ensemble des principes, capacités et règles de gouvernance qui s'appliquent aux échanges de données et de services impliquant le secteur santé à Madagascar.
