@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_caesn/05_application/layers.md",
+                "file": "02_artsn/05_dictionnaire/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "layers"
+              "title": "index"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_caesn/05_application/layers.md",
+                "file": "02_artsn/05_dictionnaire/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for layers"
+              "title": "Backlinks for index"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00_caesn/05_application/layers.md",
+                "file": "02_artsn/05_dictionnaire/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from layers"
+              "title": "Outgoing links from index"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_caesn/05_application/layers.md",
+                "file": "02_artsn/05_dictionnaire/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of layers"
+              "title": "Outline of index"
             }
           }
         ]
@@ -202,15 +202,23 @@
     "dist/diagrams/ptisn",
     "dist/artsn-v1.0.0.md",
     "dist/diagrams/artsn/diagram-04-50d9a41f.png",
-    "dist/diagrams/artsn/diagram-04-50d9a41f.puml",
     "dist/diagrams/artsn/diagram-03-a4086b5c.puml",
+    "dist/diagrams/artsn/diagram-04-50d9a41f.puml",
     "dist/cnisn-v1.0.0.md",
     "dist/caesn-v1.0.0.md",
     "dist/diagrams/caesn/diagram-02-30e05c02.png",
     "dist/diagrams/caesn/diagram-01-f2b1e322.png",
+    "00_caesn/04_data/referentials.md",
+    "00_caesn/04_data/principles.md",
+    "00_caesn/04_data/lifecycle.md",
+    "00_caesn/04_data/index.md",
+    "00_caesn/04_data/governance.md",
+    "00_caesn/04_data/domains.md",
+    "00_caesn/06_portfolio/index.md",
+    "00_caesn/05_application/rationalization.md",
+    "00_caesn/05_application/layers.md",
     "00_caesn/05_application/application-domains.md",
     "00_caesn/05_application/lifecycle.md",
-    "00_caesn/05_application/layers.md",
     "00_caesn/05_application/constraints.md",
     "00_caesn/05_application/index.md",
     "00_caesn/00_overview/value-model.md",
@@ -220,14 +228,6 @@
     "03_ptisn/07_conclusion/index.md",
     "03_ptisn/06_gouvernance/index.md",
     "03_ptisn/05_profil-initiative/index.md",
-    "03_ptisn/05_exemples/index.md",
-    "03_ptisn/04_matrice-alignement/index.md",
-    "03_ptisn/03_profils/pt-02-mediation-intra-secteur.md",
-    "03_ptisn/03_profils/pt-01-echange-interinstitutionnel.md",
-    "03_ptisn/03_profils/pt-00-index.md",
-    "03_ptisn/02_topologie-nationale-cible/index.md",
-    "03_ptisn/01_regles-utilisation/index.md",
-    "03_ptisn/00_introduction/index.md",
     "dist/diagrams/ptisn/diagram-02-10b3723f.png",
     "dist/diagrams/ptisn/diagram-01-86def96e.png"
   ]
