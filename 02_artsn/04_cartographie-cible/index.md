@@ -179,7 +179,7 @@ Les chapitres et patterns de référence constituent le socle normatif de cette 
 
 ### CMP-07 — Orchestrateur de parcours & Gestionnaire de Sagas (ART-8a)
 
-**Contenu normatif.** Orchestre les flux inter-systèmes en gérant les transactions distribuées (Sagas) et les compensations. Garantit la cohérence des parcours patient inter-établissements, inter-systèmes et inter-départements. Assure la résilience des workflows cliniques critiques.
+**Contenu normatif.** Orchestre les flux inter-systèmes en gérant les transactions distribuées (Sagas) et les compensations. Garantit la cohérence des parcours patient跨机构跨系统跨部门. Assure la résilience des workflows cliniques critiques.
 
 **Discipline existentielle.** Point de coordination central pour tous les flux transactionnels : toute opération multi-systèmes transite par cet orchestrateur. Garantit l'atomicité logique des parcours complexes.
 

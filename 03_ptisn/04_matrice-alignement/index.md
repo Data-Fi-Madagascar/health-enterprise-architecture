@@ -21,7 +21,7 @@ Le tableau suivant établit, pour chaque capacité d'interopérabilité définie
 |---|--|
 | CAP-INT-01 | PT-04 |
 | CAP-INT-02 | PT-05 |
-| CAP-INT-03 | PT-01, PT-02, PT-08 |
+| CAP-INT-03 | PT-01, PT-02, PT-08, PT-16 |
 | CAP-INT-04 | PT-06 |
 | CAP-INT-05 | PT-07 |
 | CAP-INT-06 | PT-03 |
@@ -31,6 +31,8 @@ Le tableau suivant établit, pour chaque capacité d'interopérabilité définie
 | CAP-INT-10 | PT-12 |
 | CAP-INT-11 | PT-13 |
 | CAP-INT-12 | — |
+| CAP-INT-13 | PT-14 |
+| CAP-INT-14 | PT-15 |
 
 On constate que la capacité CAP-INT-12 ne fait l'objet d'aucun profil technique pour le moment. Cette situation traduit soit une capacité dont l'implémentation n'est pas encore requise par les initiatives en cours, soit un domaine nécessitant le développement d'un nouveau profil.
 
@@ -40,20 +42,23 @@ Le tableau ci-dessous associe chaque chapitre de l'Architecture de Référence T
 
 | Chapitre ART | Profils PTISN principaux |
 |---|---|
-| ART-0 | PT-01, PT-10, PT-11 |
-| ART-1 | PT-01, PT-02, PT-03, PT-08 |
+| ART-0 | PT-01, PT-10, PT-11, PT-14, PT-15 |
+| ART-1 | PT-01, PT-02, PT-03, PT-08, PT-14 |
 | ART-2 | PT-02, PT-03, PT-07, PT-08 |
 | ART-3 | PT-09, PT-12 |
-| ART-4 | PT-04, PT-05, PT-06, PT-07, PT-13 |
+| ART-4 | PT-04, PT-05, PT-06, PT-07, PT-13, PT-15 |
 | ART-4a | PT-04, PT-05 |
 | ART-4b | PT-04, PT-10, PT-11 |
+| ART-4d | PT-15 |
 | ART-5 | PT-02, PT-06, PT-07, PT-08, PT-09, PT-13 |
 | ART-6 | PT-06, PT-08, PT-09, PT-13 |
-| ART-7 | PT-01, PT-02, PT-04, PT-05, PT-09, PT-10, PT-11, PT-12 |
-| ART-8 | PT-02 |
+| ART-7 | PT-01, PT-02, PT-04, PT-05, PT-09, PT-10, PT-11, PT-12, PT-14, PT-16 |
+| ART-8 | PT-02, PT-16 |
+| ART-8a | PT-16 |
+| ART-8b | PT-15 |
 | ART-9 | PT-10 |
 | ART-10 | Profil futur |
-| ART-11 | PT-01, PT-11 |
+| ART-11 | PT-01, PT-11, PT-15 |
 
 Le chapitre ART-10 n'est associé à aucun profil existant ; il fait l'objet d'un profil en cours de définition. Les chapitres ART-5 et ART-7 concentrent le plus grand nombre de profils, ce qui confirme leur rôle transversal dans la couche de médiation et la sécurité des données.
 
@@ -68,9 +73,12 @@ Le PTISN utilise OpenHIE comme architecture de référence et non comme obligati
 | Référentiel des établissements     | Facility Registry                      |
 | Terminologie                       | Terminology Service                    |
 | Médiation sectorielle              | Interoperability Layer                 |
+| Orchestration de processus         | Process Manager / Saga                 |
 | Données agrégées                   | Health Metrics and Indicator Reporting |
 | Données longitudinales futures     | Shared Health Record, si applicable    |
 | Logistique future                  | Product Management and Supply Chain    |
+| Échange transfrontalier            | Cross-border HIE (GDHCN)              |
+| Surveillance One Health            | Multi-sector event broker              |
 
 Cette correspondance ne signifie pas que tous les composants doivent être déployés simultanément. Le calendrier de mise en œuvre de chaque composant dépend du niveau de maturité de l'initiative correspondante et des prérequis infrastructurels. Les composants qualifiés de « futurs » relèvent de phases ultérieures du programme et ne constituent pas des prérequis pour les initiatives actuellement en cours de conception.
 

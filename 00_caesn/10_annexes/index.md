@@ -31,6 +31,7 @@ Documents de travail et de lecture transverses du cadre d'architecture de la san
 |----------|---------|
 | Glossaire | Définitions des termes du domaine |
 | Acronymes | Sigles et abréviations utilisés |
+| [Comparaison des architectures africaines](comparaison-architectures-africaines.md) | Veille stratégique — positionnement HEA par rapport aux pairs (12 pays + cadres régionaux) |
 | [Catalogues de références](#catalogues) | Référentiels nationaux et domaines de données |
 
 ## Catalogue
@@ -48,6 +49,7 @@ Les catalogues relatifs aux principes, aux principes de domaine, aux capabilité
 - **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
 - **Glossaire** — Glossaire (`00_caesn/10_annexes/glossary.md`)
 - **Acronymes** — Acronymes et abréviations (`00_caesn/10_annexes/acronyms.md`)
+- **Comparaison des architectures africaines** — Veille stratégique (`00_caesn/10_annexes/comparaison-architectures-africaines.md`)
 - **Principes** — Principes d'architecture (`00_caesn/02_principles/index.md`)
 - **Capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
 - **Données** — Architecture des données et de l'information sanitaire (`00_caesn/04_data/index.md`)

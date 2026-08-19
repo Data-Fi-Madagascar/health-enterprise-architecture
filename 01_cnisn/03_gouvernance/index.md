@@ -44,11 +44,15 @@ Elle instruction les demandes de dérogation, les valide, les enregistre, les li
 
 Elle valide les accords interinstitutionnels, coordonne avec l'Unité de Gouvernance Digitale, arbitre les responsabilités entre institutions, suit les incidents transversaux et gère les contraintes de résidence des données.
 
-## 3. Comité national et comité sectoriel
+## 3. Hiérarchie des instances
 
-Le Comité National d'Architecture Santé Numérique (CNASN) constitue l'instance transversale de gouvernance. Il fixe les orientations stratégiques, gouverne les services pangouvernementaux, arbitre les divergences entre secteurs, valide les mécanismes interinstitutionnels, assure la cohérence nationale, instruit et valide les décisions d'architecture (ADR), et organise l'homologation des initiatives.
+La gouvernance de la santé numérique s'inscrit dans une chaîne d'autorité à trois niveaux :
 
-Le comité sectoriel santé décline les orientations nationales pour le secteur, gouverne les services de santé, valide les profils sectoriels, instruit les initiatives, organise l'homologation sectorielle et remonte les besoins transversaux au CNASN.
+**Unité de Gouvernance Digitale (UGD)** — instance nationale de gouvernance du numérique, porteuse du cadre national d'architecture.
+
+**Comité National d'Architecture Santé Numérique (CNASN)** — comité d'architecture placé sous l'autorité de l'UGD. Il fixe les orientations stratégiques, gouverne les services pangouvernementaux, arbitre les divergences entre secteurs, valide les mécanismes interinstitutionnels, assure la cohérence nationale, instruit et valide les décisions d'architecture (ADR), et organise l'homologation des initiatives.
+
+**Sous-comité d'interopérabilité sectoriel santé** — sous-comité sectoriel du CNASN, instance porteuse du CNISN. Il décline les orientations nationales pour le secteur santé, gouverne les services de santé, valide les profils sectoriels, instruit les initiatives, prépare l'homologation sectorielle sous l'autorité du CNASN et remonte les besoins transversaux au CNASN.
 
 ## 4. Rôle des propriétaires de capacités
 

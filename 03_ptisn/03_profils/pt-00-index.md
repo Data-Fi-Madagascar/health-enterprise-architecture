@@ -11,7 +11,7 @@ tags: ["ptisn", "niveau-4", "profils"]
 
 # Partie III — Profils techniques nationaux
 
-Catalogue des 15 profils techniques. Chaque profil est un objet du référentiel (`referentiel/profils/pt-XX.md`) ; les numéros de capacité et de chapitres ART ont été alignés sur le CNISN et l'ARTSN pendant la migration (voir `coherence-report.md`).
+Catalogue des 16 profils techniques. Chaque profil est un objet du référentiel (`referentiel/profils/pt-XX.md`) ; les numéros de capacité et de chapitres ART ont été alignés sur le CNISN et l'ARTSN pendant la migration (voir `coherence-report.md`).
 
 <!-- BEGIN:GENERATED mode=table source=referentiel/profils/pt-*.md -->
 <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
@@ -33,5 +33,6 @@ Catalogue des 15 profils techniques. Chaque profil est un objet du référentiel
 | PT-13 | Profil technique national | CMP-05, CAP-INT-11, ART-4, ART-5, ART-6 | draft | PT-13 |
 | PT-14 | Interopérabilité transfrontalière | CAP-INT-13, CAP-15, CAP-17, ART-7, ART-0, ART-1, CMP-06, CMP-15 | draft | PT-14 |
 | PT-15 | Surveillance One Health | CAP-INT-14, CAP-18, CAP-05, ART-11, ART-0, ART-4D, ART-8B, CMP-02, CMP-04, CMP-06 | draft | PT-15 |
+| PT-16 | Orchestration de processus bornés | CMP-07, CMP-06, CAP-INT-03, ART-8A, ART-7 | draft | PT-16 |
 
 <!-- END:GENERATED -->

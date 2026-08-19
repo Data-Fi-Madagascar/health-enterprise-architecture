@@ -30,13 +30,13 @@
 | 10 | CNISN vs ARTSN — traçabilité, taxonomie annexe B, homologation | ◐ Taxonomie résolue (5 familles) ; traçabilité ARTSN→CNISN, CNASN, logistique ouverts |
 | 11 | Ré-ancrage CAESN : processus, composants, parties prenantes | ✓ Résolu (51 objets, graphe VS → PRC → CMP ↔ CAP-INT/ART) |
 | 14 | **Restructuration post-restructuration** (2026-08-17) | ✓ Standards/ADR déplacés, 0 lien cassé, hiérarchie conforme, UGD référencée, X-Road Couche 3 |
-| 15 | **Session 2026-08-18** : versions, docs.json, traçabilité, OpenFn | ✓ 181 fichiers `1.0.0`, 160 pages navigation, 20 chapitres ARTSN tracés, OpenFn PT-02 |
+| 15 | **Session 2026-08-18** : versions, docs.json, traçabilité, OpenFn | ✓ 181 fichiers `1.0.0`, 160 pages navigation, 20 chapitres ARTSN tracés, OpenFn recadré → PT-16 créé |
 
 ---
 
 ## 1. Numérotation des capacités (PTISN vs CNISN) — ✓ Résolu
 
-Le CNISN définit **12 capacités** (`01_cnisn/02_capacites.md`, Partie II) :
+Le CNISN définit **14 capacités** (`01_cnisn/02_capacites.md`, Partie II) :
 
 | N° | Intitulé CNISN |
 |----|----------------|
@@ -52,6 +52,8 @@ Le CNISN définit **12 capacités** (`01_cnisn/02_capacites.md`, Partie II) :
 | CAP-INT-10 | Provenance, audit et traçabilité |
 | CAP-INT-11 | Qualité et réconciliation |
 | CAP-INT-12 | Conformité et tests d'interopérabilité |
+| CAP-INT-13 | Interopérabilité transfrontalière |
+| CAP-INT-14 | Coordination intersectorielle One Health |
 
 Le PTISN était rédigé contre une version antérieure du CNISN à **6 capacités**, décalée de la numérotation canonique (ex. « CAP-INT-02 Échange et médiation » au lieu de **CAP-INT-03**). Toutes les références des profils et de la matrice d'alignement étaient fausses.
 
@@ -489,7 +491,7 @@ La table de hiérarchie dans `README.md` et les index de chaque niveau sont alig
 3. ~~**Nomenclature ART-SN vs ARTSN**~~ — **✓ Résolu** : uniformisé en ARTSN.
 4. ~~**`docs.json` racine** : toujours le template Mintlify par défaut~~ — **✓ Résolu** (reconstruit avec 160 pages, 4 onglets)
 5. ~~**Versions** : harmoniser les niveaux en semver~~ — **✓ Résolu** (semver `1.0.0` partout)
-6. **OpenFn** : candidate alternative ajoutée dans PT-02 ; à évaluer pour d'autres profils si pertinent
+6. **OpenFn** : positionnement corrigé — pas une alternative à OpenHIM, mais plateforme d'orchestration (ART-8a) complémentaire. Candidate pour futur profil dédié si besoin.
 
 ### 14.9 Recommandations
 
@@ -538,13 +540,22 @@ Vérification : `grep -r '^version:' --include='*.md' 00_caesn/ 01_cnisn/ 02_art
 
 Champ `related: ["cap-int-XX"]` ajouté dans le frontmatter des 20 chapitres ARTSN. Mapping basé sur `referentiel/chapitres/art-*.md` (`maps_to`) et les 12 capacités CNISN. La traçabilité est désormais **symétrique** (annexes CNISN + frontmatter ARTSN).
 
-### 15.4 OpenFn ajouté comme candidate alternative
+### 15.4 OpenFn — positionnement corrigé
 
-**Statut : ✓ Résolu**
+**Statut : ✓ Résolu (corrigé)**
 
-OpenFn (plateforme d'intégration open-source orientée workflow) ajouté comme candidate alternative dans `03_ptisn/03_profils/pt-02-mediation-intra-secteur.md` :
-- Table « Produit candidat » : row `Alternatives` enrichie
-- Description ajoutée sous le paragraphe OpenHIM (connecteurs HL7 FHIR, DHIS2, moteur de règles métier)
+OpenFn (plateforme d'intégration open-source orientée workflow) **n'est pas une alternative à OpenHIM**. Ce sont des couches complémentaires :
+
+- **OpenHIM** (PT-02) = médiation intra-secteur (ART-2) — routage, transformation, validation des messages santé
+- **OpenFn** = orchestration de processus métier (ART-8a) — automatisation de workflows inter-systèmes
+
+OpenFn pourrait être un candidat pertinent pour :
+- des initiatives nécessitant de l'orchestration de workflows au-delà de la simple médiation
+- un futur profil technique dédié à l'orchestration bornée (ART-8a) si le besoin se formalise
+
+**→ PT-16 créé** (2026-08-19) : `03_ptisn/03_profils/pt-16-orchestration-processus.md` + `referentiel/profils/pt-16.md`. OpenFN comme produit candidat de référence. Index mis à jour (16 profils).
+
+Aucune modification de PT-02 n'est nécessaire — la table produits reste focalisée sur OpenHIM pour la médiation.
 
 ### 15.5 Vérification finale
 

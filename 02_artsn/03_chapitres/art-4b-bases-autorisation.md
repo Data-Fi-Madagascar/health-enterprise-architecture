@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: [artsn, chapitres, art-4b, niveau-3]
-related: ['cap-int-05']
+related: ['cap-int-09']
 ---
 
 # ART-4b — Bases d'autorisation

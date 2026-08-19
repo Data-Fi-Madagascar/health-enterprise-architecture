@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: [artsn, chapitres, art-4d, niveau-3]
-related: []
+related: ['cap-int-04']
 ---
 
 # ART-4d — Référentiel géospatial et d'exploitation partagé
