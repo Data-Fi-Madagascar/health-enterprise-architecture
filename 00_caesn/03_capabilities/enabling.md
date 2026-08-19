@@ -2,7 +2,7 @@
 title: "Capabilités habilitantes du système"
 id: capabilities-enabling
 domain: 03_capabilities
-version: "0.0.1"
+version: "1.0.0""
 status: draft
 last_reviewed: 2026-07-03
 owner: Responsables de capabilités habilitantes

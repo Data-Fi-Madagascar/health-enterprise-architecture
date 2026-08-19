@@ -2,7 +2,7 @@
 title: "VS-04 — Piloter, coordonner et améliorer la performance du système de santé"
 id: vs-04
 domain: 01_value-streams
-version: "0.0.1"
+version: "1.0.0""
 status: draft
 last_reviewed: 2026-07-03
 owner: Secrétariat Général

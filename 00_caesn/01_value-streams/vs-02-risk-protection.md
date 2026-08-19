@@ -2,7 +2,7 @@
 title: "VS-02 — Prévenir, détecter et répondre aux risques sanitaires"
 id: vs-02
 domain: 01_value-streams
-version: "0.0.1"
+version: "1.0.0""
 status: draft
 last_reviewed: 2026-07-03
 owner: Direction de la protection sociale et de la promotion de la santé
