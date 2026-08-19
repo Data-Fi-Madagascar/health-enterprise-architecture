@@ -52,6 +52,7 @@ Un modèle de norme est proposé : STD-0000 — modèle.
 | **STD-0004** | Norme de données agrégées — mADX | Norme obligatoire | Approuvé |
 | **STD-0005** | Norme d'identité patient — PIXm/PDQm | Norme obligatoire | Approuvé |
 | **STD-0006** | Norme terminologique — CIM-10 + LOINC | Norme obligatoire | Approuvé |
+| **STD-0007** | Standard terminologique — SNOMED CT | Standard recommandé | Draft |
 | **NORM-007** | Règlement Sanitaire International (RSI 2005) | Norme internationale obligatoire | Actif |
 | **NORM-008** | Tripartite Plus OMS–WOAH–FAO–PNUE | Cadre normatif international | Actif |
 
@@ -74,6 +75,7 @@ Un modèle de norme est proposé : STD-0000 — modèle.
 - **Norme de données agrégées — mADX** — Norme de données agrégées — mADX (`01_cnisn/05_standards/std-0004-madx.md`)
 - **Norme d'identité patient — PIXm/PDQm** — Norme d'identité patient — PIXm/PDQm (`01_cnisn/05_standards/std-0005-identite-pixm.md`)
 - **Norme terminologique — CIM-10 + LOINC** — Norme terminologique — CIM-10 + LOINC (`01_cnisn/05_standards/std-0006-terminologie.md`)
+- **Standard terminologique — SNOMED CT** — Standard recommandé (`01_cnisn/05_standards/std-0007-snomed-ct.md`)
 - **Règlement Sanitaire International (RSI 2005)** — Règlement Sanitaire International (RSI 2005) (`01_cnisn/05_standards/norm-007-rsi.md`)
 - **Tripartite Plus OMS–WOAH–FAO–PNUE** — Tripartite Plus OMS–WOAH–FAO–PNUE (`01_cnisn/05_standards/norm-008-tripartite.md`)
 - **Introduction du CNISN** — Préambule du CNISN (`01_cnisn/00_introduction/index.md`)

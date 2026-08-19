@@ -2,7 +2,7 @@
 title: "Capabilités métier de santé"
 description: "Niveau 1 — Architecture d'entreprise du secteur santé numérique de Madagascar"
 owner: "Responsables de capabilités métier"
-version: "0.0.1"
+version: "1.0.0"
 status: "draft"
 last_reviewed: "2026-07-03"
 ---
@@ -19,7 +19,7 @@ last_reviewed: "2026-07-03"
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](/caesn/reading-matrix).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
 Chaque capabilité vit dans le référentiel : `referentiel/capabilites/cap-XX.md` (rôle, flux de valeur associés).
@@ -39,19 +39,28 @@ La capabilité garantit que chaque citoyen accède à des services de santé ess
 
 - VS-01
 
-*Rattachement : VS-01 · fiche*
+*Rattachement : VS-01 · fiche CAP-01*
 
 ### CAP-02 — Gestion du parcours patient, référence et contre-référence
 
 #### Rôle dans le système
 
-La capabilité organise le parcours du patient entre les points de service : orientation vers le niveau adapté, référence vers une structure plus spécialisée et contre-référence vers la formation d’origine. Elle assure que l’information clinique suit le patient d’un niveau à l’autre, afin que la continuité des soins ne dépende pas d’un seul établissement. Sans elle, les ruptures de parcours (référence sans dossier, absence de retour d’information) fragmentent la prise en charge.
+La capabilité organise le parcours du patient entre les points de service : orientation vers le niveau adapté, référence vers une structure plus spécialisée et contre-référence vers la formation d'origine. Elle assure que l'information clinique suit le patient d'un niveau à l'autre, afin que la continuité des soins ne dépende pas d'un seul établissement. Sans elle, les ruptures de parcours (référence sans dossier, absence de retour d'information) fragmentent la prise en charge.
+
+#### Scénarios couverts
+
+| Scénario | Description | Profils consommés |
+|----------|-------------|-------------------|
+| **Référence (S-03)** | Orientation d'un patient d'un niveau de soins vers un autre (CSB → hôpital régional) | PT-01, PT-02 |
+| **Contre-référence (S-04)** | Retour du patient vers l'établissement d'origine avec compte-rendu et recommandations | PT-01, PT-02 |
+| **Évacuation sanitaire nationale (S-05)** | Transfert urgent entre établissements nationaux | PT-01, PT-02, PT-11 |
+| **Évacuation sanitaire internationale (S-05)** | Transfert vers un centre spécialisé à l'étranger | PT-01, PT-02, PT-11, PT-14 |
 
 #### Flux de valeur
 
 - VS-01
 
-*Rattachement : VS-01 · fiche*
+*Rattachement : VS-01, CAP-INT-03, CAP-INT-01, CAP-INT-13 · fiche CAP-02*
 
 ### CAP-03 — Qualité, sécurité des soins et amélioration continue
 
@@ -64,7 +73,7 @@ La capabilité mesure, améliore et sécurise la qualité des services de santé
 - VS-01
 - VS-04
 
-*Rattachement : VS-01, VS-04 · fiche*
+*Rattachement : VS-01, VS-04 · fiche CAP-03*
 
 ### CAP-04 — Santé communautaire et engagement des communautés
 
@@ -77,19 +86,30 @@ La capabilité intègre les agents communautaires, les communautés et les patie
 - VS-01
 - VS-02
 
-*Rattachement : VS-01, VS-02 · fiche*
+*Rattachement : VS-01, VS-02 · fiche CAP-04*
 
 ### CAP-05 — Surveillance épidémiologique, alerte, investigation et riposte
 
 #### Rôle dans le système
 
-La capabilité couvre l’ensemble du cycle de gestion des risques sanitaires : détection des signaux, notification des cas, vérification, investigation, déclenchement de la riposte et retour d’expérience. Elle relie les formations sanitaires, les districts et le niveau central pour qu’une épidémie ou une urgence soit identifiée et traitée sans délai.
+La capabilité couvre l'ensemble du cycle de gestion des risques sanitaires : détection des signaux, notification des cas, vérification, investigation, déclenchement de la riposte et retour d'expérience. Elle relie les formations sanitaires, les districts et le niveau central pour qu'une épidémie ou une urgence soit identifiée et traitée sans délai.
+
+La capabilité inclut désormais la **dimension géospatiale** :
+- **Géolocalisation des formations sanitaires** : positionnement GPS de toutes les structures de soins
+- **Cartographie des risques** : visualisation spatiale des foyers épidémiques et des zones à risque
+- **Suivi temporel** : analyse des tendances épidémiques par zone géographique
+- **Cloisonnement One Health** : surveillance conjointe santé humaine/animale/environnement par zone
 
 #### Flux de valeur
 
 - VS-02
 
-*Rattachement : VS-02 · fiche*
+#### Rattachement ARTSN
+
+- **ART-4d** — Référentiel géospatial et d'exploitation partagé
+- **PT-05** — Profil technique géolocalisation
+
+*Rattachement : VS-02 · fiche CAP-05*
 
 ### CAP-06 — Vaccination, prévention et promotion de la santé
 
@@ -101,7 +121,7 @@ La capabilité prévient les maladies et promeut les comportements favorables à
 
 - VS-02
 
-*Rattachement : VS-02 · fiche*
+*Rattachement : VS-02 · fiche CAP-06*
 
 ### CAP-07 — Protection financière, couverture santé universelle
 
@@ -113,7 +133,7 @@ La capabilité protège les ménages contre le risque financier lié aux soins :
 
 - VS-03
 
-*Rattachement : VS-03 · fiche*
+*Rattachement : VS-03 · fiche CAP-07*
 
 ### CAP-08 — Gouvernance institutionnelle, planification, coordination et redevabilité
 
@@ -126,9 +146,13 @@ La capabilité assure la gouvernance du système de santé : planification, coor
 - VS-03
 - VS-04
 
-*Rattachement : VS-03, VS-04 · fiche*
+*Rattachement : VS-03, VS-04 · fiche CAP-08*
 
 <!-- END:GENERATED -->
 ## Liens
 
 - [Capabilités](/caesn/capabilities/index)
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)

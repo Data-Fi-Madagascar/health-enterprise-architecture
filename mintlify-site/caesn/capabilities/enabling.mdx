@@ -2,7 +2,7 @@
 title: "Capabilités habilitantes du système"
 description: "Niveau 1 — Architecture d'entreprise du secteur santé numérique de Madagascar"
 owner: "Responsables de capabilités habilitantes"
-version: "0.0.1"
+version: "1.0.0"
 status: "draft"
 last_reviewed: "2026-07-03"
 ---
@@ -19,7 +19,7 @@ last_reviewed: "2026-07-03"
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](/caesn/reading-matrix).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
 Chaque capabilité vit dans le référentiel : `referentiel/capabilites/cap-XX.md` (rôle, flux de valeur associés).
@@ -41,7 +41,7 @@ La capabilité garantit la disponibilité et la compétence des ressources humai
 - VS-02
 - VS-04
 
-*Rattachement : VS-01, VS-02, VS-04 · fiche*
+*Rattachement : VS-01, VS-02, VS-04 · fiche CAP-09*
 
 ### CAP-10 — Gestion des médicaments, vaccins, intrants et chaîne d’approvisionnement
 
@@ -54,7 +54,7 @@ La capabilité assure la disponibilité des produits de santé au point de servi
 - VS-01
 - VS-02
 
-*Rattachement : VS-01, VS-02 · fiche*
+*Rattachement : VS-01, VS-02 · fiche CAP-10*
 
 ### CAP-11 — Gestion des infrastructures, équipements et maintenance
 
@@ -67,7 +67,7 @@ La capabilité garantit un environnement physique fonctionnel pour la prestation
 - VS-01
 - VS-02
 
-*Rattachement : VS-01, VS-02 · fiche*
+*Rattachement : VS-01, VS-02 · fiche CAP-11*
 
 ### CAP-12 — Finances publiques, budget et allocation des ressources
 
@@ -80,7 +80,7 @@ La capabilité soutient le financement du système de santé : exécution budgé
 - VS-03
 - VS-04
 
-*Rattachement : VS-03, VS-04 · fiche*
+*Rattachement : VS-03, VS-04 · fiche CAP-12*
 
 ### CAP-13 — Système d’information sanitaire, données et recherche
 
@@ -95,7 +95,7 @@ La capabilité transforme les données du système de santé en information util
 - VS-03
 - VS-04
 
-*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche*
+*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche CAP-13*
 
 ### CAP-14 — Interopérabilité, référentiels nationaux et infrastructure numérique partagée
 
@@ -110,7 +110,7 @@ La capabilité assure la cohérence, l’intégration, la souveraineté et la r�
 - VS-03
 - VS-04
 
-*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche*
+*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche CAP-14*
 
 ### CAP-15 — Cybersécurité, confidentialité et gouvernance des données personnelles
 
@@ -125,7 +125,7 @@ La capabilité garantit la confiance, la sécurité, la confidentialité et la p
 - VS-03
 - VS-04
 
-*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche*
+*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche CAP-15*
 
 ### CAP-16 — Gestion du portefeuille d’initiatives numériques
 
@@ -138,9 +138,90 @@ La capabilité gouverne les investissements numériques du secteur : priorisatio
 - VS-03
 - VS-04
 
-*Rattachement : VS-03, VS-04 · fiche*
+*Rattachement : VS-03, VS-04 · fiche CAP-16*
+
+### CAP-17 — Engagement patient et identité numérique
+
+#### Rôle dans le système
+
+La capabilité garantit l'existence d'une identité unique, sécurisée et partagée pour chaque patient à travers le système d'information sanitaire national. Elle couvre :
+
+- **Résolution d'identité** : recherche démographique, rapprochement de dossiers, détection des doublons
+- **Gestion du consentement** : recueil, stockage et vérification du consentement du patient pour le partage de ses données
+- **Identitovigilance** : surveillance et correction des erreurs d'identité, protection contre les usurpations
+- **Engagement du patient** : accès du patient à ses données, participation active à la gestion de sa santé
+
+Cette capabilité est **habilitante** : son absence bloque la continuité des soins (VS-01) et la protection financière (VS-03).
+
+#### Flux de valeur
+
+- VS-01 — Soins essentiels
+- VS-03 — Protection financière
+
+#### Rattachement ARTSN
+
+- **F.1** — Fondation Identité et registres
+- **ART-4a** — Résolution d'identité
+- **ART-4b** — Bases d'autorisation
+- **PT-04** — Profil technique identité nationale
+
+#### Maturité
+
+| Niveau actuel | Niveau cible (2 ans) |
+|---------------|----------------------|
+| 1/5 | 3/5 |
+
+#### Propriétaire
+
+DEPSI + Direction des Systèmes d'Information
+
+*Rattachement : VS-01, VS-03, CAP-INT-01, CAP-INT-09 · fiche CAP-17*
+
+### CAP-18 — Coordination intersectorielle (One Health)
+
+#### Rôle dans le système
+
+La capabilité organise les échanges de données entre le secteur santé et les autres secteurs de l'État impliqués dans la coordination One Health : agriculture (WOAH/FAO), environnement (PNUE), intérieur (administrations territoriales). Elle couvre :
+
+- **Échanges inter-institutionnels** : accords de partage, protocoles d'échange, médiation des données
+- **Coordination épidémique** : partage d'informations entre santé humaine, animale et environnementale
+- **Surveillance conjointe** : détection précoce des événements de santé publique à interface homme-animal-environnement
+- **Riposte coordonnée** : orchestration des réponses inter-ministérielles
+
+Cette capabilité est **habilitante** : son absence bloque la surveillance sanitaire (VS-02) conformément aux obligations du RSI.
+
+#### Flux de valeur
+
+- VS-02 — Prévention et surveillance
+
+#### Rattachement ARTSN
+
+- **ART-0** — Accords de partage inter-institutionnels
+- **ART-8d** — Chorégraphie inter-institutionnelle
+- **PT-01** — Profil technique échange interinstitutionnel (X-Road)
+
+#### Référentiels normatifs
+
+- **RSI** — Règlement Sanitaire International (2005)
+- **Tripartite Plus** — OMS–WOAH–FAO–PNUE
+
+#### Maturité
+
+| Niveau actuel | Niveau cible (3 ans) |
+|---------------|----------------------|
+| 1/5 | 2/5 |
+
+#### Propriétaire
+
+Secrétariat Général du Ministère + DEPSI
+
+*Rattachement : VS-02, CAP-INT-03 · fiche CAP-18*
 
 <!-- END:GENERATED -->
 ## Liens
 
 - [Capabilités](/caesn/capabilities/index)
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)

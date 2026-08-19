@@ -3,7 +3,7 @@ title: "VS-01 — Accéder à des services de santé essentiels, intégrés, éq
 sidebarTitle: "VS-01"
 description: "Niveau 1 — Architecture d'entreprise du secteur santé numérique de Madagascar"
 owner: "Direction des soins"
-version: "0.0.1"
+version: "1.0.0"
 status: "draft"
 last_reviewed: "2026-07-03"
 ---
@@ -20,9 +20,9 @@ last_reviewed: "2026-07-03"
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](/caesn/reading-matrix).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
-<!-- BEGIN:GENERATED -->
+<!-- BEGIN:GENERATED mode=monographie source=referentiel/flux-valeur/vs-01.md -->
 <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
 
 ## Valeur produite
@@ -62,10 +62,287 @@ Ce flux couvre l’ensemble du parcours d’un patient, depuis la reconnaissance
 - CAP-14
 - CAP-15
 
-*Rattachement : CAP-01, CAP-02, CAP-03, CAP-04, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15 · fiche*
+*Rattachement : CAP-01, CAP-02, CAP-03, CAP-04, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-01, PP-02, PP-04, PP-05, PP-06 · fiche VS-01*
+
+<!-- END:GENERATED -->
+## Étapes de valeur
+
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/etapes-valeur/ev-01.md,referentiel/etapes-valeur/ev-02.md,referentiel/etapes-valeur/ev-03.md,referentiel/etapes-valeur/ev-04.md,referentiel/etapes-valeur/ev-05.md,referentiel/etapes-valeur/ev-06.md,referentiel/etapes-valeur/ev-07.md -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+
+### EV-01 — Reconnaissance du besoin et orientation
+
+#### Objectif
+
+Réaliser l'étape de valeur « Reconnaissance du besoin et orientation » du flux VS-01.
+
+#### Entrées
+
+Symptôme ou besoin ressenti par le patient
+
+#### Sorties
+
+Patient orienté vers le niveau de soins approprié
+
+#### Acteurs
+
+Patient, famille, agent de santé communautaire
+
+#### Ruptures fréquentes
+
+Méconnaissance des services, distance géographique, coût perçu dissuasif
+
+#### Indicateurs
+
+Taux de recours aux soins, délai moyen d'accès à une formation sanitaire
+
+*Rattachement : CAP-01, CAP-04 · fiche EV-01*
+
+### EV-02 — Accueil et enregistrement
+
+#### Objectif
+
+Réaliser l'étape de valeur « Accueil et enregistrement » du flux VS-01.
+
+#### Entrées
+
+Patient présent à la formation sanitaire
+
+#### Sorties
+
+Dossier ouvert, identité vérifiée, patient pris en charge
+
+#### Acteurs
+
+Personnel d'accueil, registre patient
+
+#### Ruptures fréquentes
+
+Absence de registre, identité non vérifiable, files d'attente prolongées
+
+#### Indicateurs
+
+Taux de dossiers ouverts, délai d'enregistrement
+
+*Rattachement : CAP-01, CAP-14, CAP-15 · fiche EV-02*
+
+### EV-03 — Consultation et diagnostic
+
+#### Objectif
+
+Réaliser l'étape de valeur « Consultation et diagnostic » du flux VS-01.
+
+#### Entrées
+
+Dossier ouvert, patient examiné
+
+#### Sorties
+
+Diagnostic posé, plan de soins défini et documenté
+
+#### Acteurs
+
+Clinicien, dossier patient
+
+#### Ruptures fréquentes
+
+Absence d'historique médical, rupture de stock d'intrants de diagnostic
+
+#### Indicateurs
+
+Taux de consultations avec diagnostic documenté
+
+*Rattachement : CAP-01, CAP-13 · fiche EV-03*
+
+### EV-04 — Traitement et prise en charge
+
+#### Objectif
+
+Réaliser l'étape de valeur « Traitement et prise en charge » du flux VS-01.
+
+#### Entrées
+
+Plan de soins validé
+
+#### Sorties
+
+Traitement administré ou prescrit et disponible
+
+#### Acteurs
+
+Clinicien, pharmacie, laboratoire
+
+#### Ruptures fréquentes
+
+Ruptures de médicaments essentiels, absence de laboratoire fonctionnel
+
+#### Indicateurs
+
+Taux de disponibilité des médicaments traceurs
+
+*Rattachement : CAP-01, CAP-10, CAP-11 · fiche EV-04*
+
+### EV-05 — Référence et contre-référence
+
+#### Objectif
+
+Réaliser l'étape de valeur « Référence et contre-référence » du flux VS-01.
+
+#### Entrées
+
+Décision médicale de référer
+
+#### Sorties
+
+Patient reçu au niveau supérieur avec son dossier, information retournée à la formation d'origine
+
+#### Acteurs
+
+Formation sanitaire référente, formation cible, système de transport
+
+#### Ruptures fréquentes
+
+Référence effectuée sans dossier, absence de transport, absence de retour d'information
+
+#### Indicateurs
+
+Taux de référence complétée avec retour d'information
+
+*Rattachement : CAP-02 · fiche EV-05*
+
+### EV-06 — Suivi et continuité des soins
+
+#### Objectif
+
+Réaliser l'étape de valeur « Suivi et continuité des soins » du flux VS-01.
+
+#### Entrées
+
+Épisode de soins terminé
+
+#### Sorties
+
+Patient suivi, observance thérapeutique assurée
+
+#### Acteurs
+
+Agent de santé communautaire, clinicien, patient
+
+#### Ruptures fréquentes
+
+Perte de vue du patient, absence de système de rappel, dossier longitudinal absent
+
+#### Indicateurs
+
+Taux de patients perdus de vue, taux d'observance thérapeutique
+
+*Rattachement : CAP-01, CAP-02 · fiche EV-06*
+
+### EV-07 — Amélioration de la qualité
+
+#### Objectif
+
+Réaliser l'étape de valeur « Amélioration de la qualité » du flux VS-01.
+
+#### Entrées
+
+Données issues des soins et des retours patients
+
+#### Sorties
+
+Actions correctives décidées et mises en œuvre
+
+#### Acteurs
+
+Gestionnaire de formation sanitaire, district, comité qualité
+
+#### Ruptures fréquentes
+
+Données collectées mais non analysées, absence de revue qualité régulière
+
+#### Indicateurs
+
+Proportion de formations sanitaires ayant réalisé une revue qualité dans le mois
+
+*Rattachement : CAP-03, CAP-13 · fiche EV-07*
+
+<!-- END:GENERATED -->
+## Processus métier
+
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-01.md,referentiel/processus/prc-02.md,referentiel/processus/prc-03.md -->
+<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+
+### PRC-01 — Accès, orientation et admission du patient
+
+#### Objectif
+
+Assurer l'entrée du patient dans le système de soins : reconnaissance du besoin, orientation vers le niveau de soins approprié, accueil et enregistrement.
+
+#### Étapes couvertes
+
+- EV-01 — Reconnaissance du besoin et orientation
+- EV-02 — Accueil et enregistrement
+
+#### Acteurs
+
+Patient, famille, agent de santé communautaire, personnel d'accueil, registre patient
+
+#### Indicateurs
+
+Taux de recours aux soins, délai moyen d'accès à une formation sanitaire, taux de dossiers ouverts, délai d'enregistrement
+
+*Rattachement : CAP-01, CAP-02, CAP-03, CAP-04, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-01, PP-02, PP-04, PP-05, PP-06 · fiche PRC-01*
+
+### PRC-02 — Prestation des soins cliniques
+
+#### Objectif
+
+Assurer le cœur clinique du parcours : consultation et diagnostic, traitement et prise en charge, référence et contre-référence vers le niveau de soins supérieur.
+
+#### Étapes couvertes
+
+- EV-03 — Consultation et diagnostic
+- EV-04 — Traitement et prise en charge
+- EV-05 — Référence et contre-référence
+
+#### Acteurs
+
+Clinicien, dossier patient, pharmacie, laboratoire, formation sanitaire référente, formation cible, système de transport
+
+#### Indicateurs
+
+Taux de consultations avec diagnostic documenté, taux de disponibilité des médicaments traceurs, taux de référence complétée avec retour d'information
+
+*Rattachement : CAP-01, CAP-02, CAP-03, CAP-04, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-01, PP-02, PP-04, PP-05, PP-06 · fiche PRC-02*
+
+### PRC-03 — Continuité, suivi et qualité des soins
+
+#### Objectif
+
+Garantir la continuité des soins après l'épisode et l'amélioration continue de la qualité des services : suivi du patient, observance thérapeutique et revues qualité.
+
+#### Étapes couvertes
+
+- EV-06 — Suivi et continuité des soins
+- EV-07 — Amélioration de la qualité
+
+#### Acteurs
+
+Agent de santé communautaire, clinicien, patient, gestionnaire de formation sanitaire, district, comité qualité
+
+#### Indicateurs
+
+Taux de patients perdus de vue, taux d'observance thérapeutique, proportion de formations sanitaires ayant réalisé une revue qualité dans le mois
+
+*Rattachement : CAP-01, CAP-02, CAP-03, CAP-04, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-01, PP-02, PP-04, PP-05, PP-06 · fiche PRC-03*
 
 <!-- END:GENERATED -->
 ## Liens
 
 - [Flux de valeur](/caesn/value-streams/index)
-- [Capabilités](/caesn/capabilities/index)
+- Capabilités
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)

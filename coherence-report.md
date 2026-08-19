@@ -31,6 +31,7 @@
 | 11 | Ré-ancrage CAESN : processus, composants, parties prenantes | ✓ Résolu (51 objets, graphe VS → PRC → CMP ↔ CAP-INT/ART) |
 | 14 | **Restructuration post-restructuration** (2026-08-17) | ✓ Standards/ADR déplacés, 0 lien cassé, hiérarchie conforme, UGD référencée, X-Road Couche 3 |
 | 15 | **Session 2026-08-18** : versions, docs.json, traçabilité, OpenFn | ✓ 181 fichiers `1.0.0`, 160 pages navigation, 20 chapitres ARTSN tracés, OpenFn recadré → PT-16 créé |
+| 16 | **Analyse externe Afrique** (2026-08-19) | ✓ 12 pays + 5 cadres régionaux, SNOMED CT ajouté (STD-0007), recommandations documentées |
 
 ---
 
@@ -562,3 +563,77 @@ Aucune modification de PT-02 n'est nécessaire — la table produits reste focal
 - **Liens cassés** : 0 (script Python, tous les fichiers `.md` du cadre)
 - **JSON valide** : `python3 -c "import json; json.load(open('mintlify-site/docs.json'))"` → OK
 - **Pages navigation** : 160 pages, toutes existent sur disque
+
+---
+
+## 16. Analyse de cohérence externe — comparaison avec les architectures africaines (2026-08-19)
+
+> **Date :** 2026-08-19 — Analyse croisée de l'HEA contre 12 pays africains et 5 cadres régionaux (AU, Smart Africa, WHO GDHM, ECOWAS, SADC).
+
+### 16.1 Score de cohérence externe
+
+| Dimension | Score | Justification |
+|-----------|-------|---------------|
+| **Alignement des standards** | **Fort** | FHIR obligatoire = meilleur en Afrique. X-Road obligatoire = unique. SNOMED CT ajouté (STD-0007). |
+| **Alignement structurel** | **Fort** | 6 couches + 2 axes = plus granulaire que tous les pairs. CQRS et séparation transport/logique = unique. |
+| **Alignement gouvernance** | **Moyen** | 3 niveaux (UGD → CNASN → sous-comité) bien structurés, mais pas de loi e-santé. |
+| **Lacunes critiques** | **Critiques** | Pas de loi e-santé, pas de loi protection des données, pas de programme de conformité, pas d'évaluation GDHM. |
+| **Risque de surdimensionnement** | **Moyen-élevé** | 18 composants vs 7-10 (Kenya, Ouganda). Saga orchestrator, Graph Store, Netting = patterns bancaires sans précédent en santé africaine. |
+| **Exigences continentales** | **Moyen-fort** | Répond aux exigences AU/Smart Africa/WHO sur les standards, mais pas sur la politique/législation. |
+
+### 16.2 Écarts identifiés vs pairs africains
+
+| Lacune | Sévérité | Qui l'a | Impact sur l'HEA |
+|--------|----------|---------|------------------|
+| **Loi e-santé** | **CRITIQUE** | Kenya (Digital Health Act 2023), SA (National Health Act) | Décisions CNASN = consultatives. Pas de mandat légal pour l'interopérabilité. |
+| **Loi protection des données** | **ÉLEVÉE** | Kenya (DPA 2019), SA (POPIA), Nigeria (NDPR 2019), Ghana (DPA 2012) | Pas de base légale pour la gestion des consentements. |
+| **Programme de conformité** | **ÉLEVÉE** | SA (CSIR), Kenya (Digital Health Agency) | Homologation = théorique. Pas de moyen de vérifier la conformité aux standards. |
+| **Budget sécurisé** | **ÉLEVÉE** | Sénégal (58M USD), Nigeria (NDHI budgété) | Dépendance totale aux bailleurs. Priorités risquent d'être pilotées par les dons. |
+| **Évaluation GDHM** | **MOYENNE** | 47 membres WHO AFRO évalués | Pas de baseline de maturité, pas de benchmarking possible. |
+| **Patient ID opérationnel** | **MOYENNE** | Rwanda (NIN), SA (national ID), Zambie (INRIS) | INP « en construction ». Bloque PT-04 et PT-11. |
+| **SNOMED CT** | **FAIBLE-MOYENNE** | Kenya, SA | Lacune terminologique pour l'interopérabilité internationale — **corrigé (STD-0007 ajouté)**. |
+| **Pilote interopérabilité régionale** | **FAIBLE** | Tanzanie-Kenya-Rwanda-ECSA | Pas d'échange transfrontalier avec les voisins SADC. |
+
+### 16.3 Risques de surdimensionnement
+
+| Composant/Fonctionnalité | Benchmark africain | Risque d'implémentation | Sévérité |
+|--------------------------|-------------------|------------------------|----------|
+| **CMP-07 (Saga orchestrator)** | Aucun pair | Pattern distribué complexe. Aucun système de santé africain ne l'a déployé. | ÉLEVÉ |
+| **CMP-05 (Graph Store)** | Aucun pair | Bases graphiques = compétences spécialisées. Aucun cas d'usage validé. | MOYEN-ÉLEVÉ |
+| **CMP-18 (Netting/compensation)** | Aucun pair | Pattern bancaire. Inédit en systèmes de santé. | ÉLEVÉ |
+| **18 composants CMP** | 7-10 (Kenya, Ouganda) | 2x sur-spécification. Chaque composant nécessite propriétaire, budget, équipe. | MOYEN |
+| **16 profils PT** | 5-7 (Kenya, Tanzanie) | 2x sur-spécification. Risque de profils sans implémenteurs. | MOYEN |
+
+### 16.4 Recommandations
+
+**Immédiates (0-6 mois) :**
+1. Lancer l'évaluation GDHM — impact maximal, coût minimal
+2. Rédiger un projet de loi e-santé — template Kenya Digital Health Act 2023
+3. SNOMED CT ajouté aux standards (STD-0007) — ✓ fait
+4. Prototyper les tests de conformité — modèle SA CSIR
+
+**Court terme (6-12 mois) :**
+5. Rationaliser le nombre de composants (18 → ~14) en fusionnant CMP-15/16/17/18
+6. Reporter CMP-05 (Graph Store) et CMP-18 (Netting) en Phase 2
+7. Étude « Saga vs orchestration simple » — Tanzanie HIM comme alternative pragmatic
+8. Sécuriser le budget — plaidoyer Ministère des Finances
+
+**Moyen terme (1-2 ans) :**
+9. Pilote transfrontalier PT-14 avec Tanzanie ou Mozambique (SADC)
+10. Tests de conformité à l'échelle
+11. Évaluation GDHM annuelle institutionnalisée
+12. Opérationnaliser l'INP (dépendance critique pour PT-04 et PT-11)
+
+### 16.5 Verdict global
+
+**Score : MOYEN-FORT**
+
+L'HEA est architecturalement supérieure à la plupart des pairs africains sur le plan documentaire, mais présente des lacunes opérationnelles critiques (législation, budget, conformité) qui l'empêchent d'être « fort ». Le paradoxe : Madagascar dispose de la documentation d'architecture la plus complète d'Afrique, mais de la moindre infrastructure opérationnelle pour l'implémenter. Les recommandations visent à combler cet écart par (a) la sécurisation du cadre législatif et financier, (b) la rationalisation de l'architecture pour coller aux capacités d'implémentation, et (c) le pilote avant le déploiement.
+
+### 16.6 Correctif appliqué
+
+| Correctif | Fichier | Statut |
+|-----------|---------|--------|
+| SNOMED CT ajouté comme standard recommandé | `01_cnisn/05_standards/std-0007-snomed-ct.md` | ✓ Créé |
+| Registre des standards mis à jour | `01_cnisn/05_standards/index.md` | ✓ Mis à jour |
+| Manifest mis à jour | `scripts/manifest.json` | ✓ Mis à jour |

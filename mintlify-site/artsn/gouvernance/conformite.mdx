@@ -1,0 +1,220 @@
+---
+title: "Tableau de bord de conformité architecturale"
+description: "Niveau 3 — Standards techniques, solutions et règles d'homologation"
+owner: "CNASN"
+version: "1.0.0"
+status: "draft"
+last_reviewed: "2026-08-13"
+---
+
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+
+Ce document s'adresse prioritairement aux décideurs institutionnels, aux équipes DEPSI et techniques, ainsi qu'aux équipes SIS, données et suivi-évaluation. Les directions métier et programmes, ainsi que les partenaires techniques et financiers, trouveront une lecture complémentaire utile.
+
+## Objet
+
+Ce document définit les indicateurs et le processus de suivi de la conformité des initiatives numériques aux standards et principes de l'ARTSN. Il permet de détecter les écarts en temps réel et de mesurer l'efficacité de la gouvernance architecturale.
+
+## 1. Indicateurs de conformité
+
+### 1.1 Indicateurs par initiative
+
+| Indicateur | Description | Cible | Mesure |
+|------------|-------------|-------|--------|
+| **Taux de conformité** | Critères homologation respectés / total | ≥ 90% | Checklist homologation |
+| **Nombre d'écarts** | Écarts identifiés lors de l'homologation | ≤ 2 | Rapport d'homologation |
+| **Délai de correction** | Temps moyen de résolution des écarts | ≤ 30 jours | Suivi des plans correctifs |
+| **Taux de dérogation** | Initiatives avec dérogation / total | ≤ 15% | Registre des dérogations |
+| **Taux de régression** | Initiatives ayant perdu leur conformité | ≤ 5% | Audit périodique |
+
+### 1.2 Indicateurs par standard
+
+| Indicateur | Description | Cible | Mesure |
+|------------|-------------|-------|--------|
+| **Taux d'adoption FHIR** | Initiatives utilisant FHIR / total | ≥ 80% | Registre des initiatives |
+| **Taux d'adoption X-Road** | Échanges via X-Road / total | ≥ 70% | Logs X-Road |
+| **Taux d'adoption INP** | Initiatives utilisant l'INP / total | ≥ 60% | Référentiel patients |
+| **Taux d'adoption RBAC** | Systèmes avec RBAC implémenté / total | ≥ 70% | Audit sécurité |
+| **Taux d'adoption audit** | Systèmes avec ATNA / total | ≥ 60% | Audit traçabilité |
+
+### 1.3 Indicateurs globaux
+
+| Indicateur | Description | Cible | Mesure |
+|------------|-------------|-------|--------|
+| **Conformité moyenne** | Moyenne des taux de conformité initiatives | ≥ 85% | Calcul mensuel |
+| **Initiatives conformes** | Initiatives avec conformité ≥ 90% / total | ≥ 75% | Calcul mensuel |
+| **Initiatives en risque** | Initiatives avec conformité < 70% | ≤ 10% | Calcul mensuel |
+| **Couverture homologation** | Initiatives homologuées / total actives | ≥ 90% | Registre initiatives |
+
+## 2. Matrice de conformité par initiative
+
+### 2.1 Template
+
+| Initiative | C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 | C9 | C10 | C11 | C12 | Score | Statut |
+|------------|----|----|----|----|----|----|----|----|----|----|-----|-----|-------|--------|
+| [Nom init.] | ● | ● | ● | ○ | ● | ● | ● | ● | ○ | ● | ● | ● | 10/12 | Conforme |
+| [Nom init.] | ● | ● | ○ | ○ | ● | ○ | ● | ● | ○ | ● | ○ | ● | 7/12 | Écarts |
+| [Nom init.] | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● | 12/12 | Excellent |
+
+**Légende :**
+- **●** Critère respecté
+- **◐** Partiellement respecté (avec plan corrective)
+- **○** Critère non respecté
+
+**Statut :**
+- **Excellent** : 12/12
+- **Conforme** : 10-11/12
+- **Écarts** : 8-9/12
+- **Non conforme** : < 8/12
+
+### 2.2 Exemple
+
+| Initiative | C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 | C9 | C10 | C11 | C12 | Score | Statut |
+|------------|----|----|----|----|----|----|----|----|----|----|-----|-----|-------|--------|
+| Pilote référence District 1 | ● | ● | ● | ● | ● | ○ | ● | ● | ● | ● | ● | ● | 11/12 | Conforme |
+| LMIS national | ● | ● | ● | ● | ○ | — | ● | ○ | ● | ● | ◐ | ● | 8/12 | Écarts |
+| OpenMRS VIH | ● | ● | ◐ | ○ | ● | ● | ● | ○ | ● | ● | ● | ◐ | 8/12 | Écarts |
+
+## 3. Processus de suivi
+
+### 3.1 Fréquence
+
+| Action | Fréquence | Responsable |
+|--------|-----------|-------------|
+| Mise à jour des indicateurs | Mensuelle | DEPSI |
+| Revue des écarts | Mensuelle | Comité technique |
+| Rapport au CNASN | Trimestriel | Secrétariat CNASN |
+| Audit de conformité | Semestriel | CNASN + auditeur externe |
+| Revue stratégique | Annuelle | CNASN + Secrétaire Général |
+
+### 3.2 Collecte des données
+
+| Source | Données collectées | Méthode |
+|--------|-------------------|---------|
+| **Checklist homologation** | Score de conformité par initiative | Formulaires |
+| **Logs X-Road** | Trafic inter-systèmes | API monitoring |
+| **Référentiel patients** | Utilisation INP | Requête base |
+| **Audit sécurité** | Conformité RBAC, ATNA | Rapport audit |
+| **Registre initiatives** | Liste des initiatives actives | Base de données |
+
+## 4. Alertes et escalade
+
+### 4.1 Niveaux d'alerte
+
+| Niveau | Condition | Action | Destinataire |
+|--------|-----------|--------|--------------|
+| **Vert** | Conformité ≥ 90% | Monitoring standard | DEPSI |
+| **Jaune** | Conformité 70-89% | Notification + plan corrective | Responsable initiative |
+| **Orange** | Conformité 50-69% | Alerte + délai de correction | CNASN |
+| **Rouge** | Conformité < 50% | Alerte critique + suspension possible | CNASN + Secrétaire Général |
+
+### 4.2 Escalade
+
+En cas de conformité inférieure à 70%, une notification est adressée au responsable de l'initiative le jour même (J+0). Si aucune action n'est entreprise sous 7 jours, le CNASN est alerté (J+7). En l'absence de correction sous 30 jours, une suspension partielle est décidée (J+30), pouvant évoluer vers une suspension complète sous 60 jours si la situation persiste (J+60).
+
+```
+Conformité < 70%  → Notification responsable initiative (J+0)
+                   → Alerte CNASN (J+7 si pas d'action)
+                   → Suspension partielle (J+30 si pas de correction)
+                   → Suspension complète (J+60 si pas de correction)
+```
+
+## 5. Rapport trimestriel
+
+### 5.1 Structure du rapport
+
+| Section | Contenu |
+|---------|---------|
+| **Synthèse** | Nombre d'initiatives, conformité moyenne, tendance |
+| **Initiatives conformes** | Liste avec score |
+| **Initiatives en écart** | Liste avec écarts identifiés et plans correctifs |
+| **Indicateurs standards** | Taux d'adoption par standard |
+| **Alertes** | Alertes émises et résolutions |
+| **Recommandations** | Actions prioritaires du trimestre suivant |
+
+### 5.2 Modèle de rapport
+
+```markdown
+# Rapport de conformité — T[X] 20[X]
+
+## Synthèse
+- Initiatives actives : [N]
+- Conformité moyenne : [X]%
+- Tendance : [↑ ↓ →]
+
+## Initiatives conformes (≥ 90%)
+| Initiative | Score | Tendance |
+|------------|-------|----------|
+| ... | ... | ... |
+
+## Initiatives en écart (< 90%)
+| Initiative | Score | Écarts | Plan corrective | Échéance |
+|------------|-------|--------|-----------------|----------|
+| ... | ... | ... | ... | ... |
+
+## Indicateurs standards
+| Standard | Taux d'adoption | Cible | Écart |
+|----------|-----------------|-------|-------|
+| FHIR | X% | 80% | ... |
+| X-Road | X% | 70% | ... |
+| INP | X% | 60% | ... |
+
+## Alertes
+| Date | Initiative | Niveau | Action | Résolution |
+|------|------------|--------|--------|------------|
+| ... | ... | ... | ... | ... |
+
+## Recommandations
+1. ...
+2. ...
+3. ...
+```
+
+## 6. Tableau de bord visuel
+
+### 6.1 Vue d'ensemble
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              CONFORMITÉ ARCHITECTURALE — [Mois AAAA]        │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  Initiatives actives        Conformité moyenne              │
+│  ┌─────────────┐           ┌─────────────┐                 │
+│  │     [N]     │           │    [X]%     │                 │
+│  └─────────────┘           └─────────────┘                 │
+│                                                             │
+│  Répartition conformité                                     │
+│  ┌─────────────────────────────────────────────┐           │
+│  │ Excellent (12/12)  ████████░░░░░░  [X]%     │           │
+│  │ Conforme (10-11)   ██████████░░░░  [X]%     │           │
+│  │ Écarts (8-9)       ████░░░░░░░░░░  [X]%     │           │
+│  │ Non conforme (<8)  ██░░░░░░░░░░░░  [X]%     │           │
+│  └─────────────────────────────────────────────┘           │
+│                                                             │
+│  Taux d'adoption standards                                  │
+│  ┌─────────────────────────────────────────────┐           │
+│  │ FHIR    ████████████████████░░░░  [X]%      │           │
+│  │ X-Road  ██████████████░░░░░░░░░░  [X]%      │           │
+│  │ INP     ████████████░░░░░░░░░░░░  [X]%      │           │
+│  │ RBAC    ██████████████░░░░░░░░░░  [X]%      │           │
+│  │ ATNA    ████████████░░░░░░░░░░░░  [X]%      │           │
+│  └─────────────────────────────────────────────┘           │
+│                                                             │
+│  Alertes actives : [N] (vert: [X], jaune: [X],             │
+│                     orange: [X], rouge: [X])                │
+└─────────────────────────────────────────────────────────────┘
+```
+
+## Liens
+
+Voir les documents suivants : Gouvernance ARTSN, Workflow d'homologation, Veille architecturale, et Registre des décisions.
+
+## Références
+
+- **Gouvernance ARTSN** — Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)
+- **Workflow d'homologation** — Workflow d'homologation architecturale (`00_caesn/07_governance/homologation.md`)
+- **Veille architecturale** — Veille architecturale (`02_artsn/06_gouvernance/veille-architecturale.md`)
+- **Registre des décisions** — Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)

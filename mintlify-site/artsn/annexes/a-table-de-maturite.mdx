@@ -2,7 +2,7 @@
 title: "Annexe A — Table de maturité par chapitre"
 description: "Niveau 3 — Standards techniques, solutions et règles d'homologation"
 owner: "DEPSI"
-version: "0.0.1"
+version: "1.0.0"
 status: "draft"
 last_reviewed: "2026-08-08"
 ---
@@ -11,24 +11,16 @@ last_reviewed: "2026-08-08"
 
 **Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
 
-| Profil | Lecture |
-|--------|---------|
-| Décideurs institutionnels | ○ |
-| Directions métier / programmes | ◐ |
-| DEPSI / équipes techniques | ● |
-| SIS / données / suivi-évaluation | ◐ |
-| Partenaires techniques et financiers | ◐ |
+La lecture de ce document est **ponctuelle** pour les décideurs institutionnels, **complémentaire** pour les directions métier et programmes ainsi que pour les équipes SIS, données et suivi-évaluation et les partenaires techniques et financiers, et **prioritaire** pour l'équipe DEPSI et ses équipes techniques. Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](/artsn/reading-matrix).
-
-La table de maturité fixe le statut de chaque chapitre et la condition de passage au statut supérieur. Elle est mise à jour par l'instance de gouvernance lors de chaque [revue du document](/artsn/gouvernance#processus-de-revue-du-document).
+La table de maturité fixe le statut de chaque chapitre et la condition de passage au statut supérieur. Elle est mise à jour par l'instance de gouvernance lors de chaque revue du document.
 
 | Chapitre | Statut | Condition de passage au statut supérieur |
 |----------|--------|------------------------------------------|
 | Fondations F.1–F.4 | Stable | — |
 | ART-0 | Proposition ouverte | Confirmation par une initiative impliquant une source hors gouvernance sanitaire |
 | ART-1 | Stable | — |
-| ART-2 | Stable pour registres structurel/sémantique/géospatial/tarifaire ; Proposition ouverte pour registre intersectoriel | Confirmation du registre intersectoriel par une initiative concernée |
+| ART-2 | Stable pour registre structurel/sémantique/géospatial/tarifaire ; Proposition ouverte pour registre intersectoriel | Confirmation du registre intersectoriel par une initiative concernée |
 | ART-3 | Stable | — |
 | ART-4 | Stable | Reconfirmation par une initiative supplémentaire |
 | ART-4a | Provisoire | Confirmation par une seconde initiative |
@@ -43,12 +35,22 @@ La table de maturité fixe le statut de chaque chapitre et la condition de passa
 | ART-8c | Proposition ouverte | Confirmation par une initiative supplémentaire |
 | ART-8d | Proposition ouverte | Confirmation par une initiative intersectorielle |
 | ART-9 | Proposition ouverte | Confirmation par une seconde initiative à garanties transactionnelles fortes |
+| ART-10 | Proposition ouverte | Confirmation par une initiative LMIS/logistique déployant la traçabilité de bout en bout des mouvements de stock |
 
-## Domaines non couverts par cette version
+## Domaines partiellement couverts par cette version
 
-La logistique des médicaments et intrants ([CAP-10](/caesn/capabilities/index)) n'est pas couverte par cette version. Elle constitue un candidat pour un développement ultérieur, en particulier pour la réconciliation physique-numérique (ART-5) et une possible généralisation d'ART-9 au-delà du seul registre financier.
+La logistique des médicaments et intrants (CAP-10) dispose d'un chapitre candidat (ART-10) qui définit les exigences de traçabilité de bout en bout des mouvements de stock et de réconciliation à somme nulle. Ce chapitre reste au statut **Proposition ouverte** en attente de confirmation par une initiative LMIS concrète. En complément, la réconciliation physique-numérique (ART-5) et la généralisation d'ART-9 au-delà du seul registre financier constituent des leviers complémentaires pour couvrir la chaîne logistique.
 
 ## Liens
 
-- [Chapitres et patterns de référence](/artsn/chapitres/index)
-- [Gouvernance de l'ARTSN](/artsn/gouvernance)
+Les liens utiles pour approfondir ce document sont les suivants : les chapitres et patterns de référence sont disponibles dans l'index des Chapitres et patterns de référence, et la structure de gouvernance est décrite dans la Gouvernance de l'ARTSN.
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **CAP-10** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
+- **ART-10** — Logistique (`referentiel/chapitres/art-10.md`)
+- **ART-5** — Cohérence et qualité des données (`referentiel/chapitres/art-5.md`)
+- **ART-9** — Garanties transactionnelles fortes (`referentiel/chapitres/art-9.md`)
+- **Chapitres et patterns de référence** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **Gouvernance de l'ARTSN** — Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)

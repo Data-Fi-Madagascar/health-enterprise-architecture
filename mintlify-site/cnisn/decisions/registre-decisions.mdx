@@ -1,0 +1,127 @@
+---
+title: "Registre des décisions d'architecture (ADR)"
+description: "Niveau 2 — Règles d'interopérabilité entre systèmes d'information de santé"
+owner: "Bureau de Réalisation de la Valeur"
+version: "1.0.0"
+status: "draft"
+last_reviewed: "2026-08-13"
+---
+
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ● |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle.
+
+---
+
+## Objet
+
+Ce registre centralise l'ensemble des Architecture Decision Records (ADR) du cadre HEA. Il constitue la **source unique de vérité** pour les choix d'architecture documentés, leur statut et leur évolution.
+
+Chaque ADR enregistrée ici est un choix structurant, daté et traçable, produite par le Comité National d'Architecture Santé Numérique (CNASN) ou validée par lui.
+
+---
+
+## Légende des statuts
+
+| Statut | Signification |
+|--------|---------------|
+| **proposé** | Soumis au CNASN, en attente de décision |
+| **accepté** | Décision validée, en cours d'implémentation |
+| **appliqué** | Décision pleinement déployée et opérationnelle |
+| **remplacé** | Succédé par une ADR plus récente |
+| **déprécié** | N'est plus applicable (technologie obsolète, standard abandonné) |
+
+---
+
+## Registre
+
+### Interopérabilité et standards
+
+| ID | Titre | Statut | Date | Propriétaire | Impact |
+|----|-------|--------|------|--------------|--------|
+| ADR-0001 | Adoption de X-Road comme plateforme d'échange interinstitutionnel | **appliqué** | 2026-07-01 | DEPSI | Élevé — infrastructure nationale |
+| ADR-0002 | Adoption du profil IHE mADX pour l'échange de données agrégées | **appliqué** | 2026-07-01 | DEPSI | Élevé — collecte nationale |
+| ADR-0003 | Utilisation de HL7 FHIR comme standard d'interopérabilité | **appliqué** | 2026-07-01 | DEPSI | Critique — standard transversal |
+| ADR-0004 | Adoption des profils IHE PIXm/PDQm pour la résolution d'identité | **appliqué** | 2026-07-01 | DEPSI | Élevé — identité nationale |
+
+### Identité et consentement
+
+| ID | Titre | Statut | Date | Propriétaire | Impact |
+|----|-------|--------|------|--------------|--------|
+| ADR-0005 | Consentement structuré via FHIR Consent | **proposé** | 2026-08-13 | DEPSI | Élevé — souveraineté données |
+| ADR-0006 | Identité nationale patient (INP) via PIXm/PDQm | **proposé** | 2026-08-13 | DEPSI | Critique — identité unique |
+
+### Confiance et sécurité
+
+| ID | Titre | Statut | Date | Propriétaire | Impact |
+|----|-------|--------|------|--------------|--------|
+| ADR-0007 | Confiance transfrontalière via GDHCN | **proposé** | 2026-08-13 | DEPSI | Élevé — transfrontalier |
+| ADR-0008 | Audit et traçabilité via ATNA + journalisation | **proposé** | 2026-08-13 | DEPSI | Moyen — conformité |
+
+### Terminologie
+
+| ID | Titre | Statut | Date | Propriétaire | Impact |
+|----|-------|--------|------|--------------|--------|
+| ADR-0009 | Terminologie nationale (CIM-10 + LOINC + mapping) | **proposé** | 2026-08-13 | DEPSI | Élevé — sémantique commune |
+
+---
+
+## Processus d'enregistrement
+
+```
+1. Le CNASN statue sur un choix d'architecture
+2. Le secrétariat rédige l'ADR selon le template (adr-0000-template.md)
+3. L'ADR est ajoutée au registre avec le statut « proposé »
+4. Après validation, le statut passe à « accepté »
+5. Après déploiement complet, le statut passe à « appliqué »
+6. Si remplacé, le statut passe à « remplacé » avec référence à la nouvelle ADR
+7. Si abandonné, le statut passe à « déprécié » avec justification
+```
+
+---
+
+## Statistiques
+
+| Statut | Nombre |
+|--------|--------|
+| Proposé | 5 |
+| Accepté | 0 |
+| Appliqué | 4 |
+| Remplacé | 0 |
+| Déprécié | 0 |
+| **Total** | **9** |
+
+---
+
+## Liens
+
+- Template ADR
+- Index des décisions
+- Gouvernance
+- Guide du processus
+
+## Références
+
+- **ADR-0001** — Adoption de X-Road comme plateforme d'échange interinstitutionnel (`01_cnisn/06_decisions/adr-0001-x-road.md`)
+- **ADR-0002** — Adoption du profil IHE mADX pour l'échange de données agrégées (`01_cnisn/06_decisions/adr-0002-madx.md`)
+- **ADR-0003** — Utilisation de HL7 FHIR comme standard d'interopérabilité (`01_cnisn/06_decisions/adr-0003-fhir.md`)
+- **ADR-0004** — Adoption des profils IHE PIXm/PDQm pour la résolution d'identité (`01_cnisn/06_decisions/adr-0004-identite.md`)
+- **ADR-0005** — Adoption de FHIR Consent pour le consentement structuré (`01_cnisn/06_decisions/adr-0005-consentement.md`)
+- **ADR-0006** — Adoption de l'Identité Nationale Patient (INP) via PIXm/PDQm (`01_cnisn/06_decisions/adr-0006-inp.md`)
+- **ADR-0007** — Adoption du GDHCN pour la confiance transfrontalière (`01_cnisn/06_decisions/adr-0007-gdhcn.md`)
+- **ADR-0008** — Adoption d'ATNA et journalisation pour l'audit et la traçabilité (`01_cnisn/06_decisions/adr-0008-atna.md`)
+- **ADR-0009** — Adoption d'un référentiel terminologique national (CIM-10 + LOINC) (`01_cnisn/06_decisions/adr-0009-terminologie.md`)
+- **Template ADR** — <Titre de la décision> (`01_cnisn/06_decisions/adr-0000-template.md`)
+- **Index des décisions** — Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
+- **Gouvernance** — Partie III — Gouvernance (`01_cnisn/03_gouvernance/index.md`)
+- **Guide du processus** — Partie III — Gouvernance (`01_cnisn/03_gouvernance/index.md`)

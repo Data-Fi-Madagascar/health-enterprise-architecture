@@ -2,7 +2,7 @@
 title: "Profils techniques d'implémentation de la Santé Numérique (PTISN)"
 description: "Niveau 4 — Configurations, API et contrats d'interfaces par initiative"
 owner: "Équipes techniques des initiatives"
-version: "0.0.1"
+version: "1.0.0"
 status: "draft"
 last_reviewed: "2026-08-08"
 ---
@@ -19,34 +19,28 @@ last_reviewed: "2026-08-08"
 | SIS / données / suivi-évaluation | ◐ |
 | Partenaires techniques et financiers | ◐ |
 
-Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : [matrice de lecture](/ptisn/reading-matrix).
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 ## Place dans la hiérarchie documentaire
 
-Niveau **4** de la hiérarchie du [Cadre d'Architecture d'Entreprise](/caesn/overview/index). Le PTISN découle du cadre national d'interopérabilité défini par l'Unité de Gouvernance Digitale (UGD). Chaque document de ce dossier correspond à **une initiative** inscrite au [portefeuille national](/caesn/portfolio/index).
+Le PTISN constitue le niveau 4 de la hiérarchie documentaire du Cadre d'Architecture d'Entreprise. Il découle du cadre national d'interopérabilité défini par l'Unité de Gouvernance Digitale (UGD) et traduit, pour chaque initiative inscrite au portefeuille national, les principes des niveaux supérieurs en spécifications techniques opérationnelles.
 
 | Niveau | Dossier | Document |
 |--------|---------|----------|
 | 1 | `00_caesn/` | Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) |
-| 2 | [`01_cnisn/`](/cnisn/index) | Cadre National d'Interopérabilité de la Santé Numérique (CNISN) + Standards |
-| 3 | [`02_artsn/`](/artsn/index) | Architecture de Référence Technique de la Santé Numérique (ARTSN) |
-| 4 | [`ptisn/`](/ptisn/index) | Profils techniques d'implémentation par initiative (ce dossier) — découle de l'UGD |
+| 2 | `01_cnisn/` | Cadre National d'Interopérabilité de la Santé Numérique (CNISN) + Standards |
+| 3 | `02_artsn/` | Architecture de Référence Technique de la Santé Numérique (ARTSN) |
+| 4 | `ptisn/` | Profils techniques d'implémentation par initiative (ce dossier) — découle de l'UGD |
 
 ## Rôle
 
-Les profils techniques d'implémentation déclinent, pour chaque initiative, le niveau 3 (ARTSN) au niveau propre de la solution : **configurations**, **API**, **contrats d'interfaces**, paramétrages, scénarios de déploiement et de test. Ils s'adressent aux développeurs, fournisseurs et équipes techniques.
+Les profils techniques d'implémentation déclinent, pour chaque initiative, le niveau 3 (ARTSN) au niveau propre de la solution : configurations, API, contrats d'interfaces, paramétrages, scénarios de déploiement et de test. Ils s'adressent aux développeurs, fournisseurs et équipes techniques.
 
-Le PTISN découle du cadre national d'interopérabilité défini par l'Unité de Gouvernance Digitale (UGD). Il intègre les standards du CNISN (niveau 2) et les patterns de l'ARTSN (niveau 3) pour les adapter à chaque initiative spécifique.
-
-Elles sont encadrées par la [fiche d'initiative](/caesn/portfolio/initiative-card) (alignement valeur) et doivent respecter :
-- les [principes](/caesn/principles/index) du niveau 1 ;
-- les standards d'interopérabilité du niveau 2 (CNISN) ;
-- les standards techniques du niveau 3 (déclinés de l'ARTSN) ;
-- les [critères d'homologation](/caesn/application/lifecycle).
+Le PTISN découle du cadre national d'interopérabilité défini par l'Unité de Gouvernance Digitale (UGD). Il intègre les standards du CNISN (niveau 2) et les patterns de l'ARTSN (niveau 3) pour les adapter à chaque initiative spécifique. Ces profils sont encadrés par la fiche d'initiative (alignement valeur) et doivent respecter les principes du niveau 1, les standards d'interopérabilité du niveau 2 (CNISN), les standards techniques du niveau 3 (déclinés de l'ARTSN), ainsi que les critères d'homologation.
 
 ## Convention de nommage
 
-Un dossier (ou préfixe) par initiative du portefeuille, avec l'**identifiant du registre national des initiatives** comme racine :
+Chaque initiative du portefeuille se voit attribuer un dossier portant l'**identifiant du registre national des initiatives** comme racine. La structure attendue est la suivante :
 
 ```
 ptisn/
@@ -59,9 +53,21 @@ ptisn/
 
 ## Liens
 
-- [Cadre (niveau 1)](/caesn/overview/index)
-- [CNISN (niveau 2)](/cnisn/index)
-- [ARTSN (niveau 3)](/artsn/index)
-- [Matrice de lecture du PTISN](/ptisn/reading-matrix)
-- [Glossaire du PTISN](/ptisn/glossary)
-- [Acronymes du PTISN](/ptisn/acronyms)
+- Guide de lecture du PTISN
+- Matrice de lecture du PTISN
+- Glossaire du PTISN
+- Acronymes du PTISN
+
+## Références
+
+- **matrice de lecture** — Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
+- **Cadre d'Architecture d'Entreprise** — Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
+- **portefeuille national** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
+- **`ptisn/`** — Profils techniques d'implémentation de la Santé Numérique (PTISN) (`03_ptisn/index.md`)
+- **fiche d'initiative** — Fiche standard d'initiative orientée valeur (`00_caesn/06_portfolio/initiative-card.md`)
+- **principes** — Principes d'architecture (`00_caesn/02_principles/index.md`)
+- **critères d'homologation** — Cycle de vie applicatif et critères d'homologation (`00_caesn/05_application/lifecycle.md`)
+- **Guide de lecture du PTISN** — Guide de lecture du PTISN (niveau 4) (`03_ptisn/reading-guide.md`)
+- **Matrice de lecture du PTISN** — Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
+- **Glossaire du PTISN** — Glossaire du PTISN (niveau 4) (`03_ptisn/glossary.md`)
+- **Acronymes du PTISN** — Acronymes et abréviations du PTISN (niveau 4) (`03_ptisn/acronyms.md`)
