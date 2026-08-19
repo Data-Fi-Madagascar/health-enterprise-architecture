@@ -117,7 +117,8 @@
             "group": "Caesn/annexes",
             "pages": [
               "/caesn/annexes/glossary",
-              "/caesn/annexes/acronyms"
+              "/caesn/annexes/acronyms",
+              "/caesn/annexes/evaluation-gdhm"
             ],
             "root": "/caesn/annexes/index"
           }

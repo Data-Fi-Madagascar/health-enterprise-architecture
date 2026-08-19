@@ -32,6 +32,7 @@
 | 14 | **Restructuration post-restructuration** (2026-08-17) | ✓ Standards/ADR déplacés, 0 lien cassé, hiérarchie conforme, UGD référencée, X-Road Couche 3 |
 | 15 | **Session 2026-08-18** : versions, docs.json, traçabilité, OpenFn | ✓ 181 fichiers `1.0.0`, 160 pages navigation, 20 chapitres ARTSN tracés, OpenFn recadré → PT-16 créé |
 | 16 | **Analyse externe Afrique** (2026-08-19) | ✓ 12 pays + 5 cadres régionaux, SNOMED CT ajouté (STD-0007), recommandations documentées |
+| 17 | **Évaluation GDHM** (2026-08-19) | ✓ Cartographie 23 indicateurs OMS, auto-évaluation Phase 2, plan d'action 12 mois |
 
 ---
 
