@@ -1,7 +1,7 @@
 ---
 
 title: "ART-9 : Garanties transactionnelles fortes"
-id: ART-9
+id: artsn-ART-9
 domain: 02_artsn
 version: "1.0.0"
 status: draft

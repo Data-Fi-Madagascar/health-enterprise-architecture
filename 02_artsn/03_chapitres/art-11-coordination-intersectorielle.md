@@ -1,7 +1,7 @@
 ---
 
 title: "ART-11 : Coordination intersectorielle"
-id: ART-11
+id: artsn-ART-11
 domain: 02_artsn
 version: "1.0.0"
 status: stable

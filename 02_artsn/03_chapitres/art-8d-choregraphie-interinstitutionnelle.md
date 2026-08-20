@@ -1,7 +1,7 @@
 ---
 
 title: "ART-8d : Chorégraphie inter-institutionnelle"
-id: ART-8D
+id: artsn-ART-8D
 domain: 02_artsn
 version: "1.0.0"
 status: draft

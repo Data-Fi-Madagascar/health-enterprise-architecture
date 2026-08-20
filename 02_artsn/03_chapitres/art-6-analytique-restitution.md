@@ -1,7 +1,7 @@
 ---
 
 title: "ART-6 : Analytique et restitution"
-id: ART-6
+id: artsn-ART-6
 domain: 02_artsn
 version: "1.0.0"
 status: draft

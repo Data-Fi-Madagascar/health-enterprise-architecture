@@ -1,7 +1,7 @@
 ---
 
 title: "ART-8 : Orchestration de processus"
-id: ART-8
+id: artsn-ART-8
 domain: 02_artsn
 version: "1.0.0"
 status: draft

@@ -1,7 +1,7 @@
 ---
 
 title: "ART-8b : Modélisation de relations en graphe"
-id: ART-8B
+id: artsn-ART-8B
 domain: 02_artsn
 version: "1.0.0"
 status: draft

@@ -1,7 +1,7 @@
 ---
 
 title: "ART-10 : Logistique"
-id: ART-10
+id: artsn-ART-10
 domain: 02_artsn
 version: "1.0.0"
 status: draft

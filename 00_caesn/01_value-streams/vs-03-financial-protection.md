@@ -1,9 +1,9 @@
 ---
 
 title: "VS-03 : Protéger financièrement la population face aux dépenses de santé"
-id: VS-03
+id: caesn-VS-03
 domain: 01_value-streams
-version: "1.0.0""
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Direction de la couverture santé universelle

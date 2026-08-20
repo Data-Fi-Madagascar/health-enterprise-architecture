@@ -1,7 +1,7 @@
 ---
 
 title: "ART-4a : Résolution d'identité"
-id: ART-4A
+id: artsn-ART-4A
 domain: 02_artsn
 version: "1.0.0"
 status: draft

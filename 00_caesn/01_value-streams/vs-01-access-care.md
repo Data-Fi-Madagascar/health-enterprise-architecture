@@ -1,9 +1,9 @@
 ---
 
 title: "VS-01 : Accéder à des services de santé essentiels, intégrés, équitables et de qualité"
-id: VS-01
+id: caesn-VS-01
 domain: 01_value-streams
-version: "1.0.0""
+version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Direction des soins

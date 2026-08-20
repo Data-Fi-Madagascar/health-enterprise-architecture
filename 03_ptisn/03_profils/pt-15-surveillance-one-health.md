@@ -1,5 +1,5 @@
 ---
-id: PT-15
+id: ptisn-PT-15
 domain: 03_ptisn
 type: profil
 niveau: "4"

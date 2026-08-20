@@ -1,7 +1,7 @@
 ---
 
 title: "ART-2 : Médiation et normalisation"
-id: ART-2
+id: artsn-ART-2
 domain: 02_artsn
 version: "1.0.0"
 status: draft

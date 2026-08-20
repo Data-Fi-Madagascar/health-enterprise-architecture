@@ -1,7 +1,7 @@
 ---
 
 title: "ART-0 : Accords de partage inter-institutionnels"
-id: ART-0
+id: artsn-ART-0
 domain: 02_artsn
 version: "1.0.0"
 status: draft

@@ -1,7 +1,7 @@
 ---
 
 title: "ART-4d : Référentiel géospatial et d'exploitation partagé"
-id: ART-4D
+id: artsn-ART-4D
 domain: 02_artsn
 version: "1.0.0"
 status: draft

@@ -1,7 +1,7 @@
 ---
 
 title: "ART-4 : Référentiels de métadonnées de gestion"
-id: ART-4
+id: artsn-ART-4
 domain: 02_artsn
 version: "1.0.0"
 status: draft

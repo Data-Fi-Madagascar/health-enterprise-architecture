@@ -1,7 +1,7 @@
 ---
 
 title: "ART-4b : Bases d'autorisation"
-id: ART-4B
+id: artsn-ART-4B
 domain: 02_artsn
 version: "1.0.0"
 status: draft

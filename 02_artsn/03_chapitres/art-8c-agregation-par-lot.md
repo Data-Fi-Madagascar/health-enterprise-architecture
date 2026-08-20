@@ -1,7 +1,7 @@
 ---
 
 title: "ART-8c : Agrégation par lot"
-id: ART-8C
+id: artsn-ART-8C
 domain: 02_artsn
 version: "1.0.0"
 status: draft

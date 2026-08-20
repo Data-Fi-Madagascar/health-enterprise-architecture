@@ -1,7 +1,7 @@
 ---
 
 title: "ART-8a : Orchestration de processus borné"
-id: ART-8A
+id: artsn-ART-8A
 domain: 02_artsn
 version: "1.0.0"
 status: draft
