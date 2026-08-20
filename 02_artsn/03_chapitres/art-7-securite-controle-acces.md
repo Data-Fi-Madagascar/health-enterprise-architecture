@@ -1,6 +1,6 @@
 ---
 
-title: "ART-7 : Sécurité, contrôle d'accès et résidence de la donnée"
+title: "Sécurité, contrôle d'accès et résidence de la donnée"
 id: artsn-ART-7
 domain: 02_artsn
 version: "1.0.0"
@@ -11,7 +11,7 @@ tags: ["artsn", "chapitres", "ART-7", "niveau-3"]
 related: ["CAP-INT-08"]
 ---
 
-# ART-7 : Sécurité, contrôle d'accès et résidence de la donnée
+# Sécurité, contrôle d'accès et résidence de la donnée
 
 ## Pour qui lire ce document
 

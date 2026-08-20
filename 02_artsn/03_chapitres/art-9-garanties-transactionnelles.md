@@ -1,6 +1,6 @@
 ---
 
-title: "ART-9 : Garanties transactionnelles fortes"
+title: "Garanties transactionnelles fortes"
 id: artsn-ART-9
 domain: 02_artsn
 version: "1.0.0"
@@ -11,7 +11,7 @@ tags: ["artsn", "chapitres", "ART-9", "niveau-3"]
 related: ["CAP-INT-07"]
 ---
 
-# ART-9 : Garanties transactionnelles fortes
+# Garanties transactionnelles fortes
 
 ## Pour qui lire ce document
 

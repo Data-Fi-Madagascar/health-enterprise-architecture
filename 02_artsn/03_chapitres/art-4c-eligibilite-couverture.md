@@ -1,6 +1,6 @@
 ---
 
-title: "ART-4c : Éligibilité et couverture"
+title: "Éligibilité et couverture"
 id: artsn-ART-4C
 domain: 02_artsn
 version: "1.0.0"
@@ -11,7 +11,7 @@ tags: ["artsn", "chapitres", "ART-4C", "niveau-3"]
 related: ["CAP-INT-07"]
 ---
 
-# ART-4c : Éligibilité et couverture
+# Éligibilité et couverture
 
 ## Pour qui lire ce document
 

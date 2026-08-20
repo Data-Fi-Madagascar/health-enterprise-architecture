@@ -1,6 +1,6 @@
 ---
 
-title: "ART-8d : Chorégraphie inter-institutionnelle"
+title: "Chorégraphie inter-institutionnelle"
 id: artsn-ART-8D
 domain: 02_artsn
 version: "1.0.0"
@@ -11,7 +11,7 @@ tags: ["artsn", "chapitres", "ART-8D", "niveau-3"]
 related: ["CAP-INT-03"]
 ---
 
-# ART-8d : Chorégraphie inter-institutionnelle
+# Chorégraphie inter-institutionnelle
 
 ## Pour qui lire ce document
 

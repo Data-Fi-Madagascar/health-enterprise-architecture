@@ -1,6 +1,6 @@
 ---
 
-title: "VS-03 : Protéger financièrement la population face aux dépenses de santé"
+title: "Protéger financièrement la population face aux dépenses de santé"
 id: caesn-VS-03
 domain: 01_value-streams
 version: "1.0.0"
@@ -10,7 +10,7 @@ owner: Direction de la couverture santé universelle
 tags: ["flux-de-valeur", "value-stream"]
 ---
 
-# VS-03 : Protéger financièrement la population face aux dépenses de santé
+# Protéger financièrement la population face aux dépenses de santé
 
 ## Pour qui lire ce document
 

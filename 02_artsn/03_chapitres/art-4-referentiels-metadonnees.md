@@ -1,6 +1,6 @@
 ---
 
-title: "ART-4 : Référentiels de métadonnées de gestion"
+title: "Référentiels de métadonnées de gestion"
 id: artsn-ART-4
 domain: 02_artsn
 version: "1.0.0"
@@ -11,7 +11,7 @@ tags: ["artsn", "chapitres", "ART-4", "niveau-3"]
 related: ["CAP-INT-03"]
 ---
 
-# ART-4 : Référentiels de métadonnées de gestion
+# Référentiels de métadonnées de gestion
 
 ## Pour qui lire ce document
 

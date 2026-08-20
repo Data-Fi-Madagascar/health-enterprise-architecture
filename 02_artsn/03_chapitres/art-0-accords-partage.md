@@ -1,6 +1,6 @@
 ---
 
-title: "ART-0 : Accords de partage inter-institutionnels"
+title: "Accords de partage inter-institutionnels"
 id: artsn-ART-0
 domain: 02_artsn
 version: "1.0.0"
@@ -11,7 +11,7 @@ tags: ["artsn", "chapitres", "ART-0", "niveau-3"]
 related: ["CAP-INT-06", "CAP-INT-13"]
 ---
 
-# ART-0 : Accords de partage inter-institutionnels
+# Accords de partage inter-institutionnels
 
 ## Pour qui lire ce document
 

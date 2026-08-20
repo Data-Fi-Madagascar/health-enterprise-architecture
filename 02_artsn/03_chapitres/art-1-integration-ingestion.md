@@ -1,6 +1,6 @@
 ---
 
-title: "ART-1 : Intégration et ingestion"
+title: "Intégration et ingestion"
 id: artsn-ART-1
 domain: 02_artsn
 version: "1.0.0"
@@ -11,7 +11,7 @@ tags: ["artsn", "chapitres", "ART-1", "niveau-3"]
 related: ["CAP-INT-03"]
 ---
 
-# ART-1 : Intégration et ingestion
+# Intégration et ingestion
 
 ## Pour qui lire ce document
 

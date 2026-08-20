@@ -1,6 +1,6 @@
 ---
 
-title: "ART-11 : Coordination intersectorielle"
+title: "Coordination intersectorielle"
 id: artsn-ART-11
 domain: 02_artsn
 version: "1.0.0"
@@ -10,7 +10,7 @@ owner: DEPSI
 tags: ["artsn", "chapitres", "ART-11", "niveau-3"]
 related: ["CAP-INT-13", "CAP-INT-14"]
 ---
-# ART-11 : Coordination intersectorielle
+# Coordination intersectorielle
 
 ## Pour qui lire ce document
 

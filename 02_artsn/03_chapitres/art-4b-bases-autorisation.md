@@ -1,6 +1,6 @@
 ---
 
-title: "ART-4b : Bases d'autorisation"
+title: "Bases d'autorisation"
 id: artsn-ART-4B
 domain: 02_artsn
 version: "1.0.0"
@@ -11,7 +11,7 @@ tags: ["artsn", "chapitres", "ART-4B", "niveau-3"]
 related: ["CAP-INT-09"]
 ---
 
-# ART-4b : Bases d'autorisation
+# Bases d'autorisation
 
 ## Pour qui lire ce document
 

@@ -1,6 +1,6 @@
 ---
 
-title: "VS-04 : Piloter, coordonner et améliorer la performance du système de santé"
+title: "Piloter, coordonner et améliorer la performance du système de santé"
 id: caesn-VS-04
 domain: 01_value-streams
 version: "1.0.0"
@@ -10,7 +10,7 @@ owner: Secrétariat Général
 tags: ["flux-de-valeur", "value-stream"]
 ---
 
-# VS-04 : Piloter, coordonner et améliorer la performance du système de santé
+# Piloter, coordonner et améliorer la performance du système de santé
 
 ## Pour qui lire ce document
 

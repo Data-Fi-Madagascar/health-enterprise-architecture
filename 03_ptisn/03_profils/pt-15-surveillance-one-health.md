@@ -3,7 +3,7 @@ id: ptisn-PT-15
 domain: 03_ptisn
 type: profil
 niveau: "4"
-title: PT-15 : Surveillance One Health
+title: Surveillance One Health
 status: draft
 owner: DEPSI
 version: "1.0.0"
@@ -12,7 +12,7 @@ maps_to: ["CAP-INT-14", "CAP-18", "CAP-05", "ART-11", "ART-0", "ART-4D", "ART-8B
 tags: ["ptisn", "niveau-4", "profil", "one-health", "surveillance"]
 ---
 
-# PT-15 : Surveillance One Health
+# Surveillance One Health
 
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->

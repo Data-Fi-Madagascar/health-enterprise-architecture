@@ -1,6 +1,6 @@
 ---
 
-title: "ART-5 : Cohérence et qualité des données"
+title: "Cohérence et qualité des données"
 id: artsn-ART-5
 domain: 02_artsn
 version: "1.0.0"
@@ -11,7 +11,7 @@ tags: ["artsn", "chapitres", "ART-5", "niveau-3"]
 related: ["CAP-INT-03"]
 ---
 
-# ART-5 : Cohérence et qualité des données
+# Cohérence et qualité des données
 
 ## Pour qui lire ce document
 

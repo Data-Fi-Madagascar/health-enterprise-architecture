@@ -1,6 +1,6 @@
 ---
 
-title: "ART-8b : Modélisation de relations en graphe"
+title: "Modélisation de relations en graphe"
 id: artsn-ART-8B
 domain: 02_artsn
 version: "1.0.0"
@@ -11,7 +11,7 @@ tags: ["artsn", "chapitres", "ART-8B", "niveau-3"]
 related: ["CAP-INT-03"]
 ---
 
-# ART-8b : Modélisation de relations en graphe
+# Modélisation de relations en graphe
 
 ## Pour qui lire ce document
 

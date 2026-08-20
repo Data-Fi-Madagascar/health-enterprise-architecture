@@ -1,6 +1,6 @@
 ---
 
-title: "ART-6 : Analytique et restitution"
+title: "Analytique et restitution"
 id: artsn-ART-6
 domain: 02_artsn
 version: "1.0.0"
@@ -11,7 +11,7 @@ tags: ["artsn", "chapitres", "ART-6", "niveau-3"]
 related: ["CAP-INT-07"]
 ---
 
-# ART-6 : Analytique et restitution
+# Analytique et restitution
 
 ## Pour qui lire ce document
 

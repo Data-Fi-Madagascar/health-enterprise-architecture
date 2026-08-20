@@ -1,6 +1,6 @@
 ---
 
-title: "ART-8 : Orchestration de processus"
+title: "Orchestration de processus"
 id: artsn-ART-8
 domain: 02_artsn
 version: "1.0.0"
@@ -11,7 +11,7 @@ tags: ["artsn", "chapitres", "ART-8", "niveau-3"]
 related: ["CAP-INT-03"]
 ---
 
-# ART-8 : Orchestration de processus
+# Orchestration de processus
 
 ## Pour qui lire ce document
 

@@ -1,5 +1,5 @@
 ---
-title: PT-04 : Profil technique national
+title: Profil technique national
 id: ptisn-PT-04-resolution-identite-beneficiaire
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,7 +9,7 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-04"]
 ---
 
-# PT-04 : Profil technique national
+# Profil technique national
 
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->

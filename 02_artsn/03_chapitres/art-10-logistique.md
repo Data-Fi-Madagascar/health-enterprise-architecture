@@ -1,6 +1,6 @@
 ---
 
-title: "ART-10 : Logistique"
+title: "Logistique"
 id: artsn-ART-10
 domain: 02_artsn
 version: "1.0.0"
@@ -10,7 +10,7 @@ owner: DEPSI
 tags: ["artsn", "chapitres", "ART-10", "niveau-3"]
 related: ["CAP-INT-10"]
 ---
-# ART-10 : Logistique
+# Logistique
 
 ## Pour qui lire ce document
 

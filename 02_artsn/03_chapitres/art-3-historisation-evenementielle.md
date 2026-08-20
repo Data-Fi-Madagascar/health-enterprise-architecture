@@ -1,6 +1,6 @@
 ---
 
-title: "ART-3 : Historisation événementielle et profils de déploiement"
+title: "Historisation événementielle et profils de déploiement"
 id: artsn-ART-3
 domain: 02_artsn
 version: "1.0.0"
@@ -11,7 +11,7 @@ tags: ["artsn", "chapitres", "ART-3", "niveau-3"]
 related: ["CAP-INT-03"]
 ---
 
-# ART-3 : Historisation événementielle et profils de déploiement
+# Historisation événementielle et profils de déploiement
 
 ## Pour qui lire ce document
 

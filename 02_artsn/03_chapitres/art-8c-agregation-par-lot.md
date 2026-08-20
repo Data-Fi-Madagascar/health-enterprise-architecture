@@ -1,6 +1,6 @@
 ---
 
-title: "ART-8c : Agrégation par lot"
+title: "Agrégation par lot"
 id: artsn-ART-8C
 domain: 02_artsn
 version: "1.0.0"
@@ -11,7 +11,7 @@ tags: ["artsn", "chapitres", "ART-8C", "niveau-3"]
 related: ["CAP-INT-03"]
 ---
 
-# ART-8c : Agrégation par lot
+# Agrégation par lot
 
 ## Pour qui lire ce document
 

@@ -1,6 +1,6 @@
 ---
 
-title: "ART-8a : Orchestration de processus borné"
+title: "Orchestration de processus borné"
 id: artsn-ART-8A
 domain: 02_artsn
 version: "1.0.0"
@@ -11,7 +11,7 @@ tags: ["artsn", "chapitres", "ART-8A", "niveau-3"]
 related: ["CAP-INT-03"]
 ---
 
-# ART-8a : Orchestration de processus borné
+# Orchestration de processus borné
 
 ## Pour qui lire ce document
 

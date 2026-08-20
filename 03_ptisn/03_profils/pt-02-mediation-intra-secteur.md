@@ -1,5 +1,5 @@
 ---
-title: PT-02 : Profil technique national
+title: Profil technique national
 id: ptisn-PT-02-mediation-intra-secteur
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,7 +9,7 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-02"]
 ---
 
-# PT-02 : Profil technique national
+# Profil technique national
 
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->

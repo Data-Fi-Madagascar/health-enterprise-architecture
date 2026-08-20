@@ -1,5 +1,5 @@
 ---
-title: PT-16 : Orchestration de processus bornés
+title: Orchestration de processus bornés
 id: ptisn-PT-16-orchestration-processus
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,7 +9,7 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-16"]
 ---
 
-# PT-16 : Orchestration de processus bornés
+# Orchestration de processus bornés
 
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->

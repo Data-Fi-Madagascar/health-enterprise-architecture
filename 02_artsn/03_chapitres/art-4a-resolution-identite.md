@@ -1,6 +1,6 @@
 ---
 
-title: "ART-4a : Résolution d'identité"
+title: "Résolution d'identité"
 id: artsn-ART-4A
 domain: 02_artsn
 version: "1.0.0"
@@ -11,7 +11,7 @@ tags: ["artsn", "chapitres", "ART-4A", "niveau-3"]
 related: ["CAP-INT-01"]
 ---
 
-# ART-4a : Résolution d'identité
+# Résolution d'identité
 
 ## Pour qui lire ce document
 

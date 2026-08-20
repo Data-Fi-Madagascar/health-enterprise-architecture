@@ -1,5 +1,5 @@
 ---
-title: PT-07 : Profil technique national
+title: Profil technique national
 id: ptisn-PT-07-terminologie-codification
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,7 +9,7 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-07"]
 ---
 
-# PT-07 : Profil technique national
+# Profil technique national
 
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->

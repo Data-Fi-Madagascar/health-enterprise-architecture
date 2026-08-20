@@ -1,5 +1,5 @@
 ---
-title: "PT-14 : Interopérabilité transfrontalière"
+title: "Interopérabilité transfrontalière"
 id: PT-14-wrapper
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,7 +9,7 @@ owner: DEPSI
 tags: ["ptisn", "niveau-4", "profil", "transfrontalier", "gdhcn"]
 ---
 
-# PT-14 : Interopérabilité transfrontalière
+# Interopérabilité transfrontalière
 
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->

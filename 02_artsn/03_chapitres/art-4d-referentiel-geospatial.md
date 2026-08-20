@@ -1,6 +1,6 @@
 ---
 
-title: "ART-4d : Référentiel géospatial et d'exploitation partagé"
+title: "Référentiel géospatial et d'exploitation partagé"
 id: artsn-ART-4D
 domain: 02_artsn
 version: "1.0.0"
@@ -11,7 +11,7 @@ tags: ["artsn", "chapitres", "ART-4D", "niveau-3"]
 related: ["CAP-INT-04"]
 ---
 
-# ART-4d : Référentiel géospatial et d'exploitation partagé
+# Référentiel géospatial et d'exploitation partagé
 
 ## Pour qui lire ce document
 

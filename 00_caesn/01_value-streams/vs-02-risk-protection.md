@@ -1,6 +1,6 @@
 ---
 
-title: "VS-02 : Prévenir, détecter et répondre aux risques sanitaires"
+title: "Prévenir, détecter et répondre aux risques sanitaires"
 id: caesn-VS-02
 domain: 01_value-streams
 version: "1.0.0"
@@ -10,7 +10,7 @@ owner: Direction de la protection sociale et de la promotion de la santé
 tags: ["flux-de-valeur", "value-stream"]
 ---
 
-# VS-02 : Prévenir, détecter et répondre aux risques sanitaires
+# Prévenir, détecter et répondre aux risques sanitaires
 
 ## Pour qui lire ce document
 
