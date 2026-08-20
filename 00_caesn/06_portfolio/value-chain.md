@@ -13,7 +13,7 @@ tags: [portefeuille, chaîne-de-valeur, bénéfices]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -59,7 +59,7 @@ Une initiative qui livre ses outputs sans produire les changements métier atten
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Portefeuille** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
-- **Fiche d'initiative** — Fiche standard d'initiative orientée valeur (`00_caesn/06_portfolio/initiative-card.md`)
-- **Priorisation** — Critères et score de priorisation des initiatives (`00_caesn/06_portfolio/prioritization.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Portefeuille** : Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
+- **Fiche d'initiative** : Fiche standard d'initiative orientée valeur (`00_caesn/06_portfolio/initiative-card.md`)
+- **Priorisation** : Critères et score de priorisation des initiatives (`00_caesn/06_portfolio/prioritization.md`)

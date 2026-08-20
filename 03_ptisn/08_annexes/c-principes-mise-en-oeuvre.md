@@ -1,5 +1,5 @@
 ---
-title: Annexe C — Principes de mise en œuvre
+title: Annexe C : Principes de mise en œuvre
 id: ptisn-annexe-c
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,7 +9,7 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "annexes"]
 ---
 
-# Annexe C — Principes de mise en œuvre
+# Annexe C : Principes de mise en œuvre
 
 Les principes énoncés ci-dessous guident la mise en œuvre technique du PTISN. Ils établissent les distinctions conceptuelles fondamentales, les règles d'assemblage des profils et les garde-fous d'architecture qui doivent être respectés par chaque initiative.
 

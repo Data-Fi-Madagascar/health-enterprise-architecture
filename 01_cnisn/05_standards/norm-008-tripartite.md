@@ -1,5 +1,5 @@
 ---
-title: "NORM-008 — Tripartite Plus OMS–WOAH–FAO–PNUE"
+title: "NORM-008 : Tripartite Plus OMS–WOAH–FAO–PNUE"
 id: norm-008
 domain: 05_standards
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: Secrétariat Général du Ministère
 tags: [normes, tripartite, one-health, oms, woah, fao, pnue, international]
 ---
 
-# NORM-008 — Tripartite Plus OMS–WOAH–FAO–PNUE
+# NORM-008 : Tripartite Plus OMS–WOAH–FAO–PNUE
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -28,7 +28,7 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 - **Type** : cadre normatif international
 - **Statut** : actif
 - **Propriétaire** : Secrétariat Général du Ministère
-- **Référence** : OMS, WOAH, FAO, PNUE — Cadre Tripartite Plus
+- **Référence** : OMS, WOAH, FAO, PNUE : Cadre Tripartite Plus
 
 ## Contexte
 
@@ -80,8 +80,8 @@ Toute dérogation doit être justifiée et approuvée par le Comité National.
 ## Références
 
 - Normes et standards
-- [WOAH — Tripartite](https://www.woah.org/en/what-we-do/one-health/)
-- PT-15 — Surveillance One Health
-- ARTSN — Chapitre ART-11
+- [WOAH : Tripartite](https://www.woah.org/en/what-we-do/one-health/)
+- PT-15 : Surveillance One Health
+- ARTSN : Chapitre ART-11
 
-- **matrice de lecture** — Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
+- **matrice de lecture** : Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)

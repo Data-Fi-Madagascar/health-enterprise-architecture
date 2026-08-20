@@ -13,7 +13,7 @@ tags: [caesn, lecture, niveau-1, guide]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -72,44 +72,44 @@ Le CAESN est organisé en **11 domaines** :
 
 **Objectif :** Comprendre la vision stratégique et les enjeux de gouvernance.
 
-1. Vue d'ensemble — Objet, portée, hiérarchie
-2. Fondements — Ancrage stratégique
-3. Modèle de valeur — Bénéficiaires et dimensions
-4. Flux de valeur — Les 4 flux nationaux
-5. Gouvernance — Instances et responsabilités
-6. Portefeuille — Registre des initiatives
+1. Vue d'ensemble : Objet, portée, hiérarchie
+2. Fondements : Ancrage stratégique
+3. Modèle de valeur : Bénéficiaires et dimensions
+4. Flux de valeur : Les 4 flux nationaux
+5. Gouvernance : Instances et responsabilités
+6. Portefeuille : Registre des initiatives
 
 ### 3.2 Direction métier / programme
 
 **Objectif :** Comprendre comment une initiative s'inscrit dans le cadre.
 
-1. Vue d'ensemble — Positionnement
-2. Modèle de valeur — Valeur produite
-3. Flux de valeur — Flux pertinent
-4. Capabilités — Capacités couvertes
-5. Portefeuille — Fiche d'initiative
+1. Vue d'ensemble : Positionnement
+2. Modèle de valeur : Valeur produite
+3. Flux de valeur : Flux pertinent
+4. Capabilités : Capacités couvertes
+5. Portefeuille : Fiche d'initiative
 
 ### 3.3 Équipe technique / DEPSI
 
 **Objectif :** Implémenter selon les principes et standards du cadre.
 
-1. Vue d'ensemble — Lecture complète
-2. Principes — Principes PA et PD
-3. Capabilités — Catalogue complet
-4. Données — Domaines de données
-5. Application — Paysage applicatif
-6. Normes — Standards à respecter
-7. ARTSN (niveau 3) — Patterns techniques
+1. Vue d'ensemble : Lecture complète
+2. Principes : Principes PA et PD
+3. Capabilités : Catalogue complet
+4. Données : Domaines de données
+5. Application : Paysage applicatif
+6. Normes : Standards à respecter
+7. ARTSN (niveau 3) : Patterns techniques
 
 ### 3.4 Partenaire technique / financier
 
 **Objectif :** Évaluer l'alignement d'une initiative avec le cadre.
 
-1. Vue d'ensemble — Objet et portée
-2. Modèle de valeur — Valeur attendue
-3. Flux de valeur — Flux couverts
-4. Capabilités — Maturité cible
-5. Gouvernance — Processus de validation
+1. Vue d'ensemble : Objet et portée
+2. Modèle de valeur : Valeur attendue
+3. Flux de valeur : Flux couverts
+4. Capabilités : Maturité cible
+5. Gouvernance : Processus de validation
 
 ---
 
@@ -153,29 +153,29 @@ Les 16 capabilités couvrent l'ensemble du système de santé :
 
 | Niveau | Document | Lien |
 |--------|----------|------|
-| 2 — CNISN | Cadre National d'Interopérabilité | ../01_cnisn/index.md |
-| 3 — ARTSN | Architecture de Référence Technique | ../02_artsn/index.md |
-| 4 — PTISN | Profils techniques d'implémentation | ../03_ptisn/index.md |
+| 2 : CNISN | Cadre National d'Interopérabilité | ../01_cnisn/index.md |
+| 3 : ARTSN | Architecture de Référence Technique | ../02_artsn/index.md |
+| 4 : PTISN | Profils techniques d'implémentation | ../03_ptisn/index.md |
 
 ---
 
 ## 7. Documents complémentaires
 
-- Matrice de lecture — Vue croisée sections × lecteurs
-- Glossaire — Définitions des termes
-- Acronymes — Liste des acronymes
-- Annexes — Supports complémentaires
+- Matrice de lecture : Vue croisée sections × lecteurs
+- Glossaire : Définitions des termes
+- Acronymes : Liste des acronymes
+- Annexes : Supports complémentaires
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Fondements** — Fondements stratégiques et normatifs (`00_caesn/00_overview/foundations.md`)
-- **Modèle de valeur** — Modèle national de valeur (`00_caesn/00_overview/value-model.md`)
-- **Vue d'ensemble** — Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
-- **ARTSN (niveau 3)** — Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
-- **../01_cnisn/index.md** — Cadre National d'Interopérabilité de la Santé Numérique (CNISN) (`01_cnisn/index.md`)
-- **../02_artsn/index.md** — Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
-- **../03_ptisn/index.md** — Profils techniques d'implémentation de la Santé Numérique (PTISN) (`03_ptisn/index.md`)
-- **Matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Glossaire** — Glossaire (`00_caesn/10_annexes/glossary.md`)
-- **Acronymes** — Acronymes et abréviations (`00_caesn/10_annexes/acronyms.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Fondements** : Fondements stratégiques et normatifs (`00_caesn/00_overview/foundations.md`)
+- **Modèle de valeur** : Modèle national de valeur (`00_caesn/00_overview/value-model.md`)
+- **Vue d'ensemble** : Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
+- **ARTSN (niveau 3)** : Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
+- **../01_cnisn/index.md** : Cadre National d'Interopérabilité de la Santé Numérique (CNISN) (`01_cnisn/index.md`)
+- **../02_artsn/index.md** : Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
+- **../03_ptisn/index.md** : Profils techniques d'implémentation de la Santé Numérique (PTISN) (`03_ptisn/index.md`)
+- **Matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Glossaire** : Glossaire (`00_caesn/10_annexes/glossary.md`)
+- **Acronymes** : Acronymes et abréviations (`00_caesn/10_annexes/acronyms.md`)

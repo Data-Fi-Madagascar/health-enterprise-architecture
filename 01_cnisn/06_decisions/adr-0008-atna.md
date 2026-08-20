@@ -1,5 +1,5 @@
 ---
-title: "ADR-0008 — Adoption d'ATNA et journalisation pour l'audit et la traçabilité"
+title: "ADR-0008 : Adoption d'ATNA et journalisation pour l'audit et la traçabilité"
 id: adr-0008
 domain: 06_decisions
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: DEPSI
 tags: [adr, audit, traçabilité, atna, journalisation]
 ---
 
-# ADR-0008 — Adoption d'ATNA et journalisation pour l'audit et la traçabilité
+# ADR-0008 : Adoption d'ATNA et journalisation pour l'audit et la traçabilité
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -86,8 +86,8 @@ ATNA doit :
 
 ## Références
 
-- PT-12 — Audit et traçabilité
-- ART-7 — Sécurité
-- CAP-INT-10 — Audit et traçabilité
-- [IHE ATNA — Audit Trail and Node Authentication](https://www.ihe.net)
+- PT-12 : Audit et traçabilité
+- ART-7 : Sécurité
+- CAP-INT-10 : Audit et traçabilité
+- [IHE ATNA : Audit Trail and Node Authentication](https://www.ihe.net)
 

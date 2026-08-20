@@ -13,7 +13,7 @@ tags: [cadre, gouvernance, santé-numérique, madagascar]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -47,15 +47,15 @@ Il ne couvre pas les équipements biomédicaux ni les infrastructures physiques 
 
 Le cadre s'inscrit dans un environnement juridique et stratégique structuré :
 
-**Stratégie Nationale de Santé Digitale (SNSD) 2023-2027** — Document directeur du numérique en santé, approuvé par le Ministère de la Santé Publique. Il définit quatre axes stratégiques : gouvernance digitale, solutions technologiques, ressources et financement pérenne. Le cadre CAESN décline ces orientations en principes, capabilités et mécanismes de gouvernance. Le SNSD 2023-2027 est la deuxième édition, succédant à la stratégie 2019-2023.
+**Stratégie Nationale de Santé Digitale (SNSD) 2023-2027** : Document directeur du numérique en santé, approuvé par le Ministère de la Santé Publique. Il définit quatre axes stratégiques : gouvernance digitale, solutions technologiques, ressources et financement pérenne. Le cadre CAESN décline ces orientations en principes, capabilités et mécanismes de gouvernance. Le SNSD 2023-2027 est la deuxième édition, succédant à la stratégie 2019-2023.
 
-**Plan Stratégique de Renforcement du Système d'Information Sanitaire (PSRSIS) 2023-2027** — Priorités relatives aux données de santé, adoptant DHIS2 comme entrepôt national et définissant six stratégies de renforcement du système d'information.
+**Plan Stratégique de Renforcement du Système d'Information Sanitaire (PSRSIS) 2023-2027** : Priorités relatives aux données de santé, adoptant DHIS2 comme entrepôt national et définissant six stratégies de renforcement du système d'information.
 
-**Loi n°2014-038 sur la protection des données à caractère personnel** — Cadre juridique de la protection des données personnelles, promulguée le 9 janvier 2015, avec décret d'application 2023-1541. Elle institue la Commission Malagasy de l'Informatique et des Libertés (CMIL) comme autorité indépendante de protection. Les principes de la loi (finalité, minimisation, consentement, sécurité, droit d'accès) sont intégrés dans les règles de gouvernance des données du cadre (§Protection des données personnelles de santé).
+**Loi n°2014-038 sur la protection des données à caractère personnel** : Cadre juridique de la protection des données personnelles, promulguée le 9 janvier 2015, avec décret d'application 2023-1541. Elle institue la Commission Malagasy de l'Informatique et des Libertés (CMIL) comme autorité indépendante de protection. Les principes de la loi (finalité, minimisation, consentement, sécurité, droit d'accès) sont intégrés dans les règles de gouvernance des données du cadre (§Protection des données personnelles de santé).
 
-**Convention de Malabo** — Convention de l'Union Africaine sur la cybersécurité et la protection des données à caractère personnel, ratifiée par Madagascar (loi 2024-004). Elle renforce le cadre juridique transfrontalier de protection des données.
+**Convention de Malabo** : Convention de l'Union Africaine sur la cybersécurité et la protection des données à caractère personnel, ratifiée par Madagascar (loi 2024-004). Elle renforce le cadre juridique transfrontalier de protection des données.
 
-**Plan Stratégique quinquennal du Numérique 2023-2028** — Vision nationale de transformation numérique, intégrant la santé parmi les secteurs prioritaires.
+**Plan Stratégique quinquennal du Numérique 2023-2028** : Vision nationale de transformation numérique, intégrant la santé parmi les secteurs prioritaires.
 
 ## Ce que ce cadre n'est pas
 
@@ -67,10 +67,10 @@ Le cadre s'inscrit dans un environnement juridique et stratégique structuré :
 
 | Niveau | Document | Question | Destinataires |
 |--------|----------|----------|---------------|
-| 1 | Cadre d'Architecture d'Entreprise (ce document) | *Pourquoi?* — valeur, capabilités, principes, gouvernance | Décideurs, directions métiers, partenaires |
-| 2 | Cadre National d'Interopérabilité + Standards | *Quelles garanties et quelles normes?* — principes, capacités, gouvernance sectorielle, normes | DEPSI, architectes, intégrateurs |
-| 3 | Architecture de Référence Technique | *Comment garantir?* — contrats, patterns, règles d'homologation | DEPSI, architectes, intégrateurs |
-| 4 | Profils techniques d'implémentation (par initiative) | *Avec quoi?* — configurations, API, contrats d'interfaces (découle de l'UGD) | Développeurs, fournisseurs, équipes techniques |
+| 1 | Cadre d'Architecture d'Entreprise (ce document) | *Pourquoi?* : valeur, capabilités, principes, gouvernance | Décideurs, directions métiers, partenaires |
+| 2 | Cadre National d'Interopérabilité + Standards | *Quelles garanties et quelles normes?* : principes, capacités, gouvernance sectorielle, normes | DEPSI, architectes, intégrateurs |
+| 3 | Architecture de Référence Technique | *Comment garantir?* : contrats, patterns, règles d'homologation | DEPSI, architectes, intégrateurs |
+| 4 | Profils techniques d'implémentation (par initiative) | *Avec quoi?* : configurations, API, contrats d'interfaces (découle de l'UGD) | Développeurs, fournisseurs, équipes techniques |
 
 ## Structure du référentiel
 
@@ -100,10 +100,10 @@ Ce dépôt implémente le cadre comme **architecture as code** : chaque concept 
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Fondements** — Fondements stratégiques et normatifs (`00_caesn/00_overview/foundations.md`)
-- **Modèle de valeur** — Modèle national de valeur (`00_caesn/00_overview/value-model.md`)
-- **Guide de lecture du CAESN** — Guide de lecture du CAESN (niveau 1) (`00_caesn/reading-guide.md`)
-- **Matrice de lecture du CAESN** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Glossaire** — Glossaire (`00_caesn/10_annexes/glossary.md`)
-- **Acronymes** — Acronymes et abréviations (`00_caesn/10_annexes/acronyms.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Fondements** : Fondements stratégiques et normatifs (`00_caesn/00_overview/foundations.md`)
+- **Modèle de valeur** : Modèle national de valeur (`00_caesn/00_overview/value-model.md`)
+- **Guide de lecture du CAESN** : Guide de lecture du CAESN (niveau 1) (`00_caesn/reading-guide.md`)
+- **Matrice de lecture du CAESN** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Glossaire** : Glossaire (`00_caesn/10_annexes/glossary.md`)
+- **Acronymes** : Acronymes et abréviations (`00_caesn/10_annexes/acronyms.md`)

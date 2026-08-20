@@ -20,7 +20,7 @@ tags:
 
 Documenter la séquence de déploiement des composants de l'Architecture de Référence Technique de la Santé Numérique (ARTSN) selon un planning réaliste et prioritaire, en alignement avec le Cadre d'Architecture d'Entreprise (CAESN) et les besoins des initiatives du catalogue PTISN.
 
-## Architecture cible — Rappel
+## Architecture cible : Rappel
 
 L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversées par **2 axes verticaux** (Sécurité, Gouvernance de données). Le déploiement respecte l'ordre bottom-up : chaque couche dépend de celle qui la sous-tend.
 
@@ -37,7 +37,7 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 
 ## 1. Phases de déploiement
 
-### Phase 1 — Infrastructure & sécurité (T4 2026 – T2 2027) — 9 mois
+### Phase 1 : Infrastructure & sécurité (T4 2026 – T2 2027) : 9 mois
 
 **Priorité absolue.** Pas de système sans socle matériel ni sécurité. Cette phase pose les fondations physiques et transversales de toute la plateforme.
 
@@ -56,9 +56,9 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 
 **Livrable clé** : Infrastructure opérationnelle + cadre de sécurité + référentiels de base.
 
-### Phase 2 — Applications terrain & collecte (T2 2027 – T4 2027) — 6 mois
+### Phase 2 : Applications terrain & collecte (T2 2027 – T4 2027) : 6 mois
 
-**Couche 2 — Point de service.** Déployer les applications de terrain qui captent les données au plus près des formations sanitaires, y compris en mode hors-ligne.
+**Couche 2 : Point de service.** Déployer les applications de terrain qui captent les données au plus près des formations sanitaires, y compris en mode hors-ligne.
 
 | Composant | Couches | Responsables | Livrables | Critère de succès |
 |-----------|---------|--------------|-----------|-------------------|
@@ -72,15 +72,15 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 
 **Livrable clé** : 5 applications terrain opérationnelles + couche transport asynchrone.
 
-### Phase 3 — Médiation & registres partagés (T4 2027 – T2 2028) — 6 mois
+### Phase 3 : Médiation & registres partagés (T4 2027 – T2 2028) : 6 mois
 
-**Couche 4 — Interopérabilité.** Centraliser les registres nationaux et orchestrer les parcours cliniques transversaux.
+**Couche 4 : Interopérabilité.** Centraliser les registres nationaux et orchestrer les parcours cliniques transversaux.
 
 | Composant | Couches | Responsables | Livrables | Critère de succès |
 |-----------|---------|--------------|-----------|-------------------|
 | **Moteur de médiation** | Couche 4 | DNS | Moteur ART-2 (transformation, normalisation, enrichissement) | 80% messages transformés |
 | **Orchestrateur de parcours** | Couche 4 | DNS | Gestionnaire de Sagas (ART-8a) | Parcours multi-systèmes opérationnels |
-| **Registre patients** | Couche 4 | DNS | Index National des Patients (INP — ART-4a) | 500 000 patients dédupliqués |
+| **Registre patients** | Couche 4 | DNS | Index National des Patients (INP : ART-4a) | 500 000 patients dédupliqués |
 | **Registre éligibilité** | Couche 4 | DNS | CSU vérification en temps réel (ART-4c) | 100% soins vérifiés |
 | **Registre de schémas** | Couche 3 | DNS | Versioning schémas, validation FHIR | 100% messages validés |
 | **Serveur de sécurité X-Road santé** | Couche 3 | DNS, UGD | Serveur de sécurité (Security Server) connecté au backbone X-Road UGD existant, connecteurs inter-institutionnels (État civil, Protection sociale, Finances) | Serveur opérationnel, 5 échanges inter-institutionnels/jour |
@@ -88,9 +88,9 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 
 **Livrable clé** : Médiation opérationnelle + 3 registres nationaux + premiers échanges inter-institutionnels.
 
-### Phase 4 — Analytique & pilotage (T2 2028 – T4 2028) — 6 mois
+### Phase 4 : Analytique & pilotage (T2 2028 – T4 2028) : 6 mois
 
-**Couche 5-6 — Projections analytiques & pilotage.** Construire la capacité analytique et les tableaux de bord décisionnels.
+**Couche 5-6 : Projections analytiques & pilotage.** Construire la capacité analytique et les tableaux de bord décisionnels.
 
 | Composant | Couches | Responsables | Livrables | Critère de succès |
 |-----------|---------|--------------|-----------|-------------------|
@@ -103,7 +103,7 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 
 **Livrable clé** : Entrepôt analytique + 3 modèles IA + tableaux de bord décisionnels.
 
-### Phase 5 — Extension & pérennisation (T4 2028 – T2 2029) — 6 mois
+### Phase 5 : Extension & pérennisation (T4 2028 – T2 2029) : 6 mois
 
 **Intégration complète et stabilisation.** Connecter les régions restantes, former, évaluer et assurer la pérennité.
 
@@ -119,7 +119,7 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 
 **Livrable clé** : 22 régions connectées + DPI + formation + évaluation complète.
 
-### Phase 6 — Coordination One Health (T2 2029 – T4 2029) — 6 mois
+### Phase 6 : Coordination One Health (T2 2029 – T4 2029) : 6 mois
 
 **Dimension intersectorielle.** Déployer les échanges de données entre santé humaine, animale et environnement pour la surveillance et la riposte coordonnée.
 

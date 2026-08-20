@@ -1,5 +1,5 @@
 ---
-title: PT-16 — Orchestration de processus bornés
+title: PT-16 : Orchestration de processus bornés
 id: ptisn-pt-16-orchestration-processus
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,19 +9,19 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "pt-16"]
 ---
 
-# PT-16 — Orchestration de processus bornés
+# PT-16 : Orchestration de processus bornés
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ## 1. Capacité CNISN
 
-**CAP-INT-03 — Échange et médiation inter-systèmes**
+**CAP-INT-03 : Échange et médiation inter-systèmes**
 
 ## 2. Chapitres ART applicables
 
-- ART-8a — orchestration de processus borné ;
-- ART-7 — sécurité.
+- ART-8a : orchestration de processus borné ;
+- ART-7 : sécurité.
 
 ## 3. Service national
 

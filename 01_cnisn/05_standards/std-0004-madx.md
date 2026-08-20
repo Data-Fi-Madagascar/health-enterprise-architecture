@@ -1,5 +1,5 @@
 ---
-title: "STD-0004 — Norme de données agrégées — mADX"
+title: "STD-0004 : Norme de données agrégées : mADX"
 id: std-0004
 domain: 05_standards
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: Comité National d'Architecture Santé Numérique
 tags: [standards, madx, donnees-agregees, obligatoire]
 ---
 
-# STD-0004 — Norme de données agrégées — mADX
+# STD-0004 : Norme de données agrégées : mADX
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -79,8 +79,8 @@ Toute dérogation doit être justifiée et approuvée par le Comité National.
 ## Références
 
 - Normes et standards
-- ADR-0002 — Adoption de mADX
-- PT-08 — Données agrégées
-- ARTSN — Chapitre ART-5
+- ADR-0002 : Adoption de mADX
+- PT-08 : Données agrégées
+- ARTSN : Chapitre ART-5
 
-- **matrice de lecture** — Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
+- **matrice de lecture** : Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)

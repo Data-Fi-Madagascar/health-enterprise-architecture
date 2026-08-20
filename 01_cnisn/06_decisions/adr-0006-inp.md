@@ -1,5 +1,5 @@
 ---
-title: "ADR-0006 — Adoption de l'Identité Nationale Patient (INP) via PIXm/PDQm"
+title: "ADR-0006 : Adoption de l'Identité Nationale Patient (INP) via PIXm/PDQm"
 id: adr-0006
 domain: 06_decisions
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: DEPSI
 tags: [adr, identité, patient, inp, pixm, pdqm]
 ---
 
-# ADR-0006 — Adoption de l'Identité Nationale Patient (INP) via PIXm/PDQm
+# ADR-0006 : Adoption de l'Identité Nationale Patient (INP) via PIXm/PDQm
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -86,8 +86,8 @@ L'INP doit :
 
 ## Références
 
-- PT-04 — Résolution d'identité
-- ADR-0004 — PIXm/PDQm
-- ART-4 — Référentiels nationaux
-- CAP-INT-01 — Résolution d'identité
+- PT-04 : Résolution d'identité
+- ADR-0004 : PIXm/PDQm
+- ART-4 : Référentiels nationaux
+- CAP-INT-01 : Résolution d'identité
 

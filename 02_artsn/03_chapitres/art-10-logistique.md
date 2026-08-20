@@ -1,5 +1,5 @@
 ---
-title: "ART-10 — Logistique"
+title: "ART-10 : Logistique"
 id: art-10
 domain: 02_artsn
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: DEPSI
 tags: [artsn, chapitres, art-10, niveau-3]
 related: ['cap-int-10']
 ---
-# ART-10 — Logistique
+# ART-10 : Logistique
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+**Niveau :** niveau 3 : Architecture de Référence Technique de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -26,10 +26,10 @@ related: ['cap-int-10']
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-ART-10 — Logistique constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-10`.
+ART-10 : Logistique constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-10`.
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 **Contenu normatif.** La continuité de la chaîne d'approvisionnement (médicaments, vaccins, intrants, équipements) conditionne l'exécution des flux de valeur de soins. L'architecture impose une traçabilité de bout en bout des mouvements de produits, de la centrale d'achat jusqu'au point de service : chaque mouvement (livraison, dispensation, transfert, destruction) est un événement immuable, horodaté, adossé aux référentiels de produits, et réconcilié selon les règles comptables de conservation de quantité (Entrées − Sorties = Solde).
 
@@ -46,11 +46,11 @@ ART-10 — Logistique constitue un chapitre du **cadre normatif opposable** de l
 ## Liens
 
 - Index des chapitres
-- Exigences contextuelles — Partie III
+- Exigences contextuelles : Partie III
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`art-10`** — Logistique (`referentiel/chapitres/art-10.md`)
-- **Index des chapitres** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
-- **Exigences contextuelles — Partie III** — Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
+- **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **`art-10`** : Logistique (`referentiel/chapitres/art-10.md`)
+- **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

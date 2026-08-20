@@ -13,7 +13,7 @@ tags: [gouvernance, cnasen, composition, fonctionnement]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -142,9 +142,9 @@ Le Comité National d'Architecture Santé Numérique (CNASN) est l'instance coll
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Gouvernance du cadre** — Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
-- **Bureau de Réalisation de la Valeur** — Bureau de Réalisation de la Valeur (`00_caesn/07_governance/value-realization-office.md`)
-- **RACI de gouvernance** — RACI de gouvernance et responsabilités (`00_caesn/07_governance/raci.md`)
-- **Registre des ADR** — Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
-- **Registre des normes** — Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Gouvernance du cadre** : Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
+- **Bureau de Réalisation de la Valeur** : Bureau de Réalisation de la Valeur (`00_caesn/07_governance/value-realization-office.md`)
+- **RACI de gouvernance** : RACI de gouvernance et responsabilités (`00_caesn/07_governance/raci.md`)
+- **Registre des ADR** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
+- **Registre des normes** : Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)

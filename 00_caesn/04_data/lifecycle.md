@@ -13,7 +13,7 @@ tags: [données, cycle-de-vie]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -46,7 +46,7 @@ Chaque donnée de santé doit être gouvernée tout au long de son cycle de vie.
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Principes de l'architecture des données** — Principes de l'architecture des données (`00_caesn/04_data/principles.md`)
-- **Gouvernance des données** — Gouvernance, qualité et protection des données (`00_caesn/04_data/governance.md`)
-- **Domaines de données** — Domaines de données prioritaires (`00_caesn/04_data/domains.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Principes de l'architecture des données** : Principes de l'architecture des données (`00_caesn/04_data/principles.md`)
+- **Gouvernance des données** : Gouvernance, qualité et protection des données (`00_caesn/04_data/governance.md`)
+- **Domaines de données** : Domaines de données prioritaires (`00_caesn/04_data/domains.md`)

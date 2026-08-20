@@ -13,7 +13,7 @@ tags: [artsn, niveau-3, standards]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+**Niveau :** niveau 3 : Architecture de Référence Technique de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -34,7 +34,7 @@ L'ARTSN constitue le troisième niveau de la hiérarchie documentaire du secteur
 | 1 | `00_caesn/` | Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) |
 | 2 | `01_cnisn/` | Cadre National d'Interopérabilité de la Santé Numérique (CNISN) + Standards |
 | 3 | `artsn/` | Architecture de Référence Technique de la Santé Numérique (ce dossier) |
-| 4 | `03_ptisn/` | Profils techniques d'implémentation par initiative (PTISN) — découle de l'UGD |
+| 4 | `03_ptisn/` | Profils techniques d'implémentation par initiative (PTISN) : découle de l'UGD |
 
 ## Rôle de l'ARTSN
 
@@ -58,8 +58,8 @@ L'ARTSN couvre les standards d'échange et formats (FHIR, HL7, OpenHIE, etc.), l
 | A | Table de maturité par chapitre | Statuts et conditions de promotion | rédigé |
 | B | Glossaire des patterns cités | Définitions des patterns techniques | rédigé |
 | C | Renvoi CAESN et capacités candidates | Écarts CAESN, One Health | rédigé |
-| — | Glossaire de l'ARTSN | Termes du périmètre technique | rédigé |
-| — | Acronymes de l'ARTSN | Sigles du périmètre technique | rédigé |
+| : | Glossaire de l'ARTSN | Termes du périmètre technique | rédigé |
+| : | Acronymes de l'ARTSN | Sigles du périmètre technique | rédigé |
 
 ## Source et version
 
@@ -74,19 +74,19 @@ Ce dossier est la déclinaison as code du document source `[Draft]TECHNICAL-Refe
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`artsn/`** — Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
-- **Fondations invariantes** — Fondations de l'ARTSN (`02_artsn/00_fondations/index.md`)
-- **Flux de valeur** — Flux de valeur (`02_artsn/01_flux-de-valeur/index.md`)
-- **Exigences contextuelles nationales** — Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
-- **Chapitres et patterns de référence** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
-- **Cartographie conceptuelle cible** — Cartographie conceptuelle cible (`02_artsn/04_cartographie-cible/index.md`)
-- **Dictionnaire de données fonctionnelles** — Dictionnaire de données fonctionnelles (`02_artsn/05_dictionnaire/index.md`)
-- **Gouvernance de l'ARTSN** — Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)
-- **Table de maturité par chapitre** — Annexe A — Table de maturité par chapitre (`02_artsn/07_annexes/a-table-de-maturite.md`)
-- **Glossaire des patterns cités** — Annexe B — Glossaire des patterns cités (`02_artsn/07_annexes/b-glossaire-patterns.md`)
-- **Renvoi CAESN et capacités candidates** — Annexe C — Renvoi CAESN et capacités candidates (`02_artsn/07_annexes/c-renvoi-capacites-candidates.md`)
-- **Glossaire de l'ARTSN** — Glossaire de l'ARTSN (niveau 3) (`02_artsn/glossary.md`)
-- **Acronymes de l'ARTSN** — Acronymes et abréviations de l'ARTSN (niveau 3) (`02_artsn/acronyms.md`)
-- **Guide de lecture de l'ARTSN** — Guide de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-guide.md`)
-- **Matrice de lecture de l'ARTSN** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **`artsn/`** : Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
+- **Fondations invariantes** : Fondations de l'ARTSN (`02_artsn/00_fondations/index.md`)
+- **Flux de valeur** : Flux de valeur (`02_artsn/01_flux-de-valeur/index.md`)
+- **Exigences contextuelles nationales** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
+- **Chapitres et patterns de référence** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **Cartographie conceptuelle cible** : Cartographie conceptuelle cible (`02_artsn/04_cartographie-cible/index.md`)
+- **Dictionnaire de données fonctionnelles** : Dictionnaire de données fonctionnelles (`02_artsn/05_dictionnaire/index.md`)
+- **Gouvernance de l'ARTSN** : Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)
+- **Table de maturité par chapitre** : Annexe A : Table de maturité par chapitre (`02_artsn/07_annexes/a-table-de-maturite.md`)
+- **Glossaire des patterns cités** : Annexe B : Glossaire des patterns cités (`02_artsn/07_annexes/b-glossaire-patterns.md`)
+- **Renvoi CAESN et capacités candidates** : Annexe C : Renvoi CAESN et capacités candidates (`02_artsn/07_annexes/c-renvoi-capacites-candidates.md`)
+- **Glossaire de l'ARTSN** : Glossaire de l'ARTSN (niveau 3) (`02_artsn/glossary.md`)
+- **Acronymes de l'ARTSN** : Acronymes et abréviations de l'ARTSN (niveau 3) (`02_artsn/acronyms.md`)
+- **Guide de lecture de l'ARTSN** : Guide de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-guide.md`)
+- **Matrice de lecture de l'ARTSN** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)

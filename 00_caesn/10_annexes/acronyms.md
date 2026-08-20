@@ -13,7 +13,7 @@ tags: [annexes, acronymes]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -55,6 +55,6 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Annexes** — Annexes (`00_caesn/10_annexes/index.md`)
-- **Glossaire** — Glossaire (`00_caesn/10_annexes/glossary.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Annexes** : Annexes (`00_caesn/10_annexes/index.md`)
+- **Glossaire** : Glossaire (`00_caesn/10_annexes/glossary.md`)

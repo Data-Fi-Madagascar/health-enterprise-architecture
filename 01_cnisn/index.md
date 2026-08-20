@@ -13,7 +13,7 @@ tags: [cnisn, niveau-2, interopérabilité]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 2 — Cadre National d'Interopérabilité de la Santé Numérique.
+**Niveau :** niveau 2 : Cadre National d'Interopérabilité de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -69,21 +69,21 @@ Le CNISN reste volontairement neutre sur le plan technologique : il ne sélectio
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
-- **`cnisn/`** — Cadre National d'Interopérabilité de la Santé Numérique (CNISN) (`01_cnisn/index.md`)
-- **Introduction** — Préambule du CNISN (`01_cnisn/00_introduction/index.md`)
-- **Principes** — Partie I — Principes nationaux d'interopérabilité de santé (`01_cnisn/01_principes/index.md`)
-- **Capacités** — Partie II — Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
-- **Gouvernance** — Partie III — Gouvernance (`01_cnisn/03_gouvernance/index.md`)
-- **Conformité** — Partie IV — Conformité (`01_cnisn/04_conformite/index.md`)
-- **Standards** — Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
-- **Décisions** — Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
-- **Trajectoire** — Partie V — Trajectoire de mise en œuvre (`01_cnisn/05_trajectoire/index.md`)
-- **Indicateurs** — Partie VI — Indicateurs de suivi (`01_cnisn/06_indicateurs/index.md`)
-- **Conclusion** — Conclusion du CNISN (`01_cnisn/07_conclusion/index.md`)
-- **Glossaire** — Glossaire du CNISN (niveau 2) (`01_cnisn/glossary.md`)
-- **Acronymes** — Acronymes et abréviations du CNISN (niveau 2) (`01_cnisn/acronyms.md`)
-- **Guide de lecture du CNISN** — Guide de lecture du CNISN (niveau 2) (`01_cnisn/reading-guide.md`)
-- **Matrice de lecture du CNISN** — Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
-- **Glossaire du CNISN** — Glossaire du CNISN (niveau 2) (`01_cnisn/glossary.md`)
-- **Acronymes du CNISN** — Acronymes et abréviations du CNISN (niveau 2) (`01_cnisn/acronyms.md`)
+- **matrice de lecture** : Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
+- **`cnisn/`** : Cadre National d'Interopérabilité de la Santé Numérique (CNISN) (`01_cnisn/index.md`)
+- **Introduction** : Préambule du CNISN (`01_cnisn/00_introduction/index.md`)
+- **Principes** : Partie I : Principes nationaux d'interopérabilité de santé (`01_cnisn/01_principes/index.md`)
+- **Capacités** : Partie II : Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
+- **Gouvernance** : Partie III : Gouvernance (`01_cnisn/03_gouvernance/index.md`)
+- **Conformité** : Partie IV : Conformité (`01_cnisn/04_conformite/index.md`)
+- **Standards** : Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
+- **Décisions** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
+- **Trajectoire** : Partie V : Trajectoire de mise en œuvre (`01_cnisn/05_trajectoire/index.md`)
+- **Indicateurs** : Partie VI : Indicateurs de suivi (`01_cnisn/06_indicateurs/index.md`)
+- **Conclusion** : Conclusion du CNISN (`01_cnisn/07_conclusion/index.md`)
+- **Glossaire** : Glossaire du CNISN (niveau 2) (`01_cnisn/glossary.md`)
+- **Acronymes** : Acronymes et abréviations du CNISN (niveau 2) (`01_cnisn/acronyms.md`)
+- **Guide de lecture du CNISN** : Guide de lecture du CNISN (niveau 2) (`01_cnisn/reading-guide.md`)
+- **Matrice de lecture du CNISN** : Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
+- **Glossaire du CNISN** : Glossaire du CNISN (niveau 2) (`01_cnisn/glossary.md`)
+- **Acronymes du CNISN** : Acronymes et abréviations du CNISN (niveau 2) (`01_cnisn/acronyms.md`)

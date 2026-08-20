@@ -1,5 +1,5 @@
 ---
-title: "STD-0005 — Norme d'identité patient — PIXm/PDQm"
+title: "STD-0005 : Norme d'identité patient : PIXm/PDQm"
 id: std-0005
 domain: 05_standards
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: Comité National d'Architecture Santé Numérique
 tags: [standards, identite, pixm, pdqm, obligatoire]
 ---
 
-# STD-0005 — Norme d'identité patient — PIXm/PDQm
+# STD-0005 : Norme d'identité patient : PIXm/PDQm
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -81,9 +81,9 @@ Toute dérogation doit être justifiée et approuvée par le Comité National.
 ## Références
 
 - Normes et standards
-- ADR-0004 — PIXm/PDQm
-- ADR-0006 — INP
-- PT-04 — Résolution d'identité
-- ARTSN — Fondation F.1
+- ADR-0004 : PIXm/PDQm
+- ADR-0006 : INP
+- PT-04 : Résolution d'identité
+- ARTSN : Fondation F.1
 
-- **matrice de lecture** — Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
+- **matrice de lecture** : Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)

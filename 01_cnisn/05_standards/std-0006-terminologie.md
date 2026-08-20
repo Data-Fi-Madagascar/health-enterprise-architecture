@@ -1,5 +1,5 @@
 ---
-title: "STD-0006 — Norme terminologique — CIM-10 + LOINC"
+title: "STD-0006 : Norme terminologique : CIM-10 + LOINC"
 id: std-0006
 domain: 05_standards
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: Comité National d'Architecture Santé Numérique
 tags: [standards, terminologie, cim-10, loinc, obligatoire]
 ---
 
-# STD-0006 — Norme terminologique — CIM-10 + LOINC
+# STD-0006 : Norme terminologique : CIM-10 + LOINC
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -82,8 +82,8 @@ Toute dérogation doit être justifiée et approuvée par le Comité National.
 ## Références
 
 - Normes et standards
-- ADR-0009 — Terminologie
-- PT-07 — Terminologie
-- ARTSN — Chapitre ART-2
+- ADR-0009 : Terminologie
+- PT-07 : Terminologie
+- ARTSN : Chapitre ART-2
 
-- **matrice de lecture** — Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
+- **matrice de lecture** : Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)

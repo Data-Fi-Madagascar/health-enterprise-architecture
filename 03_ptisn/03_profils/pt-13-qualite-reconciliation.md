@@ -1,5 +1,5 @@
 ---
-title: PT-13 — Profil technique national
+title: PT-13 : Profil technique national
 id: ptisn-pt-13-qualite-reconciliation
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,14 +9,14 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "pt-13"]
 ---
 
-# PT-13 — Profil technique national
+# PT-13 : Profil technique national
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ## 1. Capacités CNISN
 
-- CAP-INT-11 — Qualité et réconciliation.
+- CAP-INT-11 : Qualité et réconciliation.
 
 ## 2. Chapitres ART applicables
 

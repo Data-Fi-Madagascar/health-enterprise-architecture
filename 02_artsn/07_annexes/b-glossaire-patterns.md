@@ -1,5 +1,5 @@
 ---
-title: Annexe B — Glossaire des patterns cités
+title: Annexe B : Glossaire des patterns cités
 id: artsn-annexe-b-glossaire-patterns
 domain: 02_artsn
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: DEPSI
 tags: [artsn, annexes, glossaire, patterns, niveau-3]
 ---
 
-# Annexe B — Glossaire des patterns cités
+# Annexe B : Glossaire des patterns cités
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+**Niveau :** niveau 3 : Architecture de Référence Technique de la Santé Numérique.
 
 La lecture de ce document est **ponctuelle** pour les décideurs institutionnels, **complémentaire** pour les directions métier et programmes ainsi que pour les partenaires techniques et financiers, et **prioritaire** pour l'équipe DEPSI et ses équipes techniques ainsi que pour les équipes SIS, données et suivi-évaluation. Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
@@ -29,7 +29,7 @@ Séparation du modèle utilisé pour écrire des données (commandes) et du mod�
 
 ## Idempotence
 
-Propriété garantissant qu'une même opération, répétée plusieurs fois, produit exactement le même effet qu'une seule exécution — condition nécessaire pour absorber sans risque une livraison « au moins une fois ». Mobilisée par ART-1.
+Propriété garantissant qu'une même opération, répétée plusieurs fois, produit exactement le même effet qu'une seule exécution : condition nécessaire pour absorber sans risque une livraison « au moins une fois ». Mobilisée par ART-1.
 
 ## Pattern médiateur
 
@@ -65,17 +65,17 @@ Les liens utiles pour approfondir ce document sont les suivants : les chapitres 
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **ART-3** — Historisation événementielle et profils de déploiement (`referentiel/chapitres/art-3.md`)
-- **F.1** — F.1 — Résilience face à la réalité géographique du pays (`referentiel/fondations/f-1.md`)
-- **ART-6** — Analytique et restitution (`referentiel/chapitres/art-6.md`)
-- **ART-1** — Intégration et ingestion (`referentiel/chapitres/art-1.md`)
-- **ART-2** — Médiation et normalisation (`referentiel/chapitres/art-2.md`)
-- **ART-8a** — Orchestration de processus borné (`referentiel/chapitres/art-8a.md`)
-- **ART-8d** — Chorégraphie inter-institutionnelle (`referentiel/chapitres/art-8d.md`)
-- **ART-4** — Référentiels de métadonnées de gestion (`referentiel/chapitres/art-4.md`)
-- **ART-4c** — Éligibilité et couverture (`referentiel/chapitres/art-4c.md`)
-- **ART-4a** — Résolution d'identité (`referentiel/chapitres/art-4a.md`)
-- **ART-8c** — Agrégation par lot (`referentiel/chapitres/art-8c.md`)
-- **Chapitres et patterns de référence** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
-- **Dictionnaire de données fonctionnelles** — Dictionnaire de données fonctionnelles (`02_artsn/05_dictionnaire/index.md`)
+- **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **ART-3** : Historisation événementielle et profils de déploiement (`referentiel/chapitres/art-3.md`)
+- **F.1** : F.1 : Résilience face à la réalité géographique du pays (`referentiel/fondations/f-1.md`)
+- **ART-6** : Analytique et restitution (`referentiel/chapitres/art-6.md`)
+- **ART-1** : Intégration et ingestion (`referentiel/chapitres/art-1.md`)
+- **ART-2** : Médiation et normalisation (`referentiel/chapitres/art-2.md`)
+- **ART-8a** : Orchestration de processus borné (`referentiel/chapitres/art-8a.md`)
+- **ART-8d** : Chorégraphie inter-institutionnelle (`referentiel/chapitres/art-8d.md`)
+- **ART-4** : Référentiels de métadonnées de gestion (`referentiel/chapitres/art-4.md`)
+- **ART-4c** : Éligibilité et couverture (`referentiel/chapitres/art-4c.md`)
+- **ART-4a** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
+- **ART-8c** : Agrégation par lot (`referentiel/chapitres/art-8c.md`)
+- **Chapitres et patterns de référence** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **Dictionnaire de données fonctionnelles** : Dictionnaire de données fonctionnelles (`02_artsn/05_dictionnaire/index.md`)

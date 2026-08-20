@@ -1,5 +1,5 @@
 ---
-title: "VS-04 — Piloter, coordonner et améliorer la performance du système de santé"
+title: "VS-04 : Piloter, coordonner et améliorer la performance du système de santé"
 id: vs-04
 domain: 01_value-streams
 version: "1.0.0""
@@ -9,11 +9,11 @@ owner: Secrétariat Général
 tags: [flux-de-valeur, value-stream]
 ---
 
-# VS-04 — Piloter, coordonner et améliorer la performance du système de santé
+# VS-04 : Piloter, coordonner et améliorer la performance du système de santé
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -26,7 +26,7 @@ tags: [flux-de-valeur, value-stream]
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 <!-- BEGIN:GENERATED mode=monographie source=referentiel/flux-valeur/vs-04.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ## Valeur produite
 
@@ -69,9 +69,9 @@ Ce flux transversal conditionne l’efficacité de tous les autres. Il couvre l�
 ## Étapes de valeur
 
 <!-- BEGIN:GENERATED mode=catalogue source=referentiel/etapes-valeur/ev-22.md,referentiel/etapes-valeur/ev-23.md,referentiel/etapes-valeur/ev-24.md,referentiel/etapes-valeur/ev-25.md,referentiel/etapes-valeur/ev-26.md,referentiel/etapes-valeur/ev-27.md,referentiel/etapes-valeur/ev-28.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### EV-22 — Définition des priorités et planification
+### EV-22 : Définition des priorités et planification
 
 #### Objectif
 
@@ -99,7 +99,7 @@ Proportion de plans opérationnels alignés sur le PDSS et la SNSD
 
 *Rattachement : CAP-08, CAP-16 · fiche EV-22*
 
-### EV-23 — Budgétisation et allocation des ressources
+### EV-23 : Budgétisation et allocation des ressources
 
 #### Objectif
 
@@ -127,7 +127,7 @@ Taux d'exécution budgétaire, part du budget national allouée à la santé
 
 *Rattachement : CAP-12, CAP-08 · fiche EV-23*
 
-### EV-24 — Coordination des acteurs et alignement des partenaires
+### EV-24 : Coordination des acteurs et alignement des partenaires
 
 #### Objectif
 
@@ -155,7 +155,7 @@ Proportion d'initiatives partenaires alignées sur le portefeuille national
 
 *Rattachement : CAP-08, CAP-16 · fiche EV-24*
 
-### EV-25 — Suivi de l'exécution
+### EV-25 : Suivi de l'exécution
 
 #### Objectif
 
@@ -183,7 +183,7 @@ Complétude et promptitude des rapports, taux d'utilisation des tableaux de bord
 
 *Rattachement : CAP-13, CAP-08 · fiche EV-25*
 
-### EV-26 — Analyse de la performance et prise de décision
+### EV-26 : Analyse de la performance et prise de décision
 
 #### Objectif
 
@@ -211,7 +211,7 @@ Nombre de revues de performance, proportion de décisions documentées
 
 *Rattachement : CAP-13, CAP-08 · fiche EV-26*
 
-### EV-27 — Redevabilité et communication publique
+### EV-27 : Redevabilité et communication publique
 
 #### Objectif
 
@@ -239,7 +239,7 @@ Existence et publication de rapports annuels de performance
 
 *Rattachement : CAP-08, CAP-13 · fiche EV-27*
 
-### EV-28 — Amélioration continue
+### EV-28 : Amélioration continue
 
 #### Objectif
 
@@ -271,9 +271,9 @@ Proportion de recommandations mises en œuvre, évolution de la maturité des ca
 ## Processus métier
 
 <!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-10.md,referentiel/processus/prc-11.md,referentiel/processus/prc-12.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### PRC-10 — Planification et allocation des ressources
+### PRC-10 : Planification et allocation des ressources
 
 #### Objectif
 
@@ -281,9 +281,9 @@ Définir les priorités nationales et traduire la stratégie en ressources : pla
 
 #### Étapes couvertes
 
-- EV-22 — Définition des priorités et planification
-- EV-23 — Budgétisation et allocation des ressources
-- EV-24 — Coordination des acteurs et alignement des partenaires
+- EV-22 : Définition des priorités et planification
+- EV-23 : Budgétisation et allocation des ressources
+- EV-24 : Coordination des acteurs et alignement des partenaires
 
 #### Acteurs
 
@@ -295,7 +295,7 @@ Proportion de plans opérationnels alignés sur le PDSS et la SNSD, taux d'exéc
 
 *Rattachement : CAP-03, CAP-08, CAP-09, CAP-12, CAP-13, CAP-14, CAP-15, CAP-16, PP-03, PP-07, PP-08, PP-09, PP-10, CMP-01, CMP-12 · fiche PRC-10*
 
-### PRC-11 — Suivi et pilotage de la performance
+### PRC-11 : Suivi et pilotage de la performance
 
 #### Objectif
 
@@ -303,8 +303,8 @@ Piloter l'exécution sur la base de données fiables : suivi des plans et budget
 
 #### Étapes couvertes
 
-- EV-25 — Suivi de l'exécution
-- EV-26 — Analyse de la performance et prise de décision
+- EV-25 : Suivi de l'exécution
+- EV-26 : Analyse de la performance et prise de décision
 
 #### Acteurs
 
@@ -316,7 +316,7 @@ Complétude et promptitude des rapports, taux d'utilisation des tableaux de bord
 
 *Rattachement : CAP-03, CAP-08, CAP-09, CAP-12, CAP-13, CAP-14, CAP-15, CAP-16, PP-03, PP-07, PP-08, PP-09, PP-10, CMP-01 · fiche PRC-11*
 
-### PRC-12 — Redevabilité et amélioration continue
+### PRC-12 : Redevabilité et amélioration continue
 
 #### Objectif
 
@@ -324,8 +324,8 @@ Rendre compte à la population et aux instances et améliorer en continu le syst
 
 #### Étapes couvertes
 
-- EV-27 — Redevabilité et communication publique
-- EV-28 — Amélioration continue
+- EV-27 : Redevabilité et communication publique
+- EV-28 : Amélioration continue
 
 #### Acteurs
 
@@ -345,5 +345,5 @@ Existence et publication de rapports annuels de performance, proportion de recom
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Capabilités** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)

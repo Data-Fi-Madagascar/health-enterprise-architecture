@@ -13,7 +13,7 @@ tags: [applications, systèmes, numériques]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -74,16 +74,16 @@ Le présent cadre définit le **pourquoi et le quoi** (organisation fonctionnell
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Principes de l'architecture applicative** — Principes de l'architecture applicative (`00_caesn/05_application/principles.md`)
-- **Paysage applicatif cible** — Paysage applicatif cible (`00_caesn/05_application/layers.md`)
-- **Domaines applicatifs par flux de valeur** — Domaines applicatifs cibles par flux de valeur (`00_caesn/05_application/application-domains.md`)
-- **Services numériques partagés** — Services numériques partagés prioritaires (`00_caesn/05_application/shared-services.md`)
-- **Urbanisation applicative** — Règles d'urbanisation applicative (`00_caesn/05_application/urbanisation.md`)
-- **Contraintes d'exploitation** — Contraintes d'exploitation différenciées (`00_caesn/05_application/constraints.md`)
-- **Cycle de vie et homologation** — Cycle de vie applicatif et critères d'homologation (`00_caesn/05_application/lifecycle.md`)
-- **Rationalisation du paysage** — Trajectoire de rationalisation du paysage applicatif (`00_caesn/05_application/rationalization.md`)
-- **Données** — Architecture des données et de l'information sanitaire (`00_caesn/04_data/index.md`)
-- **Capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
-- **Flux de valeur** — Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)
-- **Portefeuille** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Principes de l'architecture applicative** : Principes de l'architecture applicative (`00_caesn/05_application/principles.md`)
+- **Paysage applicatif cible** : Paysage applicatif cible (`00_caesn/05_application/layers.md`)
+- **Domaines applicatifs par flux de valeur** : Domaines applicatifs cibles par flux de valeur (`00_caesn/05_application/application-domains.md`)
+- **Services numériques partagés** : Services numériques partagés prioritaires (`00_caesn/05_application/shared-services.md`)
+- **Urbanisation applicative** : Règles d'urbanisation applicative (`00_caesn/05_application/urbanisation.md`)
+- **Contraintes d'exploitation** : Contraintes d'exploitation différenciées (`00_caesn/05_application/constraints.md`)
+- **Cycle de vie et homologation** : Cycle de vie applicatif et critères d'homologation (`00_caesn/05_application/lifecycle.md`)
+- **Rationalisation du paysage** : Trajectoire de rationalisation du paysage applicatif (`00_caesn/05_application/rationalization.md`)
+- **Données** : Architecture des données et de l'information sanitaire (`00_caesn/04_data/index.md`)
+- **Capabilités** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
+- **Flux de valeur** : Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)
+- **Portefeuille** : Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)

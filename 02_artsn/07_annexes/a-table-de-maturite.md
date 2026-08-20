@@ -1,5 +1,5 @@
 ---
-title: Annexe A — Table de maturité par chapitre
+title: Annexe A : Table de maturité par chapitre
 id: artsn-annexe-a-maturite
 domain: 02_artsn
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: DEPSI
 tags: [artsn, annexes, maturite, statuts, niveau-3]
 ---
 
-# Annexe A — Table de maturité par chapitre
+# Annexe A : Table de maturité par chapitre
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+**Niveau :** niveau 3 : Architecture de Référence Technique de la Santé Numérique.
 
 La lecture de ce document est **ponctuelle** pour les décideurs institutionnels, **complémentaire** pour les directions métier et programmes ainsi que pour les équipes SIS, données et suivi-évaluation et les partenaires techniques et financiers, et **prioritaire** pour l'équipe DEPSI et ses équipes techniques. Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
@@ -21,11 +21,11 @@ La table de maturité fixe le statut de chaque chapitre et la condition de passa
 
 | Chapitre | Statut | Condition de passage au statut supérieur |
 |----------|--------|------------------------------------------|
-| Fondations F.1–F.4 | Stable | — |
+| Fondations F.1–F.4 | Stable | : |
 | ART-0 | Proposition ouverte | Confirmation par une initiative impliquant une source hors gouvernance sanitaire |
-| ART-1 | Stable | — |
+| ART-1 | Stable | : |
 | ART-2 | Stable pour registre structurel/sémantique/géospatial/tarifaire ; Proposition ouverte pour registre intersectoriel | Confirmation du registre intersectoriel par une initiative concernée |
-| ART-3 | Stable | — |
+| ART-3 | Stable | : |
 | ART-4 | Stable | Reconfirmation par une initiative supplémentaire |
 | ART-4a | Provisoire | Confirmation par une seconde initiative |
 | ART-4b | Provisoire | Confirmation par une seconde initiative |
@@ -33,7 +33,7 @@ La table de maturité fixe le statut de chaque chapitre et la condition de passa
 | ART-4d | Proposition ouverte | Confirmation par une initiative intersectorielle |
 | ART-5 | Stable pour principe ; Proposition ouverte pour branches d'escalade | Instruction détaillée de chaque branche par domaine |
 | ART-6 | Provisoire | Confirmation par une initiative combinant plusieurs familles de projection |
-| ART-7 | Stable | — |
+| ART-7 | Stable | : |
 | ART-8a | Provisoire | Confirmation par une seconde initiative |
 | ART-8b | Proposition ouverte | Confirmation par une initiative supplémentaire |
 | ART-8c | Proposition ouverte | Confirmation par une initiative supplémentaire |
@@ -51,10 +51,10 @@ Les liens utiles pour approfondir ce document sont les suivants : les chapitres 
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **CAP-10** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
-- **ART-10** — Logistique (`referentiel/chapitres/art-10.md`)
-- **ART-5** — Cohérence et qualité des données (`referentiel/chapitres/art-5.md`)
-- **ART-9** — Garanties transactionnelles fortes (`referentiel/chapitres/art-9.md`)
-- **Chapitres et patterns de référence** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
-- **Gouvernance de l'ARTSN** — Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)
+- **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **CAP-10** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
+- **ART-10** : Logistique (`referentiel/chapitres/art-10.md`)
+- **ART-5** : Cohérence et qualité des données (`referentiel/chapitres/art-5.md`)
+- **ART-9** : Garanties transactionnelles fortes (`referentiel/chapitres/art-9.md`)
+- **Chapitres et patterns de référence** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **Gouvernance de l'ARTSN** : Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)

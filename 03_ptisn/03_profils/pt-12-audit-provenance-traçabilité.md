@@ -1,5 +1,5 @@
 ---
-title: PT-12 — Profil technique national
+title: PT-12 : Profil technique national
 id: ptisn-pt-12-audit-provenance-traçabilité
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,14 +9,14 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "pt-12"]
 ---
 
-# PT-12 — Profil technique national
+# PT-12 : Profil technique national
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ## 1. Capacité CNISN
 
-**CAP-INT-10 — Provenance, audit et traçabilité**
+**CAP-INT-10 : Provenance, audit et traçabilité**
 
 ## 2. Chapitres ART applicables
 

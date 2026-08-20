@@ -1,5 +1,5 @@
 ---
-title: PT-06 — Profil technique national
+title: PT-06 : Profil technique national
 id: ptisn-pt-06-referentiel-structures-services
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,14 +9,14 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "pt-06"]
 ---
 
-# PT-06 — Profil technique national
+# PT-06 : Profil technique national
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ## 1. Capacité CNISN
 
-**CAP-INT-04 — Référentiel des structures et services de santé**
+**CAP-INT-04 : Référentiel des structures et services de santé**
 
 ## 2. Chapitres ART applicables
 
@@ -44,7 +44,7 @@ tags: ["ptisn", "niveau-4", "profils", "pt-06"]
 
 ## 5. Profil cible
 
-**IHE mCSD — Mobile Care Services Discovery**
+**IHE mCSD : Mobile Care Services Discovery**
 
 mCSD permet la publication et la recherche d’organisations, localisations, services et autres ressources associées dans des architectures centralisées ou fédérées.
 

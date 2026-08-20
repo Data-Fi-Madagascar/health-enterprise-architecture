@@ -1,5 +1,5 @@
 ---
-title: "ADR-0002 — Adoption du profil IHE mADX pour l'échange de données agrégées"
+title: "ADR-0002 : Adoption du profil IHE mADX pour l'échange de données agrégées"
 id: adr-0002
 domain: 06_decisions
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: DEPSI
 tags: [adr, interopérabilité, madx, données-agrégées]
 ---
 
-# ADR-0002 — Adoption du profil IHE mADX pour l'échange de données agrégées
+# ADR-0002 : Adoption du profil IHE mADX pour l'échange de données agrégées
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -73,8 +73,8 @@ Il est compatible avec DHIS2, le système de collecte national déjà déployé,
 
 ## Références
 
-- PT-08 — Profil technique national
-- ARTSN — Chapitre ART-5
-- CNISN — CAP-INT-05
+- PT-08 : Profil technique national
+- ARTSN : Chapitre ART-5
+- CNISN : CAP-INT-05
 
-- **matrice de lecture** — Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
+- **matrice de lecture** : Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)

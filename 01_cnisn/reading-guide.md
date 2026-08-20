@@ -13,7 +13,7 @@ tags: [cnisn, lecture, niveau-2, guide]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 2 — Cadre National d'Interopérabilité de la Santé Numérique.
+**Niveau :** niveau 2 : Cadre National d'Interopérabilité de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -78,12 +78,12 @@ Les principes sont organisés en six catégories qui couvrent l'ensemble des dim
 
 | Catégorie | Principes | Objet |
 |-----------|-----------|-------|
-| **A** — Autorité et données de référence | P-INT-01 à P-INT-04 | Sources autoritatives, résolution, copies, historisation |
-| **B** — Contractualisation | P-INT-05 à P-INT-09 | Contrats, versionnement, responsabilités, catalogues |
-| **C** — Gouvernance interinstitutionnelle | P-INT-10 à P-INT-13 | Accords, arbitrage, dérogations |
-| **D** — Sécurité et autorisation | P-INT-14 à P-INT-18 | Bases d'autorisation, finalité, résidence, minimisation |
-| **E** — Neutralité et réversibilité | P-INT-19 à P-INT-22 | Neutralité technologique, portabilité, progressivité |
-| **F** — Conformité | P-INT-23 à P-INT-25 | Preuves, applicabilité, réévaluation |
+| **A** : Autorité et données de référence | P-INT-01 à P-INT-04 | Sources autoritatives, résolution, copies, historisation |
+| **B** : Contractualisation | P-INT-05 à P-INT-09 | Contrats, versionnement, responsabilités, catalogues |
+| **C** : Gouvernance interinstitutionnelle | P-INT-10 à P-INT-13 | Accords, arbitrage, dérogations |
+| **D** : Sécurité et autorisation | P-INT-14 à P-INT-18 | Bases d'autorisation, finalité, résidence, minimisation |
+| **E** : Neutralité et réversibilité | P-INT-19 à P-INT-22 | Neutralité technologique, portabilité, progressivité |
+| **F** : Conformité | P-INT-23 à P-INT-25 | Preuves, applicabilité, réévaluation |
 
 ## 5. Les 14 capacités d'interopérabilité
 
@@ -108,9 +108,9 @@ Les principes sont organisés en six catégories qui couvrent l'ensemble des dim
 
 | Niveau | Document | Lien |
 |--------|----------|------|
-| 1 — CAESN | Cadre d'Architecture d'Entreprise | ../00_caesn/00_overview/index.md |
-| 3 — ARTSN | Architecture de Référence Technique | ../02_artsn/index.md |
-| 4 — PTISN | Profils techniques d'implémentation | ../03_ptisn/index.md |
+| 1 : CAESN | Cadre d'Architecture d'Entreprise | ../00_caesn/00_overview/index.md |
+| 3 : ARTSN | Architecture de Référence Technique | ../02_artsn/index.md |
+| 4 : PTISN | Profils techniques d'implémentation | ../03_ptisn/index.md |
 
 ## 7. Documents complémentaires
 
@@ -118,16 +118,16 @@ Le guide de lecture s'accompagne de la matrice de lecture offrant une vue crois�
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
-- **Préambule** — Préambule du CNISN (`01_cnisn/00_introduction/index.md`)
-- **Principes** — Partie I — Principes nationaux d'interopérabilité de santé (`01_cnisn/01_principes/index.md`)
-- **Capacités** — Partie II — Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
-- **Gouvernance** — Partie III — Gouvernance (`01_cnisn/03_gouvernance/index.md`)
-- **Conformité** — Partie IV — Conformité (`01_cnisn/04_conformite/index.md`)
-- **Standards** — Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
-- **Trajectoire** — Partie V — Trajectoire de mise en œuvre (`01_cnisn/05_trajectoire/index.md`)
-- **Indicateurs** — Partie VI — Indicateurs de suivi (`01_cnisn/06_indicateurs/index.md`)
-- **Conclusion** — Conclusion du CNISN (`01_cnisn/07_conclusion/index.md`)
-- **../00_caesn/00_overview/index.md** — Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
-- **../02_artsn/index.md** — Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
-- **../03_ptisn/index.md** — Profils techniques d'implémentation de la Santé Numérique (PTISN) (`03_ptisn/index.md`)
+- **matrice de lecture** : Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
+- **Préambule** : Préambule du CNISN (`01_cnisn/00_introduction/index.md`)
+- **Principes** : Partie I : Principes nationaux d'interopérabilité de santé (`01_cnisn/01_principes/index.md`)
+- **Capacités** : Partie II : Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
+- **Gouvernance** : Partie III : Gouvernance (`01_cnisn/03_gouvernance/index.md`)
+- **Conformité** : Partie IV : Conformité (`01_cnisn/04_conformite/index.md`)
+- **Standards** : Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
+- **Trajectoire** : Partie V : Trajectoire de mise en œuvre (`01_cnisn/05_trajectoire/index.md`)
+- **Indicateurs** : Partie VI : Indicateurs de suivi (`01_cnisn/06_indicateurs/index.md`)
+- **Conclusion** : Conclusion du CNISN (`01_cnisn/07_conclusion/index.md`)
+- **../00_caesn/00_overview/index.md** : Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
+- **../02_artsn/index.md** : Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
+- **../03_ptisn/index.md** : Profils techniques d'implémentation de la Santé Numérique (PTISN) (`03_ptisn/index.md`)

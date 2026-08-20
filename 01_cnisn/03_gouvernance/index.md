@@ -1,5 +1,5 @@
 ---
-title: Partie III — Gouvernance
+title: Partie III : Gouvernance
 id: cnisn-gouvernance
 domain: 01_cnisn
 version: "1.0.0"
@@ -9,7 +9,7 @@ owner: DEPSI
 tags: ["cnisn", "niveau-2", "interopérabilité", "gouvernance"]
 ---
 
-# Partie III — Gouvernance
+# Partie III : Gouvernance
 
 
 ## 1. Instance porteuse
@@ -48,11 +48,11 @@ Elle valide les accords interinstitutionnels, coordonne avec l'Unité de Gouvern
 
 La gouvernance de la santé numérique s'inscrit dans une chaîne d'autorité à trois niveaux :
 
-**Unité de Gouvernance Digitale (UGD)** — instance nationale de gouvernance du numérique, porteuse du cadre national d'architecture.
+**Unité de Gouvernance Digitale (UGD)** : instance nationale de gouvernance du numérique, porteuse du cadre national d'architecture.
 
-**Comité National d'Architecture Santé Numérique (CNASN)** — comité d'architecture placé sous l'autorité de l'UGD. Il fixe les orientations stratégiques, gouverne les services pangouvernementaux, arbitre les divergences entre secteurs, valide les mécanismes interinstitutionnels, assure la cohérence nationale, instruit et valide les décisions d'architecture (ADR), et organise l'homologation des initiatives.
+**Comité National d'Architecture Santé Numérique (CNASN)** : comité d'architecture placé sous l'autorité de l'UGD. Il fixe les orientations stratégiques, gouverne les services pangouvernementaux, arbitre les divergences entre secteurs, valide les mécanismes interinstitutionnels, assure la cohérence nationale, instruit et valide les décisions d'architecture (ADR), et organise l'homologation des initiatives.
 
-**Sous-comité d'interopérabilité sectoriel santé** — sous-comité sectoriel du CNASN, instance porteuse du CNISN. Il décline les orientations nationales pour le secteur santé, gouverne les services de santé, valide les profils sectoriels, instruit les initiatives, prépare l'homologation sectorielle sous l'autorité du CNASN et remonte les besoins transversaux au CNASN.
+**Sous-comité d'interopérabilité sectoriel santé** : sous-comité sectoriel du CNASN, instance porteuse du CNISN. Il décline les orientations nationales pour le secteur santé, gouverne les services de santé, valide les profils sectoriels, instruit les initiatives, prépare l'homologation sectorielle sous l'autorité du CNASN et remonte les besoins transversaux au CNASN.
 
 ## 4. Rôle des propriétaires de capacités
 

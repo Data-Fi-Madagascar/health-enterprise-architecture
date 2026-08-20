@@ -13,7 +13,7 @@ tags: [données, référentiels, normes]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -60,8 +60,8 @@ Chaque référentiel national doit disposer de :
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Domaines de données** — Domaines de données prioritaires (`00_caesn/04_data/domains.md`)
-- **Dictionnaire de données ARTSN** — Dictionnaire de données fonctionnelles (`02_artsn/05_dictionnaire/index.md`)
-- **Composants DPI-H** — Capabilités numériques transversales et composants DPI-H (`00_caesn/03_capabilities/digital.md`)
-- **Architecture applicative** — Architecture applicative et systèmes numériques (`00_caesn/05_application/index.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Domaines de données** : Domaines de données prioritaires (`00_caesn/04_data/domains.md`)
+- **Dictionnaire de données ARTSN** : Dictionnaire de données fonctionnelles (`02_artsn/05_dictionnaire/index.md`)
+- **Composants DPI-H** : Capabilités numériques transversales et composants DPI-H (`00_caesn/03_capabilities/digital.md`)
+- **Architecture applicative** : Architecture applicative et systèmes numériques (`00_caesn/05_application/index.md`)

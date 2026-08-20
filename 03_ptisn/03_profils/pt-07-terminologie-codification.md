@@ -1,5 +1,5 @@
 ---
-title: PT-07 — Profil technique national
+title: PT-07 : Profil technique national
 id: ptisn-pt-07-terminologie-codification
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,20 +9,20 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "pt-07"]
 ---
 
-# PT-07 — Profil technique national
+# PT-07 : Profil technique national
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ## 1. Capacité CNISN
 
-**CAP-INT-05 — Terminologie et codification communes**
+**CAP-INT-05 : Terminologie et codification communes**
 
 ## 2. Chapitres ART applicables
 
-- ART-2 — normalisation sémantique ;
-- ART-4 — référentiels ;
-- ART-5 — qualité.
+- ART-2 : normalisation sémantique ;
+- ART-4 : référentiels ;
+- ART-5 : qualité.
 
 ## 3. Service national
 
@@ -44,7 +44,7 @@ Le service doit permettre :
 
 ## 5. Profil cible
 
-**IHE SVCM — Sharing Valuesets, Codes, and Maps**
+**IHE SVCM : Sharing Valuesets, Codes, and Maps**
 
 SVCM définit une interface légère, fondée sur FHIR, pour récupérer des nomenclatures, ensembles de valeurs et correspondances centralement gérés. Il prévoit notamment la consultation, l’expansion, la validation et la traduction de codes.
 

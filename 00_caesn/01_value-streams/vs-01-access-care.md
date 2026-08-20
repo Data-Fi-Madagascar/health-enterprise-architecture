@@ -1,5 +1,5 @@
 ---
-title: "VS-01 — Accéder à des services de santé essentiels, intégrés, équitables et de qualité"
+title: "VS-01 : Accéder à des services de santé essentiels, intégrés, équitables et de qualité"
 id: vs-01
 domain: 01_value-streams
 version: "1.0.0""
@@ -9,11 +9,11 @@ owner: Direction des soins
 tags: [flux-de-valeur, value-stream]
 ---
 
-# VS-01 — Accéder à des services de santé essentiels, intégrés, équitables et de qualité
+# VS-01 : Accéder à des services de santé essentiels, intégrés, équitables et de qualité
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -26,7 +26,7 @@ tags: [flux-de-valeur, value-stream]
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 <!-- BEGIN:GENERATED mode=monographie source=referentiel/flux-valeur/vs-01.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ## Valeur produite
 
@@ -71,9 +71,9 @@ Ce flux couvre l’ensemble du parcours d’un patient, depuis la reconnaissance
 ## Étapes de valeur
 
 <!-- BEGIN:GENERATED mode=catalogue source=referentiel/etapes-valeur/ev-01.md,referentiel/etapes-valeur/ev-02.md,referentiel/etapes-valeur/ev-03.md,referentiel/etapes-valeur/ev-04.md,referentiel/etapes-valeur/ev-05.md,referentiel/etapes-valeur/ev-06.md,referentiel/etapes-valeur/ev-07.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### EV-01 — Reconnaissance du besoin et orientation
+### EV-01 : Reconnaissance du besoin et orientation
 
 #### Objectif
 
@@ -101,7 +101,7 @@ Taux de recours aux soins, délai moyen d'accès à une formation sanitaire
 
 *Rattachement : CAP-01, CAP-04 · fiche EV-01*
 
-### EV-02 — Accueil et enregistrement
+### EV-02 : Accueil et enregistrement
 
 #### Objectif
 
@@ -129,7 +129,7 @@ Taux de dossiers ouverts, délai d'enregistrement
 
 *Rattachement : CAP-01, CAP-14, CAP-15 · fiche EV-02*
 
-### EV-03 — Consultation et diagnostic
+### EV-03 : Consultation et diagnostic
 
 #### Objectif
 
@@ -157,7 +157,7 @@ Taux de consultations avec diagnostic documenté
 
 *Rattachement : CAP-01, CAP-13 · fiche EV-03*
 
-### EV-04 — Traitement et prise en charge
+### EV-04 : Traitement et prise en charge
 
 #### Objectif
 
@@ -185,7 +185,7 @@ Taux de disponibilité des médicaments traceurs
 
 *Rattachement : CAP-01, CAP-10, CAP-11 · fiche EV-04*
 
-### EV-05 — Référence et contre-référence
+### EV-05 : Référence et contre-référence
 
 #### Objectif
 
@@ -213,7 +213,7 @@ Taux de référence complétée avec retour d'information
 
 *Rattachement : CAP-02 · fiche EV-05*
 
-### EV-06 — Suivi et continuité des soins
+### EV-06 : Suivi et continuité des soins
 
 #### Objectif
 
@@ -241,7 +241,7 @@ Taux de patients perdus de vue, taux d'observance thérapeutique
 
 *Rattachement : CAP-01, CAP-02 · fiche EV-06*
 
-### EV-07 — Amélioration de la qualité
+### EV-07 : Amélioration de la qualité
 
 #### Objectif
 
@@ -273,9 +273,9 @@ Proportion de formations sanitaires ayant réalisé une revue qualité dans le m
 ## Processus métier
 
 <!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-01.md,referentiel/processus/prc-02.md,referentiel/processus/prc-03.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### PRC-01 — Accès, orientation et admission du patient
+### PRC-01 : Accès, orientation et admission du patient
 
 #### Objectif
 
@@ -283,8 +283,8 @@ Assurer l'entrée du patient dans le système de soins : reconnaissance du besoi
 
 #### Étapes couvertes
 
-- EV-01 — Reconnaissance du besoin et orientation
-- EV-02 — Accueil et enregistrement
+- EV-01 : Reconnaissance du besoin et orientation
+- EV-02 : Accueil et enregistrement
 
 #### Acteurs
 
@@ -296,7 +296,7 @@ Taux de recours aux soins, délai moyen d'accès à une formation sanitaire, tau
 
 *Rattachement : CAP-01, CAP-02, CAP-03, CAP-04, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-01, PP-02, PP-04, PP-05, PP-06 · fiche PRC-01*
 
-### PRC-02 — Prestation des soins cliniques
+### PRC-02 : Prestation des soins cliniques
 
 #### Objectif
 
@@ -304,9 +304,9 @@ Assurer le cœur clinique du parcours : consultation et diagnostic, traitement e
 
 #### Étapes couvertes
 
-- EV-03 — Consultation et diagnostic
-- EV-04 — Traitement et prise en charge
-- EV-05 — Référence et contre-référence
+- EV-03 : Consultation et diagnostic
+- EV-04 : Traitement et prise en charge
+- EV-05 : Référence et contre-référence
 
 #### Acteurs
 
@@ -318,7 +318,7 @@ Taux de consultations avec diagnostic documenté, taux de disponibilité des mé
 
 *Rattachement : CAP-01, CAP-02, CAP-03, CAP-04, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-01, PP-02, PP-04, PP-05, PP-06 · fiche PRC-02*
 
-### PRC-03 — Continuité, suivi et qualité des soins
+### PRC-03 : Continuité, suivi et qualité des soins
 
 #### Objectif
 
@@ -326,8 +326,8 @@ Garantir la continuité des soins après l'épisode et l'amélioration continue 
 
 #### Étapes couvertes
 
-- EV-06 — Suivi et continuité des soins
-- EV-07 — Amélioration de la qualité
+- EV-06 : Suivi et continuité des soins
+- EV-07 : Amélioration de la qualité
 
 #### Acteurs
 
@@ -347,5 +347,5 @@ Taux de patients perdus de vue, taux d'observance thérapeutique, proportion de 
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Capabilités** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)

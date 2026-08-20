@@ -1,5 +1,5 @@
 ---
-title: PT-04 — Profil technique national
+title: PT-04 : Profil technique national
 id: ptisn-pt-04-resolution-identite-beneficiaire
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,21 +9,21 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "pt-04"]
 ---
 
-# PT-04 — Profil technique national
+# PT-04 : Profil technique national
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ## 1. Capacité CNISN
 
-**CAP-INT-01 — Résolution d'identité du bénéficiaire**
+**CAP-INT-01 : Résolution d'identité du bénéficiaire**
 
 ## 2. Chapitres ART applicables
 
-- ART-4 — référentiels ;
-- ART-4a — Résolution d'identité ;
-- ART-4b — bases d'autorisation ;
-- ART-7 — sécurité.
+- ART-4 : référentiels ;
+- ART-4a : Résolution d'identité ;
+- ART-4b : bases d'autorisation ;
+- ART-7 : sécurité.
 
 ## 3. Service national
 

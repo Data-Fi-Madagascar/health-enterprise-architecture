@@ -13,7 +13,7 @@ tags: [applications, exploitation, terrain]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -43,6 +43,6 @@ Toute application destinée au terrain (formations sanitaires, districts, commun
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Architecture applicative** — Architecture applicative et systèmes numériques (`00_caesn/05_application/index.md`)
-- **Principes AA-05** — Principes de l'architecture applicative (`00_caesn/05_application/principles.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Architecture applicative** : Architecture applicative et systèmes numériques (`00_caesn/05_application/index.md`)
+- **Principes AA-05** : Principes de l'architecture applicative (`00_caesn/05_application/principles.md`)

@@ -1,5 +1,5 @@
 ---
-title: "Partie I — Principes nationaux d'interopérabilité de santé"
+title: "Partie I : Principes nationaux d'interopérabilité de santé"
 id: cnisn-principes
 domain: 01_cnisn
 version: "1.0.0"
@@ -9,15 +9,15 @@ owner: DEPSI
 tags: ["cnisn", "niveau-2", "interopérabilité", "principes"]
 ---
 
-# Partie I — Principes nationaux d'interopérabilité de santé
+# Partie I : Principes nationaux d'interopérabilité de santé
 
 Ce catalogue référence les 25 principes du CNISN. Le texte de référence de chaque principe vit dans le référentiel : `referentiel/principes/p-int-XX.md`.
 
-## Catégorie A — Autorité et données de référence
+## Catégorie A : Autorité et données de référence
 <!-- BEGIN:GENERATED source=referentiel/principes/p-int-01.md,referentiel/principes/p-int-02.md,referentiel/principes/p-int-03.md,referentiel/principes/p-int-04.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### P-INT-01 — Autorité désignée
+### P-INT-01 : Autorité désignée
 
 Toute donnée de référence partagée doit disposer :
 
@@ -44,7 +44,7 @@ Il signifie qu’une règle non ambiguë doit déterminer :
 
 *Rattachement : CAP-14 · fiche P-INT-01*
 
-### P-INT-02 — Résolution contre l’autorité
+### P-INT-02 : Résolution contre l’autorité
 
 Tout système utilisant une donnée de référence partagée doit résoudre cette donnée contre l’autorité désignée.
 
@@ -63,7 +63,7 @@ Les domaines concernés comprennent notamment :
 
 *Rattachement : CAP-14 · fiche P-INT-02*
 
-### P-INT-03 — Copies locales non autoritatives
+### P-INT-03 : Copies locales non autoritatives
 
 Des copies locales, caches, répliques ou extraits hors ligne peuvent être utilisés lorsque les besoins de performance, de résilience ou de connectivité le justifient.
 
@@ -81,7 +81,7 @@ Une copie locale ne doit pas devenir implicitement une nouvelle source faisant a
 
 *Rattachement : CAP-14 · fiche P-INT-03*
 
-### P-INT-04 — Historisation des références
+### P-INT-04 : Historisation des références
 
 Toute donnée de référence susceptible d’évoluer doit être versionnée dans le temps.
 
@@ -99,11 +99,11 @@ Les correspondances entre deux référentiels doivent également être :
 *Rattachement : CAP-14 · fiche P-INT-04*
 
 <!-- END:GENERATED -->
-## Catégorie B — Contractualisation des échanges et services
+## Catégorie B : Contractualisation des échanges et services
 <!-- BEGIN:GENERATED source=referentiel/principes/p-int-05.md,referentiel/principes/p-int-06.md,referentiel/principes/p-int-07.md,referentiel/principes/p-int-08.md,referentiel/principes/p-int-09.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### P-INT-05 — Contrat explicite
+### P-INT-05 : Contrat explicite
 
 Tout échange entre deux systèmes doit être régi par un contrat explicite.
 
@@ -131,7 +131,7 @@ Aucune intégration durable ne doit dépendre uniquement :
 
 *Rattachement : CAP-14 · fiche P-INT-05*
 
-### P-INT-06 — Versionnement et compatibilité
+### P-INT-06 : Versionnement et compatibilité
 
 Tout contrat d’échange doit être versionné.
 
@@ -149,7 +149,7 @@ Aucune modification ne doit rompre silencieusement un système déjà intégré.
 
 *Rattachement : CAP-14 · fiche P-INT-06*
 
-### P-INT-07 — Responsabilité de la donnée
+### P-INT-07 : Responsabilité de la donnée
 
 Pour chaque donnée ou événement échangé, les responsabilités suivantes doivent être explicites :
 
@@ -175,7 +175,7 @@ Il convient de distinguer :
 
 *Rattachement : CAP-13 · fiche P-INT-07*
 
-### P-INT-08 — Publication au catalogue des services
+### P-INT-08 : Publication au catalogue des services
 
 Tout service partagé ou exposé à plusieurs systèmes doit être enregistré dans le catalogue national ou sectoriel applicable.
 
@@ -197,7 +197,7 @@ Un service non enregistré ne doit pas être considéré comme un service nation
 
 *Rattachement : CAP-14, CAP-16 · fiche P-INT-08*
 
-### P-INT-09 — Publication des contrats
+### P-INT-09 : Publication des contrats
 
 Tout contrat d’interface, d’événement, de notification ou de fichier doit être publié dans un registre gouverné.
 
@@ -215,11 +215,11 @@ Ce registre doit permettre de connaître :
 *Rattachement : CAP-14, CAP-16 · fiche P-INT-09*
 
 <!-- END:GENERATED -->
-## Catégorie C — Gouvernance interinstitutionnelle
+## Catégorie C : Gouvernance interinstitutionnelle
 <!-- BEGIN:GENERATED source=referentiel/principes/p-int-10.md,referentiel/principes/p-int-11.md,referentiel/principes/p-int-12.md,referentiel/principes/p-int-13.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### P-INT-10 — Accord préalable
+### P-INT-10 : Accord préalable
 
 Toute intégration impliquant une source ou un consommateur relevant d’une autorité différente doit être couverte par un accord explicite.
 
@@ -243,7 +243,7 @@ Une intégration technique ne peut pas compenser l’absence d’un accord de go
 
 *Rattachement : CAP-14 · fiche P-INT-10*
 
-### P-INT-11 — Arbitrage des conflits d’autorité
+### P-INT-11 : Arbitrage des conflits d’autorité
 
 Toute divergence portant sur :
 
@@ -260,7 +260,7 @@ Elle ne doit pas être résolue durablement par un arrangement informel entre é
 
 *Rattachement : CAP-14 · fiche P-INT-11*
 
-### P-INT-12 — Dérogation explicite
+### P-INT-12 : Dérogation explicite
 
 Toute initiative s’écartant d’un principe du CNISN doit produire une dérogation explicite.
 
@@ -279,7 +279,7 @@ Une dérogation non enregistrée constitue une non-conformité.
 
 *Rattachement : CAP-14, CAP-16 · fiche P-INT-12*
 
-### P-INT-13 — Dérogation d’urgence
+### P-INT-13 : Dérogation d’urgence
 
 Une procédure accélérée peut être utilisée lorsqu’une urgence sanitaire ou opérationnelle ne permet pas de suivre le processus normal.
 
@@ -301,11 +301,11 @@ La dérogation d’urgence doit être :
 *Rattachement : CAP-14, CAP-16 · fiche P-INT-13*
 
 <!-- END:GENERATED -->
-## Catégorie D — Sécurité, confiance et bases d’autorisation
+## Catégorie D : Sécurité, confiance et bases d’autorisation
 <!-- BEGIN:GENERATED source=referentiel/principes/p-int-14.md,referentiel/principes/p-int-15.md,referentiel/principes/p-int-16.md,referentiel/principes/p-int-17.md,referentiel/principes/p-int-18.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### P-INT-14 — Base d’autorisation explicite
+### P-INT-14 : Base d’autorisation explicite
 
 Tout traitement ou accès à une donnée échangée doit reposer sur une base d’autorisation explicite et documentée.
 
@@ -323,7 +323,7 @@ L’autorisation ne doit jamais être présumée uniquement parce qu’un systè
 
 *Rattachement : CAP-15 · fiche P-INT-14*
 
-### P-INT-15 — Limitation à la finalité
+### P-INT-15 : Limitation à la finalité
 
 Une donnée obtenue pour une finalité ne doit pas être réutilisée pour une autre finalité sans :
 
@@ -344,7 +344,7 @@ Les droits d’accès doivent être limités selon :
 
 *Rattachement : CAP-15 · fiche P-INT-15*
 
-### P-INT-16 — Résidence et non-réplication
+### P-INT-16 : Résidence et non-réplication
 
 Toute contrainte de résidence doit être respectée.
 
@@ -360,7 +360,7 @@ Une copie ne doit pas être créée uniquement parce qu’elle est techniquement
 
 *Rattachement : CAP-14, CAP-15 · fiche P-INT-16*
 
-### P-INT-17 — Minimisation
+### P-INT-17 : Minimisation
 
 Tout échange doit se limiter aux données nécessaires à la finalité déclarée.
 
@@ -376,7 +376,7 @@ Les données personnelles ou cliniques ne doivent pas être ajoutées à un flux
 
 *Rattachement : CAP-15 · fiche P-INT-17*
 
-### P-INT-18 — Traçabilité différenciée
+### P-INT-18 : Traçabilité différenciée
 
 Les initiatives doivent distinguer :
 
@@ -397,11 +397,11 @@ Elles peuvent disposer :
 *Rattachement : CAP-13, CAP-15 · fiche P-INT-18*
 
 <!-- END:GENERATED -->
-## Catégorie E — Neutralité, réversibilité et progressivité
+## Catégorie E : Neutralité, réversibilité et progressivité
 <!-- BEGIN:GENERATED source=referentiel/principes/p-int-19.md,referentiel/principes/p-int-20.md,referentiel/principes/p-int-21.md,referentiel/principes/p-int-22.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### P-INT-19 — Neutralité technologique
+### P-INT-19 : Neutralité technologique
 
 Le CNISN ne prescrit aucun produit, fournisseur ou technologie.
 
@@ -417,7 +417,7 @@ L’utilisation d’un produit connu ou recommandé ne prouve pas automatiquemen
 
 *Rattachement : CAP-14 · fiche P-INT-19*
 
-### P-INT-20 — Portabilité et réversibilité
+### P-INT-20 : Portabilité et réversibilité
 
 Toute initiative doit prévoir la possibilité de :
 
@@ -432,7 +432,7 @@ La stratégie de sortie doit être définie avant la mise en production des serv
 
 *Rattachement : CAP-14 · fiche P-INT-20*
 
-### P-INT-21 — Progressivité
+### P-INT-21 : Progressivité
 
 La mise en œuvre doit être progressive.
 
@@ -453,7 +453,7 @@ Toute extension doit s’appuyer sur :
 
 *Rattachement : CAP-16 · fiche P-INT-21*
 
-### P-INT-22 — Fonctionnement en connectivité contrainte
+### P-INT-22 : Fonctionnement en connectivité contrainte
 
 Les services nationaux doivent prendre en compte les conditions réelles de connectivité.
 
@@ -470,11 +470,11 @@ Lorsqu’un usage doit fonctionner hors ligne ou avec une connectivité intermit
 *Rattachement : CAP-14 · fiche P-INT-22*
 
 <!-- END:GENERATED -->
-## Catégorie F — Conformité et homologation
+## Catégorie F : Conformité et homologation
 <!-- BEGIN:GENERATED source=referentiel/principes/p-int-23.md,referentiel/principes/p-int-24.md,referentiel/principes/p-int-25.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### P-INT-23 — Conformité fondée sur des preuves
+### P-INT-23 : Conformité fondée sur des preuves
 
 La conformité au CNISN ne peut pas être établie uniquement par une déclaration narrative.
 
@@ -493,7 +493,7 @@ Elle doit être démontrée par des preuves telles que :
 
 *Rattachement : CAP-16 · fiche P-INT-23*
 
-### P-INT-24 — Applicabilité déclarée
+### P-INT-24 : Applicabilité déclarée
 
 Toute initiative doit déclarer :
 
@@ -508,7 +508,7 @@ L’absence d’applicabilité doit être justifiée lorsqu’un domaine semble 
 
 *Rattachement : CAP-16 · fiche P-INT-24*
 
-### P-INT-25 — Réévaluation continue
+### P-INT-25 : Réévaluation continue
 
 La conformité doit être réévaluée lorsqu’intervient :
 

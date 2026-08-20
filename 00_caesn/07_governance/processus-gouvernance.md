@@ -13,7 +13,7 @@ tags: [gouvernance, processus, workflow, cnasn, niveau-1]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -49,9 +49,9 @@ Ce document décrit les processus opérationnels de la gouvernance de l'architec
 
 | Niveau | Qui valide | Quoi |
 |--------|-----------|------|
-| **N1 — Technique** | Équipe projet + relecteur | Conformité technique, cohérence avec les standards |
-| **N2 — Architecturale** | CNASN | Alignement cadre, impact transversal, dérogations |
-| **N3 — Stratégique** | Secrétaire Général + BRV | Impact politique, budget, soutenabilité |
+| **N1 : Technique** | Équipe projet + relecteur | Conformité technique, cohérence avec les standards |
+| **N2 : Architecturale** | CNASN | Alignement cadre, impact transversal, dérogations |
+| **N3 : Stratégique** | Secrétaire Général + BRV | Impact politique, budget, soutenabilité |
 
 ---
 
@@ -131,7 +131,7 @@ start
 :Remplir le template de modification;
 :Joindre les preuves techniques;
 
-|Relecture N1 — Technique|
+|Relecture N1 : Technique|
 :Vérifier la cohérence technique;
 if (Conforme ?) then (oui)
   :Approuver N1;
@@ -141,7 +141,7 @@ else (non)
   stop
 endif
 
-|Relecture N2 — CNASN|
+|Relecture N2 : CNASN|
 :Évaluer l'impact transversal;
 :Vérifier l'alignement cadre;
 if (Approuvé ?) then (oui)
@@ -156,7 +156,7 @@ else (non)
   endif
 endif
 
-|Relecture N3 — Stratégique|
+|Relecture N3 : Stratégique|
 if (Impact budgétaire ?) then (oui)
   :Valider avec BRV;
 else (non)
@@ -273,10 +273,10 @@ Mois 12 : Retiré du référentiel (statut « déprécié »)
 | Rôle | Processus ADR | Processus Modification | Processus Homologation |
 |------|---------------|----------------------|----------------------|
 | **Auteur** | Rédige | Remplit le template | Soumet le dossier |
-| **Relecteur technique** | — | Vérifie N1 | Vérifie critères techniques |
+| **Relecteur technique** | : | Vérifie N1 | Vérifie critères techniques |
 | **Secrétariat CNASN** | Enregistre, route | Enregistre, route | Coordonne l'instruction |
 | **CNASN** | Décide | Valide N2 | Valide conformité |
-| **BRV** | — | — | Valide impact business |
+| **BRV** | : | : | Valide impact business |
 | **Secrétaire Général** | Arbitre | Valide N3 (majeur) | Valide (si N3) |
 | **DEPSI** | Publie | Met à jour docs | Publie le rapport |
 
@@ -295,17 +295,17 @@ Mois 12 : Retiré du référentiel (statut « déprécié »)
 
 ## Liens
 
-- Gouvernance — Instances et rôles
+- Gouvernance : Instances et rôles
 - Registre des décisions
 - RACI de gouvernance
 - Bureau de Réalisation de la Valeur
 
 ## Références
 
-- **Registre des décisions** — Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
-- **Template modification** — Template — Demande de modification architecturale (`01_cnisn/06_decisions/template-modification.md`)
-- **Table de maturité** — Annexe A — Table de maturité par chapitre (`02_artsn/07_annexes/a-table-de-maturite.md`)
-- **Feuille de route** — Feuille de route de déploiement progressif de l'ARTSN (`02_artsn/09_feuille-route/index.md`)
-- **Gouvernance — Instances et rôles** — Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
-- **RACI de gouvernance** — RACI de gouvernance et responsabilités (`00_caesn/07_governance/raci.md`)
-- **Bureau de Réalisation de la Valeur** — Bureau de Réalisation de la Valeur (`00_caesn/07_governance/value-realization-office.md`)
+- **Registre des décisions** : Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
+- **Template modification** : Template : Demande de modification architecturale (`01_cnisn/06_decisions/template-modification.md`)
+- **Table de maturité** : Annexe A : Table de maturité par chapitre (`02_artsn/07_annexes/a-table-de-maturite.md`)
+- **Feuille de route** : Feuille de route de déploiement progressif de l'ARTSN (`02_artsn/09_feuille-route/index.md`)
+- **Gouvernance : Instances et rôles** : Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
+- **RACI de gouvernance** : RACI de gouvernance et responsabilités (`00_caesn/07_governance/raci.md`)
+- **Bureau de Réalisation de la Valeur** : Bureau de Réalisation de la Valeur (`00_caesn/07_governance/value-realization-office.md`)

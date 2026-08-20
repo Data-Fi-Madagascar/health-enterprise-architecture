@@ -1,5 +1,5 @@
 ---
-title: "STD-0002 — Norme de sécurité — Chiffrement et contrôle d'accès"
+title: "STD-0002 : Norme de sécurité : Chiffrement et contrôle d'accès"
 id: std-0002
 domain: 05_standards
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: Comité National d'Architecture Santé Numérique
 tags: [standards, securite, chiffrement, obligatoire]
 ---
 
-# STD-0002 — Norme de sécurité — Chiffrement et contrôle d'accès
+# STD-0002 : Norme de sécurité : Chiffrement et contrôle d'accès
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -112,12 +112,12 @@ Toute dérogation doit être justifiée et approuvée par le Comité National.
 ## Références
 
 - Normes et standards
-- ARTSN — Chapitre ART-7
-- ARTSN — Fondation F.4
-- CNISN — P-INT-03, P-INT-04
+- ARTSN : Chapitre ART-7
+- ARTSN : Fondation F.4
+- CNISN : P-INT-03, P-INT-04
 - **PTISN** :
-  - PT-06 — Référentiel structures et services
-  - PT-10 — Confiance, authentification et autorisation
-  - PT-12 — Audit, provenance et traçabilité
+  - PT-06 : Référentiel structures et services
+  - PT-10 : Confiance, authentification et autorisation
+  - PT-12 : Audit, provenance et traçabilité
 
-- **matrice de lecture** — Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
+- **matrice de lecture** : Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)

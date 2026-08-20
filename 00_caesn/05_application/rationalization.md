@@ -13,7 +13,7 @@ tags: [applications, rationalisation]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -48,7 +48,7 @@ La rationalisation est conduite par le Comité National d'Architecture Santé Nu
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Règles d'urbanisation** — Règles d'urbanisation applicative (`00_caesn/05_application/urbanisation.md`)
-- **Cycle de vie applicatif** — Cycle de vie applicatif et critères d'homologation (`00_caesn/05_application/lifecycle.md`)
-- **Portefeuille** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Règles d'urbanisation** : Règles d'urbanisation applicative (`00_caesn/05_application/urbanisation.md`)
+- **Cycle de vie applicatif** : Cycle de vie applicatif et critères d'homologation (`00_caesn/05_application/lifecycle.md`)
+- **Portefeuille** : Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)

@@ -1,5 +1,5 @@
 ---
-title: PT-05 — Profil technique national
+title: PT-05 : Profil technique national
 id: ptisn-pt-05-registre-professionnels
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,10 +9,10 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "pt-05"]
 ---
 
-# PT-05 — Profil technique national
+# PT-05 : Profil technique national
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ## 1. Capacité CNISN
 
@@ -21,7 +21,7 @@ Déclinaison de **CAP-INT-02**, complétée par les capacités relatives à la g
 ## 2. Chapitres ART applicables
 
 - ART-4 ;
-- ART-4a — Résolution d'identité ;
+- ART-4a : Résolution d'identité ;
 - ART-7.
 
 ## 3. Service national

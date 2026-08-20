@@ -1,5 +1,5 @@
 ---
-title: "VS-02 — Prévenir, détecter et répondre aux risques sanitaires"
+title: "VS-02 : Prévenir, détecter et répondre aux risques sanitaires"
 id: vs-02
 domain: 01_value-streams
 version: "1.0.0""
@@ -9,11 +9,11 @@ owner: Direction de la protection sociale et de la promotion de la santé
 tags: [flux-de-valeur, value-stream]
 ---
 
-# VS-02 — Prévenir, détecter et répondre aux risques sanitaires
+# VS-02 : Prévenir, détecter et répondre aux risques sanitaires
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -26,7 +26,7 @@ tags: [flux-de-valeur, value-stream]
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 <!-- BEGIN:GENERATED mode=monographie source=referentiel/flux-valeur/vs-02.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ## Valeur produite
 
@@ -70,9 +70,9 @@ Ce flux couvre l’ensemble du cycle de la santé publique, depuis l’identific
 ## Étapes de valeur
 
 <!-- BEGIN:GENERATED mode=catalogue source=referentiel/etapes-valeur/ev-08.md,referentiel/etapes-valeur/ev-09.md,referentiel/etapes-valeur/ev-10.md,referentiel/etapes-valeur/ev-11.md,referentiel/etapes-valeur/ev-12.md,referentiel/etapes-valeur/ev-13.md,referentiel/etapes-valeur/ev-14.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### EV-08 — Identification des risques et promotion de la santé
+### EV-08 : Identification des risques et promotion de la santé
 
 #### Objectif
 
@@ -100,7 +100,7 @@ Couverture des campagnes de prévention, taux de vaccination
 
 *Rattachement : CAP-06, CAP-04 · fiche EV-08*
 
-### EV-09 — Surveillance et détection
+### EV-09 : Surveillance et détection
 
 #### Objectif
 
@@ -128,7 +128,7 @@ Complétude et promptitude des rapports, taux de signaux détectés
 
 *Rattachement : CAP-05, CAP-13 · fiche EV-09*
 
-### EV-10 — Notification et alerte
+### EV-10 : Notification et alerte
 
 #### Objectif
 
@@ -156,7 +156,7 @@ Délai moyen de notification d'une alerte
 
 *Rattachement : CAP-05, CAP-13 · fiche EV-10*
 
-### EV-11 — Vérification et investigation
+### EV-11 : Vérification et investigation
 
 #### Objectif
 
@@ -184,7 +184,7 @@ Délai d'investigation, proportion d'alertes vérifiées dans les délais
 
 *Rattachement : CAP-05, CAP-13 · fiche EV-11*
 
-### EV-12 — Riposte
+### EV-12 : Riposte
 
 #### Objectif
 
@@ -212,7 +212,7 @@ Délai de déploiement de la riposte, taux de contrôle de l'épidémie
 
 *Rattachement : CAP-05, CAP-13, CAP-14 · fiche EV-12*
 
-### EV-13 — Suivi de situation et clôture
+### EV-13 : Suivi de situation et clôture
 
 #### Objectif
 
@@ -240,7 +240,7 @@ Taux de létalité, durée de l'épisode épidémique
 
 *Rattachement : CAP-05, CAP-13 · fiche EV-13*
 
-### EV-14 — Capitalisation et amélioration
+### EV-14 : Capitalisation et amélioration
 
 #### Objectif
 
@@ -272,9 +272,9 @@ Nombre de revues après action, proportion de recommandations mises en œuvre
 ## Processus métier
 
 <!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-04.md,referentiel/processus/prc-05.md,referentiel/processus/prc-06.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### PRC-04 — Veille, prévention et surveillance sanitaire
+### PRC-04 : Veille, prévention et surveillance sanitaire
 
 #### Objectif
 
@@ -282,8 +282,8 @@ Maintenir une veille sanitaire permanente : identification des risques et promot
 
 #### Étapes couvertes
 
-- EV-08 — Identification des risques et promotion de la santé
-- EV-09 — Surveillance et détection
+- EV-08 : Identification des risques et promotion de la santé
+- EV-09 : Surveillance et détection
 
 #### Acteurs
 
@@ -295,7 +295,7 @@ Couverture des campagnes de prévention, taux de vaccination, complétude et pro
 
 *Rattachement : CAP-04, CAP-05, CAP-06, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-03, PP-04, PP-07, PP-08, CMP-02, CMP-04, CMP-06, CMP-07, CMP-08, CMP-11, CMP-13, CMP-15, CMP-17, CMP-18 · fiche PRC-04*
 
-### PRC-05 — Alerte, investigation et riposte
+### PRC-05 : Alerte, investigation et riposte
 
 #### Objectif
 
@@ -303,9 +303,9 @@ Déclencher et conduire la réponse à un signal sanitaire validé : notificatio
 
 #### Étapes couvertes
 
-- EV-10 — Notification et alerte
-- EV-11 — Vérification et investigation
-- EV-12 — Riposte
+- EV-10 : Notification et alerte
+- EV-11 : Vérification et investigation
+- EV-12 : Riposte
 
 #### Acteurs
 
@@ -317,7 +317,7 @@ Délai moyen de notification d'une alerte, délai d'investigation, proportion d'
 
 *Rattachement : CAP-04, CAP-05, CAP-06, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-03, PP-04, PP-07, PP-08, CMP-02, CMP-04, CMP-06, CMP-07, CMP-08, CMP-11, CMP-13, CMP-14, CMP-15, CMP-17, CMP-18 · fiche PRC-05*
 
-### PRC-06 — Clôture et capitalisation des épisodes
+### PRC-06 : Clôture et capitalisation des épisodes
 
 #### Objectif
 
@@ -325,8 +325,8 @@ Clore l'épisode épidémique ou d'urgence et en capitaliser les leçons pour re
 
 #### Étapes couvertes
 
-- EV-13 — Suivi de situation et clôture
-- EV-14 — Capitalisation et amélioration
+- EV-13 : Suivi de situation et clôture
+- EV-14 : Capitalisation et amélioration
 
 #### Acteurs
 
@@ -346,5 +346,5 @@ Taux de létalité, durée de l'épisode épidémique, nombre de revues après a
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Capabilités** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)

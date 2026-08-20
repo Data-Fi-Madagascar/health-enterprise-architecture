@@ -1,5 +1,5 @@
 ---
-title: "ART-4c — Éligibilité et couverture"
+title: "ART-4c : Éligibilité et couverture"
 id: art-4c
 domain: 02_artsn
 version: "1.0.0"
@@ -10,11 +10,11 @@ tags: [artsn, chapitres, art-4c, niveau-3]
 related: ['cap-int-07']
 ---
 
-# ART-4c — Éligibilité et couverture
+# ART-4c : Éligibilité et couverture
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+**Niveau :** niveau 3 : Architecture de Référence Technique de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -27,10 +27,10 @@ related: ['cap-int-07']
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-ART-4c — Éligibilité et couverture constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-4c`.
+ART-4c : Éligibilité et couverture constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-4c`.
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 **Contenu normatif.** L’architecture doit maintenir un référentiel des droits ouverts structurant **disjoint de l’identité** et versionné dans le temps. Ce registre doit être accessible instantanément pour permettre le calcul automatique de la couverture financière au point de vente. Pattern cible : modélisation temporelle SCD type 2.
 
@@ -47,11 +47,11 @@ ART-4c — Éligibilité et couverture constitue un chapitre du **cadre normatif
 ## Liens
 
 - Index des chapitres
-- Exigences contextuelles — Partie III
+- Exigences contextuelles : Partie III
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`art-4c`** — Éligibilité et couverture (`referentiel/chapitres/art-4c.md`)
-- **Index des chapitres** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
-- **Exigences contextuelles — Partie III** — Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
+- **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **`art-4c`** : Éligibilité et couverture (`referentiel/chapitres/art-4c.md`)
+- **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

@@ -1,5 +1,5 @@
 ---
-title: "ADR-0004 — Adoption des profils IHE PIXm/PDQm pour la résolution d'identité"
+title: "ADR-0004 : Adoption des profils IHE PIXm/PDQm pour la résolution d'identité"
 id: adr-0004
 domain: 06_decisions
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: DEPSI
 tags: [adr, identité, pixm, pdqm, ihe]
 ---
 
-# ADR-0004 — Adoption des profils IHE PIXm/PDQm pour la résolution d'identité
+# ADR-0004 : Adoption des profils IHE PIXm/PDQm pour la résolution d'identité
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -74,8 +74,8 @@ PIXm fournit des transactions REST pour gérer et rechercher les identifiants d'
 
 ## Références
 
-- PT-04 — Profil technique national
-- ARTSN — Chapitre ART-4
-- ARTSN — Fondation F.1
+- PT-04 : Profil technique national
+- ARTSN : Chapitre ART-4
+- ARTSN : Fondation F.1
 
-- **matrice de lecture** — Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
+- **matrice de lecture** : Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)

@@ -1,5 +1,5 @@
 ---
-title: "ADR-0003 — Utilisation de HL7 FHIR comme standard d'interopérabilité"
+title: "ADR-0003 : Utilisation de HL7 FHIR comme standard d'interopérabilité"
 id: adr-0003
 domain: 06_decisions
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: DEPSI
 tags: [adr, interopérabilité, fhir, normes]
 ---
 
-# ADR-0003 — Utilisation de HL7 FHIR comme standard d'interopérabilité
+# ADR-0003 : Utilisation de HL7 FHIR comme standard d'interopérabilité
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 2 — Cadre National d'Interopérabilité de la Santé Numérique.
+**Niveau :** niveau 2 : Cadre National d'Interopérabilité de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -78,20 +78,20 @@ Il offre :
 
 ## Références
 
-- ARTSN — Fondation F.2
-- ARTSN — Fondation F.3
-- ARTSN — Chapitre ART-2
+- ARTSN : Fondation F.2
+- ARTSN : Fondation F.3
+- ARTSN : Chapitre ART-2
 - Dictionnaire de données
 - **PTISN** (profils utilisant FHIR) :
-  - PT-03 — Catalogue services et registre de contrats
-  - PT-04 — Résolution identité bénéficiaire
-  - PT-07 — Terminologie et codification
-  - PT-08 — Échange de données agrégées
-  - PT-09 — Analytique et exposition de données
-  - PT-10 — Confiance, authentification et autorisation
-  - PT-11 — Consentement et bases d'autorisation
-  - PT-12 — Audit, provenance et traçabilité
-  - PT-14 — Interopérabilité transfrontalière
-  - PT-15 — Surveillance One Health
+  - PT-03 : Catalogue services et registre de contrats
+  - PT-04 : Résolution identité bénéficiaire
+  - PT-07 : Terminologie et codification
+  - PT-08 : Échange de données agrégées
+  - PT-09 : Analytique et exposition de données
+  - PT-10 : Confiance, authentification et autorisation
+  - PT-11 : Consentement et bases d'autorisation
+  - PT-12 : Audit, provenance et traçabilité
+  - PT-14 : Interopérabilité transfrontalière
+  - PT-15 : Surveillance One Health
 
-- **matrice de lecture** — Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
+- **matrice de lecture** : Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)

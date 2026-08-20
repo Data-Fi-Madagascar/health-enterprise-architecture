@@ -13,7 +13,7 @@ tags: [principes, domaine]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -38,10 +38,10 @@ Les principes de domaine **complètent**, ne remplacent pas, les principes d'arc
 
 | Flux de valeur | Principes de domaine |
 |----------------|----------------------|
-| VS-01 — Soins essentiels | PD-VS01 |
-| VS-02 — Risques sanitaires | PD-VS02 |
-| VS-03 — Protection financière | PD-VS03 |
-| VS-04 — Pilotage du système | PD-VS04 |
+| VS-01 : Soins essentiels | PD-VS01 |
+| VS-02 : Risques sanitaires | PD-VS02 |
+| VS-03 : Protection financière | PD-VS03 |
+| VS-04 : Pilotage du système | PD-VS04 |
 
 ## Utilisation dans l'évaluation des initiatives
 
@@ -64,11 +64,11 @@ Une initiative conforme aux principes d'architecture mais qui ne démontre pas s
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **principes d'architecture nationaux** — Principes d'architecture transversaux (`00_caesn/02_principles/transversal.md`)
-- **PD-VS01** — PD-VS-01 — Principes de domaine : accéder à des services de santé essentiels (`00_caesn/02_principles/domain/vs01.md`)
-- **PD-VS02** — PD-VS-02 — Principes de domaine : prévenir, détecter et répondre aux risques sanitaires (`00_caesn/02_principles/domain/vs02.md`)
-- **PD-VS03** — PD-VS-03 — Principes de domaine : protéger financièrement la population (`00_caesn/02_principles/domain/vs03.md`)
-- **PD-VS04** — PD-VS-04 — Principes de domaine : piloter, coordonner et améliorer la performance (`00_caesn/02_principles/domain/vs04.md`)
-- **Principes d'architecture** — Principes de domaine par flux de valeur (`00_caesn/02_principles/domain/index.md`)
-- **Flux de valeur** — Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **principes d'architecture nationaux** : Principes d'architecture transversaux (`00_caesn/02_principles/transversal.md`)
+- **PD-VS01** : PD-VS-01 : Principes de domaine : accéder à des services de santé essentiels (`00_caesn/02_principles/domain/vs01.md`)
+- **PD-VS02** : PD-VS-02 : Principes de domaine : prévenir, détecter et répondre aux risques sanitaires (`00_caesn/02_principles/domain/vs02.md`)
+- **PD-VS03** : PD-VS-03 : Principes de domaine : protéger financièrement la population (`00_caesn/02_principles/domain/vs03.md`)
+- **PD-VS04** : PD-VS-04 : Principes de domaine : piloter, coordonner et améliorer la performance (`00_caesn/02_principles/domain/vs04.md`)
+- **Principes d'architecture** : Principes de domaine par flux de valeur (`00_caesn/02_principles/domain/index.md`)
+- **Flux de valeur** : Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)

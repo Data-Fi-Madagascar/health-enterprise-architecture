@@ -13,7 +13,7 @@ tags: [ptisn, acronymes, niveau-4]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 4 — Profils techniques d'implémentation de la Santé Numérique.
+**Niveau :** niveau 4 : Profils techniques d'implémentation de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -46,10 +46,10 @@ Ce document recense les acronymes propres au périmètre d'implémentation du ni
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
-- **acronymes du CAESN** — Acronymes et abréviations (`00_caesn/10_annexes/acronyms.md`)
-- **ARTSN** — Acronymes et abréviations de l'ARTSN (niveau 3) (`02_artsn/acronyms.md`)
-- **Index du PTISN** — Profils techniques d'implémentation de la Santé Numérique (PTISN) (`03_ptisn/index.md`)
-- **Matrice de lecture du PTISN** — Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
-- **Glossaire du PTISN** — Glossaire du PTISN (niveau 4) (`03_ptisn/glossary.md`)
-- **Glossaire de l'ARTSN (niveau 3)** — Glossaire de l'ARTSN (niveau 3) (`02_artsn/glossary.md`)
+- **matrice de lecture** : Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
+- **acronymes du CAESN** : Acronymes et abréviations (`00_caesn/10_annexes/acronyms.md`)
+- **ARTSN** : Acronymes et abréviations de l'ARTSN (niveau 3) (`02_artsn/acronyms.md`)
+- **Index du PTISN** : Profils techniques d'implémentation de la Santé Numérique (PTISN) (`03_ptisn/index.md`)
+- **Matrice de lecture du PTISN** : Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
+- **Glossaire du PTISN** : Glossaire du PTISN (niveau 4) (`03_ptisn/glossary.md`)
+- **Glossaire de l'ARTSN (niveau 3)** : Glossaire de l'ARTSN (niveau 3) (`02_artsn/glossary.md`)

@@ -1,5 +1,5 @@
 ---
-title: PT-09 — Profil technique national
+title: PT-09 : Profil technique national
 id: ptisn-pt-09-analytique-exposition-donnees
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,14 +9,14 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "pt-09"]
 ---
 
-# PT-09 — Profil technique national
+# PT-09 : Profil technique national
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ## 1. Capacité CNISN
 
-**CAP-INT-07 — Accès et exposition des données analytiques**
+**CAP-INT-07 : Accès et exposition des données analytiques**
 
 ## 2. Chapitres ART applicables
 

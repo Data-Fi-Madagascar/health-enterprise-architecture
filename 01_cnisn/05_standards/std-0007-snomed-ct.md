@@ -1,5 +1,5 @@
 ---
-title: "STD-0007 — Standard terminologique — SNOMED CT"
+title: "STD-0007 : Standard terminologique : SNOMED CT"
 id: std-0007
 domain: 05_standards
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: Comité National d'Architecture Santé Numérique
 tags: [standards, terminologie, snomed-ct, recommande]
 ---
 
-# STD-0007 — Standard terminologique — SNOMED CT
+# STD-0007 : Standard terminologique : SNOMED CT
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 2 — Cadre National d'Interopérabilité de la Santé Numérique.
+**Niveau :** niveau 2 : Cadre National d'Interopérabilité de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -27,12 +27,12 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 
 - **Type** : standard (recommandé)
 - **Statut** : draft
-- **ADR de référence** : —
-- **Date d'entrée en vigueur** : — (à définir après validation par le CNASN)
+- **ADR de référence** : À définir
+- **Date d'entrée en vigueur** : : (à définir après validation par le CNASN)
 
 ## Contexte
 
-SNOMED CT (Systematized Nomenclature of Medicine — Clinical Terms) est le référentiel terminologique clinique le plus complet au monde, reconnu par l'OMS comme norme pour l'échange de données cliniques structurées. Il est adopté par le Kenya, l'Afrique du Sud et de nombreux pays africains comme référentiel complémentaire à la CIM-10 et LOINC.
+SNOMED CT (Systematized Nomenclature of Medicine : Clinical Terms) est le référentiel terminologique clinique le plus complet au monde, reconnu par l'OMS comme norme pour l'échange de données cliniques structurées. Il est adopté par le Kenya, l'Afrique du Sud et de nombreux pays africains comme référentiel complémentaire à la CIM-10 et LOINC.
 
 Madagascar utilise déjà la CIM-10 (STD-0006) pour les diagnostics et LOINC pour les observations de laboratoire. SNOMED CT complète ces référentiels en offrant une couverture sémantique plus fine pour les données cliniques structurées, les interactions entre concepts et le raisonnement clinique assisté.
 
@@ -53,7 +53,7 @@ Ce standard s'applique à :
 - Les exportations de données vers des systèmes internationaux utilisant SNOMED CT
 - Les projets de recherche clinique nécessitant une terminologie normalisée
 
-Ce standard ne remplace pas la CIM-10 (STD-0006) ni LOINC — il les complète pour des cas d'usage spécifiques nécessitant une granularité sémantique supérieure.
+Ce standard ne remplace pas la CIM-10 (STD-0006) ni LOINC : il les complète pour des cas d'usage spécifiques nécessitant une granularité sémantique supérieure.
 
 ## Références au cadre
 
@@ -61,7 +61,7 @@ Ce standard ne remplace pas la CIM-10 (STD-0006) ni LOINC — il les complète p
 - **ARTSN** : ART-2 (Médiation et normalisation), F.2 (Normalisation)
 - **PTISN** : PT-07 (Terminologie et codification)
 - **CNISN** : CAP-INT-11 (Qualité et réconciliation)
-- **Norme existante** : STD-0006 (CIM-10 + LOINC) — SNOMED CT en complément
+- **Norme existante** : STD-0006 (CIM-10 + LOINC) : SNOMED CT en complément
 
 ## Contrôle et conformité
 
@@ -82,7 +82,7 @@ Toute dérogation doit être justifiée et approuvée par le Comité National.
 
 ## Références
 
-- **Normes et standards** — Index des normes et standards (`01_cnisn/05_standards/index.md`)
-- **STD-0006 — CIM-10 + LOINC** — Norme terminologique obligatoire (`01_cnisn/05_standards/std-0006-terminologie.md`)
-- **PT-07 — Terminologie et codification** (`03_ptisn/03_profils/pt-07-terminologie-codification.md`)
-- **ART-2 — Médiation et normalisation** (`02_artsn/03_chapitres/art-2-mediation-normalisation.md`)
+- **Normes et standards** : Index des normes et standards (`01_cnisn/05_standards/index.md`)
+- **STD-0006 : CIM-10 + LOINC** : Norme terminologique obligatoire (`01_cnisn/05_standards/std-0006-terminologie.md`)
+- **PT-07 : Terminologie et codification** (`03_ptisn/03_profils/pt-07-terminologie-codification.md`)
+- **ART-2 : Médiation et normalisation** (`02_artsn/03_chapitres/art-2-mediation-normalisation.md`)

@@ -1,5 +1,5 @@
 ---
-title: "Template — Demande de modification architecturale"
+title: "Template : Demande de modification architecturale"
 id: template-modification
 domain: 06_decisions
 version: "1.0.0"
@@ -9,7 +9,7 @@ owner: DEPSI
 tags: [template, modification, changement, gouvernance, niveau-1]
 ---
 
-# Template — Demande de modification architecturale
+# Template : Demande de modification architecturale
 
 ## Utilisation
 
@@ -23,7 +23,7 @@ Ce template est utilisé pour soumettre toute modification au CAESN, à l'ARTSN 
 
 ---
 
-## MOD-XXXX — [Titre de la modification]
+## MOD-XXXX : [Titre de la modification]
 
 ### Métadonnées
 
@@ -79,7 +79,7 @@ Ce template est utilisé pour soumettre toute modification au CAESN, à l'ARTSN 
 |-------------|-----------|---------------|-----------------|
 | [Alternative 1] | ... | ... | ... |
 | [Alternative 2] | ... | ... | ... |
-| **Choix retenu** | ... | ... | — |
+| **Choix retenu** | ... | ... | : |
 
 ---
 
@@ -127,7 +127,7 @@ Ce template est utilisé pour soumettre toute modification au CAESN, à l'ARTSN 
 
 | Rôle | Nom | Date | Décision |
 |------|-----|------|----------|
-| Auteur | ... | ... | — |
+| Auteur | ... | ... | : |
 | Relecture technique | ... | ... | Approuvé / Rejeté / À modifier |
 | CNASN | ... | ... | Approuvé / Rejeté / Dérogation |
 | Secrétaire Général | ... | ... | Approuvé / Rejeté |
@@ -150,6 +150,6 @@ Ce template est utilisé pour soumettre toute modification au CAESN, à l'ARTSN 
 
 ## Références
 
-- **Registre des décisions** — Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
-- **Processus de gouvernance** — Partie III — Gouvernance (`01_cnisn/03_gouvernance/index.md`)
-- **Template ADR** — <Titre de la décision> (`01_cnisn/06_decisions/adr-0000-template.md`)
+- **Registre des décisions** : Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
+- **Processus de gouvernance** : Partie III : Gouvernance (`01_cnisn/03_gouvernance/index.md`)
+- **Template ADR** : <Titre de la décision> (`01_cnisn/06_decisions/adr-0000-template.md`)

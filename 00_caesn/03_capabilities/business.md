@@ -13,7 +13,7 @@ tags: [capabilités, métier, catalogue]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -31,9 +31,9 @@ Chaque capabilité vit dans le référentiel : `referentiel/capabilites/cap-XX.m
 ## Catalogue des capabilités
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### CAP-01 — Offre de soins et continuité des services
+### CAP-01 : Offre de soins et continuité des services
 
 #### Rôle dans le système
 
@@ -45,7 +45,7 @@ La capabilité garantit que chaque citoyen accède à des services de santé ess
 
 *Rattachement : VS-01 · fiche CAP-01*
 
-### CAP-02 — Gestion du parcours patient, référence et contre-référence
+### CAP-02 : Gestion du parcours patient, référence et contre-référence
 
 #### Rôle dans le système
 
@@ -66,7 +66,7 @@ La capabilité organise le parcours du patient entre les points de service : ori
 
 *Rattachement : VS-01, CAP-INT-03, CAP-INT-01, CAP-INT-13 · fiche CAP-02*
 
-### CAP-03 — Qualité, sécurité des soins et amélioration continue
+### CAP-03 : Qualité, sécurité des soins et amélioration continue
 
 #### Rôle dans le système
 
@@ -79,7 +79,7 @@ La capabilité mesure, améliore et sécurise la qualité des services de santé
 
 *Rattachement : VS-01, VS-04 · fiche CAP-03*
 
-### CAP-04 — Santé communautaire et engagement des communautés
+### CAP-04 : Santé communautaire et engagement des communautés
 
 #### Rôle dans le système
 
@@ -92,7 +92,7 @@ La capabilité intègre les agents communautaires, les communautés et les patie
 
 *Rattachement : VS-01, VS-02 · fiche CAP-04*
 
-### CAP-05 — Surveillance épidémiologique, alerte, investigation et riposte
+### CAP-05 : Surveillance épidémiologique, alerte, investigation et riposte
 
 #### Rôle dans le système
 
@@ -110,12 +110,12 @@ La capabilité inclut désormais la **dimension géospatiale** :
 
 #### Rattachement ARTSN
 
-- **ART-4d** — Référentiel géospatial et d'exploitation partagé
-- **PT-05** — Profil technique géolocalisation
+- **ART-4d** : Référentiel géospatial et d'exploitation partagé
+- **PT-05** : Profil technique géolocalisation
 
 *Rattachement : VS-02 · fiche CAP-05*
 
-### CAP-06 — Vaccination, prévention et promotion de la santé
+### CAP-06 : Vaccination, prévention et promotion de la santé
 
 #### Rôle dans le système
 
@@ -127,7 +127,7 @@ La capabilité prévient les maladies et promeut les comportements favorables à
 
 *Rattachement : VS-02 · fiche CAP-06*
 
-### CAP-07 — Protection financière, couverture santé universelle
+### CAP-07 : Protection financière, couverture santé universelle
 
 #### Rôle dans le système
 
@@ -139,7 +139,7 @@ La capabilité protège les ménages contre le risque financier lié aux soins :
 
 *Rattachement : VS-03 · fiche CAP-07*
 
-### CAP-08 — Gouvernance institutionnelle, planification, coordination et redevabilité
+### CAP-08 : Gouvernance institutionnelle, planification, coordination et redevabilité
 
 #### Rôle dans le système
 
@@ -159,4 +159,4 @@ La capabilité assure la gouvernance du système de santé : planification, coor
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)

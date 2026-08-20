@@ -13,7 +13,7 @@ tags: [gouvernance, homologation, workflow, conformité, niveau-2]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -105,7 +105,7 @@ Toute initiative numérique sanitaire recevant un financement public ou utilisan
 
 ## 4. Workflow détaillé
 
-### 4.1 Phase 1 — Constitution du dossier (Auteur)
+### 4.1 Phase 1 : Constitution du dossier (Auteur)
 
 | Étape | Action | Livrable | Délai |
 |-------|--------|----------|-------|
@@ -113,7 +113,7 @@ Toute initiative numérique sanitaire recevant un financement public ou utilisan
 | 1.2 | Joindre les preuves techniques | Dossier technique | 5 jours |
 | 1.3 | Soumettre au secrétariat CNASN | Dossier complet | 1 jour |
 
-### 4.2 Phase 2 — Instruction (Secrétariat CNASN)
+### 4.2 Phase 2 : Instruction (Secrétariat CNASN)
 
 | Étape | Action | Livrable | Délai |
 |-------|--------|----------|-------|
@@ -121,7 +121,7 @@ Toute initiative numérique sanitaire recevant un financement public ou utilisan
 | 2.2 | Affecter au comité technique | Fiche d'affectation | 1 jour |
 | 2.3 | Planifier la revue | Ordre du jour | 2 jours |
 
-### 4.3 Phase 3 — Revue technique (Comité technique)
+### 4.3 Phase 3 : Revue technique (Comité technique)
 
 | Étape | Action | Livrable | Délai |
 |-------|--------|----------|-------|
@@ -130,7 +130,7 @@ Toute initiative numérique sanitaire recevant un financement public ou utilisan
 | 3.3 | Rédiger le rapport de revue | Rapport technique | 3 jours |
 | 3.4 | Recommander (approuver / rejeter / dérogation) | Recommandation | 1 jour |
 
-### 4.4 Phase 4 — Décision (CNASN)
+### 4.4 Phase 4 : Décision (CNASN)
 
 | Étape | Action | Livrable | Délai |
 |-------|--------|----------|-------|
@@ -139,7 +139,7 @@ Toute initiative numérique sanitaire recevant un financement public ou utilisan
 | 4.3 | Si dérogation : instruire le dossier | Note de dérogation | 3 jours |
 | 4.4 | Si N3 requis : soumettre à la direction | Note stratégique | 5 jours |
 
-### 4.5 Phase 5 — Publication (DEPSI)
+### 4.5 Phase 5 : Publication (DEPSI)
 
 | Étape | Action | Livrable | Délai |
 |-------|--------|----------|-------|
@@ -217,7 +217,7 @@ Durée totale : variable
 
 ## Références
 
-- **Guide du processus de gouvernance** — Guide du processus de gouvernance (`00_caesn/07_governance/processus-gouvernance.md`)
-- **RACI de gouvernance** — RACI de gouvernance et responsabilités (`00_caesn/07_governance/raci.md`)
-- **Registre des décisions** — Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
-- **Template de modification** — Template — Demande de modification architecturale (`01_cnisn/06_decisions/template-modification.md`)
+- **Guide du processus de gouvernance** : Guide du processus de gouvernance (`00_caesn/07_governance/processus-gouvernance.md`)
+- **RACI de gouvernance** : RACI de gouvernance et responsabilités (`00_caesn/07_governance/raci.md`)
+- **Registre des décisions** : Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
+- **Template de modification** : Template : Demande de modification architecturale (`01_cnisn/06_decisions/template-modification.md`)

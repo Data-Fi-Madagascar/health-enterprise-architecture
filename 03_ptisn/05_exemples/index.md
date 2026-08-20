@@ -13,7 +13,7 @@ tags: [ptisn, exemples, profils, niveau-4]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 4 — Profils Techniques d'Implémentation par Initiative.
+**Niveau :** niveau 4 : Profils Techniques d'Implémentation par Initiative.
 
 | Profil | Lecture |
 |--------|---------|
@@ -31,7 +31,7 @@ Ce document présente trois exemples concrets de profils d'initiative remplis se
 
 Chaque profil suit une structure standardisée composée de dix rubriques. L'identification initiale renseigne le code de l'initiative, son titre, son type, sa portée et son statut. Le rattachement aux capacités CNISN et aux chapitres ART applicables permet de situer l'initiative dans le cadre national d'interopérabilité. La description de l'initiative précise son objectif, son contexte et ses parties prenantes. Les profils PTISN applicables identifient les patterns techniques requis. Les contrats d'interface spécifient les schémas, protocoles et formats d'échange. Les composants techniques décrivent l'infrastructure requise. Les indicateurs de bénéfice définissent les métriques de succès. Les risques et mitigations documentent les aléas identifiés et les mesures correctives. Enfin, le calendrier prévisionnel établit les jalons clés du projet.
 
-## Exemple 1 : INIT-001 — Télésuivi des patients tuberculeux
+## Exemple 1 : INIT-001 : Télésuivi des patients tuberculeux
 
 ### 1. Identifiant et titre
 
@@ -120,12 +120,12 @@ Les chapitres ART mobilisés par cette initiative couvrent les accords de partag
 |-------|------|----------|
 | Cadrage | T2 2026 | Note de cadrage validée |
 | Conception | T3 2026 | Dossier de conception détaillée |
-| Développement | T4 2026 — T1 2027 | Prototype fonctionnel |
+| Développement | T4 2026 : T1 2027 | Prototype fonctionnel |
 | Pilote | T2 2027 | Déploiement 3 districts |
 | Évaluation | T3 2027 | Rapport d'évaluation pilote |
 | Généralisation | T4 2027 | Déploiement 12 districts |
 
-## Exemple 2 : INIT-002 — Collecte des données communautaires (ACS)
+## Exemple 2 : INIT-002 : Collecte des données communautaires (ACS)
 
 ### 1. Identifiant et titre
 
@@ -213,10 +213,10 @@ Les chapitres ART concernés sont l'intégration et l'ingestion des données com
 | Cadrage | T1 2026 | Note de cadrage validée |
 | Pilote (5 districts) | T2 2026 | 2 000 ACS équipés |
 | Évaluation pilote | T3 2026 | Rapport d'évaluation |
-| Généralisation (22 districts) | T4 2026 — T2 2027 | 8 000 ACS équipés |
+| Généralisation (22 districts) | T4 2026 : T2 2027 | 8 000 ACS équipés |
 | Intégration DHIS2 | T3 2027 | Flux automatisé |
 
-## Exemple 3 : INIT-003 — Traçabilité des médicaments (mTrack)
+## Exemple 3 : INIT-003 : Traçabilité des médicaments (mTrack)
 
 ### 1. Identifiant et titre
 
@@ -306,7 +306,7 @@ Les chapitres ART impliqués couvrent les accords de partage entre formations sa
 |-------|------|----------|
 | Cadrage | T2 2026 | Note de cadrage validée |
 | Conception | T3 2026 | Dossier de conception détaillée |
-| Développement | T4 2026 — T1 2027 | Prototype fonctionnel |
+| Développement | T4 2026 : T1 2027 | Prototype fonctionnel |
 | Pilote (3 districts) | T2 2027 | 150 formations équipées |
 | Évaluation pilote | T3 2027 | Rapport d'évaluation |
 | Généralisation | T4 2027 | 1 800 formations équipées |
@@ -314,16 +314,16 @@ Les chapitres ART impliqués couvrent les accords de partage entre formations sa
 ## Liens
 
 - Profils techniques
-- Référentiel — Profils
-- PT-01 — Échange interinstitutionnel
-- PT-04 — Résolution d'identité
-- PT-08 — Données agrégées
+- Référentiel : Profils
+- PT-01 : Échange interinstitutionnel
+- PT-04 : Résolution d'identité
+- PT-08 : Données agrégées
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
-- **Profils techniques** — Partie III — Profils techniques nationaux (`03_ptisn/03_profils/pt-00-index.md`)
-- **Référentiel — Profils** — Partie III — Profils techniques nationaux (`03_ptisn/03_profils/pt-00-index.md`)
-- **PT-01 — Échange interinstitutionnel** — Profil technique national (`03_ptisn/03_profils/pt-01-echange-interinstitutionnel.md`)
-- **PT-04 — Résolution d'identité** — Profil technique national (`03_ptisn/03_profils/pt-04-resolution-identite-beneficiaire.md`)
-- **PT-08 — Données agrégées** — Profil technique national (`03_ptisn/03_profils/pt-08-echange-donnees-agregees.md`)
+- **matrice de lecture** : Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
+- **Profils techniques** : Partie III : Profils techniques nationaux (`03_ptisn/03_profils/pt-00-index.md`)
+- **Référentiel : Profils** : Partie III : Profils techniques nationaux (`03_ptisn/03_profils/pt-00-index.md`)
+- **PT-01 : Échange interinstitutionnel** : Profil technique national (`03_ptisn/03_profils/pt-01-echange-interinstitutionnel.md`)
+- **PT-04 : Résolution d'identité** : Profil technique national (`03_ptisn/03_profils/pt-04-resolution-identite-beneficiaire.md`)
+- **PT-08 : Données agrégées** : Profil technique national (`03_ptisn/03_profils/pt-08-echange-donnees-agregees.md`)

@@ -13,7 +13,7 @@ tags: [données, gouvernance, qualité, protection]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -97,8 +97,8 @@ Une initiative qui ne respecte pas ces règles n'est pas conforme au cadre.
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Entrepôt national de données** — Architecture des données et de l'information sanitaire (`00_caesn/04_data/index.md`)
-- **Couche décisionnelle** — Paysage applicatif cible (`00_caesn/05_application/layers.md`)
-- **Référentiels nationaux** — Référentiels nationaux (`00_caesn/04_data/referentials.md`)
-- **Principes de l'architecture des données** — Principes de l'architecture des données (`00_caesn/04_data/principles.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Entrepôt national de données** : Architecture des données et de l'information sanitaire (`00_caesn/04_data/index.md`)
+- **Couche décisionnelle** : Paysage applicatif cible (`00_caesn/05_application/layers.md`)
+- **Référentiels nationaux** : Référentiels nationaux (`00_caesn/04_data/referentials.md`)
+- **Principes de l'architecture des données** : Principes de l'architecture des données (`00_caesn/04_data/principles.md`)

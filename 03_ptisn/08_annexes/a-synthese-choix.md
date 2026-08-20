@@ -1,5 +1,5 @@
 ---
-title: Annexe A — Synthèse des choix
+title: Annexe A : Synthèse des choix
 id: ptisn-annexe-a
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,7 +9,7 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "annexes"]
 ---
 
-# Annexe A — Synthèse des choix
+# Annexe A : Synthèse des choix
 
 Le tableau ci-après synthétise les choix architecturaux arrêtés pour chaque domaine fonctionnel du PTISN. Il indique le standard ou profil cible retenu, le produit ou l'implémentation candidate, ainsi que le statut de la décision. Les domaines marqués « à instruire » feront l'objet d'une analyse complémentaire avant validation nationale.
 

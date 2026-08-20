@@ -13,7 +13,7 @@ tags: [artsn, chapitres, patterns, niveau-3]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+**Niveau :** niveau 3 : Architecture de Référence Technique de la Santé Numérique.
 
 Ce document s'adresse prioritairement aux décideurs institutionnels et aux équipes techniques de la DEPSI. Les directions métier et programmes, les équipes SIS, données et suivi-évaluation, ainsi que les partenaires techniques et financiers trouveront également une lecture complémentaire utile. La lecture est ponctuelle pour les publics restants. Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
@@ -22,7 +22,7 @@ Les chapitres constituent le **cadre normatif opposable** par le Ministère de l
 ## Catalogue des chapitres
 
 <!-- BEGIN:GENERATED mode=table source=referentiel/chapitres/art-*.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 | Code | Titre canonique | Rattachement | Statut | Fiche |
 |---|---|---|---|---|
@@ -44,7 +44,7 @@ Les chapitres constituent le **cadre normatif opposable** par le Ministère de l
 | ART-8C | Agrégation par lot | ENF-1, ENF-2, CAP-13, CAP-14 | draft | fiche |
 | ART-8D | Chorégraphie inter-institutionnelle | ENF-4, CAP-13, CAP-14 | draft | fiche |
 | ART-9 | Garanties transactionnelles fortes | ENF-2, CAP-07 | draft | fiche |
-| ART-10 | Logistique | — | candidate | fiche |
+| ART-10 | Logistique | : | candidate | fiche |
 | ART-11 | Coordination intersectorielle | ENF-4, CAP-08, CAP-18, CAP-INT-14 | stable | fiche |
 
 <!-- END:GENERATED -->
@@ -59,25 +59,25 @@ Les chapitres de cette partie s'inscrivent dans une dépendance avec les Fondati
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **Partie III** — Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
-- **table de maturité** — Annexe A — Table de maturité par chapitre (`02_artsn/07_annexes/a-table-de-maturite.md`)
-- **gouvernance** — Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)
-- **Fondations** — Fondations de l'ARTSN (`02_artsn/00_fondations/index.md`)
-- **Exigences contextuelles nationales** — Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
-- **Cartographie cible** — Cartographie conceptuelle cible (`02_artsn/04_cartographie-cible/index.md`)
+- **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
+- **table de maturité** : Annexe A : Table de maturité par chapitre (`02_artsn/07_annexes/a-table-de-maturite.md`)
+- **gouvernance** : Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)
+- **Fondations** : Fondations de l'ARTSN (`02_artsn/00_fondations/index.md`)
+- **Exigences contextuelles nationales** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
+- **Cartographie cible** : Cartographie conceptuelle cible (`02_artsn/04_cartographie-cible/index.md`)
 
-- **ENF-4** — Cloisonnement inter-institutionnel et étanchéité des données (One Health) (`referentiel/exigences/enf-4.md`)
-- **fiche** — Accords de partage inter-institutionnels (`referentiel/chapitres/art-0.md`)
-- **ENF-1** — Résilience à l'instabilité réseau (`referentiel/exigences/enf-1.md`)
-- **CAP-14** — Interopérabilité, référentiels nationaux et infrastructure numérique partagée (`referentiel/capabilites/cap-14.md`)
-- **ENF-3** — Unicité de l'identité et résilience face à la fragmentation applicative (`referentiel/exigences/enf-3.md`)
-- **CAP-13** — Système d'information sanitaire, données et recherche (`referentiel/capabilites/cap-13.md`)
-- **CAP-04** — Santé communautaire et engagement des communautés (`referentiel/capabilites/cap-04.md`)
-- **CAP-15** — Cybersécurité, confidentialité et gouvernance des données personnelles (`referentiel/capabilites/cap-15.md`)
-- **ENF-2** — Intégrité des flux et traçabilité des valeurs (`referentiel/exigences/enf-2.md`)
-- **CAP-07** — Protection financière, couverture santé universelle (`referentiel/capabilites/cap-07.md`)
-- **ENF-5** — Coordination des processus complexes décentralisés et asynchrones (`referentiel/exigences/enf-5.md`)
-- **CAP-08** — Gouvernance institutionnelle, planification, coordination et redevabilité (`referentiel/capabilites/cap-08.md`)
-- **CAP-18** — Coordination intersectorielle (One Health) (`referentiel/capabilites/cap-18.md`)
-- **CAP-INT-14** — CAP-INT-14 — Échanges intersectoriels One Health (`referentiel/capacites/cap-int-14.md`)
+- **ENF-4** : Cloisonnement inter-institutionnel et étanchéité des données (One Health) (`referentiel/exigences/enf-4.md`)
+- **fiche** : Accords de partage inter-institutionnels (`referentiel/chapitres/art-0.md`)
+- **ENF-1** : Résilience à l'instabilité réseau (`referentiel/exigences/enf-1.md`)
+- **CAP-14** : Interopérabilité, référentiels nationaux et infrastructure numérique partagée (`referentiel/capabilites/cap-14.md`)
+- **ENF-3** : Unicité de l'identité et résilience face à la fragmentation applicative (`referentiel/exigences/enf-3.md`)
+- **CAP-13** : Système d'information sanitaire, données et recherche (`referentiel/capabilites/cap-13.md`)
+- **CAP-04** : Santé communautaire et engagement des communautés (`referentiel/capabilites/cap-04.md`)
+- **CAP-15** : Cybersécurité, confidentialité et gouvernance des données personnelles (`referentiel/capabilites/cap-15.md`)
+- **ENF-2** : Intégrité des flux et traçabilité des valeurs (`referentiel/exigences/enf-2.md`)
+- **CAP-07** : Protection financière, couverture santé universelle (`referentiel/capabilites/cap-07.md`)
+- **ENF-5** : Coordination des processus complexes décentralisés et asynchrones (`referentiel/exigences/enf-5.md`)
+- **CAP-08** : Gouvernance institutionnelle, planification, coordination et redevabilité (`referentiel/capabilites/cap-08.md`)
+- **CAP-18** : Coordination intersectorielle (One Health) (`referentiel/capabilites/cap-18.md`)
+- **CAP-INT-14** : CAP-INT-14 : Échanges intersectoriels One Health (`referentiel/capacites/cap-int-14.md`)

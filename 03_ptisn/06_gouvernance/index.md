@@ -1,5 +1,5 @@
 ---
-title: Partie VI — Gouvernance du PTISN
+title: Partie VI : Gouvernance du PTISN
 id: ptisn-gouvernance
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,7 +9,7 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "interopérabilité", "gouvernance"]
 ---
 
-# Partie VI — Gouvernance du PTISN
+# Partie VI : Gouvernance du PTISN
 
 La gouvernance du Profil Technique d'Implémentation par Initiative (PTISN) organise les processus de décision, d'évaluation et de validation qui conditionnent l'adoption des profils techniques et des produits dans le secteur santé numérique de Madagascar. Elle définit les instances compétentes, les critères d'évaluation et les procédures d'homologation qui garantissent la cohérence, la qualité et la pérennité du cadre d'interopérabilité national.
 

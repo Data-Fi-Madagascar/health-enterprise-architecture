@@ -13,7 +13,7 @@ tags: [artsn, gouvernance, versionnement, cnasn, niveau-3]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+**Niveau :** niveau 3 : Architecture de Référence Technique de la Santé Numérique.
 
 Ce document s'adresse prioritairement aux décideurs institutionnels, aux directions métier et programmes, aux équipes DEPSI et techniques, aux partenaires techniques et financiers, ainsi qu'aux équipes SIS, données et suivi-évaluation. La lecture est complémentaire pour les directions métier et les équipes SIS, et prioritaire pour les décideurs, les équipes techniques et les partenaires.
 
@@ -94,17 +94,17 @@ Lorsque l'ARTSN documente un pattern d'intégration applicable selon des context
 
 ## Liens
 
-Voir les documents suivants : Fondations — F.4 (homologation), Table de maturité par chapitre, et CAESN — gouvernance.
+Voir les documents suivants : Fondations : F.4 (homologation), Table de maturité par chapitre, et CAESN : gouvernance.
 
 ## Références
 
-- **F.3** — F.3 — Éradication des silos technologiques (`referentiel/fondations/f-3.md`)
-- **depreciation.md** — Processus de dépréciation des composants (`02_artsn/06_gouvernance/depreciation.md`)
-- **veille-architecturale.md** — Veille architecturale (`02_artsn/06_gouvernance/veille-architecturale.md`)
-- **conformite.md** — Tableau de bord de conformité architecturale (`02_artsn/06_gouvernance/conformite.md`)
-- **CAESN** — Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
-- **F.4** — F.4 — Homologation obligatoire (`referentiel/fondations/f-4.md`)
-- **table de maturité** — Annexe A — Table de maturité par chapitre (`02_artsn/07_annexes/a-table-de-maturite.md`)
-- **Fondations — F.4 (homologation)** — F.4 — Homologation obligatoire (`referentiel/fondations/f-4.md`)
-- **Table de maturité par chapitre** — Annexe A — Table de maturité par chapitre (`02_artsn/07_annexes/a-table-de-maturite.md`)
-- **CAESN — gouvernance** — Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
+- **F.3** : F.3 : Éradication des silos technologiques (`referentiel/fondations/f-3.md`)
+- **depreciation.md** : Processus de dépréciation des composants (`02_artsn/06_gouvernance/depreciation.md`)
+- **veille-architecturale.md** : Veille architecturale (`02_artsn/06_gouvernance/veille-architecturale.md`)
+- **conformite.md** : Tableau de bord de conformité architecturale (`02_artsn/06_gouvernance/conformite.md`)
+- **CAESN** : Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
+- **F.4** : F.4 : Homologation obligatoire (`referentiel/fondations/f-4.md`)
+- **table de maturité** : Annexe A : Table de maturité par chapitre (`02_artsn/07_annexes/a-table-de-maturite.md`)
+- **Fondations : F.4 (homologation)** : F.4 : Homologation obligatoire (`referentiel/fondations/f-4.md`)
+- **Table de maturité par chapitre** : Annexe A : Table de maturité par chapitre (`02_artsn/07_annexes/a-table-de-maturite.md`)
+- **CAESN : gouvernance** : Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)

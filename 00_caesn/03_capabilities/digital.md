@@ -13,7 +13,7 @@ tags: [capabilités, numérique, snsd]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -57,7 +57,7 @@ Le présent cadre définit le rôle, la justification et les exigences auxquelle
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
-- **Runway** — Capabilités critiques et architecture runway (`00_caesn/03_capabilities/runway.md`)
-- **Données** — Architecture des données et de l'information sanitaire (`00_caesn/04_data/index.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Capabilités** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
+- **Runway** : Capabilités critiques et architecture runway (`00_caesn/03_capabilities/runway.md`)
+- **Données** : Architecture des données et de l'information sanitaire (`00_caesn/04_data/index.md`)

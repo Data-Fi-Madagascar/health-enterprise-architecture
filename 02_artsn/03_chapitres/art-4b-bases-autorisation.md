@@ -1,5 +1,5 @@
 ---
-title: "ART-4b — Bases d'autorisation"
+title: "ART-4b : Bases d'autorisation"
 id: art-4b
 domain: 02_artsn
 version: "1.0.0"
@@ -10,11 +10,11 @@ tags: [artsn, chapitres, art-4b, niveau-3]
 related: ['cap-int-09']
 ---
 
-# ART-4b — Bases d'autorisation
+# ART-4b : Bases d'autorisation
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+**Niveau :** niveau 3 : Architecture de Référence Technique de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -27,10 +27,10 @@ related: ['cap-int-09']
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-ART-4b — Bases d'autorisation constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-4b`.
+ART-4b : Bases d'autorisation constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-4b`.
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 **Contenu normatif.** Tout traitement, lecture ou transfert d’une donnée individuelle doit valider **dynamiquement sa légitimité face à un registre centralisé** évaluant les fondements juridiques d’accès. Les fondements cibles sont : consentement ou opposition explicite, mandat de santé publique, ou accord interinstitutionnel (ART-0).
 
@@ -47,11 +47,11 @@ ART-4b — Bases d'autorisation constitue un chapitre du **cadre normatif opposa
 ## Liens
 
 - Index des chapitres
-- Exigences contextuelles — Partie III
+- Exigences contextuelles : Partie III
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`art-4b`** — Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
-- **Index des chapitres** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
-- **Exigences contextuelles — Partie III** — Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
+- **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **`art-4b`** : Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
+- **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

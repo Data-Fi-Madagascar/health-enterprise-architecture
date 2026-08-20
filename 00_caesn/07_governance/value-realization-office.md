@@ -13,7 +13,7 @@ tags: [gouvernance, valeur, portefeuille, bénéfices]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -27,7 +27,7 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 
 ## Rôle et mandat
 
-Le Bureau de Réalisation de la Valeur est le mécanisme institutionnel chargé de vérifier que les initiatives financées produisent réellement les bénéfices attendus. Il ne gère pas les projets — c'est le rôle des responsables techniques. Il gouverne la valeur : il définit les bénéfices attendus, suit leur réalisation, détecte les écarts, recommande les arbitrages et rend compte aux instances de gouvernance nationale.
+Le Bureau de Réalisation de la Valeur est le mécanisme institutionnel chargé de vérifier que les initiatives financées produisent réellement les bénéfices attendus. Il ne gère pas les projets : c'est le rôle des responsables techniques. Il gouverne la valeur : il définit les bénéfices attendus, suit leur réalisation, détecte les écarts, recommande les arbitrages et rend compte aux instances de gouvernance nationale.
 
 > Une initiative n'est pas prioritaire parce qu'elle est financée. Elle est prioritaire parce qu'elle produit une valeur mesurable, renforce une capabilité critique et s'inscrit dans l'architecture nationale.
 
@@ -75,8 +75,8 @@ Le Bureau recommande et arbitre les décisions de portefeuille : poursuivre, acc
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Gouvernance** — Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
-- **RACI de gouvernance** — RACI de gouvernance et responsabilités (`00_caesn/07_governance/raci.md`)
-- **Portefeuille** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
-- **Priorisation des initiatives** — Critères et score de priorisation des initiatives (`00_caesn/06_portfolio/prioritization.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Gouvernance** : Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
+- **RACI de gouvernance** : RACI de gouvernance et responsabilités (`00_caesn/07_governance/raci.md`)
+- **Portefeuille** : Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
+- **Priorisation des initiatives** : Critères et score de priorisation des initiatives (`00_caesn/06_portfolio/prioritization.md`)

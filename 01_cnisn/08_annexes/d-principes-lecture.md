@@ -1,5 +1,5 @@
 ---
-title: Annexe D — Principes de lecture
+title: Annexe D : Principes de lecture
 id: cnisn-annexe-d
 domain: 01_cnisn
 version: "1.0.0"
@@ -9,7 +9,7 @@ owner: DEPSI
 tags: ["cnisn", "niveau-2", "annexes"]
 ---
 
-# Annexe D — Principes de lecture
+# Annexe D : Principes de lecture
 
 
 Le CNISN fixe ce qui doit être garanti dans les échanges de données de santé. L'ARTSN fixe les contrats et patrons architecturaux permettant de le garantir. Le PTISN fixe les standards, profils et implémentations candidats pour réaliser ces contrats.

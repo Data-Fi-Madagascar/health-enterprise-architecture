@@ -13,7 +13,7 @@ tags: [données, principes]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -31,9 +31,9 @@ Les principes d'architecture transversaux s'appliquent à toutes les données du
 ## Catalogue des principes de données
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### DA-01 — Les données de santé sont un actif stratégique national
+### DA-01 : Les données de santé sont un actif stratégique national
 
 #### Signification
 
@@ -45,7 +45,7 @@ La gouvernance des données de santé relève du Ministère de la Santé Publiqu
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-01*
 
-### DA-02 — Une donnée doit être collectée une seule fois et réutilisée plusieurs fois
+### DA-02 : Une donnée doit être collectée une seule fois et réutilisée plusieurs fois
 
 #### Signification
 
@@ -57,7 +57,7 @@ Toute nouvelle collecte vérifie d’abord l’existence de données déjà disp
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-02*
 
-### DA-03 — Les référentiels nationaux sont les sources de vérité
+### DA-03 : Les référentiels nationaux sont les sources de vérité
 
 #### Signification
 
@@ -69,7 +69,7 @@ Les systèmes utilisent les référentiels nationaux (formations sanitaires, gé
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-03*
 
-### DA-04 — Les données opérationnelles et analytiques doivent être distinguées
+### DA-04 : Les données opérationnelles et analytiques doivent être distinguées
 
 #### Signification
 
@@ -81,7 +81,7 @@ Les données circulent des systèmes opérationnels vers les systèmes analytiqu
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-04*
 
-### DA-05 — La qualité des données est une responsabilité partagée
+### DA-05 : La qualité des données est une responsabilité partagée
 
 #### Signification
 
@@ -93,7 +93,7 @@ Les systèmes intègrent des contrôles à la saisie, des retours aux producteur
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-05*
 
-### DA-06 — Les données doivent être utilisées pour des décisions réelles
+### DA-06 : Les données doivent être utilisées pour des décisions réelles
 
 #### Signification
 
@@ -105,7 +105,7 @@ Toute production de rapports ou de visualisations est liée à une revue, un arb
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-06*
 
-### DA-07 — Les données personnelles de santé doivent être protégées dès la conception
+### DA-07 : Les données personnelles de santé doivent être protégées dès la conception
 
 #### Signification
 
@@ -117,7 +117,7 @@ Confidentialité, gestion des accès, traçabilité, consentement et limitation 
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-07*
 
-### DA-08 — Les échanges de données doivent passer par des mécanismes gouvernés
+### DA-08 : Les échanges de données doivent passer par des mécanismes gouvernés
 
 #### Signification
 
@@ -138,7 +138,7 @@ Les échanges utilisent la couche nationale d’échange ou les mécanismes homo
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Principes d'architecture** — Principes d'architecture (`00_caesn/02_principles/index.md`)
-- **Domaines de données** — Domaines de données prioritaires (`00_caesn/04_data/domains.md`)
-- **Gouvernance des données** — Gouvernance, qualité et protection des données (`00_caesn/04_data/governance.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Principes d'architecture** : Principes d'architecture (`00_caesn/02_principles/index.md`)
+- **Domaines de données** : Domaines de données prioritaires (`00_caesn/04_data/domains.md`)
+- **Gouvernance des données** : Gouvernance, qualité et protection des données (`00_caesn/04_data/governance.md`)

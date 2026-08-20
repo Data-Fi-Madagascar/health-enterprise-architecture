@@ -1,5 +1,5 @@
 ---
-title: Annexe C — Renvoi CAESN et capacités candidates
+title: Annexe C : Renvoi CAESN et capacités candidates
 id: artsn-annexe-c-renvoi
 domain: 02_artsn
 version: "1.0.0"
@@ -9,15 +9,15 @@ owner: DEPSI
 tags: [artsn, annexes, renvoi, capacites-candidates, one-health, niveau-3]
 ---
 
-# Annexe C — Renvoi CAESN et capacités candidates
+# Annexe C : Renvoi CAESN et capacités candidates
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+**Niveau :** niveau 3 : Architecture de Référence Technique de la Santé Numérique.
 
 La lecture de ce document est **prioritaire** pour les décideurs institutionnels, les directions métier et programmes, l'équipe DEPSI et ses équipes techniques, ainsi que les partenaires techniques et financiers. Elle est **complémentaire** pour les équipes SIS, données et suivi-évaluation. Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
-## Écarts CAESN ↔ ARTSN — Arbitrages appliqués
+## Écarts CAESN ↔ ARTSN : Arbitrages appliqués
 
 Les écarts initialement documentés dans la note « Point de vigilance CAESN » ont été arbitrés et implémentés le 2026-08-13. Voir le document d'arbitrage pour le détail des décisions.
 
@@ -50,21 +50,21 @@ La nomenclature CAESN (12 PA + PD) est confirmée comme référence. Un tableau 
 
 ## Liens
 
-Les liens utiles pour approfondir ce document sont les suivants : la note de gouvernance Point de vigilance CAESN, le catalogue des CAESN — capacités, ainsi que les chapitres ART-0 — Accords de partage, ART-4a — Résolution d'identité et ART-4d — Référentiel géospatial.
+Les liens utiles pour approfondir ce document sont les suivants : la note de gouvernance Point de vigilance CAESN, le catalogue des CAESN : capacités, ainsi que les chapitres ART-0 : Accords de partage, ART-4a : Résolution d'identité et ART-4d : Référentiel géospatial.
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **note « Point de vigilance CAESN »** — Point de vigilance CAESN — capacité et référentiel manquants pour la coordination intersectorielle (One Health) (`00_caesn/07_governance/point-de-vigilance-caesn.md`)
-- **document d'arbitrage** — Proposition d'arbitrage — 5 écarts CAESN ↔ ARTSN (`00_caesn/07_governance/arbitrage-ecarts-caesn-artsn.md`)
-- **ART-4a** — Résolution d'identité (`referentiel/chapitres/art-4a.md`)
-- **ART-4b** — Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
-- **ART-0** — Accords de partage inter-institutionnels (`referentiel/chapitres/art-0.md`)
-- **ART-8d** — Chorégraphie inter-institutionnelle (`referentiel/chapitres/art-8d.md`)
-- **ART-4d** — Référentiel géospatial et d'exploitation partagé (`referentiel/chapitres/art-4d.md`)
-- **tableau de mapping** — Table de correspondance — Principes CAESN ↔ ARTSN (`00_caesn/02_principles/mapping-caesn-artsn.md`)
-- **Point de vigilance CAESN** — Point de vigilance CAESN — capacité et référentiel manquants pour la coordination intersectorielle (One Health) (`00_caesn/07_governance/point-de-vigilance-caesn.md`)
-- **CAESN — capacités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
-- **ART-0 — Accords de partage** — Accords de partage inter-institutionnels (`referentiel/chapitres/art-0.md`)
-- **ART-4a — Résolution d'identité** — Résolution d'identité (`referentiel/chapitres/art-4a.md`)
-- **ART-4d — Référentiel géospatial** — Référentiel géospatial et d'exploitation partagé (`referentiel/chapitres/art-4d.md`)
+- **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **note « Point de vigilance CAESN »** : Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health) (`00_caesn/07_governance/point-de-vigilance-caesn.md`)
+- **document d'arbitrage** : Proposition d'arbitrage : 5 écarts CAESN ↔ ARTSN (`00_caesn/07_governance/arbitrage-ecarts-caesn-artsn.md`)
+- **ART-4a** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
+- **ART-4b** : Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
+- **ART-0** : Accords de partage inter-institutionnels (`referentiel/chapitres/art-0.md`)
+- **ART-8d** : Chorégraphie inter-institutionnelle (`referentiel/chapitres/art-8d.md`)
+- **ART-4d** : Référentiel géospatial et d'exploitation partagé (`referentiel/chapitres/art-4d.md`)
+- **tableau de mapping** : Table de correspondance : Principes CAESN ↔ ARTSN (`00_caesn/02_principles/mapping-caesn-artsn.md`)
+- **Point de vigilance CAESN** : Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health) (`00_caesn/07_governance/point-de-vigilance-caesn.md`)
+- **CAESN : capacités** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
+- **ART-0 : Accords de partage** : Accords de partage inter-institutionnels (`referentiel/chapitres/art-0.md`)
+- **ART-4a : Résolution d'identité** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
+- **ART-4d : Référentiel géospatial** : Référentiel géospatial et d'exploitation partagé (`referentiel/chapitres/art-4d.md`)

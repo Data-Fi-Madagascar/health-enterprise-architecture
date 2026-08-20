@@ -1,5 +1,5 @@
 ---
-title: PT-11 — Profil technique national
+title: PT-11 : Profil technique national
 id: ptisn-pt-11-consentement-bases-autorisation
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,14 +9,14 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "pt-11"]
 ---
 
-# PT-11 — Profil technique national
+# PT-11 : Profil technique national
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ## 1. Capacité CNISN
 
-**CAP-INT-09 — Gestion des consentements et bases d’autorisation**
+**CAP-INT-09 : Gestion des consentements et bases d’autorisation**
 
 ## 2. Chapitres ART applicables
 

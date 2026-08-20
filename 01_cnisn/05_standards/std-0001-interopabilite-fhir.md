@@ -1,5 +1,5 @@
 ---
-title: "STD-0001 — Norme d'interopérabilité — HL7 FHIR R4"
+title: "STD-0001 : Norme d'interopérabilité : HL7 FHIR R4"
 id: std-0001
 domain: 05_standards
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: Comité National d'Architecture Santé Numérique
 tags: [standards, interoperabilite, fhir, obligatoire]
 ---
 
-# STD-0001 — Norme d'interopérabilité — HL7 FHIR R4
+# STD-0001 : Norme d'interopérabilité : HL7 FHIR R4
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 2 — Cadre National d'Interopérabilité de la Santé Numérique.
+**Niveau :** niveau 2 : Cadre National d'Interopérabilité de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -84,8 +84,8 @@ Toute dérogation doit être justifiée et approuvée par le Comité National.
 ## Références
 
 - Normes et standards
-- ADR-0003 — Utilisation de HL7 FHIR
-- ARTSN — Fondation F.2
-- ARTSN — Fondation F.3
+- ADR-0003 : Utilisation de HL7 FHIR
+- ARTSN : Fondation F.2
+- ARTSN : Fondation F.3
 
-- **matrice de lecture** — Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
+- **matrice de lecture** : Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)

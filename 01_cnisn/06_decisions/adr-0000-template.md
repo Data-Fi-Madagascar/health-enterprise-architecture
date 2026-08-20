@@ -1,5 +1,5 @@
 ---
-title: "ADR-0000 — <Titre de la décision>"
+title: "ADR-0000 : <Titre de la décision>"
 id: adr-0000
 domain: 06_decisions
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: <Porteur de la décision>
 tags: [adr, <domaine>]
 ---
 
-# ADR-0000 — <Titre de la décision>
+# ADR-0000 : <Titre de la décision>
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 2 — Cadre National d'Interopérabilité de la Santé Numérique.
+**Niveau :** niveau 2 : Cadre National d'Interopérabilité de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -64,4 +64,4 @@ Expliquez les raisons qui rendent cette décision pertinente au regard des princ
 - Principes
 - Standards
 
-- **matrice de lecture** — Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
+- **matrice de lecture** : Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)

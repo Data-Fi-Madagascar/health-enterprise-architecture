@@ -1,5 +1,5 @@
 ---
-title: "ADR-0005 — Adoption de FHIR Consent pour le consentement structuré"
+title: "ADR-0005 : Adoption de FHIR Consent pour le consentement structuré"
 id: adr-0005
 domain: 06_decisions
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: DEPSI
 tags: [adr, consentement, fhir, souveraineté, données]
 ---
 
-# ADR-0005 — Adoption de FHIR Consent pour le consentement structuré
+# ADR-0005 : Adoption de FHIR Consent pour le consentement structuré
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -80,13 +80,13 @@ Le modèle FHIR Consent permet :
 |-------------|-----------------|
 | Consentement papier uniquement | Pas de traçabilité numérique, non vérifiable |
 | Consentement propriétaire (JSON maison) | Pas d'interopérabilité, dépendance éditeur |
-| Consentement basé sur les seuls rôles RBAC | Insuffisant — ne couvre pas le consentement patient |
+| Consentement basé sur les seuls rôles RBAC | Insuffisant : ne couvre pas le consentement patient |
 | GDPR Consent (UE) | Trop strict pour le contexte malgache, inadapté |
 
 ## Références
 
-- PT-11 — Consentement
-- ART-4b — Bases d'autorisation
-- ART-7 — Sécurité
-- [Loi 2014-038 — Protection des données personnelles](https://www.lexpress.mg)
+- PT-11 : Consentement
+- ART-4b : Bases d'autorisation
+- ART-7 : Sécurité
+- [Loi 2014-038 : Protection des données personnelles](https://www.lexpress.mg)
 

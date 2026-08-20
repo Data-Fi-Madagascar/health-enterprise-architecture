@@ -13,7 +13,7 @@ tags: [applications, urbanisation]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -44,7 +44,7 @@ L'urbanisation vise à organiser le paysage applicatif pour éviter les doublons
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Principes de l'architecture applicative** — Principes de l'architecture applicative (`00_caesn/05_application/principles.md`)
-- **Rationalisation** — Trajectoire de rationalisation du paysage applicatif (`00_caesn/05_application/rationalization.md`)
-- **Services partagés** — Services numériques partagés prioritaires (`00_caesn/05_application/shared-services.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Principes de l'architecture applicative** : Principes de l'architecture applicative (`00_caesn/05_application/principles.md`)
+- **Rationalisation** : Trajectoire de rationalisation du paysage applicatif (`00_caesn/05_application/rationalization.md`)
+- **Services partagés** : Services numériques partagés prioritaires (`00_caesn/05_application/shared-services.md`)

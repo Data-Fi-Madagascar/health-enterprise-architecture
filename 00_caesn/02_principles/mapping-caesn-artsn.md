@@ -1,5 +1,5 @@
 ---
-title: "Table de correspondance — Principes CAESN ↔ ARTSN"
+title: "Table de correspondance : Principes CAESN ↔ ARTSN"
 id: mapping-principes-caesn-artsn
 domain: 02_principles
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: DEPSI
 tags: [principes, caesn, artsn, mapping, correspondance]
 ---
 
-# Table de correspondance — Principes CAESN ↔ ARTSN
+# Table de correspondance : Principes CAESN ↔ ARTSN
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -48,7 +48,7 @@ Cette table établit la correspondance entre les deux nomenclatures pour assurer
 | PA-11 | Souveraineté numérique | P-11 | Souveraineté numérique |
 | PA-12 | Architecture runway | P-12 | Architecture runway |
 
-## Principes de domaine (PD) — uniques au CAESN
+## Principes de domaine (PD) : uniques au CAESN
 
 Les principes de domaine sont spécifiques aux flux de valeur et ne figurent pas dans la nomenclature ARTSN (qui les intègre implicitement via les chapitres ART).
 
@@ -85,13 +85,13 @@ La nomenclature CAESN (12 PA + PD) est la référence. L'ARTSN peut référencer
 
 ## Liens
 
-- CAESN — Principes architecturaux
-- ARTSN — Fondations
+- CAESN : Principes architecturaux
+- ARTSN : Fondations
 - Point de vigilance CAESN
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **CAESN — Principes architecturaux** — Principes d'architecture (`00_caesn/02_principles/index.md`)
-- **ARTSN — Fondations** — Fondations de l'ARTSN (`02_artsn/00_fondations/index.md`)
-- **Point de vigilance CAESN** — Point de vigilance CAESN — capacité et référentiel manquants pour la coordination intersectorielle (One Health) (`00_caesn/07_governance/point-de-vigilance-caesn.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **CAESN : Principes architecturaux** : Principes d'architecture (`00_caesn/02_principles/index.md`)
+- **ARTSN : Fondations** : Fondations de l'ARTSN (`02_artsn/00_fondations/index.md`)
+- **Point de vigilance CAESN** : Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health) (`00_caesn/07_governance/point-de-vigilance-caesn.md`)

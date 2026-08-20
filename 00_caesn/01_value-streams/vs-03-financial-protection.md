@@ -1,5 +1,5 @@
 ---
-title: "VS-03 — Protéger financièrement la population face aux dépenses de santé"
+title: "VS-03 : Protéger financièrement la population face aux dépenses de santé"
 id: vs-03
 domain: 01_value-streams
 version: "1.0.0""
@@ -9,11 +9,11 @@ owner: Direction de la couverture santé universelle
 tags: [flux-de-valeur, value-stream]
 ---
 
-# VS-03 — Protéger financièrement la population face aux dépenses de santé
+# VS-03 : Protéger financièrement la population face aux dépenses de santé
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -26,7 +26,7 @@ tags: [flux-de-valeur, value-stream]
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 <!-- BEGIN:GENERATED mode=monographie source=referentiel/flux-valeur/vs-03.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ## Valeur produite
 
@@ -68,9 +68,9 @@ Ce flux couvre l’ensemble du cycle de la couverture santé universelle, depuis
 ## Étapes de valeur
 
 <!-- BEGIN:GENERATED mode=catalogue source=referentiel/etapes-valeur/ev-15.md,referentiel/etapes-valeur/ev-16.md,referentiel/etapes-valeur/ev-17.md,referentiel/etapes-valeur/ev-18.md,referentiel/etapes-valeur/ev-19.md,referentiel/etapes-valeur/ev-20.md,referentiel/etapes-valeur/ev-21.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### EV-15 — Identification et enregistrement des bénéficiaires
+### EV-15 : Identification et enregistrement des bénéficiaires
 
 #### Objectif
 
@@ -98,7 +98,7 @@ Taux de couverture du registre, taux d'exclusion estimé
 
 *Rattachement : CAP-07, CAP-14, CAP-15 · fiche EV-15*
 
-### EV-16 — Définition des droits et du panier de soins
+### EV-16 : Définition des droits et du panier de soins
 
 #### Objectif
 
@@ -126,7 +126,7 @@ Proportion de formations sanitaires informées des droits
 
 *Rattachement : CAP-07 · fiche EV-16*
 
-### EV-17 — Mobilisation des financements
+### EV-17 : Mobilisation des financements
 
 #### Objectif
 
@@ -154,7 +154,7 @@ Taux d'exécution budgétaire, part du budget santé allouée à la protection f
 
 *Rattachement : CAP-12, CAP-08 · fiche EV-17*
 
-### EV-18 — Prise en charge et exemption au point de service
+### EV-18 : Prise en charge et exemption au point de service
 
 #### Objectif
 
@@ -182,7 +182,7 @@ Taux d'exemption appliqué, taux de refus de soins signalés
 
 *Rattachement : CAP-07, CAP-15 · fiche EV-18*
 
-### EV-19 — Facturation et traitement des demandes de remboursement
+### EV-19 : Facturation et traitement des demandes de remboursement
 
 #### Objectif
 
@@ -210,7 +210,7 @@ Taux de factures rejetées, délai de validation des factures
 
 *Rattachement : CAP-07, CAP-13 · fiche EV-19*
 
-### EV-20 — Remboursement
+### EV-20 : Remboursement
 
 #### Objectif
 
@@ -238,7 +238,7 @@ Délai moyen de remboursement, taux de remboursement effectif
 
 *Rattachement : CAP-07, CAP-12 · fiche EV-20*
 
-### EV-21 — Contrôle, audit et ajustement des mécanismes
+### EV-21 : Contrôle, audit et ajustement des mécanismes
 
 #### Objectif
 
@@ -270,9 +270,9 @@ Proportion de contrôles réalisés, montant des anomalies détectées
 ## Processus métier
 
 <!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-07.md,referentiel/processus/prc-08.md,referentiel/processus/prc-09.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### PRC-07 — Identification et droits des bénéficiaires
+### PRC-07 : Identification et droits des bénéficiaires
 
 #### Objectif
 
@@ -280,8 +280,8 @@ Constituer la base de la couverture santé universelle : identification et enreg
 
 #### Étapes couvertes
 
-- EV-15 — Identification et enregistrement des bénéficiaires
-- EV-16 — Définition des droits et du panier de soins
+- EV-15 : Identification et enregistrement des bénéficiaires
+- EV-16 : Définition des droits et du panier de soins
 
 #### Acteurs
 
@@ -293,7 +293,7 @@ Taux de couverture du registre, taux d'exclusion estimé, proportion de formatio
 
 *Rattachement : CAP-07, CAP-08, CAP-12, CAP-13, CAP-14, CAP-15, CAP-16, PP-02, PP-03, PP-06, CMP-03, CMP-05, CMP-09, CMP-10, CMP-16 · fiche PRC-07*
 
-### PRC-08 — Financement et exemption au point de service
+### PRC-08 : Financement et exemption au point de service
 
 #### Objectif
 
@@ -301,8 +301,8 @@ Garantir la disponibilité des fonds et l'accès effectif aux soins sans paiemen
 
 #### Étapes couvertes
 
-- EV-17 — Mobilisation des financements
-- EV-18 — Prise en charge et exemption au point de service
+- EV-17 : Mobilisation des financements
+- EV-18 : Prise en charge et exemption au point de service
 
 #### Acteurs
 
@@ -314,7 +314,7 @@ Taux d'exécution budgétaire, part du budget santé allouée à la protection f
 
 *Rattachement : CAP-07, CAP-08, CAP-12, CAP-13, CAP-14, CAP-15, CAP-16, PP-02, PP-03, PP-06, CMP-03, CMP-05, CMP-09, CMP-10, CMP-16 · fiche PRC-08*
 
-### PRC-09 — Remboursement et régulation des mécanismes
+### PRC-09 : Remboursement et régulation des mécanismes
 
 #### Objectif
 
@@ -322,9 +322,9 @@ Boucler le cycle financier de la protection : facturation et traitement des dema
 
 #### Étapes couvertes
 
-- EV-19 — Facturation et traitement des demandes de remboursement
-- EV-20 — Remboursement
-- EV-21 — Contrôle, audit et ajustement des mécanismes
+- EV-19 : Facturation et traitement des demandes de remboursement
+- EV-20 : Remboursement
+- EV-21 : Contrôle, audit et ajustement des mécanismes
 
 #### Acteurs
 
@@ -344,5 +344,5 @@ Taux de factures rejetées, délai de validation des factures, délai moyen de r
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Capabilités** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)

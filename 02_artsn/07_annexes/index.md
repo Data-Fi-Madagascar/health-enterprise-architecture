@@ -13,11 +13,11 @@ tags: [artsn, annexes, niveau-3]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+**Niveau :** niveau 3 : Architecture de Référence Technique de la Santé Numérique.
 
 La lecture de ce document est **prioritaire** pour les décideurs institutionnels, les directions métier et programmes, l'équipe DEPSI et ses équipes techniques, les équipes SIS, données et suivi-évaluation, ainsi que les partenaires techniques et financiers. Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
-L'annexe A — Table de maturité par chapitre présente le statut de chaque chapitre et les conditions de passage au statut supérieur. L'annexe B — Glossaire des patterns cités fournit les définitions des patterns techniques mobilisés par les chapitres. L'annexe C — Renvoi CAESN et capacités candidates documente les écarts constatés avec le CAESN et les référentiels normatifs One Health. L'annexe D — Protocole de test d'interopérabilité détaille les scénarios de test, les critères de succès et la certification des profils techniques. L'annexe E — SLA et métriques de performance fixe les objectifs de niveau de service et les indicateurs de performance par profil.
+L'annexe A : Table de maturité par chapitre présente le statut de chaque chapitre et les conditions de passage au statut supérieur. L'annexe B : Glossaire des patterns cités fournit les définitions des patterns techniques mobilisés par les chapitres. L'annexe C : Renvoi CAESN et capacités candidates documente les écarts constatés avec le CAESN et les référentiels normatifs One Health. L'annexe D : Protocole de test d'interopérabilité détaille les scénarios de test, les critères de succès et la certification des profils techniques. L'annexe E : SLA et métriques de performance fixe les objectifs de niveau de service et les indicateurs de performance par profil.
 
 ## Liens
 
@@ -25,6 +25,6 @@ Les liens utiles pour approfondir ce document sont les suivants : les chapitres 
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **Chapitres et patterns de référence** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
-- **Gouvernance de l'ARTSN** — Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)
+- **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **Chapitres et patterns de référence** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **Gouvernance de l'ARTSN** : Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)

@@ -1,5 +1,5 @@
 ---
-title: "Cartographie HEA → GDHM — Auto-évaluation de maturité numérique santé"
+title: "Cartographie HEA → GDHM : Auto-évaluation de maturité numérique santé"
 id: evaluation-gdhm
 domain: 10_annexes
 version: "2.0.0"
@@ -9,11 +9,11 @@ owner: Bureau de Réalisation de la Valeur
 tags: [gdhm, maturite, oms, afrique, auto-evaluation]
 ---
 
-# Cartographie HEA → GDHM — Auto-évaluation de maturité numérique santé
+# Cartographie HEA → GDHM : Auto-évaluation de maturité numérique santé
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -29,22 +29,22 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 
 Le Global Digital Health Monitor (GDHM) de l'OMS est l'outil de référence pour évaluer la maturité de l'écosystème numérique santé des États membres. Il comprend **7 domaines, 23 indicateurs principaux** (28 éléments avec sous-indicateurs), notés sur une échelle de **5 phases** (1 = naissant, 5 = optimisé).
 
-**Madagascar a soumis ses données GDHM en 2024** — résultat : **Phase 3, score composité 2,5/5**, rang **17ᵉ sur 32 pays africains** (source : *State of Digital Health in 32 Countries of the WHO African Region*, PMC, 2025). Le pays se situe dans le **Cluster 3 « governance-led »** : forces en gouvernance et stratégie, faiblesses en workforce et standards.
+**Madagascar a soumis ses données GDHM en 2024** : résultat : **Phase 3, score composité 2,5/5**, rang **17ᵉ sur 32 pays africains** (source : *State of Digital Health in 32 Countries of the WHO African Region*, PMC, 2025). Le pays se situe dans le **Cluster 3 « governance-led »** : forces en gouvernance et stratégie, faiblesses en workforce et standards.
 
 Cette cartographie croise les données GDHM 2024 avec le cadre HEA pour :
-1. **Documenter les preuves** — aligner les données existantes avec les indicateurs GDHM
-2. **Identifier les écarts** — prioriser les actions pour atteindre Phase 3+ uniformément
-3. **Préparer la soumission 2025** — alimenter la prochaine évaluation annuelle
+1. **Documenter les preuves** : aligner les données existantes avec les indicateurs GDHM
+2. **Identifier les écarts** : prioriser les actions pour atteindre Phase 3+ uniformément
+3. **Préparer la soumission 2025** : alimenter la prochaine évaluation annuelle
 
 **Références :**
 - [WHO GDHM](https://data.who.int/dashboards/gdhm/overview)
 - [Méthodologie](https://monitor.digitalhealthmonitor.org/methodology)
 - [Liste des indicateurs](https://monitor.digitalhealthmonitor.org/indicators_info)
-- *State of Digital Health in 32 Countries of the WHO African Region* (2025) — PMC/NIH
+- *State of Digital Health in 32 Countries of the WHO African Region* (2025) : PMC/NIH
 
 ---
 
-## Domaine 1 — Leadership et gouvernance
+## Domaine 1 : Leadership et gouvernance
 
 | Indicateur | Description GDHM | Phase | Preuves |
 |------------|------------------|-------|---------|
@@ -73,7 +73,7 @@ Cette cartographie croise les données GDHM 2024 avec le cadre HEA pour :
 
 ---
 
-## Domaine 2 — Stratégie et investissement
+## Domaine 2 : Stratégie et investissement
 
 | Indicateur | Description GDHM | Phase | Preuves |
 |------------|------------------|-------|---------|
@@ -99,7 +99,7 @@ Cette cartographie croise les données GDHM 2024 avec le cadre HEA pour :
 
 ---
 
-## Domaine 3 — Législation, politique et conformité
+## Domaine 3 : Législation, politique et conformité
 
 | Indicateur | Description GDHM | Phase | Preuves |
 |------------|------------------|-------|---------|
@@ -127,7 +127,7 @@ Cette cartographie croise les données GDHM 2024 avec le cadre HEA pour :
 
 ---
 
-## Domaine 4 — Main-d'œuvre
+## Domaine 4 : Main-d'œuvre
 
 | Indicateur | Description GDHM | Phase | Preuves |
 |------------|------------------|-------|---------|
@@ -156,7 +156,7 @@ Cette cartographie croise les données GDHM 2024 avec le cadre HEA pour :
 
 ---
 
-## Domaine 5 — Standards et interopérabilité
+## Domaine 5 : Standards et interopérabilité
 
 | Indicateur | Description GDHM | Phase | Preuves |
 |------------|------------------|-------|---------|
@@ -183,7 +183,7 @@ Cette cartographie croise les données GDHM 2024 avec le cadre HEA pour :
 
 ---
 
-## Domaine 6 — Infrastructure
+## Domaine 6 : Infrastructure
 
 | Indicateur | Description GDHM | Phase | Preuves |
 |------------|------------------|-------|---------|
@@ -209,7 +209,7 @@ Cette cartographie croise les données GDHM 2024 avec le cadre HEA pour :
 
 ---
 
-## Domaine 7 — Services et applications
+## Domaine 7 : Services et applications
 
 | Indicateur | Description GDHM | Phase | Preuves |
 |------------|------------------|-------|---------|
@@ -245,7 +245,7 @@ Cette cartographie croise les données GDHM 2024 avec le cadre HEA pour :
 | 5. Standards et interopérabilité | **2,25** | 2,71 | 3 | ÉLEVÉE |
 | 6. Infrastructure | **2,0** | 2,47 | 3 | ÉLEVÉE |
 | 7. Services et applications | **2,5** | 2,82 | 3 | MOYENNE |
-| **Moyenne** | **2,13** | **3,06** | **3,0** | — |
+| **Moyenne** | **2,13** | **3,06** | **3,0** | : |
 
 **Note :** Le score composité officiel GDHM 2024 de Madagascar est de **2,5** (Phase 3 globale). L'écart avec la moyenne de nos estimations domaines (2,13) s'explique par la pondération GDHM qui utilise uniquement les indicateurs principaux (23) et non les sous-indicateurs.
 
@@ -261,7 +261,7 @@ Cette cartographie croise les données GDHM 2024 avec le cadre HEA pour :
 | ... | ... | ... | ... | ... | ... |
 | **17** | **Madagascar** | **3** | **2,50** | **Standards (3)** | **Main-d'œuvre (1)** |
 | ... | ... | ... | ... | ... | ... |
-| **Moy. AFRO** | — | **3** | **3,06** | Leadership (3,29) | Main-d'œuvre (2,29) |
+| **Moy. AFRO** | : | **3** | **3,06** | Leadership (3,29) | Main-d'œuvre (2,29) |
 
 **Positionnement :** Madagascar est en Phase 3 (score 2,5), 17ᵉ sur 32 pays africains. Son point fort relatif est les standards et l'architecture (Phase 3). Son point critique est la main-d'œuvre (Phase 1,25), nettement en dessous de la moyenne régionale (2,29). Le pays se situe dans le **Cluster 3 « governance-led »** : forces en gouvernance/stratégie, faiblesses en workforce/standards.
 
@@ -280,14 +280,14 @@ Cette cartographie croise les données GDHM 2024 avec le cadre HEA pour :
 
 ## Références
 
-- **Stratégie Nationale de Santé Digitale 2023-2027** — MSANP
-- **Loi n°2014-038** — Protection des données à caractère personnel
-- **Décret 2023-1541** — Décret d'application de la loi 2014-038
-- **Loi 2024-004** — Ratification Convention de Malabo
-- **PDSS 2020-2024** — Plan de Développement du Secteur Santé
-- **PSRSIS 2023-2027** — Plan Stratégique de Renforcement du SIS
-- **Plan Stratégique du Numérique 2023-2028** — Transformation numérique nationale
-- **Comparaison des architectures africaines** — Positionnement HEA (`00_caesn/10_annexes/comparaison-architectures-africaines.md`)
-- **WHO GDHM** — Global Digital Health Monitor (`https://data.who.int/dashboards/gdhm/overview`)
-- **Méthodologie GDHM** — Phases et indicateurs (`https://monitor.digitalhealthmonitor.org/methodology`)
-- **State of Digital Health in 32 Countries of the WHO African Region** (2025) — PMC/NIH (`https://pmc.ncbi.nlm.nih.gov/articles/PMC13361429/`)
+- **Stratégie Nationale de Santé Digitale 2023-2027** : MSANP
+- **Loi n°2014-038** : Protection des données à caractère personnel
+- **Décret 2023-1541** : Décret d'application de la loi 2014-038
+- **Loi 2024-004** : Ratification Convention de Malabo
+- **PDSS 2020-2024** : Plan de Développement du Secteur Santé
+- **PSRSIS 2023-2027** : Plan Stratégique de Renforcement du SIS
+- **Plan Stratégique du Numérique 2023-2028** : Transformation numérique nationale
+- **Comparaison des architectures africaines** : Positionnement HEA (`00_caesn/10_annexes/comparaison-architectures-africaines.md`)
+- **WHO GDHM** : Global Digital Health Monitor (`https://data.who.int/dashboards/gdhm/overview`)
+- **Méthodologie GDHM** : Phases et indicateurs (`https://monitor.digitalhealthmonitor.org/methodology`)
+- **State of Digital Health in 32 Countries of the WHO African Region** (2025) : PMC/NIH (`https://pmc.ncbi.nlm.nih.gov/articles/PMC13361429/`)

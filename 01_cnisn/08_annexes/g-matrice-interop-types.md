@@ -1,5 +1,5 @@
 ---
-title: "Annexe G — Matrice des types d'interopérabilité"
+title: "Annexe G : Matrice des types d'interopérabilité"
 id: cnisn-annexe-g
 domain: 01_cnisn
 version: "1.0.0"
@@ -9,7 +9,7 @@ owner: DEPSI
 tags: ["cnisn", "niveau-2", "annexes", "interopérabilité"]
 ---
 
-# Annexe G — Matrice des types d'interopérabilité
+# Annexe G : Matrice des types d'interopérabilité
 
 Cette annexe rend explicite la couverture des quatre types d'interopérabilité par les composants du CNISN (capacités, principes, standards, gouvernance).
 
@@ -26,20 +26,20 @@ Cette annexe rend explicite la couverture des quatre types d'interopérabilité 
 
 | Capacité | Technique | Sémantique | Organisationnelle | Juridique |
 |----------|:---------:|:----------:|:-----------------:|:---------:|
-| CAP-INT-01 — Résolution d'identité du bénéficiaire | | | ● | |
-| CAP-INT-02 — Registre des professionnels de santé | | | ● | |
-| CAP-INT-03 — Échange et médiation inter-systèmes | ● | | ● | |
-| CAP-INT-04 — Référentiel des structures et services | | ● | | |
-| CAP-INT-05 — Terminologie et codification communes | | ● | | |
-| CAP-INT-06 — Catalogue des services et registre des contrats | ● | | ● | |
-| CAP-INT-07 — Accès et exposition des données analytiques | ● | | | |
-| CAP-INT-08 — Confiance, sécurité et autorisation | ● | | ● | |
-| CAP-INT-09 — Consentement et bases d'autorisation | | | ● | ● |
-| CAP-INT-10 — Provenance, audit et traçabilité | | | ● | ● |
-| CAP-INT-11 — Qualité et réconciliation | | ● | | |
-| CAP-INT-12 — Conformité et tests d'interopérabilité | ● | | ● | |
-| CAP-INT-13 — Interopérabilité transfrontalière | ● | | ● | ● |
-| CAP-INT-14 — Échanges intersectoriels One Health | | | ● | ● |
+| CAP-INT-01 : Résolution d'identité du bénéficiaire | | | ● | |
+| CAP-INT-02 : Registre des professionnels de santé | | | ● | |
+| CAP-INT-03 : Échange et médiation inter-systèmes | ● | | ● | |
+| CAP-INT-04 : Référentiel des structures et services | | ● | | |
+| CAP-INT-05 : Terminologie et codification communes | | ● | | |
+| CAP-INT-06 : Catalogue des services et registre des contrats | ● | | ● | |
+| CAP-INT-07 : Accès et exposition des données analytiques | ● | | | |
+| CAP-INT-08 : Confiance, sécurité et autorisation | ● | | ● | |
+| CAP-INT-09 : Consentement et bases d'autorisation | | | ● | ● |
+| CAP-INT-10 : Provenance, audit et traçabilité | | | ● | ● |
+| CAP-INT-11 : Qualité et réconciliation | | ● | | |
+| CAP-INT-12 : Conformité et tests d'interopérabilité | ● | | ● | |
+| CAP-INT-13 : Interopérabilité transfrontalière | ● | | ● | ● |
+| CAP-INT-14 : Échanges intersectoriels One Health | | | ● | ● |
 
 **Lecture :** ● = couverture directe principale. Les capacités peuvent contribuer à plusieurs types simultanément.
 
@@ -47,57 +47,57 @@ Cette annexe rend explicite la couverture des quatre types d'interopérabilité 
 
 | Principe | Technique | Sémantique | Organisationnelle | Juridique |
 |----------|:---------:|:----------:|:-----------------:|:---------:|
-| P-INT-01 — Autorité désignée | | ● | ● | |
-| P-INT-02 — Résolution contre l'autorité | | ● | | |
-| P-INT-03 — Copies locales non autoritatives | ● | | | |
-| P-INT-04 — Historisation des références | | ● | | |
-| P-INT-05 — Contrat explicite | ● | | ● | |
-| P-INT-06 — Versionnement et compatibilité | ● | | | |
-| P-INT-07 — Responsabilité de la donnée | | | ● | |
-| P-INT-08 — Publication au catalogue des services | ● | | ● | |
-| P-INT-09 — Publication des contrats | ● | | | |
-| P-INT-10 — Accord préalable | | | ● | ● |
-| P-INT-11 — Arbitrage des conflits d'autorité | | | ● | |
-| P-INT-12 — Dérogation explicite | | | ● | ● |
-| P-INT-13 — Dérogation d'urgence | | | ● | ● |
-| P-INT-14 — Base d'autorisation explicite | | | | ● |
-| P-INT-15 — Limitation à la finalité | | | | ● |
-| P-INT-16 — Résidence et non-réplication | | | | ● |
-| P-INT-17 — Minimisation | | | | ● |
-| P-INT-18 — Traçabilité différenciée | | | | ● |
-| P-INT-19 — Neutralité technologique | ● | | | |
-| P-INT-20 — Portabilité et réversibilité | ● | | | |
-| P-INT-21 — Progressivité | ● | | | |
-| P-INT-22 — Fonctionnement en connectivité contrainte | ● | | | |
-| P-INT-23 — Conformité fondée sur des preuves | | | ● | |
-| P-INT-24 — Applicabilité déclarée | | | ● | |
-| P-INT-25 — Réévaluation continue | | | ● | |
+| P-INT-01 : Autorité désignée | | ● | ● | |
+| P-INT-02 : Résolution contre l'autorité | | ● | | |
+| P-INT-03 : Copies locales non autoritatives | ● | | | |
+| P-INT-04 : Historisation des références | | ● | | |
+| P-INT-05 : Contrat explicite | ● | | ● | |
+| P-INT-06 : Versionnement et compatibilité | ● | | | |
+| P-INT-07 : Responsabilité de la donnée | | | ● | |
+| P-INT-08 : Publication au catalogue des services | ● | | ● | |
+| P-INT-09 : Publication des contrats | ● | | | |
+| P-INT-10 : Accord préalable | | | ● | ● |
+| P-INT-11 : Arbitrage des conflits d'autorité | | | ● | |
+| P-INT-12 : Dérogation explicite | | | ● | ● |
+| P-INT-13 : Dérogation d'urgence | | | ● | ● |
+| P-INT-14 : Base d'autorisation explicite | | | | ● |
+| P-INT-15 : Limitation à la finalité | | | | ● |
+| P-INT-16 : Résidence et non-réplication | | | | ● |
+| P-INT-17 : Minimisation | | | | ● |
+| P-INT-18 : Traçabilité différenciée | | | | ● |
+| P-INT-19 : Neutralité technologique | ● | | | |
+| P-INT-20 : Portabilité et réversibilité | ● | | | |
+| P-INT-21 : Progressivité | ● | | | |
+| P-INT-22 : Fonctionnement en connectivité contrainte | ● | | | |
+| P-INT-23 : Conformité fondée sur des preuves | | | ● | |
+| P-INT-24 : Applicabilité déclarée | | | ● | |
+| P-INT-25 : Réévaluation continue | | | ● | |
 
 ## 4. Matrice standards → types
 
 | Standard | Technique | Sémantique | Organisationnelle | Juridique |
 |----------|:---------:|:----------:|:-----------------:|:---------:|
-| STD-0001 — HL7 FHIR R4 | ● | ● | | |
-| STD-0002 — Chiffrement et contrôle d'accès | ● | | | ● |
-| STD-0003 — X-Road | ● | | ● | |
-| STD-0004 — mADX | ● | ● | | |
-| STD-0005 — PIXm/PDQm | ● | ● | | |
-| STD-0006 — CIM-10 + LOINC | | ● | | |
-| NORM-007 — RSI 2005 | | | | ● |
-| NORM-008 — Tripartite Plus | | | ● | ● |
+| STD-0001 : HL7 FHIR R4 | ● | ● | | |
+| STD-0002 : Chiffrement et contrôle d'accès | ● | | | ● |
+| STD-0003 : X-Road | ● | | ● | |
+| STD-0004 : mADX | ● | ● | | |
+| STD-0005 : PIXm/PDQm | ● | ● | | |
+| STD-0006 : CIM-10 + LOINC | | ● | | |
+| NORM-007 : RSI 2005 | | | | ● |
+| NORM-008 : Tripartite Plus | | | ● | ● |
 
 ## 5. Gouvernance → types
 
 | Composant | Technique | Sémantique | Organisationnelle | Juridique |
 |-----------|:---------:|:----------:|:-----------------:|:---------:|
 | CNASN (Comité National d'Ayatice et de Normalisation) | | | ● | ● |
-| ADR-0002 — mADX | ● | ● | | |
-| ADR-0003 — FHIR | ● | ● | | |
-| ADR-0005 — Consentement | | | ● | ● |
-| ADR-0006 — INP | | ● | ● | |
-| ADR-0007 — GDHCN | | | ● | ● |
-| ADR-0008 — ATNA | ● | | ● | ● |
-| ADR-0009 — Terminologie | | ● | | |
+| ADR-0002 : mADX | ● | ● | | |
+| ADR-0003 : FHIR | ● | ● | | |
+| ADR-0005 : Consentement | | | ● | ● |
+| ADR-0006 : INP | | ● | ● | |
+| ADR-0007 : GDHCN | | | ● | ● |
+| ADR-0008 : ATNA | ● | | ● | ● |
+| ADR-0009 : Terminologie | | ● | | |
 
 ## 6. Synthèse par type
 

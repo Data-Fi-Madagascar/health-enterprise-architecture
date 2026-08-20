@@ -1,5 +1,5 @@
 ---
-title: "PT-14 — Interopérabilité transfrontalière"
+title: "PT-14 : Interopérabilité transfrontalière"
 id: pt-14-wrapper
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,10 +9,10 @@ owner: DEPSI
 tags: ["ptisn", "niveau-4", "profil", "transfrontalier", "gdhcn"]
 ---
 
-# PT-14 — Interopérabilité transfrontalière
+# PT-14 : Interopérabilité transfrontalière
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ## Objet
 
@@ -33,31 +33,31 @@ Ce profil technique définit les standards, protocoles et configurations pour le
 
 | Standard | Usage | Version |
 |----------|-------|---------|
-| GDHCN | Référentiel de confiance mondial pour la santé numérique | — |
+| GDHCN | Référentiel de confiance mondial pour la santé numérique | : |
 | X.509v3 | Certificats de confiance mutuelle | v3 |
-| EAL 4+ | Évaluation de la conformité des systèmes partenaires | — |
+| EAL 4+ | Évaluation de la conformité des systèmes partenaires | : |
 
 ### Échange de données
 
 | Standard | Usage | Version |
 |----------|-------|---------|
 | HL7 FHIR | Échange de données cliniques et de surveillance | R4 |
-| HL7 FHIR IPS | Résumé international du patient — document clinique minimal transfrontalier | R4 (IPS) |
+| HL7 FHIR IPS | Résumé international du patient : document clinique minimal transfrontalier | R4 (IPS) |
 | HL7 v2.x | Interopérabilité legacy avec systèmes partenaires | 2.x |
-| IHE PIX/PDQ | Résolution et recherche d'identité transfrontalière | — |
-| IHE XDS.b | Partage de documents cliniques | — |
+| IHE PIX/PDQ | Résolution et recherche d'identité transfrontalière | : |
+| IHE XDS.b | Partage de documents cliniques | : |
 
 ### Identification
 
 | Standard | Usage | Version |
 |----------|-------|---------|
-| OID (ISO) | Identifiants d'organisation internationaux | — |
+| OID (ISO) | Identifiants d'organisation internationaux | : |
 | HL7 II | Identifiant patient international | R4 |
-| ISO 2108 | Code pays (ISO 3166-1) | — |
+| ISO 2108 | Code pays (ISO 3166-1) | : |
 
 ## Interfaces d'échange
 
-### Interface 1 — Confiance GDHCN
+### Interface 1 : Confiance GDHCN
 
 | Propriété | Valeur |
 |-----------|--------|
@@ -67,44 +67,44 @@ Ce profil technique définit les standards, protocoles et configurations pour le
 | **Protocole** | mTLS |
 | **Fréquence** | Continuous (TLS handshake) |
 
-### Interface 2 — Échange clinique transfrontalier (IPS)
+### Interface 2 : Échange clinique transfrontalier (IPS)
 
 | Propriété | Valeur |
 |-----------|--------|
 | **Producteur** | CMP-06 (Intégration/Médiation) |
 | **Consommateur** | Système santé partenaire étranger |
-| **Format** | FHIR R4 — IPS Composition (résumé patient) |
+| **Format** | FHIR R4 : IPS Composition (résumé patient) |
 | **Protocole** | REST (synchrone) |
 | **Fréquence** | À la demande |
 | **Sections minimales** | ALGY (allergies), MDCA (médicaments), PROB (problèmes), IDOI (identité) |
 
-### Interface 3 — Surveillance épidémique régionale
+### Interface 3 : Surveillance épidémique régionale
 
 | Propriété | Valeur |
 |-----------|--------|
 | **Producteur** | CMP-04 (Moteur analytique) |
 | **Consommateur** | OMS AFRO / CDC Africa |
-| **Format** | IHE ADX (mADX) — données agrégées |
+| **Format** | IHE ADX (mADX) : données agrégées |
 | **Protocole** | REST (asynchrone) |
 | **Fréquence** | Quotidienne |
 
-### Interface 4 — Résolution d'identité transfrontalière
+### Interface 4 : Résolution d'identité transfrontalière
 
 | Propriété | Valeur |
 |-----------|--------|
 | **Producteur** | CMP-11 (INP) |
 | **Consommateur** | CMP-06 (Médiation) → Système partenaire |
-| **Format** | IHE PIX/PDQ — mapping OID ↔ INP |
+| **Format** | IHE PIX/PDQ : mapping OID ↔ INP |
 | **Protocole** | REST |
 | **Fréquence** | À la demande |
 
-### Interface 5 — Évacuation sanitaire internationale
+### Interface 5 : Évacuation sanitaire internationale
 
 | Propriété | Valeur |
 |-----------|--------|
 | **Producteur** | CMP-06 (Intégration/Médiation) |
 | **Consommateur** | Système santé du pays de destination |
-| **Format** | FHIR R4 — ServiceRequest (transfer) + IPS Composition (données cliniques) |
+| **Format** | FHIR R4 : ServiceRequest (transfer) + IPS Composition (données cliniques) |
 | **Protocole** | REST (synchrone) |
 | **Fréquence** | À la demande (événements urgentes) |
 | **Prérequis** | Accord bilatéral (ART-0) + autorisation de sortie du territoire |

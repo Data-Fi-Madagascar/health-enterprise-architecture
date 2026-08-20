@@ -13,7 +13,7 @@ tags: [gouvernance, instances, décisions, redevabilité]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -29,9 +29,9 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 
 La gouvernance transforme les principes du cadre en décisions concrètes. Elle garantit que les investissements numériques restent orientés par la valeur, cohérents sur le plan architectural et redevables des bénéfices produits. Elle s'inscrit dans un cadre juridique structuré :
 
-- **Loi n°2014-038** sur la protection des données à caractère personnel — la gouvernance des données de santé doit respecter les principes de la loi (finalité, minimisation, sécurité, consentement) et coopérer avec la CMIL.
-- **Stratégie Nationale de Santé Digitale 2023-2027** — la gouvernance décline les orientations de la SNSD en décisions opérationnelles.
-- **Convention de Malabo** (loi 2024-004) — les échanges transfrontaliers obéissent au cadre juridique continental.
+- **Loi n°2014-038** sur la protection des données à caractère personnel : la gouvernance des données de santé doit respecter les principes de la loi (finalité, minimisation, sécurité, consentement) et coopérer avec la CMIL.
+- **Stratégie Nationale de Santé Digitale 2023-2027** : la gouvernance décline les orientations de la SNSD en décisions opérationnelles.
+- **Convention de Malabo** (loi 2024-004) : les échanges transfrontaliers obéissent au cadre juridique continental.
 
 La gouvernance distingue explicitement deux validations complémentaires :
 
@@ -67,9 +67,9 @@ Il est présidé par le Secrétaire Général du Ministère ou son représentant
 
 - Composition et fonctionnement du Bureau de Réalisation de la Valeur
 - RACI de gouvernance et responsabilités
-- Point de vigilance CAESN — capacité et référentiel manquants pour la coordination intersectorielle (One Health)
-- Guide du processus de gouvernance — Workflows, délais, escalade et matrices de décision
-- Workflow d'homologation — Checklist, matrice de décision et processus d'homologation des initiatives
+- Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health)
+- Guide du processus de gouvernance : Workflows, délais, escalade et matrices de décision
+- Workflow d'homologation : Checklist, matrice de décision et processus d'homologation des initiatives
 
 ## Déploiement progressif
 
@@ -84,14 +84,14 @@ La mise en œuvre est progressive : validation institutionnelle, mise en place d
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Bureau de Réalisation de la Valeur** — Bureau de Réalisation de la Valeur (`00_caesn/07_governance/value-realization-office.md`)
-- **Composition et fonctionnement du Bureau de Réalisation de la Valeur** — Bureau de Réalisation de la Valeur (`00_caesn/07_governance/value-realization-office.md`)
-- **RACI de gouvernance et responsabilités** — RACI de gouvernance et responsabilités (`00_caesn/07_governance/raci.md`)
-- **Point de vigilance CAESN — capacité et référentiel manquants pour la coordination intersectorielle (One Health)** — Point de vigilance CAESN — capacité et référentiel manquants pour la coordination intersectorielle (One Health) (`00_caesn/07_governance/point-de-vigilance-caesn.md`)
-- **Guide du processus de gouvernance** — Guide du processus de gouvernance (`00_caesn/07_governance/processus-gouvernance.md`)
-- **Workflow d'homologation** — Workflow d'homologation architecturale (`00_caesn/07_governance/homologation.md`)
-- **Conformité pour toutes les solutions numériques** — Cycle de vie applicatif et critères d'homologation (`00_caesn/05_application/lifecycle.md`)
-- **Portefeuille** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
-- **Décisions d'architecture** — Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
-- **Normes et standards** — Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Bureau de Réalisation de la Valeur** : Bureau de Réalisation de la Valeur (`00_caesn/07_governance/value-realization-office.md`)
+- **Composition et fonctionnement du Bureau de Réalisation de la Valeur** : Bureau de Réalisation de la Valeur (`00_caesn/07_governance/value-realization-office.md`)
+- **RACI de gouvernance et responsabilités** : RACI de gouvernance et responsabilités (`00_caesn/07_governance/raci.md`)
+- **Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health)** : Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health) (`00_caesn/07_governance/point-de-vigilance-caesn.md`)
+- **Guide du processus de gouvernance** : Guide du processus de gouvernance (`00_caesn/07_governance/processus-gouvernance.md`)
+- **Workflow d'homologation** : Workflow d'homologation architecturale (`00_caesn/07_governance/homologation.md`)
+- **Conformité pour toutes les solutions numériques** : Cycle de vie applicatif et critères d'homologation (`00_caesn/05_application/lifecycle.md`)
+- **Portefeuille** : Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
+- **Décisions d'architecture** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
+- **Normes et standards** : Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)

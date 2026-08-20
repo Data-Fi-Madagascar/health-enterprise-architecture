@@ -1,5 +1,5 @@
 ---
-title: "STD-0000 — <Titre de la norme>"
+title: "STD-0000 : <Titre de la norme>"
 id: std-0000
 domain: 05_standards
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: Comité National d'Architecture Santé Numérique
 tags: [standards, <domaine>]
 ---
 
-# STD-0000 — <Titre de la norme>
+# STD-0000 : <Titre de la norme>
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 2 — Cadre National d'Interopérabilité de la Santé Numérique.
+**Niveau :** niveau 2 : Cadre National d'Interopérabilité de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -62,4 +62,4 @@ Modalités de demande de dérogation auprès du Comité National et conditions d
 - Décisions
 - Conformité
 
-- **matrice de lecture** — Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
+- **matrice de lecture** : Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)

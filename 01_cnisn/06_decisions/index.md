@@ -13,7 +13,7 @@ tags: [décisions, adr]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 2 — Cadre National d'Interopérabilité de la Santé Numérique.
+**Niveau :** niveau 2 : Cadre National d'Interopérabilité de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -37,16 +37,16 @@ Chaque ADR suit le modèle type, avec un statut parmi `proposé`, `accepté`, `a
 
 | ADR | Titre | Statut | Date |
 |-----|-------|--------|------|
-| ADR-0000 | Template | modèle | — |
-| ADR-0001 | X-Road — Plateforme d'échange | appliqué | 2026-07-01 |
-| ADR-0002 | mADX — Données agrégées | appliqué | 2026-07-01 |
-| ADR-0003 | HL7 FHIR — Standard d'interopérabilité | appliqué | 2026-07-01 |
-| ADR-0004 | PIXm/PDQm — Résolution d'identité | appliqué | 2026-07-01 |
-| ADR-0005 | FHIR Consent — Consentement structuré | proposé | 2026-08-13 |
-| ADR-0006 | INP — Identité nationale patient | proposé | 2026-08-13 |
-| ADR-0007 | GDHCN — Confiance transfrontalière | proposé | 2026-08-13 |
-| ADR-0008 | ATNA — Audit et traçabilité | proposé | 2026-08-13 |
-| ADR-0009 | Terminologie — CIM-10 + LOINC | proposé | 2026-08-13 |
+| ADR-0000 | Template | modèle | : |
+| ADR-0001 | X-Road : Plateforme d'échange | appliqué | 2026-07-01 |
+| ADR-0002 | mADX : Données agrégées | appliqué | 2026-07-01 |
+| ADR-0003 | HL7 FHIR : Standard d'interopérabilité | appliqué | 2026-07-01 |
+| ADR-0004 | PIXm/PDQm : Résolution d'identité | appliqué | 2026-07-01 |
+| ADR-0005 | FHIR Consent : Consentement structuré | proposé | 2026-08-13 |
+| ADR-0006 | INP : Identité nationale patient | proposé | 2026-08-13 |
+| ADR-0007 | GDHCN : Confiance transfrontalière | proposé | 2026-08-13 |
+| ADR-0008 | ATNA : Audit et traçabilité | proposé | 2026-08-13 |
+| ADR-0009 | Terminologie : CIM-10 + LOINC | proposé | 2026-08-13 |
 
 ## Outils de gestion des décisions
 
@@ -65,23 +65,23 @@ Chaque ADR suit le modèle type, avec un statut parmi `proposé`, `accepté`, `a
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
-- **standards** — Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
-- **modèle type** — <Titre de la décision> (`01_cnisn/06_decisions/adr-0000-template.md`)
-- **Template** — <Titre de la décision> (`01_cnisn/06_decisions/adr-0000-template.md`)
-- **X-Road — Plateforme d'échange** — Adoption de X-Road comme plateforme d'échange interinstitutionnel (`01_cnisn/06_decisions/adr-0001-x-road.md`)
-- **mADX — Données agrégées** — Adoption du profil IHE mADX pour l'échange de données agrégées (`01_cnisn/06_decisions/adr-0002-madx.md`)
-- **HL7 FHIR — Standard d'interopérabilité** — Utilisation de HL7 FHIR comme standard d'interopérabilité (`01_cnisn/06_decisions/adr-0003-fhir.md`)
-- **PIXm/PDQm — Résolution d'identité** — Adoption des profils IHE PIXm/PDQm pour la résolution d'identité (`01_cnisn/06_decisions/adr-0004-identite.md`)
-- **FHIR Consent — Consentement structuré** — Adoption de FHIR Consent pour le consentement structuré (`01_cnisn/06_decisions/adr-0005-consentement.md`)
-- **INP — Identité nationale patient** — Adoption de l'Identité Nationale Patient (INP) via PIXm/PDQm (`01_cnisn/06_decisions/adr-0006-inp.md`)
-- **GDHCN — Confiance transfrontalière** — Adoption du GDHCN pour la confiance transfrontalière (`01_cnisn/06_decisions/adr-0007-gdhcn.md`)
-- **ATNA — Audit et traçabilité** — Adoption d'ATNA et journalisation pour l'audit et la traçabilité (`01_cnisn/06_decisions/adr-0008-atna.md`)
-- **Terminologie — CIM-10 + LOINC** — Adoption d'un référentiel terminologique national (CIM-10 + LOINC) (`01_cnisn/06_decisions/adr-0009-terminologie.md`)
-- **Registre des décisions** — Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
-- **Template de modification** — Template — Demande de modification architecturale (`01_cnisn/06_decisions/template-modification.md`)
-- **Introduction du CNISN** — Préambule du CNISN (`01_cnisn/00_introduction/index.md`)
-- **Principes du CNISN** — Partie I — Principes nationaux d'interopérabilité de santé (`01_cnisn/01_principes/index.md`)
-- **Capacités du CNISN** — Partie II — Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
-- **Gouvernance du CNISN** — Partie III — Gouvernance (`01_cnisn/03_gouvernance/index.md`)
-- **Standards** — Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
+- **matrice de lecture** : Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
+- **standards** : Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
+- **modèle type** : <Titre de la décision> (`01_cnisn/06_decisions/adr-0000-template.md`)
+- **Template** : <Titre de la décision> (`01_cnisn/06_decisions/adr-0000-template.md`)
+- **X-Road : Plateforme d'échange** : Adoption de X-Road comme plateforme d'échange interinstitutionnel (`01_cnisn/06_decisions/adr-0001-x-road.md`)
+- **mADX : Données agrégées** : Adoption du profil IHE mADX pour l'échange de données agrégées (`01_cnisn/06_decisions/adr-0002-madx.md`)
+- **HL7 FHIR : Standard d'interopérabilité** : Utilisation de HL7 FHIR comme standard d'interopérabilité (`01_cnisn/06_decisions/adr-0003-fhir.md`)
+- **PIXm/PDQm : Résolution d'identité** : Adoption des profils IHE PIXm/PDQm pour la résolution d'identité (`01_cnisn/06_decisions/adr-0004-identite.md`)
+- **FHIR Consent : Consentement structuré** : Adoption de FHIR Consent pour le consentement structuré (`01_cnisn/06_decisions/adr-0005-consentement.md`)
+- **INP : Identité nationale patient** : Adoption de l'Identité Nationale Patient (INP) via PIXm/PDQm (`01_cnisn/06_decisions/adr-0006-inp.md`)
+- **GDHCN : Confiance transfrontalière** : Adoption du GDHCN pour la confiance transfrontalière (`01_cnisn/06_decisions/adr-0007-gdhcn.md`)
+- **ATNA : Audit et traçabilité** : Adoption d'ATNA et journalisation pour l'audit et la traçabilité (`01_cnisn/06_decisions/adr-0008-atna.md`)
+- **Terminologie : CIM-10 + LOINC** : Adoption d'un référentiel terminologique national (CIM-10 + LOINC) (`01_cnisn/06_decisions/adr-0009-terminologie.md`)
+- **Registre des décisions** : Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
+- **Template de modification** : Template : Demande de modification architecturale (`01_cnisn/06_decisions/template-modification.md`)
+- **Introduction du CNISN** : Préambule du CNISN (`01_cnisn/00_introduction/index.md`)
+- **Principes du CNISN** : Partie I : Principes nationaux d'interopérabilité de santé (`01_cnisn/01_principes/index.md`)
+- **Capacités du CNISN** : Partie II : Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
+- **Gouvernance du CNISN** : Partie III : Gouvernance (`01_cnisn/03_gouvernance/index.md`)
+- **Standards** : Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)

@@ -1,5 +1,5 @@
 ---
-title: "ADR-0009 — Adoption d'un référentiel terminologique national (CIM-10 + LOINC)"
+title: "ADR-0009 : Adoption d'un référentiel terminologique national (CIM-10 + LOINC)"
 id: adr-0009
 domain: 06_decisions
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: DEPSI
 tags: [adr, terminologie, cim-10, loinc, codage, sémantique]
 ---
 
-# ADR-0009 — Adoption d'un référentiel terminologique national (CIM-10 + LOINC)
+# ADR-0009 : Adoption d'un référentiel terminologique national (CIM-10 + LOINC)
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -91,9 +91,9 @@ Le référentiel doit :
 
 ## Références
 
-- PT-07 — Mapping terminologique
-- ART-2 — Médiation et normalisation
-- CAP-INT-05 — Données agrégées
-- [CIM-10 — OMS](https://icd.who.int)
-- [LOINC — Regenstrief Institute](https://loinc.org)
+- PT-07 : Mapping terminologique
+- ART-2 : Médiation et normalisation
+- CAP-INT-05 : Données agrégées
+- [CIM-10 : OMS](https://icd.who.int)
+- [LOINC : Regenstrief Institute](https://loinc.org)
 

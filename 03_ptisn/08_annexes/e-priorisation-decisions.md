@@ -1,5 +1,5 @@
 ---
-title: "Priorisation et calendrier — 5 premières décisions PTISN"
+title: "Priorisation et calendrier : 5 premières décisions PTISN"
 id: ptisn-priorisation-decisions
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: DEPSI
 tags: [ptisn, decisions, priorisation, calendrier]
 ---
 
-# Priorisation et calendrier — 5 premières décisions PTISN
+# Priorisation et calendrier : 5 premières décisions PTISN
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 4 — Profils techniques d'implémentation de la Santé Numérique.
+**Niveau :** niveau 4 : Profils techniques d'implémentation de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -50,7 +50,7 @@ La première décision porte sur le modèle national d'identité santé du bén�
 | Champ | Valeur |
 |-------|--------|
 | **Priorité** | 🔴 1 |
-| **Impact** | Critique — bloque la continuité des soins et la protection financière |
+| **Impact** | Critique : bloque la continuité des soins et la protection financière |
 | **Dépendances** | Aucune (décision fondatrice) |
 | **Échéance** | T4 2026 |
 | **Responsable** | DEPSI + Direction des Systèmes d'Information |
@@ -63,7 +63,7 @@ La deuxième décision concerne la version FHIR nationale de référence. Elle e
 | Champ | Valeur |
 |-------|--------|
 | **Priorité** | 🔴 2 |
-| **Impact** | Élevé — standardise tous les échanges de données |
+| **Impact** | Élevé : standardise tous les échanges de données |
 | **Dépendances** | Aucune |
 | **Échéance** | T4 2026 |
 | **Responsable** | DEPSI + Directions techniques |
@@ -76,7 +76,7 @@ La troisième décision porte sur le profil national de consentement. Elle est c
 | Champ | Valeur |
 |-------|--------|
 | **Priorité** | 🔴 3 |
-| **Impact** | Critique — bloque tout partage de données patients |
+| **Impact** | Critique : bloque tout partage de données patients |
 | **Dépendances** | Décision 1 (identité santé) |
 | **Échéance** | T1 2027 |
 | **Responsable** | DEPSI + Direction Juridique |
@@ -89,7 +89,7 @@ La quatrième décision concerne le produit du service terminologique. Elle est 
 | Champ | Valeur |
 |-------|--------|
 | **Priorité** | 🟡 4 |
-| **Impact** | Élevé — conditionne la normalisation sémantique |
+| **Impact** | Élevé : conditionne la normalisation sémantique |
 | **Dépendances** | Décision 2 (version FHIR) |
 | **Échéance** | T1 2027 |
 | **Responsable** | DEPSI + Directions cliniques |
@@ -102,7 +102,7 @@ La cinquième décision porte sur le produit du catalogue des services. Elle est
 | Champ | Valeur |
 |-------|--------|
 | **Priorité** | 🟡 5 |
-| **Impact** | Moyen — facilite la découverte et l'intégration |
+| **Impact** | Moyen : facilite la découverte et l'intégration |
 | **Dépendances** | Décision 2 (version FHIR) |
 | **Échéance** | T2 2027 |
 | **Responsable** | DEPSI |
@@ -136,21 +136,21 @@ T3      T4      T1      T2      T3      T4
 Les prochaines étapes consistent à valider la priorisation avec les équipes techniques, à lancer la Décision 1 (identité santé) au troisième trimestre 2026, à documenter via des ADR chaque décision validée et à communiquer aux parties prenantes.
 
 1. **Valider la priorisation** avec les équipes techniques
-2. **Lancer la Décision 1** (identité santé) — T3 2026
+2. **Lancer la Décision 1** (identité santé) : T3 2026
 3. **Documenter via des ADR** chaque décision validée
 4. **Communiquer** aux parties prenantes
 
 ## Liens
 
-- Annexe B — Décisions à instruire
-- PT-04 — Résolution d'identité
-- PT-11 — Consentement
-- CAESN — Décisions
+- Annexe B : Décisions à instruire
+- PT-04 : Résolution d'identité
+- PT-11 : Consentement
+- CAESN : Décisions
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
-- **Annexe B — Décisions à instruire** — Annexe B — Décisions à instruire (`03_ptisn/08_annexes/b-decisions-instruire.md`)
-- **PT-04 — Résolution d'identité** — Profil technique national (`referentiel/profils/pt-04.md`)
-- **PT-11 — Consentement** — Profil technique national (`referentiel/profils/pt-11.md`)
-- **CAESN — Décisions** — Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
+- **matrice de lecture** : Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
+- **Annexe B : Décisions à instruire** : Annexe B : Décisions à instruire (`03_ptisn/08_annexes/b-decisions-instruire.md`)
+- **PT-04 : Résolution d'identité** : Profil technique national (`referentiel/profils/pt-04.md`)
+- **PT-11 : Consentement** : Profil technique national (`referentiel/profils/pt-11.md`)
+- **CAESN : Décisions** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)

@@ -13,7 +13,7 @@ tags: [capabilités, catalogue]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -91,12 +91,12 @@ Quatre capabilités constituent le socle commun (architecture runway) dont l'abs
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Capabilités métier** — Capabilités métier de santé (`00_caesn/03_capabilities/business.md`)
-- **Capabilités habilitantes** — Capabilités habilitantes du système (`00_caesn/03_capabilities/enabling.md`)
-- **Capabilités numériques transversales** — Capabilités numériques transversales et composants DPI-H (`00_caesn/03_capabilities/digital.md`)
-- **Maturité** — Évaluation de la maturité des capabilités (`00_caesn/03_capabilities/maturity.md`)
-- **Runway** — Capabilités critiques et architecture runway (`00_caesn/03_capabilities/runway.md`)
-- **Flux de valeur** — Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)
-- **Portefeuille** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
-- **Données** — Architecture des données et de l'information sanitaire (`00_caesn/04_data/index.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Capabilités métier** : Capabilités métier de santé (`00_caesn/03_capabilities/business.md`)
+- **Capabilités habilitantes** : Capabilités habilitantes du système (`00_caesn/03_capabilities/enabling.md`)
+- **Capabilités numériques transversales** : Capabilités numériques transversales et composants DPI-H (`00_caesn/03_capabilities/digital.md`)
+- **Maturité** : Évaluation de la maturité des capabilités (`00_caesn/03_capabilities/maturity.md`)
+- **Runway** : Capabilités critiques et architecture runway (`00_caesn/03_capabilities/runway.md`)
+- **Flux de valeur** : Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)
+- **Portefeuille** : Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
+- **Données** : Architecture des données et de l'information sanitaire (`00_caesn/04_data/index.md`)

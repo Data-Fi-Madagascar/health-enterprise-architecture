@@ -13,7 +13,7 @@ tags: [standards, normes, homologation]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 2 — Cadre National d'Interopérabilité de la Santé Numérique.
+**Niveau :** niveau 2 : Cadre National d'Interopérabilité de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -39,20 +39,20 @@ Toute mise en œuvre d'une norme fait l'objet d'une homologation préalable ou d
 
 ## Template de norme
 
-Un modèle de norme est proposé : STD-0000 — modèle.
+Un modèle de norme est proposé : STD-0000 : modèle.
 
 ## Registre des normes
 
 | Code | Titre | Type | Statut |
 |------|-------|------|--------|
-| STD-0000 | Modèle de norme | modèle | — |
-| **STD-0001** | Norme d'interopérabilité — HL7 FHIR R4 | Norme obligatoire | Approuvé |
-| **STD-0002** | Norme de sécurité — Chiffrement et contrôle d'accès | Norme obligatoire | Approuvé |
-| **STD-0003** | Norme d'échange interinstitutionnel — X-Road | Norme obligatoire | Approuvé |
-| **STD-0004** | Norme de données agrégées — mADX | Norme obligatoire | Approuvé |
-| **STD-0005** | Norme d'identité patient — PIXm/PDQm | Norme obligatoire | Approuvé |
-| **STD-0006** | Norme terminologique — CIM-10 + LOINC | Norme obligatoire | Approuvé |
-| **STD-0007** | Standard terminologique — SNOMED CT | Standard recommandé | Draft |
+| STD-0000 | Modèle de norme | modèle | : |
+| **STD-0001** | Norme d'interopérabilité : HL7 FHIR R4 | Norme obligatoire | Approuvé |
+| **STD-0002** | Norme de sécurité : Chiffrement et contrôle d'accès | Norme obligatoire | Approuvé |
+| **STD-0003** | Norme d'échange interinstitutionnel : X-Road | Norme obligatoire | Approuvé |
+| **STD-0004** | Norme de données agrégées : mADX | Norme obligatoire | Approuvé |
+| **STD-0005** | Norme d'identité patient : PIXm/PDQm | Norme obligatoire | Approuvé |
+| **STD-0006** | Norme terminologique : CIM-10 + LOINC | Norme obligatoire | Approuvé |
+| **STD-0007** | Standard terminologique : SNOMED CT | Standard recommandé | Draft |
 | **NORM-007** | Règlement Sanitaire International (RSI 2005) | Norme internationale obligatoire | Actif |
 | **NORM-008** | Tripartite Plus OMS–WOAH–FAO–PNUE | Cadre normatif international | Actif |
 
@@ -66,20 +66,20 @@ Un modèle de norme est proposé : STD-0000 — modèle.
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
-- **STD-0000 — modèle** — <Titre de la norme> (`01_cnisn/05_standards/std-0000-template.md`)
-- **Modèle de norme** — <Titre de la norme> (`01_cnisn/05_standards/std-0000-template.md`)
-- **Norme d'interopérabilité — HL7 FHIR R4** — Norme d'interopérabilité — HL7 FHIR R4 (`01_cnisn/05_standards/std-0001-interopabilite-fhir.md`)
-- **Norme de sécurité — Chiffrement et contrôle d'accès** — Norme de sécurité — Chiffrement et contrôle d'accès (`01_cnisn/05_standards/std-0002-securite-chiffrement.md`)
-- **Norme d'échange interinstitutionnel — X-Road** — Norme d'échange interinstitutionnel — X-Road (`01_cnisn/05_standards/std-0003-x-road.md`)
-- **Norme de données agrégées — mADX** — Norme de données agrégées — mADX (`01_cnisn/05_standards/std-0004-madx.md`)
-- **Norme d'identité patient — PIXm/PDQm** — Norme d'identité patient — PIXm/PDQm (`01_cnisn/05_standards/std-0005-identite-pixm.md`)
-- **Norme terminologique — CIM-10 + LOINC** — Norme terminologique — CIM-10 + LOINC (`01_cnisn/05_standards/std-0006-terminologie.md`)
-- **Standard terminologique — SNOMED CT** — Standard recommandé (`01_cnisn/05_standards/std-0007-snomed-ct.md`)
-- **Règlement Sanitaire International (RSI 2005)** — Règlement Sanitaire International (RSI 2005) (`01_cnisn/05_standards/norm-007-rsi.md`)
-- **Tripartite Plus OMS–WOAH–FAO–PNUE** — Tripartite Plus OMS–WOAH–FAO–PNUE (`01_cnisn/05_standards/norm-008-tripartite.md`)
-- **Introduction du CNISN** — Préambule du CNISN (`01_cnisn/00_introduction/index.md`)
-- **Principes du CNISN** — Partie I — Principes nationaux d'interopérabilité de santé (`01_cnisn/01_principes/index.md`)
-- **Capacités du CNISN** — Partie II — Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
-- **Gouvernance du CNISN** — Partie III — Gouvernance (`01_cnisn/03_gouvernance/index.md`)
-- **Décisions** — Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
+- **matrice de lecture** : Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
+- **STD-0000 : modèle** : <Titre de la norme> (`01_cnisn/05_standards/std-0000-template.md`)
+- **Modèle de norme** : <Titre de la norme> (`01_cnisn/05_standards/std-0000-template.md`)
+- **Norme d'interopérabilité : HL7 FHIR R4** : Norme d'interopérabilité : HL7 FHIR R4 (`01_cnisn/05_standards/std-0001-interopabilite-fhir.md`)
+- **Norme de sécurité : Chiffrement et contrôle d'accès** : Norme de sécurité : Chiffrement et contrôle d'accès (`01_cnisn/05_standards/std-0002-securite-chiffrement.md`)
+- **Norme d'échange interinstitutionnel : X-Road** : Norme d'échange interinstitutionnel : X-Road (`01_cnisn/05_standards/std-0003-x-road.md`)
+- **Norme de données agrégées : mADX** : Norme de données agrégées : mADX (`01_cnisn/05_standards/std-0004-madx.md`)
+- **Norme d'identité patient : PIXm/PDQm** : Norme d'identité patient : PIXm/PDQm (`01_cnisn/05_standards/std-0005-identite-pixm.md`)
+- **Norme terminologique : CIM-10 + LOINC** : Norme terminologique : CIM-10 + LOINC (`01_cnisn/05_standards/std-0006-terminologie.md`)
+- **Standard terminologique : SNOMED CT** : Standard recommandé (`01_cnisn/05_standards/std-0007-snomed-ct.md`)
+- **Règlement Sanitaire International (RSI 2005)** : Règlement Sanitaire International (RSI 2005) (`01_cnisn/05_standards/norm-007-rsi.md`)
+- **Tripartite Plus OMS–WOAH–FAO–PNUE** : Tripartite Plus OMS–WOAH–FAO–PNUE (`01_cnisn/05_standards/norm-008-tripartite.md`)
+- **Introduction du CNISN** : Préambule du CNISN (`01_cnisn/00_introduction/index.md`)
+- **Principes du CNISN** : Partie I : Principes nationaux d'interopérabilité de santé (`01_cnisn/01_principes/index.md`)
+- **Capacités du CNISN** : Partie II : Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
+- **Gouvernance du CNISN** : Partie III : Gouvernance (`01_cnisn/03_gouvernance/index.md`)
+- **Décisions** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)

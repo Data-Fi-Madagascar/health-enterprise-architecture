@@ -13,7 +13,7 @@ tags: [ptisn, niveau-4]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 4 — Profils techniques d'implémentation de la Santé Numérique.
+**Niveau :** niveau 4 : Profils techniques d'implémentation de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -34,7 +34,7 @@ Le PTISN constitue le niveau 4 de la hiérarchie documentaire du Cadre d'Archite
 | 1 | `00_caesn/` | Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) |
 | 2 | `01_cnisn/` | Cadre National d'Interopérabilité de la Santé Numérique (CNISN) + Standards |
 | 3 | `02_artsn/` | Architecture de Référence Technique de la Santé Numérique (ARTSN) |
-| 4 | `ptisn/` | Profils techniques d'implémentation par initiative (ce dossier) — découle de l'UGD |
+| 4 | `ptisn/` | Profils techniques d'implémentation par initiative (ce dossier) : découle de l'UGD |
 
 ## Rôle
 
@@ -64,14 +64,14 @@ ptisn/
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
-- **Cadre d'Architecture d'Entreprise** — Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
-- **portefeuille national** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
-- **`ptisn/`** — Profils techniques d'implémentation de la Santé Numérique (PTISN) (`03_ptisn/index.md`)
-- **fiche d'initiative** — Fiche standard d'initiative orientée valeur (`00_caesn/06_portfolio/initiative-card.md`)
-- **principes** — Principes d'architecture (`00_caesn/02_principles/index.md`)
-- **critères d'homologation** — Cycle de vie applicatif et critères d'homologation (`00_caesn/05_application/lifecycle.md`)
-- **Guide de lecture du PTISN** — Guide de lecture du PTISN (niveau 4) (`03_ptisn/reading-guide.md`)
-- **Matrice de lecture du PTISN** — Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
-- **Glossaire du PTISN** — Glossaire du PTISN (niveau 4) (`03_ptisn/glossary.md`)
-- **Acronymes du PTISN** — Acronymes et abréviations du PTISN (niveau 4) (`03_ptisn/acronyms.md`)
+- **matrice de lecture** : Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
+- **Cadre d'Architecture d'Entreprise** : Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
+- **portefeuille national** : Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
+- **`ptisn/`** : Profils techniques d'implémentation de la Santé Numérique (PTISN) (`03_ptisn/index.md`)
+- **fiche d'initiative** : Fiche standard d'initiative orientée valeur (`00_caesn/06_portfolio/initiative-card.md`)
+- **principes** : Principes d'architecture (`00_caesn/02_principles/index.md`)
+- **critères d'homologation** : Cycle de vie applicatif et critères d'homologation (`00_caesn/05_application/lifecycle.md`)
+- **Guide de lecture du PTISN** : Guide de lecture du PTISN (niveau 4) (`03_ptisn/reading-guide.md`)
+- **Matrice de lecture du PTISN** : Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
+- **Glossaire du PTISN** : Glossaire du PTISN (niveau 4) (`03_ptisn/glossary.md`)
+- **Acronymes du PTISN** : Acronymes et abréviations du PTISN (niveau 4) (`03_ptisn/acronyms.md`)

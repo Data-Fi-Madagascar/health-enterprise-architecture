@@ -13,7 +13,7 @@ tags: [portefeuille, initiatives, valeur]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -66,11 +66,11 @@ Il est placé sous la responsabilité du Bureau de Réalisation de la Valeur, en
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Fiche d'initiative orientée valeur** — Fiche standard d'initiative orientée valeur (`00_caesn/06_portfolio/initiative-card.md`)
-- **Chaîne de valeur d'une initiative** — Chaîne de valeur d'une initiative (`00_caesn/06_portfolio/value-chain.md`)
-- **Priorisation des initiatives** — Critères et score de priorisation des initiatives (`00_caesn/06_portfolio/prioritization.md`)
-- **Gouvernance du portefeuille** — Dépendances, revues et règles de gouvernance du portefeuille (`00_caesn/06_portfolio/governance.md`)
-- **Modèle de valeur** — Modèle national de valeur (`00_caesn/00_overview/value-model.md`)
-- **Capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
-- **Gouvernance** — Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Fiche d'initiative orientée valeur** : Fiche standard d'initiative orientée valeur (`00_caesn/06_portfolio/initiative-card.md`)
+- **Chaîne de valeur d'une initiative** : Chaîne de valeur d'une initiative (`00_caesn/06_portfolio/value-chain.md`)
+- **Priorisation des initiatives** : Critères et score de priorisation des initiatives (`00_caesn/06_portfolio/prioritization.md`)
+- **Gouvernance du portefeuille** : Dépendances, revues et règles de gouvernance du portefeuille (`00_caesn/06_portfolio/governance.md`)
+- **Modèle de valeur** : Modèle national de valeur (`00_caesn/00_overview/value-model.md`)
+- **Capabilités** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
+- **Gouvernance** : Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)

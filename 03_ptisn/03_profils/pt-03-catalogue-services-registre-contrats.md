@@ -1,5 +1,5 @@
 ---
-title: PT-03 — Profil technique national
+title: PT-03 : Profil technique national
 id: ptisn-pt-03-catalogue-services-registre-contrats
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,21 +9,21 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "pt-03"]
 ---
 
-# PT-03 — Profil technique national
+# PT-03 : Profil technique national
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ## 1. Capacité CNISN
 
-**CAP-INT-06 — Catalogue des services et registre des contrats**
+**CAP-INT-06 : Catalogue des services et registre des contrats**
 
 ## 2. Chapitres ART applicables
 
-- F.3 — versionnement ;
-- F.4 — rattachement aux capacités ;
-- ART-1 — interfaces ;
-- ART-2 — contrats canoniques.
+- F.3 : versionnement ;
+- F.4 : rattachement aux capacités ;
+- ART-1 : interfaces ;
+- ART-2 : contrats canoniques.
 
 ## 3. Services nationaux
 

@@ -13,7 +13,7 @@ tags: [gouvernance, raci, responsabilités, redevabilité]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -73,7 +73,7 @@ R = Responsable d'exécution, A = Approbateur (redevable), C = Consulté, I = In
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Gouvernance** — Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
-- **Bureau de Réalisation de la Valeur** — Bureau de Réalisation de la Valeur (`00_caesn/07_governance/value-realization-office.md`)
-- **Portefeuille** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Gouvernance** : Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
+- **Bureau de Réalisation de la Valeur** : Bureau de Réalisation de la Valeur (`00_caesn/07_governance/value-realization-office.md`)
+- **Portefeuille** : Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)

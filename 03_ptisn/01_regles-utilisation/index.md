@@ -1,5 +1,5 @@
 ---
-title: Partie I — Règles d'utilisation du PTISN
+title: Partie I : Règles d'utilisation du PTISN
 id: ptisn-regles-utilisation
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,7 +9,7 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "interopérabilité", "regles"]
 ---
 
-# Partie I — Règles d'utilisation du PTISN
+# Partie I : Règles d'utilisation du PTISN
 
 ## 1. Types de décisions techniques
 
@@ -29,7 +29,7 @@ Un profil d'interopérabilité est une contrainte appliquée à un ou plusieurs 
 
 ### 1.4 Patron architectural
 
-Un patron architectural est une organisation de composants destinée à résoudre une catégorie de problème récurrent. Les patrons architecturaux — tels que le médiateur, la fédération, CQRS, l'historisation événementielle ou la publication-abonnement — sont définis dans l'ARTSN et non par le présent document. Le PTISN se contente de les référencer lorsqu'ils sont mobilisés dans les profils d'initiative.
+Un patron architectural est une organisation de composants destinée à résoudre une catégorie de problème récurrent. Les patrons architecturaux : tels que le médiateur, la fédération, CQRS, l'historisation événementielle ou la publication-abonnement : sont définis dans l'ARTSN et non par le présent document. Le PTISN se contente de les référencer lorsqu'ils sont mobilisés dans les profils d'initiative.
 
 ### 1.5 Produit ou implémentation candidate
 

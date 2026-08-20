@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0859039fc328e8ed",
+        "id": "60ea48ded0907043",
         "type": "tabs",
         "children": [
           {
-            "id": "7bbb389d22e9619f",
+            "id": "1842e06935972e99",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_artsn/05_dictionnaire/index.md",
+                "file": "00_caesn/00_overview/foundations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "foundations"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02_artsn/05_dictionnaire/index.md",
+                "file": "00_caesn/00_overview/foundations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "Backlinks for foundations"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02_artsn/05_dictionnaire/index.md",
+                "file": "00_caesn/00_overview/foundations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from index"
+              "title": "Outgoing links from foundations"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02_artsn/05_dictionnaire/index.md",
+                "file": "00_caesn/00_overview/foundations.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of foundations"
             }
           }
         ]
@@ -183,52 +183,52 @@
       "bases:Create new base": false
     }
   },
-  "active": "a54adeb5377c6fd9",
+  "active": "1842e06935972e99",
   "lastOpenFiles": [
-    "dist/HEA-v1.0.0.md",
-    "dist/ptisn-v1.0.0.md",
-    "dist/diagrams/ptisn/diagram-07-4576b73b.png",
-    "dist/diagrams/ptisn/diagram-07-4576b73b.puml",
-    "dist/diagrams/ptisn/diagram-06-df8917ec.png",
-    "dist/diagrams/ptisn/diagram-06-df8917ec.puml",
-    "dist/diagrams/ptisn/diagram-05-8d5c82a5.png",
-    "dist/diagrams/ptisn/diagram-05-8d5c82a5.puml",
-    "dist/diagrams/ptisn/diagram-04-1faf4640.png",
-    "dist/diagrams/ptisn/diagram-04-1faf4640.puml",
-    "dist/diagrams/ptisn/diagram-03-0bf8f617.png",
-    "dist/diagrams/ptisn/diagram-03-0bf8f617.puml",
-    "dist/diagrams/ptisn/diagram-02-10b3723f.puml",
-    "dist/diagrams/ptisn/diagram-01-86def96e.puml",
-    "dist/diagrams/ptisn",
-    "dist/artsn-v1.0.0.md",
-    "dist/diagrams/artsn/diagram-04-50d9a41f.png",
-    "dist/diagrams/artsn/diagram-03-a4086b5c.puml",
-    "dist/diagrams/artsn/diagram-04-50d9a41f.puml",
-    "dist/cnisn-v1.0.0.md",
-    "dist/caesn-v1.0.0.md",
-    "dist/diagrams/caesn/diagram-02-30e05c02.png",
-    "dist/diagrams/caesn/diagram-01-f2b1e322.png",
-    "00_caesn/04_data/referentials.md",
-    "00_caesn/04_data/principles.md",
-    "00_caesn/04_data/lifecycle.md",
-    "00_caesn/04_data/index.md",
-    "00_caesn/04_data/governance.md",
-    "00_caesn/04_data/domains.md",
-    "00_caesn/06_portfolio/index.md",
-    "00_caesn/05_application/rationalization.md",
-    "00_caesn/05_application/layers.md",
-    "00_caesn/05_application/application-domains.md",
-    "00_caesn/05_application/lifecycle.md",
-    "00_caesn/05_application/constraints.md",
-    "00_caesn/05_application/index.md",
-    "00_caesn/00_overview/value-model.md",
+    "dist/public/HEA-public-v1.0.0.md",
+    "dist/public/artsn-public-v1.0.0.md",
+    "dist/public/cnisn-public-v1.0.0.md",
+    "dist/public/caesn-public-v1.0.0.md",
+    "dist/public/diagrams/artsn/diagram-02-b9a5373a.puml",
+    "dist/public/diagrams/cnisn/diagram-02-ef85309a.puml",
+    "dist/public/~$esn-public-v1.0.0.docx",
+    "scripts/__pycache__/build_docx_public.cpython-314.pyc",
+    "dist/public/HEA-public-v1.0.0.docx",
+    "dist/public/artsn-public-v1.0.0.docx",
+    "dist/public/diagrams/artsn/diagram-04-50d9a41f.png",
+    "dist/public/diagrams/artsn/diagram-04-50d9a41f.puml",
+    "dist/public/diagrams/artsn/diagram-03-a4086b5c.puml",
+    "dist/public/diagrams/artsn/diagram-02-ae495599.puml",
+    "dist/public/diagrams/artsn/diagram-01-1e7f740f.puml",
+    "00_caesn/10_annexes/evaluation-gdhm.md",
     "00_caesn/00_overview/foundations.md",
     "00_caesn/00_overview/index.md",
-    "02_artsn/00_fondations/index.md",
-    "03_ptisn/07_conclusion/index.md",
-    "03_ptisn/06_gouvernance/index.md",
-    "03_ptisn/05_profil-initiative/index.md",
-    "dist/diagrams/ptisn/diagram-02-10b3723f.png",
-    "dist/diagrams/ptisn/diagram-01-86def96e.png"
+    "00_caesn/10_annexes/index.md",
+    "01_cnisn/05_standards/std-0007-snomed-ct.md",
+    "dist/HEA-v1.0.0.md",
+    "dist/ptisn-v1.0.0.md",
+    "dist/artsn-v1.0.0.md",
+    "dist/cnisn-v1.0.0.md",
+    "dist/caesn-v1.0.0.md",
+    "dist/HEA-v0.0.1.md",
+    "dist/ptisn-v0.0.1.md",
+    "dist/artsn-v0.0.1.md",
+    "dist/cnisn-v0.0.1.md",
+    "dist/caesn-v0.0.1.md",
+    "00_caesn/10_annexes/comparaison-architectures-africaines.md",
+    "referentiel/composants/cmp-18.md",
+    "referentiel/fondations/f-6.md",
+    "referentiel/profils/pt-16.md",
+    "referentiel/exigences/enf-5.md",
+    "referentiel/exigences/enf-4.md",
+    "02_artsn/04_cartographie-cible/index-2026-08-19-09-54-25.png",
+    "02_artsn/04_cartographie-cible/index-2026-08-19-09-55-45.png",
+    "02_artsn/04_cartographie-cible/index-2026-08-19-09-54-51.png",
+    "dist/diagrams/ptisn/diagram-07-4576b73b.png",
+    "dist/diagrams/ptisn/diagram-06-df8917ec.png",
+    "dist/diagrams/ptisn/diagram-05-8d5c82a5.png",
+    "dist/diagrams/ptisn/diagram-04-1faf4640.png",
+    "dist/diagrams/ptisn/diagram-03-0bf8f617.png",
+    "dist/diagrams/artsn/diagram-04-50d9a41f.png"
   ]
 }

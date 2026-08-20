@@ -13,7 +13,7 @@ tags: [artsn, lecture, niveau-3, guide]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+**Niveau :** niveau 3 : Architecture de Référence Technique de la Santé Numérique.
 
 Ce document s'adresse prioritairement aux décideurs institutionnels, aux équipes DEPSI et techniques, et aux partenaires techniques et financiers. Les directions métier et programmes ainsi que les équipes SIS, données et suivi-évaluation y trouveront un complément utile. Pour une vue d'ensemble des niveaux de pertinence, consultez la matrice de lecture.
 
@@ -78,18 +78,18 @@ La Matrice de lecture propose une vue croisée parties et lecteurs. Le Glossaire
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **Fondations** — Fondations de l'ARTSN (`02_artsn/00_fondations/index.md`)
-- **Flux de valeur** — Flux de valeur (`02_artsn/01_flux-de-valeur/index.md`)
-- **Exigences contextuelles** — Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
-- **Cartographie cible** — Cartographie conceptuelle cible (`02_artsn/04_cartographie-cible/index.md`)
-- **Dictionnaire de données** — Dictionnaire de données fonctionnelles (`02_artsn/05_dictionnaire/index.md`)
-- **Gouvernance** — Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)
-- **Vue d'ensemble** — Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
-- **Table de maturité** — Annexe A — Table de maturité par chapitre (`02_artsn/07_annexes/a-table-de-maturite.md`)
-- **PTISN (niveau 4)** — Profils techniques d'implémentation de la Santé Numérique (PTISN) (`03_ptisn/index.md`)
-- **CNISN (niveau 2)** — Cadre National d'Interopérabilité de la Santé Numérique (CNISN) (`01_cnisn/index.md`)
-- **CAESN (niveau 1)** — Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
-- **Matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **Glossaire** — Glossaire de l'ARTSN (niveau 3) (`02_artsn/glossary.md`)
-- **Acronymes** — Acronymes et abréviations de l'ARTSN (niveau 3) (`02_artsn/acronyms.md`)
+- **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **Fondations** : Fondations de l'ARTSN (`02_artsn/00_fondations/index.md`)
+- **Flux de valeur** : Flux de valeur (`02_artsn/01_flux-de-valeur/index.md`)
+- **Exigences contextuelles** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
+- **Cartographie cible** : Cartographie conceptuelle cible (`02_artsn/04_cartographie-cible/index.md`)
+- **Dictionnaire de données** : Dictionnaire de données fonctionnelles (`02_artsn/05_dictionnaire/index.md`)
+- **Gouvernance** : Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)
+- **Vue d'ensemble** : Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
+- **Table de maturité** : Annexe A : Table de maturité par chapitre (`02_artsn/07_annexes/a-table-de-maturite.md`)
+- **PTISN (niveau 4)** : Profils techniques d'implémentation de la Santé Numérique (PTISN) (`03_ptisn/index.md`)
+- **CNISN (niveau 2)** : Cadre National d'Interopérabilité de la Santé Numérique (CNISN) (`01_cnisn/index.md`)
+- **CAESN (niveau 1)** : Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
+- **Matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **Glossaire** : Glossaire de l'ARTSN (niveau 3) (`02_artsn/glossary.md`)
+- **Acronymes** : Acronymes et abréviations de l'ARTSN (niveau 3) (`02_artsn/acronyms.md`)

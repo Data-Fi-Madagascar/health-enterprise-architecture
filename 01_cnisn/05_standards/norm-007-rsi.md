@@ -1,5 +1,5 @@
 ---
-title: "NORM-007 — Règlement Sanitaire International (RSI 2005)"
+title: "NORM-007 : Règlement Sanitaire International (RSI 2005)"
 id: norm-007
 domain: 05_standards
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: Direction de la Surveillance Sanitaire
 tags: [normes, rsi, oms, international, obligatoire]
 ---
 
-# NORM-007 — Règlement Sanitaire International (RSI 2005)
+# NORM-007 : Règlement Sanitaire International (RSI 2005)
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -28,7 +28,7 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 - **Type** : norme internationale obligatoire
 - **Statut** : actif
 - **Propriétaire** : Direction de la Surveillance Sanitaire
-- **Référence** : OMS — Règlement Sanitaire International (2005)
+- **Référence** : OMS : Règlement Sanitaire International (2005)
 
 ## Contexte
 
@@ -77,8 +77,8 @@ Aucune dérogation possible pour les obligations du RSI (traité international c
 ## Références
 
 - Normes et standards
-- [OMS — RSI 2005](https://www.who.int/publications/i/item/9789241580496)
-- PT-15 — Surveillance One Health
-- ARTSN — Chapitre ART-11
+- [OMS : RSI 2005](https://www.who.int/publications/i/item/9789241580496)
+- PT-15 : Surveillance One Health
+- ARTSN : Chapitre ART-11
 
-- **matrice de lecture** — Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
+- **matrice de lecture** : Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)

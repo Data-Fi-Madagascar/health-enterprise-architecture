@@ -76,7 +76,7 @@ SPEC --> SERV
 
 Le CNISN occupe le deuxième niveau de la hiérarchie architecturale du secteur santé. Il prend en charge la question fondamentale des garanties institutionnelles, fonctionnelles et de gouvernance qui doivent être satisfaites pour qu'un échange de données de santé soit reconnu comme conforme. Cette question constitue le fil conducteur de l'ensemble du cadre.
 
-L'ARTSN, qui occupe le troisième niveau, répond à la question complémentaire des contrats de conformité et des patrons architecturaux permettant de satisfaire ces garanties. Le PTISN, quatrième et dernier niveau du cadre, précise pour chaque initiative les standards, profils et candidats d'implémentation susceptibles de réaliser ces contrats. Cette progression de l'abstrait au concret — du « pourquoi » au « comment » — structure l'ensemble de l'architecture et assure la cohérence entre les décisions stratégiques et leurs traductions opérationnelles.
+L'ARTSN, qui occupe le troisième niveau, répond à la question complémentaire des contrats de conformité et des patrons architecturaux permettant de satisfaire ces garanties. Le PTISN, quatrième et dernier niveau du cadre, précise pour chaque initiative les standards, profils et candidats d'implémentation susceptibles de réaliser ces contrats. Cette progression de l'abstrait au concret : du « pourquoi » au « comment » : structure l'ensemble de l'architecture et assure la cohérence entre les décisions stratégiques et leurs traductions opérationnelles.
 
 ## 3. Articulation avec le cadre national d'interopérabilité
 
@@ -108,4 +108,4 @@ L'interopérabilité juridique concerne la capacité des systèmes et des organi
 
 ## Références
 
-- **annexe G** — Annexe G — Matrice des types d'interopérabilité (`01_cnisn/08_annexes/g-matrice-interop-types.md`)
+- **annexe G** : Annexe G : Matrice des types d'interopérabilité (`01_cnisn/08_annexes/g-matrice-interop-types.md`)

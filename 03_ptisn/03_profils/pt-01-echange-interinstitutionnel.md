@@ -1,5 +1,5 @@
 ---
-title: PT-01 — Profil technique national
+title: PT-01 : Profil technique national
 id: ptisn-pt-01-echange-interinstitutionnel
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,21 +9,21 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "pt-01"]
 ---
 
-# PT-01 — Profil technique national
+# PT-01 : Profil technique national
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ## 1. Capacité CNISN
 
-**CAP-INT-03 — Échange et médiation inter-systèmes**
+**CAP-INT-03 : Échange et médiation inter-systèmes**
 
 ## 2. Chapitres ART applicables
 
-- ART-0 — accords de partage ;
-- ART-1 — intégration et ingestion ;
-- ART-7 — sécurité et résidence ;
-- ART-11 — coordination intersectorielle.
+- ART-0 : accords de partage ;
+- ART-1 : intégration et ingestion ;
+- ART-7 : sécurité et résidence ;
+- ART-11 : coordination intersectorielle.
 
 ## 3. Service national
 

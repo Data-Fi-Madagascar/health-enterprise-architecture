@@ -13,7 +13,7 @@ tags: [artsn, dictionnaire, donnees, semantique, niveau-3]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+**Niveau :** niveau 3 : Architecture de Référence Technique de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -44,7 +44,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 
 ## 1. Patient & identité
 
-### P-01 — Patient
+### P-01 : Patient
 
 | Champ | Valeur |
 |-------|--------|
@@ -55,7 +55,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | CAP-01 (continuité des soins), CAP-13 (interopérabilité données), VS-01 (parcours patient), VS-03 (protection financière) |
 | **Référentiel source** | Référentiel des bénéficiaires / patients (CAESN) |
 
-### P-02 — Identifiant national d'identification
+### P-02 : Identifiant national d'identification
 
 | Champ | Valeur |
 |-------|--------|
@@ -66,7 +66,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | CAP-01, CAP-14, PT-04 (identité nationale) |
 | **Référentiel source** | Référentiel des bénéficiaires / patients |
 
-### P-03 — Dossier patient
+### P-03 : Dossier patient
 
 | Champ | Valeur |
 |-------|--------|
@@ -77,7 +77,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | CAP-01, CAP-13, VS-01 |
 | **Référentiel source** | FHIR Patient, IHE PCD |
 
-### P-04 — Épisode de soins
+### P-04 : Épisode de soins
 
 | Champ | Valeur |
 |-------|--------|
@@ -92,7 +92,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 
 ## 2. Prestation & soins
 
-### S-01 — Consultation
+### S-01 : Consultation
 
 | Champ | Valeur |
 |-------|--------|
@@ -103,7 +103,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | CAP-01, CAP-13, VS-01 |
 | **Référentiel source** | FHIR Encounter, CIM-10 (diagnostics) |
 
-### S-02 — Prescription
+### S-02 : Prescription
 
 | Champ | Valeur |
 |-------|--------|
@@ -114,7 +114,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | CAP-01, CAP-10, VS-01 |
 | **Référentiel source** | FHIR MedicationRequest |
 
-### S-03 — Référence
+### S-03 : Référence
 
 | Champ | Valeur |
 |-------|--------|
@@ -125,7 +125,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | CAP-02, CAP-05, CAP-14, VS-01 |
 | **Référentiel source** | FHIR ServiceRequest (type: referral) |
 
-### S-04 — Contre-référence
+### S-04 : Contre-référence
 
 | Champ | Valeur |
 |-------|--------|
@@ -136,7 +136,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | CAP-02, CAP-05, CAP-14, VS-01 |
 | **Référentiel source** | FHIR ServiceRequest (type: referral) + FHIR DocumentReference (compte-rendu) |
 
-### S-05 — Évacuation sanitaire
+### S-05 : Évacuation sanitaire
 
 | Champ | Valeur |
 |-------|--------|
@@ -160,7 +160,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 
 ## 3. Dispensation & produits
 
-### D-01 — Dispensation
+### D-01 : Dispensation
 
 | Champ | Valeur |
 |-------|--------|
@@ -171,7 +171,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | CAP-10, CAP-13, VS-01 |
 | **Référentiel source** | FHIR MedicationDispense |
 
-### D-02 — Produit de santé
+### D-02 : Produit de santé
 
 | Champ | Valeur |
 |-------|--------|
@@ -182,7 +182,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | CAP-10, CAP-14, VS-01, VS-02 |
 | **Référentiel source** | Référentiel des produits de santé (CAESN), OMS ATC |
 
-### D-03 — Lot
+### D-03 : Lot
 
 | Champ | Valeur |
 |-------|--------|
@@ -193,7 +193,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | CAP-10, VS-01 |
 | **Référentiel source** | FHIR Medication |
 
-### D-04 — Stock
+### D-04 : Stock
 
 | Champ | Valeur |
 |-------|--------|
@@ -208,7 +208,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 
 ## 4. Financement & couverture
 
-### F-01 — Éligibilité
+### F-01 : Éligibilité
 
 | Champ | Valeur |
 |-------|--------|
@@ -219,7 +219,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | CAP-02, CAP-07, VS-03 |
 | **Référentiel source** | FHIR Coverage |
 
-### F-02 — Couverture sanitaire
+### F-02 : Couverture sanitaire
 
 | Champ | Valeur |
 |-------|--------|
@@ -230,7 +230,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | CAP-02, CAP-07, VS-03 |
 | **Référentiel source** | FHIR Coverage, normes IHE |
 
-### F-03 — Facturation
+### F-03 : Facturation
 
 | Champ | Valeur |
 |-------|--------|
@@ -241,7 +241,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | CAP-07, VS-03, VS-04 |
 | **Référentiel source** | FHIR Claim |
 
-### F-04 — Vérification d'éligibilité
+### F-04 : Vérification d'éligibilité
 
 | Champ | Valeur |
 |-------|--------|
@@ -256,7 +256,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 
 ## 5. Risque & surveillance
 
-### R-01 — Signal
+### R-01 : Signal
 
 | Champ | Valeur |
 |-------|--------|
@@ -267,7 +267,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | CAP-06, CAP-11, VS-02, VS-04 |
 | **Référentiel source** | Système EVIPNet, DHIS2 |
 
-### R-02 — Foyer
+### R-02 : Foyer
 
 | Champ | Valeur |
 |-------|--------|
@@ -278,7 +278,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | CAP-11, VS-02, VS-04 |
 | **Référentiel source** | OMS GOARN, OIE |
 
-### R-03 — Investigation
+### R-03 : Investigation
 
 | Champ | Valeur |
 |-------|--------|
@@ -289,7 +289,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | CAP-06, CAP-11, VS-02, VS-04 |
 | **Référentiel source** | DHIS2, OMS protocoles |
 
-### R-04 — Notification sanitaire
+### R-04 : Notification sanitaire
 
 | Champ | Valeur |
 |-------|--------|
@@ -300,7 +300,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | CAP-06, CAP-11, VS-02 |
 | **Référentiel source** | FHIR Communication, Règlement sanitaire international (RSI) |
 
-### R-05 — Alerte sanitaire
+### R-05 : Alerte sanitaire
 
 | Champ | Valeur |
 |-------|--------|
@@ -315,7 +315,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 
 ## 6. Exploitation & gestion
 
-### E-01 — Formation sanitaire
+### E-01 : Formation sanitaire
 
 | Champ | Valeur |
 |-------|--------|
@@ -326,7 +326,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | CAP-05, CAP-14, TOUS les VS |
 | **Référentiel source** | Référentiel des formations sanitaires (CAESN) |
 
-### E-02 — Agent de santé
+### E-02 : Agent de santé
 
 | Champ | Valeur |
 |-------|--------|
@@ -337,7 +337,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | CAP-09, CAP-13, TOUS les VS |
 | **Référentiel source** | Référentiel des agents de santé (CAESN) |
 
-### E-03 — Indicateur sanitaire
+### E-03 : Indicateur sanitaire
 
 | Champ | Valeur |
 |-------|--------|
@@ -348,7 +348,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | CAP-03, CAP-08, TOUS les VS |
 | **Référentiel source** | Référentiel des indicateurs sanitaires (CAESN), DHIS2 |
 
-### E-04 — Zone sanitaire
+### E-04 : Zone sanitaire
 
 | Champ | Valeur |
 |-------|--------|
@@ -359,7 +359,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | CAP-05, CAP-14, TOUS les VS |
 | **Référentiel source** | Référentiel géographique sanitaire (CAESN), INSTAT |
 
-### E-05 — Tâche
+### E-05 : Tâche
 
 | Champ | Valeur |
 |-------|--------|
@@ -370,7 +370,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | CAP-06, CAP-11, CAP-14, VS-01, VS-02 |
 | **Référentiel source** | FHIR Task |
 
-### E-06 — Tableau de bord
+### E-06 : Tableau de bord
 
 | Champ | Valeur |
 |-------|--------|
@@ -385,18 +385,18 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 
 ## 7. Interopérabilité transfrontalière & résumé patient
 
-### T-01 — Résumé international du patient (IPS)
+### T-01 : Résumé international du patient (IPS)
 
 | Champ | Valeur |
 |-------|--------|
-| **Nom** | Résumé international du patient (International Patient Summary — IPS) |
+| **Nom** | Résumé international du patient (International Patient Summary : IPS) |
 | **Définition** | Document clinique structuré, minimal et non exhaustif, destiné à faciliter la continuité des soins lors d'un episode de soins transfrontalier. Conforme au standard HL7 IPS, il comprend les informations cliniques essentielles du patient : démographie, allergies, médicaments en cours, problèmes de santé, antécédents, vaccinations, résultats de diagnostic, dispositifs médicaux et procédures. Il est échangeable entre systèmes de santé de pays différents grâce aux profils FHIR IPS. |
 | **Type** | Document structuré (FHIR Composition) |
 | **Contraintes** | Conforme au profil HL7 FHIR IPS (hl7.org/fhir/uv/ips) ; langue obligatoire (français + anglais) ; sections minimales obligatoires (allergies, médicaments, problèmes) ; date d'émission et validité ; signature électronique du prestataire |
 | **Rattachement** | CAP-INT-13 (interopérabilité transfrontalière), PT-14 (interopérabilité transfrontalière), CAP-17 (engagement patient), VS-01 (parcours patient) |
-| **Référentiel source** | HL7 FHIR R4 — International Patient Summary (IPS) |
+| **Référentiel source** | HL7 FHIR R4 : International Patient Summary (IPS) |
 
-### T-02 — Section du résumé patient
+### T-02 : Section du résumé patient
 
 | Champ | Valeur |
 |-------|--------|
@@ -405,7 +405,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Type** | Entité composite |
 | **Contraintes** | Code de section conforme au ValueSet IPS (allergies, médicaments, problèmes, antécédents, vaccinations, résultats, dispositifs, procédures, observations vitales) ; contenu structuré selon les profils FHIR IPS ; section vide autorisée (« no known… ») |
 | **Rattachement** | CAP-INT-13, PT-14, VS-01 |
-| **Référentiel source** | HL7 FHIR R4 — IPS Sections |
+| **Référentiel source** | HL7 FHIR R4 : IPS Sections |
 
 #### Sections IPS obligatoires
 
@@ -422,7 +422,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **PROC** | Procédures | Procedure | Acte, date, résultat |
 | **IDOI** | Identité du patient | Patient | NIN, nom, naissance, sexe |
 
-### T-03 — Confiance internationale
+### T-03 : Confiance internationale
 
 | Champ | Valeur |
 |-------|--------|
@@ -438,26 +438,26 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 ## Liens
 
 - Chapitres et patterns de référence
-- ART-2 — Médiation et normalisation
-- ART-7 — Sécurité, contrôle d'accès et résidence
-- PT-14 — Interopérabilité transfrontalière
-- CAP-INT-13 — Interopérabilité transfrontalière
-- CAESN — données
-- CAESN — domaines de données
-- CAESN — référentiels nationaux
+- ART-2 : Médiation et normalisation
+- ART-7 : Sécurité, contrôle d'accès et résidence
+- PT-14 : Interopérabilité transfrontalière
+- CAP-INT-13 : Interopérabilité transfrontalière
+- CAESN : données
+- CAESN : domaines de données
+- CAESN : référentiels nationaux
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **chapitre ART-2 (médiation et normalisation)** — Médiation et normalisation (`referentiel/chapitres/art-2.md`)
-- **F.2** — F.2 — Préservation de la souveraineté intersectorielle (`referentiel/fondations/f-2.md`)
-- **F.3** — F.3 — Éradication des silos technologiques (`referentiel/fondations/f-3.md`)
-- **CAESN** — Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
-- **Chapitres et patterns de référence** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
-- **ART-2 — Médiation et normalisation** — Médiation et normalisation (`referentiel/chapitres/art-2.md`)
-- **ART-7 — Sécurité, contrôle d'accès et résidence** — Sécurité, contrôle d'accès et résidence de la donnée (`referentiel/chapitres/art-7.md`)
-- **PT-14 — Interopérabilité transfrontalière** — Interopérabilité transfrontalière (`03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md`)
-- **CAP-INT-13 — Interopérabilité transfrontalière** — Partie II — Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
-- **CAESN — données** — Architecture des données et de l'information sanitaire (`00_caesn/04_data/index.md`)
-- **CAESN — domaines de données** — Domaines de données prioritaires (`00_caesn/04_data/domains.md`)
-- **CAESN — référentiels nationaux** — Référentiels nationaux (`00_caesn/04_data/referentials.md`)
+- **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **chapitre ART-2 (médiation et normalisation)** : Médiation et normalisation (`referentiel/chapitres/art-2.md`)
+- **F.2** : F.2 : Préservation de la souveraineté intersectorielle (`referentiel/fondations/f-2.md`)
+- **F.3** : F.3 : Éradication des silos technologiques (`referentiel/fondations/f-3.md`)
+- **CAESN** : Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
+- **Chapitres et patterns de référence** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **ART-2 : Médiation et normalisation** : Médiation et normalisation (`referentiel/chapitres/art-2.md`)
+- **ART-7 : Sécurité, contrôle d'accès et résidence** : Sécurité, contrôle d'accès et résidence de la donnée (`referentiel/chapitres/art-7.md`)
+- **PT-14 : Interopérabilité transfrontalière** : Interopérabilité transfrontalière (`03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md`)
+- **CAP-INT-13 : Interopérabilité transfrontalière** : Partie II : Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
+- **CAESN : données** : Architecture des données et de l'information sanitaire (`00_caesn/04_data/index.md`)
+- **CAESN : domaines de données** : Domaines de données prioritaires (`00_caesn/04_data/domains.md`)
+- **CAESN : référentiels nationaux** : Référentiels nationaux (`00_caesn/04_data/referentials.md`)

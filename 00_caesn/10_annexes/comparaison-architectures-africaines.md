@@ -13,7 +13,7 @@ tags: [annexes, comparaison, afrique, veille-strategique]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -81,7 +81,7 @@ Le modèle de la Tanzanie (Health Information Mediator) et celui du Kenya (Enter
 
 **Gouvernance :** Ministère de la Santé, avec un rôle de champion via le Smart Africa Digital Health Flagship Project pour les échanges transfrontaliers.
 
-**Maturité GDHM :** Phase 4 — l'un des pays les plus avancés d'Afrique.
+**Maturité GDHM :** Phase 4 : l'un des pays les plus avancés d'Afrique.
 
 **Leçons pour Madagascar :** L'intégration de l'identifiant national unique dans le flux de données sanitaires est un modèle à suivre pour le développement de l'INP. Le modèle NHIC à six couches présente des similitudes avec la cartographie HEA à six couches, mais sans la séparation stricte entre la couche de transport (échange sans logique métier) et la couche d'interopérabilité (registres).
 
@@ -93,7 +93,7 @@ Le modèle de la Tanzanie (Health Information Mediator) et celui du Kenya (Enter
 
 **Gouvernance :** Digital Health Agency sous le Digital Health Act 2023, avec structure décentralisée (politique nationale, implémentation comtale).
 
-**Maturité GDHM :** Phase 4 — avancée de deux phases en une seule année suivant l'adoption du Digital Health Act.
+**Maturité GDHM :** Phase 4 : avancée de deux phases en une seule année suivant l'adoption du Digital Health Act.
 
 **Leçons pour Madagascar :** Le Digital Health Act 2023 démontre qu'une législation contraignante accélère significativement la maturité. Le modèle ESB du KHEA est directement comparable au PT-02 (médiation intra-secteur) mais la séparation des responsabilités entre médiation et orchestration (PT-16) est plus explicite dans l'HEA.
 
@@ -105,7 +105,7 @@ Le modèle de la Tanzanie (Health Information Mediator) et celui du Kenya (Enter
 
 **Gouvernance :** Fragmentée entre plusieurs institutions. Aucun organisme unique n'exerce une tutelle complète. L'unité ICT du Ghana Health Service gère 16 responsables régionaux.
 
-**Maturité GDHM :** Phase 3 — adopteur précoce mais écosystème fragmenté.
+**Maturité GDHM :** Phase 3 : adopteur précoce mais écosystème fragmenté.
 
 **Leçons pour Madagascar :** Le Ghana illustre le risque de fragmentation lorsque la gouvernance n'est pas centralisée. L'HEA évite ce piège grâce au CNASN comme autorité unique de cohérence architecturale. Les plateformes parallèles et les systèmes pilotés par des bailleurs qui contournent les standards nationaux sont un risque identique pour Madagascar.
 
@@ -115,9 +115,9 @@ Le modèle de la Tanzanie (Health Information Mediator) et celui du Kenya (Enter
 
 **Standards :** HL7 v3 RIM, ISO 13606/OpenEHR, profils IHE, HL7 FHIR, HL7 CDA/CCD, DICOM, ICD-10, LOINC, ISO 22220, ISO/TR 20514, profils IHE.
 
-**Gouvernance :** Department of Health national, National eHealth Standards Board, alignement avec le South African Bureau of Standards (SABS). Le HNSF est publié sous le National Health Act — législation contraignante.
+**Gouvernance :** Department of Health national, National eHealth Standards Board, alignement avec le South African Bureau of Standards (SABS). Le HNSF est publié sous le National Health Act : législation contraignante.
 
-**Maturité GDHM :** Avancée — fréquemment citée pour la maturité réglementaire. MomConnect démontre l'interopérabilité structurelle.
+**Maturité GDHM :** Avancée : fréquemment citée pour la maturité réglementaire. MomConnect démontre l'interopérabilité structurelle.
 
 **Leçons pour Madagascar :** Le HNSF est la référence normative la plus aboutie du continent. Le modèle de tests de conformité CSIR est un objectif à moyen terme pour le PTISN. La législation contraignante (National Health Act) est un facteur clé de succès absent de Madagascar.
 
@@ -129,7 +129,7 @@ Le modèle de la Tanzanie (Health Information Mediator) et celui du Kenya (Enter
 
 **Gouvernance :** Ministère de la Santé, sous-comité TZHEA établi par la National Digital Health Strategy 2019-2024.
 
-**Maturité GDHM :** Phase 3 — l'un des premiers pays à appliquer une approche d'architecture d'entreprise aux systèmes d'information de santé.
+**Maturité GDHM :** Phase 3 : l'un des premiers pays à appliquer une approche d'architecture d'entreprise aux systèmes d'information de santé.
 
 **Leçons pour Madagascar :** Le HIM tanzanien est le modèle le plus directement comparable au PT-02 (médiation intra-secteur). La capacité à intégrer 14+ systèmes via un middleware démontre la faisabilité du modèle de médiation. La séparation entre médiation (HIM) et orchestration (non formalisée en Tanzanie) est plus explicite dans l'HEA avec PT-02 et PT-16.
 
@@ -143,7 +143,7 @@ Le modèle de la Tanzanie (Health Information Mediator) et celui du Kenya (Enter
 
 **Maturité GDHM :** DHIS2 au stade « défini » (score 2,81). L'eHA est établie mais l'interopérabilité n'est pas entièrement réalisée.
 
-**Leçons pour Madagascar :** Le pilote HAPI FHIR + OpenHIM démontre la complémentarité des deux outils — exactement la distinction formalisée dans l'HEA entre PT-02 (OpenHIM pour la médiation) et PT-16 (OpenFN pour l'orchestration). L'absence de registre de patients et de programme d'ID nationale est un risque similaire pour Madagascar.
+**Leçons pour Madagascar :** Le pilote HAPI FHIR + OpenHIM démontre la complémentarité des deux outils : exactement la distinction formalisée dans l'HEA entre PT-02 (OpenHIM pour la médiation) et PT-16 (OpenFN pour l'orchestration). L'absence de registre de patients et de programme d'ID nationale est un risque similaire pour Madagascar.
 
 ### 3.7 Nigeria
 
@@ -153,7 +153,7 @@ Le modèle de la Tanzanie (Health Information Mediator) et celui du Kenya (Enter
 
 **Gouvernance :** Ministère de la Santé et du Bien-être Social, Comité de mise en œuvre du NDHI (20 personnes, multisectoriel), Digital Health Agency.
 
-**Maturité GDHM :** Phase 3 — momentum important depuis le lancement du NDHI en 2024.
+**Maturité GDHM :** Phase 3 : momentum important depuis le lancement du NDHI en 2024.
 
 **Leçons pour Madagascar :** Le Nigeria démontre qu'un cadre législatif et institutionnel fort (comité multisectoriel de 20 personnes) peut accélérer la maturité en une seule année. L'adoption de 32+ standards ISO témoigne d'une ambition normalisatrice que Madagascar pourrait calibrer à son échelle.
 
@@ -177,7 +177,7 @@ Le modèle de la Tanzanie (Health Information Mediator) et celui du Kenya (Enter
 
 **Gouvernance :** Ministère de la Santé via la Direction des Statistiques Sectorielles, stratégie nationale de santé numérique avec feuille de route IA.
 
-**Maturité GDHM :** Milieu de parcours — précoce dans l'adoption de DHIS2, en développement de la gouvernance IA.
+**Maturité GDHM :** Milieu de parcours : précoce dans l'adoption de DHIS2, en développement de la gouvernance IA.
 
 **Leçons pour Madagascar :** Le programme DHALP (*Digital Health Leadership Program*) de HELINA, actif au Burkina Faso, est un modèle de renforcement des capacités que Madagascar pourrait rejoindre. Le référentiel général d'interopérabilité est directement comparable au CNISN.
 
@@ -189,7 +189,7 @@ Le modèle de la Tanzanie (Health Information Mediator) et celui du Kenya (Enter
 
 **Gouvernance :** DISD sous le Ministère de la Santé, Comité National d'Information Stratégique.
 
-**Maturité GDHM :** Phase 4 pour l'interopérabilité — remarquable pour un pays en développement.
+**Maturité GDHM :** Phase 4 pour l'interopérabilité : remarquable pour un pays en développement.
 
 **Leçons pour Madagascar :** Le modèle mHealth-DHIS2 de la Côte d'Ivoire est une référence pour l'intégration des données communautaires (applications de terrain). La maturité interopérabilité en phase 4 démontre que des pays à ressources limitées peuvent atteindre des niveaux élevés avec une gouvernance ciblée.
 
@@ -201,7 +201,7 @@ Le modèle de la Tanzanie (Health Information Mediator) et celui du Kenya (Enter
 
 **Gouvernance :** Ministère de la Santé, aligné avec le e-Government Interoperability Framework de NITA-U.
 
-**Maturité GDHM :** Avancée — momentum important en interopérabilité.
+**Maturité GDHM :** Avancée : momentum important en interopérabilité.
 
 **Leçons pour Madagascar :** Le DHEAF est le cadre le plus comparable à l'HEA en termes de structure documentaire (7 parties vs notre hiérarchie 4 niveaux). L'utilisation de TOGAF comme méthode sous-jacente est un point commun. La différence majeure reste la séparation stricte dans l'HEA entre les niveaux normatif (CAESN/CNISN) et technique (ARTSN/PTISN), absente du DHEAF.
 
@@ -213,7 +213,7 @@ Le modèle de la Tanzanie (Health Information Mediator) et celui du Kenya (Enter
 
 **Gouvernance :** Direction ICT du Ministère de la Santé, Groupe de travail technique sur la santé numérique avec Sous-comité Standards et Interopérabilité.
 
-**Maturité GDHM :** Milieu de parcours — déploiement national de SmartCare en cours, HIE basée sur les standards en développement.
+**Maturité GDHM :** Milieu de parcours : déploiement national de SmartCare en cours, HIE basée sur les standards en développement.
 
 **Leçons pour Madagascar :** Le modèle SmartCare (offline-first) est directement pertinent pour les profils terrain et infrastructure de l'HEA. L'INRIS zambien est un modèle pour le développement de l'INP malgache.
 
@@ -223,7 +223,7 @@ Le modèle de la Tanzanie (Health Information Mediator) et celui du Kenya (Enter
 
 | Pays | Nombre de documents | Séparation normatif/technique | Format |
 |------|--------------------|-------------------------------|--------|
-| **Madagascar** | **4 niveaux** (CAESN/CNISN/ARTSN/PTISN) | **Oui — séparation stricte** | **Markdown as code** |
+| **Madagascar** | **4 niveaux** (CAESN/CNISN/ARTSN/PTISN) | **Oui : séparation stricte** | **Markdown as code** |
 | Kenya | 1 KHEA + loi | Non | PDF |
 | Tanzanie | TZHEA 4 domaines | Partielle | PDF |
 | Ouganda | DHEAF 7 building blocks | Partielle | PDF |
@@ -388,17 +388,17 @@ Un budget dédié à la numérisation de la santé, calibré sur les standards r
 
 ## Références
 
-- **Africa CDC** — AU Health Information Exchange Guidelines and Standards (2023)
-- **WHO AFRO** — Framework for Implementing the Global Strategy on Digital Health in the WHO African Region (2021-2027)
-- **Smart Africa** — Digital Health Blueprint (2025)
-- **GDHM** — Global Digital Health Monitor 2023-2025, WHO
-- **Kenya** — Digital Health Act 2023, Kenya Gazette Supplement
-- **South Africa** — Health Normative Standards Framework 2021, National Department of Health
-- **Tanzania** — Tanzania Health Enterprise Architecture, Ministry of Health (2019-2024)
-- **Uganda** — Digital Health Enterprise Architecture Framework (DHEAF), Ministry of Health
-- **Rwanda** — National Health Intelligence Center Architecture (2025), Ministry of Health
-- **Sénégal** — Plan Stratégique du Système d'Information Sanitaire 2022-2026, CSSDOS
-- **Nigeria** — Nigeria Digital Health Initiative Blueprint (2024), Federal Ministry of Health
-- **OpenHIE** — Country Profiles, OpenHIE Wiki
-- **HELINA** — Digital Health Leadership Program (DHALP), Health Informatics in Africa
-- **BMC / JMIR / PLOS Digital Health** — Littérature scientifique sur les architectures de santé numérique africaines
+- **Africa CDC** : AU Health Information Exchange Guidelines and Standards (2023)
+- **WHO AFRO** : Framework for Implementing the Global Strategy on Digital Health in the WHO African Region (2021-2027)
+- **Smart Africa** : Digital Health Blueprint (2025)
+- **GDHM** : Global Digital Health Monitor 2023-2025, WHO
+- **Kenya** : Digital Health Act 2023, Kenya Gazette Supplement
+- **South Africa** : Health Normative Standards Framework 2021, National Department of Health
+- **Tanzania** : Tanzania Health Enterprise Architecture, Ministry of Health (2019-2024)
+- **Uganda** : Digital Health Enterprise Architecture Framework (DHEAF), Ministry of Health
+- **Rwanda** : National Health Intelligence Center Architecture (2025), Ministry of Health
+- **Sénégal** : Plan Stratégique du Système d'Information Sanitaire 2022-2026, CSSDOS
+- **Nigeria** : Nigeria Digital Health Initiative Blueprint (2024), Federal Ministry of Health
+- **OpenHIE** : Country Profiles, OpenHIE Wiki
+- **HELINA** : Digital Health Leadership Program (DHALP), Health Informatics in Africa
+- **BMC / JMIR / PLOS Digital Health** : Littérature scientifique sur les architectures de santé numérique africaines

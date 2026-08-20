@@ -26,9 +26,9 @@ Le contenu du CNISN est en cours de constitution : les documents à venir (stand
 
 ## Matrices des autres niveaux
 
-- Niveau 1 — CAESN
-- Niveau 3 — ARTSN
-- Niveau 4 — PTISN
+- Niveau 1 : CAESN
+- Niveau 3 : ARTSN
+- Niveau 4 : PTISN
 
 ## Liens
 
@@ -40,13 +40,13 @@ Le contenu du CNISN est en cours de constitution : les documents à venir (stand
 
 ## Références
 
-- **Guide de lecture du CNISN** — Guide de lecture du CNISN (niveau 2) (`01_cnisn/reading-guide.md`)
-- **Index et rôle du CNISN** — Cadre National d'Interopérabilité de la Santé Numérique (CNISN) (`01_cnisn/index.md`)
-- **Glossaire du CNISN** — Glossaire du CNISN (niveau 2) (`01_cnisn/glossary.md`)
-- **Acronymes du CNISN** — Acronymes et abréviations du CNISN (niveau 2) (`01_cnisn/acronyms.md`)
-- **Niveau 1 — CAESN** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Niveau 3 — ARTSN** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **Niveau 4 — PTISN** — Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
-- **Index du CNISN** — Cadre National d'Interopérabilité de la Santé Numérique (CNISN) (`01_cnisn/index.md`)
-- **CAESN (niveau 1)** — Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
-- **ARTSN (niveau 3)** — Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
+- **Guide de lecture du CNISN** : Guide de lecture du CNISN (niveau 2) (`01_cnisn/reading-guide.md`)
+- **Index et rôle du CNISN** : Cadre National d'Interopérabilité de la Santé Numérique (CNISN) (`01_cnisn/index.md`)
+- **Glossaire du CNISN** : Glossaire du CNISN (niveau 2) (`01_cnisn/glossary.md`)
+- **Acronymes du CNISN** : Acronymes et abréviations du CNISN (niveau 2) (`01_cnisn/acronyms.md`)
+- **Niveau 1 : CAESN** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Niveau 3 : ARTSN** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **Niveau 4 : PTISN** : Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
+- **Index du CNISN** : Cadre National d'Interopérabilité de la Santé Numérique (CNISN) (`01_cnisn/index.md`)
+- **CAESN (niveau 1)** : Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
+- **ARTSN (niveau 3)** : Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)

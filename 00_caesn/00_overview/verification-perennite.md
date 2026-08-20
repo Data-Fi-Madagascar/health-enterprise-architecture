@@ -1,5 +1,5 @@
 ---
-title: "Vérification de la pérennité — PDSS, SNSD, PSRSIS"
+title: "Vérification de la pérennité : PDSS, SNSD, PSRSIS"
 id: verification-perennite-documents
 domain: 00_overview
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: DEPSI
 tags: [strategie, pdss, sns, psrsis, perennite]
 ---
 
-# Vérification de la pérennité — PDSS, SNSD, PSRSIS
+# Vérification de la pérennité : PDSS, SNSD, PSRSIS
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -31,7 +31,7 @@ Le cadre d'architecture s'appuie sur plusieurs documents stratégiques nationaux
 
 ## Documents analysés
 
-### 1. PDSS — Plan de Développement du Secteur Santé
+### 1. PDSS : Plan de Développement du Secteur Santé
 
 | Champ | Valeur |
 |-------|--------|
@@ -50,7 +50,7 @@ Le cadre d'architecture s'appuie sur plusieurs documents stratégiques nationaux
 
 ---
 
-### 2. SNSD — Stratégie Nationale de Santé Digitale
+### 2. SNSD : Stratégie Nationale de Santé Digitale
 
 | Champ | Valeur |
 |-------|--------|
@@ -66,7 +66,7 @@ Le cadre d'architecture s'appuie sur plusieurs documents stratégiques nationaux
 
 ---
 
-### 3. PSRSIS — Plan de Stratégie du Renforcement du Système d'Information Sanitaire
+### 3. PSRSIS : Plan de Stratégie du Renforcement du Système d'Information Sanitaire
 
 | Champ | Valeur |
 |-------|--------|
@@ -116,6 +116,6 @@ Si le PDSS 2020-2024 est confirmé obsolète sans successeur :
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Fondements du cadre** — Fondements stratégiques et normatifs (`00_caesn/00_overview/foundations.md`)
-- **Point de vigilance C9** — Analyse de contenu — Synthèse des 4 niveaux (`docs/content-analysis.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Fondements du cadre** : Fondements stratégiques et normatifs (`00_caesn/00_overview/foundations.md`)
+- **Point de vigilance C9** : Analyse de contenu : Synthèse des 4 niveaux (`docs/content-analysis.md`)

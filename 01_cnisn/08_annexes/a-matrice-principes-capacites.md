@@ -1,5 +1,5 @@
 ---
-title: "Annexe A — Matrice principes–capacités"
+title: "Annexe A : Matrice principes–capacités"
 id: cnisn-annexe-a
 domain: 01_cnisn
 version: "1.0.0"
@@ -9,14 +9,14 @@ owner: DEPSI
 tags: ["cnisn", "niveau-2", "annexes"]
 ---
 
-# Annexe A — Matrice principes–capacités
+# Annexe A : Matrice principes–capacités
 
 Tableau généré depuis le référentiel : les 12 capacités nationales et les 25 principes du CNISN, avec leur rattachement. La dérive de libellés est éliminée : le titre provient de l'objet.
 
 ## Matrice
 
 <!-- BEGIN:GENERATED mode=table source=referentiel/capacites/cap-int-*.md,referentiel/principes/p-int-*.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 | Code | Titre canonique | Rattachement | Statut | Fiche |
 |---|---|---|---|---|

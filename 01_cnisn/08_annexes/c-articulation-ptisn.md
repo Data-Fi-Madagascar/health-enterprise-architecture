@@ -1,5 +1,5 @@
 ---
-title: Annexe C — Articulation avec le PTISN
+title: Annexe C : Articulation avec le PTISN
 id: cnisn-annexe-c
 domain: 01_cnisn
 version: "1.0.0"
@@ -9,7 +9,7 @@ owner: DEPSI
 tags: ["cnisn", "niveau-2", "annexes"]
 ---
 
-# Annexe C — Articulation avec le PTISN
+# Annexe C : Articulation avec le PTISN
 
 
 Le PTISN doit fournir, pour chaque capacité du CNISN, le service national correspondant, les standards de base, les profils d'échange, les versions, les extensions nationales, les produits candidats, le statut de décision et les preuves de conformité. Le PTISN ne peut pas modifier un principe du CNISN ; il doit s'y conformer.

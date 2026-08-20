@@ -13,7 +13,7 @@ tags: [artsn, gouvernance, conformité, dashboard, monitoring, niveau-3]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+**Niveau :** niveau 3 : Architecture de Référence Technique de la Santé Numérique.
 
 Ce document s'adresse prioritairement aux décideurs institutionnels, aux équipes DEPSI et techniques, ainsi qu'aux équipes SIS, données et suivi-évaluation. Les directions métier et programmes, ainsi que les partenaires techniques et financiers, trouveront une lecture complémentaire utile.
 
@@ -78,7 +78,7 @@ Ce document définit les indicateurs et le processus de suivi de la conformité 
 | Initiative | C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 | C9 | C10 | C11 | C12 | Score | Statut |
 |------------|----|----|----|----|----|----|----|----|----|----|-----|-----|-------|--------|
 | Pilote référence District 1 | ● | ● | ● | ● | ● | ○ | ● | ● | ● | ● | ● | ● | 11/12 | Conforme |
-| LMIS national | ● | ● | ● | ● | ○ | — | ● | ○ | ● | ● | ◐ | ● | 8/12 | Écarts |
+| LMIS national | ● | ● | ● | ● | ○ | : | ● | ○ | ● | ● | ◐ | ● | 8/12 | Écarts |
 | OpenMRS VIH | ● | ● | ◐ | ○ | ● | ● | ● | ○ | ● | ● | ● | ◐ | 8/12 | Écarts |
 
 ## 3. Processus de suivi
@@ -141,7 +141,7 @@ Conformité < 70%  → Notification responsable initiative (J+0)
 ### 5.2 Modèle de rapport
 
 ```markdown
-# Rapport de conformité — T[X] 20[X]
+# Rapport de conformité : T[X] 20[X]
 
 ## Synthèse
 - Initiatives actives : [N]
@@ -182,7 +182,7 @@ Conformité < 70%  → Notification responsable initiative (J+0)
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│              CONFORMITÉ ARCHITECTURALE — [Mois AAAA]        │
+│              CONFORMITÉ ARCHITECTURALE : [Mois AAAA]        │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
 │  Initiatives actives        Conformité moyenne              │
@@ -218,7 +218,7 @@ Voir les documents suivants : Gouvernance ARTSN, Workflow d'homologation, Veille
 
 ## Références
 
-- **Gouvernance ARTSN** — Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)
-- **Workflow d'homologation** — Workflow d'homologation architecturale (`00_caesn/07_governance/homologation.md`)
-- **Veille architecturale** — Veille architecturale (`02_artsn/06_gouvernance/veille-architecturale.md`)
-- **Registre des décisions** — Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
+- **Gouvernance ARTSN** : Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)
+- **Workflow d'homologation** : Workflow d'homologation architecturale (`00_caesn/07_governance/homologation.md`)
+- **Veille architecturale** : Veille architecturale (`02_artsn/06_gouvernance/veille-architecturale.md`)
+- **Registre des décisions** : Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)

@@ -1,5 +1,5 @@
 ---
-title: "Partie IV — Matrice d'alignement"
+title: "Partie IV : Matrice d'alignement"
 id: ptisn-matrice-alignement
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,7 +9,7 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "interopérabilité", "alignement"]
 ---
 
-# Partie IV — Matrice d'alignement
+# Partie IV : Matrice d'alignement
 
 La matrice d'alignement établit la correspondance systématique entre les profils techniques d'implémentation par initiative (PTISN), les capacités du Cadre National d'Interopérabilité de la Santé Numérique (CNISN), les chapitres de l'Architecture de Référence Technique (ART) et les composants de l'architecture OpenHIE. Les alignements présentés ci-après ont été corrigés et vérifiés au cours de la migration documentaire (voir `coherence-report.md`) : chaque profil pointe désormais vers la capacité CNISN et le chapitre ART auxquels il se rattache effectivement.
 
@@ -30,7 +30,7 @@ Le tableau suivant établit, pour chaque capacité d'interopérabilité définie
 | CAP-INT-09 | PT-11 |
 | CAP-INT-10 | PT-12 |
 | CAP-INT-11 | PT-13 |
-| CAP-INT-12 | — |
+| CAP-INT-12 | : |
 | CAP-INT-13 | PT-14 |
 | CAP-INT-14 | PT-15 |
 
@@ -84,42 +84,42 @@ Cette correspondance ne signifie pas que tous les composants doivent être dépl
 
 ## Références
 
-- **CAP-INT-01** — CAP-INT-01 — Résolution d’identité du bénéficiaire (`referentiel/capacites/cap-int-01.md`)
-- **PT-04** — Profil technique national (`referentiel/profils/pt-04.md`)
-- **CAP-INT-02** — CAP-INT-02 — Registre et résolution des professionnels de santé (`referentiel/capacites/cap-int-02.md`)
-- **PT-05** — Profil technique national (`referentiel/profils/pt-05.md`)
-- **CAP-INT-03** — CAP-INT-03 — Échange et médiation inter-systèmes (`referentiel/capacites/cap-int-03.md`)
-- **PT-01** — Profil technique national (`referentiel/profils/pt-01.md`)
-- **PT-02** — Profil technique national (`referentiel/profils/pt-02.md`)
-- **PT-08** — Profil technique national (`referentiel/profils/pt-08.md`)
-- **CAP-INT-04** — CAP-INT-04 — Référentiel des structures et services de santé (`referentiel/capacites/cap-int-04.md`)
-- **PT-06** — Profil technique national (`referentiel/profils/pt-06.md`)
-- **CAP-INT-05** — CAP-INT-05 — Terminologie et codification communes (`referentiel/capacites/cap-int-05.md`)
-- **PT-07** — Profil technique national (`referentiel/profils/pt-07.md`)
-- **CAP-INT-06** — CAP-INT-06 — Catalogue des services et registre des contrats (`referentiel/capacites/cap-int-06.md`)
-- **PT-03** — Profil technique national (`referentiel/profils/pt-03.md`)
-- **CAP-INT-07** — CAP-INT-07 — Accès et exposition des données analytiques (`referentiel/capacites/cap-int-07.md`)
-- **PT-09** — Profil technique national (`referentiel/profils/pt-09.md`)
-- **CAP-INT-08** — CAP-INT-08 — Confiance, sécurité et autorisation (`referentiel/capacites/cap-int-08.md`)
-- **PT-10** — Profil technique national (`referentiel/profils/pt-10.md`)
-- **CAP-INT-09** — CAP-INT-09 — Gestion des consentements et bases d’autorisation (`referentiel/capacites/cap-int-09.md`)
-- **PT-11** — Profil technique national (`referentiel/profils/pt-11.md`)
-- **CAP-INT-10** — CAP-INT-10 — Provenance, audit et traçabilité (`referentiel/capacites/cap-int-10.md`)
-- **PT-12** — Profil technique national (`referentiel/profils/pt-12.md`)
-- **CAP-INT-11** — CAP-INT-11 — Qualité et réconciliation (`referentiel/capacites/cap-int-11.md`)
-- **PT-13** — Profil technique national (`referentiel/profils/pt-13.md`)
-- **CAP-INT-12** — CAP-INT-12 — Conformité et tests d’interopérabilité (`referentiel/capacites/cap-int-12.md`)
-- **ART-0** — Accords de partage inter-institutionnels (`referentiel/chapitres/art-0.md`)
-- **ART-1** — Intégration et ingestion (`referentiel/chapitres/art-1.md`)
-- **ART-2** — Médiation et normalisation (`referentiel/chapitres/art-2.md`)
-- **ART-3** — Historisation événementielle et profils de déploiement (`referentiel/chapitres/art-3.md`)
-- **ART-4** — Référentiels de métadonnées de gestion (`referentiel/chapitres/art-4.md`)
-- **ART-4a** — Résolution d'identité (`referentiel/chapitres/art-4a.md`)
-- **ART-4b** — Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
-- **ART-5** — Cohérence et qualité des données (`referentiel/chapitres/art-5.md`)
-- **ART-6** — Analytique et restitution (`referentiel/chapitres/art-6.md`)
-- **ART-7** — Sécurité, contrôle d'accès et résidence de la donnée (`referentiel/chapitres/art-7.md`)
-- **ART-8** — Orchestration de processus (`referentiel/chapitres/art-8.md`)
-- **ART-9** — Garanties transactionnelles fortes (`referentiel/chapitres/art-9.md`)
-- **ART-10** — Logistique (`referentiel/chapitres/art-10.md`)
-- **ART-11** — Coordination intersectorielle (`referentiel/chapitres/art-11.md`)
+- **CAP-INT-01** : CAP-INT-01 : Résolution d’identité du bénéficiaire (`referentiel/capacites/cap-int-01.md`)
+- **PT-04** : Profil technique national (`referentiel/profils/pt-04.md`)
+- **CAP-INT-02** : CAP-INT-02 : Registre et résolution des professionnels de santé (`referentiel/capacites/cap-int-02.md`)
+- **PT-05** : Profil technique national (`referentiel/profils/pt-05.md`)
+- **CAP-INT-03** : CAP-INT-03 : Échange et médiation inter-systèmes (`referentiel/capacites/cap-int-03.md`)
+- **PT-01** : Profil technique national (`referentiel/profils/pt-01.md`)
+- **PT-02** : Profil technique national (`referentiel/profils/pt-02.md`)
+- **PT-08** : Profil technique national (`referentiel/profils/pt-08.md`)
+- **CAP-INT-04** : CAP-INT-04 : Référentiel des structures et services de santé (`referentiel/capacites/cap-int-04.md`)
+- **PT-06** : Profil technique national (`referentiel/profils/pt-06.md`)
+- **CAP-INT-05** : CAP-INT-05 : Terminologie et codification communes (`referentiel/capacites/cap-int-05.md`)
+- **PT-07** : Profil technique national (`referentiel/profils/pt-07.md`)
+- **CAP-INT-06** : CAP-INT-06 : Catalogue des services et registre des contrats (`referentiel/capacites/cap-int-06.md`)
+- **PT-03** : Profil technique national (`referentiel/profils/pt-03.md`)
+- **CAP-INT-07** : CAP-INT-07 : Accès et exposition des données analytiques (`referentiel/capacites/cap-int-07.md`)
+- **PT-09** : Profil technique national (`referentiel/profils/pt-09.md`)
+- **CAP-INT-08** : CAP-INT-08 : Confiance, sécurité et autorisation (`referentiel/capacites/cap-int-08.md`)
+- **PT-10** : Profil technique national (`referentiel/profils/pt-10.md`)
+- **CAP-INT-09** : CAP-INT-09 : Gestion des consentements et bases d’autorisation (`referentiel/capacites/cap-int-09.md`)
+- **PT-11** : Profil technique national (`referentiel/profils/pt-11.md`)
+- **CAP-INT-10** : CAP-INT-10 : Provenance, audit et traçabilité (`referentiel/capacites/cap-int-10.md`)
+- **PT-12** : Profil technique national (`referentiel/profils/pt-12.md`)
+- **CAP-INT-11** : CAP-INT-11 : Qualité et réconciliation (`referentiel/capacites/cap-int-11.md`)
+- **PT-13** : Profil technique national (`referentiel/profils/pt-13.md`)
+- **CAP-INT-12** : CAP-INT-12 : Conformité et tests d’interopérabilité (`referentiel/capacites/cap-int-12.md`)
+- **ART-0** : Accords de partage inter-institutionnels (`referentiel/chapitres/art-0.md`)
+- **ART-1** : Intégration et ingestion (`referentiel/chapitres/art-1.md`)
+- **ART-2** : Médiation et normalisation (`referentiel/chapitres/art-2.md`)
+- **ART-3** : Historisation événementielle et profils de déploiement (`referentiel/chapitres/art-3.md`)
+- **ART-4** : Référentiels de métadonnées de gestion (`referentiel/chapitres/art-4.md`)
+- **ART-4a** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
+- **ART-4b** : Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
+- **ART-5** : Cohérence et qualité des données (`referentiel/chapitres/art-5.md`)
+- **ART-6** : Analytique et restitution (`referentiel/chapitres/art-6.md`)
+- **ART-7** : Sécurité, contrôle d'accès et résidence de la donnée (`referentiel/chapitres/art-7.md`)
+- **ART-8** : Orchestration de processus (`referentiel/chapitres/art-8.md`)
+- **ART-9** : Garanties transactionnelles fortes (`referentiel/chapitres/art-9.md`)
+- **ART-10** : Logistique (`referentiel/chapitres/art-10.md`)
+- **ART-11** : Coordination intersectorielle (`referentiel/chapitres/art-11.md`)

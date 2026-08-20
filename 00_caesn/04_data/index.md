@@ -13,7 +13,7 @@ tags: [données, architecture, sis]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -58,13 +58,13 @@ Les systèmes opérationnels soutiennent l'action ; les systèmes analytiques so
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Principes de l'architecture des données** — Principes de l'architecture des données (`00_caesn/04_data/principles.md`)
-- **Domaines de données** — Domaines de données prioritaires (`00_caesn/04_data/domains.md`)
-- **Référentiels nationaux** — Référentiels nationaux (`00_caesn/04_data/referentials.md`)
-- **Cycle de vie des données** — Cycle de vie des données (`00_caesn/04_data/lifecycle.md`)
-- **Gouvernance et protection des données** — Gouvernance, qualité et protection des données (`00_caesn/04_data/governance.md`)
-- **Dictionnaire de données ARTSN** — Dictionnaire de données fonctionnelles, sémantique universelle (`02_artsn/05_dictionnaire/index.md`)
-- **Capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
-- **Architecture applicative** — Architecture applicative et systèmes numériques (`00_caesn/05_application/index.md`)
-- **Flux de valeur** — Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Principes de l'architecture des données** : Principes de l'architecture des données (`00_caesn/04_data/principles.md`)
+- **Domaines de données** : Domaines de données prioritaires (`00_caesn/04_data/domains.md`)
+- **Référentiels nationaux** : Référentiels nationaux (`00_caesn/04_data/referentials.md`)
+- **Cycle de vie des données** : Cycle de vie des données (`00_caesn/04_data/lifecycle.md`)
+- **Gouvernance et protection des données** : Gouvernance, qualité et protection des données (`00_caesn/04_data/governance.md`)
+- **Dictionnaire de données ARTSN** : Dictionnaire de données fonctionnelles, sémantique universelle (`02_artsn/05_dictionnaire/index.md`)
+- **Capabilités** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
+- **Architecture applicative** : Architecture applicative et systèmes numériques (`00_caesn/05_application/index.md`)
+- **Flux de valeur** : Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)

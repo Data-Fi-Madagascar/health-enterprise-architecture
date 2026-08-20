@@ -1,5 +1,5 @@
 ---
-title: "ADR-0007 — Adoption du GDHCN pour la confiance transfrontalière"
+title: "ADR-0007 : Adoption du GDHCN pour la confiance transfrontalière"
 id: adr-0007
 domain: 06_decisions
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: DEPSI
 tags: [adr, confiance, gdhc, transfrontalier, certificat]
 ---
 
-# ADR-0007 — Adoption du GDHCN pour la confiance transfrontalière
+# ADR-0007 : Adoption du GDHCN pour la confiance transfrontalière
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -84,8 +84,8 @@ Le GDHCN doit :
 
 ## Références
 
-- PT-14 — Interopérabilité transfrontalière
-- ART-7 — Sécurité
-- CAP-INT-13 — Interopérabilité transfrontalière
-- [GDHCN — Global Digital Health Certification Network](https://gdadhn.org)
+- PT-14 : Interopérabilité transfrontalière
+- ART-7 : Sécurité
+- CAP-INT-13 : Interopérabilité transfrontalière
+- [GDHCN : Global Digital Health Certification Network](https://gdadhn.org)
 

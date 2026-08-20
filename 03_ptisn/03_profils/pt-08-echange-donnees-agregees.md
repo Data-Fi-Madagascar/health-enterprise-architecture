@@ -1,5 +1,5 @@
 ---
-title: PT-08 — Profil technique national
+title: PT-08 : Profil technique national
 id: ptisn-pt-08-echange-donnees-agregees
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,15 +9,15 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "pt-08"]
 ---
 
-# PT-08 — Profil technique national
+# PT-08 : Profil technique national
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ## 1. Capacités CNISN
 
-- **CAP-INT-03 — Échange et médiation inter-systèmes**
-- contribution à **CAP-INT-07 — Accès et exposition des données analytiques**
+- **CAP-INT-03 : Échange et médiation inter-systèmes**
+- contribution à **CAP-INT-07 : Accès et exposition des données analytiques**
 
 ## 2. Chapitres ART applicables
 
@@ -43,7 +43,7 @@ tags: ["ptisn", "niveau-4", "profils", "pt-08"]
 
 ## 5. Profil cible
 
-**IHE mADX — Mobile Aggregate Data Exchange**
+**IHE mADX : Mobile Aggregate Data Exchange**
 
 mADX est conçu pour l’échange interopérable de données agrégées de santé publique, notamment les rapports périodiques produits par les établissements et transmis à une juridiction administrative. Il est présenté comme fonctionnellement équivalent à ADX pour ces usages, tout en reposant sur FHIR.
 

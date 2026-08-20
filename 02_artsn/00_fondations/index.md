@@ -13,7 +13,7 @@ tags: [artsn, fondations, catalogue, niveau-3]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+**Niveau :** niveau 3 : Architecture de Référence Technique de la Santé Numérique.
 
 Ce document s'adresse prioritairement aux décideurs institutionnels et aux équipes DEPSI/techniques, qui doivent en assurer la compréhension et l'application. Les directions métier, les programmes, les responsables SIS/données/suivi-évaluation, ainsi que les partenaires techniques et financiers y trouvent un complément utile à leur compréhension de l'architecture. La vue d'ensemble de ces priorités de lecture est disponible dans la matrice de lecture. Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle.
 
@@ -22,9 +22,9 @@ Les fondations invariantes constituent le **socle** sur lequel s'appuient tous l
 ## Catalogue des fondations
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### F.1 — Résilience face à la réalité géographique du pays
+### F.1 : Résilience face à la réalité géographique du pays
 
 **Contenu normatif.** Les contraintes d’infrastructure de Madagascar (zones rurales isolées, instabilité énergétique, connectivité asymétrique et intermittente au niveau des districts) imposent d’abandonner les mécanismes transactionnels centralisés synchrones. Pour garantir qu’aucun événement de santé ne soit perdu ou dupliqué lors d’une coupure réseau, l’État érige en obligations légales strictes :
 
@@ -37,7 +37,7 @@ Cette discipline devient **existentielle** dès lors qu’une source échappe à
 
 *Rattachement : ENF-1, CAP-08 · fiche F-1*
 
-### F.2 — Préservation de la souveraineté intersectorielle
+### F.2 : Préservation de la souveraineté intersectorielle
 
 **Contenu normatif.** L’intégration des flux avec des ministères autonomes (Intérieur pour l’État Civil, Finances pour le tiers-payant, Élevage pour les zoonoses) exige des contrats d’interfaces techniques **d’égal à égal**. Le versionnement sémantique obligatoire des schémas protège chaque département contre les ruptures de service causées par les modifications applicatives de ses partenaires. Techniquement :
 
@@ -52,7 +52,7 @@ Discipline **existentielle** pour absorber un changement de structure décidé u
 
 *Rattachement : ENF-4 · fiche F-2*
 
-### F.3 — Éradication des silos technologiques
+### F.3 : Éradication des silos technologiques
 
 **Contenu normatif.** Pour mettre fin à la fragmentation historique du paysage numérique sanitaire (multiplicité de logiciels propriétaires incompatibles importés de manière non coordonnée), le Comité National impose un cadre d’homologation obligatoire : **aucun système ne peut interagir avec la plateforme sans prouver son rattachement explicite à une capacité d’État documentée**. Techniquement, toute solution applicative doit :
 
@@ -65,7 +65,7 @@ Discipline **existentielle** : elle seule permet au Comité National (CNASN) de 
 
 *Rattachement : CAP-14 · fiche F-3*
 
-### F.4 — Homologation obligatoire
+### F.4 : Homologation obligatoire
 
 **Contenu normatif.** Le processus d’homologation obligatoire (introduit en F.3) s’applique à toute solution ; un constat d’homologation qui révélerait qu’un composant ne peut être rattaché à aucun chapitre existant déclenche une revue de l’ARTSN (voir Gouvernance).
 
@@ -73,7 +73,7 @@ Discipline **existentielle** : elle seule permet au Comité National (CNASN) de 
 
 *Rattachement : CAP-INT-12, CAP-16 · fiche F-4*
 
-### F.5 — Protection et minimisation
+### F.5 : Protection et minimisation
 
 **Contenu normatif.** La protection des données de santé ne repose pas sur la captation massive mais sur la minimisation : l'architecture impose de ne collecter, traiter et conserver que les données strictement nécessaires à la finalité documentée. La résidence de la donnée sur le territoire national et la non-réplication hors du périmètre autorisé sont des obligations : chaque flux précise sa finalité, sa base légale et sa durée de conservation, et tout traitement excédant le besoin est proscrit.
 
@@ -85,7 +85,7 @@ Discipline **existentielle** : elle seule permet au Comité National (CNASN) de 
 
 *Rattachement : CAP-15 · fiche F-5*
 
-### F.6 — Observabilité
+### F.6 : Observabilité
 
 **Contenu normatif.** La conduite du système sanitaire numérique exige une observabilité continue de bout en bout : événements, flux, traitements et accès doivent être tracés selon des niveaux différenciés (métadonnées de traçabilité, journaux d'audit immuables, indicateurs de fonctionnement). L'architecture impose que chaque composant expose des signaux de santé opérationnelle (disponibilité, latence, taux d'erreur, complétude des flux) exploitables par l'entrepôt national de données et les tableaux de bord.
 
@@ -105,7 +105,7 @@ Pour approfondir les fondations de l'ARTSN, les lecteurs peuvent consulter les e
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **exigences contextuelles nationales** — Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
-- **chapitres et patterns de référence** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
-- **cartographie cible** — Cartographie conceptuelle cible (`02_artsn/04_cartographie-cible/index.md`)
+- **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **exigences contextuelles nationales** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
+- **chapitres et patterns de référence** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **cartographie cible** : Cartographie conceptuelle cible (`02_artsn/04_cartographie-cible/index.md`)

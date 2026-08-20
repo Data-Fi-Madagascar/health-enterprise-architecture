@@ -1,5 +1,5 @@
 ---
-title: "ADR-0001 — Adoption de X-Road comme plateforme d'échange interinstitutionnel"
+title: "ADR-0001 : Adoption de X-Road comme plateforme d'échange interinstitutionnel"
 id: adr-0001
 domain: 06_decisions
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: DEPSI
 tags: [adr, interopérabilité, x-road, plateforme]
 ---
 
-# ADR-0001 — Adoption de X-Road comme plateforme d'échange interinstitutionnel
+# ADR-0001 : Adoption de X-Road comme plateforme d'échange interinstitutionnel
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -73,8 +73,8 @@ Il est déjà déployé dans plusieurs pays similaires (Estonie, Finlande, Islan
 
 ## Références
 
-- PT-01 — Profil technique national
-- CNISN — Principes d'interopérabilité
-- ARTSN — Chapitre ART-0
+- PT-01 : Profil technique national
+- CNISN : Principes d'interopérabilité
+- ARTSN : Chapitre ART-0
 
-- **matrice de lecture** — Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
+- **matrice de lecture** : Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)

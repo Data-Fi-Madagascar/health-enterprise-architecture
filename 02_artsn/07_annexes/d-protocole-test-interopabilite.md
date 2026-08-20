@@ -1,5 +1,5 @@
 ---
-title: "Annexe D — Protocole de test d'interopérabilité"
+title: "Annexe D : Protocole de test d'interopérabilité"
 id: artsn-protocole-test
 domain: 02_artsn
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: DEPSI
 tags: [artsn, annexe, test, interopérabilité, validation, niveau-3]
 ---
 
-# Annexe D — Protocole de test d'interopérabilité
+# Annexe D : Protocole de test d'interopérabilité
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+**Niveau :** niveau 3 : Architecture de Référence Technique de la Santé Numérique.
 
 La lecture de ce document est **ponctuelle** pour les décideurs institutionnels, **complémentaire** pour les directions métier et programmes ainsi que pour les équipes SIS, données et suivi-évaluation, et **prioritaire** pour l'équipe DEPSI et ses équipes techniques ainsi que pour les partenaires techniques et financiers. Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle.
 
@@ -27,10 +27,10 @@ Ce document définit le protocole de validation de l'interopérabilité entre le
 
 | Niveau | Objectif | Exigence |
 |--------|----------|----------|
-| **N1 — Conformité** | Vérifier qu'un profil respecte son contrat d'interface | Obligatoire avant mise en production |
-| **N2 — Composabilité** | Vérifier que deux profils s'assemblent correctement | Obligatoire pour tout couple de profils utilisés ensemble |
-| **N3 — bout-en-bout** | Vérifier un scénario métier complet (use case) | Obligatoire pour chaque cas d'usage (VS-01 à VS-04) |
-| **N4 — charge** | Vérifier les performances en conditions réelles | Recommandé avant déploiement national |
+| **N1 : Conformité** | Vérifier qu'un profil respecte son contrat d'interface | Obligatoire avant mise en production |
+| **N2 : Composabilité** | Vérifier que deux profils s'assemblent correctement | Obligatoire pour tout couple de profils utilisés ensemble |
+| **N3 : bout-en-bout** | Vérifier un scénario métier complet (use case) | Obligatoire pour chaque cas d'usage (VS-01 à VS-04) |
+| **N4 : charge** | Vérifier les performances en conditions réelles | Recommandé avant déploiement national |
 
 ### 1.2 Règles de test
 
@@ -38,7 +38,7 @@ Chaque test est exécuté de manière isolée, sans dépendance aux résultats d
 
 ## 2. Scénarios de test par profil
 
-### 2.1 PT-01 — Échange interinstitutionnel
+### 2.1 PT-01 : Échange interinstitutionnel
 
 | Code test | Scénario | Données d'entrée | Résultat attendu | Critère de succès |
 |-----------|----------|-------------------|------------------|-------------------|
@@ -47,7 +47,7 @@ Chaque test est exécuté de manière isolée, sans dépendance aux résultats d
 | PT01-T03 | Envoi en mode dégradé (hors-ligne) | Message + état hors-ligne | File d'attente locale | Synchronisation différée < 5min |
 | PT01-T04 | Routage multi-destinataires | Message + 3 destinataires | 3 copies acheminées | Aucune perte, traçabilité complète |
 
-### 2.2 PT-02 — Médiation intra-secteur
+### 2.2 PT-02 : Médiation intra-secteur
 
 | Code test | Scénario | Données d'entrée | Résultat attendu | Critère de succès |
 |-----------|----------|-------------------|------------------|-------------------|
@@ -56,7 +56,7 @@ Chaque test est exécuté de manière isolée, sans dépendance aux résultats d
 | PT02-T03 | Médiation multi-format | HL7v2 + CSV + FHIR | Bundle FHIR normalisé | Aucune perte sémantique |
 | PT02-T04 | Gestion des erreurs de mapping | Code sans équivalent | Warning + valeur conservée | Pas de rejet, traçabilité |
 
-### 2.3 PT-04 — Résolution d'identité
+### 2.3 PT-04 : Résolution d'identité
 
 | Code test | Scénario | Données d'entrée | Résultat attendu | Critère de succès |
 |-----------|----------|-------------------|------------------|-------------------|
@@ -65,7 +65,7 @@ Chaque test est exécuté de manière isolée, sans dépendance aux résultats d
 | PT04-T03 | Détection de doublon | Données similaires à un existant | Alerte doublon | Taux de faux positifs < 5% |
 | PT04-T04 | Recherche floue (nom partiel) | Nom + commune | Liste de candidats | Précision > 90% |
 
-### 2.4 PT-10 — Confiance et autorisation
+### 2.4 PT-10 : Confiance et autorisation
 
 | Code test | Scénario | Données d'entrée | Résultat attendu | Critère de succès |
 |-----------|----------|-------------------|------------------|-------------------|
@@ -76,7 +76,7 @@ Chaque test est exécuté de manière isolée, sans dépendance aux résultats d
 | PT10-T05 | Jeton expiré | Jeton périmé | Erreur 401 | Redirection vers renouvellement |
 | PT10-T06 | Révocation temps réel | Jeton révoqué manuellement | Erreur 401 immédiate | Délai de propagation < 30s |
 
-### 2.5 PT-11 — Consentement
+### 2.5 PT-11 : Consentement
 
 | Code test | Scénario | Données d'entrée | Résultat attendu | Critère de succès |
 |-----------|----------|-------------------|------------------|-------------------|
@@ -85,7 +85,7 @@ Chaque test est exécuté de manière isolée, sans dépendance aux résultats d
 | PT11-T03 | Consentement expiré | Date de fin dépassée | Accès bloqué | Notification au patient |
 | PT11-T04 | Révocation de consentement | Patient révoque | Accès immédiatement bloqué | Notification aux destinataires |
 
-### 2.6 PT-14 — Interopérabilité transfrontalière
+### 2.6 PT-14 : Interopérabilité transfrontalière
 
 | Code test | Scénario | Données d'entrée | Résultat attendu | Critère de succès |
 |-----------|----------|-------------------|------------------|-------------------|
@@ -96,7 +96,7 @@ Chaque test est exécuté de manière isolée, sans dépendance aux résultats d
 
 ## 3. Scénarios de test bout-en-bout (use cases)
 
-### 3.1 VS-01 — Référence / Évacuation
+### 3.1 VS-01 : Référence / Évacuation
 
 | Code test | Scénario | Étapes | Résultat attendu |
 |-----------|----------|--------|------------------|
@@ -105,7 +105,7 @@ Chaque test est exécuté de manière isolée, sans dépendance aux résultats d
 | VS01-E2E-03 | Évacuation nationale urgente | 1. ServiceRequest URGENCE → 2. Routage auto → 3. Destination accepte → 4. Transport lancé → 5. Arrivée confirmée | Temps total < 30min (hors transport) |
 | VS01-E2E-04 | Évacuation internationale | 1. Demande EVA-I → 2. Vérification GDHCN → 3. Accord bilatéral → 4. IPS transmis → 5. Acceptation | Conformité IPS validée |
 
-### 3.2 VS-02 — Surveillance épidémique
+### 3.2 VS-02 : Surveillance épidémique
 
 | Code test | Scénario | Étapes | Résultat attendu |
 |-----------|----------|--------|------------------|
@@ -114,7 +114,7 @@ Chaque test est exécuté de manière isolée, sans dépendance aux résultats d
 | VS02-E2E-03 | Investigation → Confirmation | 1. Équipe enquête → 2. Résultat labo → 3. Cas confirmé → 4. Mise à jour dashboard | Données cohérentes terrain/labo |
 | VS02-E2E-04 | Riposte coordonnée | 1. Plan activé → 2. Tâches assignées → 3. Suivi avancement → 4. Clôture | Tâches traçables de bout en bout |
 
-### 3.3 VS-03 — Couverture sanitaire
+### 3.3 VS-03 : Couverture sanitaire
 
 | Code test | Scénario | Étapes | Résultat attendu |
 |-----------|----------|--------|------------------|
@@ -123,7 +123,7 @@ Chaque test est exécuté de manière isolée, sans dépendance aux résultats d
 | VS03-E2E-03 | Facturation → Remboursement | 1. Claim soumis → 2. Validation → 3. Instruction → 4. Paiement | Cycle complet < 30 jours |
 | VS03-E2E-04 | Audit fraude | 1. Données agrégées → 2. Détection anomalies → 3. Investigation | Patterns suspects identifiés |
 
-### 3.4 VS-04 — Pilotage système
+### 3.4 VS-04 : Pilotage système
 
 | Code test | Scénario | Étapes | Résultat attendu |
 |-----------|----------|--------|------------------|
@@ -199,11 +199,11 @@ La procédure de certification suit cinq étapes : le candidat soumet une demand
 
 ## Liens
 
-Les liens utiles pour approfondir ce document sont les suivants : le chapitre ART-7 — Sécurité, contrôle d'accès et résidence, le profil PT-10 — Confiance et autorisation, ainsi que la Feuille de route et la Cartographie cible.
+Les liens utiles pour approfondir ce document sont les suivants : le chapitre ART-7 : Sécurité, contrôle d'accès et résidence, le profil PT-10 : Confiance et autorisation, ainsi que la Feuille de route et la Cartographie cible.
 
 ## Références
 
-- **ART-7 — Sécurité, contrôle d'accès et résidence** — Sécurité, contrôle d'accès et résidence de la donnée (`referentiel/chapitres/art-7.md`)
-- **PT-10 — Confiance et autorisation** — Profil technique national (`03_ptisn/03_profils/pt-10-confiance-authentification-autorisation.md`)
-- **Feuille de route** — Feuille de route de déploiement progressif de l'ARTSN (`02_artsn/09_feuille-route/index.md`)
-- **Cartographie cible** — Cartographie conceptuelle cible (`02_artsn/04_cartographie-cible/index.md`)
+- **ART-7 : Sécurité, contrôle d'accès et résidence** : Sécurité, contrôle d'accès et résidence de la donnée (`referentiel/chapitres/art-7.md`)
+- **PT-10 : Confiance et autorisation** : Profil technique national (`03_ptisn/03_profils/pt-10-confiance-authentification-autorisation.md`)
+- **Feuille de route** : Feuille de route de déploiement progressif de l'ARTSN (`02_artsn/09_feuille-route/index.md`)
+- **Cartographie cible** : Cartographie conceptuelle cible (`02_artsn/04_cartographie-cible/index.md`)

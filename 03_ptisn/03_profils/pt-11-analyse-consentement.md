@@ -1,5 +1,5 @@
 ---
-title: "Analyse PT-11 — Profil technique du consentement"
+title: "Analyse PT-11 : Profil technique du consentement"
 id: ptisn-pt-11-analyse
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: DEPSI
 tags: [ptisn, pt-11, consentement, analyse]
 ---
 
-# Analyse PT-11 — Profil technique du consentement
+# Analyse PT-11 : Profil technique du consentement
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 4 — Profils techniques d'implémentation de la Santé Numérique.
+**Niveau :** niveau 4 : Profils techniques d'implémentation de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -29,7 +29,7 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 
 Le PT-11 (Consentement et bases d'autorisation) est identifié comme **critique** dans l'analyse de contenu :
 
-> **C7** — PT-11 Consentement vide — aucun standard technique choisi, toute initiative de partage patients bloquée.
+> **C7** : PT-11 Consentement vide : aucun standard technique choisi, toute initiative de partage patients bloquée.
 
 Cette analyse vise à :
 1. Évaluer les options techniques disponibles
@@ -64,7 +64,7 @@ Cette analyse vise à :
 
 | Champ | Valeur |
 |-------|--------|
-| **Standard** | HL7 FHIR R4 — Resource Consent |
+| **Standard** | HL7 FHIR R4 : Resource Consent |
 | **Avantages** | Standard international, intégré à l'écosystème FHIR, largement documenté |
 | **Inconvénients** | Complexité du modèle, nécessite un profiling national |
 | **Maturité** | Élevée (utilisé dans plusieurs pays) |
@@ -89,7 +89,7 @@ Cette analyse vise à :
 
 ### 3.4 Recommandation
 
-**Option A — FHIR Consent** avec les éléments suivants :
+**Option A : FHIR Consent** avec les éléments suivants :
 
 | Élément | Valeur |
 |---------|--------|
@@ -192,17 +192,17 @@ T3      T4      T1      T2      T3      T4
 
 ## Liens
 
-- PT-11 — Profil technique
-- CAP-INT-09 — Gestion des consentements
-- ART-4b — Bases d'autorisation
-- PT-04 — Résolution d'identité
-- PT-06 — Authentification
+- PT-11 : Profil technique
+- CAP-INT-09 : Gestion des consentements
+- ART-4b : Bases d'autorisation
+- PT-04 : Résolution d'identité
+- PT-06 : Authentification
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
-- **PT-11 — Profil technique** — Profil technique national (`referentiel/profils/pt-11.md`)
-- **CAP-INT-09 — Gestion des consentements** — CAP-INT-09 — Gestion des consentements et bases d’autorisation (`referentiel/capacites/cap-int-09.md`)
-- **ART-4b — Bases d'autorisation** — Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
-- **PT-04 — Résolution d'identité** — Profil technique national (`referentiel/profils/pt-04.md`)
-- **PT-06 — Authentification** — Profil technique national (`referentiel/profils/pt-06.md`)
+- **matrice de lecture** : Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
+- **PT-11 : Profil technique** : Profil technique national (`referentiel/profils/pt-11.md`)
+- **CAP-INT-09 : Gestion des consentements** : CAP-INT-09 : Gestion des consentements et bases d’autorisation (`referentiel/capacites/cap-int-09.md`)
+- **ART-4b : Bases d'autorisation** : Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
+- **PT-04 : Résolution d'identité** : Profil technique national (`referentiel/profils/pt-04.md`)
+- **PT-06 : Authentification** : Profil technique national (`referentiel/profils/pt-06.md`)

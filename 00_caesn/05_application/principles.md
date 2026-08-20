@@ -13,7 +13,7 @@ tags: [applications, urbanisation, principes]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -31,9 +31,9 @@ Les principes suivants s'appliquent à toute application ou plateforme numériqu
 ## Catalogue des principes applicatifs
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### AA-01 — Les applications sont dérivées des flux de valeur et des capabilités
+### AA-01 : Les applications sont dérivées des flux de valeur et des capabilités
 
 #### Signification
 
@@ -45,7 +45,7 @@ Chaque application doit indiquer le flux de valeur, la capabilité, les données
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-01*
 
-### AA-02 — Les applications ne doivent pas dupliquer les référentiels nationaux
+### AA-02 : Les applications ne doivent pas dupliquer les référentiels nationaux
 
 #### Signification
 
@@ -57,7 +57,7 @@ Une application consomme les référentiels nationaux plutôt que de créer ses 
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-02*
 
-### AA-03 — Les applications doivent être interopérables par conception
+### AA-03 : Les applications doivent être interopérables par conception
 
 #### Signification
 
@@ -69,7 +69,7 @@ Toute application expose et consomme des interfaces documentées, sécurisées e
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-03*
 
-### AA-04 — Les applications opérationnelles et analytiques doivent être séparées
+### AA-04 : Les applications opérationnelles et analytiques doivent être séparées
 
 #### Signification
 
@@ -81,7 +81,7 @@ Les systèmes opérationnels soutiennent l’action en temps réel (soins, logis
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-04*
 
-### AA-05 — Les applications doivent fonctionner dans les conditions réelles du terrain
+### AA-05 : Les applications doivent fonctionner dans les conditions réelles du terrain
 
 #### Signification
 
@@ -93,7 +93,7 @@ Les applications destinées au terrain prévoient un mode hors ligne ou dégrad�
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-05*
 
-### AA-06 — Les plateformes partagées doivent être réutilisées avant de créer de nouveaux composants
+### AA-06 : Les plateformes partagées doivent être réutilisées avant de créer de nouveaux composants
 
 #### Signification
 
@@ -105,7 +105,7 @@ Avant de construire un nouveau composant, l’initiative vérifie l’existence 
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-06*
 
-### AA-07 — Les applications doivent être soutenables
+### AA-07 : Les applications doivent être soutenables
 
 #### Signification
 
@@ -117,7 +117,7 @@ Toute application modélise la maintenance, le support, le transfert de compéte
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-07*
 
-### AA-08 — Les applications doivent être homologuées avant extension
+### AA-08 : Les applications doivent être homologuées avant extension
 
 #### Signification
 
@@ -129,7 +129,7 @@ L’extension est conditionnée à l’alignement sur le cadre, les standards, l
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-08*
 
-### AA-09 — Les applications obsolètes ou redondantes doivent être rationalisées
+### AA-09 : Les applications obsolètes ou redondantes doivent être rationalisées
 
 #### Signification
 
@@ -150,7 +150,7 @@ Les doublons, systèmes non utilisés ou non conformes sont consolidés, remplac
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Architecture applicative** — Architecture applicative et systèmes numériques (`00_caesn/05_application/index.md`)
-- **Règles d'urbanisation** — Règles d'urbanisation applicative (`00_caesn/05_application/urbanisation.md`)
-- **Rationalisation** — Trajectoire de rationalisation du paysage applicatif (`00_caesn/05_application/rationalization.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Architecture applicative** : Architecture applicative et systèmes numériques (`00_caesn/05_application/index.md`)
+- **Règles d'urbanisation** : Règles d'urbanisation applicative (`00_caesn/05_application/urbanisation.md`)
+- **Rationalisation** : Trajectoire de rationalisation du paysage applicatif (`00_caesn/05_application/rationalization.md`)

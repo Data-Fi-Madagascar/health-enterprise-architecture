@@ -13,7 +13,7 @@ tags: [capabilités, runway, critiques]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -36,33 +36,33 @@ Toutes les capabilités runway sont critiques, mais toutes les capabilités crit
 
 | Capabilité | Criticité |
 |------------|-----------|
-| CAP-03 — Qualité, sécurité et amélioration continue | Critique pour VS-01 et VS-04 |
-| CAP-07 — Protection financière et CSU | Prioritaire pour VS-03 |
-| CAP-02 — Parcours patient, référence et contre-référence | Prioritaire pour la continuité des soins dans VS-01 |
+| CAP-03 : Qualité, sécurité et amélioration continue | Critique pour VS-01 et VS-04 |
+| CAP-07 : Protection financière et CSU | Prioritaire pour VS-03 |
+| CAP-02 : Parcours patient, référence et contre-référence | Prioritaire pour la continuité des soins dans VS-01 |
 
 ## Capabilités d'architecture runway
 
 Quatre capabilités constituent le socle commun dont le développement doit être engagé en priorité, car elles conditionnent la réussite de nombreuses initiatives.
 
-### CAP-13 — Système d'information sanitaire, données et recherche
+### CAP-13 : Système d'information sanitaire, données et recherche
 
 Produit, intègre, contrôle, analyse et utilise les données nécessaires à la décision, la recherche, la redevabilité et l'amélioration continue.
 
 Son absence bloque : le pilotage de la performance, le suivi des bénéfices, l'analyse des inégalités d'accès et de qualité, la surveillance consolidée et la redevabilité.
 
-### CAP-14 — Interopérabilité, référentiels nationaux et infrastructure numérique partagée
+### CAP-14 : Interopérabilité, référentiels nationaux et infrastructure numérique partagée
 
 C'est la capabilité la plus structurante pour la cohérence du système d'information sanitaire : échange de données, référentiels nationaux, identité, terminologies, registres et mécanismes d'intégration.
 
 Son absence bloque : CAP-01 (dossier patient en silo), CAP-05 (surveillance fragmentée), CAP-07 (droits non vérifiables), CAP-13 (entrepôt incomplet).
 
-### CAP-15 — Cybersécurité, confidentialité et gouvernance des données personnelles
+### CAP-15 : Cybersécurité, confidentialité et gouvernance des données personnelles
 
 Conditionne la confiance des patients, agents, partenaires et institutions dans le système d'information sanitaire.
 
 Son absence bloque : CAP-01 (partage du dossier exige une protection forte), CAP-07 (données de vulnérabilité sensibles), CAP-13 (règles d'accès claires), CAP-14 (échange sécurisé et auditable). Sans elle, l'interopérabilité devient un risque au lieu d'être un levier de valeur.
 
-### CAP-16 — Gestion du portefeuille d'initiatives numériques
+### CAP-16 : Gestion du portefeuille d'initiatives numériques
 
 Gouverne les initiatives selon leur contribution réelle aux flux de valeur, et non selon la seule disponibilité de fonds.
 
@@ -76,7 +76,7 @@ Son absence bloque : la priorisation cohérente, l'identification des doublons, 
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
-- **Maturité** — Évaluation de la maturité des capabilités (`00_caesn/03_capabilities/maturity.md`)
-- **Gouvernance** — Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Capabilités** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
+- **Maturité** : Évaluation de la maturité des capabilités (`00_caesn/03_capabilities/maturity.md`)
+- **Gouvernance** : Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)

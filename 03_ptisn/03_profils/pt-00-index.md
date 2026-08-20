@@ -1,5 +1,5 @@
 ---
-title: "Partie III — Profils techniques nationaux"
+title: "Partie III : Profils techniques nationaux"
 id: ptisn-profils
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,12 +9,12 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils"]
 ---
 
-# Partie III — Profils techniques nationaux
+# Partie III : Profils techniques nationaux
 
 Catalogue des 16 profils techniques. Chaque profil est un objet du référentiel (`referentiel/profils/pt-XX.md`) ; les numéros de capacité et de chapitres ART ont été alignés sur le CNISN et l'ARTSN pendant la migration (voir `coherence-report.md`).
 
 <!-- BEGIN:GENERATED mode=table source=referentiel/profils/pt-*.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 | Code | Titre canonique | Rattachement | Statut | Fiche |
 |---|---|---|---|---|

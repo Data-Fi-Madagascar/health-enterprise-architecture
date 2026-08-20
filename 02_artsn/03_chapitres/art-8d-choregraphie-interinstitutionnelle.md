@@ -1,5 +1,5 @@
 ---
-title: "ART-8d — Chorégraphie inter-institutionnelle"
+title: "ART-8d : Chorégraphie inter-institutionnelle"
 id: art-8d
 domain: 02_artsn
 version: "1.0.0"
@@ -10,11 +10,11 @@ tags: [artsn, chapitres, art-8d, niveau-3]
 related: ['cap-int-03']
 ---
 
-# ART-8d — Chorégraphie inter-institutionnelle
+# ART-8d : Chorégraphie inter-institutionnelle
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+**Niveau :** niveau 3 : Architecture de Référence Technique de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -27,10 +27,10 @@ related: ['cap-int-03']
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-ART-8d — Chorégraphie inter-institutionnelle constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-8d`.
+ART-8d : Chorégraphie inter-institutionnelle constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-8d`.
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 **Contenu normatif.** Lorsque l’intégration implique plusieurs ministères co-égaux, l’architecture **proscrit l’orchestration centralisée** et impose un modèle de coordination par messagerie décentralisée. Les systèmes partenaires doivent s’abonner de manière autonome à des files d’événements publics sans qu’aucun nœud n’ait d’autorité informatique sur le système de l’autre (pattern cible : Publication/Abonnement, Pub/Sub).
 
@@ -47,11 +47,11 @@ ART-8d — Chorégraphie inter-institutionnelle constitue un chapitre du **cadre
 ## Liens
 
 - Index des chapitres
-- Exigences contextuelles — Partie III
+- Exigences contextuelles : Partie III
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`art-8d`** — Chorégraphie inter-institutionnelle (`referentiel/chapitres/art-8d.md`)
-- **Index des chapitres** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
-- **Exigences contextuelles — Partie III** — Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
+- **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **`art-8d`** : Chorégraphie inter-institutionnelle (`referentiel/chapitres/art-8d.md`)
+- **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

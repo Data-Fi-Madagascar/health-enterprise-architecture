@@ -1,5 +1,5 @@
 ---
-title: Partie IV — Conformité
+title: Partie IV : Conformité
 id: cnisn-conformite
 domain: 01_cnisn
 version: "1.0.0"
@@ -9,7 +9,7 @@ owner: DEPSI
 tags: ["cnisn", "niveau-2", "interopérabilité", "conformite"]
 ---
 
-# Partie IV — Conformité
+# Partie IV : Conformité
 
 
 ## 1. Profil de conformité d'une initiative

@@ -1,5 +1,5 @@
 ---
-title: "Annexe E — SLA et métriques de performance par profil"
+title: "Annexe E : SLA et métriques de performance par profil"
 id: artsn-sla-performance
 domain: 02_artsn
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: DEPSI
 tags: [artsn, annexe, SLA, performance, métriques, niveau-3]
 ---
 
-# Annexe E — SLA et métriques de performance par profil
+# Annexe E : SLA et métriques de performance par profil
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+**Niveau :** niveau 3 : Architecture de Référence Technique de la Santé Numérique.
 
 La lecture de ce document est **complémentaire** pour les décideurs institutionnels et les directions métier et programmes, et **prioritaire** pour l'équipe DEPSI et ses équipes techniques, les équipes SIS, données et suivi-évaluation, ainsi que les partenaires techniques et financiers. Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle.
 
@@ -45,7 +45,7 @@ Ce document définit les objectifs de niveau de service (SLA) et les métriques 
 
 ## 3. SLA par profil technique
 
-### 3.1 PT-01 — Échange interinstitutionnel
+### 3.1 PT-01 : Échange interinstitutionnel
 
 | Métrique | SLA | Mesure | Seuil d'alerte |
 |----------|-----|--------|----------------|
@@ -53,10 +53,10 @@ Ce document définit les objectifs de niveau de service (SLA) et les métriques 
 | Taux de succès | > 99,5% | Transactions réussies / total | < 99% |
 | Taux de disponibilité | 99,95% | Uptime monthly | < 99,9% |
 | File d'attente max | < 10 000 messages | Messages en attente | > 5 000 |
-| Durée retention message | 72h avant échec | Avant rejet définitif | — |
+| Durée retention message | 72h avant échec | Avant rejet définitif | : |
 | Taux de duplication | < 0,1% | Messages dupliqués | > 0,5% |
 
-### 3.2 PT-02 — Médiation intra-secteur
+### 3.2 PT-02 : Médiation intra-secteur
 
 | Métrique | SLA | Mesure | Seuil d'alerte |
 |----------|-----|--------|----------------|
@@ -66,7 +66,7 @@ Ce document définit les objectifs de niveau de service (SLA) et les métriques 
 | Taux d'erreur mapping | < 2% | Erreurs de conversion | > 5% |
 | Disponibilité | 99,9% | Uptime monthly | < 99,5% |
 
-### 3.3 PT-04 — Résolution d'identité
+### 3.3 PT-04 : Résolution d'identité
 
 | Métrique | SLA | Mesure | Seuil d'alerte |
 |----------|-----|--------|----------------|
@@ -75,9 +75,9 @@ Ce document définit les objectifs de niveau de service (SLA) et les métriques 
 | Taux de matching | > 95% | Résultats corrects / recherches | < 90% |
 | Temps création NIN | < 3s | Depuis soumission | > 5s |
 | Disponibilité | 99,95% | Uptime monthly | < 99,9% |
-| Capacité | > 10 000 créations/jour | Nouveaux NIN | — |
+| Capacité | > 10 000 créations/jour | Nouveaux NIN | : |
 
-### 3.4 PT-07 — Mapping terminologique
+### 3.4 PT-07 : Mapping terminologique
 
 | Métrique | SLA | Mesure | Seuil d'alerte |
 |----------|-----|--------|----------------|
@@ -87,7 +87,7 @@ Ce document définit les objectifs de niveau de service (SLA) et les métriques 
 | Taux d'ambiguïté | < 3% | Codes sans mapping unique | > 5% |
 | Mise à jour référentiel | < 7 jours | Après publication OMS | > 14 jours |
 
-### 3.5 PT-08 — Échange données agrégées
+### 3.5 PT-08 : Échange données agrégées
 
 | Métrique | SLA | Mesure | Seuil d'alerte |
 |----------|-----|--------|----------------|
@@ -97,7 +97,7 @@ Ce document définit les objectifs de niveau de service (SLA) et les métriques 
 | Volume | > 500 rapports/semaine | Rapports traités | < 200 |
 | Disponibilité | 99,9% | Uptime monthly | < 99,5% |
 
-### 3.6 PT-09 — Analytique et dashboards
+### 3.6 PT-09 : Analytique et dashboards
 
 | Métrique | SLA | Mesure | Seuil d'alerte |
 |----------|-----|--------|----------------|
@@ -107,18 +107,18 @@ Ce document définit les objectifs de niveau de service (SLA) et les métriques 
 | Capacité utilisateur | > 500 utilisateurs simultanés | Sessions concourantes | < 200 |
 | Taux d'erreur calcul | < 0,1% | Indicateurs erronés | > 0,5% |
 
-### 3.7 PT-10 — Confiance et autorisation
+### 3.7 PT-10 : Confiance et autorisation
 
 | Métrique | SLA | Mesure | Seuil d'alerte |
 |----------|-----|--------|----------------|
 | Temps authentification | < 500ms (P95) | Login → jeton | > 1s |
 | Temps autorisation | < 100ms | Vérification RBAC | > 200ms |
 | Taux d'échec auth | < 1% | Tentatives échouées / total | > 3% |
-| Durée jeton | 8h | Expiration | — |
+| Durée jeton | 8h | Expiration | : |
 | Temps révocation | < 30s | Révocation effective | > 60s |
 | Journalisation | 100% | Événements tracés | < 99,9% |
 
-### 3.8 PT-11 — Consentement
+### 3.8 PT-11 : Consentement
 
 | Métrique | SLA | Mesure | Seuil d'alerte |
 |----------|-----|--------|----------------|
@@ -128,17 +128,17 @@ Ce document définit les objectifs de niveau de service (SLA) et les métriques 
 | Notification consent | < 5min | Patient notifié | > 15min |
 | Journalisation | 100% | Opérations tracées | < 99,9% |
 
-### 3.9 PT-12 — Audit et traçabilité
+### 3.9 PT-12 : Audit et traçabilité
 
 | Métrique | SLA | Mesure | Seuil d'alerte |
 |----------|-----|--------|----------------|
 | Couverture événements | 100% | Événements tracés | < 99,9% |
 | Latence écriture | < 100ms | Écriture audit | > 200ms |
-| Rétention | 5 ans minimum | Conservation logs | — |
+| Rétention | 5 ans minimum | Conservation logs | : |
 | Requête audit | < 3s | Recherche dans les logs | > 10s |
-| Immutabilité | 100% | Logs non modifiables | — |
+| Immutabilité | 100% | Logs non modifiables | : |
 
-### 3.10 PT-14 — Interopérabilité transfrontalière
+### 3.10 PT-14 : Interopérabilité transfrontalière
 
 | Métrique | SLA | Mesure | Seuil d'alerte |
 |----------|-----|--------|----------------|
@@ -148,7 +148,7 @@ Ce document définit les objectifs de niveau de service (SLA) et les métriques 
 | Taux succès échange | > 99% | IPS échangés avec succès | < 98% |
 | Disponibilité GDHCN | 99,99% | Uptime Trust Anchor | < 99,9% |
 
-### 3.11 PT-15 — Surveillance One Health
+### 3.11 PT-15 : Surveillance One Health
 
 | Métrique | SLA | Mesure | Seuil d'alerte |
 |----------|-----|--------|----------------|
@@ -215,10 +215,10 @@ Ce document définit les objectifs de niveau de service (SLA) et les métriques 
 
 | Niveau | Couleur | Temps de réponse | Exemple |
 |--------|---------|------------------|---------|
-| **P1 — Critique** | Rouge | < 15min | Service indisponible, faille sécurité |
-| **P2 — Majeur** | Orange | < 1h | Dégradation performance, erreurs > 5% |
-| **P3 — Mineur** | Jaune | < 4h | Avertissement, tendance dégradante |
-| **P4 — Info** | Bleu | Quotidien | Information, tendance positive |
+| **P1 : Critique** | Rouge | < 15min | Service indisponible, faille sécurité |
+| **P2 : Majeur** | Orange | < 1h | Dégradation performance, erreurs > 5% |
+| **P3 : Mineur** | Jaune | < 4h | Avertissement, tendance dégradante |
+| **P4 : Info** | Bleu | Quotidien | Information, tendance positive |
 
 ### 5.3 Canaux de notification
 
@@ -252,11 +252,11 @@ Ce document définit les objectifs de niveau de service (SLA) et les métriques 
 
 ## Liens
 
-Les liens utiles pour approfondir ce document sont les suivants : le chapitre ART-7 — Sécurité, contrôle d'accès et résidence, le Protocole de test, la Feuille de route et le Plan de migration.
+Les liens utiles pour approfondir ce document sont les suivants : le chapitre ART-7 : Sécurité, contrôle d'accès et résidence, le Protocole de test, la Feuille de route et le Plan de migration.
 
 ## Références
 
-- **ART-7 — Sécurité, contrôle d'accès et résidence** — Sécurité, contrôle d'accès et résidence de la donnée (`referentiel/chapitres/art-7.md`)
-- **Protocole de test** — Annexe D — Protocole de test d'interopérabilité (`02_artsn/07_annexes/d-protocole-test-interopabilite.md`)
-- **Feuille de route** — Feuille de route de déploiement progressif de l'ARTSN (`02_artsn/09_feuille-route/index.md`)
-- **Plan de migration** — Plan de migration — De l'existant au futur état (`00_caesn/06_portfolio/migration-existant.md`)
+- **ART-7 : Sécurité, contrôle d'accès et résidence** : Sécurité, contrôle d'accès et résidence de la donnée (`referentiel/chapitres/art-7.md`)
+- **Protocole de test** : Annexe D : Protocole de test d'interopérabilité (`02_artsn/07_annexes/d-protocole-test-interopabilite.md`)
+- **Feuille de route** : Feuille de route de déploiement progressif de l'ARTSN (`02_artsn/09_feuille-route/index.md`)
+- **Plan de migration** : Plan de migration : De l'existant au futur état (`00_caesn/06_portfolio/migration-existant.md`)

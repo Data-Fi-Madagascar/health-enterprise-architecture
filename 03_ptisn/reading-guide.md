@@ -13,7 +13,7 @@ tags: [ptisn, lecture, niveau-4, guide]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 4 — Profils techniques d'implémentation de la Santé Numérique.
+**Niveau :** niveau 4 : Profils techniques d'implémentation de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -101,7 +101,7 @@ Chaque standard, profil ou produit porte l'un des statuts suivants, qui indiquen
 |--------|-----------------|
 | **À instruire** | Besoin identifié, pas encore de solution |
 | **Candidat** | En évaluation |
-| **Recommandé** | Nouvelles initiatives — privilégier |
+| **Recommandé** | Nouvelles initiatives : privilégier |
 | **Retenu pour pilote** | Expérimentation en cours |
 | **Retenu nationalement** | Choix validé pour le pays |
 | **Homologué** | Conformité démontrée |
@@ -114,11 +114,11 @@ Le PTISN s'articule avec les trois niveaux supérieurs de la hiérarchie documen
 
 | Niveau | Document | Lien |
 |--------|----------|------|
-| 1 — CAESN | Cadre d'Architecture d'Entreprise | ../00_caesn/00_overview/index.md |
-| 2 — CNISN | Cadre National d'Interopérabilité | ../01_cnisn/index.md |
-| 3 — ARTSN | Architecture de Référence Technique | ../02_artsn/index.md |
-| — | Portefeuille national d'initiatives | ../00_caesn/06_portfolio/index.md |
-| — | Référentiel des profils | ../referentiel/profils/ |
+| 1 : CAESN | Cadre d'Architecture d'Entreprise | ../00_caesn/00_overview/index.md |
+| 2 : CNISN | Cadre National d'Interopérabilité | ../01_cnisn/index.md |
+| 3 : ARTSN | Architecture de Référence Technique | ../02_artsn/index.md |
+| : | Portefeuille national d'initiatives | ../00_caesn/06_portfolio/index.md |
+| : | Référentiel des profils | ../referentiel/profils/ |
 
 ## 7. Documents complémentaires
 
@@ -126,30 +126,30 @@ Trois documents complémentaires accompagnent ce guide de lecture. La matrice de
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
-- **Préambule** — Préambule du PTISN (`03_ptisn/00_introduction/index.md`)
-- **Règles d'utilisation** — Partie I — Règles d'utilisation du PTISN (`03_ptisn/01_regles-utilisation/index.md`)
-- **Topologie nationale cible** — Partie II — Topologie nationale cible (`03_ptisn/02_topologie-nationale-cible/index.md`)
-- **Matrice d'alignement** — Partie IV — Matrice d'alignement (`03_ptisn/04_matrice-alignement/index.md`)
-- **Profil d'initiative** — Partie V — Profil technique d'une initiative (`03_ptisn/05_profil-initiative/index.md`)
-- **Gouvernance** — Partie VI — Gouvernance du PTISN (`03_ptisn/06_gouvernance/index.md`)
-- **Conclusion** — Conclusion du PTISN (`03_ptisn/07_conclusion/index.md`)
-- **PT-01** — Profil technique national (`03_ptisn/03_profils/pt-01-echange-interinstitutionnel.md`)
-- **PT-02** — Profil technique national (`03_ptisn/03_profils/pt-02-mediation-intra-secteur.md`)
-- **PT-03** — Profil technique national (`03_ptisn/03_profils/pt-03-catalogue-services-registre-contrats.md`)
-- **PT-04** — Profil technique national (`03_ptisn/03_profils/pt-04-resolution-identite-beneficiaire.md`)
-- **PT-05** — Profil technique national (`03_ptisn/03_profils/pt-05-registre-professionnels.md`)
-- **PT-06** — Profil technique national (`03_ptisn/03_profils/pt-06-referentiel-structures-services.md`)
-- **PT-07** — Profil technique national (`03_ptisn/03_profils/pt-07-terminologie-codification.md`)
-- **PT-08** — Profil technique national (`03_ptisn/03_profils/pt-08-echange-donnees-agregees.md`)
-- **PT-09** — Profil technique national (`03_ptisn/03_profils/pt-09-analytique-exposition-donnees.md`)
-- **PT-10** — Profil technique national (`03_ptisn/03_profils/pt-10-confiance-authentification-autorisation.md`)
-- **PT-11** — Profil technique national (`03_ptisn/03_profils/pt-11-consentement-bases-autorisation.md`)
-- **PT-12** — Profil technique national (`03_ptisn/03_profils/pt-12-audit-provenance-traçabilité.md`)
-- **PT-13** — Profil technique national (`03_ptisn/03_profils/pt-13-qualite-reconciliation.md`)
-- **../00_caesn/00_overview/index.md** — Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
-- **../01_cnisn/index.md** — Cadre National d'Interopérabilité de la Santé Numérique (CNISN) (`01_cnisn/index.md`)
-- **../02_artsn/index.md** — Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
-- **../00_caesn/06_portfolio/index.md** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
-- **glossaire du PTISN** — Glossaire du PTISN (niveau 4) (`03_ptisn/glossary.md`)
-- **liste des acronymes du PTISN** — Acronymes et abréviations du PTISN (niveau 4) (`03_ptisn/acronyms.md`)
+- **matrice de lecture** : Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
+- **Préambule** : Préambule du PTISN (`03_ptisn/00_introduction/index.md`)
+- **Règles d'utilisation** : Partie I : Règles d'utilisation du PTISN (`03_ptisn/01_regles-utilisation/index.md`)
+- **Topologie nationale cible** : Partie II : Topologie nationale cible (`03_ptisn/02_topologie-nationale-cible/index.md`)
+- **Matrice d'alignement** : Partie IV : Matrice d'alignement (`03_ptisn/04_matrice-alignement/index.md`)
+- **Profil d'initiative** : Partie V : Profil technique d'une initiative (`03_ptisn/05_profil-initiative/index.md`)
+- **Gouvernance** : Partie VI : Gouvernance du PTISN (`03_ptisn/06_gouvernance/index.md`)
+- **Conclusion** : Conclusion du PTISN (`03_ptisn/07_conclusion/index.md`)
+- **PT-01** : Profil technique national (`03_ptisn/03_profils/pt-01-echange-interinstitutionnel.md`)
+- **PT-02** : Profil technique national (`03_ptisn/03_profils/pt-02-mediation-intra-secteur.md`)
+- **PT-03** : Profil technique national (`03_ptisn/03_profils/pt-03-catalogue-services-registre-contrats.md`)
+- **PT-04** : Profil technique national (`03_ptisn/03_profils/pt-04-resolution-identite-beneficiaire.md`)
+- **PT-05** : Profil technique national (`03_ptisn/03_profils/pt-05-registre-professionnels.md`)
+- **PT-06** : Profil technique national (`03_ptisn/03_profils/pt-06-referentiel-structures-services.md`)
+- **PT-07** : Profil technique national (`03_ptisn/03_profils/pt-07-terminologie-codification.md`)
+- **PT-08** : Profil technique national (`03_ptisn/03_profils/pt-08-echange-donnees-agregees.md`)
+- **PT-09** : Profil technique national (`03_ptisn/03_profils/pt-09-analytique-exposition-donnees.md`)
+- **PT-10** : Profil technique national (`03_ptisn/03_profils/pt-10-confiance-authentification-autorisation.md`)
+- **PT-11** : Profil technique national (`03_ptisn/03_profils/pt-11-consentement-bases-autorisation.md`)
+- **PT-12** : Profil technique national (`03_ptisn/03_profils/pt-12-audit-provenance-traçabilité.md`)
+- **PT-13** : Profil technique national (`03_ptisn/03_profils/pt-13-qualite-reconciliation.md`)
+- **../00_caesn/00_overview/index.md** : Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
+- **../01_cnisn/index.md** : Cadre National d'Interopérabilité de la Santé Numérique (CNISN) (`01_cnisn/index.md`)
+- **../02_artsn/index.md** : Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
+- **../00_caesn/06_portfolio/index.md** : Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
+- **glossaire du PTISN** : Glossaire du PTISN (niveau 4) (`03_ptisn/glossary.md`)
+- **liste des acronymes du PTISN** : Acronymes et abréviations du PTISN (niveau 4) (`03_ptisn/acronyms.md`)

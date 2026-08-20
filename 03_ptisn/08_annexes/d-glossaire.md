@@ -1,5 +1,5 @@
 ---
-title: Annexe D — Glossaire
+title: Annexe D : Glossaire
 id: ptisn-annexe-d
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,7 +9,7 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "annexes"]
 ---
 
-# Annexe D — Glossaire
+# Annexe D : Glossaire
 
 Le glossaire ci-dessous définit les termes techniques et conceptuels utilisés dans le PTISN. Chaque définition précise le sens retenu dans le cadre de ce document pour lever les ambiguïtés éventuelles.
 

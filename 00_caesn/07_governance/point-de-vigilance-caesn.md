@@ -1,5 +1,5 @@
 ---
-title: Point de vigilance CAESN — capacité et référentiel manquants pour la coordination intersectorielle (One Health)
+title: Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health)
 id: point-de-vigilance-caesn
 domain: 07_governance
 version: "1.0.0"
@@ -9,11 +9,11 @@ owner: Comité National d'Architecture Santé Numérique
 tags: [gouvernance, vigilance, one-health, capabilites, identitovigilance]
 ---
 
-# Point de vigilance CAESN — capacité et référentiel manquants pour la coordination intersectorielle (One Health)
+# Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health)
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -29,32 +29,32 @@ Cette note est destinée à l'instance de gouvernance du CAESN. Elle documente l
 
 ## Contexte
 
-Le document source de l'ARTSN décrit le CAESN comme comportant **18 principes (P-01 à P-18)** et **17 capacités** (dont « CAP-04bis — Engagement patient et identitovigilance »). Le CAESN en vigueur dans ce dépôt recense pour l'instant :
+Le document source de l'ARTSN décrit le CAESN comme comportant **18 principes (P-01 à P-18)** et **17 capacités** (dont « CAP-04bis : Engagement patient et identitovigilance »). Le CAESN en vigueur dans ce dépôt recense pour l'instant :
 
 - **12 principes transversaux** (PA-01 à PA-12) + **principes de domaine** (PD-VS01 à PD-VS04) ;
 - **16 capabilités** CAP-01 à CAP-16, dans lesquelles CAP-04 est « Santé communautaire et engagement des communautés ».
 
 ## Écarts identifiés
 
-### Écart 1 — CAP-04bis « Engagement patient et identitovigilance »
+### Écart 1 : CAP-04bis « Engagement patient et identitovigilance »
 
 L'ARTSN rattache ART-4a (résolution d'identité) et ART-4b (bases d'autorisation) à une capabilité **CAP-04bis « Engagement patient et identitovigilance »**. Le catalogue CAESN ne comporte pas cette capabilité : CAP-04 est « Santé communautaire », et aucune capabilité ne couvre explicitement l'identitovigilance probabilitique ni l'engagement du patient dans le système numérique.
 
 **Impact pour l'ARTSN** : l'Architecture de référence technique suppose une capabilité absente du CAESN. La promotion des chapitres 4a/4b vers un statut Stable exige au préalable l'arbitrage de cette capabilité.
 
-## Écart 2 — Capacité candidate « Coordination intersectorielle »
+## Écart 2 : Capacité candidate « Coordination intersectorielle »
 
 L'ARTSN rattache ART-0 (accords de partage inter-institutionnels) et ART-8d (chorégraphie inter-institutionnelle) à une **capacité candidate « Coordination intersectorielle »** (One Health), absente du catalogue CAP-01..16.
 
-### Écart 3 — Référentiel normatif « Tripartite Plus » (OMS-WOAH-FAO-PNUE, RSI)
+### Écart 3 : Référentiel normatif « Tripartite Plus » (OMS-WOAH-FAO-PNUE, RSI)
 
 La coordination intersectorielle s'appuie sur un référentiel normatif international : **Tripartite Plus OMS–WOAH–FAO–PNUE** et le **Règlement Sanitaire International (RSI)**. Ce référentiel n'est pas intégré au registre des normes du CAESN, alors qu'il conditionne la surveillance épidémique conjointe (ENF-4).
 
-### Écart 4 — Capacité candidate « Surveillance spatio-temporelle »
+### Écart 4 : Capacité candidate « Surveillance spatio-temporelle »
 
 ART-4d (référentiel géospatial et d'exploitation partagé) est rattaché à une capacité candidate « Surveillance spatio-temporelle » absente du catalogue, nécessaire au cloisonnement One Health.
 
-### Écart 5 — Compte des principes : 18 dans le document source vs PA+PD dans le catalogue
+### Écart 5 : Compte des principes : 18 dans le document source vs PA+PD dans le catalogue
 
 Le document source annonce **18 principes (P-01 à P-18)** ; le catalogue en vigueur structure les principes en **12 transversaux (PA)** + **principes de domaine (PD) par flux**. L'écart peut être une différence de numérotation (vote de la nomenclature) ou un périmètre réel à trancher : faut-il ajouter des principes transversaux, ou aligner la nomenclature du document source sur le CAESN ?
 
@@ -76,28 +76,28 @@ Lorsqu'une décision D-1 à D-5 entre en instruction, elle fait l'objet d'un ADR
 
 ## Liens
 
-- CAESN — capabilités
-- CAESN — normes et standards
-- CAESN — registre des ADR
-- ARTSN — Annexe C (renvoi CAESN)
-- ARTSN — chapitres ART-0, 4a, 4b, 4d, 8d
+- CAESN : capabilités
+- CAESN : normes et standards
+- CAESN : registre des ADR
+- ARTSN : Annexe C (renvoi CAESN)
+- ARTSN : chapitres ART-0, 4a, 4b, 4d, 8d
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **CAESN** — Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
-- **ARTSN** — Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
-- **ART-4a (résolution d'identité)** — Résolution d'identité (`referentiel/chapitres/art-4a.md`)
-- **ART-4b (bases d'autorisation)** — Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
-- **ART-0 (accords de partage inter-institutionnels)** — Accords de partage inter-institutionnels (`referentiel/chapitres/art-0.md`)
-- **ART-8d (chorégraphie inter-institutionnelle)** — Chorégraphie inter-institutionnelle (`referentiel/chapitres/art-8d.md`)
-- **registre des normes** — Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
-- **ART-4d (référentiel géospatial et d'exploitation partagé)** — Référentiel géospatial et d'exploitation partagé (`referentiel/chapitres/art-4d.md`)
-- **gouvernance** — Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
-- **Annexe C de l'ARTSN** — Annexe C — Renvoi CAESN et capacités candidates (`02_artsn/07_annexes/c-renvoi-capacites-candidates.md`)
-- **ADR (Architecture Decision Record)** — Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
-- **CAESN — capabilités** — Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
-- **CAESN — normes et standards** — Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
-- **CAESN — registre des ADR** — Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
-- **ARTSN — Annexe C (renvoi CAESN)** — Annexe C — Renvoi CAESN et capacités candidates (`02_artsn/07_annexes/c-renvoi-capacites-candidates.md`)
-- **ARTSN — chapitres ART-0, 4a, 4b, 4d, 8d** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **CAESN** : Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
+- **ARTSN** : Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
+- **ART-4a (résolution d'identité)** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
+- **ART-4b (bases d'autorisation)** : Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
+- **ART-0 (accords de partage inter-institutionnels)** : Accords de partage inter-institutionnels (`referentiel/chapitres/art-0.md`)
+- **ART-8d (chorégraphie inter-institutionnelle)** : Chorégraphie inter-institutionnelle (`referentiel/chapitres/art-8d.md`)
+- **registre des normes** : Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
+- **ART-4d (référentiel géospatial et d'exploitation partagé)** : Référentiel géospatial et d'exploitation partagé (`referentiel/chapitres/art-4d.md`)
+- **gouvernance** : Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
+- **Annexe C de l'ARTSN** : Annexe C : Renvoi CAESN et capacités candidates (`02_artsn/07_annexes/c-renvoi-capacites-candidates.md`)
+- **ADR (Architecture Decision Record)** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
+- **CAESN : capabilités** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
+- **CAESN : normes et standards** : Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
+- **CAESN : registre des ADR** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
+- **ARTSN : Annexe C (renvoi CAESN)** : Annexe C : Renvoi CAESN et capacités candidates (`02_artsn/07_annexes/c-renvoi-capacites-candidates.md`)
+- **ARTSN : chapitres ART-0, 4a, 4b, 4d, 8d** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)

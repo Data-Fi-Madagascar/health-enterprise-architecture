@@ -1,5 +1,5 @@
 ---
-title: "Partie II — Capacités nationales requises"
+title: "Partie II : Capacités nationales requises"
 id: cnisn-capacites
 domain: 01_cnisn
 version: "1.0.0"
@@ -9,7 +9,7 @@ owner: DEPSI
 tags: ["cnisn", "niveau-2", "interopérabilité", "capacites"]
 ---
 
-# Partie II — Capacités nationales requises
+# Partie II : Capacités nationales requises
 
 Les capacités suivantes opérationnalisent les principes du CNISN.
 
@@ -19,7 +19,7 @@ Ce catalogue référence les 14 capacités. Le texte de référence de chaque ca
 
 ## Catalogue des capacités
 
-Les 14 capacités sont regroupées en sept familles de réponse, calquées sur les réponses architecturales de l'ARTSN (couches 3 à 6, axes et extensions transfrontalière et intersectorielle de la cartographie cible — voir annexe B).
+Les 14 capacités sont regroupées en sept familles de réponse, calquées sur les réponses architecturales de l'ARTSN (couches 3 à 6, axes et extensions transfrontalière et intersectorielle de la cartographie cible : voir annexe B).
 
 | Famille | Capacités |
 |---|---|
@@ -33,12 +33,12 @@ Les 14 capacités sont regroupées en sept familles de réponse, calquées sur l
 
 Chaque entrée liste les principes associés via le référentiel.
 
-## Famille 1 — Référentiels et identités
+## Famille 1 : Référentiels et identités
 
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-01.md,referentiel/capacites/cap-int-02.md,referentiel/capacites/cap-int-04.md,referentiel/capacites/cap-int-05.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### CAP-INT-01 — Résolution d’identité du bénéficiaire
+### CAP-INT-01 : Résolution d’identité du bénéficiaire
 
 #### Finalité
 
@@ -68,7 +68,7 @@ P-INT-01 à P-INT-04, P-INT-14 à P-INT-18.
 
 *Rattachement : P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-14, P-INT-15, P-INT-16, P-INT-17, P-INT-18, CAP-02, CAP-14 · fiche CAP-INT-01*
 
-### CAP-INT-02 — Registre et résolution des professionnels de santé
+### CAP-INT-02 : Registre et résolution des professionnels de santé
 
 #### Finalité
 
@@ -100,7 +100,7 @@ P-INT-01 à P-INT-04, P-INT-14 et P-INT-15.
 
 *Rattachement : P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-14, P-INT-15, CAP-09, CAP-14 · fiche CAP-INT-02*
 
-### CAP-INT-04 — Référentiel des structures et services de santé
+### CAP-INT-04 : Référentiel des structures et services de santé
 
 #### Finalité
 
@@ -131,7 +131,7 @@ P-INT-01 à P-INT-04.
 
 *Rattachement : P-INT-01, P-INT-02, P-INT-03, P-INT-04, CAP-11, CAP-13, CAP-14 · fiche CAP-INT-04*
 
-### CAP-INT-05 — Terminologie et codification communes
+### CAP-INT-05 : Terminologie et codification communes
 
 #### Finalité
 
@@ -157,12 +157,12 @@ P-INT-01 à P-INT-06.
 
 <!-- END:GENERATED -->
 
-## Famille 2 — Échange, médiation et contractualisation
+## Famille 2 : Échange, médiation et contractualisation
 
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-03.md,referentiel/capacites/cap-int-06.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### CAP-INT-03 — Échange et médiation inter-systèmes
+### CAP-INT-03 : Échange et médiation inter-systèmes
 
 #### Finalité
 
@@ -189,7 +189,7 @@ P-INT-05 à P-INT-13, P-INT-18 à P-INT-25.
 
 *Rattachement : P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-10, P-INT-11, P-INT-12, P-INT-13, P-INT-18, P-INT-19, P-INT-20, P-INT-21, P-INT-22, P-INT-23, P-INT-24, P-INT-25, CAP-13, CAP-14 · fiche CAP-INT-03*
 
-### CAP-INT-06 — Catalogue des services et registre des contrats
+### CAP-INT-06 : Catalogue des services et registre des contrats
 
 #### Finalité
 
@@ -224,12 +224,12 @@ P-INT-05 à P-INT-09, P-INT-23 à P-INT-25.
 
 <!-- END:GENERATED -->
 
-## Famille 3 — Données analytiques et exposition
+## Famille 3 : Données analytiques et exposition
 
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-07.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### CAP-INT-07 — Accès et exposition des données analytiques
+### CAP-INT-07 : Accès et exposition des données analytiques
 
 #### Finalité
 
@@ -260,12 +260,12 @@ P-INT-05 à P-INT-09, P-INT-17 à P-INT-25.
 
 <!-- END:GENERATED -->
 
-## Famille 4 — Confiance, sécurité et autorisation
+## Famille 4 : Confiance, sécurité et autorisation
 
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-08.md,referentiel/capacites/cap-int-09.md,referentiel/capacites/cap-int-10.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### CAP-INT-08 — Confiance, sécurité et autorisation
+### CAP-INT-08 : Confiance, sécurité et autorisation
 
 #### Finalité
 
@@ -291,7 +291,7 @@ P-INT-14 à P-INT-20.
 
 *Rattachement : P-INT-14, P-INT-15, P-INT-16, P-INT-17, P-INT-18, P-INT-19, P-INT-20, CAP-15 · fiche CAP-INT-08*
 
-### CAP-INT-09 — Gestion des consentements et bases d’autorisation
+### CAP-INT-09 : Gestion des consentements et bases d’autorisation
 
 #### Finalité
 
@@ -319,7 +319,7 @@ P-INT-14 à P-INT-17.
 
 *Rattachement : P-INT-14, P-INT-15, P-INT-16, P-INT-17, CAP-15 · fiche CAP-INT-09*
 
-### CAP-INT-10 — Provenance, audit et traçabilité
+### CAP-INT-10 : Provenance, audit et traçabilité
 
 #### Finalité
 
@@ -349,12 +349,12 @@ P-INT-07, P-INT-17, P-INT-18 et P-INT-23.
 
 <!-- END:GENERATED -->
 
-## Famille 5 — Qualité et conformité
+## Famille 5 : Qualité et conformité
 
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-11.md,referentiel/capacites/cap-int-12.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### CAP-INT-11 — Qualité et réconciliation
+### CAP-INT-11 : Qualité et réconciliation
 
 #### Finalité
 
@@ -378,7 +378,7 @@ P-INT-01 à P-INT-09, P-INT-23 à P-INT-25.
 
 *Rattachement : P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-23, P-INT-24, P-INT-25, CAP-13, CAP-14 · fiche CAP-INT-11*
 
-### CAP-INT-12 — Conformité et tests d’interopérabilité
+### CAP-INT-12 : Conformité et tests d’interopérabilité
 
 #### Finalité
 
@@ -409,12 +409,12 @@ La conformité ne se traduit pas par un service exposé mais par un **processus 
 
 <!-- END:GENERATED -->
 
-## Famille 6 — Interopérabilité transfrontalière
+## Famille 6 : Interopérabilité transfrontalière
 
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-13.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### CAP-INT-13 — Interopérabilité transfrontalière et confiance internationale
+### CAP-INT-13 : Interopérabilité transfrontalière et confiance internationale
 
 #### Finalité
 
@@ -505,21 +505,21 @@ Madagascar est membre de l'Union Africaine (UA), de la Commission Économique de
 #### Rattachement
 
 - CAP-15 (Sécurité, contrôle d'accès et résidence)
-- CAP-18 (Coordination intersectorielle — One Health)
+- CAP-18 (Coordination intersectorielle : One Health)
 - ART-7 (Sécurité, contrôle d'accès et résidence)
 - ART-0 (Accords de partage inter-institutionnels)
-- PT-14 (Profil technique transfrontalier — IPS)
+- PT-14 (Profil technique transfrontalier : IPS)
 
 *Rattachement : P-INT-01, P-INT-05, P-INT-10, P-INT-14, P-INT-16, P-INT-17, P-INT-19, CAP-15 · fiche CAP-INT-13*
 
 <!-- END:GENERATED -->
 
-## Famille 7 — Échanges intersectoriels One Health
+## Famille 7 : Échanges intersectoriels One Health
 
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-14.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### CAP-INT-14 — Échanges intersectoriels One Health
+### CAP-INT-14 : Échanges intersectoriels One Health
 
 #### Finalité
 
@@ -599,7 +599,7 @@ Les secteurs concernés :
 
 #### Rattachement
 
-- CAP-18 (Coordination intersectorielle — One Health)
+- CAP-18 (Coordination intersectorielle : One Health)
 - CAP-05 (Surveillance épidémiologique)
 - ART-11 (Coordination intersectorielle)
 - ART-0 (Accords de partage inter-institutionnels)
@@ -613,4 +613,4 @@ Les secteurs concernés :
 
 ## Références
 
-- **annexe B** — Annexe B — Articulation avec l'ARTSN (`01_cnisn/08_annexes/b-articulation-art-sn.md`)
+- **annexe B** : Annexe B : Articulation avec l'ARTSN (`01_cnisn/08_annexes/b-articulation-art-sn.md`)

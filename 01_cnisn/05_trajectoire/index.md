@@ -1,5 +1,5 @@
 ---
-title: Partie V — Trajectoire de mise en œuvre
+title: Partie V : Trajectoire de mise en œuvre
 id: cnisn-trajectoire
 domain: 01_cnisn
 version: "1.0.0"
@@ -9,7 +9,7 @@ owner: DEPSI
 tags: ["cnisn", "niveau-2", "interopérabilité", "trajectoire"]
 ---
 
-# Partie V — Trajectoire de mise en œuvre
+# Partie V : Trajectoire de mise en œuvre
 
 ## Vue d'ensemble
 
@@ -17,17 +17,17 @@ La mise en œuvre du CNISN s'articule en sept phases successives couvrant la pé
 
 | Phase | Intitulé | Période | Jalons clés |
 |-------|----------|---------|-------------|
-| **1** | Gouvernance et inventaire | T4 2026 — T1 2027 | CNASN opérationnel, inventaires complets |
-| **2** | Services fondamentaux | T2 2027 — T3 2027 | 6 services fondamentaux déployés |
-| **3** | Identités fonctionnelles | T4 2027 — T1 2028 | Identité bénéficiaire opérationnelle |
-| **4** | Échanges prioritaires | T2 2028 — T3 2028 | 6 flux d'échanges interopérables |
-| **5** | Industrialisation | T4 2028 — T2 2029 | Homologation et conformité |
-| **6** | Interopérabilité transfrontalière | T3 2029 — T4 2029 | GDHCN opérationnel, accords bilatéraux |
-| **7** | Coordination One Health | T1 2030 — T2 2030 | Flux intersectoriels opérationnels, PT-15 déployé |
+| **1** | Gouvernance et inventaire | T4 2026 : T1 2027 | CNASN opérationnel, inventaires complets |
+| **2** | Services fondamentaux | T2 2027 : T3 2027 | 6 services fondamentaux déployés |
+| **3** | Identités fonctionnelles | T4 2027 : T1 2028 | Identité bénéficiaire opérationnelle |
+| **4** | Échanges prioritaires | T2 2028 : T3 2028 | 6 flux d'échanges interopérables |
+| **5** | Industrialisation | T4 2028 : T2 2029 | Homologation et conformité |
+| **6** | Interopérabilité transfrontalière | T3 2029 : T4 2029 | GDHCN opérationnel, accords bilatéraux |
+| **7** | Coordination One Health | T1 2030 : T2 2030 | Flux intersectoriels opérationnels, PT-15 déployé |
 
-## Phase 1 — Gouvernance et inventaire
+## Phase 1 : Gouvernance et inventaire
 
-**Période** : T4 2026 — T1 2027 (6 mois)
+**Période** : T4 2026 : T1 2027 (6 mois)
 
 La première phase consiste à établir les fondations de la gouvernance et à réaliser un inventaire complet des systèmes, services, contrats et référentiels existants. Elle comprend la validation du CNISN, la désignation des propriétaires de capacités, l'identification des doublons et des conflits d'autorité.
 
@@ -38,9 +38,9 @@ La première phase consiste à établir les fondations de la gouvernance et à r
 | **J1.3** | T1 2027 | Inventaire des services et contrats complété |
 | **J1.4** | T1 2027 | Propriétaires des données désignés |
 
-## Phase 2 — Services fondamentaux
+## Phase 2 : Services fondamentaux
 
-**Période** : T2 2027 — T3 2027 (6 mois)
+**Période** : T2 2027 : T3 2027 (6 mois)
 
 La deuxième phase déploie les six services fondamentaux du cadre : le catalogue des services, le registre des contrats, le référentiel des structures, le service terminologique, les mécanismes de confiance et sécurité, et les services de qualité et réconciliation.
 
@@ -51,9 +51,9 @@ La deuxième phase déploie les six services fondamentaux du cadre : le catalogu
 | **J2.3** | T3 2027 | Référentiel des structures partagé |
 | **J2.4** | T3 2027 | Service terminologique déployé |
 
-## Phase 3 — Identités fonctionnelles
+## Phase 3 : Identités fonctionnelles
 
-**Période** : T4 2027 — T1 2028 (6 mois)
+**Période** : T4 2027 : T1 2028 (6 mois)
 
 La troisième phase met en place les services d'identité fonctionnelle : l'identité du bénéficiaire, le registre professionnel, le lien avec l'identité fondationnelle, les règles de rapprochement et l'autorisation contextuelle.
 
@@ -64,9 +64,9 @@ La troisième phase met en place les services d'identité fonctionnelle : l'iden
 | **J3.3** | T1 2028 | Règles de rapprochement validées |
 | **J3.4** | T1 2028 | Autorisation contextuelle testée |
 
-## Phase 4 — Échanges prioritaires
+## Phase 4 : Échanges prioritaires
 
-**Période** : T2 2028 — T3 2028 (6 mois)
+**Période** : T2 2028 : T3 2028 (6 mois)
 
 La quatrième phase déploie les échanges prioritaires : les données agrégées via mADX, la surveillance épidémique, les échanges laboratoire en FHIR, la référence et contre-référence, l'évacuation sanitaire, la logistique pharmaceutique et la protection financière.
 
@@ -77,9 +77,9 @@ La quatrième phase déploie les échanges prioritaires : les données agrégée
 | **J4.3** | T3 2028 | Échange laboratoire (FHIR) |
 | **J4.4** | T3 2028 | Référence/contre-référence/évacuation sanitaire déployées |
 
-## Phase 5 — Industrialisation
+## Phase 5 : Industrialisation
 
-**Période** : T4 2028 — T2 2029 (9 mois)
+**Période** : T4 2028 : T2 2029 (9 mois)
 
 La cinquième phase industrialise le cadre through les tests de conformité, le processus d'homologation, la supervision des échanges, la continuité de service, l'amélioration des niveaux de service et la dépréciation des intégrations non conformes.
 
@@ -90,9 +90,9 @@ La cinquième phase industrialise le cadre through les tests de conformité, le 
 | **J5.3** | T1 2029 | Supervision des échanges active |
 | **J5.4** | T2 2029 | Plan de dépréciation des interfaces non conformes |
 
-## Phase 6 — Interopérabilité transfrontalière
+## Phase 6 : Interopérabilité transfrontalière
 
-**Période** : T3 2029 — T4 2029 (6 mois)
+**Période** : T3 2029 : T4 2029 (6 mois)
 
 La sixième phase établit l'interopérabilité transfrontalière through l'adhésion formelle au GDHCN, le déploiement du point de confiance nationale (Trust Anchor), la signature des accords bilatéraux de confiance mutuelle avec les partenaires SADC, UA et OMS AFRO, le déploiement des services d'identification transfrontalière (PT-14), la production et réception de résumés patients (HL7 FHIR IPS), le contrôle de sortie des données et la journalisation des flux transfrontaliers.
 
@@ -105,9 +105,9 @@ La sixième phase établit l'interopérabilité transfrontalière through l'adh�
 | **J6.5** | T4 2029 | PT-14 (Interopérabilité transfrontalière) déployé en mode pilote |
 | **J6.6** | T4 2029 | Service IPS (résumé patient) opérationnel pour échanges SADC |
 
-## Phase 7 — Coordination One Health
+## Phase 7 : Coordination One Health
 
-**Période** : T1 2030 — T2 2030 (6 mois)
+**Période** : T1 2030 : T2 2030 (6 mois)
 
 La septième phase met en place la coordination intersectorielle through le déploiement du profil PT-15 (Surveillance One Health), la signature des accords interministériels de partage de données entre le MSP, le MINAE et le MEEF, le déploiement de la médiation intersectorielle (CIM-10 ↔ OIE ↔ GBIF), l'activation du centre de commande intersectoriel (CMP-02), la corrélation des signaux faibles entre santé humaine, animale et environnement, et les tests de cluster intersectoriel.
 

@@ -13,7 +13,7 @@ tags: [valeur, bénéficiaires, indicateurs]
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -75,87 +75,87 @@ Toute initiative numérique doit démontrer sa contribution à :
 ## Parties prenantes
 
 <!-- BEGIN:GENERATED source=referentiel/parties-prenantes/pp-01.md,referentiel/parties-prenantes/pp-02.md,referentiel/parties-prenantes/pp-03.md,referentiel/parties-prenantes/pp-04.md,referentiel/parties-prenantes/pp-05.md,referentiel/parties-prenantes/pp-06.md,referentiel/parties-prenantes/pp-07.md,referentiel/parties-prenantes/pp-08.md,referentiel/parties-prenantes/pp-09.md,referentiel/parties-prenantes/pp-10.md -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### PP-01 — Patient et usager
+### PP-01 : Patient et usager
 
 #### Valeur attendue
 
 Recevoir des soins accessibles, sûrs, continus et de qualité
 
-*Rattachement : — · fiche PP-01*
+*Rattachement : : · fiche PP-01*
 
-### PP-02 — Ménage et famille
+### PP-02 : Ménage et famille
 
 #### Valeur attendue
 
 Accéder aux soins sans appauvrissement ni dépenses catastrophiques
 
-*Rattachement : — · fiche PP-02*
+*Rattachement : : · fiche PP-02*
 
-### PP-03 — Population
+### PP-03 : Population
 
 #### Valeur attendue
 
 Être protégée contre les maladies, épidémies et urgences sanitaires
 
-*Rattachement : — · fiche PP-03*
+*Rattachement : : · fiche PP-03*
 
-### PP-04 — Communauté
+### PP-04 : Communauté
 
 #### Valeur attendue
 
 Participer à la santé et accéder à des services de proximité
 
-*Rattachement : — · fiche PP-04*
+*Rattachement : : · fiche PP-04*
 
-### PP-05 — Agent de santé
+### PP-05 : Agent de santé
 
 #### Valeur attendue
 
 Disposer des ressources, compétences, outils et informations nécessaires
 
-*Rattachement : — · fiche PP-05*
+*Rattachement : : · fiche PP-05*
 
-### PP-06 — Formation sanitaire
+### PP-06 : Formation sanitaire
 
 #### Valeur attendue
 
 Avoir les intrants, ressources humaines, équipements et données nécessaires
 
-*Rattachement : — · fiche PP-06*
+*Rattachement : : · fiche PP-06*
 
-### PP-07 — District, région et Ministère
+### PP-07 : District, région et Ministère
 
 #### Valeur attendue
 
 Piloter, coordonner et améliorer la performance sur la base de données fiables
 
-*Rattachement : — · fiche PP-07*
+*Rattachement : : · fiche PP-07*
 
-### PP-08 — Partenaires techniques et financiers
+### PP-08 : Partenaires techniques et financiers
 
 #### Valeur attendue
 
 Aligner leurs investissements sur les priorités nationales et vérifier les résultats
 
-*Rattachement : — · fiche PP-08*
+*Rattachement : : · fiche PP-08*
 
-### PP-09 — Décideurs institutionnels
+### PP-09 : Décideurs institutionnels
 
 #### Valeur attendue
 
 Définir les priorités, arbitrer les ressources et rendre compte des résultats
 
-*Rattachement : — · fiche PP-09*
+*Rattachement : : · fiche PP-09*
 
-### PP-10 — Équipes techniques (DEPSI / SIS)
+### PP-10 : Équipes techniques (DEPSI / SIS)
 
 #### Valeur attendue
 
 Concevoir, opérer et fiabiliser les systèmes numériques au service des flux de valeur
 
-*Rattachement : — · fiche PP-10*
+*Rattachement : : · fiche PP-10*
 
 <!-- END:GENERATED -->
 ## Liens
@@ -165,6 +165,6 @@ Concevoir, opérer et fiabiliser les systèmes numériques au service des flux d
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Flux de valeur** — Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)
-- **Portefeuille d'initiatives** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Flux de valeur** : Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)
+- **Portefeuille d'initiatives** : Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)

@@ -1,5 +1,5 @@
 ---
-title: "ART-8a — Orchestration de processus borné"
+title: "ART-8a : Orchestration de processus borné"
 id: art-8a
 domain: 02_artsn
 version: "1.0.0"
@@ -10,11 +10,11 @@ tags: [artsn, chapitres, art-8a, niveau-3]
 related: ['cap-int-03']
 ---
 
-# ART-8a — Orchestration de processus borné
+# ART-8a : Orchestration de processus borné
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 3 — Architecture de Référence Technique de la Santé Numérique.
+**Niveau :** niveau 3 : Architecture de Référence Technique de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -27,10 +27,10 @@ related: ['cap-int-03']
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-ART-8a — Orchestration de processus borné constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-8a`.
+ART-8a : Orchestration de processus borné constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-8a`.
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 **Contenu normatif.** Pour tout processus métier distribué, asynchrone et à étapes multiples, l’architecture impose l’utilisation d’un **gestionnaire de transactions longues**. Ce composant doit suivre l’état du parcours, maintenir la cohérence sans verrouiller les bases distantes, et déclencher obligatoirement des transactions d’annulation ou de correction en cas d’échec d’une étape.
 
@@ -47,11 +47,11 @@ ART-8a — Orchestration de processus borné constitue un chapitre du **cadre no
 ## Liens
 
 - Index des chapitres
-- Exigences contextuelles — Partie III
+- Exigences contextuelles : Partie III
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`art-8a`** — Orchestration de processus borné (`referentiel/chapitres/art-8a.md`)
-- **Index des chapitres** — Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
-- **Exigences contextuelles — Partie III** — Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
+- **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **`art-8a`** : Orchestration de processus borné (`referentiel/chapitres/art-8a.md`)
+- **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

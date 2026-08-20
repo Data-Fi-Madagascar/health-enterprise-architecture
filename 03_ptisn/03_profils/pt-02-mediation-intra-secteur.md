@@ -1,5 +1,5 @@
 ---
-title: PT-02 — Profil technique national
+title: PT-02 : Profil technique national
 id: ptisn-pt-02-mediation-intra-secteur
 domain: 03_ptisn
 version: "1.0.0"
@@ -9,22 +9,22 @@ owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "pt-02"]
 ---
 
-# PT-02 — Profil technique national
+# PT-02 : Profil technique national
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ## 1. Capacité CNISN
 
-**CAP-INT-03 — Échange et médiation inter-systèmes**
+**CAP-INT-03 : Échange et médiation inter-systèmes**
 
 ## 2. Chapitres ART applicables
 
-- ART-1 — intégration ;
-- ART-2 — médiation ;
-- ART-5 — qualité et réconciliation ;
-- ART-7 — sécurité ;
-- ART-8 — coordination lorsque applicable.
+- ART-1 : intégration ;
+- ART-2 : médiation ;
+- ART-5 : qualité et réconciliation ;
+- ART-7 : sécurité ;
+- ART-8 : coordination lorsque applicable.
 
 ## 3. Service national
 
