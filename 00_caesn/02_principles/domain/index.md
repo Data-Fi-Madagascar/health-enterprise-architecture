@@ -73,3 +73,12 @@ Une initiative conforme aux principes d'architecture mais qui ne démontre pas s
 - **PD-VS04** : PD-VS-04 : Principes de domaine : piloter, coordonner et améliorer la performance (`00_caesn/02_principles/domain/vs04.md`)
 - **Principes d'architecture** : Principes de domaine par flux de valeur (`00_caesn/02_principles/domain/index.md`)
 - **Flux de valeur** : Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)
+
+## Documents de la section
+
+- [pd-VS-04: PD-VS-04 : Principes de domaine : piloter, coordonner et améliorer la performance](vs04.md)
+- [pd-VS-01: PD-VS-01 : Principes de domaine : accéder à des services de santé essentiels](vs01.md)
+- [pd-VS-02: PD-VS-02 : Principes de domaine : prévenir, détecter et répondre aux risques sanitaires](vs02.md)
+- [pd-VS-03: PD-VS-03 : Principes de domaine : protéger financièrement la population](vs03.md)
+
+<!-- liens-section-auto -->

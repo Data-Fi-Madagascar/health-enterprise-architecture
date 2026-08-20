@@ -95,3 +95,13 @@ Tout partenaire proposant ou finançant une initiative doit : inscrire l'initiat
 - **Portefeuille** : Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
 - **Gouvernance** : Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
 - **Homologation** : Cycle de vie applicatif et critères d'homologation (`00_caesn/05_application/lifecycle.md`)
+
+## Documents de la section
+
+- [prioritization: Critères et score de priorisation des initiatives](prioritization.md)
+- [initiative-card: Fiche standard d'initiative orientée valeur](initiative-card.md)
+- [portfolio: Portefeuille d'initiatives orienté valeur](index.md)
+- [value-chain: Chaîne de valeur d'une initiative](value-chain.md)
+- [caesn-migration: Plan de migration : De l'existant au futur état](migration-existant.md)
+
+<!-- liens-section-auto -->

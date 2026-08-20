@@ -63,3 +63,9 @@ La conformité doit être réévaluée de manière périodique, après une versi
 ## 7. Programme de conformité opérationnel
 
 L'instruction des critères ci-dessus est opérationnalisée par le **programme de conformité** (`programme-conformite.md`), qui définit les tests, les acteurs, les sanctions et le jalon de démarrage.
+
+## Documents de la section
+
+- [cnisn-programme-conformite: Partie IV bis : Programme de conformité opérationnel](programme-conformite.md)
+
+<!-- liens-section-auto -->

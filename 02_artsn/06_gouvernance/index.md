@@ -109,3 +109,11 @@ Voir les documents suivants : Fondations : F.4 (homologation), Table de maturit�
 - **Fondations : F.4 (homologation)** : F.4 : Homologation obligatoire (`referentiel/fondations/f-4.md`)
 - **Table de maturité par chapitre** : Annexe A : Table de maturité par chapitre (`02_artsn/07_annexes/a-table-de-maturite.md`)
 - **CAESN : gouvernance** : Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
+
+## Documents de la section
+
+- [conformite: Tableau de bord de conformité architecturale](conformite.md)
+- [depreciation: Processus de dépréciation des composants](depreciation.md)
+- [veille-architecturale: Veille architecturale](veille-architecturale.md)
+
+<!-- liens-section-auto -->

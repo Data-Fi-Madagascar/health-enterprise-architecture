@@ -69,3 +69,13 @@ Les systèmes opérationnels soutiennent l'action ; les systèmes analytiques so
 - **Capabilités** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
 - **Architecture applicative** : Architecture applicative et systèmes numériques (`00_caesn/05_application/index.md`)
 - **Flux de valeur** : Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)
+
+## Documents de la section
+
+- [data-referentials: Référentiels nationaux](referentials.md)
+- [data-lifecycle: Cycle de vie des données](lifecycle.md)
+- [data-principles: Principes de l'architecture des données](principles.md)
+- [data-governance: Gouvernance, qualité et protection des données](governance.md)
+- [data-domains: Domaines de données prioritaires](domains.md)
+
+<!-- liens-section-auto -->

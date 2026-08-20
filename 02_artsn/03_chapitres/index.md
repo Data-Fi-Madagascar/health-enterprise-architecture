@@ -82,3 +82,28 @@ Les chapitres de cette partie s'inscrivent dans une dépendance avec les Fondati
 - **CAP-08** : Gouvernance institutionnelle, planification, coordination et redevabilité (`referentiel/capabilites/cap-08.md`)
 - **CAP-18** : Coordination intersectorielle (One Health) (`referentiel/capabilites/cap-18.md`)
 - **CAP-INT-14** : CAP-INT-14 : Échanges intersectoriels One Health (`referentiel/capacites/cap-int-14.md`)
+
+## Documents de la section
+
+- [ART-8D: ART-8d : Chorégraphie inter-institutionnelle](art-8d-choregraphie-interinstitutionnelle.md)
+- [ART-8: ART-8 : Orchestration de processus](art-8-orchestration-processus-borne.md)
+- [ART-4D: ART-4d : Référentiel géospatial et d'exploitation partagé](art-4d-referentiel-geospatial.md)
+- [ART-7: ART-7 : Sécurité, contrôle d'accès et résidence de la donnée](art-7-securite-controle-acces.md)
+- [ART-3: ART-3 : Historisation événementielle et profils de déploiement](art-3-historisation-evenementielle.md)
+- [ART-10: ART-10 : Logistique](art-10-logistique.md)
+- [ART-8B: ART-8b : Modélisation de relations en graphe](art-8b-modelisation-graphe.md)
+- [ART-4C: ART-4c : Éligibilité et couverture](art-4c-eligibilite-couverture.md)
+- [ART-5: ART-5 : Cohérence et qualité des données](art-5-coherence-qualite-donnees.md)
+- [ART-0: ART-0 : Accords de partage inter-institutionnels](art-0-accords-partage.md)
+- [ART-4B: ART-4b : Bases d'autorisation](art-4b-bases-autorisation.md)
+- [ART-11: ART-11 : Coordination intersectorielle](art-11-coordination-intersectorielle.md)
+- [ART-8C: ART-8c : Agrégation par lot](art-8c-agregation-par-lot.md)
+- [ART-2: ART-2 : Médiation et normalisation](art-2-mediation-normalisation.md)
+- [ART-4: ART-4 : Référentiels de métadonnées de gestion](art-4-referentiels-metadonnees.md)
+- [ART-6: ART-6 : Analytique et restitution](art-6-analytique-restitution.md)
+- [ART-1: ART-1 : Intégration et ingestion](art-1-integration-ingestion.md)
+- [ART-8A: ART-8a : Orchestration de processus borné](art-8a-orchestration-processus-borne.md)
+- [ART-9: ART-9 : Garanties transactionnelles fortes](art-9-garanties-transactionnelles.md)
+- [ART-4A: ART-4a : Résolution d'identité](art-4a-resolution-identite.md)
+
+<!-- liens-section-auto -->

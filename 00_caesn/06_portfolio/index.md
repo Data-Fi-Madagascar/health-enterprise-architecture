@@ -75,3 +75,13 @@ Il est placé sous la responsabilité du Bureau de Réalisation de la Valeur, en
 - **Modèle de valeur** : Modèle national de valeur (`00_caesn/00_overview/value-model.md`)
 - **Capabilités** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
 - **Gouvernance** : Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
+
+## Documents de la section
+
+- [prioritization: Critères et score de priorisation des initiatives](prioritization.md)
+- [portfolio-governance: Dépendances, revues et règles de gouvernance du portefeuille](governance.md)
+- [initiative-card: Fiche standard d'initiative orientée valeur](initiative-card.md)
+- [value-chain: Chaîne de valeur d'une initiative](value-chain.md)
+- [caesn-migration: Plan de migration : De l'existant au futur état](migration-existant.md)
+
+<!-- liens-section-auto -->

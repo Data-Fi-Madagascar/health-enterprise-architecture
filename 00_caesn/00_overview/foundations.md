@@ -176,3 +176,11 @@ L'intégration de ces technologies fait l'objet d'une veille architecturale perm
 - **GovStack Implementation Playbook** : Initiative mondiale (`https://specs.govstack.global/`)
 - **Fondement légal** : Fondement légal et cadre législatif (`00_caesn/07_governance/fondement-legal.md`)
 - **GDHM** : Global Digital Health Monitor, OMS (`https://www.who.int/teams/digital-health`)
+
+## Documents de la section
+
+- [valeur: Modèle national de valeur](value-model.md)
+- [caesn: Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN)](index.md)
+- [verification-perennite-documents: Vérification de la pérennité : PDSS, SNSD, PSRSIS](verification-perennite.md)
+
+<!-- liens-section-auto -->

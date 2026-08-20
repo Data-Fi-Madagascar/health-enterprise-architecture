@@ -101,3 +101,13 @@ Quatre capabilités constituent le socle commun (architecture runway) dont l'abs
 - **Flux de valeur** : Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)
 - **Portefeuille** : Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
 - **Données** : Architecture des données et de l'information sanitaire (`00_caesn/04_data/index.md`)
+
+## Documents de la section
+
+- [capabilities-business: Capabilités métier de santé](business.md)
+- [capabilities-digital: Capabilités numériques transversales et composants DPI-H](digital.md)
+- [capabilities-maturity: Évaluation de la maturité des capabilités](maturity.md)
+- [capabilities-enabling: Capabilités habilitantes du système](enabling.md)
+- [capabilities-runway: Capabilités critiques et architecture runway](runway.md)
+
+<!-- liens-section-auto -->

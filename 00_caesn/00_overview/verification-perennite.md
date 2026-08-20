@@ -120,3 +120,11 @@ Si le PDSS 2020-2024 est confirmé obsolète sans successeur :
 - **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
 - **Fondements du cadre** : Fondements stratégiques et normatifs (`00_caesn/00_overview/foundations.md`)
 - **Point de vigilance C9** : Analyse de contenu : Synthèse des 4 niveaux (`docs/content-analysis.md`)
+
+## Documents de la section
+
+- [fondements: Fondements stratégiques et normatifs](foundations.md)
+- [valeur: Modèle national de valeur](value-model.md)
+- [caesn: Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN)](index.md)
+
+<!-- liens-section-auto -->

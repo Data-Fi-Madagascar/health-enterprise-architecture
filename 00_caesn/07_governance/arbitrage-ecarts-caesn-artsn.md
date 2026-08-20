@@ -265,3 +265,17 @@ Le document source de l'ARTSN annonce **18 principes (P-01 à P-18)** ; le catal
 - **ARTSN : Annexe C** : Annexe C : Renvoi CAESN et capacités candidates (`02_artsn/07_annexes/c-renvoi-capacites-candidates.md`)
 - **CAESN : normes et standards** : Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
 - **CAESN : registre des ADR** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
+
+## Documents de la section
+
+- [governance-vro: Bureau de Réalisation de la Valeur](value-realization-office.md)
+- [point-de-vigilance-caesn: Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health)](point-de-vigilance-caesn.md)
+- [processus-gouvernance: Guide du processus de gouvernance](processus-gouvernance.md)
+- [governance-raci: RACI de gouvernance et responsabilités](raci.md)
+- [homologation: Workflow d'homologation architecturale](homologation.md)
+- [governance: Gouvernance du cadre d'architecture](index.md)
+- [cnasen-composition: Composition et fonctionnement du Comité National](cnasen-composition.md)
+- [instances-sectorielles: Instances sectorielles et autorités spécialisées](instances-sectorielles.md)
+- [fondement-legal: Fondement légal et cadre législatif de la santé numérique](fondement-legal.md)
+
+<!-- liens-section-auto -->

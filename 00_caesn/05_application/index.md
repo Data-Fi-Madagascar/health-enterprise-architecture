@@ -88,3 +88,16 @@ Le présent cadre définit le **pourquoi et le quoi** (organisation fonctionnell
 - **Capabilités** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
 - **Flux de valeur** : Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)
 - **Portefeuille** : Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
+
+## Documents de la section
+
+- [application-lifecycle: Cycle de vie applicatif et critères d'homologation](lifecycle.md)
+- [application-principles: Principes de l'architecture applicative](principles.md)
+- [application-urbanisation: Règles d'urbanisation applicative](urbanisation.md)
+- [application-domains: Domaines applicatifs cibles par flux de valeur](application-domains.md)
+- [application-constraints: Contraintes d'exploitation différenciées](constraints.md)
+- [application-target-layers: Paysage applicatif cible](layers.md)
+- [application-shared-services: Services numériques partagés prioritaires](shared-services.md)
+- [application-rationalization: Trajectoire de rationalisation du paysage applicatif](rationalization.md)
+
+<!-- liens-section-auto -->

@@ -78,3 +78,15 @@ Une dérogation n'est acceptable que si elle est :
 - **Principes transversaux** : Principes d'architecture transversaux (`00_caesn/02_principles/transversal.md`)
 - **Principes de domaine** : Principes de domaine par flux de valeur (`00_caesn/02_principles/domain/index.md`)
 - **Overview** : Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
+
+## Documents de la section
+
+- [mapping-principes-caesn-artsn: Table de correspondance : Principes CAESN ↔ ARTSN](mapping-caesn-artsn.md)
+- [pa: Principes d'architecture transversaux](transversal.md)
+- [pd-VS-04: PD-VS-04 : Principes de domaine : piloter, coordonner et améliorer la performance](domain/vs04.md)
+- [pd-VS-01: PD-VS-01 : Principes de domaine : accéder à des services de santé essentiels](domain/vs01.md)
+- [pd-VS-02: PD-VS-02 : Principes de domaine : prévenir, détecter et répondre aux risques sanitaires](domain/vs02.md)
+- [principles-domain: Principes de domaine par flux de valeur](domain/index.md)
+- [pd-VS-03: PD-VS-03 : Principes de domaine : protéger financièrement la population](domain/vs03.md)
+
+<!-- liens-section-auto -->

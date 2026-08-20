@@ -60,3 +60,10 @@ Les catalogues relatifs aux principes, aux principes de domaine, aux capabilité
 - **Matrice de lecture du CAESN** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
 - **Volet de cadrage** : Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
 - **Gouvernance** : Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
+
+## Documents de la section
+
+- [annexe-glossary: Glossaire](glossary.md)
+- [annexe-acronyms: Acronymes et abréviations](acronyms.md)
+
+<!-- liens-section-auto -->

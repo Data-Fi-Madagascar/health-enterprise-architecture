@@ -72,3 +72,12 @@ Chaque flux mobilise plusieurs capabilités. Voir la lecture des capabilités pa
 - **VS-04** : Piloter, coordonner et améliorer la performance du système de santé (`00_caesn/01_value-streams/vs-04-system-steering.md`)
 - **Modèle de valeur** : Modèle national de valeur (`00_caesn/00_overview/value-model.md`)
 - **Principes d'architecture** : Principes d'architecture (`00_caesn/02_principles/index.md`)
+
+## Documents de la section
+
+- [VS-03: VS-03 : Protéger financièrement la population face aux dépenses de santé](vs-03-financial-protection.md)
+- [VS-04: VS-04 : Piloter, coordonner et améliorer la performance du système de santé](vs-04-system-steering.md)
+- [VS-01: VS-01 : Accéder à des services de santé essentiels, intégrés, équitables et de qualité](vs-01-access-care.md)
+- [VS-02: VS-02 : Prévenir, détecter et répondre aux risques sanitaires](vs-02-risk-protection.md)
+
+<!-- liens-section-auto -->

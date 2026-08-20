@@ -86,3 +86,21 @@ Chaque ADR suit le modèle type, avec un statut parmi `proposé`, `accepté`, `a
 - **Capacités du CNISN** : Partie II : Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
 - **Gouvernance du CNISN** : Partie III : Gouvernance (`01_cnisn/03_gouvernance/index.md`)
 - **Standards** : Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
+
+## Documents de la section
+
+- [adr-0003: ADR-0003 : Utilisation de HL7 FHIR comme standard d'interopérabilité](adr-0003-fhir.md)
+- [adr-0005: ADR-0005 : Adoption de FHIR Consent pour le consentement structuré](adr-0005-consentement.md)
+- [adr-0009: ADR-0009 : Adoption d'un référentiel terminologique national (CIM-10 + LOINC)](adr-0009-terminologie.md)
+- [adr-0004: ADR-0004 : Adoption des profils IHE PIXm/PDQm pour la résolution d'identité](adr-0004-identite.md)
+- [adr-0001: ADR-0001 : Adoption de X-Road comme plateforme d'échange interinstitutionnel](adr-0001-x-road.md)
+- [adr-0006: ADR-0006 : Adoption de l'Identité Nationale Patient (INP) via PIXm/PDQm](adr-0006-inp.md)
+- [adr-0010: ADR-0010 : Cadre légal et mandat d'opposabilité du CNASN](adr-0010-cadre-legal.md)
+- [adr-0000: ADR-0000 : <Titre de la décision>](adr-0000-template.md)
+- [adr-0002: ADR-0002 : Adoption du profil IHE mADX pour l'échange de données agrégées](adr-0002-madx.md)
+- [adr-0007: ADR-0007 : Adoption du GDHCN pour la confiance transfrontalière](adr-0007-gdhcn.md)
+- [registre-decisions: Registre des décisions d'architecture (ADR)](registre-decisions.md)
+- [template-modification: Template : Demande de modification architecturale](template-modification.md)
+- [adr-0008: ADR-0008 : Adoption d'ATNA et journalisation pour l'audit et la traçabilité](adr-0008-atna.md)
+
+<!-- liens-section-auto -->

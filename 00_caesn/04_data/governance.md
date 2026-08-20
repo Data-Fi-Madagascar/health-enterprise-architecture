@@ -103,3 +103,13 @@ Une initiative qui ne respecte pas ces règles n'est pas conforme au cadre.
 - **Couche décisionnelle** : Paysage applicatif cible (`00_caesn/05_application/layers.md`)
 - **Référentiels nationaux** : Référentiels nationaux (`00_caesn/04_data/referentials.md`)
 - **Principes de l'architecture des données** : Principes de l'architecture des données (`00_caesn/04_data/principles.md`)
+
+## Documents de la section
+
+- [data-referentials: Référentiels nationaux](referentials.md)
+- [data-lifecycle: Cycle de vie des données](lifecycle.md)
+- [data-principles: Principes de l'architecture des données](principles.md)
+- [data-architecture: Architecture des données et de l'information sanitaire](index.md)
+- [data-domains: Domaines de données prioritaires](domains.md)
+
+<!-- liens-section-auto -->

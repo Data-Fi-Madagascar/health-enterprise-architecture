@@ -108,3 +108,11 @@ Ce dépôt implémente le cadre comme **architecture as code** : chaque concept 
 - **Matrice de lecture du CAESN** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
 - **Glossaire** : Glossaire (`00_caesn/10_annexes/glossary.md`)
 - **Acronymes** : Acronymes et abréviations (`00_caesn/10_annexes/acronyms.md`)
+
+## Documents de la section
+
+- [fondements: Fondements stratégiques et normatifs](foundations.md)
+- [valeur: Modèle national de valeur](value-model.md)
+- [verification-perennite-documents: Vérification de la pérennité : PDSS, SNSD, PSRSIS](verification-perennite.md)
+
+<!-- liens-section-auto -->

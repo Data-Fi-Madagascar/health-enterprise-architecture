@@ -78,3 +78,17 @@ L'OMS publie le **Global Digital Health Monitor (GDHM)**. Une auto-évaluation d
 - **Conformité** : Programme de conformité (`01_cnisn/04_conformite/programme-conformite.md`)
 - **ADR-0010** : Cadre légal (`01_cnisn/06_decisions/adr-0010-cadre-legal.md`)
 - **Fondements stratégiques** : Fondements (`00_caesn/00_overview/foundations.md`)
+
+## Documents de la section
+
+- [governance-vro: Bureau de Réalisation de la Valeur](value-realization-office.md)
+- [point-de-vigilance-caesn: Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health)](point-de-vigilance-caesn.md)
+- [processus-gouvernance: Guide du processus de gouvernance](processus-gouvernance.md)
+- [governance-raci: RACI de gouvernance et responsabilités](raci.md)
+- [homologation: Workflow d'homologation architecturale](homologation.md)
+- [governance: Gouvernance du cadre d'architecture](index.md)
+- [cnasen-composition: Composition et fonctionnement du Comité National](cnasen-composition.md)
+- [instances-sectorielles: Instances sectorielles et autorités spécialisées](instances-sectorielles.md)
+- [arbitrage-ecarts-caesn-artsn: Proposition d'arbitrage : 5 écarts CAESN ↔ ARTSN](arbitrage-ecarts-caesn-artsn.md)
+
+<!-- liens-section-auto -->

@@ -224,3 +224,17 @@ Durée totale : variable
 - **RACI de gouvernance** : RACI de gouvernance et responsabilités (`00_caesn/07_governance/raci.md`)
 - **Registre des décisions** : Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
 - **Template de modification** : Template : Demande de modification architecturale (`01_cnisn/06_decisions/template-modification.md`)
+
+## Documents de la section
+
+- [governance-vro: Bureau de Réalisation de la Valeur](value-realization-office.md)
+- [point-de-vigilance-caesn: Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health)](point-de-vigilance-caesn.md)
+- [processus-gouvernance: Guide du processus de gouvernance](processus-gouvernance.md)
+- [governance-raci: RACI de gouvernance et responsabilités](raci.md)
+- [governance: Gouvernance du cadre d'architecture](index.md)
+- [cnasen-composition: Composition et fonctionnement du Comité National](cnasen-composition.md)
+- [instances-sectorielles: Instances sectorielles et autorités spécialisées](instances-sectorielles.md)
+- [arbitrage-ecarts-caesn-artsn: Proposition d'arbitrage : 5 écarts CAESN ↔ ARTSN](arbitrage-ecarts-caesn-artsn.md)
+- [fondement-legal: Fondement légal et cadre législatif de la santé numérique](fondement-legal.md)
+
+<!-- liens-section-auto -->

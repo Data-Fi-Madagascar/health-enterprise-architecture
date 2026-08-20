@@ -151,3 +151,17 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 - **Composition du CNASN** : Composition et fonctionnement du Comité National (`00_caesn/07_governance/cnasen-composition.md`)
 - **Bureau de Réalisation de la Valeur** : Bureau de Réalisation de la Valeur (`00_caesn/07_governance/value-realization-office.md`)
 - **RACI de gouvernance** : RACI de gouvernance et responsabilités (`00_caesn/07_governance/raci.md`)
+
+## Documents de la section
+
+- [governance-vro: Bureau de Réalisation de la Valeur](value-realization-office.md)
+- [point-de-vigilance-caesn: Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health)](point-de-vigilance-caesn.md)
+- [processus-gouvernance: Guide du processus de gouvernance](processus-gouvernance.md)
+- [governance-raci: RACI de gouvernance et responsabilités](raci.md)
+- [homologation: Workflow d'homologation architecturale](homologation.md)
+- [governance: Gouvernance du cadre d'architecture](index.md)
+- [cnasen-composition: Composition et fonctionnement du Comité National](cnasen-composition.md)
+- [arbitrage-ecarts-caesn-artsn: Proposition d'arbitrage : 5 écarts CAESN ↔ ARTSN](arbitrage-ecarts-caesn-artsn.md)
+- [fondement-legal: Fondement légal et cadre législatif de la santé numérique](fondement-legal.md)
+
+<!-- liens-section-auto -->
