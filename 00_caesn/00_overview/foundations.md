@@ -45,23 +45,21 @@ Le cadre est structuré par un cadre juridique national et continental :
 
 Certains axes génèrent directement un flux de valeur pour la population ; d'autres constituent des capabilités habilitantes.
 
-| Code | Axe stratégique PDSS | Lecture dans le cadre |
-|------|----------------------|------------------------|
-| AXE-01 | Gouvernance, cadre institutionnel et coordination | Capabilité de gouvernance soutenant le flux de pilotage |
-| AXE-02 | Gestion rationnelle des ressources | Capabilité habilitante ressources |
-| AXE-03 | Renforcement du capital humain | Capabilité habilitante ressources humaines |
-| AXE-04 | Accès équitable aux soins essentiels intégrés de qualité | Flux de valeur — soins |
-| AXE-05 | Prévention, promotion, urgences, épidémies et catastrophes | Flux de valeur — protection sanitaire |
-| AXE-06 | Financement de la santé et protection financière | Flux de valeur — protection financière |
-| AXE-07 | Système d'information sanitaire et recherche | Capabilité décisionnelle transversale |
-| AXE-08 | Santé communautaire | Canal et capabilité transversale de proximité |
+| Code   | Axe stratégique PDSS                                       | Lecture dans le cadre                                   |
+| ------ | ---------------------------------------------------------- | ------------------------------------------------------- |
+| AXE-01 | Gouvernance, cadre institutionnel et coordination          | Capabilité de gouvernance soutenant le flux de pilotage |
+| AXE-02 | Gestion rationnelle des ressources                         | Capabilité habilitante ressources                       |
+| AXE-03 | Renforcement du capital humain                             | Capabilité habilitante ressources humaines              |
+| AXE-04 | Accès équitable aux soins essentiels intégrés de qualité   | Flux de valeur — soins                                  |
+| AXE-05 | Prévention, promotion, urgences, épidémies et catastrophes | Flux de valeur — protection sanitaire                   |
+| AXE-06 | Financement de la santé et protection financière           | Flux de valeur — protection financière                  |
+| AXE-07 | Système d'information sanitaire et recherche               | Capabilité décisionnelle transversale                   |
+| AXE-08 | Santé communautaire                                        | Canal et capabilité transversale de proximité           |
 
 Les quatre axes de la SNSD (gouvernance digitale, solutions, ressources, financement) sont lus comme des capabilités numériques transversales qui servent les flux de valeur santé sans en constituer eux-mêmes.
-
 ## Référentiels normatifs internationaux
 
 Trois référentiels internationaux opèrent à des niveaux différents et complémentaires. Ils définissent des principes et modèles d'organisation, sans prescrire de logiciels. Ensemble, ils forment un cadre de référence pour l'architecture numérique santé que Madagascar adapte à son contexte.
-
 ### Infrastructure Numérique de Données pour la Santé (DPI-H) — OMS/ITU
 
 Le cadre **Digital Public Infrastructure for Health (DPI-H)** est une initiative conjointe de l'OMS et de l'ITU dans le cadre du Global Initiative on Digital Health (GIDH). Il définit l'infrastructure numérique que tout système de santé national doit développer comme **bien commun**, en distinguant deux niveaux :
@@ -72,15 +70,15 @@ Le cadre **Digital Public Infrastructure for Health (DPI-H)** est une initiative
 
 | Composante DPI-H | Fonction | Réponse HEA |
 |-------------------|----------|-------------|
-| Registre des bénéficiaires (Client Registry) | Identifier de manière unique les patients | PT-04, ART-4a |
-| Registre des formations sanitaires (Facility Registry) | Identifier les lieux de soins | PT-06, ART-4 |
-| Registre des professionnels de santé (Health Worker Registry) | Identifier les prestataires | PT-05, ART-4a |
-| Couche d'échange (Interoperability Layer) | Router et transformer les messages | PT-01, PT-02, ART-1, ART-2 |
-| Service de terminologie | Codes et classifications communs | PT-07, STD-0006, STD-0007 |
-| Dossier partagé (Shared Health Record) | Repository longitudinal patient | Couche 4 ARTSN |
-| Système de gestion de l'information sanitaire (HMIS) | Données agrégées et tableaux de bord | PT-08, PT-09, ART-6 |
-| Gestion logistique (LMIS) | Visibilité sur les produits de santé | ART-10 |
-| Cadre de confiance-sécurité | Authentification, autorisation, journalisation | PT-10, PT-12, ART-7 |
+| Registre des bénéficiaires (Client Registry) | Identifier de manière unique les patients | Résolution d'identité |
+| Registre des formations sanitaires (Facility Registry) | Identifier les lieux de soins | Référentiel de structures |
+| Registre des professionnels de santé (Health Worker Registry) | Identifier les prestataires | Référentiel de professionnels |
+| Couche d'échange (Interoperability Layer) | Router et transformer les messages | Couche d'échange et médiation |
+| Service de terminologie | Codes et classifications communs | STD-0006 (CIM-10 + LOINC), STD-0007 (SNOMED CT) |
+| Dossier partagé (Shared Health Record) | Repository longitudinal patient | Dossier patient partagé |
+| Système de gestion de l'information sanitaire (HMIS) | Données agrégées et tableaux de bord | Système d'information sanitaire |
+| Gestion logistique (LMIS) | Visibilité sur les produits de santé | Gestion logistique |
+| Cadre de confiance-sécurité | Authentification, autorisation, journalisation | Cadre de confiance-sécurité |
 
 La **Référence Architecture DPI-H** (publiée par l'OMS via SMART Guidelines) fournit les spécifications techniques pour chaque composante, basées sur HL7 FHIR R4. Elle est directement applicable à l'HEA : les 9 composantes DPI-H correspondent aux 16 profils PTISN.
 
@@ -114,10 +112,10 @@ GovStack distingue deux catégories de blocs :
 
 | Bloc fondationnel | Fonction | Application santé |
 |-------------------|----------|-------------------|
-| **Identité numérique** | Authentification et vérification des personnes | INP (PT-04), identification des patients |
-| **Médiateur d'information** | Échange de données sécurisé entre systèmes | X-Road (PT-01), couche d'échange |
-| **Workflow** | Orchestration des processus métier | Orchestration bornée (PT-16, ART-8a) |
-| **Registre** | Sources de vérité pour les entités référentes | Registres nationaux (PT-05, PT-06) |
+| **Identité numérique** | Authentification et vérification des personnes | INP (identifiant patient national), identification des patients |
+| **Médiateur d'information** | Échange de données sécurisé entre systèmes | X-Road (échange de données), couche d'échange |
+| **Workflow** | Orchestration des processus métier | Orchestration des processus métier |
+| **Registre** | Sources de vérité pour les entités référentes | Registres nationaux (professionnels, structures) |
 
 **Blocs fonctionnels** — fonctions autonomes qui améliorent le stack sans être des prérequis :
 
@@ -125,7 +123,7 @@ GovStack distingue deux catégories de blocs :
 |------------------|----------|-------------------|
 | **Paiements** | Transactions financières sécurisées | Couverture sanitaire (VS-02) |
 | **Messaging** | Notifications et alertes | Alertes sanitaires, surveillance |
-| **Géospatial** | Services de géolocalisation | Cartographie sanitaire (ART-4d) |
+| **Géospatial** | Services de géolocalisation | Services géospatiaux |
 | **Génération de documents** | Production de documents structurés | Certificats, rapports |
 
 L'approche GovStack par **API ouvertes** et **conteneurs** permet l'interopérabilité sans vendor lock-in. Elle est alignée sur le DPI-H de l'OMS et est directement applicable à l'HEA : les blocs fondationnels GovStack correspondent aux capacités transversales du CNISN, tandis que les blocs fonctionnels se traduisent par les profils PTISN.
@@ -142,6 +140,21 @@ L'approche GovStack par **API ouvertes** et **conteneurs** permet l'interopérab
 | *Quels standards ?* | FHIR R4, SMART Guidelines | IHE, HL7 | API ouvertes, conteneurs |
 
 L'HEA utilise les trois référentiels de manière complémentaire : le DPI-H définit les composantes nécessaires, OpenHIE fournit le patron d'architecture, et GovStack offer les spécifications techniques pour l'intégration dans l'État numérique malgache.
+
+## Technologies émergentes
+
+Certaines technologies émergentes auront un impact significatif sur les systèmes d'information de santé au cours de la prochaine décennie. L'HEA ne les prescrit pas mais prévoit les points d'ancrage pour leur intégration progressive.
+
+| Technologie | Potentiel santé | Principe HEA applicable | Standard existant | Niveau de maturité |
+|-------------|-----------------|------------------------|-------------------|-------------------|
+| Intelligence artificielle (IA) | Aide au diagnostic, prédiction épidémiologique, optimisation des parcours | PA-03 (interoperabilité), PA-05 (souveraineté) | FHIR R4 (données structurées) | Pilotes |
+| Internet des objets (IoT) | Capteurs connectés, télésurveillance, suivi des chaînes du froid | PA-01 (patient central), PD-05 (dispositifs) | FHIR Device, HL7 | Précoce |
+| Blockchain | Traçabilité des médicaments, consentement patient, identité décentralisée | PA-05 (souveraineté), PA-06 (confiance) | FHIR Consent, W3C DID | Expérimental |
+| Télémédecine | Consultations à distance, téléexpertise, e-préscription | PA-01 (patient central), PA-04 (flexibilité) | IHE PDQ, FHIR Telehealth | En déploiement |
+
+Ces technologies ne nécessitent pas de nouveau profil PTISN. Elles s'intègrent dans les capabilités existantes (capacité de décision, intégration des données, identité) et sont encadrées par les principes d'architecture du CAESN. Les standards FHIR R4 et HL7 fournissent les structures de données nécessaires ; les profils PTISN définissent les points d'entrée.
+
+L'intégration de ces technologies fait l'objet d'une veille architecturale permanente au sein du CNASN, qui évalue leur maturité et recommande leur adoption lorsque les standards et la gouvernance le permettent.
 
 ## Liens
 

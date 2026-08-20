@@ -83,7 +83,7 @@ Le modèle de la Tanzanie (Health Information Mediator) et celui du Kenya (Enter
 
 **Maturité GDHM :** Phase 4 — l'un des pays les plus avancés d'Afrique.
 
-**Leçons pour Madagascar :** L'intégration de l'identifiant national unique dans le flux de données sanitaires est un modèle à suivre pour le développement de l'INP. Le modèle NHIC à six couches présente des similitudes avec la cartographie ARTSN à six couches, mais sans la séparation stricte entre couche 3 (échange sans logique métier) et couche 4 (interopérabilité avec registres).
+**Leçons pour Madagascar :** L'intégration de l'identifiant national unique dans le flux de données sanitaires est un modèle à suivre pour le développement de l'INP. Le modèle NHIC à six couches présente des similitudes avec la cartographie HEA à six couches, mais sans la séparation stricte entre la couche de transport (échange sans logique métier) et la couche d'interopérabilité (registres).
 
 ### 3.2 Kenya
 
@@ -191,7 +191,7 @@ Le modèle de la Tanzanie (Health Information Mediator) et celui du Kenya (Enter
 
 **Maturité GDHM :** Phase 4 pour l'interopérabilité — remarquable pour un pays en développement.
 
-**Leçons pour Madagascar :** Le modèle mHealth-DHIS2 de la Côte d'Ivoire est une référence pour l'intégration des données communautaires (couche 2 de l'ARTSN). La maturité interopérabilité en phase 4 démontre que des pays à ressources limitées peuvent atteindre des niveaux élevés avec une gouvernance ciblée.
+**Leçons pour Madagascar :** Le modèle mHealth-DHIS2 de la Côte d'Ivoire est une référence pour l'intégration des données communautaires (applications de terrain). La maturité interopérabilité en phase 4 démontre que des pays à ressources limitées peuvent atteindre des niveaux élevés avec une gouvernance ciblée.
 
 ### 3.11 Ouganda
 
@@ -215,7 +215,7 @@ Le modèle de la Tanzanie (Health Information Mediator) et celui du Kenya (Enter
 
 **Maturité GDHM :** Milieu de parcours — déploiement national de SmartCare en cours, HIE basée sur les standards en développement.
 
-**Leçons pour Madagascar :** Le modèle SmartCare (offline-first) est directement pertinent pour les couches 1 et 2 de l'ARTSN (infrastructure et point de service). L'INRIS zambien est un modèle pour le développement de l'INP malgache.
+**Leçons pour Madagascar :** Le modèle SmartCare (offline-first) est directement pertinent pour les profils terrain et infrastructure de l'HEA. L'INRIS zambien est un modèle pour le développement de l'INP malgache.
 
 ## 4. Analyse comparative transversale
 
@@ -263,7 +263,7 @@ Le modèle de gouvernance double de Madagascar (portfolio + homologation) est un
 |----------|-----------------|------------|-------|-----|--------|----------|---------|
 | DHIS2 | 46/47 pays | Référencé | ✓ | ✓ | ✓ | ✓ | ✓ |
 | HL7 FHIR R4 | 6+ pays (pilote→national) | **Obligatoire** | ✓ | ✓ | ✓ | ○ | ✓ |
-| X-Road | 3 pays | **Couche 3** | ○ | ○ | ○ | ○ | ○ |
+| X-Road | 3 pays | **Interopérabilité** | ○ | ○ | ○ | ○ | ○ |
 | OpenHIE | 7 pays actifs | Référencé | ○ | ○ | ✓ | ✓ | ✓ |
 | IHE Profiles | 3 pays | Référencé | ○ | ✓ | ○ | ✓ | ○ |
 | mADX | Francophone | ✓ | ○ | ○ | ○ | ○ | ○ |
@@ -276,7 +276,7 @@ Madagascar se positionne dans le tiers supérieur pour l'ambition normative (FHI
 
 | Pays | Couches explicites | Couche transport sans logique métier | CQRS | Offline-first | Identity isolation (One Health) |
 |------|-------------------|-------------------------------------|------|---------------|-------------------------------|
-| **Madagascar** | **6 + 2 axes** | **Oui (Couche 3)** | **Oui (Couche 5)** | **Oui (Couche 2)** | **Oui** |
+| **Madagascar** | **6 + 2 axes** | **Oui (transport)** | **Oui (analytique)** | **Oui (terrain)** | **Oui** |
 | Tanzanie | 4 domaines | Non | Non | Partiel | Non |
 | Ouganda | 4 domaines + HIE | Non | Non | Partiel | Non |
 | Kenya | Non structuré | N/A | Non | Non | Non |
@@ -286,7 +286,7 @@ Madagascar se positionne dans le tiers supérieur pour l'ambition normative (FHI
 | Nigeria | Non structuré | N/A | Non | Non | Non |
 | Zambie | Non structuré | N/A | Non | Oui (SmartCare) | Non |
 
-L'HEA est la seule architecture africaine à formaliser explicitement l'absence de logique métier dans la couche de transport (Couche 3), l'utilisation du pattern CQRS pour l'analytique (Couche 5) et l'isolation d'identité pour les échanges One Health.
+L'HEA est la seule architecture africaine à formaliser explicitement l'absence de logique métier dans la couche de transport, l'utilisation du pattern CQRS pour l'analytique et l'isolation d'identité pour les échanges One Health.
 
 ### 4.5 Patient ID
 
@@ -342,7 +342,7 @@ Madagascar n'a pas encore été évalué par le GDHM. La réalisation d'une éva
 
 L'architecture HEA présente des forces structurelles rares en Afrique. La hiérarchie documentaire à quatre niveaux (CAESN/CNISN/ARTSN/PTISN) est unique et permet une séparation claire entre les niveaux normatif et technique. Le format Markdown as code avec YAML frontmatter et traçabilité automatisée constitue un avantage significatif pour la maintenance et l'évolution du cadre.
 
-La gouvernance double (portfolio + homologation) évite les biais de fragmentation. La couche 3 sans logique métier et le pattern CQRS en couche 5 sont des patterns d'architecture avancés, rarement formalisés dans les architectures africaines. Les 16 profils techniques (PT-01 à PT-16) fournissent un niveau de granularité d'implémentation absent des autres cadres continentaux.
+La gouvernance double (portfolio + homologation) évite les biais de fragmentation. Le transport sans logique métier et le pattern CQRS pour l'analytique sont des patterns d'architecture avancés, rarement formalisés dans les architectures africaines. Les 16 profils techniques (PT-01 à PT-16) fournissent un niveau de granularité d'implémentation absent des autres cadres continentaux.
 
 L'intégration de l'interopérabilité One Health (PT-15) avec isolation d'identité et les échanges transfrontaliers via GDHCN (PT-14) positionnent Madagascar dans le tiers supérieur des architectures africaines pour la couverture fonctionnelle.
 
@@ -356,7 +356,7 @@ L'absence de programme de tests de conformité (comme le CSIR en Afrique du Sud)
 
 Le modèle DPI sénégalais (127 000 patients pilotes) fournit un chemin d'implémentation direct pour le dossier patient informatisé malgache. Le programme DHALP de HELINA, actif au Burkina Faso et au Rwanda, offre un cadre de renforcement des capacités que Madagascar pourrait rejoindre.
 
-La plateforme SmartCare de la Zambie (offline-first, 116 districts) est une référence technique pour les couches 1 et 2 de l'ARTSN. Le modèle mHealth-DHIS2 de la Côte d'Ivoire démontre l'interopérabilité communautaire à moindre coût. Le pilote HAPI FHIR + OpenHIM de l'Éthiopie valide la complémentarité PT-02/PT-16.
+La plateforme SmartCare de la Zambie (offline-first, 116 districts) est une référence technique pour les profils terrain et infrastructure de l'HEA. Le modèle mHealth-DHIS2 de la Côte d'Ivoire démontre l'interopérabilité communautaire à moindre coût. Le pilote HAPI FHIR + OpenHIM de l'Éthiopie valide la complémentarité PT-02/PT-16.
 
 Le cadre Smart Africa offre une opportunité de positionnement régional via le Digital Health Flagship Project, avec le Rwanda comme champion susceptible de soutenir l'intégration de Madagascar dans les échanges transfrontaliers.
 
