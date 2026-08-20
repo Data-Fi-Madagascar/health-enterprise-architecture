@@ -50,6 +50,12 @@ LIENS_RE = re.compile(
     re.S | re.M
 )
 
+# ## Références section (everything until next ## or #)
+REFERENCES_RE = re.compile(
+    r'##\s+Références\s*\n.*?(?=\n##\s|\n#\s|\Z)',
+    re.S | re.M
+)
+
 # *Répond à : ...* lines
 REPOND_RE = re.compile(r'^\s*\*Répond à\s*:.*\*\s*\n', re.M)
 
@@ -59,9 +65,9 @@ MARKER_RE = re.compile(
     re.M
 )
 
-# Titles with codes: ### CMP-01 — Title → ### Title
+# Titles with codes: ### CMP-01 : Title → ### Title
 TITRE_CODE_RE = re.compile(
-    r'^(#{2,4})\s+(?:CMP|EV|CAP|PRC|ART|PT|VS|PA|F)-\d+[a-z]?\s*—\s*',
+    r'^(#{2,4})\s+(?:CMP|EV|CAP|PRC|ART|PT|VS|PA|PP|F)-\d+[a-z]?\s*[:—]\s*',
     re.M
 )
 
@@ -91,6 +97,11 @@ def strip_rattachement(text):
 def strip_internal_links(text):
     """Remove ## Liens section (keep ## Références)."""
     return LIENS_RE.sub("", text)
+
+
+def strip_references(text):
+    """Remove ## Références section."""
+    return REFERENCES_RE.sub("", text)
 
 
 def strip_repond_a(text):
@@ -155,6 +166,7 @@ def clean_for_public(text):
     text = strip_rattachement(text)
     text = strip_niveau_lines(text)
     text = strip_internal_links(text)
+    text = strip_references(text)
     text = strip_repond_a(text)
     # Then strip remaining inline technical IDs
     text = strip_technical_ids(text)
