@@ -1,6 +1,6 @@
 ---
 title: Profil technique national
-id: ptisn-PT-12-audit-provenance-traçabilité
+id: ptisn-PT-12
 domain: 03_ptisn
 version: "1.0.0"
 status: draft
