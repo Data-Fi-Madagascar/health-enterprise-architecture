@@ -43,8 +43,16 @@ jobs:
           python3 scripts/build_docx.py
         working-directory: ${{ github.workspace }}
 
+      - name: Build public DOCXs
+        run: |
+          export TAG_VERSION=${{ steps.ver.outputs.VERSION }}
+          python3 scripts/build_docx_public.py
+        working-directory: ${{ github.workspace }}
+
       - name: List artifacts
-        run: ls -la dist/
+        run: |
+          ls -la dist/
+          ls -la dist/public/ 2>/dev/null || true
 
       - name: Generate release notes
         id: notes
@@ -66,7 +74,7 @@ jobs:
           {
             echo "## Architecture d'Entreprise de la Santé Numérique de Madagascar"
             echo ""
-            echo "### Documents inclus"
+            echo "### Documents internes (techniques)"
             echo ""
             echo "| Document | Description |"
             echo "|----------|-------------|"
@@ -75,6 +83,15 @@ jobs:
             echo "| artsn-v*.docx | Architecture de Référence Technique de la Santé Numérique (ARTSN) |"
             echo "| ptisn-v*.docx | Profils techniques d'implémentation de la Santé Numérique (PTISN) |"
             echo "| HEA-v*.docx | Document consolidé (tous niveaux) |"
+            echo ""
+            echo "### Documents publics (décideurs, directeurs, PTF)"
+            echo ""
+            echo "| Document | Description |"
+            echo "|----------|-------------|"
+            echo "| caesn-public-v*.docx | CAESN — sans jargon technique |"
+            echo "| cnisn-public-v*.docx | CNISN — sans jargon technique |"
+            echo "| artsn-public-v*.docx | ARTSN — sans jargon technique |"
+            echo "| HEA-public-v*.docx | Combinaison des 3 niveaux publics |"
             echo ""
             echo "### Statistiques"
             echo ""
@@ -100,6 +117,7 @@ jobs:
         run: |
           gh release create "$GITHUB_REF_NAME" \
             dist/*.docx \
+            dist/public/*.docx \
             --title "v${GITHUB_REF_NAME#v} — Santé numérique de Madagascar" \
             --notes "${{ steps.notes.outputs.body }}" \
             --latest

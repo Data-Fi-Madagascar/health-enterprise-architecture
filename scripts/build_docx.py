@@ -211,7 +211,7 @@ def main():
     render_docx(gmd, out / f"HEA-v{version}.docx", args.toc_depth, out)
     gmd.unlink()
 
-    docx_files = list(out.glob("*.docx"))
+    docx_files = [f for f in out.glob("*.docx") if not f.name.startswith("~$")]
     print(f"\nTerminé ✅  {len(docx_files)} DOCX dans {out}")
 
 

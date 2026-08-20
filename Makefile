@@ -23,7 +23,7 @@ DATE  := $(shell date +%F)
 
 export TAG_VERSION=$(VERSION)
 
-.PHONY: pdf docx wrappers check clean release note
+.PHONY: pdf docx public wrappers check clean release note
 
 pdf:
 	@echo "==> Génération des 5 PDF (version $(VERSION), moteur $(ENGINE))"
@@ -32,6 +32,10 @@ pdf:
 docx:
 	@echo "==> Génération des 5 DOCX (version $(VERSION))"
 	$(PY) scripts/build_docx.py --version $(VERSION)
+
+public:
+	@echo "==> Génération des 3 DOCX publics + HEA-public (version $(VERSION))"
+	$(PY) scripts/build_docx_public.py --version $(VERSION)
 
 # Transclusion des 150 objets du référentiel dans les 51 enveloppes
 wrappers:
@@ -51,9 +55,10 @@ clean:
 note:
 	@git log --oneline $(shell git describe --abbrev=0 --tags 2>/dev/null || echo HEAD~1)..HEAD -- . ':(exclude)dist' | sed 's/^/  * /'
 
-release: docx
+release: docx public
 	@echo "==> Release GitHub v$(VERSION)"
 	gh release create v$(VERSION) \
 		dist/*-v$(VERSION).docx \
+		dist/public/*-v$(VERSION).docx \
 		--title "v$(VERSION) — Santé numérique de Madagascar" \
-		--notes "Documentation as code consolidée (CAESN / CNISN / ARTSN / PTISN)."
+		--notes "Documentation as code consolidée (CAESN / CNISN / ARTSN / PTISN) + versions publiques pour décideurs/PTF."
