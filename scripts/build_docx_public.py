@@ -42,7 +42,7 @@ TECH_ID_RE = re.compile(
 )
 
 # *Rattachement : CAP-03, CMP-01...* lines (italic, full line)
-RATTACHEMENT_RE = re.compile(r'^\s*\*Rattachement\s*:.*\*\s*\n', re.M)
+RATTACHEMENT_RE = re.compile(r'^\s*\*Rattachement\s*:.*\*\n', re.M)
 
 # ## Liens section (everything until next ## or #)
 LIENS_RE = re.compile(
@@ -57,7 +57,7 @@ REFERENCES_RE = re.compile(
 )
 
 # *Répond à : ...* lines
-REPOND_RE = re.compile(r'^\s*\*Répond à\s*:.*\*\s*\n', re.M)
+REPOND_RE = re.compile(r'^\s*\*Répond à\s*:.*\*\n', re.M)
 
 # GENERATED block markers (HTML comments)
 MARKER_RE = re.compile(
