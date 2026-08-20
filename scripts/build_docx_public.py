@@ -135,6 +135,14 @@ def clean_multiple_blanks(text):
     return text
 
 
+EM_DASH_RE = re.compile(r'\s*—\s*')
+
+
+def replace_em_dashes(text):
+    """Replace all em-dashes (—) with a colon separator."""
+    return EM_DASH_RE.sub(' : ', text).strip()
+
+
 def clean_for_public(text):
     """Full cleaning pipeline for public documents."""
     text = strip_frontmatter(text)
@@ -152,6 +160,7 @@ def clean_for_public(text):
     text = strip_technical_ids(text)
     text = strip_empty_bullets(text)
     text = rewrite_links(text)
+    text = replace_em_dashes(text)
     text = clean_multiple_blanks(text)
     return text
 
