@@ -1,4 +1,5 @@
 ---
+
 title: Matrice de lecture de l'ARTSN (niveau 3)
 id: artsn-reading-matrix
 domain: 02_artsn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-09
 owner: DEPSI
-tags: [artsn, lecture, niveau-3, profils]
+tags: ["artsn", "lecture", "niveau-3", "profils"]
 ---
 
 # Matrice de lecture de l'ARTSN (niveau 3)

@@ -1,4 +1,5 @@
 ---
+
 title: "ADR-0004 : Adoption des profils IHE PIXm/PDQm pour la résolution d'identité"
 id: adr-0004
 domain: 06_decisions
@@ -6,14 +7,14 @@ version: "1.0.0"
 status: accepté
 date: 2026-07-01
 owner: DEPSI
-tags: [adr, identité, pixm, pdqm, ihe]
+tags: ["adr", "identité", "pixm", "pdqm", "ihe"]
 ---
 
 # ADR-0004 : Adoption des profils IHE PIXm/PDQm pour la résolution d'identité
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 2 : Cadre National d'Interopérabilité de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|

@@ -4,7 +4,7 @@
 
 > **Pour les travailleurs agentiques :** sous-skill requis — utiliser superpowers:subagent-driven-development (recommandé) ou superpowers:executing-plans pour exécuter ce plan tâche par tâche. Les étapes utilisent la syntaxe case à cocher (`- [ ]`).
 
-**Objectif :** transformer les 28 objets « processus métier » actuels (copies 1:1 des étapes des tableaux CAESN) en 28 objets `etape-valeur` (`ev-01…28`) et créer 12 vrais objets `processus-metier` (`prc-01…12`, 3 par flux de valeur) qui les regroupent, en réaffectant les 13 composants applicatifs au niveau processus.
+**Objectif :** transformer les 28 objets « processus métier » actuels (copies 1:1 des étapes des tableaux CAESN) en 28 objets `etape-valeur` (`ev-01…28`) et créer 12 vrais objets `processus-metier` (`PRC-01…12`, 3 par flux de valeur) qui les regroupent, en réaffectant les 13 composants applicatifs au niveau processus.
 
 **Architecture :** le référentiel reste la source de vérité ; les enveloppes (`00_caesn/…`) en sont la projection générée. Le type `processus-metier` devient une couche de régroupement au-dessus des étapes (rattachement Per-VS, contenu strictement dérivé). Deux commits atomiques chacun vert : (1) renommage mécanique `prc→ev` + ré-ancrage des blocs « Étapes de valeur » ; (2) création des 12 processus + bloc « Processus métier » + réaffectation sémantique des composants.
 
@@ -116,8 +116,8 @@ grep -l "prc-" referentiel/composants/*.md || echo "aucune référence prc- rest
 ```bash
 python3 - <<'EOF'
 import re
-envs = {'vs-01-access-care.md': (1,7), 'vs-02-risk-protection.md': (8,14),
-        'vs-03-financial-protection.md': (15,21), 'vs-04-system-steering.md': (22,28)}
+envs = {'VS-01-access-care.md': (1,7), 'VS-02-risk-protection.md': (8,14),
+        'VS-03-financial-protection.md': (15,21), 'VS-04-system-steering.md': (22,28)}
 for env,(a,b) in envs.items():
     f = f'00_caesn/01_value-streams/{env}'
     s = open(f).read()
@@ -195,7 +195,7 @@ Créer chacun des fichiers suivants avec exactement ce contenu.
 `referentiel/processus/prc-01.md` (owner : Direction des soins) :
 ```markdown
 ---
-id: prc-01
+id: PRC-01
 type: processus-metier
 niveau: "1"
 title: PRC-01 — Accès, orientation et admission du patient
@@ -205,9 +205,9 @@ version: "0.0.1"
 source: 00_caesn/01_value-streams/vs-01-access-care.md
 maps_to: []
 implements: []
-applies_to: ["cap-01", "cap-02", "cap-03", "cap-04", "cap-09", "cap-10", "cap-11", "cap-13", "cap-14", "cap-15", "pp-01", "pp-02", "pp-04", "pp-05", "pp-06"]
-related: ["ev-01", "ev-02", "vs-01"]
-tags: ["caesn", "niveau-1", "processus-metier", "prc-01"]
+applies_to: ["CAP-01", "CAP-02", "CAP-03", "CAP-04", "CAP-09", "CAP-10", "CAP-11", "CAP-13", "CAP-14", "CAP-15", "PP-01", "PP-02", "PP-04", "PP-05", "PP-06"]
+related: ["ev-01", "ev-02", "VS-01"]
+tags: ["caesn", "niveau-1", "processus-metier", "PRC-01"]
 ---
 # PRC-01 — Accès, orientation et admission du patient
 
@@ -232,7 +232,7 @@ Taux de recours aux soins, délai moyen d'accès à une formation sanitaire, tau
 `referentiel/processus/prc-02.md` (owner : Direction des soins) :
 ```markdown
 ---
-id: prc-02
+id: PRC-02
 type: processus-metier
 niveau: "1"
 title: PRC-02 — Prestation des soins cliniques
@@ -242,9 +242,9 @@ version: "0.0.1"
 source: 00_caesn/01_value-streams/vs-01-access-care.md
 maps_to: []
 implements: []
-applies_to: ["cap-01", "cap-02", "cap-03", "cap-04", "cap-09", "cap-10", "cap-11", "cap-13", "cap-14", "cap-15", "pp-01", "pp-02", "pp-04", "pp-05", "pp-06"]
-related: ["ev-03", "ev-04", "ev-05", "vs-01"]
-tags: ["caesn", "niveau-1", "processus-metier", "prc-02"]
+applies_to: ["CAP-01", "CAP-02", "CAP-03", "CAP-04", "CAP-09", "CAP-10", "CAP-11", "CAP-13", "CAP-14", "CAP-15", "PP-01", "PP-02", "PP-04", "PP-05", "PP-06"]
+related: ["ev-03", "ev-04", "ev-05", "VS-01"]
+tags: ["caesn", "niveau-1", "processus-metier", "PRC-02"]
 ---
 # PRC-02 — Prestation des soins cliniques
 
@@ -270,7 +270,7 @@ Taux de consultations avec diagnostic documenté, taux de disponibilité des mé
 `referentiel/processus/prc-03.md` (owner : Direction des soins) :
 ```markdown
 ---
-id: prc-03
+id: PRC-03
 type: processus-metier
 niveau: "1"
 title: PRC-03 — Continuité, suivi et qualité des soins
@@ -280,9 +280,9 @@ version: "0.0.1"
 source: 00_caesn/01_value-streams/vs-01-access-care.md
 maps_to: []
 implements: []
-applies_to: ["cap-01", "cap-02", "cap-03", "cap-04", "cap-09", "cap-10", "cap-11", "cap-13", "cap-14", "cap-15", "pp-01", "pp-02", "pp-04", "pp-05", "pp-06"]
-related: ["ev-06", "ev-07", "vs-01"]
-tags: ["caesn", "niveau-1", "processus-metier", "prc-03"]
+applies_to: ["CAP-01", "CAP-02", "CAP-03", "CAP-04", "CAP-09", "CAP-10", "CAP-11", "CAP-13", "CAP-14", "CAP-15", "PP-01", "PP-02", "PP-04", "PP-05", "PP-06"]
+related: ["ev-06", "ev-07", "VS-01"]
+tags: ["caesn", "niveau-1", "processus-metier", "PRC-03"]
 ---
 # PRC-03 — Continuité, suivi et qualité des soins
 
@@ -307,7 +307,7 @@ Taux de patients perdus de vue, taux d'observance thérapeutique, proportion de 
 `referentiel/processus/prc-04.md` (owner : Direction de la protection sociale et de la promotion de la santé) :
 ```markdown
 ---
-id: prc-04
+id: PRC-04
 type: processus-metier
 niveau: "1"
 title: PRC-04 — Veille, prévention et surveillance sanitaire
@@ -317,9 +317,9 @@ version: "0.0.1"
 source: 00_caesn/01_value-streams/vs-02-risk-protection.md
 maps_to: []
 implements: []
-applies_to: ["cap-04", "cap-05", "cap-06", "cap-09", "cap-10", "cap-11", "cap-13", "cap-14", "cap-15", "pp-03", "pp-04", "pp-07", "pp-08"]
-related: ["ev-08", "ev-09", "vs-02"]
-tags: ["caesn", "niveau-1", "processus-metier", "prc-04"]
+applies_to: ["CAP-04", "CAP-05", "CAP-06", "CAP-09", "CAP-10", "CAP-11", "CAP-13", "CAP-14", "CAP-15", "PP-03", "PP-04", "PP-07", "PP-08"]
+related: ["ev-08", "ev-09", "VS-02"]
+tags: ["caesn", "niveau-1", "processus-metier", "PRC-04"]
 ---
 # PRC-04 — Veille, prévention et surveillance sanitaire
 
@@ -344,7 +344,7 @@ Couverture des campagnes de prévention, taux de vaccination, complétude et pro
 `referentiel/processus/prc-05.md` (owner : Direction de la protection sociale et de la promotion de la santé) :
 ```markdown
 ---
-id: prc-05
+id: PRC-05
 type: processus-metier
 niveau: "1"
 title: PRC-05 — Alerte, investigation et riposte
@@ -354,9 +354,9 @@ version: "0.0.1"
 source: 00_caesn/01_value-streams/vs-02-risk-protection.md
 maps_to: []
 implements: []
-applies_to: ["cap-04", "cap-05", "cap-06", "cap-09", "cap-10", "cap-11", "cap-13", "cap-14", "cap-15", "pp-03", "pp-04", "pp-07", "pp-08"]
-related: ["ev-10", "ev-11", "ev-12", "vs-02"]
-tags: ["caesn", "niveau-1", "processus-metier", "prc-05"]
+applies_to: ["CAP-04", "CAP-05", "CAP-06", "CAP-09", "CAP-10", "CAP-11", "CAP-13", "CAP-14", "CAP-15", "PP-03", "PP-04", "PP-07", "PP-08"]
+related: ["ev-10", "ev-11", "ev-12", "VS-02"]
+tags: ["caesn", "niveau-1", "processus-metier", "PRC-05"]
 ---
 # PRC-05 — Alerte, investigation et riposte
 
@@ -382,7 +382,7 @@ Délai moyen de notification d'une alerte, délai d'investigation, proportion d'
 `referentiel/processus/prc-06.md` (owner : Direction de la protection sociale et de la promotion de la santé) :
 ```markdown
 ---
-id: prc-06
+id: PRC-06
 type: processus-metier
 niveau: "1"
 title: PRC-06 — Clôture et capitalisation des épisodes
@@ -392,9 +392,9 @@ version: "0.0.1"
 source: 00_caesn/01_value-streams/vs-02-risk-protection.md
 maps_to: []
 implements: []
-applies_to: ["cap-04", "cap-05", "cap-06", "cap-09", "cap-10", "cap-11", "cap-13", "cap-14", "cap-15", "pp-03", "pp-04", "pp-07", "pp-08"]
-related: ["ev-13", "ev-14", "vs-02"]
-tags: ["caesn", "niveau-1", "processus-metier", "prc-06"]
+applies_to: ["CAP-04", "CAP-05", "CAP-06", "CAP-09", "CAP-10", "CAP-11", "CAP-13", "CAP-14", "CAP-15", "PP-03", "PP-04", "PP-07", "PP-08"]
+related: ["ev-13", "ev-14", "VS-02"]
+tags: ["caesn", "niveau-1", "processus-metier", "PRC-06"]
 ---
 # PRC-06 — Clôture et capitalisation des épisodes
 
@@ -419,7 +419,7 @@ Taux de létalité, durée de l'épisode épidémique, nombre de revues après a
 `referentiel/processus/prc-07.md` (owner : Direction de la couverture santé universelle) :
 ```markdown
 ---
-id: prc-07
+id: PRC-07
 type: processus-metier
 niveau: "1"
 title: PRC-07 — Identification et droits des bénéficiaires
@@ -429,9 +429,9 @@ version: "0.0.1"
 source: 00_caesn/01_value-streams/vs-03-financial-protection.md
 maps_to: []
 implements: []
-applies_to: ["cap-07", "cap-08", "cap-12", "cap-13", "cap-14", "cap-15", "cap-16", "pp-02", "pp-03", "pp-06"]
-related: ["ev-15", "ev-16", "vs-03"]
-tags: ["caesn", "niveau-1", "processus-metier", "prc-07"]
+applies_to: ["CAP-07", "CAP-08", "CAP-12", "CAP-13", "CAP-14", "CAP-15", "CAP-16", "PP-02", "PP-03", "PP-06"]
+related: ["ev-15", "ev-16", "VS-03"]
+tags: ["caesn", "niveau-1", "processus-metier", "PRC-07"]
 ---
 # PRC-07 — Identification et droits des bénéficiaires
 
@@ -456,7 +456,7 @@ Taux de couverture du registre, taux d'exclusion estimé, proportion de formatio
 `referentiel/processus/prc-08.md` (owner : Direction de la couverture santé universelle) :
 ```markdown
 ---
-id: prc-08
+id: PRC-08
 type: processus-metier
 niveau: "1"
 title: PRC-08 — Financement et exemption au point de service
@@ -466,9 +466,9 @@ version: "0.0.1"
 source: 00_caesn/01_value-streams/vs-03-financial-protection.md
 maps_to: []
 implements: []
-applies_to: ["cap-07", "cap-08", "cap-12", "cap-13", "cap-14", "cap-15", "cap-16", "pp-02", "pp-03", "pp-06"]
-related: ["ev-17", "ev-18", "vs-03"]
-tags: ["caesn", "niveau-1", "processus-metier", "prc-08"]
+applies_to: ["CAP-07", "CAP-08", "CAP-12", "CAP-13", "CAP-14", "CAP-15", "CAP-16", "PP-02", "PP-03", "PP-06"]
+related: ["ev-17", "ev-18", "VS-03"]
+tags: ["caesn", "niveau-1", "processus-metier", "PRC-08"]
 ---
 # PRC-08 — Financement et exemption au point de service
 
@@ -493,7 +493,7 @@ Taux d'exécution budgétaire, part du budget santé allouée à la protection f
 `referentiel/processus/prc-09.md` (owner : Direction de la couverture santé universelle) :
 ```markdown
 ---
-id: prc-09
+id: PRC-09
 type: processus-metier
 niveau: "1"
 title: PRC-09 — Remboursement et régulation des mécanismes
@@ -503,9 +503,9 @@ version: "0.0.1"
 source: 00_caesn/01_value-streams/vs-03-financial-protection.md
 maps_to: []
 implements: []
-applies_to: ["cap-07", "cap-08", "cap-12", "cap-13", "cap-14", "cap-15", "cap-16", "pp-02", "pp-03", "pp-06"]
-related: ["ev-19", "ev-20", "ev-21", "vs-03"]
-tags: ["caesn", "niveau-1", "processus-metier", "prc-09"]
+applies_to: ["CAP-07", "CAP-08", "CAP-12", "CAP-13", "CAP-14", "CAP-15", "CAP-16", "PP-02", "PP-03", "PP-06"]
+related: ["ev-19", "ev-20", "ev-21", "VS-03"]
+tags: ["caesn", "niveau-1", "processus-metier", "PRC-09"]
 ---
 # PRC-09 — Remboursement et régulation des mécanismes
 
@@ -531,7 +531,7 @@ Taux de factures rejetées, délai de validation des factures, délai moyen de r
 `referentiel/processus/prc-10.md` (owner : Secrétariat Général) :
 ```markdown
 ---
-id: prc-10
+id: PRC-10
 type: processus-metier
 niveau: "1"
 title: PRC-10 — Planification et allocation des ressources
@@ -541,9 +541,9 @@ version: "0.0.1"
 source: 00_caesn/01_value-streams/vs-04-system-steering.md
 maps_to: []
 implements: []
-applies_to: ["cap-03", "cap-08", "cap-09", "cap-12", "cap-13", "cap-14", "cap-15", "cap-16", "pp-03", "pp-07", "pp-08", "pp-09", "pp-10"]
-related: ["ev-22", "ev-23", "ev-24", "vs-04"]
-tags: ["caesn", "niveau-1", "processus-metier", "prc-10"]
+applies_to: ["CAP-03", "CAP-08", "CAP-09", "CAP-12", "CAP-13", "CAP-14", "CAP-15", "CAP-16", "PP-03", "PP-07", "PP-08", "PP-09", "PP-10"]
+related: ["ev-22", "ev-23", "ev-24", "VS-04"]
+tags: ["caesn", "niveau-1", "processus-metier", "PRC-10"]
 ---
 # PRC-10 — Planification et allocation des ressources
 
@@ -569,7 +569,7 @@ Proportion de plans opérationnels alignés sur le PDSS et la SNSD, taux d'exéc
 `referentiel/processus/prc-11.md` (owner : Secrétariat Général) :
 ```markdown
 ---
-id: prc-11
+id: PRC-11
 type: processus-metier
 niveau: "1"
 title: PRC-11 — Suivi et pilotage de la performance
@@ -579,9 +579,9 @@ version: "0.0.1"
 source: 00_caesn/01_value-streams/vs-04-system-steering.md
 maps_to: []
 implements: []
-applies_to: ["cap-03", "cap-08", "cap-09", "cap-12", "cap-13", "cap-14", "cap-15", "cap-16", "pp-03", "pp-07", "pp-08", "pp-09", "pp-10"]
-related: ["ev-25", "ev-26", "vs-04"]
-tags: ["caesn", "niveau-1", "processus-metier", "prc-11"]
+applies_to: ["CAP-03", "CAP-08", "CAP-09", "CAP-12", "CAP-13", "CAP-14", "CAP-15", "CAP-16", "PP-03", "PP-07", "PP-08", "PP-09", "PP-10"]
+related: ["ev-25", "ev-26", "VS-04"]
+tags: ["caesn", "niveau-1", "processus-metier", "PRC-11"]
 ---
 # PRC-11 — Suivi et pilotage de la performance
 
@@ -606,7 +606,7 @@ Complétude et promptitude des rapports, taux d'utilisation des tableaux de bord
 `referentiel/processus/prc-12.md` (owner : Secrétariat Général) :
 ```markdown
 ---
-id: prc-12
+id: PRC-12
 type: processus-metier
 niveau: "1"
 title: PRC-12 — Redevabilité et amélioration continue
@@ -616,9 +616,9 @@ version: "0.0.1"
 source: 00_caesn/01_value-streams/vs-04-system-steering.md
 maps_to: []
 implements: []
-applies_to: ["cap-03", "cap-08", "cap-09", "cap-12", "cap-13", "cap-14", "cap-15", "cap-16", "pp-03", "pp-07", "pp-08", "pp-09", "pp-10"]
-related: ["ev-27", "ev-28", "vs-04"]
-tags: ["caesn", "niveau-1", "processus-metier", "prc-12"]
+applies_to: ["CAP-03", "CAP-08", "CAP-09", "CAP-12", "CAP-13", "CAP-14", "CAP-15", "CAP-16", "PP-03", "PP-07", "PP-08", "PP-09", "PP-10"]
+related: ["ev-27", "ev-28", "VS-04"]
+tags: ["caesn", "niveau-1", "processus-metier", "PRC-12"]
 ---
 # PRC-12 — Redevabilité et amélioration continue
 
@@ -660,10 +660,10 @@ Insérer après le `<!-- END:GENERATED -->` du bloc « Étapes de valeur » de c
 ```
 
 Listes `source=` par enveloppe :
-- `vs-01-access-care.md` : `prc-01.md,referentiel/processus/prc-02.md,referentiel/processus/prc-03.md`
-- `vs-02-risk-protection.md` : `referentiel/processus/prc-04.md,referentiel/processus/prc-05.md,referentiel/processus/prc-06.md`
-- `vs-03-financial-protection.md` : `referentiel/processus/prc-07.md,referentiel/processus/prc-08.md,referentiel/processus/prc-09.md`
-- `vs-04-system-steering.md` : `referentiel/processus/prc-10.md,referentiel/processus/prc-11.md,referentiel/processus/prc-12.md`
+- `VS-01-access-care.md` : `prc-01.md,referentiel/processus/prc-02.md,referentiel/processus/prc-03.md`
+- `VS-02-risk-protection.md` : `referentiel/processus/prc-04.md,referentiel/processus/prc-05.md,referentiel/processus/prc-06.md`
+- `VS-03-financial-protection.md` : `referentiel/processus/prc-07.md,referentiel/processus/prc-08.md,referentiel/processus/prc-09.md`
+- `VS-04-system-steering.md` : `referentiel/processus/prc-10.md,referentiel/processus/prc-11.md,referentiel/processus/prc-12.md`
 
 - [ ] **Step 4 : Réaffecter les composants au niveau processus (table §8 du design)**
 
@@ -671,19 +671,19 @@ Listes `source=` par enveloppe :
 python3 - <<'EOF'
 import re
 mapping = {
-    'cmp-01': ['prc-01','prc-02','prc-03'],
-    'cmp-02': ['prc-01','prc-02'],
-    'cmp-03': ['prc-01','prc-03','prc-04'],
-    'cmp-04': ['prc-04','prc-05','prc-06'],
-    'cmp-05': ['prc-04'],
-    'cmp-06': ['prc-07','prc-08'],
-    'cmp-07': ['prc-09'],
-    'cmp-08': ['prc-02','prc-05','prc-08'],
-    'cmp-09': ['prc-10','prc-11'],
-    'cmp-10': ['prc-03','prc-06','prc-09','prc-11','prc-12'],
-    'cmp-11': ['prc-10','prc-12'],
-    'cmp-12': ['prc-01','prc-07','prc-10'],
-    'cmp-13': ['prc-01','prc-05','prc-09'],
+    'CMP-01': ['PRC-01','PRC-02','PRC-03'],
+    'CMP-02': ['PRC-01','PRC-02'],
+    'CMP-03': ['PRC-01','PRC-03','PRC-04'],
+    'CMP-04': ['PRC-04','PRC-05','PRC-06'],
+    'CMP-05': ['PRC-04'],
+    'CMP-06': ['PRC-07','PRC-08'],
+    'CMP-07': ['PRC-09'],
+    'CMP-08': ['PRC-02','PRC-05','PRC-08'],
+    'CMP-09': ['PRC-10','PRC-11'],
+    'CMP-10': ['PRC-03','PRC-06','PRC-09','PRC-11','PRC-12'],
+    'CMP-11': ['PRC-10','PRC-12'],
+    'CMP-12': ['PRC-01','PRC-07','PRC-10'],
+    'CMP-13': ['PRC-01','PRC-05','PRC-09'],
 }
 for cmp, procs in mapping.items():
     f = f'referentiel/composants/{cmp}.md'
@@ -709,62 +709,62 @@ Insérer juste avant le commentaire `# composants applicatifs (13)` :
 
 ```yaml
 # processus métier (12)
-- id: prc-01
+- id: PRC-01
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-01.md
   status: draft
-- id: prc-02
+- id: PRC-02
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-02.md
   status: draft
-- id: prc-03
+- id: PRC-03
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-03.md
   status: draft
-- id: prc-04
+- id: PRC-04
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-04.md
   status: draft
-- id: prc-05
+- id: PRC-05
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-05.md
   status: draft
-- id: prc-06
+- id: PRC-06
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-06.md
   status: draft
-- id: prc-07
+- id: PRC-07
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-07.md
   status: draft
-- id: prc-08
+- id: PRC-08
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-08.md
   status: draft
-- id: prc-09
+- id: PRC-09
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-09.md
   status: draft
-- id: prc-10
+- id: PRC-10
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-10.md
   status: draft
-- id: prc-11
+- id: PRC-11
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-11.md
   status: draft
-- id: prc-12
+- id: PRC-12
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-12.md
@@ -783,7 +783,7 @@ Ajouter en fin de fichier, après le §11 :
 **Constat :** les 28 objets créés en §11 sous le type `processus-metier` reproduisaient 1:1 les étapes des tables CAESN : le type était utilisé à contresens (une étape n'est pas un processus) et les 13 composants pointaient vers des maillons isolés.
 
 **Correctif appliqué (✓) — reclassement + couche de régroupement :**
-- **28 étapes de valeur** (`referentiel/etapes-valeur/ev-01…28.md`) — reclassement formel des ex-`prc-01…28` (id/type/title/tags, corps inchangé) ; `source:` = enveloppe VS-XX, `applies_to` granulaire conservé, `related` = flux.
+- **28 étapes de valeur** (`referentiel/etapes-valeur/ev-01…28.md`) — reclassement formel des ex-`PRC-01…28` (id/type/title/tags, corps inchangé) ; `source:` = enveloppe VS-XX, `applies_to` granulaire conservé, `related` = flux.
 - **12 processus métier** (`referentiel/processus/prc-01…12.md`) — 3 par flux de valeur (VS-01…04), contenus **strictement dérivés** des étapes (Objectif de synthèse, Étapes couvertes, Acteurs et Indicateurs = unions) ; `applies_to` = héritage intégral de la VS, `related` = étapes couvertes + flux.
 - **13 composants** réaffectés au niveau processus (`applies_to` : étapes → processus couvrants, transformation mécanique depuis le découpage) — un composant soutient désormais des processus complets.
 - **Enveloppes** VS-01…04 : deux blocs catalogue distincts « Étapes de valeur » et « Processus métier ».
@@ -844,4 +844,4 @@ git commit -m "feat: créer les 12 processus métier et rattacher les composants
 
 **2. Scan des placeholders :** aucune étape « TBD/TODO » ; chaque script et chaque contenu de fichier est fourni intégralement.
 
-**3. Cohérence des types/noms :** `ev-XX` (etapes-valeur) utilisés de façon cohérente dans Task 1 ; `prc-01…12` (processus-metier) cohérents dans Task 2 ; le mapping cmp (§8) est identique au design ; la table des `applies_to` intégraux correspond aux `applies_to` de `referentiel/flux-valeur/vs-0X.md`.
+**3. Cohérence des types/noms :** `ev-XX` (etapes-valeur) utilisés de façon cohérente dans Task 1 ; `PRC-01…12` (processus-metier) cohérents dans Task 2 ; le mapping cmp (§8) est identique au design ; la table des `applies_to` intégraux correspond aux `applies_to` de `referentiel/flux-valeur/vs-0X.md`.

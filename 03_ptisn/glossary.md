@@ -1,4 +1,5 @@
 ---
+
 title: Glossaire du PTISN (niveau 4)
 id: ptisn-glossary
 domain: 03_ptisn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: Équipes techniques des initiatives
-tags: [ptisn, glossaire, terminologie, niveau-4]
+tags: ["ptisn", "glossaire", "terminologie", "niveau-4"]
 ---
 
 # Glossaire du PTISN (niveau 4)

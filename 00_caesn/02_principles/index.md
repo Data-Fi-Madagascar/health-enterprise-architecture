@@ -1,4 +1,5 @@
 ---
+
 title: Principes d'architecture
 id: principles
 domain: 02_principles
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Comité National d'Architecture Santé Numérique
-tags: [principes, gouvernance]
+tags: ["principes", "gouvernance"]
 ---
 
 # Principes d'architecture

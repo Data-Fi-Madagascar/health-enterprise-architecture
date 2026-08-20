@@ -1,4 +1,5 @@
 ---
+
 title: Guide de lecture du CNISN (niveau 2)
 id: cnisn-reading-guide
 domain: 01_cnisn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-18
 owner: DEPSI
-tags: [cnisn, lecture, niveau-2, guide]
+tags: ["cnisn", "lecture", "niveau-2", "guide"]
 ---
 
 # Guide de lecture du CNISN (niveau 2)

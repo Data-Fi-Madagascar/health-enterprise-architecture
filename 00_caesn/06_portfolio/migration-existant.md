@@ -1,4 +1,5 @@
 ---
+
 title: "Plan de migration : De l'existant au futur état"
 id: caesn-migration
 domain: 06_portfolio
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
-tags: [caesn, portfolio, migration, transition, niveau-1]
+tags: ["caesn", "portfolio", "migration", "transition", "niveau-1"]
 ---
 
 # Plan de migration : De l'existant au futur état

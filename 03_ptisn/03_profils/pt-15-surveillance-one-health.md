@@ -1,5 +1,5 @@
 ---
-id: pt-15
+id: PT-15
 domain: 03_ptisn
 type: profil
 niveau: "4"
@@ -8,7 +8,7 @@ status: draft
 owner: DEPSI
 version: "1.0.0"
 source: 03_ptisn/03_profils/pt-15-surveillance-one-health.md
-maps_to: ["cap-int-14", "cap-18", "cap-05", "art-11", "art-0", "art-4d", "art-8b", "cmp-02", "cmp-04", "cmp-06"]
+maps_to: ["CAP-INT-14", "CAP-18", "CAP-05", "ART-11", "ART-0", "ART-4D", "ART-8B", "CMP-02", "CMP-04", "CMP-06"]
 tags: ["ptisn", "niveau-4", "profil", "one-health", "surveillance"]
 ---
 
@@ -37,22 +37,22 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 | Standard | Usage | Version |
 |----------|-------|---------|
 | HL7 FHIR | Échange de données cliniques et de surveillance | R4 |
-| IHE mADX | Données agrégées de surveillance | : |
-| OIE-WAHIS | Données vétérinaires internationales | : |
-| GBIF | Données de biodiversité et de distribution des espèces | : |
-| WMO BUFR | Données climatiques et météorologiques | : |
+| IHE mADX | Données agrégées de surveillance | — |
+| OIE-WAHIS | Données vétérinaires internationales | — |
+| GBIF | Données de biodiversité et de distribution des espèces | — |
+| WMO BUFR | Données climatiques et météorologiques | — |
 
 ### Identification
 
 | Standard | Usage | Version |
 |----------|-------|---------|
-| OIE Code pays | Identification des pays pour les flux vétérinaires | : |
-| ISO 3166-1 | Codes pays internationaux | : |
+| OIE Code pays | Identification des pays pour les flux vétérinaires | — |
+| ISO 3166-1 | Codes pays internationaux | — |
 | FHIR Organization | Identification des organisations multi-sectorielles | R4 |
 
 ## Interfaces d'échange
 
-### Interface 1 : Collecte vétérinaire (OIE-WAHIS)
+### Interface 1 — Collecte vétérinaire (OIE-WAHIS)
 
 | Propriété | Valeur |
 |-----------|--------|
@@ -62,7 +62,7 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 | **Protocole** | REST (synchrone) |
 | **Fréquence** | Hebdomadaire + alertes temps réel |
 
-### Interface 2 : Données environnementales (GBIF)
+### Interface 2 — Données environnementales (GBIF)
 
 | Propriété | Valeur |
 |-----------|--------|
@@ -72,7 +72,7 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 | **Protocole** | REST |
 | **Fréquence** | Mensuelle |
 
-### Interface 3 : Données climatiques (WMO)
+### Interface 3 — Données climatiques (WMO)
 
 | Propriété | Valeur |
 |-----------|--------|
@@ -82,7 +82,7 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 | **Protocole** | REST / FTP |
 | **Fréquence** | Quotidienne |
 
-### Interface 4 : Alerte One Health
+### Interface 4 — Alerte One Health
 
 | Propriété | Valeur |
 |-----------|--------|

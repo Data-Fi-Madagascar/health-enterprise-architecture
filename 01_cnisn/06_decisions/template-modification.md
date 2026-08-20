@@ -1,4 +1,5 @@
 ---
+
 title: "Template : Demande de modification architecturale"
 id: template-modification
 domain: 06_decisions
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
-tags: [template, modification, changement, gouvernance, niveau-1]
+tags: ["template", "modification", "changement", "gouvernance", "niveau-1"]
 ---
 
 # Template : Demande de modification architecturale

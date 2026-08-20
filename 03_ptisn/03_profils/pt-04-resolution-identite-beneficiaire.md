@@ -1,12 +1,12 @@
 ---
 title: PT-04 : Profil technique national
-id: ptisn-pt-04-resolution-identite-beneficiaire
+id: ptisn-PT-04-resolution-identite-beneficiaire
 domain: 03_ptisn
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
-tags: ["ptisn", "niveau-4", "profils", "pt-04"]
+tags: ["ptisn", "niveau-4", "profils", "PT-04"]
 ---
 
 # PT-04 : Profil technique national
@@ -16,14 +16,14 @@ tags: ["ptisn", "niveau-4", "profils", "pt-04"]
 
 ## 1. Capacité CNISN
 
-**CAP-INT-01 : Résolution d'identité du bénéficiaire**
+**CAP-INT-01 — Résolution d'identité du bénéficiaire**
 
 ## 2. Chapitres ART applicables
 
-- ART-4 : référentiels ;
-- ART-4a : Résolution d'identité ;
-- ART-4b : bases d'autorisation ;
-- ART-7 : sécurité.
+- ART-4 — référentiels ;
+- ART-4a — Résolution d'identité ;
+- ART-4b — bases d'autorisation ;
+- ART-7 — sécurité.
 
 ## 3. Service national
 
@@ -31,16 +31,16 @@ tags: ["ptisn", "niveau-4", "profils", "pt-04"]
 
 ## 4. Responsabilités
 
-Le service doit permettre :
+Le service doit permettre :
 
-- la recherche démographique ;
-- la résolution des identifiants ;
-- le rapprochement de dossiers ;
-- la gestion des identités temporaires ;
-- le lien avec l'identité fondationnelle ;
-- la détection des doublons ;
-- la fusion contrôlée ;
-- la séparation après erreur ;
+- la recherche démographique ;
+- la résolution des identifiants ;
+- le rapprochement de dossiers ;
+- la gestion des identités temporaires ;
+- le lien avec l'identité fondationnelle ;
+- la détection des doublons ;
+- la fusion contrôlée ;
+- la séparation après erreur ;
 - la conservation de la provenance.
 
 ## 5. Profils cibles
@@ -68,21 +68,21 @@ PIXm fournit des transactions REST permettant de gérer et rechercher les identi
 
 ## 7. Exigences nationales complémentaires
 
-Les profils PIXm et PDQm ne définissent pas à eux seuls :
+Les profils PIXm et PDQm ne définissent pas à eux seuls :
 
-- les seuils de rapprochement ;
-- la stratégie de golden record ;
-- les procédures de fusion ;
-- les contrôles humains ;
-- le traitement des identités temporaires ;
-- le lien juridique avec la CNIE ;
+- les seuils de rapprochement ;
+- la stratégie de golden record ;
+- les procédures de fusion ;
+- les contrôles humains ;
+- le traitement des identités temporaires ;
+- le lien juridique avec la CNIE ;
 - la gestion d'un faux rapprochement.
 
 Ces règles doivent être définies dans un profil national d'identité santé.
 
 ## 8. Séparation des identités
 
-Le PTISN distingue :
+Le PTISN distingue :
 
 ```plantuml
 @startuml

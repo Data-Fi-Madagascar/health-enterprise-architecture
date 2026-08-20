@@ -1,4 +1,5 @@
 ---
+
 title: Gouvernance, qualité et protection des données
 id: data-governance
 domain: 04_data
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Cellule du Système d'Information Sanitaire
-tags: [données, gouvernance, qualité, protection]
+tags: ["données", "gouvernance", "qualité", "protection"]
 ---
 
 # Gouvernance, qualité et protection des données

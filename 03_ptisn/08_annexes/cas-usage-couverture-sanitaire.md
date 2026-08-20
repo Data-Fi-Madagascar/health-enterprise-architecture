@@ -6,7 +6,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
-tags: ["ptisn", "niveau-4", "cas-usage", "couverture", "protection-financiere", "exemption", "vs-03"]
+tags: ["ptisn", "niveau-4", "cas-usage", "couverture", "protection-financiere", "exemption", "VS-03"]
 ---
 
 # Cas d'usage : Couverture sanitaire et protection financière (VS-03)
@@ -45,7 +45,7 @@ La protection financière est un **cas d'usage métier** qui consomme plusieurs 
 
 ## Scénario : Cycle complet de protection financière
 
-### Phase 1 : Identification du bénéficiaire (EV-15)
+### Phase 1 : Identification du bénéficiaire (VS-03-01)
 
 La première phase consiste à enregistrer le bénéficiaire et à lui attribuer un identifiant unique national. Le processus débute au niveau du Fokontany ou de la Commune, où la fiche bénéficiaire : comprenant le NIN, le nom, l'âge et la commune : est transmise à l'application terrain. Cette dernière soumet les informations au Pôle National d'Identité (INP) pour vérification d'unicité. Après validation, l'INP attribue ou confirme le NIN, et une carte bénéficiaire est délivrée au demandeur.
 
@@ -74,7 +74,7 @@ Les profils mobilisés lors de cette phase sont le PT-04 (résolution d'identit�
 | **PT-02** | Médiation (données communautaires → FHIR) |
 | **PT-12** | Traçabilité de l'enregistrement |
 
-### Phase 2 : Vérification des droits au point de service (EV-16/EV-18)
+### Phase 2 : Vérification des droits au point de service (VS-03-02/vs-03-04)
 
 La phase de vérification des droits intervient au moment où le bénéficiaire se présente auprès d'un agent de santé. Ce dernier interroge le registre d'éligibilité pour confirmer que le patient bénéficie d'un droit à l'exemption : qu'il relève de la CSU, de la BPC, de l'AMM ou d'un autre mécanisme. Une fois le statut d'éligibilité confirmé, l'agent de santé dispense les soins sans paiement.
 
@@ -106,7 +106,7 @@ Les profils mobilisés sont le PT-04 (résolution d'identité pour la recherche 
 | **PT-02** | Médiation (vérification éligibilité) |
 | **PT-12** | Audit de la vérification (traçabilité) |
 
-### Phase 3 : Facturation et soumission (EV-19)
+### Phase 3 : Facturation et soumission (VS-03-05)
 
 La phase de facturation consiste à documenter les soins dispensés et à soumettre la facture au mécanisme de financement. La formation sanitaire émet une facture structurée au format FHIR `Claim`, qui est transmise via la médiation (PT-02) au fonds de remboursement. La médiation assure la validation et la normalisation de la facture avant sa transmission. Le fonds de remboursement émet un accusé de réception, et la formation sanitaire reçoit une confirmation de prise en charge.
 
@@ -134,7 +134,7 @@ Les profils mobilisés sont le PT-01 (échange interinstitutionnel pour la trans
 | **PT-02** | Médiation (normalisation factures) |
 | **PT-12** | Audit trail de la facturation |
 
-### Phase 4 : Remboursement (EV-20)
+### Phase 4 : Remboursement (VS-03-06)
 
 La phase de remboursement vise à indemniser la formation sanitaire dans les délais convenus. Le fonds de remboursement initie l'instruction de la facture, laquelle est transmise via la médiation pour vérification de conformité. Après validation, le paiement est validé et notifié à la formation sanitaire, qui reçoit la confirmation du virement.
 
@@ -154,7 +154,7 @@ Fonds de remboursement     Médiation (PT-02)         Formation sanitaire
         │──────────────────────▶│─────────────────────────▶│
 ```
 
-### Phase 5 : Audit et contrôle (EV-21)
+### Phase 5 : Audit et contrôle (VS-03-07)
 
 La phase d'audit et de contrôle a pour objectif de détecter les fraudes, d'ajuster les mécanismes de financement et d'améliorer l'équité du système. Les données de facturation agrégées sont extraites de l'entrepôt (CMP-03) et transmises au moteur analytique (CMP-04), qui réalise une analyse des anomalies et des patterns suspects. Les résultats alimentent un rapport d'audit transmis à l'inspection pour investigation.
 
@@ -185,11 +185,11 @@ Les profils mobilisés sont le PT-08 (échange de données agrégées pour l'ana
 
 | Étape | PT-01 | PT-02 | PT-04 | PT-08 | PT-09 | PT-10 | PT-11 | PT-12 |
 |-------|-------|-------|-------|-------|-------|-------|-------|-------|
-| Identification (EV-15) | : | ● | ● | : | : | : | : | ● |
-| Vérification droits (EV-18) | : | ● | ● | : | : | ● | ● | ● |
-| Facturation (EV-19) | ● | ● | : | : | : | : | : | ● |
-| Remboursement (EV-20) | : | ● | : | : | : | : | : | ● |
-| Audit (EV-21) | : | : | : | ● | ● | ● | : | ● |
+| Identification (VS-03-01) | : | ● | ● | : | : | : | : | ● |
+| Vérification droits (VS-03-04) | : | ● | ● | : | : | ● | ● | ● |
+| Facturation (VS-03-05) | ● | ● | : | : | : | : | : | ● |
+| Remboursement (VS-03-06) | : | ● | : | : | : | : | : | ● |
+| Audit (VS-03-07) | : | : | : | ● | ● | ● | : | ● |
 
 ## Exigences transversales
 

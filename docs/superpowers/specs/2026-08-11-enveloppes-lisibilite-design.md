@@ -35,7 +35,7 @@ Rendre chaque enveloppe autoportante et lisible sans réintroduire de duplicatio
 
 **51 fichiers distincts touchés**, couvrant les **150 objets** du référentiel — chaque objet est publié exactement une fois.
 
-Décompte : 35 monographies + 14 catalogues + 2 fichiers de tableau. `02_artsn/03_chapitres/index.md` relève à la fois du mode catalogue (il est le `source:` de `art-10` et `art-11`) et du mode tableau (il indexe les 20 chapitres) ; il n'est compté qu'une fois.
+Décompte : 35 monographies + 14 catalogues + 2 fichiers de tableau. `02_artsn/03_chapitres/index.md` relève à la fois du mode catalogue (il est le `source:` de `ART-10` et `ART-11`) et du mode tableau (il indexe les 20 chapitres) ; il n'est compté qu'une fois.
 
 ### 4.1 Mode monographie — 35 fichiers (1 objet par enveloppe)
 
@@ -43,9 +43,9 @@ L'objet **est** le document. Vérifié : les 35 titres H1 de l'enveloppe sont **
 
 | Fichiers | Nombre | Objets |
 |---|---|---|
-| `00_caesn/01_value-streams/vs-0{1..4}-*.md` | 4 | `vs-01`…`vs-04` |
-| `02_artsn/03_chapitres/art-*.md` | 18 | `art-0`…`art-9`, `art-4a-d`, `art-8a-d` |
-| `03_ptisn/03_profils/pt-{01..13}-*.md` | 13 | `pt-01`…`pt-13` |
+| `00_caesn/01_value-streams/vs-0{1..4}-*.md` | 4 | `VS-01`…`VS-04` |
+| `02_artsn/03_chapitres/art-*.md` | 18 | `ART-0`…`ART-9`, `ART-4A-d`, `ART-8A-d` |
+| `03_ptisn/03_profils/pt-{01..13}-*.md` | 13 | `PT-01`…`PT-13` |
 
 ### 4.2 Mode catalogue — 14 fichiers (N objets par enveloppe)
 
@@ -53,19 +53,19 @@ Les objets s'insèrent sous un titre `## Catalogue …` existant, en `###`.
 
 | Fichier | Objets |
 |---|---|
-| `00_caesn/02_principles/transversal.md` | 12 (`pa-01`…`pa-12`) |
+| `00_caesn/02_principles/transversal.md` | 12 (`PA-01`…`PA-12`) |
 | `00_caesn/02_principles/domain/vs0{1..4}.md` | 20 (5 par flux) |
-| `00_caesn/03_capabilities/business.md` | 8 (`cap-01`…`cap-08`) |
-| `00_caesn/03_capabilities/enabling.md` | 8 (`cap-09`…`cap-16`) |
-| `00_caesn/04_data/principles.md` | 8 (`da-01`…`da-08`) |
-| `00_caesn/05_application/principles.md` | 9 (`aa-01`…`aa-09`) |
-| `01_cnisn/01_principes.md` | 25 (`p-int-01`…`p-int-25`, groupés par catégorie A-F) |
-| `01_cnisn/02_capacites.md` | 12 (`cap-int-01`…`cap-int-12`) |
-| `02_artsn/00_fondations.md` | 6 (`f-1`…`f-6`) |
-| `02_artsn/02_exigences-contextuelles.md` | 5 (`enf-1`…`enf-5`) |
-| `02_artsn/03_chapitres/index.md` | 2 (`art-10`, `art-11`) + tableau de navigation (cf. 4.3) |
+| `00_caesn/03_capabilities/business.md` | 8 (`CAP-01`…`CAP-08`) |
+| `00_caesn/03_capabilities/enabling.md` | 8 (`CAP-09`…`CAP-16`) |
+| `00_caesn/04_data/principles.md` | 8 (`DA-01`…`DA-08`) |
+| `00_caesn/05_application/principles.md` | 9 (`AA-01`…`AA-09`) |
+| `01_cnisn/01_principes.md` | 25 (`P-INT-01`…`P-INT-25`, groupés par catégorie A-F) |
+| `01_cnisn/02_capacites.md` | 12 (`CAP-INT-01`…`CAP-INT-12`) |
+| `02_artsn/00_fondations.md` | 6 (`F-1`…`F-6`) |
+| `02_artsn/02_exigences-contextuelles.md` | 5 (`ENF-1`…`ENF-5`) |
+| `02_artsn/03_chapitres/index.md` | 2 (`ART-10`, `ART-11`) + tableau de navigation (cf. 4.3) |
 
-Effet de bord voulu : `f-5`/`f-6` et `art-10`/`art-11`, aujourd'hui `status: candidate` et **absents des catalogues**, deviennent visibles avec un badge de statut.
+Effet de bord voulu : `F-5`/`F-6` et `ART-10`/`ART-11`, aujourd'hui `status: candidate` et **absents des catalogues**, deviennent visibles avec un badge de statut.
 
 ### 4.3 Mode tableau — 3 fichiers
 
@@ -112,7 +112,7 @@ Règles :
 | Suppression de la section `## Liens` de l'objet | les deux | Redondante dans l'hôte ; remplacée par la ligne *Rattachement* construite depuis `applies_to` / `maps_to` / `implements` |
 | **Recalcul de tous les liens relatifs** | les deux | Un lien valide depuis `referentiel/capabilites/` ne l'est pas depuis `00_caesn/03_capabilities/` : `../flux-valeur/vs-01.md` devient `../../referentiel/flux-valeur/vs-01.md` |
 | Badge `**Statut : candidate**` si `status ≠ active` | les deux | Rend l'état de maturité visible au lecteur |
-| Tri naturel des identifiants | catalogue | `pa-02` avant `pa-10` |
+| Tri naturel des identifiants | catalogue | `PA-02` avant `PA-10` |
 | Conservation des sous-titres de regroupement | `01_cnisn/01_principes.md` | Les catégories A-F rédigées à la main restent hors marqueurs, un bloc généré par catégorie |
 
 Le recalcul de liens est le mécanisme qui **élimine les 215 liens cassés par construction** : aucun chemin vers le référentiel n'est plus saisi à la main, l'erreur `../` vs `../../` devient impossible.

@@ -1,21 +1,21 @@
 ---
-id: cap-int-13
+id: CAP-INT-13
 type: capacite
 niveau: "2"
-title: CAP-INT-13 — Interopérabilité transfrontalière et confiance internationale
+title: Interopérabilité transfrontalière et confiance internationale
 status: active
 owner: DEPSI
 version: "0.5"
 family: transfrontalier
 source: 01_cnisn/02_capacites/index.md
-maps_to: ["p-int-01", "p-int-05", "p-int-10", "p-int-14", "p-int-16", "p-int-17", "p-int-19", "cap-15"]
+maps_to: ["P-INT-01", "P-INT-05", "P-INT-10", "P-INT-14", "P-INT-16", "P-INT-17", "P-INT-19", "CAP-15"]
 implements: []
 applies_to: []
-related: ["cap-int-03", "cap-int-08", "cap-int-09"]
+related: ["CAP-INT-03", "CAP-INT-08", "CAP-INT-09"]
 tags: ["cnisn", "niveau-2", "capacite", "transfrontalier", "gdhcn", "ips"]
 ---
 
-# CAP-INT-13 — Interopérabilité transfrontalière et confiance internationale
+# Interopérabilité transfrontalière et confiance internationale
 
 ### Finalité
 
@@ -105,8 +105,8 @@ Madagascar est membre de l'Union Africaine (UA), de la Commission Économique de
 
 ### Rattachement
 
-- [CAP-15](../../referentiel/capabilites/cap-15.md) (Sécurité, contrôle d'accès et résidence)
-- [CAP-18](../../referentiel/capabilites/cap-18.md) (Coordination intersectorielle — One Health)
+- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md) (Sécurité, contrôle d'accès et résidence)
+- [CAP-18: Coordination intersectorielle (One Health)](../../referentiel/capabilites/cap-18.md) (Coordination intersectorielle — One Health)
 - [ART-7](../../referentiel/chapitres/art-7.md) (Sécurité, contrôle d'accès et résidence)
 - [ART-0](../../referentiel/chapitres/art-0.md) (Accords de partage inter-institutionnels)
 - [PT-14](../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md) (Profil technique transfrontalier — IPS)

@@ -1,4 +1,5 @@
 ---
+
 title: Domaines de données prioritaires
 id: data-domains
 domain: 04_data
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Cellule du Système d'Information Sanitaire
-tags: [données, domaines, gouvernance]
+tags: ["données", "domaines", "gouvernance"]
 ---
 
 # Domaines de données prioritaires

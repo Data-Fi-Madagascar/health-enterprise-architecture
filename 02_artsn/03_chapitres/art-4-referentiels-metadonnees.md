@@ -1,13 +1,14 @@
 ---
+
 title: "ART-4 : Référentiels de métadonnées de gestion"
-id: art-4
+id: ART-4
 domain: 02_artsn
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
-tags: [artsn, chapitres, art-4, niveau-3]
-related: ['cap-int-03']
+tags: ["artsn", "chapitres", "ART-4", "niveau-3"]
+related: ["CAP-INT-03"]
 ---
 
 # ART-4 : Référentiels de métadonnées de gestion
@@ -27,25 +28,25 @@ related: ['cap-int-03']
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-ART-4 : Référentiels de métadonnées de gestion constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-4`.
+ART-4 : Référentiels de métadonnées de gestion constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `ART-4`.
 
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 **Contenu normatif.** La maintenance et le stockage des structures de gestion (établissements, programmes sanitaires, indicateurs) doivent obligatoirement utiliser une **modélisation temporelle**. Tout changement ou divergence de hiérarchie organisationnelle doit être historisé et versionné, selon le pattern cible *Slowly Changing Dimension* (SCD) **type 2**.
 
-**Discipline existentielle.** Dès lors qu’une source échappe à la gouvernance directe de l’initiative (évolutions administratives, réorganisations territoriales) : elle seule permet de garantir qu’une analyse ou un rapport statistique passé pointe vers l’arborescence exacte en vigueur au moment précis de l’événement sans rompre le pipeline.
+**Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (évolutions administratives, réorganisations territoriales), cette discipline seule permet de garantir qu’une analyse ou un rapport statistique passé pointe vers l’arborescence exacte en vigueur au moment précis de l’événement sans rompre le pipeline.
 
-- **Rattachement** : CAP-14 (interopérabilité et infrastructure partagée).
-- **Pattern cible** : SCD type 2.
-- **Déduit selon** : ENF-4 (cloisonnement inter-institutionnel).
-- **Statut : Stable.**
+- **Rattachement** : [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md) (interopérabilité et infrastructure partagée).
+- **Pattern cible** : SCD type 2.
+- **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (cloisonnement inter-institutionnel).
+- **Statut : Stable.**
 
-Ce chapitre se décline en quatre sous-chapitres :
-- ART-4a : Résolution d’identité
-- ART-4b : Bases d’autorisation
-- ART-4c : Éligibilité et couverture
-- ART-4d : Référentiel géospatial et d’exploitation partagé
+Ce chapitre se décline en quatre sous-chapitres :
+- [ART-4A: Résolution d’identité](../../referentiel/chapitres/art-4a.md)
+- [ART-4B: Bases d’autorisation](../../referentiel/chapitres/art-4b.md)
+- [ART-4C: Éligibilité et couverture](../../referentiel/chapitres/art-4c.md)
+- [ART-4D: Référentiel géospatial et d’exploitation partagé](../../referentiel/chapitres/art-4d.md)
 
 *Rattachement : ENF-4, CAP-14 · fiche ART-4*
 
@@ -58,6 +59,6 @@ Ce chapitre se décline en quatre sous-chapitres :
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`art-4`** : Référentiels de métadonnées de gestion (`referentiel/chapitres/art-4.md`)
+- **`ART-4`** : Référentiels de métadonnées de gestion (`referentiel/chapitres/art-4.md`)
 - **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
 - **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

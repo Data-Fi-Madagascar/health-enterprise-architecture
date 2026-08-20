@@ -1,4 +1,5 @@
 ---
+
 title: Gouvernance de l'ARTSN
 id: artsn-gouvernance
 domain: 02_artsn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
-tags: [artsn, gouvernance, versionnement, cnasn, niveau-3]
+tags: ["artsn", "gouvernance", "versionnement", "cnasn", "niveau-3"]
 ---
 
 # Gouvernance de l'ARTSN
@@ -86,7 +87,7 @@ Un chapitre à statut « Provisoire » ou « Proposition ouverte » ne doit pas 
 
 ## Rôle du CNASN
 
-Une fois l'ARTSN publiée, les critères d'homologation déjà établis par le CNASN (ouverture, alignement normatif, interopérabilité, souveraineté des données, coût total de possession) cessent d'être purement qualitatifs : ils deviennent des **vérifications de conformité technique contre les chapitres au statut Stable**. Un écart doit être documenté comme une dérogation explicite et justifiée, plutôt que constaté silencieusement après déploiement.
+Une fois l'ARTSN publiée, les critères d'homologation déjà établis par le CNASN (ouverture, alignement normatif, interopérabilité, souveraineté des données, coût total de possession) cessent d'être purement qualitatifs : ils deviennent des **vérifications de conformité technique contre les chapitres au statut Stable**. Ces 5 portes architecturales se déclinent opérationnellement dans les 13 dimensions de conformité du CNISN (`01_cnisn/04_conformite/index.md` §3.1), qui font autorité pour l'instruction. Un écart doit être documenté comme une dérogation explicite et justifiée, plutôt que constaté silencieusement après déploiement.
 
 ## Familles de pattern plutôt que mandat unique
 

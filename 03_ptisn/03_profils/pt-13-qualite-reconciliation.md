@@ -1,12 +1,12 @@
 ---
 title: PT-13 : Profil technique national
-id: ptisn-pt-13-qualite-reconciliation
+id: ptisn-PT-13-qualite-reconciliation
 domain: 03_ptisn
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
-tags: ["ptisn", "niveau-4", "profils", "pt-13"]
+tags: ["ptisn", "niveau-4", "profils", "PT-13"]
 ---
 
 # PT-13 : Profil technique national
@@ -16,57 +16,57 @@ tags: ["ptisn", "niveau-4", "profils", "pt-13"]
 
 ## 1. Capacités CNISN
 
-- CAP-INT-11 : Qualité et réconciliation.
+- CAP-INT-11 — Qualité et réconciliation.
 
 ## 2. Chapitres ART applicables
 
-- ART-4 ;
-- ART-5 ;
+- ART-4 ;
+- ART-5 ;
 - ART-6.
 
 ## 3. Services nationaux
 
-- service de validation des contrats ;
-- service de qualité ;
-- service de réconciliation ;
-- service de gestion des anomalies ;
+- service de validation des contrats ;
+- service de qualité ;
+- service de réconciliation ;
+- service de gestion des anomalies ;
 - service de publication des indicateurs de qualité.
 
 ## 4. Profils de contrôle
 
-Chaque interface doit disposer de tests portant sur :
+Chaque interface doit disposer de tests portant sur :
 
-- structure ;
-- terminologie ;
-- identifiants ;
-- métadonnées ;
-- cardinalités ;
-- valeurs obligatoires ;
-- compatibilité de version ;
-- droits d’émission ;
+- structure ;
+- terminologie ;
+- identifiants ;
+- métadonnées ;
+- cardinalités ;
+- valeurs obligatoires ;
+- compatibilité de version ;
+- droits d’émission ;
 - cohérence métier.
 
 ## 5. Réconciliation
 
-La réconciliation doit pouvoir comparer :
+La réconciliation doit pouvoir comparer :
 
-- système source et plateforme ;
-- deux référentiels ;
-- deux versions ;
-- journal et projection ;
-- données opérationnelles et analytiques ;
+- système source et plateforme ;
+- deux référentiels ;
+- deux versions ;
+- journal et projection ;
+- données opérationnelles et analytiques ;
 - valeurs agrégées issues de sources différentes.
 
 ## 6. Produit
 
 Aucun produit unique n’est retenu.
 
-Les règles de qualité doivent rester :
+Les règles de qualité doivent rester :
 
-- explicites ;
-- portables ;
-- versionnées ;
-- testables ;
+- explicites ;
+- portables ;
+- versionnées ;
+- testables ;
 - indépendantes d’un outil de visualisation.
 
 ------------------------------------------------------------------------

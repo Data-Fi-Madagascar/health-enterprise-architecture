@@ -1,4 +1,5 @@
 ---
+
 title: Capabilités critiques et architecture runway
 id: capabilities-runway
 domain: 03_capabilities
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Comité National d'Architecture Santé Numérique
-tags: [capabilités, runway, critiques]
+tags: ["capabilités", "runway", "critiques"]
 ---
 
 # Capabilités critiques et architecture runway

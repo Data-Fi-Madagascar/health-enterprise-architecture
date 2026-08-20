@@ -12,7 +12,7 @@ owner: Bureau de Réalisation de la Valeur
 
 # Cadre d'Architecture d'Entreprise de la Santé Numérique (HEA)
 
-Ce dépôt contient la documentation d'architecture du secteur santé numérique de Madagascar, organisée selon la hiérarchie documentaire du [CAESN](00_caesn/00_overview/index.md) en **quatre familles de documents** : cadre, interopérabilité, architecture de référence technique et profils d'implémentation. L'ensemble est documenté *as code* : Markdown structuré avec frontmatter YAML, versionné et relisible par machine.
+Ce dépôt contient la documentation d'architecture du secteur santé numérique de Madagascar, organisée selon la hiérarchie documentaire du [caesn: Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN)](00_caesn/00_overview/index.md) en **quatre familles de documents** : cadre, interopérabilité, architecture de référence technique et profils d'implémentation. L'ensemble est documenté *as code* : Markdown structuré avec frontmatter YAML, versionné et relisible par machine.
 
 L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des résultats attendus pour les bénéficiaires et remonter vers les capabilités et les technologies nécessaires pour les produire.
 
@@ -26,7 +26,7 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 | Chapitres ARTSN | 12+ (ART-0 à ART-11) |
 | Concepts dictionnaire | 40 (7 domaines) |
 | Profils PTISN | 15 (PT-01 à PT-15) |
-| ADR | 9 (4 acceptées,5 proposées) |
+| ADR | 10 (4 acceptées, 6 proposées) |
 | Standards | 6 (STD-0001..0006) + 2 normes internationales (NORM-007, NORM-008) |
 | Politiques RBAC | 10 (POL-01 à POL-10) |
 | Score architecture | 4.8/5 |
@@ -52,7 +52,7 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 | Données | [`04_data/`](./00_caesn/04_data/) | Architecture des données et de l'information sanitaire |
 | Applications | [`05_application/`](./00_caesn/05_application/) | Architecture applicative et systèmes numériques |
 | Portefeuille | [`06_portfolio/`](./00_caesn/06_portfolio/) | Portefeuille d'initiatives orienté valeur, migration existant |
-| Gouvernance | [`07_governance/`](./00_caesn/07_governance/) | Instances, RACI, homologation, processus gouvernance |
+| Gouvernance | [`07_governance/`](./00_caesn/07_governance/) | Instances, RACI, homologation, processus gouvernance, fondement légal |
 | Annexes | [`10_annexes/`](./00_caesn/10_annexes/) | Matrice de lecture, glossaire, acronymes |
 
 > **Note :** Les Décisions (ADR) et Standards sont désormais dans le CNISN (niveau 2), dans les dossiers `01_cnisn/06_decisions/` et `01_cnisn/05_standards/`.
@@ -65,9 +65,9 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 | Principes | [`01_principes/`](./01_cnisn/01_principes/) | Principes d'interopérabilité |
 | Capacités | [`02_capacites/`](./01_cnisn/02_capacites/) | 14 capabilités interopérabilité (7 familles) |
 | Gouvernance | [`03_gouvernance/`](./01_cnisn/03_gouvernance/) | Gouvernance de l'interopérabilité |
-| Conformité | [`04_conformite/`](./01_cnisn/04_conformite/) | Conformité et audit |
+| Conformité | [`04_conformite/`](./01_cnisn/04_conformite/) | Conformité, audit, programme de conformité opérationnel |
 | Standards | [`05_standards/`](./01_cnisn/05_standards/) | 6 normes obligatoires + 2 normes internationales |
-| Décisions | [`06_decisions/`](./01_cnisn/06_decisions/) | 9 Architecture Decision Records (ADR-0001..0009) |
+| Décisions | [`06_decisions/`](./01_cnisn/06_decisions/) | 10 Architecture Decision Records (ADR-0001..0010) |
 | Trajectoire | [`05_trajectoire/`](./01_cnisn/05_trajectoire/) | 7 phases T4 2026–T2 2030 |
 | Indicateurs | [`06_indicateurs/`](./01_cnisn/06_indicateurs/) | KPIs interopérabilité |
 | Annexes | [`08_annexes/`](./01_cnisn/08_annexes/) | Matrices de lecture, articulation CAESN/ARTSN |
@@ -123,6 +123,8 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 | Dépréciation | [`02_artsn/06_gouvernance/depreciation.md`](./02_artsn/06_gouvernance/depreciation.md) | Processus 15 mois |
 | Veille architecturale | [`02_artsn/06_gouvernance/veille-architecturale.md`](./02_artsn/06_gouvernance/veille-architecturale.md) | 7 domaines, 11 sources |
 | Conformité | [`02_artsn/06_gouvernance/conformite.md`](./02_artsn/06_gouvernance/conformite.md) | Dashboard de conformité |
+| Programme de conformité | [`01_cnisn/04_conformite/programme-conformite.md`](./01_cnisn/04_conformite/programme-conformite.md) | Tests, sanctions, jalon de démarrage |
+| Fondement légal | [`00_caesn/07_governance/fondement-legal.md`](./00_caesn/07_governance/fondement-legal.md) | Vide législatif, projet de loi e-santé |
 
 ## Conventions
 

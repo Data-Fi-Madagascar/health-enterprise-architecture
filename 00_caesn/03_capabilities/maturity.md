@@ -1,4 +1,5 @@
 ---
+
 title: Évaluation de la maturité des capabilités
 id: capabilities-maturity
 domain: 03_capabilities
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Bureau de Réalisation de la Valeur
-tags: [capabilités, maturité, priorisation]
+tags: ["capabilités", "maturité", "priorisation"]
 ---
 
 # Évaluation de la maturité des capabilités

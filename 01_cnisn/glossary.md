@@ -1,4 +1,5 @@
 ---
+
 title: Glossaire du CNISN (niveau 2)
 id: cnisn-glossary
 domain: 01_cnisn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
-tags: [cnisn, glossaire, terminologie, niveau-2]
+tags: ["cnisn", "glossaire", "terminologie", "niveau-2"]
 ---
 
 # Glossaire du CNISN (niveau 2)

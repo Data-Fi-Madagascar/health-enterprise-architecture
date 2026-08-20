@@ -1,4 +1,5 @@
 ---
+
 title: Paysage applicatif cible
 id: application-target-layers
 domain: 05_application
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Direction des Systèmes d'Information
-tags: [applications, couches, paysage, cible]
+tags: ["applications", "couches", "paysage", "cible"]
 ---
 
 # Paysage applicatif cible

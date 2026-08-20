@@ -1,4 +1,5 @@
 ---
+
 title: Contraintes d'exploitation différenciées
 id: application-constraints
 domain: 05_application
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Direction des Systèmes d'Information
-tags: [applications, exploitation, terrain]
+tags: ["applications", "exploitation", "terrain"]
 ---
 
 # Contraintes d'exploitation différenciées

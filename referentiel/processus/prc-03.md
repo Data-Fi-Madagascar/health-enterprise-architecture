@@ -1,28 +1,28 @@
 ---
-id: prc-03
+id: PRC-03
 type: processus-metier
 niveau: "1"
-title: PRC-03 — Continuité, suivi et qualité des soins
+title: Continuité, suivi et qualité des soins
 status: draft
 owner: Direction des soins
 version: "0.0.1"
 source: 00_caesn/01_value-streams/vs-01-access-care.md
 maps_to: []
 implements: []
-applies_to: ["cap-01", "cap-02", "cap-03", "cap-04", "cap-09", "cap-10", "cap-11", "cap-13", "cap-14", "cap-15", "pp-01", "pp-02", "pp-04", "pp-05", "pp-06"]
-related: ["ev-06", "ev-07", "vs-01"]
-tags: ["caesn", "niveau-1", "processus-metier", "prc-03"]
+applies_to: ["CAP-01", "CAP-02", "CAP-03", "CAP-04", "CAP-09", "CAP-10", "CAP-11", "CAP-13", "CAP-14", "CAP-15", "PP-01", "PP-02", "PP-04", "PP-05", "PP-06"]
+related: ["VS-01-06", "VS-01-07", "VS-01"]
+tags: ["caesn", "niveau-1", "processus-metier", "PRC-03"]
 ---
-# PRC-03 — Continuité, suivi et qualité des soins
+# Continuité, suivi et qualité des soins
 
 ## Objectif
 
-Garantir la continuité des soins après l'épisode et l'amélioration continue de la qualité des services : suivi du patient, observance thérapeutique et revues qualité.
+Garantir la continuité des soins après l'épisode et l'amélioration continue de la qualité des services : suivi du patient, observance thérapeutique et revues qualité.
 
 ## Étapes couvertes
 
-- [EV-06 — Suivi et continuité des soins](../etapes-valeur/ev-06.md)
-- [EV-07 — Amélioration de la qualité](../etapes-valeur/ev-07.md)
+- [VS-01-06: Suivi et continuité des soins](../etapes-valeur/vs-01-06.md)
+- [VS-01-07: Amélioration de la qualité](../etapes-valeur/vs-01-07.md)
 
 ## Acteurs
 

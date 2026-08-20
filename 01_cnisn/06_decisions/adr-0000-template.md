@@ -1,4 +1,5 @@
 ---
+
 title: "ADR-0000 : <Titre de la décision>"
 id: adr-0000
 domain: 06_decisions
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: proposé
 date: 2026-07-03
 owner: <Porteur de la décision>
-tags: [adr, <domaine>]
+tags: ["adr", "<domaine>"]
 ---
 
 # ADR-0000 : <Titre de la décision>

@@ -1,12 +1,12 @@
 ---
 title: PT-01 : Profil technique national
-id: ptisn-pt-01-echange-interinstitutionnel
+id: ptisn-PT-01-echange-interinstitutionnel
 domain: 03_ptisn
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
-tags: ["ptisn", "niveau-4", "profils", "pt-01"]
+tags: ["ptisn", "niveau-4", "profils", "PT-01"]
 ---
 
 # PT-01 : Profil technique national
@@ -16,28 +16,28 @@ tags: ["ptisn", "niveau-4", "profils", "pt-01"]
 
 ## 1. Capacité CNISN
 
-**CAP-INT-03 : Échange et médiation inter-systèmes**
+**CAP-INT-03 — Échange et médiation inter-systèmes**
 
 ## 2. Chapitres ART applicables
 
-- ART-0 : accords de partage ;
-- ART-1 : intégration et ingestion ;
-- ART-7 : sécurité et résidence ;
-- ART-11 : coordination intersectorielle.
+- ART-0 — accords de partage ;
+- ART-1 — intégration et ingestion ;
+- ART-7 — sécurité et résidence ;
+- ART-11 — coordination intersectorielle.
 
 ## 3. Service national
 
 **Service national d’échange interinstitutionnel**
 
-Ce service permet les échanges entre le secteur santé et :
+Ce service permet les échanges entre le secteur santé et :
 
-- l’état civil ;
-- le registre de la population ;
-- la protection sociale ;
-- les finances publiques ;
-- l’éducation ;
-- les collectivités territoriales ;
-- les autres autorités publiques ;
+- l’état civil ;
+- le registre de la population ;
+- la protection sociale ;
+- les finances publiques ;
+- l’éducation ;
+- les collectivités territoriales ;
+- les autres autorités publiques ;
 - les partenaires autorisés.
 
 ## 4. Implémentation nationale
@@ -55,28 +55,28 @@ X-Road permet l’échange sécurisé entre organisations membres au moyen de se
 
 ## 5. Contrats requis
 
-Toute initiative utilisant ce service doit fournir :
+Toute initiative utilisant ce service doit fournir :
 
-- un accord de partage ;
-- un fournisseur de service identifié ;
-- un consommateur identifié ;
-- une description de service ;
-- un contrat de données ;
-- une politique d’accès ;
-- une politique de résidence ;
-- une preuve de conformité au CNI ;
+- un accord de partage ;
+- un fournisseur de service identifié ;
+- un consommateur identifié ;
+- une description de service ;
+- un contrat de données ;
+- une politique d’accès ;
+- une politique de résidence ;
+- une preuve de conformité au CNI ;
 - une procédure de gestion des incidents.
 
 ## 6. Limites
 
-Le service national d’échange ne remplace pas :
+Le service national d’échange ne remplace pas :
 
-- la résolution d’identité patient ;
-- le registre des professionnels ;
-- le consentement ;
-- la terminologie ;
-- l’autorisation fonctionnelle ;
-- la transformation sémantique ;
+- la résolution d’identité patient ;
+- le registre des professionnels ;
+- le consentement ;
+- la terminologie ;
+- l’autorisation fonctionnelle ;
+- la transformation sémantique ;
 - l’orchestration métier.
 
 ------------------------------------------------------------------------

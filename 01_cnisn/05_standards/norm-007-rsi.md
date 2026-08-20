@@ -1,4 +1,5 @@
 ---
+
 title: "NORM-007 : Règlement Sanitaire International (RSI 2005)"
 id: norm-007
 domain: 05_standards
@@ -6,14 +7,14 @@ version: "1.0.0"
 status: approved
 last_reviewed: 2026-08-13
 owner: Direction de la Surveillance Sanitaire
-tags: [normes, rsi, oms, international, obligatoire]
+tags: ["normes", "rsi", "oms", "international", "obligatoire"]
 ---
 
 # NORM-007 : Règlement Sanitaire International (RSI 2005)
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 2 : Cadre National d'Interopérabilité de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|

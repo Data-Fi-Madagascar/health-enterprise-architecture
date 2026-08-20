@@ -1,32 +1,32 @@
 ---
-id: p-int-12
+id: P-INT-12
 type: principe
 niveau: "2"
-title: P-INT-12 — Dérogation explicite
+title: Dérogation explicite
 status: active
 owner: DEPSI
 version: "0.5"
 source: 01_cnisn/01_principes/index.md
-maps_to: ["cap-14", "cap-16"]
+maps_to: ["CAP-14", "CAP-16"]
 implements: []
 applies_to: []
-related: ["cap-int-03"]
+related: ["CAP-INT-03"]
 tags: ["cnisn", "niveau-2", "principe"]
 ---
 
-# P-INT-12 — Dérogation explicite
+# Dérogation explicite
 
 Toute initiative s’écartant d’un principe du CNISN doit produire une dérogation explicite.
 
-La dérogation doit préciser :
+La dérogation doit préciser :
 
-- le principe concerné ;
-- la justification ;
-- les risques ;
-- les alternatives examinées ;
-- les mesures compensatoires ;
-- la durée ;
-- les conditions de sortie ;
+- le principe concerné ;
+- la justification ;
+- les risques ;
+- les alternatives examinées ;
+- les mesures compensatoires ;
+- la durée ;
+- les conditions de sortie ;
 - le responsable.
 
 Une dérogation non enregistrée constitue une non-conformité.

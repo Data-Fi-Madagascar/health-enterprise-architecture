@@ -1,12 +1,12 @@
 ---
 title: PT-03 : Profil technique national
-id: ptisn-pt-03-catalogue-services-registre-contrats
+id: ptisn-PT-03-catalogue-services-registre-contrats
 domain: 03_ptisn
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
-tags: ["ptisn", "niveau-4", "profils", "pt-03"]
+tags: ["ptisn", "niveau-4", "profils", "PT-03"]
 ---
 
 # PT-03 : Profil technique national
@@ -16,14 +16,14 @@ tags: ["ptisn", "niveau-4", "profils", "pt-03"]
 
 ## 1. Capacité CNISN
 
-**CAP-INT-06 : Catalogue des services et registre des contrats**
+**CAP-INT-06 — Catalogue des services et registre des contrats**
 
 ## 2. Chapitres ART applicables
 
-- F.3 : versionnement ;
-- F.4 : rattachement aux capacités ;
-- ART-1 : interfaces ;
-- ART-2 : contrats canoniques.
+- F.3 — versionnement ;
+- F.4 — rattachement aux capacités ;
+- ART-1 — interfaces ;
+- ART-2 — contrats canoniques.
 
 ## 3. Services nationaux
 
@@ -31,27 +31,27 @@ Deux services distincts sont requis.
 
 ### Catalogue national des services
 
-Répertorie :
+Répertorie :
 
-- les services exposés ;
-- les propriétaires ;
-- les consommateurs autorisés ;
-- les environnements ;
-- les niveaux de service ;
-- les points d’accès ;
+- les services exposés ;
+- les propriétaires ;
+- les consommateurs autorisés ;
+- les environnements ;
+- les niveaux de service ;
+- les points d’accès ;
 - les politiques de sécurité.
 
 ### Registre national des contrats
 
-Répertorie :
+Répertorie :
 
-- les schémas ;
-- les profils ;
-- les API ;
-- les événements ;
-- les versions ;
-- les extensions ;
-- les règles de compatibilité ;
+- les schémas ;
+- les profils ;
+- les API ;
+- les événements ;
+- les versions ;
+- les extensions ;
+- les règles de compatibilité ;
 - les dépréciations.
 
 ## 4. Formats recommandés
@@ -70,15 +70,15 @@ Répertorie :
 
 Aucun produit national n’est encore retenu.
 
-**Statut : à instruire.**
+**Statut : à instruire.**
 
 ## 6. Preuves de conformité
 
-- contrat publié ;
-- version explicite ;
-- propriétaire ;
-- test de validation ;
-- politique de compatibilité ;
+- contrat publié ;
+- version explicite ;
+- propriétaire ;
+- test de validation ;
+- politique de compatibilité ;
 - calendrier de dépréciation.
 
 ------------------------------------------------------------------------

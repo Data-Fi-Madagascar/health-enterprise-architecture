@@ -1,4 +1,5 @@
 ---
+
 title: "Composition et fonctionnement du Comité National"
 id: cnasen-composition
 domain: 07_governance
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: Secrétariat Général
-tags: [gouvernance, cnasen, composition, fonctionnement]
+tags: ["gouvernance", "cnasen", "composition", "fonctionnement"]
 ---
 
 # Composition et fonctionnement du Comité National d'Architecture Santé Numérique

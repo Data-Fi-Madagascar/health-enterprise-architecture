@@ -1,4 +1,5 @@
 ---
+
 title: Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN)
 id: caesn
 domain: 00_overview
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Ministère de la Santé Publique
-tags: [cadre, gouvernance, santé-numérique, madagascar]
+tags: ["cadre", "gouvernance", "santé-numérique", "madagascar"]
 ---
 
 # Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN)

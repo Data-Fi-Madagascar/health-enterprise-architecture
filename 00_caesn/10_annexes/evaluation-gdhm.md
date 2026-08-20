@@ -1,4 +1,5 @@
 ---
+
 title: "Cartographie HEA → GDHM : Auto-évaluation de maturité numérique santé"
 id: evaluation-gdhm
 domain: 10_annexes
@@ -6,7 +7,7 @@ version: "2.0.0"
 status: draft
 last_reviewed: 2026-08-20
 owner: Bureau de Réalisation de la Valeur
-tags: [gdhm, maturite, oms, afrique, auto-evaluation]
+tags: ["gdhm", "maturite", "oms", "afrique", "auto-evaluation"]
 ---
 
 # Cartographie HEA → GDHM : Auto-évaluation de maturité numérique santé

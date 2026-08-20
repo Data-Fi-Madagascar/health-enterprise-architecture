@@ -1,4 +1,5 @@
 ---
+
 title: Guide de lecture du PTISN (niveau 4)
 id: ptisn-reading-guide
 domain: 03_ptisn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: Équipes techniques des initiatives
-tags: [ptisn, lecture, niveau-4, guide]
+tags: ["ptisn", "lecture", "niveau-4", "guide"]
 ---
 
 # Guide de lecture du PTISN (niveau 4)

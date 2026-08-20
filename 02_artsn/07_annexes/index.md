@@ -1,4 +1,5 @@
 ---
+
 title: Annexes de l'ARTSN
 id: artsn-annexes
 domain: 02_artsn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
-tags: [artsn, annexes, niveau-3]
+tags: ["artsn", "annexes", "niveau-3"]
 ---
 
 # Annexes de l'ARTSN

@@ -1,4 +1,5 @@
 ---
+
 title: "Annexe E : SLA et métriques de performance par profil"
 id: artsn-sla-performance
 domain: 02_artsn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
-tags: [artsn, annexe, SLA, performance, métriques, niveau-3]
+tags: ["artsn", "annexe", "SLA", "performance", "métriques", "niveau-3"]
 ---
 
 # Annexe E : SLA et métriques de performance par profil

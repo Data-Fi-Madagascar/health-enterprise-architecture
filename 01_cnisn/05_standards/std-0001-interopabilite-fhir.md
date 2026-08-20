@@ -1,4 +1,5 @@
 ---
+
 title: "STD-0001 : Norme d'interopérabilité : HL7 FHIR R4"
 id: std-0001
 domain: 05_standards
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: approved
 last_reviewed: 2026-08-13
 owner: Comité National d'Architecture Santé Numérique
-tags: [standards, interoperabilite, fhir, obligatoire]
+tags: ["standards", "interoperabilite", "fhir", "obligatoire"]
 ---
 
 # STD-0001 : Norme d'interopérabilité : HL7 FHIR R4

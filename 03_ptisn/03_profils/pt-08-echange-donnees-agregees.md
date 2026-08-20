@@ -1,12 +1,12 @@
 ---
 title: PT-08 : Profil technique national
-id: ptisn-pt-08-echange-donnees-agregees
+id: ptisn-PT-08-echange-donnees-agregees
 domain: 03_ptisn
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
-tags: ["ptisn", "niveau-4", "profils", "pt-08"]
+tags: ["ptisn", "niveau-4", "profils", "PT-08"]
 ---
 
 # PT-08 : Profil technique national
@@ -16,14 +16,14 @@ tags: ["ptisn", "niveau-4", "profils", "pt-08"]
 
 ## 1. Capacités CNISN
 
-- **CAP-INT-03 : Échange et médiation inter-systèmes**
-- contribution à **CAP-INT-07 : Accès et exposition des données analytiques**
+- **CAP-INT-03 — Échange et médiation inter-systèmes**
+- contribution à **CAP-INT-07 — Accès et exposition des données analytiques**
 
 ## 2. Chapitres ART applicables
 
-- ART-1 ;
-- ART-2 ;
-- ART-5 ;
+- ART-1 ;
+- ART-2 ;
+- ART-5 ;
 - ART-6.
 
 ## 3. Service national
@@ -32,18 +32,18 @@ tags: ["ptisn", "niveau-4", "profils", "pt-08"]
 
 ## 4. Cas d’usage
 
-- rapports mensuels d’activité ;
-- rapports hebdomadaires ;
-- rapports trimestriels ;
-- indicateurs de programme ;
-- remontée communautaire ;
-- reporting international ;
-- transmission établissement-district ;
+- rapports mensuels d’activité ;
+- rapports hebdomadaires ;
+- rapports trimestriels ;
+- indicateurs de programme ;
+- remontée communautaire ;
+- reporting international ;
+- transmission établissement-district ;
 - échange entre systèmes de collecte et entrepôt national.
 
 ## 5. Profil cible
 
-**IHE mADX : Mobile Aggregate Data Exchange**
+**IHE mADX — Mobile Aggregate Data Exchange**
 
 mADX est conçu pour l’échange interopérable de données agrégées de santé publique, notamment les rapports périodiques produits par les établissements et transmis à une juridiction administrative. Il est présenté comme fonctionnellement équivalent à ADX pour ces usages, tout en reposant sur FHIR.
 
@@ -62,21 +62,21 @@ mADX est un profil d’échange de données agrégées.
 
 Il ne remplace pas le service terminologique.
 
-Les codes et dimensions utilisés dans un rapport agrégé doivent être résolus par :
+Les codes et dimensions utilisés dans un rapport agrégé doivent être résolus par :
 
-- le service terminologique ;
-- le référentiel des structures ;
-- les définitions d’indicateurs ;
+- le service terminologique ;
+- le référentiel des structures ;
+- les définitions d’indicateurs ;
 - les périodes et dimensions publiées.
 
 ## 8. Relation avec la plateforme RMA
 
-La plateforme nationale de traçabilité RMA constitue une première initiative d’application des contrats ART relatifs :
+La plateforme nationale de traçabilité RMA constitue une première initiative d’application des contrats ART relatifs :
 
-- à l’ingestion ;
-- à l’historisation ;
-- à la qualité ;
-- à la réconciliation ;
+- à l’ingestion ;
+- à l’historisation ;
+- à la qualité ;
+- à la réconciliation ;
 - à l’analytique.
 
 Le profil mADX doit être évalué comme contrat cible d’entrée et de sortie pour les données agrégées, indépendamment du format interne du système opérationnel.

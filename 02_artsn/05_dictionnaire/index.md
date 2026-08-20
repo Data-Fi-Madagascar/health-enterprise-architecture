@@ -1,4 +1,5 @@
 ---
+
 title: Dictionnaire de données fonctionnelles
 id: artsn-dictionnaire-donnees
 domain: 02_artsn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
-tags: [artsn, dictionnaire, donnees, semantique, niveau-3]
+tags: ["artsn", "dictionnaire", "donnees", "semantique", "niveau-3"]
 ---
 
 # Dictionnaire de données fonctionnelles

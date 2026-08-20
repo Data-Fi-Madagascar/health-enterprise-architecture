@@ -1,4 +1,5 @@
 ---
+
 title: Guide de lecture de l'ARTSN (niveau 3)
 id: artsn-reading-guide
 domain: 02_artsn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
-tags: [artsn, lecture, niveau-3, guide]
+tags: ["artsn", "lecture", "niveau-3", "guide"]
 ---
 
 # Guide de lecture de l'ARTSN (niveau 3)

@@ -1,29 +1,29 @@
 ---
-id: prc-10
+id: PRC-10
 type: processus-metier
 niveau: "1"
-title: PRC-10 — Planification et allocation des ressources
+title: Planification et allocation des ressources
 status: draft
 owner: Secrétariat Général
 version: "0.0.1"
 source: 00_caesn/01_value-streams/vs-04-system-steering.md
 maps_to: []
 implements: []
-applies_to: ["cap-03", "cap-08", "cap-09", "cap-12", "cap-13", "cap-14", "cap-15", "cap-16", "pp-03", "pp-07", "pp-08", "pp-09", "pp-10", "cmp-01", "cmp-12"]
-related: ["ev-22", "ev-23", "ev-24", "vs-04"]
-tags: ["caesn", "niveau-1", "processus-metier", "prc-10"]
+applies_to: ["CAP-03", "CAP-08", "CAP-09", "CAP-12", "CAP-13", "CAP-14", "CAP-15", "CAP-16", "PP-03", "PP-07", "PP-08", "PP-09", "PP-10", "CMP-01", "CMP-12"]
+related: ["VS-04-01", "VS-04-02", "VS-04-03", "VS-04"]
+tags: ["caesn", "niveau-1", "processus-metier", "PRC-10"]
 ---
-# PRC-10 — Planification et allocation des ressources
+# Planification et allocation des ressources
 
 ## Objectif
 
-Définir les priorités nationales et traduire la stratégie en ressources : planification, budgétisation et allocation des ressources, coordination des acteurs et alignement des partenaires.
+Définir les priorités nationales et traduire la stratégie en ressources : planification, budgétisation et allocation des ressources, coordination des acteurs et alignement des partenaires.
 
 ## Étapes couvertes
 
-- [EV-22 — Définition des priorités et planification](../etapes-valeur/ev-22.md)
-- [EV-23 — Budgétisation et allocation des ressources](../etapes-valeur/ev-23.md)
-- [EV-24 — Coordination des acteurs et alignement des partenaires](../etapes-valeur/ev-24.md)
+- [VS-04-01: Définition des priorités et planification](../etapes-valeur/vs-04-01.md)
+- [VS-04-02: Budgétisation et allocation des ressources](../etapes-valeur/vs-04-02.md)
+- [VS-04-03: Coordination des acteurs et alignement des partenaires](../etapes-valeur/vs-04-03.md)
 
 ## Acteurs
 

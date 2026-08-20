@@ -1,4 +1,5 @@
 ---
+
 title: Trajectoire de rationalisation du paysage applicatif
 id: application-rationalization
 domain: 05_application
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Comité National d'Architecture Santé Numérique
-tags: [applications, rationalisation]
+tags: ["applications", "rationalisation"]
 ---
 
 # Trajectoire de rationalisation du paysage applicatif

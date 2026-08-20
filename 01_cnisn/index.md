@@ -1,4 +1,5 @@
 ---
+
 title: Cadre National d'Interopérabilité de la Santé Numérique (CNISN)
 id: cnisn
 domain: 01_cnisn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-18
 owner: DEPSI
-tags: [cnisn, niveau-2, interopérabilité]
+tags: ["cnisn", "niveau-2", "interopérabilité"]
 ---
 
 # Cadre National d'Interopérabilité de la Santé Numérique (CNISN)
@@ -50,7 +51,7 @@ Le CNISN reste volontairement neutre sur le plan technologique : il ne sélectio
 | Principes | 25 principes nationaux d'interopérabilité (P-INT-01 à P-INT-25) |
 | Capacités | 14 capacités nationales requises (CAP-INT-01 à CAP-INT-14) |
 | Gouvernance | Instances, rôles, comités, propriétaire de capacités |
-| Conformité | Profil de conformité, dossier minimal, homologation |
+| Conformité | Profil de conformité, dossier minimal, homologation, programme de conformité opérationnel |
 | Standards | Normes obligatoires et standards recommandés |
 | Décisions | Architecture Decision Records (ADR) |
 | Trajectoire | 7 phases de mise en œuvre |
@@ -76,6 +77,8 @@ Le CNISN reste volontairement neutre sur le plan technologique : il ne sélectio
 - **Capacités** : Partie II : Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
 - **Gouvernance** : Partie III : Gouvernance (`01_cnisn/03_gouvernance/index.md`)
 - **Conformité** : Partie IV : Conformité (`01_cnisn/04_conformite/index.md`)
+- **Programme de conformité** : Partie IV bis : Programme de conformité opérationnel (`01_cnisn/04_conformite/programme-conformite.md`)
+- **ADR-0010** : Cadre légal et mandat d'opposabilité du CNASN (`01_cnisn/06_decisions/adr-0010-cadre-legal.md`)
 - **Standards** : Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
 - **Décisions** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
 - **Trajectoire** : Partie V : Trajectoire de mise en œuvre (`01_cnisn/05_trajectoire/index.md`)

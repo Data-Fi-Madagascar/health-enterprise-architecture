@@ -1,13 +1,14 @@
 ---
+
 title: "ART-10 : Logistique"
-id: art-10
+id: ART-10
 domain: 02_artsn
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-12
 owner: DEPSI
-tags: [artsn, chapitres, art-10, niveau-3]
-related: ['cap-int-10']
+tags: ["artsn", "chapitres", "ART-10", "niveau-3"]
+related: ["CAP-INT-10"]
 ---
 # ART-10 : Logistique
 
@@ -26,19 +27,19 @@ related: ['cap-int-10']
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-ART-10 : Logistique constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-10`.
+ART-10 : Logistique constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `ART-10`.
 
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-**Contenu normatif.** La continuité de la chaîne d'approvisionnement (médicaments, vaccins, intrants, équipements) conditionne l'exécution des flux de valeur de soins. L'architecture impose une traçabilité de bout en bout des mouvements de produits, de la centrale d'achat jusqu'au point de service : chaque mouvement (livraison, dispensation, transfert, destruction) est un événement immuable, horodaté, adossé aux référentiels de produits, et réconcilié selon les règles comptables de conservation de quantité (Entrées − Sorties = Solde).
+**Contenu normatif.** La continuité de la chaîne d'approvisionnement (médicaments, vaccins, intrants, équipements) conditionne l'exécution des flux de valeur de soins. L'architecture impose une traçabilité de bout en bout des mouvements de produits, de la centrale d'achat jusqu'au point de service : chaque mouvement (livraison, dispensation, transfert, destruction) est un événement immuable, horodaté, adossé aux référentiels de produits, et réconcilié selon les règles comptables de conservation de quantité (Entrées − Sorties = Solde).
 
-**Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (centres de stockage isolés, ruptures de connectivité, circuits parallèles de distribution) : elle seule permet de garantir la disponibilité des intrants et la réconciliation à somme nulle des stocks sans rompre le pipeline.
+**Discipline de mise en œuvre.** Dès qu'une source échappe à la gouvernance directe de l'initiative (centres de stockage isolés, ruptures de connectivité, circuits parallèles de distribution), cette discipline seule permet de garantir la disponibilité des intrants et la réconciliation à somme nulle des stocks sans rompre le pipeline.
 
-- **Rattachement** : CAP-10 (chaîne d'approvisionnement), CAP-11 (infrastructures et équipements).
-- **Modèles cibles** : événementisation des mouvements de stock, registres logistiques (ex. OpenLMIS), traçabilité par lot.
-- **Déduit selon** : ENF-2 (traçabilité des valeurs).
-- **Statut : Provisoire.**
+- **Rattachement** : [CAP-10: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement](../../referentiel/capabilites/cap-10.md) (chaîne d'approvisionnement), [CAP-11: Gestion des infrastructures, équipements et maintenance](../../referentiel/capabilites/cap-11.md) (infrastructures et équipements).
+- **Modèles cibles** : événementisation des mouvements de stock, registres logistiques (ex. OpenLMIS), traçabilité par lot.
+- **Déduit selon** : [ENF-2: Intégrité des flux et traçabilité des valeurs](../../referentiel/exigences/enf-2.md) (traçabilité des valeurs).
+- **Statut : Provisoire.**
 
 *Rattachement : ENF-2, CAP-10, CAP-11 · fiche ART-10*
 
@@ -51,6 +52,6 @@ ART-10 : Logistique constitue un chapitre du **cadre normatif opposable** de l'A
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`art-10`** : Logistique (`referentiel/chapitres/art-10.md`)
+- **`ART-10`** : Logistique (`referentiel/chapitres/art-10.md`)
 - **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
 - **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

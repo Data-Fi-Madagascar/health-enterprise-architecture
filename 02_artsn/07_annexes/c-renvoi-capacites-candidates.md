@@ -1,4 +1,5 @@
 ---
+
 title: Annexe C : Renvoi CAESN et capacités candidates
 id: artsn-annexe-c-renvoi
 domain: 02_artsn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
-tags: [artsn, annexes, renvoi, capacites-candidates, one-health, niveau-3]
+tags: ["artsn", "annexes", "renvoi", "capacites-candidates", "one-health", "niveau-3"]
 ---
 
 # Annexe C : Renvoi CAESN et capacités candidates

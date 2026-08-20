@@ -1,21 +1,21 @@
 ---
-id: cap-int-06
+id: CAP-INT-06
 type: capacite
 niveau: "2"
-title: CAP-INT-06 — Catalogue des services et registre des contrats
+title: Catalogue des services et registre des contrats
 status: active
 owner: DEPSI
 version: "0.5"
 family: echange
 source: 01_cnisn/02_capacites/index.md
-maps_to: ["p-int-05", "p-int-06", "p-int-07", "p-int-08", "p-int-09", "p-int-23", "p-int-24", "p-int-25", "cap-14", "cap-16"]
+maps_to: ["P-INT-05", "P-INT-06", "P-INT-07", "P-INT-08", "P-INT-09", "P-INT-23", "P-INT-24", "P-INT-25", "CAP-14", "CAP-16"]
 implements: []
 applies_to: []
 related: []
 tags: ["cnisn", "niveau-2", "capacite"]
 ---
 
-# CAP-INT-06 — Catalogue des services et registre des contrats
+# Catalogue des services et registre des contrats
 
 ### Finalité
 

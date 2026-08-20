@@ -1,4 +1,5 @@
 ---
+
 title: "STD-0000 : <Titre de la norme>"
 id: std-0000
 domain: 05_standards
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Comité National d'Architecture Santé Numérique
-tags: [standards, <domaine>]
+tags: ["standards", "<domaine>"]
 ---
 
 # STD-0000 : <Titre de la norme>

@@ -1,21 +1,21 @@
 ---
-id: cap-int-14
+id: CAP-INT-14
 type: capacite
 niveau: "2"
-title: CAP-INT-14 — Échanges intersectoriels One Health
+title: Échanges intersectoriels One Health
 status: active
 owner: DEPSI
 version: "0.5"
 family: intersectoriel
 source: 01_cnisn/02_capacites/index.md
-maps_to: ["p-int-01", "p-int-05", "p-int-10", "p-int-14", "p-int-16", "p-int-22"]
+maps_to: ["P-INT-01", "P-INT-05", "P-INT-10", "P-INT-14", "P-INT-16", "P-INT-22"]
 implements: []
 applies_to: []
-related: ["cap-int-03", "cap-int-13", "cap-18"]
+related: ["CAP-INT-03", "CAP-INT-13", "CAP-18"]
 tags: ["cnisn", "niveau-2", "capacite", "one-health", "intersectoriel"]
 ---
 
-# CAP-INT-14 — Échanges intersectoriels One Health
+# Échanges intersectoriels One Health
 
 ### Finalité
 
@@ -95,10 +95,10 @@ Les secteurs concernés :
 
 ### Rattachement
 
-- [CAP-18](../../referentiel/capabilites/cap-18.md) (Coordination intersectorielle — One Health)
-- [CAP-05](../../referentiel/capabilites/cap-05.md) (Surveillance épidémiologique)
+- [CAP-18: Coordination intersectorielle (One Health)](../../referentiel/capabilites/cap-18.md) (Coordination intersectorielle — One Health)
+- [CAP-05: Surveillance épidémiologique, alerte, investigation et riposte](../../referentiel/capabilites/cap-05.md) (Surveillance épidémiologique)
 - [ART-11](../../referentiel/chapitres/art-11.md) (Coordination intersectorielle)
 - [ART-0](../../referentiel/chapitres/art-0.md) (Accords de partage inter-institutionnels)
 - [ART-4d](../../referentiel/chapitres/art-4d.md) (Référentiel géospatial)
 - [F.2](../../referentiel/fondations/f-2.md) (Souveraineté intersectorielle)
-- [ENF-4](../../referentiel/exigences/enf-4.md) (Cloisonnement inter-institutionnel One Health)
+- [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (Cloisonnement inter-institutionnel One Health)

@@ -1,29 +1,29 @@
 ---
-id: prc-05
+id: PRC-05
 type: processus-metier
 niveau: "1"
-title: PRC-05 — Alerte, investigation et riposte
+title: Alerte, investigation et riposte
 status: draft
 owner: Direction de la protection sociale et de la promotion de la santé
 version: "0.0.1"
 source: 00_caesn/01_value-streams/vs-02-risk-protection.md
 maps_to: []
 implements: []
-applies_to: ["cap-04", "cap-05", "cap-06", "cap-09", "cap-10", "cap-11", "cap-13", "cap-14", "cap-15", "pp-03", "pp-04", "pp-07", "pp-08", "cmp-02", "cmp-04", "cmp-06", "cmp-07", "cmp-08", "cmp-11", "cmp-13", "cmp-14", "cmp-15", "cmp-17", "cmp-18"]
-related: ["ev-10", "ev-11", "ev-12", "vs-02"]
-tags: ["caesn", "niveau-1", "processus-metier", "prc-05"]
+applies_to: ["CAP-04", "CAP-05", "CAP-06", "CAP-09", "CAP-10", "CAP-11", "CAP-13", "CAP-14", "CAP-15", "PP-03", "PP-04", "PP-07", "PP-08", "CMP-02", "CMP-04", "CMP-06", "CMP-07", "CMP-08", "CMP-11", "CMP-13", "CMP-14", "CMP-15", "CMP-17", "CMP-18"]
+related: ["VS-02-03", "VS-02-04", "VS-02-05", "VS-02"]
+tags: ["caesn", "niveau-1", "processus-metier", "PRC-05"]
 ---
-# PRC-05 — Alerte, investigation et riposte
+# Alerte, investigation et riposte
 
 ## Objectif
 
-Déclencher et conduire la réponse à un signal sanitaire validé : notification, vérification et investigation, et déploiement de la riposte.
+Déclencher et conduire la réponse à un signal sanitaire validé : notification, vérification et investigation, et déploiement de la riposte.
 
 ## Étapes couvertes
 
-- [EV-10 — Notification et alerte](../etapes-valeur/ev-10.md)
-- [EV-11 — Vérification et investigation](../etapes-valeur/ev-11.md)
-- [EV-12 — Riposte](../etapes-valeur/ev-12.md)
+- [VS-02-03: Notification et alerte](../etapes-valeur/vs-02-03.md)
+- [VS-02-04: Vérification et investigation](../etapes-valeur/vs-02-04.md)
+- [VS-02-05: Riposte](../etapes-valeur/vs-02-05.md)
 
 ## Acteurs
 

@@ -1,4 +1,5 @@
 ---
+
 title: Exemples de profils d'initiative remplis
 id: ptisn-exemples
 domain: 03_ptisn
@@ -6,14 +7,14 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
-tags: [ptisn, exemples, profils, niveau-4]
+tags: ["ptisn", "exemples", "profils", "niveau-4"]
 ---
 
 # Exemples de profils d'initiative remplis
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 4 : Profils Techniques d'Implémentation par Initiative.
+**Niveau :** niveau 4 : Profils techniques d'implémentation de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|

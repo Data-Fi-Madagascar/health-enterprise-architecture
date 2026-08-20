@@ -1,4 +1,5 @@
 ---
+
 title: Capabilités du système de santé
 id: capabilities
 domain: 03_capabilities
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Responsables de capabilités
-tags: [capabilités, catalogue]
+tags: ["capabilités", "catalogue"]
 ---
 
 # Capabilités du système de santé

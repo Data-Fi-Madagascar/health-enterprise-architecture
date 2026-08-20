@@ -1,4 +1,5 @@
 ---
+
 title: "ADR-0002 : Adoption du profil IHE mADX pour l'échange de données agrégées"
 id: adr-0002
 domain: 06_decisions
@@ -6,14 +7,14 @@ version: "1.0.0"
 status: accepté
 date: 2026-07-01
 owner: DEPSI
-tags: [adr, interopérabilité, madx, données-agrégées]
+tags: ["adr", "interopérabilité", "madx", "données-agrégées"]
 ---
 
 # ADR-0002 : Adoption du profil IHE mADX pour l'échange de données agrégées
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 2 : Cadre National d'Interopérabilité de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|

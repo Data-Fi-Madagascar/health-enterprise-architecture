@@ -1,4 +1,5 @@
 ---
+
 title: Annexe B : Glossaire des patterns cités
 id: artsn-annexe-b-glossaire-patterns
 domain: 02_artsn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
-tags: [artsn, annexes, glossaire, patterns, niveau-3]
+tags: ["artsn", "annexes", "glossaire", "patterns", "niveau-3"]
 ---
 
 # Annexe B : Glossaire des patterns cités

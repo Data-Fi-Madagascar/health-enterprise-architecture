@@ -1,4 +1,5 @@
 ---
+
 title: Gouvernance du cadre d'architecture
 id: governance
 domain: 07_governance
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Secrétariat Général
-tags: [gouvernance, instances, décisions, redevabilité]
+tags: ["gouvernance", "instances", "décisions", "redevabilité"]
 ---
 
 # Gouvernance du cadre d'architecture

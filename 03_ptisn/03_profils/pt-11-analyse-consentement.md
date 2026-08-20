@@ -1,12 +1,13 @@
 ---
+
 title: "Analyse PT-11 : Profil technique du consentement"
-id: ptisn-pt-11-analyse
+id: ptisn-PT-11-analyse
 domain: 03_ptisn
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
-tags: [ptisn, pt-11, consentement, analyse]
+tags: ["ptisn", "PT-11", "consentement", "analyse"]
 ---
 
 # Analyse PT-11 : Profil technique du consentement

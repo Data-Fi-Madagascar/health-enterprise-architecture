@@ -6,7 +6,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
-tags: ["ptisn", "niveau-4", "cas-usage", "surveillance", "epidemiologie", "riposte", "vs-02"]
+tags: ["ptisn", "niveau-4", "cas-usage", "surveillance", "epidemiologie", "riposte", "VS-02"]
 ---
 
 # Cas d'usage : Surveillance et riposte épidémique (VS-02)
@@ -45,7 +45,7 @@ Le cycle épidémique est un **cas d'usage métier** qui consomme plusieurs prof
 
 ## Scénario : Cycle complet de surveillance épidémique
 
-### Phase 1 : Détection et collecte (EV-09)
+### Phase 1 : Détection et collecte (VS-02-02)
 
 La phase de détection et de collecte vise à collecter les données de routine des formations sanitaires et des agents communautaires afin d'identifier les signaux sanitaires émergents. Les formations sanitaires transmettent leurs données cliniques au format FHIR `Observation` via la médiation (PT-02), qui assure la normalisation et la validation avant insertion dans l'entrepôt (CMP-03). Les agents communautaires transmettent leurs rapports mobiles : initialement collectés en mode hors ligne puis synchronisés : via la médiation vers le moteur analytique (CMP-04).
 
@@ -74,7 +74,7 @@ Les profils mobilisés sont le PT-08 (échange de données agrégées au format 
 | **PT-07** | Mapping terminologique (CIM-10, LOINC) |
 | **PT-12** | Traçabilité des événements de collecte |
 
-### Phase 2 : Notification et alerte (EV-10)
+### Phase 2 : Notification et alerte (VS-02-03)
 
 La phase de notification et d'alerte consiste à notifier formellement un signal validé aux autorités compétentes et à déclencher l'alerte. Lorsque le moteur analytique (CMP-04) détecte un signal de dépassement de seuil conformément à l'ART-5, il transmet l'alerte au centre de commande (CMP-02). Ce dernier déclenche une alerte temps réel adressée au Ministère, au District et à l'OMS, puis notifie automatiquement l'issue de l'alerte au moteur analytique.
 
@@ -101,7 +101,7 @@ Les profils mobilisés sont le PT-10 (confiance et autorisation avec RBAC pour l
 | **PT-02** | Médiation (formatage des alertes) |
 | **PT-12** | Audit trail de la notification |
 
-### Phase 3 : Investigation et confirmation (EV-11)
+### Phase 3 : Investigation et confirmation (VS-02-04)
 
 La phase d'investigation et de confirmation consiste à vérifier le signal sur le terrain, à prélever des échantillons et à confirmer ou infirmer le cas. L'équipe d'investigation transmet le formulaire d'investigation à l'application terrain, qui envoie les résultats au laboratoire national. Ce dernier retourne les résultats d'analyse, et l'équipe d'investigation élabore le rapport d'investigation final.
 
@@ -129,7 +129,7 @@ Les profils mobilisés sont le PT-02 (médiation pour la conversion des données
 | **PT-07** | Mapping (codes labo → LOINC) |
 | **PT-12** | Traçabilité complète de l'investigation |
 
-### Phase 4 : Riposte et coordination (EV-12)
+### Phase 4 : Riposte et coordination (VS-02-05)
 
 La phase de riposte et de coordination consiste à déployer les mesures de contrôle : vaccination de masse, distribution de moustiquaires, campagne de communication et isolation. Le centre de commande (CMP-02) active le plan de riposte et transmet les instructions aux districts et régions via la médiation (CMP-06). Les districts retournent les rapports d'avancement terrain, et le centre de commande diffuse un dashboard temps réel.
 
@@ -159,7 +159,7 @@ Les profils mobilisés sont le PT-10 (confiance avec RBAC riposte et accès rest
 | **PT-06** | Référentiel structures (localisation riposte) |
 | **PT-12** | Audit des actions de riposte |
 
-### Phase 5 : Suivi et clôture (EV-13)
+### Phase 5 : Suivi et clôture (VS-02-06)
 
 La phase de suivi et de clôture consiste à suivre l'évolution de la situation épidémique et à clore l'épisode lorsque la situation est sous contrôle. Le moteur analytique (CMP-04) transmet la courbe épidémique en décrue au centre de commande (CMP-02), qui formule une recommandation de clôture au comité de gestion de crise. Après validation, la clôture est officialisée.
 
@@ -179,7 +179,7 @@ Moteur analytique (CMP-04)    Centre de commande (CMP-02)
         │◀───────────────────────────│
 ```
 
-### Phase 6 : Capitalisation (EV-14)
+### Phase 6 : Capitalisation (VS-02-07)
 
 La phase de capitalisation vise à documenter les leçons tirées, à mettre à jour les protocoles et à renforcer la préparation aux épisodes futurs. Le centre de commande (CMP-02) élabore un bilan structuré de l'épisode, qu'il transmet à l'entrepôt (CMP-03) pour archivage et analyse rétrospective. Le rapport final est ensuite publié via DHIS2 et transmis à l'OMS.
 
@@ -201,12 +201,12 @@ Centre de commande (CMP-02)    Entrepôt (CMP-03)
 
 | Étape | PT-02 | PT-04 | PT-06 | PT-07 | PT-08 | PT-10 | PT-12 | PT-15 |
 |-------|-------|-------|-------|-------|-------|-------|-------|-------|
-| Détection (EV-09) | ● | ○ | : | ● | ● | : | ● | : |
-| Notification (EV-10) | ● | : | : | : | : | ● | ● | : |
-| Investigation (EV-11) | ● | ● | ○ | ● | : | : | ● | : |
-| Riposte (EV-12) | : | : | ● | : | : | ● | ● | ●* |
-| Suivi (EV-13) | : | : | : | : | ● | : | ● | : |
-| Capitalisation (EV-14) | : | : | : | : | ● | : | ● | : |
+| Détection (VS-02-02) | ● | ○ | : | ● | ● | : | ● | : |
+| Notification (VS-02-03) | ● | : | : | : | : | ● | ● | : |
+| Investigation (VS-02-04) | ● | ● | ○ | ● | : | : | ● | : |
+| Riposte (VS-02-05) | : | : | ● | : | : | ● | ● | ●* |
+| Suivi (VS-02-06) | : | : | : | : | ● | : | ● | : |
+| Capitalisation (VS-02-07) | : | : | : | : | ● | : | ● | : |
 
 *●* PT-15 applicable uniquement pour les zoonoses (One Health)
 

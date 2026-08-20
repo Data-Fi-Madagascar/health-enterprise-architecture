@@ -9,7 +9,7 @@
 La modélisation actuelle confond deux concepts. Les tableaux CAESN décrivent des **étapes de valeur** (7 par flux, avec entrées/sorties/acteurs/ruptures/indicateurs) : ce sont des maillons séquentiels du cycle décrit par un flux, pas des processus métier. Or les 28 objets `referentiel/processus/prc-01…28.md` reproduisent ces étapes 1:1 sous le type `processus-metier` avec un Objectif rédigé « Réaliser l'étape de valeur … du flux VS-XX ». Trois conséquences :
 
 1. **Le type `processus-metier` est utilisé à contresens** : aucun objet ne porte de vrai processus (régroupement cohérent d'activités) ; le mot « processus » désigne un maillon du tableau.
-2. **Le maillage applicatif est illisible** : les 13 composants (`cmp-01…13`) pointent vers des étapes isolées (`applies_to` = listes de `prc-XX`), ce qui oblige à lister jusqu'à 6 étapes par composant et n'exprime pas ce qu'un composant supporte réellement.
+2. **Le maillage applicatif est illisible** : les 13 composants (`CMP-01…13`) pointent vers des étapes isolées (`applies_to` = listes de `prc-XX`), ce qui oblige à lister jusqu'à 6 étapes par composant et n'exprime pas ce qu'un composant supporte réellement.
 3. **Traçabilité sans niveau intermédiaire** : la relation composant → étape → flux est plate ; il n'existe aucun objet auquel raccrocher une activité transverse ou un parcours complet.
 
 ## 2. Objectif
@@ -26,7 +26,7 @@ Faire du type `processus-metier` une **couche de régroupement** au-dessus des �
 | D4 | **Capabilités des processus = héritage intégral** de l'`applies_to` de la VS parente (cap-XX + pp-XX) | Le CAESN déclare les capabilités au niveau flux, pas par étape ; un sous-ensemble manuel inventerait un mapping absent de la source |
 | D5 | **Relations** : `related` = étapes couvertes (`ev-XX`) + VS parente (`vs-XX`) ; `applies_to` = héritage D4 | Traçabilité processus → étapes → VS → capabilités complète et vérifiable |
 | D6 | **Découpage Option 1 « Phases du cycle »** : étapes adjacentes groupées selon les phases du cycle de chaque flux (2/3/2, 2/3/2, 2/2/3, 3/2/2) | Fidèle à la narration des tableaux, blocs équilibrés, traçabilité annexe E intacte |
-| D7 | **Renommage mécanique** `prc-01…28` → `ev-01…28` (1:1, contenu et `applies_to` granulaire conservés) ; le namespace `prc-01…12` est réutilisé par les 12 processus | Le mapping prc→VS a été vérifié (prc-01…07=VS-01, 08…14=VS-02, 15…21=VS-03, 22…28=VS-04) ; aucune réécriture de contenu |
+| D7 | **Renommage mécanique** `PRC-01…28` → `ev-01…28` (1:1, contenu et `applies_to` granulaire conservés) ; le namespace `PRC-01…12` est réutilisé par les 12 processus | Le mapping prc→VS a été vérifié (PRC-01…07=VS-01, 08…14=VS-02, 15…21=VS-03, 22…28=VS-04) ; aucune réécriture de contenu |
 | D8 | **Rattachement des composants au niveau processus** : l'`applies_to` de chaque `cmp-XX` passe des étapes aux processus qui les couvrent, par transformation mécanique depuis le tableau de régroupement | Un composant supporte un processus complet, pas des maillons isolés ; la transformation est déterministe, sans jugement |
 
 ## 4. Modèle cible
@@ -35,11 +35,11 @@ Cinq types d'objets CAESN dans le référentiel :
 
 | Type | Répertoire | Préfixe | Objets |
 |------|------------|---------|--------|
-| `flux-valeur` | `referentiel/flux-valeur/` | `vs-` | vs-01…04 |
-| `etape-valeur` | `referentiel/etapes-valeur/` | `ev-` | ev-01…28 (ex-prc-01…28) |
-| `processus-metier` | `referentiel/processus/` | `prc-` | prc-01…12 (nouveaux) |
-| `composant-applicatif` | `referentiel/composants/` | `cmp-` | cmp-01…13 |
-| `partie-prenante` | `referentiel/parties-prenantes/` | `pp-` | pp-01…10 |
+| `flux-valeur` | `referentiel/flux-valeur/` | `vs-` | VS-01…04 |
+| `etape-valeur` | `referentiel/etapes-valeur/` | `ev-` | ev-01…28 (ex-PRC-01…28) |
+| `processus-metier` | `referentiel/processus/` | `prc-` | PRC-01…12 (nouveaux) |
+| `composant-applicatif` | `referentiel/composants/` | `cmp-` | CMP-01…13 |
+| `partie-prenante` | `referentiel/parties-prenantes/` | `pp-` | PP-01…10 |
 
 Total : **213 objets** (201 + 12 processus, les 28 étapes étant renumérotées sans changement de compte).
 
@@ -89,13 +89,13 @@ Conversion purement formelle, **contenu du corps inchangé** (Objectif / Entrée
 - Frontmatter : `id: prc-XX` → `ev-XX` ; `type: processus-metier` → `etape-valeur` ; `title: PRC-XX — …` → `EV-XX — …` ; `tags`: remplacer `processus-metier`/`prc-XX` par `etape-valeur`/`ev-XX`
 - `source:` (enveloppe VS-XX), `applies_to` (sous-ensembles de capabilités par étape), `related: ["vs-XX"]` : **inchangés**
 
-### 6.2 Processus `prc-01…12` (nouveaux objets)
+### 6.2 Processus `PRC-01…12` (nouveaux objets)
 
 Frontmatter (exemple PRC-01, VS-01) :
 
 ```yaml
 ---
-id: prc-01
+id: PRC-01
 type: processus-metier
 niveau: "1"
 title: PRC-01 — Accès, orientation et admission du patient
@@ -105,9 +105,9 @@ version: "0.0.1"
 source: 00_caesn/01_value-streams/vs-01-access-care.md
 maps_to: []
 implements: []
-applies_to: ["cap-01","cap-02","cap-03","cap-04","cap-09","cap-10","cap-11","cap-13","cap-14","cap-15","pp-01","pp-02","pp-04","pp-05","pp-06"]   # héritage intégral de VS-01 (D4)
-related: ["ev-01","ev-02","vs-01"]
-tags: ["caesn","niveau-1","processus-metier","prc-01"]
+applies_to: ["CAP-01","CAP-02","CAP-03","CAP-04","CAP-09","CAP-10","CAP-11","CAP-13","CAP-14","CAP-15","PP-01","PP-02","PP-04","PP-05","PP-06"]   # héritage intégral de VS-01 (D4)
+related: ["ev-01","ev-02","VS-01"]
+tags: ["caesn","niveau-1","processus-metier","PRC-01"]
 ---
 ```
 
@@ -145,23 +145,23 @@ Transformation mécanique : chaque `applies_to` de `cmp-XX` remplace chaque éta
 
 | Composant | avant (`applies_to`) | après |
 |-----------|----------------------|-------|
-| cmp-01 | prc-02, 03, 05, 06 | prc-01, 02, 03 |
-| cmp-02 | prc-02, 03, 04 | prc-01, 02 |
-| cmp-03 | prc-01, 06, 08, 09 | prc-01, 03, 04 |
-| cmp-04 | prc-09…13 | prc-04, 05, 06 |
-| cmp-05 | prc-08, 09 | prc-04 |
-| cmp-06 | prc-15, 16, 18 | prc-07, 08 |
-| cmp-07 | prc-19, 20, 21 | prc-09 |
-| cmp-08 | prc-04, 12, 18 | prc-02, 05, 08 |
-| cmp-09 | prc-22, 23, 25 | prc-10, 11 |
-| cmp-10 | prc-07, 14, 21, 25, 26, 27 | prc-03, 06, 09, 11, 12 |
-| cmp-11 | prc-22, 24, 28 | prc-10, 12 |
-| cmp-12 | prc-02, 15, 23 | prc-01, 07, 10 |
-| cmp-13 | prc-02, 10, 12, 19 | prc-01, 05, 09 |
+| CMP-01 | PRC-02, 03, 05, 06 | PRC-01, 02, 03 |
+| CMP-02 | PRC-02, 03, 04 | PRC-01, 02 |
+| CMP-03 | PRC-01, 06, 08, 09 | PRC-01, 03, 04 |
+| CMP-04 | PRC-09…13 | PRC-04, 05, 06 |
+| CMP-05 | PRC-08, 09 | PRC-04 |
+| CMP-06 | prc-15, 16, 18 | PRC-07, 08 |
+| CMP-07 | prc-19, 20, 21 | PRC-09 |
+| CMP-08 | PRC-04, 12, 18 | PRC-02, 05, 08 |
+| CMP-09 | prc-22, 23, 25 | PRC-10, 11 |
+| CMP-10 | PRC-07, 14, 21, 25, 26, 27 | PRC-03, 06, 09, 11, 12 |
+| CMP-11 | prc-22, 24, 28 | PRC-10, 12 |
+| CMP-12 | PRC-02, 15, 23 | PRC-01, 07, 10 |
+| CMP-13 | PRC-02, 10, 12, 19 | PRC-01, 05, 09 |
 
 ## 9. Évolution des enveloppes VS
 
-L'enveloppe `vs-01-access-care.md` passe de 2 blocs à 3 :
+L'enveloppe `VS-01-access-care.md` passe de 2 blocs à 3 :
 
 ```
 # VS-01 — …                     (H1 manuscrit)
@@ -181,7 +181,7 @@ L'enveloppe `vs-01-access-care.md` passe de 2 blocs à 3 :
 <!-- END:GENERATED -->
 ```
 
-L'invariant de `build_wrappers.py` est respecté : l'union des blocs couvre les 10 objets rattachés à l'enveloppe (1 VS + 7 étapes + 3 processus). Même schéma pour vs-02 (ev-08…14 + prc-04…06), vs-03 (ev-15…21 + prc-07…09), vs-04 (ev-22…28 + prc-10…12).
+L'invariant de `build_wrappers.py` est respecté : l'union des blocs couvre les 10 objets rattachés à l'enveloppe (1 VS + 7 étapes + 3 processus). Même schéma pour VS-02 (ev-08…14 + PRC-04…06), VS-03 (ev-15…21 + PRC-07…09), VS-04 (ev-22…28 + PRC-10…12).
 
 ## 10. Outillage
 

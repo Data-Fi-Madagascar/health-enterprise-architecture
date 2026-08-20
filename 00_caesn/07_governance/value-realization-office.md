@@ -1,4 +1,5 @@
 ---
+
 title: Bureau de Réalisation de la Valeur
 id: governance-vro
 domain: 07_governance
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Secrétariat Général
-tags: [gouvernance, valeur, portefeuille, bénéfices]
+tags: ["gouvernance", "valeur", "portefeuille", "bénéfices"]
 ---
 
 # Bureau de Réalisation de la Valeur

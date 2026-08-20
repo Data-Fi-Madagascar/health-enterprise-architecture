@@ -1,21 +1,21 @@
 ---
-id: cap-int-09
+id: CAP-INT-09
 type: capacite
 niveau: "2"
-title: CAP-INT-09 — Gestion des consentements et bases d’autorisation
+title: Gestion des consentements et bases d’autorisation
 status: active
 owner: DEPSI
 version: "0.5"
 family: confiance
 source: 01_cnisn/02_capacites/index.md
-maps_to: ["p-int-14", "p-int-15", "p-int-16", "p-int-17", "cap-15"]
+maps_to: ["P-INT-14", "P-INT-15", "P-INT-16", "P-INT-17", "CAP-15"]
 implements: []
 applies_to: []
 related: []
 tags: ["cnisn", "niveau-2", "capacite"]
 ---
 
-# CAP-INT-09 — Gestion des consentements et bases d’autorisation
+# Gestion des consentements et bases d’autorisation
 
 ### Finalité
 

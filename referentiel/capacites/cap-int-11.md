@@ -1,21 +1,21 @@
 ---
-id: cap-int-11
+id: CAP-INT-11
 type: capacite
 niveau: "2"
-title: CAP-INT-11 — Qualité et réconciliation
+title: Qualité et réconciliation
 status: active
 owner: DEPSI
 version: "0.5"
 family: qualite-conformite
 source: 01_cnisn/02_capacites/index.md
-maps_to: ["p-int-01", "p-int-02", "p-int-03", "p-int-04", "p-int-05", "p-int-06", "p-int-07", "p-int-08", "p-int-09", "p-int-23", "p-int-24", "p-int-25", "cap-13", "cap-14"]
+maps_to: ["P-INT-01", "P-INT-02", "P-INT-03", "P-INT-04", "P-INT-05", "P-INT-06", "P-INT-07", "P-INT-08", "P-INT-09", "P-INT-23", "P-INT-24", "P-INT-25", "CAP-13", "CAP-14"]
 implements: []
 applies_to: []
 related: []
 tags: ["cnisn", "niveau-2", "capacite"]
 ---
 
-# CAP-INT-11 — Qualité et réconciliation
+# Qualité et réconciliation
 
 ### Finalité
 

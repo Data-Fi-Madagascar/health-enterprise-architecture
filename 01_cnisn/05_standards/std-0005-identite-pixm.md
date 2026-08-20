@@ -1,4 +1,5 @@
 ---
+
 title: "STD-0005 : Norme d'identité patient : PIXm/PDQm"
 id: std-0005
 domain: 05_standards
@@ -6,14 +7,14 @@ version: "1.0.0"
 status: approved
 last_reviewed: 2026-08-13
 owner: Comité National d'Architecture Santé Numérique
-tags: [standards, identite, pixm, pdqm, obligatoire]
+tags: ["standards", "identite", "pixm", "pdqm", "obligatoire"]
 ---
 
 # STD-0005 : Norme d'identité patient : PIXm/PDQm
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 2 : Cadre National d'Interopérabilité de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|

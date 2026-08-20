@@ -1,4 +1,5 @@
 ---
+
 title: Référentiels nationaux
 id: data-referentials
 domain: 04_data
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Cellule du Système d'Information Sanitaire
-tags: [données, référentiels, normes]
+tags: ["données", "référentiels", "normes"]
 ---
 
 # Référentiels nationaux

@@ -1,12 +1,12 @@
 ---
 title: PT-12 : Profil technique national
-id: ptisn-pt-12-audit-provenance-traçabilité
+id: ptisn-PT-12-audit-provenance-traçabilité
 domain: 03_ptisn
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
-tags: ["ptisn", "niveau-4", "profils", "pt-12"]
+tags: ["ptisn", "niveau-4", "profils", "PT-12"]
 ---
 
 # PT-12 : Profil technique national
@@ -16,14 +16,14 @@ tags: ["ptisn", "niveau-4", "profils", "pt-12"]
 
 ## 1. Capacité CNISN
 
-**CAP-INT-10 : Provenance, audit et traçabilité**
+**CAP-INT-10 — Provenance, audit et traçabilité**
 
 ## 2. Chapitres ART applicables
 
-- F.1 ;
-- F.5 ;
-- F.6 ;
-- ART-3 ;
+- F.1 ;
+- F.5 ;
+- F.6 ;
+- ART-3 ;
 - ART-7.
 
 ## 3. Services distincts
@@ -36,33 +36,33 @@ Conserve les changements fonctionnels.
 
 ### Service de provenance
 
-Explique :
+Explique :
 
-- l’origine ;
-- l’acteur ;
-- la transformation ;
-- les ressources sources ;
+- l’origine ;
+- l’acteur ;
+- la transformation ;
+- les ressources sources ;
 - les ressources produites.
 
 ### Service d’audit de sécurité
 
-Conserve :
+Conserve :
 
-- consultations ;
-- exports ;
-- authentifications ;
-- décisions d’autorisation ;
-- opérations administratives ;
+- consultations ;
+- exports ;
+- authentifications ;
+- décisions d’autorisation ;
+- opérations administratives ;
 - modifications sensibles.
 
 ### Observabilité technique
 
-Conserve :
+Conserve :
 
-- logs ;
-- métriques ;
-- traces ;
-- erreurs ;
+- logs ;
+- métriques ;
+- traces ;
+- erreurs ;
 - performances.
 
 ## 4. Standards recommandés
@@ -79,12 +79,12 @@ FHIR `AuditEvent` permet de représenter des activités ayant une portée d’au
 
 ## 5. Règles
 
-Les quatre catégories peuvent être corrélées mais peuvent utiliser :
+Les quatre catégories peuvent être corrélées mais peuvent utiliser :
 
-- des formats différents ;
-- des stockages différents ;
-- des durées différentes ;
-- des droits différents ;
+- des formats différents ;
+- des stockages différents ;
+- des durées différentes ;
+- des droits différents ;
 - des politiques différentes.
 
 Un journal technique ne doit pas être utilisé comme seul mécanisme de preuve métier.

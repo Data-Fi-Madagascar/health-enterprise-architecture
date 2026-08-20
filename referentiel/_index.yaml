@@ -6,705 +6,705 @@
 
 # --- CAESN (niveau 1) ---
 # flux de valeur (4)
-- id: vs-01
+- id: VS-01
   type: flux-valeur
   niveau: "1"
   chemin: flux-valeur/vs-01.md
   status: draft
-- id: vs-02
+- id: VS-02
   type: flux-valeur
   niveau: "1"
   chemin: flux-valeur/vs-02.md
   status: draft
-- id: vs-03
+- id: VS-03
   type: flux-valeur
   niveau: "1"
   chemin: flux-valeur/vs-03.md
   status: draft
-- id: vs-04
+- id: VS-04
   type: flux-valeur
   niveau: "1"
   chemin: flux-valeur/vs-04.md
   status: draft
 
 # capabilites (16)
-- id: cap-01
+- id: CAP-01
   type: capabilite
   niveau: "1"
   chemin: capabilites/cap-01.md
   status: draft
-- id: cap-02
+- id: CAP-02
   type: capabilite
   niveau: "1"
   chemin: capabilites/cap-02.md
   status: draft
-- id: cap-03
+- id: CAP-03
   type: capabilite
   niveau: "1"
   chemin: capabilites/cap-03.md
   status: draft
-- id: cap-04
+- id: CAP-04
   type: capabilite
   niveau: "1"
   chemin: capabilites/cap-04.md
   status: draft
-- id: cap-05
+- id: CAP-05
   type: capabilite
   niveau: "1"
   chemin: capabilites/cap-05.md
   status: draft
-- id: cap-06
+- id: CAP-06
   type: capabilite
   niveau: "1"
   chemin: capabilites/cap-06.md
   status: draft
-- id: cap-07
+- id: CAP-07
   type: capabilite
   niveau: "1"
   chemin: capabilites/cap-07.md
   status: draft
-- id: cap-08
+- id: CAP-08
   type: capabilite
   niveau: "1"
   chemin: capabilites/cap-08.md
   status: draft
-- id: cap-09
+- id: CAP-09
   type: capabilite
   niveau: "1"
   chemin: capabilites/cap-09.md
   status: draft
-- id: cap-10
+- id: CAP-10
   type: capabilite
   niveau: "1"
   chemin: capabilites/cap-10.md
   status: draft
-- id: cap-11
+- id: CAP-11
   type: capabilite
   niveau: "1"
   chemin: capabilites/cap-11.md
   status: draft
-- id: cap-12
+- id: CAP-12
   type: capabilite
   niveau: "1"
   chemin: capabilites/cap-12.md
   status: draft
-- id: cap-13
+- id: CAP-13
   type: capabilite
   niveau: "1"
   chemin: capabilites/cap-13.md
   status: draft
-- id: cap-14
+- id: CAP-14
   type: capabilite
   niveau: "1"
   chemin: capabilites/cap-14.md
   status: draft
-- id: cap-15
+- id: CAP-15
   type: capabilite
   niveau: "1"
   chemin: capabilites/cap-15.md
   status: draft
-- id: cap-16
+- id: CAP-16
   type: capabilite
   niveau: "1"
   chemin: capabilites/cap-16.md
   status: draft
 
 # principes d'architecture PA (12)
-- id: pa-01
+- id: PA-01
   type: principe
   niveau: "1"
   chemin: principes/pa-01.md
   status: draft
-- id: pa-02
+- id: PA-02
   type: principe
   niveau: "1"
   chemin: principes/pa-02.md
   status: draft
-- id: pa-03
+- id: PA-03
   type: principe
   niveau: "1"
   chemin: principes/pa-03.md
   status: draft
-- id: pa-04
+- id: PA-04
   type: principe
   niveau: "1"
   chemin: principes/pa-04.md
   status: draft
-- id: pa-05
+- id: PA-05
   type: principe
   niveau: "1"
   chemin: principes/pa-05.md
   status: draft
-- id: pa-06
+- id: PA-06
   type: principe
   niveau: "1"
   chemin: principes/pa-06.md
   status: draft
-- id: pa-07
+- id: PA-07
   type: principe
   niveau: "1"
   chemin: principes/pa-07.md
   status: draft
-- id: pa-08
+- id: PA-08
   type: principe
   niveau: "1"
   chemin: principes/pa-08.md
   status: draft
-- id: pa-09
+- id: PA-09
   type: principe
   niveau: "1"
   chemin: principes/pa-09.md
   status: draft
-- id: pa-10
+- id: PA-10
   type: principe
   niveau: "1"
   chemin: principes/pa-10.md
   status: draft
-- id: pa-11
+- id: PA-11
   type: principe
   niveau: "1"
   chemin: principes/pa-11.md
   status: draft
-- id: pa-12
+- id: PA-12
   type: principe
   niveau: "1"
   chemin: principes/pa-12.md
   status: draft
 
 # principes de domaine PD (20)
-- id: pd-vs01-01
+- id: PD-VS01-01
   type: principe
   niveau: "1"
   chemin: principes/pd-vs01-01.md
   status: draft
-- id: pd-vs01-02
+- id: PD-VS01-02
   type: principe
   niveau: "1"
   chemin: principes/pd-vs01-02.md
   status: draft
-- id: pd-vs01-03
+- id: PD-VS01-03
   type: principe
   niveau: "1"
   chemin: principes/pd-vs01-03.md
   status: draft
-- id: pd-vs01-04
+- id: PD-VS01-04
   type: principe
   niveau: "1"
   chemin: principes/pd-vs01-04.md
   status: draft
-- id: pd-vs01-05
+- id: PD-VS01-05
   type: principe
   niveau: "1"
   chemin: principes/pd-vs01-05.md
   status: draft
-- id: pd-vs02-01
+- id: PD-VS02-01
   type: principe
   niveau: "1"
   chemin: principes/pd-vs02-01.md
   status: draft
-- id: pd-vs02-02
+- id: PD-VS02-02
   type: principe
   niveau: "1"
   chemin: principes/pd-vs02-02.md
   status: draft
-- id: pd-vs02-03
+- id: PD-VS02-03
   type: principe
   niveau: "1"
   chemin: principes/pd-vs02-03.md
   status: draft
-- id: pd-vs02-04
+- id: PD-VS02-04
   type: principe
   niveau: "1"
   chemin: principes/pd-vs02-04.md
   status: draft
-- id: pd-vs02-05
+- id: PD-VS02-05
   type: principe
   niveau: "1"
   chemin: principes/pd-vs02-05.md
   status: draft
-- id: pd-vs03-01
+- id: PD-VS03-01
   type: principe
   niveau: "1"
   chemin: principes/pd-vs03-01.md
   status: draft
-- id: pd-vs03-02
+- id: PD-VS03-02
   type: principe
   niveau: "1"
   chemin: principes/pd-vs03-02.md
   status: draft
-- id: pd-vs03-03
+- id: PD-VS03-03
   type: principe
   niveau: "1"
   chemin: principes/pd-vs03-03.md
   status: draft
-- id: pd-vs03-04
+- id: PD-VS03-04
   type: principe
   niveau: "1"
   chemin: principes/pd-vs03-04.md
   status: draft
-- id: pd-vs03-05
+- id: PD-VS03-05
   type: principe
   niveau: "1"
   chemin: principes/pd-vs03-05.md
   status: draft
-- id: pd-vs04-01
+- id: PD-VS04-01
   type: principe
   niveau: "1"
   chemin: principes/pd-vs04-01.md
   status: draft
-- id: pd-vs04-02
+- id: PD-VS04-02
   type: principe
   niveau: "1"
   chemin: principes/pd-vs04-02.md
   status: draft
-- id: pd-vs04-03
+- id: PD-VS04-03
   type: principe
   niveau: "1"
   chemin: principes/pd-vs04-03.md
   status: draft
-- id: pd-vs04-04
+- id: PD-VS04-04
   type: principe
   niveau: "1"
   chemin: principes/pd-vs04-04.md
   status: draft
-- id: pd-vs04-05
+- id: PD-VS04-05
   type: principe
   niveau: "1"
   chemin: principes/pd-vs04-05.md
   status: draft
 
 # principes de données DA (8)
-- id: da-01
+- id: DA-01
   type: principe
   niveau: "1"
   chemin: principes/da-01.md
   status: draft
-- id: da-02
+- id: DA-02
   type: principe
   niveau: "1"
   chemin: principes/da-02.md
   status: draft
-- id: da-03
+- id: DA-03
   type: principe
   niveau: "1"
   chemin: principes/da-03.md
   status: draft
-- id: da-04
+- id: DA-04
   type: principe
   niveau: "1"
   chemin: principes/da-04.md
   status: draft
-- id: da-05
+- id: DA-05
   type: principe
   niveau: "1"
   chemin: principes/da-05.md
   status: draft
-- id: da-06
+- id: DA-06
   type: principe
   niveau: "1"
   chemin: principes/da-06.md
   status: draft
-- id: da-07
+- id: DA-07
   type: principe
   niveau: "1"
   chemin: principes/da-07.md
   status: draft
-- id: da-08
+- id: DA-08
   type: principe
   niveau: "1"
   chemin: principes/da-08.md
   status: draft
 
 # principes applicatifs AA (9)
-- id: aa-01
+- id: AA-01
   type: principe
   niveau: "1"
   chemin: principes/aa-01.md
   status: draft
-- id: aa-02
+- id: AA-02
   type: principe
   niveau: "1"
   chemin: principes/aa-02.md
   status: draft
-- id: aa-03
+- id: AA-03
   type: principe
   niveau: "1"
   chemin: principes/aa-03.md
   status: draft
-- id: aa-04
+- id: AA-04
   type: principe
   niveau: "1"
   chemin: principes/aa-04.md
   status: draft
-- id: aa-05
+- id: AA-05
   type: principe
   niveau: "1"
   chemin: principes/aa-05.md
   status: draft
-- id: aa-06
+- id: AA-06
   type: principe
   niveau: "1"
   chemin: principes/aa-06.md
   status: draft
-- id: aa-07
+- id: AA-07
   type: principe
   niveau: "1"
   chemin: principes/aa-07.md
   status: draft
-- id: aa-08
+- id: AA-08
   type: principe
   niveau: "1"
   chemin: principes/aa-08.md
   status: draft
-- id: aa-09
+- id: AA-09
   type: principe
   niveau: "1"
   chemin: principes/aa-09.md
   status: draft
 
 # étapes de valeur (28)
-- id: ev-01
+- id: VS-01-01
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-01.md
+  chemin: etapes-valeur/vs-01-01.md
   status: draft
-- id: ev-02
+- id: VS-01-02
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-02.md
+  chemin: etapes-valeur/vs-01-02.md
   status: draft
-- id: ev-03
+- id: VS-01-03
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-03.md
+  chemin: etapes-valeur/vs-01-03.md
   status: draft
-- id: ev-04
+- id: VS-01-04
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-04.md
+  chemin: etapes-valeur/vs-01-04.md
   status: draft
-- id: ev-05
+- id: VS-01-05
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-05.md
+  chemin: etapes-valeur/vs-01-05.md
   status: draft
-- id: ev-06
+- id: VS-01-06
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-06.md
+  chemin: etapes-valeur/vs-01-06.md
   status: draft
-- id: ev-07
+- id: VS-01-07
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-07.md
+  chemin: etapes-valeur/vs-01-07.md
   status: draft
-- id: ev-08
+- id: VS-02-01
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-08.md
+  chemin: etapes-valeur/vs-02-01.md
   status: draft
-- id: ev-09
+- id: VS-02-02
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-09.md
+  chemin: etapes-valeur/vs-02-02.md
   status: draft
-- id: ev-10
+- id: VS-02-03
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-10.md
+  chemin: etapes-valeur/vs-02-03.md
   status: draft
-- id: ev-11
+- id: VS-02-04
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-11.md
+  chemin: etapes-valeur/vs-02-04.md
   status: draft
-- id: ev-12
+- id: VS-02-05
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-12.md
+  chemin: etapes-valeur/vs-02-05.md
   status: draft
-- id: ev-13
+- id: VS-02-06
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-13.md
+  chemin: etapes-valeur/vs-02-06.md
   status: draft
-- id: ev-14
+- id: VS-02-07
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-14.md
+  chemin: etapes-valeur/vs-02-07.md
   status: draft
-- id: ev-15
+- id: VS-03-01
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-15.md
+  chemin: etapes-valeur/vs-03-01.md
   status: draft
-- id: ev-16
+- id: VS-03-02
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-16.md
+  chemin: etapes-valeur/vs-03-02.md
   status: draft
-- id: ev-17
+- id: VS-03-03
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-17.md
+  chemin: etapes-valeur/vs-03-03.md
   status: draft
-- id: ev-18
+- id: VS-03-04
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-18.md
+  chemin: etapes-valeur/vs-03-04.md
   status: draft
-- id: ev-19
+- id: VS-03-05
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-19.md
+  chemin: etapes-valeur/vs-03-05.md
   status: draft
-- id: ev-20
+- id: VS-03-06
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-20.md
+  chemin: etapes-valeur/vs-03-06.md
   status: draft
-- id: ev-21
+- id: VS-03-07
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-21.md
+  chemin: etapes-valeur/vs-03-07.md
   status: draft
-- id: ev-22
+- id: VS-04-01
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-22.md
+  chemin: etapes-valeur/vs-04-01.md
   status: draft
-- id: ev-23
+- id: VS-04-02
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-23.md
+  chemin: etapes-valeur/vs-04-02.md
   status: draft
-- id: ev-24
+- id: VS-04-03
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-24.md
+  chemin: etapes-valeur/vs-04-03.md
   status: draft
-- id: ev-25
+- id: VS-04-04
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-25.md
+  chemin: etapes-valeur/vs-04-04.md
   status: draft
-- id: ev-26
+- id: VS-04-05
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-26.md
+  chemin: etapes-valeur/vs-04-05.md
   status: draft
-- id: ev-27
+- id: VS-04-06
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-27.md
+  chemin: etapes-valeur/vs-04-06.md
   status: draft
-- id: ev-28
+- id: VS-04-07
   type: etape-valeur
   niveau: "1"
-  chemin: etapes-valeur/ev-28.md
+  chemin: etapes-valeur/vs-04-07.md
   status: draft
 
 # processus métier (12)
-- id: prc-01
+- id: PRC-01
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-01.md
   status: draft
-- id: prc-02
+- id: PRC-02
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-02.md
   status: draft
-- id: prc-03
+- id: PRC-03
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-03.md
   status: draft
-- id: prc-04
+- id: PRC-04
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-04.md
   status: draft
-- id: prc-05
+- id: PRC-05
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-05.md
   status: draft
-- id: prc-06
+- id: PRC-06
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-06.md
   status: draft
-- id: prc-07
+- id: PRC-07
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-07.md
   status: draft
-- id: prc-08
+- id: PRC-08
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-08.md
   status: draft
-- id: prc-09
+- id: PRC-09
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-09.md
   status: draft
-- id: prc-10
+- id: PRC-10
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-10.md
   status: draft
-- id: prc-11
+- id: PRC-11
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-11.md
   status: draft
-- id: prc-12
+- id: PRC-12
   type: processus-metier
   niveau: "1"
   chemin: processus/prc-12.md
   status: draft
 
 # composants applicatifs (18)
-- id: cmp-01
+- id: CMP-01
   type: composant-applicatif
   niveau: "1"
   chemin: composants/cmp-01.md
   status: draft
-- id: cmp-02
+- id: CMP-02
   type: composant-applicatif
   niveau: "1"
   chemin: composants/cmp-02.md
   status: draft
-- id: cmp-03
+- id: CMP-03
   type: composant-applicatif
   niveau: "1"
   chemin: composants/cmp-03.md
   status: draft
-- id: cmp-04
+- id: CMP-04
   type: composant-applicatif
   niveau: "1"
   chemin: composants/cmp-04.md
   status: draft
-- id: cmp-05
+- id: CMP-05
   type: composant-applicatif
   niveau: "1"
   chemin: composants/cmp-05.md
   status: draft
-- id: cmp-06
+- id: CMP-06
   type: composant-applicatif
   niveau: "1"
   chemin: composants/cmp-06.md
   status: draft
-- id: cmp-07
+- id: CMP-07
   type: composant-applicatif
   niveau: "1"
   chemin: composants/cmp-07.md
   status: draft
-- id: cmp-08
+- id: CMP-08
   type: composant-applicatif
   niveau: "1"
   chemin: composants/cmp-08.md
   status: draft
-- id: cmp-09
+- id: CMP-09
   type: composant-applicatif
   niveau: "1"
   chemin: composants/cmp-09.md
   status: draft
-- id: cmp-10
+- id: CMP-10
   type: composant-applicatif
   niveau: "1"
   chemin: composants/cmp-10.md
   status: draft
-- id: cmp-11
+- id: CMP-11
   type: composant-applicatif
   niveau: "1"
   chemin: composants/cmp-11.md
   status: draft
-- id: cmp-12
+- id: CMP-12
   type: composant-applicatif
   niveau: "1"
   chemin: composants/cmp-12.md
   status: draft
-- id: cmp-13
+- id: CMP-13
   type: composant-applicatif
   niveau: "1"
   chemin: composants/cmp-13.md
   status: draft
-- id: cmp-14
+- id: CMP-14
   type: composant-applicatif
   niveau: "1"
   chemin: composants/cmp-14.md
   status: draft
-- id: cmp-15
+- id: CMP-15
   type: composant-applicatif
   niveau: "1"
   chemin: composants/cmp-15.md
   status: draft
-- id: cmp-16
+- id: CMP-16
   type: composant-applicatif
   niveau: "1"
   chemin: composants/cmp-16.md
   status: draft
-- id: cmp-17
+- id: CMP-17
   type: composant-applicatif
   niveau: "1"
   chemin: composants/cmp-17.md
   status: draft
-- id: cmp-18
+- id: CMP-18
   type: composant-applicatif
   niveau: "1"
   chemin: composants/cmp-18.md
   status: draft
 
 # parties prenantes (10)
-- id: pp-01
+- id: PP-01
   type: partie-prenante
   niveau: "1"
   chemin: parties-prenantes/pp-01.md
   status: draft
-- id: pp-02
+- id: PP-02
   type: partie-prenante
   niveau: "1"
   chemin: parties-prenantes/pp-02.md
   status: draft
-- id: pp-03
+- id: PP-03
   type: partie-prenante
   niveau: "1"
   chemin: parties-prenantes/pp-03.md
   status: draft
-- id: pp-04
+- id: PP-04
   type: partie-prenante
   niveau: "1"
   chemin: parties-prenantes/pp-04.md
   status: draft
-- id: pp-05
+- id: PP-05
   type: partie-prenante
   niveau: "1"
   chemin: parties-prenantes/pp-05.md
   status: draft
-- id: pp-06
+- id: PP-06
   type: partie-prenante
   niveau: "1"
   chemin: parties-prenantes/pp-06.md
   status: draft
-- id: pp-07
+- id: PP-07
   type: partie-prenante
   niveau: "1"
   chemin: parties-prenantes/pp-07.md
   status: draft
-- id: pp-08
+- id: PP-08
   type: partie-prenante
   niveau: "1"
   chemin: parties-prenantes/pp-08.md
   status: draft
-- id: pp-09
+- id: PP-09
   type: partie-prenante
   niveau: "1"
   chemin: parties-prenantes/pp-09.md
   status: draft
-- id: pp-10
+- id: PP-10
   type: partie-prenante
   niveau: "1"
   chemin: parties-prenantes/pp-10.md
@@ -712,189 +712,189 @@
 
 # --- CNISN (niveau 2) ---
 # principes (25)
-- id: p-int-01
+- id: P-INT-01
   type: principe
   niveau: "2"
   chemin: principes/p-int-01.md
   status: active
-- id: p-int-02
+- id: P-INT-02
   type: principe
   niveau: "2"
   chemin: principes/p-int-02.md
   status: active
-- id: p-int-03
+- id: P-INT-03
   type: principe
   niveau: "2"
   chemin: principes/p-int-03.md
   status: active
-- id: p-int-04
+- id: P-INT-04
   type: principe
   niveau: "2"
   chemin: principes/p-int-04.md
   status: active
-- id: p-int-05
+- id: P-INT-05
   type: principe
   niveau: "2"
   chemin: principes/p-int-05.md
   status: active
-- id: p-int-06
+- id: P-INT-06
   type: principe
   niveau: "2"
   chemin: principes/p-int-06.md
   status: active
-- id: p-int-07
+- id: P-INT-07
   type: principe
   niveau: "2"
   chemin: principes/p-int-07.md
   status: active
-- id: p-int-08
+- id: P-INT-08
   type: principe
   niveau: "2"
   chemin: principes/p-int-08.md
   status: active
-- id: p-int-09
+- id: P-INT-09
   type: principe
   niveau: "2"
   chemin: principes/p-int-09.md
   status: active
-- id: p-int-10
+- id: P-INT-10
   type: principe
   niveau: "2"
   chemin: principes/p-int-10.md
   status: active
-- id: p-int-11
+- id: P-INT-11
   type: principe
   niveau: "2"
   chemin: principes/p-int-11.md
   status: active
-- id: p-int-12
+- id: P-INT-12
   type: principe
   niveau: "2"
   chemin: principes/p-int-12.md
   status: active
-- id: p-int-13
+- id: P-INT-13
   type: principe
   niveau: "2"
   chemin: principes/p-int-13.md
   status: active
-- id: p-int-14
+- id: P-INT-14
   type: principe
   niveau: "2"
   chemin: principes/p-int-14.md
   status: active
-- id: p-int-15
+- id: P-INT-15
   type: principe
   niveau: "2"
   chemin: principes/p-int-15.md
   status: active
-- id: p-int-16
+- id: P-INT-16
   type: principe
   niveau: "2"
   chemin: principes/p-int-16.md
   status: active
-- id: p-int-17
+- id: P-INT-17
   type: principe
   niveau: "2"
   chemin: principes/p-int-17.md
   status: active
-- id: p-int-18
+- id: P-INT-18
   type: principe
   niveau: "2"
   chemin: principes/p-int-18.md
   status: active
-- id: p-int-19
+- id: P-INT-19
   type: principe
   niveau: "2"
   chemin: principes/p-int-19.md
   status: active
-- id: p-int-20
+- id: P-INT-20
   type: principe
   niveau: "2"
   chemin: principes/p-int-20.md
   status: active
-- id: p-int-21
+- id: P-INT-21
   type: principe
   niveau: "2"
   chemin: principes/p-int-21.md
   status: active
-- id: p-int-22
+- id: P-INT-22
   type: principe
   niveau: "2"
   chemin: principes/p-int-22.md
   status: active
-- id: p-int-23
+- id: P-INT-23
   type: principe
   niveau: "2"
   chemin: principes/p-int-23.md
   status: active
-- id: p-int-24
+- id: P-INT-24
   type: principe
   niveau: "2"
   chemin: principes/p-int-24.md
   status: active
-- id: p-int-25
+- id: P-INT-25
   type: principe
   niveau: "2"
   chemin: principes/p-int-25.md
   status: active
 
 # capacites (12)
-- id: cap-int-01
+- id: CAP-INT-01
   type: capacite
   niveau: "2"
   chemin: capacites/cap-int-01.md
   status: active
-- id: cap-int-02
+- id: CAP-INT-02
   type: capacite
   niveau: "2"
   chemin: capacites/cap-int-02.md
   status: active
-- id: cap-int-03
+- id: CAP-INT-03
   type: capacite
   niveau: "2"
   chemin: capacites/cap-int-03.md
   status: active
-- id: cap-int-04
+- id: CAP-INT-04
   type: capacite
   niveau: "2"
   chemin: capacites/cap-int-04.md
   status: active
-- id: cap-int-05
+- id: CAP-INT-05
   type: capacite
   niveau: "2"
   chemin: capacites/cap-int-05.md
   status: active
-- id: cap-int-06
+- id: CAP-INT-06
   type: capacite
   niveau: "2"
   chemin: capacites/cap-int-06.md
   status: active
-- id: cap-int-07
+- id: CAP-INT-07
   type: capacite
   niveau: "2"
   chemin: capacites/cap-int-07.md
   status: active
-- id: cap-int-08
+- id: CAP-INT-08
   type: capacite
   niveau: "2"
   chemin: capacites/cap-int-08.md
   status: active
-- id: cap-int-09
+- id: CAP-INT-09
   type: capacite
   niveau: "2"
   chemin: capacites/cap-int-09.md
   status: active
-- id: cap-int-10
+- id: CAP-INT-10
   type: capacite
   niveau: "2"
   chemin: capacites/cap-int-10.md
   status: active
-- id: cap-int-11
+- id: CAP-INT-11
   type: capacite
   niveau: "2"
   chemin: capacites/cap-int-11.md
   status: active
-- id: cap-int-12
+- id: CAP-INT-12
   type: capacite
   niveau: "2"
   chemin: capacites/cap-int-12.md
@@ -902,67 +902,67 @@
 
 # --- PTISN (niveau 4) ---
 # profils (13)
-- id: pt-01
+- id: PT-01
   type: profil
   niveau: "4"
   chemin: profils/pt-01.md
   status: draft
-- id: pt-02
+- id: PT-02
   type: profil
   niveau: "4"
   chemin: profils/pt-02.md
   status: draft
-- id: pt-03
+- id: PT-03
   type: profil
   niveau: "4"
   chemin: profils/pt-03.md
   status: draft
-- id: pt-04
+- id: PT-04
   type: profil
   niveau: "4"
   chemin: profils/pt-04.md
   status: draft
-- id: pt-05
+- id: PT-05
   type: profil
   niveau: "4"
   chemin: profils/pt-05.md
   status: draft
-- id: pt-06
+- id: PT-06
   type: profil
   niveau: "4"
   chemin: profils/pt-06.md
   status: draft
-- id: pt-07
+- id: PT-07
   type: profil
   niveau: "4"
   chemin: profils/pt-07.md
   status: draft
-- id: pt-08
+- id: PT-08
   type: profil
   niveau: "4"
   chemin: profils/pt-08.md
   status: draft
-- id: pt-09
+- id: PT-09
   type: profil
   niveau: "4"
   chemin: profils/pt-09.md
   status: draft
-- id: pt-10
+- id: PT-10
   type: profil
   niveau: "4"
   chemin: profils/pt-10.md
   status: draft
-- id: pt-11
+- id: PT-11
   type: profil
   niveau: "4"
   chemin: profils/pt-11.md
   status: draft
-- id: pt-12
+- id: PT-12
   type: profil
   niveau: "4"
   chemin: profils/pt-12.md
   status: draft
-- id: pt-13
+- id: PT-13
   type: profil
   niveau: "4"
   chemin: profils/pt-13.md
@@ -970,165 +970,165 @@
 
 # --- ARTSN (niveau 3) ---
 # fondations (4)
-- id: f-1
+- id: F-1
   type: fondation
   niveau: "3"
   chemin: fondations/f-1.md
   status: draft
-- id: f-2
+- id: F-2
   type: fondation
   niveau: "3"
   chemin: fondations/f-2.md
   status: draft
-- id: f-3
+- id: F-3
   type: fondation
   niveau: "3"
   chemin: fondations/f-3.md
   status: draft
-- id: f-4
+- id: F-4
   type: fondation
   niveau: "3"
   chemin: fondations/f-4.md
   status: draft
 
 # fondations stubs candidats (créés Phase 2)
-- id: f-5
+- id: F-5
   type: fondation
   niveau: "3"
   chemin: fondations/f-5.md
   status: candidate
-- id: f-6
+- id: F-6
   type: fondation
   niveau: "3"
   chemin: fondations/f-6.md
   status: candidate
 
 # exigences (5)
-- id: enf-1
+- id: ENF-1
   type: exigence
   niveau: "3"
   chemin: exigences/enf-1.md
   status: draft
-- id: enf-2
+- id: ENF-2
   type: exigence
   niveau: "3"
   chemin: exigences/enf-2.md
   status: draft
-- id: enf-3
+- id: ENF-3
   type: exigence
   niveau: "3"
   chemin: exigences/enf-3.md
   status: draft
-- id: enf-4
+- id: ENF-4
   type: exigence
   niveau: "3"
   chemin: exigences/enf-4.md
   status: draft
-- id: enf-5
+- id: ENF-5
   type: exigence
   niveau: "3"
   chemin: exigences/enf-5.md
   status: draft
 
 # chapitres (18)
-- id: art-0
+- id: ART-0
   type: chapitre
   niveau: "3"
   chemin: chapitres/art-0.md
   status: draft
-- id: art-1
+- id: ART-1
   type: chapitre
   niveau: "3"
   chemin: chapitres/art-1.md
   status: draft
-- id: art-2
+- id: ART-2
   type: chapitre
   niveau: "3"
   chemin: chapitres/art-2.md
   status: draft
-- id: art-3
+- id: ART-3
   type: chapitre
   niveau: "3"
   chemin: chapitres/art-3.md
   status: draft
-- id: art-4
+- id: ART-4
   type: chapitre
   niveau: "3"
   chemin: chapitres/art-4.md
   status: draft
-- id: art-4a
+- id: ART-4A
   type: chapitre
   niveau: "3"
   chemin: chapitres/art-4a.md
   status: draft
-- id: art-4b
+- id: ART-4B
   type: chapitre
   niveau: "3"
   chemin: chapitres/art-4b.md
   status: draft
-- id: art-4c
+- id: ART-4C
   type: chapitre
   niveau: "3"
   chemin: chapitres/art-4c.md
   status: draft
-- id: art-4d
+- id: ART-4D
   type: chapitre
   niveau: "3"
   chemin: chapitres/art-4d.md
   status: draft
-- id: art-5
+- id: ART-5
   type: chapitre
   niveau: "3"
   chemin: chapitres/art-5.md
   status: draft
-- id: art-6
+- id: ART-6
   type: chapitre
   niveau: "3"
   chemin: chapitres/art-6.md
   status: draft
-- id: art-7
+- id: ART-7
   type: chapitre
   niveau: "3"
   chemin: chapitres/art-7.md
   status: draft
-- id: art-8
+- id: ART-8
   type: chapitre
   niveau: "3"
   chemin: chapitres/art-8.md
   status: draft
-- id: art-8a
+- id: ART-8A
   type: chapitre
   niveau: "3"
   chemin: chapitres/art-8a.md
   status: draft
-- id: art-8b
+- id: ART-8B
   type: chapitre
   niveau: "3"
   chemin: chapitres/art-8b.md
   status: draft
-- id: art-8c
+- id: ART-8C
   type: chapitre
   niveau: "3"
   chemin: chapitres/art-8c.md
   status: draft
-- id: art-8d
+- id: ART-8D
   type: chapitre
   niveau: "3"
   chemin: chapitres/art-8d.md
   status: draft
-- id: art-9
+- id: ART-9
   type: chapitre
   niveau: "3"
   chemin: chapitres/art-9.md
   status: draft
 
 # chapitres stubs candidats (créés Phase 2)
-- id: art-10
+- id: ART-10
   type: chapitre
   niveau: "3"
   chemin: chapitres/art-10.md
   status: candidate
-- id: art-11
+- id: ART-11
   type: chapitre
   niveau: "3"
   chemin: chapitres/art-11.md

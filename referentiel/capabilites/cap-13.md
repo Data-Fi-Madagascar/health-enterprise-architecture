@@ -1,27 +1,52 @@
 ---
-id: cap-13
+
+id: CAP-13
 type: capabilite
 niveau: "1"
-title: CAP-13 — Système d'information sanitaire, données et recherche
+title: Système d'information sanitaire, données et recherche
 status: draft
 owner: Responsables de capabilités habilitantes
 version: "0.0.1"
 source: 00_caesn/03_capabilities/enabling.md
 maps_to: []
 implements: []
-applies_to: ["vs-01", "vs-02", "vs-03", "vs-04"]
+applies_to: ["VS-01", "VS-02", "VS-03", "VS-04"]
 related: []
-tags: ['caesn', 'niveau-1', 'capabilite', 'cap-13']
+tags: ["caesn", "niveau-1", "capabilite", "CAP-13"]
 ---
-# CAP-13 — Système d’information sanitaire, données et recherche
+# Système d’information sanitaire, données et recherche
 
 ## Rôle dans le système
 
-La capabilité transforme les données du système de santé en information utile : production, gestion, intégration, analyse et utilisation pour la décision, la recherche, le pilotage et la redevabilité. Elle est transversale à tous les flux de valeur, car aucun flux ne peut être mesuré, amélioré ou gouverné sans données fiables.
+La capabilité transforme les données du système de santé en information utile : production, gestion, intégration, analyse et utilisation pour la décision, la recherche, le pilotage et la redevabilité. Elle est transversale à tous les flux de valeur, car aucun flux ne peut être mesuré, amélioré ou gouverné sans données fiables. Elle couvre :
+
+- **Production et collecte** : génération et capture des données de santé aux points de service
+- **Intégration et ingestion** : centralisation, validation d'intégrité et routage asynchrone des flux
+- **Historisation événementielle** : journal d'événements immuable, source unique de vérité
+- **Qualité et cohérence** : audit continu, traçabilité et fiabilité des données
+- **Analyse et recherche** : entrepôt analytique, projections et exploitation pour la décision
+
+Ces quatre capabilités (CAP-13, CAP-14, CAP-15, CAP-16) constituent le **socle commun (architecture runway)** dont l'absence bloque de nombreuses initiatives.
 
 ## Flux de valeur
 
-- [VS-01](../flux-valeur/vs-01.md)
-- [VS-02](../flux-valeur/vs-02.md)
-- [VS-03](../flux-valeur/vs-03.md)
-- [VS-04](../flux-valeur/vs-04.md)
+- [VS-01: Soins essentiels](../flux-valeur/vs-01.md)
+- [VS-02: Prévention et surveillance](../flux-valeur/vs-02.md)
+- [VS-03: Protection financière](../flux-valeur/vs-03.md)
+- [VS-04: Pilotage du système](../flux-valeur/vs-04.md)
+
+## Rattachement ARTSN
+
+- **ART-1** — Intégration et ingestion
+- **ART-3** — Historisation événementielle et profils de déploiement
+- **ART-5** — Cohérence et qualité des données
+
+## Maturité
+
+| Niveau actuel | Niveau cible (2 ans) |
+|---------------|----------------------|
+| 2/5 | 4/5 |
+
+## Propriétaire
+
+Responsables de capabilités habilitantes

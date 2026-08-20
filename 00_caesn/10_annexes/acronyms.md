@@ -1,4 +1,5 @@
 ---
+
 title: Acronymes et abréviations
 id: annexe-acronyms
 domain: 10_annexes
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Bureau de Réalisation de la Valeur
-tags: [annexes, acronymes]
+tags: ["annexes", "acronymes"]
 ---
 
 # Acronymes et abréviations

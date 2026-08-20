@@ -1,4 +1,5 @@
 ---
+
 title: "Processus de dépréciation des composants"
 id: depreciation
 domain: 02_artsn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: CNASN
-tags: [artsn, gouvernance, dépréciation, retrait, cycle-de-vie, niveau-2]
+tags: ["artsn", "gouvernance", "dépréciation", "retrait", "cycle-de-vie", "niveau-2"]
 ---
 
 # Processus de dépréciation des composants

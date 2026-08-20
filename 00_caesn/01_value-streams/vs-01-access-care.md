@@ -1,12 +1,13 @@
 ---
+
 title: "VS-01 : Accéder à des services de santé essentiels, intégrés, équitables et de qualité"
-id: vs-01
+id: VS-01
 domain: 01_value-streams
 version: "1.0.0""
 status: draft
 last_reviewed: 2026-07-03
 owner: Direction des soins
-tags: [flux-de-valeur, value-stream]
+tags: ["flux-de-valeur", "value-stream"]
 ---
 
 # VS-01 : Accéder à des services de santé essentiels, intégrés, équitables et de qualité
@@ -34,7 +35,11 @@ Un patient ou usager reçoit des soins accessibles, continus, sûrs et de qualit
 
 ## Bénéficiaires principaux
 
-Patients, ménages, communautés, agents de santé, formations sanitaires.
+- [PP-01: Patient et usager](../../referentiel/parties-prenantes/pp-01.md)
+- [PP-02: Ménage et famille](../../referentiel/parties-prenantes/pp-02.md)
+- [PP-04: Communauté](../../referentiel/parties-prenantes/pp-04.md)
+- [PP-05: Agent de santé](../../referentiel/parties-prenantes/pp-05.md)
+- [PP-06: Formation sanitaire](../../referentiel/parties-prenantes/pp-06.md)
 
 ## Description du flux
 
@@ -42,38 +47,37 @@ Ce flux couvre l’ensemble du parcours d’un patient, depuis la reconnaissance
 
 ## Étapes de valeur
 
-| # | Étape | Ce qui entre | Ce qui sort | Qui intervient | Ruptures fréquentes | Indicateurs |
-|---|-------|--------------|-------------|----------------|---------------------|-------------|
-| 1 | Reconnaissance du besoin et orientation | Symptôme ou besoin ressenti par le patient | Patient orienté vers le niveau de soins approprié | Patient, famille, agent de santé communautaire | Méconnaissance des services, distance géographique, coût perçu dissuasif | Taux de recours aux soins, délai moyen d’accès à une formation sanitaire |
-| 2 | Accueil et enregistrement | Patient présent à la formation sanitaire | Dossier ouvert, identité vérifiée, patient pris en charge | Personnel d’accueil, registre patient | Absence de registre, identité non vérifiable, files d’attente prolongées | Taux de dossiers ouverts, délai d’enregistrement |
-| 3 | Consultation et diagnostic | Dossier ouvert, patient examiné | Diagnostic posé, plan de soins défini et documenté | Clinicien, dossier patient | Absence d’historique médical, rupture de stock d’intrants de diagnostic | Taux de consultations avec diagnostic documenté |
-| 4 | Traitement et prise en charge | Plan de soins validé | Traitement administré ou prescrit et disponible | Clinicien, pharmacie, laboratoire | Ruptures de médicaments essentiels, absence de laboratoire fonctionnel | Taux de disponibilité des médicaments traceurs |
-| 5 | Référence et contre-référence | Décision médicale de référer | Patient reçu au niveau supérieur avec son dossier, information retournée à la formation d’origine | Formation sanitaire référente, formation cible, système de transport | Référence effectuée sans dossier, absence de transport, absence de retour d’information | Taux de référence complétée avec retour d’information |
-| 6 | Suivi et continuité des soins | Épisode de soins terminé | Patient suivi, observance thérapeutique assurée | Agent de santé communautaire, clinicien, patient | Perte de vue du patient, absence de système de rappel, dossier longitudinal absent | Taux de patients perdus de vue, taux d’observance thérapeutique |
-| 7 | Amélioration de la qualité | Données issues des soins et des retours patients | Actions correctives décidées et mises en œuvre | Gestionnaire de formation sanitaire, district, comité qualité | Données collectées mais non analysées, absence de revue qualité régulière | Proportion de formations sanitaires ayant réalisé une revue qualité dans le mois |
+- [VS-01-01: Reconnaissance du besoin et orientation](../../referentiel/etapes-valeur/vs-01-01.md)
+- [VS-01-02: Accueil et enregistrement](../../referentiel/etapes-valeur/vs-01-02.md)
+- [VS-01-03: Consultation et diagnostic](../../referentiel/etapes-valeur/vs-01-03.md)
+- [VS-01-04: Traitement et prise en charge](../../referentiel/etapes-valeur/vs-01-04.md)
+- [VS-01-05: Référence et contre-référence](../../referentiel/etapes-valeur/vs-01-05.md)
+- [VS-01-06: Suivi et continuité des soins](../../referentiel/etapes-valeur/vs-01-06.md)
+- [VS-01-07: Amélioration de la qualité](../../referentiel/etapes-valeur/vs-01-07.md)
+
 
 ## Capabilités mobilisées
 
-- CAP-01
-- CAP-02
-- CAP-03
-- CAP-04
-- CAP-09
-- CAP-10
-- CAP-11
-- CAP-13
-- CAP-14
-- CAP-15
+- [CAP-01: Offre de soins et continuité des services](../../referentiel/capabilites/cap-01.md)
+- [CAP-02: Gestion du parcours patient, référence et contre-référence](../../referentiel/capabilites/cap-02.md)
+- [CAP-03: Qualité, sécurité des soins et amélioration continue](../../referentiel/capabilites/cap-03.md)
+- [CAP-04: Santé communautaire et engagement des communautés](../../referentiel/capabilites/cap-04.md)
+- [CAP-09: Gestion des ressources humaines en santé](../../referentiel/capabilites/cap-09.md)
+- [CAP-10: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement](../../referentiel/capabilites/cap-10.md)
+- [CAP-11: Gestion des infrastructures, équipements et maintenance](../../referentiel/capabilites/cap-11.md)
+- [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md)
+- [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md)
+- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md)
 
 *Rattachement : CAP-01, CAP-02, CAP-03, CAP-04, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-01, PP-02, PP-04, PP-05, PP-06 · fiche VS-01*
 
 <!-- END:GENERATED -->
 ## Étapes de valeur
 
-<!-- BEGIN:GENERATED mode=catalogue source=referentiel/etapes-valeur/ev-01.md,referentiel/etapes-valeur/ev-02.md,referentiel/etapes-valeur/ev-03.md,referentiel/etapes-valeur/ev-04.md,referentiel/etapes-valeur/ev-05.md,referentiel/etapes-valeur/ev-06.md,referentiel/etapes-valeur/ev-07.md -->
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/etapes-valeur/vs-01-01.md,referentiel/etapes-valeur/vs-01-02.md,referentiel/etapes-valeur/vs-01-03.md,referentiel/etapes-valeur/vs-01-04.md,referentiel/etapes-valeur/vs-01-05.md,referentiel/etapes-valeur/vs-01-06.md,referentiel/etapes-valeur/vs-01-07.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### EV-01 : Reconnaissance du besoin et orientation
+### Reconnaissance du besoin et orientation
 
 #### Objectif
 
@@ -99,9 +103,9 @@ Méconnaissance des services, distance géographique, coût perçu dissuasif
 
 Taux de recours aux soins, délai moyen d'accès à une formation sanitaire
 
-*Rattachement : CAP-01, CAP-04 · fiche EV-01*
+*Rattachement : CAP-01, CAP-04 · fiche VS-01-01*
 
-### EV-02 : Accueil et enregistrement
+### Accueil et enregistrement
 
 #### Objectif
 
@@ -127,9 +131,9 @@ Absence de registre, identité non vérifiable, files d'attente prolongées
 
 Taux de dossiers ouverts, délai d'enregistrement
 
-*Rattachement : CAP-01, CAP-14, CAP-15 · fiche EV-02*
+*Rattachement : CAP-01, CAP-14, CAP-15 · fiche VS-01-02*
 
-### EV-03 : Consultation et diagnostic
+### Consultation et diagnostic
 
 #### Objectif
 
@@ -155,9 +159,9 @@ Absence d'historique médical, rupture de stock d'intrants de diagnostic
 
 Taux de consultations avec diagnostic documenté
 
-*Rattachement : CAP-01, CAP-13 · fiche EV-03*
+*Rattachement : CAP-01, CAP-13 · fiche VS-01-03*
 
-### EV-04 : Traitement et prise en charge
+### Traitement et prise en charge
 
 #### Objectif
 
@@ -183,9 +187,9 @@ Ruptures de médicaments essentiels, absence de laboratoire fonctionnel
 
 Taux de disponibilité des médicaments traceurs
 
-*Rattachement : CAP-01, CAP-10, CAP-11 · fiche EV-04*
+*Rattachement : CAP-01, CAP-10, CAP-11 · fiche VS-01-04*
 
-### EV-05 : Référence et contre-référence
+### Référence et contre-référence
 
 #### Objectif
 
@@ -211,9 +215,9 @@ Référence effectuée sans dossier, absence de transport, absence de retour d'i
 
 Taux de référence complétée avec retour d'information
 
-*Rattachement : CAP-02 · fiche EV-05*
+*Rattachement : CAP-02 · fiche VS-01-05*
 
-### EV-06 : Suivi et continuité des soins
+### Suivi et continuité des soins
 
 #### Objectif
 
@@ -239,9 +243,9 @@ Perte de vue du patient, absence de système de rappel, dossier longitudinal abs
 
 Taux de patients perdus de vue, taux d'observance thérapeutique
 
-*Rattachement : CAP-01, CAP-02 · fiche EV-06*
+*Rattachement : CAP-01, CAP-02 · fiche VS-01-06*
 
-### EV-07 : Amélioration de la qualité
+### Amélioration de la qualité
 
 #### Objectif
 
@@ -267,7 +271,7 @@ Données collectées mais non analysées, absence de revue qualité régulière
 
 Proportion de formations sanitaires ayant réalisé une revue qualité dans le mois
 
-*Rattachement : CAP-03, CAP-13 · fiche EV-07*
+*Rattachement : CAP-03, CAP-13 · fiche VS-01-07*
 
 <!-- END:GENERATED -->
 ## Processus métier
@@ -275,16 +279,16 @@ Proportion de formations sanitaires ayant réalisé une revue qualité dans le m
 <!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-01.md,referentiel/processus/prc-02.md,referentiel/processus/prc-03.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### PRC-01 : Accès, orientation et admission du patient
+### Accès, orientation et admission du patient
 
 #### Objectif
 
-Assurer l'entrée du patient dans le système de soins : reconnaissance du besoin, orientation vers le niveau de soins approprié, accueil et enregistrement.
+Assurer l'entrée du patient dans le système de soins : reconnaissance du besoin, orientation vers le niveau de soins approprié, accueil et enregistrement.
 
 #### Étapes couvertes
 
-- EV-01 : Reconnaissance du besoin et orientation
-- EV-02 : Accueil et enregistrement
+- [VS-01-01: Reconnaissance du besoin et orientation](../../referentiel/etapes-valeur/vs-01-01.md)
+- [VS-01-02: Accueil et enregistrement](../../referentiel/etapes-valeur/vs-01-02.md)
 
 #### Acteurs
 
@@ -296,17 +300,17 @@ Taux de recours aux soins, délai moyen d'accès à une formation sanitaire, tau
 
 *Rattachement : CAP-01, CAP-02, CAP-03, CAP-04, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-01, PP-02, PP-04, PP-05, PP-06 · fiche PRC-01*
 
-### PRC-02 : Prestation des soins cliniques
+### Prestation des soins cliniques
 
 #### Objectif
 
-Assurer le cœur clinique du parcours : consultation et diagnostic, traitement et prise en charge, référence et contre-référence vers le niveau de soins supérieur.
+Assurer le cœur clinique du parcours : consultation et diagnostic, traitement et prise en charge, référence et contre-référence vers le niveau de soins supérieur.
 
 #### Étapes couvertes
 
-- EV-03 : Consultation et diagnostic
-- EV-04 : Traitement et prise en charge
-- EV-05 : Référence et contre-référence
+- [VS-01-03: Consultation et diagnostic](../../referentiel/etapes-valeur/vs-01-03.md)
+- [VS-01-04: Traitement et prise en charge](../../referentiel/etapes-valeur/vs-01-04.md)
+- [VS-01-05: Référence et contre-référence](../../referentiel/etapes-valeur/vs-01-05.md)
 
 #### Acteurs
 
@@ -318,16 +322,16 @@ Taux de consultations avec diagnostic documenté, taux de disponibilité des mé
 
 *Rattachement : CAP-01, CAP-02, CAP-03, CAP-04, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-01, PP-02, PP-04, PP-05, PP-06 · fiche PRC-02*
 
-### PRC-03 : Continuité, suivi et qualité des soins
+### Continuité, suivi et qualité des soins
 
 #### Objectif
 
-Garantir la continuité des soins après l'épisode et l'amélioration continue de la qualité des services : suivi du patient, observance thérapeutique et revues qualité.
+Garantir la continuité des soins après l'épisode et l'amélioration continue de la qualité des services : suivi du patient, observance thérapeutique et revues qualité.
 
 #### Étapes couvertes
 
-- EV-06 : Suivi et continuité des soins
-- EV-07 : Amélioration de la qualité
+- [VS-01-06: Suivi et continuité des soins](../../referentiel/etapes-valeur/vs-01-06.md)
+- [VS-01-07: Amélioration de la qualité](../../referentiel/etapes-valeur/vs-01-07.md)
 
 #### Acteurs
 

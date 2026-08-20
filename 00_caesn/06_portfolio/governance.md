@@ -1,4 +1,5 @@
 ---
+
 title: Dépendances, revues et règles de gouvernance du portefeuille
 id: portfolio-governance
 domain: 06_portfolio
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Bureau de Réalisation de la Valeur
-tags: [portefeuille, dépendances, revues]
+tags: ["portefeuille", "dépendances", "revues"]
 ---
 
 # Dépendances, revues et règles de gouvernance du portefeuille

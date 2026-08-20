@@ -1,4 +1,5 @@
 ---
+
 title: Fondements stratégiques et normatifs
 id: fondements
 domain: 00_overview
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-19
 owner: Ministère de la Santé Publique
-tags: [fondements, stratégie, normes, madagascar]
+tags: ["fondements", "stratégie", "normes", "madagascar"]
 ---
 
 # Fondements stratégiques et normatifs
@@ -40,6 +41,8 @@ Le cadre est structuré par un cadre juridique national et continental :
 - **Loi n°2014-038 sur la protection des données à caractère personnel** (promulguée le 9 janvier 2015, décret d'application 2023-1541) : La loi institue la Commission Malagasy de l'Informatique et des Libertés (CMIL) comme autorité indépendante. Elle définit les principes de protection des données personnelles (finalité, loyauté, minimisation, sécurité, droit d'accès, consentement) qui sont intégrés dans les règles de gouvernance des données du cadre (§Protection des données personnelles de santé). L'article 23 prévoit explicitement que les données de santé peuvent être communiquées à la personne concernée, directement ou par l'intermédiaire du médecin qu'elle désigne.
 - **Convention de Malabo** (ratifiée par Madagascar, loi 2024-004) : Convention de l'Union Africaine sur la cybersécurité et la protection des données à caractère personnel. Elle renforce le cadre juridique transfrontalier et s'aligne sur les principes de la loi 2014-038.
 - **Plan Stratégique quinquennal du Numérique 2023-2028** : Vision nationale de transformation numérique, intégrant la santé parmi les secteurs prioritaires.
+
+> **Vide législatif.** Le cadre est aujourd'hui consultatif : il ne dispose pas encore de loi e-santé ni de programme de conformité opposable. Une évaluation de référence **GDHM** (OMS) et un projet de loi e-santé (modèle Kenya Digital Health Act 2023) sont recommandés — voir `00_caesn/07_governance/fondement-legal.md` et `adr-0010-cadre-legal.md`.
 
 ## Lecture des axes stratégiques du PDSS dans le cadre
 
@@ -171,3 +174,5 @@ L'intégration de ces technologies fait l'objet d'une veille architecturale perm
 - **DPI-H Reference Architecture** : OMS/ITU (`https://smart.who.int/ra/`)
 - **OpenHIE Architecture Specification** : Communauté de pratique (`https://guides.ohie.org/arch-spec/`)
 - **GovStack Implementation Playbook** : Initiative mondiale (`https://specs.govstack.global/`)
+- **Fondement légal** : Fondement légal et cadre législatif (`00_caesn/07_governance/fondement-legal.md`)
+- **GDHM** : Global Digital Health Monitor, OMS (`https://www.who.int/teams/digital-health`)

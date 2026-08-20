@@ -1,6 +1,6 @@
 ---
 title: Schéma du référentiel
-id: schema-referentiel
+id: SCHEMA-REFERENTIEL
 type: meta
 niveau: "0"
 status: draft
@@ -51,7 +51,7 @@ Ce document définit le modèle d’objets du référentiel. Il est la source de
 
 ```yaml
 ---
-id: p-int-01              # id normalisé, unique, kebab-case
+id: P-INT-01              # id normalisé, unique, kebab-case
 type: principe            # type de l'objet (cf. tableau)
 niveau: "2"               # niveau de référence : 1 (CAESN), 2 (CNISN), 3 (ARTSN), 4 (PTISN)
 title: P-INT-01 — Autorité désignée
@@ -59,7 +59,7 @@ status: active            # draft | active | deprecated | candidate
 owner: DEPSI              # entité responsable
 version: "0.5"            # version héritée de la source
 source: 01_cnisn/01_principes/index.md   # chemin de provenance pré-refactor
-maps_to: ["cap-int-01"]   # correspondance vers autre référentiel (id)
+maps_to: ["CAP-INT-01"]   # correspondance vers autre référentiel (id)
 implements: []          # chapitre/objet mis en œuvre
 applies_to: []          # objets auxquels il s'applique
 related: []             # autres objets liés

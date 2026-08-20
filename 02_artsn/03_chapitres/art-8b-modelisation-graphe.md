@@ -1,13 +1,14 @@
 ---
+
 title: "ART-8b : Modélisation de relations en graphe"
-id: art-8b
+id: ART-8B
 domain: 02_artsn
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
-tags: [artsn, chapitres, art-8b, niveau-3]
-related: ['cap-int-03']
+tags: ["artsn", "chapitres", "ART-8B", "niveau-3"]
+related: ["CAP-INT-03"]
 ---
 
 # ART-8b : Modélisation de relations en graphe
@@ -27,19 +28,19 @@ related: ['cap-int-03']
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-ART-8b : Modélisation de relations en graphe constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-8b`.
+ART-8b : Modélisation de relations en graphe constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `ART-8B`.
 
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-**Contenu normatif.** Pour la surveillance et la cartographie de structures relationnelles ouvertes, récursives et sans fin délimitable, l’architecture impose l’utilisation d’un **stockage non-relationnel** (*Graph Store*). Les entités et leurs interactions doivent y être traitées comme des nœuds et des arcs qualifiés.
+**Contenu normatif.** Pour la surveillance et la cartographie de structures relationnelles ouvertes, récursives et sans limites définies, l’architecture impose l’utilisation d’un **stockage non-relationnel** (*Graph Store*). Les entités et leurs interactions doivent y être traitées comme des nœuds et des arcs qualifiés.
 
-**Discipline existentielle.** Dès lors qu’une source échappe à la gouvernance directe de l’initiative (réseaux de contacts épidémiques, propagation de foyers de zoonoses) : elle seule permet de calculer instantanément les chaînes de transmission et d’identifier les super-propagateurs sans rompre le pipeline.
+**Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (réseaux de contacts épidémiques, propagation de foyers de zoonoses), cette discipline seule permet de calculer instantanément les chaînes de transmission et d’identifier les super-propagateurs sans rompre le pipeline.
 
-- **Rattachement** : CAP-13, CAP-14.
-- **Infrastructure cible** : Graph Store.
-- **Déduit selon** : ENF-4 (cloisonnement One Health).
-- **Statut : Proposition ouverte.**
+- **Rattachement** : [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md).
+- **Infrastructure cible** : Graph Store.
+- **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (cloisonnement One Health).
+- **Statut : Proposition ouverte.**
 
 *Rattachement : ENF-4, CAP-13, CAP-14 · fiche ART-8B*
 
@@ -52,6 +53,6 @@ ART-8b : Modélisation de relations en graphe constitue un chapitre du **cadre n
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`art-8b`** : Modélisation de relations en graphe (`referentiel/chapitres/art-8b.md`)
+- **`ART-8B`** : Modélisation de relations en graphe (`referentiel/chapitres/art-8b.md`)
 - **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
 - **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

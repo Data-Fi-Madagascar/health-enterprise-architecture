@@ -1,4 +1,5 @@
 ---
+
 title: Acronymes et abréviations du PTISN (niveau 4)
 id: ptisn-acronyms
 domain: 03_ptisn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-09
 owner: Équipes techniques des initiatives
-tags: [ptisn, acronymes, niveau-4]
+tags: ["ptisn", "acronymes", "niveau-4"]
 ---
 
 # Acronymes et abréviations du PTISN (niveau 4)

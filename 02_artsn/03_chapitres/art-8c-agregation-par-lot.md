@@ -1,13 +1,14 @@
 ---
+
 title: "ART-8c : Agrégation par lot"
-id: art-8c
+id: ART-8C
 domain: 02_artsn
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
-tags: [artsn, chapitres, art-8c, niveau-3]
-related: ['cap-int-03']
+tags: ["artsn", "chapitres", "ART-8C", "niveau-3"]
+related: ["CAP-INT-03"]
 ---
 
 # ART-8c : Agrégation par lot
@@ -27,19 +28,19 @@ related: ['cap-int-03']
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-ART-8c : Agrégation par lot constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `art-8c`.
+ART-8c : Agrégation par lot constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `ART-8C`.
 
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-**Contenu normatif.** L’architecture doit intégrer un moteur de traitement par lots capable de suspendre le flux transactionnel instantané pour regrouper les micro-agrégats individuels en un seul **agrégat consolidé de niveau supérieur** (pattern cible : *Netting*).
+**Contenu normatif.** L’architecture doit intégrer un moteur de traitement par lots capable de suspendre le flux transactionnel instantané pour regrouper les micro-agrégats individuels en un seul **agrégat consolidé de niveau supérieur** (pattern cible : *Netting*).
 
-**Discipline existentielle.** Dès lors qu’une source échappe à la gouvernance directe de l’initiative (demandes massives de remboursements des pharmacies rurales, vagues de facturations d’hôpitaux) : elle seule permet de compiler les flux locaux et de générer une compensation globale unifiée sans saturer les réseaux d’échange centraux et sans rompre le pipeline.
+**Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (demandes massives de remboursements des pharmacies rurales, vagues de facturations d’hôpitaux), cette discipline seule permet de compiler les flux locaux et de générer une compensation globale unifiée sans saturer les réseaux d’échange centraux et sans rompre le pipeline.
 
-- **Rattachement** : CAP-13, CAP-14.
-- **Pattern cible** : Netting.
-- **Déduit selon** : ENF-1 (réseau instable) et ENF-2 (anti-fraude).
-- **Statut : Proposition ouverte.**
+- **Rattachement** : [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md).
+- **Pattern cible** : Netting.
+- **Déduit selon** : [ENF-1: Résilience à l'instabilité réseau](../../referentiel/exigences/enf-1.md) (réseau instable) et [ENF-2: Intégrité des flux et traçabilité des valeurs](../../referentiel/exigences/enf-2.md) (anti-fraude).
+- **Statut : Proposition ouverte.**
 
 *Rattachement : ENF-1, ENF-2, CAP-13, CAP-14 · fiche ART-8C*
 
@@ -52,6 +53,6 @@ ART-8c : Agrégation par lot constitue un chapitre du **cadre normatif opposable
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`art-8c`** : Agrégation par lot (`referentiel/chapitres/art-8c.md`)
+- **`ART-8C`** : Agrégation par lot (`referentiel/chapitres/art-8c.md`)
 - **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
 - **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

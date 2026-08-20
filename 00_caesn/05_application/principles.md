@@ -1,4 +1,5 @@
 ---
+
 title: "Principes de l'architecture applicative"
 id: application-principles
 domain: 05_application
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Direction des Systèmes d'Information
-tags: [applications, urbanisation, principes]
+tags: ["applications", "urbanisation", "principes"]
 ---
 
 # Principes de l'architecture applicative
@@ -33,11 +34,11 @@ Les principes suivants s'appliquent à toute application ou plateforme numériqu
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### AA-01 : Les applications sont dérivées des flux de valeur et des capabilités
+### Les applications sont dérivées des flux de valeur et des capabilités
 
 #### Signification
 
-Une application n’a de légitimité que si elle soutient une capabilité nécessaire à un flux de valeur national. Une application qui ne se rattache à aucun flux ni à aucune capabilité est redondante ou hors périmètre : elle n’a pas sa place dans le paysage cible.
+Une application n’a de légitimité que si elle soutient une capabilité nécessaire à un flux de valeur national. Une application qui ne se rattache à aucun flux ni à aucune capabilité est redondante ou hors périmètre : elle n’a pas sa place dans le paysage cible.
 
 #### Implications
 
@@ -45,7 +46,7 @@ Chaque application doit indiquer le flux de valeur, la capabilité, les données
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-01*
 
-### AA-02 : Les applications ne doivent pas dupliquer les référentiels nationaux
+### Les applications ne doivent pas dupliquer les référentiels nationaux
 
 #### Signification
 
@@ -57,7 +58,7 @@ Une application consomme les référentiels nationaux plutôt que de créer ses 
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-02*
 
-### AA-03 : Les applications doivent être interopérables par conception
+### Les applications doivent être interopérables par conception
 
 #### Signification
 
@@ -69,47 +70,47 @@ Toute application expose et consomme des interfaces documentées, sécurisées e
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-03*
 
-### AA-04 : Les applications opérationnelles et analytiques doivent être séparées
+### Les applications opérationnelles et analytiques doivent être séparées
 
 #### Signification
 
-Les finalités opérationnelles et analytiques imposent des architectures différentes. Un outil de prestation ne doit pas devenir un outil de reporting, et un entrepôt ne doit pas remplacer un système opérationnel : chaque type de système a un rôle, des exigences de disponibilité et des garanties distinctes.
+Les finalités opérationnelles et analytiques imposent des architectures différentes. Un outil de prestation ne doit pas devenir un outil de reporting, et un entrepôt ne doit pas remplacer un système opérationnel : chaque type de système a un rôle, des exigences de disponibilité et des garanties distinctes.
 
 #### Implications
 
-Les systèmes opérationnels soutiennent l’action en temps réel (soins, logistique, enregistrement) ; les entrepôts et tableaux de bord soutiennent l’analyse rétrospective et la décision. Les données circulent des premiers vers les seconds par des mécanismes d’intégration gouvernés, sans que le reporting ne pèse sur l’acte de prestation.
+Les systèmes opérationnels soutiennent l’action en temps réel (soins, logistique, enregistrement) ; les entrepôts et tableaux de bord soutiennent l’analyse rétrospective et la décision. Les données circulent des premiers vers les seconds par des mécanismes d’intégration gouvernés, sans que le reporting ne pèse sur l’acte de prestation.
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-04*
 
-### AA-05 : Les applications doivent fonctionner dans les conditions réelles du terrain
+### Les applications doivent fonctionner dans les conditions réelles du terrain
 
 #### Signification
 
-Les usages de terrain se déroulent dans des conditions réelles de connectivité : coupures, zones blanches, bande passante réduite. Une application conçue pour un réseau stable devient inutilisable dès que la couverture disparaît, alors que l’acte clinique et la saisie ne peuvent pas attendre.
+Les usages de terrain se déroulent dans des conditions réelles de connectivité : coupures, zones blanches, bande passante réduite. Une application conçue pour un réseau stable devient inutilisable dès que la couverture disparaît, alors que l’acte clinique et la saisie ne peuvent pas attendre.
 
 #### Implications
 
-Les applications destinées au terrain prévoient un mode hors ligne ou dégradé : saisie locale, persistance autonome, puis synchronisation asynchrone au retour de la connectivité. Cette capacité est prévue dès la conception et testée dans les conditions réelles d’usage, pas seulement sur réseau de laboratoire.
+Les applications destinées au terrain prévoient un mode hors ligne ou dégradé : saisie locale, persistance autonome, puis synchronisation asynchrone au retour de la connectivité. Cette capacité est prévue dès la conception et testée dans les conditions réelles d’usage, pas seulement sur réseau de laboratoire.
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-05*
 
-### AA-06 : Les plateformes partagées doivent être réutilisées avant de créer de nouveaux composants
+### Les plateformes partagées doivent être réutilisées avant de créer de nouveaux composants
 
 #### Signification
 
-Le système doit éviter la multiplication de solutions parallèles qui se recouvrent. Chaque nouveau composant ajoute des coûts de maintenance, des doublons de données et des interfaces à préserver ; un service partagé existant rend ces coûts inutiles.
+Le système doit éviter la multiplication de solutions parallèles qui se recouvrent. Chaque nouveau composant ajoute des coûts de maintenance, des doublons de données et des interfaces à préserver ; un service partagé existant rend ces coûts inutiles.
 
 #### Implications
 
-Avant de construire un nouveau composant, l’initiative vérifie l’existence d’un service partagé national répondant au besoin. Si le service existe, elle l’utilise ; si aucune plateforme ne convient, elle le documente et sollicite l’arbitrage avant tout développement.
+Avant de construire un nouveau composant, l’initiative vérifie l’existence d’un service partagé national répondant au besoin. Si le service existe, elle l’utilise ; si aucune plateforme ne convient, elle le documente et sollicite l’arbitrage avant tout développement.
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-06*
 
-### AA-07 : Les applications doivent être soutenables
+### Les applications doivent être soutenables
 
 #### Signification
 
-Une dépendance durable à un partenaire unique fragilise le système national : elle expose l’État au coût, à l’interruption ou à la disparition du service. Une application doit pouvoir être maintenue et reprise par d’autres acteurs sans blocage.
+Une dépendance durable à un partenaire unique fragilise le système national : elle expose l’État au coût, à l’interruption ou à la disparition du service. Une application doit pouvoir être maintenue et reprise par d’autres acteurs sans blocage.
 
 #### Implications
 
@@ -117,7 +118,7 @@ Toute application modélise la maintenance, le support, le transfert de compéte
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-07*
 
-### AA-08 : Les applications doivent être homologuées avant extension
+### Les applications doivent être homologuées avant extension
 
 #### Signification
 
@@ -129,7 +130,7 @@ L’extension est conditionnée à l’alignement sur le cadre, les standards, l
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche AA-08*
 
-### AA-09 : Les applications obsolètes ou redondantes doivent être rationalisées
+### Les applications obsolètes ou redondantes doivent être rationalisées
 
 #### Signification
 

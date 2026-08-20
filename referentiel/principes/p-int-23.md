@@ -1,32 +1,32 @@
 ---
-id: p-int-23
+id: P-INT-23
 type: principe
 niveau: "2"
-title: P-INT-23 — Conformité fondée sur des preuves
+title: Conformité fondée sur des preuves
 status: active
 owner: DEPSI
 version: "0.5"
 source: 01_cnisn/01_principes/index.md
-maps_to: ["cap-16"]
+maps_to: ["CAP-16"]
 implements: []
 applies_to: []
-related: ["cap-int-03", "cap-int-06", "cap-int-07", "cap-int-10", "cap-int-11", "cap-int-12"]
+related: ["CAP-INT-03", "CAP-INT-06", "CAP-INT-07", "CAP-INT-10", "CAP-INT-11", "CAP-INT-12"]
 tags: ["cnisn", "niveau-2", "principe"]
 ---
 
-# P-INT-23 — Conformité fondée sur des preuves
+# Conformité fondée sur des preuves
 
 La conformité au CNISN ne peut pas être établie uniquement par une déclaration narrative.
 
-Elle doit être démontrée par des preuves telles que :
+Elle doit être démontrée par des preuves telles que :
 
-- contrats publiés ;
-- résultats de tests ;
-- matrices de responsabilités ;
-- preuves de sécurité ;
-- mesures de performance ;
-- preuves de versionnement ;
-- rapports de réconciliation ;
-- procédures de reprise ;
-- décisions architecturales ;
+- contrats publiés ;
+- résultats de tests ;
+- matrices de responsabilités ;
+- preuves de sécurité ;
+- mesures de performance ;
+- preuves de versionnement ;
+- rapports de réconciliation ;
+- procédures de reprise ;
+- décisions architecturales ;
 - dérogations approuvées.

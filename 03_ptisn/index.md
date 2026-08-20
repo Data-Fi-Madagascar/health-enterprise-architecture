@@ -1,4 +1,5 @@
 ---
+
 title: Profils techniques d'implémentation de la Santé Numérique (PTISN)
 id: ptisn
 domain: 03_ptisn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08
 owner: Équipes techniques des initiatives
-tags: [ptisn, niveau-4]
+tags: ["ptisn", "niveau-4"]
 ---
 
 # Profils techniques d'implémentation de la Santé Numérique (PTISN)

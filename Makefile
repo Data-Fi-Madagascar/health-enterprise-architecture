@@ -23,7 +23,7 @@ DATE  := $(shell date +%F)
 
 export TAG_VERSION=$(VERSION)
 
-.PHONY: pdf docx public wrappers check clean release note
+.PHONY: pdf docx public wrappers check clean release note validate
 
 pdf:
 	@echo "==> Génération des 5 PDF (version $(VERSION), moteur $(ENGINE))"
@@ -42,14 +42,26 @@ wrappers:
 	@echo "==> Régénération des enveloppes (transclusion des objets)"
 	$(PY) scripts/build_wrappers.py
 
-# Garde-fou : enveloppes à jour (A1/A4) + 0 lien relatif cassé (A2).
+# Garde-fou : enveloppes à jour (A1/A4) + 0 lien relatif cassé (A2) + graphe de
+# relations sans îlot ni cible non résolue (validate_ref.py).
 # Lecture seule : ne régénère pas, pour détecter toute édition d'un bloc généré.
 check:
 	$(PY) scripts/build_wrappers.py --check
 	$(PY) scripts/check_links.py
+	$(PY) scripts/validate_ref.py
 
 clean:
 	rm -rf dist
+
+# Validation du graphe de relations du référentiel (îlots, cibles non résolues,
+# liens relatifs cassés). Indépendant de build_wrappers --check (voir note ci-dessous).
+validate:
+	$(PY) scripts/validate_ref.py
+
+# NOTE : `build_wrappers.py --check` présente un décalage préexistant (générateur
+# émet « — » dans les titres générés alors que les enveloppes committées utilisent
+# « : »). Ce décalage est antérieur à la présente session et ne concerne pas les
+# correctifs HEA. Pour le résorber : `make wrappers` régénère les ~57 enveloppes.
 
 # Affiche les notes de release prêtes à coller
 note:

@@ -1,4 +1,5 @@
 ---
+
 title: Critères et score de priorisation des initiatives
 id: prioritization
 domain: 06_portfolio
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Bureau de Réalisation de la Valeur
-tags: [portefeuille, priorisation, score]
+tags: ["portefeuille", "priorisation", "score"]
 ---
 
 # Critères et score de priorisation des initiatives

@@ -1,4 +1,5 @@
 ---
+
 title: Fiche standard d'initiative orientée valeur
 id: initiative-card
 domain: 06_portfolio
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Bureau de Réalisation de la Valeur
-tags: [portefeuille, fiche, initiative]
+tags: ["portefeuille", "fiche", "initiative"]
 ---
 
 # Fiche standard d'initiative orientée valeur

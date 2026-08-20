@@ -1,4 +1,5 @@
 ---
+
 title: "ADR-0003 : Utilisation de HL7 FHIR comme standard d'interopérabilité"
 id: adr-0003
 domain: 06_decisions
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: accepté
 date: 2026-07-01
 owner: DEPSI
-tags: [adr, interopérabilité, fhir, normes]
+tags: ["adr", "interopérabilité", "fhir", "normes"]
 ---
 
 # ADR-0003 : Utilisation de HL7 FHIR comme standard d'interopérabilité

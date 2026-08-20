@@ -1,21 +1,21 @@
 ---
-id: cap-int-12
+id: CAP-INT-12
 type: capacite
 niveau: "2"
-title: CAP-INT-12 — Conformité et tests d’interopérabilité
+title: Conformité et tests d’interopérabilité
 status: active
 owner: DEPSI
 version: "0.5"
 family: qualite-conformite
 source: 01_cnisn/02_capacites/index.md
-maps_to: ["p-int-19", "p-int-20", "p-int-21", "p-int-22", "p-int-23", "p-int-24", "p-int-25", "cap-14", "cap-16"]
+maps_to: ["P-INT-19", "P-INT-20", "P-INT-21", "P-INT-22", "P-INT-23", "P-INT-24", "P-INT-25", "CAP-14", "CAP-16"]
 implements: []
 applies_to: []
 related: []
 tags: ["cnisn", "niveau-2", "capacite"]
 ---
 
-# CAP-INT-12 — Conformité et tests d’interopérabilité
+# Conformité et tests d’interopérabilité
 
 ### Finalité
 

@@ -1,29 +1,29 @@
 ---
-id: p-int-11
+id: P-INT-11
 type: principe
 niveau: "2"
-title: P-INT-11 — Arbitrage des conflits d’autorité
+title: Arbitrage des conflits d’autorité
 status: active
 owner: DEPSI
 version: "0.5"
 source: 01_cnisn/01_principes/index.md
-maps_to: ["cap-14"]
+maps_to: ["CAP-14"]
 implements: []
 applies_to: []
-related: ["cap-int-03"]
+related: ["CAP-INT-03"]
 tags: ["cnisn", "niveau-2", "principe"]
 ---
 
-# P-INT-11 — Arbitrage des conflits d’autorité
+# Arbitrage des conflits d’autorité
 
-Toute divergence portant sur :
+Toute divergence portant sur :
 
-- l’autorité d’un référentiel ;
-- la définition d’une donnée ;
-- un contrat d’échange ;
-- une règle d’accès ;
-- une politique de résidence ;
-- une définition d’indicateur ;
+- l’autorité d’un référentiel ;
+- la définition d’une donnée ;
+- un contrat d’échange ;
+- une règle d’accès ;
+- une politique de résidence ;
+- une définition d’indicateur ;
 
 doit être arbitrée par l’instance compétente.
 

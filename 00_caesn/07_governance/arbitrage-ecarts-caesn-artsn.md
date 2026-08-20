@@ -1,4 +1,5 @@
 ---
+
 title: "Proposition d'arbitrage : 5 écarts CAESN ↔ ARTSN"
 id: arbitrage-ecarts-caesn-artsn
 domain: 07_governance
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: proposé
 last_reviewed: 2026-08-13
 owner: DEPSI
-tags: [gouvernance, arbitrage, caesn, artsn, ecarts]
+tags: ["gouvernance", "arbitrage", "caesn", "artsn", "ecarts"]
 ---
 
 # Proposition d'arbitrage : 5 écarts CAESN ↔ ARTSN

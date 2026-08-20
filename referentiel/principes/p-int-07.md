@@ -1,39 +1,39 @@
 ---
-id: p-int-07
+id: P-INT-07
 type: principe
 niveau: "2"
-title: P-INT-07 — Responsabilité de la donnée
+title: Responsabilité de la donnée
 status: active
 owner: DEPSI
 version: "0.5"
 source: 01_cnisn/01_principes/index.md
-maps_to: ["cap-13"]
+maps_to: ["CAP-13"]
 implements: []
 applies_to: []
-related: ["cap-int-03", "cap-int-06", "cap-int-07", "cap-int-10", "cap-int-11"]
+related: ["CAP-INT-03", "CAP-INT-06", "CAP-INT-07", "CAP-INT-10", "CAP-INT-11"]
 tags: ["cnisn", "niveau-2", "principe"]
 ---
 
-# P-INT-07 — Responsabilité de la donnée
+# Responsabilité de la donnée
 
-Pour chaque donnée ou événement échangé, les responsabilités suivantes doivent être explicites :
+Pour chaque donnée ou événement échangé, les responsabilités suivantes doivent être explicites :
 
-- source autoritative de l’état courant ;
-- propriétaire fonctionnel ;
-- responsable technique ;
-- producteur ;
-- consommateur ;
-- responsable de la qualité ;
-- responsable de la correction ;
+- source autoritative de l’état courant ;
+- propriétaire fonctionnel ;
+- responsable technique ;
+- producteur ;
+- consommateur ;
+- responsable de la qualité ;
+- responsable de la correction ;
 - responsable de la conservation.
 
 Aucun composant ne doit être déclaré « source unique de vérité » sans préciser la responsabilité exacte concernée.
 
-Il convient de distinguer :
+Il convient de distinguer :
 
-- l’état opérationnel courant ;
-- l’historique capturé ;
-- la preuve de réception ;
-- les métadonnées ;
-- la projection analytique ;
+- l’état opérationnel courant ;
+- l’historique capturé ;
+- la preuve de réception ;
+- les métadonnées ;
+- la projection analytique ;
 - la restitution.

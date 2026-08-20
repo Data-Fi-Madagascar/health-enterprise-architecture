@@ -1,12 +1,13 @@
 ---
+
 title: "VS-03 : Protéger financièrement la population face aux dépenses de santé"
-id: vs-03
+id: VS-03
 domain: 01_value-streams
 version: "1.0.0""
 status: draft
 last_reviewed: 2026-07-03
 owner: Direction de la couverture santé universelle
-tags: [flux-de-valeur, value-stream]
+tags: ["flux-de-valeur", "value-stream"]
 ---
 
 # VS-03 : Protéger financièrement la population face aux dépenses de santé
@@ -34,7 +35,9 @@ Les ménages, en particulier les plus vulnérables, accèdent aux soins de sant�
 
 ## Bénéficiaires principaux
 
-Ménages à faibles revenus, populations vulnérables, indigents, formations sanitaires prestataires de soins.
+- [PP-02: Ménage et famille](../../referentiel/parties-prenantes/pp-02.md)
+- [PP-03: Population](../../referentiel/parties-prenantes/pp-03.md)
+- [PP-06: Formation sanitaire](../../referentiel/parties-prenantes/pp-06.md)
 
 ## Description du flux
 
@@ -42,35 +45,34 @@ Ce flux couvre l’ensemble du cycle de la couverture santé universelle, depuis
 
 ## Étapes de valeur
 
-| # | Étape | Ce qui entre | Ce qui sort | Qui intervient | Ruptures fréquentes | Indicateurs |
-|---|-------|--------------|-------------|----------------|---------------------|-------------|
-| 1 | Identification et enregistrement des bénéficiaires | Populations cibles définies par les politiques nationales | Bénéficiaires enregistrés avec un identifiant unique et fiable | Districts sanitaires, communes, fokontany, gestionnaires du registre | Absence d’identifiant unique national, exclusions liées à la méconnaissance des droits, absence de registre civil opérationnel | Taux de couverture du registre, taux d’exclusion estimé |
-| 2 | Définition des droits et du panier de soins | Bénéficiaire enregistré | Droits connus du bénéficiaire et de la formation sanitaire qui le prend en charge | Ministère de la Santé, formations sanitaires, gestionnaires de la couverture santé | Méconnaissance des droits par les agents, panier de soins non communiqué | Proportion de formations sanitaires informées des droits |
-| 3 | Mobilisation des financements | Budget national alloué, engagements des partenaires | Fonds disponibles et affectés aux mécanismes de protection | Ministère de l’Économie et des Finances, Ministère de la Santé, partenaires | Retards de décaissement, imprévisibilité chronique du financement | Taux d’exécution budgétaire, part du budget santé allouée à la protection financière |
-| 4 | Prise en charge et exemption au point de service | Bénéficiaire se présentant dans une formation sanitaire | Soins reçus sans paiement direct, exemption appliquée | Agent de santé, gestionnaire de la formation sanitaire | Refus de soins, paiement informel, formation non approvisionnée en intrants | Taux d’exemption appliqué, taux de refus de soins signalés |
-| 5 | Facturation et traitement des demandes de remboursement | Soins dispensés et documentés | Facture validée transmise au mécanisme de financement | Gestionnaire de la formation sanitaire, vérificateur, fonds de remboursement | Facturation incorrecte, absence de justificatifs, risques de fraude | Taux de factures rejetées, délai de validation des factures |
-| 6 | Remboursement | Facture validée | Formation sanitaire remboursée dans les délais convenus | Fonds de couverture santé, Ministère de l’Économie et des Finances | Retards chroniques de remboursement, insuffisance de liquidités | Délai moyen de remboursement, taux de remboursement effectif |
-| 7 | Contrôle, audit et ajustement des mécanismes | Données de remboursement, de couverture et de satisfaction | Mécanismes ajustés, fraudes détectées, équité améliorée | Inspection sanitaire, structures d’audit, comité technique national | Absence de contrôle structuré, données de remboursement non exploitées | Proportion de contrôles réalisés, montant des anomalies détectées |
+- [VS-03-01: Identification et enregistrement des bénéficiaires](../../referentiel/etapes-valeur/vs-03-01.md)
+- [VS-03-02: Définition des droits et du panier de soins](../../referentiel/etapes-valeur/vs-03-02.md)
+- [VS-03-03: Mobilisation des financements](../../referentiel/etapes-valeur/vs-03-03.md)
+- [VS-03-04: Prise en charge et exemption au point de service](../../referentiel/etapes-valeur/vs-03-04.md)
+- [VS-03-05: Facturation et traitement des demandes de remboursement](../../referentiel/etapes-valeur/vs-03-05.md)
+- [VS-03-06: Remboursement](../../referentiel/etapes-valeur/vs-03-06.md)
+- [VS-03-07: Contrôle, audit et ajustement des mécanismes](../../referentiel/etapes-valeur/vs-03-07.md)
+
 
 ## Capabilités mobilisées
 
-- CAP-07
-- CAP-08
-- CAP-12
-- CAP-13
-- CAP-14
-- CAP-15
-- CAP-16
+- [CAP-07: Protection financière, couverture santé universelle](../../referentiel/capabilites/cap-07.md)
+- [CAP-08: Gouvernance institutionnelle, planification, coordination et redevabilité](../../referentiel/capabilites/cap-08.md)
+- [CAP-12: Finances publiques, budget et allocation des ressources](../../referentiel/capabilites/cap-12.md)
+- [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md)
+- [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md)
+- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md)
+- [CAP-16: Gestion du portefeuille d'initiatives numériques](../../referentiel/capabilites/cap-16.md)
 
 *Rattachement : CAP-07, CAP-08, CAP-12, CAP-13, CAP-14, CAP-15, CAP-16, PP-02, PP-03, PP-06 · fiche VS-03*
 
 <!-- END:GENERATED -->
 ## Étapes de valeur
 
-<!-- BEGIN:GENERATED mode=catalogue source=referentiel/etapes-valeur/ev-15.md,referentiel/etapes-valeur/ev-16.md,referentiel/etapes-valeur/ev-17.md,referentiel/etapes-valeur/ev-18.md,referentiel/etapes-valeur/ev-19.md,referentiel/etapes-valeur/ev-20.md,referentiel/etapes-valeur/ev-21.md -->
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/etapes-valeur/vs-03-01.md,referentiel/etapes-valeur/vs-03-02.md,referentiel/etapes-valeur/vs-03-03.md,referentiel/etapes-valeur/vs-03-04.md,referentiel/etapes-valeur/vs-03-05.md,referentiel/etapes-valeur/vs-03-06.md,referentiel/etapes-valeur/vs-03-07.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### EV-15 : Identification et enregistrement des bénéficiaires
+### Identification et enregistrement des bénéficiaires
 
 #### Objectif
 
@@ -96,9 +98,9 @@ Absence d'identifiant unique national, exclusions liées à la méconnaissance d
 
 Taux de couverture du registre, taux d'exclusion estimé
 
-*Rattachement : CAP-07, CAP-14, CAP-15 · fiche EV-15*
+*Rattachement : CAP-07, CAP-14, CAP-15 · fiche VS-03-01*
 
-### EV-16 : Définition des droits et du panier de soins
+### Définition des droits et du panier de soins
 
 #### Objectif
 
@@ -124,9 +126,9 @@ Méconnaissance des droits par les agents, panier de soins non communiqué
 
 Proportion de formations sanitaires informées des droits
 
-*Rattachement : CAP-07 · fiche EV-16*
+*Rattachement : CAP-07 · fiche VS-03-02*
 
-### EV-17 : Mobilisation des financements
+### Mobilisation des financements
 
 #### Objectif
 
@@ -152,9 +154,9 @@ Retards de décaissement, imprévisibilité chronique du financement
 
 Taux d'exécution budgétaire, part du budget santé allouée à la protection financière
 
-*Rattachement : CAP-12, CAP-08 · fiche EV-17*
+*Rattachement : CAP-12, CAP-08 · fiche VS-03-03*
 
-### EV-18 : Prise en charge et exemption au point de service
+### Prise en charge et exemption au point de service
 
 #### Objectif
 
@@ -180,9 +182,9 @@ Refus de soins, paiement informel, formation non approvisionnée en intrants
 
 Taux d'exemption appliqué, taux de refus de soins signalés
 
-*Rattachement : CAP-07, CAP-15 · fiche EV-18*
+*Rattachement : CAP-07, CAP-15 · fiche VS-03-04*
 
-### EV-19 : Facturation et traitement des demandes de remboursement
+### Facturation et traitement des demandes de remboursement
 
 #### Objectif
 
@@ -208,9 +210,9 @@ Facturation incorrecte, absence de justificatifs, risques de fraude
 
 Taux de factures rejetées, délai de validation des factures
 
-*Rattachement : CAP-07, CAP-13 · fiche EV-19*
+*Rattachement : CAP-07, CAP-13 · fiche VS-03-05*
 
-### EV-20 : Remboursement
+### Remboursement
 
 #### Objectif
 
@@ -236,9 +238,9 @@ Retards chroniques de remboursement, insuffisance de liquidités
 
 Délai moyen de remboursement, taux de remboursement effectif
 
-*Rattachement : CAP-07, CAP-12 · fiche EV-20*
+*Rattachement : CAP-07, CAP-12 · fiche VS-03-06*
 
-### EV-21 : Contrôle, audit et ajustement des mécanismes
+### Contrôle, audit et ajustement des mécanismes
 
 #### Objectif
 
@@ -264,7 +266,7 @@ Absence de contrôle structuré, données de remboursement non exploitées
 
 Proportion de contrôles réalisés, montant des anomalies détectées
 
-*Rattachement : CAP-08, CAP-13, CAP-16 · fiche EV-21*
+*Rattachement : CAP-08, CAP-13, CAP-16 · fiche VS-03-07*
 
 <!-- END:GENERATED -->
 ## Processus métier
@@ -272,16 +274,16 @@ Proportion de contrôles réalisés, montant des anomalies détectées
 <!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-07.md,referentiel/processus/prc-08.md,referentiel/processus/prc-09.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### PRC-07 : Identification et droits des bénéficiaires
+### Identification et droits des bénéficiaires
 
 #### Objectif
 
-Constituer la base de la couverture santé universelle : identification et enregistrement des bénéficiaires, définition et communication de leurs droits et du panier de soins.
+Constituer la base de la couverture santé universelle : identification et enregistrement des bénéficiaires, définition et communication de leurs droits et du panier de soins.
 
 #### Étapes couvertes
 
-- EV-15 : Identification et enregistrement des bénéficiaires
-- EV-16 : Définition des droits et du panier de soins
+- [VS-03-01: Identification et enregistrement des bénéficiaires](../../referentiel/etapes-valeur/vs-03-01.md)
+- [VS-03-02: Définition des droits et du panier de soins](../../referentiel/etapes-valeur/vs-03-02.md)
 
 #### Acteurs
 
@@ -293,16 +295,16 @@ Taux de couverture du registre, taux d'exclusion estimé, proportion de formatio
 
 *Rattachement : CAP-07, CAP-08, CAP-12, CAP-13, CAP-14, CAP-15, CAP-16, PP-02, PP-03, PP-06, CMP-03, CMP-05, CMP-09, CMP-10, CMP-16 · fiche PRC-07*
 
-### PRC-08 : Financement et exemption au point de service
+### Financement et exemption au point de service
 
 #### Objectif
 
-Garantir la disponibilité des fonds et l'accès effectif aux soins sans paiement direct : mobilisation des financements et application de l'exemption au point de service.
+Garantir la disponibilité des fonds et l'accès effectif aux soins sans paiement direct : mobilisation des financements et application de l'exemption au point de service.
 
 #### Étapes couvertes
 
-- EV-17 : Mobilisation des financements
-- EV-18 : Prise en charge et exemption au point de service
+- [VS-03-03: Mobilisation des financements](../../referentiel/etapes-valeur/vs-03-03.md)
+- [VS-03-04: Prise en charge et exemption au point de service](../../referentiel/etapes-valeur/vs-03-04.md)
 
 #### Acteurs
 
@@ -314,17 +316,17 @@ Taux d'exécution budgétaire, part du budget santé allouée à la protection f
 
 *Rattachement : CAP-07, CAP-08, CAP-12, CAP-13, CAP-14, CAP-15, CAP-16, PP-02, PP-03, PP-06, CMP-03, CMP-05, CMP-09, CMP-10, CMP-16 · fiche PRC-08*
 
-### PRC-09 : Remboursement et régulation des mécanismes
+### Remboursement et régulation des mécanismes
 
 #### Objectif
 
-Boucler le cycle financier de la protection : facturation et traitement des demandes, remboursement des formations sanitaires, et contrôle, audit et ajustement des mécanismes pour préserver l'équité.
+Boucler le cycle financier de la protection : facturation et traitement des demandes, remboursement des formations sanitaires, et contrôle, audit et ajustement des mécanismes pour préserver l'équité.
 
 #### Étapes couvertes
 
-- EV-19 : Facturation et traitement des demandes de remboursement
-- EV-20 : Remboursement
-- EV-21 : Contrôle, audit et ajustement des mécanismes
+- [VS-03-05: Facturation et traitement des demandes de remboursement](../../referentiel/etapes-valeur/vs-03-05.md)
+- [VS-03-06: Remboursement](../../referentiel/etapes-valeur/vs-03-06.md)
+- [VS-03-07: Contrôle, audit et ajustement des mécanismes](../../referentiel/etapes-valeur/vs-03-07.md)
 
 #### Acteurs
 

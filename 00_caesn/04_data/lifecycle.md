@@ -1,4 +1,5 @@
 ---
+
 title: Cycle de vie des données
 id: data-lifecycle
 domain: 04_data
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Cellule du Système d'Information Sanitaire
-tags: [données, cycle-de-vie]
+tags: ["données", "cycle-de-vie"]
 ---
 
 # Cycle de vie des données

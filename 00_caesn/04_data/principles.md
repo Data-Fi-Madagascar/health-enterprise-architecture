@@ -1,4 +1,5 @@
 ---
+
 title: "Principes de l'architecture des données"
 id: data-principles
 domain: 04_data
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Cellule du Système d'Information Sanitaire
-tags: [données, principes]
+tags: ["données", "principes"]
 ---
 
 # Principes de l'architecture des données
@@ -33,11 +34,11 @@ Les principes d'architecture transversaux s'appliquent à toutes les données du
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### DA-01 : Les données de santé sont un actif stratégique national
+### Les données de santé sont un actif stratégique national
 
 #### Signification
 
-Les données produites par le système de santé constituent un actif stratégique national : leur valeur dépasse les usages d’un seul système ou d’un seul partenaire. Elles doivent être gouvernées comme un bien public, au service de la santé de la population et du pilotage du système.
+Les données produites par le système de santé constituent un actif stratégique national : leur valeur dépasse les usages d’un seul système ou d’un seul partenaire. Elles doivent être gouvernées comme un bien public, au service de la santé de la population et du pilotage du système.
 
 #### Implications
 
@@ -45,7 +46,7 @@ La gouvernance des données de santé relève du Ministère de la Santé Publiqu
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-01*
 
-### DA-02 : Une donnée doit être collectée une seule fois et réutilisée plusieurs fois
+### Une donnée doit être collectée une seule fois et réutilisée plusieurs fois
 
 #### Signification
 
@@ -53,11 +54,11 @@ La collecte répétée d’une même donnée à plusieurs endroits crée de la c
 
 #### Implications
 
-Toute nouvelle collecte vérifie d’abord l’existence de données déjà disponibles dans les systèmes ou référentiels nationaux. La donnée existante est réutilisée par référence ; une saisie supplémentaire n’est justifiée que si la donnée n’existe nulle part à la qualité requise.
+Toute nouvelle collecte vérifie d’abord l’existence de données déjà disponibles dans les systèmes ou référentiels nationaux. La donnée existante est réutilisée par référence ; une saisie supplémentaire n’est justifiée que si la donnée n’existe nulle part à la qualité requise.
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-02*
 
-### DA-03 : Les référentiels nationaux sont les sources de vérité
+### Les référentiels nationaux sont les sources de vérité
 
 #### Signification
 
@@ -69,11 +70,11 @@ Les systèmes utilisent les référentiels nationaux (formations sanitaires, gé
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-03*
 
-### DA-04 : Les données opérationnelles et analytiques doivent être distinguées
+### Les données opérationnelles et analytiques doivent être distinguées
 
 #### Signification
 
-Les systèmes de prestation et les systèmes de reporting répondent à des besoins différents et ne doivent pas être confondus. Faire porter l’analyse sur un système opérationnel dégrade la prestation ; alimenter la décision uniquement par des saisies dédiées au reporting fausse les données.
+Les systèmes de prestation et les systèmes de reporting répondent à des besoins différents et ne doivent pas être confondus. Faire porter l’analyse sur un système opérationnel dégrade la prestation ; alimenter la décision uniquement par des saisies dédiées au reporting fausse les données.
 
 #### Implications
 
@@ -81,11 +82,11 @@ Les données circulent des systèmes opérationnels vers les systèmes analytiqu
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-04*
 
-### DA-05 : La qualité des données est une responsabilité partagée
+### La qualité des données est une responsabilité partagée
 
 #### Signification
 
-La qualité des données ne peut être imposée uniquement par le niveau central : elle se construit là où la donnée est saisie et utilisée. Une donnée mal renseignée à la source n’est réparable ni par les entrepôts ni par les tableaux de bord.
+La qualité des données ne peut être imposée uniquement par le niveau central : elle se construit là où la donnée est saisie et utilisée. Une donnée mal renseignée à la source n’est réparable ni par les entrepôts ni par les tableaux de bord.
 
 #### Implications
 
@@ -93,7 +94,7 @@ Les systèmes intègrent des contrôles à la saisie, des retours aux producteur
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-05*
 
-### DA-06 : Les données doivent être utilisées pour des décisions réelles
+### Les données doivent être utilisées pour des décisions réelles
 
 #### Signification
 
@@ -105,11 +106,11 @@ Toute production de rapports ou de visualisations est liée à une revue, un arb
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-06*
 
-### DA-07 : Les données personnelles de santé doivent être protégées dès la conception
+### Les données personnelles de santé doivent être protégées dès la conception
 
 #### Signification
 
-La confiance dans le système national dépend de la protection des données sensibles de santé. Une fuite ou un usage détourné n’atteint pas seulement un individu : elle érode la confiance de toute la population dans le numérique de santé.
+La confiance dans le système national dépend de la protection des données sensibles de santé. Une fuite ou un usage détourné n’atteint pas seulement un individu : elle érode la confiance de toute la population dans le numérique de santé.
 
 #### Implications
 
@@ -117,7 +118,7 @@ Confidentialité, gestion des accès, traçabilité, consentement et limitation 
 
 *Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-07*
 
-### DA-08 : Les échanges de données doivent passer par des mécanismes gouvernés
+### Les échanges de données doivent passer par des mécanismes gouvernés
 
 #### Signification
 

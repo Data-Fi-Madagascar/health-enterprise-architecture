@@ -1,21 +1,21 @@
 ---
-id: cap-int-04
+id: CAP-INT-04
 type: capacite
 niveau: "2"
-title: CAP-INT-04 — Référentiel des structures et services de santé
+title: Référentiel des structures et services de santé
 status: active
 owner: DEPSI
 version: "0.5"
 family: referentiels
 source: 01_cnisn/02_capacites/index.md
-maps_to: ["p-int-01", "p-int-02", "p-int-03", "p-int-04", "cap-11", "cap-13", "cap-14"]
+maps_to: ["P-INT-01", "P-INT-02", "P-INT-03", "P-INT-04", "CAP-11", "CAP-13", "CAP-14"]
 implements: []
 applies_to: []
 related: []
 tags: ["cnisn", "niveau-2", "capacite"]
 ---
 
-# CAP-INT-04 — Référentiel des structures et services de santé
+# Référentiel des structures et services de santé
 
 ### Finalité
 

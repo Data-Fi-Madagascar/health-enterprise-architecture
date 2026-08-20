@@ -1,12 +1,12 @@
 ---
 title: PT-05 : Profil technique national
-id: ptisn-pt-05-registre-professionnels
+id: ptisn-PT-05-registre-professionnels
 domain: 03_ptisn
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
-tags: ["ptisn", "niveau-4", "profils", "pt-05"]
+tags: ["ptisn", "niveau-4", "profils", "PT-05"]
 ---
 
 # PT-05 : Profil technique national
@@ -20,8 +20,8 @@ Déclinaison de **CAP-INT-02**, complétée par les capacités relatives à la g
 
 ## 2. Chapitres ART applicables
 
-- ART-4 ;
-- ART-4a : Résolution d'identité ;
+- ART-4 ;
+- ART-4a — Résolution d'identité ;
 - ART-7.
 
 ## 3. Service national
@@ -30,19 +30,19 @@ Déclinaison de **CAP-INT-02**, complétée par les capacités relatives à la g
 
 ## 4. Responsabilités
 
-Le service doit gérer :
+Le service doit gérer :
 
-- l'identité du professionnel ;
-- la profession ;
-- la qualification ;
-- la spécialité ;
-- la licence ;
-- l'ordre ou l'autorité professionnelle ;
-- l'employeur ;
-- l'affectation ;
-- l'établissement ;
-- la période d'exercice ;
-- le statut ;
+- l'identité du professionnel ;
+- la profession ;
+- la qualification ;
+- la spécialité ;
+- la licence ;
+- l'ordre ou l'autorité professionnelle ;
+- l'employeur ;
+- l'affectation ;
+- l'établissement ;
+- la période d'exercice ;
+- le statut ;
 - les habilitations métier.
 
 ## 5. Profil cible

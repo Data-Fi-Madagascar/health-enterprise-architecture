@@ -1,21 +1,21 @@
 ---
-id: cap-int-01
+id: CAP-INT-01
 type: capacite
 niveau: "2"
-title: CAP-INT-01 — Résolution d’identité du bénéficiaire
+title: Résolution d’identité du bénéficiaire
 status: active
 owner: DEPSI
 version: "0.5"
 family: referentiels
 source: 01_cnisn/02_capacites/index.md
-maps_to: ["p-int-01", "p-int-02", "p-int-03", "p-int-04", "p-int-14", "p-int-15", "p-int-16", "p-int-17", "p-int-18", "cap-02", "cap-14"]
+maps_to: ["P-INT-01", "P-INT-02", "P-INT-03", "P-INT-04", "P-INT-14", "P-INT-15", "P-INT-16", "P-INT-17", "P-INT-18", "CAP-02", "CAP-14"]
 implements: []
 applies_to: []
 related: []
 tags: ["cnisn", "niveau-2", "capacite"]
 ---
 
-# CAP-INT-01 — Résolution d’identité du bénéficiaire
+# Résolution d’identité du bénéficiaire
 
 ### Finalité
 
@@ -37,7 +37,7 @@ Permettre aux systèmes autorisés de relier plusieurs représentations d’un m
 - séparation après erreur ;
 - gestion des identités temporaires ;
 - conservation de la provenance ;
-- vérification auprès de l’autorité fondationnelle lorsque autorisée.
+- vérification auprès de l’autorité fondationnelle lorsque l’accès est autorisé.
 
 ### Principes associés
 

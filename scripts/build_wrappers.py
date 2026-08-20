@@ -36,7 +36,7 @@ import sys
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REFERENTIEL = os.path.join(REPO_ROOT, "referentiel")
 
-BANNER = "<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->"
+BANNER = "<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->"
 BEGIN_RE = re.compile(r"^<!--\s*BEGIN:GENERATED\s*(.*?)\s*-->$")
 END_RE = re.compile(r"^<!--\s*END:GENERATED\s*-->$")
 ATTRIB = re.compile(r"(mode|source)=(?:(\"[^\"]*\")|([^\s]+))")
@@ -124,10 +124,13 @@ def id_to_path(objects):
 
 
 def rewrite_links(text, from_dir, to_dir):
-    """Strip relative file links to plain text for autonomous documents.
+    """Rewrite resolvable relative links so they point to the correct file from
+    the generated document's location, keeping every reference clickable.
 
-    External URLs (http/https) and anchors are preserved.
-    Relative file links like [label](../path.md) become just label.
+    - A relative link whose target resolves to an existing file is rewritten to
+      the path relative to the target doc (so cross-references stay live).
+    - Links that do not resolve, plus external URLs, anchors and absolute paths,
+      are preserved as-is (label kept).
     """
     def repl(match):
         label = match.group(1)
@@ -136,7 +139,10 @@ def rewrite_links(text, from_dir, to_dir):
             return match.group(0)
         if target.startswith("/") or target.startswith("mailto:"):
             return match.group(0)
-        # Strip relative file link — keep label only
+        src = os.path.normpath(os.path.join(from_dir, target))
+        if os.path.isfile(src):
+            new_target = os.path.relpath(src, to_dir).replace(os.sep, "/")
+            return "[%s](%s)" % (label, new_target)
         return label
 
     return LINK_RE.sub(repl, text)

@@ -1,4 +1,5 @@
 ---
+
 title: Flux de valeur nationaux de santé
 id: value-streams
 domain: 01_value-streams
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Responsables de flux de valeur
-tags: [flux-de-valeur, value-stream]
+tags: ["flux-de-valeur", "value-stream"]
 ---
 
 # Flux de valeur nationaux de santé

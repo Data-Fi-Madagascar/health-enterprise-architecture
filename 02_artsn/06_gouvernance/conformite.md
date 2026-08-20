@@ -1,4 +1,5 @@
 ---
+
 title: "Tableau de bord de conformité architecturale"
 id: conformite
 domain: 02_artsn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: CNASN
-tags: [artsn, gouvernance, conformité, dashboard, monitoring, niveau-3]
+tags: ["artsn", "gouvernance", "conformité", "dashboard", "monitoring", "niveau-3"]
 ---
 
 # Tableau de bord de conformité architecturale

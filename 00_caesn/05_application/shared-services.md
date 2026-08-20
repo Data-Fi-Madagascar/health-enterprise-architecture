@@ -1,4 +1,5 @@
 ---
+
 title: Services numériques partagés prioritaires
 id: application-shared-services
 domain: 05_application
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Direction des Systèmes d'Information
-tags: [applications, services-partagés]
+tags: ["applications", "services-partagés"]
 ---
 
 # Services numériques partagés prioritaires

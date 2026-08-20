@@ -1,21 +1,21 @@
 ---
-id: cap-int-02
+id: CAP-INT-02
 type: capacite
 niveau: "2"
-title: CAP-INT-02 — Registre et résolution des professionnels de santé
+title: Registre et résolution des professionnels de santé
 status: active
 owner: DEPSI
 version: "0.5"
 family: referentiels
 source: 01_cnisn/02_capacites/index.md
-maps_to: ["p-int-01", "p-int-02", "p-int-03", "p-int-04", "p-int-14", "p-int-15", "cap-09", "cap-14"]
+maps_to: ["P-INT-01", "P-INT-02", "P-INT-03", "P-INT-04", "P-INT-14", "P-INT-15", "CAP-09", "CAP-14"]
 implements: []
 applies_to: []
 related: []
 tags: ["cnisn", "niveau-2", "capacite"]
 ---
 
-# CAP-INT-02 — Registre et résolution des professionnels de santé
+# Registre et résolution des professionnels de santé
 
 ### Finalité
 

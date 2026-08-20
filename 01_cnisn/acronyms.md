@@ -1,4 +1,5 @@
 ---
+
 title: Acronymes et abréviations du CNISN (niveau 2)
 id: cnisn-acronyms
 domain: 01_cnisn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-09
 owner: DEPSI
-tags: [cnisn, acronymes, niveau-2]
+tags: ["cnisn", "acronymes", "niveau-2"]
 ---
 
 # Acronymes et abréviations du CNISN (niveau 2)

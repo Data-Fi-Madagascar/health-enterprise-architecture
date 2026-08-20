@@ -1,4 +1,5 @@
 ---
+
 title: Chaîne de valeur d'une initiative
 id: value-chain
 domain: 06_portfolio
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Bureau de Réalisation de la Valeur
-tags: [portefeuille, chaîne-de-valeur, bénéfices]
+tags: ["portefeuille", "chaîne-de-valeur", "bénéfices"]
 ---
 
 # Chaîne de valeur d'une initiative

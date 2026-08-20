@@ -1,19 +1,20 @@
 ---
-id: cap-17
+
+id: CAP-17
 type: capabilite
 niveau: "1"
-title: CAP-17 — Engagement patient et identité numérique
+title: Engagement patient et identité numérique
 status: draft
 owner: Responsables de capabilités habilitantes
 version: "0.1.0"
 source: 00_caesn/03_capabilities/enabling.md
-maps_to: ["cap-int-01", "cap-int-09"]
+maps_to: ["CAP-INT-01", "CAP-INT-09"]
 implements: []
-applies_to: ["vs-01", "vs-03"]
-related: ["cap-04"]
-tags: ['caesn', 'niveau-1', 'capabilite', 'cap-17', 'identite', 'consentement']
+applies_to: ["VS-01", "VS-03"]
+related: ["CAP-04"]
+tags: ["caesn", "niveau-1", "capabilite", "CAP-17", "identite", "consentement"]
 ---
-# CAP-17 — Engagement patient et identité numérique
+# Engagement patient et identité numérique
 
 ## Rôle dans le système
 
@@ -28,8 +29,8 @@ Cette capabilité est **habilitante** : son absence bloque la continuité des so
 
 ## Flux de valeur
 
-- [VS-01](../flux-valeur/vs-01.md) — Soins essentiels
-- [VS-03](../flux-valeur/vs-03.md) — Protection financière
+- [VS-01: Soins essentiels](../flux-valeur/vs-01.md)
+- [VS-03: Protection financière](../flux-valeur/vs-03.md)
 
 ## Rattachement ARTSN
 

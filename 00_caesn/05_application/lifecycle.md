@@ -1,4 +1,5 @@
 ---
+
 title: Cycle de vie applicatif et critères d'homologation
 id: application-lifecycle
 domain: 05_application
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Direction des Systèmes d'Information
-tags: [applications, cycle-de-vie, homologation]
+tags: ["applications", "cycle-de-vie", "homologation"]
 ---
 
 # Cycle de vie applicatif et critères d'homologation

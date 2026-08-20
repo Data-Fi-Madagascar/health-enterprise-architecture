@@ -1,23 +1,31 @@
 ---
-id: cap-02
+
+id: CAP-02
 type: capabilite
 niveau: "1"
-title: CAP-02 — Gestion du parcours patient, référence et contre-référence
+title: Gestion du parcours patient, référence et contre-référence
 status: draft
 owner: Responsables de capabilités métier
 version: "0.1"
 source: 00_caesn/03_capabilities/business.md
-maps_to: ["cap-int-03", "cap-int-01", "cap-int-13"]
+maps_to: ["CAP-INT-03", "CAP-INT-01", "CAP-INT-13"]
 implements: []
-applies_to: ["vs-01"]
-related: ["cap-05", "cap-10", "cap-14", "cap-17"]
-tags: ['caesn', 'niveau-1', 'capabilite', 'cap-02']
+applies_to: ["VS-01"]
+related: ["CAP-05", "CAP-10", "CAP-14", "CAP-17"]
+tags: ["caesn", "niveau-1", "capabilite", "CAP-02"]
 ---
-# CAP-02 — Gestion du parcours patient, référence et contre-référence
+# Gestion du parcours patient, référence et contre-référence
 
 ## Rôle dans le système
 
-La capabilité organise le parcours du patient entre les points de service : orientation vers le niveau adapté, référence vers une structure plus spécialisée et contre-référence vers la formation d'origine. Elle assure que l'information clinique suit le patient d'un niveau à l'autre, afin que la continuité des soins ne dépende pas d'un seul établissement. Sans elle, les ruptures de parcours (référence sans dossier, absence de retour d'information) fragmentent la prise en charge.
+La capabilité organise le parcours du patient entre les points de service : orientation vers le niveau adapté, référence vers une structure plus spécialisée et contre-référence vers la formation d'origine. Elle assure que l'information clinique suit le patient d'un niveau à l'autre, afin que la continuité des soins ne dépende pas d'un seul établissement. Sans elle, les ruptures de parcours (référence sans dossier, absence de retour d'information) fragmentent la prise en charge. Elle couvre :
+
+- **Orientation et tri** : acheminement du patient vers le niveau de soins le plus adapté
+- **Référence** : transfert vers une structure plus spécialisée avec transmission du dossier clinique
+- **Contre-référence** : retour vers l'établissement d'origine avec compte-rendu et recommandations
+- **Évacuation sanitaire** : transferts urgents nationaux et internationaux
+
+Son absence fragilise la continuité des soins (VS-01) et provoque des ruptures de parcours.
 
 ## Scénarios couverts
 
@@ -30,4 +38,21 @@ La capabilité organise le parcours du patient entre les points de service : ori
 
 ## Flux de valeur
 
-- [VS-01](../flux-valeur/vs-01.md)
+- [VS-01: Soins essentiels](../flux-valeur/vs-01.md)
+
+## Rattachement ARTSN
+
+- **ART-8** — Orchestration de processus
+- **ART-3** — Historisation événementielle et profils de déploiement
+- **PT-01** — Échange interinstitutionnel (X-Road)
+- **PT-02** — Médiation intra-secteur
+
+## Maturité
+
+| Niveau actuel | Niveau cible (2 ans) |
+|---------------|----------------------|
+| 2/5 | 3/5 |
+
+## Propriétaire
+
+Responsables de capabilités métier

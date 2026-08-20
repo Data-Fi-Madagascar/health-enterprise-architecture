@@ -1,12 +1,12 @@
 ---
 title: PT-16 : Orchestration de processus bornés
-id: ptisn-pt-16-orchestration-processus
+id: ptisn-PT-16-orchestration-processus
 domain: 03_ptisn
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-19
 owner: Équipes techniques des initiatives
-tags: ["ptisn", "niveau-4", "profils", "pt-16"]
+tags: ["ptisn", "niveau-4", "profils", "PT-16"]
 ---
 
 # PT-16 : Orchestration de processus bornés
@@ -16,12 +16,12 @@ tags: ["ptisn", "niveau-4", "profils", "pt-16"]
 
 ## 1. Capacité CNISN
 
-**CAP-INT-03 : Échange et médiation inter-systèmes**
+**CAP-INT-03 — Échange et médiation inter-systèmes**
 
 ## 2. Chapitres ART applicables
 
-- ART-8a : orchestration de processus borné ;
-- ART-7 : sécurité.
+- ART-8a — orchestration de processus borné ;
+- ART-7 — sécurité.
 
 ## 3. Service national
 
@@ -31,13 +31,13 @@ Ce service assure la coordination des flux inter-systèmes en gérant les transa
 
 ## 4. Fonctions
 
-- orchestration de processus métier bornés ;
-- gestion de transactions longues (Sagas) ;
-- compensation et annulation en cas d'échec ;
-- coordination de flux inter-établissements et inter-systèmes ;
-- traçabilité complète du parcours ;
-- résilience des workflows critiques ;
-- déclenchement événementiel (event-driven) ;
+- orchestration de processus métier bornés ;
+- gestion de transactions longues (Sagas) ;
+- compensation et annulation en cas d'échec ;
+- coordination de flux inter-établissements et inter-systèmes ;
+- traçabilité complète du parcours ;
+- résilience des workflows critiques ;
+- déclenchement événementiel (event-driven) ;
 - gestion de l'état des processus.
 
 ## 5. Produit candidat
@@ -54,19 +54,19 @@ OpenFN est une plateforme d'intégration open-source orientée workflow, spécia
 
 ## 6. Exigences
 
-Une solution alternative doit au minimum supporter :
+Une solution alternative doit au minimum supporter :
 
-- orchestration de processus multi-étapes ;
-- gestion de transactions distribuées (Sagas) ;
-- compensations en cas d'échec d'une étape ;
-- interfaces synchrones et asynchrones ;
-- connecteurs HL7 FHIR ;
-- connecteurs DHIS2 ;
-- moteur de règles métier ;
-- journalisation et traçabilité des parcours ;
-- observabilité des processus en cours ;
-- reprise en cas de défaillance ;
-- déploiement de workflows indépendants ;
+- orchestration de processus multi-étapes ;
+- gestion de transactions distribuées (Sagas) ;
+- compensations en cas d'échec d'une étape ;
+- interfaces synchrones et asynchrones ;
+- connecteurs HL7 FHIR ;
+- connecteurs DHIS2 ;
+- moteur de règles métier ;
+- journalisation et traçabilité des parcours ;
+- observabilité des processus en cours ;
+- reprise en cas de défaillance ;
+- déploiement de workflows indépendants ;
 - intégration avec le médiateur sectoriel (PT-02).
 
 ## 7. Articulation avec la médiation

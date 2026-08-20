@@ -1,4 +1,5 @@
 ---
+
 title: "ADR-0001 : Adoption de X-Road comme plateforme d'échange interinstitutionnel"
 id: adr-0001
 domain: 06_decisions
@@ -6,14 +7,14 @@ version: "1.0.0"
 status: accepté
 date: 2026-07-01
 owner: DEPSI
-tags: [adr, interopérabilité, x-road, plateforme]
+tags: ["adr", "interopérabilité", "x-road", "plateforme"]
 ---
 
 # ADR-0001 : Adoption de X-Road comme plateforme d'échange interinstitutionnel
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 2 : Cadre National d'Interopérabilité de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|

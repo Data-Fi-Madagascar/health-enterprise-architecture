@@ -1,23 +1,30 @@
 ---
-id: cap-05
+
+id: CAP-05
 type: capabilite
 niveau: "1"
-title: CAP-05 — Surveillance épidémiologique, alerte, investigation et riposte
+title: Surveillance épidémiologique, alerte, investigation et riposte
 status: draft
 owner: Responsables de capabilités métier
 version: "0.1.0"
 source: 00_caesn/03_capabilities/business.md
 maps_to: []
 implements: []
-applies_to: ["vs-02"]
-related: ["cap-18"]
-tags: ['caesn', 'niveau-1', 'capabilite', 'cap-05', 'surveillance', 'geospatial']
+applies_to: ["VS-02"]
+related: ["CAP-18"]
+tags: ["caesn", "niveau-1", "capabilite", "CAP-05", "surveillance", "geospatial"]
 ---
-# CAP-05 — Surveillance épidémiologique, alerte, investigation et riposte
+# Surveillance épidémiologique, alerte, investigation et riposte
 
 ## Rôle dans le système
 
 La capabilité couvre l'ensemble du cycle de gestion des risques sanitaires : détection des signaux, notification des cas, vérification, investigation, déclenchement de la riposte et retour d'expérience. Elle relie les formations sanitaires, les districts et le niveau central pour qu'une épidémie ou une urgence soit identifiée et traitée sans délai.
+
+Elle couvre :
+- **Détection et alerte** : surveillance sentinelle, notification des cas et signalement précoce des événements
+- **Investigation** : vérification terrain, recherche des contacts et confirmation étiologique
+- **Riposte** : coordination de la réponse, mesures de contrôle et retour d'expérience
+- **Surveillance multisource** : agrégation des données laboratoires, cliniques et communautaires
 
 La capabilité inclut désormais la **dimension géospatiale** :
 - **Géolocalisation des formations sanitaires** : positionnement GPS de toutes les structures de soins
@@ -25,11 +32,25 @@ La capabilité inclut désormais la **dimension géospatiale** :
 - **Suivi temporel** : analyse des tendances épidémiques par zone géographique
 - **Cloisonnement One Health** : surveillance conjointe santé humaine/animale/environnement par zone
 
+Son absence fragilise la surveillance sanitaire (VS-02).
+
 ## Flux de valeur
 
-- [VS-02](../flux-valeur/vs-02.md)
+- [VS-02: Prévention et surveillance](../flux-valeur/vs-02.md)
 
 ## Rattachement ARTSN
 
+- **F.1** — Résilience face à la réalité géographique du pays
 - **ART-4d** — Référentiel géospatial et d'exploitation partagé
 - **PT-05** — Profil technique géolocalisation
+- **PT-15** — Surveillance One Health
+
+## Maturité
+
+| Niveau actuel | Niveau cible (2 ans) |
+|---------------|----------------------|
+| 2/5 | 3/5 |
+
+## Propriétaire
+
+Responsables de capabilités métier

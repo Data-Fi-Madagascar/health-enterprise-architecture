@@ -1,4 +1,5 @@
 ---
+
 title: "Registre des décisions d'architecture (ADR)"
 id: registre-decisions
 domain: 06_decisions
@@ -6,14 +7,14 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: Bureau de Réalisation de la Valeur
-tags: [decisions, adr, registre, gouvernance, niveau-1]
+tags: ["decisions", "adr", "registre", "gouvernance", "niveau-1"]
 ---
 
 # Registre des décisions d'architecture (ADR)
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 2 : Cadre National d'Interopérabilité de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -78,6 +79,12 @@ Chaque ADR enregistrée ici est un choix structurant, daté et traçable, produi
 |----|-------|--------|------|--------------|--------|
 | ADR-0009 | Terminologie nationale (CIM-10 + LOINC + mapping) | **proposé** | 2026-08-13 | DEPSI | Élevé : sémantique commune |
 
+### Cadre légal et gouvernance
+
+| ID | Titre | Statut | Date | Propriétaire | Impact |
+|----|-------|--------|------|--------------|--------|
+| ADR-0010 | Cadre légal et mandat d'opposabilité du CNASN | **proposé** | 2026-08-20 | Ministère de la Santé | Critique : base légale |
+
 ---
 
 ## Processus d'enregistrement
@@ -98,12 +105,12 @@ Chaque ADR enregistrée ici est un choix structurant, daté et traçable, produi
 
 | Statut | Nombre |
 |--------|--------|
-| Proposé | 5 |
+| Proposé | 6 |
 | Accepté | 0 |
 | Appliqué | 4 |
 | Remplacé | 0 |
 | Déprécié | 0 |
-| **Total** | **9** |
+| **Total** | **10** |
 
 ---
 
@@ -125,6 +132,7 @@ Chaque ADR enregistrée ici est un choix structurant, daté et traçable, produi
 - **ADR-0007** : Adoption du GDHCN pour la confiance transfrontalière (`01_cnisn/06_decisions/adr-0007-gdhcn.md`)
 - **ADR-0008** : Adoption d'ATNA et journalisation pour l'audit et la traçabilité (`01_cnisn/06_decisions/adr-0008-atna.md`)
 - **ADR-0009** : Adoption d'un référentiel terminologique national (CIM-10 + LOINC) (`01_cnisn/06_decisions/adr-0009-terminologie.md`)
+- **ADR-0010** : Cadre légal et mandat d'opposabilité du CNASN (`01_cnisn/06_decisions/adr-0010-cadre-legal.md`)
 - **Template ADR** : <Titre de la décision> (`01_cnisn/06_decisions/adr-0000-template.md`)
 - **Index des décisions** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
 - **Gouvernance** : Partie III : Gouvernance (`01_cnisn/03_gouvernance/index.md`)

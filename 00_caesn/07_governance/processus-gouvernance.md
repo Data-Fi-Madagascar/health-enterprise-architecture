@@ -1,4 +1,5 @@
 ---
+
 title: "Guide du processus de gouvernance"
 id: processus-gouvernance
 domain: 07_governance
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: Secrétariat Général
-tags: [gouvernance, processus, workflow, cnasn, niveau-1]
+tags: ["gouvernance", "processus", "workflow", "cnasn", "niveau-1"]
 ---
 
 # Guide du processus de gouvernance

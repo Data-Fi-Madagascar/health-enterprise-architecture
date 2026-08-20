@@ -1,4 +1,5 @@
 ---
+
 title: "Vérification de la pérennité : PDSS, SNSD, PSRSIS"
 id: verification-perennite-documents
 domain: 00_overview
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
-tags: [strategie, pdss, sns, psrsis, perennite]
+tags: ["strategie", "pdss", "sns", "psrsis", "perennite"]
 ---
 
 # Vérification de la pérennité : PDSS, SNSD, PSRSIS

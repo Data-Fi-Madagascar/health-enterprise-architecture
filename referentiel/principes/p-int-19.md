@@ -1,29 +1,29 @@
 ---
-id: p-int-19
+id: P-INT-19
 type: principe
 niveau: "2"
-title: P-INT-19 — Neutralité technologique
+title: Neutralité technologique
 status: active
 owner: DEPSI
 version: "0.5"
 source: 01_cnisn/01_principes/index.md
-maps_to: ["cap-14"]
+maps_to: ["CAP-14"]
 implements: []
 applies_to: []
-related: ["cap-int-03", "cap-int-07", "cap-int-08", "cap-int-12"]
+related: ["CAP-INT-03", "CAP-INT-07", "CAP-INT-08", "CAP-INT-12"]
 tags: ["cnisn", "niveau-2", "principe"]
 ---
 
-# P-INT-19 — Neutralité technologique
+# Neutralité technologique
 
 Le CNISN ne prescrit aucun produit, fournisseur ou technologie.
 
-La conformité est évaluée à partir :
+La conformité est évaluée à partir :
 
-- des services fournis ;
-- des contrats ;
-- des garanties ;
-- des preuves ;
+- des services fournis ;
+- des contrats ;
+- des garanties ;
+- des preuves ;
 - des résultats de tests.
 
 L’utilisation d’un produit connu ou recommandé ne prouve pas automatiquement la conformité.

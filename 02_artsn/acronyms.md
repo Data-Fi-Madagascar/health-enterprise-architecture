@@ -1,4 +1,5 @@
 ---
+
 title: Acronymes et abréviations de l'ARTSN (niveau 3)
 id: artsn-acronyms
 domain: 02_artsn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-09
 owner: DEPSI
-tags: [artsn, acronymes, niveau-3]
+tags: ["artsn", "acronymes", "niveau-3"]
 ---
 
 # Acronymes et abréviations de l'ARTSN (niveau 3)

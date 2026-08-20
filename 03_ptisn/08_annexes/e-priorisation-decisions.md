@@ -1,4 +1,5 @@
 ---
+
 title: "Priorisation et calendrier : 5 premières décisions PTISN"
 id: ptisn-priorisation-decisions
 domain: 03_ptisn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
-tags: [ptisn, decisions, priorisation, calendrier]
+tags: ["ptisn", "decisions", "priorisation", "calendrier"]
 ---
 
 # Priorisation et calendrier : 5 premières décisions PTISN

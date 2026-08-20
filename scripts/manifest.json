@@ -57,7 +57,8 @@
         "00_caesn/10_annexes/index.md",
         "00_caesn/10_annexes/glossary.md",
         "00_caesn/10_annexes/acronyms.md",
-        "00_caesn/10_annexes/evaluation-gdhm.md"
+        "00_caesn/10_annexes/evaluation-gdhm.md",
+        "00_caesn/07_governance/fondement-legal.md"
       ]
     },
     {
@@ -104,7 +105,9 @@
         "01_cnisn/06_decisions/adr-0008-atna.md",
         "01_cnisn/06_decisions/adr-0009-terminologie.md",
         "01_cnisn/glossary.md",
-        "01_cnisn/acronyms.md"
+        "01_cnisn/acronyms.md",
+        "01_cnisn/04_conformite/programme-conformite.md",
+        "01_cnisn/06_decisions/adr-0010-cadre-legal.md"
       ]
     },
     {

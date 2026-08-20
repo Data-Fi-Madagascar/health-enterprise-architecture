@@ -1,24 +1,49 @@
 ---
-id: cap-01
+
+id: CAP-01
 type: capabilite
 niveau: "1"
-title: CAP-01 — Offre de soins et continuité des services
+title: Offre de soins et continuité des services
 status: draft
 owner: Responsables de capabilités métier
 version: "0.0.1"
 source: 00_caesn/03_capabilities/business.md
 maps_to: []
 implements: []
-applies_to: ["vs-01"]
+applies_to: ["VS-01"]
 related: []
-tags: ['caesn', 'niveau-1', 'capabilite', 'cap-01']
+tags: ["caesn", "niveau-1", "capabilite", "CAP-01"]
 ---
-# CAP-01 — Offre de soins et continuité des services
+# Offre de soins et continuité des services
 
 ## Rôle dans le système
 
-La capabilité garantit que chaque citoyen accède à des services de santé essentiels, sûrs et de qualité, quel que soit son lieu de résidence ou sa situation. Elle couvre l’offre de soins à tous les niveaux de la pyramide sanitaire : disponibilité des services, accessibilité géographique et financière, continuité de la prise en charge et qualité minimale garantie. Elle conditionne le bon déroulement du parcours de soins décrit par le flux de valeur associé.
+La capabilité garantit que chaque citoyen accède à des services de santé essentiels, sûrs et de qualité, quel que soit son lieu de résidence ou sa situation. Elle conditionne le bon déroulement du parcours de soins décrit par le flux de valeur associé. Elle couvre :
+
+- **Disponibilité des services** : présence et fonctionnement des formations sanitaires à tous les niveaux de la pyramide
+- **Accessibilité géographique et financière** : réduction des barrières liées à la distance et au coût
+- **Continuité de la prise en charge** : maintien du suivi du patient d'un niveau à l'autre
+- **Qualité minimale garantie** : respect des normes de soins et de sécurité
+
+Elle est **pivot** pour le parcours de soins et conditionne le bon déroulement du flux de valeur VS-01.
 
 ## Flux de valeur
 
-- [VS-01](../flux-valeur/vs-01.md)
+- [VS-01: Soins essentiels](../flux-valeur/vs-01.md)
+
+## Rattachement ARTSN
+
+- **F.1** — Résilience face à la réalité géographique du pays
+- **ART-4** — Référentiels de métadonnées de gestion
+- **ART-1** — Intégration et ingestion
+- **PT-06** — Référentiel des structures et services
+
+## Maturité
+
+| Niveau actuel | Niveau cible (2 ans) |
+|---------------|----------------------|
+| 2/5 | 3/5 |
+
+## Propriétaire
+
+Responsables de capabilités métier

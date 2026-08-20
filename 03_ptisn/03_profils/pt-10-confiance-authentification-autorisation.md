@@ -1,12 +1,12 @@
 ---
 title: PT-10 : Profil technique national
-id: ptisn-pt-10-confiance-authentification-autorisation
+id: ptisn-PT-10-confiance-authentification-autorisation
 domain: 03_ptisn
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
-tags: ["ptisn", "niveau-4", "profils", "pt-10"]
+tags: ["ptisn", "niveau-4", "profils", "PT-10"]
 ---
 
 # PT-10 : Profil technique national
@@ -16,24 +16,24 @@ tags: ["ptisn", "niveau-4", "profils", "pt-10"]
 
 ## 1. Capacité CNISN
 
-**CAP-INT-08 : Confiance, sécurité et autorisation**
+**CAP-INT-08 — Confiance, sécurité et autorisation**
 
 ## 2. Chapitres ART applicables
 
-- ART-0 ;
-- ART-4b ;
-- ART-7 ;
+- ART-0 ;
+- ART-4b ;
+- ART-7 ;
 - ART-9 lorsque applicable.
 
 ## 3. Services nationaux
 
-- fournisseur d’identité sectoriel ou fédéré ;
-- authentification des utilisateurs ;
-- identité des systèmes ;
-- service d’autorisation ;
-- gestion des politiques ;
-- gestion des comptes techniques ;
-- fédération avec les identités pangouvernementales ;
+- fournisseur d’identité sectoriel ou fédéré ;
+- authentification des utilisateurs ;
+- identité des systèmes ;
+- service d’autorisation ;
+- gestion des politiques ;
+- gestion des comptes techniques ;
+- fédération avec les identités pangouvernementales ;
 - gestion des certificats et secrets.
 
 ## 4. Profils recommandés
@@ -78,16 +78,16 @@ stop
 
 ## 6. Exigences minimales
 
-- moindre privilège ;
-- authentification adaptée au risque ;
-- séparation des comptes utilisateurs et techniques ;
-- révocation ;
-- rotation des secrets ;
-- contrôle territorial ;
-- contrôle programmatique ;
-- journalisation ;
-- durée limitée des jetons ;
-- vérification du contexte professionnel ;
+- moindre privilège ;
+- authentification adaptée au risque ;
+- séparation des comptes utilisateurs et techniques ;
+- révocation ;
+- rotation des secrets ;
+- contrôle territorial ;
+- contrôle programmatique ;
+- journalisation ;
+- durée limitée des jetons ;
+- vérification du contexte professionnel ;
 - décision explicite.
 
 ## 7. Rôles et matrice RBAC
@@ -110,28 +110,28 @@ stop
 | **R-MINS** | Direction ministérielle | Décideur politique, pilotage stratégique | Stratégique |
 | **R-INTER** | Partenaire international | Organisme international (OMS, UNICEF, banque mondiale) | Stratégique |
 
-### 7.2 Matrice RBAC : Accès aux données par rôle
+### 7.2 Matrice RBAC — Accès aux données par rôle
 
-Légende : **C** = Créer · **R** = Lire · **U** = Modifier · **D** = Supprimer · **×** = Accès interdit
+Légende : **C** = Créer · **R** = Lire · **U** = Modifier · **D** = Supprimer · **—** = Accès interdit
 
 | Ressource / Donnée | R-AS | R-MED | R-PH | R-ENC | R-CDIR | R-DDIST | R-DREG | R-PROG | R-INS | R-DMIN | R-API | R-MINS | R-INTER |
 |---------------------|------|-------|------|-------|--------|---------|--------|--------|-------|--------|-------|--------|---------|
-| **Dossier patient** | R | CRUD | R | R | R | R | R | R | R | R | R* | : | : |
-| **Prescription** | R | CRUD | R | : | R | R | R | R | R | : | R* | : | : |
-| **Dispensation** | R | R | CRUD | : | R | R | R | R | R | : | R* | : | : |
-| **Référence / évacuation** | CR | CRUD | R | R | R | R | R | R | R | R | R* | : | : |
-| **Signal épidémique** | CR | R | : | CRUD | R | R | R | R | R | R | R* | R | R |
-| **Alerte sanitaire** | : | : | : | : | R | CRUD | R | R | R | R | R* | R | R |
-| **Investigation** | : | R | : | CRUD | R | R | R | R | R | R | R* | R | R |
-| **Éligibilité / couverture** | R | R | R | : | R | R | R | R | R | : | R* | : | : |
-| **Facturation** | : | R | R | : | R | R | R | R | R | : | R* | : | : |
-| **Stock / produits** | R | R | CRUD | : | R | R | R | R | R | : | R* | : | : |
-| **Indicateurs / dashboards** | : | R | : | : | R | R | R | CRUD | R | R | R* | R | R |
-| **Tâche d'investigation** | R | R | : | CRUD | R | R | R | R | R | : | R* | : | : |
+| **Dossier patient** | R | CRUD | R | R | R | R | R | R | R | R | R* | — | — |
+| **Prescription** | R | CRUD | R | — | R | R | R | R | R | — | R* | — | — |
+| **Dispensation** | R | R | CRUD | — | R | R | R | R | R | — | R* | — | — |
+| **Référence / évacuation** | CR | CRUD | R | R | R | R | R | R | R | R | R* | — | — |
+| **Signal épidémique** | CR | R | — | CRUD | R | R | R | R | R | R | R* | R | R |
+| **Alerte sanitaire** | — | — | — | — | R | CRUD | R | R | R | R | R* | R | R |
+| **Investigation** | — | R | — | CRUD | R | R | R | R | R | R | R* | R | R |
+| **Éligibilité / couverture** | R | R | R | — | R | R | R | R | R | — | R* | — | — |
+| **Facturation** | — | R | R | — | R | R | R | R | R | — | R* | — | — |
+| **Stock / produits** | R | R | CRUD | — | R | R | R | R | R | — | R* | — | — |
+| **Indicateurs / dashboards** | — | R | — | — | R | R | R | CRUD | R | R | R* | R | R |
+| **Tâche d'investigation** | R | R | — | CRUD | R | R | R | R | R | — | R* | — | — |
 | **Référentiels (normes, codes)** | R | R | R | R | R | R | R | R | R | R | R* | R | R |
-| **Configuration système** | : | : | : | : | : | : | : | : | : | R | CRUD | : | : |
+| **Configuration système** | — | — | — | — | — | — | — | — | — | R | CRUD | — | — |
 
-*R* : accès programme-spécifique (restreint aux données du programme assigné)
+*R* : accès programme-spécifique (restreint aux données du programme assigné)
 
 ### 7.3 Politiques d'autorisation
 
@@ -148,26 +148,26 @@ Légende : **C** = Créer · **R** = Lire · **U** = Modifier · **D** = Supprim
 | **POL-09** | Données minimales | En contexte transfrontalier, seules les données strictement nécessaires sont transmises (principe de minimisation) |
 | **POL-10** | Comptes techniques | Les systèmes (API) sont soumis aux mêmes politiques que les utilisateurs humains, avec des jetons de service signés |
 
-### 7.4 Matrice RBAC : Accès aux fonctions par rôle
+### 7.4 Matrice RBAC — Accès aux fonctions par rôle
 
 | Fonction | R-AS | R-MED | R-PH | R-ENC | R-CDIR | R-DDIST | R-DREG | R-PROG | R-INS | R-DMIN | R-API | R-MINS |
 |----------|------|-------|------|-------|--------|---------|--------|--------|-------|--------|-------|--------|
-| Consulter un dossier patient | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● | : |
-| Écrire une prescription | : | ● | : | : | : | : | : | : | : | : | : | : |
-| Dispenser un produit | : | : | ● | : | : | : | : | : | : | : | : | : |
-| Émettre une référence | ● | ● | : | : | ● | ● | ● | : | : | : | : | : |
-| Déclarer un signal | ● | ● | : | ● | ● | ● | ● | ● | ● | : | : | : |
-| Déclencher une alerte | : | : | : | : | ● | ● | ● | ● | : | ● | : | : |
-| Mener une investigation | : | ● | : | ● | ● | ● | ● | ● | ● | : | : | : |
-| Vérifier l'éligibilité | ● | ● | ● | : | ● | ● | ● | ● | ● | : | ● | : |
-| Consulter un dashboard | : | ● | : | : | ● | ● | ● | ● | ● | ● | ● | ● |
-| Gérer les stocks | : | : | ● | : | ● | ● | ● | ● | : | : | ● | : |
-| Configurer le système | : | : | : | : | : | : | : | : | : | ● | ● | : |
-| Administrer les comptes | : | : | : | : | : | : | : | : | : | ● | : | : |
+| Consulter un dossier patient | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● | — |
+| Écrire une prescription | — | ● | — | — | — | — | — | — | — | — | — | — |
+| Dispenser un produit | — | — | ● | — | — | — | — | — | — | — | — | — |
+| Émettre une référence | ● | ● | — | — | ● | ● | ● | — | — | — | — | — |
+| Déclarer un signal | ● | ● | — | ● | ● | ● | ● | ● | ● | — | — | — |
+| Déclencher une alerte | — | — | — | — | ● | ● | ● | ● | — | ● | — | — |
+| Mener une investigation | — | ● | — | ● | ● | ● | ● | ● | ● | — | — | — |
+| Vérifier l'éligibilité | ● | ● | ● | — | ● | ● | ● | ● | ● | — | ● | — |
+| Consulter un dashboard | — | ● | — | — | ● | ● | ● | ● | ● | ● | ● | ● |
+| Gérer les stocks | — | — | ● | — | ● | ● | ● | ● | — | — | ● | — |
+| Configurer le système | — | — | — | — | — | — | — | — | — | ● | ● | — |
+| Administrer les comptes | — | — | — | — | — | — | — | — | — | ● | — | — |
 
 ### 7.5 Escalade en cas d'urgence vitale
 
-En cas d'urgence vitale documentée (code U3 ou U4), les restrictions RBAC sont temporairement levées :
+En cas d'urgence vitale documentée (code U3 ou U4), les restrictions RBAC sont temporairement levées :
 
 | Condition | Dérogation | Traçabilité |
 |-----------|------------|-------------|

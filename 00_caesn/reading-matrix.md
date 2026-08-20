@@ -1,4 +1,5 @@
 ---
+
 title: Matrice de lecture du CAESN (niveau 1)
 id: caesn-reading-matrix
 domain: 00_caesn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-09
 owner: Bureau de Réalisation de la Valeur
-tags: [caesn, lecture, niveau-1, profils]
+tags: ["caesn", "lecture", "niveau-1", "profils"]
 ---
 
 # Matrice de lecture du CAESN (niveau 1)

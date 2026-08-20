@@ -1,4 +1,5 @@
 ---
+
 title: "Feuille de route de déploiement progressif de l'ARTSN"
 domain: 02_artsn
 id: roadmap-deploiement-artsn
@@ -6,12 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: "Direction du Numérique en Santé"
-tags:
-  - artsn
-  - feuille-de-route
-  - deploiement
-  - planification
-  - implementation
+tags: ["artsn", "feuille-de-route", "deploiement", "planification", "implementation"]
 ---
 
 # Feuille de route de déploiement progressif de l'ARTSN
@@ -133,6 +129,15 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 | **Tripartite Plus** | Toutes | DNS, MINAE | Flux avec OMS–WOAH–FAO–PNUE opérationnels | 1 flux international One Health actif |
 
 **Livrable clé** : Accords interministériels + médiation intersectorielle + centre de commande One Health.
+
+## Note de rationalisation (composants phasés)
+
+Conformément à la *Note de rationalisation* de la cartographie cible, deux composants sont **repoussés en Phase 2** (post-roadmap, conditionnés à une initiative validante) car ils sont des patterns sans précédent en santé africaine :
+
+- **CMP-05 — Moteur de graphes / Graph Store** (Couche 5, ART-8b) : reporté hors des phases 1–6 ; à réévaluer après une initiative graphe pilote.
+- **CMP-18 — Compensateur / Netting** (Couche 3, ART-8c) : reporté ; candidat à la fusion avec CMP-15/16/17 en *Pattern d'échange unifié*.
+
+Le **CMP-07 — Gestionnaire de Sagas** (Couche 4) fait l'objet d'une étude « Saga vs orchestration simple » avant généralisation. Ces reports ne bloquent aucune phase du présent roadmap.
 
 ## 2. Jalons critiques
 

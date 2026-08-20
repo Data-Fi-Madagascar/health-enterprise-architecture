@@ -1,4 +1,5 @@
 ---
+
 title: "Annexe D : Protocole de test d'interopérabilité"
 id: artsn-protocole-test
 domain: 02_artsn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
-tags: [artsn, annexe, test, interopérabilité, validation, niveau-3]
+tags: ["artsn", "annexe", "test", "interopérabilité", "validation", "niveau-3"]
 ---
 
 # Annexe D : Protocole de test d'interopérabilité

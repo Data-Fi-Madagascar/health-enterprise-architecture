@@ -1,24 +1,24 @@
 ---
-id: cmp-15
+id: CMP-15
 type: composant-applicatif
 niveau: "1"
-title: CMP-15 — API Gateway
+title: API Gateway
 status: draft
 owner: DEPSI
 version: "0.0.1"
 source: 02_artsn/04_cartographie-cible/index.md
-maps_to: ["cap-int-10"]
-implements: ["art-5"]
-applies_to: ["prc-04", "prc-05", "prc-06"]
-related: ["enf-3", "cap-10", "vs-02"]
-tags: ["artsn", "niveau-1", "composant-applicatif", "cmp-15", "couche-3"]
+maps_to: ["CAP-INT-10"]
+implements: ["ART-5"]
+applies_to: ["PRC-04", "PRC-05", "PRC-06"]
+related: ["ENF-3", "CAP-10", "VS-02"]
+tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-15", "couche-3"]
 ---
-# CMP-15 — API Gateway
+# API Gateway
 
-**Contenu normatif.** Point d'entrée unique pour toutes les requêtes API. Assure la gestion des flux, l'authentification, la limitation de débit et la routage. Garantit la sécurité et la performance des échanges inter-systèmes.
+**Contenu normatif.** Ce composant constitue le point d'entrée unique pour toutes les requêtes API. Il assure la gestion des flux, l'authentification, la limitation de débit et le routage, et garantit la sécurité et la performance des échanges inter-systèmes.
 
-**Discipline existentielle.** Gardien de la plateforme. Toute requête externe ou inter-systèmes transite par cet point. Garantit la sécurité, la disponibilité et la conformité des échanges.
+**Discipline de mise en œuvre.** Il est le gardien de la plateforme. Toute requête externe ou inter-systèmes transite par ce point, ce qui garantit la sécurité, la disponibilité et la conformité des échanges.
 
-- **Rattachement** : [ART-5](../chapitres/art-5.md) (routeur d'escalade), [CAP-INT-10](../capacites/cap-int-10.md).
-- **Processus soutenus** : [PRC-04](../processus/prc-04.md) (soins), [PRC-05](../processus/prc-05.md) (pharmacie), [PRC-06](../processus/prc-06.md) (logistique).
-- **Statut : Stable.**
+- **Rattachement** : [ART-5](../chapitres/art-5.md) (routeur d'escalade), [CAP-INT-10: Provenance, audit et traçabilité](../capacites/cap-int-10.md).
+- **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../processus/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../processus/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../processus/prc-06.md) (logistique).
+- **Statut : Stable.**

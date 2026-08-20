@@ -1,4 +1,5 @@
 ---
+
 title: "Workflow d'homologation architecturale"
 id: homologation
 domain: 07_governance
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: CNASN
-tags: [gouvernance, homologation, workflow, conformité, niveau-2]
+tags: ["gouvernance", "homologation", "workflow", "conformité", "niveau-2"]
 ---
 
 # Workflow d'homologation architecturale
@@ -63,7 +64,7 @@ Toute initiative numérique sanitaire recevant un financement public ou utilisan
 | **C4** | Connexion X-Road | Les échanges inter-systèmes passent-ils par X-Road ? | Architecture d'intégration |
 | **C5** | Sécurité et RBAC | Le RBAC PT-10 est-il implémenté ? | Matrice rôles/permissions |
 | **C6** | Consentement | Le consentement patient (PT-11) est-il géré ? | Architecture du module consentement |
-| **C7** | Souveraineté données | Les données sont-elles hébergées en France ? | Plan d'hébergement |
+| **C7** | Souveraineté données | Les données sont-elles hébergées sur le territoire national (Madagascar) ou dans un environnement conforme à la résidence des données exigée par le cadre ? | Plan d'hébergement |
 | **C8** | Identité nationale | Utilise-t-elle l'INP (pas d'ID parallèle) ? | Architecture identité |
 | **C9** | Traçabilité | L'audit trail (PT-12) est-il implémenté ? | Architecture journalisation |
 | **C10** | Coût total de possession | Le budget est-il réaliste et soutenable ? | Business case 5 ans |
@@ -78,6 +79,8 @@ Toute initiative numérique sanitaire recevant un financement public ou utilisan
 | **C14** | One Health | Données animales/environnementales |
 | **C15** | Mode dégradé | Zone à connectivité limitée |
 | **C16** | Accessibilité | Application grand public |
+
+> **Cohérence inter-niveaux.** Cette checklist d'admission (niveau 1) se superpose aux 13 dimensions de conformité du CNISN (`01_cnisn/04_conformite/index.md` §3) et aux 5 portes architecturales de l'ARTSN. L'autorité d'homologation unique est le **CNASN** ; les critères ne sont pas redondants mais déclinés par couche (voir l'articulation détaillée en §3.1 du CNISN).
 
 ---
 

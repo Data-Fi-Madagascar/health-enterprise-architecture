@@ -1,4 +1,5 @@
 ---
+
 title: Modèle national de valeur
 id: valeur
 domain: 00_overview
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Ministère de la Santé Publique
-tags: [valeur, bénéficiaires, indicateurs]
+tags: ["valeur", "bénéficiaires", "indicateurs"]
 ---
 
 # Modèle national de valeur
@@ -77,85 +78,419 @@ Toute initiative numérique doit démontrer sa contribution à :
 <!-- BEGIN:GENERATED source=referentiel/parties-prenantes/pp-01.md,referentiel/parties-prenantes/pp-02.md,referentiel/parties-prenantes/pp-03.md,referentiel/parties-prenantes/pp-04.md,referentiel/parties-prenantes/pp-05.md,referentiel/parties-prenantes/pp-06.md,referentiel/parties-prenantes/pp-07.md,referentiel/parties-prenantes/pp-08.md,referentiel/parties-prenantes/pp-09.md,referentiel/parties-prenantes/pp-10.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### PP-01 : Patient et usager
+### Patient et usager
+
+#### Rôle dans le système
+
+Le patient et usager est la personne au centre du modèle de valeur du système de santé numérique : il est à la fois le bénéficiaire final et l'acteur de son propre parcours de soins. Il interagit avec le système pour accéder à des services, consulter son dossier, suivre ses rendez-vous et exercer ses droits sur ses données de santé.
 
 #### Valeur attendue
 
 Recevoir des soins accessibles, sûrs, continus et de qualité
 
-*Rattachement : : · fiche PP-01*
+#### Flux de valeur servis
 
-### PP-02 : Ménage et famille
+- [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md)
+
+#### Capabilités mobilisées
+
+- **CAP-01** — Offre de soins et continuité des services
+- **CAP-02** — Gestion du parcours patient, référence et contre-référence
+- **CAP-07** — Protection financière, couverture santé universelle
+- **CAP-17** — Engagement patient et identité numérique
+
+#### Principes et fondations garants
+
+- **P-INT-04** — Historisation des références
+- **PA-11** — La protection des données personnelles est une condition de confiance
+- **F.1** — Résilience face à la réalité géographique du pays
+- **F.5** — Protection et minimisation
+
+#### Articulations techniques
+
+- **PT-04** — Résolution d'identité du bénéficiaire
+- **PT-12** — Provenance, audit et traçabilité
+- **PT-02** — Médiation et échange inter-systèmes
+
+#### Responsabilités et attentes
+
+- **Du système envers la partie prenante** : lui offrir un dossier patient portable, un accès sécurisé à ses données et une prise en charge continue sans rupture entre les structures.
+- **De la partie prenante envers le système** : fournir une identité fiable, consentir aux échanges de données et respecter les règles d'usage des services numériques.
+
+*Rattachement : — · fiche PP-01*
+
+### Ménage et famille
+
+#### Rôle dans le système
+
+Le ménage et la famille constituent l'unité économique et de soutien qui accompagne le patient dans l'accès aux soins et la gestion des dépenses de santé. Il agit comme garant de la continuité des soins à domicile et comme payeur potentiel, direct ou indirect, au sein du système de santé numérique.
 
 #### Valeur attendue
 
 Accéder aux soins sans appauvrissement ni dépenses catastrophiques
 
-*Rattachement : : · fiche PP-02*
+#### Flux de valeur servis
 
-### PP-03 : Population
+- [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md)
+- [VS-03: Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md)
+
+#### Capabilités mobilisées
+
+- **CAP-07** — Protection financière, couverture santé universelle
+- **CAP-01** — Offre de soins et continuité des services
+- **CAP-03** — Qualité, sécurité des soins et amélioration continue
+
+#### Principes et fondations garants
+
+- **PD-VS03-01** — Les droits des bénéficiaires doivent être vérifiables au point de service
+- **PD-VS03-04** — Aucun mécanisme numérique de financement ne doit créer une barrière supplémentaire à l'accès aux soins
+- **PA-11** — La protection des données personnelles est une condition de confiance
+- **F.5** — Protection et minimisation
+
+#### Articulations techniques
+
+- **PT-04** — Résolution d'identité du bénéficiaire
+- **PT-12** — Provenance, audit et traçabilité
+- **PT-10** — Confiance, authentification et autorisation
+
+#### Responsabilités et attentes
+
+- **Du système envers la partie prenante** : rendre vérifiables les droits d'exemption et de couverture au point de service et garantir la traçabilité des mécanismes de facturation et de remboursement.
+- **De la partie prenante envers le système** : fournir les informations d'identité et de couverture nécessaires et conserver les justificatifs pour les mécanismes de remboursement.
+
+*Rattachement : — · fiche PP-02*
+
+### Population
+
+#### Rôle dans le système
+
+La population est l'ensemble des habitants que le système de santé numérique protège collectivement contre les risques sanitaires et dont il mesure la performance. Elle contribue indirectement par la déclaration de signalements et bénéficie des politiques de prévention, de surveillance et de pilotage fondées sur des données fiables.
 
 #### Valeur attendue
 
 Être protégée contre les maladies, épidémies et urgences sanitaires
 
-*Rattachement : : · fiche PP-03*
+#### Flux de valeur servis
 
-### PP-04 : Communauté
+- [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md)
+- [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md)
+
+#### Capabilités mobilisées
+
+- **CAP-05** — Surveillance épidémiologique, alerte, investigation et riposte
+- **CAP-06** — Vaccination, prévention et promotion de la santé
+- **CAP-03** — Qualité, sécurité des soins et amélioration continue
+
+#### Principes et fondations garants
+
+- **PD-VS02-03** — Les données communautaires et institutionnelles doivent converger
+- **PD-VS02-05** — La surveillance sanitaire est une capabilité nationale permanente
+- **PA-04** — Les données de santé sont un actif stratégique national
+- **F.6** — Observabilité
+
+#### Articulations techniques
+
+- **PT-12** — Provenance, audit et traçabilité
+- **PT-13** — Qualité et réconciliation
+- **PT-14** — Interopérabilité transfrontalière
+
+#### Responsabilités et attentes
+
+- **Du système envers la partie prenante** : assurer une surveillance précoce, alerter en temps utile et publier des données de santé publique fiables et réutilisables.
+- **De la partie prenante envers le système** : participer à la déclaration des événements sanitaires et respecter les recommandations de prévention et de vaccination.
+
+*Rattachement : — · fiche PP-03*
+
+### Communauté
+
+#### Rôle dans le système
+
+La communauté désigne le groupe local, les relais communautaires et les structures de proximité qui portent la santé au plus près des habitants. Elle agit comme interface entre la population et le système formel, contribuant à la détection des risques et à l'orientation vers les services de soins.
 
 #### Valeur attendue
 
 Participer à la santé et accéder à des services de proximité
 
-*Rattachement : : · fiche PP-04*
+#### Flux de valeur servis
 
-### PP-05 : Agent de santé
+- [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md)
+- [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md)
+
+#### Capabilités mobilisées
+
+- **CAP-04** — Santé communautaire et engagement des communautés
+- **CAP-05** — Surveillance épidémiologique, alerte, investigation et riposte
+- **CAP-06** — Vaccination, prévention et promotion de la santé
+
+#### Principes et fondations garants
+
+- **PD-VS01-04** — Le patient et la communauté sont acteurs du parcours de santé
+- **PD-VS02-03** — Les données communautaires et institutionnelles doivent converger
+- **PA-09** — L'architecture doit être adaptée aux réalités du terrain
+- **F.3** — Éradication des silos technologiques
+
+#### Articulations techniques
+
+- **PT-13** — Qualité et réconciliation
+- **PT-12** — Provenance, audit et traçabilité
+- **PT-04** — Résolution d'identité du bénéficiaire
+
+#### Responsabilités et attentes
+
+- **Du système envers la partie prenante** : fournir des canaux de remontée d'information, des référentiels partagés et des outils de proximité fonctionnant en connectivité contrainte.
+- **De la partie prenante envers le système** : alimenter les données communautaires de façon fiable et orienter les membres vers les structures de soins appropriées.
+
+*Rattachement : — · fiche PP-04*
+
+### Agent de santé
+
+#### Rôle dans le système
+
+L'agent de santé est le professionnel de première ligne qui délivre les soins et alimente le système d'information sanitaire sur le terrain. Il interagit avec le système pour consulter le dossier patient, prescrire, approvisionner et signaler, dans des conditions souvent marquées par une connectivité contrainte.
 
 #### Valeur attendue
 
 Disposer des ressources, compétences, outils et informations nécessaires
 
-*Rattachement : : · fiche PP-05*
+#### Flux de valeur servis
 
-### PP-06 : Formation sanitaire
+- [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md)
+
+#### Capabilités mobilisées
+
+- **CAP-09** — Gestion des ressources humaines en santé
+- **CAP-01** — Offre de soins et continuité des services
+- **CAP-03** — Qualité, sécurité des soins et amélioration continue
+- **CAP-10** — Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement
+
+#### Principes et fondations garants
+
+- **PA-09** — L'architecture doit être adaptée aux réalités du terrain
+- **P-INT-22** — Fonctionnement en connectivité contrainte
+- **F.1** — Résilience face à la réalité géographique du pays
+- **AA-05** — Les applications doivent fonctionner dans les conditions réelles du terrain
+
+#### Articulations techniques
+
+- **PT-05** — Registre des professionnels de santé
+- **PT-04** — Résolution d'identité du bénéficiaire
+- **PT-10** — Confiance, authentification et autorisation
+- **PT-13** — Qualité et réconciliation
+
+#### Responsabilités et attentes
+
+- **Du système envers la partie prenante** : lui fournir des outils nomades, des référentiels à jour et un accès aux données patient nécessaires à la décision, même en connectivité dégradée.
+- **De la partie prenante envers le système** : tenir à jour son enregistrement professionnel, saisir des données de qualité et respecter les règles d'accès et de confidentialité.
+
+*Rattachement : — · fiche PP-05*
+
+### Formation sanitaire
+
+#### Rôle dans le système
+
+La formation sanitaire est le point de contact opérationnel entre la population et le système de santé numérique : elle délivre les soins, consomme les services nationaux et alimente le système d'information sanitaire. Elle s'appuie sur les capabilités nationales pour disposer des intrants, des ressources humaines, des équipements et des données nécessaires à sa mission. Par ses déclarations, elle alimente la base de données qui permet le pilotage et la protection financière.
 
 #### Valeur attendue
 
 Avoir les intrants, ressources humaines, équipements et données nécessaires
 
-*Rattachement : : · fiche PP-06*
+#### Flux de valeur servis
 
-### PP-07 : District, région et Ministère
+- [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md)
+- [VS-03: Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md)
+
+#### Capabilités mobilisées
+
+- **CAP-01** — Offre de soins et continuité des services
+- **CAP-10** — Médicaments, vaccins, intrants et chaîne d'approvisionnement
+- **CAP-11** — Infrastructures et équipements
+- **CAP-13** — Système d'information sanitaire, données et recherche
+
+#### Principes et fondations garants
+
+- **PA-09** — L'architecture doit être adaptée aux réalités du terrain
+- **P-INT-22** — Fonctionnement en connectivité contrainte
+- **PD-VS01-05** — L'accès numérique ne doit jamais devenir une barrière à l'accès aux soins
+- **F.1** — Résilience face à la réalité géographique du pays
+
+#### Articulations techniques
+
+- **PT-06** — Référentiel des structures et services de santé
+- **PT-08** — Échange de données agrégées
+- **PT-04** — Résolution d'identité du bénéficiaire
+
+#### Responsabilités et attentes
+
+- **Du système envers la partie prenante** : le système doit lui fournir un accès fiable aux référentiels nationaux (structures, terminologie, équipements), aux outils de déclaration et de gestion des stocks, et fonctionner en connectivité contrainte.
+- **De la partie prenante envers le système** : la formation sanitaire doit déclarer des données exactes et à temps, respecter les référentiels nationaux et alimenter le SIS selon les contrats d'échange définis.
+
+*Rattachement : — · fiche PP-06*
+
+### District, région et Ministère
+
+#### Rôle dans le système
+
+Le district, la région et le Ministère constituent les échelons de pilotage et de coordination du système de santé. Ils consomment les données du SIS pour planifier, allouer les ressources et évaluer la performance, et orchestrent la réponse aux risques sanitaires à leur niveau. Ils traduisent les orientations nationales en actions opérationnelles et rendent compte des résultats produits.
 
 #### Valeur attendue
 
 Piloter, coordonner et améliorer la performance sur la base de données fiables
 
-*Rattachement : : · fiche PP-07*
+#### Flux de valeur servis
 
-### PP-08 : Partenaires techniques et financiers
+- [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md)
+- [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md)
+
+#### Capabilités mobilisées
+
+- **CAP-08** — Gouvernance et planification
+- **CAP-13** — Système d'information sanitaire, données et recherche
+- **CAP-16** — Portefeuille d'initiatives
+- **CAP-03** — Qualité et sécurité des soins
+
+#### Principes et fondations garants
+
+- **PD-VS04-01** — La décision sanitaire doit s'appuyer sur des données fiables, traçables et réutilisables
+- **PD-VS04-02** — Le pilotage doit mesurer les résultats, pas seulement les activités
+- **PA-03** — Les bénéfices doivent être mesurés, pas seulement déclarés
+- **F.6** — Observabilité
+
+#### Articulations techniques
+
+- **PT-08** — Échange de données agrégées
+- **PT-09** — Accès et exposition des données analytiques
+- **PT-03** — Catalogue des services et registre des contrats
+
+#### Responsabilités et attentes
+
+- **Du système envers la partie prenante** : le système doit fournir des tableaux de bord fiables, des données réconciliées et traçables, et des outils de pilotage interopérables aux échelons territoriaux.
+- **De la partie prenante envers le système** : les échelons doivent alimenter le SIS de façon exacte, respecter les référentiels nationaux et arbitrer les ressources selon la valeur produite.
+
+*Rattachement : — · fiche PP-07*
+
+### Partenaires techniques et financiers
+
+#### Rôle dans le système
+
+Les partenaires techniques et financiers cofinancent et accompagnent les initiatives numériques de santé. Ils s'alignent sur les priorités nationales, contribuent au portefeuille d'initiatives et exigent une traçabilité des résultats financés. Leur action est subordonnée au cadre national, dont ils ne doivent pas fragmenter la cohérence.
 
 #### Valeur attendue
 
 Aligner leurs investissements sur les priorités nationales et vérifier les résultats
 
-*Rattachement : : · fiche PP-08*
+#### Flux de valeur servis
 
-### PP-09 : Décideurs institutionnels
+- [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md)
+- [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md)
+
+#### Capabilités mobilisées
+
+- **CAP-16** — Portefeuille d'initiatives
+- **CAP-12** — Finances publiques
+- **CAP-08** — Gouvernance et planification
+
+#### Principes et fondations garants
+
+- **PD-VS04-04** — Les partenaires contribuent au portefeuille national, ils ne le fragmentent pas
+- **PD-VS04-03** — Le portefeuille numérique doit être gouverné par la valeur produite
+- **PA-10** — La souveraineté nationale du système d'information sanitaire est non négociable
+- **F.4** — Homologation obligatoire
+
+#### Articulations techniques
+
+- **PT-03** — Catalogue des services et registre des contrats
+- **PT-09** — Accès et exposition des données analytiques
+- **PT-12** — Provenance, audit et traçabilité
+
+#### Responsabilités et attentes
+
+- **Du système envers la partie prenante** : le système doit offrir une visibilité sur le portefeuille national, des données de résultats traçables et un cadre d'homologation clair.
+- **De la partie prenante envers le système** : les partenaires doivent aligner leurs investissements sur les priorités nationales, contribuer au portefeuille sans le fragmenter et respecter la souveraineté et l'homologation.
+
+*Rattachement : — · fiche PP-08*
+
+### Décideurs institutionnels
+
+#### Rôle dans le système
+
+Les décideurs institutionnels — Ministère, autorités de tutelle et instances stratégiques — définissent les orientations, arbitrent les ressources et rendent compte des résultats. Ils s'appuient sur le SIS et le portefeuille d'initiatives pour piloter la stratégie nationale de santé numérique. Leur légitimité repose sur la disponibilité de données fiables et réutilisables.
 
 #### Valeur attendue
 
 Définir les priorités, arbitrer les ressources et rendre compte des résultats
 
-*Rattachement : : · fiche PP-09*
+#### Flux de valeur servis
 
-### PP-10 : Équipes techniques (DEPSI / SIS)
+- [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md)
+
+#### Capabilités mobilisées
+
+- **CAP-08** — Gouvernance et planification
+- **CAP-16** — Portefeuille d'initiatives
+- **CAP-13** — Système d'information sanitaire, données et recherche
+- **CAP-15** — Cybersécurité et confidentialité
+
+#### Principes et fondations garants
+
+- **PA-01** — La valeur pour la population est la finalité de tout investissement numérique
+- **PD-VS04-01** — La décision sanitaire doit s'appuyer sur des données fiables, traçables et réutilisables
+- **PA-12** — Toute initiative numérique doit être conforme au cadre national
+- **F.6** — Observabilité
+
+#### Articulations techniques
+
+- **PT-03** — Catalogue des services et registre des contrats
+- **PT-09** — Accès et exposition des données analytiques
+- **PT-12** — Provenance, audit et traçabilité
+
+#### Responsabilités et attentes
+
+- **Du système envers la partie prenante** : le système doit fournir une vision consolidée et traçable de la performance, du portefeuille et de la sécurité, appuyée sur des données fiables et réutilisables.
+- **De la partie prenante envers le système** : les décideurs doivent définir les priorités par la valeur, respecter le cadre national et l'homologation, et rendre compte sur la base de données réutilisables.
+
+*Rattachement : — · fiche PP-09*
+
+### Équipes techniques (DEPSI / SIS)
+
+#### Rôle dans le système
+
+Les équipes techniques de la DEPSI et du SIS conçoivent, opèrent et fiabilisent les systèmes numériques de santé. Elles implémentent les référentiels, l'interopérabilité et les services nationaux, et garantissent la cohérence technique du cadre. Elles sont responsables de la mise en œuvre des profils techniques et du respect des contrats d'échange.
 
 #### Valeur attendue
 
 Concevoir, opérer et fiabiliser les systèmes numériques au service des flux de valeur
 
-*Rattachement : : · fiche PP-10*
+#### Flux de valeur servis
+
+- [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md)
+
+#### Capabilités mobilisées
+
+- **CAP-13** — Système d'information sanitaire, données et recherche
+- **CAP-14** — Interopérabilité et référentiels
+- **CAP-15** — Cybersécurité et confidentialité
+- **CAP-16** — Portefeuille d'initiatives
+- **CAP-17** — Engagement patient et identité
+
+#### Principes et fondations garants
+
+- **PA-06** — L'interopérabilité est une exigence non négociable
+- **PA-07** — Les référentiels nationaux sont des biens communs indivisibles
+- **F.3** — Éradication des silos technologiques
+- **F.4** — Homologation obligatoire
+
+#### Articulations techniques
+
+- **PT-02** — Médiation et intégration intra-secteur
+- **PT-06** — Référentiel des structures et services de santé
+- **PT-10** — Confiance, authentification et autorisation
+
+#### Responsabilités et attentes
+
+- **Du système envers la partie prenante** : le cadre doit leur fournir des référentiels stables, des normes claires et un processus d'homologation, afin d'opérer sans dépendance externe permanente.
+- **De la partie prenante envers le système** : les équipes doivent concevoir des systèmes interopérables par conception, fiabiliser les données, garantir la sécurité et respecter les contrats ART et le cadre national.
+
+*Rattachement : — · fiche PP-10*
 
 <!-- END:GENERATED -->
 ## Liens

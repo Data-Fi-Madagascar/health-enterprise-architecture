@@ -1,21 +1,21 @@
 ---
-id: cap-int-10
+id: CAP-INT-10
 type: capacite
 niveau: "2"
-title: CAP-INT-10 — Provenance, audit et traçabilité
+title: Provenance, audit et traçabilité
 status: active
 owner: DEPSI
 version: "0.5"
 family: confiance
 source: 01_cnisn/02_capacites/index.md
-maps_to: ["p-int-07", "p-int-17", "p-int-18", "p-int-23", "cap-13", "cap-15"]
+maps_to: ["P-INT-07", "P-INT-17", "P-INT-18", "P-INT-23", "CAP-13", "CAP-15"]
 implements: []
 applies_to: []
 related: []
 tags: ["cnisn", "niveau-2", "capacite"]
 ---
 
-# CAP-INT-10 — Provenance, audit et traçabilité
+# Provenance, audit et traçabilité
 
 ### Finalité
 

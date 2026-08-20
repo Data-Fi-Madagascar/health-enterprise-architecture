@@ -1,24 +1,24 @@
 ---
-id: cmp-10
+id: CMP-10
 type: composant-applicatif
 niveau: "1"
-title: CMP-10 — Registre des terminologies
+title: Registre des terminologies
 status: draft
 owner: DEPSI
 version: "0.0.1"
 source: 02_artsn/04_cartographie-cible/index.md
-maps_to: ["cap-int-09"]
-implements: ["art-4"]
-applies_to: ["prc-07", "prc-08"]
-related: ["enf-4", "cap-09", "vs-03"]
-tags: ["artsn", "niveau-1", "composant-applicatif", "cmp-10", "couche-4"]
+maps_to: ["CAP-INT-09"]
+implements: ["ART-4"]
+applies_to: ["PRC-07", "PRC-08"]
+related: ["ENF-4", "CAP-09", "VS-03"]
+tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-10", "couche-4"]
 ---
-# CMP-10 — Registre des terminologies
+# Registre des terminologies
 
-**Contenu normatif.** Gère les terminologies médicales et de référence (CIM-10, SNOMED CT, LOINC, ATC, etc.). Assure la mapping sémantique entre les systèmes. Fournit les services de traduction et de validation des codages.
+**Contenu normatif.** Ce composant gère les terminologies médicales et de référence (CIM-10, SNOMED CT, LOINC, ATC, etc.). Il assure le mapping sémantique entre les systèmes et fournit les services de traduction et de validation des codages.
 
-**Discipline existentielle.** Pont sémantique entre les systèmes hétérogènes. Garantit que les données codées dans un système sont interprétables et exploitables par un autre.
+**Discipline de mise en œuvre.** Il sert de pont sémantique entre les systèmes hétérogènes. Il garantit que les données codées dans un système sont interprétables et exploitables par un autre.
 
-- **Rattachement** : [ART-4](../chapitres/art-4.md) (référentiel des métadonnées), [CAP-INT-09](../capacites/cap-int-09.md).
-- **Processus soutenus** : [PRC-07](../processus/prc-07.md) (production données), [PRC-08](../processus/prc-08.md) (qualité).
-- **Statut : Stable.**
+- **Rattachement** : [ART-4](../chapitres/art-4.md) (référentiel des métadonnées), [CAP-INT-09: Gestion des consentements et bases d’autorisation](../capacites/cap-int-09.md).
+- **Processus soutenus** : [PRC-07: Identification et droits des bénéficiaires](../processus/prc-07.md) (production données), [PRC-08: Financement et exemption au point de service](../processus/prc-08.md) (qualité).
+- **Statut : Stable.**

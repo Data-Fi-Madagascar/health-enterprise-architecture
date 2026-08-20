@@ -1,4 +1,5 @@
 ---
+
 title: Décisions d'architecture (ADR)
 id: decisions
 domain: 06_decisions
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Bureau de Réalisation de la Valeur
-tags: [décisions, adr]
+tags: ["décisions", "adr"]
 ---
 
 # Décisions d'architecture (ADR)

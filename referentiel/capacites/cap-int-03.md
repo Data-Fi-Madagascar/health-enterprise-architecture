@@ -1,21 +1,21 @@
 ---
-id: cap-int-03
+id: CAP-INT-03
 type: capacite
 niveau: "2"
-title: CAP-INT-03 — Échange et médiation inter-systèmes
+title: Échange et médiation inter-systèmes
 status: active
 owner: DEPSI
 version: "0.5"
 family: echange
 source: 01_cnisn/02_capacites/index.md
-maps_to: ["p-int-05", "p-int-06", "p-int-07", "p-int-08", "p-int-09", "p-int-10", "p-int-11", "p-int-12", "p-int-13", "p-int-18", "p-int-19", "p-int-20", "p-int-21", "p-int-22", "p-int-23", "p-int-24", "p-int-25", "cap-13", "cap-14"]
+maps_to: ["P-INT-05", "P-INT-06", "P-INT-07", "P-INT-08", "P-INT-09", "P-INT-10", "P-INT-11", "P-INT-12", "P-INT-13", "P-INT-18", "P-INT-19", "P-INT-20", "P-INT-21", "P-INT-22", "P-INT-23", "P-INT-24", "P-INT-25", "CAP-13", "CAP-14"]
 implements: []
 applies_to: []
 related: []
 tags: ["cnisn", "niveau-2", "capacite"]
 ---
 
-# CAP-INT-03 — Échange et médiation inter-systèmes
+# Échange et médiation inter-systèmes
 
 ### Finalité
 

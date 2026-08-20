@@ -1,4 +1,5 @@
 ---
+
 title: Architecture de Référence Technique de la Santé Numérique (ARTSN)
 id: artsn
 domain: 02_artsn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-18
 owner: DEPSI
-tags: [artsn, niveau-3, standards]
+tags: ["artsn", "niveau-3", "standards"]
 ---
 
 # Architecture de Référence Technique de la Santé Numérique (ARTSN)

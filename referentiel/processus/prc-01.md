@@ -1,28 +1,28 @@
 ---
-id: prc-01
+id: PRC-01
 type: processus-metier
 niveau: "1"
-title: PRC-01 — Accès, orientation et admission du patient
+title: Accès, orientation et admission du patient
 status: draft
 owner: Direction des soins
 version: "0.0.1"
 source: 00_caesn/01_value-streams/vs-01-access-care.md
 maps_to: []
 implements: []
-applies_to: ["cap-01", "cap-02", "cap-03", "cap-04", "cap-09", "cap-10", "cap-11", "cap-13", "cap-14", "cap-15", "pp-01", "pp-02", "pp-04", "pp-05", "pp-06"]
-related: ["ev-01", "ev-02", "vs-01"]
-tags: ["caesn", "niveau-1", "processus-metier", "prc-01"]
+applies_to: ["CAP-01", "CAP-02", "CAP-03", "CAP-04", "CAP-09", "CAP-10", "CAP-11", "CAP-13", "CAP-14", "CAP-15", "PP-01", "PP-02", "PP-04", "PP-05", "PP-06"]
+related: ["VS-01-01", "VS-01-02", "VS-01"]
+tags: ["caesn", "niveau-1", "processus-metier", "PRC-01"]
 ---
-# PRC-01 — Accès, orientation et admission du patient
+# Accès, orientation et admission du patient
 
 ## Objectif
 
-Assurer l'entrée du patient dans le système de soins : reconnaissance du besoin, orientation vers le niveau de soins approprié, accueil et enregistrement.
+Assurer l'entrée du patient dans le système de soins : reconnaissance du besoin, orientation vers le niveau de soins approprié, accueil et enregistrement.
 
 ## Étapes couvertes
 
-- [EV-01 — Reconnaissance du besoin et orientation](../etapes-valeur/ev-01.md)
-- [EV-02 — Accueil et enregistrement](../etapes-valeur/ev-02.md)
+- [VS-01-01: Reconnaissance du besoin et orientation](../etapes-valeur/vs-01-01.md)
+- [VS-01-02: Accueil et enregistrement](../etapes-valeur/vs-01-02.md)
 
 ## Acteurs
 

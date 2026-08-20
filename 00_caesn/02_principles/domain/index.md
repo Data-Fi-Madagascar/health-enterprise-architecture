@@ -1,4 +1,5 @@
 ---
+
 title: Principes de domaine par flux de valeur
 id: principles-domain
 domain: 02_principles
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Responsables de flux de valeur
-tags: [principes, domaine]
+tags: ["principes", "domaine"]
 ---
 
 # Principes de domaine par flux de valeur

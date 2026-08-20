@@ -1,4 +1,5 @@
 ---
+
 title: Architecture applicative et systèmes numériques
 id: application-architecture
 domain: 05_application
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Direction des Systèmes d'Information
-tags: [applications, systèmes, numériques]
+tags: ["applications", "systèmes", "numériques"]
 ---
 
 # Architecture applicative et systèmes numériques

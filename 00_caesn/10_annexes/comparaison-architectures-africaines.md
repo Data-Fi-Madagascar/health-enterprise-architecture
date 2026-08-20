@@ -1,4 +1,5 @@
 ---
+
 title: Comparaison des architectures de santé numérique africaines
 id: annexe-comparaison-architectures-africaines
 domain: 10_annexes
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-19
 owner: Bureau de Réalisation de la Valeur
-tags: [annexes, comparaison, afrique, veille-strategique]
+tags: ["annexes", "comparaison", "afrique", "veille-strategique"]
 ---
 
 # Comparaison des architectures de santé numérique africaines

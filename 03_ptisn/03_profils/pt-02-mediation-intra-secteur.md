@@ -1,12 +1,12 @@
 ---
 title: PT-02 : Profil technique national
-id: ptisn-pt-02-mediation-intra-secteur
+id: ptisn-PT-02-mediation-intra-secteur
 domain: 03_ptisn
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
-tags: ["ptisn", "niveau-4", "profils", "pt-02"]
+tags: ["ptisn", "niveau-4", "profils", "PT-02"]
 ---
 
 # PT-02 : Profil technique national
@@ -16,15 +16,15 @@ tags: ["ptisn", "niveau-4", "profils", "pt-02"]
 
 ## 1. Capacité CNISN
 
-**CAP-INT-03 : Échange et médiation inter-systèmes**
+**CAP-INT-03 — Échange et médiation inter-systèmes**
 
 ## 2. Chapitres ART applicables
 
-- ART-1 : intégration ;
-- ART-2 : médiation ;
-- ART-5 : qualité et réconciliation ;
-- ART-7 : sécurité ;
-- ART-8 : coordination lorsque applicable.
+- ART-1 — intégration ;
+- ART-2 — médiation ;
+- ART-5 — qualité et réconciliation ;
+- ART-7 — sécurité ;
+- ART-8 — coordination lorsque applicable.
 
 ## 3. Service national
 
@@ -32,16 +32,16 @@ tags: ["ptisn", "niveau-4", "profils", "pt-02"]
 
 ## 4. Fonctions
 
-- exposition des interfaces santé ;
-- authentification des systèmes ;
-- routage ;
-- transformation ;
-- validation des profils ;
-- enrichissement ;
-- résolution des métadonnées ;
-- corrélation ;
-- gestion des erreurs ;
-- observabilité ;
+- exposition des interfaces santé ;
+- authentification des systèmes ;
+- routage ;
+- transformation ;
+- validation des profils ;
+- enrichissement ;
+- résolution des métadonnées ;
+- corrélation ;
+- gestion des erreurs ;
+- observabilité ;
 - réconciliation.
 
 ## 5. Produit candidat
@@ -58,18 +58,18 @@ OpenHIM fournit un point d'entrée pour les services, journalise les requêtes e
 
 ## 6. Exigences
 
-Une solution alternative doit au minimum supporter :
+Une solution alternative doit au minimum supporter :
 
-- interfaces synchrones et asynchrones ;
-- routage configurable ;
-- authentification des sources ;
-- transformation ;
-- gestion des erreurs ;
-- corrélation ;
-- métriques ;
-- journalisation ;
-- reprise ;
-- déploiement de médiateurs indépendants ;
+- interfaces synchrones et asynchrones ;
+- routage configurable ;
+- authentification des sources ;
+- transformation ;
+- gestion des erreurs ;
+- corrélation ;
+- métriques ;
+- journalisation ;
+- reprise ;
+- déploiement de médiateurs indépendants ;
 - intégration avec les services nationaux.
 
 ## 7. Articulation avec l'échange interinstitutionnel

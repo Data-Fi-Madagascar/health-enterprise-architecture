@@ -1,4 +1,5 @@
 ---
+
 title: "STD-0007 : Standard terminologique : SNOMED CT"
 id: std-0007
 domain: 05_standards
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-19
 owner: Comité National d'Architecture Santé Numérique
-tags: [standards, terminologie, snomed-ct, recommande]
+tags: ["standards", "terminologie", "snomed-ct", "recommande"]
 ---
 
 # STD-0007 : Standard terminologique : SNOMED CT

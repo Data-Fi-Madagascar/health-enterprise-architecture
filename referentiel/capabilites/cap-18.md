@@ -1,19 +1,20 @@
 ---
-id: cap-18
+
+id: CAP-18
 type: capabilite
 niveau: "1"
-title: CAP-18 — Coordination intersectorielle (One Health)
+title: Coordination intersectorielle (One Health)
 status: draft
 owner: Responsables de capabilités habilitantes
 version: "0.1.0"
 source: 00_caesn/03_capabilities/enabling.md
-maps_to: ["cap-int-03"]
+maps_to: ["CAP-INT-03"]
 implements: []
-applies_to: ["vs-02"]
-related: ["cap-05"]
-tags: ['caesn', 'niveau-1', 'capabilite', 'cap-18', 'one-health', 'intersectoriel']
+applies_to: ["VS-02"]
+related: ["CAP-05"]
+tags: ["caesn", "niveau-1", "capabilite", "CAP-18", "one-health", "intersectoriel"]
 ---
-# CAP-18 — Coordination intersectorielle (One Health)
+# Coordination intersectorielle (One Health)
 
 ## Rôle dans le système
 
@@ -28,7 +29,7 @@ Cette capabilité est **habilitante** : son absence bloque la surveillance sanit
 
 ## Flux de valeur
 
-- [VS-02](../flux-valeur/vs-02.md) — Prévention et surveillance
+- [VS-02: Prévention et surveillance](../flux-valeur/vs-02.md)
 
 ## Rattachement ARTSN
 

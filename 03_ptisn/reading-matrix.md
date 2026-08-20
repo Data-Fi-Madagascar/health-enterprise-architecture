@@ -1,4 +1,5 @@
 ---
+
 title: Matrice de lecture du PTISN (niveau 4)
 id: ptisn-reading-matrix
 domain: 03_ptisn
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-09
 owner: Équipes techniques des initiatives
-tags: [ptisn, lecture, niveau-4, profils]
+tags: ["ptisn", "lecture", "niveau-4", "profils"]
 ---
 
 # Matrice de lecture du PTISN (niveau 4)

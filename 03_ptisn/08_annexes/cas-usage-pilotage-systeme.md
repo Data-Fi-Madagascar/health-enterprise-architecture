@@ -6,7 +6,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
-tags: ["ptisn", "niveau-4", "cas-usage", "pilotage", "rapports", "performance", "vs-04"]
+tags: ["ptisn", "niveau-4", "cas-usage", "pilotage", "rapports", "performance", "VS-04"]
 ---
 
 # Cas d'usage : Remontée de données et pilotage du système (VS-04)
@@ -75,7 +75,7 @@ Les profils mobilisés sont le PT-08 (échange de données agrégées au format 
 | **PT-02** | Médiation sémantique (formatage) |
 | **PT-13** | Qualité et réconciliation des données |
 
-### Phase 2 : Agrégation et analyse (EV-25/EV-26)
+### Phase 2 : Agrégation et analyse (VS-04-04/vs-04-05)
 
 La phase d'agrégation et d'analyse consiste à consolider les données collectées, à calculer les indicateurs de performance et à alimenter les tableaux de bord décisionnels. L'entrepôt (CMP-03) transmet les données consolidées au moteur analytique (CMP-04), qui applique trois modèles d'intelligence artificielle pour calculer les indicateurs. Les résultats sont ensuite exposés dans le dashboard national (CMP-01).
 
@@ -126,7 +126,7 @@ Les profils mobilisés sont le PT-10 (confiance, RBAC pour l'accès aux tableaux
 | **PT-10** | Confiance (RBAC tableaux de bord) |
 | **PT-12** | Audit des consultations de dashboards |
 
-### Phase 4 : Rapports et redevabilité (EV-27)
+### Phase 4 : Rapports et redevabilité (VS-04-06)
 
 La phase de rapports et de redevabilité consiste à produire les rapports publics et à alimenter les instances de redevabilité : Parlement, partenaires et société civile. Les données annuelles consolidées sont extraites de l'entrepôt et transmises au moteur analytique, qui produit les rapports annuels de performance. Une fois validés, ces rapports sont publiés et transmis aux parties prenantes.
 
@@ -156,7 +156,7 @@ Les profils mobilisés sont le PT-09 (analytique et restitution), le PT-12 (audi
 | **PT-12** | Audit trail (traçabilité rapports) |
 | **PT-01** | Échange interinstitutionnel (transmission rapports) |
 
-### Phase 5 : Amélioration continue (EV-28)
+### Phase 5 : Amélioration continue (VS-04-07)
 
 La phase d'amélioration continue mobilise les leçons tirées du pilotage pour améliorer l'architecture et les processus. Le comité de pilotage formule des recommandations d'amélioration, qui sont transmises au Bureau de réalisation de la valeur pour traduction en modifications de l'ARTSN. L'équipe architecture assure la mise à jour du référentiel en conséquence.
 
@@ -179,10 +179,10 @@ Comité de pilotage     Bureau de réalisation     Équipe architecture
 | Étape | PT-01 | PT-02 | PT-08 | PT-09 | PT-10 | PT-12 | PT-13 |
 |-------|-------|-------|-------|-------|-------|-------|-------|
 | Collecte (VS → VS-04) | : | ● | ● | : | : | ● | ● |
-| Agrégation/Analyse (EV-25/26) | : | : | ● | ● | : | ● | ● |
+| Agrégation/Analyse (VS-04-04/26) | : | : | ● | ● | : | ● | ● |
 | Alertes (CMP-02) | : | : | : | ● | ● | ● | : |
-| Rapports (EV-27) | ● | : | : | ● | : | ● | : |
-| Amélioration (EV-28) | : | : | : | ○ | : | ● | : |
+| Rapports (VS-04-06) | ● | : | : | ● | : | ● | : |
+| Amélioration (VS-04-07) | : | : | : | ○ | : | ● | : |
 
 ## Exigences transversales
 

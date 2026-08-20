@@ -1,12 +1,12 @@
 ---
 title: PT-06 : Profil technique national
-id: ptisn-pt-06-referentiel-structures-services
+id: ptisn-PT-06-referentiel-structures-services
 domain: 03_ptisn
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
-tags: ["ptisn", "niveau-4", "profils", "pt-06"]
+tags: ["ptisn", "niveau-4", "profils", "PT-06"]
 ---
 
 # PT-06 : Profil technique national
@@ -16,12 +16,12 @@ tags: ["ptisn", "niveau-4", "profils", "pt-06"]
 
 ## 1. Capacité CNISN
 
-**CAP-INT-04 : Référentiel des structures et services de santé**
+**CAP-INT-04 — Référentiel des structures et services de santé**
 
 ## 2. Chapitres ART applicables
 
-- ART-4 ;
-- ART-5 ;
+- ART-4 ;
+- ART-5 ;
 - ART-6 pour les usages analytiques.
 
 ## 3. Service national
@@ -30,21 +30,21 @@ tags: ["ptisn", "niveau-4", "profils", "pt-06"]
 
 ## 4. Périmètre
 
-- formations sanitaires publiques ;
-- formations sanitaires privées ;
-- structures communautaires ;
-- laboratoires ;
-- pharmacies et dépôts lorsque applicables ;
-- structures administratives ;
-- services disponibles ;
-- localisations ;
-- coordonnées ;
-- rattachements ;
+- formations sanitaires publiques ;
+- formations sanitaires privées ;
+- structures communautaires ;
+- laboratoires ;
+- pharmacies et dépôts lorsque applicables ;
+- structures administratives ;
+- services disponibles ;
+- localisations ;
+- coordonnées ;
+- rattachements ;
 - périodes d’activité.
 
 ## 5. Profil cible
 
-**IHE mCSD : Mobile Care Services Discovery**
+**IHE mCSD — Mobile Care Services Discovery**
 
 mCSD permet la publication et la recherche d’organisations, localisations, services et autres ressources associées dans des architectures centralisées ou fédérées.
 
@@ -59,27 +59,27 @@ mCSD permet la publication et la recherche d’organisations, localisations, ser
 
 ## 7. Exigences nationales
 
-Le référentiel doit fournir :
+Le référentiel doit fournir :
 
-- un identifiant national stable ;
-- l’historique des changements ;
-- la période de validité ;
-- le rattachement administratif ;
-- les services fournis ;
-- la localisation ;
-- le statut ;
+- un identifiant national stable ;
+- l’historique des changements ;
+- la période de validité ;
+- le rattachement administratif ;
+- les services fournis ;
+- la localisation ;
+- le statut ;
 - les correspondances avec les identifiants historiques.
 
 ## 8. Cas DHIS2
 
 Les différentes instances DHIS2 doivent résoudre leurs unités organisationnelles contre le référentiel national.
 
-Les correspondances entre identifiants DHIS2 et identifiants nationaux doivent être :
+Les correspondances entre identifiants DHIS2 et identifiants nationaux doivent être :
 
-- explicites ;
-- versionnées ;
-- datées ;
-- réconciliées ;
+- explicites ;
+- versionnées ;
+- datées ;
+- réconciliées ;
 - gouvernées.
 
 ------------------------------------------------------------------------

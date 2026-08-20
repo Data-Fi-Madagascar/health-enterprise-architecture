@@ -1,4 +1,5 @@
 ---
+
 title: "Table de correspondance : Principes CAESN ↔ ARTSN"
 id: mapping-principes-caesn-artsn
 domain: 02_principles
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
-tags: [principes, caesn, artsn, mapping, correspondance]
+tags: ["principes", "caesn", "artsn", "mapping", "correspondance"]
 ---
 
 # Table de correspondance : Principes CAESN ↔ ARTSN

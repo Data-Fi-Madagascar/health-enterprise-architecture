@@ -1,24 +1,24 @@
 ---
-id: cmp-07
+id: CMP-07
 type: composant-applicatif
 niveau: "1"
-title: CMP-07 — Orchestrateur de parcours & Gestionnaire de Sagas (ART-8a)
+title: Orchestrateur de parcours & Gestionnaire de Sagas (ART-8a)
 status: draft
 owner: DEPSI
 version: "0.0.1"
 source: 02_artsn/04_cartographie-cible/index.md
-maps_to: ["cap-int-08"]
-implements: ["art-8a"]
-applies_to: ["prc-04", "prc-05", "prc-06"]
-related: ["enf-3", "cap-08", "vs-02"]
-tags: ["artsn", "niveau-1", "composant-applicatif", "cmp-07", "couche-4"]
+maps_to: ["CAP-INT-08"]
+implements: ["ART-8A"]
+applies_to: ["PRC-04", "PRC-05", "PRC-06"]
+related: ["ENF-3", "CAP-08", "VS-02"]
+tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-07", "couche-4"]
 ---
-# CMP-07 — Orchestrateur de parcours & Gestionnaire de Sagas (ART-8a)
+# Orchestrateur de parcours & Gestionnaire de Sagas (ART-8a)
 
-**Contenu normatif.** Orchestre les flux inter-systèmes en gérant les transactions distribuées (Sagas) et les compensations. Garantit la cohérence des parcours patient跨机构跨系统跨部门. Assure la résilience des workflows cliniques critiques.
+**Contenu normatif.** Ce composant orchestre les flux inter-systèmes en gérant les transactions distribuées (Sagas) et les compensations. Il garantit la cohérence des parcours patient à travers les institutions, les systèmes et les départements. Il assure la résilience des workflows cliniques critiques.
 
-**Discipline existentielle.** Point de coordination central pour tous les flux transactionnels : toute opération multi-systèmes transite par cet orchestrateur. Garantit l'atomicité logique des parcours complexes.
+**Discipline de mise en œuvre.** Il est le point de coordination central de tous les flux transactionnels : toute opération multi-systèmes transite par cet orchestrateur. Il garantit l'atomicité logique des parcours complexes.
 
-- **Rattachement** : [ART-8a](../chapitres/art-8a.md) (orchestrateur de parcours), [CAP-INT-08](../capacites/cap-int-08.md).
-- **Processus soutenus** : [PRC-04](../processus/prc-04.md) (soins), [PRC-05](../processus/prc-05.md) (pharmacie), [PRC-06](../processus/prc-06.md) (logistique).
-- **Statut : Stable.**
+- **Rattachement** : [ART-8a](../chapitres/art-8a.md) (orchestrateur de parcours), [CAP-INT-08: Confiance, sécurité et autorisation](../capacites/cap-int-08.md).
+- **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../processus/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../processus/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../processus/prc-06.md) (logistique).
+- **Statut : Stable.**

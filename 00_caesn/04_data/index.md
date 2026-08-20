@@ -1,4 +1,5 @@
 ---
+
 title: Architecture des données et de l'information sanitaire
 id: data-architecture
 domain: 04_data
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03
 owner: Direction des Systèmes d'Information
-tags: [données, architecture, sis]
+tags: ["données", "architecture", "sis"]
 ---
 
 # Architecture des données et de l'information sanitaire

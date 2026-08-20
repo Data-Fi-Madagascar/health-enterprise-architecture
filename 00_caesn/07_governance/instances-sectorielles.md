@@ -1,4 +1,5 @@
 ---
+
 title: "Instances sectorielles et autorités spécialisées"
 id: instances-sectorielles
 domain: 07_governance
@@ -6,7 +7,7 @@ version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
 owner: Secrétariat Général
-tags: [gouvernance, instances, sectorielles, autorites]
+tags: ["gouvernance", "instances", "sectorielles", "autorites"]
 ---
 
 # Instances sectorielles et autorités spécialisées
