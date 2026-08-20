@@ -1,6 +1,6 @@
 ---
 title: "Interopérabilité transfrontalière"
-id: PT-14-wrapper
+id: ptisn-PT-14
 domain: 03_ptisn
 version: "1.0.0"
 status: draft

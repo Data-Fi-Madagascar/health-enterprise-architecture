@@ -1,6 +1,6 @@
 ---
 title: Profil technique national
-id: ptisn-PT-08-echange-donnees-agregees
+id: ptisn-PT-08
 domain: 03_ptisn
 version: "1.0.0"
 status: draft

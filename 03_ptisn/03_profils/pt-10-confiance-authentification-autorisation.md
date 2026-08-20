@@ -1,6 +1,6 @@
 ---
 title: Profil technique national
-id: ptisn-PT-10-confiance-authentification-autorisation
+id: ptisn-PT-10
 domain: 03_ptisn
 version: "1.0.0"
 status: draft

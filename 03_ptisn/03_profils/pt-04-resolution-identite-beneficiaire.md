@@ -1,6 +1,6 @@
 ---
 title: Profil technique national
-id: ptisn-PT-04-resolution-identite-beneficiaire
+id: ptisn-PT-04
 domain: 03_ptisn
 version: "1.0.0"
 status: draft

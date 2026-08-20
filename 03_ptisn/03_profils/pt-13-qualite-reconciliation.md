@@ -1,6 +1,6 @@
 ---
 title: Profil technique national
-id: ptisn-PT-13-qualite-reconciliation
+id: ptisn-PT-13
 domain: 03_ptisn
 version: "1.0.0"
 status: draft

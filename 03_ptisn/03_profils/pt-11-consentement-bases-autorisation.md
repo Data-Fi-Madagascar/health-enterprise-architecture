@@ -1,6 +1,6 @@
 ---
 title: Profil technique national
-id: ptisn-PT-11-consentement-bases-autorisation
+id: ptisn-PT-11
 domain: 03_ptisn
 version: "1.0.0"
 status: draft

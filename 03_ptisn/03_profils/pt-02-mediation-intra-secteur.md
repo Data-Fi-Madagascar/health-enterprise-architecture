@@ -1,6 +1,6 @@
 ---
 title: Profil technique national
-id: ptisn-PT-02-mediation-intra-secteur
+id: ptisn-PT-02
 domain: 03_ptisn
 version: "1.0.0"
 status: draft

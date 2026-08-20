@@ -1,6 +1,6 @@
 ---
 title: Profil technique national
-id: ptisn-PT-03-catalogue-services-registre-contrats
+id: ptisn-PT-03
 domain: 03_ptisn
 version: "1.0.0"
 status: draft
