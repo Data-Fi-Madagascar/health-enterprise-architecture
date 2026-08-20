@@ -7,7 +7,7 @@ title: Cloisonnement inter-institutionnel et étanchéité des données (One Hea
 status: draft
 owner: DEPSI
 version: "0.0.1"
-source: 02_artsn/02_exigences-contextuelles/index.md
+envelope: 02_artsn/02_exigences-contextuelles/index.md
 maps_to: []
 implements: []
 applies_to: []
@@ -28,25 +28,25 @@ Le croisement de données massives entre Santé, Agriculture/Élevage et Environ
 
 ## Capabilités concernées
 
-- **CAP-14** — Interopérabilité, référentiels nationaux et infrastructure numérique partagée
-- **CAP-18** — Coordination intersectorielle (One Health)
-- **CAP-15** — Cybersécurité, confidentialité et gouvernance des données personnelles
+- [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../capabilites/cap-14.md) — Interopérabilité, référentiels nationaux et infrastructure numérique partagée
+- [CAP-18: Coordination intersectorielle (One Health)](../capabilites/cap-18.md) — Coordination intersectorielle (One Health)
+- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../capabilites/cap-15.md) — Cybersécurité, confidentialité et gouvernance des données personnelles
 
 ## Parties prenantes concernées
 
-- **PP-03** — Population
-- **PP-07** — District, région et Ministère
-- **PP-08** — Partenaires techniques et financiers
-- **PP-10** — Équipes techniques (DEPSI / SIS)
+- [PP-03: Population](../parties-prenantes/pp-03.md) — Population
+- [PP-07: District, région et Ministère](../parties-prenantes/pp-07.md) — District, région et Ministère
+- [PP-08: Partenaires techniques et financiers](../parties-prenantes/pp-08.md) — Partenaires techniques et financiers
+- [PP-10: Équipes techniques (DEPSI / SIS)](../parties-prenantes/pp-10.md) — Équipes techniques (DEPSI / SIS)
 
 ## Fondations et chapitres garants
 
-- **ART-0** — Accords de partage inter-institutionnels
+- [ART-0: Accords de partage inter-institutionnels](../chapitres/art-0.md) — Accords de partage inter-institutionnels
 - **ART-4b** — Bases d'autorisation
 - **ART-4d** — Référentiel géospatial et d'exploitation partagé
 - **F.2** — Préservation de la souveraineté intersectorielle
-- **ART-2** — Médiation et normalisation
-- **ART-6** — Analytique et restitution
+- [ART-2: Médiation et normalisation](../chapitres/art-2.md) — Médiation et normalisation
+- [ART-6: Analytique et restitution](../chapitres/art-6.md) — Analytique et restitution
 - **ART-8b** — Modélisation de relations en graphe
 - **ART-8d** — Chorégraphie inter-institutionnelle
-- **ART-4** — Référentiels de métadonnées de gestion
+- [ART-4: Référentiels de métadonnées de gestion](../chapitres/art-4.md) — Référentiels de métadonnées de gestion

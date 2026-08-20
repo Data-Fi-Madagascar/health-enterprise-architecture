@@ -7,7 +7,7 @@ title: Coordination intersectorielle (One Health)
 status: draft
 owner: Responsables de capabilités habilitantes
 version: "0.1.0"
-source: 00_caesn/03_capabilities/enabling.md
+envelope: 00_caesn/03_capabilities/enabling.md
 maps_to: ["CAP-INT-03"]
 implements: []
 applies_to: ["VS-02"]
@@ -25,7 +25,7 @@ La capabilité organise les échanges de données entre le secteur santé et les
 - **Surveillance conjointe** : détection précoce des événements de santé publique à interface homme-animal-environnement
 - **Riposte coordonnée** : orchestration des réponses inter-ministérielles
 
-Cette capabilité est **habilitante** : son absence bloque la surveillance sanitaire (VS-02) conformément aux obligations du RSI.
+Cette capabilité est **habilitante** : son absence bloque la surveillance sanitaire ([VS-02: Prévenir, détecter et répondre aux risques sanitaires](../flux-valeur/vs-02.md)) conformément aux obligations du RSI.
 
 ## Flux de valeur
 
@@ -33,9 +33,9 @@ Cette capabilité est **habilitante** : son absence bloque la surveillance sanit
 
 ## Rattachement ARTSN
 
-- **ART-0** — Accords de partage inter-institutionnels
-- **ART-8d** — Chorégraphie inter-institutionnelle
-- **PT-01** — Profil technique échange interinstitutionnel (X-Road)
+- [ART-0: Accords de partage inter-institutionnels](../chapitres/art-0.md)
+- [ART-8D: Chorégraphie inter-institutionnelle](../chapitres/art-8d.md)
+- [PT-01: Profil technique national](../profils/pt-01.md)
 
 ## Référentiels normatifs
 

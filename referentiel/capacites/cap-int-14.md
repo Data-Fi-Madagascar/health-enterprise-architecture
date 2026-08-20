@@ -7,7 +7,7 @@ status: active
 owner: DEPSI
 version: "0.5"
 family: intersectoriel
-source: 01_cnisn/02_capacites/index.md
+envelope: 01_cnisn/02_capacites/index.md
 maps_to: ["P-INT-01", "P-INT-05", "P-INT-10", "P-INT-14", "P-INT-16", "P-INT-22"]
 implements: []
 applies_to: []
@@ -76,7 +76,7 @@ Les secteurs concernés :
 
 | Exigence | Description |
 |----------|-------------|
-| **EXG-OH-01** | Tout échange intersectoriel doit être couvert par un accord explicite entre ministères (P-INT-10) |
+| **EXG-OH-01** | Tout échange intersectoriel doit être couvert par un accord explicite entre ministères ([P-INT-10: Accord préalable](../principes/p-int-10.md)) |
 | **EXG-OH-02** | Les identités humaines ne doivent jamais être croisées avec les identités animales |
 | **EXG-OH-03** | Les données agrégées croisées doivent être irréversiblement désanonymisées |
 | **EXG-OH-04** | Chaque secteur conserve la souveraineté sur ses données source |
@@ -86,12 +86,13 @@ Les secteurs concernés :
 
 ### Principes associés
 
-- **P-INT-01** (Autorité désignée) : chaque secteur reste l'autorité de ses données ;
-- **P-INT-05** (Contrat explicite) : tout flux intersectoriel nécessite un accord ;
-- **P-INT-10** (Accord préalable) : accord obligatoire entre ministères ;
-- **P-INT-14** (Base d'autorisation explicite) : base légale documentée par secteur ;
-- **P-INT-16** (Résidence) : les données restent dans leur secteur d'origine ;
-- **P-INT-22** (Connectivité contrainte) : les secteurs ont des niveaux de connectivité variables.
+
+- [P-INT-01: Autorité désignée](../principes/p-int-01.md) (Autorité désignée) : chaque secteur reste l'autorité de ses données ;
+- [P-INT-05: Contrat explicite](../principes/p-int-05.md) (Contrat explicite) : tout flux intersectoriel nécessite un accord ;
+- [P-INT-10: Accord préalable](../principes/p-int-10.md) (Accord préalable) : accord obligatoire entre ministères ;
+- [P-INT-14: Base d’autorisation explicite](../principes/p-int-14.md) (Base d'autorisation explicite) : base légale documentée par secteur ;
+- [P-INT-16: Résidence et non-réplication](../principes/p-int-16.md) (Résidence) : les données restent dans leur secteur d'origine ;
+- [P-INT-22: Fonctionnement en connectivité contrainte](../principes/p-int-22.md) (Connectivité contrainte) : les secteurs ont des niveaux de connectivité variables.
 
 ### Rattachement
 

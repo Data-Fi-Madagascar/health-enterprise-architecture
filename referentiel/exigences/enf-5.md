@@ -7,7 +7,7 @@ title: Coordination des processus complexes décentralisés et asynchrones
 status: draft
 owner: DEPSI
 version: "0.1"
-source: 02_artsn/02_exigences-contextuelles/index.md
+envelope: 02_artsn/02_exigences-contextuelles/index.md
 maps_to: []
 implements: []
 applies_to: []
@@ -28,19 +28,19 @@ Les parcours de soins critiques s’étendent sur plusieurs jours et impliquent 
 
 ## Capabilités concernées
 
-- **CAP-02** — Gestion du parcours patient, référence et contre-référence
-- **CAP-13** — Système d'information sanitaire, données et recherche
-- **CAP-16** — Gestion du portefeuille d'initiatives numériques
+- [CAP-02: Gestion du parcours patient, référence et contre-référence](../capabilites/cap-02.md) — Gestion du parcours patient, référence et contre-référence
+- [CAP-13: Système d'information sanitaire, données et recherche](../capabilites/cap-13.md) — Système d'information sanitaire, données et recherche
+- [CAP-16: Gestion du portefeuille d'initiatives numériques](../capabilites/cap-16.md) — Gestion du portefeuille d'initiatives numériques
 
 ## Parties prenantes concernées
 
-- **PP-01** — Patient et usager
-- **PP-05** — Agent de santé
-- **PP-06** — Formation sanitaire
+- [PP-01: Patient et usager](../parties-prenantes/pp-01.md) — Patient et usager
+- [PP-05: Agent de santé](../parties-prenantes/pp-05.md) — Agent de santé
+- [PP-06: Formation sanitaire](../parties-prenantes/pp-06.md) — Formation sanitaire
 
 ## Fondations et chapitres garants
 
 - **ART-8a** — Orchestration de processus borné
-- **ART-8** — Orchestration de processus
-- **ART-5** — Cohérence et qualité des données
-- **PT-14** — Interopérabilité transfrontalière
+- [ART-8: Orchestration de processus](../chapitres/art-8.md) — Orchestration de processus
+- [ART-5: Cohérence et qualité des données](../chapitres/art-5.md) — Cohérence et qualité des données
+- [PT-14: Interopérabilité transfrontalière](../profils/pt-14.md) — Interopérabilité transfrontalière

@@ -7,7 +7,7 @@ status: active
 owner: DEPSI
 version: "0.5"
 family: transfrontalier
-source: 01_cnisn/02_capacites/index.md
+envelope: 01_cnisn/02_capacites/index.md
 maps_to: ["P-INT-01", "P-INT-05", "P-INT-10", "P-INT-14", "P-INT-16", "P-INT-17", "P-INT-19", "CAP-15"]
 implements: []
 applies_to: []
@@ -84,7 +84,7 @@ Madagascar est membre de l'Union Africaine (UA), de la Commission Économique de
 
 | Exigence | Description |
 |----------|-------------|
-| **EXG-TF-01** | Tout flux transfrontalier doit être couvert par un accord explicite (P-INT-10) |
+| **EXG-TF-01** | Tout flux transfrontalier doit être couvert par un accord explicite ([P-INT-10: Accord préalable](../principes/p-int-10.md)) |
 | **EXG-TF-02** | Le consentement du patient doit être obtenu pour tout échange sortant sauf obligation légale |
 | **EXG-TF-03** | Seules les données minimisées nécessaires à la finalité peuvent être exportées |
 | **EXG-TF-04** | Tous les flux transfrontaliers doivent être journalisés et auditable |
@@ -95,13 +95,14 @@ Madagascar est membre de l'Union Africaine (UA), de la Commission Économique de
 
 ### Principes associés
 
-- **P-INT-01** (Autorité désignée) : l'autorité nationale reste l'autorité pour les données malgaches, même lors d'échanges ;
-- **P-INT-05** (Contrat explicite) : tout flux transfrontalier nécessite un accord bilatéral ou multilatéral ;
-- **P-INT-10** (Accord préalable) : accord obligatoire avant tout échange avec une institution étrangère ;
-- **P-INT-14** (Base d'autorisation explicite) : base légale documentée pour chaque type de flux sortant ;
-- **P-INT-16** (Résidence) : les contraintes de résidence s'appliquent aux flux transfrontaliers ;
-- **P-INT-17** (Minimisation) : minimisation renforcée pour les échanges internationaux ;
-- **P-INT-19** (Neutralité technologique) : le GDHCN est un cadre de confiance, pas un produit.
+
+- [P-INT-01: Autorité désignée](../principes/p-int-01.md) (Autorité désignée) : l'autorité nationale reste l'autorité pour les données malgaches, même lors d'échanges ;
+- [P-INT-05: Contrat explicite](../principes/p-int-05.md) (Contrat explicite) : tout flux transfrontalier nécessite un accord bilatéral ou multilatéral ;
+- [P-INT-10: Accord préalable](../principes/p-int-10.md) (Accord préalable) : accord obligatoire avant tout échange avec une institution étrangère ;
+- [P-INT-14: Base d’autorisation explicite](../principes/p-int-14.md) (Base d'autorisation explicite) : base légale documentée pour chaque type de flux sortant ;
+- [P-INT-16: Résidence et non-réplication](../principes/p-int-16.md) (Résidence) : les contraintes de résidence s'appliquent aux flux transfrontaliers ;
+- [P-INT-17: Minimisation](../principes/p-int-17.md) (Minimisation) : minimisation renforcée pour les échanges internationaux ;
+- [P-INT-19: Neutralité technologique](../principes/p-int-19.md) (Neutralité technologique) : le GDHCN est un cadre de confiance, pas un produit.
 
 ### Rattachement
 

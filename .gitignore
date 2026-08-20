@@ -8,3 +8,7 @@ dist/
 # Python
 __pycache__/
 *.pyc
+
+# Artefacts de cache graphify (jamais committés)
+graphify-out/cache/
+**/graphify-out/cache/

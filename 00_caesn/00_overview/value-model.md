@@ -94,23 +94,23 @@ Recevoir des soins accessibles, sûrs, continus et de qualité
 
 #### Capabilités mobilisées
 
-- **CAP-01** — Offre de soins et continuité des services
-- **CAP-02** — Gestion du parcours patient, référence et contre-référence
-- **CAP-07** — Protection financière, couverture santé universelle
-- **CAP-17** — Engagement patient et identité numérique
+- [CAP-01: Offre de soins et continuité des services](../../referentiel/capabilites/cap-01.md) — Offre de soins et continuité des services
+- [CAP-02: Gestion du parcours patient, référence et contre-référence](../../referentiel/capabilites/cap-02.md) — Gestion du parcours patient, référence et contre-référence
+- [CAP-07: Protection financière, couverture santé universelle](../../referentiel/capabilites/cap-07.md) — Protection financière, couverture santé universelle
+- [CAP-17: Engagement patient et identité numérique](../../referentiel/capabilites/cap-17.md) — Engagement patient et identité numérique
 
 #### Principes et fondations garants
 
-- **P-INT-04** — Historisation des références
-- **PA-11** — La protection des données personnelles est une condition de confiance
+- [P-INT-04: Historisation des références](../../referentiel/principes/p-int-04.md) — Historisation des références
+- [PA-11: La protection des données personnelles est une condition de confiance](../../referentiel/principes/pa-11.md) — La protection des données personnelles est une condition de confiance
 - **F.1** — Résilience face à la réalité géographique du pays
 - **F.5** — Protection et minimisation
 
 #### Articulations techniques
 
-- **PT-04** — Résolution d'identité du bénéficiaire
-- **PT-12** — Provenance, audit et traçabilité
-- **PT-02** — Médiation et échange inter-systèmes
+- [PT-04: Profil technique national](../../referentiel/profils/pt-04.md) — Résolution d'identité du bénéficiaire
+- [PT-12: Profil technique national](../../referentiel/profils/pt-12.md) — Provenance, audit et traçabilité
+- [PT-02: Profil technique national](../../referentiel/profils/pt-02.md) — Médiation et échange inter-systèmes
 
 #### Responsabilités et attentes
 
@@ -136,22 +136,22 @@ Accéder aux soins sans appauvrissement ni dépenses catastrophiques
 
 #### Capabilités mobilisées
 
-- **CAP-07** — Protection financière, couverture santé universelle
-- **CAP-01** — Offre de soins et continuité des services
-- **CAP-03** — Qualité, sécurité des soins et amélioration continue
+- [CAP-07: Protection financière, couverture santé universelle](../../referentiel/capabilites/cap-07.md) — Protection financière, couverture santé universelle
+- [CAP-01: Offre de soins et continuité des services](../../referentiel/capabilites/cap-01.md) — Offre de soins et continuité des services
+- [CAP-03: Qualité, sécurité des soins et amélioration continue](../../referentiel/capabilites/cap-03.md) — Qualité, sécurité des soins et amélioration continue
 
 #### Principes et fondations garants
 
-- **PD-VS03-01** — Les droits des bénéficiaires doivent être vérifiables au point de service
-- **PD-VS03-04** — Aucun mécanisme numérique de financement ne doit créer une barrière supplémentaire à l'accès aux soins
-- **PA-11** — La protection des données personnelles est une condition de confiance
+- [PD-VS03-01: Les droits des bénéficiaires doivent être vérifiables au point de service](../../referentiel/principes/pd-vs03-01.md) — Les droits des bénéficiaires doivent être vérifiables au point de service
+- [PD-VS03-04: Aucun mécanisme numérique de financement ne doit créer une barrière supplémentaire à l'accès aux soins](../../referentiel/principes/pd-vs03-04.md) — Aucun mécanisme numérique de financement ne doit créer une barrière supplémentaire à l'accès aux soins
+- [PA-11: La protection des données personnelles est une condition de confiance](../../referentiel/principes/pa-11.md) — La protection des données personnelles est une condition de confiance
 - **F.5** — Protection et minimisation
 
 #### Articulations techniques
 
-- **PT-04** — Résolution d'identité du bénéficiaire
-- **PT-12** — Provenance, audit et traçabilité
-- **PT-10** — Confiance, authentification et autorisation
+- [PT-04: Profil technique national](../../referentiel/profils/pt-04.md) — Résolution d'identité du bénéficiaire
+- [PT-12: Profil technique national](../../referentiel/profils/pt-12.md) — Provenance, audit et traçabilité
+- [PT-10: Profil technique national](../../referentiel/profils/pt-10.md) — Confiance, authentification et autorisation
 
 #### Responsabilités et attentes
 
@@ -177,22 +177,22 @@ La population est l'ensemble des habitants que le système de santé numérique 
 
 #### Capabilités mobilisées
 
-- **CAP-05** — Surveillance épidémiologique, alerte, investigation et riposte
-- **CAP-06** — Vaccination, prévention et promotion de la santé
-- **CAP-03** — Qualité, sécurité des soins et amélioration continue
+- [CAP-05: Surveillance épidémiologique, alerte, investigation et riposte](../../referentiel/capabilites/cap-05.md) — Surveillance épidémiologique, alerte, investigation et riposte
+- [CAP-06: Vaccination, prévention et promotion de la santé](../../referentiel/capabilites/cap-06.md) — Vaccination, prévention et promotion de la santé
+- [CAP-03: Qualité, sécurité des soins et amélioration continue](../../referentiel/capabilites/cap-03.md) — Qualité, sécurité des soins et amélioration continue
 
 #### Principes et fondations garants
 
-- **PD-VS02-03** — Les données communautaires et institutionnelles doivent converger
-- **PD-VS02-05** — La surveillance sanitaire est une capabilité nationale permanente
-- **PA-04** — Les données de santé sont un actif stratégique national
+- [PD-VS02-03: Les données communautaires et institutionnelles doivent converger](../../referentiel/principes/pd-vs02-03.md) — Les données communautaires et institutionnelles doivent converger
+- [PD-VS02-05: La surveillance sanitaire est une capabilité nationale permanente](../../referentiel/principes/pd-vs02-05.md) — La surveillance sanitaire est une capabilité nationale permanente
+- [PA-04: Les données de santé sont un actif stratégique national](../../referentiel/principes/pa-04.md) — Les données de santé sont un actif stratégique national
 - **F.6** — Observabilité
 
 #### Articulations techniques
 
-- **PT-12** — Provenance, audit et traçabilité
-- **PT-13** — Qualité et réconciliation
-- **PT-14** — Interopérabilité transfrontalière
+- [PT-12: Profil technique national](../../referentiel/profils/pt-12.md) — Provenance, audit et traçabilité
+- [PT-13: Profil technique national](../../referentiel/profils/pt-13.md) — Qualité et réconciliation
+- [PT-14: Interopérabilité transfrontalière](../../referentiel/profils/pt-14.md) — Interopérabilité transfrontalière
 
 #### Responsabilités et attentes
 
@@ -218,22 +218,22 @@ Participer à la santé et accéder à des services de proximité
 
 #### Capabilités mobilisées
 
-- **CAP-04** — Santé communautaire et engagement des communautés
-- **CAP-05** — Surveillance épidémiologique, alerte, investigation et riposte
-- **CAP-06** — Vaccination, prévention et promotion de la santé
+- [CAP-04: Santé communautaire et engagement des communautés](../../referentiel/capabilites/cap-04.md) — Santé communautaire et engagement des communautés
+- [CAP-05: Surveillance épidémiologique, alerte, investigation et riposte](../../referentiel/capabilites/cap-05.md) — Surveillance épidémiologique, alerte, investigation et riposte
+- [CAP-06: Vaccination, prévention et promotion de la santé](../../referentiel/capabilites/cap-06.md) — Vaccination, prévention et promotion de la santé
 
 #### Principes et fondations garants
 
-- **PD-VS01-04** — Le patient et la communauté sont acteurs du parcours de santé
-- **PD-VS02-03** — Les données communautaires et institutionnelles doivent converger
-- **PA-09** — L'architecture doit être adaptée aux réalités du terrain
+- [PD-VS01-04: Le patient et la communauté sont acteurs du parcours de santé](../../referentiel/principes/pd-vs01-04.md) — Le patient et la communauté sont acteurs du parcours de santé
+- [PD-VS02-03: Les données communautaires et institutionnelles doivent converger](../../referentiel/principes/pd-vs02-03.md) — Les données communautaires et institutionnelles doivent converger
+- [PA-09: L'architecture doit être adaptée aux réalités du terrain](../../referentiel/principes/pa-09.md) — L'architecture doit être adaptée aux réalités du terrain
 - **F.3** — Éradication des silos technologiques
 
 #### Articulations techniques
 
-- **PT-13** — Qualité et réconciliation
-- **PT-12** — Provenance, audit et traçabilité
-- **PT-04** — Résolution d'identité du bénéficiaire
+- [PT-13: Profil technique national](../../referentiel/profils/pt-13.md) — Qualité et réconciliation
+- [PT-12: Profil technique national](../../referentiel/profils/pt-12.md) — Provenance, audit et traçabilité
+- [PT-04: Profil technique national](../../referentiel/profils/pt-04.md) — Résolution d'identité du bénéficiaire
 
 #### Responsabilités et attentes
 
@@ -258,24 +258,24 @@ Disposer des ressources, compétences, outils et informations nécessaires
 
 #### Capabilités mobilisées
 
-- **CAP-09** — Gestion des ressources humaines en santé
-- **CAP-01** — Offre de soins et continuité des services
-- **CAP-03** — Qualité, sécurité des soins et amélioration continue
-- **CAP-10** — Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement
+- [CAP-09: Gestion des ressources humaines en santé](../../referentiel/capabilites/cap-09.md) — Gestion des ressources humaines en santé
+- [CAP-01: Offre de soins et continuité des services](../../referentiel/capabilites/cap-01.md) — Offre de soins et continuité des services
+- [CAP-03: Qualité, sécurité des soins et amélioration continue](../../referentiel/capabilites/cap-03.md) — Qualité, sécurité des soins et amélioration continue
+- [CAP-10: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement](../../referentiel/capabilites/cap-10.md) — Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement
 
 #### Principes et fondations garants
 
-- **PA-09** — L'architecture doit être adaptée aux réalités du terrain
-- **P-INT-22** — Fonctionnement en connectivité contrainte
+- [PA-09: L'architecture doit être adaptée aux réalités du terrain](../../referentiel/principes/pa-09.md) — L'architecture doit être adaptée aux réalités du terrain
+- [P-INT-22: Fonctionnement en connectivité contrainte](../../referentiel/principes/p-int-22.md) — Fonctionnement en connectivité contrainte
 - **F.1** — Résilience face à la réalité géographique du pays
-- **AA-05** — Les applications doivent fonctionner dans les conditions réelles du terrain
+- [AA-05: Les applications doivent fonctionner dans les conditions réelles du terrain](../../referentiel/principes/aa-05.md) — Les applications doivent fonctionner dans les conditions réelles du terrain
 
 #### Articulations techniques
 
-- **PT-05** — Registre des professionnels de santé
-- **PT-04** — Résolution d'identité du bénéficiaire
-- **PT-10** — Confiance, authentification et autorisation
-- **PT-13** — Qualité et réconciliation
+- [PT-05: Profil technique national](../../referentiel/profils/pt-05.md) — Registre des professionnels de santé
+- [PT-04: Profil technique national](../../referentiel/profils/pt-04.md) — Résolution d'identité du bénéficiaire
+- [PT-10: Profil technique national](../../referentiel/profils/pt-10.md) — Confiance, authentification et autorisation
+- [PT-13: Profil technique national](../../referentiel/profils/pt-13.md) — Qualité et réconciliation
 
 #### Responsabilités et attentes
 
@@ -301,23 +301,23 @@ Avoir les intrants, ressources humaines, équipements et données nécessaires
 
 #### Capabilités mobilisées
 
-- **CAP-01** — Offre de soins et continuité des services
-- **CAP-10** — Médicaments, vaccins, intrants et chaîne d'approvisionnement
-- **CAP-11** — Infrastructures et équipements
-- **CAP-13** — Système d'information sanitaire, données et recherche
+- [CAP-01: Offre de soins et continuité des services](../../referentiel/capabilites/cap-01.md) — Offre de soins et continuité des services
+- [CAP-10: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement](../../referentiel/capabilites/cap-10.md) — Médicaments, vaccins, intrants et chaîne d'approvisionnement
+- [CAP-11: Gestion des infrastructures, équipements et maintenance](../../referentiel/capabilites/cap-11.md) — Infrastructures et équipements
+- [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md) — Système d'information sanitaire, données et recherche
 
 #### Principes et fondations garants
 
-- **PA-09** — L'architecture doit être adaptée aux réalités du terrain
-- **P-INT-22** — Fonctionnement en connectivité contrainte
-- **PD-VS01-05** — L'accès numérique ne doit jamais devenir une barrière à l'accès aux soins
+- [PA-09: L'architecture doit être adaptée aux réalités du terrain](../../referentiel/principes/pa-09.md) — L'architecture doit être adaptée aux réalités du terrain
+- [P-INT-22: Fonctionnement en connectivité contrainte](../../referentiel/principes/p-int-22.md) — Fonctionnement en connectivité contrainte
+- [PD-VS01-05: L'accès numérique ne doit jamais devenir une barrière à l'accès aux soins](../../referentiel/principes/pd-vs01-05.md) — L'accès numérique ne doit jamais devenir une barrière à l'accès aux soins
 - **F.1** — Résilience face à la réalité géographique du pays
 
 #### Articulations techniques
 
-- **PT-06** — Référentiel des structures et services de santé
-- **PT-08** — Échange de données agrégées
-- **PT-04** — Résolution d'identité du bénéficiaire
+- [PT-06: Profil technique national](../../referentiel/profils/pt-06.md) — Référentiel des structures et services de santé
+- [PT-08: Profil technique national](../../referentiel/profils/pt-08.md) — Échange de données agrégées
+- [PT-04: Profil technique national](../../referentiel/profils/pt-04.md) — Résolution d'identité du bénéficiaire
 
 #### Responsabilités et attentes
 
@@ -343,23 +343,23 @@ Piloter, coordonner et améliorer la performance sur la base de données fiables
 
 #### Capabilités mobilisées
 
-- **CAP-08** — Gouvernance et planification
-- **CAP-13** — Système d'information sanitaire, données et recherche
-- **CAP-16** — Portefeuille d'initiatives
-- **CAP-03** — Qualité et sécurité des soins
+- [CAP-08: Gouvernance institutionnelle, planification, coordination et redevabilité](../../referentiel/capabilites/cap-08.md) — Gouvernance et planification
+- [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md) — Système d'information sanitaire, données et recherche
+- [CAP-16: Gestion du portefeuille d'initiatives numériques](../../referentiel/capabilites/cap-16.md) — Portefeuille d'initiatives
+- [CAP-03: Qualité, sécurité des soins et amélioration continue](../../referentiel/capabilites/cap-03.md) — Qualité et sécurité des soins
 
 #### Principes et fondations garants
 
-- **PD-VS04-01** — La décision sanitaire doit s'appuyer sur des données fiables, traçables et réutilisables
-- **PD-VS04-02** — Le pilotage doit mesurer les résultats, pas seulement les activités
-- **PA-03** — Les bénéfices doivent être mesurés, pas seulement déclarés
+- [PD-VS04-01: La décision sanitaire doit s'appuyer sur des données fiables, traçables et réutilisables](../../referentiel/principes/pd-vs04-01.md) — La décision sanitaire doit s'appuyer sur des données fiables, traçables et réutilisables
+- [PD-VS04-02: Le pilotage doit mesurer les résultats, pas seulement les activités](../../referentiel/principes/pd-vs04-02.md) — Le pilotage doit mesurer les résultats, pas seulement les activités
+- [PA-03: Les bénéfices doivent être mesurés, pas seulement déclarés](../../referentiel/principes/pa-03.md) — Les bénéfices doivent être mesurés, pas seulement déclarés
 - **F.6** — Observabilité
 
 #### Articulations techniques
 
-- **PT-08** — Échange de données agrégées
-- **PT-09** — Accès et exposition des données analytiques
-- **PT-03** — Catalogue des services et registre des contrats
+- [PT-08: Profil technique national](../../referentiel/profils/pt-08.md) — Échange de données agrégées
+- [PT-09: Profil technique national](../../referentiel/profils/pt-09.md) — Accès et exposition des données analytiques
+- [PT-03: Profil technique national](../../referentiel/profils/pt-03.md) — Catalogue des services et registre des contrats
 
 #### Responsabilités et attentes
 
@@ -385,22 +385,22 @@ Aligner leurs investissements sur les priorités nationales et vérifier les ré
 
 #### Capabilités mobilisées
 
-- **CAP-16** — Portefeuille d'initiatives
-- **CAP-12** — Finances publiques
-- **CAP-08** — Gouvernance et planification
+- [CAP-16: Gestion du portefeuille d'initiatives numériques](../../referentiel/capabilites/cap-16.md) — Portefeuille d'initiatives
+- [CAP-12: Finances publiques, budget et allocation des ressources](../../referentiel/capabilites/cap-12.md) — Finances publiques
+- [CAP-08: Gouvernance institutionnelle, planification, coordination et redevabilité](../../referentiel/capabilites/cap-08.md) — Gouvernance et planification
 
 #### Principes et fondations garants
 
-- **PD-VS04-04** — Les partenaires contribuent au portefeuille national, ils ne le fragmentent pas
-- **PD-VS04-03** — Le portefeuille numérique doit être gouverné par la valeur produite
-- **PA-10** — La souveraineté nationale du système d'information sanitaire est non négociable
+- [PD-VS04-04: Les partenaires contribuent au portefeuille national, ils ne le fragmentent pas](../../referentiel/principes/pd-vs04-04.md) — Les partenaires contribuent au portefeuille national, ils ne le fragmentent pas
+- [PD-VS04-03: Le portefeuille numérique doit être gouverné par la valeur produite](../../referentiel/principes/pd-vs04-03.md) — Le portefeuille numérique doit être gouverné par la valeur produite
+- [PA-10: La souveraineté nationale du système d'information sanitaire est non négociable](../../referentiel/principes/pa-10.md) — La souveraineté nationale du système d'information sanitaire est non négociable
 - **F.4** — Homologation obligatoire
 
 #### Articulations techniques
 
-- **PT-03** — Catalogue des services et registre des contrats
-- **PT-09** — Accès et exposition des données analytiques
-- **PT-12** — Provenance, audit et traçabilité
+- [PT-03: Profil technique national](../../referentiel/profils/pt-03.md) — Catalogue des services et registre des contrats
+- [PT-09: Profil technique national](../../referentiel/profils/pt-09.md) — Accès et exposition des données analytiques
+- [PT-12: Profil technique national](../../referentiel/profils/pt-12.md) — Provenance, audit et traçabilité
 
 #### Responsabilités et attentes
 
@@ -425,23 +425,23 @@ Définir les priorités, arbitrer les ressources et rendre compte des résultats
 
 #### Capabilités mobilisées
 
-- **CAP-08** — Gouvernance et planification
-- **CAP-16** — Portefeuille d'initiatives
-- **CAP-13** — Système d'information sanitaire, données et recherche
-- **CAP-15** — Cybersécurité et confidentialité
+- [CAP-08: Gouvernance institutionnelle, planification, coordination et redevabilité](../../referentiel/capabilites/cap-08.md) — Gouvernance et planification
+- [CAP-16: Gestion du portefeuille d'initiatives numériques](../../referentiel/capabilites/cap-16.md) — Portefeuille d'initiatives
+- [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md) — Système d'information sanitaire, données et recherche
+- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md) — Cybersécurité et confidentialité
 
 #### Principes et fondations garants
 
-- **PA-01** — La valeur pour la population est la finalité de tout investissement numérique
-- **PD-VS04-01** — La décision sanitaire doit s'appuyer sur des données fiables, traçables et réutilisables
-- **PA-12** — Toute initiative numérique doit être conforme au cadre national
+- [PA-01: La valeur pour la population est la finalité de tout investissement numérique](../../referentiel/principes/pa-01.md) — La valeur pour la population est la finalité de tout investissement numérique
+- [PD-VS04-01: La décision sanitaire doit s'appuyer sur des données fiables, traçables et réutilisables](../../referentiel/principes/pd-vs04-01.md) — La décision sanitaire doit s'appuyer sur des données fiables, traçables et réutilisables
+- [PA-12: Toute initiative numérique doit être conforme au cadre national](../../referentiel/principes/pa-12.md) — Toute initiative numérique doit être conforme au cadre national
 - **F.6** — Observabilité
 
 #### Articulations techniques
 
-- **PT-03** — Catalogue des services et registre des contrats
-- **PT-09** — Accès et exposition des données analytiques
-- **PT-12** — Provenance, audit et traçabilité
+- [PT-03: Profil technique national](../../referentiel/profils/pt-03.md) — Catalogue des services et registre des contrats
+- [PT-09: Profil technique national](../../referentiel/profils/pt-09.md) — Accès et exposition des données analytiques
+- [PT-12: Profil technique national](../../referentiel/profils/pt-12.md) — Provenance, audit et traçabilité
 
 #### Responsabilités et attentes
 
@@ -466,24 +466,24 @@ Concevoir, opérer et fiabiliser les systèmes numériques au service des flux d
 
 #### Capabilités mobilisées
 
-- **CAP-13** — Système d'information sanitaire, données et recherche
-- **CAP-14** — Interopérabilité et référentiels
-- **CAP-15** — Cybersécurité et confidentialité
-- **CAP-16** — Portefeuille d'initiatives
-- **CAP-17** — Engagement patient et identité
+- [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md) — Système d'information sanitaire, données et recherche
+- [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md) — Interopérabilité et référentiels
+- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md) — Cybersécurité et confidentialité
+- [CAP-16: Gestion du portefeuille d'initiatives numériques](../../referentiel/capabilites/cap-16.md) — Portefeuille d'initiatives
+- [CAP-17: Engagement patient et identité numérique](../../referentiel/capabilites/cap-17.md) — Engagement patient et identité
 
 #### Principes et fondations garants
 
-- **PA-06** — L'interopérabilité est une exigence non négociable
-- **PA-07** — Les référentiels nationaux sont des biens communs indivisibles
+- [PA-06: L'interopérabilité est une exigence non négociable](../../referentiel/principes/pa-06.md) — L'interopérabilité est une exigence non négociable
+- [PA-07: Les référentiels nationaux sont des biens communs indivisibles](../../referentiel/principes/pa-07.md) — Les référentiels nationaux sont des biens communs indivisibles
 - **F.3** — Éradication des silos technologiques
 - **F.4** — Homologation obligatoire
 
 #### Articulations techniques
 
-- **PT-02** — Médiation et intégration intra-secteur
-- **PT-06** — Référentiel des structures et services de santé
-- **PT-10** — Confiance, authentification et autorisation
+- [PT-02: Profil technique national](../../referentiel/profils/pt-02.md) — Médiation et intégration intra-secteur
+- [PT-06: Profil technique national](../../referentiel/profils/pt-06.md) — Référentiel des structures et services de santé
+- [PT-10: Profil technique national](../../referentiel/profils/pt-10.md) — Confiance, authentification et autorisation
 
 #### Responsabilités et attentes
 

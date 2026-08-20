@@ -7,7 +7,7 @@ title: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnemen
 status: draft
 owner: Responsables de capabilités habilitantes
 version: "0.0.1"
-source: 00_caesn/03_capabilities/enabling.md
+envelope: 00_caesn/03_capabilities/enabling.md
 maps_to: []
 implements: []
 applies_to: ["VS-01", "VS-02"]
@@ -28,7 +28,7 @@ Elle couvre :
 - **Distribution et logistique** : acheminement du stock central jusqu’au point de service
 - **Traçabilité et qualité** : lots, chaîne du froid et sécurité des produits
 
-Son absence expose le système à des ruptures de stock qui compromettent les soins (VS-01) et la prévention (VS-02).
+Son absence expose le système à des ruptures de stock qui compromettent les soins ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../flux-valeur/vs-01.md)) et la prévention ([VS-02: Prévenir, détecter et répondre aux risques sanitaires](../flux-valeur/vs-02.md)).
 
 ## Flux de valeur
 
@@ -37,9 +37,9 @@ Son absence expose le système à des ruptures de stock qui compromettent les so
 
 ## Rattachement ARTSN
 
-- **ART-4** — Référentiels de métadonnées de gestion
-- **PT-14** — Interopérabilité transfrontalière
-- **F.2** — Préservation de la souveraineté intersectorielle
+- [ART-4: Référentiels de métadonnées de gestion](../chapitres/art-4.md)
+- [PT-14: Interopérabilité transfrontalière](../profils/pt-14.md)
+- [F-2: Préservation de la souveraineté intersectorielle](../fondations/f-2.md)
 
 ## Maturité
 

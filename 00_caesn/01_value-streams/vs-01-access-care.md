@@ -81,7 +81,7 @@ Ce flux couvre l’ensemble du parcours d’un patient, depuis la reconnaissance
 
 #### Objectif
 
-Réaliser l'étape de valeur « Reconnaissance du besoin et orientation » du flux VS-01.
+Réaliser l'étape de valeur « Reconnaissance du besoin et orientation » du flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md).
 
 #### Entrées
 
@@ -109,7 +109,7 @@ Taux de recours aux soins, délai moyen d'accès à une formation sanitaire
 
 #### Objectif
 
-Réaliser l'étape de valeur « Accueil et enregistrement » du flux VS-01.
+Réaliser l'étape de valeur « Accueil et enregistrement » du flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md).
 
 #### Entrées
 
@@ -137,7 +137,7 @@ Taux de dossiers ouverts, délai d'enregistrement
 
 #### Objectif
 
-Réaliser l'étape de valeur « Consultation et diagnostic » du flux VS-01.
+Réaliser l'étape de valeur « Consultation et diagnostic » du flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md).
 
 #### Entrées
 
@@ -165,7 +165,7 @@ Taux de consultations avec diagnostic documenté
 
 #### Objectif
 
-Réaliser l'étape de valeur « Traitement et prise en charge » du flux VS-01.
+Réaliser l'étape de valeur « Traitement et prise en charge » du flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md).
 
 #### Entrées
 
@@ -193,7 +193,7 @@ Taux de disponibilité des médicaments traceurs
 
 #### Objectif
 
-Réaliser l'étape de valeur « Référence et contre-référence » du flux VS-01.
+Réaliser l'étape de valeur « Référence et contre-référence » du flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md).
 
 #### Entrées
 
@@ -221,7 +221,7 @@ Taux de référence complétée avec retour d'information
 
 #### Objectif
 
-Réaliser l'étape de valeur « Suivi et continuité des soins » du flux VS-01.
+Réaliser l'étape de valeur « Suivi et continuité des soins » du flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md).
 
 #### Entrées
 
@@ -249,7 +249,7 @@ Taux de patients perdus de vue, taux d'observance thérapeutique
 
 #### Objectif
 
-Réaliser l'étape de valeur « Amélioration de la qualité » du flux VS-01.
+Réaliser l'étape de valeur « Amélioration de la qualité » du flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md).
 
 #### Entrées
 

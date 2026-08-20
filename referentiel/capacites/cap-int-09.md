@@ -7,7 +7,7 @@ status: active
 owner: DEPSI
 version: "0.5"
 family: confiance
-source: 01_cnisn/02_capacites/index.md
+envelope: 01_cnisn/02_capacites/index.md
 maps_to: ["P-INT-14", "P-INT-15", "P-INT-16", "P-INT-17", "CAP-15"]
 implements: []
 applies_to: []
@@ -39,4 +39,8 @@ Le consentement est une base possible parmi plusieurs bases légales ou fonction
 
 ### Principes associés
 
-P-INT-14 à P-INT-17.
+- [P-INT-14: Base d’autorisation explicite](../principes/p-int-14.md)
+- [P-INT-15: Limitation à la finalité](../principes/p-int-15.md)
+- [P-INT-16: Résidence et non-réplication](../principes/p-int-16.md)
+- [P-INT-17: Minimisation](../principes/p-int-17.md)
+

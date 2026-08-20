@@ -10,16 +10,16 @@ Conventions (spec docs/superpowers/specs/2026-08-11-enveloppes-lisibilite-design
       <contenu généré>
       <!-- END:GENERATED -->
 - Sans `mode=table`, c'est une transclusion du corps complet :
-    - monographie : 1 objet attaché (`source:` == enveloppe), H1 supprimé, `##` conservés ;
+    - monographie : 1 objet attaché (`envelope:` == chemin de l'enveloppe), H1 supprimé, `##` conservés ;
     - catalogue    : N objets attachés, H1 -> ### et hiérarchie → #### maximale ;
     chaque objet reçoit la ligne *Rattachement : … · [fiche](…)*.
     Le mode est déduit du nombre d'objets attachés à l'enveloppe, sauf si `mode=` est
     précisé explicitement sur le bloc (ex. enveloppe mixte : `mode=monographie` + `mode=catalogue`).
 - Avec `mode=table`, un tableau `code | titre canonique | rattachement | statut | fiche`
   des objets qui matchent les motifs (réservé aux fichiers d'index et de matrices).
-- Le filtre `source=` s'applique aux objets attachés à l'enveloppe (D3 : champ `source:`),
+- Le filtre `source=` s'applique aux objets attachés à l'enveloppe (D3 : champ `envelope:`),
   sauf en `mode=table` où il sélectionne dans tout le référentiel.
-- Vérifications : union des blocs couvre tous les objets attachés ; `source:` inexistant
+- Vérifications : union des blocs couvre tous les objets attachés ; `envelope:` inexistant
   → erreur ; enveloppe sans marqueurs → erreur.
 
 Usage :
@@ -107,7 +107,7 @@ def load_objects():
                 "id": fields.get("id", ""),
                 "title": fields.get("title", ""),
                 "status": fields.get("status", ""),
-                "source": fields.get("source", ""),
+                "envelope": fields.get("envelope", ""),
                 "maps_to": fields.get("maps_to", []) or [],
                 "implements": fields.get("implements", []) or [],
                 "applies_to": fields.get("applies_to", []) or [],
@@ -193,7 +193,7 @@ def badge_for(obj):
 
 def render_transclusion(obj, mode, path_by_id):
     body = obj["body"]
-    to_dir = os.path.dirname(os.path.join(REPO_ROOT, obj["source"]))
+    to_dir = os.path.dirname(os.path.join(REPO_ROOT, obj["envelope"]))
     from_dir = os.path.dirname(os.path.join(REPO_ROOT, obj["rel"]))
     body = rewrite_links(body, from_dir, to_dir)
 
@@ -280,8 +280,8 @@ def find_blocks(text):
     return blocks
 
 
-def attached_objects(objects, source):
-    return [obj for obj in objects.values() if obj["source"] == source]
+def attached_objects(objects, envelope):
+    return [obj for obj in objects.values() if obj["envelope"] == envelope]
 
 
 def generate_file(objects, path_by_id, rel):
@@ -362,10 +362,10 @@ def main():
     objects = load_objects()
     path_by_id = id_to_path(objects)
 
-    sources = {obj["source"] for obj in objects.values()}
+    sources = {obj["envelope"] for obj in objects.values()}
     for source in sorted(sources):
         if not os.path.exists(os.path.join(REPO_ROOT, source)):
-            raise SystemExit("objet avec source: inexistante -> %s" % source)
+            raise SystemExit("objet avec envelope: inexistante -> %s" % source)
 
     targets = set(sources)
     for rel in list(targets) + ["03_ptisn/03_profils/pt-00-index.md",

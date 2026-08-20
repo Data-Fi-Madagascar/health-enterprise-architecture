@@ -16,14 +16,14 @@ tags: ["ptisn", "niveau-4", "profils", "PT-09"]
 
 ## 1. Capacité CNISN
 
-**CAP-INT-07 — Accès et exposition des données analytiques**
+[CAP-INT-07: Accès et exposition des données analytiques](../../referentiel/capacites/cap-int-07.md)
 
 ## 2. Chapitres ART applicables
 
-- ART-3 selon le profil retenu ;
-- ART-5 ;
-- ART-6 ;
-- ART-7.
+- [ART-3: Historisation événementielle et profils de déploiement](../../referentiel/chapitres/art-3.md) selon le profil retenu ;
+- [ART-5: Cohérence et qualité des données](../../referentiel/chapitres/art-5.md) ;
+- [ART-6: Analytique et restitution](../../referentiel/chapitres/art-6.md) ;
+- [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../referentiel/chapitres/art-7.md).
 
 ## 3. Services nationaux
 

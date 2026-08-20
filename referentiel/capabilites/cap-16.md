@@ -7,7 +7,7 @@ title: Gestion du portefeuille d'initiatives numériques
 status: draft
 owner: Responsables de capabilités habilitantes
 version: "0.0.1"
-source: 00_caesn/03_capabilities/enabling.md
+envelope: 00_caesn/03_capabilities/enabling.md
 maps_to: []
 implements: []
 applies_to: ["VS-03", "VS-04"]
@@ -25,7 +25,7 @@ La capabilité gouverne les investissements numériques du secteur : priorisatio
 - **Suivi et évaluation** : pilotage, tableaux de bord et redevabilité
 - **Rationalisation** : évitement des doublons et gouvernance du portefeuille
 
-Ces quatre capabilités (CAP-13, CAP-14, CAP-15, CAP-16) constituent le **socle commun (architecture runway)** dont l’absence bloque de nombreuses initiatives.
+Ces quatre capabilités ([CAP-13: Système d'information sanitaire, données et recherche](cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](cap-14.md), [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](cap-15.md), [CAP-16: Gestion du portefeuille d'initiatives numériques](cap-16.md)) constituent le **socle commun (architecture runway)** dont l’absence bloque de nombreuses initiatives.
 
 ## Flux de valeur
 
@@ -34,9 +34,9 @@ Ces quatre capabilités (CAP-13, CAP-14, CAP-15, CAP-16) constituent le **socle 
 
 ## Rattachement ARTSN
 
-- **ART-9** — Garanties transactionnelles fortes
-- **F.4** — Homologation obligatoire
-- **F.6** — Observabilité
+- [ART-9: Garanties transactionnelles fortes](../chapitres/art-9.md)
+- [F-4: Homologation obligatoire](../fondations/f-4.md)
+- [F-6: Observabilité](../fondations/f-6.md)
 
 ## Maturité
 

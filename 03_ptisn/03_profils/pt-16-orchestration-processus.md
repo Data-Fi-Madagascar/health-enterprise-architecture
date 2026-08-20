@@ -16,12 +16,12 @@ tags: ["ptisn", "niveau-4", "profils", "PT-16"]
 
 ## 1. Capacité CNISN
 
-**CAP-INT-03 — Échange et médiation inter-systèmes**
+[CAP-INT-03: Échange et médiation inter-systèmes](../../referentiel/capacites/cap-int-03.md)
 
 ## 2. Chapitres ART applicables
 
 - ART-8a — orchestration de processus borné ;
-- ART-7 — sécurité.
+- [ART-7: sécurité.](../../referentiel/chapitres/art-7.md)curité.
 
 ## 3. Service national
 
@@ -67,7 +67,7 @@ Une solution alternative doit au minimum supporter :
 - observabilité des processus en cours ;
 - reprise en cas de défaillance ;
 - déploiement de workflows indépendants ;
-- intégration avec le médiateur sectoriel (PT-02).
+- intégration avec le médiateur sectoriel ([PT-02: Profil technique national](../../referentiel/profils/pt-02.md)).
 
 ## 7. Articulation avec la médiation
 
@@ -111,9 +111,9 @@ stop
 @enduml
 ```
 
-Le médiateur (PT-02) assure le routage et la transformation des messages.
+Le médiateur ([PT-02: Profil technique national](../../referentiel/profils/pt-02.md)) assure le routage et la transformation des messages.
 
-L'orchestrateur (PT-16) coordonne les processus métier multi-étapes et garantit la cohérence des parcours.
+L'orchestrateur ([PT-16: Orchestration de processus bornés](../../referentiel/profils/pt-16.md)) coordonne les processus métier multi-étapes et garantit la cohérence des parcours.
 
 ------------------------------------------------------------------------
 

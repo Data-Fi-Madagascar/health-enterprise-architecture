@@ -7,7 +7,7 @@ title: Intégrité des flux et traçabilité des valeurs
 status: draft
 owner: DEPSI
 version: "0.0.1"
-source: 02_artsn/02_exigences-contextuelles/index.md
+envelope: 02_artsn/02_exigences-contextuelles/index.md
 maps_to: []
 implements: []
 applies_to: []
@@ -26,19 +26,19 @@ Le déploiement national de la gratuité ciblée, des subventions et de la CSU c
 
 ## Capabilités concernées
 
-- **CAP-07** — Protection financière, couverture santé universelle
-- **CAP-10** — Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement
-- **CAP-12** — Finances publiques, budget et allocation des ressources
-- **CAP-13** — Système d'information sanitaire, données et recherche
+- [CAP-07: Protection financière, couverture santé universelle](../capabilites/cap-07.md) — Protection financière, couverture santé universelle
+- [CAP-10: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement](../capabilites/cap-10.md) — Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement
+- [CAP-12: Finances publiques, budget et allocation des ressources](../capabilites/cap-12.md) — Finances publiques, budget et allocation des ressources
+- [CAP-13: Système d'information sanitaire, données et recherche](../capabilites/cap-13.md) — Système d'information sanitaire, données et recherche
 
 ## Parties prenantes concernées
 
-- **PP-02** — Ménage et famille
-- **PP-06** — Formation sanitaire
-- **PP-08** — Partenaires techniques et financiers
+- [PP-02: Ménage et famille](../parties-prenantes/pp-02.md) — Ménage et famille
+- [PP-06: Formation sanitaire](../parties-prenantes/pp-06.md) — Formation sanitaire
+- [PP-08: Partenaires techniques et financiers](../parties-prenantes/pp-08.md) — Partenaires techniques et financiers
 
 ## Fondations et chapitres garants
 
-- **ART-9** — Garanties transactionnelles fortes
+- [ART-9: Garanties transactionnelles fortes](../chapitres/art-9.md) — Garanties transactionnelles fortes
 - **ART-4c** — Éligibilité et couverture
 - **ART-8c** — Agrégation par lot

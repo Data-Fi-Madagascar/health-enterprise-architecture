@@ -7,7 +7,7 @@ title: Éligibilité et couverture
 status: draft
 owner: DEPSI
 version: "0.0.1"
-source: 02_artsn/03_chapitres/art-4c-eligibilite-couverture.md
+envelope: 02_artsn/03_chapitres/art-4c-eligibilite-couverture.md
 maps_to: ["CAP-07"]
 implements: []
 applies_to: ["ENF-2", "ENF-1"]

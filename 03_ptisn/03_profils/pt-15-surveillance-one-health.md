@@ -28,7 +28,7 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 | **Partenaires** | OIE/WAHIS, FAO, GBIF, WMO, CDC Africa, instituts nationaux vétérinaires |
 | **Flux** | Surveillance zoonotique, alertes One Health, données climatiques, biodiversité |
 | **Standards** | FHIR R4, mADX, OIE-WAHIS, GBIF, WMO BUFR |
-| **Chapitres ARTSN** | ART-11 (Coordination intersectorielle), ART-0 (Accords), ART-4d (Référentiels vétérinaires), ART-8b (Surveillance) |
+| **Chapitres ARTSN** | [ART-11: Coordination intersectorielle](../../referentiel/chapitres/art-11.md), [ART-0: Accords](../../referentiel/chapitres/art-0.md), ART-4d (Référentiels vétérinaires), ART-8b (Surveillance) |
 
 ## Standards et profils applicables
 
@@ -57,7 +57,7 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 | Propriété | Valeur |
 |-----------|--------|
 | **Producteur** | Instituts vétérinaires nationaux |
-| **Consommateur** | CMP-04 (Moteur analytique) |
+| **Consommateur** | [CMP-04: Moteur analytique](../../referentiel/composants/cmp-04.md) |
 | **Format** | OIE-WAHIS API / FHIR Observation |
 | **Protocole** | REST (synchrone) |
 | **Fréquence** | Hebdomadaire + alertes temps réel |
@@ -67,7 +67,7 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 | Propriété | Valeur |
 |-----------|--------|
 | **Producteur** | GBIF, instituts de recherche |
-| **Consommateur** | CMP-04 (Moteur analytique) |
+| **Consommateur** | [CMP-04: Moteur analytique](../../referentiel/composants/cmp-04.md) |
 | **Format** | GBIF API / Darwin Core |
 | **Protocole** | REST |
 | **Fréquence** | Mensuelle |
@@ -77,7 +77,7 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 | Propriété | Valeur |
 |-----------|--------|
 | **Producteur** | Stations météo, WMO |
-| **Consommateur** | CMP-04 (Moteur analytique) |
+| **Consommateur** | [CMP-04: Moteur analytique](../../referentiel/composants/cmp-04.md) |
 | **Format** | WMO BUFR / FHIR Observation |
 | **Protocole** | REST / FTP |
 | **Fréquence** | Quotidienne |
@@ -86,8 +86,8 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 
 | Propriété | Valeur |
 |-----------|--------|
-| **Producteur** | CMP-04 (Moteur analytique) |
-| **Consommateur** | CMP-02 (Centre de commande), OIE, FAO, OMS |
+| **Producteur** | [CMP-04: Moteur analytique](../../referentiel/composants/cmp-04.md) |
+| **Consommateur** | [CMP-02: Centre de commande](../../referentiel/composants/cmp-02.md), OIE, FAO, OMS |
 | **Format** | FHIR Communication (priority: urgent) |
 | **Protocole** | REST + SMS |
 | **Fréquence** | Événementielle (alertes) |
@@ -128,9 +128,9 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 | GBIF | Standard international | ✅ Disponible |
 | WMO | Standard international | ✅ Disponible |
 | FHIR R4 | Standard | ✅ Validé |
-| ART-11 | Chapitre ARTSN | Active |
-| CAP-INT-14 | Capacité CNISN | Créée |
-| CAP-18 | Capabilité CAESN | Active |
+| [ART-11: Coordination intersectorielle](../../referentiel/chapitres/art-11.md) | Chapitre ARTSN | Active |
+| [CAP-INT-14: Échanges intersectoriels One Health](../../referentiel/capacites/cap-int-14.md) | Capacité CNISN | Créée |
+| [CAP-18: Coordination intersectorielle (One Health)](../../referentiel/capabilites/cap-18.md) | Capabilité CAESN | Active |
 
 *Rattachement : CAP-INT-14, CAP-18, CAP-05, ART-11, ART-0, ART-4D, ART-8B, CMP-02, CMP-04, CMP-06 · fiche PT-15*
 

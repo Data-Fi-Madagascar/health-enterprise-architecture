@@ -16,14 +16,14 @@ tags: ["ptisn", "niveau-4", "profils", "PT-03"]
 
 ## 1. Capacité CNISN
 
-**CAP-INT-06 — Catalogue des services et registre des contrats**
+[CAP-INT-06: Catalogue des services et registre des contrats](../../referentiel/capacites/cap-int-06.md)
 
 ## 2. Chapitres ART applicables
 
 - F.3 — versionnement ;
 - F.4 — rattachement aux capacités ;
-- ART-1 — interfaces ;
-- ART-2 — contrats canoniques.
+- [ART-1: interfaces](../../referentiel/chapitres/art-1.md)erfaces ;
+- [ART-2: contrats canoniques.](../../referentiel/chapitres/art-2.md)niques.
 
 ## 3. Services nationaux
 

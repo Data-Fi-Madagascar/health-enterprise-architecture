@@ -6,7 +6,7 @@ niveau: "0"
 status: draft
 version: "1.0"
 owner: DEPSI
-source: referentiel/_schema.md
+envelope: referentiel/_schema.md
 tags: ["referentiel", "schema", "gouvernance"]
 ---
 
@@ -58,7 +58,7 @@ title: P-INT-01 — Autorité désignée
 status: active            # draft | active | deprecated | candidate
 owner: DEPSI              # entité responsable
 version: "0.5"            # version héritée de la source
-source: 01_cnisn/01_principes/index.md   # chemin de provenance pré-refactor
+envelope: 01_cnisn/01_principes/index.md   # chemin de provenance pré-refactor
 maps_to: ["CAP-INT-01"]   # correspondance vers autre référentiel (id)
 implements: []          # chapitre/objet mis en œuvre
 applies_to: []          # objets auxquels il s'applique

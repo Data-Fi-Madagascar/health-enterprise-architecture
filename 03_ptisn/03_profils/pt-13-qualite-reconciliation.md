@@ -16,13 +16,13 @@ tags: ["ptisn", "niveau-4", "profils", "PT-13"]
 
 ## 1. Capacités CNISN
 
-- CAP-INT-11 — Qualité et réconciliation.
+- [CAP-INT-11: Qualité et réconciliation.](../../referentiel/capacites/cap-int-11.md)onciliation.
 
 ## 2. Chapitres ART applicables
 
-- ART-4 ;
-- ART-5 ;
-- ART-6.
+- [ART-4: Référentiels de métadonnées de gestion](../../referentiel/chapitres/art-4.md) ;
+- [ART-5: Cohérence et qualité des données](../../referentiel/chapitres/art-5.md) ;
+- [ART-6: Analytique et restitution](../../referentiel/chapitres/art-6.md).
 
 ## 3. Services nationaux
 

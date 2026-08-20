@@ -7,7 +7,7 @@ title: Offre de soins et continuité des services
 status: draft
 owner: Responsables de capabilités métier
 version: "0.0.1"
-source: 00_caesn/03_capabilities/business.md
+envelope: 00_caesn/03_capabilities/business.md
 maps_to: []
 implements: []
 applies_to: ["VS-01"]
@@ -25,7 +25,7 @@ La capabilité garantit que chaque citoyen accède à des services de santé ess
 - **Continuité de la prise en charge** : maintien du suivi du patient d'un niveau à l'autre
 - **Qualité minimale garantie** : respect des normes de soins et de sécurité
 
-Elle est **pivot** pour le parcours de soins et conditionne le bon déroulement du flux de valeur VS-01.
+Elle est **pivot** pour le parcours de soins et conditionne le bon déroulement du flux de valeur [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../flux-valeur/vs-01.md).
 
 ## Flux de valeur
 
@@ -33,10 +33,10 @@ Elle est **pivot** pour le parcours de soins et conditionne le bon déroulement 
 
 ## Rattachement ARTSN
 
-- **F.1** — Résilience face à la réalité géographique du pays
-- **ART-4** — Référentiels de métadonnées de gestion
-- **ART-1** — Intégration et ingestion
-- **PT-06** — Référentiel des structures et services
+- [F-1: Résilience face à la réalité géographique du pays](../fondations/f-1.md)
+- [ART-4: Référentiels de métadonnées de gestion](../chapitres/art-4.md)
+- [ART-1: Intégration et ingestion](../chapitres/art-1.md)
+- [PT-06: Profil technique national](../profils/pt-06.md)
 
 ## Maturité
 

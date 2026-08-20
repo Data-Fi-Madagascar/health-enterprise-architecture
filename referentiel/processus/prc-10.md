@@ -6,7 +6,7 @@ title: Planification et allocation des ressources
 status: draft
 owner: Secrétariat Général
 version: "0.0.1"
-source: 00_caesn/01_value-streams/vs-04-system-steering.md
+envelope: 00_caesn/01_value-streams/vs-04-system-steering.md
 maps_to: []
 implements: []
 applies_to: ["CAP-03", "CAP-08", "CAP-09", "CAP-12", "CAP-13", "CAP-14", "CAP-15", "CAP-16", "PP-03", "PP-07", "PP-08", "PP-09", "PP-10", "CMP-01", "CMP-12"]

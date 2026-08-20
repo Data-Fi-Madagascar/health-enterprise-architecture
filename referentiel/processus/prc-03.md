@@ -6,7 +6,7 @@ title: Continuité, suivi et qualité des soins
 status: draft
 owner: Direction des soins
 version: "0.0.1"
-source: 00_caesn/01_value-streams/vs-01-access-care.md
+envelope: 00_caesn/01_value-streams/vs-01-access-care.md
 maps_to: []
 implements: []
 applies_to: ["CAP-01", "CAP-02", "CAP-03", "CAP-04", "CAP-09", "CAP-10", "CAP-11", "CAP-13", "CAP-14", "CAP-15", "PP-01", "PP-02", "PP-04", "PP-05", "PP-06"]

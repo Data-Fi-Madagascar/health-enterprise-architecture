@@ -6,7 +6,7 @@ title: Responsabilité de la donnée
 status: active
 owner: DEPSI
 version: "0.5"
-source: 01_cnisn/01_principes/index.md
+envelope: 01_cnisn/01_principes/index.md
 maps_to: ["CAP-13"]
 implements: []
 applies_to: []

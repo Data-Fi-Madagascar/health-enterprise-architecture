@@ -7,7 +7,7 @@ title: Gestion des infrastructures, équipements et maintenance
 status: draft
 owner: Responsables de capabilités habilitantes
 version: "0.0.1"
-source: 00_caesn/03_capabilities/enabling.md
+envelope: 00_caesn/03_capabilities/enabling.md
 maps_to: []
 implements: []
 applies_to: ["VS-01", "VS-02"]
@@ -28,7 +28,7 @@ Elle couvre :
 - **Maintenance et réparations** : maintenance préventive et interventions curatives
 - **Cartographie et localisation** : référencement géospatial des sites et équipements
 
-Son absence rend impossible l’acte clinique, même lorsque le personnel et les produits sont disponibles (VS-01, VS-02).
+Son absence rend impossible l’acte clinique, même lorsque le personnel et les produits sont disponibles ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../flux-valeur/vs-01.md), [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../flux-valeur/vs-02.md)).
 
 ## Flux de valeur
 
@@ -37,9 +37,9 @@ Son absence rend impossible l’acte clinique, même lorsque le personnel et les
 
 ## Rattachement ARTSN
 
-- **ART-4** — Référentiels de métadonnées de gestion
-- **ART-4d** — Référentiel géospatial et d’exploitation partagé
-- **F.1** — Résilience face à la réalité géographique du pays
+- [ART-4: Référentiels de métadonnées de gestion](../chapitres/art-4.md)
+- [ART-4D: Référentiel géospatial et d'exploitation partagé](../chapitres/art-4d.md)
+- [F-1: Résilience face à la réalité géographique du pays](../fondations/f-1.md)
 
 ## Maturité
 

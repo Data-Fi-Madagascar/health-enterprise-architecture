@@ -16,15 +16,15 @@ tags: ["ptisn", "niveau-4", "profils", "PT-02"]
 
 ## 1. Capacité CNISN
 
-**CAP-INT-03 — Échange et médiation inter-systèmes**
+[CAP-INT-03: Échange et médiation inter-systèmes](../../referentiel/capacites/cap-int-03.md)
 
 ## 2. Chapitres ART applicables
 
-- ART-1 — intégration ;
-- ART-2 — médiation ;
-- ART-5 — qualité et réconciliation ;
-- ART-7 — sécurité ;
-- ART-8 — coordination lorsque applicable.
+- [ART-1: intégration](../../referentiel/chapitres/art-1.md)gration ;
+- [ART-2: médiation](../../referentiel/chapitres/art-2.md)diation ;
+- [ART-5: qualité et réconciliation](../../referentiel/chapitres/art-5.md)liation ;
+- [ART-7: sécurité](../../referentiel/chapitres/art-7.md)écurité ;
+- [ART-8: coordination lorsque applicable.](../../referentiel/chapitres/art-8.md)icable.
 
 ## 3. Service national
 

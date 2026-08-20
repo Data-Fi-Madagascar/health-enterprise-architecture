@@ -6,7 +6,7 @@ title: Tableaux de bord & Portails nationaux (performance, CSU, ressources, veil
 status: draft
 owner: DEPSI
 version: "0.0.1"
-source: 02_artsn/04_cartographie-cible/index.md
+envelope: 02_artsn/04_cartographie-cible/index.md
 maps_to: ["CAP-INT-07", "CAP-INT-11"]
 implements: ["ART-6"]
 applies_to: ["PRC-10", "PRC-11", "PRC-12"]
@@ -15,7 +15,7 @@ tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-01", "couche-6"]
 ---
 # Tableaux de bord & Portails nationaux
 
-**Contenu normatif.** Ce composant agrège les projections analytiques (Couche 5) et expose des tableaux de bord unifiés pour le pilotage national : performance sanitaire, suivi CSU, gestion des ressources et veille environnementale. L'accès y est cloisonné par profil (décideurs, SIS, partenaires). Il interopère avec l'entrepôt Lakehouse (CMP-03) et le moteur analytique (CMP-04).
+**Contenu normatif.** Ce composant agrège les projections analytiques (Couche 5) et expose des tableaux de bord unifiés pour le pilotage national : performance sanitaire, suivi CSU, gestion des ressources et veille environnementale. L'accès y est cloisonné par profil (décideurs, SIS, partenaires). Il interopère avec l'entrepôt Lakehouse ([CMP-03: Entrepôt Lakehouse & Projections analytiques (pipeline ETL, Lakehouse, projections)](cmp-03.md)) et le moteur analytique ([CMP-04: Moteur analytique & IA (IA prédictive, routeur alertes, Grand Livre)](cmp-04.md)).
 
 **Discipline de mise en œuvre.** Il constitue la seule source de vérité décisionnelle pour l'État ; tout indicateur officiel y transite. Il garantit l'unicité des métriques et la traçabilité des calculs.
 

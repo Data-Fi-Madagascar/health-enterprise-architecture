@@ -7,7 +7,7 @@ title: Référentiel géospatial et d'exploitation partagé
 status: draft
 owner: DEPSI
 version: "0.0.1"
-source: 02_artsn/03_chapitres/art-4d-referentiel-geospatial.md
+envelope: 02_artsn/03_chapitres/art-4d-referentiel-geospatial.md
 maps_to: []
 implements: []
 applies_to: ["ENF-4"]

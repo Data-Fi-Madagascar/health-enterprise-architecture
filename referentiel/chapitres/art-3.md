@@ -7,7 +7,7 @@ title: Historisation événementielle et profils de déploiement
 status: draft
 owner: DEPSI
 version: "0.0.1"
-source: 02_artsn/03_chapitres/art-3-historisation-evenementielle.md
+envelope: 02_artsn/03_chapitres/art-3-historisation-evenementielle.md
 maps_to: ["CAP-13"]
 implements: []
 applies_to: ["ENF-1"]

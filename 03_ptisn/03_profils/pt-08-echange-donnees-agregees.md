@@ -16,15 +16,15 @@ tags: ["ptisn", "niveau-4", "profils", "PT-08"]
 
 ## 1. Capacités CNISN
 
-- **CAP-INT-03 — Échange et médiation inter-systèmes**
-- contribution à **CAP-INT-07 — Accès et exposition des données analytiques**
+- [CAP-INT-03: Échange et médiation inter-systèmes](../../referentiel/capacites/cap-int-03.md)
+- contribution à [CAP-INT-07: Accès et exposition des données analytiques](../../referentiel/capacites/cap-int-07.md)
 
 ## 2. Chapitres ART applicables
 
-- ART-1 ;
-- ART-2 ;
-- ART-5 ;
-- ART-6.
+- [ART-1: Intégration et ingestion](../../referentiel/chapitres/art-1.md) ;
+- [ART-2: Médiation et normalisation](../../referentiel/chapitres/art-2.md) ;
+- [ART-5: Cohérence et qualité des données](../../referentiel/chapitres/art-5.md) ;
+- [ART-6: Analytique et restitution](../../referentiel/chapitres/art-6.md).
 
 ## 3. Service national
 

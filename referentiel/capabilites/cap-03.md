@@ -7,7 +7,7 @@ title: Qualité, sécurité des soins et amélioration continue
 status: draft
 owner: Responsables de capabilités métier
 version: "0.0.1"
-source: 00_caesn/03_capabilities/business.md
+envelope: 00_caesn/03_capabilities/business.md
 maps_to: []
 implements: []
 applies_to: ["VS-01", "VS-04"]
@@ -25,7 +25,7 @@ La capabilité mesure, améliore et sécurise la qualité des services de santé
 - **Amélioration continue** : boucle de retour des données vers des actions correctives
 - **Pilotage de la performance** : tableaux de bord et restitution aux décideurs
 
-Elle alimente à la fois la qualité des soins (VS-01) et le pilotage du système (VS-04).
+Elle alimente à la fois la qualité des soins ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../flux-valeur/vs-01.md)) et le pilotage du système ([VS-04: Piloter, coordonner et améliorer la performance du système de santé](../flux-valeur/vs-04.md)).
 
 ## Flux de valeur
 
@@ -34,10 +34,10 @@ Elle alimente à la fois la qualité des soins (VS-01) et le pilotage du systèm
 
 ## Rattachement ARTSN
 
-- **ART-5** — Cohérence et qualité des données
-- **ART-6** — Analytique et restitution
-- **PT-13** — Qualité et réconciliation
-- **PT-09** — Analytique et exposition de données
+- [ART-5: Cohérence et qualité des données](../chapitres/art-5.md)
+- [ART-6: Analytique et restitution](../chapitres/art-6.md)
+- [PT-13: Profil technique national](../profils/pt-13.md)
+- [PT-09: Profil technique national](../profils/pt-09.md)
 
 ## Maturité
 

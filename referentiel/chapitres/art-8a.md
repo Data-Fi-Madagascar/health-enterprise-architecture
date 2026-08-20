@@ -7,7 +7,7 @@ title: Orchestration de processus borné
 status: draft
 owner: DEPSI
 version: "0.0.1"
-source: 02_artsn/03_chapitres/art-8a-orchestration-processus-borne.md
+envelope: 02_artsn/03_chapitres/art-8a-orchestration-processus-borne.md
 maps_to: ["CAP-13", "CAP-14"]
 implements: []
 applies_to: ["ENF-5"]

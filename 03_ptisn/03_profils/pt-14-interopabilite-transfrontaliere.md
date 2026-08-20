@@ -25,7 +25,7 @@ Ce profil technique définit les standards, protocoles et configurations pour le
 | **Partenaires** | SADC (Afrique australe), UA/CEUA (Afrique), OMS AFRO, OIF, CDC Africa |
 | **Flux** | Surveillance épidémique régionale, actes médicaux transfrontaliers, logistique pharmaceutique, recherche clinique |
 | **Standards** | GDHCN (Trust Anchor), FHIR R4, HL7 v2.x (legacy), OID (ISO), IHE |
-| **Chapitres ARTSN** | ART-7 (Sécurité), ART-0 (Accords), ART-1 (Intégration) |
+| **Chapitres ARTSN** | [ART-7: Sécurité](../../referentiel/chapitres/art-7.md), [ART-0: Accords](../../referentiel/chapitres/art-0.md), [ART-1: Intégration](../../referentiel/chapitres/art-1.md) |
 
 ## Standards et profils applicables
 
@@ -61,7 +61,7 @@ Ce profil technique définit les standards, protocoles et configurations pour le
 
 | Propriété | Valeur |
 |-----------|--------|
-| **Producteur** | CMP-15 (API Gateway) |
+| **Producteur** | [CMP-15: API Gateway](../../referentiel/composants/cmp-15.md) |
 | **Consommateur** | Systèmes partenaires SADC/UA |
 | **Format** | X.509v3 + GDHCN Trust Anchor |
 | **Protocole** | mTLS |
@@ -71,7 +71,7 @@ Ce profil technique définit les standards, protocoles et configurations pour le
 
 | Propriété | Valeur |
 |-----------|--------|
-| **Producteur** | CMP-06 (Intégration/Médiation) |
+| **Producteur** | [CMP-06: Intégration/Médiation](../../referentiel/composants/cmp-06.md) |
 | **Consommateur** | Système santé partenaire étranger |
 | **Format** | FHIR R4 — IPS Composition (résumé patient) |
 | **Protocole** | REST (synchrone) |
@@ -82,7 +82,7 @@ Ce profil technique définit les standards, protocoles et configurations pour le
 
 | Propriété | Valeur |
 |-----------|--------|
-| **Producteur** | CMP-04 (Moteur analytique) |
+| **Producteur** | [CMP-04: Moteur analytique](../../referentiel/composants/cmp-04.md) |
 | **Consommateur** | OMS AFRO / CDC Africa |
 | **Format** | IHE ADX (mADX) — données agrégées |
 | **Protocole** | REST (asynchrone) |
@@ -92,8 +92,8 @@ Ce profil technique définit les standards, protocoles et configurations pour le
 
 | Propriété | Valeur |
 |-----------|--------|
-| **Producteur** | CMP-11 (INP) |
-| **Consommateur** | CMP-06 (Médiation) → Système partenaire |
+| **Producteur** | [CMP-11: INP](../../referentiel/composants/cmp-11.md) |
+| **Consommateur** | [CMP-06: Médiation](../../referentiel/composants/cmp-06.md) → Système partenaire |
 | **Format** | IHE PIX/PDQ — mapping OID ↔ INP |
 | **Protocole** | REST |
 | **Fréquence** | À la demande |
@@ -102,12 +102,12 @@ Ce profil technique définit les standards, protocoles et configurations pour le
 
 | Propriété | Valeur |
 |-----------|--------|
-| **Producteur** | CMP-06 (Intégration/Médiation) |
+| **Producteur** | [CMP-06: Intégration/Médiation](../../referentiel/composants/cmp-06.md) |
 | **Consommateur** | Système santé du pays de destination |
 | **Format** | FHIR R4 — ServiceRequest (transfer) + IPS Composition (données cliniques) |
 | **Protocole** | REST (synchrone) |
 | **Fréquence** | À la demande (événements urgentes) |
-| **Prérequis** | Accord bilatéral (ART-0) + autorisation de sortie du territoire |
+| **Prérequis** | Accord bilatéral ([ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md)) + autorisation de sortie du territoire |
 
 ## Règles de souveraineté
 
@@ -115,7 +115,7 @@ Ce profil technique définit les standards, protocoles et configurations pour le
 |-------|-------------|
 | **Règle 1** | L'identité nationale complète (INP + nom complet) ne quitte jamais le territoire sauf dérogation explicite du Ministre |
 | **Règle 2** | Seules les données minimisées nécessaires à la finalité peuvent être exportées |
-| **Règle 3** | Tout flux sortant doit être couvert par un accord bilatéral ou multilatéral explicite (ART-0) |
+| **Règle 3** | Tout flux sortant doit être couvert par un accord bilatéral ou multilatéral explicite ([ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md)) |
 | **Règle 4** | Le consentement du patient doit être obtenu pour tout échange sortant sauf obligation légale |
 | **Règle 5** | Tous les flux transfrontaliers sont journalisés et auditable par la DEPSI |
 | **Règle 6** | Les systèmes partenaires doivent démontrer leur conformité GDHCN avant tout accès |
@@ -129,7 +129,7 @@ Ce profil technique définit les standards, protocoles et configurations pour le
 | **EXG-S2** | Chiffrement TLS 1.3 pour tous les échanges transfrontaliers |
 | **EXG-S3** | RBAC différencié par rôle et par pays partenaire |
 | **EXG-S4** | Journalisation de tous les accès transfrontaliers avec horodatage |
-| **EXG-S5** | Accord de partage (ART-0) préalable à tout flux sortant |
+| **EXG-S5** | Accord de partage ([ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md)) préalable à tout flux sortant |
 | **EXG-S6** | Vérification de conformité GDHCN avant chaque session |
 | **EXG-S7** | Révocation immédiate en cas d'incident de sécurité |
 
@@ -151,11 +151,11 @@ Ce profil technique définit les standards, protocoles et configurations pour le
 | HL7 FHIR IPS | Standard international | ✅ Disponible |
 | FHIR R4 | Standard | ✅ Validé |
 | IHE PIX/PDQ | Standard | ✅ Disponible |
-| ART-7 | Chapitre ARTSN | Active |
-| ART-0 | Chapitre ARTSN | Active |
-| CAP-INT-13 | Capacité CNISN | Créée |
-| CAP-15 | Capabilité CAESN | Active |
-| CAP-17 | Capabilité CAESN | Active |
+| [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../referentiel/chapitres/art-7.md) | Chapitre ARTSN | Active |
+| [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md) | Chapitre ARTSN | Active |
+| [CAP-INT-13: Interopérabilité transfrontalière et confiance internationale](../../referentiel/capacites/cap-int-13.md) | Capacité CNISN | Créée |
+| [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md) | Capabilité CAESN | Active |
+| [CAP-17: Engagement patient et identité numérique](../../referentiel/capabilites/cap-17.md) | Capabilité CAESN | Active |
 
 *Rattachement : CAP-INT-13, CAP-15, CAP-17, ART-7, ART-0, ART-1, CMP-06, CMP-15 · fiche PT-14*
 

@@ -79,7 +79,7 @@ Ce flux couvre l’ensemble du cycle de la santé publique, depuis l’identific
 
 #### Objectif
 
-Réaliser l'étape de valeur « Identification des risques et promotion de la santé » du flux VS-02.
+Réaliser l'étape de valeur « Identification des risques et promotion de la santé » du flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md).
 
 #### Entrées
 
@@ -107,7 +107,7 @@ Couverture des campagnes de prévention, taux de vaccination
 
 #### Objectif
 
-Réaliser l'étape de valeur « Surveillance et détection » du flux VS-02.
+Réaliser l'étape de valeur « Surveillance et détection » du flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md).
 
 #### Entrées
 
@@ -135,7 +135,7 @@ Complétude et promptitude des rapports, taux de signaux détectés
 
 #### Objectif
 
-Réaliser l'étape de valeur « Notification et alerte » du flux VS-02.
+Réaliser l'étape de valeur « Notification et alerte » du flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md).
 
 #### Entrées
 
@@ -163,7 +163,7 @@ Délai moyen de notification d'une alerte
 
 #### Objectif
 
-Réaliser l'étape de valeur « Vérification et investigation » du flux VS-02.
+Réaliser l'étape de valeur « Vérification et investigation » du flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md).
 
 #### Entrées
 
@@ -191,7 +191,7 @@ Délai d'investigation, proportion d'alertes vérifiées dans les délais
 
 #### Objectif
 
-Réaliser l'étape de valeur « Riposte » du flux VS-02.
+Réaliser l'étape de valeur « Riposte » du flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md).
 
 #### Entrées
 
@@ -219,7 +219,7 @@ Délai de déploiement de la riposte, taux de contrôle de l'épidémie
 
 #### Objectif
 
-Réaliser l'étape de valeur « Suivi de situation et clôture » du flux VS-02.
+Réaliser l'étape de valeur « Suivi de situation et clôture » du flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md).
 
 #### Entrées
 
@@ -247,7 +247,7 @@ Taux de létalité, durée de l'épisode épidémique
 
 #### Objectif
 
-Réaliser l'étape de valeur « Capitalisation et amélioration » du flux VS-02.
+Réaliser l'étape de valeur « Capitalisation et amélioration » du flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md).
 
 #### Entrées
 

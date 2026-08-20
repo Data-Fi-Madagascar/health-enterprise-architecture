@@ -16,14 +16,14 @@ tags: ["ptisn", "niveau-4", "profils", "PT-04"]
 
 ## 1. Capacité CNISN
 
-**CAP-INT-01 — Résolution d'identité du bénéficiaire**
+[CAP-INT-01: Résolution d'identité du bénéficiaire](../../referentiel/capacites/cap-int-01.md)
 
 ## 2. Chapitres ART applicables
 
-- ART-4 — référentiels ;
+- [ART-4: référentiels](../../referentiel/chapitres/art-4.md)entiels ;
 - ART-4a — Résolution d'identité ;
 - ART-4b — bases d'autorisation ;
-- ART-7 — sécurité.
+- [ART-7: sécurité.](../../referentiel/chapitres/art-7.md)curité.
 
 ## 3. Service national
 

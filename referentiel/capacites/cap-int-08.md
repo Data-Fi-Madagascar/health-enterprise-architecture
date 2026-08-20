@@ -7,7 +7,7 @@ status: active
 owner: DEPSI
 version: "0.5"
 family: confiance
-source: 01_cnisn/02_capacites/index.md
+envelope: 01_cnisn/02_capacites/index.md
 maps_to: ["P-INT-14", "P-INT-15", "P-INT-16", "P-INT-17", "P-INT-18", "P-INT-19", "P-INT-20", "CAP-15"]
 implements: []
 applies_to: []
@@ -37,4 +37,11 @@ Fournir les mécanismes nécessaires à l’identification, l’authentification
 
 ### Principes associés
 
-P-INT-14 à P-INT-20.
+- [P-INT-14: Base d’autorisation explicite](../principes/p-int-14.md)
+- [P-INT-15: Limitation à la finalité](../principes/p-int-15.md)
+- [P-INT-16: Résidence et non-réplication](../principes/p-int-16.md)
+- [P-INT-17: Minimisation](../principes/p-int-17.md)
+- [P-INT-18: Traçabilité différenciée](../principes/p-int-18.md)
+- [P-INT-19: Neutralité technologique](../principes/p-int-19.md)
+- [P-INT-20: Portabilité et réversibilité](../principes/p-int-20.md)
+

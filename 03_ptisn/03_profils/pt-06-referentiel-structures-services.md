@@ -16,13 +16,13 @@ tags: ["ptisn", "niveau-4", "profils", "PT-06"]
 
 ## 1. Capacité CNISN
 
-**CAP-INT-04 — Référentiel des structures et services de santé**
+[CAP-INT-04: Référentiel des structures et services de santé](../../referentiel/capacites/cap-int-04.md)
 
 ## 2. Chapitres ART applicables
 
-- ART-4 ;
-- ART-5 ;
-- ART-6 pour les usages analytiques.
+- [ART-4: Référentiels de métadonnées de gestion](../../referentiel/chapitres/art-4.md) ;
+- [ART-5: Cohérence et qualité des données](../../referentiel/chapitres/art-5.md) ;
+- [ART-6: Analytique et restitution](../../referentiel/chapitres/art-6.md) pour les usages analytiques.
 
 ## 3. Service national
 

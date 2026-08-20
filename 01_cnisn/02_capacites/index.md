@@ -64,7 +64,15 @@ Permettre aux systèmes autorisés de relier plusieurs représentations d’un m
 
 #### Principes associés
 
-P-INT-01 à P-INT-04, P-INT-14 à P-INT-18.
+- [P-INT-01: Autorité désignée](../../referentiel/principes/p-int-01.md)
+- [P-INT-02: Résolution contre l’autorité](../../referentiel/principes/p-int-02.md)
+- [P-INT-03: Copies locales non autoritatives](../../referentiel/principes/p-int-03.md)
+- [P-INT-04: Historisation des références](../../referentiel/principes/p-int-04.md)
+- [P-INT-14: Base d’autorisation explicite](../../referentiel/principes/p-int-14.md)
+- [P-INT-15: Limitation à la finalité](../../referentiel/principes/p-int-15.md)
+- [P-INT-16: Résidence et non-réplication](../../referentiel/principes/p-int-16.md)
+- [P-INT-17: Minimisation](../../referentiel/principes/p-int-17.md)
+- [P-INT-18: Traçabilité différenciée](../../referentiel/principes/p-int-18.md)
 
 *Rattachement : P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-14, P-INT-15, P-INT-16, P-INT-17, P-INT-18, CAP-02, CAP-14 · fiche CAP-INT-01*
 
@@ -96,7 +104,12 @@ Cette capacité est distincte :
 
 #### Principes associés
 
-P-INT-01 à P-INT-04, P-INT-14 et P-INT-15.
+- [P-INT-01: Autorité désignée](../../referentiel/principes/p-int-01.md)
+- [P-INT-02: Résolution contre l’autorité](../../referentiel/principes/p-int-02.md)
+- [P-INT-03: Copies locales non autoritatives](../../referentiel/principes/p-int-03.md)
+- [P-INT-04: Historisation des références](../../referentiel/principes/p-int-04.md)
+- [P-INT-14: Base d’autorisation explicite](../../referentiel/principes/p-int-14.md)
+- [P-INT-15: Limitation à la finalité](../../referentiel/principes/p-int-15.md)
 
 *Rattachement : P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-14, P-INT-15, CAP-09, CAP-14 · fiche CAP-INT-02*
 
@@ -127,7 +140,10 @@ Fournir une autorité commune sur :
 
 #### Principes associés
 
-P-INT-01 à P-INT-04.
+- [P-INT-01: Autorité désignée](../../referentiel/principes/p-int-01.md)
+- [P-INT-02: Résolution contre l’autorité](../../referentiel/principes/p-int-02.md)
+- [P-INT-03: Copies locales non autoritatives](../../referentiel/principes/p-int-03.md)
+- [P-INT-04: Historisation des références](../../referentiel/principes/p-int-04.md)
 
 *Rattachement : P-INT-01, P-INT-02, P-INT-03, P-INT-04, CAP-11, CAP-13, CAP-14 · fiche CAP-INT-04*
 
@@ -151,7 +167,12 @@ Permettre aux systèmes de partager des définitions et codifications cohérente
 
 #### Principes associés
 
-P-INT-01 à P-INT-06.
+- [P-INT-01: Autorité désignée](../../referentiel/principes/p-int-01.md)
+- [P-INT-02: Résolution contre l’autorité](../../referentiel/principes/p-int-02.md)
+- [P-INT-03: Copies locales non autoritatives](../../referentiel/principes/p-int-03.md)
+- [P-INT-04: Historisation des références](../../referentiel/principes/p-int-04.md)
+- [P-INT-05: Contrat explicite](../../referentiel/principes/p-int-05.md)
+- [P-INT-06: Versionnement et compatibilité](../../referentiel/principes/p-int-06.md)
 
 *Rattachement : P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-05, P-INT-06, CAP-13, CAP-14 · fiche CAP-INT-05*
 
@@ -185,7 +206,23 @@ Permettre aux systèmes de transmettre, recevoir, transformer et acheminer des d
 
 #### Principes associés
 
-P-INT-05 à P-INT-13, P-INT-18 à P-INT-25.
+- [P-INT-05: Contrat explicite](../../referentiel/principes/p-int-05.md)
+- [P-INT-06: Versionnement et compatibilité](../../referentiel/principes/p-int-06.md)
+- [P-INT-07: Responsabilité de la donnée](../../referentiel/principes/p-int-07.md)
+- [P-INT-08: Publication au catalogue des services](../../referentiel/principes/p-int-08.md)
+- [P-INT-09: Publication des contrats](../../referentiel/principes/p-int-09.md)
+- [P-INT-10: Accord préalable](../../referentiel/principes/p-int-10.md)
+- [P-INT-11: Arbitrage des conflits d’autorité](../../referentiel/principes/p-int-11.md)
+- [P-INT-12: Dérogation explicite](../../referentiel/principes/p-int-12.md)
+- [P-INT-13: Dérogation d’urgence](../../referentiel/principes/p-int-13.md)
+- [P-INT-18: Traçabilité différenciée](../../referentiel/principes/p-int-18.md)
+- [P-INT-19: Neutralité technologique](../../referentiel/principes/p-int-19.md)
+- [P-INT-20: Portabilité et réversibilité](../../referentiel/principes/p-int-20.md)
+- [P-INT-21: Progressivité](../../referentiel/principes/p-int-21.md)
+- [P-INT-22: Fonctionnement en connectivité contrainte](../../referentiel/principes/p-int-22.md)
+- [P-INT-23: Conformité fondée sur des preuves](../../referentiel/principes/p-int-23.md)
+- [P-INT-24: Applicabilité déclarée](../../referentiel/principes/p-int-24.md)
+- [P-INT-25: Réévaluation continue](../../referentiel/principes/p-int-25.md)
 
 *Rattachement : P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-10, P-INT-11, P-INT-12, P-INT-13, P-INT-18, P-INT-19, P-INT-20, P-INT-21, P-INT-22, P-INT-23, P-INT-24, P-INT-25, CAP-13, CAP-14 · fiche CAP-INT-03*
 
@@ -218,7 +255,14 @@ Rendre visibles, gouvernables et réutilisables les services et interfaces du se
 
 #### Principes associés
 
-P-INT-05 à P-INT-09, P-INT-23 à P-INT-25.
+- [P-INT-05: Contrat explicite](../../referentiel/principes/p-int-05.md)
+- [P-INT-06: Versionnement et compatibilité](../../referentiel/principes/p-int-06.md)
+- [P-INT-07: Responsabilité de la donnée](../../referentiel/principes/p-int-07.md)
+- [P-INT-08: Publication au catalogue des services](../../referentiel/principes/p-int-08.md)
+- [P-INT-09: Publication des contrats](../../referentiel/principes/p-int-09.md)
+- [P-INT-23: Conformité fondée sur des preuves](../../referentiel/principes/p-int-23.md)
+- [P-INT-24: Applicabilité déclarée](../../referentiel/principes/p-int-24.md)
+- [P-INT-25: Réévaluation continue](../../referentiel/principes/p-int-25.md)
 
 *Rattachement : P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-23, P-INT-24, P-INT-25, CAP-14, CAP-16 · fiche CAP-INT-06*
 
@@ -254,7 +298,20 @@ La conception interne des entrepôts, projections et modèles analytiques relèv
 
 #### Principes associés
 
-P-INT-05 à P-INT-09, P-INT-17 à P-INT-25.
+- [P-INT-05: Contrat explicite](../../referentiel/principes/p-int-05.md)
+- [P-INT-06: Versionnement et compatibilité](../../referentiel/principes/p-int-06.md)
+- [P-INT-07: Responsabilité de la donnée](../../referentiel/principes/p-int-07.md)
+- [P-INT-08: Publication au catalogue des services](../../referentiel/principes/p-int-08.md)
+- [P-INT-09: Publication des contrats](../../referentiel/principes/p-int-09.md)
+- [P-INT-17: Minimisation](../../referentiel/principes/p-int-17.md)
+- [P-INT-18: Traçabilité différenciée](../../referentiel/principes/p-int-18.md)
+- [P-INT-19: Neutralité technologique](../../referentiel/principes/p-int-19.md)
+- [P-INT-20: Portabilité et réversibilité](../../referentiel/principes/p-int-20.md)
+- [P-INT-21: Progressivité](../../referentiel/principes/p-int-21.md)
+- [P-INT-22: Fonctionnement en connectivité contrainte](../../referentiel/principes/p-int-22.md)
+- [P-INT-23: Conformité fondée sur des preuves](../../referentiel/principes/p-int-23.md)
+- [P-INT-24: Applicabilité déclarée](../../referentiel/principes/p-int-24.md)
+- [P-INT-25: Réévaluation continue](../../referentiel/principes/p-int-25.md)
 
 *Rattachement : P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-17, P-INT-18, P-INT-19, P-INT-20, P-INT-21, P-INT-22, P-INT-23, P-INT-24, P-INT-25, CAP-05, CAP-13 · fiche CAP-INT-07*
 
@@ -287,7 +344,13 @@ Fournir les mécanismes nécessaires à l’identification, l’authentification
 
 #### Principes associés
 
-P-INT-14 à P-INT-20.
+- [P-INT-14: Base d’autorisation explicite](../../referentiel/principes/p-int-14.md)
+- [P-INT-15: Limitation à la finalité](../../referentiel/principes/p-int-15.md)
+- [P-INT-16: Résidence et non-réplication](../../referentiel/principes/p-int-16.md)
+- [P-INT-17: Minimisation](../../referentiel/principes/p-int-17.md)
+- [P-INT-18: Traçabilité différenciée](../../referentiel/principes/p-int-18.md)
+- [P-INT-19: Neutralité technologique](../../referentiel/principes/p-int-19.md)
+- [P-INT-20: Portabilité et réversibilité](../../referentiel/principes/p-int-20.md)
 
 *Rattachement : P-INT-14, P-INT-15, P-INT-16, P-INT-17, P-INT-18, P-INT-19, P-INT-20, CAP-15 · fiche CAP-INT-08*
 
@@ -315,7 +378,10 @@ Le consentement est une base possible parmi plusieurs bases légales ou fonction
 
 #### Principes associés
 
-P-INT-14 à P-INT-17.
+- [P-INT-14: Base d’autorisation explicite](../../referentiel/principes/p-int-14.md)
+- [P-INT-15: Limitation à la finalité](../../referentiel/principes/p-int-15.md)
+- [P-INT-16: Résidence et non-réplication](../../referentiel/principes/p-int-16.md)
+- [P-INT-17: Minimisation](../../referentiel/principes/p-int-17.md)
 
 *Rattachement : P-INT-14, P-INT-15, P-INT-16, P-INT-17, CAP-15 · fiche CAP-INT-09*
 
@@ -343,7 +409,10 @@ Permettre de comprendre :
 
 #### Principes associés
 
-P-INT-07, P-INT-17, P-INT-18 et P-INT-23.
+- [P-INT-07: Responsabilité de la donnée](../../referentiel/principes/p-int-07.md)
+- [P-INT-17: Minimisation](../../referentiel/principes/p-int-17.md)
+- [P-INT-18: Traçabilité différenciée](../../referentiel/principes/p-int-18.md)
+- [P-INT-23: Conformité fondée sur des preuves](../../referentiel/principes/p-int-23.md)
 
 *Rattachement : P-INT-07, P-INT-17, P-INT-18, P-INT-23, CAP-13, CAP-15 · fiche CAP-INT-10*
 
@@ -374,7 +443,18 @@ Permettre de détecter et traiter les divergences entre systèmes, référentiel
 
 #### Principes associés
 
-P-INT-01 à P-INT-09, P-INT-23 à P-INT-25.
+- [P-INT-01: Autorité désignée](../../referentiel/principes/p-int-01.md)
+- [P-INT-02: Résolution contre l’autorité](../../referentiel/principes/p-int-02.md)
+- [P-INT-03: Copies locales non autoritatives](../../referentiel/principes/p-int-03.md)
+- [P-INT-04: Historisation des références](../../referentiel/principes/p-int-04.md)
+- [P-INT-05: Contrat explicite](../../referentiel/principes/p-int-05.md)
+- [P-INT-06: Versionnement et compatibilité](../../referentiel/principes/p-int-06.md)
+- [P-INT-07: Responsabilité de la donnée](../../referentiel/principes/p-int-07.md)
+- [P-INT-08: Publication au catalogue des services](../../referentiel/principes/p-int-08.md)
+- [P-INT-09: Publication des contrats](../../referentiel/principes/p-int-09.md)
+- [P-INT-23: Conformité fondée sur des preuves](../../referentiel/principes/p-int-23.md)
+- [P-INT-24: Applicabilité déclarée](../../referentiel/principes/p-int-24.md)
+- [P-INT-25: Réévaluation continue](../../referentiel/principes/p-int-25.md)
 
 *Rattachement : P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-23, P-INT-24, P-INT-25, CAP-13, CAP-14 · fiche CAP-INT-11*
 
@@ -399,7 +479,13 @@ Permettre de vérifier objectivement qu’un système respecte les contrats et p
 
 #### Principes associés
 
-P-INT-19 à P-INT-25.
+- [P-INT-19: Neutralité technologique](../../referentiel/principes/p-int-19.md)
+- [P-INT-20: Portabilité et réversibilité](../../referentiel/principes/p-int-20.md)
+- [P-INT-21: Progressivité](../../referentiel/principes/p-int-21.md)
+- [P-INT-22: Fonctionnement en connectivité contrainte](../../referentiel/principes/p-int-22.md)
+- [P-INT-23: Conformité fondée sur des preuves](../../referentiel/principes/p-int-23.md)
+- [P-INT-24: Applicabilité déclarée](../../referentiel/principes/p-int-24.md)
+- [P-INT-25: Réévaluation continue](../../referentiel/principes/p-int-25.md)
 
 #### Réponse nationale
 
@@ -483,7 +569,7 @@ Madagascar est membre de l'Union Africaine (UA), de la Commission Économique de
 
 | Exigence | Description |
 |----------|-------------|
-| **EXG-TF-01** | Tout flux transfrontalier doit être couvert par un accord explicite (P-INT-10) |
+| **EXG-TF-01** | Tout flux transfrontalier doit être couvert par un accord explicite ([P-INT-10: Accord préalable](../../referentiel/principes/p-int-10.md)) |
 | **EXG-TF-02** | Le consentement du patient doit être obtenu pour tout échange sortant sauf obligation légale |
 | **EXG-TF-03** | Seules les données minimisées nécessaires à la finalité peuvent être exportées |
 | **EXG-TF-04** | Tous les flux transfrontaliers doivent être journalisés et auditable |
@@ -494,13 +580,13 @@ Madagascar est membre de l'Union Africaine (UA), de la Commission Économique de
 
 #### Principes associés
 
-- **P-INT-01** (Autorité désignée) : l'autorité nationale reste l'autorité pour les données malgaches, même lors d'échanges ;
-- **P-INT-05** (Contrat explicite) : tout flux transfrontalier nécessite un accord bilatéral ou multilatéral ;
-- **P-INT-10** (Accord préalable) : accord obligatoire avant tout échange avec une institution étrangère ;
-- **P-INT-14** (Base d'autorisation explicite) : base légale documentée pour chaque type de flux sortant ;
-- **P-INT-16** (Résidence) : les contraintes de résidence s'appliquent aux flux transfrontaliers ;
-- **P-INT-17** (Minimisation) : minimisation renforcée pour les échanges internationaux ;
-- **P-INT-19** (Neutralité technologique) : le GDHCN est un cadre de confiance, pas un produit.
+- [P-INT-01: Autorité désignée](../../referentiel/principes/p-int-01.md) (Autorité désignée) : l'autorité nationale reste l'autorité pour les données malgaches, même lors d'échanges ;
+- [P-INT-05: Contrat explicite](../../referentiel/principes/p-int-05.md) (Contrat explicite) : tout flux transfrontalier nécessite un accord bilatéral ou multilatéral ;
+- [P-INT-10: Accord préalable](../../referentiel/principes/p-int-10.md) (Accord préalable) : accord obligatoire avant tout échange avec une institution étrangère ;
+- [P-INT-14: Base d’autorisation explicite](../../referentiel/principes/p-int-14.md) (Base d'autorisation explicite) : base légale documentée pour chaque type de flux sortant ;
+- [P-INT-16: Résidence et non-réplication](../../referentiel/principes/p-int-16.md) (Résidence) : les contraintes de résidence s'appliquent aux flux transfrontaliers ;
+- [P-INT-17: Minimisation](../../referentiel/principes/p-int-17.md) (Minimisation) : minimisation renforcée pour les échanges internationaux ;
+- [P-INT-19: Neutralité technologique](../../referentiel/principes/p-int-19.md) (Neutralité technologique) : le GDHCN est un cadre de confiance, pas un produit.
 
 #### Rattachement
 
@@ -580,7 +666,7 @@ Les secteurs concernés :
 
 | Exigence | Description |
 |----------|-------------|
-| **EXG-OH-01** | Tout échange intersectoriel doit être couvert par un accord explicite entre ministères (P-INT-10) |
+| **EXG-OH-01** | Tout échange intersectoriel doit être couvert par un accord explicite entre ministères ([P-INT-10: Accord préalable](../../referentiel/principes/p-int-10.md)) |
 | **EXG-OH-02** | Les identités humaines ne doivent jamais être croisées avec les identités animales |
 | **EXG-OH-03** | Les données agrégées croisées doivent être irréversiblement désanonymisées |
 | **EXG-OH-04** | Chaque secteur conserve la souveraineté sur ses données source |
@@ -590,12 +676,12 @@ Les secteurs concernés :
 
 #### Principes associés
 
-- **P-INT-01** (Autorité désignée) : chaque secteur reste l'autorité de ses données ;
-- **P-INT-05** (Contrat explicite) : tout flux intersectoriel nécessite un accord ;
-- **P-INT-10** (Accord préalable) : accord obligatoire entre ministères ;
-- **P-INT-14** (Base d'autorisation explicite) : base légale documentée par secteur ;
-- **P-INT-16** (Résidence) : les données restent dans leur secteur d'origine ;
-- **P-INT-22** (Connectivité contrainte) : les secteurs ont des niveaux de connectivité variables.
+- [P-INT-01: Autorité désignée](../../referentiel/principes/p-int-01.md) (Autorité désignée) : chaque secteur reste l'autorité de ses données ;
+- [P-INT-05: Contrat explicite](../../referentiel/principes/p-int-05.md) (Contrat explicite) : tout flux intersectoriel nécessite un accord ;
+- [P-INT-10: Accord préalable](../../referentiel/principes/p-int-10.md) (Accord préalable) : accord obligatoire entre ministères ;
+- [P-INT-14: Base d’autorisation explicite](../../referentiel/principes/p-int-14.md) (Base d'autorisation explicite) : base légale documentée par secteur ;
+- [P-INT-16: Résidence et non-réplication](../../referentiel/principes/p-int-16.md) (Résidence) : les données restent dans leur secteur d'origine ;
+- [P-INT-22: Fonctionnement en connectivité contrainte](../../referentiel/principes/p-int-22.md) (Connectivité contrainte) : les secteurs ont des niveaux de connectivité variables.
 
 #### Rattachement
 

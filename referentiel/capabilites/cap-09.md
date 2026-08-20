@@ -7,7 +7,7 @@ title: Gestion des ressources humaines en santé
 status: draft
 owner: Responsables de capabilités habilitantes
 version: "0.0.1"
-source: 00_caesn/03_capabilities/enabling.md
+envelope: 00_caesn/03_capabilities/enabling.md
 maps_to: []
 implements: []
 applies_to: ["VS-01", "VS-02", "VS-04"]
@@ -28,7 +28,7 @@ Elle couvre :
 - **Suivi de carrière et motivation** : gestion des données de carrière, rémunération et conditions de travail
 - **Données de référence du personnel** : registres et référentiels des agents sanitaires interopérables
 
-Son absence fragilise la gestion des ressources humaines et compromet la continuité des soins (VS-01, VS-02) comme le pilotage du système (VS-04).
+Son absence fragilise la gestion des ressources humaines et compromet la continuité des soins ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../flux-valeur/vs-01.md), [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../flux-valeur/vs-02.md)) comme le pilotage du système ([VS-04: Piloter, coordonner et améliorer la performance du système de santé](../flux-valeur/vs-04.md)).
 
 ## Flux de valeur
 
@@ -38,9 +38,9 @@ Son absence fragilise la gestion des ressources humaines et compromet la continu
 
 ## Rattachement ARTSN
 
-- **ART-4** — Référentiels de métadonnées de gestion
-- **F.2** — Préservation de la souveraineté intersectorielle
-- **F.1** — Résilience face à la réalité géographique du pays
+- [ART-4: Référentiels de métadonnées de gestion](../chapitres/art-4.md)
+- [F-2: Préservation de la souveraineté intersectorielle](../fondations/f-2.md)
+- [F-1: Résilience face à la réalité géographique du pays](../fondations/f-1.md)
 
 ## Maturité
 

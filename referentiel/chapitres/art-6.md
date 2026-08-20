@@ -7,7 +7,7 @@ title: Analytique et restitution
 status: draft
 owner: DEPSI
 version: "0.0.1"
-source: 02_artsn/03_chapitres/art-6-analytique-restitution.md
+envelope: 02_artsn/03_chapitres/art-6-analytique-restitution.md
 maps_to: ["CAP-13", "CAP-08"]
 implements: []
 applies_to: ["ENF-4"]

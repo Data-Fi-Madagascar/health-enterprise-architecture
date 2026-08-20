@@ -48,7 +48,7 @@ Elle couvre :
 - **Suivi de carrière et motivation** : gestion des données de carrière, rémunération et conditions de travail
 - **Données de référence du personnel** : registres et référentiels des agents sanitaires interopérables
 
-Son absence fragilise la gestion des ressources humaines et compromet la continuité des soins (VS-01, VS-02) comme le pilotage du système (VS-04).
+Son absence fragilise la gestion des ressources humaines et compromet la continuité des soins ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md), [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md)) comme le pilotage du système ([VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md)).
 
 #### Flux de valeur
 
@@ -58,9 +58,9 @@ Son absence fragilise la gestion des ressources humaines et compromet la continu
 
 #### Rattachement ARTSN
 
-- **ART-4** — Référentiels de métadonnées de gestion
-- **F.2** — Préservation de la souveraineté intersectorielle
-- **F.1** — Résilience face à la réalité géographique du pays
+- [ART-4: Référentiels de métadonnées de gestion](../../referentiel/chapitres/art-4.md)
+- [F-2: Préservation de la souveraineté intersectorielle](../../referentiel/fondations/f-2.md)
+- [F-1: Résilience face à la réalité géographique du pays](../../referentiel/fondations/f-1.md)
 
 #### Maturité
 
@@ -88,7 +88,7 @@ Elle couvre :
 - **Distribution et logistique** : acheminement du stock central jusqu’au point de service
 - **Traçabilité et qualité** : lots, chaîne du froid et sécurité des produits
 
-Son absence expose le système à des ruptures de stock qui compromettent les soins (VS-01) et la prévention (VS-02).
+Son absence expose le système à des ruptures de stock qui compromettent les soins ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md)) et la prévention ([VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md)).
 
 #### Flux de valeur
 
@@ -97,9 +97,9 @@ Son absence expose le système à des ruptures de stock qui compromettent les so
 
 #### Rattachement ARTSN
 
-- **ART-4** — Référentiels de métadonnées de gestion
-- **PT-14** — Interopérabilité transfrontalière
-- **F.2** — Préservation de la souveraineté intersectorielle
+- [ART-4: Référentiels de métadonnées de gestion](../../referentiel/chapitres/art-4.md)
+- [PT-14: Interopérabilité transfrontalière](../../referentiel/profils/pt-14.md)
+- [F-2: Préservation de la souveraineté intersectorielle](../../referentiel/fondations/f-2.md)
 
 #### Maturité
 
@@ -127,7 +127,7 @@ Elle couvre :
 - **Maintenance et réparations** : maintenance préventive et interventions curatives
 - **Cartographie et localisation** : référencement géospatial des sites et équipements
 
-Son absence rend impossible l’acte clinique, même lorsque le personnel et les produits sont disponibles (VS-01, VS-02).
+Son absence rend impossible l’acte clinique, même lorsque le personnel et les produits sont disponibles ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md), [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md)).
 
 #### Flux de valeur
 
@@ -136,9 +136,9 @@ Son absence rend impossible l’acte clinique, même lorsque le personnel et les
 
 #### Rattachement ARTSN
 
-- **ART-4** — Référentiels de métadonnées de gestion
-- **ART-4d** — Référentiel géospatial et d’exploitation partagé
-- **F.1** — Résilience face à la réalité géographique du pays
+- [ART-4: Référentiels de métadonnées de gestion](../../referentiel/chapitres/art-4.md)
+- [ART-4D: Référentiel géospatial et d'exploitation partagé](../../referentiel/chapitres/art-4d.md)
+- [F-1: Résilience face à la réalité géographique du pays](../../referentiel/fondations/f-1.md)
 
 #### Maturité
 
@@ -166,7 +166,7 @@ Elle couvre :
 - **Soutenabilité des financements** : mobilisation et protection des ressources à long terme
 - **Couverture et protection financière** : appui à l’éligibilité et au tiers-payant (CSU)
 
-Son absence compromet la protection financière des ménages (VS-03) et le pilotage du système (VS-04).
+Son absence compromet la protection financière des ménages ([VS-03: Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md)) et le pilotage du système ([VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md)).
 
 #### Flux de valeur
 
@@ -175,9 +175,9 @@ Son absence compromet la protection financière des ménages (VS-03) et le pilot
 
 #### Rattachement ARTSN
 
-- **ART-4c** — Éligibilité et couverture
-- **F.2** — Préservation de la souveraineté intersectorielle
-- **ART-4** — Référentiels de métadonnées de gestion
+- [ART-4C: Éligibilité et couverture](../../referentiel/chapitres/art-4c.md)
+- [F-2: Préservation de la souveraineté intersectorielle](../../referentiel/fondations/f-2.md)
+- [ART-4: Référentiels de métadonnées de gestion](../../referentiel/chapitres/art-4.md)
 
 #### Maturité
 
@@ -203,7 +203,7 @@ La capabilité transforme les données du système de santé en information util
 - **Qualité et cohérence** : audit continu, traçabilité et fiabilité des données
 - **Analyse et recherche** : entrepôt analytique, projections et exploitation pour la décision
 
-Ces quatre capabilités (CAP-13, CAP-14, CAP-15, CAP-16) constituent le **socle commun (architecture runway)** dont l'absence bloque de nombreuses initiatives.
+Ces quatre capabilités ([CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md), [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md), [CAP-16: Gestion du portefeuille d'initiatives numériques](../../referentiel/capabilites/cap-16.md)) constituent le **socle commun (architecture runway)** dont l'absence bloque de nombreuses initiatives.
 
 #### Flux de valeur
 
@@ -214,9 +214,9 @@ Ces quatre capabilités (CAP-13, CAP-14, CAP-15, CAP-16) constituent le **socle 
 
 #### Rattachement ARTSN
 
-- **ART-1** — Intégration et ingestion
-- **ART-3** — Historisation événementielle et profils de déploiement
-- **ART-5** — Cohérence et qualité des données
+- [ART-1: Intégration et ingestion](../../referentiel/chapitres/art-1.md)
+- [ART-3: Historisation événementielle et profils de déploiement](../../referentiel/chapitres/art-3.md)
+- [ART-5: Cohérence et qualité des données](../../referentiel/chapitres/art-5.md)
 
 #### Maturité
 
@@ -242,7 +242,7 @@ La capabilité assure la cohérence, l’intégration, la souveraineté et la r�
 - **Standards et interopérabilité** : alignement sur les profils techniques nationaux
 - **Éradication des silos** : homologation obligatoire et réutilisation des briques communes
 
-Ces quatre capabilités (CAP-13, CAP-14, CAP-15, CAP-16) constituent le **socle commun (architecture runway)** dont l’absence bloque et fragilise de nombreuses initiatives.
+Ces quatre capabilités ([CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md), [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md), [CAP-16: Gestion du portefeuille d'initiatives numériques](../../referentiel/capabilites/cap-16.md)) constituent le **socle commun (architecture runway)** dont l’absence bloque et fragilise de nombreuses initiatives.
 
 #### Flux de valeur
 
@@ -253,10 +253,10 @@ Ces quatre capabilités (CAP-13, CAP-14, CAP-15, CAP-16) constituent le **socle 
 
 #### Rattachement ARTSN
 
-- **ART-0** — Accords de partage inter-institutionnels
-- **ART-2** — Médiation et normalisation
-- **F.3** — Éradication des silos technologiques
-- **PT-01** — Profil technique national
+- [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md)
+- [ART-2: Médiation et normalisation](../../referentiel/chapitres/art-2.md)
+- [F-3: Éradication des silos technologiques](../../referentiel/fondations/f-3.md)
+- [PT-01: Profil technique national](../../referentiel/profils/pt-01.md)
 
 #### Maturité
 
@@ -281,7 +281,7 @@ La capabilité garantit la confiance, la sécurité, la confidentialité et la p
 - **Confidentialité** : minimisation, consentement et protection des données personnelles
 - **Gouvernance de la sécurité** : homologation, conformité et responsabilité
 
-Ces quatre capabilités (CAP-13, CAP-14, CAP-15, CAP-16) constituent le **socle commun (architecture runway)** dont l’absence bloque de nombreuses initiatives.
+Ces quatre capabilités ([CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md), [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md), [CAP-16: Gestion du portefeuille d'initiatives numériques](../../referentiel/capabilites/cap-16.md)) constituent le **socle commun (architecture runway)** dont l’absence bloque de nombreuses initiatives.
 
 #### Flux de valeur
 
@@ -292,8 +292,8 @@ Ces quatre capabilités (CAP-13, CAP-14, CAP-15, CAP-16) constituent le **socle 
 
 #### Rattachement ARTSN
 
-- **ART-7** — Sécurité, contrôle d'accès et résidence de la donnée
-- **F.4** — Homologation obligatoire
+- [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../referentiel/chapitres/art-7.md)
+- [F-4: Homologation obligatoire](../../referentiel/fondations/f-4.md)
 
 #### Maturité
 
@@ -318,7 +318,7 @@ La capabilité gouverne les investissements numériques du secteur : priorisatio
 - **Suivi et évaluation** : pilotage, tableaux de bord et redevabilité
 - **Rationalisation** : évitement des doublons et gouvernance du portefeuille
 
-Ces quatre capabilités (CAP-13, CAP-14, CAP-15, CAP-16) constituent le **socle commun (architecture runway)** dont l’absence bloque de nombreuses initiatives.
+Ces quatre capabilités ([CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md), [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md), [CAP-16: Gestion du portefeuille d'initiatives numériques](../../referentiel/capabilites/cap-16.md)) constituent le **socle commun (architecture runway)** dont l’absence bloque de nombreuses initiatives.
 
 #### Flux de valeur
 
@@ -327,9 +327,9 @@ Ces quatre capabilités (CAP-13, CAP-14, CAP-15, CAP-16) constituent le **socle 
 
 #### Rattachement ARTSN
 
-- **ART-9** — Garanties transactionnelles fortes
-- **F.4** — Homologation obligatoire
-- **F.6** — Observabilité
+- [ART-9: Garanties transactionnelles fortes](../../referentiel/chapitres/art-9.md)
+- [F-4: Homologation obligatoire](../../referentiel/fondations/f-4.md)
+- [F-6: Observabilité](../../referentiel/fondations/f-6.md)
 
 #### Maturité
 
@@ -354,7 +354,7 @@ La capabilité garantit l'existence d'une identité unique, sécurisée et parta
 - **Identitovigilance** : surveillance et correction des erreurs d'identité, protection contre les usurpations
 - **Engagement du patient** : accès du patient à ses données, participation active à la gestion de sa santé
 
-Cette capabilité est **habilitante** : son absence bloque la continuité des soins (VS-01) et la protection financière (VS-03).
+Cette capabilité est **habilitante** : son absence bloque la continuité des soins ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md)) et la protection financière ([VS-03: Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md)).
 
 #### Flux de valeur
 
@@ -363,10 +363,10 @@ Cette capabilité est **habilitante** : son absence bloque la continuité des so
 
 #### Rattachement ARTSN
 
-- **F.1** — Fondation Identité et registres
-- **ART-4a** — Résolution d'identité
-- **ART-4b** — Bases d'autorisation
-- **PT-04** — Profil technique identité nationale
+- [F-1: Résilience face à la réalité géographique du pays](../../referentiel/fondations/f-1.md)
+- [ART-4A: Résolution d'identité](../../referentiel/chapitres/art-4a.md)
+- [ART-4B: Bases d'autorisation](../../referentiel/chapitres/art-4b.md)
+- [PT-04: Profil technique national](../../referentiel/profils/pt-04.md)
 
 #### Maturité
 
@@ -391,7 +391,7 @@ La capabilité organise les échanges de données entre le secteur santé et les
 - **Surveillance conjointe** : détection précoce des événements de santé publique à interface homme-animal-environnement
 - **Riposte coordonnée** : orchestration des réponses inter-ministérielles
 
-Cette capabilité est **habilitante** : son absence bloque la surveillance sanitaire (VS-02) conformément aux obligations du RSI.
+Cette capabilité est **habilitante** : son absence bloque la surveillance sanitaire ([VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md)) conformément aux obligations du RSI.
 
 #### Flux de valeur
 
@@ -399,9 +399,9 @@ Cette capabilité est **habilitante** : son absence bloque la surveillance sanit
 
 #### Rattachement ARTSN
 
-- **ART-0** — Accords de partage inter-institutionnels
-- **ART-8d** — Chorégraphie inter-institutionnelle
-- **PT-01** — Profil technique échange interinstitutionnel (X-Road)
+- [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md)
+- [ART-8D: Chorégraphie inter-institutionnelle](../../referentiel/chapitres/art-8d.md)
+- [PT-01: Profil technique national](../../referentiel/profils/pt-01.md)
 
 #### Référentiels normatifs
 

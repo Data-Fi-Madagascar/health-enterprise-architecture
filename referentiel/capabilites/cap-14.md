@@ -7,7 +7,7 @@ title: Interopérabilité, référentiels nationaux et infrastructure numérique
 status: draft
 owner: Responsables de capabilités habilitantes
 version: "0.0.1"
-source: 00_caesn/03_capabilities/enabling.md
+envelope: 00_caesn/03_capabilities/enabling.md
 maps_to: []
 implements: []
 applies_to: ["VS-01", "VS-02", "VS-03", "VS-04"]
@@ -26,7 +26,7 @@ La capabilité assure la cohérence, l’intégration, la souveraineté et la r�
 - **Standards et interopérabilité** : alignement sur les profils techniques nationaux
 - **Éradication des silos** : homologation obligatoire et réutilisation des briques communes
 
-Ces quatre capabilités (CAP-13, CAP-14, CAP-15, CAP-16) constituent le **socle commun (architecture runway)** dont l’absence bloque et fragilise de nombreuses initiatives.
+Ces quatre capabilités ([CAP-13: Système d'information sanitaire, données et recherche](cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](cap-14.md), [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](cap-15.md), [CAP-16: Gestion du portefeuille d'initiatives numériques](cap-16.md)) constituent le **socle commun (architecture runway)** dont l’absence bloque et fragilise de nombreuses initiatives.
 
 ## Flux de valeur
 
@@ -37,10 +37,10 @@ Ces quatre capabilités (CAP-13, CAP-14, CAP-15, CAP-16) constituent le **socle 
 
 ## Rattachement ARTSN
 
-- **ART-0** — Accords de partage inter-institutionnels
-- **ART-2** — Médiation et normalisation
-- **F.3** — Éradication des silos technologiques
-- **PT-01** — Profil technique national
+- [ART-0: Accords de partage inter-institutionnels](../chapitres/art-0.md)
+- [ART-2: Médiation et normalisation](../chapitres/art-2.md)
+- [F-3: Éradication des silos technologiques](../fondations/f-3.md)
+- [PT-01: Profil technique national](../profils/pt-01.md)
 
 ## Maturité
 

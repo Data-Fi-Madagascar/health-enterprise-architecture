@@ -7,7 +7,7 @@ title: Engagement patient et identité numérique
 status: draft
 owner: Responsables de capabilités habilitantes
 version: "0.1.0"
-source: 00_caesn/03_capabilities/enabling.md
+envelope: 00_caesn/03_capabilities/enabling.md
 maps_to: ["CAP-INT-01", "CAP-INT-09"]
 implements: []
 applies_to: ["VS-01", "VS-03"]
@@ -25,7 +25,7 @@ La capabilité garantit l'existence d'une identité unique, sécurisée et parta
 - **Identitovigilance** : surveillance et correction des erreurs d'identité, protection contre les usurpations
 - **Engagement du patient** : accès du patient à ses données, participation active à la gestion de sa santé
 
-Cette capabilité est **habilitante** : son absence bloque la continuité des soins (VS-01) et la protection financière (VS-03).
+Cette capabilité est **habilitante** : son absence bloque la continuité des soins ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../flux-valeur/vs-01.md)) et la protection financière ([VS-03: Protéger financièrement la population face aux dépenses de santé](../flux-valeur/vs-03.md)).
 
 ## Flux de valeur
 
@@ -34,10 +34,10 @@ Cette capabilité est **habilitante** : son absence bloque la continuité des so
 
 ## Rattachement ARTSN
 
-- **F.1** — Fondation Identité et registres
-- **ART-4a** — Résolution d'identité
-- **ART-4b** — Bases d'autorisation
-- **PT-04** — Profil technique identité nationale
+- [F-1: Résilience face à la réalité géographique du pays](../fondations/f-1.md)
+- [ART-4A: Résolution d'identité](../chapitres/art-4a.md)
+- [ART-4B: Bases d'autorisation](../chapitres/art-4b.md)
+- [PT-04: Profil technique national](../profils/pt-04.md)
 
 ## Maturité
 

@@ -7,7 +7,7 @@ title: Gouvernance institutionnelle, planification, coordination et redevabilit�
 status: draft
 owner: Responsables de capabilités métier
 version: "0.0.1"
-source: 00_caesn/03_capabilities/business.md
+envelope: 00_caesn/03_capabilities/business.md
 maps_to: []
 implements: []
 applies_to: ["VS-03", "VS-04"]
@@ -26,7 +26,7 @@ Elle couvre :
 - **Pilotage et analytique** : tableaux de bord et restitution de la performance
 - **Redevabilité** : reporting, contrôle et rendu de comptes aux instances de gouvernance
 
-Son absence fragilise le pilotage du système (VS-04) et la protection financière (VS-03).
+Son absence fragilise le pilotage du système ([VS-04: Piloter, coordonner et améliorer la performance du système de santé](../flux-valeur/vs-04.md)) et la protection financière ([VS-03: Protéger financièrement la population face aux dépenses de santé](../flux-valeur/vs-03.md)).
 
 ## Flux de valeur
 
@@ -35,10 +35,10 @@ Son absence fragilise le pilotage du système (VS-04) et la protection financiè
 
 ## Rattachement ARTSN
 
-- **ART-6** — Analytique et restitution
-- **F.6** — Observabilité
-- **PT-09** — Profil technique accès et exposition des données analytiques
-- **PT-13** — Profil technique qualité et réconciliation
+- [ART-6: Analytique et restitution](../chapitres/art-6.md)
+- [F-6: Observabilité](../fondations/f-6.md)
+- [PT-09: Profil technique national](../profils/pt-09.md)
+- [PT-13: Profil technique national](../profils/pt-13.md)
 
 ## Maturité
 

@@ -16,14 +16,14 @@ tags: ["ptisn", "niveau-4", "profils", "PT-11"]
 
 ## 1. Capacité CNISN
 
-**CAP-INT-09 — Gestion des consentements et bases d’autorisation**
+[CAP-INT-09: Gestion des consentements et bases d’autorisation](../../referentiel/capacites/cap-int-09.md)
 
 ## 2. Chapitres ART applicables
 
-- ART-0 ;
+- [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md) ;
 - ART-4b ;
-- ART-7 ;
-- ART-11.
+- [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../referentiel/chapitres/art-7.md) ;
+- [ART-11: Coordination intersectorielle](../../referentiel/chapitres/art-11.md).
 
 ## 3. Position nationale
 

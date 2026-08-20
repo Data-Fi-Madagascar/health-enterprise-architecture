@@ -7,7 +7,7 @@ title: Protection financière, couverture santé universelle
 status: draft
 owner: Responsables de capabilités métier
 version: "0.0.1"
-source: 00_caesn/03_capabilities/business.md
+envelope: 00_caesn/03_capabilities/business.md
 maps_to: []
 implements: []
 applies_to: ["VS-03"]
@@ -26,7 +26,7 @@ Elle couvre :
 - **Application de la protection** : prise en charge et dispense de paiement au point de service
 - **Achat stratégique** : soutien à la contractualisation et au paiement des prestataires
 
-Son absence fragilise la protection financière des ménages (VS-03).
+Son absence fragilise la protection financière des ménages ([VS-03: Protéger financièrement la population face aux dépenses de santé](../flux-valeur/vs-03.md)).
 
 ## Flux de valeur
 
@@ -34,10 +34,10 @@ Son absence fragilise la protection financière des ménages (VS-03).
 
 ## Rattachement ARTSN
 
-- **ART-4** — Référentiels de métadonnées de gestion
-- **ART-4c** — Éligibilité et couverture
-- **PT-04** — Profil technique résolution d'identité du bénéficiaire
-- **PT-12** — Profil technique provenance, audit et traçabilité
+- [ART-4: Référentiels de métadonnées de gestion](../chapitres/art-4.md)
+- [ART-4C: Éligibilité et couverture](../chapitres/art-4c.md)
+- [PT-04: Profil technique national](../profils/pt-04.md)
+- [PT-12: Profil technique national](../profils/pt-12.md)
 
 ## Maturité
 

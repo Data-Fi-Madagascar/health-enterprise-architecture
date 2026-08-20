@@ -6,7 +6,7 @@ title: Registre de schémas (F.3)
 status: draft
 owner: DEPSI
 version: "0.0.1"
-source: 02_artsn/04_cartographie-cible/index.md
+envelope: 02_artsn/04_cartographie-cible/index.md
 maps_to: ["CAP-INT-10"]
 implements: ["ART-5"]
 applies_to: ["PRC-07", "PRC-08"]

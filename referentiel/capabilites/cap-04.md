@@ -7,7 +7,7 @@ title: Santé communautaire et engagement des communautés
 status: draft
 owner: Responsables de capabilités métier
 version: "0.0.1"
-source: 00_caesn/03_capabilities/business.md
+envelope: 00_caesn/03_capabilities/business.md
 maps_to: []
 implements: []
 applies_to: ["VS-01", "VS-02"]
@@ -25,7 +25,7 @@ La capabilité intègre les agents communautaires, les communautés et les patie
 - **Suivi des cas** : accompagnement, observance et lien avec la formation sanitaire
 - **Renforcement de l'offre** : extension de la couverture sanitaire en zone éloignée
 
-Elle renforce la couverture sanitaire sur les flux VS-01 (soins) et VS-02 (surveillance).
+Elle renforce la couverture sanitaire sur les flux [VS-01: soins](../flux-valeur/vs-01.md) et [VS-02: surveillance](../flux-valeur/vs-02.md).
 
 ## Flux de valeur
 
@@ -34,10 +34,10 @@ Elle renforce la couverture sanitaire sur les flux VS-01 (soins) et VS-02 (surve
 
 ## Rattachement ARTSN
 
-- **F.1** — Résilience face à la réalité géographique du pays
-- **ART-2** — Médiation et normalisation
-- **PT-02** — Médiation intra-secteur
-- **F.6** — Observabilité
+- [F-1: Résilience face à la réalité géographique du pays](../fondations/f-1.md)
+- [ART-2: Médiation et normalisation](../chapitres/art-2.md)
+- [PT-02: Profil technique national](../profils/pt-02.md)
+- [F-6: Observabilité](../fondations/f-6.md)
 
 ## Maturité
 

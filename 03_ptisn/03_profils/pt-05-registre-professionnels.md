@@ -16,13 +16,13 @@ tags: ["ptisn", "niveau-4", "profils", "PT-05"]
 
 ## 1. Capacité CNISN
 
-Déclinaison de **CAP-INT-02**, complétée par les capacités relatives à la gouvernance des professionnels.
+Déclinaison de [CAP-INT-02: Registre et résolution des professionnels de santé](../../referentiel/capacites/cap-int-02.md), complétée par les capacités relatives à la gouvernance des professionnels.
 
 ## 2. Chapitres ART applicables
 
-- ART-4 ;
+- [ART-4: Référentiels de métadonnées de gestion](../../referentiel/chapitres/art-4.md) ;
 - ART-4a — Résolution d'identité ;
-- ART-7.
+- [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../referentiel/chapitres/art-7.md).
 
 ## 3. Service national
 

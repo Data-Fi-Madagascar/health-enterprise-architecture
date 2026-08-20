@@ -7,7 +7,7 @@ title: Surveillance épidémiologique, alerte, investigation et riposte
 status: draft
 owner: Responsables de capabilités métier
 version: "0.1.0"
-source: 00_caesn/03_capabilities/business.md
+envelope: 00_caesn/03_capabilities/business.md
 maps_to: []
 implements: []
 applies_to: ["VS-02"]
@@ -32,7 +32,7 @@ La capabilité inclut désormais la **dimension géospatiale** :
 - **Suivi temporel** : analyse des tendances épidémiques par zone géographique
 - **Cloisonnement One Health** : surveillance conjointe santé humaine/animale/environnement par zone
 
-Son absence fragilise la surveillance sanitaire (VS-02).
+Son absence fragilise la surveillance sanitaire ([VS-02: Prévenir, détecter et répondre aux risques sanitaires](../flux-valeur/vs-02.md)).
 
 ## Flux de valeur
 
@@ -40,10 +40,10 @@ Son absence fragilise la surveillance sanitaire (VS-02).
 
 ## Rattachement ARTSN
 
-- **F.1** — Résilience face à la réalité géographique du pays
-- **ART-4d** — Référentiel géospatial et d'exploitation partagé
-- **PT-05** — Profil technique géolocalisation
-- **PT-15** — Surveillance One Health
+- [F-1: Résilience face à la réalité géographique du pays](../fondations/f-1.md)
+- [ART-4D: Référentiel géospatial et d'exploitation partagé](../chapitres/art-4d.md)
+- [PT-05: Profil technique national](../profils/pt-05.md)
+- [PT-15: Surveillance One Health](../profils/pt-15.md)
 
 ## Maturité
 

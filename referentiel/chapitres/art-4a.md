@@ -7,7 +7,7 @@ title: Résolution d'identité
 status: draft
 owner: DEPSI
 version: "0.0.1"
-source: 02_artsn/03_chapitres/art-4a-resolution-identite.md
+envelope: 02_artsn/03_chapitres/art-4a-resolution-identite.md
 maps_to: ["CAP-04"]
 implements: []
 applies_to: ["ENF-3"]

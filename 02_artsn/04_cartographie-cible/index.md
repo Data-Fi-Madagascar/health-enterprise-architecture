@@ -120,7 +120,7 @@ Les chapitres et patterns de référence constituent le socle normatif de cette 
 
 ### Tableaux de bord & Portails nationaux
 
-**Contenu normatif.** Ce composant agrège les projections analytiques (Couche 5) et expose des tableaux de bord unifiés pour le pilotage national : performance sanitaire, suivi CSU, gestion des ressources et veille environnementale. L'accès y est cloisonné par profil (décideurs, SIS, partenaires). Il interopère avec l'entrepôt Lakehouse (CMP-03) et le moteur analytique (CMP-04).
+**Contenu normatif.** Ce composant agrège les projections analytiques (Couche 5) et expose des tableaux de bord unifiés pour le pilotage national : performance sanitaire, suivi CSU, gestion des ressources et veille environnementale. L'accès y est cloisonné par profil (décideurs, SIS, partenaires). Il interopère avec l'entrepôt Lakehouse ([CMP-03: Entrepôt Lakehouse & Projections analytiques (pipeline ETL, Lakehouse, projections)](../../referentiel/composants/cmp-03.md)) et le moteur analytique ([CMP-04: Moteur analytique & IA (IA prédictive, routeur alertes, Grand Livre)](../../referentiel/composants/cmp-04.md)).
 
 **Discipline de mise en œuvre.** Il constitue la seule source de vérité décisionnelle pour l'État ; tout indicateur officiel y transite. Il garantit l'unicité des métriques et la traçabilité des calculs.
 
@@ -132,7 +132,7 @@ Les chapitres et patterns de référence constituent le socle normatif de cette 
 
 ### Centre de commande & Crises intersectorielles
 
-**Contenu normatif.** Ce composant constitue le centre unique de supervision des alertes épidémiques et de coordination des crises intersectorielles (santé, élevage, environnement). Il agrège les signaux de la surveillance (CMP-14), du moteur d'alertes (CMP-04) et des registres de gouvernance (CMP-17), et fournit une vue en temps réel pour la prise de décision multi-ministérielle.
+**Contenu normatif.** Ce composant constitue le centre unique de supervision des alertes épidémiques et de coordination des crises intersectorielles (santé, élevage, environnement). Il agrège les signaux de la surveillance ([CMP-14: Registre des produits, intrants et indicateurs](../../referentiel/composants/cmp-14.md)), du moteur d'alertes ([CMP-04: Moteur analytique & IA (IA prédictive, routeur alertes, Grand Livre)](../../referentiel/composants/cmp-04.md)) et des registres de gouvernance ([CMP-17: Message broker asynchrone](../../referentiel/composants/cmp-17.md)), et fournit une vue en temps réel pour la prise de décision multi-ministérielle.
 
 **Discipline de mise en œuvre.** Il est le point de convergence obligatoire de toute riposte coordonnée ; sans lui, les secteurs agissent en silos et la riposte reste fragmentée.
 
@@ -144,9 +144,9 @@ Les chapitres et patterns de référence constituent le socle normatif de cette 
 
 ### Entrepôt Lakehouse & Projections analytiques
 
-**Contenu normatif.** Ce composant assure le stockage analytique central (Lakehouse) en recevant les flux ETL depuis la Couche 4. Il exécute les projections tabulaires, la réconciliation du Grand Livre (ART-9) et alimente les tableaux de bord (CMP-01). La séparation stricte CQRS (ART-6) interdit tout traitement transactionnel.
+**Contenu normatif.** Ce composant assure le stockage analytique central (Lakehouse) en recevant les flux ETL depuis la Couche 4. Il exécute les projections tabulaires, la réconciliation du Grand Livre ([ART-9: Garanties transactionnelles fortes](../../referentiel/chapitres/art-9.md)) et alimente les tableaux de bord ([CMP-01: Tableaux de bord & Portails nationaux (performance, CSU, ressources, veille)](../../referentiel/composants/cmp-01.md)). La séparation stricte CQRS ([ART-6: Analytique et restitution](../../referentiel/chapitres/art-6.md)) interdit tout traitement transactionnel.
 
-**Discipline de mise en œuvre.** Il garantit l'intégrité analytique (ENF-5) et l'irréversibilité du masquage des identités. Toute analyse officielle passe par cet entrepôt.
+**Discipline de mise en œuvre.** Il garantit l'intégrité analytique ([ENF-5: Coordination des processus complexes décentralisés et asynchrones](../../referentiel/exigences/enf-5.md)) et l'irréversibilité du masquage des identités. Toute analyse officielle passe par cet entrepôt.
 
 - **Rattachement** : [ART-6](../../referentiel/chapitres/art-6.md) (CQRS), [ART-9](../../referentiel/chapitres/art-9.md) (Grand Livre), [CAP-INT-07: Accès et exposition des données analytiques](../../referentiel/capacites/cap-int-07.md), [CAP-INT-11: Qualité et réconciliation](../../referentiel/capacites/cap-int-11.md).
 - **Processus soutenus** : [PRC-09: Remboursement et régulation des mécanismes](../../referentiel/processus/prc-09.md) (remboursement), [PRC-11: Suivi et pilotage de la performance](../../referentiel/processus/prc-11.md) (pilotage).
@@ -156,9 +156,9 @@ Les chapitres et patterns de référence constituent le socle normatif de cette 
 
 ### Moteur analytique & IA
 
-**Contenu normatif.** Ce composant exécute les modèles prédictifs (IA), le routeur d'escalade et d'alertes (ART-5) et la réconciliation analytique du Grand Livre (ART-9). Il consomme l'entrepôt Lakehouse (CMP-03) et alimente le centre de commande (CMP-02) ainsi que la facturation (CMP-10).
+**Contenu normatif.** Ce composant exécute les modèles prédictifs (IA), le routeur d'escalade et d'alertes ([ART-5: Cohérence et qualité des données](../../referentiel/chapitres/art-5.md)) et la réconciliation analytique du Grand Livre ([ART-9: Garanties transactionnelles fortes](../../referentiel/chapitres/art-9.md)). Il consomme l'entrepôt Lakehouse ([CMP-03: Entrepôt Lakehouse & Projections analytiques (pipeline ETL, Lakehouse, projections)](../../referentiel/composants/cmp-03.md)) et alimente le centre de commande ([CMP-02: Centre de commande & Crises intersectorielles (alertes, crises, veille)](../../referentiel/composants/cmp-02.md)) ainsi que la facturation ([CMP-10: Registre des terminologies](../../referentiel/composants/cmp-10.md)).
 
-**Discipline de mise en œuvre.** Il sépare l'inférence analytique du stockage et garantit la traçabilité des modèles (versionnage, données d'entraînement) ainsi que l'audit des décisions automatisées (ENF-2, ENF-5).
+**Discipline de mise en œuvre.** Il sépare l'inférence analytique du stockage et garantit la traçabilité des modèles (versionnage, données d'entraînement) ainsi que l'audit des décisions automatisées ([ENF-2: Intégrité des flux et traçabilité des valeurs](../../referentiel/exigences/enf-2.md), [ENF-5: Coordination des processus complexes décentralisés et asynchrones](../../referentiel/exigences/enf-5.md)).
 
 - **Rattachement** : [ART-5](../../referentiel/chapitres/art-5.md) (alertes), [ART-9](../../referentiel/chapitres/art-9.md) (Grand Livre), [CAP-INT-07: Accès et exposition des données analytiques](../../referentiel/capacites/cap-int-07.md), [CAP-INT-10: Provenance, audit et traçabilité](../../referentiel/capacites/cap-int-10.md).
 - **Processus soutenus** : [PRC-09: Remboursement et régulation des mécanismes](../../referentiel/processus/prc-09.md) (remboursement), [PRC-05: Alerte, investigation et riposte](../../referentiel/processus/prc-05.md) (alerte/riposte).
@@ -170,7 +170,7 @@ Les chapitres et patterns de référence constituent le socle normatif de cette 
 
 **Contenu normatif.** Ce composant gère le graphe de relations entre entités (patients, structures, personnels, produits) et le référentiel spatio-temporel unifié (ART-4d). Il sert les requêtes de parcours, la détection de clusters épidémiques et l'analyse de réseaux.
 
-**Discipline de mise en œuvre.** Il garantit la cohérence topologique du graphe national et la résilience spatiale (ENF-4). Toute requête de navigation relationnelle passe par ce composant.
+**Discipline de mise en œuvre.** Il garantit la cohérence topologique du graphe national et la résilience spatiale ([ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md)). Toute requête de navigation relationnelle passe par ce composant.
 
 - **Rattachement** : [ART-8b](../../referentiel/chapitres/art-8b.md) (graphe), [ART-4d](../../referentiel/chapitres/art-4d.md) (spatio-temporel), [CAP-INT-03: Échange et médiation inter-systèmes](../../referentiel/capacites/cap-int-03.md), [CAP-INT-12: Conformité et tests d’interopérabilité](../../referentiel/capacites/cap-int-12.md).
 - **Statut : Stable.**
@@ -179,9 +179,9 @@ Les chapitres et patterns de référence constituent le socle normatif de cette 
 
 ### Intégration, Médiation, API Gateway, Broker & Registre schémas
 
-**Contenu normatif.** Ce composant constitue le point d'entrée unique de la plateforme : API Gateway (contrats, throttling, authentification), message broker asynchrone (files d'attente, durabilité), registre de schémas (F.3 — versioning, compatibilité ascendante/descendante) et moteur de médiation sémantique (ART-2 — transformation, normalisation, enrichissement).
+**Contenu normatif.** Ce composant constitue le point d'entrée unique de la plateforme : API Gateway (contrats, throttling, authentification), message broker asynchrone (files d'attente, durabilité), registre de schémas (F.3 — versioning, compatibilité ascendante/descendante) et moteur de médiation sémantique ([ART-2: transformation](../../referentiel/chapitres/art-2.md)f.** Ce composant constitue le point d'entrée unique de la plateforme : API Gateway (contrats, throttling, authentification), message broker asynchrone (files d'attente, durabilité), registre de schémas (F.3 — versioning, compatibilité ascendante/descendante) et moteur de médiation sémantique ([ART-2: transformation](../../referentiel/chapitres/art-2.md)f.** Ce composant constitue le point d'entrée unique de la plateforme : API Gateway (contrats, throttling, authentification), message broker asynchrone (files d'attente, durabilité), registre de schémas (F.3 — versioning, compatibilité ascendante/descendante) et moteur de médiation sémantique ([ART-2: transformation](../../referentiel/chapitres/art-2.md)f.** Ce composant constitue le point d'entrée unique de la plateforme : API Gateway (contrats, throttling, authentification), message broker asynchrone (files d'attente, durabilité), registre de schémas (F.3 — versioning, compatibilité ascendante/descendante) et moteur de médiation sémantique (ART-2 — transformation, normalisation, enrichissement).
 
-**Discipline de mise en œuvre.** Il forme la bordure de la plateforme ; tout flux entrant ou sortant le traverse. Il garantit l'éradication des silos (F.3) et la conformité aux contrats (ENF-1, ENF-3).
+**Discipline de mise en œuvre.** Il forme la bordure de la plateforme ; tout flux entrant ou sortant le traverse. Il garantit l'éradication des silos (F.3) et la conformité aux contrats ([ENF-1: Résilience à l'instabilité réseau](../../referentiel/exigences/enf-1.md), [ENF-3: Unicité de l'identité et résilience face à la fragmentation applicative](../../referentiel/exigences/enf-3.md)).
 
 - **Rattachement** : [ART-1](../../referentiel/chapitres/art-1.md) (ingestion), [ART-2](../../referentiel/chapitres/art-2.md) (médiation), [F.3](../../referentiel/fondations/f-3.md) (schémas), [CAP-INT-01: Résolution d’identité du bénéficiaire](../../referentiel/capacites/cap-int-01.md), [CAP-INT-03: Échange et médiation inter-systèmes](../../referentiel/capacites/cap-int-03.md).
 - **Statut : Stable.**
@@ -212,7 +212,7 @@ Les chapitres et patterns de référence constituent le socle normatif de cette 
 
 *Rattachement : PRC-04, PRC-05, CAP-INT-09, ART-4 · fiche CMP-08*
 
-### Référentiel des métadonnées d'exploitation (ART-4)
+### Référentiel des métadonnées d'exploitation ([ART-4: Référentiels de métadonnées de gestion](../../referentiel/chapitres/art-4.md))
 
 **Contenu normatif.** Ce composant définit et gère les métadonnées d'exploitation : nomenclatures, codifications et standards de données. Il assure l'interopérabilité sémantique entre les systèmes et garantit l'utilisation cohérente des terminologies et classifications.
 

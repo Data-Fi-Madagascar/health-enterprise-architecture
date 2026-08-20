@@ -16,15 +16,15 @@ tags: ["ptisn", "niveau-4", "profils", "PT-12"]
 
 ## 1. Capacité CNISN
 
-**CAP-INT-10 — Provenance, audit et traçabilité**
+[CAP-INT-10: Provenance, audit et traçabilité](../../referentiel/capacites/cap-int-10.md)
 
 ## 2. Chapitres ART applicables
 
 - F.1 ;
 - F.5 ;
 - F.6 ;
-- ART-3 ;
-- ART-7.
+- [ART-3: Historisation événementielle et profils de déploiement](../../referentiel/chapitres/art-3.md) ;
+- [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../referentiel/chapitres/art-7.md).
 
 ## 3. Services distincts
 

@@ -7,7 +7,7 @@ status: active
 owner: DEPSI
 version: "0.5"
 family: confiance
-source: 01_cnisn/02_capacites/index.md
+envelope: 01_cnisn/02_capacites/index.md
 maps_to: ["P-INT-07", "P-INT-17", "P-INT-18", "P-INT-23", "CAP-13", "CAP-15"]
 implements: []
 applies_to: []
@@ -39,4 +39,8 @@ Permettre de comprendre :
 
 ### Principes associés
 
-P-INT-07, P-INT-17, P-INT-18 et P-INT-23.
+- [P-INT-07: Responsabilité de la donnée](../principes/p-int-07.md)
+- [P-INT-17: Minimisation](../principes/p-int-17.md)
+- [P-INT-18: Traçabilité différenciée](../principes/p-int-18.md)
+- [P-INT-23: Conformité fondée sur des preuves](../principes/p-int-23.md)
+

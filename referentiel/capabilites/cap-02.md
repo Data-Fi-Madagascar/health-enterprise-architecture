@@ -7,7 +7,7 @@ title: Gestion du parcours patient, référence et contre-référence
 status: draft
 owner: Responsables de capabilités métier
 version: "0.1"
-source: 00_caesn/03_capabilities/business.md
+envelope: 00_caesn/03_capabilities/business.md
 maps_to: ["CAP-INT-03", "CAP-INT-01", "CAP-INT-13"]
 implements: []
 applies_to: ["VS-01"]
@@ -25,16 +25,16 @@ La capabilité organise le parcours du patient entre les points de service : ori
 - **Contre-référence** : retour vers l'établissement d'origine avec compte-rendu et recommandations
 - **Évacuation sanitaire** : transferts urgents nationaux et internationaux
 
-Son absence fragilise la continuité des soins (VS-01) et provoque des ruptures de parcours.
+Son absence fragilise la continuité des soins ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../flux-valeur/vs-01.md)) et provoque des ruptures de parcours.
 
 ## Scénarios couverts
 
 | Scénario | Description | Profils consommés |
 |----------|-------------|-------------------|
-| **Référence (S-03)** | Orientation d'un patient d'un niveau de soins vers un autre (CSB → hôpital régional) | PT-01, PT-02 |
-| **Contre-référence (S-04)** | Retour du patient vers l'établissement d'origine avec compte-rendu et recommandations | PT-01, PT-02 |
-| **Évacuation sanitaire nationale (S-05)** | Transfert urgent entre établissements nationaux | PT-01, PT-02, PT-11 |
-| **Évacuation sanitaire internationale (S-05)** | Transfert vers un centre spécialisé à l'étranger | PT-01, PT-02, PT-11, PT-14 |
+| **Référence (S-03)** | Orientation d'un patient d'un niveau de soins vers un autre (CSB → hôpital régional) | [PT-01: Profil technique national](../profils/pt-01.md), [PT-02: Profil technique national](../profils/pt-02.md) |
+| **Contre-référence (S-04)** | Retour du patient vers l'établissement d'origine avec compte-rendu et recommandations | [PT-01: Profil technique national](../profils/pt-01.md), [PT-02: Profil technique national](../profils/pt-02.md) |
+| **Évacuation sanitaire nationale (S-05)** | Transfert urgent entre établissements nationaux | [PT-01: Profil technique national](../profils/pt-01.md), [PT-02: Profil technique national](../profils/pt-02.md), [PT-11: Profil technique national](../profils/pt-11.md) |
+| **Évacuation sanitaire internationale (S-05)** | Transfert vers un centre spécialisé à l'étranger | [PT-01: Profil technique national](../profils/pt-01.md), [PT-02: Profil technique national](../profils/pt-02.md), [PT-11: Profil technique national](../profils/pt-11.md), [PT-14: Interopérabilité transfrontalière](../profils/pt-14.md) |
 
 ## Flux de valeur
 
@@ -42,10 +42,10 @@ Son absence fragilise la continuité des soins (VS-01) et provoque des ruptures 
 
 ## Rattachement ARTSN
 
-- **ART-8** — Orchestration de processus
-- **ART-3** — Historisation événementielle et profils de déploiement
-- **PT-01** — Échange interinstitutionnel (X-Road)
-- **PT-02** — Médiation intra-secteur
+- [ART-8: Orchestration de processus](../chapitres/art-8.md)
+- [ART-3: Historisation événementielle et profils de déploiement](../chapitres/art-3.md)
+- [PT-01: Profil technique national](../profils/pt-01.md)
+- [PT-02: Profil technique national](../profils/pt-02.md)
 
 ## Maturité
 

@@ -7,7 +7,7 @@ title: Finances publiques, budget et allocation des ressources
 status: draft
 owner: Responsables de capabilités habilitantes
 version: "0.0.1"
-source: 00_caesn/03_capabilities/enabling.md
+envelope: 00_caesn/03_capabilities/enabling.md
 maps_to: []
 implements: []
 applies_to: ["VS-03", "VS-04"]
@@ -28,7 +28,7 @@ Elle couvre :
 - **Soutenabilité des financements** : mobilisation et protection des ressources à long terme
 - **Couverture et protection financière** : appui à l’éligibilité et au tiers-payant (CSU)
 
-Son absence compromet la protection financière des ménages (VS-03) et le pilotage du système (VS-04).
+Son absence compromet la protection financière des ménages ([VS-03: Protéger financièrement la population face aux dépenses de santé](../flux-valeur/vs-03.md)) et le pilotage du système ([VS-04: Piloter, coordonner et améliorer la performance du système de santé](../flux-valeur/vs-04.md)).
 
 ## Flux de valeur
 
@@ -37,9 +37,9 @@ Son absence compromet la protection financière des ménages (VS-03) et le pilot
 
 ## Rattachement ARTSN
 
-- **ART-4c** — Éligibilité et couverture
-- **F.2** — Préservation de la souveraineté intersectorielle
-- **ART-4** — Référentiels de métadonnées de gestion
+- [ART-4C: Éligibilité et couverture](../chapitres/art-4c.md)
+- [F-2: Préservation de la souveraineté intersectorielle](../fondations/f-2.md)
+- [ART-4: Référentiels de métadonnées de gestion](../chapitres/art-4.md)
 
 ## Maturité
 

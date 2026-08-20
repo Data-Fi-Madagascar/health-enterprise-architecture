@@ -7,7 +7,7 @@ status: active
 owner: DEPSI
 version: "0.5"
 family: qualite-conformite
-source: 01_cnisn/02_capacites/index.md
+envelope: 01_cnisn/02_capacites/index.md
 maps_to: ["P-INT-19", "P-INT-20", "P-INT-21", "P-INT-22", "P-INT-23", "P-INT-24", "P-INT-25", "CAP-14", "CAP-16"]
 implements: []
 applies_to: []
@@ -36,7 +36,13 @@ Permettre de vérifier objectivement qu’un système respecte les contrats et p
 
 ### Principes associés
 
-P-INT-19 à P-INT-25.
+- [P-INT-19: Neutralité technologique](../principes/p-int-19.md)
+- [P-INT-20: Portabilité et réversibilité](../principes/p-int-20.md)
+- [P-INT-21: Progressivité](../principes/p-int-21.md)
+- [P-INT-22: Fonctionnement en connectivité contrainte](../principes/p-int-22.md)
+- [P-INT-23: Conformité fondée sur des preuves](../principes/p-int-23.md)
+- [P-INT-24: Applicabilité déclarée](../principes/p-int-24.md)
+- [P-INT-25: Réévaluation continue](../principes/p-int-25.md)
 
 ### Réponse nationale
 

@@ -6,7 +6,7 @@ title: Alerte, investigation et riposte
 status: draft
 owner: Direction de la protection sociale et de la promotion de la santé
 version: "0.0.1"
-source: 00_caesn/01_value-streams/vs-02-risk-protection.md
+envelope: 00_caesn/01_value-streams/vs-02-risk-protection.md
 maps_to: []
 implements: []
 applies_to: ["CAP-04", "CAP-05", "CAP-06", "CAP-09", "CAP-10", "CAP-11", "CAP-13", "CAP-14", "CAP-15", "PP-03", "PP-04", "PP-07", "PP-08", "CMP-02", "CMP-04", "CMP-06", "CMP-07", "CMP-08", "CMP-11", "CMP-13", "CMP-14", "CMP-15", "CMP-17", "CMP-18"]

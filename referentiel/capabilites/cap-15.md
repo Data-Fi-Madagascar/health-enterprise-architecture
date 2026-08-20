@@ -7,7 +7,7 @@ title: Cybersécurité, confidentialité et gouvernance des données personnelle
 status: draft
 owner: Responsables de capabilités habilitantes
 version: "0.0.1"
-source: 00_caesn/03_capabilities/enabling.md
+envelope: 00_caesn/03_capabilities/enabling.md
 maps_to: []
 implements: []
 applies_to: ["VS-01", "VS-02", "VS-03", "VS-04"]
@@ -25,7 +25,7 @@ La capabilité garantit la confiance, la sécurité, la confidentialité et la p
 - **Confidentialité** : minimisation, consentement et protection des données personnelles
 - **Gouvernance de la sécurité** : homologation, conformité et responsabilité
 
-Ces quatre capabilités (CAP-13, CAP-14, CAP-15, CAP-16) constituent le **socle commun (architecture runway)** dont l’absence bloque de nombreuses initiatives.
+Ces quatre capabilités ([CAP-13: Système d'information sanitaire, données et recherche](cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](cap-14.md), [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](cap-15.md), [CAP-16: Gestion du portefeuille d'initiatives numériques](cap-16.md)) constituent le **socle commun (architecture runway)** dont l’absence bloque de nombreuses initiatives.
 
 ## Flux de valeur
 
@@ -36,8 +36,8 @@ Ces quatre capabilités (CAP-13, CAP-14, CAP-15, CAP-16) constituent le **socle 
 
 ## Rattachement ARTSN
 
-- **ART-7** — Sécurité, contrôle d'accès et résidence de la donnée
-- **F.4** — Homologation obligatoire
+- [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../chapitres/art-7.md)
+- [F-4: Homologation obligatoire](../fondations/f-4.md)
 
 ## Maturité
 

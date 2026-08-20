@@ -76,7 +76,7 @@ Ce flux couvre l’ensemble du cycle de la couverture santé universelle, depuis
 
 #### Objectif
 
-Réaliser l'étape de valeur « Identification et enregistrement des bénéficiaires » du flux VS-03.
+Réaliser l'étape de valeur « Identification et enregistrement des bénéficiaires » du flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md).
 
 #### Entrées
 
@@ -104,7 +104,7 @@ Taux de couverture du registre, taux d'exclusion estimé
 
 #### Objectif
 
-Réaliser l'étape de valeur « Définition des droits et du panier de soins » du flux VS-03.
+Réaliser l'étape de valeur « Définition des droits et du panier de soins » du flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md).
 
 #### Entrées
 
@@ -132,7 +132,7 @@ Proportion de formations sanitaires informées des droits
 
 #### Objectif
 
-Réaliser l'étape de valeur « Mobilisation des financements » du flux VS-03.
+Réaliser l'étape de valeur « Mobilisation des financements » du flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md).
 
 #### Entrées
 
@@ -160,7 +160,7 @@ Taux d'exécution budgétaire, part du budget santé allouée à la protection f
 
 #### Objectif
 
-Réaliser l'étape de valeur « Prise en charge et exemption au point de service » du flux VS-03.
+Réaliser l'étape de valeur « Prise en charge et exemption au point de service » du flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md).
 
 #### Entrées
 
@@ -188,7 +188,7 @@ Taux d'exemption appliqué, taux de refus de soins signalés
 
 #### Objectif
 
-Réaliser l'étape de valeur « Facturation et traitement des demandes de remboursement » du flux VS-03.
+Réaliser l'étape de valeur « Facturation et traitement des demandes de remboursement » du flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md).
 
 #### Entrées
 
@@ -216,7 +216,7 @@ Taux de factures rejetées, délai de validation des factures
 
 #### Objectif
 
-Réaliser l'étape de valeur « Remboursement » du flux VS-03.
+Réaliser l'étape de valeur « Remboursement » du flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md).
 
 #### Entrées
 
@@ -244,7 +244,7 @@ Délai moyen de remboursement, taux de remboursement effectif
 
 #### Objectif
 
-Réaliser l'étape de valeur « Contrôle, audit et ajustement des mécanismes » du flux VS-03.
+Réaliser l'étape de valeur « Contrôle, audit et ajustement des mécanismes » du flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md).
 
 #### Entrées
 

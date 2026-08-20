@@ -7,7 +7,7 @@ title: Vaccination, prévention et promotion de la santé
 status: draft
 owner: Responsables de capabilités métier
 version: "0.0.1"
-source: 00_caesn/03_capabilities/business.md
+envelope: 00_caesn/03_capabilities/business.md
 maps_to: []
 implements: []
 applies_to: ["VS-02"]
@@ -26,7 +26,7 @@ Elle couvre :
 - **Campagnes sanitaires** : organisation et monitoring des campagnes de prévention
 - **Surveillance des risques** : identification des facteurs de risque et des populations cibles
 
-Son absence fragilise la prévention et la surveillance sanitaire (VS-02).
+Son absence fragilise la prévention et la surveillance sanitaire ([VS-02: Prévenir, détecter et répondre aux risques sanitaires](../flux-valeur/vs-02.md)).
 
 ## Flux de valeur
 
@@ -34,10 +34,10 @@ Son absence fragilise la prévention et la surveillance sanitaire (VS-02).
 
 ## Rattachement ARTSN
 
-- **ART-4** — Référentiels de métadonnées de gestion
-- **ART-6** — Analytique et restitution
-- **PT-06** — Profil technique référentiel des structures et services de santé
-- **PT-07** — Profil technique terminologie et codification communes
+- [ART-4: Référentiels de métadonnées de gestion](../chapitres/art-4.md)
+- [ART-6: Analytique et restitution](../chapitres/art-6.md)
+- [PT-06: Profil technique national](../profils/pt-06.md)
+- [PT-07: Profil technique national](../profils/pt-07.md)
 
 ## Maturité
 

@@ -7,7 +7,7 @@ title: Sécurité, contrôle d'accès et résidence de la donnée
 status: draft
 owner: DEPSI
 version: "0.0.1"
-source: 02_artsn/03_chapitres/art-7-securite-controle-acces.md
+envelope: 02_artsn/03_chapitres/art-7-securite-controle-acces.md
 maps_to: ["CAP-15"]
 implements: []
 applies_to: ["ENF-1"]

@@ -77,7 +77,7 @@ Ce flux transversal conditionne l’efficacité de tous les autres. Il couvre l�
 
 #### Objectif
 
-Réaliser l'étape de valeur « Définition des priorités et planification » du flux VS-04.
+Réaliser l'étape de valeur « Définition des priorités et planification » du flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md).
 
 #### Entrées
 
@@ -105,7 +105,7 @@ Proportion de plans opérationnels alignés sur le PDSS et la SNSD
 
 #### Objectif
 
-Réaliser l'étape de valeur « Budgétisation et allocation des ressources » du flux VS-04.
+Réaliser l'étape de valeur « Budgétisation et allocation des ressources » du flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md).
 
 #### Entrées
 
@@ -133,7 +133,7 @@ Taux d'exécution budgétaire, part du budget national allouée à la santé
 
 #### Objectif
 
-Réaliser l'étape de valeur « Coordination des acteurs et alignement des partenaires » du flux VS-04.
+Réaliser l'étape de valeur « Coordination des acteurs et alignement des partenaires » du flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md).
 
 #### Entrées
 
@@ -161,7 +161,7 @@ Proportion d'initiatives partenaires alignées sur le portefeuille national
 
 #### Objectif
 
-Réaliser l'étape de valeur « Suivi de l'exécution » du flux VS-04.
+Réaliser l'étape de valeur « Suivi de l'exécution » du flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md).
 
 #### Entrées
 
@@ -189,7 +189,7 @@ Complétude et promptitude des rapports, taux d'utilisation des tableaux de bord
 
 #### Objectif
 
-Réaliser l'étape de valeur « Analyse de la performance et prise de décision » du flux VS-04.
+Réaliser l'étape de valeur « Analyse de la performance et prise de décision » du flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md).
 
 #### Entrées
 
@@ -217,7 +217,7 @@ Nombre de revues de performance, proportion de décisions documentées
 
 #### Objectif
 
-Réaliser l'étape de valeur « Redevabilité et communication publique » du flux VS-04.
+Réaliser l'étape de valeur « Redevabilité et communication publique » du flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md).
 
 #### Entrées
 
@@ -245,7 +245,7 @@ Existence et publication de rapports annuels de performance
 
 #### Objectif
 
-Réaliser l'étape de valeur « Amélioration continue » du flux VS-04.
+Réaliser l'étape de valeur « Amélioration continue » du flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md).
 
 #### Entrées
 

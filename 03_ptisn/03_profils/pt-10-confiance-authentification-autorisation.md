@@ -16,14 +16,14 @@ tags: ["ptisn", "niveau-4", "profils", "PT-10"]
 
 ## 1. Capacité CNISN
 
-**CAP-INT-08 — Confiance, sécurité et autorisation**
+[CAP-INT-08: Confiance, sécurité et autorisation](../../referentiel/capacites/cap-int-08.md)
 
 ## 2. Chapitres ART applicables
 
-- ART-0 ;
+- [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md) ;
 - ART-4b ;
-- ART-7 ;
-- ART-9 lorsque applicable.
+- [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../referentiel/chapitres/art-7.md) ;
+- [ART-9: Garanties transactionnelles fortes](../../referentiel/chapitres/art-9.md) lorsque applicable.
 
 ## 3. Services nationaux
 

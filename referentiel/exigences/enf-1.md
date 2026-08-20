@@ -7,7 +7,7 @@ title: Résilience à l'instabilité réseau
 status: draft
 owner: DEPSI
 version: "0.0.1"
-source: 02_artsn/02_exigences-contextuelles/index.md
+envelope: 02_artsn/02_exigences-contextuelles/index.md
 maps_to: []
 implements: []
 applies_to: []
@@ -26,21 +26,21 @@ La connectivité internet et mobile reste asymétrique, intermittente ou absente
 
 ## Capabilités concernées
 
-- **CAP-13** — Système d'information sanitaire, données et recherche
-- **CAP-14** — Interopérabilité, référentiels nationaux et infrastructure numérique partagée
-- **CAP-15** — Cybersécurité, confidentialité et gouvernance des données personnelles
+- [CAP-13: Système d'information sanitaire, données et recherche](../capabilites/cap-13.md) — Système d'information sanitaire, données et recherche
+- [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../capabilites/cap-14.md) — Interopérabilité, référentiels nationaux et infrastructure numérique partagée
+- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../capabilites/cap-15.md) — Cybersécurité, confidentialité et gouvernance des données personnelles
 
 ## Parties prenantes concernées
 
-- **PP-05** — Agent de santé
-- **PP-06** — Formation sanitaire
-- **PP-10** — Équipes techniques (DEPSI / SIS)
+- [PP-05: Agent de santé](../parties-prenantes/pp-05.md) — Agent de santé
+- [PP-06: Formation sanitaire](../parties-prenantes/pp-06.md) — Formation sanitaire
+- [PP-10: Équipes techniques (DEPSI / SIS)](../parties-prenantes/pp-10.md) — Équipes techniques (DEPSI / SIS)
 
 ## Fondations et chapitres garants
 
 - **F.1** — Résilience face à la réalité géographique du pays
-- **ART-1** — Intégration et ingestion
-- **ART-3** — Historisation événementielle et profils de déploiement
-- **ART-7** — Sécurité, contrôle d'accès et résidence de la donnée
+- [ART-1: Intégration et ingestion](../chapitres/art-1.md) — Intégration et ingestion
+- [ART-3: Historisation événementielle et profils de déploiement](../chapitres/art-3.md) — Historisation événementielle et profils de déploiement
+- [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../chapitres/art-7.md) — Sécurité, contrôle d'accès et résidence de la donnée
 - **ART-8c** — Agrégation par lot
 - **ART-4c** — Éligibilité et couverture

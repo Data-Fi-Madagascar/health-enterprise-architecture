@@ -7,7 +7,7 @@ title: Unicité de l'identité et résilience face à la fragmentation applicati
 status: draft
 owner: DEPSI
 version: "0.0.1"
-source: 02_artsn/02_exigences-contextuelles/index.md
+envelope: 02_artsn/02_exigences-contextuelles/index.md
 maps_to: []
 implements: []
 applies_to: []
@@ -28,17 +28,17 @@ Le paysage numérique historique est marqué par une dispersion de solutions et 
 
 ## Capabilités concernées
 
-- **CAP-17** — Engagement patient et identité numérique
-- **CAP-14** — Interopérabilité, référentiels nationaux et infrastructure numérique partagée
-- **CAP-13** — Système d'information sanitaire, données et recherche
+- [CAP-17: Engagement patient et identité numérique](../capabilites/cap-17.md) — Engagement patient et identité numérique
+- [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../capabilites/cap-14.md) — Interopérabilité, référentiels nationaux et infrastructure numérique partagée
+- [CAP-13: Système d'information sanitaire, données et recherche](../capabilites/cap-13.md) — Système d'information sanitaire, données et recherche
 
 ## Parties prenantes concernées
 
-- **PP-01** — Patient et usager
-- **PP-06** — Formation sanitaire
-- **PP-10** — Équipes techniques (DEPSI / SIS)
+- [PP-01: Patient et usager](../parties-prenantes/pp-01.md) — Patient et usager
+- [PP-06: Formation sanitaire](../parties-prenantes/pp-06.md) — Formation sanitaire
+- [PP-10: Équipes techniques (DEPSI / SIS)](../parties-prenantes/pp-10.md) — Équipes techniques (DEPSI / SIS)
 
 ## Fondations et chapitres garants
 
 - **ART-4a** — Résolution d'identité
-- **ART-2** — Médiation et normalisation
+- [ART-2: Médiation et normalisation](../chapitres/art-2.md) — Médiation et normalisation

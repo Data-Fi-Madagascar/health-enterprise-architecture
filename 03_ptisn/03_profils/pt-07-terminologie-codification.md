@@ -16,13 +16,13 @@ tags: ["ptisn", "niveau-4", "profils", "PT-07"]
 
 ## 1. Capacité CNISN
 
-**CAP-INT-05 — Terminologie et codification communes**
+[CAP-INT-05: Terminologie et codification communes](../../referentiel/capacites/cap-int-05.md)
 
 ## 2. Chapitres ART applicables
 
-- ART-2 — normalisation sémantique ;
-- ART-4 — référentiels ;
-- ART-5 — qualité.
+- [ART-2: normalisation sémantique](../../referentiel/chapitres/art-2.md)antique ;
+- [ART-4: référentiels](../../referentiel/chapitres/art-4.md)entiels ;
+- [ART-5: qualité.](../../referentiel/chapitres/art-5.md)ualité.
 
 ## 3. Service national
 
