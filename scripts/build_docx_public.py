@@ -67,7 +67,7 @@ MARKER_RE = re.compile(
 
 # Titles with codes: ### CMP-01 : Title → ### Title
 TITRE_CODE_RE = re.compile(
-    r'^(#{2,4})\s+(?:CMP|EV|CAP|PRC|ART|PT|VS|PA|PP|F)-\d+[a-z]?\s*[:—]\s*',
+    r'^(#{2,4})\s+(?:CMP|EV|CAP(?:-INT)?|PRC|ART|PT|VS|PA|PP|F|ENF)[.-]\d+[a-z]?\s*[:—]\s*',
     re.M
 )
 
