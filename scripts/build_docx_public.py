@@ -126,8 +126,12 @@ def strip_niveau_lines(text):
 def clean_multiple_blanks(text):
     """Collapse 3+ consecutive blank lines into 2."""
     text = re.sub(r'\n{3,}', '\n\n', text)
-    # Remove empty section headings (## Title followed immediately by ## or #)
-    text = re.sub(r'(?:^|\n)(##\s+[^\n]+)\n+(?=(##\s|#\s))', r'\n', text)
+    # Remove empty section headings (## Title followed immediately by another heading)
+    # Apply in loop since re.sub doesn't re-scan after replacements
+    prev = None
+    while prev != text:
+        prev = text
+        text = re.sub(r'(?:^|\n)(##\s+[^\n]+)\n+(?=(##\s|#{1,6}\s))', r'\n', text)
     return text
 
 
