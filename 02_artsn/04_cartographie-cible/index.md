@@ -204,17 +204,11 @@ skinparam package {
   BorderColor #FF9800
 }
 
+actor "Acteurs terrain\n(formations sanitaires,\npersonnels de santé)" as FS
 package "Secteur Santé" as SANTE {
-  component "Applications métier\n(dossiers, pharmacie, etc.)" as APPS
-  component "Point de service\n(formations sanitaires)" as PS
+  component "Applications front-office\n(Couche 2 : dossiers, pharmacie,\nsanté communautaire, LMIS, ...)" as APPS
 }
-
-package "Plateforme Nationale" as PLATEFORME {
-  component "Couche 3\nÉchange, transport\net ingestion" as C3
-  component "Couche 4\nInteropérabilité\net services partagés" as C4
-  component "Couche 5\nProjections\nanalytiques" as C5
-  component "Couche 6\nPilotage et\ngouvernance" as C6
-}
+system "Plateforme Nationale\nde Santé Numérique\n(Couche 1 à 6)" as PLAT
 
 package "Secteurs externes" as EXTERNE {
   component "État civil" as EC
@@ -222,21 +216,21 @@ package "Secteurs externes" as EXTERNE {
   component "Finances publiques" as FP
   component "Éducation" as EDU
 }
-
 component "X-Road\n(échange interinstitutionnel)" as XROAD
 
-PS --> APPS
-APPS --> C3
-C3 --> C4
-C4 --> C5
-C5 --> C6
-
-C3 --> XROAD
+FS --> APPS : capture & consultation
+APPS --> PLAT : flux normalisés
+PLAT --> XROAD
 XROAD --> EC
 XROAD --> PSOC
 XROAD --> FP
 XROAD --> EDU
 
+note right of PLAT
+  L'interne de la plateforme (couches 1 à 6
+  et axes sécurité & gouvernance) est détaillé
+  dans les diagrammes de conteneurs et de composants.
+end note
 @enduml
 ```
 
@@ -253,67 +247,97 @@ skinparam package {
   BorderColor #FF9800
 }
 
-package "Couche 4 : Interopérabilité" as C4 {
-  component "Moteur de\nmédiation\n(ART-2)" as MED
-  component "Registre patient\n(ART-4a)" as PAT
-  component "Registre\nprofessionnels" as PRO
-  component "Registre\nterminologies" as TERM
-  component "Registre\néligibilité\n(ART-4c)" as ELIG
-  component "Orchestrateur\nparcours\n(ART-8a)" as ORCH
+package "Plateforme Nationale" as PLAT {
+  package "Couche 6 : Pilotage & gouvernance" as C6 {
+    component "Tableaux de bord & portails (CMP-01/02)"
+  }
+  package "Couche 5 : Projections analytiques" as C5 {
+    component "Lakehouse, moteur IA, moteur de graphes (CMP-03/04/05)"
+  }
+  package "Couche 4 : Interopérabilité & services partagés" as C4 {
+    component "Registres nationaux, médiation, orchestration (CMP-06 à CMP-14)"
+  }
+  package "Couche 3 : Échange, transport & ingestion" as C3 {
+    component "API Gateway, broker, registre de schémas (CMP-15 à CMP-18)"
+  }
+  package "Couche 2 : Point de service" as C2 {
+    component "Applications front-office (CMP-19 à CMP-25)"
+  }
+  package "Couche 1 : Infrastructure" as C1 {
+    component "Nœuds central, régional, local & réseaux (CMP-26 à CMP-31)"
+  }
 }
 
-package "Couche 5 : Analytique" as C5 {
-  component "Entrepôt\nLakehouse" as ENT
-  component "Moteur IA\nprédictive" as IA
-  component "Moteur\ngraphes" as GRAPH
-}
-
-package "Couche 6 : Pilotage" as C6 {
-  component "Tableaux de bord\nnationaux" as DASH
-  component "Centre de\ncommande\nalertes" as CMD
-}
-
+C2 --> C3
+C3 --> C4
 C4 --> C5
 C5 --> C6
+C1 .. PLAT : héberge
 
+note bottom of PLAT
+  Axe 1 (Sécurité & confiance, CMP-32 à CMP-38) et
+  Axe 2 (Gouvernance de données, CMP-39 à CMP-46)
+  traversent transversalement les couches 1 à 6.
+end note
 @enduml
 ```
 
-### Diagramme de déploiement (Level 3)
+### Diagramme de composants (Level 3)
 
 ```plantuml
 @startuml
-skinparam node {
+skinparam component {
   BackgroundColor #E8F4FD
   BorderColor #2196F3
 }
-skinparam database {
+skinparam package {
   BackgroundColor #FFF3E0
   BorderColor #FF9800
 }
 
-node "Nœud central\n(Datacenter national)" as NC {
-  database "Entrepôt\nLakehouse" as DB_ENT
-  component "Plateforme\nnationale" as PLAT
+package "Couche 6 : Pilotage" as C6 {
+  component "CMP-01 : Tableaux de bord & portails"
+  component "CMP-02 : Centre de commande & crises"
+}
+package "Couche 5 : Projections analytiques" as C5 {
+  component "CMP-03 : Entrepôt Lakehouse"
+  component "CMP-04 : Moteur analytique & IA"
+  component "CMP-05 : Moteur de graphes (Phase 2)"
+}
+package "Couche 4 : Interopérabilité" as C4 {
+  component "CMP-06 : Intégration & médiation"
+  component "CMP-07 : Orchestrateur de parcours"
+  component "CMP-08 : Données cliniques opérationnelles"
+  component "CMP-09 : Métadonnées d'exploitation"
+  component "CMP-10 : Terminologies"
+  component "CMP-11 : Index National des Patients"
+  component "CMP-12 : Éligibilité & couverture"
+  component "CMP-13 : Registre des personnels"
+  component "CMP-14 : Produits & intrants"
+}
+package "Couche 3 : Échange, transport & ingestion" as C3 {
+  component "CMP-15 : API Gateway"
+  component "CMP-16 : Registre de schémas"
+  component "CMP-17 : Message broker"
+  component "CMP-18 : Compensateur / Netting"
+}
+package "Couche 2 : Point de service" as C2 {
+  component "CMP-19 à CMP-25 : applications front-office"
+}
+package "Couche 1 : Infrastructure" as C1 {
+  component "CMP-26 à CMP-31 : nœuds & réseaux"
+}
+package "Axes transverses" as AX {
+  component "Axe 1 (CMP-32 à CMP-38) : Sécurité & confiance"
+  component "Axe 2 (CMP-39 à CMP-46) : Gouvernance de données"
 }
 
-node "Nœud régional\n(District)" as NR {
-  component "Serveur\ndistrict" as SRV_DIST
-}
-
-node "Nœud local\n(Formation sanitaire)" as NL {
-  component "Application\npoint de service" as APP_PS
-}
-
-database "Base\nlocale\n(hors-ligne)" as DB_LOC
-
-NC --> NR : VPN sécurisé
-NR --> NL : Réseau mobile/VPN
-APP_PS --> DB_LOC
-DB_LOC --> SRV_DIST : Synchronisation
-SRV_DIST --> PLAT : API REST/FHIR
-PLAT --> DB_ENT : ETL
-
+C2 --> C3
+C3 --> C4
+C4 --> C5
+C5 --> C6
+AX .. C1
+AX .. C6
 @enduml
 ```
 
