@@ -111,9 +111,9 @@ Cet axe applique transversalement le cadre de cybersécurité (ART-7). Il associ
 
 Cet axe applique le cadre d'obligation du processus d'homologation (F.4) et d'ART-0. Il associe le registre des accords inter-institutions, la charte nationale de protection, les conventions internationales, le comité national d'homologation, le registre des initiatives, le comité d'éthique, la cellule d'audit, ainsi que l'arbitrage et les risques. Son statut est Stable.
 
-## Liens
+## Catalogue des composants
 
-Les chapitres et patterns de référence constituent le socle normatif de cette cartographie, tandis que les couches applicatives du CAESN en definissent le positionnement dans l'architecture d'entreprise, et le document VS-04 : Pilotage encadre la gouvernance et le pilotage de la performance du système de santé.
+Les chapitres et patterns de référence constituent le socle normatif de cette cartographie, tandis que les couches applicatives du CAESN définissent le positionnement dans l'architecture d'entreprise, et le document VS-04 : Pilotage encadre la gouvernance et le pilotage de la performance du système de santé.
 
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
