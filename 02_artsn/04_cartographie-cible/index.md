@@ -204,11 +204,11 @@ skinparam package {
   BorderColor #FF9800
 }
 
-actor "Acteurs terrain\n(formations sanitaires,\npersonnels de santé)" as FS
+actor "Acteurs terrain (formations sanitaires, personnels de santé)" as FS
 package "Secteur Santé" as SANTE {
-  component "Applications front-office\n(Couche 2 : dossiers, pharmacie,\nsanté communautaire, LMIS, ...)" as APPS
+  component "Applications front-office (Couche 2)" as APPS
 }
-system "Plateforme Nationale\nde Santé Numérique\n(Couche 1 à 6)" as PLAT
+rectangle "Plateforme Nationale de Santé Numérique (Couches 1 à 6)" as PLAT
 
 package "Secteurs externes" as EXTERNE {
   component "État civil" as EC
@@ -216,21 +216,17 @@ package "Secteurs externes" as EXTERNE {
   component "Finances publiques" as FP
   component "Éducation" as EDU
 }
-component "X-Road\n(échange interinstitutionnel)" as XROAD
+component "X-Road (échange interinstitutionnel)" as XROAD
 
-FS --> APPS : capture & consultation
-APPS --> PLAT : flux normalisés
+FS --> APPS
+APPS --> PLAT
 PLAT --> XROAD
 XROAD --> EC
 XROAD --> PSOC
 XROAD --> FP
 XROAD --> EDU
 
-note right of PLAT
-  L'interne de la plateforme (couches 1 à 6
-  et axes sécurité & gouvernance) est détaillé
-  dans les diagrammes de conteneurs et de composants.
-end note
+note "L'interne de la plateforme (couches 1 à 6 et axes sécurité et gouvernance) est détaillé dans les diagrammes de conteneurs et de composants." as N
 @enduml
 ```
 
