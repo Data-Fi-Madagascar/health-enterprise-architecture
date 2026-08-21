@@ -35,7 +35,7 @@ La cartographie est structurée en **six couches horizontales** (de l'infrastruc
 
 ## Note de rationalisation (sur-spécification)
 
-Par rapport aux pairs africains (Kenya, Ouganda : 7–10 composants ; Tanzanie : 5–7 profils), l'état cible comporte **18 composants** et **16 profils**. Cette granularité est justifiée par la séparation CQRS et transport/logique, mais certains composants sont des patterns sans précédent en santé africaine et doivent être **phasés** pour caler l'architecture sur les capacités d'implémentation réelles :
+Par rapport aux pairs africains (Kenya, Ouganda : 7–10 composants ; Tanzanie : 5–7 profils), l'état cible comporte **46 composants** et **16 profils**. Cette granularité est justifiée par la séparation CQRS et transport/logique, mais certains composants sont des patterns sans précédent en santé africaine et doivent être **phasés** pour caler l'architecture sur les capacités d'implémentation réelles :
 
 - **CMP-05 (Moteur de graphes / Graph Store)** et **CMP-18 (Compensateur / Netting)** sont repoussés en **Phase 2**, conditionnés à une initiative validante (aucun pair ne les déploie aujourd'hui).
 - **CMP-15 / CMP-16 / CMP-17 / CMP-18** (Couche 3) sont candidats à une **fusion en *Pattern d'échange unifié*** (API Gateway + registre de schémas + broker + compensation) pour réduire le nombre de composants à posséder et à financer.
@@ -117,13 +117,13 @@ Cette couche applique le principe d'autonomie locale (ENF-1) et l'historisation 
 
 Cette couche est composée des applications de front-office suivantes :
 
-- dossiers & statistiques de santé (hôpitaux)
-- gestion des pharmacies (PMIS)
-- santé communautaire mobile (offline)
-- espace santé patient
-- chaîne logistique (LMIS)
-- surveillance de la santé animale (zoonoses)
-- enquêtes & capteurs terrain
+- [CMP-19 : Dossiers & statistiques de santé (hôpitaux)](../../referentiel/composants/cmp-19.md)
+- [CMP-20 : Gestion des pharmacies (PMIS)](../../referentiel/composants/cmp-20.md)
+- [CMP-21 : Santé communautaire mobile (offline)](../../referentiel/composants/cmp-21.md)
+- [CMP-22 : Espace santé patient](../../referentiel/composants/cmp-22.md)
+- [CMP-23 : Chaîne logistique (LMIS)](../../referentiel/composants/cmp-23.md)
+- [CMP-24 : Surveillance de la santé animale (zoonoses)](../../referentiel/composants/cmp-24.md)
+- [CMP-25 : Enquêtes & capteurs terrain](../../referentiel/composants/cmp-25.md)
 
 Références normatives : [ENF-1](../../referentiel/exigences/enf-1.md), [F.1](../../referentiel/fondations/f-1.md).
 
@@ -139,12 +139,12 @@ Cette couche est le support matériel de la clause de résidence et de sécurit�
 
 Cette couche est composée des infrastructures physiques suivantes :
 
-- nœud central (datacenters nationaux certifiés HDS)
-- nœuds régionaux (clusters de district : Fog)
-- nœuds locaux (équipements chiffrés : Edge)
-- liaisons dédiées & VPN
-- réseau privé MPLS
-- réseaux mobiles privés (APN sécurisés)
+- [CMP-26 : Nœud central (datacenters nationaux HDS)](../../referentiel/composants/cmp-26.md)
+- [CMP-27 : Nœuds régionaux (clusters de district : Fog)](../../referentiel/composants/cmp-27.md)
+- [CMP-28 : Nœuds locaux (équipements chiffrés : Edge)](../../referentiel/composants/cmp-28.md)
+- [CMP-29 : Liaisons dédiées & VPN](../../referentiel/composants/cmp-29.md)
+- [CMP-30 : Réseau privé MPLS](../../referentiel/composants/cmp-30.md)
+- [CMP-31 : Réseaux mobiles privés (APN sécurisés)](../../referentiel/composants/cmp-31.md)
 
 Référence normative : [ART-7](../../referentiel/chapitres/art-7.md).
 
@@ -160,6 +160,16 @@ Les deux axes traversent l'ensemble des six couches et exécutent des obligation
 
 Cet axe applique transversalement le cadre de cybersécurité (ART-7). Il associe la gestion des identités, le contrôle d'accès fin (RBAC/ABAC), la gestion des consentements, l'infrastructure de clés publiques (PKI), la passerelle de confiance mondiale OMS (GDHCN), le journal d'audit immuable, et le moteur de chiffrement. Son statut est Stable.
 
+### Composants associés
+
+- [CMP-32 : Gestion des identités](../../referentiel/composants/cmp-32.md)
+- [CMP-33 : Contrôle d'accès fin (RBAC/ABAC)](../../referentiel/composants/cmp-33.md)
+- [CMP-34 : Gestion des consentements](../../referentiel/composants/cmp-34.md)
+- [CMP-35 : Infrastructure de clés publiques (PKI)](../../referentiel/composants/cmp-35.md)
+- [CMP-36 : Passerelle de confiance mondiale OMS (GDHCN)](../../referentiel/composants/cmp-36.md)
+- [CMP-37 : Journal d'audit immuable](../../referentiel/composants/cmp-37.md)
+- [CMP-38 : Moteur de chiffrement](../../referentiel/composants/cmp-38.md)
+
 ### Axe vertical 2 : Gouvernance de données
 
 **Contenu normatif.** Cet axe constitue l'**autorité politique, morale et éthique** de la plateforme. Il a l'obligation de fixer le cadre réglementaire humain, d'instruire et de valider l'homologation des projets de santé numérique, et de trancher les litiges de qualité ou de sécurité.
@@ -167,6 +177,17 @@ Cet axe applique transversalement le cadre de cybersécurité (ART-7). Il associ
 **Discipline existentielle.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (comités humains, signatures de conventions, chartes juridiques de protection) : elle seule permet d'asseoir la légitimité politique de la plateforme et de garantir le respect des accords interministériels de partage de données, sans rompre le pipeline.
 
 Cet axe applique le cadre d'obligation du processus d'homologation (F.4) et d'ART-0. Il associe le registre des accords inter-institutions, la charte nationale de protection, les conventions internationales, le comité national d'homologation, le registre des initiatives, le comité d'éthique, la cellule d'audit, ainsi que l'arbitrage et les risques. Son statut est Stable.
+
+### Composants associés
+
+- [CMP-39 : Registre des accords inter-institutions](../../referentiel/composants/cmp-39.md)
+- [CMP-40 : Charte nationale de protection](../../referentiel/composants/cmp-40.md)
+- [CMP-41 : Conventions internationales](../../referentiel/composants/cmp-41.md)
+- [CMP-42 : Comité national d'homologation](../../referentiel/composants/cmp-42.md)
+- [CMP-43 : Registre des initiatives](../../referentiel/composants/cmp-43.md)
+- [CMP-44 : Comité d'éthique](../../referentiel/composants/cmp-44.md)
+- [CMP-45 : Cellule d'audit](../../referentiel/composants/cmp-45.md)
+- [CMP-46 : Arbitrage et risques](../../referentiel/composants/cmp-46.md)
 
 ## Diagrammes C4
 
@@ -339,6 +360,34 @@ Les chapitres et patterns de référence constituent le socle normatif de cette 
 - **CMP-16** : Registre de schémas (F.3) (`referentiel/composants/cmp-16.md`)
 - **CMP-17** : Message broker asynchrone (`referentiel/composants/cmp-17.md`)
 - **CMP-18** : Compensateur / Regroupeur de flux (Netting : ART-8c) (`referentiel/composants/cmp-18.md`)
+- **CMP-19** : Dossiers & statistiques de sante (hopitaux) (`referentiel/composants/cmp-19.md`)
+- **CMP-20** : Gestion des pharmacies (PMIS) (`referentiel/composants/cmp-20.md`)
+- **CMP-21** : Sante communautaire mobile (offline) (`referentiel/composants/cmp-21.md`)
+- **CMP-22** : Espace sante patient (`referentiel/composants/cmp-22.md`)
+- **CMP-23** : Chaine logistique (LMIS) (`referentiel/composants/cmp-23.md`)
+- **CMP-24** : Surveillance de la sante animale (zoonoses) (`referentiel/composants/cmp-24.md`)
+- **CMP-25** : Enquetes & capteurs terrain (`referentiel/composants/cmp-25.md`)
+- **CMP-26** : Noeud central (datacenters nationaux HDS) (`referentiel/composants/cmp-26.md`)
+- **CMP-27** : Noeuds regionaux (clusters de district : Fog) (`referentiel/composants/cmp-27.md`)
+- **CMP-28** : Noeuds locaux (equipements chiffres : Edge) (`referentiel/composants/cmp-28.md`)
+- **CMP-29** : Liaisons dediees & VPN (`referentiel/composants/cmp-29.md`)
+- **CMP-30** : Reseau prive MPLS (`referentiel/composants/cmp-30.md`)
+- **CMP-31** : Reseaux mobiles prives (APN securises) (`referentiel/composants/cmp-31.md`)
+- **CMP-32** : Gestion des identites (`referentiel/composants/cmp-32.md`)
+- **CMP-33** : Controle d'acces fin (RBAC/ABAC) (`referentiel/composants/cmp-33.md`)
+- **CMP-34** : Gestion des consentements (`referentiel/composants/cmp-34.md`)
+- **CMP-35** : Infrastructure de cles publiques (PKI) (`referentiel/composants/cmp-35.md`)
+- **CMP-36** : Passerelle de confiance mondiale OMS (GDHCN) (`referentiel/composants/cmp-36.md`)
+- **CMP-37** : Journal d'audit immuable (`referentiel/composants/cmp-37.md`)
+- **CMP-38** : Moteur de chiffrement (`referentiel/composants/cmp-38.md`)
+- **CMP-39** : Registre des accords inter-institutions (`referentiel/composants/cmp-39.md`)
+- **CMP-40** : Charte nationale de protection (`referentiel/composants/cmp-40.md`)
+- **CMP-41** : Conventions internationales (`referentiel/composants/cmp-41.md`)
+- **CMP-42** : Comite national d'homologation (`referentiel/composants/cmp-42.md`)
+- **CMP-43** : Registre des initiatives (`referentiel/composants/cmp-43.md`)
+- **CMP-44** : Comite d'ethique (`referentiel/composants/cmp-44.md`)
+- **CMP-45** : Cellule d'audit (`referentiel/composants/cmp-45.md`)
+- **CMP-46** : Arbitrage et risques (`referentiel/composants/cmp-46.md`)
 - **F.1** : F.1 : Résilience face à la réalité géographique du pays (`referentiel/fondations/f-1.md`)
 - **F.4** : F.4 : Homologation obligatoire (`referentiel/fondations/f-4.md`)
 - **chapitres et patterns de référence** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
