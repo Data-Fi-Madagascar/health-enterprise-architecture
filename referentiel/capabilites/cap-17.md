@@ -1,4 +1,5 @@
 ---
+domain: capabilites
 
 id: CAP-17
 type: capabilite

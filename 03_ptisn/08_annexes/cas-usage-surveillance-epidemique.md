@@ -1,7 +1,7 @@
 ---
 title: "Cas d'usage : Surveillance et riposte épidémique"
 id: ptisn-cas-usage-surveillance
-domain: 03_ptisn
+domain: 08_annexes
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13

@@ -1,7 +1,7 @@
 ---
 title: Partie II : Topologie nationale cible
 id: ptisn-topologie
-domain: 03_ptisn
+domain: 02_topologie-nationale-cible
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-18

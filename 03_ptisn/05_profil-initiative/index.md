@@ -1,7 +1,7 @@
 ---
 title: Partie V : Profil technique d'une initiative
 id: ptisn-profil-initiative
-domain: 03_ptisn
+domain: 05_profil-initiative
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31

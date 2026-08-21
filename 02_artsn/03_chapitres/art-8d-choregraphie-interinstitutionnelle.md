@@ -2,7 +2,7 @@
 
 title: "Chorégraphie inter-institutionnelle"
 id: artsn-ART-8D
-domain: 02_artsn
+domain: 03_chapitres
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08

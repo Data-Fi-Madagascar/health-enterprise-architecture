@@ -1,7 +1,7 @@
 ---
 title: Conclusion du PTISN
 id: ptisn-conclusion
-domain: 03_ptisn
+domain: 07_conclusion
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31

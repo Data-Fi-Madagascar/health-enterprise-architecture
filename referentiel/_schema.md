@@ -1,4 +1,5 @@
 ---
+domain: referentiel
 title: Schéma du référentiel
 id: SCHEMA-REFERENTIEL
 type: meta

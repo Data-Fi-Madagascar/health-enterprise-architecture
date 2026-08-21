@@ -1,7 +1,7 @@
 ---
 title: Partie III : Gouvernance
 id: cnisn-gouvernance
-domain: 01_cnisn
+domain: 03_gouvernance
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-18

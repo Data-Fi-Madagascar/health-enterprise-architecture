@@ -1,7 +1,7 @@
 ---
 title: Annexe B : Décisions à instruire
 id: ptisn-annexe-b
-domain: 03_ptisn
+domain: 08_annexes
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31

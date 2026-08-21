@@ -1,4 +1,5 @@
 ---
+domain: processus
 id: PRC-05
 type: processus-metier
 niveau: "1"

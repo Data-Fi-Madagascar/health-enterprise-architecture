@@ -2,7 +2,7 @@
 
 title: "Orchestration de processus borné"
 id: artsn-ART-8A
-domain: 02_artsn
+domain: 03_chapitres
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08

@@ -1,7 +1,7 @@
 ---
 title: "Annexe G : Matrice des types d'interopérabilité"
 id: cnisn-annexe-g
-domain: 01_cnisn
+domain: 08_annexes
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-18

@@ -37,7 +37,7 @@ Tout dossier structurel du dépôt reçoit un **préfixe numérique de tri** sur
 
 Chaque fichier (sauf `README.md` racine) commence par un frontmatter YAML. Les valeurs de `domain` et les identifiants suivent la règle **« le nom reflète la localisation »** :
 
-- `domain:` : **obligatoire** — valeur = nom complet du dossier d'appartenance, **préfixe numérique inclus** (ex. `domain: 01_value-streams`). Il reflète ainsi la localisation exacte du document.
+- `domain:` : **obligatoire** — valeur = nom du dossier parent immédiat, **préfixe numérique inclus** (ex. `domain: 01_value-streams` pour un fichier dans `00_caesn/01_value-streams/`). Il reflète ainsi la localisation exacte du document.
 - `id:` : identifiant sémantique stable en kebab-case (ex. `data-governance`, `capabilities-business`). Ne change pas lorsque le dossier est renommé.
 - Autres champs : `title`, `version`, `status`, `last_reviewed`, `owner`, `tags`.
 
@@ -46,7 +46,7 @@ Chaque fichier (sauf `README.md` racine) commence par un frontmatter YAML. Les v
 À appliquer à tout nouveau document et à tout renommage de dossier :
 
 1. **Nommer** le dossier avec le préfixe numérique dans l'ordre de lecture.
-2. **Renseigner** `domain:` avec le nom du dossier (sans numéro).
+2. **Renseigner** `domain:` avec le nom du dossier parent immédiat, **préfixe numérique inclus** (ex. `01_value-streams`).
 3. **Mettre à jour** tous les liens relatifs Markdown quand un dossier est déplacé ou renommé.
 4. **Vérifier** qu'aucun lien n'est cassé après chaque changement de structure (aucun lien `url:` ou `id:` vers un chemin obsolète).
 

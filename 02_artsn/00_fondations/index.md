@@ -2,7 +2,7 @@
 
 title: "Fondations de l'ARTSN"
 id: artsn-fondations
-domain: 02_artsn
+domain: 00_fondations
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08

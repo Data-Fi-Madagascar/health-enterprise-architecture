@@ -1,4 +1,5 @@
 ---
+domain: capacites
 id: CAP-INT-01
 type: capacite
 niveau: "2"

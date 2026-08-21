@@ -1,7 +1,7 @@
 ---
 title: "Annexe F : Articulation complète CAESN → CNISN → ARTSN → PTISN"
 id: cnisn-annexe-f
-domain: 01_cnisn
+domain: 08_annexes
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13

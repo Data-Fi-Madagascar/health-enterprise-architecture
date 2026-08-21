@@ -1,4 +1,5 @@
 ---
+domain: chapitres
 
 id: ART-4B
 type: chapitre

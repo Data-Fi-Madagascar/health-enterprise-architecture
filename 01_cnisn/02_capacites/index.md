@@ -1,7 +1,7 @@
 ---
 title: "Partie II : Capacités nationales requises"
 id: cnisn-capacites
-domain: 01_cnisn
+domain: 02_capacites
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31

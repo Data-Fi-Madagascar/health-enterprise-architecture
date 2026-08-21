@@ -1,7 +1,7 @@
 ---
 title: Orchestration de processus bornés
 id: ptisn-PT-16
-domain: 03_ptisn
+domain: 03_profils
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-19

@@ -1,7 +1,7 @@
 ---
 title: "Interopérabilité transfrontalière"
 id: ptisn-PT-14
-domain: 03_ptisn
+domain: 03_profils
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13

@@ -1,7 +1,7 @@
 ---
 title: Partie VI : Gouvernance du PTISN
 id: ptisn-gouvernance
-domain: 03_ptisn
+domain: 06_gouvernance
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31

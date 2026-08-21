@@ -1,7 +1,7 @@
 ---
 title: Annexe B : Articulation avec l'ARTSN
 id: cnisn-annexe-b
-domain: 01_cnisn
+domain: 08_annexes
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31

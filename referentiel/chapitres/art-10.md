@@ -1,4 +1,5 @@
 ---
+domain: chapitres
 id: ART-10
 type: chapitre
 niveau: "3"

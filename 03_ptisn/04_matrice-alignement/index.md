@@ -1,7 +1,7 @@
 ---
 title: "Partie IV : Matrice d'alignement"
 id: ptisn-matrice-alignement
-domain: 03_ptisn
+domain: 04_matrice-alignement
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31

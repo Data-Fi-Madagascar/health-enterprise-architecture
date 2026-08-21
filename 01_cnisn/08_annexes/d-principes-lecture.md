@@ -1,7 +1,7 @@
 ---
 title: Annexe D : Principes de lecture
 id: cnisn-annexe-d
-domain: 01_cnisn
+domain: 08_annexes
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-18

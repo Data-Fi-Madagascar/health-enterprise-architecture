@@ -2,7 +2,7 @@
 
 title: "Annexe D : Protocole de test d'interopérabilité"
 id: artsn-protocole-test
-domain: 02_artsn
+domain: 07_annexes
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13

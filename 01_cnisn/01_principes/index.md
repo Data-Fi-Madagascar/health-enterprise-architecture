@@ -1,7 +1,7 @@
 ---
 title: "Partie I : Principes nationaux d'interopérabilité de santé"
 id: cnisn-principes
-domain: 01_cnisn
+domain: 01_principes
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31

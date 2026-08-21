@@ -1,4 +1,5 @@
 ---
+domain: chapitres
 
 id: ART-6
 type: chapitre

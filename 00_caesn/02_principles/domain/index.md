@@ -2,7 +2,7 @@
 
 title: Principes de domaine par flux de valeur
 id: principles-domain
-domain: 02_principles
+domain: domain
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-03

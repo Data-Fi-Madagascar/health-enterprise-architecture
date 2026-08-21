@@ -1,6 +1,6 @@
 ---
 id: ptisn-PT-15
-domain: 03_ptisn
+domain: 03_profils
 type: profil
 niveau: "4"
 title: Surveillance One Health

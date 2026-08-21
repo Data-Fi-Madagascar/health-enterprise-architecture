@@ -2,7 +2,7 @@
 
 title: "Coordination intersectorielle"
 id: artsn-ART-11
-domain: 02_artsn
+domain: 03_chapitres
 version: "1.0.0"
 status: stable
 last_reviewed: 2026-08-12

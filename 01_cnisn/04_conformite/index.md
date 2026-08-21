@@ -1,7 +1,7 @@
 ---
 title: Partie IV : Conformité
 id: cnisn-conformite
-domain: 01_cnisn
+domain: 04_conformite
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-18

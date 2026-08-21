@@ -2,7 +2,7 @@
 
 title: Annexe C : Renvoi CAESN et capacités candidates
 id: artsn-annexe-c-renvoi
-domain: 02_artsn
+domain: 07_annexes
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08

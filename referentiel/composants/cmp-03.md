@@ -1,4 +1,5 @@
 ---
+domain: composants
 id: CMP-03
 type: composant-applicatif
 niveau: "1"

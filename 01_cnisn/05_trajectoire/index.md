@@ -1,7 +1,7 @@
 ---
 title: Partie V : Trajectoire de mise en œuvre
 id: cnisn-trajectoire
-domain: 01_cnisn
+domain: 05_trajectoire
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-18

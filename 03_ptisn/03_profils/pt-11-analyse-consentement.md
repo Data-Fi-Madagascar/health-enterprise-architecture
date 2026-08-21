@@ -2,7 +2,7 @@
 
 title: "Analyse PT-11 : Profil technique du consentement"
 id: ptisn-PT-11-analyse
-domain: 03_ptisn
+domain: 03_profils
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13

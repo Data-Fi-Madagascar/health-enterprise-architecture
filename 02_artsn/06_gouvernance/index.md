@@ -2,7 +2,7 @@
 
 title: Gouvernance de l'ARTSN
 id: artsn-gouvernance
-domain: 02_artsn
+domain: 06_gouvernance
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08

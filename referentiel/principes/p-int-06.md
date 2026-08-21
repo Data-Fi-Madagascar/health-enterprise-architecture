@@ -1,4 +1,5 @@
 ---
+domain: principes
 id: P-INT-06
 type: principe
 niveau: "2"

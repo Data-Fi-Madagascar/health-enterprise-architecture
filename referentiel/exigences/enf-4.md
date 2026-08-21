@@ -1,4 +1,5 @@
 ---
+domain: exigences
 
 id: ENF-4
 type: exigence

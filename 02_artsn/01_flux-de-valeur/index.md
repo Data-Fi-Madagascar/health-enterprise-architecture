@@ -2,7 +2,7 @@
 
 title: Flux de valeur
 id: artsn-flux-de-valeur
-domain: 02_artsn
+domain: 01_flux-de-valeur
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-08

@@ -1,7 +1,7 @@
 ---
 title: Préambule du PTISN
 id: ptisn-introduction
-domain: 03_ptisn
+domain: 00_introduction
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31

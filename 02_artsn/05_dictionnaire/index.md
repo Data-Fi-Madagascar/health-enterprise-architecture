@@ -2,7 +2,7 @@
 
 title: Dictionnaire de données fonctionnelles
 id: artsn-dictionnaire-donnees
-domain: 02_artsn
+domain: 05_dictionnaire
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13

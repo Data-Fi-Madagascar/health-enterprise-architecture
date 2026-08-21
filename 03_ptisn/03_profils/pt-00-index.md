@@ -1,7 +1,7 @@
 ---
 title: "Partie III : Profils techniques nationaux"
 id: ptisn-profils
-domain: 03_ptisn
+domain: 03_profils
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31

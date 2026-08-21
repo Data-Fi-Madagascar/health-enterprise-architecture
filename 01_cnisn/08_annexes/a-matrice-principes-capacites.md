@@ -1,7 +1,7 @@
 ---
 title: "Annexe A : Matrice principes–capacités"
 id: cnisn-annexe-a
-domain: 01_cnisn
+domain: 08_annexes
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31

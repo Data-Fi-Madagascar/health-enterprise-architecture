@@ -1,7 +1,7 @@
 ---
 title: Partie I : Règles d'utilisation du PTISN
 id: ptisn-regles-utilisation
-domain: 03_ptisn
+domain: 01_regles-utilisation
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31

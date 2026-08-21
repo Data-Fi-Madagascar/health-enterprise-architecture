@@ -1,4 +1,5 @@
 ---
+domain: capabilites
 
 id: CAP-02
 type: capabilite

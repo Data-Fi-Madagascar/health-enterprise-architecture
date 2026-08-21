@@ -2,7 +2,7 @@
 
 title: "Priorisation et calendrier : 5 premières décisions PTISN"
 id: ptisn-priorisation-decisions
-domain: 03_ptisn
+domain: 08_annexes
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13
