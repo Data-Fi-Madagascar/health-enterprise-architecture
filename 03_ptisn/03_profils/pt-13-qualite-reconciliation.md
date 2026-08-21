@@ -16,7 +16,7 @@ tags: ["ptisn", "niveau-4", "profils", "PT-13"]
 
 ## 1. Capacités CNISN
 
-- [CAP-INT-11: Qualité et réconciliation.](../../referentiel/capacites/cap-int-11.md)onciliation.
+- [CAP-INT-11: Qualité et réconciliation.](../../referentiel/capacites/cap-int-11.md)
 
 ## 2. Chapitres ART applicables
 

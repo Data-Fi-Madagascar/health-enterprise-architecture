@@ -20,10 +20,10 @@ tags: ["ptisn", "niveau-4", "profils", "PT-04"]
 
 ## 2. Chapitres ART applicables
 
-- [ART-4: référentiels](../../referentiel/chapitres/art-4.md)entiels ;
+- [ART-4: référentiels](../../referentiel/chapitres/art-4.md)
 - ART-4a — Résolution d'identité ;
 - ART-4b — bases d'autorisation ;
-- [ART-7: sécurité.](../../referentiel/chapitres/art-7.md)curité.
+- [ART-7: sécurité.](../../referentiel/chapitres/art-7.md)
 
 ## 3. Service national
 

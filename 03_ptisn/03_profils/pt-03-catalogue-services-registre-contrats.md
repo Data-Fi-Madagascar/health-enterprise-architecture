@@ -22,8 +22,8 @@ tags: ["ptisn", "niveau-4", "profils", "PT-03"]
 
 - F.3 — versionnement ;
 - F.4 — rattachement aux capacités ;
-- [ART-1: interfaces](../../referentiel/chapitres/art-1.md)erfaces ;
-- [ART-2: contrats canoniques.](../../referentiel/chapitres/art-2.md)niques.
+- [ART-1: interfaces](../../referentiel/chapitres/art-1.md)
+- [ART-2: contrats canoniques.](../../referentiel/chapitres/art-2.md)
 
 ## 3. Services nationaux
 

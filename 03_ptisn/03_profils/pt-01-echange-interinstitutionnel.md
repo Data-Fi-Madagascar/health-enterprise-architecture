@@ -20,10 +20,10 @@ tags: ["ptisn", "niveau-4", "profils", "PT-01"]
 
 ## 2. Chapitres ART applicables
 
-- [ART-0: accords de partage](../../referentiel/chapitres/art-0.md)partage ;
-- [ART-1: intégration et ingestion](../../referentiel/chapitres/art-1.md)gestion ;
-- [ART-7: sécurité et résidence](../../referentiel/chapitres/art-7.md)sidence ;
-- [ART-11: coordination intersectorielle.](../../referentiel/chapitres/art-11.md)orielle.
+- [ART-0: accords de partage](../../referentiel/chapitres/art-0.md)
+- [ART-1: intégration et ingestion](../../referentiel/chapitres/art-1.md)
+- [ART-7: sécurité et résidence](../../referentiel/chapitres/art-7.md)
+- [ART-11: coordination intersectorielle.](../../referentiel/chapitres/art-11.md)
 
 ## 3. Service national
 

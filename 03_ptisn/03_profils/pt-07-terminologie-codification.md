@@ -20,9 +20,9 @@ tags: ["ptisn", "niveau-4", "profils", "PT-07"]
 
 ## 2. Chapitres ART applicables
 
-- [ART-2: normalisation sémantique](../../referentiel/chapitres/art-2.md)antique ;
-- [ART-4: référentiels](../../referentiel/chapitres/art-4.md)entiels ;
-- [ART-5: qualité.](../../referentiel/chapitres/art-5.md)ualité.
+- [ART-2: normalisation sémantique](../../referentiel/chapitres/art-2.md)
+- [ART-4: référentiels](../../referentiel/chapitres/art-4.md)
+- [ART-5: qualité.](../../referentiel/chapitres/art-5.md)
 
 ## 3. Service national
 

@@ -20,11 +20,11 @@ tags: ["ptisn", "niveau-4", "profils", "PT-02"]
 
 ## 2. Chapitres ART applicables
 
-- [ART-1: intégration](../../referentiel/chapitres/art-1.md)gration ;
-- [ART-2: médiation](../../referentiel/chapitres/art-2.md)diation ;
-- [ART-5: qualité et réconciliation](../../referentiel/chapitres/art-5.md)liation ;
-- [ART-7: sécurité](../../referentiel/chapitres/art-7.md)écurité ;
-- [ART-8: coordination lorsque applicable.](../../referentiel/chapitres/art-8.md)icable.
+- [ART-1: intégration](../../referentiel/chapitres/art-1.md)
+- [ART-2: médiation](../../referentiel/chapitres/art-2.md)
+- [ART-5: qualité et réconciliation](../../referentiel/chapitres/art-5.md)
+- [ART-7: sécurité](../../referentiel/chapitres/art-7.md)
+- [ART-8: coordination lorsque applicable.](../../referentiel/chapitres/art-8.md)
 
 ## 3. Service national
 
