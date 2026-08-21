@@ -337,6 +337,43 @@ AX .. C6
 @enduml
 ```
 
+### Diagramme de déploiement (Couche 1 : Infrastructure)
+
+```plantuml
+@startuml
+skinparam node {
+  BackgroundColor #E8F4FD
+  BorderColor #2196F3
+}
+skinparam database {
+  BackgroundColor #FFF3E0
+  BorderColor #FF9800
+}
+skinparam artifact {
+  BackgroundColor #E8F4FD
+}
+
+node "Nœud central (Datacenter national HDS) : CMP-26" as NC {
+  database "Entrepôt Lakehouse (CMP-03)" as DB_ENT
+  artifact "Plateforme nationale (couches 4 à 6)" as PLAT
+}
+node "Nœud régional (District, Fog) : CMP-27" as NR {
+  artifact "Serveur de district" as SRV_DIST
+}
+node "Nœud local (Formation sanitaire, Edge) : CMP-28" as NL {
+  artifact "Applications point de service (CMP-19 à CMP-25)" as APP_PS
+  database "Base locale hors-ligne" as DB_LOC
+}
+
+NC --> NR : CMP-29 (liaisons dédiées & VPN) / CMP-30 (MPLS)
+NR --> NL : CMP-31 (réseaux mobiles privés, APN)
+APP_PS --> DB_LOC : écriture locale
+DB_LOC --> SRV_DIST : synchronisation différentielle
+SRV_DIST --> PLAT : C3 (API Gateway, broker : CMP-15 à CMP-18)
+PLAT --> DB_ENT : ETL (CMP-03/04)
+@enduml
+```
+
 ## Liens
 
 Les chapitres et patterns de référence constituent le socle normatif de cette cartographie, tandis que les couches applicatives du CAESN définissent son positionnement dans l'architecture d'entreprise, et le document VS-04 : Pilotage encadre la gouvernance et le pilotage de la performance du système de santé.
