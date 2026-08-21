@@ -41,7 +41,7 @@ Par rapport aux pairs africains (Kenya, Ouganda : 7–10 composants ; Tanzanie :
 - **CMP-15 / CMP-16 / CMP-17 / CMP-18** (Couche 3) sont candidats à une **fusion en *Pattern d'échange unifié*** (API Gateway + registre de schémas + broker + compensation) pour réduire le nombre de composants à posséder et à financer.
 - **CMP-07 (Gestionnaire de Sagas)** fait l'objet d'une étude « Saga vs orchestration simple » (alternative pragmatic : Tanzanie HIM) avant généralisation.
 
-Ces composants, marqués *Phase 2 — candidat*, sont décrits dans le référentiel des composants (`referentiel/composants/`).
+Ces composants, marqués *Phase 2, candidat*, sont décrits dans le référentiel des composants (`referentiel/composants/`).
 
 ## Couche 6 : Pilotage, Gouvernance et actions intersectorielles
 
@@ -53,8 +53,8 @@ Cette couche est rattachée au flux de valeur 4 (VS-04) et associe les composant
 
 ### Composants associés
 
-- [CMP-01 — Tableaux de bord & Portails nationaux (performance, CSU, ressources, veille)](../../referentiel/composants/cmp-01.md)
-- [CMP-02 — Centre de commande & Crises intersectorielles (alertes, crises, veille)](../../referentiel/composants/cmp-02.md)
+- [CMP-01 : Tableaux de bord & Portails nationaux (performance, CSU, ressources, veille)](../../referentiel/composants/cmp-01.md)
+- [CMP-02 : Centre de commande & Crises intersectorielles (alertes, crises, veille)](../../referentiel/composants/cmp-02.md)
 
 ## Couche 5 : Projections analytiques et Modèles
 
@@ -66,9 +66,9 @@ Cette couche applique physiquement et directement le pattern CQRS (ART-6). Elle 
 
 ### Composants associés
 
-- [CMP-03 — Entrepôt Lakehouse & Projections analytiques (pipeline ETL, Lakehouse, projections)](../../referentiel/composants/cmp-03.md)
-- [CMP-04 — Moteur analytique & IA (IA prédictive, routeur alertes, Grand Livre)](../../referentiel/composants/cmp-04.md)
-- [CMP-05 — Moteur de graphes & Référentiel spatio-temporel (Graph Store, Spatio ART-4d)](../../referentiel/composants/cmp-05.md)
+- [CMP-03 : Entrepôt Lakehouse & Projections analytiques (pipeline ETL, Lakehouse, projections)](../../referentiel/composants/cmp-03.md)
+- [CMP-04 : Moteur analytique & IA (IA prédictive, routeur alertes, Grand Livre)](../../referentiel/composants/cmp-04.md)
+- [CMP-05 : Moteur de graphes & Référentiel spatio-temporel (Graph Store, Spatio ART-4d)](../../referentiel/composants/cmp-05.md)
 
 ## Couche 4 : Interopérabilité et services partagés
 
@@ -80,15 +80,15 @@ Cette couche exécute la source de vérité au présent (Profil B d'ART-3) et le
 
 ### Composants associés
 
-- [CMP-06 — Intégration, Médiation, API Gateway, Broker & Registre schémas](../../referentiel/composants/cmp-06.md)
-- [CMP-07 — Orchestrateur de parcours & Gestionnaire de Sagas (ART-8a)](../../referentiel/composants/cmp-07.md)
-- [CMP-08 — Répertoire de données cliniques opérationnelles](../../referentiel/composants/cmp-08.md)
-- [CMP-09 — Référentiel des métadonnées d'exploitation (ART-4)](../../referentiel/composants/cmp-09.md)
-- [CMP-10 — Registre des terminologies](../../referentiel/composants/cmp-10.md)
-- [CMP-11 — Registre des clients / Index National des Patients (INP — ART-4a)](../../referentiel/composants/cmp-11.md)
-- [CMP-12 — Registre d'éligibilité et de couverture (CSU — ART-4c)](../../referentiel/composants/cmp-12.md)
-- [CMP-13 — Registre des personnels](../../referentiel/composants/cmp-13.md)
-- [CMP-14 — Registre des produits, intrants et indicateurs](../../referentiel/composants/cmp-14.md)
+- [CMP-06 : Intégration, Médiation, API Gateway, Broker & Registre schémas](../../referentiel/composants/cmp-06.md)
+- [CMP-07 : Orchestrateur de parcours & Gestionnaire de Sagas (ART-8a)](../../referentiel/composants/cmp-07.md)
+- [CMP-08 : Répertoire de données cliniques opérationnelles](../../referentiel/composants/cmp-08.md)
+- [CMP-09 : Référentiel des métadonnées d'exploitation (ART-4)](../../referentiel/composants/cmp-09.md)
+- [CMP-10 : Registre des terminologies](../../referentiel/composants/cmp-10.md)
+- [CMP-11 : Registre des clients / Index National des Patients (INP, ART-4a)](../../referentiel/composants/cmp-11.md)
+- [CMP-12 : Registre d'éligibilité et de couverture (CSU, ART-4c)](../../referentiel/composants/cmp-12.md)
+- [CMP-13 : Registre des personnels](../../referentiel/composants/cmp-13.md)
+- [CMP-14 : Registre des produits, intrants et indicateurs](../../referentiel/composants/cmp-14.md)
 
 ## Couche 3 : Échange, transport et ingestion
 
@@ -100,10 +100,10 @@ Cette couche assure l'exécution technique du transport asynchrone (ART-1 et F.3
 
 ### Composants associés
 
-- [CMP-15 — API Gateway](../../referentiel/composants/cmp-15.md)
-- [CMP-16 — Registre de schémas (F.3)](../../referentiel/composants/cmp-16.md)
-- [CMP-17 — Message broker asynchrone](../../referentiel/composants/cmp-17.md)
-- [CMP-18 — Compensateur / Regroupeur de flux (Netting — ART-8c)](../../referentiel/composants/cmp-18.md)
+- [CMP-15 : API Gateway](../../referentiel/composants/cmp-15.md)
+- [CMP-16 : Registre de schémas (F.3)](../../referentiel/composants/cmp-16.md)
+- [CMP-17 : Message broker asynchrone](../../referentiel/composants/cmp-17.md)
+- [CMP-18 : Compensateur / Regroupeur de flux (Netting, ART-8c)](../../referentiel/composants/cmp-18.md)
 
 ## Couche 2 : Point de service
 
@@ -115,7 +115,17 @@ Cette couche applique le principe d'autonomie locale (ENF-1) et l'historisation 
 
 ### Composants associés
 
-Aucun composant CMP dédié : cette couche est composée d'applications de front-office (dossiers & statistiques de santé, gestion des pharmacies PMIS, santé communautaire mobile, espace santé patient, chaîne logistique LMIS, surveillance de la santé animale, enquêtes & capteurs terrain).
+Cette couche est composée des applications de front-office suivantes :
+
+- dossiers & statistiques de santé (hôpitaux)
+- gestion des pharmacies (PMIS)
+- santé communautaire mobile (offline)
+- espace santé patient
+- chaîne logistique (LMIS)
+- surveillance de la santé animale (zoonoses)
+- enquêtes & capteurs terrain
+
+Références normatives : [ENF-1](../../referentiel/exigences/enf-1.md), [F.1](../../referentiel/fondations/f-1.md).
 
 ## Couche 1 : Infrastructure
 
@@ -127,7 +137,16 @@ Cette couche est le support matériel de la clause de résidence et de sécurit�
 
 ### Composants associés
 
-Aucun composant CMP dédié : cette couche est composée d'infrastructures physiques (nœud central, nœuds régionaux, nœuds locaux, liaisons dédiées & VPN, réseau privé MPLS, réseaux mobiles privés).
+Cette couche est composée des infrastructures physiques suivantes :
+
+- nœud central (datacenters nationaux certifiés HDS)
+- nœuds régionaux (clusters de district : Fog)
+- nœuds locaux (équipements chiffrés : Edge)
+- liaisons dédiées & VPN
+- réseau privé MPLS
+- réseaux mobiles privés (APN sécurisés)
+
+Référence normative : [ART-7](../../referentiel/chapitres/art-7.md).
 
 ## Axes verticaux transversaux
 
