@@ -7,7 +7,7 @@ title: Intégration, Médiation, API Gateway, Broker & Registre schémas
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/04_cartographie-cible/index.md
+envelope: 02_artsn/04_cartographie-cible/composants.md
 maps_to: ["CAP-INT-01", "CAP-INT-03"]
 implements: ["ART-1", "ART-2", "F-3"]
 applies_to: []

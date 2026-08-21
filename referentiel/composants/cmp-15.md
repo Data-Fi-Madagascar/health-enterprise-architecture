@@ -7,7 +7,7 @@ title: API Gateway
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/04_cartographie-cible/index.md
+envelope: 02_artsn/04_cartographie-cible/composants.md
 maps_to: ["CAP-INT-10"]
 implements: ["ART-5"]
 applies_to: ["PRC-04", "PRC-05", "PRC-06"]

@@ -7,7 +7,7 @@ title: Registre des produits, intrants et indicateurs
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/04_cartographie-cible/index.md
+envelope: 02_artsn/04_cartographie-cible/composants.md
 maps_to: ["CAP-INT-09"]
 implements: ["ART-4"]
 applies_to: ["PRC-05", "PRC-06"]

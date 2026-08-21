@@ -7,7 +7,7 @@ title: Tableaux de bord & Portails nationaux (performance, CSU, ressources, veil
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/04_cartographie-cible/index.md
+envelope: 02_artsn/04_cartographie-cible/composants.md
 maps_to: ["CAP-INT-07", "CAP-INT-11"]
 implements: ["ART-6"]
 applies_to: ["PRC-10", "PRC-11", "PRC-12"]

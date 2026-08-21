@@ -7,7 +7,7 @@ title: Centre de commande & Crises intersectorielles (alertes, crises, veille)
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/04_cartographie-cible/index.md
+envelope: 02_artsn/04_cartographie-cible/composants.md
 maps_to: ["CAP-INT-07"]
 implements: ["ART-5", "ART-0"]
 applies_to: ["PRC-05", "PRC-11"]

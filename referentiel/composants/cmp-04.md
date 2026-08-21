@@ -7,7 +7,7 @@ title: Moteur analytique & IA (IA prédictive, routeur alertes, Grand Livre)
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/04_cartographie-cible/index.md
+envelope: 02_artsn/04_cartographie-cible/composants.md
 maps_to: ["CAP-INT-07", "CAP-INT-10"]
 implements: ["ART-5", "ART-9"]
 applies_to: ["PRC-09", "PRC-05"]
