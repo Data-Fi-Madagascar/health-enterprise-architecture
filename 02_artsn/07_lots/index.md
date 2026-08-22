@@ -230,3 +230,19 @@ Le **CMP-07 — Gestionnaire de Sagas** (Couche 4) fait l'objet d'une étude « 
 À l'horizon immédiate d'août à septembre 2026, la priorité consiste à présenter la feuille de route au Comité de pilotage, à valider le budget prévisionnel de la Lot L1 d'infrastructure, à lancer l'appel d'offres pour le data center national et à coordonner avec l'UGD le déploiement du serveur de sécurité X-Road santé. Sur la période court terme d'octobre à décembre 2026, l'équipe projet de huit personnes sera recrutée, l'environnement de développement sera déployé et la construction des nœuds régionaux sera amorcée. En milieu de parcours, au cours de l'année 2027, les jalons J1, J2 et J3 devront être atteints, les applications terrain de la Lot L2 lancées et les résultats de la Lot L1 évalués.
 
 **Prochaine révision** : Septembre 2026
+
+## 9. Trajectoire CNISN et alignement des lots
+
+Le CNISN fixe le **quoi** (normes obligatoires et décisions d'architecture) ; l'ARTSN en fixe le **comment** (patterns techniques opposables). Chaque lot de travail opérationnalise un sous-ensemble de la trajectoire CNISN :
+
+| Lot | Normes CNISN adoptées | Décisions d'architecture (ADR) |
+|-----|------------------------|--------------------------------|
+| L1 — Infrastructure & sécurité | STD-0002 (chiffrement), STD-0007 (SNOMED CT, licence) | ADR-0008 (Audit ATNA), ADR-0010 (cadre légal) |
+| L2 — Applications terrain | STD-0001 (FHIR R4), STD-0006 (terminologie) | ADR-0003 (FHIR R4) |
+| L3 — Médiation & registres | STD-0003 (X-Road), STD-0005 (PIXm/PDQm), STD-0004 (mADX) | ADR-0001 (X-Road), ADR-0004 (identité), ADR-0006 (INP) |
+| L4 — Analytique & pilotage | STD-0001 (FHIR R4 analytique), ADR-0008 (ATNA) | ADR-0003 (FHIR R4) |
+| L5 — Extension & pérennisation | — (renfort) | ADR-0005 (consentement) |
+| L6 — Interopérabilité transfrontalière | GDHCN (échange international) | ADR-0007 (GDHCN) |
+| L7 — Coordination One Health | — (intersectoriel) | ADR-0001 (X-Road), ADR-0007 (GDHCN) |
+
+Cette trajectoire garantit que le déploiement ARTSN reste conforme au cadre national d'interopérabilité à chaque étape.
