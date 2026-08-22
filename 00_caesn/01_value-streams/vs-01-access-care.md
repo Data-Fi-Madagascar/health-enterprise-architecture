@@ -298,7 +298,7 @@ Patient, famille, agent de santé communautaire, personnel d'accueil, registre p
 
 Taux de recours aux soins, délai moyen d'accès à une formation sanitaire, taux de dossiers ouverts, délai d'enregistrement
 
-*Rattachement : CAP-01, CAP-02, CAP-04, CAP-11, CAP-13, CAP-14, CAP-15 · fiche PRC-01*
+*Rattachement : CAP-01, CAP-02, CAP-04, CAP-11, CAP-13, CAP-14, CAP-15, CMP-19, CMP-21, CMP-22 · fiche PRC-01*
 
 ### Prestation des soins cliniques
 
@@ -320,7 +320,7 @@ Clinicien, dossier patient, pharmacie, laboratoire, formation sanitaire référe
 
 Taux de consultations avec diagnostic documenté, taux de disponibilité des médicaments traceurs, taux de référence complétée avec retour d'information
 
-*Rattachement : CAP-01, CAP-03, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15 · fiche PRC-02*
+*Rattachement : CAP-01, CAP-03, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, CMP-19, CMP-20, CMP-21 · fiche PRC-02*
 
 ### Continuité, suivi et qualité des soins
 
@@ -341,7 +341,7 @@ Agent de santé communautaire, clinicien, patient, gestionnaire de formation san
 
 Taux de patients perdus de vue, taux d'observance thérapeutique, proportion de formations sanitaires ayant réalisé une revue qualité dans le mois
 
-*Rattachement : CAP-02, CAP-03, CAP-04, CAP-13, CAP-14, CAP-15 · fiche PRC-03*
+*Rattachement : CAP-02, CAP-03, CAP-04, CAP-13, CAP-14, CAP-15, CMP-19, CMP-21 · fiche PRC-03*
 
 <!-- END:GENERATED -->
 ## Liens

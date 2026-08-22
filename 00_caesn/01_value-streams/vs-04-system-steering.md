@@ -295,7 +295,7 @@ Ministère, directions techniques, régions, districts, Direction des affaires f
 
 Proportion de plans opérationnels alignés sur le PDSS et la SNSD, taux d'exécution budgétaire, part du budget national allouée à la santé, proportion d'initiatives partenaires alignées sur le portefeuille national
 
-*Rattachement : CAP-08, CAP-09, CAP-12, CAP-13, CAP-15, CAP-16, CMP-01, CMP-12 · fiche PRC-10*
+*Rattachement : CAP-08, CAP-09, CAP-12, CAP-13, CAP-15, CAP-16, CMP-01, CMP-12, CMP-23 · fiche PRC-10*
 
 ### Suivi et pilotage de la performance
 
@@ -316,7 +316,7 @@ Directions techniques, régions, districts, SIS, comités de pilotage
 
 Complétude et promptitude des rapports, taux d'utilisation des tableaux de bord, nombre de revues de performance, proportion de décisions documentées
 
-*Rattachement : CAP-03, CAP-08, CAP-13, CAP-14, CAP-15, CAP-16, CMP-01, CMP-02, CMP-03 · fiche PRC-11*
+*Rattachement : CAP-03, CAP-08, CAP-13, CAP-14, CAP-15, CAP-16, CMP-01, CMP-02, CMP-03, CMP-25 · fiche PRC-11*
 
 ### Redevabilité et amélioration continue
 

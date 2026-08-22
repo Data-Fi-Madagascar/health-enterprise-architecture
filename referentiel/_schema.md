@@ -31,7 +31,10 @@ Ce document définit le modèle d’objets du référentiel. Il est la source de
 | `principe` | `referentiel/principes/` | `p-` (CNISN `p-int-`, CAESN `pa-`/`pd-`) | CAESN (PA, PD), CNISN (P-INT) |
 | `etape-valeur` | `referentiel/etapes-valeur/` | `ev-` | CAESN (EV-01…28) |
 | `processus-metier` | `referentiel/processus/` | `prc-` | CAESN (PRC-01…12) |
-| `composant-applicatif` | `referentiel/composants/` | `cmp-` | CAESN (CMP-01…13) |
+| `composant-applicatif` | `referentiel/composants/` | `cmp-` | CAESN : composants applicatifs (couches 2 a 6), CMP-01…25 |
+| `composant-infrastructure` | `referentiel/composants/` | `cmp-` | socle technologique (couche 1) : CMP-26…31 |
+| `composant-securite` | `referentiel/composants/` | `cmp-` | axe securite/confiance : CMP-32…38 |
+| `registre-gouvernance` | `referentiel/composants/` | `cmp-` | axe gouvernance : CMP-39…46 |
 | `partie-prenante` | `referentiel/parties-prenantes/` | `pp-` | CAESN (PP-01…10) |
 | `capacite` | `referentiel/capacites/` | `cap-int-` | CNISN (CAP-INT-01…12) |
 | `fondation` | `referentiel/fondations/` | `f-` | ARTSN (F.1…6) |
@@ -85,6 +88,8 @@ tags: ["cnisn", "autorite", "donnees-de-reference"]
 | `implements` | non | Liens typés : chapitres / objets mis en œuvre |
 | `applies_to` | non | Liens typés : objets auxquels il s’applique |
 | `related` | non | Liens typés : autres objets liés |
+| `categorie` | non | Sous-couche ArchiMate de l'objet : `applicatif`, `infrastructure`, `securite`, `principe`, `regulation`, `acteur`, `work-package`, `data-object` |
+| `governs` | non | Liens typés : element de gouvernance qui encadre/valide un composant (sens gouvernance -> composant) |
 | `tags` | non | Mots-clés pour l’indexation |
 
 ### Statuts
@@ -134,11 +139,15 @@ Le référentiel suit le modèle de relations d'ArchiMate : la **capacité** est
 | Processus (PRC) | `applies_to` | Capacité (CAP) | Business Process *realizes* Capability | le processus réalise la capacité |
 | Processus (PRC) | `related` | Étape de valeur (EV) | Business Process *contributes to* Value | déclenchement dans une étape de flux |
 | Processus (PRC) | `uses` | Composant (CMP) | Business Process *served by* Application Component | le processus utilise le composant |
-| Composant (CMP) | `applies_to` | Processus (PRC) | Application Component *serves* Business Process | inverse de `uses` (coté composant) |
+| Composant (CMP) | `applies_to` | Processus (PRC) | Application Component *serves* Business Process | inverse de `uses` (coté composant applicatif uniquement) |
 | Composant (CMP) | `implements` | Chapitre (ART) | Application Component *realizes* Requirement | met en oeuvre la norme |
 | Composant (CMP) | `maps_to` | Capacité CNISN (CAP-INT) | Alignment | aligne la capacité ARTSN sur la capacité CNISN |
+| Composant applicatif (CMP-01..25) | `uses` | Infrastructure (CMP-26..31) | Application Component *uses* Technology service | le composant applicatif utilise le socle infrastructural |
+| Composant applicatif (CMP-01..25) | `uses` | Sécurité (CMP-32..38) | Application Component *uses* Security service | le composant applicatif consomme les services de securite |
+| Sécurité (CMP-32..38) | `uses` | Infrastructure (CMP-26..31) | Security component *uses* Technology service | la securite utilise l'infrastructure |
+| Gouvernance (CMP-39..46) | `governs` | Composant (CMP) | Governance element *governs* Component | l'organe/registre de gouvernance encadre le composant |
 
-Règle d'intégrité : un flux de valeur ne doit laisser aucune capacité orpheline ; chaque processus liste ses capacités réalisées de façon **granulaire** (pas par copie du flux parent) ; `uses` (PRC -> CMP) et `applies_to` (CMP -> PRC) sont les deux sens d'une même relation *service* et doivent rester cohérents.
+Règle d'intégrité : un flux de valeur ne doit laisser aucune capacité orpheline ; chaque processus liste ses capacités réalisées de façon **granulaire** (pas par copie du flux parent) ; `uses` (PRC -> CMP applicatif) et `applies_to` (CMP applicatif -> PRC) sont les deux sens d'une même relation *service* et doivent rester cohérents. Le socle transverse (infrastructure CMP-26..31, securite CMP-32..38) n'est **pas** lié directement aux processus : il est atteint via `uses` depuis les composants applicatifs. La gouvernance (CMP-39..46) n'utilise pas `uses` ; elle encadre les composants via `governs`.
 
 ## Registre des objets
 

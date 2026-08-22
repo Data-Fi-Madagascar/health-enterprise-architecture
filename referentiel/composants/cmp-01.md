@@ -2,6 +2,7 @@
 domain: composants
 id: CMP-01
 type: composant-applicatif
+categorie: applicatif
 niveau: "1"
 title: Tableaux de bord & Portails nationaux (performance, CSU, ressources, veille)
 status: draft
@@ -10,6 +11,7 @@ version: "0.0.1"
 envelope: 02_artsn/04_cartographie-cible/composants.md
 maps_to: ["CAP-INT-07", "CAP-INT-11"]
 implements: ["ART-6"]
+uses: ["CMP-26", "CMP-27", "CMP-28", "CMP-29", "CMP-30", "CMP-31", "CMP-32", "CMP-33", "CMP-34", "CMP-35", "CMP-36", "CMP-37", "CMP-38"]
 applies_to: ["PRC-10", "PRC-11", "PRC-12"]
 related: ["ENF-5", "CAP-13", "CAP-16", "VS-04"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-01", "couche-6"]

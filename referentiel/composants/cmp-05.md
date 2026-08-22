@@ -2,6 +2,7 @@
 domain: composants
 id: CMP-05
 type: composant-applicatif
+categorie: applicatif
 niveau: "1"
 title: Moteur de graphes & Référentiel spatio-temporel (Graph Store, Spatio ART-4d)
 status: draft
@@ -10,6 +11,7 @@ version: "0.0.1"
 envelope: 02_artsn/04_cartographie-cible/composants.md
 maps_to: ["CAP-INT-03", "CAP-INT-12"]
 implements: ["ART-8B", "ART-4D"]
+uses: ["CMP-26", "CMP-27", "CMP-28", "CMP-29", "CMP-30", "CMP-31", "CMP-32", "CMP-33", "CMP-34", "CMP-35", "CMP-36", "CMP-37", "CMP-38"]
 applies_to: []
 related: ["ENF-4", "CAP-13", "CAP-14", "VS-04"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-05", "couche-5"]

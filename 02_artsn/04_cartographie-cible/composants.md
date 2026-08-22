@@ -11,9 +11,11 @@ tags: ["artsn", "composants", "niveau-3"]
 
 # Composants de la cartographie cible
 
-Ce document agrege les monographies des composants reference par la cartographie conceptuelle cible.
+Ce document agrege les monographies des composants reference par la cartographie conceptuelle cible. Les composants sont regroupes par sous-couche ArchiMate : applicatif (couches 2 a 6), infrastructure (couche 1), securite et gouvernance.
 
-<!-- BEGIN:GENERATED -->
+## Composants applicatifs (couches 2 a 6)
+
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/composants/cmp-01.md,referentiel/composants/cmp-02.md,referentiel/composants/cmp-03.md,referentiel/composants/cmp-04.md,referentiel/composants/cmp-05.md,referentiel/composants/cmp-06.md,referentiel/composants/cmp-07.md,referentiel/composants/cmp-08.md,referentiel/composants/cmp-09.md,referentiel/composants/cmp-10.md,referentiel/composants/cmp-11.md,referentiel/composants/cmp-12.md,referentiel/composants/cmp-13.md,referentiel/composants/cmp-14.md,referentiel/composants/cmp-15.md,referentiel/composants/cmp-16.md,referentiel/composants/cmp-17.md,referentiel/composants/cmp-18.md,referentiel/composants/cmp-19.md,referentiel/composants/cmp-20.md,referentiel/composants/cmp-21.md,referentiel/composants/cmp-22.md,referentiel/composants/cmp-23.md,referentiel/composants/cmp-24.md,referentiel/composants/cmp-25.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### Tableaux de bord & Portails nationaux
@@ -26,7 +28,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-10: Planification et allocation des ressources](../../referentiel/processus/prc-10.md) (planification), [PRC-11: Suivi et pilotage de la performance](../../referentiel/processus/prc-11.md) (pilotage performance), [PRC-12: Redevabilité et amélioration continue](../../referentiel/processus/prc-12.md) (redevabilité).
 - **Statut : Stable.**
 
-*Rattachement : PRC-10, PRC-11, PRC-12, CAP-INT-07, CAP-INT-11, ART-6 · fiche CMP-01*
+*Rattachement : PRC-10, PRC-11, PRC-12, CAP-INT-07, CAP-INT-11, ART-6, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-01*
 
 ### Centre de commande & Crises intersectorielles
 
@@ -38,7 +40,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-05: Alerte, investigation et riposte](../../referentiel/processus/prc-05.md) (alerte/investigation/riposte), [PRC-11: Suivi et pilotage de la performance](../../referentiel/processus/prc-11.md) (pilotage performance).
 - **Statut : Stable.**
 
-*Rattachement : PRC-05, PRC-11, CAP-INT-07, ART-5, ART-0 · fiche CMP-02*
+*Rattachement : PRC-05, PRC-11, CAP-INT-07, ART-5, ART-0, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-02*
 
 ### Entrepôt Lakehouse & Projections analytiques
 
@@ -50,7 +52,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-09: Remboursement et régulation des mécanismes](../../referentiel/processus/prc-09.md) (remboursement), [PRC-11: Suivi et pilotage de la performance](../../referentiel/processus/prc-11.md) (pilotage).
 - **Statut : Stable.**
 
-*Rattachement : PRC-09, PRC-11, CAP-INT-07, CAP-INT-11, ART-6, ART-9 · fiche CMP-03*
+*Rattachement : PRC-09, PRC-11, CAP-INT-07, CAP-INT-11, ART-6, ART-9, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-03*
 
 ### Moteur analytique & IA
 
@@ -62,7 +64,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-09: Remboursement et régulation des mécanismes](../../referentiel/processus/prc-09.md) (remboursement), [PRC-05: Alerte, investigation et riposte](../../referentiel/processus/prc-05.md) (alerte/riposte).
 - **Statut : Stable.**
 
-*Rattachement : PRC-09, PRC-05, CAP-INT-07, CAP-INT-10, ART-5, ART-9 · fiche CMP-04*
+*Rattachement : PRC-05, PRC-09, CAP-INT-07, CAP-INT-10, ART-5, ART-9, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-04*
 
 ### Moteur de graphes & Référentiel spatio-temporel
 
@@ -73,7 +75,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Rattachement** : [ART-8b](../../referentiel/chapitres/art-8b.md) (graphe), [ART-4d](../../referentiel/chapitres/art-4d.md) (spatio-temporel), [CAP-INT-03: Échange et médiation inter-systèmes](../../referentiel/capacites/cap-int-03.md), [CAP-INT-12: Conformité et tests d’interopérabilité](../../referentiel/capacites/cap-int-12.md).
 - **Statut : Stable.**
 
-*Rattachement : CAP-INT-03, CAP-INT-12, ART-8B, ART-4D · fiche CMP-05*
+*Rattachement : CAP-INT-03, CAP-INT-12, ART-8B, ART-4D, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-05*
 
 ### Intégration, Médiation, API Gateway, Broker & Registre schémas
 
@@ -84,7 +86,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Rattachement** : [ART-1](../../referentiel/chapitres/art-1.md) (ingestion), [ART-2](../../referentiel/chapitres/art-2.md) (médiation), [F.3](../../referentiel/fondations/f-3.md) (schémas), [CAP-INT-01: Résolution d’identité du bénéficiaire](../../referentiel/capacites/cap-int-01.md), [CAP-INT-03: Échange et médiation inter-systèmes](../../referentiel/capacites/cap-int-03.md).
 - **Statut : Stable.**
 
-*Rattachement : CAP-INT-01, CAP-INT-03, ART-1, ART-2, F-3 · fiche CMP-06*
+*Rattachement : CAP-INT-01, CAP-INT-03, ART-1, ART-2, F-3, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-06*
 
 ### Orchestrateur de parcours & Gestionnaire de Sagas (ART-8a)
 
@@ -96,7 +98,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../referentiel/processus/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../referentiel/processus/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../referentiel/processus/prc-06.md) (logistique).
 - **Statut : Stable.**
 
-*Rattachement : PRC-04, PRC-05, PRC-06, CAP-INT-08, ART-8A · fiche CMP-07*
+*Rattachement : PRC-04, PRC-05, PRC-06, CAP-INT-08, ART-8A, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-07*
 
 ### Répertoire de données cliniques opérationnelles
 
@@ -108,7 +110,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../referentiel/processus/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../referentiel/processus/prc-05.md) (pharmacie).
 - **Statut : Stable.**
 
-*Rattachement : PRC-04, PRC-05, CAP-INT-09, ART-4 · fiche CMP-08*
+*Rattachement : PRC-04, PRC-05, CAP-INT-09, ART-4, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-08*
 
 ### Référentiel des métadonnées d'exploitation ([ART-4: Référentiels de métadonnées de gestion](../../referentiel/chapitres/art-4.md))
 
@@ -120,7 +122,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-07: Identification et droits des bénéficiaires](../../referentiel/processus/prc-07.md) (production données), [PRC-08: Financement et exemption au point de service](../../referentiel/processus/prc-08.md) (qualité).
 - **Statut : Stable.**
 
-*Rattachement : PRC-07, PRC-08, CAP-INT-09, ART-4 · fiche CMP-09*
+*Rattachement : PRC-07, PRC-08, CAP-INT-09, ART-4, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-09*
 
 ### Registre des terminologies
 
@@ -132,7 +134,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-07: Identification et droits des bénéficiaires](../../referentiel/processus/prc-07.md) (production données), [PRC-08: Financement et exemption au point de service](../../referentiel/processus/prc-08.md) (qualité).
 - **Statut : Stable.**
 
-*Rattachement : PRC-07, PRC-08, CAP-INT-09, ART-4 · fiche CMP-10*
+*Rattachement : PRC-07, PRC-08, CAP-INT-09, ART-4, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-10*
 
 ### Registre des clients / Index National des Patients (INP — ART-4a)
 
@@ -144,7 +146,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../referentiel/processus/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../referentiel/processus/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../referentiel/processus/prc-06.md) (logistique).
 - **Statut : Stable.**
 
-*Rattachement : PRC-04, PRC-05, PRC-06, CAP-INT-09, ART-4A · fiche CMP-11*
+*Rattachement : PRC-04, PRC-05, PRC-06, CAP-INT-09, ART-4A, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-11*
 
 ### Registre d'éligibilité et de couverture (CSU — ART-4c)
 
@@ -156,7 +158,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-09: Remboursement et régulation des mécanismes](../../referentiel/processus/prc-09.md) (finance), [PRC-10: Planification et allocation des ressources](../../referentiel/processus/prc-10.md) (planification).
 - **Statut : Stable.**
 
-*Rattachement : PRC-09, PRC-10, CAP-INT-09, ART-4C · fiche CMP-12*
+*Rattachement : PRC-09, PRC-10, CAP-INT-09, ART-4C, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-12*
 
 ### Registre des personnels
 
@@ -168,7 +170,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../referentiel/processus/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../referentiel/processus/prc-05.md) (pharmacie).
 - **Statut : Stable.**
 
-*Rattachement : PRC-04, PRC-05, CAP-INT-09, ART-4 · fiche CMP-13*
+*Rattachement : PRC-04, PRC-05, CAP-INT-09, ART-4, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-13*
 
 ### Registre des produits, intrants et indicateurs
 
@@ -180,7 +182,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-05: Alerte, investigation et riposte](../../referentiel/processus/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../referentiel/processus/prc-06.md) (logistique).
 - **Statut : Stable.**
 
-*Rattachement : PRC-05, PRC-06, CAP-INT-09, ART-4 · fiche CMP-14*
+*Rattachement : PRC-05, PRC-06, CAP-INT-09, ART-4, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-14*
 
 ### API Gateway
 
@@ -192,7 +194,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../referentiel/processus/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../referentiel/processus/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../referentiel/processus/prc-06.md) (logistique).
 - **Statut : Stable.**
 
-*Rattachement : PRC-04, PRC-05, PRC-06, CAP-INT-10, ART-5 · fiche CMP-15*
+*Rattachement : PRC-04, PRC-05, PRC-06, CAP-INT-10, ART-5, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-15*
 
 ### Registre de schémas (F.3)
 
@@ -204,7 +206,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-07: Identification et droits des bénéficiaires](../../referentiel/processus/prc-07.md) (production données), [PRC-08: Financement et exemption au point de service](../../referentiel/processus/prc-08.md) (qualité).
 - **Statut : Stable.**
 
-*Rattachement : PRC-07, PRC-08, CAP-INT-10, ART-5 · fiche CMP-16*
+*Rattachement : PRC-07, PRC-08, CAP-INT-10, ART-5, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-16*
 
 ### Message broker asynchrone
 
@@ -216,7 +218,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../referentiel/processus/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../referentiel/processus/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../referentiel/processus/prc-06.md) (logistique).
 - **Statut : Stable.**
 
-*Rattachement : PRC-04, PRC-05, PRC-06, CAP-INT-10, ART-5 · fiche CMP-17*
+*Rattachement : PRC-04, PRC-05, PRC-06, CAP-INT-10, ART-5, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-17*
 
 ### Compensateur / Regroupeur de flux (Netting — ART-8c)
 
@@ -228,7 +230,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../referentiel/processus/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../referentiel/processus/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../referentiel/processus/prc-06.md) (logistique).
 - **Statut : Stable.**
 
-*Rattachement : PRC-04, PRC-05, PRC-06, CAP-INT-10, ART-8C · fiche CMP-18*
+*Rattachement : PRC-04, PRC-05, PRC-06, CAP-INT-10, ART-8C, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-18*
 
 ### CMP-19 : Dossiers & statistiques de sante (hopitaux)
 
@@ -236,7 +238,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ENF-1, F-1 · fiche CMP-19*
+*Rattachement : PRC-01, PRC-02, PRC-03, PRC-06, ENF-1, F-1, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-19*
 
 ### CMP-20 : Gestion des pharmacies (PMIS)
 
@@ -244,7 +246,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ENF-1, F-1 · fiche CMP-20*
+*Rattachement : PRC-02, PRC-05, ENF-1, F-1, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-20*
 
 ### CMP-21 : Sante communautaire mobile (offline)
 
@@ -252,7 +254,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ENF-1, F-1 · fiche CMP-21*
+*Rattachement : PRC-01, PRC-02, PRC-03, ENF-1, F-1, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-21*
 
 ### CMP-22 : Espace sante patient
 
@@ -260,7 +262,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ENF-1, F-1 · fiche CMP-22*
+*Rattachement : PRC-01, PRC-07, PRC-08, ENF-1, F-1, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-22*
 
 ### CMP-23 : Chaine logistique (LMIS)
 
@@ -268,7 +270,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ENF-1, F-1 · fiche CMP-23*
+*Rattachement : PRC-05, PRC-10, ENF-1, F-1, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-23*
 
 ### CMP-24 : Surveillance de la sante animale (zoonoses)
 
@@ -276,7 +278,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ENF-1, F-1 · fiche CMP-24*
+*Rattachement : PRC-04, PRC-05, ENF-1, F-1, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-24*
 
 ### CMP-25 : Enquetes & capteurs terrain
 
@@ -284,7 +286,14 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ENF-1, F-1 · fiche CMP-25*
+*Rattachement : PRC-04, PRC-05, PRC-11, ENF-1, F-1, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38 · fiche CMP-25*
+
+<!-- END:GENERATED -->
+
+## Infrastructure (couche 1)
+
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/composants/cmp-26.md,referentiel/composants/cmp-27.md,referentiel/composants/cmp-28.md,referentiel/composants/cmp-29.md,referentiel/composants/cmp-30.md,referentiel/composants/cmp-31.md -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### CMP-26 : Noeud central (datacenters nationaux HDS)
 
@@ -334,13 +343,20 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 *Rattachement : ART-7 · fiche CMP-31*
 
+<!-- END:GENERATED -->
+
+## Securite et confiance
+
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/composants/cmp-32.md,referentiel/composants/cmp-33.md,referentiel/composants/cmp-34.md,referentiel/composants/cmp-35.md,referentiel/composants/cmp-36.md,referentiel/composants/cmp-37.md,referentiel/composants/cmp-38.md -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
+
 ### CMP-32 : Gestion des identites
 
 #### Contenu normatif.
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ART-7 · fiche CMP-32*
+*Rattachement : ART-7, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31 · fiche CMP-32*
 
 ### CMP-33 : Controle d'acces fin (RBAC/ABAC)
 
@@ -348,7 +364,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ART-7 · fiche CMP-33*
+*Rattachement : ART-7, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31 · fiche CMP-33*
 
 ### CMP-34 : Gestion des consentements
 
@@ -356,7 +372,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ART-7 · fiche CMP-34*
+*Rattachement : ART-7, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31 · fiche CMP-34*
 
 ### CMP-35 : Infrastructure de cles publiques (PKI)
 
@@ -364,7 +380,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ART-7 · fiche CMP-35*
+*Rattachement : ART-7, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31 · fiche CMP-35*
 
 ### CMP-36 : Passerelle de confiance mondiale OMS (GDHCN)
 
@@ -372,7 +388,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ART-7 · fiche CMP-36*
+*Rattachement : ART-7, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31 · fiche CMP-36*
 
 ### CMP-37 : Journal d'audit immuable
 
@@ -380,7 +396,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ART-7 · fiche CMP-37*
+*Rattachement : ART-7, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31 · fiche CMP-37*
 
 ### CMP-38 : Moteur de chiffrement
 
@@ -388,7 +404,14 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ART-7 · fiche CMP-38*
+*Rattachement : ART-7, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31 · fiche CMP-38*
+
+<!-- END:GENERATED -->
+
+## Gouvernance
+
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/composants/cmp-39.md,referentiel/composants/cmp-40.md,referentiel/composants/cmp-41.md,referentiel/composants/cmp-42.md,referentiel/composants/cmp-43.md,referentiel/composants/cmp-44.md,referentiel/composants/cmp-45.md,referentiel/composants/cmp-46.md -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### CMP-39 : Registre des accords inter-institutions
 

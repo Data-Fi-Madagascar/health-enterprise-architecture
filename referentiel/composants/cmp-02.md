@@ -2,6 +2,7 @@
 domain: composants
 id: CMP-02
 type: composant-applicatif
+categorie: applicatif
 niveau: "1"
 title: Centre de commande & Crises intersectorielles (alertes, crises, veille)
 status: draft
@@ -10,6 +11,7 @@ version: "0.0.1"
 envelope: 02_artsn/04_cartographie-cible/composants.md
 maps_to: ["CAP-INT-07"]
 implements: ["ART-5", "ART-0"]
+uses: ["CMP-26", "CMP-27", "CMP-28", "CMP-29", "CMP-30", "CMP-31", "CMP-32", "CMP-33", "CMP-34", "CMP-35", "CMP-36", "CMP-37", "CMP-38"]
 applies_to: ["PRC-05", "PRC-11"]
 related: ["ENF-2", "CAP-05", "CAP-06", "VS-02", "VS-04"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-02", "couche-6"]

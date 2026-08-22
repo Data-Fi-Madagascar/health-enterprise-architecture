@@ -296,7 +296,7 @@ Direction de la Protection Sociale et de la Promotion de la Santé, programmes, 
 
 Couverture des campagnes de prévention, taux de vaccination, complétude et promptitude des rapports, taux de signaux détectés
 
-*Rattachement : CAP-04, CAP-05, CAP-06, CAP-13, CAP-14, CAP-15, CAP-17, CMP-07, CMP-08, CMP-11, CMP-13, CMP-15, CMP-17, CMP-18 · fiche PRC-04*
+*Rattachement : CAP-04, CAP-05, CAP-06, CAP-13, CAP-14, CAP-15, CAP-17, CMP-07, CMP-08, CMP-11, CMP-13, CMP-15, CMP-17, CMP-18, CMP-24, CMP-25 · fiche PRC-04*
 
 ### Alerte, investigation et riposte
 
@@ -318,7 +318,7 @@ District sanitaire, région, direction centrale, OMS, équipe d'investigation, l
 
 Délai moyen de notification d'une alerte, délai d'investigation, proportion d'alertes vérifiées dans les délais, délai de déploiement de la riposte, taux de contrôle de l'épidémie
 
-*Rattachement : CAP-04, CAP-05, CAP-13, CAP-14, CAP-15, CAP-17, CAP-18, CMP-02, CMP-04, CMP-07, CMP-08, CMP-11, CMP-13, CMP-14, CMP-15, CMP-17, CMP-18 · fiche PRC-05*
+*Rattachement : CAP-04, CAP-05, CAP-13, CAP-14, CAP-15, CAP-17, CAP-18, CMP-02, CMP-04, CMP-07, CMP-08, CMP-11, CMP-13, CMP-14, CMP-15, CMP-17, CMP-18, CMP-20, CMP-23, CMP-24, CMP-25 · fiche PRC-05*
 
 ### Clôture et capitalisation des épisodes
 
@@ -339,7 +339,7 @@ Comité de gestion de crise, direction centrale, comité technique national
 
 Taux de létalité, durée de l'épisode épidémique, nombre de revues après action, proportion de recommandations mises en œuvre
 
-*Rattachement : CAP-03, CAP-13, CAP-14, CAP-15, CMP-07, CMP-11, CMP-14, CMP-15, CMP-17, CMP-18 · fiche PRC-06*
+*Rattachement : CAP-03, CAP-13, CAP-14, CAP-15, CMP-07, CMP-11, CMP-14, CMP-15, CMP-17, CMP-18, CMP-19 · fiche PRC-06*
 
 <!-- END:GENERATED -->
 ## Liens

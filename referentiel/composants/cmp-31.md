@@ -1,7 +1,8 @@
 ---
 domain: composants
 id: CMP-31
-type: composant-applicatif
+type: composant-infrastructure
+categorie: infrastructure
 niveau: "1"
 title: Reseaux mobiles prives (APN securises)
 status: draft
@@ -9,7 +10,7 @@ owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/04_cartographie-cible/composants.md
 implements: ["ART-7"]
-applies_to: ["PRC-01", "PRC-02", "PRC-03", "PRC-04", "PRC-05", "PRC-06", "PRC-07", "PRC-08", "PRC-09", "PRC-10", "PRC-11", "PRC-12"]
+uses: []
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-31", "couche-1"]
 ---
 
