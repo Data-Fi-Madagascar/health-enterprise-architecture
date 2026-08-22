@@ -42,6 +42,7 @@ ART-7 : Sécurité, contrôle d'accès et résidence de la donnée constitue un 
 - **Rattachement** : [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md) (cybersécurité et gouvernance de la sécurité).
 - **Modèles cibles** : Zero-Trust, RBAC, ABAC, chiffrement (AES-256), AuditEvent FHIR.
 - **Normes CNISN** : [STD-0002: Sécurité et chiffrement](../../01_cnisn/05_standards/std-0002-securite-chiffrement.md), [ADR-0001: X-Road](../../01_cnisn/06_decisions/adr-0001-x-road.md), [ADR-0007: GDHCN](../../01_cnisn/06_decisions/adr-0007-gdhcn.md), [ADR-0008: Audit ATNA](../../01_cnisn/06_decisions/adr-0008-atna.md).
+- **Objets de données** : [BO-01 Patient & identité](../../00_caesn/04_data/objets.md), [BO-07 Interopérabilité transfrontalière](../../00_caesn/04_data/objets.md) (objets métier CAESN) ; voir aussi le [dictionnaire des objets de données ARTSN](../03_objets-de-donnees/index.md).
 - **Déduit selon** : [ENF-1: Résilience à l'instabilité réseau](../../referentiel/exigences/enf-1.md) (sécurité locale).
 - **Statut : Stable.**
 

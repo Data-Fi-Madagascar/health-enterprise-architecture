@@ -24,6 +24,7 @@ tags: ["artsn", "niveau-3", "chapitre", "ART-9"]
 
 - **Rattachement** : recouvre partiellement [CAP-07: Protection financière, couverture santé universelle](../capabilites/cap-07.md) (protection financière).
 - **Normes CNISN** : [ADR-0008: Audit ATNA](../../01_cnisn/06_decisions/adr-0008-atna.md) (journal d'audit immuable), [STD-0002: Sécurité et chiffrement](../../01_cnisn/05_standards/std-0002-securite-chiffrement.md).
+- **Objets de données** : [BO-03 Dispensation & produits](../../00_caesn/04_data/objets.md), [BO-04 Financement & couverture](../../00_caesn/04_data/objets.md) (objets métier CAESN) ; voir aussi le [dictionnaire des objets de données ARTSN](../../02_artsn/03_objets-de-donnees/index.md).
 - **Équation cible** : entrées − sorties = solde.
 - **Déduit selon** : [ENF-2: Intégrité des flux et traçabilité des valeurs](../exigences/enf-2.md) (grade comptable anti-fraude).
 - **Statut : Proposition ouverte.**
