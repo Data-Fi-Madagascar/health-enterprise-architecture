@@ -29,18 +29,18 @@ L'ARTSN décline le niveau 1 en **familles de patterns validées**, **standards 
 | ART-2 : Médiation et normalisation | ○ | ○ | ● | ● | ◐ |
 | ART-3 : Historisation événementielle | ○ | ○ | ● | ● | ◐ |
 | ART-4 : Référentiels de métadonnées | ○ | ○ | ● | ● | ◐ |
-| ART-4a : Résolution d'identité | ○ | ○ | ● | ● | ◐ |
-| ART-4b : Bases d'autorisation | ○ | ○ | ● | ● | ◐ |
-| ART-4c : Éligibilité et couverture | ○ | ● | ● | ◐ | ◐ |
-| ART-4d : Référentiel géospatial | ○ | ● | ● | ◐ | ◐ |
+| ART-4A : Résolution d'identité | ○ | ○ | ● | ● | ◐ |
+| ART-4B : Bases d'autorisation | ○ | ○ | ● | ● | ◐ |
+| ART-4C : Éligibilité et couverture | ○ | ● | ● | ◐ | ◐ |
+| ART-4D : Référentiel géospatial | ○ | ● | ● | ◐ | ◐ |
 | ART-5 : Cohérence et qualité des données | ○ | ○ | ● | ● | ◐ |
 | ART-6 : Analytique et restitution | ◐ | ● | ● | ● | ◐ |
 | ART-7 : Sécurité et contrôle d'accès | ◐ | ◐ | ● | ● | ◐ |
 | ART-8 : Orchestration de processus | ○ | ◐ | ● | ● | ◐ |
-| ART-8a : Orchestration de processus borné | ○ | ○ | ● | ● | ◐ |
-| ART-8b : Modélisation en graphe | ○ | ○ | ● | ● | ◐ |
-| ART-8c : Agrégation par lot | ○ | ○ | ● | ● | ◐ |
-| ART-8d : Chorégraphie inter-institutionnelle | ◐ | ● | ● | ◐ | ◐ |
+| ART-8A : Orchestration de processus borné | ○ | ○ | ● | ● | ◐ |
+| ART-8B : Modélisation en graphe | ○ | ○ | ● | ● | ◐ |
+| ART-8C : Agrégation par lot | ○ | ○ | ● | ● | ◐ |
+| ART-8D : Chorégraphie inter-institutionnelle | ◐ | ● | ● | ◐ | ◐ |
 | ART-9 : Garanties transactionnelles | ○ | ● | ● | ◐ | ◐ |
 | Partie V : Cartographie conceptuelle cible | ◐ | ◐ | ● | ● | ◐ |
 | Partie VI : Dictionnaire de données | ○ | ◐ | ● | ● | ◐ |
@@ -76,18 +76,18 @@ Les ressources complémentaires incluent l'Index de l'ARTSN, le Glossaire de l'A
 - **ART-2 : Médiation et normalisation** : Médiation et normalisation (`referentiel/chapitres/art-2.md`)
 - **ART-3 : Historisation événementielle** : Historisation événementielle et profils de déploiement (`referentiel/chapitres/art-3.md`)
 - **ART-4 : Référentiels de métadonnées** : Référentiels de métadonnées de gestion (`referentiel/chapitres/art-4.md`)
-- **ART-4a : Résolution d'identité** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
-- **ART-4b : Bases d'autorisation** : Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
-- **ART-4c : Éligibilité et couverture** : Éligibilité et couverture (`referentiel/chapitres/art-4c.md`)
-- **ART-4d : Référentiel géospatial** : Référentiel géospatial et d'exploitation partagé (`referentiel/chapitres/art-4d.md`)
+- **ART-4A : Résolution d'identité** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
+- **ART-4B : Bases d'autorisation** : Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
+- **ART-4C : Éligibilité et couverture** : Éligibilité et couverture (`referentiel/chapitres/art-4c.md`)
+- **ART-4D : Référentiel géospatial** : Référentiel géospatial et d'exploitation partagé (`referentiel/chapitres/art-4d.md`)
 - **ART-5 : Cohérence et qualité des données** : Cohérence et qualité des données (`referentiel/chapitres/art-5.md`)
 - **ART-6 : Analytique et restitution** : Analytique et restitution (`referentiel/chapitres/art-6.md`)
 - **ART-7 : Sécurité et contrôle d'accès** : Sécurité, contrôle d'accès et résidence de la donnée (`referentiel/chapitres/art-7.md`)
 - **ART-8 : Orchestration de processus** : Orchestration de processus (`referentiel/chapitres/art-8.md`)
-- **ART-8a : Orchestration de processus borné** : Orchestration de processus borné (`referentiel/chapitres/art-8a.md`)
-- **ART-8b : Modélisation en graphe** : Modélisation de relations en graphe (`referentiel/chapitres/art-8b.md`)
-- **ART-8c : Agrégation par lot** : Agrégation par lot (`referentiel/chapitres/art-8c.md`)
-- **ART-8d : Chorégraphie inter-institutionnelle** : Chorégraphie inter-institutionnelle (`referentiel/chapitres/art-8d.md`)
+- **ART-8A : Orchestration de processus borné** : Orchestration de processus borné (`referentiel/chapitres/art-8a.md`)
+- **ART-8B : Modélisation en graphe** : Modélisation de relations en graphe (`referentiel/chapitres/art-8b.md`)
+- **ART-8C : Agrégation par lot** : Agrégation par lot (`referentiel/chapitres/art-8c.md`)
+- **ART-8D : Chorégraphie inter-institutionnelle** : Chorégraphie inter-institutionnelle (`referentiel/chapitres/art-8d.md`)
 - **ART-9 : Garanties transactionnelles** : Garanties transactionnelles fortes (`referentiel/chapitres/art-9.md`)
 - **Partie V : Cartographie conceptuelle cible** : Cartographie conceptuelle cible (`02_artsn/05_cartographie/index.md`)
 - **Partie VI : Dictionnaire de données** : Dictionnaire de données fonctionnelles (`02_artsn/03_objets-de-donnees/index.md`)
@@ -120,27 +120,27 @@ Les ressources complémentaires incluent l'Index de l'ARTSN, le Glossaire de l'A
 - [artsn-protocole-test: Annexe D : Protocole de test d'interopérabilité](08_annexes/d-protocole-test-interopabilite.md)
 - [artsn-sla-performance: Annexe E : SLA et métriques de performance par profil](08_annexes/e-sla-performance.md)
 - [artsn-cartographie-cible: Cartographie conceptuelle cible](05_cartographie/index.md)
-- [ART-8D: ART-8d : Chorégraphie inter-institutionnelle](04_patterns/art-8d-choregraphie-interinstitutionnelle.md)
+- [ART-8D: ART-8D : Chorégraphie inter-institutionnelle](04_patterns/art-8d-choregraphie-interinstitutionnelle.md)
 - [ART-8: ART-8 : Orchestration de processus](04_patterns/art-8-orchestration-processus-borne.md)
-- [ART-4D: ART-4d : Référentiel géospatial et d'exploitation partagé](04_patterns/art-4d-referentiel-geospatial.md)
+- [ART-4D: ART-4D : Référentiel géospatial et d'exploitation partagé](04_patterns/art-4d-referentiel-geospatial.md)
 - [ART-7: ART-7 : Sécurité, contrôle d'accès et résidence de la donnée](04_patterns/art-7-securite-controle-acces.md)
 - [ART-3: ART-3 : Historisation événementielle et profils de déploiement](04_patterns/art-3-historisation-evenementielle.md)
 - [ART-10: ART-10 : Logistique](04_patterns/art-10-logistique.md)
-- [ART-8B: ART-8b : Modélisation de relations en graphe](04_patterns/art-8b-modelisation-graphe.md)
-- [ART-4C: ART-4c : Éligibilité et couverture](04_patterns/art-4c-eligibilite-couverture.md)
+- [ART-8B: ART-8B : Modélisation de relations en graphe](04_patterns/art-8b-modelisation-graphe.md)
+- [ART-4C: ART-4C : Éligibilité et couverture](04_patterns/art-4c-eligibilite-couverture.md)
 - [ART-5: ART-5 : Cohérence et qualité des données](04_patterns/art-5-coherence-qualite-donnees.md)
 - [ART-0: ART-0 : Accords de partage inter-institutionnels](04_patterns/art-0-accords-partage.md)
-- [ART-4B: ART-4b : Bases d'autorisation](04_patterns/art-4b-bases-autorisation.md)
+- [ART-4B: ART-4B : Bases d'autorisation](04_patterns/art-4b-bases-autorisation.md)
 - [ART-11: ART-11 : Coordination intersectorielle](04_patterns/art-11-coordination-intersectorielle.md)
-- [ART-8C: ART-8c : Agrégation par lot](04_patterns/art-8c-agregation-par-lot.md)
+- [ART-8C: ART-8C : Agrégation par lot](04_patterns/art-8c-agregation-par-lot.md)
 - [ART-2: ART-2 : Médiation et normalisation](04_patterns/art-2-mediation-normalisation.md)
 - [ART-4: ART-4 : Référentiels de métadonnées de gestion](04_patterns/art-4-referentiels-metadonnees.md)
 - [artsn-chapitres: Chapitres et patterns de référence](04_patterns/index.md)
 - [ART-6: ART-6 : Analytique et restitution](04_patterns/art-6-analytique-restitution.md)
 - [ART-1: ART-1 : Intégration et ingestion](04_patterns/art-1-integration-ingestion.md)
-- [ART-8A: ART-8a : Orchestration de processus borné](04_patterns/art-8a-orchestration-processus-borne.md)
+- [ART-8A: ART-8A : Orchestration de processus borné](04_patterns/art-8a-orchestration-processus-borne.md)
 - [ART-9: ART-9 : Garanties transactionnelles fortes](04_patterns/art-9-garanties-transactionnelles.md)
-- [ART-4A: ART-4a : Résolution d'identité](04_patterns/art-4a-resolution-identite.md)
+- [ART-4A: ART-4A : Résolution d'identité](04_patterns/art-4a-resolution-identite.md)
 - [artsn-dictionnaire-donnees: Dictionnaire de données fonctionnelles](03_objets-de-donnees/index.md)
 - [artsn-exigences-contextuelles: Exigences contextuelles nationales](02_exigences-contextuelles/index.md)
 - [artsn-fondations: Fondations de l'ARTSN](00_fondations/index.md)

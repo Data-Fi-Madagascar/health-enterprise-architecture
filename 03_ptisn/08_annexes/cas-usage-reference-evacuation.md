@@ -179,7 +179,7 @@ Légende : ● requis · ○ optionnel · : non applicable
 
 | Exigence | Source | Applicable à |
 |----------|--------|--------------|
-| ENF-5 : Coordination processus complexes | ART-8a | Les 3 scénarios |
+| ENF-5 : Coordination processus complexes | ART-8A | Les 3 scénarios |
 | EXG-TF-01 à TF-08 | CAP-INT-13 | Évacuation internationale |
 | Consentement (PT-11) | CAP-INT-09 | Tous les scénarios |
 

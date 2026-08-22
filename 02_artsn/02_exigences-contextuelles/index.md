@@ -62,14 +62,14 @@ La connectivité internet et mobile reste asymétrique, intermittente ou absente
 - [ART-1: Intégration et ingestion](../../referentiel/chapitres/art-1.md) — Intégration et ingestion
 - [ART-3: Historisation événementielle et profils de déploiement](../../referentiel/chapitres/art-3.md) — Historisation événementielle et profils de déploiement
 - [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../referentiel/chapitres/art-7.md) — Sécurité, contrôle d'accès et résidence de la donnée
-- **ART-8c** — Agrégation par lot
-- **ART-4c** — Éligibilité et couverture
+- **ART-8C** — Agrégation par lot
+- **ART-4C** — Éligibilité et couverture
 
 ### Intégrité des flux et traçabilité des valeurs
 
 **Contenu normatif.** Le déploiement national de la gratuité ciblée, des subventions de l’État et des mécanismes de la Couverture Santé Universelle (CSU) présente un risque systémique élevé de fraude, de double facturation, de falsification d’ordonnances et de détournement de stocks. L’architecture doit interdire toute modification, suppression ou altération rétroactive des transactions logistiques et financières validées. Tout mouvement de valeur (Ariary ou unités physiques de médicaments) doit obéir à des règles strictes de **double écriture comptable** et de **conservation de quantité** (Entrées − Sorties = Solde), garantissant une réconciliation exacte à somme nulle.
 
-**Statut : Stable.** — appliqué par [ART-9 (garanties transactionnelles)](../../referentiel/chapitres/art-9.md), [ART-4c (éligibilité)](../../referentiel/chapitres/art-4c.md), [ART-8c (agrégation par lot)](../../referentiel/chapitres/art-8c.md).
+**Statut : Stable.** — appliqué par [ART-9 (garanties transactionnelles)](../../referentiel/chapitres/art-9.md), [ART-4C (éligibilité)](../../referentiel/chapitres/art-4c.md), [ART-8C (agrégation par lot)](../../referentiel/chapitres/art-8c.md).
 
 #### Justification
 
@@ -91,8 +91,8 @@ Le déploiement national de la gratuité ciblée, des subventions et de la CSU c
 #### Fondations et chapitres garants
 
 - [ART-9: Garanties transactionnelles fortes](../../referentiel/chapitres/art-9.md) — Garanties transactionnelles fortes
-- **ART-4c** — Éligibilité et couverture
-- **ART-8c** — Agrégation par lot
+- **ART-4C** — Éligibilité et couverture
+- **ART-8C** — Agrégation par lot
 
 ### Unicité de l’identité et résilience face à la fragmentation applicative
 
@@ -100,7 +100,7 @@ Le déploiement national de la gratuité ciblée, des subventions et de la CSU c
 
 **Contenu normatif.** Le système national doit posséder la capacité de rapprocher, consolider et unifier des identités de patients incertains, phonétiquement variables ou incomplètes. Cette brique d’**identitovigilance** doit générer un enregistrement pivot unique et souverain pour le citoyen, sans forcer le remplacement immédiat ou la refonte structurelle des bases locales des hôpitaux.
 
-**Statut : Stable.** — appliqué par [ART-4a (résolution d’identité)](../../referentiel/chapitres/art-4a.md), [ART-2 (médiation)](../../referentiel/chapitres/art-2.md).
+**Statut : Stable.** — appliqué par [ART-4A (résolution d’identité)](../../referentiel/chapitres/art-4a.md), [ART-2 (médiation)](../../referentiel/chapitres/art-2.md).
 
 #### Justification
 
@@ -120,7 +120,7 @@ Le paysage numérique historique est marqué par une dispersion de solutions et 
 
 #### Fondations et chapitres garants
 
-- **ART-4a** — Résolution d'identité
+- **ART-4A** — Résolution d'identité
 - [ART-2: Médiation et normalisation](../../referentiel/chapitres/art-2.md) — Médiation et normalisation
 
 ### Cloisonnement inter-institutionnel et étanchéité des données (One Health)
@@ -129,7 +129,7 @@ Le paysage numérique historique est marqué par une dispersion de solutions et 
 
 **Contenu normatif.** Le partage d’informations intersectoriel à des fins de recherche ou d’alerte épidémique précoce doit préserver la souveraineté de chaque institution, respecter le secret médical et protéger la vie privée des citoyens. Les pipelines de traitement analytique ont l’obligation d’opérer sur des données **définitivement dépouillées de tout identifiant direct** (Noms, INS). Les corrélations entre secteurs ne doivent s’effectuer qu’avec des dimensions de rapprochement **neutres et non nominatives** : l’espace géographique et le temps.
 
-**Statut : Stable.** — appliqué par [ART-0 (accords de partage)](../../referentiel/chapitres/art-0.md), [ART-4b (bases d’autorisation)](../../referentiel/chapitres/art-4b.md), [ART-4d (référentiel géospatial)](../../referentiel/chapitres/art-4d.md).
+**Statut : Stable.** — appliqué par [ART-0 (accords de partage)](../../referentiel/chapitres/art-0.md), [ART-4B (bases d’autorisation)](../../referentiel/chapitres/art-4b.md), [ART-4D (référentiel géospatial)](../../referentiel/chapitres/art-4d.md).
 
 #### Justification
 
@@ -151,13 +151,13 @@ Le croisement de données massives entre Santé, Agriculture/Élevage et Environ
 #### Fondations et chapitres garants
 
 - [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md) — Accords de partage inter-institutionnels
-- **ART-4b** — Bases d'autorisation
-- **ART-4d** — Référentiel géospatial et d'exploitation partagé
+- **ART-4B** — Bases d'autorisation
+- **ART-4D** — Référentiel géospatial et d'exploitation partagé
 - **F.2** — Préservation de la souveraineté intersectorielle
 - [ART-2: Médiation et normalisation](../../referentiel/chapitres/art-2.md) — Médiation et normalisation
 - [ART-6: Analytique et restitution](../../referentiel/chapitres/art-6.md) — Analytique et restitution
-- **ART-8b** — Modélisation de relations en graphe
-- **ART-8d** — Chorégraphie inter-institutionnelle
+- **ART-8B** — Modélisation de relations en graphe
+- **ART-8D** — Chorégraphie inter-institutionnelle
 - [ART-4: Référentiels de métadonnées de gestion](../../referentiel/chapitres/art-4.md) — Référentiels de métadonnées de gestion
 
 ### Coordination des processus complexes décentralisés et asynchrones
@@ -166,7 +166,7 @@ Le croisement de données massives entre Santé, Agriculture/Élevage et Environ
 
 **Contenu normatif.** Le système national doit être capable de suivre et d'orchestrer l'état d'avancement d'un parcours de soins distribué à étapes multiples, de bout en bout. L'architecture doit tolérer les interruptions temporaires de transmission, tout en garantissant le déclenchement automatique d'alertes d'escalade ou d'annulations (compensations) fonctionnelles si un établissement de destination est saturé ou inaccessible.
 
-**Statut : Stable.** — appliqué par [ART-8a (orchestration de processus borné)](../../referentiel/chapitres/art-8a.md), [ART-5 (qualité des données)](../../referentiel/chapitres/art-5.md), [PT-14 (interopérabilité transfrontalière)](../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md).
+**Statut : Stable.** — appliqué par [ART-8A (orchestration de processus borné)](../../referentiel/chapitres/art-8a.md), [ART-5 (qualité des données)](../../referentiel/chapitres/art-5.md), [PT-14 (interopérabilité transfrontalière)](../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md).
 
 #### Justification
 
@@ -186,7 +186,7 @@ Les parcours de soins critiques s’étendent sur plusieurs jours et impliquent 
 
 #### Fondations et chapitres garants
 
-- **ART-8a** — Orchestration de processus borné
+- **ART-8A** — Orchestration de processus borné
 - [ART-8: Orchestration de processus](../../referentiel/chapitres/art-8.md) — Orchestration de processus
 - [ART-5: Cohérence et qualité des données](../../referentiel/chapitres/art-5.md) — Cohérence et qualité des données
 - [PT-14: Interopérabilité transfrontalière](../../referentiel/profils/pt-14.md) — Interopérabilité transfrontalière

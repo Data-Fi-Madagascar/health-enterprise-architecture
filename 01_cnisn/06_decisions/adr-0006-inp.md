@@ -51,7 +51,7 @@ L'INP répond aux exigences du cadre :
 - **CAP-INT-01** : Résolution d'identité du bénéficiaire
 - **CAP-13** : Interopérabilité des données
 - **ART-4** : Référentiels nationaux
-- **ART-4a** : Résolution d'identité
+- **ART-4A** : Résolution d'identité
 - **VS-01** : Parcours patient (continuité)
 - **VS-03** : Protection financière (éligibilité)
 

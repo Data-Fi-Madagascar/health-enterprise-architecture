@@ -47,15 +47,15 @@ Le tableau ci-dessous associe chaque chapitre de l'Architecture de Référence T
 | ART-2 | PT-02, PT-03, PT-07, PT-08 |
 | ART-3 | PT-09, PT-12 |
 | ART-4 | PT-04, PT-05, PT-06, PT-07, PT-13, PT-15 |
-| ART-4a | PT-04, PT-05 |
-| ART-4b | PT-04, PT-10, PT-11 |
-| ART-4d | PT-15 |
+| ART-4A | PT-04, PT-05 |
+| ART-4B | PT-04, PT-10, PT-11 |
+| ART-4D | PT-15 |
 | ART-5 | PT-02, PT-06, PT-07, PT-08, PT-09, PT-13 |
 | ART-6 | PT-06, PT-08, PT-09, PT-13 |
 | ART-7 | PT-01, PT-02, PT-04, PT-05, PT-09, PT-10, PT-11, PT-12, PT-14, PT-16 |
 | ART-8 | PT-02, PT-16 |
-| ART-8a | PT-16 |
-| ART-8b | PT-15 |
+| ART-8A | PT-16 |
+| ART-8B | PT-15 |
 | ART-9 | PT-10 |
 | ART-10 | Profil futur |
 | ART-11 | PT-01, PT-11, PT-15 |
@@ -114,8 +114,8 @@ Cette correspondance ne signifie pas que tous les composants doivent être dépl
 - **ART-2** : Médiation et normalisation (`referentiel/chapitres/art-2.md`)
 - **ART-3** : Historisation événementielle et profils de déploiement (`referentiel/chapitres/art-3.md`)
 - **ART-4** : Référentiels de métadonnées de gestion (`referentiel/chapitres/art-4.md`)
-- **ART-4a** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
-- **ART-4b** : Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
+- **ART-4A** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
+- **ART-4B** : Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
 - **ART-5** : Cohérence et qualité des données (`referentiel/chapitres/art-5.md`)
 - **ART-6** : Analytique et restitution (`referentiel/chapitres/art-6.md`)
 - **ART-7** : Sécurité, contrôle d'accès et résidence de la donnée (`referentiel/chapitres/art-7.md`)

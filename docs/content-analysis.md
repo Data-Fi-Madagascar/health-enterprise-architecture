@@ -130,7 +130,7 @@ tags: [analyse, qualité, contenu, synthèse]
 - Référentiel détaillé absent
 - F.5 et F.6 au statut provisoire
 
-**Priorité :** Peupler le dictionnaire (20-30 concepts), promouvoir ART-4c et ART-9 via pilotes.
+**Priorité :** Peupler le dictionnaire (20-30 concepts), promouvoir ART-4C et ART-9 via pilotes.
 
 ---
 

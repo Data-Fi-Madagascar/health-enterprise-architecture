@@ -54,7 +54,7 @@ Ce template est utilisé pour soumettre toute modification au CAESN, à l'ARTSN 
 
 **Décrire la modification proposée de manière claire et concise.**
 
-> Exemple : « Ajouter une section ART-4c décrivant un mode dégradé de résolution d'identité basé sur la recherche démographique floue (nom + commune + date de naissance) avec score de confiance. »
+> Exemple : « Ajouter une section ART-4C décrivant un mode dégradé de résolution d'identité basé sur la recherche démographique floue (nom + commune + date de naissance) avec score de confiance. »
 
 ---
 

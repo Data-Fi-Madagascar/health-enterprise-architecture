@@ -21,7 +21,7 @@ tags: ["ptisn", "niveau-4", "profils", "PT-10"]
 ## 2. Chapitres ART applicables
 
 - [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md) ;
-- ART-4b ;
+- ART-4B ;
 - [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../referentiel/chapitres/art-7.md) ;
 - [ART-9: Garanties transactionnelles fortes](../../referentiel/chapitres/art-9.md) lorsque applicable.
 

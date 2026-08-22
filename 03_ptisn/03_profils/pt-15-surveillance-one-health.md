@@ -28,7 +28,7 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 | **Partenaires** | OIE/WAHIS, FAO, GBIF, WMO, CDC Africa, instituts nationaux vétérinaires |
 | **Flux** | Surveillance zoonotique, alertes One Health, données climatiques, biodiversité |
 | **Standards** | FHIR R4, mADX, OIE-WAHIS, GBIF, WMO BUFR |
-| **Chapitres ARTSN** | [ART-11: Coordination intersectorielle](../../referentiel/chapitres/art-11.md), [ART-0: Accords](../../referentiel/chapitres/art-0.md), ART-4d (Référentiels vétérinaires), ART-8b (Surveillance) |
+| **Chapitres ARTSN** | [ART-11: Coordination intersectorielle](../../referentiel/chapitres/art-11.md), [ART-0: Accords](../../referentiel/chapitres/art-0.md), ART-4D (Référentiels vétérinaires), ART-8B (Surveillance) |
 
 ## Standards et profils applicables
 

@@ -43,5 +43,5 @@ La connectivité internet et mobile reste asymétrique, intermittente ou absente
 - [ART-1: Intégration et ingestion](../chapitres/art-1.md) — Intégration et ingestion
 - [ART-3: Historisation événementielle et profils de déploiement](../chapitres/art-3.md) — Historisation événementielle et profils de déploiement
 - [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../chapitres/art-7.md) — Sécurité, contrôle d'accès et résidence de la donnée
-- **ART-8c** — Agrégation par lot
-- **ART-4c** — Éligibilité et couverture
+- **ART-8C** — Agrégation par lot
+- **ART-4C** — Éligibilité et couverture

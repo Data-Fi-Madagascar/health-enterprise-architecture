@@ -48,7 +48,7 @@ Ce document définit le modèle d’objets du référentiel. Il est la source de
 
 - **Dossier** : nom court en kebab-case, singulier (`principes`, pas `principes/domaine`).
 - **Fichier** : `<id>-slugified.md`, id minuscule en kebab-case.
-- Normalisation des identifiants pendant la migration : `P-INT-01` → fichier `p-int-01.md` ; `CAP-INT-02` → `cap-int-02.md` ; `ART-4a` → `art-4a.md` ; `F.5` → `f-5.md` ; `PT-01` → `pt-01.md`.
+- Normalisation des identifiants pendant la migration : `P-INT-01` → fichier `p-int-01.md` ; `CAP-INT-02` → `cap-int-02.md` ; `ART-4A` → `art-4a.md` ; `F.5` → `f-5.md` ; `PT-01` → `pt-01.md`.
 - Le **code source** (`P-INT-01`) reste le titre H1 et le label canonique ; le nom de fichier est sa forme slugifiée.
 
 ## Frontmatter canonique

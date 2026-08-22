@@ -46,8 +46,8 @@ PIXm et PDQm répondent aux exigences du CNISN et de l'ARTSN :
 
 - **CAP-INT-01** : Résolution d'identité du bénéficiaire
 - **ART-4** : Référentiels nationaux
-- **ART-4a** : Résolution d'identité
-- **ART-4b** : Bases d'autorisation
+- **ART-4A** : Résolution d'identité
+- **ART-4B** : Bases d'autorisation
 
 PIXm fournit des transactions REST pour gérer et rechercher les identifiants d'un patient entre domaines. PDQm définit une interface REST légère pour la recherche de patients à partir de données démographiques.
 

@@ -20,7 +20,7 @@ tags: ["ptisn", "niveau-4", "profils", "PT-16"]
 
 ## 2. Chapitres ART applicables
 
-- ART-8a — orchestration de processus borné ;
+- ART-8A — orchestration de processus borné ;
 - [ART-7: sécurité.](../../referentiel/chapitres/art-7.md)
 
 ## 3. Service national

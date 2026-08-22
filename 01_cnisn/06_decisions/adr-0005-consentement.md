@@ -49,7 +49,7 @@ Adopter **HL7 FHIR Consent** comme standard national pour la gestion structurée
 FHIR Consent répond aux exigences du cadre :
 
 - **CAP-INT-09** : Gestion du consentement et des autorisations
-- **ART-4b** : Bases d'autorisation
+- **ART-4B** : Bases d'autorisation
 - **ART-7** : Sécurité, contrôle d'accès et résidence des données
 - **PT-11** : Profil technique consentement
 - **Loi 2014-038** : Protection des données personnelles
@@ -87,7 +87,7 @@ Le modèle FHIR Consent permet :
 ## Références
 
 - PT-11 : Consentement
-- ART-4b : Bases d'autorisation
+- ART-4B : Bases d'autorisation
 - ART-7 : Sécurité
 - [Loi 2014-038 : Protection des données personnelles](https://www.lexpress.mg)
 

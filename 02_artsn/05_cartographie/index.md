@@ -25,9 +25,9 @@ La cartographie est structurée en **six couches horizontales** (de l'infrastruc
 | Couche | Intitulé | Chapitres ARTSN associés |
 |--------|----------|--------------------------|
 | [6](#couche-6--pilotage-gouvernance-et-actions-intersectorielles) | Pilotage, Gouvernance et actions intersectorielles | VS-04, ART-0 |
-| [5](#couche-5--projections-analytiques-et-modèles) | Projections analytiques et Modèles | ART-6, ART-5, ART-8b, ART-4d, ART-9 |
-| [4](#couche-4--interopérabilité-et-services-partagés) | Interopérabilité et services partagés | ART-3, ART-4, ART-2, ART-8a, ART-4a, ART-4c |
-| [3](#couche-3--échange-transport-et-ingestion) | Échange, transport et ingestion | ART-1, F.3, ART-8c |
+| [5](#couche-5--projections-analytiques-et-modèles) | Projections analytiques et Modèles | ART-6, ART-5, ART-8B, ART-4D, ART-9 |
+| [4](#couche-4--interopérabilité-et-services-partagés) | Interopérabilité et services partagés | ART-3, ART-4, ART-2, ART-8A, ART-4A, ART-4C |
+| [3](#couche-3--échange-transport-et-ingestion) | Échange, transport et ingestion | ART-1, F.3, ART-8C |
 | [2](#couche-2--point-de-service) | Point de service | F.1, ENF-1 |
 | [1](#couche-1--infrastructure) | Infrastructure | ART-7 |
 | Axe 1 | Sécurité et confiance numérique | ART-7 |
@@ -54,40 +54,40 @@ Cette couche est rattachée au flux de valeur 4 (VS-04) et associe les composant
 
 ## Couche 5 : Projections analytiques et Modèles
 
-Cette couche applique physiquement et directement le pattern CQRS (ART-6). Elle associe le pipeline d'ingestion ETL, le moteur d'IA prédictive, le routeur d'escalade et d'alertes (ART-5), CMP-03 entrepôt Lakehouse / projections tabulaires, CMP-04 moteur d'IA prédictive, CMP-05 moteur de graphes (Graph Store : ART-8b), le référentiel spatio-temporel (ART-4d) et la réconciliation analytique (Grand Livre : ART-9). Son statut est Stable.
+Cette couche applique physiquement et directement le pattern CQRS (ART-6). Elle associe le pipeline d'ingestion ETL, le moteur d'IA prédictive, le routeur d'escalade et d'alertes (ART-5), CMP-03 entrepôt Lakehouse / projections tabulaires, CMP-04 moteur d'IA prédictive, CMP-05 moteur de graphes (Graph Store : ART-8B), le référentiel spatio-temporel (ART-4D) et la réconciliation analytique (Grand Livre : ART-9). Son statut est Stable.
 
 ### Composants associés
 
 - [CMP-03 : Entrepôt Lakehouse & Projections analytiques (pipeline ETL, Lakehouse, projections)](../../referentiel/composants/cmp-03.md)
 - [CMP-04 : Moteur analytique & IA (IA prédictive, routeur alertes, Grand Livre)](../../referentiel/composants/cmp-04.md)
-- [CMP-05 : Moteur de graphes & Référentiel spatio-temporel (Graph Store, Spatio ART-4d)](../../referentiel/composants/cmp-05.md)
+- [CMP-05 : Moteur de graphes & Référentiel spatio-temporel (Graph Store, Spatio ART-4D)](../../referentiel/composants/cmp-05.md)
 
 ## Couche 4 : Interopérabilité et services partagés
 
-Cette couche exécute la source de vérité au présent (Profil B d'ART-3) et les Référentiels Nationaux (ART-4). Elle associe CMP-06 moteur d'intégration & médiation (ART-2), CMP-07 orchestrateur de parcours / gestionnaire de Sagas (ART-8a), CMP-08 répertoire de données cliniques opérationnelles, CMP-09 référentiel des métadonnées d'exploitation (ART-4), CMP-10 registre des terminologies, CMP-11 registre des clients / Index National des Patients (INP : ART-4a), CMP-12 registre d'éligibilité et de couverture (CSU : ART-4c), CMP-13 registre des personnels, et CMP-14 registre des produits, intrants et indicateurs. Son statut est Stable.
+Cette couche exécute la source de vérité au présent (Profil B d'ART-3) et les Référentiels Nationaux (ART-4). Elle associe CMP-06 moteur d'intégration & médiation (ART-2), CMP-07 orchestrateur de parcours / gestionnaire de Sagas (ART-8A), CMP-08 répertoire de données cliniques opérationnelles, CMP-09 référentiel des métadonnées d'exploitation (ART-4), CMP-10 registre des terminologies, CMP-11 registre des clients / Index National des Patients (INP : ART-4A), CMP-12 registre d'éligibilité et de couverture (CSU : ART-4C), CMP-13 registre des personnels, et CMP-14 registre des produits, intrants et indicateurs. Son statut est Stable.
 
 ### Composants associés
 
 - [CMP-06 : Intégration, Médiation, API Gateway, Broker & Registre schémas](../../referentiel/composants/cmp-06.md)
-- [CMP-07 : Orchestrateur de parcours & Gestionnaire de Sagas (ART-8a)](../../referentiel/composants/cmp-07.md)
+- [CMP-07 : Orchestrateur de parcours & Gestionnaire de Sagas (ART-8A)](../../referentiel/composants/cmp-07.md)
 - [CMP-08 : Répertoire de données cliniques opérationnelles](../../referentiel/composants/cmp-08.md)
 - [CMP-09 : Référentiel des métadonnées d'exploitation (ART-4)](../../referentiel/composants/cmp-09.md)
 - [CMP-10 : Registre des terminologies](../../referentiel/composants/cmp-10.md)
-- [CMP-11 : Registre des clients / Index National des Patients (INP, ART-4a)](../../referentiel/composants/cmp-11.md)
-- [CMP-12 : Registre d'éligibilité et de couverture (CSU, ART-4c)](../../referentiel/composants/cmp-12.md)
+- [CMP-11 : Registre des clients / Index National des Patients (INP, ART-4A)](../../referentiel/composants/cmp-11.md)
+- [CMP-12 : Registre d'éligibilité et de couverture (CSU, ART-4C)](../../referentiel/composants/cmp-12.md)
 - [CMP-13 : Registre des personnels](../../referentiel/composants/cmp-13.md)
 - [CMP-14 : Registre des produits, intrants et indicateurs](../../referentiel/composants/cmp-14.md)
 
 ## Couche 3 : Échange, transport et ingestion
 
-Cette couche assure l'exécution technique du transport asynchrone (ART-1 et F.3). Elle associe CMP-15 API Gateway, CMP-16 registre de schémas (F.3), CMP-17 message broker asynchrone, et CMP-18 compensateur / regroupeur de flux (Netting : ART-8c). Son statut est Stable.
+Cette couche assure l'exécution technique du transport asynchrone (ART-1 et F.3). Elle associe CMP-15 API Gateway, CMP-16 registre de schémas (F.3), CMP-17 message broker asynchrone, et CMP-18 compensateur / regroupeur de flux (Netting : ART-8C). Son statut est Stable.
 
 ### Composants associés
 
 - [CMP-15 : API Gateway](../../referentiel/composants/cmp-15.md)
 - [CMP-16 : Registre de schémas (F.3)](../../referentiel/composants/cmp-16.md)
 - [CMP-17 : Message broker asynchrone](../../referentiel/composants/cmp-17.md)
-- [CMP-18 : Compensateur / Regroupeur de flux (Netting, ART-8c)](../../referentiel/composants/cmp-18.md)
+- [CMP-18 : Compensateur / Regroupeur de flux (Netting, ART-8C)](../../referentiel/composants/cmp-18.md)
 
 ## Couche 2 : Point de service
 
@@ -354,37 +354,37 @@ Les chapitres et patterns de référence constituent le socle normatif de cette 
 - **ART-0** : Accords de partage inter-institutionnels (`referentiel/chapitres/art-0.md`)
 - **ART-6** : Analytique et restitution (`referentiel/chapitres/art-6.md`)
 - **ART-5** : Cohérence et qualité des données (`referentiel/chapitres/art-5.md`)
-- **ART-8b** : Modélisation de relations en graphe (`referentiel/chapitres/art-8b.md`)
-- **ART-4d** : Référentiel géospatial et d'exploitation partagé (`referentiel/chapitres/art-4d.md`)
+- **ART-8B** : Modélisation de relations en graphe (`referentiel/chapitres/art-8b.md`)
+- **ART-4D** : Référentiel géospatial et d'exploitation partagé (`referentiel/chapitres/art-4d.md`)
 - **ART-9** : Garanties transactionnelles fortes (`referentiel/chapitres/art-9.md`)
 - **ART-3** : Historisation événementielle et profils de déploiement (`referentiel/chapitres/art-3.md`)
 - **ART-4** : Référentiels de métadonnées de gestion (`referentiel/chapitres/art-4.md`)
 - **ART-2** : Médiation et normalisation (`referentiel/chapitres/art-2.md`)
-- **ART-8a** : Orchestration de processus borné (`referentiel/chapitres/art-8a.md`)
-- **ART-4a** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
-- **ART-4c** : Éligibilité et couverture (`referentiel/chapitres/art-4c.md`)
+- **ART-8A** : Orchestration de processus borné (`referentiel/chapitres/art-8a.md`)
+- **ART-4A** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
+- **ART-4C** : Éligibilité et couverture (`referentiel/chapitres/art-4c.md`)
 - **ART-1** : Intégration et ingestion (`referentiel/chapitres/art-1.md`)
-- **ART-8c** : Agrégation par lot (`referentiel/chapitres/art-8c.md`)
+- **ART-8C** : Agrégation par lot (`referentiel/chapitres/art-8c.md`)
 - **ART-7** : Sécurité, contrôle d'accès et résidence de la donnée (`referentiel/chapitres/art-7.md`)
 - **CMP-01** : Tableaux de bord & Portails nationaux (performance, CSU, ressources, veille) (`referentiel/composants/cmp-01.md`)
 - **CMP-02** : Centre de commande & Crises intersectorielles (alertes, crises, veille) (`referentiel/composants/cmp-02.md`)
 - **CMP-03** : Entrepôt Lakehouse & Projections analytiques (pipeline ETL, Lakehouse, projections) (`referentiel/composants/cmp-03.md`)
 - **CMP-04** : Moteur analytique & IA (IA prédictive, routeur alertes, Grand Livre) (`referentiel/composants/cmp-04.md`)
-- **CMP-05** : Moteur de graphes & Référentiel spatio-temporel (Graph Store, Spatio ART-4d) (`referentiel/composants/cmp-05.md`)
+- **CMP-05** : Moteur de graphes & Référentiel spatio-temporel (Graph Store, Spatio ART-4D) (`referentiel/composants/cmp-05.md`)
 - **CMP-06** : Intégration, Médiation, API Gateway, Broker & Registre schémas (`referentiel/composants/cmp-06.md`)
-- **CMP-07** : Orchestrateur de parcours & Gestionnaire de Sagas (ART-8a) (`referentiel/composants/cmp-07.md`)
+- **CMP-07** : Orchestrateur de parcours & Gestionnaire de Sagas (ART-8A) (`referentiel/composants/cmp-07.md`)
 - **CMP-08** : Répertoire de données cliniques opérationnelles (`referentiel/composants/cmp-08.md`)
 - **CMP-09** : Référentiel des métadonnées d'exploitation (ART-4) (`referentiel/composants/cmp-09.md`)
 - **CMP-10** : Registre des terminologies (`referentiel/composants/cmp-10.md`)
-- **CMP-11** : Registre des clients / Index National des Patients (INP : ART-4a) (`referentiel/composants/cmp-11.md`)
-- **CMP-12** : Registre d'éligibilité et de couverture (CSU : ART-4c) (`referentiel/composants/cmp-12.md`)
+- **CMP-11** : Registre des clients / Index National des Patients (INP : ART-4A) (`referentiel/composants/cmp-11.md`)
+- **CMP-12** : Registre d'éligibilité et de couverture (CSU : ART-4C) (`referentiel/composants/cmp-12.md`)
 - **CMP-13** : Registre des personnels (`referentiel/composants/cmp-13.md`)
 - **CMP-14** : Registre des produits, intrants et indicateurs (`referentiel/composants/cmp-14.md`)
 - **F.3** : F.3 : Éradication des silos technologiques (`referentiel/fondations/f-3.md`)
 - **CMP-15** : API Gateway (`referentiel/composants/cmp-15.md`)
 - **CMP-16** : Registre de schémas (F.3) (`referentiel/composants/cmp-16.md`)
 - **CMP-17** : Message broker asynchrone (`referentiel/composants/cmp-17.md`)
-- **CMP-18** : Compensateur / Regroupeur de flux (Netting : ART-8c) (`referentiel/composants/cmp-18.md`)
+- **CMP-18** : Compensateur / Regroupeur de flux (Netting : ART-8C) (`referentiel/composants/cmp-18.md`)
 - **CMP-19** : Dossiers & statistiques de sante (hopitaux) (`referentiel/composants/cmp-19.md`)
 - **CMP-20** : Gestion des pharmacies (PMIS) (`referentiel/composants/cmp-20.md`)
 - **CMP-21** : Sante communautaire mobile (offline) (`referentiel/composants/cmp-21.md`)

@@ -195,7 +195,7 @@ T3      T4      T1      T2      T3      T4
 
 - PT-11 : Profil technique
 - CAP-INT-09 : Gestion des consentements
-- ART-4b : Bases d'autorisation
+- ART-4B : Bases d'autorisation
 - PT-04 : Résolution d'identité
 - PT-06 : Authentification
 
@@ -204,6 +204,6 @@ T3      T4      T1      T2      T3      T4
 - **matrice de lecture** : Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
 - **PT-11 : Profil technique** : Profil technique national (`referentiel/profils/pt-11.md`)
 - **CAP-INT-09 : Gestion des consentements** : CAP-INT-09 : Gestion des consentements et bases d’autorisation (`referentiel/capacites/cap-int-09.md`)
-- **ART-4b : Bases d'autorisation** : Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
+- **ART-4B : Bases d'autorisation** : Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
 - **PT-04 : Résolution d'identité** : Profil technique national (`referentiel/profils/pt-04.md`)
 - **PT-06 : Authentification** : Profil technique national (`referentiel/profils/pt-06.md`)

@@ -60,11 +60,11 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 ### Moteur de graphes & Référentiel spatio-temporel
 
-**Contenu normatif.** Ce composant gère le graphe de relations entre entités (patients, structures, personnels, produits) et le référentiel spatio-temporel unifié (ART-4d). Il sert les requêtes de parcours, la détection de clusters épidémiques et l'analyse de réseaux.
+**Contenu normatif.** Ce composant gère le graphe de relations entre entités (patients, structures, personnels, produits) et le référentiel spatio-temporel unifié (ART-4D). Il sert les requêtes de parcours, la détection de clusters épidémiques et l'analyse de réseaux.
 
 **Discipline de mise en œuvre.** Il garantit la cohérence topologique du graphe national et la résilience spatiale ([ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md)). Toute requête de navigation relationnelle passe par ce composant.
 
-- **Rattachement** : [ART-8b](../../referentiel/chapitres/art-8b.md) (graphe), [ART-4d](../../referentiel/chapitres/art-4d.md) (spatio-temporel), [CAP-INT-03: Échange et médiation inter-systèmes](../../referentiel/capacites/cap-int-03.md), [CAP-INT-12: Conformité et tests d’interopérabilité](../../referentiel/capacites/cap-int-12.md).
+- **Rattachement** : [ART-8B](../../referentiel/chapitres/art-8b.md) (graphe), [ART-4D](../../referentiel/chapitres/art-4d.md) (spatio-temporel), [CAP-INT-03: Échange et médiation inter-systèmes](../../referentiel/capacites/cap-int-03.md), [CAP-INT-12: Conformité et tests d’interopérabilité](../../referentiel/capacites/cap-int-12.md).
 - **Statut : Stable.**
 
 ### Intégration, Médiation, API Gateway, Broker & Registre schémas
@@ -76,13 +76,13 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Rattachement** : [ART-1](../../referentiel/chapitres/art-1.md) (ingestion), [ART-2](../../referentiel/chapitres/art-2.md) (médiation), [F.3](../../referentiel/fondations/f-3.md) (schémas), [CAP-INT-01: Résolution d’identité du bénéficiaire](../../referentiel/capacites/cap-int-01.md), [CAP-INT-03: Échange et médiation inter-systèmes](../../referentiel/capacites/cap-int-03.md).
 - **Statut : Stable.**
 
-### Orchestrateur de parcours & Gestionnaire de Sagas (ART-8a)
+### Orchestrateur de parcours & Gestionnaire de Sagas (ART-8A)
 
 **Contenu normatif.** Ce composant orchestre les flux inter-systèmes en gérant les transactions distribuées (Sagas) et les compensations. Il garantit la cohérence des parcours patient à travers les institutions, les systèmes et les départements. Il assure la résilience des workflows cliniques critiques.
 
 **Discipline de mise en œuvre.** Il est le point de coordination central de tous les flux transactionnels : toute opération multi-systèmes transite par cet orchestrateur. Il garantit l'atomicité logique des parcours complexes.
 
-- **Rattachement** : [ART-8a](../../referentiel/chapitres/art-8a.md) (orchestrateur de parcours), [CAP-INT-08: Confiance, sécurité et autorisation](../../referentiel/capacites/cap-int-08.md).
+- **Rattachement** : [ART-8A](../../referentiel/chapitres/art-8a.md) (orchestrateur de parcours), [CAP-INT-08: Confiance, sécurité et autorisation](../../referentiel/capacites/cap-int-08.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../referentiel/processus/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../referentiel/processus/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../referentiel/processus/prc-06.md) (logistique).
 - **Statut : Stable.**
 
@@ -116,23 +116,23 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-07: Identification et droits des bénéficiaires](../../referentiel/processus/prc-07.md) (production données), [PRC-08: Financement et exemption au point de service](../../referentiel/processus/prc-08.md) (qualité).
 - **Statut : Stable.**
 
-### Registre des clients / Index National des Patients (INP — ART-4a)
+### Registre des clients / Index National des Patients (INP — ART-4A)
 
 **Contenu normatif.** Ce composant gère l'identité unique des patients à l'échelle nationale. Il assure la déduplication et le matching des identités, et fournit les services de recherche et d'identification des patients.
 
 **Discipline de mise en œuvre.** Il constitue l'identité nationale de référence pour tous les systèmes de santé. Toute identification patient transite par cet index, ce qui garantit l'unicité et la cohérence des identités.
 
-- **Rattachement** : [ART-4a](../../referentiel/chapitres/art-4a.md) (INP), [CAP-INT-09: Gestion des consentements et bases d’autorisation](../../referentiel/capacites/cap-int-09.md).
+- **Rattachement** : [ART-4A](../../referentiel/chapitres/art-4a.md) (INP), [CAP-INT-09: Gestion des consentements et bases d’autorisation](../../referentiel/capacites/cap-int-09.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../referentiel/processus/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../referentiel/processus/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../referentiel/processus/prc-06.md) (logistique).
 - **Statut : Stable.**
 
-### Registre d'éligibilité et de couverture (CSU — ART-4c)
+### Registre d'éligibilité et de couverture (CSU — ART-4C)
 
 **Contenu normatif.** Ce composant gère les données d'éligibilité et de couverture santé (CSU). Il assure la vérification en temps réel des droits des patients et fournit les services de contrôle d'éligibilité pour les applications métier.
 
 **Discipline de mise en œuvre.** Il est l'autorité de vérification des droits. Toute opération de soins nécessitant une vérification de couverture transite par ce registre, ce qui garantit la conformité financière.
 
-- **Rattachement** : [ART-4c](../../referentiel/chapitres/art-4c.md) (éligibilité/couverture), [CAP-INT-09: Gestion des consentements et bases d’autorisation](../../referentiel/capacites/cap-int-09.md).
+- **Rattachement** : [ART-4C](../../referentiel/chapitres/art-4c.md) (éligibilité/couverture), [CAP-INT-09: Gestion des consentements et bases d’autorisation](../../referentiel/capacites/cap-int-09.md).
 - **Processus soutenus** : [PRC-09: Remboursement et régulation des mécanismes](../../referentiel/processus/prc-09.md) (finance), [PRC-10: Planification et allocation des ressources](../../referentiel/processus/prc-10.md) (planification).
 - **Statut : Stable.**
 
@@ -186,13 +186,13 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../referentiel/processus/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../referentiel/processus/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../referentiel/processus/prc-06.md) (logistique).
 - **Statut : Stable.**
 
-### Compensateur / Regroupeur de flux (Netting — ART-8c)
+### Compensateur / Regroupeur de flux (Netting — ART-8C)
 
 **Contenu normatif.** Ce composant gère les compensations et le regroupement des flux. Il assure la cohérence des transactions distribuées et la résolution des anomalies, et garantit l'intégrité des échanges complexes.
 
 **Discipline de mise en œuvre.** Il est le mécanisme de résolution des anomalies. Il permet la compensation automatique des erreurs et la cohérence des transactions, ce qui garantit la fiabilité des échanges critiques.
 
-- **Rattachement** : [ART-8c](../../referentiel/chapitres/art-8c.md) (Netting), [CAP-INT-10: Provenance, audit et traçabilité](../../referentiel/capacites/cap-int-10.md).
+- **Rattachement** : [ART-8C](../../referentiel/chapitres/art-8c.md) (Netting), [CAP-INT-10: Provenance, audit et traçabilité](../../referentiel/capacites/cap-int-10.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../referentiel/processus/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../referentiel/processus/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../referentiel/processus/prc-06.md) (logistique).
 - **Statut : Stable.**
 

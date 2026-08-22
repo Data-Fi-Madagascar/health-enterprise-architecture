@@ -24,7 +24,7 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 |--------|----------|-----------------|
 | 6 | Pilotage & gouvernance intersectorielle | Tableaux de bord nationaux, centre de commande alertes |
 | 5 | Projections analytiques & modèles | Entrepôt Lakehouse, IA prédictive, moteur de graphes |
-| 4 | Interopérabilité & services partagés | Médiation (ART-2), registres (patient, personnels, produits, terminologies, éligibilité), orchestrateur (ART-8a) |
+| 4 | Interopérabilité & services partagés | Médiation (ART-2), registres (patient, personnels, produits, terminologies, éligibilité), orchestrateur (ART-8A) |
 | 3 | Échange, transport & ingestion | API Gateway, message broker, registre de schémas (F.3), serveur de sécurité X-Road santé (connecté à l'infrastructure UGD existante) |
 | 2 | Point de service | Applications terrain (dossiers, pharmacie, LMIS, santé communautaire, enquêtes) |
 | 1 | Infrastructure | Data centers nationaux, nœuds régionaux, nœuds locaux, VPN, liaisons sécurisées |
@@ -75,9 +75,9 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 | Composant | Couches | Responsables | Livrables | Critère de succès |
 |-----------|---------|--------------|-----------|-------------------|
 | **Moteur de médiation** | Couche 4 | DNS | Moteur ART-2 (transformation, normalisation, enrichissement) | 80% messages transformés |
-| **Orchestrateur de parcours** | Couche 4 | DNS | Gestionnaire de Sagas (ART-8a) | Parcours multi-systèmes opérationnels |
-| **Registre patients** | Couche 4 | DNS | Index National des Patients (INP : ART-4a) | 500 000 patients dédupliqués |
-| **Registre éligibilité** | Couche 4 | DNS | CSU vérification en temps réel (ART-4c) | 100% soins vérifiés |
+| **Orchestrateur de parcours** | Couche 4 | DNS | Gestionnaire de Sagas (ART-8A) | Parcours multi-systèmes opérationnels |
+| **Registre patients** | Couche 4 | DNS | Index National des Patients (INP : ART-4A) | 500 000 patients dédupliqués |
+| **Registre éligibilité** | Couche 4 | DNS | CSU vérification en temps réel (ART-4C) | 100% soins vérifiés |
 | **Registre de schémas** | Couche 3 | DNS | Versioning schémas, validation FHIR | 100% messages validés |
 | **Serveur de sécurité X-Road santé** | Couche 3 | DNS, UGD | Serveur de sécurité (Security Server) connecté au backbone X-Road UGD existant, connecteurs inter-institutionnels (État civil, Protection sociale, Finances) | Serveur opérationnel, 5 échanges inter-institutionnels/jour |
 | **Consentement** | Axe 1 | DNS, CNRAC | Gestion du consentement numérique | Conformité Loi 2014-038 |
@@ -91,7 +91,7 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 | Composant | Couches | Responsables | Livrables | Critère de succès |
 |-----------|---------|--------------|-----------|-------------------|
 | **Entrepôt Lakehouse** | Couche 5 | DNS | Architecture CQRS (ART-6), 3 pipelines ETL | Données consolidées disponibles |
-| **Moteur de graphes** | Couche 5 | DNS, INS | Graphe de connaissances (ART-8b), modèle RDF | Requêtes SPARQL fonctionnelles |
+| **Moteur de graphes** | Couche 5 | DNS, INS | Graphe de connaissances (ART-8B), modèle RDF | Requêtes SPARQL fonctionnelles |
 | **IA prédictive** | Couche 5 | DNS | 3 modèles (TB, palu, prédiction hospitalière) | Précision > 80% |
 | **Tableaux de bord** | Couche 6 | DNS | Dashboards nationaux (performance, CSU, ressources) | Indicateurs publiés mensuellement |
 | **Centre de commande** | Couche 6 | DNS | Alertes épidémiques temps réel (ART-5) | 100% alertes traitées |
@@ -124,7 +124,7 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 | **Accords interministériels** | Axe 2 | DNS, MSP, MINAE, MEEF | Accords de partage de données signés (MSP–MINAE–MEEF) | 3 accords signés |
 | **Médiation intersectorielle** | Couche 4 | DNS | Moteur de transformation CIM-10 ↔ OIE ↔ GBIF | 80% messages intersectoriels transformés |
 | **Centre de commande One Health** | Couche 6 | DNS | CMP-02 activé pour alertes intersectorielles | Alertes multi-ministères opérationnelles |
-| **Corrélation signaux faibles** | Couche 5 | DNS, INS | Moteur de corrélation (ART-8b) pour clusters intersectoriels | Détection cluster < 24h |
+| **Corrélation signaux faibles** | Couche 5 | DNS, INS | Moteur de corrélation (ART-8B) pour clusters intersectoriels | Détection cluster < 24h |
 | **PT-15 déployé** | Toutes | DNS | Profil Surveillance One Health opérationnel en pilote (1 région) | 1 région pilote active |
 | **Tripartite Plus** | Toutes | DNS, MINAE | Flux avec OMS–WOAH–FAO–PNUE opérationnels | 1 flux international One Health actif |
 
@@ -134,8 +134,8 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 
 Conformément à la *Note de rationalisation* de la cartographie cible, deux composants sont **repoussés en Phase 2** (post-roadmap, conditionnés à une initiative validante) car ils sont des patterns sans précédent en santé africaine :
 
-- **CMP-05 — Moteur de graphes / Graph Store** (Couche 5, ART-8b) : reporté hors des phases 1–6 ; à réévaluer après une initiative graphe pilote.
-- **CMP-18 — Compensateur / Netting** (Couche 3, ART-8c) : reporté ; candidat à la fusion avec CMP-15/16/17 en *Pattern d'échange unifié*.
+- **CMP-05 — Moteur de graphes / Graph Store** (Couche 5, ART-8B) : reporté hors des phases 1–6 ; à réévaluer après une initiative graphe pilote.
+- **CMP-18 — Compensateur / Netting** (Couche 3, ART-8C) : reporté ; candidat à la fusion avec CMP-15/16/17 en *Pattern d'échange unifié*.
 
 Le **CMP-07 — Gestionnaire de Sagas** (Couche 4) fait l'objet d'une étude « Saga vs orchestration simple » avant généralisation. Ces reports ne bloquent aucune phase du présent roadmap.
 

@@ -38,27 +38,27 @@ Composant qui absorbe l'hétérogénéité des systèmes sources et expose une i
 
 ## Saga / process manager
 
-Pattern d'orchestration d'un processus métier borné traversant plusieurs agrégats, sans les fusionner en un seul. Mobilisé par ART-8a.
+Pattern d'orchestration d'un processus métier borné traversant plusieurs agrégats, sans les fusionner en un seul. Mobilisé par ART-8A.
 
 ## Chorégraphie
 
-Style de coordination où chaque partie réagit de façon autonome à des événements partagés, sans composant central ayant autorité sur l'ensemble du processus. Mobilisé par ART-8d.
+Style de coordination où chaque partie réagit de façon autonome à des événements partagés, sans composant central ayant autorité sur l'ensemble du processus. Mobilisé par ART-8D.
 
 ## SCD (Slowly Changing Dimension) type 2
 
-Technique de modélisation de données consistant à conserver l'historique complet des versions successives d'une métadonnée, chacune associée à sa période de validité. Mobilisée par ART-4 et ART-4c.
+Technique de modélisation de données consistant à conserver l'historique complet des versions successives d'une métadonnée, chacune associée à sa période de validité. Mobilisée par ART-4 et ART-4C.
 
 ## Golden record
 
-Enregistrement pivot résultant d'un rapprochement probabiliste entre plusieurs représentations potentiellement divergentes d'une même entité (typiquement une identité individuelle). Mobilisé par ART-4a.
+Enregistrement pivot résultant d'un rapprochement probabiliste entre plusieurs représentations potentiellement divergentes d'une même entité (typiquement une identité individuelle). Mobilisé par ART-4A.
 
 ## Netting
 
-Technique de compensation globale consistant à regrouper des micro-agrégats individuels en un seul agrégat consolidé de niveau supérieur. Mobilisée par ART-8c.
+Technique de compensation globale consistant à regrouper des micro-agrégats individuels en un seul agrégat consolidé de niveau supérieur. Mobilisée par ART-8C.
 
 ## Publication / Abonnement (Pub/Sub)
 
-Modèle de messagerie décentralisée où les consommateurs s'abonnent de manière autonome à des files d'événements publics, sans autorité centrale. Mobilisé par ART-8d.
+Modèle de messagerie décentralisée où les consommateurs s'abonnent de manière autonome à des files d'événements publics, sans autorité centrale. Mobilisé par ART-8D.
 
 ## Liens
 
@@ -72,11 +72,11 @@ Les liens utiles pour approfondir ce document sont les suivants : les chapitres 
 - **ART-6** : Analytique et restitution (`referentiel/chapitres/art-6.md`)
 - **ART-1** : Intégration et ingestion (`referentiel/chapitres/art-1.md`)
 - **ART-2** : Médiation et normalisation (`referentiel/chapitres/art-2.md`)
-- **ART-8a** : Orchestration de processus borné (`referentiel/chapitres/art-8a.md`)
-- **ART-8d** : Chorégraphie inter-institutionnelle (`referentiel/chapitres/art-8d.md`)
+- **ART-8A** : Orchestration de processus borné (`referentiel/chapitres/art-8a.md`)
+- **ART-8D** : Chorégraphie inter-institutionnelle (`referentiel/chapitres/art-8d.md`)
 - **ART-4** : Référentiels de métadonnées de gestion (`referentiel/chapitres/art-4.md`)
-- **ART-4c** : Éligibilité et couverture (`referentiel/chapitres/art-4c.md`)
-- **ART-4a** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
-- **ART-8c** : Agrégation par lot (`referentiel/chapitres/art-8c.md`)
+- **ART-4C** : Éligibilité et couverture (`referentiel/chapitres/art-4c.md`)
+- **ART-4A** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
+- **ART-8C** : Agrégation par lot (`referentiel/chapitres/art-8c.md`)
 - **Chapitres et patterns de référence** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **Dictionnaire de données fonctionnelles** : Dictionnaire de données fonctionnelles (`02_artsn/03_objets-de-donnees/index.md`)
