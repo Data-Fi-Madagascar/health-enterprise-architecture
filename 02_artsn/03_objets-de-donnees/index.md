@@ -47,6 +47,9 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 
 **Objet métier CAESN correspondant** : [BO-01 : Patient & identité](../../00_caesn/04_data/objets.md).
 
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/objets-de-donnees/p-*.md -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
+
 ### P-01 : Patient
 
 | Champ                  | Valeur                                                                                                                                                                                                                                                                                                          |
@@ -93,9 +96,14 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 
 ---
 
+<!-- END:GENERATED -->
+
 ## 2. Prestation & soins
 
 **Objet métier CAESN correspondant** : [BO-02 : Prestation & soins](../../00_caesn/04_data/objets.md).
+
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/objets-de-donnees/s-*.md -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### S-01 : Consultation
 
@@ -163,9 +171,14 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 
 ---
 
+<!-- END:GENERATED -->
+
 ## 3. Dispensation & produits
 
 **Objet métier CAESN correspondant** : [BO-03 : Dispensation & produits](../../00_caesn/04_data/objets.md).
+
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/objets-de-donnees/d-*.md -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### D-01 : Dispensation
 
@@ -213,9 +226,14 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 
 ---
 
+<!-- END:GENERATED -->
+
 ## 4. Financement & couverture
 
 **Objet métier CAESN correspondant** : [BO-04 : Financement & couverture](../../00_caesn/04_data/objets.md).
+
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/objets-de-donnees/f-*.md -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### F-01 : Éligibilité
 
@@ -263,9 +281,14 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 
 ---
 
+<!-- END:GENERATED -->
+
 ## 5. Risque & surveillance
 
 **Objet métier CAESN correspondant** : [BO-05 : Risque & surveillance](../../00_caesn/04_data/objets.md).
+
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/objets-de-donnees/r-*.md -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### R-01 : Signal
 
@@ -324,9 +347,14 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 
 ---
 
+<!-- END:GENERATED -->
+
 ## 6. Exploitation & gestion
 
 **Objet métier CAESN correspondant** : [BO-06 : Exploitation & gestion](../../00_caesn/04_data/objets.md).
+
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/objets-de-donnees/e-*.md -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### E-01 : Formation sanitaire
 
@@ -396,9 +424,14 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 
 ---
 
+<!-- END:GENERATED -->
+
 ## 7. Interopérabilité transfrontalière & résumé patient
 
 **Objet métier CAESN correspondant** : [BO-07 : Interopérabilité transfrontalière](../../00_caesn/04_data/objets.md).
+
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/objets-de-donnees/t-*.md -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### T-01 : Résumé international du patient (IPS)
 
@@ -449,6 +482,8 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Référentiel source** | GDHCN, ITU-T X.509 |
 
 ---
+
+<!-- END:GENERATED -->
 
 ## Liens
 
