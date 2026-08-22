@@ -86,6 +86,7 @@ Cette norme s'applique à :
 
 - **Principes** : PA-03 (Sécurité par conception), PA-04 (Protection de la vie privée)
 - **ARTSN** : ART-7 (Sécurité et résidence), F.4 (Sécurité et protection)
+- **ARTSN — lots consommateurs** : [L1 — Infrastructure & sécurité](../../02_artsn/07_lots/index.md)
 - **PTISN** : PT-06 (Authentification), PT-10 (Confiance), PT-12 (Audit)
 - **Standards internationaux** : OWASP, NIST, ISO 27001
 

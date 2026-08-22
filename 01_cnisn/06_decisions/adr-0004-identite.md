@@ -74,6 +74,7 @@ PIXm fournit des transactions REST pour gérer et rechercher les identifiants d'
 | OpenHIE Client Registry | Moins de traction internationale |
 
 ## Références
+- **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/07_lots/index.md)
 
 - PT-04 : Profil technique national
 - ARTSN : Chapitre ART-4

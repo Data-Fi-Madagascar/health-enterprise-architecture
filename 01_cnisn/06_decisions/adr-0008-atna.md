@@ -86,6 +86,7 @@ ATNA doit :
 | Blockchain d'audit | Technologie immature, coût excessif, pas nécessaire |
 
 ## Références
+- **ARTSN — lots consommateurs** : [L1 — Infrastructure & sécurité](../../02_artsn/07_lots/index.md), [L4 — Analytique & pilotage](../../02_artsn/07_lots/index.md)
 
 - PT-12 : Audit et traçabilité
 - ART-7 : Sécurité

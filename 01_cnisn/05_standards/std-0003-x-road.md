@@ -56,6 +56,7 @@ Cette norme s'applique à :
 
 - **Principes** : PA-05 (Interopérabilité), PA-03 (Sécurité)
 - **ARTSN** : ART-0 (Accords de partage), ART-7 (Sécurité)
+- **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/07_lots/index.md)
 - **PTISN** : PT-01 (Échange interinstitutionnel)
 - **CNISN** : P-INT-01 à P-INT-04 (Autorité des données), P-INT-18 (Traçabilité)
 

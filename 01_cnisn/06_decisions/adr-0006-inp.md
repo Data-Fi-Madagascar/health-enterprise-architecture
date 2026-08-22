@@ -86,6 +86,7 @@ L'INP doit :
 | Identifiant UUID aléatoire | Pas de signification métier, pas humainement lisible |
 
 ## Références
+- **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/07_lots/index.md)
 
 - PT-04 : Résolution d'identité
 - ADR-0004 : PIXm/PDQm

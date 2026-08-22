@@ -73,6 +73,7 @@ Il est déjà déployé dans plusieurs pays similaires (Estonie, Finlande, Islan
 | Service middleware propriétaire | Dépendance éditeur, coût élevé |
 
 ## Références
+- **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/07_lots/index.md), [L7 — Coordination One Health](../../02_artsn/07_lots/index.md)
 
 - PT-01 : Profil technique national
 - CNISN : Principes d'interopérabilité

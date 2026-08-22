@@ -58,6 +58,7 @@ Cette norme s'applique à :
 
 - **Principes** : PA-05 (Interopérabilité), PA-06 (Gouvernance des données)
 - **ARTSN** : ART-2 (Médiation et normalisation), F.2 (Normalisation)
+- **ARTSN — lots consommateurs** : [L2 — Applications terrain](../../02_artsn/07_lots/index.md)
 - **PTISN** : PT-07 (Terminologie et codification)
 - **CNISN** : CAP-INT-11 (Qualité et réconciliation)
 

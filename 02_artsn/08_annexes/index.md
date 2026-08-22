@@ -18,7 +18,7 @@ tags: ["artsn", "annexes", "niveau-3"]
 
 La lecture de ce document est **prioritaire** pour les décideurs institutionnels, les directions métier et programmes, l'équipe DEPSI et ses équipes techniques, les équipes SIS, données et suivi-évaluation, ainsi que les partenaires techniques et financiers. Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
-L'annexe A : Table de maturité par chapitre présente le statut de chaque chapitre et les conditions de passage au statut supérieur. L'annexe B : Glossaire des patterns cités fournit les définitions des patterns techniques mobilisés par les chapitres. L'annexe C : Renvoi CAESN et capacités candidates documente les écarts constatés avec le CAESN et les référentiels normatifs One Health. L'annexe D : Protocole de test d'interopérabilité détaille les scénarios de test, les critères de succès et la certification des profils techniques. L'annexe E : SLA et métriques de performance fixe les objectifs de niveau de service et les indicateurs de performance par profil.
+L'annexe A : Table de maturité par chapitre présente le statut de chaque chapitre et les conditions de passage au statut supérieur. L'annexe B : Glossaire des patterns cités fournit les définitions des patterns techniques mobilisés par les chapitres. L'annexe C : Renvoi CAESN et capacités candidates documente les écarts constatés avec le CAESN et les référentiels normatifs One Health. L'annexe D : Protocole de test d'interopérabilité détaille les scénarios de test, les critères de succès et la certification des profils techniques. L'annexe E : SLA et métriques de performance fixe les objectifs de niveau de service et les indicateurs de performance par profil. L'annexe F : Index des normes/ADR CNISN consommées par les lots ARTSN assure la traçabilité arrière de l'alignement entre le cadre national d'interopérabilité et la feuille de route de déploiement.
 
 ## Liens
 
@@ -37,5 +37,6 @@ Les liens utiles pour approfondir ce document sont les suivants : les chapitres 
 - [artsn-annexe-b-glossaire-patterns: Annexe B : Glossaire des patterns cités](b-glossaire-patterns.md)
 - [artsn-protocole-test: Annexe D : Protocole de test d'interopérabilité](d-protocole-test-interopabilite.md)
 - [artsn-sla-performance: Annexe E : SLA et métriques de performance par profil](e-sla-performance.md)
+- [artsn-normes-cnisn-lots: Annexe F : Index des normes/ADR CNISN consommées par les lots ARTSN](f-normes-cnisn-lots.md)
 
 <!-- liens-section-auto -->

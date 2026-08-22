@@ -85,6 +85,7 @@ Le modèle FHIR Consent permet :
 | GDPR Consent (UE) | Trop strict pour le contexte malgache, inadapté |
 
 ## Références
+- **ARTSN — lots consommateurs** : [L5 — Extension & pérennisation](../../02_artsn/07_lots/index.md)
 
 - PT-11 : Consentement
 - ART-4B : Bases d'autorisation
