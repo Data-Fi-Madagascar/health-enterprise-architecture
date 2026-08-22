@@ -14,7 +14,7 @@ implements: ["ART-0", "F-4"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-43", "axe-gouvernance"]
 ---
 # CMP-43 : Registre des initiatives
-**Contenu normatif.** Ce registre reference les initiatives et projets numeriques de sante, pour eviter la redondance et assurer l'alignement au CAESN.
-**Discipline de mise en oeuvre.** Toute nouvelle initiative est enregistree et evaluee contre l'architecture de reference. Les doublons sont signales.
+**Contenu normatif.** Ce registre reference les initiatives et projets numeriques de sante (existants, en cours, planifies) pour garantir la coherence de l'ecosysteme. Il documente objectif, porteur, perimetre et alignement au CAESN de chaque initiative.
+**Discipline de mise en oeuvre.** Toute nouvelle initiative est enregistree et evaluee contre l'architecture de reference (ARTSN/CNISN) avant lancement. Les doublons ou les derivations non alignees sont signales au comite d'arbitrage (CMP-46). Le registre alimente le portefeuille de l'Etat.
 - **Rattachement** : [ART-0: Accords de partage inter-institutionnels](../chapitres/art-0.md), [F-4: Homologation obligatoire](../fondations/f-4.md).
 - **Statut : Brouillon.**

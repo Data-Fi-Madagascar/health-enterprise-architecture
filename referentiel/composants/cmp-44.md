@@ -14,7 +14,7 @@ implements: ["ART-0", "F-4"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-44", "axe-gouvernance"]
 ---
 # CMP-44 : Comite d'ethique
-**Contenu normatif.** Ce registre porte les avis du comite d'ethique sur les usages des donnees et les traitements sensibles.
-**Discipline de mise en oeuvre.** Les traitements a risque ethique sollicitent un avis. Les avis sont conserves et opposables.
+**Contenu normatif.** Ce registre porte les avis du comite d'ethique sur les usages des donnees et les traitements sensibles (IA, profilage, recherche, partages). Il documente les saisines, les avis et les suites donnees.
+**Discipline de mise en oeuvre.** Les traitements a risque ethique sollicitent un avis avant mise en oeuvre. Les avis sont conserves, opposables et relies aux composants concernes. Les derives ethiques sont remontees a l'arbitrage (CMP-46) et a l'audit (CMP-45).
 - **Rattachement** : [ART-0: Accords de partage inter-institutionnels](../chapitres/art-0.md), [F-4: Homologation obligatoire](../fondations/f-4.md).
 - **Statut : Brouillon.**

@@ -14,7 +14,7 @@ implements: ["ART-0", "F-4"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-46", "axe-gouvernance"]
 ---
 # CMP-46 : Arbitrage et risques
-**Contenu normatif.** Ce registre documente l'arbitrage des risques et les decisions de gouvernance transverses du systeme de sante numerique.
-**Discipline de mise en oeuvre.** Les decisions d'arbitrage sont tracees et motivees. Elles alimentent le portefeuille d'initiatives.
+**Contenu normatif.** Ce registre documente l'arbitrage des risques et les decisions de gouvernance transverses du systeme de sante numerique : priorisation, resolution de conflits, gestion des risques et des crises. Il est l'instance de decision finale sur l'architecture.
+**Discipline de mise en oeuvre.** Les decisions d'arbitrage sont tracees, motivees et publiees aux instances concernees. Elles alimentent le portefeuille d'initiatives (CMP-43) et la feuille de route. Les risques identifies sont suivis et reevalues periodiquement.
 - **Rattachement** : [ART-0: Accords de partage inter-institutionnels](../chapitres/art-0.md), [F-4: Homologation obligatoire](../fondations/f-4.md).
 - **Statut : Brouillon.**

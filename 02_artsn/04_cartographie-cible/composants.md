@@ -197,50 +197,50 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Statut : Stable.**
 
 ### CMP-19 : Dossiers & statistiques de sante (hopitaux)
-**Contenu normatif.** Ce composant tient le dossier patient et les statistiques de sante au niveau de l'hopital (Couche 2, soins curatifs). Il consolide les donnees cliniques, les indicateurs d'activite et les rapports hospitaliers, et alimente les registres et l'entrepot national. Il fonctionne en mode degrade (connectivite intermittente) et se synchronise avec les composants centraux.
-**Discipline de mise en oeuvre.** Il garantit l'exhaustivite et l'exactitude des statistiques hospitalieres, fondement de la planification. Toute donnee saisie reste reconciliable avec sa source clinique.
+**Contenu normatif.** Ce composant constitue le systeme d'information hospitalier de base au niveau de l'etablissement (Couche 2 du modele ARTSN). Il tient le dossier patient informatise, les admissions, les consultations, les hospitalisations, les actes cliniques et les comptes rendus, et produit les statistiques d'activite hospitaliere (RNAM, indicateurs CSU). Il alimente en amont les registres et l'entrepot national (CMP-03) ainsi que les tableaux de bord (CMP-01). Concu pour un environnement a connectivite intermittente, il fonctionne en mode degrade et se reconcilie avec les composants centraux au retour de couverture.
+**Discipline de mise en oeuvre.** L'exhaustivite et l'exactitude des statistiques hospitalieres sont une discipline de premier ordre : tout episode de soin ouvert doit etre cloture et compte-rendu. Les donnees saisies restent reconciliables avec leur source clinique et horodatees. Le composant respecte les referentiels de terminologie (PT-07/CMP-07) et le format de messagerie HL7 FHIR pour l'echange avec le noeud regional (CMP-27).
 - **Rattachement** : [ENF-1: Resilience a l'instabilite reseau](../../referentiel/exigences/enf-1.md), [F-1: Resilience face a la realite geographique du pays](../../referentiel/fondations/f-1.md).
 - **Processus soutenus** : [PRC-01: Acces, orientation et admission du patient](../../referentiel/processus/prc-01.md) (acces et admission), [PRC-02: Prestation des soins cliniques](../../referentiel/processus/prc-02.md) (prestation des soins), [PRC-03: Continuite, suivi et qualite des soins](../../referentiel/processus/prc-03.md) (suivi et qualite), [PRC-06: Cloture et capitalisation des episodes](../../referentiel/processus/prc-06.md) (cloture et capitalisation).
 - **Statut : Brouillon.**
 
 ### CMP-20 : Gestion des pharmacies (PMIS)
-**Contenu normatif.** Ce composant gere le catalogue pharmaceutique, les stocks, les dispensations et la facturation aux points de service (pharmacies hospitalieres et de district). Il assure la tragabilite des medicaments et l'interface avec la chaine logistique (LMIS).
-**Discipline de mise en oeuvre.** Il impose l'usage des referentiels de medicaments normalises et empeche les ruptures de stock non signalees. Les mouvements sont historises de facon immuable.
+**Contenu normatif.** Ce composant realise la gestion pharmaceutique au point de service (pharmacies hospitalieres, de district et communautaires) : catalogue des produits, stocks, dispensations, facturation et factures d'achat. Il assure la tracabilite du medicament du repertoire vers le beneficiaire et dialogue avec la chaine logistique (CMP-23/LMIS) pour le reapprovisionnement et les alertes de rupture. Il integre le volet pharmacovigilance en signalant les effets indesirables a la surveillance (PRC-05).
+**Discipline de mise en oeuvre.** L'usage des referentiels de medicaments normalises (CMP-07) est obligatoire ; aucune denomination locale ne circule hors referentiel. Les mouvements de stock sont historises de facon immuable et les seuils de securite declares. La facturation au point de service respecte les regles d'exemption (PRC-08) lorsqu'elles s'appliquent.
 - **Rattachement** : [ENF-1: Resilience a l'instabilite reseau](../../referentiel/exigences/enf-1.md), [F-1: Resilience face a la realite geographique du pays](../../referentiel/fondations/f-1.md).
 - **Processus soutenus** : [PRC-02: Prestation des soins cliniques](../../referentiel/processus/prc-02.md) (dispensation aux soins), [PRC-05: Alerte, investigation et riposte](../../referentiel/processus/prc-05.md) (pharmacovigilance et riposte).
 - **Statut : Brouillon.**
 
 ### CMP-21 : Sante communautaire mobile (offline)
-**Contenu normatif.** Ce composant equipe les agents de sante de proximite sur terminaux mobiles fonctionnant hors ligne (connectivite contrainte). Il capture les donnees communautaires, les vaccinations, les references et la remontee d'information, puis se synchronise des le retour de couverture.
-**Discipline de mise en oeuvre.** Il tolere la perte de connectivite sans perte de donnee (file d'attente locale chiffree). L'identite du beneficiaire est resolue localement via le resolveur d'identite.
+**Contenu normatif.** Ce composant equipe les agents de sante de proximite (agents communautaires, sages-femmes, relais) sur terminaux mobiles fonctionnant hors ligne. Il capture les donnees communautaires : vaccinations, consultations, references vers le niveau superieur, releves de terrain et enquetes, et assure la remontee d'information vers la structure de reference. Il s'appuie sur le resolveur d'identite local (CMP-32) pour rattacher le beneficiaire sans ambiguite, meme hors reseau.
+**Discipline de mise en oeuvre.** La perte de connectivite ne doit entrainer aucune perte de donnee : une file d'attente locale chiffree conserve les ecritures en attente et la synchronisation differentielle se declenche au retour de couverture. Les terminaux sont authentifies et leurs donnees signees. Le composant reste conforme a l'exigence de resilience au reseau (ENF-1).
 - **Rattachement** : [ENF-1: Resilience a l'instabilite reseau](../../referentiel/exigences/enf-1.md), [F-1: Resilience face a la realite geographique du pays](../../referentiel/fondations/f-1.md).
 - **Processus soutenus** : [PRC-01: Acces, orientation et admission du patient](../../referentiel/processus/prc-01.md) (acces au beneficiaire), [PRC-02: Prestation des soins cliniques](../../referentiel/processus/prc-02.md) (soins de proximite), [PRC-03: Continuite, suivi et qualite des soins](../../referentiel/processus/prc-03.md) (suivi communautaire).
 - **Statut : Brouillon.**
 
 ### CMP-22 : Espace sante patient
-**Contenu normatif.** Ce composant expose au citoyen un portail de services : son dossier, ses rendez-vous, ses droits et son historique de soins. Il est la face orientee beneficiaire du systeme (engagement patient).
-**Discipline de mise en oeuvre.** L'acces est strictement controle par consentement et authentification. Aucune donnee n'est exposee sans autorisation explicite du beneficiaire.
+**Contenu normatif.** Ce composant est le portail oriente beneficiaire du systeme de sante numerique. Il expose au citoyen son dossier, ses rendez-vous, ses droits, son historique de soins et ses documents (resultats d'examens, certificats). Il permet la prise de rendez-vous, l'acces aux services administratifs et la consultation des donnees partagees selon le consentement du beneficiaire. Il materialise l'engagement du patient et l'ouverture du systeme a la partie prenante citoyen.
+**Discipline de mise en oeuvre.** L'acces est strictement controle par authentification forte et consentement (CMP-34) ; aucune donnee a caractere personnel n'est exposee sans autorisation explicite. Les traces d'acces sont journalisees (CMP-37). Le portail ne detient pas les donnees sources : il les presente en lecture via les composants detenteurs, garantissant une source unique de verite.
 - **Rattachement** : [ENF-1: Resilience a l'instabilite reseau](../../referentiel/exigences/enf-1.md), [F-1: Resilience face a la realite geographique du pays](../../referentiel/fondations/f-1.md).
 - **Processus soutenus** : [PRC-01: Acces, orientation et admission du patient](../../referentiel/processus/prc-01.md) (acces aux services), [PRC-07: Identification et droits des beneficiaires](../../referentiel/processus/prc-07.md) (identification et droits), [PRC-08: Financement et exemption au point de service](../../referentiel/processus/prc-08.md) (financement et exemption).
 - **Statut : Brouillon.**
 
 ### CMP-23 : Chaine logistique (LMIS)
-**Contenu normatif.** Ce composant pilote la logistique medicale : prevision, approvisionnement, stockage et distribution des intrants (medicaments, consommables, vaccins). Il interconnecte les pharmacies, les districts et le noeud central.
-**Discipline de mise en oeuvre.** Il assure la tracabilite de bout en bout et l'alerte en cas de rupture. Les seuils de reapprovisionnement sont calcules a partir des donnees d'activite.
+**Contenu normatif.** Ce composant pilote la logistique medicale de bout en bout : prevision des besoins, approvisionnement, stockage, distribution et dispensation des intrants (medicaments, consommables, vaccins, reactifs). Il interconnecte les pharmacies (CMP-20), les districts, les regions et le noeud central, et calcule les seuils de reapprovisionnement a partir des donnees d'activite clinique. Il emet les alertes de rupture et orchestre les flux physiques et informationnels.
+**Discipline de mise en oeuvre.** La tracabilite de bout en bout est obligatoire (lot, periode de validite, lieu). Les seuils de securite sont parametres par type d'intrant et de structure. Les donnees d'activite issues des etablissements (CMP-19) alimentent la prevision. Tout mouvement est historise de facon immuable et reconcilie avec la comptabilite.
 - **Rattachement** : [ENF-1: Resilience a l'instabilite reseau](../../referentiel/exigences/enf-1.md), [F-1: Resilience face a la realite geographique du pays](../../referentiel/fondations/f-1.md).
 - **Processus soutenus** : [PRC-05: Alerte, investigation et riposte](../../referentiel/processus/prc-05.md) (approvisionnement et riposte), [PRC-10: Planification et allocation des ressources](../../referentiel/processus/prc-10.md) (planification des ressources).
 - **Statut : Brouillon.**
 
 ### CMP-24 : Surveillance de la sante animale (zoonoses)
-**Contenu normatif.** Ce composant assure la surveillance sanitaire animale et la detection precoce des zoonoses, dans une logique One Health. Il collecte les evenements chez les animaux et les croise avec la surveillance humaine.
-**Discipline de mise en oeuvre.** Il applique les referentiels de terminologie animal/humain et signale les evenements a la chaine d'alerte. L'interoperabilite avec la surveillance humaine est obligatoire.
+**Contenu normatif.** Ce composant assure la surveillance sanitaire animale et la detection precoce des zoonoses dans une logique One Health. Il collecte les evenements chez les animaux (foyers, signaux cliniques, mouvements de cheptels), les croise avec la surveillance humaine (CMP-25, PRC-04) et declenche les alertes inter-sectorielles. Il s'appuie sur les referentiels de terminologie animal/humain et les registres des structures veterinaires.
+**Discipline de mise en oeuvre.** L'interoperabilite avec la surveillance humaine est obligatoire : un meme evenement peut avoir une composante animale et humaine. Les signalements respectent les formats de messagerie d'alerte (ART-8) et sont horodates. Les donnees zoologiques et humaines sont cloisonnees par finalite et ne sont jointes qu'au sein des pipelines d'analyse autorises (CMP-03/CMP-04).
 - **Rattachement** : [ENF-1: Resilience a l'instabilite reseau](../../referentiel/exigences/enf-1.md), [F-1: Resilience face a la realite geographique du pays](../../referentiel/fondations/f-1.md).
 - **Processus soutenus** : [PRC-04: Veille, prevention et surveillance sanitaire](../../referentiel/processus/prc-04.md) (veille et prevention), [PRC-05: Alerte, investigation et riposte](../../referentiel/processus/prc-05.md) (alerte et riposte).
 - **Statut : Brouillon.**
 
 ### CMP-25 : Enquetes & capteurs terrain
-**Contenu normatif.** Ce composant gere les enquetes de terrain et les flux de capteurs (meteo, environnement, capteurs de sante publique). Il alimente la veille et le pilotage de la performance.
-**Discipline de mise en oeuvre.** Il garantit la qualite et la provenance des donnees capteurs et leur horodatage fiable. Les resultats sont reconcilies avant publication.
+**Contenu normatif.** Ce composant gere les enquetes de terrain (enquetes sante, collectes ciblees) et les flux de capteurs environnementaux et de sante publique (meteo, qualite de l'air, eau, capteurs de surveillance). Il ingest les donnees, en verifie la provenance et l'horodatage, et les met a disposition de la veille (PRC-04) et du pilotage de la performance (PRC-11). Il alimente egalement les tableaux de bord (CMP-01).
+**Discipline de mise en oeuvre.** La qualite et la provenance des donnees capteurs sont garanties (signature a la source, horodatage fiable). Les resultats sont reconcilies avant publication afin d'eviter les doubles comptes. Les protocoles d'enquete sont versionnes et tracables. Les flux exterieurs (partenaires, capteurs tiers) sont admis selon des accords references (CMP-39).
 - **Rattachement** : [ENF-1: Resilience a l'instabilite reseau](../../referentiel/exigences/enf-1.md), [F-1: Resilience face a la realite geographique du pays](../../referentiel/fondations/f-1.md).
 - **Processus soutenus** : [PRC-04: Veille, prevention et surveillance sanitaire](../../referentiel/processus/prc-04.md) (veille terrain), [PRC-05: Alerte, investigation et riposte](../../referentiel/processus/prc-05.md) (alerte), [PRC-11: Suivi et pilotage de la performance](../../referentiel/processus/prc-11.md) (pilotage de la performance).
 - **Statut : Brouillon.**
@@ -253,38 +253,38 @@ Ce document agrege les monographies des composants reference par la cartographie
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### CMP-26 : Noeud central (datacenters nationaux HDS)
-**Contenu normatif.** Ce composant fournit l'infrastructure centralisee hebergeant les donnees et services nationaux dans des datacenters conformes HDS (hebergement de donnees de sante). Il est le socle physique des composants applicatifs et analytiques.
-**Discipline de mise en oeuvre.** Les donnees de sante y resident sous souverainete nationale, chiffrees au repos. La haute disponibilite et la reprise d'activite sont garanties.
+**Contenu normatif.** Ce composant fournit l'infrastructure de calcul et de stockage centralisee hebergeant les donnees et services nationaux dans des datacenters conformes aux exigences d'hebergement de donnees de sante (HDS). Il est le socle physique des composants applicatifs (CMP-01..25), analytiques (CMP-03/CMP-04) et de securite (CMP-32..38). Il assure la haute disponibilite, la redondance geographique et la reprise d'activite.
+**Discipline de mise en oeuvre.** Les donnees de sante y resident sous souverainete nationale, chiffrees au repos et en transit. La continuite de service est assuree par la redondance et des plans de reprise testes. L'acces au socle est limite aux composants authentifies (CMP-35). La capacite est dimensionnee pour absorber les pics (campagnes de vaccination, epidemics).
 - **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../../referentiel/chapitres/art-7.md).
 - **Statut : Brouillon.**
 
 ### CMP-27 : Noeuds regionaux (clusters de district : Fog)
-**Contenu normatif.** Ce composant deploie des clusters de calcul et de stockage au niveau regional/district (Fog computing) pour rapprocher les services des points de service et amortir la latence reseau.
-**Discipline de mise en oeuvre.** Il assure la continuite de service en connectivite degradee et se synchronise avec le noeud central. Les donnees y sont chiffrees et reconciliables.
+**Contenu normatif.** Ce composant deploie des clusters de calcul et de stockage au niveau regional et de district (Fog computing) pour rapprocher les services des points de service et amortir la latence ou l'absence de reseau. Il heberge les instances locales des applicatifs (CMP-19..25) et assure la synchronisation differentielle avec le noeud central (CMP-26).
+**Discipline de mise en oeuvre.** La continuite de service en connectivite degradee est une exigence : les ecritures locales sont conservees et reconciliees a l'amont. Les donnees y sont chiffrees et les noeuds authentifies. La topologie est documentee et les seuils de retention definis pour respecter la politique de conservation.
 - **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../../referentiel/chapitres/art-7.md).
 - **Statut : Brouillon.**
 
 ### CMP-28 : Noeuds locaux (equipements chiffres : Edge)
-**Contenu normatif.** Ce composant regroupe les equipements de bord (Edge) des structures de soins : terminaux, passerelles et boitiers chiffres assurant la collecte locale et le pre-traitement.
-**Discipline de mise en oeuvre.** Les equipements sont durcis, chiffres et authentifies au reseau. Ils fonctionnent hors ligne et se synchronisent a l'amont.
+**Contenu normatif.** Ce composant regroupe les equipements de bord (Edge) des structures de soins : terminaux, passerelles de collecte, boitiers de pre-traitement et concentrateurs. Il assure la collecte locale des donnees, leur pre-traitement et leur mise en file d'attente chiffree en attente de synchronisation. Il interconnecte les dispositifs au noeud regional (CMP-27).
+**Discipline de mise en oeuvre.** Les equipements sont durcis, chiffres et authentifies au reseau via certificat (CMP-35). Ils fonctionnent hors ligne et se synchronisent a l'amont sans perte. Le cycle de vie des equipements (deploiement, rotation, retrait) est trace pour eviter toute compromission au bord du reseau.
 - **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../../referentiel/chapitres/art-7.md).
 - **Statut : Brouillon.**
 
 ### CMP-29 : Liaisons dediees & VPN
-**Contenu normatif.** Ce composant etablit les liaisons dediees et les tunnels VPN securises entre structures, noeuds et partenaires.
-**Discipline de mise en oeuvre.** Tout transit inter-structure emprunte un canal authentifie et chiffre. Les cles sont gerees via la PKI.
+**Contenu normatif.** Ce composant etablit les liaisons dediees et les tunnels VPN securises entre les structures, les noeuds et les partenaires. Il fournit la connectivite de confiance necessaire aux echanges inter-structures et aux acces distants administrateurs.
+**Discipline de mise en oeuvre.** Tout transit inter-structure emprunte un canal authentifie et chiffre ; les cles sont gerees via la PKI (CMP-35). Les acces distants sont controles et journalises. La segmentation isole les flux de gestion des flux metiers.
 - **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../../referentiel/chapitres/art-7.md).
 - **Statut : Brouillon.**
 
 ### CMP-30 : Reseau prive MPLS
-**Contenu normatif.** Ce composant opere le reseau prive MPLS reliant les sites du systeme de sante, isole de l'internet public pour les flux sensibles.
-**Discipline de mise en oeuvre.** Le routage sensible est separe du trafic grand public. La qualite de service priorise les flux critiques.
+**Contenu normatif.** Ce composant opere le reseau prive MPLS reliant les sites du systeme de sante, isole de l'internet public pour les flux sensibles. Il offre un transport garantie, avec qualite de service, entre le noeud central, les noeuds regionaux et les structures connectees.
+**Discipline de mise en oeuvre.** Le routage sensible est separe du trafic grand public. La qualite de service priorise les flux critiques (alertes, dossiers urgents). La supervision mesure la disponibilite et declenche les bascules vers les liaisons de secours (CMP-29).
 - **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../../referentiel/chapitres/art-7.md).
 - **Statut : Brouillon.**
 
 ### CMP-31 : Reseaux mobiles prives (APN securises)
-**Contenu normatif.** Ce composant fournit des APN (Access Point Name) securises sur reseaux mobiles pour les terminaux de terrain, garantissant un transit prive des donnees de sante.
-**Discipline de mise en oeuvre.** Les terminaux mobiles n'emettent les donnees de sante que via l'APN prive, chiffre de bout en bout.
+**Contenu normatif.** Ce composant fournit des APN (Access Point Name) securises sur les reseaux mobiles des operateurs pour les terminaux de terrain (CMP-21, agents communautaires, vehicules). Il garantit un transit prive des donnees de sante hors de l'internet ouvert.
+**Discipline de mise en oeuvre.** Les terminaux mobiles n'emettent les donnees de sante que via l'APN prive, chiffre de bout en bout. L'acces a l'APN est controle et les cartes SIM identifiees. Les volumes et flux sont supervises pour detecter les anomalies.
 - **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../../referentiel/chapitres/art-7.md).
 - **Statut : Brouillon.**
 
@@ -296,44 +296,44 @@ Ce document agrege les monographies des composants reference par la cartographie
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### CMP-32 : Gestion des identites
-**Contenu normatif.** Ce composant de securite gere les identites numeriques des acteurs, structures et dispositifs du systeme (IAM). Il est le point d'authentification unique et de federation d'identites.
-**Discipline de mise en oeuvre.** Toute entite accedant au systeme dispose d'une identite verifiee et d'un cycle de vie gere. L'identite du beneficiaire est resolue sans ambiguite.
+**Contenu normatif.** Ce composant de securite tient le systeme de gestion des identites et des acces (IAM) du systeme de sante numerique. Il enregistre et gere le cycle de vie des identites des acteurs (professionnels, patients via le registre), des structures et des dispositifs, et fournit l'authentification unique et la federation d'identites entre composants et partenaires.
+**Discipline de mise en oeuvre.** Toute entite accedant au systeme dispose d'une identite verifiee et non reusee. L'identite du beneficiaire est resolue sans ambiguite via le registre d'identite (PT-04/CMP-34). Le cycle de vie (creation, suspension, suppression) est trace. La federation s'appuie sur des protocoles standards (OIDC/OAuth2, SAML) et des certificats (CMP-35).
 - **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../../referentiel/chapitres/art-7.md).
 - **Statut : Brouillon.**
 
 ### CMP-33 : Controle d'acces fin (RBAC/ABAC)
-**Contenu normatif.** Ce composant applique le controle d'acces fin (RBAC/ABAC) aux donnees et services, selon le role, l'attribut et le contexte.
-**Discipline de mise en oeuvre.** L'acces aux donnees de sante est cloisonne par profil et finalite. Toute decision d'acces est journalisee.
+**Contenu normatif.** Ce composant applique le controle d'acces fin aux donnees et services, selon le role (RBAC), les attributs et le contexte (ABAC). Il decide, a chaque requete, si un acteur peut lire ou ecrire une ressource, en fonction de sa fonction, de la finalite et du niveau de sensibilite de la donnee.
+**Discipline de mise en oeuvre.** L'acces aux donnees de sante est cloisonne par profil et finalite ; le moindre privilege est la regle. Toute decision d'acces (accord ou refus) est journalisee (CMP-37) pour audit. Les droits sont revus periodiquement. Les exceptions sont temporaires et tracees.
 - **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../../referentiel/chapitres/art-7.md).
 - **Statut : Brouillon.**
 
 ### CMP-34 : Gestion des consentements
-**Contenu normatif.** Ce composant gere le consentement des beneficiaires a l'echange et a l'utilisation de leurs donnees, par finalite et dans le temps.
-**Discipline de mise en oeuvre.** Aucune donnee a caractere personnel n'est partagee sans consentement enregistre et verifiable. Le retrait de consentement est effectif immediatement.
+**Contenu normatif.** Ce composant gere le consentement des beneficiaires a l'echange et a l'utilisation de leurs donnees, par finalite, par partenaire et dans le temps. Il tient le registre de consentements et l'applique a chaque flux sortant ou acces patient (CMP-22).
+**Discipline de mise en oeuvre.** Aucune donnee a caractere personnel n'est partagee sans consentement enregistre, verifiable et dans le champ autorise. Le retrait de consentement est effectif immediatement et applique aux nouveaux echanges. Les consentements sont horodates et non modifiables (journal immutable, CMP-37).
 - **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../../referentiel/chapitres/art-7.md).
 - **Statut : Brouillon.**
 
 ### CMP-35 : Infrastructure de cles publiques (PKI)
-**Contenu normatif.** Ce composant opere la PKI du systeme : emission, rotation et revocation des certificats des acteurs, structures et dispositifs.
-**Discipline de mise en oeuvre.** Tout composant et toute liaison s'authentifie par certificat. La chaine de confiance est sous autorite nationale.
+**Contenu normatif.** Ce composant opere la PKI nationale du systeme de sante numerique : il emet, rotate et revoque les certificats des acteurs, structures et dispositifs, et fournit les services d'horodatage et de signature. Il est l'autorite de confiance a la base de l'authentification et du chiffrement.
+**Discipline de mise en oeuvre.** Tout composant et toute liaison s'authentifie par certificat. La chaine de confiance est sous autorite nationale et ses racines sont protegees. La rotation des cles est planifiee et la revocation diffusee sans delai. Les operations de signature sont conformes aux normes en vigueur.
 - **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../../referentiel/chapitres/art-7.md).
 - **Statut : Brouillon.**
 
 ### CMP-36 : Passerelle de confiance mondiale OMS (GDHCN)
-**Contenu normatif.** Ce composant interconnecte le systeme avec la Gateway de confiance mondiale de l'OMS (GDHCN) pour la verification internationale des certificats de vaccination.
-**Discipline de mise en oeuvre.** Les echanges internationaux respectent les protocoles GDHCN et n'exposent que les donnees necessaires, signees et chiffrees.
+**Contenu normatif.** Ce composant interconnecte le systeme avec la Gateway de confiance mondiale de l'OMS (GDHCN) pour la verification internationale des certificats de vaccination et de sante. Il publie les certificats nationaux signes et consomme ceux des etats partenaires, dans le respect des protocoles GDHCN.
+**Discipline de mise en oeuvre.** Les echanges internationaux n'exposent que les donnees necessaires, signees et chiffrees, conformement aux conventions (CMP-41). La confiance repose sur la PKI nationale (CMP-35). Les acces sont traces et les anomalies remontees a la surveillance (CMP-37).
 - **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../../referentiel/chapitres/art-7.md).
 - **Statut : Brouillon.**
 
 ### CMP-37 : Journal d'audit immuable
-**Contenu normatif.** Ce composant enregistre de facon immuable tous les evenements de securite et d'acces (journal d'audit).
-**Discipline de mise en oeuvre.** Les journaux sont horodates, signes et non alterables. Ils alimentent la tracabilite et l'investigation.
+**Contenu normatif.** Ce composant enregistre de facon immuable tous les evenements de securite et d'acces du systeme : authentifications, decisions d'acces (CMP-33), consultations de donnees, modifications, echecs. Il constitue la piste d'audit unique et fiable pour la tracabilite et l'investigation.
+**Discipline de mise en oeuvre.** Les journaux sont horodates, signes et non alterables (ajout seul). Ils sont conserves selon la politique de retention et indexes pour la recherche. L'acces a la piste d'audit est lui-meme controle et separe des producteurs de logs.
 - **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../../referentiel/chapitres/art-7.md).
 - **Statut : Brouillon.**
 
 ### CMP-38 : Moteur de chiffrement
-**Contenu normatif.** Ce composant centralise les services de chiffrement (au repos et en transit) et la gestion des cles, pour l'ensemble du socle.
-**Discipline de mise en oeuvre.** Toutes les donnees de sante sont chiffrees par defaut. Les cles sont separees des donnees et protegees par la PKI.
+**Contenu normatif.** Ce composant centralise les services de chiffrement (au repos et en transit) et la gestion des cles cryptographiques pour l'ensemble du socle. Il fournit les primitives utilisees par le stockage (CMP-26..28), les liaisons (CMP-29..31) et la securite (CMP-32..37).
+**Discipline de mise en oeuvre.** Toutes les donnees de sante sont chiffrees par defaut. Les cles sont separees des donnees chiffrees et protegees par la PKI (CMP-35). Les algorithmes sont conformes aux recommandations et mis a jour sans rupture de service. La perte de cles est prevenue par une copie securisee.
 - **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../../referentiel/chapitres/art-7.md).
 - **Statut : Brouillon.**
 
@@ -345,50 +345,50 @@ Ce document agrege les monographies des composants reference par la cartographie
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### CMP-39 : Registre des accords inter-institutions
-**Contenu normatif.** Ce registre de gouvernance tient a jour les accords de partage de donnees entre institutions (cadre juridique des echanges).
-**Discipline de mise en oeuvre.** Aucun echange inter-institutionnel n'a lieu sans accord reference. Le registre est la source de verite des engagements.
+**Contenu normatif.** Ce registre de gouvernance tient a jour les accords de partage de donnees entre institutions (ministeres, structures de sante, partenaires, secteur prive). Il documente le cadre juridique, les parties, le perimetre et les finalites de chaque echange inter-institutionnel.
+**Discipline de mise en oeuvre.** Aucun echange inter-institutionnel n'a lieu sans accord reference et actif. Le registre est la source de verite des engagements et est consulte par la passerelle d'echange (PT-01). Les accords expires suspendent automatiquement les flux correspondants.
 - **Rattachement** : [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md), [F-4: Homologation obligatoire](../../referentiel/fondations/f-4.md).
 - **Statut : Brouillon.**
 
 ### CMP-40 : Charte nationale de protection
-**Contenu normatif.** Ce registre porte la charte nationale de protection des donnees de sante et les regles d'usage applicables a tous les acteurs.
-**Discipline de mise en oeuvre.** Tout composant et tout traitement se conforme a la charte. Les derogations sont tracees et justifiees.
+**Contenu normatif.** Ce registre porte la charte nationale de protection des donnees de sante et les regles d'usage obligatoires pour tous les acteurs du systeme. Il fixe les principes de minimisation, de finalite, de conservation et de responsabilite applicables aux traitements.
+**Discipline de mise en oeuvre.** Tout composant et tout traitement se conforme a la charte ; les derogations sont tracees, justifiees et temporaires. La conformite est verifiee a l'homologation (CMP-42) et auditee (CMP-45). Les manquements sont remontes a l'arbitrage (CMP-46).
 - **Rattachement** : [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md), [F-4: Homologation obligatoire](../../referentiel/fondations/f-4.md).
 - **Statut : Brouillon.**
 
 ### CMP-41 : Conventions internationales
-**Contenu normatif.** Ce registre reference les conventions internationales liees aux echanges de donnees de sante (ex. GDHCN, partenaires).
-**Discipline de mise en oeuvre.** Les echanges transfrontaliers respectent les conventions referencees et les exigences de souverainete.
+**Contenu normatif.** Ce registre reference les conventions internationales et les engagements multilateraux lies aux echanges de donnees de sante (OMS/GDHCN, partenaires techniques, etats voisins). Il encadre les flux transfrontaliers et les obligations de l'Etat.
+**Discipline de mise en oeuvre.** Les echanges transfrontaliers respectent les conventions referencees et les exigences de souverainete et de protection (CMP-40). Toute nouvelle convention est evaluee et enregistree avant activation. Les conflits de normes sont arbitres (CMP-46).
 - **Rattachement** : [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md), [F-4: Homologation obligatoire](../../referentiel/fondations/f-4.md).
 - **Statut : Brouillon.**
 
 ### CMP-42 : Comite national d'homologation
-**Contenu normatif.** Ce registre trace les decisions du comite national d'homologation des composants et services numeriques de sante.
-**Discipline de mise en oeuvre.** Aucun composant n'entre en production sans homologation. Le registre consigne l'etat et les conditions d'homologation.
+**Contenu normatif.** Ce registre trace les decisions du comite national d'homologation des composants et services numeriques de sante. Il consigne l'etat d'homologation, les conditions et les restrictions de mise en production de chaque element de l'architecture.
+**Discipline de mise en oeuvre.** Aucun composant n'entre en production sans homologation referencee. Le registre est consulte par le deploiement et la surveillance. Les conditions d'homologation sont suivies et leur non-respect suspend le service. La periodicite de re-homologation est definie.
 - **Rattachement** : [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md), [F-4: Homologation obligatoire](../../referentiel/fondations/f-4.md).
 - **Statut : Brouillon.**
 
 ### CMP-43 : Registre des initiatives
-**Contenu normatif.** Ce registre reference les initiatives et projets numeriques de sante, pour eviter la redondance et assurer l'alignement au CAESN.
-**Discipline de mise en oeuvre.** Toute nouvelle initiative est enregistree et evaluee contre l'architecture de reference. Les doublons sont signales.
+**Contenu normatif.** Ce registre reference les initiatives et projets numeriques de sante (existants, en cours, planifies) pour garantir la coherence de l'ecosysteme. Il documente objectif, porteur, perimetre et alignement au CAESN de chaque initiative.
+**Discipline de mise en oeuvre.** Toute nouvelle initiative est enregistree et evaluee contre l'architecture de reference (ARTSN/CNISN) avant lancement. Les doublons ou les derivations non alignees sont signales au comite d'arbitrage (CMP-46). Le registre alimente le portefeuille de l'Etat.
 - **Rattachement** : [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md), [F-4: Homologation obligatoire](../../referentiel/fondations/f-4.md).
 - **Statut : Brouillon.**
 
 ### CMP-44 : Comite d'ethique
-**Contenu normatif.** Ce registre porte les avis du comite d'ethique sur les usages des donnees et les traitements sensibles.
-**Discipline de mise en oeuvre.** Les traitements a risque ethique sollicitent un avis. Les avis sont conserves et opposables.
+**Contenu normatif.** Ce registre porte les avis du comite d'ethique sur les usages des donnees et les traitements sensibles (IA, profilage, recherche, partages). Il documente les saisines, les avis et les suites donnees.
+**Discipline de mise en oeuvre.** Les traitements a risque ethique sollicitent un avis avant mise en oeuvre. Les avis sont conserves, opposables et relies aux composants concernes. Les derives ethiques sont remontees a l'arbitrage (CMP-46) et a l'audit (CMP-45).
 - **Rattachement** : [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md), [F-4: Homologation obligatoire](../../referentiel/fondations/f-4.md).
 - **Statut : Brouillon.**
 
 ### CMP-45 : Cellule d'audit
-**Contenu normatif.** Ce registre consigne les audits de conformite et de securite des composants et de l'architecture.
-**Discipline de mise en oeuvre.** Les audits sont planifies et leurs recommandations suivies. Les ecarts sont remontes a l'arbitrage.
+**Contenu normatif.** Ce registre consigne les audits de conformite, de securite et de qualite des composants et de l'architecture dans son ensemble. Il tient le plan d'audit, les rapports et le suivi des recommandations.
+**Discipline de mise en oeuvre.** Les audits sont planifies sur la base des risques et de l'homologation. Leurs recommandations sont suivies jusqu'a cloture et les ecarts remontes a l'arbitrage (CMP-46). Les conclusions alimentent la revue de l'architecture et le portefeuille.
 - **Rattachement** : [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md), [F-4: Homologation obligatoire](../../referentiel/fondations/f-4.md).
 - **Statut : Brouillon.**
 
 ### CMP-46 : Arbitrage et risques
-**Contenu normatif.** Ce registre documente l'arbitrage des risques et les decisions de gouvernance transverses du systeme de sante numerique.
-**Discipline de mise en oeuvre.** Les decisions d'arbitrage sont tracees et motivees. Elles alimentent le portefeuille d'initiatives.
+**Contenu normatif.** Ce registre documente l'arbitrage des risques et les decisions de gouvernance transverses du systeme de sante numerique : priorisation, resolution de conflits, gestion des risques et des crises. Il est l'instance de decision finale sur l'architecture.
+**Discipline de mise en oeuvre.** Les decisions d'arbitrage sont tracees, motivees et publiees aux instances concernees. Elles alimentent le portefeuille d'initiatives (CMP-43) et la feuille de route. Les risques identifies sont suivis et reevalues periodiquement.
 - **Rattachement** : [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md), [F-4: Homologation obligatoire](../../referentiel/fondations/f-4.md).
 - **Statut : Brouillon.**
 

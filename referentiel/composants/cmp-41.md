@@ -14,7 +14,7 @@ implements: ["ART-0", "F-4"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-41", "axe-gouvernance"]
 ---
 # CMP-41 : Conventions internationales
-**Contenu normatif.** Ce registre reference les conventions internationales liees aux echanges de donnees de sante (ex. GDHCN, partenaires).
-**Discipline de mise en oeuvre.** Les echanges transfrontaliers respectent les conventions referencees et les exigences de souverainete.
+**Contenu normatif.** Ce registre reference les conventions internationales et les engagements multilateraux lies aux echanges de donnees de sante (OMS/GDHCN, partenaires techniques, etats voisins). Il encadre les flux transfrontaliers et les obligations de l'Etat.
+**Discipline de mise en oeuvre.** Les echanges transfrontaliers respectent les conventions referencees et les exigences de souverainete et de protection (CMP-40). Toute nouvelle convention est evaluee et enregistree avant activation. Les conflits de normes sont arbitres (CMP-46).
 - **Rattachement** : [ART-0: Accords de partage inter-institutionnels](../chapitres/art-0.md), [F-4: Homologation obligatoire](../fondations/f-4.md).
 - **Statut : Brouillon.**

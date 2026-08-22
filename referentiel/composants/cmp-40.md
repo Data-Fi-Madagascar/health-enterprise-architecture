@@ -14,7 +14,7 @@ implements: ["ART-0", "F-4"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-40", "axe-gouvernance"]
 ---
 # CMP-40 : Charte nationale de protection
-**Contenu normatif.** Ce registre porte la charte nationale de protection des donnees de sante et les regles d'usage applicables a tous les acteurs.
-**Discipline de mise en oeuvre.** Tout composant et tout traitement se conforme a la charte. Les derogations sont tracees et justifiees.
+**Contenu normatif.** Ce registre porte la charte nationale de protection des donnees de sante et les regles d'usage obligatoires pour tous les acteurs du systeme. Il fixe les principes de minimisation, de finalite, de conservation et de responsabilite applicables aux traitements.
+**Discipline de mise en oeuvre.** Tout composant et tout traitement se conforme a la charte ; les derogations sont tracees, justifiees et temporaires. La conformite est verifiee a l'homologation (CMP-42) et auditee (CMP-45). Les manquements sont remontes a l'arbitrage (CMP-46).
 - **Rattachement** : [ART-0: Accords de partage inter-institutionnels](../chapitres/art-0.md), [F-4: Homologation obligatoire](../fondations/f-4.md).
 - **Statut : Brouillon.**
