@@ -64,7 +64,7 @@ Cette couche applique physiquement et directement le pattern CQRS (ART-6). Elle 
 
 ## Couche 4 : Interopérabilité et services partagés
 
-Cette couche exécute la source de vérité au présent (Profil B d'ART-3) et les Référentiels Nationaux (ART-4). Elle associe CMP-06 moteur d'intégration & médiation (ART-2), CMP-07 orchestrateur de parcours / gestionnaire de Sagas (ART-8A), CMP-08 répertoire de données cliniques opérationnelles, CMP-09 référentiel des métadonnées d'exploitation (ART-4), CMP-10 registre des terminologies, CMP-11 registre des clients / Index National des Patients (INP : ART-4A), CMP-12 registre d'éligibilité et de couverture (CSU : ART-4C), CMP-13 registre des personnels, et CMP-14 registre des produits, intrants et indicateurs. Son statut est Stable.
+Cette couche exécute la source de vérité au présent (Profil B d'ART-3) et les Référentiels Nationaux (ART-4). Elle associe CMP-06 moteur d'intégration & médiation (ART-2), CMP-07 orchestrateur de parcours / gestionnaire de Sagas (ART-8A), CMP-08 répertoire de données cliniques opérationnelles, CMP-09 référentiel des métadonnées d'exploitation (ART-4), CMP-10 registre des terminologies, CMP-11 registre des clients / Index National des Patients (INP : ART-4A), CMP-12 registre d'éligibilité et de couverture (CSU : ART-4C), CMP-13 registre des personnels, et CMP-14 registre des produits, intrants et indicateurs. Les objets de données métier normalisés ([objets-de-donnees](../03_objets-de-donnees/index.md)) alimentent la médiation sémantique de cette couche. Son statut est Stable.
 
 ### Composants associés
 
@@ -344,7 +344,7 @@ PLAT --> DB_ENT : ETL (CMP-03/04)
 
 ## Liens
 
-Les chapitres et patterns de référence constituent le socle normatif de cette cartographie, tandis que les couches applicatives du CAESN définissent son positionnement dans l'architecture d'entreprise, et le document VS-04 : Pilotage encadre la gouvernance et le pilotage de la performance du système de santé.
+Les chapitres et patterns de référence constituent le socle normatif de cette cartographie, tandis que les couches applicatives du CAESN définissent son positionnement dans l'architecture d'entreprise, et le document VS-04 : Pilotage encadre la gouvernance et le pilotage de la performance du système de santé. Les objets de données métier ([03_objets-de-donnees](../03_objets-de-donnees/index.md)) en définissent l'atome d'information normalisé.
 
 ## Références
 
