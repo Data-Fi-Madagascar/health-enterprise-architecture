@@ -13,7 +13,7 @@ implements: []
 applies_to: ["CAP-03", "CAP-08", "CAP-13", "CAP-14", "CAP-15", "CAP-16"]
 related: ["VS-04-04", "VS-04-05", "VS-04"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-11"]
-uses: ["CMP-01", "CMP-02", "CMP-03"]
+uses: ["CMP-25", "CMP-26", "CMP-27", "CMP-28", "CMP-29", "CMP-30", "CMP-31", "CMP-32", "CMP-33", "CMP-34", "CMP-35", "CMP-36", "CMP-37", "CMP-38", "CMP-39", "CMP-40", "CMP-41", "CMP-42", "CMP-43", "CMP-44", "CMP-45", "CMP-46"]
 ---
 # Suivi et pilotage de la performance
 

@@ -13,7 +13,7 @@ implements: []
 applies_to: ["CAP-07", "CAP-08", "CAP-13", "CAP-14", "CAP-15", "CAP-17"]
 related: ["VS-03-01", "VS-03-02", "VS-03"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-07"]
-uses: ["CMP-09", "CMP-10", "CMP-16"]
+uses: ["CMP-22", "CMP-26", "CMP-27", "CMP-28", "CMP-29", "CMP-30", "CMP-31", "CMP-32", "CMP-33", "CMP-34", "CMP-35", "CMP-36", "CMP-37", "CMP-38", "CMP-39", "CMP-40", "CMP-41", "CMP-42", "CMP-43", "CMP-44", "CMP-45", "CMP-46"]
 ---
 # Identification et droits des bénéficiaires
 

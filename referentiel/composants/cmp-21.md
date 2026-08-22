@@ -9,6 +9,7 @@ owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/04_cartographie-cible/composants.md
 implements: ["ENF-1", "F-1"]
+applies_to: ["PRC-01", "PRC-02", "PRC-03"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-21", "couche-2"]
 ---
 
