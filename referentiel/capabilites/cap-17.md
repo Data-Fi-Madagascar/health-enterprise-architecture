@@ -12,7 +12,7 @@ envelope: 00_caesn/03_capabilities/enabling.md
 maps_to: ["CAP-INT-01", "CAP-INT-09"]
 implements: []
 applies_to: ["VS-01", "VS-03"]
-related: ["CAP-04"]
+related: ["VS-01", "VS-02", "PRC-01", "PRC-04", "PRC-07"]
 tags: ["caesn", "niveau-1", "capabilite", "CAP-17", "identite", "consentement"]
 ---
 # Engagement patient et identité numérique

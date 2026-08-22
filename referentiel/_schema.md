@@ -121,6 +121,25 @@ Le corps suit le gabarit `H1 (titre) → H2 (finalité / contenu) → H3 (sous-s
 - La **prose narrative** (paragraphes « pour qui lire », légendes, introductions) **reste dans le document source** et n’est pas dupliquée dans les objets.
 - Le champ `family` classe chaque capacité CNISN dans l’une des cinq familles de réponse alignées sur l’ARTSN (couches 3 à 5 et axes de la cartographie cible). Il est porté par le frontmatter des `cap-int-*.md` et sert d’en-tête de section dans `01_cnisn/02_capacites.md` (voir [annexe B](../01_cnisn/08_annexes/b-articulation-art-sn.md)).
 
+## Relations d'architecture (alignement ArchiMate)
+
+Le référentiel suit le modèle de relations d'ArchiMate : la **capacité** est le pivot stable, le **flux de valeur** la justifie (à quoi elle sert), le **processus métier** l'opérationnalise (comment), et le **composant applicatif** la rend numériquement possible. Chaque relation est portée par le champ frontmatter adéquat et sa **direction** (objet source -> objet cible) encode le type ArchiMate.
+
+| Source | Champ | Cible | Relation ArchiMate | Sémantique |
+|--------|-------|-------|--------------------|------------|
+| Flux de valeur (VS) | `applies_to` | Capacité (CAP) | Capability *enables* / *serves* Value Stream | la capacité rend le flux possible |
+| Flux de valeur (VS) | `applies_to` | Partie prenante (PP) | Value Stream *serves* Stakeholder | le flux crée de la valeur pour le partie prenante |
+| Flux de valeur (VS) | `related` | Processus (PRC) | Value Stream *realized by* Business Process | lien direct flux -> processus |
+| Capacité (CAP) | `related` | VS / PRC | inverse de enable / realize | navigabilité (coté capacité) |
+| Processus (PRC) | `applies_to` | Capacité (CAP) | Business Process *realizes* Capability | le processus réalise la capacité |
+| Processus (PRC) | `related` | Étape de valeur (EV) | Business Process *contributes to* Value | déclenchement dans une étape de flux |
+| Processus (PRC) | `uses` | Composant (CMP) | Business Process *served by* Application Component | le processus utilise le composant |
+| Composant (CMP) | `applies_to` | Processus (PRC) | Application Component *serves* Business Process | inverse de `uses` (coté composant) |
+| Composant (CMP) | `implements` | Chapitre (ART) | Application Component *realizes* Requirement | met en oeuvre la norme |
+| Composant (CMP) | `maps_to` | Capacité CNISN (CAP-INT) | Alignment | aligne la capacité ARTSN sur la capacité CNISN |
+
+Règle d'intégrité : un flux de valeur ne doit laisser aucune capacité orpheline ; chaque processus liste ses capacités réalisées de façon **granulaire** (pas par copie du flux parent) ; `uses` (PRC -> CMP) et `applies_to` (CMP -> PRC) sont les deux sens d'une même relation *service* et doivent rester cohérents.
+
 ## Registre des objets
 
 Le registre central de tous les objets est `referentiel/_index.yaml` : id, type, niveau, chemin, statut. Il est la source de vérité pour la vérification des comptes et la détection de perte pendant la migration.

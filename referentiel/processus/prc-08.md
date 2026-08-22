@@ -10,9 +10,10 @@ version: "0.0.1"
 envelope: 00_caesn/01_value-streams/vs-03-financial-protection.md
 maps_to: []
 implements: []
-applies_to: ["CAP-07", "CAP-08", "CAP-12", "CAP-13", "CAP-14", "CAP-15", "CAP-16", "PP-02", "PP-03", "PP-06", "CMP-03", "CMP-05", "CMP-09", "CMP-10", "CMP-16"]
+applies_to: ["CAP-07", "CAP-08", "CAP-12", "CAP-13", "CAP-15", "CAP-16"]
 related: ["VS-03-03", "VS-03-04", "VS-03"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-08"]
+uses: ["CMP-09", "CMP-10", "CMP-16"]
 ---
 # Financement et exemption au point de service
 

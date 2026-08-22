@@ -12,7 +12,7 @@ envelope: 00_caesn/03_capabilities/enabling.md
 maps_to: ["CAP-INT-03"]
 implements: []
 applies_to: ["VS-02"]
-related: ["CAP-05"]
+related: ["VS-02", "PRC-04", "PRC-05"]
 tags: ["caesn", "niveau-1", "capabilite", "CAP-18", "one-health", "intersectoriel"]
 ---
 # Coordination intersectorielle (One Health)

@@ -111,6 +111,7 @@ def load_objects():
                 "maps_to": fields.get("maps_to", []) or [],
                 "implements": fields.get("implements", []) or [],
                 "applies_to": fields.get("applies_to", []) or [],
+                "uses": fields.get("uses", []) or [],
                 "body": body,
             }
     return objects
@@ -164,7 +165,7 @@ def demote_headings(text):
 def rattachement_links(obj, path_by_id, to_dir):
     ids = []
     seen = set()
-    for key in ("applies_to", "maps_to", "implements"):
+    for key in ("applies_to", "maps_to", "implements", "uses"):
         for oid in obj[key]:
             if oid and oid not in seen:
                 seen.add(oid)

@@ -69,7 +69,7 @@ Ce flux couvre l’ensemble du parcours d’un patient, depuis la reconnaissance
 - [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md)
 - [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md)
 
-*Rattachement : CAP-01, CAP-02, CAP-03, CAP-04, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-01, PP-02, PP-04, PP-05, PP-06 · fiche VS-01*
+*Rattachement : CAP-01, CAP-02, CAP-03, CAP-04, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-01, PP-02, PP-04, PP-05, PP-06, CAP-17 · fiche VS-01*
 
 <!-- END:GENERATED -->
 ## Étapes de valeur
@@ -298,7 +298,7 @@ Patient, famille, agent de santé communautaire, personnel d'accueil, registre p
 
 Taux de recours aux soins, délai moyen d'accès à une formation sanitaire, taux de dossiers ouverts, délai d'enregistrement
 
-*Rattachement : CAP-01, CAP-02, CAP-03, CAP-04, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-01, PP-02, PP-04, PP-05, PP-06 · fiche PRC-01*
+*Rattachement : CAP-01, CAP-02, CAP-04, CAP-11, CAP-13, CAP-14, CAP-15 · fiche PRC-01*
 
 ### Prestation des soins cliniques
 
@@ -320,7 +320,7 @@ Clinicien, dossier patient, pharmacie, laboratoire, formation sanitaire référe
 
 Taux de consultations avec diagnostic documenté, taux de disponibilité des médicaments traceurs, taux de référence complétée avec retour d'information
 
-*Rattachement : CAP-01, CAP-02, CAP-03, CAP-04, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-01, PP-02, PP-04, PP-05, PP-06 · fiche PRC-02*
+*Rattachement : CAP-01, CAP-03, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15 · fiche PRC-02*
 
 ### Continuité, suivi et qualité des soins
 
@@ -341,7 +341,7 @@ Agent de santé communautaire, clinicien, patient, gestionnaire de formation san
 
 Taux de patients perdus de vue, taux d'observance thérapeutique, proportion de formations sanitaires ayant réalisé une revue qualité dans le mois
 
-*Rattachement : CAP-01, CAP-02, CAP-03, CAP-04, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-01, PP-02, PP-04, PP-05, PP-06 · fiche PRC-03*
+*Rattachement : CAP-02, CAP-03, CAP-04, CAP-13, CAP-14, CAP-15 · fiche PRC-03*
 
 <!-- END:GENERATED -->
 ## Liens

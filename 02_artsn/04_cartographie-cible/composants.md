@@ -236,7 +236,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ENF-1, F.1 · fiche CMP-19*
+*Rattachement : ENF-1, F-1 · fiche CMP-19*
 
 ### CMP-20 : Gestion des pharmacies (PMIS)
 
@@ -244,7 +244,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ENF-1, F.1 · fiche CMP-20*
+*Rattachement : ENF-1, F-1 · fiche CMP-20*
 
 ### CMP-21 : Sante communautaire mobile (offline)
 
@@ -252,7 +252,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ENF-1, F.1 · fiche CMP-21*
+*Rattachement : ENF-1, F-1 · fiche CMP-21*
 
 ### CMP-22 : Espace sante patient
 
@@ -260,7 +260,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ENF-1, F.1 · fiche CMP-22*
+*Rattachement : ENF-1, F-1 · fiche CMP-22*
 
 ### CMP-23 : Chaine logistique (LMIS)
 
@@ -268,7 +268,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ENF-1, F.1 · fiche CMP-23*
+*Rattachement : ENF-1, F-1 · fiche CMP-23*
 
 ### CMP-24 : Surveillance de la sante animale (zoonoses)
 
@@ -276,7 +276,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ENF-1, F.1 · fiche CMP-24*
+*Rattachement : ENF-1, F-1 · fiche CMP-24*
 
 ### CMP-25 : Enquetes & capteurs terrain
 
@@ -284,7 +284,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ENF-1, F.1 · fiche CMP-25*
+*Rattachement : ENF-1, F-1 · fiche CMP-25*
 
 ### CMP-26 : Noeud central (datacenters nationaux HDS)
 
@@ -396,7 +396,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ART-0, F.4 · fiche CMP-39*
+*Rattachement : ART-0, F-4 · fiche CMP-39*
 
 ### CMP-40 : Charte nationale de protection
 
@@ -404,7 +404,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ART-0, F.4 · fiche CMP-40*
+*Rattachement : ART-0, F-4 · fiche CMP-40*
 
 ### CMP-41 : Conventions internationales
 
@@ -412,7 +412,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ART-0, F.4 · fiche CMP-41*
+*Rattachement : ART-0, F-4 · fiche CMP-41*
 
 ### CMP-42 : Comite national d'homologation
 
@@ -420,7 +420,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ART-0, F.4 · fiche CMP-42*
+*Rattachement : ART-0, F-4 · fiche CMP-42*
 
 ### CMP-43 : Registre des initiatives
 
@@ -428,7 +428,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ART-0, F.4 · fiche CMP-43*
+*Rattachement : ART-0, F-4 · fiche CMP-43*
 
 ### CMP-44 : Comite d'ethique
 
@@ -436,7 +436,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ART-0, F.4 · fiche CMP-44*
+*Rattachement : ART-0, F-4 · fiche CMP-44*
 
 ### CMP-45 : Cellule d'audit
 
@@ -444,7 +444,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ART-0, F.4 · fiche CMP-45*
+*Rattachement : ART-0, F-4 · fiche CMP-45*
 
 ### CMP-46 : Arbitrage et risques
 
@@ -452,6 +452,6 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 (A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
 
-*Rattachement : ART-0, F.4 · fiche CMP-46*
+*Rattachement : ART-0, F-4 · fiche CMP-46*
 
 <!-- END:GENERATED -->

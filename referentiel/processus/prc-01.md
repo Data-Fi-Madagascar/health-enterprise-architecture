@@ -10,9 +10,10 @@ version: "0.0.1"
 envelope: 00_caesn/01_value-streams/vs-01-access-care.md
 maps_to: []
 implements: []
-applies_to: ["CAP-01", "CAP-02", "CAP-03", "CAP-04", "CAP-09", "CAP-10", "CAP-11", "CAP-13", "CAP-14", "CAP-15", "PP-01", "PP-02", "PP-04", "PP-05", "PP-06"]
+applies_to: ["CAP-01", "CAP-02", "CAP-04", "CAP-11", "CAP-13", "CAP-14", "CAP-15"]
 related: ["VS-01-01", "VS-01-02", "VS-01"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-01"]
+uses: []
 ---
 # Accès, orientation et admission du patient
 

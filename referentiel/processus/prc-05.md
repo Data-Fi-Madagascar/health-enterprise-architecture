@@ -10,9 +10,10 @@ version: "0.0.1"
 envelope: 00_caesn/01_value-streams/vs-02-risk-protection.md
 maps_to: []
 implements: []
-applies_to: ["CAP-04", "CAP-05", "CAP-06", "CAP-09", "CAP-10", "CAP-11", "CAP-13", "CAP-14", "CAP-15", "PP-03", "PP-04", "PP-07", "PP-08", "CMP-02", "CMP-04", "CMP-06", "CMP-07", "CMP-08", "CMP-11", "CMP-13", "CMP-14", "CMP-15", "CMP-17", "CMP-18"]
+applies_to: ["CAP-04", "CAP-05", "CAP-13", "CAP-14", "CAP-15", "CAP-17", "CAP-18"]
 related: ["VS-02-03", "VS-02-04", "VS-02-05", "VS-02"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-05"]
+uses: ["CMP-02", "CMP-04", "CMP-07", "CMP-08", "CMP-11", "CMP-13", "CMP-14", "CMP-15", "CMP-17", "CMP-18"]
 ---
 # Alerte, investigation et riposte
 

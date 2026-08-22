@@ -10,9 +10,10 @@ version: "0.0.1"
 envelope: 00_caesn/01_value-streams/vs-03-financial-protection.md
 maps_to: []
 implements: []
-applies_to: ["CAP-07", "CAP-08", "CAP-12", "CAP-13", "CAP-14", "CAP-15", "CAP-16", "PP-02", "PP-03", "PP-06", "CMP-03", "CMP-12"]
+applies_to: ["CAP-07", "CAP-12", "CAP-13", "CAP-14", "CAP-15"]
 related: ["VS-03-05", "VS-03-06", "VS-03-07", "VS-03"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-09"]
+uses: ["CMP-03", "CMP-04", "CMP-12"]
 ---
 # Remboursement et régulation des mécanismes
 

@@ -293,7 +293,7 @@ Districts sanitaires, communes, fokontany, gestionnaires du registre, Ministère
 
 Taux de couverture du registre, taux d'exclusion estimé, proportion de formations sanitaires informées des droits
 
-*Rattachement : CAP-07, CAP-08, CAP-12, CAP-13, CAP-14, CAP-15, CAP-16, PP-02, PP-03, PP-06, CMP-03, CMP-05, CMP-09, CMP-10, CMP-16 · fiche PRC-07*
+*Rattachement : CAP-07, CAP-08, CAP-13, CAP-14, CAP-15, CAP-17, CMP-09, CMP-10, CMP-16 · fiche PRC-07*
 
 ### Financement et exemption au point de service
 
@@ -314,7 +314,7 @@ Ministère de l'Économie et des Finances, Ministère de la Santé, partenaires,
 
 Taux d'exécution budgétaire, part du budget santé allouée à la protection financière, taux d'exemption appliqué, taux de refus de soins signalés
 
-*Rattachement : CAP-07, CAP-08, CAP-12, CAP-13, CAP-14, CAP-15, CAP-16, PP-02, PP-03, PP-06, CMP-03, CMP-05, CMP-09, CMP-10, CMP-16 · fiche PRC-08*
+*Rattachement : CAP-07, CAP-08, CAP-12, CAP-13, CAP-15, CAP-16, CMP-09, CMP-10, CMP-16 · fiche PRC-08*
 
 ### Remboursement et régulation des mécanismes
 
@@ -336,7 +336,7 @@ Gestionnaire de la formation sanitaire, vérificateur, fonds de remboursement, f
 
 Taux de factures rejetées, délai de validation des factures, délai moyen de remboursement, taux de remboursement effectif, proportion de contrôles réalisés, montant des anomalies détectées
 
-*Rattachement : CAP-07, CAP-08, CAP-12, CAP-13, CAP-14, CAP-15, CAP-16, PP-02, PP-03, PP-06, CMP-03, CMP-12 · fiche PRC-09*
+*Rattachement : CAP-07, CAP-12, CAP-13, CAP-14, CAP-15, CMP-03, CMP-04, CMP-12 · fiche PRC-09*
 
 <!-- END:GENERATED -->
 ## Liens
