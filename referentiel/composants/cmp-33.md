@@ -13,13 +13,8 @@ implements: ["ART-7"]
 uses: ["CMP-26", "CMP-27", "CMP-28", "CMP-29", "CMP-30", "CMP-31"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-33", "axe-securite"]
 ---
-
 # CMP-33 : Controle d'acces fin (RBAC/ABAC)
-
-## Contenu normatif.
-
-(A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
-
-## Liens
-
-- [ART-7 : Securite, controle d'acces](../chapitres/art-7.md)
+**Contenu normatif.** Ce composant applique le controle d'acces fin (RBAC/ABAC) aux donnees et services, selon le role, l'attribut et le contexte.
+**Discipline de mise en oeuvre.** L'acces aux donnees de sante est cloisonne par profil et finalite. Toute decision d'acces est journalisee.
+- **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../chapitres/art-7.md).
+- **Statut : Brouillon.**

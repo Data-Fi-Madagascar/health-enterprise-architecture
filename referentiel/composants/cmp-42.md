@@ -13,14 +13,8 @@ governs: ["CMP-01", "CMP-02", "CMP-03", "CMP-04", "CMP-05", "CMP-06", "CMP-07", 
 implements: ["ART-0", "F-4"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-42", "axe-gouvernance"]
 ---
-
 # CMP-42 : Comite national d'homologation
-
-## Contenu normatif.
-
-(A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
-
-## Liens
-
-- [ART-0 : Accords de partage](../chapitres/art-0.md)
-- [F.4 : Homologation](../fondations/f-4.md)
+**Contenu normatif.** Ce registre trace les decisions du comite national d'homologation des composants et services numeriques de sante.
+**Discipline de mise en oeuvre.** Aucun composant n'entre en production sans homologation. Le registre consigne l'etat et les conditions d'homologation.
+- **Rattachement** : [ART-0: Accords de partage inter-institutionnels](../chapitres/art-0.md), [F-4: Homologation obligatoire](../fondations/f-4.md).
+- **Statut : Brouillon.**

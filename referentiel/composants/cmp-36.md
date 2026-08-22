@@ -13,13 +13,8 @@ implements: ["ART-7"]
 uses: ["CMP-26", "CMP-27", "CMP-28", "CMP-29", "CMP-30", "CMP-31"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-36", "axe-securite"]
 ---
-
 # CMP-36 : Passerelle de confiance mondiale OMS (GDHCN)
-
-## Contenu normatif.
-
-(A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
-
-## Liens
-
-- [ART-7 : Securite, controle d'acces](../chapitres/art-7.md)
+**Contenu normatif.** Ce composant interconnecte le systeme avec la Gateway de confiance mondiale de l'OMS (GDHCN) pour la verification internationale des certificats de vaccination.
+**Discipline de mise en oeuvre.** Les echanges internationaux respectent les protocoles GDHCN et n'exposent que les donnees necessaires, signees et chiffrees.
+- **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../chapitres/art-7.md).
+- **Statut : Brouillon.**

@@ -13,13 +13,8 @@ implements: ["ART-7"]
 uses: ["CMP-26", "CMP-27", "CMP-28", "CMP-29", "CMP-30", "CMP-31"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-38", "axe-securite"]
 ---
-
 # CMP-38 : Moteur de chiffrement
-
-## Contenu normatif.
-
-(A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
-
-## Liens
-
-- [ART-7 : Securite, controle d'acces](../chapitres/art-7.md)
+**Contenu normatif.** Ce composant centralise les services de chiffrement (au repos et en transit) et la gestion des cles, pour l'ensemble du socle.
+**Discipline de mise en oeuvre.** Toutes les donnees de sante sont chiffrees par defaut. Les cles sont separees des donnees et protegees par la PKI.
+- **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../chapitres/art-7.md).
+- **Statut : Brouillon.**

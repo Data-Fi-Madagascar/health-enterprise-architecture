@@ -13,14 +13,8 @@ governs: ["CMP-01", "CMP-02", "CMP-03", "CMP-04", "CMP-05", "CMP-06", "CMP-07", 
 implements: ["ART-0", "F-4"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-39", "axe-gouvernance"]
 ---
-
 # CMP-39 : Registre des accords inter-institutions
-
-## Contenu normatif.
-
-(A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
-
-## Liens
-
-- [ART-0 : Accords de partage](../chapitres/art-0.md)
-- [F.4 : Homologation](../fondations/f-4.md)
+**Contenu normatif.** Ce registre de gouvernance tient a jour les accords de partage de donnees entre institutions (cadre juridique des echanges).
+**Discipline de mise en oeuvre.** Aucun echange inter-institutionnel n'a lieu sans accord reference. Le registre est la source de verite des engagements.
+- **Rattachement** : [ART-0: Accords de partage inter-institutionnels](../chapitres/art-0.md), [F-4: Homologation obligatoire](../fondations/f-4.md).
+- **Statut : Brouillon.**

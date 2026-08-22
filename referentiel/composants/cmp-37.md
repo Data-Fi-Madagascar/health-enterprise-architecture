@@ -13,13 +13,8 @@ implements: ["ART-7"]
 uses: ["CMP-26", "CMP-27", "CMP-28", "CMP-29", "CMP-30", "CMP-31"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-37", "axe-securite"]
 ---
-
 # CMP-37 : Journal d'audit immuable
-
-## Contenu normatif.
-
-(A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
-
-## Liens
-
-- [ART-7 : Securite, controle d'acces](../chapitres/art-7.md)
+**Contenu normatif.** Ce composant enregistre de facon immuable tous les evenements de securite et d'acces (journal d'audit).
+**Discipline de mise en oeuvre.** Les journaux sont horodates, signes et non alterables. Ils alimentent la tracabilite et l'investigation.
+- **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../chapitres/art-7.md).
+- **Statut : Brouillon.**

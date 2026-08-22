@@ -13,13 +13,8 @@ implements: ["ART-7"]
 uses: ["CMP-26", "CMP-27", "CMP-28", "CMP-29", "CMP-30", "CMP-31"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-32", "axe-securite"]
 ---
-
 # CMP-32 : Gestion des identites
-
-## Contenu normatif.
-
-(A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
-
-## Liens
-
-- [ART-7 : Securite, controle d'acces](../chapitres/art-7.md)
+**Contenu normatif.** Ce composant de securite gere les identites numeriques des acteurs, structures et dispositifs du systeme (IAM). Il est le point d'authentification unique et de federation d'identites.
+**Discipline de mise en oeuvre.** Toute entite accedant au systeme dispose d'une identite verifiee et d'un cycle de vie gere. L'identite du beneficiaire est resolue sans ambiguite.
+- **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../chapitres/art-7.md).
+- **Statut : Brouillon.**

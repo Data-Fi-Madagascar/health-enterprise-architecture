@@ -13,14 +13,8 @@ governs: ["CMP-01", "CMP-02", "CMP-03", "CMP-04", "CMP-05", "CMP-06", "CMP-07", 
 implements: ["ART-0", "F-4"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-45", "axe-gouvernance"]
 ---
-
 # CMP-45 : Cellule d'audit
-
-## Contenu normatif.
-
-(A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
-
-## Liens
-
-- [ART-0 : Accords de partage](../chapitres/art-0.md)
-- [F.4 : Homologation](../fondations/f-4.md)
+**Contenu normatif.** Ce registre consigne les audits de conformite et de securite des composants et de l'architecture.
+**Discipline de mise en oeuvre.** Les audits sont planifies et leurs recommandations suivies. Les ecarts sont remontes a l'arbitrage.
+- **Rattachement** : [ART-0: Accords de partage inter-institutionnels](../chapitres/art-0.md), [F-4: Homologation obligatoire](../fondations/f-4.md).
+- **Statut : Brouillon.**

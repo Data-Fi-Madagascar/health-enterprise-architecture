@@ -13,13 +13,8 @@ implements: ["ART-7"]
 uses: ["CMP-26", "CMP-27", "CMP-28", "CMP-29", "CMP-30", "CMP-31"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-34", "axe-securite"]
 ---
-
 # CMP-34 : Gestion des consentements
-
-## Contenu normatif.
-
-(A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
-
-## Liens
-
-- [ART-7 : Securite, controle d'acces](../chapitres/art-7.md)
+**Contenu normatif.** Ce composant gere le consentement des beneficiaires a l'echange et a l'utilisation de leurs donnees, par finalite et dans le temps.
+**Discipline de mise en oeuvre.** Aucune donnee a caractere personnel n'est partagee sans consentement enregistre et verifiable. Le retrait de consentement est effectif immediatement.
+- **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../chapitres/art-7.md).
+- **Statut : Brouillon.**

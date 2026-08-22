@@ -13,13 +13,8 @@ implements: ["ART-7"]
 uses: []
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-28", "couche-1"]
 ---
-
 # CMP-28 : Noeuds locaux (equipements chiffres : Edge)
-
-## Contenu normatif.
-
-(A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
-
-## Liens
-
-- [ART-7 : Securite, controle d'acces](../chapitres/art-7.md)
+**Contenu normatif.** Ce composant regroupe les equipements de bord (Edge) des structures de soins : terminaux, passerelles et boitiers chiffres assurant la collecte locale et le pre-traitement.
+**Discipline de mise en oeuvre.** Les equipements sont durcis, chiffres et authentifies au reseau. Ils fonctionnent hors ligne et se synchronisent a l'amont.
+- **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../chapitres/art-7.md).
+- **Statut : Brouillon.**

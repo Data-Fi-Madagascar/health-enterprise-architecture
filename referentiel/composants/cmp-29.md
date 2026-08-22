@@ -13,13 +13,8 @@ implements: ["ART-7"]
 uses: []
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-29", "couche-1"]
 ---
-
 # CMP-29 : Liaisons dediees & VPN
-
-## Contenu normatif.
-
-(A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
-
-## Liens
-
-- [ART-7 : Securite, controle d'acces](../chapitres/art-7.md)
+**Contenu normatif.** Ce composant etablit les liaisons dediees et les tunnels VPN securises entre structures, noeuds et partenaires.
+**Discipline de mise en oeuvre.** Tout transit inter-structure emprunte un canal authentifie et chiffre. Les cles sont gerees via la PKI.
+- **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../chapitres/art-7.md).
+- **Statut : Brouillon.**
