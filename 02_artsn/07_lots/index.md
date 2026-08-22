@@ -31,11 +31,11 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 | Axe 1 | Sécurité & confiance numérique | Identités, RBAC/ABAC, consentement, PKI, chiffrement, audit |
 | Axe 2 | Gouvernance de données | Accords inter-institutions, charte protection, comité homologation |
 
-## 1. Phases de déploiement
+## 1. Lots de déploiement
 
-### Phase 1 : Infrastructure & sécurité (T4 2026 – T2 2027) : 9 mois
+### Lot L1 : Infrastructure & sécurité (T4 2026 – T2 2027) : 9 mois
 
-**Priorité absolue.** Pas de système sans socle matériel ni sécurité. Cette phase pose les fondations physiques et transversales de toute la plateforme.
+**Priorité absolue.** Pas de système sans socle matériel ni sécurité. Cette lot pose les fondations physiques et transversales de toute la plateforme.
 
 | Composant | Couches | Responsables | Livrables | Critère de succès |
 |-----------|---------|--------------|-----------|-------------------|
@@ -48,11 +48,11 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 | **Référentiels de base** | Couche 4 | DNS | Registre terminologies (CIM-10, SNOMED CT, LOINC), registre personnels, registre produits | 500 termes mappés, 100% agents référencés |
 | **Serveur de sécurité X-Road** | Couche 3 | DNS, UGD | Security Server santé connecté au backbone X-Road UGD existant | Serveur opérationnel, prêt pour échanges inter-institutionnels |
 
-**Note** : L'infrastructure X-Road est déjà opérationnelle via l'UGD (Unité de Gouvernance Digitale). La phase 1 déploie uniquement le serveur de sécurité (Security Server) côté santé pour s'y connecter.
+**Note** : L'infrastructure X-Road est déjà opérationnelle via l'UGD (Unité de Gouvernance Digitale). La lot 1 déploie uniquement le serveur de sécurité (Security Server) côté santé pour s'y connecter.
 
 **Livrable clé** : Infrastructure opérationnelle + cadre de sécurité + référentiels de base.
 
-### Phase 2 : Applications terrain & collecte (T2 2027 – T4 2027) : 6 mois
+### Lot L2 : Applications terrain & collecte (T2 2027 – T4 2027) : 6 mois
 
 **Couche 2 : Point de service.** Déployer les applications de terrain qui captent les données au plus près des formations sanitaires, y compris en mode hors-ligne.
 
@@ -68,7 +68,7 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 
 **Livrable clé** : 5 applications terrain opérationnelles + couche transport asynchrone.
 
-### Phase 3 : Médiation & registres partagés (T4 2027 – T2 2028) : 6 mois
+### Lot L3 : Médiation & registres partagés (T4 2027 – T2 2028) : 6 mois
 
 **Couche 4 : Interopérabilité.** Centraliser les registres nationaux et orchestrer les parcours cliniques transversaux.
 
@@ -84,7 +84,7 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 
 **Livrable clé** : Médiation opérationnelle + 3 registres nationaux + premiers échanges inter-institutionnels.
 
-### Phase 4 : Analytique & pilotage (T2 2028 – T4 2028) : 6 mois
+### Lot L4 : Analytique & pilotage (T2 2028 – T4 2028) : 6 mois
 
 **Couche 5-6 : Projections analytiques & pilotage.** Construire la capacité analytique et les tableaux de bord décisionnels.
 
@@ -99,7 +99,7 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 
 **Livrable clé** : Entrepôt analytique + 3 modèles IA + tableaux de bord décisionnels.
 
-### Phase 5 : Extension & pérennisation (T4 2028 – T2 2029) : 6 mois
+### Lot L5 : Extension & pérennisation (T4 2028 – T2 2029) : 6 mois
 
 **Intégration complète et stabilisation.** Connecter les régions restantes, former, évaluer et assurer la pérennité.
 
@@ -107,7 +107,6 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 |-----------|---------|--------------|-----------|-------------------|
 | **Intégration RIS/RPS** | Couche 2-3 | DNS, Ministères | Connexion 22 RIS + 6 RPS | 100% régions connectées |
 | **DPI régional** | Couche 4 | DNS, Régions | DPI déployé dans 6 régions pilotes | 10 000 dossiers créés |
-| **Interopérabilité externe** | Couche 3 | DNS | Adhésion GDHCN, point de confiance nationale (Trust Anchor), accords bilatéraux SADC/UA, PT-14 déployé, service IPS (résumé patient) opérationnel, premier flux OMS AFRO testé | GDHCN opérationnel, 1 accord bilatéral signé, PT-14 opérationnel, IPS interopérable |
 | **Supervision** | Toutes | DNS | Monitoring centralisé, alertes | Disponibilité > 99,5% |
 | **Formation** | Toutes | DNS, INS | 500 professionnels formés | 90% taux de réussite |
 | **Évaluation** | Toutes | DNS, INS | Bilan annuel, recommandations | Rapport publié |
@@ -115,7 +114,17 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 
 **Livrable clé** : 22 régions connectées + DPI + formation + évaluation complète.
 
-### Phase 6 : Coordination One Health (T2 2029 – T4 2029) : 6 mois
+### Lot L6 : Interopérabilité transfrontalière & confiance internationale (T2 2029 – T4 2029) : 6 mois
+
+**Dimension transfrontalière.** Connecter la plateforme nationale aux échanges internationaux (résumé patient, confiance, accords régionaux) pour l'interopérabilité SADC/UA et la collaboration OMS AFRO.
+
+| Composant | Couches | Responsables | Livrables | Critère de succès |
+|-----------|---------|--------------|-----------|-------------------|
+| **Interopérabilité externe** | Couche 3 | DNS | Adhésion GDHCN, point de confiance nationale (Trust Anchor), accords bilatéraux SADC/UA, PT-14 déployé, service IPS (résumé patient) opérationnel, premier flux OMS AFRO testé | GDHCN opérationnel, 1 accord bilatéral signé, PT-14 opérationnel, IPS interopérable |
+
+**Livrable clé** : Adhésion GDHCN + premier flux transfrontalier + IPS interopérable.
+
+### Lot L7 : Coordination One Health (T2 2029 – T4 2029) : 6 mois
 
 **Dimension intersectorielle.** Déployer les échanges de données entre santé humaine, animale et environnement pour la surveillance et la riposte coordonnée.
 
@@ -132,28 +141,28 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 
 ## Note de rationalisation (composants phasés)
 
-Conformément à la *Note de rationalisation* de la cartographie cible, deux composants sont **repoussés en Phase 2** (post-roadmap, conditionnés à une initiative validante) car ils sont des patterns sans précédent en santé africaine :
+Conformément à la *Note de rationalisation* de la cartographie cible, deux composants sont **repoussés hors des lots L1–L7** (post-roadmap, conditionnés à une initiative validante) car ils sont des patterns sans précédent en santé africaine :
 
-- **CMP-05 — Moteur de graphes / Graph Store** (Couche 5, ART-8B) : reporté hors des phases 1–6 ; à réévaluer après une initiative graphe pilote.
+- **CMP-05 — Moteur de graphes / Graph Store** (Couche 5, ART-8B) : reporté hors des lots L1–L7 ; à réévaluer après une initiative graphe pilote.
 - **CMP-18 — Compensateur / Netting** (Couche 3, ART-8C) : reporté ; candidat à la fusion avec CMP-15/16/17 en *Pattern d'échange unifié*.
 
-Le **CMP-07 — Gestionnaire de Sagas** (Couche 4) fait l'objet d'une étude « Saga vs orchestration simple » avant généralisation. Ces reports ne bloquent aucune phase du présent roadmap.
+Le **CMP-07 — Gestionnaire de Sagas** (Couche 4) fait l'objet d'une étude « Saga vs orchestration simple » avant généralisation. Ces reports ne bloquent aucune lot du présent roadmap.
 
 ## 2. Jalons critiques
 
-| Jalon | Phase | Date | Responsable | Risque si retard |
+| Jalon | Lot | Date | Responsable | Risque si retard |
 |-------|-------|------|-------------|------------------|
-| **J1** : Décret CNASN + charte gouvernance | P1 | T4 2026 | Ministère | Blocage gouvernance |
-| **J2** : Data center national opérationnel | P1 | T1 2027 | DNS, STEG | Pas d'hébergement |
-| **J3** : Identité santé + sécurité | P1 | T2 2027 | DNS, ANM, CNRAC | Pas de confiance numérique |
-| **J4** : Serveur X-Road santé opérationnel | P1 | T1 2027 | DNS, UGD | Pas d'échanges inter-institutionnels |
-| **J5** : 22 hôpitaux connectés | P2 | T4 2027 | DNS, RIS | Pas de données terrain |
-| **J6** : Médiation + 3 registres | P3 | T2 2028 | DNS | Pas d'interopérabilité |
-| **J7** : 22 RIS + 6 RPS connectés | P5 | T4 2028 | DNS, Ministères | Données incomplètes |
-| **J8** : Audit indépendant | P5 | T2 2029 | INS | Pas de validation |
-| **J9** : Accords interministériels One Health | P6 | T2 2029 | DNS, MSP, MINAE, MEEF | Pas de coordination intersectorielle |
-| **J10** : PT-15 opérationnel | P6 | T4 2029 | DNS | Pas de surveillance One Health |
-| **J11** : PT-14 opérationnel (transfrontalier) | P5 | T2 2029 | DNS | Pas d'interopérabilité SADC/UA |
+| **J1** : Décret CNASN + charte gouvernance | L1 | T4 2026 | Ministère | Blocage gouvernance |
+| **J2** : Data center national opérationnel | L1 | T1 2027 | DNS, STEG | Pas d'hébergement |
+| **J3** : Identité santé + sécurité | L1 | T2 2027 | DNS, ANM, CNRAC | Pas de confiance numérique |
+| **J4** : Serveur X-Road santé opérationnel | L1 | T1 2027 | DNS, UGD | Pas d'échanges inter-institutionnels |
+| **J5** : 22 hôpitaux connectés | L2 | T4 2027 | DNS, RIS | Pas de données terrain |
+| **J6** : Médiation + 3 registres | L3 | T2 2028 | DNS | Pas d'interopérabilité |
+| **J7** : 22 RIS + 6 RPS connectés | L5 | T4 2028 | DNS, Ministères | Données incomplètes |
+| **J8** : Audit indépendant | L5 | T2 2029 | INS | Pas de validation |
+| **J9** : Accords interministériels One Health | L7 | T2 2029 | DNS, MSP, MINAE, MEEF | Pas de coordination intersectorielle |
+| **J10** : PT-15 opérationnel | L7 | T4 2029 | DNS | Pas de surveillance One Health |
+| **J11** : PT-14 opérationnel (transfrontalier) | L6 | T2 2029 | DNS | Pas d'interopérabilité SADC/UA |
 
 ## 3. Risques et mitigations
 
@@ -177,18 +186,20 @@ Le **CMP-07 — Gestionnaire de Sagas** (Couche 4) fait l'objet d'une étude « 
 
 ## 5. Budget estimé
 
-| Phase | Montant estimé (MGA) | Sources |
+| Lot | Montant estimé (MGA) | Sources |
 |-------|----------------------|---------|
-| Phase 1 : Infrastructure & sécurité | 25 milliards | État, BM, UE, BAD |
-| Phase 2 : Applications terrain | 20 milliards | BM, UE, coopération bilatérale |
-| Phase 3 : Médiation & registres | 18 milliards | BM, BAD, UE |
-| Phase 4 : Analytique & pilotage | 20 milliards | UE, AfDB, État |
-| Phase 5 : Extension & pérennisation | 15 milliards | État, fonds propres |
-| **Total** | **98 milliards** | |
+| Lot L1 : Infrastructure & sécurité | 25 milliards | État, BM, UE, BAD |
+| Lot L2 : Applications terrain | 20 milliards | BM, UE, coopération bilatérale |
+| Lot L3 : Médiation & registres | 18 milliards | BM, BAD, UE |
+| Lot L4 : Analytique & pilotage | 20 milliards | UE, AfDB, État |
+| Lot L5 : Extension & pérennisation | 10 milliards | État, fonds propres |
+| Lot L6 : Interopérabilité transfrontalière | 5 milliards | UE, coopération, OMS AFRO |
+| Lot L7 : Coordination One Health | À arbitrer | Multi-partenaires |
+| **Total** | **98 milliards + L7 à arbitrer** | |
 
 ## 6. Indicateurs de suivi
 
-| Indicateur | P1 (9 mois) | P2 (15 mois) | P3 (21 mois) | P4 (27 mois) | P5 (33 mois) |
+| Indicateur | L1 (9 mois) | L2 (15 mois) | L3 (21 mois) | L4 (27 mois) | L5 (33 mois) |
 |------------|-------------|--------------|--------------|--------------|--------------|
 | Data centers opérationnels | 2 | 2 | 2 | 2 | 2 |
 | Régions avec nœud régional | 6 | 6 | 6 | 6 | 6 |
@@ -203,19 +214,19 @@ Le **CMP-07 — Gestionnaire de Sagas** (Couche 4) fait l'objet d'une étude « 
 
 ## 7. Dépendances externes
 
-| Dépendance | Acteur | Phase | Statut | Action requise |
+| Dépendance | Acteur | Lot | Statut | Action requise |
 |------------|--------|-------|--------|----------------|
-| **Décret CNASN** | Ministère de la Santé | P1 | En attente | Solliciter publication T4 2026 |
-| **Budget infrastructure** | Ministère des Finances | P1 | Préparation | Dépôt dossier Q4 2026 |
-| **Accord BM** | Banque Mondiale | P1-P2 | Finalisation | Signature T1 2027 |
-| **Accord UE** | Délégation UE | P2-P3 | Négociation | Signature T2 2027 |
-| **Norme FHIR R4** | HL7 International | P3 | Validée | Adoption nationale |
-| **SNOMED CT** | SNOMED International | P1 | Licence | Obtention licence nationale |
-| **X-Road backbone** | UGD | P1 | ✅ Opérationnel | Déployer le serveur de sécurité santé (Security Server) et connecter au backbone UGD |
-| **Accords inter-institutions** | État civil, Finances, Éducation | P3 | En attente | Négociation P2 |
+| **Décret CNASN** | Ministère de la Santé | L1 | En attente | Solliciter publication T4 2026 |
+| **Budget infrastructure** | Ministère des Finances | L1 | Préparation | Dépôt dossier Q4 2026 |
+| **Accord BM** | Banque Mondiale | L1-L2 | Finalisation | Signature T1 2027 |
+| **Accord UE** | Délégation UE | L2-L3 | Négociation | Signature T2 2027 |
+| **Norme FHIR R4** | HL7 International | L3 | Validée | Adoption nationale |
+| **SNOMED CT** | SNOMED International | L1 | Licence | Obtention licence nationale |
+| **X-Road backbone** | UGD | L1 | ✅ Opérationnel | Déployer le serveur de sécurité santé (Security Server) et connecter au backbone UGD |
+| **Accords inter-institutions** | État civil, Finances, Éducation | L3 | En attente | Négociation L2 |
 
 ## 8. Prochaines étapes
 
-À l'horizon immédiate d'août à septembre 2026, la priorité consiste à présenter la feuille de route au Comité de pilotage, à valider le budget prévisionnel de la Phase 1 d'infrastructure, à lancer l'appel d'offres pour le data center national et à coordonner avec l'UGD le déploiement du serveur de sécurité X-Road santé. Sur la période court terme d'octobre à décembre 2026, l'équipe projet de huit personnes sera recrutée, l'environnement de développement sera déployé et la construction des nœuds régionaux sera amorcée. En milieu de parcours, au cours de l'année 2027, les jalons J1, J2 et J3 devront être atteints, les applications terrain de la Phase 2 lancées et les résultats de la Phase 1 évalués.
+À l'horizon immédiate d'août à septembre 2026, la priorité consiste à présenter la feuille de route au Comité de pilotage, à valider le budget prévisionnel de la Lot L1 d'infrastructure, à lancer l'appel d'offres pour le data center national et à coordonner avec l'UGD le déploiement du serveur de sécurité X-Road santé. Sur la période court terme d'octobre à décembre 2026, l'équipe projet de huit personnes sera recrutée, l'environnement de développement sera déployé et la construction des nœuds régionaux sera amorcée. En milieu de parcours, au cours de l'année 2027, les jalons J1, J2 et J3 devront être atteints, les applications terrain de la Lot L2 lancées et les résultats de la Lot L1 évalués.
 
 **Prochaine révision** : Septembre 2026
