@@ -132,6 +132,4 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 | [CAP-INT-14: Échanges intersectoriels One Health](../../referentiel/capacites/cap-int-14.md) | Capacité CNISN | Créée |
 | [CAP-18: Coordination intersectorielle (One Health)](../../referentiel/capabilites/cap-18.md) | Capabilité CAESN | Active |
 
-*Rattachement : CAP-INT-14, CAP-18, CAP-05, ART-11, ART-0, ART-4D, ART-8B, CMP-02, CMP-04, CMP-06 · fiche PT-15*
-
 <!-- END:GENERATED -->

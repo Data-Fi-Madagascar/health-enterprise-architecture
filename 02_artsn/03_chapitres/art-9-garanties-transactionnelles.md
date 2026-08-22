@@ -42,8 +42,6 @@ ART-9 : Garanties transactionnelles fortes constitue un chapitre du **cadre norm
 - **Déduit selon** : [ENF-2: Intégrité des flux et traçabilité des valeurs](../../referentiel/exigences/enf-2.md) (grade comptable anti-fraude).
 - **Statut : Proposition ouverte.**
 
-*Rattachement : ENF-2, CAP-07 · fiche ART-9*
-
 <!-- END:GENERATED -->
 ## Liens
 

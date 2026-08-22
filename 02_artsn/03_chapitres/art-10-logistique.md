@@ -41,8 +41,6 @@ ART-10 : Logistique constitue un chapitre du **cadre normatif opposable** de l'A
 - **Déduit selon** : [ENF-2: Intégrité des flux et traçabilité des valeurs](../../referentiel/exigences/enf-2.md) (traçabilité des valeurs).
 - **Statut : Provisoire.**
 
-*Rattachement : ENF-2, CAP-10, CAP-11 · fiche ART-10*
-
 <!-- END:GENERATED -->
 ## Liens
 

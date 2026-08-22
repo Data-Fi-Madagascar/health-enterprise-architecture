@@ -48,8 +48,6 @@ Ce chapitre se décline en quatre sous-chapitres :
 - [ART-4C: Éligibilité et couverture](../../referentiel/chapitres/art-4c.md)
 - [ART-4D: Référentiel géospatial et d’exploitation partagé](../../referentiel/chapitres/art-4d.md)
 
-*Rattachement : ENF-4, CAP-14 · fiche ART-4*
-
 <!-- END:GENERATED -->
 ## Liens
 

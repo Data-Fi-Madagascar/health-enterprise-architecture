@@ -69,8 +69,6 @@ Ce flux couvre l’ensemble du parcours d’un patient, depuis la reconnaissance
 - [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md)
 - [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md)
 
-*Rattachement : CAP-01, CAP-02, CAP-03, CAP-04, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-01, PP-02, PP-04, PP-05, PP-06, CAP-17 · fiche VS-01*
-
 <!-- END:GENERATED -->
 ## Étapes de valeur
 
@@ -103,8 +101,6 @@ Méconnaissance des services, distance géographique, coût perçu dissuasif
 
 Taux de recours aux soins, délai moyen d'accès à une formation sanitaire
 
-*Rattachement : CAP-01, CAP-04 · fiche VS-01-01*
-
 ### Accueil et enregistrement
 
 #### Objectif
@@ -130,8 +126,6 @@ Absence de registre, identité non vérifiable, files d'attente prolongées
 #### Indicateurs
 
 Taux de dossiers ouverts, délai d'enregistrement
-
-*Rattachement : CAP-01, CAP-14, CAP-15 · fiche VS-01-02*
 
 ### Consultation et diagnostic
 
@@ -159,8 +153,6 @@ Absence d'historique médical, rupture de stock d'intrants de diagnostic
 
 Taux de consultations avec diagnostic documenté
 
-*Rattachement : CAP-01, CAP-13 · fiche VS-01-03*
-
 ### Traitement et prise en charge
 
 #### Objectif
@@ -186,8 +178,6 @@ Ruptures de médicaments essentiels, absence de laboratoire fonctionnel
 #### Indicateurs
 
 Taux de disponibilité des médicaments traceurs
-
-*Rattachement : CAP-01, CAP-10, CAP-11 · fiche VS-01-04*
 
 ### Référence et contre-référence
 
@@ -215,8 +205,6 @@ Référence effectuée sans dossier, absence de transport, absence de retour d'i
 
 Taux de référence complétée avec retour d'information
 
-*Rattachement : CAP-02 · fiche VS-01-05*
-
 ### Suivi et continuité des soins
 
 #### Objectif
@@ -242,8 +230,6 @@ Perte de vue du patient, absence de système de rappel, dossier longitudinal abs
 #### Indicateurs
 
 Taux de patients perdus de vue, taux d'observance thérapeutique
-
-*Rattachement : CAP-01, CAP-02 · fiche VS-01-06*
 
 ### Amélioration de la qualité
 
@@ -271,8 +257,6 @@ Données collectées mais non analysées, absence de revue qualité régulière
 
 Proportion de formations sanitaires ayant réalisé une revue qualité dans le mois
 
-*Rattachement : CAP-03, CAP-13 · fiche VS-01-07*
-
 <!-- END:GENERATED -->
 ## Processus métier
 
@@ -298,8 +282,6 @@ Patient, famille, agent de santé communautaire, personnel d'accueil, registre p
 
 Taux de recours aux soins, délai moyen d'accès à une formation sanitaire, taux de dossiers ouverts, délai d'enregistrement
 
-*Rattachement : CAP-01, CAP-02, CAP-04, CAP-11, CAP-13, CAP-14, CAP-15, CMP-19, CMP-21, CMP-22 · fiche PRC-01*
-
 ### Prestation des soins cliniques
 
 #### Objectif
@@ -320,8 +302,6 @@ Clinicien, dossier patient, pharmacie, laboratoire, formation sanitaire référe
 
 Taux de consultations avec diagnostic documenté, taux de disponibilité des médicaments traceurs, taux de référence complétée avec retour d'information
 
-*Rattachement : CAP-01, CAP-03, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, CMP-19, CMP-20, CMP-21 · fiche PRC-02*
-
 ### Continuité, suivi et qualité des soins
 
 #### Objectif
@@ -340,8 +320,6 @@ Agent de santé communautaire, clinicien, patient, gestionnaire de formation san
 #### Indicateurs
 
 Taux de patients perdus de vue, taux d'observance thérapeutique, proportion de formations sanitaires ayant réalisé une revue qualité dans le mois
-
-*Rattachement : CAP-02, CAP-03, CAP-04, CAP-13, CAP-14, CAP-15, CMP-19, CMP-21 · fiche PRC-03*
 
 <!-- END:GENERATED -->
 ## Liens

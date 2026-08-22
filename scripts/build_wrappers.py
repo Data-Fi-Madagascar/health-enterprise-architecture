@@ -177,14 +177,6 @@ def rattachement_links(obj, path_by_id, to_dir):
     return labels
 
 
-def render_footer(obj, path_by_id, to_dir):
-    rattachements = rattachement_links(obj, path_by_id, to_dir)
-    fiche_id = obj["id"].upper()
-    if rattachements:
-        return "*Rattachement : %s · fiche %s*" % (", ".join(rattachements), fiche_id)
-    return "*Rattachement : — · fiche %s*" % fiche_id
-
-
 def badge_for(obj):
     """Badge de statut : uniquement candidate/deprecated (décision utilisateur)."""
     if obj["status"] in FACE:
@@ -209,7 +201,6 @@ def render_transclusion(obj, mode, path_by_id):
             parts.append(badge)
         if body.strip():
             parts.append(body.rstrip("\n"))
-        parts.append(render_footer(obj, path_by_id, to_dir))
         return "\n\n".join(parts)
     else:
         body = demote_headings(body)
@@ -219,7 +210,6 @@ def render_transclusion(obj, mode, path_by_id):
             parts.append(badge)
         if body.strip():
             parts.append(body.rstrip("\n"))
-        parts.append(render_footer(obj, path_by_id, to_dir))
         return "\n\n".join(parts).replace("\n\n\n", "\n\n")
 
 

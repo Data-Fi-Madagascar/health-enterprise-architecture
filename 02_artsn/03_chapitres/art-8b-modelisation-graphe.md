@@ -42,8 +42,6 @@ ART-8b : Modélisation de relations en graphe constitue un chapitre du **cadre n
 - **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (cloisonnement One Health).
 - **Statut : Proposition ouverte.**
 
-*Rattachement : ENF-4, CAP-13, CAP-14 · fiche ART-8B*
-
 <!-- END:GENERATED -->
 ## Liens
 

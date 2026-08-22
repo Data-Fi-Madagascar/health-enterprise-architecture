@@ -84,6 +84,4 @@ Les correspondances entre identifiants DHIS2 et identifiants nationaux doivent Ã
 
 ------------------------------------------------------------------------
 
-*Rattachement : CMP-08, CAP-INT-04, ART-4, ART-5, ART-6 Â· fiche PT-06*
-
 <!-- END:GENERATED -->

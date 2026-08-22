@@ -43,8 +43,6 @@ ART-6 : Analytique et restitution constitue un chapitre du **cadre normatif oppo
 - **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (protection One Health).
 - **Statut : Provisoire.**
 
-*Rattachement : ENF-4, CAP-13, CAP-08 · fiche ART-6*
-
 <!-- END:GENERATED -->
 ## Liens
 

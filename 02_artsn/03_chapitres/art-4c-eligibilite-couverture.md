@@ -42,8 +42,6 @@ ART-4c : Éligibilité et couverture constitue un chapitre du **cadre normatif o
 - **Déduit selon** : [ENF-2: Intégrité des flux et traçabilité des valeurs](../../referentiel/exigences/enf-2.md) (anti-fraude) et [ENF-1: Résilience à l'instabilité réseau](../../referentiel/exigences/enf-1.md) (autonomie locale).
 - **Statut : Proposition ouverte.**
 
-*Rattachement : ENF-2, ENF-1, CAP-07 · fiche ART-4C*
-
 <!-- END:GENERATED -->
 ## Liens
 

@@ -43,8 +43,6 @@ ART-5 : Cohérence et qualité des données constitue un chapitre du **cadre nor
 - **Déduit selon** : [ENF-5: Coordination des processus complexes décentralisés et asynchrones](../../referentiel/exigences/enf-5.md) (coordination des processus).
 - **Statut : Stable.** (pour les métriques) / **Statut : Proposition ouverte.** (pour la gouvernance des 4 branches).
 
-*Rattachement : ENF-5, CAP-13 · fiche ART-5*
-
 <!-- END:GENERATED -->
 ## Liens
 

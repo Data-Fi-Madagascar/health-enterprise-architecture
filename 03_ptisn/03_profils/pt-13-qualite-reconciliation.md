@@ -71,6 +71,4 @@ Les règles de qualité doivent rester :
 
 ------------------------------------------------------------------------
 
-*Rattachement : CMP-05, CAP-INT-11, ART-4, ART-5, ART-6 · fiche PT-13*
-
 <!-- END:GENERATED -->

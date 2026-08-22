@@ -157,6 +157,4 @@ Ce profil technique définit les standards, protocoles et configurations pour le
 | [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md) | Capabilité CAESN | Active |
 | [CAP-17: Engagement patient et identité numérique](../../referentiel/capabilites/cap-17.md) | Capabilité CAESN | Active |
 
-*Rattachement : CAP-INT-13, CAP-15, CAP-17, ART-7, ART-0, ART-1, CMP-06, CMP-15 · fiche PT-14*
-
 <!-- END:GENERATED -->

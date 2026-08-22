@@ -42,8 +42,6 @@ Il signifie qu’une règle non ambiguë doit déterminer :
 - comment elle est résolue ;
 - comment un conflit est arbitré.
 
-*Rattachement : CAP-14 · fiche P-INT-01*
-
 ### Résolution contre l’autorité
 
 Tout système utilisant une donnée de référence partagée doit résoudre cette donnée contre l’autorité désignée.
@@ -61,8 +59,6 @@ Les domaines concernés comprennent notamment :
 - les territoires ;
 - les droits et couvertures.
 
-*Rattachement : CAP-14 · fiche P-INT-02*
-
 ### Copies locales non autoritatives
 
 Des copies locales, caches, répliques ou extraits hors ligne peuvent être utilisés lorsque les besoins de performance, de résilience ou de connectivité le justifient.
@@ -79,8 +75,6 @@ Ces copies doivent être :
 
 Une copie locale ne doit pas devenir implicitement une nouvelle source faisant autorité.
 
-*Rattachement : CAP-14 · fiche P-INT-03*
-
 ### Historisation des références
 
 Toute donnée de référence susceptible d’évoluer doit être versionnée dans le temps.
@@ -95,8 +89,6 @@ Les correspondances entre deux référentiels doivent également être :
 - versionnées ;
 - datées ;
 - réconciliées.
-
-*Rattachement : CAP-14 · fiche P-INT-04*
 
 <!-- END:GENERATED -->
 ## Catégorie B : Contractualisation des échanges et services
@@ -129,8 +121,6 @@ Aucune intégration durable ne doit dépendre uniquement :
 - d’un accès direct non gouverné ;
 - d’une dépendance à une personne déterminée.
 
-*Rattachement : CAP-14 · fiche P-INT-05*
-
 ### Versionnement et compatibilité
 
 Tout contrat d’échange doit être versionné.
@@ -146,8 +136,6 @@ Avant toute évolution, les règles suivantes doivent être documentées :
 - responsabilités de mise à niveau.
 
 Aucune modification ne doit rompre silencieusement un système déjà intégré.
-
-*Rattachement : CAP-14 · fiche P-INT-06*
 
 ### Responsabilité de la donnée
 
@@ -173,8 +161,6 @@ Il convient de distinguer :
 - la projection analytique ;
 - la restitution.
 
-*Rattachement : CAP-13 · fiche P-INT-07*
-
 ### Publication au catalogue des services
 
 Tout service partagé ou exposé à plusieurs systèmes doit être enregistré dans le catalogue national ou sectoriel applicable.
@@ -195,8 +181,6 @@ L’enregistrement doit inclure :
 
 Un service non enregistré ne doit pas être considéré comme un service national ou sectoriel officiel.
 
-*Rattachement : CAP-14, CAP-16 · fiche P-INT-08*
-
 ### Publication des contrats
 
 Tout contrat d’interface, d’événement, de notification ou de fichier doit être publié dans un registre gouverné.
@@ -211,8 +195,6 @@ Ce registre doit permettre de connaître :
 - les consommateurs ;
 - les règles de compatibilité ;
 - les extensions nationales.
-
-*Rattachement : CAP-14, CAP-16 · fiche P-INT-09*
 
 <!-- END:GENERATED -->
 ## Catégorie C : Gouvernance interinstitutionnelle
@@ -241,8 +223,6 @@ Il doit préciser :
 
 Une intégration technique ne peut pas compenser l’absence d’un accord de gouvernance.
 
-*Rattachement : CAP-14 · fiche P-INT-10*
-
 ### Arbitrage des conflits d’autorité
 
 Toute divergence portant sur :
@@ -257,8 +237,6 @@ Toute divergence portant sur :
 doit être arbitrée par l’instance compétente.
 
 Elle ne doit pas être résolue durablement par un arrangement informel entre équipes techniques.
-
-*Rattachement : CAP-14 · fiche P-INT-11*
 
 ### Dérogation explicite
 
@@ -276,8 +254,6 @@ La dérogation doit préciser :
 - le responsable.
 
 Une dérogation non enregistrée constitue une non-conformité.
-
-*Rattachement : CAP-14, CAP-16 · fiche P-INT-12*
 
 ### Dérogation d’urgence
 
@@ -297,8 +273,6 @@ La dérogation d’urgence doit être :
 - retirée ;
 - mise en conformité ;
 - ou régularisée par une dérogation ordinaire.
-
-*Rattachement : CAP-14, CAP-16 · fiche P-INT-13*
 
 <!-- END:GENERATED -->
 ## Catégorie D : Sécurité, confiance et bases d’autorisation
@@ -321,8 +295,6 @@ Cette base peut notamment être :
 
 L’autorisation ne doit jamais être présumée uniquement parce qu’un système peut techniquement accéder à une donnée.
 
-*Rattachement : CAP-15 · fiche P-INT-14*
-
 ### Limitation à la finalité
 
 Une donnée obtenue pour une finalité ne doit pas être réutilisée pour une autre finalité sans :
@@ -342,8 +314,6 @@ Les droits d’accès doivent être limités selon :
 - la finalité ;
 - la durée.
 
-*Rattachement : CAP-15 · fiche P-INT-15*
-
 ### Résidence et non-réplication
 
 Toute contrainte de résidence doit être respectée.
@@ -358,8 +328,6 @@ Lorsqu’une donnée ne doit pas quitter son système ou son institution d’ori
 
 Une copie ne doit pas être créée uniquement parce qu’elle est techniquement possible.
 
-*Rattachement : CAP-14, CAP-15 · fiche P-INT-16*
-
 ### Minimisation
 
 Tout échange doit se limiter aux données nécessaires à la finalité déclarée.
@@ -373,8 +341,6 @@ Les contrats doivent distinguer :
 - les données directement identifiantes.
 
 Les données personnelles ou cliniques ne doivent pas être ajoutées à un flux agrégé sans nécessité démontrée.
-
-*Rattachement : CAP-15 · fiche P-INT-17*
 
 ### Traçabilité différenciée
 
@@ -393,8 +359,6 @@ Elles peuvent disposer :
 - de stockages distincts ;
 - de règles d’accès distinctes ;
 - de durées de conservation distinctes.
-
-*Rattachement : CAP-13, CAP-15 · fiche P-INT-18*
 
 <!-- END:GENERATED -->
 ## Catégorie E : Neutralité, réversibilité et progressivité
@@ -415,8 +379,6 @@ La conformité est évaluée à partir :
 
 L’utilisation d’un produit connu ou recommandé ne prouve pas automatiquement la conformité.
 
-*Rattachement : CAP-14 · fiche P-INT-19*
-
 ### Portabilité et réversibilité
 
 Toute initiative doit prévoir la possibilité de :
@@ -429,8 +391,6 @@ Toute initiative doit prévoir la possibilité de :
 - éviter les formats propriétaires non documentés.
 
 La stratégie de sortie doit être définie avant la mise en production des services critiques.
-
-*Rattachement : CAP-14 · fiche P-INT-20*
 
 ### Progressivité
 
@@ -451,8 +411,6 @@ Toute extension doit s’appuyer sur :
 - l’évaluation des bénéfices ;
 - l’évaluation du coût total de possession.
 
-*Rattachement : CAP-16 · fiche P-INT-21*
-
 ### Fonctionnement en connectivité contrainte
 
 Les services nationaux doivent prendre en compte les conditions réelles de connectivité.
@@ -466,8 +424,6 @@ Lorsqu’un usage doit fonctionner hors ligne ou avec une connectivité intermit
 - la sécurité locale ;
 - le traitement des opérations en attente ;
 - les conditions d’expiration.
-
-*Rattachement : CAP-14 · fiche P-INT-22*
 
 <!-- END:GENERATED -->
 ## Catégorie F : Conformité et homologation
@@ -491,8 +447,6 @@ Elle doit être démontrée par des preuves telles que :
 - décisions architecturales ;
 - dérogations approuvées.
 
-*Rattachement : CAP-16 · fiche P-INT-23*
-
 ### Applicabilité déclarée
 
 Toute initiative doit déclarer :
@@ -506,8 +460,6 @@ Toute initiative doit déclarer :
 
 L’absence d’applicabilité doit être justifiée lorsqu’un domaine semble directement concerné.
 
-*Rattachement : CAP-16 · fiche P-INT-24*
-
 ### Réévaluation continue
 
 La conformité doit être réévaluée lorsqu’intervient :
@@ -520,7 +472,5 @@ La conformité doit être réévaluée lorsqu’intervient :
 - un incident majeur ;
 - une modification de la base d’autorisation ;
 - l’expiration d’une dérogation.
-
-*Rattachement : CAP-16 · fiche P-INT-25*
 
 <!-- END:GENERATED -->

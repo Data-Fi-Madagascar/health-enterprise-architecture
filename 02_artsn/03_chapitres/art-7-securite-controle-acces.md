@@ -42,8 +42,6 @@ ART-7 : Sécurité, contrôle d'accès et résidence de la donnée constitue un 
 - **Déduit selon** : [ENF-1: Résilience à l'instabilité réseau](../../referentiel/exigences/enf-1.md) (sécurité locale).
 - **Statut : Stable.**
 
-*Rattachement : ENF-1, CAP-15 · fiche ART-7*
-
 <!-- END:GENERATED -->
 ## Liens
 

@@ -74,8 +74,6 @@ Permettre aux systèmes autorisés de relier plusieurs représentations d’un m
 - [P-INT-17: Minimisation](../../referentiel/principes/p-int-17.md)
 - [P-INT-18: Traçabilité différenciée](../../referentiel/principes/p-int-18.md)
 
-*Rattachement : P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-14, P-INT-15, P-INT-16, P-INT-17, P-INT-18, CAP-02, CAP-14 · fiche CAP-INT-01*
-
 ### Registre et résolution des professionnels de santé
 
 #### Finalité
@@ -111,8 +109,6 @@ Cette capacité est distincte :
 - [P-INT-14: Base d’autorisation explicite](../../referentiel/principes/p-int-14.md)
 - [P-INT-15: Limitation à la finalité](../../referentiel/principes/p-int-15.md)
 
-*Rattachement : P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-14, P-INT-15, CAP-09, CAP-14 · fiche CAP-INT-02*
-
 ### Référentiel des structures et services de santé
 
 #### Finalité
@@ -145,8 +141,6 @@ Fournir une autorité commune sur :
 - [P-INT-03: Copies locales non autoritatives](../../referentiel/principes/p-int-03.md)
 - [P-INT-04: Historisation des références](../../referentiel/principes/p-int-04.md)
 
-*Rattachement : P-INT-01, P-INT-02, P-INT-03, P-INT-04, CAP-11, CAP-13, CAP-14 · fiche CAP-INT-04*
-
 ### Terminologie et codification communes
 
 #### Finalité
@@ -173,8 +167,6 @@ Permettre aux systèmes de partager des définitions et codifications cohérente
 - [P-INT-04: Historisation des références](../../referentiel/principes/p-int-04.md)
 - [P-INT-05: Contrat explicite](../../referentiel/principes/p-int-05.md)
 - [P-INT-06: Versionnement et compatibilité](../../referentiel/principes/p-int-06.md)
-
-*Rattachement : P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-05, P-INT-06, CAP-13, CAP-14 · fiche CAP-INT-05*
 
 <!-- END:GENERATED -->
 
@@ -224,8 +216,6 @@ Permettre aux systèmes de transmettre, recevoir, transformer et acheminer des d
 - [P-INT-24: Applicabilité déclarée](../../referentiel/principes/p-int-24.md)
 - [P-INT-25: Réévaluation continue](../../referentiel/principes/p-int-25.md)
 
-*Rattachement : P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-10, P-INT-11, P-INT-12, P-INT-13, P-INT-18, P-INT-19, P-INT-20, P-INT-21, P-INT-22, P-INT-23, P-INT-24, P-INT-25, CAP-13, CAP-14 · fiche CAP-INT-03*
-
 ### Catalogue des services et registre des contrats
 
 #### Finalité
@@ -263,8 +253,6 @@ Rendre visibles, gouvernables et réutilisables les services et interfaces du se
 - [P-INT-23: Conformité fondée sur des preuves](../../referentiel/principes/p-int-23.md)
 - [P-INT-24: Applicabilité déclarée](../../referentiel/principes/p-int-24.md)
 - [P-INT-25: Réévaluation continue](../../referentiel/principes/p-int-25.md)
-
-*Rattachement : P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-23, P-INT-24, P-INT-25, CAP-14, CAP-16 · fiche CAP-INT-06*
 
 <!-- END:GENERATED -->
 
@@ -313,8 +301,6 @@ La conception interne des entrepôts, projections et modèles analytiques relèv
 - [P-INT-24: Applicabilité déclarée](../../referentiel/principes/p-int-24.md)
 - [P-INT-25: Réévaluation continue](../../referentiel/principes/p-int-25.md)
 
-*Rattachement : P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-17, P-INT-18, P-INT-19, P-INT-20, P-INT-21, P-INT-22, P-INT-23, P-INT-24, P-INT-25, CAP-05, CAP-13 · fiche CAP-INT-07*
-
 <!-- END:GENERATED -->
 
 ## Famille 4 : Confiance, sécurité et autorisation
@@ -352,8 +338,6 @@ Fournir les mécanismes nécessaires à l’identification, l’authentification
 - [P-INT-19: Neutralité technologique](../../referentiel/principes/p-int-19.md)
 - [P-INT-20: Portabilité et réversibilité](../../referentiel/principes/p-int-20.md)
 
-*Rattachement : P-INT-14, P-INT-15, P-INT-16, P-INT-17, P-INT-18, P-INT-19, P-INT-20, CAP-15 · fiche CAP-INT-08*
-
 ### Gestion des consentements et bases d’autorisation
 
 #### Finalité
@@ -383,8 +367,6 @@ Le consentement est une base possible parmi plusieurs bases légales ou fonction
 - [P-INT-16: Résidence et non-réplication](../../referentiel/principes/p-int-16.md)
 - [P-INT-17: Minimisation](../../referentiel/principes/p-int-17.md)
 
-*Rattachement : P-INT-14, P-INT-15, P-INT-16, P-INT-17, CAP-15 · fiche CAP-INT-09*
-
 ### Provenance, audit et traçabilité
 
 #### Finalité
@@ -413,8 +395,6 @@ Permettre de comprendre :
 - [P-INT-17: Minimisation](../../referentiel/principes/p-int-17.md)
 - [P-INT-18: Traçabilité différenciée](../../referentiel/principes/p-int-18.md)
 - [P-INT-23: Conformité fondée sur des preuves](../../referentiel/principes/p-int-23.md)
-
-*Rattachement : P-INT-07, P-INT-17, P-INT-18, P-INT-23, CAP-13, CAP-15 · fiche CAP-INT-10*
 
 <!-- END:GENERATED -->
 
@@ -456,8 +436,6 @@ Permettre de détecter et traiter les divergences entre systèmes, référentiel
 - [P-INT-24: Applicabilité déclarée](../../referentiel/principes/p-int-24.md)
 - [P-INT-25: Réévaluation continue](../../referentiel/principes/p-int-25.md)
 
-*Rattachement : P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-23, P-INT-24, P-INT-25, CAP-13, CAP-14 · fiche CAP-INT-11*
-
 ### Conformité et tests d’interopérabilité
 
 #### Finalité
@@ -490,8 +468,6 @@ Permettre de vérifier objectivement qu’un système respecte les contrats et p
 #### Réponse nationale
 
 La conformité ne se traduit pas par un service exposé mais par un **processus d’homologation** : cadre CNISN Partie IV, fondation F.4 (rattachement aux capacités) et dispositif CNASN. Les tests associés (validation de contrats, jeux de données, remédiation) sont portés par les profils et outils PTISN.
-
-*Rattachement : P-INT-19, P-INT-20, P-INT-21, P-INT-22, P-INT-23, P-INT-24, P-INT-25, CAP-14, CAP-16 · fiche CAP-INT-12*
 
 <!-- END:GENERATED -->
 
@@ -596,8 +572,6 @@ Madagascar est membre de l'Union Africaine (UA), de la Commission Économique de
 - [ART-0](../../referentiel/chapitres/art-0.md) (Accords de partage inter-institutionnels)
 - [PT-14](../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md) (Profil technique transfrontalier — IPS)
 
-*Rattachement : P-INT-01, P-INT-05, P-INT-10, P-INT-14, P-INT-16, P-INT-17, P-INT-19, CAP-15 · fiche CAP-INT-13*
-
 <!-- END:GENERATED -->
 
 ## Famille 7 : Échanges intersectoriels One Health
@@ -692,8 +666,6 @@ Les secteurs concernés :
 - [ART-4d](../../referentiel/chapitres/art-4d.md) (Référentiel géospatial)
 - [F.2](../../referentiel/fondations/f-2.md) (Souveraineté intersectorielle)
 - [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (Cloisonnement inter-institutionnel One Health)
-
-*Rattachement : P-INT-01, P-INT-05, P-INT-10, P-INT-14, P-INT-16, P-INT-22 · fiche CAP-INT-14*
 
 <!-- END:GENERATED -->
 

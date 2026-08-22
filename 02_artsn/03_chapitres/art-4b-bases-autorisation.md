@@ -42,8 +42,6 @@ ART-4b : Bases d'autorisation constitue un chapitre du **cadre normatif opposabl
 - **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (protection One Health).
 - **Statut : Provisoire.**
 
-*Rattachement : ENF-4, CAP-15 · fiche ART-4B*
-
 <!-- END:GENERATED -->
 ## Liens
 

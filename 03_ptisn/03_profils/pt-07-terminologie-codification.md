@@ -90,6 +90,4 @@ L’adoption d’une terminologie internationale doit être précédée d’une 
 
 ------------------------------------------------------------------------
 
-*Rattachement : CMP-10, CAP-INT-05, ART-2, ART-4, ART-5 · fiche PT-07*
-
 <!-- END:GENERATED -->

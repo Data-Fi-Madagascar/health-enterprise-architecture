@@ -41,8 +41,6 @@ ART-1 : Intégration et ingestion constitue un chapitre du **cadre normatif oppo
 - **Déduit selon** : [ENF-1: Résilience à l'instabilité réseau](../../referentiel/exigences/enf-1.md) (instabilité réseau).
 - **Statut : Stable.**
 
-*Rattachement : ENF-1, CAP-14 · fiche ART-1*
-
 <!-- END:GENERATED -->
 ## Liens
 

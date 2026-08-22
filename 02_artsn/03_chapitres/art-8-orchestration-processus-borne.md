@@ -46,8 +46,6 @@ Ce chapitre se décline en quatre sous-chapitres :
 - [ART-8C: Agrégation par lot](../../referentiel/chapitres/art-8c.md)
 - [ART-8D: Chorégraphie inter-institutionnelle](../../referentiel/chapitres/art-8d.md)
 
-*Rattachement : CAP-13, CAP-14 · fiche ART-8*
-
 <!-- END:GENERATED -->
 ## Liens
 

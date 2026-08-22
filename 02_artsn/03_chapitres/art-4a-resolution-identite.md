@@ -42,8 +42,6 @@ ART-4a : Résolution d'identité constitue un chapitre du **cadre normatif oppos
 - **Déduit selon** : [ENF-3: Unicité de l'identité et résilience face à la fragmentation applicative](../../referentiel/exigences/enf-3.md) (unicité de l’identité).
 - **Statut : Provisoire.**
 
-*Rattachement : ENF-3, CAP-04 · fiche ART-4A*
-
 <!-- END:GENERATED -->
 ## Liens
 

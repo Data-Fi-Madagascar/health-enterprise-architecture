@@ -41,8 +41,6 @@ ART-4d : Référentiel géospatial et d'exploitation partagé constitue un chapi
 - **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (cloisonnement inter-institutionnel).
 - **Statut : Proposition ouverte.**
 
-*Rattachement : ENF-4 · fiche ART-4D*
-
 <!-- END:GENERATED -->
 ## Liens
 

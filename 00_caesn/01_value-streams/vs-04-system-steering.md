@@ -65,8 +65,6 @@ Ce flux transversal conditionne l’efficacité de tous les autres. Il couvre l�
 - [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md)
 - [CAP-16: Gestion du portefeuille d'initiatives numériques](../../referentiel/capabilites/cap-16.md)
 
-*Rattachement : CAP-03, CAP-08, CAP-09, CAP-12, CAP-13, CAP-14, CAP-15, CAP-16, PP-03, PP-07, PP-08, PP-09, PP-10 · fiche VS-04*
-
 <!-- END:GENERATED -->
 ## Étapes de valeur
 
@@ -99,8 +97,6 @@ Plans élaborés sans données probantes, non-alignés sur les stratégies
 
 Proportion de plans opérationnels alignés sur le PDSS et la SNSD
 
-*Rattachement : CAP-08, CAP-16 · fiche VS-04-01*
-
 ### Budgétisation et allocation des ressources
 
 #### Objectif
@@ -126,8 +122,6 @@ Sous-financement chronique, allocations non basées sur les besoins réels
 #### Indicateurs
 
 Taux d'exécution budgétaire, part du budget national allouée à la santé
-
-*Rattachement : CAP-12, CAP-08 · fiche VS-04-02*
 
 ### Coordination des acteurs et alignement des partenaires
 
@@ -155,8 +149,6 @@ Fragmentation des interventions, coordination insuffisante
 
 Proportion d'initiatives partenaires alignées sur le portefeuille national
 
-*Rattachement : CAP-08, CAP-16 · fiche VS-04-03*
-
 ### Suivi de l'exécution
 
 #### Objectif
@@ -182,8 +174,6 @@ Données incomplètes ou hors délais, tableaux de bord non utilisés
 #### Indicateurs
 
 Complétude et promptitude des rapports, taux d'utilisation des tableaux de bord
-
-*Rattachement : CAP-13, CAP-08 · fiche VS-04-04*
 
 ### Analyse de la performance et prise de décision
 
@@ -211,8 +201,6 @@ Décisions sans appui sur les données, revues irrégulières
 
 Nombre de revues de performance, proportion de décisions documentées
 
-*Rattachement : CAP-13, CAP-08 · fiche VS-04-05*
-
 ### Redevabilité et communication publique
 
 #### Objectif
@@ -238,8 +226,6 @@ Absence de rapport public annuel, faible transparence
 #### Indicateurs
 
 Existence et publication de rapports annuels de performance
-
-*Rattachement : CAP-08, CAP-13 · fiche VS-04-06*
 
 ### Amélioration continue
 
@@ -267,8 +253,6 @@ Recommandations non mises en œuvre, absence de cycle structuré
 
 Proportion de recommandations mises en œuvre, évolution de la maturité des capabilités
 
-*Rattachement : CAP-03, CAP-16, CAP-08 · fiche VS-04-07*
-
 <!-- END:GENERATED -->
 ## Processus métier
 
@@ -295,8 +279,6 @@ Ministère, directions techniques, régions, districts, Direction des affaires f
 
 Proportion de plans opérationnels alignés sur le PDSS et la SNSD, taux d'exécution budgétaire, part du budget national allouée à la santé, proportion d'initiatives partenaires alignées sur le portefeuille national
 
-*Rattachement : CAP-08, CAP-09, CAP-12, CAP-13, CAP-15, CAP-16, CMP-01, CMP-12, CMP-23 · fiche PRC-10*
-
 ### Suivi et pilotage de la performance
 
 #### Objectif
@@ -316,8 +298,6 @@ Directions techniques, régions, districts, SIS, comités de pilotage
 
 Complétude et promptitude des rapports, taux d'utilisation des tableaux de bord, nombre de revues de performance, proportion de décisions documentées
 
-*Rattachement : CAP-03, CAP-08, CAP-13, CAP-14, CAP-15, CAP-16, CMP-01, CMP-02, CMP-03, CMP-25 · fiche PRC-11*
-
 ### Redevabilité et amélioration continue
 
 #### Objectif
@@ -336,8 +316,6 @@ Ministère, Parlement, société civile, partenaires, Bureau de réalisation de 
 #### Indicateurs
 
 Existence et publication de rapports annuels de performance, proportion de recommandations mises en œuvre, évolution de la maturité des capabilités
-
-*Rattachement : CAP-03, CAP-08, CAP-13, CAP-14, CAP-15, CAP-16, CMP-01 · fiche PRC-12*
 
 <!-- END:GENERATED -->
 ## Liens

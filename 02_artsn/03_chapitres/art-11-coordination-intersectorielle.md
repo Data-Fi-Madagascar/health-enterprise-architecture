@@ -41,8 +41,6 @@ ART-11 : Coordination intersectorielle constitue un chapitre du **cadre normatif
 - **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (cloisonnement inter-institutionnel One Health).
 - **Statut : Stable.**
 
-*Rattachement : ENF-4, CAP-08, CAP-18, CAP-INT-14 · fiche ART-11*
-
 <!-- END:GENERATED -->
 ## Liens
 

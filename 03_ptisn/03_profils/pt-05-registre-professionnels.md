@@ -90,6 +90,4 @@ Un utilisateur authentifié ne doit pas être considéré comme professionnel ha
 
 ------------------------------------------------------------------------
 
-*Rattachement : CMP-13, CAP-INT-02, ART-4, ART-4A, ART-7 · fiche PT-05*
-
 <!-- END:GENERATED -->

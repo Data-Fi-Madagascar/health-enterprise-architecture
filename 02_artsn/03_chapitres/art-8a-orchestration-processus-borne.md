@@ -42,8 +42,6 @@ ART-8a : Orchestration de processus borné constitue un chapitre du **cadre norm
 - **Déduit selon** : [ENF-5: Coordination des processus complexes décentralisés et asynchrones](../../referentiel/exigences/enf-5.md) (processus complexes).
 - **Statut : Provisoire.**
 
-*Rattachement : ENF-5, CAP-13, CAP-14 · fiche ART-8A*
-
 <!-- END:GENERATED -->
 ## Liens
 

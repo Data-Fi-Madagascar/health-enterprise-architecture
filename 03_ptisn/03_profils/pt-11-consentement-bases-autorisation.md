@@ -68,6 +68,4 @@ Selon le contexte, un traitement peut reposer sur :
 
 ------------------------------------------------------------------------
 
-*Rattachement : CMP-12, CAP-INT-09, ART-0, ART-4B, ART-7, ART-11 · fiche PT-11*
-
 <!-- END:GENERATED -->

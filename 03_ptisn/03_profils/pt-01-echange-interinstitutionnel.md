@@ -81,6 +81,4 @@ Le service national d’échange ne remplace pas :
 
 ------------------------------------------------------------------------
 
-*Rattachement : CMP-06, CAP-INT-03, ART-0, ART-1, ART-7, ART-11 · fiche PT-01*
-
 <!-- END:GENERATED -->

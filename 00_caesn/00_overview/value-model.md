@@ -117,8 +117,6 @@ Recevoir des soins accessibles, sûrs, continus et de qualité
 - **Du système envers la partie prenante** : lui offrir un dossier patient portable, un accès sécurisé à ses données et une prise en charge continue sans rupture entre les structures.
 - **De la partie prenante envers le système** : fournir une identité fiable, consentir aux échanges de données et respecter les règles d'usage des services numériques.
 
-*Rattachement : — · fiche PP-01*
-
 ### Ménage et famille
 
 #### Rôle dans le système
@@ -157,8 +155,6 @@ Accéder aux soins sans appauvrissement ni dépenses catastrophiques
 
 - **Du système envers la partie prenante** : rendre vérifiables les droits d'exemption et de couverture au point de service et garantir la traçabilité des mécanismes de facturation et de remboursement.
 - **De la partie prenante envers le système** : fournir les informations d'identité et de couverture nécessaires et conserver les justificatifs pour les mécanismes de remboursement.
-
-*Rattachement : — · fiche PP-02*
 
 ### Population
 
@@ -199,8 +195,6 @@ La population est l'ensemble des habitants que le système de santé numérique 
 - **Du système envers la partie prenante** : assurer une surveillance précoce, alerter en temps utile et publier des données de santé publique fiables et réutilisables.
 - **De la partie prenante envers le système** : participer à la déclaration des événements sanitaires et respecter les recommandations de prévention et de vaccination.
 
-*Rattachement : — · fiche PP-03*
-
 ### Communauté
 
 #### Rôle dans le système
@@ -239,8 +233,6 @@ Participer à la santé et accéder à des services de proximité
 
 - **Du système envers la partie prenante** : fournir des canaux de remontée d'information, des référentiels partagés et des outils de proximité fonctionnant en connectivité contrainte.
 - **De la partie prenante envers le système** : alimenter les données communautaires de façon fiable et orienter les membres vers les structures de soins appropriées.
-
-*Rattachement : — · fiche PP-04*
 
 ### Agent de santé
 
@@ -282,8 +274,6 @@ Disposer des ressources, compétences, outils et informations nécessaires
 - **Du système envers la partie prenante** : lui fournir des outils nomades, des référentiels à jour et un accès aux données patient nécessaires à la décision, même en connectivité dégradée.
 - **De la partie prenante envers le système** : tenir à jour son enregistrement professionnel, saisir des données de qualité et respecter les règles d'accès et de confidentialité.
 
-*Rattachement : — · fiche PP-05*
-
 ### Formation sanitaire
 
 #### Rôle dans le système
@@ -323,8 +313,6 @@ Avoir les intrants, ressources humaines, équipements et données nécessaires
 
 - **Du système envers la partie prenante** : le système doit lui fournir un accès fiable aux référentiels nationaux (structures, terminologie, équipements), aux outils de déclaration et de gestion des stocks, et fonctionner en connectivité contrainte.
 - **De la partie prenante envers le système** : la formation sanitaire doit déclarer des données exactes et à temps, respecter les référentiels nationaux et alimenter le SIS selon les contrats d'échange définis.
-
-*Rattachement : — · fiche PP-06*
 
 ### District, région et Ministère
 
@@ -366,8 +354,6 @@ Piloter, coordonner et améliorer la performance sur la base de données fiables
 - **Du système envers la partie prenante** : le système doit fournir des tableaux de bord fiables, des données réconciliées et traçables, et des outils de pilotage interopérables aux échelons territoriaux.
 - **De la partie prenante envers le système** : les échelons doivent alimenter le SIS de façon exacte, respecter les référentiels nationaux et arbitrer les ressources selon la valeur produite.
 
-*Rattachement : — · fiche PP-07*
-
 ### Partenaires techniques et financiers
 
 #### Rôle dans le système
@@ -406,8 +392,6 @@ Aligner leurs investissements sur les priorités nationales et vérifier les ré
 
 - **Du système envers la partie prenante** : le système doit offrir une visibilité sur le portefeuille national, des données de résultats traçables et un cadre d'homologation clair.
 - **De la partie prenante envers le système** : les partenaires doivent aligner leurs investissements sur les priorités nationales, contribuer au portefeuille sans le fragmenter et respecter la souveraineté et l'homologation.
-
-*Rattachement : — · fiche PP-08*
 
 ### Décideurs institutionnels
 
@@ -448,8 +432,6 @@ Définir les priorités, arbitrer les ressources et rendre compte des résultats
 - **Du système envers la partie prenante** : le système doit fournir une vision consolidée et traçable de la performance, du portefeuille et de la sécurité, appuyée sur des données fiables et réutilisables.
 - **De la partie prenante envers le système** : les décideurs doivent définir les priorités par la valeur, respecter le cadre national et l'homologation, et rendre compte sur la base de données réutilisables.
 
-*Rattachement : — · fiche PP-09*
-
 ### Équipes techniques (DEPSI / SIS)
 
 #### Rôle dans le système
@@ -489,8 +471,6 @@ Concevoir, opérer et fiabiliser les systèmes numériques au service des flux d
 
 - **Du système envers la partie prenante** : le cadre doit leur fournir des référentiels stables, des normes claires et un processus d'homologation, afin d'opérer sans dépendance externe permanente.
 - **De la partie prenante envers le système** : les équipes doivent concevoir des systèmes interopérables par conception, fiabiliser les données, garantir la sécurité et respecter les contrats ART et le cadre national.
-
-*Rattachement : — · fiche PP-10*
 
 <!-- END:GENERATED -->
 ## Liens

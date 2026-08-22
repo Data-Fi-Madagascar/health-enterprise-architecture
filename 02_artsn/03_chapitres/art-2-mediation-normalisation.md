@@ -41,8 +41,6 @@ ART-2 : Médiation et normalisation constitue un chapitre du **cadre normatif op
 - **Déduit selon** : [ENF-3: Unicité de l'identité et résilience face à la fragmentation applicative](../../referentiel/exigences/enf-3.md) (fragmentation applicative) et [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (One Health).
 - **Statut : Stable.**
 
-*Rattachement : ENF-3, ENF-4, CAP-14 · fiche ART-2*
-
 <!-- END:GENERATED -->
 ## Liens
 

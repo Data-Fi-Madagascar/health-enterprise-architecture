@@ -115,6 +115,4 @@ Le lien entre les deux doit être gouverné, sécurisé et limité à une finali
 
 ------------------------------------------------------------------------
 
-*Rattachement : CMP-11, CAP-INT-01, ART-4, ART-4A, ART-4B, ART-7 · fiche PT-04*
-
 <!-- END:GENERATED -->

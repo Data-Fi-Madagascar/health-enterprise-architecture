@@ -64,8 +64,6 @@ Ce flux couvre l’ensemble du cycle de la couverture santé universelle, depuis
 - [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md)
 - [CAP-16: Gestion du portefeuille d'initiatives numériques](../../referentiel/capabilites/cap-16.md)
 
-*Rattachement : CAP-07, CAP-08, CAP-12, CAP-13, CAP-14, CAP-15, CAP-16, PP-02, PP-03, PP-06 · fiche VS-03*
-
 <!-- END:GENERATED -->
 ## Étapes de valeur
 
@@ -98,8 +96,6 @@ Absence d'identifiant unique national, exclusions liées à la méconnaissance d
 
 Taux de couverture du registre, taux d'exclusion estimé
 
-*Rattachement : CAP-07, CAP-14, CAP-15 · fiche VS-03-01*
-
 ### Définition des droits et du panier de soins
 
 #### Objectif
@@ -125,8 +121,6 @@ Méconnaissance des droits par les agents, panier de soins non communiqué
 #### Indicateurs
 
 Proportion de formations sanitaires informées des droits
-
-*Rattachement : CAP-07 · fiche VS-03-02*
 
 ### Mobilisation des financements
 
@@ -154,8 +148,6 @@ Retards de décaissement, imprévisibilité chronique du financement
 
 Taux d'exécution budgétaire, part du budget santé allouée à la protection financière
 
-*Rattachement : CAP-12, CAP-08 · fiche VS-03-03*
-
 ### Prise en charge et exemption au point de service
 
 #### Objectif
@@ -181,8 +173,6 @@ Refus de soins, paiement informel, formation non approvisionnée en intrants
 #### Indicateurs
 
 Taux d'exemption appliqué, taux de refus de soins signalés
-
-*Rattachement : CAP-07, CAP-15 · fiche VS-03-04*
 
 ### Facturation et traitement des demandes de remboursement
 
@@ -210,8 +200,6 @@ Facturation incorrecte, absence de justificatifs, risques de fraude
 
 Taux de factures rejetées, délai de validation des factures
 
-*Rattachement : CAP-07, CAP-13 · fiche VS-03-05*
-
 ### Remboursement
 
 #### Objectif
@@ -237,8 +225,6 @@ Retards chroniques de remboursement, insuffisance de liquidités
 #### Indicateurs
 
 Délai moyen de remboursement, taux de remboursement effectif
-
-*Rattachement : CAP-07, CAP-12 · fiche VS-03-06*
 
 ### Contrôle, audit et ajustement des mécanismes
 
@@ -266,8 +252,6 @@ Absence de contrôle structuré, données de remboursement non exploitées
 
 Proportion de contrôles réalisés, montant des anomalies détectées
 
-*Rattachement : CAP-08, CAP-13, CAP-16 · fiche VS-03-07*
-
 <!-- END:GENERATED -->
 ## Processus métier
 
@@ -293,8 +277,6 @@ Districts sanitaires, communes, fokontany, gestionnaires du registre, Ministère
 
 Taux de couverture du registre, taux d'exclusion estimé, proportion de formations sanitaires informées des droits
 
-*Rattachement : CAP-07, CAP-08, CAP-13, CAP-14, CAP-15, CAP-17, CMP-09, CMP-10, CMP-16, CMP-22 · fiche PRC-07*
-
 ### Financement et exemption au point de service
 
 #### Objectif
@@ -313,8 +295,6 @@ Ministère de l'Économie et des Finances, Ministère de la Santé, partenaires,
 #### Indicateurs
 
 Taux d'exécution budgétaire, part du budget santé allouée à la protection financière, taux d'exemption appliqué, taux de refus de soins signalés
-
-*Rattachement : CAP-07, CAP-08, CAP-12, CAP-13, CAP-15, CAP-16, CMP-09, CMP-10, CMP-16, CMP-22 · fiche PRC-08*
 
 ### Remboursement et régulation des mécanismes
 
@@ -335,8 +315,6 @@ Gestionnaire de la formation sanitaire, vérificateur, fonds de remboursement, f
 #### Indicateurs
 
 Taux de factures rejetées, délai de validation des factures, délai moyen de remboursement, taux de remboursement effectif, proportion de contrôles réalisés, montant des anomalies détectées
-
-*Rattachement : CAP-07, CAP-12, CAP-13, CAP-14, CAP-15, CMP-03, CMP-04, CMP-12 · fiche PRC-09*
 
 <!-- END:GENERATED -->
 ## Liens

@@ -117,6 +117,4 @@ L'orchestrateur ([PT-16: Orchestration de processus bornés](../../referentiel/p
 
 ------------------------------------------------------------------------
 
-*Rattachement : CMP-07, CMP-06, CAP-INT-03, ART-8A, ART-7 · fiche PT-16*
-
 <!-- END:GENERATED -->

@@ -42,8 +42,6 @@ ART-8c : Agrégation par lot constitue un chapitre du **cadre normatif opposable
 - **Déduit selon** : [ENF-1: Résilience à l'instabilité réseau](../../referentiel/exigences/enf-1.md) (réseau instable) et [ENF-2: Intégrité des flux et traçabilité des valeurs](../../referentiel/exigences/enf-2.md) (anti-fraude).
 - **Statut : Proposition ouverte.**
 
-*Rattachement : ENF-1, ENF-2, CAP-13, CAP-14 · fiche ART-8C*
-
 <!-- END:GENERATED -->
 ## Liens
 

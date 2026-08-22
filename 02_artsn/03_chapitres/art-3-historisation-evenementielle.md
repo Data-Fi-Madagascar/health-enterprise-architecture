@@ -46,8 +46,6 @@ ART-3 : Historisation événementielle et profils de déploiement constitue un c
 - **Déduit selon** : [ENF-1: Résilience à l'instabilité réseau](../../referentiel/exigences/enf-1.md) (mode déconnecté).
 - **Statut : Stable.**
 
-*Rattachement : ENF-1, CAP-13 · fiche ART-3*
-
 <!-- END:GENERATED -->
 ## Liens
 

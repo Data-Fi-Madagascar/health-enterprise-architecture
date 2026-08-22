@@ -65,8 +65,6 @@ La connectivité internet et mobile reste asymétrique, intermittente ou absente
 - **ART-8c** — Agrégation par lot
 - **ART-4c** — Éligibilité et couverture
 
-*Rattachement : — · fiche ENF-1*
-
 ### Intégrité des flux et traçabilité des valeurs
 
 **Contenu normatif.** Le déploiement national de la gratuité ciblée, des subventions de l’État et des mécanismes de la Couverture Santé Universelle (CSU) présente un risque systémique élevé de fraude, de double facturation, de falsification d’ordonnances et de détournement de stocks. L’architecture doit interdire toute modification, suppression ou altération rétroactive des transactions logistiques et financières validées. Tout mouvement de valeur (Ariary ou unités physiques de médicaments) doit obéir à des règles strictes de **double écriture comptable** et de **conservation de quantité** (Entrées − Sorties = Solde), garantissant une réconciliation exacte à somme nulle.
@@ -96,8 +94,6 @@ Le déploiement national de la gratuité ciblée, des subventions et de la CSU c
 - **ART-4c** — Éligibilité et couverture
 - **ART-8c** — Agrégation par lot
 
-*Rattachement : — · fiche ENF-2*
-
 ### Unicité de l’identité et résilience face à la fragmentation applicative
 
 **Contraintes contextuelles.** Le paysage numérique historique est caractérisé par une dispersion de solutions logicielles et de bases de données isolées. Un même citoyen possède des fiches cliniques, des dossiers et des identifiants locaux différents selon les hôpitaux ou les programmes verticaux (Malariologie, Tuberculose, Vaccination), ce qui menace la sécurité des soins et empêche le suivi médical longitudinal.
@@ -126,8 +122,6 @@ Le paysage numérique historique est marqué par une dispersion de solutions et 
 
 - **ART-4a** — Résolution d'identité
 - [ART-2: Médiation et normalisation](../../referentiel/chapitres/art-2.md) — Médiation et normalisation
-
-*Rattachement : — · fiche ENF-3*
 
 ### Cloisonnement inter-institutionnel et étanchéité des données (One Health)
 
@@ -166,8 +160,6 @@ Le croisement de données massives entre Santé, Agriculture/Élevage et Environ
 - **ART-8d** — Chorégraphie inter-institutionnelle
 - [ART-4: Référentiels de métadonnées de gestion](../../referentiel/chapitres/art-4.md) — Référentiels de métadonnées de gestion
 
-*Rattachement : — · fiche ENF-4*
-
 ### Coordination des processus complexes décentralisés et asynchrones
 
 **Contraintes contextuelles.** Les parcours de soins critiques (référence d'un CSB rural vers un hôpital de district, contre-référence ascendante vers un CHU central, ou évacuation sanitaire internationale) s'étendent sur des fenêtres temporelles de plusieurs jours et impliquent des structures sanitaires autonomes sans lien hiérarchique ou technique direct.
@@ -198,8 +190,6 @@ Les parcours de soins critiques s’étendent sur plusieurs jours et impliquent 
 - [ART-8: Orchestration de processus](../../referentiel/chapitres/art-8.md) — Orchestration de processus
 - [ART-5: Cohérence et qualité des données](../../referentiel/chapitres/art-5.md) — Cohérence et qualité des données
 - [PT-14: Interopérabilité transfrontalière](../../referentiel/profils/pt-14.md) — Interopérabilité transfrontalière
-
-*Rattachement : — · fiche ENF-5*
 
 <!-- END:GENERATED -->
 ## Liens
