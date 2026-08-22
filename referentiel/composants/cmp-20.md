@@ -10,7 +10,6 @@ owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/04_cartographie-cible/composants.md
 implements: ["ENF-1", "F-1"]
-uses: ["CMP-26", "CMP-27", "CMP-28", "CMP-29", "CMP-30", "CMP-31", "CMP-32", "CMP-33", "CMP-34", "CMP-35", "CMP-36", "CMP-37", "CMP-38"]
 applies_to: ["PRC-02", "PRC-05"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-20", "couche-2"]
 ---
