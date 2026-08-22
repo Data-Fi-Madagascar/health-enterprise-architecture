@@ -5,7 +5,8 @@ id: ART-4D
 type: chapitre
 niveau: "3"
 title: Référentiel géospatial et d'exploitation partagé
-status: draft
+status: candidate
+maturity_condition: "Confirmation par une initiative intersectorielle"
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/04_patterns/art-4d-referentiel-geospatial.md

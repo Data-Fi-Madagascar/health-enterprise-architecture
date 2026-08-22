@@ -47,14 +47,14 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 
 ### P-01 : Patient
 
-| Champ | Valeur |
-|-------|--------|
-| **Nom** | Patient |
-| **Définition** | Personne physique bénéficiaire de soins de santé, identifiée de manière unique au sein du système d'information sanitaire national. L'identité du patient est un actif stratégique national qui ne peut être dupliquée, fragmentée ou remplacée par des identifiants propriétaires de programmes ou de projets. |
-| **Type** | Entité (identifiant unique + attributs) |
-| **Contraintes** | Identifiant unique national (NIN ou identifiant provisoire) ; un seul enregistrement par personne physique ; traçabilité des doublons détectés et résolus |
-| **Rattachement** | CAP-01 (continuité des soins), CAP-13 (interopérabilité données), VS-01 (parcours patient), VS-03 (protection financière) |
-| **Référentiel source** | Référentiel des bénéficiaires / patients (CAESN) |
+| Champ                  | Valeur                                                                                                                                                                                                                                                                                                          |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nom**                | Patient                                                                                                                                                                                                                                                                                                         |
+| **Définition**         | Personne physique bénéficiaire de soins de santé, identifiée de manière unique au sein du système d'information sanitaire national. L'identité du patient est un actif stratégique national qui ne peut être dupliquée, fragmentée ou remplacée par des identifiants propriétaires de programmes ou de projets. |
+| **Type**               | Entité (identifiant unique + attributs)                                                                                                                                                                                                                                                                         |
+| **Contraintes**        | Identifiant unique national (NIN ou identifiant provisoire) ; un seul enregistrement par personne physique ; traçabilité des doublons détectés et résolus                                                                                                                                                       |
+| **Rattachement**       | CAP-01 (continuité des soins), CAP-13 (interopérabilité données), VS-01 (parcours patient), VS-03 (protection financière)                                                                                                                                                                                       |
+| **Référentiel source** | Référentiel des bénéficiaires / patients (CAESN)                                                                                                                                                                                                                                                                |
 
 ### P-02 : Identifiant national d'identification
 

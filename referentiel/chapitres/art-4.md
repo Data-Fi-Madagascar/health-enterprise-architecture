@@ -5,7 +5,8 @@ id: ART-4
 type: chapitre
 niveau: "3"
 title: Référentiels de métadonnées de gestion
-status: draft
+status: stable
+maturity_condition: "Reconfirmation par une initiative supplémentaire"
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/04_patterns/art-4-referentiels-metadonnees.md

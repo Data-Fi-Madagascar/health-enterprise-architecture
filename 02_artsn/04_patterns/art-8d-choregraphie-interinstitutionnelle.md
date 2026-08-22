@@ -33,6 +33,8 @@ ART-8d : Chorégraphie inter-institutionnelle constitue un chapitre du **cadre n
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
+**Statut : candidate**
+
 **Contenu normatif.** Lorsque l’intégration implique plusieurs ministères co-égaux, l’architecture **proscrit l’orchestration centralisée** et impose un modèle de coordination par messagerie décentralisée. Les systèmes partenaires doivent s’abonner de manière autonome à des files d’événements publics sans qu’aucun nœud n’ait d’autorité informatique sur le système de l’autre (pattern cible : Publication/Abonnement, Pub/Sub).
 
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (systèmes d’information autonomes des ministères de l’Agriculture ou de l’Environnement), cette discipline seule permet de déclencher des actions conjointes et simultanées lors d’un signal épidémique tout en préservant l’indépendance informatique et la souveraineté de chaque institution, sans rompre le pipeline.

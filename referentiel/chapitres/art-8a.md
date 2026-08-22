@@ -6,6 +6,7 @@ type: chapitre
 niveau: "3"
 title: Orchestration de processus borné
 status: draft
+maturity_condition: "Confirmation par une seconde initiative"
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/04_patterns/art-8a-orchestration-processus-borne.md

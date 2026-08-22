@@ -5,7 +5,8 @@ id: ART-7
 type: chapitre
 niveau: "3"
 title: Sécurité, contrôle d'accès et résidence de la donnée
-status: draft
+status: stable
+maturity_condition: "—"
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/04_patterns/art-7-securite-controle-acces.md

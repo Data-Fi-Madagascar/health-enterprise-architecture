@@ -5,7 +5,8 @@ id: ART-2
 type: chapitre
 niveau: "3"
 title: Médiation et normalisation
-status: draft
+status: stable
+maturity_condition: "Stable pour registre structurel/sémantique/géospatial/tarifaire ; Proposition ouverte pour registre intersectoriel. Condition : confirmation du registre intersectoriel par une initiative concernée."
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/04_patterns/art-2-mediation-normalisation.md

@@ -33,6 +33,8 @@ ART-0 : Accords de partage inter-institutionnels constitue un chapitre du **cadr
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
+**Statut : candidate**
+
 **Contenu normatif.** Avant toute interconnexion technique, échange ou ingestion de données provenant d’une entité extérieure à la gouvernance directe de la santé, un accord formel (*Data Sharing Agreement*) doit obligatoirement fixer le périmètre de partage, les clauses de réciprocité, les obligations de notification en cas de faille, et sécuriser la souveraineté et la résidence physique de la donnée de santé sur le territoire national.
 
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (ministères partenaires, secteurs tiers), cette discipline seule permet de fixer les frontières de la responsabilité juridique et de configurer dynamiquement les filtres de sécurité automatiques sans rompre le pipeline.

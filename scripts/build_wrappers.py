@@ -108,6 +108,7 @@ def load_objects():
                 "title": fields.get("title", ""),
                 "status": fields.get("status", ""),
                 "envelope": fields.get("envelope", ""),
+                "maturity_condition": fields.get("maturity_condition", "") or "",
                 "maps_to": fields.get("maps_to", []) or [],
                 "implements": fields.get("implements", []) or [],
                 "applies_to": fields.get("applies_to", []) or [],
@@ -235,6 +236,26 @@ def render_table(objects, source_glob, path_by_id, to_dir):
     return "\n".join(lines)
 
 
+def render_maturity(objects, source_glob, to_dir):
+    selected = []
+    for rel, obj in objects.items():
+        if any(fnmatch.fnmatch(rel, pattern) for pattern in source_glob):
+            selected.append(obj)
+    selected.sort(key=lambda o: natural_key(o["id"]))
+    lines = ["| Code | Titre canonique | Statut | Condition de passage au statut supérieur | Fiche |",
+             "|---|---|---|---|---|"]
+    for obj in selected:
+        code = obj["id"].upper()
+        titre = re.sub(r"^[A-Za-z0-9.\- ]+ —\s*", "", obj["title"]) or obj["title"]
+        statut = obj["status"]
+        cond = obj["maturity_condition"] or "—"
+        fiche = os.path.relpath(os.path.join(REPO_ROOT, obj["rel"]), to_dir).replace(os.sep, "/")
+        lines.append("| %s | %s | %s | %s | [%s](%s) |"
+                     % (code, titre.replace("|", "\\|"), statut,
+                        cond.replace("|", "\\|"), code, fiche))
+    return "\n".join(lines)
+
+
 def parse_attributes(attr_text):
     attrs = {"mode": None, "source": []}
     for match in ATTRIB.finditer(attr_text):
@@ -302,6 +323,12 @@ def generate_file(objects, path_by_id, rel):
             to_dir = os.path.dirname(abs_path)
             content = render_table(objects, globs, path_by_id, to_dir)
             body = content
+        elif attrs["mode"] == "maturity":
+            if not globs:
+                raise SystemExit("bloc maturité sans source dans %s" % rel)
+            to_dir = os.path.dirname(abs_path)
+            content = render_maturity(objects, globs, to_dir)
+            body = content
         else:
             covered = []
             for obj in attached:
@@ -360,7 +387,8 @@ def main():
 
     targets = set(sources)
     for rel in list(targets) + ["03_ptisn/03_profils/pt-00-index.md",
-                                "01_cnisn/08_annexes/a-matrice-principes-capacites.md"]:
+                                "01_cnisn/08_annexes/a-matrice-principes-capacites.md",
+                                "02_artsn/08_annexes/a-table-de-maturite.md"]:
         path = os.path.join(REPO_ROOT, rel)
         if os.path.exists(path):
             with open(path, encoding="utf-8") as fh:

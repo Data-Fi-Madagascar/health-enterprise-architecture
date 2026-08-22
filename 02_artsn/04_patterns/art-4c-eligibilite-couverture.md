@@ -33,6 +33,8 @@ ART-4c : Éligibilité et couverture constitue un chapitre du **cadre normatif o
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
+**Statut : candidate**
+
 **Contenu normatif.** L’architecture doit maintenir un référentiel des droits ouverts structurant **disjoint de l’identité** et versionné dans le temps. Ce registre doit être accessible instantanément pour permettre le calcul automatique de la couverture financière au point de vente. Pattern cible : modélisation temporelle SCD type 2.
 
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (comptoirs de pharmacies privées, caisses d’hôpitaux autonomes), cette discipline seule permet d’appliquer la gratuité légale en ligne de front sans imposer d’avance de frais aux ménages vulnérables et sans rompre le pipeline.

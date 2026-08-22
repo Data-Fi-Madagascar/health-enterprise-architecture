@@ -5,7 +5,8 @@ id: ART-8C
 type: chapitre
 niveau: "3"
 title: Agrégation par lot
-status: draft
+status: candidate
+maturity_condition: "Confirmation par une initiative supplémentaire"
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/04_patterns/art-8c-agregation-par-lot.md

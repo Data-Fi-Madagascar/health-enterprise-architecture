@@ -32,6 +32,8 @@ ART-10 : Logistique constitue un chapitre du **cadre normatif opposable** de l'A
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
+**Statut : candidate**
+
 **Contenu normatif.** La continuité de la chaîne d'approvisionnement (médicaments, vaccins, intrants, équipements) conditionne l'exécution des flux de valeur de soins. L'architecture impose une traçabilité de bout en bout des mouvements de produits, de la centrale d'achat jusqu'au point de service : chaque mouvement (livraison, dispensation, transfert, destruction) est un événement immuable, horodaté, adossé aux référentiels de produits, et réconcilié selon les règles comptables de conservation de quantité (Entrées − Sorties = Solde).
 
 **Discipline de mise en œuvre.** Dès qu'une source échappe à la gouvernance directe de l'initiative (centres de stockage isolés, ruptures de connectivité, circuits parallèles de distribution), cette discipline seule permet de garantir la disponibilité des intrants et la réconciliation à somme nulle des stocks sans rompre le pipeline.

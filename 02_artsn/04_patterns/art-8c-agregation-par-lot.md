@@ -33,6 +33,8 @@ ART-8c : Agrégation par lot constitue un chapitre du **cadre normatif opposable
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
+**Statut : candidate**
+
 **Contenu normatif.** L’architecture doit intégrer un moteur de traitement par lots capable de suspendre le flux transactionnel instantané pour regrouper les micro-agrégats individuels en un seul **agrégat consolidé de niveau supérieur** (pattern cible : *Netting*).
 
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (demandes massives de remboursements des pharmacies rurales, vagues de facturations d’hôpitaux), cette discipline seule permet de compiler les flux locaux et de générer une compensation globale unifiée sans saturer les réseaux d’échange centraux et sans rompre le pipeline.

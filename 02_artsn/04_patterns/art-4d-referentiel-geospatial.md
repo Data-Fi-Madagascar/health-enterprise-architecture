@@ -33,6 +33,8 @@ ART-4d : Référentiel géospatial et d'exploitation partagé constitue un chapi
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
+**Statut : candidate**
+
 **Contenu normatif.** L’architecture doit fournir une **clé de rapprochement universelle** basée exclusivement sur des coordonnées spatiales ou codes de zones et des périodes de temps. Ce référentiel neutre est le **seul point de contact autorisé** pour croiser des bases de données sectorielles hétérogènes.
 
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (bases de données météorologiques, registres de suivi des cheptels d’élevage), cette discipline seule permet de corréler des indicateurs environnementaux et cliniques sans jamais interconnecter les identités humaines, garantissant l’étanchéité One Health sans rompre le pipeline.

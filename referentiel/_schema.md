@@ -59,7 +59,7 @@ id: P-INT-01              # id normalisé, unique, kebab-case
 type: principe            # type de l'objet (cf. tableau)
 niveau: "2"               # niveau de référence : 1 (CAESN), 2 (CNISN), 3 (ARTSN), 4 (PTISN)
 title: P-INT-01 — Autorité désignée
-status: active            # draft | active | deprecated | candidate
+status: active            # draft | active | stable | candidate | deprecated
 owner: DEPSI              # entité responsable
 version: "0.5"            # version héritée de la source
 envelope: 01_cnisn/01_principes/index.md   # chemin de provenance pré-refactor

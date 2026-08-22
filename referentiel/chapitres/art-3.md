@@ -5,7 +5,8 @@ id: ART-3
 type: chapitre
 niveau: "3"
 title: Historisation événementielle et profils de déploiement
-status: draft
+status: stable
+maturity_condition: "—"
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/04_patterns/art-3-historisation-evenementielle.md
