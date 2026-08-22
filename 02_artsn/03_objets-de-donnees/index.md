@@ -45,6 +45,8 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 
 ## 1. Patient & identité
 
+**Objet métier CAESN correspondant** : [BO-01 : Patient & identité](../../00_caesn/04_data/objets.md).
+
 ### P-01 : Patient
 
 | Champ                  | Valeur                                                                                                                                                                                                                                                                                                          |
@@ -92,6 +94,8 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 ---
 
 ## 2. Prestation & soins
+
+**Objet métier CAESN correspondant** : [BO-02 : Prestation & soins](../../00_caesn/04_data/objets.md).
 
 ### S-01 : Consultation
 
@@ -161,6 +165,8 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 
 ## 3. Dispensation & produits
 
+**Objet métier CAESN correspondant** : [BO-03 : Dispensation & produits](../../00_caesn/04_data/objets.md).
+
 ### D-01 : Dispensation
 
 | Champ | Valeur |
@@ -209,6 +215,8 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 
 ## 4. Financement & couverture
 
+**Objet métier CAESN correspondant** : [BO-04 : Financement & couverture](../../00_caesn/04_data/objets.md).
+
 ### F-01 : Éligibilité
 
 | Champ | Valeur |
@@ -256,6 +264,8 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 ---
 
 ## 5. Risque & surveillance
+
+**Objet métier CAESN correspondant** : [BO-05 : Risque & surveillance](../../00_caesn/04_data/objets.md).
 
 ### R-01 : Signal
 
@@ -315,6 +325,8 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 ---
 
 ## 6. Exploitation & gestion
+
+**Objet métier CAESN correspondant** : [BO-06 : Exploitation & gestion](../../00_caesn/04_data/objets.md).
 
 ### E-01 : Formation sanitaire
 
@@ -385,6 +397,8 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 ---
 
 ## 7. Interopérabilité transfrontalière & résumé patient
+
+**Objet métier CAESN correspondant** : [BO-07 : Interopérabilité transfrontalière](../../00_caesn/04_data/objets.md).
 
 ### T-01 : Résumé international du patient (IPS)
 
