@@ -253,6 +253,6 @@ Ce document décrit la stratégie et les étapes concrètes pour passer de l'ét
 ## Références
 
 - **Portefeuille d'initiatives** : Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
-- **Feuille de route ARTSN** : Feuille de route de déploiement progressif de l'ARTSN (`02_artsn/09_feuille-route/index.md`)
+- **Feuille de route ARTSN** : Feuille de route de déploiement progressif de l'ARTSN (`02_artsn/07_lots/index.md`)
 - **Trajectoire CNISN** : Partie V : Trajectoire de mise en œuvre (`01_cnisn/05_trajectoire/index.md`)
-- **Protocole de test** : Annexe D : Protocole de test d'interopérabilité (`02_artsn/07_annexes/d-protocole-test-interopabilite.md`)
+- **Protocole de test** : Annexe D : Protocole de test d'interopérabilité (`02_artsn/08_annexes/d-protocole-test-interopabilite.md`)

@@ -95,13 +95,13 @@ Lorsqu'une décision D-1 à D-5 entre en instruction, elle fait l'objet d'un ADR
 - **registre des normes** : Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
 - **ART-4d (référentiel géospatial et d'exploitation partagé)** : Référentiel géospatial et d'exploitation partagé (`referentiel/chapitres/art-4d.md`)
 - **gouvernance** : Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
-- **Annexe C de l'ARTSN** : Annexe C : Renvoi CAESN et capacités candidates (`02_artsn/07_annexes/c-renvoi-capacites-candidates.md`)
+- **Annexe C de l'ARTSN** : Annexe C : Renvoi CAESN et capacités candidates (`02_artsn/08_annexes/c-renvoi-capacites-candidates.md`)
 - **ADR (Architecture Decision Record)** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
 - **CAESN : capabilités** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
 - **CAESN : normes et standards** : Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
 - **CAESN : registre des ADR** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
-- **ARTSN : Annexe C (renvoi CAESN)** : Annexe C : Renvoi CAESN et capacités candidates (`02_artsn/07_annexes/c-renvoi-capacites-candidates.md`)
-- **ARTSN : chapitres ART-0, 4a, 4b, 4d, 8d** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **ARTSN : Annexe C (renvoi CAESN)** : Annexe C : Renvoi CAESN et capacités candidates (`02_artsn/08_annexes/c-renvoi-capacites-candidates.md`)
+- **ARTSN : chapitres ART-0, 4a, 4b, 4d, 8d** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 
 ## Documents de la section
 

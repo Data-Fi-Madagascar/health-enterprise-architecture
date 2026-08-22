@@ -8,7 +8,7 @@ title: Accords de partage inter-institutionnels
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/03_chapitres/art-0-accords-partage.md
+envelope: 02_artsn/04_patterns/art-0-accords-partage.md
 maps_to: []
 implements: []
 applies_to: ["ENF-4"]

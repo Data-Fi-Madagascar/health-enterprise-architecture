@@ -8,7 +8,7 @@ title: Liaisons dediees & VPN
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/04_cartographie-cible/composants.md
+envelope: 02_artsn/05_cartographie/composants.md
 implements: ["ART-7"]
 uses: []
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-29", "couche-1"]

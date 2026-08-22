@@ -7,7 +7,7 @@ title: Logistique
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/03_chapitres/art-10-logistique.md
+envelope: 02_artsn/04_patterns/art-10-logistique.md
 maps_to: ["CAP-10", "CAP-11"]
 implements: []
 applies_to: ["ENF-2"]

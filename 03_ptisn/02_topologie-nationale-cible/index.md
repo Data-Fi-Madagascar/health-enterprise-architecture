@@ -121,5 +121,5 @@ Les services métier sectoriels demeurent responsables de la validation métier,
 
 ## Références
 
-- **cartographie conceptuelle cible de l'ARTSN** : Cartographie conceptuelle cible (`02_artsn/04_cartographie-cible/index.md`)
+- **cartographie conceptuelle cible de l'ARTSN** : Cartographie conceptuelle cible (`02_artsn/05_cartographie/index.md`)
 - **F.1** : F.1 : Résilience face à la réalité géographique du pays (`referentiel/fondations/f-1.md`)

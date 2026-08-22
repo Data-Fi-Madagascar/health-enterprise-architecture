@@ -262,7 +262,7 @@ Le document source de l'ARTSN annonce **18 principes (P-01 à P-18)** ; le catal
 - **ART-4d (référentiel géospatial et d'exploitation partagé)** : Référentiel géospatial et d'exploitation partagé (`referentiel/chapitres/art-4d.md`)
 - **Point de vigilance CAESN** : Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health) (`00_caesn/07_governance/point-de-vigilance-caesn.md`)
 - **CAESN : capabilités** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
-- **ARTSN : Annexe C** : Annexe C : Renvoi CAESN et capacités candidates (`02_artsn/07_annexes/c-renvoi-capacites-candidates.md`)
+- **ARTSN : Annexe C** : Annexe C : Renvoi CAESN et capacités candidates (`02_artsn/08_annexes/c-renvoi-capacites-candidates.md`)
 - **CAESN : normes et standards** : Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
 - **CAESN : registre des ADR** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
 

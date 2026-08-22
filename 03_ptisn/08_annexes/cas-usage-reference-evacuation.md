@@ -196,9 +196,9 @@ Légende : ● requis · ○ optionnel · : non applicable
 
 ## Références
 
-- **S-03 : Référence** : Dictionnaire de données fonctionnelles (`02_artsn/05_dictionnaire/index.md`)
-- **S-04 : Contre-référence** : Dictionnaire de données fonctionnelles (`02_artsn/05_dictionnaire/index.md`)
-- **S-05 : Évacuation sanitaire** : Dictionnaire de données fonctionnelles (`02_artsn/05_dictionnaire/index.md`)
+- **S-03 : Référence** : Dictionnaire de données fonctionnelles (`02_artsn/03_objets-de-donnees/index.md`)
+- **S-04 : Contre-référence** : Dictionnaire de données fonctionnelles (`02_artsn/03_objets-de-donnees/index.md`)
+- **S-05 : Évacuation sanitaire** : Dictionnaire de données fonctionnelles (`02_artsn/03_objets-de-donnees/index.md`)
 - **PT-01 : Échange interinstitutionnel** : Profil technique national (`03_ptisn/03_profils/pt-01-echange-interinstitutionnel.md`)
 - **PT-02 : Médiation intra-secteur** : Profil technique national (`03_ptisn/03_profils/pt-02-mediation-intra-secteur.md`)
 - **PT-11 : Consentement** : Profil technique national (`03_ptisn/03_profils/pt-11-consentement-bases-autorisation.md`)

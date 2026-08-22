@@ -32,7 +32,7 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 |--------|----------|---------|
 | Évaluer une initiative | [Registre des initiatives](00_caesn/06_portfolio/index.md) | Vérifier l'alignement avec les flux de valeur |
 | Lire une décision architecture | [Registre ADR](01_cnisn/06_decisions/registre-decisions.md) | 9 ADR classées par statut |
-| Suivre la roadmap | [Feuille de route ARTSN](02_artsn/09_feuille-route/index.md) | 6 phases, jalons, budget 98 MGA |
+| Suivre la roadmap | [Feuille de route ARTSN](02_artsn/07_lots/index.md) | 6 phases, jalons, budget 98 MGA |
 | Comprendre la gouvernance | [Processus gouvernance](00_caesn/07_governance/processus-gouvernance.md) | Workflows de validation |
 
 ### Check-list d'évaluation d'une initiative
@@ -59,7 +59,7 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 | Action | Document | Comment |
 |--------|----------|---------|
 | Décrire un besoin | [Template modification](01_cnisn/06_decisions/template-modification.md) | Formulaire MOD-XXXX |
-| Vérifier la maturité | [Matrice de maturité](02_artsn/07_annexes/a-table-de-maturite.md) | Évaluation par capabilité |
+| Vérifier la maturité | [Matrice de maturité](02_artsn/08_annexes/a-table-de-maturite.md) | Évaluation par capabilité |
 | Comprendre l'interopérabilité | [CNISN capacités](01_cnisn/02_capacites/index.md) | 14 capacités, 7 familles |
 | Lire les cas d'usage | [VS-01](03_ptisn/08_annexes/cas-usage-reference-evacuation.md), [VS-02](03_ptisn/08_annexes/cas-usage-surveillance-epidemique.md), [VS-03](03_ptisn/08_annexes/cas-usage-couverture-sanitaire.md), [VS-04](03_ptisn/08_annexes/cas-usage-pilotage-systeme.md) | Exemples concrets par flux |
 
@@ -80,8 +80,8 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 ### Premier pas
 
 1. Lire les [15 profils PTISN](03_ptisn/03_profils/pt-00-index.md) — chaque profil définit un service technique national
-2. Consulter le [protocole de test](02_artsn/07_annexes/d-protocole-test-interopabilite.md) — 4 niveaux (N1 à N4)
-3. Vérifier les [SLA](02_artsn/07_annexes/e-sla-performance.md) requis par profil
+2. Consulter le [protocole de test](02_artsn/08_annexes/d-protocole-test-interopabilite.md) — 4 niveaux (N1 à N4)
+3. Vérifier les [SLA](02_artsn/08_annexes/e-sla-performance.md) requis par profil
 
 ### Actions courantes
 
@@ -110,16 +110,16 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 
 ### Premier pas
 
-1. Lire le [dictionnaire de données](02_artsn/05_dictionnaire/index.md) — 33 concepts, 7 domaines
-2. Consulter la [cartographie cible](02_artsn/04_cartographie-cible/index.md) — architecture du SI cible
+1. Lire le [dictionnaire de données](02_artsn/03_objets-de-donnees/index.md) — 33 concepts, 7 domaines
+2. Consulter la [cartographie cible](02_artsn/05_cartographie/index.md) — architecture du SI cible
 3. Vérifier les [indicateurs CNISN](01_cnisn/06_indicateurs/index.md)
 
 ### Actions courantes
 
 | Action | Document | Comment |
 |--------|----------|---------|
-| Ajouter un concept | [Dictionnaire](02_artsn/05_dictionnaire/index.md) | Template concept, 7 champs |
-| Mapper vers FHIR | [Champs "Référentiel source"](02_artsn/05_dictionnaire/index.md) | Champ technique dans le dictionnaire |
+| Ajouter un concept | [Dictionnaire](02_artsn/03_objets-de-donnees/index.md) | Template concept, 7 champs |
+| Mapper vers FHIR | [Champs "Référentiel source"](02_artsn/03_objets-de-donnees/index.md) | Champ technique dans le dictionnaire |
 | Consulter les flux | [Flux de valeur](referentiel/flux-valeur/) | VS-01..04 |
 | Suivre la trajectoire | [Trajectoire CNISN](01_cnisn/05_trajectoire/index.md) | 7 phases T4 2026–T2 2030 |
 | Vérifier la qualité | [CAP-INT-11: Qualité et réconciliation](referentiel/capacites/cap-int-11.md) | Qualité et réconciliation |
@@ -141,7 +141,7 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 ### Premier pas
 
 1. Lire la [vue d'ensemble](00_caesn/00_overview/index.md) — contexte stratégique Madagascar
-2. Consulter la [feuille de route](02_artsn/09_feuille-route/index.md) — phases de déploiement
+2. Consulter la [feuille de route](02_artsn/07_lots/index.md) — phases de déploiement
 3. Vérifier les [standards obligatoires](01_cnisn/05_standards/) — FHIR, sécurité, chiffrement
 
 ### Actions courantes
@@ -149,7 +149,7 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 | Action | Document | Comment |
 |--------|----------|---------|
 | Évaluer la compatibilité | [Matrice d'alignement](03_ptisn/04_matrice-alignement/index.md) | Profils ↔ capacités |
-| Comprendre le budget | [Feuille de route](02_artsn/09_feuille-route/index.md) | 98 MGA, 6 phases |
+| Comprendre le budget | [Feuille de route](02_artsn/07_lots/index.md) | 98 MGA, 6 phases |
 | Lister les initiatives | [Portefeuille](00_caesn/06_portfolio/index.md) | Portefeuille orienté valeur |
 | Vérifier la sécurité | [ATNA](01_cnisn/06_decisions/adr-0008-atna.md), [Chiffrement](01_cnisn/05_standards/std-0002-securite-chiffrement.md) | Exigences sécurité |
 | Consulter le glossaire | [Glossaire](00_caesn/10_annexes/glossary.md) | Termes transverses |
@@ -171,5 +171,5 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 | Matrice de lecture CAESN | [`00_caesn/reading-matrix.md`](./00_caesn/reading-matrix.md) |
 | Registre des ADR | [`01_cnisn/06_decisions/registre-decisions.md`](./01_cnisn/06_decisions/registre-decisions.md) |
 | Profils PTISN | [`03_ptisn/03_profils/pt-00-index.md`](./03_ptisn/03_profils/pt-00-index.md) |
-| Dictionnaire | [`02_artsn/05_dictionnaire/index.md`](./02_artsn/05_dictionnaire/index.md) |
-| Protocole de test | [`02_artsn/07_annexes/d-protocole-test-interopabilite.md`](./02_artsn/07_annexes/d-protocole-test-interopabilite.md) |
+| Dictionnaire | [`02_artsn/03_objets-de-donnees/index.md`](./02_artsn/03_objets-de-donnees/index.md) |
+| Protocole de test | [`02_artsn/08_annexes/d-protocole-test-interopabilite.md`](./02_artsn/08_annexes/d-protocole-test-interopabilite.md) |

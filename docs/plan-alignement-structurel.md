@@ -31,11 +31,11 @@
 | `00_fondations.md` | `00_fondations/index.md` |
 | `01_flux-de-valeur.md` | `01_flux-de-valeur/index.md` |
 | `02_exigences-contextuelles.md` | `02_exigences-contextuelles/index.md` |
-| `03_chapitres/` | `03_chapitres/` (déjà un dossier) |
-| `04_cartographie-cible.md` | `04_cartographie-cible/index.md` |
-| `05_dictionnaire.md` | `05_dictionnaire/index.md` |
+| `04_patterns/` | `04_patterns/` (déjà un dossier) |
+| `05_cartographie.md` | `05_cartographie/index.md` |
+| `03_objets-de-donnees.md` | `03_objets-de-donnees/index.md` |
 | `06_gouvernance.md` | `06_gouvernance/index.md` |
-| `07_annexes/` | `07_annexes/` (déjà un dossier) |
+| `08_annexes/` | `08_annexes/` (déjà un dossier) |
 
 ### 03_ptisn — À restructurer
 

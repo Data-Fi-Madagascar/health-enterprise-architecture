@@ -8,7 +8,7 @@ title: Noeud central (datacenters nationaux HDS)
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/04_cartographie-cible/composants.md
+envelope: 02_artsn/05_cartographie/composants.md
 implements: ["ART-7"]
 uses: []
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-26", "couche-1"]

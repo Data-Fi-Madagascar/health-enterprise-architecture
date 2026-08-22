@@ -71,6 +71,6 @@ Chaque domaine de données doit disposer de :
 
 - **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
 - **Référentiels nationaux** : Référentiels nationaux (`00_caesn/04_data/referentials.md`)
-- **Dictionnaire de données ARTSN** : Dictionnaire de données fonctionnelles (`02_artsn/05_dictionnaire/index.md`)
+- **Dictionnaire de données ARTSN** : Dictionnaire de données fonctionnelles (`02_artsn/03_objets-de-donnees/index.md`)
 - **Flux de valeur** : Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)
 - **Gouvernance des données** : Gouvernance, qualité et protection des données (`00_caesn/04_data/governance.md`)

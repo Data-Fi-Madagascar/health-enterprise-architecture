@@ -8,7 +8,7 @@ title: Intégration et ingestion
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/03_chapitres/art-1-integration-ingestion.md
+envelope: 02_artsn/04_patterns/art-1-integration-ingestion.md
 maps_to: ["CAP-14"]
 implements: []
 applies_to: ["ENF-1"]

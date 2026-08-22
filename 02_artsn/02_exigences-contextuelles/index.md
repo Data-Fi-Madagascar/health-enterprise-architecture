@@ -202,5 +202,5 @@ Les parcours de soins critiques s’étendent sur plusieurs jours et impliquent 
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
 - **Fondations** : Fondations de l'ARTSN (`02_artsn/00_fondations/index.md`)
-- **Chapitres et patterns de référence** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
-- **Cartographie cible** : Cartographie conceptuelle cible (`02_artsn/04_cartographie-cible/index.md`)
+- **Chapitres et patterns de référence** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
+- **Cartographie cible** : Cartographie conceptuelle cible (`02_artsn/05_cartographie/index.md`)

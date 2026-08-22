@@ -8,7 +8,7 @@ title: Chorégraphie inter-institutionnelle
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/03_chapitres/art-8d-choregraphie-interinstitutionnelle.md
+envelope: 02_artsn/04_patterns/art-8d-choregraphie-interinstitutionnelle.md
 maps_to: ["CAP-13", "CAP-14"]
 implements: []
 applies_to: ["ENF-4"]

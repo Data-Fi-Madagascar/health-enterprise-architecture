@@ -96,5 +96,5 @@ Pour approfondir les fondations de l'ARTSN, les lecteurs peuvent consulter les e
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
 - **exigences contextuelles nationales** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
-- **chapitres et patterns de référence** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
-- **cartographie cible** : Cartographie conceptuelle cible (`02_artsn/04_cartographie-cible/index.md`)
+- **chapitres et patterns de référence** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
+- **cartographie cible** : Cartographie conceptuelle cible (`02_artsn/05_cartographie/index.md`)

@@ -74,5 +74,5 @@ Les flux de valeur sont identiques à ceux définis par le CAESN. L'ARTSN les d�
 - **ART-6 (analytique et restitution)** : Analytique et restitution (`referentiel/chapitres/art-6.md`)
 - **Fondations** : Fondations de l'ARTSN (`02_artsn/00_fondations/index.md`)
 - **Exigences contextuelles nationales** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
-- **Chapitres et patterns de référence** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **Chapitres et patterns de référence** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **CAESN : flux de valeur** : Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)

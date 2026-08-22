@@ -133,14 +133,14 @@ L'Index de l'ARTSN fournit la page d'accueil de l'architecture. La Matrice de le
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **Annexe B : Glossaire des patterns** : Annexe B : Glossaire des patterns cités (`02_artsn/07_annexes/b-glossaire-patterns.md`)
+- **Annexe B : Glossaire des patterns** : Annexe B : Glossaire des patterns cités (`02_artsn/08_annexes/b-glossaire-patterns.md`)
 - **glossaire du CAESN** : Glossaire (`00_caesn/10_annexes/glossary.md`)
-- **table de maturité** : Annexe A : Table de maturité par chapitre (`02_artsn/07_annexes/a-table-de-maturite.md`)
+- **table de maturité** : Annexe A : Table de maturité par chapitre (`02_artsn/08_annexes/a-table-de-maturite.md`)
 - **homologation** : Glossaire (`00_caesn/10_annexes/glossary.md`)
-- **cartographie cible** : Cartographie conceptuelle cible (`02_artsn/04_cartographie-cible/index.md`)
+- **cartographie cible** : Cartographie conceptuelle cible (`02_artsn/05_cartographie/index.md`)
 - **résidence de la donnée** : Sécurité, contrôle d'accès et résidence de la donnée (`referentiel/chapitres/art-7.md`)
 - **niveau 1** : Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
-- **Annexe B** : Annexe B : Glossaire des patterns cités (`02_artsn/07_annexes/b-glossaire-patterns.md`)
+- **Annexe B** : Annexe B : Glossaire des patterns cités (`02_artsn/08_annexes/b-glossaire-patterns.md`)
 - **Index de l'ARTSN** : Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
 - **Matrice de lecture de l'ARTSN** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
 - **Acronymes de l'ARTSN** : Acronymes et abréviations de l'ARTSN (niveau 3) (`02_artsn/acronyms.md`)

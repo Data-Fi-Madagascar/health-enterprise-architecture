@@ -152,4 +152,4 @@ Voir les documents suivants : Gouvernance ARTSN, Processus de dépréciation, Re
 - **Gouvernance ARTSN** : Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)
 - **Processus de dépréciation** : Processus de dépréciation des composants (`02_artsn/06_gouvernance/depreciation.md`)
 - **Registre des décisions** : Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
-- **Feuille de route** : Feuille de route de déploiement progressif de l'ARTSN (`02_artsn/09_feuille-route/index.md`)
+- **Feuille de route** : Feuille de route de déploiement progressif de l'ARTSN (`02_artsn/07_lots/index.md`)

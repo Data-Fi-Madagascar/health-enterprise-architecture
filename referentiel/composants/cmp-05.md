@@ -8,7 +8,7 @@ title: Moteur de graphes & Référentiel spatio-temporel (Graph Store, Spatio AR
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/04_cartographie-cible/composants.md
+envelope: 02_artsn/05_cartographie/composants.md
 maps_to: ["CAP-INT-03", "CAP-INT-12"]
 implements: ["ART-8B", "ART-4D"]
 applies_to: []

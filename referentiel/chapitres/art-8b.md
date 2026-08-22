@@ -8,7 +8,7 @@ title: Modélisation de relations en graphe
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/03_chapitres/art-8b-modelisation-graphe.md
+envelope: 02_artsn/04_patterns/art-8b-modelisation-graphe.md
 maps_to: ["CAP-13", "CAP-14"]
 implements: []
 applies_to: ["ENF-4"]

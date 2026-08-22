@@ -73,7 +73,7 @@ Le PTISN était rédigé contre une version antérieure du CNISN à **6 capacit�
 
 ### 2.1 ART-10 et ART-11 — ✓ Résolu (stubs candidats)
 
-L'ARTSN ne définit que `ART-0` à `ART-9` (+ sous-chapitres `4a-d`, `8a-d`) — voir `02_artsn/03_chapitres/index.md`. ART-10 et ART-11 étaient cités sans existait.
+L'ARTSN ne définit que `ART-0` à `ART-9` (+ sous-chapitres `4a-d`, `8a-d`) — voir `02_artsn/04_patterns/index.md`. ART-10 et ART-11 étaient cités sans existait.
 
 **Correctifs appliqués (✓) :** création des stubs `referentiel/chapitres/art-10.md` et `referentiel/chapitres/art-11.md` (`status: candidate`, 18 lignes), référencés depuis `01_cnisn/08_annexes/b-articulation-art-sn.md`, `03_ptisn/03_profils/pt-00-index.md` (PT-01/PT-11 → ART-11) et `03_ptisn/04_matrice-alignement.md` (§2, ART-10 « Profil futur », ART-11 → PT-01/PT-11). Les renvois ne sont plus pendants.
 
@@ -135,8 +135,8 @@ Références PTISN décalées d'une unité (ex. « ART-4c — bases d'autorisati
 - **`docs.json` racine — ✓ Résolu (2026-08-18)** : navigation reconstruite avec 4 onglets (CAESN 48 pages, CNISN 37 pages, ARTSN 38 pages, PTISN 37 pages = 160 pages total). Tous les chemins corrigés (`/00_caesn/`, `/01_cnisn/`, `/02_artsn/`, `/03_ptisn/`). Sections standards et ADR ajoutées pour CNISN. Annexes manquantes ajoutées (ARTSN art-10/11, PTISN pt-14/15, cas d'usage). 0 page manquante, JSON valide.
 
 ### Écarts connus et tracés (à ne pas re-signaler comme nouveaux)
-- **CAP-04bis** : référencée par l'ARTSN (ART-4a, ART-4b) mais absente du catalogue CAESN → écart documenté dans `00_caesn/07_governance/point-de-vigilance-caesn.md` (décision D-1) et `02_artsn/07_annexes/c-renvoi-capacites-candidates.md` (point 3).
-- **ART-4d → capabilité candidate** « surveillance spatio-temporelle » : absence tracée dans `02_artsn/07_annexes/c-renvoi-capacites-candidates.md` (point 2).
+- **CAP-04bis** : référencée par l'ARTSN (ART-4a, ART-4b) mais absente du catalogue CAESN → écart documenté dans `00_caesn/07_governance/point-de-vigilance-caesn.md` (décision D-1) et `02_artsn/08_annexes/c-renvoi-capacites-candidates.md` (point 3).
+- **ART-4d → capabilité candidate** « surveillance spatio-temporelle » : absence tracée dans `02_artsn/08_annexes/c-renvoi-capacites-candidates.md` (point 2).
 
 ---
 
@@ -163,7 +163,7 @@ Références PTISN décalées d'une unité (ex. « ART-4c — bases d'autorisati
 | 2 | ART-4x renumérotés dans les profils et la matrice | `PT-04`, `PT-05`, `PT-10`, `PT-11`, `04_matrice-alignement.md` |
 | 2 | Stubs candidats ART-10, ART-11, F.5, F.6 | `referentiel/chapitres/{ART-10,ART-11}.md`, `referentiel/fondations/{F-5,F-6}.md` |
 | 3 | Nomenclature PTISN → « implémentation » | `03_ptisn/00_introduction.md` |
-| 4 | ART-8 vs ART-8a : intitulés distincts | `02_artsn/03_chapitres/{ART-8,index}.md`, `referentiel/chapitres/art-8.md` |
+| 4 | ART-8 vs ART-8a : intitulés distincts | `02_artsn/04_patterns/{ART-8,index}.md`, `referentiel/chapitres/art-8.md` |
 | 4 | Manifestes cnisn/ptisn complétés (16 + 29) | `scripts/manifest.json` |
 | 5 | Restructuration des capacités CNISN en 5 familles de réponse (family: sur les 12 cap-int ; catalogue `02_capacites.md` scindé en 5 blocs ; PT-03 remappé → CAP-INT-06) | `referentiel/capacites/cap-int-*.md`, `01_cnisn/02_capacites.md`, `referentiel/profils/pt-03.md`, `03_ptisn/04_matrice-alignement.md` |
 | 5 | Annexe B réécrite sur les 5 familles CAP-INT (remplace la taxonomie des 12 « domaines ») | `01_cnisn/08_annexes/b-articulation-art-sn.md` |
@@ -195,7 +195,7 @@ Références PTISN décalées d'une unité (ex. « ART-4c — bases d'autorisati
 
 ## 9. Topologie nationale cible (PTISN) vs architecture conceptuelle (ARTSN)
 
-Croisement de `03_ptisn/02_topologie-nationale-cible.md` (Partie II) avec `02_artsn/04_cartographie-cible.md` (l'architecture conceptuelle de l'ARTSN : 6 couches horizontales + 2 axes verticaux).
+Croisement de `03_ptisn/02_topologie-nationale-cible.md` (Partie II) avec `02_artsn/05_cartographie.md` (l'architecture conceptuelle de l'ARTSN : 6 couches horizontales + 2 axes verticaux).
 
 ### 9.1 Correspondance couche à couche
 
@@ -277,8 +277,8 @@ L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspon
 
 **Statut : ✓ Résolu (2026-08-18)**
 
-- ART-10 (Logistique) existe désormais dans l'ARTSN : chapitre complet (`02_artsn/03_chapitres/art-10-logistique.md`), fiche référentiel (`referentiel/chapitres/art-10.md`), listé dans l'index des chapitres (status `candidate`).
-- La table de maturité ARTSN (`07_annexes/a-table-de-maturite.md`) intègre désormais ART-10 au statut **Proposition ouverte**, avec pour condition de passage : « Confirmation par une initiative LMIS/logistique déployant la traçabilité de bout en bout des mouvements de stock ».
+- ART-10 (Logistique) existe désormais dans l'ARTSN : chapitre complet (`02_artsn/04_patterns/art-10-logistique.md`), fiche référentiel (`referentiel/chapitres/art-10.md`), listé dans l'index des chapitres (status `candidate`).
+- La table de maturité ARTSN (`08_annexes/a-table-de-maturite.md`) intègre désormais ART-10 au statut **Proposition ouverte**, avec pour condition de passage : « Confirmation par une initiative LMIS/logistique déployant la traçabilité de bout en bout des mouvements de stock ».
 - La section « Domaines partiellement couverts » reconnaît l'existence du chapitre candidat ART-10 tout en maintenant le statut Proposition ouverte en attente de confirmation par une initiative concrète.
 - Les deux niveaux sont désormais cohérents : CNISN annexe B désigne ART-10 comme réponse architecturale à la logistique ; ARTSN formalise cette proposition dans son processus de maturité.
 
@@ -340,7 +340,7 @@ L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspon
 
 ## 13. Restructuration CMP : 13 composants → 18 composants cartographie-cible (2026-08-13) ✓
 
-**Constat :** les 13 composants applicatifs (`CMP-01…13`) ne couvraient pas fidèlement les « Composants associés » définis dans la cartographie conceptuelle cible (`02_artsn/04_cartographie-cible.md`). La cartographie définit 6 couches horizontales + 2 axes verticaux, chacun avec des composants spécifiques qui nécessitent un mapping un à un.
+**Constat :** les 13 composants applicatifs (`CMP-01…13`) ne couvraient pas fidèlement les « Composants associés » définis dans la cartographie conceptuelle cible (`02_artsn/05_cartographie.md`). La cartographie définit 6 couches horizontales + 2 axes verticaux, chacun avec des composants spécifiques qui nécessitent un mapping un à un.
 
 **Correctif appliqué (✓) — 18 CMPs applicatifs :**
 - **18 composants applicatifs** (`referentiel/composants/cmp-01…18.md`) — mappés aux « Composants associés » de la cartographie-cible :
@@ -682,9 +682,9 @@ Voir §20 : détecteur d'objets isolés ajouté au validateur (`scripts/validate
 **Constat :** CMP-05 (Graph Store), CMP-18 (Netting/compensation) et CMP-07 (Saga) sont des patterns bancaires sans précédent en santé africaine ; 18 composants vs 7–10 chez les pairs.
 
 **Correctifs appliqués (✓) :**
-- `02_artsn/04_cartographie-cible.md` : *Note de rationalisation* ajoutée ; CMP-05 et CMP-18 marqués *Phase 2 — candidat (conditionné à une initiative validante)* ; CMP-15/16/17/18 signalés comme candidats à fusion en *Pattern d'échange unifié* ; CMP-07 (Sagas) soumis à étude préalable.
-- `02_artsn/09_feuille-route/index.md` : *Note de rationalisation* ajoutée, CMP-05/18 repoussés hors phases 1–6.
-- La table de maturité (`02_artsn/07_annexes/a-table-de-maturite.md`) ne couvre que les chapitres ART (pas les CMP) ; le phasage des composants est donc porté par la cartographie cible et la feuille de route.
+- `02_artsn/05_cartographie.md` : *Note de rationalisation* ajoutée ; CMP-05 et CMP-18 marqués *Phase 2 — candidat (conditionné à une initiative validante)* ; CMP-15/16/17/18 signalés comme candidats à fusion en *Pattern d'échange unifié* ; CMP-07 (Sagas) soumis à étude préalable.
+- `02_artsn/07_lots/index.md` : *Note de rationalisation* ajoutée, CMP-05/18 repoussés hors phases 1–6.
+- La table de maturité (`02_artsn/08_annexes/a-table-de-maturite.md`) ne couvre que les chapitres ART (pas les CMP) ; le phasage des composants est donc porté par la cartographie cible et la feuille de route.
 
 ---
 

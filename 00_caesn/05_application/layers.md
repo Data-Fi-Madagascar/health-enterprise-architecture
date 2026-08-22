@@ -100,7 +100,7 @@ Socle matériel de la Nation. Hébergement souverain des données cliniques sur 
 ## Références
 
 - **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **couches ARTSN** : Cartographie conceptuelle cible, 6 couches + 2 axes (`02_artsn/04_cartographie-cible/index.md`)
+- **couches ARTSN** : Cartographie conceptuelle cible, 6 couches + 2 axes (`02_artsn/05_cartographie/index.md`)
 - **services partagés** : Services numériques partagés prioritaires (`00_caesn/05_application/shared-services.md`)
 - **entrepôt** : Gouvernance, qualité et protection des données (`00_caesn/04_data/governance.md`)
 - **Architecture applicative** : Architecture applicative et systèmes numériques (`00_caesn/05_application/index.md`)

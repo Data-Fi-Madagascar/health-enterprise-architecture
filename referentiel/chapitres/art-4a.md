@@ -8,7 +8,7 @@ title: Résolution d'identité
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/03_chapitres/art-4a-resolution-identite.md
+envelope: 02_artsn/04_patterns/art-4a-resolution-identite.md
 maps_to: ["CAP-04"]
 implements: []
 applies_to: ["ENF-3"]
@@ -21,7 +21,7 @@ tags: ["artsn", "niveau-3", "chapitre", "ART-4A"]
 
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (erreurs de saisie manuelle, variations phonétiques des patronymes, logiciels distants en silos), cette discipline seule permet d’éviter l’attribution de données cliniques au mauvais patient et de bloquer les accidents médicaux sans rompre le pipeline.
 
-- **Rattachement** : [CAP-04bis](../../02_artsn/07_annexes/c-renvoi-capacites-candidates.md) (engagement patient et identitovigilance).
+- **Rattachement** : [CAP-04bis](../../02_artsn/08_annexes/c-renvoi-capacites-candidates.md) (engagement patient et identitovigilance).
 - **Concepts cibles** : Golden Record, Identifiant National de Santé (INS).
 - **Déduit selon** : [ENF-3: Unicité de l'identité et résilience face à la fragmentation applicative](../exigences/enf-3.md) (unicité de l’identité).
 - **Statut : Provisoire.**

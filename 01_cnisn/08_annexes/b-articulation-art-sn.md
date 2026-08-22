@@ -30,7 +30,7 @@ Cette articulation couvre les réponses d'architecture ; la traduction en standa
 ## Références
 
 - **Partie II** : Partie II : Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
-- **cartographie cible** : Cartographie conceptuelle cible (`02_artsn/04_cartographie-cible/index.md`)
+- **cartographie cible** : Cartographie conceptuelle cible (`02_artsn/05_cartographie/index.md`)
 - **ART-4** : Référentiels de métadonnées de gestion (`referentiel/chapitres/art-4.md`)
 - **ART-4a** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
 - **ART-4c** : Éligibilité et couverture (`referentiel/chapitres/art-4c.md`)

@@ -8,7 +8,7 @@ title: Référentiels de métadonnées de gestion
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/03_chapitres/art-4-referentiels-metadonnees.md
+envelope: 02_artsn/04_patterns/art-4-referentiels-metadonnees.md
 maps_to: ["CAP-14"]
 implements: []
 applies_to: ["ENF-4"]

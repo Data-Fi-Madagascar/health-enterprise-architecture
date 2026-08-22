@@ -8,7 +8,7 @@ title: Registre des clients / Index National des Patients (INP — ART-4a)
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/04_cartographie-cible/composants.md
+envelope: 02_artsn/05_cartographie/composants.md
 maps_to: ["CAP-INT-09"]
 implements: ["ART-4A"]
 applies_to: ["PRC-04", "PRC-05", "PRC-06"]

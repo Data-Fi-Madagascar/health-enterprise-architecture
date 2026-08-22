@@ -8,7 +8,7 @@ title: Moteur de chiffrement
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/04_cartographie-cible/composants.md
+envelope: 02_artsn/05_cartographie/composants.md
 implements: ["ART-7"]
 uses: ["CMP-26", "CMP-27", "CMP-28", "CMP-29", "CMP-30", "CMP-31"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-38", "axe-securite"]

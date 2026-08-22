@@ -64,5 +64,5 @@ Les ressources complémentaires incluent l'Index de l'ARTSN, la Matrice de lectu
 - **Index de l'ARTSN** : Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
 - **Matrice de lecture de l'ARTSN** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
 - **Glossaire de l'ARTSN** : Glossaire de l'ARTSN (niveau 3) (`02_artsn/glossary.md`)
-- **Glossaire des patterns (Annexe B)** : Annexe B : Glossaire des patterns cités (`02_artsn/07_annexes/b-glossaire-patterns.md`)
+- **Glossaire des patterns (Annexe B)** : Annexe B : Glossaire des patterns cités (`02_artsn/08_annexes/b-glossaire-patterns.md`)
 - **Acronymes du CAESN niveau 1** : Acronymes et abréviations (`00_caesn/10_annexes/acronyms.md`)
