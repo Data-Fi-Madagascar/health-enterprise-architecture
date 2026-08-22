@@ -40,6 +40,7 @@ ART-9 : Garanties transactionnelles fortes constitue un chapitre du **cadre norm
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (officines pharmaceutiques privées, gestionnaires de stocks régionaux, caisses de subventions), cette discipline seule permet d’empêcher les détournements de médicaments, de bloquer les marchés noirs et d’assurer la réconciliation à somme nulle de l’argent public, sans rompre le pipeline.
 
 - **Rattachement** : recouvre partiellement [CAP-07: Protection financière, couverture santé universelle](../../referentiel/capabilites/cap-07.md) (protection financière).
+- **Normes CNISN** : [ADR-0008: Audit ATNA](../../01_cnisn/06_decisions/adr-0008-atna.md) (journal d'audit immuable), [STD-0002: Sécurité et chiffrement](../../01_cnisn/05_standards/std-0002-securite-chiffrement.md).
 - **Équation cible** : entrées − sorties = solde.
 - **Déduit selon** : [ENF-2: Intégrité des flux et traçabilité des valeurs](../../referentiel/exigences/enf-2.md) (grade comptable anti-fraude).
 - **Statut : Proposition ouverte.**

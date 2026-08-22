@@ -38,6 +38,7 @@ ART-4 : Référentiels de métadonnées de gestion constitue un chapitre du **ca
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (évolutions administratives, réorganisations territoriales), cette discipline seule permet de garantir qu’une analyse ou un rapport statistique passé pointe vers l’arborescence exacte en vigueur au moment précis de l’événement sans rompre le pipeline.
 
 - **Rattachement** : [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md) (interopérabilité et infrastructure partagée).
+- **Normes CNISN** : [STD-0005: Identité (PIXm/PDQm)](../../01_cnisn/05_standards/std-0005-identite-pixm.md), [STD-0006: Terminologie](../../01_cnisn/05_standards/std-0006-terminologie.md), [STD-0007: SNOMED CT](../../01_cnisn/05_standards/std-0007-snomed-ct.md), [STD-0004: mADX](../../01_cnisn/05_standards/std-0004-madx.md).
 - **Pattern cible** : SCD type 2.
 - **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (cloisonnement inter-institutionnel).
 - **Statut : Stable.**

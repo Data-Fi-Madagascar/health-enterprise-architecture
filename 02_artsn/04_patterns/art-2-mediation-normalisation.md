@@ -38,6 +38,7 @@ ART-2 : Médiation et normalisation constitue un chapitre du **cadre normatif op
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (multiplicité d’éditeurs de logiciels, silos applicatifs d’ONG), cette discipline seule permet de garantir que les données partagent le même sens médical et la même structure technique sans rompre le pipeline.
 
 - **Rattachement** : [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md) (interopérabilité et infrastructure partagée).
+- **Normes CNISN** : [STD-0001: Interopérabilité FHIR R4](../../01_cnisn/05_standards/std-0001-interopabilite-fhir.md) (format d'échange canonique, [ADR-0003](../../01_cnisn/06_decisions/adr-0003-fhir.md)), [STD-0006: Terminologie](../../01_cnisn/05_standards/std-0006-terminologie.md), [STD-0007: SNOMED CT](../../01_cnisn/05_standards/std-0007-snomed-ct.md).
 - **Déduit selon** : [ENF-3: Unicité de l'identité et résilience face à la fragmentation applicative](../../referentiel/exigences/enf-3.md) (fragmentation applicative) et [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (One Health).
 - **Statut : Stable.**
 

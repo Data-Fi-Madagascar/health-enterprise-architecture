@@ -42,6 +42,7 @@ ART-3 : Historisation événementielle et profils de déploiement constitue un c
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (bases de données locales distribuées, serveurs de districts isolés), cette discipline seule permet de rejouer l’historique complet d’un dossier patient ou de reconstruire un nœud après un sinistre matériel sans rompre le pipeline.
 
 - **Rattachement** : [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md) (gestion des données sanitaires).
+- **Normes CNISN** : [STD-0003: X-Road](../../01_cnisn/05_standards/std-0003-x-road.md) (transport inter-institutionnel, [ADR-0001](../../01_cnisn/06_decisions/adr-0001-x-road.md)), [STD-0002: Sécurité et chiffrement](../../01_cnisn/05_standards/std-0002-securite-chiffrement.md).
 - **Profils cibles** : Profil A, Profil B, Profil C.
 - **Déduit selon** : [ENF-1: Résilience à l'instabilité réseau](../../referentiel/exigences/enf-1.md) (mode déconnecté).
 - **Statut : Stable.**
