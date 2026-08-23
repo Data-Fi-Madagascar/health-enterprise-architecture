@@ -28,8 +28,25 @@ Ce document définit les **objets de données métier** (BO) du niveau 1 (CAESN)
 
 Identité de la personne prise en charge, épisodes de soins, dossier et référencements. Pilier de toute continuité de prise en charge.
 
-- **Réalise (ARTSN)** : [P-01 Patient, P-02 Identifiant national, P-03 Dossier patient, P-04 Épisode de soins](../../02_artsn/03_objets-de-donnees/index.md)
-- **Flux de valeur** : VS-01, VS-03
+#### Description
+
+L'objet métier BO-01 : Patient & identité structure et pilote les concepts de données suivants, garants de la cohérence métier de la prise en charge. Il alimente les flux de valeur [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-03](../../referentiel/flux-valeur/vs-03.md) et s'inscrit dans la continuité des chapitres ARTSN (médiation et normalisation, échange et résidence).
+
+#### Objets de données réalisés (ARTSN)
+
+- [DO-01 : Patient](../../referentiel/objets-de-donnees/do-01.md)
+- [DO-02 : Identifiant national](../../referentiel/objets-de-donnees/do-02.md)
+- [DO-03 : Dossier patient](../../referentiel/objets-de-donnees/do-03.md)
+- [DO-04 : Épisode de soins](../../referentiel/objets-de-donnees/do-04.md)
+
+#### Flux de valeur
+
+- [VS-01](../../referentiel/flux-valeur/vs-01.md)
+- [VS-03](../../referentiel/flux-valeur/vs-03.md)
+
+#### Réalise (ARTSN)
+
+- **Dictionnaire de données fonctionnelles** : [Dictionnaire de données fonctionnelles](../../02_artsn/03_objets-de-donnees/index.md)
 
 <!-- END:GENERATED -->
 
@@ -42,8 +59,26 @@ Identité de la personne prise en charge, épisodes de soins, dossier et référ
 
 Actes cliniques, prescriptions, références et évacuations constituant le parcours de soins.
 
-- **Réalise (ARTSN)** : [S-01 Consultation, S-02 Prescription, S-03 Référence, S-04 Contre-référence, S-05 Évacuation sanitaire](../../02_artsn/03_objets-de-donnees/index.md)
-- **Flux de valeur** : VS-01, VS-02
+#### Description
+
+L'objet métier BO-02 : Prestation & soins structure et pilote les concepts de données suivants, garants de la cohérence métier de la prise en charge. Il alimente les flux de valeur [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md) et s'inscrit dans la continuité des chapitres ARTSN (médiation et normalisation, échange et résidence).
+
+#### Objets de données réalisés (ARTSN)
+
+- [DO-05 : Consultation](../../referentiel/objets-de-donnees/do-05.md)
+- [DO-06 : Prescription](../../referentiel/objets-de-donnees/do-06.md)
+- [DO-07 : Référence](../../referentiel/objets-de-donnees/do-07.md)
+- [DO-08 : Contre-référence](../../referentiel/objets-de-donnees/do-08.md)
+- [DO-09 : Évacuation sanitaire](../../referentiel/objets-de-donnees/do-09.md)
+
+#### Flux de valeur
+
+- [VS-01](../../referentiel/flux-valeur/vs-01.md)
+- [VS-02](../../referentiel/flux-valeur/vs-02.md)
+
+#### Réalise (ARTSN)
+
+- **Dictionnaire de données fonctionnelles** : [Dictionnaire de données fonctionnelles](../../02_artsn/03_objets-de-donnees/index.md)
 
 <!-- END:GENERATED -->
 
@@ -56,8 +91,26 @@ Actes cliniques, prescriptions, références et évacuations constituant le parc
 
 Médicaments, produits de santé, lots et stocks dispensés sur le terrain.
 
-- **Réalise (ARTSN)** : [D-01 Dispensation, D-02 Produit de santé, D-03 Lot, D-04 Stock](../../02_artsn/03_objets-de-donnees/index.md)
-- **Flux de valeur** : VS-01, VS-02, VS-04
+#### Description
+
+L'objet métier BO-03 : Dispensation & produits structure et pilote les concepts de données suivants, garants de la cohérence métier de la prise en charge. Il alimente les flux de valeur [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) et s'inscrit dans la continuité des chapitres ARTSN (médiation et normalisation, échange et résidence).
+
+#### Objets de données réalisés (ARTSN)
+
+- [DO-10 : Dispensation](../../referentiel/objets-de-donnees/do-10.md)
+- [DO-11 : Produit de santé](../../referentiel/objets-de-donnees/do-11.md)
+- [DO-12 : Lot](../../referentiel/objets-de-donnees/do-12.md)
+- [DO-13 : Stock](../../referentiel/objets-de-donnees/do-13.md)
+
+#### Flux de valeur
+
+- [VS-01](../../referentiel/flux-valeur/vs-01.md)
+- [VS-02](../../referentiel/flux-valeur/vs-02.md)
+- [VS-04](../../referentiel/flux-valeur/vs-04.md)
+
+#### Réalise (ARTSN)
+
+- **Dictionnaire de données fonctionnelles** : [Dictionnaire de données fonctionnelles](../../02_artsn/03_objets-de-donnees/index.md)
 
 <!-- END:GENERATED -->
 
@@ -70,8 +123,25 @@ Médicaments, produits de santé, lots et stocks dispensés sur le terrain.
 
 Éligibilité, couverture, facturation et vérification financière des soins.
 
-- **Réalise (ARTSN)** : [F-01 Éligibilité, F-02 Couverture sanitaire, F-03 Facturation, F-04 Vérification d'éligibilité](../../02_artsn/03_objets-de-donnees/index.md)
-- **Flux de valeur** : VS-03, VS-04
+#### Description
+
+L'objet métier BO-04 : Financement & couverture structure et pilote les concepts de données suivants, garants de la cohérence métier de la prise en charge. Il alimente les flux de valeur [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) et s'inscrit dans la continuité des chapitres ARTSN (médiation et normalisation, échange et résidence).
+
+#### Objets de données réalisés (ARTSN)
+
+- [DO-14 : Éligibilité](../../referentiel/objets-de-donnees/do-14.md)
+- [DO-15 : Couverture sanitaire](../../referentiel/objets-de-donnees/do-15.md)
+- [DO-16 : Facturation](../../referentiel/objets-de-donnees/do-16.md)
+- [DO-17 : Vérification d'éligibilité](../../referentiel/objets-de-donnees/do-17.md)
+
+#### Flux de valeur
+
+- [VS-03](../../referentiel/flux-valeur/vs-03.md)
+- [VS-04](../../referentiel/flux-valeur/vs-04.md)
+
+#### Réalise (ARTSN)
+
+- **Dictionnaire de données fonctionnelles** : [Dictionnaire de données fonctionnelles](../../02_artsn/03_objets-de-donnees/index.md)
 
 <!-- END:GENERATED -->
 
@@ -84,8 +154,26 @@ Médicaments, produits de santé, lots et stocks dispensés sur le terrain.
 
 Signaux, foyers, investigations et alertes de surveillance sanitaire (y compris One Health).
 
-- **Réalise (ARTSN)** : [R-01 Signal, R-02 Foyer, R-03 Investigation, R-04 Notification sanitaire, R-05 Alerte sanitaire](../../02_artsn/03_objets-de-donnees/index.md)
-- **Flux de valeur** : VS-02, VS-04
+#### Description
+
+L'objet métier BO-05 : Risque & surveillance structure et pilote les concepts de données suivants, garants de la cohérence métier de la prise en charge. Il alimente les flux de valeur [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) et s'inscrit dans la continuité des chapitres ARTSN (médiation et normalisation, échange et résidence).
+
+#### Objets de données réalisés (ARTSN)
+
+- [DO-18 : Signal](../../referentiel/objets-de-donnees/do-18.md)
+- [DO-19 : Foyer](../../referentiel/objets-de-donnees/do-19.md)
+- [DO-20 : Investigation](../../referentiel/objets-de-donnees/do-20.md)
+- [DO-21 : Notification sanitaire](../../referentiel/objets-de-donnees/do-21.md)
+- [DO-22 : Alerte sanitaire](../../referentiel/objets-de-donnees/do-22.md)
+
+#### Flux de valeur
+
+- [VS-02](../../referentiel/flux-valeur/vs-02.md)
+- [VS-04](../../referentiel/flux-valeur/vs-04.md)
+
+#### Réalise (ARTSN)
+
+- **Dictionnaire de données fonctionnelles** : [Dictionnaire de données fonctionnelles](../../02_artsn/03_objets-de-donnees/index.md)
 
 <!-- END:GENERATED -->
 
@@ -98,8 +186,29 @@ Signaux, foyers, investigations et alertes de surveillance sanitaire (y compris 
 
 Structures, agents, indicateurs, zones et tableaux de bord de pilotage.
 
-- **Réalise (ARTSN)** : [E-01 Formation sanitaire, E-02 Agent de santé, E-03 Indicateur sanitaire, E-04 Zone sanitaire, E-05 Tâche, E-06 Tableau de bord](../../02_artsn/03_objets-de-donnees/index.md)
-- **Flux de valeur** : Tous les VS
+#### Description
+
+L'objet métier BO-06 : Exploitation & gestion structure et pilote les concepts de données suivants, garants de la cohérence métier de la prise en charge. Il alimente les flux de valeur [VS-01](../../referentiel/flux-valeur/vs-01.md), [VS-02](../../referentiel/flux-valeur/vs-02.md), [VS-03](../../referentiel/flux-valeur/vs-03.md), [VS-04](../../referentiel/flux-valeur/vs-04.md) et s'inscrit dans la continuité des chapitres ARTSN (médiation et normalisation, échange et résidence).
+
+#### Objets de données réalisés (ARTSN)
+
+- [DO-23 : Formation sanitaire](../../referentiel/objets-de-donnees/do-23.md)
+- [DO-24 : Agent de santé](../../referentiel/objets-de-donnees/do-24.md)
+- [DO-25 : Indicateur sanitaire](../../referentiel/objets-de-donnees/do-25.md)
+- [DO-26 : Zone sanitaire](../../referentiel/objets-de-donnees/do-26.md)
+- [DO-27 : Tâche](../../referentiel/objets-de-donnees/do-27.md)
+- [DO-28 : Tableau de bord](../../referentiel/objets-de-donnees/do-28.md)
+
+#### Flux de valeur
+
+- [VS-01](../../referentiel/flux-valeur/vs-01.md)
+- [VS-02](../../referentiel/flux-valeur/vs-02.md)
+- [VS-03](../../referentiel/flux-valeur/vs-03.md)
+- [VS-04](../../referentiel/flux-valeur/vs-04.md)
+
+#### Réalise (ARTSN)
+
+- **Dictionnaire de données fonctionnelles** : [Dictionnaire de données fonctionnelles](../../02_artsn/03_objets-de-donnees/index.md)
 
 <!-- END:GENERATED -->
 
@@ -112,8 +221,23 @@ Structures, agents, indicateurs, zones et tableaux de bord de pilotage.
 
 Résumé patient international, sections et confiance pour les échanges hors frontières.
 
-- **Réalise (ARTSN)** : [T-01 Résumé international du patient, T-02 Section du résumé, T-03 Confiance internationale](../../02_artsn/03_objets-de-donnees/index.md)
-- **Flux de valeur** : VS-02
+#### Description
+
+L'objet métier BO-07 : Interopérabilité transfrontalière structure et pilote les concepts de données suivants, garants de la cohérence métier de la prise en charge. Il alimente les flux de valeur [VS-02](../../referentiel/flux-valeur/vs-02.md) et s'inscrit dans la continuité des chapitres ARTSN (médiation et normalisation, échange et résidence).
+
+#### Objets de données réalisés (ARTSN)
+
+- [DO-29 : Résumé international du patient](../../referentiel/objets-de-donnees/do-29.md)
+- [DO-30 : Section du résumé](../../referentiel/objets-de-donnees/do-30.md)
+- [DO-31 : Confiance internationale](../../referentiel/objets-de-donnees/do-31.md)
+
+#### Flux de valeur
+
+- [VS-02](../../referentiel/flux-valeur/vs-02.md)
+
+#### Réalise (ARTSN)
+
+- **Dictionnaire de données fonctionnelles** : [Dictionnaire de données fonctionnelles](../../02_artsn/03_objets-de-donnees/index.md)
 
 <!-- END:GENERATED -->
 

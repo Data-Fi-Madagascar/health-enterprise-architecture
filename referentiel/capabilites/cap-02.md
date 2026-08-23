@@ -32,10 +32,10 @@ Son absence fragilise la continuité des soins ([VS-01: Accéder à des services
 
 | Scénario | Description | Profils consommés |
 |----------|-------------|-------------------|
-| **Référence (S-03)** | Orientation d'un patient d'un niveau de soins vers un autre (CSB → hôpital régional) | [PT-01: Profil technique national](../profils/pt-01.md), [PT-02: Profil technique national](../profils/pt-02.md) |
-| **Contre-référence (S-04)** | Retour du patient vers l'établissement d'origine avec compte-rendu et recommandations | [PT-01: Profil technique national](../profils/pt-01.md), [PT-02: Profil technique national](../profils/pt-02.md) |
-| **Évacuation sanitaire nationale (S-05)** | Transfert urgent entre établissements nationaux | [PT-01: Profil technique national](../profils/pt-01.md), [PT-02: Profil technique national](../profils/pt-02.md), [PT-11: Profil technique national](../profils/pt-11.md) |
-| **Évacuation sanitaire internationale (S-05)** | Transfert vers un centre spécialisé à l'étranger | [PT-01: Profil technique national](../profils/pt-01.md), [PT-02: Profil technique national](../profils/pt-02.md), [PT-11: Profil technique national](../profils/pt-11.md), [PT-14: Interopérabilité transfrontalière](../profils/pt-14.md) |
+| **Référence (DO-07)** | Orientation d'un patient d'un niveau de soins vers un autre (CSB → hôpital régional) | [PT-01: Profil technique national](../profils/pt-01.md), [PT-02: Profil technique national](../profils/pt-02.md) |
+| **Contre-référence (DO-08)** | Retour du patient vers l'établissement d'origine avec compte-rendu et recommandations | [PT-01: Profil technique national](../profils/pt-01.md), [PT-02: Profil technique national](../profils/pt-02.md) |
+| **Évacuation sanitaire nationale (DO-09)** | Transfert urgent entre établissements nationaux | [PT-01: Profil technique national](../profils/pt-01.md), [PT-02: Profil technique national](../profils/pt-02.md), [PT-11: Profil technique national](../profils/pt-11.md) |
+| **Évacuation sanitaire internationale (DO-09)** | Transfert vers un centre spécialisé à l'étranger | [PT-01: Profil technique national](../profils/pt-01.md), [PT-02: Profil technique national](../profils/pt-02.md), [PT-11: Profil technique national](../profils/pt-11.md), [PT-14: Interopérabilité transfrontalière](../profils/pt-14.md) |
 
 ## Flux de valeur
 
