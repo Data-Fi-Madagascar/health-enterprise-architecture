@@ -77,7 +77,7 @@ Code alphanumérique unique attribué à chaque patient dans le référentiel na
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-14](../../referentiel/capabilites/cap-14.md) et contribue aux flux de valeur —. Il est porté par l'objet métier [BO-01 : Patient & identité](../../referentiel/objets-metier/bo-01.md) et traité dans les chapitres ARTSN [ART-2](../../referentiel/chapitres/art-2.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-7](../../referentiel/chapitres/art-7.md).
+Ce concept est mobilisé par les capacités [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-14](../../referentiel/capabilites/cap-14.md). Il est porté par l'objet métier [BO-01 : Patient & identité](../../referentiel/objets-metier/bo-01.md) et traité dans les chapitres ARTSN [ART-2](../../referentiel/chapitres/art-2.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-7](../../referentiel/chapitres/art-7.md).
 
 #### Attributs et contraintes
 
@@ -88,7 +88,6 @@ Ce concept est mobilisé par les capacités [CAP-01](../../referentiel/capabilit
 #### Rattachement
 
 - **Capacités** : [CAP-01](../../referentiel/capabilites/cap-01.md), [CAP-14](../../referentiel/capabilites/cap-14.md)
-- **Flux de valeur** : —
 - **Profils (PTISN)** : [PT-04 (identité nationale)](../../referentiel/profils/pt-04.md)
 - **Objet métier CAESN** : [BO-01 : Patient & identité](../../referentiel/objets-metier/bo-01.md)
 - **Chapitres ARTSN** : [ART-2](../../referentiel/chapitres/art-2.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-7](../../referentiel/chapitres/art-7.md)
@@ -745,7 +744,6 @@ Ce concept est mobilisé par les capacités [CAP-INT-13](../../referentiel/capac
 
 #### Rattachement
 
-- **Capacités** : —
 - **Capacités intégrées (CNISN)** : [CAP-INT-13](../../referentiel/capacites/cap-int-13.md)
 - **Flux de valeur** : [VS-01](../../referentiel/flux-valeur/vs-01.md)
 - **Profils (PTISN)** : [PT-14](../../referentiel/profils/pt-14.md)
@@ -770,7 +768,7 @@ Point d'ancrage de confiance numérique permettant la vérification mutuelle de 
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-15](../../referentiel/capabilites/cap-15.md) et contribue aux flux de valeur —. Il est porté par l'objet métier [BO-07 : Interopérabilité transfrontalière](../../referentiel/objets-metier/bo-07.md) et traité dans les chapitres ARTSN [ART-2](../../referentiel/chapitres/art-2.md), [ART-7](../../referentiel/chapitres/art-7.md).
+Ce concept est mobilisé par les capacités [CAP-15](../../referentiel/capabilites/cap-15.md). Il est porté par l'objet métier [BO-07 : Interopérabilité transfrontalière](../../referentiel/objets-metier/bo-07.md) et traité dans les chapitres ARTSN [ART-2](../../referentiel/chapitres/art-2.md), [ART-7](../../referentiel/chapitres/art-7.md).
 
 #### Attributs et contraintes
 
@@ -782,7 +780,6 @@ Ce concept est mobilisé par les capacités [CAP-15](../../referentiel/capabilit
 
 - **Capacités** : [CAP-15](../../referentiel/capabilites/cap-15.md)
 - **Capacités intégrées (CNISN)** : [CAP-INT-13](../../referentiel/capacites/cap-int-13.md)
-- **Flux de valeur** : —
 - **Profils (PTISN)** : [PT-14](../../referentiel/profils/pt-14.md)
 - **Objet métier CAESN** : [BO-07 : Interopérabilité transfrontalière](../../referentiel/objets-metier/bo-07.md)
 - **Chapitres ARTSN** : [ART-2](../../referentiel/chapitres/art-2.md), [ART-7](../../referentiel/chapitres/art-7.md)
