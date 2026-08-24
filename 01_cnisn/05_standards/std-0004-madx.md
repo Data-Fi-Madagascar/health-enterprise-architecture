@@ -56,6 +56,7 @@ Cette norme s'applique à :
 
 - **Principes** : PA-05 (Interopérabilité), PA-06 (Gouvernance des données)
 - **ARTSN** : ART-5 (Analytique et pilotage), ART-2 (Médiation)
+- **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/07_lots/index.md)
 - **PTISN** : PT-08 (Données agrégées)
 - **CNISN** : CAP-INT-05 (Données agrégées), CAP-INT-07 (Accès analytique)
 

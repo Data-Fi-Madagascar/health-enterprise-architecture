@@ -110,6 +110,4 @@ La plateforme interinstitutionnelle assure la confiance entre organisations.
 
 ------------------------------------------------------------------------
 
-*Rattachement : CMP-06, CAP-INT-03, ART-1, ART-2, ART-5, ART-7, ART-8 · fiche PT-02*
-
 <!-- END:GENERATED -->

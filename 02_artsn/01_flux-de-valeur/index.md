@@ -34,23 +34,31 @@ Les flux de valeur sont identiques à ceux définis par le CAESN. L'ARTSN les d�
 
 **Contenu normatif.** L'infrastructure technologique doit garantir l'unification des parcours de soins et l'intégration native des dossiers médicaux individuels à l'échelle du pays. Tout professionnel de santé (médecin, infirmier, pharmacien), quel que soit son point de service ou son mode d'exercice, doit pouvoir accéder de manière sécurisée à l'historique clinique partagé du patient. L'équité d'accès impose que la capacité de capture clinique soit pleinement opérationnelle en zone rurale isolée.
 
-**Statut : Stable.** : voir chapitre ART-3 (historisation événementielle) et ART-4a (résolution d'identité).
+**Couches mobilisées** : [Couche 1 (Infrastructure)](../05_cartographie/index.md#couche-1--infrastructure), [Couche 2 (Point de service)](../05_cartographie/index.md#couche-2--point-de-service), [Couche 3 (Échange, transport & ingestion)](../05_cartographie/index.md#couche-3--échange-transport-et-ingestion), [Couche 4 (Interopérabilité & services partagés)](../05_cartographie/index.md#couche-4--interopérabilité-et-services-partagés).
+
+**Statut : Stable.** : voir chapitre ART-3 (historisation événementielle) et ART-4A (résolution d'identité).
 
 ## VS-02 : Prévenir, détecter et répondre aux risques sanitaires
 
 **Contenu normatif.** La plateforme doit matérialiser l'approche **One Health** (Santé Unique) en organisant le croisement systématique et automatisé des signaux d'alertes issus de la santé humaine, de la santé animale (zoonoses) et de la surveillance environnementale (climat, pollution). Le système doit détecter les signaux faibles, isoler les clusters de symptômes anormaux de manière ultra-précoce et déclencher des alertes automatisées. En cas de crise validée, l'architecture doit soutenir la coordination immédiate des plans de contingence et la mobilisation des réponses intersectorielles.
 
-**Statut : Stable.** : voir ART-8b (modélisation en graphe) et ART-8d (chorégraphie inter-institutionnelle).
+**Couches mobilisées** : [Couche 3 (Échange, transport & ingestion)](../05_cartographie/index.md#couche-3--échange-transport-et-ingestion), [Couche 4 (Interopérabilité & services partagés)](../05_cartographie/index.md#couche-4--interopérabilité-et-services-partagés), [Couche 5 (Projections analytiques & Modèles)](../05_cartographie/index.md#couche-5--projections-analytiques-et-modèles), [Couche 6 (Pilotage, gouvernance & actions intersectorielles)](../05_cartographie/index.md#couche-6--pilotage-gouvernance-et-actions-intersectorielles).
+
+**Statut : Stable.** : voir ART-8B (modélisation en graphe) et ART-8D (chorégraphie inter-institutionnelle).
 
 ## VS-03 : Protéger financièrement la population face aux dépenses de santé
 
 **Contenu normatif.** L'architecture doit intégrer nativement les flux financiers et les régimes d'assurance maladie publique (Fonds d'équité, Couverture Santé Universelle) au cœur du point de service pour éradiquer les dépenses de santé catastrophiques. Le système a l'obligation de calculer et d'appliquer automatiquement les subventions, le tiers-payant ou la gratuité ciblée lors de la dispensation d'un soin ou d'un médicament, sans que le patient n'ait à avancer les fonds. La transparence absolue et l'immuabilité de ces transactions doivent être garanties pour éliminer tout risque de détournement de fonds ou de double facturation.
 
-**Statut : Stable.** : voir ART-4c (éligibilité et couverture) et ART-9 (garanties transactionnelles fortes).
+**Couches mobilisées** : [Couche 2 (Point de service)](../05_cartographie/index.md#couche-2--point-de-service), [Couche 4 (Interopérabilité & services partagés)](../05_cartographie/index.md#couche-4--interopérabilité-et-services-partagés), [Couche 5 (Projections analytiques & Modèles)](../05_cartographie/index.md#couche-5--projections-analytiques-et-modèles).
+
+**Statut : Stable.** : voir ART-4C (éligibilité et couverture) et ART-9 (garanties transactionnelles fortes).
 
 ## VS-04 : Piloter, coordonner et améliorer la performance du système de santé
 
 **Contenu normatif.** La plateforme nationale doit opérer la transformation automatique des données opérationnelles de terrain (cliniques, financières et logistiques) en indicateurs de performance macro-sanitaires (KPI) standardisés et incontestables. Les instances dirigeantes de l'État doivent disposer de tableaux de bord unifiés pour évaluer en temps réel l'efficacité des politiques publiques, mesurer la couverture vaccinale réelle, anticiper les ruptures de stocks et piloter la performance globale du système.
+
+**Couches mobilisées** : [Couche 4 (Interopérabilité & services partagés)](../05_cartographie/index.md#couche-4--interopérabilité-et-services-partagés), [Couche 5 (Projections analytiques & Modèles)](../05_cartographie/index.md#couche-5--projections-analytiques-et-modèles), [Couche 6 (Pilotage, gouvernance & actions intersectorielles)](../05_cartographie/index.md#couche-6--pilotage-gouvernance-et-actions-intersectorielles).
 
 **Statut : Stable.** : voir ART-6 (analytique et restitution) et Couche 6 (pilotage).
 
@@ -66,13 +74,13 @@ Les flux de valeur sont identiques à ceux définis par le CAESN. L'ARTSN les d�
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
 - **CAESN** : Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)
 - **ART-3 (historisation événementielle)** : Historisation événementielle et profils de déploiement (`referentiel/chapitres/art-3.md`)
-- **ART-4a (résolution d'identité)** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
-- **ART-8b (modélisation en graphe)** : Modélisation de relations en graphe (`referentiel/chapitres/art-8b.md`)
-- **ART-8d (chorégraphie inter-institutionnelle)** : Chorégraphie inter-institutionnelle (`referentiel/chapitres/art-8d.md`)
-- **ART-4c (éligibilité et couverture)** : Éligibilité et couverture (`referentiel/chapitres/art-4c.md`)
+- **ART-4A (résolution d'identité)** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
+- **ART-8B (modélisation en graphe)** : Modélisation de relations en graphe (`referentiel/chapitres/art-8b.md`)
+- **ART-8D (chorégraphie inter-institutionnelle)** : Chorégraphie inter-institutionnelle (`referentiel/chapitres/art-8d.md`)
+- **ART-4C (éligibilité et couverture)** : Éligibilité et couverture (`referentiel/chapitres/art-4c.md`)
 - **ART-9 (garanties transactionnelles fortes)** : Garanties transactionnelles fortes (`referentiel/chapitres/art-9.md`)
 - **ART-6 (analytique et restitution)** : Analytique et restitution (`referentiel/chapitres/art-6.md`)
 - **Fondations** : Fondations de l'ARTSN (`02_artsn/00_fondations/index.md`)
 - **Exigences contextuelles nationales** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
-- **Chapitres et patterns de référence** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
+- **Chapitres et patterns de référence** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **CAESN : flux de valeur** : Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)

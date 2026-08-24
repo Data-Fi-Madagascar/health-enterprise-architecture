@@ -60,6 +60,7 @@ Ce standard ne remplace pas la CIM-10 (STD-0006) ni LOINC : il les complète pou
 
 - **Principes** : PA-05 (Interopérabilité), PA-06 (Gouvernance des données)
 - **ARTSN** : ART-2 (Médiation et normalisation), F.2 (Normalisation)
+- **ARTSN — lots consommateurs** : [L1 — Infrastructure & sécurité](../../02_artsn/07_lots/index.md)
 - **PTISN** : PT-07 (Terminologie et codification)
 - **CNISN** : CAP-INT-11 (Qualité et réconciliation)
 - **Norme existante** : STD-0006 (CIM-10 + LOINC) : SNOMED CT en complément
@@ -86,4 +87,4 @@ Toute dérogation doit être justifiée et approuvée par le Comité National.
 - **Normes et standards** : Index des normes et standards (`01_cnisn/05_standards/index.md`)
 - **STD-0006 : CIM-10 + LOINC** : Norme terminologique obligatoire (`01_cnisn/05_standards/std-0006-terminologie.md`)
 - **PT-07 : Terminologie et codification** (`03_ptisn/03_profils/pt-07-terminologie-codification.md`)
-- **ART-2 : Médiation et normalisation** (`02_artsn/03_chapitres/art-2-mediation-normalisation.md`)
+- **ART-2 : Médiation et normalisation** (`02_artsn/04_patterns/art-2-mediation-normalisation.md`)

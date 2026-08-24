@@ -5,10 +5,11 @@ id: ART-0
 type: chapitre
 niveau: "3"
 title: Accords de partage inter-institutionnels
-status: draft
+status: candidate
+maturity_condition: "Confirmation par une initiative impliquant une source hors gouvernance sanitaire"
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/03_chapitres/art-0-accords-partage.md
+envelope: 02_artsn/04_patterns/art-0-accords-partage.md
 maps_to: []
 implements: []
 applies_to: ["ENF-4"]

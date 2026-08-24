@@ -83,6 +83,4 @@ Aucun produit national n’est encore retenu.
 
 ------------------------------------------------------------------------
 
-*Rattachement : CMP-16, CAP-INT-06, F-3, F-4, ART-1, ART-2 · fiche PT-03*
-
 <!-- END:GENERATED -->

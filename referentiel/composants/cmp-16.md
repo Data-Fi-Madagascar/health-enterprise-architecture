@@ -2,12 +2,13 @@
 domain: composants
 id: CMP-16
 type: composant-applicatif
+categorie: applicatif
 niveau: "1"
 title: Registre de schémas (F.3)
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/04_cartographie-cible/composants.md
+envelope: 02_artsn/05_cartographie/composants.md
 maps_to: ["CAP-INT-10"]
 implements: ["ART-5"]
 applies_to: ["PRC-07", "PRC-08"]

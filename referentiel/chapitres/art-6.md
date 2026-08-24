@@ -6,9 +6,10 @@ type: chapitre
 niveau: "3"
 title: Analytique et restitution
 status: draft
+maturity_condition: "Confirmation par une initiative combinant plusieurs familles de projection"
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/03_chapitres/art-6-analytique-restitution.md
+envelope: 02_artsn/04_patterns/art-6-analytique-restitution.md
 maps_to: ["CAP-13", "CAP-08"]
 implements: []
 applies_to: ["ENF-4"]

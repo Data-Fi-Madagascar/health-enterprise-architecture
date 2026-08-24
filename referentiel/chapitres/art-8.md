@@ -8,7 +8,7 @@ title: Orchestration de processus
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/03_chapitres/art-8-orchestration-processus-borne.md
+envelope: 02_artsn/04_patterns/art-8-orchestration-processus-borne.md
 maps_to: ["CAP-13", "CAP-14"]
 implements: []
 applies_to: []

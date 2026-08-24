@@ -78,6 +78,7 @@ Il offre :
 | OpenEHR | Modèle différent, moins de traction internationale |
 
 ## Références
+- **ARTSN — lots consommateurs** : [L2 — Applications terrain](../../02_artsn/07_lots/index.md), [L4 — Analytique & pilotage](../../02_artsn/07_lots/index.md)
 
 - ARTSN : Fondation F.2
 - ARTSN : Fondation F.3

@@ -43,7 +43,7 @@ Les scénarios métier : référence, contre-référence et évacuation sanitair
 └─────────────────────────────────────────────────────────────┘
 ```
 
-## Scénario 1 : Référence (S-03)
+## Scénario 1 : Référence (DO-07)
 
 La référence désigne l'orientation d'un patient d'un niveau de soins vers un autre, par exemple d'un CSB vers un hôpital régional. Le CSB rural initie une demande de référence (`ServiceRequest` de type referral) qui est transmise via la médiation nationale à l'hôpital régional. Ce dernier valide et accepte la demande, puis le CSB transmet les données cliniques minimales du patient : résumé IPS comprenant allergies, médicaments, conditions et documents de référence : via la médiation nationale vers l'hôpital de destination.
 
@@ -72,7 +72,7 @@ Les profils consommés sont le PT-01 (transport des messages via X-Road ou API G
 | **PT-07** | Mapping terminologique (codes CSB → CIM-10 / LOINC) |
 | **PT-12** | Traçabilité de l'événement de référence |
 
-## Scénario 2 : Contre-référence (S-04)
+## Scénario 2 : Contre-référence (DO-08)
 
 La contre-référence correspond au retour du patient vers l'établissement d'origine après prise en charge spécialisée, accompagné d'un compte-rendu et de recommandations. L'hôpital régional transmet un `ServiceRequest` (type referral) enrichi d'un `DocumentReference` contenant le compte-rendu de la prise en charge spécialisée. La médiation nationale valide et route la demande vers le CSB rural d'origine. Ce dernier accepte le retour et transmet les instructions de suivi, incluant les `MedicationRequest` (traitements à poursuivre) et le `CarePlan` (plan de suivi recommandé).
 
@@ -102,7 +102,7 @@ Les profils consommés sont le PT-01 (transport des messages), le PT-02 (médiat
 | **PT-11** | Consentement pour le retour d'information |
 | **PT-12** | Traçabilité |
 
-## Scénario 3 : Évacuation sanitaire (S-05)
+## Scénario 3 : Évacuation sanitaire (DO-09)
 
 ### 3a. Évacuation nationale (EVA-N1/N2)
 
@@ -168,10 +168,10 @@ Le profil supplémentaire mobilisé pour l'international est le PT-14 (confiance
 
 | Scénario | PT-01 | PT-02 | PT-04 | PT-07 | PT-11 | PT-12 | PT-14 |
 |----------|-------|-------|-------|-------|-------|-------|-------|
-| Référence (S-03) | ● | ● | ● | ● | ○ | ● | : |
-| Contre-référence (S-04) | ● | ● | ● | ○ | ● | ● | : |
-| Évacuation nationale (S-05 N) | ● | ● | ● | ○ | ● | ● | : |
-| Évacuation internationale (S-05 I) | ● | ● | ● | ○ | ● | ● | ● |
+| Référence (DO-07) | ● | ● | ● | ● | ○ | ● | : |
+| Contre-référence (DO-08) | ● | ● | ● | ○ | ● | ● | : |
+| Évacuation nationale (DO-09 N) | ● | ● | ● | ○ | ● | ● | : |
+| Évacuation internationale (DO-09 I) | ● | ● | ● | ○ | ● | ● | ● |
 
 Légende : ● requis · ○ optionnel · : non applicable
 
@@ -179,15 +179,15 @@ Légende : ● requis · ○ optionnel · : non applicable
 
 | Exigence | Source | Applicable à |
 |----------|--------|--------------|
-| ENF-5 : Coordination processus complexes | ART-8a | Les 3 scénarios |
+| ENF-5 : Coordination processus complexes | ART-8A | Les 3 scénarios |
 | EXG-TF-01 à TF-08 | CAP-INT-13 | Évacuation internationale |
 | Consentement (PT-11) | CAP-INT-09 | Tous les scénarios |
 
 ## Liens
 
-- S-03 : Référence
-- S-04 : Contre-référence
-- S-05 : Évacuation sanitaire
+- DO-07 : Référence
+- DO-08 : Contre-référence
+- DO-09 : Évacuation sanitaire
 - PT-01 : Échange interinstitutionnel
 - PT-02 : Médiation intra-secteur
 - PT-11 : Consentement
@@ -196,9 +196,9 @@ Légende : ● requis · ○ optionnel · : non applicable
 
 ## Références
 
-- **S-03 : Référence** : Dictionnaire de données fonctionnelles (`02_artsn/05_dictionnaire/index.md`)
-- **S-04 : Contre-référence** : Dictionnaire de données fonctionnelles (`02_artsn/05_dictionnaire/index.md`)
-- **S-05 : Évacuation sanitaire** : Dictionnaire de données fonctionnelles (`02_artsn/05_dictionnaire/index.md`)
+- **DO-07 : Référence** : Dictionnaire de données fonctionnelles (`02_artsn/03_objets-de-donnees/index.md`)
+- **DO-08 : Contre-référence** : Dictionnaire de données fonctionnelles (`02_artsn/03_objets-de-donnees/index.md`)
+- **DO-09 : Évacuation sanitaire** : Dictionnaire de données fonctionnelles (`02_artsn/03_objets-de-donnees/index.md`)
 - **PT-01 : Échange interinstitutionnel** : Profil technique national (`03_ptisn/03_profils/pt-01-echange-interinstitutionnel.md`)
 - **PT-02 : Médiation intra-secteur** : Profil technique national (`03_ptisn/03_profils/pt-02-mediation-intra-secteur.md`)
 - **PT-11 : Consentement** : Profil technique national (`03_ptisn/03_profils/pt-11-consentement-bases-autorisation.md`)

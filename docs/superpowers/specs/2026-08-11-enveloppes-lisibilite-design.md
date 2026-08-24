@@ -35,7 +35,7 @@ Rendre chaque enveloppe autoportante et lisible sans réintroduire de duplicatio
 
 **51 fichiers distincts touchés**, couvrant les **150 objets** du référentiel — chaque objet est publié exactement une fois.
 
-Décompte : 35 monographies + 14 catalogues + 2 fichiers de tableau. `02_artsn/03_chapitres/index.md` relève à la fois du mode catalogue (il est le `source:` de `ART-10` et `ART-11`) et du mode tableau (il indexe les 20 chapitres) ; il n'est compté qu'une fois.
+Décompte : 35 monographies + 14 catalogues + 2 fichiers de tableau. `02_artsn/04_patterns/index.md` relève à la fois du mode catalogue (il est le `source:` de `ART-10` et `ART-11`) et du mode tableau (il indexe les 20 chapitres) ; il n'est compté qu'une fois.
 
 ### 4.1 Mode monographie — 35 fichiers (1 objet par enveloppe)
 
@@ -44,7 +44,7 @@ L'objet **est** le document. Vérifié : les 35 titres H1 de l'enveloppe sont **
 | Fichiers | Nombre | Objets |
 |---|---|---|
 | `00_caesn/01_value-streams/vs-0{1..4}-*.md` | 4 | `VS-01`…`VS-04` |
-| `02_artsn/03_chapitres/art-*.md` | 18 | `ART-0`…`ART-9`, `ART-4A-d`, `ART-8A-d` |
+| `02_artsn/04_patterns/art-*.md` | 18 | `ART-0`…`ART-9`, `ART-4A-d`, `ART-8A-d` |
 | `03_ptisn/03_profils/pt-{01..13}-*.md` | 13 | `PT-01`…`PT-13` |
 
 ### 4.2 Mode catalogue — 14 fichiers (N objets par enveloppe)
@@ -63,7 +63,7 @@ Les objets s'insèrent sous un titre `## Catalogue …` existant, en `###`.
 | `01_cnisn/02_capacites.md` | 12 (`CAP-INT-01`…`CAP-INT-12`) |
 | `02_artsn/00_fondations.md` | 6 (`F-1`…`F-6`) |
 | `02_artsn/02_exigences-contextuelles.md` | 5 (`ENF-1`…`ENF-5`) |
-| `02_artsn/03_chapitres/index.md` | 2 (`ART-10`, `ART-11`) + tableau de navigation (cf. 4.3) |
+| `02_artsn/04_patterns/index.md` | 2 (`ART-10`, `ART-11`) + tableau de navigation (cf. 4.3) |
 
 Effet de bord voulu : `F-5`/`F-6` et `ART-10`/`ART-11`, aujourd'hui `status: candidate` et **absents des catalogues**, deviennent visibles avec un badge de statut.
 
@@ -71,7 +71,7 @@ Effet de bord voulu : `F-5`/`F-6` et `ART-10`/`ART-11`, aujourd'hui `status: can
 
 Tableau généré `code | titre canonique | rattachement | statut | fiche`.
 
-- `02_artsn/03_chapitres/index.md` — les 20 chapitres (ce fichier combine tableau et catalogue)
+- `02_artsn/04_patterns/index.md` — les 20 chapitres (ce fichier combine tableau et catalogue)
 - `03_ptisn/03_profils/pt-00-index.md` — les 13 profils
 - `01_cnisn/08_annexes/a-matrice-principes-capacites.md` — les 12 capacités et 25 principes
 

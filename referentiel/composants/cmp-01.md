@@ -2,12 +2,13 @@
 domain: composants
 id: CMP-01
 type: composant-applicatif
+categorie: applicatif
 niveau: "1"
 title: Tableaux de bord & Portails nationaux (performance, CSU, ressources, veille)
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/04_cartographie-cible/composants.md
+envelope: 02_artsn/05_cartographie/composants.md
 maps_to: ["CAP-INT-07", "CAP-INT-11"]
 implements: ["ART-6"]
 applies_to: ["PRC-10", "PRC-11", "PRC-12"]

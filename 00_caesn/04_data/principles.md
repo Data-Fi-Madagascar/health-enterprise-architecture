@@ -44,8 +44,6 @@ Les données produites par le système de santé constituent un actif stratégiq
 
 La gouvernance des données de santé relève du Ministère de la Santé Publique. Aucun partenaire ne peut en revendiquer le contrôle exclusif, ni restreindre l’accès des autorités nationales aux données dont la finalité de santé publique justifie l’usage. Les règles d’accès, de partage et de réutilisation sont définies par l’État, pas par les fournisseurs ou les bailleurs.
 
-*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-01*
-
 ### Une donnée doit être collectée une seule fois et réutilisée plusieurs fois
 
 #### Signification
@@ -55,8 +53,6 @@ La collecte répétée d’une même donnée à plusieurs endroits crée de la c
 #### Implications
 
 Toute nouvelle collecte vérifie d’abord l’existence de données déjà disponibles dans les systèmes ou référentiels nationaux. La donnée existante est réutilisée par référence ; une saisie supplémentaire n’est justifiée que si la donnée n’existe nulle part à la qualité requise.
-
-*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-02*
 
 ### Les référentiels nationaux sont les sources de vérité
 
@@ -68,8 +64,6 @@ Les données clés du système de santé doivent être rattachées à des réfé
 
 Les systèmes utilisent les référentiels nationaux (formations sanitaires, géographie, indicateurs, agents, produits, bénéficiaires) au lieu de créer leurs propres listes locales. Les identifiants de référence sont partagés et résolus auprès du référentiel officiel, y compris en mode hors ligne via des copies synchronisées autorisées.
 
-*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-03*
-
 ### Les données opérationnelles et analytiques doivent être distinguées
 
 #### Signification
@@ -79,8 +73,6 @@ Les systèmes de prestation et les systèmes de reporting répondent à des beso
 #### Implications
 
 Les données circulent des systèmes opérationnels vers les systèmes analytiques selon des règles d’intégration, de qualité et de sécurité. Les deux types de systèmes coexistent avec des responsabilités distinctes, et les flux entre eux sont définis, pas improvisés.
-
-*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-04*
 
 ### La qualité des données est une responsabilité partagée
 
@@ -92,8 +84,6 @@ La qualité des données ne peut être imposée uniquement par le niveau central
 
 Les systèmes intègrent des contrôles à la saisie, des retours aux producteurs de données et des revues régulières de qualité. Les responsabilités sont réparties entre les producteurs, les gestionnaires de référentiels et le niveau central, chacun avec des indicateurs mesurables.
 
-*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-05*
-
 ### Les données doivent être utilisées pour des décisions réelles
 
 #### Signification
@@ -103,8 +93,6 @@ Un tableau de bord n’a de valeur que s’il soutient un processus de décision
 #### Implications
 
 Toute production de rapports ou de visualisations est liée à une revue, un arbitrage, une allocation de ressources ou une action d’amélioration. Chaque indicateur publié a un décideur, un rythme de revue et un usage concret documenté.
-
-*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-06*
 
 ### Les données personnelles de santé doivent être protégées dès la conception
 
@@ -116,8 +104,6 @@ La confiance dans le système national dépend de la protection des données sen
 
 Confidentialité, gestion des accès, traçabilité, consentement et limitation des usages sont intégrés dès la conception. Ces garanties s’appliquent à toutes les données personnelles de santé, quel que soit le système qui les traite, y compris en mode hors ligne et lors des échanges interinstitutionnels.
 
-*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-07*
-
 ### Les échanges de données doivent passer par des mécanismes gouvernés
 
 #### Signification
@@ -127,8 +113,6 @@ Les échanges directs, informels ou propriétaires entre systèmes augmentent le
 #### Implications
 
 Les échanges utilisent la couche nationale d’échange ou les mécanismes homologués par l’architecture de référence technique. Un échange hors de ces mécanismes est une exception documentée, limitée dans le temps et soumise à validation.
-
-*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-08*
 
 <!-- END:GENERATED -->
 ## Liens

@@ -21,7 +21,7 @@ tags: ["artsn", "niveau-3", "exigence", "ENF-4"]
 
 **Contenu normatif.** Le partage d’informations intersectoriel à des fins de recherche ou d’alerte épidémique précoce doit préserver la souveraineté de chaque institution, respecter le secret médical et protéger la vie privée des citoyens. Les pipelines de traitement analytique ont l’obligation d’opérer sur des données **définitivement dépouillées de tout identifiant direct** (Noms, INS). Les corrélations entre secteurs ne doivent s’effectuer qu’avec des dimensions de rapprochement **neutres et non nominatives** : l’espace géographique et le temps.
 
-**Statut : Stable.** — appliqué par [ART-0 (accords de partage)](../chapitres/art-0.md), [ART-4b (bases d’autorisation)](../chapitres/art-4b.md), [ART-4d (référentiel géospatial)](../chapitres/art-4d.md).
+**Statut : Stable.** — appliqué par [ART-0 (accords de partage)](../chapitres/art-0.md), [ART-4B (bases d’autorisation)](../chapitres/art-4b.md), [ART-4D (référentiel géospatial)](../chapitres/art-4d.md).
 
 ## Justification
 
@@ -43,11 +43,11 @@ Le croisement de données massives entre Santé, Agriculture/Élevage et Environ
 ## Fondations et chapitres garants
 
 - [ART-0: Accords de partage inter-institutionnels](../chapitres/art-0.md) — Accords de partage inter-institutionnels
-- **ART-4b** — Bases d'autorisation
-- **ART-4d** — Référentiel géospatial et d'exploitation partagé
+- **ART-4B** — Bases d'autorisation
+- **ART-4D** — Référentiel géospatial et d'exploitation partagé
 - **F.2** — Préservation de la souveraineté intersectorielle
 - [ART-2: Médiation et normalisation](../chapitres/art-2.md) — Médiation et normalisation
 - [ART-6: Analytique et restitution](../chapitres/art-6.md) — Analytique et restitution
-- **ART-8b** — Modélisation de relations en graphe
-- **ART-8d** — Chorégraphie inter-institutionnelle
+- **ART-8B** — Modélisation de relations en graphe
+- **ART-8D** — Chorégraphie inter-institutionnelle
 - [ART-4: Référentiels de métadonnées de gestion](../chapitres/art-4.md) — Référentiels de métadonnées de gestion

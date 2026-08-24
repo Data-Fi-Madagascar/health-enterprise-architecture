@@ -84,6 +84,4 @@ Son architecture ne devient pas automatiquement obligatoire pour toutes les init
 
 ------------------------------------------------------------------------
 
-*Rattachement : CMP-03, CMP-04, CAP-INT-07, ART-3, ART-5, ART-6, ART-7 · fiche PT-09*
-
 <!-- END:GENERATED -->

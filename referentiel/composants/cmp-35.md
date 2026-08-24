@@ -1,24 +1,20 @@
 ---
 domain: composants
 id: CMP-35
-type: composant-applicatif
+type: composant-securite
+categorie: securite
 niveau: "1"
 title: Infrastructure de cles publiques (PKI)
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/04_cartographie-cible/composants.md
+envelope: 02_artsn/05_cartographie/composants.md
 implements: ["ART-7"]
-applies_to: ["PRC-01", "PRC-02", "PRC-03", "PRC-04", "PRC-05", "PRC-06", "PRC-07", "PRC-08", "PRC-09", "PRC-10", "PRC-11", "PRC-12"]
+uses: ["CMP-26", "CMP-27", "CMP-28", "CMP-29", "CMP-30", "CMP-31"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-35", "axe-securite"]
 ---
-
 # CMP-35 : Infrastructure de cles publiques (PKI)
-
-## Contenu normatif.
-
-(A completer : decrire le contenu normatif et la discipline de mise en oeuvre de ce composant.)
-
-## Liens
-
-- [ART-7 : Securite, controle d'acces](../chapitres/art-7.md)
+**Contenu normatif.** Ce composant opere la PKI nationale du systeme de sante numerique : il emet, rotate et revoque les certificats des acteurs, structures et dispositifs, et fournit les services d'horodatage et de signature. Il est l'autorite de confiance a la base de l'authentification et du chiffrement.
+**Discipline de mise en oeuvre.** Tout composant et toute liaison s'authentifie par certificat. La chaine de confiance est sous autorite nationale et ses racines sont protegees. La rotation des cles est planifiee et la revocation diffusee sans delai. Les operations de signature sont conformes aux normes en vigueur.
+- **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../chapitres/art-7.md).
+- **Statut : Brouillon.**

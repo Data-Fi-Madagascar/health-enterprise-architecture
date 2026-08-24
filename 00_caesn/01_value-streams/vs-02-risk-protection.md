@@ -67,8 +67,6 @@ Ce flux couvre l’ensemble du cycle de la santé publique, depuis l’identific
 - [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md)
 - [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md)
 
-*Rattachement : CAP-04, CAP-05, CAP-06, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, PP-03, PP-04, PP-07, PP-08, CAP-17, CAP-18 · fiche VS-02*
-
 <!-- END:GENERATED -->
 ## Étapes de valeur
 
@@ -101,8 +99,6 @@ Données épidémiologiques non agrégées ou non actualisées, faible couvertur
 
 Couverture des campagnes de prévention, taux de vaccination
 
-*Rattachement : CAP-06, CAP-04 · fiche VS-02-01*
-
 ### Surveillance et détection
 
 #### Objectif
@@ -128,8 +124,6 @@ Sous-déclaration des cas, rapports incomplets ou hors délais
 #### Indicateurs
 
 Complétude et promptitude des rapports, taux de signaux détectés
-
-*Rattachement : CAP-05, CAP-13 · fiche VS-02-02*
 
 ### Notification et alerte
 
@@ -157,8 +151,6 @@ Délai de notification trop long, chaîne d'alerte défaillante
 
 Délai moyen de notification d'une alerte
 
-*Rattachement : CAP-05, CAP-13 · fiche VS-02-03*
-
 ### Vérification et investigation
 
 #### Objectif
@@ -184,8 +176,6 @@ Capacité d'investigation insuffisante, réactifs manquants, accès géographiqu
 #### Indicateurs
 
 Délai d'investigation, proportion d'alertes vérifiées dans les délais
-
-*Rattachement : CAP-05, CAP-13 · fiche VS-02-04*
 
 ### Riposte
 
@@ -213,8 +203,6 @@ Ressources de riposte insuffisantes, coordination inter-agences défaillante
 
 Délai de déploiement de la riposte, taux de contrôle de l'épidémie
 
-*Rattachement : CAP-05, CAP-13, CAP-14 · fiche VS-02-05*
-
 ### Suivi de situation et clôture
 
 #### Objectif
@@ -240,8 +228,6 @@ Manque de données en temps réel, communication insuffisante vers la population
 #### Indicateurs
 
 Taux de létalité, durée de l'épisode épidémique
-
-*Rattachement : CAP-05, CAP-13 · fiche VS-02-06*
 
 ### Capitalisation et amélioration
 
@@ -269,8 +255,6 @@ Revues après action non systématiques, recommandations non suivies d'effet
 
 Nombre de revues après action, proportion de recommandations mises en œuvre
 
-*Rattachement : CAP-05, CAP-13 · fiche VS-02-07*
-
 <!-- END:GENERATED -->
 ## Processus métier
 
@@ -296,8 +280,6 @@ Direction de la Protection Sociale et de la Promotion de la Santé, programmes, 
 
 Couverture des campagnes de prévention, taux de vaccination, complétude et promptitude des rapports, taux de signaux détectés
 
-*Rattachement : CAP-04, CAP-05, CAP-06, CAP-13, CAP-14, CAP-15, CAP-17, CMP-07, CMP-08, CMP-11, CMP-13, CMP-15, CMP-17, CMP-18 · fiche PRC-04*
-
 ### Alerte, investigation et riposte
 
 #### Objectif
@@ -318,8 +300,6 @@ District sanitaire, région, direction centrale, OMS, équipe d'investigation, l
 
 Délai moyen de notification d'une alerte, délai d'investigation, proportion d'alertes vérifiées dans les délais, délai de déploiement de la riposte, taux de contrôle de l'épidémie
 
-*Rattachement : CAP-04, CAP-05, CAP-13, CAP-14, CAP-15, CAP-17, CAP-18, CMP-02, CMP-04, CMP-07, CMP-08, CMP-11, CMP-13, CMP-14, CMP-15, CMP-17, CMP-18 · fiche PRC-05*
-
 ### Clôture et capitalisation des épisodes
 
 #### Objectif
@@ -338,8 +318,6 @@ Comité de gestion de crise, direction centrale, comité technique national
 #### Indicateurs
 
 Taux de létalité, durée de l'épisode épidémique, nombre de revues après action, proportion de recommandations mises en œuvre
-
-*Rattachement : CAP-03, CAP-13, CAP-14, CAP-15, CMP-07, CMP-11, CMP-14, CMP-15, CMP-17, CMP-18 · fiche PRC-06*
 
 <!-- END:GENERATED -->
 ## Liens

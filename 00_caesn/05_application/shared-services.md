@@ -98,7 +98,7 @@ Identité patient/bénéficiaire, identité agent, authentification et gestion d
 - **CAP-INT-05** : CAP-INT-05 : Terminologie et codification communes (`referentiel/capacites/cap-int-05.md`)
 - **ART-4** : Référentiels de métadonnées de gestion (`referentiel/chapitres/art-4.md`)
 - **ART-4D** : Référentiel géospatial et d'exploitation partagé (`referentiel/chapitres/art-4d.md`)
-- **fiche** : Registre d'éligibilité et de couverture (CSU : ART-4c) (`referentiel/composants/cmp-12.md`)
+- **fiche** : Registre d'éligibilité et de couverture (CSU : ART-4C) (`referentiel/composants/cmp-12.md`)
 - **PRC-05** : Alerte, investigation et riposte (`referentiel/processus/prc-05.md`)
 - **PRC-09** : Remboursement et régulation des mécanismes (`referentiel/processus/prc-09.md`)
 - **CAP-INT-01** : CAP-INT-01 : Résolution d’identité du bénéficiaire (`referentiel/capacites/cap-int-01.md`)

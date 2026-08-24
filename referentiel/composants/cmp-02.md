@@ -2,12 +2,13 @@
 domain: composants
 id: CMP-02
 type: composant-applicatif
+categorie: applicatif
 niveau: "1"
 title: Centre de commande & Crises intersectorielles (alertes, crises, veille)
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/04_cartographie-cible/composants.md
+envelope: 02_artsn/05_cartographie/composants.md
 maps_to: ["CAP-INT-07"]
 implements: ["ART-5", "ART-0"]
 applies_to: ["PRC-05", "PRC-11"]

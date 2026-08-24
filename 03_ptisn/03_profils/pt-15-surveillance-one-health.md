@@ -28,7 +28,7 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 | **Partenaires** | OIE/WAHIS, FAO, GBIF, WMO, CDC Africa, instituts nationaux vétérinaires |
 | **Flux** | Surveillance zoonotique, alertes One Health, données climatiques, biodiversité |
 | **Standards** | FHIR R4, mADX, OIE-WAHIS, GBIF, WMO BUFR |
-| **Chapitres ARTSN** | [ART-11: Coordination intersectorielle](../../referentiel/chapitres/art-11.md), [ART-0: Accords](../../referentiel/chapitres/art-0.md), ART-4d (Référentiels vétérinaires), ART-8b (Surveillance) |
+| **Chapitres ARTSN** | [ART-11: Coordination intersectorielle](../../referentiel/chapitres/art-11.md), [ART-0: Accords](../../referentiel/chapitres/art-0.md), ART-4D (Référentiels vétérinaires), ART-8B (Surveillance) |
 
 ## Standards et profils applicables
 
@@ -131,7 +131,5 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 | [ART-11: Coordination intersectorielle](../../referentiel/chapitres/art-11.md) | Chapitre ARTSN | Active |
 | [CAP-INT-14: Échanges intersectoriels One Health](../../referentiel/capacites/cap-int-14.md) | Capacité CNISN | Créée |
 | [CAP-18: Coordination intersectorielle (One Health)](../../referentiel/capabilites/cap-18.md) | Capabilité CAESN | Active |
-
-*Rattachement : CAP-INT-14, CAP-18, CAP-05, ART-11, ART-0, ART-4D, ART-8B, CMP-02, CMP-04, CMP-06 · fiche PT-15*
 
 <!-- END:GENERATED -->

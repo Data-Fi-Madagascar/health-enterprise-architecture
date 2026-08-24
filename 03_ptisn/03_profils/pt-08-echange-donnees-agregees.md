@@ -83,6 +83,4 @@ Le profil mADX doit être évalué comme contrat cible d’entrée et de sortie 
 
 ------------------------------------------------------------------------
 
-*Rattachement : CMP-03, CMP-06, CAP-INT-03, CAP-INT-07, ART-1, ART-2, ART-5, ART-6 · fiche PT-08*
-
 <!-- END:GENERATED -->

@@ -21,7 +21,7 @@ tags: ["ptisn", "niveau-4", "profils", "PT-11"]
 ## 2. Chapitres ART applicables
 
 - [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md) ;
-- ART-4b ;
+- ART-4B ;
 - [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../referentiel/chapitres/art-7.md) ;
 - [ART-11: Coordination intersectorielle](../../referentiel/chapitres/art-11.md).
 
@@ -67,7 +67,5 @@ Selon le contexte, un traitement peut reposer sur :
 - articulation avec les mandats de santé publique.
 
 ------------------------------------------------------------------------
-
-*Rattachement : CMP-12, CAP-INT-09, ART-0, ART-4B, ART-7, ART-11 · fiche PT-11*
 
 <!-- END:GENERATED -->

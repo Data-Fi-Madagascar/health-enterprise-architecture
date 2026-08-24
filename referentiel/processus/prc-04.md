@@ -13,7 +13,7 @@ implements: []
 applies_to: ["CAP-04", "CAP-05", "CAP-06", "CAP-13", "CAP-14", "CAP-15", "CAP-17"]
 related: ["VS-02-01", "VS-02-02", "VS-02"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-04"]
-uses: ["CMP-24", "CMP-25", "CMP-26", "CMP-27", "CMP-28", "CMP-29", "CMP-30", "CMP-31", "CMP-32", "CMP-33", "CMP-34", "CMP-35", "CMP-36", "CMP-37", "CMP-38", "CMP-39", "CMP-40", "CMP-41", "CMP-42", "CMP-43", "CMP-44", "CMP-45", "CMP-46"]
+uses: ["CMP-07", "CMP-08", "CMP-11", "CMP-13", "CMP-15", "CMP-17", "CMP-18", "CMP-24", "CMP-25"]
 ---
 # Veille, prévention et surveillance sanitaire
 

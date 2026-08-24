@@ -13,7 +13,7 @@ implements: []
 applies_to: ["CAP-01", "CAP-03", "CAP-09", "CAP-10", "CAP-11", "CAP-13", "CAP-14", "CAP-15"]
 related: ["VS-01-03", "VS-01-04", "VS-01-05", "VS-01"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-02"]
-uses: ["CMP-19", "CMP-20", "CMP-21", "CMP-26", "CMP-27", "CMP-28", "CMP-29", "CMP-30", "CMP-31", "CMP-32", "CMP-33", "CMP-34", "CMP-35", "CMP-36", "CMP-37", "CMP-38", "CMP-39", "CMP-40", "CMP-41", "CMP-42", "CMP-43", "CMP-44", "CMP-45", "CMP-46"]
+uses: ["CMP-19", "CMP-20", "CMP-21"]
 ---
 # Prestation des soins cliniques
 

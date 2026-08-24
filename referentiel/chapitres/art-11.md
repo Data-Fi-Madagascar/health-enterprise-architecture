@@ -7,7 +7,7 @@ title: Coordination intersectorielle
 status: stable
 owner: DEPSI
 version: "1.0"
-envelope: 02_artsn/03_chapitres/art-11-coordination-intersectorielle.md
+envelope: 02_artsn/04_patterns/art-11-coordination-intersectorielle.md
 maps_to: ["CAP-08", "CAP-18", "CAP-INT-14"]
 implements: []
 applies_to: ["ENF-4"]

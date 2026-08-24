@@ -20,7 +20,7 @@ tags: ["ptisn", "niveau-4", "profils", "PT-16"]
 
 ## 2. Chapitres ART applicables
 
-- ART-8a — orchestration de processus borné ;
+- ART-8A — orchestration de processus borné ;
 - [ART-7: sécurité.](../../referentiel/chapitres/art-7.md)
 
 ## 3. Service national
@@ -116,7 +116,5 @@ Le médiateur ([PT-02: Profil technique national](../../referentiel/profils/pt-0
 L'orchestrateur ([PT-16: Orchestration de processus bornés](../../referentiel/profils/pt-16.md)) coordonne les processus métier multi-étapes et garantit la cohérence des parcours.
 
 ------------------------------------------------------------------------
-
-*Rattachement : CMP-07, CMP-06, CAP-INT-03, ART-8A, ART-7 · fiche PT-16*
 
 <!-- END:GENERATED -->

@@ -21,7 +21,7 @@ tags: ["artsn", "niveau-3", "exigence", "ENF-3"]
 
 **Contenu normatif.** Le système national doit posséder la capacité de rapprocher, consolider et unifier des identités de patients incertains, phonétiquement variables ou incomplètes. Cette brique d’**identitovigilance** doit générer un enregistrement pivot unique et souverain pour le citoyen, sans forcer le remplacement immédiat ou la refonte structurelle des bases locales des hôpitaux.
 
-**Statut : Stable.** — appliqué par [ART-4a (résolution d’identité)](../chapitres/art-4a.md), [ART-2 (médiation)](../chapitres/art-2.md).
+**Statut : Stable.** — appliqué par [ART-4A (résolution d’identité)](../chapitres/art-4a.md), [ART-2 (médiation)](../chapitres/art-2.md).
 
 ## Justification
 
@@ -41,5 +41,5 @@ Le paysage numérique historique est marqué par une dispersion de solutions et 
 
 ## Fondations et chapitres garants
 
-- **ART-4a** — Résolution d'identité
+- **ART-4A** — Résolution d'identité
 - [ART-2: Médiation et normalisation](../chapitres/art-2.md) — Médiation et normalisation

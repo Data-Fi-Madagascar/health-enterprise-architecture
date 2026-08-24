@@ -72,8 +72,6 @@ Son absence fragilise la gestion des ressources humaines et compromet la continu
 
 Responsables de capabilités habilitantes
 
-*Rattachement : VS-01, VS-02, VS-04 · fiche CAP-09*
-
 ### Gestion des médicaments, vaccins, intrants et chaîne d’approvisionnement
 
 #### Rôle dans le système
@@ -110,8 +108,6 @@ Son absence expose le système à des ruptures de stock qui compromettent les so
 #### Propriétaire
 
 Responsables de capabilités habilitantes
-
-*Rattachement : VS-01, VS-02 · fiche CAP-10*
 
 ### Gestion des infrastructures, équipements et maintenance
 
@@ -150,8 +146,6 @@ Son absence rend impossible l’acte clinique, même lorsque le personnel et les
 
 Responsables de capabilités habilitantes
 
-*Rattachement : VS-01, VS-02 · fiche CAP-11*
-
 ### Finances publiques, budget et allocation des ressources
 
 #### Rôle dans le système
@@ -189,8 +183,6 @@ Son absence compromet la protection financière des ménages ([VS-03: Protéger 
 
 Responsables de capabilités habilitantes
 
-*Rattachement : VS-03, VS-04 · fiche CAP-12*
-
 ### Système d’information sanitaire, données et recherche
 
 #### Rôle dans le système
@@ -227,8 +219,6 @@ Ces quatre capabilités ([CAP-13: Système d'information sanitaire, données et 
 #### Propriétaire
 
 Responsables de capabilités habilitantes
-
-*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche CAP-13*
 
 ### Interopérabilité, référentiels nationaux et infrastructure numérique partagée
 
@@ -268,8 +258,6 @@ Ces quatre capabilités ([CAP-13: Système d'information sanitaire, données et 
 
 Responsables de capabilités habilitantes
 
-*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche CAP-14*
-
 ### Cybersécurité, confidentialité et gouvernance des données personnelles
 
 #### Rôle dans le système
@@ -305,8 +293,6 @@ Ces quatre capabilités ([CAP-13: Système d'information sanitaire, données et 
 
 Responsables de capabilités habilitantes
 
-*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche CAP-15*
-
 ### Gestion du portefeuille d’initiatives numériques
 
 #### Rôle dans le système
@@ -340,8 +326,6 @@ Ces quatre capabilités ([CAP-13: Système d'information sanitaire, données et 
 #### Propriétaire
 
 Responsables de capabilités habilitantes
-
-*Rattachement : VS-03, VS-04 · fiche CAP-16*
 
 ### Engagement patient et identité numérique
 
@@ -377,8 +361,6 @@ Cette capabilité est **habilitante** : son absence bloque la continuité des so
 #### Propriétaire
 
 DEPSI + Direction des Systèmes d'Information
-
-*Rattachement : VS-01, VS-03, CAP-INT-01, CAP-INT-09 · fiche CAP-17*
 
 ### Coordination intersectorielle (One Health)
 
@@ -417,8 +399,6 @@ Cette capabilité est **habilitante** : son absence bloque la surveillance sanit
 #### Propriétaire
 
 Secrétariat Général du Ministère + DEPSI
-
-*Rattachement : VS-02, CAP-INT-03 · fiche CAP-18*
 
 <!-- END:GENERATED -->
 ## Liens

@@ -34,7 +34,7 @@ Ce document présente les propositions d'arbitrage pour les 5 écarts identifié
 
 ### Constat
 
-L'ARTSN rattache ART-4a (résolution d'identité) et ART-4b (bases d'autorisation) à une capabilité **CAP-04bis « Engagement patient et identitovigilance »**. Le catalogue CAESN ne comporte pas cette capabilité : CAP-04 est « Santé communautaire ».
+L'ARTSN rattache ART-4A (résolution d'identité) et ART-4B (bases d'autorisation) à une capabilité **CAP-04bis « Engagement patient et identitovigilance »**. Le catalogue CAESN ne comporte pas cette capabilité : CAP-04 est « Santé communautaire ».
 
 ### Proposition d'arbitrage
 
@@ -73,7 +73,7 @@ L'ARTSN rattache ART-4a (résolution d'identité) et ART-4b (bases d'autorisatio
 
 ### Constat
 
-L'ARTSN rattache ART-0 (accords de partage) et ART-8d (chorégraphie inter-institutionnelle) à une capacité candidate « Coordination intersectorielle » (One Health), absente du catalogue CAP-01..16.
+L'ARTSN rattache ART-0 (accords de partage) et ART-8D (chorégraphie inter-institutionnelle) à une capacité candidate « Coordination intersectorielle » (One Health), absente du catalogue CAP-01..16.
 
 ### Proposition d'arbitrage
 
@@ -82,7 +82,7 @@ L'ARTSN rattache ART-0 (accords de partage) et ART-8d (chorégraphie inter-insti
 | Justification |
 |---------------|
 | La coordination entre santé humaine, animale et environnementale est un enjeu stratégique national (RSI, Tripartite Plus). |
-| Elle nécessite des échanges inter-institutionnels spécifiques (ART-0, ART-8d). |
+| Elle nécessite des échanges inter-institutionnels spécifiques (ART-0, ART-8D). |
 | Elle s'inscrit dans le flux VS-02 (prévention et surveillance). |
 
 **Option B : Intégrer la responsabilité dans CAP-05 (Surveillance sanitaire)**
@@ -157,7 +157,7 @@ La coordination intersectorielle s'appuie sur un référentiel normatif internat
 
 ### Constat
 
-ART-4d (référentiel géospatial et d'exploitation partagé) est rattaché à une capacité candidate « Surveillance spatio-temporelle » absente du catalogue, nécessaire au cloisonnement One Health.
+ART-4D (référentiel géospatial et d'exploitation partagé) est rattaché à une capacité candidate « Surveillance spatio-temporelle » absente du catalogue, nécessaire au cloisonnement One Health.
 
 ### Proposition d'arbitrage
 
@@ -167,7 +167,7 @@ ART-4d (référentiel géospatial et d'exploitation partagé) est rattaché à u
 |---------------|
 | La surveillance spatio-temporelle est une composante de la surveillance sanitaire (CAP-05). |
 | Évite la création d'une nouvelle capabilité trop spécifique. |
-| ART-4d serait rattaché à CAP-05 avec une note de clarification. |
+| ART-4D serait rattaché à CAP-05 avec une note de clarification. |
 
 **Option B : Créer une nouvelle capabilité CAP-19 « Surveillance spatio-temporelle »**
 
@@ -183,7 +183,7 @@ ART-4d (référentiel géospatial et d'exploitation partagé) est rattaché à u
 | Modification |
 |--------------|
 | Élargir la description de CAP-05 pour inclure explicitement la dimension géospatiale |
-| Ajouter ART-4d comme chapitre rattaché à CAP-05 |
+| Ajouter ART-4D comme chapitre rattaché à CAP-05 |
 | Préciser que la surveillance spatio-temporelle couvre : géolocalisation des formations sanitaires, suivi des épidémies par zone, cartographie des risques |
 
 ---
@@ -255,14 +255,14 @@ Le document source de l'ARTSN annonce **18 principes (P-01 à P-18)** ; le catal
 - **CAESN** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
 - **ARTSN** : Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
 - **point de vigilance** : Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health) (`00_caesn/07_governance/point-de-vigilance-caesn.md`)
-- **ART-4a (résolution d'identité)** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
-- **ART-4b (bases d'autorisation)** : Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
+- **ART-4A (résolution d'identité)** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
+- **ART-4B (bases d'autorisation)** : Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
 - **ART-0 (accords de partage)** : Accords de partage inter-institutionnels (`referentiel/chapitres/art-0.md`)
-- **ART-8d (chorégraphie inter-institutionnelle)** : Chorégraphie inter-institutionnelle (`referentiel/chapitres/art-8d.md`)
-- **ART-4d (référentiel géospatial et d'exploitation partagé)** : Référentiel géospatial et d'exploitation partagé (`referentiel/chapitres/art-4d.md`)
+- **ART-8D (chorégraphie inter-institutionnelle)** : Chorégraphie inter-institutionnelle (`referentiel/chapitres/art-8d.md`)
+- **ART-4D (référentiel géospatial et d'exploitation partagé)** : Référentiel géospatial et d'exploitation partagé (`referentiel/chapitres/art-4d.md`)
 - **Point de vigilance CAESN** : Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health) (`00_caesn/07_governance/point-de-vigilance-caesn.md`)
 - **CAESN : capabilités** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
-- **ARTSN : Annexe C** : Annexe C : Renvoi CAESN et capacités candidates (`02_artsn/07_annexes/c-renvoi-capacites-candidates.md`)
+- **ARTSN : Annexe C** : Annexe C : Renvoi CAESN et capacités candidates (`02_artsn/08_annexes/c-renvoi-capacites-candidates.md`)
 - **CAESN : normes et standards** : Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
 - **CAESN : registre des ADR** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
 

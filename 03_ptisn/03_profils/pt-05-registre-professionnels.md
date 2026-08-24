@@ -21,7 +21,7 @@ Déclinaison de [CAP-INT-02: Registre et résolution des professionnels de sant�
 ## 2. Chapitres ART applicables
 
 - [ART-4: Référentiels de métadonnées de gestion](../../referentiel/chapitres/art-4.md) ;
-- ART-4a — Résolution d'identité ;
+- ART-4A — Résolution d'identité ;
 - [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../referentiel/chapitres/art-7.md).
 
 ## 3. Service national
@@ -89,7 +89,5 @@ stop
 Un utilisateur authentifié ne doit pas être considéré comme professionnel habilité sans vérification de son statut dans le registre approprié.
 
 ------------------------------------------------------------------------
-
-*Rattachement : CMP-13, CAP-INT-02, ART-4, ART-4A, ART-7 · fiche PT-05*
 
 <!-- END:GENERATED -->

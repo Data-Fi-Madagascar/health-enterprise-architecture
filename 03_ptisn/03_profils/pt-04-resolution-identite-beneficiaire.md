@@ -21,8 +21,8 @@ tags: ["ptisn", "niveau-4", "profils", "PT-04"]
 ## 2. Chapitres ART applicables
 
 - [ART-4: référentiels](../../referentiel/chapitres/art-4.md)
-- ART-4a — Résolution d'identité ;
-- ART-4b — bases d'autorisation ;
+- ART-4A — Résolution d'identité ;
+- ART-4B — bases d'autorisation ;
 - [ART-7: sécurité.](../../referentiel/chapitres/art-7.md)
 
 ## 3. Service national
@@ -114,7 +114,5 @@ L'identifiant santé ne doit pas nécessairement être identique à l'identifian
 Le lien entre les deux doit être gouverné, sécurisé et limité à une finalité.
 
 ------------------------------------------------------------------------
-
-*Rattachement : CMP-11, CAP-INT-01, ART-4, ART-4A, ART-4B, ART-7 · fiche PT-04*
 
 <!-- END:GENERATED -->

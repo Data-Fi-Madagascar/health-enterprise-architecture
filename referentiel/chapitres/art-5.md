@@ -5,10 +5,11 @@ id: ART-5
 type: chapitre
 niveau: "3"
 title: Cohérence et qualité des données
-status: draft
+status: stable
+maturity_condition: "Stable pour principe ; Proposition ouverte pour branches d'escalade. Condition : instruction détaillée de chaque branche par domaine"
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/03_chapitres/art-5-coherence-qualite-donnees.md
+envelope: 02_artsn/04_patterns/art-5-coherence-qualite-donnees.md
 maps_to: ["CAP-13"]
 implements: []
 applies_to: ["ENF-5"]

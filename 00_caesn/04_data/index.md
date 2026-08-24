@@ -65,7 +65,8 @@ Les systèmes opérationnels soutiennent l'action ; les systèmes analytiques so
 - **Référentiels nationaux** : Référentiels nationaux (`00_caesn/04_data/referentials.md`)
 - **Cycle de vie des données** : Cycle de vie des données (`00_caesn/04_data/lifecycle.md`)
 - **Gouvernance et protection des données** : Gouvernance, qualité et protection des données (`00_caesn/04_data/governance.md`)
-- **Dictionnaire de données ARTSN** : Dictionnaire de données fonctionnelles, sémantique universelle (`02_artsn/05_dictionnaire/index.md`)
+- **Dictionnaire de données ARTSN** : Dictionnaire de données fonctionnelles, sémantique universelle (`02_artsn/03_objets-de-donnees/index.md`)
+- **Objets de données métier** : Objets de données métier du CAESN (réalisés par l'ARTSN) (`00_caesn/04_data/objets.md`)
 - **Capabilités** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
 - **Architecture applicative** : Architecture applicative et systèmes numériques (`00_caesn/05_application/index.md`)
 - **Flux de valeur** : Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)
@@ -77,5 +78,6 @@ Les systèmes opérationnels soutiennent l'action ; les systèmes analytiques so
 - [data-principles: Principes de l'architecture des données](principles.md)
 - [data-governance: Gouvernance, qualité et protection des données](governance.md)
 - [data-domains: Domaines de données prioritaires](domains.md)
+- [data-business-objects: Objets de données métier](objets.md)
 
 <!-- liens-section-auto -->

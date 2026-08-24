@@ -5,10 +5,11 @@ id: ART-4C
 type: chapitre
 niveau: "3"
 title: Éligibilité et couverture
-status: draft
+status: candidate
+maturity_condition: "Confirmation par une initiative VS-03"
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/03_chapitres/art-4c-eligibilite-couverture.md
+envelope: 02_artsn/04_patterns/art-4c-eligibilite-couverture.md
 maps_to: ["CAP-07"]
 implements: []
 applies_to: ["ENF-2", "ENF-1"]

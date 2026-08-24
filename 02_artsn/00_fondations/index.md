@@ -36,8 +36,6 @@ Cette discipline de **mise en œuvre** s’impose dès lors qu’une source éch
 
 **Statut : Stable.**
 
-*Rattachement : ENF-1, CAP-08 · fiche F-1*
-
 ### Préservation de la souveraineté intersectorielle
 
 **Contenu normatif.** L’intégration des flux avec des ministères autonomes (Intérieur pour l’État Civil, Finances pour le tiers-payant, Élevage pour les zoonoses) exige des contrats d’interfaces techniques **d’égal à égal**. Le versionnement sémantique obligatoire des schémas protège chaque département contre les ruptures de service causées par les modifications applicatives de ses partenaires. Techniquement :
@@ -51,8 +49,6 @@ Discipline de **mise en œuvre** pour absorber un changement de structure décid
 
 **Statut : Stable.**
 
-*Rattachement : ENF-4 · fiche F-2*
-
 ### Éradication des silos technologiques
 
 **Contenu normatif.** Pour mettre fin à la fragmentation historique du paysage numérique sanitaire (multiplicité de logiciels propriétaires incompatibles importés de manière non coordonnée), le Comité National impose un cadre d’homologation obligatoire : **aucun système ne peut interagir avec la plateforme sans prouver son rattachement explicite à une capacité d’État documentée**. Techniquement, toute solution applicative doit :
@@ -64,15 +60,11 @@ Discipline de **mise en œuvre** : elle seule permet au Comité National (CNASN
 
 **Statut : Stable.**
 
-*Rattachement : CAP-14 · fiche F-3*
-
 ### Homologation obligatoire
 
 **Contenu normatif.** Le processus d’homologation obligatoire (introduit en F.3) s’applique à toute solution ; un constat d’homologation qui révélerait qu’un composant ne peut être rattaché à aucun chapitre existant déclenche une revue de l’ARTSN (voir [Gouvernance](../06_gouvernance/index.md)).
 
 **Statut : Stable.**
-
-*Rattachement : CAP-INT-12, CAP-16 · fiche F-4*
 
 ### Protection et minimisation
 
@@ -84,8 +76,6 @@ Discipline de **mise en œuvre** : elle seule permet au Comité National (CNASN
 - **Déduit selon** : [P-INT-16: Résidence et non-réplication](../../referentiel/principes/p-int-16.md) (résidence et non-réplication), [P-INT-17: Minimisation](../../referentiel/principes/p-int-17.md) (minimisation).
 - **Statut : Provisoire.**
 
-*Rattachement : CAP-15 · fiche F-5*
-
 ### Observabilité
 
 **Contenu normatif.** La conduite du système sanitaire numérique exige une observabilité continue de bout en bout : événements, flux, traitements et accès doivent être tracés selon des niveaux différenciés (métadonnées de traçabilité, journaux d'audit immuables, indicateurs de fonctionnement). L'architecture impose que chaque composant expose des signaux de santé opérationnelle (disponibilité, latence, taux d'erreur, complétude des flux) exploitables par l'entrepôt national de données et les tableaux de bord.
@@ -95,8 +85,6 @@ Discipline de **mise en œuvre** : elle seule permet au Comité National (CNASN
 - **Rattachement** : [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md) (SIS, données, analytique).
 - **Déduit selon** : [P-INT-18: Traçabilité différenciée](../../referentiel/principes/p-int-18.md) (traçabilité différenciée).
 - **Statut : Provisoire.**
-
-*Rattachement : CAP-13 · fiche F-6*
 
 <!-- END:GENERATED -->
 
@@ -108,5 +96,5 @@ Pour approfondir les fondations de l'ARTSN, les lecteurs peuvent consulter les e
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
 - **exigences contextuelles nationales** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
-- **chapitres et patterns de référence** : Chapitres et patterns de référence (`02_artsn/03_chapitres/index.md`)
-- **cartographie cible** : Cartographie conceptuelle cible (`02_artsn/04_cartographie-cible/index.md`)
+- **chapitres et patterns de référence** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
+- **cartographie cible** : Cartographie conceptuelle cible (`02_artsn/05_cartographie/index.md`)

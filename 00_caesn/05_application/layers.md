@@ -79,15 +79,15 @@ Vitrine décisionnelle unique de l'État. Tableaux de bord de performance sanita
 
 ## L5 : Projections analytiques et Modèles
 
-Sépare structurellement les flux analytiques du stockage transactionnel. Pipeline d'ingestion ETL, moteur d'IA prédictive, routeur d'escalade et d'alertes, entrepôt Lakehouse, moteur de graphes, référentiel spatio-temporel, réconciliation analytique. Applique le pattern CQRS (ART-6). Couche rattachée à ART-5, ART-6, ART-8b, ART-4d, ART-9.
+Sépare structurellement les flux analytiques du stockage transactionnel. Pipeline d'ingestion ETL, moteur d'IA prédictive, routeur d'escalade et d'alertes, entrepôt Lakehouse, moteur de graphes, référentiel spatio-temporel, réconciliation analytique. Applique le pattern CQRS (ART-6). Couche rattachée à ART-5, ART-6, ART-8B, ART-4D, ART-9.
 
 ## L4 : Interopérabilité et services partagés
 
-Cœur applicatif de la santé au présent. Centralise les registres nationaux et assure la persistance clinique temps réel. Orchestre les parcours et assure la médiation sémantique universelle. Moteur d'intégration, orchestrateur de parcours, répertoires cliniques, registres des terminologies, INP, couverture, personnels, produits. Couche rattachée à ART-2, ART-3, ART-4, ART-8a, ART-4a, ART-4c.
+Cœur applicatif de la santé au présent. Centralise les registres nationaux et assure la persistance clinique temps réel. Orchestre les parcours et assure la médiation sémantique universelle. Moteur d'intégration, orchestrateur de parcours, répertoires cliniques, registres des terminologies, INP, couverture, personnels, produits. Couche rattachée à ART-2, ART-3, ART-4, ART-8A, ART-4A, ART-4C.
 
 ## L3 : Échange, transport et ingestion
 
-Infrastructure d'ingestion réseau, dépourvue de logique métier. Intercepte les requêtes à la périphérie, bloque les messages non conformes, assure la persistance tampon et exécute les compensations par lots. API Gateway, registre de schémas, message broker asynchrone, compensateur. Couche rattachée à ART-1, F.3, ART-8c.
+Infrastructure d'ingestion réseau, dépourvue de logique métier. Intercepte les requêtes à la périphérie, bloque les messages non conformes, assure la persistance tampon et exécute les compensations par lots. API Gateway, registre de schémas, message broker asynchrone, compensateur. Couche rattachée à ART-1, F.3, ART-8C.
 
 ## L2 : Point de service
 
@@ -100,7 +100,7 @@ Socle matériel de la Nation. Hébergement souverain des données cliniques sur 
 ## Références
 
 - **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **couches ARTSN** : Cartographie conceptuelle cible, 6 couches + 2 axes (`02_artsn/04_cartographie-cible/index.md`)
+- **couches ARTSN** : Cartographie conceptuelle cible, 6 couches + 2 axes (`02_artsn/05_cartographie/index.md`)
 - **services partagés** : Services numériques partagés prioritaires (`00_caesn/05_application/shared-services.md`)
 - **entrepôt** : Gouvernance, qualité et protection des données (`00_caesn/04_data/governance.md`)
 - **Architecture applicative** : Architecture applicative et systèmes numériques (`00_caesn/05_application/index.md`)

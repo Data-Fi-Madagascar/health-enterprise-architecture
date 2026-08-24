@@ -84,6 +84,7 @@ Le GDHCN doit :
 | Blockchain de santé | Technologie immature pour ce cas d'usage, coût élevé |
 
 ## Références
+- **ARTSN — lots consommateurs** : [L6 — Interopérabilité transfrontalière](../../02_artsn/07_lots/index.md), [L7 — Coordination One Health](../../02_artsn/07_lots/index.md)
 
 - PT-14 : Interopérabilité transfrontalière
 - ART-7 : Sécurité

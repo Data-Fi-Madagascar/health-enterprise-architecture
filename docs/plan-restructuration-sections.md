@@ -35,8 +35,8 @@
 ### Niveau 3 : `02_artsn/` (ARTSN) — Fichiers candidates
 | Fichier | Lignes | Sections | Découpage proposé |
 |---------|--------|----------|-------------------|
-| `04_cartographie-cible.md` | 350 | 6 couches + 2 axes | 8 fichiers : `04a-couche-1-infrastructure.md` etc. |
-| `05_dictionnaire.md` | ~200 | Variables du dictionnaire | 1 fichier par groupe logique |
+| `05_cartographie.md` | 350 | 6 couches + 2 axes | 8 fichiers : `04a-couche-1-infrastructure.md` etc. |
+| `03_objets-de-donnees.md` | ~200 | Variables du dictionnaire | 1 fichier par groupe logique |
 
 ### Niveau 4 : `03_ptisn/` (PTISN) — Déjà bien structuré
 **Statut :** ✅ Pas de découpage nécessaire — les profils sont déjà dans `03_profils/`.
@@ -109,7 +109,7 @@
 - `03_gouvernance/06-coordination.md`
 - `03_gouvernance/07-support.md`
 
-### 3.4 `02_artsn/04_cartographie-cible.md` → 8 fichiers
+### 3.4 `02_artsn/05_cartographie.md` → 8 fichiers
 
 **Structure actuelle :**
 ```
@@ -125,7 +125,7 @@
 ```
 
 **Proposition :**
-- `04_cartographie-cible.md` → fichier d'index
+- `05_cartographie.md` → fichier d'index
 - `04_cartographie/01-couche-1-infrastructure.md`
 - `04_cartographie/02-couche-2-point-service.md`
 - `04_cartographie/03-couche-3-echange.md`
@@ -168,7 +168,7 @@
 5. Vérifier les liens
 
 ### Phase 3 : Découpage ARTSN (1 jour)
-1. Découper `04_cartographie-cible.md` en 8 fichiers + index
+1. Découper `05_cartographie.md` en 8 fichiers + index
 2. Mettre à jour `manifest.json`
 3. Vérifier les liens
 

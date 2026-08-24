@@ -214,7 +214,7 @@ Centre de commande (CMP-02)    Entrepôt (CMP-03)
 
 | Exigence | Source | Applicable à |
 |----------|--------|--------------|
-| ENF-5 : Coordination processus complexes | ART-8a | Riposte coordonnée multi-districts |
+| ENF-5 : Coordination processus complexes | ART-8A | Riposte coordonnée multi-districts |
 | ART-5 : Qualité des données | ART-5 | Détection (seuils, complétude) |
 | PT-15 : One Health | CAP-INT-14 | Si zoonose (peste, rage, Fièvre de la Vallée du Rift) |
 

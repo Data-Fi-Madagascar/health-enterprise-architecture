@@ -79,12 +79,12 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 | Fondations | [`00_fondations/`](./02_artsn/00_fondations/) | Fondations architecturales |
 | Flux de valeur | [`01_flux-de-valeur/`](./02_artsn/01_flux-de-valeur/) | Déclinaison technique des flux |
 | Exigences | [`02_exigences-contextuelles/`](./02_artsn/02_exigences-contextuelles/) | Contraintes et exigences |
-| Chapitres | [`03_chapitres/`](./02_artsn/03_chapitres/) | Chapitres ART (ART-0 à ART-11) |
-| Cartographie | [`04_cartographie-cible/`](./02_artsn/04_cartographie-cible/) | Vue cible du système |
-| Dictionnaire | [`05_dictionnaire/`](./02_artsn/05_dictionnaire/) | 40 concepts de données (7 domaines) |
+| Chapitres | [`04_patterns/`](./02_artsn/04_patterns/) | Chapitres ART (ART-0 à ART-11) |
+| Cartographie | [`05_cartographie/`](./02_artsn/05_cartographie/) | Vue cible du système |
+| Dictionnaire | [`03_objets-de-donnees/`](./02_artsn/03_objets-de-donnees/) | 40 concepts de données (7 domaines) |
 | Gouvernance | [`06_gouvernance/`](./02_artsn/06_gouvernance/) | Veille, conformité, dépréciation |
-| Annexes | [`07_annexes/`](./02_artsn/07_annexes/) | Protocole de test, SLA, maturité |
-| Feuille de route | [`09_feuille-route/`](./02_artsn/09_feuille-route/) | Roadmap technique 6 phases, 98 MGA |
+| Annexes | [`08_annexes/`](./02_artsn/08_annexes/) | Protocole de test, SLA, maturité |
+| Feuille de route | [`07_lots/`](./02_artsn/07_lots/) | Roadmap technique 6 phases, 98 MGA |
 
 ### Niveau 4 — `03_ptisn/` (PTISN)
 
@@ -176,7 +176,7 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 - [Registre national des initiatives](00_caesn/06_portfolio/index.md)
 - [Gouvernance](00_caesn/07_governance/index.md)
 - [Glossaire](00_caesn/10_annexes/glossary.md)
-- [Feuille de route ARTSN](02_artsn/09_feuille-route/index.md)
-- [Dictionnaire de données](02_artsn/05_dictionnaire/index.md)
-- [Protocole de test interopérabilité](02_artsn/07_annexes/d-protocole-test-interopabilite.md)
-- [SLA et performance](02_artsn/07_annexes/e-sla-performance.md)
+- [Feuille de route ARTSN](02_artsn/07_lots/index.md)
+- [Dictionnaire de données](02_artsn/03_objets-de-donnees/index.md)
+- [Protocole de test interopérabilité](02_artsn/08_annexes/d-protocole-test-interopabilite.md)
+- [SLA et performance](02_artsn/08_annexes/e-sla-performance.md)

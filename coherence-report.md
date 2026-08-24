@@ -19,7 +19,7 @@
 | 3 | Sigle PTISN (Interopérabilité vs implémentation) | ✓ Résolu |
 | 3 | Sigle ART-SN / ARTSN | ✓ Résolu (uniformisé en ARTSN) |
 | 3 | Correspondance CAESN CAP-xx ↔ CNISN CAP-INT-xx | ✓ Résolu (annexe E + liens frontmatter) |
-| 4 | ART-8 / ART-8a doublon d'intitulé | ✓ Résolu |
+| 4 | ART-8 / ART-8A doublon d'intitulé | ✓ Résolu |
 | 4 | ART-SN sans renvoi de contenu vers CNISN/PTISN | Ouvert (par conception) |
 | 5 | Versions hétérogènes | ✓ Résolu (semver `1.0.0` partout) |
 | 5 | `scripts/manifest.json` incomplet (cnisn, ptisn) | ✓ Résolu |
@@ -73,7 +73,7 @@ Le PTISN était rédigé contre une version antérieure du CNISN à **6 capacit�
 
 ### 2.1 ART-10 et ART-11 — ✓ Résolu (stubs candidats)
 
-L'ARTSN ne définit que `ART-0` à `ART-9` (+ sous-chapitres `4a-d`, `8a-d`) — voir `02_artsn/03_chapitres/index.md`. ART-10 et ART-11 étaient cités sans existait.
+L'ARTSN ne définit que `ART-0` à `ART-9` (+ sous-chapitres `4a-d`, `8a-d`) — voir `02_artsn/04_patterns/index.md`. ART-10 et ART-11 étaient cités sans existait.
 
 **Correctifs appliqués (✓) :** création des stubs `referentiel/chapitres/art-10.md` et `referentiel/chapitres/art-11.md` (`status: candidate`, 18 lignes), référencés depuis `01_cnisn/08_annexes/b-articulation-art-sn.md`, `03_ptisn/03_profils/pt-00-index.md` (PT-01/PT-11 → ART-11) et `03_ptisn/04_matrice-alignement.md` (§2, ART-10 « Profil futur », ART-11 → PT-01/PT-11). Les renvois ne sont plus pendants.
 
@@ -96,15 +96,15 @@ Les catalogues CAESN pointent vers le référentiel (`00_caesn/02_principles/tra
 
 ### 2.3 Sous-chapitres ART-4x — ✓ Résolu
 
-Références PTISN décalées d'une unité (ex. « ART-4c — bases d'autorisation » au lieu de **ART-4b**).
+Références PTISN décalées d'une unité (ex. « ART-4C — bases d'autorisation » au lieu de **ART-4B**).
 
 | Profil | Problème initial | Correctif appliqué |
 |--------|------------------|--------------------|
-| `PT-04` | « ART-4a identité individuelle ; ART-4c bases d'autorisation » | libellé ART-4a aligné ; ART-4c → **ART-4b** |
-| `PT-05` | « ART-4b identité professionnelle » (inexistant) | → **ART-4a** |
-| `PT-10` | ART-4c | → **ART-4b** |
-| `PT-11` | ART-4c | → **ART-4b** |
-| `04_matrice-alignement.md` §2 | ART-4a/ART-4b/ART-4c | aligné sur ART-4a/ART-4b/ART-4b |
+| `PT-04` | « ART-4A identité individuelle ; ART-4C bases d'autorisation » | libellé ART-4A aligné ; ART-4C → **ART-4B** |
+| `PT-05` | « ART-4B identité professionnelle » (inexistant) | → **ART-4A** |
+| `PT-10` | ART-4C | → **ART-4B** |
+| `PT-11` | ART-4C | → **ART-4B** |
+| `04_matrice-alignement.md` §2 | ART-4A/ART-4B/ART-4C | aligné sur ART-4A/ART-4B/ART-4B |
 
 **Audit final confirmé :** ART-4A ↔ PT-04 ; ART-4B ↔ PT-10/PT-11/PT-12 ; ART-4C ↔ PT-11/PT-12 ; ART-4D ↔ PT-06/PT-09 — conforme aux corps sources et à `pt-00-index.md`.
 
@@ -123,7 +123,7 @@ Références PTISN décalées d'une unité (ex. « ART-4c — bases d'autorisati
 
 ## 4. Écarts internes ARTSN
 
-- **ART-8 / ART-8a — doublon d'intitulé — ✓ Résolu** : ART-8 (chapitre-cadre décliné en 8a-d) et ART-8a portaient le même libellé « Orchestration de processus borné ». ART-8 est désormais **« Orchestration de processus »** (source `ART-8-orchestration-processus-borne.md`, index §Catalogue, `referentiel/chapitres/art-8.md`), ART-8a conserve **« Orchestration de processus borné »** — cohérent avec `02_artsn/reading-matrix.md`. Aucune rupture de lien (les fichiers conservent leurs noms).
+- **ART-8 / ART-8A — doublon d'intitulé — ✓ Résolu** : ART-8 (chapitre-cadre décliné en 8a-d) et ART-8A portaient le même libellé « Orchestration de processus borné ». ART-8 est désormais **« Orchestration de processus »** (source `ART-8-orchestration-processus-borne.md`, index §Catalogue, `referentiel/chapitres/art-8.md`), ART-8A conserve **« Orchestration de processus borné »** — cohérent avec `02_artsn/reading-matrix.md`. Aucune rupture de lien (les fichiers conservent leurs noms).
 - **ARTSN sans renvoi de contenu vers CNISN/PTISN — Ouvert** : aucun corps d'ARTSN ne référence `CAP-INT-xx`, `PT-xx` ou les principes `P-INT-xx` — les niveaux 2/4 ne sont reliés que par navigation (`index.md`, `reading-matrix.md`). À traiter si l'on souhaite une traçabilité croisée dans les corps normatifs.
 
 ---
@@ -135,8 +135,8 @@ Références PTISN décalées d'une unité (ex. « ART-4c — bases d'autorisati
 - **`docs.json` racine — ✓ Résolu (2026-08-18)** : navigation reconstruite avec 4 onglets (CAESN 48 pages, CNISN 37 pages, ARTSN 38 pages, PTISN 37 pages = 160 pages total). Tous les chemins corrigés (`/00_caesn/`, `/01_cnisn/`, `/02_artsn/`, `/03_ptisn/`). Sections standards et ADR ajoutées pour CNISN. Annexes manquantes ajoutées (ARTSN art-10/11, PTISN pt-14/15, cas d'usage). 0 page manquante, JSON valide.
 
 ### Écarts connus et tracés (à ne pas re-signaler comme nouveaux)
-- **CAP-04bis** : référencée par l'ARTSN (ART-4a, ART-4b) mais absente du catalogue CAESN → écart documenté dans `00_caesn/07_governance/point-de-vigilance-caesn.md` (décision D-1) et `02_artsn/07_annexes/c-renvoi-capacites-candidates.md` (point 3).
-- **ART-4d → capabilité candidate** « surveillance spatio-temporelle » : absence tracée dans `02_artsn/07_annexes/c-renvoi-capacites-candidates.md` (point 2).
+- **CAP-04bis** : référencée par l'ARTSN (ART-4A, ART-4B) mais absente du catalogue CAESN → écart documenté dans `00_caesn/07_governance/point-de-vigilance-caesn.md` (décision D-1) et `02_artsn/08_annexes/c-renvoi-capacites-candidates.md` (point 3).
+- **ART-4D → capabilité candidate** « surveillance spatio-temporelle » : absence tracée dans `02_artsn/08_annexes/c-renvoi-capacites-candidates.md` (point 2).
 
 ---
 
@@ -163,7 +163,7 @@ Références PTISN décalées d'une unité (ex. « ART-4c — bases d'autorisati
 | 2 | ART-4x renumérotés dans les profils et la matrice | `PT-04`, `PT-05`, `PT-10`, `PT-11`, `04_matrice-alignement.md` |
 | 2 | Stubs candidats ART-10, ART-11, F.5, F.6 | `referentiel/chapitres/{ART-10,ART-11}.md`, `referentiel/fondations/{F-5,F-6}.md` |
 | 3 | Nomenclature PTISN → « implémentation » | `03_ptisn/00_introduction.md` |
-| 4 | ART-8 vs ART-8a : intitulés distincts | `02_artsn/03_chapitres/{ART-8,index}.md`, `referentiel/chapitres/art-8.md` |
+| 4 | ART-8 vs ART-8A : intitulés distincts | `02_artsn/04_patterns/{ART-8,index}.md`, `referentiel/chapitres/art-8.md` |
 | 4 | Manifestes cnisn/ptisn complétés (16 + 29) | `scripts/manifest.json` |
 | 5 | Restructuration des capacités CNISN en 5 familles de réponse (family: sur les 12 cap-int ; catalogue `02_capacites.md` scindé en 5 blocs ; PT-03 remappé → CAP-INT-06) | `referentiel/capacites/cap-int-*.md`, `01_cnisn/02_capacites.md`, `referentiel/profils/pt-03.md`, `03_ptisn/04_matrice-alignement.md` |
 | 5 | Annexe B réécrite sur les 5 familles CAP-INT (remplace la taxonomie des 12 « domaines ») | `01_cnisn/08_annexes/b-articulation-art-sn.md` |
@@ -195,16 +195,16 @@ Références PTISN décalées d'une unité (ex. « ART-4c — bases d'autorisati
 
 ## 9. Topologie nationale cible (PTISN) vs architecture conceptuelle (ARTSN)
 
-Croisement de `03_ptisn/02_topologie-nationale-cible.md` (Partie II) avec `02_artsn/04_cartographie-cible.md` (l'architecture conceptuelle de l'ARTSN : 6 couches horizontales + 2 axes verticaux).
+Croisement de `03_ptisn/02_topologie-nationale-cible.md` (Partie II) avec `02_artsn/05_cartographie.md` (l'architecture conceptuelle de l'ARTSN : 6 couches horizontales + 2 axes verticaux).
 
 ### 9.1 Correspondance couche à couche
 
 | Topologie PTISN (p.II) | Cartographie ARTSN | Verdict |
 |-------------------------|--------------------|---------|
 | Applications et systèmes du secteur santé | **Couche 2 — Point de service** (F.1, ENF-1) | ✓ conforme (PTISN plus large, ARTSN focalisé logiciel terrain) |
-| Couche de médiation sectorielle (normalisation, routage, orchestration légère) | **Couche 3** (échange/transport, ART-1, F.3) **+ Couche 4** (médiation ART-2, orchestration ART-8a) | ⚠ conflation de 2 couches ARTSN |
-| Services et registres nationaux de santé | **Couche 4** — registres (ART-4, INP ART-4a, éligibilité ART-4c, terminologies, personnels) | ✓ conforme |
-| Services analytiques et de restitution | **Couche 5** — projections analytiques (ART-6, Lakehouse, ART-8b/ART-9) | ✓ conforme (position verticale différente, cf. 9.3) |
+| Couche de médiation sectorielle (normalisation, routage, orchestration légère) | **Couche 3** (échange/transport, ART-1, F.3) **+ Couche 4** (médiation ART-2, orchestration ART-8A) | ⚠ conflation de 2 couches ARTSN |
+| Services et registres nationaux de santé | **Couche 4** — registres (ART-4, INP ART-4A, éligibilité ART-4C, terminologies, personnels) | ✓ conforme |
+| Services analytiques et de restitution | **Couche 5** — projections analytiques (ART-6, Lakehouse, ART-8B/ART-9) | ✓ conforme (position verticale différente, cf. 9.3) |
 | Point d'échange sectoriel sécurisé | **Couche 3** — API Gateway / broker (ART-1) | ✓ conforme (collision de nom, cf. 9.3) |
 | Plateforme nationale d'échange interinstitutionnel (X-Road) | **Aucun composant/couche explicite** | ✗ écart majeur |
 | Institutions et registres d'autres secteurs | Couche 6 (intersectoriel) + Axe 2 (ART-0, accords de partage) | ◐ partiel (conventionnel, pas technique) |
@@ -213,10 +213,10 @@ Croisement de `03_ptisn/02_topologie-nationale-cible.md` (Partie II) avec `02_ar
 
 ### 9.2 Points de cohérence confirmés ✓
 
-- **Médiation** : normalisation ↔ ART-2 ; routage/ingestion ↔ ART-1/Couche 3 ; orchestration ↔ ART-8a/Couche 4. `03_ptisn/08_annexes/a-synthese-choix.md` (OpenHIM = contrats ART-1/ART-2) confirme.
+- **Médiation** : normalisation ↔ ART-2 ; routage/ingestion ↔ ART-1/Couche 3 ; orchestration ↔ ART-8A/Couche 4. `03_ptisn/08_annexes/a-synthese-choix.md` (OpenHIM = contrats ART-1/ART-2) confirme.
 - **Séparation des responsabilités** (p.II §2.3 « la couche d'échange ne remplace pas ces responsabilités ») ↔ Couche 3 ARTSN explicitement « dépourvue de toute logique ou intelligence métier ».
 - **X-Road / auth utilisateur final** : « le SI connecté reste responsable de l'authentification de l'utilisateur final et du contrôle d'accès métier » ↔ Couche 3 sans logique métier + Axe 1 (authentification à la périphérie).
-- **Consentement / base d'autorisation** (p.II §2.3) ↔ Axe 1 (gestion des consentements), ART-4b, PT-11.
+- **Consentement / base d'autorisation** (p.II §2.3) ↔ Axe 1 (gestion des consentements), ART-4B, PT-11.
 - **Règle « les échanges internes ne transitent pas par la plateforme interinstitutionnelle »** ↔ ARTSN où l'interop sectorielle est portée par la Couche 4 directement.
 - **Autorité sur les données** (p.II §2.3) ↔ Axe 2 (gouvernance) + Couche 4 (source de vérité au présent).
 - **CNISN agnostique** (« aucune plateforme particulière », `01_cnisn/00_introduction.md:37`) : le choix X-Road relève bien du PTISN — pas de contradiction.
@@ -225,7 +225,7 @@ Croisement de `03_ptisn/02_topologie-nationale-cible.md` (Partie II) avec `02_ar
 
 1. ~~**X-Road absent de la cartographie ARTSN**~~ — **✓ Résolu** : X-Road placé en Couche 3 (§9.3.1).
 2. ~~**Couche 6 (pilotage/gouvernance) absente de la topologie PTISN**~~ — **✓ Résolu** : diagramme PTISN réécrit avec les 6 couches ARTSN + 2 axes transversaux (2026-08-18).
-3. ~~**Médiation conflation couches 3+4**~~ — **✓ Résolu** : orchestration déplacée vers Couche 4 (ART-8a) dans le PTISN ; Couche 3 explicitement « dépourvue de toute logique métier » (2026-08-18).
+3. ~~**Médiation conflation couches 3+4**~~ — **✓ Résolu** : orchestration déplacée vers Couche 4 (ART-8A) dans le PTISN ; Couche 3 explicitement « dépourvue de toute logique métier » (2026-08-18).
 4. ~~**Collision « Point »**~~ — **✓ Résolu** : « Point de service » (Couche 2) et « Point d'échange » (Couche 3, API Gateway) clairement distingués (2026-08-18).
 5. ~~**Analytique au même niveau que les registres**~~ — **✓ Résolu** : Couche 5 (projections) séparée de la Couche 4 (registres) (2026-08-18).
 6. ~~**Résilience offline** (F.1/ENF-1) non évoquée dans la topologie PTISN~~ — **✓ Résolu** : §2.3 ajouté décrivant capture 100% locale, journaux inaltérables, synchronisation asynchrone (2026-08-18).
@@ -234,7 +234,7 @@ Croisement de `03_ptisn/02_topologie-nationale-cible.md` (Partie II) avec `02_ar
 
 1. ~~Ancrer X-Road dans la cartographie ARTSN~~ — **✓ Résolu** : X-Road placé en Couche 3 (§9.3.1).
 2. ~~Ajouter la couche « pilotage/gouvernance » et les axes sécurité/confiance et gouvernance en transversal dans la topologie PTISN~~ — **✓ Résolu** (2026-08-18).
-3. ~~Aligner « orchestration » sur la Couche 4 (rattacher explicitement à ART-8a)~~ — **✓ Résolu** (2026-08-18).
+3. ~~Aligner « orchestration » sur la Couche 4 (rattacher explicitement à ART-8A)~~ — **✓ Résolu** (2026-08-18).
 4. ~~Désambiguïser « Point de service » vs « Point d'échange »~~ — **✓ Résolu** (2026-08-18).
 5. ~~Afficher la séparation transactionnel/analytique (positionner les services analytiques au-dessus, conformément au CQRS ART-6)~~ — **✓ Résolu** (2026-08-18).
 6. ~~**Résilience offline** (F.1/ENF-1) à intégrer explicitement dans la description de la Couche 2 PTISN~~ — **✓ Résolu** (2026-08-18).
@@ -260,7 +260,7 @@ Croisement du CNISN (`01_cnisn/`, niveau 2 : principes P-INT, capacités CAP-INT
 
 L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspondait ni aux catégories P-INT (A–F) ni aux 12 CAP-INT : 9 capacités jamais couvertes, catégories P-INT E/F sans ligne, domaines sans équivalent CAP-INT.
 
-**Correctifs appliqués (✓) :** l'annexe B est réécrite sur les **5 familles de réponse** du CNISN (alignées sur les couches 3-5 et les deux axes de la cartographie ARTSN, cf. `01_cnisn/02_capacites.md`). Chaque famille est explicitement rattachée à ses CAP-INT et à ses réponses ART-SN — les **12 capacités sont couvertes**, y compris CAP-INT-12 (conformité, porté par le processus d'homologation Axe 2/F.4/ART-0) et les catégories P-INT E/F (famille 5). L'ancien vocabulaire résiduel (Observabilité, Historisation, Logistique, Protection/minimisation) est remplacé par les réponses architecturales réelles (ART-0..9, ART-4a..4d, ART-8a/8b/8c, F.2..F.5).
+**Correctifs appliqués (✓) :** l'annexe B est réécrite sur les **5 familles de réponse** du CNISN (alignées sur les couches 3-5 et les deux axes de la cartographie ARTSN, cf. `01_cnisn/02_capacites.md`). Chaque famille est explicitement rattachée à ses CAP-INT et à ses réponses ART-SN — les **12 capacités sont couvertes**, y compris CAP-INT-12 (conformité, porté par le processus d'homologation Axe 2/F.4/ART-0) et les catégories P-INT E/F (famille 5). L'ancien vocabulaire résiduel (Observabilité, Historisation, Logistique, Protection/minimisation) est remplacé par les réponses architecturales réelles (ART-0..9, ART-4A..4d, ART-8A/8b/8c, F.2..F.5).
 
 ### 10.3 Gouvernance et homologation — CNASN absent du CNISN
 
@@ -277,8 +277,8 @@ L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspon
 
 **Statut : ✓ Résolu (2026-08-18)**
 
-- ART-10 (Logistique) existe désormais dans l'ARTSN : chapitre complet (`02_artsn/03_chapitres/art-10-logistique.md`), fiche référentiel (`referentiel/chapitres/art-10.md`), listé dans l'index des chapitres (status `candidate`).
-- La table de maturité ARTSN (`07_annexes/a-table-de-maturite.md`) intègre désormais ART-10 au statut **Proposition ouverte**, avec pour condition de passage : « Confirmation par une initiative LMIS/logistique déployant la traçabilité de bout en bout des mouvements de stock ».
+- ART-10 (Logistique) existe désormais dans l'ARTSN : chapitre complet (`02_artsn/04_patterns/art-10-logistique.md`), fiche référentiel (`referentiel/chapitres/art-10.md`), listé dans l'index des chapitres (status `candidate`).
+- La table de maturité ARTSN (`08_annexes/a-table-de-maturite.md`) intègre désormais ART-10 au statut **Proposition ouverte**, avec pour condition de passage : « Confirmation par une initiative LMIS/logistique déployant la traçabilité de bout en bout des mouvements de stock ».
 - La section « Domaines partiellement couverts » reconnaît l'existence du chapitre candidat ART-10 tout en maintenant le statut Proposition ouverte en attente de confirmation par une initiative concrète.
 - Les deux niveaux sont désormais cohérents : CNISN annexe B désigne ART-10 comme réponse architecturale à la logistique ; ARTSN formalise cette proposition dans son processus de maturité.
 
@@ -340,7 +340,7 @@ L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspon
 
 ## 13. Restructuration CMP : 13 composants → 18 composants cartographie-cible (2026-08-13) ✓
 
-**Constat :** les 13 composants applicatifs (`CMP-01…13`) ne couvraient pas fidèlement les « Composants associés » définis dans la cartographie conceptuelle cible (`02_artsn/04_cartographie-cible.md`). La cartographie définit 6 couches horizontales + 2 axes verticaux, chacun avec des composants spécifiques qui nécessitent un mapping un à un.
+**Constat :** les 13 composants applicatifs (`CMP-01…13`) ne couvraient pas fidèlement les « Composants associés » définis dans la cartographie conceptuelle cible (`02_artsn/05_cartographie.md`). La cartographie définit 6 couches horizontales + 2 axes verticaux, chacun avec des composants spécifiques qui nécessitent un mapping un à un.
 
 **Correctif appliqué (✓) — 18 CMPs applicatifs :**
 - **18 composants applicatifs** (`referentiel/composants/cmp-01…18.md`) — mappés aux « Composants associés » de la cartographie-cible :
@@ -401,18 +401,18 @@ Le champ `related: ["cap-int-XX"]` a été ajouté dans le frontmatter des 20 ch
 | ART-2 | [`CAP-INT-03`] | Échange et médiation inter-systèmes |
 | ART-3 | [`CAP-INT-03`] | Échange et médiation inter-systèmes |
 | ART-4 | [`CAP-INT-03`] | Échange et médiation inter-systèmes |
-| ART-4a | [`CAP-INT-01`] | Résolution d'identité |
-| ART-4b | [`CAP-INT-05`] | Données agrégées |
-| ART-4c | [`CAP-INT-07`] | Éligibilité couverture |
-| ART-4d | [] | — |
+| ART-4A | [`CAP-INT-01`] | Résolution d'identité |
+| ART-4B | [`CAP-INT-05`] | Données agrégées |
+| ART-4C | [`CAP-INT-07`] | Éligibilité couverture |
+| ART-4D | [] | — |
 | ART-5 | [`CAP-INT-03`] | Échange et médiation inter-systèmes |
 | ART-6 | [`CAP-INT-05`] | Données agrégées |
 | ART-7 | [`CAP-INT-06`] | Sécurité et chiffrement |
 | ART-8 | [`CAP-INT-03`] | Échange et médiation inter-systèmes |
-| ART-8a | [`CAP-INT-03`] | Échange et médiation inter-systèmes |
-| ART-8b | [`CAP-INT-03`] | Échange et médiation inter-systèmes |
-| ART-8c | [`CAP-INT-03`] | Échange et médiation inter-systèmes |
-| ART-8d | [`CAP-INT-03`] | Échange et médiation inter-systèmes |
+| ART-8A | [`CAP-INT-03`] | Échange et médiation inter-systèmes |
+| ART-8B | [`CAP-INT-03`] | Échange et médiation inter-systèmes |
+| ART-8C | [`CAP-INT-03`] | Échange et médiation inter-systèmes |
+| ART-8D | [`CAP-INT-03`] | Échange et médiation inter-systèmes |
 | ART-9 | [`CAP-INT-07`] | Éligibilité couverture |
 | ART-10 | [`CAP-INT-10`] | Audit et traçabilité |
 | ART-11 | [`CAP-INT-13`, `CAP-INT-14`] | Interopérabilité transfrontalière, Échanges intersectoriels One Health |
@@ -493,7 +493,7 @@ La table de hiérarchie dans `README.md` et les index de chaque niveau sont alig
 3. ~~**Nomenclature ART-SN vs ARTSN**~~ — **✓ Résolu** : uniformisé en ARTSN.
 4. ~~**`docs.json` racine** : toujours le template Mintlify par défaut~~ — **✓ Résolu** (reconstruit avec 160 pages, 4 onglets)
 5. ~~**Versions** : harmoniser les niveaux en semver~~ — **✓ Résolu** (semver `1.0.0` partout)
-6. **OpenFn** : positionnement corrigé — pas une alternative à OpenHIM, mais plateforme d'orchestration (ART-8a) complémentaire. Candidate pour futur profil dédié si besoin.
+6. **OpenFn** : positionnement corrigé — pas une alternative à OpenHIM, mais plateforme d'orchestration (ART-8A) complémentaire. Candidate pour futur profil dédié si besoin.
 
 ### 14.9 Recommandations
 
@@ -549,11 +549,11 @@ Champ `related: ["cap-int-XX"]` ajouté dans le frontmatter des 20 chapitres ART
 OpenFn (plateforme d'intégration open-source orientée workflow) **n'est pas une alternative à OpenHIM**. Ce sont des couches complémentaires :
 
 - **OpenHIM** (PT-02) = médiation intra-secteur (ART-2) — routage, transformation, validation des messages santé
-- **OpenFn** = orchestration de processus métier (ART-8a) — automatisation de workflows inter-systèmes
+- **OpenFn** = orchestration de processus métier (ART-8A) — automatisation de workflows inter-systèmes
 
 OpenFn pourrait être un candidat pertinent pour :
 - des initiatives nécessitant de l'orchestration de workflows au-delà de la simple médiation
-- un futur profil technique dédié à l'orchestration bornée (ART-8a) si le besoin se formalise
+- un futur profil technique dédié à l'orchestration bornée (ART-8A) si le besoin se formalise
 
 **→ PT-16 créé** (2026-08-19) : `03_ptisn/03_profils/pt-16-orchestration-processus.md` + `referentiel/profils/pt-16.md`. OpenFN comme produit candidat de référence. Index mis à jour (16 profils).
 
@@ -682,9 +682,9 @@ Voir §20 : détecteur d'objets isolés ajouté au validateur (`scripts/validate
 **Constat :** CMP-05 (Graph Store), CMP-18 (Netting/compensation) et CMP-07 (Saga) sont des patterns bancaires sans précédent en santé africaine ; 18 composants vs 7–10 chez les pairs.
 
 **Correctifs appliqués (✓) :**
-- `02_artsn/04_cartographie-cible.md` : *Note de rationalisation* ajoutée ; CMP-05 et CMP-18 marqués *Phase 2 — candidat (conditionné à une initiative validante)* ; CMP-15/16/17/18 signalés comme candidats à fusion en *Pattern d'échange unifié* ; CMP-07 (Sagas) soumis à étude préalable.
-- `02_artsn/09_feuille-route/index.md` : *Note de rationalisation* ajoutée, CMP-05/18 repoussés hors phases 1–6.
-- La table de maturité (`02_artsn/07_annexes/a-table-de-maturite.md`) ne couvre que les chapitres ART (pas les CMP) ; le phasage des composants est donc porté par la cartographie cible et la feuille de route.
+- `02_artsn/05_cartographie.md` : *Note de rationalisation* ajoutée ; CMP-05 et CMP-18 marqués *Phase 2 — candidat (conditionné à une initiative validante)* ; CMP-15/16/17/18 signalés comme candidats à fusion en *Pattern d'échange unifié* ; CMP-07 (Sagas) soumis à étude préalable.
+- `02_artsn/07_lots/index.md` : *Note de rationalisation* ajoutée, CMP-05/18 repoussés hors phases 1–6.
+- La table de maturité (`02_artsn/08_annexes/a-table-de-maturite.md`) ne couvre que les chapitres ART (pas les CMP) ; le phasage des composants est donc porté par la cartographie cible et la feuille de route.
 
 ---
 

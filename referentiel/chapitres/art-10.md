@@ -4,10 +4,11 @@ id: ART-10
 type: chapitre
 niveau: "3"
 title: Logistique
-status: draft
+status: candidate
+maturity_condition: "Confirmation par une initiative LMIS/logistique déployant la traçabilité de bout en bout des mouvements de stock"
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/03_chapitres/art-10-logistique.md
+envelope: 02_artsn/04_patterns/art-10-logistique.md
 maps_to: ["CAP-10", "CAP-11"]
 implements: []
 applies_to: ["ENF-2"]

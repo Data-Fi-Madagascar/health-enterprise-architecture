@@ -21,7 +21,7 @@ tags: ["ptisn", "niveau-4", "profils", "PT-10"]
 ## 2. Chapitres ART applicables
 
 - [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md) ;
-- ART-4b ;
+- ART-4B ;
 - [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../referentiel/chapitres/art-7.md) ;
 - [ART-9: Garanties transactionnelles fortes](../../referentiel/chapitres/art-9.md) lorsque applicable.
 
@@ -176,7 +176,5 @@ En cas d'urgence vitale documentée (code U3 ou U4), les restrictions RBAC sont 
 | Catastrophe naturelle ou sanitaire | Mode dégradé : accès hors-ligne avec synchronisation différée | Piste d'audit complète après resynchronisation |
 
 ------------------------------------------------------------------------
-
-*Rattachement : CMP-15, CAP-INT-08, ART-0, ART-4B, ART-7, ART-9 · fiche PT-10*
 
 <!-- END:GENERATED -->

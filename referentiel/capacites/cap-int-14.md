@@ -101,6 +101,6 @@ Les secteurs concernés :
 - [CAP-05: Surveillance épidémiologique, alerte, investigation et riposte](../../referentiel/capabilites/cap-05.md) (Surveillance épidémiologique)
 - [ART-11](../../referentiel/chapitres/art-11.md) (Coordination intersectorielle)
 - [ART-0](../../referentiel/chapitres/art-0.md) (Accords de partage inter-institutionnels)
-- [ART-4d](../../referentiel/chapitres/art-4d.md) (Référentiel géospatial)
+- [ART-4D](../../referentiel/chapitres/art-4d.md) (Référentiel géospatial)
 - [F.2](../../referentiel/fondations/f-2.md) (Souveraineté intersectorielle)
 - [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (Cloisonnement inter-institutionnel One Health)

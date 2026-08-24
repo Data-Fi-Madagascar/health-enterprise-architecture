@@ -44,11 +44,11 @@ package "Couche 5 : Projections\nanalytiques et Modèles" as C5 {
 }
 
 package "Couche 4 : Interopérabilité\net services partagés" as C4 {
-  component "Médiation sémantique (ART-2)\nOrchestrateur de parcours (ART-8a)\nRéférentiels nationaux (INP, CSU, terminologies)" as C4_DESC
+  component "Médiation sémantique (ART-2)\nOrchestrateur de parcours (ART-8A)\nRéférentiels nationaux (INP, CSU, terminologies)" as C4_DESC
 }
 
 package "Couche 3 : Échange, transport\net ingestion" as C3 {
-  component "API Gateway\nMessage broker\nCompensateur (ART-8c)\nX-Road (échange interinstitutionnel)" as C3_DESC
+  component "API Gateway\nMessage broker\nCompensateur (ART-8C)\nX-Road (échange interinstitutionnel)" as C3_DESC
 }
 
 package "Couche 2 : Point de service" as C2 {
@@ -78,14 +78,14 @@ Chaque couche exécute un ou plusieurs chapitres normatifs de l'ARTSN (référen
 |--------------|--------------|---------------|
 | Couche 6 | Couche 6 : Pilotage | Tableaux de bord, portail CSU, centre de commande alertes (CMP-01, CMP-02) |
 | Couche 5 | Couche 5 : Projections | Entrepôt Lakehouse, moteur IA, moteur de graphes (CMP-03, CMP-04, CMP-05) |
-| Couche 4 | Couche 4 : Interopérabilité | Médiation (ART-2), orchestration (ART-8a), registres nationaux (CMP-06…14) |
+| Couche 4 | Couche 4 : Interopérabilité | Médiation (ART-2), orchestration (ART-8A), registres nationaux (CMP-06…14) |
 | Couche 3 | Couche 3 : Échange | API Gateway, broker, compensateur (CMP-15…18) + **X-Road** (échange interinstitutionnel) |
 | Couche 2 | Couche 2 : Point de service | Applications terrain, résilience offline (ENF-1, F.1) |
 | Couche 1 | Couche 1 : Infrastructure | Datacenters nationaux, nœuds régionaux/locaux (ART-7) |
 | Axe 1 transversal | Axe 1 : Sécurité | Cybersécurité, authentification, consentements, chiffrement, audit (ART-7) |
 | Axe 2 transversal | Axe 2 : Gouvernance | Homologation, cadre réglementaire, accords interministériels (F.4, ART-0) |
 
-Les deux axes transversaux traversent l'ensemble des six couches et imposent des obligations qui s'appliquent uniformément à chaque niveau de l'architecture. La couche 3 est structurellement **dépourvue de toute logique ou intelligence métier** (ART-1) : l'orchestration des parcours appartient exclusivement à la couche 4 (ART-8a).
+Les deux axes transversaux traversent l'ensemble des six couches et imposent des obligations qui s'appliquent uniformément à chaque niveau de l'architecture. La couche 3 est structurellement **dépourvue de toute logique ou intelligence métier** (ART-1) : l'orchestration des parcours appartient exclusivement à la couche 4 (ART-8A).
 
 Cette organisation ne signifie pas que tous les échanges internes au secteur santé doivent transiter par la plateforme interinstitutionnelle (X-Road). Celle-ci est utilisée uniquement lorsqu'un échange implique une institution extérieure au secteur, une autorité de données transversale, un service pangouvernemental ou une obligation prévue par le cadre national d'interopérabilité.
 
@@ -95,11 +95,11 @@ Cette organisation ne signifie pas que tous les échanges internes au secteur sa
 
 La médiation sectorielle, opérant en couche 4, assume la responsabilité de l'exposition d'un point d'entrée sectoriel unique, de la transformation des messages, de l'application des profils santé, de la normalisation des identifiants, du routage, de la corrélation, de l'observabilité et de l'intégration avec les registres de santé. Elle constitue le pivot sémantique et opérationnel du secteur.
 
-### 2.1b Orchestration de parcours (Couche 4 : ART-8a)
+### 2.1b Orchestration de parcours (Couche 4 : ART-8A)
 
-L'orchestrateur de parcours, également situé en couche 4 conformément à l'ART-8a, est responsable de l'orchestration des flux inter-systèmes en transactions distribuées (Sagas), de la gestion des compensations en cas d'anomalie, de la cohérence des parcours patient à travers les institutions et les systèmes, ainsi que de la résilience des workflows cliniques critiques.
+L'orchestrateur de parcours, également situé en couche 4 conformément à l'ART-8A, est responsable de l'orchestration des flux inter-systèmes en transactions distribuées (Sagas), de la gestion des compensations en cas d'anomalie, de la cohérence des parcours patient à travers les institutions et les systèmes, ainsi que de la résilience des workflows cliniques critiques.
 
-> **Note :** l'orchestration appartient à la couche 4 (ART-8a), et non à la couche 3. La couche 3 est dépourvue de toute logique métier (ART-1), conformément au principe de séparation des responsabilités.
+> **Note :** l'orchestration appartient à la couche 4 (ART-8A), et non à la couche 3. La couche 3 est dépourvue de toute logique métier (ART-1), conformément au principe de séparation des responsabilités.
 
 ### 2.2 Échange interinstitutionnel (Couche 3 : X-Road)
 
@@ -121,5 +121,5 @@ Les services métier sectoriels demeurent responsables de la validation métier,
 
 ## Références
 
-- **cartographie conceptuelle cible de l'ARTSN** : Cartographie conceptuelle cible (`02_artsn/04_cartographie-cible/index.md`)
+- **cartographie conceptuelle cible de l'ARTSN** : Cartographie conceptuelle cible (`02_artsn/05_cartographie/index.md`)
 - **F.1** : F.1 : Résilience face à la réalité géographique du pays (`referentiel/fondations/f-1.md`)

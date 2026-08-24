@@ -68,8 +68,6 @@ Elle est **pivot** pour le parcours de soins et conditionne le bon déroulement 
 
 Responsables de capabilités métier
 
-*Rattachement : VS-01 · fiche CAP-01*
-
 ### Gestion du parcours patient, référence et contre-référence
 
 #### Rôle dans le système
@@ -87,10 +85,10 @@ Son absence fragilise la continuité des soins ([VS-01: Accéder à des services
 
 | Scénario | Description | Profils consommés |
 |----------|-------------|-------------------|
-| **Référence (S-03)** | Orientation d'un patient d'un niveau de soins vers un autre (CSB → hôpital régional) | [PT-01: Profil technique national](../../referentiel/profils/pt-01.md), [PT-02: Profil technique national](../../referentiel/profils/pt-02.md) |
-| **Contre-référence (S-04)** | Retour du patient vers l'établissement d'origine avec compte-rendu et recommandations | [PT-01: Profil technique national](../../referentiel/profils/pt-01.md), [PT-02: Profil technique national](../../referentiel/profils/pt-02.md) |
-| **Évacuation sanitaire nationale (S-05)** | Transfert urgent entre établissements nationaux | [PT-01: Profil technique national](../../referentiel/profils/pt-01.md), [PT-02: Profil technique national](../../referentiel/profils/pt-02.md), [PT-11: Profil technique national](../../referentiel/profils/pt-11.md) |
-| **Évacuation sanitaire internationale (S-05)** | Transfert vers un centre spécialisé à l'étranger | [PT-01: Profil technique national](../../referentiel/profils/pt-01.md), [PT-02: Profil technique national](../../referentiel/profils/pt-02.md), [PT-11: Profil technique national](../../referentiel/profils/pt-11.md), [PT-14: Interopérabilité transfrontalière](../../referentiel/profils/pt-14.md) |
+| **Référence (DO-07)** | Orientation d'un patient d'un niveau de soins vers un autre (CSB → hôpital régional) | [PT-01: Profil technique national](../../referentiel/profils/pt-01.md), [PT-02: Profil technique national](../../referentiel/profils/pt-02.md) |
+| **Contre-référence (DO-08)** | Retour du patient vers l'établissement d'origine avec compte-rendu et recommandations | [PT-01: Profil technique national](../../referentiel/profils/pt-01.md), [PT-02: Profil technique national](../../referentiel/profils/pt-02.md) |
+| **Évacuation sanitaire nationale (DO-09)** | Transfert urgent entre établissements nationaux | [PT-01: Profil technique national](../../referentiel/profils/pt-01.md), [PT-02: Profil technique national](../../referentiel/profils/pt-02.md), [PT-11: Profil technique national](../../referentiel/profils/pt-11.md) |
+| **Évacuation sanitaire internationale (DO-09)** | Transfert vers un centre spécialisé à l'étranger | [PT-01: Profil technique national](../../referentiel/profils/pt-01.md), [PT-02: Profil technique national](../../referentiel/profils/pt-02.md), [PT-11: Profil technique national](../../referentiel/profils/pt-11.md), [PT-14: Interopérabilité transfrontalière](../../referentiel/profils/pt-14.md) |
 
 #### Flux de valeur
 
@@ -112,8 +110,6 @@ Son absence fragilise la continuité des soins ([VS-01: Accéder à des services
 #### Propriétaire
 
 Responsables de capabilités métier
-
-*Rattachement : VS-01, CAP-INT-03, CAP-INT-01, CAP-INT-13 · fiche CAP-02*
 
 ### Qualité, sécurité des soins et amélioration continue
 
@@ -150,8 +146,6 @@ Elle alimente à la fois la qualité des soins ([VS-01: Accéder à des services
 
 Responsables de capabilités métier
 
-*Rattachement : VS-01, VS-04 · fiche CAP-03*
-
 ### Santé communautaire et engagement des communautés
 
 #### Rôle dans le système
@@ -186,8 +180,6 @@ Elle renforce la couverture sanitaire sur les flux [VS-01: soins](../../referent
 #### Propriétaire
 
 Responsables de capabilités métier
-
-*Rattachement : VS-01, VS-02 · fiche CAP-04*
 
 ### Surveillance épidémiologique, alerte, investigation et riposte
 
@@ -230,8 +222,6 @@ Son absence fragilise la surveillance sanitaire ([VS-02: Prévenir, détecter et
 
 Responsables de capabilités métier
 
-*Rattachement : VS-02 · fiche CAP-05*
-
 ### Vaccination, prévention et promotion de la santé
 
 #### Rôle dans le système
@@ -266,8 +256,6 @@ Son absence fragilise la prévention et la surveillance sanitaire ([VS-02: Prév
 #### Propriétaire
 
 Responsables de capabilités métier
-
-*Rattachement : VS-02 · fiche CAP-06*
 
 ### Protection financière, couverture santé universelle
 
@@ -304,8 +292,6 @@ Son absence fragilise la protection financière des ménages ([VS-03: Protéger 
 
 Responsables de capabilités métier
 
-*Rattachement : VS-03 · fiche CAP-07*
-
 ### Gouvernance institutionnelle, planification, coordination et redevabilité
 
 #### Rôle dans le système
@@ -341,8 +327,6 @@ Son absence fragilise le pilotage du système ([VS-04: Piloter, coordonner et am
 #### Propriétaire
 
 Responsables de capabilités métier
-
-*Rattachement : VS-03, VS-04 · fiche CAP-08*
 
 <!-- END:GENERATED -->
 ## Liens

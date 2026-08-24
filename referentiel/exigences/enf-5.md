@@ -21,7 +21,7 @@ tags: ["artsn", "niveau-3", "exigence", "ENF-5"]
 
 **Contenu normatif.** Le système national doit être capable de suivre et d'orchestrer l'état d'avancement d'un parcours de soins distribué à étapes multiples, de bout en bout. L'architecture doit tolérer les interruptions temporaires de transmission, tout en garantissant le déclenchement automatique d'alertes d'escalade ou d'annulations (compensations) fonctionnelles si un établissement de destination est saturé ou inaccessible.
 
-**Statut : Stable.** — appliqué par [ART-8a (orchestration de processus borné)](../chapitres/art-8a.md), [ART-5 (qualité des données)](../chapitres/art-5.md), [PT-14 (interopérabilité transfrontalière)](../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md).
+**Statut : Stable.** — appliqué par [ART-8A (orchestration de processus borné)](../chapitres/art-8a.md), [ART-5 (qualité des données)](../chapitres/art-5.md), [PT-14 (interopérabilité transfrontalière)](../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md).
 
 ## Justification
 
@@ -41,7 +41,7 @@ Les parcours de soins critiques s’étendent sur plusieurs jours et impliquent 
 
 ## Fondations et chapitres garants
 
-- **ART-8a** — Orchestration de processus borné
+- **ART-8A** — Orchestration de processus borné
 - [ART-8: Orchestration de processus](../chapitres/art-8.md) — Orchestration de processus
 - [ART-5: Cohérence et qualité des données](../chapitres/art-5.md) — Cohérence et qualité des données
 - [PT-14: Interopérabilité transfrontalière](../profils/pt-14.md) — Interopérabilité transfrontalière

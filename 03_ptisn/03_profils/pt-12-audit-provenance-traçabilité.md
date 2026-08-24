@@ -91,6 +91,4 @@ Un journal technique ne doit pas être utilisé comme seul mécanisme de preuve 
 
 ------------------------------------------------------------------------
 
-*Rattachement : CMP-17, CAP-INT-10, F-1, F-5, F-6, ART-3, ART-7 · fiche PT-12*
-
 <!-- END:GENERATED -->

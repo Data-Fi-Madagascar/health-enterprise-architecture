@@ -9,6 +9,8 @@ dist/
 __pycache__/
 *.pyc
 
-# Artefacts de cache graphify (jamais committés)
-graphify-out/cache/
-**/graphify-out/cache/
+# Sorties générées par graphify (jamais committées)
+graphify-out/
+
+# Configuration locale Obsidian (jamais committée)
+.obsidian/

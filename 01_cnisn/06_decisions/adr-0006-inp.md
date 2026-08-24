@@ -51,7 +51,7 @@ L'INP répond aux exigences du cadre :
 - **CAP-INT-01** : Résolution d'identité du bénéficiaire
 - **CAP-13** : Interopérabilité des données
 - **ART-4** : Référentiels nationaux
-- **ART-4a** : Résolution d'identité
+- **ART-4A** : Résolution d'identité
 - **VS-01** : Parcours patient (continuité)
 - **VS-03** : Protection financière (éligibilité)
 
@@ -86,6 +86,7 @@ L'INP doit :
 | Identifiant UUID aléatoire | Pas de signification métier, pas humainement lisible |
 
 ## Références
+- **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/07_lots/index.md)
 
 - PT-04 : Résolution d'identité
 - ADR-0004 : PIXm/PDQm

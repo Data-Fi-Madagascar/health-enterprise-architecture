@@ -2,12 +2,13 @@
 domain: composants
 id: CMP-03
 type: composant-applicatif
+categorie: applicatif
 niveau: "1"
 title: Entrepôt Lakehouse & Projections analytiques (pipeline ETL, Lakehouse, projections)
 status: draft
 owner: DEPSI
 version: "0.0.1"
-envelope: 02_artsn/04_cartographie-cible/composants.md
+envelope: 02_artsn/05_cartographie/composants.md
 maps_to: ["CAP-INT-07", "CAP-INT-11"]
 implements: ["ART-6", "ART-9"]
 applies_to: ["PRC-09", "PRC-11"]

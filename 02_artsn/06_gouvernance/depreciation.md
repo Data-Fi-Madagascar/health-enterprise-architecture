@@ -150,5 +150,5 @@ Voir les documents suivants : Guide du processus de gouvernance, Registre des d�
 
 - **Guide du processus de gouvernance** : Guide du processus de gouvernance (`00_caesn/07_governance/processus-gouvernance.md`)
 - **Registre des décisions** : Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
-- **Table de maturité** : Annexe A : Table de maturité par chapitre (`02_artsn/07_annexes/a-table-de-maturite.md`)
+- **Table de maturité** : Annexe A : Table de maturité par chapitre (`02_artsn/08_annexes/a-table-de-maturite.md`)
 - **Gouvernance ARTSN** : Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)
