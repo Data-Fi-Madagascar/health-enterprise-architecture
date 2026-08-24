@@ -15,6 +15,7 @@ applies_to: ["VS-01"]
 related: []
 tags: ["caesn", "niveau-1", "capabilite", "CAP-01"]
 ---
+realized_by: ["SRV-02"]
 # Offre de soins et continuité des services
 
 ## Rôle dans le système

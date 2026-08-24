@@ -263,6 +263,7 @@ Proportion de formations sanitaires ayant réalisé une revue qualité dans le m
 <!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-01.md,referentiel/processus/prc-02.md,referentiel/processus/prc-03.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
+performed_by: ["ROL-01"]
 ### Accès, orientation et admission du patient
 
 #### Objectif
@@ -282,6 +283,7 @@ Patient, famille, agent de santé communautaire, personnel d'accueil, registre p
 
 Taux de recours aux soins, délai moyen d'accès à une formation sanitaire, taux de dossiers ouverts, délai d'enregistrement
 
+performed_by: ["ROL-02"]
 ### Prestation des soins cliniques
 
 #### Objectif

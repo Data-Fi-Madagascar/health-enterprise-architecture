@@ -34,6 +34,7 @@ Chaque capabilité vit dans le référentiel : `referentiel/capabilites/cap-XX.m
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
+realized_by: ["SRV-02"]
 ### Offre de soins et continuité des services
 
 #### Rôle dans le système
@@ -111,6 +112,7 @@ Son absence fragilise la continuité des soins ([VS-01: Accéder à des services
 
 Responsables de capabilités métier
 
+realized_by: ["SRV-06"]
 ### Qualité, sécurité des soins et amélioration continue
 
 #### Rôle dans le système

@@ -13,6 +13,7 @@ governs: ["CMP-01", "CMP-02", "CMP-03", "CMP-04", "CMP-05", "CMP-06", "CMP-07", 
 implements: ["ART-0", "F-4"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-39", "axe-gouvernance"]
 ---
+realized_by: ["WP-01"]
 # CMP-39 : Registre des accords inter-institutions
 **Contenu normatif.** Ce registre de gouvernance tient a jour les accords de partage de donnees entre institutions (ministeres, structures de sante, partenaires, secteur prive). Il documente le cadre juridique, les parties, le perimetre et les finalites de chaque echange inter-institutionnel.
 **Discipline de mise en oeuvre.** Aucun echange inter-institutionnel n'a lieu sans accord reference et actif. Le registre est la source de verite des engagements et est consulte par la passerelle d'echange (PT-01). Les accords expires suspendent automatiquement les flux correspondants.

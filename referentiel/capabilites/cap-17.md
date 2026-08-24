@@ -15,6 +15,7 @@ applies_to: ["VS-01", "VS-03"]
 related: ["VS-01", "VS-02", "PRC-01", "PRC-04", "PRC-07"]
 tags: ["caesn", "niveau-1", "capabilite", "CAP-17", "identite", "consentement"]
 ---
+realized_by: ["SRV-01"]
 # Engagement patient et identité numérique
 
 ## Rôle dans le système

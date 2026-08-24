@@ -15,6 +15,7 @@ applies_to: ["VS-01", "VS-04"]
 related: []
 tags: ["caesn", "niveau-1", "capabilite", "CAP-03"]
 ---
+realized_by: ["SRV-06"]
 # Qualité, sécurité des soins et amélioration continue
 
 ## Rôle dans le système

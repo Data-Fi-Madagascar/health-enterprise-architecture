@@ -277,6 +277,7 @@ Districts sanitaires, communes, fokontany, gestionnaires du registre, Ministère
 
 Taux de couverture du registre, taux d'exclusion estimé, proportion de formations sanitaires informées des droits
 
+performed_by: ["ROL-04"]
 ### Financement et exemption au point de service
 
 #### Objectif
@@ -296,6 +297,7 @@ Ministère de l'Économie et des Finances, Ministère de la Santé, partenaires,
 
 Taux d'exécution budgétaire, part du budget santé allouée à la protection financière, taux d'exemption appliqué, taux de refus de soins signalés
 
+performed_by: ["ROL-03"]
 ### Remboursement et régulation des mécanismes
 
 #### Objectif

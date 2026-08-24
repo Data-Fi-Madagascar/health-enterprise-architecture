@@ -15,6 +15,7 @@ applies_to: []
 related: []
 tags: ["cnisn", "niveau-2", "capacite"]
 ---
+realized_by: ["PL-01", "WP-01"]
 
 # Résolution d’identité du bénéficiaire
 

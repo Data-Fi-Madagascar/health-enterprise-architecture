@@ -15,6 +15,7 @@ applies_to: ["PRC-04", "PRC-05", "PRC-06"]
 related: ["ENF-3", "CAP-09", "VS-02"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-11", "couche-4"]
 ---
+realized_by: ["WP-03"]
 # Registre des clients / Index National des Patients (INP — ART-4A)
 
 **Contenu normatif.** Ce composant gère l'identité unique des patients à l'échelle nationale. Il assure la déduplication et le matching des identités, et fournit les services de recherche et d'identification des patients.

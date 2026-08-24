@@ -50,6 +50,8 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 <!-- BEGIN:GENERATED mode=catalogue source=referentiel/objets-de-donnees/do-01.md,referentiel/objets-de-donnees/do-02.md,referentiel/objets-de-donnees/do-03.md,referentiel/objets-de-donnees/do-04.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
+accessed_by: ["SRV-02"]
+
 ### DO-01 : Patient
 
 Personne physique bénéficiaire de soins de santé, identifiée de manière unique au sein du système d'information sanitaire national. L'identité du patient est un actif stratégique national qui ne peut être dupliquée, fragmentée ou remplacée par des identifiants propriétaires de programmes ou de projets.
@@ -70,6 +72,8 @@ Ce concept est mobilisé par les capacités [CAP-01 (continuité des soins)](../
 - **Flux de valeur** : [VS-01 (parcours patient)](../../referentiel/flux-valeur/vs-01.md), [VS-03 (protection financière)](../../referentiel/flux-valeur/vs-03.md)
 - **Objet métier CAESN** : [BO-01 : Patient & identité](../../referentiel/objets-metier/bo-01.md)
 - **Chapitres ARTSN** : [ART-2](../../referentiel/chapitres/art-2.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-7](../../referentiel/chapitres/art-7.md)
+
+accessed_by: ["SRV-03"]
 
 ### DO-02 : Identifiant national d'identification (NIN)
 
@@ -92,6 +96,8 @@ Ce concept est mobilisé par les capacités [CAP-01](../../referentiel/capabilit
 - **Objet métier CAESN** : [BO-01 : Patient & identité](../../referentiel/objets-metier/bo-01.md)
 - **Chapitres ARTSN** : [ART-2](../../referentiel/chapitres/art-2.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-7](../../referentiel/chapitres/art-7.md)
 
+accessed_by: ["SRV-04", "SRV-05"]
+
 ### DO-03 : Dossier patient
 
 Ensemble structuré des informations cliniques, administratives et de suivi relatives à un patient au cours de sa vie. Il comprend les antécédents, les épisodes de soins, les prescriptions, les résultats d'examens et les documents cliniques.
@@ -112,6 +118,8 @@ Ce concept est mobilisé par les capacités [CAP-01](../../referentiel/capabilit
 - **Flux de valeur** : [VS-01](../../referentiel/flux-valeur/vs-01.md)
 - **Objet métier CAESN** : [BO-01 : Patient & identité](../../referentiel/objets-metier/bo-01.md)
 - **Chapitres ARTSN** : [ART-2](../../referentiel/chapitres/art-2.md), [ART-4](../../referentiel/chapitres/art-4.md), [ART-7](../../referentiel/chapitres/art-7.md)
+
+accessed_by: ["SRV-06"]
 
 ### DO-04 : Épisode de soins
 

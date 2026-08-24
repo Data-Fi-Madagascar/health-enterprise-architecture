@@ -16,6 +16,7 @@ applies_to: ["ENF-2"]
 related: []
 tags: ["artsn", "niveau-3", "chapitre", "ART-9"]
 ---
+realized_by: ["WP-06"]
 # Garanties transactionnelles fortes
 
 **Contenu normatif.** Pour tout mouvement de valeur monétaire ou physique, l’architecture impose une contrainte de **grade comptable strict** basée sur un registre immuable, garantissant l’équilibre parfait des comptes (équation cible : *entrées − sorties = solde*). Toute écriture doit être associée à une signature non répudiable et un numéro de suivi de lot.

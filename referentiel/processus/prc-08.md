@@ -15,6 +15,7 @@ related: ["VS-03-03", "VS-03-04", "VS-03", "BO-04"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-08"]
 uses: ["CMP-09", "CMP-10", "CMP-16", "CMP-22"]
 ---
+performed_by: ["ROL-04"]
 # Financement et exemption au point de service
 
 ## Objectif

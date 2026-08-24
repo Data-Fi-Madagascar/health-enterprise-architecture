@@ -319,6 +319,8 @@ Comité de gestion de crise, direction centrale, comité technique national
 
 Taux de létalité, durée de l'épisode épidémique, nombre de revues après action, proportion de recommandations mises en œuvre
 
+performed_by: ["ROL-05"]
+
 ### Échange et coordination transfrontaliers
 
 #### Objectif

@@ -24,6 +24,8 @@ Ce document définit les **objets de données métier** (BO) du niveau 1 (CAESN)
 <!-- BEGIN:GENERATED mode=catalogue source=referentiel/objets-metier/bo-01.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
+accessed_by: ["SRV-01", "SRV-02"]
+
 ### BO-01 : Patient & identité
 
 Identité de la personne prise en charge, épisodes de soins, dossier et référencements. Pilier de toute continuité de prise en charge.

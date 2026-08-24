@@ -246,3 +246,37 @@ Le CNISN fixe le **quoi** (normes obligatoires et décisions d'architecture) ; l
 | L7 — Coordination One Health | — (intersectoriel) | ADR-0001 (X-Road), ADR-0007 (GDHCN) |
 
 Cette trajectoire garantit que le déploiement ARTSN reste conforme au cadre national d'interopérabilité à chaque étape.
+
+## 10. Paquets de travail, plateaux et écarts
+
+Les lots L1–L7 sont modélisés comme **paquets de travail** (Implementation & Migration). Ils contribuent à trois **plateaux** (états cibles) et révèlent des **écarts** (gaps) de couverture entre états. Ces objets sont décrits individuellement dans leurs enveloppes ; les vues ci-dessous sont générées automatiquement.
+
+### 10.1 Paquets de travail (lots)
+
+Chaque lot devient un paquet de travail (objet `work-package`) qui *réalise* des capacités/composants et *contribue* à un plateau.
+
+| Paquet | Lot | Période | Réalise (extrait) | Enveloppe |
+|--------|-----|---------|-------------------|-----------|
+| [WP-01](../../referentiel/work-packages/wp-01.md) | L1 — Infrastructure & sécurité | T4 2026 – T2 2027 | CMP-26, CMP-32, CMP-39, CAP-INT-01, SRV-04 | wk-01 |
+| [WP-02](../../referentiel/work-packages/wp-02.md) | L2 — Applications terrain & collecte | T2 2027 – T4 2027 | CMP-09, CMP-23, SRV-02, SRV-05, CAP-01 | wk-02 |
+| [WP-03](../../referentiel/work-packages/wp-03.md) | L3 — Médiation & registres | T4 2027 – T2 2028 | CMP-10, CMP-11, SRV-03, SRV-04, CAP-INT-03 | wk-03 |
+| [WP-04](../../referentiel/work-packages/wp-04.md) | L4 — Analytique & pilotage | T2 2028 – T4 2028 | CMP-12, SRV-06, CAP-03, ART-6 | wk-04 |
+| [WP-05](../../referentiel/work-packages/wp-05.md) | L5 — Extension & pérennisation | T4 2028 – T2 2029 | SRV-06, CAP-03, CAP-INT-08, PT-14, PT-15 | wk-05 |
+| [WP-06](../../referentiel/work-packages/wp-06.md) | L6 — Interopérabilité transfrontalière | T2 2029 – T4 2029 | SRV-04, CAP-INT-08, ART-9, PT-14 | wk-06 |
+| [WP-07](../../referentiel/work-packages/wp-07.md) | L7 — Coordination One Health | T2 2029 – T4 2029 | CMP-02, ART-8B, CAP-03, PT-15 | wk-07 |
+
+### 10.2 Plateaux de la feuille de route
+
+| Plateau | État cible | Réalise | Précède | Enveloppe |
+|---------|------------|---------|---------|-----------|
+| [PL-01](../../referentiel/plateaux/pl-01.md) | Socle & confiance numérique | CAP-INT-01, CAP-17 | PL-02 | pl-01 |
+| [PL-02](../../referentiel/plateaux/pl-02.md) | Services de terrain & interopérabilité | CAP-01, CAP-INT-03 | PL-03 | pl-02 |
+| [PL-03](../../referentiel/plateaux/pl-03.md) | Intelligence & ouverture | CAP-03, CAP-INT-08, CAP-INT-10 | — | pl-03 |
+
+### 10.3 Écarts (gaps) de couverture
+
+| Écart | Entre | Description | Enveloppe |
+|-------|-------|-------------|-----------|
+| [GAP-01](../../referentiel/gaps/gap-01.md) | PL-01 → PL-02 | Couverture terrain en zone isolée (connectivité contrainte) | gap-01 |
+| [GAP-02](../../referentiel/gaps/gap-02.md) | PL-02 → PL-03 | Interopérabilité transfrontalière & One Health | gap-02 |
+| [GAP-03](../../referentiel/gaps/gap-03.md) | état initial → PL-01 | Cadre légal & gouvernance publié (décret CNASN) | gap-03 |

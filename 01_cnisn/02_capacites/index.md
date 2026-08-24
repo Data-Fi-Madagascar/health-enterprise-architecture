@@ -38,6 +38,8 @@ Chaque entrée liste les principes associés via le référentiel.
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-01.md,referentiel/capacites/cap-int-02.md,referentiel/capacites/cap-int-04.md,referentiel/capacites/cap-int-05.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
+realized_by: ["PL-01", "WP-01"]
+
 ### Résolution d’identité du bénéficiaire
 
 #### Finalité
@@ -175,6 +177,8 @@ Permettre aux systèmes de partager des définitions et codifications cohérente
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-03.md,referentiel/capacites/cap-int-06.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
+realized_by: ["SRV-03"]
+
 ### Échange et médiation inter-systèmes
 
 #### Finalité
@@ -308,6 +312,8 @@ La conception interne des entrepôts, projections et modèles analytiques relèv
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-08.md,referentiel/capacites/cap-int-09.md,referentiel/capacites/cap-int-10.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
+realized_by: ["SRV-04"]
+
 ### Confiance, sécurité et autorisation
 
 #### Finalité
@@ -366,6 +372,8 @@ Le consentement est une base possible parmi plusieurs bases légales ou fonction
 - [P-INT-15: Limitation à la finalité](../../referentiel/principes/p-int-15.md)
 - [P-INT-16: Résidence et non-réplication](../../referentiel/principes/p-int-16.md)
 - [P-INT-17: Minimisation](../../referentiel/principes/p-int-17.md)
+
+realized_by: ["SRV-05"]
 
 ### Provenance, audit et traçabilité
 

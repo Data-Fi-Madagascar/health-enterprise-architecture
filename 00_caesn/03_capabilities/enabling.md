@@ -327,6 +327,7 @@ Ces quatre capabilités ([CAP-13: Système d'information sanitaire, données et 
 
 Responsables de capabilités habilitantes
 
+realized_by: ["SRV-01"]
 ### Engagement patient et identité numérique
 
 #### Rôle dans le système

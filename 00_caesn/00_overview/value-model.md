@@ -78,6 +78,7 @@ Toute initiative numérique doit démontrer sa contribution à :
 <!-- BEGIN:GENERATED source=referentiel/parties-prenantes/pp-01.md,referentiel/parties-prenantes/pp-02.md,referentiel/parties-prenantes/pp-03.md,referentiel/parties-prenantes/pp-04.md,referentiel/parties-prenantes/pp-05.md,referentiel/parties-prenantes/pp-06.md,referentiel/parties-prenantes/pp-07.md,referentiel/parties-prenantes/pp-08.md,referentiel/parties-prenantes/pp-09.md,referentiel/parties-prenantes/pp-10.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
+represented_by: ["ACT-01"]
 ### Patient et usager
 
 #### Rôle dans le système
@@ -234,6 +235,7 @@ Participer à la santé et accéder à des services de proximité
 - **Du système envers la partie prenante** : fournir des canaux de remontée d'information, des référentiels partagés et des outils de proximité fonctionnant en connectivité contrainte.
 - **De la partie prenante envers le système** : alimenter les données communautaires de façon fiable et orienter les membres vers les structures de soins appropriées.
 
+represented_by: ["ACT-02"]
 ### Agent de santé
 
 #### Rôle dans le système
@@ -274,6 +276,7 @@ Disposer des ressources, compétences, outils et informations nécessaires
 - **Du système envers la partie prenante** : lui fournir des outils nomades, des référentiels à jour et un accès aux données patient nécessaires à la décision, même en connectivité dégradée.
 - **De la partie prenante envers le système** : tenir à jour son enregistrement professionnel, saisir des données de qualité et respecter les règles d'accès et de confidentialité.
 
+represented_by: ["ACT-03"]
 ### Formation sanitaire
 
 #### Rôle dans le système
@@ -314,6 +317,7 @@ Avoir les intrants, ressources humaines, équipements et données nécessaires
 - **Du système envers la partie prenante** : le système doit lui fournir un accès fiable aux référentiels nationaux (structures, terminologie, équipements), aux outils de déclaration et de gestion des stocks, et fonctionner en connectivité contrainte.
 - **De la partie prenante envers le système** : la formation sanitaire doit déclarer des données exactes et à temps, respecter les référentiels nationaux et alimenter le SIS selon les contrats d'échange définis.
 
+represented_by: ["ACT-04"]
 ### District, région et Ministère
 
 #### Rôle dans le système
@@ -354,6 +358,7 @@ Piloter, coordonner et améliorer la performance sur la base de données fiables
 - **Du système envers la partie prenante** : le système doit fournir des tableaux de bord fiables, des données réconciliées et traçables, et des outils de pilotage interopérables aux échelons territoriaux.
 - **De la partie prenante envers le système** : les échelons doivent alimenter le SIS de façon exacte, respecter les référentiels nationaux et arbitrer les ressources selon la valeur produite.
 
+represented_by: ["ACT-05"]
 ### Partenaires techniques et financiers
 
 #### Rôle dans le système
@@ -432,6 +437,7 @@ Définir les priorités, arbitrer les ressources et rendre compte des résultats
 - **Du système envers la partie prenante** : le système doit fournir une vision consolidée et traçable de la performance, du portefeuille et de la sécurité, appuyée sur des données fiables et réutilisables.
 - **De la partie prenante envers le système** : les décideurs doivent définir les priorités par la valeur, respecter le cadre national et l'homologation, et rendre compte sur la base de données réutilisables.
 
+represented_by: ["ACT-06"]
 ### Équipes techniques (DEPSI / SIS)
 
 #### Rôle dans le système

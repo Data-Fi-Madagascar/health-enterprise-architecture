@@ -15,6 +15,7 @@ related: ["VS-02", "BO-07"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-13"]
 uses: ["CMP-02", "CMP-06", "CMP-15"]
 ---
+performed_by: ["ROL-05"]
 
 # Échange et coordination transfrontaliers
 

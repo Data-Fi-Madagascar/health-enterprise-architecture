@@ -28,6 +28,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-10: Planification et allocation des ressources](../../referentiel/processus/prc-10.md) (planification), [PRC-11: Suivi et pilotage de la performance](../../referentiel/processus/prc-11.md) (pilotage performance), [PRC-12: Redevabilité et amélioration continue](../../referentiel/processus/prc-12.md) (redevabilité).
 - **Statut : Stable.**
 
+realized_by: ["WP-07"]
 ### Centre de commande & Crises intersectorielles
 
 **Contenu normatif.** Ce composant constitue le centre unique de supervision des alertes épidémiques et de coordination des crises intersectorielles (santé, élevage, environnement). Il agrège les signaux de la surveillance ([CMP-14: Registre des produits, intrants et indicateurs](../../referentiel/composants/cmp-14.md)), du moteur d'alertes ([CMP-04: Moteur analytique & IA (IA prédictive, routeur alertes, Grand Livre)](../../referentiel/composants/cmp-04.md)) et des registres de gouvernance ([CMP-17: Message broker asynchrone](../../referentiel/composants/cmp-17.md)), et fournit une vue en temps réel pour la prise de décision multi-ministérielle.
@@ -96,6 +97,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../referentiel/processus/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../referentiel/processus/prc-05.md) (pharmacie).
 - **Statut : Stable.**
 
+realized_by: ["WP-02"]
 ### Référentiel des métadonnées d'exploitation ([ART-4: Référentiels de métadonnées de gestion](../../referentiel/chapitres/art-4.md))
 
 **Contenu normatif.** Ce composant définit et gère les métadonnées d'exploitation : nomenclatures, codifications et standards de données. Il assure l'interopérabilité sémantique entre les systèmes et garantit l'utilisation cohérente des terminologies et classifications.
@@ -106,6 +108,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-07: Identification et droits des bénéficiaires](../../referentiel/processus/prc-07.md) (production données), [PRC-08: Financement et exemption au point de service](../../referentiel/processus/prc-08.md) (qualité).
 - **Statut : Stable.**
 
+realized_by: ["WP-03"]
 ### Registre des terminologies
 
 **Contenu normatif.** Ce composant gère les terminologies médicales et de référence (CIM-10, SNOMED CT, LOINC, ATC, etc.). Il assure le mapping sémantique entre les systèmes et fournit les services de traduction et de validation des codages.
@@ -116,6 +119,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-07: Identification et droits des bénéficiaires](../../referentiel/processus/prc-07.md) (production données), [PRC-08: Financement et exemption au point de service](../../referentiel/processus/prc-08.md) (qualité).
 - **Statut : Stable.**
 
+realized_by: ["WP-03"]
 ### Registre des clients / Index National des Patients (INP — ART-4A)
 
 **Contenu normatif.** Ce composant gère l'identité unique des patients à l'échelle nationale. Il assure la déduplication et le matching des identités, et fournit les services de recherche et d'identification des patients.
@@ -126,6 +130,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../referentiel/processus/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../referentiel/processus/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../referentiel/processus/prc-06.md) (logistique).
 - **Statut : Stable.**
 
+realized_by: ["WP-04"]
 ### Registre d'éligibilité et de couverture (CSU — ART-4C)
 
 **Contenu normatif.** Ce composant gère les données d'éligibilité et de couverture santé (CSU). Il assure la vérification en temps réel des droits des patients et fournit les services de contrôle d'éligibilité pour les applications métier.
@@ -224,6 +229,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 - **Processus soutenus** : [PRC-01: Acces, orientation et admission du patient](../../referentiel/processus/prc-01.md) (acces aux services), [PRC-07: Identification et droits des beneficiaires](../../referentiel/processus/prc-07.md) (identification et droits), [PRC-08: Financement et exemption au point de service](../../referentiel/processus/prc-08.md) (financement et exemption).
 - **Statut : Brouillon.**
 
+realized_by: ["WP-02"]
 ### CMP-23 : Chaine logistique (LMIS)
 **Contenu normatif.** Ce composant pilote la logistique medicale de bout en bout : prevision des besoins, approvisionnement, stockage, distribution et dispensation des intrants (medicaments, consommables, vaccins, reactifs). Il interconnecte les pharmacies (CMP-20), les districts, les regions et le noeud central, et calcule les seuils de reapprovisionnement a partir des donnees d'activite clinique. Il emet les alertes de rupture et orchestre les flux physiques et informationnels.
 **Discipline de mise en oeuvre.** La tracabilite de bout en bout est obligatoire (lot, periode de validite, lieu). Les seuils de securite sont parametres par type d'intrant et de structure. Les donnees d'activite issues des etablissements (CMP-19) alimentent la prevision. Tout mouvement est historise de facon immuable et reconcilie avec la comptabilite.
@@ -252,6 +258,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 <!-- BEGIN:GENERATED mode=catalogue source=referentiel/composants/cmp-26.md,referentiel/composants/cmp-27.md,referentiel/composants/cmp-28.md,referentiel/composants/cmp-29.md,referentiel/composants/cmp-30.md,referentiel/composants/cmp-31.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
+realized_by: ["WP-01"]
 ### CMP-26 : Noeud central (datacenters nationaux HDS)
 **Contenu normatif.** Ce composant fournit l'infrastructure de calcul et de stockage centralisee hebergeant les donnees et services nationaux dans des datacenters conformes aux exigences d'hebergement de donnees de sante (HDS). Il est le socle physique des composants applicatifs (CMP-01..25), analytiques (CMP-03/CMP-04) et de securite (CMP-32..38). Il assure la haute disponibilite, la redondance geographique et la reprise d'activite.
 **Discipline de mise en oeuvre.** Les donnees de sante y resident sous souverainete nationale, chiffrees au repos et en transit. La continuite de service est assuree par la redondance et des plans de reprise testes. L'acces au socle est limite aux composants authentifies (CMP-35). La capacite est dimensionnee pour absorber les pics (campagnes de vaccination, epidemics).
@@ -295,6 +302,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 <!-- BEGIN:GENERATED mode=catalogue source=referentiel/composants/cmp-32.md,referentiel/composants/cmp-33.md,referentiel/composants/cmp-34.md,referentiel/composants/cmp-35.md,referentiel/composants/cmp-36.md,referentiel/composants/cmp-37.md,referentiel/composants/cmp-38.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
+realized_by: ["WP-01"]
 ### CMP-32 : Gestion des identites
 **Contenu normatif.** Ce composant de securite tient le systeme de gestion des identites et des acces (IAM) du systeme de sante numerique. Il enregistre et gere le cycle de vie des identites des acteurs (professionnels, patients via le registre), des structures et des dispositifs, et fournit l'authentification unique et la federation d'identites entre composants et partenaires.
 **Discipline de mise en oeuvre.** Toute entite accedant au systeme dispose d'une identite verifiee et non reusee. L'identite du beneficiaire est resolue sans ambiguite via le registre d'identite (PT-04/CMP-34). Le cycle de vie (creation, suspension, suppression) est trace. La federation s'appuie sur des protocoles standards (OIDC/OAuth2, SAML) et des certificats (CMP-35).
@@ -344,6 +352,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 <!-- BEGIN:GENERATED mode=catalogue source=referentiel/composants/cmp-39.md,referentiel/composants/cmp-40.md,referentiel/composants/cmp-41.md,referentiel/composants/cmp-42.md,referentiel/composants/cmp-43.md,referentiel/composants/cmp-44.md,referentiel/composants/cmp-45.md,referentiel/composants/cmp-46.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
+realized_by: ["WP-01"]
 ### CMP-39 : Registre des accords inter-institutions
 **Contenu normatif.** Ce registre de gouvernance tient a jour les accords de partage de donnees entre institutions (ministeres, structures de sante, partenaires, secteur prive). Il documente le cadre juridique, les parties, le perimetre et les finalites de chaque echange inter-institutionnel.
 **Discipline de mise en oeuvre.** Aucun echange inter-institutionnel n'a lieu sans accord reference et actif. Le registre est la source de verite des engagements et est consulte par la passerelle d'echange (PT-01). Les accords expires suspendent automatiquement les flux correspondants.

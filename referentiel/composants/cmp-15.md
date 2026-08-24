@@ -11,7 +11,7 @@ version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
 maps_to: ["CAP-INT-10"]
 implements: ["ART-5"]
-applies_to: ["PRC-04", "PRC-05", "PRC-06"]
+applies_to: ["PRC-04", "PRC-05", "PRC-06", "PRC-13"]
 related: ["ENF-3", "CAP-10", "VS-02"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-15", "couche-3"]
 ---
