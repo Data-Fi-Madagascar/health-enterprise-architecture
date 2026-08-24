@@ -9,7 +9,7 @@ owner: DEPSI
 version: "0.5"
 family: echange
 envelope: 01_cnisn/02_capacites/index.md
-maps_to: ["P-INT-05", "P-INT-06", "P-INT-07", "P-INT-08", "P-INT-09", "P-INT-10", "P-INT-11", "P-INT-12", "P-INT-13", "P-INT-18", "P-INT-19", "P-INT-20", "P-INT-21", "P-INT-22", "P-INT-23", "P-INT-24", "P-INT-25", "CAP-13", "CAP-14"]
+maps_to: ["P-INT-05", "P-INT-06", "P-INT-07", "P-INT-08", "P-INT-09", "P-INT-10", "P-INT-11", "P-INT-12", "P-INT-13", "P-INT-18", "P-INT-19", "P-INT-20", "P-INT-21", "P-INT-22", "P-INT-23", "P-INT-24", "P-INT-25", "CAP-13", "CAP-14", "CAP-18"]
 implements: []
 applies_to: []
 related: []

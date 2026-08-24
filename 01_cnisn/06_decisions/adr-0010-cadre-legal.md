@@ -4,7 +4,7 @@ title: "ADR-0010 : Cadre légal et mandat d'opposabilité du CNASN"
 id: adr-0010
 domain: 06_decisions
 version: "1.0.0"
-status: proposé
+status: candidate
 date: 2026-08-20
 owner: Ministère de la Santé Publique
 tags: ["adr", "légal", "gouvernance", "e-santé"]

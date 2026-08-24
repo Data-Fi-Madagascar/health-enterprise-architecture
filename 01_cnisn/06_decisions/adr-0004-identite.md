@@ -4,7 +4,7 @@ title: "ADR-0004 : Adoption des profils IHE PIXm/PDQm pour la résolution d'iden
 id: adr-0004
 domain: 06_decisions
 version: "1.0.0"
-status: accepté
+status: active
 date: 2026-07-01
 owner: DEPSI
 tags: ["adr", "identité", "pixm", "pdqm", "ihe"]

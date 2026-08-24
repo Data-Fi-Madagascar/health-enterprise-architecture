@@ -4,7 +4,7 @@ title: "ADR-0008 : Adoption d'ATNA et journalisation pour l'audit et la traçabi
 id: adr-0008
 domain: 06_decisions
 version: "1.0.0"
-status: proposé
+status: candidate
 date: 2026-08-13
 owner: DEPSI
 tags: ["adr", "audit", "traçabilité", "atna", "journalisation"]

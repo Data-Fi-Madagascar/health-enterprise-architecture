@@ -56,7 +56,7 @@ Le CAESN est organisé en **11 domaines** :
 | Modèle de valeur | Bénéficiaires, dimensions de valeur | Décideurs, directions métier |
 | Flux de valeur | Les 4 flux de valeur nationaux (VS-01 à VS-04) | Décideurs, directions métier |
 | Principes | Principes transversaux (PA) et de domaine (PD) | Architectes, DEPSI |
-| Capabilités | Catalogue CAP-01 à CAP-16, maturité | Tous |
+| Capabilités | Catalogue CAP-01 à CAP-18, maturité | Tous |
 | Données | Principes DA, domaines de données | SIS, données |
 | Application | Principes AA, paysage applicatif | Équipes techniques |
 | Portefeuille | Registre des initiatives | Décideurs, directions métier |

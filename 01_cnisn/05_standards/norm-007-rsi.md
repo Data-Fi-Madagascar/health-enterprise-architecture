@@ -4,7 +4,7 @@ title: "NORM-007 : Règlement Sanitaire International (RSI 2005)"
 id: norm-007
 domain: 05_standards
 version: "1.0.0"
-status: approved
+status: active
 last_reviewed: 2026-08-13
 owner: Direction de la Surveillance Sanitaire
 tags: ["normes", "rsi", "oms", "international", "obligatoire"]

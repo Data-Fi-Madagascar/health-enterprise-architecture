@@ -27,10 +27,10 @@ Ce document définit le modèle d’objets du référentiel. Il est la source de
 | Type | Répertoire | Préfixe d’id | Sources (niveaux) |
 |------|------------|--------------|-------------------|
 | `flux-valeur` | `referentiel/flux-valeur/` | `vs-` | CAESN (VS-01…04) |
-| `capabilite` | `referentiel/capabilites/` | `cap-` | CAESN (CAP-01…16) |
+| `capabilite` | `referentiel/capabilites/` | `cap-` | CAESN (CAP-01…18) |
 | `principe` | `referentiel/principes/` | `p-` (CNISN `p-int-`, CAESN `pa-`/`pd-`) | CAESN (PA, PD), CNISN (P-INT) |
 | `etape-valeur` | `referentiel/etapes-valeur/` | `ev-` | CAESN (EV-01…28) |
-| `processus-metier` | `referentiel/processus/` | `prc-` | CAESN (PRC-01…12) |
+| `processus-metier` | `referentiel/processus/` | `prc-` | CAESN (PRC-01…13) |
 | `composant-applicatif` | `referentiel/composants/` | `cmp-` | CAESN : composants applicatifs (couches 2 a 6), CMP-01…25 |
 | `composant-infrastructure` | `referentiel/composants/` | `cmp-` | socle technologique (couche 1) : CMP-26…31 |
 | `composant-securite` | `referentiel/composants/` | `cmp-` | axe securite/confiance : CMP-32…38 |
@@ -40,7 +40,7 @@ Ce document définit le modèle d’objets du référentiel. Il est la source de
 | `fondation` | `referentiel/fondations/` | `f-` | ARTSN (F.1…6) |
 | `exigence` | `referentiel/exigences/` | `enf-`, `ex-` | ARTSN (ENF-1…5, exigences) |
 | `chapitre` | `referentiel/chapitres/` | `art-` | ARTSN (ART-0…11) |
-| `profil` | `referentiel/profils/` | `pt-` | PTISN (PT-01…13) |
+| `profil` | `referentiel/profils/` | `pt-` | PTISN (PT-01…16) |
 | `service` | `referentiel/services/` | — | éléments de services transverses |
 | `meta` | `referentiel/` (racine) | `_schema`, `_index` | — |
 

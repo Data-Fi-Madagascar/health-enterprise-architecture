@@ -4,7 +4,7 @@ title: "Fondement légal et cadre législatif de la santé numérique"
 id: fondement-legal
 domain: 07_governance
 version: "1.0.0"
-status: proposed
+status: candidate
 last_reviewed: 2026-08-20
 owner: Ministère de la Santé Publique
 tags: ["gouvernance", "légal", "e-santé", "conformité", "niveau-1"]

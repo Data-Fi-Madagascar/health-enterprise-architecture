@@ -4,7 +4,7 @@ title: "ADR-0005 : Adoption de FHIR Consent pour le consentement structuré"
 id: adr-0005
 domain: 06_decisions
 version: "1.0.0"
-status: proposé
+status: candidate
 date: 2026-08-13
 owner: DEPSI
 tags: ["adr", "consentement", "fhir", "souveraineté", "données"]

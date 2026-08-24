@@ -4,7 +4,7 @@ title: "STD-0004 : Norme de données agrégées : mADX"
 id: std-0004
 domain: 05_standards
 version: "1.0.0"
-status: approved
+status: active
 last_reviewed: 2026-08-13
 owner: Comité National d'Architecture Santé Numérique
 tags: ["standards", "madx", "donnees-agregees", "obligatoire"]

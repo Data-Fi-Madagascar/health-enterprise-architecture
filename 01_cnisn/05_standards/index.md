@@ -4,7 +4,7 @@ title: Normes et standards d'architecture
 id: standards
 domain: 05_standards
 version: "1.0.0"
-status: approved
+status: active
 last_reviewed: 2026-08-18
 owner: Comité National d'Architecture Santé Numérique
 tags: ["standards", "normes", "homologation"]

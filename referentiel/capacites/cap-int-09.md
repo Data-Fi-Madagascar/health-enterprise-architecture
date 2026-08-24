@@ -9,7 +9,7 @@ owner: DEPSI
 version: "0.5"
 family: confiance
 envelope: 01_cnisn/02_capacites/index.md
-maps_to: ["P-INT-14", "P-INT-15", "P-INT-16", "P-INT-17", "CAP-15"]
+maps_to: ["P-INT-14", "P-INT-15", "P-INT-16", "P-INT-17", "CAP-15", "CAP-17"]
 implements: []
 applies_to: []
 related: []

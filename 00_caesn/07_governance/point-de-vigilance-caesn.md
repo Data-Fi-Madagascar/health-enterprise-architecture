@@ -33,19 +33,19 @@ Cette note est destinée à l'instance de gouvernance du CAESN. Elle documente l
 Le document source de l'ARTSN décrit le CAESN comme comportant **18 principes (P-01 à P-18)** et **17 capacités** (dont « CAP-04bis : Engagement patient et identitovigilance »). Le CAESN en vigueur dans ce dépôt recense pour l'instant :
 
 - **12 principes transversaux** (PA-01 à PA-12) + **principes de domaine** (PD-VS01 à PD-VS04) ;
-- **16 capabilités** CAP-01 à CAP-16, dans lesquelles CAP-04 est « Santé communautaire et engagement des communautés ».
+- **18 capabilités** CAP-01 à CAP-18 (dont CAP-17 « Engagement patient et identité numérique » et CAP-18 « Coordination intersectorielle » comme capabilités habilitantes), dans lesquelles CAP-04 est « Santé communautaire et engagement des communautés ».
 
 ## Écarts identifiés
 
 ### Écart 1 : CAP-04bis « Engagement patient et identitovigilance »
 
-L'ARTSN rattache ART-4A (résolution d'identité) et ART-4B (bases d'autorisation) à une capabilité **CAP-04bis « Engagement patient et identitovigilance »**. Le catalogue CAESN ne comporte pas cette capabilité : CAP-04 est « Santé communautaire », et aucune capabilité ne couvre explicitement l'identitovigilance probabilitique ni l'engagement du patient dans le système numérique.
+L'ARTSN rattache ART-4A (résolution d'identité) et ART-4B (bases d'autorisation) à une capabilité **CAP-04bis « Engagement patient et identitovigilance »**. Le catalogue CAESN ne comportait pas cette capabilité ; elle est désormais couverte par la capabilité **CAP-17 « Engagement patient et identité numérique »** (CAP-04 reste « Santé communautaire ») ; l'engagement du patient y est explicitement pris en charge.
 
 **Impact pour l'ARTSN** : l'Architecture de référence technique suppose une capabilité absente du CAESN. La promotion des chapitres 4a/4b vers un statut Stable exige au préalable l'arbitrage de cette capabilité.
 
 ## Écart 2 : Capacité candidate « Coordination intersectorielle »
 
-L'ARTSN rattache ART-0 (accords de partage inter-institutionnels) et ART-8D (chorégraphie inter-institutionnelle) à une **capacité candidate « Coordination intersectorielle »** (One Health), absente du catalogue CAP-01..16.
+L'ARTSN rattache ART-0 (accords de partage inter-institutionnels) et ART-8D (chorégraphie inter-institutionnelle) à une **capacité candidate « Coordination intersectorielle »** (One Health), désormais couverte par la capabilité CAP-18 « Coordination intersectorielle (One Health) ».
 
 ### Écart 3 : Référentiel normatif « Tripartite Plus » (OMS-WOAH-FAO-PNUE, RSI)
 

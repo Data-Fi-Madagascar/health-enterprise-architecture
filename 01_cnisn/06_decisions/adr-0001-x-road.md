@@ -4,7 +4,7 @@ title: "ADR-0001 : Adoption de X-Road comme plateforme d'échange interinstituti
 id: adr-0001
 domain: 06_decisions
 version: "1.0.0"
-status: accepté
+status: active
 date: 2026-07-01
 owner: DEPSI
 tags: ["adr", "interopérabilité", "x-road", "plateforme"]

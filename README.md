@@ -4,7 +4,7 @@ id: hea-readme
 domain: root
 description: Architecture d'entreprise du secteur santé numérique de Madagascar, documentée as code
 version: "1.0.0"
-status: approved
+status: active
 last_reviewed: 2026-08-13
 review_cycle: quarterly
 owner: Bureau de Réalisation de la Valeur

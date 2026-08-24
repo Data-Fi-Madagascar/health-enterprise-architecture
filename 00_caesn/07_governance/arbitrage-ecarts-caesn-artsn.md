@@ -4,7 +4,7 @@ title: "Proposition d'arbitrage : 5 écarts CAESN ↔ ARTSN"
 id: arbitrage-ecarts-caesn-artsn
 domain: 07_governance
 version: "1.0.0"
-status: proposé
+status: candidate
 last_reviewed: 2026-08-13
 owner: DEPSI
 tags: ["gouvernance", "arbitrage", "caesn", "artsn", "ecarts"]
@@ -73,11 +73,11 @@ L'ARTSN rattache ART-4A (résolution d'identité) et ART-4B (bases d'autorisatio
 
 ### Constat
 
-L'ARTSN rattache ART-0 (accords de partage) et ART-8D (chorégraphie inter-institutionnelle) à une capacité candidate « Coordination intersectorielle » (One Health), absente du catalogue CAP-01..16.
+L'ARTSN rattache ART-0 (accords de partage) et ART-8D (chorégraphie inter-institutionnelle) à une capacité candidate « Coordination intersectorielle » (One Health), désormais couverte par la capabilité CAP-18 « Coordination intersectorielle (One Health) ».
 
 ### Proposition d'arbitrage
 
-**Option A (recommandée) : Créer une nouvelle capabilité CAP-18 « Coordination intersectorielle (One Health) »**
+**Option A (recommandée, retenue) : la capabilité CAP-18 « Coordination intersectorielle (One Health) » a été créée** (voir `referentiel/capabilites/cap-18.md`).
 
 | Justification |
 |---------------|

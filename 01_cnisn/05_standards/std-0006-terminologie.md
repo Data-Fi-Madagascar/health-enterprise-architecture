@@ -4,7 +4,7 @@ title: "STD-0006 : Norme terminologique : CIM-10 + LOINC"
 id: std-0006
 domain: 05_standards
 version: "1.0.0"
-status: approved
+status: active
 last_reviewed: 2026-08-13
 owner: Comité National d'Architecture Santé Numérique
 tags: ["standards", "terminologie", "cim-10", "loinc", "obligatoire"]

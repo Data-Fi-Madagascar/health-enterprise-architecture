@@ -4,7 +4,7 @@ title: "ADR-0009 : Adoption d'un référentiel terminologique national (CIM-10 +
 id: adr-0009
 domain: 06_decisions
 version: "1.0.0"
-status: proposé
+status: candidate
 date: 2026-08-13
 owner: DEPSI
 tags: ["adr", "terminologie", "cim-10", "loinc", "codage", "sémantique"]

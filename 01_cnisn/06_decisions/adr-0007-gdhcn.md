@@ -4,7 +4,7 @@ title: "ADR-0007 : Adoption du GDHCN pour la confiance transfrontalière"
 id: adr-0007
 domain: 06_decisions
 version: "1.0.0"
-status: proposé
+status: candidate
 date: 2026-08-13
 owner: DEPSI
 tags: ["adr", "confiance", "gdhc", "transfrontalier", "certificat"]

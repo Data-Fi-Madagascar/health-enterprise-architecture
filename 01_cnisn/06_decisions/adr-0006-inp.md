@@ -4,7 +4,7 @@ title: "ADR-0006 : Adoption de l'Identité Nationale Patient (INP) via PIXm/PDQm
 id: adr-0006
 domain: 06_decisions
 version: "1.0.0"
-status: proposé
+status: candidate
 date: 2026-08-13
 owner: DEPSI
 tags: ["adr", "identité", "patient", "inp", "pixm", "pdqm"]

@@ -24,7 +24,7 @@ Tout dossier structurel du dépôt reçoit un **préfixe numérique de tri** sur
 | `00_overview/` | Vue d'ensemble, fondements, modèle de valeur |
 | `01_value-streams/` | Flux de valeur nationaux (VS-01 à VS-04) |
 | `02_principles/` | Principes transversaux (PA) et de domaine (PD) |
-| `03_capabilities/` | Capabilités CAP-01..16, maturité, runway |
+| `03_capabilities/` | Capabilités CAP-01..18, maturité, runway |
 | `04_data/` | Architecture des données et de l'information sanitaire |
 | `05_application/` | Architecture applicative et systèmes numériques |
 | `06_portfolio/` | Portefeuille d'initiatives orienté valeur |

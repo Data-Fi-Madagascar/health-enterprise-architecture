@@ -4,7 +4,7 @@ title: "Guides de démarrage rapide"
 id: quick-start-guides
 domain: root
 version: "1.0.0"
-status: approved
+status: active
 last_reviewed: 2026-08-13
 owner: Bureau de Réalisation de la Valeur
 tags: ["guide", "démarrage", "quick-start", "profil"]

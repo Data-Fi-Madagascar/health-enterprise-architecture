@@ -4,7 +4,7 @@ title: "ADR-0002 : Adoption du profil IHE mADX pour l'échange de données agré
 id: adr-0002
 domain: 06_decisions
 version: "1.0.0"
-status: accepté
+status: active
 date: 2026-07-01
 owner: DEPSI
 tags: ["adr", "interopérabilité", "madx", "données-agrégées"]
