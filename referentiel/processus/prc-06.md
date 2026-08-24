@@ -11,7 +11,7 @@ envelope: 00_caesn/01_value-streams/vs-02-risk-protection.md
 maps_to: []
 implements: []
 applies_to: ["CAP-03", "CAP-13", "CAP-14", "CAP-15"]
-related: ["VS-02-06", "VS-02-07", "VS-02"]
+related: ["VS-02-06", "VS-02-07", "VS-02", "BO-01"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-06"]
 uses: ["CMP-07", "CMP-11", "CMP-14", "CMP-15", "CMP-17", "CMP-18", "CMP-19"]
 ---

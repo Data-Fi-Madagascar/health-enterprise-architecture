@@ -11,7 +11,7 @@ envelope: 00_caesn/01_value-streams/vs-04-system-steering.md
 maps_to: []
 implements: []
 applies_to: ["CAP-03", "CAP-08", "CAP-13", "CAP-14", "CAP-15", "CAP-16"]
-related: ["VS-04-04", "VS-04-05", "VS-04"]
+related: ["VS-04-04", "VS-04-05", "VS-04", "BO-06"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-11"]
 uses: ["CMP-01", "CMP-02", "CMP-03", "CMP-25"]
 ---

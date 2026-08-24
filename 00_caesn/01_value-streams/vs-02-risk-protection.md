@@ -258,7 +258,7 @@ Nombre de revues après action, proportion de recommandations mises en œuvre
 <!-- END:GENERATED -->
 ## Processus métier
 
-<!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-04.md,referentiel/processus/prc-05.md,referentiel/processus/prc-06.md -->
+<!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-04.md,referentiel/processus/prc-05.md,referentiel/processus/prc-06.md,referentiel/processus/prc-13.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### Veille, prévention et surveillance sanitaire
@@ -318,6 +318,22 @@ Comité de gestion de crise, direction centrale, comité technique national
 #### Indicateurs
 
 Taux de létalité, durée de l'épisode épidémique, nombre de revues après action, proportion de recommandations mises en œuvre
+
+### Échange et coordination transfrontaliers
+
+#### Objectif
+
+Garantir, dans le respect de la souveraineté et des accords de confiance, les échanges de données et de services de santé au-delà des frontières : résumé international du patient (IPS), sections normalisées, confiance internationale, résolution d'identité pour patients transfrontaliers et coordination épidémique régionale.
+
+Ce processus opérationnalise l'objet métier [BO-07 : Interopérabilité transfrontalière](../../referentiel/objets-metier/bo-07.md) et s'appuie sur la capacité [CAP-INT-13 : Interopérabilité transfrontalière](../../referentiel/capacites/cap-int-13.md), le chapitre [ART-7 : Sécurité, contrôle d'accès et résidence de la donnée](../../referentiel/chapitres/art-7.md) et le profil [PT-14 : Interopérabilité transfrontalière](../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md).
+
+#### Étapes clés
+
+- Établissement et maintien des accords de confiance mutuelle (GDHCN, conventions bilatérales).
+- Production et consommation de résumés internationaux du patient (IPS) conformes FHIR.
+- Résolution d'identité des patients étrangers et gestion des identifiants temporaires.
+- Vérification du consentement et de la base légale pour chaque flux sortant.
+- Journalisation et audit de tous les flux transfrontaliers.
 
 <!-- END:GENERATED -->
 ## Liens
