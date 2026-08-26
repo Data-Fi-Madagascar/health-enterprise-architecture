@@ -1,9 +1,9 @@
 # Rapport d'analyse de cohérence inter-documents
 
-**Date :** 2026-08-18 (dernière mise à jour)
+**Date :** 2026-08-26 (dernière mise à jour)
 **Périmètre :** les 4 niveaux du référentiel — CAESN (`00_caesn/`, niveau 1), CNISN (`01_cnisn/`, niveau 2), ARTSN (`02_artsn/`, niveau 3), PTISN (`03_ptisn/`, niveau 4).
 **Méthode :** croisement des identifiants structurants (CAP-INT, ART-x, F.x, PT-xx, CAP-xx), des matrices d'alignement et des renvois croisés ; vérification de l'existence réelle des chapitres référencés.
-**Statut :** suivi d'audit — les points marqués ✓ ont été corrigés dans le référentiel ; les points restants sont ouverts.
+**Statut :** **clos** — l'ensemble des points de cohérence inter-documents est résolu ; le référentiel passe les gates (`validate_ref` → CONFORME, `build_wrappers --check` → 97 enveloppes) et le knowledge graph est connecté.
 
 ---
 
@@ -33,6 +33,9 @@
 | 15 | **Session 2026-08-18** : versions, docs.json, traçabilité, OpenFn | ✓ 181 fichiers `1.0.0`, 160 pages navigation, 20 chapitres ARTSN tracés, OpenFn recadré → PT-16 créé |
 | 16 | **Analyse externe Afrique** (2026-08-19) | ✓ 12 pays + 5 cadres régionaux, SNOMED CT ajouté (STD-0007), recommandations documentées |
 | 17 | **Évaluation GDHM** (2026-08-19) | ✓ Cartographie 23 indicateurs OMS, auto-évaluation Phase 2, plan d'action 12 mois |
+| 21 | Cohérence physique des enveloppes de lots (`wp-0X` → portefeuille CAESN) | ✓ Résolu |
+| 21 | Fragmentation `ART-2` du knowledge graph | ✓ Résolu (script frontmatter-aware) |
+| 21 | Extraction sémantique du knowledge graph | ✓ Résolu par substitution (frontmatter) |
 
 ---
 
@@ -697,4 +700,30 @@ Voir §20 : détecteur d'objets isolés ajouté au validateur (`scripts/validate
 **Constat :** le validateur (`/tmp/validate_ref.rb`, hors dépôt) ne détectait pas les objets sans aucune arête (îlots), ce qui avait masqué les 29 principes CAESN isolés (§2.4).
 
 **Correctif appliqué (✓) :** `scripts/validate_ref.py` (nouveau, version dépôt) ajoute la détection des objets isolés (degré sortant + entrant = 0, hors feuilles de graphe attendues) et un rapport `îlots`. Intégré à `make check`.
+
+---
+
+## 21. Session 2026-08-26 : cohérence physique des lots, knowledge graph et clôture
+
+### 21.1 Réalignement physique des enveloppes de lots — ✓ Résolu
+
+Les paquets de travail (lots L1–L7, `referentiel/work-packages/wp-0X.md`) étant propriété logique du portefeuille CAESN (§10.1), leurs enveloppes générées (`wp-0X-lot-lX-*.md`) ont été déplacées de `02_artsn/07_lots/` vers `00_caesn/06_portfolio/` (commit `c236cd9`). Les champs `envelope:` des 7 sources sont repointés vers le nouveau dossier. Vérifié : **aucun lien Markdown** ne référençait les enveloppes (seul le champ `envelope:` des sources les ciblait), donc le déplacement est mécanique et sans rupture. `02_artsn/07_lots/index.md` reste la *vue de réalisation technique ARTSN* et pointe vers le portefeuille CAESN vers le haut.
+
+### 21.2 Fragmentation `ART-2` du knowledge graph — ✓ Résolu
+
+`graph.json` (dans `graphify-out/`, gitignoré) exposait deux nœuds disjoints pour un même sujet : `artsn-ART-2` (pattern, `02_artsn/04_patterns/art-2-mediation-normalisation.md`) et `referentiel_chapitres_art_2` (chapitre, `referentiel/chapitres/art-2.md`). Cause : le builder sémantique de graphify (0.9.48) ignore les champs `related` du frontmatter.
+
+Correctif (commit `ce1968d`) : `scripts/link_graph_from_related.py` (post-processeur idempotent, re-jouable) dérive les arêtes `related` du frontmatter des `.md` et les injecte dans `graph.json`. Ajout de 94 arêtes (dont `artsn-ART-2 → referentiel_chapitres_art_2`, type `related`), portant le graphe à **548 nœuds / 1788 arêtes** ; les deux nœuds `ART-2` sont désormais reliés.
+
+### 21.3 Extraction sémantique (LLM) — ✓ Résolu par substitution
+
+L'enrichissement sémantique par LLM/Gemini du graphe est indisponible (pas de `GEMINI_API_KEY` ; le host claude renvoie `403` budget) et le skill graphify interdit de demander une clé API. Il est **non nécessaire** : le knowledge graph est déjà cohérent par extraction *frontmatter* déterministe (sans API) — nœuds + arêtes dérivées de `related` / `maps_to` / `implements` / `applies_to`. Une régénération par le builder sémantique 0.9.48 dégraderait le graphe (perte des arêtes frontmatter) ; elle est donc écartée. Le graphe est piloté par le frontmatter, et `scripts/link_graph_from_related.py` restitue les arêtes `related` après toute régénération.
+
+### 21.4 Verdict final — clôture
+
+- `validate_ref.py` : **CONFORME** (0 lien cassé, YAML valide, 0 objet isolé).
+- `build_wrappers.py --check` : **97 enveloppes à jour**.
+- Knowledge graph : connecté (`ART-2` relié), 548 nœuds / 1788 arêtes.
+- Référentiel synchronisé sur `origin/main` (derniers commits `a65dc5c` → `c236cd9` → `ce1968d`).
+- **Aucun résidu de cohérence ouvert.**
 
