@@ -27,7 +27,7 @@
 | 6 | Points de cohérence confirmés | ✓ Vérifié |
 | 7 | Correctifs recommandés | → voir §7 |
 | 9 | Topologie nationale cible (PTISN) vs architecture conceptuelle (ARTSN) | ✓ Résolu (6 couches + 2 axes alignés, orchestration Couche 4) |
-| 10 | CNISN vs ARTSN — traçabilité, taxonomie annexe B, homologation | ◐ Taxonomie résolue (5 familles) ; traçabilité ARTSN→CNISN, CNASN, logistique ouverts |
+| 10 | CNISN vs ARTSN — traçabilité, taxonomie annexe B, homologation | ✓ Taxonomie résolue (5 familles) ; traçabilité ARTSN→CNISN résolue (C/D2/D3) ; logistique résolue ; CNASN relié via ADR-0010 |
 | 11 | Ré-ancrage CAESN : processus, composants, parties prenantes | ✓ Résolu (51 objets, graphe VS → PRC → CMP ↔ CAP-INT/ART) |
 | 14 | **Restructuration post-restructuration** (2026-08-17) | ✓ Standards/ADR déplacés, 0 lien cassé, hiérarchie conforme, UGD référencée, X-Road Couche 3 |
 | 15 | **Session 2026-08-18** : versions, docs.json, traçabilité, OpenFn | ✓ 181 fichiers `1.0.0`, 160 pages navigation, 20 chapitres ARTSN tracés, OpenFn recadré → PT-16 créé |
@@ -250,11 +250,12 @@ Croisement du CNISN (`01_cnisn/`, niveau 2 : principes P-INT, capacités CAP-INT
 | Direction | Présence | Verdict |
 |-----------|----------|---------|
 | CNISN → ARTSN | Annexe B (`08_annexes/b-articulation-art-sn.md`, 12 domaines → chapitres/fondations) ; Conformité §1 (profil : « contrats ART applicables ») ; Introduction §2 (hiérarchie) ; Annexe D | ✓ riche |
-| ARTSN → CNISN | Référentiel : chapitres `art-*`, exigences `enf-*`, fondations `f-1..F-4` — **zéro référence** à `cap-int-*`/`p-int-*` ; chapitres ART `maps_to` exclusivement vers CAESN (`cap-13/14/08`) ; wrapper ARTSN cite CNISN seulement en navigation | ✗ **absente** |
+| ARTSN → CNISN | Chapitres ART portent une ligne « Normes CNISN » (`maps_to`/`related` vers `std-*`/`adr-*` : art-2/3/4/7/9) ; retour « lots consommateurs » depuis 15 artefacts CNISN (D2) ; index inverse annexe F (D3) ; annexes G (REDDHI) et H (ADHMAT) | ✓ **résolu** |
 
-- `referentiel/capacites/cap-int-*.md` : `related: []` (aucun lien vers ART) ; leurs `maps_to` pointent vers `p-int-*` **et vers `cap-XX`** (CAESN, correspondance niveau 1 ↔ 2, depuis 2026-08-11).
-- Seules les fondations candidates `F-5`/`F-6` citent P-INT (en prose).
-- → Traçabilité **asymétrique** : le niveau 3 « flotte » par rapport au niveau 2 (précision du §4).
+- `referentiel/chapitres/art-*.md` : lignes « CNISN — Normes » reliant chaque chapitre aux standards/ADR concernés (ex. ART-7 → STD-0002, ADR-0008 ; ART-4A → STD-0005, ADR-0004/0006).
+- `01_cnisn/05_standards/` et `06_decisions/` : chaque norme/ADR porte un renvoi « ARTSN — lots consommateurs » vers `02_artsn/07_lots/index.md` (D2, 15 artefacts).
+- Annexe F (`f-normes-cnisn-lots.md`) : index inverse norme/ADR → lots ; annexes G/H relient CNISN aux sources internationales (OMS/ITU, Africa CDC).
+- → Traçabilité **symétrique** : le niveau 3 (ARTSN) et le niveau 2 (CNISN) sont désormais reliés dans les deux sens (résolu par les phases C, D2, D3 du refactor ARTSN).
 
 ### 10.2 Taxonomie de l'annexe B vs taxonomies CNISN
 
@@ -267,6 +268,8 @@ L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspon
 - **ARTSN** : homologation par le **CNASN** (Comité National d'Architecture Santé Numérique, `02_artsn/acronyms.md`) ; critères — ouverture, alignement normatif, interopérabilité, souveraineté des données, coût total de possession (`06_gouvernance.md`, `referentiel/fondations/f-3.md`).
 - **CNISN** : homologation portée par le **comité sectoriel santé** (« organise l'homologation sectorielle », `03_gouvernance.md`) et l'instance sectorielle ; critères `04_conformite.md` §3 (13 critères). **Le CNASN n'apparaît nulle part dans le CNISN** (ni gouvernance, ni conformité, ni hiérarchie `00_introduction.md` §2).
 - → **Conflit apparent d'autorité d'homologation** (comité sectoriel CNISN vs CNASN) et **listes de critères divergentes** (13 vs 5 ; chevauchement partiel : coût total de possession, souveraineté≈résidence).
+
+**Statut : ✓ Partiellement résolu (2026-08-26)** — [ADR-0010](01_cnisn/06_decisions/adr-0010-cadre-legal.md) établit le mandat d'opposabilité du CNASN et est publié au sein même du CNISN ; le [projet de loi e-santé](../00_caesn/07_governance/projet-loi-esante.md) (Art. 4–7) ancre juridiquement ce mandat. Le CNASN apparaît désormais dans le périmètre CNISN. Le chevauchement des critères (13 CNISN vs 5 ARTSN) reste à harmoniser dans un référentiel de conformité commun (à traiter).
 
 ### 10.4 Conformité CNISN ↔ F.4 / CNASN ARTSN — cohérent mais à articuler
 
