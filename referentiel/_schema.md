@@ -171,8 +171,8 @@ Le référentiel suit le modèle de relations d'ArchiMate : la **capacité** est
 | Partie prenante (PP) | `represented_by` | Acteur (ACT) | inverse de `represents` | navigabilité (coté partie prenante) |
 | Rôle (ROL) | `assigned_to` | Acteur (ACT) | Role *assignment* Actor | le rôle est assigné à l'acteur |
 | Acteur (ACT) | `has_role` | Rôle (ROL) | inverse de `assigned_to` | navigabilité (coté acteur) |
-| Rôle (ROL) | `performs` | Processus (PRC) | Role *assignment* Business Process | le rôle réalise le processus |
-| Processus (PRC) | `performed_by` | Rôle (ROL) | inverse de `performs` | navigabilité (coté processus) |
+| Rôle / Acteur (ROL/ACT) | `performs` | Processus (PRC) | Role/Actor *assignment* Business Process | le rôle ou l'acteur réalise le processus |
+| Processus (PRC) | `performed_by` | Rôle / Acteur (ROL/ACT) | inverse de `performs` | navigabilité (coté processus) |
 | Acteur / Composant / Service / Capacité | `located_at` | Lieu (LOC) | Association géographique | la ressource est localisée sur le territoire |
 | Service (SRV) | `serves` | Partie prenante / Acteur | Service *serving* Stakeholder | le service crée de la valeur pour le bénéficiaire |
 | Service / Composant / Processus | `accesses` | Objet métier / Objet de données | Application/Component *access* Data Object | le service consomme / produit l'objet |

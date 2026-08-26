@@ -27,7 +27,7 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 
 ## Objet et lacune comblée
 
-Le [portefeuille](../index.md) définit un registre national des initiatives dont le champ « coût total de possession » (TCO) est prévu mais non renseigné. L'évaluation **ADHMAT** (Africa CDC) de Madagascar recommande explicitement un *costed national implementation roadmap and financing plan*. Ce document comble le gap en fixant la méthode TCO et une enveloppe indicatives par plateau/lot.
+Le [portefeuille](index.md) définit un registre national des initiatives dont le champ « coût total de possession » (TCO) est prévu mais non renseigné. L'évaluation **ADHMAT** (Africa CDC) de Madagascar recommande explicitement un *costed national implementation roadmap and financing plan*. Ce document comble le gap en fixant la méthode TCO et une enveloppe indicatives par plateau/lot.
 
 ## Composantes du TCO
 
@@ -35,7 +35,7 @@ Pour chaque initiative, le TCO agrège :
 
 - **Investissement** : capital (serveurs, licences, connexions), hébergement souverain ([ART-7](../../referentiel/chapitres/art-7.md)).
 - **Exploitation** : maintenance, connectivité, licences récurrentes (ex. [STD-0007 SNOMED CT](../../01_cnisn/05_standards/std-0007-snomed-ct.md)).
-- **Hommes** : formation et certification du [workforce numérique](../../03_capabilities/workforce-sante-numerique.md).
+- **Hommes** : formation et certification du [workforce numérique](../03_capabilities/workforce-sante-numerique.md).
 - **Conduite de changement** : gestion du changement, support, conduite de bénéfices.
 
 ## Enveloppe par plateau / lot (indicatif)
@@ -59,6 +59,6 @@ Pour chaque initiative, le TCO agrège :
 ## Références
 
 - **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Portefeuille** : Portefeuille d'initiatives orienté valeur (`../index.md`)
+- **Portefeuille** : Portefeuille d'initiatives orienté valeur (`index.md`)
 - **Feuille de route ARTSN** : Feuille de route de déploiement (`../../02_artsn/07_lots/index.md`)
 - **ADHMAT** : Africa CDC — *costed national implementation roadmap and financing plan*

@@ -47,7 +47,7 @@ Le cadre prescrit trois niveaux de montée en compétence :
 
 - **Académie de la santé numérique** : programmes de formation inter-institutionnels, en présentiel et à distance.
 - **Peer-learning** : plateformes de mise en commun des retours d'expérience entre initiatives (aligné [Plateforme nationale de coordination PHC](../07_governance/instances-sectorielles.md)).
-- **Évaluation** : suivi de la montée en compétence comme indicateur du portefeuille ([Portefeuille](../../06_portfolio/index.md)).
+- **Évaluation** : suivi de la montée en compétence comme indicateur du portefeuille ([Portefeuille](../06_portfolio/index.md)).
 
 ## Références
 

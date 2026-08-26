@@ -263,7 +263,6 @@ Proportion de formations sanitaires ayant réalisé une revue qualité dans le m
 <!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-01.md,referentiel/processus/prc-02.md,referentiel/processus/prc-03.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-performed_by: ["ROL-01"]
 ### Accès, orientation et admission du patient
 
 #### Objectif

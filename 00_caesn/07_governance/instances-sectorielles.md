@@ -151,7 +151,7 @@ Instance transversale recommandée par l'évaluation **ADHMAT** de Madagascar (a
 **Responsabilités :**
 - Mise en cohérence des initiatives PHC avec le portefeuille et le cadre HEA
 - Suivi de la maturité numérique (référence [ADHMAT](../../00_caesn/00_overview/foundations.md) et [GDHM](../../00_caesn/07_governance/fondement-legal.md))
-- Appui à la montée en compétences ([workforce numérique](../../03_capabilities/workforce-sante-numerique.md))
+- Appui à la montée en compétences ([workforce numérique](../03_capabilities/workforce-sante-numerique.md))
 
 ## Liens
 

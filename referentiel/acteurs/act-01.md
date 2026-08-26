@@ -9,6 +9,7 @@ version: "0.1"
 envelope: 00_caesn/07_governance/acteurs/act-01-patient-et-usager-acteur.md
 represents: ["PP-01"]
 located_at: ["LOC-01"]
+performs: ["PRC-01"]
 related: ["PP-01", "VS-01", "CAP-17"]
 tags: ["caesn", "acteur", "act-01", "governance"]
 ---
