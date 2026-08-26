@@ -61,6 +61,23 @@ Le TCO est renseigné **par lot** (L1–L7) et agrégé au niveau du portefeuill
 
 > *Part relative indicative (à affiner avec les ministères et partenaires) ; l'objectif est de hiérarchiser l'enveloppe, non de figer des montants. Les montants définitifs seront établis en cadrage [BRV](index.md) et soumis au CNASN.
 
+## Devis indicatif par lot (ordre de grandeur)
+
+Le tableau ci-dessous traduit les hypothèses en **enveloppes chiffrées d'ordre de grandeur** (MGA — milliards d'Ariary ; 1 USD ≈ 4 500 MGA), sur un horizon de 7 ans. Il sert au cadrage budgétaire et à la hiérarchisation de l'enveloppe ; il **ne fige aucun montant** et sera affiné en cadrage [BRV](index.md). Les lots à infrastructure *partagée* (L1, L3) portent le CapEx le plus élevé car mutualisé sur tous les lots.
+
+| Lot | CapEx (Md MGA) | OpEx annuel (Md MGA) | TCO 7 ans (Md MGA) | ≈ USD (M) |
+|-----|----------------|----------------------|--------------------|-----------|
+| L1 — Infrastructure & sécurité | 18–25 | 2,5–3,5 | 35–48 | 7,8–10,7 |
+| L2 — Applications terrain | 6–9 | 1,2–1,8 | 14–22 | 3,1–4,9 |
+| L3 — Médiation & registres | 8–12 | 1,5–2,2 | 18–27 | 4,0–6,0 |
+| L4 — Analytique & pilotage | 4–6 | 0,9–1,3 | 10–15 | 2,2–3,3 |
+| L5 — Extension & pérennisation | 2–3 | 0,5–0,8 | 5,5–8,5 | 1,2–1,9 |
+| L6 — Interopérabilité transfrontalière | 1–2 | 0,3–0,5 | 3–5,5 | 0,7–1,2 |
+| L7 — Coordination One Health | 1–2 | 0,3–0,5 | 3–5,5 | 0,7–1,2 |
+| **Total indicatif** | **40–59** | **7,2–10,6 / an** | **88–131** | **19,6–29,1** |
+
+Ces estimations couvrent le coût de possession complet (CapEx + OpEx actualisés, hors valeur résiduelle) et intègrent les postes des référentiels de base (STD-0007 SNOMED CT, licences), du serveur de sécurité X-Road ([STD-0002](../../01_cnisn/05_standards/std-0002-securite-chiffrement.md)) et de la conduite de changement. Le décaissement reste conditionné aux jalons de lot et à la conformité HEA ([ADR-0010](../../01_cnisn/06_decisions/adr-0010-cadre-legal.md)).
+
 ## Sources de financement
 
 - **Budget national** : enveloppe e-santé pluriannuelle, alignée sur la [Stratégie de Santé Numérique pour le Développement (SNSD)](../../00_caesn/00_overview/foundations.md) ; inscription dans la loi de finances.
