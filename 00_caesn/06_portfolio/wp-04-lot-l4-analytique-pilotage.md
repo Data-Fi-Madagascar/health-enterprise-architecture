@@ -7,7 +7,7 @@ title: Lot L4 — Analytique & pilotage
 status: draft
 owner: Direction du Numérique en Santé
 version: "0.1"
-envelope: 02_artsn/07_lots/wp-04-lot-l4-analytique-pilotage.md
+envelope: 00_caesn/06_portfolio/wp-04-lot-l4-analytique-pilotage.md
 realizes: ["CMP-12", "SRV-06", "CAP-03", "ART-6"]
 contributes_to: ["PL-03"]
 related: ["CMP-12", "SRV-06", "CAP-03", "ART-6", "PL-03"]

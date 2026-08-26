@@ -7,7 +7,7 @@ title: Lot L1 — Infrastructure & sécurité
 status: draft
 owner: Direction du Numérique en Santé
 version: "0.1"
-envelope: 02_artsn/07_lots/wp-01-lot-l1-infrastructure-s-curit.md
+envelope: 00_caesn/06_portfolio/wp-01-lot-l1-infrastructure-s-curit.md
 realizes: ["CMP-26", "CMP-32", "CMP-39", "CAP-INT-01", "SRV-04"]
 contributes_to: ["PL-01"]
 related: ["CMP-26", "CMP-32", "CMP-39", "CAP-INT-01", "SRV-04", "PL-01"]

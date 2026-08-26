@@ -7,7 +7,7 @@ title: Lot L6 — Interopérabilité transfrontalière
 status: draft
 owner: Direction du Numérique en Santé
 version: "0.1"
-envelope: 02_artsn/07_lots/wp-06-lot-l6-interop-rabilit-transfrontali-re.md
+envelope: 00_caesn/06_portfolio/wp-06-lot-l6-interop-rabilit-transfrontali-re.md
 realizes: ["SRV-04", "CAP-INT-08", "ART-9"]
 contributes_to: ["PL-03"]
 related: ["PT-14", "SRV-04", "CAP-INT-08", "ART-9", "PL-03"]
