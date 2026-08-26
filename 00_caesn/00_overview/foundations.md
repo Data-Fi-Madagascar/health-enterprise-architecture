@@ -85,6 +85,8 @@ Le cadre **Digital Public Infrastructure for Health (DPI-H)** est une initiative
 
 La **Référence Architecture DPI-H** (publiée par l'OMS via SMART Guidelines) fournit les spécifications techniques pour chaque composante, basées sur HL7 FHIR R4. Elle est directement applicable à l'HEA : les 9 composantes DPI-H correspondent aux 16 profils PTISN.
 
+Le cadre **REDDHI** (*Resilient Essential Digital and Data Health Infrastructure*, OMS/ITU — GIDH) réitère cette vision DPI-H en la qualifiant d'infrastructure **essentielle, résiliente et sous possession nationale**. L'alignement détaillé REDDHI ↔ HEA (principes et 9 composantes traduits en chapitres ART et normes CNISN) fait l'objet de l'annexe G de l'ARTSN (`02_artsn/08_annexes/g-reddhi-alignement.md`).
+
 *Répond à :* que doit posséder le système national comme infrastructure partagée ?
 
 ### Architecture OpenHIE (Open Health Information Exchange)
@@ -157,7 +159,7 @@ Certaines technologies émergentes auront un impact significatif sur les systèm
 
 Ces technologies ne nécessitent pas de nouveau profil PTISN. Elles s'intègrent dans les capabilités existantes (capacité de décision, intégration des données, identité) et sont encadrées par les principes d'architecture du CAESN. Les standards FHIR R4 et HL7 fournissent les structures de données nécessaires ; les profils PTISN définissent les points d'entrée.
 
-L'intégration de ces technologies fait l'objet d'une veille architecturale permanente au sein du CNASN, qui évalue leur maturité et recommande leur adoption lorsque les standards et la gouvernance le permettent.
+L'intégration de ces technologies fait l'objet d'une veille architecturale permanente au sein du CNASN, qui évalue leur maturité et recommande leur adoption lorsque les standards et la gouvernance le permettent. Pour fermer le gap *IA / technologies émergentes* de l'évaluation **ADHMAT**, la veille se double d'un **cadre d'adoption** : toute technologie retenue suit un parcours d'évaluation (maturité, normalisation FHIR/HL7, souveraineté, conformité), puis un déploiement pilote rattaché à une capabilité ([CAP-INT-11](../../referentiel/capacites/cap-int-11.md)) et au chapitre [ART-6](../../referentiel/chapitres/art-6.md), avec réversibilité et sortie contrôlée.
 
 ## Liens
 
@@ -172,6 +174,7 @@ L'intégration de ces technologies fait l'objet d'une veille architecturale perm
 - **Flux de valeur** : Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)
 - **Principes** : Principes d'architecture (`00_caesn/02_principles/index.md`)
 - **DPI-H Reference Architecture** : OMS/ITU (`https://smart.who.int/ra/`)
+- **REDDHI** : Resilient Essential Digital and Data Health Infrastructure, OMS/ITU (GIDH) — voir annexe G de l'ARTSN (`02_artsn/08_annexes/g-reddhi-alignement.md`)
 - **OpenHIE Architecture Specification** : Communauté de pratique (`https://guides.ohie.org/arch-spec/`)
 - **GovStack Implementation Playbook** : Initiative mondiale (`https://specs.govstack.global/`)
 - **Fondement légal** : Fondement légal et cadre législatif (`00_caesn/07_governance/fondement-legal.md`)

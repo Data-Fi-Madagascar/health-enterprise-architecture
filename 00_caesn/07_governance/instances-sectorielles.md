@@ -137,6 +137,22 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 | **Phase 3** | Création des autorités spécialisées | T2 2027 |
 | **Phase 4** | Constitutionalisation des comités techniques | T3 2027 |
 
+## 3. Plateforme nationale de coordination de la digitalisation PHC
+
+Instance transversale recommandée par l'évaluation **ADHMAT** de Madagascar (août 2026) pour fédérer les acteurs de la digitalisation des soins primaires.
+
+| Champ | Valeur |
+|-------|--------|
+| **Mission** | Coordonner les institutions impliquées dans la digitalisation de la PHC, éviter la fragmentation, suivre la maturité |
+| **Composition** | MSP, DEPSI, SIS, régions/districts, partenaires, société civile |
+| **Fréquence** | Trimestrielle (revue de maturité) |
+| **Rapporte au** | CNASN |
+
+**Responsabilités :**
+- Mise en cohérence des initiatives PHC avec le portefeuille et le cadre HEA
+- Suivi de la maturité numérique (référence [ADHMAT](../../00_caesn/00_overview/foundations.md) et [GDHM](../../00_caesn/07_governance/fondement-legal.md))
+- Appui à la montée en compétences ([workforce numérique](../../03_capabilities/workforce-sante-numerique.md))
+
 ## Liens
 
 - Gouvernance du cadre

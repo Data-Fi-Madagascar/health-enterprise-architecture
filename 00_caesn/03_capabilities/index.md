@@ -109,5 +109,6 @@ Quatre capabilités constituent le socle commun (architecture runway) dont l'abs
 - [capabilities-maturity: Évaluation de la maturité des capabilités](maturity.md)
 - [capabilities-enabling: Capabilités habilitantes du système](enabling.md)
 - [capabilities-runway: Capabilités critiques et architecture runway](runway.md)
+- [workforce-sante-numerique: Cadre de renforcement des capacités du workforce numérique](workforce-sante-numerique.md)
 
 <!-- liens-section-auto -->

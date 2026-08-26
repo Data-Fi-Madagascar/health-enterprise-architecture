@@ -77,6 +77,7 @@ L'OMS publie le **Global Digital Health Monitor (GDHM)**. Une auto-évaluation d
 - **Homologation** : Workflow d'homologation (`00_caesn/07_governance/homologation.md`)
 - **Conformité** : Programme de conformité (`01_cnisn/04_conformite/programme-conformite.md`)
 - **ADR-0010** : Cadre légal (`01_cnisn/06_decisions/adr-0010-cadre-legal.md`)
+- **Avant-projet de loi e-santé** : Cadre législatif opposable (`00_caesn/07_governance/projet-loi-esante.md`)
 - **Fondements stratégiques** : Fondements (`00_caesn/00_overview/foundations.md`)
 
 ## Documents de la section

@@ -73,3 +73,4 @@ Les liens utiles pour approfondir ce document sont les suivants : les chapitres 
 - **ART-9** : Garanties transactionnelles fortes (`referentiel/chapitres/art-9.md`)
 - **Chapitres et patterns de référence** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **Gouvernance de l'ARTSN** : Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)
+- **ADHMAT** : Évaluation de maturité ADHMAT (Africa CDC) — benchmark externe de réévaluation du HEA (`../../00_caesn/00_overview/foundations.md`)

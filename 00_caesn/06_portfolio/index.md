@@ -83,5 +83,6 @@ Il est placé sous la responsabilité du Bureau de Réalisation de la Valeur, en
 - [initiative-card: Fiche standard d'initiative orientée valeur](initiative-card.md)
 - [value-chain: Chaîne de valeur d'une initiative](value-chain.md)
 - [caesn-migration: Plan de migration : De l'existant au futur état](migration-existant.md)
+- [financement-tco: Méthode TCO et enveloppe de financement du portefeuille](financement-tco.md)
 
 <!-- liens-section-auto -->

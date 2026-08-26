@@ -108,5 +108,6 @@ La mise en œuvre est progressive : validation institutionnelle, mise en place d
 - [instances-sectorielles: Instances sectorielles et autorités spécialisées](instances-sectorielles.md)
 - [arbitrage-ecarts-caesn-artsn: Proposition d'arbitrage : 5 écarts CAESN ↔ ARTSN](arbitrage-ecarts-caesn-artsn.md)
 - [fondement-legal: Fondement légal et cadre législatif de la santé numérique](fondement-legal.md)
+- [projet-loi-esante: Avant-projet de loi e-santé (cadre législatif opposable)](projet-loi-esante.md)
 
 <!-- liens-section-auto -->
