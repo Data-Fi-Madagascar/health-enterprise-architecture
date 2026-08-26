@@ -8,7 +8,7 @@ status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: ["artsn", "chapitres", "ART-4A", "niveau-3"]
-related: ["CAP-INT-01"]
+related: ["CAP-INT-01", "ART-4A"]
 ---
 
 # Résolution d'identité

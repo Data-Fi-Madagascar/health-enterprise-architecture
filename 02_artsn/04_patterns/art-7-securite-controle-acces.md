@@ -8,7 +8,7 @@ status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: ["artsn", "chapitres", "ART-7", "niveau-3"]
-related: ["CAP-INT-08"]
+related: ["CAP-INT-08", "ART-7"]
 ---
 
 # Sécurité, contrôle d'accès et résidence de la donnée

@@ -8,7 +8,7 @@ status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: ["artsn", "chapitres", "ART-4C", "niveau-3"]
-related: ["CAP-INT-07"]
+related: ["CAP-INT-07", "ART-4C"]
 ---
 
 # Éligibilité et couverture

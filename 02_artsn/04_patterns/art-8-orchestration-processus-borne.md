@@ -8,7 +8,7 @@ status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: ["artsn", "chapitres", "ART-8", "niveau-3"]
-related: ["CAP-INT-03"]
+related: ["CAP-INT-03", "ART-8"]
 ---
 
 # Orchestration de processus

@@ -8,7 +8,7 @@ status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: ["artsn", "chapitres", "ART-6", "niveau-3"]
-related: ["CAP-INT-07"]
+related: ["CAP-INT-07", "ART-6"]
 ---
 
 # Analytique et restitution
