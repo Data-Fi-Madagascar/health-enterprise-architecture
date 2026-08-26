@@ -1,5 +1,6 @@
 ---
-title: Annexe B : Articulation avec l'ARTSN
+
+title: "Annexe B : Articulation avec l'ARTSN"
 id: cnisn-annexe-b
 domain: 08_annexes
 version: "1.0.0"
@@ -8,6 +9,7 @@ last_reviewed: 2026-07-31
 owner: DEPSI
 tags: ["cnisn", "niveau-2", "annexes"]
 ---
+
 
 # Annexe B : Articulation avec l'ARTSN
 

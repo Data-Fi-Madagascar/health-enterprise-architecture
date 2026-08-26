@@ -1,5 +1,6 @@
 ---
-title: Annexe B : Décisions à instruire
+
+title: "Annexe B : Décisions à instruire"
 id: ptisn-annexe-b
 domain: 08_annexes
 version: "1.0.0"
@@ -8,6 +9,7 @@ last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "annexes"]
 ---
+
 
 # Annexe B : Décisions à instruire
 

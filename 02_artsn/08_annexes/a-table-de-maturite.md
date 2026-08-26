@@ -1,6 +1,7 @@
 ---
 
-title: Annexe A : Table de maturité par chapitre
+
+title: "Annexe A : Table de maturité par chapitre"
 id: artsn-annexe-a-maturite
 domain: 08_annexes
 version: "1.0.0"
@@ -9,6 +10,7 @@ last_reviewed: 2026-08-08
 owner: DEPSI
 tags: ["artsn", "annexes", "maturite", "statuts", "niveau-3"]
 ---
+
 
 # Annexe A : Table de maturité par chapitre
 

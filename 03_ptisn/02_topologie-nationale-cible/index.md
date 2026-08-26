@@ -1,5 +1,6 @@
 ---
-title: Partie II : Topologie nationale cible
+
+title: "Partie II : Topologie nationale cible"
 id: ptisn-topologie
 domain: 02_topologie-nationale-cible
 version: "1.0.0"
@@ -8,6 +9,7 @@ last_reviewed: 2026-08-18
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "interopérabilité", "topologie"]
 ---
+
 
 # Partie II : Topologie nationale cible
 

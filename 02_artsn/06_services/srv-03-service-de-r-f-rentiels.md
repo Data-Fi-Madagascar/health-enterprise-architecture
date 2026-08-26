@@ -1,4 +1,22 @@
----title: Service de référentielsid: artsn-SRV-03domain: 06_servicesversion: "1.0.0"status: draftlast_reviewed: 2026-08-24owner: Ministère de la Santé Publiquetags: ["artsn", "service", "srv-03", "patterns"]---
+---
+
+domain: services
+id: SRV-03
+type: service
+title: Service de référentiels
+status: draft
+owner: Ministère de la Santé Publique
+version: "0.1"
+envelope: 02_artsn/06_services/srv-03-service-de-r-f-rentiels.md
+categorie: applicatif
+serves: ["PP-06"]
+realizes: ["CAP-INT-03"]
+accesses: ["DO-02"]
+implements: ["ART-4"]
+related: ["PP-06", "CAP-INT-03", "DO-02", "ART-4", "CMP-10"]
+tags: ["artsn", "service", "srv-03", "patterns"]
+---
+
 
 # Service de référentiels
 

@@ -1,4 +1,22 @@
----title: Service logistique (LMIS)id: artsn-SRV-05domain: 06_servicesversion: "1.0.0"status: draftlast_reviewed: 2026-08-24owner: Ministère de la Santé Publiquetags: ["artsn", "service", "srv-05", "patterns"]---
+---
+
+domain: services
+id: SRV-05
+type: service
+title: Service logistique (LMIS)
+status: draft
+owner: Ministère de la Santé Publique
+version: "0.1"
+envelope: 02_artsn/06_services/srv-05-service-logistique-lmis.md
+categorie: applicatif
+serves: ["PP-06"]
+realizes: ["CAP-INT-10"]
+accesses: ["DO-03"]
+implements: ["ART-10"]
+related: ["PP-06", "CAP-INT-10", "DO-03", "ART-10", "CMP-23"]
+tags: ["artsn", "service", "srv-05", "patterns"]
+---
+
 
 # Service logistique (LMIS)
 

@@ -1,5 +1,6 @@
 ---
-title: Partie III : Gouvernance
+
+title: "Partie III : Gouvernance"
 id: cnisn-gouvernance
 domain: 03_gouvernance
 version: "1.0.0"
@@ -8,6 +9,7 @@ last_reviewed: 2026-08-18
 owner: DEPSI
 tags: ["cnisn", "niveau-2", "interopérabilité", "gouvernance"]
 ---
+
 
 # Partie III : Gouvernance
 

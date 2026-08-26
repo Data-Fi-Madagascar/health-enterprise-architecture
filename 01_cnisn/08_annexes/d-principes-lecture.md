@@ -1,5 +1,6 @@
 ---
-title: Annexe D : Principes de lecture
+
+title: "Annexe D : Principes de lecture"
 id: cnisn-annexe-d
 domain: 08_annexes
 version: "1.0.0"
@@ -8,6 +9,7 @@ last_reviewed: 2026-08-18
 owner: DEPSI
 tags: ["cnisn", "niveau-2", "annexes"]
 ---
+
 
 # Annexe D : Principes de lecture
 

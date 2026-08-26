@@ -1,5 +1,6 @@
 ---
-title: Partie IV bis : Programme de conformité opérationnel
+
+title: "Partie IV bis : Programme de conformité opérationnel"
 id: cnisn-programme-conformite
 domain: 04_conformite
 version: "1.0.0"
@@ -8,6 +9,7 @@ last_reviewed: 2026-08-20
 owner: CNASN
 tags: ["cnisn", "niveau-2", "conformite", "programme"]
 ---
+
 
 # Partie IV bis : Programme de conformité opérationnel
 

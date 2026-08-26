@@ -1,4 +1,19 @@
----title: Lot L7 — Coordination One Healthid: artsn-WP-07domain: 07_lotsversion: "1.0.0"status: draftlast_reviewed: 2026-08-24owner: Direction du Numérique en Santétags: ["artsn", "work-package", "wp-07", "lots"]---
+---
+
+domain: work-packages
+id: WP-07
+type: work-package
+title: Lot L7 — Coordination One Health
+status: draft
+owner: Direction du Numérique en Santé
+version: "0.1"
+envelope: 02_artsn/07_lots/wp-07-lot-l7-coordination-one-health.md
+realizes: ["CMP-02", "ART-8B", "CAP-03"]
+contributes_to: ["PL-03"]
+related: ["PT-15", "CMP-02", "ART-8B", "CAP-03", "PL-03"]
+tags: ["artsn", "work-package", "wp-07", "lots"]
+---
+
 
 # Lot L7 — Coordination One Health
 

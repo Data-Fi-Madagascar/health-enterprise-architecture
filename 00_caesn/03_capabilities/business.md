@@ -1,14 +1,22 @@
 ---
 
-title: "Capabilités métier de santé"
-id: capabilities-business
-domain: 03_capabilities
-version: "1.0.0""
+domain: capabilites
+
+id: CAP-05
+type: capabilite
+niveau: "1"
+title: Surveillance épidémiologique, alerte, investigation et riposte
 status: draft
-last_reviewed: 2026-07-03
 owner: Responsables de capabilités métier
-tags: ["capabilités", "métier", "catalogue"]
+version: "0.1.0"
+envelope: 00_caesn/03_capabilities/business.md
+maps_to: []
+implements: []
+applies_to: ["VS-02"]
+related: ["CAP-18"]
+tags: ["caesn", "niveau-1", "capabilite", "CAP-05", "surveillance", "geospatial"]
 ---
+
 
 # Capabilités métier de santé
 

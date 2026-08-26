@@ -1,4 +1,22 @@
----title: Service de dossier patientid: artsn-SRV-02domain: 06_servicesversion: "1.0.0"status: draftlast_reviewed: 2026-08-24owner: Ministère de la Santé Publiquetags: ["artsn", "service", "srv-02", "patterns"]---
+---
+
+domain: services
+id: SRV-02
+type: service
+title: Service de dossier patient
+status: draft
+owner: Ministère de la Santé Publique
+version: "0.1"
+envelope: 02_artsn/06_services/srv-02-service-de-dossier-patient.md
+categorie: applicatif
+serves: ["PP-05"]
+realizes: ["CAP-01"]
+accesses: ["BO-01", "DO-01"]
+implements: ["ART-2"]
+related: ["PP-05", "CAP-01", "BO-01", "DO-01", "ART-2", "CMP-09"]
+tags: ["artsn", "service", "srv-02", "patterns"]
+---
+
 
 # Service de dossier patient
 

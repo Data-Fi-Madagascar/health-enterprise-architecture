@@ -1,4 +1,19 @@
----title: Plateau 2 — Services de terrain & interopérabilitéid: artsn-PL-02domain: 09_feuille-de-routeversion: "1.0.0"status: draftlast_reviewed: 2026-08-24owner: Direction du Numérique en Santétags: ["artsn", "plateau", "pl-02", "feuille-de-route"]---
+---
+
+domain: plateaux
+id: PL-02
+type: plateau
+title: Plateau 2 — Services de terrain & interopérabilité
+status: draft
+owner: Direction du Numérique en Santé
+version: "0.1"
+envelope: 02_artsn/09_feuille-de-route/pl-02-plateau-2-services-de-terrain-interop-rabilit.md
+realizes: ["CAP-01", "CAP-INT-03"]
+precedes: ["PL-03"]
+related: ["CAP-01", "CAP-INT-03", "SRV-02", "SRV-03", "CMP-10", "WP-02", "WP-03"]
+tags: ["artsn", "plateau", "pl-02", "feuille-de-route"]
+---
+
 
 # Plateau 2 — Services de terrain & interopérabilité
 

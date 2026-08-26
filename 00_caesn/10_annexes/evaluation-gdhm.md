@@ -47,14 +47,14 @@ Cette cartographie croise les données GDHM 2024 avec le cadre HEA pour :
 
 ## Domaine 1 : Leadership et gouvernance
 
-| Indicateur | Description GDHM | Phase | Preuves |
-|------------|------------------|-------|---------|
-| **1** | Organisme de gouvernance numérique santé dédié | **3** | CNASN (Conseil National de l'Architecture et de la Standardisation de la Santé Numérique) constitué, UGD (Unité de Gouvernance Digitale) opérationnelle. Structure existante avec mandate formel. |
-| **2** | Santé numérique intégrée aux stratégies nationales | **3** | SNSD 2023-2027 approuvée par le MSANP (2ᵉ édition). Intégrée au PDSS 2020-2024 et au PSRSIS 2023-2027. |
-| **2a** | Santé prioritaire dans la transformation numérique nationale | **3** | Plan Stratégique du Numérique 2023-2028 inclut la santé parmi les secteurs prioritaires. PRODIGY (Banque Mondiale) renforce l'interopérabilité et l'identité numérique. |
-| **3** | Plan pour les technologies émergentes (IA, IoT, etc.) | **2** | Projet de digitalisation hôpitaux (CHU HJRA, CHU SSPA) lancé mars 2025 avec mention de l'IA. Section « Technologies émergentes » dans les fondements du cadre. Pas de plan national formalisé. |
-| **4** | Équité et droits humains dans les stratégies | **2** | La SNSD 2023-2027 mentionne l'amélioration de l'accès aux soins. Pas d'analyse formelle d'équité numérique santé. |
-| **4a** | Genre dans les stratégies numérique santé | **1** | Aucune référence au genre dans la SNSD ni dans le cadre HEA. |
+| Indicateur | Description GDHM                                             | Phase | Preuves                                                                                                                                                                                           |
+| ---------- | ------------------------------------------------------------ | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1**      | Organisme de gouvernance numérique santé dédié               | **3** | CNASN (Conseil National de l'Architecture et de la Standardisation de la Santé Numérique) constitué, UGD (Unité de Gouvernance Digitale) opérationnelle. Structure existante avec mandate formel. |
+| **2**      | Santé numérique intégrée aux stratégies nationales           | **3** | SNSD 2023-2027 approuvée par le MSANP (2ᵉ édition). Intégrée au PDSS 2020-2024 et au PSRSIS 2023-2027.                                                                                            |
+| **2a**     | Santé prioritaire dans la transformation numérique nationale | **3** | Plan Stratégique du Numérique 2023-2028 inclut la santé parmi les secteurs prioritaires. PRODIGY (Banque Mondiale) renforce l'interopérabilité et l'identité numérique.                           |
+| **3**      | Plan pour les technologies émergentes (IA, IoT, etc.)        | **2** | Projet de digitalisation hôpitaux (CHU HJRA, CHU SSPA) lancé mars 2025 avec mention de l'IA. Section « Technologies émergentes » dans les fondements du cadre. Pas de plan national formalisé.    |
+| **4**      | Équité et droits humains dans les stratégies                 | **2** | La SNSD 2023-2027 mentionne l'amélioration de l'accès aux soins. Pas d'analyse formelle d'équité numérique santé.                                                                                 |
+| **4a**     | Genre dans les stratégies numérique santé                    | **1** | Aucune référence au genre dans la SNSD ni dans le cadre HEA.                                                                                                                                      |
 
 **Score domaine 1 : Phase 2,5** (moyenne ~2,5)
 

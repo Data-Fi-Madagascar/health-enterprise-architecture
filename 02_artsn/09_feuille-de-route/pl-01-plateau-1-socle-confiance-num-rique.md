@@ -1,4 +1,19 @@
----title: Plateau 1 — Socle & confiance numériqueid: artsn-PL-01domain: 09_feuille-de-routeversion: "1.0.0"status: draftlast_reviewed: 2026-08-24owner: Direction du Numérique en Santétags: ["artsn", "plateau", "pl-01", "feuille-de-route"]---
+---
+
+domain: plateaux
+id: PL-01
+type: plateau
+title: Plateau 1 — Socle & confiance numérique
+status: draft
+owner: Direction du Numérique en Santé
+version: "0.1"
+envelope: 02_artsn/09_feuille-de-route/pl-01-plateau-1-socle-confiance-num-rique.md
+realizes: ["CAP-INT-01", "CAP-17"]
+precedes: ["PL-02"]
+related: ["CAP-INT-01", "CAP-17", "CMP-32", "CMP-39", "WP-01"]
+tags: ["artsn", "plateau", "pl-01", "feuille-de-route"]
+---
+
 
 # Plateau 1 — Socle & confiance numérique
 

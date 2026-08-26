@@ -1,4 +1,19 @@
----title: Lot L6 — Interopérabilité transfrontalièreid: artsn-WP-06domain: 07_lotsversion: "1.0.0"status: draftlast_reviewed: 2026-08-24owner: Direction du Numérique en Santétags: ["artsn", "work-package", "wp-06", "lots"]---
+---
+
+domain: work-packages
+id: WP-06
+type: work-package
+title: Lot L6 — Interopérabilité transfrontalière
+status: draft
+owner: Direction du Numérique en Santé
+version: "0.1"
+envelope: 02_artsn/07_lots/wp-06-lot-l6-interop-rabilit-transfrontali-re.md
+realizes: ["SRV-04", "CAP-INT-08", "ART-9"]
+contributes_to: ["PL-03"]
+related: ["PT-14", "SRV-04", "CAP-INT-08", "ART-9", "PL-03"]
+tags: ["artsn", "work-package", "wp-06", "lots"]
+---
+
 
 # Lot L6 — Interopérabilité transfrontalière
 

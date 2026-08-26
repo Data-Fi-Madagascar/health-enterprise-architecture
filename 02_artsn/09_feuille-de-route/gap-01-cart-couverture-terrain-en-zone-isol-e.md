@@ -1,4 +1,18 @@
----title: Écart — Couverture terrain en zone isoléeid: artsn-GAP-01domain: 09_feuille-de-routeversion: "1.0.0"status: draftlast_reviewed: 2026-08-24owner: Direction du Numérique en Santétags: ["artsn", "gap", "gap-01", "feuille-de-route"]---
+---
+
+domain: gaps
+id: GAP-01
+type: gap
+title: Écart — Couverture terrain en zone isolée
+status: draft
+owner: Direction du Numérique en Santé
+version: "0.1"
+envelope: 02_artsn/09_feuille-de-route/gap-01-cart-couverture-terrain-en-zone-isol-e.md
+between: ["PL-01", "PL-02"]
+related: ["PL-01", "PL-02", "LOC-04", "CAP-01"]
+tags: ["artsn", "gap", "gap-01", "feuille-de-route"]
+---
+
 
 # Écart — Couverture terrain en zone isolée
 

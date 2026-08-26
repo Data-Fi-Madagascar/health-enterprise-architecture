@@ -1,6 +1,7 @@
 ---
 
-title: Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health)
+
+title: "Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health)"
 id: point-de-vigilance-caesn
 domain: 07_governance
 version: "1.0.0"
@@ -9,6 +10,7 @@ last_reviewed: 2026-08-08
 owner: Comité National d'Architecture Santé Numérique
 tags: ["gouvernance", "vigilance", "one-health", "capabilites", "identitovigilance"]
 ---
+
 
 # Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health)
 

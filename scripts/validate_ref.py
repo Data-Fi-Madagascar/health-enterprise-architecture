@@ -76,6 +76,58 @@ def fm_field(fm, key):
     return m.group(1) if m else None
 
 
+def check_frontmatter_validity(fm):
+    """Renvoie la liste des erreurs de syntaxe YAML du bloc frontmatter.
+
+    Utilise PyYAML si disponible (validation stricte), sinon un heuristique
+    couvrant les cas observés en production :
+      - frontmatter replié sur une seule ligne (champs sans saut de ligne) ;
+      - valeur scalaire non quotée contenant ': ' (deux-points + espace) ;
+      - guillemets non balancés (ex. ``version: "1.0.0"`` redoublé).
+    """
+    errors = []
+    try:
+        import yaml  # disponible dans certains environnements
+        try:
+            yaml.safe_load(fm)
+            return errors
+        except yaml.YAMLError as exc:
+            errors.append("YAML invalide: %s" % str(exc).splitlines()[0])
+            return errors
+    except ImportError:
+        pass
+    lines = fm.split("\n")
+    if len(lines) <= 1 and ":" in fm:
+        errors.append("frontmatter replié sur une seule ligne (manque les sauts de ligne entre champs)")
+        return errors
+    for ln in lines:
+        s = ln.strip()
+        if not s or s.startswith("#") or s == "---":
+            continue
+        m = re.match(r"^([A-Za-z_][\w-]*):\s*(.*)$", s)
+        if not m:
+            errors.append("ligne de champ non analysable: %r" % ln)
+            continue
+        val = m.group(2).strip()
+        if val == "" or val.startswith("["):
+            continue
+        if val in ("|", ">", "|-", ">-", "|-", ">-"):
+            continue  # bloc scalaire, non validable simplement
+        if val.startswith('"'):
+            inner = val[1:]
+            if not inner.endswith('"') or '"' in inner[:-1]:
+                errors.append("guillemets doubles non balancés: %r" % ln)
+            continue
+        if val.startswith("'"):
+            inner = val[1:]
+            if not inner.endswith("'"):
+                errors.append("guillemets simples non balancés: %r" % ln)
+            continue
+        if re.search(r":\s", val):
+            errors.append("valeur non quotée contenant ': ' (à encadrer de guillemets): %r" % ln)
+    return errors
+
+
 def parse_id(fm):
     m = re.search(r"^id:\s*(.+)$", fm, re.MULTILINE)
     if not m:
@@ -167,6 +219,16 @@ def main():
         if not os.path.exists(resolved):
             broken.append((path, target))
 
+    # frontmatter YAML validity (récurrence des frontmatter brisés)
+    fm_errors = []
+    for path in iter_md(REPO_ROOT, LINK_DIRS):
+        text = open(path, encoding="utf-8").read()
+        fm, _ = parse_frontmatter(text)
+        if fm is None:
+            continue
+        for err in check_frontmatter_validity(fm):
+            fm_errors.append((path, err))
+
     # report
     print("=== Validation du référentiel HEA ===")
     print("Objets indexés : %d" % len(objects))
@@ -189,6 +251,14 @@ def main():
             print("  - %s -> %s" % (os.path.relpath(f, REPO_ROOT), t))
     else:
         print("[OK] Aucun lien relatif cassé.")
+
+    if fm_errors:
+        ok = False
+        print("\n[ERREUR] Frontmatter YAML invalide : %d" % len(fm_errors))
+        for f, e in fm_errors[:50]:
+            print("  - %s : %s" % (os.path.relpath(f, REPO_ROOT), e))
+    else:
+        print("[OK] Tous les frontmatter sont du YAML valide.")
 
     known = [i for i in islands if i in KNOWN_ISLANDS]
     unknown = [i for i in islands if i not in KNOWN_ISLANDS]

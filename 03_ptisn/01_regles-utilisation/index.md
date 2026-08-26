@@ -1,5 +1,6 @@
 ---
-title: Partie I : Règles d'utilisation du PTISN
+
+title: "Partie I : Règles d'utilisation du PTISN"
 id: ptisn-regles-utilisation
 domain: 01_regles-utilisation
 version: "1.0.0"
@@ -8,6 +9,7 @@ last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "interopérabilité", "regles"]
 ---
+
 
 # Partie I : Règles d'utilisation du PTISN
 

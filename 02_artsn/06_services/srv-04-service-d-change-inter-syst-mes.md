@@ -1,4 +1,22 @@
----title: Service d'échange inter-systèmesid: artsn-SRV-04domain: 06_servicesversion: "1.0.0"status: draftlast_reviewed: 2026-08-24owner: Ministère de la Santé Publiquetags: ["artsn", "service", "srv-04", "patterns"]---
+---
+
+domain: services
+id: SRV-04
+type: service
+title: Service d'échange inter-systèmes
+status: draft
+owner: Ministère de la Santé Publique
+version: "0.1"
+envelope: 02_artsn/06_services/srv-04-service-d-change-inter-syst-mes.md
+categorie: technologique
+serves: ["PP-10"]
+realizes: ["CAP-INT-08"]
+accesses: ["DO-03"]
+implements: ["ART-9"]
+related: ["PP-10", "CAP-INT-08", "DO-03", "ART-9", "CMP-11"]
+tags: ["artsn", "service", "srv-04", "patterns"]
+---
+
 
 # Service d'échange inter-systèmes
 

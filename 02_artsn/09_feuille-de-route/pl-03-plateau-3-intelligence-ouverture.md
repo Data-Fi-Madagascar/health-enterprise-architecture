@@ -1,4 +1,18 @@
----title: Plateau 3 — Intelligence & ouvertureid: artsn-PL-03domain: 09_feuille-de-routeversion: "1.0.0"status: draftlast_reviewed: 2026-08-24owner: Direction du Numérique en Santétags: ["artsn", "plateau", "pl-03", "feuille-de-route"]---
+---
+
+domain: plateaux
+id: PL-03
+type: plateau
+title: Plateau 3 — Intelligence & ouverture
+status: draft
+owner: Direction du Numérique en Santé
+version: "0.1"
+envelope: 02_artsn/09_feuille-de-route/pl-03-plateau-3-intelligence-ouverture.md
+realizes: ["CAP-03", "CAP-INT-08", "CAP-INT-10"]
+related: ["CAP-03", "CAP-INT-08", "CAP-INT-10", "SRV-06", "PT-14", "WP-04", "WP-05", "WP-06", "WP-07"]
+tags: ["artsn", "plateau", "pl-03", "feuille-de-route"]
+---
+
 
 # Plateau 3 — Intelligence & ouverture
 

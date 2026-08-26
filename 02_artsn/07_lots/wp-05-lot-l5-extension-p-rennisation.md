@@ -1,4 +1,19 @@
----title: Lot L5 — Extension & pérennisationid: artsn-WP-05domain: 07_lotsversion: "1.0.0"status: draftlast_reviewed: 2026-08-24owner: Direction du Numérique en Santétags: ["artsn", "work-package", "wp-05", "lots"]---
+---
+
+domain: work-packages
+id: WP-05
+type: work-package
+title: Lot L5 — Extension & pérennisation
+status: draft
+owner: Direction du Numérique en Santé
+version: "0.1"
+envelope: 02_artsn/07_lots/wp-05-lot-l5-extension-p-rennisation.md
+realizes: ["SRV-06", "CAP-03", "CAP-INT-08"]
+contributes_to: ["PL-03"]
+related: ["PT-14", "PT-15", "SRV-06", "CAP-03", "CAP-INT-08", "PL-03"]
+tags: ["artsn", "work-package", "wp-05", "lots"]
+---
+
 
 # Lot L5 — Extension & pérennisation
 

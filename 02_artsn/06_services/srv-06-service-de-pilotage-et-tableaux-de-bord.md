@@ -1,4 +1,22 @@
----title: Service de pilotage et tableaux de bordid: artsn-SRV-06domain: 06_servicesversion: "1.0.0"status: draftlast_reviewed: 2026-08-24owner: Ministère de la Santé Publiquetags: ["artsn", "service", "srv-06", "patterns"]---
+---
+
+domain: services
+id: SRV-06
+type: service
+title: Service de pilotage et tableaux de bord
+status: draft
+owner: Ministère de la Santé Publique
+version: "0.1"
+envelope: 02_artsn/06_services/srv-06-service-de-pilotage-et-tableaux-de-bord.md
+categorie: applicatif
+serves: ["PP-07"]
+realizes: ["CAP-03"]
+accesses: ["DO-04"]
+implements: ["ART-3"]
+related: ["PP-07", "CAP-03", "DO-04", "ART-3", "CMP-12"]
+tags: ["artsn", "service", "srv-06", "patterns"]
+---
+
 
 # Service de pilotage et tableaux de bord
 

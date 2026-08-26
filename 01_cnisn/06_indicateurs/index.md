@@ -1,5 +1,6 @@
 ---
-title: Partie VI : Indicateurs de suivi
+
+title: "Partie VI : Indicateurs de suivi"
 id: cnisn-indicateurs
 domain: 06_indicateurs
 version: "1.0.0"
@@ -8,6 +9,7 @@ last_reviewed: 2026-08-18
 owner: DEPSI
 tags: ["cnisn", "niveau-2", "interopérabilité", "indicateurs"]
 ---
+
 
 # Partie VI : Indicateurs de suivi
 

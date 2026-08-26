@@ -1,5 +1,6 @@
 ---
-title: Annexe D : Glossaire
+
+title: "Annexe D : Glossaire"
 id: ptisn-annexe-d
 domain: 08_annexes
 version: "1.0.0"
@@ -8,6 +9,7 @@ last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "annexes"]
 ---
+
 
 # Annexe D : Glossaire
 

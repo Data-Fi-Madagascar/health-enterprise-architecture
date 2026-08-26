@@ -1,14 +1,22 @@
 ---
 
-title: "Capabilités habilitantes du système"
-id: capabilities-enabling
-domain: 03_capabilities
-version: "1.0.0""
+domain: capabilites
+
+id: CAP-15
+type: capabilite
+niveau: "1"
+title: Cybersécurité, confidentialité et gouvernance des données personnelles
 status: draft
-last_reviewed: 2026-07-03
 owner: Responsables de capabilités habilitantes
-tags: ["capabilités", "habilitantes", "catalogue"]
+version: "0.0.1"
+envelope: 00_caesn/03_capabilities/enabling.md
+maps_to: []
+implements: []
+applies_to: ["VS-01", "VS-02", "VS-03", "VS-04"]
+related: []
+tags: ["caesn", "niveau-1", "capabilite", "CAP-15"]
 ---
+
 
 # Capabilités habilitantes du système
 

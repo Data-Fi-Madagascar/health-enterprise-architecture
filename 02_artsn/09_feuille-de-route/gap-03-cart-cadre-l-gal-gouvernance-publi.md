@@ -1,4 +1,18 @@
----title: Écart — Cadre légal & gouvernance publiéid: artsn-GAP-03domain: 09_feuille-de-routeversion: "1.0.0"status: draftlast_reviewed: 2026-08-24owner: Direction du Numérique en Santétags: ["artsn", "gap", "gap-03", "feuille-de-route"]---
+---
+
+domain: gaps
+id: GAP-03
+type: gap
+title: Écart — Cadre légal & gouvernance publié
+status: draft
+owner: Direction du Numérique en Santé
+version: "0.1"
+envelope: 02_artsn/09_feuille-de-route/gap-03-cart-cadre-l-gal-gouvernance-publi.md
+between: ["PL-01"]
+related: ["PL-01", "CMP-39", "CAP-INT-01"]
+tags: ["artsn", "gap", "gap-03", "feuille-de-route"]
+---
+
 
 # Écart — Cadre légal & gouvernance publié
 

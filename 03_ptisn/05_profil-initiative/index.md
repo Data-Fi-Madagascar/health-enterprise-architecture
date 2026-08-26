@@ -1,5 +1,6 @@
 ---
-title: Partie V : Profil technique d'une initiative
+
+title: "Partie V : Profil technique d'une initiative"
 id: ptisn-profil-initiative
 domain: 05_profil-initiative
 version: "1.0.0"
@@ -8,6 +9,7 @@ last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils"]
 ---
+
 
 # Partie V : Profil technique d'une initiative
 

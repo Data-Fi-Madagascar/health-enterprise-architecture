@@ -1,4 +1,19 @@
----title: Lot L2 — Applications terrain & collecteid: artsn-WP-02domain: 07_lotsversion: "1.0.0"status: draftlast_reviewed: 2026-08-24owner: Direction du Numérique en Santétags: ["artsn", "work-package", "wp-02", "lots"]---
+---
+
+domain: work-packages
+id: WP-02
+type: work-package
+title: Lot L2 — Applications terrain & collecte
+status: draft
+owner: Direction du Numérique en Santé
+version: "0.1"
+envelope: 02_artsn/07_lots/wp-02-lot-l2-applications-terrain-collecte.md
+realizes: ["CMP-09", "CMP-23", "SRV-02", "SRV-05", "CAP-01"]
+contributes_to: ["PL-02"]
+related: ["CMP-09", "CMP-23", "SRV-02", "SRV-05", "CAP-01", "PL-02"]
+tags: ["artsn", "work-package", "wp-02", "lots"]
+---
+
 
 # Lot L2 — Applications terrain & collecte
 

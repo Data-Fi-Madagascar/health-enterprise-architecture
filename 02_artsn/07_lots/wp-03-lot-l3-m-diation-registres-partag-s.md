@@ -1,4 +1,19 @@
----title: Lot L3 — Médiation & registres partagésid: artsn-WP-03domain: 07_lotsversion: "1.0.0"status: draftlast_reviewed: 2026-08-24owner: Direction du Numérique en Santétags: ["artsn", "work-package", "wp-03", "lots"]---
+---
+
+domain: work-packages
+id: WP-03
+type: work-package
+title: Lot L3 — Médiation & registres partagés
+status: draft
+owner: Direction du Numérique en Santé
+version: "0.1"
+envelope: 02_artsn/07_lots/wp-03-lot-l3-m-diation-registres-partag-s.md
+realizes: ["CMP-10", "CMP-11", "SRV-03", "SRV-04", "CAP-INT-03"]
+contributes_to: ["PL-02"]
+related: ["CMP-10", "CMP-11", "SRV-03", "SRV-04", "CAP-INT-03", "PL-02"]
+tags: ["artsn", "work-package", "wp-03", "lots"]
+---
+
 
 # Lot L3 — Médiation & registres partagés
 

@@ -1,5 +1,6 @@
 ---
-title: Partie VI : Gouvernance du PTISN
+
+title: "Partie VI : Gouvernance du PTISN"
 id: ptisn-gouvernance
 domain: 06_gouvernance
 version: "1.0.0"
@@ -8,6 +9,7 @@ last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "interopérabilité", "gouvernance"]
 ---
+
 
 # Partie VI : Gouvernance du PTISN
 

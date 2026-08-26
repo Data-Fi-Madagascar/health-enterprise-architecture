@@ -1,4 +1,19 @@
----title: Lot L4 — Analytique & pilotageid: artsn-WP-04domain: 07_lotsversion: "1.0.0"status: draftlast_reviewed: 2026-08-24owner: Direction du Numérique en Santétags: ["artsn", "work-package", "wp-04", "lots"]---
+---
+
+domain: work-packages
+id: WP-04
+type: work-package
+title: Lot L4 — Analytique & pilotage
+status: draft
+owner: Direction du Numérique en Santé
+version: "0.1"
+envelope: 02_artsn/07_lots/wp-04-lot-l4-analytique-pilotage.md
+realizes: ["CMP-12", "SRV-06", "CAP-03", "ART-6"]
+contributes_to: ["PL-03"]
+related: ["CMP-12", "SRV-06", "CAP-03", "ART-6", "PL-03"]
+tags: ["artsn", "work-package", "wp-04", "lots"]
+---
+
 
 # Lot L4 — Analytique & pilotage
 

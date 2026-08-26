@@ -1,4 +1,19 @@
----title: Lot L1 — Infrastructure & sécuritéid: artsn-WP-01domain: 07_lotsversion: "1.0.0"status: draftlast_reviewed: 2026-08-24owner: Direction du Numérique en Santétags: ["artsn", "work-package", "wp-01", "lots"]---
+---
+
+domain: work-packages
+id: WP-01
+type: work-package
+title: Lot L1 — Infrastructure & sécurité
+status: draft
+owner: Direction du Numérique en Santé
+version: "0.1"
+envelope: 02_artsn/07_lots/wp-01-lot-l1-infrastructure-s-curit.md
+realizes: ["CMP-26", "CMP-32", "CMP-39", "CAP-INT-01", "SRV-04"]
+contributes_to: ["PL-01"]
+related: ["CMP-26", "CMP-32", "CMP-39", "CAP-INT-01", "SRV-04", "PL-01"]
+tags: ["artsn", "work-package", "wp-01", "lots"]
+---
+
 
 # Lot L1 — Infrastructure & sécurité
 

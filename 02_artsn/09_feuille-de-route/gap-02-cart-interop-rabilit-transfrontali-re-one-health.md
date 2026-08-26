@@ -1,4 +1,18 @@
----title: Écart — Interopérabilité transfrontalière & One Healthid: artsn-GAP-02domain: 09_feuille-de-routeversion: "1.0.0"status: draftlast_reviewed: 2026-08-24owner: Direction du Numérique en Santétags: ["artsn", "gap", "gap-02", "feuille-de-route"]---
+---
+
+domain: gaps
+id: GAP-02
+type: gap
+title: Écart — Interopérabilité transfrontalière & One Health
+status: draft
+owner: Direction du Numérique en Santé
+version: "0.1"
+envelope: 02_artsn/09_feuille-de-route/gap-02-cart-interop-rabilit-transfrontali-re-one-health.md
+between: ["PL-02", "PL-03"]
+related: ["PL-02", "PL-03", "CAP-INT-08", "PT-15"]
+tags: ["artsn", "gap", "gap-02", "feuille-de-route"]
+---
+
 
 # Écart — Interopérabilité transfrontalière & One Health
 

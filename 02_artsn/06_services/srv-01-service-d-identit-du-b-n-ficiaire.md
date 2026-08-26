@@ -1,4 +1,22 @@
----title: Service d'identité du bénéficiaireid: artsn-SRV-01domain: 06_servicesversion: "1.0.0"status: draftlast_reviewed: 2026-08-24owner: Ministère de la Santé Publiquetags: ["artsn", "service", "srv-01", "patterns"]---
+---
+
+domain: services
+id: SRV-01
+type: service
+title: Service d'identité du bénéficiaire
+status: draft
+owner: Ministère de la Santé Publique
+version: "0.1"
+envelope: 02_artsn/06_services/srv-01-service-d-identit-du-b-n-ficiaire.md
+categorie: business
+serves: ["PP-01"]
+realizes: ["CAP-17"]
+accesses: ["BO-01"]
+implements: ["ART-2"]
+related: ["PP-01", "CAP-17", "BO-01", "ART-2", "CMP-08"]
+tags: ["artsn", "service", "srv-01", "patterns"]
+---
+
 
 # Service d'identité du bénéficiaire
 
