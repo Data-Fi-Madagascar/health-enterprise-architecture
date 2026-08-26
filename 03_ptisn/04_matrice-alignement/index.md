@@ -84,7 +84,7 @@ Cette correspondance ne signifie pas que tous les composants doivent être dépl
 
 ## 4. Alignement avec les lots de déploiement (ARTSN)
 
-Cette section ferme la boucle de traçabilité en reliant chaque lot de la feuille de route ARTSN à ses profils PTISN, aux chapitres ART et aux normes/ADR CNISN qu'il opérationnalise. Elle complète les sections 1–3 (PTISN ↔ CNISN ↔ ART) et la [trajectoire CNISN des lots](../../02_artsn/07_lots/index.md#9-trajectoire-cnisn-et-alignement-des-lots).
+Cette section ferme la boucle de traçabilité en reliant chaque lot — défini dans le [portefeuille CAESN](../../00_caesn/06_portfolio/feuille-de-route-lots.md) (source de vérité : périmètre, séquence, financement) — à ses profils PTISN, aux chapitres ART et aux normes/ADR CNISN qu'il opérationnalise. Elle complète les sections 1–3 (PTISN ↔ CNISN ↔ ART) et la [vue de réalisation ARTSN des lots](../../02_artsn/07_lots/index.md#9-trajectoire-cnisn-et-alignement-des-lots).
 
 | Lot | Profils PTISN concernés | Chapitres ART mobilisés | Normes / ADR CNISN |
 |-----|--------------------------|--------------------------|---------------------|

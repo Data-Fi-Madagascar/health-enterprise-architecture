@@ -53,7 +53,7 @@ Cinq objectifs :
 
 ## Registre national des initiatives
 
-Le portefeuille est matérialisé par le **registre national des initiatives numériques en santé**, outil de référence pour identifier, suivre, comparer, prioriser et arbitrer. Il couvre les initiatives existantes, en conception, pilotes, proposées par les partenaires, à généraliser, et à rationaliser.
+Le portefeuille est matérialisé par le **registre national des initiatives numériques en santé**, outil de référence pour identifier, suivre, comparer, prioriser et arbitrer. Il couvre les initiatives existantes, en conception, pilotes, proposées par les partenaires, à généraliser, et à rationaliser. Les lots de déploiement **L1–L7** de la feuille de route HEA sont inscrits au registre comme initiatives de réalisation ; ils sont définis dans la [feuille de route des lots](feuille-de-route-lots.md) (source de vérité : périmètre, séquence, financement).
 
 Le registre contient au minimum : identifiant, nom, porteur institutionnel, partenaire/financeur, statut, flux de valeur servi, étape ciblée, principes de domaine, capabilités renforcées, maturité actuelle et cible, service numérique attendu, application concernée, données, bénéficiaires, bénéfices attendus, indicateurs, dépendances, risques, coût total de possession et décision du portefeuille.
 
@@ -84,5 +84,6 @@ Il est placé sous la responsabilité du Bureau de Réalisation de la Valeur, en
 - [value-chain: Chaîne de valeur d'une initiative](value-chain.md)
 - [caesn-migration: Plan de migration : De l'existant au futur état](migration-existant.md)
 - [financement-tco: Méthode TCO et enveloppe de financement du portefeuille](financement-tco.md)
+- [feuille-de-route-lots: Feuille de route des lots du portefeuille (déploiement HEA)](feuille-de-route-lots.md)
 
 <!-- liens-section-auto -->

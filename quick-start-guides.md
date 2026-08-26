@@ -32,7 +32,7 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 |--------|----------|---------|
 | Évaluer une initiative | [Registre des initiatives](00_caesn/06_portfolio/index.md) | Vérifier l'alignement avec les flux de valeur |
 | Lire une décision architecture | [Registre ADR](01_cnisn/06_decisions/registre-decisions.md) | 9 ADR classées par statut |
-| Suivre la roadmap | [Feuille de route ARTSN](02_artsn/07_lots/index.md) | 6 phases, jalons, budget 98 MGA |
+| Suivre la roadmap | [Feuille de route des lots (portefeuille)](00_caesn/06_portfolio/feuille-de-route-lots.md) | 7 lots, séquence, financement |
 | Comprendre la gouvernance | [Processus gouvernance](00_caesn/07_governance/processus-gouvernance.md) | Workflows de validation |
 
 ### Check-list d'évaluation d'une initiative
@@ -141,7 +141,7 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 ### Premier pas
 
 1. Lire la [vue d'ensemble](00_caesn/00_overview/index.md) — contexte stratégique Madagascar
-2. Consulter la [feuille de route](02_artsn/07_lots/index.md) — phases de déploiement
+2. Consulter la [feuille de route des lots](00_caesn/06_portfolio/feuille-de-route-lots.md) — périmètre et séquence (réalisation technique : [vue ARTSN](02_artsn/07_lots/index.md))
 3. Vérifier les [standards obligatoires](01_cnisn/05_standards/) — FHIR, sécurité, chiffrement
 
 ### Actions courantes
@@ -149,7 +149,7 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 | Action | Document | Comment |
 |--------|----------|---------|
 | Évaluer la compatibilité | [Matrice d'alignement](03_ptisn/04_matrice-alignement/index.md) | Profils ↔ capacités |
-| Comprendre le budget | [Feuille de route](02_artsn/07_lots/index.md) | 98 MGA, 6 phases |
+| Comprendre le budget | [Méthode TCO](00_caesn/06_portfolio/financement-tco.md) | Devis par lot L1–L7 |
 | Lister les initiatives | [Portefeuille](00_caesn/06_portfolio/index.md) | Portefeuille orienté valeur |
 | Vérifier la sécurité | [ATNA](01_cnisn/06_decisions/adr-0008-atna.md), [Chiffrement](01_cnisn/05_standards/std-0002-securite-chiffrement.md) | Exigences sécurité |
 | Consulter le glossaire | [Glossaire](00_caesn/10_annexes/glossary.md) | Termes transverses |

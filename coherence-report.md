@@ -254,6 +254,7 @@ Croisement du CNISN (`01_cnisn/`, niveau 2 : principes P-INT, capacités CAP-INT
 
 - `referentiel/chapitres/art-*.md` : lignes « CNISN — Normes » reliant chaque chapitre aux standards/ADR concernés (ex. ART-7 → STD-0002, ADR-0008 ; ART-4A → STD-0005, ADR-0004/0006).
 - `01_cnisn/05_standards/` et `06_decisions/` : chaque norme/ADR porte un renvoi « ARTSN — lots consommateurs » vers `02_artsn/07_lots/index.md` (D2, 15 artefacts).
+- **Réalignement de propriété des lots (2026-08-26)** : les lots L1–L7 sont désormais définis au niveau du portefeuille CAESN (`00_caesn/06_portfolio/feuille-de-route-lots.md` — source de vérité : périmètre, séquence, financement) ; `02_artsn/07_lots/index.md` est devenu la *vue de réalisation technique ARTSN* (composants, patterns, normes CNISN) qui référence le portefeuille vers le haut. Cela corrige une dépendance inversée (un niveau 1 référençait un niveau 3 pour sa définition de lots) et résorbe le doublon budgétaire (le budget est unique, dans le TCO portefeuille).
 - Annexe F (`f-normes-cnisn-lots.md`) : index inverse norme/ADR → lots ; annexes G/H relient CNISN aux sources internationales (OMS/ITU, Africa CDC).
 - → Traçabilité **symétrique** : le niveau 3 (ARTSN) et le niveau 2 (CNISN) sont désormais reliés dans les deux sens (résolu par les phases C, D2, D3 du refactor ARTSN).
 

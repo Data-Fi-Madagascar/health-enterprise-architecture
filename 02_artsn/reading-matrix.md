@@ -144,7 +144,7 @@ Les ressources complémentaires incluent l'Index de l'ARTSN, le Glossaire de l'A
 - [artsn-dictionnaire-donnees: Dictionnaire de données fonctionnelles](03_objets-de-donnees/index.md)
 - [artsn-exigences-contextuelles: Exigences contextuelles nationales](02_exigences-contextuelles/index.md)
 - [artsn-fondations: Fondations de l'ARTSN](00_fondations/index.md)
-- [roadmap-deploiement-artsn: Feuille de route de déploiement progressif de l'ARTSN](07_lots/index.md)
+- [roadmap-deploiement-artsn: Réalisation technique ARTSN des lots du portefeuille](07_lots/index.md)
 - [artsn-flux-de-valeur: Flux de valeur](01_flux-de-valeur/index.md)
 - [artsn-gouvernance: Gouvernance de l'ARTSN](06_gouvernance/index.md)
 - [conformite: Tableau de bord de conformité architecturale](06_gouvernance/conformite.md)

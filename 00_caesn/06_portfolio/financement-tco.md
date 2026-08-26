@@ -89,7 +89,7 @@ Ces estimations couvrent le coût de possession complet (CapEx + OpEx actualisé
 
 La budgetisation est pilotée selon un cycle clair pour garantir l'alignement investissement → valeur :
 
-1. **Programmation** : le [Bureau de Réalisation de la Valeur (BRV)](index.md) établit le plan de financement par lot à partir du TCO et de la feuille de route ([lots L1–L7](../../02_artsn/07_lots/index.md)).
+1. **Programmation** : le [Bureau de Réalisation de la Valeur (BRV)](index.md) établit le plan de financement par lot à partir du TCO et de la [feuille de route des lots du portefeuille](feuille-de-route-lots.md) (dont la [réalisation technique](../../02_artsn/07_lots/index.md) est détaillée en ARTSN).
 2. **Arbitrage** : le CNASN homologue le plan (conformité) ; le comité de programmation arbitre la répartition (voir [gouvernance CAESN](../../00_caesn/07_governance/index.md)).
 3. **Exécution** : décaissement par jalon, suivi de l'écart budget/réel par lot.
 4. **Contrôle** : audit de conformité et certification des profils (PTISN) conditionnent les tranches suivantes.
@@ -108,7 +108,7 @@ La budgetisation est pilotée selon un cycle clair pour garantir l'alignement in
 
 - **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
 - **Portefeuille** : Portefeuille d'initiatives orienté valeur (`index.md`)
-- **Feuille de route ARTSN** : Feuille de route de déploiement (`../../02_artsn/07_lots/index.md`)
+- **Feuille de route des lots** : [Lots L1–L7 du portefeuille](feuille-de-route-lots.md) (réalisation technique : [vue ARTSN](../../02_artsn/07_lots/index.md))
 - **Loi e-santé** : Avant-projet de loi e-santé (`../07_governance/projet-loi-esante.md`)
 - **Workforce numérique** : Capacité numérique système (`../03_capabilities/workforce-sante-numerique.md`)
 - **ADHMAT** : Africa CDC — *costed national implementation roadmap and financing plan* (annexe H : `../../02_artsn/08_annexes/h-benchmark-adhmat.md`)

@@ -84,7 +84,7 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 | Dictionnaire | [`03_objets-de-donnees/`](./02_artsn/03_objets-de-donnees/) | 40 concepts de données (7 domaines) |
 | Gouvernance | [`06_gouvernance/`](./02_artsn/06_gouvernance/) | Veille, conformité, dépréciation |
 | Annexes | [`08_annexes/`](./02_artsn/08_annexes/) | Protocole de test, SLA, maturité |
-| Feuille de route | [`07_lots/`](./02_artsn/07_lots/) | Roadmap technique 6 phases, 98 MGA |
+| Feuille de route des lots | [`06_portfolio/feuille-de-route-lots.md`](./00_caesn/06_portfolio/feuille-de-route-lots.md) | Roadmap 7 lots, définie au portefeuille CAESN |
 
 ### Niveau 4 — `03_ptisn/` (PTISN)
 
@@ -176,7 +176,7 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 - [Registre national des initiatives](00_caesn/06_portfolio/index.md)
 - [Gouvernance](00_caesn/07_governance/index.md)
 - [Glossaire](00_caesn/10_annexes/glossary.md)
-- [Feuille de route ARTSN](02_artsn/07_lots/index.md)
+- [Feuille de route des lots (portefeuille CAESN)](00_caesn/06_portfolio/feuille-de-route-lots.md) — [réalisation technique ARTSN](02_artsn/07_lots/index.md)
 - [Dictionnaire de données](02_artsn/03_objets-de-donnees/index.md)
 - [Protocole de test interopérabilité](02_artsn/08_annexes/d-protocole-test-interopabilite.md)
 - [SLA et performance](02_artsn/08_annexes/e-sla-performance.md)

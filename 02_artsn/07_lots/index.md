@@ -10,7 +10,9 @@ owner: "Direction du Numérique en Santé"
 tags: ["artsn", "feuille-de-route", "deploiement", "planification", "implementation"]
 ---
 
-# Feuille de route de déploiement progressif de l'ARTSN
+# Réalisation technique ARTSN des lots du portefeuille CAESN
+
+> **Source de vérité des lots** : le périmètre, la séquence et le financement des lots L1–L7 sont définis au niveau du [portefeuille CAESN](../../00_caesn/06_portfolio/feuille-de-route-lots.md) (niveau 1). Cette page détaille la **réalisation technique** de chaque lot : composants, patterns ARTSN et normes CNISN qu'il opérationnalise.
 
 ## Objectif
 
@@ -186,16 +188,7 @@ Le **CMP-07 — Gestionnaire de Sagas** (Couche 4) fait l'objet d'une étude « 
 
 ## 5. Budget estimé
 
-| Lot | Montant estimé (MGA) | Sources |
-|-------|----------------------|---------|
-| Lot L1 : Infrastructure & sécurité | 25 milliards | État, BM, UE, BAD |
-| Lot L2 : Applications terrain | 20 milliards | BM, UE, coopération bilatérale |
-| Lot L3 : Médiation & registres | 18 milliards | BM, BAD, UE |
-| Lot L4 : Analytique & pilotage | 20 milliards | UE, AfDB, État |
-| Lot L5 : Extension & pérennisation | 10 milliards | État, fonds propres |
-| Lot L6 : Interopérabilité transfrontalière | 5 milliards | UE, coopération, OMS AFRO |
-| Lot L7 : Coordination One Health | À arbitrer | Multi-partenaires |
-| **Total** | **98 milliards + L7 à arbitrer** | |
+Le budget par lot est défini et propriété du [portefeuille CAESN](../../00_caesn/06_portfolio/feuille-de-route-lots.md) via la [méthode TCO](../../00_caesn/06_portfolio/financement-tco.md) (niveau 1). L'ARTSN ne fixe pas le budget : il *réalise* les lots. Voir le [devis TCO indicatif par lot](../../00_caesn/06_portfolio/financement-tco.md#devis-indicatif-par-lot-ordre-de-grandeur).
 
 ## 6. Indicateurs de suivi
 
