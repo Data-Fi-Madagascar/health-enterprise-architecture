@@ -14,6 +14,8 @@ applies_to: ["CAP-04", "CAP-05", "CAP-06", "CAP-13", "CAP-14", "CAP-15", "CAP-17
 related: ["VS-02-01", "VS-02-02", "VS-02", "BO-05"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-04"]
 uses: ["CMP-07", "CMP-08", "CMP-11", "CMP-13", "CMP-15", "CMP-17", "CMP-18", "CMP-24", "CMP-25"]
+accesses: ['DO-18', 'DO-19', 'DO-21', 'DO-25', 'DO-26']
+
 ---
 # Veille, prévention et surveillance sanitaire
 

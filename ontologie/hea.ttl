@@ -3,12 +3,13 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix.archimate: <http://www.opengroup.org/xsd/archimate/3.1/> .
 @base <https://healmadagascar.mg/ontologie/hea> .
 
 <https://healmadagascar.mg/ontologie/hea> rdf:type owl:Ontology ;
-    owl:versionInfo "1.0.0" ;
+    owl:versionInfo "2.0.0" ;
     rdfs:label "Ontologie HEA — Architecture d'Entreprise de la Santé Numérique" ;
-    rdfs:comment "Ontologie du référentiel HEA (Madagascar). Générée automatiquement depuis referentiel/**/*.md par compile_rdf.py" .
+    rdfs:comment "Ontologie du référentiel HEA (Madagascar). Conforme à la grammaire ArchiMate 3.1. Générée automatiquement depuis referentiel/**/*.md par compile_rdf.py" .
 
 # ===================================================================
 # Namespace HEA
@@ -21,33 +22,36 @@ hea: rdf:type owl:Namespace ;
 # Classes — Niveau 1 (CAESN)
 # ===================================================================
 
+# --- Business ---
 hea:FluxValeur rdf:type owl:Class ;
     rdfs:label "Flux de valeur" ;
-    rdfs:comment "Flux de valeur national (VS-01..04)" .
+    rdfs:comment "Flux de valeur national (VS-01..4). ArchiMate: Value Stream." .
 
 hea:Capabilite rdf:type owl:Class ;
     rdfs:label "Capabilité CAESN" ;
-    rdfs:comment "Capabilité stratégique du CAESN (CAP-01..18)" .
+    rdfs:comment "Capabilité stratégique du CAESN (CAP-01..18). ArchiMate: Capability." .
 
 hea:Principe rdf:type owl:Class ;
     rdfs:label "Principe" ;
-    rdfs:comment "Principe d'architecture (PA, PD, P-INT)" .
+    rdfs:comment "Principe d'architecture (PA, PD, P-INT). ArchiMate: Principle (extension domain-specific)." .
 
 hea:EtapeValeur rdf:type owl:Class ;
     rdfs:label "Étape de valeur" ;
-    rdfs:comment "Étape au sein d'un flux de valeur (VS-xx-yy)" .
+    rdfs:comment "Étape au sein d'un flux de valeur (VS-xx-yy). ArchiMate: Value Activity." .
 
 hea:ProcessusMetier rdf:type owl:Class ;
     rdfs:label "Processus métier" ;
-    rdfs:comment "Processus métier du secteur santé (PRC-01..12)" .
+    rdfs:comment "Processus métier du secteur santé (PRC-01..13). ArchiMate: Business Process." .
 
+# --- Application ---
 hea:Composant rdf:type owl:Class ;
     rdfs:label "Composant" ;
-    rdfs:comment "Composant applicatif, infrastructure, sécurité ou gouvernance (CMP-01..46)" .
+    rdfs:comment "Composant applicatif, infrastructure, sécurité ou gouvernance (CMP-01..46). ArchiMate: Application Component." .
 
+# --- Motivation ---
 hea:PartiePrenante rdf:type owl:Class ;
     rdfs:label "Partie prenante" ;
-    rdfs:comment "Partie prenante du secteur santé (PP-01..10)" .
+    rdfs:comment "Partie prenante du secteur santé (PP-01..10). ArchiMate: Stakeholder." .
 
 # ===================================================================
 # Classes — Niveau 2 (CNISN)
@@ -55,16 +59,16 @@ hea:PartiePrenante rdf:type owl:Class ;
 
 hea:CapaciteInteroperabilite rdf:type owl:Class ;
     rdfs:label "Capacité d'interopérabilité" ;
-    rdfs:comment "Capacité d'interopérabilité CNISN (CAP-INT-01..16)" ;
+    rdfs:comment "Capacité d'interopérabilité CNISN (CAP-INT-01..16). ArchiMate: Capability." ;
     rdfs:subClassOf hea:Capabilite .
 
 hea:Acteur rdf:type owl:Class ;
     rdfs:label "Acteur" ;
-    rdfs:comment "Acteur métier — organisation ou personne (ACT-01..06)" .
+    rdfs:comment "Acteur métier — organisation ou personne (ACT-01..06). ArchiMate: Business Actor." .
 
 hea:Role rdf:type owl:Class ;
     rdfs:label "Rôle" ;
-    rdfs:comment "Rôle métier — responsabilité (ROL-01..05)" .
+    rdfs:comment "Rôle métier — responsabilité (ROL-01..05). ArchiMate: Business Role." .
 
 # ===================================================================
 # Classes — Niveau 3 (ARTSN)
@@ -72,23 +76,23 @@ hea:Role rdf:type owl:Class ;
 
 hea:Fondation rdf:type owl:Class ;
     rdfs:label "Fondation" ;
-    rdfs:comment "Fondation technique ARTSN (F-1..6)" .
+    rdfs:comment "Fondation technique ARTSN (F-1..6). ArchiMate: Technology Service (extension)." .
 
 hea:Exigence rdf:type owl:Class ;
     rdfs:label "Exigence" ;
-    rdfs:comment "Exigence contextuelle ARTSN (ENF-1..5)" .
+    rdfs:comment "Exigence contextuelle ARTSN (ENF-1..5). ArchiMate: Requirement." .
 
 hea:Chapitre rdf:type owl:Class ;
     rdfs:label "Chapitre ARTSN" ;
-    rdfs:comment "Chapitre de l'architecture de référence technique (ART-0..12)" .
+    rdfs:comment "Chapitre de l'architecture de référence technique (ART-0..12). ArchiMate: Plateau (extension domain-specific)." .
 
 hea:ObjetDeDonnees rdf:type owl:Class ;
     rdfs:label "Objet de données" ;
-    rdfs:comment "Objet de données du référentiel (DO-01..31)" .
+    rdfs:comment "Objet de données du référentiel (DO-01..31). ArchiMate: Data Object." .
 
 hea:ObjetMetier rdf:type owl:Class ;
     rdfs:label "Objet métier" ;
-    rdfs:comment "Objet métier du référentiel (BO-01..07)" .
+    rdfs:comment "Objet métier du référentiel (BO-01..07). ArchiMate: Business Object." .
 
 # ===================================================================
 # Classes — Niveau 4 (PTISN)
@@ -96,15 +100,15 @@ hea:ObjetMetier rdf:type owl:Class ;
 
 hea:Profil rdf:type owl:Class ;
     rdfs:label "Profil technique" ;
-    rdfs:comment "Profil technique d'implémentation (PT-01..19)" .
+    rdfs:comment "Profil technique d'implémentation (PT-01..19). ArchiMate: Product (extension)." .
 
 hea:Service rdf:type owl:Class ;
     rdfs:label "Service" ;
-    rdfs:comment "Service technique transverse (SRV-01..06)" .
+    rdfs:comment "Service technique transverse (SRV-01..06). ArchiMate: Technology Service / Application Service." .
 
 hea:WorkPackage rdf:type owl:Class ;
     rdfs:label "Paquet de travail" ;
-    rdfs:comment "Lot de travail ARTSN (WP-01..07)" .
+    rdfs:comment "Lot de travail ARTSN (WP-01..07). ArchiMate: Work Package." .
 
 # ===================================================================
 # Classes — Niveau 5 (Feuille de route)
@@ -112,61 +116,49 @@ hea:WorkPackage rdf:type owl:Class ;
 
 hea:Plateau rdf:type owl:Class ;
     rdfs:label "Plateau" ;
-    rdfs:comment "État cible de l'architecture (PL-01..03)" .
+    rdfs:comment "État cible de l'architecture (PL-01..03). ArchiMate: Plateau." .
 
 hea:Gap rdf:type owl:Class ;
     rdfs:label "Écart" ;
-    rdfs:comment "Écart entre plateaux (GAP-01..03)" .
+    rdfs:comment "Écart entre plateaux (GAP-01..03). ArchiMate: Gap." .
 
 hea:Lieu rdf:type owl:Class ;
     rdfs:label "Lieu" ;
-    rdfs:comment "Localisation géographique (LOC-01..06)" .
+    rdfs:comment "Localisation géographique (LOC-01..06). ArchiMate: Location." .
 
 # ===================================================================
-# Propriétés de relation (Object Properties)
+# Propriétés de relation — Conformes ArchiMate 3.1
 # ===================================================================
 
-# --- maps_to (correspondance inter-niveaux) ---
-hea:mapsTo rdf:type owl:ObjectProperty ;
-    rdfs:label "correspond à" ;
-    rdfs:comment "Correspondance vers un autre objet du référentiel" ;
-    rdfs:domain hea:Profil ;
-    rdfs:range [
-        rdf:type owl:Class ;
-        owl:unionOf (hea:CapaciteInteroperabilite hea:Chapitre hea:Fondation hea:Composant)
-    ] .
-
-# --- implements (chapitres/objets mis en œuvre) ---
-hea:implements rdf:type owl:ObjectProperty ;
-    rdfs:label "met en œuvre" ;
-    rdfs:comment "Chapitre ou objet mis en œuvre par un profil" ;
-    rdfs:domain hea:Profil ;
-    rdfs:range [
-        rdf:type owl:Class ;
-        owl:unionOf (hea:Chapitre hea:Fondation)
-    ] .
-
-# --- applies_to (objets auxquels il s'applique) ---
-hea:appliesTo rdf:type owl:ObjectProperty ;
-    rdfs:label "s'applique à" ;
-    rdfs:comment "Objet auquel ce composant s'applique" ;
-    rdfs:domain hea:Composant ;
-    rdfs:range [
-        rdf:type owl:Class ;
-        owl:unionOf (hea:Composant hea:Service hea:Capabilite)
-    ] .
-
-# --- related (liens génériques) ---
+# --- Association (lien générique, dernier recours) ---
+# ArchiMate: "The Association relationship models a relationship between elements."
 hea:related rdf:type owl:ObjectProperty, owl:SymmetricProperty ;
     rdfs:label "lié à" ;
-    rdfs:comment "Lien générique entre deux objets" ;
+    rdfs:comment "Association ArchiMate — lien générique entre deux objets" ;
     owl:domain owl:Thing ;
     owl:range owl:Thing .
 
-# --- realizedBy (réalisation ArchiMate) ---
+# --- Serving (un élément sert un autre) ---
+# ArchiMate: "The Serving relationship associates a serving element with the served element."
+# Merge de appliesTo (Composant→Capabilite) + gouverns (Composant→Processus) + serves (Service→Acteur)
+hea:serves rdf:type owl:ObjectProperty ;
+    rdfs:label "sert" ;
+    rdfs:comment "Serving ArchiMate — un élément sert un autre (Composant sert Capabilite/Processus/Service, Service sert Acteur/Rôle)" ;
+    owl:domain [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:Composant hea:Service)
+    ] ;
+    owl:range [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:Capabilite hea:ProcessusMetier hea:Service hea:PartiePrenante hea:Acteur)
+    ] .
+
+# --- Realization (un élément réalise un autre) ---
+# ArchiMate: "The Realization relationship models that an element (typically an active structure element)
+# realizes another element (typically a behavioral element)."
 hea:realizedBy rdf:type owl:ObjectProperty ;
     rdfs:label "réalisé par" ;
-    rdfs:comment "Un objet est réalisé par un service ou composant" ;
+    rdfs:comment "Realization ArchiMate — un élément actif réalise un élément comportemental" ;
     rdfs:domain [
         rdf:type owl:Class ;
         owl:unionOf (hea:Capabilite hea:EtapeValeur)
@@ -176,91 +168,99 @@ hea:realizedBy rdf:type owl:ObjectProperty ;
         owl:unionOf (hea:Service hea:Composant)
     ] .
 
-# --- contributesTo (contribution) ---
-hea:contributesTo rdf:type owl:ObjectProperty ;
-    rdfs:label "contribue à" ;
-    rdfs:comment "Un objet contribue à un autre" ;
-    owl:domain owl:Thing ;
-    owl:range owl:Thing .
+# --- Access (un élément comportemental accède à un objet) ---
+# ArchiMate: "The Access relationship associates a behavioral element with an object that is accessed."
+# Behavioral elements: Process, Function, Interaction, Service.
+# Objects: Data Object, Artifact.
+hea:accesses rdf:type owl:ObjectProperty ;
+    rdfs:label "accède à" ;
+    rdfs:comment "Access ArchiMate — un processus ou service accède à un objet de données" ;
+    rdfs:domain [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:ProcessusMetier hea:Service)
+    ] ;
+    rdfs:range [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:ObjetDeDonnees hea:ObjetMetier)
+    ] .
 
-# --- usedInFlux (utilisé dans un flux de valeur) ---
-hea:usedInFlux rdf:type owl:ObjectProperty ;
-    rdfs:label "utilisé dans le flux" ;
-    rdfs:comment "Un objet de données est utilisé dans un flux de valeur national (VS-01..04)" ;
-    rdfs:subPropertyOf hea:related ;
-    owl:domain hea:ObjetDeDonnees ;
-    owl:range hea:FluxValeur .
-
-# --- performs (exécution) ---
+# --- Assignment (responsabilité) ---
+# ArchiMate: "The Assignment relationship models the assignment of responsibility for performing behavior
+# to an entity that performs behavior."
 hea:performs rdf:type owl:ObjectProperty ;
     rdfs:label "exécute" ;
-    rdfs:comment "Un acteur ou rôle exécute un processus" ;
+    rdfs:comment "Assignment ArchiMate — un acteur ou rôle exécute un processus" ;
     rdfs:domain [
         rdf:type owl:Class ;
         owl:unionOf (hea:Acteur hea:Role)
     ] ;
     rdfs:range hea:ProcessusMetier .
 
-# --- accesses (accès aux données) ---
-hea:accesses rdf:type owl:ObjectProperty ;
-    rdfs:label "accède à" ;
-    rdfs:comment "Un service ou composant accède à un objet de données" ;
-    rdfs:domain [
-        rdf:type owl:Class ;
-        owl:unionOf (hea:Service hea:Composant)
-    ] ;
-    rdfs:range hea:ObjetDeDonnees .
-
-# --- governs (gouvernance) ---
-hea:governs rdf:type owl:ObjectProperty ;
-    rdfs:label "gouverne" ;
-    rdfs:comment "Un composant de gouvernance gouverne un processus ou service" ;
-    rdfs:domain hea:Composant ;
-    rdfs:range [
-        rdf:type owl:Class ;
-        owl:unionOf (hea:ProcessusMetier hea:Service)
-    ] .
-
-# --- represents (représentation ArchiMate) ---
-hea:represents rdf:type owl:ObjectProperty ;
-    rdfs:label "représente" ;
-    rdfs:comment "Un acteur représente une partie prenante" ;
-    rdfs:domain hea:Acteur ;
-    rdfs:range hea:PartiePrenante .
-
-# --- assignedTo (assignation) ---
 hea:assignedTo rdf:type owl:ObjectProperty ;
     rdfs:label "assigné à" ;
-    rdfs:comment "Un rôle est assigné à un acteur" ;
+    rdfs:comment "Assignment ArchiMate — un rôle est assigné à un acteur" ;
     rdfs:domain hea:Role ;
     rdfs:range hea:Acteur .
 
-# --- hasRole (rôle d'un acteur) ---
 hea:hasRole rdf:type owl:ObjectProperty ;
     rdfs:label "a pour rôle" ;
-    rdfs:comment "Un acteur a un rôle" ;
+    rdfs:comment "Assignment ArchiMate — un acteur a un rôle" ;
     rdfs:domain hea:Acteur ;
     rdfs:range hea:Role .
 
-# --- locatedAt (localisation) ---
+# --- Representation (un élément représente un autre) ---
+# ArchiMate: "The Representation relationship models that an element is a representation of another element."
+hea:represents rdf:type owl:ObjectProperty ;
+    rdfs:label "représente" ;
+    rdfs:comment "Representation ArchiMate — un acteur représente une partie prenante" ;
+    rdfs:domain hea:Acteur ;
+    rdfs:range hea:PartiePrenante .
+
+# --- Influence (un élément influence un autre) ---
+# ArchiMate: "The Influence relationship models that an element influences the change or behavior of another element."
+hea:contributesTo rdf:type owl:ObjectProperty ;
+    rdfs:label "contribue à" ;
+    rdfs:comment "Influence ArchiMate — une étape de valeur ou un processus contribue à un flux de valeur" ;
+    rdfs:domain [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:EtapeValeur hea:ProcessusMetier)
+    ] ;
+    rdfs:range hea:FluxValeur .
+
+# --- Mapping inter-niveaux (Association, extension domain-specific) ---
+# Pas de relationship ArchiMate standard pour la correspondance cross-layer.
+# Utilisé comme Association avec contraintes de domaine/range.
+hea:mapsTo rdf:type owl:ObjectProperty ;
+    rdfs:label "correspond à" ;
+    rdfs:comment "Association ArchiMate — correspondance inter-niveaux (Profil→CapInt/Chapitre/Fondation)" ;
+    rdfs:domain hea:Profil ;
+    rdfs:range [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:CapaciteInteroperabilite hea:Chapitre hea:Fondation hea:Composant)
+    ] .
+
+# --- Implements (Realization, extension domain-specific) ---
+# Un profil met en œuvre un chapitre ou une fondation.
+hea:implements rdf:type owl:ObjectProperty ;
+    rdfs:label "met en œuvre" ;
+    rdfs:comment "Realization ArchiMate — un profil met en œuvre un chapitre ou une fondation" ;
+    rdfs:domain hea:Profil ;
+    rdfs:range [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:Chapitre hea:Fondation)
+    ] .
+
+# --- LocatedAt (Association, extension — pas d'équivalent direct ArchiMate) ---
+# ArchiMate a un concept Location mais pas de relationship "locatedAt" standard.
+# Modélisé comme Association.
 hea:locatedAt rdf:type owl:ObjectProperty ;
     rdfs:label "situé à" ;
-    rdfs:comment "Un composant ou service est situé dans un lieu" ;
+    rdfs:comment "Association ArchiMate — un composant ou service est situé dans un lieu" ;
     rdfs:domain [
         rdf:type owl:Class ;
         owl:unionOf (hea:Composant hea:Service)
     ] ;
     rdfs:range hea:Lieu .
-
-# --- serves (service rendu) ---
-hea:serves rdf:type owl:ObjectProperty ;
-    rdfs:label "sert" ;
-    rdfs:comment "Un service sert une partie prenante ou un acteur" ;
-    rdfs:domain hea:Service ;
-    rdfs:range [
-        rdf:type owl:Class ;
-        owl:unionOf (hea:PartiePrenante hea:Acteur)
-    ] .
 
 # ===================================================================
 # Propriétés de données (Datatype Properties)
@@ -323,9 +323,3 @@ hea:CapIntMinMapsTo rdf:type owl:Restriction ;
     owl:onProperty hea:mapsTo ;
     owl:minCardinality 1 ;
     rdfs:subClassOf hea:CapaciteInteroperabilite .
-
-# ===================================================================
-# Équivalences de classe (mapping type YAML → classe OWL)
-# ===================================================================
-
-# mapping type:profil → hea:Profil ( déjà couvert par la restriction ci-dessus )

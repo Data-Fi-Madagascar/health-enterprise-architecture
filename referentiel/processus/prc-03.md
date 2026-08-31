@@ -14,6 +14,8 @@ applies_to: ["CAP-02", "CAP-03", "CAP-04", "CAP-13", "CAP-14", "CAP-15"]
 related: ["VS-01-06", "VS-01-07", "VS-01", "BO-02"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-03"]
 uses: ["CMP-19", "CMP-21"]
+accesses: ['DO-03', 'DO-05', 'DO-10']
+
 ---
 # Continuité, suivi et qualité des soins
 

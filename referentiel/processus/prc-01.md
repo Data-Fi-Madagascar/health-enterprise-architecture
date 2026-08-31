@@ -15,6 +15,8 @@ related: ["VS-01-01", "VS-01-02", "VS-01", "BO-01"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-01"]
 uses: ["CMP-19", "CMP-21", "CMP-22"]
 performed_by: ["ROL-01", "ACT-01"]
+accesses: ['DO-01', 'DO-03', 'DO-04', 'DO-05']
+
 ---
 # Accès, orientation et admission du patient
 

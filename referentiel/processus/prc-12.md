@@ -14,6 +14,8 @@ applies_to: ["CAP-03", "CAP-08", "CAP-13", "CAP-14", "CAP-15", "CAP-16"]
 related: ["VS-04-06", "VS-04-07", "VS-04", "BO-06"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-12"]
 uses: ["CMP-01"]
+accesses: ['DO-25', 'DO-28']
+
 ---
 # Redevabilité et amélioration continue
 

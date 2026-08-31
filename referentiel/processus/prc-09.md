@@ -15,6 +15,8 @@ related: ["VS-03-05", "VS-03-06", "VS-03-07", "VS-03", "BO-04"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-09"]
 uses: ["CMP-03", "CMP-04", "CMP-12"]
 performed_by: ["ROL-03"]
+accesses: ['DO-16', 'DO-17']
+
 ---
 # Remboursement et régulation des mécanismes
 

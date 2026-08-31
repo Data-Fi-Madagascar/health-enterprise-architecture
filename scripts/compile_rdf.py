@@ -58,25 +58,24 @@ TYPE_TO_CLASS = {
 RELATION_FIELDS = ["maps_to", "implements", "applies_to", "related",
                    "realized_by", "contributes_to", "performs", "accesses",
                    "governs", "represents", "assigned_to", "has_role",
-                   "located_at", "serves", "vs"]
+                   "located_at", "serves"]
 
-# Property name mapping (snake_case → camelCase)
+# Property name mapping (snake_case → camelCase ArchiMate)
 PROPERTY_MAP = {
     "maps_to": "mapsTo",
     "implements": "implements",
-    "applies_to": "appliesTo",
+    "applies_to": "serves",       # Serving ArchiMate
     "related": "related",
     "realized_by": "realizedBy",
     "contributes_to": "contributesTo",
     "performs": "performs",
     "accesses": "accesses",
-    "governs": "governs",
+    "governs": "serves",          # Serving ArchiMate (merge with applies_to)
     "represents": "represents",
     "assigned_to": "assignedTo",
     "has_role": "hasRole",
     "located_at": "locatedAt",
     "serves": "serves",
-    "vs": "usedInFlux",
 }
 
 
@@ -178,6 +177,31 @@ def collect_objects():
     return objects
 
 
+def resolve_property(rel, source_type, target):
+    """Résout la propriété RDF en fonction du type source et de la cible.
+    
+    ArchiMate strict : même champ frontmatter, propriété différente selon le contexte.
+    - applies_to sur Composant → serves (Serving)
+    - applies_to sur Capabilite → contributesTo (Influence) quand cible est FluxValeur
+    - governs → serves (Serving)
+    """
+    base = PROPERTY_MAP.get(rel, rel)
+
+    # Type-dependent overrides
+    if rel == "applies_to":
+        if source_type in ("capabilite", "capacite-interoperabilite", "principe"):
+            # Capabilite/Principe → FluxValeur = Influence (contributesTo)
+            if target.startswith("VS-"):
+                return "contributesTo"
+            # Capabilite → Capabilite = Association (related)
+            if target.startswith("CAP-"):
+                return "related"
+        # Composant → Capabilite/Service = Serving (serves)
+        return "serves"
+
+    return base
+
+
 def generate_rdf(objects, output_path):
     """Génère un fichier Turtle RDF à partir des objets du référentiel."""
     lines = []
@@ -222,9 +246,9 @@ def generate_rdf(objects, output_path):
         # Relations (object properties)
         for rel in RELATION_FIELDS:
             if rel in obj:
-                prop = PROPERTY_MAP.get(rel, rel)
                 targets = obj[rel]
                 for target in targets:
+                    prop = resolve_property(rel, obj["type"], target)
                     lines.append("    hea:%s hea:%s ;" % (prop, target))
 
         # Dernière ligne : terminer par point au lieu de point-virgule

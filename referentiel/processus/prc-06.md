@@ -14,6 +14,8 @@ applies_to: ["CAP-03", "CAP-13", "CAP-14", "CAP-15"]
 related: ["VS-02-06", "VS-02-07", "VS-02", "BO-01"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-06"]
 uses: ["CMP-07", "CMP-11", "CMP-14", "CMP-15", "CMP-17", "CMP-18", "CMP-19"]
+accesses: ['DO-01', 'DO-04', 'DO-25']
+
 ---
 # Clôture et capitalisation des épisodes
 

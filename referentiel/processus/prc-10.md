@@ -14,6 +14,8 @@ applies_to: ["CAP-08", "CAP-09", "CAP-12", "CAP-13", "CAP-15", "CAP-16"]
 related: ["VS-04-01", "VS-04-02", "VS-04-03", "VS-04", "BO-03", "BO-06"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-10"]
 uses: ["CMP-01", "CMP-12", "CMP-23"]
+accesses: ['DO-25', 'DO-26', 'DO-27']
+
 ---
 # Planification et allocation des ressources
 
