@@ -18,7 +18,7 @@
   "copyright": "Ministère de la Santé Publique - Madagascar",
   "content": "complete",
   "caseSensitive": true,
-  "count": 6,
+  "count": 5,
   "concept": [
     {
       "code": "actif",
@@ -84,21 +84,6 @@
       "code": "projet",
       "display": "Projet",
       "definition": "Formation sanitaire en cours de construction ou de mise en service",
-      "property": [
-        {
-          "code": "status",
-          "valueCode": "active"
-        },
-        {
-          "code": "inactive",
-          "valueBoolean": false
-        }
-      ]
-    },
-    {
-      "code": "- `status` : statut du concept dans le code system (active",
-      "display": "deprecated",
-      "definition": "retired)",
       "property": [
         {
           "code": "status",

@@ -9,8 +9,7 @@
     "inactif",
     "temporaire",
     "ferme",
-    "projet",
-    "- `status` : statut du concept dans le code system (active"
+    "projet"
   ],
   "default": "actif",
   "x-hea-nomenclature": "FOSA-STATUS",

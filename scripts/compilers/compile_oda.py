@@ -61,16 +61,19 @@ def list_value(raw):
 def extract_table_from_body(body):
     """Extrait les lignes de tableau Markdown (| code | libellé | ...)."""
     rows = []
-    in_table = False
     for line in body.split("\n"):
-        if "|" in line and "---" not in line:
-            parts = [p.strip() for p in line.split("|") if p.strip()]
-            if len(parts) >= 2:
-                # Ignorer l'en-tête du tableau
-                if parts[0] not in ("Code", "---", "----"):
-                    rows.append(parts)
-        elif in_table and "|" not in line:
-            in_table = False
+        stripped = line.strip()
+        if not stripped.startswith("|"):
+            continue
+        # Skip separator rows (|---|---|)
+        if re.match(r"^\|[\s\-:|]+\|$", stripped):
+            continue
+        parts = [p.strip() for p in stripped.split("|") if p.strip()]
+        if len(parts) >= 3:
+            # Skip header row
+            if parts[0] in ("Code", "code", "---", "----"):
+                continue
+            rows.append(parts)
     return rows
 
 
