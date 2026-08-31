@@ -1,0 +1,115 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix hea: <https://healmadagascar.mg/ontologie/hea#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ===================================================================
+# Shapes SHACL — Validation du référentiel HEA
+# ===================================================================
+
+# --- Shape générique : tout objet HEA doit avoir id, title, status, owner ---
+hea:ObjetShape a sh:NodeShape ;
+    sh:target [
+        a rdf:List ;
+        sh:class hea:Profil ;
+        sh:class hea:CapaciteInteroperabilite ;
+        sh:class hea:Capabilite ;
+        sh:class hea:Chapitre ;
+        sh:class hea:Composant ;
+        sh:class hea:Fondation ;
+        sh:class hea:Service ;
+    ] ;
+    sh:property [
+        sh:path hea:id ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:message "Tout objet HEA doit avoir un identifiant (hea:id)" ;
+    ] ;
+    sh:property [
+        sh:path hea:title ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:message "Tout objet HEA doit avoir un titre (hea:title)" ;
+    ] ;
+    sh:property [
+        sh:path hea:status ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:in ("draft" "active" "stable" "candidate" "deprecated") ;
+        sh:message "Le statut doit être draft, active, stable, candidate ou deprecated" ;
+    ] ;
+    sh:property [
+        sh:path hea:owner ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:message "Tout objet HEA doit avoir un propriétaire (hea:owner)" ;
+    ] ;
+    sh:property [
+        sh:path hea:niveau ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 1 ;
+        sh:maxInclusive 5 ;
+        sh:message "Le niveau doit être entre 1 et 5" ;
+    ] .
+
+# --- Shape Profil : au moins 1 mapsTo ---
+hea:ProfilShape a sh:NodeShape ;
+    sh:targetClass hea:Profil ;
+    sh:property [
+        sh:path hea:mapsTo ;
+        sh:minCount 1 ;
+        sh:message "Tout profil technique (PT) doit avoir au moins 1 maps_to vers une capacité ou un chapitre" ;
+    ] ;
+    sh:property [
+        sh:path hea:implements ;
+        sh:minCount 1 ;
+        sh:message "Tout profil technique (PT) doit implémenter au moins 1 chapitre ARTSN" ;
+    ] .
+
+# --- Shape CapaciteInteroperabilite : au moins 1 mapsTo vers CAP ---
+hea:CapIntShape a sh:NodeShape ;
+    sh:targetClass hea:CapaciteInteroperabilite ;
+    sh:property [
+        sh:path hea:mapsTo ;
+        sh:minCount 1 ;
+        sh:message "Toute capacité d'interopérabilité (CAP-INT) doit mapper vers au moins 1 capabilité CAESN" ;
+    ] .
+
+# --- Shape Capabilite : doit avoir au moins 1 realizedBy ---
+hea:CapabiliteShape a sh:NodeShape ;
+    sh:targetClass hea:Capabilite ;
+    sh:property [
+        sh:path hea:id ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:pattern "^CAP-\\d{2}$" ;
+        sh:message "L'ID d'une capabilité CAESN doit être au format CAP-NN" ;
+    ] .
+
+# --- Shape Chapitre : doit avoir un ID ART-* ---
+hea:ChapitreShape a sh:NodeShape ;
+    sh:targetClass hea:Chapitre ;
+    sh:property [
+        sh:path hea:id ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:pattern "^ART-\\d+[A-Z]?$" ;
+        sh:message "L'ID d'un chapitre ARTSN doit être au format ART-N ou ART-NA" ;
+    ] .
+
+# --- Shape Composant : pas de maps_to vers un niveau inférieur ---
+hea:ComposantShape a sh:NodeShape ;
+    sh:targetClass hea:Composant ;
+    sh:property [
+        sh:path hea:id ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:pattern "^CMP-\\d{2}$" ;
+        sh:message "L'ID d'un composant doit être au format CMP-NN" ;
+    ] .

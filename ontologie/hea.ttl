@@ -1,0 +1,323 @@
+@prefix hea: <https://healmadagascar.mg/ontologie/hea#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <https://healmadagascar.mg/ontologie/hea> .
+
+<https://healmadagascar.mg/ontologie/hea> rdf:type owl:Ontology ;
+    owl:versionInfo "1.0.0" ;
+    rdfs:label "Ontologie HEA — Architecture d'Entreprise de la Santé Numérique" ;
+    rdfs:comment "Ontologie du référentiel HEA (Madagascar). Générée automatiquement depuis referentiel/**/*.md par compile_rdf.py" .
+
+# ===================================================================
+# Namespace HEA
+# ===================================================================
+
+hea: rdf:type owl:Namespace ;
+    owl:iri <https://healmadagascar.mg/ontologie/hea#> .
+
+# ===================================================================
+# Classes — Niveau 1 (CAESN)
+# ===================================================================
+
+hea:FluxValeur rdf:type owl:Class ;
+    rdfs:label "Flux de valeur" ;
+    rdfs:comment "Flux de valeur national (VS-01..04)" .
+
+hea:Capabilite rdf:type owl:Class ;
+    rdfs:label "Capabilité CAESN" ;
+    rdfs:comment "Capabilité stratégique du CAESN (CAP-01..18)" .
+
+hea:Principe rdf:type owl:Class ;
+    rdfs:label "Principe" ;
+    rdfs:comment "Principe d'architecture (PA, PD, P-INT)" .
+
+hea:EtapeValeur rdf:type owl:Class ;
+    rdfs:label "Étape de valeur" ;
+    rdfs:comment "Étape au sein d'un flux de valeur (VS-xx-yy)" .
+
+hea:ProcessusMetier rdf:type owl:Class ;
+    rdfs:label "Processus métier" ;
+    rdfs:comment "Processus métier du secteur santé (PRC-01..12)" .
+
+hea:Composant rdf:type owl:Class ;
+    rdfs:label "Composant" ;
+    rdfs:comment "Composant applicatif, infrastructure, sécurité ou gouvernance (CMP-01..46)" .
+
+hea:PartiePrenante rdf:type owl:Class ;
+    rdfs:label "Partie prenante" ;
+    rdfs:comment "Partie prenante du secteur santé (PP-01..10)" .
+
+# ===================================================================
+# Classes — Niveau 2 (CNISN)
+# ===================================================================
+
+hea:CapaciteInteroperabilite rdf:type owl:Class ;
+    rdfs:label "Capacité d'interopérabilité" ;
+    rdfs:comment "Capacité d'interopérabilité CNISN (CAP-INT-01..16)" ;
+    rdfs:subClassOf hea:Capabilite .
+
+hea:Acteur rdf:type owl:Class ;
+    rdfs:label "Acteur" ;
+    rdfs:comment "Acteur métier — organisation ou personne (ACT-01..06)" .
+
+hea:Role rdf:type owl:Class ;
+    rdfs:label "Rôle" ;
+    rdfs:comment "Rôle métier — responsabilité (ROL-01..05)" .
+
+# ===================================================================
+# Classes — Niveau 3 (ARTSN)
+# ===================================================================
+
+hea:Fondation rdf:type owl:Class ;
+    rdfs:label "Fondation" ;
+    rdfs:comment "Fondation technique ARTSN (F-1..6)" .
+
+hea:Exigence rdf:type owl:Class ;
+    rdfs:label "Exigence" ;
+    rdfs:comment "Exigence contextuelle ARTSN (ENF-1..5)" .
+
+hea:Chapitre rdf:type owl:Class ;
+    rdfs:label "Chapitre ARTSN" ;
+    rdfs:comment "Chapitre de l'architecture de référence technique (ART-0..12)" .
+
+hea:ObjetDeDonnees rdf:type owl:Class ;
+    rdfs:label "Objet de données" ;
+    rdfs:comment "Objet de données du référentiel (DO-01..31)" .
+
+hea:ObjetMetier rdf:type owl:Class ;
+    rdfs:label "Objet métier" ;
+    rdfs:comment "Objet métier du référentiel (BO-01..07)" .
+
+# ===================================================================
+# Classes — Niveau 4 (PTISN)
+# ===================================================================
+
+hea:Profil rdf:type owl:Class ;
+    rdfs:label "Profil technique" ;
+    rdfs:comment "Profil technique d'implémentation (PT-01..19)" .
+
+hea:Service rdf:type owl:Class ;
+    rdfs:label "Service" ;
+    rdfs:comment "Service technique transverse (SRV-01..06)" .
+
+hea:WorkPackage rdf:type owl:Class ;
+    rdfs:label "Paquet de travail" ;
+    rdfs:comment "Lot de travail ARTSN (WP-01..07)" .
+
+# ===================================================================
+# Classes — Niveau 5 (Feuille de route)
+# ===================================================================
+
+hea:Plateau rdf:type owl:Class ;
+    rdfs:label "Plateau" ;
+    rdfs:comment "État cible de l'architecture (PL-01..03)" .
+
+hea:Gap rdf:type owl:Class ;
+    rdfs:label "Écart" ;
+    rdfs:comment "Écart entre plateaux (GAP-01..03)" .
+
+hea:Lieu rdf:type owl:Class ;
+    rdfs:label "Lieu" ;
+    rdfs:comment "Localisation géographique (LOC-01..06)" .
+
+# ===================================================================
+# Propriétés de relation (Object Properties)
+# ===================================================================
+
+# --- maps_to (correspondance inter-niveaux) ---
+hea:mapsTo rdf:type owl:ObjectProperty ;
+    rdfs:label "correspond à" ;
+    rdfs:comment "Correspondance vers un autre objet du référentiel" ;
+    rdfs:domain hea:Profil ;
+    rdfs:range [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:CapaciteInteroperabilite hea:Chapitre hea:Fondation hea:Composant)
+    ] .
+
+# --- implements (chapitres/objets mis en œuvre) ---
+hea:implements rdf:type owl:ObjectProperty ;
+    rdfs:label "met en œuvre" ;
+    rdfs:comment "Chapitre ou objet mis en œuvre par un profil" ;
+    rdfs:domain hea:Profil ;
+    rdfs:range [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:Chapitre hea:Fondation)
+    ] .
+
+# --- applies_to (objets auxquels il s'applique) ---
+hea:appliesTo rdf:type owl:ObjectProperty ;
+    rdfs:label "s'applique à" ;
+    rdfs:comment "Objet auquel ce composant s'applique" ;
+    rdfs:domain hea:Composant ;
+    rdfs:range [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:Composant hea:Service hea:Capabilite)
+    ] .
+
+# --- related (liens génériques) ---
+hea:related rdf:type owl:ObjectProperty, owl:SymmetricProperty ;
+    rdfs:label "lié à" ;
+    rdfs:comment "Lien générique entre deux objets" ;
+    owl:domain owl:Thing ;
+    owl:range owl:Thing .
+
+# --- realizedBy (réalisation ArchiMate) ---
+hea:realizedBy rdf:type owl:ObjectProperty ;
+    rdfs:label "réalisé par" ;
+    rdfs:comment "Un objet est réalisé par un service ou composant" ;
+    rdfs:domain [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:Capabilite hea:EtapeValeur)
+    ] ;
+    rdfs:range [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:Service hea:Composant)
+    ] .
+
+# --- contributesTo (contribution) ---
+hea:contributesTo rdf:type owl:ObjectProperty ;
+    rdfs:label "contribue à" ;
+    rdfs:comment "Un objet contribue à un autre" ;
+    owl:domain owl:Thing ;
+    owl:range owl:Thing .
+
+# --- performs (exécution) ---
+hea:performs rdf:type owl:ObjectProperty ;
+    rdfs:label "exécute" ;
+    rdfs:comment "Un acteur ou rôle exécute un processus" ;
+    rdfs:domain [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:Acteur hea:Role)
+    ] ;
+    rdfs:range hea:ProcessusMetier .
+
+# --- accesses (accès aux données) ---
+hea:accesses rdf:type owl:ObjectProperty ;
+    rdfs:label "accède à" ;
+    rdfs:comment "Un service ou composant accède à un objet de données" ;
+    rdfs:domain [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:Service hea:Composant)
+    ] ;
+    rdfs:range hea:ObjetDeDonnees .
+
+# --- governs (gouvernance) ---
+hea:governs rdf:type owl:ObjectProperty ;
+    rdfs:label "gouverne" ;
+    rdfs:comment "Un composant de gouvernance gouverne un processus ou service" ;
+    rdfs:domain hea:Composant ;
+    rdfs:range [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:ProcessusMetier hea:Service)
+    ] .
+
+# --- represents (représentation ArchiMate) ---
+hea:represents rdf:type owl:ObjectProperty ;
+    rdfs:label "représente" ;
+    rdfs:comment "Un acteur représente une partie prenante" ;
+    rdfs:domain hea:Acteur ;
+    rdfs:range hea:PartiePrenante .
+
+# --- assignedTo (assignation) ---
+hea:assignedTo rdf:type owl:ObjectProperty ;
+    rdfs:label "assigné à" ;
+    rdfs:comment "Un rôle est assigné à un acteur" ;
+    rdfs:domain hea:Role ;
+    rdfs:range hea:Acteur .
+
+# --- hasRole (rôle d'un acteur) ---
+hea:hasRole rdf:type owl:ObjectProperty ;
+    rdfs:label "a pour rôle" ;
+    rdfs:comment "Un acteur a un rôle" ;
+    rdfs:domain hea:Acteur ;
+    rdfs:range hea:Role .
+
+# --- locatedAt (localisation) ---
+hea:locatedAt rdf:type owl:ObjectProperty ;
+    rdfs:label "situé à" ;
+    rdfs:comment "Un composant ou service est situé dans un lieu" ;
+    rdfs:domain [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:Composant hea:Service)
+    ] ;
+    rdfs:range hea:Lieu .
+
+# --- serves (service rendu) ---
+hea:serves rdf:type owl:ObjectProperty ;
+    rdfs:label "sert" ;
+    rdfs:comment "Un service sert une partie prenante ou un acteur" ;
+    rdfs:domain hea:Service ;
+    rdfs:range [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:PartiePrenante hea:Acteur)
+    ] .
+
+# ===================================================================
+# Propriétés de données (Datatype Properties)
+# ===================================================================
+
+hea:id rdf:type owl:DatatypeProperty ;
+    rdfs:label "identifiant" ;
+    rdfs:comment "Identifiant normalisé unique de l'objet" ;
+    owl:domain owl:Thing ;
+    rdfs:range xsd:string .
+
+hea:title rdf:type owl:DatatypeProperty ;
+    rdfs:label "titre" ;
+    rdfs:comment "Titre canonique de l'objet" ;
+    owl:domain owl:Thing ;
+    rdfs:range xsd:string .
+
+hea:status rdf:type owl:DatatypeProperty ;
+    rdfs:label "statut" ;
+    rdfs:comment "Statut de maturité (draft, active, stable, candidate, deprecated)" ;
+    owl:domain owl:Thing ;
+    rdfs:range xsd:string .
+
+hea:owner rdf:type owl:DatatypeProperty ;
+    rdfs:label "propriétaire" ;
+    rdfs:comment "Entité responsable de l'objet" ;
+    owl:domain owl:Thing ;
+    rdfs:range xsd:string .
+
+hea:version rdf:type owl:DatatypeProperty ;
+    rdfs:label "version" ;
+    rdfs:comment "Version de l'objet" ;
+    owl:domain owl:Thing ;
+    rdfs:range xsd:string .
+
+hea:niveau rdf:type owl:DatatypeProperty ;
+    rdfs:label "niveau" ;
+    rdfs:comment "Niveau de référence : 1 (CAESN), 2 (CNISN), 3 (ARTSN), 4 (PTISN)" ;
+    owl:domain owl:Thing ;
+    rdfs:range xsd:integer .
+
+hea:tag rdf:type owl:DatatypeProperty ;
+    rdfs:label "étiquette" ;
+    rdfs:comment "Étiquette de catégorisation" ;
+    owl:domain owl:Thing ;
+    rdfs:range xsd:string .
+
+# ===================================================================
+# Restrictions de cardinalité (owl:Restriction)
+# ===================================================================
+
+# Tout profil doit avoir au moins 1 mapsTo
+hea:ProfilMinMapsTo rdf:type owl:Restriction ;
+    owl:onProperty hea:mapsTo ;
+    owl:minCardinality 1 ;
+    rdfs:subClassOf hea:Profil .
+
+# Toute capabilité d'interopérabilité doit avoir au moins 1 mapsTo vers un CAP
+hea:CapIntMinMapsTo rdf:type owl:Restriction ;
+    owl:onProperty hea:mapsTo ;
+    owl:minCardinality 1 ;
+    rdfs:subClassOf hea:CapaciteInteroperabilite .
+
+# ===================================================================
+# Équivalences de classe (mapping type YAML → classe OWL)
+# ===================================================================
+
+# mapping type:profil → hea:Profil ( déjà couvert par la restriction ci-dessus )

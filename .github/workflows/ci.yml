@@ -1,0 +1,48 @@
+name: CI — Validation HEA
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Validate referentiel graph
+        run: python3 scripts/validate_ref.py
+
+      - name: Check wrappers idempotence
+        run: python3 scripts/build_wrappers.py --check
+
+      - name: Check broken links
+        run: python3 scripts/check_links.py
+
+      - name: Compile RDF (YAML → Turtle)
+        run: python3 scripts/compile_rdf.py
+
+      - name: Validate SHACL shapes
+        run: python3 scripts/compile_rdf.py --validate
+
+      - name: Upload RDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hea-rdf
+          path: dist/hea.ttl
+          retention-days: 30

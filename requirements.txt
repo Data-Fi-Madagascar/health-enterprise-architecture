@@ -1,0 +1,10 @@
+# Dépendances Python pour le pipeline HEA
+# Usage: pip install -r requirements.txt
+
+# Pipeline RDF/OWL (Phase 2)
+rdflib>=7.0
+pyshacl>=0.25
+pyyaml>=6.0
+
+# Validation (déjà utilisé par validate_ref.py via stdlib)
+# pyyaml est aussi utilisé pour le parsing YAML frontmatter

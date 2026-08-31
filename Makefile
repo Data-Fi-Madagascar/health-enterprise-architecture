@@ -23,7 +23,7 @@ DATE  := $(shell date +%F)
 
 export TAG_VERSION=$(VERSION)
 
-.PHONY: pdf docx public wrappers check clean release note validate
+.PHONY: pdf docx public wrappers check clean release note validate rdf
 
 pdf:
 	@echo "==> Génération des 5 PDF (version $(VERSION), moteur $(ENGINE))"
@@ -43,15 +43,24 @@ wrappers:
 	$(PY) scripts/build_wrappers.py
 
 # Garde-fou : enveloppes à jour (A1/A4) + 0 lien relatif cassé (A2) + graphe de
-# relations sans îlot ni cible non résolue (validate_ref.py).
+# relations sans îlot ni cible non résolue (validate_ref.py) + RDF/SHACL validé.
 # Lecture seule : ne régénère pas, pour détecter toute édition d'un bloc généré.
 check:
 	$(PY) scripts/build_wrappers.py --check
 	$(PY) scripts/check_links.py
 	$(PY) scripts/validate_ref.py
+	$(PY) scripts/compile_rdf.py
+	$(PY) scripts/compile_rdf.py --validate
 
 clean:
 	rm -rf dist
+
+# Compilation RDF : transforme le référentiel YAML/Markdown en graphe Turtle RDF/OWL
+rdf:
+	@echo "==> Compilation RDF (YAML → Turtle)"
+	$(PY) scripts/compile_rdf.py
+	@echo "==> Validation SHACL"
+	$(PY) scripts/compile_rdf.py --validate
 
 # Validation du graphe de relations du référentiel (îlots, cibles non résolues,
 # liens relatifs cassés). Indépendant de build_wrappers --check (voir note ci-dessous).

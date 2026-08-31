@@ -35,6 +35,13 @@ jobs:
         run: |
           python3 scripts/build_wrappers.py --check
           python3 scripts/check_links.py
+          python3 scripts/validate_ref.py
+        working-directory: ${{ github.workspace }}
+
+      - name: Compile RDF + SHACL validation
+        run: |
+          python3 scripts/compile_rdf.py
+          python3 scripts/compile_rdf.py --validate
         working-directory: ${{ github.workspace }}
 
       - name: Build DOCXs

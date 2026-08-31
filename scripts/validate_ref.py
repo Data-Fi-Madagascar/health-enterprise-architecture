@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Valide la cohérence du référentiel HEA : détection des objets isolés (îlots).
+"""Valide la cohérence du référentiel HEA : îlots, liens cassés, chaîne PT→CAP.
 
 Complète check_links.py (liens relatifs cassés) en vérifiant le *graphe de
 relations* entre objets du référentiel :
@@ -9,6 +9,9 @@ relations* entre objets du référentiel :
   - îlots : objets sans aucune arête (degré sortant + entrant = 0)
   - cibles non résolues : une relation pointe vers un id inexistant
   - liens Markdown relatifs cassés (reprend le critère A2 de check_links.py)
+  - chaîne PT → CAP-INT → CAP : tout profil doit aboutir à une capabilité CAESN
+  - cohérence des types dans maps_to (pas de mélange de niveaux)
+  - couverture des 18 capabilités CAESN par les profils
 
 Historique : le validateur initial (/tmp/validate_ref.rb) ne détectait pas les
 objets sans aucune arête, ce qui avait masqué les 29 principes CAESN isolés
@@ -37,6 +40,21 @@ RELATION_KEYS = ["maps_to", "implements", "applies_to", "related"]
 
 # Îlots légitimes attendus (candidats non encore reliés) — ne font pas échouer.
 KNOWN_ISLANDS = {"art-10", "art-11", "f-5", "f-6"}
+
+# Types de niveaux hiérarchiques pour vérification de chaîne.
+TYPE_PROFIL = "profil"               # niveau 4 (PT-*)
+TYPE_CAPACITE = "capacite"            # niveau 2 (CAP-INT-*)
+TYPE_CAPABILITE = "capabilite"        # niveau 1 (CAP-*)
+TYPE_CHAPITRE = "chapitre"            # niveau 3 (ART-*)
+TYPE_COMPOSANT = "composant-applicatif"  # et variantes infra/securite/gouvernance
+
+# Types autorisés dans maps_to par type source (niveau cible attendu).
+# Maps_to de niveau 4 (profil) → niveaux 2,3 uniquement.
+# Maps_to de niveau 2 (capacite) → niveau 1 uniquement.
+ALLOWED_MAPS_TO_LEVELS = {
+    TYPE_PROFIL: {"2", "3", "4"},      # PT peut mapper vers CAP-INT, ART, F
+    TYPE_CAPACITE: {"1"},               # CAP-INT ne doit mapper que vers CAP
+}
 
 SCHEME_RE = re.compile(r"^[a-zA-Z][a-zA-Z0-9+.-]*://")
 LINK_RE = re.compile(r"!?\[[^]]*\]\(([^)]*)\)")
@@ -135,6 +153,32 @@ def parse_id(fm):
     return m.group(1).strip().strip('"').strip("'")
 
 
+def parse_type(fm):
+    m = re.search(r"^type:\s*(.+)$", fm, re.MULTILINE)
+    if not m:
+        return None
+    return m.group(1).strip().strip('"').strip("'")
+
+
+def id_prefix(oid):
+    """Extrait le préfixe d'un ID (ex. 'CAP' depuis 'CAP-INT-01' → 'CAP-INT')."""
+    return oid.rsplit("-", 1)[0] if "-" in oid else oid
+
+
+def id_niveau(oid):
+    """Détermine le niveau d'un ID à partir de son préfixe."""
+    p = oid.split("-")[0] if "-" in oid else oid
+    if p in ("CAP",) and "INT" not in oid:
+        return "1"
+    if p == "CAP" and "INT" in oid:
+        return "2"
+    if p == "PT":
+        return "4"
+    if p in ("ART", "F", "ENF"):
+        return "3"
+    return None
+
+
 def iter_md(root, bases):
     for base in bases:
         d = os.path.join(root, base)
@@ -145,6 +189,165 @@ def iter_md(root, bases):
             for fn in filenames:
                 if fn.endswith(".md"):
                     yield os.path.join(dirpath, fn)
+
+
+# ---------------------------------------------------------------------------
+# Vérifications de cohérence multi-niveaux (Phase 1)
+# ---------------------------------------------------------------------------
+
+def check_transitive_chain(objects, id_to_file):
+    """Vérifie que chaque PT aboutit à un CAP via chaîne PT→CAP-INT→CAP.
+
+    Renvoie (warnings, errors) où chaque entrée est (file, message).
+    """
+    warnings = []
+    errors = []
+
+    profiles = {oid: o for oid, o in objects.items()
+                if o.get("type") == TYPE_PROFIL}
+    capacites = {oid: o for oid, o in objects.items()
+                 if o.get("type") == TYPE_CAPACITE}
+    capabilites = {oid: o for oid, o in objects.items()
+                   if o.get("type") == TYPE_CAPABILITE}
+
+    for oid, o in sorted(profiles.items()):
+        maps = o["out"] & set(objects.keys())
+        cap_int_targets = [t for t in maps if objects[t].get("type") == TYPE_CAPACITE]
+        cap_targets = [t for t in maps if objects[t].get("type") == TYPE_CAPABILITE]
+
+        if not cap_int_targets and not cap_targets:
+            rel_path = os.path.relpath(o["file"], REPO_ROOT)
+            errors.append((rel_path, oid,
+                           "Profil sans maps_to vers CAP-INT ou CAP : "
+                           "chaîne PT→CAP rompue"))
+            continue
+
+        # Vérifier la chaîne transitive pour chaque CAP-INT ciblé
+        for cap_int_id in cap_int_targets:
+            cap_int_obj = objects.get(cap_int_id)
+            if not cap_int_obj:
+                continue
+            cap_int_maps = cap_int_obj["out"] & set(objects.keys())
+            cap_from_int = [t for t in cap_int_maps
+                            if objects[t].get("type") == TYPE_CAPABILITE]
+            if not cap_from_int:
+                rel_path = os.path.relpath(o["file"], REPO_ROOT)
+                warnings.append((rel_path, oid,
+                                 "Chaîne PT→%s→CAP incomplète : "
+                                 "%s n'a pas de maps_to vers CAP" % (cap_int_id, cap_int_id)))
+
+    return warnings, errors
+
+
+def check_type_consistency(objects, id_to_file):
+    """Vérifie que les cibles de maps_to sont du bon type/niveau.
+
+    Pour les CAP-INT : maps_to contient à la fois des principes (P-INT-*)
+    et des capabilités (CAP-*). Seule l'absence totale de CAP-* est un problème.
+    Pour les PT : un mappe vers un CAP-* (niveau 1) au lieu d'un CAP-INT-* est suspect.
+
+    Renvoie (warnings, errors).
+    """
+    warnings = []
+    errors = []
+
+    # --- Vérifier que chaque CAP-INT a au moins un CAP-* dans maps_to ---
+    capacites = {oid: o for oid, o in objects.items()
+                 if o.get("type") == TYPE_CAPACITE}
+    for oid, o in sorted(capacites.items()):
+        cap_targets = [t for t in o["out"] & set(objects.keys())
+                       if objects.get(t, {}).get("type") == TYPE_CAPABILITE]
+        if not cap_targets:
+            rel_path = os.path.relpath(o["file"], REPO_ROOT)
+            warnings.append((rel_path, oid,
+                             "CAP-INT sans maps_to vers un CAP : "
+                             "chaîne CAP-INT→CAP manquante"))
+
+    # --- Vérifier que les PT ne mélangent pas les niveaux dans maps_to ---
+    profiles = {oid: o for oid, o in objects.items()
+                if o.get("type") == TYPE_PROFIL}
+    for oid, o in sorted(profiles.items()):
+        for target_id in o["out"]:
+            target_obj = objects.get(target_id)
+            if not target_obj:
+                continue
+            target_type = target_obj.get("type")
+            if target_type == TYPE_CAPABILITE:
+                # Un PT mappe directement vers un CAP — informer
+                rel_path = os.path.relpath(o["file"], REPO_ROOT)
+                warnings.append((rel_path, oid,
+                                 "Profil mappe directement vers %s "
+                                 "(capabilité CAESN, niveau 1) : "
+                                 "vérifier si un CAP-INT intermédiaire est requis"
+                                 % target_id))
+
+    return warnings, errors
+
+
+def check_coverage(objects, id_to_file):
+    """Génère un rapport de couverture des capabilités CAESN.
+
+    Renvoie (warnings, info_lines) où warnings sont des problèmes
+    et info_lines des informations de couverture.
+    """
+    warnings = []
+    info = []
+
+    capabilites = {oid: o for oid, o in objects.items()
+                   if o.get("type") == TYPE_CAPABILITE}
+    capacites = {oid: o for oid, o in objects.items()
+                 if o.get("type") == TYPE_CAPACITE}
+    profiles = {oid: o for oid, o in objects.items()
+                if o.get("type") == TYPE_PROFIL}
+
+    # Construire la couverture transitive : quels CAP sont atteints par des PT
+    covered_caps = set()
+    for pt_id, pt_obj in profiles.items():
+        maps = pt_obj["out"] & set(objects.keys())
+        for target_id in maps:
+            tobj = objects.get(target_id)
+            if not tobj:
+                continue
+            if tobj.get("type") == TYPE_CAPABILITE:
+                covered_caps.add(target_id)
+            elif tobj.get("type") == TYPE_CAPACITE:
+                # Chaîne transitive : CAP-INT → CAP
+                for deep_id in tobj["out"] & set(objects.keys()):
+                    dobj = objects.get(deep_id)
+                    if dobj and dobj.get("type") == TYPE_CAPABILITE:
+                        covered_caps.add(deep_id)
+
+    # CAP sans aucun PT atteignant
+    unreachable_caps = sorted(set(capabilites.keys()) - covered_caps)
+    if unreachable_caps:
+        for cap_id in unreachable_caps:
+            rel_path = os.path.relpath(id_to_file[cap_id], REPO_ROOT)
+            warnings.append((rel_path, cap_id,
+                             "Capabilité CAESN non atteinte par aucun PT "
+                             "(via chaîne PT→CAP-INT→CAP)"))
+    info.append("CAP atteints par au moins un PT : %d/%d"
+                % (len(covered_caps), len(capabilites)))
+    if unreachable_caps:
+        info.append("CAP non atteints : %s" % ", ".join(unreachable_caps))
+
+    # CAP-INT sans aucun PT consommateur
+    cap_int_consumers = {}
+    for pt_id, pt_obj in profiles.items():
+        for target_id in pt_obj["out"] & set(objects.keys()):
+            tobj = objects.get(target_id)
+            if tobj and tobj.get("type") == TYPE_CAPACITE:
+                cap_int_consumers.setdefault(target_id, set()).add(pt_id)
+
+    orphan_cap_ints = sorted(set(capacites.keys()) - set(cap_int_consumers.keys()))
+    if orphan_cap_ints:
+        for cap_int_id in orphan_cap_ints:
+            rel_path = os.path.relpath(id_to_file[cap_int_id], REPO_ROOT)
+            warnings.append((rel_path, cap_int_id,
+                             "CAP-INT sans aucun PT consommateur"))
+        info.append("CAP-INT orphelins (sans PT) : %s"
+                     % ", ".join(orphan_cap_ints))
+
+    return warnings, info
 
 
 def main():
@@ -162,12 +365,13 @@ def main():
         oid = parse_id(fm)
         if not oid:
             continue
+        otype = parse_type(fm)
         outgoing = set()
         for k in RELATION_KEYS:
             val = fm_field(fm, k)
             for t in list_value(val):
                 outgoing.add(t)
-        objects[oid] = {"file": path, "out": outgoing, "in": set()}
+        objects[oid] = {"file": path, "out": outgoing, "in": set(), "type": otype}
         id_to_file[oid] = path
 
     # Liens relatifs : tous les documents du cadre.
@@ -272,6 +476,48 @@ def main():
             ok = False
     else:
         print("[OK] Aucun objet isolé.")
+
+    # --- Vérifications de cohérence multi-niveaux ---
+
+    # 1. Chaîne PT → CAP-INT → CAP
+    chain_warns, chain_errs = check_transitive_chain(objects, id_to_file)
+    if chain_errs:
+        ok = False
+        print("\n[ERREUR] Chaîne PT→CAP-INT→CAP rompue : %d" % len(chain_errs))
+        for f, oid, msg in chain_errs[:30]:
+            print("  - %s (%s) : %s" % (f, oid, msg))
+    else:
+        print("[OK] Tous les profils aboutissent à une capabilité CAESN.")
+
+    if chain_warns:
+        print("\n[AVERTISSEMENT] Chaîne PT→CAP partielle : %d" % len(chain_warns))
+        for f, oid, msg in chain_warns[:30]:
+            print("  ~ %s (%s) : %s" % (f, oid, msg))
+
+    # 2. Cohérence des types dans maps_to
+    type_warns, type_errs = check_type_consistency(objects, id_to_file)
+    if type_errs:
+        ok = False
+        print("\n[ERREUR] Types incohérents dans maps_to : %d" % len(type_errs))
+        for f, oid, msg in type_errs[:30]:
+            print("  - %s (%s) : %s" % (f, oid, msg))
+    if type_warns:
+        print("\n[AVERTISSEMENT] Correspondances multi-niveaux : %d" % len(type_warns))
+        for f, oid, msg in type_warns[:30]:
+            print("  ~ %s (%s) : %s" % (f, oid, msg))
+    if not type_warns and not type_errs:
+        print("[OK] Types cohérents dans toutes les relations maps_to.")
+
+    # 3. Couverture des capabilités CAESN
+    cov_warns, cov_info = check_coverage(objects, id_to_file)
+    if cov_warns:
+        print("\n[AVERTISSEMENT] Couverture CAESN incomplète : %d" % len(cov_warns))
+        for f, oid, msg in cov_warns[:30]:
+            print("  ~ %s (%s) : %s" % (f, oid, msg))
+    for line in cov_info:
+        print("  [INFO] %s" % line)
+    if not cov_warns:
+        print("[OK] Toutes les capabilités CAESN sont atteintes par au moins un PT.")
 
     print("\nRésumé : %s" % ("CONFORME" if ok else "ANOMALIES DÉTECTÉES"))
     return 0 if ok else 1
