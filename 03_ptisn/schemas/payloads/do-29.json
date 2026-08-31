@@ -41,6 +41,6 @@
   "x-hea-version": "1.0.0",
   "x-hea-status": "draft",
   "x-hea-owner": "DEPSI",
-  "x-hea-fhir-resource": "",
+  "x-hea-fhir-resource": "Patient",
   "x-hea-source-ref": "HL7 FHIR R4 : International Patient Summary (IPS)"
 }

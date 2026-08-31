@@ -30,6 +30,7 @@ DO_FHIR_MAP = {
     "identifiant": {"json_type": "string"},
     "dossier": {"json_type": "object", "fhir_resource": "Patient"},
     "evenement": {"json_type": "object", "fhir_resource": "Encounter"},
+    "encounter": {"json_type": "object", "fhir_resource": "Encounter"},
     "observation": {"json_type": "object", "fhir_resource": "Observation"},
     "acte": {"json_type": "object", "fhir_resource": "Procedure"},
     "organisation": {"json_type": "object", "fhir_resource": "Organization"},
@@ -130,28 +131,39 @@ def extract_concepts_from_body(body):
     return concepts
 
 
-def resolve_fhir_resource(do_id, tags, body):
-    """Résout la ressource FHIR à partir de l'ID, des tags et du corps."""
-    # Try matching by DO ID pattern
-    do_id_lower = do_id.lower()
+def resolve_fhir_resource(do_id, title, tags, body):
+    """Résout la ressource FHIR à partir de l'ID, du titre, des tags et du corps.
+
+    Priorité : titre > body (Référentiel source) > tags > ID.
+    Le titre est la source la plus fiable pour le matching sémantique.
+    """
+    title_lower = title.lower()
+
+    # 1. Try matching by title (most reliable semantic source)
     for keyword, info in DO_FHIR_MAP.items():
-        if keyword in do_id_lower:
+        if keyword in title_lower:
             return info
 
-    # Try matching by tags
+    # 2. Try matching by body — extract Référentiel source (explicit FHIR ref)
+    ref_match = re.search(r"\*\*Référentiel source\*\*\s*:\s*(.+)", body)
+    if ref_match:
+        ref_text = ref_match.group(1).strip().lower()
+        for keyword, info in DO_FHIR_MAP.items():
+            if keyword in ref_text:
+                return info
+
+    # 3. Try matching by tags (fallback — can produce false positives)
     for tag in tags:
         tag_lower = tag.lower()
         for keyword, info in DO_FHIR_MAP.items():
             if keyword in tag_lower:
                 return info
 
-    # Try matching by body type keyword
-    type_match = re.search(r"\*\*Type\*\*\s*:\s*(.+)", body)
-    if type_match:
-        type_text = type_match.group(1).strip().lower()
-        for keyword, info in DO_FHIR_MAP.items():
-            if keyword in type_text:
-                return info
+    # 4. Try matching by DO ID pattern
+    do_id_lower = do_id.lower()
+    for keyword, info in DO_FHIR_MAP.items():
+        if keyword in do_id_lower:
+            return info
 
     return {"json_type": "object"}
 
@@ -225,7 +237,7 @@ def generate_do_payload_schema(obj):
     body = obj["body"]
 
     # Extraire le type d'objet
-    type_info = resolve_fhir_resource(do_id, obj["tags"], body)
+    type_info = resolve_fhir_resource(do_id, title, obj["tags"], body)
 
     # Extraire les contraintes
     constraints_text = extract_constraints(body)
