@@ -58,7 +58,7 @@ TYPE_TO_CLASS = {
 RELATION_FIELDS = ["maps_to", "implements", "applies_to", "related",
                    "realized_by", "contributes_to", "performs", "accesses",
                    "governs", "represents", "assigned_to", "has_role",
-                   "located_at", "serves"]
+                   "located_at", "serves", "vs"]
 
 # Property name mapping (snake_case → camelCase)
 PROPERTY_MAP = {
@@ -76,6 +76,7 @@ PROPERTY_MAP = {
     "has_role": "hasRole",
     "located_at": "locatedAt",
     "serves": "serves",
+    "vs": "usedInFlux",
 }
 
 

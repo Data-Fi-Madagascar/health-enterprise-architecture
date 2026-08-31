@@ -183,6 +183,14 @@ hea:contributesTo rdf:type owl:ObjectProperty ;
     owl:domain owl:Thing ;
     owl:range owl:Thing .
 
+# --- usedInFlux (utilisé dans un flux de valeur) ---
+hea:usedInFlux rdf:type owl:ObjectProperty ;
+    rdfs:label "utilisé dans le flux" ;
+    rdfs:comment "Un objet de données est utilisé dans un flux de valeur national (VS-01..04)" ;
+    rdfs:subPropertyOf hea:related ;
+    owl:domain hea:ObjetDeDonnees ;
+    owl:range hea:FluxValeur .
+
 # --- performs (exécution) ---
 hea:performs rdf:type owl:ObjectProperty ;
     rdfs:label "exécute" ;
