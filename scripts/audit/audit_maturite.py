@@ -1,79 +1,88 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Audit de maturité du référentiel.
+"""Audit de maturité du référentiel via SPARQL.
 
 Vérifie :
   1. Distribution des statuts (draft/active/stable/candidate/deprecated)
-  2. Objets bloqués (status != draft/active/stable) trop anciens
-  3. Objets sans version
-  4. Cohérence status vs. type (les CAP devraient être stable/candidate, les PT active)
-  5. Objets avec last_reviewed > 6 mois
+  2. Statuts invalides
+  3. Cohérence status ↔ type (CAP devrait être stable/candidate, PT active)
+  4. Objets sans version
+  5. Objets dépréciés
 """
 
 import os
 import sys
-from datetime import datetime, timedelta
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from utils import load_objects, section, ok, warn, err, info, C
+from utils import sparql_rows, section, ok, warn, err, info
 
 VALID_STATUSES = {"draft", "active", "stable", "candidate", "deprecated"}
 
-# Statuts attendus par type
+# Statuts attendus par type OWL
 STATUS_BY_TYPE = {
-    "profil": {"active", "stable"},
-    "capacite": {"stable", "candidate"},
-    "capabilite": {"stable", "candidate"},
-    "flux-valeur": {"active", "stable"},
-    "processus-metier": {"active", "stable"},
-    "composant-applicatif": {"active", "stable", "candidate"},
-    "composant-infra": {"active", "stable", "candidate"},
-    "composant-securite": {"active", "stable", "candidate"},
-    "composant-donnees": {"active", "stable", "candidate"},
-    "composant-architecture": {"active", "stable", "candidate"},
-    "composant-transverse": {"active", "stable", "candidate"},
+    "Profil": {"active", "stable"},
+    "CapaciteInteroperabilite": {"stable", "candidate"},
+    "Capabilite": {"stable", "candidate"},
+    "FluxValeur": {"active", "stable"},
+    "ProcessusMetier": {"active", "stable"},
+    "Composant": {"active", "stable", "candidate"},
 }
 
 
 def audit_maturite():
-    objects = load_objects()
     section("AUDIT DE MATURITÉ — Référentiel HEA")
 
     # Distribution des statuts
     section("Distribution des statuts")
-    status_dist = {}
-    for oid, obj in objects.items():
-        st = obj.get("status", "NONE")
-        status_dist[st] = status_dist.get(st, 0) + 1
-
-    for st, count in sorted(status_dist.items(), key=lambda x: -x[1]):
+    dist = sparql_rows("""
+        SELECT ?status (COUNT(?s) AS ?nb) WHERE {
+            ?s hea:status ?status .
+        }
+        GROUP BY ?status
+        ORDER BY DESC(?nb)
+    """)
+    for r in dist:
+        st = r["status"]
+        nb = int(r["nb"])
         label = st if st in VALID_STATUSES else "(invalide: %s)" % st
-        info("%-20s %d objets" % (label, count))
+        info("%-20s %d objets" % (label, nb))
 
     # Statuts invalides
     section("Statuts invalides")
-    invalid = []
-    for oid, obj in objects.items():
-        st = obj.get("status", "")
-        if st not in VALID_STATUSES:
-            invalid.append((oid, obj.get("type", ""), st, obj.get("file", "")))
+    invalid = sparql_rows("""
+        SELECT ?id ?type ?status WHERE {
+            ?s hea:id ?id .
+            ?s hea:status ?status .
+            ?s rdf:type ?type .
+            FILTER (?status NOT IN ("draft","active","stable","candidate","deprecated"))
+        }
+        ORDER BY ?id
+    """)
     if invalid:
-        for oid, otype, st, f in invalid:
-            err("%s (%s) — status '%s' invalide  [%s]" % (oid, otype, st, f))
+        for r in invalid:
+            type_short = r["type"].split("#")[-1]
+            err("%s (%s) — status '%s' invalide" % (r["id"], type_short, r["status"]))
     else:
         ok("Aucun statut invalide")
 
     # Cohérence status/type
     section("Cohérence status ↔ type")
-    type_issues = []
-    for oid, obj in objects.items():
-        otype = obj.get("type", "")
-        st = obj.get("status", "")
-        expected = STATUS_BY_TYPE.get(otype)
-        if expected and st and st not in expected:
-            type_issues.append((oid, otype, st, expected))
-    if type_issues:
-        for oid, otype, st, expected in type_issues:
+    incoherent = []
+    for owl_class, expected in STATUS_BY_TYPE.items():
+        rows = sparql_rows("""
+            SELECT ?id ?status WHERE {
+                ?s rdf:type hea:%s .
+                ?s hea:id ?id .
+                ?s hea:status ?status .
+                FILTER (?status NOT IN (%s))
+            }
+            ORDER BY ?id
+        """ % (owl_class, ",".join('"%s"' % s for s in sorted(expected))))
+        for r in rows:
+            incoherent.append((r["id"], owl_class, r["status"], expected))
+
+    if incoherent:
+        for oid, otype, st, expected in incoherent:
             warn("%s (%s) — status '%s' inattendu (attendu: %s)"
                  % (oid, otype, st, "/".join(sorted(expected))))
     else:
@@ -81,34 +90,51 @@ def audit_maturite():
 
     # Objets sans version
     section("Objets sans version")
-    no_version = [(oid, obj.get("type", ""), obj.get("title", "")[:40])
-                  for oid, obj in objects.items() if not obj.get("version")]
+    no_version = sparql_rows("""
+        SELECT ?id ?type WHERE {
+            ?s hea:id ?id .
+            ?s rdf:type ?type .
+            FILTER NOT EXISTS { ?s hea:version ?v }
+        }
+        ORDER BY ?id
+    """)
+    total = sparql_rows("SELECT (COUNT(?s) AS ?nb) WHERE { ?s hea:id ?id }")
+    total_count = int(total[0]["nb"]) if total else 0
     if no_version:
-        for oid, otype, title in no_version:
-            warn("%s — %s (%s)" % (oid, title, otype))
-        info("Objets sans version : %d / %d" % (len(no_version), len(objects)))
+        for r in no_version:
+            type_short = r["type"].split("#")[-1]
+            warn("%s (%s)" % (r["id"], type_short))
+        info("Objets sans version : %d / %d" % (len(no_version), total_count))
     else:
         ok("Tous les objets ont une version")
 
-    # Objets avec last_reviewed > 6 mois (si frontmatter le permet)
-    section("Objets potentiellement obsolètes (deprecated)")
-    deprecated = [(oid, obj.get("type", ""), obj.get("title", "")[:40])
-                  for oid, obj in objects.items() if obj.get("status") == "deprecated"]
+    # Objets dépréciés
+    section("Objets dépréciés")
+    deprecated = sparql_rows("""
+        SELECT ?id ?type ?title WHERE {
+            ?s hea:id ?id .
+            ?s hea:status "deprecated" .
+            ?s rdf:type ?type .
+            ?s hea:title ?title .
+        }
+        ORDER BY ?id
+    """)
     if deprecated:
-        for oid, otype, title in deprecated:
-            warn("%s — %s (%s)" % (oid, title, otype))
+        for r in deprecated:
+            type_short = r["type"].split("#")[-1]
+            warn("%s — %s (%s)" % (r["id"], r["title"][:40], type_short))
         info("Objets dépréciés : %d" % len(deprecated))
     else:
         ok("Aucun objet déprécié")
 
     # Résumé
     print()
-    total_issues = len(invalid) + len(type_issues)
+    total_issues = len(invalid) + len(incoherent)
     if total_issues == 0:
         ok("MATURITÉ CONFORME")
     else:
         err("ANOMALIES : %d statuts invalides, %d incohérences type/status"
-            % (len(invalid), len(type_issues)))
+            % (len(invalid), len(incoherent)))
 
     return total_issues == 0
 

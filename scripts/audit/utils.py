@@ -1,15 +1,23 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Utilitaires partagés pour les scripts d'audit HEA."""
+"""Utilitaires partagés pour les scripts d'audit HEA — tous basés sur SPARQL."""
 
 import os
-import re
-import glob
+import sys
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-REFERENTIEL = os.path.join(REPO_ROOT, "referentiel")
+TTL_PATH = os.path.join(REPO_ROOT, "dist", "hea.ttl")
 
-# Couleurs ANSI pour la sortie console
+# Namespace HEA
+HEA = "https://healmadagascar.mg/ontologie/hea#"
+PREFIXES = """
+PREFIX hea: <https://healmadagascar.mg/ontologie/hea#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+"""
+
+
 class C:
     OK = "\033[92m"
     WARN = "\033[93m"
@@ -19,65 +27,53 @@ class C:
     RESET = "\033[0m"
 
 
-def parse_frontmatter(text):
-    if not text.startswith("---"):
-        return None, text
-    end = text.find("\n---", 3)
-    if end == -1:
-        return None, text
-    return text[3:end].strip("\n"), text[end + 4:]
+_graph = None
 
 
-def fm_field(fm, key):
-    m = re.search(r"^%s:\s*(.*)$" % re.escape(key), fm, re.MULTILINE)
-    return m.group(1).strip().strip('"').strip("'") if m else None
+def load_graph():
+    """Charge le graphe RDF (une seule fois)."""
+    global _graph
+    if _graph is not None:
+        return _graph
+    try:
+        from rdflib import Graph
+    except ImportError:
+        print("%s[ERREUR]%s rdflib non installé. pip install -r requirements.txt"
+              % (C.ERR, C.RESET))
+        sys.exit(1)
+    if not os.path.exists(TTL_PATH):
+        print("%s[ERREUR]%s Fichier RDF introuvable : %s" % (C.ERR, C.RESET, TTL_PATH))
+        print("  Exécutez : python3 scripts/compile_rdf.py")
+        sys.exit(1)
+    _graph = Graph()
+    _graph.parse(TTL_PATH, format="turtle")
+    return _graph
 
 
-def list_value(raw):
-    if raw is None:
-        return []
-    raw = raw.strip()
-    if not raw or raw == "[]":
-        return []
-    if raw.startswith("[") and raw.endswith("]"):
-        inner = raw[1:-1]
-        items = re.findall(r"['\"]([^'\"]*)['\"]", inner)
-        if items:
-            return [i for i in items if i]
-        return [x.strip() for x in inner.split(",") if x.strip()]
-    return [x.strip().strip("'\"") for x in raw.split(",") if x.strip()]
+def sparql(query):
+    """Exécute une requête SPARQL et retourne les résultats."""
+    g = load_graph()
+    return list(g.query(PREFIXES + query))
 
 
-def load_objects():
-    """Charge tous les objets du référentiel avec leur frontmatter."""
-    objects = {}
-    for path in sorted(glob.glob(os.path.join(REFERENTIEL, "**", "*.md"), recursive=True)):
-        if os.path.basename(path) in ("_schema.md", "_index.yaml"):
-            continue
-        text = open(path, encoding="utf-8").read()
-        fm, _ = parse_frontmatter(text)
-        if fm is None:
-            continue
-        oid = fm_field(fm, "id")
-        otype = fm_field(fm, "type")
-        if not oid or not otype:
-            continue
-        obj = {"id": oid, "type": otype, "file": os.path.relpath(path, REPO_ROOT)}
-        for field in ["title", "status", "owner", "version", "niveau", "family"]:
-            val = fm_field(fm, field)
-            if val is not None:
-                obj[field] = val
-        for rel in ["maps_to", "implements", "applies_to", "related",
-                     "realized_by", "contributes_to", "performs", "accesses",
-                     "governs", "represents", "assigned_to", "has_role",
-                     "located_at", "serves"]:
-            val = fm_field(fm, rel)
-            if val is not None:
-                items = list_value(val)
-                if items:
-                    obj[rel] = items
-        objects[oid] = obj
-    return objects
+def sparql_one(query, col):
+    """Retourne une liste de valeurs pour une colonne donnée."""
+    rows = sparql(query)
+    return [getattr(row, col) for row in rows if getattr(row, col) is not None]
+
+
+def sparql_rows(query):
+    """Retourne une liste de dicts (plus pratique)."""
+    g = load_graph()
+    results = g.query(PREFIXES + query)
+    cols = results.vars
+    return [{str(c): str(row[c]) if row[c] is not None else None for c in cols}
+            for row in results]
+
+
+def str_val(v):
+    """Extrait la valeur string d'un Literal RDF."""
+    return str(v) if v is not None else None
 
 
 def section(title):

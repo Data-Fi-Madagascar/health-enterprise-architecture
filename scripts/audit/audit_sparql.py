@@ -1,64 +1,45 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Audit SPARQL de cohérence sur le graphe RDF.
+"""Audit SPARQL de cohérence — requêtes avancées sur le graphe RDF.
 
-Exécute des requêtes SPARQL sur dist/hea.ttl pour vérifier la cohérence
-sémantique du référentiel. Nécessite rdflib (pip install -r requirements.txt).
-
-Requêtes :
-  1. Composants sans propriétaire (owner)
-  2. Composants sans rattachement VS (via processus ou directement)
-  3. PT sans maps_to valide
-  4. Objets orphelins (aucun lien sortant)
-  5. Liens cassés (target inexistant dans le graphe)
+Exécute des requêtes SPARQL complémentaires sur dist/hea.ttl pour vérifier
+la cohérence sémantique du référentiel. Nécessite rdflib (requirements.txt).
 """
 
 import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from utils import REPO_ROOT, section, ok, warn, err, info, C
-
-TTL_PATH = os.path.join(REPO_ROOT, "dist", "hea.ttl")
-
-PREFIXES = """
-PREFIX hea: <https://healmadagascar.mg/ontologie/hea#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-"""
+from utils import sparql_rows, load_graph, section, ok, warn, err, info, C
 
 QUERIES = {
     "Composants sans owner": """
         SELECT ?id ?title WHERE {
-            ?s a hea:Composant .
+            ?s rdf:type hea:Composant .
             ?s hea:id ?id .
             ?s hea:title ?title .
-            OPTIONAL { ?s hea:owner ?o }
-            FILTER (!BOUND(?o))
+            FILTER NOT EXISTS { ?s hea:owner ?o }
         }
         ORDER BY ?id
     """,
 
     "Composants sans FluxValeur": """
         SELECT ?id ?title WHERE {
-            ?s a hea:Composant .
+            ?s rdf:type hea:Composant .
             ?s hea:id ?id .
             ?s hea:title ?title .
-            OPTIONAL { ?s hea:related ?target }
-            OPTIONAL { ?s hea:contributesTo ?target2 }
-            FILTER (!BOUND(?target) && !BOUND(?target2))
+            FILTER NOT EXISTS { ?s hea:related ?x }
+            FILTER NOT EXISTS { ?s hea:contributesTo ?x }
         }
         ORDER BY ?id
     """,
 
     "PT sans maps_to": """
         SELECT ?id ?title WHERE {
-            ?s a hea:Profil .
+            ?s rdf:type hea:Profil .
             ?s hea:id ?id .
             ?s hea:title ?title .
-            OPTIONAL { ?s hea:mapsTo ?m }
-            FILTER (!BOUND(?m))
+            FILTER NOT EXISTS { ?s hea:mapsTo ?m }
         }
         ORDER BY ?id
     """,
@@ -66,7 +47,7 @@ QUERIES = {
     "Objets orphelins (aucun lien sortant)": """
         SELECT ?id ?type WHERE {
             ?s hea:id ?id .
-            ?s a ?type .
+            ?s rdf:type ?type .
             FILTER NOT EXISTS { ?s hea:related ?x }
             FILTER NOT EXISTS { ?s hea:mapsTo ?x }
             FILTER NOT EXISTS { ?s hea:contributesTo ?x }
@@ -81,9 +62,9 @@ QUERIES = {
         ORDER BY ?id
     """,
 
-    "Comptage par type": """
+    "Comptage par type RDF": """
         SELECT ?type (COUNT(?s) AS ?nb) WHERE {
-            ?s a ?type .
+            ?s rdf:type ?type .
         }
         GROUP BY ?type
         ORDER BY DESC(?nb)
@@ -103,28 +84,21 @@ QUERIES = {
 
 def audit_sparql():
     try:
-        from rdflib import Graph
+        import rdflib  # noqa
     except ImportError:
         err("rdflib non installé. Exécutez : pip install -r requirements.txt")
         return False
 
-    if not os.path.exists(TTL_PATH):
-        err("Fichier RDF introuvable : %s" % TTL_PATH)
-        err("Exécutez d'abord : python3 scripts/compile_rdf.py")
-        return False
-
     section("AUDIT SPARQL — Cohérence sémantique")
 
-    g = Graph()
-    g.parse(TTL_PATH, format="turtle")
-    triples = len(g)
-    info("Graphe chargé : %d triples" % triples)
+    g = load_graph()
+    info("Graphe chargé : %d triples" % len(g))
 
     all_ok = True
-    for title, sparql in QUERIES.items():
+    for title, sparql_query in QUERIES.items():
         section(title)
         try:
-            results = list(g.query(PREFIXES + sparql))
+            results = sparql_rows(sparql_query)
         except Exception as e:
             err("Erreur SPARQL : %s" % e)
             all_ok = False
@@ -134,11 +108,11 @@ def audit_sparql():
             ok("Aucune anomalie")
             continue
 
-        if title == "Comptage par type":
-            for row in results:
-                type_iri = str(row.type)
+        if "Comptage" in title:
+            for r in results:
+                type_iri = r["type"]
                 type_short = type_iri.split("#")[-1] if "#" in type_iri else type_iri.split("/")[-1]
-                info("%-35s %d" % (type_short, int(row.nb)))
+                info("%-35s %s" % (type_short, r["nb"]))
         else:
             count = len(results)
             is_error = "sans owner" in title.lower() or "cassé" in title.lower()
@@ -146,12 +120,13 @@ def audit_sparql():
                 err("%d anomalie(s) trouvée(s)" % count)
             else:
                 warn("%d anomalie(s) trouvée(s)" % count)
-            for row in results:
-                row_str = "  ".join(str(v) for v in row if v is not None)
+            for r in results:
+                parts = [v for v in r.values() if v]
+                line = "  ".join(parts)
                 if is_error:
-                    err("  %s" % row_str)
+                    err("  %s" % line)
                 else:
-                    warn("  %s" % row_str)
+                    warn("  %s" % line)
             if is_error:
                 all_ok = False
 

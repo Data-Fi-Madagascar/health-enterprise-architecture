@@ -1,60 +1,89 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Audit de couverture des capabilités CAESN.
+"""Audit de couverture des capabilités CAESN via SPARQL.
 
 Vérifie :
-  1. Chaque CAP (cap-*) est couvert par au moins un PT via la chaîne transitive
-  2. Les PT-14/PT-15 qui ciblent directement des CAP (bypassant CAP-INT) sont signalés
-  3. Les CAP-INT orphelins (pas de PT qui les pointe) sont listés
-  4. Les CAP non couverts sont identifiés
+  1. Chaque CAP (hea:Capabilite) est couverte par au moins un PT via chaîne transitive
+  2. Les CAP-INT orphelins (pas de PT qui les pointe) sont listés
+  3. Les CAP non couvertes sont identifiées
 """
 
 import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from utils import load_objects, section, ok, warn, err, info, C
+from utils import sparql_rows, section, ok, warn, err, info
 
 
 def audit_couverture():
-    objects = load_objects()
     section("AUDIT DE COUVERTURE — Capabilités CAESN")
 
-    profiles = {oid: o for oid, o in objects.items() if o["type"] == "profil"}
-    capacites_int = {oid: o for oid, o in objects.items() if o["type"] == "capacite"}
-    capabilites = {oid: o for oid, o in objects.items() if o["type"] == "capabilite"}
+    # Couverture transitive : PT → CAP-INT → CAP
+    covered = sparql_rows("""
+        SELECT DISTINCT ?capId ?capTitle ?ptId ?viaCi WHERE {
+            ?pt rdf:type hea:Profil .
+            ?pt hea:id ?ptId .
+            ?pt hea:mapsTo ?ci .
+            ?ci rdf:type hea:CapaciteInteroperabilite .
+            ?ci hea:id ?viaCi .
+            ?ci hea:mapsTo ?cap .
+            ?cap rdf:type hea:Capabilite .
+            ?cap hea:id ?capId .
+            ?cap hea:title ?capTitle .
+        }
+        ORDER BY ?capId ?ptId
+    """)
 
-    # Construire la couverture transitive : PT → CAP-INT → CAP
-    covered_by = {}  # cap_id → list of (pt_id, via_ci)
-    for cid, cap in capabilites.items():
-        covered_by[cid] = []
+    # Couverture directe : PT → CAP (bypass CAP-INT)
+    covered_direct = sparql_rows("""
+        SELECT DISTINCT ?capId ?capTitle ?ptId WHERE {
+            ?pt rdf:type hea:Profil .
+            ?pt hea:id ?ptId .
+            ?pt hea:mapsTo ?cap .
+            ?cap rdf:type hea:Capabilite .
+            ?cap hea:id ?capId .
+            ?cap hea:title ?capTitle .
+        }
+        ORDER BY ?capId ?ptId
+    """)
 
-    # Index inversé : quels PT couvrent quelles CAP-INT
-    ci_covered_by = {}
-    for ci_id in capacites_int:
-        ci_covered_by[ci_id] = []
+    # CAP-INT orphelins (pas de PT qui les pointe)
+    orphelins = sparql_rows("""
+        SELECT ?id ?title WHERE {
+            ?ci rdf:type hea:CapaciteInteroperabilite .
+            ?ci hea:id ?id .
+            ?ci hea:title ?title .
+            FILTER NOT EXISTS {
+                ?pt rdf:type hea:Profil .
+                ?pt hea:mapsTo ?ci .
+            }
+        }
+        ORDER BY ?id
+    """)
 
-    for pid, prof in profiles.items():
-        maps = set(prof.get("maps_to", []))
-        # Direct CAP targeting (bypassing CAP-INT)
-        for target in maps:
-            if target in capabilites:
-                covered_by[target].append((pid, "direct"))
-        # Via CAP-INT
-        for target in maps:
-            if target in capacites_int:
-                ci_covered_by[target].append(pid)
-                for deep_target in capacites_int[target].get("maps_to", []):
-                    if deep_target in capabilites:
-                        covered_by[deep_target].append((pid, target))
+    # Toutes les CAP
+    all_caps = sparql_rows("""
+        SELECT ?id ?title WHERE {
+            ?s rdf:type hea:Capabilite .
+            ?s hea:id ?id .
+            ?s hea:title ?title .
+        }
+        ORDER BY ?id
+    """)
 
-    # --- Rapport ---
-    section("Couverture des CAP (cap-*)")
+    # Index : capId → [(ptId, viaCi)]
+    cov = {}
+    for r in covered:
+        cov.setdefault(r["capId"], []).append((r["ptId"], r["viaCi"]))
+    for r in covered_direct:
+        cov.setdefault(r["capId"], []).append((r["ptId"], "direct"))
+
+    section("Couverture des CAP (hea:Capabilite)")
     uncovered = []
-    partial = []
-    for cid, cap in sorted(capabilites.items()):
-        title = cap.get("title", "")[:45]
-        sources = covered_by[cid]
+    for cap in all_caps:
+        cid = cap["id"]
+        title = cap["title"][:45]
+        sources = cov.get(cid, [])
         if not sources:
             uncovered.append((cid, title))
         else:
@@ -63,18 +92,14 @@ def audit_couverture():
             ok("%s — %s ← %s" % (cid, title, ", ".join(labels)))
 
     section("CAP-INT orphelins (pas de PT qui les pointe)")
-    orphelins_ci = []
-    for ci_id, ci in sorted(capacites_int.items()):
-        title = ci.get("title", "")[:45]
-        if not ci_covered_by[ci_id]:
-            orphelins_ci.append((ci_id, title))
-            warn("%s — %s : aucun PT ne cible cette CAP-INT" % (ci_id, title))
+    for r in orphelins:
+        warn("%s — %s : aucun PT ne cible cette CAP-INT" % (r["id"], r["title"][:45]))
 
     section("Résumé")
-    info("CAP couvertes : %d / %d" % (len(capabilites) - len(uncovered), len(capabilites)))
-    info("CAP-INT orphelins : %d / %d" % (len(orphelins_ci), len(capacites_int)))
+    info("CAP couvertes : %d / %d" % (len(all_caps) - len(uncovered), len(all_caps)))
+    info("CAP-INT orphelins : %d" % len(orphelins))
 
-    total_issues = len(uncovered) + len(orphelins_ci)
+    total_issues = len(uncovered) + len(orphelins)
     if uncovered:
         err("CAP non couvertes :")
         for cid, title in uncovered:
@@ -84,7 +109,8 @@ def audit_couverture():
     if total_issues == 0:
         ok("COUVERTURE COMPLÈTE")
     else:
-        err("ANOMALIES : %d CAP non couverts, %d CAP-INT orphelins" % (len(uncovered), len(orphelins_ci)))
+        err("ANOMALIES : %d CAP non couvertes, %d CAP-INT orphelins"
+            % (len(uncovered), len(orphelins)))
 
     return total_issues == 0
 

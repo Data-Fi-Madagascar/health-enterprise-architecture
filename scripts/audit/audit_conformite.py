@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Audit de conformité du portefeuille d'initiatives.
+"""Audit de conformité du portefeuille d'initiatives via SPARQL.
 
-Vérifie pour chaque composant (CMP-*) :
+Vérifie pour chaque composant (hea:Composant) :
   1. Un propriétaire fonctionnel est désigné (hea:owner)
   2. Un rattachement à un flux de valeur national existe (direct ou indirect)
 
@@ -13,92 +13,111 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from utils import load_objects, section, ok, warn, err, info, C
+from utils import sparql, sparql_rows, section, ok, warn, err, info
 
 
 def audit_conformite():
-    objects = load_objects()
     section("AUDIT DE CONFORMITÉ — Portefeuille d'initiatives")
 
-    composants = {oid: o for oid, o in objects.items()
-                  if o["type"].startswith("composant-")}
-    flux = {oid: o for oid, o in objects.items()
-            if o["type"] == "flux-valeur"}
-    processus = {oid: o for oid, o in objects.items()
-                 if o["type"] == "processus-metier"}
-    capacites_int = {oid: o for oid, o in objects.items()
-                     if o["type"] == "capacite"}
+    # Composants sans owner
+    no_owner = sparql_rows("""
+        SELECT ?id ?title WHERE {
+            ?s rdf:type hea:Composant .
+            ?s hea:id ?id .
+            ?s hea:title ?title .
+            FILTER NOT EXISTS { ?s hea:owner ?o }
+        }
+        ORDER BY ?id
+    """)
 
-    info("Composants : %d | Flux de valeur : %d" % (len(composants), len(flux)))
+    # Composants sans lien VS (ni direct ni indirect via CAP-INT → FluxValeur)
+    # Direct : ?s hea:related/contributesTo/realizedBy/appliesTo → hea:FluxValeur
+    # Indirect : ?s hea:mapsTo → ?capInt ?capInt hea:mapsTo → hea:FluxValeur
+    no_vs = sparql_rows("""
+        SELECT ?id ?title ?owner WHERE {
+            ?s rdf:type hea:Composant .
+            ?s hea:id ?id .
+            ?s hea:title ?title .
+            OPTIONAL { ?s hea:owner ?owner }
+            # Pas de lien direct vers FluxValeur
+            FILTER NOT EXISTS {
+                ?s hea:related ?target .
+                ?target rdf:type hea:FluxValeur .
+            }
+            FILTER NOT EXISTS {
+                ?s hea:contributesTo ?target .
+                ?target rdf:type hea:FluxValeur .
+            }
+            FILTER NOT EXISTS {
+                ?s hea:realizedBy ?target .
+                ?target rdf:type hea:FluxValeur .
+            }
+            FILTER NOT EXISTS {
+                ?s hea:appliesTo ?target .
+                ?target rdf:type hea:FluxValeur .
+            }
+            # Pas de lien indirect non plus (via CAP-INT → FluxValeur)
+            FILTER NOT EXISTS {
+                ?s hea:mapsTo ?capInt .
+                ?capInt hea:mapsTo ?fv .
+                ?fv rdf:type hea:FluxValeur .
+            }
+        }
+        ORDER BY ?id
+    """)
 
-    # Index inversé : quels objets pointent vers un FluxValeur ?
-    vs_reachers = set()
-    for oid, o in objects.items():
-        for rel in ["related", "applies_to", "realized_by", "contributes_to"]:
-            for target in o.get(rel, []):
-                if target in flux:
-                    vs_reachers.add(oid)
-                    break
+    # Composants avec lien VS direct uniquement
+    has_direct = sparql_rows("""
+        SELECT DISTINCT ?id WHERE {
+            { ?s hea:related ?t . ?t rdf:type hea:FluxValeur }
+            UNION
+            { ?s hea:contributesTo ?t . ?t rdf:type hea:FluxValeur }
+            UNION
+            { ?s hea:realizedBy ?t . ?t rdf:type hea:FluxValeur }
+            UNION
+            { ?s hea:appliesTo ?t . ?t rdf:type hea:FluxValeur }
+            ?s rdf:type hea:Composant .
+            ?s hea:id ?id .
+        }
+    """)
+    direct_ids = {r["id"] for r in has_direct}
 
-    # Chaîne transitive : composant → CAP-INT → CAP → (éventuellement VS)
-    comp_to_vs = {}
-    for cid, comp in composants.items():
-        reachable = set()
-        # Direct VS links
-        for rel in ["related", "applies_to", "realized_by", "contributes_to"]:
-            for target in comp.get(rel, []):
-                if target in flux:
-                    reachable.add(target)
-        # Indirect via CAP-INT → CAP
-        for target in comp.get("maps_to", []):
-            if target in capacites_int:
-                for deep_target in capacites_int[target].get("maps_to", []):
-                    if deep_target in flux:
-                        reachable.add(deep_target)
-        comp_to_vs[cid] = reachable
+    # Tous les composants
+    all_comp = sparql_rows("""
+        SELECT ?id ?title WHERE {
+            ?s rdf:type hea:Composant .
+            ?s hea:id ?id .
+            ?s hea:title ?title .
+        }
+        ORDER BY ?id
+    """)
 
-    # Rapport
-    conforms = []
-    no_owner = []
-    no_vs_direct = []
-    no_vs_indirect = []
+    info("Composants : %d" % len(all_comp))
 
-    for cid, comp in sorted(composants.items()):
-        title = comp.get("title", "")[:55]
-        owner = comp.get("owner")
-        has_vs_direct = cid in vs_reachers
-        has_vs_indirect = bool(comp_to_vs.get(cid))
+    # Comptage
+    no_owner_ids = {r["id"] for r in no_owner}
+    no_vs_ids = {r["id"] for r in no_vs}
 
-        if not owner:
-            no_owner.append((cid, title))
-        elif not has_vs_direct and not has_vs_indirect:
-            no_vs_indirect.append((cid, title, owner))
-        elif not has_vs_direct:
-            no_vs_direct.append((cid, title, owner))
-        else:
-            conforms.append((cid, title, owner))
+    conforms = [c for c in all_comp if c["id"] not in no_owner_ids and c["id"] not in no_vs_ids]
+    vs_indirect = [c for c in all_comp if c["id"] in no_vs_ids and c["id"] not in no_owner_ids
+                   and c["id"] not in direct_ids]
 
-    # Résultats
-    info("Conformes : %d / %d" % (len(conforms), len(composants)))
-    for cid, title, owner in conforms:
-        ok("%s — %s (owner: %s)" % (cid, title, owner))
+    info("Conformes : %d / %d" % (len(conforms), len(all_comp)))
+    for c in conforms:
+        ok("%s — %s" % (c["id"], c["title"][:55]))
 
     if no_owner:
         err("Sans propriétaire : %d" % len(no_owner))
-        for cid, title in no_owner:
-            err("%s — %s" % (cid, title))
+        for r in no_owner:
+            err("%s — %s" % (r["id"], r["title"][:55]))
 
-    if no_vs_direct:
-        warn("Sans lien VS direct (couvert indirectement) : %d" % len(no_vs_direct))
-        for cid, title, owner in no_vs_direct:
-            warn("%s — %s" % (cid, title))
+    if no_vs:
+        warn("Sans aucun rattachement VS : %d" % len(no_vs))
+        for r in no_vs:
+            owner = r.get("owner", "?")
+            warn("%s — %s (owner: %s)" % (r["id"], r["title"][:55], owner))
 
-    if no_vs_indirect:
-        warn("Sans aucun rattachement VS : %d" % len(no_vs_indirect))
-        for cid, title, owner in no_vs_indirect:
-            warn("%s — %s (owner: %s)" % (cid, title, owner))
-
-    total_issues = len(no_owner) + len(no_vs_indirect)
+    total_issues = len(no_owner) + len(no_vs)
     print()
     if total_issues == 0:
         ok("PORTFEUILLE CONFORME")
