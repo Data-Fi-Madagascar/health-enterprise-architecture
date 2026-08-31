@@ -8,6 +8,7 @@ status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: ["artsn", "fondations", "catalogue", "niveau-3"]
+related: ["CAP-13"]
 ---
 
 # Fondations de l'ARTSN

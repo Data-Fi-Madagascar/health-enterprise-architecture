@@ -47,6 +47,7 @@ La table de maturité fixe le statut de chaque chapitre et la condition de passa
 | ART-9 | Garanties transactionnelles fortes | candidate | Confirmation par une seconde initiative à garanties transactionnelles fortes | [ART-9](../../referentiel/chapitres/art-9.md) |
 | ART-10 | Logistique | candidate | Confirmation par une initiative LMIS/logistique déployant la traçabilité de bout en bout des mouvements de stock | [ART-10](../../referentiel/chapitres/art-10.md) |
 | ART-11 | Coordination intersectorielle | stable | — | [ART-11](../../referentiel/chapitres/art-11.md) |
+| ART-12 | Aide à la décision clinique | draft | Proposition ouverte : à confirmer par une initiative de soins utilisant des artefacts de connaissance profilés | [ART-12](../../referentiel/chapitres/art-12.md) |
 | F-1 | Résilience face à la réalité géographique du pays | stable | — | [F-1](../../referentiel/fondations/f-1.md) |
 | F-2 | Préservation de la souveraineté intersectorielle | stable | — | [F-2](../../referentiel/fondations/f-2.md) |
 | F-3 | Éradication des silos technologiques | stable | — | [F-3](../../referentiel/fondations/f-3.md) |

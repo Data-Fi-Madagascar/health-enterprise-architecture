@@ -8,6 +8,7 @@ status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: ["artsn", "chapitres", "patterns", "niveau-3"]
+related: ["ARTSN", "CNISN"]
 ---
 
 # Chapitres et patterns de référence
@@ -97,6 +98,7 @@ Les chapitres de cette partie s'inscrivent dans une dépendance avec les Fondati
 - [ART-0: ART-0 : Accords de partage inter-institutionnels](art-0-accords-partage.md)
 - [ART-4B: ART-4B : Bases d'autorisation](art-4b-bases-autorisation.md)
 - [ART-11: ART-11 : Coordination intersectorielle](art-11-coordination-intersectorielle.md)
+- [ART-12: ART-12 : Aide à la décision clinique](art-12-aide-decision-clinique.md)
 - [ART-8C: ART-8C : Agrégation par lot](art-8c-agregation-par-lot.md)
 - [ART-2: ART-2 : Médiation et normalisation](art-2-mediation-normalisation.md)
 - [ART-4: ART-4 : Référentiels de métadonnées de gestion](art-4-referentiels-metadonnees.md)

@@ -109,7 +109,7 @@ La sixième phase établit l'interopérabilité transfrontalière through l'adh�
 
 **Période** : T1 2030 : T2 2030 (6 mois)
 
-La septième phase met en place la coordination intersectorielle through le déploiement du profil PT-15 (Surveillance One Health), la signature des accords interministériels de partage de données entre le MSP, le MINAE et le MEEF, le déploiement de la médiation intersectorielle (CIM-10 ↔ OIE ↔ GBIF), l'activation du centre de commande intersectoriel (CMP-02), la corrélation des signaux faibles entre santé humaine, animale et environnement, et les tests de cluster intersectoriel.
+La septième phase met en place la coordination intersectorielle through le déploiement du profil PT-15 (Surveillance One Health), la signature des accords interministériels de partage de données entre le MSP, le MINAE et le MEEF, le déploiement de la médiation intersectorielle (CIM-11 ↔ OIE ↔ GBIF), l'activation du centre de commande intersectoriel (CMP-02), la corrélation des signaux faibles entre santé humaine, animale et environnement, et les tests de cluster intersectoriel.
 
 | Jalon | Date | Critère de succès |
 |-------|------|-------------------|

@@ -8,7 +8,7 @@ status: stable
 last_reviewed: 2026-08-12
 owner: DEPSI
 tags: ["artsn", "chapitres", "ART-11", "niveau-3"]
-related: ["CAP-INT-13", "CAP-INT-14", "ART-11"]
+related: ["CAP-INT-13", "CAP-INT-14"]
 ---
 # Coordination intersectorielle
 

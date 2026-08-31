@@ -1,5 +1,5 @@
 ---
-title: "Plan de migration — De l'existant au futur état"
+title: "Plan de migration : De l'existant au futur état"
 description: "Niveau 1 — Architecture d'entreprise du secteur santé numérique de Madagascar"
 owner: "DEPSI"
 version: "1.0.0"
@@ -9,7 +9,7 @@ last_reviewed: "2026-08-13"
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -29,21 +29,21 @@ Ce document décrit la stratégie et les étapes concrètes pour passer de l'ét
 
 ---
 
-## 1. État actuel — Inventaire des systèmes existants
+## 1. État actuel : Inventaire des systèmes existants
 
 ### 1.1 Systèmes en production
 
 | Système | Propriétaire | Technologie | Données gérées | Statut | Risque d'obsolescence |
 |---------|-------------|-------------|----------------|--------|----------------------|
-| **DHIS2** | MoS / OMS | Web (PHP/MySQL) | Indicateurs, rapports, dashboards | Actif, utilisé nationwide | Faible — standard mondial |
-| **LMIS** (eLMIS) | MoS / USAID | Web (Java/PostgreSQL) | Stocks produits de santé | Actif dans certains districts | Moyen — dépendance fournisseur |
-| **OpenMRS** | CHW / ONG | Web (Java/MySQL) | Dossiers patients (programmes ciblés) | Actif (programmes VIH, TB) | Moyen — données fragmentées |
-| **Systèmes locaux** (Excel, Access) | Formations sanitaires | Hétérogène | Données cliniques, stocks | Très utilisé | Élevé — pas d'interopérabilité |
-| **Registres papier** | Agents communautaires | Papier | Signaux, visites, vaccinations | Majoritaire en rural | Élevé — perte de données |
-| **SMS-based** (mHealth) | Programmes divers | SMS / USSD | Notifications, rappels | Actif (BPC, vaccination) | Moyen — limited data |
-| **PaySim / systèmes paiement** | BNP / opérateurs mobile | Mobile money | Transactions financières | Actif | Faible — infrastructure existante |
+| **DHIS2** | MoS / OMS | Web (PHP/MySQL) | Indicateurs, rapports, dashboards | Actif, utilisé nationwide | Faible : standard mondial |
+| **LMIS** (eLMIS) | MoS / USAID | Web (Java/PostgreSQL) | Stocks produits de santé | Actif dans certains districts | Moyen : dépendance fournisseur |
+| **OpenMRS** | CHW / ONG | Web (Java/MySQL) | Dossiers patients (programmes ciblés) | Actif (programmes VIH, TB) | Moyen : données fragmentées |
+| **Systèmes locaux** (Excel, Access) | Formations sanitaires | Hétérogène | Données cliniques, stocks | Très utilisé | Élevé : pas d'interopérabilité |
+| **Registres papier** | Agents communautaires | Papier | Signaux, visites, vaccinations | Majoritaire en rural | Élevé : perte de données |
+| **SMS-based** (mHealth) | Programmes divers | SMS / USSD | Notifications, rappels | Actif (BPC, vaccination) | Moyen : limited data |
+| **PaySim / systèmes paiement** | BNP / opérateurs mobile | Mobile money | Transactions financières | Actif | Faible : infrastructure existante |
 
-### 1.2 Données existantes — Volume et qualité
+### 1.2 Données existantes : Volume et qualité
 
 | Source | Volume estimé | Qualité | Interopérabilité actuelle |
 |--------|---------------|---------|---------------------------|
@@ -53,18 +53,18 @@ Ce document décrit la stratégie et les étapes concrètes pour passer de l'ét
 | Systèmes locaux | ~1M de patients (estimation) | Faible | Aucune |
 | Registres papier | ~2M de consultations/an | Variable | Aucune |
 
-### 1.3 Gap analysis — Écart entre existant et cible
+### 1.3 Gap analysis : Écart entre existant et cible
 
 | Dimension | État actuel | État cible (HEA) | Écart |
 |-----------|-------------|-------------------|-------|
-| **Identité patient** | Fragmentée (programmes) | INP unique national | Critique — aucun ID partagé |
-| **Échange de données** | Excel, email, papier | FHIR R4 via X-Road | Critique — aucune interopérabilité |
-| **Terminologie** | Codes locaux hétérogènes | CIM-10, LOINC standardisés | Élevé — mappings inexistants |
-| **Consentement** | Non formalisé | FHIR Consent structuré | Élevé — cadre juridique absent |
-| **Traçabilité** | Partielle (DHIS2) | Audit trail complet | Élevé — pas de piste d'audit |
-| **Sécurité** | Auth basique / mots de passe | OAuth 2.0, RBAC, chiffrement | Critique — failles de sécurité |
-| **Données agrégées** | DHIS2 (isolé) | mADX normalisé | Moyen — DHIS2 fonctionne mais non intégré |
-| **Transfrontalier** | Aucun | IPS + GDHCN | Critique — zéro infrastructure |
+| **Identité patient** | Fragmentée (programmes) | INP unique national | Critique : aucun ID partagé |
+| **Échange de données** | Excel, email, papier | FHIR R4 via X-Road | Critique : aucune interopérabilité |
+| **Terminologie** | Codes locaux hétérogènes | CIM-10, LOINC standardisés | Élevé : mappings inexistants |
+| **Consentement** | Non formalisé | FHIR Consent structuré | Élevé : cadre juridique absent |
+| **Traçabilité** | Partielle (DHIS2) | Audit trail complet | Élevé : pas de piste d'audit |
+| **Sécurité** | Auth basique / mots de passe | OAuth 2.0, RBAC, chiffrement | Critique : failles de sécurité |
+| **Données agrégées** | DHIS2 (isolé) | mADX normalisé | Moyen : DHIS2 fonctionne mais non intégré |
+| **Transfrontalier** | Aucun | IPS + GDHCN | Critique : zéro infrastructure |
 
 ---
 
@@ -107,43 +107,43 @@ Ce document décrit la stratégie et les étapes concrètes pour passer de l'ét
 
 ## 3. Plan de migration par phase
 
-### Phase 1 — Fondations (T4 2026 — T1 2027)
+### Phase 1 : Fondations (T4 2026 : T1 2027)
 
 | Action | Système impacté | Livrable | Risque |
 |--------|-----------------|----------|--------|
 | Déployer X-Road (Security Server) | Aucun (infra nouvelle) | X-Road opérationnel | Faible |
-| Créer l'INP (référentiel patients) | OpenMRS + DHIS2 | INP avec 500K patients migrés | Élevé — qualité données |
+| Créer l'INP (référentiel patients) | OpenMRS + DHIS2 | INP avec 500K patients migrés | Élevé : qualité données |
 | Mettre en place le registre formations | DHIS2 +LMIS | Registre national formations | Moyen |
 | Déployer PT-10 (confiance/auth) | Aucun (infra nouvelle) | RBAC fonctionnel | Faible |
-| Pilote référence (2 districts) | OpenMRS + système local | ServiceRequest FHIR opérationnel | Moyen — adoption |
+| Pilote référence (2 districts) | OpenMRS + système local | ServiceRequest FHIR opérationnel | Moyen : adoption |
 
 **Critère de succès Phase 1** : INP fonctionnel, X-Road opérationnel, 2 districts pilotes interconnectés.
 
-### Phase 2 — Interopérabilité nationale (T1 2027 — T2 2027)
+### Phase 2 : Interopérabilité nationale (T1 2027 : T2 2027)
 
 | Action | Système impacté | Livrable | Risque |
 |--------|-----------------|----------|--------|
-| Connecter OpenMRS à X-Road | OpenMRS | Échange FHIR via X-Road | Moyen — API OpenMRS |
-| Mapper terminologie (CIM-10, LOINC) | Systèmes locaux | Référentiel terminologique | Élevé — travail manuel |
-| Déployer PT-02 (médiation) | Systèmes locaux | Connecteurs de transformation | Élevé — hétérogénéité |
+| Connecter OpenMRS à X-Road | OpenMRS | Échange FHIR via X-Road | Moyen : API OpenMRS |
+| Mapper terminologie (CIM-10, LOINC) | Systèmes locaux | Référentiel terminologique | Élevé : travail manuel |
+| Déployer PT-02 (médiation) | Systèmes locaux | Connecteurs de transformation | Élevé : hétérogénéité |
 | Étendre référence à 10 districts | Systèmes locaux | 10 districts interconnectés | Moyen |
 | Déployer PT-12 (audit) | Tous | Piste d'audit complète | Faible |
 
 **Critère de succès Phase 2** : 10 districts échangeant des données via FHIR, audit trail actif.
 
-### Phase 3 — Couverture et programme (T2 2027 — T3 2027)
+### Phase 3 : Couverture et programme (T2 2027 : T3 2027)
 
 | Action | Système impacté | Livrable | Risque |
 |--------|-----------------|----------|--------|
 | Intégrer LMIS au X-Road | LMIS | Échange produits/stocks FHIR | Moyen |
-| Connecter BPC/AMM à l'INP | Systèmes BPC/AMM | Éligibilité temps réel | Élevé — juridique |
+| Connecter BPC/AMM à l'INP | Systèmes BPC/AMM | Éligibilité temps réel | Élevé : juridique |
 | Déployer PT-04 (identité nationale) | Tous | NIN utilisable partout | Moyen |
 | Étendre à 20 districts | Systèmes locaux | 20 districts | Moyen |
-| Déployer PT-11 (consentement) | Tous | Consentement structuré | Moyen — adoption |
+| Déployer PT-11 (consentement) | Tous | Consentement structuré | Moyen : adoption |
 
 **Critère de succès Phase 3** : Vérification d'éligibilité temps réel, 20 districts connectés.
 
-### Phase 4 — Surveillance et pilotage (T3 2027 — T4 2027)
+### Phase 4 : Surveillance et pilotage (T3 2027 : T4 2027)
 
 | Action | Système impacté | Livrable | Risque |
 |--------|-----------------|----------|--------|
@@ -155,15 +155,15 @@ Ce document décrit la stratégie et les étapes concrètes pour passer de l'ét
 
 **Critère de succès Phase 4** : Dashboard national temps réel, alerte épidémique < 15min.
 
-### Phase 5 — Transfrontalier (T4 2027 — T2 2028)
+### Phase 5 : Transfrontalier (T4 2027 : T2 2028)
 
 | Action | Système impacté | Livrable | Risque |
 |--------|-----------------|----------|--------|
 | Déployer GDHCN (Trust Anchor) | Aucun (infra nouvelle) | Certificat GDHCN national | Moyen |
-| Implémenter PT-14 | Tous | IPS échangeable | Élevé — complexité |
-| Connecter pays partenaires (SADC) | Systèmes voisins | Échange IPS transfrontalier | Élevé — accords bilatéraux |
-| Déployer PT-15 (One Health) | OIE, FAO, OMS | Surveillance zoonose | Élevé — multi-acteurs |
-| Décommissionner systèmes legacy | Systèmes obsolètes | Migration complète | Élevé — résistance |
+| Implémenter PT-14 | Tous | IPS échangeable | Élevé : complexité |
+| Connecter pays partenaires (SADC) | Systèmes voisins | Échange IPS transfrontalier | Élevé : accords bilatéraux |
+| Déployer PT-15 (One Health) | OIE, FAO, OMS | Surveillance zoonose | Élevé : multi-acteurs |
+| Décommissionner systèmes legacy | Systèmes obsolètes | Migration complète | Élevé : résistance |
 
 **Critère de succès Phase 5** : Premier échange IPS transfrontalier réussi, GDHCN opérationnel.
 
@@ -247,7 +247,7 @@ Ce document décrit la stratégie et les étapes concrètes pour passer de l'ét
 
 ## Références
 
-- **Portefeuille d'initiatives** — Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
-- **Feuille de route ARTSN** — Feuille de route de déploiement progressif de l'ARTSN (`02_artsn/09_feuille-route/index.md`)
-- **Trajectoire CNISN** — Partie V — Trajectoire de mise en œuvre (`01_cnisn/05_trajectoire/index.md`)
-- **Protocole de test** — Annexe D — Protocole de test d'interopérabilité (`02_artsn/07_annexes/d-protocole-test-interopabilite.md`)
+- **Portefeuille d'initiatives** : Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
+- **Feuille de route ARTSN** : Feuille de route de déploiement progressif de l'ARTSN (`02_artsn/07_lots/index.md`)
+- **Trajectoire CNISN** : Partie V : Trajectoire de mise en œuvre (`01_cnisn/05_trajectoire/index.md`)
+- **Protocole de test** : Annexe D : Protocole de test d'interopérabilité (`02_artsn/08_annexes/d-protocole-test-interopabilite.md`)

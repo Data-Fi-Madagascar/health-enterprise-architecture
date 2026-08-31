@@ -15,8 +15,8 @@ implements: []
 applies_to: ["ENF-4"]
 related: ["ART-8"]
 tags: ["artsn", "niveau-3", "chapitre", "ART-8B"]
----
 realized_by: ["WP-07"]
+---
 # Modélisation de relations en graphe
 
 **Contenu normatif.** Pour la surveillance et la cartographie de structures relationnelles ouvertes, récursives et sans limites définies, l’architecture impose l’utilisation d’un **stockage non-relationnel** (*Graph Store*). Les entités et leurs interactions doivent y être traitées comme des nœuds et des arcs qualifiés.

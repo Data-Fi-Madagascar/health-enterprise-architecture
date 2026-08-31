@@ -8,6 +8,7 @@ status: draft
 last_reviewed: 2026-07-03
 owner: Direction de la protection sociale et de la promotion de la santé
 tags: ["flux-de-valeur", "value-stream"]
+related: ["CAP-05", "CAP-13"]
 ---
 
 # Prévenir, détecter et répondre aux risques sanitaires
@@ -318,8 +319,6 @@ Comité de gestion de crise, direction centrale, comité technique national
 #### Indicateurs
 
 Taux de létalité, durée de l'épisode épidémique, nombre de revues après action, proportion de recommandations mises en œuvre
-
-performed_by: ["ROL-05"]
 
 ### Échange et coordination transfrontaliers
 

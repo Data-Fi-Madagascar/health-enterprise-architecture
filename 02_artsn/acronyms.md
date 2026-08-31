@@ -31,6 +31,7 @@ Acronymes propres au périmètre technique de l'ARTSN. Les acronymes transverses
 | Acronyme | Signification |
 |----------|---------------|
 | ABAC | Attribute-Based Access Control (contrôle d'accès basé sur les attributs) |
+| ADHMAT | African Digital Health Maturity Assessment Tool (outil d'évaluation de maturité de l'Africa CDC) |
 | AES-256 | Advanced Encryption Standard (chiffrement clé 256 bits) |
 | API | Application Programming Interface |
 | APN | Access Point Name (point d'accès réseau mobile) |
@@ -40,14 +41,17 @@ Acronymes propres au périmètre technique de l'ARTSN. Les acronymes transverses
 | CNASN | Comité National d'Architecture Santé Numérique |
 | CQRS | Command Query Responsibility Segregation |
 | CSU | Couverture Santé Universelle |
+| DHIS2 | District Health Information Software 2 (logiciel de collecte de données sanitaires) |
 | ENF | Exigence Nationale Fondamentale (ENF-1 à ENF-5) |
 | ETL | Extract-Transform-Load |
+| HDS | Hébergement de Données de Santé (certification) |
 | KPI | Key Performance Indicator (indicateur clé de performance) |
 | LMIS | Logistics Management Information System |
 | MPLS | Multiprotocol Label Switching |
+| OpenMRS | Open Medical Record System (système open source de dossiers médicaux) |
 | PKI | Public Key Infrastructure (infrastructure à clés publiques) |
+| PMIS | Pharmacy Management Information System (système d'information de gestion pharmaceutique) |
 | RBAC | Role-Based Access Control (contrôle d'accès basé sur les rôles) |
-| HDS | Hébergement de Données de Santé (certification) |
 | RSI | Règlement Sanitaire International |
 | SCD | Slowly Changing Dimension (dimension à évolution lente) |
 | VPN | Virtual Private Network (réseau privé virtuel) |

@@ -109,7 +109,8 @@
               "/caesn/governance/homologation",
               "/caesn/governance/point-de-vigilance-caesn",
               "/caesn/governance/raci",
-              "/caesn/governance/value-realization-office"
+              "/caesn/governance/value-realization-office",
+              "/caesn/governance/fondement-legal"
             ],
             "root": "/caesn/governance/index"
           },
@@ -159,7 +160,9 @@
           },
           {
             "group": "Cnisn/conformite",
-            "pages": [],
+            "pages": [
+              "/cnisn/conformite/programme-conformite"
+            ],
             "root": "/cnisn/conformite/index"
           },
           {
@@ -216,7 +219,8 @@
               "/cnisn/decisions/adr-0006-inp",
               "/cnisn/decisions/adr-0007-gdhcn",
               "/cnisn/decisions/adr-0008-atna",
-              "/cnisn/decisions/adr-0009-terminologie"
+              "/cnisn/decisions/adr-0009-terminologie",
+              "/cnisn/decisions/adr-0010-cadre-legal"
             ],
             "root": "/cnisn/decisions/index"
           }
@@ -359,7 +363,11 @@
               "/ptisn/profils/pt-12-audit-provenance-traçabilité",
               "/ptisn/profils/pt-13-qualite-reconciliation",
               "/ptisn/profils/pt-14-interopabilite-transfrontaliere",
-              "/ptisn/profils/pt-15-surveillance-one-health"
+              "/ptisn/profils/pt-15-surveillance-one-health",
+              "/ptisn/profils/pt-16-orchestration-processus",
+              "/ptisn/profils/pt-17-logistique-lmis",
+              "/ptisn/profils/pt-18-echange-reclamations-paiements",
+              "/ptisn/profils/pt-19-aide-decision-clinique"
             ]
           },
           {
@@ -368,23 +376,9 @@
             "root": "/ptisn/matrice-alignement/index"
           },
           {
-            "group": "Ptisn/exemples",
-            "pages": [],
-            "root": "/ptisn/exemples/index"
-          },
-          {
-            "group": "Ptisn/gouvernance",
-            "pages": [],
-            "root": "/ptisn/gouvernance/index"
-          },
-          {
-            "group": "Ptisn/conclusion",
-            "pages": [],
-            "root": "/ptisn/conclusion/index"
-          },
-          {
             "group": "Ptisn/annexes",
             "pages": [
+              "/ptisn/annexes/f-exemples-profils",
               "/ptisn/annexes/a-synthese-choix",
               "/ptisn/annexes/b-decisions-instruire",
               "/ptisn/annexes/c-principes-mise-en-oeuvre",
@@ -395,6 +389,16 @@
               "/ptisn/annexes/cas-usage-couverture-sanitaire",
               "/ptisn/annexes/cas-usage-pilotage-systeme"
             ]
+          },
+          {
+            "group": "Ptisn/gouvernance",
+            "pages": [],
+            "root": "/ptisn/gouvernance/index"
+          },
+          {
+            "group": "Ptisn/conclusion",
+            "pages": [],
+            "root": "/ptisn/conclusion/index"
           }
         ]
       }

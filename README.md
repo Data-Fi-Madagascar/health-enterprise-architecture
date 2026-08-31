@@ -95,7 +95,7 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 | Topologie | [`02_topologie-nationale-cible/`](./03_ptisn/02_topologie-nationale-cible/) | Architecture réseau nationale |
 | Profils | [`03_profils/`](./03_ptisn/03_profils/) | 15 profils techniques (PT-01 à PT-15) |
 | Alignement | [`04_matrice-alignement/`](./03_ptisn/04_matrice-alignement/) | Matrice profils ↔ capabilités |
-| Exemples | [`05_exemples/`](./03_ptisn/05_exemples/) | Exemples de profils remplis |
+| Exemples | [`08_annexes/f-exemples-profils.md`](./03_ptisn/08_annexes/f-exemples-profils.md) | Exemples de profils remplis |
 | Gouvernance | [`06_gouvernance/`](./03_ptisn/06_gouvernance/) | Gouvernance PTISN |
 | Annexes | [`08_annexes/`](./03_ptisn/08_annexes/) | Cas d'usage VS-01..04, synthèses |
 
@@ -105,7 +105,7 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 |------|--------|---------|
 | Fondations | [`referentiel/fondations/`](./referentiel/fondations/) | Fondations F-01..08 |
 | Principes | [`referentiel/principes/`](./referentiel/principes/) | Principes P-01..18 |
-| Capacités | [`referentiel/capacites/`](./referentiel/capacites/) | 14 capacités CNISN |
+| Capacités | [`referentiel/capacites/`](./referentiel/capacites/) | 16 capacités CNISN |
 | Chapitres | [`referentiel/chapitres/`](./referentiel/chapitres/) | Chapitres ART-0..11 |
 | Composants | [`referentiel/composants/`](./referentiel/composants/) | Composants logiques |
 | Profils | [`referentiel/profils/`](./referentiel/profils/) | Profils PT-01..15 |

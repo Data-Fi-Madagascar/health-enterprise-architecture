@@ -8,6 +8,7 @@ status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: ["artsn", "exigences", "contexte", "niveau-3"]
+related: ["ARTSN", "CAESN"]
 ---
 
 # Exigences contextuelles nationales

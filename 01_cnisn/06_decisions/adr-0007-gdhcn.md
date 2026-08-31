@@ -8,6 +8,7 @@ status: candidate
 date: 2026-08-13
 owner: DEPSI
 tags: ["adr", "confiance", "gdhc", "transfrontalier", "certificat"]
+related: ["Lot L6", "Lot L7", "PT-14", "PT-15"]
 ---
 
 # ADR-0007 : Adoption du GDHCN pour la confiance transfrontalière

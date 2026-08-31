@@ -7,6 +7,7 @@ status: draft
 last_reviewed: 2026-08-24
 owner: Ministère de la Santé Publique
 tags: ["caesn", "lieu", "loc-02", "overview"]
+related: ["PP-06", "CMP-01"]
 ---
 
 # Centre de santé de base (CSB)

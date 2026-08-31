@@ -15,8 +15,8 @@ implements: []
 applies_to: ["ENF-4"]
 related: []
 tags: ["artsn", "niveau-3", "chapitre", "ART-6"]
----
 realized_by: ["WP-04"]
+---
 # Analytique et restitution
 
 **Contenu normatif.** L’architecture doit imposer une **séparation étanche entre le stockage opérationnel et le stockage analytique** (CQRS). L’entrepôt analytique doit être alimenté par des pipelines automatisés intégrant un moteur de masquage irréversible, et doit supporter nativement quatre types de requêtes : projections tabulaires, parcours de graphes, réconciliation comptable et fusion de signaux géospatiaux.

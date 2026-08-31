@@ -47,7 +47,7 @@ Le CNISN est organisé en huit parties qui couvrent l'ensemble du cycle de vie d
 |--------|---------|------------|
 | Préambule | Positionnement, portée, articulation | Tous |
 | Principes | 25 principes (catégories A-F) | DEPSI, architectes |
-| Capacités | 14 capacités d'interopérabilité | DEPSI, équipes techniques |
+| Capacités | 16 capacités d'interopérabilité | DEPSI, équipes techniques |
 | Gouvernance | Instances, processus, responsabilités | Décideurs, gouvernance |
 | Conformité | Critères, tests, homologation | Équipes techniques |
 | Standards | Normes obligatoires et standards recommandés | Équipes techniques |
@@ -67,7 +67,7 @@ La direction métier ou le responsable de programme cherche à comprendre les r�
 
 ### 3.3 Équipe technique / DEPSI
 
-L'équipe technique ou la DEPSI cherche à implémenter des échanges conformes au CNISN. Elle doit lire l'ensemble du préambule, les 25 principes, les 14 capacités, la conformité pour les critères et tests, puis se référer à l'ARTSN (niveau 3) pour les patterns techniques et au PTISN (niveau 4) pour les standards et profils.
+L'équipe technique ou la DEPSI cherche à implémenter des échanges conformes au CNISN. Elle doit lire l'ensemble du préambule, les 25 principes, les 16 capacités, la conformité pour les critères et tests, puis se référer à l'ARTSN (niveau 3) pour les patterns techniques et au PTISN (niveau 4) pour les standards et profils.
 
 ### 3.4 Partenaire technique
 
@@ -86,7 +86,7 @@ Les principes sont organisés en six catégories qui couvrent l'ensemble des dim
 | **E** : Neutralité et réversibilité | P-INT-19 à P-INT-22 | Neutralité technologique, portabilité, progressivité |
 | **F** : Conformité | P-INT-23 à P-INT-25 | Preuves, applicabilité, réévaluation |
 
-## 5. Les 14 capacités d'interopérabilité
+## 5. Les 16 capacités d'interopérabilité
 
 | Capacité | Famille | Description |
 |----------|---------|-------------|
@@ -145,7 +145,7 @@ Le guide de lecture s'accompagne de la matrice de lecture offrant une vue crois�
 - [std-0007: STD-0007 : Standard terminologique : SNOMED CT](05_standards/std-0007-snomed-ct.md)
 - [std-0005: STD-0005 : Norme d'identité patient : PIXm/PDQm](05_standards/std-0005-identite-pixm.md)
 - [std-0004: STD-0004 : Norme de données agrégées : mADX](05_standards/std-0004-madx.md)
-- [std-0006: STD-0006 : Norme terminologique : CIM-10 + LOINC](05_standards/std-0006-terminologie.md)
+- [std-0006: STD-0006 : Norme terminologique : CIM-11 + LOINC](05_standards/std-0006-terminologie.md)
 - [standards: Normes et standards d'architecture](05_standards/index.md)
 - [norm-008: NORM-008 : Tripartite Plus OMS–WOAH–FAO–PNUE](05_standards/norm-008-tripartite.md)
 - [std-0000: STD-0000 : <Titre de la norme>](05_standards/std-0000-template.md)
@@ -153,7 +153,7 @@ Le guide de lecture s'accompagne de la matrice de lecture offrant une vue crois�
 - [cnisn-trajectoire: Partie V : Trajectoire de mise en œuvre](05_trajectoire/index.md)
 - [adr-0003: ADR-0003 : Utilisation de HL7 FHIR comme standard d'interopérabilité](06_decisions/adr-0003-fhir.md)
 - [adr-0005: ADR-0005 : Adoption de FHIR Consent pour le consentement structuré](06_decisions/adr-0005-consentement.md)
-- [adr-0009: ADR-0009 : Adoption d'un référentiel terminologique national (CIM-10 + LOINC)](06_decisions/adr-0009-terminologie.md)
+- [adr-0009: ADR-0009 : Adoption d'un référentiel terminologique national (CIM-11 + LOINC)](06_decisions/adr-0009-terminologie.md)
 - [adr-0004: ADR-0004 : Adoption des profils IHE PIXm/PDQm pour la résolution d'identité](06_decisions/adr-0004-identite.md)
 - [adr-0001: ADR-0001 : Adoption de X-Road comme plateforme d'échange interinstitutionnel](06_decisions/adr-0001-x-road.md)
 - [decisions: Décisions d'architecture (ADR)](06_decisions/index.md)

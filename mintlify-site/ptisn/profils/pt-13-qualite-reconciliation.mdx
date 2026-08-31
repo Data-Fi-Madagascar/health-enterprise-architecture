@@ -1,5 +1,5 @@
 ---
-title: "PT-13 — Profil technique national"
+title: "Profil technique national"
 description: "Niveau 4 — Configurations, API et contrats d'interfaces par initiative"
 owner: "Équipes techniques des initiatives"
 version: "1.0.0"
@@ -8,19 +8,57 @@ last_reviewed: "2026-07-31"
 ---
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-## 1. Capacités CNISN
+## 1. Objet et périmètre
 
-- CAP-INT-11 — Qualité et réconciliation.
+Le **profil PT-13 — Qualité et réconciliation** définit les services de validation, de qualité et de réconciliation des données du PTISN. Il garantit la cohérence entre sources, référentiels et projections analytiques.
 
-## 2. Chapitres ART applicables
+Périmètre : validation des contrats, qualité des données, réconciliation, gestion des anomalies, publication d’indicateurs de qualité. Hors périmètre : le profilage sémantique (voir PT-07).
 
-- ART-4 ;
-- ART-5 ;
-- ART-6.
+## 2. Capacité CNISN
 
-## 3. Services nationaux
+- CAP-INT-11: Qualité et réconciliation
+
+## 3. Chapitres ART applicables
+
+- ART-4: Référentiels de métadonnées de gestion
+- ART-5: Cohérence et qualité des données
+- ART-6: Analytique et restitution
+
+## 4. Acteurs (Actors)
+
+- **Validateur de contrats (Contract Validator)** — exécute les tests de contrôle par interface (consomme PT-03).
+- **Service de qualité (Data Quality Service)** — mesure et publie les indicateurs de qualité.
+- **Service de réconciliation (Reconciliation Service)** — compare sources, référentiels et projections.
+- **Gestionnaire d’anomalies (Anomaly Manager)** — traite et documente les écarts détectés.
+
+*Référence — capacité CNISN mise en œuvre : CAP-INT-11.
+## 5. Transactions
+
+| Transaction | Acteurs | R/O | Standard |
+|----|----|----|----|
+| T1 — Validation d’un contrat | Validateur → Registre (PT-03) | R | Tests de contrôle par interface |
+| T2 — Réconciliation de données | Réconciliation → Sources/Référentiels | R | Comparaison documentée |
+| T3 — Publication d’indicateurs de qualité | Qualité → Consommateur | O | Indicateurs de qualité |
+
+R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
+
+*Référence — capacité CNISN mise en œuvre : CAP-INT-11.
+## 6. Content Modules
+
+- **Rapport de test de contrat** : structure, terminologie, identifiants, métadonnées, cardinalités, valeurs obligatoires, compatibilité de version, droits d’émission, cohérence métier.
+- **Rapport de réconciliation** : écarts entre système source/plateforme, deux référentiels, deux versions, journal/projection, opérationnel/analytique, agrégats de sources différentes.
+- **Indicateurs de qualité** : mesures publiées et versionnées.
+
+## 7. Options
+
+- **O1 — Produit** : aucun produit unique retenu ; les règles de qualité restent explicites, portables, versionnées, testables, indépendantes d’un outil de visualisation.
+- **O2 — Périmètre de réconciliation** : selon les paires de sources à comparer (source/plateforme, référentiels, versions, journal/projection, opérationnel/analytique, agrégats).
+
+## 8. Service national
+
+Services nationaux concernés :
 
 - service de validation des contrats ;
 - service de qualité ;
@@ -28,9 +66,9 @@ last_reviewed: "2026-07-31"
 - service de gestion des anomalies ;
 - service de publication des indicateurs de qualité.
 
-## 4. Profils de contrôle
+## 9. Formats et standards recommandés
 
-Chaque interface doit disposer de tests portant sur :
+Chaque interface doit disposer de tests de contrôle portant sur :
 
 - structure ;
 - terminologie ;
@@ -42,22 +80,10 @@ Chaque interface doit disposer de tests portant sur :
 - droits d’émission ;
 - cohérence métier.
 
-## 5. Réconciliation
+*Référence — normes et standards CNISN : [01_cnisn/05_standards](/cnisn/standards/index).
+## 10. Exigences
 
-La réconciliation doit pouvoir comparer :
-
-- système source et plateforme ;
-- deux référentiels ;
-- deux versions ;
-- journal et projection ;
-- données opérationnelles et analytiques ;
-- valeurs agrégées issues de sources différentes.
-
-## 6. Produit
-
-Aucun produit unique n’est retenu.
-
-Les règles de qualité doivent rester :
+Aucun produit unique n’est retenu. Les règles de qualité doivent rester :
 
 - explicites ;
 - portables ;
@@ -65,8 +91,18 @@ Les règles de qualité doivent rester :
 - testables ;
 - indépendantes d’un outil de visualisation.
 
-------------------------------------------------------------------------
+## 11. Déclaration de conformité (Integration Statement)
 
-*Rattachement : CMP-05, CAP-INT-11, ART-4, ART-5, ART-6 · fiche PT-13*
+Conformité attestée par des tests de contrôle exécutés par interface, la publication d’indicateurs de qualité, et la gestion documentée des anomalies.
+
+## 12. Articulation avec les autres profils
+
+- PT-03: catalogue des services et registre des contrats
+- PT-09: analytique et exposition de données
+- PT-08: échange de données agrégées
+
+## 13. Limites et dépendances
+
+La réconciliation dépend des référentiels (PT-04, PT-05, PT-06) et de la terminologie (PT-07). Aucun produit unique n’est imposé ; les règles de qualité sont portables et versionnées.
 
 <!-- END:GENERATED -->

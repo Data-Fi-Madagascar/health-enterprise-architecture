@@ -177,6 +177,10 @@ def sidebar_title_for(title: str):
 
 
 def render_page(dest: Path, src_rel: str, url_map: dict, subtitle: str):
+    src_path = ROOT / src_rel
+    if not src_path.exists():
+        print(f"[warn] source manquant ignoré : {src_rel}", file=sys.stderr)
+        return
     title, meta = parse_source(src_rel)
     title = title or PurePosixPath(src_rel).stem
     body = rewrite_links(body_without_frontmatter(src_rel), src_rel, url_map)

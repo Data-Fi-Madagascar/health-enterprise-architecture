@@ -35,9 +35,6 @@ ART-8B : Modélisation de relations en graphe constitue un chapitre du **cadre n
 
 **Statut : candidate**
 
-realized_by: ["WP-07"]
-# Modélisation de relations en graphe
-
 **Contenu normatif.** Pour la surveillance et la cartographie de structures relationnelles ouvertes, récursives et sans limites définies, l’architecture impose l’utilisation d’un **stockage non-relationnel** (*Graph Store*). Les entités et leurs interactions doivent y être traitées comme des nœuds et des arcs qualifiés.
 
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (réseaux de contacts épidémiques, propagation de foyers de zoonoses), cette discipline seule permet de calculer instantanément les chaînes de transmission et d’identifier les super-propagateurs sans rompre le pipeline.

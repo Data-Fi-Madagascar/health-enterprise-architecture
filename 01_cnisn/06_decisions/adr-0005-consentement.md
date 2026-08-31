@@ -8,6 +8,7 @@ status: candidate
 date: 2026-08-13
 owner: DEPSI
 tags: ["adr", "consentement", "fhir", "souveraineté", "données"]
+related: ["Lot L5", "PT-10", "PT-11"]
 ---
 
 # ADR-0005 : Adoption de FHIR Consent pour le consentement structuré

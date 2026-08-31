@@ -8,6 +8,7 @@ status: active
 last_reviewed: 2026-08-13
 owner: Direction de la Surveillance Sanitaire
 tags: ["normes", "rsi", "oms", "international", "obligatoire"]
+related: ["PT-15"]
 ---
 
 # NORM-007 : Règlement Sanitaire International (RSI 2005)

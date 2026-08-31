@@ -8,6 +8,7 @@ status: active
 last_reviewed: 2026-08-13
 owner: Secrétariat Général du Ministère
 tags: ["normes", "tripartite", "one-health", "oms", "woah", "fao", "pnue", "international"]
+related: ["PT-15"]
 ---
 
 # NORM-008 : Tripartite Plus OMS–WOAH–FAO–PNUE

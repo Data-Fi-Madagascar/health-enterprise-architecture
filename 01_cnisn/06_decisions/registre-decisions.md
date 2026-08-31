@@ -77,7 +77,7 @@ Chaque ADR enregistrée ici est un choix structurant, daté et traçable, produi
 
 | ID | Titre | Statut | Date | Propriétaire | Impact |
 |----|-------|--------|------|--------------|--------|
-| ADR-0009 | Terminologie nationale (CIM-10 + LOINC + mapping) | **proposé** | 2026-08-13 | DEPSI | Élevé : sémantique commune |
+| ADR-0009 | Terminologie nationale (CIM-11 + LOINC + mapping) | **proposé** | 2026-08-13 | DEPSI | Élevé : sémantique commune |
 
 ### Cadre légal et gouvernance
 
@@ -131,7 +131,7 @@ Chaque ADR enregistrée ici est un choix structurant, daté et traçable, produi
 - **ADR-0006** : Adoption de l'Identité Nationale Patient (INP) via PIXm/PDQm (`01_cnisn/06_decisions/adr-0006-inp.md`)
 - **ADR-0007** : Adoption du GDHCN pour la confiance transfrontalière (`01_cnisn/06_decisions/adr-0007-gdhcn.md`)
 - **ADR-0008** : Adoption d'ATNA et journalisation pour l'audit et la traçabilité (`01_cnisn/06_decisions/adr-0008-atna.md`)
-- **ADR-0009** : Adoption d'un référentiel terminologique national (CIM-10 + LOINC) (`01_cnisn/06_decisions/adr-0009-terminologie.md`)
+- **ADR-0009** : Adoption d'un référentiel terminologique national (CIM-11 + LOINC) (`01_cnisn/06_decisions/adr-0009-terminologie.md`)
 - **ADR-0010** : Cadre légal et mandat d'opposabilité du CNASN (`01_cnisn/06_decisions/adr-0010-cadre-legal.md`)
 - **Template ADR** : <Titre de la décision> (`01_cnisn/06_decisions/adr-0000-template.md`)
 - **Index des décisions** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)

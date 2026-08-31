@@ -8,6 +8,7 @@ status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
 tags: ["artsn", "dictionnaire", "donnees", "semantique", "niveau-3"]
+related: ["ARTSN", "CNISN", "CAESN"]
 ---
 
 # Dictionnaire de données fonctionnelles
@@ -164,7 +165,7 @@ Ce concept est mobilisé par les capacités [CAP-01](../../referentiel/capabilit
 
 - **Type** : Événement
 - **Contraintes** : Date et heure de la consultation ; identification du prestataire ; motivation de la consultation ; diagnostic(s) ; prescription(s)
-- **Référentiel source** : FHIR Encounter, CIM-10 (diagnostics)
+- **Référentiel source** : FHIR Encounter, CIM-11 (diagnostics)
 
 #### Rattachement
 
@@ -761,7 +762,7 @@ Ce concept est mobilisé par les capacités [CAP-INT-13](../../referentiel/capac
 
 - **ALGY** : Allergies et intolérances — AllergyIntolerance — Substance, réaction, sévérité, statut
 - **MDCA** : Médicaments actuels — MedicationStatement — Produit, dosage, statut, indication
-- **PROB** : Problèmes de santé — Condition — Code CIM-10, onset, statut
+- **PROB** : Problèmes de santé — Condition — Code CIM-11, onset, statut
 - **HIST** : Antécédents — Condition — Épisodes passés, résolus
 - **IMMU** : Vaccinations — Immunization — Vaccin, date, lot, statut
 - **VITAL** : Signes vitaux — Observation — Mesures (TA, FC, SpO2, température)

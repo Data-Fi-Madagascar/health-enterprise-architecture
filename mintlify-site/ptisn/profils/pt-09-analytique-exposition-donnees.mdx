@@ -1,5 +1,5 @@
 ---
-title: "PT-09 — Profil technique national"
+title: "Profil technique national"
 description: "Niveau 4 — Configurations, API et contrats d'interfaces par initiative"
 owner: "Équipes techniques des initiatives"
 version: "1.0.0"
@@ -8,20 +8,59 @@ last_reviewed: "2026-07-31"
 ---
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-## 1. Capacité CNISN
+## 1. Objet et périmètre
 
-**CAP-INT-07 — Accès et exposition des données analytiques**
+Le **profil PT-09 — Analytique et exposition de données** définit les services nationaux d’accès et d’exposition des données analytiques. Il couvre l’entrepôt, les indicateurs, la consultation, la qualité, la réconciliation et la publication de jeux de données autorisés.
 
-## 2. Chapitres ART applicables
+Périmètre : exposition et restitution analytique. Hors périmètre : l’échange de données agrégées brutes (voir PT-08) et la collecte métier.
 
-- ART-3 selon le profil retenu ;
-- ART-5 ;
-- ART-6 ;
-- ART-7.
+## 2. Capacité CNISN
 
-## 3. Services nationaux
+CAP-INT-07: Accès et exposition des données analytiques
+
+## 3. Chapitres ART applicables
+
+- ART-3: Historisation événementielle et profils de déploiement selon le profil retenu
+- ART-5: Cohérence et qualité des données
+- ART-6: Analytique et restitution
+- ART-7: Sécurité, contrôle d’accès et résidence de la donnée
+
+## 4. Acteurs (Actors)
+
+- **Producteur de données (Data Publisher)** — système de collecte ou entrepôt amont alimentant l’analytique.
+- **Entrepôt analytique national (Analytics Repository)** — tient les projections, indicateurs et historisation.
+- **Consommateur analytique (Data Consumer)** — tableau de bord, programme ou partenaire consultant les données exposées.
+- **Service de publication (Data Publication Service)** — diffuse les jeux de données autorisés.
+
+*Référence — capacité CNISN mise en œuvre : CAP-INT-07.
+## 5. Transactions
+
+| Transaction | Acteurs | R/O | Standard |
+|----|----|----|----|
+| T1 — Consultation d’indicateurs (API REST) | Consommateur → Entrepôt | R | REST/OpenAPI |
+| T2 — Réception de données agrégées | Producteur → Entrepôt | R | mADX (voir PT-08) |
+| T3 — Publication de jeu de données autorisé | Entrepôt → Service de publication | O | Export ouvert documenté et versionné |
+
+R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
+
+*Référence — capacité CNISN mise en œuvre : CAP-INT-07.
+## 6. Content Modules
+
+- **HL7 FHIR MeasureReport** : indicateurs agrégés exposés.
+- **Requêtes d’indicateurs** : paramétrées par structure (PT-06), terminologie (PT-07), programme, période.
+- **Export tabulaire** : format ouvert, documenté et versionné.
+
+## 7. Options
+
+- **O1 — Produit d’entrepôt** : non retenu à ce stade (choix d’architecture de solution, analyse comparative, homologation, perf, TCO).
+- **O2 — Patrons** : séparation lecture-écriture, projections tabulaires, modèles historiques, état courant, spatio-temporels, historisation événementielle.
+- **O3 — Catalogue de données** : profil national à définir.
+
+## 8. Service national
+
+Services nationaux concernés :
 
 - entrepôt analytique national ;
 - service d’indicateurs ;
@@ -31,20 +70,7 @@ last_reviewed: "2026-07-31"
 - service de tableaux de bord ;
 - service de publication de jeux de données autorisés.
 
-## 4. Patrons applicables
-
-Les initiatives peuvent appliquer :
-
-- séparation lecture-écriture ;
-- projections tabulaires ;
-- modèles historiques ;
-- modèles d’état courant ;
-- modèles spatio-temporels ;
-- historisation événementielle lorsque justifiée.
-
-Le choix du patron est défini dans l’ART et dans le profil d’applicabilité de l’initiative.
-
-## 5. Standards d’exposition
+## 9. Formats et standards recommandés
 
 | Usage                        | Standard ou profil recommandé         |
 |------------------------------|---------------------------------------|
@@ -55,31 +81,23 @@ Le choix du patron est défini dans l’ART et dans le profil d’applicabilité
 | Export tabulaire             | Format ouvert, documenté et versionné |
 | Catalogue de données         | Profil national à définir             |
 
-## 6. Produits
+*Référence — normes et standards CNISN : [01_cnisn/05_standards](/cnisn/standards/index).
+## 10. Exigences
 
-Le PTISN ne retient pas, à ce stade, de produit national unique pour :
+Le PTISN ne retient pas, à ce stade, de produit national unique pour l’entrepôt analytique, la visualisation, le moteur de projection ou l’historisation événementielle. Ces choix relèvent de l’architecture de solution, de l’analyse comparative, de l’homologation, des exigences de performance et du coût total de possession.
 
-- l’entrepôt analytique ;
-- la visualisation ;
-- le moteur de projection ;
-- l’historisation événementielle.
+## 11. Déclaration de conformité (Integration Statement)
 
-Ces choix relèvent :
+La plateforme de traçabilité RMA est reconnue comme **première initiative de validation** du profil analytique national. Son architecture ne devient pas automatiquement obligatoire pour toutes les initiatives.
 
-- de l’architecture de solution ;
-- de l’analyse comparative ;
-- de l’homologation ;
-- des exigences de performance ;
-- du coût total de possession.
+## 12. Articulation avec les autres profils
 
-## 7. Première implémentation
+- PT-08: échange de données agrégées
+- PT-06: référentiel des structures
+- PT-07: terminologie et codification
 
-La plateforme de traçabilité RMA est reconnue comme **première initiative de validation** du profil analytique national.
+## 13. Limites et dépendances
 
-Son architecture ne devient pas automatiquement obligatoire pour toutes les initiatives.
-
-------------------------------------------------------------------------
-
-*Rattachement : CMP-03, CMP-04, CAP-INT-07, ART-3, ART-5, ART-6, ART-7 · fiche PT-09*
+L’exposition analytique dépend de la qualité et de la résidence des données sources (ART-7). Dépendance : entrepôt national et référentiels (PT-06, PT-07). La RMA n’impose pas son architecture à toutes les initiatives.
 
 <!-- END:GENERATED -->

@@ -2,7 +2,7 @@
 
 title: Exemples de profils d'initiative remplis
 id: ptisn-exemples
-domain: 05_exemples
+domain: 08_annexes
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-13

@@ -36,11 +36,11 @@ Ce document définit le modèle d’objets du référentiel. Il est la source de
 | `composant-securite` | `referentiel/composants/` | `cmp-` | axe securite/confiance : CMP-32…38 |
 | `registre-gouvernance` | `referentiel/composants/` | `cmp-` | axe gouvernance : CMP-39…46 |
 | `partie-prenante` | `referentiel/parties-prenantes/` | `pp-` | CAESN (PP-01…10) |
-| `capacite` | `referentiel/capacites/` | `cap-int-` | CNISN (CAP-INT-01…12) |
+| `capacite` | `referentiel/capacites/` | `cap-int-` | CNISN (CAP-INT-01…16) |
 | `fondation` | `referentiel/fondations/` | `f-` | ARTSN (F.1…6) |
 | `exigence` | `referentiel/exigences/` | `enf-`, `ex-` | ARTSN (ENF-1…5, exigences) |
-| `chapitre` | `referentiel/chapitres/` | `art-` | ARTSN (ART-0…11) |
-| `profil` | `referentiel/profils/` | `pt-` | PTISN (PT-01…17) |
+| `chapitre` | `referentiel/chapitres/` | `art-` | ARTSN (ART-0…12) |
+| `profil` | `referentiel/profils/` | `pt-` | PTISN (PT-01…19) |
 | `service` | `referentiel/services/` | `srv-` | services transverses (business / applicatif / technologique) |
 | `acteur` | `referentiel/acteurs/` | `act-` | acteurs métier (organisations, personnes) — CAESN |
 | `role` | `referentiel/roles/` | `rol-` | rôles métier (responsabilités) — CAESN |
@@ -119,6 +119,7 @@ tags: ["cnisn", "autorite", "donnees-de-reference"]
 |--------|---------------|
 | `draft` | Non validé, en rédaction |
 | `active` | Validé et en vigueur |
+| `stable` | Mature, largement adopté, changements rares |
 | `deprecated` | Remplacé, conservé pour historique |
 | `candidate` | Proposé, en attente d’arbitrage (ex. ART-10/11, F.5/6) |
 

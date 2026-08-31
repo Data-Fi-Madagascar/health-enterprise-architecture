@@ -33,6 +33,9 @@
 | 15 | **Session 2026-08-18** : versions, docs.json, traçabilité, OpenFn | ✓ 181 fichiers `1.0.0`, 160 pages navigation, 20 chapitres ARTSN tracés, OpenFn recadré → PT-16 créé |
 | 16 | **Analyse externe Afrique** (2026-08-19) | ✓ 12 pays + 5 cadres régionaux, SNOMED CT ajouté (STD-0007), recommandations documentées |
 | 17 | **Évaluation GDHM** (2026-08-19) | ✓ Cartographie 23 indicateurs OMS, auto-évaluation Phase 2, plan d'action 12 mois |
+| 18 | **Vide législatif et programme de conformité** (2026-08-20) | ✓ Résolu (projet de loi e-santé + ADR-0010 + programme de conformité) |
+| 19 | **Rationalisation de l'état cible** (2026-08-20) | ✓ Résolu (CMP-05/18 en Phase 2, fusion Couche 3) |
+| 20 | **Détection des îlots dans le validateur** (2026-08-20) | ✓ Résolu (`scripts/validate_ref.py`) |
 | 21 | Cohérence physique des enveloppes de lots (`wp-0X` → portefeuille CAESN) | ✓ Résolu |
 | 21 | Fragmentation `ART-2` du knowledge graph | ✓ Résolu (script frontmatter-aware) |
 | 21 | Extraction sémantique du knowledge graph | ✓ Résolu par substitution (frontmatter) |
@@ -41,7 +44,7 @@
 
 ## 1. Numérotation des capacités (PTISN vs CNISN) — ✓ Résolu
 
-Le CNISN définit **14 capacités** (`01_cnisn/02_capacites.md`, Partie II) :
+Le CNISN définit **16 capacités** (`01_cnisn/02_capacites/index.md`, Partie II) :
 
 | N° | Intitulé CNISN |
 |----|----------------|
@@ -63,8 +66,8 @@ Le CNISN définit **14 capacités** (`01_cnisn/02_capacites.md`, Partie II) :
 Le PTISN était rédigé contre une version antérieure du CNISN à **6 capacités**, décalée de la numérotation canonique (ex. « CAP-INT-02 Échange et médiation » au lieu de **CAP-INT-03**). Toutes les références des profils et de la matrice d'alignement étaient fausses.
 
 **Correctifs appliqués (✓) :**
-- Corps des 13 profils PTISN (`03_ptisn/03_profils/pt-*.md`) **et** de leurs 13 sources (`referentiel/profils/pt-*.md`) corrigés vers les numéros CNISN canoniques — chaque corps correspond désormais à son `maps_to` de frontmatter ;
-- §1 de `03_ptisn/04_matrice-alignement.md` réécrit sur les 12 capacités, PT-03 mappé → **CAP-INT-06**, capacités 07-12 couvertes ;
+- Corps des 19 profils PTISN (`03_ptisn/03_profils/pt-*.md`) **et** de leurs 19 sources (`referentiel/profils/pt-*.md`) corrigés vers les numéros CNISN canoniques — chaque corps correspond désormais à son `maps_to` de frontmatter ;
+- §1 de `03_ptisn/04_matrice-alignement.md` réécrit sur les 14 capacités, PT-03 mappé → **CAP-INT-06**, capacités 07-14 couvertes ;
 - Libellé de CAP-INT-01 aligné sur « Résolution d'identité du bénéficiaire » ;
 - Contrôle post-fix : **0 écart** entre `pt-00-index.md`, matrice §1/§2, frontmatter et corps de profils.
 
@@ -120,7 +123,7 @@ Références PTISN décalées d'une unité (ex. « ART-4C — bases d'autorisati
 | Sigle **PTISN** | « Profil Technique d'Interopérabilité de Santé Numérique » (ex-`03_ptisn/00_introduction.md`) | « Profils techniques d'implémentation de la Santé Numérique » (`03_ptisn/index.md`, `acronyms.md`, `scripts/manifest.json`) | ✓ Résolu — `00_introduction.md` aligné sur le sens canonique « implémentation » |
 | Sigle **ART-SN / ARTSN** | Uniformisé en **ARTSN** partout | ✓ Résolu — décision confirmée, uniformisation complète |
 | Capacités **CAP-xx** | CAESN : `CAP-01`…`CAP-16` | ARTSN cite `CAP-04bis` (identitovigilance) | Écart **déjà tracé** (voir §5) |
-| Capacités **CAP-INT-xx** | CNISN : `CAP-INT-01`…`12` | aucune correspondance explicite CAESN ↔ CNISN publiée | ✓ Résolu — table de correspondance publiée (`01_cnisn/08_annexes/e-correspondance-caesn.md`) + liens `maps_to` → `cap-XX` dans les frontmatter `cap-int-*`/`p-int-*` |
+| Capacités **CAP-INT-xx** | CNISN : `CAP-INT-01`…`14` | aucune correspondance explicite CAESN ↔ CNISN publiée | ✓ Résolu — table de correspondance publiée (`01_cnisn/08_annexes/e-correspondance-caesn.md`) + liens `maps_to` → `cap-XX` dans les frontmatter `cap-int-*`/`p-int-*` |
 
 ---
 
@@ -145,12 +148,12 @@ Références PTISN décalées d'une unité (ex. « ART-4C — bases d'autorisati
 
 ## 6. Points de cohérence confirmés (sains)
 
-- **CNISN interne** : Partie II (12 CAP-INT) ↔ `08_annexes/a-matrice-principes-capacites.md` (12 lignes, intitulés identiques). ✓
+- **CNISN interne** : Partie II (16 CAP-INT) ↔ `08_annexes/a-matrice-principes-capacites.md` (16 lignes, intitulés identiques). ✓
 - **PTISN interne** : profils ↔ `08_annexes/a-synthese-choix.md` (X-Road, OpenHIM, PIXm/PDQm, mCSD, SVCM, mADX, IUA/OAuth2, ATNA, FHIR Provenance). ✓
 - **Matrice OpenHIE** (`04_matrice-alignement.md` §3) : cohérente avec les profils. ✓
 - **Alignement PTISN** : `pt-00-index.md`, matrice §1 et §2 → **0 écart** vs frontmatter et corps de profils. ✓
 - **Graphe de relations du référentiel** : aucun cible de relation manquante ou de type erroné ; chaîne trans-niveaux propre ; « orphelins » = feuilles de graphe orienté (normal). ✓ *(Nuance : voir §8 — ces contrôles ne détectent pas les objets sans aucune arête, cf. §2.4.)*
-- **Couverture des liens sources** : les docs CNISN de référence (`01_principes.md`, `02_capacites.md`, `a-matrice-*.md`) relient leurs objets référentiels ; catalogues CAESN couvrent les 16 `CAP-xx` + 4 `VS-xx` (**0 non lié**) ; chapitres ARTSN ne manquent que `art-10/art-11` et `f-5/f-6` (les candidats) ; **aucun lien source pendu**. ✓
+- **Couverture des liens sources** : les docs CNISN de référence (`01_principes.md`, `02_capacites/index.md`, `a-matrice-*.md`) relient leurs objets référentiels ; catalogues CAESN couvrent les 18 `CAP-xx` + 4 `VS-xx` (**0 non lié**) ; chapitres ARTSN ne manquent que `art-10/art-11` et `f-5/f-6` (les candidats) ; **aucun lien source pendu**. ✓
 - **Frontmatter** : ids uniques, owners, tags par niveau cohérents ; structure de fichiers uniforme. ✓
 - **Libellés P-INT** (25 principes CNISN) : présence intégrale dans la matrice principes–capacités. ✓
 
@@ -161,16 +164,16 @@ Références PTISN décalées d'une unité (ex. « ART-4C — bases d'autorisati
 ### Appliqués au cours de l'audit (✓)
 | Priorité | Correctif | Fichiers |
 |----------|-----------|----------|
-| 1 | Renumérotation CAP-INT des 13 profils (corps + sources) | `03_ptisn/03_profils/pt-*.md`, `referentiel/profils/pt-*.md` |
-| 1 | Matrice d'alignement §1 sur les 12 capacités, PT-03 → CAP-INT-06 | `03_ptisn/04_matrice-alignement.md` |
+| 1 | Renumérotation CAP-INT des 19 profils (corps + sources) | `03_ptisn/03_profils/pt-*.md`, `referentiel/profils/pt-*.md` |
+| 1 | Matrice d'alignement §1 sur les 14 capacités, PT-03 → CAP-INT-06 | `03_ptisn/04_matrice-alignement.md` |
 | 2 | ART-4x renumérotés dans les profils et la matrice | `PT-04`, `PT-05`, `PT-10`, `PT-11`, `04_matrice-alignement.md` |
 | 2 | Stubs candidats ART-10, ART-11, F.5, F.6 | `referentiel/chapitres/{ART-10,ART-11}.md`, `referentiel/fondations/{F-5,F-6}.md` |
 | 3 | Nomenclature PTISN → « implémentation » | `03_ptisn/00_introduction.md` |
 | 4 | ART-8 vs ART-8A : intitulés distincts | `02_artsn/04_patterns/{ART-8,index}.md`, `referentiel/chapitres/art-8.md` |
 | 4 | Manifestes cnisn/ptisn complétés (16 + 29) | `scripts/manifest.json` |
-| 5 | Restructuration des capacités CNISN en 5 familles de réponse (family: sur les 12 cap-int ; catalogue `02_capacites.md` scindé en 5 blocs ; PT-03 remappé → CAP-INT-06) | `referentiel/capacites/cap-int-*.md`, `01_cnisn/02_capacites.md`, `referentiel/profils/pt-03.md`, `03_ptisn/04_matrice-alignement.md` |
+| 5 | Restructuration des capacités CNISN en 5 familles de réponse (family: sur les 14 cap-int ; catalogue `02_capacites/index.md` scindé en 5 blocs ; PT-03 remappé → CAP-INT-06) | `referentiel/capacites/cap-int-*.md`, `01_cnisn/02_capacites/index.md`, `referentiel/profils/pt-03.md`, `03_ptisn/04_matrice-alignement.md` |
 | 5 | Annexe B réécrite sur les 5 familles CAP-INT (remplace la taxonomie des 12 « domaines ») | `01_cnisn/08_annexes/b-articulation-art-sn.md` |
-| 5 | Correspondance CAESN CAP-xx ↔ CNISN CAP-INT-xx : `maps_to` → `cap-XX` sur les 12 `cap-int-*` et 25 `p-int-*` ; F-4 rattachée à `CAP-INT-12`/`CAP-16` ; 29 PA/AA/DA → `applies_to` vs-01..04 | `referentiel/capacites/cap-int-*.md`, `referentiel/principes/p-int-*.md`, `referentiel/principes/{pa,aa,da}-*.md`, `referentiel/fondations/f-4.md` |
+| 5 | Correspondance CAESN CAP-xx ↔ CNISN CAP-INT-xx : `maps_to` → `cap-XX` sur les 14 `cap-int-*` et 25 `p-int-*` ; F-4 rattachée à `CAP-INT-12`/`CAP-16` ; 29 PA/AA/DA → `applies_to` vs-01..04 | `referentiel/capacites/cap-int-*.md`, `referentiel/principes/p-int-*.md`, `referentiel/principes/{pa,aa,da}-*.md`, `referentiel/fondations/f-4.md` |
 | 5 | Table de correspondance CAESN↔CNISN (Annexe E) | `01_cnisn/08_annexes/e-correspondance-caesn.md`, `scripts/manifest.json` |
 | 5 | `family` documenté dans le schéma | `referentiel/_schema.md` |
 | 4 | Autodescription ARTSN alignée sur la gouvernance : familles de patterns, pas de sélection de produits ni de configurations (déléguée au PTISN) | `02_artsn/index.md`, `02_artsn/reading-matrix.md`, `00_caesn/10_annexes/glossary.md`, `00_caesn/00_overview/index.md`, `01_cnisn/index.md` |
@@ -263,9 +266,9 @@ Croisement du CNISN (`01_cnisn/`, niveau 2 : principes P-INT, capacités CAP-INT
 
 ### 10.2 Taxonomie de l'annexe B vs taxonomies CNISN
 
-L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspondait ni aux catégories P-INT (A–F) ni aux 12 CAP-INT : 9 capacités jamais couvertes, catégories P-INT E/F sans ligne, domaines sans équivalent CAP-INT.
+L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspondait ni aux catégories P-INT (A–F) ni aux 14 CAP-INT : 9 capacités jamais couvertes, catégories P-INT E/F sans ligne, domaines sans équivalent CAP-INT.
 
-**Correctifs appliqués (✓) :** l'annexe B est réécrite sur les **5 familles de réponse** du CNISN (alignées sur les couches 3-5 et les deux axes de la cartographie ARTSN, cf. `01_cnisn/02_capacites.md`). Chaque famille est explicitement rattachée à ses CAP-INT et à ses réponses ART-SN — les **12 capacités sont couvertes**, y compris CAP-INT-12 (conformité, porté par le processus d'homologation Axe 2/F.4/ART-0) et les catégories P-INT E/F (famille 5). L'ancien vocabulaire résiduel (Observabilité, Historisation, Logistique, Protection/minimisation) est remplacé par les réponses architecturales réelles (ART-0..9, ART-4A..4d, ART-8A/8b/8c, F.2..F.5).
+**Correctifs appliqués (✓) :** l'annexe B est réécrite sur les **5 familles de réponse** du CNISN (alignées sur les couches 3-5 et les deux axes de la cartographie ARTSN, cf. `01_cnisn/02_capacites/index.md`). Chaque famille est explicitement rattachée à ses CAP-INT et à ses réponses ART-SN — les **14 capacités sont couvertes**, y compris CAP-INT-12 (conformité, porté par le processus d'homologation Axe 2/F.4/ART-0) et les catégories P-INT E/F (famille 5). L'ancien vocabulaire résiduel (Observabilité, Historisation, Logistique, Protection/minimisation) est remplacé par les réponses architecturales réelles (ART-0..9, ART-4A..4d, ART-8A/8b/8c, F.2..F.5).
 
 ### 10.3 Gouvernance et homologation — CNASN absent du CNISN
 
@@ -292,7 +295,7 @@ L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspon
 ### 10.6 Points de cohérence confirmés ✓
 
 - **Hiérarchie 4 niveaux** identique (CNISN intro §2 ↔ ARTSN index §3) ; rôles CNISN=principes/capacités, ARTSN=contrats/patrons, PTISN=standards.
-- **Interne CNISN** : `02_capacites.md` + `a-matrice-principes-capacites.md` ↔ relations `cap-int-*.md`/`p-int-*.md` du référentiel (symétriques).
+- **Interne CNISN** : `02_capacites/index.md` + `a-matrice-principes-capacites.md` ↔ relations `cap-int-*.md`/`p-int-*.md` du référentiel (symétriques).
 - **Neutralité technologique** : CNISN « aucun produit » et ARTSN « ne sélectionne pas de produits ni de configurations » — les deux niveaux sont désormais alignés sur la gouvernance ARTSN (familles de patterns validées, pas de mandat technologique unique, `02_artsn/06_gouvernance.md` ; autodescription corrigée dans `02_artsn/index.md`, `reading-matrix.md`, glossaire CAESN, overview CAESN, contraste CNISN) — non-conflit, et le choix des produits/configurations par initiative est explicitement délégué au PTISN (niveau 4). ✓
 - **Dérogations** : CNISN (dérogation enregistrée) ↔ ARTSN (écart = dérogation explicite justifiée).
 - **Renvois pendants** de l'annexe B (ART-10/11, F.5/6) résolus par les stubs candidats ; ART-10 désormais formalisé dans la table de maturité (§10.5).
@@ -307,7 +310,7 @@ L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspon
 ### 10.8 Recommandations (ouvertes — voir §7.7)
 
 1. Créer la traçabilité ARTSN→CNISN dans le référentiel (relier chapitres/exigences/fondations aux CAP-INT/P-INT concernés, ou publier une table de correspondance ART↔CAP-INT).
-2. ~~Aligner l'annexe B du CNISN sur les taxonomies P-INT/CAP-INT~~ — **résolu** : 5 familles de réponse couvrant les 12 CAP-INT (§10.2, §7).
+2. ~~Aligner l'annexe B du CNISN sur les taxonomies P-INT/CAP-INT~~ — **résolu** : 5 familles de réponse couvrant les 14 CAP-INT (§10.2, §7).
 3. Clarifier le rôle du CNASN dans la gouvernance et la conformité du CNISN (hiérarchie, instance d'homologation, critères harmonisés).
 4. Réconcilier le traitement de la logistique (ART-10 candidat vs « non couverte » de la table de maturité ARTSN).
 
@@ -335,7 +338,7 @@ L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspon
 
 **Correctif appliqué (✓) — reclassement + couche de régroupement :**
 - **28 étapes de valeur** (`referentiel/etapes-valeur/vs-01-01…28.md`) — reclassement formel des ex-`PRC-01…28` (id/type/title/tags, corps inchangé) ; `source:` = enveloppe VS-XX, `applies_to` granulaire conservé, `related` = flux.
-- **12 processus métier** (`referentiel/processus/prc-01…12.md`) — 3 par flux de valeur (VS-01…04), contenus **strictement dérivés** des étapes (Objectif de synthèse, Étapes couvertes, Acteurs et Indicateurs = unions) ; `applies_to` = héritage intégral de la VS, `related` = étapes couvertes + flux.
+- **13 processus métier** (`referentiel/processus/prc-01…13.md`) — 3 par flux de valeur (VS-01…04), contenus **strictement dérivés** des étapes (Objectif de synthèse, Étapes couvertes, Acteurs et Indicateurs = unions) ; `applies_to` = héritage intégral de la VS, `related` = étapes couvertes + flux.
 - **13 composants** réaffectés au niveau processus (`applies_to` : étapes → processus couvrants, transformation mécanique depuis le découpage) — un composant soutient désormais des processus complets.
 - **Enveloppes** VS-01…04 : deux blocs catalogue distincts « Étapes de valeur » et « Processus métier ».
 - Traçabilité CAESN↔CNISN **intacte** ; aucun changement de `build_wrappers.py` ni de `manifest.json`.
@@ -343,7 +346,7 @@ L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspon
 **Vérifications (✓) :**
 - `make check` : 54 enveloppes à jour, 0 lien relatif cassé.
 - `validate_ref.rb` : 214 fichiers, 214 objets uniques, 2 erreurs méta connues (`_schema.md`), 0 lien cassé, 0 relation non résolue.
-- `trace_check.py` : 209/213 objets tracés (les 12 processus via `related` → ev → vs → capabilités ; seuls les 4 stubs préexistants ART-10, ART-11, F-5, F-6 restent non tracés).
+- `trace_check.py` : 209/213 objets tracés (les 13 processus via `related` → ev → vs → capabilités ; seuls les 4 stubs préexistants ART-10, ART-11, F-5, F-6 restent non tracés).
 
 ## 13. Restructuration CMP : 13 composants → 18 composants cartographie-cible (2026-08-13) ✓
 
@@ -355,8 +358,8 @@ L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspon
   - Couche 5 (Projections) : CMP-03 (entrepôt Lakehouse), CMP-04 (moteur analytique & IA), CMP-05 (moteur de graphes)
   - Couche 4 (Interopérabilité) : CMP-06 (intégration/médiation), CMP-07 (orchestrateur de parcours), CMP-08 (répertoire clinique), CMP-09 (méta-données), CMP-10 (terminologies), CMP-11 (INP), CMP-12 (éligibilité/CSU), CMP-13 (personnels), CMP-14 (produits/intrants)
   - Couche 3 (Échange) : CMP-15 (API Gateway), CMP-16 (registre schémas), CMP-17 (message broker), CMP-18 (compensateur)
-- **12 processus** (`PRC-04…12`) mis à jour : `applies_to` enrichi avec les CMPs soutenus.
-- **13 profils PTISN** (`PT-01…13`) mis à jour : `applies_to` enrichi avec les CMPs implémentés.
+- **13 processus** (`PRC-01…13`) mis à jour : `applies_to` enrichi avec les CMPs soutenus.
+- **17 profils PTISN** (`PT-01…17`) mis à jour : `applies_to` enrichi avec les CMPs implémentés.
 - **`_index.yaml`** mis à jour : 18 CMPs indexés.
 - **`cartographie-cible.md`** mis à jour : IDs CMP normalisés ajoutés aux sections « Composants associés ».
 - **`_schema.md`** corrigé : ajout `niveau: "0"` et `source: referentiel/_schema.md` (pré-existant).
@@ -547,7 +550,7 @@ Vérification : `grep -r '^version:' --include='*.md' 00_caesn/ 01_cnisn/ 02_art
 
 **Statut : ✓ Résolu**
 
-Champ `related: ["cap-int-XX"]` ajouté dans le frontmatter des 20 chapitres ARTSN. Mapping basé sur `referentiel/chapitres/art-*.md` (`maps_to`) et les 12 capacités CNISN. La traçabilité est désormais **symétrique** (annexes CNISN + frontmatter ARTSN).
+Champ `related: ["cap-int-XX"]` ajouté dans le frontmatter des 20 chapitres ARTSN. Mapping basé sur `referentiel/chapitres/art-*.md` (`maps_to`) et les 14 capacités CNISN. La traçabilité est désormais **symétrique** (annexes CNISN + frontmatter ARTSN).
 
 ### 15.4 OpenFn — positionnement corrigé
 
@@ -651,7 +654,7 @@ L'HEA est architecturalement supérieure à la plupart des pairs africains sur l
 ## 17. Session 2026-08-20 : corrections HEA (niveaux, gouvernance, législation, rationalisation, validateur)
 
 ### 17.1 Labels de niveau erronés — ✓ Résolu
-16 documents CNISN (`01_cnisn/05_standards/*.md`, `01_cnisn/06_decisions/*.md`, `registre-decisions.md`) ouvraient sur `Niveau : niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique` (copie/collage). Remplacés par `niveau 2 : Cadre National d'Interopérabilité de la Santé Numérique`. Phrasage PTISN normalisé (`03_ptisn/05_exemples/index.md`). Vérification : 0 résidu `niveau 1 : Cadre` hors `00_caesn/`.
+16 documents CNISN (`01_cnisn/05_standards/*.md`, `01_cnisn/06_decisions/*.md`, `registre-decisions.md`) ouvraient sur `Niveau : niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique` (copie/collage). Remplacés par `niveau 2 : Cadre National d'Interopérabilité de la Santé Numérique`. Phrasage PTISN normalisé (`03_ptisn/08_annexes/f-exemples-profils.md`). Vérification : 0 résidu `niveau 1 : Cadre` hors `00_caesn/`.
 
 ### 17.2 Autorité et critères d'homologation — ✓ Résolu (conflit §10.3)
 Trois jeux de critères divergeaient (CAESN 12, CNISN 13, ARTSN 5) sans articulation, et l'autorité (CNASN vs comité sectoriel) était ambiguë.

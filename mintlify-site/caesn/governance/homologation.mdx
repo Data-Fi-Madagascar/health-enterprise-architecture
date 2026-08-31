@@ -9,7 +9,7 @@ last_reviewed: "2026-08-13"
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -59,7 +59,7 @@ Toute initiative numérique sanitaire recevant un financement public ou utilisan
 | **C4** | Connexion X-Road | Les échanges inter-systèmes passent-ils par X-Road ? | Architecture d'intégration |
 | **C5** | Sécurité et RBAC | Le RBAC PT-10 est-il implémenté ? | Matrice rôles/permissions |
 | **C6** | Consentement | Le consentement patient (PT-11) est-il géré ? | Architecture du module consentement |
-| **C7** | Souveraineté données | Les données sont-elles hébergées en France ? | Plan d'hébergement |
+| **C7** | Souveraineté données | Les données sont-elles hébergées sur le territoire national (Madagascar) ou dans un environnement conforme à la résidence des données exigée par le cadre ? | Plan d'hébergement |
 | **C8** | Identité nationale | Utilise-t-elle l'INP (pas d'ID parallèle) ? | Architecture identité |
 | **C9** | Traçabilité | L'audit trail (PT-12) est-il implémenté ? | Architecture journalisation |
 | **C10** | Coût total de possession | Le budget est-il réaliste et soutenable ? | Business case 5 ans |
@@ -74,6 +74,8 @@ Toute initiative numérique sanitaire recevant un financement public ou utilisan
 | **C14** | One Health | Données animales/environnementales |
 | **C15** | Mode dégradé | Zone à connectivité limitée |
 | **C16** | Accessibilité | Application grand public |
+
+> **Cohérence inter-niveaux.** Cette checklist d'admission (niveau 1) se superpose aux 13 dimensions de conformité du CNISN (`01_cnisn/04_conformite/index.md` §3) et aux 5 portes architecturales de l'ARTSN. L'autorité d'homologation unique est le **CNASN** ; les critères ne sont pas redondants mais déclinés par couche (voir l'articulation détaillée en §3.1 du CNISN).
 
 ---
 
@@ -101,7 +103,7 @@ Toute initiative numérique sanitaire recevant un financement public ou utilisan
 
 ## 4. Workflow détaillé
 
-### 4.1 Phase 1 — Constitution du dossier (Auteur)
+### 4.1 Phase 1 : Constitution du dossier (Auteur)
 
 | Étape | Action | Livrable | Délai |
 |-------|--------|----------|-------|
@@ -109,7 +111,7 @@ Toute initiative numérique sanitaire recevant un financement public ou utilisan
 | 1.2 | Joindre les preuves techniques | Dossier technique | 5 jours |
 | 1.3 | Soumettre au secrétariat CNASN | Dossier complet | 1 jour |
 
-### 4.2 Phase 2 — Instruction (Secrétariat CNASN)
+### 4.2 Phase 2 : Instruction (Secrétariat CNASN)
 
 | Étape | Action | Livrable | Délai |
 |-------|--------|----------|-------|
@@ -117,7 +119,7 @@ Toute initiative numérique sanitaire recevant un financement public ou utilisan
 | 2.2 | Affecter au comité technique | Fiche d'affectation | 1 jour |
 | 2.3 | Planifier la revue | Ordre du jour | 2 jours |
 
-### 4.3 Phase 3 — Revue technique (Comité technique)
+### 4.3 Phase 3 : Revue technique (Comité technique)
 
 | Étape | Action | Livrable | Délai |
 |-------|--------|----------|-------|
@@ -126,7 +128,7 @@ Toute initiative numérique sanitaire recevant un financement public ou utilisan
 | 3.3 | Rédiger le rapport de revue | Rapport technique | 3 jours |
 | 3.4 | Recommander (approuver / rejeter / dérogation) | Recommandation | 1 jour |
 
-### 4.4 Phase 4 — Décision (CNASN)
+### 4.4 Phase 4 : Décision (CNASN)
 
 | Étape | Action | Livrable | Délai |
 |-------|--------|----------|-------|
@@ -135,7 +137,7 @@ Toute initiative numérique sanitaire recevant un financement public ou utilisan
 | 4.3 | Si dérogation : instruire le dossier | Note de dérogation | 3 jours |
 | 4.4 | Si N3 requis : soumettre à la direction | Note stratégique | 5 jours |
 
-### 4.5 Phase 5 — Publication (DEPSI)
+### 4.5 Phase 5 : Publication (DEPSI)
 
 | Étape | Action | Livrable | Délai |
 |-------|--------|----------|-------|
@@ -213,7 +215,21 @@ Durée totale : variable
 
 ## Références
 
-- **Guide du processus de gouvernance** — Guide du processus de gouvernance (`00_caesn/07_governance/processus-gouvernance.md`)
-- **RACI de gouvernance** — RACI de gouvernance et responsabilités (`00_caesn/07_governance/raci.md`)
-- **Registre des décisions** — Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
-- **Template de modification** — Template — Demande de modification architecturale (`01_cnisn/06_decisions/template-modification.md`)
+- **Guide du processus de gouvernance** : Guide du processus de gouvernance (`00_caesn/07_governance/processus-gouvernance.md`)
+- **RACI de gouvernance** : RACI de gouvernance et responsabilités (`00_caesn/07_governance/raci.md`)
+- **Registre des décisions** : Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
+- **Template de modification** : Template : Demande de modification architecturale (`01_cnisn/06_decisions/template-modification.md`)
+
+## Documents de la section
+
+- [governance-vro: Bureau de Réalisation de la Valeur](/caesn/governance/value-realization-office)
+- [point-de-vigilance-caesn: Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health)](/caesn/governance/point-de-vigilance-caesn)
+- [processus-gouvernance: Guide du processus de gouvernance](/caesn/governance/processus-gouvernance)
+- [governance-raci: RACI de gouvernance et responsabilités](/caesn/governance/raci)
+- [governance: Gouvernance du cadre d'architecture](/caesn/governance/index)
+- cnasen-composition: Composition et fonctionnement du Comité National
+- instances-sectorielles: Instances sectorielles et autorités spécialisées
+- arbitrage-ecarts-caesn-artsn: Proposition d'arbitrage : 5 écarts CAESN ↔ ARTSN
+- [fondement-legal: Fondement légal et cadre législatif de la santé numérique](/caesn/governance/fondement-legal)
+
+<!-- liens-section-auto -->

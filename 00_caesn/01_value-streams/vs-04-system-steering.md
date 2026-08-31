@@ -8,6 +8,7 @@ status: draft
 last_reviewed: 2026-07-03
 owner: Secrétariat Général
 tags: ["flux-de-valeur", "value-stream"]
+related: ["CAP-08", "CAP-16"]
 ---
 
 # Piloter, coordonner et améliorer la performance du système de santé

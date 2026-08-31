@@ -1,6 +1,6 @@
 ---
 
-title: "Partie V : Profil technique d'une initiative"
+title: "Partie V : Template de fiche d'initiative"
 id: ptisn-profil-initiative
 domain: 05_profil-initiative
 version: "1.0.0"
@@ -11,9 +11,9 @@ tags: ["ptisn", "niveau-4", "profils"]
 ---
 
 
-# Partie V : Profil technique d'une initiative
+# Partie V : Template de fiche d'initiative
 
-Le profil technique d'une initiative constitue la fiche de référence pour chaque service exposé ou consommé dans le cadre d'un projet du secteur santé numérique. Toute initiative doit produire une fiche par service, afin de documenter de manière exhaustive les dimensions techniques, organisationnelles et réglementaires qui conditionnent son déploiement. Cette fiche constitue à la fois un outil de cadrage pour les équipes de conception et un artefact de conformité pour les instances de gouvernance.
+Le profil technique d'une initiative constitue la fiche de référence pour chaque service exposé ou consommé dans le cadre d'un projet du secteur santé numérique. Toute initiative doit produire une fiche par service, afin de documenter de manière exhaustive les dimensions techniques, organisationnelles et réglementaires qui conditionnent son déploiement. Cette fiche constitue à la fois un outil de cadrage pour les équipes de conception et un artefact de conformité pour les instances de gouvernance. Il s'agit d'un **template** : les profils de la Partie III (PT-01…PT-19) sont les profils nationaux de référence, tandis que cette Partie V décrit la structure de la fiche à instancier pour chaque initiative concrète.
 
 ## 1. Identification
 

@@ -8,7 +8,7 @@ status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: ["artsn", "chapitres", "ART-6", "niveau-3"]
-related: ["CAP-INT-07", "ART-6"]
+related: ["CAP-INT-07"]
 ---
 
 # Analytique et restitution
@@ -32,9 +32,6 @@ ART-6 : Analytique et restitution constitue un chapitre du **cadre normatif oppo
 
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
-
-realized_by: ["WP-04"]
-# Analytique et restitution
 
 **Contenu normatif.** L’architecture doit imposer une **séparation étanche entre le stockage opérationnel et le stockage analytique** (CQRS). L’entrepôt analytique doit être alimenté par des pipelines automatisés intégrant un moteur de masquage irréversible, et doit supporter nativement quatre types de requêtes : projections tabulaires, parcours de graphes, réconciliation comptable et fusion de signaux géospatiaux.
 

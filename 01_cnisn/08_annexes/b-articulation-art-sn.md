@@ -13,7 +13,7 @@ tags: ["cnisn", "niveau-2", "annexes"]
 
 # Annexe B : Articulation avec l'ARTSN
 
-Les 14 capacités du CNISN sont regroupées en sept familles de réponse (voir Partie II). Chaque famille se traduit par une ou plusieurs réponses architecturales de l'ARTSN : les couches 3 à 6, les deux axes et les extensions transfrontalière et intersectorielle de la cartographie cible, exécutés par les chapitres et fondations du référentiel.
+Les 16 capacités du CNISN sont regroupées en huit familles de réponse (voir Partie II). Chaque famille se traduit par une ou plusieurs réponses architecturales de l'ARTSN : les couches 3 à 6, les deux axes et les extensions transfrontalière et intersectorielle de la cartographie cible, exécutés par les chapitres et fondations du référentiel.
 
 | Famille CNISN | Capacités | Réponse ARTSN |
 |---|---|---|

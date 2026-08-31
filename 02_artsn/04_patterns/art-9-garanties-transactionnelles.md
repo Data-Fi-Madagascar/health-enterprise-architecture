@@ -8,7 +8,7 @@ status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: ["artsn", "chapitres", "ART-9", "niveau-3"]
-related: ["CAP-INT-07", "ART-9"]
+related: ["CAP-INT-07"]
 ---
 
 # Garanties transactionnelles fortes
@@ -34,9 +34,6 @@ ART-9 : Garanties transactionnelles fortes constitue un chapitre du **cadre norm
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 **Statut : candidate**
-
-realized_by: ["WP-06"]
-# Garanties transactionnelles fortes
 
 **Contenu normatif.** Pour tout mouvement de valeur monétaire ou physique, l’architecture impose une contrainte de **grade comptable strict** basée sur un registre immuable, garantissant l’équilibre parfait des comptes (équation cible : *entrées − sorties = solde*). Toute écriture doit être associée à une signature non répudiable et un numéro de suivi de lot.
 

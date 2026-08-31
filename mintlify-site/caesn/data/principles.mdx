@@ -9,7 +9,7 @@ last_reviewed: "2026-07-03"
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -27,21 +27,19 @@ Les principes d'architecture transversaux s'appliquent à toutes les données du
 ## Catalogue des principes de données
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### DA-01 — Les données de santé sont un actif stratégique national
+### Les données de santé sont un actif stratégique national
 
 #### Signification
 
-Les données produites par le système de santé constituent un actif stratégique national : leur valeur dépasse les usages d’un seul système ou d’un seul partenaire. Elles doivent être gouvernées comme un bien public, au service de la santé de la population et du pilotage du système.
+Les données produites par le système de santé constituent un actif stratégique national : leur valeur dépasse les usages d’un seul système ou d’un seul partenaire. Elles doivent être gouvernées comme un bien public, au service de la santé de la population et du pilotage du système.
 
 #### Implications
 
 La gouvernance des données de santé relève du Ministère de la Santé Publique. Aucun partenaire ne peut en revendiquer le contrôle exclusif, ni restreindre l’accès des autorités nationales aux données dont la finalité de santé publique justifie l’usage. Les règles d’accès, de partage et de réutilisation sont définies par l’État, pas par les fournisseurs ou les bailleurs.
 
-*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-01*
-
-### DA-02 — Une donnée doit être collectée une seule fois et réutilisée plusieurs fois
+### Une donnée doit être collectée une seule fois et réutilisée plusieurs fois
 
 #### Signification
 
@@ -49,11 +47,9 @@ La collecte répétée d’une même donnée à plusieurs endroits crée de la c
 
 #### Implications
 
-Toute nouvelle collecte vérifie d’abord l’existence de données déjà disponibles dans les systèmes ou référentiels nationaux. La donnée existante est réutilisée par référence ; une saisie supplémentaire n’est justifiée que si la donnée n’existe nulle part à la qualité requise.
+Toute nouvelle collecte vérifie d’abord l’existence de données déjà disponibles dans les systèmes ou référentiels nationaux. La donnée existante est réutilisée par référence ; une saisie supplémentaire n’est justifiée que si la donnée n’existe nulle part à la qualité requise.
 
-*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-02*
-
-### DA-03 — Les référentiels nationaux sont les sources de vérité
+### Les référentiels nationaux sont les sources de vérité
 
 #### Signification
 
@@ -63,33 +59,27 @@ Les données clés du système de santé doivent être rattachées à des réfé
 
 Les systèmes utilisent les référentiels nationaux (formations sanitaires, géographie, indicateurs, agents, produits, bénéficiaires) au lieu de créer leurs propres listes locales. Les identifiants de référence sont partagés et résolus auprès du référentiel officiel, y compris en mode hors ligne via des copies synchronisées autorisées.
 
-*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-03*
-
-### DA-04 — Les données opérationnelles et analytiques doivent être distinguées
+### Les données opérationnelles et analytiques doivent être distinguées
 
 #### Signification
 
-Les systèmes de prestation et les systèmes de reporting répondent à des besoins différents et ne doivent pas être confondus. Faire porter l’analyse sur un système opérationnel dégrade la prestation ; alimenter la décision uniquement par des saisies dédiées au reporting fausse les données.
+Les systèmes de prestation et les systèmes de reporting répondent à des besoins différents et ne doivent pas être confondus. Faire porter l’analyse sur un système opérationnel dégrade la prestation ; alimenter la décision uniquement par des saisies dédiées au reporting fausse les données.
 
 #### Implications
 
 Les données circulent des systèmes opérationnels vers les systèmes analytiques selon des règles d’intégration, de qualité et de sécurité. Les deux types de systèmes coexistent avec des responsabilités distinctes, et les flux entre eux sont définis, pas improvisés.
 
-*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-04*
-
-### DA-05 — La qualité des données est une responsabilité partagée
+### La qualité des données est une responsabilité partagée
 
 #### Signification
 
-La qualité des données ne peut être imposée uniquement par le niveau central : elle se construit là où la donnée est saisie et utilisée. Une donnée mal renseignée à la source n’est réparable ni par les entrepôts ni par les tableaux de bord.
+La qualité des données ne peut être imposée uniquement par le niveau central : elle se construit là où la donnée est saisie et utilisée. Une donnée mal renseignée à la source n’est réparable ni par les entrepôts ni par les tableaux de bord.
 
 #### Implications
 
 Les systèmes intègrent des contrôles à la saisie, des retours aux producteurs de données et des revues régulières de qualité. Les responsabilités sont réparties entre les producteurs, les gestionnaires de référentiels et le niveau central, chacun avec des indicateurs mesurables.
 
-*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-05*
-
-### DA-06 — Les données doivent être utilisées pour des décisions réelles
+### Les données doivent être utilisées pour des décisions réelles
 
 #### Signification
 
@@ -99,21 +89,17 @@ Un tableau de bord n’a de valeur que s’il soutient un processus de décision
 
 Toute production de rapports ou de visualisations est liée à une revue, un arbitrage, une allocation de ressources ou une action d’amélioration. Chaque indicateur publié a un décideur, un rythme de revue et un usage concret documenté.
 
-*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-06*
-
-### DA-07 — Les données personnelles de santé doivent être protégées dès la conception
+### Les données personnelles de santé doivent être protégées dès la conception
 
 #### Signification
 
-La confiance dans le système national dépend de la protection des données sensibles de santé. Une fuite ou un usage détourné n’atteint pas seulement un individu : elle érode la confiance de toute la population dans le numérique de santé.
+La confiance dans le système national dépend de la protection des données sensibles de santé. Une fuite ou un usage détourné n’atteint pas seulement un individu : elle érode la confiance de toute la population dans le numérique de santé.
 
 #### Implications
 
 Confidentialité, gestion des accès, traçabilité, consentement et limitation des usages sont intégrés dès la conception. Ces garanties s’appliquent à toutes les données personnelles de santé, quel que soit le système qui les traite, y compris en mode hors ligne et lors des échanges interinstitutionnels.
 
-*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-07*
-
-### DA-08 — Les échanges de données doivent passer par des mécanismes gouvernés
+### Les échanges de données doivent passer par des mécanismes gouvernés
 
 #### Signification
 
@@ -122,8 +108,6 @@ Les échanges directs, informels ou propriétaires entre systèmes augmentent le
 #### Implications
 
 Les échanges utilisent la couche nationale d’échange ou les mécanismes homologués par l’architecture de référence technique. Un échange hors de ces mécanismes est une exception documentée, limitée dans le temps et soumise à validation.
-
-*Rattachement : VS-01, VS-02, VS-03, VS-04 · fiche DA-08*
 
 <!-- END:GENERATED -->
 ## Liens
@@ -134,7 +118,7 @@ Les échanges utilisent la couche nationale d’échange ou les mécanismes homo
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
-- **Principes d'architecture** — Principes d'architecture (`00_caesn/02_principles/index.md`)
-- **Domaines de données** — Domaines de données prioritaires (`00_caesn/04_data/domains.md`)
-- **Gouvernance des données** — Gouvernance, qualité et protection des données (`00_caesn/04_data/governance.md`)
+- **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
+- **Principes d'architecture** : Principes d'architecture (`00_caesn/02_principles/index.md`)
+- **Domaines de données** : Domaines de données prioritaires (`00_caesn/04_data/domains.md`)
+- **Gouvernance des données** : Gouvernance, qualité et protection des données (`00_caesn/04_data/governance.md`)

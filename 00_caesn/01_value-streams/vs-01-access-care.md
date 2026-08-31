@@ -8,6 +8,7 @@ status: draft
 last_reviewed: 2026-07-03
 owner: Direction des soins
 tags: ["flux-de-valeur", "value-stream"]
+related: ["CAP-01", "CAP-02"]
 ---
 
 # Accéder à des services de santé essentiels, intégrés, équitables et de qualité
@@ -70,7 +71,6 @@ Ce flux couvre l’ensemble du parcours d’un patient, depuis la reconnaissance
 - [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md)
 
 <!-- END:GENERATED -->
-## Étapes de valeur
 
 <!-- BEGIN:GENERATED mode=catalogue source=referentiel/etapes-valeur/vs-01-01.md,referentiel/etapes-valeur/vs-01-02.md,referentiel/etapes-valeur/vs-01-03.md,referentiel/etapes-valeur/vs-01-04.md,referentiel/etapes-valeur/vs-01-05.md,referentiel/etapes-valeur/vs-01-06.md,referentiel/etapes-valeur/vs-01-07.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
@@ -282,7 +282,6 @@ Patient, famille, agent de santé communautaire, personnel d'accueil, registre p
 
 Taux de recours aux soins, délai moyen d'accès à une formation sanitaire, taux de dossiers ouverts, délai d'enregistrement
 
-performed_by: ["ROL-02"]
 ### Prestation des soins cliniques
 
 #### Objectif

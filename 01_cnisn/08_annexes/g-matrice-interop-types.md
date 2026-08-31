@@ -82,7 +82,7 @@ Cette annexe rend explicite la couverture des quatre types d'interopérabilité 
 | STD-0003 : X-Road | ● | | ● | |
 | STD-0004 : mADX | ● | ● | | |
 | STD-0005 : PIXm/PDQm | ● | ● | | |
-| STD-0006 : CIM-10 + LOINC | | ● | | |
+| STD-0006 : CIM-11 + LOINC | | ● | | |
 | NORM-007 : RSI 2005 | | | | ● |
 | NORM-008 : Tripartite Plus | | | ● | ● |
 
@@ -139,6 +139,6 @@ Cette annexe rend explicite la couverture des quatre types d'interopérabilité 
 
 ## 7. Observation
 
-Les 14 capacités, 25 principes et 8 standards du CNISN couvrent **l'ensemble des quatre types d'interopérabilité** sans nécessiter de taxonomie explicite supplémentaire. La matrice ci-dessus rend cette couverture visible et vérifiable.
+Les 16 capacités, 25 principes et 8 standards du CNISN couvrent **l'ensemble des quatre types d'interopérabilité** sans nécessiter de taxonomie explicite supplémentaire. La matrice ci-dessus rend cette couverture visible et vérifiable.
 
 L'interopérabilité **organisationnelle** est la plus largement couverte (10 capacités, 11 principes), ce qui reflète la nature governance-first du CNISN. L'interopérabilité **technique** est couverte par 6 capacités et 9 principes, principalement via les standards FHIR, X-Road et mADX.

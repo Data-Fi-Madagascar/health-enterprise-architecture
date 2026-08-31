@@ -8,6 +8,7 @@ status: active
 date: 2026-07-01
 owner: DEPSI
 tags: ["adr", "identité", "pixm", "pdqm", "ihe"]
+related: ["Lot L3", "PT-04"]
 ---
 
 # ADR-0004 : Adoption des profils IHE PIXm/PDQm pour la résolution d'identité

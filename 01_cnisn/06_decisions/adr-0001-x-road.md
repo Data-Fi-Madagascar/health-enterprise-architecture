@@ -8,6 +8,7 @@ status: active
 date: 2026-07-01
 owner: DEPSI
 tags: ["adr", "interopérabilité", "x-road", "plateforme"]
+related: ["Lot L3", "Lot L7", "PT-01"]
 ---
 
 # ADR-0001 : Adoption de X-Road comme plateforme d'échange interinstitutionnel

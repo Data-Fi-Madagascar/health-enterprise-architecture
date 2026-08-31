@@ -66,6 +66,38 @@ for f in glob.glob('**/*.md', recursive=True):
 EOF
 ```
 
+## Qualité rédactionnelle de type Gartner
+
+Tout document produit dans ce dépôt doit respecter la **qualité rédactionnelle de type Gartner**. Cette norme s'applique à tous les types de documents : analyse, spécification, guide, référentiel, ADR, etc.
+
+### Principes fondamentaux
+
+1. **Structure adaptée au type de document** : chaque type de document a une structure optimale. L'exemple ci-dessous montre une structure pour document d'analyse, mais d'autres types de documents ont leurs propres structures.
+2. **Paragraphes analytiques** : chaque section doit contenir des paragraphes explicatifs qui contextualisent, expliquent la signification des constats, les implications et les risques.
+3. **Pas de tableaux sans analyse** : chaque tableau doit être précédé ou suivi d'un commentaire qui en explique la signification.
+4. **Vocabulaire formel** : utiliser des termes comme « constitue », « révèle », « conditionne », « traduit ».
+5. **Connecteurs logiques** : utiliser des expressions comme « C'est précisément », « Cette observation », « Plus fondamentalement ».
+6. **Interdiction des caractères chinois** : ne jamais utiliser de caractères chinois (kanji, hiragana, katakana) dans la rédaction.
+7. **Interdiction des em-dashes** : ne pas utiliser de tirets longs. Utiliser des tirets courts (-) ou des deux-points (:) à la place.
+8. **Interdiction des séparateurs** : ne pas utiliser de séparateurs horizontaux (---). Les sections sont séparées par des en-têtes et des paragraphes, pas par des lignes.
+
+### Exemple de structure pour document d'analyse
+
+1. En-tête métadonnées (Référence, Date, Version, Objet, Sources, Statut)
+2. Table des matières numérotée
+3. Contexte et objectif avec positionnement stratégique
+4. Méthodologie détaillée
+5. Synthèse quantitative avec tableaux et analyse
+6. Analyse par domaine avec paragraphes explicatifs
+7. Convergences inter-groupes
+8. Points d'arbitrage
+9. Recommandations priorisées
+10. Annexe: Matrice de traçabilité
+
+### Documents de référence
+- `feedbacks/analyse-feedbacks-caesn.md` - Modèle pour document d'analyse
+- `feedbacks/analyse-feedbacks-cnisn.md` - Modèle pour document d'analyse
+
 ## Langue
 
 Les documents sont rédigés en **français**. Les noms de dossiers et identifiants sont en kebab-case anglais.

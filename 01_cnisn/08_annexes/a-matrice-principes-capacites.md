@@ -11,7 +11,7 @@ tags: ["cnisn", "niveau-2", "annexes"]
 
 # Annexe A : Matrice principes–capacités
 
-Tableau généré depuis le référentiel : les 12 capacités nationales et les 25 principes du CNISN, avec leur rattachement. La dérive de libellés est éliminée : le titre provient de l'objet.
+Tableau généré depuis le référentiel : les 16 capacités nationales et les 25 principes du CNISN, avec leur rattachement. La dérive de libellés est éliminée : le titre provient de l'objet.
 
 ## Matrice
 
@@ -34,6 +34,8 @@ Tableau généré depuis le référentiel : les 12 capacités nationales et les 
 | CAP-INT-12 | Conformité et tests d’interopérabilité | P-INT-19, P-INT-20, P-INT-21, P-INT-22, P-INT-23, P-INT-24, P-INT-25, CAP-14, CAP-16 | active | CAP-INT-12 |
 | CAP-INT-13 | Interopérabilité transfrontalière et confiance internationale | P-INT-01, P-INT-05, P-INT-10, P-INT-14, P-INT-16, P-INT-17, P-INT-19, CAP-15 | active | CAP-INT-13 |
 | CAP-INT-14 | Échanges intersectoriels One Health | P-INT-01, P-INT-05, P-INT-10, P-INT-14, P-INT-16, P-INT-22, CAP-18 | active | CAP-INT-14 |
+| CAP-INT-15 | Échange et traçabilité de la chaîne d'approvisionnement sanitaire | CAP-10, CAP-11, CMP-23 | active | CAP-INT-15 |
+| CAP-INT-16 | Données environnementales et de résilience climatique | CAP-18, CAP-05, CMP-05, ART-4D | active | CAP-INT-16 |
 | P-INT-01 | Autorité désignée | CAP-14 | active | P-INT-01 |
 | P-INT-02 | Résolution contre l’autorité | CAP-14 | active | P-INT-02 |
 | P-INT-03 | Copies locales non autoritatives | CAP-14 | active | P-INT-03 |

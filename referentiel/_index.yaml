@@ -838,7 +838,7 @@
   chemin: principes/p-int-25.md
   status: active
 
-# capacites (12)
+# capacites (16)
 - id: CAP-INT-01
   type: capacite
   niveau: "2"
@@ -899,9 +899,29 @@
   niveau: "2"
   chemin: capacites/cap-int-12.md
   status: active
+- id: CAP-INT-13
+  type: capacite
+  niveau: "2"
+  chemin: capacites/cap-int-13.md
+  status: active
+- id: CAP-INT-14
+  type: capacite
+  niveau: "2"
+  chemin: capacites/cap-int-14.md
+  status: active
+- id: CAP-INT-15
+  type: capacite
+  niveau: "2"
+  chemin: capacites/cap-int-15.md
+  status: active
+- id: CAP-INT-16
+  type: capacite
+  niveau: "2"
+  chemin: capacites/cap-int-16.md
+  status: active
 
 # --- PTISN (niveau 4) ---
-# profils (13)
+# profils (19)
 - id: PT-01
   type: profil
   niveau: "4"
@@ -967,6 +987,36 @@
   niveau: "4"
   chemin: profils/pt-13.md
   status: draft
+- id: PT-14
+  type: profil
+  niveau: "4"
+  chemin: profils/pt-14.md
+  status: draft
+- id: PT-15
+  type: profil
+  niveau: "4"
+  chemin: profils/pt-15.md
+  status: draft
+- id: PT-16
+  type: profil
+  niveau: "4"
+  chemin: profils/pt-16.md
+  status: draft
+- id: PT-17
+  type: profil
+  niveau: "4"
+  chemin: profils/pt-17.md
+  status: draft
+- id: PT-18
+  type: profil
+  niveau: "4"
+  chemin: profils/pt-18.md
+  status: draft
+- id: PT-19
+  type: profil
+  niveau: "4"
+  chemin: profils/pt-19.md
+  status: draft
 
 # --- ARTSN (niveau 3) ---
 # fondations (4)
@@ -1030,7 +1080,7 @@
   chemin: exigences/enf-5.md
   status: draft
 
-# chapitres (18)
+# chapitres (21)
 - id: ART-0
   type: chapitre
   niveau: "3"
@@ -1132,6 +1182,11 @@
   type: chapitre
   niveau: "3"
   chemin: chapitres/art-11.md
+  status: candidate
+- id: ART-12
+  type: chapitre
+  niveau: "3"
+  chemin: chapitres/art-12.md
   status: candidate
 # acteurs (6)
 - id: ACT-01

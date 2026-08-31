@@ -1,5 +1,5 @@
 ---
-title: "PT-11 — Profil technique national"
+title: "Profil technique national"
 description: "Niveau 4 — Configurations, API et contrats d'interfaces par initiative"
 owner: "Équipes techniques des initiatives"
 version: "1.0.0"
@@ -8,62 +8,85 @@ last_reviewed: "2026-07-31"
 ---
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-## 1. Capacité CNISN
+## 1. Objet et périmètre
 
-**CAP-INT-09 — Gestion des consentements et bases d’autorisation**
+Le **profil PT-11 — Consentement et bases d’autorisation** définit le service national de gestion fine du consentement patient (finalités, destinataires, durées) et des autres bases d’autorisation. Il est transverse à tous les profils métier.
 
-## 2. Chapitres ART applicables
+Périmètre : enregistrement, consultation, retrait et vérification du consentement, gestion des finalités et des politiques. Hors périmètre : l’authentification (PT-10) et la résolution d’identité (PT-04).
 
-- ART-0 ;
-- ART-4b ;
-- ART-7 ;
-- ART-11.
+## 2. Capacité CNISN
 
-## 3. Position nationale
+CAP-INT-09: Gestion des consentements et bases d’autorisation
 
-Aucun profil national unique de consentement n’est encore retenu.
+## 3. Chapitres ART applicables
+
+- ART-0: Accords de partage inter-institutionnels ;
+- ART-4B ;
+- ART-7: Sécurité, contrôle d'accès et résidence de la donnée ;
+- ART-11: Coordination intersectorielle.
+
+## 4. Acteurs (Actors)
+
+- **Titulaire du consentement (Patient)** — personne dont le consentement ou la base d’autorisation est géré.
+- **Registre de consentement (Consent Registry)** — enregistre, conserve et retire les consentements et politiques.
+- **Vérificateur d’accès (Access Verifier)** — interroge le registre au moment de l’accès pour décider l’autorisation.
+
+*Référence — capacité CNISN mise en œuvre : CAP-INT-09.
+## 5. Transactions
+
+| Transaction | Acteurs | R/O | Standard |
+|----|----|----|----|
+| T1 — Enregistrement du consentement | Titulaire → Registre | R | HL7 FHIR `Consent` |
+| T2 — Consultation du consentement | Vérificateur → Registre | R | HL7 FHIR `Consent` |
+| T3 — Retrait / révocation | Titulaire → Registre | R | HL7 FHIR `Consent` |
+| T4 — Vérification au moment de l’accès | Vérificateur → Registre | R | Requête de décision d’accès |
+
+R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
+
+*Référence — capacité CNISN mise en œuvre : CAP-INT-09.
+## 6. Content Modules
+
+- **HL7 FHIR `Consent`** : finalités, destinataires, périodes, politique, base légale.
+- **Politique d’accès** : règle décrivant les conditions de traitement.
+- **Preuve** : traces de l’enregistrement et de la décision.
+
+## 7. Options
+
+- **O1 — Produit** : aucun profil national unique de consentement retenu (statut : à instruire).
+- **O2 — Base d’autorisation** : consentement, mandat de soins, mandat de santé publique, obligation légale, intérêt vital, accord interinstitutionnel, autre base légale documentée.
+
+## 8. Service national
+
+Position nationale : aucun profil national unique de consentement n’est encore retenu.
 
 **Statut : à instruire.**
 
-## 4. Principe
+## 9. Formats et standards recommandés
 
-Le consentement ne constitue qu’une base d’autorisation possible.
+- Ressource `Consent` (HL7 FHIR R4) pour l’enregistrement et la consultation.
+- Lien avec le registre patient (PT-04) et le fournisseur d’identité (PT-10).
 
-Selon le contexte, un traitement peut reposer sur :
+*Référence — normes et standards CNISN : [01_cnisn/05_standards](/cnisn/standards/index).
+## 10. Exigences
 
-- le consentement ;
-- le mandat de soins ;
-- le mandat de santé publique ;
-- une obligation légale ;
-- un intérêt vital ;
-- un accord interinstitutionnel ;
-- une autre base légale documentée.
+Le consentement ne constitue qu’une base d’autorisation possible. Selon le contexte, un traitement peut reposer sur : le consentement, le mandat de soins, le mandat de santé publique, une obligation légale, un intérêt vital, un accord interinstitutionnel, ou une autre base légale documentée.
 
-## 5. Services futurs
+## 11. Déclaration de conformité (Integration Statement)
 
-- enregistrement du consentement ;
-- consultation ;
-- retrait ;
-- preuve ;
-- gestion des finalités ;
-- gestion des politiques ;
-- vérification au moment de l’accès ;
-- traçabilité des décisions.
+Conformité attestée par l’enregistrement, la consultation, le retrait et la preuve du consentement, la gestion des finalités et des politiques, et la vérification au moment de l’accès. À instruire : analyse du cadre juridique national, classification des cas d’usage, définition des politiques, évaluation des standards disponibles.
 
-## 6. Travaux à mener
+## 12. Articulation avec les autres profils
 
-- analyse du cadre juridique national ;
-- classification des cas d’usage ;
-- définition des politiques ;
-- évaluation des standards disponibles ;
-- articulation avec le registre patient ;
-- articulation avec le fournisseur d’identité ;
-- articulation avec les mandats de santé publique.
+- PT-04: résolution d’identité bénéficiaire
+- PT-10: confiance, authentification, autorisation
+- PT-01: échange interinstitutionnel
 
-------------------------------------------------------------------------
+Le consentement est vérifié au moment de l’accès, en complément de l’autorisation fonctionnelle (PT-10).
 
-*Rattachement : CMP-12, CAP-INT-09, ART-0, ART-4B, ART-7, ART-11 · fiche PT-11*
+## 13. Limites et dépendances
+
+Le profil dépend du registre patient (PT-04) et du fournisseur d’identité (PT-10). Travaux à mener : analyse du cadre juridique national, classification des cas d’usage, définition des politiques, évaluation des standards disponibles, articulation avec le registre patient, le fournisseur d’identité et les mandats de santé publique.
 
 <!-- END:GENERATED -->

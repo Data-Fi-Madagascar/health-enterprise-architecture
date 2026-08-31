@@ -9,7 +9,7 @@ last_reviewed: "2026-08-13"
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 2 : Cadre National d'Interopérabilité de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -49,30 +49,36 @@ Chaque ADR enregistrée ici est un choix structurant, daté et traçable, produi
 
 | ID | Titre | Statut | Date | Propriétaire | Impact |
 |----|-------|--------|------|--------------|--------|
-| ADR-0001 | Adoption de X-Road comme plateforme d'échange interinstitutionnel | **appliqué** | 2026-07-01 | DEPSI | Élevé — infrastructure nationale |
-| ADR-0002 | Adoption du profil IHE mADX pour l'échange de données agrégées | **appliqué** | 2026-07-01 | DEPSI | Élevé — collecte nationale |
-| ADR-0003 | Utilisation de HL7 FHIR comme standard d'interopérabilité | **appliqué** | 2026-07-01 | DEPSI | Critique — standard transversal |
-| ADR-0004 | Adoption des profils IHE PIXm/PDQm pour la résolution d'identité | **appliqué** | 2026-07-01 | DEPSI | Élevé — identité nationale |
+| ADR-0001 | Adoption de X-Road comme plateforme d'échange interinstitutionnel | **appliqué** | 2026-07-01 | DEPSI | Élevé : infrastructure nationale |
+| ADR-0002 | Adoption du profil IHE mADX pour l'échange de données agrégées | **appliqué** | 2026-07-01 | DEPSI | Élevé : collecte nationale |
+| ADR-0003 | Utilisation de HL7 FHIR comme standard d'interopérabilité | **appliqué** | 2026-07-01 | DEPSI | Critique : standard transversal |
+| ADR-0004 | Adoption des profils IHE PIXm/PDQm pour la résolution d'identité | **appliqué** | 2026-07-01 | DEPSI | Élevé : identité nationale |
 
 ### Identité et consentement
 
 | ID | Titre | Statut | Date | Propriétaire | Impact |
 |----|-------|--------|------|--------------|--------|
-| ADR-0005 | Consentement structuré via FHIR Consent | **proposé** | 2026-08-13 | DEPSI | Élevé — souveraineté données |
-| ADR-0006 | Identité nationale patient (INP) via PIXm/PDQm | **proposé** | 2026-08-13 | DEPSI | Critique — identité unique |
+| ADR-0005 | Consentement structuré via FHIR Consent | **proposé** | 2026-08-13 | DEPSI | Élevé : souveraineté données |
+| ADR-0006 | Identité nationale patient (INP) via PIXm/PDQm | **proposé** | 2026-08-13 | DEPSI | Critique : identité unique |
 
 ### Confiance et sécurité
 
 | ID | Titre | Statut | Date | Propriétaire | Impact |
 |----|-------|--------|------|--------------|--------|
-| ADR-0007 | Confiance transfrontalière via GDHCN | **proposé** | 2026-08-13 | DEPSI | Élevé — transfrontalier |
-| ADR-0008 | Audit et traçabilité via ATNA + journalisation | **proposé** | 2026-08-13 | DEPSI | Moyen — conformité |
+| ADR-0007 | Confiance transfrontalière via GDHCN | **proposé** | 2026-08-13 | DEPSI | Élevé : transfrontalier |
+| ADR-0008 | Audit et traçabilité via ATNA + journalisation | **proposé** | 2026-08-13 | DEPSI | Moyen : conformité |
 
 ### Terminologie
 
 | ID | Titre | Statut | Date | Propriétaire | Impact |
 |----|-------|--------|------|--------------|--------|
-| ADR-0009 | Terminologie nationale (CIM-10 + LOINC + mapping) | **proposé** | 2026-08-13 | DEPSI | Élevé — sémantique commune |
+| ADR-0009 | Terminologie nationale (CIM-10 + LOINC + mapping) | **proposé** | 2026-08-13 | DEPSI | Élevé : sémantique commune |
+
+### Cadre légal et gouvernance
+
+| ID | Titre | Statut | Date | Propriétaire | Impact |
+|----|-------|--------|------|--------------|--------|
+| ADR-0010 | Cadre légal et mandat d'opposabilité du CNASN | **proposé** | 2026-08-20 | Ministère de la Santé | Critique : base légale |
 
 ---
 
@@ -94,12 +100,12 @@ Chaque ADR enregistrée ici est un choix structurant, daté et traçable, produi
 
 | Statut | Nombre |
 |--------|--------|
-| Proposé | 5 |
+| Proposé | 6 |
 | Accepté | 0 |
 | Appliqué | 4 |
 | Remplacé | 0 |
 | Déprécié | 0 |
-| **Total** | **9** |
+| **Total** | **10** |
 
 ---
 
@@ -112,16 +118,17 @@ Chaque ADR enregistrée ici est un choix structurant, daté et traçable, produi
 
 ## Références
 
-- **ADR-0001** — Adoption de X-Road comme plateforme d'échange interinstitutionnel (`01_cnisn/06_decisions/adr-0001-x-road.md`)
-- **ADR-0002** — Adoption du profil IHE mADX pour l'échange de données agrégées (`01_cnisn/06_decisions/adr-0002-madx.md`)
-- **ADR-0003** — Utilisation de HL7 FHIR comme standard d'interopérabilité (`01_cnisn/06_decisions/adr-0003-fhir.md`)
-- **ADR-0004** — Adoption des profils IHE PIXm/PDQm pour la résolution d'identité (`01_cnisn/06_decisions/adr-0004-identite.md`)
-- **ADR-0005** — Adoption de FHIR Consent pour le consentement structuré (`01_cnisn/06_decisions/adr-0005-consentement.md`)
-- **ADR-0006** — Adoption de l'Identité Nationale Patient (INP) via PIXm/PDQm (`01_cnisn/06_decisions/adr-0006-inp.md`)
-- **ADR-0007** — Adoption du GDHCN pour la confiance transfrontalière (`01_cnisn/06_decisions/adr-0007-gdhcn.md`)
-- **ADR-0008** — Adoption d'ATNA et journalisation pour l'audit et la traçabilité (`01_cnisn/06_decisions/adr-0008-atna.md`)
-- **ADR-0009** — Adoption d'un référentiel terminologique national (CIM-10 + LOINC) (`01_cnisn/06_decisions/adr-0009-terminologie.md`)
-- **Template ADR** — <Titre de la décision> (`01_cnisn/06_decisions/adr-0000-template.md`)
-- **Index des décisions** — Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
-- **Gouvernance** — Partie III — Gouvernance (`01_cnisn/03_gouvernance/index.md`)
-- **Guide du processus** — Partie III — Gouvernance (`01_cnisn/03_gouvernance/index.md`)
+- **ADR-0001** : Adoption de X-Road comme plateforme d'échange interinstitutionnel (`01_cnisn/06_decisions/adr-0001-x-road.md`)
+- **ADR-0002** : Adoption du profil IHE mADX pour l'échange de données agrégées (`01_cnisn/06_decisions/adr-0002-madx.md`)
+- **ADR-0003** : Utilisation de HL7 FHIR comme standard d'interopérabilité (`01_cnisn/06_decisions/adr-0003-fhir.md`)
+- **ADR-0004** : Adoption des profils IHE PIXm/PDQm pour la résolution d'identité (`01_cnisn/06_decisions/adr-0004-identite.md`)
+- **ADR-0005** : Adoption de FHIR Consent pour le consentement structuré (`01_cnisn/06_decisions/adr-0005-consentement.md`)
+- **ADR-0006** : Adoption de l'Identité Nationale Patient (INP) via PIXm/PDQm (`01_cnisn/06_decisions/adr-0006-inp.md`)
+- **ADR-0007** : Adoption du GDHCN pour la confiance transfrontalière (`01_cnisn/06_decisions/adr-0007-gdhcn.md`)
+- **ADR-0008** : Adoption d'ATNA et journalisation pour l'audit et la traçabilité (`01_cnisn/06_decisions/adr-0008-atna.md`)
+- **ADR-0009** : Adoption d'un référentiel terminologique national (CIM-10 + LOINC) (`01_cnisn/06_decisions/adr-0009-terminologie.md`)
+- **ADR-0010** : Cadre légal et mandat d'opposabilité du CNASN (`01_cnisn/06_decisions/adr-0010-cadre-legal.md`)
+- **Template ADR** : <Titre de la décision> (`01_cnisn/06_decisions/adr-0000-template.md`)
+- **Index des décisions** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
+- **Gouvernance** : Partie III : Gouvernance (`01_cnisn/03_gouvernance/index.md`)
+- **Guide du processus** : Partie III : Gouvernance (`01_cnisn/03_gouvernance/index.md`)

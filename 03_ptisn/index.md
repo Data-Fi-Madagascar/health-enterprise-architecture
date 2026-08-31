@@ -56,6 +56,8 @@ ptisn/
 │   └── tests.md            # scénarios de validation et d'homologation
 ```
 
+Les profils de la Partie III (PT-01…PT-19) sont les **profils nationaux de référence** versionnés dans ce cadre. La Partie V fournit le **template de fiche d'initiative** : chaque initiative instancie sa propre fiche (dossier `ptisn/<initiative-id>/`) au moment de sa conception ; ces fiches par initiative ne sont pas versionnées dans le présent dépôt de référence.
+
 ## Liens
 
 - Guide de lecture du PTISN
@@ -93,7 +95,7 @@ ptisn/
 - [ptisn-PT-07: PT-07 : Profil technique national](03_profils/pt-07-terminologie-codification.md)
 - [ptisn-PT-04: PT-04 : Profil technique national](03_profils/pt-04-resolution-identite-beneficiaire.md)
 - [ptisn-PT-10: PT-10 : Profil technique national](03_profils/pt-10-confiance-authentification-autorisation.md)
-- [ptisn-PT-12: PT-12 : Profil technique national](03_profils/pt-12-audit-provenance-traçabilité.md)
+- [ptisn-PT-12: PT-12 : Profil technique national](03_profils/pt-12-audit-provenance-tracabilite.md)
 - [ptisn-PT-09: PT-09 : Profil technique national](03_profils/pt-09-analytique-exposition-donnees.md)
 - [PT-15: PT-15 : Surveillance One Health](03_profils/pt-15-surveillance-one-health.md)
 - [ptisn-PT-03: PT-03 : Profil technique national](03_profils/pt-03-catalogue-services-registre-contrats.md)
@@ -101,11 +103,11 @@ ptisn/
 - [ptisn-PT-08: PT-08 : Profil technique national](03_profils/pt-08-echange-donnees-agregees.md)
 - [ptisn-PT-06: PT-06 : Profil technique national](03_profils/pt-06-referentiel-structures-services.md)
 - [ptisn-PT-14: PT-14 : Interopérabilité transfrontalière](03_profils/pt-14-interopabilite-transfrontaliere.md)
-- [ptisn-exemples: Exemples de profils d'initiative remplis](05_exemples/index.md)
+- [ptisn-exemples: Exemples de profils d'initiative remplis](08_annexes/f-exemples-profils.md)
 - [ptisn-matrice-alignement: Partie IV : Matrice d'alignement](04_matrice-alignement/index.md)
 - [ptisn-regles-utilisation: Partie I : Règles d'utilisation du PTISN](01_regles-utilisation/index.md)
 - [ptisn-introduction: Préambule du PTISN](00_introduction/index.md)
-- [ptisn-profil-initiative: Partie V : Profil technique d'une initiative](05_profil-initiative/index.md)
+- [ptisn-profil-initiative: Partie V : Template de fiche d'initiative](05_profil-initiative/index.md)
 - [ptisn-cas-usage-pilotage: Cas d'usage : Remontée de données et pilotage du système](08_annexes/cas-usage-pilotage-systeme.md)
 - [ptisn-cas-usage-couverture: Cas d'usage : Couverture sanitaire et protection financière](08_annexes/cas-usage-couverture-sanitaire.md)
 - [ptisn-cas-usage-surveillance: Cas d'usage : Surveillance et riposte épidémique](08_annexes/cas-usage-surveillance-epidemique.md)

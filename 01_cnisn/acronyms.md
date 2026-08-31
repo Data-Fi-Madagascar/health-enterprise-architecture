@@ -31,14 +31,27 @@ Acronymes propres au périmètre d'interopérabilité du niveau 2. Les acronymes
 | Acronyme | Signification |
 |----------|---------------|
 | ATC | Anatomical Therapeutic Chemical (classification des médicaments) |
+| ATNA | Audit Trail and Node Authentication (profil IHE pour l'audit et l'authentification) |
+| CDS | Clinical Decision Support (aide à la décision clinique) |
+| CNIE | Carte Nationale d'Identité Électronique |
 | CNISN | Cadre National d'Interopérabilité de la Santé Numérique |
 | DICOM | Digital Imaging and Communications in Medicine |
 | FHIR | Fast Healthcare Interoperability Resources (HL7) |
 | HL7 | Health Level Seven (normes d'échange de données de santé) |
 | ICD | International Classification of Diseases (CIM) |
 | IHE | Integrating the Healthcare Enterprise |
+| INP | Identité Nationale Patient |
+| IPS | International Patient Summary (résumé international du patient) |
+| IUA | Internet User Authorization (profil IHE d'autorisation utilisateur) |
 | LOINC | Logical Observation Identifiers Names and Codes |
+| mADX | Mobile Aggregate Data Exchange (profil IHE d'échange de données agrégées) |
+| mCSD | Mobile Care Services Discovery (profil IHE de découverte des services de soins) |
+| OID | Object Identifier (identifiant d'objet) |
+| PDQm | Patient Demographics Query for mobile (profil IHE de consultation démographique) |
+| PIXm | Patient Identifier Cross-referencing for mobile (profil IHE de corrélation d'identifiants) |
 | SNOMED CT | Systematized Nomenclature of Medicine : Clinical Terms |
+| SVCM | Sharing Valuesets, Codes, and Maps (profil IHE de partage de vocabulaires et codes) |
+| TLS | Transport Layer Security (sécurisation des communications) |
 | XDS | Cross-Enterprise Document Sharing (profil IHE) |
 
 ## Liens

@@ -8,6 +8,7 @@ status: candidate
 date: 2026-08-20
 owner: Ministère de la Santé Publique
 tags: ["adr", "légal", "gouvernance", "e-santé"]
+related: ["Lot L1", "PT-11"]
 ---
 
 # ADR-0010 : Cadre légal et mandat d'opposabilité du CNASN

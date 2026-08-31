@@ -28,7 +28,7 @@ Ce document définit le processus de veille architecturale pour maintenir l'ARTS
 
 | Domaine | Sujet | Priorité |
 |---------|-------|----------|
-| **Standards de données** | HL7 FHIR, IHE, CIM-10, LOINC, SNOMED CT | Haute |
+| **Standards de données** | HL7 FHIR, IHE, CIM-11, LOINC, SNOMED CT | Haute |
 | **Interopérabilité** | X-Road, mADX, GDHCN, API REST | Haute |
 | **Sécurité** | OAuth 2.0, OpenID Connect, chiffrement, zero-trust | Haute |
 | **Souveraineté** | RGPD-like, protection des données, hébergement | Haute |

@@ -8,6 +8,7 @@ status: active
 date: 2026-07-01
 owner: DEPSI
 tags: ["adr", "interopérabilité", "fhir", "normes"]
+related: ["Lot L2", "Lot L4", "PT-10", "PT-11", "PT-07", "PT-09", "PT-03", "PT-12", "PT-15", "PT-04", "PT-14", "PT-08"]
 ---
 
 # ADR-0003 : Utilisation de HL7 FHIR comme standard d'interopérabilité

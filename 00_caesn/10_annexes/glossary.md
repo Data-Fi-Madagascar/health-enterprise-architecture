@@ -132,7 +132,7 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 
 **IHE** : *Integrating the Healthcare Enterprise*. Organisation internationale développant des profils d'intégration pour améliorer l'interopérabilité des systèmes de santé.
 
-**CIM-10** : *Classification Internationale des Maladies, 10e révision*. Classification OMS des maladies et problèmes de santé connexes, utilisée pour le codage des diagnostics.
+**CIM-11** : *Classification Internationale des Maladies, 11e révision*. Classification OMS des maladies et problèmes de santé connexes, utilisée pour le codage des diagnostics.
 
 **SNOMED CT** : *Systematized Nomenclature of Medicine : Clinical Terms*. Terminologie clinique standardisée couvrant l'ensemble du domaine de la santé.
 
@@ -151,6 +151,62 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 **Mode hors-ligne** : Capabilité d'un système à fonctionner sans connexion réseau, en stockant les données localement et en les synchronisant lorsque la connexion est rétablie.
 
 **Synchronisation différée** : Mécanisme de transmission des données collectées en mode hors-ligne lors de la prochaine connexion disponible.
+
+## Termes institutionnels et stratégiques
+
+**Plan de Développement du Secteur Santé (PDSS)** : Document stratégique national définissant les orientations, les objectifs et les priorités de développement du secteur santé pour une période donnée. Le PDSS 2026-2030 constitue le cadre de référence pour l'alignement des initiatives numériques.
+
+**Politique Nationale de Santé (PNS)** : Document cadre définissant les grandes orientations de la politique sanitaire nationale, servant de référence pour l'élaboration des plans et programmes du secteur santé.
+
+**Comité National d'Architecture Santé Numérique (CNASN)** : Instance collégiale qui garantit la cohérence architecturale du système d'information sanitaire, homologue les solutions, arbitre les standards, statue sur les dérogations et suit la rationalisation du paysage applicatif.
+
+**Couverture Santé Universelle (CSU)** : Engagement politique visant à ce que toutes les personnes et les communautés reçoivent les services de santé dont elles ont besoin, sans craindre difficultés financières. L'informatisation du secteur santé soutient directement l'atteinte des objectifs de CSU.
+
+## Termes cliniques et opérationnels
+
+**Orientation et tri** : Processus d'évaluation initiale des patients pour déterminer la priorité des soins et orienter vers le service ou le professionnel de santé le plus approprié.
+
+**Référence (médicale)** : Transfert planifié d'un patient d'un établissement de santé vers un autre établissement ou un professionnel de santé spécialisé, pour des soins que le premier ne peut assurer.
+
+**Contre-référence** : Retour du patient vers l'établissement d'origine après avoir reçu des soins spécialisés, pour assurer la continuité des soins.
+
+**Identitovigilance** : Ensemble des mesures et processus visant à prévenir les erreurs d'identification des patients et à garantir l'exactitude des données d'identité dans le système d'information sanitaire.
+
+**Gestion du consentement** : Processus formalisé de collecte, d'enregistrement et de gestion du consentement éclairé du patient pour l'utilisation et le partage de ses données de santé.
+
+**Engagement du patient** : Implication active des patients dans leur parcours de soins, incluant la participation aux décisions thérapeutiques et l'autogestion de leur santé.
+
+**Sécurité des soins** : Ensemble des mesures visant à prévenir, détecter et corriger les événements indésirables liés aux soins de santé, incluant les erreurs médicales et les infections associées aux soins.
+
+**Amélioration continue** : Démarche systématique d'optimisation des processus, des services et des résultats de santé par une boucle d'apprentissage permanente.
+
+**Pilotage de la performance** : Utilisation d'indicateurs et de tableaux de bord pour suivre, évaluer et améliorer l'efficacité, l'efficience et la pertinence des interventions de santé.
+
+**Prévention communautaire** : Activités de promotion de la santé et de prévention des maladies menées au niveau communautaire, impliquant les populations locales et les agents de santé communautaires.
+
+**Alerte précoce** : Système de détection et de notification rapide d'événements sanitaires inhabituels (épidémies, catastrophes, crises) permettant une réponse rapide.
+
+**Suivi des cas** : Processus de surveillance et de prise en charge des cas de maladies ou d'événements sanitaires sur une période définie, incluant le suivi des contacts.
+
+**Détection et alerte** : Capacité de identifier rapidement les événements sanitaires anormaux et de déclencher les mécanismes d'alerte appropriés.
+
+**Investigation (épidémiologique)** : Enquête systématique pour identifier l'origine, les causes et les facteurs de risque d'un événement sanitaire (épidémie, foyer endémique).
+
+**Surveillance multisource** : Collecte et analyse de données provenant de multiples sources (cliniques, laboratoires, communautaires, environnementales) pour détecter les tendances et les anomalies sanitaires.
+
+**Géolocalisation des formations sanitaires** : Localisation géographique précise de toutes les structures de santé (hôpitaux, centres de santé, pharmacies) pour faciliter l'accès aux soins et la planification sanitaire.
+
+**Cartographie des risques** : Représentation spatiale des risques sanitaires et des facteurs de vulnérabilité pour orienter les interventions de prévention et de réponse.
+
+**Suivi temporel** : Analyse des tendances et des évolutions dans le temps pour évaluer l'impact des interventions et identifier les changements de situation sanitaire.
+
+**Cloisonnement One Health** : Approche intégrée reliant les données de santé humaine, animale et environnementale pour une compréhension holistique des menaces sanitaires.
+
+**Coordination épidémique** : Organisation concertée des actions de réponse entre les différents acteurs et secteurs lors d'une épidémie ou d'une crise sanitaire.
+
+**Surveillance conjointe** : Suivi partagé entre les secteurs humain, animal et environnemental des maladies et menaces sanitaires transversales.
+
+**Riposte coordonnée** : Réponse organisée et synchronisée de l'ensemble des acteurs du système de santé face à une crise ou une urgence sanitaire.
 
 ## Liens
 

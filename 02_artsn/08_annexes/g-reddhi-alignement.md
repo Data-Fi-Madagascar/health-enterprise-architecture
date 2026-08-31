@@ -47,7 +47,7 @@ L'HEA ne « copie » pas REDDHI ; elle l'opérationnalise à trois niveaux cohé
 
 1. **Niveau stratégique (CAESN).** Les principes REDDHI (résilience, essence, possession nationale) sont repris par les principes d'architecture (notamment PA-05 souveraineté, PA-06 confiance) et par la gouvernance sous la tutelle du CNASN. La résidence de la donnée ([ART-7](../../referentiel/chapitres/art-7.md)) traduit l'exigence « données comme actif souverain ».
 
-2. **Niveau d'interopérabilité (CNISN).** Les 9 composantes DPI-H sont couvertes par les normes et ADR du CNISN (colonne de droite du tableau §2). La couche d'échange s'appuie sur X-Road ([ADR-0001](../../01_cnisn/06_decisions/adr-0001-x-road.md)), l'identité sur PIXm/PDQm et l'INP ([ADR-0004](../../01_cnisn/06_decisions/adr-0004-identite.md), [ADR-0006](../../01_cnisn/06_decisions/adr-0006-inp.md)), la terminologie sur CIM-10+LOINC et SNOMED CT.
+2. **Niveau d'interopérabilité (CNISN).** Les 9 composantes DPI-H sont couvertes par les normes et ADR du CNISN (colonne de droite du tableau §2). La couche d'échange s'appuie sur X-Road ([ADR-0001](../../01_cnisn/06_decisions/adr-0001-x-road.md)), l'identité sur PIXm/PDQm et l'INP ([ADR-0004](../../01_cnisn/06_decisions/adr-0004-identite.md), [ADR-0006](../../01_cnisn/06_decisions/adr-0006-inp.md)), la terminologie sur CIM-11+LOINC et SNOMED CT.
 
 3. **Niveau technique (ARTSN).** Chaque composante REDDHI est réalisée par un ou plusieurs chapitres ART de référence, déployés via les lots L1–L7 ([feuille de route](../07_lots/index.md)). La couverture est totale : les 9 composantes DPI-H trouvent une réponse dans les 20 chapitres ART, sans chevauchement redondant.
 

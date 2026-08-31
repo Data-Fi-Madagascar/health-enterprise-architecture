@@ -268,7 +268,7 @@ Le modèle de gouvernance double de Madagascar (portfolio + homologation) est un
 | OpenHIE | 7 pays actifs | Référencé | ○ | ○ | ✓ | ✓ | ✓ |
 | IHE Profiles | 3 pays | Référencé | ○ | ✓ | ○ | ✓ | ○ |
 | mADX | Francophone | ✓ | ○ | ○ | ○ | ○ | ○ |
-| CIM-10/LOINC | 10+ pays | ✓ | ✓ | ✓ | ○ | ○ | ✓ |
+| CIM-11/LOINC | 10+ pays | ✓ | ✓ | ✓ | ○ | ○ | ✓ |
 | SNOMED CT | 2-3 pays | ○ | ✓ | ✓ | ○ | ○ | ✓ |
 
 Madagascar se positionne dans le tiers supérieur pour l'ambition normative (FHIR obligatoire, X-Road pour l'interinstitutionnel), avec une couverture standard plus large que la plupart des pays francophones.

@@ -73,7 +73,7 @@ Tableau généré `code | titre canonique | rattachement | statut | fiche`.
 
 - `02_artsn/04_patterns/index.md` — les 20 chapitres (ce fichier combine tableau et catalogue)
 - `03_ptisn/03_profils/pt-00-index.md` — les 13 profils
-- `01_cnisn/08_annexes/a-matrice-principes-capacites.md` — les 12 capacités et 25 principes
+- `01_cnisn/08_annexes/a-matrice-principes-capacites.md` — les 16 capacités et 25 principes
 
 Effet de bord voulu : la dérive de libellés (10 capabilités sur 16 divergent entre `00_caesn/03_capabilities/maturity.md` et le titre canonique) disparaît, le titre provenant de l'objet.
 

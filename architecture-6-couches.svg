@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="900" viewBox="0 0 1120 900" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="1120" height="900" fill="#ffffff"/>
+<text x="560" y="30" text-anchor="middle" font-size="21" font-weight="bold" fill="#1a2b4a">Vue intégrée — les 6 couches de l'architecture (CAESN·CNISN·ARTSN·PTISN)</text>
+<text x="560" y="50" text-anchor="middle" font-size="12" fill="#556">Cartographie conceptuelle cible (ARTSN) : 6 couches horizontales + 2 axes verticaux transversaux</text>
+<rect x="20" y="70" width="48" height="762" rx="6" fill="#eef2f5" stroke="#33414f" stroke-width="1.5"/>
+<rect x="1052" y="70" width="48" height="762" rx="6" fill="#eef2f5" stroke="#33414f" stroke-width="1.5"/>
+<text x="44" y="62" text-anchor="middle" font-size="10" font-weight="bold" fill="#33414f">Axe 1</text>
+<text x="1076" y="62" text-anchor="middle" font-size="10" font-weight="bold" fill="#33414f">Axe 2</text>
+<text x="44" y="86" text-anchor="middle" font-size="9" fill="#33414f" transform="rotate(-90 44 86)">Sécurité &amp; confiance</text>
+<text x="1076" y="86" text-anchor="middle" font-size="9" fill="#33414f" transform="rotate(90 1076 86)">Gouvernance données</text>
+<text x="44" y="826" text-anchor="middle" font-size="8" fill="#33414f">CMP-32…38 · ART-7 · CAP-INT-08/10 · GDHCN</text>
+<text x="1076" y="826" text-anchor="middle" font-size="8" fill="#33414f">CMP-39…46 · F.4 · ART-0 · ADR</text>
+<rect x="80" y="70" width="920" height="122" rx="10" fill="#fafbfc" stroke="#c7ced6" stroke-width="1"/>
+<rect x="80" y="70" width="34" height="122" rx="6" fill="#33414f"/>
+<text x="97" y="137" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">6</text>
+<text x="124" y="90" font-size="12.5" font-weight="bold" fill="#1a2b4a">Couche 6 — Pilotage, Gouvernance &amp; actions intersectorielles</text>
+<text x="84" y="104" font-size="10" font-weight="bold" fill="#2f6fb0">CAESN — Composants (CMP)</text>
+<line x1="84" y1="109" x2="314" y2="109" stroke="#2f6fb0" stroke-width="1" opacity="0.5"/>
+<text x="86" y="124" font-size="9.5" fill="#2a3340">CMP-01 Tableaux de bord &amp; portails</text>
+<text x="86" y="137" font-size="9.5" fill="#2a3340">CMP-02 Centre commande &amp; crises</text>
+<line x1="320" y1="100" x2="320" y2="184" stroke="#e3e8ee" stroke-width="1"/>
+<text x="329" y="104" font-size="10" font-weight="bold" fill="#d9772e">ARTSN — Chapitres / Fondations</text>
+<line x1="329" y1="109" x2="549" y2="109" stroke="#d9772e" stroke-width="1" opacity="0.5"/>
+<text x="331" y="124" font-size="9.5" fill="#2a3340">ART-0 Gouvernance</text>
+<text x="331" y="137" font-size="9.5" fill="#2a3340">ART-9 Grand Livre</text>
+<text x="331" y="150" font-size="9.5" fill="#2a3340">ART-11 One Health</text>
+<text x="331" y="163" font-size="9.5" fill="#2a3340">VS-04 Pilotage</text>
+<line x1="555" y1="100" x2="555" y2="184" stroke="#e3e8ee" stroke-width="1"/>
+<text x="564" y="104" font-size="10" font-weight="bold" fill="#2e9e5b">CNISN — Capacités (CAP-INT)</text>
+<line x1="564" y1="109" x2="779" y2="109" stroke="#2e9e5b" stroke-width="1" opacity="0.5"/>
+<text x="566" y="124" font-size="9.5" fill="#2a3340">CAP-INT-13 Transfrontalière</text>
+<text x="566" y="137" font-size="9.5" fill="#2a3340">CAP-INT-14 One Health</text>
+<text x="566" y="150" font-size="9.5" fill="#2a3340">ADR-0001/0007/0010</text>
+<line x1="785" y1="100" x2="785" y2="184" stroke="#e3e8ee" stroke-width="1"/>
+<text x="794" y="104" font-size="10" font-weight="bold" fill="#8a4fc0">PTISN — Profils (ex.)</text>
+<line x1="794" y1="109" x2="994" y2="109" stroke="#8a4fc0" stroke-width="1" opacity="0.5"/>
+<text x="796" y="124" font-size="9.5" fill="#2a3340">PT-14 Transfrontalier</text>
+<text x="796" y="137" font-size="9.5" fill="#2a3340">PT-15 One Health</text>
+<text x="796" y="150" font-size="9.5" fill="#2a3340">PT-09 Exposition données</text>
+<rect x="80" y="198" width="920" height="122" rx="10" fill="#fafbfc" stroke="#c7ced6" stroke-width="1"/>
+<rect x="80" y="198" width="34" height="122" rx="6" fill="#33414f"/>
+<text x="97" y="265" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">5</text>
+<text x="124" y="218" font-size="12.5" font-weight="bold" fill="#1a2b4a">Couche 5 — Projections analytiques &amp; Modèles</text>
+<text x="84" y="232" font-size="10" font-weight="bold" fill="#2f6fb0">CAESN — Composants (CMP)</text>
+<line x1="84" y1="237" x2="314" y2="237" stroke="#2f6fb0" stroke-width="1" opacity="0.5"/>
+<text x="86" y="252" font-size="9.5" fill="#2a3340">CMP-03 Lakehouse / ETL</text>
+<text x="86" y="265" font-size="9.5" fill="#2a3340">CMP-04 IA prédictive</text>
+<text x="86" y="278" font-size="9.5" fill="#2a3340">CMP-05 Moteur graphes</text>
+<line x1="320" y1="228" x2="320" y2="312" stroke="#e3e8ee" stroke-width="1"/>
+<text x="329" y="232" font-size="10" font-weight="bold" fill="#d9772e">ARTSN — Chapitres / Fondations</text>
+<line x1="329" y1="237" x2="549" y2="237" stroke="#d9772e" stroke-width="1" opacity="0.5"/>
+<text x="331" y="252" font-size="9.5" fill="#2a3340">ART-6 CQRS</text>
+<text x="331" y="265" font-size="9.5" fill="#2a3340">ART-5 Routage alertes</text>
+<text x="331" y="278" font-size="9.5" fill="#2a3340">ART-8B Graph Store</text>
+<text x="331" y="291" font-size="9.5" fill="#2a3340">ART-4D Spatio-temp.</text>
+<text x="331" y="304" font-size="9.5" fill="#2a3340">ART-9 Réconciliation</text>
+<line x1="555" y1="228" x2="555" y2="312" stroke="#e3e8ee" stroke-width="1"/>
+<text x="564" y="232" font-size="10" font-weight="bold" fill="#2e9e5b">CNISN — Capacités (CAP-INT)</text>
+<line x1="564" y1="237" x2="779" y2="237" stroke="#2e9e5b" stroke-width="1" opacity="0.5"/>
+<text x="566" y="252" font-size="9.5" fill="#2a3340">CAP-INT-07 Analytique</text>
+<text x="566" y="265" font-size="9.5" fill="#2a3340">CAP-INT-11 Qualité/réconc.</text>
+<text x="566" y="278" font-size="9.5" fill="#2a3340">STD-0007 SNOMED CT</text>
+<line x1="785" y1="228" x2="785" y2="312" stroke="#e3e8ee" stroke-width="1"/>
+<text x="794" y="232" font-size="10" font-weight="bold" fill="#8a4fc0">PTISN — Profils (ex.)</text>
+<line x1="794" y1="237" x2="994" y2="237" stroke="#8a4fc0" stroke-width="1" opacity="0.5"/>
+<text x="796" y="252" font-size="9.5" fill="#2a3340">PT-09 Exposition données</text>
+<text x="796" y="265" font-size="9.5" fill="#2a3340">PT-12 Audit/provenance</text>
+<rect x="80" y="326" width="920" height="122" rx="10" fill="#fafbfc" stroke="#c7ced6" stroke-width="1"/>
+<rect x="80" y="326" width="34" height="122" rx="6" fill="#33414f"/>
+<text x="97" y="393" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">4</text>
+<text x="124" y="346" font-size="12.5" font-weight="bold" fill="#1a2b4a">Couche 4 — Interopérabilité &amp; services partagés</text>
+<text x="84" y="360" font-size="10" font-weight="bold" fill="#2f6fb0">CAESN — Composants (CMP)</text>
+<line x1="84" y1="365" x2="314" y2="365" stroke="#2f6fb0" stroke-width="1" opacity="0.5"/>
+<text x="86" y="380" font-size="9.5" fill="#2a3340">CMP-06 Intégration/médiation</text>
+<text x="86" y="393" font-size="9.5" fill="#2a3340">CMP-07 Orchestration/Sagas</text>
+<text x="86" y="406" font-size="9.5" fill="#2a3340">CMP-08 Répertoire clinique</text>
+<text x="86" y="419" font-size="9.5" fill="#2a3340">CMP-09 Métadonnées</text>
+<text x="86" y="432" font-size="9.5" fill="#2a3340">CMP-10 Terminologies</text>
+<text x="86" y="445" font-size="9.5" fill="#2a3340">CMP-11 INP</text>
+<text x="86" y="458" font-size="9.5" fill="#2a3340">CMP-12 Éligibilité CSU</text>
+<text x="86" y="471" font-size="9.5" fill="#2a3340">CMP-13 Personnels</text>
+<text x="86" y="484" font-size="9.5" fill="#2a3340">CMP-14 Produits/intrants</text>
+<line x1="320" y1="356" x2="320" y2="440" stroke="#e3e8ee" stroke-width="1"/>
+<text x="329" y="360" font-size="10" font-weight="bold" fill="#d9772e">ARTSN — Chapitres / Fondations</text>
+<line x1="329" y1="365" x2="549" y2="365" stroke="#d9772e" stroke-width="1" opacity="0.5"/>
+<text x="331" y="380" font-size="9.5" fill="#2a3340">ART-2 Médiation</text>
+<text x="331" y="393" font-size="9.5" fill="#2a3340">ART-3 Profil B (présent)</text>
+<text x="331" y="406" font-size="9.5" fill="#2a3340">ART-4 Référentiels nat.</text>
+<text x="331" y="419" font-size="9.5" fill="#2a3340">ART-8A Parcours</text>
+<line x1="555" y1="356" x2="555" y2="440" stroke="#e3e8ee" stroke-width="1"/>
+<text x="564" y="360" font-size="10" font-weight="bold" fill="#2e9e5b">CNISN — Capacités (CAP-INT)</text>
+<line x1="564" y1="365" x2="779" y2="365" stroke="#2e9e5b" stroke-width="1" opacity="0.5"/>
+<text x="566" y="380" font-size="9.5" fill="#2a3340">CAP-INT-03 Échange/médiation</text>
+<text x="566" y="393" font-size="9.5" fill="#2a3340">CAP-INT-06 Catalogue</text>
+<text x="566" y="406" font-size="9.5" fill="#2a3340">CAP-INT-05 Terminologie</text>
+<text x="566" y="419" font-size="9.5" fill="#2a3340">CAP-INT-12 Conformité</text>
+<text x="566" y="432" font-size="9.5" fill="#2a3340">CAP-INT-10 Audit</text>
+<line x1="785" y1="356" x2="785" y2="440" stroke="#e3e8ee" stroke-width="1"/>
+<text x="794" y="360" font-size="10" font-weight="bold" fill="#8a4fc0">PTISN — Profils (ex.)</text>
+<line x1="794" y1="365" x2="994" y2="365" stroke="#8a4fc0" stroke-width="1" opacity="0.5"/>
+<text x="796" y="380" font-size="9.5" fill="#2a3340">PT-01 Échange interinst.</text>
+<text x="796" y="393" font-size="9.5" fill="#2a3340">PT-02 Médiation</text>
+<text x="796" y="406" font-size="9.5" fill="#2a3340">PT-03 Catalogue</text>
+<text x="796" y="419" font-size="9.5" fill="#2a3340">PT-08 Données agrég.</text>
+<text x="796" y="432" font-size="9.5" fill="#2a3340">PT-10 Confiance</text>
+<text x="796" y="445" font-size="9.5" fill="#2a3340">PT-11 Consentement</text>
+<text x="796" y="458" font-size="9.5" fill="#2a3340">PT-12 Audit</text>
+<rect x="80" y="454" width="920" height="122" rx="10" fill="#fafbfc" stroke="#c7ced6" stroke-width="1"/>
+<rect x="80" y="454" width="34" height="122" rx="6" fill="#33414f"/>
+<text x="97" y="521" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">3</text>
+<text x="124" y="474" font-size="12.5" font-weight="bold" fill="#1a2b4a">Couche 3 — Échange, transport &amp; ingestion</text>
+<text x="84" y="488" font-size="10" font-weight="bold" fill="#2f6fb0">CAESN — Composants (CMP)</text>
+<line x1="84" y1="493" x2="314" y2="493" stroke="#2f6fb0" stroke-width="1" opacity="0.5"/>
+<text x="86" y="508" font-size="9.5" fill="#2a3340">CMP-15 API Gateway</text>
+<text x="86" y="521" font-size="9.5" fill="#2a3340">CMP-16 Registre schémas</text>
+<text x="86" y="534" font-size="9.5" fill="#2a3340">CMP-17 Message broker</text>
+<text x="86" y="547" font-size="9.5" fill="#2a3340">CMP-18 Compensateur</text>
+<line x1="320" y1="484" x2="320" y2="568" stroke="#e3e8ee" stroke-width="1"/>
+<text x="329" y="488" font-size="10" font-weight="bold" fill="#d9772e">ARTSN — Chapitres / Fondations</text>
+<line x1="329" y1="493" x2="549" y2="493" stroke="#d9772e" stroke-width="1" opacity="0.5"/>
+<text x="331" y="508" font-size="9.5" fill="#2a3340">ART-1 Transport asynchrone</text>
+<text x="331" y="521" font-size="9.5" fill="#2a3340">ART-8C Netting</text>
+<text x="331" y="534" font-size="9.5" fill="#2a3340">F.3 Registre schémas</text>
+<line x1="555" y1="484" x2="555" y2="568" stroke="#e3e8ee" stroke-width="1"/>
+<text x="564" y="488" font-size="10" font-weight="bold" fill="#2e9e5b">CNISN — Capacités (CAP-INT)</text>
+<line x1="564" y1="493" x2="779" y2="493" stroke="#2e9e5b" stroke-width="1" opacity="0.5"/>
+<text x="566" y="508" font-size="9.5" fill="#2a3340">CAP-INT-03 Échange</text>
+<text x="566" y="521" font-size="9.5" fill="#2a3340">CAP-INT-13 Transfrontalière</text>
+<text x="566" y="534" font-size="9.5" fill="#2a3340">ADR-0008</text>
+<line x1="785" y1="484" x2="785" y2="568" stroke="#e3e8ee" stroke-width="1"/>
+<text x="794" y="488" font-size="10" font-weight="bold" fill="#8a4fc0">PTISN — Profils (ex.)</text>
+<line x1="794" y1="493" x2="994" y2="493" stroke="#8a4fc0" stroke-width="1" opacity="0.5"/>
+<text x="796" y="508" font-size="9.5" fill="#2a3340">PT-01 Échange</text>
+<text x="796" y="521" font-size="9.5" fill="#2a3340">PT-02 Médiation</text>
+<text x="796" y="534" font-size="9.5" fill="#2a3340">PT-08 Données agrégées</text>
+<rect x="80" y="582" width="920" height="122" rx="10" fill="#fafbfc" stroke="#c7ced6" stroke-width="1"/>
+<rect x="80" y="582" width="34" height="122" rx="6" fill="#33414f"/>
+<text x="97" y="649" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">2</text>
+<text x="124" y="602" font-size="12.5" font-weight="bold" fill="#1a2b4a">Couche 2 — Point de service</text>
+<text x="84" y="616" font-size="10" font-weight="bold" fill="#2f6fb0">CAESN — Composants (CMP)</text>
+<line x1="84" y1="621" x2="314" y2="621" stroke="#2f6fb0" stroke-width="1" opacity="0.5"/>
+<text x="86" y="636" font-size="9.5" fill="#2a3340">CMP-19 Dossiers &amp; stats</text>
+<text x="86" y="649" font-size="9.5" fill="#2a3340">CMP-20 Pharmacies (PMIS)</text>
+<text x="86" y="662" font-size="9.5" fill="#2a3340">CMP-21 Santé communautaire</text>
+<text x="86" y="675" font-size="9.5" fill="#2a3340">CMP-22 Espace patient</text>
+<text x="86" y="688" font-size="9.5" fill="#2a3340">CMP-23 LMIS logistique</text>
+<text x="86" y="701" font-size="9.5" fill="#2a3340">CMP-24 Zoonoses</text>
+<text x="86" y="714" font-size="9.5" fill="#2a3340">CMP-25 Enquêtes/capteurs</text>
+<line x1="320" y1="612" x2="320" y2="696" stroke="#e3e8ee" stroke-width="1"/>
+<text x="329" y="616" font-size="10" font-weight="bold" fill="#d9772e">ARTSN — Chapitres / Fondations</text>
+<line x1="329" y1="621" x2="549" y2="621" stroke="#d9772e" stroke-width="1" opacity="0.5"/>
+<text x="331" y="636" font-size="9.5" fill="#2a3340">ENF-1 Autonomie locale</text>
+<text x="331" y="649" font-size="9.5" fill="#2a3340">F.1 Historisation source</text>
+<text x="331" y="662" font-size="9.5" fill="#2a3340">ART-1 (partiel)</text>
+<line x1="555" y1="612" x2="555" y2="696" stroke="#e3e8ee" stroke-width="1"/>
+<text x="564" y="616" font-size="10" font-weight="bold" fill="#2e9e5b">CNISN — Capacités (CAP-INT)</text>
+<line x1="564" y1="621" x2="779" y2="621" stroke="#2e9e5b" stroke-width="1" opacity="0.5"/>
+<text x="566" y="636" font-size="9.5" fill="#2a3340">CAP-INT-01 Identité</text>
+<text x="566" y="649" font-size="9.5" fill="#2a3340">CAP-INT-02 Professionnels</text>
+<text x="566" y="662" font-size="9.5" fill="#2a3340">CAP-INT-04 Structures</text>
+<text x="566" y="675" font-size="9.5" fill="#2a3340">CAP-INT-05 Terminologie</text>
+<text x="566" y="688" font-size="9.5" fill="#2a3340">CAP-INT-09 Consentement</text>
+<line x1="785" y1="612" x2="785" y2="696" stroke="#e3e8ee" stroke-width="1"/>
+<text x="794" y="616" font-size="10" font-weight="bold" fill="#8a4fc0">PTISN — Profils (ex.)</text>
+<line x1="794" y1="621" x2="994" y2="621" stroke="#8a4fc0" stroke-width="1" opacity="0.5"/>
+<text x="796" y="636" font-size="9.5" fill="#2a3340">PT-04 Résolution identité</text>
+<text x="796" y="649" font-size="9.5" fill="#2a3340">PT-05 Professionnels</text>
+<text x="796" y="662" font-size="9.5" fill="#2a3340">PT-06 Structures</text>
+<text x="796" y="675" font-size="9.5" fill="#2a3340">PT-07 Terminologie</text>
+<text x="796" y="688" font-size="9.5" fill="#2a3340">PT-11 Consentement</text>
+<rect x="80" y="710" width="920" height="122" rx="10" fill="#fafbfc" stroke="#c7ced6" stroke-width="1"/>
+<rect x="80" y="710" width="34" height="122" rx="6" fill="#33414f"/>
+<text x="97" y="777" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">1</text>
+<text x="124" y="730" font-size="12.5" font-weight="bold" fill="#1a2b4a">Couche 1 — Infrastructure</text>
+<text x="84" y="744" font-size="10" font-weight="bold" fill="#2f6fb0">CAESN — Composants (CMP)</text>
+<line x1="84" y1="749" x2="314" y2="749" stroke="#2f6fb0" stroke-width="1" opacity="0.5"/>
+<text x="86" y="764" font-size="9.5" fill="#2a3340">CMP-26 Nœud central (HDS)</text>
+<text x="86" y="777" font-size="9.5" fill="#2a3340">CMP-27 Nœuds régionaux (Fog)</text>
+<text x="86" y="790" font-size="9.5" fill="#2a3340">CMP-28 Nœuds locaux (Edge)</text>
+<text x="86" y="803" font-size="9.5" fill="#2a3340">CMP-29 Liaisons/VPN</text>
+<text x="86" y="816" font-size="9.5" fill="#2a3340">CMP-30 MPLS</text>
+<text x="86" y="829" font-size="9.5" fill="#2a3340">CMP-31 Réseaux mobiles</text>
+<line x1="320" y1="740" x2="320" y2="824" stroke="#e3e8ee" stroke-width="1"/>
+<text x="329" y="744" font-size="10" font-weight="bold" fill="#d9772e">ARTSN — Chapitres / Fondations</text>
+<line x1="329" y1="749" x2="549" y2="749" stroke="#d9772e" stroke-width="1" opacity="0.5"/>
+<text x="331" y="764" font-size="9.5" fill="#2a3340">ART-7 Résidence &amp; sécurité</text>
+<text x="331" y="777" font-size="9.5" fill="#2a3340">F.1 (stockage souverain)</text>
+<line x1="555" y1="740" x2="555" y2="824" stroke="#e3e8ee" stroke-width="1"/>
+<text x="564" y="744" font-size="10" font-weight="bold" fill="#2e9e5b">CNISN — Capacités (CAP-INT)</text>
+<line x1="564" y1="749" x2="779" y2="749" stroke="#2e9e5b" stroke-width="1" opacity="0.5"/>
+<text x="566" y="764" font-size="9.5" fill="#2a3340">CAP-INT-08 Confiance/sécurité</text>
+<text x="566" y="777" font-size="9.5" fill="#2a3340">CAP-INT-10 Provenance/audit</text>
+<text x="566" y="790" font-size="9.5" fill="#2a3340">ADR-0007 (GDHCN)</text>
+<line x1="785" y1="740" x2="785" y2="824" stroke="#e3e8ee" stroke-width="1"/>
+<text x="794" y="744" font-size="10" font-weight="bold" fill="#8a4fc0">PTISN — Profils (ex.)</text>
+<line x1="794" y1="749" x2="994" y2="749" stroke="#8a4fc0" stroke-width="1" opacity="0.5"/>
+<text x="796" y="764" font-size="9.5" fill="#2a3340">PT-10 Confiance/auth</text>
+<text x="796" y="777" font-size="9.5" fill="#2a3340">PT-12 Audit/provenance</text>
+<text x="80" y="874" font-size="10" fill="#556">Source : 02_artsn/05_cartographie (6 couches + 2 axes), coherence-report, validate_ref CONFORME. Chaque CAP-INT est détaillée par STD-0001…0007 et ADR-0001…0010 (niveau CNISN).</text>
+</svg>

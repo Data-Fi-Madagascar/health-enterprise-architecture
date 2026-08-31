@@ -1,5 +1,5 @@
 ---
-title: Profil technique national
+title: "Médiation intra-secteur"
 id: ptisn-PT-02
 domain: 03_profils
 version: "1.0.0"
@@ -7,6 +7,7 @@ status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-02"]
+related: ["CAP-INT-03", "ART-1", "ART-2", "ART-5", "ART-7", "ART-8", "ART-8C", "ART-8D", "CMP-06"]
 ---
 
 # Profil technique national
@@ -14,37 +15,61 @@ tags: ["ptisn", "niveau-4", "profils", "PT-02"]
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-## 1. Capacité CNISN
+## 1. Objet et périmètre
+
+Le **profil PT-02 — Médiation intra-secteur** définit le service sectoriel de médiation et d’intégration sanitaire. Il couvre les échanges internes au secteur santé (entre systèmes et registres santé), à la différence de PT-01 qui concerne l’échange interinstitutionnel.
+
+Périmètre : médiation intra-secteur santé (transformation sémantique, routage, orchestration légère entre services santé).
+
+## 2. Capacité CNISN
 
 [CAP-INT-03: Échange et médiation inter-systèmes](../../referentiel/capacites/cap-int-03.md)
 
-## 2. Chapitres ART applicables
+## 3. Chapitres ART applicables
 
 - [ART-1: intégration](../../referentiel/chapitres/art-1.md)
 - [ART-2: médiation](../../referentiel/chapitres/art-2.md)
 - [ART-5: qualité et réconciliation](../../referentiel/chapitres/art-5.md)
 - [ART-7: sécurité](../../referentiel/chapitres/art-7.md)
-- [ART-8: coordination lorsque applicable.](../../referentiel/chapitres/art-8.md)
+- [ART-8: coordination lorsque applicable](../../referentiel/chapitres/art-8.md)
+- [ART-8C](../../referentiel/chapitres/art-8c.md), [ART-8D](../../referentiel/chapitres/art-8d.md)
 
-## 3. Service national
+## 4. Acteurs (Actors)
 
-**Service sectoriel de médiation et d'intégration sanitaire**
+- **Système source (Source System)** — système santé émettant une requête ou un événement.
+- **Médiateur sectoriel (Mediation Service)** — point d’entrée unique du secteur ; authentifie, route, transforme et journalise.
+- **Service métier / registre santé (Target Service)** — système traitant la demande (identité, professionnels, terminologie…).
+- **Point d’échange sectoriel** — route vers la plateforme interinstitutionnelle le cas échéant.
+- **Plateforme interinstitutionnelle (PT-01)** — assure la confiance entre organisations hors secteur santé.
 
-## 4. Fonctions
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-03](../../referentiel/capacites/cap-int-03.md).
+## 5. Transactions
 
-- exposition des interfaces santé ;
-- authentification des systèmes ;
-- routage ;
-- transformation ;
-- validation des profils ;
-- enrichissement ;
-- résolution des métadonnées ;
-- corrélation ;
-- gestion des erreurs ;
-- observabilité ;
-- réconciliation.
+| Transaction | Acteurs | R/O | Standard |
+|----|----|----|----|
+| T1 — Soumission de requête/événement | Source → Médiateur sectoriel | R | REST synchrone / messagerie asynchrone |
+| T2 — Routage et transformation sémantique | Médiateur → Service métier | R | FHIR R4 / terminologies métier |
+| T3 — Journalisation et observabilité | Médiateur → observabilité | R | Métriques et journaux du médiateur |
+| T4 — Route vers la plateforme interinstitutionnelle | Médiateur → Point d’échange → PT-01 | O | X-Road (voir PT-01) |
 
-## 5. Produit candidat
+R = requis ; O = optionnel.
+
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-03](../../referentiel/capacites/cap-int-03.md).
+## 6. Content Modules
+
+- **Ressources FHIR R4** : payloads normalisés par les profils métier (patient, practitioner, terminology…).
+- **Messages asynchrones** : conformes aux contrats AsyncAPI publiés (voir PT-03).
+- **En-têtes de corrélation** : identifiant de transaction, métadonnées de source, contexte d’appel.
+
+## 7. Options
+
+- **O1 — Produit** : OpenHIM (référence) ou solution alternative satisfaisant les contrats ART.
+- **O2 — Transport** : REST synchrone, messagerie asynchrone, ou les deux.
+- **O3 — Médiateurs indépendants** : déploiement et extension par médiateurs découplés.
+
+## 8. Service national
+
+**Service sectoriel de médiation et d’intégration sanitaire** — implémentation retenue :
 
 | Élément | Décision |
 |----|----|
@@ -54,25 +79,38 @@ tags: ["ptisn", "niveau-4", "profils", "PT-02"]
 | Alternatives | Autorisées si les contrats ART sont satisfaits |
 | Périmètre | Médiation intra-secteur santé |
 
-OpenHIM fournit un point d'entrée pour les services, journalise les requêtes et permet d'étendre les traitements à travers des médiateurs indépendants. Il est présenté par sa documentation comme une implémentation de référence de la couche d'interopérabilité OpenHIE.
+OpenHIM fournit un point d’entrée pour les services, journalise les requêtes et permet d’étendre les traitements à travers des médiateurs indépendants. Il est présenté par sa documentation comme une implémentation de référence de la couche d’interopérabilité OpenHIE.
 
-## 6. Exigences
+## 9. Formats et standards recommandés
 
-Une solution alternative doit au minimum supporter :
+- Aucun format imposé en soi : la médiation s’appuie sur les profils FHIR et terminologies définis par les profils métier (PT-04, PT-05, PT-07…).
+- Les contrats d’interface sont décrites selon les recommandations de PT-03 (OpenAPI, FHIR, AsyncAPI).
+- Transport : REST synchrone et messagerie asynchrone.
 
-- interfaces synchrones et asynchrones ;
-- routage configurable ;
-- authentification des sources ;
-- transformation ;
-- gestion des erreurs ;
-- corrélation ;
-- métriques ;
-- journalisation ;
-- reprise ;
-- déploiement de médiateurs indépendants ;
+*Référence — normes et standards CNISN : [01_cnisn/05_standards](../../01_cnisn/05_standards/index.md).
+## 10. Exigences
+
+Une solution alternative doit au minimum supporter :
+
+- interfaces synchrones et asynchrones ;
+- routage configurable ;
+- authentification des sources ;
+- transformation ;
+- gestion des erreurs ;
+- corrélation ;
+- métriques ;
+- journalisation ;
+- reprise ;
+- déploiement de médiateurs indépendants ;
 - intégration avec les services nationaux.
 
-## 7. Articulation avec l'échange interinstitutionnel
+## 11. Déclaration de conformité (Integration Statement)
+
+La conformité est attestée par : validation des profils consommés/exposés, journalisation des requêtes, métriques d’observabilité, et respect des contrats ART (notamment ART-2). Un test de validation des médiateurs doit être fourni.
+
+## 12. Articulation avec les autres profils
+
+Le médiateur traite la sémantique et les règles sectorielles, puis route vers le point d’échange sectoriel et, le cas échéant, vers la plateforme interinstitutionnelle ([PT-01](../../referentiel/profils/pt-01.md)).
 
 ```plantuml
 @startuml
@@ -104,10 +142,12 @@ stop
 @enduml
 ```
 
-Le médiateur traite la sémantique et les règles sectorielles.
+Il s’appuie sur les services nationaux [PT-04](../../referentiel/profils/pt-04.md) (identité), [PT-05](../../referentiel/profils/pt-05.md) (professionnels), [PT-07](../../referentiel/profils/pt-07.md) (terminologie), [PT-10](../../referentiel/profils/pt-10.md) (autorisation), [PT-11](../../referentiel/profils/pt-11.md) (consentement).
 
-La plateforme interinstitutionnelle assure la confiance entre organisations.
+## 13. Limites et dépendances
 
-------------------------------------------------------------------------
+Limites : la médiation intra-secteur ne remplace pas le service d’échange interinstitutionnel (PT-01) ; elle ne définit pas les formats métier (ce rôle revient aux profils concernés).
+
+Dépendances : services nationaux santé, point d’échange sectoriel, et éventuellement la plateforme interinstitutionnelle.
 
 <!-- END:GENERATED -->

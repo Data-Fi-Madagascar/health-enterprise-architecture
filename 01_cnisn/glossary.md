@@ -126,6 +126,36 @@ Termes propres au périmètre d'interopérabilité du niveau 2. Les termes trans
 
 **X-Road** : Plateforme d'échange de données sécurisé entre organisations membres, utilisant des serveurs de sécurité et une infrastructure de confiance commune.
 
+## Termes de standards et normes
+
+**International Patient Summary (IPS)** : Résumé international du patient, standard HL7 FHIR pour l'échange de données cliniques essentielles entre systèmes de santé de pays différents, facilitant les soins transfrontaliers.
+
+**Global Digital Health Certification Network (GDHCN)** : Réseau mondial de certification de la santé numérique de l'OMS, fournissant des certificats numériques pour valider l'authenticité et l'intégrité des données de santé échangées internationalement.
+
+**Audit Trail and Node Authentication (ATNA)** : Profil IHE pour l'audit des traces d'activité et l'authentification des nœuds, garantissant la traçabilité des accès et des échanges de données de santé.
+
+**Mobile Care Services Discovery (mCSD)** : Profil IHE pour la découverte des services de soins mobiles, permettant la localisation et l'identification des prestataires de soins et des structures de santé.
+
+**Sharing Valuesets, Codes, and Maps (SVCM)** : Profil IHE pour le partage de vocabulaires, codes et mappings, assurant la cohérence sémantique entre les systèmes utilisant différentes terminologies.
+
+**Internet User Authorization (IUA)** : Profil IHE pour l'autorisation des utilisateurs Internet, définissant les règles d'accès aux ressources de données de santé.
+
+## Termes d'organisations internationales et régionales
+
+**Communauté de Développement de l'Afrique Australe (SADC)** : Organisation régionale regroupant 16 pays de l'Afrique australe, coordonnant les politiques de développement, y compris la coopération en matière de santé numérique.
+
+**Organisation Internationale de la Francophonie (OIF)** : Organisation regroupant les pays et gouvernements francophones, soutenant la coopération dans les domaines de la culture, de l'éducation et de la santé.
+
+**Commission Économique des Nations Unies pour l'Afrique (CEUA)** : Institution onusienne chargée de promouvoir la coopération économique et le développement en Afrique, incluant le secteur de la santé numérique.
+
+**Union Africaine (UA)** : Organisation continentale regroupant 55 États membres, promouvant l'unité, la solidarité et la coopération entre les pays africains, y compris dans le domaine de la santé.
+
+**Organisation des Nations Unies pour l'alimentation et l'agriculture (FAO)** : Agence spécialisée de l'ONU chargée de combattre la faim et d'améliorer la nutrition et l'agriculture, participant au réseau Tripartite pour la santé One Health.
+
+**Organisation mondiale de la santé animale (WOAH)** : Organisation internationale établissant des normes pour la santé animale, participant au réseau Tripartite pour la surveillance des zoonoses.
+
+**Africa CDC** : Centre africain de contrôle et de prévention des maladies, institution de l'Union Africaine coordonnant la réponse aux urgences sanitaires et le renforcement des capacités de santé publique en Afrique.
+
 ## Liens
 
 - Index du CNISN

@@ -100,7 +100,7 @@ tags: [analyse, qualité, contenu, synthèse]
 
 **Ce qui fonctionne :**
 - 25 principes de qualité (catégories A-F)
-- 12 capacités bien réparties en 5 familles
+- 16 capacités bien réparties en 8 familles
 - Matrice principes-capacités complète
 - P-INT-22 (connectivité contrainte) directement pertinent
 

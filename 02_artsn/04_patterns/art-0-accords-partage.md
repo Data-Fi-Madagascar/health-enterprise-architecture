@@ -8,7 +8,7 @@ status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: ["artsn", "chapitres", "ART-0", "niveau-3"]
-related: ["CAP-INT-06", "CAP-INT-13", "ART-0"]
+related: ["CAP-INT-06", "CAP-INT-13"]
 ---
 
 # Accords de partage inter-institutionnels

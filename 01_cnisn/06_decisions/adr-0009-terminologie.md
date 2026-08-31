@@ -1,6 +1,6 @@
 ---
 
-title: "ADR-0009 : Adoption d'un référentiel terminologique national (CIM-10 + LOINC)"
+title: "ADR-0009 : Adoption d'un référentiel terminologique national (CIM-11 + LOINC)"
 id: adr-0009
 domain: 06_decisions
 version: "1.0.0"
@@ -8,9 +8,10 @@ status: candidate
 date: 2026-08-13
 owner: DEPSI
 tags: ["adr", "terminologie", "cim-10", "loinc", "codage", "sémantique"]
+related: ["PT-07"]
 ---
 
-# ADR-0009 : Adoption d'un référentiel terminologique national (CIM-10 + LOINC)
+# ADR-0009 : Adoption d'un référentiel terminologique national (CIM-11 + LOINC)
 
 ## Pour qui lire ce document
 
@@ -43,7 +44,7 @@ Actuellement, chaque programme utilise ses propres codages (codes locaux, codes 
 ## Décision
 
 Adopter un **référentiel terminologique national** basé sur :
-- **CIM-10** (Classification Internationale des Maladies, 10e révision) pour les diagnostics
+- **CIM-11** (Classification Internationale des Maladies, 11e révision) pour les diagnostics
 - **LOINC** (Logical Observation Identifiers Names and Codes) pour les observations et résultats
 - **DCI** (Dénomination Commune Internationale) pour les médicaments
 - **ATC** (Anatomical Therapeutic Chemical) pour la classification des médicaments
@@ -62,7 +63,7 @@ Le référentiel terminologique répond aux exigences du cadre :
 
 Le référentiel doit :
 - Être maintenu par une instance nationale dédiée
-- Être mis à jour annuellement (CIM-10) et trimestriellement (LOINC)
+- Être mis à jour annuellement (CIM-11) et trimestriellement (LOINC)
 - Fournir des API de mapping (code local → code standard)
 - Supporter les extensions nationales (codes spécifiques au Madagascar)
 
@@ -86,7 +87,7 @@ Le référentiel doit :
 | Alternative | Raison du refus |
 |-------------|-----------------|
 | Codes locaux uniquement | Pas d'interopérabilité, pas d'agrégation fiable |
-| CIM-10 seul | Pas de codage pour les observations et résultats |
+| CIM-11 seul | Pas de codage pour les observations et résultats |
 | SNOMED CT | Trop complexe pour le contexte malgache, coût de licence |
 | OpenMRS concept dictionary | Limité aux programmes VIH/TB, pas national |
 
@@ -95,6 +96,6 @@ Le référentiel doit :
 - PT-07 : Mapping terminologique
 - ART-2 : Médiation et normalisation
 - CAP-INT-05 : Données agrégées
-- [CIM-10 : OMS](https://icd.who.int)
+- [CIM-11 : OMS](https://icd.who.int)
 - [LOINC : Regenstrief Institute](https://loinc.org)
 

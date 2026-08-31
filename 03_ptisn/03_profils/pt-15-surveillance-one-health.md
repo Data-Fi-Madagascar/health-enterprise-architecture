@@ -10,6 +10,7 @@ version: "1.0.0"
 source: 03_ptisn/03_profils/pt-15-surveillance-one-health.md
 maps_to: ["CAP-INT-14", "CAP-18", "CAP-05", "ART-11", "ART-0", "ART-4D", "ART-8B", "CMP-02", "CMP-04", "CMP-06"]
 tags: ["ptisn", "niveau-4", "profil", "one-health", "surveillance"]
+related: ["CAP-INT-14", "CAP-18", "CAP-05", "CMP-02", "CMP-04", "CMP-06", "ART-11", "ART-0", "ART-4D", "ART-8B"]
 ---
 
 # Surveillance One Health
@@ -17,11 +18,9 @@ tags: ["ptisn", "niveau-4", "profil", "one-health", "surveillance"]
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-## Objet
+## 1. Objet et périmètre
 
 Ce profil technique définit les standards, protocoles et configurations pour la surveillance intégrée des maladies zoonotiques et des risques sanitaires émergents, en lien avec les secteurs animal (OIE/WAHIS), environnemental (GBIF) et climatique (WMO).
-
-## Périmètre
 
 | Dimension | Portée |
 |-----------|--------|
@@ -30,27 +29,56 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 | **Standards** | FHIR R4, mADX, OIE-WAHIS, GBIF, WMO BUFR |
 | **Chapitres ARTSN** | [ART-11: Coordination intersectorielle](../../referentiel/chapitres/art-11.md), [ART-0: Accords](../../referentiel/chapitres/art-0.md), ART-4D (Référentiels vétérinaires), ART-8B (Surveillance) |
 
-## Standards et profils applicables
+## 2. Capacité CNISN
 
-### Échange de données
+- [CAP-INT-14: Échanges intersectoriels One Health](../../referentiel/capacites/cap-int-14.md)
+- [CAP-INT-16: Surveillance et alertes multi-sectorielles](../../referentiel/capacites/cap-int-16.md)
+- [CAP-18: Coordination intersectorielle (One Health)](../../referentiel/capabilites/cap-18.md)
+- [CAP-05: Terminologie et codification communes](../../referentiel/capabilites/cap-05.md)
 
-| Standard | Usage | Version |
-|----------|-------|---------|
-| HL7 FHIR | Échange de données cliniques et de surveillance | R4 |
-| IHE mADX | Données agrégées de surveillance | — |
-| OIE-WAHIS | Données vétérinaires internationales | — |
-| GBIF | Données de biodiversité et de distribution des espèces | — |
-| WMO BUFR | Données climatiques et météorologiques | — |
+## 3. Chapitres ART applicables
 
-### Identification
+- [ART-11: Coordination intersectorielle](../../referentiel/chapitres/art-11.md)
+- [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md)
+- ART-4D — Référentiels vétérinaires
+- ART-8B — Surveillance
 
-| Standard | Usage | Version |
-|----------|-------|---------|
-| OIE Code pays | Identification des pays pour les flux vétérinaires | — |
-| ISO 3166-1 | Codes pays internationaux | — |
-| FHIR Organization | Identification des organisations multi-sectorielles | R4 |
+## 4. Acteurs (Actors)
 
-## Interfaces d'échange
+- **Instituts vétérinaires nationaux** — producteurs des données OIE-WAHIS (T1).
+- **Sources environnementales/climatiques** — GBIF, stations météo, WMO (T2, T3).
+- **Moteur analytique (CMP-04)** — collecte, corrèle et produit les alertes (T1–T4).
+- **Centre de commande (CMP-02)** — consommateur des alertes One Health (T4).
+- **Organisations internationales** — OIE, FAO, OMS (consommateurs T4).
+
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-14](../../referentiel/capacites/cap-int-14.md).
+## 5. Transactions
+
+| Transaction | Acteurs | R/O | Standard |
+|----|----|----|----|
+| T1 — Collecte vétérinaire | Instituts vétérinaires → Moteur analytique | R | OIE-WAHIS API / FHIR Observation |
+| T2 — Données environnementales | GBIF → Moteur analytique | R | GBIF API / Darwin Core |
+| T3 — Données climatiques | Stations météo/WMO → Moteur analytique | R | WMO BUFR / FHIR Observation |
+| T4 — Alerte One Health | Moteur analytique → Centre de commande, OIE/FAO/OMS | R | FHIR Communication (priority: urgent) |
+
+R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
+
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-14](../../referentiel/capacites/cap-int-14.md).
+## 6. Content Modules
+
+- **FHIR Observation** : mesures vétérinaires, environnementales et climatiques.
+- **Darwin Core** : données de biodiversité GBIF.
+- **WMO BUFR** : données climatiques/météorologiques.
+- **FHIR Communication** : alerte One Health (priorité urgente).
+
+## 7. Options
+
+- **O1 — Transport** : REST synchrone, FTP (WMO), ou REST + SMS pour les alertes.
+- **O2 — Fréquence** : hebdomadaire (T1), mensuelle (T2), quotidienne (T3), événementielle (T4).
+
+## 8. Service national
+
+Interfaces d’échange retenues :
 
 ### Interface 1 — Collecte vétérinaire (OIE-WAHIS)
 
@@ -92,7 +120,30 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 | **Protocole** | REST + SMS |
 | **Fréquence** | Événementielle (alertes) |
 
-## Règles de souveraineté
+## 9. Formats et standards recommandés
+
+### Échange de données
+
+| Standard | Usage | Version |
+|----------|-------|---------|
+| HL7 FHIR | Échange de données cliniques et de surveillance | R4 |
+| IHE mADX | Données agrégées de surveillance | — |
+| OIE-WAHIS | Données vétérinaires internationales | — |
+| GBIF | Données de biodiversité et de distribution des espèces | — |
+| WMO BUFR | Données climatiques et météorologiques | — |
+
+### Identification
+
+| Standard | Usage | Version |
+|----------|-------|---------|
+| OIE Code pays | Identification des pays pour les flux vétérinaires | — |
+| ISO 3166-1 | Codes pays internationaux | — |
+| FHIR Organization | Identification des organisations multi-sectorielles | R4 |
+
+*Référence — normes et standards CNISN : [01_cnisn/05_standards](../../01_cnisn/05_standards/index.md).
+## 10. Exigences
+
+Règles de souveraineté :
 
 | Règle | Description |
 |-------|-------------|
@@ -101,7 +152,7 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 | **Règle 3** | Tous les accords de partage One Health sont validés par le CNASN |
 | **Règle 4** | Les données climatiques et environnementales sont librement partageables |
 
-## Exigences de sécurité
+Exigences de sécurité :
 
 | Exigence | Description |
 |----------|-------------|
@@ -110,7 +161,9 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 | **EXG-S3** | RBAC différencié par rôle (vétérinaire, épidémiologiste, environnementaliste) |
 | **EXG-S4** | Journalisation de tous les échanges One Health |
 
-## Indicateurs de performance
+## 11. Déclaration de conformité (Integration Statement)
+
+Indicateurs de performance cibles :
 
 | Indicateur | Cible |
 |------------|-------|
@@ -120,7 +173,15 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 | Volume données One Health traitées/jour | 10 000 |
 | Taux de corrélation humain-animal | > 80% |
 
-## Dépendances
+La conformité est attestée par la validation CNASN des accords de partage et la journalisation de tous les échanges.
+
+## 12. Articulation avec les autres profils
+
+- [PT-08: échange de données agrégées](../../referentiel/profils/pt-08.md)
+- [PT-10: confiance, authentification, autorisation](../../referentiel/profils/pt-10.md)
+- [PT-11: consentement et bases d’autorisation](../../referentiel/profils/pt-11.md)
+
+## 13. Limites et dépendances
 
 | Dépendance | Type | Statut |
 |------------|------|--------|

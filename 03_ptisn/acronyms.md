@@ -30,10 +30,16 @@ Ce document recense les acronymes propres au périmètre d'implémentation du ni
 
 | Acronyme | Signification |
 |----------|---------------|
-| ARTSN | Architecture de Référence Technique de la Santé Numérique |
 | API | Application Programming Interface |
+| ARTSN | Architecture de Référence Technique de la Santé Numérique |
 | CI/CD | Continuous Integration / Continuous Delivery |
+| CRUD | Create, Read, Update, Delete (opérations de base sur les données) |
+| HCX | Health Claims Exchange (échange de réclamations de santé) |
 | HDS | Hébergement de Données de Santé |
+| JSON | JavaScript Object Notation (format d'échange de données) |
+| OpenAPI | OpenAPI Specification (spécification d'API ouverte) |
+| OpenFN | Open Functionality (plateforme d'intégration open source) |
+| OpenHIM | Open Health Information Mediator (médiateur d'information de santé open source) |
 | PTISN | Profils techniques d'implémentation de la Santé Numérique |
 | REST | Representational State Transfer |
 | SLA | Service-Level Agreement (accord de niveau de service) |

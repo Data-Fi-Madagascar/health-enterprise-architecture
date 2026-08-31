@@ -8,6 +8,7 @@ status: draft
 last_reviewed: 2026-07-03
 owner: Cellule du Système d'Information Sanitaire
 tags: ["données", "principes"]
+related: ["VS-01", "VS-02", "VS-03", "VS-04"]
 ---
 
 # Principes de l'architecture des données

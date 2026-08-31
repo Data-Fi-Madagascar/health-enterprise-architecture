@@ -47,7 +47,7 @@ Chaque ADR suit le modèle type, avec un statut parmi `proposé`, `accepté`, `a
 | ADR-0006 | INP : Identité nationale patient | proposé | 2026-08-13 |
 | ADR-0007 | GDHCN : Confiance transfrontalière | proposé | 2026-08-13 |
 | ADR-0008 | ATNA : Audit et traçabilité | proposé | 2026-08-13 |
-| ADR-0009 | Terminologie : CIM-10 + LOINC | proposé | 2026-08-13 |
+| ADR-0009 | Terminologie : CIM-11 + LOINC | proposé | 2026-08-13 |
 
 ## Outils de gestion des décisions
 
@@ -78,7 +78,7 @@ Chaque ADR suit le modèle type, avec un statut parmi `proposé`, `accepté`, `a
 - **INP : Identité nationale patient** : Adoption de l'Identité Nationale Patient (INP) via PIXm/PDQm (`01_cnisn/06_decisions/adr-0006-inp.md`)
 - **GDHCN : Confiance transfrontalière** : Adoption du GDHCN pour la confiance transfrontalière (`01_cnisn/06_decisions/adr-0007-gdhcn.md`)
 - **ATNA : Audit et traçabilité** : Adoption d'ATNA et journalisation pour l'audit et la traçabilité (`01_cnisn/06_decisions/adr-0008-atna.md`)
-- **Terminologie : CIM-10 + LOINC** : Adoption d'un référentiel terminologique national (CIM-10 + LOINC) (`01_cnisn/06_decisions/adr-0009-terminologie.md`)
+- **Terminologie : CIM-11 + LOINC** : Adoption d'un référentiel terminologique national (CIM-11 + LOINC) (`01_cnisn/06_decisions/adr-0009-terminologie.md`)
 - **Registre des décisions** : Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
 - **Template de modification** : Template : Demande de modification architecturale (`01_cnisn/06_decisions/template-modification.md`)
 - **Introduction du CNISN** : Préambule du CNISN (`01_cnisn/00_introduction/index.md`)
@@ -91,7 +91,7 @@ Chaque ADR suit le modèle type, avec un statut parmi `proposé`, `accepté`, `a
 
 - [adr-0003: ADR-0003 : Utilisation de HL7 FHIR comme standard d'interopérabilité](adr-0003-fhir.md)
 - [adr-0005: ADR-0005 : Adoption de FHIR Consent pour le consentement structuré](adr-0005-consentement.md)
-- [adr-0009: ADR-0009 : Adoption d'un référentiel terminologique national (CIM-10 + LOINC)](adr-0009-terminologie.md)
+- [adr-0009: ADR-0009 : Adoption d'un référentiel terminologique national (CIM-11 + LOINC)](adr-0009-terminologie.md)
 - [adr-0004: ADR-0004 : Adoption des profils IHE PIXm/PDQm pour la résolution d'identité](adr-0004-identite.md)
 - [adr-0001: ADR-0001 : Adoption de X-Road comme plateforme d'échange interinstitutionnel](adr-0001-x-road.md)
 - [adr-0006: ADR-0006 : Adoption de l'Identité Nationale Patient (INP) via PIXm/PDQm](adr-0006-inp.md)

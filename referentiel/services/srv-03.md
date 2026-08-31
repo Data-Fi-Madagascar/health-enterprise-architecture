@@ -17,7 +17,7 @@ tags: ["artsn", "service", "srv-03", "patterns"]
 ---
 # Service de référentiels
 
-Le service de référentiels gère les listes et terminologies partagées — produits, organisations, CIM-10, SNOMED CT, LOINC — sur lesquelles s'appuie toute la donnée de santé. Il assure l'interprétabilité et la comparabilité des échanges.
+Le service de référentiels gère les listes et terminologies partagées — produits, organisations, CIM-11, SNOMED CT, LOINC — sur lesquelles s'appuie toute la donnée de santé. Il assure l'interprétabilité et la comparabilité des échanges.
 
 Service de catégorie *applicatif*, il [sert la formation sanitaire](../parties-prenantes/pp-06.md), [réalise la capacité « Référentiels et terminologies »](../capacites/cap-int-03.md), [accède à l'objet de données de référentiel](../objets-de-donnees/do-02.md) et [met en œuvre le chapitre ART-4 (référentiels)](../chapitres/art-4.md). Il s'appuie sur le [composant de référentiels](../composants/cmp-10.md).
 

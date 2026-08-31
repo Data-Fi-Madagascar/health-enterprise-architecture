@@ -1,5 +1,5 @@
 ---
-title: "PT-05 — Profil technique national"
+title: "Profil technique national"
 description: "Niveau 4 — Configurations, API et contrats d'interfaces par initiative"
 owner: "Équipes techniques des initiatives"
 version: "1.0.0"
@@ -8,57 +8,92 @@ last_reviewed: "2026-07-31"
 ---
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-## 1. Capacité CNISN
+## 1. Objet et périmètre
 
-Déclinaison de **CAP-INT-02**, complétée par les capacités relatives à la gouvernance des professionnels.
+Le **profil PT-05 — Registre des professionnels** définit le registre national des professionnels et travailleurs de santé. Il assure la résolution de l’identité professionnelle et la détermination du statut d’exercice.
 
-## 2. Chapitres ART applicables
+Périmètre : identité, profession, qualification, spécialité, licence, ordre, employeur, affectation, établissement, période d’exercice, statut, habilitations métier. Hors périmètre : l’authentification (service distinct, voir PT-10).
 
-- ART-4 ;
-- ART-4a — Résolution d'identité ;
-- ART-7.
+## 2. Capacité CNISN
 
-## 3. Service national
+Déclinaison de CAP-INT-02: Registre et résolution des professionnels de santé, complétée par les capacités relatives à la gouvernance des professionnels.
 
-**Registre national des professionnels et travailleurs de santé**
+## 3. Chapitres ART applicables
 
-## 4. Responsabilités
+- ART-4: Référentiels de métadonnées de gestion
+- ART-4A — Résolution d’identité
+- ART-7: Sécurité, contrôle d’accès et résidence de la donnée
+- ART-4C
 
-Le service doit gérer :
+## 4. Acteurs (Actors)
 
-- l'identité du professionnel ;
-- la profession ;
-- la qualification ;
-- la spécialité ;
-- la licence ;
-- l'ordre ou l'autorité professionnelle ;
-- l'employeur ;
-- l'affectation ;
-- l'établissement ;
-- la période d'exercice ;
-- le statut ;
-- les habilitations métier.
+- **Source de services de santé (Care Services Source)** — système déclarant/mettant à jour les informations professionnelles et organisationnelles.
+- **Registre HWR (Care Services Registry / Directory)** — tient le registre national découvrable.
+- **Consommateur de services de santé (Care Services Consumer)** — système résolvant l’identité et le statut d’un professionnel.
 
-## 5. Profil cible
+*Référence — capacité CNISN mise en œuvre : CAP-INT-02.
+## 5. Transactions
 
-Le profil mCSD peut être utilisé pour exposer les informations de découverte relatives aux organisations, localisations, services et professionnels, selon le périmètre national retenu. mCSD fournit des interfaces REST adaptées à des environnements fédérés et permet la recherche de ressources liées aux services de santé.
+| Transaction | Acteurs | R/O | Standard |
+|----|----|----|----|
+| T1 — Recherche de ressources (organisation, localisation, service, professionnel) | Consommateur → Registre | R | IHE mCSD (ITI-90) |
+| T2 — Publication/mise à jour (mCSD) | Source → Registre | R | IHE mCSD (ITI-91..94) |
+| T3 — Autorisation d’accès | Consommateur → PDP | O | IHE IUA |
 
-## 6. Décisions
+R = requis ; O = optionnel.
+
+*Référence — capacité CNISN mise en œuvre : CAP-INT-02.
+## 6. Content Modules
+
+- **HL7 FHIR Practitioner** : identité et qualification du professionnel.
+- **HL7 FHIR PractitionerRole** : profession, spécialité, licence, ordre, habilitation, période d’exercice.
+- **HL7 FHIR Organization / Location** : employeur, établissement, affectation.
+
+## 7. Options
+
+- **O1 — Service national HWR** : requis ; exposition via mCSD recommandée pour les nouveaux services.
+- **O2 — Produit de registre** : à sélectionner (mCSD uniquement pour l’exposition découvrable).
+- **O3 — Lien avec l’identité fondationnelle** : à définir.
+
+## 8. Service national
+
+**Registre national des professionnels et travailleurs de santé** — décisions :
 
 | Élément                             | Statut           |
 |-------------------------------------|------------------|
 | Service national HWR                | Requis           |
-| Profil d'exposition mCSD            | Recommandé       |
+| Profil d’exposition mCSD            | Recommandé       |
 | Produit de registre                 | À sélectionner   |
 | Modèle métier national              | À définir        |
-| Lien avec l'identité fondationnelle | À définir        |
+| Lien avec l’identité fondationnelle | À définir        |
 | Authentification des professionnels | Service distinct |
 
-## 7. Principe de séparation
+## 9. Formats et standards recommandés
 
-Le registre professionnel ne constitue pas le fournisseur d'authentification.
+Le profil mCSD peut être utilisé pour exposer les informations de découverte relatives aux organisations, localisations, services et professionnels, selon le périmètre national retenu. mCSD fournit des interfaces REST adaptées à des environnements fédérés et permet la recherche de ressources liées aux services de santé.
+
+*Référence — normes et standards CNISN : [01_cnisn/05_standards](/cnisn/standards/index).
+## 10. Exigences
+
+Le service national HWR est requis. L’exposition via mCSD est recommandée pour les nouveaux services. Le produit de registre et le modèle métier national restent à sélectionner et à définir.
+
+## 11. Déclaration de conformité (Integration Statement)
+
+Conformité attestée par l’exposition découvrable (mCSD), la détermination du statut du professionnel, et la séparation nette avec le service d’authentification (§13).
+
+## 12. Articulation avec les autres profils
+
+- PT-04: résolution d’identité bénéficiaire
+- PT-07: terminologie et codification
+- PT-10: confiance, authentification, autorisation
+
+Le registre fournit la qualité professionnelle ; l’authentification et l’autorisation sont assurées par PT-10.
+
+## 13. Limites et dépendances
+
+Principe de séparation : le registre professionnel ne constitue pas le fournisseur d’authentification.
 
 ```plantuml
 @startuml
@@ -82,10 +117,6 @@ stop
 @enduml
 ```
 
-Un utilisateur authentifié ne doit pas être considéré comme professionnel habilité sans vérification de son statut dans le registre approprié.
-
-------------------------------------------------------------------------
-
-*Rattachement : CMP-13, CAP-INT-02, ART-4, ART-4A, ART-7 · fiche PT-05*
+Un utilisateur authentifié ne doit pas être considéré comme professionnel habilité sans vérification de son statut dans le registre approprié. Dépendance : identité fondationnelle (à définir).
 
 <!-- END:GENERATED -->

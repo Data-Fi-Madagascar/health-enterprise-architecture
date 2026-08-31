@@ -7,6 +7,7 @@ status: draft
 last_reviewed: 2026-08-24
 owner: Ministère de la Santé Publique
 tags: ["caesn", "lieu", "loc-03", "overview"]
+related: ["PP-07", "CMP-39"]
 ---
 
 # District sanitaire

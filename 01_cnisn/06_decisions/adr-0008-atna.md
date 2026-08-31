@@ -8,6 +8,7 @@ status: candidate
 date: 2026-08-13
 owner: DEPSI
 tags: ["adr", "audit", "traçabilité", "atna", "journalisation"]
+related: ["Lot L4", "Lot L1", "PT-12"]
 ---
 
 # ADR-0008 : Adoption d'ATNA et journalisation pour l'audit et la traçabilité

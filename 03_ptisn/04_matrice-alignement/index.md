@@ -33,6 +33,8 @@ Le tableau suivant établit, pour chaque capacité d'interopérabilité définie
 | CAP-INT-12 | : |
 | CAP-INT-13 | PT-14 |
 | CAP-INT-14 | PT-15 |
+| CAP-INT-15 | PT-17 |
+| CAP-INT-16 | PT-15 |
 
 On constate que la capacité CAP-INT-12 ne fait l'objet d'aucun profil technique pour le moment. Cette situation traduit soit une capacité dont l'implémentation n'est pas encore requise par les initiatives en cours, soit un domaine nécessitant le développement d'un nouveau profil.
 
@@ -49,6 +51,7 @@ Le tableau ci-dessous associe chaque chapitre de l'Architecture de Référence T
 | ART-4 | PT-04, PT-05, PT-06, PT-07, PT-13, PT-15 |
 | ART-4A | PT-04, PT-05 |
 | ART-4B | PT-04, PT-10, PT-11 |
+| ART-4C | PT-05 |
 | ART-4D | PT-15 |
 | ART-5 | PT-02, PT-06, PT-07, PT-08, PT-09, PT-13 |
 | ART-6 | PT-06, PT-08, PT-09, PT-13 |
@@ -56,11 +59,13 @@ Le tableau ci-dessous associe chaque chapitre de l'Architecture de Référence T
 | ART-8 | PT-02, PT-16 |
 | ART-8A | PT-16 |
 | ART-8B | PT-15 |
+| ART-8C | PT-02 |
+| ART-8D | PT-02 |
 | ART-9 | PT-10 |
-| ART-10 | Profil futur |
+| ART-10 | PT-17 |
 | ART-11 | PT-01, PT-11, PT-15 |
 
-Le chapitre ART-10 n'est associé à aucun profil existant ; il fait l'objet d'un profil en cours de définition. Les chapitres ART-5 et ART-7 concentrent le plus grand nombre de profils, ce qui confirme leur rôle transversal dans la couche de médiation et la sécurité des données.
+Le chapitre ART-10 est associé au profil PT-17 (Logistique & chaîne d'approvisionnement). Les chapitres ART-5 et ART-7 concentrent le plus grand nombre de profils, ce qui confirme leur rôle transversal dans la couche de médiation et la sécurité des données.
 
 ## 3. Alignement avec les composants OpenHIE
 
@@ -76,7 +81,7 @@ Le PTISN utilise OpenHIE comme architecture de référence et non comme obligati
 | Orchestration de processus         | Process Manager / Saga                 |
 | Données agrégées                   | Health Metrics and Indicator Reporting |
 | Données longitudinales futures     | Shared Health Record, si applicable    |
-| Logistique future                  | Product Management and Supply Chain    |
+| Logistique (PT-17)                 | Product Management and Supply Chain    |
 | Échange transfrontalier            | Cross-border HIE (GDHCN)              |
 | Surveillance One Health            | Multi-sector event broker              |
 

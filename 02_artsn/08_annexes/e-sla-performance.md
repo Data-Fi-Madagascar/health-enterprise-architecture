@@ -82,7 +82,7 @@ Ce document définit les objectifs de niveau de service (SLA) et les métriques 
 
 | Métrique | SLA | Mesure | Seuil d'alerte |
 |----------|-----|--------|----------------|
-| Couverture CIM-10 | > 98% | Codes mappés | < 95% |
+| Couverture CIM-11 | > 98% | Codes mappés | < 95% |
 | Couverture LOINC | > 95% | Codes mappés | < 90% |
 | Temps de mapping | < 100ms | Par code | > 500ms |
 | Taux d'ambiguïté | < 3% | Codes sans mapping unique | > 5% |

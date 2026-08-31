@@ -8,6 +8,7 @@ status: active
 last_reviewed: 2026-08-13
 owner: Comité National d'Architecture Santé Numérique
 tags: ["standards", "securite", "chiffrement", "obligatoire"]
+related: ["Lot L1", "PT-10", "PT-12", "PT-06"]
 ---
 
 # STD-0002 : Norme de sécurité : Chiffrement et contrôle d'accès

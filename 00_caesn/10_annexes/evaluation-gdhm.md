@@ -162,7 +162,7 @@ Cette cartographie croise les données GDHM 2024 avec le cadre HEA pour :
 | Indicateur | Description GDHM | Phase | Preuves |
 |------------|------------------|-------|---------|
 | **15** | Architecture numérique santé / échange d'information | **3** | Architecture documentée à 6 couches. X-Road obligatoire pour les échanges interinstitutionnels. Médiation et standardisation formalisées. |
-| **16** | Standards de données interopérables | **3** | FHIR R4 obligatoire (STD-0001), SNOMED CT (STD-0007), CIM-10 + LOINC (STD-0006). Standards publiés et diffusés sous leadership gouvernemental. |
+| **16** | Standards de données interopérables | **3** | FHIR R4 obligatoire (STD-0001), SNOMED CT (STD-0007), CIM-11 + LOINC (STD-0006). Standards publiés et diffusés sous leadership gouvernemental. |
 | **17** | Disponibilité réseau | **2** | Starlink autorisé (2024). Fibre internationale (EASSy, LION, 2Africa). Couverture limitée en dehors des grandes villes. Pas de mesure réseau nationale. |
 | **18** | Maintenance infrastructure | **1** | Pas de plan de maintenance formalisé. Documentation architecturale existante mais sans plan de soutien à long terme. |
 

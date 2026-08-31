@@ -1,6 +1,6 @@
 ---
 
-title: "STD-0006 : Norme terminologique : CIM-10 + LOINC"
+title: "STD-0006 : Norme terminologique : CIM-11 + LOINC"
 id: std-0006
 domain: 05_standards
 version: "1.0.0"
@@ -8,9 +8,10 @@ status: active
 last_reviewed: 2026-08-13
 owner: Comité National d'Architecture Santé Numérique
 tags: ["standards", "terminologie", "cim-10", "loinc", "obligatoire"]
+related: ["Lot L2", "PT-07"]
 ---
 
-# STD-0006 : Norme terminologique : CIM-10 + LOINC
+# STD-0006 : Norme terminologique : CIM-11 + LOINC
 
 ## Pour qui lire ce document
 
@@ -39,12 +40,12 @@ La terminologie médicale est le socle de la sémantique commune du système d'i
 
 Toute solution codant des données cliniques ou administratives **doit** :
 
-1. **Utiliser la CIM-10** (Classification Internationale des Maladies, 10e révision) pour les diagnostics
+1. **Utiliser la CIM-11** (Classification Internationale des Maladies, 11e révision) pour les diagnostics
 2. **Utiliser LOINC** (Logical Observation Identifiers Names and Codes) pour les observations et résultats de laboratoire
 3. **Utiliser la DCI** (Dénomination Commune Internationale) pour les médicaments
 4. **Utiliser l'ATC** (Anatomical Therapeutic Chemical) pour la classification des médicaments
 5. **Fournir un service de mapping** (code local → code standard) pour les systèmes legacy
-6. **Mettre à jour annuellement** la CIM-10 et **trimestriellement** LOINC
+6. **Mettre à jour annuellement** la CIM-11 et **trimestriellement** LOINC
 
 ## Champ d'application
 
@@ -66,7 +67,7 @@ Cette norme s'applique à :
 
 | Critère | Vérification |
 |---------|--------------|
-| CIM-10 | Diagnostics codés en CIM-10 |
+| CIM-11 | Diagnostics codés en CIM-11 |
 | LOINC | Observations codées en LOINC |
 | DCI | Médicaments codés en DCI |
 | ATC | Classification ATC utilisée |

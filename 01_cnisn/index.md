@@ -49,7 +49,7 @@ Le CNISN reste volontairement neutre sur le plan technologique : il ne sélectio
 |----------|-------|
 | Introduction | Nature du cadre, positionnement, portée |
 | Principes | 25 principes nationaux d'interopérabilité (P-INT-01 à P-INT-25) |
-| Capacités | 14 capacités nationales requises (CAP-INT-01 à CAP-INT-14) |
+| Capacités | 16 capacités nationales requises (CAP-INT-01 à CAP-INT-16) |
 | Gouvernance | Instances, rôles, comités, propriétaire de capacités |
 | Conformité | Profil de conformité, dossier minimal, homologation, programme de conformité opérationnel |
 | Standards | Normes obligatoires et standards recommandés |
@@ -103,7 +103,7 @@ Le CNISN reste volontairement neutre sur le plan technologique : il ne sélectio
 - [std-0007: STD-0007 : Standard terminologique : SNOMED CT](05_standards/std-0007-snomed-ct.md)
 - [std-0005: STD-0005 : Norme d'identité patient : PIXm/PDQm](05_standards/std-0005-identite-pixm.md)
 - [std-0004: STD-0004 : Norme de données agrégées : mADX](05_standards/std-0004-madx.md)
-- [std-0006: STD-0006 : Norme terminologique : CIM-10 + LOINC](05_standards/std-0006-terminologie.md)
+- [std-0006: STD-0006 : Norme terminologique : CIM-11 + LOINC](05_standards/std-0006-terminologie.md)
 - [standards: Normes et standards d'architecture](05_standards/index.md)
 - [norm-008: NORM-008 : Tripartite Plus OMS–WOAH–FAO–PNUE](05_standards/norm-008-tripartite.md)
 - [std-0000: STD-0000 : <Titre de la norme>](05_standards/std-0000-template.md)
@@ -111,7 +111,7 @@ Le CNISN reste volontairement neutre sur le plan technologique : il ne sélectio
 - [cnisn-trajectoire: Partie V : Trajectoire de mise en œuvre](05_trajectoire/index.md)
 - [adr-0003: ADR-0003 : Utilisation de HL7 FHIR comme standard d'interopérabilité](06_decisions/adr-0003-fhir.md)
 - [adr-0005: ADR-0005 : Adoption de FHIR Consent pour le consentement structuré](06_decisions/adr-0005-consentement.md)
-- [adr-0009: ADR-0009 : Adoption d'un référentiel terminologique national (CIM-10 + LOINC)](06_decisions/adr-0009-terminologie.md)
+- [adr-0009: ADR-0009 : Adoption d'un référentiel terminologique national (CIM-11 + LOINC)](06_decisions/adr-0009-terminologie.md)
 - [adr-0004: ADR-0004 : Adoption des profils IHE PIXm/PDQm pour la résolution d'identité](06_decisions/adr-0004-identite.md)
 - [adr-0001: ADR-0001 : Adoption de X-Road comme plateforme d'échange interinstitutionnel](06_decisions/adr-0001-x-road.md)
 - [decisions: Décisions d'architecture (ADR)](06_decisions/index.md)

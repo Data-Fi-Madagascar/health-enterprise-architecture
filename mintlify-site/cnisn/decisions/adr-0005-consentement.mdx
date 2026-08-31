@@ -1,15 +1,15 @@
 ---
-title: "ADR-0005 — Adoption de FHIR Consent pour le consentement structuré"
+title: "ADR-0005 : Adoption de FHIR Consent pour le consentement structuré"
 sidebarTitle: "ADR-0005"
 description: "Niveau 2 — Règles d'interopérabilité entre systèmes d'information de santé"
 owner: "DEPSI"
 version: "1.0.0"
-status: "proposé"
+status: "candidate"
 ---
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 1 — Cadre d'Architecture d'Entreprise de la Santé Numérique.
+**Niveau :** niveau 2 : Cadre National d'Interopérabilité de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -44,7 +44,7 @@ Adopter **HL7 FHIR Consent** comme standard national pour la gestion structurée
 FHIR Consent répond aux exigences du cadre :
 
 - **CAP-INT-09** : Gestion du consentement et des autorisations
-- **ART-4b** : Bases d'autorisation
+- **ART-4B** : Bases d'autorisation
 - **ART-7** : Sécurité, contrôle d'accès et résidence des données
 - **PT-11** : Profil technique consentement
 - **Loi 2014-038** : Protection des données personnelles
@@ -76,13 +76,14 @@ Le modèle FHIR Consent permet :
 |-------------|-----------------|
 | Consentement papier uniquement | Pas de traçabilité numérique, non vérifiable |
 | Consentement propriétaire (JSON maison) | Pas d'interopérabilité, dépendance éditeur |
-| Consentement basé sur les seuls rôles RBAC | Insuffisant — ne couvre pas le consentement patient |
+| Consentement basé sur les seuls rôles RBAC | Insuffisant : ne couvre pas le consentement patient |
 | GDPR Consent (UE) | Trop strict pour le contexte malgache, inadapté |
 
 ## Références
+- **ARTSN — lots consommateurs** : L5 — Extension & pérennisation
 
-- PT-11 — Consentement
-- ART-4b — Bases d'autorisation
-- ART-7 — Sécurité
-- [Loi 2014-038 — Protection des données personnelles](https://www.lexpress.mg)
+- PT-11 : Consentement
+- ART-4B : Bases d'autorisation
+- ART-7 : Sécurité
+- [Loi 2014-038 : Protection des données personnelles](https://www.lexpress.mg)
 

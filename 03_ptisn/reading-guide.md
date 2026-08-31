@@ -46,9 +46,9 @@ Le PTISN est organisé en huit parties complétées par des annexes. Le tableau 
 | Préambule | Positionnement, fonction, hiérarchie | Tous |
 | Règles d'utilisation | Types de décisions, statuts, versionnement | Équipes techniques, DEPSI |
 | Topologie nationale cible | Architecture cible, couches, responsabilités | Architectes, intégrateurs |
-| Profils techniques | 13 profils PT-01 à PT-13 | Développeurs, fournisseurs |
+| Profils techniques | 19 profils PT-01 à PT-19 | Développeurs, fournisseurs |
 | Matrice d'alignement | Mapping capacités CNISN ↔ profils ↔ ART | DEPSI, validateurs |
-| Profil d'initiative | Template pour chaque initiative | Équipes projet |
+| Template de fiche d'initiative | Template pour chaque initiative | Équipes projet |
 | Gouvernance | Processus d'adoption, critères, homologation | Décideurs, gouvernance |
 | Conclusion | Synthèse, principes | Tous |
 
@@ -93,6 +93,12 @@ Les treize profils couvrent l'ensemble des capacités d'interopérabilité du CN
 | PT-11 | CAP-INT-09 | Consentement et bases d'autorisation |
 | PT-12 | CAP-INT-10 | Audit, provenance, traçabilité |
 | PT-13 | CAP-INT-11 | Qualité et réconciliation des données |
+| PT-14 | CAP-INT-13 | Interopérabilité transfrontalière (GDHCN, FHIR IPS) |
+| PT-15 | CAP-INT-14, CAP-INT-16 | Surveillance One Health (OHDSI FHIR) |
+| PT-16 | CAP-INT-03 | Orchestration de processus bornés (Sagas, ART-8A) |
+| PT-17 | CAP-INT-10, CAP-INT-15 | Logistique & chaîne d'approvisionnement (LMIS), échange STD-0009 |
+| PT-18 | CAP-07, VS-03 | Échange de réclamations et paiements |
+| PT-19 | ART-12 | Aide à la décision clinique (CDS) |
 
 ## 5. Statuts des décisions techniques
 
@@ -132,7 +138,7 @@ Trois documents complémentaires accompagnent ce guide de lecture. La matrice de
 - **Règles d'utilisation** : Partie I : Règles d'utilisation du PTISN (`03_ptisn/01_regles-utilisation/index.md`)
 - **Topologie nationale cible** : Partie II : Topologie nationale cible (`03_ptisn/02_topologie-nationale-cible/index.md`)
 - **Matrice d'alignement** : Partie IV : Matrice d'alignement (`03_ptisn/04_matrice-alignement/index.md`)
-- **Profil d'initiative** : Partie V : Profil technique d'une initiative (`03_ptisn/05_profil-initiative/index.md`)
+- **Template de fiche d'initiative** : Partie V : Template de fiche d'initiative (`03_ptisn/05_profil-initiative/index.md`)
 - **Gouvernance** : Partie VI : Gouvernance du PTISN (`03_ptisn/06_gouvernance/index.md`)
 - **Conclusion** : Conclusion du PTISN (`03_ptisn/07_conclusion/index.md`)
 - **PT-01** : Profil technique national (`03_ptisn/03_profils/pt-01-echange-interinstitutionnel.md`)
@@ -146,7 +152,7 @@ Trois documents complémentaires accompagnent ce guide de lecture. La matrice de
 - **PT-09** : Profil technique national (`03_ptisn/03_profils/pt-09-analytique-exposition-donnees.md`)
 - **PT-10** : Profil technique national (`03_ptisn/03_profils/pt-10-confiance-authentification-autorisation.md`)
 - **PT-11** : Profil technique national (`03_ptisn/03_profils/pt-11-consentement-bases-autorisation.md`)
-- **PT-12** : Profil technique national (`03_ptisn/03_profils/pt-12-audit-provenance-traçabilité.md`)
+- **PT-12** : Profil technique national (`03_ptisn/03_profils/pt-12-audit-provenance-tracabilite.md`)
 - **PT-13** : Profil technique national (`03_ptisn/03_profils/pt-13-qualite-reconciliation.md`)
 - **../00_caesn/00_overview/index.md** : Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
 - **../01_cnisn/index.md** : Cadre National d'Interopérabilité de la Santé Numérique (CNISN) (`01_cnisn/index.md`)
@@ -171,7 +177,7 @@ Trois documents complémentaires accompagnent ce guide de lecture. La matrice de
 - [ptisn-PT-07: PT-07 : Profil technique national](03_profils/pt-07-terminologie-codification.md)
 - [ptisn-PT-04: PT-04 : Profil technique national](03_profils/pt-04-resolution-identite-beneficiaire.md)
 - [ptisn-PT-10: PT-10 : Profil technique national](03_profils/pt-10-confiance-authentification-autorisation.md)
-- [ptisn-PT-12: PT-12 : Profil technique national](03_profils/pt-12-audit-provenance-traçabilité.md)
+- [ptisn-PT-12: PT-12 : Profil technique national](03_profils/pt-12-audit-provenance-tracabilite.md)
 - [ptisn-PT-09: PT-09 : Profil technique national](03_profils/pt-09-analytique-exposition-donnees.md)
 - [PT-15: PT-15 : Surveillance One Health](03_profils/pt-15-surveillance-one-health.md)
 - [ptisn-PT-03: PT-03 : Profil technique national](03_profils/pt-03-catalogue-services-registre-contrats.md)
@@ -179,11 +185,11 @@ Trois documents complémentaires accompagnent ce guide de lecture. La matrice de
 - [ptisn-PT-08: PT-08 : Profil technique national](03_profils/pt-08-echange-donnees-agregees.md)
 - [ptisn-PT-06: PT-06 : Profil technique national](03_profils/pt-06-referentiel-structures-services.md)
 - [ptisn-PT-14: PT-14 : Interopérabilité transfrontalière](03_profils/pt-14-interopabilite-transfrontaliere.md)
-- [ptisn-exemples: Exemples de profils d'initiative remplis](05_exemples/index.md)
+- [ptisn-exemples: Exemples de profils d'initiative remplis](08_annexes/f-exemples-profils.md)
 - [ptisn-matrice-alignement: Partie IV : Matrice d'alignement](04_matrice-alignement/index.md)
 - [ptisn-regles-utilisation: Partie I : Règles d'utilisation du PTISN](01_regles-utilisation/index.md)
 - [ptisn-introduction: Préambule du PTISN](00_introduction/index.md)
-- [ptisn-profil-initiative: Partie V : Profil technique d'une initiative](05_profil-initiative/index.md)
+- [ptisn-profil-initiative: Partie V : Template de fiche d'initiative](05_profil-initiative/index.md)
 - [ptisn-cas-usage-pilotage: Cas d'usage : Remontée de données et pilotage du système](08_annexes/cas-usage-pilotage-systeme.md)
 - [ptisn-cas-usage-couverture: Cas d'usage : Couverture sanitaire et protection financière](08_annexes/cas-usage-couverture-sanitaire.md)
 - [ptisn-cas-usage-surveillance: Cas d'usage : Surveillance et riposte épidémique](08_annexes/cas-usage-surveillance-epidemique.md)

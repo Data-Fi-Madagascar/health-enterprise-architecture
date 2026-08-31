@@ -8,7 +8,7 @@ status: draft
 last_reviewed: 2026-08-12
 owner: DEPSI
 tags: ["artsn", "chapitres", "ART-10", "niveau-3"]
-related: ["CAP-INT-10", "ART-10"]
+related: ["CAP-INT-10"]
 ---
 # Logistique
 

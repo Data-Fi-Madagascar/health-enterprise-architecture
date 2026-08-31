@@ -8,6 +8,7 @@ status: active
 last_reviewed: 2026-08-13
 owner: Comité National d'Architecture Santé Numérique
 tags: ["standards", "madx", "donnees-agregees", "obligatoire"]
+related: ["Lot L3", "PT-08"]
 ---
 
 # STD-0004 : Norme de données agrégées : mADX
@@ -41,7 +42,7 @@ Toute transmission de données agrégées de santé publique **doit** :
 
 1. **Utiliser le profil IHE mADX** (Mobile Aggregate Data Exchange) comme format standard
 2. **Exposer des API REST conformes** aux spécifications mADX/FHIR
-3. **Mapper les codes locaux** vers les classifications internationales (CIM-10, LOINC)
+3. **Mapper les codes locaux** vers les classifications internationales (CIM-11, LOINC)
 4. **Respecter la structure DHIS2** pour la compatibilité avec le système de collecte national
 5. **Versionner les métadonnées** des rapports (période, indicateurs, dimensions)
 
@@ -66,7 +67,7 @@ Cette norme s'applique à :
 |---------|--------------|
 | Format | Données en mADX/FHIR |
 | API | API REST mADX opérationnelle |
-| Mapping | Codes mappés vers CIM-10/LOINC |
+| Mapping | Codes mappés vers CIM-11/LOINC |
 | DHIS2 | Compatibilité avec le schéma DHIS2 |
 | Métadonnées | Versionnage des rapports |
 

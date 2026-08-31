@@ -8,6 +8,7 @@ status: active
 last_reviewed: 2026-08-13
 owner: Comité National d'Architecture Santé Numérique
 tags: ["standards", "identite", "pixm", "pdqm", "obligatoire"]
+related: ["Lot L3", "PT-04"]
 ---
 
 # STD-0005 : Norme d'identité patient : PIXm/PDQm

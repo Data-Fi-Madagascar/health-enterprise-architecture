@@ -8,6 +8,7 @@ status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
 tags: ["template", "modification", "changement", "gouvernance", "niveau-1"]
+related: ["PT-04"]
 ---
 
 # Template : Demande de modification architecturale

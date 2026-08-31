@@ -52,8 +52,10 @@ Un modèle de norme est proposé : STD-0000 : modèle.
 | **STD-0003** | Norme d'échange interinstitutionnel : X-Road | Norme obligatoire | Approuvé |
 | **STD-0004** | Norme de données agrégées : mADX | Norme obligatoire | Approuvé |
 | **STD-0005** | Norme d'identité patient : PIXm/PDQm | Norme obligatoire | Approuvé |
-| **STD-0006** | Norme terminologique : CIM-10 + LOINC | Norme obligatoire | Approuvé |
+| **STD-0006** | Norme terminologique : CIM-11 + LOINC | Norme obligatoire | Approuvé |
 | **STD-0007** | Standard terminologique : SNOMED CT | Standard recommandé | Draft |
+| **STD-0008** | Norme d'échange des réclamations et paiements (protection financière) | Norme obligatoire | Approuvé |
+| **STD-0009** | Norme d'échange des données logistiques (LMIS) | Norme obligatoire | Approuvé |
 | **NORM-007** | Règlement Sanitaire International (RSI 2005) | Norme internationale obligatoire | Actif |
 | **NORM-008** | Tripartite Plus OMS–WOAH–FAO–PNUE | Cadre normatif international | Actif |
 
@@ -75,8 +77,10 @@ Un modèle de norme est proposé : STD-0000 : modèle.
 - **Norme d'échange interinstitutionnel : X-Road** : Norme d'échange interinstitutionnel : X-Road (`01_cnisn/05_standards/std-0003-x-road.md`)
 - **Norme de données agrégées : mADX** : Norme de données agrégées : mADX (`01_cnisn/05_standards/std-0004-madx.md`)
 - **Norme d'identité patient : PIXm/PDQm** : Norme d'identité patient : PIXm/PDQm (`01_cnisn/05_standards/std-0005-identite-pixm.md`)
-- **Norme terminologique : CIM-10 + LOINC** : Norme terminologique : CIM-10 + LOINC (`01_cnisn/05_standards/std-0006-terminologie.md`)
+- **Norme terminologique : CIM-11 + LOINC** : Norme terminologique : CIM-11 + LOINC (`01_cnisn/05_standards/std-0006-terminologie.md`)
 - **Standard terminologique : SNOMED CT** : Standard recommandé (`01_cnisn/05_standards/std-0007-snomed-ct.md`)
+- **Norme d'échange des réclamations et paiements (protection financière)** : Norme d'échange des réclamations et paiements (protection financière) (`01_cnisn/05_standards/std-0008-echange-reclamations-paiements.md`)
+- **Norme d'échange des données logistiques (LMIS)** : Norme d'échange des données logistiques (LMIS) (`01_cnisn/05_standards/std-0009-echange-donnees-logistiques-lmis.md`)
 - **Règlement Sanitaire International (RSI 2005)** : Règlement Sanitaire International (RSI 2005) (`01_cnisn/05_standards/norm-007-rsi.md`)
 - **Tripartite Plus OMS–WOAH–FAO–PNUE** : Tripartite Plus OMS–WOAH–FAO–PNUE (`01_cnisn/05_standards/norm-008-tripartite.md`)
 - **Introduction du CNISN** : Préambule du CNISN (`01_cnisn/00_introduction/index.md`)
@@ -93,9 +97,11 @@ Un modèle de norme est proposé : STD-0000 : modèle.
 - [std-0007: STD-0007 : Standard terminologique : SNOMED CT](std-0007-snomed-ct.md)
 - [std-0005: STD-0005 : Norme d'identité patient : PIXm/PDQm](std-0005-identite-pixm.md)
 - [std-0004: STD-0004 : Norme de données agrégées : mADX](std-0004-madx.md)
-- [std-0006: STD-0006 : Norme terminologique : CIM-10 + LOINC](std-0006-terminologie.md)
+- [std-0006: STD-0006 : Norme terminologique : CIM-11 + LOINC](std-0006-terminologie.md)
 - [norm-008: NORM-008 : Tripartite Plus OMS–WOAH–FAO–PNUE](norm-008-tripartite.md)
 - [std-0000: STD-0000 : <Titre de la norme>](std-0000-template.md)
 - [std-0002: STD-0002 : Norme de sécurité : Chiffrement et contrôle d'accès](std-0002-securite-chiffrement.md)
+- [std-0008: STD-0008 : Norme d'échange des réclamations et paiements (protection financière)](std-0008-echange-reclamations-paiements.md)
+- [std-0009: STD-0009 : Norme d'échange des données logistiques (LMIS)](std-0009-echange-donnees-logistiques-lmis.md)
 
 <!-- liens-section-auto -->

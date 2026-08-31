@@ -53,7 +53,7 @@ Chaque test est exécuté de manière isolée, sans dépendance aux résultats d
 | Code test | Scénario | Données d'entrée | Résultat attendu | Critère de succès |
 |-----------|----------|-------------------|------------------|-------------------|
 | PT02-T01 | Transformation CSB → FHIR | Données CSB (format local) | Ressource FHIR valide | Conformité profil HL7 |
-| PT02-T02 | Normalisation terminologique | Code CIM-9 local | Code CIM-10 validé | Taux de mapping > 98% |
+| PT02-T02 | Normalisation terminologique | Code CIM-9 local | Code CIM-11 validé | Taux de mapping > 98% |
 | PT02-T03 | Médiation multi-format | HL7v2 + CSV + FHIR | Bundle FHIR normalisé | Aucune perte sémantique |
 | PT02-T04 | Gestion des erreurs de mapping | Code sans équivalent | Warning + valeur conservée | Pas de rejet, traçabilité |
 

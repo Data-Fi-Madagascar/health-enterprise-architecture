@@ -126,6 +126,90 @@ Termes techniques propres à l'ARTSN. Les définitions des patterns mobilisés p
 
 **Journalisation** : Processus d'enregistrement des événements (accès, modifications, erreurs) pour la traçabilité et l'audit.
 
+## Termes de sécurité
+
+**Attribute-Based Access Control (ABAC)** : Modèle de contrôle d'accès basé sur les attributs, évaluant les permissions en fonction de caractéristiques de l'utilisateur, de la ressource, de l'action et de l'environnement.
+
+**Zero-Trust** : Modèle de sécurité basé sur le principe "ne jamais faire confiance, toujours vérifier", où chaque accès est authentifié et autorisé, indépendamment de la localisation réseau.
+
+**AES-256** : *Advanced Encryption Standard* avec clé de 256 bits, standard de chiffrement symétrique pour la protection des données au repos et en transit.
+
+**TLS 1.2** : *Transport Layer Security* version 1.2, protocole de sécurisation des communications réseau garantissant la confidentialité et l'intégrité des données échangées.
+
+**Mutual TLS (mTLS)** : Variante du TLS où les deux parties d'une communication s'authentifient mutuellement via des certificats numériques.
+
+**OAuth2** : Protocole d'autorisation permettant à une application d'accéder à des ressources protégées au nom d'un utilisateur, sans partager ses identifiants.
+
+**OpenID Connect (OIDC)** : Couche d'authentification au-dessus d'OAuth2, ajoutant la vérification de l'identité de l'utilisateur via un jeton d'identité.
+
+**Public Key Infrastructure (PKI)** : Infrastructure à clés publiques, système de gestion des certificats numériques et des paires de clés pour le chiffrement et la signature numérique.
+
+## Termes d'infrastructure et d'architecture
+
+**ArchiMate** : Langage de modélisation d'architecture d'entreprise standardisé par l'Open Group, permettant de représenter les relations entre les composants organisationnels, applicatifs et technologiques.
+
+**Extract, Transform, Load (ETL)** : Processus d'extraction de données depuis des sources multiples, de transformation selon les règles métier, et de chargement dans un entrepôt ou un lac de données.
+
+**Lakehouse** : Architecture combinant les fonctionnalités des lacs de données (stockage flexible) et des entrepôts (structure et gouvernance), permettant le stockage et l'analyse de données à grande échelle.
+
+**Graph Store** : Base de données spécialisée dans le stockage et l'interrogation de données en graphe (entités et relations), utilisée pour les cas d'usage nécessitant des requêtes relationnelles complexes.
+
+**Grand Livre** : Registre centralisé assurant la réconciliation et la cohérence des données de référence entre les systèmes, agissant comme source de vérité pour les identifiants partagés.
+
+**Pipeline ETL** : Chaîne de traitement automatisée orchestrant les étapes d'extraction, de transformation et de chargement des données.
+
+**Fog Computing** : Architecture distribuée étendant le cloud computing vers le bord du réseau, plaçant le traitement et le stockage à proximité des sources de données pour réduire la latence.
+
+**Edge Computing** : Architecture de traitement des données au plus près de leur source (bord du réseau), réduisant la latence et la bande passante pour les applications temps réel.
+
+## Termes de patterns d'architecture
+
+**Routeur d'escalade** : Composant dirigeant les alertes et les demandes vers le niveau de compétence ou d'autorité approprié selon la nature et la gravité de l'événement.
+
+**Routeur d'alertes** : Composant distribuant les notifications aux destinataires appropriés selon des règles prédéfinies (canal, priorité, fréquence).
+
+**Source de vérité** : Système ou référentiel désigné comme l'autorité unique pour un ensemble de données, garantissant l'unicité et la cohérence des informations.
+
+**Atomicité logique** : Propriété garantissant qu'une opération est exécutée entièrement ou pas du tout, sans état intermédiaire visible.
+
+**Persistance** : Capacité d'un système à conserver les données de manière durable après la fin du traitement ou la déconnexion.
+
+**Compensation (transaction)** : Mécanisme annulant les effets d'une transaction précédente en cas d'échec, utilisé dans les systèmes distribués où les transactions classiques ne sont pas applicables.
+
+**Cluster** : Groupe de serveurs ou de composants fonctionnant ensemble pour améliorer la disponibilité, la performance et la résilience du système.
+
+**Topologie** : Organisation spatiale et logique des composants d'un système, décrivant leurs emplacements et leurs interconnexions.
+
+**Irréversibilité** : Propriété d'une opération dont les effets ne peuvent pas être annulés, utilisée pour les transactions critiques (paiements, consentements).
+
+**Masquage des identités** : Technique protégeant l'identité des utilisateurs dans les échanges de données, en remplaçant les identifiants réels par des identifiants anonymisés.
+
+**Versionnage** : Mécanisme de gestion des versions des ressources et des API pour assurer la compatibilité ascendante et la traçabilité des changements.
+
+**Données d'entraînement** : Ensemble de données utilisé pour entraîner les modèles d'intelligence artificielle ou d'apprentissage automatique.
+
+**Audit des décisions automatisées** : Processus de vérification et de documentation des décisions prises par des systèmes automatisés, garantissant la transparence et la redevabilité.
+
+**Requête de navigation relationnelle** : Interrogation de données en suivant les relations entre entités dans un graphe ou une base de données relationnelle.
+
+**Cohérence topologique** : Propriété garantissant que la structure et les interconnexions des composants d'un système sont logiques et respectent les règles d'architecture définies.
+
+**Résilience spatiale** : Capacité d'un système à maintenir ses services malgré des défaillances géographiques, grâce à la distribution et à la redondance.
+
+**Fille d'attente** : Mécanisme de gestion des requêtes ou des tâches en attente de traitement, assurant l'ordre et la priorisation.
+
+**Durabilité** : Capacité d'un système ou d'une initiative à continuer de fonctionner et de produire de la valeur après la fin du financement initial.
+
+**Éradication des silos** : Démarche visant à supprimer les barrières entre les systèmes d'information pour faciliter le partage et l'utilisation cohérente des données.
+
+**Compatibilité ascendante/descendante** : Capacité d'un système à interagir avec des versions plus récentes (ascendante) ou plus anciennes (descendante) d'un standard ou d'une API.
+
+**Normalisation sémantique** : Processus d'harmonisation des significations des données échangées pour garantir que tous les systèmes interprètent de la même façon les informations partagées.
+
+**Enrichissement** : Processus d'ajout d'informations complémentaires à des données existantes pour améliorer leur qualité, leur précision ou leur utilité.
+
+**Bordure de la plateforme** : Zone de transition entre l'infrastructure interne et les systèmes externes, gérant les échanges sécurisés avec l'extérieur.
+
 ## Liens
 
 L'Index de l'ARTSN fournit la page d'accueil de l'architecture. La Matrice de lecture de l'ARTSN propose une vue croisée parties et lecteurs. Les Acronymes de l'ARTSN listent l'ensemble des acronymes. L'Annexe B : Glossaire des patterns détaille les définitions des patterns mobilisés. Le Glossaire du CAESN (niveau 1) couvre les termes transverses de l'architecture.

@@ -64,7 +64,7 @@ Ce document décrit la stratégie et les étapes concrètes pour passer de l'ét
 |-----------|-------------|-------------------|-------|
 | **Identité patient** | Fragmentée (programmes) | INP unique national | Critique : aucun ID partagé |
 | **Échange de données** | Excel, email, papier | FHIR R4 via X-Road | Critique : aucune interopérabilité |
-| **Terminologie** | Codes locaux hétérogènes | CIM-10, LOINC standardisés | Élevé : mappings inexistants |
+| **Terminologie** | Codes locaux hétérogènes | CIM-11, LOINC standardisés | Élevé : mappings inexistants |
 | **Consentement** | Non formalisé | FHIR Consent structuré | Élevé : cadre juridique absent |
 | **Traçabilité** | Partielle (DHIS2) | Audit trail complet | Élevé : pas de piste d'audit |
 | **Sécurité** | Auth basique / mots de passe | OAuth 2.0, RBAC, chiffrement | Critique : failles de sécurité |
@@ -129,7 +129,7 @@ Ce document décrit la stratégie et les étapes concrètes pour passer de l'ét
 | Action | Système impacté | Livrable | Risque |
 |--------|-----------------|----------|--------|
 | Connecter OpenMRS à X-Road | OpenMRS | Échange FHIR via X-Road | Moyen : API OpenMRS |
-| Mapper terminologie (CIM-10, LOINC) | Systèmes locaux | Référentiel terminologique | Élevé : travail manuel |
+| Mapper terminologie (CIM-11, LOINC) | Systèmes locaux | Référentiel terminologique | Élevé : travail manuel |
 | Déployer PT-02 (médiation) | Systèmes locaux | Connecteurs de transformation | Élevé : hétérogénéité |
 | Étendre référence à 10 districts | Systèmes locaux | 10 districts interconnectés | Moyen |
 | Déployer PT-12 (audit) | Tous | Piste d'audit complète | Faible |

@@ -1,5 +1,5 @@
 ---
-title: "Cas d'usage — Couverture sanitaire et protection financière"
+title: "Cas d'usage : Couverture sanitaire et protection financière"
 description: "Niveau 4 — Configurations, API et contrats d'interfaces par initiative"
 owner: "DEPSI"
 version: "1.0.0"
@@ -39,11 +39,11 @@ La protection financière est un **cas d'usage métier** qui consomme plusieurs 
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
-## Scénario — Cycle complet de protection financière
+## Scénario : Cycle complet de protection financière
 
-### Phase 1 — Identification du bénéficiaire (EV-15)
+### Phase 1 : Identification du bénéficiaire (VS-03-01)
 
-La première phase consiste à enregistrer le bénéficiaire et à lui attribuer un identifiant unique national. Le processus débute au niveau du Fokontany ou de la Commune, où la fiche bénéficiaire — comprenant le NIN, le nom, l'âge et la commune — est transmise à l'application terrain. Cette dernière soumet les informations au Pôle National d'Identité (INP) pour vérification d'unicité. Après validation, l'INP attribue ou confirme le NIN, et une carte bénéficiaire est délivrée au demandeur.
+La première phase consiste à enregistrer le bénéficiaire et à lui attribuer un identifiant unique national. Le processus débute au niveau du Fokontany ou de la Commune, où la fiche bénéficiaire : comprenant le NIN, le nom, l'âge et la commune : est transmise à l'application terrain. Cette dernière soumet les informations au Pôle National d'Identité (INP) pour vérification d'unicité. Après validation, l'INP attribue ou confirme le NIN, et une carte bénéficiaire est délivrée au demandeur.
 
 ```
 Fokontany/Commune         Application terrain        INP (CMP-11)
@@ -70,9 +70,9 @@ Les profils mobilisés lors de cette phase sont le PT-04 (résolution d'identit�
 | **PT-02** | Médiation (données communautaires → FHIR) |
 | **PT-12** | Traçabilité de l'enregistrement |
 
-### Phase 2 — Vérification des droits au point de service (EV-16/EV-18)
+### Phase 2 : Vérification des droits au point de service (VS-03-02/vs-03-04)
 
-La phase de vérification des droits intervient au moment où le bénéficiaire se présente auprès d'un agent de santé. Ce dernier interroge le registre d'éligibilité pour confirmer que le patient bénéficie d'un droit à l'exemption — qu'il relève de la CSU, de la BPC, de l'AMM ou d'un autre mécanisme. Une fois le statut d'éligibilité confirmé, l'agent de santé dispense les soins sans paiement.
+La phase de vérification des droits intervient au moment où le bénéficiaire se présente auprès d'un agent de santé. Ce dernier interroge le registre d'éligibilité pour confirmer que le patient bénéficie d'un droit à l'exemption : qu'il relève de la CSU, de la BPC, de l'AMM ou d'un autre mécanisme. Une fois le statut d'éligibilité confirmé, l'agent de santé dispense les soins sans paiement.
 
 ```
 Agent de santé             Registre éligibilité (CMP-12)    Patient
@@ -102,7 +102,7 @@ Les profils mobilisés sont le PT-04 (résolution d'identité pour la recherche 
 | **PT-02** | Médiation (vérification éligibilité) |
 | **PT-12** | Audit de la vérification (traçabilité) |
 
-### Phase 3 — Facturation et soumission (EV-19)
+### Phase 3 : Facturation et soumission (VS-03-05)
 
 La phase de facturation consiste à documenter les soins dispensés et à soumettre la facture au mécanisme de financement. La formation sanitaire émet une facture structurée au format FHIR `Claim`, qui est transmise via la médiation (PT-02) au fonds de remboursement. La médiation assure la validation et la normalisation de la facture avant sa transmission. Le fonds de remboursement émet un accusé de réception, et la formation sanitaire reçoit une confirmation de prise en charge.
 
@@ -130,7 +130,7 @@ Les profils mobilisés sont le PT-01 (échange interinstitutionnel pour la trans
 | **PT-02** | Médiation (normalisation factures) |
 | **PT-12** | Audit trail de la facturation |
 
-### Phase 4 — Remboursement (EV-20)
+### Phase 4 : Remboursement (VS-03-06)
 
 La phase de remboursement vise à indemniser la formation sanitaire dans les délais convenus. Le fonds de remboursement initie l'instruction de la facture, laquelle est transmise via la médiation pour vérification de conformité. Après validation, le paiement est validé et notifié à la formation sanitaire, qui reçoit la confirmation du virement.
 
@@ -150,7 +150,7 @@ Fonds de remboursement     Médiation (PT-02)         Formation sanitaire
         │──────────────────────▶│─────────────────────────▶│
 ```
 
-### Phase 5 — Audit et contrôle (EV-21)
+### Phase 5 : Audit et contrôle (VS-03-07)
 
 La phase d'audit et de contrôle a pour objectif de détecter les fraudes, d'ajuster les mécanismes de financement et d'améliorer l'équité du système. Les données de facturation agrégées sont extraites de l'entrepôt (CMP-03) et transmises au moteur analytique (CMP-04), qui réalise une analyse des anomalies et des patterns suspects. Les résultats alimentent un rapport d'audit transmis à l'inspection pour investigation.
 
@@ -181,36 +181,36 @@ Les profils mobilisés sont le PT-08 (échange de données agrégées pour l'ana
 
 | Étape | PT-01 | PT-02 | PT-04 | PT-08 | PT-09 | PT-10 | PT-11 | PT-12 |
 |-------|-------|-------|-------|-------|-------|-------|-------|-------|
-| Identification (EV-15) | — | ● | ● | — | — | — | — | ● |
-| Vérification droits (EV-18) | — | ● | ● | — | — | ● | ● | ● |
-| Facturation (EV-19) | ● | ● | — | — | — | — | — | ● |
-| Remboursement (EV-20) | — | ● | — | — | — | — | — | ● |
-| Audit (EV-21) | — | — | — | ● | ● | ● | — | ● |
+| Identification (VS-03-01) | : | ● | ● | : | : | : | : | ● |
+| Vérification droits (VS-03-04) | : | ● | ● | : | : | ● | ● | ● |
+| Facturation (VS-03-05) | ● | ● | : | : | : | : | : | ● |
+| Remboursement (VS-03-06) | : | ● | : | : | : | : | : | ● |
+| Audit (VS-03-07) | : | : | : | ● | ● | ● | : | ● |
 
 ## Exigences transversales
 
 | Exigence | Source | Applicable à |
 |----------|--------|--------------|
-| PT-11 — Consentement | CAP-INT-09 | Vérification des droits |
-| PT-10 — Confiance | CAP-INT-08 | Accès données financières |
+| PT-11 : Consentement | CAP-INT-09 | Vérification des droits |
+| PT-10 : Confiance | CAP-INT-08 | Accès données financières |
 | Loi 2014-038 | National | Cadre juridique exemption |
 
 ## Liens
 
-- VS-03 — Protéger financièrement la population
-- PT-01 — Échange interinstitutionnel
-- PT-02 — Médiation intra-secteur
-- PT-04 — Résolution identité bénéficiaire
-- PT-10 — Confiance et autorisation
-- PT-11 — Consentement
-- PT-12 — Audit et traçabilité
+- VS-03 : Protéger financièrement la population
+- PT-01 : Échange interinstitutionnel
+- PT-02 : Médiation intra-secteur
+- PT-04 : Résolution identité bénéficiaire
+- PT-10 : Confiance et autorisation
+- PT-11 : Consentement
+- PT-12 : Audit et traçabilité
 
 ## Références
 
-- **VS-03 — Protéger financièrement la population** — Protéger financièrement la population face aux dépenses de santé (`00_caesn/01_value-streams/vs-03-financial-protection.md`)
-- **PT-01 — Échange interinstitutionnel** — Profil technique national (`03_ptisn/03_profils/pt-01-echange-interinstitutionnel.md`)
-- **PT-02 — Médiation intra-secteur** — Profil technique national (`03_ptisn/03_profils/pt-02-mediation-intra-secteur.md`)
-- **PT-04 — Résolution identité bénéficiaire** — Profil technique national (`03_ptisn/03_profils/pt-04-resolution-identite-beneficiaire.md`)
-- **PT-10 — Confiance et autorisation** — Profil technique national (`03_ptisn/03_profils/pt-10-confiance-authentification-autorisation.md`)
-- **PT-11 — Consentement** — Profil technique national (`03_ptisn/03_profils/pt-11-consentement-bases-autorisation.md`)
-- **PT-12 — Audit et traçabilité** — Profil technique national (`03_ptisn/03_profils/pt-12-audit-provenance-traçabilité.md`)
+- **VS-03 : Protéger financièrement la population** : Protéger financièrement la population face aux dépenses de santé (`00_caesn/01_value-streams/vs-03-financial-protection.md`)
+- **PT-01 : Échange interinstitutionnel** : Profil technique national (`03_ptisn/03_profils/pt-01-echange-interinstitutionnel.md`)
+- **PT-02 : Médiation intra-secteur** : Profil technique national (`03_ptisn/03_profils/pt-02-mediation-intra-secteur.md`)
+- **PT-04 : Résolution identité bénéficiaire** : Profil technique national (`03_ptisn/03_profils/pt-04-resolution-identite-beneficiaire.md`)
+- **PT-10 : Confiance et autorisation** : Profil technique national (`03_ptisn/03_profils/pt-10-confiance-authentification-autorisation.md`)
+- **PT-11 : Consentement** : Profil technique national (`03_ptisn/03_profils/pt-11-consentement-bases-autorisation.md`)
+- **PT-12 : Audit et traçabilité** : Profil technique national (`03_ptisn/03_profils/pt-12-audit-provenance-traçabilité.md`)

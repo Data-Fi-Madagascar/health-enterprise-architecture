@@ -65,13 +65,13 @@ Agents communautaires     Médiation (PT-02)       Moteur analytique
         │──────────────────────▶│──────────────────────▶│
 ```
 
-Les profils mobilisés sont le PT-08 (échange de données agrégées au format mADX avec l'OMS AFRO), le PT-02 (médiation sémantique pour la conversion des données terrain en FHIR), le PT-07 (mapping terminologique vers la CIM-10 et LOINC) et le PT-12 (traçabilité des événements de collecte). Les données échangées comprennent l'`Observation` FHIR (cas cliniques signalés), le `Bundle` mADX (données agrégées hebdomadaires) et le `Device` (capteurs IoT de météo et de vecteurs).
+Les profils mobilisés sont le PT-08 (échange de données agrégées au format mADX avec l'OMS AFRO), le PT-02 (médiation sémantique pour la conversion des données terrain en FHIR), le PT-07 (mapping terminologique vers la CIM-11 et LOINC) et le PT-12 (traçabilité des événements de collecte). Les données échangées comprennent l'`Observation` FHIR (cas cliniques signalés), le `Bundle` mADX (données agrégées hebdomadaires) et le `Device` (capteurs IoT de météo et de vecteurs).
 
 | Profil | Rôle |
 |--------|------|
 | **PT-08** | Échange de données agrégées (mADX) avec OMS AFRO |
 | **PT-02** | Médiation sémantique (données terrain → FHIR) |
-| **PT-07** | Mapping terminologique (CIM-10, LOINC) |
+| **PT-07** | Mapping terminologique (CIM-11, LOINC) |
 | **PT-12** | Traçabilité des événements de collecte |
 
 ### Phase 2 : Notification et alerte (VS-02-03)

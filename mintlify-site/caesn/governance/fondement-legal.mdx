@@ -1,0 +1,90 @@
+---
+title: "Fondement légal et cadre législatif de la santé numérique"
+description: "Niveau 1 — Architecture d'entreprise du secteur santé numérique de Madagascar"
+owner: "Ministère de la Santé Publique"
+version: "1.0.0"
+status: "candidate"
+last_reviewed: "2026-08-20"
+---
+
+## Pour qui lire ce document
+
+**Niveau :** niveau 1 : Cadre d'Architecture d'Entreprise de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ● |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ◐ |
+| SIS / données / suivi-évaluation | ○ |
+| Partenaires techniques et financiers | ● |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
+
+## Objet
+
+Ce document expose le **fondement légal** du cadre HEA et le **vide législatif** qui limite aujourd'hui son caractère opposable. Il formule la recommandation d'un projet de loi e-santé et en fixe les jalons.
+
+> **Statut :** *proposé*. Ce document n'a pas encore de valeur réglementaire ; il alimente l'ADR-0010 (cadre légal).
+
+## 1. Ancrage juridique existant
+
+| Texte | Portée pour la santé numérique |
+|-------|--------------------------------|
+| Loi n°2014-038 sur la protection des données à caractère personnel (décret 2023-1541) | Autorité : CMIL. Principes de protection des données intégrés à la gouvernance (finalité, minimisation, consentement, droit d'accès). |
+| Convention de Malabo (loi 2024-004) | Cadre continental cybersécurité et protection des données ; aligne la souveraineté des données transfrontalières. |
+| Plan Stratégique quinquennal du Numérique 2023-2028 | Vision nationale transformant numérique ; santé secteur prioritaire. |
+| PDSS 2020-2024, SNSD 2023-2027, PSRSIS 2023-2027 | Fondements stratégiques traduits en flux de valeur et capabilités (voir `00_caesn/00_overview/foundations.md`). |
+
+## 2. Vide législatif (risque critique)
+
+Le cadre HEA est aujourd'hui **consultatif**. Les décisions du CNASN (ADR, homologation) n'ont pas de **mandat légal contraignant** pour l'interopérabilité. Par comparaison avec les pairs africains :
+
+| Lacune | Pays l'ayant comblée | Impact sur l'HEA |
+|--------|----------------------|------------------|
+| Loi e-santé | Kenya (Digital Health Act 2023), Afrique du Sud (National Health Act) | Décisions CNASN = consultatives ; pas de pouvoir d'imposer l'interopérabilité. |
+| Loi protection des données opérationnelle | Kenya (DPA 2019), Afrique du Sud (POPIA), Nigeria (NDPR) | Base légale fragile pour la gestion des consentements (PT-11). |
+| Programme de conformité | Afrique du Sud (CSIR), Kenya (Digital Health Agency) | Homologation théorique ; aucun moyen de vérifier la conformité aux standards. |
+
+## 3. Recommandation : projet de loi e-santé
+
+Modéliser le futur texte sur le **Kenya Digital Health Act 2023**, adapté au contexte malgache :
+
+1. **Reconnaissance légale** du CNASN comme autorité d'architecture et d'homologation de la santé numérique.
+2. **Obligation d'interopérabilité** : tout système financé sur fonds publics ou utilisant les infrastructures nationales (INP, X-Road, référentiels) doit respecter les standards HEA.
+3. **Base légale du consentement** et de la résidence des données de santé.
+4. **Pouvoir de sanction** en cas de non-conformité (voir `01_cnisn/04_conformite/programme-conformite.md`).
+
+## 4. Évaluation de maturité (GDHM)
+
+L'OMS publie le **Global Digital Health Monitor (GDHM)**. Une auto-évaluation de référence (baseline) est recommandée d'urgence (coût minimal, impact maximal) pour objectiver la maturité et permettre un benchmarking (voir `00_caesn/10_annexes/evaluation-gdhm.md`).
+
+## Liens
+
+- Gouvernance du cadre
+- Workflow d'homologation
+- Programme de conformité
+- ADR-0010 (cadre légal)
+
+## Références
+
+- **Gouvernance** : Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
+- **Homologation** : Workflow d'homologation (`00_caesn/07_governance/homologation.md`)
+- **Conformité** : Programme de conformité (`01_cnisn/04_conformite/programme-conformite.md`)
+- **ADR-0010** : Cadre légal (`01_cnisn/06_decisions/adr-0010-cadre-legal.md`)
+- **Avant-projet de loi e-santé** : Cadre législatif opposable (`00_caesn/07_governance/projet-loi-esante.md`)
+- **Fondements stratégiques** : Fondements (`00_caesn/00_overview/foundations.md`)
+
+## Documents de la section
+
+- [governance-vro: Bureau de Réalisation de la Valeur](/caesn/governance/value-realization-office)
+- [point-de-vigilance-caesn: Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health)](/caesn/governance/point-de-vigilance-caesn)
+- [processus-gouvernance: Guide du processus de gouvernance](/caesn/governance/processus-gouvernance)
+- [governance-raci: RACI de gouvernance et responsabilités](/caesn/governance/raci)
+- [homologation: Workflow d'homologation architecturale](/caesn/governance/homologation)
+- [governance: Gouvernance du cadre d'architecture](/caesn/governance/index)
+- cnasen-composition: Composition et fonctionnement du Comité National
+- instances-sectorielles: Instances sectorielles et autorités spécialisées
+- arbitrage-ecarts-caesn-artsn: Proposition d'arbitrage : 5 écarts CAESN ↔ ARTSN
+
+<!-- liens-section-auto -->

@@ -1,0 +1,145 @@
+---
+title: "Audit, provenance et traçabilité"
+id: ptisn-PT-12
+domain: 03_profils
+version: "1.0.0"
+status: draft
+last_reviewed: 2026-07-31
+owner: Équipes techniques des initiatives
+tags: ["ptisn", "niveau-4", "profils", "PT-12"]
+related: ["CAP-INT-10", "F-1", "F-5", "F-6", "ART-3", "ART-7", "CMP-17"]
+---
+
+# Profil technique national
+
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
+
+## 1. Objet et périmètre
+
+Le **profil PT-12 — Audit, provenance et traçabilité** définit les services de traçabilité du PTISN. Il distingue les preuves métier, la provenance, l’audit de sécurité et l’observabilité technique.
+
+Périmètre : événements métier, provenance des ressources, audit de sécurité, observabilité. Hors périmètre : les événements métier ne doivent pas être confondus avec les logs techniques.
+
+## 2. Capacité CNISN
+
+[CAP-INT-10: Provenance, audit et traçabilité](../../referentiel/capacites/cap-int-10.md)
+
+## 3. Chapitres ART applicables
+
+- F.1
+- F.5
+- F.6
+- [ART-3: Historisation événementielle et profils de déploiement](../../referentiel/chapitres/art-3.md)
+- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../referentiel/chapitres/art-7.md)
+
+## 4. Acteurs (Actors)
+
+- **Source d’événement (Event Source)** — système émettant un événement métier, une transformation ou un accès.
+- **Dépôt d’audit de sécurité (Audit Record Repository)** — conserve les événements de sécurité (ATNA).
+- **Dépôt de provenance (Provenance Consumer/Repository)** — conserve l’origine et les transformations des ressources.
+- **Service d’observabilité (Observability Service)** — agrège logs, métriques, traces.
+
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-10](../../referentiel/capacites/cap-int-10.md).
+## 5. Transactions
+
+| Transaction | Acteurs | R/O | Standard |
+|----|----|----|----|
+| T1 — Journalisation d’un événement de sécurité | Source → Dépôt d’audit | R | IHE ATNA (ITI-20) |
+| T2 — Publication de provenance | Source → Dépôt de provenance | R | HL7 FHIR Provenance |
+| T3 — Émission d’événement métier | Source → journal métier | R | Événement métier du domaine |
+| T4 — Export d’observabilité | Source → Service d’observabilité | O | Standards ouverts à définir |
+
+R = requis ; O = optionnel.
+
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-10](../../referentiel/capacites/cap-int-10.md).
+## 6. Content Modules
+
+- **HL7 FHIR AuditEvent** : activité à portée d’audit.
+- **HL7 FHIR Provenance** : origine, acteur, transformation, ressources sources/produites.
+- **Corrélation technique** : identifiant de corrélation propagé entre les quatre catégories.
+
+## 7. Options
+
+- **O1 — Formats de preuves** : les quatre catégories peuvent utiliser des formats, stockages, durées et droits distincts.
+- **O2 — Observabilité** : standards ouverts (logs/métriques/traces) à définir.
+
+## 8. Service national
+
+Quatre services distincts sont définis :
+
+### Journal des événements métier
+
+Conserve les changements fonctionnels.
+
+### Service de provenance
+
+Explique :
+
+- l’origine ;
+- l’acteur ;
+- la transformation ;
+- les ressources sources ;
+- les ressources produites.
+
+### Service d’audit de sécurité
+
+Conserve :
+
+- consultations ;
+- exports ;
+- authentifications ;
+- décisions d’autorisation ;
+- opérations administratives ;
+- modifications sensibles.
+
+### Observabilité technique
+
+Conserve :
+
+- logs ;
+- métriques ;
+- traces ;
+- erreurs ;
+- performances.
+
+## 9. Formats et standards recommandés
+
+| Besoin                    | Standard                                        |
+|---------------------------|-------------------------------------------------|
+| Audit de sécurité santé   | HL7 FHIR AuditEvent lorsque FHIR est applicable |
+| Provenance des ressources | HL7 FHIR Provenance                             |
+| Audit IHE                 | ATNA et profils d’audit associés                |
+| Corrélation technique     | Identifiant de corrélation propagé              |
+| Logs et métriques         | Standards ouverts d’observabilité à définir     |
+
+FHIR `AuditEvent` représente des activités ayant une portée d’audit ; `Provenance` décrit le « qui, quoi et quand » de la création ou transformation de ressources. Ces usages ne doivent pas être confondus avec les événements métier.
+
+*Référence — normes et standards CNISN : [01_cnisn/05_standards](../../01_cnisn/05_standards/index.md).
+## 10. Exigences
+
+Les quatre catégories peuvent être corrélées mais peuvent utiliser :
+
+- des formats différents ;
+- des stockages différents ;
+- des durées différentes ;
+- des droits différents ;
+- des politiques différentes.
+
+Un journal technique ne doit pas être utilisé comme seul mécanisme de preuve métier.
+
+## 11. Déclaration de conformité (Integration Statement)
+
+Conformité attestée par l’adoption de FHIR `AuditEvent` et `Provenance`, la conformité ATNA pour l’audit de sécurité, et la propagation d’un identifiant de corrélation technique.
+
+## 12. Articulation avec les autres profils
+
+- [PT-10: confiance, authentification, autorisation](../../referentiel/profils/pt-10.md)
+- [PT-04: résolution d’identité bénéficiaire](../../referentiel/profils/pt-04.md)
+- [PT-09: analytique et exposition de données](../../referentiel/profils/pt-09.md)
+
+## 13. Limites et dépendances
+
+Les quatre services sont corrélables mais indépendants dans leurs formats, stockages et durées de conservation. Dépendance : standards d’observabilité et ATNA encore à figer.
+
+<!-- END:GENERATED -->

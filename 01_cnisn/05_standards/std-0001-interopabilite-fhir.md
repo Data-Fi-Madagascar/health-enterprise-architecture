@@ -8,6 +8,7 @@ status: active
 last_reviewed: 2026-08-13
 owner: Comité National d'Architecture Santé Numérique
 tags: ["standards", "interoperabilite", "fhir", "obligatoire"]
+related: ["Lot L2", "Lot L4", "PT-10", "PT-11", "PT-07", "PT-09", "PT-03", "PT-12", "PT-15", "PT-04", "PT-14", "PT-08"]
 ---
 
 # STD-0001 : Norme d'interopérabilité : HL7 FHIR R4

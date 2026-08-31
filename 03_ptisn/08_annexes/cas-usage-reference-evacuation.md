@@ -62,14 +62,14 @@ CSB rural                    Médiation nationale              Hôpital régiona
     │                              │──────────────────────────────▶│
 ```
 
-Les profils consommés sont le PT-01 (transport des messages via X-Road ou API Gateway), le PT-02 (médiation sémantique assurant la transformation des données CSB au format FHIR), le PT-04 (résolution d'identité patient pour vérifier ou créer l'identité dans l'INP), le PT-07 (mapping terminologique des codes CSB vers la CIM-10 ou LOINC) et le PT-12 (traçabilité de l'événement de référence). Les données échangées comprennent le `ServiceRequest` (type referral), le `Patient` (identité via l'INP), les ressources `AllergyIntolerance`, `MedicationStatement` et `Condition` (données cliniques minimales), ainsi que le `DocumentReference` (compte-rendu si disponible).
+Les profils consommés sont le PT-01 (transport des messages via X-Road ou API Gateway), le PT-02 (médiation sémantique assurant la transformation des données CSB au format FHIR), le PT-04 (résolution d'identité patient pour vérifier ou créer l'identité dans l'INP), le PT-07 (mapping terminologique des codes CSB vers la CIM-11 ou LOINC) et le PT-12 (traçabilité de l'événement de référence). Les données échangées comprennent le `ServiceRequest` (type referral), le `Patient` (identité via l'INP), les ressources `AllergyIntolerance`, `MedicationStatement` et `Condition` (données cliniques minimales), ainsi que le `DocumentReference` (compte-rendu si disponible).
 
 | Profil | Rôle dans le scénario |
 |--------|----------------------|
 | **PT-01** | Transport des messages (X-Road / API Gateway) |
 | **PT-02** | Médiation sémantique (transformation des données CSB → FHIR) |
 | **PT-04** | Résolution d'identité patient (vérifier/créer l'identité dans l'INP) |
-| **PT-07** | Mapping terminologique (codes CSB → CIM-10 / LOINC) |
+| **PT-07** | Mapping terminologique (codes CSB → CIM-11 / LOINC) |
 | **PT-12** | Traçabilité de l'événement de référence |
 
 ## Scénario 2 : Contre-référence (DO-08)

@@ -8,6 +8,7 @@ status: active
 date: 2026-07-01
 owner: DEPSI
 tags: ["adr", "interopérabilité", "madx", "données-agrégées"]
+related: ["PT-08"]
 ---
 
 # ADR-0002 : Adoption du profil IHE mADX pour l'échange de données agrégées

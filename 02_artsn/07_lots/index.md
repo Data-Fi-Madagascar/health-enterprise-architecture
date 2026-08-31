@@ -37,7 +37,7 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 
 ### Lot L1 : Infrastructure & sécurité (T4 2026 – T2 2027) : 9 mois
 
-**Priorité absolue.** Pas de système sans socle matériel ni sécurité. Cette lot pose les fondations physiques et transversales de toute la plateforme.
+**Priorité absolue.** Pas de système sans socle matériel ni sécurité. Ce lot pose les fondations physiques et transversales de toute la plateforme.
 
 | Composant | Couches | Responsables | Livrables | Critère de succès |
 |-----------|---------|--------------|-----------|-------------------|
@@ -47,10 +47,10 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 | **Identité santé** | Axe 1 | DNS, ANM | Registre des identifiants (INP), module authentification | 100% agents identifiés |
 | **Sécurité** | Axe 1 | DNS, CNRAC | Politique chiffrement RBAC/ABAC, PKI, audit | Conformité NIST 800-53 |
 | **Gouvernance de données** | Axe 2 | DNS, Ministère | Charte protection, registre accords, comité homologation | Cadre réglementaire publié |
-| **Référentiels de base** | Couche 4 | DNS | Registre terminologies (CIM-10, SNOMED CT, LOINC), registre personnels, registre produits | 500 termes mappés, 100% agents référencés |
+| **Référentiels de base** | Couche 4 | DNS | Registre terminologies (CIM-11, SNOMED CT, LOINC), registre personnels, registre produits | 500 termes mappés, 100% agents référencés |
 | **Serveur de sécurité X-Road** | Couche 3 | DNS, UGD | Security Server santé connecté au backbone X-Road UGD existant | Serveur opérationnel, prêt pour échanges inter-institutionnels |
 
-**Note** : L'infrastructure X-Road est déjà opérationnelle via l'UGD (Unité de Gouvernance Digitale). La lot 1 déploie uniquement le serveur de sécurité (Security Server) côté santé pour s'y connecter.
+**Note** : L'infrastructure X-Road est déjà opérationnelle via l'UGD (Unité de Gouvernance Digitale). Le lot 1 déploie uniquement le serveur de sécurité (Security Server) côté santé pour s'y connecter.
 
 **Livrable clé** : Infrastructure opérationnelle + cadre de sécurité + référentiels de base.
 
@@ -133,7 +133,7 @@ L'ARTSN est structurée en **6 couches horizontales** (Couche 1 à 6) traversée
 | Composant | Couches | Responsables | Livrables | Critère de succès |
 |-----------|---------|--------------|-----------|-------------------|
 | **Accords interministériels** | Axe 2 | DNS, MSP, MINAE, MEEF | Accords de partage de données signés (MSP–MINAE–MEEF) | 3 accords signés |
-| **Médiation intersectorielle** | Couche 4 | DNS | Moteur de transformation CIM-10 ↔ OIE ↔ GBIF | 80% messages intersectoriels transformés |
+| **Médiation intersectorielle** | Couche 4 | DNS | Moteur de transformation CIM-11 ↔ OIE ↔ GBIF | 80% messages intersectoriels transformés |
 | **Centre de commande One Health** | Couche 6 | DNS | CMP-02 activé pour alertes intersectorielles | Alertes multi-ministères opérationnelles |
 | **Corrélation signaux faibles** | Couche 5 | DNS, INS | Moteur de corrélation (ART-8B) pour clusters intersectoriels | Détection cluster < 24h |
 | **PT-15 déployé** | Toutes | DNS | Profil Surveillance One Health opérationnel en pilote (1 région) | 1 région pilote active |

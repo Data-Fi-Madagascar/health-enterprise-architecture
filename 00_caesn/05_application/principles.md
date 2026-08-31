@@ -8,6 +8,7 @@ status: draft
 last_reviewed: 2026-07-03
 owner: Direction des Systèmes d'Information
 tags: ["applications", "urbanisation", "principes"]
+related: ["VS-01", "VS-02", "VS-03", "VS-04"]
 ---
 
 # Principes de l'architecture applicative

@@ -8,6 +8,7 @@ status: candidate
 date: 2026-08-13
 owner: DEPSI
 tags: ["adr", "identité", "patient", "inp", "pixm", "pdqm"]
+related: ["Lot L3", "PT-04"]
 ---
 
 # ADR-0006 : Adoption de l'Identité Nationale Patient (INP) via PIXm/PDQm

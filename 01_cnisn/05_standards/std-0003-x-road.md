@@ -8,6 +8,7 @@ status: active
 last_reviewed: 2026-08-13
 owner: Comité National d'Architecture Santé Numérique
 tags: ["standards", "x-road", "interinstitutionnel", "obligatoire"]
+related: ["Lot L3", "PT-01"]
 ---
 
 # STD-0003 : Norme d'échange interinstitutionnel : X-Road

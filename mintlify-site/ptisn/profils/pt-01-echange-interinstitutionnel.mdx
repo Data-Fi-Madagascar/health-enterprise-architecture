@@ -1,5 +1,5 @@
 ---
-title: "PT-01 — Profil technique national"
+title: "Profil technique national"
 description: "Niveau 4 — Configurations, API et contrats d'interfaces par initiative"
 owner: "Équipes techniques des initiatives"
 version: "1.0.0"
@@ -8,24 +8,13 @@ last_reviewed: "2026-07-31"
 ---
 
 <!-- BEGIN:GENERATED -->
-<!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-## 1. Capacité CNISN
+## 1. Objet et périmètre
 
-**CAP-INT-03 — Échange et médiation inter-systèmes**
+Le **profil PT-01 — Échange interinstitutionnel** définit le service national d’échange sécurisé entre le secteur santé et les autres domaines de l’État et partenaires autorisés.
 
-## 2. Chapitres ART applicables
-
-- ART-0 — accords de partage ;
-- ART-1 — intégration et ingestion ;
-- ART-7 — sécurité et résidence ;
-- ART-11 — coordination intersectorielle.
-
-## 3. Service national
-
-**Service national d’échange interinstitutionnel**
-
-Ce service permet les échanges entre le secteur santé et :
+Périmètre couvert : les échanges entre le secteur santé et :
 
 - l’état civil ;
 - le registre de la population ;
@@ -36,7 +25,57 @@ Ce service permet les échanges entre le secteur santé et :
 - les autres autorités publiques ;
 - les partenaires autorisés.
 
-## 4. Implémentation nationale
+Il ne couvre pas les échanges internes au secteur santé (voir PT-02).
+
+## 2. Capacité CNISN
+
+CAP-INT-03: Échange et médiation inter-systèmes
+
+CAP-INT-12: Partage intersectoriel des données
+
+## 3. Chapitres ART applicables
+
+- ART-0: accords de partage
+- ART-1: intégration et ingestion
+- ART-7: sécurité et résidence
+- ART-11: coordination intersectorielle
+
+## 4. Acteurs (Actors)
+
+Dans le sens IHE (systèmes/composants assumant un rôle dans les échanges), le profil mobilise :
+
+- **Fournisseur de service (Service Provider / Service Owner)** — système santé ou partenaire exposant une fonction appelable via la fédération.
+- **Consommateur de service (Service Consumer)** — système santé ou partenaire appelant une fonction exposée.
+- **Serveur de sécurité (Security Server)** — point de raccordement de chaque membre à la fédération ; assure authentification, chiffrement, signature et journalisation au niveau transport.
+- **Autorité de gouvernance du CNI** — tient la fédération de confiance et les politiques d’accès/résidence communes.
+
+*Référence — capacité CNISN mise en œuvre : CAP-INT-03.
+## 5. Transactions
+
+| Transaction | Acteurs | R/O | Standard |
+|----|----|----|----|
+| T1 — Appel de service sécurisé (requête/réponse entre membres) | Consommateur → Serveur de sécurité → Fournisseur | R | X-Road (REST/SOAP sur transport sécurisé) |
+| T2 — Journalisation des échanges au niveau transport | Serveur de sécurité → journal central de la fédération | R | X-Road (journal sécurisé) |
+| T3 — Publication de description de service (référencement) | Fournisseur → Catalogue/Registre | O | Voir PT-03 |
+
+R = requis pour revendiquer le profil ; O = optionnel.
+
+*Référence — capacité CNISN mise en œuvre : CAP-INT-03.
+## 6. Content Modules
+
+- **En-têtes X-Road** : client (member/subsystem), serveur, `userId`, service, représentation temporelle.
+- **Charge utile (payload)** : non imposée par ce profil ; définie par les profils métier consommateurs/producteurs (identité, terminologie, consentement…).
+- **Requête/réponse** : enveloppe X-Road contenant le message métier chiffré et signé.
+
+## 7. Options
+
+- **O1 — Transport** : REST synchrone ou SOAP (les deux sont supportés par X-Road).
+- **O2 — Point de raccordement santé** : serveur de sécurité sectoriel ou dispositif équivalent prévu par le CNI.
+- **O3 — Fédération** : fédération de confiance nationale commune, ou points d’accès ciblés selon la gouvernance.
+
+## 8. Service national
+
+**Service national d’échange interinstitutionnel** — implémentation retenue :
 
 | Élément | Décision |
 |----|----|
@@ -49,9 +88,16 @@ Ce service permet les échanges entre le secteur santé et :
 
 X-Road permet l’échange sécurisé entre organisations membres au moyen de serveurs de sécurité et d’une infrastructure de confiance commune. Il ne constitue pas, à lui seul, un service de normalisation sémantique de santé.
 
-## 5. Contrats requis
+## 9. Formats et standards recommandés
 
-Toute initiative utilisant ce service doit fournir :
+- Transport et confiance : X-Road (infrastructure de confiance commune, serveurs de sécurité).
+- Normalisation sémantique : assurée par les profils métier (identité, terminologie, consentement), non par cette couche de transport.
+- Aucun format de message de santé n’est imposé à ce niveau ; il est défini par les profils consommateurs/producteurs.
+
+*Référence — normes et standards CNISN : [01_cnisn/05_standards](/cnisn/standards/index).
+## 10. Exigences
+
+Toute initiative utilisant ce service doit fournir les **contrats requis** :
 
 - un accord de partage ;
 - un fournisseur de service identifié ;
@@ -63,20 +109,26 @@ Toute initiative utilisant ce service doit fournir :
 - une preuve de conformité au CNI ;
 - une procédure de gestion des incidents.
 
-## 6. Limites
+## 11. Déclaration de conformité (Integration Statement)
 
-Le service national d’échange ne remplace pas :
+La conformité est attestée par la **preuve de conformité au CNI** (§10) : alignement au cadre national d’interopérabilité, raccordement via X-Road, et respect des politiques d’accès et de résidence. Références : [ADR-0001: X-Road comme bus d’échange](/cnisn/decisions/adr-0001-x-road), [STD-0002: sécurité et chiffrement](/cnisn/standards/std-0002-securite-chiffrement).
 
-- la résolution d’identité patient ;
-- le registre des professionnels ;
-- le consentement ;
-- la terminologie ;
-- l’autorisation fonctionnelle ;
-- la transformation sémantique ;
-- l’orchestration métier.
+## 12. Articulation avec les autres profils
 
-------------------------------------------------------------------------
+Le service national d’échange ne remplace pas les fonctions assurées par d’autres profils ; il s’y raccorde :
 
-*Rattachement : CMP-06, CAP-INT-03, ART-0, ART-1, ART-7, ART-11 · fiche PT-01*
+- PT-04: résolution d’identité bénéficiaire
+- PT-05: registre des professionnels
+- PT-07: terminologie et codification
+- PT-10: confiance, authentification, autorisation
+- PT-11: consentement et bases d’autorisation
+- PT-02: médiation intra-secteur
+- PT-16: orchestration de processus
+
+## 13. Limites et dépendances
+
+Limites : le service ne remplace pas la résolution d’identité patient, le registre des professionnels, le consentement, la terminologie, l’autorisation fonctionnelle, la transformation sémantique, ni l’orchestration métier.
+
+Dépendances : infrastructure X-Road, autorité de gouvernance du CNI, UGD (coordination secteur santé).
 
 <!-- END:GENERATED -->

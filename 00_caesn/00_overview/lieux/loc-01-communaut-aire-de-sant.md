@@ -7,6 +7,7 @@ status: draft
 last_reviewed: 2026-08-24
 owner: Ministère de la Santé Publique
 tags: ["caesn", "lieu", "loc-01", "overview"]
+related: ["PP-04", "CAP-01"]
 ---
 
 # Communauté / aire de santé

@@ -76,6 +76,12 @@ Son absence fragilise la gestion des ressources humaines et compromet la continu
 |---------------|----------------------|
 | 1/5 | 3/5 |
 
+#### Articulation avec la paie, les habilitations et la rétention
+
+- La **rémunération et la paie** s'appuient sur le registre des professionnels ([CAP-INT-02: Registre et résolution des professionnels de santé](../../referentiel/capacites/cap-int-02.md)) et sur l'échange financier ([PT-18: Échange de réclamations et paiements](../../03_ptisn/03_profils/pt-18-echange-reclamations-paiements.md)).
+- Les **habilitations** relèvent de [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md).
+- L'**analytique de rétention** (taux de rotation, départs) s'appuie sur [ART-6: Analytique et restitution](../../referentiel/chapitres/art-6.md).
+
 #### Propriétaire
 
 Responsables de capabilités habilitantes
@@ -335,7 +341,6 @@ Ces quatre capabilités ([CAP-13: Système d'information sanitaire, données et 
 
 Responsables de capabilités habilitantes
 
-realized_by: ["SRV-01"]
 ### Engagement patient et identité numérique
 
 #### Rôle dans le système

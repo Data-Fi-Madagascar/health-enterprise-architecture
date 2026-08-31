@@ -9,7 +9,7 @@ last_reviewed: "2026-08-13"
 
 ## Pour qui lire ce document
 
-**Niveau :** niveau 4 — Profils techniques d'implémentation de la Santé Numérique.
+**Niveau :** niveau 4 : Profils techniques d'implémentation de la Santé Numérique.
 
 | Profil | Lecture |
 |--------|---------|
@@ -37,35 +37,43 @@ La **spécification d'API** est la description formelle des ressources, méthode
 
 ## Termes de profils techniques (PT)
 
-Le **PT-01 — Échange interinstitutionnel** est le profil technique national pour les échanges entre le secteur santé et les autres secteurs de l'État (état civil, protection sociale, finances publiques). Il est basé sur X-Road.
+Le **PT-01 : Échange interinstitutionnel** est le profil technique national pour les échanges entre le secteur santé et les autres secteurs de l'État (état civil, protection sociale, finances publiques). Il est basé sur X-Road.
 
-Le **PT-04 — Résolution d'identité** est le profil technique national pour la résolution d'identité du bénéficiaire, comprenant la recherche démographique, la gestion des identifiants et le rapprochement de dossiers. Il est basé sur IHE PIXm/PDQm.
+Le **PT-02 : Médiation intra-secteur** est le profil technique national pour la médiation et la normalisation sémantique entre systèmes du secteur santé (ART-2).
 
-Le **PT-08 — Données agrégées** est le profil technique national pour l'échange de données agrégées de santé publique (rapports périodiques, indicateurs). Il est basé sur IHE mADX.
+Le **PT-03 : Catalogue de services et registre de contrats** est le profil technique national pour le catalogue de services et le registre des contrats d'interface.
 
-Le **PT-02 — Consentement** est le profil technique national pour la gestion du consentement du patient pour le partage de ses données de santé.
+Le **PT-04 : Résolution d'identité** est le profil technique national pour la résolution d'identité du bénéficiaire, comprenant la recherche démographique, la gestion des identifiants et le rapprochement de dossiers. Il est basé sur IHE PIXm/PDQm.
 
-Le **PT-03 — Terminologie** est le profil technique national pour la gestion des terminologies et des codifications (CIM-10, SNOMED CT, LOINC, ATC).
+Le **PT-05 : Registre des professionnels** est le profil technique national pour le registre des professionnels de santé.
 
-Le **PT-05 — Géolocalisation** est le profil technique national pour la localisation géographique des formations sanitaires et des points de service.
+Le **PT-06 : Référentiel des structures et services** est le profil technique national pour le référentiel des formations sanitaires et des points de service (géolocalisation).
 
-Le **PT-06 — Authentification** est le profil technique national pour l'authentification et l'autorisation des professionnels de santé.
+Le **PT-07 : Terminologie et codification** est le profil technique national pour la gestion des terminologies et des codifications (CIM-10, SNOMED CT, LOINC, ATC).
 
-Le **PT-07 — Traçabilité** est le profil technique national pour la journalisation des accès et des modifications des données.
+Le **PT-08 : Données agrégées** est le profil technique national pour l'échange de données agrégées de santé publique (rapports périodiques, indicateurs). Il est basé sur IHE mADX.
 
-Le **PT-09 — Alertes** est le profil technique national pour la détection et la réponse aux alertes sanitaires.
+Le **PT-09 : Analytique et exposition de données** est le profil technique national pour l'analytique et l'exposition des données de stock et d'activité.
 
-Le **PT-10 — Qualité des données** est le profil technique national pour le contrôle qualité des données échangées.
+Le **PT-10 : Confiance, authentification, autorisation** est le profil technique national pour la confiance, l'authentification et l'autorisation des acteurs.
 
-Le **PT-11 — Consentement (détaillé)** est le profil technique national pour la gestion fine du consentement patient, incluant les finalités, les destinataires et les durées.
+Le **PT-11 : Consentement et bases d'autorisation** est le profil technique national pour la gestion fine du consentement patient (finalités, destinataires, durées) et les bases d'autorisation.
 
-Le **PT-12 — Déploiement** est le profil technique national pour la mise en production et la migration des systèmes.
+Le **PT-12 : Audit, provenance, traçabilité** est le profil technique national pour l'audit, la provenance et la traçabilité des mouvements et échanges.
 
-Le **PT-13 — Supervision** est le profil technique national pour la surveillance du fonctionnement des systèmes.
+Le **PT-13 : Qualité et réconciliation des données** est le profil technique national pour le contrôle qualité et la réconciliation des données échangées.
 
-Le **PT-14 — Interopérabilité transfrontalière** est le profil technique national pour les échanges cliniques avec les pays voisins. Il est basé sur HL7 FHIR IPS (International Patient Summary) et le réseau GDHCN (Global Digital Health Certificate Network). Trois interfaces sont définies : export IPS, vérification certificat, consultation distante.
+Le **PT-14 : Interopérabilité transfrontalière** est le profil technique national pour les échanges cliniques avec les pays voisins. Il est basé sur HL7 FHIR IPS (International Patient Summary) et le réseau GDHCN (Global Digital Health Certificate Network). Trois interfaces sont définies : export IPS, vérification certificat, consultation distante.
 
-Le **PT-15 — Surveillance One Health** est le profil technique national pour la surveillance intégrée des zoonoses et menaces sanitaires transversales. Il intègre les données humain, animal et environnement via le standard OHDSI FHIR.
+Le **PT-15 : Surveillance One Health** est le profil technique national pour la surveillance intégrée des zoonoses et menaces sanitaires transversales. Il intègre les données humain, animal et environnement via le standard OHDSI FHIR.
+
+Le **PT-16 : Orchestration de processus bornés** est le profil technique national pour l'orchestration de processus distribués (Sagas, ART-8A).
+
+Le **PT-17 : Logistique & chaîne d'approvisionnement (LMIS)** est le profil technique national pour la traçabilité des stocks et l'échange interopérable de la supply chain (norme STD-0009, véhiculé par X-Road).
+
+Le **PT-18 : Échange de réclamations et paiements** est le profil technique national pour l'échange de réclamations et paiements (VS-03, CAP-07).
+
+Le **PT-19 : Aide à la décision clinique (CDS)** est le profil technique national pour l'aide à la décision clinique (ART-12, F-3).
 
 ## Termes de sécurité et d'autorisation
 
@@ -139,6 +147,22 @@ La **synchronisation différée** est le mécanisme de transmission des données
 
 **PDQm** (*Patient Demographics Query for mobile*) est le profil IHE pour la recherche de patients à partir de données démographiques via une API REST.
 
+## Termes de profils IHE
+
+Les profils techniques nationaux (PT) sont rédigés sur le modèle des **profils IHE** (*Integrating the Healthcare Enterprise*), qui définissent des spécifications implémentables en assemblant des standards. Les propriétés d'un profil IHE sont les suivantes :
+
+L'**acteur (Actor)** est un système ou composant logiciel assumant un rôle défini dans un échange (ex. : consommateur d'identité, registre, médiateur). Un même système peut jouer plusieurs acteurs.
+
+La **transaction (Transaction)** est une interaction unitaire et standardisée entre deux acteurs (ex. : PIXm, PDQm, mCSD, SVCM, mADX, IUA, ATNA). Chaque transaction est étiquetée **R** (requise pour revendiquer le profil) ou **O** (optionnelle) ; lorsque le dépôt ne précise pas, la valeur est « à définir ».
+
+Le **content module** est la structure de contenu échangée dans une transaction (ex. : ressource FHIR `Patient`, `Practitioner`, `CodeSystem`, `MeasureReport`, `AuditEvent`).
+
+L'**option (Option)** est une variante sélectionnable au sein d'un profil (ex. : PIXm vs PIX/PDQ historiques, OAuth2/OIDC vs IUA, transport REST vs SOAP).
+
+La **déclaration de conformité (Integration Statement)** est l'affirmation, par un implémentant, des acteurs et transactions qu'il supporte ; elle s'appuie sur des preuves de conformité exécutables (tests).
+
+Le **profil IHE** est donc un ensemble cohérent d'acteurs, de transactions (R/O), de content modules et d'options, accompagné d'une déclaration de conformité — structure reprise par chaque fiche PT.
+
 ## Liens
 
 - Index du PTISN
@@ -149,14 +173,14 @@ La **synchronisation différée** est le mécanisme de transmission des données
 
 ## Références
 
-- **matrice de lecture** — Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
-- **glossaire du CAESN** — Glossaire (`00_caesn/10_annexes/glossary.md`)
-- **glossaire de l'ARTSN** — Glossaire de l'ARTSN (niveau 3) (`02_artsn/glossary.md`)
-- **contrat d'interface** — Glossaire de l'ARTSN (niveau 3) (`02_artsn/glossary.md`)
-- **fiche d'initiative** — Fiche standard d'initiative orientée valeur (`00_caesn/06_portfolio/initiative-card.md`)
-- **critères d'homologation** — Cycle de vie applicatif et critères d'homologation (`00_caesn/05_application/lifecycle.md`)
-- **Index du PTISN** — Profils techniques d'implémentation de la Santé Numérique (PTISN) (`03_ptisn/index.md`)
-- **Matrice de lecture du PTISN** — Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
-- **Glossaire du CAESN (niveau 1)** — Glossaire (`00_caesn/10_annexes/glossary.md`)
-- **Glossaire de l'ARTSN (niveau 3)** — Glossaire de l'ARTSN (niveau 3) (`02_artsn/glossary.md`)
-- **Exemples de profils d'initiative** — Exemples de profils d'initiative remplis (`03_ptisn/05_exemples/index.md`)
+- **matrice de lecture** : Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
+- **glossaire du CAESN** : Glossaire (`00_caesn/10_annexes/glossary.md`)
+- **glossaire de l'ARTSN** : Glossaire de l'ARTSN (niveau 3) (`02_artsn/glossary.md`)
+- **contrat d'interface** : Glossaire de l'ARTSN (niveau 3) (`02_artsn/glossary.md`)
+- **fiche d'initiative** : Fiche standard d'initiative orientée valeur (`00_caesn/06_portfolio/initiative-card.md`)
+- **critères d'homologation** : Cycle de vie applicatif et critères d'homologation (`00_caesn/05_application/lifecycle.md`)
+- **Index du PTISN** : Profils techniques d'implémentation de la Santé Numérique (PTISN) (`03_ptisn/index.md`)
+- **Matrice de lecture du PTISN** : Matrice de lecture du PTISN (niveau 4) (`03_ptisn/reading-matrix.md`)
+- **Glossaire du CAESN (niveau 1)** : Glossaire (`00_caesn/10_annexes/glossary.md`)
+- **Glossaire de l'ARTSN (niveau 3)** : Glossaire de l'ARTSN (niveau 3) (`02_artsn/glossary.md`)
+- **Exemples de profils d'initiative** : Exemples de profils d'initiative remplis (`03_ptisn/08_annexes/f-exemples-profils.md`)

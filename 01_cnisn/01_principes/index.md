@@ -7,6 +7,7 @@ status: draft
 last_reviewed: 2026-07-31
 owner: DEPSI
 tags: ["cnisn", "niveau-2", "interopérabilité", "principes"]
+related: ["CAP-14"]
 ---
 
 # Partie I : Principes nationaux d'interopérabilité de santé

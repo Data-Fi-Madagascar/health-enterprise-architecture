@@ -7,6 +7,7 @@ status: draft
 last_reviewed: 2026-07-31
 owner: DEPSI
 tags: ["cnisn", "niveau-2", "interopérabilité", "capacites"]
+related: ["CAP-10", "CAP-11", "CMP-23"]
 ---
 
 # Partie II : Capacités nationales requises
@@ -15,11 +16,11 @@ Les capacités suivantes opérationnalisent les principes du CNISN.
 
 Elles ne nomment aucun produit ou standard.
 
-Ce catalogue référence les 14 capacités. Le texte de référence de chaque capacité vit dans le référentiel : `referentiel/capacites/cap-int-XX.md`.
+Ce catalogue référence les 16 capacités. Le texte de référence de chaque capacité vit dans le référentiel : `referentiel/capacites/cap-int-XX.md`.
 
 ## Catalogue des capacités
 
-Les 14 capacités sont regroupées en sept familles de réponse, calquées sur les réponses architecturales de l'ARTSN (couches 3 à 6, axes et extensions transfrontalière et intersectorielle de la cartographie cible : voir annexe B).
+Les 16 capacités sont regroupées en huit familles de réponse, calquées sur les réponses architecturales de l'ARTSN (couches 3 à 6, axes et extensions transfrontalière et intersectorielle de la cartographie cible : voir annexe B).
 
 | Famille | Capacités |
 |---|---|
@@ -30,6 +31,7 @@ Les 14 capacités sont regroupées en sept familles de réponse, calquées sur l
 | 5. Qualité et conformité | CAP-INT-11, CAP-INT-12 |
 | 6. Interopérabilité transfrontalière | CAP-INT-13 |
 | 7. Échanges intersectoriels One Health | CAP-INT-14 |
+| 8. Logistique et chaîne d'approvisionnement | CAP-INT-15, CAP-INT-16 |
 
 Chaque entrée liste les principes associés via le référentiel.
 
@@ -37,8 +39,6 @@ Chaque entrée liste les principes associés via le référentiel.
 
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-01.md,referentiel/capacites/cap-int-02.md,referentiel/capacites/cap-int-04.md,referentiel/capacites/cap-int-05.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
-
-realized_by: ["PL-01", "WP-01"]
 
 ### Résolution d’identité du bénéficiaire
 
@@ -111,6 +111,11 @@ Cette capacité est distincte :
 - [P-INT-14: Base d’autorisation explicite](../../referentiel/principes/p-int-14.md)
 - [P-INT-15: Limitation à la finalité](../../referentiel/principes/p-int-15.md)
 
+#### Articulation avec la paie et les habilitations
+
+- La résolution des professionnels alimente la **gestion de la paie** ([CAP-09: Gestion des ressources humaines en santé](../../referentiel/capabilites/cap-09.md)) et les **habilitations** ([CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md)) ; elle ne gère pas la rémunération.
+- Échange financier associé : [PT-18: Échange de réclamations et paiements](../../03_ptisn/03_profils/pt-18-echange-reclamations-paiements.md).
+
 ### Référentiel des structures et services de santé
 
 #### Finalité
@@ -176,8 +181,6 @@ Permettre aux systèmes de partager des définitions et codifications cohérente
 
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-03.md,referentiel/capacites/cap-int-06.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
-
-realized_by: ["SRV-03"]
 
 ### Échange et médiation inter-systèmes
 
@@ -312,8 +315,6 @@ La conception interne des entrepôts, projections et modèles analytiques relèv
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-08.md,referentiel/capacites/cap-int-09.md,referentiel/capacites/cap-int-10.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-realized_by: ["SRV-04"]
-
 ### Confiance, sécurité et autorisation
 
 #### Finalité
@@ -372,8 +373,6 @@ Le consentement est une base possible parmi plusieurs bases légales ou fonction
 - [P-INT-15: Limitation à la finalité](../../referentiel/principes/p-int-15.md)
 - [P-INT-16: Résidence et non-réplication](../../referentiel/principes/p-int-16.md)
 - [P-INT-17: Minimisation](../../referentiel/principes/p-int-17.md)
-
-realized_by: ["SRV-05"]
 
 ### Provenance, audit et traçabilité
 
@@ -564,7 +563,7 @@ Madagascar est membre de l'Union Africaine (UA), de la Commission Économique de
 
 #### Principes associés
 
-- [P-INT-01: Autorité désignée](../../referentiel/principes/p-int-01.md) (Autorité désignée) : l'autorité nationale reste l'autorité pour les données malgaches, même lors d'échanges ;
+- [P-INT-01: Autorité désignée](../../referentiel/principes/p-int-01.md) (Autorité désignée) : l'autorité nationale reste l'autorité pour les données malagasy, même lors d'échanges ;
 - [P-INT-05: Contrat explicite](../../referentiel/principes/p-int-05.md) (Contrat explicite) : tout flux transfrontalier nécessite un accord bilatéral ou multilatéral ;
 - [P-INT-10: Accord préalable](../../referentiel/principes/p-int-10.md) (Accord préalable) : accord obligatoire avant tout échange avec une institution étrangère ;
 - [P-INT-14: Base d’autorisation explicite](../../referentiel/principes/p-int-14.md) (Base d'autorisation explicite) : base légale documentée pour chaque type de flux sortant ;
@@ -625,7 +624,7 @@ Les secteurs concernés :
 
 #### Médiation intersectorielle
 
-- transformation sémantique entre taxonomies sectorielles (CIM-10 pour santé humaine, OIE pour animaux, classification environnementale) ;
+- transformation sémantique entre taxonomies sectorielles (CIM-11 pour santé humaine, OIE pour animaux, classification environnementale) ;
 - normalisation des dimensions communes (espace, temps, géographie) ;
 - corrélation des signaux faibles entre secteurs ;
 - détection de clusters intersectoriels.
@@ -674,6 +673,76 @@ Les secteurs concernés :
 - [ART-4D](../../referentiel/chapitres/art-4d.md) (Référentiel géospatial)
 - [F.2](../../referentiel/fondations/f-2.md) (Souveraineté intersectorielle)
 - [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (Cloisonnement inter-institutionnel One Health)
+
+<!-- END:GENERATED -->
+
+<!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-15.md,referentiel/capacites/cap-int-16.md -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
+
+### Échange et traçabilité de la chaîne d'approvisionnement sanitaire
+
+#### Finalité
+
+Permettre l'interopérabilité des données de la chaîne d'approvisionnement sanitaire (médicaments, vaccins, intrants, équipements) : catalogue produit partagé, niveaux de stock, lots et traçabilité des mouvements, afin d'éviter les ruptures et les péremptions.
+
+#### Services attendus
+
+- catalogue produit normalisé (désignation, code, unité, seuils) ;
+- remontée des niveaux de stock par établissement ;
+- traçabilité des lots et des mouvements (réception, transfert, distribution) ;
+- alerte de rupture et de péremption ;
+- corrélation stock → consommation → épidémiologie.
+
+#### Principe de séparation
+
+Cette capacité est distincte de la gestion logistique applicative (LMIS métier) ; elle normalise l'échange et la traçabilité inter-initatives, sans remplacer le système de gestion des stocks.
+
+#### Principes associés
+
+- [P-INT-03: Copies locales non autoritatives](../../referentiel/principes/p-int-03.md)
+- [P-INT-07: Responsabilité de la donnée](../../referentiel/principes/p-int-07.md)
+- [P-INT-18: Traçabilité différenciée](../../referentiel/principes/p-int-18.md)
+
+#### Rattachement
+
+- [CAP-10: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement](../../referentiel/capabilites/cap-10.md)
+- [CAP-11: Gestion des infrastructures, équipements et maintenance](../../referentiel/capabilites/cap-11.md)
+- [CMP-23: LMIS (logistique)](../../referentiel/composants/cmp-23.md)
+- [ART-10: Logistique](../../referentiel/chapitres/art-10.md)
+- [CAP-INT-03: Échange et médiation](../../referentiel/capacites/cap-int-03.md)
+- [CAP-INT-10: Provenance, audit et traçabilité](../../referentiel/capacites/cap-int-10.md)
+
+### Données environnementales et de résilience climatique
+
+#### Finalité
+
+Permettre l'interopérabilité des données environnementales et climatiques utiles à la santé publique (climat, qualité de l'air/eau, biodiversité, évènements extrêmes) avec les secteurs environnement, agriculture, météorologie et intérieur, dans le cadre One Health.
+
+#### Services attendus
+
+- référentiel spatio-temporel partagé (espace, temps, géographie) ;
+- échange des indicateurs environnementaux et climatiques normalisés ;
+- corrélation signaux environnementaux ↔ épidémiologiques ;
+- alertes conjointes santé–environnement–climat.
+
+#### Principe de séparation
+
+Cette capacité complète (sans la remplacer) la coordination intersectorielle One Health (CAP-INT-14) : elle porte spécifiquement la dimension environnementale/climatique normalisée comme capacité d'interopérabilité à part entière.
+
+#### Principes associés
+
+- [P-INT-01: Autorité désignée](../../referentiel/principes/p-int-01.md)
+- [P-INT-10: Accord préalable](../../referentiel/principes/p-int-10.md)
+- [P-INT-16: Résidence et non-réplication](../../referentiel/principes/p-int-16.md)
+
+#### Rattachement
+
+- [CAP-18: Coordination intersectorielle (One Health)](../../referentiel/capabilites/cap-18.md)
+- [CAP-05: Surveillance épidémiologique, alerte, investigation et riposte](../../referentiel/capabilites/cap-05.md)
+- [CMP-05: Référentiel spatio-temporel](../../referentiel/composants/cmp-05.md)
+- [ART-4D: Référentiel géospatial et d'exploitation partagé](../../referentiel/chapitres/art-4d.md)
+- [CAP-INT-14: Échanges intersectoriels One Health](../../referentiel/capacites/cap-int-14.md)
+- [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md)
 
 <!-- END:GENERATED -->
 

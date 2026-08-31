@@ -60,7 +60,7 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 |--------|----------|---------|
 | Décrire un besoin | [Template modification](01_cnisn/06_decisions/template-modification.md) | Formulaire MOD-XXXX |
 | Vérifier la maturité | [Matrice de maturité](02_artsn/08_annexes/a-table-de-maturite.md) | Évaluation par capabilité |
-| Comprendre l'interopérabilité | [CNISN capacités](01_cnisn/02_capacites/index.md) | 14 capacités, 7 familles |
+| Comprendre l'interopérabilité | [CNISN capacités](01_cnisn/02_capacites/index.md) | 16 capacités, 8 familles |
 | Lire les cas d'usage | [VS-01](03_ptisn/08_annexes/cas-usage-reference-evacuation.md), [VS-02](03_ptisn/08_annexes/cas-usage-surveillance-epidemique.md), [VS-03](03_ptisn/08_annexes/cas-usage-couverture-sanitaire.md), [VS-04](03_ptisn/08_annexes/cas-usage-pilotage-systeme.md) | Exemples concrets par flux |
 
 ### Check-list de rédaction d'un besoin

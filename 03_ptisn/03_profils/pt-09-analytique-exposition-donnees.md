@@ -1,5 +1,5 @@
 ---
-title: Profil technique national
+title: "Analytique et exposition de données"
 id: ptisn-PT-09
 domain: 03_profils
 version: "1.0.0"
@@ -7,6 +7,7 @@ status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-09"]
+related: ["CAP-INT-07", "ART-3", "ART-5", "ART-6", "ART-7", "CMP-03", "CMP-04"]
 ---
 
 # Profil technique national
@@ -14,41 +15,67 @@ tags: ["ptisn", "niveau-4", "profils", "PT-09"]
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-## 1. Capacité CNISN
+## 1. Objet et périmètre
+
+Le **profil PT-09 — Analytique et exposition de données** définit les services nationaux d’accès et d’exposition des données analytiques. Il couvre l’entrepôt, les indicateurs, la consultation, la qualité, la réconciliation et la publication de jeux de données autorisés.
+
+Périmètre : exposition et restitution analytique. Hors périmètre : l’échange de données agrégées brutes (voir PT-08) et la collecte métier.
+
+## 2. Capacité CNISN
 
 [CAP-INT-07: Accès et exposition des données analytiques](../../referentiel/capacites/cap-int-07.md)
 
-## 2. Chapitres ART applicables
+## 3. Chapitres ART applicables
 
-- [ART-3: Historisation événementielle et profils de déploiement](../../referentiel/chapitres/art-3.md) selon le profil retenu ;
-- [ART-5: Cohérence et qualité des données](../../referentiel/chapitres/art-5.md) ;
-- [ART-6: Analytique et restitution](../../referentiel/chapitres/art-6.md) ;
-- [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../referentiel/chapitres/art-7.md).
+- [ART-3: Historisation événementielle et profils de déploiement](../../referentiel/chapitres/art-3.md) selon le profil retenu
+- [ART-5: Cohérence et qualité des données](../../referentiel/chapitres/art-5.md)
+- [ART-6: Analytique et restitution](../../referentiel/chapitres/art-6.md)
+- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../referentiel/chapitres/art-7.md)
 
-## 3. Services nationaux
+## 4. Acteurs (Actors)
 
-- entrepôt analytique national ;
-- service d’indicateurs ;
-- service de consultation des données agrégées ;
-- service de qualité ;
-- service de réconciliation ;
-- service de tableaux de bord ;
+- **Producteur de données (Data Publisher)** — système de collecte ou entrepôt amont alimentant l’analytique.
+- **Entrepôt analytique national (Analytics Repository)** — tient les projections, indicateurs et historisation.
+- **Consommateur analytique (Data Consumer)** — tableau de bord, programme ou partenaire consultant les données exposées.
+- **Service de publication (Data Publication Service)** — diffuse les jeux de données autorisés.
+
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-07](../../referentiel/capacites/cap-int-07.md).
+## 5. Transactions
+
+| Transaction | Acteurs | R/O | Standard |
+|----|----|----|----|
+| T1 — Consultation d’indicateurs (API REST) | Consommateur → Entrepôt | R | REST/OpenAPI |
+| T2 — Réception de données agrégées | Producteur → Entrepôt | R | mADX (voir PT-08) |
+| T3 — Publication de jeu de données autorisé | Entrepôt → Service de publication | O | Export ouvert documenté et versionné |
+
+R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
+
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-07](../../referentiel/capacites/cap-int-07.md).
+## 6. Content Modules
+
+- **HL7 FHIR MeasureReport** : indicateurs agrégés exposés.
+- **Requêtes d’indicateurs** : paramétrées par structure (PT-06), terminologie (PT-07), programme, période.
+- **Export tabulaire** : format ouvert, documenté et versionné.
+
+## 7. Options
+
+- **O1 — Produit d’entrepôt** : non retenu à ce stade (choix d’architecture de solution, analyse comparative, homologation, perf, TCO).
+- **O2 — Patrons** : séparation lecture-écriture, projections tabulaires, modèles historiques, état courant, spatio-temporels, historisation événementielle.
+- **O3 — Catalogue de données** : profil national à définir.
+
+## 8. Service national
+
+Services nationaux concernés :
+
+- entrepôt analytique national ;
+- service d’indicateurs ;
+- service de consultation des données agrégées ;
+- service de qualité ;
+- service de réconciliation ;
+- service de tableaux de bord ;
 - service de publication de jeux de données autorisés.
 
-## 4. Patrons applicables
-
-Les initiatives peuvent appliquer :
-
-- séparation lecture-écriture ;
-- projections tabulaires ;
-- modèles historiques ;
-- modèles d’état courant ;
-- modèles spatio-temporels ;
-- historisation événementielle lorsque justifiée.
-
-Le choix du patron est défini dans l’ART et dans le profil d’applicabilité de l’initiative.
-
-## 5. Standards d’exposition
+## 9. Formats et standards recommandés
 
 | Usage                        | Standard ou profil recommandé         |
 |------------------------------|---------------------------------------|
@@ -59,29 +86,23 @@ Le choix du patron est défini dans l’ART et dans le profil d’applicabilité
 | Export tabulaire             | Format ouvert, documenté et versionné |
 | Catalogue de données         | Profil national à définir             |
 
-## 6. Produits
+*Référence — normes et standards CNISN : [01_cnisn/05_standards](../../01_cnisn/05_standards/index.md).
+## 10. Exigences
 
-Le PTISN ne retient pas, à ce stade, de produit national unique pour :
+Le PTISN ne retient pas, à ce stade, de produit national unique pour l’entrepôt analytique, la visualisation, le moteur de projection ou l’historisation événementielle. Ces choix relèvent de l’architecture de solution, de l’analyse comparative, de l’homologation, des exigences de performance et du coût total de possession.
 
-- l’entrepôt analytique ;
-- la visualisation ;
-- le moteur de projection ;
-- l’historisation événementielle.
+## 11. Déclaration de conformité (Integration Statement)
 
-Ces choix relèvent :
+La plateforme de traçabilité RMA est reconnue comme **première initiative de validation** du profil analytique national. Son architecture ne devient pas automatiquement obligatoire pour toutes les initiatives.
 
-- de l’architecture de solution ;
-- de l’analyse comparative ;
-- de l’homologation ;
-- des exigences de performance ;
-- du coût total de possession.
+## 12. Articulation avec les autres profils
 
-## 7. Première implémentation
+- [PT-08: échange de données agrégées](../../referentiel/profils/pt-08.md)
+- [PT-06: référentiel des structures](../../referentiel/profils/pt-06.md)
+- [PT-07: terminologie et codification](../../referentiel/profils/pt-07.md)
 
-La plateforme de traçabilité RMA est reconnue comme **première initiative de validation** du profil analytique national.
+## 13. Limites et dépendances
 
-Son architecture ne devient pas automatiquement obligatoire pour toutes les initiatives.
-
-------------------------------------------------------------------------
+L’exposition analytique dépend de la qualité et de la résidence des données sources (ART-7). Dépendance : entrepôt national et référentiels (PT-06, PT-07). La RMA n’impose pas son architecture à toutes les initiatives.
 
 <!-- END:GENERATED -->

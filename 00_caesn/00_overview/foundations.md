@@ -77,7 +77,7 @@ Le cadre **Digital Public Infrastructure for Health (DPI-H)** est une initiative
 | Registre des formations sanitaires (Facility Registry) | Identifier les lieux de soins | Référentiel de structures |
 | Registre des professionnels de santé (Health Worker Registry) | Identifier les prestataires | Référentiel de professionnels |
 | Couche d'échange (Interoperability Layer) | Router et transformer les messages | Couche d'échange et médiation |
-| Service de terminologie | Codes et classifications communs | STD-0006 (CIM-10 + LOINC), STD-0007 (SNOMED CT) |
+| Service de terminologie | Codes et classifications communs | STD-0006 (CIM-11 + LOINC), STD-0007 (SNOMED CT) |
 | Dossier partagé (Shared Health Record) | Repository longitudinal patient | Dossier patient partagé |
 | Système de gestion de l'information sanitaire (HMIS) | Données agrégées et tableaux de bord | Système d'information sanitaire |
 | Gestion logistique (LMIS) | Visibilité sur les produits de santé | Gestion logistique |
@@ -144,7 +144,7 @@ L'approche GovStack par **API ouvertes** et **conteneurs** permet l'interopérab
 | *Comment relier à l'État ?* | DPI-F → DPI-H | : | Blocs transversaux → services sectoriels |
 | *Quels standards ?* | FHIR R4, SMART Guidelines | IHE, HL7 | API ouvertes, conteneurs |
 
-L'HEA utilise les trois référentiels de manière complémentaire : le DPI-H définit les composantes nécessaires, OpenHIE fournit le patron d'architecture, et GovStack offer les spécifications techniques pour l'intégration dans l'État numérique malgache.
+L'HEA utilise les trois référentiels de manière complémentaire : le DPI-H définit les composantes nécessaires, OpenHIE fournit le patron d'architecture, et GovStack offre les spécifications techniques pour l'intégration dans l'État numérique malgache.
 
 ## Technologies émergentes
 

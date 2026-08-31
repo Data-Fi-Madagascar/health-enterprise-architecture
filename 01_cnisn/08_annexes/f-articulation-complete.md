@@ -18,7 +18,7 @@ Cette annexe documente le flux complet depuis les **capabilités métier** (CAES
 | Niveau | Cadre | Contenu | Objets principaux |
 |--------|-------|---------|-------------------|
 | **1** | CAESN | Capabilités métier du système de santé | 16 capabilités (`CAP-01…16`), 4 flux de valeur (`VS-01…04`), 28 étapes (`VS-01-01…28`), 12 processus (`PRC-01…12`) |
-| **2** | CNISN | Capacités d'interopérabilité et principes | 14 capacités (`CAP-INT-01…14`), 25 principes (`P-INT-01…25`) |
+| **2** | CNISN | Capacités d'interopérabilité et principes | 16 capacités (`CAP-INT-01…16`), 25 principes (`P-INT-01…25`) |
 | **3** | ARTSN | Architecture technique de référence | 18 chapitres (`ART-0…11`), 6 fondations (`F-1…6`), 5 exigences (`ENF-1…5`) |
 | **4** | PTISN | Profils techniques d'implémentation | 15 profils (`PT-01…15`) |
 
