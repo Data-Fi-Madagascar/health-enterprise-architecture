@@ -9,7 +9,7 @@ owner: DEPSI
 version: "0.5"
 family: environnement
 envelope: 01_cnisn/02_capacites/index.md
-maps_to: ["CAP-18", "CAP-05", "CMP-05", "ART-4D"]
+maps_to: ["CAP-04", "CAP-05", "CAP-18", "CMP-05", "ART-4D"]
 implements: []
 applies_to: []
 related: ["CAP-INT-14", "ENF-4"]

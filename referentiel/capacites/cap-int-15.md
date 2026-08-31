@@ -9,7 +9,7 @@ owner: DEPSI
 version: "0.5"
 family: logistique
 envelope: 01_cnisn/02_capacites/index.md
-maps_to: ["CAP-10", "CAP-11", "CMP-23"]
+maps_to: ["CAP-06", "CAP-10", "CAP-11", "CMP-23"]
 implements: []
 applies_to: []
 related: ["CAP-INT-03", "CAP-INT-10"]
