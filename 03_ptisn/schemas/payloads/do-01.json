@@ -5,18 +5,98 @@
   "description": "Personne physique bénéficiaire de soins de santé, identifiée de manière unique au sein du système d'information sanitaire national. L'identité du patient est un actif stratégique national qui ne peut être dupliquée, fragmentée ou remplacée par des identifiants propriétaires de programmes ou de projets.",
   "type": "object",
   "properties": {
-    "id": {
-      "type": "string",
-      "description": "Identifiant unique de l'objet"
+    "identifier": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "system": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "system",
+          "value"
+        ]
+      },
+      "description": "Au moins un identifiant national (NIN) exigé ; identifiants provisoires autorisés en attente d'attribution."
     },
-    "version": {
-      "type": "string",
-      "description": "Version de l'objet",
-      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+    "name": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "use": {
+            "type": "string",
+            "enum": [
+              "official",
+              "usual",
+              "nickname"
+            ]
+          },
+          "family": {
+            "type": "string"
+          },
+          "given": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "description": "Nom usuel obligatoire, au minimum un HumanName."
     },
-    "identifiant": {
+    "birthDate": {
       "type": "string",
-      "description": "Identifiant unique"
+      "format": "date",
+      "description": "Date de naissance exigée, au besoin estimée (patient.birthDate + patient.deceasedBoolean gérés à part)."
+    },
+    "gender": {
+      "type": "string",
+      "enum": [
+        "male",
+        "female",
+        "other",
+        "unknown"
+      ],
+      "description": "Sexe administratif requis, codé sur la ValueSet FHIR administrative-gender."
+    },
+    "address": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "line": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "city": {
+            "type": "string"
+          },
+          "postalCode": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Adresse du patient, référençable vers le référentiel géospatial national (ART-4D)."
+    },
+    "security": {
+      "type": "object",
+      "properties": {
+        "security": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Balises de classification des données (résidence, confidentialité) conformes à ART-7."
     },
     "art_2Ref": {
       "type": "string",
@@ -37,13 +117,19 @@
   },
   "required": [
     "id",
-    "version"
+    "identifier",
+    "name",
+    "birthDate",
+    "gender"
   ],
+  "x-hea-version": "1.0.0",
   "x-hea-id": "DO-01",
   "x-hea-type": "objet-de-donnees",
-  "x-hea-version": "1.0.0",
   "x-hea-status": "draft",
   "x-hea-owner": "DEPSI",
   "x-hea-fhir-resource": "Patient",
+  "x-hea-fhir-resources": [
+    "Patient"
+  ],
   "x-hea-source-ref": "Référentiel des bénéficiaires / patients (CAESN)"
 }

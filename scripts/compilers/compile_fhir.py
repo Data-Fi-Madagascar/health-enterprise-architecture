@@ -21,6 +21,11 @@ import re
 import sys
 from datetime import datetime
 
+try:
+    import yaml
+except ImportError:
+    yaml = None
+
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 FHIR_VERSION = "4.0.1"
 FHIR_NS = "https://healmadagascar.mg/fhir"
@@ -80,6 +85,112 @@ def extract_source_ref_from_body(body):
     if m:
         return m.group(1).strip()
     return None
+
+
+def parse_fhir_block(fm):
+    """Parse le bloc `fhir:` du frontmatter YAML si présent.
+
+    Retourne un dict structuré (base, profile, identifiers, elements) ou None.
+    Le frontmatter doit être parseable en YAML ; sinon on retombe sur None.
+    """
+    if yaml is None:
+        return None
+    try:
+        data = yaml.safe_load(fm)
+    except Exception:
+        return None
+    if not isinstance(data, dict):
+        return None
+    fhir = data.get("fhir")
+    if not isinstance(fhir, dict):
+        return None
+    return fhir
+
+
+def build_differential_from_fhir(fhir):
+    """Construit un differential FHIR complet à partir du bloc `fhir:`.
+
+    Génère les éléments avec cardinalités (min/max), types, bindings et
+    slicing des identifiers, conformes au meta-modèle FHIR R4.
+    """
+    elements = []
+    seen = set()
+
+    base_type = fhir.get("base", "").rstrip("/").split("/")[-1] or "Resource"
+
+    # 1. Slicing des identifiants (Patient.identifier[sliceName])
+    identifiers = fhir.get("identifiers") or []
+    if identifiers:
+        # Element racine "sliced" : reprécise min/max global si fourni
+        global_id = next(
+            (e for e in (fhir.get("elements") or [])
+             if e.get("path") == "Patient.identifier"),
+            None)
+        elements.append({
+            "id": "Patient.identifier",
+            "path": "Patient.identifier",
+            "sliceName": "Identifier",
+            "min": 1 if global_id is None else global_id.get("min", 1),
+            "max": global_id.get("max", "*") if global_id else "*",
+            "slicing": {
+                "discriminator": [{
+                    "type": "value",
+                    "path": "system"
+                }],
+                "rules": "open",
+                "description": "Slice par système d'identifiant (NIN vs provisoire)"
+            },
+            "type": [{"code": "Identifier"}],
+            "comment": "Identifiants du patient, différenciés par system."
+        })
+        seen.add(( "Patient.identifier", None ))
+
+        for ident in identifiers:
+            path = ident.get("path", "Patient.identifier")
+            el_id = "%s:%s" % (path, ident.get("sliceName", ""))
+            el = {
+                "id": el_id,
+                "path": path,
+                "sliceName": ident.get("sliceName", ""),
+                "min": ident.get("min", 0),
+                "max": ident.get("max", "1"),
+                "type": [{"code": "Identifier"}],
+                "comment": ident.get("label", "")
+            }
+            if ident.get("system"):
+                el.setdefault("pattern", {})["system"] = ident["system"]
+            elements.append(el)
+            seen.add((path, ident.get("sliceName", "")))
+
+    # 2. Éléments contraints
+    for e in fhir.get("elements") or []:
+        path = e.get("path", "")
+        slice_name = e.get("sliceName")
+        if (path, slice_name) in seen:
+            continue
+        el = {
+            "id": path,
+            "path": path,
+            "min": e.get("min", 0),
+            "max": e.get("max", "*"),
+        }
+        if e.get("binding"):
+            el["binding"] = {
+                "strength": e.get("binding", {}).get("strength", "example"),
+                "valueSet": e.get("binding", {}).get("valueSet", "")
+            }
+        if e.get("comment"):
+            el["comment"] = e["comment"]
+        # type par défaut déduit de la base (rarement renseigné dans le bloc)
+        type_code = e.get("type", {}).get("code")
+        if type_code:
+            el["type"] = [{"code": type_code}]
+        elements.append(el)
+        seen.add((path, None))
+
+    if not elements:
+        return None
+    return {"element": elements}
 
 
 # Mapping des types DO → types FHIR
@@ -257,7 +368,7 @@ def generate_valueset():
     }
 
 
-def generate_structuredefinition(obj, body):
+def generate_structuredefinition(obj, body, fm=None, fhir_block=None):
     """Génère un StructureDefinition pour un objet de données."""
     do_id = obj["id"]
     title = obj.get("title", do_id)
@@ -276,14 +387,71 @@ def generate_structuredefinition(obj, body):
             description = line
             break
 
-    # Extraire le type d'objet
+    # Extraire le type d'objet (fallback)
     do_type = extract_do_type_from_body(body)
     fhir_type = DO_TO_FHIR_TYPE.get(do_type, "Basic")
 
-    # Extraire les contraintes
-    constraints = extract_constraints_from_body(body)
+    # Bloc fhir structuré : base + profile + differential complets
+    use_fhir_block = isinstance(fhir_block, dict)
+    if use_fhir_block:
+        fhir_type = (fhir_block.get("base", "").rstrip("/").split("/")[-1]
+                     or fhir_type)
+        # La base dérivée est le profil de référence si fourni, sinon la base
+        # native FHIR (ex. US Core Patient plutôt que Patient nu).
+        base_definition = (fhir_block.get("profile")
+                           or fhir_block.get("base")
+                           or "http://hl7.org/fhir/StructureDefinition/%s" % fhir_type)
+        differential = build_differential_from_fhir(fhir_block) or {"element": []}
+    else:
+        base_definition = "http://hl7.org/fhir/StructureDefinition/%s" % fhir_type
+        differential = {
+            "element": build_fallback_elements(fhir_type)
+        }
 
-    # Générer les éléments de base
+    sd = {
+        "resourceType": "StructureDefinition",
+        "id": "hea-%s" % do_id.lower(),
+        "url": "%s/StructureDefinition/hea-%s" % (FHIR_NS, do_id.lower()),
+        "version": version,
+        "name": "HEA%sDefinition" % do_id.replace("-", ""),
+        "title": "Définition HEA - %s" % title,
+        "status": "active",
+        "experimental": False,
+        "date": datetime.now().strftime("%Y-%m-%d"),
+        "publisher": "DEPSI - Madagascar",
+        "description": description,
+        "kind": "resource",
+        "abstract": False,
+        "type": fhir_type,
+        "baseDefinition": base_definition,
+        "derivation": "constraint",
+        "differential": differential
+    }
+
+    # Profil de référence (US Core / IPS / national) : déjà absorbé via
+    # baseDefinition ci-dessus, qui détermine la base dérivée.
+
+    # Ajouter les extensions HEA
+    sd["extension"] = [
+        {
+            "url": "https://healmadagascar.mg/fhir/StructureDefinition/hea-id",
+            "valueString": do_id
+        },
+        {
+            "url": "https://healmadagascar.mg/fhir/StructureDefinition/hea-status",
+            "valueString": obj.get("status", "draft")
+        },
+        {
+            "url": "https://healmadagascar.mg/fhir/StructureDefinition/hea-owner",
+            "valueString": obj.get("owner", "")
+        }
+    ]
+
+    return sd
+
+
+def build_fallback_elements(fhir_type):
+    """Replie l'ancienne logique de génération symbolique d'éléments."""
     elements = [
         {
             "id": "Resource.id",
@@ -295,19 +463,8 @@ def generate_structuredefinition(obj, body):
             "path": "Resource.meta",
             "type": [{"code": "BackboneElement"}]
         },
-        {
-            "id": "Resource.meta.versionId",
-            "path": "Resource.meta.versionId",
-            "type": [{"code": "id"}]
-        },
-        {
-            "id": "Resource.meta.lastUpdated",
-            "path": "Resource.meta.lastUpdated",
-            "type": [{"code": "instant"}]
-        }
     ]
 
-    # Ajouter les propriétés spécifiques au type
     if fhir_type == "Patient":
         elements.extend([
             {
@@ -366,46 +523,7 @@ def generate_structuredefinition(obj, body):
             }
         ])
 
-    # Construire le StructureDefinition
-    sd = {
-        "resourceType": "StructureDefinition",
-        "id": "hea-%s" % do_id.lower(),
-        "url": "%s/StructureDefinition/hea-%s" % (FHIR_NS, do_id.lower()),
-        "version": version,
-        "name": "HEA%sDefinition" % do_id.replace("-", ""),
-        "title": "Définition HEA - %s" % title,
-        "status": "active",
-        "experimental": False,
-        "date": datetime.now().strftime("%Y-%m-%d"),
-        "publisher": "DEPSI - Madagascar",
-        "description": description,
-        "kind": "resource",
-        "abstract": False,
-        "type": fhir_type,
-        "baseDefinition": "http://hl7.org/fhir/StructureDefinition/%s" % fhir_type,
-        "derivation": "constraint",
-        "differential": {
-            "element": elements
-        }
-    }
-
-    # Ajouter les extensions HEA
-    sd["extension"] = [
-        {
-            "url": "https://healmadagascar.mg/fhir/StructureDefinition/hea-id",
-            "valueString": do_id
-        },
-        {
-            "url": "https://healmadagascar.mg/fhir/StructureDefinition/hea-status",
-            "valueString": obj.get("status", "draft")
-        },
-        {
-            "url": "https://healmadagascar.mg/fhir/StructureDefinition/hea-owner",
-            "valueString": obj.get("owner", "")
-        }
-    ]
-
-    return sd
+    return elements
 
 
 def compile_fhir_resources(output_dir):
@@ -455,8 +573,9 @@ def compile_fhir_resources(output_dir):
                 val = val.strip().strip('"').strip("'")
                 obj[field] = val
 
-        # Générer le StructureDefinition
-        sd = generate_structuredefinition(obj, body)
+        # Générer le StructureDefinition (bloc fhir structuré si présent)
+        fhir_block = parse_fhir_block(fm)
+        sd = generate_structuredefinition(obj, body, fm=fm, fhir_block=fhir_block)
         sd_filename = "hea-%s-sd.json" % oid.lower()
         sd_path = os.path.join(output_dir, sd_filename)
         with open(sd_path, "w", encoding="utf-8") as f:

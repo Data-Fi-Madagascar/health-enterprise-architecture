@@ -19,6 +19,13 @@
 - `compile_openapi.py` — hardcoded OpenAPI 3.0.3 for 4 PTs (PT-01/03/06/07), not derived from YAML
 - `compile_all.py` — orchestrates rdf→jsonschema→fhir→openapi sequentially
 
+> **Mise à jour (unification des payloads)** : depuis la résolution de la redondance,
+> `compile_jsonschema.py` est la **source unique** des payloads des objets de données et
+> écrit directement dans `03_ptisn/schemas/payloads/` (le modèle d'implémentation
+> autoritaire). Le répertoire `dist/schemas/` n'existe plus. `compile_oda.py` ne produit
+> plus que nomenclatures + terminologies FHIR. Cette section décrit l'état antérieur à
+> cette décision.
+
 ### Bugs found
 - `fosa-status.json` has a parasite enum value: `"- \`status\` : statut du concept dans le code system (active"` — the `extract_concepts_from_body()` function captures markdown bullet lines containing `|` as table rows
 - `hea-fosa-status-cs.json` has 6 concepts instead of 5 — same bug propagated to FHIR CodeSystem

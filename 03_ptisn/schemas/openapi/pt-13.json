@@ -1,0 +1,244 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "HEA - Qualité et réconciliation (PT-13)",
+    "description": "Profil PT-13 — Qualité et réconciliation. 3 transactions.",
+    "version": "0.4",
+    "contact": {
+      "name": "DEPSI - Madagascar"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://quality.health.mg/api/v1",
+      "description": "Service national de qualité et réconciliation"
+    }
+  ],
+  "paths": {
+    "/contracts/{contractId}/validation": {
+      "post": {
+        "operationId": "validateContract",
+        "summary": "Validation d'un contrat (tests de contrôle par interface)",
+        "description": "Exécute les tests de contrôle structure, terminologie, identifiants, cardinalités, valeurs obligatoires, compatibilité de version, cohérence métier.",
+        "tags": [
+          "Qualité"
+        ],
+        "parameters": [
+          {
+            "name": "contractId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Rapport de test de contrat",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContractValidationReport"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/reconciliation": {
+      "post": {
+        "operationId": "runReconciliation",
+        "summary": "Réconciliation de données entre sources",
+        "description": "Compare sources, référentiels et projections ; documente les écarts.",
+        "tags": [
+          "Réconciliation"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Rapport de réconciliation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReconciliationReport"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/quality-indicators": {
+      "get": {
+        "operationId": "listQualityIndicators",
+        "summary": "Publication d'indicateurs de qualité",
+        "description": "Exposition des indicateurs de qualité publiés et versionnés.",
+        "tags": [
+          "Qualité"
+        ],
+        "responses": {
+          "200": {
+            "description": "Indicateurs de qualité",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/QualityIndicator"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ContractValidationReport": {
+        "type": "object",
+        "properties": {
+          "contractId": {
+            "type": "string"
+          },
+          "testResults": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "control": {
+                  "type": "string"
+                },
+                "passed": {
+                  "type": "boolean"
+                },
+                "detail": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "globalStatus": {
+            "type": "string",
+            "enum": [
+              "conforme",
+              "ecarts",
+              "invalide"
+            ]
+          }
+        }
+      },
+      "ReconciliationReport": {
+        "type": "object",
+        "properties": {
+          "pair": {
+            "type": "string",
+            "description": "Paire de sources comparées"
+          },
+          "discrepancies": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "status": {
+            "type": "string"
+          }
+        }
+      },
+      "QualityIndicator": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "value": {
+            "type": "number"
+          },
+          "period": {
+            "type": "string"
+          }
+        }
+      },
+      "Bundle": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "Bundle"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "x-hea-id": "PT-13",
+  "x-hea-title": "Qualité et réconciliation",
+  "x-hea-version": "0.4",
+  "x-hea-type": "profil-technique",
+  "x-hea-maps-to": [
+    "CAP-INT-11"
+  ],
+  "x-hea-implements": [
+    "ART-4",
+    "ART-5",
+    "ART-6"
+  ],
+  "x-hea-applies-to": [
+    "CMP-05"
+  ],
+  "x-hea-source": "referentiel/profils/pt-13.md",
+  "x-hea-fhir-resources": [
+    "ContractValidationReport",
+    "QualityIndicator",
+    "ReconciliationReport"
+  ],
+  "x-hea-data-objects": [],
+  "x-hea-file": "referentiel/profils/pt-13.md"
+}

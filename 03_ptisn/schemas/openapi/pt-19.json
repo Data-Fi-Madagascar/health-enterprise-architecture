@@ -1,0 +1,323 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "HEA - Aide à la décision clinique (CDS) (PT-19)",
+    "description": "Profil PT-19 — Aide à la décision clinique (CDS). 3 transactions.",
+    "version": "0.4",
+    "contact": {
+      "name": "DEPSI - Madagascar"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://cds.health.mg/api/v1",
+      "description": "Service national d'aide à la décision clinique"
+    }
+  ],
+  "paths": {
+    "/PlanDefinition": {
+      "post": {
+        "operationId": "pt19plandefinition_create",
+        "summary": "T1 — Publication d’artefact de connaissance",
+        "description": "T1 — Publication d’artefact de connaissance — Éditeur → Service CDS (R/O : R). Standard : FHIR Clinical Reasoning (`PlanDefinition`, `ActivityDefinition`)",
+        "tags": [
+          "PlanDefinition"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlanDefinition"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlanDefinition"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ActivityDefinition": {
+      "post": {
+        "operationId": "pt19activitydefinition_create",
+        "summary": "T1 — Publication d’artefact de connaissance",
+        "description": "T1 — Publication d’artefact de connaissance — Éditeur → Service CDS (R/O : R). Standard : FHIR Clinical Reasoning (`PlanDefinition`, `ActivityDefinition`)",
+        "tags": [
+          "ActivityDefinition"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ActivityDefinition"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ActivityDefinition"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cds-services/{hook}": {
+      "post": {
+        "operationId": "invokeCdsHook",
+        "summary": "Invocation contextuelle CDS Hooks",
+        "description": "Ancrage contextuel de la recommandation dans l'application de point de service.",
+        "tags": [
+          "CDS Hooks"
+        ],
+        "parameters": [
+          {
+            "name": "hook",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Nom du hook CDS (ex. patient-view)"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CDSHooksRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Cartes de recommandation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CDSHooksResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CDSHooksRequest": {
+        "type": "object",
+        "required": [
+          "hook",
+          "hookInstance",
+          "context"
+        ],
+        "properties": {
+          "hook": {
+            "type": "string",
+            "description": "Point d'ancrage (ex. patient-view)"
+          },
+          "hookInstance": {
+            "type": "string",
+            "description": "Instance d'invocation"
+          },
+          "fhirServer": {
+            "type": "string",
+            "description": "Base URL FHIR"
+          },
+          "context": {
+            "type": "object",
+            "description": "Contexte de la requête"
+          },
+          "prefetch": {
+            "type": "object",
+            "description": "Ressources pré-chargées"
+          }
+        }
+      },
+      "CDSHooksResponse": {
+        "type": "object",
+        "properties": {
+          "cards": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "summary": {
+                  "type": "string"
+                },
+                "detail": {
+                  "type": "string"
+                },
+                "indicator": {
+                  "type": "string",
+                  "enum": [
+                    "info",
+                    "warning",
+                    "critical"
+                  ]
+                },
+                "source": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "ActivityDefinition": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "ActivityDefinition"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "PlanDefinition": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "PlanDefinition"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Bundle": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "Bundle"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "x-hea-id": "PT-19",
+  "x-hea-title": "Aide à la décision clinique (CDS)",
+  "x-hea-version": "0.4",
+  "x-hea-type": "profil-technique",
+  "x-hea-maps-to": [
+    "CAP-INT-05"
+  ],
+  "x-hea-implements": [
+    "ART-12",
+    "ART-2"
+  ],
+  "x-hea-applies-to": [
+    "CMP-08"
+  ],
+  "x-hea-source": "referentiel/profils/pt-19.md",
+  "x-hea-fhir-resources": [
+    "ActivityDefinition",
+    "CDSHooksResponse",
+    "PlanDefinition"
+  ],
+  "x-hea-data-objects": [],
+  "x-hea-file": "referentiel/profils/pt-19.md"
+}

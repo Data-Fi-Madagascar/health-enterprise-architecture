@@ -7,17 +7,18 @@
   "properties": {
     "id": {
       "type": "string",
-      "description": "Identifiant unique de l'objet"
+      "description": "Identifiant unique de l'objet",
+      "const": "DO-10"
     },
     "version": {
       "type": "string",
       "description": "Version de l'objet",
-      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
     },
     "date": {
       "type": "string",
       "format": "date-time",
-      "description": "Date"
+      "description": "Date de l'événement"
     },
     "quantite": {
       "type": "integer",
@@ -27,6 +28,10 @@
     "lot": {
       "type": "string",
       "description": "Numéro de lot"
+    },
+    "produit": {
+      "type": "string",
+      "description": "Identifiant du produit"
     },
     "patientRef": {
       "type": "string",
@@ -53,11 +58,14 @@
     "id",
     "version"
   ],
+  "x-hea-version": "1.0.0",
   "x-hea-id": "DO-10",
   "x-hea-type": "objet-de-donnees",
-  "x-hea-version": "1.0.0",
   "x-hea-status": "draft",
   "x-hea-owner": "DEPSI",
   "x-hea-fhir-resource": "MedicationDispense",
+  "x-hea-fhir-resources": [
+    "MedicationDispense"
+  ],
   "x-hea-source-ref": "FHIR MedicationDispense"
 }

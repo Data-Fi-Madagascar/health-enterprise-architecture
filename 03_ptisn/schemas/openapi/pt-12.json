@@ -1,0 +1,227 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "HEA - Audit, provenance et traçabilité (PT-12)",
+    "description": "Profil PT-12 — Audit, provenance et traçabilité. 4 transactions.",
+    "version": "0.4",
+    "contact": {
+      "name": "DEPSI - Madagascar"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://audit.health.mg/api/v1",
+      "description": "Dépôt national d'audit et de provenance"
+    }
+  ],
+  "paths": {
+    "/AuditEvent": {
+      "post": {
+        "operationId": "pt12auditevent_create",
+        "summary": "T1 — Journalisation d’un événement de sécurité",
+        "description": "T1 — Journalisation d’un événement de sécurité — Source → Dépôt d’audit (R/O : R). Standard : IHE ATNA (ITI-20)",
+        "tags": [
+          "AuditEvent"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuditEvent"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AuditEvent"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Provenance": {
+      "post": {
+        "operationId": "pt12provenance_create",
+        "summary": "T2 — Publication de provenance",
+        "description": "T2 — Publication de provenance — Source → Dépôt de provenance (R/O : R). Standard : HL7 FHIR Provenance",
+        "tags": [
+          "Provenance"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Provenance"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Provenance"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AuditEvent": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "AuditEvent"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Provenance": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "Provenance"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Bundle": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "Bundle"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "DO31": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-31.json"
+      }
+    }
+  },
+  "x-hea-id": "PT-12",
+  "x-hea-title": "Audit, provenance et traçabilité",
+  "x-hea-version": "0.4",
+  "x-hea-type": "profil-technique",
+  "x-hea-maps-to": [
+    "CAP-INT-10"
+  ],
+  "x-hea-implements": [
+    "F-1",
+    "F-5",
+    "F-6",
+    "ART-3",
+    "ART-7"
+  ],
+  "x-hea-applies-to": [
+    "CMP-17"
+  ],
+  "x-hea-source": "referentiel/profils/pt-12.md",
+  "x-hea-fhir-resources": [
+    "AuditEvent",
+    "Provenance"
+  ],
+  "x-hea-data-objects": [
+    "DO-31"
+  ],
+  "x-hea-file": "referentiel/profils/pt-12.md"
+}

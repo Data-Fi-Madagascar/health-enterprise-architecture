@@ -7,15 +7,26 @@
   "properties": {
     "id": {
       "type": "string",
-      "description": "Identifiant unique de l'objet"
+      "description": "Identifiant unique de l'objet",
+      "const": "DO-11"
     },
     "version": {
       "type": "string",
       "description": "Version de l'objet",
-      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "produit": {
+      "type": "string",
+      "description": "Identifiant du produit"
     },
     "statut": {
       "type": "string",
+      "enum": [
+        "en_cours",
+        "confirme",
+        "infirme",
+        "cloture"
+      ],
       "description": "Statut de l'objet"
     },
     "art_2Ref": {
@@ -39,11 +50,14 @@
     "id",
     "version"
   ],
+  "x-hea-version": "1.0.0",
   "x-hea-id": "DO-11",
   "x-hea-type": "objet-de-donnees",
-  "x-hea-version": "1.0.0",
   "x-hea-status": "draft",
   "x-hea-owner": "DEPSI",
   "x-hea-fhir-resource": "Medication",
+  "x-hea-fhir-resources": [
+    "Medication"
+  ],
   "x-hea-source-ref": "Référentiel des produits de santé (CAESN), OMS ATC"
 }

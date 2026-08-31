@@ -1,0 +1,246 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "HEA - Surveillance One Health (PT-15)",
+    "description": "Profil PT-15 — Surveillance One Health. 4 transactions.",
+    "version": "0.1",
+    "contact": {
+      "name": "DEPSI - Madagascar"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://onehealth.health.mg/api/v1",
+      "description": "Moteur analytique One Health national"
+    }
+  ],
+  "paths": {
+    "/Observation": {
+      "get": {
+        "operationId": "pt15observation_search",
+        "summary": "T1 — Collecte vétérinaire",
+        "description": "T1 — Collecte vétérinaire — Instituts vétérinaires → Moteur analytique (R/O : R). Standard : OIE-WAHIS API / FHIR Observation",
+        "tags": [
+          "Observation"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Bundle"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Identifiant"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Nom / libellé"
+          }
+        ]
+      }
+    },
+    "/Communication": {
+      "get": {
+        "operationId": "pt15communication_search",
+        "summary": "T4 — Alerte One Health",
+        "description": "T4 — Alerte One Health — Moteur analytique → Centre de commande, OIE/FAO/OMS (R/O : R). Standard : FHIR Communication (priority: urgent)",
+        "tags": [
+          "Communication"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Bundle"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Identifiant"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Nom / libellé"
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Communication": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "Communication"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Observation": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "Observation"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Bundle": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "Bundle"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "DO21": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-21.json"
+      }
+    }
+  },
+  "x-hea-id": "PT-15",
+  "x-hea-title": "Surveillance One Health",
+  "x-hea-version": "0.1",
+  "x-hea-type": "profil-technique",
+  "x-hea-maps-to": [
+    "CAP-INT-14",
+    "CAP-INT-16",
+    "CAP-18",
+    "CAP-05",
+    "CMP-02",
+    "CMP-04",
+    "CMP-06"
+  ],
+  "x-hea-implements": [
+    "ART-11",
+    "ART-0",
+    "ART-4D",
+    "ART-8B"
+  ],
+  "x-hea-applies-to": [],
+  "x-hea-source": "referentiel/profils/pt-15.md",
+  "x-hea-fhir-resources": [
+    "Communication",
+    "Observation"
+  ],
+  "x-hea-data-objects": [
+    "DO-21"
+  ],
+  "x-hea-file": "referentiel/profils/pt-15.md"
+}

@@ -1,0 +1,160 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "HEA - Référentiel des structures et services de santé (PT-06)",
+    "description": "Profil PT-06 — Référentiel des structures et services de santé. 3 transactions.",
+    "version": "0.4",
+    "contact": {
+      "name": "DEPSI - Madagascar"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://fhir.health.mg/fhir",
+      "description": "Point d'accès FHIR national - structures"
+    }
+  ],
+  "paths": {
+    "/Organization": {
+      "get": {
+        "operationId": "pt06organization_search",
+        "summary": "T1 — Recherche de structures/services (mCSD)",
+        "description": "T1 — Recherche de structures/services (mCSD) — Consommateur → Registre (R/O : R). Standard : IHE mCSD (ITI-90)",
+        "tags": [
+          "Organization"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Bundle"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Identifiant"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Nom / libellé"
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Organization": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "Organization"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Bundle": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "Bundle"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "DO23": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-23.json"
+      }
+    }
+  },
+  "x-hea-id": "PT-06",
+  "x-hea-title": "Référentiel des structures et services de santé",
+  "x-hea-version": "0.4",
+  "x-hea-type": "profil-technique",
+  "x-hea-maps-to": [
+    "CAP-INT-04"
+  ],
+  "x-hea-implements": [
+    "ART-4",
+    "ART-5",
+    "ART-6"
+  ],
+  "x-hea-applies-to": [
+    "CMP-08"
+  ],
+  "x-hea-source": "referentiel/profils/pt-06.md",
+  "x-hea-fhir-resources": [
+    "Organization"
+  ],
+  "x-hea-data-objects": [
+    "DO-23"
+  ],
+  "x-hea-file": "referentiel/profils/pt-06.md"
+}

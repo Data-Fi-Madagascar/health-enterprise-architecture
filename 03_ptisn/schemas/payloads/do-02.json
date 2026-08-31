@@ -3,16 +3,17 @@
   "$id": "https://healmadagascar.mg/schemas/payloads/do-02.json",
   "title": "DO-02 — DO-02 : Identifiant national d'identification",
   "description": "Code alphanumérique unique attribué à chaque patient dans le référentiel national des bénéficiaires. Il garantit l'unicité de l'identité patient à travers tous les systèmes et toutes les initiatives.",
-  "type": "string",
+  "type": "object",
   "properties": {
     "id": {
       "type": "string",
-      "description": "Identifiant unique de l'objet"
+      "description": "Identifiant unique de l'objet",
+      "const": "DO-02"
     },
     "version": {
       "type": "string",
       "description": "Version de l'objet",
-      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
     },
     "art_2Ref": {
       "type": "string",
@@ -35,11 +36,14 @@
     "id",
     "version"
   ],
+  "x-hea-version": "1.0.0",
   "x-hea-id": "DO-02",
   "x-hea-type": "objet-de-donnees",
-  "x-hea-version": "1.0.0",
   "x-hea-status": "draft",
   "x-hea-owner": "DEPSI",
-  "x-hea-fhir-resource": "",
+  "x-hea-fhir-resource": "Identifier",
+  "x-hea-fhir-resources": [
+    "Identifier"
+  ],
   "x-hea-source-ref": "Référentiel des bénéficiaires / patients"
 }

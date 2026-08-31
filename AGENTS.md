@@ -17,6 +17,28 @@ Tout dossier structurel du dépôt reçoit un **préfixe numérique de tri** sur
 | 3 | `02_artsn/` | Architecture de Référence Technique de la Santé Numérique (ARTSN) |
 | 4 | `03_ptisn/` | Profils techniques d'implémentation par initiative (PTISN) |
 
+## Fondations : la trilogie HEAL, HEAF, HEART
+
+Le cadre repose sur trois référentiels méthodologiques de l'OMS/WHO Digital Health, qui forment le socle théorique de l'architecture de santé numérique malagasy :
+
+- **HEAL** (Health Enterprise Architecture Laboratory) : laboratoire de recherche établi au sein de la School of Computer Science de l'Université de KwaZulu-Natal (UKZN, Durban, Afrique du Sud), co-financé par la Fondation Rockefeller et le CRDI. Hébergé au CAIR (Centre for Artificial Intelligence Research), il mène une recherche appliquée sur les architectures de santé ouvertes pour pays à ressources limitées, en cycle bidirectionnel recherche ↔ implémentation de terrain (Jembi Health Systems, Rwanda, Mozambique, Afrique du Sud). Il forme des architectes de santé (MSc/PhD) pour la souveraineté technologique.
+- **HEAF** (Health Enterprise Architecture Framework) : méthodologie de modélisation développée par le HEAL pour structurer les Systèmes d'Information Sanitaires nationaux (NHIS) en contextes à ressources limitées. Il simplifie une synthèse du GCM (Generic Component Model), de Zachman, du FEAF, de TOGAF, du suivi OMS/HMN et de HIS-DF. Caractéristiques clés : légèreté/modularité (implémentation verticale puis intégration nationale), modes de fonctionnement hybrides (connectivité intermittente, processus papier/numérique), et approche pilotée par les ontologies (Ontology-Driven).
+- **HEART** (Health Enterprise Architecture Repository of Tools) : dépôt/catalogue d'artefacts d'architecture réutilisables pour matérialiser les principes du HEAF : outils logiciels « biens publics mondiaux » (OpenMRS, DHIS2), patrons d'architecture, standards/profils d'échange (HL7 FHIR, IHE mCSD, IHE SVCM, IHE mADX, SDMX-HD), et politiques/règles. Son cœur technique est l'architecture pilotée par les ontologies (ODIS) : reconfiguration à l'exécution de l'interopérabilité en manipulant les structures ontologiques sans réécrire le code.
+
+### Correspondance avec la hiérarchie du dépôt
+
+| Référentiel WHO | Rôle | Traduction dans ce dépôt |
+|-----------------|------|--------------------------|
+| HEAL | Recherche et renforcement des capacités | Collaboration continue universités / DEPSI / partenaires techniques |
+| HEAF | Framework et hiérarchie documentaire | Structure CAESN/CNISN/ARTSN, déclinaison des valeurs nationales en capabilités (Architecture Runway CAP-13..16) |
+| HEART | Dépôt d'artefacts réutilisables | Registre des profils techniques (PTISN) + compilateurs de métadonnées sémantiques (compile_rdf.py, yaml_to_fhir.py) |
+
+### Implication pour la rédaction
+
+- L'approche « Ontology-Driven » du HEAF se traduit par les artefacts `ontologie/hea.ttl` (ontologie OWL), `ontologie/hea-shapes.ttl` (shapes SHACL) et le pipeline graphify (`dist/hea-enriched.ttl`).
+- L'esprit ODIS du HEART se matérialise via la génération automatique des règles de validation et des terminologies de production depuis la source unique de vérité GitHub.
+- Tout nouveau document doit s'ancrer explicitement dans cette trilogie : le HEAL justifie la démarche collaborative, le HEAF impose la structure par couches/valeurs, le HEART impose la réutilisation d'artefacts et la génération de métadonnées.
+
 ## Sous-dossiers numérotés de `00_caesn/`
 
 | Dossier | Contenu |

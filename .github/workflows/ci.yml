@@ -67,8 +67,6 @@ jobs:
         with:
           name: hea-oda
           path: |
-            dist/schemas/
             dist/fhir/
-            dist/openapi/
             03_ptisn/schemas/
           retention-days: 30

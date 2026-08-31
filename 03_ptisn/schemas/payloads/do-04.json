@@ -7,17 +7,18 @@
   "properties": {
     "id": {
       "type": "string",
-      "description": "Identifiant unique de l'objet"
+      "description": "Identifiant unique de l'objet",
+      "const": "DO-04"
     },
     "version": {
       "type": "string",
       "description": "Version de l'objet",
-      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
     },
     "date": {
       "type": "string",
       "format": "date-time",
-      "description": "Date"
+      "description": "Date de l'événement"
     },
     "patientRef": {
       "type": "string",
@@ -44,11 +45,14 @@
     "id",
     "version"
   ],
+  "x-hea-version": "1.0.0",
   "x-hea-id": "DO-04",
   "x-hea-type": "objet-de-donnees",
-  "x-hea-version": "1.0.0",
   "x-hea-status": "draft",
   "x-hea-owner": "DEPSI",
   "x-hea-fhir-resource": "Encounter",
+  "x-hea-fhir-resources": [
+    "Encounter"
+  ],
   "x-hea-source-ref": "FHIR Encounter"
 }

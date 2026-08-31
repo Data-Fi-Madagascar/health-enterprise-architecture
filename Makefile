@@ -84,9 +84,9 @@ sync:
 validate:
 	$(PY) scripts/validate_ref.py
 
-# Compilation JSON Schema : transforme les objets de données en schémas JSON vDraft-07
+# Compilation JSON Schema : source unique des payloads des objets de données (DO → 03_ptisn/schemas/payloads/)
 jsonschema:
-	@echo "==> Compilation JSON Schema (DO → JSON Schema vDraft-07)"
+	@echo "==> Compilation JSON Schema (DO → payloads dans 03_ptisn/schemas/payloads/)"
 	$(PY) scripts/compilers/compile_jsonschema.py --validate
 
 # Compilation FHIR R4 : génère CodeSystem, ValueSet et StructureDefinition
@@ -99,7 +99,8 @@ openapi:
 	@echo "==> Compilation OpenAPI 3.0 (PT → OpenAPI specs)"
 	$(PY) scripts/compilers/compile_openapi.py --validate
 
-# Compilation ODA complète : tous les compilateurs en séquence puis sync Graphify
+# Compilation ODA complète : nomenclatures (payload + CodeSystem FHIR) puis sync Graphify.
+# Les payloads des objets de données sont produits par la dépendance `jsonschema`.
 oda: rdf jsonschema fhir openapi sync
 	@echo "==> Compilation ODA complète terminée"
 

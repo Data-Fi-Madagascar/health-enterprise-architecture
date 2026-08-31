@@ -1,0 +1,140 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "HEA - Médiation intra-secteur (PT-02)",
+    "description": "Profil PT-02 — Médiation intra-secteur. 4 transactions.",
+    "version": "0.4",
+    "contact": {
+      "name": "DEPSI - Madagascar"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://mediation.health.mg/api/v1",
+      "description": "Point d'accès du médiateur sectoriel"
+    }
+  ],
+  "paths": {
+    "/route": {
+      "post": {
+        "operationId": "routeRequest",
+        "summary": "Soumission de requête/événement au médiateur",
+        "description": "Routage et transformation sémantique vers le service métier cible.",
+        "tags": [
+          "Médiation"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MediationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Résultat du routage",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoutingResult"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Erreur de médiation"
+          }
+        }
+      }
+    },
+    "/observability": {
+      "get": {
+        "operationId": "mediationObservability",
+        "summary": "Journalisation et observabilité de la médiation",
+        "description": "Consultation des journaux et métriques du médiateur.",
+        "tags": [
+          "Médiation"
+        ],
+        "responses": {
+          "200": {
+            "description": "Journaux et métriques"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "MediationRequest": {
+        "type": "object",
+        "required": [
+          "transactionId",
+          "payload"
+        ],
+        "properties": {
+          "transactionId": {
+            "type": "string",
+            "description": "Identifiant de corrélation"
+          },
+          "source": {
+            "type": "string",
+            "description": "Métadonnées de source"
+          },
+          "purposeOfUse": {
+            "type": "string",
+            "description": "Finalité d'accès"
+          },
+          "payload": {
+            "type": "object",
+            "description": "Charge utile FHIR R4 ou message asynchrone"
+          }
+        }
+      },
+      "RoutingResult": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "routed",
+              "transformed",
+              "error"
+            ]
+          },
+          "targetService": {
+            "type": "string"
+          },
+          "correlationId": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "x-hea-id": "PT-02",
+  "x-hea-title": "Médiation intra-secteur",
+  "x-hea-version": "0.4",
+  "x-hea-type": "profil-technique",
+  "x-hea-maps-to": [
+    "CAP-INT-03"
+  ],
+  "x-hea-implements": [
+    "ART-1",
+    "ART-2",
+    "ART-5",
+    "ART-7",
+    "ART-8",
+    "ART-8C",
+    "ART-8D"
+  ],
+  "x-hea-applies-to": [
+    "CMP-06"
+  ],
+  "x-hea-source": "referentiel/profils/pt-02.md",
+  "x-hea-fhir-resources": [],
+  "x-hea-data-objects": [],
+  "x-hea-file": "referentiel/profils/pt-02.md"
+}

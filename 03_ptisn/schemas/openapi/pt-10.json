@@ -1,0 +1,179 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "HEA - Confiance, authentification et autorisation (PT-10)",
+    "description": "Profil PT-10 — Confiance, authentification et autorisation. 3 transactions.",
+    "version": "0.4",
+    "contact": {
+      "name": "DEPSI - Madagascar"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://auth.health.mg/api/v1",
+      "description": "Service national de confiance et autorisation"
+    }
+  ],
+  "paths": {
+    "/token": {
+      "post": {
+        "operationId": "pt10token_authorize",
+        "summary": "T1 — Autorisation d’accès (token)",
+        "description": "T1 — Autorisation d’accès (token) (IHE IUA (ITI-72) ou OAuth 2.0 / OIDC)",
+        "tags": [
+          "Auth"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Token"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        }
+      }
+    },
+    "/AuditEvent": {
+      "post": {
+        "operationId": "pt10auditevent_create",
+        "summary": "T2 — Audit de sécurité (événement)",
+        "description": "T2 — Audit de sécurité (événement) — Nœud → Dépôt d’audit (R/O : R). Standard : IHE ATNA (ITI-20)",
+        "tags": [
+          "AuditEvent"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuditEvent"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AuditEvent"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AuditEvent": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "AuditEvent"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Bundle": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "Bundle"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "x-hea-id": "PT-10",
+  "x-hea-title": "Confiance, authentification et autorisation",
+  "x-hea-version": "0.4",
+  "x-hea-type": "profil-technique",
+  "x-hea-maps-to": [
+    "CAP-INT-08"
+  ],
+  "x-hea-implements": [
+    "ART-0",
+    "ART-4B",
+    "ART-7",
+    "ART-9"
+  ],
+  "x-hea-applies-to": [
+    "CMP-15"
+  ],
+  "x-hea-source": "referentiel/profils/pt-10.md",
+  "x-hea-fhir-resources": [
+    "AuditEvent"
+  ],
+  "x-hea-data-objects": [],
+  "x-hea-file": "referentiel/profils/pt-10.md"
+}

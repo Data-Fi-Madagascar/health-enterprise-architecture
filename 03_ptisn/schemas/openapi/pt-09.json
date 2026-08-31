@@ -1,0 +1,239 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "HEA - Analytique et exposition de données (PT-09)",
+    "description": "Profil PT-09 — Analytique et exposition de données. 3 transactions.",
+    "version": "0.4",
+    "contact": {
+      "name": "DEPSI - Madagascar"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://analytics.health.mg/api/v1",
+      "description": "Entrepôt analytique national"
+    }
+  ],
+  "paths": {
+    "/MeasureReport": {
+      "post": {
+        "operationId": "pt09measurereport_create",
+        "summary": "T2 — Réception de données agrégées",
+        "description": "T2 — Réception de données agrégées — Producteur → Entrepôt (R/O : R). Standard : mADX (voir PT-08)",
+        "tags": [
+          "MeasureReport"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MeasureReport"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MeasureReport"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/indicators": {
+      "post": {
+        "operationId": "queryIndicators",
+        "summary": "Consultation d'indicateurs (API REST)",
+        "description": "Interrogation des indicateurs agrégés paramétrée par structure, terminologie, programme, période.",
+        "tags": [
+          "Analytique"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IndicatorQuery"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Indicateurs agrégés",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/IndicatorResult"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/datasets": {
+      "get": {
+        "operationId": "listDatasets",
+        "summary": "Publication de jeu de données autorisé",
+        "description": "Exposition d'un jeu de données ouvert, documenté et versionné.",
+        "tags": [
+          "Analytique"
+        ],
+        "responses": {
+          "200": {
+            "description": "Jeu de données"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "IndicatorQuery": {
+        "type": "object",
+        "properties": {
+          "measure": {
+            "type": "string"
+          },
+          "period": {
+            "type": "string"
+          },
+          "organization": {
+            "type": "string"
+          },
+          "program": {
+            "type": "string"
+          }
+        }
+      },
+      "IndicatorResult": {
+        "type": "object",
+        "properties": {
+          "measure": {
+            "type": "string"
+          },
+          "period": {
+            "type": "string"
+          },
+          "value": {
+            "type": "number"
+          },
+          "dimensions": {
+            "type": "object"
+          }
+        }
+      },
+      "MeasureReport": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "MeasureReport"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Bundle": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "Bundle"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "DO28": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-28.json"
+      }
+    }
+  },
+  "x-hea-id": "PT-09",
+  "x-hea-title": "Analytique et exposition de données",
+  "x-hea-version": "0.4",
+  "x-hea-type": "profil-technique",
+  "x-hea-maps-to": [
+    "CAP-INT-07"
+  ],
+  "x-hea-implements": [
+    "ART-3",
+    "ART-5",
+    "ART-6",
+    "ART-7"
+  ],
+  "x-hea-applies-to": [
+    "CMP-03",
+    "CMP-04"
+  ],
+  "x-hea-source": "referentiel/profils/pt-09.md",
+  "x-hea-fhir-resources": [
+    "IndicatorResult",
+    "MeasureReport"
+  ],
+  "x-hea-data-objects": [
+    "DO-28"
+  ],
+  "x-hea-file": "referentiel/profils/pt-09.md"
+}

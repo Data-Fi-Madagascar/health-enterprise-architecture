@@ -1,0 +1,227 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "HEA - Résolution d’identité du bénéficiaire (PT-04)",
+    "description": "Profil PT-04 — Résolution d’identité du bénéficiaire. 4 transactions.",
+    "version": "0.4",
+    "contact": {
+      "name": "DEPSI - Madagascar"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://fhir.health.mg/fhir",
+      "description": "Point d'accès FHIR national - identité"
+    }
+  ],
+  "paths": {
+    "/Patient/$ihe-pix": {
+      "get": {
+        "operationId": "pt04patient_resolve",
+        "summary": "T1 — Résolution d’identifiants (PIXm)",
+        "description": "T1 — Résolution d’identifiants (PIXm) (IHE PIXm (ITI-83))",
+        "tags": [
+          "Patient"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Patient"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        }
+      }
+    },
+    "/Patient": {
+      "get": {
+        "operationId": "pt04patient_search",
+        "summary": "T3 — Recherche démographique (PDQm)",
+        "description": "T3 — Recherche démographique (PDQm) — Consommateur → Fournisseur (R/O : R). Standard : IHE PDQm (ITI-78)",
+        "tags": [
+          "Patient"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Bundle"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Identifiant"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Nom / libellé"
+          }
+        ]
+      }
+    },
+    "/token": {
+      "post": {
+        "operationId": "pt04token_authorize",
+        "summary": "T4 — Autorisation d’accès",
+        "description": "T4 — Autorisation d’accès (IHE IUA)",
+        "tags": [
+          "Auth"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Token"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Patient": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "Patient"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Bundle": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "Bundle"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "DO01": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-01.json"
+      },
+      "DO03": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-03.json"
+      }
+    }
+  },
+  "x-hea-id": "PT-04",
+  "x-hea-title": "Résolution d’identité du bénéficiaire",
+  "x-hea-version": "0.4",
+  "x-hea-type": "profil-technique",
+  "x-hea-maps-to": [
+    "CAP-INT-01"
+  ],
+  "x-hea-implements": [
+    "ART-4",
+    "ART-4A",
+    "ART-4B",
+    "ART-7"
+  ],
+  "x-hea-applies-to": [
+    "CMP-11"
+  ],
+  "x-hea-source": "referentiel/profils/pt-04.md",
+  "x-hea-fhir-resources": [
+    "Patient"
+  ],
+  "x-hea-data-objects": [
+    "DO-01",
+    "DO-03"
+  ],
+  "x-hea-file": "referentiel/profils/pt-04.md"
+}

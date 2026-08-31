@@ -2,11 +2,15 @@
 # -*- coding: utf-8 -*-
 """Compile les objets de données HEA en JSON Schema vDraft-07.
 
-Ce script transforme les métadonnées YAML des objets de données (DO-01..31)
-en schémas JSON conformes au Draft-07 du standard JSON Schema.
+Source unique des payloads de données : les schémas des objets de données
+(DO-01..31) sont générés directement dans 03_ptisn/schemas/payloads/,
+le modèle d'implémentation autoritaire référencé par les profils PTISN.
+
+L'autre générateur historique (compile_oda.py) ne produit plus les payloads
+DO, mais uniquement nomenclatures et terminologies FHIR.
 
 Usage :
-    python3 scripts/compilers/compile_jsonschema.py              # génère dist/schemas/
+    python3 scripts/compilers/compile_jsonschema.py              # génère 03_ptisn/schemas/payloads/
     python3 scripts/compilers/compile_jsonschema.py --validate   # valide les schémas
     python3 scripts/compilers/compile_jsonschema.py --output /tmp/...  # répertoire custom
 """
@@ -18,17 +22,23 @@ import os
 import re
 import sys
 
+try:
+    import yaml
+except ImportError:
+    yaml = None
+
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-HEA_NS = "https://healmadagascar.mg/ontologie/hea#"
+HEA_NS = "https://healmadagascar.mg"
+SCHEMAS_NS = "%s/schemas" % HEA_NS
 JSON_SCHEMA_DRAFT = "http://json-schema.org/draft-07/schema#"
 
-# Mapping des types DO → propriétés JSON Schema
+# Mapping des types DO → propriétés JSON Schema (dont ressource FHIR)
 DO_TYPE_MAP = {
     "patient": {"type": "object", "fhir_resource": "Patient"},
-    "identifiant": {"type": "string", "pattern": "^[0-9]{12}$"},
+    "identifiant": {"type": "string"},
     "dossier": {"type": "object", "fhir_resource": "Patient"},
-    "evenement": {"type": "object"},
-    "produit": {"type": "object", "fhir_resource": "Medication"},
+    "evenement": {"type": "object", "fhir_resource": "Encounter"},
+    "encounter": {"type": "object", "fhir_resource": "Encounter"},
     "observation": {"type": "object", "fhir_resource": "Observation"},
     "acte": {"type": "object", "fhir_resource": "Procedure"},
     "organisation": {"type": "object", "fhir_resource": "Organization"},
@@ -36,9 +46,9 @@ DO_TYPE_MAP = {
     "praticien": {"type": "object", "fhir_resource": "Practitioner"},
     "prescription": {"type": "object", "fhir_resource": "MedicationRequest"},
     "dispensation": {"type": "object", "fhir_resource": "MedicationDispense"},
+    "produit": {"type": "object", "fhir_resource": "Medication"},
     "laboratoire": {"type": "object", "fhir_resource": "Organization"},
-    "signal": {"type": "object"},
-    "investigation": {"type": "object"},
+    "signal": {"type": "object", "fhir_resource": "Flag"},
     "alerte": {"type": "object", "fhir_resource": "Flag"},
     "stock": {"type": "object"},
     "commande": {"type": "object", "fhir_resource": "MedicationRequest"},
@@ -181,7 +191,107 @@ def generate_properties_from_constraints(constraints, do_id):
     return properties
 
 
-def compile_do(obj, body, output_dir):
+def parse_fhir_block(fm):
+    """Parse le bloc `fhir:` du frontmatter YAML si présent."""
+    if yaml is None:
+        return None
+    try:
+        data = yaml.safe_load(fm)
+    except Exception:
+        return None
+    if not isinstance(data, dict):
+        return None
+    fhir = data.get("fhir")
+    return fhir if isinstance(fhir, dict) else None
+
+
+def parse_fhir_schema(structured):
+    """Génère un JSON Schema réaliste à partir d'un bloc fhir structuré.
+
+    Traduit les chemins FHIR (Patient.*) en propriétés JSON typées et en
+    règles required/minItems, pour produire un schéma de données exploitable
+    plutôt qu'un schéma symbolique.
+    """
+    properties = {}
+    required = ["id"]
+
+    # Correspondance chemin FHIR -> JSON Schema simple
+    def path_prop(path):
+        # Ex. "Patient.identifier" -> "identifier"
+        return path.split(":")[-1].split(".")[-1]
+
+    def json_type_for(path):
+        p = (path or "").lower()
+        if "date" in p and "birth" in p:
+            return "string", {"format": "date"}
+        if "gender" in p:
+            return "string", {"enum": ["male", "female", "other", "unknown"]}
+        if "identifier" in p:
+            return "array", {
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "system": {"type": "string"},
+                        "value": {"type": "string"}
+                    },
+                    "required": ["system", "value"]
+                }
+            }
+        if "name" in p:
+            return "array", {
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "use": {"type": "string",
+                                "enum": ["official", "usual", "nickname"]},
+                        "family": {"type": "string"},
+                        "given": {"type": "array", "items": {"type": "string"}}
+                    }
+                }
+            }
+        if "address" in p:
+            return "array", {
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "line": {"type": "array", "items": {"type": "string"}},
+                        "city": {"type": "string"},
+                        "postalCode": {"type": "string"}
+                    }
+                }
+            }
+        if "meta" in p:
+            return "object", {
+                "properties": {
+                    "security": {"type": "array", "items": {"type": "string"}}
+                }
+            }
+        return "string", {"description": p}
+
+    for el in (structured.get("elements") or []):
+        path = el.get("path", "")
+        if path == "Resource.id":
+            continue
+        prop = path_prop(path)
+        jtype, extra = json_type_for(path)
+        definition = {"type": jtype}
+        definition.update(extra)
+        if el.get("comment"):
+            definition["description"] = el["comment"]
+        properties[prop] = definition
+        if el.get("min", 0) >= 1:
+            required.append(prop)
+
+    # Identifiants (NIN requis)
+    for ident in (structured.get("identifiers") or []):
+        if ident.get("min", 0) >= 1:
+            if "identifier" not in required:
+                required.append("identifier")
+
+    return properties, list(dict.fromkeys(required))
+
+
+def compile_do(obj, body, output_dir, fhir_block=None):
     """Compile un objet de données en JSON Schema."""
     do_id = obj["id"]
     title = obj.get("title", do_id)
@@ -204,37 +314,49 @@ def compile_do(obj, body, output_dir):
     do_type = extract_do_type_from_body(body)
     type_info = DO_TYPE_MAP.get(do_type, {"type": "object"})
 
+    # Ressources FHIR déclarées à la source (fhir_resources en frontmatter) ;
+    # servent de pont profil → payload DO dans le générateur OpenAPI.
+    fhir_resources = list_value(fm_field(obj.get("_raw_fm", ""), "fhir_resources") or "")
+
     # Extraire les contraintes
     constraints = extract_constraints_from_body(body)
     source_ref = extract_source_ref_from_body(body)
 
-    # Générer les propriétés
-    properties = generate_properties_from_constraints(constraints, do_id)
+    # Générer les propriétés : bloc fhir structuré si présent, sinon symbolique
+    use_fhir_block = isinstance(fhir_block, dict)
+    if use_fhir_block:
+        properties, required_list = parse_fhir_schema(fhir_block)
+    else:
+        properties = generate_properties_from_constraints(constraints, do_id)
+        required_list = ["id", "version"]
 
-    # Ajouter lespropriétés relationnelles
+    # Ajouter les propriétés relationnelles (hors bloc fhir structuré)
     related = list_value(fm_field(obj.get("_raw_fm", ""), "related") or "")
     for rel_id in related:
         prop_name = rel_id.lower().replace("-", "_") + "Ref"
-        properties[prop_name] = {
-            "type": "string",
-            "description": "Référence à %s" % rel_id
-        }
+        if prop_name not in properties:
+            properties[prop_name] = {
+                "type": "string",
+                "description": "Référence à %s" % rel_id
+            }
 
     # Construire le schéma
     schema = {
         "$schema": JSON_SCHEMA_DRAFT,
-        "$id": "%s/schemas/%s.json" % (HEA_NS, do_id.lower()),
-        "title": title,
+        "$id": "%s/payloads/%s.json" % (SCHEMAS_NS, do_id.lower()),
+        "title": "%s — %s" % (do_id, title),
         "description": description,
         "type": "object",
         "properties": properties,
-        "required": ["id", "version"],
-        "version": version,
+        "required": required_list,
+        "x-hea-version": version,
         "x-hea-id": do_id,
         "x-hea-type": "objet-de-donnees",
         "x-hea-status": obj.get("status", "draft"),
         "x-hea-owner": obj.get("owner", ""),
-        "x-hea-tags": obj.get("tags", [])
+        "x-hea-fhir-resource": (fhir_resources[0] if fhir_resources
+                                else type_info.get("fhir_resource", "")),
+        "x-hea-fhir-resources": fhir_resources,
     }
 
     if source_ref:
@@ -289,7 +411,7 @@ def collect_do_objects():
         if tags_val is not None:
             obj["tags"] = list_value(tags_val)
 
-        objects.append((obj, body))
+        objects.append((obj, body, parse_fhir_block(fm)))
 
     return objects
 
@@ -323,12 +445,12 @@ def main():
     parser = argparse.ArgumentParser(
         description="Compile les objets de données HEA en JSON Schema vDraft-07")
     parser.add_argument("--output", "-o", default=None,
-                        help="Répertoire de sortie (défaut: dist/schemas/)")
+                        help="Répertoire de sortie (défaut: 03_ptisn/schemas/payloads/)")
     parser.add_argument("--validate", action="store_true",
                         help="Valider les schémas après compilation")
     args = parser.parse_args()
 
-    output_dir = args.output or os.path.join(REPO_ROOT, "dist", "schemas")
+    output_dir = args.output or os.path.join(REPO_ROOT, "03_ptisn", "schemas", "payloads")
     os.makedirs(output_dir, exist_ok=True)
 
     # Collecter les objets
@@ -339,8 +461,8 @@ def main():
 
     # Compiler chaque objet
     compiled = []
-    for obj, body in objects:
-        filepath = compile_do(obj, body, output_dir)
+    for obj, body, fhir_block in objects:
+        filepath = compile_do(obj, body, output_dir, fhir_block=fhir_block)
         compiled.append(filepath)
 
     print("=== Compilation JSON Schema ===")
