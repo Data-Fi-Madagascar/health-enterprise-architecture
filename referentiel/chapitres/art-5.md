@@ -27,3 +27,15 @@ tags: ["artsn", "niveau-3", "chapitre", "ART-5"]
 - **Circuits cibles** : sécurité clinique, alerte épidémiologique, fraude financière, risque intersectoriel.
 - **Déduit selon** : [ENF-5: Coordination des processus complexes décentralisés et asynchrones](../exigences/enf-5.md) (coordination des processus).
 - **Statut : Stable.** (pour les métriques) / **Statut : Proposition ouverte.** (pour la gouvernance des 4 branches).
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-02 : Médiation intra-secteur](../profils/pt-02.md)
+- [PT-06 : Référentiel des structures et services de santé](../profils/pt-06.md)
+- [PT-07 : Terminologie et codification](../profils/pt-07.md)
+- [PT-08 : Échange de données agrégées](../profils/pt-08.md)
+- [PT-09 : Analytique et exposition de données](../profils/pt-09.md)
+- [PT-13 : Qualité et réconciliation](../profils/pt-13.md)
+

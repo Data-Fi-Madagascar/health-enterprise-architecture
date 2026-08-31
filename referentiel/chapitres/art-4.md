@@ -34,3 +34,14 @@ Ce chapitre se décline en quatre sous-chapitres :
 - [ART-4B: Bases d’autorisation](art-4b.md)
 - [ART-4C: Éligibilité et couverture](art-4c.md)
 - [ART-4D: Référentiel géospatial et d’exploitation partagé](art-4d.md)
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-04 : Résolution d’identité du bénéficiaire](../profils/pt-04.md)
+- [PT-05 : Registre des professionnels](../profils/pt-05.md)
+- [PT-06 : Référentiel des structures et services de santé](../profils/pt-06.md)
+- [PT-07 : Terminologie et codification](../profils/pt-07.md)
+- [PT-13 : Qualité et réconciliation](../profils/pt-13.md)
+

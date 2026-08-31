@@ -30,7 +30,7 @@ Le tableau suivant établit, pour chaque capacité d'interopérabilité définie
 | CAP-INT-09 | PT-11 |
 | CAP-INT-10 | PT-12 |
 | CAP-INT-11 | PT-13 |
-| CAP-INT-12 | : |
+| CAP-INT-12 | (à instruire — aucun profil de gestion des risques inter-sectoriels explicite) |
 | CAP-INT-13 | PT-14 |
 | CAP-INT-14 | PT-15 |
 | CAP-INT-15 | PT-17 |
@@ -46,7 +46,7 @@ Le tableau ci-dessous associe chaque chapitre de l'Architecture de Référence T
 |---|---|
 | ART-0 | PT-01, PT-10, PT-11, PT-14, PT-15 |
 | ART-1 | PT-01, PT-02, PT-03, PT-08, PT-14 |
-| ART-2 | PT-02, PT-03, PT-07, PT-08 |
+| ART-2 | PT-02, PT-03, PT-07, PT-08, PT-18, PT-19 |
 | ART-3 | PT-09, PT-12 |
 | ART-4 | PT-04, PT-05, PT-06, PT-07, PT-13, PT-15 |
 | ART-4A | PT-04, PT-05 |
@@ -61,9 +61,10 @@ Le tableau ci-dessous associe chaque chapitre de l'Architecture de Référence T
 | ART-8B | PT-15 |
 | ART-8C | PT-02 |
 | ART-8D | PT-02 |
-| ART-9 | PT-10 |
+| ART-9 | PT-10, PT-18 |
 | ART-10 | PT-17 |
 | ART-11 | PT-01, PT-11, PT-15 |
+| ART-12 | PT-19 |
 
 Le chapitre ART-10 est associé au profil PT-17 (Logistique & chaîne d'approvisionnement). Les chapitres ART-5 et ART-7 concentrent le plus grand nombre de profils, ce qui confirme leur rôle transversal dans la couche de médiation et la sécurité des données.
 
@@ -96,7 +97,7 @@ Cette section ferme la boucle de traçabilité en reliant chaque lot — défini
 | L1 — Infrastructure & sécurité | PT-04 (via CAP-INT-01) | ART-4, ART-4A, ART-4B, ART-7 | STD-0002, STD-0007, ADR-0008, ADR-0010 |
 | L2 — Applications terrain | PT-01, PT-02 (applications & échange) | ART-0, ART-1, ART-2, ART-7, ART-11 | STD-0001, STD-0006, ADR-0003 |
 | L3 — Médiation & registres | PT-01, PT-02, PT-03, PT-04, PT-05, PT-06, PT-07, PT-08, PT-16 | ART-1, ART-2, ART-4, ART-4A, ART-4B, ART-4C, ART-5, ART-6, ART-7, ART-8, ART-8C, ART-8D | STD-0003, STD-0005, STD-0004, ADR-0001, ADR-0004, ADR-0006 |
-| L4 — Analytique & pilotage | PT-06, PT-08, PT-09, PT-13 (via ART-6) | ART-3, ART-5, ART-6, ART-7 | STD-0001, ADR-0008, ADR-0003 |
+| L4 — Analytique & pilotage | PT-06, PT-08, PT-09, PT-13, PT-18, PT-19 (via ART-3, ART-6, ART-9, ART-12) | ART-3, ART-5, ART-6, ART-7, ART-9, ART-12 | STD-0001, STD-0008, ADR-0008, ADR-0003 |
 | L5 — Extension & pérennisation | PT-10, PT-14, PT-15 (explicites WP-05) | ART-0, ART-4B, ART-7, ART-9, ART-11 | ADR-0005 |
 | L6 — Interopérabilité transfrontalière | PT-10, PT-14 (explicites WP-06) | ART-0, ART-1, ART-7, ART-9 | GDHCN, ADR-0007 |
 | L7 — Coordination One Health | PT-15 (explicite WP-07) | ART-0, ART-4D, ART-8B, ART-11 | ADR-0001, ADR-0007 |

@@ -26,3 +26,10 @@ tags: ["artsn", "niveau-3", "chapitre", "ART-8D"]
 - **Pattern cible** : Publication / Abonnement (Pub/Sub).
 - **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../exigences/enf-4.md) (souveraineté intersectorielle).
 - **Statut : Proposition ouverte.**
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-02 : Médiation intra-secteur](../profils/pt-02.md)
+

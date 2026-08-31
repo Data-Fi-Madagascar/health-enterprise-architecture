@@ -27,3 +27,15 @@ tags: ["artsn", "niveau-3", "chapitre", "ART-2"]
 - **Objets de données** : [BO-01 Patient & identité](../../00_caesn/04_data/objets.md), [BO-02 Prestation & soins](../../00_caesn/04_data/objets.md), [BO-03 Dispensation & produits](../../00_caesn/04_data/objets.md), [BO-04 Financement & couverture](../../00_caesn/04_data/objets.md), [BO-05 Risque & surveillance](../../00_caesn/04_data/objets.md), [BO-06 Exploitation & gestion](../../00_caesn/04_data/objets.md), [BO-07 Interopérabilité transfrontalière](../../00_caesn/04_data/objets.md) (objets métier CAESN) ; voir aussi le [dictionnaire des objets de données ARTSN](../../02_artsn/03_objets-de-donnees/index.md).
 - **Déduit selon** : [ENF-3: Unicité de l'identité et résilience face à la fragmentation applicative](../exigences/enf-3.md) (fragmentation applicative) et [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../exigences/enf-4.md) (One Health).
 - **Statut : Stable.**
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-02 : Médiation intra-secteur](../profils/pt-02.md)
+- [PT-03 : Catalogue des services et registre des contrats](../profils/pt-03.md)
+- [PT-07 : Terminologie et codification](../profils/pt-07.md)
+- [PT-08 : Échange de données agrégées](../profils/pt-08.md)
+- [PT-18 : Échange de réclamations et paiements](../profils/pt-18.md)
+- [PT-19 : Aide à la décision clinique (CDS)](../profils/pt-19.md)
+

@@ -48,6 +48,13 @@ ART-3 : Historisation événementielle et profils de déploiement constitue un c
 - **Déduit selon** : [ENF-1: Résilience à l'instabilité réseau](../../referentiel/exigences/enf-1.md) (mode déconnecté).
 - **Statut : Stable.**
 
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-09 : Analytique et exposition de données](../../referentiel/profils/pt-09.md)
+- [PT-12 : Audit, provenance et traçabilité](../../referentiel/profils/pt-12.md)
+
 <!-- END:GENERATED -->
 ## Liens
 

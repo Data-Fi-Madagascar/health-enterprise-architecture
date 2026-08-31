@@ -25,3 +25,10 @@ tags: ["artsn", "niveau-3", "chapitre", "ART-10"]
 - **Modèles cibles** : événementisation des mouvements de stock, registres logistiques (ex. OpenLMIS), traçabilité par lot.
 - **Déduit selon** : [ENF-2: Intégrité des flux et traçabilité des valeurs](../exigences/enf-2.md) (traçabilité des valeurs).
 - **Statut : Provisoire.**
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-17 : Logistique & chaîne d'approvisionnement (LMIS)](../profils/pt-17.md)
+

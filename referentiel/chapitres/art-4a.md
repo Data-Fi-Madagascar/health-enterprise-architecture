@@ -26,3 +26,11 @@ tags: ["artsn", "niveau-3", "chapitre", "ART-4A"]
 - **Concepts cibles** : Golden Record, Identifiant National de Santé (INS).
 - **Déduit selon** : [ENF-3: Unicité de l'identité et résilience face à la fragmentation applicative](../exigences/enf-3.md) (unicité de l’identité).
 - **Statut : Provisoire.**
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-04 : Résolution d’identité du bénéficiaire](../profils/pt-04.md)
+- [PT-05 : Registre des professionnels](../profils/pt-05.md)
+

@@ -43,6 +43,15 @@ ART-6 : Analytique et restitution constitue un chapitre du **cadre normatif oppo
 - **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (protection One Health).
 - **Statut : Provisoire.**
 
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-06 : Référentiel des structures et services de santé](../../referentiel/profils/pt-06.md)
+- [PT-08 : Échange de données agrégées](../../referentiel/profils/pt-08.md)
+- [PT-09 : Analytique et exposition de données](../../referentiel/profils/pt-09.md)
+- [PT-13 : Qualité et réconciliation](../../referentiel/profils/pt-13.md)
+
 <!-- END:GENERATED -->
 ## Liens
 

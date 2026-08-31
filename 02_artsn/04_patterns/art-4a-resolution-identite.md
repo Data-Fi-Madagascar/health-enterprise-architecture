@@ -42,6 +42,13 @@ ART-4A : Résolution d'identité constitue un chapitre du **cadre normatif oppos
 - **Déduit selon** : [ENF-3: Unicité de l'identité et résilience face à la fragmentation applicative](../../referentiel/exigences/enf-3.md) (unicité de l’identité).
 - **Statut : Provisoire.**
 
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-04 : Résolution d’identité du bénéficiaire](../../referentiel/profils/pt-04.md)
+- [PT-05 : Registre des professionnels](../../referentiel/profils/pt-05.md)
+
 <!-- END:GENERATED -->
 ## Liens
 

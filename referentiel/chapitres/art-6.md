@@ -28,3 +28,13 @@ realized_by: ["WP-04"]
 - **Pattern cible** : modèle de séparation CQRS.
 - **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../exigences/enf-4.md) (protection One Health).
 - **Statut : Provisoire.**
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-06 : Référentiel des structures et services de santé](../profils/pt-06.md)
+- [PT-08 : Échange de données agrégées](../profils/pt-08.md)
+- [PT-09 : Analytique et exposition de données](../profils/pt-09.md)
+- [PT-13 : Qualité et réconciliation](../profils/pt-13.md)
+

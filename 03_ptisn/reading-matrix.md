@@ -64,7 +64,6 @@ Pour consulter les matrices de lecture des niveaux supérieurs, le lecteur se re
 - [ptisn-PT-11: PT-11 : Profil technique national](03_profils/pt-11-consentement-bases-autorisation.md)
 - [ptisn-PT-05: PT-05 : Profil technique national](03_profils/pt-05-registre-professionnels.md)
 - [ptisn-PT-02: PT-02 : Profil technique national](03_profils/pt-02-mediation-intra-secteur.md)
-- [ptisn-PT-11-analyse: Analyse PT-11 : Profil technique du consentement](03_profils/pt-11-analyse-consentement.md)
 - [ptisn-PT-13: PT-13 : Profil technique national](03_profils/pt-13-qualite-reconciliation.md)
 - [ptisn-PT-01: PT-01 : Profil technique national](03_profils/pt-01-echange-interinstitutionnel.md)
 - [ptisn-profils: Partie III : Profils techniques nationaux](03_profils/pt-00-index.md)

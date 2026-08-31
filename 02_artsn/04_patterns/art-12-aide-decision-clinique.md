@@ -27,6 +27,12 @@ ART-12 : Aide à la décision clinique constitue un chapitre du **cadre normatif
 - **Déduit selon** : [ART-6: Analytique et restitution](../../referentiel/chapitres/art-6.md) (restitution de la connaissance), [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md).
 - **Statut : Proposition ouverte.**
 
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-19 : Aide à la décision clinique (CDS)](../../referentiel/profils/pt-19.md)
+
 <!-- END:GENERATED -->
 ## Liens
 

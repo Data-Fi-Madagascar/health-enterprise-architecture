@@ -30,3 +30,19 @@ tags: ["artsn", "niveau-3", "chapitre", "ART-7"]
 - **Objets de données** : [BO-01 Patient & identité](../../00_caesn/04_data/objets.md), [BO-07 Interopérabilité transfrontalière](../../00_caesn/04_data/objets.md) (objets métier CAESN) ; voir aussi le [dictionnaire des objets de données ARTSN](../../02_artsn/03_objets-de-donnees/index.md).
 - **Déduit selon** : [ENF-1: Résilience à l'instabilité réseau](../exigences/enf-1.md) (sécurité locale).
 - **Statut : Stable.**
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-01 : Échange interinstitutionnel](../profils/pt-01.md)
+- [PT-02 : Médiation intra-secteur](../profils/pt-02.md)
+- [PT-04 : Résolution d’identité du bénéficiaire](../profils/pt-04.md)
+- [PT-05 : Registre des professionnels](../profils/pt-05.md)
+- [PT-09 : Analytique et exposition de données](../profils/pt-09.md)
+- [PT-10 : Confiance, authentification et autorisation](../profils/pt-10.md)
+- [PT-11 : Consentement et bases d’autorisation](../profils/pt-11.md)
+- [PT-12 : Audit, provenance et traçabilité](../profils/pt-12.md)
+- [PT-14 : Interopérabilité transfrontalière](../profils/pt-14.md)
+- [PT-16 : Orchestration de processus bornés](../profils/pt-16.md)
+

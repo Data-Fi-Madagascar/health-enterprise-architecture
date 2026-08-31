@@ -46,14 +46,14 @@ Pour éviter les confusions :
 | PT-15 | Surveillance One Health | CAP-INT-14, CAP-INT-16, CAP-18, CAP-05, CMP-02, CMP-04, CMP-06, ART-11, ART-0, ART-4D, ART-8B | active | PT-15 |
 | PT-16 | Orchestration de processus bornés | CMP-07, CMP-06, CAP-INT-03, ART-8A, ART-7 | active | PT-16 |
 | PT-17 | Logistique & chaîne d'approvisionnement (LMIS) | CMP-23, CAP-INT-10, CAP-INT-15, ART-10 | active | PT-17 |
-| PT-18 | Profil technique national | CAP-INT-07, ART-2, ART-9 | active | PT-18 |
-| PT-19 | Profil technique national | CMP-08, CAP-INT-05, ART-12, ART-2 | active | PT-19 |
+| PT-18 | Échange de réclamations et paiements | CAP-INT-07, ART-2, ART-9 | active | PT-18 |
+| PT-19 | Aide à la décision clinique (CDS) | CMP-08, CAP-INT-05, ART-12, ART-2 | active | PT-19 |
 
 <!-- END:GENERATED -->
 
 ## Maturité et statuts des profils
 
-L'ensemble des profils de référence est à l'état `draft`, à l'exception de PT-17 (`candidate`). Aucun profil n'est encore `recommandé`, `retenu` ou `homologué` ; cette table sera mise à jour au fil des décisions du Comité National (voir l'annexe `e-priorisation-decisions`).
+L'ensemble des profils de référence est à l'état `active` dans le référentiel ; leur **maturité contractuelle** vis-à-vis de l'ARTSN est en revanche à `draft` (profil candidat non encore homologué), à l'exception de PT-17 (`candidate`). Aucun profil n'est encore `recommandé`, `retenu` ou `homologué` ; cette table sera mise à jour au fil des décisions du Comité National (voir l'annexe `e-priorisation-decisions`).
 
 | Statut | Profils |
 |--------|---------|

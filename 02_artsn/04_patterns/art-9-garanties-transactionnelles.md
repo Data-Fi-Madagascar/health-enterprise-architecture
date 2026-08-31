@@ -46,6 +46,13 @@ ART-9 : Garanties transactionnelles fortes constitue un chapitre du **cadre norm
 - **Déduit selon** : [ENF-2: Intégrité des flux et traçabilité des valeurs](../../referentiel/exigences/enf-2.md) (grade comptable anti-fraude).
 - **Statut : Proposition ouverte.**
 
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-10 : Confiance, authentification et autorisation](../../referentiel/profils/pt-10.md)
+- [PT-18 : Échange de réclamations et paiements](../../referentiel/profils/pt-18.md)
+
 <!-- END:GENERATED -->
 ## Liens
 

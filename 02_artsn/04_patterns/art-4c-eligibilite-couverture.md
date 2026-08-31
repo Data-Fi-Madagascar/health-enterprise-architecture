@@ -44,6 +44,12 @@ ART-4C : Éligibilité et couverture constitue un chapitre du **cadre normatif o
 - **Déduit selon** : [ENF-2: Intégrité des flux et traçabilité des valeurs](../../referentiel/exigences/enf-2.md) (anti-fraude) et [ENF-1: Résilience à l'instabilité réseau](../../referentiel/exigences/enf-1.md) (autonomie locale).
 - **Statut : Proposition ouverte.**
 
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-05 : Registre des professionnels](../../referentiel/profils/pt-05.md)
+
 <!-- END:GENERATED -->
 ## Liens
 

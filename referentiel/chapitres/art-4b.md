@@ -26,3 +26,12 @@ tags: ["artsn", "niveau-3", "chapitre", "ART-4B"]
 - **Fondements cibles** : consentement ou opposition explicite, mandat de santé publique, accord interinstitutionnel ([ART-0: Accords de partage inter-institutionnels](art-0.md)).
 - **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../exigences/enf-4.md) (protection One Health).
 - **Statut : Provisoire.**
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-04 : Résolution d’identité du bénéficiaire](../profils/pt-04.md)
+- [PT-10 : Confiance, authentification et autorisation](../profils/pt-10.md)
+- [PT-11 : Consentement et bases d’autorisation](../profils/pt-11.md)
+

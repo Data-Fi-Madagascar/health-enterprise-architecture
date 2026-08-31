@@ -25,3 +25,14 @@ tags: ["artsn", "niveau-3", "chapitre", "ART-1"]
 - **Rattachement** : [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../capabilites/cap-14.md) (interopérabilité et infrastructure partagée).
 - **Déduit selon** : [ENF-1: Résilience à l'instabilité réseau](../exigences/enf-1.md) (instabilité réseau).
 - **Statut : Stable.**
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-01 : Échange interinstitutionnel](../profils/pt-01.md)
+- [PT-02 : Médiation intra-secteur](../profils/pt-02.md)
+- [PT-03 : Catalogue des services et registre des contrats](../profils/pt-03.md)
+- [PT-08 : Échange de données agrégées](../profils/pt-08.md)
+- [PT-14 : Interopérabilité transfrontalière](../profils/pt-14.md)
+

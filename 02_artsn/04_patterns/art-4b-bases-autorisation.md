@@ -42,6 +42,14 @@ ART-4B : Bases d'autorisation constitue un chapitre du **cadre normatif opposabl
 - **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (protection One Health).
 - **Statut : Provisoire.**
 
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-04 : Résolution d’identité du bénéficiaire](../../referentiel/profils/pt-04.md)
+- [PT-10 : Confiance, authentification et autorisation](../../referentiel/profils/pt-10.md)
+- [PT-11 : Consentement et bases d’autorisation](../../referentiel/profils/pt-11.md)
+
 <!-- END:GENERATED -->
 ## Liens
 

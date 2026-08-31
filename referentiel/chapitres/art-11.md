@@ -24,3 +24,12 @@ tags: ["artsn", "niveau-3", "chapitre", "ART-11", "one-health"]
 - **Modèles cibles** : accords de partage, chorégraphie inter-institutionnelle, espaces de rapprochement neutres.
 - **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../exigences/enf-4.md) (cloisonnement inter-institutionnel One Health).
 - **Statut : Stable.**
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-01 : Échange interinstitutionnel](../profils/pt-01.md)
+- [PT-11 : Consentement et bases d’autorisation](../profils/pt-11.md)
+- [PT-15 : Surveillance One Health](../profils/pt-15.md)
+

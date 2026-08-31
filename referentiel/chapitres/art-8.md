@@ -29,3 +29,10 @@ Ce chapitre se décline en quatre sous-chapitres :
 - [ART-8B: Modélisation de relations en graphe](art-8b.md)
 - [ART-8C: Agrégation par lot](art-8c.md)
 - [ART-8D: Chorégraphie inter-institutionnelle](art-8d.md)
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-02 : Médiation intra-secteur](../profils/pt-02.md)
+

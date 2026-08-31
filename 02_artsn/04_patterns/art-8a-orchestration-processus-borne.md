@@ -42,6 +42,12 @@ ART-8A : Orchestration de processus borné constitue un chapitre du **cadre norm
 - **Déduit selon** : [ENF-5: Coordination des processus complexes décentralisés et asynchrones](../../referentiel/exigences/enf-5.md) (processus complexes).
 - **Statut : Provisoire.**
 
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-16 : Orchestration de processus bornés](../../referentiel/profils/pt-16.md)
+
 <!-- END:GENERATED -->
 ## Liens
 

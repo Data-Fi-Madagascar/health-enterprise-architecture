@@ -25,3 +25,10 @@ tags: ["artsn", "niveau-3", "chapitre", "ART-4D"]
 - **Rattachement** : capacité candidate « Surveillance spatio-temporelle ».
 - **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../exigences/enf-4.md) (cloisonnement inter-institutionnel).
 - **Statut : Proposition ouverte.**
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-15 : Surveillance One Health](../profils/pt-15.md)
+

@@ -27,3 +27,10 @@ tags: ["artsn", "niveau-3", "chapitre", "ART-12"]
 - **Référentiel cible** : HL7 CDS Hooks, FHIR Clinical Reasoning Module, guides de pratique profilés.
 - **Déduit selon** : [ART-6: Analytique et restitution](../chapitres/art-6.md) (restitution de la connaissance), [CAP-13: Système d'information sanitaire, données et recherche](../capabilites/cap-13.md).
 - **Statut : Proposition ouverte.**
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-19 : Aide à la décision clinique (CDS)](../profils/pt-19.md)
+

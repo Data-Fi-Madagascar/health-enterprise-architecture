@@ -43,6 +43,17 @@ ART-2 : Médiation et normalisation constitue un chapitre du **cadre normatif op
 - **Déduit selon** : [ENF-3: Unicité de l'identité et résilience face à la fragmentation applicative](../../referentiel/exigences/enf-3.md) (fragmentation applicative) et [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (One Health).
 - **Statut : Stable.**
 
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-02 : Médiation intra-secteur](../../referentiel/profils/pt-02.md)
+- [PT-03 : Catalogue des services et registre des contrats](../../referentiel/profils/pt-03.md)
+- [PT-07 : Terminologie et codification](../../referentiel/profils/pt-07.md)
+- [PT-08 : Échange de données agrégées](../../referentiel/profils/pt-08.md)
+- [PT-18 : Échange de réclamations et paiements](../../referentiel/profils/pt-18.md)
+- [PT-19 : Aide à la décision clinique (CDS)](../../referentiel/profils/pt-19.md)
+
 <!-- END:GENERATED -->
 ## Liens
 

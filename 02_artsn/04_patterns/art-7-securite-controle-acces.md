@@ -46,6 +46,21 @@ ART-7 : Sécurité, contrôle d'accès et résidence de la donnée constitue un 
 - **Déduit selon** : [ENF-1: Résilience à l'instabilité réseau](../../referentiel/exigences/enf-1.md) (sécurité locale).
 - **Statut : Stable.**
 
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-01 : Échange interinstitutionnel](../../referentiel/profils/pt-01.md)
+- [PT-02 : Médiation intra-secteur](../../referentiel/profils/pt-02.md)
+- [PT-04 : Résolution d’identité du bénéficiaire](../../referentiel/profils/pt-04.md)
+- [PT-05 : Registre des professionnels](../../referentiel/profils/pt-05.md)
+- [PT-09 : Analytique et exposition de données](../../referentiel/profils/pt-09.md)
+- [PT-10 : Confiance, authentification et autorisation](../../referentiel/profils/pt-10.md)
+- [PT-11 : Consentement et bases d’autorisation](../../referentiel/profils/pt-11.md)
+- [PT-12 : Audit, provenance et traçabilité](../../referentiel/profils/pt-12.md)
+- [PT-14 : Interopérabilité transfrontalière](../../referentiel/profils/pt-14.md)
+- [PT-16 : Orchestration de processus bornés](../../referentiel/profils/pt-16.md)
+
 <!-- END:GENERATED -->
 ## Liens
 

@@ -25,3 +25,14 @@ tags: ["artsn", "niveau-3", "chapitre", "ART-0"]
 - **Rattachement** : capacité candidate « Coordination intersectorielle ».
 - **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../exigences/enf-4.md) (cloisonnement One Health).
 - **Statut : Proposition ouverte.**
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-01 : Échange interinstitutionnel](../profils/pt-01.md)
+- [PT-10 : Confiance, authentification et autorisation](../profils/pt-10.md)
+- [PT-11 : Consentement et bases d’autorisation](../profils/pt-11.md)
+- [PT-14 : Interopérabilité transfrontalière](../profils/pt-14.md)
+- [PT-15 : Surveillance One Health](../profils/pt-15.md)
+

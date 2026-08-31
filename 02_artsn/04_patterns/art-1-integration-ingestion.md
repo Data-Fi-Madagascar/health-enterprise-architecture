@@ -41,6 +41,16 @@ ART-1 : Intégration et ingestion constitue un chapitre du **cadre normatif oppo
 - **Déduit selon** : [ENF-1: Résilience à l'instabilité réseau](../../referentiel/exigences/enf-1.md) (instabilité réseau).
 - **Statut : Stable.**
 
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-01 : Échange interinstitutionnel](../../referentiel/profils/pt-01.md)
+- [PT-02 : Médiation intra-secteur](../../referentiel/profils/pt-02.md)
+- [PT-03 : Catalogue des services et registre des contrats](../../referentiel/profils/pt-03.md)
+- [PT-08 : Échange de données agrégées](../../referentiel/profils/pt-08.md)
+- [PT-14 : Interopérabilité transfrontalière](../../referentiel/profils/pt-14.md)
+
 <!-- END:GENERATED -->
 ## Liens
 

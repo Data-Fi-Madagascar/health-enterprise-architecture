@@ -26,3 +26,10 @@ tags: ["artsn", "niveau-3", "chapitre", "ART-8C"]
 - **Pattern cible** : Netting.
 - **Déduit selon** : [ENF-1: Résilience à l'instabilité réseau](../exigences/enf-1.md) (réseau instable) et [ENF-2: Intégrité des flux et traçabilité des valeurs](../exigences/enf-2.md) (anti-fraude).
 - **Statut : Proposition ouverte.**
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-02 : Médiation intra-secteur](../profils/pt-02.md)
+

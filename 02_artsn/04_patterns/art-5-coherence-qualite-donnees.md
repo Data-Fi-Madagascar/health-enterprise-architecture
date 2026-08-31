@@ -43,6 +43,17 @@ ART-5 : Cohérence et qualité des données constitue un chapitre du **cadre nor
 - **Déduit selon** : [ENF-5: Coordination des processus complexes décentralisés et asynchrones](../../referentiel/exigences/enf-5.md) (coordination des processus).
 - **Statut : Stable.** (pour les métriques) / **Statut : Proposition ouverte.** (pour la gouvernance des 4 branches).
 
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-02 : Médiation intra-secteur](../../referentiel/profils/pt-02.md)
+- [PT-06 : Référentiel des structures et services de santé](../../referentiel/profils/pt-06.md)
+- [PT-07 : Terminologie et codification](../../referentiel/profils/pt-07.md)
+- [PT-08 : Échange de données agrégées](../../referentiel/profils/pt-08.md)
+- [PT-09 : Analytique et exposition de données](../../referentiel/profils/pt-09.md)
+- [PT-13 : Qualité et réconciliation](../../referentiel/profils/pt-13.md)
+
 <!-- END:GENERATED -->
 ## Liens
 

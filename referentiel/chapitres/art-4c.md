@@ -26,3 +26,10 @@ tags: ["artsn", "niveau-3", "chapitre", "ART-4C"]
 - **Pattern cible** : modélisation temporelle SCD type 2.
 - **Déduit selon** : [ENF-2: Intégrité des flux et traçabilité des valeurs](../exigences/enf-2.md) (anti-fraude) et [ENF-1: Résilience à l'instabilité réseau](../exigences/enf-1.md) (autonomie locale).
 - **Statut : Proposition ouverte.**
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-05 : Registre des professionnels](../profils/pt-05.md)
+

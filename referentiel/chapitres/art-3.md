@@ -32,3 +32,11 @@ tags: ["artsn", "niveau-3", "chapitre", "ART-3"]
 - **Profils cibles** : Profil A, Profil B, Profil C.
 - **Déduit selon** : [ENF-1: Résilience à l'instabilité réseau](../exigences/enf-1.md) (mode déconnecté).
 - **Statut : Stable.**
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-09 : Analytique et exposition de données](../profils/pt-09.md)
+- [PT-12 : Audit, provenance et traçabilité](../profils/pt-12.md)
+
