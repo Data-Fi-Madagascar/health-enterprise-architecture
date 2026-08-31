@@ -3,11 +3,14 @@
 #   brew install pandoc  # Linux: sudo apt install pandoc
 #
 # Usage:
+#   make venv               # crée l'environnement virtuel + requirements.txt
 #   make docx               # 5 DOCX dans dist/ (version 0.0.1 par défaut)
 #   make docx VERSION=1.2.3 # avec version précise
 #   make pdf                # 5 PDF dans dist/ (optionnel, nécessite LaTeX)
 #   make wrappers           # régénère les 51 enveloppes (transclusion des 150 objets)
-#   make check              # idempotence des enveloppes + 0 lien relatif cassé
+#   make rdf                # compilation RDF/OWL + validation SHACL
+#   make sync               # synchronisation bidirectionnelle RDF ↔ Graphify
+#   make check              # idempotence des enveloppes + 0 lien relatif cassé + RDF/SHACL
 #   make clean              # supprime dist/
 #
 # Release :
@@ -18,12 +21,14 @@ SHELL := /bin/bash
 VERSION ?= 0.0.1
 ENGINE ?= $(shell command -v tectonic >/dev/null && echo tectonic || echo xelatex)
 FONT  ?= DejaVu Sans
-PY    := python3
+# RDF/SHACL et sync requièrent rdflib + pyshacl (voir requirements.txt).
+# Par défaut on utilise l'interpréteur du .venv s'il existe, sinon python3 système.
+PY    := $(shell [ -x .venv/bin/python ] && echo .venv/bin/python || echo python3)
 DATE  := $(shell date +%F)
 
 export TAG_VERSION=$(VERSION)
 
-.PHONY: pdf docx public wrappers check clean release note validate rdf jsonschema fhir openapi oda
+.PHONY: pdf docx public wrappers check clean release note validate rdf sync jsonschema fhir openapi oda venv
 
 pdf:
 	@echo "==> Génération des 5 PDF (version $(VERSION), moteur $(ENGINE))"
@@ -54,6 +59,7 @@ check:
 	$(PY) scripts/compilers/compile_jsonschema.py --validate
 	$(PY) scripts/compilers/compile_fhir.py --validate
 	$(PY) scripts/compilers/compile_openapi.py --validate
+	$(PY) scripts/sync_rdf_graphify.py --check
 
 clean:
 	rm -rf dist
@@ -64,6 +70,14 @@ rdf:
 	$(PY) scripts/compile_rdf.py
 	@echo "==> Validation SHACL"
 	$(PY) scripts/compile_rdf.py --validate
+
+# Synchronisation bidirectionnelle RDF ↔ Graphify :
+# enrichit graphify-out/graph.json avec les métadonnées RDF (rdf_type, rdf_status, ...)
+# et dist/hea-enriched.ttl avec les communautés/centralité issues de Graphify.
+# Génère aussi graphify-out/COHERENCE_REPORT.md
+sync:
+	@echo "==> Sync RDF ↔ Graphify"
+	$(PY) scripts/sync_rdf_graphify.py
 
 # Validation du graphe de relations du référentiel (îlots, cibles non résolues,
 # liens relatifs cassés). Indépendant de build_wrappers --check (voir note ci-dessous).
@@ -85,9 +99,19 @@ openapi:
 	@echo "==> Compilation OpenAPI 3.0 (PT → OpenAPI specs)"
 	$(PY) scripts/compilers/compile_openapi.py --validate
 
-# Compilation ODA complète : tous les compilateurs en séquence
-oda: rdf jsonschema fhir openapi
+# Compilation ODA complète : tous les compilateurs en séquence puis sync Graphify
+oda: rdf jsonschema fhir openapi sync
 	@echo "==> Compilation ODA complète terminée"
+
+# Création de l'environnement virtuel local (réutilisé par make check / make rdf)
+venv:
+	@if [ ! -d .venv ]; then \
+		echo "==> Création de .venv" ; \
+		uv venv .venv --python python3 ; \
+		.venv/bin/pip install -r requirements.txt -q ; \
+	else \
+		echo "==> .venv déjà présent" ; \
+	fi
 
 # NOTE : `build_wrappers.py --check` présente un décalage préexistant (générateur
 # émet « — » dans les titres générés alors que les enveloppes committées utilisent

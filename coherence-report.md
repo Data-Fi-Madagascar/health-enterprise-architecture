@@ -277,7 +277,7 @@ L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspon
 - **CNISN** : homologation portée par le **comité sectoriel santé** (« organise l'homologation sectorielle », `03_gouvernance.md`) et l'instance sectorielle ; critères `04_conformite.md` §3 (13 critères). **Le CNASN n'apparaît nulle part dans le CNISN** (ni gouvernance, ni conformité, ni hiérarchie `00_introduction.md` §2).
 - → **Conflit apparent d'autorité d'homologation** (comité sectoriel CNISN vs CNASN) et **listes de critères divergentes** (13 vs 5 ; chevauchement partiel : coût total de possession, souveraineté≈résidence).
 
-**Statut : ✓ Partiellement résolu (2026-08-26)** — [ADR-0010](01_cnisn/06_decisions/adr-0010-cadre-legal.md) établit le mandat d'opposabilité du CNASN et est publié au sein même du CNISN ; le [projet de loi e-santé](../00_caesn/07_governance/projet-loi-esante.md) (Art. 4–7) ancre juridiquement ce mandat. Le CNASN apparaît désormais dans le périmètre CNISN. Le chevauchement des critères (13 CNISN vs 5 ARTSN) reste à harmoniser dans un référentiel de conformité commun (à traiter).
+**Statut : ✓ Partiellement résolu (2026-08-26)** — [ADR-0010](01_cnisn/06_decisions/adr-0010-cadre-legal.md) établit le mandat d'opposabilité du CNASN et est publié au sein même du CNISN ; le [projet de loi e-santé](./00_caesn/07_governance/projet-loi-esante.md) (Art. 4–7) ancre juridiquement ce mandat. Le CNASN apparaît désormais dans le périmètre CNISN. Le chevauchement des critères (13 CNISN vs 5 ARTSN) reste à harmoniser dans un référentiel de conformité commun (à traiter).
 
 ### 10.4 Conformité CNISN ↔ F.4 / CNASN ARTSN — cohérent mais à articuler
 

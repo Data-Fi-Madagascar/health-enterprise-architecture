@@ -8,6 +8,7 @@ dist/
 # Python
 __pycache__/
 *.pyc
+.venv/
 
 # Sorties générées par graphify (jamais committées)
 graphify-out/
