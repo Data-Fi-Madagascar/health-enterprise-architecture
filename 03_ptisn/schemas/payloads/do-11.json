@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://healmadagascar.mg/schemas/payloads/do-11.json",
+  "title": "DO-11 — DO-11 : Produit de santé",
+  "description": "Tout produit pharmaceutique, vaccin, dispositif médical ou intrant de santé soumis à réglementation. Il est identifié par sa DCI (Dénomination Commune Internationale), son nom commercial, son dosage et son forme pharmaceutique.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Identifiant unique de l'objet"
+    },
+    "version": {
+      "type": "string",
+      "description": "Version de l'objet",
+      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+    },
+    "statut": {
+      "type": "string",
+      "description": "Statut de l'objet"
+    },
+    "art_2Ref": {
+      "type": "string",
+      "description": "Référence à ART-2"
+    },
+    "art_4Ref": {
+      "type": "string",
+      "description": "Référence à ART-4"
+    },
+    "art_9Ref": {
+      "type": "string",
+      "description": "Référence à ART-9"
+    },
+    "bo_03Ref": {
+      "type": "string",
+      "description": "Référence à BO-03"
+    }
+  },
+  "required": [
+    "id",
+    "version"
+  ],
+  "x-hea-id": "DO-11",
+  "x-hea-type": "objet-de-donnees",
+  "x-hea-version": "1.0.0",
+  "x-hea-status": "draft",
+  "x-hea-owner": "DEPSI",
+  "x-hea-fhir-resource": "MedicationDispense",
+  "x-hea-source-ref": "Référentiel des produits de santé (CAESN), OMS ATC"
+}

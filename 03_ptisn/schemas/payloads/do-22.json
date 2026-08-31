@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://healmadagascar.mg/schemas/payloads/do-22.json",
+  "title": "DO-22 — DO-22 : Alerte sanitaire",
+  "description": "Avertissement déclenché automatiquement ou manuellement lorsqu'un indicateur de surveillance dépasse un seuil prédéfini. L'alerte est une action opérationnelle qui découlent de la notification ; elle vise à mobiliser rapidement les acteurs compétents pour la riposte.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Identifiant unique de l'objet"
+    },
+    "version": {
+      "type": "string",
+      "description": "Version de l'objet",
+      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+    },
+    "statut": {
+      "type": "string",
+      "description": "Statut de l'objet"
+    },
+    "art_2Ref": {
+      "type": "string",
+      "description": "Référence à ART-2"
+    },
+    "art_3Ref": {
+      "type": "string",
+      "description": "Référence à ART-3"
+    },
+    "bo_05Ref": {
+      "type": "string",
+      "description": "Référence à BO-05"
+    }
+  },
+  "required": [
+    "id",
+    "version"
+  ],
+  "x-hea-id": "DO-22",
+  "x-hea-type": "objet-de-donnees",
+  "x-hea-version": "1.0.0",
+  "x-hea-status": "draft",
+  "x-hea-owner": "DEPSI",
+  "x-hea-fhir-resource": "",
+  "x-hea-source-ref": "FHIR Communication (priority: urgent), DHIS2 alerts"
+}

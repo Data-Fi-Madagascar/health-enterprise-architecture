@@ -130,10 +130,30 @@ def extract_concepts_from_body(body):
     return concepts
 
 
-def extract_do_type(body):
-    """Extrait le type d'objet depuis **Type** : ... dans le corps."""
-    m = re.search(r"\*\*Type\*\*\s*:\s*(.+)", body)
-    return m.group(1).strip().lower() if m else None
+def resolve_fhir_resource(do_id, tags, body):
+    """Résout la ressource FHIR à partir de l'ID, des tags et du corps."""
+    # Try matching by DO ID pattern
+    do_id_lower = do_id.lower()
+    for keyword, info in DO_FHIR_MAP.items():
+        if keyword in do_id_lower:
+            return info
+
+    # Try matching by tags
+    for tag in tags:
+        tag_lower = tag.lower()
+        for keyword, info in DO_FHIR_MAP.items():
+            if keyword in tag_lower:
+                return info
+
+    # Try matching by body type keyword
+    type_match = re.search(r"\*\*Type\*\*\s*:\s*(.+)", body)
+    if type_match:
+        type_text = type_match.group(1).strip().lower()
+        for keyword, info in DO_FHIR_MAP.items():
+            if keyword in type_text:
+                return info
+
+    return {"json_type": "object"}
 
 
 def extract_constraints(body):
@@ -205,8 +225,7 @@ def generate_do_payload_schema(obj):
     body = obj["body"]
 
     # Extraire le type d'objet
-    do_type = extract_do_type(body)
-    type_info = DO_FHIR_MAP.get(do_type, {"json_type": "object"})
+    type_info = resolve_fhir_resource(do_id, obj["tags"], body)
 
     # Extraire les contraintes
     constraints_text = extract_constraints(body)
@@ -252,7 +271,7 @@ def generate_do_payload_schema(obj):
     # Construire le schéma
     schema = {
         "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "%s/schemas/payloads/%s.json" % (SCHEMAS_NS, do_id.lower()),
+        "$id": "%s/payloads/%s.json" % (SCHEMAS_NS, do_id.lower()),
         "title": "%s — %s" % (do_id, title),
         "description": description or "Schéma de validation du payload %s." % do_id,
         "type": type_info["json_type"],
@@ -287,7 +306,7 @@ def generate_payload_schema(fm, concepts):
 
     schema = {
         "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "%s/schemas/payloads/%s.json" % (SCHEMAS_NS, nom_id.lower()),
+        "$id": "%s/payloads/%s.json" % (SCHEMAS_NS, nom_id.lower()),
         "title": "%s - %s" % (nom_id, title),
         "description": "Schéma de validation du payload %s pour les messages REST du réseau national de santé." % nom_id,
         "type": "string",

@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://healmadagascar.mg/schemas/payloads/do-30.json",
+  "title": "DO-30 — DO-30 : Section du résumé patient",
+  "description": "Unité structurée du résumé international du patient (IPS), regroupant une catégorie clinique spécifique. Chaque section est un objet FHIR autonome pouvant être échangé individuellement selon le principe de minimisation des données.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Identifiant unique de l'objet"
+    },
+    "version": {
+      "type": "string",
+      "description": "Version de l'objet",
+      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+    },
+    "art_2Ref": {
+      "type": "string",
+      "description": "Référence à ART-2"
+    },
+    "art_7Ref": {
+      "type": "string",
+      "description": "Référence à ART-7"
+    },
+    "bo_07Ref": {
+      "type": "string",
+      "description": "Référence à BO-07"
+    }
+  },
+  "required": [
+    "id",
+    "version"
+  ],
+  "x-hea-id": "DO-30",
+  "x-hea-type": "objet-de-donnees",
+  "x-hea-version": "1.0.0",
+  "x-hea-status": "draft",
+  "x-hea-owner": "DEPSI",
+  "x-hea-fhir-resource": "",
+  "x-hea-source-ref": "HL7 FHIR R4 : IPS Sections"
+}

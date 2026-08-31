@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://healmadagascar.mg/schemas/payloads/do-19.json",
+  "title": "DO-19 — DO-19 : Foyer",
+  "description": "Zone géographique ou population définie dans laquelle un événement sanitaire (épidémie, outbreak) est identifié ou suspecté. Il délimite le périmètre d'intervention de la riposte.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Identifiant unique de l'objet"
+    },
+    "version": {
+      "type": "string",
+      "description": "Version de l'objet",
+      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date"
+    },
+    "statut": {
+      "type": "string",
+      "description": "Statut de l'objet"
+    },
+    "art_2Ref": {
+      "type": "string",
+      "description": "Référence à ART-2"
+    },
+    "art_3Ref": {
+      "type": "string",
+      "description": "Référence à ART-3"
+    },
+    "bo_05Ref": {
+      "type": "string",
+      "description": "Référence à BO-05"
+    }
+  },
+  "required": [
+    "id",
+    "version"
+  ],
+  "x-hea-id": "DO-19",
+  "x-hea-type": "objet-de-donnees",
+  "x-hea-version": "1.0.0",
+  "x-hea-status": "draft",
+  "x-hea-owner": "DEPSI",
+  "x-hea-fhir-resource": "",
+  "x-hea-source-ref": "OMS GOARN, OIE"
+}

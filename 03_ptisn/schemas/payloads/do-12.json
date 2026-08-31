@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://healmadagascar.mg/schemas/payloads/do-12.json",
+  "title": "DO-12 — DO-12 : Lot",
+  "description": "Unité de production d'un produit de santé, identifiée par un numéro de lot, une date de fabrication et une date de péremption. Le lot permet la traçabilité complète de la chaîne d'approvisionnement.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Identifiant unique de l'objet"
+    },
+    "version": {
+      "type": "string",
+      "description": "Version de l'objet",
+      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date"
+    },
+    "lot": {
+      "type": "string",
+      "description": "Numéro de lot"
+    },
+    "art_2Ref": {
+      "type": "string",
+      "description": "Référence à ART-2"
+    },
+    "art_4Ref": {
+      "type": "string",
+      "description": "Référence à ART-4"
+    },
+    "art_9Ref": {
+      "type": "string",
+      "description": "Référence à ART-9"
+    },
+    "bo_03Ref": {
+      "type": "string",
+      "description": "Référence à BO-03"
+    }
+  },
+  "required": [
+    "id",
+    "version"
+  ],
+  "x-hea-id": "DO-12",
+  "x-hea-type": "objet-de-donnees",
+  "x-hea-version": "1.0.0",
+  "x-hea-status": "draft",
+  "x-hea-owner": "DEPSI",
+  "x-hea-fhir-resource": "MedicationDispense",
+  "x-hea-source-ref": "FHIR Medication"
+}

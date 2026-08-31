@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://healmadagascar.mg/schemas/payloads/do-17.json",
+  "title": "DO-17 — DO-17 : Vérification d'éligibilité",
+  "description": "Contrôle en temps réel, au point de service, du statut d'éligibilité d'un patient à un mécanisme de protection financière (CSU, BPC, AMM, assurance). La vérification détermine si les soins peuvent être dispensés sans paiement direct ou avec prise en charge partielle.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Identifiant unique de l'objet"
+    },
+    "version": {
+      "type": "string",
+      "description": "Version de l'objet",
+      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+    },
+    "identifiant": {
+      "type": "string",
+      "description": "Identifiant unique"
+    },
+    "patientRef": {
+      "type": "string",
+      "description": "Référence au patient (DO-01)"
+    },
+    "art_2Ref": {
+      "type": "string",
+      "description": "Référence à ART-2"
+    },
+    "art_4Ref": {
+      "type": "string",
+      "description": "Référence à ART-4"
+    },
+    "art_9Ref": {
+      "type": "string",
+      "description": "Référence à ART-9"
+    },
+    "bo_04Ref": {
+      "type": "string",
+      "description": "Référence à BO-04"
+    }
+  },
+  "required": [
+    "id",
+    "version"
+  ],
+  "x-hea-id": "DO-17",
+  "x-hea-type": "objet-de-donnees",
+  "x-hea-version": "1.0.0",
+  "x-hea-status": "draft",
+  "x-hea-owner": "DEPSI",
+  "x-hea-fhir-resource": "",
+  "x-hea-source-ref": "FHIR CoverageEligibilityRequest/Response"
+}

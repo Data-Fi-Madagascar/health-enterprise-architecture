@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://healmadagascar.mg/schemas/payloads/do-01.json",
+  "title": "DO-01 — DO-01 : Patient",
+  "description": "Personne physique bénéficiaire de soins de santé, identifiée de manière unique au sein du système d'information sanitaire national. L'identité du patient est un actif stratégique national qui ne peut être dupliquée, fragmentée ou remplacée par des identifiants propriétaires de programmes ou de projets.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Identifiant unique de l'objet"
+    },
+    "version": {
+      "type": "string",
+      "description": "Version de l'objet",
+      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+    },
+    "identifiant": {
+      "type": "string",
+      "description": "Identifiant unique"
+    },
+    "art_2Ref": {
+      "type": "string",
+      "description": "Référence à ART-2"
+    },
+    "art_4Ref": {
+      "type": "string",
+      "description": "Référence à ART-4"
+    },
+    "art_7Ref": {
+      "type": "string",
+      "description": "Référence à ART-7"
+    },
+    "bo_01Ref": {
+      "type": "string",
+      "description": "Référence à BO-01"
+    }
+  },
+  "required": [
+    "id",
+    "version"
+  ],
+  "x-hea-id": "DO-01",
+  "x-hea-type": "objet-de-donnees",
+  "x-hea-version": "1.0.0",
+  "x-hea-status": "draft",
+  "x-hea-owner": "DEPSI",
+  "x-hea-fhir-resource": "Patient",
+  "x-hea-source-ref": "Référentiel des bénéficiaires / patients (CAESN)"
+}

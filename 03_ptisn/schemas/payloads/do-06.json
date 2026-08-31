@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://healmadagascar.mg/schemas/payloads/do-06.json",
+  "title": "DO-06 — DO-06 : Prescription",
+  "description": "Ordonnance émise par un prestataire de soins, détaillant les médicaments, actes, examens ou soins prescrits pour un patient. Elle constitue le lien clinique entre la consultation et la dispensation.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Identifiant unique de l'objet"
+    },
+    "version": {
+      "type": "string",
+      "description": "Version de l'objet",
+      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date"
+    },
+    "art_2Ref": {
+      "type": "string",
+      "description": "Référence à ART-2"
+    },
+    "art_3Ref": {
+      "type": "string",
+      "description": "Référence à ART-3"
+    },
+    "bo_02Ref": {
+      "type": "string",
+      "description": "Référence à BO-02"
+    }
+  },
+  "required": [
+    "id",
+    "version"
+  ],
+  "x-hea-id": "DO-06",
+  "x-hea-type": "objet-de-donnees",
+  "x-hea-version": "1.0.0",
+  "x-hea-status": "draft",
+  "x-hea-owner": "DEPSI",
+  "x-hea-fhir-resource": "ExplanationOfBenefit",
+  "x-hea-source-ref": "FHIR MedicationRequest"
+}

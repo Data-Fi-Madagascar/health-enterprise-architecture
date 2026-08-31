@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://healmadagascar.mg/schemas/payloads/do-14.json",
+  "title": "DO-14 — DO-14 : Éligibilité",
+  "description": "Statut déterminant si un patient bénéficie d'une couverture sanitaire (gratuité, assurance, programme). Il est calculé selon des critères définis par les programmes de protection financière (BPC, AMM, assurances).",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Identifiant unique de l'objet"
+    },
+    "version": {
+      "type": "string",
+      "description": "Version de l'objet",
+      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+    },
+    "statut": {
+      "type": "string",
+      "description": "Statut de l'objet"
+    },
+    "art_2Ref": {
+      "type": "string",
+      "description": "Référence à ART-2"
+    },
+    "art_4Ref": {
+      "type": "string",
+      "description": "Référence à ART-4"
+    },
+    "art_9Ref": {
+      "type": "string",
+      "description": "Référence à ART-9"
+    },
+    "bo_04Ref": {
+      "type": "string",
+      "description": "Référence à BO-04"
+    }
+  },
+  "required": [
+    "id",
+    "version"
+  ],
+  "x-hea-id": "DO-14",
+  "x-hea-type": "objet-de-donnees",
+  "x-hea-version": "1.0.0",
+  "x-hea-status": "draft",
+  "x-hea-owner": "DEPSI",
+  "x-hea-fhir-resource": "",
+  "x-hea-source-ref": "FHIR Coverage"
+}

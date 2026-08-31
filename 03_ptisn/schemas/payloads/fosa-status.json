@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://healmadagascar.mg/schemas/schemas/payloads/fosa-status.json",
+  "$id": "https://healmadagascar.mg/schemas/payloads/fosa-status.json",
   "title": "FOSA-STATUS - \"Statut opérationnel d'une formation sanitaire\"",
   "description": "Schéma de validation du payload FOSA-STATUS pour les messages REST du réseau national de santé.",
   "type": "string",
