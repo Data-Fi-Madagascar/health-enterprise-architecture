@@ -99,3 +99,7 @@ La plateforme nationale de traçabilité RMA constitue une première initiative 
 mADX est un profil d’échange de données agrégées ; il ne remplace pas le service terminologique. Dépendance : entrepôt national et plateforme RMA pour la validation des contrats d’ingestion et d’analytique.
 
 <!-- END:GENERATED -->
+
+## Références au cadre
+
+- **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/07_lots/index.md)

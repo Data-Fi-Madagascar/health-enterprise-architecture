@@ -95,3 +95,7 @@ Le consentement est vérifié au moment de l’accès, en complément de l’aut
 Le profil dépend du registre patient (PT-04) et du fournisseur d’identité (PT-10). Travaux à mener : analyse du cadre juridique national, classification des cas d’usage, définition des politiques, évaluation des standards disponibles, articulation avec le registre patient, le fournisseur d’identité et les mandats de santé publique.
 
 <!-- END:GENERATED -->
+
+## Références au cadre
+
+- **ARTSN — lots consommateurs** : [L5 — Extension & pérennisation](../../02_artsn/07_lots/index.md)

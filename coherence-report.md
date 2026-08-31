@@ -256,10 +256,11 @@ Croisement du CNISN (`01_cnisn/`, niveau 2 : principes P-INT, capacités CAP-INT
 | Direction | Présence | Verdict |
 |-----------|----------|---------|
 | CNISN → ARTSN | Annexe B (`08_annexes/b-articulation-art-sn.md`, 12 domaines → chapitres/fondations) ; Conformité §1 (profil : « contrats ART applicables ») ; Introduction §2 (hiérarchie) ; Annexe D | ✓ riche |
-| ARTSN → CNISN | Chapitres ART portent une ligne « Normes CNISN » (`maps_to`/`related` vers `std-*`/`adr-*` : art-2/3/4/7/9) ; retour « lots consommateurs » depuis 15 artefacts CNISN (D2) ; index inverse annexe F (D3) ; annexes G (REDDHI) et H (ADHMAT) | ✓ **résolu** |
+| ARTSN → CNISN | Chapitres ART portent une ligne « Normes CNISN » (`maps_to`/`related` vers `std-*`/`adr-*` : art-2/3/4/7/9/12) ; retour « lots consommateurs » depuis 17 artefacts CNISN (D2) + 13 profils PTISN (PT-01/02/04/05/07/08/10/11/12/14/17/18/19) ; index inverse annexe F (D3) ; annexes G (REDDHI) et H (ADHMAT) | ✓ **résolu** |
 
-- `referentiel/chapitres/art-*.md` : lignes « CNISN — Normes » reliant chaque chapitre aux standards/ADR concernés (ex. ART-7 → STD-0002, ADR-0008 ; ART-4A → STD-0005, ADR-0004/0006).
-- `01_cnisn/05_standards/` et `06_decisions/` : chaque norme/ADR porte un renvoi « ARTSN — lots consommateurs » vers `02_artsn/07_lots/index.md` (D2, 15 artefacts).
+- `referentiel/chapitres/art-*.md` : lignes « CNISN — Normes » reliant chaque chapitre aux standards/ADR concernés (ex. ART-7 → STD-0002, ADR-0008 ; ART-4A → STD-0005, ADR-0004/0006 ; ART-12 → STD-0006, STD-0007).
+- `01_cnisn/05_standards/` et `06_decisions/` : chaque norme/ADR porte un renvoi « ARTSN — lots consommateurs » vers `02_artsn/07_lots/index.md` (D2, 17 artefacts : 9 STD + 8 ADR, incluant STD-0008 et STD-0009).
+- `03_ptisn/03_profils/pt-*.md` : 13 profils PTISN portent un renvoi « ARTSN — lots consommateurs » vers `02_artsn/07_lots/index.md` (D2-bis), complétant la chaîne PT→CNISN→ARTSN→lots.
 - **Réalignement de propriété des lots (2026-08-26)** : les lots L1–L7 sont désormais définis au niveau du portefeuille CAESN (`00_caesn/06_portfolio/feuille-de-route-lots.md` — source de vérité : périmètre, séquence, financement) ; `02_artsn/07_lots/index.md` est devenu la *vue de réalisation technique ARTSN* (composants, patterns, normes CNISN) qui référence le portefeuille vers le haut. Cela corrige une dépendance inversée (un niveau 1 référençait un niveau 3 pour sa définition de lots) et résorbe le doublon budgétaire (le budget est unique, dans le TCO portefeuille).
 - Annexe F (`f-normes-cnisn-lots.md`) : index inverse norme/ADR → lots ; annexes G/H relient CNISN aux sources internationales (OMS/ITU, Africa CDC).
 - → Traçabilité **symétrique** : le niveau 3 (ARTSN) et le niveau 2 (CNISN) sont désormais reliés dans les deux sens (résolu par les phases C, D2, D3 du refactor ARTSN).
@@ -298,8 +299,9 @@ L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspon
 - **Interne CNISN** : `02_capacites/index.md` + `a-matrice-principes-capacites.md` ↔ relations `cap-int-*.md`/`p-int-*.md` du référentiel (symétriques).
 - **Neutralité technologique** : CNISN « aucun produit » et ARTSN « ne sélectionne pas de produits ni de configurations » — les deux niveaux sont désormais alignés sur la gouvernance ARTSN (familles de patterns validées, pas de mandat technologique unique, `02_artsn/06_gouvernance.md` ; autodescription corrigée dans `02_artsn/index.md`, `reading-matrix.md`, glossaire CAESN, overview CAESN, contraste CNISN) — non-conflit, et le choix des produits/configurations par initiative est explicitement délégué au PTISN (niveau 4). ✓
 - **Dérogations** : CNISN (dérogation enregistrée) ↔ ARTSN (écart = dérogation explicite justifiée).
-- **Renvois pendants** de l'annexe B (ART-10/11, F.5/6) résolus par les stubs candidats ; ART-10 désormais formalisé dans la table de maturité (§10.5).
+- **Renvois pendants** de l'annexe B (ART-10/11, F.5/6) résolus par les stubs candidats ; ART-10 désormais formalisé dans la table de maturité (§10.5) ; ART-12 (aide à la décision clinique) ajouté comme chapitre candidat avec articulation CMP-08/CAP-INT-05.
 - CNISN conformité référence explicitement les contrats ART et les profils PTISN.
+- **Nouvelles normes CNISN** : STD-0008 (réclamations/paiements) et STD-0009 (LMIS/logistique) ajoutées au lot L4 dans la trajectoire (§9) ; retours « lots consommateurs » ajoutés dans les fiches normes.
 
 ### 10.7 Écarts mineurs
 
@@ -309,7 +311,7 @@ L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspon
 
 ### 10.8 Recommandations (ouvertes — voir §7.7)
 
-1. Créer la traçabilité ARTSN→CNISN dans le référentiel (relier chapitres/exigences/fondations aux CAP-INT/P-INT concernés, ou publier une table de correspondance ART↔CAP-INT).
+1. ~~Créer la traçabilité ARTSN→CNISN dans le référentiel (relier chapitres/exigences/fondations aux CAP-INT/P-INT concernés, ou publier une table de correspondance ART↔CAP-INT)~~ — **résolu** : chaîne PT→CAP-INT→CAP complète (18/18 CAP couvertes) ; retour « lots consommateurs » depuis 17 artefacts CNISN + 13 profils PTISN vers `02_artsn/07_lots/index.md` ; index inverse annexe F ; ART-12 (aide à la décision clinique) ajouté comme nouveau chapitre ARTSN.
 2. ~~Aligner l'annexe B du CNISN sur les taxonomies P-INT/CAP-INT~~ — **résolu** : 5 familles de réponse couvrant les 14 CAP-INT (§10.2, §7).
 3. Clarifier le rôle du CNASN dans la gouvernance et la conformité du CNISN (hiérarchie, instance d'homologation, critères harmonisés).
 4. Réconcilier le traitement de la logistique (ART-10 candidat vs « non couverte » de la table de maturité ARTSN).

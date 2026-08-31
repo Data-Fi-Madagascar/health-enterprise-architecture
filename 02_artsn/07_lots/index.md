@@ -233,7 +233,7 @@ Le CNISN fixe le **quoi** (normes obligatoires et décisions d'architecture) ; l
 | L1 — Infrastructure & sécurité | STD-0002 (chiffrement), STD-0007 (SNOMED CT, licence) | ADR-0008 (Audit ATNA), ADR-0010 (cadre légal) |
 | L2 — Applications terrain | STD-0001 (FHIR R4), STD-0006 (terminologie) | ADR-0003 (FHIR R4) |
 | L3 — Médiation & registres | STD-0003 (X-Road), STD-0005 (PIXm/PDQm), STD-0004 (mADX) | ADR-0001 (X-Road), ADR-0004 (identité), ADR-0006 (INP) |
-| L4 — Analytique & pilotage | STD-0001 (FHIR R4 analytique), ADR-0008 (ATNA) | ADR-0003 (FHIR R4) |
+| L4 — Analytique & pilotage | STD-0001 (FHIR R4 analytique), STD-0008 (réclamations/paiements), STD-0009 (LMIS/logistique), ADR-0008 (ATNA) | ADR-0003 (FHIR R4) |
 | L5 — Extension & pérennisation | — (renfort) | ADR-0005 (consentement) |
 | L6 — Interopérabilité transfrontalière | GDHCN (échange international) | ADR-0007 (GDHCN) |
 | L7 — Coordination One Health | — (intersectoriel) | ADR-0001 (X-Road), ADR-0007 (GDHCN) |

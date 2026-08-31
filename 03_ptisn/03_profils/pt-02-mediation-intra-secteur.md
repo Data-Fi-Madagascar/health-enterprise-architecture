@@ -151,3 +151,7 @@ Limites : la médiation intra-secteur ne remplace pas le service d’échange in
 Dépendances : services nationaux santé, point d’échange sectoriel, et éventuellement la plateforme interinstitutionnelle.
 
 <!-- END:GENERATED -->
+
+## Références au cadre
+
+- **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/07_lots/index.md), [L7 — Coordination One Health](../../02_artsn/07_lots/index.md)

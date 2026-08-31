@@ -240,3 +240,7 @@ Conformité attestée par l’application de la matrice RBAC, le respect des pol
 Le service d’autorisation s’appuie sur l’identité professionnelle (PT-05) et l’identité du bénéficiaire (PT-04). Dépendance : fédération avec les identités pangouvernementales et la plateforme nationale d’échange. Aucun mécanisme d’authentification renforcée ou ABAC national n’est encore figé (profils à définir).
 
 <!-- END:GENERATED -->
+
+## Références au cadre
+
+- **ARTSN — lots consommateurs** : [L1 — Infrastructure & sécurité](../../02_artsn/07_lots/index.md), [L4 — Analytique & pilotage](../../02_artsn/07_lots/index.md)

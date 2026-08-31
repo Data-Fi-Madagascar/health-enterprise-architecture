@@ -104,3 +104,7 @@ Le service terminologique est une dépendance transverse de tous les profils mé
 Le service ne définit pas les contenus métier ; il héberge et diffuse les terminologies. Dépendance : constitution du catalogue national des terminologies et gouvernance des extensions nationales.
 
 <!-- END:GENERATED -->
+
+## Références au cadre
+
+- **ARTSN — lots consommateurs** : [L2 — Applications terrain](../../02_artsn/07_lots/index.md)

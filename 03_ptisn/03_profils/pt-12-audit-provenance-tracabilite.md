@@ -143,3 +143,7 @@ Conformité attestée par l’adoption de FHIR `AuditEvent` et `Provenance`, la 
 Les quatre services sont corrélables mais indépendants dans leurs formats, stockages et durées de conservation. Dépendance : standards d’observabilité et ATNA encore à figer.
 
 <!-- END:GENERATED -->
+
+## Références au cadre
+
+- **ARTSN — lots consommateurs** : [L1 — Infrastructure & sécurité](../../02_artsn/07_lots/index.md), [L4 — Analytique & pilotage](../../02_artsn/07_lots/index.md)

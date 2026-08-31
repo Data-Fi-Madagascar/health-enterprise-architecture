@@ -40,6 +40,8 @@ Chaque entrée liste les principes associés via le référentiel.
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-01.md,referentiel/capacites/cap-int-02.md,referentiel/capacites/cap-int-04.md,referentiel/capacites/cap-int-05.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
+**Statut : candidate**
+
 ### Résolution d’identité du bénéficiaire
 
 #### Finalité
@@ -75,6 +77,8 @@ Permettre aux systèmes autorisés de relier plusieurs représentations d’un m
 - [P-INT-16: Résidence et non-réplication](../../referentiel/principes/p-int-16.md)
 - [P-INT-17: Minimisation](../../referentiel/principes/p-int-17.md)
 - [P-INT-18: Traçabilité différenciée](../../referentiel/principes/p-int-18.md)
+
+**Statut : candidate**
 
 ### Registre et résolution des professionnels de santé
 
@@ -116,6 +120,8 @@ Cette capacité est distincte :
 - La résolution des professionnels alimente la **gestion de la paie** ([CAP-09: Gestion des ressources humaines en santé](../../referentiel/capabilites/cap-09.md)) et les **habilitations** ([CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md)) ; elle ne gère pas la rémunération.
 - Échange financier associé : [PT-18: Échange de réclamations et paiements](../../03_ptisn/03_profils/pt-18-echange-reclamations-paiements.md).
 
+**Statut : candidate**
+
 ### Référentiel des structures et services de santé
 
 #### Finalité
@@ -147,6 +153,8 @@ Fournir une autorité commune sur :
 - [P-INT-02: Résolution contre l’autorité](../../referentiel/principes/p-int-02.md)
 - [P-INT-03: Copies locales non autoritatives](../../referentiel/principes/p-int-03.md)
 - [P-INT-04: Historisation des références](../../referentiel/principes/p-int-04.md)
+
+**Statut : candidate**
 
 ### Terminologie et codification communes
 
@@ -181,6 +189,8 @@ Permettre aux systèmes de partager des définitions et codifications cohérente
 
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-03.md,referentiel/capacites/cap-int-06.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
+
+**Statut : candidate**
 
 ### Échange et médiation inter-systèmes
 
@@ -222,6 +232,8 @@ Permettre aux systèmes de transmettre, recevoir, transformer et acheminer des d
 - [P-INT-23: Conformité fondée sur des preuves](../../referentiel/principes/p-int-23.md)
 - [P-INT-24: Applicabilité déclarée](../../referentiel/principes/p-int-24.md)
 - [P-INT-25: Réévaluation continue](../../referentiel/principes/p-int-25.md)
+
+**Statut : candidate**
 
 ### Catalogue des services et registre des contrats
 
@@ -267,6 +279,8 @@ Rendre visibles, gouvernables et réutilisables les services et interfaces du se
 
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-07.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
+
+**Statut : candidate**
 
 ### Accès et exposition des données analytiques
 
@@ -315,6 +329,8 @@ La conception interne des entrepôts, projections et modèles analytiques relèv
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-08.md,referentiel/capacites/cap-int-09.md,referentiel/capacites/cap-int-10.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
+**Statut : candidate**
+
 ### Confiance, sécurité et autorisation
 
 #### Finalité
@@ -345,6 +361,8 @@ Fournir les mécanismes nécessaires à l’identification, l’authentification
 - [P-INT-19: Neutralité technologique](../../referentiel/principes/p-int-19.md)
 - [P-INT-20: Portabilité et réversibilité](../../referentiel/principes/p-int-20.md)
 
+**Statut : candidate**
+
 ### Gestion des consentements et bases d’autorisation
 
 #### Finalité
@@ -373,6 +391,8 @@ Le consentement est une base possible parmi plusieurs bases légales ou fonction
 - [P-INT-15: Limitation à la finalité](../../referentiel/principes/p-int-15.md)
 - [P-INT-16: Résidence et non-réplication](../../referentiel/principes/p-int-16.md)
 - [P-INT-17: Minimisation](../../referentiel/principes/p-int-17.md)
+
+**Statut : candidate**
 
 ### Provenance, audit et traçabilité
 
@@ -410,6 +430,8 @@ Permettre de comprendre :
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-11.md,referentiel/capacites/cap-int-12.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
+**Statut : candidate**
+
 ### Qualité et réconciliation
 
 #### Finalité
@@ -442,6 +464,8 @@ Permettre de détecter et traiter les divergences entre systèmes, référentiel
 - [P-INT-23: Conformité fondée sur des preuves](../../referentiel/principes/p-int-23.md)
 - [P-INT-24: Applicabilité déclarée](../../referentiel/principes/p-int-24.md)
 - [P-INT-25: Réévaluation continue](../../referentiel/principes/p-int-25.md)
+
+**Statut : candidate**
 
 ### Conformité et tests d’interopérabilité
 
@@ -482,6 +506,8 @@ La conformité ne se traduit pas par un service exposé mais par un **processus 
 
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-13.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
+
+**Statut : candidate**
 
 ### Interopérabilité transfrontalière et confiance internationale
 
@@ -586,6 +612,8 @@ Madagascar est membre de l'Union Africaine (UA), de la Commission Économique de
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-14.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
+**Statut : candidate**
+
 ### Échanges intersectoriels One Health
 
 #### Finalité
@@ -679,6 +707,8 @@ Les secteurs concernés :
 <!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-15.md,referentiel/capacites/cap-int-16.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
+**Statut : candidate**
+
 ### Échange et traçabilité de la chaîne d'approvisionnement sanitaire
 
 #### Finalité
@@ -711,6 +741,8 @@ Cette capacité est distincte de la gestion logistique applicative (LMIS métier
 - [ART-10: Logistique](../../referentiel/chapitres/art-10.md)
 - [CAP-INT-03: Échange et médiation](../../referentiel/capacites/cap-int-03.md)
 - [CAP-INT-10: Provenance, audit et traçabilité](../../referentiel/capacites/cap-int-10.md)
+
+**Statut : candidate**
 
 ### Données environnementales et de résilience climatique
 

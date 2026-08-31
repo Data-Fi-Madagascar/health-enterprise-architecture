@@ -149,3 +149,7 @@ stop
 L’identifiant santé ne doit pas nécessairement être identique à l’identifiant fondationnel. Le lien entre les deux doit être gouverné, sécurisé et limité à une finalité.
 
 <!-- END:GENERATED -->
+
+## Références au cadre
+
+- **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/07_lots/index.md)

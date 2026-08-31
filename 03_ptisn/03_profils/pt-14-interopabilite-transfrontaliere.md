@@ -220,3 +220,7 @@ La conformité est attestée par la journalisation de tous les flux, la vérific
 | [CAP-17: Engagement patient](../../referentiel/capabilites/cap-17.md) | Capabilité CAESN | Active |
 
 <!-- END:GENERATED -->
+
+## Références au cadre
+
+- **ARTSN — lots consommateurs** : [L6 — Interopérabilité transfrontalière](../../02_artsn/07_lots/index.md), [L7 — Coordination One Health](../../02_artsn/07_lots/index.md)

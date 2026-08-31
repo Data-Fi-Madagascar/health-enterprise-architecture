@@ -15,8 +15,6 @@ related: ["CAP-INT-10", "ART-10", "CMP-23"]
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-**Statut : candidate**
-
 ## 1. Objet et périmètre
 
 Le **profil PT-17 — Logistique & chaîne d’approvisionnement (LMIS)** définit le registre logistique et la traçabilité des stocks (médicaments, vaccins, intrants, équipements). Il assure la continuité de la chaîne d’approvisionnement par une traçabilité de bout en bout et un échange interopérable entre LMIS et partenaires.
@@ -130,3 +128,7 @@ Le profil opérationnalise le chapitre [ART-10: Logistique](../../referentiel/ch
 Le profil dépend des référentiels de produits (PT-05/PT-06), de la terminologie (PT-07) et du médiateur (PT-02) pour l’acheminement X-Road. Il ne définit pas le référentiel produit lui-même (codification GS1 à gouverner nationalement).
 
 <!-- END:GENERATED -->
+
+## Références au cadre
+
+- **ARTSN — lots consommateurs** : [L2 — Applications terrain](../../02_artsn/07_lots/index.md), [L3 — Médiation & registres](../../02_artsn/07_lots/index.md), [L4 — Analytique & pilotage](../../02_artsn/07_lots/index.md)

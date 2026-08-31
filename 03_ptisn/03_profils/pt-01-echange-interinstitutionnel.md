@@ -137,3 +137,7 @@ Limites : le service ne remplace pas la résolution d’identité patient, le re
 Dépendances : infrastructure X-Road, autorité de gouvernance du CNI, UGD (coordination secteur santé).
 
 <!-- END:GENERATED -->
+
+## Références au cadre
+
+- **ARTSN — lots consommateurs** : [L1 — Infrastructure & sécurité](../../02_artsn/07_lots/index.md), [L3 — Médiation & registres](../../02_artsn/07_lots/index.md), [L7 — Coordination One Health](../../02_artsn/07_lots/index.md)

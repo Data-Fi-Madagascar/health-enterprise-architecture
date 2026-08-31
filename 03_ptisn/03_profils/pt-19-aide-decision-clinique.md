@@ -105,3 +105,7 @@ Aucun produit national n’est encore retenu (**statut : à instruire**). Les ar
 Produit national à instruire. Dépendance : terminologie nationale (PT-07), répertoire de données cliniques (CMP-08), et composant d’invocation CDS Hooks / FHIR Clinical Reasoning.
 
 <!-- END:GENERATED -->
+
+## Références au cadre
+
+- **ARTSN — lots consommateurs** : [L1 — Infrastructure & sécurité](../../02_artsn/07_lots/index.md), [L2 — Applications terrain](../../02_artsn/07_lots/index.md), [L4 — Analytique & pilotage](../../02_artsn/07_lots/index.md)

@@ -111,3 +111,7 @@ Aucun produit national n’est encore retenu (**statut : à instruire**). Le bus
 Produit national à instruire. Dépendance : X-Road (transport), terminologie (PT-07), résolution bénéficiaire/prestataire (PT-04/PT-05), et norme STD-0008.
 
 <!-- END:GENERATED -->
+
+## Références au cadre
+
+- **ARTSN — lots consommateurs** : [L1 — Infrastructure & sécurité](../../02_artsn/07_lots/index.md), [L2 — Applications terrain](../../02_artsn/07_lots/index.md), [L3 — Médiation & registres](../../02_artsn/07_lots/index.md), [L4 — Analytique & pilotage](../../02_artsn/07_lots/index.md)
