@@ -5,7 +5,7 @@ id: CAP-01
 type: capabilite
 niveau: "1"
 title: Offre de soins et continuité des services
-status: draft
+status: stable
 owner: Responsables de capabilités métier
 version: "0.0.1"
 envelope: 00_caesn/03_capabilities/business.md
@@ -14,8 +14,8 @@ implements: []
 applies_to: ["VS-01"]
 related: []
 tags: ["caesn", "niveau-1", "capabilite", "CAP-01"]
----
 realized_by: ["SRV-02"]
+---
 # Offre de soins et continuité des services
 
 ## Rôle dans le système

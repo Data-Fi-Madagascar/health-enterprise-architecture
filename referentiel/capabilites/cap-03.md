@@ -5,7 +5,7 @@ id: CAP-03
 type: capabilite
 niveau: "1"
 title: Qualité, sécurité des soins et amélioration continue
-status: draft
+status: stable
 owner: Responsables de capabilités métier
 version: "0.0.1"
 envelope: 00_caesn/03_capabilities/business.md
@@ -14,8 +14,8 @@ implements: []
 applies_to: ["VS-01", "VS-04"]
 related: []
 tags: ["caesn", "niveau-1", "capabilite", "CAP-03"]
----
 realized_by: ["SRV-06"]
+---
 # Qualité, sécurité des soins et amélioration continue
 
 ## Rôle dans le système

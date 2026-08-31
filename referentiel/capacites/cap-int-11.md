@@ -4,7 +4,7 @@ id: CAP-INT-11
 type: capacite
 niveau: "2"
 title: Qualité et réconciliation
-status: active
+status: candidate
 owner: DEPSI
 version: "0.5"
 family: qualite-conformite

@@ -4,7 +4,7 @@ id: CAP-INT-07
 type: capacite
 niveau: "2"
 title: Accès et exposition des données analytiques
-status: active
+status: candidate
 owner: DEPSI
 version: "0.5"
 family: analytique

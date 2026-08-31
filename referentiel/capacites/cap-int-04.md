@@ -4,7 +4,7 @@ id: CAP-INT-04
 type: capacite
 niveau: "2"
 title: Référentiel des structures et services de santé
-status: active
+status: candidate
 owner: DEPSI
 version: "0.5"
 family: referentiels

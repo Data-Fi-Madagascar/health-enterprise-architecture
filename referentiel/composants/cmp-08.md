@@ -5,7 +5,7 @@ type: composant-applicatif
 categorie: applicatif
 niveau: "1"
 title: Répertoire de données cliniques opérationnelles
-status: draft
+status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md

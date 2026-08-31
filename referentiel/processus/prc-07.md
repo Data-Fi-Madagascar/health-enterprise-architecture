@@ -4,7 +4,7 @@ id: PRC-07
 type: processus-metier
 niveau: "1"
 title: Identification et droits des bénéficiaires
-status: draft
+status: active
 owner: Direction de la couverture santé universelle
 version: "0.0.1"
 envelope: 00_caesn/01_value-streams/vs-03-financial-protection.md

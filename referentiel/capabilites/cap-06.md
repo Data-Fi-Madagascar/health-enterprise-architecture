@@ -5,7 +5,7 @@ id: CAP-06
 type: capabilite
 niveau: "1"
 title: Vaccination, prévention et promotion de la santé
-status: draft
+status: stable
 owner: Responsables de capabilités métier
 version: "0.0.1"
 envelope: 00_caesn/03_capabilities/business.md

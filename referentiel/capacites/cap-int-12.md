@@ -4,7 +4,7 @@ id: CAP-INT-12
 type: capacite
 niveau: "2"
 title: Conformité et tests d’interopérabilité
-status: active
+status: candidate
 owner: DEPSI
 version: "0.5"
 family: qualite-conformite

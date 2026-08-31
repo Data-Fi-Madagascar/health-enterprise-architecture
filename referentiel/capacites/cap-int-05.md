@@ -4,7 +4,7 @@ id: CAP-INT-05
 type: capacite
 niveau: "2"
 title: Terminologie et codification communes
-status: active
+status: candidate
 owner: DEPSI
 version: "0.5"
 family: referentiels

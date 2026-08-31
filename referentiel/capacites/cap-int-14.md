@@ -4,7 +4,7 @@ id: CAP-INT-14
 type: capacite
 niveau: "2"
 title: Échanges intersectoriels One Health
-status: active
+status: candidate
 owner: DEPSI
 version: "0.5"
 family: intersectoriel
@@ -54,7 +54,7 @@ Les secteurs concernés :
 
 #### Médiation intersectorielle
 
-- transformation sémantique entre taxonomies sectorielles (CIM-10 pour santé humaine, OIE pour animaux, classification environnementale) ;
+- transformation sémantique entre taxonomies sectorielles (CIM-11 pour santé humaine, OIE pour animaux, classification environnementale) ;
 - normalisation des dimensions communes (espace, temps, géographie) ;
 - corrélation des signaux faibles entre secteurs ;
 - détection de clusters intersectoriels.

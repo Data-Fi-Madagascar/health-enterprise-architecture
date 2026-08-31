@@ -5,7 +5,7 @@ type: composant-applicatif
 categorie: applicatif
 niveau: "1"
 title: Sante communautaire mobile (offline)
-status: draft
+status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
@@ -13,6 +13,7 @@ implements: ["ENF-1", "F-1"]
 maps_to: ["CAP-INT-09"]
 applies_to: ["PRC-01", "PRC-02", "PRC-03"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-21", "couche-2"]
+related: ["VS-01", "VS-02"]
 ---
 # CMP-21 : Sante communautaire mobile (offline)
 **Contenu normatif.** Ce composant equipe les agents de sante de proximite (agents communautaires, sages-femmes, relais) sur terminaux mobiles fonctionnant hors ligne. Il capture les donnees communautaires : vaccinations, consultations, references vers le niveau superieur, releves de terrain et enquetes, et assure la remontee d'information vers la structure de reference. Il s'appuie sur le resolveur d'identite local (CMP-32) pour rattacher le beneficiaire sans ambiguite, meme hors reseau.

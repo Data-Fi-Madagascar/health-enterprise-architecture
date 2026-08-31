@@ -5,7 +5,7 @@ id: CAP-17
 type: capabilite
 niveau: "1"
 title: Engagement patient et identité numérique
-status: draft
+status: stable
 owner: Responsables de capabilités habilitantes
 version: "0.1.0"
 envelope: 00_caesn/03_capabilities/enabling.md
@@ -14,8 +14,8 @@ implements: []
 applies_to: ["VS-01", "VS-03"]
 related: ["VS-01", "VS-02", "PRC-01", "PRC-04", "PRC-07"]
 tags: ["caesn", "niveau-1", "capabilite", "CAP-17", "identite", "consentement"]
----
 realized_by: ["SRV-01"]
+---
 # Engagement patient et identité numérique
 
 ## Rôle dans le système

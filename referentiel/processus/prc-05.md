@@ -4,7 +4,7 @@ id: PRC-05
 type: processus-metier
 niveau: "1"
 title: Alerte, investigation et riposte
-status: draft
+status: active
 owner: Direction de la protection sociale et de la promotion de la santé
 version: "0.0.1"
 envelope: 00_caesn/01_value-streams/vs-02-risk-protection.md

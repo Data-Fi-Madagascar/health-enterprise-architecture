@@ -4,7 +4,7 @@ id: CAP-INT-08
 type: capacite
 niveau: "2"
 title: Confiance, sécurité et autorisation
-status: active
+status: candidate
 owner: DEPSI
 version: "0.5"
 family: confiance
@@ -14,9 +14,8 @@ implements: []
 applies_to: []
 related: []
 tags: ["cnisn", "niveau-2", "capacite"]
----
 realized_by: ["SRV-04"]
-
+---
 # Confiance, sécurité et autorisation
 
 ### Finalité

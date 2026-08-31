@@ -5,7 +5,7 @@ type: registre-gouvernance
 categorie: regulation
 niveau: "1"
 title: Conventions internationales
-status: draft
+status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md

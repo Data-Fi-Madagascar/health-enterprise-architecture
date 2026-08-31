@@ -5,7 +5,7 @@ type: composant-applicatif
 categorie: applicatif
 niveau: "1"
 title: Gestion des pharmacies (PMIS)
-status: draft
+status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
@@ -13,6 +13,7 @@ implements: ["ENF-1", "F-1"]
 maps_to: ["CAP-INT-09"]
 applies_to: ["PRC-02", "PRC-05"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-20", "couche-2"]
+related: ["VS-01", "VS-04"]
 ---
 # CMP-20 : Gestion des pharmacies (PMIS)
 **Contenu normatif.** Ce composant realise la gestion pharmaceutique au point de service (pharmacies hospitalieres, de district et communautaires) : catalogue des produits, stocks, dispensations, facturation et factures d'achat. Il assure la tracabilite du medicament du repertoire vers le beneficiaire et dialogue avec la chaine logistique (CMP-23/LMIS) pour le reapprovisionnement et les alertes de rupture. Il integre le volet pharmacovigilance en signalant les effets indesirables a la surveillance (PRC-05).

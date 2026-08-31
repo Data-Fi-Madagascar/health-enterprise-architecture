@@ -5,13 +5,14 @@ type: composant-infrastructure
 categorie: infrastructure
 niveau: "1"
 title: Reseaux mobiles prives (APN securises)
-status: draft
+status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
 implements: ["ART-7"]
 uses: []
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-31", "couche-1"]
+related: ["VS-04"]
 ---
 # CMP-31 : Reseaux mobiles prives (APN securises)
 **Contenu normatif.** Ce composant fournit des APN (Access Point Name) securises sur les reseaux mobiles des operateurs pour les terminaux de terrain (CMP-21, agents communautaires, vehicules). Il garantit un transit prive des donnees de sante hors de l'internet ouvert.

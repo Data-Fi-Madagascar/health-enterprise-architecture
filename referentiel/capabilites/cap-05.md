@@ -5,7 +5,7 @@ id: CAP-05
 type: capabilite
 niveau: "1"
 title: Surveillance épidémiologique, alerte, investigation et riposte
-status: draft
+status: stable
 owner: Responsables de capabilités métier
 version: "0.1.0"
 envelope: 00_caesn/03_capabilities/business.md

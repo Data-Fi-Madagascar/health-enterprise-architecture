@@ -5,7 +5,7 @@ type: composant-applicatif
 categorie: applicatif
 niveau: "1"
 title: Espace sante patient
-status: draft
+status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
@@ -13,6 +13,7 @@ implements: ["ENF-1", "F-1"]
 maps_to: ["CAP-INT-08"]
 applies_to: ["PRC-01", "PRC-07", "PRC-08"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-22", "couche-2"]
+related: ["VS-01", "VS-03"]
 ---
 # CMP-22 : Espace sante patient
 **Contenu normatif.** Ce composant est le portail oriente beneficiaire du systeme de sante numerique. Il expose au citoyen son dossier, ses rendez-vous, ses droits, son historique de soins et ses documents (resultats d'examens, certificats). Il permet la prise de rendez-vous, l'acces aux services administratifs et la consultation des donnees partagees selon le consentement du beneficiaire. Il materialise l'engagement du patient et l'ouverture du systeme a la partie prenante citoyen.

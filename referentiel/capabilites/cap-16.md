@@ -5,7 +5,7 @@ id: CAP-16
 type: capabilite
 niveau: "1"
 title: Gestion du portefeuille d'initiatives numériques
-status: draft
+status: stable
 owner: Responsables de capabilités habilitantes
 version: "0.0.1"
 envelope: 00_caesn/03_capabilities/enabling.md

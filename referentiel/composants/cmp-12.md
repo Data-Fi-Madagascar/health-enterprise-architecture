@@ -5,7 +5,7 @@ type: composant-applicatif
 categorie: applicatif
 niveau: "1"
 title: Registre d'éligibilité et de couverture (CSU — ART-4C)
-status: draft
+status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
@@ -14,8 +14,8 @@ implements: ["ART-4C"]
 applies_to: ["PRC-09", "PRC-10"]
 related: ["ENF-5", "CAP-09", "VS-04"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-12", "couche-4"]
----
 realized_by: ["WP-04"]
+---
 # Registre d'éligibilité et de couverture (CSU — ART-4C)
 
 **Contenu normatif.** Ce composant gère les données d'éligibilité et de couverture santé (CSU). Il assure la vérification en temps réel des droits des patients et fournit les services de contrôle d'éligibilité pour les applications métier.

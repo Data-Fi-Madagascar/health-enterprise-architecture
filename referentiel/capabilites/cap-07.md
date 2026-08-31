@@ -5,7 +5,7 @@ id: CAP-07
 type: capabilite
 niveau: "1"
 title: Protection financière, couverture santé universelle
-status: draft
+status: stable
 owner: Responsables de capabilités métier
 version: "0.0.1"
 envelope: 00_caesn/03_capabilities/business.md
@@ -42,7 +42,7 @@ Son absence fragilise la protection financière des ménages ([VS-03: Protéger 
 
 ## Maturité
 
-| Niveau actuel | Niveau cible (3 ans) |
+| Niveau actuel | Niveau cible (2 ans) |
 |---------------|----------------------|
 | 1/5 | 3/5 |
 

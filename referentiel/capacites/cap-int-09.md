@@ -4,7 +4,7 @@ id: CAP-INT-09
 type: capacite
 niveau: "2"
 title: Gestion des consentements et bases d’autorisation
-status: active
+status: candidate
 owner: DEPSI
 version: "0.5"
 family: confiance

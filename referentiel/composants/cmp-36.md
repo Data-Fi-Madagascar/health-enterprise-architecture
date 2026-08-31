@@ -5,13 +5,14 @@ type: composant-securite
 categorie: securite
 niveau: "1"
 title: Passerelle de confiance mondiale OMS (GDHCN)
-status: draft
+status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
 implements: ["ART-7"]
 uses: ["CMP-26", "CMP-27", "CMP-28", "CMP-29", "CMP-30", "CMP-31"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-36", "axe-securite"]
+related: ["VS-02", "VS-04"]
 ---
 # CMP-36 : Passerelle de confiance mondiale OMS (GDHCN)
 **Contenu normatif.** Ce composant interconnecte le systeme avec la Gateway de confiance mondiale de l'OMS (GDHCN) pour la verification internationale des certificats de vaccination et de sante. Il publie les certificats nationaux signes et consomme ceux des etats partenaires, dans le respect des protocoles GDHCN.

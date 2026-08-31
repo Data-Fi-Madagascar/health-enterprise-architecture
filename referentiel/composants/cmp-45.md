@@ -5,7 +5,7 @@ type: registre-gouvernance
 categorie: work-package
 niveau: "1"
 title: Cellule d'audit
-status: draft
+status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md

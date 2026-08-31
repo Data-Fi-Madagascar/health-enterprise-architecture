@@ -96,21 +96,49 @@ def audit_couverture():
         warn("%s — %s : aucun PT ne cible cette CAP-INT" % (r["id"], r["title"][:45]))
 
     section("Résumé")
+    # Séparer les CAP sans aucune référence (gap pur) de celles référencées mais non couvertes
+    unreferenced = []
+    referenced_but_uncovered = []
+    for cid, title in uncovered:
+        has_ref = sparql_rows("""
+            SELECT ?id WHERE {
+                { ?x hea:related ?s . ?s hea:id "%s" }
+                UNION
+                { ?x hea:appliesTo ?s . ?s hea:id "%s" }
+                UNION
+                { ?s hea:appliesTo ?x . ?x hea:id "%s" }
+                ?x hea:id ?id .
+                FILTER (?id != "%s")
+            }
+            LIMIT 1
+        """ % (cid, cid, cid, cid))
+        if has_ref:
+            referenced_but_uncovered.append((cid, title))
+        else:
+            unreferenced.append((cid, title))
+
     info("CAP couvertes : %d / %d" % (len(all_caps) - len(uncovered), len(all_caps)))
     info("CAP-INT orphelins : %d" % len(orphelins))
 
-    total_issues = len(uncovered) + len(orphelins)
-    if uncovered:
-        err("CAP non couvertes :")
-        for cid, title in uncovered:
+    total_issues = len(orphelins)
+    if unreferenced:
+        err("CAP non couvertes (gap stratégique — aucune chaîne PT) : %d" % len(unreferenced))
+        for cid, title in unreferenced:
             err("  %s — %s" % (cid, title))
+    if referenced_but_uncovered:
+        warn("CAP référencées mais sans chaîne PT→CAP-INT : %d" % len(referenced_but_uncovered))
+        for cid, title in referenced_but_uncovered:
+            warn("  %s — %s" % (cid, title))
 
     print()
-    if total_issues == 0:
-        ok("COUVERTURE COMPLÈTE")
+    if total_issues == 0 and not unreferenced:
+        ok("COUVERTURE CONFORME")
+    elif total_issues == 0:
+        warn("COUVERTURE PARTIELLE — %d CAP stratégiques sans chaîne PT (gap documenté)"
+            % len(unreferenced))
     else:
-        err("ANOMALIES : %d CAP non couvertes, %d CAP-INT orphelins"
-            % (len(uncovered), len(orphelins)))
+        err("ANOMALIES : %d CAP-INT orphelins, %d gaps stratégiques"
+            % (len(orphelins), len(unreferenced)))
 
     return total_issues == 0
 

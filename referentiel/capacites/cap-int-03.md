@@ -4,7 +4,7 @@ id: CAP-INT-03
 type: capacite
 niveau: "2"
 title: Échange et médiation inter-systèmes
-status: active
+status: candidate
 owner: DEPSI
 version: "0.5"
 family: echange
@@ -14,9 +14,8 @@ implements: []
 applies_to: []
 related: []
 tags: ["cnisn", "niveau-2", "capacite"]
----
 realized_by: ["SRV-03"]
-
+---
 # Échange et médiation inter-systèmes
 
 ### Finalité

@@ -4,7 +4,7 @@ id: CAP-INT-02
 type: capacite
 niveau: "2"
 title: Registre et résolution des professionnels de santé
-status: active
+status: candidate
 owner: DEPSI
 version: "0.5"
 family: referentiels
@@ -50,4 +50,9 @@ Cette capacité est distincte :
 - [P-INT-04: Historisation des références](../principes/p-int-04.md)
 - [P-INT-14: Base d’autorisation explicite](../principes/p-int-14.md)
 - [P-INT-15: Limitation à la finalité](../principes/p-int-15.md)
+
+### Articulation avec la paie et les habilitations
+
+- La résolution des professionnels alimente la **gestion de la paie** ([CAP-09: Gestion des ressources humaines en santé](../capabilites/cap-09.md)) et les **habilitations** ([CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../capabilites/cap-15.md)) ; elle ne gère pas la rémunération.
+- Échange financier associé : [PT-18: Échange de réclamations et paiements](../../03_ptisn/03_profils/pt-18-echange-reclamations-paiements.md).
 

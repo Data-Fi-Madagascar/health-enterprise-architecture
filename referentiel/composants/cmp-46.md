@@ -5,7 +5,7 @@ type: registre-gouvernance
 categorie: principe
 niveau: "1"
 title: Arbitrage et risques
-status: draft
+status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md

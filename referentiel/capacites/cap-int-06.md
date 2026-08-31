@@ -4,7 +4,7 @@ id: CAP-INT-06
 type: capacite
 niveau: "2"
 title: Catalogue des services et registre des contrats
-status: active
+status: candidate
 owner: DEPSI
 version: "0.5"
 family: echange

@@ -4,7 +4,7 @@ id: CAP-INT-01
 type: capacite
 niveau: "2"
 title: Résolution d’identité du bénéficiaire
-status: active
+status: candidate
 owner: DEPSI
 version: "0.5"
 family: referentiels
@@ -14,9 +14,8 @@ implements: []
 applies_to: []
 related: []
 tags: ["cnisn", "niveau-2", "capacite"]
----
 realized_by: ["PL-01", "WP-01"]
-
+---
 # Résolution d’identité du bénéficiaire
 
 ### Finalité

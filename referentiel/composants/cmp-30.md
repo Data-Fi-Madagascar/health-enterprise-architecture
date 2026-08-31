@@ -5,13 +5,14 @@ type: composant-infrastructure
 categorie: infrastructure
 niveau: "1"
 title: Reseau prive MPLS
-status: draft
+status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
 implements: ["ART-7"]
 uses: []
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-30", "couche-1"]
+related: ["VS-04"]
 ---
 # CMP-30 : Reseau prive MPLS
 **Contenu normatif.** Ce composant opere le reseau prive MPLS reliant les sites du systeme de sante, isole de l'internet public pour les flux sensibles. Il offre un transport garantie, avec qualite de service, entre le noeud central, les noeuds regionaux et les structures connectees.

@@ -4,7 +4,7 @@ id: PRC-01
 type: processus-metier
 niveau: "1"
 title: Accès, orientation et admission du patient
-status: draft
+status: active
 owner: Direction des soins
 version: "0.0.1"
 envelope: 00_caesn/01_value-streams/vs-01-access-care.md

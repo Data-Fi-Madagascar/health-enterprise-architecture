@@ -5,7 +5,7 @@ id: CAP-18
 type: capabilite
 niveau: "1"
 title: Coordination intersectorielle (One Health)
-status: draft
+status: stable
 owner: Responsables de capabilités habilitantes
 version: "0.1.0"
 envelope: 00_caesn/03_capabilities/enabling.md

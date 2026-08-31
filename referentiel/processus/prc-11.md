@@ -4,7 +4,7 @@ id: PRC-11
 type: processus-metier
 niveau: "1"
 title: Suivi et pilotage de la performance
-status: draft
+status: active
 owner: Secrétariat Général
 version: "0.0.1"
 envelope: 00_caesn/01_value-streams/vs-04-system-steering.md

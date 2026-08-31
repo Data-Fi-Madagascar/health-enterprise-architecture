@@ -4,7 +4,7 @@ id: CAP-INT-13
 type: capacite
 niveau: "2"
 title: Interopérabilité transfrontalière et confiance internationale
-status: active
+status: candidate
 owner: DEPSI
 version: "0.5"
 family: transfrontalier
@@ -97,7 +97,7 @@ Madagascar est membre de l'Union Africaine (UA), de la Commission Économique de
 ### Principes associés
 
 
-- [P-INT-01: Autorité désignée](../principes/p-int-01.md) (Autorité désignée) : l'autorité nationale reste l'autorité pour les données malgaches, même lors d'échanges ;
+- [P-INT-01: Autorité désignée](../principes/p-int-01.md) (Autorité désignée) : l'autorité nationale reste l'autorité pour les données malagasy, même lors d'échanges ;
 - [P-INT-05: Contrat explicite](../principes/p-int-05.md) (Contrat explicite) : tout flux transfrontalier nécessite un accord bilatéral ou multilatéral ;
 - [P-INT-10: Accord préalable](../principes/p-int-10.md) (Accord préalable) : accord obligatoire avant tout échange avec une institution étrangère ;
 - [P-INT-14: Base d’autorisation explicite](../principes/p-int-14.md) (Base d'autorisation explicite) : base légale documentée pour chaque type de flux sortant ;

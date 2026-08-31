@@ -5,7 +5,7 @@ id: CAP-15
 type: capabilite
 niveau: "1"
 title: Cybersécurité, confidentialité et gouvernance des données personnelles
-status: draft
+status: stable
 owner: Responsables de capabilités habilitantes
 version: "0.0.1"
 envelope: 00_caesn/03_capabilities/enabling.md

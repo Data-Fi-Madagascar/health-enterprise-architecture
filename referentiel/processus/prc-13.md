@@ -4,7 +4,7 @@ id: PRC-13
 type: processus-metier
 niveau: "1"
 title: Échange et coordination transfrontaliers
-status: draft
+status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 00_caesn/01_value-streams/vs-02-risk-protection.md
@@ -14,9 +14,8 @@ applies_to: ["CAP-INT-13", "CAP-15", "CAP-17"]
 related: ["VS-02", "BO-07"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-13"]
 uses: ["CMP-02", "CMP-06", "CMP-15"]
----
 performed_by: ["ROL-05"]
-
+---
 # Échange et coordination transfrontaliers
 
 ## Objectif

@@ -4,7 +4,7 @@ id: CAP-INT-10
 type: capacite
 niveau: "2"
 title: Provenance, audit et traçabilité
-status: active
+status: candidate
 owner: DEPSI
 version: "0.5"
 family: confiance
@@ -14,9 +14,8 @@ implements: []
 applies_to: []
 related: []
 tags: ["cnisn", "niveau-2", "capacite"]
----
 realized_by: ["SRV-05"]
-
+---
 # Provenance, audit et traçabilité
 
 ### Finalité

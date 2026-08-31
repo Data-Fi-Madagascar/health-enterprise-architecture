@@ -5,14 +5,14 @@ id: CAP-09
 type: capabilite
 niveau: "1"
 title: Gestion des ressources humaines en santé
-status: draft
+status: stable
 owner: Responsables de capabilités habilitantes
 version: "0.0.1"
 envelope: 00_caesn/03_capabilities/enabling.md
 maps_to: []
 implements: []
 applies_to: ["VS-01", "VS-02", "VS-04"]
-related: []
+related: ["CAP-INT-02", "CAP-15", "ART-6", "PT-18"]
 tags: ["caesn", "niveau-1", "capabilite", "CAP-09"]
 ---
 # Gestion des ressources humaines en santé
@@ -48,6 +48,12 @@ Son absence fragilise la gestion des ressources humaines et compromet la continu
 | Niveau actuel | Niveau cible (3 ans) |
 |---------------|----------------------|
 | 1/5 | 3/5 |
+
+## Articulation avec la paie, les habilitations et la rétention
+
+- La **rémunération et la paie** s'appuient sur le registre des professionnels ([CAP-INT-02: Registre et résolution des professionnels de santé](../capacites/cap-int-02.md)) et sur l'échange financier ([PT-18: Échange de réclamations et paiements](../../03_ptisn/03_profils/pt-18-echange-reclamations-paiements.md)).
+- Les **habilitations** relèvent de [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../capabilites/cap-15.md).
+- L'**analytique de rétention** (taux de rotation, départs) s'appuie sur [ART-6: Analytique et restitution](../chapitres/art-6.md).
 
 ## Propriétaire
 

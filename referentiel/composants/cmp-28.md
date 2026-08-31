@@ -6,13 +6,14 @@ type: composant-infrastructure
 categorie: infrastructure
 niveau: "1"
 title: "Noeuds locaux (equipements chiffres : Edge)"
-status: draft
+status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
 implements: ["ART-7"]
 uses: []
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-28", "couche-1"]
+related: ["VS-04"]
 ---
 
 # CMP-28 : Noeuds locaux (equipements chiffres : Edge)

@@ -5,7 +5,7 @@ type: composant-applicatif
 categorie: applicatif
 niveau: "1"
 title: Centre de commande & Crises intersectorielles (alertes, crises, veille)
-status: draft
+status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
@@ -14,8 +14,8 @@ implements: ["ART-5", "ART-0"]
 applies_to: ["PRC-05", "PRC-11", "PRC-13"]
 related: ["ENF-2", "CAP-05", "CAP-06", "VS-02", "VS-04"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-02", "couche-6"]
----
 realized_by: ["WP-07"]
+---
 # Centre de commande & Crises intersectorielles
 
 **Contenu normatif.** Ce composant constitue le centre unique de supervision des alertes épidémiques et de coordination des crises intersectorielles (santé, élevage, environnement). Il agrège les signaux de la surveillance ([CMP-14: Registre des produits, intrants et indicateurs](cmp-14.md)), du moteur d'alertes ([CMP-04: Moteur analytique & IA (IA prédictive, routeur alertes, Grand Livre)](cmp-04.md)) et des registres de gouvernance ([CMP-17: Message broker asynchrone](cmp-17.md)), et fournit une vue en temps réel pour la prise de décision multi-ministérielle.

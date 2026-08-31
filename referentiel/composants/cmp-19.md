@@ -5,7 +5,7 @@ type: composant-applicatif
 categorie: applicatif
 niveau: "1"
 title: Dossiers & statistiques de sante (hopitaux)
-status: draft
+status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
@@ -13,6 +13,7 @@ implements: ["ENF-1", "F-1"]
 maps_to: ["CAP-INT-09"]
 applies_to: ["PRC-01", "PRC-02", "PRC-03", "PRC-06"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-19", "couche-2"]
+related: ["VS-01", "VS-04"]
 ---
 # CMP-19 : Dossiers & statistiques de sante (hopitaux)
 **Contenu normatif.** Ce composant constitue le systeme d'information hospitalier de base au niveau de l'etablissement (Couche 2 du modele ARTSN). Il tient le dossier patient informatise, les admissions, les consultations, les hospitalisations, les actes cliniques et les comptes rendus, et produit les statistiques d'activite hospitaliere (RNAM, indicateurs CSU). Il alimente en amont les registres et l'entrepot national (CMP-03) ainsi que les tableaux de bord (CMP-01). Concu pour un environnement a connectivite intermittente, il fonctionne en mode degrade et se reconcilie avec les composants centraux au retour de couverture.

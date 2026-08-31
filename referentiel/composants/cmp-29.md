@@ -5,13 +5,14 @@ type: composant-infrastructure
 categorie: infrastructure
 niveau: "1"
 title: Liaisons dediees & VPN
-status: draft
+status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
 implements: ["ART-7"]
 uses: []
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-29", "couche-1"]
+related: ["VS-04"]
 ---
 # CMP-29 : Liaisons dediees & VPN
 **Contenu normatif.** Ce composant etablit les liaisons dediees et les tunnels VPN securises entre les structures, les noeuds et les partenaires. Il fournit la connectivite de confiance necessaire aux echanges inter-structures et aux acces distants administrateurs.

@@ -5,7 +5,7 @@ type: composant-applicatif
 categorie: applicatif
 niveau: "1"
 title: Surveillance de la sante animale (zoonoses)
-status: draft
+status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
@@ -13,6 +13,7 @@ implements: ["ENF-1", "F-1"]
 maps_to: ["CAP-INT-14"]
 applies_to: ["PRC-04", "PRC-05"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-24", "couche-2"]
+related: ["VS-02", "VS-04"]
 ---
 # CMP-24 : Surveillance de la sante animale (zoonoses)
 **Contenu normatif.** Ce composant assure la surveillance sanitaire animale et la detection precoce des zoonoses dans une logique One Health. Il collecte les evenements chez les animaux (foyers, signaux cliniques, mouvements de cheptels), les croise avec la surveillance humaine (CMP-25, PRC-04) et declenche les alertes inter-sectorielles. Il s'appuie sur les referentiels de terminologie animal/humain et les registres des structures veterinaires.
