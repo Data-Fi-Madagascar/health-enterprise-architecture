@@ -23,7 +23,7 @@ DATE  := $(shell date +%F)
 
 export TAG_VERSION=$(VERSION)
 
-.PHONY: pdf docx public wrappers check clean release note validate rdf
+.PHONY: pdf docx public wrappers check clean release note validate rdf jsonschema fhir openapi oda
 
 pdf:
 	@echo "==> Génération des 5 PDF (version $(VERSION), moteur $(ENGINE))"
@@ -51,6 +51,9 @@ check:
 	$(PY) scripts/validate_ref.py
 	$(PY) scripts/compile_rdf.py
 	$(PY) scripts/compile_rdf.py --validate
+	$(PY) scripts/compilers/compile_jsonschema.py --validate
+	$(PY) scripts/compilers/compile_fhir.py --validate
+	$(PY) scripts/compilers/compile_openapi.py --validate
 
 clean:
 	rm -rf dist
@@ -66,6 +69,25 @@ rdf:
 # liens relatifs cassés). Indépendant de build_wrappers --check (voir note ci-dessous).
 validate:
 	$(PY) scripts/validate_ref.py
+
+# Compilation JSON Schema : transforme les objets de données en schémas JSON vDraft-07
+jsonschema:
+	@echo "==> Compilation JSON Schema (DO → JSON Schema vDraft-07)"
+	$(PY) scripts/compilers/compile_jsonschema.py --validate
+
+# Compilation FHIR R4 : génère CodeSystem, ValueSet et StructureDefinition
+fhir:
+	@echo "==> Compilation FHIR R4 (DO → StructureDefinition, CodeSystem, ValueSet)"
+	$(PY) scripts/compilers/compile_fhir.py --validate
+
+# Compilation OpenAPI 3.0 : génère les spécifications API pour les profils
+openapi:
+	@echo "==> Compilation OpenAPI 3.0 (PT → OpenAPI specs)"
+	$(PY) scripts/compilers/compile_openapi.py --validate
+
+# Compilation ODA complète : tous les compilateurs en séquence
+oda: rdf jsonschema fhir openapi
+	@echo "==> Compilation ODA complète terminée"
 
 # NOTE : `build_wrappers.py --check` présente un décalage préexistant (générateur
 # émet « — » dans les titres générés alors que les enveloppes committées utilisent

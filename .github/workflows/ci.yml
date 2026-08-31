@@ -40,9 +40,35 @@ jobs:
       - name: Validate SHACL shapes
         run: python3 scripts/compile_rdf.py --validate
 
+      - name: Compile JSON Schema (DO → JSON Schema vDraft-07)
+        run: python3 scripts/compilers/compile_jsonschema.py --validate
+
+      - name: Compile FHIR R4 (DO → StructureDefinition, CodeSystem, ValueSet)
+        run: python3 scripts/compilers/compile_fhir.py --validate
+
+      - name: Compile OpenAPI 3.0 (PT → OpenAPI specs)
+        run: python3 scripts/compilers/compile_openapi.py --validate
+
+      - name: Compile ODA (nomenclatures → payload + FHIR CodeSystem)
+        run: python3 scripts/compilers/compile_oda.py --validate
+
+      - name: Validate governance (fichiers d'auteur)
+        run: python3 scripts/compilers/compile_oda.py --check-governance
+
       - name: Upload RDF artifact
         uses: actions/upload-artifact@v4
         with:
           name: hea-rdf
           path: dist/hea.ttl
+          retention-days: 30
+
+      - name: Upload ODA artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: hea-oda
+          path: |
+            dist/schemas/
+            dist/fhir/
+            dist/openapi/
+            03_ptisn/schemas/
           retention-days: 30

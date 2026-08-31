@@ -113,3 +113,83 @@ hea:ComposantShape a sh:NodeShape ;
         sh:pattern "^CMP-\\d{2}$" ;
         sh:message "L'ID d'un composant doit être au format CMP-NN" ;
     ] .
+
+# --- Shape Valeur : doit avoir produit et detenuPar ---
+hea:ValeurShape a sh:NodeShape ;
+    sh:targetClass hea:Valeur ;
+    sh:property [
+        sh:path hea:id ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:pattern "^VAL-\\d{2}$" ;
+        sh:message "L'ID d'une valeur doit être au format VAL-NN" ;
+    ] ;
+    sh:property [
+        sh:path hea:produit ;
+        sh:minCount 1 ;
+        sh:message "Toute valeur doit être produite par au moins 1 flux de valeur" ;
+    ] ;
+    sh:property [
+        sh:path hea:detenuPar ;
+        sh:minCount 1 ;
+        sh:message "Toute valeur doit être détenue par au moins 1 partie prenante" ;
+    ] .
+
+# --- Shape ExchangeContract : contrats d'échange (PT-03) ---
+# Valide que les profils exposant des services respectent les exigences de contrat.
+hea:ExchangeContractShape a sh:NodeShape ;
+    sh:target [
+        a sh:SPARQLTarget ;
+        sh:select """
+            SELECT ?this WHERE {
+                ?this rdf:type hea:Profil .
+                ?this hea:mapsTo ?capInt .
+                ?capInt rdf:type hea:CapaciteInteroperabilite .
+            }
+        """ ;
+    ] ;
+    sh:property [
+        sh:path hea:version ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:message "Tout profil technique exposant un service doit avoir une version explicite (PT-03 §10)" ;
+    ] ;
+    sh:property [
+        sh:path hea:owner ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:message "Tout profil technique exposant un service doit avoir un propriétaire technique (PT-03 §10)" ;
+    ] .
+
+# --- Shape ProfileFunctionalOwner : propriétaire fonctionnel ---
+# Valide que les profils ont un propriétaire fonctionnel (partie prenante).
+hea:ProfileFunctionalOwnerShape a sh:NodeShape ;
+    sh:targetClass hea:Profil ;
+    sh:property [
+        sh:path hea:aPourProprietaireFonctionnel ;
+        sh:minCount 0 ;
+        sh:maxCount 1 ;
+        sh:message "Un profil technique peut avoir un propriétaire fonctionnel (partie prenante)" ;
+    ] .
+
+# --- Shape ComposantArchitecture : propriétés spécifiques ---
+# Valide les composants d'architecture avec les nouvelles propriétés.
+hea:ComposantArchitectureShape a sh:NodeShape ;
+    sh:targetClass hea:Composant ;
+    sh:property [
+        sh:path hea:soutientFluxDeValeur ;
+        sh:minCount 0 ;
+        sh:message "Un composant peut soutenir un flux de valeur" ;
+    ] ;
+    sh:property [
+        sh:path hea:utiliseComposant ;
+        sh:minCount 0 ;
+        sh:message "Un composant peut utiliser un autre composant" ;
+    ] ;
+    sh:property [
+        sh:path hea:supporteStandard ;
+        sh:minCount 0 ;
+        sh:message "Un composant peut supporter un standard" ;
+    ] .

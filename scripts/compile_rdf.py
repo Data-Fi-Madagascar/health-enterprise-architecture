@@ -52,13 +52,22 @@ TYPE_TO_CLASS = {
     "gap": "Gap",
     "objet-de-donnees": "ObjetDeDonnees",
     "objet-metier": "ObjetMetier",
+    "registre-gouvernance": "Composant",
+    "valeur": "Valeur",
+    # Aliases ArchiMate (équivalents)
+    "composant-architecture": "ComposantArchitecture",
+    "concept-donnee": "ConceptDonnee",
+    "flux-de-valeur": "FluxDeValeur",
+    "profil-technique": "ProfilTechnique",
 }
 
 # Mapping type YAML → propriété de relation principale
 RELATION_FIELDS = ["maps_to", "implements", "applies_to", "related",
                    "realized_by", "contributes_to", "performs", "accesses",
                    "governs", "represents", "assigned_to", "has_role",
-                   "located_at", "serves"]
+                   "located_at", "serves", "produced_by", "detenu_par",
+                   "soutient_flux_de_valeur", "utilise_composant",
+                   "supporte_standard", "a_pour_proprietaire_fonctionnel"]
 
 # Property name mapping (snake_case → camelCase ArchiMate)
 PROPERTY_MAP = {
@@ -76,6 +85,12 @@ PROPERTY_MAP = {
     "has_role": "hasRole",
     "located_at": "locatedAt",
     "serves": "serves",
+    "produced_by": "produit",
+    "detenu_par": "detenuPar",
+    "soutient_flux_de_valeur": "soutientFluxDeValeur",
+    "utilise_composant": "utiliseComposant",
+    "supporte_standard": "supporteStandard",
+    "a_pour_proprietaire_fonctionnel": "aPourProprietaireFonctionnel",
 }
 
 
@@ -159,6 +174,13 @@ def collect_objects():
                 val = val.strip().strip('"').strip("'")
                 obj[field] = val
 
+        # Extraire les annotations FHIR
+        for fhir_field in ["fhir_resource", "fhir_profile", "fhir_version"]:
+            val = fm_field(fm, fhir_field)
+            if val is not None:
+                val = val.strip().strip('"').strip("'")
+                obj[fhir_field] = val
+
         # Extraire les listes de relations
         for rel in RELATION_FIELDS:
             val = fm_field(fm, rel)
@@ -196,6 +218,18 @@ def resolve_property(rel, source_type, target):
             # Capabilite → Capabilite = Association (related)
             if target.startswith("CAP-"):
                 return "related"
+        if source_type in ("etape-valeur", "flux-valeur"):
+            # EtapeValeur/FluxValeur → Capabilite = Influence (contributesTo)
+            if target.startswith("CAP-"):
+                return "contributesTo"
+        if source_type in ("processus-metier",):
+            # ProcessusMetier → Capabilite = Association (related), not Serving
+            if target.startswith("CAP-"):
+                return "related"
+        if source_type in ("chapitre", "fondation"):
+            # Chapitre/Fondation → Exigence = Association (related), not Serving
+            if target.startswith("ENF-"):
+                return "related"
         # Composant → Capabilite/Service = Serving (serves)
         return "serves"
 
@@ -210,6 +244,7 @@ def generate_rdf(objects, output_path):
     lines.append("@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .")
     lines.append("@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .")
     lines.append("@prefix owl: <http://www.w3.org/2002/07/owl#> .")
+    lines.append("@prefix fhir: <http://hl7.org/fhir/> .")
     lines.append("")
 
     for obj in objects:
@@ -242,6 +277,14 @@ def generate_rdf(objects, output_path):
         if "tags" in obj:
             for tag in obj["tags"]:
                 lines.append('    hea:tag "%s" ;' % turtle_escape(tag))
+
+        # Annotations FHIR (datatype properties)
+        if "fhir_resource" in obj:
+            lines.append('    fhirResource "%s" ;' % turtle_escape(obj["fhir_resource"]))
+        if "fhir_profile" in obj:
+            lines.append('    fhirProfile "%s" ;' % turtle_escape(obj["fhir_profile"]))
+        if "fhir_version" in obj:
+            lines.append('    fhirVersion "%s" ;' % turtle_escape(obj["fhir_version"]))
 
         # Relations (object properties)
         for rel in RELATION_FIELDS:

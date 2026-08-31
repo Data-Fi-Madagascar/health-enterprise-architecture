@@ -36,7 +36,12 @@ LINK_DIRS = ["00_caesn", "01_cnisn", "02_artsn", "03_ptisn", "referentiel"]
 REL_DIRS = ["referentiel"]
 EXCLUDE_DIRS = {".git", "__pycache__", "node_modules", "dist", ".venv",
                 "graphify-out", ".agents", ".claude", "mintlify-site", "docs"}
-RELATION_KEYS = ["maps_to", "implements", "applies_to", "related"]
+RELATION_KEYS = ["maps_to", "implements", "applies_to", "related",
+                 "realized_by", "contributes_to", "performs", "accesses",
+                 "governs", "represents", "assigned_to", "has_role",
+                 "located_at", "serves", "produced_by", "detenu_par",
+                 "soutient_flux_de_valeur", "utilise_composant",
+                 "supporte_standard", "a_pour_proprietaire_fonctionnel"]
 
 # Îlots légitimes attendus (candidats non encore reliés) — ne font pas échouer.
 KNOWN_ISLANDS = {"art-10", "art-11", "f-5", "f-6"}

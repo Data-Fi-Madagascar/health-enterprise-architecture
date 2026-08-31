@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://healmadagascar.mg/schemas/schemas/payloads/fosa-status.json",
+  "title": "FOSA-STATUS - \"Statut opérationnel d'une formation sanitaire\"",
+  "description": "Schéma de validation du payload FOSA-STATUS pour les messages REST du réseau national de santé.",
+  "type": "string",
+  "enum": [
+    "actif",
+    "inactif",
+    "temporaire",
+    "ferme",
+    "projet",
+    "- `status` : statut du concept dans le code system (active"
+  ],
+  "default": "actif",
+  "x-hea-nomenclature": "FOSA-STATUS",
+  "x-hea-version": "\"1.0.0\"",
+  "x-hea-owner": "DEPSI",
+  "x-hea-fhir-codesystem": "https://healmadagascar.mg/fhir/CodeSystem/hea-fosa-status"
+}

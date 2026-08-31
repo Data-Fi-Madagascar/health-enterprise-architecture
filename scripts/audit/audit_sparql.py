@@ -79,6 +79,57 @@ QUERIES = {
         }
         ORDER BY ?id
     """,
+
+    # --- ART F.4 : Composants sans attache FluxValeur ---
+    # Chaque composant doit être rattaché à au moins un flux de valeur
+    "ART F.4 — Composants sans attache FluxValeur": """
+        SELECT ?id ?title WHERE {
+            ?s rdf:type hea:Composant .
+            ?s hea:id ?id .
+            ?s hea:title ?title .
+            FILTER NOT EXISTS { ?s hea:soutientFluxDeValeur ?fv }
+            FILTER NOT EXISTS { ?s hea:related ?fv . ?fv rdf:type hea:FluxValeur }
+            FILTER NOT EXISTS { ?s hea:contributesTo ?fv . ?fv rdf:type hea:FluxValeur }
+            FILTER NOT EXISTS { ?s hea:serves ?cap . ?cap rdf:type hea:Capabilite .
+                               ?cap hea:contributesTo ?fv . ?fv rdf:type hea:FluxValeur }
+        }
+        ORDER BY ?id
+    """,
+
+    # --- P-INT-07 : Capabilités sans propriétaire fonctionnel ---
+    # Chaque capabilité CNISN doit avoir un propriétaire désigné
+    "P-INT-07 — Capabilités sans propriétaire": """
+        SELECT ?id ?title WHERE {
+            ?s rdf:type hea:CapaciteInteroperabilite .
+            ?s hea:id ?id .
+            ?s hea:title ?title .
+            FILTER NOT EXISTS { ?s hea:owner ?o }
+        }
+        ORDER BY ?id
+    """,
+
+    # --- Composants sans owner (rappel) ---
+    "Composants sans owner (rappel)": """
+        SELECT ?id ?title WHERE {
+            ?s rdf:type hea:Composant .
+            ?s hea:id ?id .
+            ?s hea:title ?title .
+            FILTER NOT EXISTS { ?s hea:owner ?o }
+        }
+        ORDER BY ?id
+    """,
+
+    # --- Profils sans propriétaire fonctionnel ---
+    "Profils sans propriétaire fonctionnel": """
+        SELECT ?id ?title WHERE {
+            ?s rdf:type hea:Profil .
+            ?s hea:id ?id .
+            ?s hea:title ?title .
+            FILTER NOT EXISTS { ?s hea:aPourProprietaireFonctionnel ?pp }
+            FILTER NOT EXISTS { ?s hea:owner ?o }
+        }
+        ORDER BY ?id
+    """,
 }
 
 

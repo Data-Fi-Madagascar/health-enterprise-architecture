@@ -3,7 +3,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix.archimate: <http://www.opengroup.org/xsd/archimate/3.1/> .
+@prefix archimate: <http://www.opengroup.org/xsd/archimate/3.1/> .
 @base <https://healmadagascar.mg/ontologie/hea> .
 
 <https://healmadagascar.mg/ontologie/hea> rdf:type owl:Ontology ;
@@ -26,6 +26,10 @@ hea: rdf:type owl:Namespace ;
 hea:FluxValeur rdf:type owl:Class ;
     rdfs:label "Flux de valeur" ;
     rdfs:comment "Flux de valeur national (VS-01..4). ArchiMate: Value Stream." .
+
+hea:Valeur rdf:type owl:Class ;
+    rdfs:label "Valeur" ;
+    rdfs:comment "Valeur produite par un flux de valeur, détenue par une partie prenante. ArchiMate: Value (motivation layer)." .
 
 hea:Capabilite rdf:type owl:Class ;
     rdfs:label "Capabilité CAESN" ;
@@ -127,6 +131,50 @@ hea:Lieu rdf:type owl:Class ;
     rdfs:comment "Localisation géographique (LOC-01..06). ArchiMate: Location." .
 
 # ===================================================================
+# Classes — Aliases ArchiMate (équivalents de classes existantes)
+# ===================================================================
+
+# ComposantArchitecture : alias de Composant pour la couche applicatif/infrastructure
+ComposantArchitecture rdf:type owl:Class ;
+    rdfs:label "Composant d'architecture" ;
+    rdfs:comment "Alias ArchiMate pour Composant. Couche applicatif/infrastructure/sécurité/gouvernance." ;
+    rdfs:subClassOf hea:Composant ;
+    owl:equivalentClass hea:Composant .
+
+# ConceptDonnee : alias de ObjetDeDonnees
+ConceptDonnee rdf:type owl:Class ;
+    rdfs:label "Concept de donnée" ;
+    rdfs:comment "Alias ArchiMate pour ObjetDeDonnees. Concept de donnée échangeable entre systèmes." ;
+    rdfs:subClassOf hea:ObjetDeDonnees ;
+    owl:equivalentClass hea:ObjetDeDonnees .
+
+# FluxDeValeur : alias de FluxValeur (camelCase, sans accent)
+FluxDeValeur rdf:type owl:Class ;
+    rdfs:label "Flux de valeur" ;
+    rdfs:comment "Alias ArchiMate pour FluxValeur. Flux de valeur national." ;
+    rdfs:subClassOf hea:FluxValeur ;
+    owl:equivalentClass hea:FluxValeur .
+
+# ProfilTechnique : alias de Profil
+ProfilTechnique rdf:type owl:Class ;
+    rdfs:label "Profil technique" ;
+    rdfs:comment "Alias ArchiMate pour Profil. Profil technique d'implémentation." ;
+    rdfs:subClassOf hea:Profil ;
+    owl:equivalentClass hea:Profil .
+
+# ===================================================================
+# Restrictions OWL
+# ===================================================================
+
+# Tertiary doit soutenir au moins un LaboratoireClinique
+Tertiary rdf:type owl:Class ;
+    owl:equivalentClass [
+        a owl:Restriction ;
+        owl:onProperty hea:serves ;
+        owl:someValuesFrom hea:Composant
+    ] .
+
+# ===================================================================
 # Propriétés de relation — Conformes ArchiMate 3.1
 # ===================================================================
 
@@ -223,9 +271,12 @@ hea:contributesTo rdf:type owl:ObjectProperty ;
     rdfs:comment "Influence ArchiMate — une étape de valeur ou un processus contribue à un flux de valeur" ;
     rdfs:domain [
         rdf:type owl:Class ;
-        owl:unionOf (hea:EtapeValeur hea:ProcessusMetier)
+        owl:unionOf (hea:EtapeValeur hea:ProcessusMetier hea:Capabilite hea:Principe hea:FluxValeur hea:WorkPackage)
     ] ;
-    rdfs:range hea:FluxValeur .
+    owl:range [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:FluxValeur hea:Capabilite hea:Plateau)
+    ] .
 
 # --- Mapping inter-niveaux (Association, extension domain-specific) ---
 # Pas de relationship ArchiMate standard pour la correspondance cross-layer.
@@ -261,6 +312,56 @@ hea:locatedAt rdf:type owl:ObjectProperty ;
         owl:unionOf (hea:Composant hea:Service)
     ] ;
     rdfs:range hea:Lieu .
+
+# --- Composition (un flux de valeur produit une valeur) ---
+# ArchiMate: "The Composition relationship models the containment of components."
+# Un FluxValeur compose/définit une Valeur qu'il produit.
+hea:produit rdf:type owl:ObjectProperty ;
+    rdfs:label "produit" ;
+    rdfs:comment "Composition ArchiMate — un flux de valeur produit une valeur" ;
+    owl:domain hea:FluxValeur ;
+    owl:range hea:Valeur .
+
+# --- Association (une valeur est détenue par une partie prenante) ---
+# ArchiMate: "The Association relationship models a relationship between elements."
+# La valeur est associée à (détenue par) une partie prenante.
+hea:detenuPar rdf:type owl:ObjectProperty ;
+    rdfs:label "détenu par" ;
+    rdfs:comment "Association ArchiMate — une valeur est détenue par une partie prenante" ;
+    owl:domain hea:Valeur ;
+    owl:range hea:PartiePrenante .
+
+# --- Composition (un composant soutient un flux de valeur) ---
+# ArchiMate: Composition — un composant actif soutient un flux de valeur.
+hea:soutientFluxDeValeur rdf:type owl:ObjectProperty ;
+    rdfs:label "soutient le flux de valeur" ;
+    rdfs:comment "Composition ArchiMate — un composant soutient un flux de valeur" ;
+    owl:domain hea:Composant ;
+    owl:range hea:FluxValeur .
+
+# --- Association (un composant utilise un autre composant) ---
+# ArchiMate: Association — lien entre deux composants actifs.
+hea:utiliseComposant rdf:type owl:ObjectProperty ;
+    rdfs:label "utilise le composant" ;
+    rdfs:comment "Association ArchiMate — un composant utilise un autre composant" ;
+    owl:domain hea:Composant ;
+    owl:range hea:Composant .
+
+# --- Association (un composant supporte un standard/chapitre) ---
+# ArchiMate: Association — un composant supporte un chapitre ARTSN.
+hea:supporteStandard rdf:type owl:ObjectProperty ;
+    rdfs:label "supporte le standard" ;
+    rdfs:comment "Association ArchiMate — un composant supporte un standard ou chapitre ARTSN" ;
+    owl:domain hea:Composant ;
+    owl:range hea:Chapitre .
+
+# --- Serving (un profil a pour propriétaire fonctionnel une partie prenante) ---
+# ArchiMate: Serving — un profil technique est servi par une partie prenante (propriétaire fonctionnel).
+hea:aPourProprietaireFonctionnel rdf:type owl:ObjectProperty ;
+    rdfs:label "a pour propriétaire fonctionnel" ;
+    rdfs:comment "Serving ArchiMate — un profil technique a pour propriétaire fonctionnel une partie prenante" ;
+    owl:domain hea:Profil ;
+    owl:range hea:PartiePrenante .
 
 # ===================================================================
 # Propriétés de données (Datatype Properties)
@@ -305,6 +406,31 @@ hea:niveau rdf:type owl:DatatypeProperty ;
 hea:tag rdf:type owl:DatatypeProperty ;
     rdfs:label "étiquette" ;
     rdfs:comment "Étiquette de catégorisation" ;
+    owl:domain owl:Thing ;
+    rdfs:range xsd:string .
+
+# ===================================================================
+# Annotations FHIR (metadata, pas relationships ArchiMate)
+# ===================================================================
+
+# Annotation property : type de ressource FHIR (ex. Patient, Encounter, Organization)
+fhirResource rdf:type owl:AnnotationProperty ;
+    rdfs:label "FHIR resource type" ;
+    rdfs:comment "Type de ressource FHIR R4 associé à un objet de données (ex. Patient, Encounter, Organization)" ;
+    owl:domain hea:ObjetDeDonnees ;
+    rdfs:range xsd:string .
+
+# Annotation property : URL du profil FHIR (ex. http://hl7.org/fhir/us/mcsd/StructureDefinition/mcsd-patient)
+fhirProfile rdf:type owl:AnnotationProperty ;
+    rdfs:label "FHIR profile URL" ;
+    rdfs:comment "URL du profil FHIR R4 associé à un profil technique (ex. http://hl7.org/fhir/us/mcsd/...)" ;
+    owl:domain hea:Profil ;
+    rdfs:range xsd:string .
+
+# Annotation property : version FHIR cible
+fhirVersion rdf:type owl:AnnotationProperty ;
+    rdfs:label "FHIR version" ;
+    rdfs:comment "Version FHIR cible (ex. 4.0.1 pour R4)" ;
     owl:domain owl:Thing ;
     rdfs:range xsd:string .
 

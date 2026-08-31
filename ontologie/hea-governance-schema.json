@@ -1,0 +1,153 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://healmadagascar.mg/ontologie/hea-governance-schema",
+  "title": "HEA Governance Meta-Schema",
+  "description": "Schéma de validation des fichiers d'auteur YAML/Markdown du référentiel HEA. Valide les contraintes de gouvernance et d'urbanisation. Les champs marqués (optionnel pour DO existants) sont obligatoires pour les nouvelles nomenclatures.",
+  "type": "object",
+  "required": ["id", "title", "type", "status", "version", "owner", "domain", "tags"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9-]+$",
+      "description": "Identifiant stable unique de l'objet (uppercase, kebab-case)",
+      "examples": ["FOSA-STATUS", "DO-01", "PT-06"]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 5,
+      "description": "Titre canonique de l'objet"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "nomenclature",
+        "objet-de-donnees",
+        "objet-metier",
+        "profil",
+        "capabilite",
+        "capacite",
+        "chapitre",
+        "fondation",
+        "composant-applicatif",
+        "composant-infrastructure",
+        "composant-securite",
+        "composant-gouvernance",
+        "partie-prenante",
+        "processus-metier",
+        "flux-valeur",
+        "etape-valeur",
+        "principe",
+        "acteur",
+        "role",
+        "lieu",
+        "work-package",
+        "plateau",
+        "gap",
+        "service",
+        "registre-gouvernance",
+        "valeur"
+      ],
+      "description": "Type d'objet dans la hiérarchie HEA"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "active", "stable", "candidate", "deprecated"],
+      "description": "Statut de maturité de l'objet"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "Version au format semver",
+      "examples": ["1.0.0", "0.4.0"]
+    },
+    "owner": {
+      "type": "string",
+      "enum": [
+        "DEPSI",
+        "Équipes techniques des initiatives",
+        "Direction des soins",
+        "Direction générale de la santé",
+        "Direction de la pharmacie",
+        "Direction de l'épidémiologie",
+        "Direction de l'information sanitaire"
+      ],
+      "description": "Entité responsable de l'objet"
+    },
+    "domain": {
+      "type": "string",
+      "description": "Domaine du dossier parent (ex: nomenclatures, objets-de-donnees)"
+    },
+    "niveau": {
+      "type": "string",
+      "enum": ["1", "2", "3", "4", "5"],
+      "description": "Niveau hiérarchique (1=CAESN, 2=CNISN, 3=ARTSN, 4=PTISN, 5=Roadmap). Obligatoire pour les nomenclatures."
+    },
+    "envelope": {
+      "type": "string",
+      "description": "Chemin vers l'enveloppe de transclusion"
+    },
+    "artRef": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ART-[0-9]+[A-Z]?$"
+      },
+      "minItems": 1,
+      "description": "Chapitres ARTSN concernés. Obligatoire pour les nomenclatures."
+    },
+    "maps_to": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^CAP-INT-[0-9]+$"
+      },
+      "minItems": 1,
+      "description": "Capacités CNISN implémentées. Obligatoire pour les nomenclatures."
+    },
+    "implements": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^(ART-[0-9]+[A-Z]?|F-[0-9]+|IHE [A-Z]+|HL7 FHIR)$"
+      },
+      "minItems": 1,
+      "description": "Standards/fondations implémentés. Obligatoire pour les nomenclatures."
+    },
+    "applies_to": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^CMP-[0-9]{2}$"
+      },
+      "description": "Composants gouvernés"
+    },
+    "related": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^(DO|PT|BO|ART|CAP|CMP|VS|PRC)-[0-9]+[A-Z]?$"
+      },
+      "description": "Objets liés"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]+$"
+      },
+      "minItems": 1,
+      "description": "Étiquettes de catégorisation"
+    },
+    "fhir_resource": {
+      "type": "string",
+      "enum": ["CodeSystem", "ValueSet", "ConceptMap", "StructureDefinition"],
+      "description": "Type de ressource FHIR associée"
+    },
+    "fhir_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL de la ressource FHIR"
+    }
+  },
+  "additionalProperties": false
+}

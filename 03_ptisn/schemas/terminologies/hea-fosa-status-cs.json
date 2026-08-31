@@ -1,0 +1,114 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "hea-fosa-status",
+  "meta": {
+    "versionId": "\"1.0.0\"",
+    "lastUpdated": "2026-08-31T00:00:00+03:00",
+    "source": "https://healmadagascar.mg/ontologie/hea#nomenclature/FOSA-STATUS"
+  },
+  "url": "\"https://healmadagascar.mg/fhir/CodeSystem/hea-fosa-status\"",
+  "version": "\"1.0.0\"",
+  "name": "HEAFOSASTATUSCodeSystem",
+  "title": "FOSA-STATUS — \"Statut opérationnel d'une formation sanitaire\"",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-08-31",
+  "publisher": "DEPSI - Madagascar",
+  "description": "\"Statut opérationnel d'une formation sanitaire\"",
+  "copyright": "Ministère de la Santé Publique - Madagascar",
+  "content": "complete",
+  "caseSensitive": true,
+  "count": 6,
+  "concept": [
+    {
+      "code": "actif",
+      "display": "Actif",
+      "definition": "Formation sanitaire opérationnelle, desservant la population cible",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "inactive",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "inactif",
+      "display": "Inactif",
+      "definition": "Formation sanitaire temporairement hors service (maintenance, rénovation)",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "inactive",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "temporaire",
+      "display": "Temporaire",
+      "definition": "Structure mise en place pour une réponse exceptionnelle (épidémie, catastrophe)",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "inactive",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "ferme",
+      "display": "Fermé",
+      "definition": "Formation sanitaire définitivement fermée ou détruite",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "inactive",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "projet",
+      "display": "Projet",
+      "definition": "Formation sanitaire en cours de construction ou de mise en service",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "inactive",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "- `status` : statut du concept dans le code system (active",
+      "display": "deprecated",
+      "definition": "retired)",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "inactive",
+          "valueBoolean": false
+        }
+      ]
+    }
+  ]
+}
