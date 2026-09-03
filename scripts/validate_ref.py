@@ -35,6 +35,9 @@ LINK_DIRS = ["00_caesn", "01_cnisn", "02_artsn", "03_ptisn", "referentiel"]
 # source de vérité. Les documents « enveloppes » (00_caesn … 03_ptisn) ne portent
 # pas ces champs et ne doivent pas être traités comme des îlots.
 REL_DIRS = ["referentiel"]
+
+# Répertoires contenant les ADR (Architecture Decision Records)
+ADR_DIRS = ["01_cnisn/06_decisions"]
 EXCLUDE_DIRS = {".git", "__pycache__", "node_modules", "dist", ".venv",
                 "graphify-out", ".agents", ".claude", "mintlify-site", "docs"}
 RELATION_KEYS = ["maps_to", "implements", "applies_to", "related",
@@ -356,10 +359,39 @@ def check_coverage(objects, id_to_file):
     return warnings, info
 
 
+def load_all_adrs():
+    """Charge tous les ADR des répertoires ADR_DIRS."""
+    adrs = {}  # Maps both full ID (adr-0001-x-road) and simple ID (adr-0001) to filepath
+    for adr_dir in ADR_DIRS:
+        full_dir = os.path.join(REPO_ROOT, adr_dir)
+        if not os.path.isdir(full_dir):
+            continue
+        for filename in os.listdir(full_dir):
+            if filename.startswith("adr-") and filename.endswith(".md"):
+                filepath = os.path.join(full_dir, filename)
+                try:
+                    with open(filepath, encoding="utf-8") as f:
+                        text = f.read()
+                    fm, _ = parse_frontmatter(text)
+                    if fm:
+                        adr_id = parse_id(fm)
+                        if adr_id:
+                            # Store both the simple ID and the filename-based ID
+                            adrs[adr_id] = filepath
+                            # Also store with filename (without .md) as key
+                            file_id = filename[:-3]  # Remove .md
+                            if file_id != adr_id:
+                                adrs[file_id] = filepath
+                except Exception:
+                    continue
+    return adrs
+
+
 def main():
     objects = {}          # id -> {file, out:set, in:set}
     id_to_file = {}
     all_links = []        # (file, target)
+    adrs = load_all_adrs()
 
     for path in iter_md(REPO_ROOT, REL_DIRS):
         if os.path.basename(path) == "_schema.md":
@@ -439,10 +471,58 @@ def main():
         for err in check_frontmatter_validity(fm):
             fm_errors.append((path, err))
 
+    # ADR reference validation - check references to ADRs in all markdown files
+    adr_ref_errors = []
+    adr_ref_pattern = re.compile(r"(?:ADR|adr)-\d{4}(?:-[a-z0-9-]+)?", re.IGNORECASE)
+    for adr_dir in ADR_DIRS:
+        full_dir = os.path.join(REPO_ROOT, adr_dir)
+        if not os.path.isdir(full_dir):
+            continue
+        for dirpath, dirnames, filenames in os.walk(full_dir):
+            dirnames[:] = [dn for dn in dirnames if dn not in EXCLUDE_DIRS]
+            for filename in filenames:
+                if filename.endswith(".md"):
+                    filepath = os.path.join(dirpath, filename)
+                    try:
+                        with open(filepath, encoding="utf-8") as f:
+                            content = f.read()
+                        # Find all ADR references in the body
+                        fm, body = parse_frontmatter(content)
+                        if fm:
+                            # Check related field for ADR references
+                            related_val = fm_field(fm, "related")
+                            for ref in list_value(related_val):
+                                ref_upper = ref.upper()
+                                if ref_upper.startswith("ADR-"):
+                                    # Check if referenced ADR exists
+                                    found = False
+                                    for existing_adr_id in adrs:
+                                        if existing_adr_id.upper() == ref_upper:
+                                            found = True
+                                            break
+                                    if not found:
+                                        adr_ref_errors.append((filepath, ref))
+                        # Also check in body text
+                        for match in adr_ref_pattern.finditer(body):
+                            ref = match.group(0)
+                            if ref.upper().startswith("ADR-0000"):
+                                continue  # Skip template
+                            ref_upper = ref.upper()
+                            found = False
+                            for existing_adr_id in adrs:
+                                if existing_adr_id.upper() == ref_upper:
+                                    found = True
+                                    break
+                            if not found:
+                                adr_ref_errors.append((filepath, ref))
+                    except Exception:
+                        continue
+
     # report
     print("=== Validation du référentiel HEA ===")
     print("Objets indexés : %d" % len(objects))
     print("Liens relatifs vérifiés : %d" % len(all_links))
+    print("ADR chargés : %d" % len(adrs))
 
     ok = True
 
@@ -453,6 +533,14 @@ def main():
             print("  - %s (%s) -> %s" % (os.path.relpath(f, REPO_ROOT), s, t))
     else:
         print("[OK] Toutes les relations pointent vers un objet existant.")
+
+    if adr_ref_errors:
+        ok = False
+        print("\n[ERREUR] Références ADR non résolues : %d" % len(adr_ref_errors))
+        for f, ref in adr_ref_errors[:50]:
+            print("  - %s : référence à %s" % (os.path.relpath(f, REPO_ROOT), ref))
+    else:
+        print("[OK] Toutes les références ADR sont valides.")
 
     if broken:
         ok = False
