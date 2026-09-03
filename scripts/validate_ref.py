@@ -22,6 +22,7 @@ Usage :
     python3 scripts/validate_ref.py --strict # exit 1 aussi en présence d'îlots connus
 """
 
+import argparse
 import os
 import re
 import sys
@@ -528,5 +529,78 @@ def main():
     return 0 if ok else 1
 
 
+def validate_frontmatter_only():
+    """Vérifie uniquement que tous les frontmatter sont du YAML valide."""
+    import yaml
+    errors = []
+    
+    for dirpath, _dirs, files in os.walk(REPO_ROOT):
+        if any(d in dirpath for d in EXCLUDE_DIRS):
+            continue
+        for name in files:
+            if not name.endswith(".md"):
+                continue
+            path = os.path.join(dirpath, name)
+            rel = os.path.relpath(path, REPO_ROOT)
+            if rel == "README.md":
+                continue
+            with open(path, encoding="utf-8") as fh:
+                text = fh.read()
+            fm, _ = parse_frontmatter(text)
+            if fm is None:
+                errors.append("%s : frontmatter manquant" % rel)
+                continue
+            try:
+                yaml.safe_load(fm)
+            except yaml.YAMLError as exc:
+                errors.append("%s : YAML invalide - %s" % (rel, str(exc).splitlines()[0]))
+    
+    if errors:
+        print("\n[ERREUR] Frontmatter invalides : %d" % len(errors))
+        for err in errors[:30]:
+            print("  - %s" % err)
+        return 1
+    else:
+        print("[OK] Tous les frontmatter sont du YAML valide.")
+        return 0
+
+
+def validate_quick():
+    """Validation rapide : frontmatter + liens cassés seulement."""
+    import subprocess
+    
+    print("=== Validation rapide ===")
+    
+    # 1. Frontmatter
+    if validate_frontmatter_only() != 0:
+        return 1
+    
+    # 2. Liens cassés
+    result = subprocess.run(
+        [sys.executable, os.path.join(REPO_ROOT, "scripts", "check_links.py")],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True
+    )
+    print(result.stdout)
+    if result.returncode != 0:
+        return 1
+    
+    print("[OK] Validation rapide : tout est conforme.")
+    return 0
+
+
 if __name__ == "__main__":
-    sys.exit(main())
+    parser = argparse.ArgumentParser(description="Valide la cohérence du référentiel HEA")
+    parser.add_argument("--frontmatter-only", action="store_true",
+                        help="Vérifie uniquement la validité des frontmatter YAML")
+    parser.add_argument("--quick", action="store_true",
+                        help="Validation rapide (frontmatter + liens seulement)")
+    args = parser.parse_args()
+    
+    if args.frontmatter_only:
+        sys.exit(validate_frontmatter_only())
+    elif args.quick:
+        sys.exit(validate_quick())
+    else:
+        sys.exit(main())

@@ -28,7 +28,7 @@ DATE  := $(shell date +%F)
 
 export TAG_VERSION=$(VERSION)
 
-.PHONY: pdf docx public wrappers check clean release note validate rdf sync jsonschema fhir openapi oda venv
+.PHONY: pdf docx public wrappers check clean release note validate rdf sync jsonschema fhir openapi oda venv lint test deps
 
 pdf:
 	@echo "==> Génération des 5 PDF (version $(VERSION), moteur $(ENGINE))"
@@ -127,5 +127,24 @@ release: docx public
 	gh release create v$(VERSION) \
 		dist/*-v$(VERSION).docx \
 		dist/public/*-v$(VERSION).docx \
-		--title "v$(VERSION) — Santé numérique de Madagascar" \
+		--title "v$(VERSION) - Santé numérique de Madagascar" \
 		--notes "Documentation as code consolidée (CAESN / CNISN / ARTSN / PTISN) + versions publiques pour décideurs/PTF."
+
+# Linting: vérifier la qualité des fichiers Markdown
+lint:
+	@echo "==> Linting Markdown files"
+	@python3 -m markdownlint_cli2 **/*.md --disable MD013,MD024,MD026,MD033,MD036 --ignore README.md,AGENTS.md,CONTRIBUTING.md
+
+# Test: exécuter les tests de validation
+test:
+	@echo "==> Running validation tests"
+	@python3 scripts/validate_ref.py
+	@python3 scripts/check_links.py
+	@python3 scripts/build_wrappers.py --check
+
+# Check dependencies: vérifier les versions des dépendances
+deps:
+	@echo "==> Checking dependencies"
+	@pip list --outdated
+	@echo "==> Checking for security vulnerabilities"
+	@pip-audit --strict 2>/dev/null || echo "pip-audit not installed. Install with: pip install pip-audit"

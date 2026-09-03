@@ -1,4 +1,4 @@
-name: CI  Validation HEA
+name: CI - Validation HEA
 
 on:
   push:

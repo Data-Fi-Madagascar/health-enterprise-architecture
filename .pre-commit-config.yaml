@@ -1,0 +1,85 @@
+# Pre-commit hooks for Health Enterprise Architecture
+# Run: pip install pre-commit && pre-commit install
+# Then pre-commit will run on every git commit
+
+repos:
+  # Local hooks for HEA-specific validations
+  - repo: local
+    hooks:
+      # 1. Check for broken relative links
+      - id: check-links
+        name: Check broken relative links
+        entry: python3 scripts/check_links.py
+        language: system
+        types: [markdown]
+        pass_filenames: false
+        always_run: true
+
+      # 2. Check wrappers idempotence
+      - id: check-wrappers
+        name: Check wrappers idempotence
+        entry: python3 scripts/build_wrappers.py --check
+        language: system
+        types: [markdown]
+        pass_filenames: false
+        always_run: true
+
+  # Standard hooks for code quality
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      # Remove trailing whitespace
+      - id: trailing-whitespace
+        exclude: ^(referentiel/.*\.md|.*\.yaml)$
+
+      # Remove trailing blank lines
+      - id: end-of-file-fixer
+        exclude: ^(referentiel/.*\.md|.*\.yaml)$
+
+      # Check for mixed line endings
+      - id: mixed-line-ending
+        args: [--fix=no]
+
+      # Check for large files
+      - id: check-added-large-files
+        args: [--maxkb=500]
+
+  # Markdown specific hooks
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.37.0
+    hooks:
+      - id: markdownlint
+        args: [--disable=MD013,MD024,MD026,MD033,MD036]  # Disable line-length, no-inline-html, etc.
+        exclude: ^(README\.md|AGENTS\.md|CONTRIBUTING\.md)$
+
+  # YAML validation
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.32.0
+    hooks:
+      - id: yamllint
+        args: [--strict]
+        exclude: ^(referentiel/_index\.yaml)$  # Custom format, skip
+
+  # Detect secrets and credentials
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.4.0
+    hooks:
+      - id: detect-secrets
+        args: [--baseline, .secrets.baseline]
+        exclude: ^\.git/
+
+  # Check for binary files
+  - repo: local
+    hooks:
+      - id: no-binary-files
+        name: Block binary files (docx, pdf, xlsx, pptx)
+        entry: |-
+          #!/bin/sh
+          if git diff --cached --name-only | grep -E '\.(docx|pdf|xlsx|pptx)$'; then
+            echo "ERROR: Binary files detected in commit. Use .gitignore instead."
+            echo "Run: git rm --cached <file> && echo '<pattern>' >> .gitignore"
+            exit 1
+          fi
+        language: system
+        pass_filenames: false
+        always_run: true
