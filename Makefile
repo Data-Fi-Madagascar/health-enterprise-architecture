@@ -131,9 +131,13 @@ release: docx public
 		--notes "Documentation as code consolidée (CAESN / CNISN / ARTSN / PTISN) + versions publiques pour décideurs/PTF."
 
 # Linting: vérifier la qualité des fichiers Markdown
+# Note: markdownlint-cli2 est un package Node.js, pas Python
+# Installer avec: npm install -g markdownlint-cli2
+# Puis exécuter: markdownlint **/*.md --disable MD013,MD024,MD026,MD033,MD036
 lint:
 	@echo "==> Linting Markdown files"
-	@python3 -m markdownlint_cli2 **/*.md --disable MD013,MD024,MD026,MD033,MD036 --ignore README.md,AGENTS.md,CONTRIBUTING.md
+	@echo "Note: markdownlint-cli2 requires Node.js. Install with: npm install -g markdownlint-cli2"
+	@python3 scripts/check_links.py && python3 scripts/validate_ref.py
 
 # Test: exécuter les tests de validation
 test:
