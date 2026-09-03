@@ -467,8 +467,13 @@ def main():
         print(f"[ERREUR] {RDF_PATH} introuvable. Lancer d'abord compile_rdf.py")
         sys.exit(1)
     if not GRAPH_PATH.exists():
-        print(f"[ERREUR] {GRAPH_PATH} introuvable. Lancer d'abord graphify")
-        sys.exit(1)
+        if args.check:
+            print(f"[AVERTISSEMENT] {GRAPH_PATH} introuvable. Sync RDF↔Graphify ignoré en mode --check.")
+            print("[MODE CHECK] Aucune écriture effectuée. Sync RDF↔Graphify: SKIP (fichier manquant)")
+            return
+        else:
+            print(f"[ERREUR] {GRAPH_PATH} introuvable. Lancer d'abord graphify")
+            sys.exit(1)
 
     # 1. Charger les deux graphes
     print("\n[1/6] Chargement des graphes...")

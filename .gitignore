@@ -15,3 +15,12 @@ graphify-out/
 
 # Configuration locale Obsidian (jamais committée)
 .obsidian/
+
+# Fichiers binaires (DOCX, PDF, Excel, PowerPoint) - générés à partir du code
+*.docx
+*.pdf
+*.xlsx
+*.pptx
+
+# Répertoire des feedbacks (fichiers Excel temporaires)
+feedbacks/
