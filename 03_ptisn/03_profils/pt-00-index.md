@@ -42,8 +42,8 @@ Pour éviter les confusions :
 | PT-11 | Consentement et bases d’autorisation | CMP-12, CAP-INT-09, ART-0, ART-4B, ART-7, ART-11 | active | PT-11 |
 | PT-12 | Audit, provenance et traçabilité | CMP-17, CAP-INT-10, F-1, F-5, F-6, ART-3, ART-7 | active | PT-12 |
 | PT-13 | Qualité et réconciliation | CMP-05, CAP-INT-11, ART-4, ART-5, ART-6 | active | PT-13 |
-| PT-14 | Interopérabilité transfrontalière | CAP-INT-13, CAP-15, CAP-17, CMP-06, CMP-15, ART-7, ART-0, ART-1 | active | PT-14 |
-| PT-15 | Surveillance One Health | CAP-INT-14, CAP-INT-16, CAP-18, CAP-05, CMP-02, CMP-04, CMP-06, ART-11, ART-0, ART-4D, ART-8B | active | PT-15 |
+| PT-14 | Interopérabilité transfrontalière | CAP-INT-13, CMP-06, CMP-15, ART-7, ART-0, ART-1 | active | PT-14 |
+| PT-15 | Surveillance One Health | CAP-INT-14, CAP-INT-16, CMP-02, CMP-04, CMP-06, ART-11, ART-0, ART-4D, ART-8B | active | PT-15 |
 | PT-16 | Orchestration de processus bornés | CMP-07, CMP-06, CAP-INT-03, ART-8A, ART-7 | active | PT-16 |
 | PT-17 | Logistique & chaîne d'approvisionnement (LMIS) | CMP-23, CAP-INT-10, CAP-INT-15, ART-10 | active | PT-17 |
 | PT-18 | Échange de réclamations et paiements | CAP-INT-07, ART-2, ART-9 | active | PT-18 |
