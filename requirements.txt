@@ -2,9 +2,21 @@
 # Usage: pip install -r requirements.txt
 
 # Pipeline RDF/OWL (Phase 2)
-rdflib>=7.0
-pyshacl>=0.25
-pyyaml>=6.0
+rdflib>=7.0,<8.0
+pyshacl>=0.25,<1.0
+pyyaml>=6.0,<7.0
 
-# Validation (déjà utilisé par validate_ref.py via stdlib)
+# Validation (utilisé par validate_ref.py, check_links.py, etc.)
 # pyyaml est aussi utilisé pour le parsing YAML frontmatter
+
+# Pre-commit hooks
+pre-commit>=3.0,<4.0
+
+# Markdown linting
+markdownlint-cli2>=0.37.0
+
+# YAML linting
+yamllint>=1.32.0
+
+# Secret detection
+detect-secrets>=1.4.0
