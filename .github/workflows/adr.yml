@@ -1,0 +1,41 @@
+name: ADR Lifecycle
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '01_cnisn/06_decisions/adr-*.md'
+      - '01_cnisn/06_decisions/index.md'
+      - '01_cnisn/06_decisions/registre-decisions.md'
+
+permissions:
+  contents: read
+
+jobs:
+  validate-adr:
+    name: Validate ADR Changes
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt -q
+
+      - name: Validate ADR structure
+        run: python3 scripts/validate_adr.py --check
+
+      - name: Check ADR index consistency
+        run: python3 scripts/build_adr_index.py --check
+
+      - name: Validate all references
+        run: python3 scripts/validate_ref.py
+
+      - name: Check for broken links
+        run: python3 scripts/check_links.py
