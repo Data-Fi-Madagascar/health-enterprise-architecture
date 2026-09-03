@@ -44,13 +44,13 @@ repos:
       - id: check-added-large-files
         args: [--maxkb=500]
 
-  # Markdown specific hooks
-  - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.37.0
-    hooks:
-      - id: markdownlint
-        args: [--disable=MD013,MD024,MD026,MD033,MD036]  # Disable line-length, no-inline-html, etc.
-        exclude: ^(README\.md|AGENTS\.md|CONTRIBUTING\.md)$
+  # Markdown linting (requires npm install -g markdownlint-cli2)
+  # - repo: https://github.com/igorshubovych/markdownlint-cli
+  #   rev: v0.37.0
+  #   hooks:
+  #     - id: markdownlint
+  #       args: [--disable=MD013,MD024,MD026,MD033,MD036]
+  #       exclude: ^(README\.md|AGENTS\.md|CONTRIBUTING\.md)$
 
   # YAML validation
   - repo: https://github.com/adrienverge/yamllint.git
