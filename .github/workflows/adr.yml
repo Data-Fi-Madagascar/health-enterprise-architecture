@@ -7,6 +7,7 @@ on:
       - '01_cnisn/06_decisions/adr-*.md'
       - '01_cnisn/06_decisions/index.md'
       - '01_cnisn/06_decisions/registre-decisions.md'
+      - '01_cnisn/06_decisions/CHANGELOG.md'
 
 permissions:
   contents: read
@@ -29,10 +30,10 @@ jobs:
         run: pip install -r requirements.txt -q
 
       - name: Validate ADR structure
-        run: python3 scripts/validate_adr.py --check || true
+        run: python3 scripts/validate_adr.py --check
 
       - name: Check ADR index consistency
-        run: python3 scripts/build_adr_index.py --check || true
+        run: python3 scripts/build_adr_index.py --check
 
       - name: Validate all references
         run: python3 scripts/validate_ref.py
