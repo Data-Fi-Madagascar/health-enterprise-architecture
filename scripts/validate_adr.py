@@ -225,6 +225,9 @@ def load_all_adrs():
     for filepath in sorted(ADR_DIR.glob("adr-*.md")):
         if filepath.name == "adr-0000-template.md":
             continue
+        # Skip CHANGELOG.md - it's not an ADR
+        if filepath.name == "CHANGELOG.md":
+            continue
         adr = ADR(filepath)
         adrs[adr.id] = adr
     
