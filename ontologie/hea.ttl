@@ -4,6 +4,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix archimate: <http://www.opengroup.org/xsd/archimate/3.1/> .
+@prefix fhir: <http://hl7.org/fhir/> .
 @base <https://healmadagascar.mg/ontologie/hea> .
 
 <https://healmadagascar.mg/ontologie/hea> rdf:type owl:Ontology ;
@@ -232,6 +233,19 @@ hea:accesses rdf:type owl:ObjectProperty ;
         owl:unionOf (hea:ObjetDeDonnees hea:ObjetMetier)
     ] .
 
+hea:accessedBy rdf:type owl:ObjectProperty ;
+    rdfs:label "accédé par" ;
+    rdfs:comment "Inverse de hea:accesses pour naviguer depuis les objets métier et les objets de données" ;
+    owl:inverseOf hea:accesses ;
+    rdfs:domain [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:ObjetDeDonnees hea:ObjetMetier)
+    ] ;
+    rdfs:range [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:ProcessusMetier hea:Service hea:Composant)
+    ] .
+
 # --- Assignment (responsabilité) ---
 # ArchiMate: "The Assignment relationship models the assignment of responsibility for performing behavior
 # to an entity that performs behavior."
@@ -363,6 +377,15 @@ hea:aPourProprietaireFonctionnel rdf:type owl:ObjectProperty ;
     owl:domain hea:Profil ;
     owl:range hea:PartiePrenante .
 
+# --- Aggregation/Realization (un profil définit un objet de données) ---
+# ArchiMate: Realization/Aggregation — un profil (Product) définit les objets de
+# données dont son API consomme les payloads (contrats d'implémentation).
+hea:defines rdf:type owl:ObjectProperty ;
+    rdfs:label "définit" ;
+    rdfs:comment "Realization ArchiMate — un profil technique définit les objets de données dont son API référence les payloads (dérivé de x-hea-data-objects)" ;
+    owl:domain hea:Profil ;
+    owl:range hea:ObjetDeDonnees .
+
 # ===================================================================
 # Propriétés de données (Datatype Properties)
 # ===================================================================
@@ -414,25 +437,32 @@ hea:tag rdf:type owl:DatatypeProperty ;
 # ===================================================================
 
 # Annotation property : type de ressource FHIR (ex. Patient, Encounter, Organization)
-fhirResource rdf:type owl:AnnotationProperty ;
+fhir:fhirResource rdf:type owl:AnnotationProperty ;
     rdfs:label "FHIR resource type" ;
     rdfs:comment "Type de ressource FHIR R4 associé à un objet de données (ex. Patient, Encounter, Organization)" ;
     owl:domain hea:ObjetDeDonnees ;
     rdfs:range xsd:string .
 
 # Annotation property : URL du profil FHIR (ex. http://hl7.org/fhir/us/mcsd/StructureDefinition/mcsd-patient)
-fhirProfile rdf:type owl:AnnotationProperty ;
+fhir:fhirProfile rdf:type owl:AnnotationProperty ;
     rdfs:label "FHIR profile URL" ;
     rdfs:comment "URL du profil FHIR R4 associé à un profil technique (ex. http://hl7.org/fhir/us/mcsd/...)" ;
     owl:domain hea:Profil ;
     rdfs:range xsd:string .
 
 # Annotation property : version FHIR cible
-fhirVersion rdf:type owl:AnnotationProperty ;
+fhir:fhirVersion rdf:type owl:AnnotationProperty ;
     rdfs:label "FHIR version" ;
     rdfs:comment "Version FHIR cible (ex. 4.0.1 pour R4)" ;
     owl:domain owl:Thing ;
     rdfs:range xsd:string .
+
+# Annotation property : spécification OpenAPI d'un profil
+hea:openapiSpec rdf:type owl:AnnotationProperty ;
+    rdfs:label "spécification OpenAPI" ;
+    rdfs:comment "IRI de la spécification OpenAPI 3.0 générée pour le profil (03_ptisn/schemas/openapi/pt-XX.json)" ;
+    owl:domain hea:Profil ;
+    rdfs:range xsd:anyURI .
 
 # ===================================================================
 # Restrictions de cardinalité (owl:Restriction)

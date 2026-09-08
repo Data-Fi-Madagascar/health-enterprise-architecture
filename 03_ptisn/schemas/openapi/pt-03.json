@@ -1,0 +1,327 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "HEA - Catalogue des services et registre des contrats (PT-03)",
+    "description": "Profil PT-03 — Catalogue des services et registre des contrats. 4 transactions.",
+    "version": "0.4",
+    "contact": {
+      "name": "DEPSI - Madagascar"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://catalogue.health.mg/api/v1",
+      "description": "Catalogue national des services et registre des contrats"
+    }
+  ],
+  "paths": {
+    "/services": {
+      "get": {
+        "operationId": "listServices",
+        "summary": "Lister les services enregistrés (découverte)",
+        "tags": [
+          "Catalogue"
+        ],
+        "parameters": [
+          {
+            "name": "owner",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Filtrer par propriétaire"
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "active",
+                "deprecated"
+              ]
+            },
+            "description": "Filtrer par statut"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Liste des services",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Service"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "operationId": "registerService",
+        "summary": "Publication d'un service (référencement)",
+        "tags": [
+          "Catalogue"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Service"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Service enregistré"
+          }
+        }
+      }
+    },
+    "/services/{serviceId}": {
+      "get": {
+        "operationId": "getService",
+        "summary": "Résolution d'un service par ID",
+        "tags": [
+          "Catalogue"
+        ],
+        "parameters": [
+          {
+            "name": "serviceId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Service trouvé",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Service"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Service non trouvé"
+          }
+        }
+      }
+    },
+    "/contracts": {
+      "get": {
+        "operationId": "listContracts",
+        "summary": "Lister les contrats enregistrés",
+        "tags": [
+          "Registre"
+        ],
+        "responses": {
+          "200": {
+            "description": "Liste des contrats",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Contract"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "operationId": "registerContract",
+        "summary": "Publication d'un contrat (référencement)",
+        "tags": [
+          "Registre"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Contract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Contrat enregistré"
+          }
+        }
+      }
+    },
+    "/contracts/{contractId}": {
+      "get": {
+        "operationId": "getContract",
+        "summary": "Résolution d'un contrat par ID",
+        "tags": [
+          "Registre"
+        ],
+        "parameters": [
+          {
+            "name": "contractId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Contrat trouvé",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Contract"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Contrat non trouvé"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Service": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "owner",
+          "version"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Identifiant unique du service"
+          },
+          "name": {
+            "type": "string",
+            "description": "Nom du service"
+          },
+          "owner": {
+            "type": "string",
+            "description": "Propriétaire du service"
+          },
+          "version": {
+            "type": "string",
+            "description": "Version du service"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "active",
+              "deprecated"
+            ],
+            "description": "Statut du service"
+          },
+          "endpoints": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "consumers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "Contract": {
+        "type": "object",
+        "required": [
+          "id",
+          "serviceId",
+          "type",
+          "version"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Identifiant unique du contrat"
+          },
+          "serviceId": {
+            "type": "string",
+            "description": "ID du service associé"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "openapi",
+              "fhir-ig",
+              "asyncapi",
+              "json-schema",
+              "codesystem",
+              "conceptmap"
+            ],
+            "description": "Type de contrat"
+          },
+          "version": {
+            "type": "string",
+            "description": "Version du contrat"
+          },
+          "schema": {
+            "type": "object",
+            "description": "Contenu du contrat"
+          },
+          "compatibility": {
+            "type": "string",
+            "enum": [
+              "backward",
+              "forward",
+              "full"
+            ]
+          },
+          "deprecationDate": {
+            "type": "string",
+            "format": "date"
+          }
+        }
+      }
+    }
+  },
+  "x-hea-id": "PT-03",
+  "x-hea-title": "Catalogue des services et registre des contrats",
+  "x-hea-version": "0.4",
+  "x-hea-type": "profil-technique",
+  "x-hea-maps-to": [
+    "CAP-INT-06"
+  ],
+  "x-hea-implements": [
+    "F-3",
+    "F-4",
+    "ART-1",
+    "ART-2"
+  ],
+  "x-hea-applies-to": [
+    "CMP-16"
+  ],
+  "x-hea-source": "referentiel/profils/pt-03.md",
+  "x-hea-fhir-resources": [
+    "CodeSystem",
+    "ValueSet",
+    "ConceptMap"
+  ],
+  "x-hea-data-objects": [],
+  "x-hea-file": "referentiel/profils/pt-03.md"
+}

@@ -1,0 +1,69 @@
+---
+title: "Sécurité, contrôle d'accès et résidence de la donnée"
+description: "Niveau 3 — Standards techniques, solutions et règles d'homologation"
+owner: "DEPSI"
+version: "1.0.0"
+status: "draft"
+last_reviewed: "2026-08-08"
+---
+
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 : Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
+
+
+ART-7 : Sécurité, contrôle d'accès et résidence de la donnée constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `ART-7`.
+
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
+
+**Contenu normatif.** L’architecture impose un modèle de sécurité **strict par défaut**. Le contrôle d’accès doit combiner le rôle de l’agent et ses attributs contextuels ou territoriaux. Tout accès, lecture ou écriture doit être chiffré et journalisé de manière immuable. Les données de santé des citoyens ont l’obligation légale de **résider physiquement sur le territoire national** (copie maîtresse).
+
+**Règle résidence ↔ échange.** La résidence obligatoire concerne la **donnée au repos** (copie maîtresse hébergée sur le territoire national, [STD-0002](/cnisn/standards/std-0002-securite-chiffrement)). Elle ne fait pas obstacle aux **échanges transfrontaliers**, qui ne portent que des données **en transit**, chiffrées et horodatées, sans déplacement de la copie maîtresse : l’échange inter-institutionnel emprunte X-Road ([ADR-0001](/cnisn/decisions/adr-0001-x-road)) et l’échange international emprunte la passerelle de confiance mondiale OMS GDHCN ([ADR-0007](/cnisn/decisions/adr-0007-gdhcn)). La résidence et l’échange sont donc compatibles : seule la copie maîtresse est souveraine ; les flux sortants sont des vues chiffrées et révocables.
+
+**Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (terminaux mobiles volés sur le terrain, tentatives d’intrusions extérieures, flux sortants vers partenaires étrangers), cette discipline seule permet de garantir l’inviolabilité du secret médical et la souveraineté numérique de l’État sans rompre le pipeline.
+
+- **Rattachement** : CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles (cybersécurité et gouvernance de la sécurité).
+- **Modèles cibles** : Zero-Trust, RBAC, ABAC, chiffrement (AES-256), AuditEvent FHIR.
+- **Normes CNISN** : [STD-0002: Sécurité et chiffrement](/cnisn/standards/std-0002-securite-chiffrement), [ADR-0001: X-Road](/cnisn/decisions/adr-0001-x-road), [ADR-0007: GDHCN](/cnisn/decisions/adr-0007-gdhcn), [ADR-0008: Audit ATNA](/cnisn/decisions/adr-0008-atna).
+- **Objets de données** : BO-01 Patient & identité, BO-07 Interopérabilité transfrontalière (objets métier CAESN) ; voir aussi le [dictionnaire des objets de données ARTSN](/artsn/objets-de-donnees/index).
+- **Déduit selon** : ENF-1: Résilience à l'instabilité réseau (sécurité locale).
+- **Statut : Stable.**
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- PT-01 : Échange interinstitutionnel
+- PT-02 : Médiation intra-secteur
+- PT-04 : Résolution d’identité du bénéficiaire
+- PT-05 : Registre des professionnels
+- PT-09 : Analytique et exposition de données
+- PT-10 : Confiance, authentification et autorisation
+- PT-11 : Consentement et bases d’autorisation
+- PT-12 : Audit, provenance et traçabilité
+- PT-14 : Interopérabilité transfrontalière
+- PT-16 : Orchestration de processus bornés
+
+<!-- END:GENERATED -->
+## Liens
+
+- Index des chapitres
+- Exigences contextuelles : Partie III
+
+## Références
+
+- **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **`ART-7`** : Sécurité, contrôle d'accès et résidence de la donnée (`referentiel/chapitres/art-7.md`)
+- **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
+- **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

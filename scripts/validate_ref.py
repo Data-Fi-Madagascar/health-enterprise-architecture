@@ -42,6 +42,7 @@ EXCLUDE_DIRS = {".git", "__pycache__", "node_modules", "dist", ".venv",
                 "graphify-out", ".agents", ".claude", "mintlify-site", "docs"}
 RELATION_KEYS = ["maps_to", "implements", "applies_to", "related",
                  "realized_by", "contributes_to", "performs", "accesses",
+                 "accessed_by",
                  "governs", "represents", "assigned_to", "has_role",
                  "located_at", "serves", "produced_by", "detenu_par",
                  "soutient_flux_de_valeur", "utilise_composant",
@@ -130,6 +131,8 @@ def check_frontmatter_validity(fm):
     for ln in lines:
         s = ln.strip()
         if not s or s.startswith("#") or s == "---":
+            continue
+        if ln[:1].isspace():
             continue
         m = re.match(r"^([A-Za-z_][\w-]*):\s*(.*)$", s)
         if not m:

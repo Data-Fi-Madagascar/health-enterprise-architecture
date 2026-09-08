@@ -49,7 +49,7 @@ Le **PT-05 : Registre des professionnels** est le profil technique national pour
 
 Le **PT-06 : Référentiel des structures et services** est le profil technique national pour le référentiel des formations sanitaires et des points de service (géolocalisation).
 
-Le **PT-07 : Terminologie et codification** est le profil technique national pour la gestion des terminologies et des codifications (CIM-10, SNOMED CT, LOINC, ATC).
+Le **PT-07 : Terminologie et codification** est le profil technique national pour la gestion des terminologies et des codifications (CIM-11, SNOMED CT, LOINC, ATC).
 
 Le **PT-08 : Données agrégées** est le profil technique national pour l'échange de données agrégées de santé publique (rapports périodiques, indicateurs). Il est basé sur IHE mADX.
 
@@ -146,6 +146,44 @@ La **synchronisation différée** est le mécanisme de transmission des données
 **PIXm** (*Patient Identifier Cross-referencing for mobile*) est le profil IHE pour la gestion et la recherche des identifiants patients entre domaines via une API REST.
 
 **PDQm** (*Patient Demographics Query for mobile*) est le profil IHE pour la recherche de patients à partir de données démographiques via une API REST.
+
+## Termes de systèmes de santé
+
+**Logistics Management Information System (LMIS)** : Système d'information de gestion logistique assurant la traçabilité des produits de santé de la commande à la dispensation, incluant la gestion des stocks, des commandes et des livraisons.
+
+**eLMIS** : Version électronique du LMIS, intégrant des fonctionnalités numériques avancées (tableaux de bord, alertes, prévision) pour améliorer l'efficacité de la chaîne d'approvisionnement.
+
+**Pharmacy Management Information System (PMIS)** : Système d'information de gestion pharmaceutique assurant le suivi des médicaments, des prescriptions et des dispensations au niveau des pharmacies.
+
+**Clinical Decision Support (CDS)** : Système d'aide à la décision clinique fournissant aux professionnels de santé des recommandations fondées sur des preuves, des protocoles et des données du patient.
+
+**CDS Hooks** : Standard HL7 permettant l'intégration de services d'aide à la décision clinique dans les flux de travail des systèmes d'information de santé via des points d'accrochage standardisés.
+
+**Clinical Reasoning** : Processus de raisonnement clinique automatisé utilisant des règles et des modèles pour analyser les données du patient et générer des recommandations.
+
+## Termes d'échange et d'interopérabilité
+
+**Health Claims Exchange (HCX)** : Standard d'échange de réclamations de santé facilitant la communication entre les prestataires de soins, les payeurs et les assurances maladie.
+
+**Nigeria Digital Health Initiative (NDHI)** : Initiative de santé numérique du Nigeria servant de modèle de référence pour les pays en développement, notamment pour l'échange de réclamations et les paiements.
+
+**International Patient Summary (IPS Composition)** : Structure de données du résumé international du patient, organisée en sections standardisées (informations générales, problèmes, médicaments, allergies).
+
+**Sections IPS** : Composants structurels de l'IPS : ALGY (Allergies), MDCA (Médicaments), PROB (Problèmes), IDOI (Identité et informations administratives).
+
+**CRUD** : *Create, Read, Update, Delete*. Opérations de base sur les données permettant de créer, lire, modifier et supprimer des ressources.
+
+## Termes de structure des profils
+
+**Content Module** : Structure de contenu échangée dans une transaction IHE, définissant les ressources et les données spécifiques transportées (ex. : ressource FHIR `Patient`, `Practitioner`).
+
+**Integration Statement** : Déclaration formelle par un implémentant des acteurs et transactions qu'il supporte, attestant de sa conformité aux profils IHE.
+
+**Rattachement** : Lien entre un composant technique et les niveaux supérieurs de l'architecture (CAESN, CNISN, ARTSN), identifiant les capabilités et les chapitres concernés.
+
+**Articulation** : Description des relations et des dépendances entre les composants d'un profil technique, expliquant comment ils interagissent pour fournir la fonctionnalité attendue.
+
+**Limites et dépendances** : Section identifiant les contraintes techniques, les prérequis et les dépendances extérieures pouvant affecter le déploiement et le fonctionnement du profil.
 
 ## Termes de profils IHE
 

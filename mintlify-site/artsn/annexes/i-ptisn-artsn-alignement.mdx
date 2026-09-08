@@ -1,0 +1,46 @@
+---
+title: "Annexe I : Index des profils PTISN implémentant chaque chapitre ART"
+description: "Niveau 3 — Standards techniques, solutions et règles d'homologation"
+owner: "DEPSI"
+version: "1.0.0"
+status: "draft"
+last_reviewed: "2026-08-31"
+---
+
+Cet index inverse établit la correspondance entre chaque chapitre de l'Architecture de Référence Technique (ARTSN) et les profils techniques nationaux (PTISN) qui le déclarent implémenter. Il répond à la question : *quel profil PTISN mobilise ce chapitre ART ?* Chaque profil prescrit, pour un service national, les standards, acteurs, transactions et règles d'échange à respecter (modèle IHE) ; le chapitre ART constitue le cadre normatif opposable qu'il opérationnalise.
+
+La source de vérité est le champ `implements` du frontmatter de chaque profil dans `referentiel/profils/pt-XX.md`. Le champ `related` n'est pas repris ici car il documente des dépendances transversales et non des implémentations directes.
+
+## Index chapitre ART → profils PTISN
+
+| Chapitre ART | Titre canonique | Profils PTISN qui l'implémentent |
+|---|---|---|
+| [ART-0](/artsn/patterns/art-0-accords-partage) | Accords de partage inter-institutionnels | [PT-01](/ptisn/profils/pt-01-echange-interinstitutionnel), [PT-10](/ptisn/profils/pt-10-confiance-authentification-autorisation), [PT-11](/ptisn/profils/pt-11-consentement-bases-autorisation), [PT-14](/ptisn/profils/pt-14-interopabilite-transfrontaliere), [PT-15](/ptisn/profils/pt-15-surveillance-one-health) |
+| [ART-1](/artsn/patterns/art-1-integration-ingestion) | Intégration et ingestion | [PT-01](/ptisn/profils/pt-01-echange-interinstitutionnel), [PT-02](/ptisn/profils/pt-02-mediation-intra-secteur), [PT-03](/ptisn/profils/pt-03-catalogue-services-registre-contrats), [PT-08](/ptisn/profils/pt-08-echange-donnees-agregees), [PT-14](/ptisn/profils/pt-14-interopabilite-transfrontaliere) |
+| [ART-2](/artsn/patterns/art-2-mediation-normalisation) | Médiation et normalisation | [PT-02](/ptisn/profils/pt-02-mediation-intra-secteur), [PT-03](/ptisn/profils/pt-03-catalogue-services-registre-contrats), [PT-07](/ptisn/profils/pt-07-terminologie-codification), [PT-08](/ptisn/profils/pt-08-echange-donnees-agregees), [PT-18](/ptisn/profils/pt-18-echange-reclamations-paiements), [PT-19](/ptisn/profils/pt-19-aide-decision-clinique) |
+| [ART-3](/artsn/patterns/art-3-historisation-evenementielle) | Historisation événementielle | [PT-09](/ptisn/profils/pt-09-analytique-exposition-donnees), [PT-12](/ptisn/profils/pt-12-audit-provenance-tracabilite) |
+| [ART-4](/artsn/patterns/art-4-referentiels-metadonnees) | Référentiels de métadonnées de gestion | [PT-04](/ptisn/profils/pt-04-resolution-identite-beneficiaire), [PT-05](/ptisn/profils/pt-05-registre-professionnels), [PT-06](/ptisn/profils/pt-06-referentiel-structures-services), [PT-07](/ptisn/profils/pt-07-terminologie-codification), [PT-13](/ptisn/profils/pt-13-qualite-reconciliation) |
+| [ART-4A](/artsn/patterns/art-4a-resolution-identite) | Résolution d'identité | [PT-04](/ptisn/profils/pt-04-resolution-identite-beneficiaire), [PT-05](/ptisn/profils/pt-05-registre-professionnels) |
+| [ART-4B](/artsn/patterns/art-4b-bases-autorisation) | Bases d'autorisation | [PT-04](/ptisn/profils/pt-04-resolution-identite-beneficiaire), [PT-10](/ptisn/profils/pt-10-confiance-authentification-autorisation), [PT-11](/ptisn/profils/pt-11-consentement-bases-autorisation) |
+| [ART-4C](/artsn/patterns/art-4c-eligibilite-couverture) | Éligibilité et couverture | [PT-05](/ptisn/profils/pt-05-registre-professionnels) |
+| [ART-4D](/artsn/patterns/art-4d-referentiel-geospatial) | Référentiel géospatial et d'exploitation partagé | [PT-15](/ptisn/profils/pt-15-surveillance-one-health) |
+| [ART-5](/artsn/patterns/art-5-coherence-qualite-donnees) | Cohérence et qualité des données | [PT-02](/ptisn/profils/pt-02-mediation-intra-secteur), [PT-06](/ptisn/profils/pt-06-referentiel-structures-services), [PT-07](/ptisn/profils/pt-07-terminologie-codification), [PT-08](/ptisn/profils/pt-08-echange-donnees-agregees), [PT-09](/ptisn/profils/pt-09-analytique-exposition-donnees), [PT-13](/ptisn/profils/pt-13-qualite-reconciliation) |
+| [ART-6](/artsn/patterns/art-6-analytique-restitution) | Analytique et restitution | [PT-06](/ptisn/profils/pt-06-referentiel-structures-services), [PT-08](/ptisn/profils/pt-08-echange-donnees-agregees), [PT-09](/ptisn/profils/pt-09-analytique-exposition-donnees), [PT-13](/ptisn/profils/pt-13-qualite-reconciliation) |
+| [ART-7](/artsn/patterns/art-7-securite-controle-acces) | Sécurité, contrôle d'accès et résidence de la donnée | [PT-01](/ptisn/profils/pt-01-echange-interinstitutionnel), [PT-02](/ptisn/profils/pt-02-mediation-intra-secteur), [PT-04](/ptisn/profils/pt-04-resolution-identite-beneficiaire), [PT-05](/ptisn/profils/pt-05-registre-professionnels), [PT-09](/ptisn/profils/pt-09-analytique-exposition-donnees), [PT-10](/ptisn/profils/pt-10-confiance-authentification-autorisation), [PT-11](/ptisn/profils/pt-11-consentement-bases-autorisation), [PT-12](/ptisn/profils/pt-12-audit-provenance-tracabilite), [PT-14](/ptisn/profils/pt-14-interopabilite-transfrontaliere), [PT-16](/ptisn/profils/pt-16-orchestration-processus) |
+| [ART-8A](/artsn/patterns/art-8a-orchestration-processus-borne) | Orchestration de processus borné | [PT-16](/ptisn/profils/pt-16-orchestration-processus) |
+| [ART-8B](/artsn/patterns/art-8b-modelisation-graphe) | Modélisation de relations en graphe | [PT-15](/ptisn/profils/pt-15-surveillance-one-health) |
+| [ART-8C](/artsn/patterns/art-8c-agregation-par-lot) | Agrégation par lot | [PT-02](/ptisn/profils/pt-02-mediation-intra-secteur) |
+| [ART-8D](/artsn/patterns/art-8d-choregraphie-interinstitutionnelle) | Chorégraphie inter-institutionnelle | [PT-02](/ptisn/profils/pt-02-mediation-intra-secteur) |
+| [ART-9](/artsn/patterns/art-9-garanties-transactionnelles) | Garanties transactionnelles fortes | [PT-10](/ptisn/profils/pt-10-confiance-authentification-autorisation), [PT-18](/ptisn/profils/pt-18-echange-reclamations-paiements) |
+| [ART-10](/artsn/patterns/art-10-logistique) | Logistique | [PT-17](/ptisn/profils/pt-17-logistique-lmis) |
+| [ART-11](/artsn/patterns/art-11-coordination-intersectorielle) | Coordination intersectorielle | [PT-01](/ptisn/profils/pt-01-echange-interinstitutionnel), [PT-11](/ptisn/profils/pt-11-consentement-bases-autorisation), [PT-15](/ptisn/profils/pt-15-surveillance-one-health) |
+| [ART-12](/artsn/patterns/art-12-aide-decision-clinique) | Aide à la décision clinique | [PT-19](/ptisn/profils/pt-19-aide-decision-clinique) |
+
+## Notes
+
+- **ART-7** (sécurité, contrôle d'accès et résidence de la donnée) concentre le plus grand nombre de profils (10), confirmant son rôle transversal dans l'ensemble du paysage.
+- **ART-5** (cohérence et qualité des données) et **ART-2** (médiation et normalisation) viennent ensuite avec respectivement 6 et 6 profils, traduisant leur position dans la couche de médiation sémantique.
+- **ART-8** (orchestration de processus parent) n'est déclaré par aucun profil via son champ `implements` ; les sous-chapitres ART-8A/8B/8C/8D couvrent ses cas d'usage spécialisés via PT-02, PT-15 et PT-16.
+- **ART-4C** (éligibilité et couverture) est couvert par un seul profil (PT-05), ce qui est attendu car la couverture santé universelle est un service encore en phase de conception.
+- La correspondance inverse (PT → chapitres ART) est disponible dans la [matrice d'alignement PTISN](/ptisn/matrice-alignement/index#2-alignement-avec-lart).
+- Le mapping est dérivé du champ `implements` du frontmatter de chaque profil dans `referentiel/profils/pt-XX.md`. Le champ `related` n'est pas repris car il documente des dépendances transversales et non des implémentations directes.

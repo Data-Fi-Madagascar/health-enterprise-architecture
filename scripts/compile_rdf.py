@@ -16,6 +16,7 @@ Usage :
 
 import argparse
 import glob
+import json
 import os
 import re
 import sys
@@ -64,6 +65,7 @@ TYPE_TO_CLASS = {
 # Mapping type YAML → propriété de relation principale
 RELATION_FIELDS = ["maps_to", "implements", "applies_to", "related",
                    "realized_by", "contributes_to", "performs", "accesses",
+                   "accessed_by",
                    "governs", "represents", "assigned_to", "has_role",
                    "located_at", "serves", "produced_by", "detenu_par",
                    "soutient_flux_de_valeur", "utilise_composant",
@@ -79,6 +81,7 @@ PROPERTY_MAP = {
     "contributes_to": "contributesTo",
     "performs": "performs",
     "accesses": "accesses",
+    "accessed_by": "accessedBy",
     "governs": "serves",          # Serving ArchiMate (merge with applies_to)
     "represents": "represents",
     "assigned_to": "assignedTo",
@@ -181,6 +184,13 @@ def collect_objects():
                 val = val.strip().strip('"').strip("'")
                 obj[fhir_field] = val
 
+        # Ressources FHIR déclarées (fhir_resources, ex. sur les objets de données)
+        fhir_resources_val = fm_field(fm, "fhir_resources")
+        if fhir_resources_val is not None:
+            items = list_value(fhir_resources_val)
+            if items:
+                obj["fhir_resources"] = items
+
         # Extraire les listes de relations
         for rel in RELATION_FIELDS:
             val = fm_field(fm, rel)
@@ -236,6 +246,32 @@ def resolve_property(rel, source_type, target):
     return base
 
 
+# Namespace des schémas d'implémentation (contrats API)
+SCHEMAS_NS = "https://healmadagascar.mg/schemas"
+OPENAPI_DIR = os.path.join(REPO_ROOT, "03_ptisn", "schemas", "openapi")
+
+
+def profile_openapi_mapping(obj):
+    """Récupère le lien OpenAPI + les objets de données référencés d'un profil.
+
+    Lit la spécification OpenAPI générée (03_ptisn/schemas/openapi/pt-XX.json).
+    En l'absence de spec (compilation standalone), retourne un mapping vide.
+    Retourne (spec_url|None, [DO-xx...]).
+    """
+    pid = obj.get("id", "")
+    slug = pid.lower()
+    path = os.path.join(OPENAPI_DIR, "%s.json" % slug)
+    if not os.path.exists(path):
+        return None, []
+    try:
+        with open(path, encoding="utf-8") as f:
+            spec = json.load(f)
+    except (OSError, ValueError):
+        return None, []
+    data_objects = spec.get("x-hea-data-objects", []) or []
+    return "%s/openapi/%s.json" % (SCHEMAS_NS, slug), data_objects
+
+
 def generate_rdf(objects, output_path):
     """Génère un fichier Turtle RDF à partir des objets du référentiel."""
     lines = []
@@ -280,11 +316,13 @@ def generate_rdf(objects, output_path):
 
         # Annotations FHIR (datatype properties)
         if "fhir_resource" in obj:
-            lines.append('    fhirResource "%s" ;' % turtle_escape(obj["fhir_resource"]))
+            lines.append('    fhir:fhirResource "%s" ;' % turtle_escape(obj["fhir_resource"]))
+        for r in obj.get("fhir_resources", []):
+            lines.append('    fhir:fhirResource "%s" ;' % turtle_escape(r))
         if "fhir_profile" in obj:
-            lines.append('    fhirProfile "%s" ;' % turtle_escape(obj["fhir_profile"]))
+            lines.append('    fhir:fhirProfile "%s" ;' % turtle_escape(obj["fhir_profile"]))
         if "fhir_version" in obj:
-            lines.append('    fhirVersion "%s" ;' % turtle_escape(obj["fhir_version"]))
+            lines.append('    fhir:fhirVersion "%s" ;' % turtle_escape(obj["fhir_version"]))
 
         # Relations (object properties)
         for rel in RELATION_FIELDS:
@@ -293,6 +331,15 @@ def generate_rdf(objects, output_path):
                 for target in targets:
                     prop = resolve_property(rel, obj["type"], target)
                     lines.append("    hea:%s hea:%s ;" % (prop, target))
+
+        # Mapping profil → spécification OpenAPI + objets de données référencés
+        # (contrats d'implémentation dérivés par compile_openapi.py).
+        if otype in ("profil", "profil-technique"):
+            spec_url, data_objects = profile_openapi_mapping(obj)
+            if spec_url:
+                lines.append("    hea:openapiSpec <%s> ;" % spec_url)
+            for do_id in data_objects:
+                lines.append("    hea:defines hea:%s ;" % do_id)
 
         # Dernière ligne : terminer par point au lieu de point-virgule
         if lines[-1].endswith(" ;"):

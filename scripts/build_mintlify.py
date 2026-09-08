@@ -42,6 +42,14 @@ NUM_PREFIX_RE = re.compile(r"^\d+_")
 
 # Human labels keyed by the source sub-directory (numeric-prefixed form).
 GROUP_LABELS = {
+    "artsn/annexes": "ARTSN - Annexes",
+    "artsn/cartographie": "ARTSN - Cartographie cible",
+    "artsn/feuille-de-route": "ARTSN - Feuille de route",
+    "artsn/objets-de-donnees": "ARTSN - Objets de données",
+    "artsn/objets-de-donnees/nomenclatures": "ARTSN - Nomenclatures",
+    "artsn/patterns": "ARTSN - Chapitres de référence",
+    "artsn/services": "ARTSN - Services",
+    "artsn/lots": "ARTSN - Lots",
     "00_overview": "Vue d'ensemble",
     "00_fondations": "Fondations",
     "01_flux-de-valeur": "Flux de valeur",
@@ -179,8 +187,7 @@ def sidebar_title_for(title: str):
 def render_page(dest: Path, src_rel: str, url_map: dict, subtitle: str):
     src_path = ROOT / src_rel
     if not src_path.exists():
-        print(f"[warn] source manquant ignoré : {src_rel}", file=sys.stderr)
-        return
+        raise FileNotFoundError(src_rel)
     title, meta = parse_source(src_rel)
     title = title or PurePosixPath(src_rel).stem
     body = rewrite_links(body_without_frontmatter(src_rel), src_rel, url_map)
@@ -377,6 +384,16 @@ def build_docs_json(tabs, repo_url):
 
 def generate(out: Path, args) -> int:
     manifest = json.loads((ROOT / "scripts" / "manifest.json").read_text(encoding="utf-8"))
+    missing = [rel for lvl in manifest["levels"] for rel in lvl["list"]
+               if not (ROOT / rel).exists()]
+    if missing:
+        print("[ERREUR] Manifest Mintlify invalide : sources manquantes", file=sys.stderr)
+        for rel in missing[:50]:
+            print("  - %s" % rel, file=sys.stderr)
+        if len(missing) > 50:
+            print("  ... %d sources supplémentaires" % (len(missing) - 50), file=sys.stderr)
+        return 1
+
     url_map = build_url_map(manifest)
     tabs = build_tabs(manifest, url_map)
     repo_url = args.repo if args.repo else DEFAULT_REPO_URL

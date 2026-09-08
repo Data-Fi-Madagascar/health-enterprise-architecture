@@ -7,6 +7,7 @@ title: "Statut opérationnel d'une formation sanitaire"
 status: active
 owner: DEPSI
 version: "1.0.0"
+last_reviewed: 2026-08-31
 envelope: 02_artsn/03_objets-de-donnees/nomenclatures/fosa-status.md
 artRef: ["ART-4", "ART-5"]
 maps_to: ["CAP-INT-04"]

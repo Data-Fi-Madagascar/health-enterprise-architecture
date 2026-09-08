@@ -1,0 +1,142 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "HEA - Orchestration de processus bornés (PT-16)",
+    "description": "Profil PT-16 — Orchestration de processus bornés. 4 transactions.",
+    "version": "0.1",
+    "contact": {
+      "name": "DEPSI - Madagascar"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://orchestration.health.mg/api/v1",
+      "description": "Service d'orchestration de processus"
+    }
+  ],
+  "paths": {
+    "/workflows": {
+      "post": {
+        "operationId": "triggerWorkflow",
+        "summary": "Déclenchement de workflow (event-driven)",
+        "description": "Déclenche un processus borné par un événement métier.",
+        "tags": [
+          "Orchestration"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WorkflowTrigger"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Workflow déclenché"
+          }
+        }
+      }
+    },
+    "/workflows/{processId}/steps": {
+      "get": {
+        "operationId": "listSagaSteps",
+        "summary": "État d'avancement d'un processus (Saga)",
+        "description": "Suivi et journalisation des étapes et compensations.",
+        "tags": [
+          "Orchestration"
+        ],
+        "parameters": [
+          {
+            "name": "processId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Étapes du processus",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SagaStep"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "WorkflowTrigger": {
+        "type": "object",
+        "required": [
+          "processId",
+          "event"
+        ],
+        "properties": {
+          "processId": {
+            "type": "string"
+          },
+          "event": {
+            "type": "string",
+            "description": "Événement de déclenchement"
+          },
+          "payload": {
+            "type": "object",
+            "description": "Payload déclenchant le workflow"
+          }
+        }
+      },
+      "SagaStep": {
+        "type": "object",
+        "properties": {
+          "stepId": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "executed",
+              "compensated",
+              "failed"
+            ]
+          },
+          "participant": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "x-hea-id": "PT-16",
+  "x-hea-title": "Orchestration de processus bornés",
+  "x-hea-version": "0.1",
+  "x-hea-type": "profil-technique",
+  "x-hea-maps-to": [
+    "CAP-INT-03"
+  ],
+  "x-hea-implements": [
+    "ART-8A",
+    "ART-7"
+  ],
+  "x-hea-applies-to": [
+    "CMP-07",
+    "CMP-06"
+  ],
+  "x-hea-source": "referentiel/profils/pt-16.md",
+  "x-hea-fhir-resources": [],
+  "x-hea-data-objects": [],
+  "x-hea-file": "referentiel/profils/pt-16.md"
+}

@@ -1,0 +1,355 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "HEA - Logistique & chaîne d'approvisionnement (LMIS) (PT-17)",
+    "description": "Profil PT-17 — Logistique & chaîne d'approvisionnement (LMIS). 4 transactions.",
+    "version": "0.1",
+    "contact": {
+      "name": "DEPSI - Madagascar"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://lmis.health.mg/api/v1",
+      "description": "Service logistique et chaîne d'approvisionnement (LMIS)"
+    }
+  ],
+  "paths": {
+    "/InventoryReport": {
+      "post": {
+        "operationId": "pt17inventoryreport_create",
+        "summary": "T1 — Remontée de niveaux de stock",
+        "description": "T1 — Remontée de niveaux de stock — LMIS → Référentiel (R/O : R). Standard : FHIR `InventoryReport` (R4)",
+        "tags": [
+          "InventoryReport"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InventoryReport"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InventoryReport"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/SupplyDelivery": {
+      "post": {
+        "operationId": "pt17supplydelivery_create",
+        "summary": "T2 — Mouvement de stock",
+        "description": "T2 — Mouvement de stock — LMIS → LMIS/Partenaire (R/O : R). Standard : FHIR `SupplyDelivery` / `SupplyRequest` (R4)",
+        "tags": [
+          "SupplyDelivery"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SupplyDelivery"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SupplyDelivery"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/SupplyRequest": {
+      "post": {
+        "operationId": "pt17supplyrequest_create",
+        "summary": "T2 — Mouvement de stock",
+        "description": "T2 — Mouvement de stock — LMIS → LMIS/Partenaire (R/O : R). Standard : FHIR `SupplyDelivery` / `SupplyRequest` (R4)",
+        "tags": [
+          "SupplyRequest"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SupplyRequest"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SupplyRequest"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/service/call": {
+      "post": {
+        "operationId": "pt17xroadrequest_call",
+        "summary": "T4 — Échange interopérable",
+        "description": "T4 — Échange interopérable (X-Road (STD-0003, ADR-0001) — STD-0009)",
+        "tags": [
+          "X-Road"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/XRoadRequest"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "InventoryReport": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "InventoryReport"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "SupplyDelivery": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "SupplyDelivery"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "SupplyRequest": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "SupplyRequest"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "XRoadResponse": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "XRoadResponse"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Bundle": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "Bundle"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "x-hea-id": "PT-17",
+  "x-hea-title": "Logistique & chaîne d'approvisionnement (LMIS)",
+  "x-hea-version": "0.1",
+  "x-hea-type": "profil-technique",
+  "x-hea-maps-to": [
+    "CAP-INT-10",
+    "CAP-INT-15"
+  ],
+  "x-hea-implements": [
+    "ART-10"
+  ],
+  "x-hea-applies-to": [
+    "CMP-23"
+  ],
+  "x-hea-source": "referentiel/profils/pt-17.md",
+  "x-hea-fhir-resources": [
+    "InventoryReport",
+    "SupplyDelivery",
+    "SupplyRequest",
+    "XRoadResponse"
+  ],
+  "x-hea-data-objects": [],
+  "x-hea-file": "referentiel/profils/pt-17.md"
+}

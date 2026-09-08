@@ -11,6 +11,7 @@ Usages :
     python3 scripts/sync_rdf_graphify.py --direction rdf    # enrichir RDF seulement
     python3 scripts/sync_rdf_graphify.py --direction gf     # enrichir Graphify seulement
     python3 scripts/sync_rdf_graphify.py --check            # vérifier sans écrire
+    python3 scripts/sync_rdf_graphify.py --check --rdf /tmp/hea.ttl
     python3 scripts/sync_rdf_graphify.py --report           # rapport de cohérence seul
 """
 import argparse
@@ -456,15 +457,18 @@ def main():
                         help="Vérifier sans écrire")
     parser.add_argument("--report", action="store_true",
                         help="Générer le rapport de cohérence seul")
+    parser.add_argument("--rdf", default=str(RDF_PATH),
+                        help="Chemin du graphe RDF à lire (défaut: dist/hea.ttl)")
     args = parser.parse_args()
+    rdf_path = Path(args.rdf)
 
     print("=" * 60)
     print("SYNC RDF ↔ GRAPHIFY")
     print("=" * 60)
 
     # Vérifier l'existence des fichiers
-    if not RDF_PATH.exists():
-        print(f"[ERREUR] {RDF_PATH} introuvable. Lancer d'abord compile_rdf.py")
+    if not rdf_path.exists():
+        print(f"[ERREUR] {rdf_path} introuvable. Lancer d'abord compile_rdf.py")
         sys.exit(1)
     if not GRAPH_PATH.exists():
         if args.check:
@@ -477,7 +481,7 @@ def main():
 
     # 1. Charger les deux graphes
     print("\n[1/6] Chargement des graphes...")
-    rdf_instances = parse_rdf_instances(RDF_PATH)
+    rdf_instances = parse_rdf_instances(rdf_path)
     gf_nodes, gf_links = parse_graphify(GRAPH_PATH)
     print(f"  RDF: {len(rdf_instances)} instances")
     print(f"  Graphify: {len(gf_nodes)} nœuds, {len(gf_links)} arêtes")
@@ -524,9 +528,9 @@ def main():
             print(f"  Graphify écrit: {out_gf}")
         if args.direction in ("rdf", "both") and additions:
             out_rdf = RDF_PATH.parent / "hea-enriched.ttl"
-            write_enriched_rdf(RDF_PATH, additions, out_rdf)
+            write_enriched_rdf(rdf_path, additions, out_rdf)
             print(f"  RDF enrichi écrit: {out_rdf}")
-            print(f"  (le fichier original {RDF_PATH} n'est pas modifié)")
+            print(f"  (le fichier original {rdf_path} n'est pas modifié)")
     else:
         print("\n[5/6] Écriture: SKIP (mode report)")
 

@@ -8,6 +8,7 @@ Pont entre le Modèle de Gouvernance (YAML/Markdown) et le Modèle d'Implémenta
 Usage :
     python3 scripts/compilers/compile_oda.py                    # compile tout
     python3 scripts/compilers/compile_oda.py --validate         # valide après compilation
+    python3 scripts/compilers/compile_oda.py --check            # vérifie sans écrire
     python3 scripts/compilers/compile_oda.py --nomenclature FOSA-STATUS  # compile une nomenclature
     python3 scripts/compilers/compile_oda.py --check-governance # valide les fichiers d'auteur
 """
@@ -18,47 +19,17 @@ import json
 import os
 import re
 import sys
-from datetime import datetime
+import tempfile
+
+try:
+    import yaml
+except ImportError:
+    yaml = None
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 HEA_NS = "https://healmadagascar.mg"
 FHIR_NS = "%s/fhir" % HEA_NS
 SCHEMAS_NS = "%s/schemas" % HEA_NS
-
-DO_FHIR_MAP = {
-    "patient": {"json_type": "object", "fhir_resource": "Patient"},
-    "identifiant": {"json_type": "string"},
-    "dossier": {"json_type": "object", "fhir_resource": "Patient"},
-    "evenement": {"json_type": "object", "fhir_resource": "Encounter"},
-    "encounter": {"json_type": "object", "fhir_resource": "Encounter"},
-    "observation": {"json_type": "object", "fhir_resource": "Observation"},
-    "acte": {"json_type": "object", "fhir_resource": "Procedure"},
-    "organisation": {"json_type": "object", "fhir_resource": "Organization"},
-    "lieu": {"json_type": "object", "fhir_resource": "Location"},
-    "praticien": {"json_type": "object", "fhir_resource": "Practitioner"},
-    "prescription": {"json_type": "object", "fhir_resource": "MedicationRequest"},
-    "dispensation": {"json_type": "object", "fhir_resource": "MedicationDispense"},
-    "produit": {"json_type": "object", "fhir_resource": "Medication"},
-    "laboratoire": {"json_type": "object", "fhir_resource": "Organization"},
-    "signal": {"json_type": "object", "fhir_resource": "Flag"},
-    "alerte": {"json_type": "object", "fhir_resource": "Flag"},
-    "stock": {"json_type": "object"},
-    "commande": {"json_type": "object", "fhir_resource": "MedicationRequest"},
-    "facturation": {"json_type": "object", "fhir_resource": "Claim"},
-    "remboursement": {"json_type": "object", "fhir_resource": "ClaimResponse"},
-    "couverture": {"json_type": "object", "fhir_resource": "Coverage"},
-    "adhesion": {"json_type": "object", "fhir_resource": "CoverageEligibilityRequest"},
-    "prestation": {"json_type": "object", "fhir_resource": "ExplanationOfBenefit"},
-    "compte": {"json_type": "object", "fhir_resource": "Account"},
-    "utilisateur": {"json_type": "object", "fhir_resource": "Person"},
-    "droit": {"json_type": "object", "fhir_resource": "Permission"},
-    "journal": {"json_type": "object", "fhir_resource": "AuditEvent"},
-    "configuration": {"json_type": "object"},
-    "referentiel": {"json_type": "object"},
-    "metrique": {"json_type": "object"},
-    "rapport": {"json_type": "object", "fhir_resource": "DiagnosticReport"},
-    "notification": {"json_type": "object", "fhir_resource": "Communication"},
-}
 
 
 def parse_frontmatter(text):
@@ -91,6 +62,20 @@ def list_value(raw):
             return [i for i in items if i]
         return [x.strip() for x in inner.split(",") if x.strip()]
     return [x.strip().strip("'\"") for x in raw.split(",") if x.strip()]
+
+
+def scalar_value(raw):
+    if raw is None:
+        return None
+    return raw.strip().strip('"').strip("'")
+
+
+def source_date(fm):
+    """Retourne une date stable pour les artefacts générés."""
+    value = scalar_value(fm_field(fm, "last_reviewed") or fm_field(fm, "date"))
+    if value and re.match(r"^\d{4}-\d{2}-\d{2}$", value):
+        return value
+    return "1970-01-01"
 
 
 def extract_table_from_body(body):
@@ -129,178 +114,6 @@ def extract_concepts_from_body(body):
                 "status": status
             })
     return concepts
-
-
-def resolve_fhir_resource(do_id, title, tags, body):
-    """Résout la ressource FHIR à partir de l'ID, du titre, des tags et du corps.
-
-    Priorité : titre > body (Référentiel source) > tags > ID.
-    Le titre est la source la plus fiable pour le matching sémantique.
-    """
-    title_lower = title.lower()
-
-    # 1. Try matching by title (most reliable semantic source)
-    for keyword, info in DO_FHIR_MAP.items():
-        if keyword in title_lower:
-            return info
-
-    # 2. Try matching by body — extract Référentiel source (explicit FHIR ref)
-    ref_match = re.search(r"\*\*Référentiel source\*\*\s*:\s*(.+)", body)
-    if ref_match:
-        ref_text = ref_match.group(1).strip().lower()
-        for keyword, info in DO_FHIR_MAP.items():
-            if keyword in ref_text:
-                return info
-
-    # 3. Try matching by tags (fallback — can produce false positives)
-    for tag in tags:
-        tag_lower = tag.lower()
-        for keyword, info in DO_FHIR_MAP.items():
-            if keyword in tag_lower:
-                return info
-
-    # 4. Try matching by DO ID pattern
-    do_id_lower = do_id.lower()
-    for keyword, info in DO_FHIR_MAP.items():
-        if keyword in do_id_lower:
-            return info
-
-    return {"json_type": "object"}
-
-
-def extract_constraints(body):
-    """Extrait les contraintes depuis **Contraintes** : ..."""
-    m = re.search(r"\*\*Contraintes\*\*\s*:\s*(.+)", body)
-    return m.group(1).strip() if m else None
-
-
-def extract_source_ref(body):
-    """Extrait le référentiel source depuis **Référentiel source** : ..."""
-    m = re.search(r"\*\*Référentiel source\*\*\s*:\s*(.+)", body)
-    return m.group(1).strip() if m else None
-
-
-def extract_first_paragraph(body):
-    """Extrait le premier paragraphe après le titre #."""
-    lines = body.split("\n")
-    in_title = False
-    for line in lines:
-        stripped = line.strip()
-        if stripped.startswith("#"):
-            in_title = True
-            continue
-        if in_title and stripped:
-            return stripped
-    return ""
-
-
-def collect_do_objects():
-    """Collecte tous les objets de données (DO-*) du référentiel."""
-    objects = []
-    pattern = os.path.join(REPO_ROOT, "referentiel", "objets-de-donnees", "do-*.md")
-
-    for path in sorted(glob.glob(pattern)):
-        text = open(path, encoding="utf-8").read()
-        fm = parse_frontmatter(text)
-        if fm is None:
-            continue
-
-        oid = fm_field(fm, "id")
-        otype = fm_field(fm, "type")
-        if not oid or not otype:
-            continue
-
-        # Extraire le corps (après le 2e ---)
-        end = text.find("\n---", 3)
-        body = text[end + 4:] if end != -1 else text
-
-        obj = {
-            "id": oid,
-            "title": (fm_field(fm, "title") or oid).strip().strip('"'),
-            "version": (fm_field(fm, "version") or "1.0.0").strip().strip('"'),
-            "status": (fm_field(fm, "status") or "draft").strip().strip('"'),
-            "owner": (fm_field(fm, "owner") or "DEPSI").strip().strip('"'),
-            "tags": list_value(fm_field(fm, "tags") or "[]"),
-            "related": list_value(fm_field(fm, "related") or "[]"),
-            "body": body,
-        }
-        objects.append(obj)
-
-    return objects
-
-
-def generate_do_payload_schema(obj):
-    """Génère un JSON Schema Draft-07 pour le payload d'un DO."""
-    do_id = obj["id"]
-    title = obj["title"]
-    version = obj["version"]
-    body = obj["body"]
-
-    # Extraire le type d'objet
-    type_info = resolve_fhir_resource(do_id, title, obj["tags"], body)
-
-    # Extraire les contraintes
-    constraints_text = extract_constraints(body)
-    source_ref = extract_source_ref(body)
-    description = extract_first_paragraph(body)
-
-    # Construire les propriétés
-    properties = {
-        "id": {
-            "type": "string",
-            "description": "Identifiant unique de l'objet"
-        },
-        "version": {
-            "type": "string",
-            "description": "Version de l'objet",
-            "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
-        }
-    }
-
-    # Ajouter des propriétés basées sur les contraintes
-    if constraints_text:
-        cl = constraints_text.lower()
-        if "identifiant" in cl or "nin" in cl:
-            properties["identifiant"] = {"type": "string", "description": "Identifiant unique"}
-        if "date" in cl:
-            properties["date"] = {"type": "string", "format": "date-time", "description": "Date"}
-        if "quantit" in cl:
-            properties["quantite"] = {"type": "integer", "minimum": 0, "description": "Quantité"}
-        if "lot" in cl:
-            properties["lot"] = {"type": "string", "description": "Numéro de lot"}
-        if "patient" in cl:
-            properties["patientRef"] = {"type": "string", "description": "Référence au patient (DO-01)"}
-        if "statut" in cl:
-            properties["statut"] = {"type": "string", "description": "Statut de l'objet"}
-        if "etablissement" in cl:
-            properties["etablissementRef"] = {"type": "string", "description": "Référence à l'établissement"}
-
-    # Ajouter les références relationnelles
-    for rel_id in obj["related"]:
-        prop_name = rel_id.lower().replace("-", "_") + "Ref"
-        properties[prop_name] = {"type": "string", "description": "Référence à %s" % rel_id}
-
-    # Construire le schéma
-    schema = {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "%s/payloads/%s.json" % (SCHEMAS_NS, do_id.lower()),
-        "title": "%s — %s" % (do_id, title),
-        "description": description or "Schéma de validation du payload %s." % do_id,
-        "type": type_info["json_type"],
-        "properties": properties,
-        "required": ["id", "version"],
-        "x-hea-id": do_id,
-        "x-hea-type": "objet-de-donnees",
-        "x-hea-version": version,
-        "x-hea-status": obj["status"],
-        "x-hea-owner": obj["owner"],
-        "x-hea-fhir-resource": type_info.get("fhir_resource", ""),
-    }
-
-    if source_ref:
-        schema["x-hea-source-ref"] = source_ref
-
-    return schema
 
 
 # ===================================================================
@@ -344,6 +157,7 @@ def generate_fhir_codesystem(fm, concepts):
     version = fm_field(fm, "version") or "1.0.0"
     owner = fm_field(fm, "owner") or "DEPSI"
     fhir_url = fm_field(fm, "fhir_url") or "%s/CodeSystem/hea-%s" % (FHIR_NS, nom_id.lower())
+    generated_date = source_date(fm)
 
     fhir_concepts = []
     for c in concepts:
@@ -363,7 +177,7 @@ def generate_fhir_codesystem(fm, concepts):
         "id": "hea-%s" % nom_id.lower(),
         "meta": {
             "versionId": version,
-            "lastUpdated": datetime.now().strftime("%Y-%m-%dT00:00:00+03:00"),
+            "lastUpdated": "%sT00:00:00+03:00" % generated_date,
             "source": "%s/ontologie/hea#nomenclature/%s" % (HEA_NS, nom_id)
         },
         "url": fhir_url,
@@ -372,7 +186,7 @@ def generate_fhir_codesystem(fm, concepts):
         "title": "%s — %s" % (nom_id, title),
         "status": "active",
         "experimental": False,
-        "date": datetime.now().strftime("%Y-%m-%d"),
+        "date": generated_date,
         "publisher": "%s - Madagascar" % owner,
         "description": title,
         "copyright": "Ministère de la Santé Publique - Madagascar",
@@ -448,6 +262,32 @@ def compile_nomenclature(nom, output_dir):
         json.dump(codesystem, f, indent=2, ensure_ascii=False)
 
     return payload_path, cs_path
+
+
+def compare_compiled_files(compiled, generated_root, expected_root):
+    """Compare les fichiers générés dans un répertoire temporaire aux artefacts."""
+    diffs = []
+    for _, payload_path, cs_path in compiled:
+        for generated_path in (payload_path, cs_path):
+            rel = os.path.relpath(generated_path, generated_root)
+            expected_path = os.path.join(expected_root, rel)
+            label = os.path.relpath(expected_path, REPO_ROOT)
+            if not os.path.exists(expected_path):
+                diffs.append("+ %s" % label)
+                continue
+            with open(generated_path, "rb") as gf, open(expected_path, "rb") as ef:
+                if gf.read() != ef.read():
+                    diffs.append("M %s" % label)
+    return diffs
+
+
+def compile_all(nomenclatures, output_dir):
+    os.makedirs(output_dir, exist_ok=True)
+    compiled = []
+    for nom in nomenclatures:
+        payload_path, cs_path = compile_nomenclature(nom, output_dir)
+        compiled.append((nom["frontmatter"], payload_path, cs_path))
+    return compiled
 
 
 def validate_governance():
@@ -544,6 +384,8 @@ def main():
                         help="Répertoire de sortie (défaut: 03_ptisn/schemas/)")
     parser.add_argument("--validate", action="store_true",
                         help="Valider après compilation")
+    parser.add_argument("--check", action="store_true",
+                        help="Vérifier sans écrire que les artefacts ODA générés sont à jour")
     parser.add_argument("--check-governance", action="store_true",
                         help="Valider les fichiers d'auteur contre le méta-schéma")
     parser.add_argument("--nomenclature", type=str, default=None,
@@ -555,7 +397,6 @@ def main():
         sys.exit(0 if ok else 1)
 
     output_dir = args.output or os.path.join(REPO_ROOT, "03_ptisn", "schemas")
-    os.makedirs(output_dir, exist_ok=True)
 
     # Collecter les nomenclatures
     nomenclatures = collect_nomenclatures()
@@ -574,11 +415,31 @@ def main():
             print("[ERREUR] Nomenclature introuvable : %s" % args.nomenclature)
             sys.exit(1)
 
+    if args.check:
+        with tempfile.TemporaryDirectory(prefix="hea-oda-check-") as tmp:
+            compiled = compile_all(nomenclatures, tmp)
+            all_ok = True
+            for _, payload_path, cs_path in compiled:
+                for path in [payload_path, cs_path]:
+                    try:
+                        with open(path, encoding="utf-8") as f:
+                            json.load(f)
+                    except json.JSONDecodeError as e:
+                        print("[ERREUR] %s : %s" % (os.path.relpath(path, tmp), e))
+                        all_ok = False
+            if not all_ok:
+                sys.exit(1)
+            diffs = compare_compiled_files(compiled, tmp, output_dir)
+            if diffs:
+                print("Artefacts ODA obsolètes :")
+                for diff in diffs:
+                    print("  %s" % diff)
+                sys.exit(1)
+            print("[OK] %d nomenclatures ODA à jour." % len(compiled))
+            return 0
+
     # Compiler chaque nomenclature
-    compiled = []
-    for nom in nomenclatures:
-        payload_path, cs_path = compile_nomenclature(nom, output_dir)
-        compiled.append((nom["frontmatter"], payload_path, cs_path))
+    compiled = compile_all(nomenclatures, output_dir)
 
     print("=== Compilation ODA ===")
     print("Nomenclatures traitées : %d" % len(compiled))
@@ -589,23 +450,6 @@ def main():
         print("  %s:" % nom_id)
         print("    Payload : %s" % os.path.relpath(payload_path, REPO_ROOT))
         print("    FHIR : %s" % os.path.relpath(cs_path, REPO_ROOT))
-
-    # Compiler les objets de données (DO)
-    do_objects = collect_do_objects()
-    do_compiled = []
-    for obj in do_objects:
-        schema = generate_do_payload_schema(obj)
-        do_id = obj["id"]
-        payload_path = os.path.join(output_dir, "payloads", "%s.json" % do_id.lower())
-        os.makedirs(os.path.dirname(payload_path), exist_ok=True)
-        with open(payload_path, "w", encoding="utf-8") as f:
-            json.dump(schema, f, indent=2, ensure_ascii=False)
-        do_compiled.append((do_id, payload_path))
-
-    print("\n=== Compilation ODA — Objets de données ===")
-    print("DO traités : %d" % len(do_compiled))
-    for do_id, payload_path in do_compiled:
-        print("  %s → %s" % (do_id, os.path.relpath(payload_path, REPO_ROOT)))
 
     # Validation optionnelle
     if args.validate:
@@ -623,21 +467,11 @@ def main():
                     print("[ERREUR] %s : %s" % (os.path.relpath(path, REPO_ROOT), e))
                     all_ok = False
 
-        # Valider les schémas DO
-        for do_id, payload_path in do_compiled:
-            try:
-                with open(payload_path, encoding="utf-8") as f:
-                    json.load(f)
-                print("[OK] %s" % os.path.relpath(payload_path, REPO_ROOT))
-            except json.JSONDecodeError as e:
-                print("[ERREUR] %s : %s" % (os.path.relpath(payload_path, REPO_ROOT), e))
-                all_ok = False
-
         if not all_ok:
             sys.exit(1)
 
-    total = len(compiled) + len(do_compiled)
-    print("\nRésumé : %d schémas compilés (nomenclatures: %d, DO: %d)" % (total, len(compiled), len(do_compiled)))
+    total = len(compiled)
+    print("\nRésumé : %d nomenclatures compilées (payload + CodeSystem). Les payloads des objets de données sont générés par compile_jsonschema.py." % total)
     return 0
 
 

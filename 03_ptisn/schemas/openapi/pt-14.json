@@ -1,0 +1,395 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "HEA - Interopérabilité transfrontalière (PT-14)",
+    "description": "Profil PT-14 — Interopérabilité transfrontalière. 5 transactions.",
+    "version": "0.1",
+    "contact": {
+      "name": "DEPSI - Madagascar"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://gateway.health.mg/api/v1",
+      "description": "Passerelle nationale transfrontalière (GDHCN)"
+    }
+  ],
+  "paths": {
+    "/Composition": {
+      "get": {
+        "operationId": "pt14composition_search",
+        "summary": "T2 — Échange clinique transfrontalier (IPS)",
+        "description": "T2 — Échange clinique transfrontalier (IPS) — Médiation ↔ Partenaire (R/O : R). Standard : FHIR R4 — IPS Composition (REST)",
+        "tags": [
+          "Composition"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Bundle"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Identifiant"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Nom / libellé"
+          }
+        ]
+      }
+    },
+    "/MeasureReport": {
+      "post": {
+        "operationId": "pt14measurereport_create",
+        "summary": "T3 — Surveillance épidémique régionale",
+        "description": "T3 — Surveillance épidémique régionale — Moteur analytique → OMS AFRO / CDC Africa (R/O : R). Standard : IHE ADX/mADX (REST asynchrone)",
+        "tags": [
+          "MeasureReport"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MeasureReport"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MeasureReport"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Patient/$ihe-pix": {
+      "get": {
+        "operationId": "pt14patient_resolve",
+        "summary": "T4 — Résolution d’identité transfrontalière",
+        "description": "T4 — Résolution d’identité transfrontalière (IHE PIX/PDQ (mapping OID ↔ INP))",
+        "tags": [
+          "Patient"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Patient"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        }
+      }
+    },
+    "/ServiceRequest": {
+      "post": {
+        "operationId": "pt14servicerequest_create",
+        "summary": "T5 — Évacuation sanitaire internationale",
+        "description": "T5 — Évacuation sanitaire internationale — Médiation → Système destination (R/O : R). Standard : FHIR R4 — ServiceRequest + IPS Composition",
+        "tags": [
+          "ServiceRequest"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ServiceRequest"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ServiceRequest"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Composition": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "Composition"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "MeasureReport": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "MeasureReport"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Patient": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "Patient"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "ServiceRequest": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "ServiceRequest"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Bundle": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "Bundle"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "DO29": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-29.json"
+      },
+      "DO30": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-30.json"
+      },
+      "DO28": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-28.json"
+      },
+      "DO01": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-01.json"
+      },
+      "DO03": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-03.json"
+      },
+      "DO07": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-07.json"
+      },
+      "DO08": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-08.json"
+      }
+    }
+  },
+  "x-hea-id": "PT-14",
+  "x-hea-title": "Interopérabilité transfrontalière",
+  "x-hea-version": "0.1",
+  "x-hea-type": "profil-technique",
+  "x-hea-maps-to": [
+    "CAP-INT-13",
+    "CAP-15",
+    "CAP-17",
+    "CMP-06",
+    "CMP-15"
+  ],
+  "x-hea-implements": [
+    "ART-7",
+    "ART-0",
+    "ART-1"
+  ],
+  "x-hea-applies-to": [],
+  "x-hea-source": "referentiel/profils/pt-14.md",
+  "x-hea-fhir-resources": [
+    "Composition",
+    "MeasureReport",
+    "Patient",
+    "ServiceRequest"
+  ],
+  "x-hea-data-objects": [
+    "DO-01",
+    "DO-03",
+    "DO-07",
+    "DO-08",
+    "DO-28",
+    "DO-29",
+    "DO-30"
+  ],
+  "x-hea-file": "referentiel/profils/pt-14.md"
+}

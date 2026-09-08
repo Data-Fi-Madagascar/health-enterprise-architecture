@@ -7,15 +7,22 @@
   "properties": {
     "id": {
       "type": "string",
-      "description": "Identifiant unique de l'objet"
+      "description": "Identifiant unique de l'objet",
+      "const": "DO-21"
     },
     "version": {
       "type": "string",
       "description": "Version de l'objet",
-      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
     },
     "statut": {
       "type": "string",
+      "enum": [
+        "en_cours",
+        "confirme",
+        "infirme",
+        "cloture"
+      ],
       "description": "Statut de l'objet"
     },
     "art_2Ref": {
@@ -35,11 +42,14 @@
     "id",
     "version"
   ],
+  "x-hea-version": "1.0.0",
   "x-hea-id": "DO-21",
   "x-hea-type": "objet-de-donnees",
-  "x-hea-version": "1.0.0",
   "x-hea-status": "draft",
   "x-hea-owner": "DEPSI",
   "x-hea-fhir-resource": "Communication",
+  "x-hea-fhir-resources": [
+    "Communication"
+  ],
   "x-hea-source-ref": "FHIR Communication, Règlement sanitaire international (RSI)"
 }

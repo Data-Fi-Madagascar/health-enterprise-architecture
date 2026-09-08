@@ -7,12 +7,13 @@
   "properties": {
     "id": {
       "type": "string",
-      "description": "Identifiant unique de l'objet"
+      "description": "Identifiant unique de l'objet",
+      "const": "DO-28"
     },
     "version": {
       "type": "string",
       "description": "Version de l'objet",
-      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
     },
     "art_2Ref": {
       "type": "string",
@@ -31,11 +32,14 @@
     "id",
     "version"
   ],
+  "x-hea-version": "1.0.0",
   "x-hea-id": "DO-28",
   "x-hea-type": "objet-de-donnees",
-  "x-hea-version": "1.0.0",
   "x-hea-status": "draft",
   "x-hea-owner": "DEPSI",
-  "x-hea-fhir-resource": "",
+  "x-hea-fhir-resource": "MeasureReport",
+  "x-hea-fhir-resources": [
+    "MeasureReport"
+  ],
   "x-hea-source-ref": "FHIR Dashboard (profil national), DHIS2"
 }

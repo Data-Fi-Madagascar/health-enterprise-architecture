@@ -1,0 +1,217 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "HEA - Consentement et bases d’autorisation (PT-11)",
+    "description": "Profil PT-11 — Consentement et bases d’autorisation. 4 transactions.",
+    "version": "0.4",
+    "contact": {
+      "name": "DEPSI - Madagascar"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://fhir.health.mg/fhir",
+      "description": "Registre national du consentement"
+    }
+  ],
+  "paths": {
+    "/Consent": {
+      "post": {
+        "operationId": "pt11consent_create",
+        "summary": "T1 — Enregistrement du consentement",
+        "description": "T1 — Enregistrement du consentement — Titulaire → Registre (R/O : R). Standard : HL7 FHIR `Consent`",
+        "tags": [
+          "Consent"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Consent"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Consent"
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "operationId": "pt11consent_search",
+        "summary": "T2 — Consultation du consentement",
+        "description": "T2 — Consultation du consentement — Vérificateur → Registre (R/O : R). Standard : HL7 FHIR `Consent`",
+        "tags": [
+          "Consent"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Bundle"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Identifiant"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Nom / libellé"
+          }
+        ]
+      },
+      "delete": {
+        "operationId": "pt11consent_delete",
+        "summary": "T3 — Retrait / révocation",
+        "description": "T3 — Retrait / révocation — Titulaire → Registre (R/O : R). Standard : HL7 FHIR `Consent`",
+        "tags": [
+          "Consent"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès"
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Consent": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "Consent"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Bundle": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "Bundle"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "x-hea-id": "PT-11",
+  "x-hea-title": "Consentement et bases d’autorisation",
+  "x-hea-version": "0.4",
+  "x-hea-type": "profil-technique",
+  "x-hea-maps-to": [
+    "CAP-INT-09"
+  ],
+  "x-hea-implements": [
+    "ART-0",
+    "ART-4B",
+    "ART-7",
+    "ART-11"
+  ],
+  "x-hea-applies-to": [
+    "CMP-12"
+  ],
+  "x-hea-source": "referentiel/profils/pt-11.md",
+  "x-hea-fhir-resources": [
+    "Consent"
+  ],
+  "x-hea-data-objects": [],
+  "x-hea-file": "referentiel/profils/pt-11.md"
+}

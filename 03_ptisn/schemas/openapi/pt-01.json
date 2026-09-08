@@ -1,0 +1,178 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "HEA - Échange interinstitutionnel (PT-01)",
+    "description": "Profil PT-01 — Échange interinstitutionnel. 3 transactions.",
+    "version": "0.4",
+    "contact": {
+      "name": "DEPSI - Madagascar"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://x-road.health.mg/api/v1",
+      "description": "Point de raccordement santé national (X-Road)"
+    }
+  ],
+  "paths": {
+    "/service/call": {
+      "post": {
+        "operationId": "callService",
+        "summary": "Appel de service sécurisé via X-Road",
+        "description": "Requête/réponse entre membres de la fédération via le serveur de sécurité.",
+        "tags": [
+          "X-Road"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/XRoadRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Réponse du service",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/XRoadResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Authentification échouée"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        }
+      }
+    },
+    "/service/log": {
+      "post": {
+        "operationId": "logExchange",
+        "summary": "Journalisation des échanges au niveau transport",
+        "description": "Enregistrement sécurisé des échanges au niveau transport X-Road.",
+        "tags": [
+          "X-Road"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/XRoadLogEntry"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Journal enregistré"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "XRoadRequest": {
+        "type": "object",
+        "required": [
+          "client",
+          "service",
+          "userId",
+          "payload"
+        ],
+        "properties": {
+          "client": {
+            "type": "string",
+            "description": "Identifiant du client (member/subsystem)"
+          },
+          "service": {
+            "type": "string",
+            "description": "Identifiant du service appelé"
+          },
+          "userId": {
+            "type": "string",
+            "description": "Identifiant de l'utilisateur"
+          },
+          "payload": {
+            "type": "object",
+            "description": "Charge utile métier chiffrée et signée"
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "XRoadResponse": {
+        "type": "object",
+        "properties": {
+          "payload": {
+            "type": "object"
+          },
+          "metadata": {
+            "type": "object"
+          }
+        }
+      },
+      "XRoadLogEntry": {
+        "type": "object",
+        "required": [
+          "timestamp",
+          "client",
+          "service",
+          "status"
+        ],
+        "properties": {
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "client": {
+            "type": "string"
+          },
+          "service": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "success",
+              "error",
+              "timeout"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "x-hea-id": "PT-01",
+  "x-hea-title": "Échange interinstitutionnel",
+  "x-hea-version": "0.4",
+  "x-hea-type": "profil-technique",
+  "x-hea-maps-to": [
+    "CAP-INT-03",
+    "CAP-INT-12"
+  ],
+  "x-hea-implements": [
+    "ART-0",
+    "ART-1",
+    "ART-7",
+    "ART-11"
+  ],
+  "x-hea-applies-to": [
+    "CMP-06"
+  ],
+  "x-hea-source": "referentiel/profils/pt-01.md",
+  "x-hea-fhir-resources": [],
+  "x-hea-data-objects": [],
+  "x-hea-file": "referentiel/profils/pt-01.md"
+}

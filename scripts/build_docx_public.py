@@ -183,8 +183,7 @@ def merge_documents_public(file_list, img_dir):
     for rel in file_list:
         src = ROOT / rel
         if not src.exists():
-            print(f"  ⚠ fichier manquant, ignoré : {rel}")
-            continue
+            sys.exit(f"ERREUR : fichier manquant : {rel}")
         content = src.read_text(encoding="utf-8")
         content = clean_for_public(content)
         if content.strip():

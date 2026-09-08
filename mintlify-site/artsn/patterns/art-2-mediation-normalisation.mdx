@@ -1,0 +1,62 @@
+---
+title: "Médiation et normalisation"
+description: "Niveau 3 — Standards techniques, solutions et règles d'homologation"
+owner: "DEPSI"
+version: "1.0.0"
+status: "draft"
+last_reviewed: "2026-08-08"
+---
+
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 : Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
+
+
+ART-2 : Médiation et normalisation constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `ART-2`.
+
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
+
+**Contenu normatif.** La plateforme doit intégrer un moteur de médiation capable de traduire, transformer et valider structurellement et sémantiquement les payloads hétérogènes du terrain en messages canoniques standardisés. Ce moteur doit obligatoirement s’adosser à des dictionnaires de référence nationaux et internationaux uniques : concepts cliniques, biologie/laboratoire, et classification des maladies (voir les [objets de données métier](/artsn/objets-de-donnees/index)).
+
+**Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (multiplicité d’éditeurs de logiciels, silos applicatifs d’ONG), cette discipline seule permet de garantir que les données partagent le même sens médical et la même structure technique sans rompre le pipeline.
+
+- **Rattachement** : CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée (interopérabilité et infrastructure partagée).
+- **Normes CNISN** : [STD-0001: Interopérabilité FHIR R4](/cnisn/standards/std-0001-interopabilite-fhir) (format d'échange canonique, [ADR-0003](/cnisn/decisions/adr-0003-fhir)), [STD-0006: Terminologie](/cnisn/standards/std-0006-terminologie), [STD-0007: SNOMED CT](/cnisn/standards/std-0007-snomed-ct).
+- **Objets de données** : BO-01 Patient & identité, BO-02 Prestation & soins, BO-03 Dispensation & produits, BO-04 Financement & couverture, BO-05 Risque & surveillance, BO-06 Exploitation & gestion, BO-07 Interopérabilité transfrontalière (objets métier CAESN) ; voir aussi le [dictionnaire des objets de données ARTSN](/artsn/objets-de-donnees/index).
+- **Déduit selon** : ENF-3: Unicité de l'identité et résilience face à la fragmentation applicative (fragmentation applicative) et ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health) (One Health).
+- **Statut : Stable.**
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- PT-02 : Médiation intra-secteur
+- PT-03 : Catalogue des services et registre des contrats
+- PT-07 : Terminologie et codification
+- PT-08 : Échange de données agrégées
+- PT-18 : Échange de réclamations et paiements
+- PT-19 : Aide à la décision clinique (CDS)
+
+<!-- END:GENERATED -->
+## Liens
+
+- Index des chapitres
+- Exigences contextuelles : Partie III
+
+## Références
+
+- **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **`ART-2`** : Médiation et normalisation (`referentiel/chapitres/art-2.md`)
+- **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
+- **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

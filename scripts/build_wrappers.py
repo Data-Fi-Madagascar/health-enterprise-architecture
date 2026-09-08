@@ -64,23 +64,41 @@ def parse_frontmatter(text):
         raise FrontmatterError("frontmatter YAML non fermé")
     yaml_block = text[4:end]
     fields = {}
-    for line in yaml_block.splitlines():
+    lines = yaml_block.splitlines()
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        original = line
         stripped = line.strip()
         if not stripped or stripped.startswith("#") or stripped == "---":
+            i += 1
+            continue
+        # Ligne indentée : continuation d'un bloc YAML imbriqué (objet/séquence)
+        # dont la clé parente a déjà été capturée -> on la saute.
+        if original[:1] in (" ", "\t"):
+            i += 1
             continue
         m = re.match(r"^([A-Za-z_][A-Za-z0-9_]*)\s*:\s*(.*)$", stripped)
         if not m:
             raise FrontmatterError("champ non analysable : %r" % line)
         key, value = m.group(1), m.group(2).strip()
+        # Bloc YAML imbriqué (ex. `fhir:` suivi d'un mapping) : consommer les
+        # lignes indentées suivantes sans les interpréter comme des champs.
+        if not value:
+            j = i + 1
+            while j < len(lines) and lines[j][:1] in (" ", "\t"):
+                j += 1
+            fields[key] = None  # marqueur : bloc structuré non exploité ici
+            i = j
+            continue
         if value.startswith("[") and value.endswith("]"):
             inner = value[1:-1].strip()
             items = [item.strip().strip('"').strip("'")
                      for item in inner.split(",") if item.strip()]
             fields[key] = items
-        elif not value:
-            fields[key] = []
         else:
             fields[key] = value.strip('"').strip("'")
+        i += 1
     return end + 4, fields
 
 

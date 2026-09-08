@@ -1,0 +1,465 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "HEA - Échange de réclamations et paiements (PT-18)",
+    "description": "Profil PT-18 — Échange de réclamations et paiements. 4 transactions.",
+    "version": "0.4",
+    "contact": {
+      "name": "DEPSI - Madagascar"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://claims.health.mg/api/v1",
+      "description": "Bus d'échange de réclamations et paiements"
+    }
+  ],
+  "paths": {
+    "/CoverageEligibilityRequest": {
+      "post": {
+        "operationId": "pt18coverageeligibilityrequest_create",
+        "summary": "T1 — Vérification d’éligibilité",
+        "description": "T1 — Vérification d’éligibilité — Prestataire → Payeur (via Bus) (R/O : R). Standard : FHIR `CoverageEligibilityRequest` / `CoverageEligibilityResponse` (R4)",
+        "tags": [
+          "CoverageEligibilityRequest"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CoverageEligibilityRequest"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CoverageEligibilityRequest"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/CoverageEligibilityResponse": {
+      "get": {
+        "operationId": "pt18coverageeligibilityresponse_search",
+        "summary": "T1 — Vérification d’éligibilité",
+        "description": "T1 — Vérification d’éligibilité — Prestataire → Payeur (via Bus) (R/O : R). Standard : FHIR `CoverageEligibilityRequest` / `CoverageEligibilityResponse` (R4)",
+        "tags": [
+          "CoverageEligibilityResponse"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Bundle"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Identifiant"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Nom / libellé"
+          }
+        ]
+      }
+    },
+    "/Claim": {
+      "post": {
+        "operationId": "pt18claim_create",
+        "summary": "T2 — Soumission de réclamation",
+        "description": "T2 — Soumission de réclamation — Prestataire → Payeur (via Bus) (R/O : R). Standard : FHIR `Claim` (R4)",
+        "tags": [
+          "Claim"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Claim"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Claim"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ClaimResponse": {
+      "get": {
+        "operationId": "pt18claimresponse_search",
+        "summary": "T3 — Adjudication",
+        "description": "T3 — Adjudication — Payeur → Prestataire (via Bus) (R/O : R). Standard : FHIR `ClaimResponse` (R4)",
+        "tags": [
+          "ClaimResponse"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Bundle"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Identifiant"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Nom / libellé"
+          }
+        ]
+      }
+    },
+    "/PaymentNotice": {
+      "post": {
+        "operationId": "pt18paymentnotice_create",
+        "summary": "T4 — Notification de paiement",
+        "description": "T4 — Notification de paiement — Payeur → Prestataire (via Bus) (R/O : R). Standard : FHIR `PaymentNotice` signé (R4)",
+        "tags": [
+          "PaymentNotice"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PaymentNotice"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PaymentNotice"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Claim": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "Claim"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "ClaimResponse": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "ClaimResponse"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "CoverageEligibilityRequest": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "CoverageEligibilityRequest"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "CoverageEligibilityResponse": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "CoverageEligibilityResponse"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "PaymentNotice": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "PaymentNotice"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "Bundle": {
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "Bundle"
+          },
+          "id": {
+            "type": "string",
+            "description": "Identifiant logique de la ressource"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "versionId": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "profile": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "DO16": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-16.json"
+      },
+      "DO14": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-14.json"
+      },
+      "DO17": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-17.json"
+      }
+    }
+  },
+  "x-hea-id": "PT-18",
+  "x-hea-title": "Échange de réclamations et paiements",
+  "x-hea-version": "0.4",
+  "x-hea-type": "profil-technique",
+  "x-hea-maps-to": [
+    "CAP-INT-07"
+  ],
+  "x-hea-implements": [
+    "ART-2",
+    "ART-9"
+  ],
+  "x-hea-applies-to": [],
+  "x-hea-source": "referentiel/profils/pt-18.md",
+  "x-hea-fhir-resources": [
+    "Claim",
+    "ClaimResponse",
+    "CoverageEligibilityRequest",
+    "CoverageEligibilityResponse",
+    "PaymentNotice"
+  ],
+  "x-hea-data-objects": [
+    "DO-14",
+    "DO-16",
+    "DO-17"
+  ],
+  "x-hea-file": "referentiel/profils/pt-18.md"
+}
