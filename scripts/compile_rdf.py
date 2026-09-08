@@ -65,6 +65,7 @@ TYPE_TO_CLASS = {
 # Mapping type YAML → propriété de relation principale
 RELATION_FIELDS = ["maps_to", "implements", "applies_to", "related",
                    "realized_by", "contributes_to", "performs", "accesses",
+                   "accessed_by",
                    "governs", "represents", "assigned_to", "has_role",
                    "located_at", "serves", "produced_by", "detenu_par",
                    "soutient_flux_de_valeur", "utilise_composant",
@@ -80,6 +81,7 @@ PROPERTY_MAP = {
     "contributes_to": "contributesTo",
     "performs": "performs",
     "accesses": "accesses",
+    "accessed_by": "accessedBy",
     "governs": "serves",          # Serving ArchiMate (merge with applies_to)
     "represents": "represents",
     "assigned_to": "assignedTo",

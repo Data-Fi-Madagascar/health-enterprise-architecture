@@ -233,6 +233,19 @@ hea:accesses rdf:type owl:ObjectProperty ;
         owl:unionOf (hea:ObjetDeDonnees hea:ObjetMetier)
     ] .
 
+hea:accessedBy rdf:type owl:ObjectProperty ;
+    rdfs:label "accédé par" ;
+    rdfs:comment "Inverse de hea:accesses pour naviguer depuis les objets métier et les objets de données" ;
+    owl:inverseOf hea:accesses ;
+    rdfs:domain [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:ObjetDeDonnees hea:ObjetMetier)
+    ] ;
+    rdfs:range [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:ProcessusMetier hea:Service hea:Composant)
+    ] .
+
 # --- Assignment (responsabilité) ---
 # ArchiMate: "The Assignment relationship models the assignment of responsibility for performing behavior
 # to an entity that performs behavior."

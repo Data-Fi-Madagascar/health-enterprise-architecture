@@ -28,32 +28,38 @@ jobs:
       - name: Validate referentiel graph
         run: python3 scripts/validate_ref.py
 
+      - name: Check referentiel index idempotence
+        run: python3 scripts/build_ref_index.py --check
+
       - name: Check wrappers idempotence
         run: python3 scripts/build_wrappers.py --check
 
       - name: Check broken links
         run: python3 scripts/check_links.py
 
-      - name: Compile RDF (YAML → Turtle)
-        run: python3 scripts/compile_rdf.py
+      - name: Check documentation manifests
+        run: python3 scripts/check_manifests.py
 
-      - name: Validate SHACL shapes
+      - name: Compile RDF and validate SHACL shapes
         run: python3 scripts/compile_rdf.py --validate
 
-      - name: Compile JSON Schema (DO → JSON Schema vDraft-07)
-        run: python3 scripts/compilers/compile_jsonschema.py --validate
+      - name: Check JSON Schema idempotence
+        run: python3 scripts/compilers/compile_jsonschema.py --check
 
       - name: Compile FHIR R4 (DO → StructureDefinition, CodeSystem, ValueSet)
         run: python3 scripts/compilers/compile_fhir.py --validate
 
-      - name: Compile OpenAPI 3.0 (PT → OpenAPI specs)
-        run: python3 scripts/compilers/compile_openapi.py --validate
+      - name: Check OpenAPI idempotence
+        run: python3 scripts/compilers/compile_openapi.py --check
 
-      - name: Compile ODA (nomenclatures → payload + FHIR CodeSystem)
-        run: python3 scripts/compilers/compile_oda.py --validate
+      - name: Check ODA idempotence
+        run: python3 scripts/compilers/compile_oda.py --check
 
       - name: Validate governance (fichiers d'auteur)
         run: python3 scripts/compilers/compile_oda.py --check-governance
+
+      - name: Check Mintlify artifact idempotence
+        run: python3 scripts/build_mintlify.py --check
 
       - name: Upload RDF artifact
         uses: actions/upload-artifact@v4

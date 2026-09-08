@@ -22,12 +22,12 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 |------------|--------|
 | Flux de valeur nationaux | 4 (VS-01 à VS-04) |
 | Capabilités CAESN | 18 (CAP-01..18) |
-| Capabilités CNISN | 14 (7 familles) |
-| Chapitres ARTSN | 12+ (ART-0 à ART-11) |
-| Concepts dictionnaire | 40 (7 domaines) |
-| Profils PTISN | 15 (PT-01 à PT-15) |
-| ADR | 10 (4 acceptées, 6 proposées) |
-| Standards | 6 (STD-0001..0006) + 2 normes internationales (NORM-007, NORM-008) |
+| Capacités CNISN | 16 (CAP-INT-01..16) |
+| Chapitres ARTSN | 21 entrées (ART-0 à ART-12, déclinaisons incluses) |
+| Objets de données | 31 objets DO + 7 objets métier BO |
+| Profils PTISN | 19 (PT-01 à PT-19) |
+| ADR | 10 (ADR-0001..0010) |
+| Standards | 7 standards CNISN (STD-0001..0007) + 2 normes internationales (NORM-007, NORM-008) |
 | Politiques RBAC | 10 (POL-01 à POL-10) |
 | Score architecture | 4.8/5 |
 
@@ -63,10 +63,10 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 |---------|--------|---------|
 | Introduction | [`00_introduction/`](./01_cnisn/00_introduction/) | Contexte, périmètre, objectifs, articulation UGD |
 | Principes | [`01_principes/`](./01_cnisn/01_principes/) | Principes d'interopérabilité |
-| Capacités | [`02_capacites/`](./01_cnisn/02_capacites/) | 14 capabilités interopérabilité (7 familles) |
+| Capacités | [`02_capacites/`](./01_cnisn/02_capacites/) | 16 capacités d'interopérabilité |
 | Gouvernance | [`03_gouvernance/`](./01_cnisn/03_gouvernance/) | Gouvernance de l'interopérabilité |
 | Conformité | [`04_conformite/`](./01_cnisn/04_conformite/) | Conformité, audit, programme de conformité opérationnel |
-| Standards | [`05_standards/`](./01_cnisn/05_standards/) | 6 normes obligatoires + 2 normes internationales |
+| Standards | [`05_standards/`](./01_cnisn/05_standards/) | 7 standards CNISN + 2 normes internationales |
 | Décisions | [`06_decisions/`](./01_cnisn/06_decisions/) | 10 Architecture Decision Records (ADR-0001..0010) |
 | Trajectoire | [`05_trajectoire/`](./01_cnisn/05_trajectoire/) | 7 phases T4 2026–T2 2030 |
 | Indicateurs | [`06_indicateurs/`](./01_cnisn/06_indicateurs/) | KPIs interopérabilité |
@@ -79,12 +79,14 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 | Fondations | [`00_fondations/`](./02_artsn/00_fondations/) | Fondations architecturales |
 | Flux de valeur | [`01_flux-de-valeur/`](./02_artsn/01_flux-de-valeur/) | Déclinaison technique des flux |
 | Exigences | [`02_exigences-contextuelles/`](./02_artsn/02_exigences-contextuelles/) | Contraintes et exigences |
-| Chapitres | [`04_patterns/`](./02_artsn/04_patterns/) | Chapitres ART (ART-0 à ART-11) |
+| Objets de données | [`03_objets-de-donnees/`](./02_artsn/03_objets-de-donnees/) | Catalogue DO-01..31 et nomenclatures |
+| Chapitres | [`04_patterns/`](./02_artsn/04_patterns/) | Chapitres ART (ART-0 à ART-12, déclinaisons incluses) |
 | Cartographie | [`05_cartographie/`](./02_artsn/05_cartographie/) | Vue cible du système |
-| Dictionnaire | [`03_objets-de-donnees/`](./02_artsn/03_objets-de-donnees/) | 40 concepts de données (7 domaines) |
+| Services | [`06_services/`](./02_artsn/06_services/) | Services techniques de référence |
 | Gouvernance | [`06_gouvernance/`](./02_artsn/06_gouvernance/) | Veille, conformité, dépréciation |
+| Lots | [`07_lots/`](./02_artsn/07_lots/) | Lots consommateurs et trajectoire CNISN |
 | Annexes | [`08_annexes/`](./02_artsn/08_annexes/) | Protocole de test, SLA, maturité |
-| Feuille de route des lots | [`06_portfolio/feuille-de-route-lots.md`](./00_caesn/06_portfolio/feuille-de-route-lots.md) | Roadmap 7 lots, définie au portefeuille CAESN |
+| Feuille de route | [`09_feuille-de-route/`](./02_artsn/09_feuille-de-route/) | Plateaux et écarts de trajectoire |
 
 ### Niveau 4 — `03_ptisn/` (PTISN)
 
@@ -93,7 +95,7 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 | Introduction | [`00_introduction/`](./03_ptisn/00_introduction/) | Contexte et Objectifs du PTISN |
 | Règles | [`01_regles-utilisation/`](./03_ptisn/01_regles-utilisation/) | Règles d'utilisation et templates |
 | Topologie | [`02_topologie-nationale-cible/`](./03_ptisn/02_topologie-nationale-cible/) | Architecture réseau nationale |
-| Profils | [`03_profils/`](./03_ptisn/03_profils/) | 15 profils techniques (PT-01 à PT-15) |
+| Profils | [`03_profils/`](./03_ptisn/03_profils/) | 19 profils techniques (PT-01 à PT-19) |
 | Alignement | [`04_matrice-alignement/`](./03_ptisn/04_matrice-alignement/) | Matrice profils ↔ capabilités |
 | Exemples | [`08_annexes/f-exemples-profils.md`](./03_ptisn/08_annexes/f-exemples-profils.md) | Exemples de profils remplis |
 | Gouvernance | [`06_gouvernance/`](./03_ptisn/06_gouvernance/) | Gouvernance PTISN |
@@ -103,12 +105,19 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 
 | Type | Chemin | Contenu |
 |------|--------|---------|
-| Fondations | [`referentiel/fondations/`](./referentiel/fondations/) | Fondations F-01..08 |
-| Principes | [`referentiel/principes/`](./referentiel/principes/) | Principes P-01..18 |
-| Capacités | [`referentiel/capacites/`](./referentiel/capacites/) | 16 capacités CNISN |
-| Chapitres | [`referentiel/chapitres/`](./referentiel/chapitres/) | Chapitres ART-0..11 |
-| Composants | [`referentiel/composants/`](./referentiel/composants/) | Composants logiques |
-| Profils | [`referentiel/profils/`](./referentiel/profils/) | Profils PT-01..15 |
+| Fondations | [`referentiel/fondations/`](./referentiel/fondations/) | Fondations F |
+| Principes | [`referentiel/principes/`](./referentiel/principes/) | Principes transversaux et de domaine |
+| Capacités | [`referentiel/capacites/`](./referentiel/capacites/) | Capacités CNISN CAP-INT |
+| Chapitres | [`referentiel/chapitres/`](./referentiel/chapitres/) | Chapitres ARTSN ART |
+| Composants | [`referentiel/composants/`](./referentiel/composants/) | Composants applicatifs, infrastructure, sécurité et gouvernance |
+| Profils | [`referentiel/profils/`](./referentiel/profils/) | Profils PT-01..19 |
+| Objets métier | [`referentiel/objets-metier/`](./referentiel/objets-metier/) | Objets métier BO |
+| Objets de données | [`referentiel/objets-de-donnees/`](./referentiel/objets-de-donnees/) | Objets de données DO |
+| Services | [`referentiel/services/`](./referentiel/services/) | Services applicatifs SRV |
+| Processus | [`referentiel/processus/`](./referentiel/processus/) | Processus métier PRC |
+| Work packages | [`referentiel/work-packages/`](./referentiel/work-packages/) | Lots de mise en œuvre WP |
+| Plateaux | [`referentiel/plateaux/`](./referentiel/plateaux/) | Plateaux de trajectoire |
+| Gaps | [`referentiel/gaps/`](./referentiel/gaps/) | Écarts de trajectoire |
 | Flux de valeur | [`referentiel/flux-valeur/`](./referentiel/flux-valeur/) | VS-01..04 |
 | Étapes de valeur | [`referentiel/etapes-valeur/`](./referentiel/etapes-valeur/) | Étapes opérationnelles |
 
@@ -116,7 +125,7 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 
 | Outil | Chemin | Description |
 |-------|--------|-------------|
-| Registre des décisions | [`01_cnisn/06_decisions/registre-decisions.md`](./01_cnisn/06_decisions/registre-decisions.md) | Tableau central des 9 ADR |
+| Registre des décisions | [`01_cnisn/06_decisions/registre-decisions.md`](./01_cnisn/06_decisions/registre-decisions.md) | Tableau central des 10 ADR |
 | Template modification | [`01_cnisn/06_decisions/template-modification.md`](./01_cnisn/06_decisions/template-modification.md) | Formulaire de demande de changement |
 | Processus gouvernance | [`00_caesn/07_governance/processus-gouvernance.md`](./00_caesn/07_governance/processus-gouvernance.md) | Workflows de validation |
 | Homologation | [`00_caesn/07_governance/homologation.md`](./00_caesn/07_governance/homologation.md) | 12 critères, 5 phases |
@@ -133,7 +142,7 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 - Chaque document ouvre sur un bloc **« Pour qui lire ce document »** : niveaux de lecture par profil (●◐○) + renvoi à la matrice de lecture de son niveau
 - Les références croisées utilisent des liens Markdown relatifs
 - Les ADR suivent le [modèle de décision](01_cnisn/06_decisions/adr-0000-template.md)
-- Statuts : `draft`, `review`, `approved`, `deprecated`, `superseded`
+- Statuts : `draft`, `active`, `stable`, `candidate`, `deprecated`
 - Tags et identifiants en kebab-case
 - Langue : français (noms de dossiers en kebab-case anglais)
 

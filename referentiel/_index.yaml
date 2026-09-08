@@ -1,1384 +1,2120 @@
 # Registre des objets du référentiel
-# Source de vérité pour la vérification des comptes et des liens.
-# id, type, niveau, chemin, statut.
+# Fichier généré par scripts/build_ref_index.py. Ne pas éditer à la main.
+# Source de vérité : frontmatter Markdown sous referentiel/.
+# Champs : id, type, niveau, chemin, status, title.
+# Statuts : draft | active | stable | candidate | deprecated
+# Total : 338 objets
 #
-# Statuts : draft | active | deprecated | candidate
+# Comptes par type :
+# - acteur : 6
+# - capabilite : 18
+# - capacite : 16
+# - chapitre : 21
+# - composant-applicatif : 25
+# - composant-infrastructure : 6
+# - composant-securite : 7
+# - etape-valeur : 28
+# - exigence : 5
+# - flux-valeur : 4
+# - fondation : 6
+# - gap : 3
+# - lieu : 6
+# - objet-de-donnees : 31
+# - objet-metier : 7
+# - partie-prenante : 10
+# - plateau : 3
+# - principe : 74
+# - processus-metier : 13
+# - profil : 19
+# - registre-gouvernance : 8
+# - role : 5
+# - service : 6
+# - valeur : 4
+# - work-package : 7
+#
+# Comptes par status :
+# - draft : 174
+# - active : 111
+# - stable : 29
+# - candidate : 24
+# - deprecated : 0
 
-# --- CAESN (niveau 1) ---
-# flux de valeur (4)
-- id: VS-01
-  type: flux-valeur
+# niveau 1 / flux-valeur (4)
+- id: "VS-01"
+  type: "flux-valeur"
   niveau: "1"
-  chemin: flux-valeur/vs-01.md
-  status: draft
-- id: VS-02
-  type: flux-valeur
+  chemin: "flux-valeur/vs-01.md"
+  status: "active"
+  title: "Accéder à des services de santé essentiels, intégrés, équitables et de qualité"
+- id: "VS-02"
+  type: "flux-valeur"
   niveau: "1"
-  chemin: flux-valeur/vs-02.md
-  status: draft
-- id: VS-03
-  type: flux-valeur
+  chemin: "flux-valeur/vs-02.md"
+  status: "active"
+  title: "Prévenir, détecter et répondre aux risques sanitaires"
+- id: "VS-03"
+  type: "flux-valeur"
   niveau: "1"
-  chemin: flux-valeur/vs-03.md
-  status: draft
-- id: VS-04
-  type: flux-valeur
+  chemin: "flux-valeur/vs-03.md"
+  status: "active"
+  title: "Protéger financièrement la population face aux dépenses de santé"
+- id: "VS-04"
+  type: "flux-valeur"
   niveau: "1"
-  chemin: flux-valeur/vs-04.md
-  status: draft
+  chemin: "flux-valeur/vs-04.md"
+  status: "active"
+  title: "Piloter, coordonner et améliorer la performance du système de santé"
 
-# capabilites (16)
-- id: CAP-01
-  type: capabilite
+# niveau 1 / capabilite (18)
+- id: "CAP-01"
+  type: "capabilite"
   niveau: "1"
-  chemin: capabilites/cap-01.md
-  status: draft
-- id: CAP-02
-  type: capabilite
+  chemin: "capabilites/cap-01.md"
+  status: "stable"
+  title: "Offre de soins et continuité des services"
+- id: "CAP-02"
+  type: "capabilite"
   niveau: "1"
-  chemin: capabilites/cap-02.md
-  status: draft
-- id: CAP-03
-  type: capabilite
+  chemin: "capabilites/cap-02.md"
+  status: "stable"
+  title: "Gestion du parcours patient, référence et contre-référence"
+- id: "CAP-03"
+  type: "capabilite"
   niveau: "1"
-  chemin: capabilites/cap-03.md
-  status: draft
-- id: CAP-04
-  type: capabilite
+  chemin: "capabilites/cap-03.md"
+  status: "stable"
+  title: "Qualité, sécurité des soins et amélioration continue"
+- id: "CAP-04"
+  type: "capabilite"
   niveau: "1"
-  chemin: capabilites/cap-04.md
-  status: draft
-- id: CAP-05
-  type: capabilite
+  chemin: "capabilites/cap-04.md"
+  status: "stable"
+  title: "Santé communautaire et engagement des communautés"
+- id: "CAP-05"
+  type: "capabilite"
   niveau: "1"
-  chemin: capabilites/cap-05.md
-  status: draft
-- id: CAP-06
-  type: capabilite
+  chemin: "capabilites/cap-05.md"
+  status: "stable"
+  title: "Surveillance épidémiologique, alerte, investigation et riposte"
+- id: "CAP-06"
+  type: "capabilite"
   niveau: "1"
-  chemin: capabilites/cap-06.md
-  status: draft
-- id: CAP-07
-  type: capabilite
+  chemin: "capabilites/cap-06.md"
+  status: "stable"
+  title: "Vaccination, prévention et promotion de la santé"
+- id: "CAP-07"
+  type: "capabilite"
   niveau: "1"
-  chemin: capabilites/cap-07.md
-  status: draft
-- id: CAP-08
-  type: capabilite
+  chemin: "capabilites/cap-07.md"
+  status: "stable"
+  title: "Protection financière, couverture santé universelle"
+- id: "CAP-08"
+  type: "capabilite"
   niveau: "1"
-  chemin: capabilites/cap-08.md
-  status: draft
-- id: CAP-09
-  type: capabilite
+  chemin: "capabilites/cap-08.md"
+  status: "stable"
+  title: "Gouvernance institutionnelle, planification, coordination et redevabilité"
+- id: "CAP-09"
+  type: "capabilite"
   niveau: "1"
-  chemin: capabilites/cap-09.md
-  status: draft
-- id: CAP-10
-  type: capabilite
+  chemin: "capabilites/cap-09.md"
+  status: "stable"
+  title: "Gestion des ressources humaines en santé"
+- id: "CAP-10"
+  type: "capabilite"
   niveau: "1"
-  chemin: capabilites/cap-10.md
-  status: draft
-- id: CAP-11
-  type: capabilite
+  chemin: "capabilites/cap-10.md"
+  status: "stable"
+  title: "Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement"
+- id: "CAP-11"
+  type: "capabilite"
   niveau: "1"
-  chemin: capabilites/cap-11.md
-  status: draft
-- id: CAP-12
-  type: capabilite
+  chemin: "capabilites/cap-11.md"
+  status: "stable"
+  title: "Gestion des infrastructures, équipements et maintenance"
+- id: "CAP-12"
+  type: "capabilite"
   niveau: "1"
-  chemin: capabilites/cap-12.md
-  status: draft
-- id: CAP-13
-  type: capabilite
+  chemin: "capabilites/cap-12.md"
+  status: "stable"
+  title: "Finances publiques, budget et allocation des ressources"
+- id: "CAP-13"
+  type: "capabilite"
   niveau: "1"
-  chemin: capabilites/cap-13.md
-  status: draft
-- id: CAP-14
-  type: capabilite
+  chemin: "capabilites/cap-13.md"
+  status: "stable"
+  title: "Système d'information sanitaire, données et recherche"
+- id: "CAP-14"
+  type: "capabilite"
   niveau: "1"
-  chemin: capabilites/cap-14.md
-  status: draft
-- id: CAP-15
-  type: capabilite
+  chemin: "capabilites/cap-14.md"
+  status: "stable"
+  title: "Interopérabilité, référentiels nationaux et infrastructure numérique partagée"
+- id: "CAP-15"
+  type: "capabilite"
   niveau: "1"
-  chemin: capabilites/cap-15.md
-  status: draft
-- id: CAP-16
-  type: capabilite
+  chemin: "capabilites/cap-15.md"
+  status: "stable"
+  title: "Cybersécurité, confidentialité et gouvernance des données personnelles"
+- id: "CAP-16"
+  type: "capabilite"
   niveau: "1"
-  chemin: capabilites/cap-16.md
-  status: draft
+  chemin: "capabilites/cap-16.md"
+  status: "stable"
+  title: "Gestion du portefeuille d'initiatives numériques"
+- id: "CAP-17"
+  type: "capabilite"
+  niveau: "1"
+  chemin: "capabilites/cap-17.md"
+  status: "stable"
+  title: "Engagement patient et identité numérique"
+- id: "CAP-18"
+  type: "capabilite"
+  niveau: "1"
+  chemin: "capabilites/cap-18.md"
+  status: "stable"
+  title: "Coordination intersectorielle (One Health)"
 
-# principes d'architecture PA (12)
-- id: PA-01
-  type: principe
+# niveau 1 / principe (74)
+- id: "AA-01"
+  type: "principe"
   niveau: "1"
-  chemin: principes/pa-01.md
-  status: draft
-- id: PA-02
-  type: principe
+  chemin: "principes/aa-01.md"
+  status: "draft"
+  title: "Les applications sont dérivées des flux de valeur et des capabilités"
+- id: "AA-02"
+  type: "principe"
   niveau: "1"
-  chemin: principes/pa-02.md
-  status: draft
-- id: PA-03
-  type: principe
+  chemin: "principes/aa-02.md"
+  status: "draft"
+  title: "Les applications ne doivent pas dupliquer les référentiels nationaux"
+- id: "AA-03"
+  type: "principe"
   niveau: "1"
-  chemin: principes/pa-03.md
-  status: draft
-- id: PA-04
-  type: principe
+  chemin: "principes/aa-03.md"
+  status: "draft"
+  title: "Les applications doivent être interopérables par conception"
+- id: "AA-04"
+  type: "principe"
   niveau: "1"
-  chemin: principes/pa-04.md
-  status: draft
-- id: PA-05
-  type: principe
+  chemin: "principes/aa-04.md"
+  status: "draft"
+  title: "Les applications opérationnelles et analytiques doivent être séparées"
+- id: "AA-05"
+  type: "principe"
   niveau: "1"
-  chemin: principes/pa-05.md
-  status: draft
-- id: PA-06
-  type: principe
+  chemin: "principes/aa-05.md"
+  status: "draft"
+  title: "Les applications doivent fonctionner dans les conditions réelles du terrain"
+- id: "AA-06"
+  type: "principe"
   niveau: "1"
-  chemin: principes/pa-06.md
-  status: draft
-- id: PA-07
-  type: principe
+  chemin: "principes/aa-06.md"
+  status: "draft"
+  title: "Les plateformes partagées doivent être réutilisées avant de créer de nouveaux composants"
+- id: "AA-07"
+  type: "principe"
   niveau: "1"
-  chemin: principes/pa-07.md
-  status: draft
-- id: PA-08
-  type: principe
+  chemin: "principes/aa-07.md"
+  status: "draft"
+  title: "Les applications doivent être soutenables"
+- id: "AA-08"
+  type: "principe"
   niveau: "1"
-  chemin: principes/pa-08.md
-  status: draft
-- id: PA-09
-  type: principe
+  chemin: "principes/aa-08.md"
+  status: "draft"
+  title: "Les applications doivent être homologuées avant extension"
+- id: "AA-09"
+  type: "principe"
   niveau: "1"
-  chemin: principes/pa-09.md
-  status: draft
-- id: PA-10
-  type: principe
+  chemin: "principes/aa-09.md"
+  status: "draft"
+  title: "Les applications obsolètes ou redondantes doivent être rationalisées"
+- id: "DA-01"
+  type: "principe"
   niveau: "1"
-  chemin: principes/pa-10.md
-  status: draft
-- id: PA-11
-  type: principe
+  chemin: "principes/da-01.md"
+  status: "draft"
+  title: "Les données de santé sont un actif stratégique national"
+- id: "DA-02"
+  type: "principe"
   niveau: "1"
-  chemin: principes/pa-11.md
-  status: draft
-- id: PA-12
-  type: principe
+  chemin: "principes/da-02.md"
+  status: "draft"
+  title: "Une donnée doit être collectée une seule fois et réutilisée plusieurs fois"
+- id: "DA-03"
+  type: "principe"
   niveau: "1"
-  chemin: principes/pa-12.md
-  status: draft
+  chemin: "principes/da-03.md"
+  status: "draft"
+  title: "Les référentiels nationaux sont les sources de vérité"
+- id: "DA-04"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/da-04.md"
+  status: "draft"
+  title: "Les données opérationnelles et analytiques doivent être distinguées"
+- id: "DA-05"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/da-05.md"
+  status: "draft"
+  title: "La qualité des données est une responsabilité partagée"
+- id: "DA-06"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/da-06.md"
+  status: "draft"
+  title: "Les données doivent être utilisées pour des décisions réelles"
+- id: "DA-07"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/da-07.md"
+  status: "draft"
+  title: "Les données personnelles de santé doivent être protégées dès la conception"
+- id: "DA-08"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/da-08.md"
+  status: "draft"
+  title: "Les échanges de données doivent passer par des mécanismes gouvernés"
+- id: "PA-01"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pa-01.md"
+  status: "draft"
+  title: "La valeur pour la population est la finalité de tout investissement numérique"
+- id: "PA-02"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pa-02.md"
+  status: "draft"
+  title: "Les flux de valeur précèdent les systèmes"
+- id: "PA-03"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pa-03.md"
+  status: "draft"
+  title: "Les bénéfices doivent être mesurés, pas seulement déclarés"
+- id: "PA-04"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pa-04.md"
+  status: "draft"
+  title: "Les données de santé sont un actif stratégique national"
+- id: "PA-05"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pa-05.md"
+  status: "draft"
+  title: "Une donnée doit être collectée une seule fois et réutilisée plusieurs fois"
+- id: "PA-06"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pa-06.md"
+  status: "draft"
+  title: "L'interopérabilité est une exigence non négociable"
+- id: "PA-07"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pa-07.md"
+  status: "draft"
+  title: "Les référentiels nationaux sont des biens communs indivisibles"
+- id: "PA-08"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pa-08.md"
+  status: "draft"
+  title: "Les systèmes doivent être soutenables sans dépendance externe permanente"
+- id: "PA-09"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pa-09.md"
+  status: "draft"
+  title: "L'architecture doit être adaptée aux réalités du terrain"
+- id: "PA-10"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pa-10.md"
+  status: "draft"
+  title: "La souveraineté nationale du système d'information sanitaire est non négociable"
+- id: "PA-11"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pa-11.md"
+  status: "draft"
+  title: "La protection des données personnelles est une condition de confiance"
+- id: "PA-12"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pa-12.md"
+  status: "draft"
+  title: "Toute initiative numérique doit être conforme au cadre national"
+- id: "PD-VS01-01"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pd-vs01-01.md"
+  status: "draft"
+  title: "Le parcours du patient est l'unité de mesure de la performance"
+- id: "PD-VS01-02"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pd-vs01-02.md"
+  status: "draft"
+  title: "Le dossier du patient suit le patient, pas l'institution"
+- id: "PD-VS01-03"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pd-vs01-03.md"
+  status: "draft"
+  title: "La continuité des soins prime sur la logique des programmes"
+- id: "PD-VS01-04"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pd-vs01-04.md"
+  status: "draft"
+  title: "Le patient et la communauté sont acteurs du parcours de santé"
+- id: "PD-VS01-05"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pd-vs01-05.md"
+  status: "draft"
+  title: "L'accès numérique ne doit jamais devenir une barrière à l'accès aux soins"
+- id: "PD-VS02-01"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pd-vs02-01.md"
+  status: "draft"
+  title: "La détection précoce prime sur la production tardive de rapports"
+- id: "PD-VS02-02"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pd-vs02-02.md"
+  status: "draft"
+  title: "Toute alerte sanitaire doit être traçable de sa notification à sa clôture"
+- id: "PD-VS02-03"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pd-vs02-03.md"
+  status: "draft"
+  title: "Les données communautaires et institutionnelles doivent converger"
+- id: "PD-VS02-04"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pd-vs02-04.md"
+  status: "draft"
+  title: "La riposte doit être pilotée par des données exploitables en temps utile"
+- id: "PD-VS02-05"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pd-vs02-05.md"
+  status: "draft"
+  title: "La surveillance sanitaire est une capabilité nationale permanente"
+- id: "PD-VS03-01"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pd-vs03-01.md"
+  status: "draft"
+  title: "Les droits des bénéficiaires doivent être vérifiables au point de service"
+- id: "PD-VS03-02"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pd-vs03-02.md"
+  status: "draft"
+  title: "La protection financière doit être liée au parcours réel de soins"
+- id: "PD-VS03-03"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pd-vs03-03.md"
+  status: "draft"
+  title: "Les mécanismes d'exemption, de facturation et de remboursement doivent être traçables"
+- id: "PD-VS03-04"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pd-vs03-04.md"
+  status: "draft"
+  title: "Aucun mécanisme numérique de financement ne doit créer une barrière supplémentaire à l'accès aux soins"
+- id: "PD-VS03-05"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pd-vs03-05.md"
+  status: "draft"
+  title: "Le financement doit soutenir la qualité et la continuité des services"
+- id: "PD-VS04-01"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pd-vs04-01.md"
+  status: "draft"
+  title: "La décision sanitaire doit s'appuyer sur des données fiables, traçables et réutilisables"
+- id: "PD-VS04-02"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pd-vs04-02.md"
+  status: "draft"
+  title: "Le pilotage doit mesurer les résultats, pas seulement les activités"
+- id: "PD-VS04-03"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pd-vs04-03.md"
+  status: "draft"
+  title: "Le portefeuille numérique doit être gouverné par la valeur produite"
+- id: "PD-VS04-04"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pd-vs04-04.md"
+  status: "draft"
+  title: "Les partenaires contribuent au portefeuille national, ils ne le fragmentent pas"
+- id: "PD-VS04-05"
+  type: "principe"
+  niveau: "1"
+  chemin: "principes/pd-vs04-05.md"
+  status: "draft"
+  title: "L'amélioration continue doit être intégrée dans le système, pas ajoutée après coup"
 
-# principes de domaine PD (20)
-- id: PD-VS01-01
-  type: principe
+# niveau 1 / etape-valeur (28)
+- id: "VS-01-01"
+  type: "etape-valeur"
   niveau: "1"
-  chemin: principes/pd-vs01-01.md
-  status: draft
-- id: PD-VS01-02
-  type: principe
+  chemin: "etapes-valeur/vs-01-01.md"
+  status: "draft"
+  title: "Reconnaissance du besoin et orientation"
+- id: "VS-01-02"
+  type: "etape-valeur"
   niveau: "1"
-  chemin: principes/pd-vs01-02.md
-  status: draft
-- id: PD-VS01-03
-  type: principe
+  chemin: "etapes-valeur/vs-01-02.md"
+  status: "draft"
+  title: "Accueil et enregistrement"
+- id: "VS-01-03"
+  type: "etape-valeur"
   niveau: "1"
-  chemin: principes/pd-vs01-03.md
-  status: draft
-- id: PD-VS01-04
-  type: principe
+  chemin: "etapes-valeur/vs-01-03.md"
+  status: "draft"
+  title: "Consultation et diagnostic"
+- id: "VS-01-04"
+  type: "etape-valeur"
   niveau: "1"
-  chemin: principes/pd-vs01-04.md
-  status: draft
-- id: PD-VS01-05
-  type: principe
+  chemin: "etapes-valeur/vs-01-04.md"
+  status: "draft"
+  title: "Traitement et prise en charge"
+- id: "VS-01-05"
+  type: "etape-valeur"
   niveau: "1"
-  chemin: principes/pd-vs01-05.md
-  status: draft
-- id: PD-VS02-01
-  type: principe
+  chemin: "etapes-valeur/vs-01-05.md"
+  status: "draft"
+  title: "Référence et contre-référence"
+- id: "VS-01-06"
+  type: "etape-valeur"
   niveau: "1"
-  chemin: principes/pd-vs02-01.md
-  status: draft
-- id: PD-VS02-02
-  type: principe
+  chemin: "etapes-valeur/vs-01-06.md"
+  status: "draft"
+  title: "Suivi et continuité des soins"
+- id: "VS-01-07"
+  type: "etape-valeur"
   niveau: "1"
-  chemin: principes/pd-vs02-02.md
-  status: draft
-- id: PD-VS02-03
-  type: principe
+  chemin: "etapes-valeur/vs-01-07.md"
+  status: "draft"
+  title: "Amélioration de la qualité"
+- id: "VS-02-01"
+  type: "etape-valeur"
   niveau: "1"
-  chemin: principes/pd-vs02-03.md
-  status: draft
-- id: PD-VS02-04
-  type: principe
+  chemin: "etapes-valeur/vs-02-01.md"
+  status: "draft"
+  title: "Identification des risques et promotion de la santé"
+- id: "VS-02-02"
+  type: "etape-valeur"
   niveau: "1"
-  chemin: principes/pd-vs02-04.md
-  status: draft
-- id: PD-VS02-05
-  type: principe
+  chemin: "etapes-valeur/vs-02-02.md"
+  status: "draft"
+  title: "Surveillance et détection"
+- id: "VS-02-03"
+  type: "etape-valeur"
   niveau: "1"
-  chemin: principes/pd-vs02-05.md
-  status: draft
-- id: PD-VS03-01
-  type: principe
+  chemin: "etapes-valeur/vs-02-03.md"
+  status: "draft"
+  title: "Notification et alerte"
+- id: "VS-02-04"
+  type: "etape-valeur"
   niveau: "1"
-  chemin: principes/pd-vs03-01.md
-  status: draft
-- id: PD-VS03-02
-  type: principe
+  chemin: "etapes-valeur/vs-02-04.md"
+  status: "draft"
+  title: "Vérification et investigation"
+- id: "VS-02-05"
+  type: "etape-valeur"
   niveau: "1"
-  chemin: principes/pd-vs03-02.md
-  status: draft
-- id: PD-VS03-03
-  type: principe
+  chemin: "etapes-valeur/vs-02-05.md"
+  status: "draft"
+  title: "Riposte"
+- id: "VS-02-06"
+  type: "etape-valeur"
   niveau: "1"
-  chemin: principes/pd-vs03-03.md
-  status: draft
-- id: PD-VS03-04
-  type: principe
+  chemin: "etapes-valeur/vs-02-06.md"
+  status: "draft"
+  title: "Suivi de situation et clôture"
+- id: "VS-02-07"
+  type: "etape-valeur"
   niveau: "1"
-  chemin: principes/pd-vs03-04.md
-  status: draft
-- id: PD-VS03-05
-  type: principe
+  chemin: "etapes-valeur/vs-02-07.md"
+  status: "draft"
+  title: "Capitalisation et amélioration"
+- id: "VS-03-01"
+  type: "etape-valeur"
   niveau: "1"
-  chemin: principes/pd-vs03-05.md
-  status: draft
-- id: PD-VS04-01
-  type: principe
+  chemin: "etapes-valeur/vs-03-01.md"
+  status: "draft"
+  title: "Identification et enregistrement des bénéficiaires"
+- id: "VS-03-02"
+  type: "etape-valeur"
   niveau: "1"
-  chemin: principes/pd-vs04-01.md
-  status: draft
-- id: PD-VS04-02
-  type: principe
+  chemin: "etapes-valeur/vs-03-02.md"
+  status: "draft"
+  title: "Définition des droits et du panier de soins"
+- id: "VS-03-03"
+  type: "etape-valeur"
   niveau: "1"
-  chemin: principes/pd-vs04-02.md
-  status: draft
-- id: PD-VS04-03
-  type: principe
+  chemin: "etapes-valeur/vs-03-03.md"
+  status: "draft"
+  title: "Mobilisation des financements"
+- id: "VS-03-04"
+  type: "etape-valeur"
   niveau: "1"
-  chemin: principes/pd-vs04-03.md
-  status: draft
-- id: PD-VS04-04
-  type: principe
+  chemin: "etapes-valeur/vs-03-04.md"
+  status: "draft"
+  title: "Prise en charge et exemption au point de service"
+- id: "VS-03-05"
+  type: "etape-valeur"
   niveau: "1"
-  chemin: principes/pd-vs04-04.md
-  status: draft
-- id: PD-VS04-05
-  type: principe
+  chemin: "etapes-valeur/vs-03-05.md"
+  status: "draft"
+  title: "Facturation et traitement des demandes de remboursement"
+- id: "VS-03-06"
+  type: "etape-valeur"
   niveau: "1"
-  chemin: principes/pd-vs04-05.md
-  status: draft
+  chemin: "etapes-valeur/vs-03-06.md"
+  status: "draft"
+  title: "Remboursement"
+- id: "VS-03-07"
+  type: "etape-valeur"
+  niveau: "1"
+  chemin: "etapes-valeur/vs-03-07.md"
+  status: "draft"
+  title: "Contrôle, audit et ajustement des mécanismes"
+- id: "VS-04-01"
+  type: "etape-valeur"
+  niveau: "1"
+  chemin: "etapes-valeur/vs-04-01.md"
+  status: "draft"
+  title: "Définition des priorités et planification"
+- id: "VS-04-02"
+  type: "etape-valeur"
+  niveau: "1"
+  chemin: "etapes-valeur/vs-04-02.md"
+  status: "draft"
+  title: "Budgétisation et allocation des ressources"
+- id: "VS-04-03"
+  type: "etape-valeur"
+  niveau: "1"
+  chemin: "etapes-valeur/vs-04-03.md"
+  status: "draft"
+  title: "Coordination des acteurs et alignement des partenaires"
+- id: "VS-04-04"
+  type: "etape-valeur"
+  niveau: "1"
+  chemin: "etapes-valeur/vs-04-04.md"
+  status: "draft"
+  title: "Suivi de l'exécution"
+- id: "VS-04-05"
+  type: "etape-valeur"
+  niveau: "1"
+  chemin: "etapes-valeur/vs-04-05.md"
+  status: "draft"
+  title: "Analyse de la performance et prise de décision"
+- id: "VS-04-06"
+  type: "etape-valeur"
+  niveau: "1"
+  chemin: "etapes-valeur/vs-04-06.md"
+  status: "draft"
+  title: "Redevabilité et communication publique"
+- id: "VS-04-07"
+  type: "etape-valeur"
+  niveau: "1"
+  chemin: "etapes-valeur/vs-04-07.md"
+  status: "draft"
+  title: "Amélioration continue"
 
-# principes de données DA (8)
-- id: DA-01
-  type: principe
+# niveau 1 / processus-metier (13)
+- id: "PRC-01"
+  type: "processus-metier"
   niveau: "1"
-  chemin: principes/da-01.md
-  status: draft
-- id: DA-02
-  type: principe
+  chemin: "processus/prc-01.md"
+  status: "active"
+  title: "Accès, orientation et admission du patient"
+- id: "PRC-02"
+  type: "processus-metier"
   niveau: "1"
-  chemin: principes/da-02.md
-  status: draft
-- id: DA-03
-  type: principe
+  chemin: "processus/prc-02.md"
+  status: "active"
+  title: "Prestation des soins cliniques"
+- id: "PRC-03"
+  type: "processus-metier"
   niveau: "1"
-  chemin: principes/da-03.md
-  status: draft
-- id: DA-04
-  type: principe
+  chemin: "processus/prc-03.md"
+  status: "active"
+  title: "Continuité, suivi et qualité des soins"
+- id: "PRC-04"
+  type: "processus-metier"
   niveau: "1"
-  chemin: principes/da-04.md
-  status: draft
-- id: DA-05
-  type: principe
+  chemin: "processus/prc-04.md"
+  status: "active"
+  title: "Veille, prévention et surveillance sanitaire"
+- id: "PRC-05"
+  type: "processus-metier"
   niveau: "1"
-  chemin: principes/da-05.md
-  status: draft
-- id: DA-06
-  type: principe
+  chemin: "processus/prc-05.md"
+  status: "active"
+  title: "Alerte, investigation et riposte"
+- id: "PRC-06"
+  type: "processus-metier"
   niveau: "1"
-  chemin: principes/da-06.md
-  status: draft
-- id: DA-07
-  type: principe
+  chemin: "processus/prc-06.md"
+  status: "active"
+  title: "Clôture et capitalisation des épisodes"
+- id: "PRC-07"
+  type: "processus-metier"
   niveau: "1"
-  chemin: principes/da-07.md
-  status: draft
-- id: DA-08
-  type: principe
+  chemin: "processus/prc-07.md"
+  status: "active"
+  title: "Identification et droits des bénéficiaires"
+- id: "PRC-08"
+  type: "processus-metier"
   niveau: "1"
-  chemin: principes/da-08.md
-  status: draft
+  chemin: "processus/prc-08.md"
+  status: "active"
+  title: "Financement et exemption au point de service"
+- id: "PRC-09"
+  type: "processus-metier"
+  niveau: "1"
+  chemin: "processus/prc-09.md"
+  status: "active"
+  title: "Remboursement et régulation des mécanismes"
+- id: "PRC-10"
+  type: "processus-metier"
+  niveau: "1"
+  chemin: "processus/prc-10.md"
+  status: "active"
+  title: "Planification et allocation des ressources"
+- id: "PRC-11"
+  type: "processus-metier"
+  niveau: "1"
+  chemin: "processus/prc-11.md"
+  status: "active"
+  title: "Suivi et pilotage de la performance"
+- id: "PRC-12"
+  type: "processus-metier"
+  niveau: "1"
+  chemin: "processus/prc-12.md"
+  status: "active"
+  title: "Redevabilité et amélioration continue"
+- id: "PRC-13"
+  type: "processus-metier"
+  niveau: "1"
+  chemin: "processus/prc-13.md"
+  status: "active"
+  title: "Échange et coordination transfrontaliers"
 
-# principes applicatifs AA (9)
-- id: AA-01
-  type: principe
+# niveau 1 / composant-applicatif (25)
+- id: "CMP-01"
+  type: "composant-applicatif"
   niveau: "1"
-  chemin: principes/aa-01.md
-  status: draft
-- id: AA-02
-  type: principe
+  chemin: "composants/cmp-01.md"
+  status: "active"
+  title: "Tableaux de bord & Portails nationaux (performance, CSU, ressources, veille)"
+- id: "CMP-02"
+  type: "composant-applicatif"
   niveau: "1"
-  chemin: principes/aa-02.md
-  status: draft
-- id: AA-03
-  type: principe
+  chemin: "composants/cmp-02.md"
+  status: "active"
+  title: "Centre de commande & Crises intersectorielles (alertes, crises, veille)"
+- id: "CMP-03"
+  type: "composant-applicatif"
   niveau: "1"
-  chemin: principes/aa-03.md
-  status: draft
-- id: AA-04
-  type: principe
+  chemin: "composants/cmp-03.md"
+  status: "active"
+  title: "Entrepôt Lakehouse & Projections analytiques (pipeline ETL, Lakehouse, projections)"
+- id: "CMP-04"
+  type: "composant-applicatif"
   niveau: "1"
-  chemin: principes/aa-04.md
-  status: draft
-- id: AA-05
-  type: principe
+  chemin: "composants/cmp-04.md"
+  status: "active"
+  title: "Moteur analytique & IA (IA prédictive, routeur alertes, Grand Livre)"
+- id: "CMP-05"
+  type: "composant-applicatif"
   niveau: "1"
-  chemin: principes/aa-05.md
-  status: draft
-- id: AA-06
-  type: principe
+  chemin: "composants/cmp-05.md"
+  status: "active"
+  title: "Moteur de graphes & Référentiel spatio-temporel (Graph Store, Spatio ART-4D)"
+- id: "CMP-06"
+  type: "composant-applicatif"
   niveau: "1"
-  chemin: principes/aa-06.md
-  status: draft
-- id: AA-07
-  type: principe
+  chemin: "composants/cmp-06.md"
+  status: "active"
+  title: "Intégration, Médiation, API Gateway, Broker & Registre schémas"
+- id: "CMP-07"
+  type: "composant-applicatif"
   niveau: "1"
-  chemin: principes/aa-07.md
-  status: draft
-- id: AA-08
-  type: principe
+  chemin: "composants/cmp-07.md"
+  status: "active"
+  title: "Orchestrateur de parcours & Gestionnaire de Sagas (ART-8A)"
+- id: "CMP-08"
+  type: "composant-applicatif"
   niveau: "1"
-  chemin: principes/aa-08.md
-  status: draft
-- id: AA-09
-  type: principe
+  chemin: "composants/cmp-08.md"
+  status: "active"
+  title: "Répertoire de données cliniques opérationnelles"
+- id: "CMP-09"
+  type: "composant-applicatif"
   niveau: "1"
-  chemin: principes/aa-09.md
-  status: draft
+  chemin: "composants/cmp-09.md"
+  status: "active"
+  title: "Référentiel des métadonnées d'exploitation (ART-4)"
+- id: "CMP-10"
+  type: "composant-applicatif"
+  niveau: "1"
+  chemin: "composants/cmp-10.md"
+  status: "active"
+  title: "Registre des terminologies"
+- id: "CMP-11"
+  type: "composant-applicatif"
+  niveau: "1"
+  chemin: "composants/cmp-11.md"
+  status: "active"
+  title: "Registre des clients / Index National des Patients (INP — ART-4A)"
+- id: "CMP-12"
+  type: "composant-applicatif"
+  niveau: "1"
+  chemin: "composants/cmp-12.md"
+  status: "active"
+  title: "Registre d'éligibilité et de couverture (CSU — ART-4C)"
+- id: "CMP-13"
+  type: "composant-applicatif"
+  niveau: "1"
+  chemin: "composants/cmp-13.md"
+  status: "active"
+  title: "Registre des personnels"
+- id: "CMP-14"
+  type: "composant-applicatif"
+  niveau: "1"
+  chemin: "composants/cmp-14.md"
+  status: "active"
+  title: "Registre des produits, intrants et indicateurs"
+- id: "CMP-15"
+  type: "composant-applicatif"
+  niveau: "1"
+  chemin: "composants/cmp-15.md"
+  status: "active"
+  title: "API Gateway"
+- id: "CMP-16"
+  type: "composant-applicatif"
+  niveau: "1"
+  chemin: "composants/cmp-16.md"
+  status: "active"
+  title: "Registre de schémas (F.3)"
+- id: "CMP-17"
+  type: "composant-applicatif"
+  niveau: "1"
+  chemin: "composants/cmp-17.md"
+  status: "active"
+  title: "Message broker asynchrone"
+- id: "CMP-18"
+  type: "composant-applicatif"
+  niveau: "1"
+  chemin: "composants/cmp-18.md"
+  status: "active"
+  title: "Compensateur / Regroupeur de flux (Netting — ART-8C)"
+- id: "CMP-19"
+  type: "composant-applicatif"
+  niveau: "1"
+  chemin: "composants/cmp-19.md"
+  status: "active"
+  title: "Dossiers & statistiques de sante (hopitaux)"
+- id: "CMP-20"
+  type: "composant-applicatif"
+  niveau: "1"
+  chemin: "composants/cmp-20.md"
+  status: "active"
+  title: "Gestion des pharmacies (PMIS)"
+- id: "CMP-21"
+  type: "composant-applicatif"
+  niveau: "1"
+  chemin: "composants/cmp-21.md"
+  status: "active"
+  title: "Sante communautaire mobile (offline)"
+- id: "CMP-22"
+  type: "composant-applicatif"
+  niveau: "1"
+  chemin: "composants/cmp-22.md"
+  status: "active"
+  title: "Espace sante patient"
+- id: "CMP-23"
+  type: "composant-applicatif"
+  niveau: "1"
+  chemin: "composants/cmp-23.md"
+  status: "active"
+  title: "Chaine logistique (LMIS)"
+- id: "CMP-24"
+  type: "composant-applicatif"
+  niveau: "1"
+  chemin: "composants/cmp-24.md"
+  status: "active"
+  title: "Surveillance de la sante animale (zoonoses)"
+- id: "CMP-25"
+  type: "composant-applicatif"
+  niveau: "1"
+  chemin: "composants/cmp-25.md"
+  status: "active"
+  title: "Enquetes & capteurs terrain"
 
-# étapes de valeur (28)
-- id: VS-01-01
-  type: etape-valeur
+# niveau 1 / composant-infrastructure (6)
+- id: "CMP-26"
+  type: "composant-infrastructure"
   niveau: "1"
-  chemin: etapes-valeur/vs-01-01.md
-  status: draft
-- id: VS-01-02
-  type: etape-valeur
+  chemin: "composants/cmp-26.md"
+  status: "active"
+  title: "Noeud central (datacenters nationaux HDS)"
+- id: "CMP-27"
+  type: "composant-infrastructure"
   niveau: "1"
-  chemin: etapes-valeur/vs-01-02.md
-  status: draft
-- id: VS-01-03
-  type: etape-valeur
+  chemin: "composants/cmp-27.md"
+  status: "active"
+  title: "Noeuds regionaux (clusters de district : Fog)"
+- id: "CMP-28"
+  type: "composant-infrastructure"
   niveau: "1"
-  chemin: etapes-valeur/vs-01-03.md
-  status: draft
-- id: VS-01-04
-  type: etape-valeur
+  chemin: "composants/cmp-28.md"
+  status: "active"
+  title: "Noeuds locaux (equipements chiffres : Edge)"
+- id: "CMP-29"
+  type: "composant-infrastructure"
   niveau: "1"
-  chemin: etapes-valeur/vs-01-04.md
-  status: draft
-- id: VS-01-05
-  type: etape-valeur
+  chemin: "composants/cmp-29.md"
+  status: "active"
+  title: "Liaisons dediees & VPN"
+- id: "CMP-30"
+  type: "composant-infrastructure"
   niveau: "1"
-  chemin: etapes-valeur/vs-01-05.md
-  status: draft
-- id: VS-01-06
-  type: etape-valeur
+  chemin: "composants/cmp-30.md"
+  status: "active"
+  title: "Reseau prive MPLS"
+- id: "CMP-31"
+  type: "composant-infrastructure"
   niveau: "1"
-  chemin: etapes-valeur/vs-01-06.md
-  status: draft
-- id: VS-01-07
-  type: etape-valeur
-  niveau: "1"
-  chemin: etapes-valeur/vs-01-07.md
-  status: draft
-- id: VS-02-01
-  type: etape-valeur
-  niveau: "1"
-  chemin: etapes-valeur/vs-02-01.md
-  status: draft
-- id: VS-02-02
-  type: etape-valeur
-  niveau: "1"
-  chemin: etapes-valeur/vs-02-02.md
-  status: draft
-- id: VS-02-03
-  type: etape-valeur
-  niveau: "1"
-  chemin: etapes-valeur/vs-02-03.md
-  status: draft
-- id: VS-02-04
-  type: etape-valeur
-  niveau: "1"
-  chemin: etapes-valeur/vs-02-04.md
-  status: draft
-- id: VS-02-05
-  type: etape-valeur
-  niveau: "1"
-  chemin: etapes-valeur/vs-02-05.md
-  status: draft
-- id: VS-02-06
-  type: etape-valeur
-  niveau: "1"
-  chemin: etapes-valeur/vs-02-06.md
-  status: draft
-- id: VS-02-07
-  type: etape-valeur
-  niveau: "1"
-  chemin: etapes-valeur/vs-02-07.md
-  status: draft
-- id: VS-03-01
-  type: etape-valeur
-  niveau: "1"
-  chemin: etapes-valeur/vs-03-01.md
-  status: draft
-- id: VS-03-02
-  type: etape-valeur
-  niveau: "1"
-  chemin: etapes-valeur/vs-03-02.md
-  status: draft
-- id: VS-03-03
-  type: etape-valeur
-  niveau: "1"
-  chemin: etapes-valeur/vs-03-03.md
-  status: draft
-- id: VS-03-04
-  type: etape-valeur
-  niveau: "1"
-  chemin: etapes-valeur/vs-03-04.md
-  status: draft
-- id: VS-03-05
-  type: etape-valeur
-  niveau: "1"
-  chemin: etapes-valeur/vs-03-05.md
-  status: draft
-- id: VS-03-06
-  type: etape-valeur
-  niveau: "1"
-  chemin: etapes-valeur/vs-03-06.md
-  status: draft
-- id: VS-03-07
-  type: etape-valeur
-  niveau: "1"
-  chemin: etapes-valeur/vs-03-07.md
-  status: draft
-- id: VS-04-01
-  type: etape-valeur
-  niveau: "1"
-  chemin: etapes-valeur/vs-04-01.md
-  status: draft
-- id: VS-04-02
-  type: etape-valeur
-  niveau: "1"
-  chemin: etapes-valeur/vs-04-02.md
-  status: draft
-- id: VS-04-03
-  type: etape-valeur
-  niveau: "1"
-  chemin: etapes-valeur/vs-04-03.md
-  status: draft
-- id: VS-04-04
-  type: etape-valeur
-  niveau: "1"
-  chemin: etapes-valeur/vs-04-04.md
-  status: draft
-- id: VS-04-05
-  type: etape-valeur
-  niveau: "1"
-  chemin: etapes-valeur/vs-04-05.md
-  status: draft
-- id: VS-04-06
-  type: etape-valeur
-  niveau: "1"
-  chemin: etapes-valeur/vs-04-06.md
-  status: draft
-- id: VS-04-07
-  type: etape-valeur
-  niveau: "1"
-  chemin: etapes-valeur/vs-04-07.md
-  status: draft
+  chemin: "composants/cmp-31.md"
+  status: "active"
+  title: "Reseaux mobiles prives (APN securises)"
 
-# processus métier (12)
-- id: PRC-01
-  type: processus-metier
+# niveau 1 / composant-securite (7)
+- id: "CMP-32"
+  type: "composant-securite"
   niveau: "1"
-  chemin: processus/prc-01.md
-  status: draft
-- id: PRC-02
-  type: processus-metier
+  chemin: "composants/cmp-32.md"
+  status: "active"
+  title: "Gestion des identites"
+- id: "CMP-33"
+  type: "composant-securite"
   niveau: "1"
-  chemin: processus/prc-02.md
-  status: draft
-- id: PRC-03
-  type: processus-metier
+  chemin: "composants/cmp-33.md"
+  status: "active"
+  title: "Controle d'acces fin (RBAC/ABAC)"
+- id: "CMP-34"
+  type: "composant-securite"
   niveau: "1"
-  chemin: processus/prc-03.md
-  status: draft
-- id: PRC-04
-  type: processus-metier
+  chemin: "composants/cmp-34.md"
+  status: "active"
+  title: "Gestion des consentements"
+- id: "CMP-35"
+  type: "composant-securite"
   niveau: "1"
-  chemin: processus/prc-04.md
-  status: draft
-- id: PRC-05
-  type: processus-metier
+  chemin: "composants/cmp-35.md"
+  status: "active"
+  title: "Infrastructure de cles publiques (PKI)"
+- id: "CMP-36"
+  type: "composant-securite"
   niveau: "1"
-  chemin: processus/prc-05.md
-  status: draft
-- id: PRC-06
-  type: processus-metier
+  chemin: "composants/cmp-36.md"
+  status: "active"
+  title: "Passerelle de confiance mondiale OMS (GDHCN)"
+- id: "CMP-37"
+  type: "composant-securite"
   niveau: "1"
-  chemin: processus/prc-06.md
-  status: draft
-- id: PRC-07
-  type: processus-metier
+  chemin: "composants/cmp-37.md"
+  status: "active"
+  title: "Journal d'audit immuable"
+- id: "CMP-38"
+  type: "composant-securite"
   niveau: "1"
-  chemin: processus/prc-07.md
-  status: draft
-- id: PRC-08
-  type: processus-metier
-  niveau: "1"
-  chemin: processus/prc-08.md
-  status: draft
-- id: PRC-09
-  type: processus-metier
-  niveau: "1"
-  chemin: processus/prc-09.md
-  status: draft
-- id: PRC-10
-  type: processus-metier
-  niveau: "1"
-  chemin: processus/prc-10.md
-  status: draft
-- id: PRC-11
-  type: processus-metier
-  niveau: "1"
-  chemin: processus/prc-11.md
-  status: draft
-- id: PRC-12
-  type: processus-metier
-  niveau: "1"
-  chemin: processus/prc-12.md
-  status: draft
+  chemin: "composants/cmp-38.md"
+  status: "active"
+  title: "Moteur de chiffrement"
 
-# composants applicatifs (18)
-- id: CMP-01
-  type: composant-applicatif
+# niveau 1 / registre-gouvernance (8)
+- id: "CMP-39"
+  type: "registre-gouvernance"
   niveau: "1"
-  chemin: composants/cmp-01.md
-  status: draft
-- id: CMP-02
-  type: composant-applicatif
+  chemin: "composants/cmp-39.md"
+  status: "active"
+  title: "Registre des accords inter-institutions"
+- id: "CMP-40"
+  type: "registre-gouvernance"
   niveau: "1"
-  chemin: composants/cmp-02.md
-  status: draft
-- id: CMP-03
-  type: composant-applicatif
+  chemin: "composants/cmp-40.md"
+  status: "active"
+  title: "Charte nationale de protection"
+- id: "CMP-41"
+  type: "registre-gouvernance"
   niveau: "1"
-  chemin: composants/cmp-03.md
-  status: draft
-- id: CMP-04
-  type: composant-applicatif
+  chemin: "composants/cmp-41.md"
+  status: "active"
+  title: "Conventions internationales"
+- id: "CMP-42"
+  type: "registre-gouvernance"
   niveau: "1"
-  chemin: composants/cmp-04.md
-  status: draft
-- id: CMP-05
-  type: composant-applicatif
+  chemin: "composants/cmp-42.md"
+  status: "active"
+  title: "Comite national d'homologation"
+- id: "CMP-43"
+  type: "registre-gouvernance"
   niveau: "1"
-  chemin: composants/cmp-05.md
-  status: draft
-- id: CMP-06
-  type: composant-applicatif
+  chemin: "composants/cmp-43.md"
+  status: "active"
+  title: "Registre des initiatives"
+- id: "CMP-44"
+  type: "registre-gouvernance"
   niveau: "1"
-  chemin: composants/cmp-06.md
-  status: draft
-- id: CMP-07
-  type: composant-applicatif
+  chemin: "composants/cmp-44.md"
+  status: "active"
+  title: "Comite d'ethique"
+- id: "CMP-45"
+  type: "registre-gouvernance"
   niveau: "1"
-  chemin: composants/cmp-07.md
-  status: draft
-- id: CMP-08
-  type: composant-applicatif
+  chemin: "composants/cmp-45.md"
+  status: "active"
+  title: "Cellule d'audit"
+- id: "CMP-46"
+  type: "registre-gouvernance"
   niveau: "1"
-  chemin: composants/cmp-08.md
-  status: draft
-- id: CMP-09
-  type: composant-applicatif
-  niveau: "1"
-  chemin: composants/cmp-09.md
-  status: draft
-- id: CMP-10
-  type: composant-applicatif
-  niveau: "1"
-  chemin: composants/cmp-10.md
-  status: draft
-- id: CMP-11
-  type: composant-applicatif
-  niveau: "1"
-  chemin: composants/cmp-11.md
-  status: draft
-- id: CMP-12
-  type: composant-applicatif
-  niveau: "1"
-  chemin: composants/cmp-12.md
-  status: draft
-- id: CMP-13
-  type: composant-applicatif
-  niveau: "1"
-  chemin: composants/cmp-13.md
-  status: draft
-- id: CMP-14
-  type: composant-applicatif
-  niveau: "1"
-  chemin: composants/cmp-14.md
-  status: draft
-- id: CMP-15
-  type: composant-applicatif
-  niveau: "1"
-  chemin: composants/cmp-15.md
-  status: draft
-- id: CMP-16
-  type: composant-applicatif
-  niveau: "1"
-  chemin: composants/cmp-16.md
-  status: draft
-- id: CMP-17
-  type: composant-applicatif
-  niveau: "1"
-  chemin: composants/cmp-17.md
-  status: draft
-- id: CMP-18
-  type: composant-applicatif
-  niveau: "1"
-  chemin: composants/cmp-18.md
-  status: draft
+  chemin: "composants/cmp-46.md"
+  status: "active"
+  title: "Arbitrage et risques"
 
-# parties prenantes (10)
-- id: PP-01
-  type: partie-prenante
+# niveau 1 / partie-prenante (10)
+- id: "PP-01"
+  type: "partie-prenante"
   niveau: "1"
-  chemin: parties-prenantes/pp-01.md
-  status: draft
-- id: PP-02
-  type: partie-prenante
+  chemin: "parties-prenantes/pp-01.md"
+  status: "draft"
+  title: "Patient et usager"
+- id: "PP-02"
+  type: "partie-prenante"
   niveau: "1"
-  chemin: parties-prenantes/pp-02.md
-  status: draft
-- id: PP-03
-  type: partie-prenante
+  chemin: "parties-prenantes/pp-02.md"
+  status: "draft"
+  title: "Ménage et famille"
+- id: "PP-03"
+  type: "partie-prenante"
   niveau: "1"
-  chemin: parties-prenantes/pp-03.md
-  status: draft
-- id: PP-04
-  type: partie-prenante
+  chemin: "parties-prenantes/pp-03.md"
+  status: "draft"
+  title: "Population"
+- id: "PP-04"
+  type: "partie-prenante"
   niveau: "1"
-  chemin: parties-prenantes/pp-04.md
-  status: draft
-- id: PP-05
-  type: partie-prenante
+  chemin: "parties-prenantes/pp-04.md"
+  status: "draft"
+  title: "Communauté"
+- id: "PP-05"
+  type: "partie-prenante"
   niveau: "1"
-  chemin: parties-prenantes/pp-05.md
-  status: draft
-- id: PP-06
-  type: partie-prenante
+  chemin: "parties-prenantes/pp-05.md"
+  status: "draft"
+  title: "Agent de santé"
+- id: "PP-06"
+  type: "partie-prenante"
   niveau: "1"
-  chemin: parties-prenantes/pp-06.md
-  status: draft
-- id: PP-07
-  type: partie-prenante
+  chemin: "parties-prenantes/pp-06.md"
+  status: "draft"
+  title: "Formation sanitaire"
+- id: "PP-07"
+  type: "partie-prenante"
   niveau: "1"
-  chemin: parties-prenantes/pp-07.md
-  status: draft
-- id: PP-08
-  type: partie-prenante
+  chemin: "parties-prenantes/pp-07.md"
+  status: "draft"
+  title: "District, région et Ministère"
+- id: "PP-08"
+  type: "partie-prenante"
   niveau: "1"
-  chemin: parties-prenantes/pp-08.md
-  status: draft
-- id: PP-09
-  type: partie-prenante
+  chemin: "parties-prenantes/pp-08.md"
+  status: "draft"
+  title: "Partenaires techniques et financiers"
+- id: "PP-09"
+  type: "partie-prenante"
   niveau: "1"
-  chemin: parties-prenantes/pp-09.md
-  status: draft
-- id: PP-10
-  type: partie-prenante
+  chemin: "parties-prenantes/pp-09.md"
+  status: "draft"
+  title: "Décideurs institutionnels"
+- id: "PP-10"
+  type: "partie-prenante"
   niveau: "1"
-  chemin: parties-prenantes/pp-10.md
-  status: draft
+  chemin: "parties-prenantes/pp-10.md"
+  status: "draft"
+  title: "Équipes techniques (DEPSI / SIS)"
 
-# --- CNISN (niveau 2) ---
-# principes (25)
-- id: P-INT-01
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-01.md
-  status: active
-- id: P-INT-02
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-02.md
-  status: active
-- id: P-INT-03
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-03.md
-  status: active
-- id: P-INT-04
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-04.md
-  status: active
-- id: P-INT-05
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-05.md
-  status: active
-- id: P-INT-06
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-06.md
-  status: active
-- id: P-INT-07
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-07.md
-  status: active
-- id: P-INT-08
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-08.md
-  status: active
-- id: P-INT-09
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-09.md
-  status: active
-- id: P-INT-10
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-10.md
-  status: active
-- id: P-INT-11
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-11.md
-  status: active
-- id: P-INT-12
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-12.md
-  status: active
-- id: P-INT-13
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-13.md
-  status: active
-- id: P-INT-14
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-14.md
-  status: active
-- id: P-INT-15
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-15.md
-  status: active
-- id: P-INT-16
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-16.md
-  status: active
-- id: P-INT-17
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-17.md
-  status: active
-- id: P-INT-18
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-18.md
-  status: active
-- id: P-INT-19
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-19.md
-  status: active
-- id: P-INT-20
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-20.md
-  status: active
-- id: P-INT-21
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-21.md
-  status: active
-- id: P-INT-22
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-22.md
-  status: active
-- id: P-INT-23
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-23.md
-  status: active
-- id: P-INT-24
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-24.md
-  status: active
-- id: P-INT-25
-  type: principe
-  niveau: "2"
-  chemin: principes/p-int-25.md
-  status: active
-
-# capacites (16)
-- id: CAP-INT-01
-  type: capacite
-  niveau: "2"
-  chemin: capacites/cap-int-01.md
-  status: active
-- id: CAP-INT-02
-  type: capacite
-  niveau: "2"
-  chemin: capacites/cap-int-02.md
-  status: active
-- id: CAP-INT-03
-  type: capacite
-  niveau: "2"
-  chemin: capacites/cap-int-03.md
-  status: active
-- id: CAP-INT-04
-  type: capacite
-  niveau: "2"
-  chemin: capacites/cap-int-04.md
-  status: active
-- id: CAP-INT-05
-  type: capacite
-  niveau: "2"
-  chemin: capacites/cap-int-05.md
-  status: active
-- id: CAP-INT-06
-  type: capacite
-  niveau: "2"
-  chemin: capacites/cap-int-06.md
-  status: active
-- id: CAP-INT-07
-  type: capacite
-  niveau: "2"
-  chemin: capacites/cap-int-07.md
-  status: active
-- id: CAP-INT-08
-  type: capacite
-  niveau: "2"
-  chemin: capacites/cap-int-08.md
-  status: active
-- id: CAP-INT-09
-  type: capacite
-  niveau: "2"
-  chemin: capacites/cap-int-09.md
-  status: active
-- id: CAP-INT-10
-  type: capacite
-  niveau: "2"
-  chemin: capacites/cap-int-10.md
-  status: active
-- id: CAP-INT-11
-  type: capacite
-  niveau: "2"
-  chemin: capacites/cap-int-11.md
-  status: active
-- id: CAP-INT-12
-  type: capacite
-  niveau: "2"
-  chemin: capacites/cap-int-12.md
-  status: active
-- id: CAP-INT-13
-  type: capacite
-  niveau: "2"
-  chemin: capacites/cap-int-13.md
-  status: active
-- id: CAP-INT-14
-  type: capacite
-  niveau: "2"
-  chemin: capacites/cap-int-14.md
-  status: active
-- id: CAP-INT-15
-  type: capacite
-  niveau: "2"
-  chemin: capacites/cap-int-15.md
-  status: active
-- id: CAP-INT-16
-  type: capacite
-  niveau: "2"
-  chemin: capacites/cap-int-16.md
-  status: active
-
-# --- PTISN (niveau 4) ---
-# profils (19)
-- id: PT-01
-  type: profil
-  niveau: "4"
-  chemin: profils/pt-01.md
-  status: draft
-- id: PT-02
-  type: profil
-  niveau: "4"
-  chemin: profils/pt-02.md
-  status: draft
-- id: PT-03
-  type: profil
-  niveau: "4"
-  chemin: profils/pt-03.md
-  status: draft
-- id: PT-04
-  type: profil
-  niveau: "4"
-  chemin: profils/pt-04.md
-  status: draft
-- id: PT-05
-  type: profil
-  niveau: "4"
-  chemin: profils/pt-05.md
-  status: draft
-- id: PT-06
-  type: profil
-  niveau: "4"
-  chemin: profils/pt-06.md
-  status: draft
-- id: PT-07
-  type: profil
-  niveau: "4"
-  chemin: profils/pt-07.md
-  status: draft
-- id: PT-08
-  type: profil
-  niveau: "4"
-  chemin: profils/pt-08.md
-  status: draft
-- id: PT-09
-  type: profil
-  niveau: "4"
-  chemin: profils/pt-09.md
-  status: draft
-- id: PT-10
-  type: profil
-  niveau: "4"
-  chemin: profils/pt-10.md
-  status: draft
-- id: PT-11
-  type: profil
-  niveau: "4"
-  chemin: profils/pt-11.md
-  status: draft
-- id: PT-12
-  type: profil
-  niveau: "4"
-  chemin: profils/pt-12.md
-  status: draft
-- id: PT-13
-  type: profil
-  niveau: "4"
-  chemin: profils/pt-13.md
-  status: draft
-- id: PT-14
-  type: profil
-  niveau: "4"
-  chemin: profils/pt-14.md
-  status: draft
-- id: PT-15
-  type: profil
-  niveau: "4"
-  chemin: profils/pt-15.md
-  status: draft
-- id: PT-16
-  type: profil
-  niveau: "4"
-  chemin: profils/pt-16.md
-  status: draft
-- id: PT-17
-  type: profil
-  niveau: "4"
-  chemin: profils/pt-17.md
-  status: draft
-- id: PT-18
-  type: profil
-  niveau: "4"
-  chemin: profils/pt-18.md
-  status: draft
-- id: PT-19
-  type: profil
-  niveau: "4"
-  chemin: profils/pt-19.md
-  status: draft
-
-# --- ARTSN (niveau 3) ---
-# fondations (4)
-- id: F-1
-  type: fondation
-  niveau: "3"
-  chemin: fondations/f-1.md
-  status: draft
-- id: F-2
-  type: fondation
-  niveau: "3"
-  chemin: fondations/f-2.md
-  status: draft
-- id: F-3
-  type: fondation
-  niveau: "3"
-  chemin: fondations/f-3.md
-  status: draft
-- id: F-4
-  type: fondation
-  niveau: "3"
-  chemin: fondations/f-4.md
-  status: draft
-
-# fondations stubs candidats (créés Phase 2)
-- id: F-5
-  type: fondation
-  niveau: "3"
-  chemin: fondations/f-5.md
-  status: candidate
-- id: F-6
-  type: fondation
-  niveau: "3"
-  chemin: fondations/f-6.md
-  status: candidate
-
-# exigences (5)
-- id: ENF-1
-  type: exigence
-  niveau: "3"
-  chemin: exigences/enf-1.md
-  status: draft
-- id: ENF-2
-  type: exigence
-  niveau: "3"
-  chemin: exigences/enf-2.md
-  status: draft
-- id: ENF-3
-  type: exigence
-  niveau: "3"
-  chemin: exigences/enf-3.md
-  status: draft
-- id: ENF-4
-  type: exigence
-  niveau: "3"
-  chemin: exigences/enf-4.md
-  status: draft
-- id: ENF-5
-  type: exigence
-  niveau: "3"
-  chemin: exigences/enf-5.md
-  status: draft
-
-# chapitres (21)
-- id: ART-0
-  type: chapitre
-  niveau: "3"
-  chemin: chapitres/art-0.md
-  status: draft
-- id: ART-1
-  type: chapitre
-  niveau: "3"
-  chemin: chapitres/art-1.md
-  status: draft
-- id: ART-2
-  type: chapitre
-  niveau: "3"
-  chemin: chapitres/art-2.md
-  status: draft
-- id: ART-3
-  type: chapitre
-  niveau: "3"
-  chemin: chapitres/art-3.md
-  status: draft
-- id: ART-4
-  type: chapitre
-  niveau: "3"
-  chemin: chapitres/art-4.md
-  status: draft
-- id: ART-4A
-  type: chapitre
-  niveau: "3"
-  chemin: chapitres/art-4a.md
-  status: draft
-- id: ART-4B
-  type: chapitre
-  niveau: "3"
-  chemin: chapitres/art-4b.md
-  status: draft
-- id: ART-4C
-  type: chapitre
-  niveau: "3"
-  chemin: chapitres/art-4c.md
-  status: draft
-- id: ART-4D
-  type: chapitre
-  niveau: "3"
-  chemin: chapitres/art-4d.md
-  status: draft
-- id: ART-5
-  type: chapitre
-  niveau: "3"
-  chemin: chapitres/art-5.md
-  status: draft
-- id: ART-6
-  type: chapitre
-  niveau: "3"
-  chemin: chapitres/art-6.md
-  status: draft
-- id: ART-7
-  type: chapitre
-  niveau: "3"
-  chemin: chapitres/art-7.md
-  status: draft
-- id: ART-8
-  type: chapitre
-  niveau: "3"
-  chemin: chapitres/art-8.md
-  status: draft
-- id: ART-8A
-  type: chapitre
-  niveau: "3"
-  chemin: chapitres/art-8a.md
-  status: draft
-- id: ART-8B
-  type: chapitre
-  niveau: "3"
-  chemin: chapitres/art-8b.md
-  status: draft
-- id: ART-8C
-  type: chapitre
-  niveau: "3"
-  chemin: chapitres/art-8c.md
-  status: draft
-- id: ART-8D
-  type: chapitre
-  niveau: "3"
-  chemin: chapitres/art-8d.md
-  status: draft
-- id: ART-9
-  type: chapitre
-  niveau: "3"
-  chemin: chapitres/art-9.md
-  status: draft
-
-# chapitres stubs candidats (créés Phase 2)
-- id: ART-10
-  type: chapitre
-  niveau: "3"
-  chemin: chapitres/art-10.md
-  status: candidate
-- id: ART-11
-  type: chapitre
-  niveau: "3"
-  chemin: chapitres/art-11.md
-  status: candidate
-- id: ART-12
-  type: chapitre
-  niveau: "3"
-  chemin: chapitres/art-12.md
-  status: candidate
-# acteurs (6)
-- id: ACT-01
-  type: acteur
-  niveau: "2"
-  chemin: acteurs/act-01.md
-  status: draft
-- id: ACT-02
-  type: acteur
-  niveau: "2"
-  chemin: acteurs/act-02.md
-  status: draft
-- id: ACT-03
-  type: acteur
-  niveau: "2"
-  chemin: acteurs/act-03.md
-  status: draft
-- id: ACT-04
-  type: acteur
-  niveau: "2"
-  chemin: acteurs/act-04.md
-  status: draft
-- id: ACT-05
-  type: acteur
-  niveau: "2"
-  chemin: acteurs/act-05.md
-  status: draft
-- id: ACT-06
-  type: acteur
-  niveau: "2"
-  chemin: acteurs/act-06.md
-  status: draft
-
-# roles (5)
-- id: ROL-01
-  type: role
-  niveau: "2"
-  chemin: roles/rol-01.md
-  status: draft
-- id: ROL-02
-  type: role
-  niveau: "2"
-  chemin: roles/rol-02.md
-  status: draft
-- id: ROL-03
-  type: role
-  niveau: "2"
-  chemin: roles/rol-03.md
-  status: draft
-- id: ROL-04
-  type: role
-  niveau: "2"
-  chemin: roles/rol-04.md
-  status: draft
-- id: ROL-05
-  type: role
-  niveau: "2"
-  chemin: roles/rol-05.md
-  status: draft
-
-# lieux (6)
-- id: LOC-01
-  type: lieu
+# niveau 1 / valeur (4)
+- id: "VAL-01"
+  type: "valeur"
   niveau: "1"
-  chemin: lieux/loc-01.md
-  status: draft
-- id: LOC-02
-  type: lieu
+  chemin: "valeurs/val-01.md"
+  status: "active"
+  title: "Soins accessibles, continus, sûrs et de qualité"
+- id: "VAL-02"
+  type: "valeur"
   niveau: "1"
-  chemin: lieux/loc-02.md
-  status: draft
-- id: LOC-03
-  type: lieu
+  chemin: "valeurs/val-02.md"
+  status: "active"
+  title: "Protection contre les maladies, épidémies et urgences sanitaires"
+- id: "VAL-03"
+  type: "valeur"
   niveau: "1"
-  chemin: lieux/loc-03.md
-  status: draft
-- id: LOC-04
-  type: lieu
+  chemin: "valeurs/val-03.md"
+  status: "active"
+  title: "Protection financière contre les dépenses de santé"
+- id: "VAL-04"
+  type: "valeur"
   niveau: "1"
-  chemin: lieux/loc-04.md
-  status: draft
-- id: LOC-05
-  type: lieu
-  niveau: "1"
-  chemin: lieux/loc-05.md
-  status: draft
-- id: LOC-06
-  type: lieu
-  niveau: "1"
-  chemin: lieux/loc-06.md
-  status: draft
+  chemin: "valeurs/val-04.md"
+  status: "active"
+  title: "Système de santé planifié, coordonné et continuellement amélioré"
 
-# services (6)
-- id: SRV-01
-  type: service
-  niveau: "4"
-  chemin: services/srv-01.md
-  status: draft
-- id: SRV-02
-  type: service
-  niveau: "4"
-  chemin: services/srv-02.md
-  status: draft
-- id: SRV-03
-  type: service
-  niveau: "4"
-  chemin: services/srv-03.md
-  status: draft
-- id: SRV-04
-  type: service
-  niveau: "4"
-  chemin: services/srv-04.md
-  status: draft
-- id: SRV-05
-  type: service
-  niveau: "4"
-  chemin: services/srv-05.md
-  status: draft
-- id: SRV-06
-  type: service
-  niveau: "4"
-  chemin: services/srv-06.md
-  status: draft
+# niveau 2 / principe (74)
+- id: "P-INT-01"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-01.md"
+  status: "active"
+  title: "Autorité désignée"
+- id: "P-INT-02"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-02.md"
+  status: "active"
+  title: "Résolution contre l’autorité"
+- id: "P-INT-03"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-03.md"
+  status: "active"
+  title: "Copies locales non autoritatives"
+- id: "P-INT-04"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-04.md"
+  status: "active"
+  title: "Historisation des références"
+- id: "P-INT-05"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-05.md"
+  status: "active"
+  title: "Contrat explicite"
+- id: "P-INT-06"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-06.md"
+  status: "active"
+  title: "Versionnement et compatibilité"
+- id: "P-INT-07"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-07.md"
+  status: "active"
+  title: "Responsabilité de la donnée"
+- id: "P-INT-08"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-08.md"
+  status: "active"
+  title: "Publication au catalogue des services"
+- id: "P-INT-09"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-09.md"
+  status: "active"
+  title: "Publication des contrats"
+- id: "P-INT-10"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-10.md"
+  status: "active"
+  title: "Accord préalable"
+- id: "P-INT-11"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-11.md"
+  status: "active"
+  title: "Arbitrage des conflits d’autorité"
+- id: "P-INT-12"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-12.md"
+  status: "active"
+  title: "Dérogation explicite"
+- id: "P-INT-13"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-13.md"
+  status: "active"
+  title: "Dérogation d’urgence"
+- id: "P-INT-14"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-14.md"
+  status: "active"
+  title: "Base d’autorisation explicite"
+- id: "P-INT-15"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-15.md"
+  status: "active"
+  title: "Limitation à la finalité"
+- id: "P-INT-16"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-16.md"
+  status: "active"
+  title: "Résidence et non-réplication"
+- id: "P-INT-17"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-17.md"
+  status: "active"
+  title: "Minimisation"
+- id: "P-INT-18"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-18.md"
+  status: "active"
+  title: "Traçabilité différenciée"
+- id: "P-INT-19"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-19.md"
+  status: "active"
+  title: "Neutralité technologique"
+- id: "P-INT-20"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-20.md"
+  status: "active"
+  title: "Portabilité et réversibilité"
+- id: "P-INT-21"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-21.md"
+  status: "active"
+  title: "Progressivité"
+- id: "P-INT-22"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-22.md"
+  status: "active"
+  title: "Fonctionnement en connectivité contrainte"
+- id: "P-INT-23"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-23.md"
+  status: "active"
+  title: "Conformité fondée sur des preuves"
+- id: "P-INT-24"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-24.md"
+  status: "active"
+  title: "Applicabilité déclarée"
+- id: "P-INT-25"
+  type: "principe"
+  niveau: "2"
+  chemin: "principes/p-int-25.md"
+  status: "active"
+  title: "Réévaluation continue"
 
-# work-packages (7)
-- id: WP-01
-  type: work-package
-  niveau: "4"
-  chemin: work-packages/wp-01.md
-  status: draft
-- id: WP-02
-  type: work-package
-  niveau: "4"
-  chemin: work-packages/wp-02.md
-  status: draft
-- id: WP-03
-  type: work-package
-  niveau: "4"
-  chemin: work-packages/wp-03.md
-  status: draft
-- id: WP-04
-  type: work-package
-  niveau: "4"
-  chemin: work-packages/wp-04.md
-  status: draft
-- id: WP-05
-  type: work-package
-  niveau: "4"
-  chemin: work-packages/wp-05.md
-  status: draft
-- id: WP-06
-  type: work-package
-  niveau: "4"
-  chemin: work-packages/wp-06.md
-  status: draft
-- id: WP-07
-  type: work-package
-  niveau: "4"
-  chemin: work-packages/wp-07.md
-  status: draft
+# niveau 2 / capacite (16)
+- id: "CAP-INT-01"
+  type: "capacite"
+  niveau: "2"
+  chemin: "capacites/cap-int-01.md"
+  status: "candidate"
+  title: "Résolution d’identité du bénéficiaire"
+- id: "CAP-INT-02"
+  type: "capacite"
+  niveau: "2"
+  chemin: "capacites/cap-int-02.md"
+  status: "candidate"
+  title: "Registre et résolution des professionnels de santé"
+- id: "CAP-INT-03"
+  type: "capacite"
+  niveau: "2"
+  chemin: "capacites/cap-int-03.md"
+  status: "candidate"
+  title: "Échange et médiation inter-systèmes"
+- id: "CAP-INT-04"
+  type: "capacite"
+  niveau: "2"
+  chemin: "capacites/cap-int-04.md"
+  status: "candidate"
+  title: "Référentiel des structures et services de santé"
+- id: "CAP-INT-05"
+  type: "capacite"
+  niveau: "2"
+  chemin: "capacites/cap-int-05.md"
+  status: "candidate"
+  title: "Terminologie et codification communes"
+- id: "CAP-INT-06"
+  type: "capacite"
+  niveau: "2"
+  chemin: "capacites/cap-int-06.md"
+  status: "candidate"
+  title: "Catalogue des services et registre des contrats"
+- id: "CAP-INT-07"
+  type: "capacite"
+  niveau: "2"
+  chemin: "capacites/cap-int-07.md"
+  status: "candidate"
+  title: "Accès et exposition des données analytiques"
+- id: "CAP-INT-08"
+  type: "capacite"
+  niveau: "2"
+  chemin: "capacites/cap-int-08.md"
+  status: "candidate"
+  title: "Confiance, sécurité et autorisation"
+- id: "CAP-INT-09"
+  type: "capacite"
+  niveau: "2"
+  chemin: "capacites/cap-int-09.md"
+  status: "candidate"
+  title: "Gestion des consentements et bases d’autorisation"
+- id: "CAP-INT-10"
+  type: "capacite"
+  niveau: "2"
+  chemin: "capacites/cap-int-10.md"
+  status: "candidate"
+  title: "Provenance, audit et traçabilité"
+- id: "CAP-INT-11"
+  type: "capacite"
+  niveau: "2"
+  chemin: "capacites/cap-int-11.md"
+  status: "candidate"
+  title: "Qualité et réconciliation"
+- id: "CAP-INT-12"
+  type: "capacite"
+  niveau: "2"
+  chemin: "capacites/cap-int-12.md"
+  status: "candidate"
+  title: "Conformité et tests d’interopérabilité"
+- id: "CAP-INT-13"
+  type: "capacite"
+  niveau: "2"
+  chemin: "capacites/cap-int-13.md"
+  status: "candidate"
+  title: "Interopérabilité transfrontalière et confiance internationale"
+- id: "CAP-INT-14"
+  type: "capacite"
+  niveau: "2"
+  chemin: "capacites/cap-int-14.md"
+  status: "candidate"
+  title: "Échanges intersectoriels One Health"
+- id: "CAP-INT-15"
+  type: "capacite"
+  niveau: "2"
+  chemin: "capacites/cap-int-15.md"
+  status: "candidate"
+  title: "Échange et traçabilité de la chaîne d'approvisionnement sanitaire"
+- id: "CAP-INT-16"
+  type: "capacite"
+  niveau: "2"
+  chemin: "capacites/cap-int-16.md"
+  status: "candidate"
+  title: "Données environnementales et de résilience climatique"
 
-# plateaux (3)
-- id: PL-01
-  type: plateau
-  niveau: "5"
-  chemin: plateaux/pl-01.md
-  status: draft
-- id: PL-02
-  type: plateau
-  niveau: "5"
-  chemin: plateaux/pl-02.md
-  status: draft
-- id: PL-03
-  type: plateau
-  niveau: "5"
-  chemin: plateaux/pl-03.md
-  status: draft
+# niveau 3 / fondation (6)
+- id: "F-1"
+  type: "fondation"
+  niveau: "3"
+  chemin: "fondations/f-1.md"
+  status: "stable"
+  title: "Résilience face à la réalité géographique du pays"
+- id: "F-2"
+  type: "fondation"
+  niveau: "3"
+  chemin: "fondations/f-2.md"
+  status: "stable"
+  title: "Préservation de la souveraineté intersectorielle"
+- id: "F-3"
+  type: "fondation"
+  niveau: "3"
+  chemin: "fondations/f-3.md"
+  status: "stable"
+  title: "Éradication des silos technologiques"
+- id: "F-4"
+  type: "fondation"
+  niveau: "3"
+  chemin: "fondations/f-4.md"
+  status: "stable"
+  title: "Homologation obligatoire"
+- id: "F-5"
+  type: "fondation"
+  niveau: "3"
+  chemin: "fondations/f-5.md"
+  status: "draft"
+  title: "Protection et minimisation"
+- id: "F-6"
+  type: "fondation"
+  niveau: "3"
+  chemin: "fondations/f-6.md"
+  status: "draft"
+  title: "Observabilité"
 
-# gaps (3)
-- id: GAP-01
-  type: gap
-  niveau: "5"
-  chemin: gaps/gap-01.md
-  status: draft
-- id: GAP-02
-  type: gap
-  niveau: "5"
-  chemin: gaps/gap-02.md
-  status: draft
-- id: GAP-03
-  type: gap
-  niveau: "5"
-  chemin: gaps/gap-03.md
-  status: draft
+# niveau 3 / exigence (5)
+- id: "ENF-1"
+  type: "exigence"
+  niveau: "3"
+  chemin: "exigences/enf-1.md"
+  status: "draft"
+  title: "Résilience à l'instabilité réseau"
+- id: "ENF-2"
+  type: "exigence"
+  niveau: "3"
+  chemin: "exigences/enf-2.md"
+  status: "draft"
+  title: "Intégrité des flux et traçabilité des valeurs"
+- id: "ENF-3"
+  type: "exigence"
+  niveau: "3"
+  chemin: "exigences/enf-3.md"
+  status: "draft"
+  title: "Unicité de l'identité et résilience face à la fragmentation applicative"
+- id: "ENF-4"
+  type: "exigence"
+  niveau: "3"
+  chemin: "exigences/enf-4.md"
+  status: "draft"
+  title: "Cloisonnement inter-institutionnel et étanchéité des données (One Health)"
+- id: "ENF-5"
+  type: "exigence"
+  niveau: "3"
+  chemin: "exigences/enf-5.md"
+  status: "draft"
+  title: "Coordination des processus complexes décentralisés et asynchrones"
 
+# niveau 3 / chapitre (21)
+- id: "ART-0"
+  type: "chapitre"
+  niveau: "3"
+  chemin: "chapitres/art-0.md"
+  status: "candidate"
+  title: "Accords de partage inter-institutionnels"
+- id: "ART-1"
+  type: "chapitre"
+  niveau: "3"
+  chemin: "chapitres/art-1.md"
+  status: "stable"
+  title: "Intégration et ingestion"
+- id: "ART-2"
+  type: "chapitre"
+  niveau: "3"
+  chemin: "chapitres/art-2.md"
+  status: "stable"
+  title: "Médiation et normalisation"
+- id: "ART-3"
+  type: "chapitre"
+  niveau: "3"
+  chemin: "chapitres/art-3.md"
+  status: "stable"
+  title: "Historisation événementielle et profils de déploiement"
+- id: "ART-4"
+  type: "chapitre"
+  niveau: "3"
+  chemin: "chapitres/art-4.md"
+  status: "stable"
+  title: "Référentiels de métadonnées de gestion"
+- id: "ART-4A"
+  type: "chapitre"
+  niveau: "3"
+  chemin: "chapitres/art-4a.md"
+  status: "draft"
+  title: "Résolution d'identité"
+- id: "ART-4B"
+  type: "chapitre"
+  niveau: "3"
+  chemin: "chapitres/art-4b.md"
+  status: "draft"
+  title: "Bases d'autorisation"
+- id: "ART-4C"
+  type: "chapitre"
+  niveau: "3"
+  chemin: "chapitres/art-4c.md"
+  status: "candidate"
+  title: "Éligibilité et couverture"
+- id: "ART-4D"
+  type: "chapitre"
+  niveau: "3"
+  chemin: "chapitres/art-4d.md"
+  status: "candidate"
+  title: "Référentiel géospatial et d'exploitation partagé"
+- id: "ART-5"
+  type: "chapitre"
+  niveau: "3"
+  chemin: "chapitres/art-5.md"
+  status: "stable"
+  title: "Cohérence et qualité des données"
+- id: "ART-6"
+  type: "chapitre"
+  niveau: "3"
+  chemin: "chapitres/art-6.md"
+  status: "draft"
+  title: "Analytique et restitution"
+- id: "ART-7"
+  type: "chapitre"
+  niveau: "3"
+  chemin: "chapitres/art-7.md"
+  status: "stable"
+  title: "Sécurité, contrôle d'accès et résidence de la donnée"
+- id: "ART-8"
+  type: "chapitre"
+  niveau: "3"
+  chemin: "chapitres/art-8.md"
+  status: "draft"
+  title: "Orchestration de processus"
+- id: "ART-8A"
+  type: "chapitre"
+  niveau: "3"
+  chemin: "chapitres/art-8a.md"
+  status: "draft"
+  title: "Orchestration de processus borné"
+- id: "ART-8B"
+  type: "chapitre"
+  niveau: "3"
+  chemin: "chapitres/art-8b.md"
+  status: "candidate"
+  title: "Modélisation de relations en graphe"
+- id: "ART-8C"
+  type: "chapitre"
+  niveau: "3"
+  chemin: "chapitres/art-8c.md"
+  status: "candidate"
+  title: "Agrégation par lot"
+- id: "ART-8D"
+  type: "chapitre"
+  niveau: "3"
+  chemin: "chapitres/art-8d.md"
+  status: "candidate"
+  title: "Chorégraphie inter-institutionnelle"
+- id: "ART-9"
+  type: "chapitre"
+  niveau: "3"
+  chemin: "chapitres/art-9.md"
+  status: "candidate"
+  title: "Garanties transactionnelles fortes"
+- id: "ART-10"
+  type: "chapitre"
+  niveau: "3"
+  chemin: "chapitres/art-10.md"
+  status: "candidate"
+  title: "Logistique"
+- id: "ART-11"
+  type: "chapitre"
+  niveau: "3"
+  chemin: "chapitres/art-11.md"
+  status: "stable"
+  title: "Coordination intersectorielle"
+- id: "ART-12"
+  type: "chapitre"
+  niveau: "3"
+  chemin: "chapitres/art-12.md"
+  status: "draft"
+  title: "Aide à la décision clinique"
+
+# niveau 4 / profil (19)
+- id: "PT-01"
+  type: "profil"
+  niveau: "4"
+  chemin: "profils/pt-01.md"
+  status: "active"
+  title: "Échange interinstitutionnel"
+- id: "PT-02"
+  type: "profil"
+  niveau: "4"
+  chemin: "profils/pt-02.md"
+  status: "active"
+  title: "Médiation intra-secteur"
+- id: "PT-03"
+  type: "profil"
+  niveau: "4"
+  chemin: "profils/pt-03.md"
+  status: "active"
+  title: "Catalogue des services et registre des contrats"
+- id: "PT-04"
+  type: "profil"
+  niveau: "4"
+  chemin: "profils/pt-04.md"
+  status: "active"
+  title: "Résolution d’identité du bénéficiaire"
+- id: "PT-05"
+  type: "profil"
+  niveau: "4"
+  chemin: "profils/pt-05.md"
+  status: "active"
+  title: "Registre des professionnels"
+- id: "PT-06"
+  type: "profil"
+  niveau: "4"
+  chemin: "profils/pt-06.md"
+  status: "active"
+  title: "Référentiel des structures et services de santé"
+- id: "PT-07"
+  type: "profil"
+  niveau: "4"
+  chemin: "profils/pt-07.md"
+  status: "active"
+  title: "Terminologie et codification"
+- id: "PT-08"
+  type: "profil"
+  niveau: "4"
+  chemin: "profils/pt-08.md"
+  status: "active"
+  title: "Échange de données agrégées"
+- id: "PT-09"
+  type: "profil"
+  niveau: "4"
+  chemin: "profils/pt-09.md"
+  status: "active"
+  title: "Analytique et exposition de données"
+- id: "PT-10"
+  type: "profil"
+  niveau: "4"
+  chemin: "profils/pt-10.md"
+  status: "active"
+  title: "Confiance, authentification et autorisation"
+- id: "PT-11"
+  type: "profil"
+  niveau: "4"
+  chemin: "profils/pt-11.md"
+  status: "active"
+  title: "Consentement et bases d’autorisation"
+- id: "PT-12"
+  type: "profil"
+  niveau: "4"
+  chemin: "profils/pt-12.md"
+  status: "active"
+  title: "Audit, provenance et traçabilité"
+- id: "PT-13"
+  type: "profil"
+  niveau: "4"
+  chemin: "profils/pt-13.md"
+  status: "active"
+  title: "Qualité et réconciliation"
+- id: "PT-14"
+  type: "profil"
+  niveau: "4"
+  chemin: "profils/pt-14.md"
+  status: "active"
+  title: "Interopérabilité transfrontalière"
+- id: "PT-15"
+  type: "profil"
+  niveau: "4"
+  chemin: "profils/pt-15.md"
+  status: "active"
+  title: "Surveillance One Health"
+- id: "PT-16"
+  type: "profil"
+  niveau: "4"
+  chemin: "profils/pt-16.md"
+  status: "active"
+  title: "Orchestration de processus bornés"
+- id: "PT-17"
+  type: "profil"
+  niveau: "4"
+  chemin: "profils/pt-17.md"
+  status: "active"
+  title: "Logistique & chaîne d'approvisionnement (LMIS)"
+- id: "PT-18"
+  type: "profil"
+  niveau: "4"
+  chemin: "profils/pt-18.md"
+  status: "active"
+  title: "Échange de réclamations et paiements"
+- id: "PT-19"
+  type: "profil"
+  niveau: "4"
+  chemin: "profils/pt-19.md"
+  status: "active"
+  title: "Aide à la décision clinique (CDS)"
+
+# niveau ? / acteur (6)
+- id: "ACT-01"
+  type: "acteur"
+  niveau: ""
+  chemin: "acteurs/act-01.md"
+  status: "draft"
+  title: "Patient et usager (acteur)"
+- id: "ACT-02"
+  type: "acteur"
+  niveau: ""
+  chemin: "acteurs/act-02.md"
+  status: "draft"
+  title: "Agent de santé de première ligne"
+- id: "ACT-03"
+  type: "acteur"
+  niveau: ""
+  chemin: "acteurs/act-03.md"
+  status: "draft"
+  title: "Formation sanitaire (établissement)"
+- id: "ACT-04"
+  type: "acteur"
+  niveau: ""
+  chemin: "acteurs/act-04.md"
+  status: "draft"
+  title: "Autorité district, région et Ministère"
+- id: "ACT-05"
+  type: "acteur"
+  niveau: ""
+  chemin: "acteurs/act-05.md"
+  status: "draft"
+  title: "Partenaire technique et financier (acteur)"
+- id: "ACT-06"
+  type: "acteur"
+  niveau: ""
+  chemin: "acteurs/act-06.md"
+  status: "draft"
+  title: "Équipe technique DEPSI / SIS"
+
+# niveau ? / role (5)
+- id: "ROL-01"
+  type: "role"
+  niveau: ""
+  chemin: "roles/rol-01.md"
+  status: "draft"
+  title: "Clinicien / prestataire de soins"
+- id: "ROL-02"
+  type: "role"
+  niveau: ""
+  chemin: "roles/rol-02.md"
+  status: "draft"
+  title: "Gestionnaire de parcours / référence"
+- id: "ROL-03"
+  type: "role"
+  niveau: ""
+  chemin: "roles/rol-03.md"
+  status: "draft"
+  title: "Gestionnaire de données / registre"
+- id: "ROL-04"
+  type: "role"
+  niveau: ""
+  chemin: "roles/rol-04.md"
+  status: "draft"
+  title: "Gestionnaire logistique"
+- id: "ROL-05"
+  type: "role"
+  niveau: ""
+  chemin: "roles/rol-05.md"
+  status: "draft"
+  title: "Contrôleur / auditeur"
+
+# niveau ? / lieu (6)
+- id: "LOC-01"
+  type: "lieu"
+  niveau: ""
+  chemin: "lieux/loc-01.md"
+  status: "draft"
+  title: "Communauté / aire de santé"
+- id: "LOC-02"
+  type: "lieu"
+  niveau: ""
+  chemin: "lieux/loc-02.md"
+  status: "draft"
+  title: "Centre de santé de base (CSB)"
+- id: "LOC-03"
+  type: "lieu"
+  niveau: ""
+  chemin: "lieux/loc-03.md"
+  status: "draft"
+  title: "District sanitaire"
+- id: "LOC-04"
+  type: "lieu"
+  niveau: ""
+  chemin: "lieux/loc-04.md"
+  status: "draft"
+  title: "Région sanitaire"
+- id: "LOC-05"
+  type: "lieu"
+  niveau: ""
+  chemin: "lieux/loc-05.md"
+  status: "draft"
+  title: "Établissement hospitalier de référence"
+- id: "LOC-06"
+  type: "lieu"
+  niveau: ""
+  chemin: "lieux/loc-06.md"
+  status: "draft"
+  title: "Siège central (DEPSI)"
+
+# niveau ? / service (6)
+- id: "SRV-01"
+  type: "service"
+  niveau: ""
+  chemin: "services/srv-01.md"
+  status: "draft"
+  title: "Service d'identité du bénéficiaire"
+- id: "SRV-02"
+  type: "service"
+  niveau: ""
+  chemin: "services/srv-02.md"
+  status: "draft"
+  title: "Service de dossier patient"
+- id: "SRV-03"
+  type: "service"
+  niveau: ""
+  chemin: "services/srv-03.md"
+  status: "draft"
+  title: "Service de référentiels"
+- id: "SRV-04"
+  type: "service"
+  niveau: ""
+  chemin: "services/srv-04.md"
+  status: "draft"
+  title: "Service d'échange inter-systèmes"
+- id: "SRV-05"
+  type: "service"
+  niveau: ""
+  chemin: "services/srv-05.md"
+  status: "draft"
+  title: "Service logistique (LMIS)"
+- id: "SRV-06"
+  type: "service"
+  niveau: ""
+  chemin: "services/srv-06.md"
+  status: "draft"
+  title: "Service de pilotage et tableaux de bord"
+
+# niveau ? / work-package (7)
+- id: "WP-01"
+  type: "work-package"
+  niveau: ""
+  chemin: "work-packages/wp-01.md"
+  status: "draft"
+  title: "Lot L1 — Infrastructure & sécurité"
+- id: "WP-02"
+  type: "work-package"
+  niveau: ""
+  chemin: "work-packages/wp-02.md"
+  status: "draft"
+  title: "Lot L2 — Applications terrain & collecte"
+- id: "WP-03"
+  type: "work-package"
+  niveau: ""
+  chemin: "work-packages/wp-03.md"
+  status: "draft"
+  title: "Lot L3 — Médiation & registres partagés"
+- id: "WP-04"
+  type: "work-package"
+  niveau: ""
+  chemin: "work-packages/wp-04.md"
+  status: "draft"
+  title: "Lot L4 — Analytique & pilotage"
+- id: "WP-05"
+  type: "work-package"
+  niveau: ""
+  chemin: "work-packages/wp-05.md"
+  status: "draft"
+  title: "Lot L5 — Extension & pérennisation"
+- id: "WP-06"
+  type: "work-package"
+  niveau: ""
+  chemin: "work-packages/wp-06.md"
+  status: "draft"
+  title: "Lot L6 — Interopérabilité transfrontalière"
+- id: "WP-07"
+  type: "work-package"
+  niveau: ""
+  chemin: "work-packages/wp-07.md"
+  status: "draft"
+  title: "Lot L7 — Coordination One Health"
+
+# niveau ? / plateau (3)
+- id: "PL-01"
+  type: "plateau"
+  niveau: ""
+  chemin: "plateaux/pl-01.md"
+  status: "draft"
+  title: "Plateau 1 — Socle & confiance numérique"
+- id: "PL-02"
+  type: "plateau"
+  niveau: ""
+  chemin: "plateaux/pl-02.md"
+  status: "draft"
+  title: "Plateau 2 — Services de terrain & interopérabilité"
+- id: "PL-03"
+  type: "plateau"
+  niveau: ""
+  chemin: "plateaux/pl-03.md"
+  status: "draft"
+  title: "Plateau 3 — Intelligence & ouverture"
+
+# niveau ? / gap (3)
+- id: "GAP-01"
+  type: "gap"
+  niveau: ""
+  chemin: "gaps/gap-01.md"
+  status: "draft"
+  title: "Écart — Couverture terrain en zone isolée"
+- id: "GAP-02"
+  type: "gap"
+  niveau: ""
+  chemin: "gaps/gap-02.md"
+  status: "draft"
+  title: "Écart — Interopérabilité transfrontalière & One Health"
+- id: "GAP-03"
+  type: "gap"
+  niveau: ""
+  chemin: "gaps/gap-03.md"
+  status: "draft"
+  title: "Écart — Cadre légal & gouvernance publié"
+
+# niveau ? / objet-de-donnees (31)
+- id: "DO-01"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-01.md"
+  status: "draft"
+  title: "DO-01 : Patient"
+- id: "DO-02"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-02.md"
+  status: "draft"
+  title: "DO-02 : Identifiant national d'identification"
+- id: "DO-03"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-03.md"
+  status: "draft"
+  title: "DO-03 : Dossier patient"
+- id: "DO-04"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-04.md"
+  status: "draft"
+  title: "DO-04 : Épisode de soins"
+- id: "DO-05"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-05.md"
+  status: "draft"
+  title: "DO-05 : Consultation"
+- id: "DO-06"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-06.md"
+  status: "draft"
+  title: "DO-06 : Prescription"
+- id: "DO-07"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-07.md"
+  status: "draft"
+  title: "DO-07 : Référence"
+- id: "DO-08"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-08.md"
+  status: "draft"
+  title: "DO-08 : Contre-référence"
+- id: "DO-09"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-09.md"
+  status: "draft"
+  title: "DO-09 : Évacuation sanitaire"
+- id: "DO-10"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-10.md"
+  status: "draft"
+  title: "DO-10 : Dispensation"
+- id: "DO-11"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-11.md"
+  status: "draft"
+  title: "DO-11 : Produit de santé"
+- id: "DO-12"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-12.md"
+  status: "draft"
+  title: "DO-12 : Lot"
+- id: "DO-13"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-13.md"
+  status: "draft"
+  title: "DO-13 : Stock"
+- id: "DO-14"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-14.md"
+  status: "draft"
+  title: "DO-14 : Éligibilité"
+- id: "DO-15"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-15.md"
+  status: "draft"
+  title: "DO-15 : Couverture sanitaire"
+- id: "DO-16"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-16.md"
+  status: "draft"
+  title: "DO-16 : Facturation"
+- id: "DO-17"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-17.md"
+  status: "draft"
+  title: "DO-17 : Vérification d'éligibilité"
+- id: "DO-18"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-18.md"
+  status: "draft"
+  title: "DO-18 : Signal"
+- id: "DO-19"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-19.md"
+  status: "draft"
+  title: "DO-19 : Foyer"
+- id: "DO-20"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-20.md"
+  status: "draft"
+  title: "DO-20 : Investigation"
+- id: "DO-21"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-21.md"
+  status: "draft"
+  title: "DO-21 : Notification sanitaire"
+- id: "DO-22"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-22.md"
+  status: "draft"
+  title: "DO-22 : Alerte sanitaire"
+- id: "DO-23"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-23.md"
+  status: "draft"
+  title: "DO-23 : Formation sanitaire"
+- id: "DO-24"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-24.md"
+  status: "draft"
+  title: "DO-24 : Agent de santé"
+- id: "DO-25"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-25.md"
+  status: "draft"
+  title: "DO-25 : Indicateur sanitaire"
+- id: "DO-26"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-26.md"
+  status: "draft"
+  title: "DO-26 : Zone sanitaire"
+- id: "DO-27"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-27.md"
+  status: "draft"
+  title: "DO-27 : Tâche"
+- id: "DO-28"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-28.md"
+  status: "draft"
+  title: "DO-28 : Tableau de bord"
+- id: "DO-29"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-29.md"
+  status: "draft"
+  title: "DO-29 : Résumé international du patient (IPS)"
+- id: "DO-30"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-30.md"
+  status: "draft"
+  title: "DO-30 : Section du résumé patient"
+- id: "DO-31"
+  type: "objet-de-donnees"
+  niveau: ""
+  chemin: "objets-de-donnees/do-31.md"
+  status: "draft"
+  title: "DO-31 : Confiance internationale"
+
+# niveau ? / objet-metier (7)
+- id: "BO-01"
+  type: "objet-metier"
+  niveau: ""
+  chemin: "objets-metier/bo-01.md"
+  status: "draft"
+  title: "BO-01 : Patient & identité"
+- id: "BO-02"
+  type: "objet-metier"
+  niveau: ""
+  chemin: "objets-metier/bo-02.md"
+  status: "draft"
+  title: "BO-02 : Prestation & soins"
+- id: "BO-03"
+  type: "objet-metier"
+  niveau: ""
+  chemin: "objets-metier/bo-03.md"
+  status: "draft"
+  title: "BO-03 : Dispensation & produits"
+- id: "BO-04"
+  type: "objet-metier"
+  niveau: ""
+  chemin: "objets-metier/bo-04.md"
+  status: "draft"
+  title: "BO-04 : Financement & couverture"
+- id: "BO-05"
+  type: "objet-metier"
+  niveau: ""
+  chemin: "objets-metier/bo-05.md"
+  status: "draft"
+  title: "BO-05 : Risque & surveillance"
+- id: "BO-06"
+  type: "objet-metier"
+  niveau: ""
+  chemin: "objets-metier/bo-06.md"
+  status: "draft"
+  title: "BO-06 : Exploitation & gestion"
+- id: "BO-07"
+  type: "objet-metier"
+  niveau: ""
+  chemin: "objets-metier/bo-07.md"
+  status: "draft"
+  title: "BO-07 : Interopérabilité transfrontalière"

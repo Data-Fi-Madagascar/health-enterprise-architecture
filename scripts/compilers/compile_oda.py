@@ -8,6 +8,7 @@ Pont entre le Modèle de Gouvernance (YAML/Markdown) et le Modèle d'Implémenta
 Usage :
     python3 scripts/compilers/compile_oda.py                    # compile tout
     python3 scripts/compilers/compile_oda.py --validate         # valide après compilation
+    python3 scripts/compilers/compile_oda.py --check            # vérifie sans écrire
     python3 scripts/compilers/compile_oda.py --nomenclature FOSA-STATUS  # compile une nomenclature
     python3 scripts/compilers/compile_oda.py --check-governance # valide les fichiers d'auteur
 """
@@ -18,7 +19,7 @@ import json
 import os
 import re
 import sys
-from datetime import datetime
+import tempfile
 
 try:
     import yaml
@@ -61,6 +62,20 @@ def list_value(raw):
             return [i for i in items if i]
         return [x.strip() for x in inner.split(",") if x.strip()]
     return [x.strip().strip("'\"") for x in raw.split(",") if x.strip()]
+
+
+def scalar_value(raw):
+    if raw is None:
+        return None
+    return raw.strip().strip('"').strip("'")
+
+
+def source_date(fm):
+    """Retourne une date stable pour les artefacts générés."""
+    value = scalar_value(fm_field(fm, "last_reviewed") or fm_field(fm, "date"))
+    if value and re.match(r"^\d{4}-\d{2}-\d{2}$", value):
+        return value
+    return "1970-01-01"
 
 
 def extract_table_from_body(body):
@@ -142,6 +157,7 @@ def generate_fhir_codesystem(fm, concepts):
     version = fm_field(fm, "version") or "1.0.0"
     owner = fm_field(fm, "owner") or "DEPSI"
     fhir_url = fm_field(fm, "fhir_url") or "%s/CodeSystem/hea-%s" % (FHIR_NS, nom_id.lower())
+    generated_date = source_date(fm)
 
     fhir_concepts = []
     for c in concepts:
@@ -161,7 +177,7 @@ def generate_fhir_codesystem(fm, concepts):
         "id": "hea-%s" % nom_id.lower(),
         "meta": {
             "versionId": version,
-            "lastUpdated": datetime.now().strftime("%Y-%m-%dT00:00:00+03:00"),
+            "lastUpdated": "%sT00:00:00+03:00" % generated_date,
             "source": "%s/ontologie/hea#nomenclature/%s" % (HEA_NS, nom_id)
         },
         "url": fhir_url,
@@ -170,7 +186,7 @@ def generate_fhir_codesystem(fm, concepts):
         "title": "%s — %s" % (nom_id, title),
         "status": "active",
         "experimental": False,
-        "date": datetime.now().strftime("%Y-%m-%d"),
+        "date": generated_date,
         "publisher": "%s - Madagascar" % owner,
         "description": title,
         "copyright": "Ministère de la Santé Publique - Madagascar",
@@ -246,6 +262,32 @@ def compile_nomenclature(nom, output_dir):
         json.dump(codesystem, f, indent=2, ensure_ascii=False)
 
     return payload_path, cs_path
+
+
+def compare_compiled_files(compiled, generated_root, expected_root):
+    """Compare les fichiers générés dans un répertoire temporaire aux artefacts."""
+    diffs = []
+    for _, payload_path, cs_path in compiled:
+        for generated_path in (payload_path, cs_path):
+            rel = os.path.relpath(generated_path, generated_root)
+            expected_path = os.path.join(expected_root, rel)
+            label = os.path.relpath(expected_path, REPO_ROOT)
+            if not os.path.exists(expected_path):
+                diffs.append("+ %s" % label)
+                continue
+            with open(generated_path, "rb") as gf, open(expected_path, "rb") as ef:
+                if gf.read() != ef.read():
+                    diffs.append("M %s" % label)
+    return diffs
+
+
+def compile_all(nomenclatures, output_dir):
+    os.makedirs(output_dir, exist_ok=True)
+    compiled = []
+    for nom in nomenclatures:
+        payload_path, cs_path = compile_nomenclature(nom, output_dir)
+        compiled.append((nom["frontmatter"], payload_path, cs_path))
+    return compiled
 
 
 def validate_governance():
@@ -342,6 +384,8 @@ def main():
                         help="Répertoire de sortie (défaut: 03_ptisn/schemas/)")
     parser.add_argument("--validate", action="store_true",
                         help="Valider après compilation")
+    parser.add_argument("--check", action="store_true",
+                        help="Vérifier sans écrire que les artefacts ODA générés sont à jour")
     parser.add_argument("--check-governance", action="store_true",
                         help="Valider les fichiers d'auteur contre le méta-schéma")
     parser.add_argument("--nomenclature", type=str, default=None,
@@ -353,7 +397,6 @@ def main():
         sys.exit(0 if ok else 1)
 
     output_dir = args.output or os.path.join(REPO_ROOT, "03_ptisn", "schemas")
-    os.makedirs(output_dir, exist_ok=True)
 
     # Collecter les nomenclatures
     nomenclatures = collect_nomenclatures()
@@ -372,11 +415,31 @@ def main():
             print("[ERREUR] Nomenclature introuvable : %s" % args.nomenclature)
             sys.exit(1)
 
+    if args.check:
+        with tempfile.TemporaryDirectory(prefix="hea-oda-check-") as tmp:
+            compiled = compile_all(nomenclatures, tmp)
+            all_ok = True
+            for _, payload_path, cs_path in compiled:
+                for path in [payload_path, cs_path]:
+                    try:
+                        with open(path, encoding="utf-8") as f:
+                            json.load(f)
+                    except json.JSONDecodeError as e:
+                        print("[ERREUR] %s : %s" % (os.path.relpath(path, tmp), e))
+                        all_ok = False
+            if not all_ok:
+                sys.exit(1)
+            diffs = compare_compiled_files(compiled, tmp, output_dir)
+            if diffs:
+                print("Artefacts ODA obsolètes :")
+                for diff in diffs:
+                    print("  %s" % diff)
+                sys.exit(1)
+            print("[OK] %d nomenclatures ODA à jour." % len(compiled))
+            return 0
+
     # Compiler chaque nomenclature
-    compiled = []
-    for nom in nomenclatures:
-        payload_path, cs_path = compile_nomenclature(nom, output_dir)
-        compiled.append((nom["frontmatter"], payload_path, cs_path))
+    compiled = compile_all(nomenclatures, output_dir)
 
     print("=== Compilation ODA ===")
     print("Nomenclatures traitées : %d" % len(compiled))

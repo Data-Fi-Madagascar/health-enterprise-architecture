@@ -19,6 +19,7 @@ versionné, source de vérité des contrats API).
 Usage :
     python3 scripts/compilers/compile_openapi.py               # génère 03_ptisn/schemas/openapi/
     python3 scripts/compilers/compile_openapi.py --validate    # valide les 19 specs
+    python3 scripts/compilers/compile_openapi.py --check       # vérifie sans écrire
     python3 scripts/compilers/compile_openapi.py --output /tmp/...   # répertoire custom
 """
 
@@ -28,6 +29,7 @@ import json
 import os
 import re
 import sys
+import tempfile
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 OPENAPI_VERSION = "3.0.3"
@@ -1358,6 +1360,22 @@ def validate_openapi_specs(output_dir):
     return count, errors
 
 
+def compare_compiled_files(compiled, generated_root, expected_root):
+    """Compare les specs générées dans un répertoire temporaire aux artefacts."""
+    diffs = []
+    for generated_path in compiled:
+        rel = os.path.relpath(generated_path, generated_root)
+        expected_path = os.path.join(expected_root, rel)
+        label = os.path.relpath(expected_path, REPO_ROOT)
+        if not os.path.exists(expected_path):
+            diffs.append("+ %s" % label)
+            continue
+        with open(generated_path, "rb") as gf, open(expected_path, "rb") as ef:
+            if gf.read() != ef.read():
+                diffs.append("M %s" % label)
+    return diffs
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Compile les profils techniques HEA en OpenAPI 3.0")
@@ -1365,9 +1383,31 @@ def main():
                         help="Répertoire de sortie (défaut: 03_ptisn/schemas/openapi/)")
     parser.add_argument("--validate", action="store_true",
                         help="Valider les specs après compilation")
+    parser.add_argument("--check", action="store_true",
+                        help="Vérifier sans écrire que les specs générées sont à jour")
     args = parser.parse_args()
 
     output_dir = args.output or os.path.join(REPO_ROOT, "03_ptisn", "schemas", "openapi")
+
+    if args.check:
+        with tempfile.TemporaryDirectory(prefix="hea-openapi-check-") as tmp:
+            os.makedirs(tmp, exist_ok=True)
+            compiled = compile_openapi_specs(tmp)
+            count, errors = validate_openapi_specs(tmp)
+            if errors:
+                print("\n[ERREUR] %d erreurs de validation :" % len(errors))
+                for filepath, err in errors[:20]:
+                    print("  - %s : %s" % (os.path.relpath(filepath, tmp), err))
+                sys.exit(1)
+            diffs = compare_compiled_files(compiled, tmp, output_dir)
+            if diffs:
+                print("Artefacts OpenAPI obsolètes :")
+                for diff in diffs:
+                    print("  %s" % diff)
+                sys.exit(1)
+            print("[OK] %d spécifications OpenAPI à jour." % count)
+            return 0
+
     os.makedirs(output_dir, exist_ok=True)
 
     compiled = compile_openapi_specs(output_dir)

@@ -85,7 +85,7 @@ tags: ["cnisn", "autorite", "donnees-de-reference"]
 | `type` | oui | Type d’objet (tableau ci-dessus) |
 | `niveau` | oui | Niveau de référence source |
 | `title` | oui | Titre canonique de l’objet |
-| `status` | oui | `draft`, `active`, `deprecated` ou `candidate` |
+| `status` | oui | `draft`, `active`, `stable`, `candidate` ou `deprecated` |
 | `owner` | oui | Responsable / entité de gouvernance |
 | `version` | non | Version héritée du document source |
 | `source` | oui | Chemin du document d’origine pré-refactor |

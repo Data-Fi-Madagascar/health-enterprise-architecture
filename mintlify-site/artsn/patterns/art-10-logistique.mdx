@@ -1,0 +1,58 @@
+---
+title: "Logistique"
+description: "Niveau 3 — Standards techniques, solutions et règles d'homologation"
+owner: "DEPSI"
+version: "1.0.0"
+status: "draft"
+last_reviewed: "2026-08-12"
+---
+
+## Pour qui lire ce document
+
+**Niveau :** niveau 3 : Architecture de Référence Technique de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ◐ |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ◐ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
+
+
+ART-10 : Logistique constitue un chapitre du **cadre normatif opposable** de l'ARTSN (règles d'or et contrats techniques d'interfaces obligatoires). Le texte de référence vit dans le référentiel : `ART-10`.
+
+<!-- BEGIN:GENERATED -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
+
+**Statut : candidate**
+
+**Contenu normatif.** La continuité de la chaîne d'approvisionnement (médicaments, vaccins, intrants, équipements) conditionne l'exécution des flux de valeur de soins. L'architecture impose une traçabilité de bout en bout des mouvements de produits, de la centrale d'achat jusqu'au point de service : chaque mouvement (livraison, dispensation, transfert, destruction) est un événement immuable, horodaté, adossé aux référentiels de produits, et réconcilié selon les règles comptables de conservation de quantité (Entrées − Sorties = Solde).
+
+**Discipline de mise en œuvre.** Dès qu'une source échappe à la gouvernance directe de l'initiative (centres de stockage isolés, ruptures de connectivité, circuits parallèles de distribution), cette discipline seule permet de garantir la disponibilité des intrants et la réconciliation à somme nulle des stocks sans rompre le pipeline.
+
+- **Rattachement** : CAP-10: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement (chaîne d'approvisionnement), CAP-11: Gestion des infrastructures, équipements et maintenance (infrastructures et équipements).
+- **Modèles cibles** : événementisation des mouvements de stock, registres logistiques (ex. OpenLMIS), traçabilité par lot.
+- **Déduit selon** : ENF-2: Intégrité des flux et traçabilité des valeurs (traçabilité des valeurs).
+- **Statut : Provisoire.**
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- PT-17 : Logistique & chaîne d'approvisionnement (LMIS)
+
+<!-- END:GENERATED -->
+## Liens
+
+- Index des chapitres
+- Exigences contextuelles : Partie III
+
+## Références
+
+- **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **`ART-10`** : Logistique (`referentiel/chapitres/art-10.md`)
+- **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
+- **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

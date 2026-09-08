@@ -12,6 +12,7 @@ DO, mais uniquement nomenclatures et terminologies FHIR.
 Usage :
     python3 scripts/compilers/compile_jsonschema.py              # génère 03_ptisn/schemas/payloads/
     python3 scripts/compilers/compile_jsonschema.py --validate   # valide les schémas
+    python3 scripts/compilers/compile_jsonschema.py --check      # vérifie sans écrire
     python3 scripts/compilers/compile_jsonschema.py --output /tmp/...  # répertoire custom
 """
 
@@ -21,6 +22,7 @@ import json
 import os
 import re
 import sys
+import tempfile
 
 try:
     import yaml
@@ -441,6 +443,37 @@ def validate_schemas(output_dir):
     return count, errors
 
 
+def compare_compiled_files(compiled, generated_root, expected_root):
+    """Compare les fichiers générés dans un répertoire temporaire aux artefacts."""
+    diffs = []
+    for generated_path in compiled:
+        rel = os.path.relpath(generated_path, generated_root)
+        expected_path = os.path.join(expected_root, rel)
+        label = os.path.relpath(expected_path, REPO_ROOT)
+        if not os.path.exists(expected_path):
+            diffs.append("+ %s" % label)
+            continue
+        with open(generated_path, "rb") as gf, open(expected_path, "rb") as ef:
+            if gf.read() != ef.read():
+                diffs.append("M %s" % label)
+    return diffs
+
+
+def compile_all(output_dir):
+    os.makedirs(output_dir, exist_ok=True)
+
+    objects = collect_do_objects()
+    if not objects:
+        print("[ERREUR] Aucun objet de données trouvé dans referentiel/objets-de-donnees/")
+        sys.exit(1)
+
+    compiled = []
+    for obj, body, fhir_block in objects:
+        filepath = compile_do(obj, body, output_dir, fhir_block=fhir_block)
+        compiled.append(filepath)
+    return compiled
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Compile les objets de données HEA en JSON Schema vDraft-07")
@@ -448,22 +481,31 @@ def main():
                         help="Répertoire de sortie (défaut: 03_ptisn/schemas/payloads/)")
     parser.add_argument("--validate", action="store_true",
                         help="Valider les schémas après compilation")
+    parser.add_argument("--check", action="store_true",
+                        help="Vérifier sans écrire que les schémas générés sont à jour")
     args = parser.parse_args()
 
     output_dir = args.output or os.path.join(REPO_ROOT, "03_ptisn", "schemas", "payloads")
-    os.makedirs(output_dir, exist_ok=True)
 
-    # Collecter les objets
-    objects = collect_do_objects()
-    if not objects:
-        print("[ERREUR] Aucun objet de données trouvé dans referentiel/objets-de-donnees/")
-        sys.exit(1)
+    if args.check:
+        with tempfile.TemporaryDirectory(prefix="hea-jsonschema-check-") as tmp:
+            compiled = compile_all(tmp)
+            count, errors = validate_schemas(tmp)
+            if errors:
+                print("\n[ERREUR] %d erreurs de validation :" % len(errors))
+                for filepath, err in errors[:10]:
+                    print("  - %s : %s" % (os.path.relpath(filepath, tmp), err))
+                sys.exit(1)
+            diffs = compare_compiled_files(compiled, tmp, output_dir)
+            if diffs:
+                print("Artefacts JSON Schema obsolètes :")
+                for diff in diffs:
+                    print("  %s" % diff)
+                sys.exit(1)
+            print("[OK] %d schémas JSON Schema à jour." % count)
+            return 0
 
-    # Compiler chaque objet
-    compiled = []
-    for obj, body, fhir_block in objects:
-        filepath = compile_do(obj, body, output_dir, fhir_block=fhir_block)
-        compiled.append(filepath)
+    compiled = compile_all(output_dir)
 
     print("=== Compilation JSON Schema ===")
     print("Objets traités : %d" % len(compiled))

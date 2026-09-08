@@ -55,9 +55,49 @@ Certains axes génèrent directement un flux de valeur pour la population ; d'au
 | AXE-08 | Santé communautaire                                        | Canal et capabilité transversale de proximité           |
 
 Les quatre axes de la SNSD (gouvernance digitale, solutions, ressources, financement) sont lus comme des capabilités numériques transversales qui servent les flux de valeur santé sans en constituer eux-mêmes.
+## Socle théorique : la trilogie HEAL, HEAF, HEART
+
+Le cadre repose sur trois référentiels méthodologiques de l'OMS/WHO Digital Health qui constituent son socle théorique. Issus d'une recherche universitaire africaine, ils définissent *pourquoi* et *comment* structurer un système d'information sanitaire national avant d'en prescrire les composantes techniques. Ils sont complétés par les référentiels d'implémentation présentés plus loin (DPI-H, OpenHIE, GovStack).
+
+### HEAL (Health Enterprise Architecture Laboratory)
+
+Le **HEAL** est un laboratoire de recherche établi au sein de la School of Computer Science de l'Université de KwaZulu-Natal (UKZN, Durban, Afrique du Sud), co-financé par la Fondation Rockefeller et le CRDI. Hébergé au CAIR (Centre for Artificial Intelligence Research), il combine des expertises avancées en représentation des connaissances et raisonnement (KR&R) et en ontologies. Son triple mandat couvre la recherche appliquée (architectures de santé ouvertes pour pays à ressources limitées), un espace neutre d'innovation et le renforcement des capacités locales (formation MSc/PhD d'architectes de santé pour la souveraineté technologique).
+
+Le HEAL fonctionne en **cycle d'innovation bidirectionnel** : les besoins réels de partenaires d'implémentation de terrain (Jembi Health Systems, Rwanda, Mozambique, Afrique du Sud) alimentent la recherche, dont les résultats sont réinjectés en principes d'architecture génériques dans les programmes nationaux.
+
+### HEAF (Health Enterprise Architecture Framework)
+
+Le **HEAF** est une méthodologie et un ensemble de principes de modélisation développés par le HEAL pour structurer les Systèmes d'Information Sanitaires nationaux (NHIS) en contextes à ressources limitées. Il ne réinvente pas les cadres d'architecture d'entreprise mais les simplifie et les adapte, en synthétisant le GCM (Generic Component Model), le Framework de Zachman, le FEAF, le cadre TOGAF, le cadre de suivi de l'OMS/HMN et le framework d'interopérabilité sémantique HIS-DF.
+
+Trois caractéristiques clés le distinguent :
+
+| Caractéristique | Description | Traduction HEA |
+|-----------------|-------------|----------------|
+| **Légèreté et modularité** | Implémentation verticale rapide (paludisme, VIH) puis intégration au SIS national sans restructuration lourde | Capabilités et profils PTISN évolutifs |
+| **Modes hybrides** | Gestion native de la connectivité intermittente ou absente et de la coexistence papier/numérique | Principes de flexibilité PA-04 et de souveraineté PA-05 |
+| **Approche pilotée par les ontologies** | Unification logique de toutes les couches par des ontologies de domaine | Ontologie `ontologie/hea.ttl` + shapes SHACL + pipeline graphify |
+
+### HEART (Health Enterprise Architecture Repository of Tools)
+
+Le **HEART** est le catalogue d'artefacts et le registre d'outils opérationnels conçu pour matérialiser les principes du HEAF en composants technologiques réutilisables. Il combat le développement redondant en silos en favorisant le partage, la comparaison et la réutilisation des actifs d'architecture entre pays et projets.
+
+Il répertorie quatre types de ressources : les outils logiciels « biens publics mondiaux » (OpenMRS, DHIS2), les patrons d'architecture, les standards et profils d'échange (HL7 FHIR, IHE mCSD, IHE SVCM, IHE mADX, SDMX-HD) et les politiques, règles et contraintes.
+
+Son cœur technique est l'architecture pilotée par les ontologies (**ODIS**) : le modèle de l'information dynamique et « en ligne » permet de reconfigurer à l'exécution la validation de codes, le routage des données et l'application des droits, en manipulant les structures ontologiques sans réécrire le code applicatif.
+
+### Articulation de la trilogie avec le cadre malagasy
+
+| Référentiel WHO | Rôle | Traduction dans ce dépôt |
+|-----------------|------|--------------------------|
+| HEAL | Recherche et renforcement des capacités | Collaboration continue universités / DEPSI / partenaires techniques |
+| HEAF | Framework et hiérarchie documentaire | Structure CAESN/CNISN/ARTSN, déclinaison des valeurs nationales en capabilités (Architecture Runway CAP-13..16) |
+| HEART | Dépôt d'artefacts réutilisables | Registre des profils techniques (PTISN) + compilateurs de métadonnées sémantiques (compile_rdf.py, yaml_to_fhir.py) |
+
+Cette observation fonde la démarche « as code » du dépôt : l'esprit ODIS du HEART se matérialise par la génération automatique des règles de validation et des terminologies de production directement depuis la source unique de vérité GitHub, conformément à l'approche ontology-driven du HEAF.
+
 ## Référentiels normatifs internationaux
 
-Trois référentiels internationaux opèrent à des niveaux différents et complémentaires. Ils définissent des principes et modèles d'organisation, sans prescrire de logiciels. Ensemble, ils forment un cadre de référence pour l'architecture numérique santé que Madagascar adapte à son contexte.
+Trois référentiels internationaux opèrent à des niveaux différents et complémentaires. Ils définissent des principes et modèles d'organisation, sans prescrire de logiciels. Ensemble, ils forment un cadre de référence pour l'architecture numérique santé que Madagascar adapte à son contexte. Là où la trilogie HEAL/HEAF/HEART justifie la démarche d'architecture, ces référentiels en fournissent le contenu opérationnel.
 ### Infrastructure Numérique de Données pour la Santé (DPI-H) : OMS/ITU
 
 Le cadre **Digital Public Infrastructure for Health (DPI-H)** est une initiative conjointe de l'OMS et de l'ITU dans le cadre du Global Initiative on Digital Health (GIDH). Il définit l'infrastructure numérique que tout système de santé national doit développer comme **bien commun**, en distinguant deux niveaux :
@@ -72,7 +112,7 @@ Le cadre **Digital Public Infrastructure for Health (DPI-H)** est une initiative
 | Registre des formations sanitaires (Facility Registry) | Identifier les lieux de soins | Référentiel de structures |
 | Registre des professionnels de santé (Health Worker Registry) | Identifier les prestataires | Référentiel de professionnels |
 | Couche d'échange (Interoperability Layer) | Router et transformer les messages | Couche d'échange et médiation |
-| Service de terminologie | Codes et classifications communs | STD-0006 (CIM-10 + LOINC), STD-0007 (SNOMED CT) |
+| Service de terminologie | Codes et classifications communs | STD-0006 (CIM-11 + LOINC), STD-0007 (SNOMED CT) |
 | Dossier partagé (Shared Health Record) | Repository longitudinal patient | Dossier patient partagé |
 | Système de gestion de l'information sanitaire (HMIS) | Données agrégées et tableaux de bord | Système d'information sanitaire |
 | Gestion logistique (LMIS) | Visibilité sur les produits de santé | Gestion logistique |
@@ -139,7 +179,7 @@ L'approche GovStack par **API ouvertes** et **conteneurs** permet l'interopérab
 | *Comment relier à l'État ?* | DPI-F → DPI-H | : | Blocs transversaux → services sectoriels |
 | *Quels standards ?* | FHIR R4, SMART Guidelines | IHE, HL7 | API ouvertes, conteneurs |
 
-L'HEA utilise les trois référentiels de manière complémentaire : le DPI-H définit les composantes nécessaires, OpenHIE fournit le patron d'architecture, et GovStack offer les spécifications techniques pour l'intégration dans l'État numérique malgache.
+L'HEA utilise les trois référentiels de manière complémentaire : le DPI-H définit les composantes nécessaires, OpenHIE fournit le patron d'architecture, et GovStack offre les spécifications techniques pour l'intégration dans l'État numérique malgache.
 
 ## Technologies émergentes
 
@@ -174,6 +214,7 @@ L'intégration de ces technologies fait l'objet d'une veille architecturale perm
 - **GovStack Implementation Playbook** : Initiative mondiale (`https://specs.govstack.global/`)
 - **Fondement légal** : Fondement légal et cadre législatif (`00_caesn/07_governance/fondement-legal.md`)
 - **GDHM** : Global Digital Health Monitor, OMS (`https://www.who.int/teams/digital-health`)
+- **HEAL/HEAF/HEART** : Trilogie HEAL, HEAF, HEART - Health Enterprise Architecture (HEA), University of KwaZulu-Natal (UKZN), HEAL/CAIR (fascicules 286-322) - socle théorique du cadre (§Socle théorique)
 
 ## Documents de la section
 

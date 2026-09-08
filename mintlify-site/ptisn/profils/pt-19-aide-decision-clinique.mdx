@@ -48,7 +48,7 @@ R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
 - **FHIR `PlanDefinition` / `ActivityDefinition`** : règles de décision, ordonnances informatisées, guides de pratique.
 - **CDS Hooks** : ancrage contextuel de la recommandation dans l’application de point de service.
-- **Liaison terminologique** : CIM-10 + LOINC (STD-0006), SNOMED CT (STD-0007).
+- **Liaison terminologique** : CIM-11 + LOINC (STD-0006), SNOMED CT (STD-0007).
 
 ## 7. Options
 
@@ -75,7 +75,7 @@ Le profil expose une aide à la décision clinique comme service de connaissance
 |-----------------|-------------------|
 | Règle de décision | HL7 FHIR Clinical Reasoning (`PlanDefinition`, `ActivityDefinition`) |
 | Ancrage contextuel | HL7 CDS Hooks |
-| Terminologie | CIM-10 + LOINC (STD-0006), SNOMED CT (STD-0007) |
+| Terminologie | CIM-11 + LOINC (STD-0006), SNOMED CT (STD-0007) |
 | Invocation | FHIR R4 (STD-0001) |
 
 *Référence — normes et standards CNISN : [01_cnisn/05_standards](/cnisn/standards/index).
@@ -100,3 +100,7 @@ Aucun produit national n’est encore retenu (**statut : à instruire**). Les ar
 Produit national à instruire. Dépendance : terminologie nationale (PT-07), répertoire de données cliniques (CMP-08), et composant d’invocation CDS Hooks / FHIR Clinical Reasoning.
 
 <!-- END:GENERATED -->
+
+## Références au cadre
+
+- **ARTSN — lots consommateurs** : [L1 — Infrastructure & sécurité](/artsn/lots/index), [L2 — Applications terrain](/artsn/lots/index), [L4 — Analytique & pilotage](/artsn/lots/index)
