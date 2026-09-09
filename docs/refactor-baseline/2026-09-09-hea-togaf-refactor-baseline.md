@@ -1,3 +1,14 @@
+---
+domain: refactor-baseline
+id: hea-togaf-refactor-baseline-2026-09-09
+title: Baseline du refactor TOGAF HEA
+version: "1.0"
+status: stable
+last_reviewed: 2026-09-09
+owner: DEPSI
+tags: ["hea", "togaf", "baseline", "refactor"]
+---
+
 # Baseline du refactor TOGAF HEA
 
 ## Contexte
