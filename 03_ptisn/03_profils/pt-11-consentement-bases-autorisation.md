@@ -23,14 +23,14 @@ Périmètre : enregistrement, consultation, retrait et vérification du consente
 
 ## 2. Capacité CNISN
 
-[CAP-INT-09: Gestion des consentements et bases d’autorisation](../../referentiel/capacites/cap-int-09.md)
+[CAP-INT-09: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/capacites/cap-int-09.md)
 
 ## 3. Chapitres ART applicables
 
-- [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md) ;
+- [ART-0: Accords de partage inter-institutionnels](../../04_architecture-repository/chapitres/art-0.md) ;
 - ART-4B ;
-- [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../referentiel/chapitres/art-7.md) ;
-- [ART-11: Coordination intersectorielle](../../referentiel/chapitres/art-11.md).
+- [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../04_architecture-repository/chapitres/art-7.md) ;
+- [ART-11: Coordination intersectorielle](../../04_architecture-repository/chapitres/art-11.md).
 
 ## 4. Acteurs (Actors)
 
@@ -38,7 +38,7 @@ Périmètre : enregistrement, consultation, retrait et vérification du consente
 - **Registre de consentement (Consent Registry)** — enregistre, conserve et retire les consentements et politiques.
 - **Vérificateur d’accès (Access Verifier)** — interroge le registre au moment de l’accès pour décider l’autorisation.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-09](../../referentiel/capacites/cap-int-09.md).
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-09](../../04_architecture-repository/capacites/cap-int-09.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -50,7 +50,7 @@ Périmètre : enregistrement, consultation, retrait et vérification du consente
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-09](../../referentiel/capacites/cap-int-09.md).
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-09](../../04_architecture-repository/capacites/cap-int-09.md).
 ## 6. Content Modules
 
 - **HL7 FHIR `Consent`** : finalités, destinataires, périodes, politique, base légale.
@@ -84,9 +84,9 @@ Conformité attestée par l’enregistrement, la consultation, le retrait et la 
 
 ## 12. Articulation avec les autres profils
 
-- [PT-04: résolution d’identité bénéficiaire](../../referentiel/profils/pt-04.md)
-- [PT-10: confiance, authentification, autorisation](../../referentiel/profils/pt-10.md)
-- [PT-01: échange interinstitutionnel](../../referentiel/profils/pt-01.md)
+- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/profils/pt-04.md)
+- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/profils/pt-10.md)
+- [PT-01: échange interinstitutionnel](../../04_architecture-repository/profils/pt-01.md)
 
 Le consentement est vérifié au moment de l’accès, en complément de l’autorisation fonctionnelle (PT-10).
 

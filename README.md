@@ -39,7 +39,7 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 | 2 | [`01_cnisn/`](./01_cnisn/) | Cadre National d'Interopérabilité de la Santé Numérique : principes, capacités, gouvernance, standards, décisions | DEPSI, architectes, intégrateurs |
 | 3 | [`02_artsn/`](./02_artsn/) | Architecture de Référence Technique de la Santé Numérique : patterns, contrats, contraintes | DEPSI, architectes, intégrateurs |
 | 4 | [`03_ptisn/`](./03_ptisn/) | Profils techniques d'implémentation par initiative : API, contrats d'interfaces, configurations (découle de l'UGD) | Développeurs, fournisseurs, équipes techniques |
-| — | [`referentiel/`](./referentiel/) | Source de vérité : fondations, principes, capacités, chapitres, composants, profils | Machine, scripts de génération |
+| — | [`04_architecture-repository/`](./04_architecture-repository/) | Source de vérité : fondations, principes, capacités, chapitres, composants, profils | Machine, scripts de génération |
 
 ### Niveau 1 — `00_caesn/` (CAESN)
 
@@ -105,21 +105,21 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 
 | Type | Chemin | Contenu |
 |------|--------|---------|
-| Fondations | [`referentiel/fondations/`](./referentiel/fondations/) | Fondations F |
-| Principes | [`referentiel/principes/`](./referentiel/principes/) | Principes transversaux et de domaine |
-| Capacités | [`referentiel/capacites/`](./referentiel/capacites/) | Capacités CNISN CAP-INT |
-| Chapitres | [`referentiel/chapitres/`](./referentiel/chapitres/) | Chapitres ARTSN ART |
-| Composants | [`referentiel/composants/`](./referentiel/composants/) | Composants applicatifs, infrastructure, sécurité et gouvernance |
-| Profils | [`referentiel/profils/`](./referentiel/profils/) | Profils PT-01..19 |
-| Objets métier | [`referentiel/objets-metier/`](./referentiel/objets-metier/) | Objets métier BO |
-| Objets de données | [`referentiel/objets-de-donnees/`](./referentiel/objets-de-donnees/) | Objets de données DO |
-| Services | [`referentiel/services/`](./referentiel/services/) | Services applicatifs SRV |
-| Processus | [`referentiel/processus/`](./referentiel/processus/) | Processus métier PRC |
-| Work packages | [`referentiel/work-packages/`](./referentiel/work-packages/) | Lots de mise en œuvre WP |
-| Plateaux | [`referentiel/plateaux/`](./referentiel/plateaux/) | Plateaux de trajectoire |
-| Gaps | [`referentiel/gaps/`](./referentiel/gaps/) | Écarts de trajectoire |
-| Flux de valeur | [`referentiel/flux-valeur/`](./referentiel/flux-valeur/) | VS-01..04 |
-| Étapes de valeur | [`referentiel/etapes-valeur/`](./referentiel/etapes-valeur/) | Étapes opérationnelles |
+| Fondations | [`04_architecture-repository/fondations/`](./04_architecture-repository/fondations/) | Fondations F |
+| Principes | [`04_architecture-repository/principes/`](./04_architecture-repository/principes/) | Principes transversaux et de domaine |
+| Capacités | [`04_architecture-repository/capacites/`](./04_architecture-repository/capacites/) | Capacités CNISN CAP-INT |
+| Chapitres | [`04_architecture-repository/chapitres/`](./04_architecture-repository/chapitres/) | Chapitres ARTSN ART |
+| Composants | [`04_architecture-repository/composants/`](./04_architecture-repository/composants/) | Composants applicatifs, infrastructure, sécurité et gouvernance |
+| Profils | [`04_architecture-repository/profils/`](./04_architecture-repository/profils/) | Profils PT-01..19 |
+| Objets métier | [`04_architecture-repository/objets-metier/`](./04_architecture-repository/objets-metier/) | Objets métier BO |
+| Objets de données | [`04_architecture-repository/objets-de-donnees/`](./04_architecture-repository/objets-de-donnees/) | Objets de données DO |
+| Services | [`04_architecture-repository/services/`](./04_architecture-repository/services/) | Services applicatifs SRV |
+| Processus | [`04_architecture-repository/processus/`](./04_architecture-repository/processus/) | Processus métier PRC |
+| Work packages | [`04_architecture-repository/work-packages/`](./04_architecture-repository/work-packages/) | Lots de mise en œuvre WP |
+| Plateaux | [`04_architecture-repository/plateaux/`](./04_architecture-repository/plateaux/) | Plateaux de trajectoire |
+| Gaps | [`04_architecture-repository/gaps/`](./04_architecture-repository/gaps/) | Écarts de trajectoire |
+| Flux de valeur | [`04_architecture-repository/flux-valeur/`](./04_architecture-repository/flux-valeur/) | VS-01..04 |
+| Étapes de valeur | [`04_architecture-repository/etapes-valeur/`](./04_architecture-repository/etapes-valeur/) | Étapes opérationnelles |
 
 ## Outils de gouvernance
 

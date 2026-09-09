@@ -23,13 +23,13 @@ Périmètre : validation des contrats, qualité des données, réconciliation, g
 
 ## 2. Capacité CNISN
 
-- [CAP-INT-11: Qualité et réconciliation](../../referentiel/capacites/cap-int-11.md)
+- [CAP-INT-11: Qualité et réconciliation](../../04_architecture-repository/capacites/cap-int-11.md)
 
 ## 3. Chapitres ART applicables
 
-- [ART-4: Référentiels de métadonnées de gestion](../../referentiel/chapitres/art-4.md)
-- [ART-5: Cohérence et qualité des données](../../referentiel/chapitres/art-5.md)
-- [ART-6: Analytique et restitution](../../referentiel/chapitres/art-6.md)
+- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/chapitres/art-4.md)
+- [ART-5: Cohérence et qualité des données](../../04_architecture-repository/chapitres/art-5.md)
+- [ART-6: Analytique et restitution](../../04_architecture-repository/chapitres/art-6.md)
 
 ## 4. Acteurs (Actors)
 
@@ -38,7 +38,7 @@ Périmètre : validation des contrats, qualité des données, réconciliation, g
 - **Service de réconciliation (Reconciliation Service)** — compare sources, référentiels et projections.
 - **Gestionnaire d’anomalies (Anomaly Manager)** — traite et documente les écarts détectés.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-11](../../referentiel/capacites/cap-int-11.md).
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-11](../../04_architecture-repository/capacites/cap-int-11.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -49,7 +49,7 @@ Périmètre : validation des contrats, qualité des données, réconciliation, g
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-11](../../referentiel/capacites/cap-int-11.md).
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-11](../../04_architecture-repository/capacites/cap-int-11.md).
 ## 6. Content Modules
 
 - **Rapport de test de contrat** : structure, terminologie, identifiants, métadonnées, cardinalités, valeurs obligatoires, compatibilité de version, droits d’émission, cohérence métier.
@@ -102,9 +102,9 @@ Conformité attestée par des tests de contrôle exécutés par interface, la pu
 
 ## 12. Articulation avec les autres profils
 
-- [PT-03: catalogue des services et registre des contrats](../../referentiel/profils/pt-03.md)
-- [PT-09: analytique et exposition de données](../../referentiel/profils/pt-09.md)
-- [PT-08: échange de données agrégées](../../referentiel/profils/pt-08.md)
+- [PT-03: catalogue des services et registre des contrats](../../04_architecture-repository/profils/pt-03.md)
+- [PT-09: analytique et exposition de données](../../04_architecture-repository/profils/pt-09.md)
+- [PT-08: échange de données agrégées](../../04_architecture-repository/profils/pt-08.md)
 
 ## 13. Limites et dépendances
 

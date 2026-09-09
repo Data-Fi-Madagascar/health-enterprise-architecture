@@ -448,7 +448,7 @@
     "ART-9"
   ],
   "x-hea-applies-to": [],
-  "x-hea-source": "referentiel/profils/pt-18.md",
+  "x-hea-source": "04_architecture-repository/profils/pt-18.md",
   "x-hea-fhir-resources": [
     "Claim",
     "ClaimResponse",
@@ -461,5 +461,5 @@
     "DO-16",
     "DO-17"
   ],
-  "x-hea-file": "referentiel/profils/pt-18.md"
+  "x-hea-file": "04_architecture-repository/profils/pt-18.md"
 }

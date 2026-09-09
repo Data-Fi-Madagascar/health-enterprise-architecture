@@ -40,14 +40,14 @@ ART-4D : Référentiel géospatial et d'exploitation partagé constitue un chapi
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (bases de données météorologiques, registres de suivi des cheptels d’élevage), cette discipline seule permet de corréler des indicateurs environnementaux et cliniques sans jamais interconnecter les identités humaines, garantissant l’étanchéité One Health sans rompre le pipeline.
 
 - **Rattachement** : capacité candidate « Surveillance spatio-temporelle ».
-- **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (cloisonnement inter-institutionnel).
+- **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../04_architecture-repository/exigences/enf-4.md) (cloisonnement inter-institutionnel).
 - **Statut : Proposition ouverte.**
 
 ## Profils PTISN qui implémentent ce chapitre
 
 Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
 
-- [PT-15 : Surveillance One Health](../../referentiel/profils/pt-15.md)
+- [PT-15 : Surveillance One Health](../../04_architecture-repository/profils/pt-15.md)
 
 <!-- END:GENERATED -->
 ## Liens
@@ -58,6 +58,6 @@ Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre 
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`ART-4D`** : Référentiel géospatial et d'exploitation partagé (`referentiel/chapitres/art-4d.md`)
+- **`ART-4D`** : Référentiel géospatial et d'exploitation partagé (`04_architecture-repository/chapitres/art-4d.md`)
 - **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

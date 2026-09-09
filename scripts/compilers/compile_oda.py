@@ -27,7 +27,7 @@ except ImportError:
     yaml = None
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-ARCH_REPOSITORY_DIR = "referentiel"
+ARCH_REPOSITORY_DIR = "04_architecture-repository"
 ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
 HEA_NS = "https://healmadagascar.mg"
 FHIR_NS = "%s/fhir" % HEA_NS
@@ -406,7 +406,7 @@ def main():
         print("[AVERTISSEMENT] Aucune nomenclature trouvée.")
         print("Usage : placez des fichiers .md avec type: nomenclature dans")
         print("  02_artsn/03_objets-de-donnees/nomenclatures/ ou")
-        print("  referentiel/nomenclatures/")
+        print("  04_architecture-repository/nomenclatures/")
         sys.exit(0)
 
     # Filtrer si une nomenclature spécifique est demandée

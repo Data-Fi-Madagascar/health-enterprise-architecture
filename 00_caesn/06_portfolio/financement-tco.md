@@ -39,7 +39,7 @@ TCO = CapEx + Σ(OpEx_année) − Valeur_résiduelle, le tout actualisé (taux d
 
 | Composante | Nature | Périodicité | Contenu |
 |------------|--------|-------------|---------|
-| **CapEx** (investissement) | Unique | À l'amorçage | Serveurs, licences, connexions, hébergement souverain ([ART-7](../../referentiel/chapitres/art-7.md)), équipements |
+| **CapEx** (investissement) | Unique | À l'amorçage | Serveurs, licences, connexions, hébergement souverain ([ART-7](../../04_architecture-repository/chapitres/art-7.md)), équipements |
 | **OpEx** (exploitation) | Récurrente | Annuelle | Maintenance, connectivité, licences récurrentes ([STD-0007 SNOMED CT](../../01_cnisn/05_standards/std-0007-snomed-ct.md)), hébergement, support |
 | **Hommes** | Récurrente | Annuelle | Formation, certification et rémunération du [workforce numérique](../03_capabilities/workforce-sante-numerique.md) |
 | **Conduite de changement** | Mixte | Par phase | Gestion du changement, accompagnement métier, conduite de bénéfices, communication |

@@ -1,6 +1,6 @@
-# Registre des objets du référentiel
+# Registre des objets 04_architecture-repository
 # Fichier généré par scripts/build_ref_index.py. Ne pas éditer à la main.
-# Source de vérité : frontmatter Markdown sous referentiel/.
+# Source de vérité : frontmatter Markdown sous 04_architecture-repository/.
 # Champs : id, type, niveau, chemin, status, title.
 # Statuts : draft | active | stable | candidate | deprecated
 # Total : 338 objets

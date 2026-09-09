@@ -135,8 +135,8 @@
     "CMP-07",
     "CMP-06"
   ],
-  "x-hea-source": "referentiel/profils/pt-16.md",
+  "x-hea-source": "04_architecture-repository/profils/pt-16.md",
   "x-hea-fhir-resources": [],
   "x-hea-data-objects": [],
-  "x-hea-file": "referentiel/profils/pt-16.md"
+  "x-hea-file": "04_architecture-repository/profils/pt-16.md"
 }

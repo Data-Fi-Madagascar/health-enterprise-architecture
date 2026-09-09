@@ -27,7 +27,7 @@ related: ["CAP-01", "CAP-02"]
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
-<!-- BEGIN:GENERATED mode=monographie source=referentiel/flux-valeur/vs-01.md -->
+<!-- BEGIN:GENERATED mode=monographie source=04_architecture-repository/flux-valeur/vs-01.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ## Valeur produite
@@ -36,11 +36,11 @@ Un patient ou usager reçoit des soins accessibles, continus, sûrs et de qualit
 
 ## Bénéficiaires principaux
 
-- [PP-01: Patient et usager](../../referentiel/parties-prenantes/pp-01.md)
-- [PP-02: Ménage et famille](../../referentiel/parties-prenantes/pp-02.md)
-- [PP-04: Communauté](../../referentiel/parties-prenantes/pp-04.md)
-- [PP-05: Agent de santé](../../referentiel/parties-prenantes/pp-05.md)
-- [PP-06: Formation sanitaire](../../referentiel/parties-prenantes/pp-06.md)
+- [PP-01: Patient et usager](../../04_architecture-repository/parties-prenantes/pp-01.md)
+- [PP-02: Ménage et famille](../../04_architecture-repository/parties-prenantes/pp-02.md)
+- [PP-04: Communauté](../../04_architecture-repository/parties-prenantes/pp-04.md)
+- [PP-05: Agent de santé](../../04_architecture-repository/parties-prenantes/pp-05.md)
+- [PP-06: Formation sanitaire](../../04_architecture-repository/parties-prenantes/pp-06.md)
 
 ## Description du flux
 
@@ -48,38 +48,38 @@ Ce flux couvre l’ensemble du parcours d’un patient, depuis la reconnaissance
 
 ## Étapes de valeur
 
-- [VS-01-01: Reconnaissance du besoin et orientation](../../referentiel/etapes-valeur/vs-01-01.md)
-- [VS-01-02: Accueil et enregistrement](../../referentiel/etapes-valeur/vs-01-02.md)
-- [VS-01-03: Consultation et diagnostic](../../referentiel/etapes-valeur/vs-01-03.md)
-- [VS-01-04: Traitement et prise en charge](../../referentiel/etapes-valeur/vs-01-04.md)
-- [VS-01-05: Référence et contre-référence](../../referentiel/etapes-valeur/vs-01-05.md)
-- [VS-01-06: Suivi et continuité des soins](../../referentiel/etapes-valeur/vs-01-06.md)
-- [VS-01-07: Amélioration de la qualité](../../referentiel/etapes-valeur/vs-01-07.md)
+- [VS-01-01: Reconnaissance du besoin et orientation](../../04_architecture-repository/etapes-valeur/vs-01-01.md)
+- [VS-01-02: Accueil et enregistrement](../../04_architecture-repository/etapes-valeur/vs-01-02.md)
+- [VS-01-03: Consultation et diagnostic](../../04_architecture-repository/etapes-valeur/vs-01-03.md)
+- [VS-01-04: Traitement et prise en charge](../../04_architecture-repository/etapes-valeur/vs-01-04.md)
+- [VS-01-05: Référence et contre-référence](../../04_architecture-repository/etapes-valeur/vs-01-05.md)
+- [VS-01-06: Suivi et continuité des soins](../../04_architecture-repository/etapes-valeur/vs-01-06.md)
+- [VS-01-07: Amélioration de la qualité](../../04_architecture-repository/etapes-valeur/vs-01-07.md)
 
 
 ## Capabilités mobilisées
 
-- [CAP-01: Offre de soins et continuité des services](../../referentiel/capabilites/cap-01.md)
-- [CAP-02: Gestion du parcours patient, référence et contre-référence](../../referentiel/capabilites/cap-02.md)
-- [CAP-03: Qualité, sécurité des soins et amélioration continue](../../referentiel/capabilites/cap-03.md)
-- [CAP-04: Santé communautaire et engagement des communautés](../../referentiel/capabilites/cap-04.md)
-- [CAP-09: Gestion des ressources humaines en santé](../../referentiel/capabilites/cap-09.md)
-- [CAP-10: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement](../../referentiel/capabilites/cap-10.md)
-- [CAP-11: Gestion des infrastructures, équipements et maintenance](../../referentiel/capabilites/cap-11.md)
-- [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md)
-- [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md)
-- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md)
+- [CAP-01: Offre de soins et continuité des services](../../04_architecture-repository/capabilites/cap-01.md)
+- [CAP-02: Gestion du parcours patient, référence et contre-référence](../../04_architecture-repository/capabilites/cap-02.md)
+- [CAP-03: Qualité, sécurité des soins et amélioration continue](../../04_architecture-repository/capabilites/cap-03.md)
+- [CAP-04: Santé communautaire et engagement des communautés](../../04_architecture-repository/capabilites/cap-04.md)
+- [CAP-09: Gestion des ressources humaines en santé](../../04_architecture-repository/capabilites/cap-09.md)
+- [CAP-10: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement](../../04_architecture-repository/capabilites/cap-10.md)
+- [CAP-11: Gestion des infrastructures, équipements et maintenance](../../04_architecture-repository/capabilites/cap-11.md)
+- [CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/capabilites/cap-13.md)
+- [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/capabilites/cap-14.md)
+- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/capabilites/cap-15.md)
 
 <!-- END:GENERATED -->
 
-<!-- BEGIN:GENERATED mode=catalogue source=referentiel/etapes-valeur/vs-01-01.md,referentiel/etapes-valeur/vs-01-02.md,referentiel/etapes-valeur/vs-01-03.md,referentiel/etapes-valeur/vs-01-04.md,referentiel/etapes-valeur/vs-01-05.md,referentiel/etapes-valeur/vs-01-06.md,referentiel/etapes-valeur/vs-01-07.md -->
+<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/etapes-valeur/vs-01-01.md,04_architecture-repository/etapes-valeur/vs-01-02.md,04_architecture-repository/etapes-valeur/vs-01-03.md,04_architecture-repository/etapes-valeur/vs-01-04.md,04_architecture-repository/etapes-valeur/vs-01-05.md,04_architecture-repository/etapes-valeur/vs-01-06.md,04_architecture-repository/etapes-valeur/vs-01-07.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### Reconnaissance du besoin et orientation
 
 #### Objectif
 
-Réaliser l'étape de valeur « Reconnaissance du besoin et orientation » du flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md).
+Réaliser l'étape de valeur « Reconnaissance du besoin et orientation » du flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../04_architecture-repository/flux-valeur/vs-01.md).
 
 #### Entrées
 
@@ -105,7 +105,7 @@ Taux de recours aux soins, délai moyen d'accès à une formation sanitaire
 
 #### Objectif
 
-Réaliser l'étape de valeur « Accueil et enregistrement » du flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md).
+Réaliser l'étape de valeur « Accueil et enregistrement » du flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../04_architecture-repository/flux-valeur/vs-01.md).
 
 #### Entrées
 
@@ -131,7 +131,7 @@ Taux de dossiers ouverts, délai d'enregistrement
 
 #### Objectif
 
-Réaliser l'étape de valeur « Consultation et diagnostic » du flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md).
+Réaliser l'étape de valeur « Consultation et diagnostic » du flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../04_architecture-repository/flux-valeur/vs-01.md).
 
 #### Entrées
 
@@ -157,7 +157,7 @@ Taux de consultations avec diagnostic documenté
 
 #### Objectif
 
-Réaliser l'étape de valeur « Traitement et prise en charge » du flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md).
+Réaliser l'étape de valeur « Traitement et prise en charge » du flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../04_architecture-repository/flux-valeur/vs-01.md).
 
 #### Entrées
 
@@ -183,7 +183,7 @@ Taux de disponibilité des médicaments traceurs
 
 #### Objectif
 
-Réaliser l'étape de valeur « Référence et contre-référence » du flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md).
+Réaliser l'étape de valeur « Référence et contre-référence » du flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../04_architecture-repository/flux-valeur/vs-01.md).
 
 #### Entrées
 
@@ -209,7 +209,7 @@ Taux de référence complétée avec retour d'information
 
 #### Objectif
 
-Réaliser l'étape de valeur « Suivi et continuité des soins » du flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md).
+Réaliser l'étape de valeur « Suivi et continuité des soins » du flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../04_architecture-repository/flux-valeur/vs-01.md).
 
 #### Entrées
 
@@ -235,7 +235,7 @@ Taux de patients perdus de vue, taux d'observance thérapeutique
 
 #### Objectif
 
-Réaliser l'étape de valeur « Amélioration de la qualité » du flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md).
+Réaliser l'étape de valeur « Amélioration de la qualité » du flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../04_architecture-repository/flux-valeur/vs-01.md).
 
 #### Entrées
 
@@ -260,7 +260,7 @@ Proportion de formations sanitaires ayant réalisé une revue qualité dans le m
 <!-- END:GENERATED -->
 ## Processus métier
 
-<!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-01.md,referentiel/processus/prc-02.md,referentiel/processus/prc-03.md -->
+<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/processus/prc-01.md,04_architecture-repository/processus/prc-02.md,04_architecture-repository/processus/prc-03.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### Accès, orientation et admission du patient
@@ -271,8 +271,8 @@ Assurer l'entrée du patient dans le système de soins : reconnaissance du beso
 
 #### Étapes couvertes
 
-- [VS-01-01: Reconnaissance du besoin et orientation](../../referentiel/etapes-valeur/vs-01-01.md)
-- [VS-01-02: Accueil et enregistrement](../../referentiel/etapes-valeur/vs-01-02.md)
+- [VS-01-01: Reconnaissance du besoin et orientation](../../04_architecture-repository/etapes-valeur/vs-01-01.md)
+- [VS-01-02: Accueil et enregistrement](../../04_architecture-repository/etapes-valeur/vs-01-02.md)
 
 #### Acteurs
 
@@ -290,9 +290,9 @@ Assurer le cœur clinique du parcours : consultation et diagnostic, traitement 
 
 #### Étapes couvertes
 
-- [VS-01-03: Consultation et diagnostic](../../referentiel/etapes-valeur/vs-01-03.md)
-- [VS-01-04: Traitement et prise en charge](../../referentiel/etapes-valeur/vs-01-04.md)
-- [VS-01-05: Référence et contre-référence](../../referentiel/etapes-valeur/vs-01-05.md)
+- [VS-01-03: Consultation et diagnostic](../../04_architecture-repository/etapes-valeur/vs-01-03.md)
+- [VS-01-04: Traitement et prise en charge](../../04_architecture-repository/etapes-valeur/vs-01-04.md)
+- [VS-01-05: Référence et contre-référence](../../04_architecture-repository/etapes-valeur/vs-01-05.md)
 
 #### Acteurs
 
@@ -310,8 +310,8 @@ Garantir la continuité des soins après l'épisode et l'amélioration continue 
 
 #### Étapes couvertes
 
-- [VS-01-06: Suivi et continuité des soins](../../referentiel/etapes-valeur/vs-01-06.md)
-- [VS-01-07: Amélioration de la qualité](../../referentiel/etapes-valeur/vs-01-07.md)
+- [VS-01-06: Suivi et continuité des soins](../../04_architecture-repository/etapes-valeur/vs-01-06.md)
+- [VS-01-07: Amélioration de la qualité](../../04_architecture-repository/etapes-valeur/vs-01-07.md)
 
 #### Acteurs
 

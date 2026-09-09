@@ -7,7 +7,7 @@
 #   make docx               # 5 DOCX dans dist/ (version 0.0.1 par défaut)
 #   make docx VERSION=1.2.3 # avec version précise
 #   make pdf                # 5 PDF dans dist/ (optionnel, nécessite LaTeX)
-#   make wrappers           # régénère les 101 enveloppes du référentiel
+#   make wrappers           # régénère les 101 enveloppes du dépôt d'architecture
 #   make rdf                # compilation RDF/OWL + validation SHACL
 #   make sync               # synchronisation bidirectionnelle RDF ↔ Graphify
 #   make check              # idempotence des enveloppes + 0 lien relatif cassé + RDF/SHACL
@@ -42,13 +42,13 @@ public:
 	@echo "==> Génération des 3 DOCX publics + HEA-public (version $(VERSION))"
 	$(PY) scripts/build_docx_public.py --version $(VERSION)
 
-# Transclusion des objets du référentiel dans les enveloppes publiées
+# Transclusion des objets du dépôt d'architecture dans les enveloppes publiées
 wrappers:
 	@echo "==> Régénération des enveloppes (transclusion des objets)"
 	$(PY) scripts/build_wrappers.py
 
 ref-index:
-	@echo "==> Régénération de referentiel/_index.yaml"
+	@echo "==> Régénération de 04_architecture-repository/_index.yaml"
 	$(PY) scripts/build_ref_index.py
 
 # Garde-fou : enveloppes à jour (A1/A4) + 0 lien relatif cassé (A2) + graphe de
@@ -75,7 +75,7 @@ check:
 clean:
 	rm -rf dist
 
-# Compilation RDF : transforme le référentiel YAML/Markdown en graphe Turtle RDF/OWL
+# Compilation RDF : transforme le dépôt d'architecture YAML/Markdown en graphe Turtle RDF/OWL
 rdf:
 	@echo "==> Compilation RDF (YAML → Turtle)"
 	$(PY) scripts/compile_rdf.py
@@ -90,7 +90,7 @@ sync:
 	@echo "==> Sync RDF ↔ Graphify"
 	$(PY) scripts/sync_rdf_graphify.py
 
-# Validation du graphe de relations du référentiel (îlots, cibles non résolues,
+# Validation du graphe de relations du dépôt d'architecture (îlots, cibles non résolues,
 # liens relatifs cassés). Indépendant de build_wrappers --check (voir note ci-dessous).
 validate:
 	$(PY) scripts/validate_ref.py

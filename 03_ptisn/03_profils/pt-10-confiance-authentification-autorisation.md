@@ -23,14 +23,14 @@ Périmètre : identité sectorielle/fédérée, authentification, identité des 
 
 ## 2. Capacité CNISN
 
-[CAP-INT-08: Confiance, sécurité et autorisation](../../referentiel/capacites/cap-int-08.md)
+[CAP-INT-08: Confiance, sécurité et autorisation](../../04_architecture-repository/capacites/cap-int-08.md)
 
 ## 3. Chapitres ART applicables
 
-- [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md)
+- [ART-0: Accords de partage inter-institutionnels](../../04_architecture-repository/chapitres/art-0.md)
 - ART-4B
-- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../referentiel/chapitres/art-7.md)
-- [ART-9: Garanties transactionnelles fortes](../../referentiel/chapitres/art-9.md) lorsque applicable
+- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../04_architecture-repository/chapitres/art-7.md)
+- [ART-9: Garanties transactionnelles fortes](../../04_architecture-repository/chapitres/art-9.md) lorsque applicable
 
 ## 4. Acteurs (Actors)
 
@@ -141,7 +141,7 @@ En cas d'urgence vitale documentée (code U3 ou U4), les restrictions RBAC sont 
 | Alerte épidémique de niveau 4 | Accès en lecture aux données de surveillance pour tous les acteurs de la riposte | Journalisation automatique, révocation à la fin de l'épisode |
 | Catastrophe naturelle ou sanitaire | Mode dégradé : accès hors-ligne avec synchronisation différée | Piste d'audit complète après resynchronisation |
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-08](../../referentiel/capacites/cap-int-08.md).
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-08](../../04_architecture-repository/capacites/cap-int-08.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -152,7 +152,7 @@ En cas d'urgence vitale documentée (code U3 ou U4), les restrictions RBAC sont 
 
 R = requis ; O = optionnel.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-08](../../referentiel/capacites/cap-int-08.md).
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-08](../../04_architecture-repository/capacites/cap-int-08.md).
 ## 6. Content Modules
 
 - **Jeton d’accès IUA** : jeton portant les attributs d’autorisation pour services REST/FHIR.
@@ -230,10 +230,10 @@ Conformité attestée par l’application de la matrice RBAC, le respect des pol
 
 ## 12. Articulation avec les autres profils
 
-- [PT-05: registre des professionnels](../../referentiel/profils/pt-05.md)
-- [PT-04: résolution d’identité bénéficiaire](../../referentiel/profils/pt-04.md)
-- [PT-11: consentement et bases d’autorisation](../../referentiel/profils/pt-11.md)
-- [PT-01: échange interinstitutionnel](../../referentiel/profils/pt-01.md)
+- [PT-05: registre des professionnels](../../04_architecture-repository/profils/pt-05.md)
+- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/profils/pt-04.md)
+- [PT-11: consentement et bases d’autorisation](../../04_architecture-repository/profils/pt-11.md)
+- [PT-01: échange interinstitutionnel](../../04_architecture-repository/profils/pt-01.md)
 
 ## 13. Limites et dépendances
 

@@ -4,7 +4,7 @@ import os
 import re
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-ARCH_REPOSITORY_DIR = "referentiel"
+ARCH_REPOSITORY_DIR = "04_architecture-repository"
 ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
 COMPONENTS_DIR = os.path.join(ARCH_REPOSITORY_ROOT, "composants")
 

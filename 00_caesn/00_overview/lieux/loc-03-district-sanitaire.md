@@ -17,7 +17,7 @@ related: ["PP-07", "CMP-39"]
 
 Le district sanitaire est le périmètre de pilotage intermédiaire qui coordonne les CSB de son ressort et rend compte à la région.
 
-Il [sert la partie prenante « District, région et Ministère »](../../../referentiel/parties-prenantes/pp-07.md) et s'appuie sur le [composant de gouvernance](../../../referentiel/composants/cmp-39.md). C'est le niveau où se réconcilient les remontées terrain et les directives nationales.
+Il [sert la partie prenante « District, région et Ministère »](../../../04_architecture-repository/parties-prenantes/pp-07.md) et s'appuie sur le [composant de gouvernance](../../../04_architecture-repository/composants/cmp-39.md). C'est le niveau où se réconcilient les remontées terrain et les directives nationales.
 
 ## Imbrication territoriale
 

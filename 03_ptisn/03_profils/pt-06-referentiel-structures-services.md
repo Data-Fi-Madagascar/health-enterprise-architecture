@@ -23,13 +23,13 @@ Périmètre : formations sanitaires (publiques, privées, communautaires), labor
 
 ## 2. Capacité CNISN
 
-[CAP-INT-04: Référentiel des structures et services de santé](../../referentiel/capacites/cap-int-04.md)
+[CAP-INT-04: Référentiel des structures et services de santé](../../04_architecture-repository/capacites/cap-int-04.md)
 
 ## 3. Chapitres ART applicables
 
-- [ART-4: Référentiels de métadonnées de gestion](../../referentiel/chapitres/art-4.md)
-- [ART-5: Cohérence et qualité des données](../../referentiel/chapitres/art-5.md)
-- [ART-6: Analytique et restitution](../../referentiel/chapitres/art-6.md) pour les usages analytiques
+- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/chapitres/art-4.md)
+- [ART-5: Cohérence et qualité des données](../../04_architecture-repository/chapitres/art-5.md)
+- [ART-6: Analytique et restitution](../../04_architecture-repository/chapitres/art-6.md) pour les usages analytiques
 
 ## 4. Acteurs (Actors)
 
@@ -37,7 +37,7 @@ Périmètre : formations sanitaires (publiques, privées, communautaires), labor
 - **Registre des structures (Care Services Registry / Directory)** — tient le référentiel national découvrable.
 - **Consommateur de services de santé (Care Services Consumer)** — système résolvant une structure, un service ou une localisation.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-04](../../referentiel/capacites/cap-int-04.md).
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-04](../../04_architecture-repository/capacites/cap-int-04.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -48,7 +48,7 @@ Périmètre : formations sanitaires (publiques, privées, communautaires), labor
 
 R = requis ; O = optionnel.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-04](../../referentiel/capacites/cap-int-04.md).
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-04](../../04_architecture-repository/capacites/cap-int-04.md).
 ## 6. Content Modules
 
 - **HL7 FHIR Organization** : formation sanitaire, structure administrative.
@@ -98,8 +98,8 @@ Conformité attestée par la résolution des unités organisationnelles des inst
 
 ## 12. Articulation avec les autres profils
 
-- [PT-05: registre des professionnels](../../referentiel/profils/pt-05.md)
-- [PT-09: analytique et exposition de données](../../referentiel/profils/pt-09.md)
+- [PT-05: registre des professionnels](../../04_architecture-repository/profils/pt-05.md)
+- [PT-09: analytique et exposition de données](../../04_architecture-repository/profils/pt-09.md)
 
 Le référentiel alimente la dimension géographique/organisationnelle de l’analytique (PT-09) et la découvrabilité des services.
 

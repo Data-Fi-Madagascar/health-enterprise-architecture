@@ -41,7 +41,7 @@ Par rapport aux pairs africains (Kenya, Ouganda : 7–10 composants ; Tanzanie :
 - **CMP-15 / CMP-16 / CMP-17 / CMP-18** (Couche 3) sont candidats à une **fusion en *Pattern d'échange unifié*** (API Gateway + registre de schémas + broker + compensation) pour réduire le nombre de composants à posséder et à financer.
 - **CMP-07 (Gestionnaire de Sagas)** fait l'objet d'une étude « Saga vs orchestration simple » (alternative pragmatic : Tanzanie HIM) avant généralisation.
 
-Ces composants, marqués *Phase 2, candidat*, sont décrits dans le référentiel des composants (`referentiel/composants/`).
+Ces composants, marqués *Phase 2, candidat*, sont décrits dans le référentiel des composants (`04_architecture-repository/composants/`).
 
 ## Couche 6 : Pilotage, Gouvernance et actions intersectorielles
 
@@ -49,8 +49,8 @@ Cette couche est rattachée au flux de valeur 4 (VS-04) et associe les composant
 
 ### Composants associés
 
-- [CMP-01 : Tableaux de bord & Portails nationaux (performance, CSU, ressources, veille)](../../referentiel/composants/cmp-01.md)
-- [CMP-02 : Centre de commande & Crises intersectorielles (alertes, crises, veille)](../../referentiel/composants/cmp-02.md)
+- [CMP-01 : Tableaux de bord & Portails nationaux (performance, CSU, ressources, veille)](../../04_architecture-repository/composants/cmp-01.md)
+- [CMP-02 : Centre de commande & Crises intersectorielles (alertes, crises, veille)](../../04_architecture-repository/composants/cmp-02.md)
 
 ## Couche 5 : Projections analytiques et Modèles
 
@@ -58,9 +58,9 @@ Cette couche applique physiquement et directement le pattern CQRS (ART-6). Elle 
 
 ### Composants associés
 
-- [CMP-03 : Entrepôt Lakehouse & Projections analytiques (pipeline ETL, Lakehouse, projections)](../../referentiel/composants/cmp-03.md)
-- [CMP-04 : Moteur analytique & IA (IA prédictive, routeur alertes, Grand Livre)](../../referentiel/composants/cmp-04.md)
-- [CMP-05 : Moteur de graphes & Référentiel spatio-temporel (Graph Store, Spatio ART-4D)](../../referentiel/composants/cmp-05.md)
+- [CMP-03 : Entrepôt Lakehouse & Projections analytiques (pipeline ETL, Lakehouse, projections)](../../04_architecture-repository/composants/cmp-03.md)
+- [CMP-04 : Moteur analytique & IA (IA prédictive, routeur alertes, Grand Livre)](../../04_architecture-repository/composants/cmp-04.md)
+- [CMP-05 : Moteur de graphes & Référentiel spatio-temporel (Graph Store, Spatio ART-4D)](../../04_architecture-repository/composants/cmp-05.md)
 
 ## Couche 4 : Interopérabilité et services partagés
 
@@ -68,15 +68,15 @@ Cette couche exécute la source de vérité au présent (Profil B d'ART-3) et le
 
 ### Composants associés
 
-- [CMP-06 : Intégration, Médiation, API Gateway, Broker & Registre schémas](../../referentiel/composants/cmp-06.md)
-- [CMP-07 : Orchestrateur de parcours & Gestionnaire de Sagas (ART-8A)](../../referentiel/composants/cmp-07.md)
-- [CMP-08 : Répertoire de données cliniques opérationnelles](../../referentiel/composants/cmp-08.md)
-- [CMP-09 : Référentiel des métadonnées d'exploitation (ART-4)](../../referentiel/composants/cmp-09.md)
-- [CMP-10 : Registre des terminologies](../../referentiel/composants/cmp-10.md)
-- [CMP-11 : Registre des clients / Index National des Patients (INP, ART-4A)](../../referentiel/composants/cmp-11.md)
-- [CMP-12 : Registre d'éligibilité et de couverture (CSU, ART-4C)](../../referentiel/composants/cmp-12.md)
-- [CMP-13 : Registre des personnels](../../referentiel/composants/cmp-13.md)
-- [CMP-14 : Registre des produits, intrants et indicateurs](../../referentiel/composants/cmp-14.md)
+- [CMP-06 : Intégration, Médiation, API Gateway, Broker & Registre schémas](../../04_architecture-repository/composants/cmp-06.md)
+- [CMP-07 : Orchestrateur de parcours & Gestionnaire de Sagas (ART-8A)](../../04_architecture-repository/composants/cmp-07.md)
+- [CMP-08 : Répertoire de données cliniques opérationnelles](../../04_architecture-repository/composants/cmp-08.md)
+- [CMP-09 : Référentiel des métadonnées d'exploitation (ART-4)](../../04_architecture-repository/composants/cmp-09.md)
+- [CMP-10 : Registre des terminologies](../../04_architecture-repository/composants/cmp-10.md)
+- [CMP-11 : Registre des clients / Index National des Patients (INP, ART-4A)](../../04_architecture-repository/composants/cmp-11.md)
+- [CMP-12 : Registre d'éligibilité et de couverture (CSU, ART-4C)](../../04_architecture-repository/composants/cmp-12.md)
+- [CMP-13 : Registre des personnels](../../04_architecture-repository/composants/cmp-13.md)
+- [CMP-14 : Registre des produits, intrants et indicateurs](../../04_architecture-repository/composants/cmp-14.md)
 
 ## Couche 3 : Échange, transport et ingestion
 
@@ -84,10 +84,10 @@ Cette couche assure l'exécution technique du transport asynchrone (ART-1 et F.3
 
 ### Composants associés
 
-- [CMP-15 : API Gateway](../../referentiel/composants/cmp-15.md)
-- [CMP-16 : Registre de schémas (F.3)](../../referentiel/composants/cmp-16.md)
-- [CMP-17 : Message broker asynchrone](../../referentiel/composants/cmp-17.md)
-- [CMP-18 : Compensateur / Regroupeur de flux (Netting, ART-8C)](../../referentiel/composants/cmp-18.md)
+- [CMP-15 : API Gateway](../../04_architecture-repository/composants/cmp-15.md)
+- [CMP-16 : Registre de schémas (F.3)](../../04_architecture-repository/composants/cmp-16.md)
+- [CMP-17 : Message broker asynchrone](../../04_architecture-repository/composants/cmp-17.md)
+- [CMP-18 : Compensateur / Regroupeur de flux (Netting, ART-8C)](../../04_architecture-repository/composants/cmp-18.md)
 
 ## Couche 2 : Point de service
 
@@ -97,15 +97,15 @@ Cette couche applique le principe d'autonomie locale (ENF-1) et l'historisation 
 
 Cette couche est composée des applications de front-office suivantes :
 
-- [CMP-19 : Dossiers & statistiques de santé (hôpitaux)](../../referentiel/composants/cmp-19.md)
-- [CMP-20 : Gestion des pharmacies (PMIS)](../../referentiel/composants/cmp-20.md)
-- [CMP-21 : Santé communautaire mobile (offline)](../../referentiel/composants/cmp-21.md)
-- [CMP-22 : Espace santé patient](../../referentiel/composants/cmp-22.md)
-- [CMP-23 : Chaîne logistique (LMIS)](../../referentiel/composants/cmp-23.md)
-- [CMP-24 : Surveillance de la santé animale (zoonoses)](../../referentiel/composants/cmp-24.md)
-- [CMP-25 : Enquêtes & capteurs terrain](../../referentiel/composants/cmp-25.md)
+- [CMP-19 : Dossiers & statistiques de santé (hôpitaux)](../../04_architecture-repository/composants/cmp-19.md)
+- [CMP-20 : Gestion des pharmacies (PMIS)](../../04_architecture-repository/composants/cmp-20.md)
+- [CMP-21 : Santé communautaire mobile (offline)](../../04_architecture-repository/composants/cmp-21.md)
+- [CMP-22 : Espace santé patient](../../04_architecture-repository/composants/cmp-22.md)
+- [CMP-23 : Chaîne logistique (LMIS)](../../04_architecture-repository/composants/cmp-23.md)
+- [CMP-24 : Surveillance de la santé animale (zoonoses)](../../04_architecture-repository/composants/cmp-24.md)
+- [CMP-25 : Enquêtes & capteurs terrain](../../04_architecture-repository/composants/cmp-25.md)
 
-Références normatives : [ENF-1](../../referentiel/exigences/enf-1.md), [F.1](../../referentiel/fondations/f-1.md).
+Références normatives : [ENF-1](../../04_architecture-repository/exigences/enf-1.md), [F.1](../../04_architecture-repository/fondations/f-1.md).
 
 ## Couche 1 : Infrastructure
 
@@ -115,14 +115,14 @@ Cette couche est le support matériel de la clause de résidence et de sécurit�
 
 Cette couche est composée des infrastructures physiques suivantes :
 
-- [CMP-26 : Nœud central (datacenters nationaux HDS)](../../referentiel/composants/cmp-26.md)
-- [CMP-27 : Nœuds régionaux (clusters de district : Fog)](../../referentiel/composants/cmp-27.md)
-- [CMP-28 : Nœuds locaux (équipements chiffrés : Edge)](../../referentiel/composants/cmp-28.md)
-- [CMP-29 : Liaisons dédiées & VPN](../../referentiel/composants/cmp-29.md)
-- [CMP-30 : Réseau privé MPLS](../../referentiel/composants/cmp-30.md)
-- [CMP-31 : Réseaux mobiles privés (APN sécurisés)](../../referentiel/composants/cmp-31.md)
+- [CMP-26 : Nœud central (datacenters nationaux HDS)](../../04_architecture-repository/composants/cmp-26.md)
+- [CMP-27 : Nœuds régionaux (clusters de district : Fog)](../../04_architecture-repository/composants/cmp-27.md)
+- [CMP-28 : Nœuds locaux (équipements chiffrés : Edge)](../../04_architecture-repository/composants/cmp-28.md)
+- [CMP-29 : Liaisons dédiées & VPN](../../04_architecture-repository/composants/cmp-29.md)
+- [CMP-30 : Réseau privé MPLS](../../04_architecture-repository/composants/cmp-30.md)
+- [CMP-31 : Réseaux mobiles privés (APN sécurisés)](../../04_architecture-repository/composants/cmp-31.md)
 
-Référence normative : [ART-7](../../referentiel/chapitres/art-7.md).
+Référence normative : [ART-7](../../04_architecture-repository/chapitres/art-7.md).
 
 ## Axes verticaux transversaux
 
@@ -134,13 +134,13 @@ Cet axe applique transversalement le cadre de cybersécurité (ART-7). Il associ
 
 ### Composants associés
 
-- [CMP-32 : Gestion des identités](../../referentiel/composants/cmp-32.md)
-- [CMP-33 : Contrôle d'accès fin (RBAC/ABAC)](../../referentiel/composants/cmp-33.md)
-- [CMP-34 : Gestion des consentements](../../referentiel/composants/cmp-34.md)
-- [CMP-35 : Infrastructure de clés publiques (PKI)](../../referentiel/composants/cmp-35.md)
-- [CMP-36 : Passerelle de confiance mondiale OMS (GDHCN)](../../referentiel/composants/cmp-36.md)
-- [CMP-37 : Journal d'audit immuable](../../referentiel/composants/cmp-37.md)
-- [CMP-38 : Moteur de chiffrement](../../referentiel/composants/cmp-38.md)
+- [CMP-32 : Gestion des identités](../../04_architecture-repository/composants/cmp-32.md)
+- [CMP-33 : Contrôle d'accès fin (RBAC/ABAC)](../../04_architecture-repository/composants/cmp-33.md)
+- [CMP-34 : Gestion des consentements](../../04_architecture-repository/composants/cmp-34.md)
+- [CMP-35 : Infrastructure de clés publiques (PKI)](../../04_architecture-repository/composants/cmp-35.md)
+- [CMP-36 : Passerelle de confiance mondiale OMS (GDHCN)](../../04_architecture-repository/composants/cmp-36.md)
+- [CMP-37 : Journal d'audit immuable](../../04_architecture-repository/composants/cmp-37.md)
+- [CMP-38 : Moteur de chiffrement](../../04_architecture-repository/composants/cmp-38.md)
 
 ### Axe vertical 2 : Gouvernance de données
 
@@ -148,14 +148,14 @@ Cet axe applique le cadre d'obligation du processus d'homologation (F.4) et d'AR
 
 ### Composants associés
 
-- [CMP-39 : Registre des accords inter-institutions](../../referentiel/composants/cmp-39.md)
-- [CMP-40 : Charte nationale de protection](../../referentiel/composants/cmp-40.md)
-- [CMP-41 : Conventions internationales](../../referentiel/composants/cmp-41.md)
-- [CMP-42 : Comité national d'homologation](../../referentiel/composants/cmp-42.md)
-- [CMP-43 : Registre des initiatives](../../referentiel/composants/cmp-43.md)
-- [CMP-44 : Comité d'éthique](../../referentiel/composants/cmp-44.md)
-- [CMP-45 : Cellule d'audit](../../referentiel/composants/cmp-45.md)
-- [CMP-46 : Arbitrage et risques](../../referentiel/composants/cmp-46.md)
+- [CMP-39 : Registre des accords inter-institutions](../../04_architecture-repository/composants/cmp-39.md)
+- [CMP-40 : Charte nationale de protection](../../04_architecture-repository/composants/cmp-40.md)
+- [CMP-41 : Conventions internationales](../../04_architecture-repository/composants/cmp-41.md)
+- [CMP-42 : Comité national d'homologation](../../04_architecture-repository/composants/cmp-42.md)
+- [CMP-43 : Registre des initiatives](../../04_architecture-repository/composants/cmp-43.md)
+- [CMP-44 : Comité d'éthique](../../04_architecture-repository/composants/cmp-44.md)
+- [CMP-45 : Cellule d'audit](../../04_architecture-repository/composants/cmp-45.md)
+- [CMP-46 : Arbitrage et risques](../../04_architecture-repository/composants/cmp-46.md)
 
 ## Diagrammes C4
 
@@ -351,70 +351,70 @@ Les chapitres et patterns de référence constituent le socle normatif de cette 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
 - **chapitres** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **six couches applicatives du CAESN** : Paysage applicatif cible (`00_caesn/05_application/layers.md`)
-- **ART-0** : Accords de partage inter-institutionnels (`referentiel/chapitres/art-0.md`)
-- **ART-6** : Analytique et restitution (`referentiel/chapitres/art-6.md`)
-- **ART-5** : Cohérence et qualité des données (`referentiel/chapitres/art-5.md`)
-- **ART-8B** : Modélisation de relations en graphe (`referentiel/chapitres/art-8b.md`)
-- **ART-4D** : Référentiel géospatial et d'exploitation partagé (`referentiel/chapitres/art-4d.md`)
-- **ART-9** : Garanties transactionnelles fortes (`referentiel/chapitres/art-9.md`)
-- **ART-3** : Historisation événementielle et profils de déploiement (`referentiel/chapitres/art-3.md`)
-- **ART-4** : Référentiels de métadonnées de gestion (`referentiel/chapitres/art-4.md`)
-- **ART-2** : Médiation et normalisation (`referentiel/chapitres/art-2.md`)
-- **ART-8A** : Orchestration de processus borné (`referentiel/chapitres/art-8a.md`)
-- **ART-4A** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
-- **ART-4C** : Éligibilité et couverture (`referentiel/chapitres/art-4c.md`)
-- **ART-1** : Intégration et ingestion (`referentiel/chapitres/art-1.md`)
-- **ART-8C** : Agrégation par lot (`referentiel/chapitres/art-8c.md`)
-- **ART-7** : Sécurité, contrôle d'accès et résidence de la donnée (`referentiel/chapitres/art-7.md`)
-- **CMP-01** : Tableaux de bord & Portails nationaux (performance, CSU, ressources, veille) (`referentiel/composants/cmp-01.md`)
-- **CMP-02** : Centre de commande & Crises intersectorielles (alertes, crises, veille) (`referentiel/composants/cmp-02.md`)
-- **CMP-03** : Entrepôt Lakehouse & Projections analytiques (pipeline ETL, Lakehouse, projections) (`referentiel/composants/cmp-03.md`)
-- **CMP-04** : Moteur analytique & IA (IA prédictive, routeur alertes, Grand Livre) (`referentiel/composants/cmp-04.md`)
-- **CMP-05** : Moteur de graphes & Référentiel spatio-temporel (Graph Store, Spatio ART-4D) (`referentiel/composants/cmp-05.md`)
-- **CMP-06** : Intégration, Médiation, API Gateway, Broker & Registre schémas (`referentiel/composants/cmp-06.md`)
-- **CMP-07** : Orchestrateur de parcours & Gestionnaire de Sagas (ART-8A) (`referentiel/composants/cmp-07.md`)
-- **CMP-08** : Répertoire de données cliniques opérationnelles (`referentiel/composants/cmp-08.md`)
-- **CMP-09** : Référentiel des métadonnées d'exploitation (ART-4) (`referentiel/composants/cmp-09.md`)
-- **CMP-10** : Registre des terminologies (`referentiel/composants/cmp-10.md`)
-- **CMP-11** : Registre des clients / Index National des Patients (INP : ART-4A) (`referentiel/composants/cmp-11.md`)
-- **CMP-12** : Registre d'éligibilité et de couverture (CSU : ART-4C) (`referentiel/composants/cmp-12.md`)
-- **CMP-13** : Registre des personnels (`referentiel/composants/cmp-13.md`)
-- **CMP-14** : Registre des produits, intrants et indicateurs (`referentiel/composants/cmp-14.md`)
-- **F.3** : F.3 : Éradication des silos technologiques (`referentiel/fondations/f-3.md`)
-- **CMP-15** : API Gateway (`referentiel/composants/cmp-15.md`)
-- **CMP-16** : Registre de schémas (F.3) (`referentiel/composants/cmp-16.md`)
-- **CMP-17** : Message broker asynchrone (`referentiel/composants/cmp-17.md`)
-- **CMP-18** : Compensateur / Regroupeur de flux (Netting : ART-8C) (`referentiel/composants/cmp-18.md`)
-- **CMP-19** : Dossiers & statistiques de sante (hopitaux) (`referentiel/composants/cmp-19.md`)
-- **CMP-20** : Gestion des pharmacies (PMIS) (`referentiel/composants/cmp-20.md`)
-- **CMP-21** : Sante communautaire mobile (offline) (`referentiel/composants/cmp-21.md`)
-- **CMP-22** : Espace sante patient (`referentiel/composants/cmp-22.md`)
-- **CMP-23** : Chaine logistique (LMIS) (`referentiel/composants/cmp-23.md`)
-- **CMP-24** : Surveillance de la sante animale (zoonoses) (`referentiel/composants/cmp-24.md`)
-- **CMP-25** : Enquetes & capteurs terrain (`referentiel/composants/cmp-25.md`)
-- **CMP-26** : Noeud central (datacenters nationaux HDS) (`referentiel/composants/cmp-26.md`)
-- **CMP-27** : Noeuds regionaux (clusters de district : Fog) (`referentiel/composants/cmp-27.md`)
-- **CMP-28** : Noeuds locaux (equipements chiffres : Edge) (`referentiel/composants/cmp-28.md`)
-- **CMP-29** : Liaisons dediees & VPN (`referentiel/composants/cmp-29.md`)
-- **CMP-30** : Reseau prive MPLS (`referentiel/composants/cmp-30.md`)
-- **CMP-31** : Reseaux mobiles prives (APN securises) (`referentiel/composants/cmp-31.md`)
-- **CMP-32** : Gestion des identites (`referentiel/composants/cmp-32.md`)
-- **CMP-33** : Controle d'acces fin (RBAC/ABAC) (`referentiel/composants/cmp-33.md`)
-- **CMP-34** : Gestion des consentements (`referentiel/composants/cmp-34.md`)
-- **CMP-35** : Infrastructure de cles publiques (PKI) (`referentiel/composants/cmp-35.md`)
-- **CMP-36** : Passerelle de confiance mondiale OMS (GDHCN) (`referentiel/composants/cmp-36.md`)
-- **CMP-37** : Journal d'audit immuable (`referentiel/composants/cmp-37.md`)
-- **CMP-38** : Moteur de chiffrement (`referentiel/composants/cmp-38.md`)
-- **CMP-39** : Registre des accords inter-institutions (`referentiel/composants/cmp-39.md`)
-- **CMP-40** : Charte nationale de protection (`referentiel/composants/cmp-40.md`)
-- **CMP-41** : Conventions internationales (`referentiel/composants/cmp-41.md`)
-- **CMP-42** : Comite national d'homologation (`referentiel/composants/cmp-42.md`)
-- **CMP-43** : Registre des initiatives (`referentiel/composants/cmp-43.md`)
-- **CMP-44** : Comite d'ethique (`referentiel/composants/cmp-44.md`)
-- **CMP-45** : Cellule d'audit (`referentiel/composants/cmp-45.md`)
-- **CMP-46** : Arbitrage et risques (`referentiel/composants/cmp-46.md`)
-- **F.1** : F.1 : Résilience face à la réalité géographique du pays (`referentiel/fondations/f-1.md`)
-- **F.4** : F.4 : Homologation obligatoire (`referentiel/fondations/f-4.md`)
+- **ART-0** : Accords de partage inter-institutionnels (`04_architecture-repository/chapitres/art-0.md`)
+- **ART-6** : Analytique et restitution (`04_architecture-repository/chapitres/art-6.md`)
+- **ART-5** : Cohérence et qualité des données (`04_architecture-repository/chapitres/art-5.md`)
+- **ART-8B** : Modélisation de relations en graphe (`04_architecture-repository/chapitres/art-8b.md`)
+- **ART-4D** : Référentiel géospatial et d'exploitation partagé (`04_architecture-repository/chapitres/art-4d.md`)
+- **ART-9** : Garanties transactionnelles fortes (`04_architecture-repository/chapitres/art-9.md`)
+- **ART-3** : Historisation événementielle et profils de déploiement (`04_architecture-repository/chapitres/art-3.md`)
+- **ART-4** : Référentiels de métadonnées de gestion (`04_architecture-repository/chapitres/art-4.md`)
+- **ART-2** : Médiation et normalisation (`04_architecture-repository/chapitres/art-2.md`)
+- **ART-8A** : Orchestration de processus borné (`04_architecture-repository/chapitres/art-8a.md`)
+- **ART-4A** : Résolution d'identité (`04_architecture-repository/chapitres/art-4a.md`)
+- **ART-4C** : Éligibilité et couverture (`04_architecture-repository/chapitres/art-4c.md`)
+- **ART-1** : Intégration et ingestion (`04_architecture-repository/chapitres/art-1.md`)
+- **ART-8C** : Agrégation par lot (`04_architecture-repository/chapitres/art-8c.md`)
+- **ART-7** : Sécurité, contrôle d'accès et résidence de la donnée (`04_architecture-repository/chapitres/art-7.md`)
+- **CMP-01** : Tableaux de bord & Portails nationaux (performance, CSU, ressources, veille) (`04_architecture-repository/composants/cmp-01.md`)
+- **CMP-02** : Centre de commande & Crises intersectorielles (alertes, crises, veille) (`04_architecture-repository/composants/cmp-02.md`)
+- **CMP-03** : Entrepôt Lakehouse & Projections analytiques (pipeline ETL, Lakehouse, projections) (`04_architecture-repository/composants/cmp-03.md`)
+- **CMP-04** : Moteur analytique & IA (IA prédictive, routeur alertes, Grand Livre) (`04_architecture-repository/composants/cmp-04.md`)
+- **CMP-05** : Moteur de graphes & Référentiel spatio-temporel (Graph Store, Spatio ART-4D) (`04_architecture-repository/composants/cmp-05.md`)
+- **CMP-06** : Intégration, Médiation, API Gateway, Broker & Registre schémas (`04_architecture-repository/composants/cmp-06.md`)
+- **CMP-07** : Orchestrateur de parcours & Gestionnaire de Sagas (ART-8A) (`04_architecture-repository/composants/cmp-07.md`)
+- **CMP-08** : Répertoire de données cliniques opérationnelles (`04_architecture-repository/composants/cmp-08.md`)
+- **CMP-09** : Référentiel des métadonnées d'exploitation (ART-4) (`04_architecture-repository/composants/cmp-09.md`)
+- **CMP-10** : Registre des terminologies (`04_architecture-repository/composants/cmp-10.md`)
+- **CMP-11** : Registre des clients / Index National des Patients (INP : ART-4A) (`04_architecture-repository/composants/cmp-11.md`)
+- **CMP-12** : Registre d'éligibilité et de couverture (CSU : ART-4C) (`04_architecture-repository/composants/cmp-12.md`)
+- **CMP-13** : Registre des personnels (`04_architecture-repository/composants/cmp-13.md`)
+- **CMP-14** : Registre des produits, intrants et indicateurs (`04_architecture-repository/composants/cmp-14.md`)
+- **F.3** : F.3 : Éradication des silos technologiques (`04_architecture-repository/fondations/f-3.md`)
+- **CMP-15** : API Gateway (`04_architecture-repository/composants/cmp-15.md`)
+- **CMP-16** : Registre de schémas (F.3) (`04_architecture-repository/composants/cmp-16.md`)
+- **CMP-17** : Message broker asynchrone (`04_architecture-repository/composants/cmp-17.md`)
+- **CMP-18** : Compensateur / Regroupeur de flux (Netting : ART-8C) (`04_architecture-repository/composants/cmp-18.md`)
+- **CMP-19** : Dossiers & statistiques de sante (hopitaux) (`04_architecture-repository/composants/cmp-19.md`)
+- **CMP-20** : Gestion des pharmacies (PMIS) (`04_architecture-repository/composants/cmp-20.md`)
+- **CMP-21** : Sante communautaire mobile (offline) (`04_architecture-repository/composants/cmp-21.md`)
+- **CMP-22** : Espace sante patient (`04_architecture-repository/composants/cmp-22.md`)
+- **CMP-23** : Chaine logistique (LMIS) (`04_architecture-repository/composants/cmp-23.md`)
+- **CMP-24** : Surveillance de la sante animale (zoonoses) (`04_architecture-repository/composants/cmp-24.md`)
+- **CMP-25** : Enquetes & capteurs terrain (`04_architecture-repository/composants/cmp-25.md`)
+- **CMP-26** : Noeud central (datacenters nationaux HDS) (`04_architecture-repository/composants/cmp-26.md`)
+- **CMP-27** : Noeuds regionaux (clusters de district : Fog) (`04_architecture-repository/composants/cmp-27.md`)
+- **CMP-28** : Noeuds locaux (equipements chiffres : Edge) (`04_architecture-repository/composants/cmp-28.md`)
+- **CMP-29** : Liaisons dediees & VPN (`04_architecture-repository/composants/cmp-29.md`)
+- **CMP-30** : Reseau prive MPLS (`04_architecture-repository/composants/cmp-30.md`)
+- **CMP-31** : Reseaux mobiles prives (APN securises) (`04_architecture-repository/composants/cmp-31.md`)
+- **CMP-32** : Gestion des identites (`04_architecture-repository/composants/cmp-32.md`)
+- **CMP-33** : Controle d'acces fin (RBAC/ABAC) (`04_architecture-repository/composants/cmp-33.md`)
+- **CMP-34** : Gestion des consentements (`04_architecture-repository/composants/cmp-34.md`)
+- **CMP-35** : Infrastructure de cles publiques (PKI) (`04_architecture-repository/composants/cmp-35.md`)
+- **CMP-36** : Passerelle de confiance mondiale OMS (GDHCN) (`04_architecture-repository/composants/cmp-36.md`)
+- **CMP-37** : Journal d'audit immuable (`04_architecture-repository/composants/cmp-37.md`)
+- **CMP-38** : Moteur de chiffrement (`04_architecture-repository/composants/cmp-38.md`)
+- **CMP-39** : Registre des accords inter-institutions (`04_architecture-repository/composants/cmp-39.md`)
+- **CMP-40** : Charte nationale de protection (`04_architecture-repository/composants/cmp-40.md`)
+- **CMP-41** : Conventions internationales (`04_architecture-repository/composants/cmp-41.md`)
+- **CMP-42** : Comite national d'homologation (`04_architecture-repository/composants/cmp-42.md`)
+- **CMP-43** : Registre des initiatives (`04_architecture-repository/composants/cmp-43.md`)
+- **CMP-44** : Comite d'ethique (`04_architecture-repository/composants/cmp-44.md`)
+- **CMP-45** : Cellule d'audit (`04_architecture-repository/composants/cmp-45.md`)
+- **CMP-46** : Arbitrage et risques (`04_architecture-repository/composants/cmp-46.md`)
+- **F.1** : F.1 : Résilience face à la réalité géographique du pays (`04_architecture-repository/fondations/f-1.md`)
+- **F.4** : F.4 : Homologation obligatoire (`04_architecture-repository/fondations/f-4.md`)
 - **chapitres et patterns de référence** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **couches applicatives du CAESN** : Paysage applicatif cible (`00_caesn/05_application/layers.md`)
 - **VS-04 : Pilotage** : Flux de valeur (`02_artsn/01_flux-de-valeur/index.md`)

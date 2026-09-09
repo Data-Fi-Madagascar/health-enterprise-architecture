@@ -39,27 +39,27 @@ ART-7 : Sécurité, contrôle d'accès et résidence de la donnée constitue un 
 
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (terminaux mobiles volés sur le terrain, tentatives d’intrusions extérieures, flux sortants vers partenaires étrangers), cette discipline seule permet de garantir l’inviolabilité du secret médical et la souveraineté numérique de l’État sans rompre le pipeline.
 
-- **Rattachement** : [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md) (cybersécurité et gouvernance de la sécurité).
+- **Rattachement** : [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/capabilites/cap-15.md) (cybersécurité et gouvernance de la sécurité).
 - **Modèles cibles** : Zero-Trust, RBAC, ABAC, chiffrement (AES-256), AuditEvent FHIR.
 - **Normes CNISN** : [STD-0002: Sécurité et chiffrement](../../01_cnisn/05_standards/std-0002-securite-chiffrement.md), [ADR-0001: X-Road](../../01_cnisn/06_decisions/adr-0001-x-road.md), [ADR-0007: GDHCN](../../01_cnisn/06_decisions/adr-0007-gdhcn.md), [ADR-0008: Audit ATNA](../../01_cnisn/06_decisions/adr-0008-atna.md).
 - **Objets de données** : [BO-01 Patient & identité](../../00_caesn/04_data/objets.md), [BO-07 Interopérabilité transfrontalière](../../00_caesn/04_data/objets.md) (objets métier CAESN) ; voir aussi le [dictionnaire des objets de données ARTSN](../03_objets-de-donnees/index.md).
-- **Déduit selon** : [ENF-1: Résilience à l'instabilité réseau](../../referentiel/exigences/enf-1.md) (sécurité locale).
+- **Déduit selon** : [ENF-1: Résilience à l'instabilité réseau](../../04_architecture-repository/exigences/enf-1.md) (sécurité locale).
 - **Statut : Stable.**
 
 ## Profils PTISN qui implémentent ce chapitre
 
 Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
 
-- [PT-01 : Échange interinstitutionnel](../../referentiel/profils/pt-01.md)
-- [PT-02 : Médiation intra-secteur](../../referentiel/profils/pt-02.md)
-- [PT-04 : Résolution d’identité du bénéficiaire](../../referentiel/profils/pt-04.md)
-- [PT-05 : Registre des professionnels](../../referentiel/profils/pt-05.md)
-- [PT-09 : Analytique et exposition de données](../../referentiel/profils/pt-09.md)
-- [PT-10 : Confiance, authentification et autorisation](../../referentiel/profils/pt-10.md)
-- [PT-11 : Consentement et bases d’autorisation](../../referentiel/profils/pt-11.md)
-- [PT-12 : Audit, provenance et traçabilité](../../referentiel/profils/pt-12.md)
-- [PT-14 : Interopérabilité transfrontalière](../../referentiel/profils/pt-14.md)
-- [PT-16 : Orchestration de processus bornés](../../referentiel/profils/pt-16.md)
+- [PT-01 : Échange interinstitutionnel](../../04_architecture-repository/profils/pt-01.md)
+- [PT-02 : Médiation intra-secteur](../../04_architecture-repository/profils/pt-02.md)
+- [PT-04 : Résolution d’identité du bénéficiaire](../../04_architecture-repository/profils/pt-04.md)
+- [PT-05 : Registre des professionnels](../../04_architecture-repository/profils/pt-05.md)
+- [PT-09 : Analytique et exposition de données](../../04_architecture-repository/profils/pt-09.md)
+- [PT-10 : Confiance, authentification et autorisation](../../04_architecture-repository/profils/pt-10.md)
+- [PT-11 : Consentement et bases d’autorisation](../../04_architecture-repository/profils/pt-11.md)
+- [PT-12 : Audit, provenance et traçabilité](../../04_architecture-repository/profils/pt-12.md)
+- [PT-14 : Interopérabilité transfrontalière](../../04_architecture-repository/profils/pt-14.md)
+- [PT-16 : Orchestration de processus bornés](../../04_architecture-repository/profils/pt-16.md)
 
 <!-- END:GENERATED -->
 ## Liens
@@ -70,6 +70,6 @@ Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre 
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`ART-7`** : Sécurité, contrôle d'accès et résidence de la donnée (`referentiel/chapitres/art-7.md`)
+- **`ART-7`** : Sécurité, contrôle d'accès et résidence de la donnée (`04_architecture-repository/chapitres/art-7.md`)
 - **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

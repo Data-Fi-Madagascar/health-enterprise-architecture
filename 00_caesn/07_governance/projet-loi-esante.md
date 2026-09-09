@@ -67,9 +67,9 @@ Ce document est l'**avant-projet** de loi e-santé recommandé par [ADR-0010](..
 
 ### Titre IV — Données, consentement et résidence
 
-- **Art. 11 — Résidence de la donnée** : hébergement souverain sur le territoire national, chiffrement de bout en bout ([ART-7](../../referentiel/chapitres/art-7.md), [STD-0002](../../01_cnisn/05_standards/std-0002-securite-chiffrement.md)).
+- **Art. 11 — Résidence de la donnée** : hébergement souverain sur le territoire national, chiffrement de bout en bout ([ART-7](../../04_architecture-repository/chapitres/art-7.md), [STD-0002](../../01_cnisn/05_standards/std-0002-securite-chiffrement.md)).
 - **Art. 12 — Consentement et droits** : consentement éclairé, accès et rectification des données du patient ([ADR-0005](../../01_cnisn/06_decisions/adr-0005-consentement.md)).
-- **Art. 13 — Sécurité et traçabilité** : journalisation, authentification, garanties transactionnelles ([ART-9](../../referentiel/chapitres/art-9.md), [ADR-0008](../../01_cnisn/06_decisions/adr-0008-atna.md)).
+- **Art. 13 — Sécurité et traçabilité** : journalisation, authentification, garanties transactionnelles ([ART-9](../../04_architecture-repository/chapitres/art-9.md), [ADR-0008](../../01_cnisn/06_decisions/adr-0008-atna.md)).
 - **Art. 14 — Échanges transfrontaliers** : encadrement des échanges internationaux (GDHCN) dans le respect de la résidence.
 
 ### Titre V — Financement et budgetisation

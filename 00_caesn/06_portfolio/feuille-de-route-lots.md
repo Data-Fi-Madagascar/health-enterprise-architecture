@@ -20,7 +20,7 @@ CAESN (et non dans les composants techniques).
 
 La **réalisation technique** de chaque lot (composants, patterns ARTSN, normes CNISN) est
 détaillée dans la [vue de réalisation ARTSN](../../02_artsn/07_lots/index.md). Les lots opérationnalisent
-les capacités du CAESN via les [work-packages `wp-01`…`wp-07`](../../referentiel/work-packages/wp-01.md).
+les capacités du CAESN via les [work-packages `wp-01`…`wp-07`](../../04_architecture-repository/work-packages/wp-01.md).
 
 > **Principe de cohérence** : le portefeuille (niveau 1) *définit* les lots ; l'ARTSN (niveau 3)
 > *réalise* les lots. Les documents ARTSN référencent donc ce document vers le haut, ils ne
@@ -61,5 +61,5 @@ voir la [vue de réalisation ARTSN](../../02_artsn/07_lots/index.md) et la
 - [Portefeuille d'initiatives orienté valeur](index.md)
 - [Méthode TCO et enveloppe de financement](financement-tco.md)
 - [Vue de réalisation ARTSN des lots](../../02_artsn/07_lots/index.md)
-- [Work-packages `wp-01`…`wp-07`](../../referentiel/work-packages/wp-01.md)
+- [Work-packages `wp-01`…`wp-07`](../../04_architecture-repository/work-packages/wp-01.md)
 - [Matrice d'alignement PTISN](../../03_ptisn/04_matrice-alignement/index.md)

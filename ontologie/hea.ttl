@@ -10,7 +10,7 @@
 <https://healmadagascar.mg/ontologie/hea> rdf:type owl:Ontology ;
     owl:versionInfo "2.0.0" ;
     rdfs:label "Ontologie HEA — Architecture d'Entreprise de la Santé Numérique" ;
-    rdfs:comment "Ontologie du référentiel HEA (Madagascar). Conforme à la grammaire ArchiMate 3.1. Générée automatiquement depuis referentiel/**/*.md par compile_rdf.py" .
+    rdfs:comment "Ontologie du référentiel HEA (Madagascar). Conforme à la grammaire ArchiMate 3.1. Générée automatiquement depuis 04_architecture-repository/**/*.md par compile_rdf.py" .
 
 # ===================================================================
 # Namespace HEA

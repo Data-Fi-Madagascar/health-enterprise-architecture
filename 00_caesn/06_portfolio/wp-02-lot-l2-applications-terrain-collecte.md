@@ -22,7 +22,7 @@ tags: ["artsn", "work-package", "wp-02", "lots"]
 
 Le lot L2 déploie les applications de terrain qui captent les données au plus près des formations sanitaires, y compris en mode hors-ligne : dossiers patients, gestion des pharmacies, santé communautaire, chaîne logistique et équipes mobiles, adossés à la couche transport asynchrone.
 
-Ce paquet de travail [réalise le composant de dossiers](../../referentiel/composants/cmp-09.md), le [composant de chaîne logistique](../../referentiel/composants/cmp-23.md), le [service de dossier patient](../../referentiel/services/srv-02.md), le [service logistique](../../referentiel/services/srv-05.md) et la [capacité « Offre de soins et continuité »](../../referentiel/capabilites/cap-01.md). Il [contribue au plateau 2](../../referentiel/plateaux/pl-02.md).
+Ce paquet de travail [réalise le composant de dossiers](../../04_architecture-repository/composants/cmp-09.md), le [composant de chaîne logistique](../../04_architecture-repository/composants/cmp-23.md), le [service de dossier patient](../../04_architecture-repository/services/srv-02.md), le [service logistique](../../04_architecture-repository/services/srv-05.md) et la [capacité « Offre de soins et continuité »](../../04_architecture-repository/capabilites/cap-01.md). Il [contribue au plateau 2](../../04_architecture-repository/plateaux/pl-02.md).
 
 ## Unité de temps
 
@@ -34,10 +34,10 @@ Il produit les livrables suivants : 5 applications terrain opérationnelles et c
 
 ## Objectifs
 
-Il réalise les éléments de l'architecture cible : [CMP-09](../../referentiel/composants/cmp-09.md), [CMP-23](../../referentiel/composants/cmp-23.md), [SRV-02](../../referentiel/services/srv-02.md), [SRV-05](../../referentiel/services/srv-05.md), [CAP-01](../../referentiel/capabilites/cap-01.md).
+Il réalise les éléments de l'architecture cible : [CMP-09](../../04_architecture-repository/composants/cmp-09.md), [CMP-23](../../04_architecture-repository/composants/cmp-23.md), [SRV-02](../../04_architecture-repository/services/srv-02.md), [SRV-05](../../04_architecture-repository/services/srv-05.md), [CAP-01](../../04_architecture-repository/capabilites/cap-01.md).
 
 ## Ressources assignées
 
-Il mobilise les rôles et acteurs suivants pour accomplir le travail : [ACT-02](../../referentiel/acteurs/act-02.md), [ACT-03](../../referentiel/acteurs/act-03.md), [ROL-01](../../referentiel/roles/rol-01.md), [ROL-02](../../referentiel/roles/rol-02.md).
+Il mobilise les rôles et acteurs suivants pour accomplir le travail : [ACT-02](../../04_architecture-repository/acteurs/act-02.md), [ACT-03](../../04_architecture-repository/acteurs/act-03.md), [ROL-01](../../04_architecture-repository/roles/rol-01.md), [ROL-02](../../04_architecture-repository/roles/rol-02.md).
 
 <!-- END:GENERATED -->

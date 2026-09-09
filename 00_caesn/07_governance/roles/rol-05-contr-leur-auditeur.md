@@ -14,16 +14,16 @@ tags: ["caesn", "role", "rol-05", "governance"]
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-Le contrôleur / auditeur vérifie les contrôles, les audits et la conformité du système. Il est [assigné à l'autorité district, région et Ministère](../../../referentiel/acteurs/act-04.md) et [exécute le processus de contrôle et d'audit](../../../referentiel/processus/prc-13.md).
+Le contrôleur / auditeur vérifie les contrôles, les audits et la conformité du système. Il est [assigné à l'autorité district, région et Ministère](../../../04_architecture-repository/acteurs/act-04.md) et [exécute le processus de contrôle et d'audit](../../../04_architecture-repository/processus/prc-13.md).
 
-Il s'appuie sur le [composant de gouvernance](../../../referentiel/composants/cmp-39.md) pour garantir la traçabilité et la conformité des opérations au cadre national.
+Il s'appuie sur le [composant de gouvernance](../../../04_architecture-repository/composants/cmp-39.md) pour garantir la traçabilité et la conformité des opérations au cadre national.
 
 ## Affectation
 
-Assigné à l'acteur [ACT-04](../../../referentiel/acteurs/act-04.md).
+Assigné à l'acteur [ACT-04](../../../04_architecture-repository/acteurs/act-04.md).
 
 ## Réalisation
 
-Exécute le processus [PRC-13](../../../referentiel/processus/prc-13.md).
+Exécute le processus [PRC-13](../../../04_architecture-repository/processus/prc-13.md).
 
 <!-- END:GENERATED -->

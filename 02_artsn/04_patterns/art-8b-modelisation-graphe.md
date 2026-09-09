@@ -39,16 +39,16 @@ ART-8B : Modélisation de relations en graphe constitue un chapitre du **cadre n
 
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (réseaux de contacts épidémiques, propagation de foyers de zoonoses), cette discipline seule permet de calculer instantanément les chaînes de transmission et d’identifier les super-propagateurs sans rompre le pipeline.
 
-- **Rattachement** : [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md).
+- **Rattachement** : [CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/capabilites/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/capabilites/cap-14.md).
 - **Infrastructure cible** : Graph Store.
-- **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (cloisonnement One Health).
+- **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../04_architecture-repository/exigences/enf-4.md) (cloisonnement One Health).
 - **Statut : Proposition ouverte.**
 
 ## Profils PTISN qui implémentent ce chapitre
 
 Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
 
-- [PT-15 : Surveillance One Health](../../referentiel/profils/pt-15.md)
+- [PT-15 : Surveillance One Health](../../04_architecture-repository/profils/pt-15.md)
 
 <!-- END:GENERATED -->
 ## Liens
@@ -59,6 +59,6 @@ Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre 
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`ART-8B`** : Modélisation de relations en graphe (`referentiel/chapitres/art-8b.md`)
+- **`ART-8B`** : Modélisation de relations en graphe (`04_architecture-repository/chapitres/art-8b.md`)
 - **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

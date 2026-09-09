@@ -144,12 +144,12 @@
     "CMP-03",
     "CMP-06"
   ],
-  "x-hea-source": "referentiel/profils/pt-08.md",
+  "x-hea-source": "04_architecture-repository/profils/pt-08.md",
   "x-hea-fhir-resources": [
     "MeasureReport"
   ],
   "x-hea-data-objects": [
     "DO-28"
   ],
-  "x-hea-file": "referentiel/profils/pt-08.md"
+  "x-hea-file": "04_architecture-repository/profils/pt-08.md"
 }

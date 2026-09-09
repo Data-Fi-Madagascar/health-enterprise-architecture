@@ -43,7 +43,7 @@ Certains services doivent être conçus comme des services nationaux partagés, 
 
 ## Composants des services partagés
 
-<!-- BEGIN:GENERATED source=referentiel/composants/cmp-12.md,referentiel/composants/cmp-13.md -->
+<!-- BEGIN:GENERATED source=04_architecture-repository/composants/cmp-12.md,04_architecture-repository/composants/cmp-13.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### CMP-12 : Référentiels nationaux et données de référence
@@ -86,30 +86,30 @@ Identité patient/bénéficiaire, identité agent, authentification et gestion d
 ## Références
 
 - [matrice de lecture](../../00_caesn/reading-matrix.md)
-- [VS-01](../../referentiel/flux-valeur/vs-01.md)
-- [VS-02](../../referentiel/flux-valeur/vs-02.md)
-- [VS-03](../../referentiel/flux-valeur/vs-03.md)
-- [VS-04](../../referentiel/flux-valeur/vs-04.md)
-- [PRC-01](../../referentiel/processus/prc-01.md)
-- [PRC-07](../../referentiel/processus/prc-07.md)
-- [PRC-10](../../referentiel/processus/prc-10.md)
-- [CAP-INT-02](../../referentiel/capacites/cap-int-02.md)
-- [CAP-INT-04](../../referentiel/capacites/cap-int-04.md)
-- [CAP-INT-05](../../referentiel/capacites/cap-int-05.md)
-- [ART-4](../../referentiel/chapitres/art-4.md)
-- [ART-4D](../../referentiel/chapitres/art-4d.md)
-- [fiche](../../referentiel/composants/cmp-12.md)
-- [PRC-05](../../referentiel/processus/prc-05.md)
-- [PRC-09](../../referentiel/processus/prc-09.md)
-- [CAP-INT-01](../../referentiel/capacites/cap-int-01.md)
-- [CAP-INT-06](../../referentiel/capacites/cap-int-06.md)
-- [CAP-INT-08](../../referentiel/capacites/cap-int-08.md)
-- [CAP-INT-09](../../referentiel/capacites/cap-int-09.md)
-- [ART-1](../../referentiel/chapitres/art-1.md)
-- [ART-2](../../referentiel/chapitres/art-2.md)
-- [ART-4A](../../referentiel/chapitres/art-4a.md)
-- [ART-4B](../../referentiel/chapitres/art-4b.md)
-- [ART-7](../../referentiel/chapitres/art-7.md)
+- [VS-01](../../04_architecture-repository/flux-valeur/vs-01.md)
+- [VS-02](../../04_architecture-repository/flux-valeur/vs-02.md)
+- [VS-03](../../04_architecture-repository/flux-valeur/vs-03.md)
+- [VS-04](../../04_architecture-repository/flux-valeur/vs-04.md)
+- [PRC-01](../../04_architecture-repository/processus/prc-01.md)
+- [PRC-07](../../04_architecture-repository/processus/prc-07.md)
+- [PRC-10](../../04_architecture-repository/processus/prc-10.md)
+- [CAP-INT-02](../../04_architecture-repository/capacites/cap-int-02.md)
+- [CAP-INT-04](../../04_architecture-repository/capacites/cap-int-04.md)
+- [CAP-INT-05](../../04_architecture-repository/capacites/cap-int-05.md)
+- [ART-4](../../04_architecture-repository/chapitres/art-4.md)
+- [ART-4D](../../04_architecture-repository/chapitres/art-4d.md)
+- [fiche](../../04_architecture-repository/composants/cmp-12.md)
+- [PRC-05](../../04_architecture-repository/processus/prc-05.md)
+- [PRC-09](../../04_architecture-repository/processus/prc-09.md)
+- [CAP-INT-01](../../04_architecture-repository/capacites/cap-int-01.md)
+- [CAP-INT-06](../../04_architecture-repository/capacites/cap-int-06.md)
+- [CAP-INT-08](../../04_architecture-repository/capacites/cap-int-08.md)
+- [CAP-INT-09](../../04_architecture-repository/capacites/cap-int-09.md)
+- [ART-1](../../04_architecture-repository/chapitres/art-1.md)
+- [ART-2](../../04_architecture-repository/chapitres/art-2.md)
+- [ART-4A](../../04_architecture-repository/chapitres/art-4a.md)
+- [ART-4B](../../04_architecture-repository/chapitres/art-4b.md)
+- [ART-7](../../04_architecture-repository/chapitres/art-7.md)
 - [Paysage applicatif cible](../../00_caesn/05_application/layers.md)
 - [Domaines applicatifs](../../00_caesn/05_application/application-domains.md)
 - [Référentiels nationaux](../../00_caesn/04_data/referentials.md)

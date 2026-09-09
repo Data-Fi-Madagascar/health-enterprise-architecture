@@ -23,14 +23,14 @@ Périmètre : mouvements de stock (livraison, dispensation, transfert, destructi
 
 ## 2. Capacité CNISN
 
-- [CAP-INT-10: Provenance, audit et traçabilité](../../referentiel/capacites/cap-int-10.md)
-- [CAP-INT-15: Échange et traçabilité de la chaîne d'approvisionnement sanitaire](../../referentiel/capacites/cap-int-15.md)
+- [CAP-INT-10: Provenance, audit et traçabilité](../../04_architecture-repository/capacites/cap-int-10.md)
+- [CAP-INT-15: Échange et traçabilité de la chaîne d'approvisionnement sanitaire](../../04_architecture-repository/capacites/cap-int-15.md)
 
 ## 3. Chapitres ART applicables
 
-- [ART-10: Logistique](../../referentiel/chapitres/art-10.md) — traçabilité de bout en bout des mouvements de stock ;
-- [ART-9: Garanties transactionnelles fortes](../../referentiel/chapitres/art-9.md) — intégrité et non-répudiation des échanges de mouvements ;
-- [ART-7: Résidence, contrôle d'accès et sécurité de la donnée](../../referentiel/chapitres/art-7.md) — hébergement souverain et contrôle d'accès aux données logistiques ;
+- [ART-10: Logistique](../../04_architecture-repository/chapitres/art-10.md) — traçabilité de bout en bout des mouvements de stock ;
+- [ART-9: Garanties transactionnelles fortes](../../04_architecture-repository/chapitres/art-9.md) — intégrité et non-répudiation des échanges de mouvements ;
+- [ART-7: Résidence, contrôle d'accès et sécurité de la donnée](../../04_architecture-repository/chapitres/art-7.md) — hébergement souverain et contrôle d'accès aux données logistiques ;
 - [STD-0009: échange des données logistiques (LMIS)](../../01_cnisn/05_standards/std-0009-echange-donnees-logistiques-lmis.md).
 
 ## 4. Acteurs (Actors)
@@ -39,7 +39,7 @@ Périmètre : mouvements de stock (livraison, dispensation, transfert, destructi
 - **Partenaire logistique** — système externe consommant/produisant des flux logistiques interopérables.
 - **Annuaire de sites (mCSD)** — fournit les lieux des mouvements (référence PT-06).
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-10](../../referentiel/capacites/cap-int-10.md).
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-10](../../04_architecture-repository/capacites/cap-int-10.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -51,7 +51,7 @@ Périmètre : mouvements de stock (livraison, dispensation, transfert, destructi
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-10](../../referentiel/capacites/cap-int-10.md).
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-10](../../04_architecture-repository/capacites/cap-int-10.md).
 ## 6. Content Modules
 
 - **FHIR `Medication` / `MedicationKnowledge`** : catalogue produit (codification GS1 GTIN).
@@ -110,7 +110,7 @@ Une solution LMIS doit au minimum supporter :
 - interfaces HL7 FHIR et/ou DHIS2 ;
 - journalisation et audit des mouvements ;
 - reprise et réconciliation en cas de défaillance réseau ;
-- intégration avec le composant [CMP-23: Chaîne logistique (LMIS)](../../referentiel/composants/cmp-23.md).
+- intégration avec le composant [CMP-23: Chaîne logistique (LMIS)](../../04_architecture-repository/composants/cmp-23.md).
 
 ## 11. Déclaration de conformité (Integration Statement)
 
@@ -121,7 +121,7 @@ Une solution LMIS doit au minimum supporter :
 
 ## 12. Articulation avec les autres profils
 
-Le profil opérationnalise le chapitre [ART-10: Logistique](../../referentiel/chapitres/art-10.md) et les capacités CNISN [CAP-INT-10: Provenance, audit et traçabilité](../../referentiel/capacites/cap-int-10.md) et [CAP-INT-15: Échange et traçabilité de la chaîne d'approvisionnement](../../referentiel/capacites/cap-int-15.md), en s'appuyant sur le composant [CMP-23: Chaîne logistique (LMIS)](../../referentiel/composants/cmp-23.md) et conformément à l'exigence [ENF-2: Intégrité des flux et traçabilité des valeurs](../../referentiel/exigences/enf-2.md). L'échange interopérable respecte la norme [STD-0009](../../01_cnisn/05_standards/std-0009-echange-donnees-logistiques-lmis.md).
+Le profil opérationnalise le chapitre [ART-10: Logistique](../../04_architecture-repository/chapitres/art-10.md) et les capacités CNISN [CAP-INT-10: Provenance, audit et traçabilité](../../04_architecture-repository/capacites/cap-int-10.md) et [CAP-INT-15: Échange et traçabilité de la chaîne d'approvisionnement](../../04_architecture-repository/capacites/cap-int-15.md), en s'appuyant sur le composant [CMP-23: Chaîne logistique (LMIS)](../../04_architecture-repository/composants/cmp-23.md) et conformément à l'exigence [ENF-2: Intégrité des flux et traçabilité des valeurs](../../04_architecture-repository/exigences/enf-2.md). L'échange interopérable respecte la norme [STD-0009](../../01_cnisn/05_standards/std-0009-echange-donnees-logistiques-lmis.md).
 
 ## 13. Limites et dépendances
 

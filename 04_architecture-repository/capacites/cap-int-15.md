@@ -42,9 +42,9 @@ Cette capacité est distincte de la gestion logistique applicative (LMIS métier
 
 ### Rattachement
 
-- [CAP-10: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement](../../referentiel/capabilites/cap-10.md)
-- [CAP-11: Gestion des infrastructures, équipements et maintenance](../../referentiel/capabilites/cap-11.md)
-- [CMP-23: LMIS (logistique)](../../referentiel/composants/cmp-23.md)
-- [ART-10: Logistique](../../referentiel/chapitres/art-10.md)
+- [CAP-10: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement](../../04_architecture-repository/capabilites/cap-10.md)
+- [CAP-11: Gestion des infrastructures, équipements et maintenance](../../04_architecture-repository/capabilites/cap-11.md)
+- [CMP-23: LMIS (logistique)](../../04_architecture-repository/composants/cmp-23.md)
+- [ART-10: Logistique](../../04_architecture-repository/chapitres/art-10.md)
 - [CAP-INT-03: Échange et médiation](cap-int-03.md)
 - [CAP-INT-10: Provenance, audit et traçabilité](cap-int-10.md)

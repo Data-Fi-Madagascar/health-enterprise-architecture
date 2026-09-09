@@ -21,11 +21,11 @@ tags: ["artsn", "gap", "gap-01", "feuille-de-route"]
 
 Les applications de terrain du lot L2 doivent fonctionner en connectivité contrainte avant même la généralisation du socle régional du lot L1. Cet écart expose le risque d'exclusion des zones les plus isolées si le déploiement n'est pas pensé mode dégradé d'emblée.
 
-Il s'inscrit [entre le plateau 1 et le plateau 2](../../referentiel/plateaux/pl-01.md), et touche la [région sanitaire](../../referentiel/lieux/loc-04.md) comme la [capacité « Offre de soins et continuité »](../../referentiel/capabilites/cap-01.md). Il appelle une stratégie de résilience (mode hors-ligne, synchronisation) dès la conception.
+Il s'inscrit [entre le plateau 1 et le plateau 2](../../04_architecture-repository/plateaux/pl-01.md), et touche la [région sanitaire](../../04_architecture-repository/lieux/loc-04.md) comme la [capacité « Offre de soins et continuité »](../../04_architecture-repository/capabilites/cap-01.md). Il appelle une stratégie de résilience (mode hors-ligne, synchronisation) dès la conception.
 
 ## Plateau source et cible
 
-S'inscrit [PL-01](../../referentiel/plateaux/pl-01.md), [PL-02](../../referentiel/plateaux/pl-02.md).
+S'inscrit [PL-01](../../04_architecture-repository/plateaux/pl-01.md), [PL-02](../../04_architecture-repository/plateaux/pl-02.md).
 
 ## Éléments manquants
 

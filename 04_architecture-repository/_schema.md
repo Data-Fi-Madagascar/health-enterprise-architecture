@@ -1,5 +1,5 @@
 ---
-domain: referentiel
+domain: 04_architecture-repository
 title: Schéma du référentiel
 id: SCHEMA-REFERENTIEL
 type: meta
@@ -7,7 +7,7 @@ niveau: "0"
 status: draft
 version: "1.0"
 owner: DEPSI
-envelope: referentiel/_schema.md
+envelope: 04_architecture-repository/_schema.md
 tags: ["referentiel", "schema", "gouvernance"]
 ---
 
@@ -17,7 +17,7 @@ Ce document définit le modèle d’objets du référentiel. Il est la source de
 
 ## Principe
 
-- **Un objet = un fichier** dans `referentiel/<type>/<id>.md`.
+- **Un objet = un fichier** dans `04_architecture-repository/<type>/<id>.md`.
 - Chaque objet est un bloc de contenu **auto-portant** : il n’a pas besoin du reste du document d’origine pour être compris.
 - Les documents historiques ne conservent que la **prose narrative**, les catalogues et les matrices ; ils **référencent** les objets par lien.
 - Le frontmatter est la seule source des **métadonnées de gouvernance** (statut, propriétaire, version, relations).
@@ -26,29 +26,29 @@ Ce document définit le modèle d’objets du référentiel. Il est la source de
 
 | Type | Répertoire | Préfixe d’id | Sources (niveaux) |
 |------|------------|--------------|-------------------|
-| `flux-valeur` | `referentiel/flux-valeur/` | `vs-` | CAESN (VS-01…04) |
-| `capabilite` | `referentiel/capabilites/` | `cap-` | CAESN (CAP-01…18) |
-| `principe` | `referentiel/principes/` | `p-` (CNISN `p-int-`, CAESN `pa-`/`pd-`) | CAESN (PA, PD), CNISN (P-INT) |
-| `etape-valeur` | `referentiel/etapes-valeur/` | `ev-` | CAESN (EV-01…28) |
-| `processus-metier` | `referentiel/processus/` | `prc-` | CAESN (PRC-01…13) |
-| `composant-applicatif` | `referentiel/composants/` | `cmp-` | CAESN : composants applicatifs (couches 2 a 6), CMP-01…25 |
-| `composant-infrastructure` | `referentiel/composants/` | `cmp-` | socle technologique (couche 1) : CMP-26…31 |
-| `composant-securite` | `referentiel/composants/` | `cmp-` | axe securite/confiance : CMP-32…38 |
-| `registre-gouvernance` | `referentiel/composants/` | `cmp-` | axe gouvernance : CMP-39…46 |
-| `partie-prenante` | `referentiel/parties-prenantes/` | `pp-` | CAESN (PP-01…10) |
-| `capacite` | `referentiel/capacites/` | `cap-int-` | CNISN (CAP-INT-01…16) |
-| `fondation` | `referentiel/fondations/` | `f-` | ARTSN (F.1…6) |
-| `exigence` | `referentiel/exigences/` | `enf-`, `ex-` | ARTSN (ENF-1…5, exigences) |
-| `chapitre` | `referentiel/chapitres/` | `art-` | ARTSN (ART-0…12) |
-| `profil` | `referentiel/profils/` | `pt-` | PTISN (PT-01…19) |
-| `service` | `referentiel/services/` | `srv-` | services transverses (business / applicatif / technologique) |
-| `acteur` | `referentiel/acteurs/` | `act-` | acteurs métier (organisations, personnes) — CAESN |
-| `role` | `referentiel/roles/` | `rol-` | rôles métier (responsabilités) — CAESN |
-| `lieu` | `referentiel/lieux/` | `loc-` | localisation géographique — CAESN |
-| `work-package` | `referentiel/work-packages/` | `wp-` | paquets de travail (lots ARTSN) |
-| `plateau` | `referentiel/plateaux/` | `pl-` | états cibles de l'architecture (roadmap) |
-| `gap` | `referentiel/gaps/` | `gap-` | écarts entre plateaux |
-| `meta` | `referentiel/` (racine) | `_schema`, `_index` | — |
+| `flux-valeur` | `04_architecture-repository/flux-valeur/` | `vs-` | CAESN (VS-01…04) |
+| `capabilite` | `04_architecture-repository/capabilites/` | `cap-` | CAESN (CAP-01…18) |
+| `principe` | `04_architecture-repository/principes/` | `p-` (CNISN `p-int-`, CAESN `pa-`/`pd-`) | CAESN (PA, PD), CNISN (P-INT) |
+| `etape-valeur` | `04_architecture-repository/etapes-valeur/` | `ev-` | CAESN (EV-01…28) |
+| `processus-metier` | `04_architecture-repository/processus/` | `prc-` | CAESN (PRC-01…13) |
+| `composant-applicatif` | `04_architecture-repository/composants/` | `cmp-` | CAESN : composants applicatifs (couches 2 a 6), CMP-01…25 |
+| `composant-infrastructure` | `04_architecture-repository/composants/` | `cmp-` | socle technologique (couche 1) : CMP-26…31 |
+| `composant-securite` | `04_architecture-repository/composants/` | `cmp-` | axe securite/confiance : CMP-32…38 |
+| `registre-gouvernance` | `04_architecture-repository/composants/` | `cmp-` | axe gouvernance : CMP-39…46 |
+| `partie-prenante` | `04_architecture-repository/parties-prenantes/` | `pp-` | CAESN (PP-01…10) |
+| `capacite` | `04_architecture-repository/capacites/` | `cap-int-` | CNISN (CAP-INT-01…16) |
+| `fondation` | `04_architecture-repository/fondations/` | `f-` | ARTSN (F.1…6) |
+| `exigence` | `04_architecture-repository/exigences/` | `enf-`, `ex-` | ARTSN (ENF-1…5, exigences) |
+| `chapitre` | `04_architecture-repository/chapitres/` | `art-` | ARTSN (ART-0…12) |
+| `profil` | `04_architecture-repository/profils/` | `pt-` | PTISN (PT-01…19) |
+| `service` | `04_architecture-repository/services/` | `srv-` | services transverses (business / applicatif / technologique) |
+| `acteur` | `04_architecture-repository/acteurs/` | `act-` | acteurs métier (organisations, personnes) — CAESN |
+| `role` | `04_architecture-repository/roles/` | `rol-` | rôles métier (responsabilités) — CAESN |
+| `lieu` | `04_architecture-repository/lieux/` | `loc-` | localisation géographique — CAESN |
+| `work-package` | `04_architecture-repository/work-packages/` | `wp-` | paquets de travail (lots ARTSN) |
+| `plateau` | `04_architecture-repository/plateaux/` | `pl-` | états cibles de l'architecture (roadmap) |
+| `gap` | `04_architecture-repository/gaps/` | `gap-` | écarts entre plateaux |
+| `meta` | `04_architecture-repository/` (racine) | `_schema`, `_index` | — |
 
 ## Conventions de nommage
 
@@ -190,7 +190,7 @@ Règle d'intégrité : un flux de valeur ne doit laisser aucune capacité orphel
 
 ## Registre des objets
 
-Le registre central de tous les objets est `referentiel/_index.yaml` : id, type, niveau, chemin, statut. Il est la source de vérité pour la vérification des comptes et la détection de perte pendant la migration.
+Le registre central de tous les objets est `04_architecture-repository/_index.yaml` : id, type, niveau, chemin, statut. Il est la source de vérité pour la vérification des comptes et la détection de perte pendant la migration.
 
 ## Couverture des concepts ArchiMate
 

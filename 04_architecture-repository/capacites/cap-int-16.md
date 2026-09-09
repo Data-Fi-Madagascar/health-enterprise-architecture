@@ -41,9 +41,9 @@ Cette capacité complète (sans la remplacer) la coordination intersectorielle O
 
 ### Rattachement
 
-- [CAP-18: Coordination intersectorielle (One Health)](../../referentiel/capabilites/cap-18.md)
-- [CAP-05: Surveillance épidémiologique, alerte, investigation et riposte](../../referentiel/capabilites/cap-05.md)
-- [CMP-05: Référentiel spatio-temporel](../../referentiel/composants/cmp-05.md)
-- [ART-4D: Référentiel géospatial et d'exploitation partagé](../../referentiel/chapitres/art-4d.md)
+- [CAP-18: Coordination intersectorielle (One Health)](../../04_architecture-repository/capabilites/cap-18.md)
+- [CAP-05: Surveillance épidémiologique, alerte, investigation et riposte](../../04_architecture-repository/capabilites/cap-05.md)
+- [CMP-05: Référentiel spatio-temporel](../../04_architecture-repository/composants/cmp-05.md)
+- [ART-4D: Référentiel géospatial et d'exploitation partagé](../../04_architecture-repository/chapitres/art-4d.md)
 - [CAP-INT-14: Échanges intersectoriels One Health](cap-int-14.md)
-- [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md)
+- [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../04_architecture-repository/exigences/enf-4.md)

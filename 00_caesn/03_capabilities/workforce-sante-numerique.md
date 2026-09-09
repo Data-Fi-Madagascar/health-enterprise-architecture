@@ -30,8 +30,8 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 | Rôle | Responsabilité HEA | Référence |
 |------|--------------------|-----------|
 | Architecte d'entreprise santé numérique | Cohérence du CAESN, homologation | [Gouvernance](../../00_caesn/07_governance/index.md) |
-| Responsable d'interopérabilité | Conduite des échanges, X-Road, FHIR | [ART-2](../../referentiel/chapitres/art-2.md), [ART-9](../../referentiel/chapitres/art-9.md) |
-| Data steward | Qualité, résidence, minimisation | [ART-5](../../referentiel/chapitres/art-5.md), [ART-7](../../referentiel/chapitres/art-7.md) |
+| Responsable d'interopérabilité | Conduite des échanges, X-Road, FHIR | [ART-2](../../04_architecture-repository/chapitres/art-2.md), [ART-9](../../04_architecture-repository/chapitres/art-9.md) |
+| Data steward | Qualité, résidence, minimisation | [ART-5](../../04_architecture-repository/chapitres/art-5.md), [ART-7](../../04_architecture-repository/chapitres/art-7.md) |
 | Privacy / conformité officer | Loi 2014-038, consentement | [ADR-0005](../../01_cnisn/06_decisions/adr-0005-consentement.md), [projet de loi e-santé](../07_governance/projet-loi-esante.md) |
 | Chef de projet interopérabilité | Déploiement des profils PTISN | [PTISN](../../03_ptisn/index.md) |
 

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Build or check referentiel/_index.yaml from Markdown frontmatter.
+"""Build or check 04_architecture-repository/_index.yaml from Markdown frontmatter.
 
-The Markdown files under referentiel/ are the source of truth. This derived
+The Markdown files under 04_architecture-repository/ are the source of truth. This derived
 index gives reviewers a compact inventory and gives CI a stable drift check.
 """
 
@@ -15,7 +15,7 @@ from collections import Counter
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-ARCH_REPOSITORY_DIR = "referentiel"
+ARCH_REPOSITORY_DIR = "04_architecture-repository"
 ARCH_REPOSITORY_ROOT = REPO_ROOT / ARCH_REPOSITORY_DIR
 INDEX_PATH = ARCH_REPOSITORY_ROOT / "_index.yaml"
 CONTROLLED_STATUSES = ("draft", "active", "stable", "candidate", "deprecated")
@@ -108,7 +108,7 @@ def collect_entries():
                           (oid, ", ".join(paths)))
 
     if errors:
-        print("[ERREUR] Index référentiel impossible :")
+        print("[ERREUR] Index 04_architecture-repository impossible :")
         for err in errors[:40]:
             print("  - %s" % err)
         if len(errors) > 40:
@@ -142,9 +142,9 @@ def render(entries):
     by_status = Counter(entry["status"] for entry in entries)
 
     lines = [
-        "# Registre des objets du référentiel",
+        "# Registre des objets 04_architecture-repository",
         "# Fichier généré par scripts/build_ref_index.py. Ne pas éditer à la main.",
-        "# Source de vérité : frontmatter Markdown sous referentiel/.",
+        "# Source de vérité : frontmatter Markdown sous 04_architecture-repository/.",
         "# Champs : id, type, niveau, chemin, status, title.",
         "# Statuts : %s" % " | ".join(CONTROLLED_STATUSES),
         "# Total : %d objets" % len(entries),
@@ -178,7 +178,7 @@ def render(entries):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Build referentiel/_index.yaml")
+    parser = argparse.ArgumentParser(description="Build 04_architecture-repository/_index.yaml")
     parser.add_argument("--check", action="store_true",
                         help="Vérifier sans écrire que l'index est à jour")
     args = parser.parse_args()
@@ -188,14 +188,14 @@ def main():
     if args.check:
         existing = INDEX_PATH.read_text(encoding="utf-8") if INDEX_PATH.exists() else ""
         if existing != content:
-            print("[ERREUR] referentiel/_index.yaml obsolète.")
+            print("[ERREUR] 04_architecture-repository/_index.yaml obsolète.")
             print("Exécuter : python3 scripts/build_ref_index.py")
             return 1
-        print("[OK] referentiel/_index.yaml à jour.")
+        print("[OK] 04_architecture-repository/_index.yaml à jour.")
         return 0
 
     INDEX_PATH.write_text(content, encoding="utf-8")
-    print("[OK] referentiel/_index.yaml généré.")
+    print("[OK] 04_architecture-repository/_index.yaml généré.")
     return 0
 
 

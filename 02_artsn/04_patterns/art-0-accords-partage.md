@@ -40,18 +40,18 @@ ART-0 : Accords de partage inter-institutionnels constitue un chapitre du **cadr
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (ministères partenaires, secteurs tiers), cette discipline seule permet de fixer les frontières de la responsabilité juridique et de configurer dynamiquement les filtres de sécurité automatiques sans rompre le pipeline.
 
 - **Rattachement** : capacité candidate « Coordination intersectorielle ».
-- **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (cloisonnement One Health).
+- **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../04_architecture-repository/exigences/enf-4.md) (cloisonnement One Health).
 - **Statut : Proposition ouverte.**
 
 ## Profils PTISN qui implémentent ce chapitre
 
 Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
 
-- [PT-01 : Échange interinstitutionnel](../../referentiel/profils/pt-01.md)
-- [PT-10 : Confiance, authentification et autorisation](../../referentiel/profils/pt-10.md)
-- [PT-11 : Consentement et bases d’autorisation](../../referentiel/profils/pt-11.md)
-- [PT-14 : Interopérabilité transfrontalière](../../referentiel/profils/pt-14.md)
-- [PT-15 : Surveillance One Health](../../referentiel/profils/pt-15.md)
+- [PT-01 : Échange interinstitutionnel](../../04_architecture-repository/profils/pt-01.md)
+- [PT-10 : Confiance, authentification et autorisation](../../04_architecture-repository/profils/pt-10.md)
+- [PT-11 : Consentement et bases d’autorisation](../../04_architecture-repository/profils/pt-11.md)
+- [PT-14 : Interopérabilité transfrontalière](../../04_architecture-repository/profils/pt-14.md)
+- [PT-15 : Surveillance One Health](../../04_architecture-repository/profils/pt-15.md)
 
 <!-- END:GENERATED -->
 ## Liens
@@ -62,6 +62,6 @@ Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre 
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`ART-0`** : Accords de partage inter-institutionnels (`referentiel/chapitres/art-0.md`)
+- **`ART-0`** : Accords de partage inter-institutionnels (`04_architecture-repository/chapitres/art-0.md`)
 - **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

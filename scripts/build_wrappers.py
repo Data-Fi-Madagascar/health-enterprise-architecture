@@ -5,7 +5,7 @@
 Conventions (spec docs/superpowers/specs/2026-08-11-enveloppes-lisibilite-design.md) :
 
 - Un bloc généré est délimité par :
-      <!-- BEGIN:GENERATED [mode=table] source=referentiel/<type>/<pat>.md[,<pat2>.md] -->
+      <!-- BEGIN:GENERATED [mode=table] source=04_architecture-repository/<type>/<pat>.md[,<pat2>.md] -->
       <!-- Généré par scripts/build_wrappers.py — ne pas éditer à la main -->
       <contenu généré>
       <!-- END:GENERATED -->
@@ -34,7 +34,7 @@ import re
 import sys
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ARCH_REPOSITORY_DIR = "referentiel"
+ARCH_REPOSITORY_DIR = "04_architecture-repository"
 ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
 
 BANNER = "<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->"

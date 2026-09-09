@@ -97,10 +97,10 @@ Les secteurs concernés :
 
 ### Rattachement
 
-- [CAP-18: Coordination intersectorielle (One Health)](../../referentiel/capabilites/cap-18.md) (Coordination intersectorielle — One Health)
-- [CAP-05: Surveillance épidémiologique, alerte, investigation et riposte](../../referentiel/capabilites/cap-05.md) (Surveillance épidémiologique)
-- [ART-11](../../referentiel/chapitres/art-11.md) (Coordination intersectorielle)
-- [ART-0](../../referentiel/chapitres/art-0.md) (Accords de partage inter-institutionnels)
-- [ART-4D](../../referentiel/chapitres/art-4d.md) (Référentiel géospatial)
-- [F.2](../../referentiel/fondations/f-2.md) (Souveraineté intersectorielle)
-- [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (Cloisonnement inter-institutionnel One Health)
+- [CAP-18: Coordination intersectorielle (One Health)](../../04_architecture-repository/capabilites/cap-18.md) (Coordination intersectorielle — One Health)
+- [CAP-05: Surveillance épidémiologique, alerte, investigation et riposte](../../04_architecture-repository/capabilites/cap-05.md) (Surveillance épidémiologique)
+- [ART-11](../../04_architecture-repository/chapitres/art-11.md) (Coordination intersectorielle)
+- [ART-0](../../04_architecture-repository/chapitres/art-0.md) (Accords de partage inter-institutionnels)
+- [ART-4D](../../04_architecture-repository/chapitres/art-4d.md) (Référentiel géospatial)
+- [F.2](../../04_architecture-repository/fondations/f-2.md) (Souveraineté intersectorielle)
+- [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../04_architecture-repository/exigences/enf-4.md) (Cloisonnement inter-institutionnel One Health)

@@ -23,13 +23,13 @@ Périmètre : publication et invocation d’artefacts de connaissance (guides de
 
 ## 2. Capacité CNISN
 
-- [CAP-INT-05: Terminologie et codification](../../referentiel/capacites/cap-int-05.md)
-- [CMP-08: Répertoire de données cliniques opérationnelles](../../referentiel/composants/cmp-08.md) (source de vérité clinique)
+- [CAP-INT-05: Terminologie et codification](../../04_architecture-repository/capacites/cap-int-05.md)
+- [CMP-08: Répertoire de données cliniques opérationnelles](../../04_architecture-repository/composants/cmp-08.md) (source de vérité clinique)
 
 ## 3. Chapitres ART applicables
 
-- [ART-12: Aide à la décision clinique](../../referentiel/chapitres/art-12.md)
-- [ART-2: normalisation sémantique](../../referentiel/chapitres/art-2.md)
+- [ART-12: Aide à la décision clinique](../../04_architecture-repository/chapitres/art-12.md)
+- [ART-2: normalisation sémantique](../../04_architecture-repository/chapitres/art-2.md)
 
 ## 4. Acteurs (Actors)
 
@@ -37,7 +37,7 @@ Périmètre : publication et invocation d’artefacts de connaissance (guides de
 - **Service CDS (Knowledge Service)** — expose les artefacts et répond aux invocations contextuelles.
 - **Application de point de service (Point of Service / EHR)** — invoque le CDS et présente la recommandation au professionnel.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-05](../../referentiel/capacites/cap-int-05.md).
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-05](../../04_architecture-repository/capacites/cap-int-05.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -48,7 +48,7 @@ Périmètre : publication et invocation d’artefacts de connaissance (guides de
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-05](../../referentiel/capacites/cap-int-05.md).
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-05](../../04_architecture-repository/capacites/cap-int-05.md).
 ## 6. Content Modules
 
 - **FHIR `PlanDefinition` / `ActivityDefinition`** : règles de décision, ordonnances informatisées, guides de pratique.
@@ -96,9 +96,9 @@ Aucun produit national n’est encore retenu (**statut : à instruire**). Les ar
 
 ## 12. Articulation avec les autres profils
 
-- [PT-07: terminologie et codification](../../referentiel/profils/pt-07.md)
-- [PT-05: registre des professionnels](../../referentiel/profils/pt-05.md)
-- [PT-10: confiance, authentification, autorisation](../../referentiel/profils/pt-10.md)
+- [PT-07: terminologie et codification](../../04_architecture-repository/profils/pt-07.md)
+- [PT-05: registre des professionnels](../../04_architecture-repository/profils/pt-05.md)
+- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/profils/pt-10.md)
 
 ## 13. Limites et dépendances
 

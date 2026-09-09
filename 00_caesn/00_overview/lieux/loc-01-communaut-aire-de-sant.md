@@ -17,7 +17,7 @@ related: ["PP-04", "CAP-01"]
 
 La communauté, ou aire de santé, est le niveau géographique de base où le système rencontre le citoyen au plus près. C'est le lieu de la santé communautaire, de la prévention et des premiers contacts avec les services.
 
-Elle [sert la partie prenante « Communauté »](../../../referentiel/parties-prenantes/pp-04.md) et ancre la [capacité « Offre de soins et continuité »](../../../referentiel/capabilites/cap-01.md). La résilience y est critique : la connectivité contrainte impose des modes dégradés et des synchronisations.
+Elle [sert la partie prenante « Communauté »](../../../04_architecture-repository/parties-prenantes/pp-04.md) et ancre la [capacité « Offre de soins et continuité »](../../../04_architecture-repository/capabilites/cap-01.md). La résilience y est critique : la connectivité contrainte impose des modes dégradés et des synchronisations.
 
 ## Imbrication territoriale
 

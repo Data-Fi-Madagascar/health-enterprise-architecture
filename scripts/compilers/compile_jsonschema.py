@@ -30,7 +30,7 @@ except ImportError:
     yaml = None
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-ARCH_REPOSITORY_DIR = "referentiel"
+ARCH_REPOSITORY_DIR = "04_architecture-repository"
 ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
 HEA_NS = "https://healmadagascar.mg"
 SCHEMAS_NS = "%s/schemas" % HEA_NS
@@ -466,7 +466,7 @@ def compile_all(output_dir):
 
     objects = collect_do_objects()
     if not objects:
-        print("[ERREUR] Aucun objet de données trouvé dans referentiel/objets-de-donnees/")
+        print("[ERREUR] Aucun objet de données trouvé dans 04_architecture-repository/objets-de-donnees/")
         sys.exit(1)
 
     compiled = []

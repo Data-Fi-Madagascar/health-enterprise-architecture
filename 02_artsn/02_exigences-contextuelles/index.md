@@ -28,7 +28,7 @@ related: ["ARTSN", "CAESN"]
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-Les exigences contextuelles traduisent les contraintes nationales (géographie, réseau, interopérabilité inter-institutionnelle) en obligations qui s'imposent à tout chapitre et à toute solution. Chaque exigence vit dans le référentiel : `referentiel/exigences/enf-X.md`.
+Les exigences contextuelles traduisent les contraintes nationales (géographie, réseau, interopérabilité inter-institutionnelle) en obligations qui s'imposent à tout chapitre et à toute solution. Chaque exigence vit dans le référentiel : `04_architecture-repository/exigences/enf-X.md`.
 
 ## Catalogue des exigences
 
@@ -39,7 +39,7 @@ Les exigences contextuelles traduisent les contraintes nationales (géographie, 
 
 **Contenu normatif.** La connectivité internet et la couverture mobile (3G/4G/Fibre) sont hautement asymétriques, intermittentes, voire inexistantes dans la majorité des districts ruraux et des Centres de Santé de Base (CSB). L’indisponibilité, la coupure ou la dégradation du réseau ne doit en aucun cas bloquer, ralentir ou altérer l’acte clinique, la dispensation pharmaceutique au comptoir ou la saisie logistique. Tout logiciel et base de données utilisés sur le point de service ont l’obligation structurelle de **capturer, valider et persister les transactions de manière 100 % locale et autonome**, puis de gérer des mécanismes de **synchronisation asynchrone** pour différer la transmission centrale dès le retour de la connectivité.
 
-**Statut : Stable.** — appliqué par [F.1](../../referentiel/fondations/f-1.md), [ART-1](../../referentiel/chapitres/art-1.md), Couche 2 (point de service).
+**Statut : Stable.** — appliqué par [F.1](../../04_architecture-repository/fondations/f-1.md), [ART-1](../../04_architecture-repository/chapitres/art-1.md), Couche 2 (point de service).
 
 #### Justification
 
@@ -47,22 +47,22 @@ La connectivité internet et mobile reste asymétrique, intermittente ou absente
 
 #### Capabilités concernées
 
-- [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md) — Système d'information sanitaire, données et recherche
-- [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md) — Interopérabilité, référentiels nationaux et infrastructure numérique partagée
-- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md) — Cybersécurité, confidentialité et gouvernance des données personnelles
+- [CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/capabilites/cap-13.md) — Système d'information sanitaire, données et recherche
+- [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/capabilites/cap-14.md) — Interopérabilité, référentiels nationaux et infrastructure numérique partagée
+- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/capabilites/cap-15.md) — Cybersécurité, confidentialité et gouvernance des données personnelles
 
 #### Parties prenantes concernées
 
-- [PP-05: Agent de santé](../../referentiel/parties-prenantes/pp-05.md) — Agent de santé
-- [PP-06: Formation sanitaire](../../referentiel/parties-prenantes/pp-06.md) — Formation sanitaire
-- [PP-10: Équipes techniques (DEPSI / SIS)](../../referentiel/parties-prenantes/pp-10.md) — Équipes techniques (DEPSI / SIS)
+- [PP-05: Agent de santé](../../04_architecture-repository/parties-prenantes/pp-05.md) — Agent de santé
+- [PP-06: Formation sanitaire](../../04_architecture-repository/parties-prenantes/pp-06.md) — Formation sanitaire
+- [PP-10: Équipes techniques (DEPSI / SIS)](../../04_architecture-repository/parties-prenantes/pp-10.md) — Équipes techniques (DEPSI / SIS)
 
 #### Fondations et chapitres garants
 
 - **F.1** — Résilience face à la réalité géographique du pays
-- [ART-1: Intégration et ingestion](../../referentiel/chapitres/art-1.md) — Intégration et ingestion
-- [ART-3: Historisation événementielle et profils de déploiement](../../referentiel/chapitres/art-3.md) — Historisation événementielle et profils de déploiement
-- [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../referentiel/chapitres/art-7.md) — Sécurité, contrôle d'accès et résidence de la donnée
+- [ART-1: Intégration et ingestion](../../04_architecture-repository/chapitres/art-1.md) — Intégration et ingestion
+- [ART-3: Historisation événementielle et profils de déploiement](../../04_architecture-repository/chapitres/art-3.md) — Historisation événementielle et profils de déploiement
+- [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../04_architecture-repository/chapitres/art-7.md) — Sécurité, contrôle d'accès et résidence de la donnée
 - **ART-8C** — Agrégation par lot
 - **ART-4C** — Éligibilité et couverture
 
@@ -70,7 +70,7 @@ La connectivité internet et mobile reste asymétrique, intermittente ou absente
 
 **Contenu normatif.** Le déploiement national de la gratuité ciblée, des subventions de l’État et des mécanismes de la Couverture Santé Universelle (CSU) présente un risque systémique élevé de fraude, de double facturation, de falsification d’ordonnances et de détournement de stocks. L’architecture doit interdire toute modification, suppression ou altération rétroactive des transactions logistiques et financières validées. Tout mouvement de valeur (Ariary ou unités physiques de médicaments) doit obéir à des règles strictes de **double écriture comptable** et de **conservation de quantité** (Entrées − Sorties = Solde), garantissant une réconciliation exacte à somme nulle.
 
-**Statut : Stable.** — appliqué par [ART-9 (garanties transactionnelles)](../../referentiel/chapitres/art-9.md), [ART-4C (éligibilité)](../../referentiel/chapitres/art-4c.md), [ART-8C (agrégation par lot)](../../referentiel/chapitres/art-8c.md).
+**Statut : Stable.** — appliqué par [ART-9 (garanties transactionnelles)](../../04_architecture-repository/chapitres/art-9.md), [ART-4C (éligibilité)](../../04_architecture-repository/chapitres/art-4c.md), [ART-8C (agrégation par lot)](../../04_architecture-repository/chapitres/art-8c.md).
 
 #### Justification
 
@@ -78,20 +78,20 @@ Le déploiement national de la gratuité ciblée, des subventions et de la CSU c
 
 #### Capabilités concernées
 
-- [CAP-07: Protection financière, couverture santé universelle](../../referentiel/capabilites/cap-07.md) — Protection financière, couverture santé universelle
-- [CAP-10: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement](../../referentiel/capabilites/cap-10.md) — Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement
-- [CAP-12: Finances publiques, budget et allocation des ressources](../../referentiel/capabilites/cap-12.md) — Finances publiques, budget et allocation des ressources
-- [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md) — Système d'information sanitaire, données et recherche
+- [CAP-07: Protection financière, couverture santé universelle](../../04_architecture-repository/capabilites/cap-07.md) — Protection financière, couverture santé universelle
+- [CAP-10: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement](../../04_architecture-repository/capabilites/cap-10.md) — Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement
+- [CAP-12: Finances publiques, budget et allocation des ressources](../../04_architecture-repository/capabilites/cap-12.md) — Finances publiques, budget et allocation des ressources
+- [CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/capabilites/cap-13.md) — Système d'information sanitaire, données et recherche
 
 #### Parties prenantes concernées
 
-- [PP-02: Ménage et famille](../../referentiel/parties-prenantes/pp-02.md) — Ménage et famille
-- [PP-06: Formation sanitaire](../../referentiel/parties-prenantes/pp-06.md) — Formation sanitaire
-- [PP-08: Partenaires techniques et financiers](../../referentiel/parties-prenantes/pp-08.md) — Partenaires techniques et financiers
+- [PP-02: Ménage et famille](../../04_architecture-repository/parties-prenantes/pp-02.md) — Ménage et famille
+- [PP-06: Formation sanitaire](../../04_architecture-repository/parties-prenantes/pp-06.md) — Formation sanitaire
+- [PP-08: Partenaires techniques et financiers](../../04_architecture-repository/parties-prenantes/pp-08.md) — Partenaires techniques et financiers
 
 #### Fondations et chapitres garants
 
-- [ART-9: Garanties transactionnelles fortes](../../referentiel/chapitres/art-9.md) — Garanties transactionnelles fortes
+- [ART-9: Garanties transactionnelles fortes](../../04_architecture-repository/chapitres/art-9.md) — Garanties transactionnelles fortes
 - **ART-4C** — Éligibilité et couverture
 - **ART-8C** — Agrégation par lot
 
@@ -101,7 +101,7 @@ Le déploiement national de la gratuité ciblée, des subventions et de la CSU c
 
 **Contenu normatif.** Le système national doit posséder la capacité de rapprocher, consolider et unifier des identités de patients incertains, phonétiquement variables ou incomplètes. Cette brique d’**identitovigilance** doit générer un enregistrement pivot unique et souverain pour le citoyen, sans forcer le remplacement immédiat ou la refonte structurelle des bases locales des hôpitaux.
 
-**Statut : Stable.** — appliqué par [ART-4A (résolution d’identité)](../../referentiel/chapitres/art-4a.md), [ART-2 (médiation)](../../referentiel/chapitres/art-2.md).
+**Statut : Stable.** — appliqué par [ART-4A (résolution d’identité)](../../04_architecture-repository/chapitres/art-4a.md), [ART-2 (médiation)](../../04_architecture-repository/chapitres/art-2.md).
 
 #### Justification
 
@@ -109,20 +109,20 @@ Le paysage numérique historique est marqué par une dispersion de solutions et 
 
 #### Capabilités concernées
 
-- [CAP-17: Engagement patient et identité numérique](../../referentiel/capabilites/cap-17.md) — Engagement patient et identité numérique
-- [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md) — Interopérabilité, référentiels nationaux et infrastructure numérique partagée
-- [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md) — Système d'information sanitaire, données et recherche
+- [CAP-17: Engagement patient et identité numérique](../../04_architecture-repository/capabilites/cap-17.md) — Engagement patient et identité numérique
+- [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/capabilites/cap-14.md) — Interopérabilité, référentiels nationaux et infrastructure numérique partagée
+- [CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/capabilites/cap-13.md) — Système d'information sanitaire, données et recherche
 
 #### Parties prenantes concernées
 
-- [PP-01: Patient et usager](../../referentiel/parties-prenantes/pp-01.md) — Patient et usager
-- [PP-06: Formation sanitaire](../../referentiel/parties-prenantes/pp-06.md) — Formation sanitaire
-- [PP-10: Équipes techniques (DEPSI / SIS)](../../referentiel/parties-prenantes/pp-10.md) — Équipes techniques (DEPSI / SIS)
+- [PP-01: Patient et usager](../../04_architecture-repository/parties-prenantes/pp-01.md) — Patient et usager
+- [PP-06: Formation sanitaire](../../04_architecture-repository/parties-prenantes/pp-06.md) — Formation sanitaire
+- [PP-10: Équipes techniques (DEPSI / SIS)](../../04_architecture-repository/parties-prenantes/pp-10.md) — Équipes techniques (DEPSI / SIS)
 
 #### Fondations et chapitres garants
 
 - **ART-4A** — Résolution d'identité
-- [ART-2: Médiation et normalisation](../../referentiel/chapitres/art-2.md) — Médiation et normalisation
+- [ART-2: Médiation et normalisation](../../04_architecture-repository/chapitres/art-2.md) — Médiation et normalisation
 
 ### Cloisonnement inter-institutionnel et étanchéité des données (One Health)
 
@@ -130,7 +130,7 @@ Le paysage numérique historique est marqué par une dispersion de solutions et 
 
 **Contenu normatif.** Le partage d’informations intersectoriel à des fins de recherche ou d’alerte épidémique précoce doit préserver la souveraineté de chaque institution, respecter le secret médical et protéger la vie privée des citoyens. Les pipelines de traitement analytique ont l’obligation d’opérer sur des données **définitivement dépouillées de tout identifiant direct** (Noms, INS). Les corrélations entre secteurs ne doivent s’effectuer qu’avec des dimensions de rapprochement **neutres et non nominatives** : l’espace géographique et le temps.
 
-**Statut : Stable.** — appliqué par [ART-0 (accords de partage)](../../referentiel/chapitres/art-0.md), [ART-4B (bases d’autorisation)](../../referentiel/chapitres/art-4b.md), [ART-4D (référentiel géospatial)](../../referentiel/chapitres/art-4d.md).
+**Statut : Stable.** — appliqué par [ART-0 (accords de partage)](../../04_architecture-repository/chapitres/art-0.md), [ART-4B (bases d’autorisation)](../../04_architecture-repository/chapitres/art-4b.md), [ART-4D (référentiel géospatial)](../../04_architecture-repository/chapitres/art-4d.md).
 
 #### Justification
 
@@ -138,28 +138,28 @@ Le croisement de données massives entre Santé, Agriculture/Élevage et Environ
 
 #### Capabilités concernées
 
-- [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md) — Interopérabilité, référentiels nationaux et infrastructure numérique partagée
-- [CAP-18: Coordination intersectorielle (One Health)](../../referentiel/capabilites/cap-18.md) — Coordination intersectorielle (One Health)
-- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md) — Cybersécurité, confidentialité et gouvernance des données personnelles
+- [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/capabilites/cap-14.md) — Interopérabilité, référentiels nationaux et infrastructure numérique partagée
+- [CAP-18: Coordination intersectorielle (One Health)](../../04_architecture-repository/capabilites/cap-18.md) — Coordination intersectorielle (One Health)
+- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/capabilites/cap-15.md) — Cybersécurité, confidentialité et gouvernance des données personnelles
 
 #### Parties prenantes concernées
 
-- [PP-03: Population](../../referentiel/parties-prenantes/pp-03.md) — Population
-- [PP-07: District, région et Ministère](../../referentiel/parties-prenantes/pp-07.md) — District, région et Ministère
-- [PP-08: Partenaires techniques et financiers](../../referentiel/parties-prenantes/pp-08.md) — Partenaires techniques et financiers
-- [PP-10: Équipes techniques (DEPSI / SIS)](../../referentiel/parties-prenantes/pp-10.md) — Équipes techniques (DEPSI / SIS)
+- [PP-03: Population](../../04_architecture-repository/parties-prenantes/pp-03.md) — Population
+- [PP-07: District, région et Ministère](../../04_architecture-repository/parties-prenantes/pp-07.md) — District, région et Ministère
+- [PP-08: Partenaires techniques et financiers](../../04_architecture-repository/parties-prenantes/pp-08.md) — Partenaires techniques et financiers
+- [PP-10: Équipes techniques (DEPSI / SIS)](../../04_architecture-repository/parties-prenantes/pp-10.md) — Équipes techniques (DEPSI / SIS)
 
 #### Fondations et chapitres garants
 
-- [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md) — Accords de partage inter-institutionnels
+- [ART-0: Accords de partage inter-institutionnels](../../04_architecture-repository/chapitres/art-0.md) — Accords de partage inter-institutionnels
 - **ART-4B** — Bases d'autorisation
 - **ART-4D** — Référentiel géospatial et d'exploitation partagé
 - **F.2** — Préservation de la souveraineté intersectorielle
-- [ART-2: Médiation et normalisation](../../referentiel/chapitres/art-2.md) — Médiation et normalisation
-- [ART-6: Analytique et restitution](../../referentiel/chapitres/art-6.md) — Analytique et restitution
+- [ART-2: Médiation et normalisation](../../04_architecture-repository/chapitres/art-2.md) — Médiation et normalisation
+- [ART-6: Analytique et restitution](../../04_architecture-repository/chapitres/art-6.md) — Analytique et restitution
 - **ART-8B** — Modélisation de relations en graphe
 - **ART-8D** — Chorégraphie inter-institutionnelle
-- [ART-4: Référentiels de métadonnées de gestion](../../referentiel/chapitres/art-4.md) — Référentiels de métadonnées de gestion
+- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/chapitres/art-4.md) — Référentiels de métadonnées de gestion
 
 ### Coordination des processus complexes décentralisés et asynchrones
 
@@ -167,7 +167,7 @@ Le croisement de données massives entre Santé, Agriculture/Élevage et Environ
 
 **Contenu normatif.** Le système national doit être capable de suivre et d'orchestrer l'état d'avancement d'un parcours de soins distribué à étapes multiples, de bout en bout. L'architecture doit tolérer les interruptions temporaires de transmission, tout en garantissant le déclenchement automatique d'alertes d'escalade ou d'annulations (compensations) fonctionnelles si un établissement de destination est saturé ou inaccessible.
 
-**Statut : Stable.** — appliqué par [ART-8A (orchestration de processus borné)](../../referentiel/chapitres/art-8a.md), [ART-5 (qualité des données)](../../referentiel/chapitres/art-5.md), [PT-14 (interopérabilité transfrontalière)](../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md).
+**Statut : Stable.** — appliqué par [ART-8A (orchestration de processus borné)](../../04_architecture-repository/chapitres/art-8a.md), [ART-5 (qualité des données)](../../04_architecture-repository/chapitres/art-5.md), [PT-14 (interopérabilité transfrontalière)](../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md).
 
 #### Justification
 
@@ -175,22 +175,22 @@ Les parcours de soins critiques s’étendent sur plusieurs jours et impliquent 
 
 #### Capabilités concernées
 
-- [CAP-02: Gestion du parcours patient, référence et contre-référence](../../referentiel/capabilites/cap-02.md) — Gestion du parcours patient, référence et contre-référence
-- [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md) — Système d'information sanitaire, données et recherche
-- [CAP-16: Gestion du portefeuille d'initiatives numériques](../../referentiel/capabilites/cap-16.md) — Gestion du portefeuille d'initiatives numériques
+- [CAP-02: Gestion du parcours patient, référence et contre-référence](../../04_architecture-repository/capabilites/cap-02.md) — Gestion du parcours patient, référence et contre-référence
+- [CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/capabilites/cap-13.md) — Système d'information sanitaire, données et recherche
+- [CAP-16: Gestion du portefeuille d'initiatives numériques](../../04_architecture-repository/capabilites/cap-16.md) — Gestion du portefeuille d'initiatives numériques
 
 #### Parties prenantes concernées
 
-- [PP-01: Patient et usager](../../referentiel/parties-prenantes/pp-01.md) — Patient et usager
-- [PP-05: Agent de santé](../../referentiel/parties-prenantes/pp-05.md) — Agent de santé
-- [PP-06: Formation sanitaire](../../referentiel/parties-prenantes/pp-06.md) — Formation sanitaire
+- [PP-01: Patient et usager](../../04_architecture-repository/parties-prenantes/pp-01.md) — Patient et usager
+- [PP-05: Agent de santé](../../04_architecture-repository/parties-prenantes/pp-05.md) — Agent de santé
+- [PP-06: Formation sanitaire](../../04_architecture-repository/parties-prenantes/pp-06.md) — Formation sanitaire
 
 #### Fondations et chapitres garants
 
 - **ART-8A** — Orchestration de processus borné
-- [ART-8: Orchestration de processus](../../referentiel/chapitres/art-8.md) — Orchestration de processus
-- [ART-5: Cohérence et qualité des données](../../referentiel/chapitres/art-5.md) — Cohérence et qualité des données
-- [PT-14: Interopérabilité transfrontalière](../../referentiel/profils/pt-14.md) — Interopérabilité transfrontalière
+- [ART-8: Orchestration de processus](../../04_architecture-repository/chapitres/art-8.md) — Orchestration de processus
+- [ART-5: Cohérence et qualité des données](../../04_architecture-repository/chapitres/art-5.md) — Cohérence et qualité des données
+- [PT-14: Interopérabilité transfrontalière](../../04_architecture-repository/profils/pt-14.md) — Interopérabilité transfrontalière
 
 <!-- END:GENERATED -->
 ## Liens

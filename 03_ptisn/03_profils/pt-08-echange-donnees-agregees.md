@@ -23,22 +23,22 @@ Périmètre : rapports périodiques d’activité et indicateurs de programme. H
 
 ## 2. Capacité CNISN
 
-- [CAP-INT-03: Échange et médiation inter-systèmes](../../referentiel/capacites/cap-int-03.md)
-- contribution à [CAP-INT-07: Accès et exposition des données analytiques](../../referentiel/capacites/cap-int-07.md)
+- [CAP-INT-03: Échange et médiation inter-systèmes](../../04_architecture-repository/capacites/cap-int-03.md)
+- contribution à [CAP-INT-07: Accès et exposition des données analytiques](../../04_architecture-repository/capacites/cap-int-07.md)
 
 ## 3. Chapitres ART applicables
 
-- [ART-1: Intégration et ingestion](../../referentiel/chapitres/art-1.md)
-- [ART-2: Médiation et normalisation](../../referentiel/chapitres/art-2.md)
-- [ART-5: Cohérence et qualité des données](../../referentiel/chapitres/art-5.md)
-- [ART-6: Analytique et restitution](../../referentiel/chapitres/art-6.md)
+- [ART-1: Intégration et ingestion](../../04_architecture-repository/chapitres/art-1.md)
+- [ART-2: Médiation et normalisation](../../04_architecture-repository/chapitres/art-2.md)
+- [ART-5: Cohérence et qualité des données](../../04_architecture-repository/chapitres/art-5.md)
+- [ART-6: Analytique et restitution](../../04_architecture-repository/chapitres/art-6.md)
 
 ## 4. Acteurs (Actors)
 
 - **Déclarant (Aggregate Data Reporter)** — établissement ou système de collecte soumettant un rapport périodique.
 - **Récepteur de données agrégées (Aggregate Data Receiver)** — entrepôt national recevant et accusant réception des rapports.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-03](../../referentiel/capacites/cap-int-03.md).
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-03](../../04_architecture-repository/capacites/cap-int-03.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -49,7 +49,7 @@ Périmètre : rapports périodiques d’activité et indicateurs de programme. H
 
 R = requis ; O = optionnel.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-03](../../referentiel/capacites/cap-int-03.md).
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-03](../../04_architecture-repository/capacites/cap-int-03.md).
 ## 6. Content Modules
 
 - **HL7 FHIR MeasureReport** : rapport d’indicateurs agrégés.
@@ -89,10 +89,10 @@ La plateforme nationale de traçabilité RMA constitue une première initiative 
 
 ## 12. Articulation avec les autres profils
 
-- [PT-07: terminologie et codification](../../referentiel/profils/pt-07.md)
-- [PT-06: référentiel des structures](../../referentiel/profils/pt-06.md)
-- [PT-09: analytique et exposition de données](../../referentiel/profils/pt-09.md)
-- [PT-01: échange interinstitutionnel](../../referentiel/profils/pt-01.md)
+- [PT-07: terminologie et codification](../../04_architecture-repository/profils/pt-07.md)
+- [PT-06: référentiel des structures](../../04_architecture-repository/profils/pt-06.md)
+- [PT-09: analytique et exposition de données](../../04_architecture-repository/profils/pt-09.md)
+- [PT-01: échange interinstitutionnel](../../04_architecture-repository/profils/pt-01.md)
 
 ## 13. Limites et dépendances
 

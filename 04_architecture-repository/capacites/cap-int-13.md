@@ -107,8 +107,8 @@ Madagascar est membre de l'Union Africaine (UA), de la Commission Économique de
 
 ### Rattachement
 
-- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md) (Sécurité, contrôle d'accès et résidence)
-- [CAP-18: Coordination intersectorielle (One Health)](../../referentiel/capabilites/cap-18.md) (Coordination intersectorielle — One Health)
-- [ART-7](../../referentiel/chapitres/art-7.md) (Sécurité, contrôle d'accès et résidence)
-- [ART-0](../../referentiel/chapitres/art-0.md) (Accords de partage inter-institutionnels)
+- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/capabilites/cap-15.md) (Sécurité, contrôle d'accès et résidence)
+- [CAP-18: Coordination intersectorielle (One Health)](../../04_architecture-repository/capabilites/cap-18.md) (Coordination intersectorielle — One Health)
+- [ART-7](../../04_architecture-repository/chapitres/art-7.md) (Sécurité, contrôle d'accès et résidence)
+- [ART-0](../../04_architecture-repository/chapitres/art-0.md) (Accords de partage inter-institutionnels)
 - [PT-14](../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md) (Profil technique transfrontalier — IPS)

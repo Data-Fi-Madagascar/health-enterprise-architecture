@@ -22,7 +22,7 @@ import re
 import sys
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ARCH_REPOSITORY_DIR = "referentiel"
+ARCH_REPOSITORY_DIR = "04_architecture-repository"
 ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
 
 # Namespace HEA
@@ -148,7 +148,7 @@ def turtle_escape(value):
 
 
 def collect_objects():
-    """Parcourt referentiel/ et renvoie la liste des objets avec leur frontmatter."""
+    """Parcourt 04_architecture-repository/ et renvoie la liste des objets avec leur frontmatter."""
     objects = []
     for path in sorted(glob.glob(os.path.join(ARCH_REPOSITORY_ROOT, "**", "*.md"),
                                   recursive=True)):
@@ -434,7 +434,7 @@ def main():
     # Collecter les objets
     objects = collect_objects()
     if not objects:
-        print("[ERREUR] Aucun objet trouvé dans referentiel/")
+        print("[ERREUR] Aucun objet trouvé dans 04_architecture-repository/")
         sys.exit(1)
 
     # Générer le RDF

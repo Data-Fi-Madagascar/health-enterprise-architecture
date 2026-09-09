@@ -17,7 +17,7 @@ related: ["PP-07", "VS-04"]
 
 La région sanitaire est le périmètre de régulation régionale du système de santé. Elle adapte les politiques nationales au contexte territorial et supervise les districts.
 
-Elle [sert la partie prenante « District, région et Ministère »](../../../referentiel/parties-prenantes/pp-07.md) et pilote le [flux de valeur de pilotage du système](../../../referentiel/flux-valeur/vs-04.md). Sa dynamique diffère selon les infrastructures et la connectivité de chaque région.
+Elle [sert la partie prenante « District, région et Ministère »](../../../04_architecture-repository/parties-prenantes/pp-07.md) et pilote le [flux de valeur de pilotage du système](../../../04_architecture-repository/flux-valeur/vs-04.md). Sa dynamique diffère selon les infrastructures et la connectivité de chaque région.
 
 ## Imbrication territoriale
 

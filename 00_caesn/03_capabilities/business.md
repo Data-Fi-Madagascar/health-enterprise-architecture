@@ -35,7 +35,7 @@ tags: ["caesn", "niveau-1", "capabilite", "CAP-05", "surveillance", "geospatial"
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-Chaque capabilité vit dans le référentiel : `referentiel/capabilites/cap-XX.md` (rôle, flux de valeur associés).
+Chaque capabilité vit dans le référentiel : `04_architecture-repository/capabilites/cap-XX.md` (rôle, flux de valeur associés).
 
 ## Catalogue des capabilités
 
@@ -53,18 +53,18 @@ La capabilité garantit que chaque citoyen accède à des services de santé ess
 - **Continuité de la prise en charge** : maintien du suivi du patient d'un niveau à l'autre
 - **Qualité minimale garantie** : respect des normes de soins et de sécurité
 
-Elle est **pivot** pour le parcours de soins et conditionne le bon déroulement du flux de valeur [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md).
+Elle est **pivot** pour le parcours de soins et conditionne le bon déroulement du flux de valeur [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../04_architecture-repository/flux-valeur/vs-01.md).
 
 #### Flux de valeur
 
-- [VS-01: Soins essentiels](../../referentiel/flux-valeur/vs-01.md)
+- [VS-01: Soins essentiels](../../04_architecture-repository/flux-valeur/vs-01.md)
 
 #### Rattachement ARTSN
 
-- [F-1: Résilience face à la réalité géographique du pays](../../referentiel/fondations/f-1.md)
-- [ART-4: Référentiels de métadonnées de gestion](../../referentiel/chapitres/art-4.md)
-- [ART-1: Intégration et ingestion](../../referentiel/chapitres/art-1.md)
-- [PT-06: Profil technique national](../../referentiel/profils/pt-06.md)
+- [F-1: Résilience face à la réalité géographique du pays](../../04_architecture-repository/fondations/f-1.md)
+- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/chapitres/art-4.md)
+- [ART-1: Intégration et ingestion](../../04_architecture-repository/chapitres/art-1.md)
+- [PT-06: Profil technique national](../../04_architecture-repository/profils/pt-06.md)
 
 #### Maturité
 
@@ -87,27 +87,27 @@ La capabilité organise le parcours du patient entre les points de service : ori
 - **Contre-référence** : retour vers l'établissement d'origine avec compte-rendu et recommandations
 - **Évacuation sanitaire** : transferts urgents nationaux et internationaux
 
-Son absence fragilise la continuité des soins ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md)) et provoque des ruptures de parcours.
+Son absence fragilise la continuité des soins ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../04_architecture-repository/flux-valeur/vs-01.md)) et provoque des ruptures de parcours.
 
 #### Scénarios couverts
 
 | Scénario | Description | Profils consommés |
 |----------|-------------|-------------------|
-| **Référence (DO-07)** | Orientation d'un patient d'un niveau de soins vers un autre (CSB → hôpital régional) | [PT-01: Profil technique national](../../referentiel/profils/pt-01.md), [PT-02: Profil technique national](../../referentiel/profils/pt-02.md) |
-| **Contre-référence (DO-08)** | Retour du patient vers l'établissement d'origine avec compte-rendu et recommandations | [PT-01: Profil technique national](../../referentiel/profils/pt-01.md), [PT-02: Profil technique national](../../referentiel/profils/pt-02.md) |
-| **Évacuation sanitaire nationale (DO-09)** | Transfert urgent entre établissements nationaux | [PT-01: Profil technique national](../../referentiel/profils/pt-01.md), [PT-02: Profil technique national](../../referentiel/profils/pt-02.md), [PT-11: Profil technique national](../../referentiel/profils/pt-11.md) |
-| **Évacuation sanitaire internationale (DO-09)** | Transfert vers un centre spécialisé à l'étranger | [PT-01: Profil technique national](../../referentiel/profils/pt-01.md), [PT-02: Profil technique national](../../referentiel/profils/pt-02.md), [PT-11: Profil technique national](../../referentiel/profils/pt-11.md), [PT-14: Interopérabilité transfrontalière](../../referentiel/profils/pt-14.md) |
+| **Référence (DO-07)** | Orientation d'un patient d'un niveau de soins vers un autre (CSB → hôpital régional) | [PT-01: Profil technique national](../../04_architecture-repository/profils/pt-01.md), [PT-02: Profil technique national](../../04_architecture-repository/profils/pt-02.md) |
+| **Contre-référence (DO-08)** | Retour du patient vers l'établissement d'origine avec compte-rendu et recommandations | [PT-01: Profil technique national](../../04_architecture-repository/profils/pt-01.md), [PT-02: Profil technique national](../../04_architecture-repository/profils/pt-02.md) |
+| **Évacuation sanitaire nationale (DO-09)** | Transfert urgent entre établissements nationaux | [PT-01: Profil technique national](../../04_architecture-repository/profils/pt-01.md), [PT-02: Profil technique national](../../04_architecture-repository/profils/pt-02.md), [PT-11: Profil technique national](../../04_architecture-repository/profils/pt-11.md) |
+| **Évacuation sanitaire internationale (DO-09)** | Transfert vers un centre spécialisé à l'étranger | [PT-01: Profil technique national](../../04_architecture-repository/profils/pt-01.md), [PT-02: Profil technique national](../../04_architecture-repository/profils/pt-02.md), [PT-11: Profil technique national](../../04_architecture-repository/profils/pt-11.md), [PT-14: Interopérabilité transfrontalière](../../04_architecture-repository/profils/pt-14.md) |
 
 #### Flux de valeur
 
-- [VS-01: Soins essentiels](../../referentiel/flux-valeur/vs-01.md)
+- [VS-01: Soins essentiels](../../04_architecture-repository/flux-valeur/vs-01.md)
 
 #### Rattachement ARTSN
 
-- [ART-8: Orchestration de processus](../../referentiel/chapitres/art-8.md)
-- [ART-3: Historisation événementielle et profils de déploiement](../../referentiel/chapitres/art-3.md)
-- [PT-01: Profil technique national](../../referentiel/profils/pt-01.md)
-- [PT-02: Profil technique national](../../referentiel/profils/pt-02.md)
+- [ART-8: Orchestration de processus](../../04_architecture-repository/chapitres/art-8.md)
+- [ART-3: Historisation événementielle et profils de déploiement](../../04_architecture-repository/chapitres/art-3.md)
+- [PT-01: Profil technique national](../../04_architecture-repository/profils/pt-01.md)
+- [PT-02: Profil technique national](../../04_architecture-repository/profils/pt-02.md)
 
 #### Maturité
 
@@ -130,19 +130,19 @@ La capabilité mesure, améliore et sécurise la qualité des services de santé
 - **Amélioration continue** : boucle de retour des données vers des actions correctives
 - **Pilotage de la performance** : tableaux de bord et restitution aux décideurs
 
-Elle alimente à la fois la qualité des soins ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md)) et le pilotage du système ([VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md)).
+Elle alimente à la fois la qualité des soins ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../04_architecture-repository/flux-valeur/vs-01.md)) et le pilotage du système ([VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../04_architecture-repository/flux-valeur/vs-04.md)).
 
 #### Flux de valeur
 
-- [VS-01: Soins essentiels](../../referentiel/flux-valeur/vs-01.md)
-- [VS-04: Pilotage du système](../../referentiel/flux-valeur/vs-04.md)
+- [VS-01: Soins essentiels](../../04_architecture-repository/flux-valeur/vs-01.md)
+- [VS-04: Pilotage du système](../../04_architecture-repository/flux-valeur/vs-04.md)
 
 #### Rattachement ARTSN
 
-- [ART-5: Cohérence et qualité des données](../../referentiel/chapitres/art-5.md)
-- [ART-6: Analytique et restitution](../../referentiel/chapitres/art-6.md)
-- [PT-13: Profil technique national](../../referentiel/profils/pt-13.md)
-- [PT-09: Profil technique national](../../referentiel/profils/pt-09.md)
+- [ART-5: Cohérence et qualité des données](../../04_architecture-repository/chapitres/art-5.md)
+- [ART-6: Analytique et restitution](../../04_architecture-repository/chapitres/art-6.md)
+- [PT-13: Profil technique national](../../04_architecture-repository/profils/pt-13.md)
+- [PT-09: Profil technique national](../../04_architecture-repository/profils/pt-09.md)
 
 #### Maturité
 
@@ -165,19 +165,19 @@ La capabilité intègre les agents communautaires, les communautés et les patie
 - **Suivi des cas** : accompagnement, observance et lien avec la formation sanitaire
 - **Renforcement de l'offre** : extension de la couverture sanitaire en zone éloignée
 
-Elle renforce la couverture sanitaire sur les flux [VS-01: soins](../../referentiel/flux-valeur/vs-01.md) et [VS-02: surveillance](../../referentiel/flux-valeur/vs-02.md).
+Elle renforce la couverture sanitaire sur les flux [VS-01: soins](../../04_architecture-repository/flux-valeur/vs-01.md) et [VS-02: surveillance](../../04_architecture-repository/flux-valeur/vs-02.md).
 
 #### Flux de valeur
 
-- [VS-01: Soins essentiels](../../referentiel/flux-valeur/vs-01.md)
-- [VS-02: Prévention et surveillance](../../referentiel/flux-valeur/vs-02.md)
+- [VS-01: Soins essentiels](../../04_architecture-repository/flux-valeur/vs-01.md)
+- [VS-02: Prévention et surveillance](../../04_architecture-repository/flux-valeur/vs-02.md)
 
 #### Rattachement ARTSN
 
-- [F-1: Résilience face à la réalité géographique du pays](../../referentiel/fondations/f-1.md)
-- [ART-2: Médiation et normalisation](../../referentiel/chapitres/art-2.md)
-- [PT-02: Profil technique national](../../referentiel/profils/pt-02.md)
-- [F-6: Observabilité](../../referentiel/fondations/f-6.md)
+- [F-1: Résilience face à la réalité géographique du pays](../../04_architecture-repository/fondations/f-1.md)
+- [ART-2: Médiation et normalisation](../../04_architecture-repository/chapitres/art-2.md)
+- [PT-02: Profil technique national](../../04_architecture-repository/profils/pt-02.md)
+- [F-6: Observabilité](../../04_architecture-repository/fondations/f-6.md)
 
 #### Maturité
 
@@ -207,18 +207,18 @@ La capabilité inclut désormais la **dimension géospatiale** :
 - **Suivi temporel** : analyse des tendances épidémiques par zone géographique
 - **Cloisonnement One Health** : surveillance conjointe santé humaine/animale/environnement par zone
 
-Son absence fragilise la surveillance sanitaire ([VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md)).
+Son absence fragilise la surveillance sanitaire ([VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../04_architecture-repository/flux-valeur/vs-02.md)).
 
 #### Flux de valeur
 
-- [VS-02: Prévention et surveillance](../../referentiel/flux-valeur/vs-02.md)
+- [VS-02: Prévention et surveillance](../../04_architecture-repository/flux-valeur/vs-02.md)
 
 #### Rattachement ARTSN
 
-- [F-1: Résilience face à la réalité géographique du pays](../../referentiel/fondations/f-1.md)
-- [ART-4D: Référentiel géospatial et d'exploitation partagé](../../referentiel/chapitres/art-4d.md)
-- [PT-05: Profil technique national](../../referentiel/profils/pt-05.md)
-- [PT-15: Surveillance One Health](../../referentiel/profils/pt-15.md)
+- [F-1: Résilience face à la réalité géographique du pays](../../04_architecture-repository/fondations/f-1.md)
+- [ART-4D: Référentiel géospatial et d'exploitation partagé](../../04_architecture-repository/chapitres/art-4d.md)
+- [PT-05: Profil technique national](../../04_architecture-repository/profils/pt-05.md)
+- [PT-15: Surveillance One Health](../../04_architecture-repository/profils/pt-15.md)
 
 #### Maturité
 
@@ -242,18 +242,18 @@ Elle couvre :
 - **Campagnes sanitaires** : organisation et monitoring des campagnes de prévention
 - **Surveillance des risques** : identification des facteurs de risque et des populations cibles
 
-Son absence fragilise la prévention et la surveillance sanitaire ([VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md)).
+Son absence fragilise la prévention et la surveillance sanitaire ([VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../04_architecture-repository/flux-valeur/vs-02.md)).
 
 #### Flux de valeur
 
-- [VS-02: Prévention et surveillance](../../referentiel/flux-valeur/vs-02.md)
+- [VS-02: Prévention et surveillance](../../04_architecture-repository/flux-valeur/vs-02.md)
 
 #### Rattachement ARTSN
 
-- [ART-4: Référentiels de métadonnées de gestion](../../referentiel/chapitres/art-4.md)
-- [ART-6: Analytique et restitution](../../referentiel/chapitres/art-6.md)
-- [PT-06: Profil technique national](../../referentiel/profils/pt-06.md)
-- [PT-07: Profil technique national](../../referentiel/profils/pt-07.md)
+- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/chapitres/art-4.md)
+- [ART-6: Analytique et restitution](../../04_architecture-repository/chapitres/art-6.md)
+- [PT-06: Profil technique national](../../04_architecture-repository/profils/pt-06.md)
+- [PT-07: Profil technique national](../../04_architecture-repository/profils/pt-07.md)
 
 #### Maturité
 
@@ -277,18 +277,18 @@ Elle couvre :
 - **Application de la protection** : prise en charge et dispense de paiement au point de service
 - **Achat stratégique** : soutien à la contractualisation et au paiement des prestataires
 
-Son absence fragilise la protection financière des ménages ([VS-03: Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md)).
+Son absence fragilise la protection financière des ménages ([VS-03: Protéger financièrement la population face aux dépenses de santé](../../04_architecture-repository/flux-valeur/vs-03.md)).
 
 #### Flux de valeur
 
-- [VS-03: Protection financière](../../referentiel/flux-valeur/vs-03.md)
+- [VS-03: Protection financière](../../04_architecture-repository/flux-valeur/vs-03.md)
 
 #### Rattachement ARTSN
 
-- [ART-4: Référentiels de métadonnées de gestion](../../referentiel/chapitres/art-4.md)
-- [ART-4C: Éligibilité et couverture](../../referentiel/chapitres/art-4c.md)
-- [PT-04: Profil technique national](../../referentiel/profils/pt-04.md)
-- [PT-12: Profil technique national](../../referentiel/profils/pt-12.md)
+- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/chapitres/art-4.md)
+- [ART-4C: Éligibilité et couverture](../../04_architecture-repository/chapitres/art-4c.md)
+- [PT-04: Profil technique national](../../04_architecture-repository/profils/pt-04.md)
+- [PT-12: Profil technique national](../../04_architecture-repository/profils/pt-12.md)
 
 #### Maturité
 
@@ -312,19 +312,19 @@ Elle couvre :
 - **Pilotage et analytique** : tableaux de bord et restitution de la performance
 - **Redevabilité** : reporting, contrôle et rendu de comptes aux instances de gouvernance
 
-Son absence fragilise le pilotage du système ([VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md)) et la protection financière ([VS-03: Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md)).
+Son absence fragilise le pilotage du système ([VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../04_architecture-repository/flux-valeur/vs-04.md)) et la protection financière ([VS-03: Protéger financièrement la population face aux dépenses de santé](../../04_architecture-repository/flux-valeur/vs-03.md)).
 
 #### Flux de valeur
 
-- [VS-03: Protection financière](../../referentiel/flux-valeur/vs-03.md)
-- [VS-04: Pilotage du système](../../referentiel/flux-valeur/vs-04.md)
+- [VS-03: Protection financière](../../04_architecture-repository/flux-valeur/vs-03.md)
+- [VS-04: Pilotage du système](../../04_architecture-repository/flux-valeur/vs-04.md)
 
 #### Rattachement ARTSN
 
-- [ART-6: Analytique et restitution](../../referentiel/chapitres/art-6.md)
-- [F-6: Observabilité](../../referentiel/fondations/f-6.md)
-- [PT-09: Profil technique national](../../referentiel/profils/pt-09.md)
-- [PT-13: Profil technique national](../../referentiel/profils/pt-13.md)
+- [ART-6: Analytique et restitution](../../04_architecture-repository/chapitres/art-6.md)
+- [F-6: Observabilité](../../04_architecture-repository/fondations/f-6.md)
+- [PT-09: Profil technique national](../../04_architecture-repository/profils/pt-09.md)
+- [PT-13: Profil technique national](../../04_architecture-repository/profils/pt-13.md)
 
 #### Maturité
 

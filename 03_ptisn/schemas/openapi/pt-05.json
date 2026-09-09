@@ -181,12 +181,12 @@
   "x-hea-applies-to": [
     "CMP-13"
   ],
-  "x-hea-source": "referentiel/profils/pt-05.md",
+  "x-hea-source": "04_architecture-repository/profils/pt-05.md",
   "x-hea-fhir-resources": [
     "Organization"
   ],
   "x-hea-data-objects": [
     "DO-23"
   ],
-  "x-hea-file": "referentiel/profils/pt-05.md"
+  "x-hea-file": "04_architecture-repository/profils/pt-05.md"
 }

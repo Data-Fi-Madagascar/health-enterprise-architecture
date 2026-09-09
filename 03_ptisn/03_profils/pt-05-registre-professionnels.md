@@ -23,14 +23,14 @@ Périmètre : identité, profession, qualification, spécialité, licence, ordre
 
 ## 2. Capacité CNISN
 
-Déclinaison de [CAP-INT-02: Registre et résolution des professionnels de santé](../../referentiel/capacites/cap-int-02.md), complétée par les capacités relatives à la gouvernance des professionnels.
+Déclinaison de [CAP-INT-02: Registre et résolution des professionnels de santé](../../04_architecture-repository/capacites/cap-int-02.md), complétée par les capacités relatives à la gouvernance des professionnels.
 
 ## 3. Chapitres ART applicables
 
-- [ART-4: Référentiels de métadonnées de gestion](../../referentiel/chapitres/art-4.md)
+- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/chapitres/art-4.md)
 - ART-4A — Résolution d’identité
-- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../referentiel/chapitres/art-7.md)
-- [ART-4C](../../referentiel/chapitres/art-4c.md)
+- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../04_architecture-repository/chapitres/art-7.md)
+- [ART-4C](../../04_architecture-repository/chapitres/art-4c.md)
 
 ## 4. Acteurs (Actors)
 
@@ -38,7 +38,7 @@ Déclinaison de [CAP-INT-02: Registre et résolution des professionnels de sant�
 - **Registre HWR (Care Services Registry / Directory)** — tient le registre national découvrable.
 - **Consommateur de services de santé (Care Services Consumer)** — système résolvant l’identité et le statut d’un professionnel.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-02](../../referentiel/capacites/cap-int-02.md).
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-02](../../04_architecture-repository/capacites/cap-int-02.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -49,7 +49,7 @@ Déclinaison de [CAP-INT-02: Registre et résolution des professionnels de sant�
 
 R = requis ; O = optionnel.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-02](../../referentiel/capacites/cap-int-02.md).
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-02](../../04_architecture-repository/capacites/cap-int-02.md).
 ## 6. Content Modules
 
 - **HL7 FHIR Practitioner** : identité et qualification du professionnel.
@@ -90,9 +90,9 @@ Conformité attestée par l’exposition découvrable (mCSD), la détermination 
 
 ## 12. Articulation avec les autres profils
 
-- [PT-04: résolution d’identité bénéficiaire](../../referentiel/profils/pt-04.md)
-- [PT-07: terminologie et codification](../../referentiel/profils/pt-07.md)
-- [PT-10: confiance, authentification, autorisation](../../referentiel/profils/pt-10.md)
+- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/profils/pt-04.md)
+- [PT-07: terminologie et codification](../../04_architecture-repository/profils/pt-07.md)
+- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/profils/pt-10.md)
 
 Le registre fournit la qualité professionnelle ; l’authentification et l’autorisation sont assurées par PT-10.
 

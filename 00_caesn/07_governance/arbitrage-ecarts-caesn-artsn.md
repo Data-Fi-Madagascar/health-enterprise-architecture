@@ -77,7 +77,7 @@ L'ARTSN rattache ART-0 (accords de partage) et ART-8D (chorégraphie inter-insti
 
 ### Proposition d'arbitrage
 
-**Option A (recommandée, retenue) : la capabilité CAP-18 « Coordination intersectorielle (One Health) » a été créée** (voir `referentiel/capabilites/cap-18.md`).
+**Option A (recommandée, retenue) : la capabilité CAP-18 « Coordination intersectorielle (One Health) » a été créée** (voir `04_architecture-repository/capabilites/cap-18.md`).
 
 | Justification |
 |---------------|
@@ -255,11 +255,11 @@ Le document source de l'ARTSN annonce **18 principes (P-01 à P-18)** ; le catal
 - **CAESN** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
 - **ARTSN** : Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
 - **point de vigilance** : Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health) (`00_caesn/07_governance/point-de-vigilance-caesn.md`)
-- **ART-4A (résolution d'identité)** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
-- **ART-4B (bases d'autorisation)** : Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
-- **ART-0 (accords de partage)** : Accords de partage inter-institutionnels (`referentiel/chapitres/art-0.md`)
-- **ART-8D (chorégraphie inter-institutionnelle)** : Chorégraphie inter-institutionnelle (`referentiel/chapitres/art-8d.md`)
-- **ART-4D (référentiel géospatial et d'exploitation partagé)** : Référentiel géospatial et d'exploitation partagé (`referentiel/chapitres/art-4d.md`)
+- **ART-4A (résolution d'identité)** : Résolution d'identité (`04_architecture-repository/chapitres/art-4a.md`)
+- **ART-4B (bases d'autorisation)** : Bases d'autorisation (`04_architecture-repository/chapitres/art-4b.md`)
+- **ART-0 (accords de partage)** : Accords de partage inter-institutionnels (`04_architecture-repository/chapitres/art-0.md`)
+- **ART-8D (chorégraphie inter-institutionnelle)** : Chorégraphie inter-institutionnelle (`04_architecture-repository/chapitres/art-8d.md`)
+- **ART-4D (référentiel géospatial et d'exploitation partagé)** : Référentiel géospatial et d'exploitation partagé (`04_architecture-repository/chapitres/art-4d.md`)
 - **Point de vigilance CAESN** : Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health) (`00_caesn/07_governance/point-de-vigilance-caesn.md`)
 - **CAESN : capabilités** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
 - **ARTSN : Annexe C** : Annexe C : Renvoi CAESN et capacités candidates (`02_artsn/08_annexes/c-renvoi-capacites-candidates.md`)

@@ -316,12 +316,12 @@
   "x-hea-applies-to": [
     "CMP-16"
   ],
-  "x-hea-source": "referentiel/profils/pt-03.md",
+  "x-hea-source": "04_architecture-repository/profils/pt-03.md",
   "x-hea-fhir-resources": [
     "CodeSystem",
     "ValueSet",
     "ConceptMap"
   ],
   "x-hea-data-objects": [],
-  "x-hea-file": "referentiel/profils/pt-03.md"
+  "x-hea-file": "04_architecture-repository/profils/pt-03.md"
 }

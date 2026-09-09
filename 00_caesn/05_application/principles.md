@@ -28,7 +28,7 @@ related: ["VS-01", "VS-02", "VS-03", "VS-04"]
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-Les principes suivants s'appliquent à toute application ou plateforme numérique du secteur santé. Chaque principe vit dans le référentiel : `referentiel/principes/aa-XX.md`.
+Les principes suivants s'appliquent à toute application ou plateforme numérique du secteur santé. Chaque principe vit dans le référentiel : `04_architecture-repository/principes/aa-XX.md`.
 
 ## Catalogue des principes applicatifs
 

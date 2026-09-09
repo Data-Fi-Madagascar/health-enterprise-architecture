@@ -283,12 +283,12 @@
   "x-hea-applies-to": [
     "CMP-10"
   ],
-  "x-hea-source": "referentiel/profils/pt-07.md",
+  "x-hea-source": "04_architecture-repository/profils/pt-07.md",
   "x-hea-fhir-resources": [
     "CodeSystem",
     "ConceptMap",
     "ValueSet"
   ],
   "x-hea-data-objects": [],
-  "x-hea-file": "referentiel/profils/pt-07.md"
+  "x-hea-file": "04_architecture-repository/profils/pt-07.md"
 }

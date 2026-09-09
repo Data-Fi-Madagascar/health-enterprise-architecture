@@ -23,14 +23,14 @@ Périmètre : référencement des services exposés, de leurs propriétaires, co
 
 ## 2. Capacité CNISN
 
-[CAP-INT-06: Catalogue des services et registre des contrats](../../referentiel/capacites/cap-int-06.md)
+[CAP-INT-06: Catalogue des services et registre des contrats](../../04_architecture-repository/capacites/cap-int-06.md)
 
 ## 3. Chapitres ART applicables
 
 - F.3 — versionnement ;
 - F.4 — rattachement aux capacités ;
-- [ART-1: interfaces](../../referentiel/chapitres/art-1.md)
-- [ART-2: contrats canoniques](../../referentiel/chapitres/art-2.md)
+- [ART-1: interfaces](../../04_architecture-repository/chapitres/art-1.md)
+- [ART-2: contrats canoniques](../../04_architecture-repository/chapitres/art-2.md)
 
 ## 4. Acteurs (Actors)
 
@@ -38,7 +38,7 @@ Périmètre : référencement des services exposés, de leurs propriétaires, co
 - **Consommateur de catalogue (Catalog Consumer)** — médiateur (PT-02) ou initiative résolvant un service et son contrat.
 - **Gouvernance des contrats (Registry Owner)** — tient le registre national et les règles de compatibilité/dépréciation.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-06](../../referentiel/capacites/cap-int-06.md).
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-06](../../04_architecture-repository/capacites/cap-int-06.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -50,7 +50,7 @@ Périmètre : référencement des services exposés, de leurs propriétaires, co
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-06](../../referentiel/capacites/cap-int-06.md).
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-06](../../04_architecture-repository/capacites/cap-int-06.md).
 ## 6. Content Modules
 
 - **Enregistrement de service** : service exposé, propriétaire, consommateurs autorisés, environnements, niveaux de service, points d’accès, politiques de sécurité.
@@ -115,7 +115,7 @@ Preuves exigées : contrat publié, version explicite, propriétaire, test de va
 
 ## 12. Articulation avec les autres profils
 
-Le catalogue et le registre sont consommés par la médiation intra-secteur ([PT-02](../../referentiel/profils/pt-02.md)) pour la validation des contrats, et par le service d’échange interinstitutionnel ([PT-01](../../referentiel/profils/pt-01.md)) pour la description de service.
+Le catalogue et le registre sont consommés par la médiation intra-secteur ([PT-02](../../04_architecture-repository/profils/pt-02.md)) pour la validation des contrats, et par le service d’échange interinstitutionnel ([PT-01](../../04_architecture-repository/profils/pt-01.md)) pour la description de service.
 
 ## 13. Limites et dépendances
 

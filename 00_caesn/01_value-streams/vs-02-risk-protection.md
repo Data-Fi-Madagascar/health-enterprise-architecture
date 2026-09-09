@@ -27,7 +27,7 @@ related: ["CAP-05", "CAP-13"]
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
-<!-- BEGIN:GENERATED mode=monographie source=referentiel/flux-valeur/vs-02.md -->
+<!-- BEGIN:GENERATED mode=monographie source=04_architecture-repository/flux-valeur/vs-02.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ## Valeur produite
@@ -36,10 +36,10 @@ La population est protégée contre les maladies transmissibles, les épidémies
 
 ## Bénéficiaires principaux
 
-- [PP-03: Population](../../referentiel/parties-prenantes/pp-03.md)
-- [PP-04: Communauté](../../referentiel/parties-prenantes/pp-04.md)
-- [PP-07: District, région et Ministère](../../referentiel/parties-prenantes/pp-07.md)
-- [PP-09: Décideurs institutionnels](../../referentiel/parties-prenantes/pp-09.md)
+- [PP-03: Population](../../04_architecture-repository/parties-prenantes/pp-03.md)
+- [PP-04: Communauté](../../04_architecture-repository/parties-prenantes/pp-04.md)
+- [PP-07: District, région et Ministère](../../04_architecture-repository/parties-prenantes/pp-07.md)
+- [PP-09: Décideurs institutionnels](../../04_architecture-repository/parties-prenantes/pp-09.md)
 
 ## Description du flux
 
@@ -47,38 +47,38 @@ Ce flux couvre l’ensemble du cycle de la santé publique, depuis l’identific
 
 ## Étapes de valeur
 
-- [VS-02-01: Identification des risques et promotion de la santé](../../referentiel/etapes-valeur/vs-02-01.md)
-- [VS-02-02: Surveillance et détection](../../referentiel/etapes-valeur/vs-02-02.md)
-- [VS-02-03: Notification et alerte](../../referentiel/etapes-valeur/vs-02-03.md)
-- [VS-02-04: Vérification et investigation](../../referentiel/etapes-valeur/vs-02-04.md)
-- [VS-02-05: Riposte](../../referentiel/etapes-valeur/vs-02-05.md)
-- [VS-02-06: Suivi de situation et clôture](../../referentiel/etapes-valeur/vs-02-06.md)
-- [VS-02-07: Capitalisation et amélioration](../../referentiel/etapes-valeur/vs-02-07.md)
+- [VS-02-01: Identification des risques et promotion de la santé](../../04_architecture-repository/etapes-valeur/vs-02-01.md)
+- [VS-02-02: Surveillance et détection](../../04_architecture-repository/etapes-valeur/vs-02-02.md)
+- [VS-02-03: Notification et alerte](../../04_architecture-repository/etapes-valeur/vs-02-03.md)
+- [VS-02-04: Vérification et investigation](../../04_architecture-repository/etapes-valeur/vs-02-04.md)
+- [VS-02-05: Riposte](../../04_architecture-repository/etapes-valeur/vs-02-05.md)
+- [VS-02-06: Suivi de situation et clôture](../../04_architecture-repository/etapes-valeur/vs-02-06.md)
+- [VS-02-07: Capitalisation et amélioration](../../04_architecture-repository/etapes-valeur/vs-02-07.md)
 
 
 ## Capabilités mobilisées
 
-- [CAP-04: Santé communautaire et engagement des communautés](../../referentiel/capabilites/cap-04.md)
-- [CAP-05: Surveillance épidémiologique, alerte, investigation et riposte](../../referentiel/capabilites/cap-05.md)
-- [CAP-06: Vaccination, prévention et promotion de la santé](../../referentiel/capabilites/cap-06.md)
-- [CAP-09: Gestion des ressources humaines en santé](../../referentiel/capabilites/cap-09.md)
-- [CAP-10: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement](../../referentiel/capabilites/cap-10.md)
-- [CAP-11: Gestion des infrastructures, équipements et maintenance](../../referentiel/capabilites/cap-11.md)
-- [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md)
-- [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md)
-- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md)
+- [CAP-04: Santé communautaire et engagement des communautés](../../04_architecture-repository/capabilites/cap-04.md)
+- [CAP-05: Surveillance épidémiologique, alerte, investigation et riposte](../../04_architecture-repository/capabilites/cap-05.md)
+- [CAP-06: Vaccination, prévention et promotion de la santé](../../04_architecture-repository/capabilites/cap-06.md)
+- [CAP-09: Gestion des ressources humaines en santé](../../04_architecture-repository/capabilites/cap-09.md)
+- [CAP-10: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement](../../04_architecture-repository/capabilites/cap-10.md)
+- [CAP-11: Gestion des infrastructures, équipements et maintenance](../../04_architecture-repository/capabilites/cap-11.md)
+- [CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/capabilites/cap-13.md)
+- [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/capabilites/cap-14.md)
+- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/capabilites/cap-15.md)
 
 <!-- END:GENERATED -->
 ## Étapes de valeur
 
-<!-- BEGIN:GENERATED mode=catalogue source=referentiel/etapes-valeur/vs-02-01.md,referentiel/etapes-valeur/vs-02-02.md,referentiel/etapes-valeur/vs-02-03.md,referentiel/etapes-valeur/vs-02-04.md,referentiel/etapes-valeur/vs-02-05.md,referentiel/etapes-valeur/vs-02-06.md,referentiel/etapes-valeur/vs-02-07.md -->
+<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/etapes-valeur/vs-02-01.md,04_architecture-repository/etapes-valeur/vs-02-02.md,04_architecture-repository/etapes-valeur/vs-02-03.md,04_architecture-repository/etapes-valeur/vs-02-04.md,04_architecture-repository/etapes-valeur/vs-02-05.md,04_architecture-repository/etapes-valeur/vs-02-06.md,04_architecture-repository/etapes-valeur/vs-02-07.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### Identification des risques et promotion de la santé
 
 #### Objectif
 
-Réaliser l'étape de valeur « Identification des risques et promotion de la santé » du flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md).
+Réaliser l'étape de valeur « Identification des risques et promotion de la santé » du flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../04_architecture-repository/flux-valeur/vs-02.md).
 
 #### Entrées
 
@@ -104,7 +104,7 @@ Couverture des campagnes de prévention, taux de vaccination
 
 #### Objectif
 
-Réaliser l'étape de valeur « Surveillance et détection » du flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md).
+Réaliser l'étape de valeur « Surveillance et détection » du flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../04_architecture-repository/flux-valeur/vs-02.md).
 
 #### Entrées
 
@@ -130,7 +130,7 @@ Complétude et promptitude des rapports, taux de signaux détectés
 
 #### Objectif
 
-Réaliser l'étape de valeur « Notification et alerte » du flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md).
+Réaliser l'étape de valeur « Notification et alerte » du flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../04_architecture-repository/flux-valeur/vs-02.md).
 
 #### Entrées
 
@@ -156,7 +156,7 @@ Délai moyen de notification d'une alerte
 
 #### Objectif
 
-Réaliser l'étape de valeur « Vérification et investigation » du flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md).
+Réaliser l'étape de valeur « Vérification et investigation » du flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../04_architecture-repository/flux-valeur/vs-02.md).
 
 #### Entrées
 
@@ -182,7 +182,7 @@ Délai d'investigation, proportion d'alertes vérifiées dans les délais
 
 #### Objectif
 
-Réaliser l'étape de valeur « Riposte » du flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md).
+Réaliser l'étape de valeur « Riposte » du flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../04_architecture-repository/flux-valeur/vs-02.md).
 
 #### Entrées
 
@@ -208,7 +208,7 @@ Délai de déploiement de la riposte, taux de contrôle de l'épidémie
 
 #### Objectif
 
-Réaliser l'étape de valeur « Suivi de situation et clôture » du flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md).
+Réaliser l'étape de valeur « Suivi de situation et clôture » du flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../04_architecture-repository/flux-valeur/vs-02.md).
 
 #### Entrées
 
@@ -234,7 +234,7 @@ Taux de létalité, durée de l'épisode épidémique
 
 #### Objectif
 
-Réaliser l'étape de valeur « Capitalisation et amélioration » du flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md).
+Réaliser l'étape de valeur « Capitalisation et amélioration » du flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../04_architecture-repository/flux-valeur/vs-02.md).
 
 #### Entrées
 
@@ -259,7 +259,7 @@ Nombre de revues après action, proportion de recommandations mises en œuvre
 <!-- END:GENERATED -->
 ## Processus métier
 
-<!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-04.md,referentiel/processus/prc-05.md,referentiel/processus/prc-06.md,referentiel/processus/prc-13.md -->
+<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/processus/prc-04.md,04_architecture-repository/processus/prc-05.md,04_architecture-repository/processus/prc-06.md,04_architecture-repository/processus/prc-13.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### Veille, prévention et surveillance sanitaire
@@ -270,8 +270,8 @@ Maintenir une veille sanitaire permanente : identification des risques et promo
 
 #### Étapes couvertes
 
-- [VS-02-01: Identification des risques et promotion de la santé](../../referentiel/etapes-valeur/vs-02-01.md)
-- [VS-02-02: Surveillance et détection](../../referentiel/etapes-valeur/vs-02-02.md)
+- [VS-02-01: Identification des risques et promotion de la santé](../../04_architecture-repository/etapes-valeur/vs-02-01.md)
+- [VS-02-02: Surveillance et détection](../../04_architecture-repository/etapes-valeur/vs-02-02.md)
 
 #### Acteurs
 
@@ -289,9 +289,9 @@ Déclencher et conduire la réponse à un signal sanitaire validé : notificati
 
 #### Étapes couvertes
 
-- [VS-02-03: Notification et alerte](../../referentiel/etapes-valeur/vs-02-03.md)
-- [VS-02-04: Vérification et investigation](../../referentiel/etapes-valeur/vs-02-04.md)
-- [VS-02-05: Riposte](../../referentiel/etapes-valeur/vs-02-05.md)
+- [VS-02-03: Notification et alerte](../../04_architecture-repository/etapes-valeur/vs-02-03.md)
+- [VS-02-04: Vérification et investigation](../../04_architecture-repository/etapes-valeur/vs-02-04.md)
+- [VS-02-05: Riposte](../../04_architecture-repository/etapes-valeur/vs-02-05.md)
 
 #### Acteurs
 
@@ -309,8 +309,8 @@ Clore l'épisode épidémique ou d'urgence et en capitaliser les leçons pour re
 
 #### Étapes couvertes
 
-- [VS-02-06: Suivi de situation et clôture](../../referentiel/etapes-valeur/vs-02-06.md)
-- [VS-02-07: Capitalisation et amélioration](../../referentiel/etapes-valeur/vs-02-07.md)
+- [VS-02-06: Suivi de situation et clôture](../../04_architecture-repository/etapes-valeur/vs-02-06.md)
+- [VS-02-07: Capitalisation et amélioration](../../04_architecture-repository/etapes-valeur/vs-02-07.md)
 
 #### Acteurs
 
@@ -326,7 +326,7 @@ Taux de létalité, durée de l'épisode épidémique, nombre de revues après a
 
 Garantir, dans le respect de la souveraineté et des accords de confiance, les échanges de données et de services de santé au-delà des frontières : résumé international du patient (IPS), sections normalisées, confiance internationale, résolution d'identité pour patients transfrontaliers et coordination épidémique régionale.
 
-Ce processus opérationnalise l'objet métier [BO-07 : Interopérabilité transfrontalière](../../referentiel/objets-metier/bo-07.md) et s'appuie sur la capacité [CAP-INT-13 : Interopérabilité transfrontalière](../../referentiel/capacites/cap-int-13.md), le chapitre [ART-7 : Sécurité, contrôle d'accès et résidence de la donnée](../../referentiel/chapitres/art-7.md) et le profil [PT-14 : Interopérabilité transfrontalière](../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md).
+Ce processus opérationnalise l'objet métier [BO-07 : Interopérabilité transfrontalière](../../04_architecture-repository/objets-metier/bo-07.md) et s'appuie sur la capacité [CAP-INT-13 : Interopérabilité transfrontalière](../../04_architecture-repository/capacites/cap-int-13.md), le chapitre [ART-7 : Sécurité, contrôle d'accès et résidence de la donnée](../../04_architecture-repository/chapitres/art-7.md) et le profil [PT-14 : Interopérabilité transfrontalière](../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md).
 
 #### Étapes clés
 

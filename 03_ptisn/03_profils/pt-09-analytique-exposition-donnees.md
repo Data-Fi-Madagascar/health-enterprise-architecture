@@ -23,14 +23,14 @@ Périmètre : exposition et restitution analytique. Hors périmètre : l’écha
 
 ## 2. Capacité CNISN
 
-[CAP-INT-07: Accès et exposition des données analytiques](../../referentiel/capacites/cap-int-07.md)
+[CAP-INT-07: Accès et exposition des données analytiques](../../04_architecture-repository/capacites/cap-int-07.md)
 
 ## 3. Chapitres ART applicables
 
-- [ART-3: Historisation événementielle et profils de déploiement](../../referentiel/chapitres/art-3.md) selon le profil retenu
-- [ART-5: Cohérence et qualité des données](../../referentiel/chapitres/art-5.md)
-- [ART-6: Analytique et restitution](../../referentiel/chapitres/art-6.md)
-- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../referentiel/chapitres/art-7.md)
+- [ART-3: Historisation événementielle et profils de déploiement](../../04_architecture-repository/chapitres/art-3.md) selon le profil retenu
+- [ART-5: Cohérence et qualité des données](../../04_architecture-repository/chapitres/art-5.md)
+- [ART-6: Analytique et restitution](../../04_architecture-repository/chapitres/art-6.md)
+- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../04_architecture-repository/chapitres/art-7.md)
 
 ## 4. Acteurs (Actors)
 
@@ -39,7 +39,7 @@ Périmètre : exposition et restitution analytique. Hors périmètre : l’écha
 - **Consommateur analytique (Data Consumer)** — tableau de bord, programme ou partenaire consultant les données exposées.
 - **Service de publication (Data Publication Service)** — diffuse les jeux de données autorisés.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-07](../../referentiel/capacites/cap-int-07.md).
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-07](../../04_architecture-repository/capacites/cap-int-07.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -50,7 +50,7 @@ Périmètre : exposition et restitution analytique. Hors périmètre : l’écha
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-07](../../referentiel/capacites/cap-int-07.md).
+*Référence — capacité CNISN mise en œuvre : [CAP-INT-07](../../04_architecture-repository/capacites/cap-int-07.md).
 ## 6. Content Modules
 
 - **HL7 FHIR MeasureReport** : indicateurs agrégés exposés.
@@ -97,9 +97,9 @@ La plateforme de traçabilité RMA est reconnue comme **première initiative de 
 
 ## 12. Articulation avec les autres profils
 
-- [PT-08: échange de données agrégées](../../referentiel/profils/pt-08.md)
-- [PT-06: référentiel des structures](../../referentiel/profils/pt-06.md)
-- [PT-07: terminologie et codification](../../referentiel/profils/pt-07.md)
+- [PT-08: échange de données agrégées](../../04_architecture-repository/profils/pt-08.md)
+- [PT-06: référentiel des structures](../../04_architecture-repository/profils/pt-06.md)
+- [PT-07: terminologie et codification](../../04_architecture-repository/profils/pt-07.md)
 
 ## 13. Limites et dépendances
 

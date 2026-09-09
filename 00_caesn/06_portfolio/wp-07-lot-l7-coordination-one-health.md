@@ -22,7 +22,7 @@ tags: ["artsn", "work-package", "wp-07", "lots"]
 
 Le lot L7 déploie les échanges de données entre santé humaine, animale et environnement pour la surveillance et la riposte coordonnée : accords interministériels, médiation intersectorielle, centre de commande One Health et corrélation des signaux faibles.
 
-Ce paquet de travail [réalise le composant de centre de commande](../../referentiel/composants/cmp-02.md), le [chapitre ART-8B (graphe de connaissances)](../../referentiel/chapitres/art-8b.md) et la [capacité « Pilotage et performance »](../../referentiel/capabilites/cap-03.md), et déploie le profil [PT-15](../../referentiel/profils/pt-15.md). Il [contribue au plateau 3](../../referentiel/plateaux/pl-03.md).
+Ce paquet de travail [réalise le composant de centre de commande](../../04_architecture-repository/composants/cmp-02.md), le [chapitre ART-8B (graphe de connaissances)](../../04_architecture-repository/chapitres/art-8b.md) et la [capacité « Pilotage et performance »](../../04_architecture-repository/capabilites/cap-03.md), et déploie le profil [PT-15](../../04_architecture-repository/profils/pt-15.md). Il [contribue au plateau 3](../../04_architecture-repository/plateaux/pl-03.md).
 
 ## Unité de temps
 
@@ -34,10 +34,10 @@ Il produit les livrables suivants : accords interministériels, médiation inter
 
 ## Objectifs
 
-Il réalise les éléments de l'architecture cible : [CMP-02](../../referentiel/composants/cmp-02.md), [ART-8B](../../referentiel/chapitres/art-8b.md), [CAP-03](../../referentiel/capabilites/cap-03.md).
+Il réalise les éléments de l'architecture cible : [CMP-02](../../04_architecture-repository/composants/cmp-02.md), [ART-8B](../../04_architecture-repository/chapitres/art-8b.md), [CAP-03](../../04_architecture-repository/capabilites/cap-03.md).
 
 ## Ressources assignées
 
-Il mobilise les rôles et acteurs suivants pour accomplir le travail : [ACT-04](../../referentiel/acteurs/act-04.md), [ACT-06](../../referentiel/acteurs/act-06.md).
+Il mobilise les rôles et acteurs suivants pour accomplir le travail : [ACT-04](../../04_architecture-repository/acteurs/act-04.md), [ACT-06](../../04_architecture-repository/acteurs/act-06.md).
 
 <!-- END:GENERATED -->

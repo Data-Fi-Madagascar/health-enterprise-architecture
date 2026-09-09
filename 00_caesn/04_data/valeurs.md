@@ -11,12 +11,12 @@ tags: ["valeur", "flux-de-valeur", "caesn"]
 
 # Valeurs produites par les flux de valeur
 
-<!-- BEGIN:GENERATED source=referentiel/valeurs/val-01.md,referentiel/valeurs/val-02.md,referentiel/valeurs/val-03.md,referentiel/valeurs/val-04.md -->
+<!-- BEGIN:GENERATED source=04_architecture-repository/valeurs/val-01.md,04_architecture-repository/valeurs/val-02.md,04_architecture-repository/valeurs/val-03.md,04_architecture-repository/valeurs/val-04.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### Soins accessibles, continus, sûrs et de qualité
 
-Valeur produite par le flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../referentiel/flux-valeur/vs-01.md).
+Valeur produite par le flux [VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../04_architecture-repository/flux-valeur/vs-01.md).
 
 Un patient ou usager reçoit des soins accessibles, continus, sûrs et de qualité, quel que soit son lieu de résidence, son niveau de revenu ou son profil.
 
@@ -30,7 +30,7 @@ Un patient ou usager reçoit des soins accessibles, continus, sûrs et de qualit
 
 ### Protection contre les maladies, épidémies et urgences sanitaires
 
-Valeur produite par le flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../referentiel/flux-valeur/vs-02.md).
+Valeur produite par le flux [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../04_architecture-repository/flux-valeur/vs-02.md).
 
 La population est protégée contre les maladies transmissibles, les épidémies, les urgences sanitaires et les catastrophes, grâce à une surveillance efficace et une capacité de réponse rapide.
 
@@ -43,7 +43,7 @@ La population est protégée contre les maladies transmissibles, les épidémies
 
 ### Protection financière contre les dépenses de santé
 
-Valeur produite par le flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md).
+Valeur produite par le flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../04_architecture-repository/flux-valeur/vs-03.md).
 
 Les ménages, en particulier les plus vulnérables, accèdent aux soins de santé dont ils ont besoin sans être contraints à des dépenses catastrophiques ni réduits à la pauvreté.
 
@@ -55,7 +55,7 @@ Les ménages, en particulier les plus vulnérables, accèdent aux soins de sant�
 
 ### Système de santé planifié, coordonné et continuellement amélioré
 
-Valeur produite par le flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md).
+Valeur produite par le flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../04_architecture-repository/flux-valeur/vs-04.md).
 
 Le système de santé est planifié, coordonné, régulé et continuellement amélioré sur la base de données fiables, dans une logique de redevabilité envers la population et les partenaires.
 
