@@ -2,7 +2,7 @@
 domain: specs
 title: Design du refactor du HEA Architecture Repository aligné TOGAF
 id: hea-togaf-repository-refactor-design
-version: "0.2"
+version: "0.3"
 status: draft
 last_reviewed: 2026-09-09
 owner: DEPSI
@@ -57,6 +57,20 @@ Le renommage physique est réalisé en une seule passe. Il n'y a pas de période
 Les objets transformés en building blocks adoptent les nouveaux identifiants `ABB-*` ou `SBB-*` comme identifiants principaux. Les anciens identifiants `CMP-*`, `SRV-*` et `PT-*` peuvent être conservés temporairement dans un champ `legacy_id`, mais ils ne restent pas l'identité canonique de l'objet.
 
 Cette décision rend la séparation TOGAF immédiatement lisible. Elle impose en contrepartie une migration stricte des liens et des index pour éviter toute rupture de traçabilité.
+
+### 2.5 Les `CAP-INT-*` sont éclatés et supprimés comme type actif
+
+Les objets `CAP-INT-*` ne sont plus considérés comme des capacités canoniques dans le métamodèle cible. L'inspection du dépôt montre qu'ils combinent plusieurs natures d'objets : finalité d'interopérabilité, services attendus, exigences de conformité, règles de gouvernance, périmètres sectoriels et références à des réalisations.
+
+La décision cible est donc la suivante :
+
+- les capacités d'entreprise restent les `CAP-*` du CAESN ;
+- les `CAP-INT-*` deviennent des paquets de migration CNISN à éclater ;
+- aucun objet actif `CAP-INT-*` ne subsiste dans le repository cible ;
+- l'ancien identifiant `CAP-INT-*` peut être conservé uniquement dans `legacy_id` ou dans une table de correspondance de migration ;
+- tous les liens actifs vers `CAP-INT-*` sont remplacés par les objets cibles appropriés : `PART-*`, `REQ-*`, `PAT-*`, `ABB-*`, éléments métier, éléments de données ou objets de gouvernance.
+
+Cette décision évite de dupliquer la carte des capacités CAESN. Le CNISN garde un rôle central, mais il produit des contraintes d'interopérabilité, des standards, des exigences, des patterns, des ABB et des preuves de conformité plutôt qu'une seconde famille de capacités.
 
 ## 3. Structure cible
 
@@ -249,7 +263,7 @@ Le dossier `02_architecture-elements/` regroupe les éléments qui décrivent l'
 
 | Concept | Dossier cible | Rôle |
 |---------|---------------|------|
-| Capability | `strategy/capabilities/` | Ce que le système de santé doit être capable de faire |
+| Capability | `strategy/capabilities/` | Capacité d'entreprise issue du CAESN, identifiée en `CAP-*` |
 | Value stream | `strategy/value-streams/` | Flux de production de valeur métier |
 | Value stage | `strategy/value-stages/` | Etape dans un flux de valeur |
 | Actor | `business/actors/` | Organisation, entité ou personne qui intervient dans l'architecture |
@@ -292,7 +306,7 @@ CAESN
   -> définit la stratégie, la valeur, les capacités et la gouvernance
 
 CNISN
-  -> impose les principes, standards, capacités et règles d'interopérabilité
+  -> impose les principes, standards, exigences, patterns, contrats et règles d'interopérabilité
 
 ARTSN
   -> traduit CAESN et CNISN en partitions, patterns, ABB et services de référence
@@ -311,6 +325,54 @@ togaf_repository_section:
 architecture_level: enterprise-transversal
 architecture_scope: interoperability
 ```
+
+### 7.1 Règle de migration des `CAP-INT-*`
+
+Les `CAP-INT-*` doivent être traités comme des sources composites. Chaque fichier est analysé section par section, puis éclaté selon la nature réelle de son contenu :
+
+| Contenu trouvé dans `CAP-INT-*` | Objet cible |
+|----------------------------------|-------------|
+| Finalité alignée avec une aptitude d'entreprise | lien vers une capacité CAESN `CAP-*` existante |
+| Périmètre d'architecture | partition `PART-*` |
+| Service attendu neutre technologiquement | architecture building block `ABB-*` |
+| Exigence de conformité | exigence `REQ-*` ou contrainte `ENF-*` |
+| Règle de contrat, homologation ou preuve | gouvernance, compliance, evidence ou architecture contract |
+| Mécanisme réutilisable d'échange ou de qualité | pattern `PAT-*` |
+| Objet métier, acteur, rôle, fonction ou processus | élément dans `02_architecture-elements/business/` |
+| Objet de données, donnée de référence ou terminologie | élément dans `02_architecture-elements/data/` |
+
+La migration ne doit pas créer de nouvelles capacités `CAP-*` sauf si une capacité CAESN manque réellement. Dans le cas courant, les `CAP-INT-*` sont rattachés aux capacités CAESN existantes via `maps_to`, `realizes`, `constrains` ou `supports`.
+
+### 7.2 Matrice initiale de reclassement des `CAP-INT-*`
+
+La table suivante fixe le reclassement cible initial. Les noms d'identifiants proposés peuvent être affinés au moment de l'implémentation, mais le type cible ne doit pas changer sans nouvel arbitrage.
+
+| Ancien objet | Nature dominante constatée | Objets cibles proposés | Capacités CAESN de rattachement |
+|--------------|----------------------------|------------------------|---------------------------------|
+| `CAP-INT-01` Résolution d'identité du bénéficiaire | Service d'identité et exigences de résolution | `ABB-IDENTITE-BENEFICIAIRE`, exigences de résolution, rattachement à `PART-TRANSVERSE-IDENTITE` | `CAP-01`, `CAP-02`, `CAP-04`, `CAP-07`, `CAP-14`, `CAP-17` |
+| `CAP-INT-02` Registre et résolution des professionnels de santé | Référentiel, rôles métier et service d'annuaire | `ABB-REGISTRE-PROFESSIONNELS`, acteurs/rôles professionnels, données de référence professionnels | `CAP-09`, `CAP-14`, `CAP-15` |
+| `CAP-INT-03` Échange et médiation inter-systèmes | Pattern d'échange et ABB de médiation | `PAT-ECHANGE-MEDIATION`, `ABB-ECHANGE-MEDIATION`, rattachement à `PART-TRANSVERSE-INTEROPERABILITE` | `CAP-13`, `CAP-14`, `CAP-18` |
+| `CAP-INT-04` Référentiel des structures et services de santé | Données de référence et service de registre | données de référence structures/services, `ABB-REFERENTIEL-STRUCTURES-SERVICES` | `CAP-11`, `CAP-13`, `CAP-14` |
+| `CAP-INT-05` Terminologie et codification communes | Terminologie et service terminologique | terminologies, codifications, `ABB-SERVICE-TERMINOLOGIE` | `CAP-13`, `CAP-14` |
+| `CAP-INT-06` Catalogue des services et registre des contrats | Contrat d'architecture et service de catalogue | `AC-CATALOGUE-SERVICES`, `ABB-CATALOGUE-CONTRATS`, evidence de publication | `CAP-12`, `CAP-14`, `CAP-16` |
+| `CAP-INT-07` Accès et exposition des données analytiques | ABB d'exposition analytique et objets de données | `ABB-EXPOSITION-DONNEES-ANALYTIQUES`, objets de données analytiques, rattachement à `PART-TRANSVERSE-ANALYTICS-PILOTAGE` | `CAP-05`, `CAP-13` |
+| `CAP-INT-08` Confiance, sécurité et autorisation | ABB de sécurité et règles de confiance | `ABB-CONFIANCE-AUTORISATION`, exigences sécurité, rattachement à `PART-TRANSVERSE-SECURITE-CONFIANCE` | `CAP-15` |
+| `CAP-INT-09` Gestion des consentements et bases d'autorisation | ABB de consentement et exigences de base légale | `ABB-GESTION-CONSENTEMENT`, exigences d'autorisation, règles de finalité | `CAP-15`, `CAP-17` |
+| `CAP-INT-10` Provenance, audit et traçabilité | ABB d'audit, preuves et evidence | `ABB-AUDIT-PROVENANCE`, evidence, règles de traçabilité | `CAP-03`, `CAP-08`, `CAP-12`, `CAP-13`, `CAP-15` |
+| `CAP-INT-11` Qualité et réconciliation | Pattern qualité et ABB de réconciliation | `PAT-QUALITE-RECONCILIATION`, `ABB-RECONCILIATION-DONNEES` | `CAP-13`, `CAP-14` |
+| `CAP-INT-12` Conformité et tests d'interopérabilité | Gouvernance d'homologation et preuve de conformité | compliance, evidence, contrats d'architecture, exigences de test | `CAP-14`, `CAP-16` |
+| `CAP-INT-13` Interopérabilité transfrontalière et confiance internationale | Partition externe et exigences transfrontalières | `PART-ECHANGE-TRANSFRONTALIER`, exigences `REQ-TF-*`, patterns d'échange international | `CAP-15`, `CAP-18` |
+| `CAP-INT-14` Échanges intersectoriels One Health | Partition sectorielle et exigences One Health | `PART-ONE-HEALTH`, exigences `REQ-OH-*`, processus intersectoriels, objets de données One Health | `CAP-18` |
+| `CAP-INT-15` Échange et traçabilité de la chaîne d'approvisionnement sanitaire | Processus logistique et ABB d'échange LMIS | processus chaîne d'approvisionnement, `ABB-ECHANGE-LOGISTIQUE-LMIS`, objets de traçabilité logistique | `CAP-06`, `CAP-10`, `CAP-11` |
+| `CAP-INT-16` Données environnementales et de résilience climatique | Données de référence environnementales et rattachement One Health | données de référence environnementales, exigences climat, rattachement à `PART-ONE-HEALTH` | `CAP-04`, `CAP-05`, `CAP-18` |
+
+### 7.3 Règles de suppression des `CAP-INT-*`
+
+La suppression des `CAP-INT-*` doit être contrôlée par trois règles :
+
+1. Un fichier `cap-int-*.md` ne peut être supprimé qu'après création des objets cibles qui reprennent son contenu utile.
+2. Un lien vers `CAP-INT-*` ne peut pas être remplacé par une capacité CAESN seule si le lien portait en réalité sur un service, une exigence, une partition ou un pattern.
+3. La traçabilité historique est conservée par `legacy_id: CAP-INT-xx` sur les objets cibles et par une table de correspondance dans le métamodèle ou les vues TOGAF.
 
 ## 8. Exigences, patterns et chapitres ART
 
@@ -367,7 +429,8 @@ Les identifiants historiques peuvent être portés par `legacy_id`, mais les lie
 La relation minimale attendue est :
 
 ```text
-CAP / CAP-INT
+CAP
+  -> PART
   -> REQ / ENF
   -> PAT / ART
   -> ABB
@@ -438,7 +501,7 @@ La chaîne cible de traçabilité est :
 VS
   -> PART
   -> Architecture Element
-  -> CAP / CAP-INT
+  -> CAP
   -> REQ / ENF
   -> PAT / ART
   -> ABB
@@ -474,11 +537,13 @@ La migration doit être progressive et contrôlée :
 5. Créer `02_architecture-elements/` et y placer les concepts stratégie, métier et données.
 6. Ajouter les champs TOGAF au schéma et aux objets prioritaires.
 7. Créer les partitions initiales.
-8. Séparer progressivement exigences, patterns, ABB et SBB.
-9. Remplacer les identifiants principaux `CMP-*`, `SRV-*` et `PT-*` par `ABB-*` et `SBB-*` lorsque l'objet devient un building block.
-10. Créer les vues TOGAF.
-11. Ajouter les règles de validation.
-12. Exécuter la validation complète du dépôt.
+8. Eclater les `CAP-INT-*` dans les objets cibles définis par la matrice de reclassement et supprimer les objets `CAP-INT-*` actifs.
+9. Remplacer tous les liens actifs vers `CAP-INT-*` par les nouveaux objets cibles ou par les capacités CAESN lorsque le lien visait réellement une capacité.
+10. Séparer progressivement exigences, patterns, ABB et SBB.
+11. Remplacer les identifiants principaux `CMP-*`, `SRV-*` et `PT-*` par `ABB-*` et `SBB-*` lorsque l'objet devient un building block.
+12. Créer les vues TOGAF.
+13. Ajouter les règles de validation.
+14. Exécuter la validation complète du dépôt.
 
 Le refactor ne doit pas changer la signification métier des objets pendant la première passe. Il doit d'abord rendre explicite la structure TOGAF, puis permettre des enrichissements de contenu ultérieurs.
 
@@ -489,7 +554,7 @@ Les éléments suivants ne doivent pas être inclus dans la première passe :
 | Elément | Raison |
 |---------|--------|
 | Réécriture complète des contenus CAESN, CNISN, ARTSN, PTISN | Risque de dérive éditoriale |
-| Suppression massive d'identifiants existants | Risque de rupture des liens et de l'historique |
+| Suppression non tracée d'identifiants existants | Risque de rupture des liens et de l'historique ; les `CAP-INT-*` font exception uniquement parce qu'ils sont remplacés par des objets cibles et conservés en `legacy_id` |
 | Refonte complète de l'ontologie OWL | A traiter après stabilisation du métamodèle Markdown |
 | Publication Open Group | A traiter après stabilisation et revue du repository |
 
@@ -502,6 +567,7 @@ Le refactor est réussi si :
 | Structure | `04_architecture-repository/` remplace `referentiel/` sans perte d'objet |
 | TOGAF | Les composants TOGAF sont visibles dans le schéma et les vues |
 | CNISN | Son rôle d'architecture transverse d'interopérabilité est explicite |
+| CAP-INT | Aucun `CAP-INT-*` actif ne subsiste ; chaque ancien objet est éclaté, relié à une capacité CAESN et conservé en traçabilité historique |
 | Partitions | Les partitions value stream, transverses, One Health et transfrontalière existent |
 | Eléments d'architecture | Les capacités, flux, fonctions, processus, acteurs, rôles et objets sont distincts des building blocks |
 | ABB/SBB | La séparation est représentée dans l'arborescence, les identifiants et le frontmatter |
@@ -517,10 +583,12 @@ Les décisions suivantes sont validées avant le plan d'implémentation :
 2. Les nouveaux identifiants `ABB-*` et `SBB-*` remplacent les anciens identifiants principaux lorsque les objets sont transformés en building blocks.
 3. Les anciens identifiants `CMP-*`, `SRV-*` et `PT-*` ne sont conservés que comme `legacy_id` temporaire pour la traçabilité.
 4. Les fonctions, processus, acteurs et rôles sont placés dans `02_architecture-elements/business/`.
+5. Les `CAP-INT-*` sont supprimés comme type actif et éclatés selon leur nature réelle.
+6. Les capacités canoniques restent les `CAP-*` du CAESN ; le CNISN ne crée pas une deuxième carte de capacités.
 
 ## 18. Questions restantes avant implémentation
 
-Deux décisions mineures restent à préciser dans le plan d'implémentation :
+Deux décisions techniques restent à préciser dans le plan d'implémentation :
 
 1. Faut-il migrer tous les `CMP-*`, `SRV-*` et `PT-*` vers `ABB-*` ou `SBB-*` dès la première passe, ou seulement ceux qui ont une relation claire avec une capacité et une exigence ?
-2. Faut-il créer des index de redirection documentaire pour les anciens identifiants, même si les liens actifs pointent vers les nouveaux objets ?
+2. La table de correspondance des anciens `CAP-INT-*` doit-elle être un fichier machine-readable dans `00_metamodel/`, une vue TOGAF dans `08_views/togaf/`, ou les deux ?
