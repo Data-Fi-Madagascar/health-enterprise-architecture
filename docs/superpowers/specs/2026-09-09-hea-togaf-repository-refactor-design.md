@@ -2,7 +2,7 @@
 domain: specs
 title: Design du refactor du HEA Architecture Repository aligné TOGAF
 id: hea-togaf-repository-refactor-design
-version: "0.1"
+version: "0.2"
 status: draft
 last_reviewed: 2026-09-09
 owner: DEPSI
@@ -50,6 +50,14 @@ Le nom cible est donc :
 
 Les artifacts deviennent une sous-vue du repository, et non le nom du repository complet.
 
+Le renommage physique est réalisé en une seule passe. Il n'y a pas de période de coexistence entre `referentiel/` et `04_architecture-repository/`, afin d'éviter deux sources de vérité concurrentes.
+
+### 2.4 Les nouveaux identifiants ABB/SBB deviennent les identifiants principaux
+
+Les objets transformés en building blocks adoptent les nouveaux identifiants `ABB-*` ou `SBB-*` comme identifiants principaux. Les anciens identifiants `CMP-*`, `SRV-*` et `PT-*` peuvent être conservés temporairement dans un champ `legacy_id`, mais ils ne restent pas l'identité canonique de l'objet.
+
+Cette décision rend la séparation TOGAF immédiatement lisible. Elle impose en contrepartie une migration stricte des liens et des index pour éviter toute rupture de traçabilité.
+
 ## 3. Structure cible
 
 La structure cible du repository structuré est la suivante :
@@ -81,21 +89,38 @@ La structure cible du repository structuré est la suivante :
     externes/
       part-echange-transfrontalier.md
 
-  02_requirements/
+  02_architecture-elements/
+    strategy/
+      capabilities/
+      value-streams/
+      value-stages/
+    business/
+      actors/
+      roles/
+      functions/
+      processes/
+      business-objects/
+      business-services/
+    data/
+      data-objects/
+      reference-data/
+      terminologies/
+
+  03_requirements/
     req-*.md
     enf-*.md
 
-  03_patterns/
+  04_patterns/
     pat-*.md
 
-  04_building-blocks/
+  05_building-blocks/
     index.md
     abb/
       abb-*.md
     sbb/
       sbb-*.md
 
-  05_governance/
+  06_governance/
     architecture-contracts/
       ac-*.md
     derogations/
@@ -104,12 +129,12 @@ La structure cible du repository structuré est la suivante :
     compliance/
     evidence/
 
-  06_migration/
+  07_migration/
     work-packages/
     plateaux/
     gaps/
 
-  07_views/
+  08_views/
     togaf/
       architecture-landscape.md
       standards-information-base.md
@@ -119,7 +144,7 @@ La structure cible du repository structuré est la suivante :
       solutions-landscape.md
       adm-traceability.md
 
-  08_baselines/
+  09_baselines/
     baseline-*.md
     target-*.md
     transition-*.md
@@ -141,6 +166,7 @@ architecture_state: target
 partitions: ["PART-VS-01"]
 building_block_role: ABB
 building_block_domain: application
+legacy_id: CMP-06
 ```
 
 ### 4.2 Vocabulaires contrôlés
@@ -155,6 +181,7 @@ building_block_domain: application
 | `partition_kind` | `value-stream`, `transverse`, `sectorielle`, `externe` |
 | `building_block_role` | `ABB`, `SBB` |
 | `building_block_domain` | `business`, `data`, `application`, `technology`, `security`, `governance` |
+| `legacy_id` | ancien identifiant conservé pour traçabilité uniquement |
 
 ### 4.3 Clarification `source` et `envelope`
 
@@ -191,7 +218,70 @@ Les partitions sont des découpages d'architecture du landscape HEA. Elles ne do
 | `PART-ONE-HEALTH` | `sectorielle` | Articulation santé humaine, animale et environnementale |
 | `PART-ECHANGE-TRANSFRONTALIER` | `externe` | Echanges internationaux et interopérabilité transfrontalière |
 
-## 6. CNISN dans le Landscape
+## 6. Eléments d'architecture
+
+Le dossier `02_architecture-elements/` regroupe les éléments qui décrivent l'entreprise, le métier et l'information sans les confondre avec les exigences, les patterns ou les building blocks.
+
+### 6.1 Structure
+
+```text
+02_architecture-elements/
+  strategy/
+    capabilities/
+    value-streams/
+    value-stages/
+
+  business/
+    actors/
+    roles/
+    functions/
+    processes/
+    business-objects/
+    business-services/
+
+  data/
+    data-objects/
+    reference-data/
+    terminologies/
+```
+
+### 6.2 Placement des concepts métier
+
+| Concept | Dossier cible | Rôle |
+|---------|---------------|------|
+| Capability | `strategy/capabilities/` | Ce que le système de santé doit être capable de faire |
+| Value stream | `strategy/value-streams/` | Flux de production de valeur métier |
+| Value stage | `strategy/value-stages/` | Etape dans un flux de valeur |
+| Actor | `business/actors/` | Organisation, entité ou personne qui intervient dans l'architecture |
+| Role | `business/roles/` | Responsabilité portée par un acteur |
+| Function | `business/functions/` | Groupe stable de comportements métier |
+| Process | `business/processes/` | Enchaînement opérationnel qui réalise une capacité |
+| Business object | `business/business-objects/` | Objet métier manipulé par les processus |
+| Business service | `business/business-services/` | Service métier rendu à un acteur ou une partie prenante |
+| Data object | `data/data-objects/` | Objet de données logique ou sémantique |
+| Reference data | `data/reference-data/` | Données de référence et nomenclatures |
+| Terminology | `data/terminologies/` | Terminologies, codifications et vocabulaires contrôlés |
+
+### 6.3 Distinction entre fonction, processus, acteur et rôle
+
+La fonction métier représente une responsabilité stable de l'entreprise, indépendante d'un déroulement précis. Le processus représente l'enchaînement opérationnel d'activités, avec un début, une fin et des dépendances. L'acteur est l'entité qui participe à l'exécution, tandis que le rôle décrit la responsabilité assumée par cet acteur.
+
+La relation cible est :
+
+```text
+Value Stream
+  -> Partition
+  -> Capability
+  -> Business Function
+  -> Business Process
+  -> Role
+  -> Actor
+  -> Business Object / Data Object
+```
+
+Cette séparation évite de faire porter aux building blocks des éléments purement métier. Les ABB et SBB doivent rester des blocs d'architecture et de solution, pas des acteurs, rôles ou processus.
+
+## 7. CNISN dans le Landscape
 
 Le CNISN occupe une position transverse. Il n'est pas seulement un niveau documentaire entre CAESN et ARTSN. Il définit les contraintes d'interopérabilité nationales qui s'appliquent aux partitions, aux ABB, aux SBB et aux preuves de conformité.
 
@@ -222,7 +312,7 @@ architecture_level: enterprise-transversal
 architecture_scope: interoperability
 ```
 
-## 7. Exigences, patterns et chapitres ART
+## 8. Exigences, patterns et chapitres ART
 
 Le refactor doit séparer trois notions actuellement proches :
 
@@ -235,17 +325,17 @@ Le refactor doit séparer trois notions actuellement proches :
 
 Cette séparation réduit la surcharge actuelle des chapitres ART, qui peuvent être lus à la fois comme chapitres, exigences et patterns. Les ART doivent rester la référence normative publiée, tandis que les patterns et exigences deviennent des objets spécialisés et traçables.
 
-## 8. Building blocks
+## 9. Building blocks
 
 Les building blocks deviennent un espace explicite du repository. Ils sont organisés en deux familles :
 
 ```text
-04_building-blocks/
+05_building-blocks/
   abb/
   sbb/
 ```
 
-### 8.1 Architecture Building Blocks
+### 9.1 Architecture Building Blocks
 
 Les ABB décrivent les blocs d'architecture attendus, neutres technologiquement. Ils répondent à des capacités, exigences, patterns et règles ARTSN.
 
@@ -253,11 +343,11 @@ Les sources candidates sont principalement :
 
 | Source actuelle | Traitement cible |
 |-----------------|------------------|
-| `composants/cmp-*` | Transformation progressive en `ABB-*` |
-| `services/srv-*` | Classification ABB si le service reste abstrait et réutilisable |
+| `composants/cmp-*` | Remplacement par des objets `ABB-*` |
+| `services/srv-*` | Remplacement par `ABB-*` si le service reste abstrait et réutilisable |
 | certains patterns ARTSN | Liaison vers ABB, sans fusion systématique |
 
-### 8.2 Solution Building Blocks
+### 9.2 Solution Building Blocks
 
 Les SBB décrivent les réalisations concrètes, vérifiables ou instanciables. Ils réalisent des ABB et sont liés aux profils PTISN, schemas, API ou artefacts techniques.
 
@@ -265,12 +355,14 @@ Les sources candidates sont principalement :
 
 | Source actuelle | Traitement cible |
 |-----------------|------------------|
-| `profils/pt-*` | Transformation progressive en `SBB-*` ou lien SBB vers profil PTISN |
+| `profils/pt-*` | Remplacement par des objets `SBB-*` |
 | OpenAPI | Spécification technique associée à un SBB |
 | FHIR profiles | Spécification technique associée à un SBB |
 | JSON Schema | Preuve ou contrat technique associé à un SBB |
 
-### 8.3 Relation minimale
+Les identifiants historiques peuvent être portés par `legacy_id`, mais les liens actifs du repository pointent vers les nouveaux objets `SBB-*`.
+
+### 9.3 Relation minimale
 
 La relation minimale attendue est :
 
@@ -284,9 +376,9 @@ CAP / CAP-INT
 
 Aucun SBB ne doit exister sans ABB réalisé. Aucun ABB ne doit exister sans capacité ou exigence justifiante.
 
-## 9. Gouvernance
+## 10. Gouvernance
 
-Le dossier `05_governance/` consolide les objets nécessaires au contrôle de l'architecture :
+Le dossier `06_governance/` consolide les objets nécessaires au contrôle de l'architecture :
 
 | Sous-dossier | Rôle |
 |--------------|------|
@@ -298,9 +390,9 @@ Le dossier `05_governance/` consolide les objets nécessaires au contrôle de l'
 
 Cette zone doit permettre de soutenir les phases G et H de l'ADM : gouvernance de l'implémentation et gestion du changement.
 
-## 10. Migration et baselines
+## 11. Migration et baselines
 
-Le dossier `06_migration/` regroupe les objets liés aux phases E et F de l'ADM :
+Le dossier `07_migration/` regroupe les objets liés aux phases E et F de l'ADM :
 
 | Type | Rôle |
 |------|------|
@@ -308,7 +400,7 @@ Le dossier `06_migration/` regroupe les objets liés aux phases E et F de l'ADM 
 | `plateaux/` | Etats intermédiaires ou cibles |
 | `gaps/` | Ecarts entre baseline, transition et cible |
 
-Le dossier `08_baselines/` conserve les architectures approuvées :
+Le dossier `09_baselines/` conserve les architectures approuvées :
 
 | Type | Rôle |
 |------|------|
@@ -318,12 +410,12 @@ Le dossier `08_baselines/` conserve les architectures approuvées :
 
 Cette séparation évite de confondre la trajectoire de migration avec les versions approuvées du landscape.
 
-## 11. Vues TOGAF
+## 12. Vues TOGAF
 
 Les vues TOGAF sont placées dans :
 
 ```text
-07_views/togaf/
+08_views/togaf/
 ```
 
 Elles ne doivent pas dupliquer les objets. Elles réorganisent les objets du repository selon les composants TOGAF :
@@ -338,13 +430,14 @@ Elles ne doivent pas dupliquer les objets. Elles réorganisent les objets du rep
 | `solutions-landscape.md` | SBB, profils PTISN, API, schemas, ressources FHIR |
 | `adm-traceability.md` | Traçabilité par phase ADM |
 
-## 12. Règles de traçabilité
+## 13. Règles de traçabilité
 
 La chaîne cible de traçabilité est :
 
 ```text
 VS
   -> PART
+  -> Architecture Element
   -> CAP / CAP-INT
   -> REQ / ENF
   -> PAT / ART
@@ -362,13 +455,15 @@ Les règles minimales à valider sont :
 | Une partition doit avoir un périmètre explicite | Eviter les partitions décoratives |
 | Une partition value stream doit référencer un `VS-*` | Garantir l'ancrage valeur |
 | Une partition transverse doit référencer les partitions auxquelles elle s'applique | Garantir la transversalité réelle |
+| Un processus doit réaliser une capacité ou une étape de valeur | Garantir la cohérence métier |
+| Un acteur doit porter un rôle ou participer à un processus | Eviter les acteurs isolés |
 | Un ABB doit référencer au moins une capacité ou une exigence | Garantir la justification architecture |
 | Un SBB doit réaliser au moins un ABB | Garantir la séparation architecture solution |
 | Une dérogation doit référencer une décision ou un contrat | Garantir la gouvernance |
 | Un work package doit contribuer à un plateau ou répondre à un gap | Garantir la trajectoire |
 | Une evidence doit référencer un contrat, SBB ou critère de conformité | Garantir la vérifiabilité |
 
-## 13. Stratégie de migration
+## 14. Stratégie de migration
 
 La migration doit être progressive et contrôlée :
 
@@ -376,16 +471,18 @@ La migration doit être progressive et contrôlée :
 2. Renommer `referentiel/` vers `04_architecture-repository/`.
 3. Mettre à jour les scripts, liens Markdown, chemins de génération et index.
 4. Déplacer `_schema.md` vers `00_metamodel/schema.md`.
-5. Ajouter les champs TOGAF au schéma et aux objets prioritaires.
-6. Créer les partitions initiales.
-7. Séparer progressivement exigences, patterns, ABB et SBB.
-8. Créer les vues TOGAF.
-9. Ajouter les règles de validation.
-10. Exécuter la validation complète du dépôt.
+5. Créer `02_architecture-elements/` et y placer les concepts stratégie, métier et données.
+6. Ajouter les champs TOGAF au schéma et aux objets prioritaires.
+7. Créer les partitions initiales.
+8. Séparer progressivement exigences, patterns, ABB et SBB.
+9. Remplacer les identifiants principaux `CMP-*`, `SRV-*` et `PT-*` par `ABB-*` et `SBB-*` lorsque l'objet devient un building block.
+10. Créer les vues TOGAF.
+11. Ajouter les règles de validation.
+12. Exécuter la validation complète du dépôt.
 
 Le refactor ne doit pas changer la signification métier des objets pendant la première passe. Il doit d'abord rendre explicite la structure TOGAF, puis permettre des enrichissements de contenu ultérieurs.
 
-## 14. Hors périmètre du premier refactor
+## 15. Hors périmètre du premier refactor
 
 Les éléments suivants ne doivent pas être inclus dans la première passe :
 
@@ -393,11 +490,10 @@ Les éléments suivants ne doivent pas être inclus dans la première passe :
 |---------|--------|
 | Réécriture complète des contenus CAESN, CNISN, ARTSN, PTISN | Risque de dérive éditoriale |
 | Suppression massive d'identifiants existants | Risque de rupture des liens et de l'historique |
-| Fusion complète CMP/SRV/PT vers ABB/SBB en une seule étape | Trop risqué sans revue objet par objet |
 | Refonte complète de l'ontologie OWL | A traiter après stabilisation du métamodèle Markdown |
 | Publication Open Group | A traiter après stabilisation et revue du repository |
 
-## 15. Critères de succès
+## 16. Critères de succès
 
 Le refactor est réussi si :
 
@@ -407,14 +503,24 @@ Le refactor est réussi si :
 | TOGAF | Les composants TOGAF sont visibles dans le schéma et les vues |
 | CNISN | Son rôle d'architecture transverse d'interopérabilité est explicite |
 | Partitions | Les partitions value stream, transverses, One Health et transfrontalière existent |
-| ABB/SBB | La séparation est représentée dans l'arborescence et le frontmatter |
+| Eléments d'architecture | Les capacités, flux, fonctions, processus, acteurs, rôles et objets sont distincts des building blocks |
+| ABB/SBB | La séparation est représentée dans l'arborescence, les identifiants et le frontmatter |
 | Gouvernance | Contrats, dérogations, conformité et preuves ont un emplacement clair |
 | Validation | `python3 scripts/validate_ref.py` reste conforme |
 | Qualité | `make check` reste vert ou documente clairement les écarts non bloquants |
 
-## 16. Questions à arbitrer avant implémentation
+## 17. Arbitrages validés
 
-Deux décisions restent à confirmer avant le plan d'implémentation :
+Les décisions suivantes sont validées avant le plan d'implémentation :
 
-1. Le renommage physique `referentiel/` vers `04_architecture-repository/` doit-il être fait en une passe, ou faut-il une période de compatibilité avec un alias documentaire ?
-2. Les objets `CMP-*`, `SRV-*` et `PT-*` doivent-ils garder leurs identifiants historiques en plus des nouveaux identifiants `ABB-*` et `SBB-*`, ou les nouveaux identifiants doivent-ils remplacer progressivement les anciens ?
+1. Le renommage physique `referentiel/` vers `04_architecture-repository/` est fait en une passe.
+2. Les nouveaux identifiants `ABB-*` et `SBB-*` remplacent les anciens identifiants principaux lorsque les objets sont transformés en building blocks.
+3. Les anciens identifiants `CMP-*`, `SRV-*` et `PT-*` ne sont conservés que comme `legacy_id` temporaire pour la traçabilité.
+4. Les fonctions, processus, acteurs et rôles sont placés dans `02_architecture-elements/business/`.
+
+## 18. Questions restantes avant implémentation
+
+Deux décisions mineures restent à préciser dans le plan d'implémentation :
+
+1. Faut-il migrer tous les `CMP-*`, `SRV-*` et `PT-*` vers `ABB-*` ou `SBB-*` dès la première passe, ou seulement ceux qui ont une relation claire avec une capacité et une exigence ?
+2. Faut-il créer des index de redirection documentaire pour les anciens identifiants, même si les liens actifs pointent vers les nouveaux objets ?
