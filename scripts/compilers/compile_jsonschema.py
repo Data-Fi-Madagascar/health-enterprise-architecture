@@ -30,6 +30,8 @@ except ImportError:
     yaml = None
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ARCH_REPOSITORY_DIR = "referentiel"
+ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
 HEA_NS = "https://healmadagascar.mg"
 SCHEMAS_NS = "%s/schemas" % HEA_NS
 JSON_SCHEMA_DRAFT = "http://json-schema.org/draft-07/schema#"
@@ -376,7 +378,7 @@ def compile_do(obj, body, output_dir, fhir_block=None):
 def collect_do_objects():
     """Collecte tous les objets de données du référentiel."""
     objects = []
-    pattern = os.path.join(REPO_ROOT, "referentiel", "objets-de-donnees", "do-*.md")
+    pattern = os.path.join(ARCH_REPOSITORY_ROOT, "objets-de-donnees", "do-*.md")
 
     for path in sorted(glob.glob(pattern)):
         text = open(path, encoding="utf-8").read()

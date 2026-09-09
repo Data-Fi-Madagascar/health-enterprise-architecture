@@ -27,13 +27,15 @@ import re
 import sys
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ARCH_REPOSITORY_DIR = "referentiel"
+ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
 
 # Répertoires parcourus pour la vérification des liens relatifs (tout le cadre).
-LINK_DIRS = ["00_caesn", "01_cnisn", "02_artsn", "03_ptisn", "referentiel"]
+LINK_DIRS = ["00_caesn", "01_cnisn", "02_artsn", "03_ptisn", ARCH_REPOSITORY_DIR]
 # Le graphe de relations (maps_to/implements/...) ne concerne que le référentiel,
 # source de vérité. Les documents « enveloppes » (00_caesn … 03_ptisn) ne portent
 # pas ces champs et ne doivent pas être traités comme des îlots.
-REL_DIRS = ["referentiel"]
+REL_DIRS = [ARCH_REPOSITORY_DIR]
 EXCLUDE_DIRS = {".git", "__pycache__", "node_modules", "dist", ".venv",
                 "graphify-out", ".agents", ".claude", "mintlify-site", "docs"}
 RELATION_KEYS = ["maps_to", "implements", "applies_to", "related",

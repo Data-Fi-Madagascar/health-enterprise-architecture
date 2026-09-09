@@ -32,6 +32,8 @@ import sys
 import tempfile
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ARCH_REPOSITORY_DIR = "referentiel"
+ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
 OPENAPI_VERSION = "3.0.3"
 SCHEMAS_NS = "https://healmadagascar.mg/schemas"
 PAYLOADS_DIR = os.path.join(REPO_ROOT, "03_ptisn", "schemas", "payloads")
@@ -1291,7 +1293,8 @@ def generate_spec(profile_id, fm, body):
 
 def collect_profiles():
     profiles = []
-    for path in sorted(glob.glob(os.path.join(REPO_ROOT, "referentiel", "profils", "pt-*.md"))):
+    profile_pattern = os.path.join(ARCH_REPOSITORY_ROOT, "profils", "pt-*.md")
+    for path in sorted(glob.glob(profile_pattern)):
         text = open(path, encoding="utf-8").read()
         fm = parse_frontmatter(text)
         if fm is None:

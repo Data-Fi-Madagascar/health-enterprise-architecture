@@ -27,6 +27,8 @@ except ImportError:
     yaml = None
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ARCH_REPOSITORY_DIR = "referentiel"
+ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
 HEA_NS = "https://healmadagascar.mg"
 FHIR_NS = "%s/fhir" % HEA_NS
 SCHEMAS_NS = "%s/schemas" % HEA_NS
@@ -208,7 +210,7 @@ def collect_nomenclatures():
     nomenclatures = []
     patterns = [
         os.path.join(REPO_ROOT, "02_artsn", "03_objets-de-donnees", "nomenclatures", "*.md"),
-        os.path.join(REPO_ROOT, "referentiel", "nomenclatures", "*.md"),
+        os.path.join(ARCH_REPOSITORY_ROOT, "nomenclatures", "*.md"),
     ]
 
     for pattern in patterns:
@@ -307,8 +309,8 @@ def validate_governance():
     # Valider tous les fichiers d'auteur
     patterns = [
         os.path.join(REPO_ROOT, "02_artsn", "03_objets-de-donnees", "nomenclatures", "*.md"),
-        os.path.join(REPO_ROOT, "referentiel", "objets-de-donnees", "do-*.md"),
-        os.path.join(REPO_ROOT, "referentiel", "profils", "pt-*.md"),
+        os.path.join(ARCH_REPOSITORY_ROOT, "objets-de-donnees", "do-*.md"),
+        os.path.join(ARCH_REPOSITORY_ROOT, "profils", "pt-*.md"),
     ]
 
     for pattern in patterns:

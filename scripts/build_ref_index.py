@@ -15,8 +15,9 @@ from collections import Counter
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-REF_ROOT = REPO_ROOT / "referentiel"
-INDEX_PATH = REF_ROOT / "_index.yaml"
+ARCH_REPOSITORY_DIR = "referentiel"
+ARCH_REPOSITORY_ROOT = REPO_ROOT / ARCH_REPOSITORY_DIR
+INDEX_PATH = ARCH_REPOSITORY_ROOT / "_index.yaml"
 CONTROLLED_STATUSES = ("draft", "active", "stable", "candidate", "deprecated")
 TYPE_ORDER = [
     "flux-valeur",
@@ -71,10 +72,10 @@ def natural_key(value):
 def collect_entries():
     entries = []
     errors = []
-    for path in sorted(REF_ROOT.rglob("*.md")):
+    for path in sorted(ARCH_REPOSITORY_ROOT.rglob("*.md")):
         if path.name in ("_index.yaml", "_schema.md"):
             continue
-        rel = path.relative_to(REF_ROOT).as_posix()
+        rel = path.relative_to(ARCH_REPOSITORY_ROOT).as_posix()
         text = path.read_text(encoding="utf-8")
         fm = parse_frontmatter(text)
         if fm is None:

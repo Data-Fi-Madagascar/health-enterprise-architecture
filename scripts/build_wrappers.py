@@ -34,7 +34,8 @@ import re
 import sys
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-REFERENTIEL = os.path.join(REPO_ROOT, "referentiel")
+ARCH_REPOSITORY_DIR = "referentiel"
+ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
 
 BANNER = "<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->"
 BEGIN_RE = re.compile(r"^<!--\s*BEGIN:GENERATED\s*(.*?)\s*-->$")
@@ -104,7 +105,7 @@ def parse_frontmatter(text):
 
 def load_objects():
     objects = {}
-    for dirpath, _dirs, files in os.walk(REFERENTIEL):
+    for dirpath, _dirs, files in os.walk(ARCH_REPOSITORY_ROOT):
         for name in files:
             if not name.endswith(".md") or name == "_schema.md":
                 continue

@@ -22,6 +22,8 @@ import re
 import sys
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ARCH_REPOSITORY_DIR = "referentiel"
+ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
 
 # Namespace HEA
 HEA_NS = "https://healmadagascar.mg/ontologie/hea#"
@@ -148,7 +150,7 @@ def turtle_escape(value):
 def collect_objects():
     """Parcourt referentiel/ et renvoie la liste des objets avec leur frontmatter."""
     objects = []
-    for path in sorted(glob.glob(os.path.join(REPO_ROOT, "referentiel", "**", "*.md"),
+    for path in sorted(glob.glob(os.path.join(ARCH_REPOSITORY_ROOT, "**", "*.md"),
                                   recursive=True)):
         if os.path.basename(path) == "_schema.md":
             continue

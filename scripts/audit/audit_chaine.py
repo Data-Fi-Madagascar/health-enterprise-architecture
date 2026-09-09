@@ -13,7 +13,12 @@ Vérifie pour chaque CAP-INT :
 import os
 import sys
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(os.path.dirname(SCRIPT_DIR))
+ARCH_REPOSITORY_DIR = "referentiel"
+ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
+
+sys.path.insert(0, SCRIPT_DIR)
 from utils import sparql_rows, section, ok, warn, err, info
 
 
