@@ -6,7 +6,7 @@ import re
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 ARCH_REPOSITORY_DIR = "04_architecture-repository"
 ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
-COMPONENTS_DIR = os.path.join(ARCH_REPOSITORY_ROOT, "composants")
+COMPONENTS_DIR = os.path.join(ARCH_REPOSITORY_ROOT, "05_building-blocks", "abb", "legacy-components")
 
 CMP_VS = {
     "cmp-19": ["VS-01", "VS-04"],

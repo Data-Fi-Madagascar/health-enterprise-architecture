@@ -37,20 +37,20 @@ ART-8 : Orchestration de processus constitue un chapitre du **cadre normatif opp
 
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (établissements hospitaliers autonomes, cliniques privées, rupture de liaison réseau d’un des nœuds), cette discipline seule permet d’assurer la continuité et la traçabilité complète du parcours patient sans bloquer les systèmes locaux et sans rompre le pipeline.
 
-- **Rattachement** : [CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/capabilites/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/capabilites/cap-14.md).
+- **Rattachement** : [CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md).
 - **Pattern cible** : Saga / Process Manager (transactions de compensation).
 
 Ce chapitre se décline en quatre sous-chapitres :
-- [ART-8A: Orchestration de processus borné](../../04_architecture-repository/chapitres/art-8a.md)
-- [ART-8B: Modélisation de relations en graphe](../../04_architecture-repository/chapitres/art-8b.md)
-- [ART-8C: Agrégation par lot](../../04_architecture-repository/chapitres/art-8c.md)
-- [ART-8D: Chorégraphie inter-institutionnelle](../../04_architecture-repository/chapitres/art-8d.md)
+- [ART-8A: Orchestration de processus borné](../../04_architecture-repository/04_patterns/artsn-rules/art-8a.md)
+- [ART-8B: Modélisation de relations en graphe](../../04_architecture-repository/04_patterns/artsn-rules/art-8b.md)
+- [ART-8C: Agrégation par lot](../../04_architecture-repository/04_patterns/artsn-rules/art-8c.md)
+- [ART-8D: Chorégraphie inter-institutionnelle](../../04_architecture-repository/04_patterns/artsn-rules/art-8d.md)
 
 ## Profils PTISN qui implémentent ce chapitre
 
 Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
 
-- [PT-02 : Médiation intra-secteur](../../04_architecture-repository/profils/pt-02.md)
+- [PT-02 : Médiation intra-secteur](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-02.md)
 
 <!-- END:GENERATED -->
 ## Liens
@@ -61,6 +61,6 @@ Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre 
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`ART-8`** : Orchestration de processus (`04_architecture-repository/chapitres/art-8.md`)
+- **`ART-8`** : Orchestration de processus (`04_architecture-repository/04_patterns/artsn-rules/art-8.md`)
 - **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

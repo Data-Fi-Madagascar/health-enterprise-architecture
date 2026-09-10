@@ -28,9 +28,9 @@ Périmètre : mouvements de stock (livraison, dispensation, transfert, destructi
 
 ## 3. Chapitres ART applicables
 
-- [ART-10: Logistique](../../04_architecture-repository/chapitres/art-10.md) — traçabilité de bout en bout des mouvements de stock ;
-- [ART-9: Garanties transactionnelles fortes](../../04_architecture-repository/chapitres/art-9.md) — intégrité et non-répudiation des échanges de mouvements ;
-- [ART-7: Résidence, contrôle d'accès et sécurité de la donnée](../../04_architecture-repository/chapitres/art-7.md) — hébergement souverain et contrôle d'accès aux données logistiques ;
+- [ART-10: Logistique](../../04_architecture-repository/04_patterns/artsn-rules/art-10.md) — traçabilité de bout en bout des mouvements de stock ;
+- [ART-9: Garanties transactionnelles fortes](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md) — intégrité et non-répudiation des échanges de mouvements ;
+- [ART-7: Résidence, contrôle d'accès et sécurité de la donnée](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md) — hébergement souverain et contrôle d'accès aux données logistiques ;
 - [STD-0009: échange des données logistiques (LMIS)](../../01_cnisn/05_standards/std-0009-echange-donnees-logistiques-lmis.md).
 
 ## 4. Acteurs (Actors)
@@ -110,7 +110,7 @@ Une solution LMIS doit au minimum supporter :
 - interfaces HL7 FHIR et/ou DHIS2 ;
 - journalisation et audit des mouvements ;
 - reprise et réconciliation en cas de défaillance réseau ;
-- intégration avec le composant [CMP-23: Chaîne logistique (LMIS)](../../04_architecture-repository/composants/cmp-23.md).
+- intégration avec le composant [CMP-23: Chaîne logistique (LMIS)](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-23.md).
 
 ## 11. Déclaration de conformité (Integration Statement)
 
@@ -121,7 +121,7 @@ Une solution LMIS doit au minimum supporter :
 
 ## 12. Articulation avec les autres profils
 
-Le profil opérationnalise le chapitre [ART-10: Logistique](../../04_architecture-repository/chapitres/art-10.md) et les capacités CNISN [CAP-INT-10: Provenance, audit et traçabilité](../../04_architecture-repository/capacites/cap-int-10.md) et [CAP-INT-15: Échange et traçabilité de la chaîne d'approvisionnement](../../04_architecture-repository/capacites/cap-int-15.md), en s'appuyant sur le composant [CMP-23: Chaîne logistique (LMIS)](../../04_architecture-repository/composants/cmp-23.md) et conformément à l'exigence [ENF-2: Intégrité des flux et traçabilité des valeurs](../../04_architecture-repository/exigences/enf-2.md). L'échange interopérable respecte la norme [STD-0009](../../01_cnisn/05_standards/std-0009-echange-donnees-logistiques-lmis.md).
+Le profil opérationnalise le chapitre [ART-10: Logistique](../../04_architecture-repository/04_patterns/artsn-rules/art-10.md) et les capacités CNISN [CAP-INT-10: Provenance, audit et traçabilité](../../04_architecture-repository/capacites/cap-int-10.md) et [CAP-INT-15: Échange et traçabilité de la chaîne d'approvisionnement](../../04_architecture-repository/capacites/cap-int-15.md), en s'appuyant sur le composant [CMP-23: Chaîne logistique (LMIS)](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-23.md) et conformément à l'exigence [ENF-2: Intégrité des flux et traçabilité des valeurs](../../04_architecture-repository/03_requirements/enf-2.md). L'échange interopérable respecte la norme [STD-0009](../../01_cnisn/05_standards/std-0009-echange-donnees-logistiques-lmis.md).
 
 ## 13. Limites et dépendances
 

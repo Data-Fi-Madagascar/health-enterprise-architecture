@@ -36,18 +36,18 @@ ART-11 : Coordination intersectorielle constitue un chapitre du **cadre normatif
 
 **Discipline de mise en œuvre.** Dès qu'une source échappe à la gouvernance directe de l'initiative (ministères co-égaux, partenaires internationaux), cette discipline seule permet de déclencher des actions conjointes lors d'un signal épidémique ou d'une urgence sanitaire sans rompre le pipeline ni la souveraineté de chaque institution.
 
-- **Rattachement** : [CAP-08: Gouvernance institutionnelle, planification, coordination et redevabilité](../../04_architecture-repository/capabilites/cap-08.md) (gouvernance, coordination, redevabilité), [CAP-18: Coordination intersectorielle (One Health)](../../04_architecture-repository/capabilites/cap-18.md) (Coordination intersectorielle — One Health), [CAP-INT-14: Échanges intersectoriels One Health](../../04_architecture-repository/capacites/cap-int-14.md) (Échanges intersectoriels One Health).
+- **Rattachement** : [CAP-08: Gouvernance institutionnelle, planification, coordination et redevabilité](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-08.md) (gouvernance, coordination, redevabilité), [CAP-18: Coordination intersectorielle (One Health)](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-18.md) (Coordination intersectorielle — One Health), [CAP-INT-14: Échanges intersectoriels One Health](../../04_architecture-repository/capacites/cap-int-14.md) (Échanges intersectoriels One Health).
 - **Modèles cibles** : accords de partage, chorégraphie inter-institutionnelle, espaces de rapprochement neutres.
-- **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../04_architecture-repository/exigences/enf-4.md) (cloisonnement inter-institutionnel One Health).
+- **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../04_architecture-repository/03_requirements/enf-4.md) (cloisonnement inter-institutionnel One Health).
 - **Statut : Stable.**
 
 ## Profils PTISN qui implémentent ce chapitre
 
 Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
 
-- [PT-01 : Échange interinstitutionnel](../../04_architecture-repository/profils/pt-01.md)
-- [PT-11 : Consentement et bases d’autorisation](../../04_architecture-repository/profils/pt-11.md)
-- [PT-15 : Surveillance One Health](../../04_architecture-repository/profils/pt-15.md)
+- [PT-01 : Échange interinstitutionnel](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md)
+- [PT-11 : Consentement et bases d’autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-11.md)
+- [PT-15 : Surveillance One Health](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-15.md)
 
 <!-- END:GENERATED -->
 ## Liens
@@ -58,6 +58,6 @@ Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre 
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`ART-11`** : Coordination intersectorielle (`04_architecture-repository/chapitres/art-11.md`)
+- **`ART-11`** : Coordination intersectorielle (`04_architecture-repository/04_patterns/artsn-rules/art-11.md`)
 - **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

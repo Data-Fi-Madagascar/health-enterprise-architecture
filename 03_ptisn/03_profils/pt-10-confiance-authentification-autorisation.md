@@ -27,10 +27,10 @@ Périmètre : identité sectorielle/fédérée, authentification, identité des 
 
 ## 3. Chapitres ART applicables
 
-- [ART-0: Accords de partage inter-institutionnels](../../04_architecture-repository/chapitres/art-0.md)
+- [ART-0: Accords de partage inter-institutionnels](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md)
 - ART-4B
-- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../04_architecture-repository/chapitres/art-7.md)
-- [ART-9: Garanties transactionnelles fortes](../../04_architecture-repository/chapitres/art-9.md) lorsque applicable
+- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
+- [ART-9: Garanties transactionnelles fortes](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md) lorsque applicable
 
 ## 4. Acteurs (Actors)
 
@@ -230,10 +230,10 @@ Conformité attestée par l’application de la matrice RBAC, le respect des pol
 
 ## 12. Articulation avec les autres profils
 
-- [PT-05: registre des professionnels](../../04_architecture-repository/profils/pt-05.md)
-- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/profils/pt-04.md)
-- [PT-11: consentement et bases d’autorisation](../../04_architecture-repository/profils/pt-11.md)
-- [PT-01: échange interinstitutionnel](../../04_architecture-repository/profils/pt-01.md)
+- [PT-05: registre des professionnels](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md)
+- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md)
+- [PT-11: consentement et bases d’autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-11.md)
+- [PT-01: échange interinstitutionnel](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md)
 
 ## 13. Limites et dépendances
 

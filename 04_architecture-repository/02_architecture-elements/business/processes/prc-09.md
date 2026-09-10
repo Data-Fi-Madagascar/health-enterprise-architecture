@@ -1,0 +1,39 @@
+---
+domain: processes
+id: PRC-09
+type: processus-metier
+niveau: "1"
+title: Remboursement et régulation des mécanismes
+status: active
+owner: Direction de la couverture santé universelle
+version: "0.0.1"
+envelope: 00_caesn/01_value-streams/vs-03-financial-protection.md
+maps_to: []
+implements: []
+applies_to: ["CAP-07", "CAP-12", "CAP-13", "CAP-14", "CAP-15"]
+related: ["VS-03-05", "VS-03-06", "VS-03-07", "VS-03", "BO-04"]
+tags: ["caesn", "niveau-1", "processus-metier", "PRC-09"]
+uses: ["CMP-03", "CMP-04", "CMP-12"]
+performed_by: ["ROL-03"]
+accesses: ['DO-16', 'DO-17']
+
+---
+# Remboursement et régulation des mécanismes
+
+## Objectif
+
+Boucler le cycle financier de la protection : facturation et traitement des demandes, remboursement des formations sanitaires, et contrôle, audit et ajustement des mécanismes pour préserver l'équité.
+
+## Étapes couvertes
+
+- [VS-03-05: Facturation et traitement des demandes de remboursement](../../strategy/value-stages/vs-03-05.md)
+- [VS-03-06: Remboursement](../../strategy/value-stages/vs-03-06.md)
+- [VS-03-07: Contrôle, audit et ajustement des mécanismes](../../strategy/value-stages/vs-03-07.md)
+
+## Acteurs
+
+Gestionnaire de la formation sanitaire, vérificateur, fonds de remboursement, fonds de couverture santé, Ministère de l'Économie et des Finances, inspection sanitaire, structures d'audit, comité technique national
+
+## Indicateurs
+
+Taux de factures rejetées, délai de validation des factures, délai moyen de remboursement, taux de remboursement effectif, proportion de contrôles réalisés, montant des anomalies détectées

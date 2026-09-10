@@ -39,7 +39,7 @@ TCO = CapEx + Σ(OpEx_année) − Valeur_résiduelle, le tout actualisé (taux d
 
 | Composante | Nature | Périodicité | Contenu |
 |------------|--------|-------------|---------|
-| **CapEx** (investissement) | Unique | À l'amorçage | Serveurs, licences, connexions, hébergement souverain ([ART-7](../../04_architecture-repository/chapitres/art-7.md)), équipements |
+| **CapEx** (investissement) | Unique | À l'amorçage | Serveurs, licences, connexions, hébergement souverain ([ART-7](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)), équipements |
 | **OpEx** (exploitation) | Récurrente | Annuelle | Maintenance, connectivité, licences récurrentes ([STD-0007 SNOMED CT](../../01_cnisn/05_standards/std-0007-snomed-ct.md)), hébergement, support |
 | **Hommes** | Récurrente | Annuelle | Formation, certification et rémunération du [workforce numérique](../03_capabilities/workforce-sante-numerique.md) |
 | **Conduite de changement** | Mixte | Par phase | Gestion du changement, accompagnement métier, conduite de bénéfices, communication |
@@ -80,7 +80,7 @@ Ces estimations couvrent le coût de possession complet (CapEx + OpEx actualisé
 
 ## Sources de financement
 
-- **Budget national** : enveloppe e-santé pluriannuelle, alignée sur la [Stratégie de Santé Numérique pour le Développement (SNSD)](../../00_caesn/00_overview/foundations.md) ; inscription dans la loi de finances.
+- **Budget national** : enveloppe e-santé pluriannuelle, alignée sur la [Stratégie de Santé Numérique pour le Développement (SNSD)](../00_overview/foundations.md) ; inscription dans la loi de finances.
 - **Partenaires techniques et financiers** : cofinancements multilatéraux/bilatéraux (IDA, agences, fonds mondiaux) conditionnés à la **conformité HEA** (voir [ADR-0010](../../01_cnisn/06_decisions/adr-0010-cadre-legal.md) et [loi e-santé](../07_governance/projet-loi-esante.md), Art. 16).
 - **Programmes verticaux** : coordonnés via le portefeuille pour mutualiser l'infrastructure et éviter la fragmentation (un socle partagé, plusieurs usages).
 - **Modalités de décaissement** : décaissement par jalon de lot ARTSN (PL-1 → PL-2 → PL-3), conditionné à l'atteinte des critères de conformité et de maturité ([annexe A](../../02_artsn/08_annexes/a-table-de-maturite.md)).
@@ -90,7 +90,7 @@ Ces estimations couvrent le coût de possession complet (CapEx + OpEx actualisé
 La budgetisation est pilotée selon un cycle clair pour garantir l'alignement investissement → valeur :
 
 1. **Programmation** : le [Bureau de Réalisation de la Valeur (BRV)](index.md) établit le plan de financement par lot à partir du TCO et de la [feuille de route des lots du portefeuille](feuille-de-route-lots.md) (dont la [réalisation technique](../../02_artsn/07_lots/index.md) est détaillée en ARTSN).
-2. **Arbitrage** : le CNASN homologue le plan (conformité) ; le comité de programmation arbitre la répartition (voir [gouvernance CAESN](../../00_caesn/07_governance/index.md)).
+2. **Arbitrage** : le CNASN homologue le plan (conformité) ; le comité de programmation arbitre la répartition (voir [gouvernance CAESN](../07_governance/index.md)).
 3. **Exécution** : décaissement par jalon, suivi de l'écart budget/réel par lot.
 4. **Contrôle** : audit de conformité et certification des profils (PTISN) conditionnent les tranches suivantes.
 5. **Révision** : mise à jour annuelle du TCO et de l'enveloppe selon la trajectoire [ADHMAT](../../02_artsn/08_annexes/h-benchmark-adhmat.md).

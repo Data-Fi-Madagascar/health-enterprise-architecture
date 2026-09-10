@@ -37,28 +37,28 @@ ART-4 : Référentiels de métadonnées de gestion constitue un chapitre du **ca
 
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (évolutions administratives, réorganisations territoriales), cette discipline seule permet de garantir qu’une analyse ou un rapport statistique passé pointe vers l’arborescence exacte en vigueur au moment précis de l’événement sans rompre le pipeline.
 
-- **Rattachement** : [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/capabilites/cap-14.md) (interopérabilité et infrastructure partagée).
+- **Rattachement** : [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md) (interopérabilité et infrastructure partagée).
 - **Normes CNISN** : [STD-0005: Identité (PIXm/PDQm)](../../01_cnisn/05_standards/std-0005-identite-pixm.md), [STD-0006: Terminologie](../../01_cnisn/05_standards/std-0006-terminologie.md), [STD-0007: SNOMED CT](../../01_cnisn/05_standards/std-0007-snomed-ct.md), [STD-0004: mADX](../../01_cnisn/05_standards/std-0004-madx.md).
 - **Objets de données** : [BO-01 Patient & identité](../../00_caesn/04_data/objets.md), [BO-03 Dispensation & produits](../../00_caesn/04_data/objets.md), [BO-04 Financement & couverture](../../00_caesn/04_data/objets.md), [BO-05 Risque & surveillance](../../00_caesn/04_data/objets.md), [BO-06 Exploitation & gestion](../../00_caesn/04_data/objets.md) (objets métier CAESN) ; voir aussi le [dictionnaire des objets de données ARTSN](../03_objets-de-donnees/index.md).
 - **Pattern cible** : SCD type 2.
-- **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../04_architecture-repository/exigences/enf-4.md) (cloisonnement inter-institutionnel).
+- **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../04_architecture-repository/03_requirements/enf-4.md) (cloisonnement inter-institutionnel).
 - **Statut : Stable.**
 
 Ce chapitre se décline en quatre sous-chapitres :
-- [ART-4A: Résolution d’identité](../../04_architecture-repository/chapitres/art-4a.md)
-- [ART-4B: Bases d’autorisation](../../04_architecture-repository/chapitres/art-4b.md)
-- [ART-4C: Éligibilité et couverture](../../04_architecture-repository/chapitres/art-4c.md)
-- [ART-4D: Référentiel géospatial et d’exploitation partagé](../../04_architecture-repository/chapitres/art-4d.md)
+- [ART-4A: Résolution d’identité](../../04_architecture-repository/04_patterns/artsn-rules/art-4a.md)
+- [ART-4B: Bases d’autorisation](../../04_architecture-repository/04_patterns/artsn-rules/art-4b.md)
+- [ART-4C: Éligibilité et couverture](../../04_architecture-repository/04_patterns/artsn-rules/art-4c.md)
+- [ART-4D: Référentiel géospatial et d’exploitation partagé](../../04_architecture-repository/04_patterns/artsn-rules/art-4d.md)
 
 ## Profils PTISN qui implémentent ce chapitre
 
 Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
 
-- [PT-04 : Résolution d’identité du bénéficiaire](../../04_architecture-repository/profils/pt-04.md)
-- [PT-05 : Registre des professionnels](../../04_architecture-repository/profils/pt-05.md)
-- [PT-06 : Référentiel des structures et services de santé](../../04_architecture-repository/profils/pt-06.md)
-- [PT-07 : Terminologie et codification](../../04_architecture-repository/profils/pt-07.md)
-- [PT-13 : Qualité et réconciliation](../../04_architecture-repository/profils/pt-13.md)
+- [PT-04 : Résolution d’identité du bénéficiaire](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md)
+- [PT-05 : Registre des professionnels](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md)
+- [PT-06 : Référentiel des structures et services de santé](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-06.md)
+- [PT-07 : Terminologie et codification](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-07.md)
+- [PT-13 : Qualité et réconciliation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-13.md)
 
 <!-- END:GENERATED -->
 ## Liens
@@ -69,6 +69,6 @@ Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre 
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`ART-4`** : Référentiels de métadonnées de gestion (`04_architecture-repository/chapitres/art-4.md`)
+- **`ART-4`** : Référentiels de métadonnées de gestion (`04_architecture-repository/04_patterns/artsn-rules/art-4.md`)
 - **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

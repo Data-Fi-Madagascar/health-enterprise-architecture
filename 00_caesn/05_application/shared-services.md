@@ -43,7 +43,7 @@ Certains services doivent être conçus comme des services nationaux partagés, 
 
 ## Composants des services partagés
 
-<!-- BEGIN:GENERATED source=04_architecture-repository/composants/cmp-12.md,04_architecture-repository/composants/cmp-13.md -->
+<!-- BEGIN:GENERATED source=04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-12.md,04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-13.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### CMP-12 : Référentiels nationaux et données de référence
@@ -85,31 +85,31 @@ Identité patient/bénéficiaire, identité agent, authentification et gestion d
 
 ## Références
 
-- [matrice de lecture](../../00_caesn/reading-matrix.md)
-- [VS-01](../../04_architecture-repository/flux-valeur/vs-01.md)
-- [VS-02](../../04_architecture-repository/flux-valeur/vs-02.md)
-- [VS-03](../../04_architecture-repository/flux-valeur/vs-03.md)
-- [VS-04](../../04_architecture-repository/flux-valeur/vs-04.md)
-- [PRC-01](../../04_architecture-repository/processus/prc-01.md)
-- [PRC-07](../../04_architecture-repository/processus/prc-07.md)
-- [PRC-10](../../04_architecture-repository/processus/prc-10.md)
+- [matrice de lecture](../reading-matrix.md)
+- [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
+- [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)
+- [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md)
+- [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
+- [PRC-01](../../04_architecture-repository/02_architecture-elements/business/processes/prc-01.md)
+- [PRC-07](../../04_architecture-repository/02_architecture-elements/business/processes/prc-07.md)
+- [PRC-10](../../04_architecture-repository/02_architecture-elements/business/processes/prc-10.md)
 - [CAP-INT-02](../../04_architecture-repository/capacites/cap-int-02.md)
 - [CAP-INT-04](../../04_architecture-repository/capacites/cap-int-04.md)
 - [CAP-INT-05](../../04_architecture-repository/capacites/cap-int-05.md)
-- [ART-4](../../04_architecture-repository/chapitres/art-4.md)
-- [ART-4D](../../04_architecture-repository/chapitres/art-4d.md)
-- [fiche](../../04_architecture-repository/composants/cmp-12.md)
-- [PRC-05](../../04_architecture-repository/processus/prc-05.md)
-- [PRC-09](../../04_architecture-repository/processus/prc-09.md)
+- [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
+- [ART-4D](../../04_architecture-repository/04_patterns/artsn-rules/art-4d.md)
+- [fiche](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-12.md)
+- [PRC-05](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md)
+- [PRC-09](../../04_architecture-repository/02_architecture-elements/business/processes/prc-09.md)
 - [CAP-INT-01](../../04_architecture-repository/capacites/cap-int-01.md)
 - [CAP-INT-06](../../04_architecture-repository/capacites/cap-int-06.md)
 - [CAP-INT-08](../../04_architecture-repository/capacites/cap-int-08.md)
 - [CAP-INT-09](../../04_architecture-repository/capacites/cap-int-09.md)
-- [ART-1](../../04_architecture-repository/chapitres/art-1.md)
-- [ART-2](../../04_architecture-repository/chapitres/art-2.md)
-- [ART-4A](../../04_architecture-repository/chapitres/art-4a.md)
-- [ART-4B](../../04_architecture-repository/chapitres/art-4b.md)
-- [ART-7](../../04_architecture-repository/chapitres/art-7.md)
-- [Paysage applicatif cible](../../00_caesn/05_application/layers.md)
-- [Domaines applicatifs](../../00_caesn/05_application/application-domains.md)
-- [Référentiels nationaux](../../00_caesn/04_data/referentials.md)
+- [ART-1](../../04_architecture-repository/04_patterns/artsn-rules/art-1.md)
+- [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md)
+- [ART-4A](../../04_architecture-repository/04_patterns/artsn-rules/art-4a.md)
+- [ART-4B](../../04_architecture-repository/04_patterns/artsn-rules/art-4b.md)
+- [ART-7](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
+- [Paysage applicatif cible](layers.md)
+- [Domaines applicatifs](application-domains.md)
+- [Référentiels nationaux](../04_data/referentials.md)

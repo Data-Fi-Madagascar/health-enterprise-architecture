@@ -125,7 +125,7 @@ Le PTISN s'articule avec les trois niveaux supérieurs de la hiérarchie documen
 | 2 : CNISN | Cadre National d'Interopérabilité | ../01_cnisn/index.md |
 | 3 : ARTSN | Architecture de Référence Technique | ../02_artsn/index.md |
 | : | Portefeuille national d'initiatives | ../00_caesn/06_portfolio/index.md |
-| : | Référentiel des profils | ../04_architecture-repository/profils/ |
+| : | Référentiel des profils | ../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/ |
 
 ## 7. Documents complémentaires
 

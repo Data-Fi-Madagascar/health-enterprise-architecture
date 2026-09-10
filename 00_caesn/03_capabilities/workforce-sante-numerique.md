@@ -29,9 +29,9 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 
 | Rôle | Responsabilité HEA | Référence |
 |------|--------------------|-----------|
-| Architecte d'entreprise santé numérique | Cohérence du CAESN, homologation | [Gouvernance](../../00_caesn/07_governance/index.md) |
-| Responsable d'interopérabilité | Conduite des échanges, X-Road, FHIR | [ART-2](../../04_architecture-repository/chapitres/art-2.md), [ART-9](../../04_architecture-repository/chapitres/art-9.md) |
-| Data steward | Qualité, résidence, minimisation | [ART-5](../../04_architecture-repository/chapitres/art-5.md), [ART-7](../../04_architecture-repository/chapitres/art-7.md) |
+| Architecte d'entreprise santé numérique | Cohérence du CAESN, homologation | [Gouvernance](../07_governance/index.md) |
+| Responsable d'interopérabilité | Conduite des échanges, X-Road, FHIR | [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md) |
+| Data steward | Qualité, résidence, minimisation | [ART-5](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md), [ART-7](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md) |
 | Privacy / conformité officer | Loi 2014-038, consentement | [ADR-0005](../../01_cnisn/06_decisions/adr-0005-consentement.md), [projet de loi e-santé](../07_governance/projet-loi-esante.md) |
 | Chef de projet interopérabilité | Déploiement des profils PTISN | [PTISN](../../03_ptisn/index.md) |
 
@@ -40,7 +40,7 @@ Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensem
 Le cadre prescrit trois niveaux de montée en compétence :
 
 1. **Sensibilisation** (décideurs, responsables de flux): principes d'architecture, souveraineté, valeur.
-2. **Compétence métier** (architectes, interopérabilité, data stewards) standards HEA : [STD-0001 HL7 FHIR R4](../../01_cnisn/05_standards/std-0001-interopabilite-fhir.md), [STD-0003 X-Road](../../01_cnisn/05_standards/std-0003-x-road.md), [STD-0005 PIXm/PDQm](../../01_cnisn/05_standards/std-0005-identite-pixm.md), modèles [OpenHIE](../../00_caesn/00_overview/foundations.md) et [GovStack](../../00_caesn/00_overview/foundations.md).
+2. **Compétence métier** (architectes, interopérabilité, data stewards) standards HEA : [STD-0001 HL7 FHIR R4](../../01_cnisn/05_standards/std-0001-interopabilite-fhir.md), [STD-0003 X-Road](../../01_cnisn/05_standards/std-0003-x-road.md), [STD-0005 PIXm/PDQm](../../01_cnisn/05_standards/std-0005-identite-pixm.md), modèles [OpenHIE](../00_overview/foundations.md) et [GovStack](../00_overview/foundations.md).
 3. **Certification** (auditeurs d'homologation, formateurs): conformité CNISN, sécurité [STD-0002](../../01_cnisn/05_standards/std-0002-securite-chiffrement.md), audit [ADR-0008](../../01_cnisn/06_decisions/adr-0008-atna.md).
 
 ## Modalités de déploiement

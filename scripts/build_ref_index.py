@@ -19,31 +19,49 @@ ARCH_REPOSITORY_DIR = "04_architecture-repository"
 ARCH_REPOSITORY_ROOT = REPO_ROOT / ARCH_REPOSITORY_DIR
 INDEX_PATH = ARCH_REPOSITORY_ROOT / "_index.yaml"
 CONTROLLED_STATUSES = ("draft", "active", "stable", "candidate", "deprecated")
+EXCLUDED_ARCH_REPOSITORY_DOCS = {
+    "00_metamodel/schema.md",
+    "00_metamodel/togaf-mapping.md",
+    "00_metamodel/archimate-mapping.md",
+    "00_metamodel/cap-int-migration.yaml",
+}
 TYPE_ORDER = [
+    "architecture-partition",
     "flux-valeur",
     "capabilite",
     "principe",
+    "stakeholder",
+    "business-value",
     "etape-valeur",
+    "architecture-building-block",
+    "solution-building-block",
     "processus-metier",
+    "acteur",
+    "role",
+    "business-location",
     "composant-applicatif",
     "composant-infrastructure",
     "composant-securite",
+    "service",
     "registre-gouvernance",
     "partie-prenante",
-    "acteur",
-    "role",
     "lieu",
-    "service",
     "capacite",
+    "architecture-pattern",
     "fondation",
     "exigence",
     "chapitre",
     "profil",
+    "architecture-contract",
+    "compliance-rule",
+    "evidence",
     "work-package",
     "plateau",
     "gap",
     "objet-de-donnees",
     "objet-metier",
+    "reference-data",
+    "terminology",
     "valeur",
 ]
 
@@ -73,9 +91,9 @@ def collect_entries():
     entries = []
     errors = []
     for path in sorted(ARCH_REPOSITORY_ROOT.rglob("*.md")):
-        if path.name in ("_index.yaml", "_schema.md"):
-            continue
         rel = path.relative_to(ARCH_REPOSITORY_ROOT).as_posix()
+        if rel in EXCLUDED_ARCH_REPOSITORY_DOCS:
+            continue
         text = path.read_text(encoding="utf-8")
         fm = parse_frontmatter(text)
         if fm is None:

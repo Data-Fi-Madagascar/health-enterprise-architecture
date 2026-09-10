@@ -85,7 +85,7 @@ Madagascar est membre de l'Union Africaine (UA), de la Commission Économique de
 
 | Exigence | Description |
 |----------|-------------|
-| **EXG-TF-01** | Tout flux transfrontalier doit être couvert par un accord explicite ([P-INT-10: Accord préalable](../principes/p-int-10.md)) |
+| **EXG-TF-01** | Tout flux transfrontalier doit être couvert par un accord explicite ([P-INT-10: Accord préalable](../02_architecture-elements/motivation/principles/p-int-10.md)) |
 | **EXG-TF-02** | Le consentement du patient doit être obtenu pour tout échange sortant sauf obligation légale |
 | **EXG-TF-03** | Seules les données minimisées nécessaires à la finalité peuvent être exportées |
 | **EXG-TF-04** | Tous les flux transfrontaliers doivent être journalisés et auditable |
@@ -97,18 +97,18 @@ Madagascar est membre de l'Union Africaine (UA), de la Commission Économique de
 ### Principes associés
 
 
-- [P-INT-01: Autorité désignée](../principes/p-int-01.md) (Autorité désignée) : l'autorité nationale reste l'autorité pour les données malagasy, même lors d'échanges ;
-- [P-INT-05: Contrat explicite](../principes/p-int-05.md) (Contrat explicite) : tout flux transfrontalier nécessite un accord bilatéral ou multilatéral ;
-- [P-INT-10: Accord préalable](../principes/p-int-10.md) (Accord préalable) : accord obligatoire avant tout échange avec une institution étrangère ;
-- [P-INT-14: Base d’autorisation explicite](../principes/p-int-14.md) (Base d'autorisation explicite) : base légale documentée pour chaque type de flux sortant ;
-- [P-INT-16: Résidence et non-réplication](../principes/p-int-16.md) (Résidence) : les contraintes de résidence s'appliquent aux flux transfrontaliers ;
-- [P-INT-17: Minimisation](../principes/p-int-17.md) (Minimisation) : minimisation renforcée pour les échanges internationaux ;
-- [P-INT-19: Neutralité technologique](../principes/p-int-19.md) (Neutralité technologique) : le GDHCN est un cadre de confiance, pas un produit.
+- [P-INT-01: Autorité désignée](../02_architecture-elements/motivation/principles/p-int-01.md) (Autorité désignée) : l'autorité nationale reste l'autorité pour les données malagasy, même lors d'échanges ;
+- [P-INT-05: Contrat explicite](../02_architecture-elements/motivation/principles/p-int-05.md) (Contrat explicite) : tout flux transfrontalier nécessite un accord bilatéral ou multilatéral ;
+- [P-INT-10: Accord préalable](../02_architecture-elements/motivation/principles/p-int-10.md) (Accord préalable) : accord obligatoire avant tout échange avec une institution étrangère ;
+- [P-INT-14: Base d’autorisation explicite](../02_architecture-elements/motivation/principles/p-int-14.md) (Base d'autorisation explicite) : base légale documentée pour chaque type de flux sortant ;
+- [P-INT-16: Résidence et non-réplication](../02_architecture-elements/motivation/principles/p-int-16.md) (Résidence) : les contraintes de résidence s'appliquent aux flux transfrontaliers ;
+- [P-INT-17: Minimisation](../02_architecture-elements/motivation/principles/p-int-17.md) (Minimisation) : minimisation renforcée pour les échanges internationaux ;
+- [P-INT-19: Neutralité technologique](../02_architecture-elements/motivation/principles/p-int-19.md) (Neutralité technologique) : le GDHCN est un cadre de confiance, pas un produit.
 
 ### Rattachement
 
-- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/capabilites/cap-15.md) (Sécurité, contrôle d'accès et résidence)
-- [CAP-18: Coordination intersectorielle (One Health)](../../04_architecture-repository/capabilites/cap-18.md) (Coordination intersectorielle — One Health)
-- [ART-7](../../04_architecture-repository/chapitres/art-7.md) (Sécurité, contrôle d'accès et résidence)
-- [ART-0](../../04_architecture-repository/chapitres/art-0.md) (Accords de partage inter-institutionnels)
+- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../02_architecture-elements/strategy/capabilities/cap-15.md) (Sécurité, contrôle d'accès et résidence)
+- [CAP-18: Coordination intersectorielle (One Health)](../02_architecture-elements/strategy/capabilities/cap-18.md) (Coordination intersectorielle — One Health)
+- [ART-7](../04_patterns/artsn-rules/art-7.md) (Sécurité, contrôle d'accès et résidence)
+- [ART-0](../04_patterns/artsn-rules/art-0.md) (Accords de partage inter-institutionnels)
 - [PT-14](../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md) (Profil technique transfrontalier — IPS)

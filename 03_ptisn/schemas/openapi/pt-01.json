@@ -171,8 +171,8 @@
   "x-hea-applies-to": [
     "CMP-06"
   ],
-  "x-hea-source": "04_architecture-repository/profils/pt-01.md",
+  "x-hea-source": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md",
   "x-hea-fhir-resources": [],
   "x-hea-data-objects": [],
-  "x-hea-file": "04_architecture-repository/profils/pt-01.md"
+  "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md"
 }

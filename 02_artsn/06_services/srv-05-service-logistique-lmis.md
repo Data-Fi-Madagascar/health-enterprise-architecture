@@ -25,7 +25,7 @@ tags: ["artsn", "service", "srv-05", "patterns"]
 
 Le service logistique (LMIS) assure la continuité de la chaîne d'approvisionnement — médicaments, vaccins, intrants, équipements — par la traçabilité de chaque mouvement de stock. Il réconcilie les entrées, sorties et soldes en mode dégradé comme en ligne.
 
-Service de catégorie *applicatif*, il [sert la formation sanitaire](../../04_architecture-repository/parties-prenantes/pp-06.md), [réalise la capacité « Chaîne logistique et traçabilité »](../../04_architecture-repository/capacites/cap-int-10.md), [accède à l'objet de données logistique](../../04_architecture-repository/objets-de-donnees/do-03.md) et [met en œuvre le chapitre ART-10 (logistique)](../../04_architecture-repository/chapitres/art-10.md). Il s'appuie sur le [composant de chaîne logistique](../../04_architecture-repository/composants/cmp-23.md).
+Service de catégorie *applicatif*, il [sert la formation sanitaire](../../04_architecture-repository/02_architecture-elements/motivation/stakeholders/pp-06.md), [réalise la capacité « Chaîne logistique et traçabilité »](../../04_architecture-repository/capacites/cap-int-10.md), [accède à l'objet de données logistique](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-03.md) et [met en œuvre le chapitre ART-10 (logistique)](../../04_architecture-repository/04_patterns/artsn-rules/art-10.md). Il s'appuie sur le [composant de chaîne logistique](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-23.md).
 
 ## Catégorie
 
@@ -33,10 +33,10 @@ applicatif.
 
 ## Exposition
 
-Sert la partie prenante [PP-06](../../04_architecture-repository/parties-prenantes/pp-06.md) et crée de la valeur pour son bénéficiaire.
+Sert la partie prenante [PP-06](../../04_architecture-repository/02_architecture-elements/motivation/stakeholders/pp-06.md) et crée de la valeur pour son bénéficiaire.
 
 ## Réalisation
 
-Réalisé par les capacités [CAP-INT-10](../../04_architecture-repository/capacites/cap-int-10.md) et mis en œuvre via les chapitres [ART-10](../../04_architecture-repository/chapitres/art-10.md).
+Réalisé par les capacités [CAP-INT-10](../../04_architecture-repository/capacites/cap-int-10.md) et mis en œuvre via les chapitres [ART-10](../../04_architecture-repository/04_patterns/artsn-rules/art-10.md).
 
 <!-- END:GENERATED -->

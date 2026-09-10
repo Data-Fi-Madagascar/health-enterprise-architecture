@@ -27,10 +27,10 @@ Déclinaison de [CAP-INT-02: Registre et résolution des professionnels de sant�
 
 ## 3. Chapitres ART applicables
 
-- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/chapitres/art-4.md)
+- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
 - ART-4A — Résolution d’identité
-- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../04_architecture-repository/chapitres/art-7.md)
-- [ART-4C](../../04_architecture-repository/chapitres/art-4c.md)
+- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
+- [ART-4C](../../04_architecture-repository/04_patterns/artsn-rules/art-4c.md)
 
 ## 4. Acteurs (Actors)
 
@@ -90,9 +90,9 @@ Conformité attestée par l’exposition découvrable (mCSD), la détermination 
 
 ## 12. Articulation avec les autres profils
 
-- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/profils/pt-04.md)
-- [PT-07: terminologie et codification](../../04_architecture-repository/profils/pt-07.md)
-- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/profils/pt-10.md)
+- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md)
+- [PT-07: terminologie et codification](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-07.md)
+- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md)
 
 Le registre fournit la qualité professionnelle ; l’authentification et l’autorisation sont assurées par PT-10.
 

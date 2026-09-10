@@ -40,8 +40,8 @@ Le consentement est une base possible parmi plusieurs bases légales ou fonction
 
 ### Principes associés
 
-- [P-INT-14: Base d’autorisation explicite](../principes/p-int-14.md)
-- [P-INT-15: Limitation à la finalité](../principes/p-int-15.md)
-- [P-INT-16: Résidence et non-réplication](../principes/p-int-16.md)
-- [P-INT-17: Minimisation](../principes/p-int-17.md)
+- [P-INT-14: Base d’autorisation explicite](../02_architecture-elements/motivation/principles/p-int-14.md)
+- [P-INT-15: Limitation à la finalité](../02_architecture-elements/motivation/principles/p-int-15.md)
+- [P-INT-16: Résidence et non-réplication](../02_architecture-elements/motivation/principles/p-int-16.md)
+- [P-INT-17: Minimisation](../02_architecture-elements/motivation/principles/p-int-17.md)
 

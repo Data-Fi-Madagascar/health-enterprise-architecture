@@ -40,8 +40,8 @@ Permettre de comprendre :
 
 ### Principes associés
 
-- [P-INT-07: Responsabilité de la donnée](../principes/p-int-07.md)
-- [P-INT-17: Minimisation](../principes/p-int-17.md)
-- [P-INT-18: Traçabilité différenciée](../principes/p-int-18.md)
-- [P-INT-23: Conformité fondée sur des preuves](../principes/p-int-23.md)
+- [P-INT-07: Responsabilité de la donnée](../02_architecture-elements/motivation/principles/p-int-07.md)
+- [P-INT-17: Minimisation](../02_architecture-elements/motivation/principles/p-int-17.md)
+- [P-INT-18: Traçabilité différenciée](../02_architecture-elements/motivation/principles/p-int-18.md)
+- [P-INT-23: Conformité fondée sur des preuves](../02_architecture-elements/motivation/principles/p-int-23.md)
 

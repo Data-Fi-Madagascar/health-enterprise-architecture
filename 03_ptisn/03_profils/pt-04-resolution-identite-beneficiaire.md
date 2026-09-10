@@ -27,10 +27,10 @@ Périmètre : recherche démographique, résolution et rapprochement d’identif
 
 ## 3. Chapitres ART applicables
 
-- [ART-4: référentiels](../../04_architecture-repository/chapitres/art-4.md)
+- [ART-4: référentiels](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
 - ART-4A — Résolution d’identité
 - ART-4B — bases d’autorisation
-- [ART-7: sécurité](../../04_architecture-repository/chapitres/art-7.md)
+- [ART-7: sécurité](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
 
 ## 4. Acteurs (Actors)
 
@@ -110,10 +110,10 @@ Conformité attestée par l’adoption de PIXm/PDQm pour les nouveaux services, 
 
 ## 12. Articulation avec les autres profils
 
-- [PT-05: registre des professionnels](../../04_architecture-repository/profils/pt-05.md)
-- [PT-07: terminologie et codification](../../04_architecture-repository/profils/pt-07.md)
-- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/profils/pt-10.md)
-- [PT-11: consentement et bases d’autorisation](../../04_architecture-repository/profils/pt-11.md)
+- [PT-05: registre des professionnels](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md)
+- [PT-07: terminologie et codification](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-07.md)
+- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md)
+- [PT-11: consentement et bases d’autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-11.md)
 
 Le service s’appuie sur l’identité fondationnelle (CNIE) selon une architecture interinstitutionnelle à définir.
 

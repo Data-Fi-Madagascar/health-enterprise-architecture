@@ -37,22 +37,22 @@ ART-5 : Cohérence et qualité des données constitue un chapitre du **cadre nor
 
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (données corrompues du terrain, anomalies massives de facturation), cette discipline seule permet d’aiguiller le problème vers la bonne cellule humaine de décision stratégique sans rompre le pipeline.
 
-- **Rattachement** : [CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/capabilites/cap-13.md) (gestion des données sanitaires).
+- **Rattachement** : [CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md) (gestion des données sanitaires).
 - **Référentiel cible** : DAMA/DMBOK.
 - **Circuits cibles** : sécurité clinique, alerte épidémiologique, fraude financière, risque intersectoriel.
-- **Déduit selon** : [ENF-5: Coordination des processus complexes décentralisés et asynchrones](../../04_architecture-repository/exigences/enf-5.md) (coordination des processus).
+- **Déduit selon** : [ENF-5: Coordination des processus complexes décentralisés et asynchrones](../../04_architecture-repository/03_requirements/enf-5.md) (coordination des processus).
 - **Statut : Stable.** (pour les métriques) / **Statut : Proposition ouverte.** (pour la gouvernance des 4 branches).
 
 ## Profils PTISN qui implémentent ce chapitre
 
 Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
 
-- [PT-02 : Médiation intra-secteur](../../04_architecture-repository/profils/pt-02.md)
-- [PT-06 : Référentiel des structures et services de santé](../../04_architecture-repository/profils/pt-06.md)
-- [PT-07 : Terminologie et codification](../../04_architecture-repository/profils/pt-07.md)
-- [PT-08 : Échange de données agrégées](../../04_architecture-repository/profils/pt-08.md)
-- [PT-09 : Analytique et exposition de données](../../04_architecture-repository/profils/pt-09.md)
-- [PT-13 : Qualité et réconciliation](../../04_architecture-repository/profils/pt-13.md)
+- [PT-02 : Médiation intra-secteur](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-02.md)
+- [PT-06 : Référentiel des structures et services de santé](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-06.md)
+- [PT-07 : Terminologie et codification](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-07.md)
+- [PT-08 : Échange de données agrégées](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-08.md)
+- [PT-09 : Analytique et exposition de données](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-09.md)
+- [PT-13 : Qualité et réconciliation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-13.md)
 
 <!-- END:GENERATED -->
 ## Liens
@@ -63,6 +63,6 @@ Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre 
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`ART-5`** : Cohérence et qualité des données (`04_architecture-repository/chapitres/art-5.md`)
+- **`ART-5`** : Cohérence et qualité des données (`04_architecture-repository/04_patterns/artsn-rules/art-5.md`)
 - **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

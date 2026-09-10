@@ -35,25 +35,25 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 
 | Niveau | Dossier | Document | Destinataires |
 |--------|---------|----------|---------------|
-| 1 | [`00_caesn/`](./00_caesn/) | Cadre d'Architecture d'Entreprise de la Santé Numérique : valeur, capabilités, principes, gouvernance | Décideurs, directions métiers, partenaires |
-| 2 | [`01_cnisn/`](./01_cnisn/) | Cadre National d'Interopérabilité de la Santé Numérique : principes, capacités, gouvernance, standards, décisions | DEPSI, architectes, intégrateurs |
-| 3 | [`02_artsn/`](./02_artsn/) | Architecture de Référence Technique de la Santé Numérique : patterns, contrats, contraintes | DEPSI, architectes, intégrateurs |
-| 4 | [`03_ptisn/`](./03_ptisn/) | Profils techniques d'implémentation par initiative : API, contrats d'interfaces, configurations (découle de l'UGD) | Développeurs, fournisseurs, équipes techniques |
-| — | [`04_architecture-repository/`](./04_architecture-repository/) | Source de vérité : fondations, principes, capacités, chapitres, composants, profils | Machine, scripts de génération |
+| 1 | [`00_caesn/`](00_caesn) | Cadre d'Architecture d'Entreprise de la Santé Numérique : valeur, capabilités, principes, gouvernance | Décideurs, directions métiers, partenaires |
+| 2 | [`01_cnisn/`](01_cnisn) | Cadre National d'Interopérabilité de la Santé Numérique : principes, capacités, gouvernance, standards, décisions | DEPSI, architectes, intégrateurs |
+| 3 | [`02_artsn/`](02_artsn) | Architecture de Référence Technique de la Santé Numérique : patterns, contrats, contraintes | DEPSI, architectes, intégrateurs |
+| 4 | [`03_ptisn/`](03_ptisn) | Profils techniques d'implémentation par initiative : API, contrats d'interfaces, configurations (découle de l'UGD) | Développeurs, fournisseurs, équipes techniques |
+| — | [`04_architecture-repository/`](04_architecture-repository) | Source de vérité : fondations, principes, capacités, chapitres, composants, profils | Machine, scripts de génération |
 
 ### Niveau 1 — `00_caesn/` (CAESN)
 
 | Domaine | Chemin | Contenu |
 |---------|--------|---------|
-| Vue d'ensemble | [`00_overview/`](./00_caesn/00_overview/) | Fondements stratégiques, modèle national de valeur |
-| Flux de valeur | [`01_value-streams/`](./00_caesn/01_value-streams/) | Flux de valeur nationaux de santé (VS-01 à VS-04) |
-| Principes | [`02_principles/`](./00_caesn/02_principles/) | Principes transversaux (PA-01..12) et de domaine (PD) |
-| Capabilités | [`03_capabilities/`](./00_caesn/03_capabilities/) | 18 capabilités (CAP-01..18), maturité, runway |
-| Données | [`04_data/`](./00_caesn/04_data/) | Architecture des données et de l'information sanitaire |
-| Applications | [`05_application/`](./00_caesn/05_application/) | Architecture applicative et systèmes numériques |
-| Portefeuille | [`06_portfolio/`](./00_caesn/06_portfolio/) | Portefeuille d'initiatives orienté valeur, migration existant |
-| Gouvernance | [`07_governance/`](./00_caesn/07_governance/) | Instances, RACI, homologation, processus gouvernance, fondement légal |
-| Annexes | [`10_annexes/`](./00_caesn/10_annexes/) | Matrice de lecture, glossaire, acronymes |
+| Vue d'ensemble | [`00_overview/`](00_caesn/00_overview) | Fondements stratégiques, modèle national de valeur |
+| Flux de valeur | [`01_value-streams/`](00_caesn/01_value-streams) | Flux de valeur nationaux de santé (VS-01 à VS-04) |
+| Principes | [`02_principles/`](00_caesn/02_principles) | Principes transversaux (PA-01..12) et de domaine (PD) |
+| Capabilités | [`03_capabilities/`](00_caesn/03_capabilities) | 18 capabilités (CAP-01..18), maturité, runway |
+| Données | [`04_data/`](00_caesn/04_data) | Architecture des données et de l'information sanitaire |
+| Applications | [`05_application/`](00_caesn/05_application) | Architecture applicative et systèmes numériques |
+| Portefeuille | [`06_portfolio/`](00_caesn/06_portfolio) | Portefeuille d'initiatives orienté valeur, migration existant |
+| Gouvernance | [`07_governance/`](00_caesn/07_governance) | Instances, RACI, homologation, processus gouvernance, fondement légal |
+| Annexes | [`10_annexes/`](00_caesn/10_annexes) | Matrice de lecture, glossaire, acronymes |
 
 > **Note :** Les Décisions (ADR) et Standards sont désormais dans le CNISN (niveau 2), dans les dossiers `01_cnisn/06_decisions/` et `01_cnisn/05_standards/`.
 
@@ -61,84 +61,86 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 
 | Domaine | Chemin | Contenu |
 |---------|--------|---------|
-| Introduction | [`00_introduction/`](./01_cnisn/00_introduction/) | Contexte, périmètre, objectifs, articulation UGD |
-| Principes | [`01_principes/`](./01_cnisn/01_principes/) | Principes d'interopérabilité |
-| Capacités | [`02_capacites/`](./01_cnisn/02_capacites/) | 16 capacités d'interopérabilité |
-| Gouvernance | [`03_gouvernance/`](./01_cnisn/03_gouvernance/) | Gouvernance de l'interopérabilité |
-| Conformité | [`04_conformite/`](./01_cnisn/04_conformite/) | Conformité, audit, programme de conformité opérationnel |
-| Standards | [`05_standards/`](./01_cnisn/05_standards/) | 7 standards CNISN + 2 normes internationales |
-| Décisions | [`06_decisions/`](./01_cnisn/06_decisions/) | 10 Architecture Decision Records (ADR-0001..0010) |
-| Trajectoire | [`05_trajectoire/`](./01_cnisn/05_trajectoire/) | 7 phases T4 2026–T2 2030 |
-| Indicateurs | [`06_indicateurs/`](./01_cnisn/06_indicateurs/) | KPIs interopérabilité |
-| Annexes | [`08_annexes/`](./01_cnisn/08_annexes/) | Matrices de lecture, articulation CAESN/ARTSN |
+| Introduction | [`00_introduction/`](01_cnisn/00_introduction) | Contexte, périmètre, objectifs, articulation UGD |
+| Principes | [`01_principes/`](01_cnisn/01_principes) | Principes d'interopérabilité |
+| Capacités | [`02_capacites/`](01_cnisn/02_capacites) | 16 capacités d'interopérabilité |
+| Gouvernance | [`03_gouvernance/`](01_cnisn/03_gouvernance) | Gouvernance de l'interopérabilité |
+| Conformité | [`04_conformite/`](01_cnisn/04_conformite) | Conformité, audit, programme de conformité opérationnel |
+| Standards | [`05_standards/`](01_cnisn/05_standards) | 7 standards CNISN + 2 normes internationales |
+| Décisions | [`06_decisions/`](01_cnisn/06_decisions) | 10 Architecture Decision Records (ADR-0001..0010) |
+| Trajectoire | [`05_trajectoire/`](01_cnisn/05_trajectoire) | 7 phases T4 2026–T2 2030 |
+| Indicateurs | [`06_indicateurs/`](01_cnisn/06_indicateurs) | KPIs interopérabilité |
+| Annexes | [`08_annexes/`](01_cnisn/08_annexes) | Matrices de lecture, articulation CAESN/ARTSN |
 
 ### Niveau 3 — `02_artsn/` (ARTSN)
 
 | Domaine | Chemin | Contenu |
 |---------|--------|---------|
-| Fondations | [`00_fondations/`](./02_artsn/00_fondations/) | Fondations architecturales |
-| Flux de valeur | [`01_flux-de-valeur/`](./02_artsn/01_flux-de-valeur/) | Déclinaison technique des flux |
-| Exigences | [`02_exigences-contextuelles/`](./02_artsn/02_exigences-contextuelles/) | Contraintes et exigences |
-| Objets de données | [`03_objets-de-donnees/`](./02_artsn/03_objets-de-donnees/) | Catalogue DO-01..31 et nomenclatures |
-| Chapitres | [`04_patterns/`](./02_artsn/04_patterns/) | Chapitres ART (ART-0 à ART-12, déclinaisons incluses) |
-| Cartographie | [`05_cartographie/`](./02_artsn/05_cartographie/) | Vue cible du système |
-| Services | [`06_services/`](./02_artsn/06_services/) | Services techniques de référence |
-| Gouvernance | [`06_gouvernance/`](./02_artsn/06_gouvernance/) | Veille, conformité, dépréciation |
-| Lots | [`07_lots/`](./02_artsn/07_lots/) | Lots consommateurs et trajectoire CNISN |
-| Annexes | [`08_annexes/`](./02_artsn/08_annexes/) | Protocole de test, SLA, maturité |
-| Feuille de route | [`09_feuille-de-route/`](./02_artsn/09_feuille-de-route/) | Plateaux et écarts de trajectoire |
+| Fondations | [`00_fondations/`](02_artsn/00_fondations) | Fondations architecturales |
+| Flux de valeur | [`01_flux-de-valeur/`](02_artsn/01_flux-de-valeur) | Déclinaison technique des flux |
+| Exigences | [`02_exigences-contextuelles/`](02_artsn/02_exigences-contextuelles) | Contraintes et exigences |
+| Objets de données | [`03_objets-de-donnees/`](02_artsn/03_objets-de-donnees) | Catalogue DO-01..31 et nomenclatures |
+| Chapitres | [`04_patterns/`](02_artsn/04_patterns) | Chapitres ART (ART-0 à ART-12, déclinaisons incluses) |
+| Cartographie | [`05_cartographie/`](02_artsn/05_cartographie) | Vue cible du système |
+| Services | [`06_services/`](02_artsn/06_services) | Services techniques de référence |
+| Gouvernance | [`06_gouvernance/`](02_artsn/06_gouvernance) | Veille, conformité, dépréciation |
+| Lots | [`07_lots/`](02_artsn/07_lots) | Lots consommateurs et trajectoire CNISN |
+| Annexes | [`08_annexes/`](02_artsn/08_annexes) | Protocole de test, SLA, maturité |
+| Feuille de route | [`09_feuille-de-route/`](02_artsn/09_feuille-de-route) | Plateaux et écarts de trajectoire |
 
 ### Niveau 4 — `03_ptisn/` (PTISN)
 
 | Domaine | Chemin | Contenu |
 |---------|--------|---------|
-| Introduction | [`00_introduction/`](./03_ptisn/00_introduction/) | Contexte et Objectifs du PTISN |
-| Règles | [`01_regles-utilisation/`](./03_ptisn/01_regles-utilisation/) | Règles d'utilisation et templates |
-| Topologie | [`02_topologie-nationale-cible/`](./03_ptisn/02_topologie-nationale-cible/) | Architecture réseau nationale |
-| Profils | [`03_profils/`](./03_ptisn/03_profils/) | 19 profils techniques (PT-01 à PT-19) |
-| Alignement | [`04_matrice-alignement/`](./03_ptisn/04_matrice-alignement/) | Matrice profils ↔ capabilités |
-| Exemples | [`08_annexes/f-exemples-profils.md`](./03_ptisn/08_annexes/f-exemples-profils.md) | Exemples de profils remplis |
-| Gouvernance | [`06_gouvernance/`](./03_ptisn/06_gouvernance/) | Gouvernance PTISN |
-| Annexes | [`08_annexes/`](./03_ptisn/08_annexes/) | Cas d'usage VS-01..04, synthèses |
+| Introduction | [`00_introduction/`](03_ptisn/00_introduction) | Contexte et Objectifs du PTISN |
+| Règles | [`01_regles-utilisation/`](03_ptisn/01_regles-utilisation) | Règles d'utilisation et templates |
+| Topologie | [`02_topologie-nationale-cible/`](03_ptisn/02_topologie-nationale-cible) | Architecture réseau nationale |
+| Profils | [`03_profils/`](03_ptisn/03_profils) | 19 profils techniques (PT-01 à PT-19) |
+| Alignement | [`04_matrice-alignement/`](03_ptisn/04_matrice-alignement) | Matrice profils ↔ capabilités |
+| Exemples | [`08_annexes/f-exemples-profils.md`](03_ptisn/08_annexes/f-exemples-profils.md) | Exemples de profils remplis |
+| Gouvernance | [`06_gouvernance/`](03_ptisn/06_gouvernance) | Gouvernance PTISN |
+| Annexes | [`08_annexes/`](03_ptisn/08_annexes) | Cas d'usage VS-01..04, synthèses |
 
 ### Référentiel (source de vérité)
 
 | Type | Chemin | Contenu |
 |------|--------|---------|
-| Fondations | [`04_architecture-repository/fondations/`](./04_architecture-repository/fondations/) | Fondations F |
-| Principes | [`04_architecture-repository/principes/`](./04_architecture-repository/principes/) | Principes transversaux et de domaine |
-| Capacités | [`04_architecture-repository/capacites/`](./04_architecture-repository/capacites/) | Capacités CNISN CAP-INT |
-| Chapitres | [`04_architecture-repository/chapitres/`](./04_architecture-repository/chapitres/) | Chapitres ARTSN ART |
-| Composants | [`04_architecture-repository/composants/`](./04_architecture-repository/composants/) | Composants applicatifs, infrastructure, sécurité et gouvernance |
-| Profils | [`04_architecture-repository/profils/`](./04_architecture-repository/profils/) | Profils PT-01..19 |
-| Objets métier | [`04_architecture-repository/objets-metier/`](./04_architecture-repository/objets-metier/) | Objets métier BO |
-| Objets de données | [`04_architecture-repository/objets-de-donnees/`](./04_architecture-repository/objets-de-donnees/) | Objets de données DO |
-| Services | [`04_architecture-repository/services/`](./04_architecture-repository/services/) | Services applicatifs SRV |
-| Processus | [`04_architecture-repository/processus/`](./04_architecture-repository/processus/) | Processus métier PRC |
-| Work packages | [`04_architecture-repository/work-packages/`](./04_architecture-repository/work-packages/) | Lots de mise en œuvre WP |
-| Plateaux | [`04_architecture-repository/plateaux/`](./04_architecture-repository/plateaux/) | Plateaux de trajectoire |
-| Gaps | [`04_architecture-repository/gaps/`](./04_architecture-repository/gaps/) | Écarts de trajectoire |
-| Flux de valeur | [`04_architecture-repository/flux-valeur/`](./04_architecture-repository/flux-valeur/) | VS-01..04 |
-| Étapes de valeur | [`04_architecture-repository/etapes-valeur/`](./04_architecture-repository/etapes-valeur/) | Étapes opérationnelles |
+| Fondations | [`04_architecture-repository/04_patterns/foundations/`](04_architecture-repository/04_patterns/foundations) | Fondations F |
+| Principes | [`04_architecture-repository/02_architecture-elements/motivation/principles/`](04_architecture-repository/02_architecture-elements/motivation/principles) | Principes transversaux et de domaine |
+| Capacités | [`04_architecture-repository/capacites/`](04_architecture-repository/capacites) | Capacités CNISN CAP-INT |
+| Chapitres | [`04_architecture-repository/04_patterns/artsn-rules/`](04_architecture-repository/04_patterns/artsn-rules) | Chapitres ARTSN ART |
+| Composants | [`04_architecture-repository/05_building-blocks/abb/legacy-components/`](04_architecture-repository/05_building-blocks/abb/legacy-components) | Composants applicatifs, infrastructure et sécurité |
+| Registres de gouvernance | [`04_architecture-repository/06_governance/registers/`](04_architecture-repository/06_governance/registers) | Registres CMP-39..46 |
+| Profils | [`04_architecture-repository/05_building-blocks/sbb/legacy-profiles/`](04_architecture-repository/05_building-blocks/sbb/legacy-profiles) | Profils PT-01..19 |
+| Objets métier | [`04_architecture-repository/02_architecture-elements/business/business-objects/`](04_architecture-repository/02_architecture-elements/business/business-objects) | Objets métier BO |
+| Objets de données | [`04_architecture-repository/02_architecture-elements/data/data-objects/`](04_architecture-repository/02_architecture-elements/data/data-objects) | Objets de données DO |
+| Services métier | [`04_architecture-repository/02_architecture-elements/business/business-services/`](04_architecture-repository/02_architecture-elements/business/business-services) | Service métier SRV-01 |
+| Services legacy | [`04_architecture-repository/05_building-blocks/abb/legacy-services/`](04_architecture-repository/05_building-blocks/abb/legacy-services) | Services applicatifs et technologiques SRV-02..06 |
+| Processus | [`04_architecture-repository/02_architecture-elements/business/processes/`](04_architecture-repository/02_architecture-elements/business/processes) | Processus métier PRC |
+| Work packages | [`04_architecture-repository/07_migration/work-packages/`](04_architecture-repository/07_migration/work-packages) | Lots de mise en œuvre WP |
+| Plateaux | [`04_architecture-repository/07_migration/plateaux/`](04_architecture-repository/07_migration/plateaux) | Plateaux de trajectoire |
+| Gaps | [`04_architecture-repository/07_migration/gaps/`](04_architecture-repository/07_migration/gaps) | Écarts de trajectoire |
+| Flux de valeur | [`04_architecture-repository/02_architecture-elements/strategy/value-streams/`](04_architecture-repository/02_architecture-elements/strategy/value-streams) | VS-01..04 |
+| Étapes de valeur | [`04_architecture-repository/02_architecture-elements/strategy/value-stages/`](04_architecture-repository/02_architecture-elements/strategy/value-stages) | Étapes opérationnelles |
 
 ## Outils de gouvernance
 
 | Outil | Chemin | Description |
 |-------|--------|-------------|
-| Registre des décisions | [`01_cnisn/06_decisions/registre-decisions.md`](./01_cnisn/06_decisions/registre-decisions.md) | Tableau central des 10 ADR |
-| Template modification | [`01_cnisn/06_decisions/template-modification.md`](./01_cnisn/06_decisions/template-modification.md) | Formulaire de demande de changement |
-| Processus gouvernance | [`00_caesn/07_governance/processus-gouvernance.md`](./00_caesn/07_governance/processus-gouvernance.md) | Workflows de validation |
-| Homologation | [`00_caesn/07_governance/homologation.md`](./00_caesn/07_governance/homologation.md) | 12 critères, 5 phases |
-| Dépréciation | [`02_artsn/06_gouvernance/depreciation.md`](./02_artsn/06_gouvernance/depreciation.md) | Processus 15 mois |
-| Veille architecturale | [`02_artsn/06_gouvernance/veille-architecturale.md`](./02_artsn/06_gouvernance/veille-architecturale.md) | 7 domaines, 11 sources |
-| Conformité | [`02_artsn/06_gouvernance/conformite.md`](./02_artsn/06_gouvernance/conformite.md) | Dashboard de conformité |
-| Programme de conformité | [`01_cnisn/04_conformite/programme-conformite.md`](./01_cnisn/04_conformite/programme-conformite.md) | Tests, sanctions, jalon de démarrage |
-| Fondement légal | [`00_caesn/07_governance/fondement-legal.md`](./00_caesn/07_governance/fondement-legal.md) | Vide législatif, projet de loi e-santé |
+| Registre des décisions | [`01_cnisn/06_decisions/registre-decisions.md`](01_cnisn/06_decisions/registre-decisions.md) | Tableau central des 10 ADR |
+| Template modification | [`01_cnisn/06_decisions/template-modification.md`](01_cnisn/06_decisions/template-modification.md) | Formulaire de demande de changement |
+| Processus gouvernance | [`00_caesn/07_governance/processus-gouvernance.md`](00_caesn/07_governance/processus-gouvernance.md) | Workflows de validation |
+| Homologation | [`00_caesn/07_governance/homologation.md`](00_caesn/07_governance/homologation.md) | 12 critères, 5 phases |
+| Dépréciation | [`02_artsn/06_gouvernance/depreciation.md`](02_artsn/06_gouvernance/depreciation.md) | Processus 15 mois |
+| Veille architecturale | [`02_artsn/06_gouvernance/veille-architecturale.md`](02_artsn/06_gouvernance/veille-architecturale.md) | 7 domaines, 11 sources |
+| Conformité | [`02_artsn/06_gouvernance/conformite.md`](02_artsn/06_gouvernance/conformite.md) | Dashboard de conformité |
+| Programme de conformité | [`01_cnisn/04_conformite/programme-conformite.md`](01_cnisn/04_conformite/programme-conformite.md) | Tests, sanctions, jalon de démarrage |
+| Fondement légal | [`00_caesn/07_governance/fondement-legal.md`](00_caesn/07_governance/fondement-legal.md) | Vide législatif, projet de loi e-santé |
 
 ## Conventions
 
 - Chaque fichier inclut un frontmatter YAML (`title`, `id`, `domain`, `version`, `status`, `last_reviewed`, `owner`, `tags`)
-- **Règle « le nom reflète la localisation »** : le champ `domain:` porte le nom du dossier d'appartenance, préfixe numérique inclus (ex. `domain: 01_value-streams`). Voir [`AGENTS.md`](./AGENTS.md)
+- **Règle « le nom reflète la localisation »** : le champ `domain:` porte le nom du dossier d'appartenance, préfixe numérique inclus (ex. `domain: 01_value-streams`). Voir [`AGENTS.md`](AGENTS.md)
 - Chaque document ouvre sur un bloc **« Pour qui lire ce document »** : niveaux de lecture par profil (●◐○) + renvoi à la matrice de lecture de son niveau
 - Les références croisées utilisent des liens Markdown relatifs
 - Les ADR suivent le [modèle de décision](01_cnisn/06_decisions/adr-0000-template.md)
@@ -158,7 +160,7 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 | **SIS / données** | CNISN capacités → ARTSN dictionnaire → PTISN topologie |
 | **Partenaires techniques** | CAESN portefeuille → ARTSN feuille de route → SLA |
 
-→ [Guides de démarrage rapide](./quick-start-guides.md) pour chaque profil
+→ [Guides de démarrage rapide](quick-start-guides.md) pour chaque profil
 
 ### Par niveau
 
@@ -180,7 +182,7 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 
 ## Liens utiles
 
-- [Guides de démarrage rapide](./quick-start-guides.md) — parcours pratiques par profil
+- [Guides de démarrage rapide](quick-start-guides.md) — parcours pratiques par profil
 - [Modèle de valeur](00_caesn/00_overview/value-model.md)
 - [Registre national des initiatives](00_caesn/06_portfolio/index.md)
 - [Gouvernance](00_caesn/07_governance/index.md)

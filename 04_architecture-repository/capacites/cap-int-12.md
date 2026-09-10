@@ -37,13 +37,13 @@ Permettre de vérifier objectivement qu’un système respecte les contrats et p
 
 ### Principes associés
 
-- [P-INT-19: Neutralité technologique](../principes/p-int-19.md)
-- [P-INT-20: Portabilité et réversibilité](../principes/p-int-20.md)
-- [P-INT-21: Progressivité](../principes/p-int-21.md)
-- [P-INT-22: Fonctionnement en connectivité contrainte](../principes/p-int-22.md)
-- [P-INT-23: Conformité fondée sur des preuves](../principes/p-int-23.md)
-- [P-INT-24: Applicabilité déclarée](../principes/p-int-24.md)
-- [P-INT-25: Réévaluation continue](../principes/p-int-25.md)
+- [P-INT-19: Neutralité technologique](../02_architecture-elements/motivation/principles/p-int-19.md)
+- [P-INT-20: Portabilité et réversibilité](../02_architecture-elements/motivation/principles/p-int-20.md)
+- [P-INT-21: Progressivité](../02_architecture-elements/motivation/principles/p-int-21.md)
+- [P-INT-22: Fonctionnement en connectivité contrainte](../02_architecture-elements/motivation/principles/p-int-22.md)
+- [P-INT-23: Conformité fondée sur des preuves](../02_architecture-elements/motivation/principles/p-int-23.md)
+- [P-INT-24: Applicabilité déclarée](../02_architecture-elements/motivation/principles/p-int-24.md)
+- [P-INT-25: Réévaluation continue](../02_architecture-elements/motivation/principles/p-int-25.md)
 
 ### Réponse nationale
 

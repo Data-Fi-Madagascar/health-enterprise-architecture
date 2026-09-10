@@ -215,7 +215,7 @@
   "x-hea-applies-to": [
     "CMP-17"
   ],
-  "x-hea-source": "04_architecture-repository/profils/pt-12.md",
+  "x-hea-source": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-12.md",
   "x-hea-fhir-resources": [
     "AuditEvent",
     "Provenance"
@@ -223,5 +223,5 @@
   "x-hea-data-objects": [
     "DO-31"
   ],
-  "x-hea-file": "04_architecture-repository/profils/pt-12.md"
+  "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-12.md"
 }

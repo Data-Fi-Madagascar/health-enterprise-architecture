@@ -43,8 +43,8 @@ Fournir une autorité commune sur :
 
 ### Principes associés
 
-- [P-INT-01: Autorité désignée](../principes/p-int-01.md)
-- [P-INT-02: Résolution contre l’autorité](../principes/p-int-02.md)
-- [P-INT-03: Copies locales non autoritatives](../principes/p-int-03.md)
-- [P-INT-04: Historisation des références](../principes/p-int-04.md)
+- [P-INT-01: Autorité désignée](../02_architecture-elements/motivation/principles/p-int-01.md)
+- [P-INT-02: Résolution contre l’autorité](../02_architecture-elements/motivation/principles/p-int-02.md)
+- [P-INT-03: Copies locales non autoritatives](../02_architecture-elements/motivation/principles/p-int-03.md)
+- [P-INT-04: Historisation des références](../02_architecture-elements/motivation/principles/p-int-04.md)
 

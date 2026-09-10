@@ -36,16 +36,16 @@ Permettre de détecter et traiter les divergences entre systèmes, référentiel
 
 ### Principes associés
 
-- [P-INT-01: Autorité désignée](../principes/p-int-01.md)
-- [P-INT-02: Résolution contre l’autorité](../principes/p-int-02.md)
-- [P-INT-03: Copies locales non autoritatives](../principes/p-int-03.md)
-- [P-INT-04: Historisation des références](../principes/p-int-04.md)
-- [P-INT-05: Contrat explicite](../principes/p-int-05.md)
-- [P-INT-06: Versionnement et compatibilité](../principes/p-int-06.md)
-- [P-INT-07: Responsabilité de la donnée](../principes/p-int-07.md)
-- [P-INT-08: Publication au catalogue des services](../principes/p-int-08.md)
-- [P-INT-09: Publication des contrats](../principes/p-int-09.md)
-- [P-INT-23: Conformité fondée sur des preuves](../principes/p-int-23.md)
-- [P-INT-24: Applicabilité déclarée](../principes/p-int-24.md)
-- [P-INT-25: Réévaluation continue](../principes/p-int-25.md)
+- [P-INT-01: Autorité désignée](../02_architecture-elements/motivation/principles/p-int-01.md)
+- [P-INT-02: Résolution contre l’autorité](../02_architecture-elements/motivation/principles/p-int-02.md)
+- [P-INT-03: Copies locales non autoritatives](../02_architecture-elements/motivation/principles/p-int-03.md)
+- [P-INT-04: Historisation des références](../02_architecture-elements/motivation/principles/p-int-04.md)
+- [P-INT-05: Contrat explicite](../02_architecture-elements/motivation/principles/p-int-05.md)
+- [P-INT-06: Versionnement et compatibilité](../02_architecture-elements/motivation/principles/p-int-06.md)
+- [P-INT-07: Responsabilité de la donnée](../02_architecture-elements/motivation/principles/p-int-07.md)
+- [P-INT-08: Publication au catalogue des services](../02_architecture-elements/motivation/principles/p-int-08.md)
+- [P-INT-09: Publication des contrats](../02_architecture-elements/motivation/principles/p-int-09.md)
+- [P-INT-23: Conformité fondée sur des preuves](../02_architecture-elements/motivation/principles/p-int-23.md)
+- [P-INT-24: Applicabilité déclarée](../02_architecture-elements/motivation/principles/p-int-24.md)
+- [P-INT-25: Réévaluation continue](../02_architecture-elements/motivation/principles/p-int-25.md)
 

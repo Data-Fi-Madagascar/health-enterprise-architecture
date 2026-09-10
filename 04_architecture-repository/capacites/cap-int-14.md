@@ -77,7 +77,7 @@ Les secteurs concernés :
 
 | Exigence | Description |
 |----------|-------------|
-| **EXG-OH-01** | Tout échange intersectoriel doit être couvert par un accord explicite entre ministères ([P-INT-10: Accord préalable](../principes/p-int-10.md)) |
+| **EXG-OH-01** | Tout échange intersectoriel doit être couvert par un accord explicite entre ministères ([P-INT-10: Accord préalable](../02_architecture-elements/motivation/principles/p-int-10.md)) |
 | **EXG-OH-02** | Les identités humaines ne doivent jamais être croisées avec les identités animales |
 | **EXG-OH-03** | Les données agrégées croisées doivent être irréversiblement désanonymisées |
 | **EXG-OH-04** | Chaque secteur conserve la souveraineté sur ses données source |
@@ -88,19 +88,19 @@ Les secteurs concernés :
 ### Principes associés
 
 
-- [P-INT-01: Autorité désignée](../principes/p-int-01.md) (Autorité désignée) : chaque secteur reste l'autorité de ses données ;
-- [P-INT-05: Contrat explicite](../principes/p-int-05.md) (Contrat explicite) : tout flux intersectoriel nécessite un accord ;
-- [P-INT-10: Accord préalable](../principes/p-int-10.md) (Accord préalable) : accord obligatoire entre ministères ;
-- [P-INT-14: Base d’autorisation explicite](../principes/p-int-14.md) (Base d'autorisation explicite) : base légale documentée par secteur ;
-- [P-INT-16: Résidence et non-réplication](../principes/p-int-16.md) (Résidence) : les données restent dans leur secteur d'origine ;
-- [P-INT-22: Fonctionnement en connectivité contrainte](../principes/p-int-22.md) (Connectivité contrainte) : les secteurs ont des niveaux de connectivité variables.
+- [P-INT-01: Autorité désignée](../02_architecture-elements/motivation/principles/p-int-01.md) (Autorité désignée) : chaque secteur reste l'autorité de ses données ;
+- [P-INT-05: Contrat explicite](../02_architecture-elements/motivation/principles/p-int-05.md) (Contrat explicite) : tout flux intersectoriel nécessite un accord ;
+- [P-INT-10: Accord préalable](../02_architecture-elements/motivation/principles/p-int-10.md) (Accord préalable) : accord obligatoire entre ministères ;
+- [P-INT-14: Base d’autorisation explicite](../02_architecture-elements/motivation/principles/p-int-14.md) (Base d'autorisation explicite) : base légale documentée par secteur ;
+- [P-INT-16: Résidence et non-réplication](../02_architecture-elements/motivation/principles/p-int-16.md) (Résidence) : les données restent dans leur secteur d'origine ;
+- [P-INT-22: Fonctionnement en connectivité contrainte](../02_architecture-elements/motivation/principles/p-int-22.md) (Connectivité contrainte) : les secteurs ont des niveaux de connectivité variables.
 
 ### Rattachement
 
-- [CAP-18: Coordination intersectorielle (One Health)](../../04_architecture-repository/capabilites/cap-18.md) (Coordination intersectorielle — One Health)
-- [CAP-05: Surveillance épidémiologique, alerte, investigation et riposte](../../04_architecture-repository/capabilites/cap-05.md) (Surveillance épidémiologique)
-- [ART-11](../../04_architecture-repository/chapitres/art-11.md) (Coordination intersectorielle)
-- [ART-0](../../04_architecture-repository/chapitres/art-0.md) (Accords de partage inter-institutionnels)
-- [ART-4D](../../04_architecture-repository/chapitres/art-4d.md) (Référentiel géospatial)
-- [F.2](../../04_architecture-repository/fondations/f-2.md) (Souveraineté intersectorielle)
-- [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../04_architecture-repository/exigences/enf-4.md) (Cloisonnement inter-institutionnel One Health)
+- [CAP-18: Coordination intersectorielle (One Health)](../02_architecture-elements/strategy/capabilities/cap-18.md) (Coordination intersectorielle — One Health)
+- [CAP-05: Surveillance épidémiologique, alerte, investigation et riposte](../02_architecture-elements/strategy/capabilities/cap-05.md) (Surveillance épidémiologique)
+- [ART-11](../04_patterns/artsn-rules/art-11.md) (Coordination intersectorielle)
+- [ART-0](../04_patterns/artsn-rules/art-0.md) (Accords de partage inter-institutionnels)
+- [ART-4D](../04_patterns/artsn-rules/art-4d.md) (Référentiel géospatial)
+- [F.2](../04_patterns/foundations/f-2.md) (Souveraineté intersectorielle)
+- [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../03_requirements/enf-4.md) (Cloisonnement inter-institutionnel One Health)

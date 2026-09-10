@@ -27,10 +27,10 @@ Périmètre : enregistrement, consultation, retrait et vérification du consente
 
 ## 3. Chapitres ART applicables
 
-- [ART-0: Accords de partage inter-institutionnels](../../04_architecture-repository/chapitres/art-0.md) ;
+- [ART-0: Accords de partage inter-institutionnels](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md) ;
 - ART-4B ;
-- [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../04_architecture-repository/chapitres/art-7.md) ;
-- [ART-11: Coordination intersectorielle](../../04_architecture-repository/chapitres/art-11.md).
+- [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md) ;
+- [ART-11: Coordination intersectorielle](../../04_architecture-repository/04_patterns/artsn-rules/art-11.md).
 
 ## 4. Acteurs (Actors)
 
@@ -84,9 +84,9 @@ Conformité attestée par l’enregistrement, la consultation, le retrait et la 
 
 ## 12. Articulation avec les autres profils
 
-- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/profils/pt-04.md)
-- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/profils/pt-10.md)
-- [PT-01: échange interinstitutionnel](../../04_architecture-repository/profils/pt-01.md)
+- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md)
+- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md)
+- [PT-01: échange interinstitutionnel](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md)
 
 Le consentement est vérifié au moment de l’accès, en complément de l’autorisation fonctionnelle (PT-10).
 

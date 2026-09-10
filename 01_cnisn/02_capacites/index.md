@@ -68,15 +68,15 @@ Permettre aux systèmes autorisés de relier plusieurs représentations d’un m
 
 #### Principes associés
 
-- [P-INT-01: Autorité désignée](../../04_architecture-repository/principes/p-int-01.md)
-- [P-INT-02: Résolution contre l’autorité](../../04_architecture-repository/principes/p-int-02.md)
-- [P-INT-03: Copies locales non autoritatives](../../04_architecture-repository/principes/p-int-03.md)
-- [P-INT-04: Historisation des références](../../04_architecture-repository/principes/p-int-04.md)
-- [P-INT-14: Base d’autorisation explicite](../../04_architecture-repository/principes/p-int-14.md)
-- [P-INT-15: Limitation à la finalité](../../04_architecture-repository/principes/p-int-15.md)
-- [P-INT-16: Résidence et non-réplication](../../04_architecture-repository/principes/p-int-16.md)
-- [P-INT-17: Minimisation](../../04_architecture-repository/principes/p-int-17.md)
-- [P-INT-18: Traçabilité différenciée](../../04_architecture-repository/principes/p-int-18.md)
+- [P-INT-01: Autorité désignée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-01.md)
+- [P-INT-02: Résolution contre l’autorité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-02.md)
+- [P-INT-03: Copies locales non autoritatives](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-03.md)
+- [P-INT-04: Historisation des références](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-04.md)
+- [P-INT-14: Base d’autorisation explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-14.md)
+- [P-INT-15: Limitation à la finalité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-15.md)
+- [P-INT-16: Résidence et non-réplication](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-16.md)
+- [P-INT-17: Minimisation](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-17.md)
+- [P-INT-18: Traçabilité différenciée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-18.md)
 
 **Statut : candidate**
 
@@ -108,16 +108,16 @@ Cette capacité est distincte :
 
 #### Principes associés
 
-- [P-INT-01: Autorité désignée](../../04_architecture-repository/principes/p-int-01.md)
-- [P-INT-02: Résolution contre l’autorité](../../04_architecture-repository/principes/p-int-02.md)
-- [P-INT-03: Copies locales non autoritatives](../../04_architecture-repository/principes/p-int-03.md)
-- [P-INT-04: Historisation des références](../../04_architecture-repository/principes/p-int-04.md)
-- [P-INT-14: Base d’autorisation explicite](../../04_architecture-repository/principes/p-int-14.md)
-- [P-INT-15: Limitation à la finalité](../../04_architecture-repository/principes/p-int-15.md)
+- [P-INT-01: Autorité désignée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-01.md)
+- [P-INT-02: Résolution contre l’autorité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-02.md)
+- [P-INT-03: Copies locales non autoritatives](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-03.md)
+- [P-INT-04: Historisation des références](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-04.md)
+- [P-INT-14: Base d’autorisation explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-14.md)
+- [P-INT-15: Limitation à la finalité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-15.md)
 
 #### Articulation avec la paie et les habilitations
 
-- La résolution des professionnels alimente la **gestion de la paie** ([CAP-09: Gestion des ressources humaines en santé](../../04_architecture-repository/capabilites/cap-09.md)) et les **habilitations** ([CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/capabilites/cap-15.md)) ; elle ne gère pas la rémunération.
+- La résolution des professionnels alimente la **gestion de la paie** ([CAP-09: Gestion des ressources humaines en santé](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-09.md)) et les **habilitations** ([CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md)) ; elle ne gère pas la rémunération.
 - Échange financier associé : [PT-18: Échange de réclamations et paiements](../../03_ptisn/03_profils/pt-18-echange-reclamations-paiements.md).
 
 **Statut : candidate**
@@ -149,10 +149,10 @@ Fournir une autorité commune sur :
 
 #### Principes associés
 
-- [P-INT-01: Autorité désignée](../../04_architecture-repository/principes/p-int-01.md)
-- [P-INT-02: Résolution contre l’autorité](../../04_architecture-repository/principes/p-int-02.md)
-- [P-INT-03: Copies locales non autoritatives](../../04_architecture-repository/principes/p-int-03.md)
-- [P-INT-04: Historisation des références](../../04_architecture-repository/principes/p-int-04.md)
+- [P-INT-01: Autorité désignée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-01.md)
+- [P-INT-02: Résolution contre l’autorité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-02.md)
+- [P-INT-03: Copies locales non autoritatives](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-03.md)
+- [P-INT-04: Historisation des références](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-04.md)
 
 **Statut : candidate**
 
@@ -176,12 +176,12 @@ Permettre aux systèmes de partager des définitions et codifications cohérente
 
 #### Principes associés
 
-- [P-INT-01: Autorité désignée](../../04_architecture-repository/principes/p-int-01.md)
-- [P-INT-02: Résolution contre l’autorité](../../04_architecture-repository/principes/p-int-02.md)
-- [P-INT-03: Copies locales non autoritatives](../../04_architecture-repository/principes/p-int-03.md)
-- [P-INT-04: Historisation des références](../../04_architecture-repository/principes/p-int-04.md)
-- [P-INT-05: Contrat explicite](../../04_architecture-repository/principes/p-int-05.md)
-- [P-INT-06: Versionnement et compatibilité](../../04_architecture-repository/principes/p-int-06.md)
+- [P-INT-01: Autorité désignée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-01.md)
+- [P-INT-02: Résolution contre l’autorité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-02.md)
+- [P-INT-03: Copies locales non autoritatives](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-03.md)
+- [P-INT-04: Historisation des références](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-04.md)
+- [P-INT-05: Contrat explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-05.md)
+- [P-INT-06: Versionnement et compatibilité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-06.md)
 
 <!-- END:GENERATED -->
 
@@ -215,23 +215,23 @@ Permettre aux systèmes de transmettre, recevoir, transformer et acheminer des d
 
 #### Principes associés
 
-- [P-INT-05: Contrat explicite](../../04_architecture-repository/principes/p-int-05.md)
-- [P-INT-06: Versionnement et compatibilité](../../04_architecture-repository/principes/p-int-06.md)
-- [P-INT-07: Responsabilité de la donnée](../../04_architecture-repository/principes/p-int-07.md)
-- [P-INT-08: Publication au catalogue des services](../../04_architecture-repository/principes/p-int-08.md)
-- [P-INT-09: Publication des contrats](../../04_architecture-repository/principes/p-int-09.md)
-- [P-INT-10: Accord préalable](../../04_architecture-repository/principes/p-int-10.md)
-- [P-INT-11: Arbitrage des conflits d’autorité](../../04_architecture-repository/principes/p-int-11.md)
-- [P-INT-12: Dérogation explicite](../../04_architecture-repository/principes/p-int-12.md)
-- [P-INT-13: Dérogation d’urgence](../../04_architecture-repository/principes/p-int-13.md)
-- [P-INT-18: Traçabilité différenciée](../../04_architecture-repository/principes/p-int-18.md)
-- [P-INT-19: Neutralité technologique](../../04_architecture-repository/principes/p-int-19.md)
-- [P-INT-20: Portabilité et réversibilité](../../04_architecture-repository/principes/p-int-20.md)
-- [P-INT-21: Progressivité](../../04_architecture-repository/principes/p-int-21.md)
-- [P-INT-22: Fonctionnement en connectivité contrainte](../../04_architecture-repository/principes/p-int-22.md)
-- [P-INT-23: Conformité fondée sur des preuves](../../04_architecture-repository/principes/p-int-23.md)
-- [P-INT-24: Applicabilité déclarée](../../04_architecture-repository/principes/p-int-24.md)
-- [P-INT-25: Réévaluation continue](../../04_architecture-repository/principes/p-int-25.md)
+- [P-INT-05: Contrat explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-05.md)
+- [P-INT-06: Versionnement et compatibilité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-06.md)
+- [P-INT-07: Responsabilité de la donnée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-07.md)
+- [P-INT-08: Publication au catalogue des services](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-08.md)
+- [P-INT-09: Publication des contrats](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-09.md)
+- [P-INT-10: Accord préalable](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-10.md)
+- [P-INT-11: Arbitrage des conflits d’autorité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-11.md)
+- [P-INT-12: Dérogation explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-12.md)
+- [P-INT-13: Dérogation d’urgence](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-13.md)
+- [P-INT-18: Traçabilité différenciée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-18.md)
+- [P-INT-19: Neutralité technologique](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-19.md)
+- [P-INT-20: Portabilité et réversibilité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-20.md)
+- [P-INT-21: Progressivité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-21.md)
+- [P-INT-22: Fonctionnement en connectivité contrainte](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-22.md)
+- [P-INT-23: Conformité fondée sur des preuves](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-23.md)
+- [P-INT-24: Applicabilité déclarée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-24.md)
+- [P-INT-25: Réévaluation continue](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-25.md)
 
 **Statut : candidate**
 
@@ -264,14 +264,14 @@ Rendre visibles, gouvernables et réutilisables les services et interfaces du se
 
 #### Principes associés
 
-- [P-INT-05: Contrat explicite](../../04_architecture-repository/principes/p-int-05.md)
-- [P-INT-06: Versionnement et compatibilité](../../04_architecture-repository/principes/p-int-06.md)
-- [P-INT-07: Responsabilité de la donnée](../../04_architecture-repository/principes/p-int-07.md)
-- [P-INT-08: Publication au catalogue des services](../../04_architecture-repository/principes/p-int-08.md)
-- [P-INT-09: Publication des contrats](../../04_architecture-repository/principes/p-int-09.md)
-- [P-INT-23: Conformité fondée sur des preuves](../../04_architecture-repository/principes/p-int-23.md)
-- [P-INT-24: Applicabilité déclarée](../../04_architecture-repository/principes/p-int-24.md)
-- [P-INT-25: Réévaluation continue](../../04_architecture-repository/principes/p-int-25.md)
+- [P-INT-05: Contrat explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-05.md)
+- [P-INT-06: Versionnement et compatibilité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-06.md)
+- [P-INT-07: Responsabilité de la donnée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-07.md)
+- [P-INT-08: Publication au catalogue des services](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-08.md)
+- [P-INT-09: Publication des contrats](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-09.md)
+- [P-INT-23: Conformité fondée sur des preuves](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-23.md)
+- [P-INT-24: Applicabilité déclarée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-24.md)
+- [P-INT-25: Réévaluation continue](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-25.md)
 
 <!-- END:GENERATED -->
 
@@ -307,20 +307,20 @@ La conception interne des entrepôts, projections et modèles analytiques relèv
 
 #### Principes associés
 
-- [P-INT-05: Contrat explicite](../../04_architecture-repository/principes/p-int-05.md)
-- [P-INT-06: Versionnement et compatibilité](../../04_architecture-repository/principes/p-int-06.md)
-- [P-INT-07: Responsabilité de la donnée](../../04_architecture-repository/principes/p-int-07.md)
-- [P-INT-08: Publication au catalogue des services](../../04_architecture-repository/principes/p-int-08.md)
-- [P-INT-09: Publication des contrats](../../04_architecture-repository/principes/p-int-09.md)
-- [P-INT-17: Minimisation](../../04_architecture-repository/principes/p-int-17.md)
-- [P-INT-18: Traçabilité différenciée](../../04_architecture-repository/principes/p-int-18.md)
-- [P-INT-19: Neutralité technologique](../../04_architecture-repository/principes/p-int-19.md)
-- [P-INT-20: Portabilité et réversibilité](../../04_architecture-repository/principes/p-int-20.md)
-- [P-INT-21: Progressivité](../../04_architecture-repository/principes/p-int-21.md)
-- [P-INT-22: Fonctionnement en connectivité contrainte](../../04_architecture-repository/principes/p-int-22.md)
-- [P-INT-23: Conformité fondée sur des preuves](../../04_architecture-repository/principes/p-int-23.md)
-- [P-INT-24: Applicabilité déclarée](../../04_architecture-repository/principes/p-int-24.md)
-- [P-INT-25: Réévaluation continue](../../04_architecture-repository/principes/p-int-25.md)
+- [P-INT-05: Contrat explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-05.md)
+- [P-INT-06: Versionnement et compatibilité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-06.md)
+- [P-INT-07: Responsabilité de la donnée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-07.md)
+- [P-INT-08: Publication au catalogue des services](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-08.md)
+- [P-INT-09: Publication des contrats](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-09.md)
+- [P-INT-17: Minimisation](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-17.md)
+- [P-INT-18: Traçabilité différenciée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-18.md)
+- [P-INT-19: Neutralité technologique](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-19.md)
+- [P-INT-20: Portabilité et réversibilité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-20.md)
+- [P-INT-21: Progressivité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-21.md)
+- [P-INT-22: Fonctionnement en connectivité contrainte](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-22.md)
+- [P-INT-23: Conformité fondée sur des preuves](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-23.md)
+- [P-INT-24: Applicabilité déclarée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-24.md)
+- [P-INT-25: Réévaluation continue](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-25.md)
 
 <!-- END:GENERATED -->
 
@@ -353,13 +353,13 @@ Fournir les mécanismes nécessaires à l’identification, l’authentification
 
 #### Principes associés
 
-- [P-INT-14: Base d’autorisation explicite](../../04_architecture-repository/principes/p-int-14.md)
-- [P-INT-15: Limitation à la finalité](../../04_architecture-repository/principes/p-int-15.md)
-- [P-INT-16: Résidence et non-réplication](../../04_architecture-repository/principes/p-int-16.md)
-- [P-INT-17: Minimisation](../../04_architecture-repository/principes/p-int-17.md)
-- [P-INT-18: Traçabilité différenciée](../../04_architecture-repository/principes/p-int-18.md)
-- [P-INT-19: Neutralité technologique](../../04_architecture-repository/principes/p-int-19.md)
-- [P-INT-20: Portabilité et réversibilité](../../04_architecture-repository/principes/p-int-20.md)
+- [P-INT-14: Base d’autorisation explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-14.md)
+- [P-INT-15: Limitation à la finalité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-15.md)
+- [P-INT-16: Résidence et non-réplication](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-16.md)
+- [P-INT-17: Minimisation](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-17.md)
+- [P-INT-18: Traçabilité différenciée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-18.md)
+- [P-INT-19: Neutralité technologique](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-19.md)
+- [P-INT-20: Portabilité et réversibilité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-20.md)
 
 **Statut : candidate**
 
@@ -387,10 +387,10 @@ Le consentement est une base possible parmi plusieurs bases légales ou fonction
 
 #### Principes associés
 
-- [P-INT-14: Base d’autorisation explicite](../../04_architecture-repository/principes/p-int-14.md)
-- [P-INT-15: Limitation à la finalité](../../04_architecture-repository/principes/p-int-15.md)
-- [P-INT-16: Résidence et non-réplication](../../04_architecture-repository/principes/p-int-16.md)
-- [P-INT-17: Minimisation](../../04_architecture-repository/principes/p-int-17.md)
+- [P-INT-14: Base d’autorisation explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-14.md)
+- [P-INT-15: Limitation à la finalité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-15.md)
+- [P-INT-16: Résidence et non-réplication](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-16.md)
+- [P-INT-17: Minimisation](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-17.md)
 
 **Statut : candidate**
 
@@ -418,10 +418,10 @@ Permettre de comprendre :
 
 #### Principes associés
 
-- [P-INT-07: Responsabilité de la donnée](../../04_architecture-repository/principes/p-int-07.md)
-- [P-INT-17: Minimisation](../../04_architecture-repository/principes/p-int-17.md)
-- [P-INT-18: Traçabilité différenciée](../../04_architecture-repository/principes/p-int-18.md)
-- [P-INT-23: Conformité fondée sur des preuves](../../04_architecture-repository/principes/p-int-23.md)
+- [P-INT-07: Responsabilité de la donnée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-07.md)
+- [P-INT-17: Minimisation](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-17.md)
+- [P-INT-18: Traçabilité différenciée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-18.md)
+- [P-INT-23: Conformité fondée sur des preuves](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-23.md)
 
 <!-- END:GENERATED -->
 
@@ -452,18 +452,18 @@ Permettre de détecter et traiter les divergences entre systèmes, référentiel
 
 #### Principes associés
 
-- [P-INT-01: Autorité désignée](../../04_architecture-repository/principes/p-int-01.md)
-- [P-INT-02: Résolution contre l’autorité](../../04_architecture-repository/principes/p-int-02.md)
-- [P-INT-03: Copies locales non autoritatives](../../04_architecture-repository/principes/p-int-03.md)
-- [P-INT-04: Historisation des références](../../04_architecture-repository/principes/p-int-04.md)
-- [P-INT-05: Contrat explicite](../../04_architecture-repository/principes/p-int-05.md)
-- [P-INT-06: Versionnement et compatibilité](../../04_architecture-repository/principes/p-int-06.md)
-- [P-INT-07: Responsabilité de la donnée](../../04_architecture-repository/principes/p-int-07.md)
-- [P-INT-08: Publication au catalogue des services](../../04_architecture-repository/principes/p-int-08.md)
-- [P-INT-09: Publication des contrats](../../04_architecture-repository/principes/p-int-09.md)
-- [P-INT-23: Conformité fondée sur des preuves](../../04_architecture-repository/principes/p-int-23.md)
-- [P-INT-24: Applicabilité déclarée](../../04_architecture-repository/principes/p-int-24.md)
-- [P-INT-25: Réévaluation continue](../../04_architecture-repository/principes/p-int-25.md)
+- [P-INT-01: Autorité désignée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-01.md)
+- [P-INT-02: Résolution contre l’autorité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-02.md)
+- [P-INT-03: Copies locales non autoritatives](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-03.md)
+- [P-INT-04: Historisation des références](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-04.md)
+- [P-INT-05: Contrat explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-05.md)
+- [P-INT-06: Versionnement et compatibilité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-06.md)
+- [P-INT-07: Responsabilité de la donnée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-07.md)
+- [P-INT-08: Publication au catalogue des services](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-08.md)
+- [P-INT-09: Publication des contrats](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-09.md)
+- [P-INT-23: Conformité fondée sur des preuves](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-23.md)
+- [P-INT-24: Applicabilité déclarée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-24.md)
+- [P-INT-25: Réévaluation continue](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-25.md)
 
 **Statut : candidate**
 
@@ -488,13 +488,13 @@ Permettre de vérifier objectivement qu’un système respecte les contrats et p
 
 #### Principes associés
 
-- [P-INT-19: Neutralité technologique](../../04_architecture-repository/principes/p-int-19.md)
-- [P-INT-20: Portabilité et réversibilité](../../04_architecture-repository/principes/p-int-20.md)
-- [P-INT-21: Progressivité](../../04_architecture-repository/principes/p-int-21.md)
-- [P-INT-22: Fonctionnement en connectivité contrainte](../../04_architecture-repository/principes/p-int-22.md)
-- [P-INT-23: Conformité fondée sur des preuves](../../04_architecture-repository/principes/p-int-23.md)
-- [P-INT-24: Applicabilité déclarée](../../04_architecture-repository/principes/p-int-24.md)
-- [P-INT-25: Réévaluation continue](../../04_architecture-repository/principes/p-int-25.md)
+- [P-INT-19: Neutralité technologique](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-19.md)
+- [P-INT-20: Portabilité et réversibilité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-20.md)
+- [P-INT-21: Progressivité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-21.md)
+- [P-INT-22: Fonctionnement en connectivité contrainte](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-22.md)
+- [P-INT-23: Conformité fondée sur des preuves](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-23.md)
+- [P-INT-24: Applicabilité déclarée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-24.md)
+- [P-INT-25: Réévaluation continue](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-25.md)
 
 #### Réponse nationale
 
@@ -578,7 +578,7 @@ Madagascar est membre de l'Union Africaine (UA), de la Commission Économique de
 
 | Exigence | Description |
 |----------|-------------|
-| **EXG-TF-01** | Tout flux transfrontalier doit être couvert par un accord explicite ([P-INT-10: Accord préalable](../../04_architecture-repository/principes/p-int-10.md)) |
+| **EXG-TF-01** | Tout flux transfrontalier doit être couvert par un accord explicite ([P-INT-10: Accord préalable](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-10.md)) |
 | **EXG-TF-02** | Le consentement du patient doit être obtenu pour tout échange sortant sauf obligation légale |
 | **EXG-TF-03** | Seules les données minimisées nécessaires à la finalité peuvent être exportées |
 | **EXG-TF-04** | Tous les flux transfrontaliers doivent être journalisés et auditable |
@@ -589,20 +589,20 @@ Madagascar est membre de l'Union Africaine (UA), de la Commission Économique de
 
 #### Principes associés
 
-- [P-INT-01: Autorité désignée](../../04_architecture-repository/principes/p-int-01.md) (Autorité désignée) : l'autorité nationale reste l'autorité pour les données malagasy, même lors d'échanges ;
-- [P-INT-05: Contrat explicite](../../04_architecture-repository/principes/p-int-05.md) (Contrat explicite) : tout flux transfrontalier nécessite un accord bilatéral ou multilatéral ;
-- [P-INT-10: Accord préalable](../../04_architecture-repository/principes/p-int-10.md) (Accord préalable) : accord obligatoire avant tout échange avec une institution étrangère ;
-- [P-INT-14: Base d’autorisation explicite](../../04_architecture-repository/principes/p-int-14.md) (Base d'autorisation explicite) : base légale documentée pour chaque type de flux sortant ;
-- [P-INT-16: Résidence et non-réplication](../../04_architecture-repository/principes/p-int-16.md) (Résidence) : les contraintes de résidence s'appliquent aux flux transfrontaliers ;
-- [P-INT-17: Minimisation](../../04_architecture-repository/principes/p-int-17.md) (Minimisation) : minimisation renforcée pour les échanges internationaux ;
-- [P-INT-19: Neutralité technologique](../../04_architecture-repository/principes/p-int-19.md) (Neutralité technologique) : le GDHCN est un cadre de confiance, pas un produit.
+- [P-INT-01: Autorité désignée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-01.md) (Autorité désignée) : l'autorité nationale reste l'autorité pour les données malagasy, même lors d'échanges ;
+- [P-INT-05: Contrat explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-05.md) (Contrat explicite) : tout flux transfrontalier nécessite un accord bilatéral ou multilatéral ;
+- [P-INT-10: Accord préalable](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-10.md) (Accord préalable) : accord obligatoire avant tout échange avec une institution étrangère ;
+- [P-INT-14: Base d’autorisation explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-14.md) (Base d'autorisation explicite) : base légale documentée pour chaque type de flux sortant ;
+- [P-INT-16: Résidence et non-réplication](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-16.md) (Résidence) : les contraintes de résidence s'appliquent aux flux transfrontaliers ;
+- [P-INT-17: Minimisation](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-17.md) (Minimisation) : minimisation renforcée pour les échanges internationaux ;
+- [P-INT-19: Neutralité technologique](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-19.md) (Neutralité technologique) : le GDHCN est un cadre de confiance, pas un produit.
 
 #### Rattachement
 
-- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/capabilites/cap-15.md) (Sécurité, contrôle d'accès et résidence)
-- [CAP-18: Coordination intersectorielle (One Health)](../../04_architecture-repository/capabilites/cap-18.md) (Coordination intersectorielle — One Health)
-- [ART-7](../../04_architecture-repository/chapitres/art-7.md) (Sécurité, contrôle d'accès et résidence)
-- [ART-0](../../04_architecture-repository/chapitres/art-0.md) (Accords de partage inter-institutionnels)
+- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md) (Sécurité, contrôle d'accès et résidence)
+- [CAP-18: Coordination intersectorielle (One Health)](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-18.md) (Coordination intersectorielle — One Health)
+- [ART-7](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md) (Sécurité, contrôle d'accès et résidence)
+- [ART-0](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md) (Accords de partage inter-institutionnels)
 - [PT-14](../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md) (Profil technique transfrontalier — IPS)
 
 <!-- END:GENERATED -->
@@ -675,7 +675,7 @@ Les secteurs concernés :
 
 | Exigence | Description |
 |----------|-------------|
-| **EXG-OH-01** | Tout échange intersectoriel doit être couvert par un accord explicite entre ministères ([P-INT-10: Accord préalable](../../04_architecture-repository/principes/p-int-10.md)) |
+| **EXG-OH-01** | Tout échange intersectoriel doit être couvert par un accord explicite entre ministères ([P-INT-10: Accord préalable](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-10.md)) |
 | **EXG-OH-02** | Les identités humaines ne doivent jamais être croisées avec les identités animales |
 | **EXG-OH-03** | Les données agrégées croisées doivent être irréversiblement désanonymisées |
 | **EXG-OH-04** | Chaque secteur conserve la souveraineté sur ses données source |
@@ -685,22 +685,22 @@ Les secteurs concernés :
 
 #### Principes associés
 
-- [P-INT-01: Autorité désignée](../../04_architecture-repository/principes/p-int-01.md) (Autorité désignée) : chaque secteur reste l'autorité de ses données ;
-- [P-INT-05: Contrat explicite](../../04_architecture-repository/principes/p-int-05.md) (Contrat explicite) : tout flux intersectoriel nécessite un accord ;
-- [P-INT-10: Accord préalable](../../04_architecture-repository/principes/p-int-10.md) (Accord préalable) : accord obligatoire entre ministères ;
-- [P-INT-14: Base d’autorisation explicite](../../04_architecture-repository/principes/p-int-14.md) (Base d'autorisation explicite) : base légale documentée par secteur ;
-- [P-INT-16: Résidence et non-réplication](../../04_architecture-repository/principes/p-int-16.md) (Résidence) : les données restent dans leur secteur d'origine ;
-- [P-INT-22: Fonctionnement en connectivité contrainte](../../04_architecture-repository/principes/p-int-22.md) (Connectivité contrainte) : les secteurs ont des niveaux de connectivité variables.
+- [P-INT-01: Autorité désignée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-01.md) (Autorité désignée) : chaque secteur reste l'autorité de ses données ;
+- [P-INT-05: Contrat explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-05.md) (Contrat explicite) : tout flux intersectoriel nécessite un accord ;
+- [P-INT-10: Accord préalable](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-10.md) (Accord préalable) : accord obligatoire entre ministères ;
+- [P-INT-14: Base d’autorisation explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-14.md) (Base d'autorisation explicite) : base légale documentée par secteur ;
+- [P-INT-16: Résidence et non-réplication](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-16.md) (Résidence) : les données restent dans leur secteur d'origine ;
+- [P-INT-22: Fonctionnement en connectivité contrainte](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-22.md) (Connectivité contrainte) : les secteurs ont des niveaux de connectivité variables.
 
 #### Rattachement
 
-- [CAP-18: Coordination intersectorielle (One Health)](../../04_architecture-repository/capabilites/cap-18.md) (Coordination intersectorielle — One Health)
-- [CAP-05: Surveillance épidémiologique, alerte, investigation et riposte](../../04_architecture-repository/capabilites/cap-05.md) (Surveillance épidémiologique)
-- [ART-11](../../04_architecture-repository/chapitres/art-11.md) (Coordination intersectorielle)
-- [ART-0](../../04_architecture-repository/chapitres/art-0.md) (Accords de partage inter-institutionnels)
-- [ART-4D](../../04_architecture-repository/chapitres/art-4d.md) (Référentiel géospatial)
-- [F.2](../../04_architecture-repository/fondations/f-2.md) (Souveraineté intersectorielle)
-- [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../04_architecture-repository/exigences/enf-4.md) (Cloisonnement inter-institutionnel One Health)
+- [CAP-18: Coordination intersectorielle (One Health)](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-18.md) (Coordination intersectorielle — One Health)
+- [CAP-05: Surveillance épidémiologique, alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-05.md) (Surveillance épidémiologique)
+- [ART-11](../../04_architecture-repository/04_patterns/artsn-rules/art-11.md) (Coordination intersectorielle)
+- [ART-0](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md) (Accords de partage inter-institutionnels)
+- [ART-4D](../../04_architecture-repository/04_patterns/artsn-rules/art-4d.md) (Référentiel géospatial)
+- [F.2](../../04_architecture-repository/04_patterns/foundations/f-2.md) (Souveraineté intersectorielle)
+- [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../04_architecture-repository/03_requirements/enf-4.md) (Cloisonnement inter-institutionnel One Health)
 
 <!-- END:GENERATED -->
 
@@ -729,16 +729,16 @@ Cette capacité est distincte de la gestion logistique applicative (LMIS métier
 
 #### Principes associés
 
-- [P-INT-03: Copies locales non autoritatives](../../04_architecture-repository/principes/p-int-03.md)
-- [P-INT-07: Responsabilité de la donnée](../../04_architecture-repository/principes/p-int-07.md)
-- [P-INT-18: Traçabilité différenciée](../../04_architecture-repository/principes/p-int-18.md)
+- [P-INT-03: Copies locales non autoritatives](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-03.md)
+- [P-INT-07: Responsabilité de la donnée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-07.md)
+- [P-INT-18: Traçabilité différenciée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-18.md)
 
 #### Rattachement
 
-- [CAP-10: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement](../../04_architecture-repository/capabilites/cap-10.md)
-- [CAP-11: Gestion des infrastructures, équipements et maintenance](../../04_architecture-repository/capabilites/cap-11.md)
-- [CMP-23: LMIS (logistique)](../../04_architecture-repository/composants/cmp-23.md)
-- [ART-10: Logistique](../../04_architecture-repository/chapitres/art-10.md)
+- [CAP-10: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-10.md)
+- [CAP-11: Gestion des infrastructures, équipements et maintenance](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-11.md)
+- [CMP-23: LMIS (logistique)](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-23.md)
+- [ART-10: Logistique](../../04_architecture-repository/04_patterns/artsn-rules/art-10.md)
 - [CAP-INT-03: Échange et médiation](../../04_architecture-repository/capacites/cap-int-03.md)
 - [CAP-INT-10: Provenance, audit et traçabilité](../../04_architecture-repository/capacites/cap-int-10.md)
 
@@ -763,18 +763,18 @@ Cette capacité complète (sans la remplacer) la coordination intersectorielle O
 
 #### Principes associés
 
-- [P-INT-01: Autorité désignée](../../04_architecture-repository/principes/p-int-01.md)
-- [P-INT-10: Accord préalable](../../04_architecture-repository/principes/p-int-10.md)
-- [P-INT-16: Résidence et non-réplication](../../04_architecture-repository/principes/p-int-16.md)
+- [P-INT-01: Autorité désignée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-01.md)
+- [P-INT-10: Accord préalable](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-10.md)
+- [P-INT-16: Résidence et non-réplication](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-16.md)
 
 #### Rattachement
 
-- [CAP-18: Coordination intersectorielle (One Health)](../../04_architecture-repository/capabilites/cap-18.md)
-- [CAP-05: Surveillance épidémiologique, alerte, investigation et riposte](../../04_architecture-repository/capabilites/cap-05.md)
-- [CMP-05: Référentiel spatio-temporel](../../04_architecture-repository/composants/cmp-05.md)
-- [ART-4D: Référentiel géospatial et d'exploitation partagé](../../04_architecture-repository/chapitres/art-4d.md)
+- [CAP-18: Coordination intersectorielle (One Health)](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-18.md)
+- [CAP-05: Surveillance épidémiologique, alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-05.md)
+- [CMP-05: Référentiel spatio-temporel](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-05.md)
+- [ART-4D: Référentiel géospatial et d'exploitation partagé](../../04_architecture-repository/04_patterns/artsn-rules/art-4d.md)
 - [CAP-INT-14: Échanges intersectoriels One Health](../../04_architecture-repository/capacites/cap-int-14.md)
-- [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../04_architecture-repository/exigences/enf-4.md)
+- [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../04_architecture-repository/03_requirements/enf-4.md)
 
 <!-- END:GENERATED -->
 

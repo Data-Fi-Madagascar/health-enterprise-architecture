@@ -38,11 +38,11 @@ Fournir les mécanismes nécessaires à l’identification, l’authentification
 
 ### Principes associés
 
-- [P-INT-14: Base d’autorisation explicite](../principes/p-int-14.md)
-- [P-INT-15: Limitation à la finalité](../principes/p-int-15.md)
-- [P-INT-16: Résidence et non-réplication](../principes/p-int-16.md)
-- [P-INT-17: Minimisation](../principes/p-int-17.md)
-- [P-INT-18: Traçabilité différenciée](../principes/p-int-18.md)
-- [P-INT-19: Neutralité technologique](../principes/p-int-19.md)
-- [P-INT-20: Portabilité et réversibilité](../principes/p-int-20.md)
+- [P-INT-14: Base d’autorisation explicite](../02_architecture-elements/motivation/principles/p-int-14.md)
+- [P-INT-15: Limitation à la finalité](../02_architecture-elements/motivation/principles/p-int-15.md)
+- [P-INT-16: Résidence et non-réplication](../02_architecture-elements/motivation/principles/p-int-16.md)
+- [P-INT-17: Minimisation](../02_architecture-elements/motivation/principles/p-int-17.md)
+- [P-INT-18: Traçabilité différenciée](../02_architecture-elements/motivation/principles/p-int-18.md)
+- [P-INT-19: Neutralité technologique](../02_architecture-elements/motivation/principles/p-int-19.md)
+- [P-INT-20: Portabilité et réversibilité](../02_architecture-elements/motivation/principles/p-int-20.md)
 

@@ -343,7 +343,7 @@
   "x-hea-applies-to": [
     "CMP-23"
   ],
-  "x-hea-source": "04_architecture-repository/profils/pt-17.md",
+  "x-hea-source": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-17.md",
   "x-hea-fhir-resources": [
     "InventoryReport",
     "SupplyDelivery",
@@ -351,5 +351,5 @@
     "XRoadResponse"
   ],
   "x-hea-data-objects": [],
-  "x-hea-file": "04_architecture-repository/profils/pt-17.md"
+  "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-17.md"
 }

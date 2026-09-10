@@ -23,12 +23,12 @@ Périmètre : vérification d’éligibilité, soumission de réclamation, adjud
 
 ## 2. Capacité CNISN
 
-[CAP-07: Protection financière, couverture santé universelle](../../04_architecture-repository/capabilites/cap-07.md)
+[CAP-07: Protection financière, couverture santé universelle](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-07.md)
 
 ## 3. Chapitres ART applicables
 
-- [ART-2: médiation et normalisation](../../04_architecture-repository/chapitres/art-2.md)
-- [ART-9: garanties transactionnelles fortes](../../04_architecture-repository/chapitres/art-9.md)
+- [ART-2: médiation et normalisation](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md)
+- [ART-9: garanties transactionnelles fortes](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md)
 - [STD-0008: échange des réclamations et paiements](../../01_cnisn/05_standards/std-0008-echange-reclamations-paiements.md)
 
 ## 4. Acteurs (Actors)
@@ -101,10 +101,10 @@ Aucun produit national n’est encore retenu (**statut : à instruire**). Le bus
 
 ## 12. Articulation avec les autres profils
 
-- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/profils/pt-04.md)
-- [PT-05: registre des professionnels](../../04_architecture-repository/profils/pt-05.md)
-- [PT-02: médiation intra-secteur](../../04_architecture-repository/profils/pt-02.md)
-- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/profils/pt-10.md)
+- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md)
+- [PT-05: registre des professionnels](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md)
+- [PT-02: médiation intra-secteur](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-02.md)
+- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md)
 
 ## 13. Limites et dépendances
 

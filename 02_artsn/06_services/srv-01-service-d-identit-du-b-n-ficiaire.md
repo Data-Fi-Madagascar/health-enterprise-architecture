@@ -25,7 +25,7 @@ tags: ["artsn", "service", "srv-01", "patterns"]
 
 Le service d'identité du bénéficiaire permet de résoudre et d'authentifier l'identité d'une personne de façon unique et fiable à travers tout le système. C'est le socle de la confiance : sans identité résolue, aucune donnée ne peut être attribuée à la bonne personne.
 
-Service de catégorie *business*, il [sert le patient et usager](../../04_architecture-repository/parties-prenantes/pp-01.md), [réalise la capacité « Engagement patient et identité numérique »](../../04_architecture-repository/capabilites/cap-17.md) et [accède à l'objet métier Patient](../../04_architecture-repository/objets-metier/bo-01.md). Il [met en œuvre le chapitre ART-2 (identité)](../../04_architecture-repository/chapitres/art-2.md) et s'appuie sur le [composant d'identité](../../04_architecture-repository/composants/cmp-08.md).
+Service de catégorie *business*, il [sert le patient et usager](../../04_architecture-repository/02_architecture-elements/motivation/stakeholders/pp-01.md), [réalise la capacité « Engagement patient et identité numérique »](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-17.md) et [accède à l'objet métier Patient](../../04_architecture-repository/02_architecture-elements/business/business-objects/bo-01.md). Il [met en œuvre le chapitre ART-2 (identité)](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md) et s'appuie sur le [composant d'identité](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-08.md).
 
 ## Catégorie
 
@@ -33,10 +33,10 @@ business.
 
 ## Exposition
 
-Sert la partie prenante [PP-01](../../04_architecture-repository/parties-prenantes/pp-01.md) et crée de la valeur pour son bénéficiaire.
+Sert la partie prenante [PP-01](../../04_architecture-repository/02_architecture-elements/motivation/stakeholders/pp-01.md) et crée de la valeur pour son bénéficiaire.
 
 ## Réalisation
 
-Réalisé par les capacités [CAP-17](../../04_architecture-repository/capabilites/cap-17.md) et mis en œuvre via les chapitres [ART-2](../../04_architecture-repository/chapitres/art-2.md).
+Réalisé par les capacités [CAP-17](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-17.md) et mis en œuvre via les chapitres [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md).
 
 <!-- END:GENERATED -->

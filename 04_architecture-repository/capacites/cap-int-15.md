@@ -36,15 +36,15 @@ Cette capacité est distincte de la gestion logistique applicative (LMIS métier
 
 ### Principes associés
 
-- [P-INT-03: Copies locales non autoritatives](../principes/p-int-03.md)
-- [P-INT-07: Responsabilité de la donnée](../principes/p-int-07.md)
-- [P-INT-18: Traçabilité différenciée](../principes/p-int-18.md)
+- [P-INT-03: Copies locales non autoritatives](../02_architecture-elements/motivation/principles/p-int-03.md)
+- [P-INT-07: Responsabilité de la donnée](../02_architecture-elements/motivation/principles/p-int-07.md)
+- [P-INT-18: Traçabilité différenciée](../02_architecture-elements/motivation/principles/p-int-18.md)
 
 ### Rattachement
 
-- [CAP-10: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement](../../04_architecture-repository/capabilites/cap-10.md)
-- [CAP-11: Gestion des infrastructures, équipements et maintenance](../../04_architecture-repository/capabilites/cap-11.md)
-- [CMP-23: LMIS (logistique)](../../04_architecture-repository/composants/cmp-23.md)
-- [ART-10: Logistique](../../04_architecture-repository/chapitres/art-10.md)
+- [CAP-10: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement](../02_architecture-elements/strategy/capabilities/cap-10.md)
+- [CAP-11: Gestion des infrastructures, équipements et maintenance](../02_architecture-elements/strategy/capabilities/cap-11.md)
+- [CMP-23: LMIS (logistique)](../05_building-blocks/abb/legacy-components/cmp-23.md)
+- [ART-10: Logistique](../04_patterns/artsn-rules/art-10.md)
 - [CAP-INT-03: Échange et médiation](cap-int-03.md)
 - [CAP-INT-10: Provenance, audit et traçabilité](cap-int-10.md)

@@ -27,9 +27,9 @@ Périmètre : consultation et gestion de systèmes de codes, ensembles de valeur
 
 ## 3. Chapitres ART applicables
 
-- [ART-2: normalisation sémantique](../../04_architecture-repository/chapitres/art-2.md)
-- [ART-4: référentiels](../../04_architecture-repository/chapitres/art-4.md)
-- [ART-5: qualité](../../04_architecture-repository/chapitres/art-5.md)
+- [ART-2: normalisation sémantique](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md)
+- [ART-4: référentiels](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
+- [ART-5: qualité](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md)
 
 ## 4. Acteurs (Actors)
 
@@ -92,10 +92,10 @@ Conformité attestée par la publication des ressources `CodeSystem`/`ValueSet`/
 
 ## 12. Articulation avec les autres profils
 
-- [PT-02: médiation intra-secteur](../../04_architecture-repository/profils/pt-02.md)
-- [PT-04: résolution d’identité](../../04_architecture-repository/profils/pt-04.md)
-- [PT-05: registre des professionnels](../../04_architecture-repository/profils/pt-05.md)
-- [PT-11: consentement et bases d’autorisation](../../04_architecture-repository/profils/pt-11.md)
+- [PT-02: médiation intra-secteur](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-02.md)
+- [PT-04: résolution d’identité](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md)
+- [PT-05: registre des professionnels](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md)
+- [PT-11: consentement et bases d’autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-11.md)
 
 Le service terminologique est une dépendance transverse de tous les profils métier.
 

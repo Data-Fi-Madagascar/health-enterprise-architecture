@@ -215,7 +215,7 @@
   "x-hea-applies-to": [
     "CMP-11"
   ],
-  "x-hea-source": "04_architecture-repository/profils/pt-04.md",
+  "x-hea-source": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md",
   "x-hea-fhir-resources": [
     "Patient"
   ],
@@ -223,5 +223,5 @@
     "DO-01",
     "DO-03"
   ],
-  "x-hea-file": "04_architecture-repository/profils/pt-04.md"
+  "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md"
 }

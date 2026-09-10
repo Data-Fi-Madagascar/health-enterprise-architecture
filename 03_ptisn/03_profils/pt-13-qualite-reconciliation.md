@@ -27,9 +27,9 @@ Périmètre : validation des contrats, qualité des données, réconciliation, g
 
 ## 3. Chapitres ART applicables
 
-- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/chapitres/art-4.md)
-- [ART-5: Cohérence et qualité des données](../../04_architecture-repository/chapitres/art-5.md)
-- [ART-6: Analytique et restitution](../../04_architecture-repository/chapitres/art-6.md)
+- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
+- [ART-5: Cohérence et qualité des données](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md)
+- [ART-6: Analytique et restitution](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md)
 
 ## 4. Acteurs (Actors)
 
@@ -102,9 +102,9 @@ Conformité attestée par des tests de contrôle exécutés par interface, la pu
 
 ## 12. Articulation avec les autres profils
 
-- [PT-03: catalogue des services et registre des contrats](../../04_architecture-repository/profils/pt-03.md)
-- [PT-09: analytique et exposition de données](../../04_architecture-repository/profils/pt-09.md)
-- [PT-08: échange de données agrégées](../../04_architecture-repository/profils/pt-08.md)
+- [PT-03: catalogue des services et registre des contrats](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-03.md)
+- [PT-09: analytique et exposition de données](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-09.md)
+- [PT-08: échange de données agrégées](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-08.md)
 
 ## 13. Limites et dépendances
 

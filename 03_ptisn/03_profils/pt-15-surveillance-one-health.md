@@ -27,19 +27,19 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 | **Partenaires** | OIE/WAHIS, FAO, GBIF, WMO, CDC Africa, instituts nationaux vétérinaires |
 | **Flux** | Surveillance zoonotique, alertes One Health, données climatiques, biodiversité |
 | **Standards** | FHIR R4, mADX, OIE-WAHIS, GBIF, WMO BUFR |
-| **Chapitres ARTSN** | [ART-11: Coordination intersectorielle](../../04_architecture-repository/chapitres/art-11.md), [ART-0: Accords](../../04_architecture-repository/chapitres/art-0.md), ART-4D (Référentiels vétérinaires), ART-8B (Surveillance) |
+| **Chapitres ARTSN** | [ART-11: Coordination intersectorielle](../../04_architecture-repository/04_patterns/artsn-rules/art-11.md), [ART-0: Accords](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md), ART-4D (Référentiels vétérinaires), ART-8B (Surveillance) |
 
 ## 2. Capacité CNISN
 
 - [CAP-INT-14: Échanges intersectoriels One Health](../../04_architecture-repository/capacites/cap-int-14.md)
 - [CAP-INT-16: Surveillance et alertes multi-sectorielles](../../04_architecture-repository/capacites/cap-int-16.md)
-- [CAP-18: Coordination intersectorielle (One Health)](../../04_architecture-repository/capabilites/cap-18.md)
-- [CAP-05: Terminologie et codification communes](../../04_architecture-repository/capabilites/cap-05.md)
+- [CAP-18: Coordination intersectorielle (One Health)](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-18.md)
+- [CAP-05: Terminologie et codification communes](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-05.md)
 
 ## 3. Chapitres ART applicables
 
-- [ART-11: Coordination intersectorielle](../../04_architecture-repository/chapitres/art-11.md)
-- [ART-0: Accords de partage inter-institutionnels](../../04_architecture-repository/chapitres/art-0.md)
+- [ART-11: Coordination intersectorielle](../../04_architecture-repository/04_patterns/artsn-rules/art-11.md)
+- [ART-0: Accords de partage inter-institutionnels](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md)
 - ART-4D — Référentiels vétérinaires
 - ART-8B — Surveillance
 
@@ -85,7 +85,7 @@ Interfaces d’échange retenues :
 | Propriété | Valeur |
 |-----------|--------|
 | **Producteur** | Instituts vétérinaires nationaux |
-| **Consommateur** | [CMP-04: Moteur analytique](../../04_architecture-repository/composants/cmp-04.md) |
+| **Consommateur** | [CMP-04: Moteur analytique](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-04.md) |
 | **Format** | OIE-WAHIS API / FHIR Observation |
 | **Protocole** | REST (synchrone) |
 | **Fréquence** | Hebdomadaire + alertes temps réel |
@@ -95,7 +95,7 @@ Interfaces d’échange retenues :
 | Propriété | Valeur |
 |-----------|--------|
 | **Producteur** | GBIF, instituts de recherche |
-| **Consommateur** | [CMP-04: Moteur analytique](../../04_architecture-repository/composants/cmp-04.md) |
+| **Consommateur** | [CMP-04: Moteur analytique](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-04.md) |
 | **Format** | GBIF API / Darwin Core |
 | **Protocole** | REST |
 | **Fréquence** | Mensuelle |
@@ -105,7 +105,7 @@ Interfaces d’échange retenues :
 | Propriété | Valeur |
 |-----------|--------|
 | **Producteur** | Stations météo, WMO |
-| **Consommateur** | [CMP-04: Moteur analytique](../../04_architecture-repository/composants/cmp-04.md) |
+| **Consommateur** | [CMP-04: Moteur analytique](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-04.md) |
 | **Format** | WMO BUFR / FHIR Observation |
 | **Protocole** | REST / FTP |
 | **Fréquence** | Quotidienne |
@@ -114,8 +114,8 @@ Interfaces d’échange retenues :
 
 | Propriété | Valeur |
 |-----------|--------|
-| **Producteur** | [CMP-04: Moteur analytique](../../04_architecture-repository/composants/cmp-04.md) |
-| **Consommateur** | [CMP-02: Centre de commande](../../04_architecture-repository/composants/cmp-02.md), OIE, FAO, OMS |
+| **Producteur** | [CMP-04: Moteur analytique](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-04.md) |
+| **Consommateur** | [CMP-02: Centre de commande](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-02.md), OIE, FAO, OMS |
 | **Format** | FHIR Communication (priority: urgent) |
 | **Protocole** | REST + SMS |
 | **Fréquence** | Événementielle (alertes) |
@@ -177,9 +177,9 @@ La conformité est attestée par la validation CNASN des accords de partage et l
 
 ## 12. Articulation avec les autres profils
 
-- [PT-08: échange de données agrégées](../../04_architecture-repository/profils/pt-08.md)
-- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/profils/pt-10.md)
-- [PT-11: consentement et bases d’autorisation](../../04_architecture-repository/profils/pt-11.md)
+- [PT-08: échange de données agrégées](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-08.md)
+- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md)
+- [PT-11: consentement et bases d’autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-11.md)
 
 ## 13. Limites et dépendances
 
@@ -189,8 +189,8 @@ La conformité est attestée par la validation CNASN des accords de partage et l
 | GBIF | Standard international | ✅ Disponible |
 | WMO | Standard international | ✅ Disponible |
 | FHIR R4 | Standard | ✅ Validé |
-| [ART-11: Coordination intersectorielle](../../04_architecture-repository/chapitres/art-11.md) | Chapitre ARTSN | Active |
+| [ART-11: Coordination intersectorielle](../../04_architecture-repository/04_patterns/artsn-rules/art-11.md) | Chapitre ARTSN | Active |
 | [CAP-INT-14: Échanges intersectoriels One Health](../../04_architecture-repository/capacites/cap-int-14.md) | Capacité CNISN | Créée |
-| [CAP-18: Coordination intersectorielle (One Health)](../../04_architecture-repository/capabilites/cap-18.md) | Capabilité CAESN | Active |
+| [CAP-18: Coordination intersectorielle (One Health)](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-18.md) | Capabilité CAESN | Active |
 
 <!-- END:GENERATED -->

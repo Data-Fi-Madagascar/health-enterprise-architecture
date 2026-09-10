@@ -30,8 +30,8 @@ Périmètre : événements métier, provenance des ressources, audit de sécurit
 - F.1
 - F.5
 - F.6
-- [ART-3: Historisation événementielle et profils de déploiement](../../04_architecture-repository/chapitres/art-3.md)
-- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../04_architecture-repository/chapitres/art-7.md)
+- [ART-3: Historisation événementielle et profils de déploiement](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md)
+- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
 
 ## 4. Acteurs (Actors)
 
@@ -134,9 +134,9 @@ Conformité attestée par l’adoption de FHIR `AuditEvent` et `Provenance`, la 
 
 ## 12. Articulation avec les autres profils
 
-- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/profils/pt-10.md)
-- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/profils/pt-04.md)
-- [PT-09: analytique et exposition de données](../../04_architecture-repository/profils/pt-09.md)
+- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md)
+- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md)
+- [PT-09: analytique et exposition de données](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-09.md)
 
 ## 13. Limites et dépendances
 

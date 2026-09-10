@@ -312,12 +312,12 @@
   "x-hea-applies-to": [
     "CMP-08"
   ],
-  "x-hea-source": "04_architecture-repository/profils/pt-19.md",
+  "x-hea-source": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-19.md",
   "x-hea-fhir-resources": [
     "ActivityDefinition",
     "CDSHooksResponse",
     "PlanDefinition"
   ],
   "x-hea-data-objects": [],
-  "x-hea-file": "04_architecture-repository/profils/pt-19.md"
+  "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-19.md"
 }

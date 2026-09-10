@@ -17,7 +17,7 @@ related: ["PP-10", "CMP-32"]
 
 Le siège central, où siègent la DEPSI et les systèmes d'information, héberge les services partagés, les registres nationaux et la gouvernance technique.
 
-Il [sert la partie prenante « Équipes techniques (DEPSI / SIS) »](../../../04_architecture-repository/parties-prenantes/pp-10.md) et opère le [composant socle](../../../04_architecture-repository/composants/cmp-32.md). C'est le nœud de convergence de l'interopérabilité nationale.
+Il [sert la partie prenante « Équipes techniques (DEPSI / SIS) »](../../../04_architecture-repository/02_architecture-elements/motivation/stakeholders/pp-10.md) et opère le [composant socle](../../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-32.md). C'est le nœud de convergence de l'interopérabilité nationale.
 
 ## Imbrication territoriale
 

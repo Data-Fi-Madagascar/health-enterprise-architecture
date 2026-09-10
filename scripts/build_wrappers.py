@@ -36,6 +36,12 @@ import sys
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ARCH_REPOSITORY_DIR = "04_architecture-repository"
 ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
+EXCLUDED_ARCH_REPOSITORY_DOCS = {
+    os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "schema.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "togaf-mapping.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "archimate-mapping.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "cap-int-migration.yaml"),
+}
 
 BANNER = "<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->"
 BEGIN_RE = re.compile(r"^<!--\s*BEGIN:GENERATED\s*(.*?)\s*-->$")
@@ -107,10 +113,12 @@ def load_objects():
     objects = {}
     for dirpath, _dirs, files in os.walk(ARCH_REPOSITORY_ROOT):
         for name in files:
-            if not name.endswith(".md") or name == "_schema.md":
+            if not name.endswith(".md"):
                 continue
             path = os.path.join(dirpath, name)
             rel = os.path.relpath(path, REPO_ROOT)
+            if rel in EXCLUDED_ARCH_REPOSITORY_DOCS:
+                continue
             with open(path, encoding="utf-8") as fh:
                 text = fh.read()
             try:

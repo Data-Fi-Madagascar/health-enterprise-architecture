@@ -39,16 +39,16 @@ ART-8C : Agrégation par lot constitue un chapitre du **cadre normatif opposable
 
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (demandes massives de remboursements des pharmacies rurales, vagues de facturations d’hôpitaux), cette discipline seule permet de compiler les flux locaux et de générer une compensation globale unifiée sans saturer les réseaux d’échange centraux et sans rompre le pipeline.
 
-- **Rattachement** : [CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/capabilites/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/capabilites/cap-14.md).
+- **Rattachement** : [CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md).
 - **Pattern cible** : Netting.
-- **Déduit selon** : [ENF-1: Résilience à l'instabilité réseau](../../04_architecture-repository/exigences/enf-1.md) (réseau instable) et [ENF-2: Intégrité des flux et traçabilité des valeurs](../../04_architecture-repository/exigences/enf-2.md) (anti-fraude).
+- **Déduit selon** : [ENF-1: Résilience à l'instabilité réseau](../../04_architecture-repository/03_requirements/enf-1.md) (réseau instable) et [ENF-2: Intégrité des flux et traçabilité des valeurs](../../04_architecture-repository/03_requirements/enf-2.md) (anti-fraude).
 - **Statut : Proposition ouverte.**
 
 ## Profils PTISN qui implémentent ce chapitre
 
 Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
 
-- [PT-02 : Médiation intra-secteur](../../04_architecture-repository/profils/pt-02.md)
+- [PT-02 : Médiation intra-secteur](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-02.md)
 
 <!-- END:GENERATED -->
 ## Liens
@@ -59,6 +59,6 @@ Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre 
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`ART-8C`** : Agrégation par lot (`04_architecture-repository/chapitres/art-8c.md`)
+- **`ART-8C`** : Agrégation par lot (`04_architecture-repository/04_patterns/artsn-rules/art-8c.md`)
 - **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

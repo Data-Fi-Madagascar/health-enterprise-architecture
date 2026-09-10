@@ -1,0 +1,37 @@
+---
+domain: processes
+id: PRC-11
+type: processus-metier
+niveau: "1"
+title: Suivi et pilotage de la performance
+status: active
+owner: Secrétariat Général
+version: "0.0.1"
+envelope: 00_caesn/01_value-streams/vs-04-system-steering.md
+maps_to: []
+implements: []
+applies_to: ["CAP-03", "CAP-08", "CAP-13", "CAP-14", "CAP-15", "CAP-16"]
+related: ["VS-04-04", "VS-04-05", "VS-04", "BO-06"]
+tags: ["caesn", "niveau-1", "processus-metier", "PRC-11"]
+uses: ["CMP-01", "CMP-02", "CMP-03", "CMP-25"]
+accesses: ['DO-25', 'DO-28']
+
+---
+# Suivi et pilotage de la performance
+
+## Objectif
+
+Piloter l'exécution sur la base de données fiables : suivi des plans et budgets, analyse de la performance et prise de décision corrective.
+
+## Étapes couvertes
+
+- [VS-04-04: Suivi de l'exécution](../../strategy/value-stages/vs-04-04.md)
+- [VS-04-05: Analyse de la performance et prise de décision](../../strategy/value-stages/vs-04-05.md)
+
+## Acteurs
+
+Directions techniques, régions, districts, SIS, comités de pilotage
+
+## Indicateurs
+
+Complétude et promptitude des rapports, taux d'utilisation des tableaux de bord, nombre de revues de performance, proportion de décisions documentées

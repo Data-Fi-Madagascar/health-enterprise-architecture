@@ -234,7 +234,7 @@
     "ART-8B"
   ],
   "x-hea-applies-to": [],
-  "x-hea-source": "04_architecture-repository/profils/pt-15.md",
+  "x-hea-source": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-15.md",
   "x-hea-fhir-resources": [
     "Communication",
     "Observation"
@@ -242,5 +242,5 @@
   "x-hea-data-objects": [
     "DO-21"
   ],
-  "x-hea-file": "04_architecture-repository/profils/pt-15.md"
+  "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-15.md"
 }

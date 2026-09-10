@@ -35,7 +35,7 @@ tags: ["caesn", "niveau-1", "capabilite", "CAP-15"]
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-Chaque capabilité vit dans le référentiel : `04_architecture-repository/capabilites/cap-XX.md` (rôle, flux de valeur associés).
+Chaque capabilité vit dans le référentiel : `04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-XX.md` (rôle, flux de valeur associés).
 
 ## Catalogue des capabilités
 
@@ -56,19 +56,19 @@ Elle couvre :
 - **Suivi de carrière et motivation** : gestion des données de carrière, rémunération et conditions de travail
 - **Données de référence du personnel** : registres et référentiels des agents sanitaires interopérables
 
-Son absence fragilise la gestion des ressources humaines et compromet la continuité des soins ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../04_architecture-repository/flux-valeur/vs-01.md), [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../04_architecture-repository/flux-valeur/vs-02.md)) comme le pilotage du système ([VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../04_architecture-repository/flux-valeur/vs-04.md)).
+Son absence fragilise la gestion des ressources humaines et compromet la continuité des soins ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)) comme le pilotage du système ([VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)).
 
 #### Flux de valeur
 
-- [VS-01: Soins essentiels](../../04_architecture-repository/flux-valeur/vs-01.md)
-- [VS-02: Prévention et surveillance](../../04_architecture-repository/flux-valeur/vs-02.md)
-- [VS-04: Pilotage du système](../../04_architecture-repository/flux-valeur/vs-04.md)
+- [VS-01: Soins essentiels](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
+- [VS-02: Prévention et surveillance](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)
+- [VS-04: Pilotage du système](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
 
 #### Rattachement ARTSN
 
-- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/chapitres/art-4.md)
-- [F-2: Préservation de la souveraineté intersectorielle](../../04_architecture-repository/fondations/f-2.md)
-- [F-1: Résilience face à la réalité géographique du pays](../../04_architecture-repository/fondations/f-1.md)
+- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
+- [F-2: Préservation de la souveraineté intersectorielle](../../04_architecture-repository/04_patterns/foundations/f-2.md)
+- [F-1: Résilience face à la réalité géographique du pays](../../04_architecture-repository/04_patterns/foundations/f-1.md)
 
 #### Maturité
 
@@ -79,8 +79,8 @@ Son absence fragilise la gestion des ressources humaines et compromet la continu
 #### Articulation avec la paie, les habilitations et la rétention
 
 - La **rémunération et la paie** s'appuient sur le registre des professionnels ([CAP-INT-02: Registre et résolution des professionnels de santé](../../04_architecture-repository/capacites/cap-int-02.md)) et sur l'échange financier ([PT-18: Échange de réclamations et paiements](../../03_ptisn/03_profils/pt-18-echange-reclamations-paiements.md)).
-- Les **habilitations** relèvent de [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/capabilites/cap-15.md).
-- L'**analytique de rétention** (taux de rotation, départs) s'appuie sur [ART-6: Analytique et restitution](../../04_architecture-repository/chapitres/art-6.md).
+- Les **habilitations** relèvent de [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md).
+- L'**analytique de rétention** (taux de rotation, départs) s'appuie sur [ART-6: Analytique et restitution](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md).
 
 #### Propriétaire
 
@@ -100,18 +100,18 @@ Elle couvre :
 - **Distribution et logistique** : acheminement du stock central jusqu’au point de service
 - **Traçabilité et qualité** : lots, chaîne du froid et sécurité des produits
 
-Son absence expose le système à des ruptures de stock qui compromettent les soins ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../04_architecture-repository/flux-valeur/vs-01.md)) et la prévention ([VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../04_architecture-repository/flux-valeur/vs-02.md)).
+Son absence expose le système à des ruptures de stock qui compromettent les soins ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)) et la prévention ([VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)).
 
 #### Flux de valeur
 
-- [VS-01: Soins essentiels](../../04_architecture-repository/flux-valeur/vs-01.md)
-- [VS-02: Prévention et surveillance](../../04_architecture-repository/flux-valeur/vs-02.md)
+- [VS-01: Soins essentiels](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
+- [VS-02: Prévention et surveillance](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)
 
 #### Rattachement ARTSN
 
-- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/chapitres/art-4.md)
-- [PT-14: Interopérabilité transfrontalière](../../04_architecture-repository/profils/pt-14.md)
-- [F-2: Préservation de la souveraineté intersectorielle](../../04_architecture-repository/fondations/f-2.md)
+- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
+- [PT-14: Interopérabilité transfrontalière](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-14.md)
+- [F-2: Préservation de la souveraineté intersectorielle](../../04_architecture-repository/04_patterns/foundations/f-2.md)
 
 #### Maturité
 
@@ -137,18 +137,18 @@ Elle couvre :
 - **Maintenance et réparations** : maintenance préventive et interventions curatives
 - **Cartographie et localisation** : référencement géospatial des sites et équipements
 
-Son absence rend impossible l’acte clinique, même lorsque le personnel et les produits sont disponibles ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../04_architecture-repository/flux-valeur/vs-01.md), [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../04_architecture-repository/flux-valeur/vs-02.md)).
+Son absence rend impossible l’acte clinique, même lorsque le personnel et les produits sont disponibles ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)).
 
 #### Flux de valeur
 
-- [VS-01: Soins essentiels](../../04_architecture-repository/flux-valeur/vs-01.md)
-- [VS-02: Prévention et surveillance](../../04_architecture-repository/flux-valeur/vs-02.md)
+- [VS-01: Soins essentiels](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
+- [VS-02: Prévention et surveillance](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)
 
 #### Rattachement ARTSN
 
-- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/chapitres/art-4.md)
-- [ART-4D: Référentiel géospatial et d'exploitation partagé](../../04_architecture-repository/chapitres/art-4d.md)
-- [F-1: Résilience face à la réalité géographique du pays](../../04_architecture-repository/fondations/f-1.md)
+- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
+- [ART-4D: Référentiel géospatial et d'exploitation partagé](../../04_architecture-repository/04_patterns/artsn-rules/art-4d.md)
+- [F-1: Résilience face à la réalité géographique du pays](../../04_architecture-repository/04_patterns/foundations/f-1.md)
 
 #### Maturité
 
@@ -174,18 +174,18 @@ Elle couvre :
 - **Soutenabilité des financements** : mobilisation et protection des ressources à long terme
 - **Couverture et protection financière** : appui à l’éligibilité et au tiers-payant (CSU)
 
-Son absence compromet la protection financière des ménages ([VS-03: Protéger financièrement la population face aux dépenses de santé](../../04_architecture-repository/flux-valeur/vs-03.md)) et le pilotage du système ([VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../04_architecture-repository/flux-valeur/vs-04.md)).
+Son absence compromet la protection financière des ménages ([VS-03: Protéger financièrement la population face aux dépenses de santé](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md)) et le pilotage du système ([VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)).
 
 #### Flux de valeur
 
-- [VS-03: Protection financière](../../04_architecture-repository/flux-valeur/vs-03.md)
-- [VS-04: Pilotage du système](../../04_architecture-repository/flux-valeur/vs-04.md)
+- [VS-03: Protection financière](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md)
+- [VS-04: Pilotage du système](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
 
 #### Rattachement ARTSN
 
-- [ART-4C: Éligibilité et couverture](../../04_architecture-repository/chapitres/art-4c.md)
-- [F-2: Préservation de la souveraineté intersectorielle](../../04_architecture-repository/fondations/f-2.md)
-- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/chapitres/art-4.md)
+- [ART-4C: Éligibilité et couverture](../../04_architecture-repository/04_patterns/artsn-rules/art-4c.md)
+- [F-2: Préservation de la souveraineté intersectorielle](../../04_architecture-repository/04_patterns/foundations/f-2.md)
+- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
 
 #### Maturité
 
@@ -209,20 +209,20 @@ La capabilité transforme les données du système de santé en information util
 - **Qualité et cohérence** : audit continu, traçabilité et fiabilité des données
 - **Analyse et recherche** : entrepôt analytique, projections et exploitation pour la décision
 
-Ces quatre capabilités ([CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/capabilites/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/capabilites/cap-14.md), [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/capabilites/cap-15.md), [CAP-16: Gestion du portefeuille d'initiatives numériques](../../04_architecture-repository/capabilites/cap-16.md)) constituent le **socle commun (architecture runway)** dont l'absence bloque de nombreuses initiatives.
+Ces quatre capabilités ([CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md), [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md), [CAP-16: Gestion du portefeuille d'initiatives numériques](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-16.md)) constituent le **socle commun (architecture runway)** dont l'absence bloque de nombreuses initiatives.
 
 #### Flux de valeur
 
-- [VS-01: Soins essentiels](../../04_architecture-repository/flux-valeur/vs-01.md)
-- [VS-02: Prévention et surveillance](../../04_architecture-repository/flux-valeur/vs-02.md)
-- [VS-03: Protection financière](../../04_architecture-repository/flux-valeur/vs-03.md)
-- [VS-04: Pilotage du système](../../04_architecture-repository/flux-valeur/vs-04.md)
+- [VS-01: Soins essentiels](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
+- [VS-02: Prévention et surveillance](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)
+- [VS-03: Protection financière](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md)
+- [VS-04: Pilotage du système](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
 
 #### Rattachement ARTSN
 
-- [ART-1: Intégration et ingestion](../../04_architecture-repository/chapitres/art-1.md)
-- [ART-3: Historisation événementielle et profils de déploiement](../../04_architecture-repository/chapitres/art-3.md)
-- [ART-5: Cohérence et qualité des données](../../04_architecture-repository/chapitres/art-5.md)
+- [ART-1: Intégration et ingestion](../../04_architecture-repository/04_patterns/artsn-rules/art-1.md)
+- [ART-3: Historisation événementielle et profils de déploiement](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md)
+- [ART-5: Cohérence et qualité des données](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md)
 
 #### Maturité
 
@@ -246,21 +246,21 @@ La capabilité assure la cohérence, l’intégration, la souveraineté et la r�
 - **Standards et interopérabilité** : alignement sur les profils techniques nationaux
 - **Éradication des silos** : homologation obligatoire et réutilisation des briques communes
 
-Ces quatre capabilités ([CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/capabilites/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/capabilites/cap-14.md), [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/capabilites/cap-15.md), [CAP-16: Gestion du portefeuille d'initiatives numériques](../../04_architecture-repository/capabilites/cap-16.md)) constituent le **socle commun (architecture runway)** dont l’absence bloque et fragilise de nombreuses initiatives.
+Ces quatre capabilités ([CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md), [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md), [CAP-16: Gestion du portefeuille d'initiatives numériques](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-16.md)) constituent le **socle commun (architecture runway)** dont l’absence bloque et fragilise de nombreuses initiatives.
 
 #### Flux de valeur
 
-- [VS-01: Soins essentiels](../../04_architecture-repository/flux-valeur/vs-01.md)
-- [VS-02: Prévention et surveillance](../../04_architecture-repository/flux-valeur/vs-02.md)
-- [VS-03: Protection financière](../../04_architecture-repository/flux-valeur/vs-03.md)
-- [VS-04: Pilotage du système](../../04_architecture-repository/flux-valeur/vs-04.md)
+- [VS-01: Soins essentiels](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
+- [VS-02: Prévention et surveillance](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)
+- [VS-03: Protection financière](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md)
+- [VS-04: Pilotage du système](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
 
 #### Rattachement ARTSN
 
-- [ART-0: Accords de partage inter-institutionnels](../../04_architecture-repository/chapitres/art-0.md)
-- [ART-2: Médiation et normalisation](../../04_architecture-repository/chapitres/art-2.md)
-- [F-3: Éradication des silos technologiques](../../04_architecture-repository/fondations/f-3.md)
-- [PT-01: Profil technique national](../../04_architecture-repository/profils/pt-01.md)
+- [ART-0: Accords de partage inter-institutionnels](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md)
+- [ART-2: Médiation et normalisation](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md)
+- [F-3: Éradication des silos technologiques](../../04_architecture-repository/04_patterns/foundations/f-3.md)
+- [PT-01: Profil technique national](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md)
 
 #### Maturité
 
@@ -283,19 +283,19 @@ La capabilité garantit la confiance, la sécurité, la confidentialité et la p
 - **Confidentialité** : minimisation, consentement et protection des données personnelles
 - **Gouvernance de la sécurité** : homologation, conformité et responsabilité
 
-Ces quatre capabilités ([CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/capabilites/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/capabilites/cap-14.md), [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/capabilites/cap-15.md), [CAP-16: Gestion du portefeuille d'initiatives numériques](../../04_architecture-repository/capabilites/cap-16.md)) constituent le **socle commun (architecture runway)** dont l’absence bloque de nombreuses initiatives.
+Ces quatre capabilités ([CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md), [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md), [CAP-16: Gestion du portefeuille d'initiatives numériques](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-16.md)) constituent le **socle commun (architecture runway)** dont l’absence bloque de nombreuses initiatives.
 
 #### Flux de valeur
 
-- [VS-01: Soins essentiels](../../04_architecture-repository/flux-valeur/vs-01.md)
-- [VS-02: Prévention et surveillance](../../04_architecture-repository/flux-valeur/vs-02.md)
-- [VS-03: Protection financière](../../04_architecture-repository/flux-valeur/vs-03.md)
-- [VS-04: Pilotage du système](../../04_architecture-repository/flux-valeur/vs-04.md)
+- [VS-01: Soins essentiels](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
+- [VS-02: Prévention et surveillance](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)
+- [VS-03: Protection financière](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md)
+- [VS-04: Pilotage du système](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
 
 #### Rattachement ARTSN
 
-- [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../04_architecture-repository/chapitres/art-7.md)
-- [F-4: Homologation obligatoire](../../04_architecture-repository/fondations/f-4.md)
+- [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
+- [F-4: Homologation obligatoire](../../04_architecture-repository/04_patterns/foundations/f-4.md)
 
 #### Maturité
 
@@ -318,18 +318,18 @@ La capabilité gouverne les investissements numériques du secteur : priorisatio
 - **Suivi et évaluation** : pilotage, tableaux de bord et redevabilité
 - **Rationalisation** : évitement des doublons et gouvernance du portefeuille
 
-Ces quatre capabilités ([CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/capabilites/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/capabilites/cap-14.md), [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/capabilites/cap-15.md), [CAP-16: Gestion du portefeuille d'initiatives numériques](../../04_architecture-repository/capabilites/cap-16.md)) constituent le **socle commun (architecture runway)** dont l’absence bloque de nombreuses initiatives.
+Ces quatre capabilités ([CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md), [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md), [CAP-16: Gestion du portefeuille d'initiatives numériques](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-16.md)) constituent le **socle commun (architecture runway)** dont l’absence bloque de nombreuses initiatives.
 
 #### Flux de valeur
 
-- [VS-03: Protection financière](../../04_architecture-repository/flux-valeur/vs-03.md)
-- [VS-04: Pilotage du système](../../04_architecture-repository/flux-valeur/vs-04.md)
+- [VS-03: Protection financière](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md)
+- [VS-04: Pilotage du système](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
 
 #### Rattachement ARTSN
 
-- [ART-9: Garanties transactionnelles fortes](../../04_architecture-repository/chapitres/art-9.md)
-- [F-4: Homologation obligatoire](../../04_architecture-repository/fondations/f-4.md)
-- [F-6: Observabilité](../../04_architecture-repository/fondations/f-6.md)
+- [ART-9: Garanties transactionnelles fortes](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md)
+- [F-4: Homologation obligatoire](../../04_architecture-repository/04_patterns/foundations/f-4.md)
+- [F-6: Observabilité](../../04_architecture-repository/04_patterns/foundations/f-6.md)
 
 #### Maturité
 
@@ -352,19 +352,19 @@ La capabilité garantit l'existence d'une identité unique, sécurisée et parta
 - **Identitovigilance** : surveillance et correction des erreurs d'identité, protection contre les usurpations
 - **Engagement du patient** : accès du patient à ses données, participation active à la gestion de sa santé
 
-Cette capabilité est **habilitante** : son absence bloque la continuité des soins ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../04_architecture-repository/flux-valeur/vs-01.md)) et la protection financière ([VS-03: Protéger financièrement la population face aux dépenses de santé](../../04_architecture-repository/flux-valeur/vs-03.md)).
+Cette capabilité est **habilitante** : son absence bloque la continuité des soins ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)) et la protection financière ([VS-03: Protéger financièrement la population face aux dépenses de santé](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md)).
 
 #### Flux de valeur
 
-- [VS-01: Soins essentiels](../../04_architecture-repository/flux-valeur/vs-01.md)
-- [VS-03: Protection financière](../../04_architecture-repository/flux-valeur/vs-03.md)
+- [VS-01: Soins essentiels](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
+- [VS-03: Protection financière](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md)
 
 #### Rattachement ARTSN
 
-- [F-1: Résilience face à la réalité géographique du pays](../../04_architecture-repository/fondations/f-1.md)
-- [ART-4A: Résolution d'identité](../../04_architecture-repository/chapitres/art-4a.md)
-- [ART-4B: Bases d'autorisation](../../04_architecture-repository/chapitres/art-4b.md)
-- [PT-04: Profil technique national](../../04_architecture-repository/profils/pt-04.md)
+- [F-1: Résilience face à la réalité géographique du pays](../../04_architecture-repository/04_patterns/foundations/f-1.md)
+- [ART-4A: Résolution d'identité](../../04_architecture-repository/04_patterns/artsn-rules/art-4a.md)
+- [ART-4B: Bases d'autorisation](../../04_architecture-repository/04_patterns/artsn-rules/art-4b.md)
+- [PT-04: Profil technique national](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md)
 
 #### Maturité
 
@@ -387,17 +387,17 @@ La capabilité organise les échanges de données entre le secteur santé et les
 - **Surveillance conjointe** : détection précoce des événements de santé publique à interface homme-animal-environnement
 - **Riposte coordonnée** : orchestration des réponses inter-ministérielles
 
-Cette capabilité est **habilitante** : son absence bloque la surveillance sanitaire ([VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../04_architecture-repository/flux-valeur/vs-02.md)) conformément aux obligations du RSI.
+Cette capabilité est **habilitante** : son absence bloque la surveillance sanitaire ([VS-02: Prévenir, détecter et répondre aux risques sanitaires](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)) conformément aux obligations du RSI.
 
 #### Flux de valeur
 
-- [VS-02: Prévention et surveillance](../../04_architecture-repository/flux-valeur/vs-02.md)
+- [VS-02: Prévention et surveillance](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)
 
 #### Rattachement ARTSN
 
-- [ART-0: Accords de partage inter-institutionnels](../../04_architecture-repository/chapitres/art-0.md)
-- [ART-8D: Chorégraphie inter-institutionnelle](../../04_architecture-repository/chapitres/art-8d.md)
-- [PT-01: Profil technique national](../../04_architecture-repository/profils/pt-01.md)
+- [ART-0: Accords de partage inter-institutionnels](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md)
+- [ART-8D: Chorégraphie inter-institutionnelle](../../04_architecture-repository/04_patterns/artsn-rules/art-8d.md)
+- [PT-01: Profil technique national](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md)
 
 #### Référentiels normatifs
 
@@ -417,7 +417,7 @@ Secrétariat Général du Ministère + DEPSI
 <!-- END:GENERATED -->
 ## Liens
 
-- [Capabilités](./index.md)
+- [Capabilités](index.md)
 
 ## Références
 

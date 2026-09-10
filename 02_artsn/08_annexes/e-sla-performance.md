@@ -257,7 +257,7 @@ Les liens utiles pour approfondir ce document sont les suivants : le chapitre AR
 
 ## Références
 
-- **ART-7 : Sécurité, contrôle d'accès et résidence** : Sécurité, contrôle d'accès et résidence de la donnée (`04_architecture-repository/chapitres/art-7.md`)
+- **ART-7 : Sécurité, contrôle d'accès et résidence** : Sécurité, contrôle d'accès et résidence de la donnée (`04_architecture-repository/04_patterns/artsn-rules/art-7.md`)
 - **Protocole de test** : Annexe D : Protocole de test d'interopérabilité (`02_artsn/08_annexes/d-protocole-test-interopabilite.md`)
 - **Feuille de route** : Feuille de route de déploiement progressif de l'ARTSN (`02_artsn/07_lots/index.md`)
 - **Plan de migration** : Plan de migration : De l'existant au futur état (`00_caesn/06_portfolio/migration-existant.md`)

@@ -27,9 +27,9 @@ Périmètre : formations sanitaires (publiques, privées, communautaires), labor
 
 ## 3. Chapitres ART applicables
 
-- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/chapitres/art-4.md)
-- [ART-5: Cohérence et qualité des données](../../04_architecture-repository/chapitres/art-5.md)
-- [ART-6: Analytique et restitution](../../04_architecture-repository/chapitres/art-6.md) pour les usages analytiques
+- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
+- [ART-5: Cohérence et qualité des données](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md)
+- [ART-6: Analytique et restitution](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md) pour les usages analytiques
 
 ## 4. Acteurs (Actors)
 
@@ -98,8 +98,8 @@ Conformité attestée par la résolution des unités organisationnelles des inst
 
 ## 12. Articulation avec les autres profils
 
-- [PT-05: registre des professionnels](../../04_architecture-repository/profils/pt-05.md)
-- [PT-09: analytique et exposition de données](../../04_architecture-repository/profils/pt-09.md)
+- [PT-05: registre des professionnels](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md)
+- [PT-09: analytique et exposition de données](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-09.md)
 
 Le référentiel alimente la dimension géographique/organisationnelle de l’analytique (PT-09) et la découvrabilité des services.
 

@@ -38,16 +38,16 @@ ART-10 : Logistique constitue un chapitre du **cadre normatif opposable** de l'A
 
 **Discipline de mise en œuvre.** Dès qu'une source échappe à la gouvernance directe de l'initiative (centres de stockage isolés, ruptures de connectivité, circuits parallèles de distribution), cette discipline seule permet de garantir la disponibilité des intrants et la réconciliation à somme nulle des stocks sans rompre le pipeline.
 
-- **Rattachement** : [CAP-10: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement](../../04_architecture-repository/capabilites/cap-10.md) (chaîne d'approvisionnement), [CAP-11: Gestion des infrastructures, équipements et maintenance](../../04_architecture-repository/capabilites/cap-11.md) (infrastructures et équipements).
+- **Rattachement** : [CAP-10: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-10.md) (chaîne d'approvisionnement), [CAP-11: Gestion des infrastructures, équipements et maintenance](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-11.md) (infrastructures et équipements).
 - **Modèles cibles** : événementisation des mouvements de stock, registres logistiques (ex. OpenLMIS), traçabilité par lot.
-- **Déduit selon** : [ENF-2: Intégrité des flux et traçabilité des valeurs](../../04_architecture-repository/exigences/enf-2.md) (traçabilité des valeurs).
+- **Déduit selon** : [ENF-2: Intégrité des flux et traçabilité des valeurs](../../04_architecture-repository/03_requirements/enf-2.md) (traçabilité des valeurs).
 - **Statut : Provisoire.**
 
 ## Profils PTISN qui implémentent ce chapitre
 
 Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
 
-- [PT-17 : Logistique & chaîne d'approvisionnement (LMIS)](../../04_architecture-repository/profils/pt-17.md)
+- [PT-17 : Logistique & chaîne d'approvisionnement (LMIS)](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-17.md)
 
 <!-- END:GENERATED -->
 ## Liens
@@ -58,6 +58,6 @@ Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre 
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`ART-10`** : Logistique (`04_architecture-repository/chapitres/art-10.md`)
+- **`ART-10`** : Logistique (`04_architecture-repository/04_patterns/artsn-rules/art-10.md`)
 - **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

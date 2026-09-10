@@ -37,20 +37,20 @@ ART-6 : Analytique et restitution constitue un chapitre du **cadre normatif oppo
 
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (requêtes lourdes des décideurs, extractions massives pour la recherche), cette discipline seule permet de garantir des performances de restitution constantes et une sécurité réglementaire absolue sans surcharger les serveurs de soins et sans rompre le pipeline.
 
-- **Rattachement** : [CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/capabilites/cap-13.md), [CAP-08: Gouvernance institutionnelle, planification, coordination et redevabilité](../../04_architecture-repository/capabilites/cap-08.md) (analytics & décisionnel).
+- **Rattachement** : [CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md), [CAP-08: Gouvernance institutionnelle, planification, coordination et redevabilité](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-08.md) (analytics & décisionnel).
 - **Infrastructure cible** : Data Lakehouse.
 - **Pattern cible** : modèle de séparation CQRS.
-- **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../04_architecture-repository/exigences/enf-4.md) (protection One Health).
+- **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../04_architecture-repository/03_requirements/enf-4.md) (protection One Health).
 - **Statut : Provisoire.**
 
 ## Profils PTISN qui implémentent ce chapitre
 
 Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
 
-- [PT-06 : Référentiel des structures et services de santé](../../04_architecture-repository/profils/pt-06.md)
-- [PT-08 : Échange de données agrégées](../../04_architecture-repository/profils/pt-08.md)
-- [PT-09 : Analytique et exposition de données](../../04_architecture-repository/profils/pt-09.md)
-- [PT-13 : Qualité et réconciliation](../../04_architecture-repository/profils/pt-13.md)
+- [PT-06 : Référentiel des structures et services de santé](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-06.md)
+- [PT-08 : Échange de données agrégées](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-08.md)
+- [PT-09 : Analytique et exposition de données](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-09.md)
+- [PT-13 : Qualité et réconciliation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-13.md)
 
 <!-- END:GENERATED -->
 ## Liens
@@ -61,6 +61,6 @@ Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre 
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`ART-6`** : Analytique et restitution (`04_architecture-repository/chapitres/art-6.md`)
+- **`ART-6`** : Analytique et restitution (`04_architecture-repository/04_patterns/artsn-rules/art-6.md`)
 - **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

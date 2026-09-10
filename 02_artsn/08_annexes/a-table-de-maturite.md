@@ -22,38 +22,38 @@ La lecture de ce document est **ponctuelle** pour les décideurs institutionnels
 
 La table de maturité fixe le statut de chaque chapitre et la condition de passage au statut supérieur. Elle est mise à jour par l'instance de gouvernance lors de chaque revue du document.
 
-<!-- BEGIN:GENERATED mode=maturity source=04_architecture-repository/chapitres/*.md,04_architecture-repository/fondations/*.md -->
+<!-- BEGIN:GENERATED mode=maturity source=04_architecture-repository/04_patterns/artsn-rules/*.md,04_architecture-repository/04_patterns/foundations/*.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 | Code | Titre canonique | Statut | Condition de passage au statut supérieur | Fiche |
 |---|---|---|---|---|
-| ART-0 | Accords de partage inter-institutionnels | candidate | Confirmation par une initiative impliquant une source hors gouvernance sanitaire | [ART-0](../../04_architecture-repository/chapitres/art-0.md) |
-| ART-1 | Intégration et ingestion | stable | — | [ART-1](../../04_architecture-repository/chapitres/art-1.md) |
-| ART-2 | Médiation et normalisation | stable | Stable pour registre structurel/sémantique/géospatial/tarifaire ; Proposition ouverte pour registre intersectoriel. Condition : confirmation du registre intersectoriel par une initiative concernée. | [ART-2](../../04_architecture-repository/chapitres/art-2.md) |
-| ART-3 | Historisation événementielle et profils de déploiement | stable | — | [ART-3](../../04_architecture-repository/chapitres/art-3.md) |
-| ART-4 | Référentiels de métadonnées de gestion | stable | Reconfirmation par une initiative supplémentaire | [ART-4](../../04_architecture-repository/chapitres/art-4.md) |
-| ART-4A | Résolution d'identité | draft | Confirmation par une seconde initiative | [ART-4A](../../04_architecture-repository/chapitres/art-4a.md) |
-| ART-4B | Bases d'autorisation | draft | Confirmation par une seconde initiative | [ART-4B](../../04_architecture-repository/chapitres/art-4b.md) |
-| ART-4C | Éligibilité et couverture | candidate | Confirmation par une initiative VS-03 | [ART-4C](../../04_architecture-repository/chapitres/art-4c.md) |
-| ART-4D | Référentiel géospatial et d'exploitation partagé | candidate | Confirmation par une initiative intersectorielle | [ART-4D](../../04_architecture-repository/chapitres/art-4d.md) |
-| ART-5 | Cohérence et qualité des données | stable | Stable pour principe ; Proposition ouverte pour branches d'escalade. Condition : instruction détaillée de chaque branche par domaine | [ART-5](../../04_architecture-repository/chapitres/art-5.md) |
-| ART-6 | Analytique et restitution | draft | Confirmation par une initiative combinant plusieurs familles de projection | [ART-6](../../04_architecture-repository/chapitres/art-6.md) |
-| ART-7 | Sécurité, contrôle d'accès et résidence de la donnée | stable | — | [ART-7](../../04_architecture-repository/chapitres/art-7.md) |
-| ART-8 | Orchestration de processus | draft | — | [ART-8](../../04_architecture-repository/chapitres/art-8.md) |
-| ART-8A | Orchestration de processus borné | draft | Confirmation par une seconde initiative | [ART-8A](../../04_architecture-repository/chapitres/art-8a.md) |
-| ART-8B | Modélisation de relations en graphe | candidate | Confirmation par une initiative supplémentaire | [ART-8B](../../04_architecture-repository/chapitres/art-8b.md) |
-| ART-8C | Agrégation par lot | candidate | Confirmation par une initiative supplémentaire | [ART-8C](../../04_architecture-repository/chapitres/art-8c.md) |
-| ART-8D | Chorégraphie inter-institutionnelle | candidate | Confirmation par une initiative intersectorielle | [ART-8D](../../04_architecture-repository/chapitres/art-8d.md) |
-| ART-9 | Garanties transactionnelles fortes | candidate | Confirmation par une seconde initiative à garanties transactionnelles fortes | [ART-9](../../04_architecture-repository/chapitres/art-9.md) |
-| ART-10 | Logistique | candidate | Confirmation par une initiative LMIS/logistique déployant la traçabilité de bout en bout des mouvements de stock | [ART-10](../../04_architecture-repository/chapitres/art-10.md) |
-| ART-11 | Coordination intersectorielle | stable | — | [ART-11](../../04_architecture-repository/chapitres/art-11.md) |
-| ART-12 | Aide à la décision clinique | draft | Proposition ouverte : à confirmer par une initiative de soins utilisant des artefacts de connaissance profilés | [ART-12](../../04_architecture-repository/chapitres/art-12.md) |
-| F-1 | Résilience face à la réalité géographique du pays | stable | — | [F-1](../../04_architecture-repository/fondations/f-1.md) |
-| F-2 | Préservation de la souveraineté intersectorielle | stable | — | [F-2](../../04_architecture-repository/fondations/f-2.md) |
-| F-3 | Éradication des silos technologiques | stable | — | [F-3](../../04_architecture-repository/fondations/f-3.md) |
-| F-4 | Homologation obligatoire | stable | — | [F-4](../../04_architecture-repository/fondations/f-4.md) |
-| F-5 | Protection et minimisation | draft | — | [F-5](../../04_architecture-repository/fondations/f-5.md) |
-| F-6 | Observabilité | draft | — | [F-6](../../04_architecture-repository/fondations/f-6.md) |
+| ART-0 | Accords de partage inter-institutionnels | candidate | Confirmation par une initiative impliquant une source hors gouvernance sanitaire | [ART-0](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md) |
+| ART-1 | Intégration et ingestion | stable | — | [ART-1](../../04_architecture-repository/04_patterns/artsn-rules/art-1.md) |
+| ART-2 | Médiation et normalisation | stable | Stable pour registre structurel/sémantique/géospatial/tarifaire ; Proposition ouverte pour registre intersectoriel. Condition : confirmation du registre intersectoriel par une initiative concernée. | [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md) |
+| ART-3 | Historisation événementielle et profils de déploiement | stable | — | [ART-3](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md) |
+| ART-4 | Référentiels de métadonnées de gestion | stable | Reconfirmation par une initiative supplémentaire | [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) |
+| ART-4A | Résolution d'identité | draft | Confirmation par une seconde initiative | [ART-4A](../../04_architecture-repository/04_patterns/artsn-rules/art-4a.md) |
+| ART-4B | Bases d'autorisation | draft | Confirmation par une seconde initiative | [ART-4B](../../04_architecture-repository/04_patterns/artsn-rules/art-4b.md) |
+| ART-4C | Éligibilité et couverture | candidate | Confirmation par une initiative VS-03 | [ART-4C](../../04_architecture-repository/04_patterns/artsn-rules/art-4c.md) |
+| ART-4D | Référentiel géospatial et d'exploitation partagé | candidate | Confirmation par une initiative intersectorielle | [ART-4D](../../04_architecture-repository/04_patterns/artsn-rules/art-4d.md) |
+| ART-5 | Cohérence et qualité des données | stable | Stable pour principe ; Proposition ouverte pour branches d'escalade. Condition : instruction détaillée de chaque branche par domaine | [ART-5](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md) |
+| ART-6 | Analytique et restitution | draft | Confirmation par une initiative combinant plusieurs familles de projection | [ART-6](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md) |
+| ART-7 | Sécurité, contrôle d'accès et résidence de la donnée | stable | — | [ART-7](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md) |
+| ART-8 | Orchestration de processus | draft | — | [ART-8](../../04_architecture-repository/04_patterns/artsn-rules/art-8.md) |
+| ART-8A | Orchestration de processus borné | draft | Confirmation par une seconde initiative | [ART-8A](../../04_architecture-repository/04_patterns/artsn-rules/art-8a.md) |
+| ART-8B | Modélisation de relations en graphe | candidate | Confirmation par une initiative supplémentaire | [ART-8B](../../04_architecture-repository/04_patterns/artsn-rules/art-8b.md) |
+| ART-8C | Agrégation par lot | candidate | Confirmation par une initiative supplémentaire | [ART-8C](../../04_architecture-repository/04_patterns/artsn-rules/art-8c.md) |
+| ART-8D | Chorégraphie inter-institutionnelle | candidate | Confirmation par une initiative intersectorielle | [ART-8D](../../04_architecture-repository/04_patterns/artsn-rules/art-8d.md) |
+| ART-9 | Garanties transactionnelles fortes | candidate | Confirmation par une seconde initiative à garanties transactionnelles fortes | [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md) |
+| ART-10 | Logistique | candidate | Confirmation par une initiative LMIS/logistique déployant la traçabilité de bout en bout des mouvements de stock | [ART-10](../../04_architecture-repository/04_patterns/artsn-rules/art-10.md) |
+| ART-11 | Coordination intersectorielle | stable | — | [ART-11](../../04_architecture-repository/04_patterns/artsn-rules/art-11.md) |
+| ART-12 | Aide à la décision clinique | draft | Proposition ouverte : à confirmer par une initiative de soins utilisant des artefacts de connaissance profilés | [ART-12](../../04_architecture-repository/04_patterns/artsn-rules/art-12.md) |
+| F-1 | Résilience face à la réalité géographique du pays | stable | — | [F-1](../../04_architecture-repository/04_patterns/foundations/f-1.md) |
+| F-2 | Préservation de la souveraineté intersectorielle | stable | — | [F-2](../../04_architecture-repository/04_patterns/foundations/f-2.md) |
+| F-3 | Éradication des silos technologiques | stable | — | [F-3](../../04_architecture-repository/04_patterns/foundations/f-3.md) |
+| F-4 | Homologation obligatoire | stable | — | [F-4](../../04_architecture-repository/04_patterns/foundations/f-4.md) |
+| F-5 | Protection et minimisation | draft | — | [F-5](../../04_architecture-repository/04_patterns/foundations/f-5.md) |
+| F-6 | Observabilité | draft | — | [F-6](../../04_architecture-repository/04_patterns/foundations/f-6.md) |
 
 <!-- END:GENERATED -->
 
@@ -69,9 +69,9 @@ Les liens utiles pour approfondir ce document sont les suivants : les chapitres 
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
 - **CAP-10** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
-- **ART-10** : Logistique (`04_architecture-repository/chapitres/art-10.md`)
-- **ART-5** : Cohérence et qualité des données (`04_architecture-repository/chapitres/art-5.md`)
-- **ART-9** : Garanties transactionnelles fortes (`04_architecture-repository/chapitres/art-9.md`)
+- **ART-10** : Logistique (`04_architecture-repository/04_patterns/artsn-rules/art-10.md`)
+- **ART-5** : Cohérence et qualité des données (`04_architecture-repository/04_patterns/artsn-rules/art-5.md`)
+- **ART-9** : Garanties transactionnelles fortes (`04_architecture-repository/04_patterns/artsn-rules/art-9.md`)
 - **Chapitres et patterns de référence** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **Gouvernance de l'ARTSN** : Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)
 - **ADHMAT** : Évaluation de maturité ADHMAT (Africa CDC) — benchmark externe de réévaluation du HEA (`../../00_caesn/00_overview/foundations.md`)

@@ -15,7 +15,7 @@ Tableau généré depuis le référentiel : les 16 capacités nationales et les 
 
 ## Matrice
 
-<!-- BEGIN:GENERATED mode=table source=04_architecture-repository/capacites/cap-int-*.md,04_architecture-repository/principes/p-int-*.md -->
+<!-- BEGIN:GENERATED mode=table source=04_architecture-repository/capacites/cap-int-*.md,04_architecture-repository/02_architecture-elements/motivation/principles/p-int-*.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 | Code | Titre canonique | Rattachement | Statut | Fiche |

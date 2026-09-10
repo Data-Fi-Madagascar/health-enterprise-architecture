@@ -29,8 +29,8 @@ Périmètre : référencement des services exposés, de leurs propriétaires, co
 
 - F.3 — versionnement ;
 - F.4 — rattachement aux capacités ;
-- [ART-1: interfaces](../../04_architecture-repository/chapitres/art-1.md)
-- [ART-2: contrats canoniques](../../04_architecture-repository/chapitres/art-2.md)
+- [ART-1: interfaces](../../04_architecture-repository/04_patterns/artsn-rules/art-1.md)
+- [ART-2: contrats canoniques](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md)
 
 ## 4. Acteurs (Actors)
 
@@ -115,7 +115,7 @@ Preuves exigées : contrat publié, version explicite, propriétaire, test de va
 
 ## 12. Articulation avec les autres profils
 
-Le catalogue et le registre sont consommés par la médiation intra-secteur ([PT-02](../../04_architecture-repository/profils/pt-02.md)) pour la validation des contrats, et par le service d’échange interinstitutionnel ([PT-01](../../04_architecture-repository/profils/pt-01.md)) pour la description de service.
+Le catalogue et le registre sont consommés par la médiation intra-secteur ([PT-02](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-02.md)) pour la validation des contrats, et par le service d’échange interinstitutionnel ([PT-01](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md)) pour la description de service.
 
 ## 13. Limites et dépendances
 

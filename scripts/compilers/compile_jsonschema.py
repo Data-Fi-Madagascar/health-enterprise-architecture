@@ -32,6 +32,8 @@ except ImportError:
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 ARCH_REPOSITORY_DIR = "04_architecture-repository"
 ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
+DATA_OBJECTS_DIR = os.path.join(ARCH_REPOSITORY_ROOT, "02_architecture-elements",
+                                "data", "data-objects")
 HEA_NS = "https://healmadagascar.mg"
 SCHEMAS_NS = "%s/schemas" % HEA_NS
 JSON_SCHEMA_DRAFT = "http://json-schema.org/draft-07/schema#"
@@ -378,7 +380,7 @@ def compile_do(obj, body, output_dir, fhir_block=None):
 def collect_do_objects():
     """Collecte tous les objets de données du référentiel."""
     objects = []
-    pattern = os.path.join(ARCH_REPOSITORY_ROOT, "objets-de-donnees", "do-*.md")
+    pattern = os.path.join(DATA_OBJECTS_DIR, "do-*.md")
 
     for path in sorted(glob.glob(pattern)):
         text = open(path, encoding="utf-8").read()
@@ -466,7 +468,7 @@ def compile_all(output_dir):
 
     objects = collect_do_objects()
     if not objects:
-        print("[ERREUR] Aucun objet de données trouvé dans 04_architecture-repository/objets-de-donnees/")
+        print("[ERREUR] Aucun objet de données trouvé dans 04_architecture-repository/02_architecture-elements/data/data-objects/")
         sys.exit(1)
 
     compiled = []

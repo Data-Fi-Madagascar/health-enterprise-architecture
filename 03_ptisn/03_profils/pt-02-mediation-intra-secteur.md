@@ -27,12 +27,12 @@ Périmètre : médiation intra-secteur santé (transformation sémantique, routa
 
 ## 3. Chapitres ART applicables
 
-- [ART-1: intégration](../../04_architecture-repository/chapitres/art-1.md)
-- [ART-2: médiation](../../04_architecture-repository/chapitres/art-2.md)
-- [ART-5: qualité et réconciliation](../../04_architecture-repository/chapitres/art-5.md)
-- [ART-7: sécurité](../../04_architecture-repository/chapitres/art-7.md)
-- [ART-8: coordination lorsque applicable](../../04_architecture-repository/chapitres/art-8.md)
-- [ART-8C](../../04_architecture-repository/chapitres/art-8c.md), [ART-8D](../../04_architecture-repository/chapitres/art-8d.md)
+- [ART-1: intégration](../../04_architecture-repository/04_patterns/artsn-rules/art-1.md)
+- [ART-2: médiation](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md)
+- [ART-5: qualité et réconciliation](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md)
+- [ART-7: sécurité](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
+- [ART-8: coordination lorsque applicable](../../04_architecture-repository/04_patterns/artsn-rules/art-8.md)
+- [ART-8C](../../04_architecture-repository/04_patterns/artsn-rules/art-8c.md), [ART-8D](../../04_architecture-repository/04_patterns/artsn-rules/art-8d.md)
 
 ## 4. Acteurs (Actors)
 
@@ -110,7 +110,7 @@ La conformité est attestée par : validation des profils consommés/exposés, j
 
 ## 12. Articulation avec les autres profils
 
-Le médiateur traite la sémantique et les règles sectorielles, puis route vers le point d’échange sectoriel et, le cas échéant, vers la plateforme interinstitutionnelle ([PT-01](../../04_architecture-repository/profils/pt-01.md)).
+Le médiateur traite la sémantique et les règles sectorielles, puis route vers le point d’échange sectoriel et, le cas échéant, vers la plateforme interinstitutionnelle ([PT-01](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md)).
 
 ```plantuml
 @startuml
@@ -142,7 +142,7 @@ stop
 @enduml
 ```
 
-Il s’appuie sur les services nationaux [PT-04](../../04_architecture-repository/profils/pt-04.md) (identité), [PT-05](../../04_architecture-repository/profils/pt-05.md) (professionnels), [PT-07](../../04_architecture-repository/profils/pt-07.md) (terminologie), [PT-10](../../04_architecture-repository/profils/pt-10.md) (autorisation), [PT-11](../../04_architecture-repository/profils/pt-11.md) (consentement).
+Il s’appuie sur les services nationaux [PT-04](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md) (identité), [PT-05](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md) (professionnels), [PT-07](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-07.md) (terminologie), [PT-10](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md) (autorisation), [PT-11](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-11.md) (consentement).
 
 ## 13. Limites et dépendances
 

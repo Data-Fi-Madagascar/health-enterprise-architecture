@@ -375,7 +375,7 @@
     "ART-1"
   ],
   "x-hea-applies-to": [],
-  "x-hea-source": "04_architecture-repository/profils/pt-14.md",
+  "x-hea-source": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-14.md",
   "x-hea-fhir-resources": [
     "Composition",
     "MeasureReport",
@@ -391,5 +391,5 @@
     "DO-29",
     "DO-30"
   ],
-  "x-hea-file": "04_architecture-repository/profils/pt-14.md"
+  "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-14.md"
 }

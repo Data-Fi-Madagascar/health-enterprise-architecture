@@ -227,7 +227,7 @@
     "CMP-03",
     "CMP-04"
   ],
-  "x-hea-source": "04_architecture-repository/profils/pt-09.md",
+  "x-hea-source": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-09.md",
   "x-hea-fhir-resources": [
     "IndicatorResult",
     "MeasureReport"
@@ -235,5 +235,5 @@
   "x-hea-data-objects": [
     "DO-28"
   ],
-  "x-hea-file": "04_architecture-repository/profils/pt-09.md"
+  "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-09.md"
 }

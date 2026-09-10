@@ -38,6 +38,12 @@ LINK_DIRS = ["00_caesn", "01_cnisn", "02_artsn", "03_ptisn", ARCH_REPOSITORY_DIR
 REL_DIRS = [ARCH_REPOSITORY_DIR]
 EXCLUDE_DIRS = {".git", "__pycache__", "node_modules", "dist", ".venv",
                 "graphify-out", ".agents", ".claude", "mintlify-site", "docs"}
+EXCLUDED_GRAPH_DOCS = {
+    os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "schema.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "togaf-mapping.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "archimate-mapping.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "cap-int-migration.yaml"),
+}
 RELATION_KEYS = ["maps_to", "implements", "applies_to", "related",
                  "realized_by", "contributes_to", "performs", "accesses",
                  "accessed_by",
@@ -366,8 +372,9 @@ def main():
     all_links = []        # (file, target)
 
     for path in iter_md(REPO_ROOT, REL_DIRS):
-        if os.path.basename(path) == "_schema.md":
-            continue  # fichier de schéma, pas un nœud de graphe
+        rel_path = os.path.relpath(path, REPO_ROOT)
+        if rel_path in EXCLUDED_GRAPH_DOCS:
+            continue  # fichier de métamodèle, pas un nœud de graphe
         text = open(path, encoding="utf-8").read()
         fm, _body = parse_frontmatter(text)
         if fm is None:

@@ -42,13 +42,13 @@ Permettre aux systèmes autorisés de relier plusieurs représentations d’un m
 
 ### Principes associés
 
-- [P-INT-01: Autorité désignée](../principes/p-int-01.md)
-- [P-INT-02: Résolution contre l’autorité](../principes/p-int-02.md)
-- [P-INT-03: Copies locales non autoritatives](../principes/p-int-03.md)
-- [P-INT-04: Historisation des références](../principes/p-int-04.md)
-- [P-INT-14: Base d’autorisation explicite](../principes/p-int-14.md)
-- [P-INT-15: Limitation à la finalité](../principes/p-int-15.md)
-- [P-INT-16: Résidence et non-réplication](../principes/p-int-16.md)
-- [P-INT-17: Minimisation](../principes/p-int-17.md)
-- [P-INT-18: Traçabilité différenciée](../principes/p-int-18.md)
+- [P-INT-01: Autorité désignée](../02_architecture-elements/motivation/principles/p-int-01.md)
+- [P-INT-02: Résolution contre l’autorité](../02_architecture-elements/motivation/principles/p-int-02.md)
+- [P-INT-03: Copies locales non autoritatives](../02_architecture-elements/motivation/principles/p-int-03.md)
+- [P-INT-04: Historisation des références](../02_architecture-elements/motivation/principles/p-int-04.md)
+- [P-INT-14: Base d’autorisation explicite](../02_architecture-elements/motivation/principles/p-int-14.md)
+- [P-INT-15: Limitation à la finalité](../02_architecture-elements/motivation/principles/p-int-15.md)
+- [P-INT-16: Résidence et non-réplication](../02_architecture-elements/motivation/principles/p-int-16.md)
+- [P-INT-17: Minimisation](../02_architecture-elements/motivation/principles/p-int-17.md)
+- [P-INT-18: Traçabilité différenciée](../02_architecture-elements/motivation/principles/p-int-18.md)
 

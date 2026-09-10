@@ -170,10 +170,10 @@
   "x-hea-applies-to": [
     "CMP-15"
   ],
-  "x-hea-source": "04_architecture-repository/profils/pt-10.md",
+  "x-hea-source": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md",
   "x-hea-fhir-resources": [
     "AuditEvent"
   ],
   "x-hea-data-objects": [],
-  "x-hea-file": "04_architecture-repository/profils/pt-10.md"
+  "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md"
 }

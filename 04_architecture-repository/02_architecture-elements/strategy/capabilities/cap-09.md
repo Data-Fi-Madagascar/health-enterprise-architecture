@@ -1,0 +1,60 @@
+---
+domain: capabilities
+
+id: CAP-09
+type: capabilite
+niveau: "1"
+title: Gestion des ressources humaines en santé
+status: stable
+owner: Responsables de capabilités habilitantes
+version: "0.0.1"
+envelope: 00_caesn/03_capabilities/enabling.md
+maps_to: []
+implements: []
+applies_to: ["VS-01", "VS-02", "VS-04"]
+related: ["CAP-INT-02", "CAP-15", "ART-6", "PT-18"]
+tags: ["caesn", "niveau-1", "capabilite", "CAP-09"]
+---
+# Gestion des ressources humaines en santé
+
+## Rôle dans le système
+
+La capabilité garantit la disponibilité et la compétence des ressources humaines en santé : recrutement, formation, affectation, supervision et motivation des agents. Elle est un facteur déterminant de la performance de toutes les autres capabilités, car un service de santé ne peut pas fonctionner sans personnel présent, compétent et soutenu.
+
+Elle couvre :
+
+- **Planification des effectifs** : anticipation des besoins en personnel par établissement, programme et niveau de soins
+- **Recrutement et affectation** : mobilisation, orientation et suivi des agents sur l'ensemble du territoire
+- **Formation et développement des compétences** : qualification continue, encadrement et certification des personnels
+- **Suivi de carrière et motivation** : gestion des données de carrière, rémunération et conditions de travail
+- **Données de référence du personnel** : registres et référentiels des agents sanitaires interopérables
+
+Son absence fragilise la gestion des ressources humaines et compromet la continuité des soins ([VS-01: Accéder à des services de santé essentiels, intégrés, équitables et de qualité](../value-streams/vs-01.md), [VS-02: Prévenir, détecter et répondre aux risques sanitaires](../value-streams/vs-02.md)) comme le pilotage du système ([VS-04: Piloter, coordonner et améliorer la performance du système de santé](../value-streams/vs-04.md)).
+
+## Flux de valeur
+
+- [VS-01: Soins essentiels](../value-streams/vs-01.md)
+- [VS-02: Prévention et surveillance](../value-streams/vs-02.md)
+- [VS-04: Pilotage du système](../value-streams/vs-04.md)
+
+## Rattachement ARTSN
+
+- [ART-4: Référentiels de métadonnées de gestion](../../../04_patterns/artsn-rules/art-4.md)
+- [F-2: Préservation de la souveraineté intersectorielle](../../../04_patterns/foundations/f-2.md)
+- [F-1: Résilience face à la réalité géographique du pays](../../../04_patterns/foundations/f-1.md)
+
+## Maturité
+
+| Niveau actuel | Niveau cible (3 ans) |
+|---------------|----------------------|
+| 1/5 | 3/5 |
+
+## Articulation avec la paie, les habilitations et la rétention
+
+- La **rémunération et la paie** s'appuient sur le registre des professionnels ([CAP-INT-02: Registre et résolution des professionnels de santé](../../../capacites/cap-int-02.md)) et sur l'échange financier ([PT-18: Échange de réclamations et paiements](../../../../03_ptisn/03_profils/pt-18-echange-reclamations-paiements.md)).
+- Les **habilitations** relèvent de [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](cap-15.md).
+- L'**analytique de rétention** (taux de rotation, départs) s'appuie sur [ART-6: Analytique et restitution](../../../04_patterns/artsn-rules/art-6.md).
+
+## Propriétaire
+
+Responsables de capabilités habilitantes

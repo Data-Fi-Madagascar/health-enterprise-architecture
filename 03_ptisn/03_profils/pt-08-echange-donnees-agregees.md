@@ -28,10 +28,10 @@ Périmètre : rapports périodiques d’activité et indicateurs de programme. H
 
 ## 3. Chapitres ART applicables
 
-- [ART-1: Intégration et ingestion](../../04_architecture-repository/chapitres/art-1.md)
-- [ART-2: Médiation et normalisation](../../04_architecture-repository/chapitres/art-2.md)
-- [ART-5: Cohérence et qualité des données](../../04_architecture-repository/chapitres/art-5.md)
-- [ART-6: Analytique et restitution](../../04_architecture-repository/chapitres/art-6.md)
+- [ART-1: Intégration et ingestion](../../04_architecture-repository/04_patterns/artsn-rules/art-1.md)
+- [ART-2: Médiation et normalisation](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md)
+- [ART-5: Cohérence et qualité des données](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md)
+- [ART-6: Analytique et restitution](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md)
 
 ## 4. Acteurs (Actors)
 
@@ -89,10 +89,10 @@ La plateforme nationale de traçabilité RMA constitue une première initiative 
 
 ## 12. Articulation avec les autres profils
 
-- [PT-07: terminologie et codification](../../04_architecture-repository/profils/pt-07.md)
-- [PT-06: référentiel des structures](../../04_architecture-repository/profils/pt-06.md)
-- [PT-09: analytique et exposition de données](../../04_architecture-repository/profils/pt-09.md)
-- [PT-01: échange interinstitutionnel](../../04_architecture-repository/profils/pt-01.md)
+- [PT-07: terminologie et codification](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-07.md)
+- [PT-06: référentiel des structures](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-06.md)
+- [PT-09: analytique et exposition de données](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-09.md)
+- [PT-01: échange interinstitutionnel](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md)
 
 ## 13. Limites et dépendances
 

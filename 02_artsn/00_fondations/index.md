@@ -19,7 +19,7 @@ related: ["CAP-13"]
 
 Ce document s'adresse prioritairement aux décideurs institutionnels et aux équipes DEPSI/techniques, qui doivent en assurer la compréhension et l'application. Les directions métier, les programmes, les responsables SIS/données/suivi-évaluation, ainsi que les partenaires techniques et financiers y trouvent un complément utile à leur compréhension de l'architecture. La vue d'ensemble de ces priorités de lecture est disponible dans la matrice de lecture. Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle.
 
-Les fondations invariantes constituent le **socle** sur lequel s'appuient tous les chapitres de l'ARTSN. Elles sont la partie la plus stable de l'architecture de référence. Chaque fondation vit dans le référentiel : `04_architecture-repository/fondations/f-X.md`.
+Les fondations invariantes constituent le **socle** sur lequel s'appuient tous les chapitres de l'ARTSN. Elles sont la partie la plus stable de l'architecture de référence. Chaque fondation vit dans le référentiel : `04_architecture-repository/04_patterns/foundations/f-X.md`.
 
 ## Catalogue des fondations
 
@@ -73,8 +73,8 @@ Discipline de **mise en œuvre** : elle seule permet au Comité National (CNASN
 
 **Discipline de mise en œuvre.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (systèmes partenaires, prestataires, terrains) : elle seule permet de limiter l'exposition des données de santé en cas de fuite ou de compromission et de respecter la loi sans rompre le pipeline.
 
-- **Rattachement** : [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/capabilites/cap-15.md) (cybersécurité, confidentialité, gouvernance des données personnelles).
-- **Déduit selon** : [P-INT-16: Résidence et non-réplication](../../04_architecture-repository/principes/p-int-16.md) (résidence et non-réplication), [P-INT-17: Minimisation](../../04_architecture-repository/principes/p-int-17.md) (minimisation).
+- **Rattachement** : [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md) (cybersécurité, confidentialité, gouvernance des données personnelles).
+- **Déduit selon** : [P-INT-16: Résidence et non-réplication](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-16.md) (résidence et non-réplication), [P-INT-17: Minimisation](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-17.md) (minimisation).
 - **Statut : Provisoire.**
 
 ### Observabilité
@@ -83,8 +83,8 @@ Discipline de **mise en œuvre** : elle seule permet au Comité National (CNASN
 
 **Discipline de mise en œuvre.** Dès lors qu'une source échappe à la gouvernance directe de l'initiative (systèmes partenaires, périphérie) : elle seule permet de détecter, diagnostiquer et corriger les défaillances d'un pipeline distribué et asynchrone sans rompre le pipeline.
 
-- **Rattachement** : [CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/capabilites/cap-13.md) (SIS, données, analytique).
-- **Déduit selon** : [P-INT-18: Traçabilité différenciée](../../04_architecture-repository/principes/p-int-18.md) (traçabilité différenciée).
+- **Rattachement** : [CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md) (SIS, données, analytique).
+- **Déduit selon** : [P-INT-18: Traçabilité différenciée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-18.md) (traçabilité différenciée).
 - **Statut : Provisoire.**
 
 <!-- END:GENERATED -->
