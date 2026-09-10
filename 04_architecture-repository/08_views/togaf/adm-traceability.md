@@ -29,6 +29,19 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | AA-07 | Les applications doivent être soutenables | VS-01, VS-02, VS-03, VS-04 | draft | AA-07 |
 | AA-08 | Les applications doivent être homologuées avant extension | VS-01, VS-02, VS-03, VS-04 | draft | AA-08 |
 | AA-09 | Les applications obsolètes ou redondantes doivent être rationalisées | VS-01, VS-02, VS-03, VS-04 | draft | AA-09 |
+| ABB-AUDIT-PROVENANCE | Provenance, audit et traçabilité | CAP-03, CAP-08, CAP-12, CAP-13, CAP-15, ART-3, ART-7, ART-9, F-1, F-5, F-6 | candidate | ABB-AUDIT-PROVENANCE |
+| ABB-CATALOGUE-CONTRATS | Catalogue des services et registre des contrats | CAP-12, CAP-14, CAP-16, ART-1, ART-2, F-3, F-4 | candidate | ABB-CATALOGUE-CONTRATS |
+| ABB-CONFIANCE-AUTORISATION | Confiance, sécurité et autorisation | CAP-15, ART-0, ART-4B, ART-7, ART-9 | candidate | ABB-CONFIANCE-AUTORISATION |
+| ABB-ECHANGE-LOGISTIQUE-LMIS | Échange logistique LMIS | CAP-06, CAP-10, CAP-11, ART-10 | candidate | ABB-ECHANGE-LOGISTIQUE-LMIS |
+| ABB-ECHANGE-MEDIATION | Échange et médiation inter-systèmes | CAP-13, CAP-14, CAP-18, ART-1, ART-2, F-3 | candidate | ABB-ECHANGE-MEDIATION |
+| ABB-EXPOSITION-DONNEES-ANALYTIQUES | Accès et exposition des données analytiques | CAP-05, CAP-13, ART-3, ART-5, ART-6, ART-7 | candidate | ABB-EXPOSITION-DONNEES-ANALYTIQUES |
+| ABB-GESTION-CONSENTEMENT | Gestion des consentements et bases d'autorisation | CAP-15, CAP-17, ART-0, ART-4B, ART-7, ART-11 | candidate | ABB-GESTION-CONSENTEMENT |
+| ABB-IDENTITE-BENEFICIAIRE | Résolution d'identité du bénéficiaire | CAP-01, CAP-02, CAP-04, CAP-07, CAP-14, CAP-17, ART-4, ART-4A, ART-7 | candidate | ABB-IDENTITE-BENEFICIAIRE |
+| ABB-RECONCILIATION-DONNEES | Qualité et réconciliation des données | CAP-13, CAP-14, ART-4, ART-5, ART-6 | candidate | ABB-RECONCILIATION-DONNEES |
+| ABB-REFERENTIEL-STRUCTURES-SERVICES | Référentiel des structures et services de santé | CAP-11, CAP-13, CAP-14, ART-4, ART-5, ART-6 | candidate | ABB-REFERENTIEL-STRUCTURES-SERVICES |
+| ABB-REGISTRE-PROFESSIONNELS | Registre et résolution des professionnels de santé | CAP-09, CAP-14, ART-4, ART-4A, ART-7, ART-4C | candidate | ABB-REGISTRE-PROFESSIONNELS |
+| ABB-SERVICE-TERMINOLOGIE | Service de terminologie et codification communes | CAP-13, CAP-14, ART-2, ART-4, ART-5 | candidate | ABB-SERVICE-TERMINOLOGIE |
+| AC-CATALOGUE-SERVICES | Contrat d'architecture du catalogue de services | CAP-12, CAP-14, CAP-16, ART-1, ART-2, F-3, F-4 | candidate | AC-CATALOGUE-SERVICES |
 | ACT-01 | Patient et usager (acteur) | — | draft | ACT-01 |
 | ACT-02 | Agent de santé de première ligne | — | draft | ACT-02 |
 | ACT-03 | Formation sanitaire (établissement) | — | draft | ACT-03 |
@@ -143,6 +156,7 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | CMP-44 | Comite d'ethique | ART-0, F-4 | active | CMP-44 |
 | CMP-45 | Cellule d'audit | ART-0, F-4 | active | CMP-45 |
 | CMP-46 | Arbitrage et risques | ART-0, F-4 | active | CMP-46 |
+| COMP-HOMOLOGATION-INTEROPERABILITE | Homologation d'interopérabilité | CAP-14, CAP-16, F-4 | candidate | COMP-HOMOLOGATION-INTEROPERABILITE |
 | DA-01 | Les données de santé sont un actif stratégique national | VS-01, VS-02, VS-03, VS-04 | draft | DA-01 |
 | DA-02 | Une donnée doit être collectée une seule fois et réutilisée plusieurs fois | VS-01, VS-02, VS-03, VS-04 | draft | DA-02 |
 | DA-03 | Les référentiels nationaux sont les sources de vérité | VS-01, VS-02, VS-03, VS-04 | draft | DA-03 |
@@ -187,6 +201,7 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | ENF-3 | Unicité de l'identité et résilience face à la fragmentation applicative | — | draft | ENF-3 |
 | ENF-4 | Cloisonnement inter-institutionnel et étanchéité des données (One Health) | — | draft | ENF-4 |
 | ENF-5 | Coordination des processus complexes décentralisés et asynchrones | — | draft | ENF-5 |
+| EVID-TESTS-INTEROPERABILITE | Preuves de tests d'interopérabilité | CAP-16, F-4 | candidate | EVID-TESTS-INTEROPERABILITE |
 | F-1 | Résilience face à la réalité géographique du pays | ENF-1, CAP-08 | stable | F-1 |
 | F-2 | Préservation de la souveraineté intersectorielle | ENF-4 | stable | F-2 |
 | F-3 | Éradication des silos technologiques | CAP-14 | stable | F-3 |
@@ -250,6 +265,9 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | PART-VS-02 | Partition VS-02 | VS-02 | draft | PART-VS-02 |
 | PART-VS-03 | Partition VS-03 | VS-03 | draft | PART-VS-03 |
 | PART-VS-04 | Partition VS-04 | VS-04 | draft | PART-VS-04 |
+| PAT-ECHANGE-INTERNATIONAL-IPS | Pattern d'échange international IPS | CAP-15, CAP-18, ART-0, ART-1, ART-7 | candidate | PAT-ECHANGE-INTERNATIONAL-IPS |
+| PAT-ECHANGE-MEDIATION | Pattern d'échange et médiation | CAP-13, CAP-14, CAP-18, ART-1, ART-2, F-3 | candidate | PAT-ECHANGE-MEDIATION |
+| PAT-QUALITE-RECONCILIATION | Pattern qualité et réconciliation | CAP-13, CAP-14, ART-4, ART-5, ART-6 | candidate | PAT-QUALITE-RECONCILIATION |
 | PD-VS01-01 | Le parcours du patient est l'unité de mesure de la performance | VS-01 | draft | PD-VS01-01 |
 | PD-VS01-02 | Le dossier du patient suit le patient, pas l'institution | VS-01 | draft | PD-VS01-02 |
 | PD-VS01-03 | La continuité des soins prime sur la logique des programmes | VS-01 | draft | PD-VS01-03 |
@@ -315,6 +333,23 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | PT-17 | Logistique & chaîne d'approvisionnement (LMIS) | CMP-23, CAP-INT-10, CAP-INT-15, ART-10 | active | PT-17 |
 | PT-18 | Échange de réclamations et paiements | CAP-INT-07, ART-2, ART-9 | active | PT-18 |
 | PT-19 | Aide à la décision clinique (CDS) | CMP-08, CAP-INT-05, ART-12, ART-2 | active | PT-19 |
+| RD-DONNEES-ENVIRONNEMENTALES-CLIMAT | Données environnementales et de résilience climatique | CAP-04, CAP-05, CAP-18, ART-4D, ART-11 | candidate | RD-DONNEES-ENVIRONNEMENTALES-CLIMAT |
+| RD-STRUCTURES-SERVICES | Données de référence des structures et services | CAP-11, CAP-13, CAP-14, ART-4, ART-5, ART-6 | candidate | RD-STRUCTURES-SERVICES |
+| REQ-OH-01 | Tout échange intersectoriel doit être couvert par un accord explicite entre ministères. | CAP-18, ART-0, ART-11 | candidate | REQ-OH-01 |
+| REQ-OH-02 | Les identités humaines ne doivent jamais être croisées avec les identités animales. | CAP-18, ART-0, ART-11 | candidate | REQ-OH-02 |
+| REQ-OH-03 | Les données agrégées croisées doivent être irréversiblement désanonymisées. | CAP-18, ART-0, ART-11 | candidate | REQ-OH-03 |
+| REQ-OH-04 | Chaque secteur conserve la souveraineté sur ses données source. | CAP-18, ART-0, ART-11 | candidate | REQ-OH-04 |
+| REQ-OH-05 | Les dimensions d'agrégation communes doivent être normalisées. | CAP-18, ART-0, ART-11 | candidate | REQ-OH-05 |
+| REQ-OH-06 | Tous les échanges intersectoriels doivent être journalisés et auditables. | CAP-18, ART-0, ART-11 | candidate | REQ-OH-06 |
+| REQ-OH-07 | Le cadre Tripartite Plus doit être respecté pour les flux internationaux. | CAP-18, ART-0, ART-11 | candidate | REQ-OH-07 |
+| REQ-TF-01 | Tout flux transfrontalier doit être couvert par un accord explicite. | CAP-15, CAP-18, ART-0, ART-7 | candidate | REQ-TF-01 |
+| REQ-TF-02 | Le consentement du patient doit être obtenu pour tout échange sortant sauf obligation légale. | CAP-15, CAP-18, ART-0, ART-7 | candidate | REQ-TF-02 |
+| REQ-TF-03 | Seules les données minimisées nécessaires à la finalité peuvent être exportées. | CAP-15, CAP-18, ART-0, ART-7 | candidate | REQ-TF-03 |
+| REQ-TF-04 | Tous les flux transfrontaliers doivent être journalisés et auditables. | CAP-15, CAP-18, ART-0, ART-7 | candidate | REQ-TF-04 |
+| REQ-TF-05 | Le GDHCN doit être le référentiel de confiance pour les échanges internationaux. | CAP-15, CAP-18, ART-0, ART-7 | candidate | REQ-TF-05 |
+| REQ-TF-06 | Les données souveraines ne quittent pas le territoire sauf dérogation. | CAP-15, CAP-18, ART-0, ART-7 | candidate | REQ-TF-06 |
+| REQ-TF-07 | Les systèmes partenaires étrangers doivent démontrer leur conformité avant tout accès. | CAP-15, CAP-18, ART-0, ART-7 | candidate | REQ-TF-07 |
+| REQ-TF-08 | Tout résumé patient échangé doit être conforme au profil HL7 FHIR IPS et contenir les sections minimales requises. | CAP-15, CAP-18, ART-0, ART-7 | candidate | REQ-TF-08 |
 | ROL-01 | Clinicien / prestataire de soins | — | draft | ROL-01 |
 | ROL-02 | Gestionnaire de parcours / référence | — | draft | ROL-02 |
 | ROL-03 | Gestionnaire de données / registre | — | draft | ROL-03 |
@@ -326,6 +361,7 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | SRV-04 | Service d'échange inter-systèmes | ART-9 | draft | SRV-04 |
 | SRV-05 | Service logistique (LMIS) | ART-10 | draft | SRV-05 |
 | SRV-06 | Service de pilotage et tableaux de bord | ART-3 | draft | SRV-06 |
+| TERM-CODIFICATION-COMMUNE | Terminologie et codification communes | CAP-13, CAP-14, ART-2, ART-4, ART-5 | candidate | TERM-CODIFICATION-COMMUNE |
 | VAL-01 | Soins accessibles, continus, sûrs et de qualité | — | active | VAL-01 |
 | VAL-02 | Protection contre les maladies, épidémies et urgences sanitaires | — | active | VAL-02 |
 | VAL-03 | Protection financière contre les dépenses de santé | — | active | VAL-03 |

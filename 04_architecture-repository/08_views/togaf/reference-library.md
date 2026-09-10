@@ -15,11 +15,23 @@ tags: ["togaf", "reference-library", "repository-view"]
 
 Cette vue regroupe les patrons, fondations et blocs d'architecture réutilisables. Elle matérialise l'esprit HEART du dépôt : capitaliser les artefacts éprouvés, les rendre gouvernables et éviter la recréation de solutions locales incompatibles.
 
-<!-- BEGIN:GENERATED mode=table source=04_architecture-repository/04_patterns/**/*.md,04_architecture-repository/05_building-blocks/abb/**/*.md -->
+<!-- BEGIN:GENERATED mode=table source=04_architecture-repository/04_patterns/*.md,04_architecture-repository/04_patterns/**/*.md,04_architecture-repository/05_building-blocks/abb/*.md,04_architecture-repository/05_building-blocks/abb/**/*.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 | Code | Titre canonique | Rattachement | Statut | Fiche |
 |---|---|---|---|---|
+| ABB-AUDIT-PROVENANCE | Provenance, audit et traçabilité | CAP-03, CAP-08, CAP-12, CAP-13, CAP-15, ART-3, ART-7, ART-9, F-1, F-5, F-6 | candidate | ABB-AUDIT-PROVENANCE |
+| ABB-CATALOGUE-CONTRATS | Catalogue des services et registre des contrats | CAP-12, CAP-14, CAP-16, ART-1, ART-2, F-3, F-4 | candidate | ABB-CATALOGUE-CONTRATS |
+| ABB-CONFIANCE-AUTORISATION | Confiance, sécurité et autorisation | CAP-15, ART-0, ART-4B, ART-7, ART-9 | candidate | ABB-CONFIANCE-AUTORISATION |
+| ABB-ECHANGE-LOGISTIQUE-LMIS | Échange logistique LMIS | CAP-06, CAP-10, CAP-11, ART-10 | candidate | ABB-ECHANGE-LOGISTIQUE-LMIS |
+| ABB-ECHANGE-MEDIATION | Échange et médiation inter-systèmes | CAP-13, CAP-14, CAP-18, ART-1, ART-2, F-3 | candidate | ABB-ECHANGE-MEDIATION |
+| ABB-EXPOSITION-DONNEES-ANALYTIQUES | Accès et exposition des données analytiques | CAP-05, CAP-13, ART-3, ART-5, ART-6, ART-7 | candidate | ABB-EXPOSITION-DONNEES-ANALYTIQUES |
+| ABB-GESTION-CONSENTEMENT | Gestion des consentements et bases d'autorisation | CAP-15, CAP-17, ART-0, ART-4B, ART-7, ART-11 | candidate | ABB-GESTION-CONSENTEMENT |
+| ABB-IDENTITE-BENEFICIAIRE | Résolution d'identité du bénéficiaire | CAP-01, CAP-02, CAP-04, CAP-07, CAP-14, CAP-17, ART-4, ART-4A, ART-7 | candidate | ABB-IDENTITE-BENEFICIAIRE |
+| ABB-RECONCILIATION-DONNEES | Qualité et réconciliation des données | CAP-13, CAP-14, ART-4, ART-5, ART-6 | candidate | ABB-RECONCILIATION-DONNEES |
+| ABB-REFERENTIEL-STRUCTURES-SERVICES | Référentiel des structures et services de santé | CAP-11, CAP-13, CAP-14, ART-4, ART-5, ART-6 | candidate | ABB-REFERENTIEL-STRUCTURES-SERVICES |
+| ABB-REGISTRE-PROFESSIONNELS | Registre et résolution des professionnels de santé | CAP-09, CAP-14, ART-4, ART-4A, ART-7, ART-4C | candidate | ABB-REGISTRE-PROFESSIONNELS |
+| ABB-SERVICE-TERMINOLOGIE | Service de terminologie et codification communes | CAP-13, CAP-14, ART-2, ART-4, ART-5 | candidate | ABB-SERVICE-TERMINOLOGIE |
 | ART-0 | Accords de partage inter-institutionnels | ENF-4 | candidate | ART-0 |
 | ART-1 | Intégration et ingestion | ENF-1, CAP-14 | stable | ART-1 |
 | ART-2 | Médiation et normalisation | ENF-3, ENF-4, CAP-14 | stable | ART-2 |
@@ -85,6 +97,9 @@ Cette vue regroupe les patrons, fondations et blocs d'architecture réutilisable
 | F-4 | Homologation obligatoire | CAP-INT-12, CAP-16 | stable | F-4 |
 | F-5 | Protection et minimisation | CAP-15 | draft | F-5 |
 | F-6 | Observabilité | CAP-13 | draft | F-6 |
+| PAT-ECHANGE-INTERNATIONAL-IPS | Pattern d'échange international IPS | CAP-15, CAP-18, ART-0, ART-1, ART-7 | candidate | PAT-ECHANGE-INTERNATIONAL-IPS |
+| PAT-ECHANGE-MEDIATION | Pattern d'échange et médiation | CAP-13, CAP-14, CAP-18, ART-1, ART-2, F-3 | candidate | PAT-ECHANGE-MEDIATION |
+| PAT-QUALITE-RECONCILIATION | Pattern qualité et réconciliation | CAP-13, CAP-14, ART-4, ART-5, ART-6 | candidate | PAT-QUALITE-RECONCILIATION |
 | SRV-02 | Service de dossier patient | ART-2 | draft | SRV-02 |
 | SRV-03 | Service de référentiels | ART-4 | draft | SRV-03 |
 | SRV-04 | Service d'échange inter-systèmes | ART-9 | draft | SRV-04 |

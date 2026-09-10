@@ -8,7 +8,6 @@ status: candidate
 owner: DEPSI
 version: "0.5"
 family: confiance
-envelope: 01_cnisn/02_capacites/index.md
 maps_to: ["P-INT-14", "P-INT-15", "P-INT-16", "P-INT-17", "CAP-15", "CAP-17"]
 implements: []
 applies_to: []
@@ -44,4 +43,3 @@ Le consentement est une base possible parmi plusieurs bases légales ou fonction
 - [P-INT-15: Limitation à la finalité](../02_architecture-elements/motivation/principles/p-int-15.md)
 - [P-INT-16: Résidence et non-réplication](../02_architecture-elements/motivation/principles/p-int-16.md)
 - [P-INT-17: Minimisation](../02_architecture-elements/motivation/principles/p-int-17.md)
-

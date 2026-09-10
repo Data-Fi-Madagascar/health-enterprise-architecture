@@ -8,7 +8,6 @@ status: candidate
 owner: DEPSI
 version: "0.5"
 family: echange
-envelope: 01_cnisn/02_capacites/index.md
 maps_to: ["P-INT-05", "P-INT-06", "P-INT-07", "P-INT-08", "P-INT-09", "P-INT-23", "P-INT-24", "P-INT-25", "CAP-12", "CAP-14", "CAP-16"]
 implements: []
 applies_to: []
@@ -53,4 +52,3 @@ Rendre visibles, gouvernables et réutilisables les services et interfaces du se
 - [P-INT-23: Conformité fondée sur des preuves](../02_architecture-elements/motivation/principles/p-int-23.md)
 - [P-INT-24: Applicabilité déclarée](../02_architecture-elements/motivation/principles/p-int-24.md)
 - [P-INT-25: Réévaluation continue](../02_architecture-elements/motivation/principles/p-int-25.md)
-

@@ -8,7 +8,6 @@ status: candidate
 owner: DEPSI
 version: "0.5"
 family: echange
-envelope: 01_cnisn/02_capacites/index.md
 maps_to: ["P-INT-05", "P-INT-06", "P-INT-07", "P-INT-08", "P-INT-09", "P-INT-10", "P-INT-11", "P-INT-12", "P-INT-13", "P-INT-18", "P-INT-19", "P-INT-20", "P-INT-21", "P-INT-22", "P-INT-23", "P-INT-24", "P-INT-25", "CAP-13", "CAP-14", "CAP-18"]
 implements: []
 applies_to: []
@@ -56,4 +55,3 @@ Permettre aux systèmes de transmettre, recevoir, transformer et acheminer des d
 - [P-INT-23: Conformité fondée sur des preuves](../02_architecture-elements/motivation/principles/p-int-23.md)
 - [P-INT-24: Applicabilité déclarée](../02_architecture-elements/motivation/principles/p-int-24.md)
 - [P-INT-25: Réévaluation continue](../02_architecture-elements/motivation/principles/p-int-25.md)
-

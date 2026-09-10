@@ -29,12 +29,15 @@ DERIVED_ARCH_REPOSITORY_DOCS = {
     "08_views/togaf/solutions-landscape.md",
     "08_views/togaf/adm-traceability.md",
 }
+STATIC_ARCH_REPOSITORY_DOCS = {
+    "08_views/togaf/cap-int-migration.md",
+}
 EXCLUDED_ARCH_REPOSITORY_DOCS = {
     "00_metamodel/schema.md",
     "00_metamodel/togaf-mapping.md",
     "00_metamodel/archimate-mapping.md",
     "00_metamodel/cap-int-migration.yaml",
-} | DERIVED_ARCH_REPOSITORY_DOCS
+} | DERIVED_ARCH_REPOSITORY_DOCS | STATIC_ARCH_REPOSITORY_DOCS
 TYPE_ORDER = [
     "architecture-partition",
     "flux-valeur",

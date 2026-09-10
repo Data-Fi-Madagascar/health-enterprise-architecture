@@ -8,7 +8,6 @@ status: candidate
 owner: DEPSI
 version: "0.5"
 family: qualite-conformite
-envelope: 01_cnisn/02_capacites/index.md
 maps_to: ["P-INT-19", "P-INT-20", "P-INT-21", "P-INT-22", "P-INT-23", "P-INT-24", "P-INT-25", "CAP-14", "CAP-16"]
 implements: []
 applies_to: []

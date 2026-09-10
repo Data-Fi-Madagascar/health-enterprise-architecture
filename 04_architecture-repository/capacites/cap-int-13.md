@@ -8,7 +8,6 @@ status: candidate
 owner: DEPSI
 version: "0.5"
 family: transfrontalier
-envelope: 01_cnisn/02_capacites/index.md
 maps_to: ["P-INT-01", "P-INT-05", "P-INT-10", "P-INT-14", "P-INT-16", "P-INT-17", "P-INT-19", "CAP-15"]
 implements: []
 applies_to: []

@@ -8,7 +8,6 @@ status: candidate
 owner: DEPSI
 version: "0.5"
 family: referentiels
-envelope: 01_cnisn/02_capacites/index.md
 maps_to: ["P-INT-01", "P-INT-02", "P-INT-03", "P-INT-04", "P-INT-14", "P-INT-15", "P-INT-16", "P-INT-17", "P-INT-18", "CAP-01", "CAP-02", "CAP-04", "CAP-07", "CAP-14", "CAP-17"]
 implements: []
 applies_to: []
@@ -51,4 +50,3 @@ Permettre aux systèmes autorisés de relier plusieurs représentations d’un m
 - [P-INT-16: Résidence et non-réplication](../02_architecture-elements/motivation/principles/p-int-16.md)
 - [P-INT-17: Minimisation](../02_architecture-elements/motivation/principles/p-int-17.md)
 - [P-INT-18: Traçabilité différenciée](../02_architecture-elements/motivation/principles/p-int-18.md)
-

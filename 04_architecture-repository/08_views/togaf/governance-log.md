@@ -20,6 +20,7 @@ Cette vue consolide les décisions CNISN et les registres de gouvernance du dép
 
 | Code | Titre canonique | Rattachement | Statut | Fiche |
 |---|---|---|---|---|
+| AC-CATALOGUE-SERVICES | Contrat d'architecture du catalogue de services | CAP-12, CAP-14, CAP-16, ART-1, ART-2, F-3, F-4 | candidate | AC-CATALOGUE-SERVICES |
 | CMP-39 | Registre des accords inter-institutions | ART-0, F-4 | active | CMP-39 |
 | CMP-40 | Charte nationale de protection | ART-0, F-4 | active | CMP-40 |
 | CMP-41 | Conventions internationales | ART-0, F-4 | active | CMP-41 |
@@ -28,6 +29,8 @@ Cette vue consolide les décisions CNISN et les registres de gouvernance du dép
 | CMP-44 | Comite d'ethique | ART-0, F-4 | active | CMP-44 |
 | CMP-45 | Cellule d'audit | ART-0, F-4 | active | CMP-45 |
 | CMP-46 | Arbitrage et risques | ART-0, F-4 | active | CMP-46 |
+| COMP-HOMOLOGATION-INTEROPERABILITE | Homologation d'interopérabilité | CAP-14, CAP-16, F-4 | candidate | COMP-HOMOLOGATION-INTEROPERABILITE |
+| EVID-TESTS-INTEROPERABILITE | Preuves de tests d'interopérabilité | CAP-16, F-4 | candidate | EVID-TESTS-INTEROPERABILITE |
 | ADR-0000 | ADR-0000 : <Titre de la décision> | — | candidate | ADR-0000 |
 | ADR-0001 | ADR-0001 : Adoption de X-Road comme plateforme d'échange interinstitutionnel | — | active | ADR-0001 |
 | ADR-0002 | ADR-0002 : Adoption du profil IHE mADX pour l'échange de données agrégées | — | active | ADR-0002 |

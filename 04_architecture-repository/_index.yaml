@@ -3,19 +3,24 @@
 # Source de vérité : frontmatter Markdown sous 04_architecture-repository/.
 # Champs : id, type, niveau, chemin, status, title.
 # Statuts : draft | active | stable | candidate | deprecated
-# Total : 349 objets
+# Total : 385 objets
 #
 # Comptes par type :
 # - acteur : 6
+# - architecture-building-block : 12
+# - architecture-contract : 1
 # - architecture-partition : 11
+# - architecture-pattern : 3
 # - capabilite : 18
 # - capacite : 16
 # - chapitre : 21
+# - compliance-rule : 1
 # - composant-applicatif : 25
 # - composant-infrastructure : 6
 # - composant-securite : 7
 # - etape-valeur : 28
-# - exigence : 5
+# - evidence : 1
+# - exigence : 20
 # - flux-valeur : 4
 # - fondation : 6
 # - gap : 3
@@ -27,9 +32,11 @@
 # - principe : 74
 # - processus-metier : 13
 # - profil : 19
+# - reference-data : 2
 # - registre-gouvernance : 8
 # - role : 5
 # - service : 6
+# - terminology : 1
 # - valeur : 4
 # - work-package : 7
 #
@@ -37,7 +44,7 @@
 # - draft : 185
 # - active : 111
 # - stable : 29
-# - candidate : 24
+# - candidate : 60
 # - deprecated : 0
 
 # niveau 1 / flux-valeur (4)
@@ -1314,6 +1321,80 @@
   status: "active"
   title: "Réévaluation continue"
 
+# niveau 2 / architecture-building-block (12)
+- id: "ABB-AUDIT-PROVENANCE"
+  type: "architecture-building-block"
+  niveau: "2"
+  chemin: "05_building-blocks/abb/abb-audit-provenance.md"
+  status: "candidate"
+  title: "Provenance, audit et traçabilité"
+- id: "ABB-CATALOGUE-CONTRATS"
+  type: "architecture-building-block"
+  niveau: "2"
+  chemin: "05_building-blocks/abb/abb-catalogue-contrats.md"
+  status: "candidate"
+  title: "Catalogue des services et registre des contrats"
+- id: "ABB-CONFIANCE-AUTORISATION"
+  type: "architecture-building-block"
+  niveau: "2"
+  chemin: "05_building-blocks/abb/abb-confiance-autorisation.md"
+  status: "candidate"
+  title: "Confiance, sécurité et autorisation"
+- id: "ABB-ECHANGE-LOGISTIQUE-LMIS"
+  type: "architecture-building-block"
+  niveau: "2"
+  chemin: "05_building-blocks/abb/abb-echange-logistique-lmis.md"
+  status: "candidate"
+  title: "Échange logistique LMIS"
+- id: "ABB-ECHANGE-MEDIATION"
+  type: "architecture-building-block"
+  niveau: "2"
+  chemin: "05_building-blocks/abb/abb-echange-mediation.md"
+  status: "candidate"
+  title: "Échange et médiation inter-systèmes"
+- id: "ABB-EXPOSITION-DONNEES-ANALYTIQUES"
+  type: "architecture-building-block"
+  niveau: "2"
+  chemin: "05_building-blocks/abb/abb-exposition-donnees-analytiques.md"
+  status: "candidate"
+  title: "Accès et exposition des données analytiques"
+- id: "ABB-GESTION-CONSENTEMENT"
+  type: "architecture-building-block"
+  niveau: "2"
+  chemin: "05_building-blocks/abb/abb-gestion-consentement.md"
+  status: "candidate"
+  title: "Gestion des consentements et bases d'autorisation"
+- id: "ABB-IDENTITE-BENEFICIAIRE"
+  type: "architecture-building-block"
+  niveau: "2"
+  chemin: "05_building-blocks/abb/abb-identite-beneficiaire.md"
+  status: "candidate"
+  title: "Résolution d'identité du bénéficiaire"
+- id: "ABB-RECONCILIATION-DONNEES"
+  type: "architecture-building-block"
+  niveau: "2"
+  chemin: "05_building-blocks/abb/abb-reconciliation-donnees.md"
+  status: "candidate"
+  title: "Qualité et réconciliation des données"
+- id: "ABB-REFERENTIEL-STRUCTURES-SERVICES"
+  type: "architecture-building-block"
+  niveau: "2"
+  chemin: "05_building-blocks/abb/abb-referentiel-structures-services.md"
+  status: "candidate"
+  title: "Référentiel des structures et services de santé"
+- id: "ABB-REGISTRE-PROFESSIONNELS"
+  type: "architecture-building-block"
+  niveau: "2"
+  chemin: "05_building-blocks/abb/abb-registre-professionnels.md"
+  status: "candidate"
+  title: "Registre et résolution des professionnels de santé"
+- id: "ABB-SERVICE-TERMINOLOGIE"
+  type: "architecture-building-block"
+  niveau: "2"
+  chemin: "05_building-blocks/abb/abb-service-terminologie.md"
+  status: "candidate"
+  title: "Service de terminologie et codification communes"
+
 # niveau 2 / capacite (16)
 - id: "CAP-INT-01"
   type: "capacite"
@@ -1412,6 +1493,164 @@
   status: "candidate"
   title: "Données environnementales et de résilience climatique"
 
+# niveau 2 / architecture-pattern (3)
+- id: "PAT-ECHANGE-INTERNATIONAL-IPS"
+  type: "architecture-pattern"
+  niveau: "2"
+  chemin: "04_patterns/pat-echange-international-ips.md"
+  status: "candidate"
+  title: "Pattern d'échange international IPS"
+- id: "PAT-ECHANGE-MEDIATION"
+  type: "architecture-pattern"
+  niveau: "2"
+  chemin: "04_patterns/pat-echange-mediation.md"
+  status: "candidate"
+  title: "Pattern d'échange et médiation"
+- id: "PAT-QUALITE-RECONCILIATION"
+  type: "architecture-pattern"
+  niveau: "2"
+  chemin: "04_patterns/pat-qualite-reconciliation.md"
+  status: "candidate"
+  title: "Pattern qualité et réconciliation"
+
+# niveau 2 / exigence (20)
+- id: "REQ-OH-01"
+  type: "exigence"
+  niveau: "2"
+  chemin: "03_requirements/req-oh-01.md"
+  status: "candidate"
+  title: "Tout échange intersectoriel doit être couvert par un accord explicite entre ministères."
+- id: "REQ-OH-02"
+  type: "exigence"
+  niveau: "2"
+  chemin: "03_requirements/req-oh-02.md"
+  status: "candidate"
+  title: "Les identités humaines ne doivent jamais être croisées avec les identités animales."
+- id: "REQ-OH-03"
+  type: "exigence"
+  niveau: "2"
+  chemin: "03_requirements/req-oh-03.md"
+  status: "candidate"
+  title: "Les données agrégées croisées doivent être irréversiblement désanonymisées."
+- id: "REQ-OH-04"
+  type: "exigence"
+  niveau: "2"
+  chemin: "03_requirements/req-oh-04.md"
+  status: "candidate"
+  title: "Chaque secteur conserve la souveraineté sur ses données source."
+- id: "REQ-OH-05"
+  type: "exigence"
+  niveau: "2"
+  chemin: "03_requirements/req-oh-05.md"
+  status: "candidate"
+  title: "Les dimensions d'agrégation communes doivent être normalisées."
+- id: "REQ-OH-06"
+  type: "exigence"
+  niveau: "2"
+  chemin: "03_requirements/req-oh-06.md"
+  status: "candidate"
+  title: "Tous les échanges intersectoriels doivent être journalisés et auditables."
+- id: "REQ-OH-07"
+  type: "exigence"
+  niveau: "2"
+  chemin: "03_requirements/req-oh-07.md"
+  status: "candidate"
+  title: "Le cadre Tripartite Plus doit être respecté pour les flux internationaux."
+- id: "REQ-TF-01"
+  type: "exigence"
+  niveau: "2"
+  chemin: "03_requirements/req-tf-01.md"
+  status: "candidate"
+  title: "Tout flux transfrontalier doit être couvert par un accord explicite."
+- id: "REQ-TF-02"
+  type: "exigence"
+  niveau: "2"
+  chemin: "03_requirements/req-tf-02.md"
+  status: "candidate"
+  title: "Le consentement du patient doit être obtenu pour tout échange sortant sauf obligation légale."
+- id: "REQ-TF-03"
+  type: "exigence"
+  niveau: "2"
+  chemin: "03_requirements/req-tf-03.md"
+  status: "candidate"
+  title: "Seules les données minimisées nécessaires à la finalité peuvent être exportées."
+- id: "REQ-TF-04"
+  type: "exigence"
+  niveau: "2"
+  chemin: "03_requirements/req-tf-04.md"
+  status: "candidate"
+  title: "Tous les flux transfrontaliers doivent être journalisés et auditables."
+- id: "REQ-TF-05"
+  type: "exigence"
+  niveau: "2"
+  chemin: "03_requirements/req-tf-05.md"
+  status: "candidate"
+  title: "Le GDHCN doit être le référentiel de confiance pour les échanges internationaux."
+- id: "REQ-TF-06"
+  type: "exigence"
+  niveau: "2"
+  chemin: "03_requirements/req-tf-06.md"
+  status: "candidate"
+  title: "Les données souveraines ne quittent pas le territoire sauf dérogation."
+- id: "REQ-TF-07"
+  type: "exigence"
+  niveau: "2"
+  chemin: "03_requirements/req-tf-07.md"
+  status: "candidate"
+  title: "Les systèmes partenaires étrangers doivent démontrer leur conformité avant tout accès."
+- id: "REQ-TF-08"
+  type: "exigence"
+  niveau: "2"
+  chemin: "03_requirements/req-tf-08.md"
+  status: "candidate"
+  title: "Tout résumé patient échangé doit être conforme au profil HL7 FHIR IPS et contenir les sections minimales requises."
+
+# niveau 2 / architecture-contract (1)
+- id: "AC-CATALOGUE-SERVICES"
+  type: "architecture-contract"
+  niveau: "2"
+  chemin: "06_governance/architecture-contracts/ac-catalogue-services.md"
+  status: "candidate"
+  title: "Contrat d'architecture du catalogue de services"
+
+# niveau 2 / compliance-rule (1)
+- id: "COMP-HOMOLOGATION-INTEROPERABILITE"
+  type: "compliance-rule"
+  niveau: "2"
+  chemin: "06_governance/compliance/comp-homologation-interoperabilite.md"
+  status: "candidate"
+  title: "Homologation d'interopérabilité"
+
+# niveau 2 / evidence (1)
+- id: "EVID-TESTS-INTEROPERABILITE"
+  type: "evidence"
+  niveau: "2"
+  chemin: "06_governance/evidence/evid-tests-interoperabilite.md"
+  status: "candidate"
+  title: "Preuves de tests d'interopérabilité"
+
+# niveau 2 / reference-data (2)
+- id: "RD-DONNEES-ENVIRONNEMENTALES-CLIMAT"
+  type: "reference-data"
+  niveau: "2"
+  chemin: "02_architecture-elements/data/reference-data/rd-donnees-environnementales-climat.md"
+  status: "candidate"
+  title: "Données environnementales et de résilience climatique"
+- id: "RD-STRUCTURES-SERVICES"
+  type: "reference-data"
+  niveau: "2"
+  chemin: "02_architecture-elements/data/reference-data/rd-structures-services.md"
+  status: "candidate"
+  title: "Données de référence des structures et services"
+
+# niveau 2 / terminology (1)
+- id: "TERM-CODIFICATION-COMMUNE"
+  type: "terminology"
+  niveau: "2"
+  chemin: "02_architecture-elements/data/terminologies/term-codification-commune.md"
+  status: "candidate"
+  title: "Terminologie et codification communes"
+
 # niveau 3 / fondation (6)
 - id: "F-1"
   type: "fondation"
@@ -1450,7 +1689,7 @@
   status: "draft"
   title: "Observabilité"
 
-# niveau 3 / exigence (5)
+# niveau 3 / exigence (20)
 - id: "ENF-1"
   type: "exigence"
   niveau: "3"

@@ -8,7 +8,6 @@ status: candidate
 owner: DEPSI
 version: "0.5"
 family: qualite-conformite
-envelope: 01_cnisn/02_capacites/index.md
 maps_to: ["P-INT-01", "P-INT-02", "P-INT-03", "P-INT-04", "P-INT-05", "P-INT-06", "P-INT-07", "P-INT-08", "P-INT-09", "P-INT-23", "P-INT-24", "P-INT-25", "CAP-13", "CAP-14"]
 implements: []
 applies_to: []
@@ -48,4 +47,3 @@ Permettre de détecter et traiter les divergences entre systèmes, référentiel
 - [P-INT-23: Conformité fondée sur des preuves](../02_architecture-elements/motivation/principles/p-int-23.md)
 - [P-INT-24: Applicabilité déclarée](../02_architecture-elements/motivation/principles/p-int-24.md)
 - [P-INT-25: Réévaluation continue](../02_architecture-elements/motivation/principles/p-int-25.md)
-

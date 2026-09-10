@@ -8,7 +8,6 @@ status: candidate
 owner: DEPSI
 version: "0.5"
 family: referentiels
-envelope: 01_cnisn/02_capacites/index.md
 maps_to: ["P-INT-01", "P-INT-02", "P-INT-03", "P-INT-04", "P-INT-05", "P-INT-06", "CAP-13", "CAP-14"]
 implements: []
 applies_to: []
@@ -42,4 +41,3 @@ Permettre aux systèmes de partager des définitions et codifications cohérente
 - [P-INT-04: Historisation des références](../02_architecture-elements/motivation/principles/p-int-04.md)
 - [P-INT-05: Contrat explicite](../02_architecture-elements/motivation/principles/p-int-05.md)
 - [P-INT-06: Versionnement et compatibilité](../02_architecture-elements/motivation/principles/p-int-06.md)
-

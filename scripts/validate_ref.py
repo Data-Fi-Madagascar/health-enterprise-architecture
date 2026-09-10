@@ -48,12 +48,19 @@ DERIVED_ARCH_REPOSITORY_DOCS = {
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "solutions-landscape.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "adm-traceability.md"),
 }
+STATIC_ARCH_REPOSITORY_DOCS = {
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "cap-int-migration.md"),
+}
 EXCLUDED_GRAPH_DOCS = {
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "schema.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "togaf-mapping.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "archimate-mapping.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "cap-int-migration.yaml"),
-} | DERIVED_ARCH_REPOSITORY_DOCS
+} | DERIVED_ARCH_REPOSITORY_DOCS | STATIC_ARCH_REPOSITORY_DOCS
+EXTERNAL_RELATION_DIRS = [
+    "01_cnisn/05_standards",
+    "01_cnisn/06_decisions",
+]
 RELATION_KEYS = ["maps_to", "implements", "applies_to", "related",
                  "realized_by", "contributes_to", "performs", "accesses",
                  "accessed_by",
@@ -215,6 +222,21 @@ def iter_md(root, bases):
             for fn in filenames:
                 if fn.endswith(".md"):
                     yield os.path.join(dirpath, fn)
+
+
+def collect_external_relation_ids():
+    """IDs documentaires hors référentiel acceptés comme cibles de relation."""
+    ids = set()
+    for path in iter_md(REPO_ROOT, EXTERNAL_RELATION_DIRS):
+        text = open(path, encoding="utf-8").read()
+        fm, _body = parse_frontmatter(text)
+        if fm:
+            oid = parse_id(fm)
+            if oid:
+                ids.add(oid.upper())
+            title = fm_field(fm, "title") or ""
+            ids.update(re.findall(r"\b(?:STD|ADR)-\d{4}\b", title.upper()))
+    return ids
 
 
 # ---------------------------------------------------------------------------
@@ -380,6 +402,7 @@ def main():
     objects = {}          # id -> {file, out:set, in:set}
     id_to_file = {}
     all_links = []        # (file, target)
+    external_relation_ids = collect_external_relation_ids()
 
     for path in iter_md(REPO_ROOT, REL_DIRS):
         rel_path = os.path.relpath(path, REPO_ROOT)
@@ -432,7 +455,7 @@ def main():
         for t in o["out"]:
             if t in objects:
                 objects[t]["in"].add(oid)
-            else:
+            elif t not in external_relation_ids:
                 unresolved.append((o["file"], oid, t))
 
     # island detection

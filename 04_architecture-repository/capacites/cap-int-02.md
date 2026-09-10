@@ -8,7 +8,6 @@ status: candidate
 owner: DEPSI
 version: "0.5"
 family: referentiels
-envelope: 01_cnisn/02_capacites/index.md
 maps_to: ["P-INT-01", "P-INT-02", "P-INT-03", "P-INT-04", "P-INT-14", "P-INT-15", "CAP-09", "CAP-14"]
 implements: []
 applies_to: []
@@ -55,4 +54,3 @@ Cette capacité est distincte :
 
 - La résolution des professionnels alimente la **gestion de la paie** ([CAP-09: Gestion des ressources humaines en santé](../02_architecture-elements/strategy/capabilities/cap-09.md)) et les **habilitations** ([CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../02_architecture-elements/strategy/capabilities/cap-15.md)) ; elle ne gère pas la rémunération.
 - Échange financier associé : [PT-18: Échange de réclamations et paiements](../../03_ptisn/03_profils/pt-18-echange-reclamations-paiements.md).
-

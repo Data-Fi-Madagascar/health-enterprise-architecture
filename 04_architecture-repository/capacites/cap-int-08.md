@@ -8,7 +8,6 @@ status: candidate
 owner: DEPSI
 version: "0.5"
 family: confiance
-envelope: 01_cnisn/02_capacites/index.md
 maps_to: ["P-INT-14", "P-INT-15", "P-INT-16", "P-INT-17", "P-INT-18", "P-INT-19", "P-INT-20", "CAP-15"]
 implements: []
 applies_to: []
@@ -45,4 +44,3 @@ Fournir les mécanismes nécessaires à l’identification, l’authentification
 - [P-INT-18: Traçabilité différenciée](../02_architecture-elements/motivation/principles/p-int-18.md)
 - [P-INT-19: Neutralité technologique](../02_architecture-elements/motivation/principles/p-int-19.md)
 - [P-INT-20: Portabilité et réversibilité](../02_architecture-elements/motivation/principles/p-int-20.md)
-
