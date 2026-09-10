@@ -3,10 +3,11 @@
 # Source de vérité : frontmatter Markdown sous 04_architecture-repository/.
 # Champs : id, type, niveau, chemin, status, title.
 # Statuts : draft | active | stable | candidate | deprecated
-# Total : 338 objets
+# Total : 349 objets
 #
 # Comptes par type :
 # - acteur : 6
+# - architecture-partition : 11
 # - capabilite : 18
 # - capacite : 16
 # - chapitre : 21
@@ -33,7 +34,7 @@
 # - work-package : 7
 #
 # Comptes par status :
-# - draft : 174
+# - draft : 185
 # - active : 111
 # - stable : 29
 # - candidate : 24
@@ -1092,6 +1093,74 @@
   chemin: "02_architecture-elements/motivation/values/val-04.md"
   status: "active"
   title: "Système de santé planifié, coordonné et continuellement amélioré"
+
+# niveau 2 / architecture-partition (11)
+- id: "PART-ECHANGE-TRANSFRONTALIER"
+  type: "architecture-partition"
+  niveau: "2"
+  chemin: "01_partitions/externes/part-echange-transfrontalier.md"
+  status: "draft"
+  title: "Partition échange transfrontalier"
+- id: "PART-ONE-HEALTH"
+  type: "architecture-partition"
+  niveau: "2"
+  chemin: "01_partitions/sectorielles/part-one-health.md"
+  status: "draft"
+  title: "Partition One Health"
+- id: "PART-TRANSVERSE-ANALYTICS-PILOTAGE"
+  type: "architecture-partition"
+  niveau: "2"
+  chemin: "01_partitions/transverses/part-transverse-analytics-pilotage.md"
+  status: "draft"
+  title: "Partition transverse - Analytics et pilotage"
+- id: "PART-TRANSVERSE-DONNEES-REFERENTIELLES"
+  type: "architecture-partition"
+  niveau: "2"
+  chemin: "01_partitions/transverses/part-transverse-donnees-referentielles.md"
+  status: "draft"
+  title: "Partition transverse - Données référentielles"
+- id: "PART-TRANSVERSE-IDENTITE"
+  type: "architecture-partition"
+  niveau: "2"
+  chemin: "01_partitions/transverses/part-transverse-identite.md"
+  status: "draft"
+  title: "Partition transverse - Identité"
+- id: "PART-TRANSVERSE-INTEROPERABILITE"
+  type: "architecture-partition"
+  niveau: "2"
+  chemin: "01_partitions/transverses/part-transverse-interoperabilite.md"
+  status: "draft"
+  title: "Partition transverse - Interopérabilité"
+- id: "PART-TRANSVERSE-SECURITE-CONFIANCE"
+  type: "architecture-partition"
+  niveau: "2"
+  chemin: "01_partitions/transverses/part-transverse-securite-confiance.md"
+  status: "draft"
+  title: "Partition transverse - Sécurité et confiance"
+- id: "PART-VS-01"
+  type: "architecture-partition"
+  niveau: "2"
+  chemin: "01_partitions/value-streams/part-vs-01.md"
+  status: "draft"
+  title: "Partition VS-01"
+- id: "PART-VS-02"
+  type: "architecture-partition"
+  niveau: "2"
+  chemin: "01_partitions/value-streams/part-vs-02.md"
+  status: "draft"
+  title: "Partition VS-02"
+- id: "PART-VS-03"
+  type: "architecture-partition"
+  niveau: "2"
+  chemin: "01_partitions/value-streams/part-vs-03.md"
+  status: "draft"
+  title: "Partition VS-03"
+- id: "PART-VS-04"
+  type: "architecture-partition"
+  niveau: "2"
+  chemin: "01_partitions/value-streams/part-vs-04.md"
+  status: "draft"
+  title: "Partition VS-04"
 
 # niveau 2 / principe (74)
 - id: "P-INT-01"

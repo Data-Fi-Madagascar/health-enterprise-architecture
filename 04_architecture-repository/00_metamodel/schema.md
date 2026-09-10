@@ -27,6 +27,7 @@ Ce document définit le modèle d’objets du référentiel. Il est la source de
 | Type | Statut | Répertoire | Préfixe d’id | Sources |
 |------|--------|------------|--------------|---------|
 | `architecture-partition` | actif | `04_architecture-repository/01_partitions/<famille>/` | `part-` | partitions TOGAF |
+| `repository-view` | non indexé | `04_architecture-repository/01_partitions/index.md` et `04_architecture-repository/08_views/togaf/` | `view-` | vues dérivées TOGAF |
 | `stakeholder` | actif | `04_architecture-repository/02_architecture-elements/motivation/stakeholders/` | `pp-` | parties prenantes CAESN |
 | `business-value` | actif | `04_architecture-repository/02_architecture-elements/motivation/values/` | `val-` | valeurs CAESN |
 | `principe` | actif | `04_architecture-repository/02_architecture-elements/motivation/principles/` | `p-`, `p-int-`, `pa-`, `pd-` | principes CAESN et CNISN |
@@ -103,7 +104,7 @@ tags: ["cnisn", "autorite", "donnees-de-reference"]
 | `status` | oui | `draft`, `active`, `stable`, `candidate` ou `deprecated` |
 | `owner` | oui | Responsable / entité de gouvernance |
 | `version` | non | Version héritée du document source |
-| `envelope` | oui | Chemin du document d’origine ou du document enveloppe publié |
+| `envelope` | conditionnel | Chemin du document d’origine ou du document enveloppe publié. Obligatoire pour les objets transclus dans les documents publiés ; absent pour les partitions TOGAF autonomes et les vues dérivées non indexées |
 | `family` | non | Famille de réponse (type `capacite` uniquement) : `referentiels`, `echange`, `analytique`, `confiance`, `qualite-conformite` |
 | `maps_to` | non | Liens typés : correspondance vers un autre objet du référentiel (ids) |
 | `implements` | non | Liens typés : chapitres / objets mis en œuvre |

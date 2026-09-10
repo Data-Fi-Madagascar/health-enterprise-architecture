@@ -19,12 +19,22 @@ ARCH_REPOSITORY_DIR = "04_architecture-repository"
 ARCH_REPOSITORY_ROOT = REPO_ROOT / ARCH_REPOSITORY_DIR
 INDEX_PATH = ARCH_REPOSITORY_ROOT / "_index.yaml"
 CONTROLLED_STATUSES = ("draft", "active", "stable", "candidate", "deprecated")
+DERIVED_ARCH_REPOSITORY_DOCS = {
+    "01_partitions/index.md",
+    "08_views/togaf/architecture-landscape.md",
+    "08_views/togaf/standards-information-base.md",
+    "08_views/togaf/reference-library.md",
+    "08_views/togaf/governance-log.md",
+    "08_views/togaf/requirements-repository.md",
+    "08_views/togaf/solutions-landscape.md",
+    "08_views/togaf/adm-traceability.md",
+}
 EXCLUDED_ARCH_REPOSITORY_DOCS = {
     "00_metamodel/schema.md",
     "00_metamodel/togaf-mapping.md",
     "00_metamodel/archimate-mapping.md",
     "00_metamodel/cap-int-migration.yaml",
-}
+} | DERIVED_ARCH_REPOSITORY_DOCS
 TYPE_ORDER = [
     "architecture-partition",
     "flux-valeur",

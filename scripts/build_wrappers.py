@@ -29,6 +29,7 @@ Usage :
 """
 
 import fnmatch
+import glob
 import os
 import re
 import sys
@@ -36,12 +37,23 @@ import sys
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ARCH_REPOSITORY_DIR = "04_architecture-repository"
 ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
+DERIVED_ARCH_REPOSITORY_DOCS = {
+    os.path.join(ARCH_REPOSITORY_DIR, "01_partitions", "index.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "architecture-landscape.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "standards-information-base.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "reference-library.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "governance-log.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "requirements-repository.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "solutions-landscape.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "adm-traceability.md"),
+}
 EXCLUDED_ARCH_REPOSITORY_DOCS = {
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "schema.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "togaf-mapping.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "archimate-mapping.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "cap-int-migration.yaml"),
-}
+} | DERIVED_ARCH_REPOSITORY_DOCS
+DERIVED_ENVELOPES = sorted(DERIVED_ARCH_REPOSITORY_DOCS)
 
 BANNER = "<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->"
 BEGIN_RE = re.compile(r"^<!--\s*BEGIN:GENERATED\s*(.*?)\s*-->$")
@@ -241,14 +253,58 @@ def render_transclusion(obj, mode, path_by_id):
         return "\n\n".join(parts).replace("\n\n\n", "\n\n")
 
 
-def render_table(objects, source_glob, path_by_id, to_dir):
+def markdown_table_entry(rel):
+    path = os.path.join(REPO_ROOT, rel)
+    with open(path, encoding="utf-8") as fh:
+        text = fh.read()
+    try:
+        _end, fields = parse_frontmatter(text)
+    except FrontmatterError as exc:
+        raise SystemExit("frontmatter invalide %s : %s" % (rel, exc))
+    oid = fields.get("id") or os.path.splitext(os.path.basename(rel))[0]
+    return {
+        "rel": rel,
+        "id": oid,
+        "title": fields.get("title", "") or oid,
+        "status": fields.get("status", ""),
+        "envelope": fields.get("envelope", ""),
+        "maturity_condition": fields.get("maturity_condition", "") or "",
+        "maps_to": fields.get("maps_to", []) or [],
+        "implements": fields.get("implements", []) or [],
+        "applies_to": fields.get("applies_to", []) or [],
+        "uses": fields.get("uses", []) or [],
+        "body": "",
+    }
+
+
+def table_entries(objects, source_glob):
     selected = []
+    seen = set()
     for rel, obj in objects.items():
         if any(fnmatch.fnmatch(rel, pattern) for pattern in source_glob):
             selected.append(obj)
-    selected.sort(key=lambda o: natural_key(o["id"]))
+            seen.add(rel)
 
-    code_map = {o["id"]: o for o in selected}
+    for pattern in source_glob:
+        abs_pattern = os.path.join(REPO_ROOT, pattern)
+        for path in glob.glob(abs_pattern, recursive=True):
+            if not os.path.isfile(path) or not path.endswith(".md"):
+                continue
+            rel = os.path.relpath(path, REPO_ROOT)
+            if rel in seen:
+                continue
+            # Les fichiers Markdown du dépôt d'architecture non chargés comme
+            # objets sont des enveloppes dérivées ou des métamodèles.
+            if rel.startswith(ARCH_REPOSITORY_DIR + os.sep):
+                continue
+            selected.append(markdown_table_entry(rel))
+            seen.add(rel)
+
+    selected.sort(key=lambda o: natural_key(o["id"]))
+    return selected
+
+
+def render_table(selected, path_by_id, to_dir):
     lines = ["| Code | Titre canonique | Rattachement | Statut | Fiche |",
              "|---|---|---|---|---|"]
     for obj in selected:
@@ -342,13 +398,11 @@ def generate_file(objects, path_by_id, rel):
         globs = attrs["source"]
 
         if attrs["mode"] == "table":
-            selected = [obj for rel_obj, obj in objects.items()
-                        if any(fnmatch.fnmatch(rel_obj, g) for g in globs)]
-            selected.sort(key=lambda o: natural_key(o["id"]))
+            selected = table_entries(objects, globs)
             if not selected:
                 raise SystemExit("bloc tableau vide (%s) dans %s" % (", ".join(globs), rel))
             to_dir = os.path.dirname(abs_path)
-            content = render_table(objects, globs, path_by_id, to_dir)
+            content = render_table(selected, path_by_id, to_dir)
             body = content
         elif attrs["mode"] == "maturity":
             if not globs:
@@ -407,20 +461,25 @@ def main():
     objects = load_objects()
     path_by_id = id_to_path(objects)
 
-    sources = {obj["envelope"] for obj in objects.values()}
+    sources = {obj["envelope"] for obj in objects.values() if obj["envelope"]}
     for source in sorted(sources):
         if not os.path.exists(os.path.join(REPO_ROOT, source)):
             raise SystemExit("objet avec envelope: inexistante -> %s" % source)
 
     targets = set(sources)
-    for rel in list(targets) + ["03_ptisn/03_profils/pt-00-index.md",
-                                "01_cnisn/08_annexes/a-matrice-principes-capacites.md",
-                                "02_artsn/08_annexes/a-table-de-maturite.md"]:
+    extra_targets = ["03_ptisn/03_profils/pt-00-index.md",
+                     "01_cnisn/08_annexes/a-matrice-principes-capacites.md",
+                     "02_artsn/08_annexes/a-table-de-maturite.md"] + DERIVED_ENVELOPES
+    for rel in list(targets) + extra_targets:
         path = os.path.join(REPO_ROOT, rel)
-        if os.path.exists(path):
-            with open(path, encoding="utf-8") as fh:
-                if "BEGIN:GENERATED" not in fh.read():
-                    raise SystemExit("enveloppe sans marqueurs %s : annoter le fichier" % rel)
+        if not os.path.exists(path):
+            if rel in DERIVED_ENVELOPES:
+                continue
+            targets.add(rel)
+            continue
+        with open(path, encoding="utf-8") as fh:
+            if "BEGIN:GENERATED" not in fh.read():
+                raise SystemExit("enveloppe sans marqueurs %s : annoter le fichier" % rel)
         targets.add(rel)
 
     if only:

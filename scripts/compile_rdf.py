@@ -24,12 +24,22 @@ import sys
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ARCH_REPOSITORY_DIR = "04_architecture-repository"
 ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
+DERIVED_ARCH_REPOSITORY_DOCS = {
+    os.path.join(ARCH_REPOSITORY_DIR, "01_partitions", "index.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "architecture-landscape.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "standards-information-base.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "reference-library.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "governance-log.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "requirements-repository.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "solutions-landscape.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "adm-traceability.md"),
+}
 EXCLUDED_ARCH_REPOSITORY_DOCS = {
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "schema.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "togaf-mapping.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "archimate-mapping.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "cap-int-migration.yaml"),
-}
+} | DERIVED_ARCH_REPOSITORY_DOCS
 
 # Namespace HEA
 HEA_NS = "https://healmadagascar.mg/ontologie/hea#"
