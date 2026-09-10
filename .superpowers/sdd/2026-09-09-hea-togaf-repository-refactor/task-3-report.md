@@ -5,7 +5,7 @@
 Task 3 a renommé physiquement la racine active `referentiel/` en `04_architecture-repository/` sans placement TOGAF interne. Les anciens sous-dossiers sont conservés sous la nouvelle racine pour laisser le Task 4 gérer le reclassement.
 
 Commit attendu: `refactor: rename architecture repository root`.
-Hash final: attribué par Git après inclusion de ce rapport dans le commit; voir le handoff final.
+Hash final: `433306e8f47e304154c1aaf4a4442915b0dcd3eb`.
 
 ## Chemins déplacés
 
@@ -15,7 +15,8 @@ Hash final: attribué par Git après inclusion de ce rapport dans le commit; voi
 ## Chemins modifiés
 
 - `scripts/`: constantes `ARCH_REPOSITORY_DIR` basculées vers `04_architecture-repository`; messages de génération et métadonnées de source mis à jour.
-- `README.md`, `AGENTS.md`, `quick-start-guides.md`, `Makefile`, `ontologie/hea.ttl`: chemins actifs ou messages d'outillage mis à jour.
+- `README.md`, `quick-start-guides.md`, `Makefile`, `ontologie/hea.ttl`: chemins actifs ou messages d'outillage mis à jour.
+- `AGENTS.md`: vérifié, aucune modification requise dans le commit Task 3.
 - `00_caesn/`, `01_cnisn/`, `02_artsn/`, `03_ptisn/`: liens Markdown actifs et marqueurs `BEGIN:GENERATED source=` repointés vers `04_architecture-repository/`.
 - `03_ptisn/schemas/openapi/`: métadonnées générées `x-hea-source` et `x-hea-file` repointées.
 - `mintlify-site/`: artefact dérivé suivi régénéré pour satisfaire `make check`.
@@ -42,5 +43,10 @@ Restes conservés hors périmètre actif: documents historiques et plans sous `d
 - `.gitignore` est une modification préexistante et ne doit pas être stagée ni commitée.
 - `graphify-out/` n'est pas inclus.
 - `.obsidian/` n'est pas inclus.
+
+## Fix round 1
+
+- P2 corrigé: le hash final du commit Task 3 est renseigné explicitement.
+- P3 corrigé: `AGENTS.md` est retiré de la liste des fichiers modifiés et mentionné comme vérifié sans modification requise.
 
 DONE
