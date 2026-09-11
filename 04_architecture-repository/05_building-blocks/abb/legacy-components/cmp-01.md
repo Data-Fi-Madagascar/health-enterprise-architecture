@@ -9,7 +9,7 @@ status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
-maps_to: ["CAP-INT-07", "CAP-INT-11"]
+maps_to: ["ABB-EXPOSITION-DONNEES-ANALYTIQUES", "ABB-RECONCILIATION-DONNEES"]
 implements: ["ART-6"]
 applies_to: ["PRC-10", "PRC-11", "PRC-12"]
 related: ["ENF-5", "CAP-13", "CAP-16", "VS-04"]
@@ -21,6 +21,6 @@ tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-01", "couche-6"]
 
 **Discipline de mise en œuvre.** Il constitue la seule source de vérité décisionnelle pour l'État ; tout indicateur officiel y transite. Il garantit l'unicité des métriques et la traçabilité des calculs.
 
-- **Rattachement** : [ART-6](../../../04_patterns/artsn-rules/art-6.md) (projections analytiques), [CAP-INT-07: Accès et exposition des données analytiques](../../../capacites/cap-int-07.md), [CAP-INT-11: Qualité et réconciliation](../../../capacites/cap-int-11.md).
+- **Rattachement** : [ART-6](../../../04_patterns/artsn-rules/art-6.md) (projections analytiques), [ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../abb-exposition-donnees-analytiques.md), [ABB-RECONCILIATION-DONNEES: Qualité et réconciliation](../abb-reconciliation-donnees.md).
 - **Processus soutenus** : [PRC-10: Planification et allocation des ressources](../../../02_architecture-elements/business/processes/prc-10.md) (planification), [PRC-11: Suivi et pilotage de la performance](../../../02_architecture-elements/business/processes/prc-11.md) (pilotage performance), [PRC-12: Redevabilité et amélioration continue](../../../02_architecture-elements/business/processes/prc-12.md) (redevabilité).
 - **Statut : Stable.**

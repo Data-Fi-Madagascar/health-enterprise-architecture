@@ -9,7 +9,7 @@ status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
-maps_to: ["CAP-INT-01", "CAP-INT-03"]
+maps_to: ["ABB-IDENTITE-BENEFICIAIRE", "ABB-ECHANGE-MEDIATION"]
 implements: ["ART-1", "ART-2", "F-3"]
 applies_to: ["PRC-13"]
 related: ["ENF-1", "ENF-3", "CAP-13", "CAP-14", "CAP-15", "VS-01", "VS-02", "VS-03", "VS-04"]
@@ -21,5 +21,5 @@ tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-06", "couche-4"]
 
 **Discipline de mise en œuvre.** Il forme la bordure de la plateforme ; tout flux entrant ou sortant le traverse. Il garantit l'éradication des silos (F.3) et la conformité aux contrats ([ENF-1: Résilience à l'instabilité réseau](../../../03_requirements/enf-1.md), [ENF-3: Unicité de l'identité et résilience face à la fragmentation applicative](../../../03_requirements/enf-3.md)).
 
-- **Rattachement** : [ART-1](../../../04_patterns/artsn-rules/art-1.md) (ingestion), [ART-2](../../../04_patterns/artsn-rules/art-2.md) (médiation), [F.3](../../../04_patterns/foundations/f-3.md) (schémas), [CAP-INT-01: Résolution d’identité du bénéficiaire](../../../capacites/cap-int-01.md), [CAP-INT-03: Échange et médiation inter-systèmes](../../../capacites/cap-int-03.md).
+- **Rattachement** : [ART-1](../../../04_patterns/artsn-rules/art-1.md) (ingestion), [ART-2](../../../04_patterns/artsn-rules/art-2.md) (médiation), [F.3](../../../04_patterns/foundations/f-3.md) (schémas), [ABB-IDENTITE-BENEFICIAIRE: Résolution d’identité du bénéficiaire](../abb-identite-beneficiaire.md), [ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes](../abb-echange-mediation.md).
 - **Statut : Stable.**

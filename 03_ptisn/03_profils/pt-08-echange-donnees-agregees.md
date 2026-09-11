@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-08"]
-related: ["CAP-INT-03", "CAP-INT-07", "ART-1", "ART-2", "ART-5", "ART-6", "CMP-03", "CMP-06"]
+related: ["ABB-ECHANGE-MEDIATION", "ABB-EXPOSITION-DONNEES-ANALYTIQUES", "ART-1", "ART-2", "ART-5", "ART-6", "CMP-03", "CMP-06"]
 ---
 
 # Profil technique national
@@ -21,10 +21,10 @@ Le **profil PT-08 — Échange de données agrégées** définit le service d’
 
 Périmètre : rapports périodiques d’activité et indicateurs de programme. Hors périmètre : les données individuelles (voir PT-04, PT-09) et la normalisation sémantique (voir PT-07).
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-- [CAP-INT-03: Échange et médiation inter-systèmes](../../04_architecture-repository/capacites/cap-int-03.md)
-- contribution à [CAP-INT-07: Accès et exposition des données analytiques](../../04_architecture-repository/capacites/cap-int-07.md)
+- [ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md)
+- contribution à [ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md)
 
 ## 3. Chapitres ART applicables
 
@@ -38,7 +38,7 @@ Périmètre : rapports périodiques d’activité et indicateurs de programme. H
 - **Déclarant (Aggregate Data Reporter)** — établissement ou système de collecte soumettant un rapport périodique.
 - **Récepteur de données agrégées (Aggregate Data Receiver)** — entrepôt national recevant et accusant réception des rapports.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-03](../../04_architecture-repository/capacites/cap-int-03.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -49,7 +49,7 @@ Périmètre : rapports périodiques d’activité et indicateurs de programme. H
 
 R = requis ; O = optionnel.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-03](../../04_architecture-repository/capacites/cap-int-03.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
 ## 6. Content Modules
 
 - **HL7 FHIR MeasureReport** : rapport d’indicateurs agrégés.

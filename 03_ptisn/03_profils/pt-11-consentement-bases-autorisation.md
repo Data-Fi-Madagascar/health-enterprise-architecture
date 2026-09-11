@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-11"]
-related: ["CAP-INT-09", "ART-0", "ART-4B", "ART-7", "ART-11", "CMP-12"]
+related: ["ABB-GESTION-CONSENTEMENT", "ART-0", "ART-4B", "ART-7", "ART-11", "CMP-12"]
 ---
 
 # Profil technique national
@@ -21,9 +21,9 @@ Le **profil PT-11 — Consentement et bases d’autorisation** définit le servi
 
 Périmètre : enregistrement, consultation, retrait et vérification du consentement, gestion des finalités et des politiques. Hors périmètre : l’authentification (PT-10) et la résolution d’identité (PT-04).
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-[CAP-INT-09: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/capacites/cap-int-09.md)
+[ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md)
 
 ## 3. Chapitres ART applicables
 
@@ -38,7 +38,7 @@ Périmètre : enregistrement, consultation, retrait et vérification du consente
 - **Registre de consentement (Consent Registry)** — enregistre, conserve et retire les consentements et politiques.
 - **Vérificateur d’accès (Access Verifier)** — interroge le registre au moment de l’accès pour décider l’autorisation.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-09](../../04_architecture-repository/capacites/cap-int-09.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-GESTION-CONSENTEMENT](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -50,7 +50,7 @@ Périmètre : enregistrement, consultation, retrait et vérification du consente
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-09](../../04_architecture-repository/capacites/cap-int-09.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-GESTION-CONSENTEMENT](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md).
 ## 6. Content Modules
 
 - **HL7 FHIR `Consent`** : finalités, destinataires, périodes, politique, base légale.

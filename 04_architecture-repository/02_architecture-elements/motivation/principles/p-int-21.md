@@ -11,7 +11,7 @@ envelope: 01_cnisn/01_principes/index.md
 maps_to: ["CAP-16"]
 implements: []
 applies_to: []
-related: ["CAP-INT-03", "CAP-INT-07", "CAP-INT-12"]
+related: ["ABB-ECHANGE-MEDIATION", "ABB-EXPOSITION-DONNEES-ANALYTIQUES", "COMP-HOMOLOGATION-INTEROPERABILITE"]
 tags: ["cnisn", "niveau-2", "principe"]
 ---
 

@@ -9,7 +9,7 @@ status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
-maps_to: ["CAP-INT-07"]
+maps_to: ["ABB-EXPOSITION-DONNEES-ANALYTIQUES"]
 implements: ["ART-5", "ART-0"]
 applies_to: ["PRC-05", "PRC-11", "PRC-13"]
 related: ["ENF-2", "CAP-05", "CAP-06", "VS-02", "VS-04"]
@@ -22,6 +22,6 @@ realized_by: ["WP-07"]
 
 **Discipline de mise en œuvre.** Il est le point de convergence obligatoire de toute riposte coordonnée ; sans lui, les secteurs agissent en silos et la riposte reste fragmentée.
 
-- **Rattachement** : [ART-5](../../../04_patterns/artsn-rules/art-5.md) (routeur alertes), [ART-0](../../../04_patterns/artsn-rules/art-0.md) (accords partage), [CAP-INT-07: Accès et exposition des données analytiques](../../../capacites/cap-int-07.md).
+- **Rattachement** : [ART-5](../../../04_patterns/artsn-rules/art-5.md) (routeur alertes), [ART-0](../../../04_patterns/artsn-rules/art-0.md) (accords partage), [ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../abb-exposition-donnees-analytiques.md).
 - **Processus soutenus** : [PRC-05: Alerte, investigation et riposte](../../../02_architecture-elements/business/processes/prc-05.md) (alerte/investigation/riposte), [PRC-11: Suivi et pilotage de la performance](../../../02_architecture-elements/business/processes/prc-11.md) (pilotage performance).
 - **Statut : Stable.**

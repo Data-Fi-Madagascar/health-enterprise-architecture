@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-08-19
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-16"]
-related: ["CAP-INT-03", "ART-8A", "ART-7", "CMP-07", "CMP-06"]
+related: ["ABB-ECHANGE-MEDIATION", "ART-8A", "ART-7", "CMP-07", "CMP-06"]
 ---
 
 # Orchestration de processus bornés
@@ -21,9 +21,9 @@ Le **profil PT-16 — Orchestration de processus bornés** définit le service d
 
 Périmètre : orchestration de processus métier bornés au secteur santé. Hors périmètre : la médiation pure (voir PT-02) et l’échange interinstitutionnel (voir PT-01).
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-[CAP-INT-03: Échange et médiation inter-systèmes](../../04_architecture-repository/capacites/cap-int-03.md)
+[ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md)
 
 ## 3. Chapitres ART applicables
 
@@ -37,7 +37,7 @@ Périmètre : orchestration de processus métier bornés au secteur santé. Hors
 - **Médiateur sectoriel (PT-02)** — assure le routage et la transformation des messages entre participants.
 - **Services participants (Service A/B/C)** — systèmes métier sollicités par le workflow.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-03](../../04_architecture-repository/capacites/cap-int-03.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -49,7 +49,7 @@ Périmètre : orchestration de processus métier bornés au secteur santé. Hors
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-03](../../04_architecture-repository/capacites/cap-int-03.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
 ## 6. Content Modules
 
 - **HL7 FHIR** : ressources et événements échangés entre participants.

@@ -9,7 +9,7 @@ status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
-maps_to: ["CAP-INT-09"]
+maps_to: ["ABB-GESTION-CONSENTEMENT"]
 implements: ["ART-4"]
 applies_to: ["PRC-04", "PRC-05"]
 related: ["ENF-3", "CAP-09", "VS-02"]
@@ -21,6 +21,6 @@ tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-08", "couche-4"]
 
 **Discipline de mise en œuvre.** Il constitue la source de vérité clinique pour les applications opérationnelles. Toute donnée clinique créée ou modifiée dans les applications de point de service y est persistée.
 
-- **Rattachement** : [ART-4](../../../04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [CAP-INT-09: Gestion des consentements et bases d’autorisation](../../../capacites/cap-int-09.md).
+- **Rattachement** : [ART-4](../../../04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../abb-gestion-consentement.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../../02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../../02_architecture-elements/business/processes/prc-05.md) (pharmacie).
 - **Statut : Stable.**

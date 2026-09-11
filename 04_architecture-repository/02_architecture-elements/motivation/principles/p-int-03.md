@@ -11,7 +11,7 @@ envelope: 01_cnisn/01_principes/index.md
 maps_to: ["CAP-14"]
 implements: []
 applies_to: []
-related: ["CAP-INT-01", "CAP-INT-02", "CAP-INT-04", "CAP-INT-05", "CAP-INT-11"]
+related: ["ABB-IDENTITE-BENEFICIAIRE", "ABB-REGISTRE-PROFESSIONNELS", "ABB-REFERENTIEL-STRUCTURES-SERVICES", "ABB-SERVICE-TERMINOLOGIE", "ABB-RECONCILIATION-DONNEES"]
 tags: ["cnisn", "niveau-2", "principe"]
 ---
 

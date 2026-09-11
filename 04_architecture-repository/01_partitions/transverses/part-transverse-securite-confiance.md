@@ -7,6 +7,7 @@ title: Partition transverse - Sécurité et confiance
 status: draft
 owner: DEPSI
 version: "0.1"
+legacy_id: ["CAP-INT-08", "CAP-INT-09", "CAP-INT-10"]
 partition_kind: transverse
 togaf_repository_section: architecture-landscape
 togaf_adm_phase: D

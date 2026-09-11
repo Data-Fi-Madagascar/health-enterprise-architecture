@@ -7,6 +7,7 @@ title: Partition transverse - Données référentielles
 status: draft
 owner: DEPSI
 version: "0.1"
+legacy_id: ["CAP-INT-04", "CAP-INT-05"]
 partition_kind: transverse
 togaf_repository_section: architecture-landscape
 togaf_adm_phase: C

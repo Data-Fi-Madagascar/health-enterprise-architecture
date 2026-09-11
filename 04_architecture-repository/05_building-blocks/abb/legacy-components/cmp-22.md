@@ -10,7 +10,7 @@ owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
 implements: ["ENF-1", "F-1"]
-maps_to: ["CAP-INT-08"]
+maps_to: ["ABB-CONFIANCE-AUTORISATION"]
 applies_to: ["PRC-01", "PRC-07", "PRC-08"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-22", "couche-2"]
 related: ["VS-01", "VS-03"]

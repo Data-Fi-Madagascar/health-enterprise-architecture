@@ -8,8 +8,9 @@ status: draft
 owner: Direction du Numérique en Santé
 version: "0.1"
 envelope: 02_artsn/09_feuille-de-route/pl-03-plateau-3-intelligence-ouverture.md
-realizes: ["CAP-03", "CAP-INT-08", "CAP-INT-10"]
-related: ["CAP-03", "CAP-INT-08", "CAP-INT-10", "SRV-06", "PT-14", "WP-04", "WP-05", "WP-06", "WP-07"]
+realizes: ["CAP-03", "ABB-CONFIANCE-AUTORISATION", "ABB-AUDIT-PROVENANCE"]
+maps_to: ["CAP-15", "CAP-03", "CAP-08", "CAP-12", "CAP-13"]
+related: ["CAP-03", "ABB-CONFIANCE-AUTORISATION", "ABB-AUDIT-PROVENANCE", "SRV-06", "PT-14", "WP-04", "WP-05", "WP-06", "WP-07"]
 tags: ["artsn", "plateau", "pl-03", "feuille-de-route"]
 ---
 
@@ -21,7 +22,7 @@ tags: ["artsn", "plateau", "pl-03", "feuille-de-route"]
 
 Le plateau 3 est l'état cible abouti : entrepôt analytique, tableaux de bord, extension nationale, interopérabilité transfrontalière (GDHCN) et coordination One Health. Le système devient intelligent, ouvert et intersectoriel.
 
-Il [couvre la capacité « Pilotage et performance »](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-03.md), la [capacité « Interopérabilité et échanges »](../../04_architecture-repository/capacites/cap-int-08.md) et la [capacité « Chaîne logistique et traçabilité »](../../04_architecture-repository/capacites/cap-int-10.md). Les [paquets L4 à L7](../../04_architecture-repository/07_migration/work-packages/wp-04.md) le réalisent.
+Il [couvre la capacité « Pilotage et performance »](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-03.md), la [capacité « Interopérabilité et échanges »](../../04_architecture-repository/05_building-blocks/abb/abb-confiance-autorisation.md) et la [capacité « Chaîne logistique et traçabilité »](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md). Les [paquets L4 à L7](../../04_architecture-repository/07_migration/work-packages/wp-04.md) le réalisent.
 
 ## État cible (borne temporelle)
 
@@ -29,7 +30,7 @@ Atteint à l'issue des lots qui y contribuent — il s'agit d'un état cible int
 
 ## Capacités couvertes
 
-Ce plateau couvre les éléments suivants : [CAP-03](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-03.md), [CAP-INT-08](../../04_architecture-repository/capacites/cap-int-08.md), [CAP-INT-10](../../04_architecture-repository/capacites/cap-int-10.md).
+Ce plateau couvre les éléments suivants : [CAP-03](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-03.md), [ABB-CONFIANCE-AUTORISATION](../../04_architecture-repository/05_building-blocks/abb/abb-confiance-autorisation.md), [ABB-AUDIT-PROVENANCE](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md).
 
 ## Précédence
 

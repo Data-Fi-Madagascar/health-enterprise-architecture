@@ -326,7 +326,7 @@ Taux de létalité, durée de l'épisode épidémique, nombre de revues après a
 
 Garantir, dans le respect de la souveraineté et des accords de confiance, les échanges de données et de services de santé au-delà des frontières : résumé international du patient (IPS), sections normalisées, confiance internationale, résolution d'identité pour patients transfrontaliers et coordination épidémique régionale.
 
-Ce processus opérationnalise l'objet métier [BO-07 : Interopérabilité transfrontalière](../../04_architecture-repository/02_architecture-elements/business/business-objects/bo-07.md) et s'appuie sur la capacité [CAP-INT-13 : Interopérabilité transfrontalière](../../04_architecture-repository/capacites/cap-int-13.md), le chapitre [ART-7 : Sécurité, contrôle d'accès et résidence de la donnée](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md) et le profil [PT-14 : Interopérabilité transfrontalière](../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md).
+Ce processus opérationnalise l'objet métier [BO-07 : Interopérabilité transfrontalière](../../04_architecture-repository/02_architecture-elements/business/business-objects/bo-07.md) et s'appuie sur la capacité [PART-ECHANGE-TRANSFRONTALIER : Interopérabilité transfrontalière](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md), le chapitre [ART-7 : Sécurité, contrôle d'accès et résidence de la donnée](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md) et le profil [PT-14 : Interopérabilité transfrontalière](../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md).
 
 #### Étapes clés
 

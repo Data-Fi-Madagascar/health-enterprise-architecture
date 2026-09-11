@@ -8,9 +8,10 @@ status: draft
 owner: Direction du Numérique en Santé
 version: "0.1"
 envelope: 00_caesn/06_portfolio/wp-06-lot-l6-interop-rabilit-transfrontali-re.md
-realizes: ["SRV-04", "CAP-INT-08", "ART-9"]
+realizes: ["SRV-04", "ABB-CONFIANCE-AUTORISATION", "ART-9"]
+maps_to: ["CAP-15"]
 contributes_to: ["PL-03"]
-related: ["PT-14", "SRV-04", "CAP-INT-08", "ART-9", "PL-03"]
+related: ["PT-14", "SRV-04", "ABB-CONFIANCE-AUTORISATION", "ART-9", "PL-03"]
 tags: ["artsn", "work-package", "wp-06", "lots"]
 ---
 
@@ -22,7 +23,7 @@ tags: ["artsn", "work-package", "wp-06", "lots"]
 
 Le lot L6 connecte la plateforme nationale aux échanges internationaux : adhésion GDHCN, point de confiance nationale, accords SADC/UA, service IPS (résumé patient) et premiers flux OMS AFRO.
 
-Ce paquet de travail [réalise le service d'échange](../../04_architecture-repository/05_building-blocks/abb/legacy-services/srv-04.md), la [capacité « Interopérabilité et échanges »](../../04_architecture-repository/capacites/cap-int-08.md) et le [chapitre ART-9 (échange)](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md), et déploie le profil [PT-14](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-14.md). Il [contribue au plateau 3](../../04_architecture-repository/07_migration/plateaux/pl-03.md).
+Ce paquet de travail [réalise le service d'échange](../../04_architecture-repository/05_building-blocks/abb/legacy-services/srv-04.md), la [capacité « Interopérabilité et échanges »](../../04_architecture-repository/05_building-blocks/abb/abb-confiance-autorisation.md) et le [chapitre ART-9 (échange)](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md), et déploie le profil [PT-14](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-14.md). Il [contribue au plateau 3](../../04_architecture-repository/07_migration/plateaux/pl-03.md).
 
 ## Unité de temps
 
@@ -34,7 +35,7 @@ Il produit les livrables suivants : adhésion GDHCN, premier flux transfrontalie
 
 ## Objectifs
 
-Il réalise les éléments de l'architecture cible : [SRV-04](../../04_architecture-repository/05_building-blocks/abb/legacy-services/srv-04.md), [CAP-INT-08](../../04_architecture-repository/capacites/cap-int-08.md), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md).
+Il réalise les éléments de l'architecture cible : [SRV-04](../../04_architecture-repository/05_building-blocks/abb/legacy-services/srv-04.md), [ABB-CONFIANCE-AUTORISATION](../../04_architecture-repository/05_building-blocks/abb/abb-confiance-autorisation.md), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md).
 
 ## Ressources assignées
 

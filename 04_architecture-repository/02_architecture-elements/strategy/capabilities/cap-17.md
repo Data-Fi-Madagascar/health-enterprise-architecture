@@ -9,7 +9,7 @@ status: stable
 owner: Responsables de capabilités habilitantes
 version: "0.1.0"
 envelope: 00_caesn/03_capabilities/enabling.md
-maps_to: ["CAP-INT-01", "CAP-INT-09"]
+maps_to: ["ABB-IDENTITE-BENEFICIAIRE", "ABB-GESTION-CONSENTEMENT"]
 implements: []
 applies_to: ["VS-01", "VS-03"]
 related: ["VS-01", "VS-02", "PRC-01", "PRC-04", "PRC-07"]

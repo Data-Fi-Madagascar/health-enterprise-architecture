@@ -22,7 +22,7 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 |------------|--------|
 | Flux de valeur nationaux | 4 (VS-01 à VS-04) |
 | Capabilités CAESN | 18 (CAP-01..18) |
-| Capacités CNISN | 16 (CAP-INT-01..16) |
+| Objets d'interopérabilité CNISN | 43 objets TOGAF de remplacement tracés par `legacy_id` |
 | Chapitres ARTSN | 21 entrées (ART-0 à ART-12, déclinaisons incluses) |
 | Objets de données | 31 objets DO + 7 objets métier BO |
 | Profils PTISN | 19 (PT-01 à PT-19) |
@@ -36,7 +36,7 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 | Niveau | Dossier | Document | Destinataires |
 |--------|---------|----------|---------------|
 | 1 | [`00_caesn/`](00_caesn) | Cadre d'Architecture d'Entreprise de la Santé Numérique : valeur, capabilités, principes, gouvernance | Décideurs, directions métiers, partenaires |
-| 2 | [`01_cnisn/`](01_cnisn) | Cadre National d'Interopérabilité de la Santé Numérique : principes, capacités, gouvernance, standards, décisions | DEPSI, architectes, intégrateurs |
+| 2 | [`01_cnisn/`](01_cnisn) | Cadre National d'Interopérabilité de la Santé Numérique : principes, objets d'interopérabilité, gouvernance, standards, décisions | DEPSI, architectes, intégrateurs |
 | 3 | [`02_artsn/`](02_artsn) | Architecture de Référence Technique de la Santé Numérique : patterns, contrats, contraintes | DEPSI, architectes, intégrateurs |
 | 4 | [`03_ptisn/`](03_ptisn) | Profils techniques d'implémentation par initiative : API, contrats d'interfaces, configurations (découle de l'UGD) | Développeurs, fournisseurs, équipes techniques |
 | — | [`04_architecture-repository/`](04_architecture-repository) | Source de vérité : fondations, principes, capacités, chapitres, composants, profils | Machine, scripts de génération |
@@ -63,7 +63,7 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 |---------|--------|---------|
 | Introduction | [`00_introduction/`](01_cnisn/00_introduction) | Contexte, périmètre, objectifs, articulation UGD |
 | Principes | [`01_principes/`](01_cnisn/01_principes) | Principes d'interopérabilité |
-| Capacités | [`02_capacites/`](01_cnisn/02_capacites) | 16 capacités d'interopérabilité |
+| Objets d'interopérabilité | [`02_capacites/`](01_cnisn/02_capacites) | Blocs, exigences, patterns, contrats, preuves et données de référence requis |
 | Gouvernance | [`03_gouvernance/`](01_cnisn/03_gouvernance) | Gouvernance de l'interopérabilité |
 | Conformité | [`04_conformite/`](01_cnisn/04_conformite) | Conformité, audit, programme de conformité opérationnel |
 | Standards | [`05_standards/`](01_cnisn/05_standards) | 7 standards CNISN + 2 normes internationales |
@@ -107,7 +107,7 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 |------|--------|---------|
 | Fondations | [`04_architecture-repository/04_patterns/foundations/`](04_architecture-repository/04_patterns/foundations) | Fondations F |
 | Principes | [`04_architecture-repository/02_architecture-elements/motivation/principles/`](04_architecture-repository/02_architecture-elements/motivation/principles) | Principes transversaux et de domaine |
-| Capacités | [`04_architecture-repository/capacites/`](04_architecture-repository/capacites) | Capacités CNISN CAP-INT |
+| Objets d'interopérabilité CNISN | [`04_architecture-repository/05_building-blocks/abb/`](04_architecture-repository/05_building-blocks/abb) | ABB, exigences, patterns, partitions, données et preuves remplaçant les anciens bundles CNISN |
 | Chapitres | [`04_architecture-repository/04_patterns/artsn-rules/`](04_architecture-repository/04_patterns/artsn-rules) | Chapitres ARTSN ART |
 | Composants | [`04_architecture-repository/05_building-blocks/abb/legacy-components/`](04_architecture-repository/05_building-blocks/abb/legacy-components) | Composants applicatifs, infrastructure et sécurité |
 | Registres de gouvernance | [`04_architecture-repository/06_governance/registers/`](04_architecture-repository/06_governance/registers) | Registres CMP-39..46 |

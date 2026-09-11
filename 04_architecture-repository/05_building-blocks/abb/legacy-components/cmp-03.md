@@ -9,7 +9,7 @@ status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
-maps_to: ["CAP-INT-07", "CAP-INT-11"]
+maps_to: ["ABB-EXPOSITION-DONNEES-ANALYTIQUES", "ABB-RECONCILIATION-DONNEES"]
 implements: ["ART-6", "ART-9"]
 applies_to: ["PRC-09", "PRC-11"]
 related: ["ENF-5", "CAP-13", "CAP-16", "VS-04"]
@@ -21,6 +21,6 @@ tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-03", "couche-5"]
 
 **Discipline de mise en œuvre.** Il garantit l'intégrité analytique ([ENF-5: Coordination des processus complexes décentralisés et asynchrones](../../../03_requirements/enf-5.md)) et l'irréversibilité du masquage des identités. Toute analyse officielle passe par cet entrepôt.
 
-- **Rattachement** : [ART-6](../../../04_patterns/artsn-rules/art-6.md) (CQRS), [ART-9](../../../04_patterns/artsn-rules/art-9.md) (Grand Livre), [CAP-INT-07: Accès et exposition des données analytiques](../../../capacites/cap-int-07.md), [CAP-INT-11: Qualité et réconciliation](../../../capacites/cap-int-11.md).
+- **Rattachement** : [ART-6](../../../04_patterns/artsn-rules/art-6.md) (CQRS), [ART-9](../../../04_patterns/artsn-rules/art-9.md) (Grand Livre), [ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../abb-exposition-donnees-analytiques.md), [ABB-RECONCILIATION-DONNEES: Qualité et réconciliation](../abb-reconciliation-donnees.md).
 - **Processus soutenus** : [PRC-09: Remboursement et régulation des mécanismes](../../../02_architecture-elements/business/processes/prc-09.md) (remboursement), [PRC-11: Suivi et pilotage de la performance](../../../02_architecture-elements/business/processes/prc-11.md) (pilotage).
 - **Statut : Stable.**

@@ -61,7 +61,7 @@ Cette norme s'applique à :
 - **ARTSN** : ART-2 (Médiation et normalisation), F.2 (Normalisation)
 - **ARTSN — lots consommateurs** : [L2 — Applications terrain](../../02_artsn/07_lots/index.md)
 - **PTISN** : PT-07 (Terminologie et codification)
-- **CNISN** : CAP-INT-11 (Qualité et réconciliation)
+- **CNISN** : ABB-RECONCILIATION-DONNEES (Qualité et réconciliation)
 
 ## Contrôle et conformité
 

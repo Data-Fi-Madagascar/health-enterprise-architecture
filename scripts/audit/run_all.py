@@ -75,7 +75,7 @@ def main():
     results.append(("Conformité portefeuille", audit_conformite()))
 
     # Audit 2 : Chaîne
-    results.append(("Chaîne PT → CAP-INT → CAP", audit_chaine()))
+    results.append(("Chaîne PT/SBB -> ABB/PAT/REQ/PART -> CAP", audit_chaine()))
 
     if not args.fast:
         # Audit 3 : Couverture

@@ -131,8 +131,12 @@
   "x-hea-version": "0.4",
   "x-hea-type": "profil-technique",
   "x-hea-maps-to": [
-    "CAP-INT-03",
-    "CAP-INT-07"
+    "ABB-ECHANGE-MEDIATION",
+    "ABB-EXPOSITION-DONNEES-ANALYTIQUES",
+    "CAP-13",
+    "CAP-14",
+    "CAP-18",
+    "CAP-05"
   ],
   "x-hea-implements": [
     "ART-1",

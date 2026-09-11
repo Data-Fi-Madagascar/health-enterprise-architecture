@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-06"]
-related: ["CAP-INT-04", "ART-4", "ART-5", "ART-6", "CMP-08"]
+related: ["ABB-REFERENTIEL-STRUCTURES-SERVICES", "ART-4", "ART-5", "ART-6", "CMP-08"]
 ---
 
 # Profil technique national
@@ -21,9 +21,9 @@ Le **profil PT-06 — Référentiel des structures et services de santé** défi
 
 Périmètre : formations sanitaires (publiques, privées, communautaires), laboratoires, pharmacies et dépôts, structures administratives, services disponibles, localisations, coordonnées, rattachements, périodes d’activité.
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-[CAP-INT-04: Référentiel des structures et services de santé](../../04_architecture-repository/capacites/cap-int-04.md)
+[ABB-REFERENTIEL-STRUCTURES-SERVICES: Référentiel des structures et services de santé](../../04_architecture-repository/05_building-blocks/abb/abb-referentiel-structures-services.md)
 
 ## 3. Chapitres ART applicables
 
@@ -37,7 +37,7 @@ Périmètre : formations sanitaires (publiques, privées, communautaires), labor
 - **Registre des structures (Care Services Registry / Directory)** — tient le référentiel national découvrable.
 - **Consommateur de services de santé (Care Services Consumer)** — système résolvant une structure, un service ou une localisation.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-04](../../04_architecture-repository/capacites/cap-int-04.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-REFERENTIEL-STRUCTURES-SERVICES](../../04_architecture-repository/05_building-blocks/abb/abb-referentiel-structures-services.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -48,7 +48,7 @@ Périmètre : formations sanitaires (publiques, privées, communautaires), labor
 
 R = requis ; O = optionnel.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-04](../../04_architecture-repository/capacites/cap-int-04.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-REFERENTIEL-STRUCTURES-SERVICES](../../04_architecture-repository/05_building-blocks/abb/abb-referentiel-structures-services.md).
 ## 6. Content Modules
 
 - **HL7 FHIR Organization** : formation sanitaire, structure administrative.

@@ -78,7 +78,7 @@ Son absence fragilise la gestion des ressources humaines et compromet la continu
 
 #### Articulation avec la paie, les habilitations et la rétention
 
-- La **rémunération et la paie** s'appuient sur le registre des professionnels ([CAP-INT-02: Registre et résolution des professionnels de santé](../../04_architecture-repository/capacites/cap-int-02.md)) et sur l'échange financier ([PT-18: Échange de réclamations et paiements](../../03_ptisn/03_profils/pt-18-echange-reclamations-paiements.md)).
+- La **rémunération et la paie** s'appuient sur le registre des professionnels ([ABB-REGISTRE-PROFESSIONNELS: Registre et résolution des professionnels de santé](../../04_architecture-repository/05_building-blocks/abb/abb-registre-professionnels.md)) et sur l'échange financier ([PT-18: Échange de réclamations et paiements](../../03_ptisn/03_profils/pt-18-echange-reclamations-paiements.md)).
 - Les **habilitations** relèvent de [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md).
 - L'**analytique de rétention** (taux de rotation, départs) s'appuie sur [ART-6: Analytique et restitution](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md).
 

@@ -8,9 +8,9 @@ status: draft
 owner: DEPSI
 version: "1.0.0"
 source: 03_ptisn/03_profils/pt-15-surveillance-one-health.md
-maps_to: ["CAP-INT-14", "CAP-18", "CAP-05", "ART-11", "ART-0", "ART-4D", "ART-8B", "CMP-02", "CMP-04", "CMP-06"]
+maps_to: ["PART-ONE-HEALTH", "CAP-18", "CAP-05", "ART-11", "ART-0", "ART-4D", "ART-8B", "CMP-02", "CMP-04", "CMP-06"]
 tags: ["ptisn", "niveau-4", "profil", "one-health", "surveillance"]
-related: ["CAP-INT-14", "CAP-18", "CAP-05", "CMP-02", "CMP-04", "CMP-06", "ART-11", "ART-0", "ART-4D", "ART-8B"]
+related: ["PART-ONE-HEALTH", "CAP-18", "CAP-05", "CMP-02", "CMP-04", "CMP-06", "ART-11", "ART-0", "ART-4D", "ART-8B"]
 ---
 
 # Surveillance One Health
@@ -29,10 +29,10 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 | **Standards** | FHIR R4, mADX, OIE-WAHIS, GBIF, WMO BUFR |
 | **Chapitres ARTSN** | [ART-11: Coordination intersectorielle](../../04_architecture-repository/04_patterns/artsn-rules/art-11.md), [ART-0: Accords](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md), ART-4D (Référentiels vétérinaires), ART-8B (Surveillance) |
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-- [CAP-INT-14: Échanges intersectoriels One Health](../../04_architecture-repository/capacites/cap-int-14.md)
-- [CAP-INT-16: Surveillance et alertes multi-sectorielles](../../04_architecture-repository/capacites/cap-int-16.md)
+- [PART-ONE-HEALTH: Échanges intersectoriels One Health](../../04_architecture-repository/01_partitions/sectorielles/part-one-health.md)
+- [RD-DONNEES-ENVIRONNEMENTALES-CLIMAT: Surveillance et alertes multi-sectorielles](../../04_architecture-repository/02_architecture-elements/data/reference-data/rd-donnees-environnementales-climat.md)
 - [CAP-18: Coordination intersectorielle (One Health)](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-18.md)
 - [CAP-05: Terminologie et codification communes](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-05.md)
 
@@ -51,7 +51,7 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 - **Centre de commande (CMP-02)** — consommateur des alertes One Health (T4).
 - **Organisations internationales** — OIE, FAO, OMS (consommateurs T4).
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-14](../../04_architecture-repository/capacites/cap-int-14.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [PART-ONE-HEALTH](../../04_architecture-repository/01_partitions/sectorielles/part-one-health.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -63,7 +63,7 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-14](../../04_architecture-repository/capacites/cap-int-14.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [PART-ONE-HEALTH](../../04_architecture-repository/01_partitions/sectorielles/part-one-health.md).
 ## 6. Content Modules
 
 - **FHIR Observation** : mesures vétérinaires, environnementales et climatiques.
@@ -190,7 +190,7 @@ La conformité est attestée par la validation CNASN des accords de partage et l
 | WMO | Standard international | ✅ Disponible |
 | FHIR R4 | Standard | ✅ Validé |
 | [ART-11: Coordination intersectorielle](../../04_architecture-repository/04_patterns/artsn-rules/art-11.md) | Chapitre ARTSN | Active |
-| [CAP-INT-14: Échanges intersectoriels One Health](../../04_architecture-repository/capacites/cap-int-14.md) | Capacité CNISN | Créée |
+| [PART-ONE-HEALTH: Échanges intersectoriels One Health](../../04_architecture-repository/01_partitions/sectorielles/part-one-health.md) | Objet CNISN/TOGAF | Créée |
 | [CAP-18: Coordination intersectorielle (One Health)](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-18.md) | Capabilité CAESN | Active |
 
 <!-- END:GENERATED -->

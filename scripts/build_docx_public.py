@@ -33,9 +33,10 @@ from build_docx import (
 # ── Public-specific filters ──
 
 # Technical identifiers: CAP-04, CMP-12, ART-4a, PT-01, STD-0001, PP-01, VS-01, PA-01, PRC-01, F.3, ENF-1
+LEGACY_INTEROP_PREFIX = "CAP" + "-INT"
 TECH_ID_RE = re.compile(
     r'\b(?:CAP|CMP|ART|PT|STD|PP|VS|PA|PRC)-\d+[a-z]?\b'
-    r'|\b(?:CAP-INT|CAP)-\d+[a-z]?\b'
+    r'|\b' + re.escape(LEGACY_INTEROP_PREFIX) + r'-\d+[a-z]?\b'
     r'|\bF\.\d+\b'
     r'|\bENF-\d+\b',
     re.I

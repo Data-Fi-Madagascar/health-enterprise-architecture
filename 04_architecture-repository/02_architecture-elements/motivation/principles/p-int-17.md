@@ -11,7 +11,7 @@ envelope: 01_cnisn/01_principes/index.md
 maps_to: ["CAP-15"]
 implements: []
 applies_to: []
-related: ["CAP-INT-01", "CAP-INT-07", "CAP-INT-08", "CAP-INT-09", "CAP-INT-10"]
+related: ["ABB-IDENTITE-BENEFICIAIRE", "ABB-EXPOSITION-DONNEES-ANALYTIQUES", "ABB-CONFIANCE-AUTORISATION", "ABB-GESTION-CONSENTEMENT", "ABB-AUDIT-PROVENANCE"]
 tags: ["cnisn", "niveau-2", "principe"]
 ---
 

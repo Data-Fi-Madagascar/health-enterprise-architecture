@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-08-27
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-18"]
-related: ["CAP-INT-07", "ART-2", "ART-9"]
+related: ["ABB-EXPOSITION-DONNEES-ANALYTIQUES", "ART-2", "ART-9"]
 ---
 
 # Échange de réclamations et paiements
@@ -21,7 +21,7 @@ Le **profil PT-18 — Échange de réclamations et paiements** définit le bus d
 
 Périmètre : vérification d’éligibilité, soumission de réclamation, adjudication et notification de paiement. Norme de référence : [STD-0008: échange des réclamations et paiements](../../01_cnisn/05_standards/std-0008-echange-reclamations-paiements.md).
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
 [CAP-07: Protection financière, couverture santé universelle](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-07.md)
 
@@ -37,7 +37,7 @@ Périmètre : vérification d’éligibilité, soumission de réclamation, adjud
 - **Payeur (Payer)** — système du payeur répondant à l’éligibilité, adjudiquant et notifiant le paiement.
 - **Bus d’échange de réclamations (Claims Exchange Hub)** — achemine et assure l’intégrité des flux entre prestataire et payeur.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-02](../../04_architecture-repository/capacites/cap-int-02.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-REGISTRE-PROFESSIONNELS](../../04_architecture-repository/05_building-blocks/abb/abb-registre-professionnels.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -49,10 +49,10 @@ Périmètre : vérification d’éligibilité, soumission de réclamation, adjud
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-02](../../04_architecture-repository/capacites/cap-int-02.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-REGISTRE-PROFESSIONNELS](../../04_architecture-repository/05_building-blocks/abb/abb-registre-professionnels.md).
 ## 6. Content Modules
 
-- **FHIR `CoverageEligibilityRequest` / `Response`** : éligibilité et couverture (résolution du bénéficiaire STD-0005, du prestataire CAP-INT-02).
+- **FHIR `CoverageEligibilityRequest` / `Response`** : éligibilité et couverture (résolution du bénéficiaire STD-0005, du prestataire ABB-REGISTRE-PROFESSIONNELS).
 - **FHIR `Claim` / `ClaimResponse`** : réclamation et adjudication.
 - **FHIR `PaymentNotice`** : notification de paiement signée et traçable.
 
@@ -69,7 +69,7 @@ Un bus d’échange de réclamations (modèle HCX / Nigeria NDHI) est requis ent
 ### Éligibilité et couverture
 
 - vérification de la couverture via `CoverageEligibilityRequest` / `CoverageEligibilityResponse` ;
-- résolution du bénéficiaire (STD-0005) et du prestataire (CAP-INT-02).
+- résolution du bénéficiaire (STD-0005) et du prestataire (ABB-REGISTRE-PROFESSIONNELS).
 
 ### Réclamation et paiement
 

@@ -65,6 +65,10 @@ ATTRIB = re.compile(r"(mode|source)=(?:(\"[^\"]*\")|([^\s]+))")
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.*)$")
 LINK_RE = re.compile(r"\[([^\]]*)\]\(([^)]*)\)")
 FACE = ["candidate", "deprecated"]
+RATTACHEMENT_KEYS = (
+    "applies_to", "maps_to", "realizes", "implements", "related",
+    "contributes_to", "governs", "serves", "accesses", "uses",
+)
 
 NATURAL_RE = re.compile(r"(\d+)")
 
@@ -152,8 +156,14 @@ def load_objects():
                 "envelope": fields.get("envelope", ""),
                 "maturity_condition": fields.get("maturity_condition", "") or "",
                 "maps_to": fields.get("maps_to", []) or [],
+                "realizes": fields.get("realizes", []) or [],
                 "implements": fields.get("implements", []) or [],
                 "applies_to": fields.get("applies_to", []) or [],
+                "related": fields.get("related", []) or [],
+                "contributes_to": fields.get("contributes_to", []) or [],
+                "governs": fields.get("governs", []) or [],
+                "serves": fields.get("serves", []) or [],
+                "accesses": fields.get("accesses", []) or [],
                 "uses": fields.get("uses", []) or [],
                 "body": body,
             }
@@ -208,7 +218,7 @@ def demote_headings(text):
 def rattachement_links(obj, path_by_id, to_dir):
     ids = []
     seen = set()
-    for key in ("applies_to", "maps_to", "implements", "uses"):
+    for key in RATTACHEMENT_KEYS:
         for oid in obj[key]:
             if oid and oid not in seen:
                 seen.add(oid)
@@ -273,8 +283,14 @@ def markdown_table_entry(rel):
         "envelope": fields.get("envelope", ""),
         "maturity_condition": fields.get("maturity_condition", "") or "",
         "maps_to": fields.get("maps_to", []) or [],
+        "realizes": fields.get("realizes", []) or [],
         "implements": fields.get("implements", []) or [],
         "applies_to": fields.get("applies_to", []) or [],
+        "related": fields.get("related", []) or [],
+        "contributes_to": fields.get("contributes_to", []) or [],
+        "governs": fields.get("governs", []) or [],
+        "serves": fields.get("serves", []) or [],
+        "accesses": fields.get("accesses", []) or [],
         "uses": fields.get("uses", []) or [],
         "body": "",
     }
@@ -382,6 +398,28 @@ def attached_objects(objects, envelope):
     return [obj for obj in objects.values() if obj["envelope"] == envelope]
 
 
+def generated_marked_documents():
+    """Documents Markdown portant au moins un bloc généré."""
+    bases = ["00_caesn", "01_cnisn", "02_artsn", "03_ptisn", ARCH_REPOSITORY_DIR]
+    docs = []
+    for base in bases:
+        root = os.path.join(REPO_ROOT, base)
+        if not os.path.isdir(root):
+            continue
+        for dirpath, dirnames, filenames in os.walk(root):
+            dirnames[:] = [dn for dn in dirnames
+                           if dn not in {".git", "__pycache__", "node_modules",
+                                         "graphify-out", ".agents", ".claude"}]
+            for filename in filenames:
+                if not filename.endswith(".md"):
+                    continue
+                path = os.path.join(dirpath, filename)
+                with open(path, encoding="utf-8") as fh:
+                    if "BEGIN:GENERATED" in fh.read():
+                        docs.append(os.path.relpath(path, REPO_ROOT))
+    return docs
+
+
 def generate_file(objects, path_by_id, rel):
     abs_path = os.path.join(REPO_ROOT, rel)
     with open(abs_path, encoding="utf-8") as fh:
@@ -415,7 +453,11 @@ def generate_file(objects, path_by_id, rel):
             body = content
         else:
             covered = []
-            for obj in attached:
+            candidates = attached
+            if not candidates and globs:
+                candidates = [obj for obj in objects.values()
+                              if any(fnmatch.fnmatch(obj["rel"], g) for g in globs)]
+            for obj in candidates:
                 if globs and not any(fnmatch.fnmatch(obj["rel"], g) for g in globs):
                     continue
                 covered.append(obj["rel"])
@@ -472,7 +514,8 @@ def main():
     targets = set(sources)
     extra_targets = ["03_ptisn/03_profils/pt-00-index.md",
                      "01_cnisn/08_annexes/a-matrice-principes-capacites.md",
-                     "02_artsn/08_annexes/a-table-de-maturite.md"] + DERIVED_ENVELOPES
+                     "02_artsn/08_annexes/a-table-de-maturite.md"] + \
+        DERIVED_ENVELOPES + generated_marked_documents()
     for rel in list(targets) + extra_targets:
         path = os.path.join(REPO_ROOT, rel)
         if not os.path.exists(path):

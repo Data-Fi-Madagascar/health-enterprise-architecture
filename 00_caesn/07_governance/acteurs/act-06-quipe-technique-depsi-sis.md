@@ -16,7 +16,7 @@ tags: ["caesn", "acteur", "act-06", "governance"]
 
 L'équipe technique DEPSI / SIS conçoit, héberge et exploite les systèmes d'information sanitaires. Elle [réalise la partie prenante « Équipes techniques (DEPSI / SIS) »](../../../04_architecture-repository/02_architecture-elements/motivation/stakeholders/pp-10.md) et porte le rôle de [gestionnaire de données / registre](../../../04_architecture-repository/02_architecture-elements/business/roles/rol-03.md).
 
-Basée au [siège central](../../../04_architecture-repository/02_architecture-elements/business/locations/loc-06.md), elle opère le [composant socle](../../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-32.md) et la [capacité « Socle technique et sécurité »](../../../04_architecture-repository/capacites/cap-int-01.md). C'est l'acteur responsable de la cohérence technique et de la disponibilité des services partagés.
+Basée au [siège central](../../../04_architecture-repository/02_architecture-elements/business/locations/loc-06.md), elle opère le [composant socle](../../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-32.md) et la [capacité « Socle technique et sécurité »](../../../04_architecture-repository/05_building-blocks/abb/abb-identite-beneficiaire.md). C'est l'acteur responsable de la cohérence technique et de la disponibilité des services partagés.
 
 ## Représentation
 

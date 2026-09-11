@@ -49,7 +49,7 @@ Adopter le **GDHCN** comme mécanisme de confiance national pour les échanges d
 
 Le GDHCN répond aux exigences du cadre :
 
-- **CAP-INT-13** : Interopérabilité transfrontalière
+- **PART-ECHANGE-TRANSFRONTALIER** : Interopérabilité transfrontalière
 - **ART-7** : Sécurité, contrôle d'accès et résidence des données
 - **PT-14** : Interopérabilité transfrontalière
 - **PT-15** : Surveillance One Health (échanges OIE/FAO)
@@ -89,6 +89,6 @@ Le GDHCN doit :
 
 - PT-14 : Interopérabilité transfrontalière
 - ART-7 : Sécurité
-- CAP-INT-13 : Interopérabilité transfrontalière
+- PART-ECHANGE-TRANSFRONTALIER : Interopérabilité transfrontalière
 - [GDHCN : Global Digital Health Certification Network](https://gdadhn.org)
 

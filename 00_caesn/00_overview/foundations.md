@@ -141,7 +141,7 @@ L'architecture OpenHIE s'organise en **trois couches** :
 | **Couche 2 : Couche d'interopérabilité** | Interopability Layer (authentification, routage, correspondance d'entités) | Passerelle entre les sources de vérité et les applications de terrain |
 | **Couche 3 : Points de service** | EMR, DHIS2, applications mobiles, outils communautaires | Interfaces utilisateurs au contact des patients et agents de santé |
 
-La force d'OpenHIE est son approche **"for whom, by whom, where, what"** : chaque échange de données est contextualisé par l'identité du patient, du prestataire, du lieu et de l'activité. Cette approche est directement reflétée dans l'HEA à travers les capacités CAP-INT-01 (identité bénéficiaire), CAP-INT-02 (professionnels), CAP-INT-04 (structures) et CAP-INT-05 (terminologie).
+La force d'OpenHIE est son approche **"for whom, by whom, where, what"** : chaque échange de données est contextualisé par l'identité du patient, du prestataire, du lieu et de l'activité. Cette approche est directement reflétée dans l'HEA à travers les capacités ABB-IDENTITE-BENEFICIAIRE (identité bénéficiaire), ABB-REGISTRE-PROFESSIONNELS (professionnels), ABB-REFERENTIEL-STRUCTURES-SERVICES (structures) et ABB-SERVICE-TERMINOLOGIE (terminologie).
 
 OpenHIE s'appuie sur les standards IHE (Integrating the Healthcare Enterprise) et est reconnu par l'OMS comme cadre de référence pour la DPI-H.
 
@@ -199,7 +199,7 @@ Certaines technologies émergentes auront un impact significatif sur les systèm
 
 Ces technologies ne nécessitent pas de nouveau profil PTISN. Elles s'intègrent dans les capabilités existantes (capacité de décision, intégration des données, identité) et sont encadrées par les principes d'architecture du CAESN. Les standards FHIR R4 et HL7 fournissent les structures de données nécessaires ; les profils PTISN définissent les points d'entrée.
 
-L'intégration de ces technologies fait l'objet d'une veille architecturale permanente au sein du CNASN, qui évalue leur maturité et recommande leur adoption lorsque les standards et la gouvernance le permettent. Pour fermer le gap *IA / technologies émergentes* de l'évaluation **ADHMAT**, la veille se double d'un **cadre d'adoption** : toute technologie retenue suit un parcours d'évaluation (maturité, normalisation FHIR/HL7, souveraineté, conformité), puis un déploiement pilote rattaché à une capabilité ([CAP-INT-11](../../04_architecture-repository/capacites/cap-int-11.md)) et au chapitre [ART-6](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md), avec réversibilité et sortie contrôlée.
+L'intégration de ces technologies fait l'objet d'une veille architecturale permanente au sein du CNASN, qui évalue leur maturité et recommande leur adoption lorsque les standards et la gouvernance le permettent. Pour fermer le gap *IA / technologies émergentes* de l'évaluation **ADHMAT**, la veille se double d'un **cadre d'adoption** : toute technologie retenue suit un parcours d'évaluation (maturité, normalisation FHIR/HL7, souveraineté, conformité), puis un déploiement pilote rattaché à une capabilité ([ABB-RECONCILIATION-DONNEES](../../04_architecture-repository/05_building-blocks/abb/abb-reconciliation-donnees.md)) et au chapitre [ART-6](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md), avec réversibilité et sortie contrôlée.
 
 ## Liens
 

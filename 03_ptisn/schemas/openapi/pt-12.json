@@ -203,7 +203,12 @@
   "x-hea-version": "0.4",
   "x-hea-type": "profil-technique",
   "x-hea-maps-to": [
-    "CAP-INT-10"
+    "ABB-AUDIT-PROVENANCE",
+    "CAP-03",
+    "CAP-08",
+    "CAP-12",
+    "CAP-13",
+    "CAP-15"
   ],
   "x-hea-implements": [
     "F-1",

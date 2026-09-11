@@ -10,13 +10,12 @@ version: "0.0.1"
 envelope: 00_caesn/01_value-streams/vs-02-risk-protection.md
 maps_to: []
 implements: []
-applies_to: ["CAP-INT-13", "CAP-15", "CAP-17"]
+applies_to: ["PART-ECHANGE-TRANSFRONTALIER", "CAP-15", "CAP-17"]
 related: ["VS-02", "BO-07"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-13"]
 uses: ["CMP-02", "CMP-06", "CMP-15"]
 performed_by: ["ROL-05"]
-accesses: ['DO-29', 'DO-30', 'DO-31']
-
+accesses: ["DO-29", "DO-30", "DO-31"]
 ---
 # Échange et coordination transfrontaliers
 
@@ -24,7 +23,7 @@ accesses: ['DO-29', 'DO-30', 'DO-31']
 
 Garantir, dans le respect de la souveraineté et des accords de confiance, les échanges de données et de services de santé au-delà des frontières : résumé international du patient (IPS), sections normalisées, confiance internationale, résolution d'identité pour patients transfrontaliers et coordination épidémique régionale.
 
-Ce processus opérationnalise l'objet métier [BO-07 : Interopérabilité transfrontalière](../business-objects/bo-07.md) et s'appuie sur la capacité [CAP-INT-13 : Interopérabilité transfrontalière](../../../capacites/cap-int-13.md), le chapitre [ART-7 : Sécurité, contrôle d'accès et résidence de la donnée](../../../04_patterns/artsn-rules/art-7.md) et le profil [PT-14 : Interopérabilité transfrontalière](../../../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md).
+Ce processus opérationnalise l'objet métier [BO-07 : Interopérabilité transfrontalière](../business-objects/bo-07.md) et s'appuie sur la capacité [PART-ECHANGE-TRANSFRONTALIER : Interopérabilité transfrontalière](../../../01_partitions/externes/part-echange-transfrontalier.md), le chapitre [ART-7 : Sécurité, contrôle d'accès et résidence de la donnée](../../../04_patterns/artsn-rules/art-7.md) et le profil [PT-14 : Interopérabilité transfrontalière](../../../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md).
 
 ## Étapes clés
 

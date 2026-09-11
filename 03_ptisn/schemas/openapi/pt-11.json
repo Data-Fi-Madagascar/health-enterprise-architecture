@@ -197,7 +197,9 @@
   "x-hea-version": "0.4",
   "x-hea-type": "profil-technique",
   "x-hea-maps-to": [
-    "CAP-INT-09"
+    "ABB-GESTION-CONSENTEMENT",
+    "CAP-15",
+    "CAP-17"
   ],
   "x-hea-implements": [
     "ART-0",

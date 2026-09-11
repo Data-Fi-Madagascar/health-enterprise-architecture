@@ -9,7 +9,7 @@ status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
-maps_to: ["CAP-INT-07", "CAP-INT-10"]
+maps_to: ["ABB-EXPOSITION-DONNEES-ANALYTIQUES", "ABB-AUDIT-PROVENANCE"]
 implements: ["ART-5", "ART-9"]
 applies_to: ["PRC-05", "PRC-09"]
 related: ["ENF-2", "ENF-5", "CAP-13", "CAP-15", "VS-02", "VS-04"]
@@ -21,6 +21,6 @@ tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-04", "couche-5"]
 
 **Discipline de mise en œuvre.** Il sépare l'inférence analytique du stockage et garantit la traçabilité des modèles (versionnage, données d'entraînement) ainsi que l'audit des décisions automatisées ([ENF-2: Intégrité des flux et traçabilité des valeurs](../../../03_requirements/enf-2.md), [ENF-5: Coordination des processus complexes décentralisés et asynchrones](../../../03_requirements/enf-5.md)).
 
-- **Rattachement** : [ART-5](../../../04_patterns/artsn-rules/art-5.md) (alertes), [ART-9](../../../04_patterns/artsn-rules/art-9.md) (Grand Livre), [CAP-INT-07: Accès et exposition des données analytiques](../../../capacites/cap-int-07.md), [CAP-INT-10: Provenance, audit et traçabilité](../../../capacites/cap-int-10.md).
+- **Rattachement** : [ART-5](../../../04_patterns/artsn-rules/art-5.md) (alertes), [ART-9](../../../04_patterns/artsn-rules/art-9.md) (Grand Livre), [ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../abb-exposition-donnees-analytiques.md), [ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité](../abb-audit-provenance.md).
 - **Processus soutenus** : [PRC-09: Remboursement et régulation des mécanismes](../../../02_architecture-elements/business/processes/prc-09.md) (remboursement), [PRC-05: Alerte, investigation et riposte](../../../02_architecture-elements/business/processes/prc-05.md) (alerte/riposte).
 - **Statut : Stable.**

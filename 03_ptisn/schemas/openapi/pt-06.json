@@ -139,7 +139,10 @@
   "x-hea-version": "0.4",
   "x-hea-type": "profil-technique",
   "x-hea-maps-to": [
-    "CAP-INT-04"
+    "ABB-REFERENTIEL-STRUCTURES-SERVICES",
+    "CAP-11",
+    "CAP-13",
+    "CAP-14"
   ],
   "x-hea-implements": [
     "ART-4",

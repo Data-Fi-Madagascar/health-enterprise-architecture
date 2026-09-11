@@ -9,7 +9,7 @@ status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
-maps_to: ["CAP-INT-09"]
+maps_to: ["ABB-GESTION-CONSENTEMENT"]
 implements: ["ART-4C"]
 applies_to: ["PRC-09", "PRC-10"]
 related: ["ENF-5", "CAP-09", "VS-04"]
@@ -22,6 +22,6 @@ realized_by: ["WP-04"]
 
 **Discipline de mise en œuvre.** Il est l'autorité de vérification des droits. Toute opération de soins nécessitant une vérification de couverture transite par ce registre, ce qui garantit la conformité financière.
 
-- **Rattachement** : [ART-4C](../../../04_patterns/artsn-rules/art-4c.md) (éligibilité/couverture), [CAP-INT-09: Gestion des consentements et bases d’autorisation](../../../capacites/cap-int-09.md).
+- **Rattachement** : [ART-4C](../../../04_patterns/artsn-rules/art-4c.md) (éligibilité/couverture), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../abb-gestion-consentement.md).
 - **Processus soutenus** : [PRC-09: Remboursement et régulation des mécanismes](../../../02_architecture-elements/business/processes/prc-09.md) (finance), [PRC-10: Planification et allocation des ressources](../../../02_architecture-elements/business/processes/prc-10.md) (planification).
 - **Statut : Stable.**

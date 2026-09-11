@@ -10,7 +10,7 @@ owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
 implements: ["ENF-1", "F-1"]
-maps_to: ["CAP-INT-10"]
+maps_to: ["ABB-AUDIT-PROVENANCE"]
 applies_to: ["PRC-05", "PRC-10"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-23", "couche-2"]
 related: ["VS-01"]

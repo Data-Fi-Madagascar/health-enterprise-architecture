@@ -28,26 +28,27 @@ Les chapitres constituent le **cadre normatif opposable** par le Ministère de l
 
 | Code | Titre canonique | Rattachement | Statut | Fiche |
 |---|---|---|---|---|
-| ART-0 | Accords de partage inter-institutionnels | ENF-4 | draft | fiche |
-| ART-1 | Intégration et ingestion | ENF-1, CAP-14 | draft | fiche |
-| ART-2 | Médiation et normalisation | ENF-3, ENF-4, CAP-14 | draft | fiche |
-| ART-3 | Historisation événementielle et profils de déploiement | ENF-1, CAP-13 | draft | fiche |
-| ART-4 | Référentiels de métadonnées de gestion | ENF-4, CAP-14 | draft | fiche |
-| ART-4A | Résolution d'identité | ENF-3, CAP-04 | draft | fiche |
-| ART-4B | Bases d'autorisation | ENF-4, CAP-15 | draft | fiche |
-| ART-4C | Éligibilité et couverture | ENF-2, ENF-1, CAP-07 | draft | fiche |
-| ART-4D | Référentiel géospatial et d'exploitation partagé | ENF-4 | draft | fiche |
-| ART-5 | Cohérence et qualité des données | ENF-5, CAP-13 | draft | fiche |
-| ART-6 | Analytique et restitution | ENF-4, CAP-13, CAP-08 | draft | fiche |
-| ART-7 | Sécurité, contrôle d'accès et résidence de la donnée | ENF-1, CAP-15 | draft | fiche |
-| ART-8 | Orchestration de processus | CAP-13, CAP-14 | draft | fiche |
-| ART-8A | Orchestration de processus borné | ENF-5, CAP-13, CAP-14 | draft | fiche |
-| ART-8B | Modélisation de relations en graphe | ENF-4, CAP-13, CAP-14 | draft | fiche |
-| ART-8C | Agrégation par lot | ENF-1, ENF-2, CAP-13, CAP-14 | draft | fiche |
-| ART-8D | Chorégraphie inter-institutionnelle | ENF-4, CAP-13, CAP-14 | draft | fiche |
-| ART-9 | Garanties transactionnelles fortes | ENF-2, CAP-07 | draft | fiche |
-| ART-10 | Logistique | : | candidate | fiche |
-| ART-11 | Coordination intersectorielle | ENF-4, CAP-08, CAP-18, CAP-INT-14 | stable | fiche |
+| ART-0 | Accords de partage inter-institutionnels | ENF-4 | candidate | ART-0 |
+| ART-1 | Intégration et ingestion | ENF-1, CAP-14 | stable | ART-1 |
+| ART-2 | Médiation et normalisation | ENF-3, ENF-4, CAP-14 | stable | ART-2 |
+| ART-3 | Historisation événementielle et profils de déploiement | ENF-1, CAP-13 | stable | ART-3 |
+| ART-4 | Référentiels de métadonnées de gestion | ENF-4, CAP-14, ART-4A, ART-4B, ART-4C, ART-4D | stable | ART-4 |
+| ART-4A | Résolution d'identité | ENF-3, CAP-04, ART-4 | draft | ART-4A |
+| ART-4B | Bases d'autorisation | ENF-4, CAP-15, ART-4 | draft | ART-4B |
+| ART-4C | Éligibilité et couverture | ENF-2, ENF-1, CAP-07, ART-4 | candidate | ART-4C |
+| ART-4D | Référentiel géospatial et d'exploitation partagé | ENF-4, ART-4 | candidate | ART-4D |
+| ART-5 | Cohérence et qualité des données | ENF-5, CAP-13 | stable | ART-5 |
+| ART-6 | Analytique et restitution | ENF-4, CAP-13, CAP-08 | draft | ART-6 |
+| ART-7 | Sécurité, contrôle d'accès et résidence de la donnée | ENF-1, CAP-15 | stable | ART-7 |
+| ART-8 | Orchestration de processus | CAP-13, CAP-14, ART-8A, ART-8B, ART-8C, ART-8D | draft | ART-8 |
+| ART-8A | Orchestration de processus borné | ENF-5, CAP-13, CAP-14, ART-8 | draft | ART-8A |
+| ART-8B | Modélisation de relations en graphe | ENF-4, CAP-13, CAP-14, ART-8 | candidate | ART-8B |
+| ART-8C | Agrégation par lot | ENF-1, ENF-2, CAP-13, CAP-14, ART-8 | candidate | ART-8C |
+| ART-8D | Chorégraphie inter-institutionnelle | ENF-4, CAP-13, CAP-14, ART-8 | candidate | ART-8D |
+| ART-9 | Garanties transactionnelles fortes | ENF-2, CAP-07 | candidate | ART-9 |
+| ART-10 | Logistique | ENF-2, CAP-10, CAP-11 | candidate | ART-10 |
+| ART-11 | Coordination intersectorielle | ENF-4, CAP-08, CAP-18, PART-ONE-HEALTH, ART-0, ART-4D, ART-8B, ART-8D | stable | ART-11 |
+| ART-12 | Aide à la décision clinique | ART-6, CAP-13, CMP-08, ABB-SERVICE-TERMINOLOGIE, F-2 | draft | ART-12 |
 
 <!-- END:GENERATED -->
 
@@ -82,7 +83,7 @@ Les chapitres de cette partie s'inscrivent dans une dépendance avec les Fondati
 - **ENF-5** : Coordination des processus complexes décentralisés et asynchrones (`04_architecture-repository/03_requirements/enf-5.md`)
 - **CAP-08** : Gouvernance institutionnelle, planification, coordination et redevabilité (`04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-08.md`)
 - **CAP-18** : Coordination intersectorielle (One Health) (`04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-18.md`)
-- **CAP-INT-14** : CAP-INT-14 : Échanges intersectoriels One Health (`04_architecture-repository/capacites/cap-int-14.md`)
+- **PART-ONE-HEALTH** : PART-ONE-HEALTH : Échanges intersectoriels One Health (`04_architecture-repository/01_partitions/sectorielles/part-one-health.md`)
 
 ## Documents de la section
 

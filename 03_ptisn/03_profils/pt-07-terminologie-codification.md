@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-07"]
-related: ["CAP-INT-05", "ART-2", "ART-4", "ART-5", "CMP-10"]
+related: ["ABB-SERVICE-TERMINOLOGIE", "ART-2", "ART-4", "ART-5", "CMP-10"]
 ---
 
 # Profil technique national
@@ -21,9 +21,9 @@ Le **profil PT-07 — Terminologie et codification** définit le service termino
 
 Périmètre : consultation et gestion de systèmes de codes, ensembles de valeurs, et correspondances entre terminologies. Hors périmètre : le contenu métier des référentiels (PT-04, PT-05, PT-06).
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-[CAP-INT-05: Terminologie et codification communes](../../04_architecture-repository/capacites/cap-int-05.md)
+[ABB-SERVICE-TERMINOLOGIE: Terminologie et codification communes](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md)
 
 ## 3. Chapitres ART applicables
 
@@ -36,7 +36,7 @@ Périmètre : consultation et gestion de systèmes de codes, ensembles de valeur
 - **Consommateur terminologique (ValueSet Consumer)** — système résolvant/expectant des codes et ensembles de valeurs.
 - **Dépôt terminologique (ValueSet Directory)** — tient et diffuse les CodeSystem, ValueSet, ConceptMap nationaux.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-05](../../04_architecture-repository/capacites/cap-int-05.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-SERVICE-TERMINOLOGIE](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -48,7 +48,7 @@ Périmètre : consultation et gestion de systèmes de codes, ensembles de valeur
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-05](../../04_architecture-repository/capacites/cap-int-05.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-SERVICE-TERMINOLOGIE](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md).
 ## 6. Content Modules
 
 - **HL7 FHIR CodeSystem** : système de codes national ou référencé.

@@ -16,7 +16,7 @@ tags: ["caesn", "role", "rol-04", "governance"]
 
 Le gestionnaire logistique planifie et suit la chaîne d'approvisionnement et les stocks. Il est [assigné à la formation sanitaire](../../../04_architecture-repository/02_architecture-elements/business/actors/act-03.md) et [exécute le processus de gestion de la chaîne logistique](../../../04_architecture-repository/02_architecture-elements/business/processes/prc-08.md).
 
-Son rôle contribue à la [capacité « Chaîne logistique et traçabilité »](../../../04_architecture-repository/capacites/cap-int-10.md), condition indispensable à la disponibilité des médicaments et intrants.
+Son rôle contribue à la [capacité « Chaîne logistique et traçabilité »](../../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md), condition indispensable à la disponibilité des médicaments et intrants.
 
 ## Affectation
 

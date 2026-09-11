@@ -21,7 +21,7 @@ La rubrique d'identification rassemble les informations permettant de situer le 
 
 ## 2. Rattachement
 
-La rubrique de rattachement établit le lien entre le service et les cadres de référence supérieurs. Elle identifie le value stream auquel le service contribue, la capacité CAE-SN et la capacité CNISN qu'il met en œuvre, les chapitres ART dont il mobilise les patterns, et les profils PTISN auxquels il se conforme. Cette articulation assure la cohérence entre les initiatives individuelles et l'architecture nationale dans son ensemble.
+La rubrique de rattachement établit le lien entre le service et les cadres de référence supérieurs. Elle identifie le value stream auquel le service contribue, la capabilité CAESN et l'objet CNISN/TOGAF qu'il met en œuvre, les chapitres ART dont il mobilise les patterns, et les profils PTISN auxquels il se conforme. Cette articulation assure la cohérence entre les initiatives individuelles et l'architecture nationale dans son ensemble.
 
 ## 3. Interface
 

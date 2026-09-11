@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
 tags: ["ptisn", "niveau-4", "profil", "transfrontalier", "gdhcn"]
-related: ["CAP-INT-13", "CAP-15", "CAP-17", "CMP-06", "CMP-15", "ART-7", "ART-0", "ART-1"]
+related: ["PART-ECHANGE-TRANSFRONTALIER", "CAP-15", "CAP-17", "CMP-06", "CMP-15", "ART-7", "ART-0", "ART-1"]
 ---
 
 # Interopérabilité transfrontalière
@@ -26,9 +26,9 @@ Ce profil technique définit les standards, protocoles et configurations pour le
 | **Standards** | GDHCN (Trust Anchor), FHIR R4, HL7 v2.x (legacy), OID (ISO), IHE |
 | **Chapitres ARTSN** | [ART-7: Sécurité](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md), [ART-0: Accords](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md), [ART-1: Intégration](../../04_architecture-repository/04_patterns/artsn-rules/art-1.md) |
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-- [CAP-INT-13: Interopérabilité transfrontalière et confiance internationale](../../04_architecture-repository/capacites/cap-int-13.md)
+- [PART-ECHANGE-TRANSFRONTALIER: Interopérabilité transfrontalière et confiance internationale](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md)
 - [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md)
 - [CAP-17: Engagement patient et identité numérique](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-17.md)
 
@@ -46,7 +46,7 @@ Ce profil technique définit les standards, protocoles et configurations pour le
 - **Moteur analytique (CMP-04)** — production des flux de surveillance régionale (T3).
 - **Système partenaire étranger** — consommateur/producteur des flux transfrontaliers.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-13](../../04_architecture-repository/capacites/cap-int-13.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [PART-ECHANGE-TRANSFRONTALIER](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -59,7 +59,7 @@ Ce profil technique définit les standards, protocoles et configurations pour le
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-13](../../04_architecture-repository/capacites/cap-int-13.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [PART-ECHANGE-TRANSFRONTALIER](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md).
 ## 6. Content Modules
 
 - **IPS Composition (FHIR R4)** : résumé international du patient — sections minimales ALGY (allergies), MDCA (médicaments), PROB (problèmes), IDOI (identité).
@@ -215,7 +215,7 @@ La conformité est attestée par la journalisation de tous les flux, la vérific
 | IHE PIX/PDQ | Standard | ✅ Disponible |
 | [ART-7: Sécurité](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md) | Chapitre ARTSN | Active |
 | [ART-0: Accords de partage](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md) | Chapitre ARTSN | Active |
-| [CAP-INT-13: Interopérabilité transfrontalière](../../04_architecture-repository/capacites/cap-int-13.md) | Capacité CNISN | Créée |
+| [PART-ECHANGE-TRANSFRONTALIER: Interopérabilité transfrontalière](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md) | Objet CNISN/TOGAF | Créée |
 | [CAP-15: Cybersécurité](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md) | Capabilité CAESN | Active |
 | [CAP-17: Engagement patient](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-17.md) | Capabilité CAESN | Active |
 

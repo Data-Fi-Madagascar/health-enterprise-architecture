@@ -170,7 +170,9 @@
   "x-hea-version": "0.4",
   "x-hea-type": "profil-technique",
   "x-hea-maps-to": [
-    "CAP-INT-02"
+    "ABB-REGISTRE-PROFESSIONNELS",
+    "CAP-09",
+    "CAP-14"
   ],
   "x-hea-implements": [
     "ART-4",

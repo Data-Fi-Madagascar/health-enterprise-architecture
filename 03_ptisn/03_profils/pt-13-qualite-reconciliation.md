@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-13"]
-related: ["CAP-INT-11", "ART-4", "ART-5", "ART-6", "CMP-05"]
+related: ["ABB-RECONCILIATION-DONNEES", "ART-4", "ART-5", "ART-6", "CMP-05"]
 ---
 
 # Profil technique national
@@ -21,9 +21,9 @@ Le **profil PT-13 — Qualité et réconciliation** définit les services de val
 
 Périmètre : validation des contrats, qualité des données, réconciliation, gestion des anomalies, publication d’indicateurs de qualité. Hors périmètre : le profilage sémantique (voir PT-07).
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-- [CAP-INT-11: Qualité et réconciliation](../../04_architecture-repository/capacites/cap-int-11.md)
+- [ABB-RECONCILIATION-DONNEES: Qualité et réconciliation](../../04_architecture-repository/05_building-blocks/abb/abb-reconciliation-donnees.md)
 
 ## 3. Chapitres ART applicables
 
@@ -38,7 +38,7 @@ Périmètre : validation des contrats, qualité des données, réconciliation, g
 - **Service de réconciliation (Reconciliation Service)** — compare sources, référentiels et projections.
 - **Gestionnaire d’anomalies (Anomaly Manager)** — traite et documente les écarts détectés.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-11](../../04_architecture-repository/capacites/cap-int-11.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-RECONCILIATION-DONNEES](../../04_architecture-repository/05_building-blocks/abb/abb-reconciliation-donnees.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -49,7 +49,7 @@ Périmètre : validation des contrats, qualité des données, réconciliation, g
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-11](../../04_architecture-repository/capacites/cap-int-11.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-RECONCILIATION-DONNEES](../../04_architecture-repository/05_building-blocks/abb/abb-reconciliation-donnees.md).
 ## 6. Content Modules
 
 - **Rapport de test de contrat** : structure, terminologie, identifiants, métadonnées, cardinalités, valeurs obligatoires, compatibilité de version, droits d’émission, cohérence métier.

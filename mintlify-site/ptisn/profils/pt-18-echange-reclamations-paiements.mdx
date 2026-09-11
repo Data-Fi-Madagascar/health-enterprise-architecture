@@ -16,7 +16,7 @@ Le **profil PT-18 — Échange de réclamations et paiements** définit le bus d
 
 Périmètre : vérification d’éligibilité, soumission de réclamation, adjudication et notification de paiement. Norme de référence : STD-0008: échange des réclamations et paiements.
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
 CAP-07: Protection financière, couverture santé universelle
 
@@ -32,7 +32,7 @@ CAP-07: Protection financière, couverture santé universelle
 - **Payeur (Payer)** — système du payeur répondant à l’éligibilité, adjudiquant et notifiant le paiement.
 - **Bus d’échange de réclamations (Claims Exchange Hub)** — achemine et assure l’intégrité des flux entre prestataire et payeur.
 
-*Référence — capacité CNISN mise en œuvre : CAP-INT-02.
+*Référence - objet CNISN/TOGAF mis en œuvre : ABB-REGISTRE-PROFESSIONNELS.
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -44,10 +44,10 @@ CAP-07: Protection financière, couverture santé universelle
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence — capacité CNISN mise en œuvre : CAP-INT-02.
+*Référence - objet CNISN/TOGAF mis en œuvre : ABB-REGISTRE-PROFESSIONNELS.
 ## 6. Content Modules
 
-- **FHIR `CoverageEligibilityRequest` / `Response`** : éligibilité et couverture (résolution du bénéficiaire STD-0005, du prestataire CAP-INT-02).
+- **FHIR `CoverageEligibilityRequest` / `Response`** : éligibilité et couverture (résolution du bénéficiaire STD-0005, du prestataire ABB-REGISTRE-PROFESSIONNELS).
 - **FHIR `Claim` / `ClaimResponse`** : réclamation et adjudication.
 - **FHIR `PaymentNotice`** : notification de paiement signée et traçable.
 
@@ -64,7 +64,7 @@ Un bus d’échange de réclamations (modèle HCX / Nigeria NDHI) est requis ent
 ### Éligibilité et couverture
 
 - vérification de la couverture via `CoverageEligibilityRequest` / `CoverageEligibilityResponse` ;
-- résolution du bénéficiaire (STD-0005) et du prestataire (CAP-INT-02).
+- résolution du bénéficiaire (STD-0005) et du prestataire (ABB-REGISTRE-PROFESSIONNELS).
 
 ### Réclamation et paiement
 

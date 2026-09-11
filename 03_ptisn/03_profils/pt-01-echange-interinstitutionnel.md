@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-01"]
-related: ["CAP-INT-03", "CAP-INT-12", "ART-0", "ART-1", "ART-7", "ART-11", "CMP-06"]
+related: ["ABB-ECHANGE-MEDIATION", "COMP-HOMOLOGATION-INTEROPERABILITE", "ART-0", "ART-1", "ART-7", "ART-11", "CMP-06"]
 ---
 
 # Profil technique national
@@ -32,11 +32,11 @@ Périmètre couvert : les échanges entre le secteur santé et :
 
 Il ne couvre pas les échanges internes au secteur santé (voir PT-02).
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-[CAP-INT-03: Échange et médiation inter-systèmes](../../04_architecture-repository/capacites/cap-int-03.md)
+[ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md)
 
-[CAP-INT-12: Partage intersectoriel des données](../../04_architecture-repository/capacites/cap-int-12.md)
+[COMP-HOMOLOGATION-INTEROPERABILITE: Partage intersectoriel des données](../../04_architecture-repository/06_governance/compliance/comp-homologation-interoperabilite.md)
 
 ## 3. Chapitres ART applicables
 
@@ -54,7 +54,7 @@ Dans le sens IHE (systèmes/composants assumant un rôle dans les échanges), le
 - **Serveur de sécurité (Security Server)** — point de raccordement de chaque membre à la fédération ; assure authentification, chiffrement, signature et journalisation au niveau transport.
 - **Autorité de gouvernance du CNI** — tient la fédération de confiance et les politiques d’accès/résidence communes.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-03](../../04_architecture-repository/capacites/cap-int-03.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -65,7 +65,7 @@ Dans le sens IHE (systèmes/composants assumant un rôle dans les échanges), le
 
 R = requis pour revendiquer le profil ; O = optionnel.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-03](../../04_architecture-repository/capacites/cap-int-03.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
 ## 6. Content Modules
 
 - **En-têtes X-Road** : client (member/subsystem), serveur, `userId`, service, représentation temporelle.

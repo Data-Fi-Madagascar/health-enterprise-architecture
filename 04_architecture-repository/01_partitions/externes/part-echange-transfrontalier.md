@@ -7,6 +7,7 @@ title: Partition échange transfrontalier
 status: draft
 owner: DEPSI
 version: "0.1"
+legacy_id: CAP-INT-13
 partition_kind: externe
 togaf_repository_section: architecture-landscape
 togaf_adm_phase: C

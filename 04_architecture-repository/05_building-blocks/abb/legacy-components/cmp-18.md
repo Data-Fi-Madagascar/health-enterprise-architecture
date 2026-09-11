@@ -9,7 +9,7 @@ status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
-maps_to: ["CAP-INT-10"]
+maps_to: ["ABB-AUDIT-PROVENANCE"]
 implements: ["ART-8C"]
 applies_to: ["PRC-04", "PRC-05", "PRC-06"]
 related: ["ENF-3", "CAP-10", "VS-02"]
@@ -21,6 +21,6 @@ tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-18", "couche-3"]
 
 **Discipline de mise en œuvre.** Il est le mécanisme de résolution des anomalies. Il permet la compensation automatique des erreurs et la cohérence des transactions, ce qui garantit la fiabilité des échanges critiques.
 
-- **Rattachement** : [ART-8C](../../../04_patterns/artsn-rules/art-8c.md) (Netting), [CAP-INT-10: Provenance, audit et traçabilité](../../../capacites/cap-int-10.md).
+- **Rattachement** : [ART-8C](../../../04_patterns/artsn-rules/art-8c.md) (Netting), [ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité](../abb-audit-provenance.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../../02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../../02_architecture-elements/business/processes/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../../02_architecture-elements/business/processes/prc-06.md) (logistique).
 - **Statut : Stable.**

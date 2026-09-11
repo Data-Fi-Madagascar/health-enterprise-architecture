@@ -3,7 +3,7 @@
 # Source de vérité : frontmatter Markdown sous 04_architecture-repository/.
 # Champs : id, type, niveau, chemin, status, title.
 # Statuts : draft | active | stable | candidate | deprecated
-# Total : 385 objets
+# Total : 369 objets
 #
 # Comptes par type :
 # - acteur : 6
@@ -12,7 +12,6 @@
 # - architecture-partition : 11
 # - architecture-pattern : 3
 # - capabilite : 18
-# - capacite : 16
 # - chapitre : 21
 # - compliance-rule : 1
 # - composant-applicatif : 25
@@ -44,7 +43,7 @@
 # - draft : 185
 # - active : 111
 # - stable : 29
-# - candidate : 60
+# - candidate : 44
 # - deprecated : 0
 
 # niveau 1 / flux-valeur (4)
@@ -1394,104 +1393,6 @@
   chemin: "05_building-blocks/abb/abb-service-terminologie.md"
   status: "candidate"
   title: "Service de terminologie et codification communes"
-
-# niveau 2 / capacite (16)
-- id: "CAP-INT-01"
-  type: "capacite"
-  niveau: "2"
-  chemin: "capacites/cap-int-01.md"
-  status: "candidate"
-  title: "Résolution d’identité du bénéficiaire"
-- id: "CAP-INT-02"
-  type: "capacite"
-  niveau: "2"
-  chemin: "capacites/cap-int-02.md"
-  status: "candidate"
-  title: "Registre et résolution des professionnels de santé"
-- id: "CAP-INT-03"
-  type: "capacite"
-  niveau: "2"
-  chemin: "capacites/cap-int-03.md"
-  status: "candidate"
-  title: "Échange et médiation inter-systèmes"
-- id: "CAP-INT-04"
-  type: "capacite"
-  niveau: "2"
-  chemin: "capacites/cap-int-04.md"
-  status: "candidate"
-  title: "Référentiel des structures et services de santé"
-- id: "CAP-INT-05"
-  type: "capacite"
-  niveau: "2"
-  chemin: "capacites/cap-int-05.md"
-  status: "candidate"
-  title: "Terminologie et codification communes"
-- id: "CAP-INT-06"
-  type: "capacite"
-  niveau: "2"
-  chemin: "capacites/cap-int-06.md"
-  status: "candidate"
-  title: "Catalogue des services et registre des contrats"
-- id: "CAP-INT-07"
-  type: "capacite"
-  niveau: "2"
-  chemin: "capacites/cap-int-07.md"
-  status: "candidate"
-  title: "Accès et exposition des données analytiques"
-- id: "CAP-INT-08"
-  type: "capacite"
-  niveau: "2"
-  chemin: "capacites/cap-int-08.md"
-  status: "candidate"
-  title: "Confiance, sécurité et autorisation"
-- id: "CAP-INT-09"
-  type: "capacite"
-  niveau: "2"
-  chemin: "capacites/cap-int-09.md"
-  status: "candidate"
-  title: "Gestion des consentements et bases d’autorisation"
-- id: "CAP-INT-10"
-  type: "capacite"
-  niveau: "2"
-  chemin: "capacites/cap-int-10.md"
-  status: "candidate"
-  title: "Provenance, audit et traçabilité"
-- id: "CAP-INT-11"
-  type: "capacite"
-  niveau: "2"
-  chemin: "capacites/cap-int-11.md"
-  status: "candidate"
-  title: "Qualité et réconciliation"
-- id: "CAP-INT-12"
-  type: "capacite"
-  niveau: "2"
-  chemin: "capacites/cap-int-12.md"
-  status: "candidate"
-  title: "Conformité et tests d’interopérabilité"
-- id: "CAP-INT-13"
-  type: "capacite"
-  niveau: "2"
-  chemin: "capacites/cap-int-13.md"
-  status: "candidate"
-  title: "Interopérabilité transfrontalière et confiance internationale"
-- id: "CAP-INT-14"
-  type: "capacite"
-  niveau: "2"
-  chemin: "capacites/cap-int-14.md"
-  status: "candidate"
-  title: "Échanges intersectoriels One Health"
-- id: "CAP-INT-15"
-  type: "capacite"
-  niveau: "2"
-  chemin: "capacites/cap-int-15.md"
-  status: "candidate"
-  title: "Échange et traçabilité de la chaîne d'approvisionnement sanitaire"
-- id: "CAP-INT-16"
-  type: "capacite"
-  niveau: "2"
-  chemin: "capacites/cap-int-16.md"
-  status: "candidate"
-  title: "Données environnementales et de résilience climatique"
 
 # niveau 2 / architecture-pattern (3)
 - id: "PAT-ECHANGE-INTERNATIONAL-IPS"

@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-10"]
-related: ["CAP-INT-08", "ART-0", "ART-4B", "ART-7", "ART-9", "CMP-15"]
+related: ["ABB-CONFIANCE-AUTORISATION", "ART-0", "ART-4B", "ART-7", "ART-9", "CMP-15"]
 ---
 
 # Profil technique national
@@ -21,9 +21,9 @@ Le **profil PT-10 — Confiance, authentification et autorisation** définit les
 
 Périmètre : identité sectorielle/fédérée, authentification, identité des systèmes, service d’autorisation, gestion des politiques et comptes techniques, fédération avec les identités pangouvernementales, gestion des certificats et secrets. Hors périmètre : le contenu métier des registres (PT-04, PT-05).
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-[CAP-INT-08: Confiance, sécurité et autorisation](../../04_architecture-repository/capacites/cap-int-08.md)
+[ABB-CONFIANCE-AUTORISATION: Confiance, sécurité et autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-confiance-autorisation.md)
 
 ## 3. Chapitres ART applicables
 
@@ -141,7 +141,7 @@ En cas d'urgence vitale documentée (code U3 ou U4), les restrictions RBAC sont 
 | Alerte épidémique de niveau 4 | Accès en lecture aux données de surveillance pour tous les acteurs de la riposte | Journalisation automatique, révocation à la fin de l'épisode |
 | Catastrophe naturelle ou sanitaire | Mode dégradé : accès hors-ligne avec synchronisation différée | Piste d'audit complète après resynchronisation |
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-08](../../04_architecture-repository/capacites/cap-int-08.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-CONFIANCE-AUTORISATION](../../04_architecture-repository/05_building-blocks/abb/abb-confiance-autorisation.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -152,7 +152,7 @@ En cas d'urgence vitale documentée (code U3 ou U4), les restrictions RBAC sont 
 
 R = requis ; O = optionnel.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-08](../../04_architecture-repository/capacites/cap-int-08.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-CONFIANCE-AUTORISATION](../../04_architecture-repository/05_building-blocks/abb/abb-confiance-autorisation.md).
 ## 6. Content Modules
 
 - **Jeton d’accès IUA** : jeton portant les attributs d’autorisation pour services REST/FHIR.

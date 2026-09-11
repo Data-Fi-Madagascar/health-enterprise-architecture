@@ -9,7 +9,7 @@ status: stable
 owner: Responsables de capabilités métier
 version: "0.1"
 envelope: 00_caesn/03_capabilities/business.md
-maps_to: ["CAP-INT-03", "CAP-INT-01", "CAP-INT-13"]
+maps_to: ["ABB-ECHANGE-MEDIATION", "ABB-IDENTITE-BENEFICIAIRE", "PART-ECHANGE-TRANSFRONTALIER"]
 implements: []
 applies_to: ["VS-01"]
 related: ["CAP-05", "CAP-10", "CAP-14", "CAP-17"]

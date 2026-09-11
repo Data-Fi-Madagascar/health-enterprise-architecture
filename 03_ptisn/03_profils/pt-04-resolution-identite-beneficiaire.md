@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-04"]
-related: ["CAP-INT-01", "ART-4", "ART-4A", "ART-4B", "ART-7", "CMP-11"]
+related: ["ABB-IDENTITE-BENEFICIAIRE", "ART-4", "ART-4A", "ART-4B", "ART-7", "CMP-11"]
 ---
 
 # Profil technique national
@@ -21,9 +21,9 @@ Le **profil PT-04 — Résolution d’identité du bénéficiaire** définit le 
 
 Périmètre : recherche démographique, résolution et rapprochement d’identifiants, gestion des doublons et de la provenance. Hors périmètre : l’identité fondationnelle (CNIE), qui reste sous gouvernance interinstitutionnelle.
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-[CAP-INT-01: Résolution d'identité du bénéficiaire](../../04_architecture-repository/capacites/cap-int-01.md)
+[ABB-IDENTITE-BENEFICIAIRE: Résolution d'identité du bénéficiaire](../../04_architecture-repository/05_building-blocks/abb/abb-identite-beneficiaire.md)
 
 ## 3. Chapitres ART applicables
 
@@ -39,7 +39,7 @@ Périmètre : recherche démographique, résolution et rapprochement d’identif
 - **Gestionnaire de correspondance (Patient Identifier Cross-reference Manager)** — tient le golden record et la correspondance des identifiants.
 - **Fournisseur démographique (Patient Demographics Supplier)** — répond aux recherches démographiques.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-01](../../04_architecture-repository/capacites/cap-int-01.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-IDENTITE-BENEFICIAIRE](../../04_architecture-repository/05_building-blocks/abb/abb-identite-beneficiaire.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -51,7 +51,7 @@ Périmètre : recherche démographique, résolution et rapprochement d’identif
 
 R = requis ; O = optionnel.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-01](../../04_architecture-repository/capacites/cap-int-01.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-IDENTITE-BENEFICIAIRE](../../04_architecture-repository/05_building-blocks/abb/abb-identite-beneficiaire.md).
 ## 6. Content Modules
 
 - **HL7 FHIR Patient** : ressource de données démographiques et d’identifiants.

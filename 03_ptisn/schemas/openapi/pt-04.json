@@ -204,7 +204,13 @@
   "x-hea-version": "0.4",
   "x-hea-type": "profil-technique",
   "x-hea-maps-to": [
-    "CAP-INT-01"
+    "ABB-IDENTITE-BENEFICIAIRE",
+    "CAP-01",
+    "CAP-02",
+    "CAP-04",
+    "CAP-07",
+    "CAP-14",
+    "CAP-17"
   ],
   "x-hea-implements": [
     "ART-4",

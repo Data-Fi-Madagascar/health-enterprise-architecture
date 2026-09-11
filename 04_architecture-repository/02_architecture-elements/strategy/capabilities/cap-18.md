@@ -9,7 +9,7 @@ status: stable
 owner: Responsables de capabilités habilitantes
 version: "0.1.0"
 envelope: 00_caesn/03_capabilities/enabling.md
-maps_to: ["CAP-INT-03", "CAP-INT-14"]
+maps_to: ["ABB-ECHANGE-MEDIATION", "PART-ONE-HEALTH"]
 implements: []
 applies_to: ["VS-02"]
 related: ["VS-02", "PRC-04", "PRC-05"]

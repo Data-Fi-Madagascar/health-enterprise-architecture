@@ -7,6 +7,7 @@ title: Partition transverse - Interopérabilité
 status: draft
 owner: DEPSI
 version: "0.1"
+legacy_id: ["CAP-INT-03", "CAP-INT-06", "CAP-INT-11"]
 partition_kind: transverse
 togaf_repository_section: architecture-landscape
 togaf_adm_phase: C

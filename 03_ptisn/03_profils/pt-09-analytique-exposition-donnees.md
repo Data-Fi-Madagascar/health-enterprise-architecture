@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-09"]
-related: ["CAP-INT-07", "ART-3", "ART-5", "ART-6", "ART-7", "CMP-03", "CMP-04"]
+related: ["ABB-EXPOSITION-DONNEES-ANALYTIQUES", "ART-3", "ART-5", "ART-6", "ART-7", "CMP-03", "CMP-04"]
 ---
 
 # Profil technique national
@@ -21,9 +21,9 @@ Le **profil PT-09 — Analytique et exposition de données** définit les servic
 
 Périmètre : exposition et restitution analytique. Hors périmètre : l’échange de données agrégées brutes (voir PT-08) et la collecte métier.
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-[CAP-INT-07: Accès et exposition des données analytiques](../../04_architecture-repository/capacites/cap-int-07.md)
+[ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md)
 
 ## 3. Chapitres ART applicables
 
@@ -39,7 +39,7 @@ Périmètre : exposition et restitution analytique. Hors périmètre : l’écha
 - **Consommateur analytique (Data Consumer)** — tableau de bord, programme ou partenaire consultant les données exposées.
 - **Service de publication (Data Publication Service)** — diffuse les jeux de données autorisés.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-07](../../04_architecture-repository/capacites/cap-int-07.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-EXPOSITION-DONNEES-ANALYTIQUES](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -50,7 +50,7 @@ Périmètre : exposition et restitution analytique. Hors périmètre : l’écha
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-07](../../04_architecture-repository/capacites/cap-int-07.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-EXPOSITION-DONNEES-ANALYTIQUES](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md).
 ## 6. Content Modules
 
 - **HL7 FHIR MeasureReport** : indicateurs agrégés exposés.

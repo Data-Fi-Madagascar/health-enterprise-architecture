@@ -11,7 +11,7 @@ envelope: 01_cnisn/01_principes/index.md
 maps_to: ["CAP-14"]
 implements: []
 applies_to: []
-related: ["CAP-INT-03", "CAP-INT-05", "CAP-INT-06", "CAP-INT-07", "CAP-INT-11"]
+related: ["ABB-ECHANGE-MEDIATION", "ABB-SERVICE-TERMINOLOGIE", "ABB-CATALOGUE-CONTRATS", "ABB-EXPOSITION-DONNEES-ANALYTIQUES", "ABB-RECONCILIATION-DONNEES"]
 tags: ["cnisn", "niveau-2", "principe"]
 ---
 

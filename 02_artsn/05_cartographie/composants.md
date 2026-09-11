@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-08-21
 owner: DEPSI
 tags: ["artsn", "composants", "niveau-3"]
-related: ["CAP-INT-10", "ART-8C", "PRC-04", "PRC-05", "PRC-06"]
+related: ["ABB-AUDIT-PROVENANCE", "ART-8C", "PRC-04", "PRC-05", "PRC-06"]
 ---
 
 # Composants de la cartographie cible
@@ -25,7 +25,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 **Discipline de mise en œuvre.** Il constitue la seule source de vérité décisionnelle pour l'État ; tout indicateur officiel y transite. Il garantit l'unicité des métriques et la traçabilité des calculs.
 
-- **Rattachement** : [ART-6](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md) (projections analytiques), [CAP-INT-07: Accès et exposition des données analytiques](../../04_architecture-repository/capacites/cap-int-07.md), [CAP-INT-11: Qualité et réconciliation](../../04_architecture-repository/capacites/cap-int-11.md).
+- **Rattachement** : [ART-6](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md) (projections analytiques), [ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md), [ABB-RECONCILIATION-DONNEES: Qualité et réconciliation](../../04_architecture-repository/05_building-blocks/abb/abb-reconciliation-donnees.md).
 - **Processus soutenus** : [PRC-10: Planification et allocation des ressources](../../04_architecture-repository/02_architecture-elements/business/processes/prc-10.md) (planification), [PRC-11: Suivi et pilotage de la performance](../../04_architecture-repository/02_architecture-elements/business/processes/prc-11.md) (pilotage performance), [PRC-12: Redevabilité et amélioration continue](../../04_architecture-repository/02_architecture-elements/business/processes/prc-12.md) (redevabilité).
 - **Statut : Stable.**
 
@@ -35,7 +35,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 **Discipline de mise en œuvre.** Il est le point de convergence obligatoire de toute riposte coordonnée ; sans lui, les secteurs agissent en silos et la riposte reste fragmentée.
 
-- **Rattachement** : [ART-5](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md) (routeur alertes), [ART-0](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md) (accords partage), [CAP-INT-07: Accès et exposition des données analytiques](../../04_architecture-repository/capacites/cap-int-07.md).
+- **Rattachement** : [ART-5](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md) (routeur alertes), [ART-0](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md) (accords partage), [ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md).
 - **Processus soutenus** : [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (alerte/investigation/riposte), [PRC-11: Suivi et pilotage de la performance](../../04_architecture-repository/02_architecture-elements/business/processes/prc-11.md) (pilotage performance).
 - **Statut : Stable.**
 
@@ -45,7 +45,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 **Discipline de mise en œuvre.** Il garantit l'intégrité analytique ([ENF-5: Coordination des processus complexes décentralisés et asynchrones](../../04_architecture-repository/03_requirements/enf-5.md)) et l'irréversibilité du masquage des identités. Toute analyse officielle passe par cet entrepôt.
 
-- **Rattachement** : [ART-6](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md) (CQRS), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md) (Grand Livre), [CAP-INT-07: Accès et exposition des données analytiques](../../04_architecture-repository/capacites/cap-int-07.md), [CAP-INT-11: Qualité et réconciliation](../../04_architecture-repository/capacites/cap-int-11.md).
+- **Rattachement** : [ART-6](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md) (CQRS), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md) (Grand Livre), [ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md), [ABB-RECONCILIATION-DONNEES: Qualité et réconciliation](../../04_architecture-repository/05_building-blocks/abb/abb-reconciliation-donnees.md).
 - **Processus soutenus** : [PRC-09: Remboursement et régulation des mécanismes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-09.md) (remboursement), [PRC-11: Suivi et pilotage de la performance](../../04_architecture-repository/02_architecture-elements/business/processes/prc-11.md) (pilotage).
 - **Statut : Stable.**
 
@@ -55,7 +55,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 **Discipline de mise en œuvre.** Il sépare l'inférence analytique du stockage et garantit la traçabilité des modèles (versionnage, données d'entraînement) ainsi que l'audit des décisions automatisées ([ENF-2: Intégrité des flux et traçabilité des valeurs](../../04_architecture-repository/03_requirements/enf-2.md), [ENF-5: Coordination des processus complexes décentralisés et asynchrones](../../04_architecture-repository/03_requirements/enf-5.md)).
 
-- **Rattachement** : [ART-5](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md) (alertes), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md) (Grand Livre), [CAP-INT-07: Accès et exposition des données analytiques](../../04_architecture-repository/capacites/cap-int-07.md), [CAP-INT-10: Provenance, audit et traçabilité](../../04_architecture-repository/capacites/cap-int-10.md).
+- **Rattachement** : [ART-5](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md) (alertes), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md) (Grand Livre), [ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md), [ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md).
 - **Processus soutenus** : [PRC-09: Remboursement et régulation des mécanismes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-09.md) (remboursement), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (alerte/riposte).
 - **Statut : Stable.**
 
@@ -65,7 +65,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 **Discipline de mise en œuvre.** Il garantit la cohérence topologique du graphe national et la résilience spatiale ([ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../04_architecture-repository/03_requirements/enf-4.md)). Toute requête de navigation relationnelle passe par ce composant.
 
-- **Rattachement** : [ART-8B](../../04_architecture-repository/04_patterns/artsn-rules/art-8b.md) (graphe), [ART-4D](../../04_architecture-repository/04_patterns/artsn-rules/art-4d.md) (spatio-temporel), [CAP-INT-03: Échange et médiation inter-systèmes](../../04_architecture-repository/capacites/cap-int-03.md), [CAP-INT-12: Conformité et tests d’interopérabilité](../../04_architecture-repository/capacites/cap-int-12.md).
+- **Rattachement** : [ART-8B](../../04_architecture-repository/04_patterns/artsn-rules/art-8b.md) (graphe), [ART-4D](../../04_architecture-repository/04_patterns/artsn-rules/art-4d.md) (spatio-temporel), [ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md), [COMP-HOMOLOGATION-INTEROPERABILITE: Conformité et tests d’interopérabilité](../../04_architecture-repository/06_governance/compliance/comp-homologation-interoperabilite.md).
 - **Statut : Stable.**
 
 ### Intégration, Médiation, API Gateway, Broker & Registre schémas
@@ -74,7 +74,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 **Discipline de mise en œuvre.** Il forme la bordure de la plateforme ; tout flux entrant ou sortant le traverse. Il garantit l'éradication des silos (F.3) et la conformité aux contrats ([ENF-1: Résilience à l'instabilité réseau](../../04_architecture-repository/03_requirements/enf-1.md), [ENF-3: Unicité de l'identité et résilience face à la fragmentation applicative](../../04_architecture-repository/03_requirements/enf-3.md)).
 
-- **Rattachement** : [ART-1](../../04_architecture-repository/04_patterns/artsn-rules/art-1.md) (ingestion), [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md) (médiation), [F.3](../../04_architecture-repository/04_patterns/foundations/f-3.md) (schémas), [CAP-INT-01: Résolution d’identité du bénéficiaire](../../04_architecture-repository/capacites/cap-int-01.md), [CAP-INT-03: Échange et médiation inter-systèmes](../../04_architecture-repository/capacites/cap-int-03.md).
+- **Rattachement** : [ART-1](../../04_architecture-repository/04_patterns/artsn-rules/art-1.md) (ingestion), [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md) (médiation), [F.3](../../04_architecture-repository/04_patterns/foundations/f-3.md) (schémas), [ABB-IDENTITE-BENEFICIAIRE: Résolution d’identité du bénéficiaire](../../04_architecture-repository/05_building-blocks/abb/abb-identite-beneficiaire.md), [ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
 - **Statut : Stable.**
 
 ### Orchestrateur de parcours & Gestionnaire de Sagas (ART-8A)
@@ -83,7 +83,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 **Discipline de mise en œuvre.** Il est le point de coordination central de tous les flux transactionnels : toute opération multi-systèmes transite par cet orchestrateur. Il garantit l'atomicité logique des parcours complexes.
 
-- **Rattachement** : [ART-8A](../../04_architecture-repository/04_patterns/artsn-rules/art-8a.md) (orchestrateur de parcours), [CAP-INT-08: Confiance, sécurité et autorisation](../../04_architecture-repository/capacites/cap-int-08.md).
+- **Rattachement** : [ART-8A](../../04_architecture-repository/04_patterns/artsn-rules/art-8a.md) (orchestrateur de parcours), [ABB-CONFIANCE-AUTORISATION: Confiance, sécurité et autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-confiance-autorisation.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../04_architecture-repository/02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-06.md) (logistique).
 - **Statut : Stable.**
 
@@ -93,7 +93,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 **Discipline de mise en œuvre.** Il constitue la source de vérité clinique pour les applications opérationnelles. Toute donnée clinique créée ou modifiée dans les applications de point de service y est persistée.
 
-- **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [CAP-INT-09: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/capacites/cap-int-09.md).
+- **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../04_architecture-repository/02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie).
 - **Statut : Stable.**
 
@@ -103,7 +103,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 **Discipline de mise en œuvre.** Il est l'autorité sémantique de la plateforme. Toute définition de donnée clinique ou administrative passe par ce référentiel, ce qui garantit l'unicité des définitions à l'échelle nationale.
 
-- **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [CAP-INT-09: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/capacites/cap-int-09.md).
+- **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md).
 - **Processus soutenus** : [PRC-07: Identification et droits des bénéficiaires](../../04_architecture-repository/02_architecture-elements/business/processes/prc-07.md) (production données), [PRC-08: Financement et exemption au point de service](../../04_architecture-repository/02_architecture-elements/business/processes/prc-08.md) (qualité).
 - **Statut : Stable.**
 
@@ -113,7 +113,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 **Discipline de mise en œuvre.** Il sert de pont sémantique entre les systèmes hétérogènes. Il garantit que les données codées dans un système sont interprétables et exploitables par un autre.
 
-- **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [CAP-INT-09: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/capacites/cap-int-09.md).
+- **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md).
 - **Processus soutenus** : [PRC-07: Identification et droits des bénéficiaires](../../04_architecture-repository/02_architecture-elements/business/processes/prc-07.md) (production données), [PRC-08: Financement et exemption au point de service](../../04_architecture-repository/02_architecture-elements/business/processes/prc-08.md) (qualité).
 - **Statut : Stable.**
 
@@ -123,7 +123,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 **Discipline de mise en œuvre.** Il constitue l'identité nationale de référence pour tous les systèmes de santé. Toute identification patient transite par cet index, ce qui garantit l'unicité et la cohérence des identités.
 
-- **Rattachement** : [ART-4A](../../04_architecture-repository/04_patterns/artsn-rules/art-4a.md) (INP), [CAP-INT-09: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/capacites/cap-int-09.md).
+- **Rattachement** : [ART-4A](../../04_architecture-repository/04_patterns/artsn-rules/art-4a.md) (INP), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../04_architecture-repository/02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-06.md) (logistique).
 - **Statut : Stable.**
 
@@ -133,7 +133,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 **Discipline de mise en œuvre.** Il est l'autorité de vérification des droits. Toute opération de soins nécessitant une vérification de couverture transite par ce registre, ce qui garantit la conformité financière.
 
-- **Rattachement** : [ART-4C](../../04_architecture-repository/04_patterns/artsn-rules/art-4c.md) (éligibilité/couverture), [CAP-INT-09: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/capacites/cap-int-09.md).
+- **Rattachement** : [ART-4C](../../04_architecture-repository/04_patterns/artsn-rules/art-4c.md) (éligibilité/couverture), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md).
 - **Processus soutenus** : [PRC-09: Remboursement et régulation des mécanismes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-09.md) (finance), [PRC-10: Planification et allocation des ressources](../../04_architecture-repository/02_architecture-elements/business/processes/prc-10.md) (planification).
 - **Statut : Stable.**
 
@@ -143,7 +143,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 **Discipline de mise en œuvre.** Il constitue le référentiel de référence pour l'identification des intervenants. Toute intervention médicale enregistre l'identité du personnel via ce registre, ce qui garantit la traçabilité et la responsabilité.
 
-- **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [CAP-INT-09: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/capacites/cap-int-09.md).
+- **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../04_architecture-repository/02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie).
 - **Statut : Stable.**
 
@@ -153,7 +153,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 **Discipline de mise en œuvre.** Il est l'autorité de référence pour les produits et indicateurs. Toute définition de produit ou d'indicateur passe par ce registre, ce qui garantit l'unicité et la cohérence des référentiels.
 
-- **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [CAP-INT-09: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/capacites/cap-int-09.md).
+- **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md).
 - **Processus soutenus** : [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-06.md) (logistique).
 - **Statut : Stable.**
 
@@ -163,7 +163,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 **Discipline de mise en œuvre.** Il est le gardien de la plateforme. Toute requête externe ou inter-systèmes transite par ce point, ce qui garantit la sécurité, la disponibilité et la conformité des échanges.
 
-- **Rattachement** : [ART-5](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md) (routeur d'escalade), [CAP-INT-10: Provenance, audit et traçabilité](../../04_architecture-repository/capacites/cap-int-10.md).
+- **Rattachement** : [ART-5](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md) (routeur d'escalade), [ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../04_architecture-repository/02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-06.md) (logistique).
 - **Statut : Stable.**
 
@@ -173,7 +173,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 **Discipline de mise en œuvre.** Il est l'autorité de validation des échanges. Toute donnée échangée doit être conforme aux schémas définis ici, ce qui garantit l'intégrité et la cohérence des données.
 
-- **Rattachement** : [ART-5](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md) (routeur d'escalade), [CAP-INT-10: Provenance, audit et traçabilité](../../04_architecture-repository/capacites/cap-int-10.md).
+- **Rattachement** : [ART-5](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md) (routeur d'escalade), [ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md).
 - **Processus soutenus** : [PRC-07: Identification et droits des bénéficiaires](../../04_architecture-repository/02_architecture-elements/business/processes/prc-07.md) (production données), [PRC-08: Financement et exemption au point de service](../../04_architecture-repository/02_architecture-elements/business/processes/prc-08.md) (qualité).
 - **Statut : Stable.**
 
@@ -183,7 +183,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 **Discipline de mise en œuvre.** Il est le mécanisme de déconnexion des systèmes. Il permet la communication même en cas de défaillance temporaire d'un composant, ce qui garantit la continuité des échanges.
 
-- **Rattachement** : [ART-5](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md) (routeur d'escalade), [CAP-INT-10: Provenance, audit et traçabilité](../../04_architecture-repository/capacites/cap-int-10.md).
+- **Rattachement** : [ART-5](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md) (routeur d'escalade), [ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../04_architecture-repository/02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-06.md) (logistique).
 - **Statut : Stable.**
 
@@ -193,7 +193,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 **Discipline de mise en œuvre.** Il est le mécanisme de résolution des anomalies. Il permet la compensation automatique des erreurs et la cohérence des transactions, ce qui garantit la fiabilité des échanges critiques.
 
-- **Rattachement** : [ART-8C](../../04_architecture-repository/04_patterns/artsn-rules/art-8c.md) (Netting), [CAP-INT-10: Provenance, audit et traçabilité](../../04_architecture-repository/capacites/cap-int-10.md).
+- **Rattachement** : [ART-8C](../../04_architecture-repository/04_patterns/artsn-rules/art-8c.md) (Netting), [ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../04_architecture-repository/02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-06.md) (logistique).
 - **Statut : Stable.**
 

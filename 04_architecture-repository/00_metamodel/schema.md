@@ -63,14 +63,14 @@ Ce document définit le modèle d’objets du référentiel. Il est la source de
 | `partie-prenante` | legacy conservé | `04_architecture-repository/02_architecture-elements/motivation/stakeholders/` | `pp-` | ancien nom de type pour `stakeholder` |
 | `valeur` | legacy conservé | `04_architecture-repository/02_architecture-elements/motivation/values/` | `val-` | ancien nom de type pour `business-value` |
 | `lieu` | legacy conservé | `04_architecture-repository/02_architecture-elements/business/locations/` | `loc-` | ancien nom de type pour `business-location` |
-| `capacite` | legacy non actif | `04_architecture-repository/capacites/` | `cap-int-` | capacités CNISN conservées temporairement pour les tâches 6 et 7 |
+| `capacite` | supprimé des objets actifs | aucune fiche active | n/a | ancien type d'interopérabilité interdit par `scripts/validate_ref.py` |
 | `meta` | non indexé | `04_architecture-repository/00_metamodel/` | `schema` | métamodèle et documentation technique |
 
 ## Conventions de nommage
 
 - **Dossier** : nom court en kebab-case, singulier (`principes`, pas `principes/domaine`).
 - **Fichier** : `<id>-slugified.md`, id minuscule en kebab-case.
-- Normalisation des identifiants pendant la migration : `P-INT-01` → fichier `p-int-01.md` ; `CAP-INT-02` → `cap-int-02.md` ; `ART-4A` → `art-4a.md` ; `F.5` → `f-5.md` ; `PT-01` → `pt-01.md`.
+- Normalisation des identifiants pendant la migration : `P-INT-01` → fichier `p-int-01.md` ; `ABB-REGISTRE-PROFESSIONNELS` → `abb-registre-professionnels.md` ; `ART-4A` → `art-4a.md` ; `F.5` → `f-5.md` ; `PT-01` → `pt-01.md`. Les anciens identifiants d'interopérabilité ne sont conservés que dans `legacy_id` et dans la table de migration.
 - Le **code source** (`P-INT-01`) reste le titre H1 et le label canonique ; le nom de fichier est sa forme slugifiée.
 
 ## Frontmatter canonique
@@ -85,7 +85,7 @@ status: active            # draft | active | stable | candidate | deprecated
 owner: DEPSI              # entité responsable
 version: "0.5"            # version héritée de la source
 envelope: 01_cnisn/01_principes/index.md   # chemin de provenance pré-refactor
-maps_to: ["CAP-INT-01"]   # correspondance vers autre référentiel (id)
+maps_to: ["ABB-IDENTITE-BENEFICIAIRE"]   # correspondance vers autre référentiel (id)
 implements: []          # chapitre/objet mis en œuvre
 applies_to: []          # objets auxquels il s'applique
 related: []             # autres objets liés
@@ -105,7 +105,7 @@ tags: ["cnisn", "autorite", "donnees-de-reference"]
 | `owner` | oui | Responsable / entité de gouvernance |
 | `version` | non | Version héritée du document source |
 | `envelope` | conditionnel | Chemin du document d’origine ou du document enveloppe publié. Obligatoire pour les objets transclus dans les documents publiés ; absent pour les partitions TOGAF autonomes et les vues dérivées non indexées |
-| `family` | non | Famille de réponse (type `capacite` uniquement) : `referentiels`, `echange`, `analytique`, `confiance`, `qualite-conformite` |
+| `family` | non | Famille de réponse documentaire, conservée uniquement lorsque le générateur en a besoin |
 | `maps_to` | non | Liens typés : correspondance vers un autre objet du référentiel (ids) |
 | `implements` | non | Liens typés : chapitres / objets mis en œuvre |
 | `applies_to` | non | Liens typés : objets auxquels il s’applique |
@@ -156,13 +156,13 @@ Le corps suit le gabarit `H1 (titre) → H2 (finalité / contenu) → H3 (sous-s
 
 ## Liens
 
-- [CAP-INT-01 — Résolution d'identité du bénéficiaire](../capacites/cap-int-01.md)
+- [ABB-IDENTITE-BENEFICIAIRE — Résolution d'identité du bénéficiaire](../05_building-blocks/abb/abb-identite-beneficiaire.md)
 ```
 
 - Le **contenu textuel** des objets n’est **pas reformulé** : il est copié tel quel depuis la source (seule la structure de titres peut être normalisée).
 - Les relations transversales peuvent être portées par le frontmatter (`maps_to`, `implements`, `applies_to`, `related`) et/ou par une section `## Liens` en fin d’objet.
 - La **prose narrative** (paragraphes « pour qui lire », légendes, introductions) **reste dans le document source** et n’est pas dupliquée dans les objets.
-- Le champ `family` classe chaque capacité CNISN dans l’une des cinq familles de réponse alignées sur l’ARTSN (couches 3 à 5 et axes de la cartographie cible). Il est porté par le frontmatter des `cap-int-*.md` et sert d’en-tête de section dans `01_cnisn/02_capacites.md` (voir [annexe B](../../01_cnisn/08_annexes/b-articulation-art-sn.md)).
+- Le champ `legacy_id` porte la traçabilité des anciens bundles d'interopérabilité. Il ne constitue jamais une cible de relation active : les relations exploitables pointent vers les objets TOGAF de remplacement ou vers les capabilités CAESN `CAP-*`.
 
 ## Relations d'architecture (alignement ArchiMate)
 
@@ -179,7 +179,7 @@ Le référentiel suit le modèle de relations d'ArchiMate : la **capacité** est
 | Processus (PRC) | `uses` | Composant (CMP) | Business Process *served by* Application Component | le processus utilise le composant |
 | Composant (CMP) | `applies_to` | Processus (PRC) | Application Component *serves* Business Process | inverse de `uses` (coté composant applicatif uniquement) |
 | Composant (CMP) | `implements` | Chapitre (ART) | Application Component *realizes* Requirement | met en oeuvre la norme |
-| Composant (CMP) | `maps_to` | Capacité CNISN (CAP-INT) | Alignment | aligne la capacité ARTSN sur la capacité CNISN |
+| Composant (CMP) | `maps_to` | Objet d'interopérabilité CNISN/TOGAF ou capabilité CAESN | Alignment | aligne le composant sur l'objet de référence ou la capabilité cible |
 | Composant applicatif (CMP-01..25) | `uses` | Infrastructure (CMP-26..31) | Application Component *uses* Technology service | le composant applicatif utilise le socle infrastructural |
 | Composant applicatif (CMP-01..25) | `uses` | Sécurité (CMP-32..38) | Application Component *uses* Security service | le composant applicatif consomme les services de securite |
 | Sécurité (CMP-32..38) | `uses` | Infrastructure (CMP-26..31) | Security component *uses* Technology service | la securite utilise l'infrastructure |
@@ -194,12 +194,12 @@ Le référentiel suit le modèle de relations d'ArchiMate : la **capacité** est
 | Service (SRV) | `serves` | Partie prenante / Acteur | Service *serving* Stakeholder | le service crée de la valeur pour le bénéficiaire |
 | Service / Composant / Processus | `accesses` | Objet métier / Objet de données | Application/Component *access* Data Object | le service consomme / produit l'objet |
 | Objet métier / Objet de données | `accessed_by` | Service / Composant / Processus | inverse de `accesses` | navigabilité (coté objet) |
-| Service (SRV) | `realizes` / `implements` | Capacité (CAP/CAP-INT) / Chapitre (ART) | Service *realization* Capability/Requirement | le service met en œuvre la capacité |
+| Service (SRV) | `realizes` / `implements` | Capabilité CAESN / objet CNISN/TOGAF / chapitre ART | Service *realization* Capability/Requirement | le service met en œuvre l'objet ou la capabilité |
 | Capacité / Composant / Service | `realized_by` | Service / Paquet de travail / Plateau | inverse de `realizes` | navigabilité (coté capacité) |
 | Paquet de travail (WP) | `realizes` | Capacité / Composant / Service | Work Package *realization* | le lot réalise la capacité / le composant |
 | Paquet de travail (WP) | `contributes_to` | Plateau (PL) | Association | le lot contribue à l'état cible |
 | Plateau (PL) | `precedes` | Plateau (PL) | Ordre temporel | séquence de la roadmap |
-| Plateau (PL) | `realizes` | Capacité (CAP/CAP-INT) | Plateau *realization* Capability | l'état cible couvre la capacité |
+| Plateau (PL) | `realizes` | Capabilité CAESN / objet CNISN/TOGAF | Plateau *realization* Capability | l'état cible couvre l'objet ou la capabilité |
 | Écart (GAP) | `between` | Plateau, Plateau | Association | écart de couverture entre deux états |
 
 Règle d'intégrité : un flux de valeur ne doit laisser aucune capacité orpheline ; chaque processus liste ses capacités réalisées de façon **granulaire** (pas par copie du flux parent) ; `uses` (PRC -> CMP applicatif) et `applies_to` (CMP applicatif -> PRC) sont les deux sens d'une même relation *service* et doivent rester cohérents. Le socle transverse (infrastructure CMP-26..31, securite CMP-32..38) n'est **pas** lié directement aux processus : il est atteint via `uses` depuis les composants applicatifs. La gouvernance (CMP-39..46) n'utilise pas `uses` ; elle encadre les composants via `governs`.
@@ -220,7 +220,7 @@ Matrice de présence des concepts ArchiMate dans le référentiel après le plac
 | Motivation | Principle | `principe` (PA/PD) | ✓ |
 | Motivation | Stakeholder | `stakeholder`, legacy `partie-prenante` (PP) | ✓ |
 | Motivation | Value | `business-value`, legacy `valeur` | ✓ |
-| Strategy | Capability | `capabilite` (CAP), legacy non actif `capacite` (CAP-INT) | ✓ |
+| Strategy | Capability | `capabilite` (CAP) | ✓ |
 | Strategy | Resource / Course of Action | N/A | hors périmètre |
 | Business | Value Stream | `flux-de-valeur` (VS) | ✓ |
 | Business | Process | `processus-metier` (PRC) | ✓ |

@@ -8,7 +8,7 @@ status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: ["artsn", "chapitres", "ART-8A", "niveau-3"]
-related: ["CAP-INT-03", "ART-8A"]
+related: ["ABB-ECHANGE-MEDIATION", "ART-8A"]
 ---
 
 # Orchestration de processus borné

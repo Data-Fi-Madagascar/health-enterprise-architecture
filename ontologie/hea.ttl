@@ -64,7 +64,7 @@ hea:PartiePrenante rdf:type owl:Class ;
 
 hea:CapaciteInteroperabilite rdf:type owl:Class ;
     rdfs:label "Capacité d'interopérabilité" ;
-    rdfs:comment "Capacité d'interopérabilité CNISN (CAP-INT-01..16). ArchiMate: Capability." ;
+    rdfs:comment "Ancien paquet composite d'interopérabilité CNISN, décommissionné comme objet actif." ;
     rdfs:subClassOf hea:Capabilite .
 
 hea:Acteur rdf:type owl:Class ;
@@ -297,7 +297,7 @@ hea:contributesTo rdf:type owl:ObjectProperty ;
 # Utilisé comme Association avec contraintes de domaine/range.
 hea:mapsTo rdf:type owl:ObjectProperty ;
     rdfs:label "correspond à" ;
-    rdfs:comment "Association ArchiMate — correspondance inter-niveaux (Profil→CapInt/Chapitre/Fondation)" ;
+    rdfs:comment "Association ArchiMate — correspondance inter-niveaux (Profil→objet de référence/Chapitre/Fondation)" ;
     rdfs:domain hea:Profil ;
     rdfs:range [
         rdf:type owl:Class ;
@@ -474,7 +474,7 @@ hea:ProfilMinMapsTo rdf:type owl:Restriction ;
     owl:minCardinality 1 ;
     rdfs:subClassOf hea:Profil .
 
-# Toute capabilité d'interopérabilité doit avoir au moins 1 mapsTo vers un CAP
+# Tout ancien paquet d'interopérabilité doit avoir au moins 1 mapsTo vers un CAP
 hea:CapIntMinMapsTo rdf:type owl:Restriction ;
     owl:onProperty hea:mapsTo ;
     owl:minCardinality 1 ;

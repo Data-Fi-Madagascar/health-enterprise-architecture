@@ -17,13 +17,13 @@ Les 16 capacités du CNISN sont regroupées en huit familles de réponse (voir P
 
 | Famille CNISN | Capacités | Réponse ARTSN |
 |---|---|---|
-| 1. Référentiels et identités | CAP-INT-01, 02, 04, 05 | Couche 4 : services partagés : ART-4, ART-4A, ART-4C, ART-4D |
-| 2. Échange, médiation et contractualisation | CAP-INT-03, 06 | Couches 3 et 4 : échange, transport et médiation : ART-1, ART-2, ART-8A, ART-8C ; F.2, F.3 |
-| 3. Données analytiques et exposition | CAP-INT-07 | Couche 5 : projections analytiques : ART-6, ART-5, ART-8B, ART-9 |
-| 4. Confiance, sécurité et autorisation | CAP-INT-08, 09, 10 | Axe 1 : sécurité et confiance : ART-7, ART-4B, ART-9 ; F.5 |
-| 5. Qualité et conformité | CAP-INT-11, 12 | Axe 2 : gouvernance de données : F.4, ART-0, ART-5 |
-| 6. Interopérabilité transfrontalière | CAP-INT-13 | Couche 3 : échange sortant : ART-1 ; Axe 1 : confiance : ART-7 ; Couche 6 : pilotage intersectoriel : ART-0 |
-| 7. Échanges intersectoriels One Health | CAP-INT-14 | Couche 6 : pilotage : ART-11, ART-0 ; Couche 5 : analytique : ART-4D, ART-8B ; Fondation : F.2 |
+| 1. Référentiels et identités | ABB-IDENTITE-BENEFICIAIRE, 02, 04, 05 | Couche 4 : services partagés : ART-4, ART-4A, ART-4C, ART-4D |
+| 2. Échange, médiation et contractualisation | ABB-ECHANGE-MEDIATION, 06 | Couches 3 et 4 : échange, transport et médiation : ART-1, ART-2, ART-8A, ART-8C ; F.2, F.3 |
+| 3. Données analytiques et exposition | ABB-EXPOSITION-DONNEES-ANALYTIQUES | Couche 5 : projections analytiques : ART-6, ART-5, ART-8B, ART-9 |
+| 4. Confiance, sécurité et autorisation | ABB-CONFIANCE-AUTORISATION, 09, 10 | Axe 1 : sécurité et confiance : ART-7, ART-4B, ART-9 ; F.5 |
+| 5. Qualité et conformité | ABB-RECONCILIATION-DONNEES, 12 | Axe 2 : gouvernance de données : F.4, ART-0, ART-5 |
+| 6. Interopérabilité transfrontalière | PART-ECHANGE-TRANSFRONTALIER | Couche 3 : échange sortant : ART-1 ; Axe 1 : confiance : ART-7 ; Couche 6 : pilotage intersectoriel : ART-0 |
+| 7. Échanges intersectoriels One Health | PART-ONE-HEALTH | Couche 6 : pilotage : ART-11, ART-0 ; Couche 5 : analytique : ART-4D, ART-8B ; Fondation : F.2 |
 
 Cette articulation couvre les réponses d'architecture ; la traduction en standards, profils et versions relève du PTISN (voir matrice d'alignement).
 

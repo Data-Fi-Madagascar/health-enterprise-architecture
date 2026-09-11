@@ -723,7 +723,7 @@ Ce concept est mobilisé par les capacités [CAP-17 (engagement patient)](../../
 #### Rattachement
 
 - **Capacités** : [CAP-17 (engagement patient)](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-17.md)
-- **Capacités intégrées (CNISN)** : [CAP-INT-13 (interopérabilité transfrontalière)](../../04_architecture-repository/capacites/cap-int-13.md)
+- **Capacités intégrées (CNISN)** : [PART-ECHANGE-TRANSFRONTALIER (interopérabilité transfrontalière)](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md)
 - **Flux de valeur** : [VS-01 (parcours patient)](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
 - **Profils (PTISN)** : [PT-14 (interopérabilité transfrontalière)](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-14.md)
 - **Objet métier CAESN** : [BO-07 : Interopérabilité transfrontalière](../../04_architecture-repository/02_architecture-elements/business/business-objects/bo-07.md)
@@ -735,7 +735,7 @@ Unité structurée du résumé international du patient (IPS), regroupant une ca
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-INT-13](../../04_architecture-repository/capacites/cap-int-13.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md). Il est porté par l'objet métier [BO-07 : Interopérabilité transfrontalière](../../04_architecture-repository/02_architecture-elements/business/business-objects/bo-07.md) et traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-7](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md).
+Ce concept est mobilisé par les capacités [PART-ECHANGE-TRANSFRONTALIER](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md). Il est porté par l'objet métier [BO-07 : Interopérabilité transfrontalière](../../04_architecture-repository/02_architecture-elements/business/business-objects/bo-07.md) et traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-7](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md).
 
 #### Attributs et contraintes
 
@@ -745,7 +745,7 @@ Ce concept est mobilisé par les capacités [CAP-INT-13](../../04_architecture-r
 
 #### Rattachement
 
-- **Capacités intégrées (CNISN)** : [CAP-INT-13](../../04_architecture-repository/capacites/cap-int-13.md)
+- **Capacités intégrées (CNISN)** : [PART-ECHANGE-TRANSFRONTALIER](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md)
 - **Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
 - **Profils (PTISN)** : [PT-14](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-14.md)
 - **Objet métier CAESN** : [BO-07 : Interopérabilité transfrontalière](../../04_architecture-repository/02_architecture-elements/business/business-objects/bo-07.md)
@@ -780,7 +780,7 @@ Ce concept est mobilisé par les capacités [CAP-15](../../04_architecture-repos
 #### Rattachement
 
 - **Capacités** : [CAP-15](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md)
-- **Capacités intégrées (CNISN)** : [CAP-INT-13](../../04_architecture-repository/capacites/cap-int-13.md)
+- **Capacités intégrées (CNISN)** : [PART-ECHANGE-TRANSFRONTALIER](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md)
 - **Profils (PTISN)** : [PT-14](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-14.md)
 - **Objet métier CAESN** : [BO-07 : Interopérabilité transfrontalière](../../04_architecture-repository/02_architecture-elements/business/business-objects/bo-07.md)
 - **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-7](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
@@ -794,7 +794,7 @@ Ce concept est mobilisé par les capacités [CAP-15](../../04_architecture-repos
 - ART-2 : Médiation et normalisation
 - ART-7 : Sécurité, contrôle d'accès et résidence
 - PT-14 : Interopérabilité transfrontalière
-- CAP-INT-13 : Interopérabilité transfrontalière
+- PART-ECHANGE-TRANSFRONTALIER : Interopérabilité transfrontalière
 - CAESN : données
 - CAESN : domaines de données
 - CAESN : référentiels nationaux
@@ -810,7 +810,7 @@ Ce concept est mobilisé par les capacités [CAP-15](../../04_architecture-repos
 - **ART-2 : Médiation et normalisation** : Médiation et normalisation (`04_architecture-repository/04_patterns/artsn-rules/art-2.md`)
 - **ART-7 : Sécurité, contrôle d'accès et résidence** : Sécurité, contrôle d'accès et résidence de la donnée (`04_architecture-repository/04_patterns/artsn-rules/art-7.md`)
 - **PT-14 : Interopérabilité transfrontalière** : Interopérabilité transfrontalière (`03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md`)
-- **CAP-INT-13 : Interopérabilité transfrontalière** : Partie II : Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
+- **PART-ECHANGE-TRANSFRONTALIER : Interopérabilité transfrontalière** : Partie II : Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
 - **CAESN : données** : Architecture des données et de l'information sanitaire (`00_caesn/04_data/index.md`)
 - **CAESN : domaines de données** : Domaines de données prioritaires (`00_caesn/04_data/domains.md`)
 - **CAESN : référentiels nationaux** : Référentiels nationaux (`00_caesn/04_data/referentials.md`)

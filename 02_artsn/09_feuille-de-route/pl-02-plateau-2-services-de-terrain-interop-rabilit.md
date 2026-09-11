@@ -8,9 +8,10 @@ status: draft
 owner: Direction du Numérique en Santé
 version: "0.1"
 envelope: 02_artsn/09_feuille-de-route/pl-02-plateau-2-services-de-terrain-interop-rabilit.md
-realizes: ["CAP-01", "CAP-INT-03"]
+realizes: ["CAP-01", "ABB-ECHANGE-MEDIATION"]
+maps_to: ["CAP-13", "CAP-14", "CAP-18"]
 precedes: ["PL-03"]
-related: ["CAP-01", "CAP-INT-03", "SRV-02", "SRV-03", "CMP-10", "WP-02", "WP-03"]
+related: ["CAP-01", "ABB-ECHANGE-MEDIATION", "SRV-02", "SRV-03", "CMP-10", "WP-02", "WP-03"]
 tags: ["artsn", "plateau", "pl-02", "feuille-de-route"]
 ---
 
@@ -22,7 +23,7 @@ tags: ["artsn", "plateau", "pl-02", "feuille-de-route"]
 
 Le plateau 2 est l'état cible où les applications de terrain sont déployées, la médiation opérationnelle, les registres nationaux actifs et les premiers échanges inter-institutionnels réalisés. C'est le passage à l'échelle de l'interopérabilité.
 
-Il [couvre la capacité « Offre de soins et continuité »](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md) et la [capacité « Référentiels et terminologies »](../../04_architecture-repository/capacites/cap-int-03.md), et [précède le plateau 3](../../04_architecture-repository/07_migration/plateaux/pl-03.md). Les [paquets L2 et L3](../../04_architecture-repository/07_migration/work-packages/wp-02.md) le réalisent.
+Il [couvre la capacité « Offre de soins et continuité »](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md) et la [capacité « Référentiels et terminologies »](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md), et [précède le plateau 3](../../04_architecture-repository/07_migration/plateaux/pl-03.md). Les [paquets L2 et L3](../../04_architecture-repository/07_migration/work-packages/wp-02.md) le réalisent.
 
 ## État cible (borne temporelle)
 
@@ -30,7 +31,7 @@ Atteint à l'issue des lots qui y contribuent — il s'agit d'un état cible int
 
 ## Capacités couvertes
 
-Ce plateau couvre les éléments suivants : [CAP-01](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md), [CAP-INT-03](../../04_architecture-repository/capacites/cap-int-03.md).
+Ce plateau couvre les éléments suivants : [CAP-01](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md), [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
 
 ## Précédence
 

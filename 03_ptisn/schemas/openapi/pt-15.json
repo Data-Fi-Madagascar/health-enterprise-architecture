@@ -219,13 +219,14 @@
   "x-hea-version": "0.1",
   "x-hea-type": "profil-technique",
   "x-hea-maps-to": [
-    "CAP-INT-14",
-    "CAP-INT-16",
+    "PART-ONE-HEALTH",
+    "RD-DONNEES-ENVIRONNEMENTALES-CLIMAT",
     "CAP-18",
     "CAP-05",
     "CMP-02",
     "CMP-04",
-    "CMP-06"
+    "CMP-06",
+    "CAP-04"
   ],
   "x-hea-implements": [
     "ART-11",

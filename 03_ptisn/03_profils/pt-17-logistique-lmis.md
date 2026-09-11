@@ -7,7 +7,7 @@ status: candidate
 last_reviewed: 2026-08-24
 owner: DEPSI
 tags: ["ptisn", "niveau-4", "profils", "PT-17"]
-related: ["CAP-INT-10", "ART-10", "CMP-23"]
+related: ["ABB-AUDIT-PROVENANCE", "ART-10", "CMP-23"]
 ---
 
 # Logistique & chaîne d'approvisionnement (LMIS)
@@ -21,10 +21,10 @@ Le **profil PT-17 — Logistique & chaîne d’approvisionnement (LMIS)** défin
 
 Périmètre : mouvements de stock (livraison, dispensation, transfert, destruction), catalogue produit partagé, alertes de rupture/péremption. Norme de référence : [STD-0009: échange des données logistiques (LMIS)](../../01_cnisn/05_standards/std-0009-echange-donnees-logistiques-lmis.md).
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-- [CAP-INT-10: Provenance, audit et traçabilité](../../04_architecture-repository/capacites/cap-int-10.md)
-- [CAP-INT-15: Échange et traçabilité de la chaîne d'approvisionnement sanitaire](../../04_architecture-repository/capacites/cap-int-15.md)
+- [ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md)
+- [ABB-ECHANGE-LOGISTIQUE-LMIS: Échange et traçabilité de la chaîne d'approvisionnement sanitaire](../../04_architecture-repository/05_building-blocks/abb/abb-echange-logistique-lmis.md)
 
 ## 3. Chapitres ART applicables
 
@@ -39,7 +39,7 @@ Périmètre : mouvements de stock (livraison, dispensation, transfert, destructi
 - **Partenaire logistique** — système externe consommant/produisant des flux logistiques interopérables.
 - **Annuaire de sites (mCSD)** — fournit les lieux des mouvements (référence PT-06).
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-10](../../04_architecture-repository/capacites/cap-int-10.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-AUDIT-PROVENANCE](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -51,7 +51,7 @@ Périmètre : mouvements de stock (livraison, dispensation, transfert, destructi
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-10](../../04_architecture-repository/capacites/cap-int-10.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-AUDIT-PROVENANCE](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md).
 ## 6. Content Modules
 
 - **FHIR `Medication` / `MedicationKnowledge`** : catalogue produit (codification GS1 GTIN).
@@ -121,7 +121,7 @@ Une solution LMIS doit au minimum supporter :
 
 ## 12. Articulation avec les autres profils
 
-Le profil opérationnalise le chapitre [ART-10: Logistique](../../04_architecture-repository/04_patterns/artsn-rules/art-10.md) et les capacités CNISN [CAP-INT-10: Provenance, audit et traçabilité](../../04_architecture-repository/capacites/cap-int-10.md) et [CAP-INT-15: Échange et traçabilité de la chaîne d'approvisionnement](../../04_architecture-repository/capacites/cap-int-15.md), en s'appuyant sur le composant [CMP-23: Chaîne logistique (LMIS)](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-23.md) et conformément à l'exigence [ENF-2: Intégrité des flux et traçabilité des valeurs](../../04_architecture-repository/03_requirements/enf-2.md). L'échange interopérable respecte la norme [STD-0009](../../01_cnisn/05_standards/std-0009-echange-donnees-logistiques-lmis.md).
+Le profil opérationnalise le chapitre [ART-10: Logistique](../../04_architecture-repository/04_patterns/artsn-rules/art-10.md) et les objets CNISN/TOGAF [ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md) et [ABB-ECHANGE-LOGISTIQUE-LMIS: Échange et traçabilité de la chaîne d'approvisionnement](../../04_architecture-repository/05_building-blocks/abb/abb-echange-logistique-lmis.md), en s'appuyant sur le composant [CMP-23: Chaîne logistique (LMIS)](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-23.md) et conformément à l'exigence [ENF-2: Intégrité des flux et traçabilité des valeurs](../../04_architecture-repository/03_requirements/enf-2.md). L'échange interopérable respecte la norme [STD-0009](../../01_cnisn/05_standards/std-0009-echange-donnees-logistiques-lmis.md).
 
 ## 13. Limites et dépendances
 

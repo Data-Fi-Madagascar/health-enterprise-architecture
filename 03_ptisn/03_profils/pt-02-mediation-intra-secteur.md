@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-02"]
-related: ["CAP-INT-03", "ART-1", "ART-2", "ART-5", "ART-7", "ART-8", "ART-8C", "ART-8D", "CMP-06"]
+related: ["ABB-ECHANGE-MEDIATION", "ART-1", "ART-2", "ART-5", "ART-7", "ART-8", "ART-8C", "ART-8D", "CMP-06"]
 ---
 
 # Profil technique national
@@ -21,9 +21,9 @@ Le **profil PT-02 — Médiation intra-secteur** définit le service sectoriel d
 
 Périmètre : médiation intra-secteur santé (transformation sémantique, routage, orchestration légère entre services santé).
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-[CAP-INT-03: Échange et médiation inter-systèmes](../../04_architecture-repository/capacites/cap-int-03.md)
+[ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md)
 
 ## 3. Chapitres ART applicables
 
@@ -42,7 +42,7 @@ Périmètre : médiation intra-secteur santé (transformation sémantique, routa
 - **Point d’échange sectoriel** — route vers la plateforme interinstitutionnelle le cas échéant.
 - **Plateforme interinstitutionnelle (PT-01)** — assure la confiance entre organisations hors secteur santé.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-03](../../04_architecture-repository/capacites/cap-int-03.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -54,7 +54,7 @@ Périmètre : médiation intra-secteur santé (transformation sémantique, routa
 
 R = requis ; O = optionnel.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-03](../../04_architecture-repository/capacites/cap-int-03.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
 ## 6. Content Modules
 
 - **Ressources FHIR R4** : payloads normalisés par les profils métier (patient, practitioner, terminology…).

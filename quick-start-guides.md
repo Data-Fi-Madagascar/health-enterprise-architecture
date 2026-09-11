@@ -122,7 +122,7 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 | Mapper vers FHIR | [Champs "Référentiel source"](02_artsn/03_objets-de-donnees/index.md) | Champ technique dans le dictionnaire |
 | Consulter les flux | [Flux de valeur](04_architecture-repository/02_architecture-elements/strategy/value-streams) | VS-01..04 |
 | Suivre la trajectoire | [Trajectoire CNISN](01_cnisn/05_trajectoire/index.md) | 7 phases T4 2026–T2 2030 |
-| Vérifier la qualité | [CAP-INT-11: Qualité et réconciliation](04_architecture-repository/capacites/cap-int-11.md) | Qualité et réconciliation |
+| Vérifier la qualité | [PAT-QUALITE-RECONCILIATION: Qualité et réconciliation](04_architecture-repository/04_patterns/pat-qualite-reconciliation.md) | Qualité et réconciliation |
 
 ### Check-list de définition d'un concept de données
 

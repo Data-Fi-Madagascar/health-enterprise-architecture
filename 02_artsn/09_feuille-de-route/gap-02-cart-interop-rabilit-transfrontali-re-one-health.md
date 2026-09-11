@@ -9,7 +9,7 @@ owner: Direction du Numérique en Santé
 version: "0.1"
 envelope: 02_artsn/09_feuille-de-route/gap-02-cart-interop-rabilit-transfrontali-re-one-health.md
 between: ["PL-02", "PL-03"]
-related: ["PL-02", "PL-03", "CAP-INT-08", "PT-15"]
+related: ["PL-02", "PL-03", "ABB-CONFIANCE-AUTORISATION", "PT-15"]
 tags: ["artsn", "gap", "gap-02", "feuille-de-route"]
 ---
 
@@ -21,7 +21,7 @@ tags: ["artsn", "gap", "gap-02", "feuille-de-route"]
 
 L'ouverture internationale (GDHCN) et la coordination intersectorielle One Health ne sont couvertes qu'au dernier plateau. Cet écart signifie qu'une part de la valeur — échanges régionaux, surveillance multi-ministères — n'est produite que tardivement.
 
-Il s'inscrit [entre le plateau 2 et le plateau 3](../../04_architecture-repository/07_migration/plateaux/pl-02.md), et mobilise la [capacité « Interopérabilité et échanges »](../../04_architecture-repository/capacites/cap-int-08.md) ainsi que le profil [PT-15 (One Health)](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-15.md).
+Il s'inscrit [entre le plateau 2 et le plateau 3](../../04_architecture-repository/07_migration/plateaux/pl-02.md), et mobilise la [capacité « Interopérabilité et échanges »](../../04_architecture-repository/05_building-blocks/abb/abb-confiance-autorisation.md) ainsi que le profil [PT-15 (One Health)](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-15.md).
 
 ## Plateau source et cible
 

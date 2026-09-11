@@ -9,7 +9,7 @@ status: active
 owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
-maps_to: ["CAP-INT-09"]
+maps_to: ["ABB-GESTION-CONSENTEMENT"]
 implements: ["ART-4"]
 applies_to: ["PRC-07", "PRC-08"]
 related: ["ENF-4", "CAP-09", "VS-03"]
@@ -22,6 +22,6 @@ realized_by: ["WP-03"]
 
 **Discipline de mise en œuvre.** Il sert de pont sémantique entre les systèmes hétérogènes. Il garantit que les données codées dans un système sont interprétables et exploitables par un autre.
 
-- **Rattachement** : [ART-4](../../../04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [CAP-INT-09: Gestion des consentements et bases d’autorisation](../../../capacites/cap-int-09.md).
+- **Rattachement** : [ART-4](../../../04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../abb-gestion-consentement.md).
 - **Processus soutenus** : [PRC-07: Identification et droits des bénéficiaires](../../../02_architecture-elements/business/processes/prc-07.md) (production données), [PRC-08: Financement et exemption au point de service](../../../02_architecture-elements/business/processes/prc-08.md) (qualité).
 - **Statut : Stable.**

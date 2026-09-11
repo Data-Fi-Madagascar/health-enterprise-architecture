@@ -9,14 +9,14 @@ version: "0.1"
 envelope: 00_caesn/07_governance/roles/rol-04-gestionnaire-logistique.md
 assigned_to: ["ACT-03"]
 performs: ["PRC-08"]
-related: ["PRC-08", "ACT-03", "CAP-INT-10"]
+related: ["PRC-08", "ACT-03", "ABB-AUDIT-PROVENANCE"]
 tags: ["caesn", "role", "rol-04", "governance"]
 ---
 # Gestionnaire logistique
 
 Le gestionnaire logistique planifie et suit la chaîne d'approvisionnement et les stocks. Il est [assigné à la formation sanitaire](../actors/act-03.md) et [exécute le processus de gestion de la chaîne logistique](../processes/prc-08.md).
 
-Son rôle contribue à la [capacité « Chaîne logistique et traçabilité »](../../../capacites/cap-int-10.md), condition indispensable à la disponibilité des médicaments et intrants.
+Son rôle contribue à la [capacité « Chaîne logistique et traçabilité »](../../../05_building-blocks/abb/abb-audit-provenance.md), condition indispensable à la disponibilité des médicaments et intrants.
 
 ## Affectation
 

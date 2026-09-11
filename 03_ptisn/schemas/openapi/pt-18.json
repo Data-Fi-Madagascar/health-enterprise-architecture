@@ -441,7 +441,9 @@
   "x-hea-version": "0.4",
   "x-hea-type": "profil-technique",
   "x-hea-maps-to": [
-    "CAP-INT-07"
+    "ABB-EXPOSITION-DONNEES-ANALYTIQUES",
+    "CAP-05",
+    "CAP-13"
   ],
   "x-hea-implements": [
     "ART-2",

@@ -16,7 +16,7 @@ tags: ["caesn", "role", "rol-03", "governance"]
 
 Le gestionnaire de données administre les registres, les référentiels et la qualité des données. Il est [assigné à l'équipe technique DEPSI / SIS](../../../04_architecture-repository/02_architecture-elements/business/actors/act-06.md) et [exécute le processus de gouvernance des données](../../../04_architecture-repository/02_architecture-elements/business/processes/prc-09.md).
 
-Il contribue à la [capacité « Gouvernance des données »](../../../04_architecture-repository/capacites/cap-int-04.md) : sans lui, les référentiels (patients, personnels, produits, terminologies) ne seraient ni fiables ni réconciliés.
+Il contribue à la [capacité « Gouvernance des données »](../../../04_architecture-repository/05_building-blocks/abb/abb-referentiel-structures-services.md) : sans lui, les référentiels (patients, personnels, produits, terminologies) ne seraient ni fiables ni réconciliés.
 
 ## Affectation
 

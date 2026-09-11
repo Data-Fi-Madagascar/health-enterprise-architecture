@@ -10,7 +10,7 @@ owner: DEPSI
 version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
 implements: ["ENF-1", "F-1"]
-maps_to: ["CAP-INT-14"]
+maps_to: ["PART-ONE-HEALTH"]
 applies_to: ["PRC-04", "PRC-05"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-24", "couche-2"]
 related: ["VS-02", "VS-04"]

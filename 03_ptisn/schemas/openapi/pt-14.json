@@ -363,11 +363,12 @@
   "x-hea-version": "0.1",
   "x-hea-type": "profil-technique",
   "x-hea-maps-to": [
-    "CAP-INT-13",
+    "PART-ECHANGE-TRANSFRONTALIER",
     "CAP-15",
     "CAP-17",
     "CMP-06",
-    "CMP-15"
+    "CMP-15",
+    "CAP-18"
   ],
   "x-hea-implements": [
     "ART-7",

@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-12"]
-related: ["CAP-INT-10", "F-1", "F-5", "F-6", "ART-3", "ART-7", "CMP-17"]
+related: ["ABB-AUDIT-PROVENANCE", "F-1", "F-5", "F-6", "ART-3", "ART-7", "CMP-17"]
 ---
 
 # Profil technique national
@@ -21,9 +21,9 @@ Le **profil PT-12 — Audit, provenance et traçabilité** définit les services
 
 Périmètre : événements métier, provenance des ressources, audit de sécurité, observabilité. Hors périmètre : les événements métier ne doivent pas être confondus avec les logs techniques.
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-[CAP-INT-10: Provenance, audit et traçabilité](../../04_architecture-repository/capacites/cap-int-10.md)
+[ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md)
 
 ## 3. Chapitres ART applicables
 
@@ -40,7 +40,7 @@ Périmètre : événements métier, provenance des ressources, audit de sécurit
 - **Dépôt de provenance (Provenance Consumer/Repository)** — conserve l’origine et les transformations des ressources.
 - **Service d’observabilité (Observability Service)** — agrège logs, métriques, traces.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-10](../../04_architecture-repository/capacites/cap-int-10.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-AUDIT-PROVENANCE](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -52,7 +52,7 @@ Périmètre : événements métier, provenance des ressources, audit de sécurit
 
 R = requis ; O = optionnel.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-10](../../04_architecture-repository/capacites/cap-int-10.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-AUDIT-PROVENANCE](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md).
 ## 6. Content Modules
 
 - **HL7 FHIR AuditEvent** : activité à portée d’audit.
