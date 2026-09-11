@@ -4,7 +4,7 @@ id: task-6-report
 title: Rapport Task 6 - Décomposition des CAP-INT CNISN
 version: 1.0.0
 status: stable
-last_reviewed: 2026-09-10
+last_reviewed: 2026-09-11
 owner: Codex
 tags:
   - togaf
@@ -77,3 +77,25 @@ Le validateur signale encore quatre avertissements préexistants sur les profils
 ## 6. Exclusions
 
 La modification préexistante de `.gitignore` a été laissée hors périmètre. Les dossiers `graphify-out/` et `.obsidian/` n'ont pas été inclus dans les changements de la Task 6.
+
+## 7. Fix round 1/5 - corrections post-review
+
+Deux findings HIGH du review indépendant ont été corrigés sans élargir le périmètre à la Task 7.
+
+| Finding | Correction appliquée |
+|---------|----------------------|
+| Famille logistique rendue sous la famille 7 | Ajout de l'en-tête source `## Famille 8 : Logistique et chaîne d'approvisionnement` avant le bloc généré logistique dans `01_cnisn/02_capacites/index.md`, puis régénération des enveloppes et de Mintlify. |
+| `REQ-OH-03` imposait une désanonymisation irréversible | Remplacement dans la source `04_architecture-repository/03_requirements/req-oh-03.md` par `irréversiblement anonymisées`, puis propagation générée vers l'enveloppe CNISN, les vues TOGAF et Mintlify. |
+
+Commandes exécutées pour cette passe:
+
+| Commande | Résultat |
+|----------|----------|
+| `python3 scripts/build_ref_index.py` | OK, `04_architecture-repository/_index.yaml` généré. |
+| `python3 scripts/build_wrappers.py` | OK, `109 enveloppes écrites`. |
+| `python3 scripts/build_mintlify.py` | OK, artefact Mintlify généré dans `mintlify-site`. |
+| `python3 scripts/validate_ref.py` | OK, `CONFORME`, `385` objets indexés, `6157` liens relatifs vérifiés. |
+| `python3 scripts/build_ref_index.py --check` | OK, index à jour. |
+| `python3 scripts/build_wrappers.py --check` | OK, `109 enveloppes à jour`. |
+| `git diff --check` | OK, aucun problème d'espace ou de conflit. |
+| `make check` | OK, chaîne complète conforme. |

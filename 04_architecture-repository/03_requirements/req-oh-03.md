@@ -3,7 +3,7 @@ domain: 03_requirements
 id: REQ-OH-03
 type: exigence
 niveau: "2"
-title: Les données agrégées croisées doivent être irréversiblement désanonymisées.
+title: Les données agrégées croisées doivent être irréversiblement anonymisées.
 status: candidate
 owner: DEPSI
 version: "0.1"
@@ -20,11 +20,11 @@ implements: ["ART-0", "ART-11"]
 related: ["PART-ONE-HEALTH", "ENF-4"]
 tags: ["cnisn", "exigence", "one-health"]
 ---
-# Les données agrégées croisées doivent être irréversiblement désanonymisées.
+# Les données agrégées croisées doivent être irréversiblement anonymisées.
 
 ## Énoncé
 
-Les données agrégées croisées doivent être irréversiblement désanonymisées.
+Les données agrégées croisées doivent être irréversiblement anonymisées.
 
 ## Rattachement
 

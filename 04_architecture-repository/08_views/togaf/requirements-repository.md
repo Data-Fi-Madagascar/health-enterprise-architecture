@@ -27,7 +27,7 @@ Cette vue consolide les exigences contextuelles qui structurent l'ARTSN. Elle se
 | ENF-5 | Coordination des processus complexes décentralisés et asynchrones | — | draft | ENF-5 |
 | REQ-OH-01 | Tout échange intersectoriel doit être couvert par un accord explicite entre ministères. | CAP-18, ART-0, ART-11 | candidate | REQ-OH-01 |
 | REQ-OH-02 | Les identités humaines ne doivent jamais être croisées avec les identités animales. | CAP-18, ART-0, ART-11 | candidate | REQ-OH-02 |
-| REQ-OH-03 | Les données agrégées croisées doivent être irréversiblement désanonymisées. | CAP-18, ART-0, ART-11 | candidate | REQ-OH-03 |
+| REQ-OH-03 | Les données agrégées croisées doivent être irréversiblement anonymisées. | CAP-18, ART-0, ART-11 | candidate | REQ-OH-03 |
 | REQ-OH-04 | Chaque secteur conserve la souveraineté sur ses données source. | CAP-18, ART-0, ART-11 | candidate | REQ-OH-04 |
 | REQ-OH-05 | Les dimensions d'agrégation communes doivent être normalisées. | CAP-18, ART-0, ART-11 | candidate | REQ-OH-05 |
 | REQ-OH-06 | Tous les échanges intersectoriels doivent être journalisés et auditables. | CAP-18, ART-0, ART-11 | candidate | REQ-OH-06 |
