@@ -127,6 +127,17 @@ tags: ["cnisn", "autorite", "donnees-de-reference"]
 | `between` | non | Écart (gap) entre deux plateaux |
 | `categorie` | non | Sous-couche ArchiMate de l'objet : `applicatif`, `infrastructure`, `securite`, `principe`, `regulation`, `acteur`, `work-package`, `data-object` |
 | `governs` | non | Liens typés : element de gouvernance qui encadre/valide un composant (sens gouvernance -> composant) |
+| `partition_kind` | conditionnel | Catégorie d'une `architecture-partition` : `value-stream`, `transverse`, `sectorielle` ou `externe` |
+| `togaf_repository_section` | conditionnel | Section TOGAF qui gouverne l'objet : `architecture-landscape`, `standards-information-base`, `reference-library`, `governance-log` ou `requirements-repository` |
+| `togaf_adm_phase` | conditionnel | Phase ADM principale qui produit ou gouverne l'objet : `B`, `C`, `D`, `G` ou `Requirements Management` |
+| `architecture_level` | conditionnel | Niveau d'architecture : `enterprise-transversal`, `segment` ou `extended-enterprise` |
+| `architecture_domain` | conditionnel | Domaine principal : `motivation`, `business`, `data`, `application`, `technology` ou `governance` |
+| `architecture_scope` | conditionnel | Portée gouvernée : `value-stream`, `transverse`, `interoperability`, `one-health` ou `cross-border-exchange` |
+| `architecture_state` | conditionnel | État temporel de l'architecture. La valeur actuellement contrôlée est `target` |
+| `partitions` | non | Relation vers une ou plusieurs cibles de type `architecture-partition`. Toute autre cible est invalide |
+| `building_block_role` | conditionnel | Rôle TOGAF du bloc. Les blocs d'architecture portent la valeur `ABB` |
+| `building_block_domain` | conditionnel | Domaine de réalisation du bloc : `data`, `application` ou `technology` |
+| `legacy_id` | non | Identifiant ou liste d'identifiants historiques conservés uniquement pour la traçabilité de migration |
 | `tags` | non | Mots-clés pour l’indexation |
 
 ### Statuts
@@ -163,6 +174,7 @@ Le corps suit le gabarit `H1 (titre) → H2 (finalité / contenu) → H3 (sous-s
 - Les relations transversales peuvent être portées par le frontmatter (`maps_to`, `implements`, `applies_to`, `related`) et/ou par une section `## Liens` en fin d’objet.
 - La **prose narrative** (paragraphes « pour qui lire », légendes, introductions) **reste dans le document source** et n’est pas dupliquée dans les objets.
 - Le champ `legacy_id` porte la traçabilité des anciens bundles d'interopérabilité. Il ne constitue jamais une cible de relation active : les relations exploitables pointent vers les objets TOGAF de remplacement ou vers les capabilités CAESN `CAP-*`.
+- Le champ `partitions` rattache un objet à son périmètre de gouvernance TOGAF. Le validateur résout chaque identifiant et impose le type cible `architecture-partition`.
 
 ## Relations d'architecture (alignement ArchiMate)
 

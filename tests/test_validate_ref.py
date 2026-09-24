@@ -54,5 +54,53 @@ class ValidatorConfigurationTests(unittest.TestCase):
             self.assertNotIn("CAP-INT-", maps_to_lines[0])
 
 
+class PartitionRelationTests(unittest.TestCase):
+    def setUp(self):
+        self.validator = load_validator()
+
+    def test_partition_relation_accepts_architecture_partition_target(self):
+        objects = {
+            "ABB-EXEMPLE": {
+                "id": "ABB-EXEMPLE",
+                "file": "/tmp/abb-exemple.md",
+                "type": "architecture-building-block",
+                "relations": {"partitions": {"PART-VS-01"}},
+            },
+            "PART-VS-01": {
+                "id": "PART-VS-01",
+                "file": "/tmp/part-vs-01.md",
+                "type": "architecture-partition",
+                "relations": {},
+            },
+        }
+
+        errors = self.validator.check_partition_relation_types(objects)
+
+        self.assertEqual([], errors)
+
+    def test_partition_relation_rejects_non_partition_target(self):
+        objects = {
+            "ABB-EXEMPLE": {
+                "id": "ABB-EXEMPLE",
+                "file": "/tmp/abb-exemple.md",
+                "type": "architecture-building-block",
+                "relations": {"partitions": {"CAP-14"}},
+            },
+            "CAP-14": {
+                "id": "CAP-14",
+                "file": "/tmp/cap-14.md",
+                "type": "capabilite",
+                "relations": {},
+            },
+        }
+
+        errors = self.validator.check_partition_relation_types(objects)
+
+        self.assertEqual(1, len(errors))
+        self.assertEqual("ABB-EXEMPLE", errors[0][1])
+        self.assertEqual("CAP-14", errors[0][2])
+        self.assertIn("architecture-partition", errors[0][3])
+
+
 if __name__ == "__main__":
     unittest.main()
