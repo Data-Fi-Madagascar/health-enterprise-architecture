@@ -186,6 +186,17 @@ class CanonicalMappingTests(unittest.TestCase):
             self.validator.fm_field(frontmatter, key)
         ))
 
+    def test_pt_20_maps_eligibility_profile_to_architecture(self):
+        pt20 = Path(
+            "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-20.md"
+        )
+        self.assertEqual(
+            {"ABB-ELIGIBILITE-COUVERTURE", "CAP-07"},
+            self.relation_values(pt20, "maps_to"),
+        )
+        self.assertEqual({"CMP-12"}, self.relation_values(pt20, "applies_to"))
+        self.assertEqual({"ART-4C", "ART-9"}, self.relation_values(pt20, "implements"))
+
     def test_legacy_services_realize_their_business_responsibility(self):
         expected = {
             "srv-03.md": {"ABB-SERVICE-TERMINOLOGIE"},

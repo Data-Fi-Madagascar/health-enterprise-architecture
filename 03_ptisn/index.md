@@ -56,7 +56,7 @@ ptisn/
 │   └── tests.md            # scénarios de validation et d'homologation
 ```
 
-Les profils de la Partie III (PT-01…PT-19) sont les **profils nationaux de référence** versionnés dans ce cadre. La Partie V fournit le **template de fiche d'initiative** : chaque initiative instancie sa propre fiche (dossier `ptisn/<initiative-id>/`) au moment de sa conception ; ces fiches par initiative ne sont pas versionnées dans le présent dépôt de référence.
+Les profils de la Partie III (PT-01…PT-20) sont les **profils nationaux de référence** versionnés dans ce cadre. La Partie V fournit le **template de fiche d'initiative** : chaque initiative instancie sa propre fiche (dossier `ptisn/<initiative-id>/`) au moment de sa conception ; ces fiches par initiative ne sont pas versionnées dans le présent dépôt de référence.
 
 ## Liens
 

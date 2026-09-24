@@ -318,6 +318,7 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | PT-17 | Logistique & chaîne d'approvisionnement (LMIS) | CMP-23, ABB-AUDIT-PROVENANCE, ABB-ECHANGE-LOGISTIQUE-LMIS, CAP-03, CAP-08, CAP-12, CAP-13, CAP-15, CAP-06, CAP-10, CAP-11, ART-10, PT-13 | active | PT-17 |
 | PT-18 | Échange de réclamations et paiements | ABB-EXPOSITION-DONNEES-ANALYTIQUES, CAP-05, CAP-13, ART-2, ART-9 | active | PT-18 |
 | PT-19 | Aide à la décision clinique (CDS) | CMP-08, ABB-SERVICE-TERMINOLOGIE, CAP-13, CAP-14, ART-12, ART-2 | active | PT-19 |
+| PT-20 | Éligibilité et couverture | CMP-12, ABB-ELIGIBILITE-COUVERTURE, CAP-07, ART-4C, ART-9, DO-14, DO-15, DO-16, DO-17 | candidate | PT-20 |
 | RD-DONNEES-ENVIRONNEMENTALES-CLIMAT | Données environnementales et de résilience climatique | CAP-04, CAP-05, CAP-18, ART-4D, ART-11, PART-ONE-HEALTH, ENF-4 | candidate | RD-DONNEES-ENVIRONNEMENTALES-CLIMAT |
 | RD-STRUCTURES-SERVICES | Données de référence des structures et services | CAP-11, CAP-13, CAP-14, ART-4, ART-5, ART-6, ABB-REFERENTIEL-STRUCTURES-SERVICES, DO-23 | candidate | RD-STRUCTURES-SERVICES |
 | REQ-OH-01 | Tout échange intersectoriel doit être couvert par un accord explicite entre ministères. | CAP-18, ART-0, ART-11, PART-ONE-HEALTH, ENF-4 | candidate | REQ-OH-01 |

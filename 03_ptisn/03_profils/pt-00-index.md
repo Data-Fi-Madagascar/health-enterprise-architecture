@@ -11,7 +11,7 @@ tags: ["ptisn", "niveau-4", "profils"]
 
 # Partie III : Profils techniques nationaux
 
-Catalogue des 19 profils techniques. Chaque profil est un objet du référentiel (`04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-XX.md`) ; les objets d'interopérabilité et chapitres ART ont été alignés sur le CNISN et l'ARTSN pendant la migration (voir `coherence-report.md`).
+Catalogue des 20 profils techniques. Chaque profil est un objet du référentiel (`04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-XX.md`) ; les objets d'interopérabilité et chapitres ART ont été alignés sur le CNISN et l'ARTSN pendant la migration (voir `coherence-report.md`).
 
 ## Qu'est-ce qu'un PT (profil de mise en œuvre) ?
 
@@ -48,14 +48,15 @@ Pour éviter les confusions :
 | PT-17 | Logistique & chaîne d'approvisionnement (LMIS) | CMP-23, ABB-AUDIT-PROVENANCE, ABB-ECHANGE-LOGISTIQUE-LMIS, CAP-03, CAP-08, CAP-12, CAP-13, CAP-15, CAP-06, CAP-10, CAP-11, ART-10, PT-13 | active | PT-17 |
 | PT-18 | Échange de réclamations et paiements | ABB-EXPOSITION-DONNEES-ANALYTIQUES, CAP-05, CAP-13, ART-2, ART-9 | active | PT-18 |
 | PT-19 | Aide à la décision clinique (CDS) | CMP-08, ABB-SERVICE-TERMINOLOGIE, CAP-13, CAP-14, ART-12, ART-2 | active | PT-19 |
+| PT-20 | Éligibilité et couverture | CMP-12, ABB-ELIGIBILITE-COUVERTURE, CAP-07, ART-4C, ART-9, DO-14, DO-15, DO-16, DO-17 | candidate | PT-20 |
 
 <!-- END:GENERATED -->
 
 ## Maturité et statuts des profils
 
-L'ensemble des profils de référence est à l'état `active` dans le référentiel ; leur **maturité contractuelle** vis-à-vis de l'ARTSN est en revanche à `draft` (profil candidat non encore homologué), à l'exception de PT-17 (`candidate`). Aucun profil n'est encore `recommandé`, `retenu` ou `homologué` ; cette table sera mise à jour au fil des décisions du Comité National (voir l'annexe `e-priorisation-decisions`).
+La plupart des profils de référence sont à l'état `active` dans le référentiel ; PT-17 et PT-20 sont `candidate`. Leur **maturité contractuelle** vis-à-vis de l'ARTSN reste à établir par les initiatives. Aucun profil n'est encore `recommandé`, `retenu` ou `homologué` ; cette table sera mise à jour au fil des décisions du Comité National (voir l'annexe `e-priorisation-decisions`).
 
 | Statut | Profils |
 |--------|---------|
-| candidate | PT-17 |
+| candidate | PT-17, PT-20 |
 | draft | PT-01, PT-02, PT-03, PT-04, PT-05, PT-06, PT-07, PT-08, PT-09, PT-10, PT-11, PT-12, PT-13, PT-14, PT-15, PT-16, PT-18, PT-19 |

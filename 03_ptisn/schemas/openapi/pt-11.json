@@ -207,9 +207,7 @@
     "ART-7",
     "ART-11"
   ],
-  "x-hea-applies-to": [
-    "CMP-12"
-  ],
+  "x-hea-applies-to": [],
   "x-hea-source": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-11.md",
   "x-hea-fhir-resources": [
     "Consent"

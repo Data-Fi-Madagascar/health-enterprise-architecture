@@ -177,8 +177,7 @@
   "x-hea-implements": [
     "ART-4",
     "ART-4A",
-    "ART-7",
-    "ART-4C"
+    "ART-7"
   ],
   "x-hea-applies-to": [
     "CMP-13"

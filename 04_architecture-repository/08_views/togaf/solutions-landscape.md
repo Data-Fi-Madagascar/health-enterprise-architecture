@@ -39,6 +39,7 @@ Cette vue expose les blocs de solution et les contrats techniques qui matériali
 | PT-17 | Logistique & chaîne d'approvisionnement (LMIS) | CMP-23, ABB-AUDIT-PROVENANCE, ABB-ECHANGE-LOGISTIQUE-LMIS, CAP-03, CAP-08, CAP-12, CAP-13, CAP-15, CAP-06, CAP-10, CAP-11, ART-10, PT-13 | active | PT-17 |
 | PT-18 | Échange de réclamations et paiements | ABB-EXPOSITION-DONNEES-ANALYTIQUES, CAP-05, CAP-13, ART-2, ART-9 | active | PT-18 |
 | PT-19 | Aide à la décision clinique (CDS) | CMP-08, ABB-SERVICE-TERMINOLOGIE, CAP-13, CAP-14, ART-12, ART-2 | active | PT-19 |
+| PT-20 | Éligibilité et couverture | CMP-12, ABB-ELIGIBILITE-COUVERTURE, CAP-07, ART-4C, ART-9, DO-14, DO-15, DO-16, DO-17 | candidate | PT-20 |
 
 <!-- END:GENERATED -->
 

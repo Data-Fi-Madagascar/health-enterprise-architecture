@@ -46,7 +46,7 @@ Le PTISN est organisé en huit parties complétées par des annexes. Le tableau 
 | Préambule | Positionnement, fonction, hiérarchie | Tous |
 | Règles d'utilisation | Types de décisions, statuts, versionnement | Équipes techniques, DEPSI |
 | Topologie nationale cible | Architecture cible, couches, responsabilités | Architectes, intégrateurs |
-| Profils techniques | 19 profils PT-01 à PT-19 | Développeurs, fournisseurs |
+| Profils techniques | 20 profils PT-01 à PT-20 | Développeurs, fournisseurs |
 | Matrice d'alignement | Mapping objets CNISN/TOGAF ↔ profils ↔ ART | DEPSI, validateurs |
 | Template de fiche d'initiative | Template pour chaque initiative | Équipes projet |
 | Gouvernance | Processus d'adoption, critères, homologation | Décideurs, gouvernance |
@@ -99,6 +99,7 @@ Les dix-neuf profils couvrent l'ensemble des objets d'interopérabilité du CNIS
 | PT-17 | ABB-AUDIT-PROVENANCE, ABB-ECHANGE-LOGISTIQUE-LMIS | Logistique & chaîne d'approvisionnement (LMIS), échange STD-0009 |
 | PT-18 | CAP-07, VS-03 | Échange de réclamations et paiements |
 | PT-19 | ART-12 | Aide à la décision clinique (CDS) |
+| PT-20 | ART-4C, ART-9 | Éligibilité et couverture |
 
 ## 5. Statuts des décisions techniques
 

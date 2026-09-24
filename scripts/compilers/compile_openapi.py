@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 """Compile les profils techniques HEA en spécifications OpenAPI 3.0.
 
-Générateur générique : dérive une spécification OpenAPI 3.0 pour chacun des
-19 profils techniques (PT-01..PT-19) depuis la source structurée
+Générateur générique : dérive une spécification OpenAPI 3.0 pour chaque profil
+technique du catalogue depuis la source structurée
 `04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-*.md` (tableau des transactions, acteurs, standards,
 content modules). Le générateur ne code rien en dur : chaque opération est
 déduite de la transaction (standard → méthode HTTP + chemin + schémas).
@@ -18,7 +18,7 @@ versionné, source de vérité des contrats API).
 
 Usage :
     python3 scripts/compilers/compile_openapi.py               # génère 03_ptisn/schemas/openapi/
-    python3 scripts/compilers/compile_openapi.py --validate    # valide les 19 specs
+    python3 scripts/compilers/compile_openapi.py --validate    # valide les specs
     python3 scripts/compilers/compile_openapi.py --check       # vérifie sans écrire
     python3 scripts/compilers/compile_openapi.py --output /tmp/...   # répertoire custom
 """
@@ -140,7 +140,8 @@ FHIR_RESOURCES = [
     "MeasureReport", "Group", "AuditEvent", "Provenance", "Consent",
     "Composition", "ServiceRequest", "Observation", "Communication",
     "Medication", "MedicationKnowledge", "InventoryReport", "SupplyDelivery",
-    "SupplyRequest", "CoverageEligibilityRequest", "CoverageEligibilityResponse",
+    "SupplyRequest", "Coverage", "CoverageEligibilityRequest", "CoverageEligibilityResponse",
+    "InsurancePlan",
     "Claim", "ClaimResponse", "PaymentNotice", "PlanDefinition",
     "ActivityDefinition", "Bundle", "MessageHeader", "OperationDefinition",
     "Task", "Questionnaire", "QuestionnaireResponse", "Encounter", "Procedure",
@@ -1154,6 +1155,10 @@ SERVER_BY_PROFILE = {
     "PT-17": ("https://lmis.health.mg/api/v1", "Service logistique et chaîne d'approvisionnement (LMIS)"),
     "PT-18": ("https://claims.health.mg/api/v1", "Bus d'échange de réclamations et paiements"),
     "PT-19": ("https://cds.health.mg/api/v1", "Service national d'aide à la décision clinique"),
+    "PT-20": (
+        "https://coverage.health.mg/fhir",
+        "Registre national d'éligibilité et de couverture",
+    ),
 }
 
 SPECIAL_GENERATORS = {
