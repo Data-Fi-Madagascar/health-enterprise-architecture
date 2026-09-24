@@ -218,7 +218,7 @@ class CanonicalMappingTests(unittest.TestCase):
         expected = {
             "cmp-10.md": {"ABB-SERVICE-TERMINOLOGIE"},
             "cmp-11.md": {"ABB-IDENTITE-BENEFICIAIRE"},
-            "cmp-12.md": {"CAP-07"},
+            "cmp-12.md": {"ABB-ELIGIBILITE-COUVERTURE"},
             "cmp-14.md": {
                 "ABB-SERVICE-TERMINOLOGIE",
                 "ABB-ECHANGE-LOGISTIQUE-LMIS",
@@ -235,6 +235,23 @@ class CanonicalMappingTests(unittest.TestCase):
                 self.relation_values(base / filename, "maps_to"),
                 filename,
             )
+
+    def test_eligibility_is_separate_from_identity_and_consent(self):
+        abb = Path("04_architecture-repository/05_building-blocks/abb/abb-eligibilite-couverture.md")
+        self.assertEqual({"CAP-07"}, self.relation_values(abb, "maps_to"))
+        self.assertEqual({"PART-VS-03"}, self.relation_values(abb, "partitions"))
+        self.assertEqual({"ART-4C", "ART-9"}, self.relation_values(abb, "implements"))
+        self.assertEqual(
+            {"DO-14", "DO-15", "DO-16", "DO-17"},
+            self.relation_values(abb, "accesses"),
+        )
+
+        professionals = Path("04_architecture-repository/05_building-blocks/abb/abb-registre-professionnels.md")
+        pt05 = Path("04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md")
+        pt11 = Path("04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-11.md")
+        self.assertNotIn("ART-4C", self.relation_values(professionals, "implements"))
+        self.assertNotIn("ART-4C", self.relation_values(pt05, "implements"))
+        self.assertNotIn("CMP-12", self.relation_values(pt11, "applies_to"))
 
 
 if __name__ == "__main__":

@@ -19,7 +19,7 @@ architecture_scope: interoperability
 architecture_state: target
 partitions: ["PART-TRANSVERSE-IDENTITE"]
 maps_to: ["CAP-09", "CAP-14"]
-implements: ["ART-4", "ART-4A", "ART-7", "ART-4C"]
+implements: ["ART-4", "ART-4A", "ART-7"]
 related: ["PART-TRANSVERSE-IDENTITE", "P-INT-01", "P-INT-02", "P-INT-03", "P-INT-04", "P-INT-14", "P-INT-15"]
 tags: ["cnisn", "abb", "professionnels", "interoperabilite"]
 ---

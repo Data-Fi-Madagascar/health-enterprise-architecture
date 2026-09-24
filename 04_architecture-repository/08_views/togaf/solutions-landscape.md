@@ -24,13 +24,13 @@ Cette vue expose les blocs de solution et les contrats techniques qui matériali
 | PT-02 | Médiation intra-secteur | CMP-06, ABB-ECHANGE-MEDIATION, CAP-13, CAP-14, CAP-18, ART-1, ART-2, ART-5, ART-7, ART-8, ART-8C, ART-8D | active | PT-02 |
 | PT-03 | Catalogue des services et registre des contrats | CMP-16, ABB-CATALOGUE-CONTRATS, CAP-12, CAP-14, CAP-16, F-3, F-4, ART-1, ART-2 | active | PT-03 |
 | PT-04 | Résolution d’identité du bénéficiaire | CMP-11, ABB-IDENTITE-BENEFICIAIRE, CAP-01, CAP-02, CAP-04, CAP-07, CAP-14, CAP-17, ART-4, ART-4A, ART-4B, ART-7 | active | PT-04 |
-| PT-05 | Registre des professionnels | CMP-13, ABB-REGISTRE-PROFESSIONNELS, CAP-09, CAP-14, ART-4, ART-4A, ART-7, ART-4C | active | PT-05 |
+| PT-05 | Registre des professionnels | CMP-13, ABB-REGISTRE-PROFESSIONNELS, CAP-09, CAP-14, ART-4, ART-4A, ART-7 | active | PT-05 |
 | PT-06 | Référentiel des structures et services de santé | CMP-08, ABB-REFERENTIEL-STRUCTURES-SERVICES, CAP-11, CAP-13, CAP-14, ART-4, ART-5, ART-6 | active | PT-06 |
 | PT-07 | Terminologie et codification | CMP-10, ABB-SERVICE-TERMINOLOGIE, CAP-13, CAP-14, ART-2, ART-4, ART-5 | active | PT-07 |
 | PT-08 | Échange de données agrégées | CMP-03, CMP-06, ABB-ECHANGE-MEDIATION, ABB-EXPOSITION-DONNEES-ANALYTIQUES, CAP-13, CAP-14, CAP-18, CAP-05, ART-1, ART-2, ART-5, ART-6 | active | PT-08 |
 | PT-09 | Analytique et exposition de données | CMP-03, CMP-04, ABB-EXPOSITION-DONNEES-ANALYTIQUES, CAP-05, CAP-13, ART-3, ART-5, ART-6, ART-7 | active | PT-09 |
 | PT-10 | Confiance, authentification et autorisation | CMP-15, ABB-CONFIANCE-AUTORISATION, CAP-15, ART-0, ART-4B, ART-7, ART-9 | active | PT-10 |
-| PT-11 | Consentement et bases d’autorisation | CMP-12, ABB-GESTION-CONSENTEMENT, CAP-15, CAP-17, ART-0, ART-4B, ART-7, ART-11 | active | PT-11 |
+| PT-11 | Consentement et bases d’autorisation | ABB-GESTION-CONSENTEMENT, CAP-15, CAP-17, ART-0, ART-4B, ART-7, ART-11 | active | PT-11 |
 | PT-12 | Audit, provenance et traçabilité | CMP-17, ABB-AUDIT-PROVENANCE, CAP-03, CAP-08, CAP-12, CAP-13, CAP-15, F-1, F-5, F-6, ART-3, ART-7 | active | PT-12 |
 | PT-13 | Qualité et réconciliation | CMP-05, ABB-RECONCILIATION-DONNEES, CAP-13, CAP-14, ART-4, ART-5, ART-6 | active | PT-13 |
 | PT-14 | Interopérabilité transfrontalière | PART-ECHANGE-TRANSFRONTALIER, CAP-15, CAP-17, CMP-06, CMP-15, CAP-18, ART-7, ART-0, ART-1 | active | PT-14 |

@@ -34,12 +34,13 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | ABB-CONFIANCE-AUTORISATION | Confiance, sécurité et autorisation | CAP-15, ART-0, ART-4B, ART-7, ART-9, PART-TRANSVERSE-SECURITE-CONFIANCE, P-INT-14, P-INT-15, P-INT-16, P-INT-17, P-INT-18, P-INT-19, P-INT-20 | candidate | ABB-CONFIANCE-AUTORISATION |
 | ABB-ECHANGE-LOGISTIQUE-LMIS | Échange logistique LMIS | CAP-06, CAP-10, CAP-11, ART-10, CMP-23, ENF-2, PART-TRANSVERSE-INTEROPERABILITE, P-INT-03, P-INT-07, P-INT-18 | candidate | ABB-ECHANGE-LOGISTIQUE-LMIS |
 | ABB-ECHANGE-MEDIATION | Échange et médiation inter-systèmes | CAP-13, CAP-14, CAP-18, ART-1, ART-2, F-3, PAT-ECHANGE-MEDIATION, PART-TRANSVERSE-INTEROPERABILITE, P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-10, P-INT-11, P-INT-12, P-INT-13, P-INT-18, P-INT-19, P-INT-20, P-INT-21, P-INT-22, P-INT-23, P-INT-24, P-INT-25 | candidate | ABB-ECHANGE-MEDIATION |
+| ABB-ELIGIBILITE-COUVERTURE | Éligibilité et couverture sanitaire | CAP-07, ART-4C, ART-9, PART-VS-03, PRC-09, PRC-10, DO-14, DO-15, DO-16, DO-17 | candidate | ABB-ELIGIBILITE-COUVERTURE |
 | ABB-EXPOSITION-DONNEES-ANALYTIQUES | Accès et exposition des données analytiques | CAP-05, CAP-13, ART-3, ART-5, ART-6, ART-7, PART-TRANSVERSE-ANALYTICS-PILOTAGE, P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-17, P-INT-18, P-INT-19, P-INT-20, P-INT-21, P-INT-22, P-INT-23, P-INT-24, P-INT-25 | candidate | ABB-EXPOSITION-DONNEES-ANALYTIQUES |
 | ABB-GESTION-CONSENTEMENT | Gestion des consentements et bases d'autorisation | CAP-15, CAP-17, ART-0, ART-4B, ART-7, ART-11, PART-TRANSVERSE-SECURITE-CONFIANCE, P-INT-14, P-INT-15, P-INT-16, P-INT-17 | candidate | ABB-GESTION-CONSENTEMENT |
 | ABB-IDENTITE-BENEFICIAIRE | Résolution d'identité du bénéficiaire | CAP-01, CAP-02, CAP-04, CAP-07, CAP-14, CAP-17, ART-4, ART-4A, ART-7, PART-TRANSVERSE-IDENTITE, P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-14, P-INT-15, P-INT-16, P-INT-17, P-INT-18 | candidate | ABB-IDENTITE-BENEFICIAIRE |
 | ABB-RECONCILIATION-DONNEES | Qualité et réconciliation des données | CAP-13, CAP-14, ART-4, ART-5, ART-6, PAT-QUALITE-RECONCILIATION, PART-TRANSVERSE-INTEROPERABILITE, P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-23, P-INT-24, P-INT-25 | candidate | ABB-RECONCILIATION-DONNEES |
 | ABB-REFERENTIEL-STRUCTURES-SERVICES | Référentiel des structures et services de santé | CAP-11, CAP-13, CAP-14, ART-4, ART-5, ART-6, RD-STRUCTURES-SERVICES, PART-TRANSVERSE-DONNEES-REFERENTIELLES, DO-23, P-INT-01, P-INT-02, P-INT-03, P-INT-04 | candidate | ABB-REFERENTIEL-STRUCTURES-SERVICES |
-| ABB-REGISTRE-PROFESSIONNELS | Registre et résolution des professionnels de santé | CAP-09, CAP-14, ART-4, ART-4A, ART-7, ART-4C, PART-TRANSVERSE-IDENTITE, P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-14, P-INT-15 | candidate | ABB-REGISTRE-PROFESSIONNELS |
+| ABB-REGISTRE-PROFESSIONNELS | Registre et résolution des professionnels de santé | CAP-09, CAP-14, ART-4, ART-4A, ART-7, PART-TRANSVERSE-IDENTITE, P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-14, P-INT-15 | candidate | ABB-REGISTRE-PROFESSIONNELS |
 | ABB-SERVICE-TERMINOLOGIE | Service de terminologie et codification communes | CAP-13, CAP-14, ART-2, ART-4, ART-5, TERM-CODIFICATION-COMMUNE, PART-TRANSVERSE-DONNEES-REFERENTIELLES, STD-0007, P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-05, P-INT-06 | candidate | ABB-SERVICE-TERMINOLOGIE |
 | AC-CATALOGUE-SERVICES | Contrat d'architecture du catalogue de services | CAP-12, CAP-14, CAP-16, ART-1, ART-2, F-3, F-4, ABB-CATALOGUE-CONTRATS | candidate | AC-CATALOGUE-SERVICES |
 | ACT-01 | Patient et usager (acteur) | PP-01, VS-01, CAP-17 | draft | ACT-01 |
@@ -105,7 +106,7 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | CMP-09 | Référentiel des métadonnées d'exploitation (ART-4) | PRC-07, PRC-08, ABB-GESTION-CONSENTEMENT, ART-4, ENF-4, CAP-09, VS-03 | active | CMP-09 |
 | CMP-10 | Registre des terminologies | PRC-07, PRC-08, ABB-SERVICE-TERMINOLOGIE, ART-4, ENF-4, CAP-09, VS-03 | active | CMP-10 |
 | CMP-11 | Registre des clients / Index National des Patients (INP — ART-4A) | PRC-04, PRC-05, PRC-06, ABB-IDENTITE-BENEFICIAIRE, ART-4A, ENF-3, CAP-09, VS-02 | active | CMP-11 |
-| CMP-12 | Registre d'éligibilité et de couverture (CSU — ART-4C) | PRC-09, PRC-10, CAP-07, ART-4C, VS-03 | active | CMP-12 |
+| CMP-12 | Registre d'éligibilité et de couverture (CSU — ART-4C) | PRC-09, PRC-10, ABB-ELIGIBILITE-COUVERTURE, ART-4C, CAP-07, VS-03 | active | CMP-12 |
 | CMP-13 | Registre des personnels | PRC-04, PRC-05, ABB-GESTION-CONSENTEMENT, ART-4, ENF-3, CAP-09, VS-02 | active | CMP-13 |
 | CMP-14 | Registre des produits, intrants et indicateurs | PRC-05, PRC-06, ABB-SERVICE-TERMINOLOGIE, ABB-ECHANGE-LOGISTIQUE-LMIS, ART-4, ENF-3, CAP-09, VS-02 | active | CMP-14 |
 | CMP-15 | API Gateway | PRC-04, PRC-05, PRC-06, PRC-13, ABB-AUDIT-PROVENANCE, ART-5, ENF-3, CAP-10, VS-02 | active | CMP-15 |
@@ -162,10 +163,10 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | DO-11 | DO-11 : Produit de santé | ART-2, ART-4, ART-9, BO-03 | draft | DO-11 |
 | DO-12 | DO-12 : Lot | ART-2, ART-4, ART-9, BO-03 | draft | DO-12 |
 | DO-13 | DO-13 : Stock | ART-2, ART-4, ART-9, BO-03 | draft | DO-13 |
-| DO-14 | DO-14 : Éligibilité | ART-2, ART-4, ART-9, BO-04 | draft | DO-14 |
-| DO-15 | DO-15 : Couverture sanitaire | ART-2, ART-4, ART-9, BO-04 | draft | DO-15 |
-| DO-16 | DO-16 : Facturation | ART-2, ART-4, ART-9, BO-04 | draft | DO-16 |
-| DO-17 | DO-17 : Vérification d'éligibilité | ART-2, ART-4, ART-9, BO-04 | draft | DO-17 |
+| DO-14 | DO-14 : Éligibilité | ART-2, ART-4, ART-9, BO-04, ABB-ELIGIBILITE-COUVERTURE | draft | DO-14 |
+| DO-15 | DO-15 : Couverture sanitaire | ART-2, ART-4, ART-9, BO-04, ABB-ELIGIBILITE-COUVERTURE | draft | DO-15 |
+| DO-16 | DO-16 : Facturation | ART-2, ART-4, ART-9, BO-04, ABB-ELIGIBILITE-COUVERTURE | draft | DO-16 |
+| DO-17 | DO-17 : Vérification d'éligibilité | ART-2, ART-4, ART-9, BO-04, ABB-ELIGIBILITE-COUVERTURE | draft | DO-17 |
 | DO-18 | DO-18 : Signal | ART-2, ART-3, BO-05 | draft | DO-18 |
 | DO-19 | DO-19 : Foyer | ART-2, ART-3, BO-05 | draft | DO-19 |
 | DO-20 | DO-20 : Investigation | ART-2, ART-3, BO-05 | draft | DO-20 |
@@ -302,13 +303,13 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | PT-02 | Médiation intra-secteur | CMP-06, ABB-ECHANGE-MEDIATION, CAP-13, CAP-14, CAP-18, ART-1, ART-2, ART-5, ART-7, ART-8, ART-8C, ART-8D | active | PT-02 |
 | PT-03 | Catalogue des services et registre des contrats | CMP-16, ABB-CATALOGUE-CONTRATS, CAP-12, CAP-14, CAP-16, F-3, F-4, ART-1, ART-2 | active | PT-03 |
 | PT-04 | Résolution d’identité du bénéficiaire | CMP-11, ABB-IDENTITE-BENEFICIAIRE, CAP-01, CAP-02, CAP-04, CAP-07, CAP-14, CAP-17, ART-4, ART-4A, ART-4B, ART-7 | active | PT-04 |
-| PT-05 | Registre des professionnels | CMP-13, ABB-REGISTRE-PROFESSIONNELS, CAP-09, CAP-14, ART-4, ART-4A, ART-7, ART-4C | active | PT-05 |
+| PT-05 | Registre des professionnels | CMP-13, ABB-REGISTRE-PROFESSIONNELS, CAP-09, CAP-14, ART-4, ART-4A, ART-7 | active | PT-05 |
 | PT-06 | Référentiel des structures et services de santé | CMP-08, ABB-REFERENTIEL-STRUCTURES-SERVICES, CAP-11, CAP-13, CAP-14, ART-4, ART-5, ART-6 | active | PT-06 |
 | PT-07 | Terminologie et codification | CMP-10, ABB-SERVICE-TERMINOLOGIE, CAP-13, CAP-14, ART-2, ART-4, ART-5 | active | PT-07 |
 | PT-08 | Échange de données agrégées | CMP-03, CMP-06, ABB-ECHANGE-MEDIATION, ABB-EXPOSITION-DONNEES-ANALYTIQUES, CAP-13, CAP-14, CAP-18, CAP-05, ART-1, ART-2, ART-5, ART-6 | active | PT-08 |
 | PT-09 | Analytique et exposition de données | CMP-03, CMP-04, ABB-EXPOSITION-DONNEES-ANALYTIQUES, CAP-05, CAP-13, ART-3, ART-5, ART-6, ART-7 | active | PT-09 |
 | PT-10 | Confiance, authentification et autorisation | CMP-15, ABB-CONFIANCE-AUTORISATION, CAP-15, ART-0, ART-4B, ART-7, ART-9 | active | PT-10 |
-| PT-11 | Consentement et bases d’autorisation | CMP-12, ABB-GESTION-CONSENTEMENT, CAP-15, CAP-17, ART-0, ART-4B, ART-7, ART-11 | active | PT-11 |
+| PT-11 | Consentement et bases d’autorisation | ABB-GESTION-CONSENTEMENT, CAP-15, CAP-17, ART-0, ART-4B, ART-7, ART-11 | active | PT-11 |
 | PT-12 | Audit, provenance et traçabilité | CMP-17, ABB-AUDIT-PROVENANCE, CAP-03, CAP-08, CAP-12, CAP-13, CAP-15, F-1, F-5, F-6, ART-3, ART-7 | active | PT-12 |
 | PT-13 | Qualité et réconciliation | CMP-05, ABB-RECONCILIATION-DONNEES, CAP-13, CAP-14, ART-4, ART-5, ART-6 | active | PT-13 |
 | PT-14 | Interopérabilité transfrontalière | PART-ECHANGE-TRANSFRONTALIER, CAP-15, CAP-17, CMP-06, CMP-15, CAP-18, ART-7, ART-0, ART-1 | active | PT-14 |
@@ -384,7 +385,7 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | VS-04-07 | Amélioration continue | CAP-03, CAP-16, CAP-08, VS-04 | draft | VS-04-07 |
 | WP-01 | Infrastructure & sécurité | CAP-01, CAP-02, CAP-04, CAP-07, CAP-14, CAP-17, CMP-26, CMP-32, CMP-39, ABB-IDENTITE-BENEFICIAIRE, SRV-04, PL-01 | draft | WP-01 |
 | WP-02 | Applications terrain & collecte | CMP-09, CMP-23, SRV-02, SRV-05, CAP-01, PL-02 | draft | WP-02 |
-| WP-03 | Médiation & registres partagés | CAP-13, CAP-14, CAP-18, CMP-10, CMP-11, CMP-12, SRV-03, SRV-04, ABB-ECHANGE-MEDIATION, ABB-SERVICE-TERMINOLOGIE, ABB-IDENTITE-BENEFICIAIRE, PL-02 | draft | WP-03 |
+| WP-03 | Médiation & registres partagés | CAP-13, CAP-14, CAP-18, CMP-10, CMP-11, CMP-12, SRV-03, SRV-04, ABB-ECHANGE-MEDIATION, ABB-SERVICE-TERMINOLOGIE, ABB-IDENTITE-BENEFICIAIRE, ABB-ELIGIBILITE-COUVERTURE, PL-02 | draft | WP-03 |
 | WP-04 | Analytique & pilotage | CMP-02, CMP-03, CMP-04, SRV-06, ABB-EXPOSITION-DONNEES-ANALYTIQUES, CAP-03, ART-6, PL-03 | draft | WP-04 |
 | WP-05 | Extension & pérennisation | CAP-15, SRV-06, CAP-03, ABB-CONFIANCE-AUTORISATION, PT-14, PT-15, PL-03 | draft | WP-05 |
 | WP-06 | Interopérabilité transfrontalière | CAP-15, SRV-04, ABB-CONFIANCE-AUTORISATION, ART-9, PT-14, PL-03 | draft | WP-06 |
