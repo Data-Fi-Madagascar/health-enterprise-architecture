@@ -113,7 +113,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 **Discipline de mise en œuvre.** Il sert de pont sémantique entre les systèmes hétérogènes. Il garantit que les données codées dans un système sont interprétables et exploitables par un autre.
 
-- **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md).
+- **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-SERVICE-TERMINOLOGIE: Service de terminologie et codification communes](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md).
 - **Processus soutenus** : [PRC-07: Identification et droits des bénéficiaires](../../04_architecture-repository/02_architecture-elements/business/processes/prc-07.md) (production données), [PRC-08: Financement et exemption au point de service](../../04_architecture-repository/02_architecture-elements/business/processes/prc-08.md) (qualité).
 - **Statut : Stable.**
 
@@ -123,7 +123,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 **Discipline de mise en œuvre.** Il constitue l'identité nationale de référence pour tous les systèmes de santé. Toute identification patient transite par cet index, ce qui garantit l'unicité et la cohérence des identités.
 
-- **Rattachement** : [ART-4A](../../04_architecture-repository/04_patterns/artsn-rules/art-4a.md) (INP), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md).
+- **Rattachement** : [ART-4A](../../04_architecture-repository/04_patterns/artsn-rules/art-4a.md) (INP), [ABB-IDENTITE-BENEFICIAIRE: Résolution d'identité du bénéficiaire](../../04_architecture-repository/05_building-blocks/abb/abb-identite-beneficiaire.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../04_architecture-repository/02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-06.md) (logistique).
 - **Statut : Stable.**
 
@@ -133,7 +133,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 **Discipline de mise en œuvre.** Il est l'autorité de vérification des droits. Toute opération de soins nécessitant une vérification de couverture transite par ce registre, ce qui garantit la conformité financière.
 
-- **Rattachement** : [ART-4C](../../04_architecture-repository/04_patterns/artsn-rules/art-4c.md) (éligibilité/couverture), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md).
+- **Rattachement** : [ART-4C](../../04_architecture-repository/04_patterns/artsn-rules/art-4c.md) (éligibilité/couverture), [CAP-07: Protection financière, couverture santé universelle](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-07.md). Aucun ABB distinct ne modélise encore le registre d'éligibilité : le rattachement direct à la capacité évite de le confondre avec le consentement ou l'identité.
 - **Processus soutenus** : [PRC-09: Remboursement et régulation des mécanismes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-09.md) (finance), [PRC-10: Planification et allocation des ressources](../../04_architecture-repository/02_architecture-elements/business/processes/prc-10.md) (planification).
 - **Statut : Stable.**
 
@@ -153,7 +153,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 **Discipline de mise en œuvre.** Il est l'autorité de référence pour les produits et indicateurs. Toute définition de produit ou d'indicateur passe par ce registre, ce qui garantit l'unicité et la cohérence des référentiels.
 
-- **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md).
+- **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-SERVICE-TERMINOLOGIE: Service de terminologie et codification communes](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md) pour les nomenclatures, et [ABB-ECHANGE-LOGISTIQUE-LMIS: Échange logistique LMIS](../../04_architecture-repository/05_building-blocks/abb/abb-echange-logistique-lmis.md) pour le catalogue partagé des produits et intrants.
 - **Processus soutenus** : [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-06.md) (logistique).
 - **Statut : Stable.**
 
@@ -228,7 +228,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 ### CMP-23 : Chaine logistique (LMIS)
 **Contenu normatif.** Ce composant pilote la logistique medicale de bout en bout : prevision des besoins, approvisionnement, stockage, distribution et dispensation des intrants (medicaments, consommables, vaccins, reactifs). Il interconnecte les pharmacies (CMP-20), les districts, les regions et le noeud central, et calcule les seuils de reapprovisionnement a partir des donnees d'activite clinique. Il emet les alertes de rupture et orchestre les flux physiques et informationnels.
 **Discipline de mise en oeuvre.** La tracabilite de bout en bout est obligatoire (lot, periode de validite, lieu). Les seuils de securite sont parametres par type d'intrant et de structure. Les donnees d'activite issues des etablissements (CMP-19) alimentent la prevision. Tout mouvement est historise de facon immuable et reconcilie avec la comptabilite.
-- **Rattachement** : [ENF-1: Resilience a l'instabilite reseau](../../04_architecture-repository/03_requirements/enf-1.md), [F-1: Resilience face a la realite geographique du pays](../../04_architecture-repository/04_patterns/foundations/f-1.md).
+- **Rattachement** : [ABB-ECHANGE-LOGISTIQUE-LMIS: Echange logistique LMIS](../../04_architecture-repository/05_building-blocks/abb/abb-echange-logistique-lmis.md), [ART-10: Logistique](../../04_architecture-repository/04_patterns/artsn-rules/art-10.md), [ENF-1: Resilience a l'instabilite reseau](../../04_architecture-repository/03_requirements/enf-1.md), [F-1: Resilience face a la realite geographique du pays](../../04_architecture-repository/04_patterns/foundations/f-1.md). [ABB-AUDIT-PROVENANCE](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md) encadre la tracabilite transverse, sans remplacer le bloc logistique principal.
 - **Processus soutenus** : [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (approvisionnement et riposte), [PRC-10: Planification et allocation des ressources](../../04_architecture-repository/02_architecture-elements/business/processes/prc-10.md) (planification des ressources).
 - **Statut : Brouillon.**
 

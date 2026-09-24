@@ -56,6 +56,8 @@ ref-index:
 # Lecture seule : ne régénère pas, pour détecter toute édition d'un bloc généré.
 check:
 	$(PY) scripts/build_ref_index.py --check
+	$(PY) scripts/validate_adr.py --check
+	$(PY) scripts/build_adr_index.py --check
 	$(PY) scripts/build_wrappers.py --check
 	$(PY) scripts/check_links.py
 	$(PY) scripts/check_manifests.py

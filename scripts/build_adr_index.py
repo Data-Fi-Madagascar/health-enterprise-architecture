@@ -24,6 +24,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 ADR_DIR = REPO_ROOT / "01_cnisn" / "06_decisions"
 INDEX_FILE = ADR_DIR / "index.md"
 REGISTRE_FILE = ADR_DIR / "registre-decisions.md"
+ADR_EXCLUDED_FILENAMES = {"adr-0000-template.md", "adr-change-log.md"}
 
 # Pattern pour extraire les métadonnées des ADR
 FM_PATTERN = re.compile(r"^---\n(.*?)\n---\n(.*)", re.DOTALL)
@@ -62,7 +63,7 @@ def load_adrs():
         return adrs
     
     for filepath in sorted(ADR_DIR.glob("adr-*.md")):
-        if filepath.name == "adr-0000-template.md":
+        if filepath.name in ADR_EXCLUDED_FILENAMES:
             continue
         
         with open(filepath, encoding="utf-8") as f:

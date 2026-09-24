@@ -46,6 +46,7 @@ DERIVED_ARCH_REPOSITORY_DOCS = {
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "requirements-repository.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "solutions-landscape.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "adm-traceability.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "partition-traceability.md"),
 }
 STATIC_ARCH_REPOSITORY_DOCS = {
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "cap-int-migration.md"),
@@ -68,6 +69,7 @@ FACE = ["candidate", "deprecated"]
 RATTACHEMENT_KEYS = (
     "applies_to", "maps_to", "realizes", "implements", "related",
     "contributes_to", "governs", "serves", "accesses", "uses",
+    "partitions",
 )
 
 NATURAL_RE = re.compile(r"(\d+)")
@@ -151,6 +153,7 @@ def load_objects():
             objects[rel] = {
                 "rel": rel,
                 "id": fields.get("id", ""),
+                "type": fields.get("type", ""),
                 "title": fields.get("title", ""),
                 "status": fields.get("status", ""),
                 "envelope": fields.get("envelope", ""),
@@ -165,6 +168,7 @@ def load_objects():
                 "serves": fields.get("serves", []) or [],
                 "accesses": fields.get("accesses", []) or [],
                 "uses": fields.get("uses", []) or [],
+                "partitions": fields.get("partitions", []) or [],
                 "body": body,
             }
     return objects
@@ -278,6 +282,7 @@ def markdown_table_entry(rel):
     return {
         "rel": rel,
         "id": oid,
+        "type": fields.get("type", ""),
         "title": fields.get("title", "") or oid,
         "status": fields.get("status", ""),
         "envelope": fields.get("envelope", ""),
@@ -292,6 +297,7 @@ def markdown_table_entry(rel):
         "serves": fields.get("serves", []) or [],
         "accesses": fields.get("accesses", []) or [],
         "uses": fields.get("uses", []) or [],
+        "partitions": fields.get("partitions", []) or [],
         "body": "",
     }
 
@@ -355,6 +361,162 @@ def render_maturity(objects, source_glob, to_dir):
         lines.append("| %s | %s | %s | %s | [%s](%s) |"
                      % (code, titre.replace("|", "\\|"), statut,
                         cond.replace("|", "\\|"), code, fiche))
+    return "\n".join(lines)
+
+
+def render_partition_traceability(objects, path_by_id, to_dir):
+    """Construit la chaîne PART -> VS -> CAP -> PRC -> DO/ABB/SBB."""
+    del path_by_id, to_dir  # interface homogène avec les autres rendus
+    by_id = {obj["id"]: obj for obj in objects.values()}
+
+    def related_ids(obj, *keys):
+        values = set()
+        for key in keys:
+            values.update(obj.get(key, []) or [])
+        return values
+
+    def ids_of_type(candidate_ids, accepted_types):
+        return {
+            candidate_id for candidate_id in candidate_ids
+            if by_id.get(candidate_id, {}).get("type") in accepted_types
+        }
+
+    def value_streams_for_partition(partition, seen=None):
+        seen = set() if seen is None else seen
+        if partition["id"] in seen:
+            return set()
+        seen.add(partition["id"])
+        direct = related_ids(partition, "applies_to", "related")
+        value_streams = ids_of_type(direct, {"flux-valeur"})
+        for nested_id in ids_of_type(direct, {"architecture-partition"}):
+            value_streams.update(value_streams_for_partition(by_id[nested_id], seen))
+        return value_streams
+
+    partitions = sorted(
+        (obj for obj in objects.values()
+         if obj.get("type") == "architecture-partition"),
+        key=lambda obj: natural_key(obj["id"]),
+    )
+    lines = [
+        "| Partition | VS | CAP | PRC | DO | ABB | SBB / PT |",
+        "|---|---|---|---|---|---|---|",
+    ]
+
+    for partition in partitions:
+        direct = related_ids(partition, "applies_to", "related")
+        value_streams = value_streams_for_partition(partition)
+        direct_capabilities = ids_of_type(direct, {"capabilite"})
+        value_stream_capabilities = set()
+        for value_stream_id in value_streams:
+            value_stream_capabilities.update(ids_of_type(
+                related_ids(by_id[value_stream_id], "applies_to", "related"),
+                {"capabilite"},
+            ))
+
+        assigned_building_blocks = {
+            candidate["id"] for candidate in by_id.values()
+            if (candidate.get("type") == "architecture-building-block" and
+                partition["id"] in set(candidate.get("partitions", [])))
+        }
+        assigned_capabilities = set()
+        for building_block_id in assigned_building_blocks:
+            assigned_capabilities.update(ids_of_type(
+                set(by_id[building_block_id].get("maps_to", [])),
+                {"capabilite"},
+            ))
+
+        if assigned_building_blocks:
+            capabilities = direct_capabilities | assigned_capabilities
+        elif direct_capabilities:
+            capabilities = direct_capabilities
+        else:
+            capabilities = value_stream_capabilities
+
+        if not value_streams and capabilities:
+            value_stream_candidates = [
+                candidate for candidate in by_id.values()
+                if candidate.get("type") == "flux-valeur"
+            ]
+            value_streams.update(
+                candidate["id"] for candidate in value_stream_candidates
+                if capabilities <= set(candidate.get("applies_to", []))
+            )
+            if not value_streams:
+                value_streams.update(
+                    candidate["id"] for candidate in value_stream_candidates
+                    if set(candidate.get("applies_to", [])) & capabilities
+                )
+
+        building_blocks = (
+            ids_of_type(direct, {"architecture-building-block"}) |
+            assigned_building_blocks
+        )
+        if not assigned_building_blocks:
+            for candidate in by_id.values():
+                if candidate.get("type") != "architecture-building-block":
+                    continue
+                if set(candidate.get("maps_to", [])) & capabilities:
+                    building_blocks.add(candidate["id"])
+
+        solution_blocks = ids_of_type(direct, {"solution-building-block", "profil"})
+        for candidate in by_id.values():
+            if candidate.get("type") not in {"solution-building-block", "profil"}:
+                continue
+            maps_to = set(candidate.get("maps_to", []))
+            if partition["id"] in maps_to or maps_to & building_blocks:
+                solution_blocks.add(candidate["id"])
+        if not solution_blocks:
+            for candidate in by_id.values():
+                if candidate.get("type") not in {"solution-building-block", "profil"}:
+                    continue
+                if set(candidate.get("maps_to", [])) & capabilities:
+                    solution_blocks.add(candidate["id"])
+
+        def cell(values):
+            ordered = sorted(values, key=natural_key)
+            return ", ".join(ordered) if ordered else "n/a"
+
+        # Une ligne par flux évite de masquer la portée réelle des partitions
+        # transverses derrière une agrégation de l'ensemble des processus.
+        scoped_value_streams = sorted(value_streams, key=natural_key) or [None]
+        for value_stream_id in scoped_value_streams:
+            if value_stream_id:
+                stream_capabilities = ids_of_type(
+                    related_ids(by_id[value_stream_id], "applies_to", "related"),
+                    {"capabilite"},
+                )
+                scoped_capabilities = capabilities & stream_capabilities
+            else:
+                scoped_capabilities = capabilities
+
+            processes = ids_of_type(direct, {"processus-metier"})
+            if value_stream_id:
+                for process_id in ids_of_type(
+                        set(by_id[value_stream_id].get("related", [])),
+                        {"processus-metier"}):
+                    process_capabilities = set(by_id[process_id].get("applies_to", []))
+                    if scoped_capabilities and process_capabilities & scoped_capabilities:
+                        processes.add(process_id)
+
+            data_objects = ids_of_type(direct, {"objet-de-donnees"})
+            for process_id in processes:
+                data_objects.update(ids_of_type(
+                    set(by_id[process_id].get("accesses", [])),
+                    {"objet-de-donnees"},
+                ))
+
+            lines.append(
+                "| %s | %s | %s | %s | %s | %s | %s |" % (
+                    partition["id"],
+                    value_stream_id or "n/a",
+                    cell(scoped_capabilities),
+                    cell(processes),
+                    cell(data_objects),
+                    cell(building_blocks),
+                    cell(solution_blocks),
+                )
+            )
+
     return "\n".join(lines)
 
 
@@ -451,6 +613,9 @@ def generate_file(objects, path_by_id, rel):
             to_dir = os.path.dirname(abs_path)
             content = render_maturity(objects, globs, to_dir)
             body = content
+        elif attrs["mode"] == "partition-traceability":
+            to_dir = os.path.dirname(abs_path)
+            body = render_partition_traceability(objects, path_by_id, to_dir)
         else:
             covered = []
             candidates = attached

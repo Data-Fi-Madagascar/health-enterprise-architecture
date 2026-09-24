@@ -36,14 +36,10 @@ LINK_DIRS = ["00_caesn", "01_cnisn", "02_artsn", "03_ptisn", ARCH_REPOSITORY_DIR
 # Le graphe de relations (maps_to/implements/...) ne concerne que le référentiel,
 # source de vérité. Les documents « enveloppes » (00_caesn … 03_ptisn) ne portent
 # pas ces champs et ne doivent pas être traités comme des îlots.
-<<<<<<< HEAD
 REL_DIRS = [ARCH_REPOSITORY_DIR]
-=======
-REL_DIRS = ["referentiel"]
 
 # Répertoires contenant les ADR (Architecture Decision Records)
 ADR_DIRS = ["01_cnisn/06_decisions"]
->>>>>>> e303ad08347610696acff15be39d5708bd6d068c
 EXCLUDE_DIRS = {".git", "__pycache__", "node_modules", "dist", ".venv",
                 "graphify-out", ".agents", ".claude", "mintlify-site", "docs"}
 DERIVED_ARCH_REPOSITORY_DOCS = {
@@ -55,6 +51,7 @@ DERIVED_ARCH_REPOSITORY_DOCS = {
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "requirements-repository.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "solutions-landscape.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "adm-traceability.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "partition-traceability.md"),
 }
 STATIC_ARCH_REPOSITORY_DOCS = {
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "cap-int-migration.md"),
@@ -82,7 +79,7 @@ RELATION_KEYS = REACHABILITY_KEYS + [
                  "assigned_to", "has_role", "located_at", "produced_by",
                  "detenu_par", "soutient_flux_de_valeur",
                  "utilise_composant", "supporte_standard",
-                 "a_pour_proprietaire_fonctionnel"]
+                 "a_pour_proprietaire_fonctionnel", "partitions"]
 
 # Îlots légitimes attendus (candidats non encore reliés) — ne font pas échouer.
 KNOWN_ISLANDS = {"art-10", "art-11", "f-5", "f-6"}
@@ -94,6 +91,7 @@ TYPE_CAPACITE = "capacite"            # ancien type supprimé des objets actifs
 TYPE_CAPABILITE = "capabilite"        # niveau 1 (CAP-*)
 TYPE_CHAPITRE = "chapitre"            # niveau 3 (ART-*)
 TYPE_COMPOSANT = "composant-applicatif"  # et variantes infra/securite/gouvernance
+TYPE_PARTITION = "architecture-partition"
 
 SCHEME_RE = re.compile(r"^[a-zA-Z][a-zA-Z0-9+.-]*://")
 LINK_RE = re.compile(r"!?\[[^]]*\]\(([^)]*)\)")
@@ -308,9 +306,11 @@ def load_relation_graph():
         status = (fm_field(fm, "status") or "").strip().strip('"').strip("'")
         outgoing = set()
         reach_outgoing = set()
+        relations = {}
         for k in RELATION_KEYS:
             val = fm_field(fm, k)
-            targets = list_value(val)
+            targets = set(list_value(val))
+            relations[k] = targets
             outgoing.update(targets)
             if k in REACHABILITY_KEYS:
                 reach_outgoing.update(targets)
@@ -322,6 +322,7 @@ def load_relation_graph():
             "in": set(),
             "type": otype,
             "status": status,
+            "relations": relations,
         }
         id_to_file[oid] = path
 
@@ -353,6 +354,25 @@ def check_legacy_objects(objects):
             rel_path = os.path.relpath(o["file"], REPO_ROOT)
             errors.append((rel_path, oid,
                            "Ancien type 'capacite' présent comme objet actif"))
+    return errors
+
+
+def check_partition_relation_types(objects):
+    """Vérifie que `partitions` cible uniquement des partitions TOGAF."""
+    errors = []
+    for oid, obj in sorted(objects.items()):
+        for target_id in sorted(obj.get("relations", {}).get("partitions", set())):
+            target = objects.get(target_id)
+            if target is None:
+                continue  # la cible non résolue est signalée par load_relation_graph
+            if target.get("type") != TYPE_PARTITION:
+                errors.append((
+                    obj["file"],
+                    oid,
+                    target_id,
+                    "La relation partitions doit cibler un objet de type "
+                    "architecture-partition, pas %s" % target.get("type"),
+                ))
     return errors
 
 
@@ -599,6 +619,17 @@ def main():
             print("  - %s (%s) -> %s" % (os.path.relpath(f, REPO_ROOT), s, t))
     else:
         print("[OK] Toutes les relations pointent vers un objet existant.")
+
+    partition_relation_errors = check_partition_relation_types(objects)
+    if partition_relation_errors:
+        ok = False
+        print("\n[ERREUR] Relations de partition invalides : %d"
+              % len(partition_relation_errors))
+        for f, source_id, target_id, message in partition_relation_errors[:50]:
+            print("  - %s (%s) -> %s : %s"
+                  % (os.path.relpath(f, REPO_ROOT), source_id, target_id, message))
+    else:
+        print("[OK] Toutes les relations partitions ciblent une architecture-partition.")
 
     if adr_ref_errors:
         ok = False
