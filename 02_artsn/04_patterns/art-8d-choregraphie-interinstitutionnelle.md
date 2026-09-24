@@ -8,7 +8,7 @@ status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: ["artsn", "chapitres", "ART-8D", "niveau-3"]
-related: ["CAP-INT-03", "ART-8D"]
+related: ["ABB-ECHANGE-MEDIATION", "ART-8D"]
 ---
 
 # Chorégraphie inter-institutionnelle
@@ -39,16 +39,16 @@ ART-8D : Chorégraphie inter-institutionnelle constitue un chapitre du **cadre n
 
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (systèmes d’information autonomes des ministères de l’Agriculture ou de l’Environnement), cette discipline seule permet de déclencher des actions conjointes et simultanées lors d’un signal épidémique tout en préservant l’indépendance informatique et la souveraineté de chaque institution, sans rompre le pipeline.
 
-- **Rattachement** : [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md).
+- **Rattachement** : [CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md).
 - **Pattern cible** : Publication / Abonnement (Pub/Sub).
-- **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (souveraineté intersectorielle).
+- **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../04_architecture-repository/03_requirements/enf-4.md) (souveraineté intersectorielle).
 - **Statut : Proposition ouverte.**
 
 ## Profils PTISN qui implémentent ce chapitre
 
 Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
 
-- [PT-02 : Médiation intra-secteur](../../referentiel/profils/pt-02.md)
+- [PT-02 : Médiation intra-secteur](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-02.md)
 
 <!-- END:GENERATED -->
 ## Liens
@@ -59,6 +59,6 @@ Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre 
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`ART-8D`** : Chorégraphie inter-institutionnelle (`referentiel/chapitres/art-8d.md`)
+- **`ART-8D`** : Chorégraphie inter-institutionnelle (`04_architecture-repository/04_patterns/artsn-rules/art-8d.md`)
 - **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

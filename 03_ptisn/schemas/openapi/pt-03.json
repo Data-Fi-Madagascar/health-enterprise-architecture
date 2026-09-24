@@ -305,7 +305,10 @@
   "x-hea-version": "0.4",
   "x-hea-type": "profil-technique",
   "x-hea-maps-to": [
-    "CAP-INT-06"
+    "ABB-CATALOGUE-CONTRATS",
+    "CAP-12",
+    "CAP-14",
+    "CAP-16"
   ],
   "x-hea-implements": [
     "F-3",
@@ -316,12 +319,12 @@
   "x-hea-applies-to": [
     "CMP-16"
   ],
-  "x-hea-source": "referentiel/profils/pt-03.md",
+  "x-hea-source": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-03.md",
   "x-hea-fhir-resources": [
     "CodeSystem",
     "ValueSet",
     "ConceptMap"
   ],
   "x-hea-data-objects": [],
-  "x-hea-file": "referentiel/profils/pt-03.md"
+  "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-03.md"
 }

@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-07"]
-related: ["CAP-INT-05", "ART-2", "ART-4", "ART-5", "CMP-10"]
+related: ["ABB-SERVICE-TERMINOLOGIE", "ART-2", "ART-4", "ART-5", "CMP-10"]
 ---
 
 # Profil technique national
@@ -21,22 +21,22 @@ Le **profil PT-07 — Terminologie et codification** définit le service termino
 
 Périmètre : consultation et gestion de systèmes de codes, ensembles de valeurs, et correspondances entre terminologies. Hors périmètre : le contenu métier des référentiels (PT-04, PT-05, PT-06).
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-[CAP-INT-05: Terminologie et codification communes](../../referentiel/capacites/cap-int-05.md)
+[ABB-SERVICE-TERMINOLOGIE: Terminologie et codification communes](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md)
 
 ## 3. Chapitres ART applicables
 
-- [ART-2: normalisation sémantique](../../referentiel/chapitres/art-2.md)
-- [ART-4: référentiels](../../referentiel/chapitres/art-4.md)
-- [ART-5: qualité](../../referentiel/chapitres/art-5.md)
+- [ART-2: normalisation sémantique](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md)
+- [ART-4: référentiels](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
+- [ART-5: qualité](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md)
 
 ## 4. Acteurs (Actors)
 
 - **Consommateur terminologique (ValueSet Consumer)** — système résolvant/expectant des codes et ensembles de valeurs.
 - **Dépôt terminologique (ValueSet Directory)** — tient et diffuse les CodeSystem, ValueSet, ConceptMap nationaux.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-05](../../referentiel/capacites/cap-int-05.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-SERVICE-TERMINOLOGIE](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -48,7 +48,7 @@ Périmètre : consultation et gestion de systèmes de codes, ensembles de valeur
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-05](../../referentiel/capacites/cap-int-05.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-SERVICE-TERMINOLOGIE](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md).
 ## 6. Content Modules
 
 - **HL7 FHIR CodeSystem** : système de codes national ou référencé.
@@ -92,10 +92,10 @@ Conformité attestée par la publication des ressources `CodeSystem`/`ValueSet`/
 
 ## 12. Articulation avec les autres profils
 
-- [PT-02: médiation intra-secteur](../../referentiel/profils/pt-02.md)
-- [PT-04: résolution d’identité](../../referentiel/profils/pt-04.md)
-- [PT-05: registre des professionnels](../../referentiel/profils/pt-05.md)
-- [PT-11: consentement et bases d’autorisation](../../referentiel/profils/pt-11.md)
+- [PT-02: médiation intra-secteur](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-02.md)
+- [PT-04: résolution d’identité](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md)
+- [PT-05: registre des professionnels](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md)
+- [PT-11: consentement et bases d’autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-11.md)
 
 Le service terminologique est une dépendance transverse de tous les profils métier.
 

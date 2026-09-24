@@ -45,8 +45,8 @@ Adopter le **profil IHE mADX** comme standard national pour l'échange de donné
 
 mADX répond aux exigences du CNISN et de l'ARTSN :
 
-- **CAP-INT-05** : Données agrégées de santé publique
-- **CAP-INT-07** : Accès et exposition des données analytiques
+- **ABB-SERVICE-TERMINOLOGIE** : Données agrégées de santé publique
+- **ABB-EXPOSITION-DONNEES-ANALYTIQUES** : Accès et exposition des données analytiques
 - **ART-2** : Médiation et normalisation sémantique
 - **ART-5** : Analytique et pilotage
 
@@ -77,6 +77,6 @@ Il est compatible avec DHIS2, le système de collecte national déjà déployé,
 
 - PT-08 : Profil technique national
 - ARTSN : Chapitre ART-5
-- CNISN : CAP-INT-05
+- CNISN : ABB-SERVICE-TERMINOLOGIE
 
 - **matrice de lecture** : Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)

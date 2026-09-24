@@ -50,7 +50,7 @@ Adopter le profil **IHE ATNA** (Audit Trail and Node Authentication) comme stand
 ATNA répond aux exigences du cadre :
 
 - **ART-7** : Sécurité, contrôle d'accès et résidence des données
-- **CAP-INT-10** : Audit et traçabilité
+- **ABB-AUDIT-PROVENANCE** : Audit et traçabilité
 - **PT-12** : Audit et traçabilité
 - **Loi 2014-038** : Protection des données personnelles
 - **STD-0002** : Chiffrement et RBAC
@@ -91,6 +91,6 @@ ATNA doit :
 
 - PT-12 : Audit et traçabilité
 - ART-7 : Sécurité
-- CAP-INT-10 : Audit et traçabilité
+- ABB-AUDIT-PROVENANCE : Audit et traçabilité
 - [IHE ATNA : Audit Trail and Node Authentication](https://www.ihe.net)
 

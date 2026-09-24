@@ -47,7 +47,7 @@ Le PTISN est organisé en huit parties complétées par des annexes. Le tableau 
 | Règles d'utilisation | Types de décisions, statuts, versionnement | Équipes techniques, DEPSI |
 | Topologie nationale cible | Architecture cible, couches, responsabilités | Architectes, intégrateurs |
 | Profils techniques | 19 profils PT-01 à PT-19 | Développeurs, fournisseurs |
-| Matrice d'alignement | Mapping capacités CNISN ↔ profils ↔ ART | DEPSI, validateurs |
+| Matrice d'alignement | Mapping objets CNISN/TOGAF ↔ profils ↔ ART | DEPSI, validateurs |
 | Template de fiche d'initiative | Template pour chaque initiative | Équipes projet |
 | Gouvernance | Processus d'adoption, critères, homologation | Décideurs, gouvernance |
 | Conclusion | Synthèse, principes | Tous |
@@ -76,27 +76,27 @@ L'objectif pour le partenaire technique ou le fournisseur est d'évaluer la conf
 
 ## 4. Catalogue des profils techniques
 
-Les treize profils couvrent l'ensemble des capacités d'interopérabilité du CNISN. Le tableau suivant présente chaque profil, la capacité CNISN associée et une description synthétique.
+Les dix-neuf profils couvrent l'ensemble des objets d'interopérabilité du CNISN. Le tableau suivant présente chaque profil, l'objet CNISN/TOGAF associé et une description synthétique.
 
-| Profil | Capacité CNISN | Description |
+| Profil | Objet CNISN/TOGAF | Description |
 |--------|----------------|-------------|
-| PT-01 | CAP-INT-03 | Échange interinstitutionnel (X-Road) |
-| PT-02 | CAP-INT-03 | Médiation intra-secteur |
-| PT-03 | CAP-INT-06 | Catalogue de services et registre de contrats |
-| PT-04 | CAP-INT-01 | Résolution d'identité bénéficiaire |
-| PT-05 | CAP-INT-02 | Registre des professionnels |
-| PT-06 | CAP-INT-04 | Référentiel des structures et services |
-| PT-07 | CAP-INT-05 | Terminologie et codification |
-| PT-08 | CAP-INT-07 | Échange de données agrégées |
-| PT-09 | CAP-INT-07 | Analytique et exposition de données |
-| PT-10 | CAP-INT-08 | Confiance, authentification, autorisation |
-| PT-11 | CAP-INT-09 | Consentement et bases d'autorisation |
-| PT-12 | CAP-INT-10 | Audit, provenance, traçabilité |
-| PT-13 | CAP-INT-11 | Qualité et réconciliation des données |
-| PT-14 | CAP-INT-13 | Interopérabilité transfrontalière (GDHCN, FHIR IPS) |
-| PT-15 | CAP-INT-14, CAP-INT-16 | Surveillance One Health (OHDSI FHIR) |
-| PT-16 | CAP-INT-03 | Orchestration de processus bornés (Sagas, ART-8A) |
-| PT-17 | CAP-INT-10, CAP-INT-15 | Logistique & chaîne d'approvisionnement (LMIS), échange STD-0009 |
+| PT-01 | ABB-ECHANGE-MEDIATION | Échange interinstitutionnel (X-Road) |
+| PT-02 | ABB-ECHANGE-MEDIATION | Médiation intra-secteur |
+| PT-03 | ABB-CATALOGUE-CONTRATS | Catalogue de services et registre de contrats |
+| PT-04 | ABB-IDENTITE-BENEFICIAIRE | Résolution d'identité bénéficiaire |
+| PT-05 | ABB-REGISTRE-PROFESSIONNELS | Registre des professionnels |
+| PT-06 | ABB-REFERENTIEL-STRUCTURES-SERVICES | Référentiel des structures et services |
+| PT-07 | ABB-SERVICE-TERMINOLOGIE | Terminologie et codification |
+| PT-08 | ABB-EXPOSITION-DONNEES-ANALYTIQUES | Échange de données agrégées |
+| PT-09 | ABB-EXPOSITION-DONNEES-ANALYTIQUES | Analytique et exposition de données |
+| PT-10 | ABB-CONFIANCE-AUTORISATION | Confiance, authentification, autorisation |
+| PT-11 | ABB-GESTION-CONSENTEMENT | Consentement et bases d'autorisation |
+| PT-12 | ABB-AUDIT-PROVENANCE | Audit, provenance, traçabilité |
+| PT-13 | ABB-RECONCILIATION-DONNEES | Qualité et réconciliation des données |
+| PT-14 | PART-ECHANGE-TRANSFRONTALIER | Interopérabilité transfrontalière (GDHCN, FHIR IPS) |
+| PT-15 | PART-ONE-HEALTH, RD-DONNEES-ENVIRONNEMENTALES-CLIMAT | Surveillance One Health (OHDSI FHIR) |
+| PT-16 | ABB-ECHANGE-MEDIATION | Orchestration de processus bornés (Sagas, ART-8A) |
+| PT-17 | ABB-AUDIT-PROVENANCE, ABB-ECHANGE-LOGISTIQUE-LMIS | Logistique & chaîne d'approvisionnement (LMIS), échange STD-0009 |
 | PT-18 | CAP-07, VS-03 | Échange de réclamations et paiements |
 | PT-19 | ART-12 | Aide à la décision clinique (CDS) |
 
@@ -125,7 +125,7 @@ Le PTISN s'articule avec les trois niveaux supérieurs de la hiérarchie documen
 | 2 : CNISN | Cadre National d'Interopérabilité | ../01_cnisn/index.md |
 | 3 : ARTSN | Architecture de Référence Technique | ../02_artsn/index.md |
 | : | Portefeuille national d'initiatives | ../00_caesn/06_portfolio/index.md |
-| : | Référentiel des profils | ../referentiel/profils/ |
+| : | Référentiel des profils | ../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/ |
 
 ## 7. Documents complémentaires
 

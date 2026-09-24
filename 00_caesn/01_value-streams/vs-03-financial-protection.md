@@ -27,7 +27,7 @@ related: ["CAP-07"]
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
-<!-- BEGIN:GENERATED mode=monographie source=referentiel/flux-valeur/vs-03.md -->
+<!-- BEGIN:GENERATED mode=monographie source=04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ## Valeur produite
@@ -36,9 +36,9 @@ Les ménages, en particulier les plus vulnérables, accèdent aux soins de sant�
 
 ## Bénéficiaires principaux
 
-- [PP-02: Ménage et famille](../../referentiel/parties-prenantes/pp-02.md)
-- [PP-03: Population](../../referentiel/parties-prenantes/pp-03.md)
-- [PP-06: Formation sanitaire](../../referentiel/parties-prenantes/pp-06.md)
+- [PP-02: Ménage et famille](../../04_architecture-repository/02_architecture-elements/motivation/stakeholders/pp-02.md)
+- [PP-03: Population](../../04_architecture-repository/02_architecture-elements/motivation/stakeholders/pp-03.md)
+- [PP-06: Formation sanitaire](../../04_architecture-repository/02_architecture-elements/motivation/stakeholders/pp-06.md)
 
 ## Description du flux
 
@@ -46,36 +46,36 @@ Ce flux couvre l’ensemble du cycle de la couverture santé universelle, depuis
 
 ## Étapes de valeur
 
-- [VS-03-01: Identification et enregistrement des bénéficiaires](../../referentiel/etapes-valeur/vs-03-01.md)
-- [VS-03-02: Définition des droits et du panier de soins](../../referentiel/etapes-valeur/vs-03-02.md)
-- [VS-03-03: Mobilisation des financements](../../referentiel/etapes-valeur/vs-03-03.md)
-- [VS-03-04: Prise en charge et exemption au point de service](../../referentiel/etapes-valeur/vs-03-04.md)
-- [VS-03-05: Facturation et traitement des demandes de remboursement](../../referentiel/etapes-valeur/vs-03-05.md)
-- [VS-03-06: Remboursement](../../referentiel/etapes-valeur/vs-03-06.md)
-- [VS-03-07: Contrôle, audit et ajustement des mécanismes](../../referentiel/etapes-valeur/vs-03-07.md)
+- [VS-03-01: Identification et enregistrement des bénéficiaires](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-03-01.md)
+- [VS-03-02: Définition des droits et du panier de soins](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-03-02.md)
+- [VS-03-03: Mobilisation des financements](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-03-03.md)
+- [VS-03-04: Prise en charge et exemption au point de service](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-03-04.md)
+- [VS-03-05: Facturation et traitement des demandes de remboursement](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-03-05.md)
+- [VS-03-06: Remboursement](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-03-06.md)
+- [VS-03-07: Contrôle, audit et ajustement des mécanismes](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-03-07.md)
 
 
 ## Capabilités mobilisées
 
-- [CAP-07: Protection financière, couverture santé universelle](../../referentiel/capabilites/cap-07.md)
-- [CAP-08: Gouvernance institutionnelle, planification, coordination et redevabilité](../../referentiel/capabilites/cap-08.md)
-- [CAP-12: Finances publiques, budget et allocation des ressources](../../referentiel/capabilites/cap-12.md)
-- [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md)
-- [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md)
-- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md)
-- [CAP-16: Gestion du portefeuille d'initiatives numériques](../../referentiel/capabilites/cap-16.md)
+- [CAP-07: Protection financière, couverture santé universelle](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-07.md)
+- [CAP-08: Gouvernance institutionnelle, planification, coordination et redevabilité](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-08.md)
+- [CAP-12: Finances publiques, budget et allocation des ressources](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-12.md)
+- [CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md)
+- [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md)
+- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md)
+- [CAP-16: Gestion du portefeuille d'initiatives numériques](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-16.md)
 
 <!-- END:GENERATED -->
 ## Étapes de valeur
 
-<!-- BEGIN:GENERATED mode=catalogue source=referentiel/etapes-valeur/vs-03-01.md,referentiel/etapes-valeur/vs-03-02.md,referentiel/etapes-valeur/vs-03-03.md,referentiel/etapes-valeur/vs-03-04.md,referentiel/etapes-valeur/vs-03-05.md,referentiel/etapes-valeur/vs-03-06.md,referentiel/etapes-valeur/vs-03-07.md -->
+<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-03-01.md,04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-03-02.md,04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-03-03.md,04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-03-04.md,04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-03-05.md,04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-03-06.md,04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-03-07.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### Identification et enregistrement des bénéficiaires
 
 #### Objectif
 
-Réaliser l'étape de valeur « Identification et enregistrement des bénéficiaires » du flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md).
+Réaliser l'étape de valeur « Identification et enregistrement des bénéficiaires » du flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md).
 
 #### Entrées
 
@@ -101,7 +101,7 @@ Taux de couverture du registre, taux d'exclusion estimé
 
 #### Objectif
 
-Réaliser l'étape de valeur « Définition des droits et du panier de soins » du flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md).
+Réaliser l'étape de valeur « Définition des droits et du panier de soins » du flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md).
 
 #### Entrées
 
@@ -127,7 +127,7 @@ Proportion de formations sanitaires informées des droits
 
 #### Objectif
 
-Réaliser l'étape de valeur « Mobilisation des financements » du flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md).
+Réaliser l'étape de valeur « Mobilisation des financements » du flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md).
 
 #### Entrées
 
@@ -153,7 +153,7 @@ Taux d'exécution budgétaire, part du budget santé allouée à la protection f
 
 #### Objectif
 
-Réaliser l'étape de valeur « Prise en charge et exemption au point de service » du flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md).
+Réaliser l'étape de valeur « Prise en charge et exemption au point de service » du flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md).
 
 #### Entrées
 
@@ -179,7 +179,7 @@ Taux d'exemption appliqué, taux de refus de soins signalés
 
 #### Objectif
 
-Réaliser l'étape de valeur « Facturation et traitement des demandes de remboursement » du flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md).
+Réaliser l'étape de valeur « Facturation et traitement des demandes de remboursement » du flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md).
 
 #### Entrées
 
@@ -205,7 +205,7 @@ Taux de factures rejetées, délai de validation des factures
 
 #### Objectif
 
-Réaliser l'étape de valeur « Remboursement » du flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md).
+Réaliser l'étape de valeur « Remboursement » du flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md).
 
 #### Entrées
 
@@ -231,7 +231,7 @@ Délai moyen de remboursement, taux de remboursement effectif
 
 #### Objectif
 
-Réaliser l'étape de valeur « Contrôle, audit et ajustement des mécanismes » du flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../referentiel/flux-valeur/vs-03.md).
+Réaliser l'étape de valeur « Contrôle, audit et ajustement des mécanismes » du flux [VS-03: Protéger financièrement la population face aux dépenses de santé](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md).
 
 #### Entrées
 
@@ -256,7 +256,7 @@ Proportion de contrôles réalisés, montant des anomalies détectées
 <!-- END:GENERATED -->
 ## Processus métier
 
-<!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-07.md,referentiel/processus/prc-08.md,referentiel/processus/prc-09.md -->
+<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/business/processes/prc-07.md,04_architecture-repository/02_architecture-elements/business/processes/prc-08.md,04_architecture-repository/02_architecture-elements/business/processes/prc-09.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### Identification et droits des bénéficiaires
@@ -267,8 +267,8 @@ Constituer la base de la couverture santé universelle : identification et enre
 
 #### Étapes couvertes
 
-- [VS-03-01: Identification et enregistrement des bénéficiaires](../../referentiel/etapes-valeur/vs-03-01.md)
-- [VS-03-02: Définition des droits et du panier de soins](../../referentiel/etapes-valeur/vs-03-02.md)
+- [VS-03-01: Identification et enregistrement des bénéficiaires](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-03-01.md)
+- [VS-03-02: Définition des droits et du panier de soins](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-03-02.md)
 
 #### Acteurs
 
@@ -286,8 +286,8 @@ Garantir la disponibilité des fonds et l'accès effectif aux soins sans paiemen
 
 #### Étapes couvertes
 
-- [VS-03-03: Mobilisation des financements](../../referentiel/etapes-valeur/vs-03-03.md)
-- [VS-03-04: Prise en charge et exemption au point de service](../../referentiel/etapes-valeur/vs-03-04.md)
+- [VS-03-03: Mobilisation des financements](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-03-03.md)
+- [VS-03-04: Prise en charge et exemption au point de service](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-03-04.md)
 
 #### Acteurs
 
@@ -305,9 +305,9 @@ Boucler le cycle financier de la protection : facturation et traitement des dem
 
 #### Étapes couvertes
 
-- [VS-03-05: Facturation et traitement des demandes de remboursement](../../referentiel/etapes-valeur/vs-03-05.md)
-- [VS-03-06: Remboursement](../../referentiel/etapes-valeur/vs-03-06.md)
-- [VS-03-07: Contrôle, audit et ajustement des mécanismes](../../referentiel/etapes-valeur/vs-03-07.md)
+- [VS-03-05: Facturation et traitement des demandes de remboursement](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-03-05.md)
+- [VS-03-06: Remboursement](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-03-06.md)
+- [VS-03-07: Contrôle, audit et ajustement des mécanismes](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-03-07.md)
 
 #### Acteurs
 
@@ -320,7 +320,7 @@ Taux de factures rejetées, délai de validation des factures, délai moyen de r
 <!-- END:GENERATED -->
 ## Liens
 
-- [Flux de valeur](./index.md)
+- [Flux de valeur](index.md)
 - Capabilités
 
 ## Références

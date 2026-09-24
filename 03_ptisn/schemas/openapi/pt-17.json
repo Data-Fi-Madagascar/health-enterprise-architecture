@@ -334,8 +334,16 @@
   "x-hea-version": "0.1",
   "x-hea-type": "profil-technique",
   "x-hea-maps-to": [
-    "CAP-INT-10",
-    "CAP-INT-15"
+    "ABB-AUDIT-PROVENANCE",
+    "ABB-ECHANGE-LOGISTIQUE-LMIS",
+    "CAP-03",
+    "CAP-08",
+    "CAP-12",
+    "CAP-13",
+    "CAP-15",
+    "CAP-06",
+    "CAP-10",
+    "CAP-11"
   ],
   "x-hea-implements": [
     "ART-10"
@@ -343,7 +351,7 @@
   "x-hea-applies-to": [
     "CMP-23"
   ],
-  "x-hea-source": "referentiel/profils/pt-17.md",
+  "x-hea-source": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-17.md",
   "x-hea-fhir-resources": [
     "InventoryReport",
     "SupplyDelivery",
@@ -351,5 +359,5 @@
     "XRoadResponse"
   ],
   "x-hea-data-objects": [],
-  "x-hea-file": "referentiel/profils/pt-17.md"
+  "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-17.md"
 }

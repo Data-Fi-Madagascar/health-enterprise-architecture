@@ -8,7 +8,7 @@ status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: ["artsn", "chapitres", "ART-1", "niveau-3"]
-related: ["CAP-INT-03"]
+related: ["ABB-ECHANGE-MEDIATION"]
 ---
 
 # Intégration et ingestion
@@ -37,19 +37,19 @@ ART-1 : Intégration et ingestion constitue un chapitre du **cadre normatif oppo
 
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (logiciels hospitaliers privés, applications mobiles terrain), cette discipline seule permet de protéger les serveurs centraux contre les saturations, les cyberattaques et les pertes de données induites par les micro-coupures réseau sans rompre le pipeline.
 
-- **Rattachement** : [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md) (interopérabilité et infrastructure partagée).
-- **Déduit selon** : [ENF-1: Résilience à l'instabilité réseau](../../referentiel/exigences/enf-1.md) (instabilité réseau).
+- **Rattachement** : [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md) (interopérabilité et infrastructure partagée).
+- **Déduit selon** : [ENF-1: Résilience à l'instabilité réseau](../../04_architecture-repository/03_requirements/enf-1.md) (instabilité réseau).
 - **Statut : Stable.**
 
 ## Profils PTISN qui implémentent ce chapitre
 
 Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
 
-- [PT-01 : Échange interinstitutionnel](../../referentiel/profils/pt-01.md)
-- [PT-02 : Médiation intra-secteur](../../referentiel/profils/pt-02.md)
-- [PT-03 : Catalogue des services et registre des contrats](../../referentiel/profils/pt-03.md)
-- [PT-08 : Échange de données agrégées](../../referentiel/profils/pt-08.md)
-- [PT-14 : Interopérabilité transfrontalière](../../referentiel/profils/pt-14.md)
+- [PT-01 : Échange interinstitutionnel](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md)
+- [PT-02 : Médiation intra-secteur](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-02.md)
+- [PT-03 : Catalogue des services et registre des contrats](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-03.md)
+- [PT-08 : Échange de données agrégées](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-08.md)
+- [PT-14 : Interopérabilité transfrontalière](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-14.md)
 
 <!-- END:GENERATED -->
 ## Liens
@@ -60,6 +60,6 @@ Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre 
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`ART-1`** : Intégration et ingestion (`referentiel/chapitres/art-1.md`)
+- **`ART-1`** : Intégration et ingestion (`04_architecture-repository/04_patterns/artsn-rules/art-1.md`)
 - **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

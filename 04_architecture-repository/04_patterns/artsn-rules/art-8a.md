@@ -1,0 +1,35 @@
+---
+domain: artsn-rules
+
+id: ART-8A
+type: chapitre
+niveau: "3"
+title: Orchestration de processus borné
+status: draft
+maturity_condition: "Confirmation par une seconde initiative"
+owner: DEPSI
+version: "0.0.1"
+envelope: 02_artsn/04_patterns/art-8a-orchestration-processus-borne.md
+maps_to: ["CAP-13", "CAP-14"]
+implements: []
+applies_to: ["ENF-5"]
+related: ["ART-8"]
+tags: ["artsn", "niveau-3", "chapitre", "ART-8A"]
+---
+# Orchestration de processus borné
+
+**Contenu normatif.** Pour tout processus métier distribué, asynchrone et à étapes multiples, l’architecture impose l’utilisation d’un **gestionnaire de transactions longues**. Ce composant doit suivre l’état du parcours, maintenir la cohérence sans verrouiller les bases distantes, et déclencher obligatoirement des transactions d’annulation ou de correction en cas d’échec d’une étape.
+
+**Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (établissements hospitaliers autonomes, cliniques privées, rupture de liaison réseau d’un des nœuds), cette discipline seule permet d’assurer la continuité et la traçabilité complète du parcours patient sans bloquer les systèmes locaux et sans rompre le pipeline.
+
+- **Rattachement** : [CAP-13: Système d'information sanitaire, données et recherche](../../02_architecture-elements/strategy/capabilities/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../02_architecture-elements/strategy/capabilities/cap-14.md).
+- **Pattern cible** : Saga / Process Manager (transactions de compensation).
+- **Déduit selon** : [ENF-5: Coordination des processus complexes décentralisés et asynchrones](../../03_requirements/enf-5.md) (processus complexes).
+- **Statut : Provisoire.**
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-16 : Orchestration de processus bornés](../../05_building-blocks/sbb/legacy-profiles/pt-16.md)
+

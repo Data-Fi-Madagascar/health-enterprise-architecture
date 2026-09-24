@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-08-13
 owner: DEPSI
 tags: ["ptisn", "niveau-4", "profil", "transfrontalier", "gdhcn"]
-related: ["CAP-INT-13", "CAP-15", "CAP-17", "CMP-06", "CMP-15", "ART-7", "ART-0", "ART-1"]
+related: ["PART-ECHANGE-TRANSFRONTALIER", "CAP-15", "CAP-17", "CMP-06", "CMP-15", "ART-7", "ART-0", "ART-1"]
 ---
 
 # Interopérabilité transfrontalière
@@ -24,19 +24,19 @@ Ce profil technique définit les standards, protocoles et configurations pour le
 | **Partenaires** | SADC (Afrique australe), UA/CEUA (Afrique), OMS AFRO, OIF, CDC Africa |
 | **Flux** | Surveillance épidémique régionale, actes médicaux transfrontaliers, logistique pharmaceutique, recherche clinique |
 | **Standards** | GDHCN (Trust Anchor), FHIR R4, HL7 v2.x (legacy), OID (ISO), IHE |
-| **Chapitres ARTSN** | [ART-7: Sécurité](../../referentiel/chapitres/art-7.md), [ART-0: Accords](../../referentiel/chapitres/art-0.md), [ART-1: Intégration](../../referentiel/chapitres/art-1.md) |
+| **Chapitres ARTSN** | [ART-7: Sécurité](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md), [ART-0: Accords](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md), [ART-1: Intégration](../../04_architecture-repository/04_patterns/artsn-rules/art-1.md) |
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-- [CAP-INT-13: Interopérabilité transfrontalière et confiance internationale](../../referentiel/capacites/cap-int-13.md)
-- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md)
-- [CAP-17: Engagement patient et identité numérique](../../referentiel/capabilites/cap-17.md)
+- [PART-ECHANGE-TRANSFRONTALIER: Interopérabilité transfrontalière et confiance internationale](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md)
+- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md)
+- [CAP-17: Engagement patient et identité numérique](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-17.md)
 
 ## 3. Chapitres ART applicables
 
-- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../referentiel/chapitres/art-7.md)
-- [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md)
-- [ART-1: Intégration et ingestion](../../referentiel/chapitres/art-1.md)
+- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
+- [ART-0: Accords de partage inter-institutionnels](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md)
+- [ART-1: Intégration et ingestion](../../04_architecture-repository/04_patterns/artsn-rules/art-1.md)
 
 ## 4. Acteurs (Actors)
 
@@ -46,7 +46,7 @@ Ce profil technique définit les standards, protocoles et configurations pour le
 - **Moteur analytique (CMP-04)** — production des flux de surveillance régionale (T3).
 - **Système partenaire étranger** — consommateur/producteur des flux transfrontaliers.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-13](../../referentiel/capacites/cap-int-13.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [PART-ECHANGE-TRANSFRONTALIER](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -59,7 +59,7 @@ Ce profil technique définit les standards, protocoles et configurations pour le
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-13](../../referentiel/capacites/cap-int-13.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [PART-ECHANGE-TRANSFRONTALIER](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md).
 ## 6. Content Modules
 
 - **IPS Composition (FHIR R4)** : résumé international du patient — sections minimales ALGY (allergies), MDCA (médicaments), PROB (problèmes), IDOI (identité).
@@ -81,7 +81,7 @@ Interfaces d’échange retenues :
 
 | Propriété | Valeur |
 |-----------|--------|
-| **Producteur** | [CMP-15: API Gateway](../../referentiel/composants/cmp-15.md) |
+| **Producteur** | [CMP-15: API Gateway](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-15.md) |
 | **Consommateur** | Systèmes partenaires SADC/UA |
 | **Format** | X.509v3 + GDHCN Trust Anchor |
 | **Protocole** | mTLS |
@@ -91,7 +91,7 @@ Interfaces d’échange retenues :
 
 | Propriété | Valeur |
 |-----------|--------|
-| **Producteur** | [CMP-06: Intégration/Médiation](../../referentiel/composants/cmp-06.md) |
+| **Producteur** | [CMP-06: Intégration/Médiation](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-06.md) |
 | **Consommateur** | Système santé partenaire étranger |
 | **Format** | FHIR R4 — IPS Composition (résumé patient) |
 | **Protocole** | REST (synchrone) |
@@ -102,7 +102,7 @@ Interfaces d’échange retenues :
 
 | Propriété | Valeur |
 |-----------|--------|
-| **Producteur** | [CMP-04: Moteur analytique](../../referentiel/composants/cmp-04.md) |
+| **Producteur** | [CMP-04: Moteur analytique](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-04.md) |
 | **Consommateur** | OMS AFRO / CDC Africa |
 | **Format** | IHE ADX (mADX) — données agrégées |
 | **Protocole** | REST (asynchrone) |
@@ -112,8 +112,8 @@ Interfaces d’échange retenues :
 
 | Propriété | Valeur |
 |-----------|--------|
-| **Producteur** | [CMP-11: INP](../../referentiel/composants/cmp-11.md) |
-| **Consommateur** | [CMP-06: Médiation](../../referentiel/composants/cmp-06.md) → Système partenaire |
+| **Producteur** | [CMP-11: INP](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-11.md) |
+| **Consommateur** | [CMP-06: Médiation](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-06.md) → Système partenaire |
 | **Format** | IHE PIX/PDQ — mapping OID ↔ INP |
 | **Protocole** | REST |
 | **Fréquence** | À la demande |
@@ -122,12 +122,12 @@ Interfaces d’échange retenues :
 
 | Propriété | Valeur |
 |-----------|--------|
-| **Producteur** | [CMP-06: Intégration/Médiation](../../referentiel/composants/cmp-06.md) |
+| **Producteur** | [CMP-06: Intégration/Médiation](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-06.md) |
 | **Consommateur** | Système santé du pays de destination |
 | **Format** | FHIR R4 — ServiceRequest (transfer) + IPS Composition (données cliniques) |
 | **Protocole** | REST (synchrone) |
 | **Fréquence** | À la demande (événements urgentes) |
-| **Prérequis** | Accord bilatéral ([ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md)) + autorisation de sortie du territoire |
+| **Prérequis** | Accord bilatéral ([ART-0: Accords de partage inter-institutionnels](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md)) + autorisation de sortie du territoire |
 
 ## 9. Formats et standards recommandés
 
@@ -166,7 +166,7 @@ Règles de souveraineté :
 |-------|-------------|
 | **Règle 1** | L’identité nationale complète (INP + nom complet) ne quitte jamais le territoire sauf dérogation explicite du Ministre |
 | **Règle 2** | Seules les données minimisées nécessaires à la finalité peuvent être exportées |
-| **Règle 3** | Tout flux sortant doit être couvert par un accord bilatéral ou multilatéral explicite ([ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md)) |
+| **Règle 3** | Tout flux sortant doit être couvert par un accord bilatéral ou multilatéral explicite ([ART-0: Accords de partage inter-institutionnels](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md)) |
 | **Règle 4** | Le consentement du patient doit être obtenu pour tout échange sortant sauf obligation légale |
 | **Règle 5** | Tous les flux transfrontaliers sont journalisés et auditable par la DEPSI |
 | **Règle 6** | Les systèmes partenaires doivent démontrer leur conformité GDHCN avant tout accès |
@@ -180,7 +180,7 @@ Exigences de sécurité :
 | **EXG-S2** | Chiffrement TLS 1.3 pour tous les échanges transfrontaliers |
 | **EXG-S3** | RBAC différencié par rôle et par pays partenaire |
 | **EXG-S4** | Journalisation de tous les accès transfrontaliers avec horodatage |
-| **EXG-S5** | Accord de partage ([ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md)) préalable à tout flux sortant |
+| **EXG-S5** | Accord de partage ([ART-0: Accords de partage inter-institutionnels](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md)) préalable à tout flux sortant |
 | **EXG-S6** | Vérification de conformité GDHCN avant chaque session |
 | **EXG-S7** | Révocation immédiate en cas d’incident de sécurité |
 
@@ -200,10 +200,10 @@ La conformité est attestée par la journalisation de tous les flux, la vérific
 
 ## 12. Articulation avec les autres profils
 
-- [PT-01: échange interinstitutionnel](../../referentiel/profils/pt-01.md)
-- [PT-04: résolution d’identité bénéficiaire](../../referentiel/profils/pt-04.md)
-- [PT-10: confiance, authentification, autorisation](../../referentiel/profils/pt-10.md)
-- [PT-11: consentement et bases d’autorisation](../../referentiel/profils/pt-11.md)
+- [PT-01: échange interinstitutionnel](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md)
+- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md)
+- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md)
+- [PT-11: consentement et bases d’autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-11.md)
 
 ## 13. Limites et dépendances
 
@@ -213,11 +213,11 @@ La conformité est attestée par la journalisation de tous les flux, la vérific
 | HL7 FHIR IPS | Standard international | ✅ Disponible |
 | FHIR R4 | Standard | ✅ Validé |
 | IHE PIX/PDQ | Standard | ✅ Disponible |
-| [ART-7: Sécurité](../../referentiel/chapitres/art-7.md) | Chapitre ARTSN | Active |
-| [ART-0: Accords de partage](../../referentiel/chapitres/art-0.md) | Chapitre ARTSN | Active |
-| [CAP-INT-13: Interopérabilité transfrontalière](../../referentiel/capacites/cap-int-13.md) | Capacité CNISN | Créée |
-| [CAP-15: Cybersécurité](../../referentiel/capabilites/cap-15.md) | Capabilité CAESN | Active |
-| [CAP-17: Engagement patient](../../referentiel/capabilites/cap-17.md) | Capabilité CAESN | Active |
+| [ART-7: Sécurité](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md) | Chapitre ARTSN | Active |
+| [ART-0: Accords de partage](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md) | Chapitre ARTSN | Active |
+| [PART-ECHANGE-TRANSFRONTALIER: Interopérabilité transfrontalière](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md) | Objet CNISN/TOGAF | Créée |
+| [CAP-15: Cybersécurité](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md) | Capabilité CAESN | Active |
+| [CAP-17: Engagement patient](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-17.md) | Capabilité CAESN | Active |
 
 <!-- END:GENERATED -->
 

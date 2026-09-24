@@ -90,20 +90,20 @@ Les principes sont organisés en six catégories qui couvrent l'ensemble des dim
 
 | Capacité | Famille | Description |
 |----------|---------|-------------|
-| CAP-INT-01 | Référentiels et identités | Résolution d'identité du bénéficiaire |
-| CAP-INT-02 | Référentiels et identités | Registre des professionnels de santé |
-| CAP-INT-03 | Échange et médiation | Échange interinstitutionnel et médiation |
-| CAP-INT-04 | Référentiels et identités | Référentiel des structures et services |
-| CAP-INT-05 | Référentiels et identités | Terminologie et codification |
-| CAP-INT-06 | Échange et médiation | Catalogue de services et registre de contrats |
-| CAP-INT-07 | Données analytiques | Échange de données agrégées et analytique |
-| CAP-INT-08 | Confiance et sécurité | Authentification et autorisation |
-| CAP-INT-09 | Confiance et sécurité | Consentement et bases d'autorisation |
-| CAP-INT-10 | Confiance et sécurité | Audit, provenance, traçabilité |
-| CAP-INT-11 | Qualité et conformité | Qualité et réconciliation des données |
-| CAP-INT-12 | Qualité et conformité | Conformité et homologation |
-| CAP-INT-13 | Transfrontalier | Interopérabilité transfrontalière |
-| CAP-INT-14 | One Health | Échanges intersectoriels |
+| ABB-IDENTITE-BENEFICIAIRE | Référentiels et identités | Résolution d'identité du bénéficiaire |
+| ABB-REGISTRE-PROFESSIONNELS | Référentiels et identités | Registre des professionnels de santé |
+| ABB-ECHANGE-MEDIATION | Échange et médiation | Échange interinstitutionnel et médiation |
+| ABB-REFERENTIEL-STRUCTURES-SERVICES | Référentiels et identités | Référentiel des structures et services |
+| ABB-SERVICE-TERMINOLOGIE | Référentiels et identités | Terminologie et codification |
+| ABB-CATALOGUE-CONTRATS | Échange et médiation | Catalogue de services et registre de contrats |
+| ABB-EXPOSITION-DONNEES-ANALYTIQUES | Données analytiques | Échange de données agrégées et analytique |
+| ABB-CONFIANCE-AUTORISATION | Confiance et sécurité | Authentification et autorisation |
+| ABB-GESTION-CONSENTEMENT | Confiance et sécurité | Consentement et bases d'autorisation |
+| ABB-AUDIT-PROVENANCE | Confiance et sécurité | Audit, provenance, traçabilité |
+| ABB-RECONCILIATION-DONNEES | Qualité et conformité | Qualité et réconciliation des données |
+| COMP-HOMOLOGATION-INTEROPERABILITE | Qualité et conformité | Conformité et homologation |
+| PART-ECHANGE-TRANSFRONTALIER | Transfrontalier | Interopérabilité transfrontalière |
+| PART-ONE-HEALTH | One Health | Échanges intersectoriels |
 
 ## 6. Liens vers les autres niveaux
 

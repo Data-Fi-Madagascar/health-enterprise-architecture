@@ -8,7 +8,7 @@ status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: ["artsn", "chapitres", "ART-4A", "niveau-3"]
-related: ["CAP-INT-01", "ART-4A"]
+related: ["ABB-IDENTITE-BENEFICIAIRE", "ART-4A"]
 ---
 
 # Résolution d'identité
@@ -39,15 +39,15 @@ ART-4A : Résolution d'identité constitue un chapitre du **cadre normatif oppos
 
 - **Rattachement** : [CAP-04bis](../08_annexes/c-renvoi-capacites-candidates.md) (engagement patient et identitovigilance).
 - **Concepts cibles** : Golden Record, Identifiant National de Santé (INS).
-- **Déduit selon** : [ENF-3: Unicité de l'identité et résilience face à la fragmentation applicative](../../referentiel/exigences/enf-3.md) (unicité de l’identité).
+- **Déduit selon** : [ENF-3: Unicité de l'identité et résilience face à la fragmentation applicative](../../04_architecture-repository/03_requirements/enf-3.md) (unicité de l’identité).
 - **Statut : Provisoire.**
 
 ## Profils PTISN qui implémentent ce chapitre
 
 Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
 
-- [PT-04 : Résolution d’identité du bénéficiaire](../../referentiel/profils/pt-04.md)
-- [PT-05 : Registre des professionnels](../../referentiel/profils/pt-05.md)
+- [PT-04 : Résolution d’identité du bénéficiaire](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md)
+- [PT-05 : Registre des professionnels](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md)
 
 <!-- END:GENERATED -->
 ## Liens
@@ -58,6 +58,6 @@ Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre 
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`ART-4A`** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
+- **`ART-4A`** : Résolution d'identité (`04_architecture-repository/04_patterns/artsn-rules/art-4a.md`)
 - **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

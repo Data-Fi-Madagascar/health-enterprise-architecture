@@ -38,16 +38,17 @@ Chaque ADR suit le modèle type, avec un statut parmi `proposé`, `accepté`, `a
 
 | ADR | Titre | Statut | Date |
 |-----|-------|--------|------|
-| ADR-0000 | Template | modèle | : |
-| ADR-0001 | X-Road : Plateforme d'échange | appliqué | 2026-07-01 |
-| ADR-0002 | mADX : Données agrégées | appliqué | 2026-07-01 |
-| ADR-0003 | HL7 FHIR : Standard d'interopérabilité | appliqué | 2026-07-01 |
-| ADR-0004 | PIXm/PDQm : Résolution d'identité | appliqué | 2026-07-01 |
-| ADR-0005 | FHIR Consent : Consentement structuré | proposé | 2026-08-13 |
-| ADR-0006 | INP : Identité nationale patient | proposé | 2026-08-13 |
-| ADR-0007 | GDHCN : Confiance transfrontalière | proposé | 2026-08-13 |
-| ADR-0008 | ATNA : Audit et traçabilité | proposé | 2026-08-13 |
-| ADR-0009 | Terminologie : CIM-11 + LOINC | proposé | 2026-08-13 |
+| adr-0001 | "ADR-0001 : Adoption de X-Road comme plateforme d'échange interinstitutionnel" | active | 2026-07-01 |
+| adr-0002 | "ADR-0002 : Adoption du profil IHE mADX pour l'échange de données agrégées" | active | 2026-07-01 |
+| adr-0003 | "ADR-0003 : Utilisation de HL7 FHIR comme standard d'interopérabilité" | active | 2026-07-01 |
+| adr-0004 | "ADR-0004 : Adoption des profils IHE PIXm/PDQm pour la résolution d'identité" | active | 2026-07-01 |
+| adr-0005 | "ADR-0005 : Adoption de FHIR Consent pour le consentement structuré" | candidate | 2026-08-13 |
+| adr-0006 | "ADR-0006 : Adoption de l'Identité Nationale Patient (INP) via PIXm/PDQm" | candidate | 2026-08-13 |
+| adr-0007 | "ADR-0007 : Adoption du GDHCN pour la confiance transfrontalière" | candidate | 2026-08-13 |
+| adr-0008 | "ADR-0008 : Adoption d'ATNA et journalisation pour l'audit et la traçabilité" | candidate | 2026-08-13 |
+| adr-0009 | "ADR-0009 : Adoption d'un référentiel terminologique national (CIM-11 + LOINC)" | candidate | 2026-08-13 |
+| adr-0010 | "ADR-0010 : Cadre légal et mandat d'opposabilité du CNASN" | candidate | 2026-08-20 |
+
 
 ## Outils de gestion des décisions
 

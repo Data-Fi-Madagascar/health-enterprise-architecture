@@ -27,6 +27,10 @@ except ImportError:
     yaml = None
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ARCH_REPOSITORY_DIR = "04_architecture-repository"
+ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
+DATA_OBJECTS_DIR = os.path.join(ARCH_REPOSITORY_ROOT, "02_architecture-elements",
+                                "data", "data-objects")
 FHIR_VERSION = "4.0.1"
 FHIR_NS = "https://healmadagascar.mg/fhir"
 
@@ -541,7 +545,7 @@ def compile_fhir_resources(output_dir):
         json.dump(vs, f, indent=2, ensure_ascii=False)
 
     # Collecter et compiler les objets de données
-    pattern = os.path.join(REPO_ROOT, "referentiel", "objets-de-donnees", "do-*.md")
+    pattern = os.path.join(DATA_OBJECTS_DIR, "do-*.md")
     compiled = [cs_path, vs_path]
 
     for path in sorted(glob.glob(pattern)):

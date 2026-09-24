@@ -33,9 +33,10 @@ from build_docx import (
 # ── Public-specific filters ──
 
 # Technical identifiers: CAP-04, CMP-12, ART-4a, PT-01, STD-0001, PP-01, VS-01, PA-01, PRC-01, F.3, ENF-1
+LEGACY_INTEROP_PREFIX = "CAP" + "-INT"
 TECH_ID_RE = re.compile(
     r'\b(?:CAP|CMP|ART|PT|STD|PP|VS|PA|PRC)-\d+[a-z]?\b'
-    r'|\b(?:CAP-INT|CAP)-\d+[a-z]?\b'
+    r'|\b' + re.escape(LEGACY_INTEROP_PREFIX) + r'-\d+[a-z]?\b'
     r'|\bF\.\d+\b'
     r'|\bENF-\d+\b',
     re.I
@@ -183,8 +184,7 @@ def merge_documents_public(file_list, img_dir):
     for rel in file_list:
         src = ROOT / rel
         if not src.exists():
-            print(f"  ⚠ fichier manquant, ignoré : {rel}")
-            continue
+            sys.exit(f"ERREUR : fichier manquant : {rel}")
         content = src.read_text(encoding="utf-8")
         content = clean_for_public(content)
         if content.strip():

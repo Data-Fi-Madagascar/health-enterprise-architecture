@@ -11,32 +11,32 @@ tags: ["ptisn", "niveau-4", "interopérabilité", "alignement"]
 
 # Partie IV : Matrice d'alignement
 
-La matrice d'alignement établit la correspondance systématique entre les profils techniques d'implémentation par initiative (PTISN), les capacités du Cadre National d'Interopérabilité de la Santé Numérique (CNISN), les chapitres de l'Architecture de Référence Technique (ART) et les composants de l'architecture OpenHIE. Les alignements présentés ci-après ont été corrigés et vérifiés au cours de la migration documentaire (voir `coherence-report.md`) : chaque profil pointe désormais vers la capacité CNISN et le chapitre ART auxquels il se rattache effectivement.
+La matrice d'alignement établit la correspondance systématique entre les profils techniques d'implémentation par initiative (PTISN), les objets d'interopérabilité du Cadre National d'Interopérabilité de la Santé Numérique (CNISN), les chapitres de l'Architecture de Référence Technique (ART) et les composants de l'architecture OpenHIE. Les alignements présentés ci-après ont été corrigés et vérifiés au cours de la migration documentaire (voir `coherence-report.md`) : chaque profil pointe désormais vers l'objet CNISN/TOGAF et le chapitre ART auxquels il se rattache effectivement.
 
-## 1. Alignement avec les capacités CNISN
+## 1. Alignement avec les objets d'interopérabilité CNISN
 
-Le tableau suivant établit, pour chaque capacité d'interopérabilité définie par le CNISN, les profils PTISN qui y contribuent. Cette correspondance permet de s'assurer que l'ensemble des capacités nationales sont couvertes par au moins un profil technique, tout en identifiant les éventuels écarts de couverture.
+Le tableau suivant établit, pour chaque objet d'interopérabilité défini par le CNISN, les profils PTISN qui y contribuent. Cette correspondance permet de s'assurer que l'ensemble des objets nationaux requis sont couverts par au moins un profil technique, tout en identifiant les éventuels écarts de couverture.
 
-| Capacité CNISN | Profils PTISN (mapping) |
+| Objet CNISN/TOGAF | Profils PTISN (mapping) |
 |---|--|
-| CAP-INT-01 | PT-04 |
-| CAP-INT-02 | PT-05 |
-| CAP-INT-03 | PT-01, PT-02, PT-08, PT-16 |
-| CAP-INT-04 | PT-06 |
-| CAP-INT-05 | PT-07 |
-| CAP-INT-06 | PT-03 |
-| CAP-INT-07 | PT-08, PT-09 |
-| CAP-INT-08 | PT-10 |
-| CAP-INT-09 | PT-11 |
-| CAP-INT-10 | PT-12 |
-| CAP-INT-11 | PT-13 |
-| CAP-INT-12 | (à instruire — aucun profil de gestion des risques inter-sectoriels explicite) |
-| CAP-INT-13 | PT-14 |
-| CAP-INT-14 | PT-15 |
-| CAP-INT-15 | PT-17 |
-| CAP-INT-16 | PT-15 |
+| ABB-IDENTITE-BENEFICIAIRE | PT-04 |
+| ABB-REGISTRE-PROFESSIONNELS | PT-05 |
+| ABB-ECHANGE-MEDIATION | PT-01, PT-02, PT-08, PT-16 |
+| ABB-REFERENTIEL-STRUCTURES-SERVICES | PT-06 |
+| ABB-SERVICE-TERMINOLOGIE | PT-07 |
+| ABB-CATALOGUE-CONTRATS | PT-03 |
+| ABB-EXPOSITION-DONNEES-ANALYTIQUES | PT-08, PT-09 |
+| ABB-CONFIANCE-AUTORISATION | PT-10 |
+| ABB-GESTION-CONSENTEMENT | PT-11 |
+| ABB-AUDIT-PROVENANCE | PT-12 |
+| ABB-RECONCILIATION-DONNEES | PT-13 |
+| COMP-HOMOLOGATION-INTEROPERABILITE | (à instruire — aucun profil de gestion des risques inter-sectoriels explicite) |
+| PART-ECHANGE-TRANSFRONTALIER | PT-14 |
+| PART-ONE-HEALTH | PT-15 |
+| ABB-ECHANGE-LOGISTIQUE-LMIS | PT-17 |
+| RD-DONNEES-ENVIRONNEMENTALES-CLIMAT | PT-15 |
 
-On constate que la capacité CAP-INT-12 ne fait l'objet d'aucun profil technique pour le moment. Cette situation traduit soit une capacité dont l'implémentation n'est pas encore requise par les initiatives en cours, soit un domaine nécessitant le développement d'un nouveau profil.
+On constate que la capacité COMP-HOMOLOGATION-INTEROPERABILITE ne fait l'objet d'aucun profil technique pour le moment. Cette situation traduit soit une capacité dont l'implémentation n'est pas encore requise par les initiatives en cours, soit un domaine nécessitant le développement d'un nouveau profil.
 
 ## 2. Alignement avec l'ART
 
@@ -94,7 +94,7 @@ Cette section ferme la boucle de traçabilité en reliant chaque lot — défini
 
 | Lot | Profils PTISN concernés | Chapitres ART mobilisés | Normes / ADR CNISN |
 |-----|--------------------------|--------------------------|---------------------|
-| L1 — Infrastructure & sécurité | PT-04 (via CAP-INT-01) | ART-4, ART-4A, ART-4B, ART-7 | STD-0002, STD-0007, ADR-0008, ADR-0010 |
+| L1 — Infrastructure & sécurité | PT-04 (via ABB-IDENTITE-BENEFICIAIRE) | ART-4, ART-4A, ART-4B, ART-7 | STD-0002, STD-0007, ADR-0008, ADR-0010 |
 | L2 — Applications terrain | PT-01, PT-02 (applications & échange) | ART-0, ART-1, ART-2, ART-7, ART-11 | STD-0001, STD-0006, ADR-0003 |
 | L3 — Médiation & registres | PT-01, PT-02, PT-03, PT-04, PT-05, PT-06, PT-07, PT-08, PT-16 | ART-1, ART-2, ART-4, ART-4A, ART-4B, ART-4C, ART-5, ART-6, ART-7, ART-8, ART-8C, ART-8D | STD-0003, STD-0005, STD-0004, ADR-0001, ADR-0004, ADR-0006 |
 | L4 — Analytique & pilotage | PT-06, PT-08, PT-09, PT-13, PT-18, PT-19 (via ART-3, ART-6, ART-9, ART-12) | ART-3, ART-5, ART-6, ART-7, ART-9, ART-12 | STD-0001, STD-0008, ADR-0008, ADR-0003 |
@@ -102,46 +102,46 @@ Cette section ferme la boucle de traçabilité en reliant chaque lot — défini
 | L6 — Interopérabilité transfrontalière | PT-10, PT-14 (explicites WP-06) | ART-0, ART-1, ART-7, ART-9 | GDHCN, ADR-0007 |
 | L7 — Coordination One Health | PT-15 (explicite WP-07) | ART-0, ART-4D, ART-8B, ART-11 | ADR-0001, ADR-0007 |
 
-> **Méthode** : L5/L6/L7 sont dérivés directement des profils listés dans les paquets de travail `wp-05`/`wp-06`/`wp-07` ; L1–L4 sont dérivés par jointure entre le champ `Réalise` des work-packages (capacités CNISN `CAP-INT-*` et chapitres `ART-*`) et les sections 1–2 de cette matrice. Les montants et périmètres précis par lot sont à confirmer en cadrage BRV (voir [méthode TCO](../../00_caesn/06_portfolio/financement-tco.md)).
+> **Méthode** : L5/L6/L7 sont dérivés directement des profils listés dans les paquets de travail `wp-05`/`wp-06`/`wp-07` ; L1-L4 sont dérivés par jointure entre le champ `realizes` des work-packages (objets CNISN/TOGAF, capabilités CAESN et chapitres `ART-*`) et les sections 1-2 de cette matrice. Les montants et périmètres précis par lot sont à confirmer en cadrage BRV (voir [méthode TCO](../../00_caesn/06_portfolio/financement-tco.md)).
 
 ## Références
 
-- [CAP-INT-01](../../referentiel/capacites/cap-int-01.md)
-- [PT-04](../../referentiel/profils/pt-04.md)
-- [CAP-INT-02](../../referentiel/capacites/cap-int-02.md)
-- [PT-05](../../referentiel/profils/pt-05.md)
-- [CAP-INT-03](../../referentiel/capacites/cap-int-03.md)
-- [PT-01](../../referentiel/profils/pt-01.md)
-- [PT-02](../../referentiel/profils/pt-02.md)
-- [PT-08](../../referentiel/profils/pt-08.md)
-- [CAP-INT-04](../../referentiel/capacites/cap-int-04.md)
-- [PT-06](../../referentiel/profils/pt-06.md)
-- [CAP-INT-05](../../referentiel/capacites/cap-int-05.md)
-- [PT-07](../../referentiel/profils/pt-07.md)
-- [CAP-INT-06](../../referentiel/capacites/cap-int-06.md)
-- [PT-03](../../referentiel/profils/pt-03.md)
-- [CAP-INT-07](../../referentiel/capacites/cap-int-07.md)
-- [PT-09](../../referentiel/profils/pt-09.md)
-- [CAP-INT-08](../../referentiel/capacites/cap-int-08.md)
-- [PT-10](../../referentiel/profils/pt-10.md)
-- [CAP-INT-09](../../referentiel/capacites/cap-int-09.md)
-- [PT-11](../../referentiel/profils/pt-11.md)
-- [CAP-INT-10](../../referentiel/capacites/cap-int-10.md)
-- [PT-12](../../referentiel/profils/pt-12.md)
-- [CAP-INT-11](../../referentiel/capacites/cap-int-11.md)
-- [PT-13](../../referentiel/profils/pt-13.md)
-- [CAP-INT-12](../../referentiel/capacites/cap-int-12.md)
-- [ART-0](../../referentiel/chapitres/art-0.md)
-- [ART-1](../../referentiel/chapitres/art-1.md)
-- [ART-2](../../referentiel/chapitres/art-2.md)
-- [ART-3](../../referentiel/chapitres/art-3.md)
-- [ART-4](../../referentiel/chapitres/art-4.md)
-- [ART-4A](../../referentiel/chapitres/art-4a.md)
-- [ART-4B](../../referentiel/chapitres/art-4b.md)
-- [ART-5](../../referentiel/chapitres/art-5.md)
-- [ART-6](../../referentiel/chapitres/art-6.md)
-- [ART-7](../../referentiel/chapitres/art-7.md)
-- [ART-8](../../referentiel/chapitres/art-8.md)
-- [ART-9](../../referentiel/chapitres/art-9.md)
-- [ART-10](../../referentiel/chapitres/art-10.md)
-- [ART-11](../../referentiel/chapitres/art-11.md)
+- [ABB-IDENTITE-BENEFICIAIRE](../../04_architecture-repository/05_building-blocks/abb/abb-identite-beneficiaire.md)
+- [PT-04](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md)
+- [ABB-REGISTRE-PROFESSIONNELS](../../04_architecture-repository/05_building-blocks/abb/abb-registre-professionnels.md)
+- [PT-05](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md)
+- [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md)
+- [PT-01](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md)
+- [PT-02](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-02.md)
+- [PT-08](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-08.md)
+- [ABB-REFERENTIEL-STRUCTURES-SERVICES](../../04_architecture-repository/05_building-blocks/abb/abb-referentiel-structures-services.md)
+- [PT-06](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-06.md)
+- [ABB-SERVICE-TERMINOLOGIE](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md)
+- [PT-07](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-07.md)
+- [ABB-CATALOGUE-CONTRATS](../../04_architecture-repository/05_building-blocks/abb/abb-catalogue-contrats.md)
+- [PT-03](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-03.md)
+- [ABB-EXPOSITION-DONNEES-ANALYTIQUES](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md)
+- [PT-09](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-09.md)
+- [ABB-CONFIANCE-AUTORISATION](../../04_architecture-repository/05_building-blocks/abb/abb-confiance-autorisation.md)
+- [PT-10](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md)
+- [ABB-GESTION-CONSENTEMENT](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md)
+- [PT-11](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-11.md)
+- [ABB-AUDIT-PROVENANCE](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md)
+- [PT-12](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-12.md)
+- [ABB-RECONCILIATION-DONNEES](../../04_architecture-repository/05_building-blocks/abb/abb-reconciliation-donnees.md)
+- [PT-13](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-13.md)
+- [COMP-HOMOLOGATION-INTEROPERABILITE](../../04_architecture-repository/06_governance/compliance/comp-homologation-interoperabilite.md)
+- [ART-0](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md)
+- [ART-1](../../04_architecture-repository/04_patterns/artsn-rules/art-1.md)
+- [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md)
+- [ART-3](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md)
+- [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
+- [ART-4A](../../04_architecture-repository/04_patterns/artsn-rules/art-4a.md)
+- [ART-4B](../../04_architecture-repository/04_patterns/artsn-rules/art-4b.md)
+- [ART-5](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md)
+- [ART-6](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md)
+- [ART-7](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
+- [ART-8](../../04_architecture-repository/04_patterns/artsn-rules/art-8.md)
+- [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md)
+- [ART-10](../../04_architecture-repository/04_patterns/artsn-rules/art-10.md)
+- [ART-11](../../04_architecture-repository/04_patterns/artsn-rules/art-11.md)

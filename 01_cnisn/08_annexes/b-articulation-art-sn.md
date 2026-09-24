@@ -17,13 +17,13 @@ Les 16 capacités du CNISN sont regroupées en huit familles de réponse (voir P
 
 | Famille CNISN | Capacités | Réponse ARTSN |
 |---|---|---|
-| 1. Référentiels et identités | CAP-INT-01, 02, 04, 05 | Couche 4 : services partagés : ART-4, ART-4A, ART-4C, ART-4D |
-| 2. Échange, médiation et contractualisation | CAP-INT-03, 06 | Couches 3 et 4 : échange, transport et médiation : ART-1, ART-2, ART-8A, ART-8C ; F.2, F.3 |
-| 3. Données analytiques et exposition | CAP-INT-07 | Couche 5 : projections analytiques : ART-6, ART-5, ART-8B, ART-9 |
-| 4. Confiance, sécurité et autorisation | CAP-INT-08, 09, 10 | Axe 1 : sécurité et confiance : ART-7, ART-4B, ART-9 ; F.5 |
-| 5. Qualité et conformité | CAP-INT-11, 12 | Axe 2 : gouvernance de données : F.4, ART-0, ART-5 |
-| 6. Interopérabilité transfrontalière | CAP-INT-13 | Couche 3 : échange sortant : ART-1 ; Axe 1 : confiance : ART-7 ; Couche 6 : pilotage intersectoriel : ART-0 |
-| 7. Échanges intersectoriels One Health | CAP-INT-14 | Couche 6 : pilotage : ART-11, ART-0 ; Couche 5 : analytique : ART-4D, ART-8B ; Fondation : F.2 |
+| 1. Référentiels et identités | ABB-IDENTITE-BENEFICIAIRE, 02, 04, 05 | Couche 4 : services partagés : ART-4, ART-4A, ART-4C, ART-4D |
+| 2. Échange, médiation et contractualisation | ABB-ECHANGE-MEDIATION, 06 | Couches 3 et 4 : échange, transport et médiation : ART-1, ART-2, ART-8A, ART-8C ; F.2, F.3 |
+| 3. Données analytiques et exposition | ABB-EXPOSITION-DONNEES-ANALYTIQUES | Couche 5 : projections analytiques : ART-6, ART-5, ART-8B, ART-9 |
+| 4. Confiance, sécurité et autorisation | ABB-CONFIANCE-AUTORISATION, 09, 10 | Axe 1 : sécurité et confiance : ART-7, ART-4B, ART-9 ; F.5 |
+| 5. Qualité et conformité | ABB-RECONCILIATION-DONNEES, 12 | Axe 2 : gouvernance de données : F.4, ART-0, ART-5 |
+| 6. Interopérabilité transfrontalière | PART-ECHANGE-TRANSFRONTALIER | Couche 3 : échange sortant : ART-1 ; Axe 1 : confiance : ART-7 ; Couche 6 : pilotage intersectoriel : ART-0 |
+| 7. Échanges intersectoriels One Health | PART-ONE-HEALTH | Couche 6 : pilotage : ART-11, ART-0 ; Couche 5 : analytique : ART-4D, ART-8B ; Fondation : F.2 |
 
 Cette articulation couvre les réponses d'architecture ; la traduction en standards, profils et versions relève du PTISN (voir matrice d'alignement).
 
@@ -33,24 +33,24 @@ Cette articulation couvre les réponses d'architecture ; la traduction en standa
 
 - **Partie II** : Partie II : Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
 - **cartographie cible** : Cartographie conceptuelle cible (`02_artsn/05_cartographie/index.md`)
-- **ART-4** : Référentiels de métadonnées de gestion (`referentiel/chapitres/art-4.md`)
-- **ART-4A** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
-- **ART-4C** : Éligibilité et couverture (`referentiel/chapitres/art-4c.md`)
-- **ART-4D** : Référentiel géospatial et d'exploitation partagé (`referentiel/chapitres/art-4d.md`)
-- **ART-1** : Intégration et ingestion (`referentiel/chapitres/art-1.md`)
-- **ART-2** : Médiation et normalisation (`referentiel/chapitres/art-2.md`)
-- **ART-8A** : Orchestration de processus borné (`referentiel/chapitres/art-8a.md`)
-- **ART-8C** : Agrégation par lot (`referentiel/chapitres/art-8c.md`)
-- **F.2** : F.2 : Préservation de la souveraineté intersectorielle (`referentiel/fondations/f-2.md`)
-- **F.3** : F.3 : Éradication des silos technologiques (`referentiel/fondations/f-3.md`)
-- **ART-6** : Analytique et restitution (`referentiel/chapitres/art-6.md`)
-- **ART-5** : Cohérence et qualité des données (`referentiel/chapitres/art-5.md`)
-- **ART-8B** : Modélisation de relations en graphe (`referentiel/chapitres/art-8b.md`)
-- **ART-9** : Garanties transactionnelles fortes (`referentiel/chapitres/art-9.md`)
-- **ART-7** : Sécurité, contrôle d'accès et résidence de la donnée (`referentiel/chapitres/art-7.md`)
-- **ART-4B** : Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
-- **F.5** : F.5 : Protection et minimisation (`referentiel/fondations/f-5.md`)
-- **F.4** : F.4 : Homologation obligatoire (`referentiel/fondations/f-4.md`)
-- **ART-0** : Accords de partage inter-institutionnels (`referentiel/chapitres/art-0.md`)
-- **ART-11** : Coordination intersectorielle (`referentiel/chapitres/art-11.md`)
+- **ART-4** : Référentiels de métadonnées de gestion (`04_architecture-repository/04_patterns/artsn-rules/art-4.md`)
+- **ART-4A** : Résolution d'identité (`04_architecture-repository/04_patterns/artsn-rules/art-4a.md`)
+- **ART-4C** : Éligibilité et couverture (`04_architecture-repository/04_patterns/artsn-rules/art-4c.md`)
+- **ART-4D** : Référentiel géospatial et d'exploitation partagé (`04_architecture-repository/04_patterns/artsn-rules/art-4d.md`)
+- **ART-1** : Intégration et ingestion (`04_architecture-repository/04_patterns/artsn-rules/art-1.md`)
+- **ART-2** : Médiation et normalisation (`04_architecture-repository/04_patterns/artsn-rules/art-2.md`)
+- **ART-8A** : Orchestration de processus borné (`04_architecture-repository/04_patterns/artsn-rules/art-8a.md`)
+- **ART-8C** : Agrégation par lot (`04_architecture-repository/04_patterns/artsn-rules/art-8c.md`)
+- **F.2** : F.2 : Préservation de la souveraineté intersectorielle (`04_architecture-repository/04_patterns/foundations/f-2.md`)
+- **F.3** : F.3 : Éradication des silos technologiques (`04_architecture-repository/04_patterns/foundations/f-3.md`)
+- **ART-6** : Analytique et restitution (`04_architecture-repository/04_patterns/artsn-rules/art-6.md`)
+- **ART-5** : Cohérence et qualité des données (`04_architecture-repository/04_patterns/artsn-rules/art-5.md`)
+- **ART-8B** : Modélisation de relations en graphe (`04_architecture-repository/04_patterns/artsn-rules/art-8b.md`)
+- **ART-9** : Garanties transactionnelles fortes (`04_architecture-repository/04_patterns/artsn-rules/art-9.md`)
+- **ART-7** : Sécurité, contrôle d'accès et résidence de la donnée (`04_architecture-repository/04_patterns/artsn-rules/art-7.md`)
+- **ART-4B** : Bases d'autorisation (`04_architecture-repository/04_patterns/artsn-rules/art-4b.md`)
+- **F.5** : F.5 : Protection et minimisation (`04_architecture-repository/04_patterns/foundations/f-5.md`)
+- **F.4** : F.4 : Homologation obligatoire (`04_architecture-repository/04_patterns/foundations/f-4.md`)
+- **ART-0** : Accords de partage inter-institutionnels (`04_architecture-repository/04_patterns/artsn-rules/art-0.md`)
+- **ART-11** : Coordination intersectorielle (`04_architecture-repository/04_patterns/artsn-rules/art-11.md`)
 - **matrice d'alignement** : Partie IV : Matrice d'alignement (`03_ptisn/04_matrice-alignement/index.md`)

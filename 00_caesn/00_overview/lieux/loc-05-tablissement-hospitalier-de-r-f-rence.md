@@ -17,7 +17,7 @@ related: ["PP-06", "CAP-01"]
 
 L'établissement hospitalier de référence assure les soins spécialisés et reçoit les contre-références en provenance des CSB. Il constitue le haut de la chaîne de prise en charge.
 
-Il [sert la partie prenante « Formation sanitaire »](../../../referentiel/parties-prenantes/pp-06.md) et mobilise la [capacité « Offre de soins et continuité »](../../../referentiel/capabilites/cap-01.md). Sa connexion aux registres nationaux est déterminante pour la continuité du dossier.
+Il [sert la partie prenante « Formation sanitaire »](../../../04_architecture-repository/02_architecture-elements/motivation/stakeholders/pp-06.md) et mobilise la [capacité « Offre de soins et continuité »](../../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md). Sa connexion aux registres nationaux est déterminante pour la continuité du dossier.
 
 ## Imbrication territoriale
 

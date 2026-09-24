@@ -49,7 +49,7 @@ Adopter **HL7 FHIR Consent** comme standard national pour la gestion structurée
 
 FHIR Consent répond aux exigences du cadre :
 
-- **CAP-INT-09** : Gestion du consentement et des autorisations
+- **ABB-GESTION-CONSENTEMENT** : Gestion du consentement et des autorisations
 - **ART-4B** : Bases d'autorisation
 - **ART-7** : Sécurité, contrôle d'accès et résidence des données
 - **PT-11** : Profil technique consentement

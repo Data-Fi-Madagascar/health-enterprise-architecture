@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-08-27
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-19"]
-related: ["CAP-INT-05", "ART-12", "ART-2", "CMP-08"]
+related: ["ABB-SERVICE-TERMINOLOGIE", "ART-12", "ART-2", "CMP-08"]
 ---
 
 # Aide à la décision clinique (CDS)
@@ -21,15 +21,15 @@ Le **profil PT-19 — Aide à la décision clinique (CDS)** expose l’aide à l
 
 Périmètre : publication et invocation d’artefacts de connaissance (guides de pratique, règles, ordonnances informatisées). Hors périmètre : les applications de point de service elles-mêmes.
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-- [CAP-INT-05: Terminologie et codification](../../referentiel/capacites/cap-int-05.md)
-- [CMP-08: Répertoire de données cliniques opérationnelles](../../referentiel/composants/cmp-08.md) (source de vérité clinique)
+- [ABB-SERVICE-TERMINOLOGIE: Terminologie et codification](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md)
+- [CMP-08: Répertoire de données cliniques opérationnelles](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-08.md) (source de vérité clinique)
 
 ## 3. Chapitres ART applicables
 
-- [ART-12: Aide à la décision clinique](../../referentiel/chapitres/art-12.md)
-- [ART-2: normalisation sémantique](../../referentiel/chapitres/art-2.md)
+- [ART-12: Aide à la décision clinique](../../04_architecture-repository/04_patterns/artsn-rules/art-12.md)
+- [ART-2: normalisation sémantique](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md)
 
 ## 4. Acteurs (Actors)
 
@@ -37,7 +37,7 @@ Périmètre : publication et invocation d’artefacts de connaissance (guides de
 - **Service CDS (Knowledge Service)** — expose les artefacts et répond aux invocations contextuelles.
 - **Application de point de service (Point of Service / EHR)** — invoque le CDS et présente la recommandation au professionnel.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-05](../../referentiel/capacites/cap-int-05.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-SERVICE-TERMINOLOGIE](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -48,7 +48,7 @@ Périmètre : publication et invocation d’artefacts de connaissance (guides de
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-05](../../referentiel/capacites/cap-int-05.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-SERVICE-TERMINOLOGIE](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md).
 ## 6. Content Modules
 
 - **FHIR `PlanDefinition` / `ActivityDefinition`** : règles de décision, ordonnances informatisées, guides de pratique.
@@ -96,9 +96,9 @@ Aucun produit national n’est encore retenu (**statut : à instruire**). Les ar
 
 ## 12. Articulation avec les autres profils
 
-- [PT-07: terminologie et codification](../../referentiel/profils/pt-07.md)
-- [PT-05: registre des professionnels](../../referentiel/profils/pt-05.md)
-- [PT-10: confiance, authentification, autorisation](../../referentiel/profils/pt-10.md)
+- [PT-07: terminologie et codification](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-07.md)
+- [PT-05: registre des professionnels](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md)
+- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md)
 
 ## 13. Limites et dépendances
 

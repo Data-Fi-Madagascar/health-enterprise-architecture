@@ -25,7 +25,7 @@ tags: ["artsn", "service", "srv-06", "patterns"]
 
 Le service de pilotage et tableaux de bord consolide les données du système en indicateurs de performance, tableaux de bord et alertes décisionnels. Il transforme la donnée brute en intelligence pour le pilotage.
 
-Service de catégorie *applicatif*, il [sert l'autorité district, région et Ministère](../../referentiel/parties-prenantes/pp-07.md), [réalise la capacité « Pilotage et performance »](../../referentiel/capabilites/cap-03.md), [accède à l'objet de données de pilotage](../../referentiel/objets-de-donnees/do-04.md) et [met en œuvre le chapitre ART-3 (pilotage)](../../referentiel/chapitres/art-3.md). Il s'appuie sur le [composant de pilotage](../../referentiel/composants/cmp-12.md).
+Service de catégorie *applicatif*, il [sert l'autorité district, région et Ministère](../../04_architecture-repository/02_architecture-elements/motivation/stakeholders/pp-07.md), [réalise la capacité « Pilotage et performance »](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-03.md), [accède à l'objet de données de pilotage](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-04.md) et [met en œuvre le chapitre ART-3 (pilotage)](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md). Il s'appuie sur le [composant de pilotage](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-12.md).
 
 ## Catégorie
 
@@ -33,10 +33,10 @@ applicatif.
 
 ## Exposition
 
-Sert la partie prenante [PP-07](../../referentiel/parties-prenantes/pp-07.md) et crée de la valeur pour son bénéficiaire.
+Sert la partie prenante [PP-07](../../04_architecture-repository/02_architecture-elements/motivation/stakeholders/pp-07.md) et crée de la valeur pour son bénéficiaire.
 
 ## Réalisation
 
-Réalisé par les capacités [CAP-03](../../referentiel/capabilites/cap-03.md) et mis en œuvre via les chapitres [ART-3](../../referentiel/chapitres/art-3.md).
+Réalisé par les capacités [CAP-03](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-03.md) et mis en œuvre via les chapitres [ART-3](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md).
 
 <!-- END:GENERATED -->

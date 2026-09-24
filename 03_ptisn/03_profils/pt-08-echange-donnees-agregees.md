@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-08"]
-related: ["CAP-INT-03", "CAP-INT-07", "ART-1", "ART-2", "ART-5", "ART-6", "CMP-03", "CMP-06"]
+related: ["ABB-ECHANGE-MEDIATION", "ABB-EXPOSITION-DONNEES-ANALYTIQUES", "ART-1", "ART-2", "ART-5", "ART-6", "CMP-03", "CMP-06"]
 ---
 
 # Profil technique national
@@ -21,24 +21,24 @@ Le **profil PT-08 — Échange de données agrégées** définit le service d’
 
 Périmètre : rapports périodiques d’activité et indicateurs de programme. Hors périmètre : les données individuelles (voir PT-04, PT-09) et la normalisation sémantique (voir PT-07).
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-- [CAP-INT-03: Échange et médiation inter-systèmes](../../referentiel/capacites/cap-int-03.md)
-- contribution à [CAP-INT-07: Accès et exposition des données analytiques](../../referentiel/capacites/cap-int-07.md)
+- [ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md)
+- contribution à [ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md)
 
 ## 3. Chapitres ART applicables
 
-- [ART-1: Intégration et ingestion](../../referentiel/chapitres/art-1.md)
-- [ART-2: Médiation et normalisation](../../referentiel/chapitres/art-2.md)
-- [ART-5: Cohérence et qualité des données](../../referentiel/chapitres/art-5.md)
-- [ART-6: Analytique et restitution](../../referentiel/chapitres/art-6.md)
+- [ART-1: Intégration et ingestion](../../04_architecture-repository/04_patterns/artsn-rules/art-1.md)
+- [ART-2: Médiation et normalisation](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md)
+- [ART-5: Cohérence et qualité des données](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md)
+- [ART-6: Analytique et restitution](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md)
 
 ## 4. Acteurs (Actors)
 
 - **Déclarant (Aggregate Data Reporter)** — établissement ou système de collecte soumettant un rapport périodique.
 - **Récepteur de données agrégées (Aggregate Data Receiver)** — entrepôt national recevant et accusant réception des rapports.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-03](../../referentiel/capacites/cap-int-03.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -49,7 +49,7 @@ Périmètre : rapports périodiques d’activité et indicateurs de programme. H
 
 R = requis ; O = optionnel.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-03](../../referentiel/capacites/cap-int-03.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
 ## 6. Content Modules
 
 - **HL7 FHIR MeasureReport** : rapport d’indicateurs agrégés.
@@ -89,10 +89,10 @@ La plateforme nationale de traçabilité RMA constitue une première initiative 
 
 ## 12. Articulation avec les autres profils
 
-- [PT-07: terminologie et codification](../../referentiel/profils/pt-07.md)
-- [PT-06: référentiel des structures](../../referentiel/profils/pt-06.md)
-- [PT-09: analytique et exposition de données](../../referentiel/profils/pt-09.md)
-- [PT-01: échange interinstitutionnel](../../referentiel/profils/pt-01.md)
+- [PT-07: terminologie et codification](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-07.md)
+- [PT-06: référentiel des structures](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-06.md)
+- [PT-09: analytique et exposition de données](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-09.md)
+- [PT-01: échange interinstitutionnel](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md)
 
 ## 13. Limites et dépendances
 

@@ -1,0 +1,37 @@
+---
+domain: processes
+id: PRC-10
+type: processus-metier
+niveau: "1"
+title: Planification et allocation des ressources
+status: active
+owner: Secrétariat Général
+version: "0.0.1"
+envelope: 00_caesn/01_value-streams/vs-04-system-steering.md
+maps_to: []
+implements: []
+applies_to: ["CAP-08", "CAP-09", "CAP-12", "CAP-13", "CAP-15", "CAP-16"]
+related: ["VS-04-01", "VS-04-02", "VS-04-03", "VS-04", "BO-03", "BO-06"]
+tags: ["caesn", "niveau-1", "processus-metier", "PRC-10"]
+uses: ["CMP-01", "CMP-12", "CMP-23"]
+accesses: ["DO-25", "DO-26", "DO-27"]
+---
+# Planification et allocation des ressources
+
+## Objectif
+
+Définir les priorités nationales et traduire la stratégie en ressources : planification, budgétisation et allocation des ressources, coordination des acteurs et alignement des partenaires.
+
+## Étapes couvertes
+
+- [VS-04-01: Définition des priorités et planification](../../strategy/value-stages/vs-04-01.md)
+- [VS-04-02: Budgétisation et allocation des ressources](../../strategy/value-stages/vs-04-02.md)
+- [VS-04-03: Coordination des acteurs et alignement des partenaires](../../strategy/value-stages/vs-04-03.md)
+
+## Acteurs
+
+Ministère, directions techniques, régions, districts, Direction des affaires financières, Ministère de l'Économie, partenaires, ONG
+
+## Indicateurs
+
+Proportion de plans opérationnels alignés sur le PDSS et la SNSD, taux d'exécution budgétaire, part du budget national allouée à la santé, proportion d'initiatives partenaires alignées sur le portefeuille national

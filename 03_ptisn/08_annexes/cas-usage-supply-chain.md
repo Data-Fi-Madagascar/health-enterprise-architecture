@@ -22,7 +22,7 @@ tags: ["ptisn", "niveau-4", "cas-usage", "logistique", "lmis", "supply-chain", "
 
 ## Objectif
 
-Ce document montre comment les **profils et normes d'interopérabilité supply chain** composent pour garantir la disponibilité des médicaments, vaccins et intrants du centre d'achat jusqu'au point de service, et déclencher la riposte en cas de rupture. Il s'appuie sur `CAP-INT-15` (capacité CNISN), `ART-10` (traçabilité de bout en bout) et `STD-0009` (norme d'échange).
+Ce document montre comment les **profils et normes d'interopérabilité supply chain** composent pour garantir la disponibilité des médicaments, vaccins et intrants du centre d'achat jusqu'au point de service, et déclencher la riposte en cas de rupture. Il s'appuie sur `ABB-ECHANGE-LOGISTIQUE-LMIS` (objet d'interopérabilité CNISN/TOGAF), `ART-10` (traçabilité de bout en bout) et `STD-0009` (norme d'échange).
 
 ## Principe architectural
 
@@ -64,12 +64,12 @@ Lorsqu'un seuil de sécurité est franchi, le LMIS émet une alerte de rupture. 
 | **PT-09** | Analytique et exposition des données de stock |
 | **PT-12** | Audit et traçabilité des mouvements |
 | **ART-10** | Discipline de traçabilité de bout en bout |
-| **CAP-INT-15** | Capacité CNISN de la chaîne d'approvisionnement |
+| **ABB-ECHANGE-LOGISTIQUE-LMIS** | Objet d'interopérabilité CNISN/TOGAF de la chaîne d'approvisionnement |
 
 ## Liens
 
 - Norme : [STD-0009 : échange des données logistiques (LMIS)](../../01_cnisn/05_standards/std-0009-echange-donnees-logistiques-lmis.md)
 - Profil : [PT-17 : Logistique & chaîne d'approvisionnement (LMIS)](../03_profils/pt-17-logistique-lmis.md)
-- Capacité : [CAP-INT-15 : chaîne d'approvisionnement sanitaire](../../referentiel/capacites/cap-int-15.md)
-- Chapitre : [ART-10 : Logistique](../../referentiel/chapitres/art-10.md)
-- Composant : [CMP-23 : Chaîne logistique (LMIS)](../../referentiel/composants/cmp-23.md)
+- Capacité : [ABB-ECHANGE-LOGISTIQUE-LMIS : chaîne d'approvisionnement sanitaire](../../04_architecture-repository/05_building-blocks/abb/abb-echange-logistique-lmis.md)
+- Chapitre : [ART-10 : Logistique](../../04_architecture-repository/04_patterns/artsn-rules/art-10.md)
+- Composant : [CMP-23 : Chaîne logistique (LMIS)](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-23.md)

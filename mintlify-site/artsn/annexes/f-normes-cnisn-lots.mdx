@@ -1,0 +1,42 @@
+---
+title: "Annexe F : Index des normes et ADR CNISN consommées par les lots ARTSN"
+description: "Niveau 3 — Standards techniques, solutions et règles d'homologation"
+owner: "DEPSI"
+version: "1.0.0"
+status: "draft"
+last_reviewed: "2026-08-22"
+---
+
+Cet index inverse la section 9 de la Feuille de route de déploiement (lots). Il répond à la question : *quelle norme ou décision CNISN est mobilisée par quel lot de travail ARTSN ?* Chaque lot opérationnalise un sous-ensemble de la trajectoire CNISN ; cet index garantit la traçabilité arrière (norme → initiatives).
+
+## Index norme / ADR → lots
+
+| Référentiel CNISN | Intitulé | Lots ARTSN consommateurs |
+|-------------------|----------|---------------------------|
+| [STD-0001](/cnisn/standards/std-0001-interopabilite-fhir) | HL7 FHIR R4 (interopérabilité) | [L2 — Applications terrain](/artsn/lots/index), [L4 — Analytique & pilotage](/artsn/lots/index) |
+| [STD-0002](/cnisn/standards/std-0002-securite-chiffrement) | Chiffrement et sécurité | [L1 — Infrastructure & sécurité](/artsn/lots/index) |
+| [STD-0003](/cnisn/standards/std-0003-x-road) | X-Road (plateforme d'échange) | [L3 — Médiation & registres](/artsn/lots/index) |
+| [STD-0004](/cnisn/standards/std-0004-madx) | mADX (analytique DHIS2) | [L3 — Médiation & registres](/artsn/lots/index) |
+| [STD-0005](/cnisn/standards/std-0005-identite-pixm) | PIXm / PDQm (identité) | [L3 — Médiation & registres](/artsn/lots/index) |
+| [STD-0006](/cnisn/standards/std-0006-terminologie) | Terminologie et codification | [L2 — Applications terrain](/artsn/lots/index) |
+| [STD-0007](/cnisn/standards/std-0007-snomed-ct) | SNOMED CT (licence) | [L1 — Infrastructure & sécurité](/artsn/lots/index) |
+| [ADR-0001](/cnisn/decisions/adr-0001-x-road) | Adoption de X-Road | [L3 — Médiation & registres](/artsn/lots/index), [L7 — Coordination One Health](/artsn/lots/index) |
+| [ADR-0003](/cnisn/decisions/adr-0003-fhir) | FHIR R4 comme standard | [L2 — Applications terrain](/artsn/lots/index), [L4 — Analytique & pilotage](/artsn/lots/index) |
+| [ADR-0004](/cnisn/decisions/adr-0004-identite) | Résolution d'identité | [L3 — Médiation & registres](/artsn/lots/index) |
+| [ADR-0005](/cnisn/decisions/adr-0005-consentement) | Gestion du consentement | [L5 — Extension & pérennisation](/artsn/lots/index) |
+| [ADR-0006](/cnisn/decisions/adr-0006-inp) | Registre INP | [L3 — Médiation & registres](/artsn/lots/index) |
+| [ADR-0007](/cnisn/decisions/adr-0007-gdhcn) | GDHCN (échange transfrontalier) | [L6 — Interopérabilité transfrontalière](/artsn/lots/index), [L7 — Coordination One Health](/artsn/lots/index) |
+| [ADR-0008](/cnisn/decisions/adr-0008-atna) | Audit ATNA | [L1 — Infrastructure & sécurité](/artsn/lots/index), [L4 — Analytique & pilotage](/artsn/lots/index) |
+| [ADR-0010](/cnisn/decisions/adr-0010-cadre-legal) | Cadre légal contraignant | [L1 — Infrastructure & sécurité](/artsn/lots/index) |
+
+## Notes
+
+- **GDHCN** (réseau mondial d'échange de certificats de vaccination) est référencé dans la lot L6 via l'ADR-0007 ; il ne dispose pas d'une norme `STD-*` distincte.
+- Les lots L5 et L7 n'introduisent pas de nouvelle norme : ils renforcent des décisions existantes (consentement ADR-0005 pour L5 ; X-Road ADR-0001 et GDHCN ADR-0007 pour L7).
+- La correspondance lot → normes reste disponible dans la [section 9 de la feuille de route](/artsn/lots/index#9-trajectoire-cnisn-et-alignement-des-lots).
+
+## Références
+
+- **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
+- **Feuille de route ARTSN** : Feuille de route de déploiement (`../07_lots/index.md`)
+- **CNISN** : Cadre National d'Interopérabilité (`../../01_cnisn/index.md`)

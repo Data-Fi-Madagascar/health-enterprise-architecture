@@ -8,7 +8,7 @@ status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: ["artsn", "chapitres", "ART-8A", "niveau-3"]
-related: ["CAP-INT-03", "ART-8A"]
+related: ["ABB-ECHANGE-MEDIATION", "ART-8A"]
 ---
 
 # Orchestration de processus borné
@@ -37,16 +37,16 @@ ART-8A : Orchestration de processus borné constitue un chapitre du **cadre norm
 
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (établissements hospitaliers autonomes, cliniques privées, rupture de liaison réseau d’un des nœuds), cette discipline seule permet d’assurer la continuité et la traçabilité complète du parcours patient sans bloquer les systèmes locaux et sans rompre le pipeline.
 
-- **Rattachement** : [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md).
+- **Rattachement** : [CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md), [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md).
 - **Pattern cible** : Saga / Process Manager (transactions de compensation).
-- **Déduit selon** : [ENF-5: Coordination des processus complexes décentralisés et asynchrones](../../referentiel/exigences/enf-5.md) (processus complexes).
+- **Déduit selon** : [ENF-5: Coordination des processus complexes décentralisés et asynchrones](../../04_architecture-repository/03_requirements/enf-5.md) (processus complexes).
 - **Statut : Provisoire.**
 
 ## Profils PTISN qui implémentent ce chapitre
 
 Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
 
-- [PT-16 : Orchestration de processus bornés](../../referentiel/profils/pt-16.md)
+- [PT-16 : Orchestration de processus bornés](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-16.md)
 
 <!-- END:GENERATED -->
 ## Liens
@@ -57,6 +57,6 @@ Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre 
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`ART-8A`** : Orchestration de processus borné (`referentiel/chapitres/art-8a.md`)
+- **`ART-8A`** : Orchestration de processus borné (`04_architecture-repository/04_patterns/artsn-rules/art-8a.md`)
 - **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

@@ -12,7 +12,12 @@ Critères : ART-SN F.4, P-INT-07
 import os
 import sys
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(os.path.dirname(SCRIPT_DIR))
+ARCH_REPOSITORY_DIR = "04_architecture-repository"
+ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
+
+sys.path.insert(0, SCRIPT_DIR)
 from utils import sparql, sparql_rows, section, ok, warn, err, info
 
 
@@ -30,9 +35,10 @@ def audit_conformite():
         ORDER BY ?id
     """)
 
-    # Composants sans lien VS (ni direct ni indirect via CAP-INT → FluxValeur)
-    # Direct : ?s hea:related/contributesTo/realizedBy/appliesTo → hea:FluxValeur
-    # Indirect : ?s hea:mapsTo → ?capInt ?capInt hea:mapsTo → hea:FluxValeur
+    # Composants sans lien VS (ni direct ni indirect via objet de référence)
+    # Direct : ?s hea:related/contributesTo/realizedBy/appliesTo/serves -> hea:FluxValeur
+    # Indirect : ?s hea:mapsTo -> ?ref ?ref hea:mapsTo -> hea:FluxValeur
+    # Gouvernance : ?s hea:serves -> composant lui-même rattaché à un FluxValeur
     no_vs = sparql_rows("""
         SELECT ?id ?title ?owner WHERE {
             ?s rdf:type hea:Composant .
@@ -56,11 +62,50 @@ def audit_conformite():
                 ?s hea:appliesTo ?target .
                 ?target rdf:type hea:FluxValeur .
             }
-            # Pas de lien indirect non plus (via CAP-INT → FluxValeur)
             FILTER NOT EXISTS {
-                ?s hea:mapsTo ?capInt .
-                ?capInt hea:mapsTo ?fv .
+                ?s hea:serves ?target .
+                ?target rdf:type hea:FluxValeur .
+            }
+            # Pas de lien indirect non plus (via objet de référence -> FluxValeur)
+            FILTER NOT EXISTS {
+                ?s hea:mapsTo ?ref .
+                ?ref hea:mapsTo ?fv .
                 ?fv rdf:type hea:FluxValeur .
+            }
+            # Pas de rattachement indirect par composant gouverné non plus
+            FILTER NOT EXISTS {
+                ?s hea:serves ?component .
+                ?component rdf:type hea:Composant .
+                {
+                    ?component hea:related ?fv .
+                    ?fv rdf:type hea:FluxValeur .
+                }
+                UNION
+                {
+                    ?component hea:contributesTo ?fv .
+                    ?fv rdf:type hea:FluxValeur .
+                }
+                UNION
+                {
+                    ?component hea:realizedBy ?fv .
+                    ?fv rdf:type hea:FluxValeur .
+                }
+                UNION
+                {
+                    ?component hea:appliesTo ?fv .
+                    ?fv rdf:type hea:FluxValeur .
+                }
+                UNION
+                {
+                    ?component hea:serves ?fv .
+                    ?fv rdf:type hea:FluxValeur .
+                }
+                UNION
+                {
+                    ?component hea:mapsTo ?ref .
+                    ?ref hea:mapsTo ?fv .
+                    ?fv rdf:type hea:FluxValeur .
+                }
             }
         }
         ORDER BY ?id
@@ -76,6 +121,8 @@ def audit_conformite():
             { ?s hea:realizedBy ?t . ?t rdf:type hea:FluxValeur }
             UNION
             { ?s hea:appliesTo ?t . ?t rdf:type hea:FluxValeur }
+            UNION
+            { ?s hea:serves ?t . ?t rdf:type hea:FluxValeur }
             ?s rdf:type hea:Composant .
             ?s hea:id ?id .
         }

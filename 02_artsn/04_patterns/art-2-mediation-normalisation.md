@@ -8,7 +8,7 @@ status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: ["artsn", "chapitres", "ART-2", "niveau-3"]
-related: ["CAP-INT-03"]
+related: ["ABB-ECHANGE-MEDIATION"]
 ---
 
 # Médiation et normalisation
@@ -37,22 +37,22 @@ ART-2 : Médiation et normalisation constitue un chapitre du **cadre normatif op
 
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (multiplicité d’éditeurs de logiciels, silos applicatifs d’ONG), cette discipline seule permet de garantir que les données partagent le même sens médical et la même structure technique sans rompre le pipeline.
 
-- **Rattachement** : [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md) (interopérabilité et infrastructure partagée).
+- **Rattachement** : [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md) (interopérabilité et infrastructure partagée).
 - **Normes CNISN** : [STD-0001: Interopérabilité FHIR R4](../../01_cnisn/05_standards/std-0001-interopabilite-fhir.md) (format d'échange canonique, [ADR-0003](../../01_cnisn/06_decisions/adr-0003-fhir.md)), [STD-0006: Terminologie](../../01_cnisn/05_standards/std-0006-terminologie.md), [STD-0007: SNOMED CT](../../01_cnisn/05_standards/std-0007-snomed-ct.md).
 - **Objets de données** : [BO-01 Patient & identité](../../00_caesn/04_data/objets.md), [BO-02 Prestation & soins](../../00_caesn/04_data/objets.md), [BO-03 Dispensation & produits](../../00_caesn/04_data/objets.md), [BO-04 Financement & couverture](../../00_caesn/04_data/objets.md), [BO-05 Risque & surveillance](../../00_caesn/04_data/objets.md), [BO-06 Exploitation & gestion](../../00_caesn/04_data/objets.md), [BO-07 Interopérabilité transfrontalière](../../00_caesn/04_data/objets.md) (objets métier CAESN) ; voir aussi le [dictionnaire des objets de données ARTSN](../03_objets-de-donnees/index.md).
-- **Déduit selon** : [ENF-3: Unicité de l'identité et résilience face à la fragmentation applicative](../../referentiel/exigences/enf-3.md) (fragmentation applicative) et [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (One Health).
+- **Déduit selon** : [ENF-3: Unicité de l'identité et résilience face à la fragmentation applicative](../../04_architecture-repository/03_requirements/enf-3.md) (fragmentation applicative) et [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../04_architecture-repository/03_requirements/enf-4.md) (One Health).
 - **Statut : Stable.**
 
 ## Profils PTISN qui implémentent ce chapitre
 
 Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
 
-- [PT-02 : Médiation intra-secteur](../../referentiel/profils/pt-02.md)
-- [PT-03 : Catalogue des services et registre des contrats](../../referentiel/profils/pt-03.md)
-- [PT-07 : Terminologie et codification](../../referentiel/profils/pt-07.md)
-- [PT-08 : Échange de données agrégées](../../referentiel/profils/pt-08.md)
-- [PT-18 : Échange de réclamations et paiements](../../referentiel/profils/pt-18.md)
-- [PT-19 : Aide à la décision clinique (CDS)](../../referentiel/profils/pt-19.md)
+- [PT-02 : Médiation intra-secteur](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-02.md)
+- [PT-03 : Catalogue des services et registre des contrats](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-03.md)
+- [PT-07 : Terminologie et codification](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-07.md)
+- [PT-08 : Échange de données agrégées](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-08.md)
+- [PT-18 : Échange de réclamations et paiements](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-18.md)
+- [PT-19 : Aide à la décision clinique (CDS)](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-19.md)
 
 <!-- END:GENERATED -->
 ## Liens
@@ -63,6 +63,6 @@ Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre 
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`ART-2`** : Médiation et normalisation (`referentiel/chapitres/art-2.md`)
+- **`ART-2`** : Médiation et normalisation (`04_architecture-repository/04_patterns/artsn-rules/art-2.md`)
 - **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

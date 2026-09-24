@@ -56,7 +56,7 @@ Cette norme s'applique à :
 
 ## Références au cadre
 
-- **CNISN** : CAP-INT-15 (échange et traçabilité de la chaîne d'approvisionnement sanitaire)
+- **CNISN** : ABB-ECHANGE-LOGISTIQUE-LMIS (échange et traçabilité de la chaîne d'approvisionnement sanitaire)
 - **ARTSN** : ART-10 (logistique, traçabilité de bout en bout), ART-7 (résidence & sécurité), ART-9 (garanties transactionnelles)
 - **ARTSN — lots consommateurs** : [L4 — Analytique & pilotage](../../02_artsn/07_lots/index.md)
 - **PTISN** : [PT-17: Logistique & chaîne d'approvisionnement (LMIS)](../../03_ptisn/03_profils/pt-17-logistique-lmis.md)
@@ -84,6 +84,6 @@ Les dérogations sont possibles pour les LMIS legacy en phase de migration (batc
 - ADR-0001 : Échange interinstitutionnel X-Road
 - ADR-0003 : Utilisation de HL7 FHIR
 - ARTSN : ART-10 (Logistique), ART-7 (Résidence)
-- CNISN : CAP-INT-15 (Chaîne d'approvisionnement sanitaire)
+- CNISN : ABB-ECHANGE-LOGISTIQUE-LMIS (Chaîne d'approvisionnement sanitaire)
 
 - **matrice de lecture** : Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)

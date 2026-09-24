@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-10"]
-related: ["CAP-INT-08", "ART-0", "ART-4B", "ART-7", "ART-9", "CMP-15"]
+related: ["ABB-CONFIANCE-AUTORISATION", "ART-0", "ART-4B", "ART-7", "ART-9", "CMP-15"]
 ---
 
 # Profil technique national
@@ -21,16 +21,16 @@ Le **profil PT-10 — Confiance, authentification et autorisation** définit les
 
 Périmètre : identité sectorielle/fédérée, authentification, identité des systèmes, service d’autorisation, gestion des politiques et comptes techniques, fédération avec les identités pangouvernementales, gestion des certificats et secrets. Hors périmètre : le contenu métier des registres (PT-04, PT-05).
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-[CAP-INT-08: Confiance, sécurité et autorisation](../../referentiel/capacites/cap-int-08.md)
+[ABB-CONFIANCE-AUTORISATION: Confiance, sécurité et autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-confiance-autorisation.md)
 
 ## 3. Chapitres ART applicables
 
-- [ART-0: Accords de partage inter-institutionnels](../../referentiel/chapitres/art-0.md)
+- [ART-0: Accords de partage inter-institutionnels](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md)
 - ART-4B
-- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../referentiel/chapitres/art-7.md)
-- [ART-9: Garanties transactionnelles fortes](../../referentiel/chapitres/art-9.md) lorsque applicable
+- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
+- [ART-9: Garanties transactionnelles fortes](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md) lorsque applicable
 
 ## 4. Acteurs (Actors)
 
@@ -141,7 +141,7 @@ En cas d'urgence vitale documentée (code U3 ou U4), les restrictions RBAC sont 
 | Alerte épidémique de niveau 4 | Accès en lecture aux données de surveillance pour tous les acteurs de la riposte | Journalisation automatique, révocation à la fin de l'épisode |
 | Catastrophe naturelle ou sanitaire | Mode dégradé : accès hors-ligne avec synchronisation différée | Piste d'audit complète après resynchronisation |
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-08](../../referentiel/capacites/cap-int-08.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-CONFIANCE-AUTORISATION](../../04_architecture-repository/05_building-blocks/abb/abb-confiance-autorisation.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -152,7 +152,7 @@ En cas d'urgence vitale documentée (code U3 ou U4), les restrictions RBAC sont 
 
 R = requis ; O = optionnel.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-08](../../referentiel/capacites/cap-int-08.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-CONFIANCE-AUTORISATION](../../04_architecture-repository/05_building-blocks/abb/abb-confiance-autorisation.md).
 ## 6. Content Modules
 
 - **Jeton d’accès IUA** : jeton portant les attributs d’autorisation pour services REST/FHIR.
@@ -230,10 +230,10 @@ Conformité attestée par l’application de la matrice RBAC, le respect des pol
 
 ## 12. Articulation avec les autres profils
 
-- [PT-05: registre des professionnels](../../referentiel/profils/pt-05.md)
-- [PT-04: résolution d’identité bénéficiaire](../../referentiel/profils/pt-04.md)
-- [PT-11: consentement et bases d’autorisation](../../referentiel/profils/pt-11.md)
-- [PT-01: échange interinstitutionnel](../../referentiel/profils/pt-01.md)
+- [PT-05: registre des professionnels](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md)
+- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md)
+- [PT-11: consentement et bases d’autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-11.md)
+- [PT-01: échange interinstitutionnel](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md)
 
 ## 13. Limites et dépendances
 

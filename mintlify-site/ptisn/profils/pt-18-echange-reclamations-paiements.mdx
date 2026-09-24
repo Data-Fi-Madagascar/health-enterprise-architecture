@@ -16,7 +16,7 @@ Le **profil PT-18 — Échange de réclamations et paiements** définit le bus d
 
 Périmètre : vérification d’éligibilité, soumission de réclamation, adjudication et notification de paiement. Norme de référence : STD-0008: échange des réclamations et paiements.
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
 CAP-07: Protection financière, couverture santé universelle
 
@@ -32,7 +32,7 @@ CAP-07: Protection financière, couverture santé universelle
 - **Payeur (Payer)** — système du payeur répondant à l’éligibilité, adjudiquant et notifiant le paiement.
 - **Bus d’échange de réclamations (Claims Exchange Hub)** — achemine et assure l’intégrité des flux entre prestataire et payeur.
 
-*Référence — capacité CNISN mise en œuvre : CAP-INT-02.
+*Référence - objet CNISN/TOGAF mis en œuvre : ABB-REGISTRE-PROFESSIONNELS.
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -44,10 +44,10 @@ CAP-07: Protection financière, couverture santé universelle
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence — capacité CNISN mise en œuvre : CAP-INT-02.
+*Référence - objet CNISN/TOGAF mis en œuvre : ABB-REGISTRE-PROFESSIONNELS.
 ## 6. Content Modules
 
-- **FHIR `CoverageEligibilityRequest` / `Response`** : éligibilité et couverture (résolution du bénéficiaire STD-0005, du prestataire CAP-INT-02).
+- **FHIR `CoverageEligibilityRequest` / `Response`** : éligibilité et couverture (résolution du bénéficiaire STD-0005, du prestataire ABB-REGISTRE-PROFESSIONNELS).
 - **FHIR `Claim` / `ClaimResponse`** : réclamation et adjudication.
 - **FHIR `PaymentNotice`** : notification de paiement signée et traçable.
 
@@ -55,7 +55,7 @@ R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
 - **O1 — Modèle de bus** : HCX (Inde) ou Nigeria NDHI comme référence d’implémentation.
 - **O2 — Transport** : X-Road (STD-0003, ADR-0001).
-- **O3 — Terminologie** : CIM-10 + LOINC (STD-0006), SNOMED CT (STD-0007).
+- **O3 — Terminologie** : CIM-11 + LOINC (STD-0006), SNOMED CT (STD-0007).
 
 ## 8. Service national
 
@@ -64,7 +64,7 @@ Un bus d’échange de réclamations (modèle HCX / Nigeria NDHI) est requis ent
 ### Éligibilité et couverture
 
 - vérification de la couverture via `CoverageEligibilityRequest` / `CoverageEligibilityResponse` ;
-- résolution du bénéficiaire (STD-0005) et du prestataire (CAP-INT-02).
+- résolution du bénéficiaire (STD-0005) et du prestataire (ABB-REGISTRE-PROFESSIONNELS).
 
 ### Réclamation et paiement
 
@@ -80,7 +80,7 @@ Un bus d’échange de réclamations (modèle HCX / Nigeria NDHI) est requis ent
 | Réclamation | HL7 FHIR `Claim` / `ClaimResponse` (R4) |
 | Paiement | HL7 FHIR `PaymentNotice` (R4) |
 | Transport | X-Road (STD-0003, ADR-0001) |
-| Terminologie | CIM-10 + LOINC (STD-0006), SNOMED CT (STD-0007) |
+| Terminologie | CIM-11 + LOINC (STD-0006), SNOMED CT (STD-0007) |
 
 *Référence — normes et standards CNISN : [01_cnisn/05_standards](/cnisn/standards/index).
 ## 10. Exigences
@@ -106,3 +106,7 @@ Aucun produit national n’est encore retenu (**statut : à instruire**). Le bus
 Produit national à instruire. Dépendance : X-Road (transport), terminologie (PT-07), résolution bénéficiaire/prestataire (PT-04/PT-05), et norme STD-0008.
 
 <!-- END:GENERATED -->
+
+## Références au cadre
+
+- **ARTSN — lots consommateurs** : [L1 — Infrastructure & sécurité](/artsn/lots/index), [L2 — Applications terrain](/artsn/lots/index), [L3 — Médiation & registres](/artsn/lots/index), [L4 — Analytique & pilotage](/artsn/lots/index)

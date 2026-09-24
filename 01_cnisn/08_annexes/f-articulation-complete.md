@@ -18,7 +18,7 @@ Cette annexe documente le flux complet depuis les **capabilités métier** (CAES
 | Niveau | Cadre | Contenu | Objets principaux |
 |--------|-------|---------|-------------------|
 | **1** | CAESN | Capabilités métier du système de santé | 16 capabilités (`CAP-01…16`), 4 flux de valeur (`VS-01…04`), 28 étapes (`VS-01-01…28`), 12 processus (`PRC-01…12`) |
-| **2** | CNISN | Capacités d'interopérabilité et principes | 16 capacités (`CAP-INT-01…16`), 25 principes (`P-INT-01…25`) |
+| **2** | CNISN | Capacités d'interopérabilité et principes | 16 capacités (`ABB-IDENTITE-BENEFICIAIRE…16`), 25 principes (`P-INT-01…25`) |
 | **3** | ARTSN | Architecture technique de référence | 18 chapitres (`ART-0…11`), 6 fondations (`F-1…6`), 5 exigences (`ENF-1…5`) |
 | **4** | PTISN | Profils techniques d'implémentation | 15 profils (`PT-01…15`) |
 
@@ -56,7 +56,7 @@ package "CAESN : Niveau 1" as CAESN {
 
 ' === Niveau 2: CNISN ===
 package "CNISN : Niveau 2" as CNISN {
-  component "CAP-INT-01…14\nCapacités d'interopérabilité" as CAPINT
+  component "ABB-IDENTITE-BENEFICIAIRE…14\nCapacités d'interopérabilité" as CAPINT
   component "P-INT-01…25\nPrincipes" as PINT
 }
 
@@ -92,52 +92,52 @@ Chapitres --> Profils : "décline"
 
 ### 3.1 Famille 1 : Référentiels et identités
 
-| Capacité CNISN | Composants applicatifs | Chapitres ARTSN | Profils PTISN |
+| Objet CNISN/TOGAF | Composants applicatifs | Chapitres ARTSN | Profils PTISN |
 |----------------|------------------------|-----------------|---------------|
-| **CAP-INT-01** Résolution d'identité bénéficiaire | CMP-11 Registre des clients / INP | ART-4, ART-4A | PT-04 |
-| **CAP-INT-02** Registre des professionnels | CMP-13 Registre des personnels | ART-4, ART-4A | PT-05 |
-| **CAP-INT-04** Référentiel des structures | CMP-08 Répertoire de données cliniques | ART-4 | PT-06 |
-| **CAP-INT-05** Terminologie et codification | CMP-10 Registre des terminologies | ART-4 | PT-07 |
+| **ABB-IDENTITE-BENEFICIAIRE** Résolution d'identité bénéficiaire | CMP-11 Registre des clients / INP | ART-4, ART-4A | PT-04 |
+| **ABB-REGISTRE-PROFESSIONNELS** Registre des professionnels | CMP-13 Registre des personnels | ART-4, ART-4A | PT-05 |
+| **ABB-REFERENTIEL-STRUCTURES-SERVICES** Référentiel des structures | CMP-08 Répertoire de données cliniques | ART-4 | PT-06 |
+| **ABB-SERVICE-TERMINOLOGIE** Terminologie et codification | CMP-10 Registre des terminologies | ART-4 | PT-07 |
 
 ### 3.2 Famille 2 : Échange, médiation et contractualisation
 
-| Capacité CNISN | Composants applicatifs | Chapitres ARTSN | Profils PTISN |
+| Objet CNISN/TOGAF | Composants applicatifs | Chapitres ARTSN | Profils PTISN |
 |----------------|------------------------|-----------------|---------------|
-| **CAP-INT-03** Échange et médiation inter-systèmes | CMP-06 Intégration, Médiation, API Gateway | ART-1, ART-2, ART-8A, ART-8C | PT-01, PT-02 |
-| **CAP-INT-06** Catalogue des services | CMP-16 Registre de schémas | ART-1, ART-2 | PT-03 |
+| **ABB-ECHANGE-MEDIATION** Échange et médiation inter-systèmes | CMP-06 Intégration, Médiation, API Gateway | ART-1, ART-2, ART-8A, ART-8C | PT-01, PT-02 |
+| **ABB-CATALOGUE-CONTRATS** Catalogue des services | CMP-16 Registre de schémas | ART-1, ART-2 | PT-03 |
 
 ### 3.3 Famille 3 : Données analytiques et exposition
 
-| Capacité CNISN | Composants applicatifs | Chapitres ARTSN | Profils PTISN |
+| Objet CNISN/TOGAF | Composants applicatifs | Chapitres ARTSN | Profils PTISN |
 |----------------|------------------------|-----------------|---------------|
-| **CAP-INT-07** Accès et exposition des données analytiques | CMP-03 Entrepôt Lakehouse, CMP-04 Moteur analytique & IA, CMP-01 Tableaux de bord | ART-6, ART-5, ART-8B, ART-9 | PT-08, PT-09 |
+| **ABB-EXPOSITION-DONNEES-ANALYTIQUES** Accès et exposition des données analytiques | CMP-03 Entrepôt Lakehouse, CMP-04 Moteur analytique & IA, CMP-01 Tableaux de bord | ART-6, ART-5, ART-8B, ART-9 | PT-08, PT-09 |
 
 ### 3.4 Famille 4 : Confiance, sécurité et autorisation
 
-| Capacité CNISN | Composants applicatifs | Chapitres ARTSN | Profils PTISN |
+| Objet CNISN/TOGAF | Composants applicatifs | Chapitres ARTSN | Profils PTISN |
 |----------------|------------------------|-----------------|---------------|
-| **CAP-INT-08** Confiance, sécurité et autorisation | CMP-15 API Gateway | ART-7, ART-4B | PT-10 |
-| **CAP-INT-09** Consentements et bases d'autorisation | CMP-12 Registre d'éligibilité et de couverture | ART-7, ART-4B | PT-11 |
-| **CAP-INT-10** Provenance, audit et traçabilité | CMP-17 Message broker asynchrone | ART-7, ART-3 | PT-12 |
+| **ABB-CONFIANCE-AUTORISATION** Confiance, sécurité et autorisation | CMP-15 API Gateway | ART-7, ART-4B | PT-10 |
+| **ABB-GESTION-CONSENTEMENT** Consentements et bases d'autorisation | CMP-12 Registre d'éligibilité et de couverture | ART-7, ART-4B | PT-11 |
+| **ABB-AUDIT-PROVENANCE** Provenance, audit et traçabilité | CMP-17 Message broker asynchrone | ART-7, ART-3 | PT-12 |
 
 ### 3.5 Famille 5 : Qualité et conformité
 
-| Capacité CNISN | Composants applicatifs | Chapitres ARTSN | Profils PTISN |
+| Objet CNISN/TOGAF | Composants applicatifs | Chapitres ARTSN | Profils PTISN |
 |----------------|------------------------|-----------------|---------------|
-| **CAP-INT-11** Qualité et réconciliation | CMP-05 Moteur de graphes & Référentiel spatio-temporel | ART-5, ART-4D | PT-13 |
-| **CAP-INT-12** Conformité et tests d'interopérabilité | : | : | : |
+| **ABB-RECONCILIATION-DONNEES** Qualité et réconciliation | CMP-05 Moteur de graphes & Référentiel spatio-temporel | ART-5, ART-4D | PT-13 |
+| **COMP-HOMOLOGATION-INTEROPERABILITE** Conformité et tests d'interopérabilité | : | : | : |
 
 ### 3.6 Famille 6 : Interopérabilité transfrontalière
 
-| Capacité CNISN | Composants applicatifs | Chapitres ARTSN | Profils PTISN |
+| Objet CNISN/TOGAF | Composants applicatifs | Chapitres ARTSN | Profils PTISN |
 |----------------|------------------------|-----------------|---------------|
-| **CAP-INT-13** Interopérabilité transfrontalière et confiance internationale | CMP-06 Intégration/Médiation, CMP-15 API Gateway (confiance GDHCN) | ART-7 Sécurité, ART-0 Accords inter-institutionnels, ART-1 Intégration | PT-14 Interopérabilité transfrontalière |
+| **PART-ECHANGE-TRANSFRONTALIER** Interopérabilité transfrontalière et confiance internationale | CMP-06 Intégration/Médiation, CMP-15 API Gateway (confiance GDHCN) | ART-7 Sécurité, ART-0 Accords inter-institutionnels, ART-1 Intégration | PT-14 Interopérabilité transfrontalière |
 
 ### 3.7 Famille 7 : Échanges intersectoriels One Health
 
-| Capacité CNISN | Composants applicatifs | Chapitres ARTSN | Profils PTISN |
+| Objet CNISN/TOGAF | Composants applicatifs | Chapitres ARTSN | Profils PTISN |
 |----------------|------------------------|-----------------|---------------|
-| **CAP-INT-14** Échanges intersectoriels One Health | CMP-02 Centre de commande, CMP-04 Moteur analytique, CMP-06 Intégration/Médiation | ART-11 Coordination intersectorielle, ART-0 Accords de partage, ART-4D Géospatial, ART-8B Graphe | PT-15 Surveillance One Health |
+| **PART-ONE-HEALTH** Échanges intersectoriels One Health | CMP-02 Centre de commande, CMP-04 Moteur analytique, CMP-06 Intégration/Médiation | ART-11 Coordination intersectorielle, ART-0 Accords de partage, ART-4D Géospatial, ART-8B Graphe | PT-15 Surveillance One Health |
 
 ## 4. Matrice des composants applicatifs par couche ARTSN
 
@@ -161,115 +161,115 @@ Chapitres --> Profils : "décline"
 
 ## 6. Matrice des profils PTISN par composant
 
-| Profil PTISN | Composant(s) soutenu(s) | Capacité CNISN |
+| Profil PTISN | Composant(s) soutenu(s) | Objet CNISN/TOGAF |
 |--------------|-------------------------|----------------|
-| PT-01 Échange interinstitutionnel | CMP-06 | CAP-INT-03 |
-| PT-02 Médiation intra-secteur | CMP-06 | CAP-INT-03 |
-| PT-03 Catalogue services | CMP-16 | CAP-INT-06 |
-| PT-04 Résolution identité bénéficiaire | CMP-11 | CAP-INT-01 |
-| PT-05 Registre professionnels | CMP-13 | CAP-INT-02 |
-| PT-06 Référentiel structures | CMP-08 | CAP-INT-04 |
-| PT-07 Terminologie codification | CMP-10 | CAP-INT-05 |
-| PT-08 Échange données agrégées | CMP-03, CMP-06 | CAP-INT-03, CAP-INT-07 |
-| PT-09 Analytique exposition données | CMP-03, CMP-04 | CAP-INT-07 |
-| PT-10 Confiance et autorisation | CMP-15 | CAP-INT-08 |
-| PT-11 Consentement et autorisation | CMP-12 | CAP-INT-09 |
-| PT-12 Audit et traçabilité | CMP-17 | CAP-INT-10 |
-| PT-13 Qualité et réconciliation | CMP-05 | CAP-INT-11 |
-| PT-14 Interopérabilité transfrontalière | CMP-06, CMP-15 | CAP-INT-13 |
-| PT-15 Surveillance One Health | CMP-02, CMP-04, CMP-06 | CAP-INT-14 |
+| PT-01 Échange interinstitutionnel | CMP-06 | ABB-ECHANGE-MEDIATION |
+| PT-02 Médiation intra-secteur | CMP-06 | ABB-ECHANGE-MEDIATION |
+| PT-03 Catalogue services | CMP-16 | ABB-CATALOGUE-CONTRATS |
+| PT-04 Résolution identité bénéficiaire | CMP-11 | ABB-IDENTITE-BENEFICIAIRE |
+| PT-05 Registre professionnels | CMP-13 | ABB-REGISTRE-PROFESSIONNELS |
+| PT-06 Référentiel structures | CMP-08 | ABB-REFERENTIEL-STRUCTURES-SERVICES |
+| PT-07 Terminologie codification | CMP-10 | ABB-SERVICE-TERMINOLOGIE |
+| PT-08 Échange données agrégées | CMP-03, CMP-06 | ABB-ECHANGE-MEDIATION, ABB-EXPOSITION-DONNEES-ANALYTIQUES |
+| PT-09 Analytique exposition données | CMP-03, CMP-04 | ABB-EXPOSITION-DONNEES-ANALYTIQUES |
+| PT-10 Confiance et autorisation | CMP-15 | ABB-CONFIANCE-AUTORISATION |
+| PT-11 Consentement et autorisation | CMP-12 | ABB-GESTION-CONSENTEMENT |
+| PT-12 Audit et traçabilité | CMP-17 | ABB-AUDIT-PROVENANCE |
+| PT-13 Qualité et réconciliation | CMP-05 | ABB-RECONCILIATION-DONNEES |
+| PT-14 Interopérabilité transfrontalière | CMP-06, CMP-15 | PART-ECHANGE-TRANSFRONTALIER |
+| PT-15 Surveillance One Health | CMP-02, CMP-04, CMP-06 | PART-ONE-HEALTH |
 
 ## 7. Correspondance CAESN → CNISN → CMP
 
 | Capabilité CAESN | Capacité(s) CNISN | Composant(s) applicatif(s) |
 |------------------|-------------------|----------------------------|
 | CAP-01 Offre de soins | : | : |
-| CAP-02 Parcours patient | CAP-INT-01 | CMP-11 |
+| CAP-02 Parcours patient | ABB-IDENTITE-BENEFICIAIRE | CMP-11 |
 | CAP-03 Qualité des soins | : | : |
 | CAP-04 Santé communautaire | : | : |
-| CAP-05 Surveillance épidémiologique | CAP-INT-07 | CMP-03, CMP-04 |
+| CAP-05 Surveillance épidémiologique | ABB-EXPOSITION-DONNEES-ANALYTIQUES | CMP-03, CMP-04 |
 | CAP-06 Vaccination | : | : |
 | CAP-07 Protection financière | : | : |
 | CAP-08 Gouvernance | : | : |
-| CAP-09 RH en santé | CAP-INT-02 | CMP-13 |
+| CAP-09 RH en santé | ABB-REGISTRE-PROFESSIONNELS | CMP-13 |
 | CAP-10 Logistique | : | : |
-| CAP-11 Infrastructures | CAP-INT-04 | CMP-08 |
+| CAP-11 Infrastructures | ABB-REFERENTIEL-STRUCTURES-SERVICES | CMP-08 |
 | CAP-12 Finances publiques | : | : |
-| CAP-13 SIS et données | CAP-INT-03, 04, 05, 07, 10, 11 | CMP-03, CMP-04, CMP-05, CMP-06, CMP-08, CMP-10, CMP-17 |
-| CAP-14 Interopérabilité | CAP-INT-01, 02, 03, 04, 05, 06, 11, 12 | CMP-06, CMP-08, CMP-10, CMP-11, CMP-13, CMP-16 |
-| CAP-15 Cybersécurité | CAP-INT-08, 09, 10 | CMP-12, CMP-15, CMP-17 |
-| CAP-16 Portefeuille d'initiatives | CAP-INT-06, 12 | CMP-16 |
-| CAP-17 Engagement patient et identité numérique | CAP-INT-01, CAP-INT-13 | CMP-11 |
-| CAP-18 Coordination intersectorielle (One Health) | CAP-INT-13, CAP-INT-14 | CMP-02, CMP-06 |
+| CAP-13 SIS et données | ABB-ECHANGE-MEDIATION, 04, 05, 07, 10, 11 | CMP-03, CMP-04, CMP-05, CMP-06, CMP-08, CMP-10, CMP-17 |
+| CAP-14 Interopérabilité | ABB-IDENTITE-BENEFICIAIRE, 02, 03, 04, 05, 06, 11, 12 | CMP-06, CMP-08, CMP-10, CMP-11, CMP-13, CMP-16 |
+| CAP-15 Cybersécurité | ABB-CONFIANCE-AUTORISATION, 09, 10 | CMP-12, CMP-15, CMP-17 |
+| CAP-16 Portefeuille d'initiatives | ABB-CATALOGUE-CONTRATS, 12 | CMP-16 |
+| CAP-17 Engagement patient et identité numérique | ABB-IDENTITE-BENEFICIAIRE, PART-ECHANGE-TRANSFRONTALIER | CMP-11 |
+| CAP-18 Coordination intersectorielle (One Health) | PART-ECHANGE-TRANSFRONTALIER, PART-ONE-HEALTH | CMP-02, CMP-06 |
 
 ---
 
 *Rattachée au niveau 2 (CNISN) : 01_cnisn/02_capacites.md, 01_cnisn/01_principes.md.*
-*Composants applicatifs : referentiel/composants/.*
+*Composants applicatifs : 04_architecture-repository/05_building-blocks/abb/legacy-components/.*
 *Profils PTISN : 03_ptisn/03_profils/.*
 
 ## Références
 
-- **CMP-11** : Registre des clients / Index National des Patients (INP : ART-4A) (`referentiel/composants/cmp-11.md`)
-- **ART-4** : Référentiels de métadonnées de gestion (`referentiel/chapitres/art-4.md`)
-- **ART-4A** : Résolution d'identité (`referentiel/chapitres/art-4a.md`)
-- **PT-04** : Profil technique national (`referentiel/profils/pt-04.md`)
-- **CMP-13** : Registre des personnels (`referentiel/composants/cmp-13.md`)
-- **PT-05** : Profil technique national (`referentiel/profils/pt-05.md`)
-- **CMP-08** : Répertoire de données cliniques opérationnelles (`referentiel/composants/cmp-08.md`)
-- **PT-06** : Profil technique national (`referentiel/profils/pt-06.md`)
-- **CMP-10** : Registre des terminologies (`referentiel/composants/cmp-10.md`)
-- **PT-07** : Profil technique national (`referentiel/profils/pt-07.md`)
-- **CMP-06** : Intégration, Médiation, API Gateway, Broker & Registre schémas (`referentiel/composants/cmp-06.md`)
-- **ART-1** : Intégration et ingestion (`referentiel/chapitres/art-1.md`)
-- **ART-2** : Médiation et normalisation (`referentiel/chapitres/art-2.md`)
-- **ART-8A** : Orchestration de processus borné (`referentiel/chapitres/art-8a.md`)
-- **ART-8C** : Agrégation par lot (`referentiel/chapitres/art-8c.md`)
-- **PT-01** : Profil technique national (`referentiel/profils/pt-01.md`)
-- **PT-02** : Profil technique national (`referentiel/profils/pt-02.md`)
-- **CMP-16** : Registre de schémas (F.3) (`referentiel/composants/cmp-16.md`)
-- **PT-03** : Profil technique national (`referentiel/profils/pt-03.md`)
-- **CMP-03** : Entrepôt Lakehouse & Projections analytiques (pipeline ETL, Lakehouse, projections) (`referentiel/composants/cmp-03.md`)
-- **CMP-04** : Moteur analytique & IA (IA prédictive, routeur alertes, Grand Livre) (`referentiel/composants/cmp-04.md`)
-- **CMP-01** : Tableaux de bord & Portails nationaux (performance, CSU, ressources, veille) (`referentiel/composants/cmp-01.md`)
-- **ART-6** : Analytique et restitution (`referentiel/chapitres/art-6.md`)
-- **ART-5** : Cohérence et qualité des données (`referentiel/chapitres/art-5.md`)
-- **ART-8B** : Modélisation de relations en graphe (`referentiel/chapitres/art-8b.md`)
-- **ART-9** : Garanties transactionnelles fortes (`referentiel/chapitres/art-9.md`)
-- **PT-08** : Profil technique national (`referentiel/profils/pt-08.md`)
-- **PT-09** : Profil technique national (`referentiel/profils/pt-09.md`)
-- **CMP-15** : API Gateway (`referentiel/composants/cmp-15.md`)
-- **ART-7** : Sécurité, contrôle d'accès et résidence de la donnée (`referentiel/chapitres/art-7.md`)
-- **ART-4B** : Bases d'autorisation (`referentiel/chapitres/art-4b.md`)
-- **PT-10** : Profil technique national (`referentiel/profils/pt-10.md`)
-- **CMP-12** : Registre d'éligibilité et de couverture (CSU : ART-4C) (`referentiel/composants/cmp-12.md`)
-- **PT-11** : Profil technique national (`referentiel/profils/pt-11.md`)
-- **CMP-17** : Message broker asynchrone (`referentiel/composants/cmp-17.md`)
-- **ART-3** : Historisation événementielle et profils de déploiement (`referentiel/chapitres/art-3.md`)
-- **PT-12** : Profil technique national (`referentiel/profils/pt-12.md`)
-- **CMP-05** : Moteur de graphes & Référentiel spatio-temporel (Graph Store, Spatio ART-4D) (`referentiel/composants/cmp-05.md`)
-- **ART-4D** : Référentiel géospatial et d'exploitation partagé (`referentiel/chapitres/art-4d.md`)
-- **PT-13** : Profil technique national (`referentiel/profils/pt-13.md`)
-- **ART-0** : Accords de partage inter-institutionnels (`referentiel/chapitres/art-0.md`)
-- **PT-14** : Interopérabilité transfrontalière (`referentiel/profils/pt-14.md`)
-- **CMP-02** : Centre de commande & Crises intersectorielles (alertes, crises, veille) (`referentiel/composants/cmp-02.md`)
-- **ART-11** : Coordination intersectorielle (`referentiel/chapitres/art-11.md`)
-- **PT-15** : Surveillance One Health (`referentiel/profils/pt-15.md`)
-- **CMP-07** : Orchestrateur de parcours & Gestionnaire de Sagas (ART-8A) (`referentiel/composants/cmp-07.md`)
-- **CMP-09** : Référentiel des métadonnées d'exploitation (ART-4) (`referentiel/composants/cmp-09.md`)
-- **CMP-14** : Registre des produits, intrants et indicateurs (`referentiel/composants/cmp-14.md`)
-- **CMP-18** : Compensateur / Regroupeur de flux (Netting : ART-8C) (`referentiel/composants/cmp-18.md`)
-- **PRC-01** : Accès, orientation et admission du patient (`referentiel/processus/prc-01.md`)
-- **PRC-02** : Prestation des soins cliniques (`referentiel/processus/prc-02.md`)
-- **PRC-03** : Continuité, suivi et qualité des soins (`referentiel/processus/prc-03.md`)
-- **PRC-04** : Veille, prévention et surveillance sanitaire (`referentiel/processus/prc-04.md`)
-- **PRC-05** : Alerte, investigation et riposte (`referentiel/processus/prc-05.md`)
-- **PRC-06** : Clôture et capitalisation des épisodes (`referentiel/processus/prc-06.md`)
-- **PRC-07** : Identification et droits des bénéficiaires (`referentiel/processus/prc-07.md`)
-- **PRC-08** : Financement et exemption au point de service (`referentiel/processus/prc-08.md`)
-- **PRC-09** : Remboursement et régulation des mécanismes (`referentiel/processus/prc-09.md`)
-- **PRC-10** : Planification et allocation des ressources (`referentiel/processus/prc-10.md`)
-- **PRC-11** : Suivi et pilotage de la performance (`referentiel/processus/prc-11.md`)
-- **PRC-12** : Redevabilité et amélioration continue (`referentiel/processus/prc-12.md`)
+- **CMP-11** : Registre des clients / Index National des Patients (INP : ART-4A) (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-11.md`)
+- **ART-4** : Référentiels de métadonnées de gestion (`04_architecture-repository/04_patterns/artsn-rules/art-4.md`)
+- **ART-4A** : Résolution d'identité (`04_architecture-repository/04_patterns/artsn-rules/art-4a.md`)
+- **PT-04** : Profil technique national (`04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md`)
+- **CMP-13** : Registre des personnels (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-13.md`)
+- **PT-05** : Profil technique national (`04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md`)
+- **CMP-08** : Répertoire de données cliniques opérationnelles (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-08.md`)
+- **PT-06** : Profil technique national (`04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-06.md`)
+- **CMP-10** : Registre des terminologies (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-10.md`)
+- **PT-07** : Profil technique national (`04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-07.md`)
+- **CMP-06** : Intégration, Médiation, API Gateway, Broker & Registre schémas (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-06.md`)
+- **ART-1** : Intégration et ingestion (`04_architecture-repository/04_patterns/artsn-rules/art-1.md`)
+- **ART-2** : Médiation et normalisation (`04_architecture-repository/04_patterns/artsn-rules/art-2.md`)
+- **ART-8A** : Orchestration de processus borné (`04_architecture-repository/04_patterns/artsn-rules/art-8a.md`)
+- **ART-8C** : Agrégation par lot (`04_architecture-repository/04_patterns/artsn-rules/art-8c.md`)
+- **PT-01** : Profil technique national (`04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md`)
+- **PT-02** : Profil technique national (`04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-02.md`)
+- **CMP-16** : Registre de schémas (F.3) (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-16.md`)
+- **PT-03** : Profil technique national (`04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-03.md`)
+- **CMP-03** : Entrepôt Lakehouse & Projections analytiques (pipeline ETL, Lakehouse, projections) (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-03.md`)
+- **CMP-04** : Moteur analytique & IA (IA prédictive, routeur alertes, Grand Livre) (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-04.md`)
+- **CMP-01** : Tableaux de bord & Portails nationaux (performance, CSU, ressources, veille) (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-01.md`)
+- **ART-6** : Analytique et restitution (`04_architecture-repository/04_patterns/artsn-rules/art-6.md`)
+- **ART-5** : Cohérence et qualité des données (`04_architecture-repository/04_patterns/artsn-rules/art-5.md`)
+- **ART-8B** : Modélisation de relations en graphe (`04_architecture-repository/04_patterns/artsn-rules/art-8b.md`)
+- **ART-9** : Garanties transactionnelles fortes (`04_architecture-repository/04_patterns/artsn-rules/art-9.md`)
+- **PT-08** : Profil technique national (`04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-08.md`)
+- **PT-09** : Profil technique national (`04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-09.md`)
+- **CMP-15** : API Gateway (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-15.md`)
+- **ART-7** : Sécurité, contrôle d'accès et résidence de la donnée (`04_architecture-repository/04_patterns/artsn-rules/art-7.md`)
+- **ART-4B** : Bases d'autorisation (`04_architecture-repository/04_patterns/artsn-rules/art-4b.md`)
+- **PT-10** : Profil technique national (`04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md`)
+- **CMP-12** : Registre d'éligibilité et de couverture (CSU : ART-4C) (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-12.md`)
+- **PT-11** : Profil technique national (`04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-11.md`)
+- **CMP-17** : Message broker asynchrone (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-17.md`)
+- **ART-3** : Historisation événementielle et profils de déploiement (`04_architecture-repository/04_patterns/artsn-rules/art-3.md`)
+- **PT-12** : Profil technique national (`04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-12.md`)
+- **CMP-05** : Moteur de graphes & Référentiel spatio-temporel (Graph Store, Spatio ART-4D) (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-05.md`)
+- **ART-4D** : Référentiel géospatial et d'exploitation partagé (`04_architecture-repository/04_patterns/artsn-rules/art-4d.md`)
+- **PT-13** : Profil technique national (`04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-13.md`)
+- **ART-0** : Accords de partage inter-institutionnels (`04_architecture-repository/04_patterns/artsn-rules/art-0.md`)
+- **PT-14** : Interopérabilité transfrontalière (`04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-14.md`)
+- **CMP-02** : Centre de commande & Crises intersectorielles (alertes, crises, veille) (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-02.md`)
+- **ART-11** : Coordination intersectorielle (`04_architecture-repository/04_patterns/artsn-rules/art-11.md`)
+- **PT-15** : Surveillance One Health (`04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-15.md`)
+- **CMP-07** : Orchestrateur de parcours & Gestionnaire de Sagas (ART-8A) (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-07.md`)
+- **CMP-09** : Référentiel des métadonnées d'exploitation (ART-4) (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-09.md`)
+- **CMP-14** : Registre des produits, intrants et indicateurs (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-14.md`)
+- **CMP-18** : Compensateur / Regroupeur de flux (Netting : ART-8C) (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-18.md`)
+- **PRC-01** : Accès, orientation et admission du patient (`04_architecture-repository/02_architecture-elements/business/processes/prc-01.md`)
+- **PRC-02** : Prestation des soins cliniques (`04_architecture-repository/02_architecture-elements/business/processes/prc-02.md`)
+- **PRC-03** : Continuité, suivi et qualité des soins (`04_architecture-repository/02_architecture-elements/business/processes/prc-03.md`)
+- **PRC-04** : Veille, prévention et surveillance sanitaire (`04_architecture-repository/02_architecture-elements/business/processes/prc-04.md`)
+- **PRC-05** : Alerte, investigation et riposte (`04_architecture-repository/02_architecture-elements/business/processes/prc-05.md`)
+- **PRC-06** : Clôture et capitalisation des épisodes (`04_architecture-repository/02_architecture-elements/business/processes/prc-06.md`)
+- **PRC-07** : Identification et droits des bénéficiaires (`04_architecture-repository/02_architecture-elements/business/processes/prc-07.md`)
+- **PRC-08** : Financement et exemption au point de service (`04_architecture-repository/02_architecture-elements/business/processes/prc-08.md`)
+- **PRC-09** : Remboursement et régulation des mécanismes (`04_architecture-repository/02_architecture-elements/business/processes/prc-09.md`)
+- **PRC-10** : Planification et allocation des ressources (`04_architecture-repository/02_architecture-elements/business/processes/prc-10.md`)
+- **PRC-11** : Suivi et pilotage de la performance (`04_architecture-repository/02_architecture-elements/business/processes/prc-11.md`)
+- **PRC-12** : Redevabilité et amélioration continue (`04_architecture-repository/02_architecture-elements/business/processes/prc-12.md`)
 - **01_cnisn/02_capacites.md** : Partie II : Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
 - **01_cnisn/01_principes.md** : Partie I : Principes nationaux d'interopérabilité de santé (`01_cnisn/01_principes/index.md`)

@@ -14,16 +14,16 @@ tags: ["caesn", "role", "rol-04", "governance"]
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-Le gestionnaire logistique planifie et suit la chaîne d'approvisionnement et les stocks. Il est [assigné à la formation sanitaire](../../../referentiel/acteurs/act-03.md) et [exécute le processus de gestion de la chaîne logistique](../../../referentiel/processus/prc-08.md).
+Le gestionnaire logistique planifie et suit la chaîne d'approvisionnement et les stocks. Il est [assigné à la formation sanitaire](../../../04_architecture-repository/02_architecture-elements/business/actors/act-03.md) et [exécute le processus de gestion de la chaîne logistique](../../../04_architecture-repository/02_architecture-elements/business/processes/prc-08.md).
 
-Son rôle contribue à la [capacité « Chaîne logistique et traçabilité »](../../../referentiel/capacites/cap-int-10.md), condition indispensable à la disponibilité des médicaments et intrants.
+Son rôle contribue à la [capacité « Chaîne logistique et traçabilité »](../../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md), condition indispensable à la disponibilité des médicaments et intrants.
 
 ## Affectation
 
-Assigné à l'acteur [ACT-03](../../../referentiel/acteurs/act-03.md).
+Assigné à l'acteur [ACT-03](../../../04_architecture-repository/02_architecture-elements/business/actors/act-03.md).
 
 ## Réalisation
 
-Exécute le processus [PRC-08](../../../referentiel/processus/prc-08.md).
+Exécute le processus [PRC-08](../../../04_architecture-repository/02_architecture-elements/business/processes/prc-08.md).
 
 <!-- END:GENERATED -->

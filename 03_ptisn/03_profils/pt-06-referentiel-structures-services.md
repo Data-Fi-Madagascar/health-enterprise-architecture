@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-06"]
-related: ["CAP-INT-04", "ART-4", "ART-5", "ART-6", "CMP-08"]
+related: ["ABB-REFERENTIEL-STRUCTURES-SERVICES", "ART-4", "ART-5", "ART-6", "CMP-08"]
 ---
 
 # Profil technique national
@@ -21,15 +21,15 @@ Le **profil PT-06 — Référentiel des structures et services de santé** défi
 
 Périmètre : formations sanitaires (publiques, privées, communautaires), laboratoires, pharmacies et dépôts, structures administratives, services disponibles, localisations, coordonnées, rattachements, périodes d’activité.
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-[CAP-INT-04: Référentiel des structures et services de santé](../../referentiel/capacites/cap-int-04.md)
+[ABB-REFERENTIEL-STRUCTURES-SERVICES: Référentiel des structures et services de santé](../../04_architecture-repository/05_building-blocks/abb/abb-referentiel-structures-services.md)
 
 ## 3. Chapitres ART applicables
 
-- [ART-4: Référentiels de métadonnées de gestion](../../referentiel/chapitres/art-4.md)
-- [ART-5: Cohérence et qualité des données](../../referentiel/chapitres/art-5.md)
-- [ART-6: Analytique et restitution](../../referentiel/chapitres/art-6.md) pour les usages analytiques
+- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
+- [ART-5: Cohérence et qualité des données](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md)
+- [ART-6: Analytique et restitution](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md) pour les usages analytiques
 
 ## 4. Acteurs (Actors)
 
@@ -37,7 +37,7 @@ Périmètre : formations sanitaires (publiques, privées, communautaires), labor
 - **Registre des structures (Care Services Registry / Directory)** — tient le référentiel national découvrable.
 - **Consommateur de services de santé (Care Services Consumer)** — système résolvant une structure, un service ou une localisation.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-04](../../referentiel/capacites/cap-int-04.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-REFERENTIEL-STRUCTURES-SERVICES](../../04_architecture-repository/05_building-blocks/abb/abb-referentiel-structures-services.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -48,7 +48,7 @@ Périmètre : formations sanitaires (publiques, privées, communautaires), labor
 
 R = requis ; O = optionnel.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-04](../../referentiel/capacites/cap-int-04.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-REFERENTIEL-STRUCTURES-SERVICES](../../04_architecture-repository/05_building-blocks/abb/abb-referentiel-structures-services.md).
 ## 6. Content Modules
 
 - **HL7 FHIR Organization** : formation sanitaire, structure administrative.
@@ -98,8 +98,8 @@ Conformité attestée par la résolution des unités organisationnelles des inst
 
 ## 12. Articulation avec les autres profils
 
-- [PT-05: registre des professionnels](../../referentiel/profils/pt-05.md)
-- [PT-09: analytique et exposition de données](../../referentiel/profils/pt-09.md)
+- [PT-05: registre des professionnels](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md)
+- [PT-09: analytique et exposition de données](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-09.md)
 
 Le référentiel alimente la dimension géographique/organisationnelle de l’analytique (PT-09) et la découvrabilité des services.
 

@@ -159,7 +159,8 @@
   "x-hea-version": "0.4",
   "x-hea-type": "profil-technique",
   "x-hea-maps-to": [
-    "CAP-INT-08"
+    "ABB-CONFIANCE-AUTORISATION",
+    "CAP-15"
   ],
   "x-hea-implements": [
     "ART-0",
@@ -170,10 +171,10 @@
   "x-hea-applies-to": [
     "CMP-15"
   ],
-  "x-hea-source": "referentiel/profils/pt-10.md",
+  "x-hea-source": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md",
   "x-hea-fhir-resources": [
     "AuditEvent"
   ],
   "x-hea-data-objects": [],
-  "x-hea-file": "referentiel/profils/pt-10.md"
+  "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md"
 }
