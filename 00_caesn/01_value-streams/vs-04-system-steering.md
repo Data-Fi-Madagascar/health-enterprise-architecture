@@ -27,7 +27,7 @@ related: ["CAP-08", "CAP-16"]
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
-<!-- BEGIN:GENERATED mode=monographie source=referentiel/flux-valeur/vs-04.md -->
+<!-- BEGIN:GENERATED mode=monographie source=04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ## Valeur produite
@@ -36,9 +36,9 @@ Le système de santé est planifié, coordonné, régulé et continuellement am�
 
 ## Bénéficiaires principaux
 
-- [PP-07: District, région et Ministère](../../referentiel/parties-prenantes/pp-07.md)
-- [PP-08: Partenaires techniques et financiers](../../referentiel/parties-prenantes/pp-08.md)
-- [PP-03: Population](../../referentiel/parties-prenantes/pp-03.md)
+- [PP-07: District, région et Ministère](../../04_architecture-repository/02_architecture-elements/motivation/stakeholders/pp-07.md)
+- [PP-08: Partenaires techniques et financiers](../../04_architecture-repository/02_architecture-elements/motivation/stakeholders/pp-08.md)
+- [PP-03: Population](../../04_architecture-repository/02_architecture-elements/motivation/stakeholders/pp-03.md)
 
 ## Description du flux
 
@@ -46,37 +46,37 @@ Ce flux transversal conditionne l’efficacité de tous les autres. Il couvre l�
 
 ## Étapes de valeur
 
-- [VS-04-01: Définition des priorités et planification](../../referentiel/etapes-valeur/vs-04-01.md)
-- [VS-04-02: Budgétisation et allocation des ressources](../../referentiel/etapes-valeur/vs-04-02.md)
-- [VS-04-03: Coordination des acteurs et alignement des partenaires](../../referentiel/etapes-valeur/vs-04-03.md)
-- [VS-04-04: Suivi de l’exécution](../../referentiel/etapes-valeur/vs-04-04.md)
-- [VS-04-05: Analyse de la performance et prise de décision](../../referentiel/etapes-valeur/vs-04-05.md)
-- [VS-04-06: Redevabilité et communication publique](../../referentiel/etapes-valeur/vs-04-06.md)
-- [VS-04-07: Amélioration continue](../../referentiel/etapes-valeur/vs-04-07.md)
+- [VS-04-01: Définition des priorités et planification](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-04-01.md)
+- [VS-04-02: Budgétisation et allocation des ressources](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-04-02.md)
+- [VS-04-03: Coordination des acteurs et alignement des partenaires](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-04-03.md)
+- [VS-04-04: Suivi de l’exécution](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-04-04.md)
+- [VS-04-05: Analyse de la performance et prise de décision](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-04-05.md)
+- [VS-04-06: Redevabilité et communication publique](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-04-06.md)
+- [VS-04-07: Amélioration continue](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-04-07.md)
 
 
 ## Capabilités mobilisées
 
-- [CAP-03: Qualité, sécurité des soins et amélioration continue](../../referentiel/capabilites/cap-03.md)
-- [CAP-08: Gouvernance institutionnelle, planification, coordination et redevabilité](../../referentiel/capabilites/cap-08.md)
-- [CAP-09: Gestion des ressources humaines en santé](../../referentiel/capabilites/cap-09.md)
-- [CAP-12: Finances publiques, budget et allocation des ressources](../../referentiel/capabilites/cap-12.md)
-- [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md)
-- [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../referentiel/capabilites/cap-14.md)
-- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md)
-- [CAP-16: Gestion du portefeuille d'initiatives numériques](../../referentiel/capabilites/cap-16.md)
+- [CAP-03: Qualité, sécurité des soins et amélioration continue](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-03.md)
+- [CAP-08: Gouvernance institutionnelle, planification, coordination et redevabilité](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-08.md)
+- [CAP-09: Gestion des ressources humaines en santé](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-09.md)
+- [CAP-12: Finances publiques, budget et allocation des ressources](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-12.md)
+- [CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md)
+- [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md)
+- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md)
+- [CAP-16: Gestion du portefeuille d'initiatives numériques](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-16.md)
 
 <!-- END:GENERATED -->
 ## Étapes de valeur
 
-<!-- BEGIN:GENERATED mode=catalogue source=referentiel/etapes-valeur/vs-04-01.md,referentiel/etapes-valeur/vs-04-02.md,referentiel/etapes-valeur/vs-04-03.md,referentiel/etapes-valeur/vs-04-04.md,referentiel/etapes-valeur/vs-04-05.md,referentiel/etapes-valeur/vs-04-06.md,referentiel/etapes-valeur/vs-04-07.md -->
+<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-04-01.md,04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-04-02.md,04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-04-03.md,04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-04-04.md,04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-04-05.md,04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-04-06.md,04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-04-07.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### Définition des priorités et planification
 
 #### Objectif
 
-Réaliser l'étape de valeur « Définition des priorités et planification » du flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md).
+Réaliser l'étape de valeur « Définition des priorités et planification » du flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md).
 
 #### Entrées
 
@@ -102,7 +102,7 @@ Proportion de plans opérationnels alignés sur le PDSS et la SNSD
 
 #### Objectif
 
-Réaliser l'étape de valeur « Budgétisation et allocation des ressources » du flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md).
+Réaliser l'étape de valeur « Budgétisation et allocation des ressources » du flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md).
 
 #### Entrées
 
@@ -128,7 +128,7 @@ Taux d'exécution budgétaire, part du budget national allouée à la santé
 
 #### Objectif
 
-Réaliser l'étape de valeur « Coordination des acteurs et alignement des partenaires » du flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md).
+Réaliser l'étape de valeur « Coordination des acteurs et alignement des partenaires » du flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md).
 
 #### Entrées
 
@@ -154,7 +154,7 @@ Proportion d'initiatives partenaires alignées sur le portefeuille national
 
 #### Objectif
 
-Réaliser l'étape de valeur « Suivi de l'exécution » du flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md).
+Réaliser l'étape de valeur « Suivi de l'exécution » du flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md).
 
 #### Entrées
 
@@ -180,7 +180,7 @@ Complétude et promptitude des rapports, taux d'utilisation des tableaux de bord
 
 #### Objectif
 
-Réaliser l'étape de valeur « Analyse de la performance et prise de décision » du flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md).
+Réaliser l'étape de valeur « Analyse de la performance et prise de décision » du flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md).
 
 #### Entrées
 
@@ -206,7 +206,7 @@ Nombre de revues de performance, proportion de décisions documentées
 
 #### Objectif
 
-Réaliser l'étape de valeur « Redevabilité et communication publique » du flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md).
+Réaliser l'étape de valeur « Redevabilité et communication publique » du flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md).
 
 #### Entrées
 
@@ -232,7 +232,7 @@ Existence et publication de rapports annuels de performance
 
 #### Objectif
 
-Réaliser l'étape de valeur « Amélioration continue » du flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../referentiel/flux-valeur/vs-04.md).
+Réaliser l'étape de valeur « Amélioration continue » du flux [VS-04: Piloter, coordonner et améliorer la performance du système de santé](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md).
 
 #### Entrées
 
@@ -257,7 +257,7 @@ Proportion de recommandations mises en œuvre, évolution de la maturité des ca
 <!-- END:GENERATED -->
 ## Processus métier
 
-<!-- BEGIN:GENERATED mode=catalogue source=referentiel/processus/prc-10.md,referentiel/processus/prc-11.md,referentiel/processus/prc-12.md -->
+<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/business/processes/prc-10.md,04_architecture-repository/02_architecture-elements/business/processes/prc-11.md,04_architecture-repository/02_architecture-elements/business/processes/prc-12.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### Planification et allocation des ressources
@@ -268,9 +268,9 @@ Définir les priorités nationales et traduire la stratégie en ressources : pl
 
 #### Étapes couvertes
 
-- [VS-04-01: Définition des priorités et planification](../../referentiel/etapes-valeur/vs-04-01.md)
-- [VS-04-02: Budgétisation et allocation des ressources](../../referentiel/etapes-valeur/vs-04-02.md)
-- [VS-04-03: Coordination des acteurs et alignement des partenaires](../../referentiel/etapes-valeur/vs-04-03.md)
+- [VS-04-01: Définition des priorités et planification](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-04-01.md)
+- [VS-04-02: Budgétisation et allocation des ressources](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-04-02.md)
+- [VS-04-03: Coordination des acteurs et alignement des partenaires](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-04-03.md)
 
 #### Acteurs
 
@@ -288,8 +288,8 @@ Piloter l'exécution sur la base de données fiables : suivi des plans et budge
 
 #### Étapes couvertes
 
-- [VS-04-04: Suivi de l'exécution](../../referentiel/etapes-valeur/vs-04-04.md)
-- [VS-04-05: Analyse de la performance et prise de décision](../../referentiel/etapes-valeur/vs-04-05.md)
+- [VS-04-04: Suivi de l'exécution](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-04-04.md)
+- [VS-04-05: Analyse de la performance et prise de décision](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-04-05.md)
 
 #### Acteurs
 
@@ -307,8 +307,8 @@ Rendre compte à la population et aux instances et améliorer en continu le syst
 
 #### Étapes couvertes
 
-- [VS-04-06: Redevabilité et communication publique](../../referentiel/etapes-valeur/vs-04-06.md)
-- [VS-04-07: Amélioration continue](../../referentiel/etapes-valeur/vs-04-07.md)
+- [VS-04-06: Redevabilité et communication publique](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-04-06.md)
+- [VS-04-07: Amélioration continue](../../04_architecture-repository/02_architecture-elements/strategy/value-stages/vs-04-07.md)
 
 #### Acteurs
 
@@ -321,7 +321,7 @@ Existence et publication de rapports annuels de performance, proportion de recom
 <!-- END:GENERATED -->
 ## Liens
 
-- [Flux de valeur](./index.md)
+- [Flux de valeur](index.md)
 - Capabilités
 
 ## Références

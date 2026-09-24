@@ -78,7 +78,7 @@ hea:CapIntShape a sh:NodeShape ;
     sh:property [
         sh:path hea:mapsTo ;
         sh:minCount 1 ;
-        sh:message "Toute capacité d'interopérabilité (CAP-INT) doit mapper vers au moins 1 capabilité CAESN" ;
+        sh:message "Tout ancien paquet d'interopérabilité doit mapper vers au moins 1 capabilité CAESN" ;
     ] .
 
 # --- Shape Capabilite : doit avoir au moins 1 realizedBy ---
@@ -143,8 +143,8 @@ hea:ExchangeContractShape a sh:NodeShape ;
         sh:select """
             SELECT ?this WHERE {
                 ?this rdf:type hea:Profil .
-                ?this hea:mapsTo ?capInt .
-                ?capInt rdf:type hea:CapaciteInteroperabilite .
+                ?this hea:mapsTo ?reference .
+                ?reference rdf:type hea:Composant .
             }
         """ ;
     ] ;

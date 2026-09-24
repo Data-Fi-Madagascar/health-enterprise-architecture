@@ -26,20 +26,20 @@ Cette annexe rend explicite la couverture des quatre types d'interopérabilité 
 
 | Capacité | Technique | Sémantique | Organisationnelle | Juridique |
 |----------|:---------:|:----------:|:-----------------:|:---------:|
-| CAP-INT-01 : Résolution d'identité du bénéficiaire | | | ● | |
-| CAP-INT-02 : Registre des professionnels de santé | | | ● | |
-| CAP-INT-03 : Échange et médiation inter-systèmes | ● | | ● | |
-| CAP-INT-04 : Référentiel des structures et services | | ● | | |
-| CAP-INT-05 : Terminologie et codification communes | | ● | | |
-| CAP-INT-06 : Catalogue des services et registre des contrats | ● | | ● | |
-| CAP-INT-07 : Accès et exposition des données analytiques | ● | | | |
-| CAP-INT-08 : Confiance, sécurité et autorisation | ● | | ● | |
-| CAP-INT-09 : Consentement et bases d'autorisation | | | ● | ● |
-| CAP-INT-10 : Provenance, audit et traçabilité | | | ● | ● |
-| CAP-INT-11 : Qualité et réconciliation | | ● | | |
-| CAP-INT-12 : Conformité et tests d'interopérabilité | ● | | ● | |
-| CAP-INT-13 : Interopérabilité transfrontalière | ● | | ● | ● |
-| CAP-INT-14 : Échanges intersectoriels One Health | | | ● | ● |
+| ABB-IDENTITE-BENEFICIAIRE : Résolution d'identité du bénéficiaire | | | ● | |
+| ABB-REGISTRE-PROFESSIONNELS : Registre des professionnels de santé | | | ● | |
+| ABB-ECHANGE-MEDIATION : Échange et médiation inter-systèmes | ● | | ● | |
+| ABB-REFERENTIEL-STRUCTURES-SERVICES : Référentiel des structures et services | | ● | | |
+| ABB-SERVICE-TERMINOLOGIE : Terminologie et codification communes | | ● | | |
+| ABB-CATALOGUE-CONTRATS : Catalogue des services et registre des contrats | ● | | ● | |
+| ABB-EXPOSITION-DONNEES-ANALYTIQUES : Accès et exposition des données analytiques | ● | | | |
+| ABB-CONFIANCE-AUTORISATION : Confiance, sécurité et autorisation | ● | | ● | |
+| ABB-GESTION-CONSENTEMENT : Consentement et bases d'autorisation | | | ● | ● |
+| ABB-AUDIT-PROVENANCE : Provenance, audit et traçabilité | | | ● | ● |
+| ABB-RECONCILIATION-DONNEES : Qualité et réconciliation | | ● | | |
+| COMP-HOMOLOGATION-INTEROPERABILITE : Conformité et tests d'interopérabilité | ● | | ● | |
+| PART-ECHANGE-TRANSFRONTALIER : Interopérabilité transfrontalière | ● | | ● | ● |
+| PART-ONE-HEALTH : Échanges intersectoriels One Health | | | ● | ● |
 
 **Lecture :** ● = couverture directe principale. Les capacités peuvent contribuer à plusieurs types simultanément.
 
@@ -103,7 +103,7 @@ Cette annexe rend explicite la couverture des quatre types d'interopérabilité 
 
 ### 6.1 Interopérabilité technique
 
-**Capacités :** CAP-INT-03, 06, 07, 08, 12, 13 (6 capacités)
+**Capacités :** ABB-ECHANGE-MEDIATION, 06, 07, 08, 12, 13 (6 capacités)
 
 **Principes :** P-INT-03, 05, 06, 08, 09, 19, 20, 21, 22 (9 principes)
 
@@ -111,7 +111,7 @@ Cette annexe rend explicite la couverture des quatre types d'interopérabilité 
 
 ### 6.2 Interopérabilité sémantique
 
-**Capacités :** CAP-INT-04, 05, 11 (3 capacités)
+**Capacités :** ABB-REFERENTIEL-STRUCTURES-SERVICES, 05, 11 (3 capacités)
 
 **Principes :** P-INT-01, 02, 04 (3 principes)
 
@@ -119,7 +119,7 @@ Cette annexe rend explicite la couverture des quatre types d'interopérabilité 
 
 ### 6.3 Interopérabilité organisationnelle
 
-**Capacités :** CAP-INT-01, 02, 03, 06, 08, 09, 10, 12, 13, 14 (10 capacités)
+**Capacités :** ABB-IDENTITE-BENEFICIAIRE, 02, 03, 06, 08, 09, 10, 12, 13, 14 (10 capacités)
 
 **Principes :** P-INT-01, 05, 07, 08, 10, 11, 12, 13, 23, 24, 25 (11 principes)
 
@@ -129,7 +129,7 @@ Cette annexe rend explicite la couverture des quatre types d'interopérabilité 
 
 ### 6.4 Interopérabilité juridique
 
-**Capacités :** CAP-INT-09, 10, 13, 14 (4 capacités)
+**Capacités :** ABB-GESTION-CONSENTEMENT, 10, 13, 14 (4 capacités)
 
 **Principes :** P-INT-10, 12, 13, 14, 15, 16, 17, 18 (8 principes)
 

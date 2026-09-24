@@ -14,20 +14,20 @@ tags: ["caesn", "acteur", "act-02", "governance"]
 <!-- BEGIN:GENERATED -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-L'agent de santé de première ligne délivre les soins de proximité, enregistre les événements cliniques et orchestre le parcours du patient sur le terrain. Il [réalise la partie prenante « Agent de santé »](../../../referentiel/parties-prenantes/pp-05.md) et porte les rôles de [clinicien](../../../referentiel/roles/rol-01.md) et de [gestionnaire de parcours](../../../referentiel/roles/rol-02.md).
+L'agent de santé de première ligne délivre les soins de proximité, enregistre les événements cliniques et orchestre le parcours du patient sur le terrain. Il [réalise la partie prenante « Agent de santé »](../../../04_architecture-repository/02_architecture-elements/motivation/stakeholders/pp-05.md) et porte les rôles de [clinicien](../../../04_architecture-repository/02_architecture-elements/business/roles/rol-01.md) et de [gestionnaire de parcours](../../../04_architecture-repository/02_architecture-elements/business/roles/rol-02.md).
 
-Déployé en [communauté](../../../referentiel/lieux/loc-01.md) et en [centre de santé de base](../../../referentiel/lieux/loc-02.md), il exécute le [processus de prise en charge](../../../referentiel/processus/prc-01.md) et mobilise la [capacité « Offre de soins et continuité »](../../../referentiel/capabilites/cap-01.md). C'est le point d'entrée le plus fréquent du citoyen dans le système de santé numérique.
+Déployé en [communauté](../../../04_architecture-repository/02_architecture-elements/business/locations/loc-01.md) et en [centre de santé de base](../../../04_architecture-repository/02_architecture-elements/business/locations/loc-02.md), il exécute le [processus de prise en charge](../../../04_architecture-repository/02_architecture-elements/business/processes/prc-01.md) et mobilise la [capacité « Offre de soins et continuité »](../../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md). C'est le point d'entrée le plus fréquent du citoyen dans le système de santé numérique.
 
 ## Représentation
 
-Réalise la partie prenante [PP-05](../../../referentiel/parties-prenantes/pp-05.md).
+Réalise la partie prenante [PP-05](../../../04_architecture-repository/02_architecture-elements/motivation/stakeholders/pp-05.md).
 
 ## Rôles portés
 
-Porte les rôles [ROL-01](../../../referentiel/roles/rol-01.md), [ROL-02](../../../referentiel/roles/rol-02.md).
+Porte les rôles [ROL-01](../../../04_architecture-repository/02_architecture-elements/business/roles/rol-01.md), [ROL-02](../../../04_architecture-repository/02_architecture-elements/business/roles/rol-02.md).
 
 ## Ancrage territorial
 
-Localisé sur le territoire [LOC-01](../../../referentiel/lieux/loc-01.md), [LOC-02](../../../referentiel/lieux/loc-02.md).
+Localisé sur le territoire [LOC-01](../../../04_architecture-repository/02_architecture-elements/business/locations/loc-01.md), [LOC-02](../../../04_architecture-repository/02_architecture-elements/business/locations/loc-02.md).
 
 <!-- END:GENERATED -->

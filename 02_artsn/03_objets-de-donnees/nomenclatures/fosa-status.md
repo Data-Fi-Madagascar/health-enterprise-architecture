@@ -10,7 +10,7 @@ version: "1.0.0"
 last_reviewed: 2026-08-31
 envelope: 02_artsn/03_objets-de-donnees/nomenclatures/fosa-status.md
 artRef: ["ART-4", "ART-5"]
-maps_to: ["CAP-INT-04"]
+maps_to: ["ABB-REFERENTIEL-STRUCTURES-SERVICES"]
 implements: ["IHE mCSD"]
 related: ["DO-04", "DO-05", "PT-06"]
 tags: ["nomenclature", "fosa", "mCSD", "etablissement"]
@@ -67,7 +67,7 @@ Dans le cadre IHE mCSD (ITI-90), le statut est utilisé dans :
 
 - **ART-4** : Référentiels de métadonnées de gestion
 - **ART-5** : Cohérence et qualité des données
-- **CAP-INT-04** : Référentiel des structures et services de santé
+- **ABB-REFERENTIEL-STRUCTURES-SERVICES** : Référentiel des structures et services de santé
 - **PT-06** : Référentiel des structures et services de santé (mCSD)
 - **IHE mCSD** : Master Client Directory
 - **DO-04** : Formation sanitaire

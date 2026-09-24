@@ -22,6 +22,24 @@ import re
 import sys
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ARCH_REPOSITORY_DIR = "04_architecture-repository"
+ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
+DERIVED_ARCH_REPOSITORY_DOCS = {
+    os.path.join(ARCH_REPOSITORY_DIR, "01_partitions", "index.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "architecture-landscape.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "standards-information-base.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "reference-library.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "governance-log.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "requirements-repository.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "solutions-landscape.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "adm-traceability.md"),
+}
+EXCLUDED_ARCH_REPOSITORY_DOCS = {
+    os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "schema.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "togaf-mapping.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "archimate-mapping.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "cap-int-migration.yaml"),
+} | DERIVED_ARCH_REPOSITORY_DOCS
 
 # Namespace HEA
 HEA_NS = "https://healmadagascar.mg/ontologie/hea#"
@@ -55,6 +73,19 @@ TYPE_TO_CLASS = {
     "objet-metier": "ObjetMetier",
     "registre-gouvernance": "Composant",
     "valeur": "Valeur",
+    # Types TOGAF introduits par le nouveau dépôt d'architecture.
+    "architecture-partition": "ArchitecturePartition",
+    "architecture-building-block": "ArchitectureBuildingBlock",
+    "solution-building-block": "SolutionBuildingBlock",
+    "architecture-pattern": "ArchitecturePattern",
+    "architecture-contract": "ArchitectureContract",
+    "compliance-rule": "ComplianceRule",
+    "evidence": "Evidence",
+    "reference-data": "ReferenceData",
+    "terminology": "Terminology",
+    "stakeholder": "PartiePrenante",
+    "business-location": "Lieu",
+    "business-value": "Valeur",
     # Aliases ArchiMate (équivalents)
     "composant-architecture": "ComposantArchitecture",
     "concept-donnee": "ConceptDonnee",
@@ -146,13 +177,14 @@ def turtle_escape(value):
 
 
 def collect_objects():
-    """Parcourt referentiel/ et renvoie la liste des objets avec leur frontmatter."""
+    """Parcourt 04_architecture-repository/ et renvoie la liste des objets avec leur frontmatter."""
     objects = []
-    for path in sorted(glob.glob(os.path.join(REPO_ROOT, "referentiel", "**", "*.md"),
+    for path in sorted(glob.glob(os.path.join(ARCH_REPOSITORY_ROOT, "**", "*.md"),
                                   recursive=True)):
-        if os.path.basename(path) == "_schema.md":
-            continue
         if os.path.basename(path) == "_index.yaml":
+            continue
+        rel_path = os.path.relpath(path, REPO_ROOT)
+        if rel_path in EXCLUDED_ARCH_REPOSITORY_DOCS:
             continue
         text = open(path, encoding="utf-8").read()
         fm = parse_frontmatter(text)
@@ -432,7 +464,7 @@ def main():
     # Collecter les objets
     objects = collect_objects()
     if not objects:
-        print("[ERREUR] Aucun objet trouvé dans referentiel/")
+        print("[ERREUR] Aucun objet trouvé dans 04_architecture-repository/")
         sys.exit(1)
 
     # Générer le RDF

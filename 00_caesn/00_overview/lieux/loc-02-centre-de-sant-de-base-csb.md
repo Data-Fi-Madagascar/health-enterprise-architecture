@@ -17,7 +17,7 @@ related: ["PP-06", "CMP-01"]
 
 Le centre de santé de base est la structure de premier recours assurant les soins essentiels et la prévention. C'est le premier niveau d'ancrage physique des dossiers patients.
 
-Il [sert la partie prenante « Formation sanitaire »](../../../referentiel/parties-prenantes/pp-06.md) et utilise le [composant applicatif de dossiers](../../../referentiel/composants/cmp-01.md). La couverture des CSB conditionne l'exhaustivité de la donnée de santé du territoire.
+Il [sert la partie prenante « Formation sanitaire »](../../../04_architecture-repository/02_architecture-elements/motivation/stakeholders/pp-06.md) et utilise le [composant applicatif de dossiers](../../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-01.md). La couverture des CSB conditionne l'exhaustivité de la donnée de santé du territoire.
 
 ## Imbrication territoriale
 

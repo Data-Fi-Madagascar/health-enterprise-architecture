@@ -26,7 +26,7 @@ Cette annexe répond à la question : *où Madagascar se situe-t-il sur le modè
 | 3 | Législation & politique | 40 % | Initial | Absence de loi e-santé opposable ; cadre consensuel en cours ([ADR-0010](../../01_cnisn/06_decisions/adr-0010-cadre-legal.md), [avant-projet de loi](../../00_caesn/07_governance/projet-loi-esante.md)) |
 | 4 | Workforce | 45 % | Initial | Compétences SIS présentes, mais capacité numérique système non structurée ([workforce numérique](../../00_caesn/03_capabilities/workforce-sante-numerique.md)) |
 | 5 | Standards & interopérabilité | 60 % | Défini | CNISN publié (normes + ADR) ; déploiement X-Road/PIXm encore limité |
-| 6 | Infrastructure | 35 % | Initial | Hébergement souverain non confirmé ; cloud souverain en cours de cadrage ([ART-7](../../referentiel/chapitres/art-7.md)) |
+| 6 | Infrastructure | 35 % | Initial | Hébergement souverain non confirmé ; cloud souverain en cours de cadrage ([ART-7](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)) |
 | 7 | Services numériques | 75 % | Géré | Dossiers, HMIS et analytique relativement matures ; continuité inter-structure fragile |
 
 **Score global indicatif : ~55,6 %** (moyenne des 7 domaines) — profil « analytique fort, socle infra/workforce/législation faible ».
@@ -39,7 +39,7 @@ Chaque domaine faible fait l'objet d'une réponse directe dans le document HEA :
 |----------------|------------|--------------------|
 | Législation & politique (40 %) | Pas de base légale opposable | [ADR-0010](../../01_cnisn/06_decisions/adr-0010-cadre-legal.md) + [avant-projet de loi e-santé](../../00_caesn/07_governance/projet-loi-esante.md) ; [fondement légal CAESN](../../00_caesn/07_governance/fondement-legal.md) |
 | Workforce (45 %) | Capacité numérique non structurée | Nouveau document [workforce numérique](../../00_caesn/03_capabilities/workforce-sante-numerique.md) ; référencé par [instances sectorielles](../../00_caesn/07_governance/instances-sectorielles.md) |
-| Infrastructure (35 %) | Hébergement souverain non confirmé | Sous-section « Hébergement souverain et cloud souverain » de [ART-7](../../referentiel/chapitres/art-7.md) (réf [STD-0002](../../01_cnisn/05_standards/std-0002-securite-chiffrement.md)) ; [plateforme PHC](../../00_caesn/07_governance/instances-sectorielles.md) |
+| Infrastructure (35 %) | Hébergement souverain non confirmé | Sous-section « Hébergement souverain et cloud souverain » de [ART-7](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md) (réf [STD-0002](../../01_cnisn/05_standards/std-0002-securite-chiffrement.md)) ; [plateforme PHC](../../00_caesn/07_governance/instances-sectorielles.md) |
 | Gouvernance (70 %) | Pouvoir d'homologation à confirmer | [Table de maturité](a-table-de-maturite.md) utilise ADHMAT comme grille de M&E ; CNASN (PA-05) |
 | Stratégie & investissement (65 %) | Financement non arbitré | [Méthode TCO et enveloppe L1–L7](../../00_caesn/06_portfolio/financement-tco.md) |
 

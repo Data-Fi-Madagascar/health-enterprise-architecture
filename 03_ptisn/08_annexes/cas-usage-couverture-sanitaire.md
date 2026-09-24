@@ -195,8 +195,8 @@ Les profils mobilisés sont le PT-08 (échange de données agrégées pour l'ana
 
 | Exigence | Source | Applicable à |
 |----------|--------|--------------|
-| PT-11 : Consentement | CAP-INT-09 | Vérification des droits |
-| PT-10 : Confiance | CAP-INT-08 | Accès données financières |
+| PT-11 : Consentement | ABB-GESTION-CONSENTEMENT | Vérification des droits |
+| PT-10 : Confiance | ABB-CONFIANCE-AUTORISATION | Accès données financières |
 | Loi 2014-038 | National | Cadre juridique exemption |
 
 ## Liens

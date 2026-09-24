@@ -273,7 +273,9 @@
   "x-hea-version": "0.4",
   "x-hea-type": "profil-technique",
   "x-hea-maps-to": [
-    "CAP-INT-05"
+    "ABB-SERVICE-TERMINOLOGIE",
+    "CAP-13",
+    "CAP-14"
   ],
   "x-hea-implements": [
     "ART-2",
@@ -283,12 +285,12 @@
   "x-hea-applies-to": [
     "CMP-10"
   ],
-  "x-hea-source": "referentiel/profils/pt-07.md",
+  "x-hea-source": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-07.md",
   "x-hea-fhir-resources": [
     "CodeSystem",
     "ConceptMap",
     "ValueSet"
   ],
   "x-hea-data-objects": [],
-  "x-hea-file": "referentiel/profils/pt-07.md"
+  "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-07.md"
 }

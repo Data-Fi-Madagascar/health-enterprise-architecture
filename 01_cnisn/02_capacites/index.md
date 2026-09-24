@@ -1,52 +1,52 @@
 ---
-title: "Partie II : Capacités nationales requises"
+title: "Partie II : Objets d'interopérabilité requis"
 id: cnisn-capacites
 domain: 02_capacites
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-07-31
 owner: DEPSI
-tags: ["cnisn", "niveau-2", "interopérabilité", "capacites"]
-related: ["CAP-10", "CAP-11", "CMP-23"]
+tags: ["cnisn", "niveau-2", "interopérabilité", "objets-interoperabilite"]
+related: ["CAP-10", "CAP-11", "CMP-23", "ABB-ECHANGE-MEDIATION", "COMP-HOMOLOGATION-INTEROPERABILITE"]
 ---
 
-# Partie II : Capacités nationales requises
+# Partie II : Objets d'interopérabilité requis
 
-Les capacités suivantes opérationnalisent les principes du CNISN.
+Les objets suivants opérationnalisent les principes du CNISN en décrivant les blocs d'architecture, patterns, exigences, contrats, preuves et données de référence nécessaires à l'interopérabilité nationale.
 
-Elles ne nomment aucun produit ou standard.
+Ce chapitre ne définit pas de nouvelles capacités nationales : les capacités canoniques restent les `CAP-*` du CAESN.
 
-Ce catalogue référence les 16 capacités. Le texte de référence de chaque capacité vit dans le référentiel : `referentiel/capacites/cap-int-XX.md`.
+Le texte de référence de chaque objet vit dans le référentiel cible sous `04_architecture-repository/`. Les anciennes fiches CNISN sont conservées temporairement comme sources legacy et ne sont plus rendues comme objets actifs dans ce chapitre.
 
-## Catalogue des capacités
+## Catalogue des objets d'interopérabilité
 
-Les 16 capacités sont regroupées en huit familles de réponse, calquées sur les réponses architecturales de l'ARTSN (couches 3 à 6, axes et extensions transfrontalière et intersectorielle de la cartographie cible : voir annexe B).
+Les objets d'interopérabilité requis sont regroupés en huit familles de réponse, calquées sur les réponses architecturales de l'ARTSN (couches 3 à 6, axes et extensions transfrontalière et intersectorielle de la cartographie cible : voir annexe B).
 
-| Famille | Capacités |
+| Famille | Objets d'interopérabilité requis |
 |---|---|
-| 1. Référentiels et identités | CAP-INT-01, CAP-INT-02, CAP-INT-04, CAP-INT-05 |
-| 2. Échange, médiation et contractualisation | CAP-INT-03, CAP-INT-06 |
-| 3. Données analytiques et exposition | CAP-INT-07 |
-| 4. Confiance, sécurité et autorisation | CAP-INT-08, CAP-INT-09, CAP-INT-10 |
-| 5. Qualité et conformité | CAP-INT-11, CAP-INT-12 |
-| 6. Interopérabilité transfrontalière | CAP-INT-13 |
-| 7. Échanges intersectoriels One Health | CAP-INT-14 |
-| 8. Logistique et chaîne d'approvisionnement | CAP-INT-15, CAP-INT-16 |
+| 1. Référentiels et identités | ABB-IDENTITE-BENEFICIAIRE, ABB-REGISTRE-PROFESSIONNELS, ABB-REFERENTIEL-STRUCTURES-SERVICES, RD-STRUCTURES-SERVICES, ABB-SERVICE-TERMINOLOGIE, TERM-CODIFICATION-COMMUNE |
+| 2. Échange, médiation et contractualisation | ABB-ECHANGE-MEDIATION, PAT-ECHANGE-MEDIATION, ABB-CATALOGUE-CONTRATS, AC-CATALOGUE-SERVICES |
+| 3. Données analytiques et exposition | ABB-EXPOSITION-DONNEES-ANALYTIQUES |
+| 4. Confiance, sécurité et autorisation | ABB-CONFIANCE-AUTORISATION, ABB-GESTION-CONSENTEMENT, ABB-AUDIT-PROVENANCE |
+| 5. Qualité et conformité | ABB-RECONCILIATION-DONNEES, PAT-QUALITE-RECONCILIATION, COMP-HOMOLOGATION-INTEROPERABILITE, EVID-TESTS-INTEROPERABILITE |
+| 6. Interopérabilité transfrontalière | PART-ECHANGE-TRANSFRONTALIER, PAT-ECHANGE-INTERNATIONAL-IPS, REQ-TF-01 à REQ-TF-08 |
+| 7. Échanges intersectoriels One Health | PART-ONE-HEALTH, REQ-OH-01 à REQ-OH-07 |
+| 8. Logistique et chaîne d'approvisionnement | ABB-ECHANGE-LOGISTIQUE-LMIS, RD-DONNEES-ENVIRONNEMENTALES-CLIMAT |
 
-Chaque entrée liste les principes associés via le référentiel.
+Chaque entrée liste les principes associés via le référentiel et conserve la traçabilité par `legacy_id` dans sa fiche source.
 
 ## Famille 1 : Référentiels et identités
 
-<!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-01.md,referentiel/capacites/cap-int-02.md,referentiel/capacites/cap-int-04.md,referentiel/capacites/cap-int-05.md -->
+<!-- BEGIN:GENERATED source=04_architecture-repository/05_building-blocks/abb/abb-identite-beneficiaire.md,04_architecture-repository/05_building-blocks/abb/abb-registre-professionnels.md,04_architecture-repository/05_building-blocks/abb/abb-referentiel-structures-services.md,04_architecture-repository/02_architecture-elements/data/reference-data/rd-structures-services.md,04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md,04_architecture-repository/02_architecture-elements/data/terminologies/term-codification-commune.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 **Statut : candidate**
 
-### Résolution d’identité du bénéficiaire
+### Résolution d'identité du bénéficiaire
 
 #### Finalité
 
-Permettre aux systèmes autorisés de relier plusieurs représentations d’un même bénéficiaire sans confondre :
+Permettre aux systèmes autorisés de relier plusieurs représentations d'un même bénéficiaire sans confondre :
 
 - identité fondationnelle ;
 - identité fonctionnelle santé ;
@@ -57,68 +57,31 @@ Permettre aux systèmes autorisés de relier plusieurs représentations d’un m
 #### Services attendus
 
 - recherche démographique ;
-- résolution d’identifiants ;
+- résolution d'identifiants ;
 - rapprochement ;
 - détection de doublons ;
 - fusion contrôlée ;
 - séparation après erreur ;
 - gestion des identités temporaires ;
 - conservation de la provenance ;
-- vérification auprès de l’autorité fondationnelle lorsque l’accès est autorisé.
+- vérification auprès de l'autorité fondationnelle lorsque l'accès est autorisé.
 
 #### Principes associés
 
-- [P-INT-01: Autorité désignée](../../referentiel/principes/p-int-01.md)
-- [P-INT-02: Résolution contre l’autorité](../../referentiel/principes/p-int-02.md)
-- [P-INT-03: Copies locales non autoritatives](../../referentiel/principes/p-int-03.md)
-- [P-INT-04: Historisation des références](../../referentiel/principes/p-int-04.md)
-- [P-INT-14: Base d’autorisation explicite](../../referentiel/principes/p-int-14.md)
-- [P-INT-15: Limitation à la finalité](../../referentiel/principes/p-int-15.md)
-- [P-INT-16: Résidence et non-réplication](../../referentiel/principes/p-int-16.md)
-- [P-INT-17: Minimisation](../../referentiel/principes/p-int-17.md)
-- [P-INT-18: Traçabilité différenciée](../../referentiel/principes/p-int-18.md)
+- [P-INT-01: Autorité désignée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-01.md)
+- [P-INT-02: Résolution contre l'autorité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-02.md)
+- [P-INT-03: Copies locales non autoritatives](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-03.md)
+- [P-INT-04: Historisation des références](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-04.md)
+- [P-INT-14: Base d'autorisation explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-14.md)
+- [P-INT-15: Limitation à la finalité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-15.md)
+- [P-INT-16: Résidence et non-réplication](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-16.md)
+- [P-INT-17: Minimisation](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-17.md)
+- [P-INT-18: Traçabilité différenciée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-18.md)
 
-**Statut : candidate**
+#### Rattachement
 
-### Registre et résolution des professionnels de santé
-
-#### Finalité
-
-Permettre de déterminer l’identité professionnelle, la qualification, le statut et l’affectation d’un professionnel ou travailleur de santé.
-
-#### Services attendus
-
-- recherche d’un professionnel ;
-- vérification de la profession ;
-- vérification de la qualification ;
-- vérification de la licence ;
-- vérification du statut d’exercice ;
-- consultation de l’affectation ;
-- consultation des habilitations ;
-- historisation des changements.
-
-#### Principe de séparation
-
-Cette capacité est distincte :
-
-- de l’authentification ;
-- du registre des bénéficiaires ;
-- de l’identité fondationnelle ;
-- de la décision d’autorisation.
-
-#### Principes associés
-
-- [P-INT-01: Autorité désignée](../../referentiel/principes/p-int-01.md)
-- [P-INT-02: Résolution contre l’autorité](../../referentiel/principes/p-int-02.md)
-- [P-INT-03: Copies locales non autoritatives](../../referentiel/principes/p-int-03.md)
-- [P-INT-04: Historisation des références](../../referentiel/principes/p-int-04.md)
-- [P-INT-14: Base d’autorisation explicite](../../referentiel/principes/p-int-14.md)
-- [P-INT-15: Limitation à la finalité](../../referentiel/principes/p-int-15.md)
-
-#### Articulation avec la paie et les habilitations
-
-- La résolution des professionnels alimente la **gestion de la paie** ([CAP-09: Gestion des ressources humaines en santé](../../referentiel/capabilites/cap-09.md)) et les **habilitations** ([CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md)) ; elle ne gère pas la rémunération.
-- Échange financier associé : [PT-18: Échange de réclamations et paiements](../../03_ptisn/03_profils/pt-18-echange-reclamations-paiements.md).
+- [Partition transverse - Identité](../../04_architecture-repository/01_partitions/transverses/part-transverse-identite.md)
+- [ART-4A: Résolution d'identité](../../04_architecture-repository/04_patterns/artsn-rules/art-4a.md)
 
 **Statut : candidate**
 
@@ -134,13 +97,13 @@ Fournir une autorité commune sur :
 - les services de santé ;
 - les rattachements ;
 - les localisations ;
-- les périodes d’activité.
+- les périodes d'activité.
 
 #### Services attendus
 
 - recherche ;
 - consultation ;
-- résolution d’identifiants ;
+- résolution d'identifiants ;
 - historique ;
 - synchronisation ;
 - publication ;
@@ -149,10 +112,130 @@ Fournir une autorité commune sur :
 
 #### Principes associés
 
-- [P-INT-01: Autorité désignée](../../referentiel/principes/p-int-01.md)
-- [P-INT-02: Résolution contre l’autorité](../../referentiel/principes/p-int-02.md)
-- [P-INT-03: Copies locales non autoritatives](../../referentiel/principes/p-int-03.md)
-- [P-INT-04: Historisation des références](../../referentiel/principes/p-int-04.md)
+- [P-INT-01: Autorité désignée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-01.md)
+- [P-INT-02: Résolution contre l'autorité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-02.md)
+- [P-INT-03: Copies locales non autoritatives](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-03.md)
+- [P-INT-04: Historisation des références](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-04.md)
+
+#### Rattachement
+
+- [Données de référence des structures et services](../../04_architecture-repository/02_architecture-elements/data/reference-data/rd-structures-services.md)
+- [Partition transverse - Données référentielles](../../04_architecture-repository/01_partitions/transverses/part-transverse-donnees-referentielles.md)
+
+**Statut : candidate**
+
+### Registre et résolution des professionnels de santé
+
+#### Finalité
+
+Permettre de déterminer l'identité professionnelle, la qualification, le statut et l'affectation d'un professionnel ou travailleur de santé.
+
+#### Services attendus
+
+- recherche d'un professionnel ;
+- vérification de la profession ;
+- vérification de la qualification ;
+- vérification de la licence ;
+- vérification du statut d'exercice ;
+- consultation de l'affectation ;
+- consultation des habilitations ;
+- historisation des changements.
+
+#### Principe de séparation
+
+Ce bloc d'architecture est distinct :
+
+- de l'authentification ;
+- du registre des bénéficiaires ;
+- de l'identité fondationnelle ;
+- de la décision d'autorisation.
+
+#### Principes associés
+
+- [P-INT-01: Autorité désignée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-01.md)
+- [P-INT-02: Résolution contre l'autorité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-02.md)
+- [P-INT-03: Copies locales non autoritatives](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-03.md)
+- [P-INT-04: Historisation des références](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-04.md)
+- [P-INT-14: Base d'autorisation explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-14.md)
+- [P-INT-15: Limitation à la finalité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-15.md)
+
+#### Articulation avec la paie et les habilitations
+
+- La résolution des professionnels alimente la [CAP-09: Gestion des ressources humaines en santé](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-09.md) et les habilitations rattachées à la [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md) ; elle ne gère pas la rémunération.
+- Échange financier associé : [PT-18: Échange de réclamations et paiements](../../03_ptisn/03_profils/pt-18-echange-reclamations-paiements.md).
+
+**Statut : candidate**
+
+### Service de terminologie et codification communes
+
+#### Finalité
+
+Permettre aux systèmes de partager des définitions et codifications cohérentes.
+
+#### Services attendus
+
+- consultation de systèmes de codes ;
+- consultation d'ensembles de valeurs ;
+- validation de codes ;
+- expansion ;
+- recherche de concepts ;
+- traduction ;
+- publication de correspondances ;
+- gestion des versions ;
+- dépréciation.
+
+#### Principes associés
+
+- [P-INT-01: Autorité désignée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-01.md)
+- [P-INT-02: Résolution contre l'autorité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-02.md)
+- [P-INT-03: Copies locales non autoritatives](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-03.md)
+- [P-INT-04: Historisation des références](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-04.md)
+- [P-INT-05: Contrat explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-05.md)
+- [P-INT-06: Versionnement et compatibilité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-06.md)
+
+#### Rattachement
+
+- [Terminologie de codification commune](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-codification-commune.md)
+- [STD-0007: SNOMED CT](../05_standards/std-0007-snomed-ct.md)
+
+**Statut : candidate**
+
+### Données de référence des structures et services
+
+#### Finalité
+
+Fournir une autorité commune sur :
+
+- les formations sanitaires ;
+- les structures communautaires ;
+- les laboratoires ;
+- les services de santé ;
+- les rattachements ;
+- les localisations ;
+- les périodes d'activité.
+
+#### Services attendus
+
+- recherche ;
+- consultation ;
+- résolution d'identifiants ;
+- historique ;
+- synchronisation ;
+- publication ;
+- gestion des correspondances ;
+- vérification de validité.
+
+#### Principes associés
+
+- [P-INT-01: Autorité désignée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-01.md)
+- [P-INT-02: Résolution contre l'autorité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-02.md)
+- [P-INT-03: Copies locales non autoritatives](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-03.md)
+- [P-INT-04: Historisation des références](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-04.md)
+
+#### Rattachement
+
+- [ABB référentiel des structures et services](../../04_architecture-repository/05_building-blocks/abb/abb-referentiel-structures-services.md)
+- [DO-23](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-23.md)
 
 **Statut : candidate**
 
@@ -165,7 +248,7 @@ Permettre aux systèmes de partager des définitions et codifications cohérente
 #### Services attendus
 
 - consultation de systèmes de codes ;
-- consultation d’ensembles de valeurs ;
+- consultation d'ensembles de valeurs ;
 - validation de codes ;
 - expansion ;
 - recherche de concepts ;
@@ -176,19 +259,69 @@ Permettre aux systèmes de partager des définitions et codifications cohérente
 
 #### Principes associés
 
-- [P-INT-01: Autorité désignée](../../referentiel/principes/p-int-01.md)
-- [P-INT-02: Résolution contre l’autorité](../../referentiel/principes/p-int-02.md)
-- [P-INT-03: Copies locales non autoritatives](../../referentiel/principes/p-int-03.md)
-- [P-INT-04: Historisation des références](../../referentiel/principes/p-int-04.md)
-- [P-INT-05: Contrat explicite](../../referentiel/principes/p-int-05.md)
-- [P-INT-06: Versionnement et compatibilité](../../referentiel/principes/p-int-06.md)
+- [P-INT-01: Autorité désignée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-01.md)
+- [P-INT-02: Résolution contre l'autorité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-02.md)
+- [P-INT-03: Copies locales non autoritatives](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-03.md)
+- [P-INT-04: Historisation des références](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-04.md)
+- [P-INT-05: Contrat explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-05.md)
+- [P-INT-06: Versionnement et compatibilité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-06.md)
+
+#### Rattachement
+
+- [ABB service de terminologie](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md)
+- [STD-0007: SNOMED CT](../05_standards/std-0007-snomed-ct.md)
 
 <!-- END:GENERATED -->
 
 ## Famille 2 : Échange, médiation et contractualisation
 
-<!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-03.md,referentiel/capacites/cap-int-06.md -->
+<!-- BEGIN:GENERATED source=04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md,04_architecture-repository/04_patterns/pat-echange-mediation.md,04_architecture-repository/05_building-blocks/abb/abb-catalogue-contrats.md,04_architecture-repository/06_governance/architecture-contracts/ac-catalogue-services.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
+
+**Statut : candidate**
+
+### Catalogue des services et registre des contrats
+
+#### Finalité
+
+Rendre visibles, gouvernables et réutilisables les services et interfaces du secteur.
+
+#### Services attendus
+
+#### Catalogue des services
+
+- enregistrement des services ;
+- publication des propriétaires ;
+- publication des consommateurs ;
+- publication des niveaux de service ;
+- publication des conditions d'accès ;
+- publication du statut.
+
+#### Registre des contrats
+
+- publication des interfaces ;
+- publication des événements ;
+- publication des schémas ;
+- versionnement ;
+- compatibilité ;
+- dépréciation ;
+- gestion des extensions nationales.
+
+#### Principes associés
+
+- [P-INT-05: Contrat explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-05.md)
+- [P-INT-06: Versionnement et compatibilité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-06.md)
+- [P-INT-07: Responsabilité de la donnée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-07.md)
+- [P-INT-08: Publication au catalogue des services](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-08.md)
+- [P-INT-09: Publication des contrats](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-09.md)
+- [P-INT-23: Conformité fondée sur des preuves](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-23.md)
+- [P-INT-24: Applicabilité déclarée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-24.md)
+- [P-INT-25: Réévaluation continue](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-25.md)
+
+#### Rattachement
+
+- [Contrat d'architecture du catalogue de services](../../04_architecture-repository/06_governance/architecture-contracts/ac-catalogue-services.md)
+- [Partition transverse - Interopérabilité](../../04_architecture-repository/01_partitions/transverses/part-transverse-interoperabilite.md)
 
 **Statut : candidate**
 
@@ -215,33 +348,38 @@ Permettre aux systèmes de transmettre, recevoir, transformer et acheminer des d
 
 #### Principes associés
 
-- [P-INT-05: Contrat explicite](../../referentiel/principes/p-int-05.md)
-- [P-INT-06: Versionnement et compatibilité](../../referentiel/principes/p-int-06.md)
-- [P-INT-07: Responsabilité de la donnée](../../referentiel/principes/p-int-07.md)
-- [P-INT-08: Publication au catalogue des services](../../referentiel/principes/p-int-08.md)
-- [P-INT-09: Publication des contrats](../../referentiel/principes/p-int-09.md)
-- [P-INT-10: Accord préalable](../../referentiel/principes/p-int-10.md)
-- [P-INT-11: Arbitrage des conflits d’autorité](../../referentiel/principes/p-int-11.md)
-- [P-INT-12: Dérogation explicite](../../referentiel/principes/p-int-12.md)
-- [P-INT-13: Dérogation d’urgence](../../referentiel/principes/p-int-13.md)
-- [P-INT-18: Traçabilité différenciée](../../referentiel/principes/p-int-18.md)
-- [P-INT-19: Neutralité technologique](../../referentiel/principes/p-int-19.md)
-- [P-INT-20: Portabilité et réversibilité](../../referentiel/principes/p-int-20.md)
-- [P-INT-21: Progressivité](../../referentiel/principes/p-int-21.md)
-- [P-INT-22: Fonctionnement en connectivité contrainte](../../referentiel/principes/p-int-22.md)
-- [P-INT-23: Conformité fondée sur des preuves](../../referentiel/principes/p-int-23.md)
-- [P-INT-24: Applicabilité déclarée](../../referentiel/principes/p-int-24.md)
-- [P-INT-25: Réévaluation continue](../../referentiel/principes/p-int-25.md)
+- [P-INT-05: Contrat explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-05.md)
+- [P-INT-06: Versionnement et compatibilité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-06.md)
+- [P-INT-07: Responsabilité de la donnée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-07.md)
+- [P-INT-08: Publication au catalogue des services](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-08.md)
+- [P-INT-09: Publication des contrats](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-09.md)
+- [P-INT-10: Accord préalable](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-10.md)
+- [P-INT-11: Arbitrage des conflits d'autorité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-11.md)
+- [P-INT-12: Dérogation explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-12.md)
+- [P-INT-13: Dérogation d'urgence](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-13.md)
+- [P-INT-18: Traçabilité différenciée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-18.md)
+- [P-INT-19: Neutralité technologique](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-19.md)
+- [P-INT-20: Portabilité et réversibilité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-20.md)
+- [P-INT-21: Progressivité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-21.md)
+- [P-INT-22: Fonctionnement en connectivité contrainte](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-22.md)
+- [P-INT-23: Conformité fondée sur des preuves](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-23.md)
+- [P-INT-24: Applicabilité déclarée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-24.md)
+- [P-INT-25: Réévaluation continue](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-25.md)
+
+#### Rattachement
+
+- [Pattern d'échange et médiation](../../04_architecture-repository/04_patterns/pat-echange-mediation.md)
+- [Partition transverse - Interopérabilité](../../04_architecture-repository/01_partitions/transverses/part-transverse-interoperabilite.md)
 
 **Statut : candidate**
 
-### Catalogue des services et registre des contrats
+### Contrat d'architecture du catalogue de services
 
 #### Finalité
 
 Rendre visibles, gouvernables et réutilisables les services et interfaces du secteur.
 
-#### Services attendus
+#### Clauses attendues
 
 #### Catalogue des services
 
@@ -249,7 +387,7 @@ Rendre visibles, gouvernables et réutilisables les services et interfaces du se
 - publication des propriétaires ;
 - publication des consommateurs ;
 - publication des niveaux de service ;
-- publication des conditions d’accès ;
+- publication des conditions d'accès ;
 - publication du statut.
 
 #### Registre des contrats
@@ -264,20 +402,58 @@ Rendre visibles, gouvernables et réutilisables les services et interfaces du se
 
 #### Principes associés
 
-- [P-INT-05: Contrat explicite](../../referentiel/principes/p-int-05.md)
-- [P-INT-06: Versionnement et compatibilité](../../referentiel/principes/p-int-06.md)
-- [P-INT-07: Responsabilité de la donnée](../../referentiel/principes/p-int-07.md)
-- [P-INT-08: Publication au catalogue des services](../../referentiel/principes/p-int-08.md)
-- [P-INT-09: Publication des contrats](../../referentiel/principes/p-int-09.md)
-- [P-INT-23: Conformité fondée sur des preuves](../../referentiel/principes/p-int-23.md)
-- [P-INT-24: Applicabilité déclarée](../../referentiel/principes/p-int-24.md)
-- [P-INT-25: Réévaluation continue](../../referentiel/principes/p-int-25.md)
+- [P-INT-05: Contrat explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-05.md)
+- [P-INT-06: Versionnement et compatibilité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-06.md)
+- [P-INT-08: Publication au catalogue des services](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-08.md)
+- [P-INT-09: Publication des contrats](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-09.md)
+
+#### Rattachement
+
+- [ABB catalogue des services et registre des contrats](../../04_architecture-repository/05_building-blocks/abb/abb-catalogue-contrats.md)
+
+**Statut : candidate**
+
+### Pattern d'échange et médiation
+
+#### Finalité
+
+Structurer la transmission, la réception, la transformation et l'acheminement de données ou commandes entre systèmes de manière gouvernée.
+
+#### Mécanismes attendus
+
+- réception ;
+- publication ;
+- interrogation ;
+- notification ;
+- synchronisation ;
+- routage ;
+- transformation ;
+- validation ;
+- gestion des erreurs ;
+- corrélation ;
+- réconciliation ;
+- intégration sortante.
+
+#### Principes associés
+
+- [P-INT-05: Contrat explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-05.md)
+- [P-INT-06: Versionnement et compatibilité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-06.md)
+- [P-INT-07: Responsabilité de la donnée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-07.md)
+- [P-INT-08: Publication au catalogue des services](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-08.md)
+- [P-INT-09: Publication des contrats](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-09.md)
+- [P-INT-10: Accord préalable](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-10.md)
+- [P-INT-18: Traçabilité différenciée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-18.md)
+
+#### Rattachement
+
+- [ABB échange et médiation](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md)
+- [Partition transverse - Interopérabilité](../../04_architecture-repository/01_partitions/transverses/part-transverse-interoperabilite.md)
 
 <!-- END:GENERATED -->
 
 ## Famille 3 : Données analytiques et exposition
 
-<!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-07.md -->
+<!-- BEGIN:GENERATED source=04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 **Statut : candidate**
@@ -286,11 +462,11 @@ Rendre visibles, gouvernables et réutilisables les services et interfaces du se
 
 #### Finalité
 
-Permettre l’accès gouverné aux données et indicateurs destinés à la décision, sans imposer une charge excessive aux systèmes opérationnels.
+Permettre l'accès gouverné aux données et indicateurs destinés à la décision, sans imposer une charge excessive aux systèmes opérationnels.
 
 #### Services attendus
 
-- publication d’indicateurs ;
+- publication d'indicateurs ;
 - consultation de données agrégées ;
 - publication de métadonnées analytiques ;
 - accès aux modèles validés ;
@@ -301,96 +477,38 @@ Permettre l’accès gouverné aux données et indicateurs destinés à la déci
 
 #### Limite de portée
 
-Cette capacité concerne l’exposition et l’accès interopérables.
+Cet ABB concerne l'exposition et l'accès interopérables.
 
-La conception interne des entrepôts, projections et modèles analytiques relève de l’ARTSN et des architectures propres aux initiatives.
+La conception interne des entrepôts, projections et modèles analytiques relève de l'ARTSN et des architectures propres aux initiatives.
 
 #### Principes associés
 
-- [P-INT-05: Contrat explicite](../../referentiel/principes/p-int-05.md)
-- [P-INT-06: Versionnement et compatibilité](../../referentiel/principes/p-int-06.md)
-- [P-INT-07: Responsabilité de la donnée](../../referentiel/principes/p-int-07.md)
-- [P-INT-08: Publication au catalogue des services](../../referentiel/principes/p-int-08.md)
-- [P-INT-09: Publication des contrats](../../referentiel/principes/p-int-09.md)
-- [P-INT-17: Minimisation](../../referentiel/principes/p-int-17.md)
-- [P-INT-18: Traçabilité différenciée](../../referentiel/principes/p-int-18.md)
-- [P-INT-19: Neutralité technologique](../../referentiel/principes/p-int-19.md)
-- [P-INT-20: Portabilité et réversibilité](../../referentiel/principes/p-int-20.md)
-- [P-INT-21: Progressivité](../../referentiel/principes/p-int-21.md)
-- [P-INT-22: Fonctionnement en connectivité contrainte](../../referentiel/principes/p-int-22.md)
-- [P-INT-23: Conformité fondée sur des preuves](../../referentiel/principes/p-int-23.md)
-- [P-INT-24: Applicabilité déclarée](../../referentiel/principes/p-int-24.md)
-- [P-INT-25: Réévaluation continue](../../referentiel/principes/p-int-25.md)
+- [P-INT-05: Contrat explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-05.md)
+- [P-INT-06: Versionnement et compatibilité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-06.md)
+- [P-INT-07: Responsabilité de la donnée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-07.md)
+- [P-INT-08: Publication au catalogue des services](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-08.md)
+- [P-INT-09: Publication des contrats](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-09.md)
+- [P-INT-17: Minimisation](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-17.md)
+- [P-INT-18: Traçabilité différenciée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-18.md)
+- [P-INT-19: Neutralité technologique](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-19.md)
+- [P-INT-20: Portabilité et réversibilité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-20.md)
+- [P-INT-21: Progressivité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-21.md)
+- [P-INT-22: Fonctionnement en connectivité contrainte](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-22.md)
+- [P-INT-23: Conformité fondée sur des preuves](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-23.md)
+- [P-INT-24: Applicabilité déclarée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-24.md)
+- [P-INT-25: Réévaluation continue](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-25.md)
+
+#### Rattachement
+
+- [Partition transverse - Analytics et pilotage](../../04_architecture-repository/01_partitions/transverses/part-transverse-analytics-pilotage.md)
+- [ART-6: Analytique et restitution](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md)
 
 <!-- END:GENERATED -->
 
 ## Famille 4 : Confiance, sécurité et autorisation
 
-<!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-08.md,referentiel/capacites/cap-int-09.md,referentiel/capacites/cap-int-10.md -->
+<!-- BEGIN:GENERATED source=04_architecture-repository/05_building-blocks/abb/abb-confiance-autorisation.md,04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md,04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
-
-**Statut : candidate**
-
-### Confiance, sécurité et autorisation
-
-#### Finalité
-
-Fournir les mécanismes nécessaires à l’identification, l’authentification, l’autorisation et la protection des échanges.
-
-#### Services attendus
-
-- authentification des utilisateurs ;
-- authentification des systèmes ;
-- identité des organisations ;
-- gestion des rôles ;
-- gestion des attributs ;
-- décision d’autorisation ;
-- gestion des comptes techniques ;
-- révocation ;
-- gestion des secrets et certificats ;
-- journalisation ;
-- gestion des incidents.
-
-#### Principes associés
-
-- [P-INT-14: Base d’autorisation explicite](../../referentiel/principes/p-int-14.md)
-- [P-INT-15: Limitation à la finalité](../../referentiel/principes/p-int-15.md)
-- [P-INT-16: Résidence et non-réplication](../../referentiel/principes/p-int-16.md)
-- [P-INT-17: Minimisation](../../referentiel/principes/p-int-17.md)
-- [P-INT-18: Traçabilité différenciée](../../referentiel/principes/p-int-18.md)
-- [P-INT-19: Neutralité technologique](../../referentiel/principes/p-int-19.md)
-- [P-INT-20: Portabilité et réversibilité](../../referentiel/principes/p-int-20.md)
-
-**Statut : candidate**
-
-### Gestion des consentements et bases d’autorisation
-
-#### Finalité
-
-Permettre de déterminer et de prouver la base autorisant un traitement ou un accès.
-
-#### Services attendus
-
-- enregistrement d’une base d’autorisation ;
-- consultation ;
-- vérification ;
-- gestion des finalités ;
-- gestion des périodes ;
-- retrait lorsque applicable ;
-- preuve ;
-- application des politiques ;
-- traçabilité des décisions.
-
-#### Principe
-
-Le consentement est une base possible parmi plusieurs bases légales ou fonctionnelles.
-
-#### Principes associés
-
-- [P-INT-14: Base d’autorisation explicite](../../referentiel/principes/p-int-14.md)
-- [P-INT-15: Limitation à la finalité](../../referentiel/principes/p-int-15.md)
-- [P-INT-16: Résidence et non-réplication](../../referentiel/principes/p-int-16.md)
-- [P-INT-17: Minimisation](../../referentiel/principes/p-int-17.md)
 
 **Statut : candidate**
 
@@ -400,7 +518,7 @@ Le consentement est une base possible parmi plusieurs bases légales ou fonction
 
 Permettre de comprendre :
 
-- l’origine d’une donnée ;
+- l'origine d'une donnée ;
 - les transformations appliquées ;
 - les accès effectués ;
 - les décisions prises ;
@@ -418,21 +536,99 @@ Permettre de comprendre :
 
 #### Principes associés
 
-- [P-INT-07: Responsabilité de la donnée](../../referentiel/principes/p-int-07.md)
-- [P-INT-17: Minimisation](../../referentiel/principes/p-int-17.md)
-- [P-INT-18: Traçabilité différenciée](../../referentiel/principes/p-int-18.md)
-- [P-INT-23: Conformité fondée sur des preuves](../../referentiel/principes/p-int-23.md)
+- [P-INT-07: Responsabilité de la donnée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-07.md)
+- [P-INT-17: Minimisation](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-17.md)
+- [P-INT-18: Traçabilité différenciée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-18.md)
+- [P-INT-23: Conformité fondée sur des preuves](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-23.md)
+
+#### Rattachement
+
+- [Partition transverse - Sécurité et confiance](../../04_architecture-repository/01_partitions/transverses/part-transverse-securite-confiance.md)
+- [ART-9: Garanties transactionnelles fortes](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md)
+
+**Statut : candidate**
+
+### Confiance, sécurité et autorisation
+
+#### Finalité
+
+Fournir les mécanismes nécessaires à l'identification, l'authentification, l'autorisation et la protection des échanges.
+
+#### Services attendus
+
+- authentification des utilisateurs ;
+- authentification des systèmes ;
+- identité des organisations ;
+- gestion des rôles ;
+- gestion des attributs ;
+- décision d'autorisation ;
+- gestion des comptes techniques ;
+- révocation ;
+- gestion des secrets et certificats ;
+- journalisation ;
+- gestion des incidents.
+
+#### Principes associés
+
+- [P-INT-14: Base d'autorisation explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-14.md)
+- [P-INT-15: Limitation à la finalité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-15.md)
+- [P-INT-16: Résidence et non-réplication](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-16.md)
+- [P-INT-17: Minimisation](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-17.md)
+- [P-INT-18: Traçabilité différenciée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-18.md)
+- [P-INT-19: Neutralité technologique](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-19.md)
+- [P-INT-20: Portabilité et réversibilité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-20.md)
+
+#### Rattachement
+
+- [Partition transverse - Sécurité et confiance](../../04_architecture-repository/01_partitions/transverses/part-transverse-securite-confiance.md)
+- [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
+
+**Statut : candidate**
+
+### Gestion des consentements et bases d'autorisation
+
+#### Finalité
+
+Permettre de déterminer et de prouver la base autorisant un traitement ou un accès.
+
+#### Services attendus
+
+- enregistrement d'une base d'autorisation ;
+- consultation ;
+- vérification ;
+- gestion des finalités ;
+- gestion des périodes ;
+- retrait lorsque applicable ;
+- preuve ;
+- application des politiques ;
+- traçabilité des décisions.
+
+#### Principe
+
+Le consentement est une base possible parmi plusieurs bases légales ou fonctionnelles.
+
+#### Principes associés
+
+- [P-INT-14: Base d'autorisation explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-14.md)
+- [P-INT-15: Limitation à la finalité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-15.md)
+- [P-INT-16: Résidence et non-réplication](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-16.md)
+- [P-INT-17: Minimisation](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-17.md)
+
+#### Rattachement
+
+- [Partition transverse - Sécurité et confiance](../../04_architecture-repository/01_partitions/transverses/part-transverse-securite-confiance.md)
+- [ART-4B: Bases d'autorisation](../../04_architecture-repository/04_patterns/artsn-rules/art-4b.md)
 
 <!-- END:GENERATED -->
 
 ## Famille 5 : Qualité et conformité
 
-<!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-11.md,referentiel/capacites/cap-int-12.md -->
+<!-- BEGIN:GENERATED source=04_architecture-repository/05_building-blocks/abb/abb-reconciliation-donnees.md,04_architecture-repository/04_patterns/pat-qualite-reconciliation.md,04_architecture-repository/06_governance/compliance/comp-homologation-interoperabilite.md,04_architecture-repository/06_governance/evidence/evid-tests-interoperabilite.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 **Statut : candidate**
 
-### Qualité et réconciliation
+### Qualité et réconciliation des données
 
 #### Finalité
 
@@ -448,32 +644,37 @@ Permettre de détecter et traiter les divergences entre systèmes, référentiel
 - détection des doublons ;
 - suivi des anomalies ;
 - déclenchement de corrections ;
-- publication d’indicateurs de qualité.
+- publication d'indicateurs de qualité.
 
 #### Principes associés
 
-- [P-INT-01: Autorité désignée](../../referentiel/principes/p-int-01.md)
-- [P-INT-02: Résolution contre l’autorité](../../referentiel/principes/p-int-02.md)
-- [P-INT-03: Copies locales non autoritatives](../../referentiel/principes/p-int-03.md)
-- [P-INT-04: Historisation des références](../../referentiel/principes/p-int-04.md)
-- [P-INT-05: Contrat explicite](../../referentiel/principes/p-int-05.md)
-- [P-INT-06: Versionnement et compatibilité](../../referentiel/principes/p-int-06.md)
-- [P-INT-07: Responsabilité de la donnée](../../referentiel/principes/p-int-07.md)
-- [P-INT-08: Publication au catalogue des services](../../referentiel/principes/p-int-08.md)
-- [P-INT-09: Publication des contrats](../../referentiel/principes/p-int-09.md)
-- [P-INT-23: Conformité fondée sur des preuves](../../referentiel/principes/p-int-23.md)
-- [P-INT-24: Applicabilité déclarée](../../referentiel/principes/p-int-24.md)
-- [P-INT-25: Réévaluation continue](../../referentiel/principes/p-int-25.md)
+- [P-INT-01: Autorité désignée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-01.md)
+- [P-INT-02: Résolution contre l'autorité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-02.md)
+- [P-INT-03: Copies locales non autoritatives](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-03.md)
+- [P-INT-04: Historisation des références](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-04.md)
+- [P-INT-05: Contrat explicite](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-05.md)
+- [P-INT-06: Versionnement et compatibilité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-06.md)
+- [P-INT-07: Responsabilité de la donnée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-07.md)
+- [P-INT-08: Publication au catalogue des services](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-08.md)
+- [P-INT-09: Publication des contrats](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-09.md)
+- [P-INT-23: Conformité fondée sur des preuves](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-23.md)
+- [P-INT-24: Applicabilité déclarée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-24.md)
+- [P-INT-25: Réévaluation continue](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-25.md)
+
+#### Rattachement
+
+- [Pattern qualité et réconciliation](../../04_architecture-repository/04_patterns/pat-qualite-reconciliation.md)
+- [Partition transverse - Interopérabilité](../../04_architecture-repository/01_partitions/transverses/part-transverse-interoperabilite.md)
 
 **Statut : candidate**
 
-### Conformité et tests d’interopérabilité
+### Homologation d'interopérabilité
 
 #### Finalité
 
-Permettre de vérifier objectivement qu’un système respecte les contrats et profils applicables.
+Permettre de vérifier objectivement qu'un système respecte les contrats et profils applicables.
 
-#### Services attendus
+#### Contrôles attendus
 
 - validation des contrats ;
 - tests automatisés ;
@@ -488,50 +689,96 @@ Permettre de vérifier objectivement qu’un système respecte les contrats et p
 
 #### Principes associés
 
-- [P-INT-19: Neutralité technologique](../../referentiel/principes/p-int-19.md)
-- [P-INT-20: Portabilité et réversibilité](../../referentiel/principes/p-int-20.md)
-- [P-INT-21: Progressivité](../../referentiel/principes/p-int-21.md)
-- [P-INT-22: Fonctionnement en connectivité contrainte](../../referentiel/principes/p-int-22.md)
-- [P-INT-23: Conformité fondée sur des preuves](../../referentiel/principes/p-int-23.md)
-- [P-INT-24: Applicabilité déclarée](../../referentiel/principes/p-int-24.md)
-- [P-INT-25: Réévaluation continue](../../referentiel/principes/p-int-25.md)
+- [P-INT-19: Neutralité technologique](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-19.md)
+- [P-INT-20: Portabilité et réversibilité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-20.md)
+- [P-INT-21: Progressivité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-21.md)
+- [P-INT-22: Fonctionnement en connectivité contrainte](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-22.md)
+- [P-INT-23: Conformité fondée sur des preuves](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-23.md)
+- [P-INT-24: Applicabilité déclarée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-24.md)
+- [P-INT-25: Réévaluation continue](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-25.md)
 
 #### Réponse nationale
 
-La conformité ne se traduit pas par un service exposé mais par un **processus d’homologation** : cadre CNISN Partie IV, fondation F.4 (rattachement aux capacités) et dispositif CNASN. Les tests associés (validation de contrats, jeux de données, remédiation) sont portés par les profils et outils PTISN.
+La conformité ne se traduit pas par un service exposé mais par un processus d'homologation : cadre CNISN Partie IV, fondation F.4 et dispositif CNASN. Les tests associés sont portés par les profils et outils PTISN.
+
+**Statut : candidate**
+
+### Preuves de tests d'interopérabilité
+
+#### Finalité
+
+Conserver les éléments probants qui démontrent qu'un système respecte les contrats et profils applicables.
+
+#### Preuves attendues
+
+- résultats de validation des contrats ;
+- rapports de tests automatisés ;
+- rapports de tests de sécurité ;
+- rapports de compatibilité ;
+- résultats de performance ;
+- jeux de données de référence utilisés ;
+- déclaration de conformité ;
+- suivi de remédiation.
+
+#### Rattachement
+
+- [Règle de conformité d'homologation](../../04_architecture-repository/06_governance/compliance/comp-homologation-interoperabilite.md)
+
+**Statut : candidate**
+
+### Pattern qualité et réconciliation
+
+#### Finalité
+
+Organiser la détection et le traitement des divergences entre systèmes, référentiels et projections.
+
+#### Mécanismes attendus
+
+- validation de contrats ;
+- contrôle des métadonnées ;
+- détection des messages manquants ;
+- comparaison de versions ;
+- comparaison de valeurs ;
+- détection des doublons ;
+- suivi des anomalies ;
+- déclenchement de corrections ;
+- publication d'indicateurs de qualité.
+
+#### Principes associés
+
+- [P-INT-01: Autorité désignée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-01.md)
+- [P-INT-02: Résolution contre l'autorité](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-02.md)
+- [P-INT-03: Copies locales non autoritatives](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-03.md)
+- [P-INT-04: Historisation des références](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-04.md)
+- [P-INT-23: Conformité fondée sur des preuves](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-23.md)
+- [P-INT-24: Applicabilité déclarée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-24.md)
+- [P-INT-25: Réévaluation continue](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-25.md)
+
+#### Rattachement
+
+- [ABB qualité et réconciliation](../../04_architecture-repository/05_building-blocks/abb/abb-reconciliation-donnees.md)
 
 <!-- END:GENERATED -->
 
 ## Famille 6 : Interopérabilité transfrontalière
 
-<!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-13.md -->
+<!-- BEGIN:GENERATED source=04_architecture-repository/04_patterns/pat-echange-international-ips.md,04_architecture-repository/03_requirements/req-tf-01.md,04_architecture-repository/03_requirements/req-tf-02.md,04_architecture-repository/03_requirements/req-tf-03.md,04_architecture-repository/03_requirements/req-tf-04.md,04_architecture-repository/03_requirements/req-tf-05.md,04_architecture-repository/03_requirements/req-tf-06.md,04_architecture-repository/03_requirements/req-tf-07.md,04_architecture-repository/03_requirements/req-tf-08.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 **Statut : candidate**
 
-### Interopérabilité transfrontalière et confiance internationale
+### Pattern d'échange international IPS
 
 #### Finalité
 
-Permettre les échanges de données et de services de santé au-delà des frontières nationales tout en garantissant la confiance mutuelle, la souveraineté des données et la conformité aux cadres internationaux.
+Encadrer les échanges de données et de services de santé au-delà des frontières nationales tout en garantissant la confiance mutuelle, la souveraineté des données et la conformité aux cadres internationaux.
 
-#### Contexte
-
-Madagascar est membre de l'Union Africaine (UA), de la Commission Économique des Nations Unies pour l'Afrique (CEUA) et candidat à l'adhésion à la Communauté de Développement de l'Afrique Australe (SADC) et à l'Organisation Internationale de la Francophonie (OIF). Les flux de données de santé transfrontaliers concernent notamment :
-
-- la surveillance épidémique régionale (OMS AFRO, CDC Africa) ;
-- les déplacements de patients entre pays de la SADC ;
-- les programmes de santé multilatéraux (OMS, UNICEF, Gavi) ;
-- la recherche clinique internationale ;
-- les échanges d'actes médicaux pour patients transfrontaliers ;
-- la logistique pharmaceutique transfrontalière.
-
-#### Services attendus
+#### Mécanismes attendus
 
 #### Gouvernance des échanges transfrontaliers
 
-- identification des flux autorisés vers/lors de l'international ;
-- définition des données échangeables vs. les données souveraines ;
+- identification des flux autorisés vers ou depuis l'international ;
+- définition des données échangeables et des données souveraines ;
 - enregistrement des accords de confiance mutuelle ;
 - gestion des autorisations d'accès pour les acteurs internationaux ;
 - arbitrage des conflits de juridiction.
@@ -544,172 +791,223 @@ Madagascar est membre de l'Union Africaine (UA), de la Commission Économique de
 - publication de la politique de confiance nationale ;
 - révocation en cas d'incident.
 
-#### Identification transfrontalière
-
-- résolution d'identité pour patients étrangers sur le territoire national ;
-- mapping des identifiants nationaux vers les standards internationaux (OID, HL7) ;
-- gestion des identifiants temporaires pour patients de passage ;
-- prévention des confusions d'identité transfrontalières.
-
-#### Consentement et autorisation pour échanges internationaux
-
-- gestion du consentement spécifique aux échanges internationaux ;
-- vérification de la base légale pour chaque flux sortant ;
-- minimisation stricte des données exportées ;
-- pseudonymisation pour les flux de recherche.
-
-#### Résidence et souveraineté
-
-- contrôle de sortie des données sensibles ;
-- journalisation de tous les flux transfrontaliers ;
-- audit des accès internationaux ;
-- alertes en cas d'export non autorisé ;
-- rapport périodique aux autorités compétentes.
-
-#### Échange de résumé patient (IPS)
+#### Échange de résumé patient
 
 - production et réception de résumés internationaux du patient (HL7 FHIR IPS) ;
-- mapping des données nationales vers les sections IPS (allergies, médicaments, problèmes, identité) ;
+- mapping des données nationales vers les sections IPS ;
 - validation de conformité des IPS émis et reçus ;
-- minimisation stricte : seules les sections nécessaires à la finalité clinique sont incluses ;
+- minimisation stricte des sections incluses ;
 - conservation des IPS échangés selon la politique de rétention nationale.
-
-#### Exigences de conformité
-
-| Exigence | Description |
-|----------|-------------|
-| **EXG-TF-01** | Tout flux transfrontalier doit être couvert par un accord explicite ([P-INT-10: Accord préalable](../../referentiel/principes/p-int-10.md)) |
-| **EXG-TF-02** | Le consentement du patient doit être obtenu pour tout échange sortant sauf obligation légale |
-| **EXG-TF-03** | Seules les données minimisées nécessaires à la finalité peuvent être exportées |
-| **EXG-TF-04** | Tous les flux transfrontaliers doivent être journalisés et auditable |
-| **EXG-TF-05** | Le GDHCN doit être le référentiel de confiance pour les échanges internationaux |
-| **EXG-TF-06** | Les données souveraines (identité nationale complète, données génomiques) ne quittent pas le territoire sauf dérogation |
-| **EXG-TF-07** | Les systèmes partenaires étrangers doivent démontrer leur conformité avant tout accès |
-| **EXG-TF-08** | Tout résumé patient échangé (IPS) doit être conforme au profil HL7 FHIR IPS et contenir au minimum les sections ALGY, MDCA, PROB, IDOI |
-
-#### Principes associés
-
-- [P-INT-01: Autorité désignée](../../referentiel/principes/p-int-01.md) (Autorité désignée) : l'autorité nationale reste l'autorité pour les données malagasy, même lors d'échanges ;
-- [P-INT-05: Contrat explicite](../../referentiel/principes/p-int-05.md) (Contrat explicite) : tout flux transfrontalier nécessite un accord bilatéral ou multilatéral ;
-- [P-INT-10: Accord préalable](../../referentiel/principes/p-int-10.md) (Accord préalable) : accord obligatoire avant tout échange avec une institution étrangère ;
-- [P-INT-14: Base d’autorisation explicite](../../referentiel/principes/p-int-14.md) (Base d'autorisation explicite) : base légale documentée pour chaque type de flux sortant ;
-- [P-INT-16: Résidence et non-réplication](../../referentiel/principes/p-int-16.md) (Résidence) : les contraintes de résidence s'appliquent aux flux transfrontaliers ;
-- [P-INT-17: Minimisation](../../referentiel/principes/p-int-17.md) (Minimisation) : minimisation renforcée pour les échanges internationaux ;
-- [P-INT-19: Neutralité technologique](../../referentiel/principes/p-int-19.md) (Neutralité technologique) : le GDHCN est un cadre de confiance, pas un produit.
 
 #### Rattachement
 
-- [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../referentiel/capabilites/cap-15.md) (Sécurité, contrôle d'accès et résidence)
-- [CAP-18: Coordination intersectorielle (One Health)](../../referentiel/capabilites/cap-18.md) (Coordination intersectorielle — One Health)
-- [ART-7](../../referentiel/chapitres/art-7.md) (Sécurité, contrôle d'accès et résidence)
-- [ART-0](../../referentiel/chapitres/art-0.md) (Accords de partage inter-institutionnels)
-- [PT-14](../../03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md) (Profil technique transfrontalier — IPS)
+- [Partition échange transfrontalier](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md)
+- [ART-7: Sécurité, contrôle d'accès et résidence de la donnée](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
+
+**Statut : candidate**
+
+### Tout flux transfrontalier doit être couvert par un accord explicite.
+
+#### Énoncé
+
+Tout flux transfrontalier doit être couvert par un accord explicite.
+
+#### Rattachement
+
+- [Partition échange transfrontalier](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md)
+
+**Statut : candidate**
+
+### Le consentement du patient doit être obtenu pour tout échange sortant sauf obligation légale.
+
+#### Énoncé
+
+Le consentement du patient doit être obtenu pour tout échange sortant sauf obligation légale.
+
+#### Rattachement
+
+- [Partition échange transfrontalier](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md)
+
+**Statut : candidate**
+
+### Seules les données minimisées nécessaires à la finalité peuvent être exportées.
+
+#### Énoncé
+
+Seules les données minimisées nécessaires à la finalité peuvent être exportées.
+
+#### Rattachement
+
+- [Partition échange transfrontalier](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md)
+
+**Statut : candidate**
+
+### Tous les flux transfrontaliers doivent être journalisés et auditables.
+
+#### Énoncé
+
+Tous les flux transfrontaliers doivent être journalisés et auditables.
+
+#### Rattachement
+
+- [Partition échange transfrontalier](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md)
+
+**Statut : candidate**
+
+### Le GDHCN doit être le référentiel de confiance pour les échanges internationaux.
+
+#### Énoncé
+
+Le GDHCN doit être le référentiel de confiance pour les échanges internationaux.
+
+#### Rattachement
+
+- [Partition échange transfrontalier](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md)
+
+**Statut : candidate**
+
+### Les données souveraines ne quittent pas le territoire sauf dérogation.
+
+#### Énoncé
+
+Les données souveraines ne quittent pas le territoire sauf dérogation.
+
+#### Rattachement
+
+- [Partition échange transfrontalier](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md)
+
+**Statut : candidate**
+
+### Les systèmes partenaires étrangers doivent démontrer leur conformité avant tout accès.
+
+#### Énoncé
+
+Les systèmes partenaires étrangers doivent démontrer leur conformité avant tout accès.
+
+#### Rattachement
+
+- [Partition échange transfrontalier](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md)
+
+**Statut : candidate**
+
+### Tout résumé patient échangé doit être conforme au profil HL7 FHIR IPS et contenir les sections minimales requises.
+
+#### Énoncé
+
+Tout résumé patient échangé doit être conforme au profil HL7 FHIR IPS et contenir les sections minimales requises.
+
+#### Rattachement
+
+- [Partition échange transfrontalier](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md)
 
 <!-- END:GENERATED -->
 
 ## Famille 7 : Échanges intersectoriels One Health
 
-<!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-14.md -->
+<!-- BEGIN:GENERATED source=04_architecture-repository/03_requirements/req-oh-01.md,04_architecture-repository/03_requirements/req-oh-02.md,04_architecture-repository/03_requirements/req-oh-03.md,04_architecture-repository/03_requirements/req-oh-04.md,04_architecture-repository/03_requirements/req-oh-05.md,04_architecture-repository/03_requirements/req-oh-06.md,04_architecture-repository/03_requirements/req-oh-07.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 **Statut : candidate**
 
-### Échanges intersectoriels One Health
+### Tout échange intersectoriel doit être couvert par un accord explicite entre ministères.
 
-#### Finalité
+#### Énoncé
 
-Permettre les échanges de données entre le secteur santé et les autres secteurs de l'État (agriculture/élevage, environnement, intérieur, météorologie) dans le cadre de l'approche One Health, tout en préservant l'étanchéité juridique et éthique des bases de chaque institution.
-
-#### Contexte
-
-L'approche One Health reconnaît l'interdépendance entre la santé humaine, la santé animale et l'environnement. À Madagascar, les enjeux incluent :
-
-- **Zoonoses** : peste, rage, fièvre hémorragique de Rift Valley, brucellose, tuberculose bovine
-- **Surveillance environnementale** : déforestation, climat, pollution, eau
-- **Sécurité alimentaire** : contamination alimentaire, résistance aux antimicrobiens
-- **Épidémies émergentes** : détection précoce à l'interface homme-animal-environnement
-
-Les secteurs concernés :
-
-| Secteur | Ministère | Données produites |
-|---------|-----------|-------------------|
-| Santé humaine | MSP | Cas cliniques, laboratoire, mortalité |
-| Élevage | MINAE | Cheptels, maladies animales, vaccinations animales |
-| Environnement | MEEF | Climat, pollution, biodiversité, eau |
-| Intérieur | MINUST | Administrations territoriales, populations |
-| Météo | DGM | Données climatiques, prévisions |
-| Agriculture | MINAE | Productions agricoles, intrants |
-
-#### Services attendus
-
-#### Gouvernance des échanges intersectoriels
-
-- enregistrement des accords de partage entre ministères ;
-- définition des flux autorisés par secteur et par finalité ;
-- gestion des bases légales par secteur (secret médical, secret professionnel vétérinal, secret environnemental) ;
-- arbitrage des conflits d'autorité entre secteurs ;
-- suivi de la conformité des échanges.
-
-#### Médiation intersectorielle
-
-- transformation sémantique entre taxonomies sectorielles (CIM-11 pour santé humaine, OIE pour animaux, classification environnementale) ;
-- normalisation des dimensions communes (espace, temps, géographie) ;
-- corrélation des signaux faibles entre secteurs ;
-- détection de clusters intersectoriels.
-
-#### Cloisonnement et étanchéité
-
-- séparation stricte des identités entre secteurs (pas de croisement d'identités humaines et animales) ;
-- agrégation croisée sans désanonymisation ;
-- journalisation distincte par secteur ;
-- contrôle d'accès différencié par rôle sectoriel.
-
-#### Alertes et coordination
-
-- déclenchement d'alertes intersectorielles ;
-- notification aux autorités compétentes de chaque secteur ;
-- coordination des plans de riposte ;
-- retour d'expérience post-crise.
-
-#### Exigences de conformité
-
-| Exigence | Description |
-|----------|-------------|
-| **EXG-OH-01** | Tout échange intersectoriel doit être couvert par un accord explicite entre ministères ([P-INT-10: Accord préalable](../../referentiel/principes/p-int-10.md)) |
-| **EXG-OH-02** | Les identités humaines ne doivent jamais être croisées avec les identités animales |
-| **EXG-OH-03** | Les données agrégées croisées doivent être irréversiblement désanonymisées |
-| **EXG-OH-04** | Chaque secteur conserve la souveraineté sur ses données source |
-| **EXG-OH-05** | Les dimensions d'agrégation communes (espace, temps, géographie) doivent être normalisées |
-| **EXG-OH-06** | Tous les échanges intersectoriels doivent être journalisés et auditables |
-| **EXG-OH-07** | Le cadre Tripartite Plus (OMS–WOAH–FAO–PNUE) doit être respecté pour les flux internationaux |
-
-#### Principes associés
-
-- [P-INT-01: Autorité désignée](../../referentiel/principes/p-int-01.md) (Autorité désignée) : chaque secteur reste l'autorité de ses données ;
-- [P-INT-05: Contrat explicite](../../referentiel/principes/p-int-05.md) (Contrat explicite) : tout flux intersectoriel nécessite un accord ;
-- [P-INT-10: Accord préalable](../../referentiel/principes/p-int-10.md) (Accord préalable) : accord obligatoire entre ministères ;
-- [P-INT-14: Base d’autorisation explicite](../../referentiel/principes/p-int-14.md) (Base d'autorisation explicite) : base légale documentée par secteur ;
-- [P-INT-16: Résidence et non-réplication](../../referentiel/principes/p-int-16.md) (Résidence) : les données restent dans leur secteur d'origine ;
-- [P-INT-22: Fonctionnement en connectivité contrainte](../../referentiel/principes/p-int-22.md) (Connectivité contrainte) : les secteurs ont des niveaux de connectivité variables.
+Tout échange intersectoriel doit être couvert par un accord explicite entre ministères.
 
 #### Rattachement
 
-- [CAP-18: Coordination intersectorielle (One Health)](../../referentiel/capabilites/cap-18.md) (Coordination intersectorielle — One Health)
-- [CAP-05: Surveillance épidémiologique, alerte, investigation et riposte](../../referentiel/capabilites/cap-05.md) (Surveillance épidémiologique)
-- [ART-11](../../referentiel/chapitres/art-11.md) (Coordination intersectorielle)
-- [ART-0](../../referentiel/chapitres/art-0.md) (Accords de partage inter-institutionnels)
-- [ART-4D](../../referentiel/chapitres/art-4d.md) (Référentiel géospatial)
-- [F.2](../../referentiel/fondations/f-2.md) (Souveraineté intersectorielle)
-- [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md) (Cloisonnement inter-institutionnel One Health)
+- [Partition One Health](../../04_architecture-repository/01_partitions/sectorielles/part-one-health.md)
+- [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données](../../04_architecture-repository/03_requirements/enf-4.md)
+
+**Statut : candidate**
+
+### Les identités humaines ne doivent jamais être croisées avec les identités animales.
+
+#### Énoncé
+
+Les identités humaines ne doivent jamais être croisées avec les identités animales.
+
+#### Rattachement
+
+- [Partition One Health](../../04_architecture-repository/01_partitions/sectorielles/part-one-health.md)
+- [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données](../../04_architecture-repository/03_requirements/enf-4.md)
+
+**Statut : candidate**
+
+### Les données agrégées croisées doivent être irréversiblement anonymisées.
+
+#### Énoncé
+
+Les données agrégées croisées doivent être irréversiblement anonymisées.
+
+#### Rattachement
+
+- [Partition One Health](../../04_architecture-repository/01_partitions/sectorielles/part-one-health.md)
+- [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données](../../04_architecture-repository/03_requirements/enf-4.md)
+
+**Statut : candidate**
+
+### Chaque secteur conserve la souveraineté sur ses données source.
+
+#### Énoncé
+
+Chaque secteur conserve la souveraineté sur ses données source.
+
+#### Rattachement
+
+- [Partition One Health](../../04_architecture-repository/01_partitions/sectorielles/part-one-health.md)
+- [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données](../../04_architecture-repository/03_requirements/enf-4.md)
+
+**Statut : candidate**
+
+### Les dimensions d'agrégation communes doivent être normalisées.
+
+#### Énoncé
+
+Les dimensions d'agrégation communes doivent être normalisées.
+
+#### Rattachement
+
+- [Partition One Health](../../04_architecture-repository/01_partitions/sectorielles/part-one-health.md)
+- [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données](../../04_architecture-repository/03_requirements/enf-4.md)
+
+**Statut : candidate**
+
+### Tous les échanges intersectoriels doivent être journalisés et auditables.
+
+#### Énoncé
+
+Tous les échanges intersectoriels doivent être journalisés et auditables.
+
+#### Rattachement
+
+- [Partition One Health](../../04_architecture-repository/01_partitions/sectorielles/part-one-health.md)
+- [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données](../../04_architecture-repository/03_requirements/enf-4.md)
+
+**Statut : candidate**
+
+### Le cadre Tripartite Plus doit être respecté pour les flux internationaux.
+
+#### Énoncé
+
+Le cadre Tripartite Plus doit être respecté pour les flux internationaux.
+
+#### Rattachement
+
+- [Partition One Health](../../04_architecture-repository/01_partitions/sectorielles/part-one-health.md)
+- [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données](../../04_architecture-repository/03_requirements/enf-4.md)
 
 <!-- END:GENERATED -->
 
-<!-- BEGIN:GENERATED source=referentiel/capacites/cap-int-15.md,referentiel/capacites/cap-int-16.md -->
+## Famille 8 : Logistique et chaîne d'approvisionnement
+
+<!-- BEGIN:GENERATED source=04_architecture-repository/05_building-blocks/abb/abb-echange-logistique-lmis.md,04_architecture-repository/02_architecture-elements/data/reference-data/rd-donnees-environnementales-climat.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 **Statut : candidate**
 
-### Échange et traçabilité de la chaîne d'approvisionnement sanitaire
+### Échange logistique LMIS
 
 #### Finalité
 
@@ -721,26 +1019,22 @@ Permettre l'interopérabilité des données de la chaîne d'approvisionnement sa
 - remontée des niveaux de stock par établissement ;
 - traçabilité des lots et des mouvements (réception, transfert, distribution) ;
 - alerte de rupture et de péremption ;
-- corrélation stock → consommation → épidémiologie.
+- corrélation stock vers consommation vers épidémiologie.
 
 #### Principe de séparation
 
-Cette capacité est distincte de la gestion logistique applicative (LMIS métier) ; elle normalise l'échange et la traçabilité inter-initatives, sans remplacer le système de gestion des stocks.
+Ce bloc normalise l'échange et la traçabilité inter-initiatives. Il ne remplace pas le système métier de gestion des stocks.
 
 #### Principes associés
 
-- [P-INT-03: Copies locales non autoritatives](../../referentiel/principes/p-int-03.md)
-- [P-INT-07: Responsabilité de la donnée](../../referentiel/principes/p-int-07.md)
-- [P-INT-18: Traçabilité différenciée](../../referentiel/principes/p-int-18.md)
+- [P-INT-03: Copies locales non autoritatives](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-03.md)
+- [P-INT-07: Responsabilité de la donnée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-07.md)
+- [P-INT-18: Traçabilité différenciée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-18.md)
 
 #### Rattachement
 
-- [CAP-10: Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement](../../referentiel/capabilites/cap-10.md)
-- [CAP-11: Gestion des infrastructures, équipements et maintenance](../../referentiel/capabilites/cap-11.md)
-- [CMP-23: LMIS (logistique)](../../referentiel/composants/cmp-23.md)
-- [ART-10: Logistique](../../referentiel/chapitres/art-10.md)
-- [CAP-INT-03: Échange et médiation](../../referentiel/capacites/cap-int-03.md)
-- [CAP-INT-10: Provenance, audit et traçabilité](../../referentiel/capacites/cap-int-10.md)
+- [CMP-23: Chaîne logistique LMIS](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-23.md)
+- [ART-10: Logistique](../../04_architecture-repository/04_patterns/artsn-rules/art-10.md)
 
 **Statut : candidate**
 
@@ -748,33 +1042,30 @@ Cette capacité est distincte de la gestion logistique applicative (LMIS métier
 
 #### Finalité
 
-Permettre l'interopérabilité des données environnementales et climatiques utiles à la santé publique (climat, qualité de l'air/eau, biodiversité, évènements extrêmes) avec les secteurs environnement, agriculture, météorologie et intérieur, dans le cadre One Health.
+Permettre l'interopérabilité des données environnementales et climatiques utiles à la santé publique (climat, qualité de l'air ou de l'eau, biodiversité, événements extrêmes) avec les secteurs environnement, agriculture, météorologie et intérieur, dans le cadre One Health.
 
 #### Services attendus
 
 - référentiel spatio-temporel partagé (espace, temps, géographie) ;
 - échange des indicateurs environnementaux et climatiques normalisés ;
-- corrélation signaux environnementaux ↔ épidémiologiques ;
-- alertes conjointes santé–environnement–climat.
+- corrélation des signaux environnementaux et épidémiologiques ;
+- alertes conjointes santé, environnement et climat.
 
 #### Principe de séparation
 
-Cette capacité complète (sans la remplacer) la coordination intersectorielle One Health (CAP-INT-14) : elle porte spécifiquement la dimension environnementale/climatique normalisée comme capacité d'interopérabilité à part entière.
+Cet élément de données de référence porte spécifiquement la dimension environnementale et climatique normalisée. Il complète la coordination intersectorielle One Health sans créer de référentiel maître intersectoriel non gouverné.
 
 #### Principes associés
 
-- [P-INT-01: Autorité désignée](../../referentiel/principes/p-int-01.md)
-- [P-INT-10: Accord préalable](../../referentiel/principes/p-int-10.md)
-- [P-INT-16: Résidence et non-réplication](../../referentiel/principes/p-int-16.md)
+- [P-INT-01: Autorité désignée](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-01.md)
+- [P-INT-10: Accord préalable](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-10.md)
+- [P-INT-16: Résidence et non-réplication](../../04_architecture-repository/02_architecture-elements/motivation/principles/p-int-16.md)
 
 #### Rattachement
 
-- [CAP-18: Coordination intersectorielle (One Health)](../../referentiel/capabilites/cap-18.md)
-- [CAP-05: Surveillance épidémiologique, alerte, investigation et riposte](../../referentiel/capabilites/cap-05.md)
-- [CMP-05: Référentiel spatio-temporel](../../referentiel/composants/cmp-05.md)
-- [ART-4D: Référentiel géospatial et d'exploitation partagé](../../referentiel/chapitres/art-4d.md)
-- [CAP-INT-14: Échanges intersectoriels One Health](../../referentiel/capacites/cap-int-14.md)
-- [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../referentiel/exigences/enf-4.md)
+- [Partition One Health](../../04_architecture-repository/01_partitions/sectorielles/part-one-health.md)
+- [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données](../../04_architecture-repository/03_requirements/enf-4.md)
+- [ART-4D: Référentiel géospatial et d'exploitation partagé](../../04_architecture-repository/04_patterns/artsn-rules/art-4d.md)
 
 <!-- END:GENERATED -->
 

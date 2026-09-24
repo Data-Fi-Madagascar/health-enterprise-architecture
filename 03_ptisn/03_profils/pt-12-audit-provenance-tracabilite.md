@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-12"]
-related: ["CAP-INT-10", "F-1", "F-5", "F-6", "ART-3", "ART-7", "CMP-17"]
+related: ["ABB-AUDIT-PROVENANCE", "F-1", "F-5", "F-6", "ART-3", "ART-7", "CMP-17"]
 ---
 
 # Profil technique national
@@ -21,17 +21,17 @@ Le **profil PT-12 — Audit, provenance et traçabilité** définit les services
 
 Périmètre : événements métier, provenance des ressources, audit de sécurité, observabilité. Hors périmètre : les événements métier ne doivent pas être confondus avec les logs techniques.
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-[CAP-INT-10: Provenance, audit et traçabilité](../../referentiel/capacites/cap-int-10.md)
+[ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md)
 
 ## 3. Chapitres ART applicables
 
 - F.1
 - F.5
 - F.6
-- [ART-3: Historisation événementielle et profils de déploiement](../../referentiel/chapitres/art-3.md)
-- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../referentiel/chapitres/art-7.md)
+- [ART-3: Historisation événementielle et profils de déploiement](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md)
+- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
 
 ## 4. Acteurs (Actors)
 
@@ -40,7 +40,7 @@ Périmètre : événements métier, provenance des ressources, audit de sécurit
 - **Dépôt de provenance (Provenance Consumer/Repository)** — conserve l’origine et les transformations des ressources.
 - **Service d’observabilité (Observability Service)** — agrège logs, métriques, traces.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-10](../../referentiel/capacites/cap-int-10.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-AUDIT-PROVENANCE](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -52,7 +52,7 @@ Périmètre : événements métier, provenance des ressources, audit de sécurit
 
 R = requis ; O = optionnel.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-10](../../referentiel/capacites/cap-int-10.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-AUDIT-PROVENANCE](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md).
 ## 6. Content Modules
 
 - **HL7 FHIR AuditEvent** : activité à portée d’audit.
@@ -134,9 +134,9 @@ Conformité attestée par l’adoption de FHIR `AuditEvent` et `Provenance`, la 
 
 ## 12. Articulation avec les autres profils
 
-- [PT-10: confiance, authentification, autorisation](../../referentiel/profils/pt-10.md)
-- [PT-04: résolution d’identité bénéficiaire](../../referentiel/profils/pt-04.md)
-- [PT-09: analytique et exposition de données](../../referentiel/profils/pt-09.md)
+- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md)
+- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md)
+- [PT-09: analytique et exposition de données](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-09.md)
 
 ## 13. Limites et dépendances
 

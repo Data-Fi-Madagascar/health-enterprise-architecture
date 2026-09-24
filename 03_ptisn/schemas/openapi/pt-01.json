@@ -159,8 +159,12 @@
   "x-hea-version": "0.4",
   "x-hea-type": "profil-technique",
   "x-hea-maps-to": [
-    "CAP-INT-03",
-    "CAP-INT-12"
+    "ABB-ECHANGE-MEDIATION",
+    "COMP-HOMOLOGATION-INTEROPERABILITE",
+    "CAP-13",
+    "CAP-14",
+    "CAP-18",
+    "CAP-16"
   ],
   "x-hea-implements": [
     "ART-0",
@@ -171,8 +175,8 @@
   "x-hea-applies-to": [
     "CMP-06"
   ],
-  "x-hea-source": "referentiel/profils/pt-01.md",
+  "x-hea-source": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md",
   "x-hea-fhir-resources": [],
   "x-hea-data-objects": [],
-  "x-hea-file": "referentiel/profils/pt-01.md"
+  "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md"
 }

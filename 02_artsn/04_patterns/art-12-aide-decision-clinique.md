@@ -21,17 +21,17 @@ ART-12 : Aide à la décision clinique constitue un chapitre du **cadre normatif
 
 **Discipline de mise en œuvre.** Dès qu'une règle de décision (protocole, alerte, rappel) peut impacter la prise en charge, elle doit être exprimée comme un artefact de connaissance (guide de pratique, ensemble de règles, ordonnance informatisée) profilé selon l'ARTSN et lié aux terminologies (STD-0006, STD-0007). Cela garantit l'auditabilité, la réutilisabilité inter-initatives et la mise à jour centralisée sans re-déploiement des applications de point de service.
 
-- **Rattachement** : [CMP-08: Répertoire de données cliniques opérationnelles](../../referentiel/composants/cmp-08.md) (source de vérité clinique).
-- **Terminologie** : [CAP-INT-05: Terminologie et codification](../../referentiel/capacites/cap-int-05.md), [STD-0007: SNOMED CT](../../01_cnisn/05_standards/std-0007-snomed-ct.md).
+- **Rattachement** : [CMP-08: Répertoire de données cliniques opérationnelles](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-08.md) (source de vérité clinique).
+- **Terminologie** : [ABB-SERVICE-TERMINOLOGIE: Terminologie et codification](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md), [STD-0007: SNOMED CT](../../01_cnisn/05_standards/std-0007-snomed-ct.md).
 - **Référentiel cible** : HL7 CDS Hooks, FHIR Clinical Reasoning Module, guides de pratique profilés.
-- **Déduit selon** : [ART-6: Analytique et restitution](../../referentiel/chapitres/art-6.md) (restitution de la connaissance), [CAP-13: Système d'information sanitaire, données et recherche](../../referentiel/capabilites/cap-13.md).
+- **Déduit selon** : [ART-6: Analytique et restitution](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md) (restitution de la connaissance), [CAP-13: Système d'information sanitaire, données et recherche](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md).
 - **Statut : Proposition ouverte.**
 
 ## Profils PTISN qui implémentent ce chapitre
 
 Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
 
-- [PT-19 : Aide à la décision clinique (CDS)](../../referentiel/profils/pt-19.md)
+- [PT-19 : Aide à la décision clinique (CDS)](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-19.md)
 
 <!-- END:GENERATED -->
 ## Liens
@@ -42,6 +42,6 @@ Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre 
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`ART-12`** : Aide à la décision clinique (`referentiel/chapitres/art-12.md`)
+- **`ART-12`** : Aide à la décision clinique (`04_architecture-repository/04_patterns/artsn-rules/art-12.md`)
 - **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

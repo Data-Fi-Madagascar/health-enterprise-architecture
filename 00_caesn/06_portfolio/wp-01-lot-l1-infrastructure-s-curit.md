@@ -8,9 +8,10 @@ status: draft
 owner: Direction du Numérique en Santé
 version: "0.1"
 envelope: 00_caesn/06_portfolio/wp-01-lot-l1-infrastructure-s-curit.md
-realizes: ["CMP-26", "CMP-32", "CMP-39", "CAP-INT-01", "SRV-04"]
+realizes: ["CMP-26", "CMP-32", "CMP-39", "ABB-IDENTITE-BENEFICIAIRE", "SRV-04"]
+maps_to: ["CAP-01", "CAP-02", "CAP-04", "CAP-07", "CAP-14", "CAP-17"]
 contributes_to: ["PL-01"]
-related: ["CMP-26", "CMP-32", "CMP-39", "CAP-INT-01", "SRV-04", "PL-01"]
+related: ["CMP-26", "CMP-32", "CMP-39", "ABB-IDENTITE-BENEFICIAIRE", "SRV-04", "PL-01"]
 tags: ["artsn", "work-package", "wp-01", "lots"]
 ---
 
@@ -22,7 +23,7 @@ tags: ["artsn", "work-package", "wp-01", "lots"]
 
 Le lot L1 pose les fondations physiques et transversales de toute la plateforme : data centers nationaux, nœuds régionaux, réseau sécurisé, identité santé, sécurité (chiffrement, RBAC/ABAC, PKI, audit) et gouvernance de données. Sans ce socle, aucun service ne peut être déployé en confiance.
 
-Ce paquet de travail [réalise le composant d'infrastructure](../../referentiel/composants/cmp-26.md), le [composant de sécurité](../../referentiel/composants/cmp-32.md), le [composant de gouvernance](../../referentiel/composants/cmp-39.md), la [capacité « Socle technique et sécurité »](../../referentiel/capacites/cap-int-01.md) et le [service d'échange inter-systèmes](../../referentiel/services/srv-04.md). Il [contribue au plateau 1](../../referentiel/plateaux/pl-01.md).
+Ce paquet de travail [réalise le composant d'infrastructure](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-26.md), le [composant de sécurité](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-32.md), le [composant de gouvernance](../../04_architecture-repository/06_governance/registers/cmp-39.md), la [capacité « Socle technique et sécurité »](../../04_architecture-repository/05_building-blocks/abb/abb-identite-beneficiaire.md) et le [service d'échange inter-systèmes](../../04_architecture-repository/05_building-blocks/abb/legacy-services/srv-04.md). Il [contribue au plateau 1](../../04_architecture-repository/07_migration/plateaux/pl-01.md).
 
 ## Unité de temps
 
@@ -34,10 +35,10 @@ Il produit les livrables suivants : infrastructure opérationnelle, cadre de sé
 
 ## Objectifs
 
-Il réalise les éléments de l'architecture cible : [CMP-26](../../referentiel/composants/cmp-26.md), [CMP-32](../../referentiel/composants/cmp-32.md), [CMP-39](../../referentiel/composants/cmp-39.md), [CAP-INT-01](../../referentiel/capacites/cap-int-01.md), [SRV-04](../../referentiel/services/srv-04.md).
+Il réalise les éléments de l'architecture cible : [CMP-26](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-26.md), [CMP-32](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-32.md), [CMP-39](../../04_architecture-repository/06_governance/registers/cmp-39.md), [ABB-IDENTITE-BENEFICIAIRE](../../04_architecture-repository/05_building-blocks/abb/abb-identite-beneficiaire.md), [SRV-04](../../04_architecture-repository/05_building-blocks/abb/legacy-services/srv-04.md).
 
 ## Ressources assignées
 
-Il mobilise les rôles et acteurs suivants pour accomplir le travail : [ACT-06](../../referentiel/acteurs/act-06.md).
+Il mobilise les rôles et acteurs suivants pour accomplir le travail : [ACT-06](../../04_architecture-repository/02_architecture-elements/business/actors/act-06.md).
 
 <!-- END:GENERATED -->

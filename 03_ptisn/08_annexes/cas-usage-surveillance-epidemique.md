@@ -216,7 +216,7 @@ Centre de commande (CMP-02)    Entrepôt (CMP-03)
 |----------|--------|--------------|
 | ENF-5 : Coordination processus complexes | ART-8A | Riposte coordonnée multi-districts |
 | ART-5 : Qualité des données | ART-5 | Détection (seuils, complétude) |
-| PT-15 : One Health | CAP-INT-14 | Si zoonose (peste, rage, Fièvre de la Vallée du Rift) |
+| PT-15 : One Health | PART-ONE-HEALTH | Si zoonose (peste, rage, Fièvre de la Vallée du Rift) |
 
 ## Liens
 
@@ -236,4 +236,4 @@ Centre de commande (CMP-02)    Entrepôt (CMP-03)
 - **PT-10 : Confiance et autorisation** : Profil technique national (`03_ptisn/03_profils/pt-10-confiance-authentification-autorisation.md`)
 - **PT-12 : Audit et traçabilité** : Profil technique national (`03_ptisn/03_profils/pt-12-audit-provenance-traçabilité.md`)
 - **PT-15 : Surveillance One Health** : Surveillance One Health (`03_ptisn/03_profils/pt-15-surveillance-one-health.md`)
-- **ENF-5 : Coordination processus complexes** : Coordination des processus complexes décentralisés et asynchrones (`referentiel/exigences/enf-5.md`)
+- **ENF-5 : Coordination processus complexes** : Coordination des processus complexes décentralisés et asynchrones (`04_architecture-repository/03_requirements/enf-5.md`)

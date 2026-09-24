@@ -3,8 +3,10 @@
 import os
 import re
 
-ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-REF = os.path.join(ROOT, "referentiel", "composants")
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ARCH_REPOSITORY_DIR = "04_architecture-repository"
+ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
+COMPONENTS_DIR = os.path.join(ARCH_REPOSITORY_ROOT, "05_building-blocks", "abb", "legacy-components")
 
 CMP_VS = {
     "cmp-19": ["VS-01", "VS-04"],
@@ -31,7 +33,7 @@ CMP_VS = {
 
 count = 0
 for cmp_file, vs_list in CMP_VS.items():
-    path = os.path.join(REF, cmp_file + ".md")
+    path = os.path.join(COMPONENTS_DIR, cmp_file + ".md")
     if not os.path.exists(path):
         print("  SKIP %s.md introuvable" % cmp_file)
         continue

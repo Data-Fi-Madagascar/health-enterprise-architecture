@@ -60,7 +60,7 @@ Cette norme s'applique à :
 - **ARTSN** : ART-4 (Référentiels), ART-4A (Résolution d'identité), F.1 (Identité et registres)
 - **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/07_lots/index.md)
 - **PTISN** : PT-04 (Résolution d'identité)
-- **CNISN** : CAP-INT-01 (Résolution d'identité)
+- **CNISN** : ABB-IDENTITE-BENEFICIAIRE (Résolution d'identité)
 
 ## Contrôle et conformité
 

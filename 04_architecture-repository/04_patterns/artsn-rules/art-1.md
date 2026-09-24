@@ -1,0 +1,38 @@
+---
+domain: artsn-rules
+
+id: ART-1
+type: chapitre
+niveau: "3"
+title: Intégration et ingestion
+status: stable
+maturity_condition: "—"
+owner: DEPSI
+version: "0.0.1"
+envelope: 02_artsn/04_patterns/art-1-integration-ingestion.md
+maps_to: ["CAP-14"]
+implements: []
+applies_to: ["ENF-1"]
+related: []
+tags: ["artsn", "niveau-3", "chapitre", "ART-1"]
+---
+# Intégration et ingestion
+
+**Contenu normatif.** Tout flux entrant doit transiter par un point d’accès central unique qui garantit l’authentification forte de la source, la validation d’intégrité, la limitation de débit (*rate limiting*) et la distribution asynchrone des messages selon un contrat de livraison au moins une fois (*at-least-once*). Le système doit supporter nativement trois topologies d’ingestion : **Point à point**, **Diffusion** (*fan-out*) et **Interrogation fédérée** (*pull*).
+
+**Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (logiciels hospitaliers privés, applications mobiles terrain), cette discipline seule permet de protéger les serveurs centraux contre les saturations, les cyberattaques et les pertes de données induites par les micro-coupures réseau sans rompre le pipeline.
+
+- **Rattachement** : [CAP-14: Interopérabilité, référentiels nationaux et infrastructure numérique partagée](../../02_architecture-elements/strategy/capabilities/cap-14.md) (interopérabilité et infrastructure partagée).
+- **Déduit selon** : [ENF-1: Résilience à l'instabilité réseau](../../03_requirements/enf-1.md) (instabilité réseau).
+- **Statut : Stable.**
+
+## Profils PTISN qui implémentent ce chapitre
+
+Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
+
+- [PT-01 : Échange interinstitutionnel](../../05_building-blocks/sbb/legacy-profiles/pt-01.md)
+- [PT-02 : Médiation intra-secteur](../../05_building-blocks/sbb/legacy-profiles/pt-02.md)
+- [PT-03 : Catalogue des services et registre des contrats](../../05_building-blocks/sbb/legacy-profiles/pt-03.md)
+- [PT-08 : Échange de données agrégées](../../05_building-blocks/sbb/legacy-profiles/pt-08.md)
+- [PT-14 : Interopérabilité transfrontalière](../../05_building-blocks/sbb/legacy-profiles/pt-14.md)
+

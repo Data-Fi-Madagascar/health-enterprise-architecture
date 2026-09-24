@@ -223,7 +223,9 @@
   "x-hea-version": "0.4",
   "x-hea-type": "profil-technique",
   "x-hea-maps-to": [
-    "CAP-INT-11"
+    "ABB-RECONCILIATION-DONNEES",
+    "CAP-13",
+    "CAP-14"
   ],
   "x-hea-implements": [
     "ART-4",
@@ -233,12 +235,12 @@
   "x-hea-applies-to": [
     "CMP-05"
   ],
-  "x-hea-source": "referentiel/profils/pt-13.md",
+  "x-hea-source": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-13.md",
   "x-hea-fhir-resources": [
     "ContractValidationReport",
     "QualityIndicator",
     "ReconciliationReport"
   ],
   "x-hea-data-objects": [],
-  "x-hea-file": "referentiel/profils/pt-13.md"
+  "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-13.md"
 }

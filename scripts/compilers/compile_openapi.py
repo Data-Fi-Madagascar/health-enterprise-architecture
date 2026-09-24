@@ -4,7 +4,7 @@
 
 Générateur générique : dérive une spécification OpenAPI 3.0 pour chacun des
 19 profils techniques (PT-01..PT-19) depuis la source structurée
-`referentiel/profils/pt-*.md` (tableau des transactions, acteurs, standards,
+`04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-*.md` (tableau des transactions, acteurs, standards,
 content modules). Le générateur ne code rien en dur : chaque opération est
 déduite de la transaction (standard → méthode HTTP + chemin + schémas).
 
@@ -32,6 +32,10 @@ import sys
 import tempfile
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ARCH_REPOSITORY_DIR = "04_architecture-repository"
+ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
+LEGACY_PROFILES_DIR = os.path.join(ARCH_REPOSITORY_ROOT, "05_building-blocks",
+                                   "sbb", "legacy-profiles")
 OPENAPI_VERSION = "3.0.3"
 SCHEMAS_NS = "https://healmadagascar.mg/schemas"
 PAYLOADS_DIR = os.path.join(REPO_ROOT, "03_ptisn", "schemas", "payloads")
@@ -1209,7 +1213,7 @@ def generate_spec(profile_id, fm, body):
         "x-hea-maps-to": maps_to,
         "x-hea-implements": implements,
         "x-hea-applies-to": applies_to,
-        "x-hea-source": "referentiel/profils/%s.md" % profile_slug(profile_id),
+        "x-hea-source": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/%s.md" % profile_slug(profile_id),
     }
 
     # Générateurs spécialisés (X-Road, médiation, catalogue, orchestration)
@@ -1291,7 +1295,8 @@ def generate_spec(profile_id, fm, body):
 
 def collect_profiles():
     profiles = []
-    for path in sorted(glob.glob(os.path.join(REPO_ROOT, "referentiel", "profils", "pt-*.md"))):
+    profile_pattern = os.path.join(LEGACY_PROFILES_DIR, "pt-*.md")
+    for path in sorted(glob.glob(profile_pattern)):
         text = open(path, encoding="utf-8").read()
         fm = parse_frontmatter(text)
         if fm is None:

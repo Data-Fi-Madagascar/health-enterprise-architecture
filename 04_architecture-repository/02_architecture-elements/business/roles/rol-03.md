@@ -1,0 +1,27 @@
+---
+domain: roles
+id: ROL-03
+type: role
+title: Gestionnaire de données / registre
+status: draft
+owner: Ministère de la Santé Publique
+version: "0.1"
+envelope: 00_caesn/07_governance/roles/rol-03-gestionnaire-de-donn-es-registre.md
+assigned_to: ["ACT-06"]
+performs: ["PRC-09"]
+related: ["PRC-09", "ACT-06", "ABB-REFERENTIEL-STRUCTURES-SERVICES"]
+tags: ["caesn", "role", "rol-03", "governance"]
+---
+# Gestionnaire de données / registre
+
+Le gestionnaire de données administre les registres, les référentiels et la qualité des données. Il est [assigné à l'équipe technique DEPSI / SIS](../actors/act-06.md) et [exécute le processus de gouvernance des données](../processes/prc-09.md).
+
+Il contribue à la [capacité « Gouvernance des données »](../../../05_building-blocks/abb/abb-referentiel-structures-services.md) : sans lui, les référentiels (patients, personnels, produits, terminologies) ne seraient ni fiables ni réconciliés.
+
+## Affectation
+
+Assigné à l'acteur [ACT-06](../actors/act-06.md).
+
+## Réalisation
+
+Exécute le processus [PRC-09](../processes/prc-09.md).

@@ -1,159 +1,78 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Audit de chaîne PT → CAP-INT → CAP via SPARQL.
+"""Audit de chaîne PT/SBB -> objets TOGAF -> capabilités CAESN.
 
-Vérifie pour chaque profil technique (hea:Profil) :
-  1. hea:mapsTo contient au moins un hea:CapaciteInteroperabilite
-  2. Chaque CAP-INT ciblée a un hea:mapsTo vers un hea:Capabilite
-
-Vérifie pour chaque CAP-INT :
-  1. hea:mapsTo contient au moins un hea:Capabilite
+L'audit reprend la même logique que le validateur principal : chaque profil
+technique ou bloc de solution doit atteindre au moins une capabilité CAESN par
+les relations déclarées dans le frontmatter.
 """
 
 import os
 import sys
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from utils import sparql_rows, section, ok, warn, err, info
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(os.path.dirname(SCRIPT_DIR))
+
+sys.path.insert(0, SCRIPT_DIR)
+sys.path.insert(0, os.path.join(REPO_ROOT, "scripts"))
+from utils import section, ok, err, info
+from validate_ref import (
+    TYPE_CAPABILITE,
+    TYPE_PROFIL,
+    TYPE_SBB,
+    check_reachability_to_capability,
+    fm_field,
+    load_relation_graph,
+    parse_frontmatter,
+    reachable_capabilities,
+)
+
+
+def object_title(path):
+    text = open(path, encoding="utf-8").read()
+    fm, _body = parse_frontmatter(text)
+    return (fm_field(fm or "", "title") or "").strip().strip('"').strip("'")
 
 
 def audit_chaine():
-    section("AUDIT DE CHAÎNE — PT → CAP-INT → CAP")
+    section("AUDIT DE CHAINE - PT/SBB -> ABB/PAT/REQ/PART -> CAP")
 
-    profiles = sparql_rows("""
-        SELECT ?id ?title WHERE {
-            ?s rdf:type hea:Profil .
-            ?s hea:id ?id .
-            ?s hea:title ?title .
-        }
-        ORDER BY ?id
-    """)
-    cap_int = sparql_rows("""
-        SELECT ?id ?title WHERE {
-            ?s rdf:type hea:CapaciteInteroperabilite .
-            ?s hea:id ?id .
-            ?s hea:title ?title .
-        }
-        ORDER BY ?id
-    """)
-    capabilites = sparql_rows("""
-        SELECT ?id ?title WHERE {
-            ?s rdf:type hea:Capabilite .
-            ?s hea:id ?id .
-            ?s hea:title ?title .
-        }
-        ORDER BY ?id
-    """)
+    objects, _id_to_file, unresolved, legacy_relation_errors = load_relation_graph()
+    sources = sorted((oid, o) for oid, o in objects.items()
+                     if o.get("type") in (TYPE_PROFIL, TYPE_SBB))
+    capabilites = [o for o in objects.values() if o.get("type") == TYPE_CAPABILITE]
+    reachability_errors = check_reachability_to_capability(objects)
+    error_ids = {oid for _path, oid, _msg in reachability_errors}
 
-    info("Profils : %d | CAP-INT : %d | CAP : %d"
-         % (len(profiles), len(cap_int), len(capabilites)))
+    info("Sources PT/SBB : %d | CAP : %d" % (len(sources), len(capabilites)))
 
-    cap_int_ids = {r["id"] for r in cap_int}
-    cap_ids = {r["id"] for r in capabilites}
-
-    # --- Vérification des profils ---
-    section("Profils (PT → CAP-INT)")
-    pt_errors = 0
-
-    for prof in profiles:
-        pid = prof["id"]
-        title = prof["title"][:45]
-
-        # Quels CAP-INT ce profil cible ?
-        targets = sparql_rows("""
-            SELECT ?targetId WHERE {
-                ?s hea:id "%s" .
-                ?s hea:mapsTo ?t .
-                ?t hea:id ?targetId .
-                ?t rdf:type hea:CapaciteInteroperabilite .
-            }
-        """ % pid)
-
-        cap_targets = sparql_rows("""
-            SELECT ?targetId WHERE {
-                ?s hea:id "%s" .
-                ?s hea:mapsTo ?t .
-                ?t hea:id ?targetId .
-                ?t rdf:type hea:Capabilite .
-            }
-        """ % pid)
-
-        if not targets and not cap_targets:
-            err("%s — %s : AUCUN maps_to vers CAP-INT ou CAP" % (pid, title))
-            pt_errors += 1
-            continue
-
-        # Vérifier chaque CAP-INT ciblé
-        broken_chains = []
-        for t in targets:
-            ci_id = t["targetId"]
-            has_cap = sparql_rows("""
-                SELECT ?capId WHERE {
-                    ?ci hea:id "%s" .
-                    ?ci hea:mapsTo ?c .
-                    ?c hea:id ?capId .
-                    ?c rdf:type hea:Capabilite .
-                }
-            """ % ci_id)
-            if not has_cap:
-                broken_chains.append((ci_id, "pas de maps_to vers CAP"))
-
-        if broken_chains:
-            warn("%s — %s : chaîne partielle" % (pid, title))
-            for ci_id, reason in broken_chains:
-                warn("  → %s : %s" % (ci_id, reason))
+    for oid, o in sources:
+        title = object_title(o["file"])[:50]
+        caps = sorted(reachable_capabilities(objects, oid))
+        label = "%s - %s" % (oid, title) if title else oid
+        if caps:
+            ok("%s -> %s" % (label, ", ".join(caps)))
         else:
-            chain = []
-            for t in targets:
-                ci_id = t["targetId"]
-                cap_in_ci = sparql_rows("""
-                    SELECT ?capId WHERE {
-                        ?ci hea:id "%s" .
-                        ?ci hea:mapsTo ?c .
-                        ?c hea:id ?capId .
-                        ?c rdf:type hea:Capabilite .
-                    }
-                """ % ci_id)
-                caps = ",".join(r["capId"] for r in cap_in_ci)
-                chain.append("%s→%s" % (ci_id, caps))
-            ok("%s — %s : %s" % (pid, title, " | ".join(chain)))
+            err("%s : aucune capabilité CAESN atteignable" % label)
 
-    # --- Vérification des CAP-INT ---
-    section("CAP-INT (→ CAP)")
-    ci_errors = 0
+    if unresolved:
+        err("Relations non résolues : %d" % len(unresolved))
+        for f, source_id, target_id in unresolved[:30]:
+            err("  %s (%s) -> %s" % (os.path.relpath(f, REPO_ROOT), source_id, target_id))
 
-    for ci in cap_int:
-        ci_id = ci["id"]
-        title = ci["title"][:45]
-        cap_targets = sparql_rows("""
-            SELECT ?capId ?capTitle WHERE {
-                ?ci hea:id "%s" .
-                ?ci hea:mapsTo ?c .
-                ?c hea:id ?capId .
-                ?c hea:title ?capTitle .
-                ?c rdf:type hea:Capabilite .
-            }
-        """ % ci_id)
+    if legacy_relation_errors:
+        err("Relations vers anciens identifiants d'interopérabilité : %d"
+            % len(legacy_relation_errors))
+        for f, source_id, target_id in legacy_relation_errors[:30]:
+            err("  %s (%s) -> %s" % (os.path.relpath(f, REPO_ROOT), source_id, target_id))
 
-        if not cap_targets:
-            err("%s — %s : pas de maps_to vers CAP" % (ci_id, title))
-            ci_errors += 1
-        else:
-            labels = ["%s (%s)" % (r["capId"], r["capTitle"][:25]) for r in cap_targets]
-            ok("%s — %s → %s" % (ci_id, title, ", ".join(labels)))
-
-    # --- Résumé ---
-    total_errors = pt_errors + ci_errors
     print()
-    info("Profils conformes : %d / %d" % (len(profiles) - pt_errors, len(profiles)))
-    info("CAP-INT conformes : %d / %d" % (len(cap_int) - ci_errors, len(cap_int)))
-
-    if total_errors == 0:
-        ok("CHAÎNE COMPLÈTE — tous les profils aboutissent à une CAP")
+    if not error_ids and not unresolved and not legacy_relation_errors:
+        ok("CHAINE COMPLETE - toutes les sources PT/SBB atteignent une CAP")
     else:
-        err("ANOMALIES : %d erreurs" % total_errors)
+        err("ANOMALIES : %d source(s) sans portée CAP" % len(error_ids))
 
-    return total_errors == 0
+    return not error_ids and not unresolved and not legacy_relation_errors
 
 
 if __name__ == "__main__":

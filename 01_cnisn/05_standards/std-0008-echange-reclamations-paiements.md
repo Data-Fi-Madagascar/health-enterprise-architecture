@@ -43,7 +43,7 @@ Toute solution numérique échangeant des réclamations, de l'éligibilité ou d
 
 1. **Utiliser HL7 FHIR R4** pour les ressources `CoverageEligibilityRequest`, `CoverageEligibilityResponse`, `Claim`, `ClaimResponse` et `PaymentNotice` (profilées selon l'ARTSN) ;
 2. **Transmettre les flux via l'échange interinstitutionnel X-Road** (STD-0003, ADR-0001) en mode asynchrone ;
-3. **Identifier le bénéficiaire** selon la norme PIXm/PDQm (STD-0005) et le prestataire selon CAP-INT-02 ;
+3. **Identifier le bénéficiaire** selon la norme PIXm/PDQm (STD-0005) et le prestataire selon ABB-REGISTRE-PROFESSIONNELS ;
 4. **Coder les actes et diagnostics** selon les terminologies nationales (STD-0006, STD-0007) ;
 5. **Garantir la traçabilité financière** (imputation, statut de paiement) via `ClaimResponse` et `PaymentNotice` signés.
 
@@ -73,7 +73,7 @@ Lors de l'homologation, le Comité National vérifiera :
 |---------|--------------|
 | Format d'échange | Réclamations en FHIR R4 (`Claim`/`ClaimResponse`) |
 | Transport | Flux véhiculés par X-Road (STD-0003) |
-| Identification | Bénéficiaire (STD-0005) et prestataire (CAP-INT-02) résolus |
+| Identification | Bénéficiaire (STD-0005) et prestataire (ABB-REGISTRE-PROFESSIONNELS) résolus |
 | Terminologie | Actes/diagnostics codés (STD-0006 / STD-0007) |
 | Traçabilité | `PaymentNotice` signé et statut de paiement exposé |
 

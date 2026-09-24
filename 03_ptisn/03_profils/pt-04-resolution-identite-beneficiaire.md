@@ -7,7 +7,7 @@ status: draft
 last_reviewed: 2026-07-31
 owner: Équipes techniques des initiatives
 tags: ["ptisn", "niveau-4", "profils", "PT-04"]
-related: ["CAP-INT-01", "ART-4", "ART-4A", "ART-4B", "ART-7", "CMP-11"]
+related: ["ABB-IDENTITE-BENEFICIAIRE", "ART-4", "ART-4A", "ART-4B", "ART-7", "CMP-11"]
 ---
 
 # Profil technique national
@@ -21,16 +21,16 @@ Le **profil PT-04 — Résolution d’identité du bénéficiaire** définit le 
 
 Périmètre : recherche démographique, résolution et rapprochement d’identifiants, gestion des doublons et de la provenance. Hors périmètre : l’identité fondationnelle (CNIE), qui reste sous gouvernance interinstitutionnelle.
 
-## 2. Capacité CNISN
+## 2. Objet CNISN/TOGAF de référence
 
-[CAP-INT-01: Résolution d'identité du bénéficiaire](../../referentiel/capacites/cap-int-01.md)
+[ABB-IDENTITE-BENEFICIAIRE: Résolution d'identité du bénéficiaire](../../04_architecture-repository/05_building-blocks/abb/abb-identite-beneficiaire.md)
 
 ## 3. Chapitres ART applicables
 
-- [ART-4: référentiels](../../referentiel/chapitres/art-4.md)
+- [ART-4: référentiels](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
 - ART-4A — Résolution d’identité
 - ART-4B — bases d’autorisation
-- [ART-7: sécurité](../../referentiel/chapitres/art-7.md)
+- [ART-7: sécurité](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
 
 ## 4. Acteurs (Actors)
 
@@ -39,7 +39,7 @@ Périmètre : recherche démographique, résolution et rapprochement d’identif
 - **Gestionnaire de correspondance (Patient Identifier Cross-reference Manager)** — tient le golden record et la correspondance des identifiants.
 - **Fournisseur démographique (Patient Demographics Supplier)** — répond aux recherches démographiques.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-01](../../referentiel/capacites/cap-int-01.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-IDENTITE-BENEFICIAIRE](../../04_architecture-repository/05_building-blocks/abb/abb-identite-beneficiaire.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -51,7 +51,7 @@ Périmètre : recherche démographique, résolution et rapprochement d’identif
 
 R = requis ; O = optionnel.
 
-*Référence — capacité CNISN mise en œuvre : [CAP-INT-01](../../referentiel/capacites/cap-int-01.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-IDENTITE-BENEFICIAIRE](../../04_architecture-repository/05_building-blocks/abb/abb-identite-beneficiaire.md).
 ## 6. Content Modules
 
 - **HL7 FHIR Patient** : ressource de données démographiques et d’identifiants.
@@ -110,10 +110,10 @@ Conformité attestée par l’adoption de PIXm/PDQm pour les nouveaux services, 
 
 ## 12. Articulation avec les autres profils
 
-- [PT-05: registre des professionnels](../../referentiel/profils/pt-05.md)
-- [PT-07: terminologie et codification](../../referentiel/profils/pt-07.md)
-- [PT-10: confiance, authentification, autorisation](../../referentiel/profils/pt-10.md)
-- [PT-11: consentement et bases d’autorisation](../../referentiel/profils/pt-11.md)
+- [PT-05: registre des professionnels](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md)
+- [PT-07: terminologie et codification](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-07.md)
+- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md)
+- [PT-11: consentement et bases d’autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-11.md)
 
 Le service s’appuie sur l’identité fondationnelle (CNIE) selon une architecture interinstitutionnelle à définir.
 

@@ -8,7 +8,7 @@ status: draft
 last_reviewed: 2026-08-08
 owner: DEPSI
 tags: ["artsn", "chapitres", "ART-9", "niveau-3"]
-related: ["CAP-INT-07"]
+related: ["ABB-EXPOSITION-DONNEES-ANALYTIQUES"]
 ---
 
 # Garanties transactionnelles fortes
@@ -39,19 +39,19 @@ ART-9 : Garanties transactionnelles fortes constitue un chapitre du **cadre norm
 
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (officines pharmaceutiques privées, gestionnaires de stocks régionaux, caisses de subventions), cette discipline seule permet d’empêcher les détournements de médicaments, de bloquer les marchés noirs et d’assurer la réconciliation à somme nulle de l’argent public, sans rompre le pipeline.
 
-- **Rattachement** : recouvre partiellement [CAP-07: Protection financière, couverture santé universelle](../../referentiel/capabilites/cap-07.md) (protection financière).
+- **Rattachement** : recouvre partiellement [CAP-07: Protection financière, couverture santé universelle](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-07.md) (protection financière).
 - **Normes CNISN** : [ADR-0008: Audit ATNA](../../01_cnisn/06_decisions/adr-0008-atna.md) (journal d'audit immuable), [STD-0002: Sécurité et chiffrement](../../01_cnisn/05_standards/std-0002-securite-chiffrement.md).
 - **Objets de données** : [BO-03 Dispensation & produits](../../00_caesn/04_data/objets.md), [BO-04 Financement & couverture](../../00_caesn/04_data/objets.md) (objets métier CAESN) ; voir aussi le [dictionnaire des objets de données ARTSN](../03_objets-de-donnees/index.md).
 - **Équation cible** : entrées − sorties = solde.
-- **Déduit selon** : [ENF-2: Intégrité des flux et traçabilité des valeurs](../../referentiel/exigences/enf-2.md) (grade comptable anti-fraude).
+- **Déduit selon** : [ENF-2: Intégrité des flux et traçabilité des valeurs](../../04_architecture-repository/03_requirements/enf-2.md) (grade comptable anti-fraude).
 - **Statut : Proposition ouverte.**
 
 ## Profils PTISN qui implémentent ce chapitre
 
 Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre ART dans leur champ `implements` (frontmatter du référentiel). Le profil constitue la spécification implémentable et testable ; le chapitre demeure le cadre normatif opposable.
 
-- [PT-10 : Confiance, authentification et autorisation](../../referentiel/profils/pt-10.md)
-- [PT-18 : Échange de réclamations et paiements](../../referentiel/profils/pt-18.md)
+- [PT-10 : Confiance, authentification et autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md)
+- [PT-18 : Échange de réclamations et paiements](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-18.md)
 
 <!-- END:GENERATED -->
 ## Liens
@@ -62,6 +62,6 @@ Les profils techniques nationaux ci-dessous déclarent implémenter ce chapitre 
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **`ART-9`** : Garanties transactionnelles fortes (`referentiel/chapitres/art-9.md`)
+- **`ART-9`** : Garanties transactionnelles fortes (`04_architecture-repository/04_patterns/artsn-rules/art-9.md`)
 - **Index des chapitres** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
 - **Exigences contextuelles : Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)

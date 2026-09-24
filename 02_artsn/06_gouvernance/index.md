@@ -99,14 +99,14 @@ Voir les documents suivants : Fondations : F.4 (homologation), Table de maturit�
 
 ## Références
 
-- **F.3** : F.3 : Éradication des silos technologiques (`referentiel/fondations/f-3.md`)
+- **F.3** : F.3 : Éradication des silos technologiques (`04_architecture-repository/04_patterns/foundations/f-3.md`)
 - **depreciation.md** : Processus de dépréciation des composants (`02_artsn/06_gouvernance/depreciation.md`)
 - **veille-architecturale.md** : Veille architecturale (`02_artsn/06_gouvernance/veille-architecturale.md`)
 - **conformite.md** : Tableau de bord de conformité architecturale (`02_artsn/06_gouvernance/conformite.md`)
 - **CAESN** : Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
-- **F.4** : F.4 : Homologation obligatoire (`referentiel/fondations/f-4.md`)
+- **F.4** : F.4 : Homologation obligatoire (`04_architecture-repository/04_patterns/foundations/f-4.md`)
 - **table de maturité** : Annexe A : Table de maturité par chapitre (`02_artsn/08_annexes/a-table-de-maturite.md`)
-- **Fondations : F.4 (homologation)** : F.4 : Homologation obligatoire (`referentiel/fondations/f-4.md`)
+- **Fondations : F.4 (homologation)** : F.4 : Homologation obligatoire (`04_architecture-repository/04_patterns/foundations/f-4.md`)
 - **Table de maturité par chapitre** : Annexe A : Table de maturité par chapitre (`02_artsn/08_annexes/a-table-de-maturite.md`)
 - **CAESN : gouvernance** : Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
 

@@ -46,33 +46,33 @@ Termes propres au périmètre d'interopérabilité du niveau 2. Les termes trans
 
 ## Termes de capacités d'interopérabilité
 
-**CAP-INT-01** : Résolution d'identité du bénéficiaire : recherche démographique, résolution d'identifiants, rapprochement de dossiers, gestion des identités temporaires.
+**ABB-IDENTITE-BENEFICIAIRE** : Résolution d'identité du bénéficiaire : recherche démographique, résolution d'identifiants, rapprochement de dossiers, gestion des identités temporaires.
 
-**CAP-INT-02** : Collecte et transmission des données : collecte de données terrain (applications mobiles, formulaires), validation, transmission sécurisée.
+**ABB-REGISTRE-PROFESSIONNELS** : Collecte et transmission des données : collecte de données terrain (applications mobiles, formulaires), validation, transmission sécurisée.
 
-**CAP-INT-03** : Échange et médiation inter-systèmes : transformation, routage, orchestration des échanges entre systèmes hétérogènes.
+**ABB-ECHANGE-MEDIATION** : Échange et médiation inter-systèmes : transformation, routage, orchestration des échanges entre systèmes hétérogènes.
 
-**CAP-INT-04** : Gestion des stocks et chaîne d'approvisionnement : traçabilité des produits de santé de la réception à la dispensation.
+**ABB-REFERENTIEL-STRUCTURES-SERVICES** : Gestion des stocks et chaîne d'approvisionnement : traçabilité des produits de santé de la réception à la dispensation.
 
-**CAP-INT-05** : Données agrégées de santé publique : collecte, consolidation et transmission des rapports périodiques.
+**ABB-SERVICE-TERMINOLOGIE** : Données agrégées de santé publique : collecte, consolidation et transmission des rapports périodiques.
 
-**CAP-INT-06** : Catalogue de services : registre des services numériques disponibles et de leurs métadonnées.
+**ABB-CATALOGUE-CONTRATS** : Catalogue de services : registre des services numériques disponibles et de leurs métadonnées.
 
-**CAP-INT-07** : Accès et exposition des données analytiques : mise à disposition des données consolidées pour l'analyse et le pilotage.
+**ABB-EXPOSITION-DONNEES-ANALYTIQUES** : Accès et exposition des données analytiques : mise à disposition des données consolidées pour l'analyse et le pilotage.
 
-**CAP-INT-08** : Géolocalisation des services : localisation géographique des formations sanitaires et des points de service.
+**ABB-CONFIANCE-AUTORISATION** : Géolocalisation des services : localisation géographique des formations sanitaires et des points de service.
 
-**CAP-INT-09** : Authentification et autorisation : gestion des identités numériques des professionnels et des droits d'accès.
+**ABB-GESTION-CONSENTEMENT** : Authentification et autorisation : gestion des identités numériques des professionnels et des droits d'accès.
 
-**CAP-INT-10** : Traçabilité et audit : journalisation des accès, des modifications et des échanges de données.
+**ABB-AUDIT-PROVENANCE** : Traçabilité et audit : journalisation des accès, des modifications et des échanges de données.
 
-**CAP-INT-11** : Détection et réponse aux alertes : surveillance automatisée et notifications en temps réel.
+**ABB-RECONCILIATION-DONNEES** : Détection et réponse aux alertes : surveillance automatisée et notifications en temps réel.
 
-**CAP-INT-12** : Tests de conformité : vérification automatisée de la conformité des interfaces aux standards.
+**COMP-HOMOLOGATION-INTEROPERABILITE** : Tests de conformité : vérification automatisée de la conformité des interfaces aux standards.
 
-**CAP-INT-13** : Interopérabilité transfrontalière : échange de données cliniques avec les systèmes des pays voisins, basé sur le profil HL7 FHIR IPS (International Patient Summary) et le réseau GDHCN.
+**PART-ECHANGE-TRANSFRONTALIER** : Interopérabilité transfrontalière : échange de données cliniques avec les systèmes des pays voisins, basé sur le profil HL7 FHIR IPS (International Patient Summary) et le réseau GDHCN.
 
-**CAP-INT-14** : Surveillance One Health : surveillance intégrée des zoonoses et des menaces sanitaires transversales (humain-animal-environnement), avec partage de données entre ministères de la Santé, de l'Agriculture et de l'Environnement.
+**PART-ONE-HEALTH** : Surveillance One Health : surveillance intégrée des zoonoses et des menaces sanitaires transversales (humain-animal-environnement), avec partage de données entre ministères de la Santé, de l'Agriculture et de l'Environnement.
 
 ## Termes de trajectoire
 

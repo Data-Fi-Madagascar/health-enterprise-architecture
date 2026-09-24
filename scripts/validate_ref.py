@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Valide la cohérence du référentiel HEA : îlots, liens cassés, chaîne PT→CAP.
+"""Valide la cohérence du référentiel HEA : îlots, liens cassés, portée CAP.
 
 Complète check_links.py (liens relatifs cassés) en vérifiant le *graphe de
 relations* entre objets du référentiel :
 
-  - relations : maps_to / implements / applies_to / related (frontmatter)
+  - relations : maps_to / implements / realizes / applies_to / related (frontmatter)
   - îlots : objets sans aucune arête (degré sortant + entrant = 0)
   - cibles non résolues : une relation pointe vers un id inexistant
   - liens Markdown relatifs cassés (reprend le critère A2 de check_links.py)
-  - chaîne PT → CAP-INT → CAP : tout profil doit aboutir à une capabilité CAESN
-  - cohérence des types dans maps_to (pas de mélange de niveaux)
+  - portée CAP : tout profil ou SBB doit atteindre une capabilité CAESN
+  - garde-fou : les anciens IDs d'interopérabilité ne sont plus actifs
   - couverture des 18 capabilités CAESN par les profils
 
 Historique : le validateur initial (/tmp/validate_ref.rb) ne détectait pas les
@@ -28,48 +28,79 @@ import re
 import sys
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ARCH_REPOSITORY_DIR = "04_architecture-repository"
+ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
 
 # Répertoires parcourus pour la vérification des liens relatifs (tout le cadre).
-LINK_DIRS = ["00_caesn", "01_cnisn", "02_artsn", "03_ptisn", "referentiel"]
+LINK_DIRS = ["00_caesn", "01_cnisn", "02_artsn", "03_ptisn", ARCH_REPOSITORY_DIR]
 # Le graphe de relations (maps_to/implements/...) ne concerne que le référentiel,
 # source de vérité. Les documents « enveloppes » (00_caesn … 03_ptisn) ne portent
 # pas ces champs et ne doivent pas être traités comme des îlots.
+<<<<<<< HEAD
+REL_DIRS = [ARCH_REPOSITORY_DIR]
+=======
 REL_DIRS = ["referentiel"]
 
 # Répertoires contenant les ADR (Architecture Decision Records)
 ADR_DIRS = ["01_cnisn/06_decisions"]
+>>>>>>> e303ad08347610696acff15be39d5708bd6d068c
 EXCLUDE_DIRS = {".git", "__pycache__", "node_modules", "dist", ".venv",
                 "graphify-out", ".agents", ".claude", "mintlify-site", "docs"}
-RELATION_KEYS = ["maps_to", "implements", "applies_to", "related",
-                 "realized_by", "contributes_to", "performs", "accesses",
-                 "accessed_by",
-                 "governs", "represents", "assigned_to", "has_role",
-                 "located_at", "serves", "produced_by", "detenu_par",
-                 "soutient_flux_de_valeur", "utilise_composant",
-                 "supporte_standard", "a_pour_proprietaire_fonctionnel"]
+DERIVED_ARCH_REPOSITORY_DOCS = {
+    os.path.join(ARCH_REPOSITORY_DIR, "01_partitions", "index.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "architecture-landscape.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "standards-information-base.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "reference-library.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "governance-log.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "requirements-repository.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "solutions-landscape.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "adm-traceability.md"),
+}
+STATIC_ARCH_REPOSITORY_DOCS = {
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "cap-int-migration.md"),
+}
+LEGACY_INTEROP_ALLOWED_FILES = {
+    os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "cap-int-migration.yaml"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "cap-int-migration.md"),
+}
+EXCLUDED_GRAPH_DOCS = {
+    os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "schema.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "togaf-mapping.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "archimate-mapping.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "cap-int-migration.yaml"),
+} | DERIVED_ARCH_REPOSITORY_DOCS | STATIC_ARCH_REPOSITORY_DOCS
+EXTERNAL_RELATION_DIRS = [
+    "01_cnisn/05_standards",
+    "01_cnisn/06_decisions",
+]
+REACHABILITY_KEYS = [
+    "maps_to", "realizes", "implements", "applies_to", "related",
+    "contributes_to", "governs", "serves", "accesses",
+]
+RELATION_KEYS = REACHABILITY_KEYS + [
+                 "realized_by", "performs", "accessed_by", "represents",
+                 "assigned_to", "has_role", "located_at", "produced_by",
+                 "detenu_par", "soutient_flux_de_valeur",
+                 "utilise_composant", "supporte_standard",
+                 "a_pour_proprietaire_fonctionnel"]
 
 # Îlots légitimes attendus (candidats non encore reliés) — ne font pas échouer.
 KNOWN_ISLANDS = {"art-10", "art-11", "f-5", "f-6"}
 
-# Types de niveaux hiérarchiques pour vérification de chaîne.
+# Types de niveaux hiérarchiques pour vérification de portée.
 TYPE_PROFIL = "profil"               # niveau 4 (PT-*)
-TYPE_CAPACITE = "capacite"            # niveau 2 (CAP-INT-*)
+TYPE_SBB = "solution-building-block"  # niveau 4 (SBB)
+TYPE_CAPACITE = "capacite"            # ancien type supprimé des objets actifs
 TYPE_CAPABILITE = "capabilite"        # niveau 1 (CAP-*)
 TYPE_CHAPITRE = "chapitre"            # niveau 3 (ART-*)
 TYPE_COMPOSANT = "composant-applicatif"  # et variantes infra/securite/gouvernance
-
-# Types autorisés dans maps_to par type source (niveau cible attendu).
-# Maps_to de niveau 4 (profil) → niveaux 2,3 uniquement.
-# Maps_to de niveau 2 (capacite) → niveau 1 uniquement.
-ALLOWED_MAPS_TO_LEVELS = {
-    TYPE_PROFIL: {"2", "3", "4"},      # PT peut mapper vers CAP-INT, ART, F
-    TYPE_CAPACITE: {"1"},               # CAP-INT ne doit mapper que vers CAP
-}
 
 SCHEME_RE = re.compile(r"^[a-zA-Z][a-zA-Z0-9+.-]*://")
 LINK_RE = re.compile(r"!?\[[^]]*\]\(([^)]*)\)")
 FRAGMENT_RE = re.compile(r"#.*$")
 FENCE_RE = re.compile(r"^```")
+LEGACY_INTEROP_PREFIX = "CAP" + "-INT-"
+LEGACY_INTEROP_RE = re.compile(r"\b" + re.escape(LEGACY_INTEROP_PREFIX) + r"\d{2}\b")
 
 
 def list_value(raw):
@@ -172,25 +203,6 @@ def parse_type(fm):
     return m.group(1).strip().strip('"').strip("'")
 
 
-def id_prefix(oid):
-    """Extrait le préfixe d'un ID (ex. 'CAP' depuis 'CAP-INT-01' → 'CAP-INT')."""
-    return oid.rsplit("-", 1)[0] if "-" in oid else oid
-
-
-def id_niveau(oid):
-    """Détermine le niveau d'un ID à partir de son préfixe."""
-    p = oid.split("-")[0] if "-" in oid else oid
-    if p in ("CAP",) and "INT" not in oid:
-        return "1"
-    if p == "CAP" and "INT" in oid:
-        return "2"
-    if p == "PT":
-        return "4"
-    if p in ("ART", "F", "ENF"):
-        return "3"
-    return None
-
-
 def iter_md(root, bases):
     for base in bases:
         d = os.path.join(root, base)
@@ -203,97 +215,180 @@ def iter_md(root, bases):
                     yield os.path.join(dirpath, fn)
 
 
-# ---------------------------------------------------------------------------
-# Vérifications de cohérence multi-niveaux (Phase 1)
-# ---------------------------------------------------------------------------
+def collect_external_relation_ids():
+    """IDs documentaires hors référentiel acceptés comme cibles de relation."""
+    ids = set()
+    for path in iter_md(REPO_ROOT, EXTERNAL_RELATION_DIRS):
+        text = open(path, encoding="utf-8").read()
+        fm, _body = parse_frontmatter(text)
+        if fm:
+            oid = parse_id(fm)
+            if oid:
+                ids.add(oid.upper())
+            title = fm_field(fm, "title") or ""
+            ids.update(re.findall(r"\b(?:STD|ADR)-\d{4}\b", title.upper()))
+    return ids
 
-def check_transitive_chain(objects, id_to_file):
-    """Vérifie que chaque PT aboutit à un CAP via chaîne PT→CAP-INT→CAP.
 
-    Renvoie (warnings, errors) où chaque entrée est (file, message).
-    """
-    warnings = []
+def is_legacy_interop_id(value):
+    return bool(value and LEGACY_INTEROP_RE.fullmatch(value))
+
+
+def iter_checkable_text_files():
+    """Fichiers où l'ancien préfixe ne doit plus apparaître activement."""
+    explicit = ["README.md", "AGENTS.md"]
+    for rel in explicit:
+        path = os.path.join(REPO_ROOT, rel)
+        if os.path.exists(path):
+            yield path
+    bases = LINK_DIRS + ["scripts"]
+    suffixes = (".md", ".yaml", ".yml", ".json", ".py")
+    for base in bases:
+        d = os.path.join(REPO_ROOT, base)
+        if not os.path.isdir(d):
+            continue
+        for dirpath, dirnames, filenames in os.walk(d):
+            dirnames[:] = [dn for dn in dirnames if dn not in EXCLUDE_DIRS]
+            for fn in filenames:
+                if fn.endswith(suffixes):
+                    yield os.path.join(dirpath, fn)
+
+
+def is_allowed_legacy_line(rel_path, line):
+    if rel_path in LEGACY_INTEROP_ALLOWED_FILES:
+        return True
+    single = r"['\"]?%s\d{2}['\"]?" % re.escape(LEGACY_INTEROP_PREFIX)
+    inline_list = r"\[\s*%s(?:\s*,\s*%s)*\s*\]" % (single, single)
+    return bool(re.match(r"^\s*legacy_id:\s*(?:%s|%s)\s*$" % (single, inline_list),
+                         line))
+
+
+def check_legacy_interop_usage():
     errors = []
+    seen_files = set()
+    for path in iter_checkable_text_files():
+        if path in seen_files:
+            continue
+        seen_files.add(path)
+        rel_path = os.path.relpath(path, REPO_ROOT)
+        try:
+            text = open(path, encoding="utf-8").read()
+        except UnicodeDecodeError:
+            continue
+        for line_no, line in enumerate(text.splitlines(), 1):
+            matches = LEGACY_INTEROP_RE.findall(line)
+            if not matches:
+                continue
+            if is_allowed_legacy_line(rel_path, line):
+                continue
+            errors.append((rel_path, line_no, ", ".join(sorted(set(matches)))))
+    return errors
 
-    profiles = {oid: o for oid, o in objects.items()
-                if o.get("type") == TYPE_PROFIL}
-    capacites = {oid: o for oid, o in objects.items()
-                 if o.get("type") == TYPE_CAPACITE}
-    capabilites = {oid: o for oid, o in objects.items()
-                   if o.get("type") == TYPE_CAPABILITE}
 
-    for oid, o in sorted(profiles.items()):
-        maps = o["out"] & set(objects.keys())
-        cap_int_targets = [t for t in maps if objects[t].get("type") == TYPE_CAPACITE]
-        cap_targets = [t for t in maps if objects[t].get("type") == TYPE_CAPABILITE]
+def load_relation_graph():
+    """Charge les objets du référentiel et résout leurs relations."""
+    objects = {}
+    id_to_file = {}
+    unresolved = []
+    legacy_relation_errors = []
+    external_relation_ids = collect_external_relation_ids()
 
-        if not cap_int_targets and not cap_targets:
+    for path in iter_md(REPO_ROOT, REL_DIRS):
+        rel_path = os.path.relpath(path, REPO_ROOT)
+        if rel_path in EXCLUDED_GRAPH_DOCS:
+            continue  # fichier de métamodèle, pas un nœud de graphe
+        text = open(path, encoding="utf-8").read()
+        fm, _body = parse_frontmatter(text)
+        if fm is None:
+            continue
+        oid = parse_id(fm)
+        if not oid:
+            continue
+        otype = parse_type(fm)
+        status = (fm_field(fm, "status") or "").strip().strip('"').strip("'")
+        outgoing = set()
+        reach_outgoing = set()
+        for k in RELATION_KEYS:
+            val = fm_field(fm, k)
+            targets = list_value(val)
+            outgoing.update(targets)
+            if k in REACHABILITY_KEYS:
+                reach_outgoing.update(targets)
+        objects[oid] = {
+            "id": oid,
+            "file": path,
+            "out": outgoing,
+            "reach_out": reach_outgoing,
+            "in": set(),
+            "type": otype,
+            "status": status,
+        }
+        id_to_file[oid] = path
+
+    for oid, o in objects.items():
+        for target in o["out"]:
+            if is_legacy_interop_id(target):
+                legacy_relation_errors.append((o["file"], oid, target))
+            if target in objects:
+                objects[target]["in"].add(oid)
+            elif target not in external_relation_ids:
+                unresolved.append((o["file"], oid, target))
+
+    return objects, id_to_file, unresolved, legacy_relation_errors
+
+
+# ---------------------------------------------------------------------------
+# Vérifications de cohérence multi-niveaux
+# ---------------------------------------------------------------------------
+
+def check_legacy_objects(objects):
+    """Vérifie que l'ancien type d'interopérabilité n'est plus un objet actif."""
+    errors = []
+    for oid, o in sorted(objects.items()):
+        if is_legacy_interop_id(oid):
             rel_path = os.path.relpath(o["file"], REPO_ROOT)
             errors.append((rel_path, oid,
-                           "Profil sans maps_to vers CAP-INT ou CAP : "
-                           "chaîne PT→CAP rompue"))
-            continue
-
-        # Vérifier la chaîne transitive pour chaque CAP-INT ciblé
-        for cap_int_id in cap_int_targets:
-            cap_int_obj = objects.get(cap_int_id)
-            if not cap_int_obj:
-                continue
-            cap_int_maps = cap_int_obj["out"] & set(objects.keys())
-            cap_from_int = [t for t in cap_int_maps
-                            if objects[t].get("type") == TYPE_CAPABILITE]
-            if not cap_from_int:
-                rel_path = os.path.relpath(o["file"], REPO_ROOT)
-                warnings.append((rel_path, oid,
-                                 "Chaîne PT→%s→CAP incomplète : "
-                                 "%s n'a pas de maps_to vers CAP" % (cap_int_id, cap_int_id)))
-
-    return warnings, errors
-
-
-def check_type_consistency(objects, id_to_file):
-    """Vérifie que les cibles de maps_to sont du bon type/niveau.
-
-    Pour les CAP-INT : maps_to contient à la fois des principes (P-INT-*)
-    et des capabilités (CAP-*). Seule l'absence totale de CAP-* est un problème.
-    Pour les PT : un mappe vers un CAP-* (niveau 1) au lieu d'un CAP-INT-* est suspect.
-
-    Renvoie (warnings, errors).
-    """
-    warnings = []
-    errors = []
-
-    # --- Vérifier que chaque CAP-INT a au moins un CAP-* dans maps_to ---
-    capacites = {oid: o for oid, o in objects.items()
-                 if o.get("type") == TYPE_CAPACITE}
-    for oid, o in sorted(capacites.items()):
-        cap_targets = [t for t in o["out"] & set(objects.keys())
-                       if objects.get(t, {}).get("type") == TYPE_CAPABILITE]
-        if not cap_targets:
+                           "Ancien identifiant d'interopérabilité présent comme objet actif"))
+        if o.get("type") == TYPE_CAPACITE:
             rel_path = os.path.relpath(o["file"], REPO_ROOT)
-            warnings.append((rel_path, oid,
-                             "CAP-INT sans maps_to vers un CAP : "
-                             "chaîne CAP-INT→CAP manquante"))
+            errors.append((rel_path, oid,
+                           "Ancien type 'capacite' présent comme objet actif"))
+    return errors
 
-    # --- Vérifier que les PT ne mélangent pas les niveaux dans maps_to ---
-    profiles = {oid: o for oid, o in objects.items()
-                if o.get("type") == TYPE_PROFIL}
-    for oid, o in sorted(profiles.items()):
-        for target_id in o["out"]:
-            target_obj = objects.get(target_id)
-            if not target_obj:
-                continue
-            target_type = target_obj.get("type")
-            if target_type == TYPE_CAPABILITE:
-                # Un PT mappe directement vers un CAP — informer
-                rel_path = os.path.relpath(o["file"], REPO_ROOT)
-                warnings.append((rel_path, oid,
-                                 "Profil mappe directement vers %s "
-                                 "(capabilité CAESN, niveau 1) : "
-                                 "vérifier si un CAP-INT intermédiaire est requis"
-                                 % target_id))
 
-    return warnings, errors
+def reachable_capabilities(objects, source_id):
+    """Retourne les capabilités atteignables depuis un objet par les clés admises."""
+    reached = set()
+    seen = {source_id}
+    stack = list(objects.get(source_id, {}).get("reach_out", set()))
+
+    while stack:
+        target_id = stack.pop()
+        if target_id in seen:
+            continue
+        seen.add(target_id)
+        target = objects.get(target_id)
+        if not target:
+            continue
+        if target.get("type") == TYPE_CAPABILITE:
+            reached.add(target_id)
+        stack.extend(target.get("reach_out", set()) - seen)
+
+    return reached
+
+
+def check_reachability_to_capability(objects, source_types=(TYPE_PROFIL, TYPE_SBB)):
+    """Vérifie que chaque profil ou SBB atteint au moins une capabilité CAESN."""
+    errors = []
+    for oid, o in sorted(objects.items()):
+        if o.get("type") not in source_types:
+            continue
+        caps = reachable_capabilities(objects, oid)
+        if not caps:
+            rel_path = os.path.relpath(o["file"], REPO_ROOT)
+            errors.append((rel_path, oid,
+                           "Aucune capabilité CAESN atteignable par le graphe relationnel"))
+    return errors
 
 
 def check_coverage(objects, id_to_file):
@@ -307,57 +402,25 @@ def check_coverage(objects, id_to_file):
 
     capabilites = {oid: o for oid, o in objects.items()
                    if o.get("type") == TYPE_CAPABILITE}
-    capacites = {oid: o for oid, o in objects.items()
-                 if o.get("type") == TYPE_CAPACITE}
-    profiles = {oid: o for oid, o in objects.items()
-                if o.get("type") == TYPE_PROFIL}
+    sources = {oid: o for oid, o in objects.items()
+               if o.get("type") in (TYPE_PROFIL, TYPE_SBB)}
 
-    # Construire la couverture transitive : quels CAP sont atteints par des PT
+    # Construire la couverture : quels CAP sont atteints par des profils/SBB.
     covered_caps = set()
-    for pt_id, pt_obj in profiles.items():
-        maps = pt_obj["out"] & set(objects.keys())
-        for target_id in maps:
-            tobj = objects.get(target_id)
-            if not tobj:
-                continue
-            if tobj.get("type") == TYPE_CAPABILITE:
-                covered_caps.add(target_id)
-            elif tobj.get("type") == TYPE_CAPACITE:
-                # Chaîne transitive : CAP-INT → CAP
-                for deep_id in tobj["out"] & set(objects.keys()):
-                    dobj = objects.get(deep_id)
-                    if dobj and dobj.get("type") == TYPE_CAPABILITE:
-                        covered_caps.add(deep_id)
+    for source_id in sources:
+        covered_caps.update(reachable_capabilities(objects, source_id))
 
-    # CAP sans aucun PT atteignant
+    # CAP sans aucun profil/SBB atteignant.
     unreachable_caps = sorted(set(capabilites.keys()) - covered_caps)
     if unreachable_caps:
         for cap_id in unreachable_caps:
             rel_path = os.path.relpath(id_to_file[cap_id], REPO_ROOT)
             warnings.append((rel_path, cap_id,
-                             "Capabilité CAESN non atteinte par aucun PT "
-                             "(via chaîne PT→CAP-INT→CAP)"))
-    info.append("CAP atteints par au moins un PT : %d/%d"
+                             "Capabilité CAESN non atteinte par aucun profil ou SBB"))
+    info.append("CAP atteints par au moins un profil ou SBB : %d/%d"
                 % (len(covered_caps), len(capabilites)))
     if unreachable_caps:
         info.append("CAP non atteints : %s" % ", ".join(unreachable_caps))
-
-    # CAP-INT sans aucun PT consommateur
-    cap_int_consumers = {}
-    for pt_id, pt_obj in profiles.items():
-        for target_id in pt_obj["out"] & set(objects.keys()):
-            tobj = objects.get(target_id)
-            if tobj and tobj.get("type") == TYPE_CAPACITE:
-                cap_int_consumers.setdefault(target_id, set()).add(pt_id)
-
-    orphan_cap_ints = sorted(set(capacites.keys()) - set(cap_int_consumers.keys()))
-    if orphan_cap_ints:
-        for cap_int_id in orphan_cap_ints:
-            rel_path = os.path.relpath(id_to_file[cap_int_id], REPO_ROOT)
-            warnings.append((rel_path, cap_int_id,
-                             "CAP-INT sans aucun PT consommateur"))
-        info.append("CAP-INT orphelins (sans PT) : %s"
-                     % ", ".join(orphan_cap_ints))
 
     return warnings, info
 
@@ -391,29 +454,9 @@ def load_all_adrs():
 
 
 def main():
-    objects = {}          # id -> {file, out:set, in:set}
-    id_to_file = {}
+    objects, id_to_file, unresolved, legacy_relation_errors = load_relation_graph()
     all_links = []        # (file, target)
     adrs = load_all_adrs()
-
-    for path in iter_md(REPO_ROOT, REL_DIRS):
-        if os.path.basename(path) == "_schema.md":
-            continue  # fichier de schéma, pas un nœud de graphe
-        text = open(path, encoding="utf-8").read()
-        fm, _body = parse_frontmatter(text)
-        if fm is None:
-            continue
-        oid = parse_id(fm)
-        if not oid:
-            continue
-        otype = parse_type(fm)
-        outgoing = set()
-        for k in RELATION_KEYS:
-            val = fm_field(fm, k)
-            for t in list_value(val):
-                outgoing.add(t)
-        objects[oid] = {"file": path, "out": outgoing, "in": set(), "type": otype}
-        id_to_file[oid] = path
 
     # Liens relatifs : tous les documents du cadre.
     for path in iter_md(REPO_ROOT, LINK_DIRS):
@@ -439,15 +482,6 @@ def main():
                 if target.startswith("#"):
                     continue
                 all_links.append((path, FRAGMENT_RE.sub("", target)))
-
-    # build incoming + resolve
-    unresolved = []  # (file, source_id, target)
-    for oid, o in objects.items():
-        for t in o["out"]:
-            if t in objects:
-                objects[t]["in"].add(oid)
-            else:
-                unresolved.append((o["file"], oid, t))
 
     # island detection
     islands = []
@@ -529,6 +563,35 @@ def main():
 
     ok = True
 
+    legacy_usage = check_legacy_interop_usage()
+    if legacy_usage:
+        ok = False
+        print("\n[ERREUR] Usages actifs d'anciens identifiants d'interopérabilité : %d"
+              % len(legacy_usage))
+        for f, line_no, matches in legacy_usage[:50]:
+            print("  - %s:%d : %s" % (f, line_no, matches))
+    else:
+        print("[OK] Aucun ancien identifiant d'interopérabilité hors migration ou legacy_id.")
+
+    legacy_object_errors = check_legacy_objects(objects)
+    if legacy_object_errors:
+        ok = False
+        print("\n[ERREUR] Anciens objets d'interopérabilité actifs : %d"
+              % len(legacy_object_errors))
+        for f, oid, msg in legacy_object_errors[:50]:
+            print("  - %s (%s) : %s" % (f, oid, msg))
+    else:
+        print("[OK] Aucun ancien objet d'interopérabilité actif.")
+
+    if legacy_relation_errors:
+        ok = False
+        print("\n[ERREUR] Relations vers anciens identifiants d'interopérabilité : %d"
+              % len(legacy_relation_errors))
+        for f, s, t in legacy_relation_errors[:50]:
+            print("  - %s (%s) -> %s" % (os.path.relpath(f, REPO_ROOT), s, t))
+    else:
+        print("[OK] Aucune relation ne pointe vers un ancien identifiant d'interopérabilité.")
+
     if unresolved:
         ok = False
         print("\n[ERREUR] Cibles de relation non résolues : %d" % len(unresolved))
@@ -576,36 +639,18 @@ def main():
 
     # --- Vérifications de cohérence multi-niveaux ---
 
-    # 1. Chaîne PT → CAP-INT → CAP
-    chain_warns, chain_errs = check_transitive_chain(objects, id_to_file)
-    if chain_errs:
+    # 1. Portée PT/SBB vers capabilité CAESN
+    reachability_errors = check_reachability_to_capability(objects)
+    if reachability_errors:
         ok = False
-        print("\n[ERREUR] Chaîne PT→CAP-INT→CAP rompue : %d" % len(chain_errs))
-        for f, oid, msg in chain_errs[:30]:
+        print("\n[ERREUR] Portée PT/SBB vers capabilité CAESN rompue : %d"
+              % len(reachability_errors))
+        for f, oid, msg in reachability_errors[:30]:
             print("  - %s (%s) : %s" % (f, oid, msg))
     else:
-        print("[OK] Tous les profils aboutissent à une capabilité CAESN.")
+        print("[OK] Tous les profils et SBB atteignent une capabilité CAESN.")
 
-    if chain_warns:
-        print("\n[AVERTISSEMENT] Chaîne PT→CAP partielle : %d" % len(chain_warns))
-        for f, oid, msg in chain_warns[:30]:
-            print("  ~ %s (%s) : %s" % (f, oid, msg))
-
-    # 2. Cohérence des types dans maps_to
-    type_warns, type_errs = check_type_consistency(objects, id_to_file)
-    if type_errs:
-        ok = False
-        print("\n[ERREUR] Types incohérents dans maps_to : %d" % len(type_errs))
-        for f, oid, msg in type_errs[:30]:
-            print("  - %s (%s) : %s" % (f, oid, msg))
-    if type_warns:
-        print("\n[AVERTISSEMENT] Correspondances multi-niveaux : %d" % len(type_warns))
-        for f, oid, msg in type_warns[:30]:
-            print("  ~ %s (%s) : %s" % (f, oid, msg))
-    if not type_warns and not type_errs:
-        print("[OK] Types cohérents dans toutes les relations maps_to.")
-
-    # 3. Couverture des capabilités CAESN
+    # 2. Couverture des capabilités CAESN
     cov_warns, cov_info = check_coverage(objects, id_to_file)
     if cov_warns:
         print("\n[AVERTISSEMENT] Couverture CAESN incomplète : %d" % len(cov_warns))
@@ -614,7 +659,7 @@ def main():
     for line in cov_info:
         print("  [INFO] %s" % line)
     if not cov_warns:
-        print("[OK] Toutes les capabilités CAESN sont atteintes par au moins un PT.")
+        print("[OK] Toutes les capabilités CAESN sont atteintes par au moins un profil ou SBB.")
 
     print("\nRésumé : %s" % ("CONFORME" if ok else "ANOMALIES DÉTECTÉES"))
     return 0 if ok else 1

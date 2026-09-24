@@ -12,10 +12,10 @@ related: ["CAP-14"]
 
 # Partie I : Principes nationaux d'interopérabilité de santé
 
-Ce catalogue référence les 25 principes du CNISN. Le texte de référence de chaque principe vit dans le référentiel : `referentiel/principes/p-int-XX.md`.
+Ce catalogue référence les 25 principes du CNISN. Le texte de référence de chaque principe vit dans le référentiel : `04_architecture-repository/02_architecture-elements/motivation/principles/p-int-XX.md`.
 
 ## Catégorie A : Autorité et données de référence
-<!-- BEGIN:GENERATED source=referentiel/principes/p-int-01.md,referentiel/principes/p-int-02.md,referentiel/principes/p-int-03.md,referentiel/principes/p-int-04.md -->
+<!-- BEGIN:GENERATED source=04_architecture-repository/02_architecture-elements/motivation/principles/p-int-01.md,04_architecture-repository/02_architecture-elements/motivation/principles/p-int-02.md,04_architecture-repository/02_architecture-elements/motivation/principles/p-int-03.md,04_architecture-repository/02_architecture-elements/motivation/principles/p-int-04.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### Autorité désignée
@@ -93,7 +93,7 @@ Les correspondances entre deux référentiels doivent également être :
 
 <!-- END:GENERATED -->
 ## Catégorie B : Contractualisation des échanges et services
-<!-- BEGIN:GENERATED source=referentiel/principes/p-int-05.md,referentiel/principes/p-int-06.md,referentiel/principes/p-int-07.md,referentiel/principes/p-int-08.md,referentiel/principes/p-int-09.md -->
+<!-- BEGIN:GENERATED source=04_architecture-repository/02_architecture-elements/motivation/principles/p-int-05.md,04_architecture-repository/02_architecture-elements/motivation/principles/p-int-06.md,04_architecture-repository/02_architecture-elements/motivation/principles/p-int-07.md,04_architecture-repository/02_architecture-elements/motivation/principles/p-int-08.md,04_architecture-repository/02_architecture-elements/motivation/principles/p-int-09.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### Contrat explicite
@@ -199,7 +199,7 @@ Ce registre doit permettre de connaître :
 
 <!-- END:GENERATED -->
 ## Catégorie C : Gouvernance interinstitutionnelle
-<!-- BEGIN:GENERATED source=referentiel/principes/p-int-10.md,referentiel/principes/p-int-11.md,referentiel/principes/p-int-12.md,referentiel/principes/p-int-13.md -->
+<!-- BEGIN:GENERATED source=04_architecture-repository/02_architecture-elements/motivation/principles/p-int-10.md,04_architecture-repository/02_architecture-elements/motivation/principles/p-int-11.md,04_architecture-repository/02_architecture-elements/motivation/principles/p-int-12.md,04_architecture-repository/02_architecture-elements/motivation/principles/p-int-13.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### Accord préalable
@@ -277,7 +277,7 @@ La dérogation d’urgence doit être :
 
 <!-- END:GENERATED -->
 ## Catégorie D : Sécurité, confiance et bases d’autorisation
-<!-- BEGIN:GENERATED source=referentiel/principes/p-int-14.md,referentiel/principes/p-int-15.md,referentiel/principes/p-int-16.md,referentiel/principes/p-int-17.md,referentiel/principes/p-int-18.md -->
+<!-- BEGIN:GENERATED source=04_architecture-repository/02_architecture-elements/motivation/principles/p-int-14.md,04_architecture-repository/02_architecture-elements/motivation/principles/p-int-15.md,04_architecture-repository/02_architecture-elements/motivation/principles/p-int-16.md,04_architecture-repository/02_architecture-elements/motivation/principles/p-int-17.md,04_architecture-repository/02_architecture-elements/motivation/principles/p-int-18.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### Base d’autorisation explicite
@@ -363,7 +363,7 @@ Elles peuvent disposer :
 
 <!-- END:GENERATED -->
 ## Catégorie E : Neutralité, réversibilité et progressivité
-<!-- BEGIN:GENERATED source=referentiel/principes/p-int-19.md,referentiel/principes/p-int-20.md,referentiel/principes/p-int-21.md,referentiel/principes/p-int-22.md -->
+<!-- BEGIN:GENERATED source=04_architecture-repository/02_architecture-elements/motivation/principles/p-int-19.md,04_architecture-repository/02_architecture-elements/motivation/principles/p-int-20.md,04_architecture-repository/02_architecture-elements/motivation/principles/p-int-21.md,04_architecture-repository/02_architecture-elements/motivation/principles/p-int-22.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### Neutralité technologique
@@ -428,7 +428,7 @@ Lorsqu’un usage doit fonctionner hors ligne ou avec une connectivité intermit
 
 <!-- END:GENERATED -->
 ## Catégorie F : Conformité et homologation
-<!-- BEGIN:GENERATED source=referentiel/principes/p-int-23.md,referentiel/principes/p-int-24.md,referentiel/principes/p-int-25.md -->
+<!-- BEGIN:GENERATED source=04_architecture-repository/02_architecture-elements/motivation/principles/p-int-23.md,04_architecture-repository/02_architecture-elements/motivation/principles/p-int-24.md,04_architecture-repository/02_architecture-elements/motivation/principles/p-int-25.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### Conformité fondée sur des preuves

@@ -9,7 +9,7 @@ L'architecture ODA du référentiel HEA repose sur la séparation claire de deux
 │                    MODÈLE DE GOUVERNANCE                        │
 │                    (Méta-schéma d'auteur)                       │
 │                                                                 │
-│  Source : YAML/Markdown dans referentiel/                       │
+│  Source : YAML/Markdown dans 04_architecture-repository/                       │
 │  Validateur : ontologie/hea-governance-schema.json              │
 │  Usage : validation des fichiers d'architecture sur GitHub      │
 │  Contraintes : id, version, status, owner, artRef, x-hea-*     │
@@ -36,7 +36,7 @@ L'architecture ODA du référentiel HEA repose sur la séparation claire de deux
 
 ```
 hea/
-├── referentiel/                          # SOURCE DE VÉRITÉ (Niveau 3)
+├── 04_architecture-repository/                          # SOURCE DE VÉRITÉ (Niveau 3)
 │   ├── objets-de-donnees/
 │   │   ├── do-01.md ... do-31.md        # Objets de données (YAML/MD)
 │   │   └── nomenclatures/               # NOUVEAU : nomenclatures autonomes
@@ -95,7 +95,7 @@ Le méta-schéma valide les fichiers d'auteur YAML/Markdown sur GitHub.
 | Champ | Type | Obligatoire | Description |
 |-------|------|-------------|-------------|
 | `artRef` | array | Oui | Chapitres ARTSN concernés |
-| `maps_to` | array | Oui | Capacités CNISN implémentées |
+| `maps_to` | array | Oui | Objets d'interopérabilité CNISN/TOGAF ou capabilités CAESN implémentées |
 | `implements` | array | Oui | Standards/fondations implémentés |
 | `related` | array | Non | Objets liés |
 | `tags` | array | Oui | Étiquettes de catégorisation |

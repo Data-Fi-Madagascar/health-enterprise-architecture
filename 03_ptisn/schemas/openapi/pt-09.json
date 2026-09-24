@@ -215,7 +215,9 @@
   "x-hea-version": "0.4",
   "x-hea-type": "profil-technique",
   "x-hea-maps-to": [
-    "CAP-INT-07"
+    "ABB-EXPOSITION-DONNEES-ANALYTIQUES",
+    "CAP-05",
+    "CAP-13"
   ],
   "x-hea-implements": [
     "ART-3",
@@ -227,7 +229,7 @@
     "CMP-03",
     "CMP-04"
   ],
-  "x-hea-source": "referentiel/profils/pt-09.md",
+  "x-hea-source": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-09.md",
   "x-hea-fhir-resources": [
     "IndicatorResult",
     "MeasureReport"
@@ -235,5 +237,5 @@
   "x-hea-data-objects": [
     "DO-28"
   ],
-  "x-hea-file": "referentiel/profils/pt-09.md"
+  "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-09.md"
 }

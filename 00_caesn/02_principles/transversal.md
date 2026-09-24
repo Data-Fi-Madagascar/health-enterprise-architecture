@@ -28,7 +28,7 @@ related: ["VS-01", "VS-02", "VS-03", "VS-04"]
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
 
-Le cadre repose sur douze principes d'architecture transversaux. Chaque initiative numérique doit être évaluée selon sa conformité à ces principes. Chaque principe vit dans le référentiel : `referentiel/principes/pa-XX.md`.
+Le cadre repose sur douze principes d'architecture transversaux. Chaque initiative numérique doit être évaluée selon sa conformité à ces principes. Chaque principe vit dans le référentiel : `04_architecture-repository/02_architecture-elements/motivation/principles/pa-XX.md`.
 
 ## Catalogue des principes
 

@@ -59,7 +59,7 @@ Cette norme s'applique à :
 - **ARTSN** : ART-5 (Analytique et pilotage), ART-2 (Médiation)
 - **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/07_lots/index.md)
 - **PTISN** : PT-08 (Données agrégées)
-- **CNISN** : CAP-INT-05 (Données agrégées), CAP-INT-07 (Accès analytique)
+- **CNISN** : ABB-SERVICE-TERMINOLOGIE (Données agrégées), ABB-EXPOSITION-DONNEES-ANALYTIQUES (Accès analytique)
 
 ## Contrôle et conformité
 
