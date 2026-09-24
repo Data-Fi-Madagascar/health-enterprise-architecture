@@ -140,6 +140,40 @@ class PartitionValueStreamCoverageTests(unittest.TestCase):
         )
         self.assertEqual([], errors)
 
+    def test_accepts_value_stream_covered_only_by_assigned_abb_maps_to(self):
+        graph = self.graph(set())
+        graph["PART-ONE-HEALTH"]["relations"]["applies_to"] = {"VS-02", "CAP-08"}
+        graph["VS-02"]["relations"]["applies_to"] = {"CAP-18"}
+        graph["ABB-ONE-HEALTH"] = {
+            "id": "ABB-ONE-HEALTH", "file": "/tmp/abb-one-health.md",
+            "type": "architecture-building-block",
+            "relations": {
+                "partitions": {"PART-ONE-HEALTH"},
+                "maps_to": {"CAP-18"},
+            },
+        }
+
+        errors = self.validator.check_partition_value_stream_coverage(graph)
+
+        self.assertEqual([], errors)
+
+    def test_rejects_assigned_abb_maps_to_capability_without_value_stream_overlap(self):
+        graph = self.graph(set())
+        graph["PART-ONE-HEALTH"]["relations"]["applies_to"] = {"VS-02", "CAP-08"}
+        graph["VS-02"]["relations"]["applies_to"] = {"CAP-18"}
+        graph["ABB-ONE-HEALTH"] = {
+            "id": "ABB-ONE-HEALTH", "file": "/tmp/abb-one-health.md",
+            "type": "architecture-building-block",
+            "relations": {
+                "partitions": {"PART-ONE-HEALTH"},
+                "maps_to": {"CAP-08"},
+            },
+        }
+
+        errors = self.validator.check_partition_value_stream_coverage(graph)
+
+        self.assertEqual(["VS-02"], [error[2] for error in errors])
+
 
 class CanonicalMappingTests(unittest.TestCase):
     def setUp(self):

@@ -381,9 +381,9 @@ def check_partition_value_stream_coverage(objects):
     errors = []
     coverage_keys = ("applies_to", "related")
 
-    def related_ids(obj, expected_type):
+    def related_ids(obj, expected_type, keys=coverage_keys):
         ids = set()
-        for key in coverage_keys:
+        for key in keys:
             ids.update(obj.get("relations", {}).get(key, set()))
         return {
             target_id for target_id in ids
@@ -408,7 +408,9 @@ def check_partition_value_stream_coverage(objects):
         for obj in objects.values():
             if (obj.get("type") == "architecture-building-block"
                     and partition_id in obj.get("relations", {}).get("partitions", set())):
-                partition_caps.update(related_ids(obj, TYPE_CAPABILITE))
+                partition_caps.update(related_ids(
+                    obj, TYPE_CAPABILITE, coverage_keys + ("maps_to",)
+                ))
 
         # Les partitions structurelles peuvent ne pas porter de capacité propre.
         if not partition_caps:
