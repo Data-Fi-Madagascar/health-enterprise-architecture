@@ -142,7 +142,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 
 **Discipline de mise en œuvre.** Il sert de pont sémantique entre les systèmes hétérogènes. Il garantit que les données codées dans un système sont interprétables et exploitables par un autre.
 
-- **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md).
+- **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-SERVICE-TERMINOLOGIE: Service de terminologie et codification communes](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md).
 - **Processus soutenus** : [PRC-07: Identification et droits des bénéficiaires](../../04_architecture-repository/02_architecture-elements/business/processes/prc-07.md) (production données), [PRC-08: Financement et exemption au point de service](../../04_architecture-repository/02_architecture-elements/business/processes/prc-08.md) (qualité).
 - **Statut : Stable.**
 
@@ -152,7 +152,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 
 **Discipline de mise en œuvre.** Il constitue l'identité nationale de référence pour tous les systèmes de santé. Toute identification patient transite par cet index, ce qui garantit l'unicité et la cohérence des identités.
 
-- **Rattachement** : [ART-4A](../../04_architecture-repository/04_patterns/artsn-rules/art-4a.md) (INP), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md).
+- **Rattachement** : [ART-4A](../../04_architecture-repository/04_patterns/artsn-rules/art-4a.md) (INP), [ABB-IDENTITE-BENEFICIAIRE: Résolution d'identité du bénéficiaire](../../04_architecture-repository/05_building-blocks/abb/abb-identite-beneficiaire.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../04_architecture-repository/02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-06.md) (logistique).
 - **Statut : Stable.**
 

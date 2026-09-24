@@ -102,5 +102,67 @@ class PartitionRelationTests(unittest.TestCase):
         self.assertIn("architecture-partition", errors[0][3])
 
 
+class CanonicalMappingTests(unittest.TestCase):
+    def setUp(self):
+        self.validator = load_validator()
+
+    def relation_values(self, relative_path, key):
+        text = (REPO_ROOT / relative_path).read_text(encoding="utf-8")
+        frontmatter, _body = self.validator.parse_frontmatter(text)
+        return set(self.validator.list_value(
+            self.validator.fm_field(frontmatter, key)
+        ))
+
+    def test_legacy_services_realize_their_business_responsibility(self):
+        expected = {
+            "srv-03.md": {"ABB-SERVICE-TERMINOLOGIE"},
+            "srv-04.md": {"ABB-ECHANGE-MEDIATION"},
+            "srv-05.md": {"ABB-ECHANGE-LOGISTIQUE-LMIS"},
+            "srv-06.md": {"ABB-EXPOSITION-DONNEES-ANALYTIQUES"},
+        }
+        base = Path(
+            "04_architecture-repository/05_building-blocks/abb/legacy-services"
+        )
+
+        for filename, targets in expected.items():
+            self.assertEqual(
+                targets,
+                self.relation_values(base / filename, "realizes"),
+                filename,
+            )
+
+    def test_pt_01_maps_to_exchange_mediation(self):
+        path = Path(
+            "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md"
+        )
+
+        targets = self.relation_values(path, "maps_to")
+
+        self.assertIn("ABB-ECHANGE-MEDIATION", targets)
+        self.assertFalse(any(target.startswith("CAP-INT-") for target in targets))
+
+    def test_legacy_components_map_to_semantically_matching_targets(self):
+        expected = {
+            "cmp-10.md": {"ABB-SERVICE-TERMINOLOGIE"},
+            "cmp-11.md": {"ABB-IDENTITE-BENEFICIAIRE"},
+            "cmp-12.md": {"CAP-07"},
+            "cmp-14.md": {
+                "ABB-SERVICE-TERMINOLOGIE",
+                "ABB-ECHANGE-LOGISTIQUE-LMIS",
+            },
+            "cmp-23.md": {"ABB-ECHANGE-LOGISTIQUE-LMIS"},
+        }
+        base = Path(
+            "04_architecture-repository/05_building-blocks/abb/legacy-components"
+        )
+
+        for filename, targets in expected.items():
+            self.assertEqual(
+                targets,
+                self.relation_values(base / filename, "maps_to"),
+                filename,
+            )
+
+
 if __name__ == "__main__":
     unittest.main()
