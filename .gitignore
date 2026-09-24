@@ -15,3 +15,5 @@ graphify-out/
 
 # Configuration locale Obsidian (jamais committée)
 .obsidian/
+*.docx
+*.pdf
