@@ -376,6 +376,53 @@ def check_partition_relation_types(objects):
     return errors
 
 
+def check_partition_value_stream_coverage(objects):
+    """Vérifie que chaque flux déclaré partage une capabilité avec sa partition."""
+    errors = []
+    coverage_keys = ("applies_to", "related")
+
+    def related_ids(obj, expected_type):
+        ids = set()
+        for key in coverage_keys:
+            ids.update(obj.get("relations", {}).get(key, set()))
+        return {
+            target_id for target_id in ids
+            if objects.get(target_id, {}).get("type") == expected_type
+        }
+
+    partitions = {
+        oid: obj for oid, obj in objects.items()
+        if obj.get("type") == TYPE_PARTITION
+    }
+    for partition_id, partition in sorted(partitions.items()):
+        relations = partition.get("relations", {})
+        declared_ids = set()
+        for key in coverage_keys:
+            declared_ids.update(relations.get(key, set()))
+        value_streams = {
+            target_id for target_id in declared_ids
+            if objects.get(target_id, {}).get("type") == "flux-valeur"
+        }
+        partition_caps = related_ids(partition, TYPE_CAPABILITE)
+
+        for obj in objects.values():
+            if (obj.get("type") == "architecture-building-block"
+                    and partition_id in obj.get("relations", {}).get("partitions", set())):
+                partition_caps.update(related_ids(obj, TYPE_CAPABILITE))
+
+        # Les partitions structurelles peuvent ne pas porter de capacité propre.
+        if not partition_caps:
+            continue
+        for value_stream_id in sorted(value_streams):
+            value_stream_caps = related_ids(objects[value_stream_id], TYPE_CAPABILITE)
+            if partition_caps.isdisjoint(value_stream_caps):
+                errors.append((
+                    partition["file"], partition_id, value_stream_id,
+                    "Aucune capabilité commune entre la partition et le flux de valeur",
+                ))
+    return errors
+
+
 def reachable_capabilities(objects, source_id):
     """Retourne les capabilités atteignables depuis un objet par les clés admises."""
     reached = set()

@@ -102,6 +102,45 @@ class PartitionRelationTests(unittest.TestCase):
         self.assertIn("architecture-partition", errors[0][3])
 
 
+class PartitionValueStreamCoverageTests(unittest.TestCase):
+    def setUp(self):
+        self.validator = load_validator()
+
+    def graph(self, partition_caps):
+        return {
+            "PART-ONE-HEALTH": {
+                "id": "PART-ONE-HEALTH",
+                "file": "/tmp/part-one-health.md",
+                "type": "architecture-partition",
+                "relations": {
+                    "applies_to": set(partition_caps) | {"VS-02", "VS-04"},
+                },
+            },
+            "VS-02": {
+                "id": "VS-02", "file": "/tmp/vs-02.md", "type": "flux-valeur",
+                "relations": {"applies_to": {"CAP-18"}},
+            },
+            "VS-04": {
+                "id": "VS-04", "file": "/tmp/vs-04.md", "type": "flux-valeur",
+                "relations": {"applies_to": {"CAP-08"}},
+            },
+            "CAP-08": {"id": "CAP-08", "file": "/tmp/cap-08.md", "type": "capabilite", "relations": {}},
+            "CAP-18": {"id": "CAP-18", "file": "/tmp/cap-18.md", "type": "capabilite", "relations": {}},
+        }
+
+    def test_rejects_explicit_value_stream_without_common_capability(self):
+        errors = self.validator.check_partition_value_stream_coverage(
+            self.graph({"CAP-18"})
+        )
+        self.assertEqual(["VS-04"], [error[2] for error in errors])
+
+    def test_accepts_each_explicit_value_stream_with_common_capability(self):
+        errors = self.validator.check_partition_value_stream_coverage(
+            self.graph({"CAP-08", "CAP-18"})
+        )
+        self.assertEqual([], errors)
+
+
 class CanonicalMappingTests(unittest.TestCase):
     def setUp(self):
         self.validator = load_validator()
