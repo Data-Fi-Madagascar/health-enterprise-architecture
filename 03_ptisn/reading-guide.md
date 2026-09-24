@@ -76,7 +76,7 @@ L'objectif pour le partenaire technique ou le fournisseur est d'évaluer la conf
 
 ## 4. Catalogue des profils techniques
 
-Les dix-neuf profils couvrent l'ensemble des objets d'interopérabilité du CNISN. Le tableau suivant présente chaque profil, l'objet CNISN/TOGAF associé et une description synthétique.
+Le catalogue des vingt profils documente leur alignement avec les objets d'interopérabilité du CNISN. Le tableau suivant présente chaque profil, l'objet CNISN/TOGAF associé et une description synthétique.
 
 | Profil | Objet CNISN/TOGAF | Description |
 |--------|----------------|-------------|

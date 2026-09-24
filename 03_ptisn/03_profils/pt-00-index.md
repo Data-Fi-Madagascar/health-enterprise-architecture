@@ -52,11 +52,11 @@ Pour éviter les confusions :
 
 <!-- END:GENERATED -->
 
-## Maturité et statuts des profils
+## Statut canonique et maturité contractuelle des profils
 
-La plupart des profils de référence sont à l'état `active` dans le référentiel ; PT-17 et PT-20 sont `candidate`. Leur **maturité contractuelle** vis-à-vis de l'ARTSN reste à établir par les initiatives. Aucun profil n'est encore `recommandé`, `retenu` ou `homologué` ; cette table sera mise à jour au fil des décisions du Comité National (voir l'annexe `e-priorisation-decisions`).
+Dans le référentiel canonique, PT-01 à PT-19, y compris PT-17, sont `active` ; seul PT-20 est `candidate`. Le tableau ci-dessous indique séparément une **maturité contractuelle indicative** vis-à-vis de l'ARTSN, à confirmer par les initiatives. Aucun profil n'est encore `recommandé`, `retenu` ou `homologué` ; cette table sera mise à jour au fil des décisions du Comité National (voir l'annexe `e-priorisation-decisions`).
 
-| Statut | Profils |
+| Maturité contractuelle indicative | Profils |
 |--------|---------|
 | candidate | PT-17, PT-20 |
 | draft | PT-01, PT-02, PT-03, PT-04, PT-05, PT-06, PT-07, PT-08, PT-09, PT-10, PT-11, PT-12, PT-13, PT-14, PT-15, PT-16, PT-18, PT-19 |

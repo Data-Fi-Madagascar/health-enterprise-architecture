@@ -52,7 +52,7 @@ Le tableau ci-dessous associe chaque chapitre de l'Architecture de Référence T
 | ART-4 | PT-04, PT-05, PT-06, PT-07, PT-13, PT-15 |
 | ART-4A | PT-04, PT-05 |
 | ART-4B | PT-04, PT-10, PT-11 |
-| ART-4C | PT-05, PT-20 |
+| ART-4C | PT-20 |
 | ART-4D | PT-15 |
 | ART-5 | PT-02, PT-06, PT-07, PT-08, PT-09, PT-13 |
 | ART-6 | PT-06, PT-08, PT-09, PT-13 |
