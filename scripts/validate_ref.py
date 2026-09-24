@@ -36,14 +36,10 @@ LINK_DIRS = ["00_caesn", "01_cnisn", "02_artsn", "03_ptisn", ARCH_REPOSITORY_DIR
 # Le graphe de relations (maps_to/implements/...) ne concerne que le référentiel,
 # source de vérité. Les documents « enveloppes » (00_caesn … 03_ptisn) ne portent
 # pas ces champs et ne doivent pas être traités comme des îlots.
-<<<<<<< HEAD
 REL_DIRS = [ARCH_REPOSITORY_DIR]
-=======
-REL_DIRS = ["referentiel"]
 
 # Répertoires contenant les ADR (Architecture Decision Records)
 ADR_DIRS = ["01_cnisn/06_decisions"]
->>>>>>> e303ad08347610696acff15be39d5708bd6d068c
 EXCLUDE_DIRS = {".git", "__pycache__", "node_modules", "dist", ".venv",
                 "graphify-out", ".agents", ".claude", "mintlify-site", "docs"}
 DERIVED_ARCH_REPOSITORY_DOCS = {

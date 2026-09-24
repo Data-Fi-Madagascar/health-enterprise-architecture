@@ -5,7 +5,7 @@ id: adr-0002
 domain: decisions
 type: decision
 version: "1.0.0"
-status: accepted
+status: active
 date: 2026-07-01
 owner: DEPSI
 tags: ["adr", "ihe", "madx", "données-agregées", "échange"]
@@ -97,4 +97,4 @@ IHE mADX répond aux exigences du CNISN :
 - [IHE mADX Profile](https://wiki.ihe.net/index.php/Mobile_Aggregate_Data_Exchange_(mADX))
 - [IHE International](https://www.ihe.net/)
 - [PT-08 : Échange de données agrégées](../../03_ptisn/03_profils/pt-08-echange-donnees-agregees.md)
-- [CAP-08 : Analyse et reporting des données de santé](../capabilites/cap-08.md)
+- [CAP-13 : Système d'information sanitaire, données et recherche](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md)

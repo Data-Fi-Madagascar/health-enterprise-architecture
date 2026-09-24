@@ -65,7 +65,7 @@ Chaque entree suit le format :
 - **Liens** : 
   - ADR-0004 : PIXm/PDQm (reference dans la decision)
   - ART-4 : Referentiels nationaux
-  - CAP-INT-01 : Resolution d'identite
+  - ABB-IDENTITE-BENEFICIAIRE : Resolution d'identite du beneficiaire
 - **Impact** : Permet la mise en oeuvre de l'identification unique des patients a travers le systeme
 
 ## Prochaines etapes
