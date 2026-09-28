@@ -1,9 +1,21 @@
 # Rapport d'analyse de cohérence inter-documents
 
-**Date :** 2026-08-26 (dernière mise à jour)
+**Date :** 2026-09-28 (dernière mise à jour)
 **Périmètre :** les 4 niveaux du référentiel — CAESN (`00_caesn/`, niveau 1), CNISN (`01_cnisn/`, niveau 2), ARTSN (`02_artsn/`, niveau 3), PTISN (`03_ptisn/`, niveau 4).
 **Méthode :** croisement des identifiants structurants (CAP-INT, ART-x, F.x, PT-xx, CAP-xx), des matrices d'alignement et des renvois croisés ; vérification de l'existence réelle des chapitres référencés.
-**Statut :** **clos** — l'ensemble des points de cohérence inter-documents est résolu ; le référentiel passe les gates (`validate_ref` → CONFORME, `build_wrappers --check` → 97 enveloppes) et le knowledge graph est connecté.
+**Statut :** **clos** — l'ensemble des points de cohérence inter-documents recensés est résolu ; le référentiel passe le gate local complet, désormais reproduit dans le CI. La projection Graphify n'est pas évaluée lorsque `graphify-out/graph.json` est absent du dépôt.
+
+## Instantané de validation P2.1 — 2026-09-28
+
+| Contrôle | Résultat courant |
+|----------|------------------|
+| Tests unitaires | 33 tests réussis ; exécution obligatoire dans `make check` et GitHub Actions |
+| Enveloppes | 114 enveloppes à jour |
+| Référentiel canonique | 371 objets ; 6245 relations vérifiées ; statut CONFORME |
+| Capacités CAESN | 18/18 atteintes par au moins un profil ou SBB |
+| Liens relatifs | 0 lien cassé sur 6467 vérifiés |
+
+Les nombres mentionnés dans les sections historiques ci-dessous décrivent l'état du dépôt à la date de chaque audit ; cet instantané constitue la référence courante.
 
 ---
 
@@ -20,7 +32,7 @@
 | 3 | Sigle ART-SN / ARTSN | ✓ Résolu (uniformisé en ARTSN) |
 | 3 | Correspondance CAESN CAP-xx ↔ CNISN CAP-INT-xx | ✓ Résolu (annexe E + liens frontmatter) |
 | 4 | ART-8 / ART-8A doublon d'intitulé | ✓ Résolu |
-| 4 | ART-SN sans renvoi de contenu vers CNISN/PTISN | Ouvert (par conception) |
+| 4 | Traçabilité ARTSN vers CNISN/PTISN | ✓ Résolu par les relations canoniques, normes et profils consommateurs |
 | 5 | Versions hétérogènes | ✓ Résolu (semver `1.0.0` partout) |
 | 5 | `scripts/manifest.json` incomplet (cnisn, ptisn) | ✓ Résolu |
 | 5 | `docs.json` racine = template Mintlify | ✓ Résolu (reconstruit) |
@@ -130,7 +142,7 @@ Références PTISN décalées d'une unité (ex. « ART-4C — bases d'autorisati
 ## 4. Écarts internes ARTSN
 
 - **ART-8 / ART-8A — doublon d'intitulé — ✓ Résolu** : ART-8 (chapitre-cadre décliné en 8a-d) et ART-8A portaient le même libellé « Orchestration de processus borné ». ART-8 est désormais **« Orchestration de processus »** (source `ART-8-orchestration-processus-borne.md`, index §Catalogue, `referentiel/chapitres/art-8.md`), ART-8A conserve **« Orchestration de processus borné »** — cohérent avec `02_artsn/reading-matrix.md`. Aucune rupture de lien (les fichiers conservent leurs noms).
-- **ARTSN sans renvoi de contenu vers CNISN/PTISN — Ouvert** : aucun corps d'ARTSN ne référence `CAP-INT-xx`, `PT-xx` ou les principes `P-INT-xx` — les niveaux 2/4 ne sont reliés que par navigation (`index.md`, `reading-matrix.md`). À traiter si l'on souhaite une traçabilité croisée dans les corps normatifs.
+- **Traçabilité ARTSN vers CNISN/PTISN — ✓ Résolu** : les chapitres et building blocks portent désormais des relations canoniques vers les normes, décisions et profils applicables. Les vues dérivées et les liens « lots consommateurs » rendent la navigation bidirectionnelle sans dupliquer manuellement les objets.
 
 ---
 
@@ -192,8 +204,8 @@ Références PTISN décalées d'une unité (ex. « ART-4C — bases d'autorisati
 
 - **Aplatissement de `relations:`** : la clé `relations` a été remplacée par les clés de premier niveau `maps_to` / `implements` / `applies_to` / `related` sur les ~150 fichiers du référentiel ; `referentiel/_schema.md` et le validateur (`/tmp/validate_ref.rb`) mis à jour en conséquence. ✓
 - **Guillemets frontmatter** : tous les éléments de tableaux (`maps_to`, `implements`, `applies_to`, `related`) sont désormais entre guillemets doubles sur les 117 fichiers concernés (0 non quoté). ✓
-- **Validateur** : 151 fichiers parsés, 151 ids uniques, **2 erreurs attendues** (`referentiel/_schema.md` : `niveau`/`source` absents — le schéma, pas un fichier métier) ; **Broken links : 0** ; **Relations non résolues : 0**. ✓
-  - **Limite du validateur** : il vérifie que les cibles des relations existent (et les liens de fichiers), **pas** que chaque objet a des relations ou est référencé. Un contrôle « îles » (degré sortant + entrant = 0, hors feuilles de graphe) reste à ajouter — il aurait détecté les 29 principes CAESN isolés (§2.4, résolus depuis).
+- **Validateur historique** : 151 fichiers parsés, 151 ids uniques, **2 erreurs attendues** (`referentiel/_schema.md` : `niveau`/`source` absents — le schéma, pas un fichier métier) ; **Broken links : 0** ; **Relations non résolues : 0**. ✓
+  - **Détection des îlots — ✓ Résolu** : `scripts/validate_ref.py` contrôle désormais les objets sans arête entrante ou sortante, avec les exceptions explicites prévues par le métamodèle.
 - **`referentiel/services/` vide (nettoyé)** : dossier vide, aucun service référentiel créé — le dossier a été supprimé (jamais tracké par git) ; l'absence de services référentiels reste un écart structurel à combler (voir §7).
 - **Erreur MDX pré-existante** : `00_caesn/08_decisions/adr-0000-template.md:47` (`<avantage 1>` interprété comme JSX) fait échouer `mint broken-links` — hors périmètre du présent audit, à corriger quand le template ADR sera finalisé.
 
@@ -731,4 +743,3 @@ L'enrichissement sémantique par LLM/Gemini du graphe est indisponible (pas de `
 - Knowledge graph : connecté (`ART-2` relié), 548 nœuds / 1788 arêtes.
 - Référentiel synchronisé sur `origin/main` (derniers commits `a65dc5c` → `c236cd9` → `ce1968d`).
 - **Aucun résidu de cohérence ouvert.**
-
