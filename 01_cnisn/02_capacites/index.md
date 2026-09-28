@@ -370,6 +370,7 @@ Permettre aux systèmes de transmettre, recevoir, transformer et acheminer des d
 
 - [Pattern d'échange et médiation](../../04_architecture-repository/04_patterns/pat-echange-mediation.md)
 - [Partition transverse - Interopérabilité](../../04_architecture-repository/01_partitions/transverses/part-transverse-interoperabilite.md)
+- [Partition sectorielle - One Health](../../04_architecture-repository/01_partitions/sectorielles/part-one-health.md)
 
 **Statut : candidate**
 
@@ -501,6 +502,7 @@ La conception interne des entrepôts, projections et modèles analytiques relèv
 #### Rattachement
 
 - [Partition transverse - Analytics et pilotage](../../04_architecture-repository/01_partitions/transverses/part-transverse-analytics-pilotage.md)
+- [Partition sectorielle - One Health](../../04_architecture-repository/01_partitions/sectorielles/part-one-health.md)
 - [ART-6: Analytique et restitution](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md)
 
 <!-- END:GENERATED -->

@@ -39,7 +39,7 @@ Cette vue consolide les partitions d'architecture et les éléments stratégique
 | CAP-17 | Engagement patient et identité numérique | VS-01, VS-03, ABB-IDENTITE-BENEFICIAIRE, ABB-GESTION-CONSENTEMENT, VS-02, PRC-01, PRC-04, PRC-07 | stable | CAP-17 |
 | CAP-18 | Coordination intersectorielle (One Health) | VS-02, ABB-ECHANGE-MEDIATION, PART-ONE-HEALTH, PRC-04, PRC-05 | stable | CAP-18 |
 | PART-ECHANGE-TRANSFRONTALIER | Partition échange transfrontalier | CAP-15, CAP-18, DO-29, DO-30, DO-31 | draft | PART-ECHANGE-TRANSFRONTALIER |
-| PART-ONE-HEALTH | Partition One Health | CAP-18, VS-02, VS-04 | draft | PART-ONE-HEALTH |
+| PART-ONE-HEALTH | Partition One Health | CAP-08, CAP-18, VS-02, VS-04 | draft | PART-ONE-HEALTH |
 | PART-TRANSVERSE-ANALYTICS-PILOTAGE | Partition transverse - Analytics et pilotage | PART-VS-01, PART-VS-02, PART-VS-03, PART-VS-04 | draft | PART-TRANSVERSE-ANALYTICS-PILOTAGE |
 | PART-TRANSVERSE-DONNEES-REFERENTIELLES | Partition transverse - Données référentielles | PART-VS-01, PART-VS-02, PART-VS-03, PART-VS-04 | draft | PART-TRANSVERSE-DONNEES-REFERENTIELLES |
 | PART-TRANSVERSE-IDENTITE | Partition transverse - Identité | PART-VS-01, PART-VS-02, PART-VS-03, PART-VS-04 | draft | PART-TRANSVERSE-IDENTITE |

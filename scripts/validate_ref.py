@@ -680,6 +680,18 @@ def main():
     else:
         print("[OK] Toutes les relations partitions ciblent une architecture-partition.")
 
+    partition_coverage_errors = check_partition_value_stream_coverage(objects)
+    if partition_coverage_errors:
+        ok = False
+        print("\n[ERREUR] Couverture des flux de valeur de partition rompue : %d"
+              % len(partition_coverage_errors))
+        for f, partition_id, value_stream_id, message in partition_coverage_errors[:50]:
+            print("  - %s (%s) -> %s : %s"
+                  % (os.path.relpath(f, REPO_ROOT), partition_id,
+                     value_stream_id, message))
+    else:
+        print("[OK] Chaque flux déclaré par une partition partage une capabilité couverte.")
+
     if adr_ref_errors:
         ok = False
         print("\n[ERREUR] Références ADR non résolues : %d" % len(adr_ref_errors))

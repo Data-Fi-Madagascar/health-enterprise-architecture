@@ -33,9 +33,9 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | ABB-CATALOGUE-CONTRATS | Catalogue des services et registre des contrats | CAP-12, CAP-14, CAP-16, ART-1, ART-2, F-3, F-4, AC-CATALOGUE-SERVICES, PART-TRANSVERSE-INTEROPERABILITE, P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-23, P-INT-24, P-INT-25 | candidate | ABB-CATALOGUE-CONTRATS |
 | ABB-CONFIANCE-AUTORISATION | Confiance, sécurité et autorisation | CAP-15, ART-0, ART-4B, ART-7, ART-9, PART-TRANSVERSE-SECURITE-CONFIANCE, P-INT-14, P-INT-15, P-INT-16, P-INT-17, P-INT-18, P-INT-19, P-INT-20 | candidate | ABB-CONFIANCE-AUTORISATION |
 | ABB-ECHANGE-LOGISTIQUE-LMIS | Échange logistique LMIS | CAP-06, CAP-10, CAP-11, ART-10, CMP-23, ENF-2, PART-TRANSVERSE-INTEROPERABILITE, P-INT-03, P-INT-07, P-INT-18 | candidate | ABB-ECHANGE-LOGISTIQUE-LMIS |
-| ABB-ECHANGE-MEDIATION | Échange et médiation inter-systèmes | CAP-13, CAP-14, CAP-18, ART-1, ART-2, F-3, PAT-ECHANGE-MEDIATION, PART-TRANSVERSE-INTEROPERABILITE, P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-10, P-INT-11, P-INT-12, P-INT-13, P-INT-18, P-INT-19, P-INT-20, P-INT-21, P-INT-22, P-INT-23, P-INT-24, P-INT-25 | candidate | ABB-ECHANGE-MEDIATION |
+| ABB-ECHANGE-MEDIATION | Échange et médiation inter-systèmes | CAP-13, CAP-14, CAP-18, ART-1, ART-2, F-3, PAT-ECHANGE-MEDIATION, PART-TRANSVERSE-INTEROPERABILITE, PART-ONE-HEALTH, P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-10, P-INT-11, P-INT-12, P-INT-13, P-INT-18, P-INT-19, P-INT-20, P-INT-21, P-INT-22, P-INT-23, P-INT-24, P-INT-25 | candidate | ABB-ECHANGE-MEDIATION |
 | ABB-ELIGIBILITE-COUVERTURE | Éligibilité et couverture sanitaire | CAP-07, ART-4C, ART-9, PART-VS-03, PRC-09, PRC-10, DO-14, DO-15, DO-16, DO-17 | candidate | ABB-ELIGIBILITE-COUVERTURE |
-| ABB-EXPOSITION-DONNEES-ANALYTIQUES | Accès et exposition des données analytiques | CAP-05, CAP-13, ART-3, ART-5, ART-6, ART-7, PART-TRANSVERSE-ANALYTICS-PILOTAGE, P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-17, P-INT-18, P-INT-19, P-INT-20, P-INT-21, P-INT-22, P-INT-23, P-INT-24, P-INT-25 | candidate | ABB-EXPOSITION-DONNEES-ANALYTIQUES |
+| ABB-EXPOSITION-DONNEES-ANALYTIQUES | Accès et exposition des données analytiques | CAP-05, CAP-13, ART-3, ART-5, ART-6, ART-7, PART-TRANSVERSE-ANALYTICS-PILOTAGE, PART-ONE-HEALTH, P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-17, P-INT-18, P-INT-19, P-INT-20, P-INT-21, P-INT-22, P-INT-23, P-INT-24, P-INT-25 | candidate | ABB-EXPOSITION-DONNEES-ANALYTIQUES |
 | ABB-GESTION-CONSENTEMENT | Gestion des consentements et bases d'autorisation | CAP-15, CAP-17, ART-0, ART-4B, ART-7, ART-11, PART-TRANSVERSE-SECURITE-CONFIANCE, P-INT-14, P-INT-15, P-INT-16, P-INT-17 | candidate | ABB-GESTION-CONSENTEMENT |
 | ABB-IDENTITE-BENEFICIAIRE | Résolution d'identité du bénéficiaire | CAP-01, CAP-02, CAP-04, CAP-07, CAP-14, CAP-17, ART-4, ART-4A, ART-7, PART-TRANSVERSE-IDENTITE, P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-14, P-INT-15, P-INT-16, P-INT-17, P-INT-18 | candidate | ABB-IDENTITE-BENEFICIAIRE |
 | ABB-RECONCILIATION-DONNEES | Qualité et réconciliation des données | CAP-13, CAP-14, ART-4, ART-5, ART-6, PAT-QUALITE-RECONCILIATION, PART-TRANSVERSE-INTEROPERABILITE, P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-23, P-INT-24, P-INT-25 | candidate | ABB-RECONCILIATION-DONNEES |
@@ -240,7 +240,7 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | PA-11 | La protection des données personnelles est une condition de confiance | VS-01, VS-02, VS-03, VS-04 | draft | PA-11 |
 | PA-12 | Toute initiative numérique doit être conforme au cadre national | VS-01, VS-02, VS-03, VS-04 | draft | PA-12 |
 | PART-ECHANGE-TRANSFRONTALIER | Partition échange transfrontalier | CAP-15, CAP-18, DO-29, DO-30, DO-31 | draft | PART-ECHANGE-TRANSFRONTALIER |
-| PART-ONE-HEALTH | Partition One Health | CAP-18, VS-02, VS-04 | draft | PART-ONE-HEALTH |
+| PART-ONE-HEALTH | Partition One Health | CAP-08, CAP-18, VS-02, VS-04 | draft | PART-ONE-HEALTH |
 | PART-TRANSVERSE-ANALYTICS-PILOTAGE | Partition transverse - Analytics et pilotage | PART-VS-01, PART-VS-02, PART-VS-03, PART-VS-04 | draft | PART-TRANSVERSE-ANALYTICS-PILOTAGE |
 | PART-TRANSVERSE-DONNEES-REFERENTIELLES | Partition transverse - Données référentielles | PART-VS-01, PART-VS-02, PART-VS-03, PART-VS-04 | draft | PART-TRANSVERSE-DONNEES-REFERENTIELLES |
 | PART-TRANSVERSE-IDENTITE | Partition transverse - Identité | PART-VS-01, PART-VS-02, PART-VS-03, PART-VS-04 | draft | PART-TRANSVERSE-IDENTITE |
@@ -313,7 +313,7 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | PT-12 | Audit, provenance et traçabilité | CMP-17, ABB-AUDIT-PROVENANCE, CAP-03, CAP-08, CAP-12, CAP-13, CAP-15, F-1, F-5, F-6, ART-3, ART-7 | active | PT-12 |
 | PT-13 | Qualité et réconciliation | CMP-05, ABB-RECONCILIATION-DONNEES, CAP-13, CAP-14, ART-4, ART-5, ART-6 | active | PT-13 |
 | PT-14 | Interopérabilité transfrontalière | PART-ECHANGE-TRANSFRONTALIER, CAP-15, CAP-17, CMP-06, CMP-15, CAP-18, ART-7, ART-0, ART-1 | active | PT-14 |
-| PT-15 | Surveillance One Health | PART-ONE-HEALTH, RD-DONNEES-ENVIRONNEMENTALES-CLIMAT, CAP-18, CAP-05, CMP-02, CMP-04, CMP-06, CAP-04, ART-11, ART-0, ART-4D, ART-8B | active | PT-15 |
+| PT-15 | Surveillance One Health | PART-ONE-HEALTH, RD-DONNEES-ENVIRONNEMENTALES-CLIMAT, ABB-ECHANGE-MEDIATION, ABB-EXPOSITION-DONNEES-ANALYTIQUES, CAP-08, CAP-18, CAP-05, CMP-02, CMP-04, CMP-06, CAP-04, ART-11, ART-0, ART-4D, ART-8B | active | PT-15 |
 | PT-16 | Orchestration de processus bornés | CMP-07, CMP-06, ABB-ECHANGE-MEDIATION, CAP-13, CAP-14, CAP-18, ART-8A, ART-7, PT-02 | active | PT-16 |
 | PT-17 | Logistique & chaîne d'approvisionnement (LMIS) | CMP-23, ABB-AUDIT-PROVENANCE, ABB-ECHANGE-LOGISTIQUE-LMIS, CAP-03, CAP-08, CAP-12, CAP-13, CAP-15, CAP-06, CAP-10, CAP-11, ART-10, PT-13 | active | PT-17 |
 | PT-18 | Échange de réclamations et paiements | ABB-EXPOSITION-DONNEES-ANALYTIQUES, CAP-05, CAP-13, ART-2, ART-9 | active | PT-18 |
@@ -390,7 +390,7 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | WP-04 | Analytique & pilotage | CMP-02, CMP-03, CMP-04, SRV-06, ABB-EXPOSITION-DONNEES-ANALYTIQUES, CAP-03, ART-6, PL-03 | draft | WP-04 |
 | WP-05 | Extension & pérennisation | CAP-15, SRV-06, CAP-03, ABB-CONFIANCE-AUTORISATION, PT-14, PT-15, PL-03 | draft | WP-05 |
 | WP-06 | Interopérabilité transfrontalière | CAP-15, SRV-04, ABB-CONFIANCE-AUTORISATION, ART-9, PT-14, PL-03 | draft | WP-06 |
-| WP-07 | Coordination One Health | CMP-02, ART-8B, CAP-03, PT-15, PL-03 | draft | WP-07 |
+| WP-07 | Coordination One Health | CMP-02, ART-8B, CAP-08, CAP-18, PT-15, ABB-ECHANGE-MEDIATION, ABB-EXPOSITION-DONNEES-ANALYTIQUES, PL-03 | draft | WP-07 |
 
 <!-- END:GENERATED -->
 

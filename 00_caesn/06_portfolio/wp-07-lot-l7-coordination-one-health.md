@@ -22,7 +22,7 @@ tags: ["artsn", "work-package", "wp-07", "lots"]
 
 Le lot L7 déploie les échanges de données entre santé humaine, animale et environnement pour la surveillance et la riposte coordonnée : accords interministériels, médiation intersectorielle, centre de commande One Health et corrélation des signaux faibles.
 
-Ce paquet de travail [réalise le composant de centre de commande](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-02.md), le [chapitre ART-8B (graphe de connaissances)](../../04_architecture-repository/04_patterns/artsn-rules/art-8b.md) et la [capacité « Pilotage et performance »](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-03.md), et déploie le profil [PT-15](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-15.md). Il [contribue au plateau 3](../../04_architecture-repository/07_migration/plateaux/pl-03.md).
+Ce paquet de travail [réalise le composant de centre de commande](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-02.md), le [chapitre ART-8B (graphe de connaissances)](../../04_architecture-repository/04_patterns/artsn-rules/art-8b.md), la [capabilité CAP-08 de gouvernance, coordination et redevabilité](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-08.md) et la [capabilité CAP-18 de coordination intersectorielle One Health](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-18.md). Il déploie le profil [PT-15](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-15.md), réalise [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md) et [ABB-EXPOSITION-DONNEES-ANALYTIQUES](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md), et [contribue au plateau 3](../../04_architecture-repository/07_migration/plateaux/pl-03.md).
 
 ## Unité de temps
 
@@ -34,7 +34,7 @@ Il produit les livrables suivants : accords interministériels, médiation inter
 
 ## Objectifs
 
-Il réalise les éléments de l'architecture cible : [CMP-02](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-02.md), [ART-8B](../../04_architecture-repository/04_patterns/artsn-rules/art-8b.md), [CAP-03](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-03.md).
+Il réalise la surveillance et la riposte coordonnées dans VS-02 par [CAP-18](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-18.md), ainsi que le pilotage intersectoriel et la redevabilité dans VS-04 par [CAP-08](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-08.md). Le déploiement de [PT-15](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-15.md) associe [CMP-02](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-02.md) et [ART-8B](../../04_architecture-repository/04_patterns/artsn-rules/art-8b.md) aux deux blocs d'échange et d'exposition analytique référencés ci-dessus.
 
 ## Ressources assignées
 

@@ -91,6 +91,14 @@ Chaque ADR enregistrée ici est un choix structurant, daté et traçable, produi
 |----|-------|--------|------|--------------|--------|
 | ADR-0011 | Séparation du service d'éligibilité et de couverture | **proposé** | 2026-09-24 | DEPSI | Élevé : décision de droits traçable |
 
+### One Health
+
+Le rattachement sectoriel distingue la surveillance et la riposte du pilotage institutionnel, tout en réutilisant les flux de valeur nationaux existants.
+
+| ID | Titre | Statut | Date | Propriétaire | Impact |
+|----|-------|--------|------|--------------|--------|
+| ADR-0012 | Rattachement One Health à la surveillance et au pilotage | **proposé** | 2026-09-24 | DEPSI | Élevé : coordination et redevabilité intersectorielles |
+
 ---
 
 ## Processus d'enregistrement
@@ -111,12 +119,12 @@ Chaque ADR enregistrée ici est un choix structurant, daté et traçable, produi
 
 | Statut | Nombre |
 |--------|--------|
-| Proposé | 7 |
+| Proposé | 8 |
 | Accepté | 0 |
 | Appliqué | 4 |
 | Remplacé | 0 |
 | Déprécié | 0 |
-| **Total** | **11** |
+| **Total** | **12** |
 
 ---
 
@@ -140,6 +148,7 @@ Chaque ADR enregistrée ici est un choix structurant, daté et traçable, produi
 - **ADR-0009** : Adoption d'un référentiel terminologique national (CIM-11 + LOINC) (`01_cnisn/06_decisions/adr-0009-terminologie.md`)
 - **ADR-0010** : Cadre légal et mandat d'opposabilité du CNASN (`01_cnisn/06_decisions/adr-0010-cadre-legal.md`)
 - **ADR-0011** : Séparation du service d'éligibilité et de couverture (`01_cnisn/06_decisions/adr-0011-eligibilite-couverture.md`)
+- **ADR-0012** : Rattachement One Health à la surveillance et au pilotage (`01_cnisn/06_decisions/adr-0012-one-health-pilotage.md`)
 - **Template ADR** : <Titre de la décision> (`01_cnisn/06_decisions/adr-0000-template.md`)
 - **Index des décisions** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
 - **Gouvernance** : Partie III : Gouvernance (`01_cnisn/03_gouvernance/index.md`)

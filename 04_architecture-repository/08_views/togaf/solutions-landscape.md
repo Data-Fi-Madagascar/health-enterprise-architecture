@@ -34,7 +34,7 @@ Cette vue expose les blocs de solution et les contrats techniques qui matériali
 | PT-12 | Audit, provenance et traçabilité | CMP-17, ABB-AUDIT-PROVENANCE, CAP-03, CAP-08, CAP-12, CAP-13, CAP-15, F-1, F-5, F-6, ART-3, ART-7 | active | PT-12 |
 | PT-13 | Qualité et réconciliation | CMP-05, ABB-RECONCILIATION-DONNEES, CAP-13, CAP-14, ART-4, ART-5, ART-6 | active | PT-13 |
 | PT-14 | Interopérabilité transfrontalière | PART-ECHANGE-TRANSFRONTALIER, CAP-15, CAP-17, CMP-06, CMP-15, CAP-18, ART-7, ART-0, ART-1 | active | PT-14 |
-| PT-15 | Surveillance One Health | PART-ONE-HEALTH, RD-DONNEES-ENVIRONNEMENTALES-CLIMAT, CAP-18, CAP-05, CMP-02, CMP-04, CMP-06, CAP-04, ART-11, ART-0, ART-4D, ART-8B | active | PT-15 |
+| PT-15 | Surveillance One Health | PART-ONE-HEALTH, RD-DONNEES-ENVIRONNEMENTALES-CLIMAT, ABB-ECHANGE-MEDIATION, ABB-EXPOSITION-DONNEES-ANALYTIQUES, CAP-08, CAP-18, CAP-05, CMP-02, CMP-04, CMP-06, CAP-04, ART-11, ART-0, ART-4D, ART-8B | active | PT-15 |
 | PT-16 | Orchestration de processus bornés | CMP-07, CMP-06, ABB-ECHANGE-MEDIATION, CAP-13, CAP-14, CAP-18, ART-8A, ART-7, PT-02 | active | PT-16 |
 | PT-17 | Logistique & chaîne d'approvisionnement (LMIS) | CMP-23, ABB-AUDIT-PROVENANCE, ABB-ECHANGE-LOGISTIQUE-LMIS, CAP-03, CAP-08, CAP-12, CAP-13, CAP-15, CAP-06, CAP-10, CAP-11, ART-10, PT-13 | active | PT-17 |
 | PT-18 | Échange de réclamations et paiements | ABB-EXPOSITION-DONNEES-ANALYTIQUES, CAP-05, CAP-13, ART-2, ART-9 | active | PT-18 |

@@ -1,5 +1,8 @@
 import importlib.util
 from pathlib import Path
+import subprocess
+import sys
+from tempfile import TemporaryDirectory
 import unittest
 
 
@@ -174,6 +177,32 @@ class PartitionValueStreamCoverageTests(unittest.TestCase):
 
         self.assertEqual(["VS-02"], [error[2] for error in errors])
 
+    def test_main_rejects_partition_without_value_stream_capability_coverage(self):
+        with TemporaryDirectory() as temp_dir:
+            model_dir = Path(temp_dir) / self.validator.ARCH_REPOSITORY_DIR
+            model_dir.mkdir()
+            for object_id, obj in self.graph({"CAP-18"}).items():
+                applies_to = sorted(obj["relations"].get("applies_to", set()))
+                (model_dir / (object_id.lower() + ".md")).write_text(
+                    "---\nid: %s\ntype: %s\napplies_to: %s\n---\n"
+                    % (object_id, obj["type"], applies_to),
+                    encoding="utf-8",
+                )
+            result = subprocess.run(
+                [
+                    sys.executable, "-c",
+                    "import sys; from scripts import validate_ref; "
+                    "validate_ref.REPO_ROOT = sys.argv[1]; "
+                    "sys.exit(validate_ref.main())",
+                    temp_dir,
+                ],
+                cwd=REPO_ROOT, capture_output=True, text=True,
+            )
+
+        self.assertEqual(1, result.returncode, result.stdout + result.stderr)
+        self.assertIn("PART-ONE-HEALTH", result.stdout)
+        self.assertIn("VS-04", result.stdout)
+
 
 class CanonicalMappingTests(unittest.TestCase):
     def setUp(self):
@@ -185,6 +214,24 @@ class CanonicalMappingTests(unittest.TestCase):
         return set(self.validator.list_value(
             self.validator.fm_field(frontmatter, key)
         ))
+
+    def test_one_health_covers_surveillance_and_governance(self):
+        partition = Path(
+            "04_architecture-repository/01_partitions/sectorielles/part-one-health.md"
+        )
+        self.assertEqual(
+            {"CAP-08", "CAP-18", "VS-02", "VS-04"},
+            self.relation_values(partition, "applies_to"),
+        )
+        pt15 = Path(
+            "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-15.md"
+        )
+        self.assertTrue(
+            {
+                "ABB-ECHANGE-MEDIATION", "ABB-EXPOSITION-DONNEES-ANALYTIQUES",
+                "CAP-05", "CAP-08", "CAP-18",
+            } <= self.relation_values(pt15, "maps_to")
+        )
 
     def test_pt_20_maps_eligibility_profile_to_architecture(self):
         pt20 = Path(

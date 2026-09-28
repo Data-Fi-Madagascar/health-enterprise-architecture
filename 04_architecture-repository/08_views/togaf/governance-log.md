@@ -43,6 +43,7 @@ Cette vue consolide les décisions CNISN et les registres de gouvernance du dép
 | ADR-0009 | ADR-0009 : Adoption d'un référentiel terminologique national (CIM-11 + LOINC) | PT-07 | candidate | ADR-0009 |
 | ADR-0010 | ADR-0010 : Cadre légal et mandat d'opposabilité du CNASN | LOT L1, PT-11 | candidate | ADR-0010 |
 | ADR-0011 | ADR-0011 : Séparation du service d'éligibilité et de couverture | ABB-ELIGIBILITE-COUVERTURE, CAP-07, ART-4C, ART-9, WP-03 | candidate | ADR-0011 |
+| ADR-0012 | ADR-0012 : Rattachement One Health à la surveillance et au pilotage | PART-ONE-HEALTH, VS-02, VS-04, CAP-08, CAP-18, CMP-02, ABB-ECHANGE-MEDIATION, ABB-EXPOSITION-DONNEES-ANALYTIQUES, PT-15, WP-07 | candidate | ADR-0012 |
 | ADR-CHANGE-LOG | Journal des modifications des ADR | — | active | ADR-CHANGE-LOG |
 | DECISIONS | Décisions d'architecture (ADR) | — | draft | DECISIONS |
 | REGISTRE-DECISIONS | Registre des décisions d'architecture (ADR) | — | draft | REGISTRE-DECISIONS |

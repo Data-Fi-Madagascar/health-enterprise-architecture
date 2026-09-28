@@ -30,6 +30,31 @@ def obj(object_id, object_type, **relations):
 
 
 class PartitionTraceabilityViewTests(unittest.TestCase):
+    def test_one_health_renders_complete_surveillance_and_governance_chains(self):
+        builder = load_builder()
+        objects = builder.load_objects()
+        rendered = builder.render_partition_traceability(
+            objects, builder.id_to_path(objects), str(REPO_ROOT)
+        )
+        rows = [
+            row for row in rendered.splitlines()
+            if row.startswith("| PART-ONE-HEALTH |")
+        ]
+
+        self.assertEqual(2, len(rows))
+        self.assertEqual(
+            {"VS-02", "VS-04"},
+            {row.split("|")[2].strip() for row in rows},
+        )
+        for row in rows:
+            with self.subTest(row=row):
+                cells = [cell.strip() for cell in row.split("|")[1:-1]]
+                self.assertNotEqual("n/a", cells[2])
+                self.assertNotEqual("n/a", cells[3])
+                self.assertIn("ABB-ECHANGE-MEDIATION", cells[5])
+                self.assertIn("ABB-EXPOSITION-DONNEES-ANALYTIQUES", cells[5])
+                self.assertIn("PT-15", cells[6])
+
     def test_renders_partition_to_solution_chain_from_relations(self):
         builder = load_builder()
         objects = {

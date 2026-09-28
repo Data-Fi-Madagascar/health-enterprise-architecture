@@ -11,6 +11,8 @@ class AdrDiscoveryTests(unittest.TestCase):
         self.assertNotIn("adr-change-log", validated_ids)
         self.assertNotIn("adr-change-log", indexed_ids)
         self.assertIn("adr-0011", validated_ids)
+        self.assertIn("adr-0012", validated_ids)
+        self.assertEqual(12, len(validated_ids))
         self.assertEqual(validated_ids, indexed_ids)
 
 
