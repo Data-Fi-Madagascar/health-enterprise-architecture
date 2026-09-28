@@ -7,10 +7,10 @@
 #   make docx               # 5 DOCX dans dist/ (version 0.0.1 par défaut)
 #   make docx VERSION=1.2.3 # avec version précise
 #   make pdf                # 5 PDF dans dist/ (optionnel, nécessite LaTeX)
-#   make wrappers           # régénère les 101 enveloppes du dépôt d'architecture
+#   make wrappers           # régénère les enveloppes du dépôt d'architecture
 #   make rdf                # compilation RDF/OWL + validation SHACL
 #   make sync               # synchronisation bidirectionnelle RDF ↔ Graphify
-#   make check              # idempotence des enveloppes + 0 lien relatif cassé + RDF/SHACL
+#   make check              # tests unitaires + idempotence + liens + RDF/SHACL
 #   make clean              # supprime dist/
 #
 # Release :
@@ -51,10 +51,11 @@ ref-index:
 	@echo "==> Régénération de 04_architecture-repository/_index.yaml"
 	$(PY) scripts/build_ref_index.py
 
-# Garde-fou : enveloppes à jour (A1/A4) + 0 lien relatif cassé (A2) + graphe de
-# relations sans îlot ni cible non résolue (validate_ref.py) + artefacts validés.
+# Garde-fou : tests unitaires + enveloppes à jour (A1/A4) + 0 lien relatif cassé
+# (A2) + graphe sans îlot ni cible non résolue (validate_ref.py) + artefacts validés.
 # Lecture seule : ne régénère pas, pour détecter toute édition d'un bloc généré.
 check:
+	$(PY) -m unittest discover -s tests -v
 	$(PY) scripts/build_ref_index.py --check
 	$(PY) scripts/validate_adr.py --check
 	$(PY) scripts/build_adr_index.py --check
