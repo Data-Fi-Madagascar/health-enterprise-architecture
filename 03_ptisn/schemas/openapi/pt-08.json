@@ -24,16 +24,6 @@
           "MeasureReport"
         ],
         "responses": {
-          "200": {
-            "description": "Succès",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MeasureReport"
-                }
-              }
-            }
-          },
           "400": {
             "description": "Requête invalide"
           },
@@ -42,6 +32,25 @@
           },
           "500": {
             "description": "Erreur serveur"
+          },
+          "201": {
+            "description": "Ressource créée (représentation selon Prefer)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MeasureReport"
+                }
+              }
+            },
+            "headers": {
+              "Location": {
+                "required": true,
+                "description": "Référence de la ressource créée : [base]/MeasureReport/[id]/_history/[vid] (ou [base]/MeasureReport/[id] sans versionnement)",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
           }
         },
         "requestBody": {
@@ -64,7 +73,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "MeasureReport"
+            "enum": [
+              "MeasureReport"
+            ]
           },
           "id": {
             "type": "string",
@@ -95,7 +106,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Bundle"
+            "enum": [
+              "Bundle"
+            ]
           },
           "id": {
             "type": "string",

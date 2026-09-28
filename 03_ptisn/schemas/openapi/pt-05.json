@@ -103,7 +103,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Organization"
+            "enum": [
+              "Organization"
+            ]
           },
           "id": {
             "type": "string",
@@ -134,7 +136,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Bundle"
+            "enum": [
+              "Bundle"
+            ]
           },
           "id": {
             "type": "string",

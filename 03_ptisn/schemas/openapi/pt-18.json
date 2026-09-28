@@ -24,16 +24,6 @@
           "CoverageEligibilityRequest"
         ],
         "responses": {
-          "200": {
-            "description": "Succès",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CoverageEligibilityRequest"
-                }
-              }
-            }
-          },
           "400": {
             "description": "Requête invalide"
           },
@@ -42,6 +32,25 @@
           },
           "500": {
             "description": "Erreur serveur"
+          },
+          "201": {
+            "description": "Ressource créée (représentation selon Prefer)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CoverageEligibilityRequest"
+                }
+              }
+            },
+            "headers": {
+              "Location": {
+                "required": true,
+                "description": "Référence de la ressource créée : [base]/CoverageEligibilityRequest/[id]/_history/[vid] (ou [base]/CoverageEligibilityRequest/[id] sans versionnement)",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
           }
         },
         "requestBody": {
@@ -92,15 +101,25 @@
             "schema": {
               "type": "string"
             },
-            "description": "Identifiant"
+            "description": "Identifiant métier de CoverageEligibilityResponse (recherche FHIR token : system|value)"
           },
           {
-            "name": "name",
+            "name": "request",
             "in": "query",
             "schema": {
               "type": "string"
             },
-            "description": "Nom / libellé"
+            "description": "Demande corrélée (CoverageEligibilityResponse.request) ; recherche FHIR reference",
+            "example": "CoverageEligibilityRequest/123"
+          },
+          {
+            "name": "patient",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Patient (CoverageEligibilityResponse.patient) ; recherche FHIR reference",
+            "example": "Patient/123"
           }
         ]
       }
@@ -114,16 +133,6 @@
           "Claim"
         ],
         "responses": {
-          "200": {
-            "description": "Succès",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Claim"
-                }
-              }
-            }
-          },
           "400": {
             "description": "Requête invalide"
           },
@@ -132,6 +141,25 @@
           },
           "500": {
             "description": "Erreur serveur"
+          },
+          "201": {
+            "description": "Ressource créée (représentation selon Prefer)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Claim"
+                }
+              }
+            },
+            "headers": {
+              "Location": {
+                "required": true,
+                "description": "Référence de la ressource créée : [base]/Claim/[id]/_history/[vid] (ou [base]/Claim/[id] sans versionnement)",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
           }
         },
         "requestBody": {
@@ -204,16 +232,6 @@
           "PaymentNotice"
         ],
         "responses": {
-          "200": {
-            "description": "Succès",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/PaymentNotice"
-                }
-              }
-            }
-          },
           "400": {
             "description": "Requête invalide"
           },
@@ -222,6 +240,25 @@
           },
           "500": {
             "description": "Erreur serveur"
+          },
+          "201": {
+            "description": "Ressource créée (représentation selon Prefer)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PaymentNotice"
+                }
+              }
+            },
+            "headers": {
+              "Location": {
+                "required": true,
+                "description": "Référence de la ressource créée : [base]/PaymentNotice/[id]/_history/[vid] (ou [base]/PaymentNotice/[id] sans versionnement)",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
           }
         },
         "requestBody": {
@@ -244,7 +281,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Claim"
+            "enum": [
+              "Claim"
+            ]
           },
           "id": {
             "type": "string",
@@ -275,7 +314,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "ClaimResponse"
+            "enum": [
+              "ClaimResponse"
+            ]
           },
           "id": {
             "type": "string",
@@ -306,7 +347,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "CoverageEligibilityRequest"
+            "enum": [
+              "CoverageEligibilityRequest"
+            ]
           },
           "id": {
             "type": "string",
@@ -337,7 +380,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "CoverageEligibilityResponse"
+            "enum": [
+              "CoverageEligibilityResponse"
+            ]
           },
           "id": {
             "type": "string",
@@ -368,7 +413,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "PaymentNotice"
+            "enum": [
+              "PaymentNotice"
+            ]
           },
           "id": {
             "type": "string",
@@ -399,7 +446,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Bundle"
+            "enum": [
+              "Bundle"
+            ]
           },
           "id": {
             "type": "string",

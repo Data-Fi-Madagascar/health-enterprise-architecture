@@ -169,6 +169,7 @@ def load_objects():
                 "accesses": fields.get("accesses", []) or [],
                 "uses": fields.get("uses", []) or [],
                 "partitions": fields.get("partitions", []) or [],
+                "partition_kind": fields.get("partition_kind", ""),
                 "body": body,
             }
     return objects
@@ -425,7 +426,12 @@ def render_partition_traceability(objects, path_by_id, to_dir):
                 {"capabilite"},
             ))
 
-        if assigned_building_blocks:
+        full_value_stream_scope = partition.get("partition_kind") == "value-stream"
+        if full_value_stream_scope:
+            # L'affectation d'un ABB enrichit une partition de flux entier.
+            # Elle ne réduit pas les capacités déclarées par ce flux.
+            capabilities = value_stream_capabilities | direct_capabilities | assigned_capabilities
+        elif assigned_building_blocks:
             capabilities = direct_capabilities | assigned_capabilities
         elif direct_capabilities:
             capabilities = direct_capabilities
@@ -451,7 +457,7 @@ def render_partition_traceability(objects, path_by_id, to_dir):
             ids_of_type(direct, {"architecture-building-block"}) |
             assigned_building_blocks
         )
-        if not assigned_building_blocks:
+        if full_value_stream_scope or not assigned_building_blocks:
             for candidate in by_id.values():
                 if candidate.get("type") != "architecture-building-block":
                     continue

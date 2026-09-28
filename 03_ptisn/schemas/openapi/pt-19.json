@@ -24,16 +24,6 @@
           "PlanDefinition"
         ],
         "responses": {
-          "200": {
-            "description": "Succès",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/PlanDefinition"
-                }
-              }
-            }
-          },
           "400": {
             "description": "Requête invalide"
           },
@@ -42,6 +32,25 @@
           },
           "500": {
             "description": "Erreur serveur"
+          },
+          "201": {
+            "description": "Ressource créée (représentation selon Prefer)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlanDefinition"
+                }
+              }
+            },
+            "headers": {
+              "Location": {
+                "required": true,
+                "description": "Référence de la ressource créée : [base]/PlanDefinition/[id]/_history/[vid] (ou [base]/PlanDefinition/[id] sans versionnement)",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
           }
         },
         "requestBody": {
@@ -65,16 +74,6 @@
           "ActivityDefinition"
         ],
         "responses": {
-          "200": {
-            "description": "Succès",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ActivityDefinition"
-                }
-              }
-            }
-          },
           "400": {
             "description": "Requête invalide"
           },
@@ -83,6 +82,25 @@
           },
           "500": {
             "description": "Erreur serveur"
+          },
+          "201": {
+            "description": "Ressource créée (représentation selon Prefer)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ActivityDefinition"
+                }
+              }
+            },
+            "headers": {
+              "Location": {
+                "required": true,
+                "description": "Référence de la ressource créée : [base]/ActivityDefinition/[id]/_history/[vid] (ou [base]/ActivityDefinition/[id] sans versionnement)",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
           }
         },
         "requestBody": {
@@ -208,7 +226,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "ActivityDefinition"
+            "enum": [
+              "ActivityDefinition"
+            ]
           },
           "id": {
             "type": "string",
@@ -239,7 +259,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "PlanDefinition"
+            "enum": [
+              "PlanDefinition"
+            ]
           },
           "id": {
             "type": "string",
@@ -270,7 +292,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Bundle"
+            "enum": [
+              "Bundle"
+            ]
           },
           "id": {
             "type": "string",

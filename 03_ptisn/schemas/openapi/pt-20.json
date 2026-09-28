@@ -19,7 +19,7 @@
       "get": {
         "operationId": "pt20coverage_search",
         "summary": "T1 — Consultation d'une couverture",
-        "description": "T1 — Consultation d'une couverture — Application métier → Registre d'éligibilité (R/O : R). Standard : FHIR R4 `Coverage` search",
+        "description": "T1 — Consultation d'une couverture — Application métier → Registre d'éligibilité (R/O : R). Standard : FHIR R4 `Coverage` search (`beneficiary` ou `patient`, `identifier`)",
         "tags": [
           "Coverage"
         ],
@@ -51,15 +51,25 @@
             "schema": {
               "type": "string"
             },
-            "description": "Identifiant"
+            "description": "Identifiant métier de Coverage (recherche FHIR token : system|value)"
           },
           {
-            "name": "name",
+            "name": "beneficiary",
             "in": "query",
             "schema": {
               "type": "string"
             },
-            "description": "Nom / libellé"
+            "description": "Bénéficiaire (Coverage.beneficiary) ; recherche FHIR reference",
+            "example": "Patient/123"
+          },
+          {
+            "name": "patient",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Patient couvert (Coverage.beneficiary) ; recherche FHIR reference",
+            "example": "Patient/123"
           }
         ]
       }
@@ -73,16 +83,6 @@
           "CoverageEligibilityRequest"
         ],
         "responses": {
-          "200": {
-            "description": "Succès",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CoverageEligibilityRequest"
-                }
-              }
-            }
-          },
           "400": {
             "description": "Requête invalide"
           },
@@ -91,6 +91,25 @@
           },
           "500": {
             "description": "Erreur serveur"
+          },
+          "201": {
+            "description": "Ressource créée (représentation selon Prefer)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CoverageEligibilityRequest"
+                }
+              }
+            },
+            "headers": {
+              "Location": {
+                "required": true,
+                "description": "Référence de la ressource créée : [base]/CoverageEligibilityRequest/[id]/_history/[vid] (ou [base]/CoverageEligibilityRequest/[id] sans versionnement)",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
           }
         },
         "requestBody": {
@@ -109,7 +128,7 @@
       "get": {
         "operationId": "pt20coverageeligibilityresponse_search",
         "summary": "T3 — Réponse d'éligibilité",
-        "description": "T3 — Réponse d'éligibilité — Registre d'éligibilité → Application métier (R/O : R). Standard : FHIR R4 `CoverageEligibilityResponse`",
+        "description": "T3 — Réponse d'éligibilité — Registre d'éligibilité → Application métier (R/O : R). Standard : FHIR R4 `CoverageEligibilityResponse` search (`request`, `patient`, `identifier`)",
         "tags": [
           "CoverageEligibilityResponse"
         ],
@@ -141,15 +160,25 @@
             "schema": {
               "type": "string"
             },
-            "description": "Identifiant"
+            "description": "Identifiant métier de CoverageEligibilityResponse (recherche FHIR token : system|value)"
           },
           {
-            "name": "name",
+            "name": "request",
             "in": "query",
             "schema": {
               "type": "string"
             },
-            "description": "Nom / libellé"
+            "description": "Demande corrélée (CoverageEligibilityResponse.request) ; recherche FHIR reference",
+            "example": "CoverageEligibilityRequest/123"
+          },
+          {
+            "name": "patient",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Patient (CoverageEligibilityResponse.patient) ; recherche FHIR reference",
+            "example": "Patient/123"
           }
         ]
       }
@@ -211,7 +240,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Coverage"
+            "enum": [
+              "Coverage"
+            ]
           },
           "id": {
             "type": "string",
@@ -242,7 +273,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "CoverageEligibilityRequest"
+            "enum": [
+              "CoverageEligibilityRequest"
+            ]
           },
           "id": {
             "type": "string",
@@ -273,7 +306,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "CoverageEligibilityResponse"
+            "enum": [
+              "CoverageEligibilityResponse"
+            ]
           },
           "id": {
             "type": "string",
@@ -304,7 +339,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "InsurancePlan"
+            "enum": [
+              "InsurancePlan"
+            ]
           },
           "id": {
             "type": "string",
@@ -335,7 +372,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Bundle"
+            "enum": [
+              "Bundle"
+            ]
           },
           "id": {
             "type": "string",

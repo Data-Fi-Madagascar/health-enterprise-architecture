@@ -121,7 +121,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Communication"
+            "enum": [
+              "Communication"
+            ]
           },
           "id": {
             "type": "string",
@@ -152,7 +154,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Observation"
+            "enum": [
+              "Observation"
+            ]
           },
           "id": {
             "type": "string",
@@ -183,7 +187,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Bundle"
+            "enum": [
+              "Bundle"
+            ]
           },
           "id": {
             "type": "string",

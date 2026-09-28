@@ -293,6 +293,26 @@ def build_fhir_operation(resource, verb, profile_id, transaction):
             {"name": "name", "in": "query",
              "schema": {"type": "string"}, "description": "Nom / libellé"}
         ]
+        # Sélecteurs FHIR R4 de ces ressources financières : `name` n'est
+        # défini ni pour Coverage ni pour CoverageEligibilityResponse.
+        # La référence de demande permet de retrouver la réponse corrélée.
+        if resource in ("Coverage", "CoverageEligibilityResponse"):
+            selectors = (
+                [("beneficiary", "Bénéficiaire (Coverage.beneficiary)", "Patient/123"),
+                 ("patient", "Patient couvert (Coverage.beneficiary)", "Patient/123")]
+                if resource == "Coverage" else
+                [("request", "Demande corrélée (CoverageEligibilityResponse.request)",
+                  "CoverageEligibilityRequest/123"),
+                 ("patient", "Patient (CoverageEligibilityResponse.patient)", "Patient/123")]
+            )
+            op["parameters"] = [
+                {"name": "identifier", "in": "query", "schema": {"type": "string"},
+                 "description": "Identifiant métier de %s (recherche FHIR token : system|value)" % resource}
+            ] + [
+                {"name": name, "in": "query", "schema": {"type": "string"},
+                 "description": description + " ; recherche FHIR reference", "example": example}
+                for name, description, example in selectors
+            ]
 
     if verb in ("create", "update", "authorize", "validate", "expand", "translate"):
         op["requestBody"] = {
@@ -316,6 +336,21 @@ def build_fhir_operation(resource, verb, profile_id, transaction):
                 "schema": {"$ref": "#/components/schemas/%s" % resource}
             }
         }
+
+    if verb == "create":
+        # FHIR R4 REST create : la référence assignée par le serveur est
+        # fournie dans Location, même sans représentation dans le corps.
+        created_response = op["responses"].pop("200")
+        created_response["description"] = "Ressource créée (représentation selon Prefer)"
+        created_response["headers"] = {
+            "Location": {
+                "required": True,
+                "description": "Référence de la ressource créée : [base]/%s/[id]/_history/[vid] "
+                               "(ou [base]/%s/[id] sans versionnement)" % (resource, resource),
+                "schema": {"type": "string"},
+            }
+        }
+        op["responses"]["201"] = created_response
 
     return path, method, op
 
@@ -428,7 +463,7 @@ def build_fhir_schema(resource):
         "properties": {
             "resourceType": {
                 "type": "string",
-                "const": resource
+                "enum": [resource]
             },
             "id": {
                 "type": "string",
@@ -1302,7 +1337,8 @@ def collect_profiles():
     profiles = []
     profile_pattern = os.path.join(LEGACY_PROFILES_DIR, "pt-*.md")
     for path in sorted(glob.glob(profile_pattern)):
-        text = open(path, encoding="utf-8").read()
+        with open(path, encoding="utf-8") as source:
+            text = source.read()
         fm = parse_frontmatter(text)
         if fm is None:
             continue

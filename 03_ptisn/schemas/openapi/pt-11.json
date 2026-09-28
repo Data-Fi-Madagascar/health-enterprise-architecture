@@ -24,16 +24,6 @@
           "Consent"
         ],
         "responses": {
-          "200": {
-            "description": "Succès",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Consent"
-                }
-              }
-            }
-          },
           "400": {
             "description": "Requête invalide"
           },
@@ -42,6 +32,25 @@
           },
           "500": {
             "description": "Erreur serveur"
+          },
+          "201": {
+            "description": "Ressource créée (représentation selon Prefer)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Consent"
+                }
+              }
+            },
+            "headers": {
+              "Location": {
+                "required": true,
+                "description": "Référence de la ressource créée : [base]/Consent/[id]/_history/[vid] (ou [base]/Consent/[id] sans versionnement)",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
           }
         },
         "requestBody": {
@@ -133,7 +142,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Consent"
+            "enum": [
+              "Consent"
+            ]
           },
           "id": {
             "type": "string",
@@ -164,7 +175,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Bundle"
+            "enum": [
+              "Bundle"
+            ]
           },
           "id": {
             "type": "string",
