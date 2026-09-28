@@ -58,6 +58,61 @@ class EligibilityOpenApiTests(unittest.TestCase):
                          {parameter["name"] for parameter in operation["parameters"]})
 
 
+class AggregateReportOpenApiTests(unittest.TestCase):
+    def test_aggregate_profiles_acknowledge_completed_submission_without_creation_location(self):
+        profiles = {profile["id"]: profile for profile in compile_openapi.collect_profiles()}
+        for profile_id in ("PT-08", "PT-09", "PT-14"):
+            with self.subTest(profile=profile_id):
+                profile = profiles[profile_id]
+                spec = compile_openapi.generate_spec(profile_id, profile["fm"], profile["body"])
+                operation = spec["paths"]["/MeasureReport"]["post"]
+                self.assertIn("200", operation["responses"])
+                self.assertNotIn("201", operation["responses"])
+                acknowledgement = operation["responses"]["200"]
+                self.assertNotIn("Location", acknowledgement.get("headers", {}))
+                self.assertNotIn("content", acknowledgement)
+                self.assertEqual("#/components/schemas/MeasureReport",
+                                 operation["requestBody"]["content"]["application/json"]["schema"]["$ref"])
+                self.assertEqual("%smeasurereport_create" % profile_id.lower().replace("-", ""),
+                                 operation["operationId"])
+
+    def test_only_explicit_async_aggregate_transaction_has_accepted_response(self):
+        profiles = {profile["id"]: profile for profile in compile_openapi.collect_profiles()}
+        for profile_id, expected_successes in (
+            ("PT-08", {"200"}), ("PT-09", {"200"}), ("PT-14", {"200", "202"}),
+        ):
+            with self.subTest(profile=profile_id):
+                profile = profiles[profile_id]
+                spec = compile_openapi.generate_spec(profile_id, profile["fm"], profile["body"])
+                operation = spec["paths"]["/MeasureReport"]["post"]
+                self.assertEqual(expected_successes,
+                                 {code for code in operation["responses"] if code.startswith("2")})
+                self.assertNotIn("303", operation["responses"])
+
+    def test_aggregate_standard_takes_precedence_over_fhir_resource_discovery(self):
+        transaction = {
+            "name": "Soumission de rapport agrégé", "actors": "Déclarant → Récepteur",
+            "ro": "R", "standard": "IHE mADX / FHIR R4 MeasureReport",
+        }
+        operations, _tag = compile_openapi.map_standard_to_operations(transaction, "PT-08", None)
+        path, method, operation, resource = operations[0]
+        self.assertEqual(("/MeasureReport", "post", "MeasureReport"), (path, method, resource))
+        self.assertIn("200", operation["responses"])
+        self.assertNotIn("201", operation["responses"])
+
+    def test_plain_fhir_measure_report_creation_retains_created_location(self):
+        transaction = {
+            "name": "Création de rapport", "actors": "Client → Serveur",
+            "ro": "R", "standard": "FHIR R4 MeasureReport",
+        }
+        operations, _tag = compile_openapi.map_standard_to_operations(transaction, "PT-08", None)
+        path, method, operation, resource = operations[0]
+        self.assertEqual(("/MeasureReport", "post", "MeasureReport"), (path, method, resource))
+        self.assertIn("201", operation["responses"])
+        self.assertNotIn("200", operation["responses"])
+        self.assertTrue(operation["responses"]["201"]["headers"]["Location"]["required"])
+
+
 class OpenApiSchemaCompatibilityTests(unittest.TestCase):
     def test_all_generated_specs_use_openapi_303_resource_type_enums(self):
         def assert_no_const(value, path):

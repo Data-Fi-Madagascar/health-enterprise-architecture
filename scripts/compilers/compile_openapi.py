@@ -355,6 +355,31 @@ def build_fhir_operation(resource, verb, profile_id, transaction):
     return path, method, op
 
 
+def build_aggregate_report_operation(profile_id, transaction):
+    """Soumission ADX/mADX : accusé de traitement, sans création REST FHIR."""
+    resource = "MeasureReport"
+    description = "%s — %s (R/O : %s). Standard : %s" % (
+        transaction["name"], transaction["actors"], transaction["ro"],
+        transaction["standard"])
+    # Conserver le chemin, la méthode et l'identifiant d'opération publiés.
+    op = build_simple_operation(profile_id, resource, "create", resource,
+                                transaction["name"], description, method_hint="post")
+    op["requestBody"] = {
+        "required": True,
+        "content": {"application/json": {
+            "schema": {"$ref": "#/components/schemas/MeasureReport"}
+        }},
+    }
+    # QRPH-58 : 200 signifie que le rapport a été traité. L'accusé n'impose
+    # ni Location de création ni représentation de la ressource envoyée.
+    op["responses"]["200"] = {"description": "Rapport agrégé traité : accusé de réception"}
+    if re.search(r"\b(?:asynchrone|asynchronous|async)\b", transaction["standard"], re.IGNORECASE):
+        op["responses"]["202"] = {
+            "description": "Rapport agrégé accepté pour traitement ; traitement non terminé"
+        }
+    return "/MeasureReport", "post", op
+
+
 def map_standard_to_operations(t, profile_id, schema_resolver):
     """Traduit une transaction (name/standard) en liste d'opérations OpenAPI.
 
@@ -364,6 +389,12 @@ def map_standard_to_operations(t, profile_id, schema_resolver):
     std = t["standard"]
     text = (name + " " + std)
     tag = None
+
+    # Une transaction agrégée reste une soumission même si son standard
+    # cite explicitement la ressource FHIR MeasureReport.
+    if re.search(r"\b(?:madx|adx)\b", std, re.IGNORECASE):
+        path, method, op = build_aggregate_report_operation(profile_id, t)
+        return [(path, method, op, "MeasureReport")], "MeasureReport"
 
     # ---- Opérations FHIR par ien source de ressource ----
     resources = find_fhir_resources(std)
@@ -436,10 +467,6 @@ def map_standard_to_operations(t, profile_id, schema_resolver):
                                     name, "%s (%s)" % (name, std),
                                     method_hint="post", path_tpl=path)
         return [(path, "post", op, "Token")], "Auth"
-    if "madx" in s or "adx" in s:
-        res = "MeasureReport"
-        path, method, op = build_fhir_operation(res, "create", profile_id, t)
-        return [(path, method, op, res)], res
     if "cds hooks" in s:
         path = "/cds-services/{hook}"
         op = build_simple_operation(profile_id, "CDSHooksRequest", "invoke",
