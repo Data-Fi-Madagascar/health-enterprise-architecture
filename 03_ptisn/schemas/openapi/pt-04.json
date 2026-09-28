@@ -134,7 +134,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Patient"
+            "enum": [
+              "Patient"
+            ]
           },
           "id": {
             "type": "string",
@@ -165,7 +167,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Bundle"
+            "enum": [
+              "Bundle"
+            ]
           },
           "id": {
             "type": "string",

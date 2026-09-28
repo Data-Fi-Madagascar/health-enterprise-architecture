@@ -47,6 +47,22 @@ Chaque entree suit le format :
 
 ## Historique des modifications
 
+### [2026-09-24] - Creation - ADR-0011
+- **Auteur** : Equipes DEPSI
+- **Description** : Creation de la decision qui institue un service distinct d'eligibilite et de couverture, separe des responsabilites de resolution d'identite et de consentement. Les echanges de couverture et de verification des droits utilisent HL7 FHIR R4.
+- **Statut initial** : `candidate`
+- **Justification** : Rendre explicite et auditable la decision de droits applicable a une prestation, un programme et une date.
+- **Liens** : [ADR-0011](adr-0011-eligibilite-couverture.md), [CAP-07](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-07.md), [ABB-ELIGIBILITE-COUVERTURE](../../04_architecture-repository/05_building-blocks/abb/abb-eligibilite-couverture.md), [PT-20](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-20.md), [CMP-12](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-12.md)
+- **Impact** : Etablit la chaine CAP-07 vers ABB-ELIGIBILITE-COUVERTURE, PT-20 et CMP-12. Aucun produit ni fournisseur n'est choisi ; les regles metier de couverture restent a definir par les programmes responsables.
+
+### [2026-09-24] - Creation - ADR-0012
+- **Auteur** : Equipes DEPSI
+- **Description** : Creation de la decision qui conserve le rattachement de One Health a VS-02 pour la surveillance et la riposte via CAP-18, ainsi qu'a VS-04 pour la gouvernance intersectorielle, le pilotage et la redevabilite via CAP-08.
+- **Statut initial** : `candidate`
+- **Justification** : Completer les deux chaines de valeur de la partition sans creer un flux de valeur One Health supplementaire.
+- **Liens** : [ADR-0012](adr-0012-one-health-pilotage.md), [PART-ONE-HEALTH](../../04_architecture-repository/01_partitions/sectorielles/part-one-health.md), [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md), [ABB-EXPOSITION-DONNEES-ANALYTIQUES](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md), [PT-15](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-15.md), [WP-07](../../04_architecture-repository/07_migration/work-packages/wp-07.md)
+- **Impact** : Reutilise les blocs d'echange et d'exposition analytique, preserve leur portee transverse et rend les chaines One Health derivables dans la vue de tracabilite. Le validateur controle une capabilite commune pour chaque flux declare.
+
 ### [2026-07-01] - Creation - ADR-0001 a ADR-0010
 - **Auteur** : Equipes DEPSI
 - **Description** : Creation initiale des 10 premiers ADR couvrant les decisions architecturales fondamentales du CNISN

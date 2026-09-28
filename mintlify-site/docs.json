@@ -405,7 +405,8 @@
               "/ptisn/profils/pt-16-orchestration-processus",
               "/ptisn/profils/pt-17-logistique-lmis",
               "/ptisn/profils/pt-18-echange-reclamations-paiements",
-              "/ptisn/profils/pt-19-aide-decision-clinique"
+              "/ptisn/profils/pt-19-aide-decision-clinique",
+              "/ptisn/profils/pt-20-eligibilite-couverture"
             ]
           },
           {

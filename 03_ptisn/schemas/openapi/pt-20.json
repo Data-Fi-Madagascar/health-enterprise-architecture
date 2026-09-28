@@ -1,177 +1,27 @@
 {
   "openapi": "3.0.3",
   "info": {
-    "title": "HEA - Logistique & chaîne d'approvisionnement (LMIS) (PT-17)",
-    "description": "Profil PT-17 — Logistique & chaîne d'approvisionnement (LMIS). 4 transactions.",
-    "version": "0.1",
+    "title": "HEA - Éligibilité et couverture (PT-20)",
+    "description": "Profil PT-20 — Éligibilité et couverture. 4 transactions.",
+    "version": "0.4",
     "contact": {
       "name": "DEPSI - Madagascar"
     }
   },
   "servers": [
     {
-      "url": "https://lmis.health.mg/api/v1",
-      "description": "Service logistique et chaîne d'approvisionnement (LMIS)"
+      "url": "https://coverage.health.mg/fhir",
+      "description": "Registre national d'éligibilité et de couverture"
     }
   ],
   "paths": {
-    "/InventoryReport": {
-      "post": {
-        "operationId": "pt17inventoryreport_create",
-        "summary": "T1 — Remontée de niveaux de stock",
-        "description": "T1 — Remontée de niveaux de stock — LMIS → Référentiel (R/O : R). Standard : FHIR `InventoryReport` (R4)",
+    "/Coverage": {
+      "get": {
+        "operationId": "pt20coverage_search",
+        "summary": "T1 — Consultation d'une couverture",
+        "description": "T1 — Consultation d'une couverture — Application métier → Registre d'éligibilité (R/O : R). Standard : FHIR R4 `Coverage` search (`beneficiary` ou `patient`, `identifier`)",
         "tags": [
-          "InventoryReport"
-        ],
-        "responses": {
-          "400": {
-            "description": "Requête invalide"
-          },
-          "401": {
-            "description": "Authentification requise"
-          },
-          "500": {
-            "description": "Erreur serveur"
-          },
-          "201": {
-            "description": "Ressource créée (représentation selon Prefer)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/InventoryReport"
-                }
-              }
-            },
-            "headers": {
-              "Location": {
-                "required": true,
-                "description": "Référence de la ressource créée : [base]/InventoryReport/[id]/_history/[vid] (ou [base]/InventoryReport/[id] sans versionnement)",
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        },
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/InventoryReport"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/SupplyDelivery": {
-      "post": {
-        "operationId": "pt17supplydelivery_create",
-        "summary": "T2 — Mouvement de stock",
-        "description": "T2 — Mouvement de stock — LMIS → LMIS/Partenaire (R/O : R). Standard : FHIR `SupplyDelivery` / `SupplyRequest` (R4)",
-        "tags": [
-          "SupplyDelivery"
-        ],
-        "responses": {
-          "400": {
-            "description": "Requête invalide"
-          },
-          "401": {
-            "description": "Authentification requise"
-          },
-          "500": {
-            "description": "Erreur serveur"
-          },
-          "201": {
-            "description": "Ressource créée (représentation selon Prefer)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SupplyDelivery"
-                }
-              }
-            },
-            "headers": {
-              "Location": {
-                "required": true,
-                "description": "Référence de la ressource créée : [base]/SupplyDelivery/[id]/_history/[vid] (ou [base]/SupplyDelivery/[id] sans versionnement)",
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        },
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SupplyDelivery"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/SupplyRequest": {
-      "post": {
-        "operationId": "pt17supplyrequest_create",
-        "summary": "T2 — Mouvement de stock",
-        "description": "T2 — Mouvement de stock — LMIS → LMIS/Partenaire (R/O : R). Standard : FHIR `SupplyDelivery` / `SupplyRequest` (R4)",
-        "tags": [
-          "SupplyRequest"
-        ],
-        "responses": {
-          "400": {
-            "description": "Requête invalide"
-          },
-          "401": {
-            "description": "Authentification requise"
-          },
-          "500": {
-            "description": "Erreur serveur"
-          },
-          "201": {
-            "description": "Ressource créée (représentation selon Prefer)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SupplyRequest"
-                }
-              }
-            },
-            "headers": {
-              "Location": {
-                "required": true,
-                "description": "Référence de la ressource créée : [base]/SupplyRequest/[id]/_history/[vid] (ou [base]/SupplyRequest/[id] sans versionnement)",
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        },
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SupplyRequest"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/service/call": {
-      "post": {
-        "operationId": "pt17xroadrequest_call",
-        "summary": "T4 — Échange interopérable",
-        "description": "T4 — Échange interopérable (X-Road (STD-0003, ADR-0001) — STD-0009)",
-        "tags": [
-          "X-Road"
+          "Coverage"
         ],
         "responses": {
           "200": {
@@ -179,7 +29,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/XRoadRequest"
+                  "$ref": "#/components/schemas/Bundle"
                 }
               }
             }
@@ -193,19 +43,205 @@
           "500": {
             "description": "Erreur serveur"
           }
+        },
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Identifiant métier de Coverage (recherche FHIR token : system|value)"
+          },
+          {
+            "name": "beneficiary",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Bénéficiaire (Coverage.beneficiary) ; recherche FHIR reference",
+            "example": "Patient/123"
+          },
+          {
+            "name": "patient",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Patient couvert (Coverage.beneficiary) ; recherche FHIR reference",
+            "example": "Patient/123"
+          }
+        ]
+      }
+    },
+    "/CoverageEligibilityRequest": {
+      "post": {
+        "operationId": "pt20coverageeligibilityrequest_create",
+        "summary": "T2 — Demande de vérification des droits",
+        "description": "T2 — Demande de vérification des droits — Application métier → Registre d'éligibilité (R/O : R). Standard : FHIR R4 `CoverageEligibilityRequest`",
+        "tags": [
+          "CoverageEligibilityRequest"
+        ],
+        "responses": {
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          },
+          "201": {
+            "description": "Ressource créée (représentation selon Prefer)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CoverageEligibilityRequest"
+                }
+              }
+            },
+            "headers": {
+              "Location": {
+                "required": true,
+                "description": "Référence de la ressource créée : [base]/CoverageEligibilityRequest/[id]/_history/[vid] (ou [base]/CoverageEligibilityRequest/[id] sans versionnement)",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CoverageEligibilityRequest"
+              }
+            }
+          }
         }
+      }
+    },
+    "/CoverageEligibilityResponse": {
+      "get": {
+        "operationId": "pt20coverageeligibilityresponse_search",
+        "summary": "T3 — Réponse d'éligibilité",
+        "description": "T3 — Réponse d'éligibilité — Registre d'éligibilité → Application métier (R/O : R). Standard : FHIR R4 `CoverageEligibilityResponse` search (`request`, `patient`, `identifier`)",
+        "tags": [
+          "CoverageEligibilityResponse"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Bundle"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Identifiant métier de CoverageEligibilityResponse (recherche FHIR token : system|value)"
+          },
+          {
+            "name": "request",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Demande corrélée (CoverageEligibilityResponse.request) ; recherche FHIR reference",
+            "example": "CoverageEligibilityRequest/123"
+          },
+          {
+            "name": "patient",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Patient (CoverageEligibilityResponse.patient) ; recherche FHIR reference",
+            "example": "Patient/123"
+          }
+        ]
+      }
+    },
+    "/InsurancePlan": {
+      "get": {
+        "operationId": "pt20insuranceplan_search",
+        "summary": "T4 — Consultation d'un régime de couverture",
+        "description": "T4 — Consultation d'un régime de couverture — Application métier → Registre d'éligibilité (R/O : O). Standard : FHIR R4 `InsurancePlan` search",
+        "tags": [
+          "InsurancePlan"
+        ],
+        "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Bundle"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide"
+          },
+          "401": {
+            "description": "Authentification requise"
+          },
+          "500": {
+            "description": "Erreur serveur"
+          }
+        },
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Identifiant"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Nom / libellé"
+          }
+        ]
       }
     }
   },
   "components": {
     "schemas": {
-      "InventoryReport": {
+      "Coverage": {
         "type": "object",
         "properties": {
           "resourceType": {
             "type": "string",
             "enum": [
-              "InventoryReport"
+              "Coverage"
             ]
           },
           "id": {
@@ -232,13 +268,13 @@
           }
         }
       },
-      "SupplyDelivery": {
+      "CoverageEligibilityRequest": {
         "type": "object",
         "properties": {
           "resourceType": {
             "type": "string",
             "enum": [
-              "SupplyDelivery"
+              "CoverageEligibilityRequest"
             ]
           },
           "id": {
@@ -265,13 +301,13 @@
           }
         }
       },
-      "SupplyRequest": {
+      "CoverageEligibilityResponse": {
         "type": "object",
         "properties": {
           "resourceType": {
             "type": "string",
             "enum": [
-              "SupplyRequest"
+              "CoverageEligibilityResponse"
             ]
           },
           "id": {
@@ -298,13 +334,13 @@
           }
         }
       },
-      "XRoadResponse": {
+      "InsurancePlan": {
         "type": "object",
         "properties": {
           "resourceType": {
             "type": "string",
             "enum": [
-              "XRoadResponse"
+              "InsurancePlan"
             ]
           },
           "id": {
@@ -363,38 +399,44 @@
             }
           }
         }
+      },
+      "DO15": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-15.json"
+      },
+      "DO14": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-14.json"
+      },
+      "DO17": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-17.json"
       }
     }
   },
-  "x-hea-id": "PT-17",
-  "x-hea-title": "Logistique & chaîne d'approvisionnement (LMIS)",
-  "x-hea-version": "0.1",
+  "x-hea-id": "PT-20",
+  "x-hea-title": "Éligibilité et couverture",
+  "x-hea-version": "0.4",
   "x-hea-type": "profil-technique",
   "x-hea-maps-to": [
-    "ABB-AUDIT-PROVENANCE",
-    "ABB-ECHANGE-LOGISTIQUE-LMIS",
-    "CAP-03",
-    "CAP-08",
-    "CAP-12",
-    "CAP-13",
-    "CAP-15",
-    "CAP-06",
-    "CAP-10",
-    "CAP-11"
+    "ABB-ELIGIBILITE-COUVERTURE",
+    "CAP-07"
   ],
   "x-hea-implements": [
-    "ART-10"
+    "ART-4C",
+    "ART-9"
   ],
   "x-hea-applies-to": [
-    "CMP-23"
+    "CMP-12"
   ],
-  "x-hea-source": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-17.md",
+  "x-hea-source": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-20.md",
   "x-hea-fhir-resources": [
-    "InventoryReport",
-    "SupplyDelivery",
-    "SupplyRequest",
-    "XRoadResponse"
+    "Coverage",
+    "CoverageEligibilityRequest",
+    "CoverageEligibilityResponse",
+    "InsurancePlan"
   ],
-  "x-hea-data-objects": [],
-  "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-17.md"
+  "x-hea-data-objects": [
+    "DO-14",
+    "DO-15",
+    "DO-17"
+  ],
+  "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-20.md"
 }

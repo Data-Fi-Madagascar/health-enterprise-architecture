@@ -17,10 +17,10 @@ architecture_level: enterprise-transversal
 architecture_domain: data
 architecture_scope: interoperability
 architecture_state: target
-partitions: ["PART-TRANSVERSE-ANALYTICS-PILOTAGE"]
+partitions: ["PART-TRANSVERSE-ANALYTICS-PILOTAGE", "PART-ONE-HEALTH"]
 maps_to: ["CAP-05", "CAP-13"]
 implements: ["ART-3", "ART-5", "ART-6", "ART-7"]
-related: ["PART-TRANSVERSE-ANALYTICS-PILOTAGE", "P-INT-05", "P-INT-06", "P-INT-07", "P-INT-08", "P-INT-09", "P-INT-17", "P-INT-18", "P-INT-19", "P-INT-20", "P-INT-21", "P-INT-22", "P-INT-23", "P-INT-24", "P-INT-25"]
+related: ["PART-TRANSVERSE-ANALYTICS-PILOTAGE", "PART-ONE-HEALTH", "P-INT-05", "P-INT-06", "P-INT-07", "P-INT-08", "P-INT-09", "P-INT-17", "P-INT-18", "P-INT-19", "P-INT-20", "P-INT-21", "P-INT-22", "P-INT-23", "P-INT-24", "P-INT-25"]
 tags: ["cnisn", "abb", "analytique", "donnees"]
 ---
 # Accès et exposition des données analytiques
@@ -66,4 +66,5 @@ La conception interne des entrepôts, projections et modèles analytiques relèv
 ## Rattachement
 
 - [Partition transverse - Analytics et pilotage](../../01_partitions/transverses/part-transverse-analytics-pilotage.md)
+- [Partition sectorielle - One Health](../../01_partitions/sectorielles/part-one-health.md)
 - [ART-6: Analytique et restitution](../../04_patterns/artsn-rules/art-6.md)

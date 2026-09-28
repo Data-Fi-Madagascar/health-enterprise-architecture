@@ -3,11 +3,11 @@
 # Source de vérité : frontmatter Markdown sous 04_architecture-repository/.
 # Champs : id, type, niveau, chemin, status, title.
 # Statuts : draft | active | stable | candidate | deprecated
-# Total : 369 objets
+# Total : 371 objets
 #
 # Comptes par type :
 # - acteur : 6
-# - architecture-building-block : 12
+# - architecture-building-block : 13
 # - architecture-contract : 1
 # - architecture-partition : 11
 # - architecture-pattern : 3
@@ -30,7 +30,7 @@
 # - plateau : 3
 # - principe : 74
 # - processus-metier : 13
-# - profil : 19
+# - profil : 20
 # - reference-data : 2
 # - registre-gouvernance : 8
 # - role : 5
@@ -43,7 +43,7 @@
 # - draft : 185
 # - active : 111
 # - stable : 29
-# - candidate : 44
+# - candidate : 46
 # - deprecated : 0
 
 # niveau 1 / flux-valeur (4)
@@ -1320,7 +1320,7 @@
   status: "active"
   title: "Réévaluation continue"
 
-# niveau 2 / architecture-building-block (12)
+# niveau 2 / architecture-building-block (13)
 - id: "ABB-AUDIT-PROVENANCE"
   type: "architecture-building-block"
   niveau: "2"
@@ -1351,6 +1351,12 @@
   chemin: "05_building-blocks/abb/abb-echange-mediation.md"
   status: "candidate"
   title: "Échange et médiation inter-systèmes"
+- id: "ABB-ELIGIBILITE-COUVERTURE"
+  type: "architecture-building-block"
+  niveau: "2"
+  chemin: "05_building-blocks/abb/abb-eligibilite-couverture.md"
+  status: "candidate"
+  title: "Éligibilité et couverture sanitaire"
 - id: "ABB-EXPOSITION-DONNEES-ANALYTIQUES"
   type: "architecture-building-block"
   niveau: "2"
@@ -1750,7 +1756,7 @@
   status: "draft"
   title: "Aide à la décision clinique"
 
-# niveau 4 / profil (19)
+# niveau 4 / profil (20)
 - id: "PT-01"
   type: "profil"
   niveau: "4"
@@ -1865,6 +1871,12 @@
   chemin: "05_building-blocks/sbb/legacy-profiles/pt-19.md"
   status: "active"
   title: "Aide à la décision clinique (CDS)"
+- id: "PT-20"
+  type: "profil"
+  niveau: "4"
+  chemin: "05_building-blocks/sbb/legacy-profiles/pt-20.md"
+  status: "candidate"
+  title: "Éligibilité et couverture"
 
 # niveau ? / acteur (6)
 - id: "ACT-01"

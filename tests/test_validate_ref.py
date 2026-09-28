@@ -1,5 +1,8 @@
 import importlib.util
 from pathlib import Path
+import subprocess
+import sys
+from tempfile import TemporaryDirectory
 import unittest
 
 
@@ -102,6 +105,105 @@ class PartitionRelationTests(unittest.TestCase):
         self.assertIn("architecture-partition", errors[0][3])
 
 
+class PartitionValueStreamCoverageTests(unittest.TestCase):
+    def setUp(self):
+        self.validator = load_validator()
+
+    def graph(self, partition_caps):
+        return {
+            "PART-ONE-HEALTH": {
+                "id": "PART-ONE-HEALTH",
+                "file": "/tmp/part-one-health.md",
+                "type": "architecture-partition",
+                "relations": {
+                    "applies_to": set(partition_caps) | {"VS-02", "VS-04"},
+                },
+            },
+            "VS-02": {
+                "id": "VS-02", "file": "/tmp/vs-02.md", "type": "flux-valeur",
+                "relations": {"applies_to": {"CAP-18"}},
+            },
+            "VS-04": {
+                "id": "VS-04", "file": "/tmp/vs-04.md", "type": "flux-valeur",
+                "relations": {"applies_to": {"CAP-08"}},
+            },
+            "CAP-08": {"id": "CAP-08", "file": "/tmp/cap-08.md", "type": "capabilite", "relations": {}},
+            "CAP-18": {"id": "CAP-18", "file": "/tmp/cap-18.md", "type": "capabilite", "relations": {}},
+        }
+
+    def test_rejects_explicit_value_stream_without_common_capability(self):
+        errors = self.validator.check_partition_value_stream_coverage(
+            self.graph({"CAP-18"})
+        )
+        self.assertEqual(["VS-04"], [error[2] for error in errors])
+
+    def test_accepts_each_explicit_value_stream_with_common_capability(self):
+        errors = self.validator.check_partition_value_stream_coverage(
+            self.graph({"CAP-08", "CAP-18"})
+        )
+        self.assertEqual([], errors)
+
+    def test_accepts_value_stream_covered_only_by_assigned_abb_maps_to(self):
+        graph = self.graph(set())
+        graph["PART-ONE-HEALTH"]["relations"]["applies_to"] = {"VS-02", "CAP-08"}
+        graph["VS-02"]["relations"]["applies_to"] = {"CAP-18"}
+        graph["ABB-ONE-HEALTH"] = {
+            "id": "ABB-ONE-HEALTH", "file": "/tmp/abb-one-health.md",
+            "type": "architecture-building-block",
+            "relations": {
+                "partitions": {"PART-ONE-HEALTH"},
+                "maps_to": {"CAP-18"},
+            },
+        }
+
+        errors = self.validator.check_partition_value_stream_coverage(graph)
+
+        self.assertEqual([], errors)
+
+    def test_rejects_assigned_abb_maps_to_capability_without_value_stream_overlap(self):
+        graph = self.graph(set())
+        graph["PART-ONE-HEALTH"]["relations"]["applies_to"] = {"VS-02", "CAP-08"}
+        graph["VS-02"]["relations"]["applies_to"] = {"CAP-18"}
+        graph["ABB-ONE-HEALTH"] = {
+            "id": "ABB-ONE-HEALTH", "file": "/tmp/abb-one-health.md",
+            "type": "architecture-building-block",
+            "relations": {
+                "partitions": {"PART-ONE-HEALTH"},
+                "maps_to": {"CAP-08"},
+            },
+        }
+
+        errors = self.validator.check_partition_value_stream_coverage(graph)
+
+        self.assertEqual(["VS-02"], [error[2] for error in errors])
+
+    def test_main_rejects_partition_without_value_stream_capability_coverage(self):
+        with TemporaryDirectory() as temp_dir:
+            model_dir = Path(temp_dir) / self.validator.ARCH_REPOSITORY_DIR
+            model_dir.mkdir()
+            for object_id, obj in self.graph({"CAP-18"}).items():
+                applies_to = sorted(obj["relations"].get("applies_to", set()))
+                (model_dir / (object_id.lower() + ".md")).write_text(
+                    "---\nid: %s\ntype: %s\napplies_to: %s\n---\n"
+                    % (object_id, obj["type"], applies_to),
+                    encoding="utf-8",
+                )
+            result = subprocess.run(
+                [
+                    sys.executable, "-c",
+                    "import sys; from scripts import validate_ref; "
+                    "validate_ref.REPO_ROOT = sys.argv[1]; "
+                    "sys.exit(validate_ref.main())",
+                    temp_dir,
+                ],
+                cwd=REPO_ROOT, capture_output=True, text=True,
+            )
+
+        self.assertEqual(1, result.returncode, result.stdout + result.stderr)
+        self.assertIn("PART-ONE-HEALTH", result.stdout)
+        self.assertIn("VS-04", result.stdout)
+
+
 class CanonicalMappingTests(unittest.TestCase):
     def setUp(self):
         self.validator = load_validator()
@@ -112,6 +214,35 @@ class CanonicalMappingTests(unittest.TestCase):
         return set(self.validator.list_value(
             self.validator.fm_field(frontmatter, key)
         ))
+
+    def test_one_health_covers_surveillance_and_governance(self):
+        partition = Path(
+            "04_architecture-repository/01_partitions/sectorielles/part-one-health.md"
+        )
+        self.assertEqual(
+            {"CAP-08", "CAP-18", "VS-02", "VS-04"},
+            self.relation_values(partition, "applies_to"),
+        )
+        pt15 = Path(
+            "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-15.md"
+        )
+        self.assertTrue(
+            {
+                "ABB-ECHANGE-MEDIATION", "ABB-EXPOSITION-DONNEES-ANALYTIQUES",
+                "CAP-05", "CAP-08", "CAP-18",
+            } <= self.relation_values(pt15, "maps_to")
+        )
+
+    def test_pt_20_maps_eligibility_profile_to_architecture(self):
+        pt20 = Path(
+            "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-20.md"
+        )
+        self.assertEqual(
+            {"ABB-ELIGIBILITE-COUVERTURE", "CAP-07"},
+            self.relation_values(pt20, "maps_to"),
+        )
+        self.assertEqual({"CMP-12"}, self.relation_values(pt20, "applies_to"))
+        self.assertEqual({"ART-4C", "ART-9"}, self.relation_values(pt20, "implements"))
 
     def test_legacy_services_realize_their_business_responsibility(self):
         expected = {
@@ -145,7 +276,7 @@ class CanonicalMappingTests(unittest.TestCase):
         expected = {
             "cmp-10.md": {"ABB-SERVICE-TERMINOLOGIE"},
             "cmp-11.md": {"ABB-IDENTITE-BENEFICIAIRE"},
-            "cmp-12.md": {"CAP-07"},
+            "cmp-12.md": {"ABB-ELIGIBILITE-COUVERTURE"},
             "cmp-14.md": {
                 "ABB-SERVICE-TERMINOLOGIE",
                 "ABB-ECHANGE-LOGISTIQUE-LMIS",
@@ -162,6 +293,23 @@ class CanonicalMappingTests(unittest.TestCase):
                 self.relation_values(base / filename, "maps_to"),
                 filename,
             )
+
+    def test_eligibility_is_separate_from_identity_and_consent(self):
+        abb = Path("04_architecture-repository/05_building-blocks/abb/abb-eligibilite-couverture.md")
+        self.assertEqual({"CAP-07"}, self.relation_values(abb, "maps_to"))
+        self.assertEqual({"PART-VS-03"}, self.relation_values(abb, "partitions"))
+        self.assertEqual({"ART-4C", "ART-9"}, self.relation_values(abb, "implements"))
+        self.assertEqual(
+            {"DO-14", "DO-15", "DO-16", "DO-17"},
+            self.relation_values(abb, "accesses"),
+        )
+
+        professionals = Path("04_architecture-repository/05_building-blocks/abb/abb-registre-professionnels.md")
+        pt05 = Path("04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md")
+        pt11 = Path("04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-11.md")
+        self.assertNotIn("ART-4C", self.relation_values(professionals, "implements"))
+        self.assertNotIn("ART-4C", self.relation_values(pt05, "implements"))
+        self.assertNotIn("CMP-12", self.relation_values(pt11, "applies_to"))
 
 
 if __name__ == "__main__":

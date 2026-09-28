@@ -30,7 +30,6 @@ Déclinaison de [ABB-REGISTRE-PROFESSIONNELS: Registre et résolution des profes
 - [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
 - ART-4A — Résolution d’identité
 - [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
-- [ART-4C](../../04_architecture-repository/04_patterns/artsn-rules/art-4c.md)
 
 ## 4. Acteurs (Actors)
 

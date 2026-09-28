@@ -17,10 +17,10 @@ architecture_level: enterprise-transversal
 architecture_domain: application
 architecture_scope: interoperability
 architecture_state: target
-partitions: ["PART-TRANSVERSE-INTEROPERABILITE"]
+partitions: ["PART-TRANSVERSE-INTEROPERABILITE", "PART-ONE-HEALTH"]
 maps_to: ["CAP-13", "CAP-14", "CAP-18"]
 implements: ["ART-1", "ART-2", "F-3"]
-related: ["PAT-ECHANGE-MEDIATION", "PART-TRANSVERSE-INTEROPERABILITE", "P-INT-05", "P-INT-06", "P-INT-07", "P-INT-08", "P-INT-09", "P-INT-10", "P-INT-11", "P-INT-12", "P-INT-13", "P-INT-18", "P-INT-19", "P-INT-20", "P-INT-21", "P-INT-22", "P-INT-23", "P-INT-24", "P-INT-25"]
+related: ["PAT-ECHANGE-MEDIATION", "PART-TRANSVERSE-INTEROPERABILITE", "PART-ONE-HEALTH", "P-INT-05", "P-INT-06", "P-INT-07", "P-INT-08", "P-INT-09", "P-INT-10", "P-INT-11", "P-INT-12", "P-INT-13", "P-INT-18", "P-INT-19", "P-INT-20", "P-INT-21", "P-INT-22", "P-INT-23", "P-INT-24", "P-INT-25"]
 tags: ["cnisn", "abb", "interoperabilite", "mediation"]
 ---
 # Échange et médiation inter-systèmes
@@ -68,3 +68,4 @@ Permettre aux systèmes de transmettre, recevoir, transformer et acheminer des d
 
 - [Pattern d'échange et médiation](../../04_patterns/pat-echange-mediation.md)
 - [Partition transverse - Interopérabilité](../../01_partitions/transverses/part-transverse-interoperabilite.md)
+- [Partition sectorielle - One Health](../../01_partitions/sectorielles/part-one-health.md)
