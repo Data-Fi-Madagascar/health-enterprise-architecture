@@ -79,7 +79,9 @@ RELATION_KEYS = REACHABILITY_KEYS + [
                  "assigned_to", "has_role", "located_at", "produced_by",
                  "detenu_par", "soutient_flux_de_valeur",
                  "utilise_composant", "supporte_standard",
-                 "a_pour_proprietaire_fonctionnel", "partitions"]
+                 "a_pour_proprietaire_fonctionnel", "partitions", "between",
+                 "target_plateau", "addressed_by", "evidenced_by"]
+GAP_METADATA_KEYS = ["gap_state", "closure_criteria"]
 
 # Îlots légitimes attendus (candidats non encore reliés) — ne font pas échouer.
 KNOWN_ISLANDS = {"art-10", "art-11", "f-5", "f-6"}
@@ -92,6 +94,11 @@ TYPE_CAPABILITE = "capabilite"        # niveau 1 (CAP-*)
 TYPE_CHAPITRE = "chapitre"            # niveau 3 (ART-*)
 TYPE_COMPOSANT = "composant-applicatif"  # et variantes infra/securite/gouvernance
 TYPE_PARTITION = "architecture-partition"
+TYPE_GAP = "gap"
+TYPE_PLATEAU = "plateau"
+TYPE_WORK_PACKAGE = "work-package"
+TYPE_EVIDENCE = "evidence"
+GAP_STATES = {"identified", "planned", "in-remediation", "closed", "accepted-risk"}
 
 SCHEME_RE = re.compile(r"^[a-zA-Z][a-zA-Z0-9+.-]*://")
 LINK_RE = re.compile(r"!?\[[^]]*\]\(([^)]*)\)")
@@ -314,6 +321,8 @@ def load_relation_graph():
             outgoing.update(targets)
             if k in REACHABILITY_KEYS:
                 reach_outgoing.update(targets)
+        for k in GAP_METADATA_KEYS:
+            relations[k] = set(list_value(fm_field(fm, k)))
         objects[oid] = {
             "id": oid,
             "file": path,
@@ -422,6 +431,78 @@ def check_partition_value_stream_coverage(objects):
                     partition["file"], partition_id, value_stream_id,
                     "Aucune capabilité commune entre la partition et le flux de valeur",
                 ))
+    return errors
+
+
+def check_gap_governance(objects):
+    """Vérifie que chaque gap décrit une trajectoire de clôture gouvernée."""
+    errors = []
+
+    def add_error(obj, gap_id, field, message):
+        errors.append((obj.get("file", ""), gap_id, field, message))
+
+    def values(obj, field):
+        return list(obj.get("relations", {}).get(field, []))
+
+    def check_typed_targets(obj, gap_id, field, expected_type, required=True):
+        targets = values(obj, field)
+        if required and not targets:
+            add_error(obj, gap_id, field, "%s doit contenir au moins une cible" % field)
+            return
+        for target_id in sorted(targets):
+            target_type = objects.get(target_id, {}).get("type")
+            if target_type != expected_type:
+                add_error(
+                    obj,
+                    gap_id,
+                    field,
+                    "%s doit cibler un objet de type %s, pas %s (%s)"
+                    % (field, expected_type, target_type or "non résolu", target_id),
+                )
+
+    for gap_id, obj in sorted(objects.items()):
+        if obj.get("type") != TYPE_GAP:
+            continue
+
+        states = values(obj, "gap_state")
+        if len(states) != 1 or states[0] not in GAP_STATES:
+            add_error(
+                obj,
+                gap_id,
+                "gap_state",
+                "gap_state doit contenir exactement une valeur du vocabulaire contrôlé",
+            )
+
+        target_plateaux = values(obj, "target_plateau")
+        if len(target_plateaux) != 1:
+            add_error(
+                obj,
+                gap_id,
+                "target_plateau",
+                "target_plateau doit contenir exactement une cible",
+            )
+        else:
+            check_typed_targets(obj, gap_id, "target_plateau", TYPE_PLATEAU)
+            if target_plateaux[0] not in set(values(obj, "between")):
+                add_error(
+                    obj,
+                    gap_id,
+                    "target_plateau",
+                    "target_plateau doit aussi apparaître dans between",
+                )
+
+        check_typed_targets(obj, gap_id, "addressed_by", TYPE_WORK_PACKAGE)
+        check_typed_targets(obj, gap_id, "evidenced_by", TYPE_EVIDENCE)
+
+        criteria = values(obj, "closure_criteria")
+        if not criteria or any(not criterion.strip() for criterion in criteria):
+            add_error(
+                obj,
+                gap_id,
+                "closure_criteria",
+                "closure_criteria doit contenir au moins une valeur non vide",
+            )
+
     return errors
 
 

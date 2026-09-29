@@ -204,6 +204,92 @@ class PartitionValueStreamCoverageTests(unittest.TestCase):
         self.assertIn("VS-04", result.stdout)
 
 
+class GapGovernanceTests(unittest.TestCase):
+    def setUp(self):
+        self.validator = load_validator()
+
+    def graph(self):
+        return {
+            "PL-01": {"type": "plateau", "relations": {}},
+            "PL-02": {"type": "plateau", "relations": {}},
+            "WP-01": {"type": "work-package", "relations": {}},
+            "EVID-GAP-01": {"type": "evidence", "relations": {}},
+            "GAP-01": {
+                "file": "/tmp/gap-01.md",
+                "type": "gap",
+                "relations": {
+                    "between": ["PL-01", "PL-02"],
+                    "target_plateau": ["PL-02"],
+                    "addressed_by": ["WP-01"],
+                    "evidenced_by": ["EVID-GAP-01"],
+                    "gap_state": ["planned"],
+                    "closure_criteria": ["Qualification terrain acceptée"],
+                },
+            },
+        }
+
+    def assert_gap_error(self, errors, field):
+        rendered = "\n".join(" | ".join(map(str, error)) for error in errors)
+        self.assertIn("GAP-01", rendered)
+        self.assertIn(field, rendered)
+
+    def test_accepts_complete_gap_closure_path(self):
+        self.assertEqual([], self.validator.check_gap_governance(self.graph()))
+
+    def test_rejects_missing_or_invalid_gap_state(self):
+        for value in ([], ["unknown"]):
+            with self.subTest(value=value):
+                graph = self.graph()
+                graph["GAP-01"]["relations"]["gap_state"] = value
+
+                errors = self.validator.check_gap_governance(graph)
+
+                self.assert_gap_error(errors, "gap_state")
+
+    def test_rejects_zero_or_multiple_target_plateaux(self):
+        for value in ([], ["PL-01", "PL-02"]):
+            with self.subTest(value=value):
+                graph = self.graph()
+                graph["GAP-01"]["relations"]["target_plateau"] = value
+
+                errors = self.validator.check_gap_governance(graph)
+
+                self.assert_gap_error(errors, "target_plateau")
+
+    def test_rejects_wrong_relation_target_types(self):
+        cases = (
+            ("target_plateau", "WP-01"),
+            ("addressed_by", "PL-02"),
+            ("evidenced_by", "WP-01"),
+        )
+        for field, target_id in cases:
+            with self.subTest(field=field):
+                graph = self.graph()
+                graph["GAP-01"]["relations"][field] = [target_id]
+
+                errors = self.validator.check_gap_governance(graph)
+
+                self.assert_gap_error(errors, field)
+
+    def test_rejects_empty_closure_criteria(self):
+        for value in ([], [" "]):
+            with self.subTest(value=value):
+                graph = self.graph()
+                graph["GAP-01"]["relations"]["closure_criteria"] = value
+
+                errors = self.validator.check_gap_governance(graph)
+
+                self.assert_gap_error(errors, "closure_criteria")
+
+    def test_rejects_target_plateau_outside_between(self):
+        graph = self.graph()
+        graph["GAP-01"]["relations"]["between"] = ["PL-01"]
+
+        errors = self.validator.check_gap_governance(graph)
+
+        self.assert_gap_error(errors, "target_plateau")
+
+
 class CanonicalMappingTests(unittest.TestCase):
     def setUp(self):
         self.validator = load_validator()
