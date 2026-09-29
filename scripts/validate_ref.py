@@ -118,9 +118,10 @@ def list_value(raw):
         return []
     if raw.startswith("[") and raw.endswith("]"):
         inner = raw[1:-1]
-        items = re.findall(r"['\"]([^'\"]*)['\"]", inner)
-        if items:
-            return [i for i in items if i]
+        quoted_items = re.findall(r'"([^"]*)"|\'([^\']*)\'', inner)
+        if quoted_items:
+            return [double or single for double, single in quoted_items
+                    if double or single]
         return [x.strip() for x in inner.split(",") if x.strip()]
     return [x.strip().strip("'\"") for x in raw.split(",") if x.strip()]
 

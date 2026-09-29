@@ -18,6 +18,22 @@ def load_validator():
 
 
 class ValidatorConfigurationTests(unittest.TestCase):
+    def test_inline_list_preserves_apostrophes_inside_double_quoted_values(self):
+        validator = load_validator()
+
+        parsed = validator.list_value(
+            '["Contrats d\'échange applicables identifiés", '
+            '"Pièces utilisables dans le processus d\'homologation"]'
+        )
+
+        self.assertEqual(
+            [
+                "Contrats d'échange applicables identifiés",
+                "Pièces utilisables dans le processus d'homologation",
+            ],
+            parsed,
+        )
+
     def test_source_contains_no_git_conflict_markers(self):
         source = VALIDATOR_PATH.read_text(encoding="utf-8")
 
