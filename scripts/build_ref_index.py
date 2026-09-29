@@ -29,6 +29,7 @@ DERIVED_ARCH_REPOSITORY_DOCS = {
     "08_views/togaf/solutions-landscape.md",
     "08_views/togaf/adm-traceability.md",
     "08_views/togaf/partition-traceability.md",
+    "08_views/togaf/gap-closure-roadmap.md",
 }
 STATIC_ARCH_REPOSITORY_DOCS = {
     "08_views/togaf/cap-int-migration.md",

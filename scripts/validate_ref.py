@@ -52,6 +52,7 @@ DERIVED_ARCH_REPOSITORY_DOCS = {
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "solutions-landscape.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "adm-traceability.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "partition-traceability.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "gap-closure-roadmap.md"),
 }
 STATIC_ARCH_REPOSITORY_DOCS = {
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "cap-int-migration.md"),
