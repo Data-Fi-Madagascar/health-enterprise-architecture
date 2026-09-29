@@ -8,6 +8,11 @@ owner: Direction du Numérique en Santé
 version: "0.1"
 envelope: 02_artsn/09_feuille-de-route/gap-01-cart-couverture-terrain-en-zone-isol-e.md
 between: ["PL-01", "PL-02"]
+gap_state: planned
+target_plateau: ["PL-02"]
+addressed_by: ["WP-02"]
+evidenced_by: ["EVID-GAP-01-QUALIFICATION-OFFLINE"]
+closure_criteria: ["Fonctionnement hors ligne qualifié sur un terrain représentatif de LOC-04", "Reprise de synchronisation qualifiée", "Absence de perte critique démontrée"]
 related: ["PL-01", "PL-02", "LOC-04", "CAP-01"]
 tags: ["artsn", "gap", "gap-01", "feuille-de-route"]
 ---

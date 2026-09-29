@@ -125,6 +125,11 @@ tags: ["cnisn", "autorite", "donnees-de-reference"]
 | `contributes_to` | non | Paquet de travail contribue à un plateau |
 | `precedes` | non | Plateau précède un autre plateau (ordre temporel) |
 | `between` | non | Écart (gap) entre deux plateaux |
+| `gap_state` | obligatoire pour `gap` | État opérationnel : `identified`, `planned`, `in-remediation`, `closed` ou `accepted-risk`. Distinct du cycle documentaire `status` |
+| `target_plateau` | obligatoire pour `gap` | Relation vers exactement un objet de type `plateau`, également présent dans `between` |
+| `addressed_by` | obligatoire pour `gap` | Relation vers un ou plusieurs objets de type `work-package` responsables de la remédiation |
+| `evidenced_by` | obligatoire pour `gap` | Relation vers un ou plusieurs objets de type `evidence` spécifiant les preuves de fermeture |
+| `closure_criteria` | obligatoire pour `gap` | Liste non vide de critères courts et vérifiables. Cette propriété n'est pas une relation |
 | `categorie` | non | Sous-couche ArchiMate de l'objet : `applicatif`, `infrastructure`, `securite`, `principe`, `regulation`, `acteur`, `work-package`, `data-object` |
 | `governs` | non | Liens typés : element de gouvernance qui encadre/valide un composant (sens gouvernance -> composant) |
 | `partition_kind` | conditionnel | Catégorie d'une `architecture-partition` : `value-stream`, `transverse`, `sectorielle` ou `externe` |
@@ -213,6 +218,24 @@ Le référentiel suit le modèle de relations d'ArchiMate : la **capacité** est
 | Plateau (PL) | `precedes` | Plateau (PL) | Ordre temporel | séquence de la roadmap |
 | Plateau (PL) | `realizes` | Capabilité CAESN / objet CNISN/TOGAF | Plateau *realization* Capability | l'état cible couvre l'objet ou la capabilité |
 | Écart (GAP) | `between` | Plateau, Plateau | Association | écart de couverture entre deux états |
+| Écart (GAP) | `target_plateau` | Plateau (PL) | Association | état cible unique de la remédiation, inclus dans `between` |
+| Écart (GAP) | `addressed_by` | Paquet de travail (WP) | Association | paquet responsable de la fermeture de l'écart |
+| Écart (GAP) | `evidenced_by` | Preuve (EVID) | Association | spécification des pièces attendues pour démontrer la fermeture |
+
+### Gouvernance opérationnelle des gaps
+
+Le champ général `status` décrit la maturité documentaire de la fiche. Le champ
+`gap_state` décrit séparément l'avancement de la remédiation. Un gap conforme
+porte exactement un plateau cible, au moins un paquet de travail responsable,
+au moins une preuve attendue et une liste non vide de critères de fermeture.
+
+```yaml
+gap_state: planned
+target_plateau: [PL-02]
+addressed_by: [WP-02]
+evidenced_by: [EVID-GAP-01-QUALIFICATION-OFFLINE]
+closure_criteria: ["Qualification terrain acceptée", "Synchronisation sans perte démontrée"]
+```
 
 Règle d'intégrité : un flux de valeur ne doit laisser aucune capacité orpheline ; chaque processus liste ses capacités réalisées de façon **granulaire** (pas par copie du flux parent) ; `uses` (PRC -> CMP applicatif) et `applies_to` (CMP applicatif -> PRC) sont les deux sens d'une même relation *service* et doivent rester cohérents. Le socle transverse (infrastructure CMP-26..31, securite CMP-32..38) n'est **pas** lié directement aux processus : il est atteint via `uses` depuis les composants applicatifs. La gouvernance (CMP-39..46) n'utilise pas `uses` ; elle encadre les composants via `governs`.
 

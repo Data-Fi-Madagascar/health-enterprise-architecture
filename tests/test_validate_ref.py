@@ -18,6 +18,22 @@ def load_validator():
 
 
 class ValidatorConfigurationTests(unittest.TestCase):
+    def test_inline_list_preserves_apostrophes_inside_double_quoted_values(self):
+        validator = load_validator()
+
+        parsed = validator.list_value(
+            '["Contrats d\'échange applicables identifiés", '
+            '"Pièces utilisables dans le processus d\'homologation"]'
+        )
+
+        self.assertEqual(
+            [
+                "Contrats d'échange applicables identifiés",
+                "Pièces utilisables dans le processus d'homologation",
+            ],
+            parsed,
+        )
+
     def test_source_contains_no_git_conflict_markers(self):
         source = VALIDATOR_PATH.read_text(encoding="utf-8")
 
@@ -202,6 +218,161 @@ class PartitionValueStreamCoverageTests(unittest.TestCase):
         self.assertEqual(1, result.returncode, result.stdout + result.stderr)
         self.assertIn("PART-ONE-HEALTH", result.stdout)
         self.assertIn("VS-04", result.stdout)
+
+
+class GapGovernanceTests(unittest.TestCase):
+    def setUp(self):
+        self.validator = load_validator()
+
+    def graph(self):
+        return {
+            "PL-01": {"type": "plateau", "relations": {}},
+            "PL-02": {"type": "plateau", "relations": {}},
+            "WP-01": {"type": "work-package", "relations": {}},
+            "EVID-GAP-01": {"type": "evidence", "relations": {}},
+            "GAP-01": {
+                "file": "/tmp/gap-01.md",
+                "type": "gap",
+                "relations": {
+                    "between": ["PL-01", "PL-02"],
+                    "target_plateau": ["PL-02"],
+                    "addressed_by": ["WP-01"],
+                    "evidenced_by": ["EVID-GAP-01"],
+                    "gap_state": ["planned"],
+                    "closure_criteria": ["Qualification terrain acceptée"],
+                },
+            },
+        }
+
+    def assert_gap_error(self, errors, field):
+        rendered = "\n".join(" | ".join(map(str, error)) for error in errors)
+        self.assertIn("GAP-01", rendered)
+        self.assertIn(field, rendered)
+
+    def test_accepts_complete_gap_closure_path(self):
+        self.assertEqual([], self.validator.check_gap_governance(self.graph()))
+
+    def test_rejects_missing_or_invalid_gap_state(self):
+        for value in ([], ["unknown"]):
+            with self.subTest(value=value):
+                graph = self.graph()
+                graph["GAP-01"]["relations"]["gap_state"] = value
+
+                errors = self.validator.check_gap_governance(graph)
+
+                self.assert_gap_error(errors, "gap_state")
+
+    def test_rejects_zero_or_multiple_target_plateaux(self):
+        for value in ([], ["PL-01", "PL-02"]):
+            with self.subTest(value=value):
+                graph = self.graph()
+                graph["GAP-01"]["relations"]["target_plateau"] = value
+
+                errors = self.validator.check_gap_governance(graph)
+
+                self.assert_gap_error(errors, "target_plateau")
+
+    def test_rejects_wrong_relation_target_types(self):
+        cases = (
+            ("target_plateau", "WP-01"),
+            ("addressed_by", "PL-02"),
+            ("evidenced_by", "WP-01"),
+        )
+        for field, target_id in cases:
+            with self.subTest(field=field):
+                graph = self.graph()
+                graph["GAP-01"]["relations"][field] = [target_id]
+
+                errors = self.validator.check_gap_governance(graph)
+
+                self.assert_gap_error(errors, field)
+
+    def test_rejects_empty_closure_criteria(self):
+        for value in ([], [" "]):
+            with self.subTest(value=value):
+                graph = self.graph()
+                graph["GAP-01"]["relations"]["closure_criteria"] = value
+
+                errors = self.validator.check_gap_governance(graph)
+
+                self.assert_gap_error(errors, "closure_criteria")
+
+    def test_rejects_target_plateau_outside_between(self):
+        graph = self.graph()
+        graph["GAP-01"]["relations"]["between"] = ["PL-01"]
+
+        errors = self.validator.check_gap_governance(graph)
+
+        self.assert_gap_error(errors, "target_plateau")
+
+    def test_main_rejects_invalid_gap_state(self):
+        with TemporaryDirectory() as temp_dir:
+            model_dir = Path(temp_dir) / self.validator.ARCH_REPOSITORY_DIR
+            model_dir.mkdir()
+            fixtures = {
+                "pl-01.md": "---\nid: PL-01\ntype: plateau\n---\n",
+                "pl-02.md": "---\nid: PL-02\ntype: plateau\n---\n",
+                "wp-01.md": "---\nid: WP-01\ntype: work-package\n---\n",
+                "evid-gap-01.md": "---\nid: EVID-GAP-01\ntype: evidence\n---\n",
+                "gap-01.md": (
+                    "---\nid: GAP-01\ntype: gap\n"
+                    "between: [PL-01, PL-02]\n"
+                    "target_plateau: [PL-02]\n"
+                    "addressed_by: [WP-01]\n"
+                    "evidenced_by: [EVID-GAP-01]\n"
+                    "gap_state: unknown\n"
+                    "closure_criteria: [Qualification acceptée]\n---\n"
+                ),
+            }
+            for filename, content in fixtures.items():
+                (model_dir / filename).write_text(content, encoding="utf-8")
+            result = subprocess.run(
+                [
+                    sys.executable, "-c",
+                    "import sys; from scripts import validate_ref; "
+                    "validate_ref.REPO_ROOT = sys.argv[1]; "
+                    "sys.exit(validate_ref.main())",
+                    temp_dir,
+                ],
+                cwd=REPO_ROOT, capture_output=True, text=True,
+            )
+
+        self.assertEqual(1, result.returncode, result.stdout + result.stderr)
+        self.assertIn("GAP-01", result.stdout)
+        self.assertIn("gap_state", result.stdout)
+
+
+class GapGovernanceRepositoryTests(unittest.TestCase):
+    def setUp(self):
+        self.validator = load_validator()
+
+    def test_canonical_gaps_define_approved_closure_paths(self):
+        expected = {
+            "GAP-01": {
+                "target_plateau": {"PL-02"},
+                "addressed_by": {"WP-02"},
+                "evidenced_by": {"EVID-GAP-01-QUALIFICATION-OFFLINE"},
+            },
+            "GAP-02": {
+                "target_plateau": {"PL-03"},
+                "addressed_by": {"WP-06", "WP-07"},
+                "evidenced_by": {"EVID-GAP-02-INTEROPERABILITE-ETENDUE"},
+            },
+            "GAP-03": {
+                "target_plateau": {"PL-01"},
+                "addressed_by": {"WP-01"},
+                "evidenced_by": {"EVID-GAP-03-CADRE-LEGAL"},
+            },
+        }
+        objects, _paths, _unresolved, _legacy = self.validator.load_relation_graph()
+
+        for gap_id, expected_relations in expected.items():
+            with self.subTest(gap_id=gap_id):
+                relations = objects[gap_id]["relations"]
+                for field, targets in expected_relations.items():
+                    self.assertEqual(targets, relations[field], field)
+                self.assertEqual({"planned"}, relations["gap_state"])
+                self.assertTrue(relations["closure_criteria"])
 
 
 class CanonicalMappingTests(unittest.TestCase):

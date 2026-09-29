@@ -3,7 +3,7 @@
 # Source de vérité : frontmatter Markdown sous 04_architecture-repository/.
 # Champs : id, type, niveau, chemin, status, title.
 # Statuts : draft | active | stable | candidate | deprecated
-# Total : 371 objets
+# Total : 374 objets
 #
 # Comptes par type :
 # - acteur : 6
@@ -18,7 +18,7 @@
 # - composant-infrastructure : 6
 # - composant-securite : 7
 # - etape-valeur : 28
-# - evidence : 1
+# - evidence : 4
 # - exigence : 20
 # - flux-valeur : 4
 # - fondation : 6
@@ -43,7 +43,7 @@
 # - draft : 185
 # - active : 111
 # - stable : 29
-# - candidate : 46
+# - candidate : 49
 # - deprecated : 0
 
 # niveau 1 / flux-valeur (4)
@@ -1528,7 +1528,7 @@
   status: "candidate"
   title: "Homologation d'interopérabilité"
 
-# niveau 2 / evidence (1)
+# niveau 2 / evidence (4)
 - id: "EVID-TESTS-INTEROPERABILITE"
   type: "evidence"
   niveau: "2"
@@ -1755,6 +1755,26 @@
   chemin: "04_patterns/artsn-rules/art-12.md"
   status: "draft"
   title: "Aide à la décision clinique"
+
+# niveau 3 / evidence (4)
+- id: "EVID-GAP-01-QUALIFICATION-OFFLINE"
+  type: "evidence"
+  niveau: "3"
+  chemin: "06_governance/evidence/evid-gap-01-qualification-offline.md"
+  status: "candidate"
+  title: "Preuve de qualification hors ligne et de synchronisation"
+- id: "EVID-GAP-02-INTEROPERABILITE-ETENDUE"
+  type: "evidence"
+  niveau: "3"
+  chemin: "06_governance/evidence/evid-gap-02-interoperabilite-etendue.md"
+  status: "candidate"
+  title: "Dossier d'interopérabilité transfrontalière et One Health"
+- id: "EVID-GAP-03-CADRE-LEGAL"
+  type: "evidence"
+  niveau: "3"
+  chemin: "06_governance/evidence/evid-gap-03-cadre-legal.md"
+  status: "candidate"
+  title: "Dossier de publication et d'applicabilité du cadre légal"
 
 # niveau 4 / profil (20)
 - id: "PT-01"

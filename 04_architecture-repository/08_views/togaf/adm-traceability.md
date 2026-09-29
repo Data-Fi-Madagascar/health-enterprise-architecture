@@ -186,6 +186,9 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | ENF-3 | Unicité de l'identité et résilience face à la fragmentation applicative | ART-4A, ART-2 | draft | ENF-3 |
 | ENF-4 | Cloisonnement inter-institutionnel et étanchéité des données (One Health) | ART-0, ART-4B, ART-4D, F-2, ART-2, ART-6, ART-8B, ART-8D, ART-4 | draft | ENF-4 |
 | ENF-5 | Coordination des processus complexes décentralisés et asynchrones | ART-8A, ART-8, ART-5, PT-14 | draft | ENF-5 |
+| EVID-GAP-01-QUALIFICATION-OFFLINE | Preuve de qualification hors ligne et de synchronisation | GAP-01, WP-02 | candidate | EVID-GAP-01-QUALIFICATION-OFFLINE |
+| EVID-GAP-02-INTEROPERABILITE-ETENDUE | Dossier d'interopérabilité transfrontalière et One Health | GAP-02, WP-06, WP-07 | candidate | EVID-GAP-02-INTEROPERABILITE-ETENDUE |
+| EVID-GAP-03-CADRE-LEGAL | Dossier de publication et d'applicabilité du cadre légal | GAP-03, WP-01 | candidate | EVID-GAP-03-CADRE-LEGAL |
 | EVID-TESTS-INTEROPERABILITE | Preuves de tests d'interopérabilité | CAP-16, F-4, COMP-HOMOLOGATION-INTEROPERABILITE | candidate | EVID-TESTS-INTEROPERABILITE |
 | F-1 | Résilience face à la réalité géographique du pays | ENF-1, CAP-08 | stable | F-1 |
 | F-2 | Préservation de la souveraineté intersectorielle | ENF-4 | stable | F-2 |
@@ -193,9 +196,9 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | F-4 | Homologation obligatoire | COMP-HOMOLOGATION-INTEROPERABILITE, CAP-16 | stable | F-4 |
 | F-5 | Protection et minimisation | CAP-15, P-INT-16, P-INT-17 | draft | F-5 |
 | F-6 | Observabilité | CAP-13, P-INT-18 | draft | F-6 |
-| GAP-01 | Écart — Couverture terrain en zone isolée | PL-01, PL-02, LOC-04, CAP-01 | draft | GAP-01 |
-| GAP-02 | Écart — Interopérabilité transfrontalière & One Health | PL-02, PL-03, ABB-CONFIANCE-AUTORISATION, PT-15 | draft | GAP-02 |
-| GAP-03 | Écart — Cadre légal & gouvernance publié | PL-01, CMP-39, ABB-IDENTITE-BENEFICIAIRE | draft | GAP-03 |
+| GAP-01 | Écart — Couverture terrain en zone isolée | PL-01, PL-02, LOC-04, CAP-01, WP-02, EVID-GAP-01-QUALIFICATION-OFFLINE | draft | GAP-01 |
+| GAP-02 | Écart — Interopérabilité transfrontalière & One Health | PL-02, PL-03, ABB-CONFIANCE-AUTORISATION, PT-14, PT-15, ABB-ECHANGE-MEDIATION, ABB-EXPOSITION-DONNEES-ANALYTIQUES, WP-06, WP-07, EVID-GAP-02-INTEROPERABILITE-ETENDUE | draft | GAP-02 |
+| GAP-03 | Écart — Cadre légal & gouvernance publié | PL-01, CMP-39, ABB-IDENTITE-BENEFICIAIRE, ADR-0010, WP-01, EVID-GAP-03-CADRE-LEGAL | draft | GAP-03 |
 | LOC-01 | Communauté / aire de santé | PP-04, CAP-01 | draft | LOC-01 |
 | LOC-02 | Centre de santé de base (CSB) | PP-06, CMP-01 | draft | LOC-02 |
 | LOC-03 | District sanitaire | PP-07, CMP-39 | draft | LOC-03 |

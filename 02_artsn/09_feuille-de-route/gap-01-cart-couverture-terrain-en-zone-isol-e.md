@@ -31,4 +31,20 @@ S'inscrit [PL-01](../../04_architecture-repository/07_migration/plateaux/pl-01.m
 
 Décrit ce qui n'est pas encore couvert dans le passage d'un état à l'autre (capacité, service ou condition non réalisée).
 
+## Pilotage de la fermeture
+
+**État du gap :** planned
+
+**Plateau cible :** PL-02
+
+**Work package :** WP-02
+
+**Preuve attendue :** EVID-GAP-01-QUALIFICATION-OFFLINE
+
+## Critères de fermeture
+
+- Fonctionnement hors ligne qualifié sur un terrain représentatif de LOC-04
+- Reprise de synchronisation qualifiée
+- Absence de perte critique démontrée
+
 <!-- END:GENERATED -->

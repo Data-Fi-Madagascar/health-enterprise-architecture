@@ -47,6 +47,7 @@ DERIVED_ARCH_REPOSITORY_DOCS = {
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "solutions-landscape.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "adm-traceability.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "partition-traceability.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "gap-closure-roadmap.md"),
 }
 STATIC_ARCH_REPOSITORY_DOCS = {
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "cap-int-migration.md"),
@@ -69,7 +70,8 @@ FACE = ["candidate", "deprecated"]
 RATTACHEMENT_KEYS = (
     "applies_to", "maps_to", "realizes", "implements", "related",
     "contributes_to", "governs", "serves", "accesses", "uses",
-    "partitions",
+    "partitions", "between", "target_plateau", "addressed_by",
+    "evidenced_by",
 )
 
 NATURAL_RE = re.compile(r"(\d+)")
@@ -156,6 +158,7 @@ def load_objects():
                 "type": fields.get("type", ""),
                 "title": fields.get("title", ""),
                 "status": fields.get("status", ""),
+                "owner": fields.get("owner", ""),
                 "envelope": fields.get("envelope", ""),
                 "maturity_condition": fields.get("maturity_condition", "") or "",
                 "maps_to": fields.get("maps_to", []) or [],
@@ -169,6 +172,12 @@ def load_objects():
                 "accesses": fields.get("accesses", []) or [],
                 "uses": fields.get("uses", []) or [],
                 "partitions": fields.get("partitions", []) or [],
+                "between": fields.get("between", []) or [],
+                "gap_state": fields.get("gap_state", "") or "",
+                "target_plateau": fields.get("target_plateau", []) or [],
+                "addressed_by": fields.get("addressed_by", []) or [],
+                "evidenced_by": fields.get("evidenced_by", []) or [],
+                "closure_criteria": fields.get("closure_criteria", []) or [],
                 "partition_kind": fields.get("partition_kind", ""),
                 "body": body,
             }
@@ -242,11 +251,45 @@ def badge_for(obj):
     return None
 
 
+def render_gap_governance(obj):
+    """Rend le pilotage d'un gap uniquement depuis son frontmatter canonique."""
+    if not obj.get("gap_state"):
+        return ""
+
+    work_packages = obj.get("addressed_by", [])
+    evidence = obj.get("evidenced_by", [])
+    lines = [
+        "## Pilotage de la fermeture",
+        "",
+        "**État du gap :** %s" % obj["gap_state"],
+        "",
+        "**Plateau cible :** %s" % ", ".join(obj.get("target_plateau", [])),
+        "",
+        "**%s :** %s" % (
+            "Work package" if len(work_packages) == 1 else "Work packages",
+            ", ".join(work_packages),
+        ),
+        "",
+        "**%s :** %s" % (
+            "Preuve attendue" if len(evidence) == 1 else "Preuves attendues",
+            ", ".join(evidence),
+        ),
+        "",
+        "## Critères de fermeture",
+        "",
+    ]
+    lines.extend("- %s" % criterion for criterion in obj.get("closure_criteria", []))
+    return "\n".join(lines)
+
+
 def render_transclusion(obj, mode, path_by_id):
     body = obj["body"]
     to_dir = os.path.dirname(os.path.join(REPO_ROOT, obj["envelope"]))
     from_dir = os.path.dirname(os.path.join(REPO_ROOT, obj["rel"]))
     body = rewrite_links(body, from_dir, to_dir)
+    gap_governance = render_gap_governance(obj)
+    if gap_governance:
+        body = body.rstrip() + "\n\n" + gap_governance
 
     if mode == "monographie":
         lines = body.splitlines(keepends=True)
@@ -286,6 +329,7 @@ def markdown_table_entry(rel):
         "type": fields.get("type", ""),
         "title": fields.get("title", "") or oid,
         "status": fields.get("status", ""),
+        "owner": fields.get("owner", ""),
         "envelope": fields.get("envelope", ""),
         "maturity_condition": fields.get("maturity_condition", "") or "",
         "maps_to": fields.get("maps_to", []) or [],
@@ -299,6 +343,12 @@ def markdown_table_entry(rel):
         "accesses": fields.get("accesses", []) or [],
         "uses": fields.get("uses", []) or [],
         "partitions": fields.get("partitions", []) or [],
+        "between": fields.get("between", []) or [],
+        "gap_state": fields.get("gap_state", "") or "",
+        "target_plateau": fields.get("target_plateau", []) or [],
+        "addressed_by": fields.get("addressed_by", []) or [],
+        "evidenced_by": fields.get("evidenced_by", []) or [],
+        "closure_criteria": fields.get("closure_criteria", []) or [],
         "body": "",
     }
 
@@ -526,6 +576,76 @@ def render_partition_traceability(objects, path_by_id, to_dir):
     return "\n".join(lines)
 
 
+def render_gap_closure_roadmap(objects, path_by_id, to_dir):
+    """Construit la chaîne de fermeture gouvernée de chaque gap."""
+    gaps = sorted(
+        (obj for obj in objects.values() if obj.get("type") == "gap"),
+        key=lambda obj: natural_key(obj["id"]),
+    )
+
+    def escape(value):
+        return str(value).replace("|", "\\|").replace("\n", " ")
+
+    def link(object_id):
+        rel = path_by_id.get(object_id)
+        if not rel:
+            return escape(object_id)
+        target = os.path.relpath(
+            os.path.join(REPO_ROOT, rel), to_dir
+        ).replace(os.sep, "/")
+        return "[%s](%s)" % (escape(object_id), target)
+
+    def links(object_ids):
+        return ", ".join(link(object_id) for object_id in object_ids) or "—"
+
+    lines = [
+        "| Gap | État | Transition | Plateau cible | Responsable | Work packages | Objets impactés | Critères de clôture | Preuves |",
+        "|---|---|---|---|---|---|---|---|---|",
+    ]
+    for gap in gaps:
+        target_ids = list(gap.get("target_plateau", []))
+        target_id = target_ids[0] if target_ids else ""
+        between = list(gap.get("between", []))
+        source_ids = [object_id for object_id in between if object_id != target_id]
+        source = links(source_ids) if source_ids else "État initial"
+        transition = "%s → %s → %s" % (
+            source,
+            link(gap["id"]),
+            link(target_id) if target_id else "—",
+        )
+        structural_ids = set(between)
+        structural_ids.update(target_ids)
+        structural_ids.update(gap.get("addressed_by", []))
+        structural_ids.update(gap.get("evidenced_by", []))
+        impacts = sorted(
+            set(gap.get("related", [])) - structural_ids,
+            key=natural_key,
+        )
+        title = gap.get("title", "")
+        gap_cell = link(gap["id"])
+        if title and title != gap["id"]:
+            gap_cell += " — " + escape(title)
+        criteria = "<br>".join(
+            escape(value) for value in gap.get("closure_criteria", [])
+        ) or "—"
+        lines.append(
+            "| %s | %s | %s | %s | %s | %s | %s | %s | %s |"
+            % (
+                gap_cell,
+                escape(gap.get("gap_state", "") or "—"),
+                transition,
+                links(target_ids),
+                escape(gap.get("owner", "") or "—"),
+                links(sorted(gap.get("addressed_by", []), key=natural_key)),
+                links(impacts),
+                criteria,
+                links(sorted(gap.get("evidenced_by", []), key=natural_key)),
+            )
+        )
+
+    return "\n".join(lines)
+
+
 def parse_attributes(attr_text):
     attrs = {"mode": None, "source": []}
     for match in ATTRIB.finditer(attr_text):
@@ -622,6 +742,9 @@ def generate_file(objects, path_by_id, rel):
         elif attrs["mode"] == "partition-traceability":
             to_dir = os.path.dirname(abs_path)
             body = render_partition_traceability(objects, path_by_id, to_dir)
+        elif attrs["mode"] == "gap-closure-roadmap":
+            to_dir = os.path.dirname(abs_path)
+            body = render_gap_closure_roadmap(objects, path_by_id, to_dir)
         else:
             covered = []
             candidates = attached
