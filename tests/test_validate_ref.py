@@ -289,6 +289,75 @@ class GapGovernanceTests(unittest.TestCase):
 
         self.assert_gap_error(errors, "target_plateau")
 
+    def test_main_rejects_invalid_gap_state(self):
+        with TemporaryDirectory() as temp_dir:
+            model_dir = Path(temp_dir) / self.validator.ARCH_REPOSITORY_DIR
+            model_dir.mkdir()
+            fixtures = {
+                "pl-01.md": "---\nid: PL-01\ntype: plateau\n---\n",
+                "pl-02.md": "---\nid: PL-02\ntype: plateau\n---\n",
+                "wp-01.md": "---\nid: WP-01\ntype: work-package\n---\n",
+                "evid-gap-01.md": "---\nid: EVID-GAP-01\ntype: evidence\n---\n",
+                "gap-01.md": (
+                    "---\nid: GAP-01\ntype: gap\n"
+                    "between: [PL-01, PL-02]\n"
+                    "target_plateau: [PL-02]\n"
+                    "addressed_by: [WP-01]\n"
+                    "evidenced_by: [EVID-GAP-01]\n"
+                    "gap_state: unknown\n"
+                    "closure_criteria: [Qualification acceptée]\n---\n"
+                ),
+            }
+            for filename, content in fixtures.items():
+                (model_dir / filename).write_text(content, encoding="utf-8")
+            result = subprocess.run(
+                [
+                    sys.executable, "-c",
+                    "import sys; from scripts import validate_ref; "
+                    "validate_ref.REPO_ROOT = sys.argv[1]; "
+                    "sys.exit(validate_ref.main())",
+                    temp_dir,
+                ],
+                cwd=REPO_ROOT, capture_output=True, text=True,
+            )
+
+        self.assertEqual(1, result.returncode, result.stdout + result.stderr)
+        self.assertIn("GAP-01", result.stdout)
+        self.assertIn("gap_state", result.stdout)
+
+
+class GapGovernanceRepositoryTests(unittest.TestCase):
+    def setUp(self):
+        self.validator = load_validator()
+
+    def test_canonical_gaps_define_approved_closure_paths(self):
+        expected = {
+            "GAP-01": {
+                "target_plateau": {"PL-02"},
+                "addressed_by": {"WP-02"},
+                "evidenced_by": {"EVID-GAP-01-QUALIFICATION-OFFLINE"},
+            },
+            "GAP-02": {
+                "target_plateau": {"PL-03"},
+                "addressed_by": {"WP-06", "WP-07"},
+                "evidenced_by": {"EVID-GAP-02-INTEROPERABILITE-ETENDUE"},
+            },
+            "GAP-03": {
+                "target_plateau": {"PL-01"},
+                "addressed_by": {"WP-01"},
+                "evidenced_by": {"EVID-GAP-03-CADRE-LEGAL"},
+            },
+        }
+        objects, _paths, _unresolved, _legacy = self.validator.load_relation_graph()
+
+        for gap_id, expected_relations in expected.items():
+            with self.subTest(gap_id=gap_id):
+                relations = objects[gap_id]["relations"]
+                for field, targets in expected_relations.items():
+                    self.assertEqual(targets, relations[field], field)
+                self.assertEqual({"planned"}, relations["gap_state"])
+                self.assertTrue(relations["closure_criteria"])
+
 
 class CanonicalMappingTests(unittest.TestCase):
     def setUp(self):

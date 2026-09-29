@@ -8,7 +8,12 @@ owner: Direction du Numérique en Santé
 version: "0.1"
 envelope: 02_artsn/09_feuille-de-route/gap-03-cart-cadre-l-gal-gouvernance-publi.md
 between: ["PL-01"]
-related: ["PL-01", "CMP-39", "ABB-IDENTITE-BENEFICIAIRE"]
+gap_state: planned
+target_plateau: ["PL-01"]
+addressed_by: ["WP-01"]
+evidenced_by: ["EVID-GAP-03-CADRE-LEGAL"]
+closure_criteria: ["Cadre CNASN approuvé et publié", "Charte de protection approuvée et publiée", "Références officielles enregistrées", "Pièces utilisables dans le processus d'homologation"]
+related: ["PL-01", "CMP-39", "ABB-IDENTITE-BENEFICIAIRE", "ADR-0010"]
 tags: ["artsn", "gap", "gap-03", "feuille-de-route"]
 ---
 # Écart — Cadre légal & gouvernance publié

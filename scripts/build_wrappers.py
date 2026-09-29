@@ -69,7 +69,8 @@ FACE = ["candidate", "deprecated"]
 RATTACHEMENT_KEYS = (
     "applies_to", "maps_to", "realizes", "implements", "related",
     "contributes_to", "governs", "serves", "accesses", "uses",
-    "partitions",
+    "partitions", "between", "target_plateau", "addressed_by",
+    "evidenced_by",
 )
 
 NATURAL_RE = re.compile(r"(\d+)")
@@ -156,6 +157,7 @@ def load_objects():
                 "type": fields.get("type", ""),
                 "title": fields.get("title", ""),
                 "status": fields.get("status", ""),
+                "owner": fields.get("owner", ""),
                 "envelope": fields.get("envelope", ""),
                 "maturity_condition": fields.get("maturity_condition", "") or "",
                 "maps_to": fields.get("maps_to", []) or [],
@@ -169,6 +171,12 @@ def load_objects():
                 "accesses": fields.get("accesses", []) or [],
                 "uses": fields.get("uses", []) or [],
                 "partitions": fields.get("partitions", []) or [],
+                "between": fields.get("between", []) or [],
+                "gap_state": fields.get("gap_state", "") or "",
+                "target_plateau": fields.get("target_plateau", []) or [],
+                "addressed_by": fields.get("addressed_by", []) or [],
+                "evidenced_by": fields.get("evidenced_by", []) or [],
+                "closure_criteria": fields.get("closure_criteria", []) or [],
                 "partition_kind": fields.get("partition_kind", ""),
                 "body": body,
             }
@@ -242,11 +250,45 @@ def badge_for(obj):
     return None
 
 
+def render_gap_governance(obj):
+    """Rend le pilotage d'un gap uniquement depuis son frontmatter canonique."""
+    if not obj.get("gap_state"):
+        return ""
+
+    work_packages = obj.get("addressed_by", [])
+    evidence = obj.get("evidenced_by", [])
+    lines = [
+        "## Pilotage de la fermeture",
+        "",
+        "**État du gap :** %s" % obj["gap_state"],
+        "",
+        "**Plateau cible :** %s" % ", ".join(obj.get("target_plateau", [])),
+        "",
+        "**%s :** %s" % (
+            "Work package" if len(work_packages) == 1 else "Work packages",
+            ", ".join(work_packages),
+        ),
+        "",
+        "**%s :** %s" % (
+            "Preuve attendue" if len(evidence) == 1 else "Preuves attendues",
+            ", ".join(evidence),
+        ),
+        "",
+        "## Critères de fermeture",
+        "",
+    ]
+    lines.extend("- %s" % criterion for criterion in obj.get("closure_criteria", []))
+    return "\n".join(lines)
+
+
 def render_transclusion(obj, mode, path_by_id):
     body = obj["body"]
     to_dir = os.path.dirname(os.path.join(REPO_ROOT, obj["envelope"]))
     from_dir = os.path.dirname(os.path.join(REPO_ROOT, obj["rel"]))
     body = rewrite_links(body, from_dir, to_dir)
+    gap_governance = render_gap_governance(obj)
+    if gap_governance:
+        body = body.rstrip() + "\n\n" + gap_governance
 
     if mode == "monographie":
         lines = body.splitlines(keepends=True)
@@ -286,6 +328,7 @@ def markdown_table_entry(rel):
         "type": fields.get("type", ""),
         "title": fields.get("title", "") or oid,
         "status": fields.get("status", ""),
+        "owner": fields.get("owner", ""),
         "envelope": fields.get("envelope", ""),
         "maturity_condition": fields.get("maturity_condition", "") or "",
         "maps_to": fields.get("maps_to", []) or [],
@@ -299,6 +342,12 @@ def markdown_table_entry(rel):
         "accesses": fields.get("accesses", []) or [],
         "uses": fields.get("uses", []) or [],
         "partitions": fields.get("partitions", []) or [],
+        "between": fields.get("between", []) or [],
+        "gap_state": fields.get("gap_state", "") or "",
+        "target_plateau": fields.get("target_plateau", []) or [],
+        "addressed_by": fields.get("addressed_by", []) or [],
+        "evidenced_by": fields.get("evidenced_by", []) or [],
+        "closure_criteria": fields.get("closure_criteria", []) or [],
         "body": "",
     }
 

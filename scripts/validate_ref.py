@@ -224,7 +224,8 @@ def collect_external_relation_ids():
     """IDs documentaires hors référentiel acceptés comme cibles de relation."""
     ids = set()
     for path in iter_md(REPO_ROOT, EXTERNAL_RELATION_DIRS):
-        text = open(path, encoding="utf-8").read()
+        with open(path, encoding="utf-8") as fh:
+            text = fh.read()
         fm, _body = parse_frontmatter(text)
         if fm:
             oid = parse_id(fm)
@@ -302,7 +303,8 @@ def load_relation_graph():
         rel_path = os.path.relpath(path, REPO_ROOT)
         if rel_path in EXCLUDED_GRAPH_DOCS:
             continue  # fichier de métamodèle, pas un nœud de graphe
-        text = open(path, encoding="utf-8").read()
+        with open(path, encoding="utf-8") as fh:
+            text = fh.read()
         fm, _body = parse_frontmatter(text)
         if fm is None:
             continue
@@ -772,6 +774,17 @@ def main():
                      value_stream_id, message))
     else:
         print("[OK] Chaque flux déclaré par une partition partage une capabilité couverte.")
+
+    gap_governance_errors = check_gap_governance(objects)
+    if gap_governance_errors:
+        ok = False
+        print("\n[ERREUR] Gouvernance de fermeture des gaps invalide : %d"
+              % len(gap_governance_errors))
+        for f, gap_id, field, message in gap_governance_errors[:50]:
+            print("  - %s (%s) [%s] : %s"
+                  % (os.path.relpath(f, REPO_ROOT), gap_id, field, message))
+    else:
+        print("[OK] Tous les gaps définissent une trajectoire de fermeture gouvernée.")
 
     if adr_ref_errors:
         ok = False

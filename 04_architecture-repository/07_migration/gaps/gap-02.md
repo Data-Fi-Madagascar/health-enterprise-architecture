@@ -8,7 +8,12 @@ owner: Direction du Numérique en Santé
 version: "0.1"
 envelope: 02_artsn/09_feuille-de-route/gap-02-cart-interop-rabilit-transfrontali-re-one-health.md
 between: ["PL-02", "PL-03"]
-related: ["PL-02", "PL-03", "ABB-CONFIANCE-AUTORISATION", "PT-15"]
+gap_state: planned
+target_plateau: ["PL-03"]
+addressed_by: ["WP-06", "WP-07"]
+evidenced_by: ["EVID-GAP-02-INTEROPERABILITE-ETENDUE"]
+closure_criteria: ["Accord de gouvernance disponible pour le périmètre transfrontalier", "Accord de gouvernance disponible pour le périmètre One Health", "Contrats d'échange applicables identifiés", "Échange transfrontalier testé", "Échange One Health testé", "Responsabilités et remédiations documentées"]
+related: ["PL-02", "PL-03", "ABB-CONFIANCE-AUTORISATION", "PT-14", "PT-15", "ABB-ECHANGE-MEDIATION", "ABB-EXPOSITION-DONNEES-ANALYTIQUES"]
 tags: ["artsn", "gap", "gap-02", "feuille-de-route"]
 ---
 # Écart — Interopérabilité transfrontalière & One Health
