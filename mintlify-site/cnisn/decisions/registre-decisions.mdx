@@ -107,6 +107,14 @@ Le catalogue des objets de données passe de trente et un à vingt-trois entrée
 |----|-------|--------|------|--------------|--------|
 | ADR-0014 | Rationalisation du catalogue des objets de données par fusion, gouvernance de la valeur d'usage et traçabilité des retraits | **proposé** | 2026-11-21 | DEPSI | Élevé : lisibilité et traçabilité de la couche données |
 
+### Sémantique de l'accès aux données
+
+La relation `accesses` porte deux énoncés distincts, celui du processus qui manipule la donnée et celui du composant qui la détient. Les arêtes de processus sont adossées à un composant mobilisé, les systèmes de référence déclarent eux-mêmes leur accès, et `uses` et `applies_to` sont vérifiés symétriques.
+
+| ID | Titre | Statut | Date | Propriétaire | Impact |
+|----|-------|--------|------|--------------|--------|
+| ADR-0015 | Deux emplois de l'accès aux données, adossement des arêtes de processus et autorité du système de référence | **proposé** | 2026-11-21 | DEPSI | Élevé : bouclage de la chaîne à quatre couches |
+
 
 ## Processus d'enregistrement
 
@@ -125,12 +133,12 @@ Le catalogue des objets de données passe de trente et un à vingt-trois entrée
 
 | Statut | Nombre |
 |--------|--------|
-| Proposé | 10 |
+| Proposé | 11 |
 | Accepté | 0 |
 | Appliqué | 4 |
 | Remplacé | 0 |
 | Déprécié | 0 |
-| **Total** | **14** |
+| **Total** | **15** |
 
 
 ## Liens
@@ -156,6 +164,7 @@ Le catalogue des objets de données passe de trente et un à vingt-trois entrée
 - **ADR-0012** : Rattachement One Health à la surveillance et au pilotage (`01_cnisn/06_decisions/adr-0012-one-health-pilotage.md`)
 - **ADR-0013** : Taxonomie des fonctions de domaine comme référence de couverture et réconciliation de la chaîne vers les données (`01_cnisn/06_decisions/adr-0013-cadrage-fonctions-domaine.md`)
 - **ADR-0014** : Rationalisation du catalogue des objets de données par fusion, gouvernance de la valeur d'usage et traçabilité des retraits (`01_cnisn/06_decisions/adr-0014-rationalisation-catalogue-donnees.md`)
+- **ADR-0015** : Deux emplois de l'accès aux données, adossement des arêtes de processus et autorité du système de référence (`01_cnisn/06_decisions/adr-0015-semantique-acces-donnees.md`)
 - **Template ADR** : <Titre de la décision> (`01_cnisn/06_decisions/adr-0000-template.md`)
 - **Index des décisions** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
 - **Gouvernance** : Partie III : Gouvernance (`01_cnisn/03_gouvernance/index.md`)

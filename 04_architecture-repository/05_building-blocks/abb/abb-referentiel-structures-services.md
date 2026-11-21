@@ -19,8 +19,9 @@ architecture_scope: interoperability
 architecture_state: target
 partitions: ["PART-TRANSVERSE-DONNEES-REFERENTIELLES"]
 maps_to: ["CAP-11", "CAP-13", "CAP-14"]
+accesses: ["DO-23", "DO-26"]
 implements: ["ART-4", "ART-5", "ART-6"]
-related: ["RD-STRUCTURES-SERVICES", "PART-TRANSVERSE-DONNEES-REFERENTIELLES", "DO-23", "P-INT-01", "P-INT-02", "P-INT-03", "P-INT-04"]
+related: ["RD-STRUCTURES-SERVICES", "PART-TRANSVERSE-DONNEES-REFERENTIELLES", "DO-23", "DO-26", "P-INT-01", "P-INT-02", "P-INT-03", "P-INT-04"]
 tags: ["cnisn", "abb", "referentiel", "structures"]
 ---
 # Référentiel des structures et services de santé

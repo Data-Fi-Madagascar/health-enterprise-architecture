@@ -345,12 +345,14 @@ Ce document agrege les monographies des composants reference par la cartographie
 **Contenu normatif.** Ce composant opere la PKI nationale du systeme de sante numerique : il emet, rotate et revoque les certificats des acteurs, structures et dispositifs, et fournit les services d'horodatage et de signature. Il est l'autorite de confiance a la base de l'authentification et du chiffrement.
 **Discipline de mise en oeuvre.** Tout composant et toute liaison s'authentifie par certificat. La chaine de confiance est sous autorite nationale et ses racines sont protegees. La rotation des cles est planifiee et la revocation diffusee sans delai. Les operations de signature sont conformes aux normes en vigueur.
 - **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md).
+- **Données portées** : [DO-31 : Ancre de confiance](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-31.md)
 - **Statut : Brouillon.**
 
 ### CMP-36 : Passerelle de confiance mondiale OMS (GDHCN)
 **Contenu normatif.** Ce composant interconnecte le systeme avec la Gateway de confiance mondiale de l'OMS (GDHCN) pour la verification internationale des certificats de vaccination et de sante. Il publie les certificats nationaux signes et consomme ceux des etats partenaires, dans le respect des protocoles GDHCN.
 **Discipline de mise en oeuvre.** Les echanges internationaux n'exposent que les donnees necessaires, signees et chiffrees, conformement aux conventions (CMP-41). La confiance repose sur la PKI nationale (CMP-35). Les acces sont traces et les anomalies remontees a la surveillance (CMP-37).
 - **Rattachement** : [ART-7: Securite, controle d'acces et residence de la donnee](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md).
+- **Données portées** : [DO-31 : Ancre de confiance](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-31.md)
 - **Statut : Brouillon.**
 
 ### CMP-37 : Journal d'audit immuable

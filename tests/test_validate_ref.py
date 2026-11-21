@@ -450,6 +450,167 @@ class DataObjectGovernanceTests(unittest.TestCase):
         self.assertEqual([], self.validator.check_data_object_governance(objects))
 
 
+class AccessSemanticsTests(unittest.TestCase):
+    """Les deux emplois de `accesses` : adossement du processus, accès du
+    système de référence, symétrie du couple PRC/CMP."""
+
+    def setUp(self):
+        self.validator = load_validator()
+
+    def data_object(self, object_id="DO-TEST", **relations):
+        base = {
+            "id": object_id,
+            "file": "/tmp/%s.md" % object_id.lower(),
+            "type": "objet-de-donnees",
+            "out": set(),
+            "relations": {},
+        }
+        base["relations"].update(relations)
+        return base
+
+    def composant(self, component_id="CMP-19", **relations):
+        base = {
+            "id": component_id,
+            "file": "/tmp/%s.md" % component_id.lower(),
+            "type": "composant-applicatif",
+            "out": set(),
+            "relations": {},
+        }
+        base["relations"].update(relations)
+        return base
+
+    def processus(self, process_id="PRC-01", **relations):
+        base = {
+            "id": process_id,
+            "file": "/tmp/%s.md" % process_id.lower(),
+            "type": "processus-metier",
+            "out": set(),
+            "relations": {},
+        }
+        base["relations"].update(relations)
+        return base
+
+    def test_rejects_process_access_without_a_backing_component(self):
+        objects = {
+            "DO-TEST": self.data_object(accessed_by=["PRC-01"]),
+            "PRC-01": self.processus(uses=["CMP-19"]),
+            "CMP-19": self.composant(accesses=["DO-OTHER"]),
+            "DO-OTHER": self.data_object("DO-OTHER"),
+        }
+
+        errors = self.validator.check_process_data_access_backing(objects)
+
+        self.assertEqual(1, len(errors))
+        self.assertEqual("PRC-01", errors[0][2])
+
+    def test_rejects_process_access_when_the_holder_is_not_mobilised(self):
+        objects = {
+            "DO-TEST": self.data_object(accessed_by=["PRC-01"]),
+            "PRC-01": self.processus(),
+            "CMP-19": self.composant(accesses=["DO-TEST"]),
+        }
+
+        errors = self.validator.check_process_data_access_backing(objects)
+
+        self.assertEqual(1, len(errors))
+        self.assertEqual("PRC-01", errors[0][2])
+
+    def test_accepts_process_access_backed_by_a_mobilised_component(self):
+        objects = {
+            "DO-TEST": self.data_object(accessed_by=["PRC-01"]),
+            "PRC-01": self.processus(uses=["CMP-19"]),
+            "CMP-19": self.composant(accesses=["DO-TEST"]),
+        }
+
+        self.assertEqual(
+            [], self.validator.check_process_data_access_backing(objects)
+        )
+
+    def test_rejects_system_of_record_that_does_not_access_the_object(self):
+        objects = {
+            "DO-TEST": self.data_object(
+                accessed_by=["CMP-19"], system_of_record=["CMP-19"]
+            ),
+            "CMP-19": self.composant(),
+        }
+
+        errors = self.validator.check_system_of_record_accessibility(objects)
+
+        self.assertEqual(1, len(errors))
+        self.assertEqual("CMP-19", errors[0][2])
+
+    def test_accepts_system_of_record_that_accesses_the_object(self):
+        objects = {
+            "DO-TEST": self.data_object(
+                accessed_by=["CMP-19"], system_of_record=["CMP-19"]
+            ),
+            "CMP-19": self.composant(accesses=["DO-TEST"]),
+        }
+
+        self.assertEqual(
+            [], self.validator.check_system_of_record_accessibility(objects)
+        )
+
+    def test_rejects_component_applying_to_a_process_that_does_not_use_it(self):
+        objects = {
+            "PRC-01": self.processus(uses=["CMP-19"]),
+            "CMP-19": self.composant(applies_to=["PRC-01"]),
+        }
+        objects["PRC-01"]["relations"]["uses"] = set()
+
+        errors = self.validator.check_uses_applies_to_symmetry(objects)
+
+        self.assertEqual(1, len(errors))
+        self.assertEqual("PRC-01", errors[0][2])
+
+    def test_rejects_process_using_a_component_that_does_not_apply_to_it(self):
+        objects = {
+            "PRC-01": self.processus(uses=["CMP-19"]),
+            "CMP-19": self.composant(),
+        }
+
+        errors = self.validator.check_uses_applies_to_symmetry(objects)
+
+        self.assertEqual(1, len(errors))
+        self.assertEqual("CMP-19", errors[0][2])
+
+    def test_accepts_a_symmetric_process_component_pair(self):
+        objects = {
+            "PRC-01": self.processus(uses=["CMP-19"]),
+            "CMP-19": self.composant(applies_to=["PRC-01"]),
+        }
+
+        self.assertEqual(
+            [], self.validator.check_uses_applies_to_symmetry(objects)
+        )
+
+
+class AccessSemanticsRepositoryTests(unittest.TestCase):
+    """Le corpus réel respecte les trois règles de sémantique de l'accès."""
+
+    def setUp(self):
+        self.validator = load_validator()
+        objects, _id_to_file, _unresolved, _legacy = (
+            self.validator.load_relation_graph()
+        )
+        self.objects = objects
+
+    def test_every_process_access_is_backed_by_a_mobilised_component(self):
+        self.assertEqual(
+            [], self.validator.check_process_data_access_backing(self.objects)
+        )
+
+    def test_every_system_of_record_accesses_its_object(self):
+        self.assertEqual(
+            [], self.validator.check_system_of_record_accessibility(self.objects)
+        )
+
+    def test_uses_and_applies_to_are_symmetric(self):
+        self.assertEqual(
+            [], self.validator.check_uses_applies_to_symmetry(self.objects)
+        )
+
+
 class RetiredDataObjectTests(unittest.TestCase):
     def setUp(self):
         self.validator = load_validator()
