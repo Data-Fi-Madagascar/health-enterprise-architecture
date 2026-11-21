@@ -1,6 +1,6 @@
 ---
 
-domain: work-packages
+domain: 06_portfolio
 id: WP-01
 type: work-package
 title: Lot L1 — Infrastructure & sécurité

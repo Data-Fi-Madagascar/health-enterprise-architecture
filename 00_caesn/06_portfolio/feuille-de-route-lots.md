@@ -19,7 +19,7 @@ la séquence et le financement** de chaque lot, exprimés dans le vocabulary de 
 CAESN (et non dans les composants techniques).
 
 La **réalisation technique** de chaque lot (composants, patterns ARTSN, normes CNISN) est
-détaillée dans la [vue de réalisation ARTSN](../../02_artsn/07_lots/index.md). Les lots opérationnalisent
+détaillée dans la [vue de réalisation ARTSN](../../02_artsn/08_lots/index.md). Les lots opérationnalisent
 les capacités du CAESN via les [work-packages `wp-01`…`wp-07`](../../04_architecture-repository/07_migration/work-packages/wp-01.md).
 
 > **Principe de cohérence** : le portefeuille (niveau 1) *définit* les lots ; l'ARTSN (niveau 3)
@@ -53,13 +53,13 @@ Le coût total de possession par lot est défini dans la [méthode TCO et envelo
 ## 4. Réalisation technique
 
 Pour le détail des composants, patterns ARTSN et normes CNISN mis en œuvre par chaque lot,
-voir la [vue de réalisation ARTSN](../../02_artsn/07_lots/index.md) et la
+voir la [vue de réalisation ARTSN](../../02_artsn/08_lots/index.md) et la
 [matrice d'alignement PTISN](../../03_ptisn/04_matrice-alignement/index.md#4-alignement-avec-les-lots-de-deploiement-artsn).
 
 ## Références
 
 - [Portefeuille d'initiatives orienté valeur](index.md)
 - [Méthode TCO et enveloppe de financement](financement-tco.md)
-- [Vue de réalisation ARTSN des lots](../../02_artsn/07_lots/index.md)
+- [Vue de réalisation ARTSN des lots](../../02_artsn/08_lots/index.md)
 - [Work-packages `wp-01`…`wp-07`](../../04_architecture-repository/07_migration/work-packages/wp-01.md)
 - [Matrice d'alignement PTISN](../../03_ptisn/04_matrice-alignement/index.md)

@@ -1,7 +1,7 @@
 ---
 title: Clinicien / prestataire de soins
 id: caesn-ROL-01
-domain: 07_governance
+domain: roles
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-24

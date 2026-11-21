@@ -1,6 +1,6 @@
 ---
 
-domain: work-packages
+domain: 06_portfolio
 id: WP-02
 type: work-package
 title: Lot L2 — Applications terrain & collecte

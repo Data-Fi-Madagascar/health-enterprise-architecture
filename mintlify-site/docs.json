@@ -15,21 +15,35 @@
         "icon": "landmark",
         "pages": [
           {
-            "group": "Caesn/overview",
+            "group": "CAESN - Lectures clés",
+            "pages": [
+              "/caesn/reading-matrix",
+              "/caesn/reading-guide"
+            ]
+          },
+          {
+            "group": "CAESN - Localisation territoriale",
+            "pages": [
+              "/caesn/overview/lieux/loc-01-communaut-aire-de-sant",
+              "/caesn/overview/lieux/loc-02-centre-de-sant-de-base-csb",
+              "/caesn/overview/lieux/loc-03-district-sanitaire",
+              "/caesn/overview/lieux/loc-04-r-gion-sanitaire",
+              "/caesn/overview/lieux/loc-05-tablissement-hospitalier-de-r-f-rence",
+              "/caesn/overview/lieux/loc-06-si-ge-central-depsi"
+            ],
+            "root": "/caesn/overview/lieux/index"
+          },
+          {
+            "group": "CAESN - Vue d'ensemble",
             "pages": [
               "/caesn/overview/foundations",
-              "/caesn/overview/value-model"
+              "/caesn/overview/value-model",
+              "/caesn/overview/verification-perennite"
             ],
             "root": "/caesn/overview/index"
           },
           {
-            "group": "Caesn",
-            "pages": [
-              "/caesn/reading-matrix"
-            ]
-          },
-          {
-            "group": "Caesn/value streams",
+            "group": "CAESN - Flux de valeur",
             "pages": [
               "/caesn/value-streams/vs-01-access-care",
               "/caesn/value-streams/vs-02-risk-protection",
@@ -39,14 +53,15 @@
             "root": "/caesn/value-streams/index"
           },
           {
-            "group": "Caesn/principles",
+            "group": "CAESN - Principes",
             "pages": [
-              "/caesn/principles/transversal"
+              "/caesn/principles/transversal",
+              "/caesn/principles/mapping-caesn-cnisn"
             ],
             "root": "/caesn/principles/index"
           },
           {
-            "group": "Caesn/principles/domain",
+            "group": "CAESN - Principes de domaine",
             "pages": [
               "/caesn/principles/domain/vs01",
               "/caesn/principles/domain/vs02",
@@ -56,29 +71,32 @@
             "root": "/caesn/principles/domain/index"
           },
           {
-            "group": "Caesn/capabilities",
+            "group": "CAESN - Capabilités",
             "pages": [
               "/caesn/capabilities/business",
               "/caesn/capabilities/digital",
               "/caesn/capabilities/enabling",
               "/caesn/capabilities/maturity",
-              "/caesn/capabilities/runway"
+              "/caesn/capabilities/runway",
+              "/caesn/capabilities/workforce-sante-numerique"
             ],
             "root": "/caesn/capabilities/index"
           },
           {
-            "group": "Caesn/data",
+            "group": "CAESN - Données",
             "pages": [
               "/caesn/data/domains",
               "/caesn/data/governance",
               "/caesn/data/lifecycle",
               "/caesn/data/principles",
-              "/caesn/data/referentials"
+              "/caesn/data/referentials",
+              "/caesn/data/objets",
+              "/caesn/data/valeurs"
             ],
             "root": "/caesn/data/index"
           },
           {
-            "group": "Caesn/application",
+            "group": "CAESN - Applications",
             "pages": [
               "/caesn/application/application-domains",
               "/caesn/application/constraints",
@@ -92,34 +110,73 @@
             "root": "/caesn/application/index"
           },
           {
-            "group": "Caesn/portfolio",
+            "group": "CAESN - Portefeuille",
             "pages": [
               "/caesn/portfolio/governance",
               "/caesn/portfolio/initiative-card",
               "/caesn/portfolio/prioritization",
               "/caesn/portfolio/value-chain",
-              "/caesn/portfolio/migration-existant"
+              "/caesn/portfolio/migration-existant",
+              "/caesn/portfolio/feuille-de-route-lots",
+              "/caesn/portfolio/financement-tco",
+              "/caesn/portfolio/wp-01-lot-l1-infrastructure-s-curit",
+              "/caesn/portfolio/wp-02-lot-l2-applications-terrain-collecte",
+              "/caesn/portfolio/wp-03-lot-l3-m-diation-registres-partag-s",
+              "/caesn/portfolio/wp-04-lot-l4-analytique-pilotage",
+              "/caesn/portfolio/wp-05-lot-l5-extension-p-rennisation",
+              "/caesn/portfolio/wp-06-lot-l6-interop-rabilit-transfrontali-re",
+              "/caesn/portfolio/wp-07-lot-l7-coordination-one-health"
             ],
             "root": "/caesn/portfolio/index"
           },
           {
-            "group": "Caesn/governance",
+            "group": "CAESN - Rôles",
+            "pages": [
+              "/caesn/governance/roles/rol-01-clinicien-prestataire-de-soins",
+              "/caesn/governance/roles/rol-02-gestionnaire-de-parcours-r-f-rence",
+              "/caesn/governance/roles/rol-03-gestionnaire-de-donn-es-registre",
+              "/caesn/governance/roles/rol-04-gestionnaire-logistique",
+              "/caesn/governance/roles/rol-05-contr-leur-auditeur"
+            ],
+            "root": "/caesn/governance/roles/index"
+          },
+          {
+            "group": "CAESN - Acteurs",
+            "pages": [
+              "/caesn/governance/acteurs/act-01-patient-et-usager-acteur",
+              "/caesn/governance/acteurs/act-02-agent-de-sant-de-premi-re-ligne",
+              "/caesn/governance/acteurs/act-03-formation-sanitaire-tablissement",
+              "/caesn/governance/acteurs/act-04-autorit-district-r-gion-et-minist-re",
+              "/caesn/governance/acteurs/act-05-partenaire-technique-et-financier-acteur",
+              "/caesn/governance/acteurs/act-06-quipe-technique-depsi-sis"
+            ],
+            "root": "/caesn/governance/acteurs/index"
+          },
+          {
+            "group": "CAESN - Gouvernance",
             "pages": [
               "/caesn/governance/processus-gouvernance",
               "/caesn/governance/homologation",
               "/caesn/governance/point-de-vigilance-caesn",
               "/caesn/governance/raci",
               "/caesn/governance/value-realization-office",
-              "/caesn/governance/fondement-legal"
+              "/caesn/governance/fondement-legal",
+              "/caesn/governance/acteurs-roles",
+              "/caesn/governance/arbitrage-ecarts-caesn-artsn",
+              "/caesn/governance/cnasen-composition",
+              "/caesn/governance/instances-sectorielles",
+              "/caesn/governance/projet-loi-esante"
             ],
             "root": "/caesn/governance/index"
           },
           {
-            "group": "Caesn/annexes",
+            "group": "CAESN - Annexes",
             "pages": [
               "/caesn/annexes/glossary",
               "/caesn/annexes/acronyms",
-              "/caesn/annexes/evaluation-gdhm"
+              "/caesn/annexes/evaluation-gdhm",
+              "/caesn/annexes/comparaison-architectures-africaines",
+              "/caesn/annexes/matrice-tracabilite"
             ],
             "root": "/caesn/annexes/index"
           }
@@ -130,70 +187,44 @@
         "icon": "handshake",
         "pages": [
           {
-            "group": "Cnisn",
+            "group": "CNISN - Lectures clés",
             "pages": [
               "/cnisn/reading-matrix",
               "/cnisn/glossary",
-              "/cnisn/acronyms"
+              "/cnisn/acronyms",
+              "/cnisn/reading-guide"
             ],
             "root": "/cnisn/index"
           },
           {
-            "group": "Cnisn/introduction",
+            "group": "CNISN - Introduction",
             "pages": [],
             "root": "/cnisn/introduction/index"
           },
           {
-            "group": "Cnisn/principes",
+            "group": "CNISN - Principes",
             "pages": [],
             "root": "/cnisn/principes/index"
           },
           {
-            "group": "Cnisn/capacites",
+            "group": "CNISN - Objets d'interopérabilité",
             "pages": [],
-            "root": "/cnisn/capacites/index"
+            "root": "/cnisn/objets-interoperabilite/index"
           },
           {
-            "group": "Cnisn/gouvernance",
+            "group": "CNISN - Gouvernance",
             "pages": [],
             "root": "/cnisn/gouvernance/index"
           },
           {
-            "group": "Cnisn/conformite",
+            "group": "CNISN - Conformité",
             "pages": [
               "/cnisn/conformite/programme-conformite"
             ],
             "root": "/cnisn/conformite/index"
           },
           {
-            "group": "Cnisn/trajectoire",
-            "pages": [],
-            "root": "/cnisn/trajectoire/index"
-          },
-          {
-            "group": "Cnisn/indicateurs",
-            "pages": [],
-            "root": "/cnisn/indicateurs/index"
-          },
-          {
-            "group": "Cnisn/conclusion",
-            "pages": [],
-            "root": "/cnisn/conclusion/index"
-          },
-          {
-            "group": "Cnisn/annexes",
-            "pages": [
-              "/cnisn/annexes/a-matrice-principes-capacites",
-              "/cnisn/annexes/b-articulation-art-sn",
-              "/cnisn/annexes/c-articulation-ptisn",
-              "/cnisn/annexes/d-principes-lecture",
-              "/cnisn/annexes/e-correspondance-caesn",
-              "/cnisn/annexes/f-articulation-complete",
-              "/cnisn/annexes/g-matrice-interop-types"
-            ]
-          },
-          {
-            "group": "Cnisn/standards",
+            "group": "CNISN - Normes & standards",
             "pages": [
               "/cnisn/standards/std-0001-interopabilite-fhir",
               "/cnisn/standards/std-0002-securite-chiffrement",
@@ -203,12 +234,15 @@
               "/cnisn/standards/std-0006-terminologie",
               "/cnisn/standards/std-0007-snomed-ct",
               "/cnisn/standards/norm-007-rsi",
-              "/cnisn/standards/norm-008-tripartite"
+              "/cnisn/standards/norm-008-tripartite",
+              "/cnisn/standards/std-0000-template",
+              "/cnisn/standards/std-0008-echange-reclamations-paiements",
+              "/cnisn/standards/std-0009-echange-donnees-logistiques-lmis"
             ],
             "root": "/cnisn/standards/index"
           },
           {
-            "group": "Cnisn/decisions",
+            "group": "CNISN - Décisions (ADR)",
             "pages": [
               "/cnisn/decisions/registre-decisions",
               "/cnisn/decisions/adr-0001-x-road",
@@ -220,9 +254,42 @@
               "/cnisn/decisions/adr-0007-gdhcn",
               "/cnisn/decisions/adr-0008-atna",
               "/cnisn/decisions/adr-0009-terminologie",
-              "/cnisn/decisions/adr-0010-cadre-legal"
+              "/cnisn/decisions/adr-0010-cadre-legal",
+              "/cnisn/decisions/adr-0011-eligibilite-couverture",
+              "/cnisn/decisions/adr-0012-one-health-pilotage",
+              "/cnisn/decisions/adr-0000-template",
+              "/cnisn/decisions/adr-change-log",
+              "/cnisn/decisions/template-modification"
             ],
             "root": "/cnisn/decisions/index"
+          },
+          {
+            "group": "CNISN - Trajectoire",
+            "pages": [],
+            "root": "/cnisn/trajectoire/index"
+          },
+          {
+            "group": "CNISN - Indicateurs",
+            "pages": [],
+            "root": "/cnisn/indicateurs/index"
+          },
+          {
+            "group": "CNISN - Conclusion",
+            "pages": [],
+            "root": "/cnisn/conclusion/index"
+          },
+          {
+            "group": "CNISN - Annexes",
+            "pages": [
+              "/cnisn/annexes/a-matrice-principes-capacites",
+              "/cnisn/annexes/b-articulation-art-sn",
+              "/cnisn/annexes/c-articulation-ptisn",
+              "/cnisn/annexes/d-principes-lecture",
+              "/cnisn/annexes/e-correspondance-caesn",
+              "/cnisn/annexes/f-articulation-complete",
+              "/cnisn/annexes/g-matrice-interop-types"
+            ],
+            "root": "/cnisn/annexes/index"
           }
         ]
       },
@@ -231,7 +298,7 @@
         "icon": "network",
         "pages": [
           {
-            "group": "Artsn",
+            "group": "ARTSN - Lectures clés",
             "pages": [
               "/artsn/reading-matrix",
               "/artsn/reading-guide",
@@ -241,30 +308,30 @@
             "root": "/artsn/index"
           },
           {
-            "group": "Artsn/fondations",
+            "group": "ARTSN - Fondations",
             "pages": [],
             "root": "/artsn/fondations/index"
           },
           {
-            "group": "Artsn/flux de valeur",
+            "group": "ARTSN - Flux de valeur",
             "pages": [],
             "root": "/artsn/flux-de-valeur/index"
           },
           {
-            "group": "Artsn/exigences contextuelles",
+            "group": "ARTSN - Exigences contextuelles",
             "pages": [],
             "root": "/artsn/exigences-contextuelles/index"
-          },
-          {
-            "group": "ARTSN - Objets de données",
-            "pages": [],
-            "root": "/artsn/objets-de-donnees/index"
           },
           {
             "group": "ARTSN - Nomenclatures",
             "pages": [
               "/artsn/objets-de-donnees/nomenclatures/fosa-status"
             ]
+          },
+          {
+            "group": "ARTSN - Objets de données",
+            "pages": [],
+            "root": "/artsn/objets-de-donnees/index"
           },
           {
             "group": "ARTSN - Chapitres de référence",
@@ -313,7 +380,7 @@
             "root": "/artsn/services/index"
           },
           {
-            "group": "Artsn/gouvernance",
+            "group": "ARTSN - Gouvernance",
             "pages": [
               "/artsn/gouvernance/veille-architecturale",
               "/artsn/gouvernance/conformite",
@@ -335,10 +402,10 @@
               "/artsn/annexes/d-protocole-test-interopabilite",
               "/artsn/annexes/e-sla-performance",
               "/artsn/annexes/f-normes-cnisn-lots",
-              "/artsn/annexes/g-oda-conception-guide",
               "/artsn/annexes/g-reddhi-alignement",
               "/artsn/annexes/h-benchmark-adhmat",
-              "/artsn/annexes/i-ptisn-artsn-alignement"
+              "/artsn/annexes/i-ptisn-artsn-alignement",
+              "/artsn/annexes/j-oda-conception-guide"
             ],
             "root": "/artsn/annexes/index"
           },
@@ -351,7 +418,8 @@
               "/artsn/feuille-de-route/gap-01-cart-couverture-terrain-en-zone-isol-e",
               "/artsn/feuille-de-route/gap-02-cart-interop-rabilit-transfrontali-re-one-health",
               "/artsn/feuille-de-route/gap-03-cart-cadre-l-gal-gouvernance-publi"
-            ]
+            ],
+            "root": "/artsn/feuille-de-route/index"
           }
         ]
       },
@@ -360,33 +428,33 @@
         "icon": "terminal",
         "pages": [
           {
-            "group": "Ptisn",
+            "group": "PTISN - Lectures clés",
             "pages": [
               "/ptisn/reading-matrix",
               "/ptisn/glossary",
-              "/ptisn/acronyms"
+              "/ptisn/acronyms",
+              "/ptisn/reading-guide"
             ],
             "root": "/ptisn/index"
           },
           {
-            "group": "Ptisn/introduction",
+            "group": "PTISN - Introduction",
             "pages": [],
             "root": "/ptisn/introduction/index"
           },
           {
-            "group": "Ptisn/regles utilisation",
+            "group": "PTISN - Règles d'utilisation",
             "pages": [],
             "root": "/ptisn/regles-utilisation/index"
           },
           {
-            "group": "Ptisn/topologie nationale cible",
+            "group": "PTISN - Topologie nationale cible",
             "pages": [],
             "root": "/ptisn/topologie-nationale-cible/index"
           },
           {
-            "group": "Ptisn/profils",
+            "group": "PTISN - Profils techniques",
             "pages": [
-              "/ptisn/profils/pt-00-index",
               "/ptisn/profils/pt-01-echange-interinstitutionnel",
               "/ptisn/profils/pt-02-mediation-intra-secteur",
               "/ptisn/profils/pt-03-catalogue-services-registre-contrats",
@@ -407,15 +475,31 @@
               "/ptisn/profils/pt-18-echange-reclamations-paiements",
               "/ptisn/profils/pt-19-aide-decision-clinique",
               "/ptisn/profils/pt-20-eligibilite-couverture"
-            ]
+            ],
+            "root": "/ptisn/profils/pt-00-index"
           },
           {
-            "group": "Ptisn/matrice alignement",
+            "group": "PTISN - Matrice d'alignement",
             "pages": [],
             "root": "/ptisn/matrice-alignement/index"
           },
           {
-            "group": "Ptisn/annexes",
+            "group": "PTISN - Profil d'initiative",
+            "pages": [],
+            "root": "/ptisn/profil-initiative/index"
+          },
+          {
+            "group": "PTISN - Gouvernance",
+            "pages": [],
+            "root": "/ptisn/gouvernance/index"
+          },
+          {
+            "group": "PTISN - Conclusion",
+            "pages": [],
+            "root": "/ptisn/conclusion/index"
+          },
+          {
+            "group": "PTISN - Annexes",
             "pages": [
               "/ptisn/annexes/f-exemples-profils",
               "/ptisn/annexes/a-synthese-choix",
@@ -426,18 +510,10 @@
               "/ptisn/annexes/cas-usage-reference-evacuation",
               "/ptisn/annexes/cas-usage-surveillance-epidemique",
               "/ptisn/annexes/cas-usage-couverture-sanitaire",
-              "/ptisn/annexes/cas-usage-pilotage-systeme"
-            ]
-          },
-          {
-            "group": "Ptisn/gouvernance",
-            "pages": [],
-            "root": "/ptisn/gouvernance/index"
-          },
-          {
-            "group": "Ptisn/conclusion",
-            "pages": [],
-            "root": "/ptisn/conclusion/index"
+              "/ptisn/annexes/cas-usage-pilotage-systeme",
+              "/ptisn/annexes/cas-usage-supply-chain"
+            ],
+            "root": "/ptisn/annexes/index"
           }
         ]
       }

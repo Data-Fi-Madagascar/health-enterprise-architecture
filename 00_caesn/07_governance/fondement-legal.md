@@ -90,6 +90,6 @@ L'OMS publie le **Global Digital Health Monitor (GDHM)**. Une auto-évaluation d
 - [governance: Gouvernance du cadre d'architecture](index.md)
 - [cnasen-composition: Composition et fonctionnement du Comité National](cnasen-composition.md)
 - [instances-sectorielles: Instances sectorielles et autorités spécialisées](instances-sectorielles.md)
-- [arbitrage-ecarts-caesn-artsn: Proposition d'arbitrage : 5 écarts CAESN ↔ ARTSN](arbitrage-ecarts-caesn-artsn.md)
+- [arbitrage-ecarts-caesn-artsn: Arbitrage : 5 écarts CAESN ↔ ARTSN](arbitrage-ecarts-caesn-artsn.md)
 
 <!-- liens-section-auto -->

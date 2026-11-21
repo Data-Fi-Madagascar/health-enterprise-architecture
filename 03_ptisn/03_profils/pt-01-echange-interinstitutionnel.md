@@ -140,4 +140,4 @@ Dépendances : infrastructure X-Road, autorité de gouvernance du CNI, UGD (coor
 
 ## Références au cadre
 
-- **ARTSN — lots consommateurs** : [L1 — Infrastructure & sécurité](../../02_artsn/07_lots/index.md), [L3 — Médiation & registres](../../02_artsn/07_lots/index.md), [L7 — Coordination One Health](../../02_artsn/07_lots/index.md)
+- **ARTSN — lots consommateurs** : [L1 — Infrastructure & sécurité](../../02_artsn/08_lots/index.md), [L3 — Médiation & registres](../../02_artsn/08_lots/index.md), [L7 — Coordination One Health](../../02_artsn/08_lots/index.md)

@@ -26,8 +26,6 @@ Merci de votre intérêt pour contribuer au **Cadre d'Architecture d'Entreprise 
 9. [Gestion des ADR](#gestion-des-adr)
 10. [Ressources utiles](#ressources-utiles)
 
----
-
 ## 🔧 Prérequis
 
 ### Outils requis
@@ -52,8 +50,6 @@ source .venv/bin/activate  # Linux/Mac
 .\.venv\Scripts\activate   # Windows
 pip install -r requirements.txt
 ```
-
----
 
 ## 💻 Configuration de l'environnement
 
@@ -84,8 +80,6 @@ make check
 # Sinon, corriger les erreurs signalées
 ```
 
----
-
 ## 🗂️ Structure du dépôt
 
 ```
@@ -100,7 +94,7 @@ health-enterprise-architecture/
 ├── 01_cnisn/          # Niveau 2: Cadre National d'Interopérabilité
 │   ├── 00_introduction/
 │   ├── 01_principes/
-│   ├── 02_capacites/  # Capacités d'interopérabilité
+│   ├── 02_objets-interoperabilite/  # Objets d'interopérabilité requis
 │   ├── 06_decisions/  # ADR (Architecture Decision Records)
 │   └── ...
 │
@@ -114,11 +108,12 @@ health-enterprise-architecture/
 │   ├── 03_profils/    # Profils PT-01 à PT-19
 │   └── ...
 │
-├── referentiel/       # Source de vérité (objets de référence)
-│   ├── capabilites/
-│   ├── capacites/
-│   ├── chapitres/
-│   ├── profils/
+├── 04_architecture-repository/  # Source de vérité (objets de référence)
+│   ├── 02_architecture-elements/strategy/capabilities/  # CAP-01..18
+│   ├── 02_architecture-elements/motivation/principles/ # PA, P-INT, PD
+│   ├── 04_patterns/artsn-rules/                        # ART-0..12
+│   ├── 05_building-blocks/                             # ABB, SBB, PT-01..19
+│   ├── 06_governance/                                  # Contrats, conformité, preuves
 │   └── _index.yaml    # Registre de tous les objets
 │
 ├── scripts/           # Scripts Python de validation et génération
@@ -147,17 +142,15 @@ Chaque document doit avoir un champ `domain:` dans son frontmatter qui correspon
 domain: 01_value-streams
 ```
 
----
-
 ## ✍️ Processus de contribution
 
 ### 1. Identifier le type de contribution
 
 | Type | Exemple | Dossier concerné |
 |------|---------|------------------|
-| **Nouvelle capabilité** | Ajouter CAP-19 | `00_caesn/03_capabilities/` + `referentiel/capabilites/` |
-| **Nouveau profil** | Ajouter PT-20 | `03_ptisn/03_profils/` + `referentiel/profils/` |
-| **Modification de principe** | Mettre à jour PA-01 | `00_caesn/02_principles/` + `referentiel/principes/` |
+| **Nouvelle capabilité** | Ajouter CAP-19 | `04_architecture-repository/02_architecture-elements/strategy/capabilities/` |
+| **Nouveau profil** | Ajouter PT-20 | `04_architecture-repository/05_building-blocks/sbb/legacy-profiles/` |
+| **Modification de principe** | Mettre à jour PA-01 | `04_architecture-repository/02_architecture-elements/motivation/principles/` |
 | **Nouvelle décision** | ADR-0011 | `01_cnisn/06_decisions/` |
 | **Correction de bug** | Fixer un lien cassé | Tous les dossiers |
 
@@ -165,25 +158,23 @@ domain: 01_value-streams
 
 ```bash
 # Rechercher un objet existant
-grep -r "id: CAP-01" referentiel/
+grep -r "id: CAP-01" 04_architecture-repository/
 
 # Vérifier dans l'index
-grep "CAP-01" referentiel/_index.yaml
+grep "CAP-01" 04_architecture-repository/_index.yaml
 ```
 
 ### 3. Créer ou modifier les fichiers
 
 #### Pour un nouvel objet :
-1. Créer le fichier dans `referentiel/<type>/<id>.md`
+1. Créer le fichier dans le sous-dossier de `04_architecture-repository/` correspondant au type
 2. Ajouter le frontmatter YAML avec tous les champs requis
-3. Ajouter l'objet à `referentiel/_index.yaml`
+3. Régénérer l'index : `make ref-index`
 
 #### Pour une modification :
-1. Modifier le fichier source dans `referentiel/`
+1. Modifier le fichier source dans `04_architecture-repository/`
 2. Régénérer les enveloppes : `make wrappers`
 3. Vérifier les liens : `python scripts/check_links.py`
-
----
 
 ## 📜 Conventions de codage
 
@@ -240,8 +231,6 @@ Voir [AGENTS.md](AGENTS.md) pour les règles détaillées :
 - ✅ **Connecteurs logiques** : "C'est précisément", "Cette observation", "Plus fondamentalement"
 - ❌ **Interdits** : Caractères chinois, em-dashes (`—`), séparateurs horizontaux (`---`)
 
----
-
 ## ✅ Validation des modifications
 
 ### 1. Validation locale avant commit
@@ -278,8 +267,6 @@ make public
 # Tout générer
 make oda
 ```
-
----
 
 ## 🚀 Création de Pull Requests
 
@@ -336,8 +323,6 @@ Chaque PR doit inclure :
 - **Impact** : Lister les fichiers modifiés et les dépendances
 - **Liens** : Référencer les issues, ADR, ou discussions liées
 
----
-
 ## 👀 Revue de code
 
 ### Critères de revue
@@ -358,8 +343,6 @@ Chaque PR doit inclure :
 2. **Revue par les pairs** : Au moins 1 approbation requise
 3. **Validation CI** : Tous les checks GitHub Actions doivent passer
 4. **Merge** : Seulement après approbation et CI verte
-
----
 
 ## 📝 Gestion des ADR
 
@@ -406,8 +389,6 @@ Un **Architecture Decision Record (ADR)** doit être créé lorsque :
 | `remplacé` | Remplacé par un autre ADR | - |
 | `déprécié` | Décision abandonnée | - |
 
----
-
 ## 🔗 Ressources utiles
 
 ### Documentation interne
@@ -433,8 +414,6 @@ Un **Architecture Decision Record (ADR)** doit être créé lorsque :
 | **Équipe Technique** | DEPSI |
 | **Mainteneur du dépôt** | À définir |
 
----
-
 ## ✨ Bonnes pratiques
 
 ### Do's ✅
@@ -452,9 +431,7 @@ Un **Architecture Decision Record (ADR)** doit être créé lorsque :
 - [ ] Modifier les enveloppes générées manuellement (elles sont régénérées par `make wrappers`)
 - [ ] Utiliser des em-dashes (`—`) ou des séparateurs horizontaux (`---`)
 - [ ] Laisser des liens cassés dans la documentation
-- [ ] Oublier de mettre à jour `referentiel/_index.yaml` pour les nouveaux objets
-
----
+- [ ] Oublier de mettre à jour `04_architecture-repository/_index.yaml` pour les nouveaux objets
 
 ## 🚨 Résolution des problèmes courants
 
@@ -502,7 +479,5 @@ python scripts/validate_ref.py 2>&1 | grep -A 5 "isolé"
 # Ajouter des relations dans le frontmatter
 # Exemple : maps_to, implements, applies_to, related
 ```
-
----
 
 *Document maintenu par le Bureau de Réalisation de la Valeur. Dernière révision : 2026-09-03.*

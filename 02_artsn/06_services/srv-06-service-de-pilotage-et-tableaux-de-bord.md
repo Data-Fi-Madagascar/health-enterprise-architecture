@@ -1,6 +1,6 @@
 ---
 
-domain: services
+domain: 06_services
 id: SRV-06
 type: service
 title: Service de pilotage et tableaux de bord

@@ -108,4 +108,4 @@ Produit national à instruire. Dépendance : terminologie nationale (PT-07), ré
 
 ## Références au cadre
 
-- **ARTSN — lots consommateurs** : [L1 — Infrastructure & sécurité](../../02_artsn/07_lots/index.md), [L2 — Applications terrain](../../02_artsn/07_lots/index.md), [L4 — Analytique & pilotage](../../02_artsn/07_lots/index.md)
+- **ARTSN — lots consommateurs** : [L1 — Infrastructure & sécurité](../../02_artsn/08_lots/index.md), [L2 — Applications terrain](../../02_artsn/08_lots/index.md), [L4 — Analytique & pilotage](../../02_artsn/08_lots/index.md)

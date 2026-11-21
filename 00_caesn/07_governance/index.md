@@ -106,8 +106,11 @@ La mise en œuvre est progressive : validation institutionnelle, mise en place d
 - [homologation: Workflow d'homologation architecturale](homologation.md)
 - [cnasen-composition: Composition et fonctionnement du Comité National](cnasen-composition.md)
 - [instances-sectorielles: Instances sectorielles et autorités spécialisées](instances-sectorielles.md)
-- [arbitrage-ecarts-caesn-artsn: Proposition d'arbitrage : 5 écarts CAESN ↔ ARTSN](arbitrage-ecarts-caesn-artsn.md)
+- [arbitrage-ecarts-caesn-artsn: Arbitrage : 5 écarts CAESN ↔ ARTSN](arbitrage-ecarts-caesn-artsn.md)
 - [fondement-legal: Fondement légal et cadre législatif de la santé numérique](fondement-legal.md)
 - [projet-loi-esante: Avant-projet de loi e-santé (cadre législatif opposable)](projet-loi-esante.md)
+- [caesn-acteurs-roles: Acteurs et rôles du système de santé numérique](acteurs-roles.md)
+- [acteurs: Acteurs du système de santé numérique](acteurs/index.md)
+- [roles: Rôles du système de santé numérique](roles/index.md)
 
 <!-- liens-section-auto -->

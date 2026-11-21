@@ -65,5 +65,8 @@ Les catalogues relatifs aux principes, aux principes de domaine, aux capabilité
 
 - [annexe-glossary: Glossaire](glossary.md)
 - [annexe-acronyms: Acronymes et abréviations](acronyms.md)
+- [annexe-comparaison-architectures-africaines: Comparaison des architectures de santé numérique africaines](comparaison-architectures-africaines.md)
+- [evaluation-gdhm: Cartographie HEA → GDHM : Auto-évaluation de maturité numérique santé](evaluation-gdhm.md)
+- [matrice-tracabilite-vs-cap-prc-cmp: Matrice de traçabilité (Flux de valeur, Capacités, Processus, Composants)](matrice-tracabilite.md)
 
 <!-- liens-section-auto -->

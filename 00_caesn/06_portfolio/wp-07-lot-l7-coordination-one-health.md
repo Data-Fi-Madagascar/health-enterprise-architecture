@@ -1,6 +1,6 @@
 ---
 
-domain: work-packages
+domain: 06_portfolio
 id: WP-07
 type: work-package
 title: Lot L7 — Coordination One Health

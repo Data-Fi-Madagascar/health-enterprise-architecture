@@ -63,7 +63,7 @@ Discipline de **mise en œuvre** : elle seule permet au Comité National (CNASN
 
 ### Homologation obligatoire
 
-**Contenu normatif.** Le processus d’homologation obligatoire (introduit en F.3) s’applique à toute solution ; un constat d’homologation qui révélerait qu’un composant ne peut être rattaché à aucun chapitre existant déclenche une revue de l’ARTSN (voir [Gouvernance](../06_gouvernance/index.md)).
+**Contenu normatif.** Le processus d’homologation obligatoire (introduit en F.3) s’applique à toute solution ; un constat d’homologation qui révélerait qu’un composant ne peut être rattaché à aucun chapitre existant déclenche une revue de l’ARTSN (voir [Gouvernance](../07_gouvernance/index.md)).
 
 **Statut : Stable.**
 

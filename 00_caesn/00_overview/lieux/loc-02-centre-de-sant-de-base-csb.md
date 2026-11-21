@@ -1,7 +1,7 @@
 ---
 title: Centre de santé de base (CSB)
 id: caesn-LOC-02
-domain: 00_overview
+domain: lieux
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-24

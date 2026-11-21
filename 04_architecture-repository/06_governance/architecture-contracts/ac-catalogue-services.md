@@ -8,7 +8,7 @@ status: candidate
 owner: DEPSI
 version: "0.1"
 legacy_id: CAP-INT-06
-envelope: 01_cnisn/02_capacites/index.md
+envelope: 01_cnisn/02_objets-interoperabilite/index.md
 togaf_repository_section: governance-log
 togaf_adm_phase: G
 architecture_level: enterprise-transversal

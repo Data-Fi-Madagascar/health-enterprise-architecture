@@ -1,7 +1,7 @@
 ---
 title: Gestionnaire logistique
 id: caesn-ROL-04
-domain: 07_governance
+domain: roles
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-24

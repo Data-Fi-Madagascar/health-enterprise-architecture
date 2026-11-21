@@ -119,5 +119,6 @@ Les profils de la Partie III (PT-01…PT-20) sont les **profils nationaux de ré
 - [ptisn-topologie: Partie II : Topologie nationale cible](02_topologie-nationale-cible/index.md)
 - [ptisn-conclusion: Conclusion du PTISN](07_conclusion/index.md)
 - [ptisn-gouvernance: Partie VI : Gouvernance du PTISN](06_gouvernance/index.md)
+- [ptisn-annexes: Annexes du PTISN](08_annexes/index.md)
 
 <!-- liens-section-auto -->

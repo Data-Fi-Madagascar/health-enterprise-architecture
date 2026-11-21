@@ -56,9 +56,9 @@ Cette norme s'applique à :
 
 ## Références au cadre
 
-- **Principes** : PA-05 (Interopérabilité), PA-06 (Gouvernance des données)
+- **Principes** : PA-05 (Une donnée doit être collectée une seule fois et réutilisée plusieurs fois), PA-07 (Les référentiels nationaux sont des biens communs indivisibles)
 - **ARTSN** : ART-4 (Référentiels), ART-4A (Résolution d'identité), F.1 (Identité et registres)
-- **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/07_lots/index.md)
+- **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/08_lots/index.md)
 - **PTISN** : PT-04 (Résolution d'identité)
 - **CNISN** : ABB-IDENTITE-BENEFICIAIRE (Résolution d'identité)
 

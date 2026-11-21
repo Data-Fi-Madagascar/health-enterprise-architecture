@@ -1,6 +1,6 @@
 ---
 
-domain: work-packages
+domain: 06_portfolio
 id: WP-06
 type: work-package
 title: Lot L6 — Interopérabilité transfrontalière

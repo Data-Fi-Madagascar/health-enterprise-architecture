@@ -107,4 +107,4 @@ Le service ne définit pas les contenus métier ; il héberge et diffuse les ter
 
 ## Références au cadre
 
-- **ARTSN — lots consommateurs** : [L2 — Applications terrain](../../02_artsn/07_lots/index.md)
+- **ARTSN — lots consommateurs** : [L2 — Applications terrain](../../02_artsn/08_lots/index.md)

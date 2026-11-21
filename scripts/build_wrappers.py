@@ -807,8 +807,8 @@ def main():
 
     targets = set(sources)
     extra_targets = ["03_ptisn/03_profils/pt-00-index.md",
-                     "01_cnisn/08_annexes/a-matrice-principes-capacites.md",
-                     "02_artsn/08_annexes/a-table-de-maturite.md"] + \
+                     "01_cnisn/10_annexes/a-matrice-principes-capacites.md",
+                     "02_artsn/09_annexes/a-table-de-maturite.md"] + \
         DERIVED_ENVELOPES + generated_marked_documents()
     for rel in list(targets) + extra_targets:
         path = os.path.join(REPO_ROOT, rel)
@@ -828,7 +828,7 @@ def main():
         ordered = [only]
     else:
         tables = ("03_ptisn/03_profils/pt-00-index.md",
-                  "01_cnisn/08_annexes/a-matrice-principes-capacites.md")
+                  "01_cnisn/10_annexes/a-matrice-principes-capacites.md")
         # les tableaux purs sont régénérés en dernier (prédictibilité des diffs)
         ordered = sorted(t for t in targets if t not in tables) + \
             sorted(t for t in targets if t in tables)

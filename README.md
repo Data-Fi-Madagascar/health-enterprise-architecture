@@ -63,14 +63,14 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 |---------|--------|---------|
 | Introduction | [`00_introduction/`](01_cnisn/00_introduction) | Contexte, périmètre, objectifs, articulation UGD |
 | Principes | [`01_principes/`](01_cnisn/01_principes) | Principes d'interopérabilité |
-| Objets d'interopérabilité | [`02_capacites/`](01_cnisn/02_capacites) | Blocs, exigences, patterns, contrats, preuves et données de référence requis |
+| Objets d'interopérabilité | [`02_objets-interoperabilite/`](01_cnisn/02_objets-interoperabilite) | Blocs, exigences, patterns, contrats, preuves et données de référence requis |
 | Gouvernance | [`03_gouvernance/`](01_cnisn/03_gouvernance) | Gouvernance de l'interopérabilité |
 | Conformité | [`04_conformite/`](01_cnisn/04_conformite) | Conformité, audit, programme de conformité opérationnel |
 | Standards | [`05_standards/`](01_cnisn/05_standards) | 7 standards CNISN + 2 normes internationales |
 | Décisions | [`06_decisions/`](01_cnisn/06_decisions) | 10 Architecture Decision Records (ADR-0001..0010) |
-| Trajectoire | [`05_trajectoire/`](01_cnisn/05_trajectoire) | 7 phases T4 2026–T2 2030 |
-| Indicateurs | [`06_indicateurs/`](01_cnisn/06_indicateurs) | KPIs interopérabilité |
-| Annexes | [`08_annexes/`](01_cnisn/08_annexes) | Matrices de lecture, articulation CAESN/ARTSN |
+| Trajectoire | [`05_trajectoire/`](01_cnisn/07_trajectoire) | 7 phases T4 2026–T2 2030 |
+| Indicateurs | [`06_indicateurs/`](01_cnisn/08_indicateurs) | KPIs interopérabilité |
+| Annexes | [`08_annexes/`](01_cnisn/10_annexes) | Matrices de lecture, articulation CAESN/ARTSN |
 
 ### Niveau 3 — `02_artsn/` (ARTSN)
 
@@ -83,10 +83,10 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 | Chapitres | [`04_patterns/`](02_artsn/04_patterns) | Chapitres ART (ART-0 à ART-12, déclinaisons incluses) |
 | Cartographie | [`05_cartographie/`](02_artsn/05_cartographie) | Vue cible du système |
 | Services | [`06_services/`](02_artsn/06_services) | Services techniques de référence |
-| Gouvernance | [`06_gouvernance/`](02_artsn/06_gouvernance) | Veille, conformité, dépréciation |
-| Lots | [`07_lots/`](02_artsn/07_lots) | Lots consommateurs et trajectoire CNISN |
-| Annexes | [`08_annexes/`](02_artsn/08_annexes) | Protocole de test, SLA, maturité |
-| Feuille de route | [`09_feuille-de-route/`](02_artsn/09_feuille-de-route) | Plateaux et écarts de trajectoire |
+| Gouvernance | [`06_gouvernance/`](02_artsn/07_gouvernance) | Veille, conformité, dépréciation |
+| Lots | [`07_lots/`](02_artsn/08_lots) | Lots consommateurs et trajectoire CNISN |
+| Annexes | [`08_annexes/`](02_artsn/09_annexes) | Protocole de test, SLA, maturité |
+| Feuille de route | [`09_feuille-de-route/`](02_artsn/10_feuille-de-route) | Plateaux et écarts de trajectoire |
 
 ### Niveau 4 — `03_ptisn/` (PTISN)
 
@@ -131,9 +131,9 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 | Template modification | [`01_cnisn/06_decisions/template-modification.md`](01_cnisn/06_decisions/template-modification.md) | Formulaire de demande de changement |
 | Processus gouvernance | [`00_caesn/07_governance/processus-gouvernance.md`](00_caesn/07_governance/processus-gouvernance.md) | Workflows de validation |
 | Homologation | [`00_caesn/07_governance/homologation.md`](00_caesn/07_governance/homologation.md) | 12 critères, 5 phases |
-| Dépréciation | [`02_artsn/06_gouvernance/depreciation.md`](02_artsn/06_gouvernance/depreciation.md) | Processus 15 mois |
-| Veille architecturale | [`02_artsn/06_gouvernance/veille-architecturale.md`](02_artsn/06_gouvernance/veille-architecturale.md) | 7 domaines, 11 sources |
-| Conformité | [`02_artsn/06_gouvernance/conformite.md`](02_artsn/06_gouvernance/conformite.md) | Dashboard de conformité |
+| Dépréciation | [`02_artsn/07_gouvernance/depreciation.md`](02_artsn/07_gouvernance/depreciation.md) | Processus 15 mois |
+| Veille architecturale | [`02_artsn/07_gouvernance/veille-architecturale.md`](02_artsn/07_gouvernance/veille-architecturale.md) | 7 domaines, 11 sources |
+| Conformité | [`02_artsn/07_gouvernance/conformite.md`](02_artsn/07_gouvernance/conformite.md) | Dashboard de conformité |
 | Programme de conformité | [`01_cnisn/04_conformite/programme-conformite.md`](01_cnisn/04_conformite/programme-conformite.md) | Tests, sanctions, jalon de démarrage |
 | Fondement légal | [`00_caesn/07_governance/fondement-legal.md`](00_caesn/07_governance/fondement-legal.md) | Vide législatif, projet de loi e-santé |
 
@@ -187,7 +187,7 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 - [Registre national des initiatives](00_caesn/06_portfolio/index.md)
 - [Gouvernance](00_caesn/07_governance/index.md)
 - [Glossaire](00_caesn/10_annexes/glossary.md)
-- [Feuille de route des lots (portefeuille CAESN)](00_caesn/06_portfolio/feuille-de-route-lots.md) — [réalisation technique ARTSN](02_artsn/07_lots/index.md)
+- [Feuille de route des lots (portefeuille CAESN)](00_caesn/06_portfolio/feuille-de-route-lots.md) — [réalisation technique ARTSN](02_artsn/08_lots/index.md)
 - [Dictionnaire de données](02_artsn/03_objets-de-donnees/index.md)
-- [Protocole de test interopérabilité](02_artsn/08_annexes/d-protocole-test-interopabilite.md)
-- [SLA et performance](02_artsn/08_annexes/e-sla-performance.md)
+- [Protocole de test interopérabilité](02_artsn/09_annexes/d-protocole-test-interopabilite.md)
+- [SLA et performance](02_artsn/09_annexes/e-sla-performance.md)

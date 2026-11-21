@@ -59,9 +59,9 @@ Ce standard ne remplace pas la CIM-11 (STD-0006) ni LOINC : il les complète pou
 
 ## Références au cadre
 
-- **Principes** : PA-05 (Interopérabilité), PA-06 (Gouvernance des données)
+- **Principes** : PA-07 (Les référentiels nationaux sont des biens communs indivisibles), PA-06 (L'interopérabilité est une exigence non négociable)
 - **ARTSN** : ART-2 (Médiation et normalisation), F.2 (Normalisation)
-- **ARTSN — lots consommateurs** : [L1 — Infrastructure & sécurité](../../02_artsn/07_lots/index.md)
+- **ARTSN — lots consommateurs** : [L1 — Infrastructure & sécurité](../../02_artsn/08_lots/index.md)
 - **PTISN** : PT-07 (Terminologie et codification)
 - **CNISN** : ABB-RECONCILIATION-DONNEES (Qualité et réconciliation)
 - **Norme existante** : STD-0006 (CIM-11 + LOINC) : SNOMED CT en complément

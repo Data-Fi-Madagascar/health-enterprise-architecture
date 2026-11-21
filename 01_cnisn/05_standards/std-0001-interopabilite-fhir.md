@@ -58,9 +58,9 @@ Cette norme s'applique à :
 
 ## Références au cadre
 
-- **Principes** : PA-05 (Interopérabilité comme exigence), PA-02 (Neutralité technologique)
+- **Principes** : PA-06 (L'interopérabilité est une exigence non négociable), PA-08 (Les systèmes doivent être soutenables sans dépendance externe permanente)
 - **ARTSN** : ART-2 (Médiation et normalisation), F.2 (Normalisation), F.3 (Interopérabilité)
-- **ARTSN — lots consommateurs** : [L2 — Applications terrain](../../02_artsn/07_lots/index.md), [L4 — Analytique & pilotage](../../02_artsn/07_lots/index.md)
+- **ARTSN — lots consommateurs** : [L2 — Applications terrain](../../02_artsn/08_lots/index.md), [L4 — Analytique & pilotage](../../02_artsn/08_lots/index.md)
 - **PTISN** : PT-03 (Catalogue), PT-04 (Identité), PT-07 (Terminologie), PT-08 (Données agrégées), PT-09 (Analytique), PT-10 (Confiance), PT-11 (Consentement), PT-12 (Audit), PT-14 (Transfrontalier), PT-15 (One Health)
 - **Standards internationaux** : HL7 FHIR R4, IHE, OpenHIE, DPI-H
 

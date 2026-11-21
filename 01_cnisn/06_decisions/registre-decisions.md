@@ -26,7 +26,6 @@ tags: ["decisions", "adr", "registre", "gouvernance", "niveau-1"]
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle.
 
----
 
 ## Objet
 
@@ -34,7 +33,6 @@ Ce registre centralise l'ensemble des Architecture Decision Records (ADR) du cad
 
 Chaque ADR enregistrée ici est un choix structurant, daté et traçable, produite par le Comité National d'Architecture Santé Numérique (CNASN) ou validée par lui.
 
----
 
 ## Légende des statuts
 
@@ -46,7 +44,6 @@ Chaque ADR enregistrée ici est un choix structurant, daté et traçable, produi
 | **remplacé** | Succédé par une ADR plus récente |
 | **déprécié** | N'est plus applicable (technologie obsolète, standard abandonné) |
 
----
 
 ## Registre
 
@@ -99,7 +96,6 @@ Le rattachement sectoriel distingue la surveillance et la riposte du pilotage in
 |----|-------|--------|------|--------------|--------|
 | ADR-0012 | Rattachement One Health à la surveillance et au pilotage | **proposé** | 2026-09-24 | DEPSI | Élevé : coordination et redevabilité intersectorielles |
 
----
 
 ## Processus d'enregistrement
 
@@ -113,7 +109,6 @@ Le rattachement sectoriel distingue la surveillance et la riposte du pilotage in
 7. Si abandonné, le statut passe à « déprécié » avec justification
 ```
 
----
 
 ## Statistiques
 
@@ -126,7 +121,6 @@ Le rattachement sectoriel distingue la surveillance et la riposte du pilotage in
 | Déprécié | 0 |
 | **Total** | **12** |
 
----
 
 ## Liens
 

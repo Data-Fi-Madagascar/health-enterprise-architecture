@@ -47,7 +47,7 @@ Le CNISN est organisé en huit parties qui couvrent l'ensemble du cycle de vie d
 |--------|---------|------------|
 | Préambule | Positionnement, portée, articulation | Tous |
 | Principes | 25 principes (catégories A-F) | DEPSI, architectes |
-| Capacités | 16 capacités d'interopérabilité | DEPSI, équipes techniques |
+| Objets d'interopérabilité | 38 objets d'interopérabilité | DEPSI, équipes techniques |
 | Gouvernance | Instances, processus, responsabilités | Décideurs, gouvernance |
 | Conformité | Critères, tests, homologation | Équipes techniques |
 | Standards | Normes obligatoires et standards recommandés | Équipes techniques |
@@ -67,7 +67,7 @@ La direction métier ou le responsable de programme cherche à comprendre les r�
 
 ### 3.3 Équipe technique / DEPSI
 
-L'équipe technique ou la DEPSI cherche à implémenter des échanges conformes au CNISN. Elle doit lire l'ensemble du préambule, les 25 principes, les 16 capacités, la conformité pour les critères et tests, puis se référer à l'ARTSN (niveau 3) pour les patterns techniques et au PTISN (niveau 4) pour les standards et profils.
+L'équipe technique ou la DEPSI cherche à implémenter des échanges conformes au CNISN. Elle doit lire l'ensemble du préambule, les 25 principes, les 38 objets d'interopérabilité, la conformité pour les critères et tests, puis se référer à l'ARTSN (niveau 3) pour les patterns techniques et au PTISN (niveau 4) pour les standards et profils.
 
 ### 3.4 Partenaire technique
 
@@ -86,7 +86,7 @@ Les principes sont organisés en six catégories qui couvrent l'ensemble des dim
 | **E** : Neutralité et réversibilité | P-INT-19 à P-INT-22 | Neutralité technologique, portabilité, progressivité |
 | **F** : Conformité | P-INT-23 à P-INT-25 | Preuves, applicabilité, réévaluation |
 
-## 5. Les 16 capacités d'interopérabilité
+## 5. Les 38 objets d'interopérabilité
 
 | Capacité | Famille | Description |
 |----------|---------|-------------|
@@ -122,13 +122,13 @@ Le guide de lecture s'accompagne de la matrice de lecture offrant une vue crois�
 - **matrice de lecture** : Matrice de lecture du CNISN (niveau 2) (`01_cnisn/reading-matrix.md`)
 - **Préambule** : Préambule du CNISN (`01_cnisn/00_introduction/index.md`)
 - **Principes** : Partie I : Principes nationaux d'interopérabilité de santé (`01_cnisn/01_principes/index.md`)
-- **Capacités** : Partie II : Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
+- **Objets d'interopérabilité** : Partie II : Objets d'interopérabilité requis (`01_cnisn/02_objets-interoperabilite/index.md`)
 - **Gouvernance** : Partie III : Gouvernance (`01_cnisn/03_gouvernance/index.md`)
 - **Conformité** : Partie IV : Conformité (`01_cnisn/04_conformite/index.md`)
 - **Standards** : Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
-- **Trajectoire** : Partie V : Trajectoire de mise en œuvre (`01_cnisn/05_trajectoire/index.md`)
-- **Indicateurs** : Partie VI : Indicateurs de suivi (`01_cnisn/06_indicateurs/index.md`)
-- **Conclusion** : Conclusion du CNISN (`01_cnisn/07_conclusion/index.md`)
+- **Trajectoire** : Partie V : Trajectoire de mise en œuvre (`01_cnisn/07_trajectoire/index.md`)
+- **Indicateurs** : Partie VI : Indicateurs de suivi (`01_cnisn/08_indicateurs/index.md`)
+- **Conclusion** : Conclusion du CNISN (`01_cnisn/09_conclusion/index.md`)
 - **../00_caesn/00_overview/index.md** : Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
 - **../02_artsn/index.md** : Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
 - **../03_ptisn/index.md** : Profils techniques d'implémentation de la Santé Numérique (PTISN) (`03_ptisn/index.md`)
@@ -150,7 +150,7 @@ Le guide de lecture s'accompagne de la matrice de lecture offrant une vue crois�
 - [norm-008: NORM-008 : Tripartite Plus OMS–WOAH–FAO–PNUE](05_standards/norm-008-tripartite.md)
 - [std-0000: STD-0000 : <Titre de la norme>](05_standards/std-0000-template.md)
 - [std-0002: STD-0002 : Norme de sécurité : Chiffrement et contrôle d'accès](05_standards/std-0002-securite-chiffrement.md)
-- [cnisn-trajectoire: Partie V : Trajectoire de mise en œuvre](05_trajectoire/index.md)
+- [cnisn-trajectoire: Partie V : Trajectoire de mise en œuvre](07_trajectoire/index.md)
 - [adr-0003: ADR-0003 : Utilisation de HL7 FHIR comme standard d'interopérabilité](06_decisions/adr-0003-fhir.md)
 - [adr-0005: ADR-0005 : Adoption de FHIR Consent pour le consentement structuré](06_decisions/adr-0005-consentement.md)
 - [adr-0009: ADR-0009 : Adoption d'un référentiel terminologique national (CIM-11 + LOINC)](06_decisions/adr-0009-terminologie.md)
@@ -165,19 +165,19 @@ Le guide de lecture s'accompagne de la matrice de lecture offrant une vue crois�
 - [registre-decisions: Registre des décisions d'architecture (ADR)](06_decisions/registre-decisions.md)
 - [template-modification: Template : Demande de modification architecturale](06_decisions/template-modification.md)
 - [adr-0008: ADR-0008 : Adoption d'ATNA et journalisation pour l'audit et la traçabilité](06_decisions/adr-0008-atna.md)
-- [cnisn-indicateurs: Partie VI : Indicateurs de suivi](06_indicateurs/index.md)
+- [cnisn-indicateurs: Partie VI : Indicateurs de suivi](08_indicateurs/index.md)
 - [cnisn-introduction: Préambule du CNISN](00_introduction/index.md)
 - [cnisn-principes: Partie I : Principes nationaux d'interopérabilité de santé](01_principes/index.md)
-- [cnisn-annexe-c: Annexe C : Articulation avec le PTISN](08_annexes/c-articulation-ptisn.md)
-- [cnisn-annexe-f: Annexe F : Articulation complète CAESN → CNISN → ARTSN → PTISN](08_annexes/f-articulation-complete.md)
-- [cnisn-annexe-g: Annexe G : Matrice des types d'interopérabilité](08_annexes/g-matrice-interop-types.md)
-- [cnisn-annexe-d: Annexe D : Principes de lecture](08_annexes/d-principes-lecture.md)
-- [cnisn-annexe-a: Annexe A : Matrice principes–capacités](08_annexes/a-matrice-principes-capacites.md)
-- [cnisn-annexe-b: Annexe B : Articulation avec l'ARTSN](08_annexes/b-articulation-art-sn.md)
-- [cnisn-annexe-e: Annexe E : Correspondance CAESN–CNISN](08_annexes/e-correspondance-caesn.md)
+- [cnisn-annexe-c: Annexe C : Articulation avec le PTISN](10_annexes/c-articulation-ptisn.md)
+- [cnisn-annexe-f: Annexe F : Articulation complète CAESN → CNISN → ARTSN → PTISN](10_annexes/f-articulation-complete.md)
+- [cnisn-annexe-g: Annexe G : Matrice des types d'interopérabilité](10_annexes/g-matrice-interop-types.md)
+- [cnisn-annexe-d: Annexe D : Principes de lecture](10_annexes/d-principes-lecture.md)
+- [cnisn-annexe-a: Annexe A : Matrice principes-objets d'interopérabilité](10_annexes/a-matrice-principes-capacites.md)
+- [cnisn-annexe-b: Annexe B : Articulation avec l'ARTSN](10_annexes/b-articulation-art-sn.md)
+- [cnisn-annexe-e: Annexe E : Correspondance CAESN–CNISN](10_annexes/e-correspondance-caesn.md)
 - [cnisn-gouvernance: Partie III : Gouvernance](03_gouvernance/index.md)
-- [cnisn-capacites: Partie II : Capacités nationales requises](02_capacites/index.md)
-- [cnisn-conclusion: Conclusion du CNISN](07_conclusion/index.md)
+- [cnisn-objets-interoperabilite: Partie II : Objets d'interopérabilité requis](02_objets-interoperabilite/index.md)
+- [cnisn-conclusion: Conclusion du CNISN](09_conclusion/index.md)
 - [cnisn-programme-conformite: Partie IV bis : Programme de conformité opérationnel](04_conformite/programme-conformite.md)
 - [cnisn-conformite: Partie IV : Conformité](04_conformite/index.md)
 

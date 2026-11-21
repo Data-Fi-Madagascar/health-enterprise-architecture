@@ -1,6 +1,6 @@
 ---
 
-domain: work-packages
+domain: 06_portfolio
 id: WP-03
 type: work-package
 title: Lot L3 — Médiation & registres partagés

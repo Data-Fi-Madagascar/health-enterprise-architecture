@@ -64,8 +64,8 @@ Les chapitres de cette partie s'inscrivent dans une dépendance avec les Fondati
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
 - **Partie III** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
-- **table de maturité** : Annexe A : Table de maturité par chapitre (`02_artsn/08_annexes/a-table-de-maturite.md`)
-- **gouvernance** : Gouvernance de l'ARTSN (`02_artsn/06_gouvernance/index.md`)
+- **table de maturité** : Annexe A : Table de maturité par chapitre (`02_artsn/09_annexes/a-table-de-maturite.md`)
+- **gouvernance** : Gouvernance de l'ARTSN (`02_artsn/07_gouvernance/index.md`)
 - **Fondations** : Fondations de l'ARTSN (`02_artsn/00_fondations/index.md`)
 - **Exigences contextuelles nationales** : Exigences contextuelles nationales (`02_artsn/02_exigences-contextuelles/index.md`)
 - **Cartographie cible** : Cartographie conceptuelle cible (`02_artsn/05_cartographie/index.md`)

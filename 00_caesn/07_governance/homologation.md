@@ -26,13 +26,9 @@ tags: ["gouvernance", "homologation", "workflow", "conformité", "niveau-2"]
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle.
 
----
-
 ## Objet
 
 Ce document définit le workflow concret d'homologation des initiatives numériques sanitaires. Il transforme les principes de gouvernance en étapes opérationnelles avec des livrables, des délais et des responsabilités clairement définis.
-
----
 
 ## 1. Périmètre de l'homologation
 
@@ -49,8 +45,6 @@ Toute initiative numérique sanitaire recevant un financement public ou utilisan
 - Mises à jour correctives sans changement fonctionnel
 - Outils internes ne touchant pas de données patient
 - Pilotes limités (< 3 mois, < 2 formations sanitaires)
-
----
 
 ## 2. Checklist d'homologation
 
@@ -82,8 +76,6 @@ Toute initiative numérique sanitaire recevant un financement public ou utilisan
 
 > **Cohérence inter-niveaux.** Cette checklist d'admission (niveau 1) se superpose aux 13 dimensions de conformité du CNISN (`01_cnisn/04_conformite/index.md` §3) et aux 5 portes architecturales de l'ARTSN. L'autorité d'homologation unique est le **CNASN** ; les critères ne sont pas redondants mais déclinés par couche (voir l'articulation détaillée en §3.1 du CNISN).
 
----
-
 ## 3. Matrice de décision
 
 ### 3.1 Par conformité
@@ -103,8 +95,6 @@ Toute initiative numérique sanitaire recevant un financement public ou utilisan
 | **Déploiement régional** | N1 + N2 | 4 semaines |
 | **Déploiement national** | N1 + N2 + N3 | 6 semaines |
 | **Système critique** (données patient à grande échelle) | N1 + N2 + N3 + audit sécurité | 8 semaines |
-
----
 
 ## 4. Workflow détaillé
 
@@ -150,8 +140,6 @@ Toute initiative numérique sanitaire recevant un financement public ou utilisan
 | 5.2 | Mettre à jour le registre | Registre mis à jour | 1 jour |
 | 5.3 | Communiquer aux parties prenantes | Notification | 1 jour |
 
----
-
 ## 5. Rôles et responsabilités
 
 | Rôle | Responsabilité dans l'homologation |
@@ -163,8 +151,6 @@ Toute initiative numérique sanitaire recevant un financement public ou utilisan
 | **Président CNASN** | Statue sur l'homologation ou la dérogation |
 | **BRV** | Valide l'impact business si nécessaire |
 | **Secrétaire Général** | Approuve les systèmes critiques et les dérogations majeures |
-
----
 
 ## 6. Cas types
 
@@ -196,8 +182,6 @@ Dossier incomplet ou non conforme (< 8/12) → Rejet → Nouvelle soumission apr
 Durée totale : variable
 ```
 
----
-
 ## 7. Indicateurs de performance du processus
 
 | Indicateur | Cible | Mesure |
@@ -208,8 +192,6 @@ Durée totale : variable
 | Taux de dérogation | < 15% | Dérogations / total |
 | Taux de rejet | < 10% | Rejets / total |
 | Satisfaction des demandeurs | > 80% | Enquête post-processus |
-
----
 
 ## Liens
 
@@ -234,7 +216,7 @@ Durée totale : variable
 - [governance: Gouvernance du cadre d'architecture](index.md)
 - [cnasen-composition: Composition et fonctionnement du Comité National](cnasen-composition.md)
 - [instances-sectorielles: Instances sectorielles et autorités spécialisées](instances-sectorielles.md)
-- [arbitrage-ecarts-caesn-artsn: Proposition d'arbitrage : 5 écarts CAESN ↔ ARTSN](arbitrage-ecarts-caesn-artsn.md)
+- [arbitrage-ecarts-caesn-artsn: Arbitrage : 5 écarts CAESN ↔ ARTSN](arbitrage-ecarts-caesn-artsn.md)
 - [fondement-legal: Fondement légal et cadre législatif de la santé numérique](fondement-legal.md)
 
 <!-- liens-section-auto -->

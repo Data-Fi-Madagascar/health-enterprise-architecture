@@ -108,4 +108,4 @@ L'interopérabilité juridique concerne la capacité des systèmes et des organi
 
 ## Références
 
-- **annexe G** : Annexe G : Matrice des types d'interopérabilité (`01_cnisn/08_annexes/g-matrice-interop-types.md`)
+- **annexe G** : Annexe G : Matrice des types d'interopérabilité (`01_cnisn/10_annexes/g-matrice-interop-types.md`)

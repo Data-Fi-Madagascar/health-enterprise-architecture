@@ -26,8 +26,6 @@ tags: ["caesn", "lecture", "niveau-1", "guide"]
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
----
-
 ## 1. Qu'est-ce que le CAESN ?
 
 Le CAESN (Cadre d'Architecture d'Entreprise de la Santé Numérique) est le **niveau 1** de la hiérarchie documentaire du secteur santé numérique de Madagascar. Il définit les principes, méthodes et mécanismes de gouvernance pour toute initiative numérique du secteur santé.
@@ -43,8 +41,6 @@ Niveau 2 (CNISN)  →  Principes d'interopérabilité
 Niveau 3 (ARTSN)  →  Patterns architecturaux, standards
 Niveau 4 (PTISN)  →  Services, profils, produits candidats
 ```
-
----
 
 ## 2. Structure du CAESN
 
@@ -64,8 +60,6 @@ Le CAESN est organisé en **11 domaines** :
 | Décisions | Architecture Decision Records | Architectes |
 | Normes | Standards et règles d'homologation | DEPSI, techniques |
 | Annexes | Matrice de lecture, glossaire | Tous |
-
----
 
 ## 3. Parcours de lecture par profil
 
@@ -112,32 +106,30 @@ Le CAESN est organisé en **11 domaines** :
 4. Capabilités : Maturité cible
 5. Gouvernance : Processus de validation
 
----
-
 ## 4. Catalogue des capabilités
 
-Les 16 capabilités couvrent l'ensemble du système de santé :
+Les 18 capabilités couvrent l'ensemble du système de santé. Le catalogue de référence est le référentiel d'objets [`CAP-01` à `CAP-18`](03_capabilities/maturity.md), dont les définitions canoniques sont les fiches du [référentiel d'architecture](../04_architecture-repository/02_architecture-elements/strategy/capabilities/) ; la matrice de maturité est le rendu opérationnel de ce même ensemble.
 
 | Capacité | Description |
 |----------|-------------|
-| CAP-01 | Accès aux soins |
-| CAP-02 | Orientation et tri |
-| CAP-03 | Coordination des soins |
-| CAP-04 | Prévention et promotion |
-| CAP-05 | Surveillance sanitaire |
-| CAP-06 | Riposte sanitaire |
-| CAP-07 | Protection financière |
-| CAP-08 | Gestion des ressources |
-| CAP-09 | Qualité des données |
-| CAP-10 | Partage des données |
-| CAP-11 | Sécurité et confidentialité |
-| CAP-12 | Identification des bénéficiaires |
-| CAP-13 | Identification des structures |
-| CAP-14 | Identification des professionnels |
-| CAP-15 | Référentiels partagés |
-| CAP-16 | Services analytiques |
-
----
+| CAP-01 | Offre de soins et continuité |
+| CAP-02 | Parcours patient et référence |
+| CAP-03 | Qualité et sécurité des soins |
+| CAP-04 | Santé communautaire |
+| CAP-05 | Surveillance, alerte, riposte |
+| CAP-06 | Vaccination et prévention |
+| CAP-07 | Protection financière et CSU |
+| CAP-08 | Gouvernance et redevabilité |
+| CAP-09 | Ressources humaines en santé |
+| CAP-10 | Chaîne d'approvisionnement |
+| CAP-11 | Infrastructures et équipements |
+| CAP-12 | Finances publiques et budget |
+| CAP-13 | Système d'information sanitaire |
+| CAP-14 | Interopérabilité et référentiels |
+| CAP-15 | Cybersécurité et données |
+| CAP-16 | Gestion du portefeuille numérique |
+| CAP-17 | Engagement patient et identité numérique |
+| CAP-18 | Coordination intersectorielle (One Health) |
 
 ## 5. Flux de valeur nationaux
 
@@ -148,8 +140,6 @@ Les 16 capabilités couvrent l'ensemble du système de santé :
 | VS-03 | Protection financière | Garantir l'accès aux soins sans obstacle financier |
 | VS-04 | Pilotage du système | Diriger et améliorer le système de santé |
 
----
-
 ## 6. Liens vers les autres niveaux
 
 | Niveau | Document | Lien |
@@ -157,8 +147,6 @@ Les 16 capabilités couvrent l'ensemble du système de santé :
 | 2 : CNISN | Cadre National d'Interopérabilité | ../01_cnisn/index.md |
 | 3 : ARTSN | Architecture de Référence Technique | ../02_artsn/index.md |
 | 4 : PTISN | Profils techniques d'implémentation | ../03_ptisn/index.md |
-
----
 
 ## 7. Documents complémentaires
 
@@ -227,7 +215,7 @@ Les 16 capabilités couvrent l'ensemble du système de santé :
 - [governance: Gouvernance du cadre d'architecture](07_governance/index.md)
 - [cnasen-composition: Composition et fonctionnement du Comité National](07_governance/cnasen-composition.md)
 - [instances-sectorielles: Instances sectorielles et autorités spécialisées](07_governance/instances-sectorielles.md)
-- [arbitrage-ecarts-caesn-artsn: Proposition d'arbitrage : 5 écarts CAESN ↔ ARTSN](07_governance/arbitrage-ecarts-caesn-artsn.md)
+- [arbitrage-ecarts-caesn-artsn: Arbitrage : 5 écarts CAESN ↔ ARTSN](07_governance/arbitrage-ecarts-caesn-artsn.md)
 - [fondement-legal: Fondement légal et cadre législatif de la santé numérique](07_governance/fondement-legal.md)
 - [prioritization: Critères et score de priorisation des initiatives](06_portfolio/prioritization.md)
 - [portfolio-governance: Dépendances, revues et règles de gouvernance du portefeuille](06_portfolio/governance.md)
@@ -235,7 +223,7 @@ Les 16 capabilités couvrent l'ensemble du système de santé :
 - [portfolio: Portefeuille d'initiatives orienté valeur](06_portfolio/index.md)
 - [value-chain: Chaîne de valeur d'une initiative](06_portfolio/value-chain.md)
 - [caesn-migration: Plan de migration : De l'existant au futur état](06_portfolio/migration-existant.md)
-- [mapping-principes-caesn-artsn: Table de correspondance : Principes CAESN ↔ ARTSN](02_principles/mapping-caesn-artsn.md)
+- [mapping-principes-caesn-cnisn: Table de correspondance : Principes CAESN ↔ CNISN](02_principles/mapping-caesn-cnisn.md)
 - [pa: Principes d'architecture transversaux](02_principles/transversal.md)
 - [principles: Principes d'architecture](02_principles/index.md)
 - [pd-VS-04: PD-VS-04 : Principes de domaine : piloter, coordonner et améliorer la performance](02_principles/domain/vs04.md)

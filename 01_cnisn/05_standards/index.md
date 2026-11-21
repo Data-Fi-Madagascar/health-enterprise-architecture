@@ -85,7 +85,7 @@ Un modèle de norme est proposé : STD-0000 : modèle.
 - **Tripartite Plus OMS–WOAH–FAO–PNUE** : Tripartite Plus OMS–WOAH–FAO–PNUE (`01_cnisn/05_standards/norm-008-tripartite.md`)
 - **Introduction du CNISN** : Préambule du CNISN (`01_cnisn/00_introduction/index.md`)
 - **Principes du CNISN** : Partie I : Principes nationaux d'interopérabilité de santé (`01_cnisn/01_principes/index.md`)
-- **Capacités du CNISN** : Partie II : Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
+- **Objets d'interopérabilité du CNISN** : Partie II : Objets d'interopérabilité requis (`01_cnisn/02_objets-interoperabilite/index.md`)
 - **Gouvernance du CNISN** : Partie III : Gouvernance (`01_cnisn/03_gouvernance/index.md`)
 - **Décisions** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
 

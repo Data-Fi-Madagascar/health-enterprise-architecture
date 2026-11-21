@@ -42,7 +42,7 @@ Ce document est l'**avant-projet** de loi e-santé recommandé par [ADR-0010](..
 3. Les **plateformes et services numériques** de santé (télémédecine, registres, applications usagers) déployés sur le territoire.
 4. Les **partenaires techniques et financiers** lorsque leurs initiatives utilisent les infrastructures partagées ou sont cofinancées par l'État.
 
-**Hors champ (sauf accord).** Les dispositifs à usage strictement personnel, les recherches hors données opérationnelles, et les systèmes relevant d'autres ministères (coordonnés via One Health — [lot L7](../../02_artsn/07_lots/index.md)).
+**Hors champ (sauf accord).** Les dispositifs à usage strictement personnel, les recherches hors données opérationnelles, et les systèmes relevant d'autres ministères (coordonnés via One Health — [lot L7](../../02_artsn/08_lots/index.md)).
 
 ## Structure de la loi — titres et articles clés
 
@@ -96,14 +96,14 @@ La loi n'est pas un document isolé : elle ancre juridiquement la chaîne CAESN 
 | **CAESN** (stratégie) | Principes, gouvernance, fondement légal | [Fondement légal](fondement-legal.md), [Gouvernance](index.md) |
 | **CNASN** (autorité) | Mandat d'architecture et d'homologation (Art. 4–7) | [ADR-0010](../../01_cnisn/06_decisions/adr-0010-cadre-legal.md) |
 | **CNISN** (normes) | Conformité obligatoire aux standards (Art. 8–10) | [Normes](../../01_cnisn/05_standards/index.md), ADR-0001/0004/0006 |
-| **ARTSN** (référence technique) | Déploiement par lots, finançable (Art. 15) | [Feuille de route](../../02_artsn/07_lots/index.md), [TCO](../06_portfolio/financement-tco.md) |
+| **ARTSN** (référence technique) | Déploiement par lots, finançable (Art. 15) | [Feuille de route](../../02_artsn/08_lots/index.md), [TCO](../06_portfolio/financement-tco.md) |
 | **PTISN** (mise en œuvre) | Certification des profils (Art. 17) | Profils techniques (`../../03_ptisn/`) |
 
 Ainsi, la loi transforme le HEA d'un *référentiel conseillé* en un *socle juridique exécutoire* : chaque chapitre ART, chaque norme CNISN et chaque lot ARTSN devient un objet de conformité vérifiable.
 
 ## Modèle de référence
 
-Inspiré du *Kenya Digital Health Act* (2023) et aligné sur la [Convention de Malabo](fondement-legal.md) et la [Loi 2014-038](fondement-legal.md) sur la santé de base. La structure par titres reprend les domaines faibles identifiés par l'évaluation [ADHMAT](../../02_artsn/08_annexes/h-benchmark-adhmat.md) (législation, infrastructure, workforce).
+Inspiré du *Kenya Digital Health Act* (2023) et aligné sur la [Convention de Malabo](fondement-legal.md) et la [Loi 2014-038](fondement-legal.md) sur la santé de base. La structure par titres reprend les domaines faibles identifiés par l'évaluation [ADHMAT](../../02_artsn/09_annexes/h-benchmark-adhmat.md) (législation, infrastructure, workforce).
 
 ## Statut
 
@@ -117,4 +117,4 @@ Inspiré du *Kenya Digital Health Act* (2023) et aligné sur la [Convention de M
 - **Gouvernance** : Gouvernance du cadre d'architecture (`index.md`)
 - **Instances sectorielles** : Plateforme nationale de coordination PHC (`instances-sectorielles.md`)
 - **TCO** : Méthode TCO et enveloppe de financement (`../06_portfolio/financement-tco.md`)
-- **ADHMAT** : Benchmark de maturité (annexe H) (`../../02_artsn/08_annexes/h-benchmark-adhmat.md`)
+- **ADHMAT** : Benchmark de maturité (annexe H) (`../../02_artsn/09_annexes/h-benchmark-adhmat.md`)

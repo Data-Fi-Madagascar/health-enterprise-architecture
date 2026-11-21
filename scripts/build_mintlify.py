@@ -40,36 +40,58 @@ FRONTMATTER_RE = re.compile(r"\A---\s*\n.*?\n---\s*\n?", re.S)
 LINK_RE = re.compile(r"\[([^\]]*)\]\(([^)]+)\)")
 NUM_PREFIX_RE = re.compile(r"^\d+_")
 
-# Human labels keyed by the source sub-directory (numeric-prefixed form).
+# Human labels keyed by the artifact sub-directory, that is the source directory
+# with its numeric prefix stripped (the prefix is removed by artifact_relpath).
 GROUP_LABELS = {
-    "artsn/annexes": "ARTSN - Annexes",
-    "artsn/cartographie": "ARTSN - Cartographie cible",
-    "artsn/feuille-de-route": "ARTSN - Feuille de route",
+    "caesn": "CAESN - Lectures clés",
+    "caesn/overview": "CAESN - Vue d'ensemble",
+    "caesn/overview/lieux": "CAESN - Localisation territoriale",
+    "caesn/value-streams": "CAESN - Flux de valeur",
+    "caesn/principles": "CAESN - Principes",
+    "caesn/principles/domain": "CAESN - Principes de domaine",
+    "caesn/capabilities": "CAESN - Capabilités",
+    "caesn/data": "CAESN - Données",
+    "caesn/application": "CAESN - Applications",
+    "caesn/portfolio": "CAESN - Portefeuille",
+    "caesn/governance": "CAESN - Gouvernance",
+    "caesn/governance/roles": "CAESN - Rôles",
+    "caesn/governance/acteurs": "CAESN - Acteurs",
+    "caesn/annexes": "CAESN - Annexes",
+    "cnisn": "CNISN - Lectures clés",
+    "cnisn/introduction": "CNISN - Introduction",
+    "cnisn/principes": "CNISN - Principes",
+    "cnisn/objets-interoperabilite": "CNISN - Objets d'interopérabilité",
+    "cnisn/gouvernance": "CNISN - Gouvernance",
+    "cnisn/conformite": "CNISN - Conformité",
+    "cnisn/standards": "CNISN - Normes & standards",
+    "cnisn/decisions": "CNISN - Décisions (ADR)",
+    "cnisn/trajectoire": "CNISN - Trajectoire",
+    "cnisn/indicateurs": "CNISN - Indicateurs",
+    "cnisn/conclusion": "CNISN - Conclusion",
+    "cnisn/annexes": "CNISN - Annexes",
+    "artsn": "ARTSN - Lectures clés",
+    "artsn/fondations": "ARTSN - Fondations",
+    "artsn/flux-de-valeur": "ARTSN - Flux de valeur",
+    "artsn/exigences-contextuelles": "ARTSN - Exigences contextuelles",
     "artsn/objets-de-donnees": "ARTSN - Objets de données",
     "artsn/objets-de-donnees/nomenclatures": "ARTSN - Nomenclatures",
     "artsn/patterns": "ARTSN - Chapitres de référence",
+    "artsn/cartographie": "ARTSN - Cartographie cible",
     "artsn/services": "ARTSN - Services",
+    "artsn/gouvernance": "ARTSN - Gouvernance",
     "artsn/lots": "ARTSN - Lots",
-    "00_overview": "Vue d'ensemble",
-    "00_fondations": "Fondations",
-    "01_flux-de-valeur": "Flux de valeur",
-    "01_value-streams": "Flux de valeur",
-    "02_exigences-contextuelles": "Exigences contextuelles",
-    "02_principles": "Principes",
-    "02_principles/domain": "Principes de domaine",
-    "03_capabilities": "Capabilités",
-    "03_chapitres": "Chapitres de référence",
-    "04_cartographie-cible": "Cartographie cible",
-    "04_data": "Données",
-    "05_application": "Applications",
-    "05_dictionnaire": "Dictionnaire de données",
-    "06_gouvernance": "Gouvernance",
-    "06_portfolio": "Portefeuille",
-    "07_annexes": "Annexes",
-    "07_governance": "Gouvernance",
-    "08_decisions": "Décisions (ADR)",
-    "09_standards": "Normes & standards",
-    "10_annexes": "Annexes",
+    "artsn/annexes": "ARTSN - Annexes",
+    "artsn/feuille-de-route": "ARTSN - Feuille de route",
+    "ptisn": "PTISN - Lectures clés",
+    "ptisn/introduction": "PTISN - Introduction",
+    "ptisn/regles-utilisation": "PTISN - Règles d'utilisation",
+    "ptisn/topologie-nationale-cible": "PTISN - Topologie nationale cible",
+    "ptisn/profils": "PTISN - Profils techniques",
+    "ptisn/matrice-alignement": "PTISN - Matrice d'alignement",
+    "ptisn/profil-initiative": "PTISN - Profil d'initiative",
+    "ptisn/gouvernance": "PTISN - Gouvernance",
+    "ptisn/conclusion": "PTISN - Conclusion",
+    "ptisn/annexes": "PTISN - Annexes",
 }
 
 # Short sidebar labels for coded titles (VS-xx, ART-x, ADR-x, STD-x, …).
@@ -215,7 +237,8 @@ def group_label(apath_dir: str) -> str:
     label = GROUP_LABELS.get(apath_dir)
     if label:
         return label
-    return NUM_PREFIX_RE.sub("", apath_dir).replace("-", " ").capitalize()
+    parts = [p.replace("-", " ").capitalize() for p in apath_dir.split("/")]
+    return " / ".join(parts)
 
 
 def build_tabs(manifest, url_map):
@@ -244,7 +267,11 @@ def build_tabs(manifest, url_map):
                 continue
             root = None
             for r, u in zip(rels, urls):
-                if NUM_PREFIX_RE.sub("", PurePosixPath(r).name) == "index.md":
+                name = PurePosixPath(r).name
+                # index.md d'un dossier, ou fichier d'entrée d'une série
+                # indexée (pt-00-index.md) qui joue le même rôle de racine.
+                if name == "index.md" or (name.endswith("-index.md")
+                                         and name.count("-") == 2):
                     root = u
                     urls.remove(u)
                     break

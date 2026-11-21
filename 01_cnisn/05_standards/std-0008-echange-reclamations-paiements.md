@@ -58,10 +58,10 @@ Cette norme s'applique à :
 
 ## Références au cadre
 
-- **Principes** : PA-05 (Interopérabilité comme exigence), PA-02 (Neutralité technologique)
+- **Principes** : PA-06 (L'interopérabilité est une exigence non négociable), PA-08 (Les systèmes doivent être soutenables sans dépendance externe permanente)
 - **CNISN** : CAP-07 (Protection financière, couverture santé universelle)
 - **ARTSN** : ART-2 (Médiation et normalisation), ART-9 (Garanties transactionnelles fortes)
-- **ARTSN — lots consommateurs** : [L4 — Analytique & pilotage](../../02_artsn/07_lots/index.md)
+- **ARTSN — lots consommateurs** : [L4 — Analytique & pilotage](../../02_artsn/08_lots/index.md)
 - **PTISN** : [PT-18: Échange de réclamations et paiements](../../03_ptisn/03_profils/pt-18-echange-reclamations-paiements.md), [PT-07: Terminologie et codification](../../03_ptisn/03_profils/pt-07-terminologie-codification.md)
 - **Standards internationaux** : HL7 FHIR R4, Nigeria NDHI HCX, Open Health Care eXchange (HCX)
 

@@ -1,6 +1,6 @@
 ---
 
-domain: services
+domain: 06_services
 id: SRV-03
 type: service
 title: Service de référentiels

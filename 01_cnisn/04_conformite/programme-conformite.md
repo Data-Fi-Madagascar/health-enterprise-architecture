@@ -56,7 +56,7 @@ La conformité définie en `04_conformite/index.md` (critères, statuts, déroga
 
 - **Non-conformité bloquante** : refus d'homologation (voir `00_caesn/07_governance/homologation.md`).
 - **Dérive de conformité** : rétrogradation du statut (conforme → conforme sous conditions → suspendue).
-- **Tableau de bord** : taux de conformité par initiative, par standard, alertes (voir `02_artsn/06_gouvernance/conformite.md`).
+- **Tableau de bord** : taux de conformité par initiative, par standard, alertes (voir `02_artsn/07_gouvernance/conformite.md`).
 - **Rapport annuel** : publié par le CNASN, alimente la revue stratégique.
 
 ## 4. Jalon de démarrage

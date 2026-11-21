@@ -1,7 +1,7 @@
 ---
 title: Établissement hospitalier de référence
 id: caesn-LOC-05
-domain: 00_overview
+domain: lieux
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-24

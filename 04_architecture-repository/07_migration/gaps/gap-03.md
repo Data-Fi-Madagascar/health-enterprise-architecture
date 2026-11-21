@@ -6,7 +6,7 @@ title: Écart — Cadre légal & gouvernance publié
 status: draft
 owner: Direction du Numérique en Santé
 version: "0.1"
-envelope: 02_artsn/09_feuille-de-route/gap-03-cart-cadre-l-gal-gouvernance-publi.md
+envelope: 02_artsn/10_feuille-de-route/gap-03-cart-cadre-l-gal-gouvernance-publi.md
 between: ["PL-01"]
 gap_state: planned
 target_plateau: ["PL-01"]

@@ -58,7 +58,7 @@ Cette norme s'applique à :
 
 - **CNISN** : ABB-ECHANGE-LOGISTIQUE-LMIS (échange et traçabilité de la chaîne d'approvisionnement sanitaire)
 - **ARTSN** : ART-10 (logistique, traçabilité de bout en bout), ART-7 (résidence & sécurité), ART-9 (garanties transactionnelles)
-- **ARTSN — lots consommateurs** : [L4 — Analytique & pilotage](../../02_artsn/07_lots/index.md)
+- **ARTSN — lots consommateurs** : [L4 — Analytique & pilotage](../../02_artsn/08_lots/index.md)
 - **PTISN** : [PT-17: Logistique & chaîne d'approvisionnement (LMIS)](../../03_ptisn/03_profils/pt-17-logistique-lmis.md)
 - **Standards internationaux** : HL7 FHIR R4, GS1 (GTIN/SSCC), OpenLMIS, mCSD (lieux)
 

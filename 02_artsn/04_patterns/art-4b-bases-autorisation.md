@@ -37,7 +37,7 @@ ART-4B : Bases d'autorisation constitue un chapitre du **cadre normatif opposabl
 
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (demandes d’extraction d’instituts de recherche, requêtes de ministères tiers), cette discipline seule permet de garantir techniquement le respect absolu du secret médical et des droits du citoyen sans rompre le pipeline.
 
-- **Rattachement** : [CAP-04bis](../08_annexes/c-renvoi-capacites-candidates.md), [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md) (cybersécurité).
+- **Rattachement** : [CAP-04bis](../09_annexes/c-renvoi-capacites-candidates.md), [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md) (cybersécurité).
 - **Fondements cibles** : consentement ou opposition explicite, mandat de santé publique, accord interinstitutionnel ([ART-0: Accords de partage inter-institutionnels](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md)).
 - **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../04_architecture-repository/03_requirements/enf-4.md) (protection One Health).
 - **Statut : Provisoire.**

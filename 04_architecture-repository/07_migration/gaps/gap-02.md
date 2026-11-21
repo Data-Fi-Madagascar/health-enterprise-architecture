@@ -6,7 +6,7 @@ title: Écart — Interopérabilité transfrontalière & One Health
 status: draft
 owner: Direction du Numérique en Santé
 version: "0.1"
-envelope: 02_artsn/09_feuille-de-route/gap-02-cart-interop-rabilit-transfrontali-re-one-health.md
+envelope: 02_artsn/10_feuille-de-route/gap-02-cart-interop-rabilit-transfrontali-re-one-health.md
 between: ["PL-02", "PL-03"]
 gap_state: planned
 target_plateau: ["PL-03"]

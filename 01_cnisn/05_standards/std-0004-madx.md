@@ -55,9 +55,9 @@ Cette norme s'applique à :
 
 ## Références au cadre
 
-- **Principes** : PA-05 (Interopérabilité), PA-06 (Gouvernance des données)
+- **Principes** : PA-06 (L'interopérabilité est une exigence non négociable), PA-05 (Une donnée doit être collectée une seule fois et réutilisée plusieurs fois)
 - **ARTSN** : ART-5 (Analytique et pilotage), ART-2 (Médiation)
-- **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/07_lots/index.md)
+- **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/08_lots/index.md)
 - **PTISN** : PT-08 (Données agrégées)
 - **CNISN** : ABB-SERVICE-TERMINOLOGIE (Données agrégées), ABB-EXPOSITION-DONNEES-ANALYTIQUES (Accès analytique)
 

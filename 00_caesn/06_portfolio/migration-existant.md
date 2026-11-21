@@ -26,13 +26,9 @@ tags: ["caesn", "portfolio", "migration", "transition", "niveau-1"]
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle.
 
----
-
 ## Objectif
 
 Ce document décrit la stratégie et les étapes concrètes pour passer de l'état actuel du système d'information sanitaire national à l'architecture cible HEA. Il identifie les systèmes existants, les risques de migration et les plans d'action par phase.
-
----
 
 ## 1. État actuel : Inventaire des systèmes existants
 
@@ -71,8 +67,6 @@ Ce document décrit la stratégie et les étapes concrètes pour passer de l'ét
 | **Données agrégées** | DHIS2 (isolé) | mADX normalisé | Moyen : DHIS2 fonctionne mais non intégré |
 | **Transfrontalier** | Aucun | IPS + GDHCN | Critique : zéro infrastructure |
 
----
-
 ## 2. Stratégie de migration
 
 ### 2.1 Principes directeurs
@@ -107,8 +101,6 @@ Ce document décrit la stratégie et les étapes concrètes pour passer de l'ét
 | **Échange** | X-Road déployé → connecteurs legacy → remplacement | 2 (moyenne) |
 | **Applications** | Nouveaux modules → parallèle → remplacement progressif | 3 (standard) |
 | **Gouvernance** | Nouvelles instances → formation → transfert responsabilités | 2 (moyenne) |
-
----
 
 ## 3. Plan de migration par phase
 
@@ -172,8 +164,6 @@ Ce document décrit la stratégie et les étapes concrètes pour passer de l'ét
 
 **Critère de succès Phase 5** : Premier échange IPS transfrontalier réussi, GDHCN opérationnel.
 
----
-
 ## 4. Gestion des risques de migration
 
 ### 4.1 Risques identifiés
@@ -198,8 +188,6 @@ Ce document décrit la stratégie et les étapes concrètes pour passer de l'ét
 | Faille sécurité | Isolation immédiate, audit forensique, correction, notification |
 | Indisponibilité X-Road | Mode dégradé (API directe), rétablissement prioritaire |
 
----
-
 ## 5. Indicateurs de suivi de la migration
 
 | Indicateur | Cible Phase 1 | Cible Phase 3 | Cible Phase 5 |
@@ -212,8 +200,6 @@ Ce document décrit la stratégie et les étapes concrètes pour passer de l'ét
 | Disponibilité plateforme | 95% | 99% | 99,9% |
 | Temps moyen réponse API | < 3s | < 2s | < 1s |
 | Incidents sécurité / mois | < 5 | < 2 | 0 |
-
----
 
 ## 6. Gouvernance de la migration
 
@@ -241,8 +227,6 @@ Ce document décrit la stratégie et les étapes concrètes pour passer de l'ét
 
 *Légende : R = Responsible · A = Accountable · C = Consulted · I = Informed*
 
----
-
 ## Liens
 
 - Portefeuille d'initiatives
@@ -253,6 +237,6 @@ Ce document décrit la stratégie et les étapes concrètes pour passer de l'ét
 ## Références
 
 - **Portefeuille d'initiatives** : Portefeuille d'initiatives orienté valeur (`00_caesn/06_portfolio/index.md`)
-- **Feuille de route ARTSN** : Feuille de route de déploiement progressif de l'ARTSN (`02_artsn/07_lots/index.md`)
-- **Trajectoire CNISN** : Partie V : Trajectoire de mise en œuvre (`01_cnisn/05_trajectoire/index.md`)
-- **Protocole de test** : Annexe D : Protocole de test d'interopérabilité (`02_artsn/08_annexes/d-protocole-test-interopabilite.md`)
+- **Feuille de route ARTSN** : Feuille de route de déploiement progressif de l'ARTSN (`02_artsn/08_lots/index.md`)
+- **Trajectoire CNISN** : Partie V : Trajectoire de mise en œuvre (`01_cnisn/07_trajectoire/index.md`)
+- **Protocole de test** : Annexe D : Protocole de test d'interopérabilité (`02_artsn/09_annexes/d-protocole-test-interopabilite.md`)

@@ -98,4 +98,4 @@ Le profil dépend du registre patient (PT-04) et du fournisseur d’identité (P
 
 ## Références au cadre
 
-- **ARTSN — lots consommateurs** : [L5 — Extension & pérennisation](../../02_artsn/07_lots/index.md)
+- **ARTSN — lots consommateurs** : [L5 — Extension & pérennisation](../../02_artsn/08_lots/index.md)

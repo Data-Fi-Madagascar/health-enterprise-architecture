@@ -8,9 +8,9 @@
 @base <https://healmadagascar.mg/ontologie/hea> .
 
 <https://healmadagascar.mg/ontologie/hea> rdf:type owl:Ontology ;
-    owl:versionInfo "2.0.0" ;
+    owl:versionInfo "2.1.0" ;
     rdfs:label "Ontologie HEA — Architecture d'Entreprise de la Santé Numérique" ;
-    rdfs:comment "Ontologie du référentiel HEA (Madagascar). Conforme à la grammaire ArchiMate 3.1. Générée automatiquement depuis 04_architecture-repository/**/*.md par compile_rdf.py" .
+    rdfs:comment "Ontologie du référentiel HEA (Madagascar). Conforme à la grammaire ArchiMate 3.1. Les classes sont alignées sur le graphe compilé par compile_rdf.py, qui type chaque objet du référentiel. Le compilateur vérifie à chaque validation que toute classe employée par le graphe est déclarée ici." .
 
 # ===================================================================
 # Namespace HEA
@@ -132,32 +132,76 @@ hea:Lieu rdf:type owl:Class ;
     rdfs:comment "Localisation géographique (LOC-01..06). ArchiMate: Location." .
 
 # ===================================================================
+# Classes — Modèle TOGAF (niveau 3 : référentiel d'architecture)
+# ===================================================================
+
+hea:ArchitecturePartition rdf:type owl:Class ;
+    rdfs:label "Partition d'architecture" ;
+    rdfs:comment "Découpage du référentiel cible en partitions transverse, sectorielle ou de flux de valeur. TOGAF: Architecture Partition." .
+
+hea:ArchitectureBuildingBlock rdf:type owl:Class ;
+    rdfs:label "Building block d'architecture" ;
+    rdfs:comment "Bloc d'architecture réutilisable exposant des services et des contrats (ABB-*). TOGAF: Architecture Building Block." .
+
+hea:SolutionBuildingBlock rdf:type owl:Class ;
+    rdfs:label "Building block de solution" ;
+    rdfs:comment "Solution composite réalisée par un profil d'implémentation (SBB-*). TOGAF: Solution Building Block." .
+
+hea:ArchitecturePattern rdf:type owl:Class ;
+    rdfs:label "Patron d'architecture" ;
+    rdfs:comment "Patron de conception répondant à un problème d'architecture récurrent (PAT-*). TOGAF: Architecture Pattern." .
+
+hea:ArchitectureContract rdf:type owl:Class ;
+    rdfs:label "Contrat d'architecture" ;
+    rdfs:comment "Contrat d'architecture formalisant une relation entre objets (AC-*). TOGAF: Architecture Contract." .
+
+hea:ComplianceRule rdf:type owl:Class ;
+    rdfs:label "Règle de conformité" ;
+    rdfs:comment "Règle de conformité opposable (COMP-*). TOGAF: Compliance Rule." .
+
+hea:Evidence rdf:type owl:Class ;
+    rdfs:label "Preuve" ;
+    rdfs:comment "Preuve vérifiable produite par un contrôle d'homologation (EVID-*). TOGAF: Evidence." .
+
+hea:ReferenceData rdf:type owl:Class ;
+    rdfs:label "Donnée de référence" ;
+    rdfs:comment "Donnée de référence nationale à valeur d'autorité (RD-*). TOGAF: Reference Data." .
+
+hea:Terminology rdf:type owl:Class ;
+    rdfs:label "Terminologie" ;
+    rdfs:comment "Terminologie et codification communes (TERM-*). TOGAF: Terminology." .
+
+hea:ArchitectureView rdf:type owl:Class ;
+    rdfs:label "Vue d'architecture" ;
+    rdfs:comment "Vue de consultation du référentiel, dérivée des objets canoniques (VIEW-TOGAF-*). TOGAF: Architecture View." .
+
+# ===================================================================
 # Classes — Aliases ArchiMate (équivalents de classes existantes)
 # ===================================================================
 
 # ComposantArchitecture : alias de Composant pour la couche applicatif/infrastructure
-ComposantArchitecture rdf:type owl:Class ;
+hea:ComposantArchitecture rdf:type owl:Class ;
     rdfs:label "Composant d'architecture" ;
     rdfs:comment "Alias ArchiMate pour Composant. Couche applicatif/infrastructure/sécurité/gouvernance." ;
     rdfs:subClassOf hea:Composant ;
     owl:equivalentClass hea:Composant .
 
 # ConceptDonnee : alias de ObjetDeDonnees
-ConceptDonnee rdf:type owl:Class ;
+hea:ConceptDonnee rdf:type owl:Class ;
     rdfs:label "Concept de donnée" ;
     rdfs:comment "Alias ArchiMate pour ObjetDeDonnees. Concept de donnée échangeable entre systèmes." ;
     rdfs:subClassOf hea:ObjetDeDonnees ;
     owl:equivalentClass hea:ObjetDeDonnees .
 
 # FluxDeValeur : alias de FluxValeur (camelCase, sans accent)
-FluxDeValeur rdf:type owl:Class ;
+hea:FluxDeValeur rdf:type owl:Class ;
     rdfs:label "Flux de valeur" ;
     rdfs:comment "Alias ArchiMate pour FluxValeur. Flux de valeur national." ;
     rdfs:subClassOf hea:FluxValeur ;
     owl:equivalentClass hea:FluxValeur .
 
 # ProfilTechnique : alias de Profil
-ProfilTechnique rdf:type owl:Class ;
+hea:ProfilTechnique rdf:type owl:Class ;
     rdfs:label "Profil technique" ;
     rdfs:comment "Alias ArchiMate pour Profil. Profil technique d'implémentation." ;
     rdfs:subClassOf hea:Profil ;
@@ -166,14 +210,6 @@ ProfilTechnique rdf:type owl:Class ;
 # ===================================================================
 # Restrictions OWL
 # ===================================================================
-
-# Tertiary doit soutenir au moins un LaboratoireClinique
-Tertiary rdf:type owl:Class ;
-    owl:equivalentClass [
-        a owl:Restriction ;
-        owl:onProperty hea:serves ;
-        owl:someValuesFrom hea:Composant
-    ] .
 
 # ===================================================================
 # Propriétés de relation — Conformes ArchiMate 3.1

@@ -1,7 +1,7 @@
 ---
 title: Région sanitaire
 id: caesn-LOC-04
-domain: 00_overview
+domain: lieux
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-24

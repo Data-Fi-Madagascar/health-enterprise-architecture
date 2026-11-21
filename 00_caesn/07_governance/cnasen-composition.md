@@ -159,7 +159,7 @@ Le Comité National d'Architecture Santé Numérique (CNASN) est l'instance coll
 - [homologation: Workflow d'homologation architecturale](homologation.md)
 - [governance: Gouvernance du cadre d'architecture](index.md)
 - [instances-sectorielles: Instances sectorielles et autorités spécialisées](instances-sectorielles.md)
-- [arbitrage-ecarts-caesn-artsn: Proposition d'arbitrage : 5 écarts CAESN ↔ ARTSN](arbitrage-ecarts-caesn-artsn.md)
+- [arbitrage-ecarts-caesn-artsn: Arbitrage : 5 écarts CAESN ↔ ARTSN](arbitrage-ecarts-caesn-artsn.md)
 - [fondement-legal: Fondement légal et cadre législatif de la santé numérique](fondement-legal.md)
 
 <!-- liens-section-auto -->

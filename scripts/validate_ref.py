@@ -60,6 +60,10 @@ STATIC_ARCH_REPOSITORY_DOCS = {
 LEGACY_INTEROP_ALLOWED_FILES = {
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "cap-int-migration.yaml"),
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "cap-int-migration.md"),
+    # Journal chronologique des ADR : consigne l'etat des objets a la date de
+    # l'evenement. Une reference a un ancien identifiant y est un fait
+    # historique, pas une relation active vers un objet deconcerne.
+    os.path.join("01_cnisn", "06_decisions", "adr-change-log.md"),
 }
 EXCLUDED_GRAPH_DOCS = {
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "schema.md"),

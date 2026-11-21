@@ -22,7 +22,7 @@ tags: ["artsn", "niveau-3", "chapitre", "ART-4B"]
 
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (demandes d’extraction d’instituts de recherche, requêtes de ministères tiers), cette discipline seule permet de garantir techniquement le respect absolu du secret médical et des droits du citoyen sans rompre le pipeline.
 
-- **Rattachement** : [CAP-04bis](../../../02_artsn/08_annexes/c-renvoi-capacites-candidates.md), [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../02_architecture-elements/strategy/capabilities/cap-15.md) (cybersécurité).
+- **Rattachement** : [CAP-04bis](../../../02_artsn/09_annexes/c-renvoi-capacites-candidates.md), [CAP-15: Cybersécurité, confidentialité et gouvernance des données personnelles](../../02_architecture-elements/strategy/capabilities/cap-15.md) (cybersécurité).
 - **Fondements cibles** : consentement ou opposition explicite, mandat de santé publique, accord interinstitutionnel ([ART-0: Accords de partage inter-institutionnels](art-0.md)).
 - **Déduit selon** : [ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../03_requirements/enf-4.md) (protection One Health).
 - **Statut : Provisoire.**

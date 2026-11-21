@@ -81,7 +81,7 @@ Une dérogation n'est acceptable que si elle est :
 
 ## Documents de la section
 
-- [mapping-principes-caesn-artsn: Table de correspondance : Principes CAESN ↔ ARTSN](mapping-caesn-artsn.md)
+- [mapping-principes-caesn-cnisn: Table de correspondance : Principes CAESN ↔ CNISN](mapping-caesn-cnisn.md)
 - [pa: Principes d'architecture transversaux](transversal.md)
 - [pd-VS-04: PD-VS-04 : Principes de domaine : piloter, coordonner et améliorer la performance](domain/vs04.md)
 - [pd-VS-01: PD-VS-01 : Principes de domaine : accéder à des services de santé essentiels](domain/vs01.md)

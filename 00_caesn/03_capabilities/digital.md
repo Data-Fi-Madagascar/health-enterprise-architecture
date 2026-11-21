@@ -30,12 +30,14 @@ Les capabilités numériques transversales traduisent les axes de la Stratégie 
 
 ## Capabilités numériques issues de la SNSD
 
-| Code | Capabilité numérique | Ce qu'elle recouvre |
-|------|----------------------|---------------------|
-| DIG-01 | Gouvernance digitale, normes et coordination | Cadres juridiques, normes, standards, mécanismes de coordination nationale, régulation du numérique santé et homologation des initiatives. |
-| DIG-02 | Architecture, urbanisation et solutions numériques | Architecture cible du système d'information, urbanisation, digitalisation des services prioritaires, interopérabilité et promotion de l'usage. |
-| DIG-03 | Ressources, infrastructures et compétences numériques | Connectivité, équipements, compétences numériques des agents, support technique, hébergement, exploitation et mise aux normes. |
-| DIG-04 | Financement durable et alignement des investissements | Modèle de financement du portefeuille, mobilisation des partenaires, coût total de possession et soutenabilité des plateformes. |
+| Code | Capabilité numérique | Ce qu'elle recouvre | Capacités du catalogue rattachées |
+|------|----------------------|---------------------|---------------------------------|
+| DIG-01 | Gouvernance digitale, normes et coordination | Cadres juridiques, normes, standards, mécanismes de coordination nationale, régulation du numérique santé et homologation des initiatives. | CAP-15, CAP-16 |
+| DIG-02 | Architecture, urbanisation et solutions numériques | Architecture cible du système d'information, urbanisation, digitalisation des services prioritaires, interopérabilité et promotion de l'usage. | CAP-13, CAP-14 |
+| DIG-03 | Ressources, infrastructures et compétences numériques | Connectivité, équipements, compétences numériques des agents, support technique, hébergement, exploitation et mise aux normes. | CAP-09, CAP-11 |
+| DIG-04 | Financement durable et alignement des investissements | Modèle de financement du portefeuille, mobilisation des partenaires, coût total de possession et soutenabilité des plateformes. | CAP-12, CAP-16 |
+
+Les codes DIG-01 à DIG-04 ne constituent pas un second catalogue de capabilités : ils sont une grille de lecture de la Stratégie Nationale de Santé Digitale sur le catalogue canonique CAP-01 à CAP-18. Chaque axe numérique se projette sur des capabilités déjà identifiées, ce qui évite de faire coexister deux numérotations concurrentes des « capabilités numériques ». La colonne de rattachement matérialise cette projection et fait apparaître deux dépendances structurantes : DIG-03 s'appuie sur CAP-09 et CAP-11, c'est-à-dire sur les compétences humaines et les infrastructures, que la stratégie nationale ne peut financer sans le volet ressources de DIG-04 ; DIG-01 et DIG-04 se rejoignent sur CAP-16, qui porte à la fois le pilotage du portefeuille et sa financement.
 
 ## Composants DPI-H couverts
 
