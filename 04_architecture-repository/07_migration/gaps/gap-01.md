@@ -6,7 +6,7 @@ title: Écart — Couverture terrain en zone isolée
 status: draft
 owner: Direction du Numérique en Santé
 version: "0.1"
-envelope: 02_artsn/09_feuille-de-route/gap-01-cart-couverture-terrain-en-zone-isol-e.md
+envelope: 02_artsn/10_feuille-de-route/gap-01-cart-couverture-terrain-en-zone-isol-e.md
 between: ["PL-01", "PL-02"]
 related: ["PL-01", "PL-02", "LOC-04", "CAP-01"]
 tags: ["artsn", "gap", "gap-01", "feuille-de-route"]

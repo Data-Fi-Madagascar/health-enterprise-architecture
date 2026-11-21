@@ -26,13 +26,9 @@ tags: ["gouvernance", "processus", "workflow", "cnasn", "niveau-1"]
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle.
 
----
-
 ## Objet
 
 Ce document décrit les processus opérationnels de la gouvernance de l'architecture. Il transforme le cadre institutionnel (instances, rôles, responsabilités) en **workflow concrets** avec des étapes, des délais et des livrables.
-
----
 
 ## 1. Types de décisions
 
@@ -53,8 +49,6 @@ Ce document décrit les processus opérationnels de la gouvernance de l'architec
 | **N1 : Technique** | Équipe projet + relecteur | Conformité technique, cohérence avec les standards |
 | **N2 : Architecturale** | CNASN | Alignement cadre, impact transversal, dérogations |
 | **N3 : Stratégique** | Secrétaire Général + BRV | Impact politique, budget, soutenabilité |
-
----
 
 ## 2. Processus de décision d'architecture (ADR)
 
@@ -112,8 +106,6 @@ stop
 | Analyse CNASN | 10 jours ouvrés | → Président CNASN |
 | Décision | 5 jours ouvrés | → Secrétaire Général |
 | Publication | 2 jours ouvrés | → DEPSI |
-
----
 
 ## 3. Processus de modification architecturale
 
@@ -184,8 +176,6 @@ stop
 | **Majeure** | Changement de sens, ajout de contraintes, nouveau chapitre | N1 + N2 + N3 |
 | **Structurelle** | Réorganisation, fusion/séparation de chapitres | N1 + N2 + N3 + communication |
 
----
-
 ## 4. Processus d'homologation d'initiative
 
 ### 4.1 Checklist d'homologation
@@ -213,8 +203,6 @@ stop
 | **10-11/12** | Validation N1 | Validation N2 + plan corrective | Validation N3 + plan corrective |
 | **8-9/12** | Plan corrective + validation N2 | Rejet, nouvelle soumission | Rejet, refonte |
 | **< 8/12** | Rejet | Rejet | Rejet |
-
----
 
 ## 5. Processus de dérogation
 
@@ -244,8 +232,6 @@ Une dérogation est nécessaire lorsqu'une initiative ne peut pas respecter un s
 6. Suivi trimestriel de la conformité
 ```
 
----
-
 ## 6. Processus de dépréciation
 
 ### 6.1 Signaux de dépréciation
@@ -267,8 +253,6 @@ Mois 9  : Dernière alerte
 Mois 12 : Retiré du référentiel (statut « déprécié »)
 ```
 
----
-
 ## 7. Rôles dans les processus
 
 | Rôle | Processus ADR | Processus Modification | Processus Homologation |
@@ -281,8 +265,6 @@ Mois 12 : Retiré du référentiel (statut « déprécié »)
 | **Secrétaire Général** | Arbitre | Valide N3 (majeur) | Valide (si N3) |
 | **DEPSI** | Publie | Met à jour docs | Publie le rapport |
 
----
-
 ## 8. Outils de suivi
 
 | Outil | Contenu | Mise à jour |
@@ -291,8 +273,6 @@ Mois 12 : Retiré du référentiel (statut « déprécié »)
 | Template modification | Structure des demandes | Statique |
 | Table de maturité | Statut des chapitres | À chaque revue |
 | Feuille de route | Planification | Mensuelle |
-
----
 
 ## Liens
 
@@ -305,8 +285,8 @@ Mois 12 : Retiré du référentiel (statut « déprécié »)
 
 - **Registre des décisions** : Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
 - **Template modification** : Template : Demande de modification architecturale (`01_cnisn/06_decisions/template-modification.md`)
-- **Table de maturité** : Annexe A : Table de maturité par chapitre (`02_artsn/08_annexes/a-table-de-maturite.md`)
-- **Feuille de route** : Feuille de route de déploiement progressif de l'ARTSN (`02_artsn/07_lots/index.md`)
+- **Table de maturité** : Annexe A : Table de maturité par chapitre (`02_artsn/09_annexes/a-table-de-maturite.md`)
+- **Feuille de route** : Feuille de route de déploiement progressif de l'ARTSN (`02_artsn/08_lots/index.md`)
 - **Gouvernance : Instances et rôles** : Gouvernance du cadre d'architecture (`00_caesn/07_governance/index.md`)
 - **RACI de gouvernance** : RACI de gouvernance et responsabilités (`00_caesn/07_governance/raci.md`)
 - **Bureau de Réalisation de la Valeur** : Bureau de Réalisation de la Valeur (`00_caesn/07_governance/value-realization-office.md`)
@@ -320,7 +300,7 @@ Mois 12 : Retiré du référentiel (statut « déprécié »)
 - [governance: Gouvernance du cadre d'architecture](index.md)
 - [cnasen-composition: Composition et fonctionnement du Comité National](cnasen-composition.md)
 - [instances-sectorielles: Instances sectorielles et autorités spécialisées](instances-sectorielles.md)
-- [arbitrage-ecarts-caesn-artsn: Proposition d'arbitrage : 5 écarts CAESN ↔ ARTSN](arbitrage-ecarts-caesn-artsn.md)
+- [arbitrage-ecarts-caesn-artsn: Arbitrage : 5 écarts CAESN ↔ ARTSN](arbitrage-ecarts-caesn-artsn.md)
 - [fondement-legal: Fondement légal et cadre législatif de la santé numérique](fondement-legal.md)
 
 <!-- liens-section-auto -->

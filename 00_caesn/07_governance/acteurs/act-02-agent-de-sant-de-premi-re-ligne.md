@@ -1,7 +1,7 @@
 ---
 title: Agent de santé de première ligne
 id: caesn-ACT-02
-domain: 07_governance
+domain: acteurs
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-24

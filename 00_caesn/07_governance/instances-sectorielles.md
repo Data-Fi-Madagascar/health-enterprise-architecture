@@ -177,7 +177,7 @@ Instance transversale recommandée par l'évaluation **ADHMAT** de Madagascar (a
 - [homologation: Workflow d'homologation architecturale](homologation.md)
 - [governance: Gouvernance du cadre d'architecture](index.md)
 - [cnasen-composition: Composition et fonctionnement du Comité National](cnasen-composition.md)
-- [arbitrage-ecarts-caesn-artsn: Proposition d'arbitrage : 5 écarts CAESN ↔ ARTSN](arbitrage-ecarts-caesn-artsn.md)
+- [arbitrage-ecarts-caesn-artsn: Arbitrage : 5 écarts CAESN ↔ ARTSN](arbitrage-ecarts-caesn-artsn.md)
 - [fondement-legal: Fondement légal et cadre législatif de la santé numérique](fondement-legal.md)
 
 <!-- liens-section-auto -->

@@ -1,6 +1,6 @@
 ---
 
-domain: services
+domain: 06_services
 id: SRV-04
 type: service
 title: Service d'échange inter-systèmes

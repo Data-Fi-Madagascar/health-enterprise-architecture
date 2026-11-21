@@ -102,4 +102,4 @@ mADX est un profil d’échange de données agrégées ; il ne remplace pas le s
 
 ## Références au cadre
 
-- **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/07_lots/index.md)
+- **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/08_lots/index.md)

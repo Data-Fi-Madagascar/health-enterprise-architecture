@@ -57,9 +57,9 @@ Cette norme s'applique à :
 
 ## Références au cadre
 
-- **Principes** : PA-05 (Interopérabilité), PA-06 (Gouvernance des données)
+- **Principes** : PA-07 (Les référentiels nationaux sont des biens communs indivisibles), PA-05 (Une donnée doit être collectée une seule fois et réutilisée plusieurs fois)
 - **ARTSN** : ART-2 (Médiation et normalisation), F.2 (Normalisation)
-- **ARTSN — lots consommateurs** : [L2 — Applications terrain](../../02_artsn/07_lots/index.md)
+- **ARTSN — lots consommateurs** : [L2 — Applications terrain](../../02_artsn/08_lots/index.md)
 - **PTISN** : PT-07 (Terminologie et codification)
 - **CNISN** : ABB-RECONCILIATION-DONNEES (Qualité et réconciliation)
 

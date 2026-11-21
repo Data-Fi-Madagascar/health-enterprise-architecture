@@ -2,14 +2,10 @@
 
 **A value-driven architecture framework for the national digital health sector** · Version 1.0 · August 2026
 
----
-
 ## At a glance
 
 | **4** national value streams | **32** enterprise & interoperability capabilities | **12+** technical architecture chapters | **10** architecture decision records | **15** implementation profiles |
 |---|---|---|---|---|
-
----
 
 ## The challenge
 
@@ -49,7 +45,5 @@ Each tier addresses its audience directly, with reading guides routing every sta
 ## Why it matters
 
 The HEA converts architecture from documentation into a **governance instrument**: new investments can be checked against a common reference before funding, existing systems positioned on a shared roadmap, and duplication avoided. It anchors Madagascar's digital health trajectory in measurable outcomes rather than isolated projects — and provides partners with a clear, stable framework for alignment.
-
----
 
 *Contact: [Name, role, email]*

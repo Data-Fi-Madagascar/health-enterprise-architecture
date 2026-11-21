@@ -83,6 +83,7 @@ TYPE_TO_CLASS = {
     "evidence": "Evidence",
     "reference-data": "ReferenceData",
     "terminology": "Terminology",
+    "repository-view": "ArchitectureView",
     "stakeholder": "PartiePrenante",
     "business-location": "Lieu",
     "business-value": "Valeur",
@@ -421,6 +422,39 @@ def validate_shacl(data_path, shapes_path):
     return conforms
 
 
+def validate_ontology_coverage(data_path, ontology_path):
+    """Vérifie que toute classe employée par le graphe est déclarée dans l'ontologie.
+
+    Le compilateur type chaque objet du référentiel via TYPE_TO_CLASS. Si une
+    classe de ce mapping n'est pas déclarée dans ontologie/hea.ttl, le graphe
+    produit une assertion rdf:type vers une classe inexistante. Ce contrôle
+    rend l'écart entre le référentiel compilé et l'ontologie visible au CI.
+    """
+    if not os.path.exists(ontology_path):
+        print("[ERREUR] Ontologie introuvable : %s" % ontology_path)
+        return False
+
+    with open(data_path, encoding="utf-8") as f:
+        data = f.read()
+    with open(ontology_path, encoding="utf-8") as f:
+        ontology = f.read()
+
+    used = set(re.findall(r"rdf:type hea:([A-Za-z][A-Za-z0-9-]*)", data))
+    declared = set(re.findall(
+        r"hea:([A-Za-z][A-Za-z0-9]*)\s+rdf:type\s+owl:Class", ontology))
+
+    missing = sorted(used - declared)
+    if missing:
+        print("[ERREUR] Classes utilisées par le graphe mais non déclarées "
+              "dans l'ontologie :")
+        for cls in missing:
+            print("  - %s" % cls)
+        return False
+
+    print("[OK] %d classes du graphe déclarées dans l'ontologie." % len(used))
+    return True
+
+
 def check_existing(output_path):
     """Vérifie si le fichier RDF existant est à jour (mode --check)."""
     if not os.path.exists(output_path):
@@ -481,6 +515,10 @@ def main():
             conforms = validate_shacl(output_path, shapes_path)
             if not conforms:
                 sys.exit(1)
+
+        ontology_path = os.path.join(REPO_ROOT, "ontologie", "hea.ttl")
+        if not validate_ontology_coverage(output_path, ontology_path):
+            sys.exit(1)
 
     print("\nRésumé : OK")
     return 0

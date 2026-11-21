@@ -14,11 +14,9 @@ tags: ["guide", "démarrage", "quick-start", "profil"]
 
 Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à utiliser le dépôt HEA. Ces guides complètent les [guides de lecture](00_caesn/reading-guide.md) en ajoutant des **actions concrètes**.
 
----
-
 ## 1. Décideur institutionnel
 
-**Objectif :** Comprendre la valeur战略 et évaluer les initiatives.
+**Objectif :** Comprendre la valeur stratégique et évaluer les initiatives.
 
 ### Premier pas
 
@@ -42,8 +40,6 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 - [ ] Existe-t-il un ADR pertinent ?
 - [ ] Quel est l'impact budgétaire et le calendrier ?
 
----
-
 ## 2. Direction métier / Programme
 
 **Objectif :** Décrire les besoins métier et les relier à l'architecture.
@@ -59,8 +55,8 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 | Action | Document | Comment |
 |--------|----------|---------|
 | Décrire un besoin | [Template modification](01_cnisn/06_decisions/template-modification.md) | Formulaire MOD-XXXX |
-| Vérifier la maturité | [Matrice de maturité](02_artsn/08_annexes/a-table-de-maturite.md) | Évaluation par capabilité |
-| Comprendre l'interopérabilité | [CNISN capacités](01_cnisn/02_capacites/index.md) | 16 capacités, 8 familles |
+| Vérifier la maturité | [Matrice de maturité](02_artsn/09_annexes/a-table-de-maturite.md) | Évaluation par capabilité |
+| Comprendre l'interopérabilité | [CNISN objets d'interopérabilité](01_cnisn/02_objets-interoperabilite/index.md) | 38 objets, 8 familles |
 | Lire les cas d'usage | [VS-01](03_ptisn/08_annexes/cas-usage-reference-evacuation.md), [VS-02](03_ptisn/08_annexes/cas-usage-surveillance-epidemique.md), [VS-03](03_ptisn/08_annexes/cas-usage-couverture-sanitaire.md), [VS-04](03_ptisn/08_annexes/cas-usage-pilotage-systeme.md) | Exemples concrets par flux |
 
 ### Check-list de rédaction d'un besoin
@@ -71,8 +67,6 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 - [ ] Rédiger via le template MOD-XXXX
 - [ ] Soumettre au CNASN
 
----
-
 ## 3. DEPSI / Équipes techniques
 
 **Objectif :** Implémenter les profils techniques et valider l'interopérabilité.
@@ -80,15 +74,15 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 ### Premier pas
 
 1. Lire les [15 profils PTISN](03_ptisn/03_profils/pt-00-index.md) — chaque profil définit un service technique national
-2. Consulter le [protocole de test](02_artsn/08_annexes/d-protocole-test-interopabilite.md) — 4 niveaux (N1 à N4)
-3. Vérifier les [SLA](02_artsn/08_annexes/e-sla-performance.md) requis par profil
+2. Consulter le [protocole de test](02_artsn/09_annexes/d-protocole-test-interopabilite.md) — 4 niveaux (N1 à N4)
+3. Vérifier les [SLA](02_artsn/09_annexes/e-sla-performance.md) requis par profil
 
 ### Actions courantes
 
 | Action | Document | Comment |
 |--------|----------|---------|
 | Créer un nouveau profil | [Règles d'utilisation](03_ptisn/01_regles-utilisation/index.md) | Template PT-XXXX |
-| Vérifier la conformité | [Conformité](02_artsn/06_gouvernance/conformite.md) | Dashboard de conformité |
+| Vérifier la conformité | [Conformité](02_artsn/07_gouvernance/conformite.md) | Dashboard de conformité |
 | Lister les composants | [Référentiel composants](04_architecture-repository/05_building-blocks/abb/legacy-components) | Composants logiques |
 | Lire les standards | [std-0001: STD-0001 : Norme d'interopérabilité : HL7 FHIR R4](01_cnisn/05_standards/std-0001-interopabilite-fhir.md), [std-0002: STD-0002 : Norme de sécurité : Chiffrement et contrôle d'accès](01_cnisn/05_standards/std-0002-securite-chiffrement.md) | Normes obligatoires |
 | Consulter le RBAC | [PT-10 RBAC](03_ptisn/03_profils/pt-10-confiance-authentification-autorisation.md) | 13 rôles, 10 politiques |
@@ -102,8 +96,6 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 - [ ] Exécuter les tests N2 (composabilité)
 - [ ] Soumettre à l'homologation
 
----
-
 ## 4. SIS / Données / Suivi-évaluation
 
 **Objectif :** Gouverner les données et piloter avec des indicateurs fiables.
@@ -112,7 +104,7 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 
 1. Lire le [dictionnaire de données](02_artsn/03_objets-de-donnees/index.md) — 33 concepts, 7 domaines
 2. Consulter la [cartographie cible](02_artsn/05_cartographie/index.md) — architecture du SI cible
-3. Vérifier les [indicateurs CNISN](01_cnisn/06_indicateurs/index.md)
+3. Vérifier les [indicateurs CNISN](01_cnisn/08_indicateurs/index.md)
 
 ### Actions courantes
 
@@ -121,7 +113,7 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 | Ajouter un concept | [Dictionnaire](02_artsn/03_objets-de-donnees/index.md) | Template concept, 7 champs |
 | Mapper vers FHIR | [Champs "Référentiel source"](02_artsn/03_objets-de-donnees/index.md) | Champ technique dans le dictionnaire |
 | Consulter les flux | [Flux de valeur](04_architecture-repository/02_architecture-elements/strategy/value-streams) | VS-01..04 |
-| Suivre la trajectoire | [Trajectoire CNISN](01_cnisn/05_trajectoire/index.md) | 7 phases T4 2026–T2 2030 |
+| Suivre la trajectoire | [Trajectoire CNISN](01_cnisn/07_trajectoire/index.md) | 7 phases T4 2026–T2 2030 |
 | Vérifier la qualité | [PAT-QUALITE-RECONCILIATION: Qualité et réconciliation](04_architecture-repository/04_patterns/pat-qualite-reconciliation.md) | Qualité et réconciliation |
 
 ### Check-list de définition d'un concept de données
@@ -132,8 +124,6 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 - [ ] Soumettre via le template MOD-XXXX
 - [ ] Mettre à jour la matrice d'alignement
 
----
-
 ## 5. Partenaires techniques et financiers
 
 **Objectif :** Évaluer la compatibilité et contribuer au cadre.
@@ -141,7 +131,7 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 ### Premier pas
 
 1. Lire la [vue d'ensemble](00_caesn/00_overview/index.md) — contexte stratégique Madagascar
-2. Consulter la [feuille de route des lots](00_caesn/06_portfolio/feuille-de-route-lots.md) — périmètre et séquence (réalisation technique : [vue ARTSN](02_artsn/07_lots/index.md))
+2. Consulter la [feuille de route des lots](00_caesn/06_portfolio/feuille-de-route-lots.md) — périmètre et séquence (réalisation technique : [vue ARTSN](02_artsn/08_lots/index.md))
 3. Vérifier les [standards obligatoires](01_cnisn/05_standards) — FHIR, sécurité, chiffrement
 
 ### Actions courantes
@@ -161,8 +151,6 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 - [ ] Alignement avec la phase de déploiement en cours ?
 - [ ] Impact sur les capabilités CNISN ?
 
----
-
 ## Liens rapides
 
 | Ressource | Chemin |
@@ -172,4 +160,4 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 | Registre des ADR | [`01_cnisn/06_decisions/registre-decisions.md`](01_cnisn/06_decisions/registre-decisions.md) |
 | Profils PTISN | [`03_ptisn/03_profils/pt-00-index.md`](03_ptisn/03_profils/pt-00-index.md) |
 | Dictionnaire | [`02_artsn/03_objets-de-donnees/index.md`](02_artsn/03_objets-de-donnees/index.md) |
-| Protocole de test | [`02_artsn/08_annexes/d-protocole-test-interopabilite.md`](02_artsn/08_annexes/d-protocole-test-interopabilite.md) |
+| Protocole de test | [`02_artsn/09_annexes/d-protocole-test-interopabilite.md`](02_artsn/09_annexes/d-protocole-test-interopabilite.md) |

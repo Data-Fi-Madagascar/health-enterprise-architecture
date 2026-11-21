@@ -42,6 +42,7 @@ Cette vue consolide les décisions CNISN et les registres de gouvernance du dép
 | ADR-0008 | ADR-0008 : Adoption d'ATNA et journalisation pour l'audit et la traçabilité | LOT L4, LOT L1, PT-12 | candidate | ADR-0008 |
 | ADR-0009 | ADR-0009 : Adoption d'un référentiel terminologique national (CIM-11 + LOINC) | PT-07 | candidate | ADR-0009 |
 | ADR-0010 | ADR-0010 : Cadre légal et mandat d'opposabilité du CNASN | LOT L1, PT-11 | candidate | ADR-0010 |
+| ADR-CHANGE-LOG | Journal des modifications des ADR | — | active | ADR-CHANGE-LOG |
 | DECISIONS | Décisions d'architecture (ADR) | — | draft | DECISIONS |
 | REGISTRE-DECISIONS | Registre des décisions d'architecture (ADR) | — | draft | REGISTRE-DECISIONS |
 | TEMPLATE-MODIFICATION | Template : Demande de modification architecturale | PT-04 | draft | TEMPLATE-MODIFICATION |

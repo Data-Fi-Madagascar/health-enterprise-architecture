@@ -84,7 +84,7 @@ Chaque ADR suit le modèle type, avec un statut parmi `proposé`, `accepté`, `a
 - **Template de modification** : Template : Demande de modification architecturale (`01_cnisn/06_decisions/template-modification.md`)
 - **Introduction du CNISN** : Préambule du CNISN (`01_cnisn/00_introduction/index.md`)
 - **Principes du CNISN** : Partie I : Principes nationaux d'interopérabilité de santé (`01_cnisn/01_principes/index.md`)
-- **Capacités du CNISN** : Partie II : Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
+- **Objets d'interopérabilité du CNISN** : Partie II : Objets d'interopérabilité requis (`01_cnisn/02_objets-interoperabilite/index.md`)
 - **Gouvernance du CNISN** : Partie III : Gouvernance (`01_cnisn/03_gouvernance/index.md`)
 - **Standards** : Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
 
@@ -103,5 +103,6 @@ Chaque ADR suit le modèle type, avec un statut parmi `proposé`, `accepté`, `a
 - [registre-decisions: Registre des décisions d'architecture (ADR)](registre-decisions.md)
 - [template-modification: Template : Demande de modification architecturale](template-modification.md)
 - [adr-0008: ADR-0008 : Adoption d'ATNA et journalisation pour l'audit et la traçabilité](adr-0008-atna.md)
+- [adr-change-log: Journal des modifications des ADR](adr-change-log.md)
 
 <!-- liens-section-auto -->

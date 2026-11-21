@@ -85,5 +85,12 @@ Il est placé sous la responsabilité du Bureau de Réalisation de la Valeur, en
 - [caesn-migration: Plan de migration : De l'existant au futur état](migration-existant.md)
 - [financement-tco: Méthode TCO et enveloppe de financement du portefeuille](financement-tco.md)
 - [feuille-de-route-lots: Feuille de route des lots du portefeuille (déploiement HEA)](feuille-de-route-lots.md)
+- [WP-01: Lot L1 — Infrastructure & sécurité](wp-01-lot-l1-infrastructure-s-curit.md)
+- [WP-02: Lot L2 — Applications terrain & collecte](wp-02-lot-l2-applications-terrain-collecte.md)
+- [WP-03: Lot L3 — Médiation & registres partagés](wp-03-lot-l3-m-diation-registres-partag-s.md)
+- [WP-04: Lot L4 — Analytique & pilotage](wp-04-lot-l4-analytique-pilotage.md)
+- [WP-05: Lot L5 — Extension & pérennisation](wp-05-lot-l5-extension-p-rennisation.md)
+- [WP-06: Lot L6 — Interopérabilité transfrontalière](wp-06-lot-l6-interop-rabilit-transfrontali-re.md)
+- [WP-07: Lot L7 — Coordination One Health](wp-07-lot-l7-coordination-one-health.md)
 
 <!-- liens-section-auto -->

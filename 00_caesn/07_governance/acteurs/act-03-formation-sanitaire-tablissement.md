@@ -1,7 +1,7 @@
 ---
 title: Formation sanitaire (établissement)
 id: caesn-ACT-03
-domain: 07_governance
+domain: acteurs
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-24

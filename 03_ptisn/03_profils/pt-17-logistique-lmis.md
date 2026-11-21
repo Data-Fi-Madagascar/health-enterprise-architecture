@@ -131,4 +131,4 @@ Le profil dépend des référentiels de produits (PT-05/PT-06), de la terminolog
 
 ## Références au cadre
 
-- **ARTSN — lots consommateurs** : [L2 — Applications terrain](../../02_artsn/07_lots/index.md), [L3 — Médiation & registres](../../02_artsn/07_lots/index.md), [L4 — Analytique & pilotage](../../02_artsn/07_lots/index.md)
+- **ARTSN — lots consommateurs** : [L2 — Applications terrain](../../02_artsn/08_lots/index.md), [L3 — Médiation & registres](../../02_artsn/08_lots/index.md), [L4 — Analytique & pilotage](../../02_artsn/08_lots/index.md)

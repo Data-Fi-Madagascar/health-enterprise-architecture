@@ -79,5 +79,6 @@ Les systèmes opérationnels soutiennent l'action ; les systèmes analytiques so
 - [data-governance: Gouvernance, qualité et protection des données](governance.md)
 - [data-domains: Domaines de données prioritaires](domains.md)
 - [data-business-objects: Objets de données métier](objets.md)
+- [caesn-valeurs: Valeurs produites par les flux de valeur](valeurs.md)
 
 <!-- liens-section-auto -->

@@ -1,6 +1,6 @@
 ---
 
-domain: work-packages
+domain: 06_portfolio
 id: WP-04
 type: work-package
 title: Lot L4 — Analytique & pilotage

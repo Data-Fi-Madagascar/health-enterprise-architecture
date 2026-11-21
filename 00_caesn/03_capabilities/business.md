@@ -1,7 +1,6 @@
 ---
 
-domain: capabilites
-
+domain: 03_capabilities
 id: CAP-05
 type: capabilite
 niveau: "1"

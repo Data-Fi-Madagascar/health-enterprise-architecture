@@ -1,16 +1,16 @@
 ---
 
-title: "Proposition d'arbitrage : 5 écarts CAESN ↔ ARTSN"
+title: "Arbitrage : 5 écarts CAESN ↔ ARTSN"
 id: arbitrage-ecarts-caesn-artsn
 domain: 07_governance
-version: "1.0.0"
-status: candidate
-last_reviewed: 2026-08-13
+version: "1.1.0"
+status: active
+last_reviewed: 2026-11-21
 owner: DEPSI
 tags: ["gouvernance", "arbitrage", "caesn", "artsn", "ecarts"]
 ---
 
-# Proposition d'arbitrage : 5 écarts CAESN ↔ ARTSN
+# Arbitrage : 5 écarts CAESN ↔ ARTSN
 
 ## Pour qui lire ce document
 
@@ -26,9 +26,7 @@ tags: ["gouvernance", "arbitrage", "caesn", "artsn", "ecarts"]
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
-Ce document présente les propositions d'arbitrage pour les 5 écarts identifiés entre le CAESN et l'ARTSN, documentés dans le point de vigilance.
-
----
+Ce document consigne les décisions d'arbitrage retenues pour les 5 écarts identifiés entre le CAESN et l'ARTSN, documentés dans le point de vigilance. Les cinq décisions ont été appliquées au référentiel : les objets correspondants existent dans le référentiel d'architecture et sont référencés par les niveaux concernés. Le document conserve pour chaque écart l'option écartée, afin que la trace de la décision reste lisible et opposable.
 
 ## Écart 1 : CAP-04bis « Engagement patient et identitovigilance »
 
@@ -38,7 +36,7 @@ L'ARTSN rattache ART-4A (résolution d'identité) et ART-4B (bases d'autorisatio
 
 ### Proposition d'arbitrage
 
-**Option A (recommandée) : Créer une nouvelle capabilité CAP-17 « Engagement patient et identité numérique »**
+**Option A (retenue et appliquée) : Créer une nouvelle capabilité CAP-17 « Engagement patient et identité numérique »**
 
 | Justification |
 |---------------|
@@ -67,7 +65,7 @@ L'ARTSN rattache ART-4A (résolution d'identité) et ART-4B (bases d'autorisatio
 | **Maturité cible** | 3/5 à 2 ans |
 | **Propriétaire** | DEPSI + Direction des Systèmes d'Information |
 
----
+**Statut** : décidé et appliqué. La fiche canonique est `04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-17.md`, qui rattache ART-4A et ART-4B.
 
 ## Écart 2 : Capacité candidate « Coordination intersectorielle (One Health) »
 
@@ -106,7 +104,7 @@ L'ARTSN rattache ART-0 (accords de partage) et ART-8D (chorégraphie inter-insti
 | **Maturité cible** | 2/5 à 3 ans |
 | **Propriétaire** | Secrétariat Général du Ministère + DEPSI |
 
----
+**Statut** : décidé et appliqué. La fiche canonique est `04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-18.md`, qui rattache ART-0 et ART-8D.
 
 ## Écart 3 : Référentiel normatif « Tripartite Plus / RSI »
 
@@ -116,7 +114,7 @@ La coordination intersectorielle s'appuie sur un référentiel normatif internat
 
 ### Proposition d'arbitrage
 
-**Option A (recommandée) : Inscrire le référentiel Tripartite Plus / RSI au registre des normes**
+**Option A (recommandée, retenue) : Inscrire le référentiel Tripartite Plus / RSI au registre des normes**
 
 | Justification |
 |---------------|
@@ -151,7 +149,7 @@ La coordination intersectorielle s'appuie sur un référentiel normatif internat
 | **Portée** | Coordination One Health (santé humaine, animale, environnementale) |
 | **Propriétaire** | Secrétariat Général du Ministère |
 
----
+**Statut** : décidé et appliqué. Les deux normes figurent au registre du niveau 2 : `01_cnisn/05_standards/norm-007-rsi.md` et `01_cnisn/05_standards/norm-008-tripartite.md`.
 
 ## Écart 4 : Capacité candidate « Surveillance spatio-temporelle »
 
@@ -161,7 +159,7 @@ ART-4D (référentiel géospatial et d'exploitation partagé) est rattaché à u
 
 ### Proposition d'arbitrage
 
-**Option A (recommandée) : Intégrer cette responsabilité dans CAP-05 (Surveillance sanitaire)**
+**Option A (recommandée, retenue) : Intégrer cette responsabilité dans CAP-05 (Surveillance sanitaire)**
 
 | Justification |
 |---------------|
@@ -186,68 +184,72 @@ ART-4D (référentiel géospatial et d'exploitation partagé) est rattaché à u
 | Ajouter ART-4D comme chapitre rattaché à CAP-05 |
 | Préciser que la surveillance spatio-temporelle couvre : géolocalisation des formations sanitaires, suivi des épidémies par zone, cartographie des risques |
 
----
+**Statut** : décidé et appliqué. La fiche CAP-05 mentionne explicitement la dimension géospatiale et rattache ART-4D : `04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-05.md`.
 
-## Écart 5 : Compte des principes : 18 P-01..18 vs 12 PA + PD
+## Écart 5 : Compte des principes : énumération ARTSN des 18 P-01..18 contre le catalogue PA + PD
 
 ### Constat
 
-Le document source de l'ARTSN annonce **18 principes (P-01 à P-18)** ; le catalogue CAESN structure les principes en **12 transversaux (PA)** + **principes de domaine (PD) par flux**.
+Une version antérieure du document source de l'ARTSN énumérait **18 principes (P-01 à P-18)**. Cette énumération n'a jamais été portée au référentiel d'architecture : aucun objet de principe P-01..18 n'existe dans `04_architecture-repository/02_architecture-elements/motivation/principles/`. Le catalogue canonique en compte **12 principes transversaux (PA-01 à PA-12)** et **20 principes de domaine (PD-VS01-01 à PD-VS04-05)**.
 
 ### Proposition d'arbitrage
 
-**Option A (recommandée) : Conserver la nomenclature CAESN (12 PA + PD) et aligner l'ARTSN**
+**Option A (retenue) : Conserver la nomenclature CAESN (PA + PD) comme nomenclature unique**
 
 | Justification |
 |---------------|
-| La nomenclature CAESN (12 PA + PD) est plus structurée et plus lisible. |
-| Elle permet de distinguer les principes transversaux des principes spécifiques à chaque flux de valeur. |
-| L'ARTSN peut référencer les principes PA et PD sans nécessiter de renumérotation. |
+| La nomenclature PA + PD est plus structurée et plus lisible : elle distingue les principes transversaux des principes spécifiques à chaque flux de valeur. |
+| Elle est la seule adossée à des fiches canoniques, donc la seule que les niveaux inférieurs puissent citer sans renumérotation. |
+| Retenir les 18 P-xx créerait un second référentiel de principes, sans fiche de référence ni règle de validation. |
 
 **Option B : Adopter la nomenclature ARTSN (18 P-01..18)**
 
 | Justification |
 |---------------|
 | Simplicité de numérotation. |
-| Mais perd la distinction transversal/domaine. |
+| Mais perd la distinction transversal/domaine et supposerait de créer 18 fiches canoniques sans contenu propre. |
 
 ### Recommandation
 
-**Option A** : Conserver la nomenclature CAESN avec les clarifications suivantes :
+**Option A** : conserver la nomenclature PA + PD, avec les précisions suivantes :
 
-| Clarification |
-|---------------|
-| Documenter la correspondance entre P-01..18 (ARTSN) et PA-01..12 + PD (CAESN) |
-| Créer un tableau de mapping dans l'annexe de l'ARTSN |
-| Valider que les 18 principes de l'ARTSN couvrent bien les 12 PA + les PD du CAESN |
+| Précision | Application |
+|-----------|-------------|
+| Les 12 PA et les 20 PD du CAESN constituent la nomenclature unique des principes | Appliqué |
+| Les 25 règles P-INT du niveau 2 rendent les principes vérifiables sans identifiant supplémentaire | Appliqué : `01_cnisn/10_annexes/a-matrice-principes-capacites.md` |
+| La correspondance entre principes et règles d'interopérabilité est documentée dans une table entre niveaux | Appliqué : `00_caesn/02_principles/mapping-caesn-cnisn.md` |
+| Les niveaux 3 et 4 citent les principes PA et PD | Ouvert : la chaîne descendante jusqu'aux profils PTISN reste à établir |
 
----
+**Statut** : décidé et appliqué au niveau 2. La traçabilité descendante vers l'ARTSN et les profils PTISN constitue un chantier ouvert.
 
 ## Synthèse des arbitrages proposés
 
-| Écart | Proposition | Impact |
-|-------|-------------|--------|
-| D-1 | Créer CAP-17 « Engagement patient et identité numérique » | Nouvelle capabilité habilitante |
-| D-2 | Créer CAP-18 « Coordination intersectorielle (One Health) » | Nouvelle capabilité habilitante |
-| D-3 | Inscrire Tripartite Plus / RSI au registre des normes | 2 nouvelles normes |
-| D-4 | Intégrer dans CAP-05 (élargissement) | Modification de capabilité existante |
-| D-5 | Conserver nomenclature CAESN (12 PA + PD) | Alignement de l'ARTSN |
+| Écart | Proposition | Impact | Statut |
+|-------|-------------|--------|--------|
+| D-1 | Créer CAP-17 « Engagement patient et identité numérique » | Nouvelle capacité habilitante | Appliqué |
+| D-2 | Créer CAP-18 « Coordination intersectorielle (One Health) » | Nouvelle capacité habilitante | Appliqué |
+| D-3 | Inscrire Tripartite Plus / RSI au registre des normes | 2 nouvelles normes | Appliqué |
+| D-4 | Intégrer dans CAP-05 (élargissement) | Modification de capacité existante | Appliqué |
+| D-5 | Conserver la nomenclature CAESN (PA + PD) | Alignement de l'ARTSN et des profils | Appliqué au niveau 2, chaîne descendante ouverte |
+
+Ce tableau confirme que les cinq écarts ne relèvent plus d'un arbitrage en attente : ils ont tous été traduits en objets du référentiel. Le seul reliquat est la remontée des principes vers les niveaux 3 et 4, qui concerne la traçabilité et non la nomenclature.
 
 ## Prochaines étapes
 
-1. **Validation par les directions métier** : Soumettre les propositions aux responsables de capabilités
-2. **Arbitrage par le Comité National** : Formeliser les décisions via des ADR
-3. **Mise à jour du CAESN** : Appliquer les modifications validées
-4. **Mise à jour de l'ARTSN** : Aligner les chapitres sur les capabilités validées
-5. **Communication** : Informer les parties prenantes des décisions prises
+Les étapes de validation, d'arbitrage et de mise à jour des niveaux 1 et 3 sont accomplies : les capabilités CAP-17 et CAP-18 existent, les normes NORM-007 et NORM-008 sont inscrites, CAP-05 porte la dimension géospatiale et la nomenclature PA + PD est la référence. Deux chantiers subsistent :
+
+1. **Formuler les décisions en ADR** : Consigner les cinq arbitrages au registre des décisions d'architecture (`01_cnisn/06_decisions/index.md`)
+2. **Établir la chaîne descendante des principes** : Faire référencer les principes PA et PD par les chapitres ARTSN et les profils PTISN
+3. **Communication** : Informer les parties prenantes des décisions prises
 
 ## Liens
 
-- Point de vigilance CAESN
-- CAESN : capabilités
-- ARTSN : Annexe C
-- CAESN : normes et standards
-- CAESN : registre des ADR
+- [Point de vigilance CAESN](point-de-vigilance-caesn.md)
+- [CAESN : capabilités](../03_capabilities/index.md)
+- [ARTSN : Annexe C](../../02_artsn/09_annexes/c-renvoi-capacites-candidates.md)
+- [CNISN : normes et standards](../../01_cnisn/05_standards/index.md)
+- [CNISN : registre des ADR](../../01_cnisn/06_decisions/index.md)
+- [CAESN : correspondance principes et règles d'interopérabilité](../02_principles/mapping-caesn-cnisn.md)
 
 ## Références
 
@@ -262,9 +264,10 @@ Le document source de l'ARTSN annonce **18 principes (P-01 à P-18)** ; le catal
 - **ART-4D (référentiel géospatial et d'exploitation partagé)** : Référentiel géospatial et d'exploitation partagé (`04_architecture-repository/04_patterns/artsn-rules/art-4d.md`)
 - **Point de vigilance CAESN** : Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health) (`00_caesn/07_governance/point-de-vigilance-caesn.md`)
 - **CAESN : capabilités** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
-- **ARTSN : Annexe C** : Annexe C : Renvoi CAESN et capacités candidates (`02_artsn/08_annexes/c-renvoi-capacites-candidates.md`)
-- **CAESN : normes et standards** : Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
-- **CAESN : registre des ADR** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
+- **ARTSN : Annexe C** : Annexe C : Renvoi CAESN et capacités candidates (`02_artsn/09_annexes/c-renvoi-capacites-candidates.md`)
+- **CNISN : normes et standards** : Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
+- **CNISN : registre des ADR** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
+- **Correspondance principes et règles d'interopérabilité** : Correspondance CAESN ↔ CNISN (`00_caesn/02_principles/mapping-caesn-cnisn.md`)
 
 ## Documents de la section
 

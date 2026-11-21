@@ -1,6 +1,6 @@
 ---
 
-domain: work-packages
+domain: 06_portfolio
 id: WP-05
 type: work-package
 title: Lot L5 — Extension & pérennisation

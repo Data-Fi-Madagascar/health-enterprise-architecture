@@ -223,4 +223,4 @@ La conformité est attestée par la journalisation de tous les flux, la vérific
 
 ## Références au cadre
 
-- **ARTSN — lots consommateurs** : [L6 — Interopérabilité transfrontalière](../../02_artsn/07_lots/index.md), [L7 — Coordination One Health](../../02_artsn/07_lots/index.md)
+- **ARTSN — lots consommateurs** : [L6 — Interopérabilité transfrontalière](../../02_artsn/08_lots/index.md), [L7 — Coordination One Health](../../02_artsn/08_lots/index.md)

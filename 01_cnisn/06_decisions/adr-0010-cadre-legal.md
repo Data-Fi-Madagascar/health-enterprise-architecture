@@ -68,7 +68,7 @@ Sans mandat légal, l'interopérabilité ne peut être imposée aux acteurs auto
 | Réglementation sectorielle isolée | Ne couvre pas l'interopérabilité inter-ministérielle (X-Road) |
 
 ## Références
-- **ARTSN — lots consommateurs** : [L1 — Infrastructure & sécurité](../../02_artsn/07_lots/index.md)
+- **ARTSN — lots consommateurs** : [L1 — Infrastructure & sécurité](../../02_artsn/08_lots/index.md)
 
 - Fondement légal : `00_caesn/07_governance/fondement-legal.md`
 - **Avant-projet de loi e-santé** : `00_caesn/07_governance/projet-loi-esante.md`

@@ -154,4 +154,4 @@ Dépendances : services nationaux santé, point d’échange sectoriel, et éven
 
 ## Références au cadre
 
-- **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/07_lots/index.md), [L7 — Coordination One Health](../../02_artsn/07_lots/index.md)
+- **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/08_lots/index.md), [L7 — Coordination One Health](../../02_artsn/08_lots/index.md)

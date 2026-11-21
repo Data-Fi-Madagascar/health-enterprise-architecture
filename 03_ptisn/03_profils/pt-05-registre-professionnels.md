@@ -128,4 +128,4 @@ Un utilisateur authentifié ne doit pas être considéré comme professionnel ha
 
 ## Références au cadre
 
-- **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/07_lots/index.md)
+- **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/08_lots/index.md)

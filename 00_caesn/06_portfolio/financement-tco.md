@@ -83,17 +83,17 @@ Ces estimations couvrent le coût de possession complet (CapEx + OpEx actualisé
 - **Budget national** : enveloppe e-santé pluriannuelle, alignée sur la [Stratégie de Santé Numérique pour le Développement (SNSD)](../00_overview/foundations.md) ; inscription dans la loi de finances.
 - **Partenaires techniques et financiers** : cofinancements multilatéraux/bilatéraux (IDA, agences, fonds mondiaux) conditionnés à la **conformité HEA** (voir [ADR-0010](../../01_cnisn/06_decisions/adr-0010-cadre-legal.md) et [loi e-santé](../07_governance/projet-loi-esante.md), Art. 16).
 - **Programmes verticaux** : coordonnés via le portefeuille pour mutualiser l'infrastructure et éviter la fragmentation (un socle partagé, plusieurs usages).
-- **Modalités de décaissement** : décaissement par jalon de lot ARTSN (PL-1 → PL-2 → PL-3), conditionné à l'atteinte des critères de conformité et de maturité ([annexe A](../../02_artsn/08_annexes/a-table-de-maturite.md)).
+- **Modalités de décaissement** : décaissement par jalon de lot ARTSN (PL-1 → PL-2 → PL-3), conditionné à l'atteinte des critères de conformité et de maturité ([annexe A](../../02_artsn/09_annexes/a-table-de-maturite.md)).
 
 ## Gouvernance budgétaire
 
 La budgetisation est pilotée selon un cycle clair pour garantir l'alignement investissement → valeur :
 
-1. **Programmation** : le [Bureau de Réalisation de la Valeur (BRV)](index.md) établit le plan de financement par lot à partir du TCO et de la [feuille de route des lots du portefeuille](feuille-de-route-lots.md) (dont la [réalisation technique](../../02_artsn/07_lots/index.md) est détaillée en ARTSN).
+1. **Programmation** : le [Bureau de Réalisation de la Valeur (BRV)](index.md) établit le plan de financement par lot à partir du TCO et de la [feuille de route des lots du portefeuille](feuille-de-route-lots.md) (dont la [réalisation technique](../../02_artsn/08_lots/index.md) est détaillée en ARTSN).
 2. **Arbitrage** : le CNASN homologue le plan (conformité) ; le comité de programmation arbitre la répartition (voir [gouvernance CAESN](../07_governance/index.md)).
 3. **Exécution** : décaissement par jalon, suivi de l'écart budget/réel par lot.
 4. **Contrôle** : audit de conformité et certification des profils (PTISN) conditionnent les tranches suivantes.
-5. **Révision** : mise à jour annuelle du TCO et de l'enveloppe selon la trajectoire [ADHMAT](../../02_artsn/08_annexes/h-benchmark-adhmat.md).
+5. **Révision** : mise à jour annuelle du TCO et de l'enveloppe selon la trajectoire [ADHMAT](../../02_artsn/09_annexes/h-benchmark-adhmat.md).
 
 ## Suivi et indicateurs
 
@@ -108,7 +108,7 @@ La budgetisation est pilotée selon un cycle clair pour garantir l'alignement in
 
 - **matrice de lecture** : Matrice de lecture du CAESN (niveau 1) (`00_caesn/reading-matrix.md`)
 - **Portefeuille** : Portefeuille d'initiatives orienté valeur (`index.md`)
-- **Feuille de route des lots** : [Lots L1–L7 du portefeuille](feuille-de-route-lots.md) (réalisation technique : [vue ARTSN](../../02_artsn/07_lots/index.md))
+- **Feuille de route des lots** : [Lots L1–L7 du portefeuille](feuille-de-route-lots.md) (réalisation technique : [vue ARTSN](../../02_artsn/08_lots/index.md))
 - **Loi e-santé** : Avant-projet de loi e-santé (`../07_governance/projet-loi-esante.md`)
 - **Workforce numérique** : Capacité numérique système (`../03_capabilities/workforce-sante-numerique.md`)
-- **ADHMAT** : Africa CDC — *costed national implementation roadmap and financing plan* (annexe H : `../../02_artsn/08_annexes/h-benchmark-adhmat.md`)
+- **ADHMAT** : Africa CDC — *costed national implementation roadmap and financing plan* (annexe H : `../../02_artsn/09_annexes/h-benchmark-adhmat.md`)

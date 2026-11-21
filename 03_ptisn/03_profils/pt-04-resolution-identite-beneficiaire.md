@@ -152,4 +152,4 @@ L’identifiant santé ne doit pas nécessairement être identique à l’identi
 
 ## Références au cadre
 
-- **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/07_lots/index.md)
+- **ARTSN — lots consommateurs** : [L3 — Médiation & registres](../../02_artsn/08_lots/index.md)

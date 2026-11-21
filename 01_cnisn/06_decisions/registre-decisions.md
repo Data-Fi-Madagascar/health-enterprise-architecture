@@ -26,15 +26,11 @@ tags: ["decisions", "adr", "registre", "gouvernance", "niveau-1"]
 
 Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle.
 
----
-
 ## Objet
 
 Ce registre centralise l'ensemble des Architecture Decision Records (ADR) du cadre HEA. Il constitue la **source unique de vérité** pour les choix d'architecture documentés, leur statut et leur évolution.
 
 Chaque ADR enregistrée ici est un choix structurant, daté et traçable, produite par le Comité National d'Architecture Santé Numérique (CNASN) ou validée par lui.
-
----
 
 ## Légende des statuts
 
@@ -45,8 +41,6 @@ Chaque ADR enregistrée ici est un choix structurant, daté et traçable, produi
 | **appliqué** | Décision pleinement déployée et opérationnelle |
 | **remplacé** | Succédé par une ADR plus récente |
 | **déprécié** | N'est plus applicable (technologie obsolète, standard abandonné) |
-
----
 
 ## Registre
 
@@ -85,8 +79,6 @@ Chaque ADR enregistrée ici est un choix structurant, daté et traçable, produi
 |----|-------|--------|------|--------------|--------|
 | ADR-0010 | Cadre légal et mandat d'opposabilité du CNASN | **proposé** | 2026-08-20 | Ministère de la Santé | Critique : base légale |
 
----
-
 ## Processus d'enregistrement
 
 ```
@@ -99,8 +91,6 @@ Chaque ADR enregistrée ici est un choix structurant, daté et traçable, produi
 7. Si abandonné, le statut passe à « déprécié » avec justification
 ```
 
----
-
 ## Statistiques
 
 | Statut | Nombre |
@@ -111,8 +101,6 @@ Chaque ADR enregistrée ici est un choix structurant, daté et traçable, produi
 | Remplacé | 0 |
 | Déprécié | 0 |
 | **Total** | **10** |
-
----
 
 ## Liens
 

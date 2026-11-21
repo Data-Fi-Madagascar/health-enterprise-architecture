@@ -23,8 +23,6 @@ Ce template est utilisé pour soumettre toute modification au CAESN, à l'ARTSN 
 3. Soumettre au CNASN via le processus de gouvernance
 4. Le numéro MOD-XXXX est attribué par le secrétariat du CNASN
 
----
-
 ## MOD-XXXX : [Titre de la modification]
 
 ### Métadonnées
@@ -41,23 +39,17 @@ Ce template est utilisé pour soumettre toute modification au CAESN, à l'ARTSN 
 | **Priorité** | Critique / Haute / Moyenne / Basse |
 | **Statut** | Brouillon / Soumis / En revue / Approuvé / Rejeté |
 
----
-
 ### 1. Contexte
 
 **Décrire la situation actuelle et le problème ou l'opportunité identifié.**
 
 > Exemple : « Le chapitre ART-4 ne définit pas de mécanisme de résolution d'identité pour les patients sans NIN, ce qui bloque l'implémentation de PT-04 dans les zones rurales. »
 
----
-
 ### 2. Proposition
 
 **Décrire la modification proposée de manière claire et concise.**
 
 > Exemple : « Ajouter une section ART-4C décrivant un mode dégradé de résolution d'identité basé sur la recherche démographique floue (nom + commune + date de naissance) avec score de confiance. »
-
----
 
 ### 3. Justification
 
@@ -71,8 +63,6 @@ Ce template est utilisé pour soumettre toute modification au CAESN, à l'ARTSN 
 | Impact sécurité/souveraineté | [Impact positif, neutre ou négatif ?] |
 | Coût d'implémentation | [Estimation effort : faible / moyen / élevé] |
 
----
-
 ### 4. Alternatives considérées
 
 **Décrire les alternatives évaluées et les raisons du choix.**
@@ -82,8 +72,6 @@ Ce template est utilisé pour soumettre toute modification au CAESN, à l'ARTSN 
 | [Alternative 1] | ... | ... | ... |
 | [Alternative 2] | ... | ... | ... |
 | **Choix retenu** | ... | ... | : |
-
----
 
 ### 5. Impact
 
@@ -98,8 +86,6 @@ Ce template est utilisé pour soumettre toute modification au CAESN, à l'ARTSN 
 | **Référentiel** | [Nul / Faible / Moyen / Élevé] | [Ajout objet, modification objet, etc.] |
 | **Systèmes existants** | [Nul / Faible / Moyen / Élevé] | [Migration, compatibilité, etc.] |
 
----
-
 ### 6. Risques
 
 **Identifier les risques associés à cette modification.**
@@ -108,8 +94,6 @@ Ce template est utilisé pour soumettre toute modification au CAESN, à l'ARTSN 
 |--------|-------------|--------|------------|
 | [Risque 1] | Faible / Moyenne / Élevée | Faible / Moyen / Élevé / Critique | [Action de mitigation] |
 | [Risque 2] | ... | ... | ... |
-
----
 
 ### 7. Plan d'implémentation
 
@@ -123,8 +107,6 @@ Ce template est utilisé pour soumettre toute modification au CAESN, à l'ARTSN 
 | 4 | [Formation/communication] | ... | ... |
 | 5 | [Déploiement] | ... | ... |
 
----
-
 ### 8. Approbation
 
 | Rôle | Nom | Date | Décision |
@@ -134,15 +116,11 @@ Ce template est utilisé pour soumettre toute modification au CAESN, à l'ARTSN 
 | CNASN | ... | ... | Approuvé / Rejeté / Dérogation |
 | Secrétaire Général | ... | ... | Approuvé / Rejeté |
 
----
-
 ### 9. Références
 
 - [Lien vers le document impacté](#)
 - [Lien vers le standard de référence](#)
 - [ADR associée si applicable](#)
-
----
 
 ## Liens
 

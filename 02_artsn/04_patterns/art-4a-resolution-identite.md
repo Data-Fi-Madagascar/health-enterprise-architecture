@@ -37,7 +37,7 @@ ART-4A : Résolution d'identité constitue un chapitre du **cadre normatif oppos
 
 **Discipline de mise en œuvre.** Dès qu’une source échappe à la gouvernance directe de l’initiative (erreurs de saisie manuelle, variations phonétiques des patronymes, logiciels distants en silos), cette discipline seule permet d’éviter l’attribution de données cliniques au mauvais patient et de bloquer les accidents médicaux sans rompre le pipeline.
 
-- **Rattachement** : [CAP-04bis](../08_annexes/c-renvoi-capacites-candidates.md) (engagement patient et identitovigilance).
+- **Rattachement** : [CAP-04bis](../09_annexes/c-renvoi-capacites-candidates.md) (engagement patient et identitovigilance).
 - **Concepts cibles** : Golden Record, Identifiant National de Santé (INS).
 - **Déduit selon** : [ENF-3: Unicité de l'identité et résilience face à la fragmentation applicative](../../04_architecture-repository/03_requirements/enf-3.md) (unicité de l’identité).
 - **Statut : Provisoire.**

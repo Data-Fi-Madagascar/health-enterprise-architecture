@@ -42,8 +42,6 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Rattachement** | Capabilité(s) et/ou flux de valeur concerné(s) |
 | **Référentiel source** | Référentiel national ou standard international de référence |
 
----
-
 ## 1. Patient & identité
 
 **Objet métier CAESN correspondant** : [BO-01 : Patient & identité](../../00_caesn/04_data/objets.md).
@@ -134,7 +132,6 @@ Ce concept est mobilisé par les capacités [CAP-01](../../04_architecture-repos
 - **Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
 - **Objet métier CAESN** : [BO-01 : Patient & identité](../../04_architecture-repository/02_architecture-elements/business/business-objects/bo-01.md)
 - **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md), [ART-7](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
----
 
 <!-- END:GENERATED -->
 
@@ -256,8 +253,6 @@ Ce concept est mobilisé par les capacités [CAP-02](../../04_architecture-repos
 - **EVA-I1** : Internationale programmée — Hôpital → Centre spécialisé étranger (planifiée) — FHIR IPS + PT-14 + accords bilatéraux
 - **EVA-I2** : Internationale d'urgence — Hôpital → Pays voisin le plus proche (non planifiée) — FHIR IPS + PT-14 + urgence humanitaire
 
----
-
 <!-- END:GENERATED -->
 
 ## 3. Dispensation & produits
@@ -350,7 +345,6 @@ Ce concept est mobilisé par les capacités [CAP-10](../../04_architecture-repos
 - **Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)
 - **Objet métier CAESN** : [BO-03 : Dispensation & produits](../../04_architecture-repository/02_architecture-elements/business/business-objects/bo-03.md)
 - **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md)
----
 
 <!-- END:GENERATED -->
 
@@ -444,7 +438,6 @@ Ce concept est mobilisé par les capacités [CAP-07](../../04_architecture-repos
 - **Flux de valeur** : [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md)
 - **Objet métier CAESN** : [BO-04 : Financement & couverture](../../04_architecture-repository/02_architecture-elements/business/business-objects/bo-04.md)
 - **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md)
----
 
 <!-- END:GENERATED -->
 
@@ -559,7 +552,6 @@ Ce concept est mobilisé par les capacités [CAP-06](../../04_architecture-repos
 - **Flux de valeur** : [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
 - **Objet métier CAESN** : [BO-05 : Risque & surveillance](../../04_architecture-repository/02_architecture-elements/business/business-objects/bo-05.md)
 - **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md)
----
 
 <!-- END:GENERATED -->
 
@@ -695,7 +687,6 @@ Ce concept est mobilisé par les capacités [CAP-08](../../04_architecture-repos
 - **Flux de valeur** : [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
 - **Objet métier CAESN** : [BO-06 : Exploitation & gestion](../../04_architecture-repository/02_architecture-elements/business/business-objects/bo-06.md)
 - **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
----
 
 <!-- END:GENERATED -->
 
@@ -784,7 +775,6 @@ Ce concept est mobilisé par les capacités [CAP-15](../../04_architecture-repos
 - **Profils (PTISN)** : [PT-14](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-14.md)
 - **Objet métier CAESN** : [BO-07 : Interopérabilité transfrontalière](../../04_architecture-repository/02_architecture-elements/business/business-objects/bo-07.md)
 - **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-7](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
----
 
 <!-- END:GENERATED -->
 
@@ -810,7 +800,7 @@ Ce concept est mobilisé par les capacités [CAP-15](../../04_architecture-repos
 - **ART-2 : Médiation et normalisation** : Médiation et normalisation (`04_architecture-repository/04_patterns/artsn-rules/art-2.md`)
 - **ART-7 : Sécurité, contrôle d'accès et résidence** : Sécurité, contrôle d'accès et résidence de la donnée (`04_architecture-repository/04_patterns/artsn-rules/art-7.md`)
 - **PT-14 : Interopérabilité transfrontalière** : Interopérabilité transfrontalière (`03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md`)
-- **PART-ECHANGE-TRANSFRONTALIER : Interopérabilité transfrontalière** : Partie II : Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
+- **PART-ECHANGE-TRANSFRONTALIER : Interopérabilité transfrontalière** : Partie II : Objets d'interopérabilité requis (`01_cnisn/02_objets-interoperabilite/index.md`)
 - **CAESN : données** : Architecture des données et de l'information sanitaire (`00_caesn/04_data/index.md`)
 - **CAESN : domaines de données** : Domaines de données prioritaires (`00_caesn/04_data/domains.md`)
 - **CAESN : référentiels nationaux** : Référentiels nationaux (`00_caesn/04_data/referentials.md`)

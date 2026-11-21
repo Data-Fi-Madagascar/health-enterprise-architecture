@@ -30,11 +30,11 @@ repos:
     hooks:
       # Remove trailing whitespace
       - id: trailing-whitespace
-        exclude: ^(referentiel/.*\.md|.*\.yaml)$
+        exclude: ^(04_architecture-repository/.*\.md|.*\.yaml)$
 
       # Remove trailing blank lines
       - id: end-of-file-fixer
-        exclude: ^(referentiel/.*\.md|.*\.yaml)$
+        exclude: ^(04_architecture-repository/.*\.md|.*\.yaml)$
 
       # Check for mixed line endings
       - id: mixed-line-ending
@@ -58,7 +58,7 @@ repos:
     hooks:
       - id: yamllint
         args: [--strict]
-        exclude: ^(referentiel/_index\.yaml)$  # Custom format, skip
+        exclude: ^(04_architecture-repository/_index\.yaml)$  # Custom format, skip
 
   # Detect secrets and credentials
   - repo: https://github.com/Yelp/detect-secrets

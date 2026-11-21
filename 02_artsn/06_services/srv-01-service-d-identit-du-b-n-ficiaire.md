@@ -1,6 +1,6 @@
 ---
 
-domain: services
+domain: 06_services
 id: SRV-01
 type: service
 title: Service d'identité du bénéficiaire

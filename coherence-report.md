@@ -81,7 +81,7 @@ Le PTISN était rédigé contre une version antérieure du CNISN à **6 capacit�
 
 L'ARTSN ne définit que `ART-0` à `ART-9` (+ sous-chapitres `4a-d`, `8a-d`) — voir `02_artsn/04_patterns/index.md`. ART-10 et ART-11 étaient cités sans existait.
 
-**Correctifs appliqués (✓) :** création des stubs `referentiel/chapitres/art-10.md` et `referentiel/chapitres/art-11.md` (`status: candidate`, 18 lignes), référencés depuis `01_cnisn/08_annexes/b-articulation-art-sn.md`, `03_ptisn/03_profils/pt-00-index.md` (PT-01/PT-11 → ART-11) et `03_ptisn/04_matrice-alignement.md` (§2, ART-10 « Profil futur », ART-11 → PT-01/PT-11). Les renvois ne sont plus pendants.
+**Correctifs appliqués (✓) :** création des stubs `referentiel/chapitres/art-10.md` et `referentiel/chapitres/art-11.md` (`status: candidate`, 18 lignes), référencés depuis `01_cnisn/10_annexes/b-articulation-art-sn.md`, `03_ptisn/03_profils/pt-00-index.md` (PT-01/PT-11 → ART-11) et `03_ptisn/04_matrice-alignement.md` (§2, ART-10 « Profil futur », ART-11 → PT-01/PT-11). Les renvois ne sont plus pendants.
 
 ### 2.2 F.5 et F.6 — ✓ Résolu (stubs candidats)
 
@@ -123,7 +123,7 @@ Références PTISN décalées d'une unité (ex. « ART-4C — bases d'autorisati
 | Sigle **PTISN** | « Profil Technique d'Interopérabilité de Santé Numérique » (ex-`03_ptisn/00_introduction.md`) | « Profils techniques d'implémentation de la Santé Numérique » (`03_ptisn/index.md`, `acronyms.md`, `scripts/manifest.json`) | ✓ Résolu — `00_introduction.md` aligné sur le sens canonique « implémentation » |
 | Sigle **ART-SN / ARTSN** | Uniformisé en **ARTSN** partout | ✓ Résolu — décision confirmée, uniformisation complète |
 | Capacités **CAP-xx** | CAESN : `CAP-01`…`CAP-16` | ARTSN cite `CAP-04bis` (identitovigilance) | Écart **déjà tracé** (voir §5) |
-| Capacités **CAP-INT-xx** | CNISN : `CAP-INT-01`…`14` | aucune correspondance explicite CAESN ↔ CNISN publiée | ✓ Résolu — table de correspondance publiée (`01_cnisn/08_annexes/e-correspondance-caesn.md`) + liens `maps_to` → `cap-XX` dans les frontmatter `cap-int-*`/`p-int-*` |
+| Capacités **CAP-INT-xx** | CNISN : `CAP-INT-01`…`14` | aucune correspondance explicite CAESN ↔ CNISN publiée | ✓ Résolu — table de correspondance publiée (`01_cnisn/10_annexes/e-correspondance-caesn.md`) + liens `maps_to` → `cap-XX` dans les frontmatter `cap-int-*`/`p-int-*` |
 
 ---
 
@@ -141,8 +141,8 @@ Références PTISN décalées d'une unité (ex. « ART-4C — bases d'autorisati
 - **`docs.json` racine — ✓ Résolu (2026-08-18)** : navigation reconstruite avec 4 onglets (CAESN 48 pages, CNISN 37 pages, ARTSN 38 pages, PTISN 37 pages = 160 pages total). Tous les chemins corrigés (`/00_caesn/`, `/01_cnisn/`, `/02_artsn/`, `/03_ptisn/`). Sections standards et ADR ajoutées pour CNISN. Annexes manquantes ajoutées (ARTSN art-10/11, PTISN pt-14/15, cas d'usage). 0 page manquante, JSON valide.
 
 ### Écarts connus et tracés (à ne pas re-signaler comme nouveaux)
-- **CAP-04bis** : référencée par l'ARTSN (ART-4A, ART-4B) mais absente du catalogue CAESN → écart documenté dans `00_caesn/07_governance/point-de-vigilance-caesn.md` (décision D-1) et `02_artsn/08_annexes/c-renvoi-capacites-candidates.md` (point 3).
-- **ART-4D → capabilité candidate** « surveillance spatio-temporelle » : absence tracée dans `02_artsn/08_annexes/c-renvoi-capacites-candidates.md` (point 2).
+- **CAP-04bis** : référencée par l'ARTSN (ART-4A, ART-4B) mais absente du catalogue CAESN → écart documenté dans `00_caesn/07_governance/point-de-vigilance-caesn.md` (décision D-1) et `02_artsn/09_annexes/c-renvoi-capacites-candidates.md` (point 3).
+- **ART-4D → capabilité candidate** « surveillance spatio-temporelle » : absence tracée dans `02_artsn/09_annexes/c-renvoi-capacites-candidates.md` (point 2).
 
 ---
 
@@ -172,9 +172,9 @@ Références PTISN décalées d'une unité (ex. « ART-4C — bases d'autorisati
 | 4 | ART-8 vs ART-8A : intitulés distincts | `02_artsn/04_patterns/{ART-8,index}.md`, `referentiel/chapitres/art-8.md` |
 | 4 | Manifestes cnisn/ptisn complétés (16 + 29) | `scripts/manifest.json` |
 | 5 | Restructuration des capacités CNISN en 5 familles de réponse (family: sur les 14 cap-int ; catalogue `02_capacites/index.md` scindé en 5 blocs ; PT-03 remappé → CAP-INT-06) | `referentiel/capacites/cap-int-*.md`, `01_cnisn/02_capacites/index.md`, `referentiel/profils/pt-03.md`, `03_ptisn/04_matrice-alignement.md` |
-| 5 | Annexe B réécrite sur les 5 familles CAP-INT (remplace la taxonomie des 12 « domaines ») | `01_cnisn/08_annexes/b-articulation-art-sn.md` |
+| 5 | Annexe B réécrite sur les 5 familles CAP-INT (remplace la taxonomie des 12 « domaines ») | `01_cnisn/10_annexes/b-articulation-art-sn.md` |
 | 5 | Correspondance CAESN CAP-xx ↔ CNISN CAP-INT-xx : `maps_to` → `cap-XX` sur les 14 `cap-int-*` et 25 `p-int-*` ; F-4 rattachée à `CAP-INT-12`/`CAP-16` ; 29 PA/AA/DA → `applies_to` vs-01..04 | `referentiel/capacites/cap-int-*.md`, `referentiel/principes/p-int-*.md`, `referentiel/principes/{pa,aa,da}-*.md`, `referentiel/fondations/f-4.md` |
-| 5 | Table de correspondance CAESN↔CNISN (Annexe E) | `01_cnisn/08_annexes/e-correspondance-caesn.md`, `scripts/manifest.json` |
+| 5 | Table de correspondance CAESN↔CNISN (Annexe E) | `01_cnisn/10_annexes/e-correspondance-caesn.md`, `scripts/manifest.json` |
 | 5 | `family` documenté dans le schéma | `referentiel/_schema.md` |
 | 4 | Autodescription ARTSN alignée sur la gouvernance : familles de patterns, pas de sélection de produits ni de configurations (déléguée au PTISN) | `02_artsn/index.md`, `02_artsn/reading-matrix.md`, `00_caesn/10_annexes/glossary.md`, `00_caesn/00_overview/index.md`, `01_cnisn/index.md` |
 | 4 | Numérotation des niveaux corrigée : ARTSN = niveau 3, PTISN = niveau 4 (frontmatter + tags, `_schema.md`, `_index.yaml`, matrice d'alignement) | `referentiel/` (44 objets), `referentiel/_schema.md`, `referentiel/_index.yaml`, `03_ptisn/03_profils/pt-00-index.md`, `03_ptisn/04_matrice-alignement.md` |
@@ -259,9 +259,9 @@ Croisement du CNISN (`01_cnisn/`, niveau 2 : principes P-INT, capacités CAP-INT
 | ARTSN → CNISN | Chapitres ART portent une ligne « Normes CNISN » (`maps_to`/`related` vers `std-*`/`adr-*` : art-2/3/4/7/9/12) ; retour « lots consommateurs » depuis 17 artefacts CNISN (D2) + 13 profils PTISN (PT-01/02/04/05/07/08/10/11/12/14/17/18/19) ; index inverse annexe F (D3) ; annexes G (REDDHI) et H (ADHMAT) | ✓ **résolu** |
 
 - `referentiel/chapitres/art-*.md` : lignes « CNISN — Normes » reliant chaque chapitre aux standards/ADR concernés (ex. ART-7 → STD-0002, ADR-0008 ; ART-4A → STD-0005, ADR-0004/0006 ; ART-12 → STD-0006, STD-0007).
-- `01_cnisn/05_standards/` et `06_decisions/` : chaque norme/ADR porte un renvoi « ARTSN — lots consommateurs » vers `02_artsn/07_lots/index.md` (D2, 17 artefacts : 9 STD + 8 ADR, incluant STD-0008 et STD-0009).
-- `03_ptisn/03_profils/pt-*.md` : 13 profils PTISN portent un renvoi « ARTSN — lots consommateurs » vers `02_artsn/07_lots/index.md` (D2-bis), complétant la chaîne PT→CNISN→ARTSN→lots.
-- **Réalignement de propriété des lots (2026-08-26)** : les lots L1–L7 sont désormais définis au niveau du portefeuille CAESN (`00_caesn/06_portfolio/feuille-de-route-lots.md` — source de vérité : périmètre, séquence, financement) ; `02_artsn/07_lots/index.md` est devenu la *vue de réalisation technique ARTSN* (composants, patterns, normes CNISN) qui référence le portefeuille vers le haut. Cela corrige une dépendance inversée (un niveau 1 référençait un niveau 3 pour sa définition de lots) et résorbe le doublon budgétaire (le budget est unique, dans le TCO portefeuille).
+- `01_cnisn/05_standards/` et `06_decisions/` : chaque norme/ADR porte un renvoi « ARTSN — lots consommateurs » vers `02_artsn/08_lots/index.md` (D2, 17 artefacts : 9 STD + 8 ADR, incluant STD-0008 et STD-0009).
+- `03_ptisn/03_profils/pt-*.md` : 13 profils PTISN portent un renvoi « ARTSN — lots consommateurs » vers `02_artsn/08_lots/index.md` (D2-bis), complétant la chaîne PT→CNISN→ARTSN→lots.
+- **Réalignement de propriété des lots (2026-08-26)** : les lots L1–L7 sont désormais définis au niveau du portefeuille CAESN (`00_caesn/06_portfolio/feuille-de-route-lots.md` — source de vérité : périmètre, séquence, financement) ; `02_artsn/08_lots/index.md` est devenu la *vue de réalisation technique ARTSN* (composants, patterns, normes CNISN) qui référence le portefeuille vers le haut. Cela corrige une dépendance inversée (un niveau 1 référençait un niveau 3 pour sa définition de lots) et résorbe le doublon budgétaire (le budget est unique, dans le TCO portefeuille).
 - Annexe F (`f-normes-cnisn-lots.md`) : index inverse norme/ADR → lots ; annexes G/H relient CNISN aux sources internationales (OMS/ITU, Africa CDC).
 - → Traçabilité **symétrique** : le niveau 3 (ARTSN) et le niveau 2 (CNISN) sont désormais reliés dans les deux sens (résolu par les phases C, D2, D3 du refactor ARTSN).
 
@@ -311,7 +311,7 @@ L'annexe B utilisait une **3ᵉ taxonomie** (12 « domaines ») qui ne correspon
 
 ### 10.8 Recommandations (ouvertes — voir §7.7)
 
-1. ~~Créer la traçabilité ARTSN→CNISN dans le référentiel (relier chapitres/exigences/fondations aux CAP-INT/P-INT concernés, ou publier une table de correspondance ART↔CAP-INT)~~ — **résolu** : chaîne PT→CAP-INT→CAP complète (18/18 CAP couvertes) ; retour « lots consommateurs » depuis 17 artefacts CNISN + 13 profils PTISN vers `02_artsn/07_lots/index.md` ; index inverse annexe F ; ART-12 (aide à la décision clinique) ajouté comme nouveau chapitre ARTSN.
+1. ~~Créer la traçabilité ARTSN→CNISN dans le référentiel (relier chapitres/exigences/fondations aux CAP-INT/P-INT concernés, ou publier une table de correspondance ART↔CAP-INT)~~ — **résolu** : chaîne PT→CAP-INT→CAP complète (18/18 CAP couvertes) ; retour « lots consommateurs » depuis 17 artefacts CNISN + 13 profils PTISN vers `02_artsn/08_lots/index.md` ; index inverse annexe F ; ART-12 (aide à la décision clinique) ajouté comme nouveau chapitre ARTSN.
 2. ~~Aligner l'annexe B du CNISN sur les taxonomies P-INT/CAP-INT~~ — **résolu** : 5 familles de réponse couvrant les 14 CAP-INT (§10.2, §7).
 3. Clarifier le rôle du CNASN dans la gouvernance et la conformité du CNISN (hiérarchie, instance d'homologation, critères harmonisés).
 4. Réconcilier le traitement de la logistique (ART-10 candidat vs « non couverte » de la table de maturité ARTSN).
@@ -695,8 +695,8 @@ Voir §20 : détecteur d'objets isolés ajouté au validateur (`scripts/validate
 
 **Correctifs appliqués (✓) :**
 - `02_artsn/05_cartographie.md` : *Note de rationalisation* ajoutée ; CMP-05 et CMP-18 marqués *Phase 2 — candidat (conditionné à une initiative validante)* ; CMP-15/16/17/18 signalés comme candidats à fusion en *Pattern d'échange unifié* ; CMP-07 (Sagas) soumis à étude préalable.
-- `02_artsn/07_lots/index.md` : *Note de rationalisation* ajoutée, CMP-05/18 repoussés hors phases 1–6.
-- La table de maturité (`02_artsn/08_annexes/a-table-de-maturite.md`) ne couvre que les chapitres ART (pas les CMP) ; le phasage des composants est donc porté par la cartographie cible et la feuille de route.
+- `02_artsn/08_lots/index.md` : *Note de rationalisation* ajoutée, CMP-05/18 repoussés hors phases 1–6.
+- La table de maturité (`02_artsn/09_annexes/a-table-de-maturite.md`) ne couvre que les chapitres ART (pas les CMP) ; le phasage des composants est donc porté par la cartographie cible et la feuille de route.
 
 ---
 
@@ -712,7 +712,7 @@ Voir §20 : détecteur d'objets isolés ajouté au validateur (`scripts/validate
 
 ### 21.1 Réalignement physique des enveloppes de lots — ✓ Résolu
 
-Les paquets de travail (lots L1–L7, `referentiel/work-packages/wp-0X.md`) étant propriété logique du portefeuille CAESN (§10.1), leurs enveloppes générées (`wp-0X-lot-lX-*.md`) ont été déplacées de `02_artsn/07_lots/` vers `00_caesn/06_portfolio/` (commit `c236cd9`). Les champs `envelope:` des 7 sources sont repointés vers le nouveau dossier. Vérifié : **aucun lien Markdown** ne référençait les enveloppes (seul le champ `envelope:` des sources les ciblait), donc le déplacement est mécanique et sans rupture. `02_artsn/07_lots/index.md` reste la *vue de réalisation technique ARTSN* et pointe vers le portefeuille CAESN vers le haut.
+Les paquets de travail (lots L1–L7, `referentiel/work-packages/wp-0X.md`) étant propriété logique du portefeuille CAESN (§10.1), leurs enveloppes générées (`wp-0X-lot-lX-*.md`) ont été déplacées de `02_artsn/08_lots/` vers `00_caesn/06_portfolio/` (commit `c236cd9`). Les champs `envelope:` des 7 sources sont repointés vers le nouveau dossier. Vérifié : **aucun lien Markdown** ne référençait les enveloppes (seul le champ `envelope:` des sources les ciblait), donc le déplacement est mécanique et sans rupture. `02_artsn/08_lots/index.md` reste la *vue de réalisation technique ARTSN* et pointe vers le portefeuille CAESN vers le haut.
 
 ### 21.2 Fragmentation `ART-2` du knowledge graph — ✓ Résolu
 

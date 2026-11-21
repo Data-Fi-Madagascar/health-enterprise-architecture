@@ -1,7 +1,7 @@
 ---
 title: "Localisation territoriale du système de santé numérique"
 id: caesn-lieux-index
-domain: 00_overview
+domain: lieux
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-24

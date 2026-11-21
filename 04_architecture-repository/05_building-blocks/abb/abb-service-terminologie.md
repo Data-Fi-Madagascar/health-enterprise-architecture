@@ -8,7 +8,7 @@ status: candidate
 owner: DEPSI
 version: "0.1"
 legacy_id: CAP-INT-05
-envelope: 01_cnisn/02_capacites/index.md
+envelope: 01_cnisn/02_objets-interoperabilite/index.md
 building_block_role: ABB
 building_block_domain: data
 togaf_repository_section: reference-library

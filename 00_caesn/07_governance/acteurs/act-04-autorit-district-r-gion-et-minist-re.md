@@ -1,7 +1,7 @@
 ---
 title: Autorité district, région et Ministère
 id: caesn-ACT-04
-domain: 07_governance
+domain: acteurs
 version: "1.0.0"
 status: draft
 last_reviewed: 2026-08-24

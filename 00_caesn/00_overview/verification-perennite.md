@@ -49,8 +49,6 @@ Le cadre d'architecture s'appuie sur plusieurs documents stratégiques nationaux
 2. Si non, documenter le statut transitoire du cadre
 3. Préparer la mise à jour des références si un nouveau PDSS est adopté
 
----
-
 ### 2. SNSD : Stratégie Nationale de Santé Digitale
 
 | Champ | Valeur |
@@ -64,8 +62,6 @@ Le cadre d'architecture s'appuie sur plusieurs documents stratégiques nationaux
 **Statut :** Le document est actif et couvre la période 2023-2027. Les 4 axes de la SNSD (gouvernance digitale, solutions, ressources, financement) sont lus comme des capabilités numériques transversales.
 
 **Recommandation :** Aucune action immédiate nécessaire. Suivre l'avancement de l'implémentation.
-
----
 
 ### 3. PSRSIS : Plan de Stratégie du Renforcement du Système d'Information Sanitaire
 
@@ -81,8 +77,6 @@ Le cadre d'architecture s'appuie sur plusieurs documents stratégiques nationaux
 1. Vérifier la date de validité du document
 2. Confirmer son statut actuel
 3. Mettre à jour les références si nécessaire
-
----
 
 ## Résumé des recommandations
 

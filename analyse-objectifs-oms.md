@@ -10,8 +10,6 @@ ART, composants CMP, profils PTISN), (b) le niveau de couverture, (c) les écart
 Sources : `00_caesn/03_capabilities/`, `01_cnisn/05_standards/`, `02_artsn/05_cartographie/`,
 `03_ptisn/`, `coherence-report.md` (validate_ref CONFORME).
 
----
-
 ## O1 — Fondations de données de confiance (« capturer une fois, réutiliser souvent »)
 
 **Articulation HEA** (fortement couvert — c'est le cœur du cadre) :
@@ -26,13 +24,11 @@ transit chiffré X-Road/GDHCN, cf. résidence↔échange).
 
 **Couverture : ✅ Forte**
 
----
-
 ## O2 — Workforce de santé compétent et bien réparti
 
 **Articulation HEA** (partielle) :
 - Registre des professionnels : `CAP-INT-02` (Registre et résolution des professionnels),
-  `00_caesn/00_overview/foundations.md` (Health Worker Registry), `02_artsn/08_annexes/g-reddhi-alignement.md`.
+  `00_caesn/00_overview/foundations.md` (Health Worker Registry), `02_artsn/09_annexes/g-reddhi-alignement.md`.
 - Cadre de renforcement du workforce numérique : `00_caesn/03_capabilities/workforce-sante-numerique.md`
   (rôles, formation, certification).
 - Suivi de carrière / rémunération : `CAP-09` — « suivi de carrière et motivation : gestion
@@ -46,8 +42,6 @@ transit chiffré X-Road/GDHCN, cf. résidence↔échange).
   mais sans capacité CNISN ni chapitre ARTSN dédié à la rétention/équité géographique.
 
 **Couverture : 🟢 Combée** (maillages paie/habilitation/rétention ajoutés : CAP-INT-02 ↔ CAP-09 ↔ PT-18 ; analytique rétention via ART-6).
-
----
 
 ## O3 — Qualité et continuité des soins
 
@@ -67,8 +61,6 @@ transit chiffré X-Road/GDHCN, cf. résidence↔échange).
 
 **Couverture : 🟢 Combée** (CDS computable modélisé : ART-12 + PT-19, reliés à CMP-08, CAP-INT-05, STD-0007).
 
----
-
 ## O4 — Dossiers personnels de santé de confiance (PHR) et consentement
 
 **Articulation HEA** (forte) :
@@ -84,8 +76,6 @@ transit chiffré X-Road/GDHCN, cf. résidence↔échange).
 
 **Couverture : ✅ Forte** (avec dépendance législative en cours d'adoption)
 
----
-
 ## O5 — Gestion optimisée de la chaîne d'approvisionnement (supply chain)
 
 **Articulation HEA** (raisonnable) :
@@ -99,8 +89,6 @@ transit chiffré X-Road/GDHCN, cf. résidence↔échange).
   stock, lots, traçabilité), par symétrie avec les autres domaines. `PT-17` lui est relié.
 
 **Couverture : 🟢 Combée** (capacité CNISN dédiée `CAP-INT-15` créée ; PT-17 relié)
-
----
 
 ## O6 — Financement de la santé efficient et équitable
 
@@ -123,8 +111,6 @@ transit chiffré X-Road/GDHCN, cf. résidence↔échange).
 
 **Couverture : 🟢 Combée** (échange de réclamations normalisé : STD-0008 + PT-18, profil FHIR Claims/Payment, modèle Nigeria NDHI HCX).
 
----
-
 ## O7 — Résilience climatique et épidémique
 
 **Articulation HEA** (forte) :
@@ -142,8 +128,6 @@ transit chiffré X-Road/GDHCN, cf. résidence↔échange).
 
 **Couverture : ✅ Forte** (avec capacité CNISN dédiée `CAP-INT-16` environnement/climat, en complément de One Health `CAP-INT-14`)
 
----
-
 ## Synthèse — matrice de couverture
 
 | # | Objectif OMS | Familles HEA mobilisées | Couverture | Écart principal |
@@ -157,8 +141,6 @@ transit chiffré X-Road/GDHCN, cf. résidence↔échange).
 | O7 | Résilience climat/épidémique | VS-02, CAP-04/05/06, CAP-INT-13/14/16, ART-5/11 | ✅ Forte | capacité CNISN dédiée environnement/climat (CAP-INT-16) |
 
 \* conditionnée à l'adoption de la loi e-santé.
-
----
 
 ## Recommandations (priorisation des gaps)
 
@@ -178,8 +160,6 @@ transit chiffré X-Road/GDHCN, cf. résidence↔échange).
    `CAP-INT-15` (chaîne d'approvisionnement sanitaire) et `CAP-INT-16` (données
    environnementales et de résilience climatique), par symétrie avec les autres domaines ;
    `PT-17` et `PT-15` reliés.
-
----
 
 ## Conclusion
 
