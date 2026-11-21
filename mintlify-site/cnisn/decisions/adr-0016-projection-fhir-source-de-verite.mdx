@@ -1,0 +1,138 @@
+---
+title: "ADR-0016 : La déclaration `fhir_resources` fait foi sur la projection FHIR des objets de données"
+sidebarTitle: "ADR-0016"
+description: "Niveau 2 — Règles d'interopérabilité entre systèmes d'information de santé"
+owner: "DEPSI"
+version: "1.0.0"
+status: "candidate"
+---
+
+## Pour qui lire ce document
+
+**Niveau :** niveau 2 : Cadre National d'Interopérabilité de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ○ |
+| Directions métier / programmes | ◐ |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ● |
+| Partenaires techniques et financiers | ○ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle.
+
+- **Statut** : proposé
+- **Date** : 2026-11-21
+- **Groupe concerné** : DEPSI, CNASN, directions techniques du Ministère de la Santé
+
+## Contexte
+
+Les vingt-trois objets de données du référentiel déclarent tous, dans leur frontmatter, la ou les ressources FHIR par lesquelles ils s'échangent. Cette déclaration `fhir_resources` est l'énoncé que les lecteurs utilisent, les schémas de charge utile la reprennent, et le graphe RDF la publie. Le compilateur FHIR, en revanche, l'ignorait. Il derived le type de la ressource d'échange d'une table de correspondance interne qui associait un libellé de type en français, extrait du corps du document, à un nom de ressource FHIR. Le corps du document et la déclaration du frontmatter ne se contredisaient pas toujours, mais ils ne se déduisaient pas l'un de l'autre : le compilateur obéissait au premier et ignorait le second.
+
+La mesure de l'état avant correction est nette. Sur les vingt-trois objets de données, deux seulement produisaient une StructureDefinition dont le type correspondait à leur déclaration : le patient, dont le bloc `fhir:` fournissait la base du profil, et la consultation, dont le libellé de type aboutissait par hasard à la bonne ressource. Les vingt-et-un autres objets divergeaient, et seize d'entre eux tombaient sur le repli générique `Basic`, faute de correspondance dans la table interne. Une prescription déclarait `MedicationRequest` et se compilait en `Basic` ; un résumé international du patient déclarait `Bundle` et `Composition` et se compilait en `Basic` ; un agent de santé déclarait `Practitioner` et `PractitionerRole` et se compilait en `Patient`.
+
+Cette divergence avait deux conséquences pratiques. La première est que les artefacts produits n'étaient pas la projection du corpus : ils ne pouvaient pas servir de contrat d'échange, et un tiers qui confrontait la déclaration d'un objet au profil compilé constatait une contradiction dans la source même du référentiel. La seconde est que le répertoire de sortie du compilateur s'accumulait sans limite : il contenait encore les artefacts des neuf objets retirés du catalogue par fusion, objets dont la trace est consignée dans `00_metamodel/do-migration.yaml`. Le compilateur ne produisait pas l'image du corpus, il produisait l'historique de ses exécutions.
+
+Un second constat, de nature différente, est apparu lorsque la conformité des déclarations a été confrontée au paquet FHIR R4 publié par HL7. Sur les trente-trois ressources déclarées avant correction, quatre ne satisfaissaient aucune des deux exigences minimales d'une projection nationale. Deux d'entre elles, `InventoryItem` et `Certificate`, n'existent pas dans le paquet R4 : ce sont des ressources de la version R5, et une StructureDefinition de ce type ne serait acceptée par aucun validateur R4. Les deux autres, `Invoice` et `MedicationKnowledge`, existent en R4 mais portent un niveau de maturité FMM nul, c'est-à-dire que le groupe de travail responsable ne les considère pas prêtes pour l'implémentation et qu'elles peuvent encore évoluer sans garantie de compatibilité ascendante. Le référentiel affirmait donc, pour quatre objets, une projection qui n'était pas échangeable en R4.
+
+Les documents normatifs qui encadrent ces usages portaient la même incohérence. La norme STD-0009 sur l'échange des données logistiques recommandait l'usage de `MedicationKnowledge` et d'`InventoryReport`, dont la seconde n'existe pas en R4. Le profil PT-17 de logistique recommandait `InventoryReport` pour la remontée des niveaux de stock et `MedicationKnowledge` pour le catalogue produit. Le cas d'usage de chaîne d'approvisionnement citait `InventoryReport` comme le vecteur de la remontée de stock.
+
+## Décision
+
+### La déclaration `fhir_resources` est la source unique de vérité
+
+Le compilateur FHIR lit désormais la déclaration `fhir_resources` de chaque objet de données et ne dérive plus le type de la ressource d'aucun autre endroit. La table interne de correspondance entre libellés français et ressources FHIR est supprimée, de même que les fonctions qui en dépendaient. Une StructureDefinition est produite par ressource déclarée, nommée `hea-<objet>-<ressource>-sd.json`, d'identifiant `hea-<objet>-<ressource>`, de type la ressource déclarée, et de base le profil FHIR R4 correspondant à cette ressource.
+
+Cette règle est la stricte continuation du principe qui préside à l'ensemble de la chaîne à quatre couches : la déclaration portée par la source fait foi, et le compilateur la projette sans la contredire. Elle s'applique au bloc `fhir:` comme au reste. Lorsqu'un objet porte un bloc `fhir:` décrivant ses contraintes de cardinalité, de typage, de liaison terminologique et de découpage en tranches d'identifiants, ce bloc s'applique à la ressource qu'il déclare comme base et devient le différentiel du profil produit. Le profil du patient est ainsi dérivé du bloc `fhir:` de DO-01 : sa base est le profil US Core Patient, et ses tranches d'identifiants distinguent l'identifiant national du patient de l'identifiant provisoire de programme. Pour les objets qui ne portent pas de bloc, le différentiel produit se limite à l'élément racine de la ressource, sans inventer de contrainte que le corpus ne déclare pas.
+
+### Une projection ne peut reposer que sur une ressource existante et mature en R4
+
+Le compilateur embarque le vocabulaire des cent quarante-neuf ressources du paquet FHIR R4, ainsi que le niveau de maturité FMM que HL7 publie pour chacune d'elles dans l'index des ressources R4. Une ressource déclarée doit exister dans ce paquet et porter un niveau de maturité d'au moins un. Le niveau zéro est refusé : il signifie que la ressource est publiée dans la version mais que le groupe de travail responsable ne la considère pas prête pour l'implémentation, ce qui la rend impropre à fonder une projection normative nationale. Les ressources normatives de l'index R4, qui ne portent pas de niveau numérique, sont admises : leur stabilité est plus forte que celle des ressources de niveau un.
+
+Cette règle est un contrôle de fond, non une préférence de rédaction. Une projection nationale doit pouvoir être soumise à un validateur R4 tiers, ce qui suppose que la ressource existe, et elle doit pouvoir être opposée dans la durée, ce qui suppose que la ressource ne soit pas encore susceptible d'évoluer de façon incompatible.
+
+### Le répertoire de sortie appartient au compilateur
+
+Le répertoire de sortie n'est plus un dépôt d'artefacts. À chaque compilation, le compilateur supprime les fichiers qu'il a produits et qui ne correspondent plus à une déclaration du corpus. Le répertoire contient donc, à tout instant, exactement la projection effective du corpus : ni plus, ni moins. Les neuf artefacts des objets retirés par fusion disparaissent, et la question de savoir si un artefact est encore valide ne se pose plus : s'il est présent, il l'est par construction.
+
+### La porte de conformité contrôle la déclaration et sa projection
+
+La compilation est assortie de deux contrôles, l'un sur la déclaration, l'autre sur sa traduction en artefacts. Le contrôle de la déclaration refuse un objet de données qui ne déclare aucune ressource, une ressource absente du paquet R4, une ressource de maturité FMM nulle, une ressource déclarée deux fois par le même objet, et un bloc `fhir:` dont la base ne figure pas parmi les ressources déclarées. Le contrôle des artefacts refuse une ressource déclarée sans artefact produit, un artefact dont le type ou l'identifiant ne correspond pas à la déclaration, et un artefact produit sans déclaration correspondante.
+
+Ces contrôles s'exécutent dans le pipeline d'intégration continue, au même titre que la validation du graphe de relations et la validation du graphe RDF. Ils transforment donc une règle de rédaction en condition de build : une déclaration non conforme ne peut pas être livrée, et un artefact divergent de son objet ne peut pas subsister.
+
+### Les quatre déclarations non conformes sont rectifiées
+
+Le tableau ci-dessous recense les quatre objets dont la projection n'était pas échangeable en R4, avec la correction retenue. Les deux corrections de fond portent sur des ressources qui n'existent pas en R4 et sur des ressources qui n'y sont pas mûres.
+
+| Objet | Déclaration avant | Déclaration retenue | Motif |
+|-------|--------------------|---------------------|-------|
+| DO-11, produit de santé | `MedicationKnowledge` | `Medication` | `MedicationKnowledge` est de maturité FMM nulle ; `Medication` porte le code DCI ou ATC et le statut réglementaire dans le modèle R4 |
+| DO-12, lot et stock | `InventoryItem` | `Medication`, `SupplyDelivery` | `InventoryItem` n'existe pas en R4 ; le lot est porté par `Medication.batch` et les mouvements de stock par `SupplyDelivery` |
+| DO-16, facturation et demande de remboursement | `Claim`, `Invoice` | `Claim`, `ClaimResponse` | `Invoice` est de maturité FMM nulle ; la réponse d'adjudication est portée par `ClaimResponse` |
+| DO-31, ancre de confiance | `Certificate`, `Endpoint` | `Endpoint`, `Provenance`, `Binary` | `Certificate` n'existe pas en R4 ; le point de service est porté par `Endpoint`, l'attestation signée par `Provenance` et la charge utile X.509 par `Binary` |
+
+Les trois documents qui encadraient ces usages sont rectifiés dans le même sens. La norme STD-0009 ne recommande plus que `Medication`, `SupplyDelivery` et `SupplyRequest`, et le profil PT-17 présente le catalogue produit sous `Medication` et les niveaux de stock comme le solde des mouvements `SupplyDelivery`. La transaction de remontée des niveaux de stock du profil PT-17 ne s'appuie plus sur une ressource inexistante mais sur une recherche du solde par établissement, ce qui a pour effet de faire disparaître du contrat d'interface une opération d'écriture qui n'avait pas de support dans la version visée.
+
+### La correction est un acte de conception, non un ajustement de vocabulaire
+
+Chacune des quatre corrections substitue à une ressource une autre ressource du même paquet, et cette substitution porte un sens. La lecture du lot et du stock, la lecture de la facturation et du remboursement, la lecture de l'ancre de confiance et la lecture du produit de santé ne sont pas des détails de nommage : elles engagent la façon dont les institutions commenteront leurs émissions de terrain. Les quatre corrections sont donc consignées comme des décisions de projection, soumises à la relecture des directions métier concernées, et non comme des corrections techniques silencieuses.
+
+## Justification
+
+La démarche HEAL impose de travailler avec les catégories du terrain plutôt qu'avec une nomenclature fermée. La présente décision en est une application directe : le choix de la ressource de projection est une catégorie du terrain malgache, et la mesure du corpus a fait apparaître que la table interne de correspondance ne reflétait aucune réalité du terrain, mais une hypothèse de nommage. La corriger par la déclaration n'impose rien : elle restitue la voix des directions métier au moment où elle compte, celui de la désignation de la ressource d'échange.
+
+Le HEAF impose une décomposition par valeurs et par couches, et son exigence de modularité se lit ici dans le refus de conserver deux chemins de vérité. La tentation aurait été de conserver la table interne en l'alignant sur les déclarations, ou de la faire dériver dynamiquement du frontmatter tout en la conservant comme filet de sécurité. C'eût été une sur-conception : deux chemins de vérité produisent toujours deux états du corpus, et le second l'emporte sur le premier parce qu'il est plus ancien et plus commode à modifier. La décision installe une source unique et supprime le doublon.
+
+Le HEART impose la réutilisation d'artefacts et la génération de métadonnées depuis une source unique de vérité. Le compilateur FHIR est l'un de ces artefacts : il produit les profils d'implémentation que les équipes de terrain consomment. Les deux contrôles ajoutés sont, à ce titre, des artefacts de la décision : ils sont exécutés à chaque build, et leurs tests sont écrits de façon que chaque violation soit détectable sur une déclaration fautive et non seulement sur un corpus sain.
+
+## Conséquences
+
+### Positives
+
+- Le profil compilé et la déclaration de l'objet disent la même chose : sur les vingt-trois objets de données et les trente-six ressources déclarées, le build échoue si ce n'est pas le cas.
+- Le répertoire de sortie ne contient plus que la projection du corpus : les neuf artefacts périmés des objets retirés par fusion ne peuvent plus réapparaître.
+- La compatibilité R4 devient vérifiable : le compilateur refuse une ressource absente du paquet R4 ou de maturité FMM nulle, ce qui protège l'interopérabilité nationale contre des choix de projection arrêtés en dehors de la version visée.
+- Les corrections des quatre objets et des trois documents ont un effet en cascade sur les artefacts publiés : les schémas de charge utile et les spécifications d'interface sont régénérés, ce qui aligne l'ensemble de la chaîne d'interopérabilité sur la même version.
+
+### Négatives
+
+- La charge de maintenance du corpus augmente : toute évolution d'un objet de données impose de vérifier que ses ressources déclarées existent en R4 et y sont matures, et toute évolution d'une ressource R4 elle-même impose de suivre le niveau de maturité que HL7 publie.
+- Le compilateur embarque un vocabulaire figé de cent quarante-neuf ressources et leurs niveaux de maturité. Ce vocabulaire doit être mis à jour à chaque révision du paquet R4, et il devient une donnée à maintenir au même titre que les schémas eux-mêmes.
+- La correction de DO-12 modifie la lecture du stock : le niveau de stock n'est plus une ressource échangée mais un solde dérivé des mouvements. Les implémentations qui tablaient sur une remontée périodique de niveaux devront produire cette lecture, ce qui suppose un travail d'adaptation côté systèmes d'information.
+- Le validateur refuse désormais des graphes qui étaient acceptés jusqu'ici. C'est la contrepartie assumée d'une règle d'intégrité : elle produit des échecs de build sur des corpus legacy, ce qui suppose de traiter ces échecs comme des défauts et non comme des faux positifs.
+
+## Alternatives considérées
+
+| Alternative | Raison du refus |
+|-------------|-----------------|
+| Aligner la table interne sur les déclarations sans la supprimer | Deux chemins de vérité produisent deux états du corpus. La table resterait le chemin le plus facile à modifier et finirait par contredire les déclarations sans que la contradiction soit visible. |
+| Conserver la dérivation depuis le corps du document | Le corps est un texte destiné au lecteur ; le type d'échange y est exprimé en langue métier, non en nom de ressource. En faire la source revient à demander au reader d'écrire du code. |
+| Refuser toute ressource de maturité FMM nulle sans corriger le corpus | Le contrôle aurait produit un build rouge sans que le référentiel gagne quoi que ce soit. La règle d'intégrité se double d'une décision de projection, et la décision relève de l'architecte. |
+| Admettre les ressources de maturité FMM nulle et les signaler | Un signal qui n'interrompt pas le build finit par être ignoré. La conformité d'une projection d'échange ne peut pas reposer sur une ressource que le groupe de travail responsable ne juge pas prête. |
+| Reporter la correction de DO-12 et maintenir `InventoryItem` par correspondance | `InventoryItem` n'existe pas en R4. La correspondance ne produirait qu'un artefact que le validateur de la version visée refuse, donc aucun échange possible. |
+| Conserver le profil de stock comme une ressource d'écriture sur `SupplyDelivery` | La remontée des niveaux est une lecture du solde des mouvements, non une soumission. La confondre avec une écriture ferait du niveau de stock une donnée saisie, ce qui contredit la règle de réconciliation à somme nulle posée par STD-0009. |
+
+## Annexe : contrôles ajoutés au compilateur
+
+| Contrôle | Portée | Effet en cas de violation |
+|---------|--------|---------------------------|
+| Tout objet de données déclare au moins une ressource FHIR | Objets de données | Le compilateur échoue |
+| Toute ressource déclarée existe dans le paquet FHIR R4 | Objets de données | Le compilateur échoue |
+| Toute ressource déclarée porte un niveau de maturité FMM d'au moins un | Objets de données | Le compilateur échoue |
+| Une même ressource n'est pas déclarée deux fois par un objet | Objets de données | Le compilateur échoue |
+| Le bloc `fhir:` déclare une base qui figure parmi les ressources déclarées | Objets de données | Le compilateur échoue |
+| Chaque ressource déclarée produit exactement une StructureDefinition, de type et d'identifiant conformes | Objets de données et artefacts | Le compilateur échoue |
+| Aucun artefact produit ne subsiste sans déclaration correspondante | Artefacts | Le compilateur échoue |
+
+## Références
+
+- Chaîne à quatre couches et règles d'intégrité
+- [ADR-0014 : Rationalisation du catalogue des objets de données](/cnisn/decisions/adr-0014-rationalisation-catalogue-donnees)
+- [ADR-0015 : Deux emplois de l'accès aux données](/cnisn/decisions/adr-0015-semantique-acces-donnees)
+- DO-01 : Patient
+- DO-12 : Lot et stock
+- DO-31 : Ancre de confiance
+- [PT-17 : Logistique et chaîne d'approvisionnement (LMIS)](/ptisn/profils/pt-17-logistique-lmis)
+- [STD-0009 : Échange de données logistiques (LMIS)](/cnisn/standards/std-0009-echange-donnees-logistiques-lmis)
+- [Paquet FHIR R4 (hl7.fhir.r4.core, 4.0.1)](https://hl7.org/fhir/R4/)

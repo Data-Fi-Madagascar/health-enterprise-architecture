@@ -15,15 +15,25 @@
     }
   ],
   "paths": {
-    "/InventoryReport": {
-      "post": {
-        "operationId": "pt17inventoryreport_create",
+    "/SupplyDelivery": {
+      "get": {
+        "operationId": "pt17supplydelivery_search",
         "summary": "T1 — Remontée de niveaux de stock",
-        "description": "T1 — Remontée de niveaux de stock — LMIS → Référentiel (R/O : R). Standard : FHIR `InventoryReport` (R4)",
+        "description": "T1 — Remontée de niveaux de stock — LMIS → Référentiel (R/O : R). Standard : FHIR `SupplyDelivery` (R4), recherche du solde par établissement",
         "tags": [
-          "InventoryReport"
+          "SupplyDelivery"
         ],
         "responses": {
+          "200": {
+            "description": "Succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Bundle"
+                }
+              }
+            }
+          },
           "400": {
             "description": "Requête invalide"
           },
@@ -32,40 +42,27 @@
           },
           "500": {
             "description": "Erreur serveur"
-          },
-          "201": {
-            "description": "Ressource créée (représentation selon Prefer)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/InventoryReport"
-                }
-              }
-            },
-            "headers": {
-              "Location": {
-                "required": true,
-                "description": "Référence de la ressource créée : [base]/InventoryReport/[id]/_history/[vid] (ou [base]/InventoryReport/[id] sans versionnement)",
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
           }
         },
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/InventoryReport"
-              }
-            }
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Identifiant"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Nom / libellé"
           }
-        }
-      }
-    },
-    "/SupplyDelivery": {
+        ]
+      },
       "post": {
         "operationId": "pt17supplydelivery_create",
         "summary": "T2 — Mouvement de stock",
@@ -199,39 +196,6 @@
   },
   "components": {
     "schemas": {
-      "InventoryReport": {
-        "type": "object",
-        "properties": {
-          "resourceType": {
-            "type": "string",
-            "enum": [
-              "InventoryReport"
-            ]
-          },
-          "id": {
-            "type": "string",
-            "description": "Identifiant logique de la ressource"
-          },
-          "meta": {
-            "type": "object",
-            "properties": {
-              "versionId": {
-                "type": "string"
-              },
-              "lastUpdated": {
-                "type": "string",
-                "format": "date-time"
-              },
-              "profile": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        }
-      },
       "SupplyDelivery": {
         "type": "object",
         "properties": {
@@ -363,6 +327,9 @@
             }
           }
         }
+      },
+      "DO12": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-12.json"
       }
     }
   },
@@ -390,11 +357,12 @@
   ],
   "x-hea-source": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-17.md",
   "x-hea-fhir-resources": [
-    "InventoryReport",
     "SupplyDelivery",
     "SupplyRequest",
     "XRoadResponse"
   ],
-  "x-hea-data-objects": [],
+  "x-hea-data-objects": [
+    "DO-12"
+  ],
   "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-17.md"
 }

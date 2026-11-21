@@ -53,6 +53,7 @@ Chaque ADR suit le modèle type, avec un statut parmi `proposé`, `accepté`, `a
 | adr-0013 | "ADR-0013 : Taxonomie des fonctions de domaine comme référence de couverture et réconciliation de la chaîne vers les données" | candidate | 2026-11-21 |
 | adr-0014 | "ADR-0014 : Rationalisation du catalogue des objets de données par fusion, gouvernance de la valeur d'usage et traçabilité des retraits" | candidate | 2026-11-21 |
 | adr-0015 | "ADR-0015 : Deux emplois de l'accès aux données, adossement des arêtes de processus et autorité du système de référence" | candidate | 2026-11-21 |
+| adr-0016 | "ADR-0016 : La déclaration `fhir_resources` fait foi sur la projection FHIR des objets de données" | candidate | 2026-11-21 |
 
 
 ## Outils de gestion des décisions
@@ -88,6 +89,7 @@ Chaque ADR suit le modèle type, avec un statut parmi `proposé`, `accepté`, `a
 - **ADR-0013 : Cadrage des fonctions de domaine** : Taxonomie des fonctions de domaine comme référence de couverture et réconciliation de la chaîne vers les données (`01_cnisn/06_decisions/adr-0013-cadrage-fonctions-domaine.md`)
 - **ADR-0014 : Rationalisation du catalogue des objets de données** : Rationalisation du catalogue des objets de données par fusion, gouvernance de la valeur d'usage et traçabilité des retraits (`01_cnisn/06_decisions/adr-0014-rationalisation-catalogue-donnees.md`)
 - **ADR-0015 : Sémantique de l'accès aux données** : Deux emplois de l'accès aux données, adossement des arêtes de processus et autorité du système de référence (`01_cnisn/06_decisions/adr-0015-semantique-acces-donnees.md`)
+- **ADR-0016 : Projection FHIR comme source de vérité** : La déclaration `fhir_resources` fait foi sur la projection FHIR des objets de données (`01_cnisn/06_decisions/adr-0016-projection-fhir-source-de-verite.md`)
 - **Registre des décisions** : Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
 - **Template de modification** : Template : Demande de modification architecturale (`01_cnisn/06_decisions/template-modification.md`)
 - **Introduction du CNISN** : Préambule du CNISN (`01_cnisn/00_introduction/index.md`)
@@ -115,5 +117,6 @@ Chaque ADR suit le modèle type, avec un statut parmi `proposé`, `accepté`, `a
 - [adr-0013: ADR-0013 : Taxonomie des fonctions de domaine comme référence de couverture et réconciliation de la chaîne vers les données](adr-0013-cadrage-fonctions-domaine.md)
 - [adr-0014: ADR-0014 : Rationalisation du catalogue des objets de données par fusion, gouvernance de la valeur d'usage et traçabilité des retraits](adr-0014-rationalisation-catalogue-donnees.md)
 - [adr-0015: ADR-0015 : Deux emplois de l'accès aux données, adossement des arêtes de processus et autorité du système de référence](adr-0015-semantique-acces-donnees.md)
+- [adr-0016: ADR-0016 : La déclaration `fhir_resources` fait foi sur la projection FHIR des objets de données](adr-0016-projection-fhir-source-de-verite.md)
 
 <!-- liens-section-auto -->
