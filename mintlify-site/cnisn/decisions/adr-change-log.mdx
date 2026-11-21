@@ -41,6 +41,14 @@ Chaque entree suit le format :
 
 ## Historique des modifications
 
+### [2026-11-21] - Creation - ADR-0015
+- **Auteur** : Equipes DEPSI
+- **Description** : Creation de la decision qui distingue les deux emplois de la relation `accesses` : le processus qui manipule la donnee et le composant qui la detient. Les cinq aretes de processus qui n'etaient adossees a aucun composant mobilise sont completees par la chaine `PRC` vers `CMP` vers `DO`, et les quatre declarations de `system_of_record` dont le systeme vise ne declarait aucun acces le sont devenues : le bloc ABB-REFERENTIEL-STRUCTURES-SERVICES pour DO-23 et DO-26, les autorites CMP-35 et CMP-36 pour DO-31. La decision ajoute trois controles au validateur : adossement d'une arete `PRC` vers `DO` a un composant mobilise qui porte l'objet, declaration d'acces du systeme de reference, symetrie de `uses` et `applies_to` pour le couple PRC/CMP.
+- **Statut initial** : `candidate`
+- **Justification** : La mesure avant correction relevait cinq aretes de processus sans support et quatre attributions de version faisant foi sans fondement dans le graphe. Le metamodele affirmait un acces unique et ne retenait pas l'enonce processus, ce que le corpus contredisait.
+- **Liens** : [ADR-0015](/cnisn/decisions/adr-0015-semantique-acces-donnees), CMP-13, CMP-35, DO-31, Chaine a quatre couches
+- **Impact** : Le validateur refuse desormais une manipulation de donnee par un processus sans composant porteur, un systeme de reference qui n'accede pas a l'objet dont il detient la version faisant foi, et une asymetrie entre `uses` et `applies_to`. Le metamodele nomme les deux emplois de l'acces aux donnees et expose l'etat mesure du corpus.
+
 ### [2026-11-21] - Creation - ADR-0014
 - **Auteur** : Equipes DEPSI
 - **Description** : Creation de la decision qui rationnalise le catalogue des objets de donnees. Le catalogue passe de trente et un a vingt-trois entrees : huit fusions, un retrait avec hebergement par CMP-01 pour le tableau de bord, et la creation de DO-32 pour l'examen et son resultat de laboratoire. La decision ajoute les proprietes `tier` et `system_of_record` a chaque objet de donnees, la propriete `absorbs` pour tracer les fusions, et le fichier `04_architecture-repository/00_metamodel/do-migration.yaml` comme source unique de la trace. La renumerotation proposee par le catalogue recu et quatre fusions supplementaires sont refusees.

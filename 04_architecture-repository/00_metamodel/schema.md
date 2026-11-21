@@ -118,8 +118,8 @@ tags: ["cnisn", "autorite", "donnees-de-reference"]
 | `performed_by` | non | Inverse de `performs` (coté processus) |
 | `located_at` | non | Acteur / composant / service / capacité localisé géographiquement (Location) — ArchiMate Association |
 | `serves` | non | Service rendu à une partie prenante / un acteur — ArchiMate Serving |
-| `accesses` | non | Service / composant / processus accède à un objet métier / donnée — ArchiMate Access |
-| `accessed_by` | non | Inverse de `accesses` (coté objet métier / donnée) |
+| `accesses` | non | Accès à un objet métier / donnée, dans ses deux emplois : le processus qui manipule la donnée et le composant, le service ou le bloc qui la détient. ArchiMate Access |
+| `accessed_by` | non | Inverse de `accesses` (coté objet métier / donnée). Sur un objet de données, la liste mêle les deux emplois : le processus y figure pour la manipulation, le composant pour la détention |
 | `constrained_by` | non | Objet de données dont les valeurs sont codées par une terminologie : Association sémantique (extension HEA) |
 | `constrains` | non | Inverse de `constrained_by` (coté terminologie) |
 | `realizes` | non | Service / paquet de travail / plateau réalise une capacité, composant ou service — ArchiMate Realization |
@@ -214,9 +214,9 @@ Le référentiel suit le modèle de relations d'ArchiMate : la **capacité** est
 | Processus (PRC) | `performed_by` | Rôle / Acteur (ROL/ACT) | inverse de `performs` | navigabilité (coté processus) |
 | Acteur / Composant / Service / Capacité | `located_at` | Lieu (LOC) | Association géographique | la ressource est localisée sur le territoire |
 | Service (SRV) | `serves` | Partie prenante / Acteur | Service *serving* Stakeholder | le service crée de la valeur pour le bénéficiaire |
-| Service / Composant / Processus | `accesses` | Objet métier / Objet de données | Application/Component *access* Data Object | le service consomme / produit l'objet |
-| Objet métier / Objet de données | `accessed_by` | Service / Composant / Processus | inverse de `accesses` | navigabilité (coté objet) |
-| Composant (CMP) | `accesses` | Objet de données (DO) | Application Component *access* Data Object | le composant produit, expose ou met à jour l'objet de données |
+| Processus métier (PRC) | `accesses` | Objet de données (DO) | Business Process *access* Data Object | le processus manipule la donnée : il la produit, la met à jour ou la consomme |
+| Composant / Service / Bloc (CMP, SRV, ABB) | `accesses` | Objet métier / Objet de données | Application Component *access* Data Object | le composant détient la donnée, la produit, l'expose ou la met à jour |
+| Objet métier / Objet de données | `accessed_by` | Processus / Composant / Service | inverse de `accesses` | navigabilité (coté objet) |
 | Objet de données (DO) | `maps_to` | Capacité CAESN (CAP) | Association (extension HEA) | l'objet de données est au service de la capacité déclarée |
 | Objet de données (DO) | `constrained_by` | Terminologie (TERM) | Association sémantique (extension HEA) | les valeurs portées par l'objet sont codées par la terminologie |
 | Terminologie (TERM) | `constrains` | Objet de données (DO) | inverse de `constrained_by` | navigabilité (coté terminologie) |
@@ -246,7 +246,7 @@ evidenced_by: [EVID-GAP-01-QUALIFICATION-OFFLINE]
 closure_criteria: ["Qualification terrain acceptée", "Synchronisation sans perte démontrée"]
 ```
 
-Règle d'intégrité : un flux de valeur ne doit laisser aucune capacité orpheline ; chaque processus liste ses capacités réalisées de façon **granulaire** (pas par copie du flux parent) ; `uses` (PRC -> CMP applicatif) et `applies_to` (CMP applicatif -> PRC) sont les deux sens d'une même relation *service* et doivent rester cohérents. De la même manière, `accesses` (composant ou service -> objet de données) et `accessed_by` (objet de données -> composant ou service) décrivent un seul et même accès, et `constrained_by` (objet de données -> terminologie) et `constrains` (terminologie -> objet de données) une seule et même contrainte de codage. Le socle transverse (infrastructure CMP-26..31, securite CMP-32..38) n'est **pas** lié directement aux processus : il est atteint via `uses` depuis les composants applicatifs. La gouvernance (CMP-39..46) n'utilise pas `uses` ; elle encadre les composants via `governs`.
+Règle d'intégrité : un flux de valeur ne doit laisser aucune capacité orpheline ; chaque processus liste ses capacités réalisées de façon **granulaire** (pas par copie du flux parent) ; `uses` (PRC -> CMP applicatif) et `applies_to` (CMP applicatif -> PRC) sont les deux sens d'une même relation *service* et doivent rester cohérents. De même, `accesses` et `accessed_by` décrivent un seul et même accès, mais cet accès porte deux énoncés distincts : le processus qui manipule la donnée et le composant qui la détient. Ces deux énoncés ne se déduisent pas l'un de l'autre et ne se substituent pas l'un à l'autre. De la même manière, `constrained_by` (objet de données -> terminologie) et `constrains` (terminologie -> objet de données) une seule et même contrainte de codage. Le socle transverse (infrastructure CMP-26..31, securite CMP-32..38) n'est **pas** lié directement aux processus : il est atteint via `uses` depuis les composants applicatifs. La gouvernance (CMP-39..46) n'utilise pas `uses` ; elle encadre les composants via `governs`.
 
 ## Chaîne à quatre couches
 
@@ -256,8 +256,16 @@ Le référentiel n'est pas une collection d'objets juxtaposés : il articule qua
 |---------|-------------------------------|--------------|----------------------|-------------------|
 | 1. Business | Que le système de santé doit-il garantir au citoyen ? | `capabilite` | CAP-01 à CAP-18 | `applies_to` porté par le processus (PRC vers CAP) |
 | 2. Application | Par quel moyen numérique la capacité est-elle tenue ? | `composant-applicatif` | CMP-01 à CMP-25 | `uses` porté par le processus (PRC vers CMP), `applies_to` porté par le composant (CMP vers PRC) |
-| 3. Données | Sur quelles données la capacité opère-t-elle ? | `objet-de-donnees` | 23 objets canoniques (plage DO-01 à DO-32, neuf identifiants retirés par fusion) | `accesses` porté par le composant (CMP vers DO), `accessed_by` porté par l'objet (DO vers CMP), `maps_to` porté par l'objet (DO vers CAP) |
+| 3. Données | Sur quelles données la capacité opère-t-elle ? | `objet-de-donnees` | 23 objets canoniques (plage DO-01 à DO-32, neuf identifiants retirés par fusion) | `accesses` porté par le composant (CMP vers DO) et par le processus (PRC vers DO), `accessed_by` porté par l'objet (DO vers PRC et CMP), `maps_to` porté par l'objet (DO vers CAP) |
 | 4. Sémantique | Selon quel référentiel de codes les données sont-elles interprétées ? | `terminology` | TERM-CODIFICATION-COMMUNE et les six terminologies de codes publics (TERM-SNOMED-CT, TERM-RXNORM, TERM-ATC, TERM-DCI, TERM-CIM-11, TERM-LOINC) | `constrained_by` porté par l'objet (DO vers TERM), `constrains` porté par la terminologie (TERM vers DO) |
+
+### Les deux emplois de l'accès aux données
+
+La relation `accesses` relie un acteur à un objet de données, mais elle porte deux énoncés de nature différente. Le premier est déclaratif : le processus métier qui manipule la donnée, c'est-à-dire celle qu'il produit, met à jour ou consomme. Le second est technique : le composant, le service ou le bloc d'architecture qui détient la donnée, la produit, l'expose ou la met à jour. Le premier répond à la question « à quelle activité la donnée est-elle adossée », le second à la question « où la donnée est-elle logée et qui la tient ».
+
+Les deux énoncés sont nécessaires et aucun ne se déduit de l'autre. L'état mesuré du corpus le montre. Sur les vingt-trois objets de données, quarante-neuf arêtes relient un processus à un objet et soixante-quinze relient un composant, un service ou un bloc. Les quarante-neuf arêtes de processus se déduisent désormais de la chaîne `PRC` vers `CMP` vers `DO` : chaque processus qui manipule une donnée mobilise au moins un composant qui la porte. À l'inverse, vingt des soixante-quinze arêtes de la couche technique ne sont pas restituables par la chaîne. Leurs dix porteurs sont le composant applicatif de référentiel CMP-05, cinq services d'interface (SRV-02 à SRV-06), les deux blocs d'architecture ABB-ELIGIBILITE-COUVERTURE et ABB-REFERENTIEL-STRUCTURES-SERVICES, et les deux autorités de certification CMP-35 et CMP-36 : aucun processus déclaré ne les mobilise. Aucun objet de données ne peut donc être ramené à l'une de ses deux extrémités, et les deux familles d'acteurs ne sont pas interchangeables.
+
+Cette distinction explique la forme du champ `accessed_by` porté par un objet de données, qui mêle les deux familles d'acteurs et que le lecteur doit savoir lire en deux temps. Elle n'autorise pas pour autant à les confondre. Le validateur refuse un processus qui manipule un objet sans mobiliser de composant qui le porte, et il refuse un système de référence qui n'accède pas à l'objet dont il est censé détenir la version faisant foi.
 
 ### Les deux ponts et leur portée réelle
 
@@ -292,6 +300,8 @@ Cette projection illustre la fonction de chaque pont. Le pont applicatif relie l
 | Règle | Portée | Contrôle |
 |-------|--------|----------|
 | Toute relation `accesses` (X vers Y) dispose de son inverse `accessed_by` (Y vers X) | Objets de données et objets métier | `scripts/validate_ref.py` |
+| Toute arête `PRC` vers `DO` est adossée à un composant que le processus mobilise : ce composant déclare `accesses` vers l'objet | Objets de données et processus métiers | `scripts/validate_ref.py` |
+| Tout `system_of_record` d'un objet de données déclare lui-même l'accès à cet objet (`accesses`), et figure parmi ses accesseurs | Objets de données | `scripts/validate_ref.py` |
 | Toute relation `constrained_by` (DO vers TERM) dispose de son inverse `constrains` (TERM vers DO) | Objets de données et terminologies | `scripts/validate_ref.py` |
 | `accesses` ne cible qu'un objet métier, un objet de données ou une terminologie | Composants, services, processus | `scripts/validate_ref.py` |
 | `constrained_by` ne cible qu'une terminologie | Objets de données | `scripts/validate_ref.py` |
@@ -305,9 +315,11 @@ Cette projection illustre la fonction de chaque pont. Le pont applicatif relie l
 | Tout identifiant listé dans `absorbs` est un objet de données retiré, et sa fusion est déclarée dans `00_metamodel/do-migration.yaml` | Objets de données | `scripts/validate_ref.py` |
 | Aucun identifiant retiré par fusion ne subsiste comme objet actif ni comme cible de relation | Objets de données | `scripts/validate_ref.py` |
 
-Ces règles sont strictes : le référentiel doit pouvoir être relu par un tiers sans reconstruire les relations à la main. L'état mesuré du corpus après correction est le suivant : sur les trente-huit composants, vingt déclarent des objets de données portés, les treize processus déclarent tous leurs données, les vingt-trois objets de données sont tous holders et tous utilisés, et les sept terminologies sont toutes portées par un composant. Les vingt-trois objets de données déclarent en outre, via `maps_to`, les capacités CAESN qu'ils servent, et chacune de ces capacités est réalisée par au moins un processus qui manipule l'objet. L'attribution de portée n'est donc plus une mention portée à côté de la chaîne : elle en est le maillon, et le validateur refuse toute capacité déclarée dont aucun processus ne porterait la réalisation.
+Ces règles sont strictes : le référentiel doit pouvoir être relu par un tiers sans reconstruire les relations à la main. L'état mesuré du corpus après correction est le suivant : sur les trente-huit composants, vingt-deux déclarent des objets de données portés, dont vingt composants applicatifs et les deux autorités de confiance CMP-35 et CMP-36 ; les treize processus déclarent tous leurs données ; les vingt-trois objets de données sont tous détenus et tous utilisés ; les sept terminologies sont toutes portées par un composant. Les vingt-trois objets de données déclarent en outre, via `maps_to`, les capacités CAESN qu'ils servent, et chacune de ces capacités est réalisée par au moins un processus qui manipule l'objet. L'attribution de portée n'est donc plus une mention portée à côté de la chaîne : elle en est le maillon, et le validateur refuse toute capacité déclarée dont aucun processus ne porterait la réalisation. Les quarante-neuf arêtes qui relient un processus à un objet de données sont toutes adossées à un composant que le processus mobilise, et chaque système de référence déclare lui-même l'accès à l'objet dont il détient la version faisant foi.
 
 Une exception assumée existe pour les cinq composants de la couche de médiation (orchestrateur de parcours CMP-07, passerelle d'API CMP-15, registre de schémas CMP-16, courtier de messages CMP-17, compensateur de flux CMP-18) : ils transportent des objets de données sans être leur propriétaire, et ne déclarent donc pas d'`accesses` propre. Leur rattachement aux données est porté par les composants qui leur confient les flux. Le composant d'intégration CMP-06, qui assume la médiation de bout en bout, déclare en revanche les objets qu'il porte. Le socle transverse (infrastructure CMP-26 à CMP-31, sécurité CMP-32 à CMP-38) reste hors de la chaîne applicative par construction : il est atteint par `uses` depuis les composants qui l'exploitent et ne porte pas de données métier en propre.
+
+Une seconde exception, nommée et strictement limitée, porte sur l'ancre de confiance DO-31. La PKI nationale CMP-35 et la passerelle de confiance mondiale CMP-36 en sont les autorités émettrices : ils émettent, publient et vérifient les certificats dont l'objet est fait. Ils déclarent donc l'accès à cet objet, contrairement au reste du socle de sécurité. Cette exception ne s'étend à aucune donnée métier et ne préfigure pas un rattachement général du socle transverse aux objets de données.
 
 ## Registre des objets
 

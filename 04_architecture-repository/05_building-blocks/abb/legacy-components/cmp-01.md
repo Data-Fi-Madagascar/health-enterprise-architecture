@@ -11,7 +11,7 @@ version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
 maps_to: ["ABB-EXPOSITION-DONNEES-ANALYTIQUES", "ABB-RECONCILIATION-DONNEES"]
 implements: ["ART-6"]
-applies_to: ["PRC-10", "PRC-11", "PRC-12"]
+applies_to: ["PRC-04", "PRC-10", "PRC-11", "PRC-12"]
 accesses: ["DO-25", "DO-26", "DO-27"]
 related: ["ENF-5", "CAP-13", "CAP-16", "VS-04"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-01", "couche-6"]

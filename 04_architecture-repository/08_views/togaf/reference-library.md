@@ -30,7 +30,7 @@ Cette vue regroupe les patrons, fondations et blocs d'architecture réutilisable
 | ABB-GESTION-CONSENTEMENT | Gestion des consentements et bases d'autorisation | CAP-15, CAP-17, ART-0, ART-4B, ART-7, ART-11, PART-TRANSVERSE-SECURITE-CONFIANCE, P-INT-14, P-INT-15, P-INT-16, P-INT-17 | candidate | ABB-GESTION-CONSENTEMENT |
 | ABB-IDENTITE-BENEFICIAIRE | Résolution d'identité du bénéficiaire | CAP-01, CAP-02, CAP-04, CAP-07, CAP-14, CAP-17, ART-4, ART-4A, ART-7, PART-TRANSVERSE-IDENTITE, P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-14, P-INT-15, P-INT-16, P-INT-17, P-INT-18 | candidate | ABB-IDENTITE-BENEFICIAIRE |
 | ABB-RECONCILIATION-DONNEES | Qualité et réconciliation des données | CAP-13, CAP-14, ART-4, ART-5, ART-6, PAT-QUALITE-RECONCILIATION, PART-TRANSVERSE-INTEROPERABILITE, P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-05, P-INT-06, P-INT-07, P-INT-08, P-INT-09, P-INT-23, P-INT-24, P-INT-25 | candidate | ABB-RECONCILIATION-DONNEES |
-| ABB-REFERENTIEL-STRUCTURES-SERVICES | Référentiel des structures et services de santé | CAP-11, CAP-13, CAP-14, ART-4, ART-5, ART-6, RD-STRUCTURES-SERVICES, PART-TRANSVERSE-DONNEES-REFERENTIELLES, DO-23, P-INT-01, P-INT-02, P-INT-03, P-INT-04 | candidate | ABB-REFERENTIEL-STRUCTURES-SERVICES |
+| ABB-REFERENTIEL-STRUCTURES-SERVICES | Référentiel des structures et services de santé | CAP-11, CAP-13, CAP-14, ART-4, ART-5, ART-6, RD-STRUCTURES-SERVICES, PART-TRANSVERSE-DONNEES-REFERENTIELLES, DO-23, DO-26, P-INT-01, P-INT-02, P-INT-03, P-INT-04 | candidate | ABB-REFERENTIEL-STRUCTURES-SERVICES |
 | ABB-REGISTRE-PROFESSIONNELS | Registre et résolution des professionnels de santé | CAP-09, CAP-14, ART-4, ART-4A, ART-7, PART-TRANSVERSE-IDENTITE, P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-14, P-INT-15 | candidate | ABB-REGISTRE-PROFESSIONNELS |
 | ABB-SERVICE-TERMINOLOGIE | Service de terminologie et codification communes | CAP-13, CAP-14, ART-2, ART-4, ART-5, TERM-CODIFICATION-COMMUNE, PART-TRANSVERSE-DONNEES-REFERENTIELLES, STD-0007, P-INT-01, P-INT-02, P-INT-03, P-INT-04, P-INT-05, P-INT-06 | candidate | ABB-SERVICE-TERMINOLOGIE |
 | ART-0 | Accords de partage inter-institutionnels | ENF-4 | candidate | ART-0 |
@@ -54,7 +54,7 @@ Cette vue regroupe les patrons, fondations et blocs d'architecture réutilisable
 | ART-10 | Logistique | ENF-2, CAP-10, CAP-11 | candidate | ART-10 |
 | ART-11 | Coordination intersectorielle | ENF-4, CAP-08, CAP-18, PART-ONE-HEALTH, ART-0, ART-4D, ART-8B, ART-8D | stable | ART-11 |
 | ART-12 | Aide à la décision clinique | ART-6, CAP-13, CMP-08, ABB-SERVICE-TERMINOLOGIE, F-2 | draft | ART-12 |
-| CMP-01 | Tableaux de bord & Portails nationaux (performance, CSU, ressources, veille) | PRC-10, PRC-11, PRC-12, ABB-EXPOSITION-DONNEES-ANALYTIQUES, ABB-RECONCILIATION-DONNEES, ART-6, ENF-5, CAP-13, CAP-16, VS-04, DO-25, DO-26, DO-27 | active | CMP-01 |
+| CMP-01 | Tableaux de bord & Portails nationaux (performance, CSU, ressources, veille) | PRC-04, PRC-10, PRC-11, PRC-12, ABB-EXPOSITION-DONNEES-ANALYTIQUES, ABB-RECONCILIATION-DONNEES, ART-6, ENF-5, CAP-13, CAP-16, VS-04, DO-25, DO-26, DO-27 | active | CMP-01 |
 | CMP-02 | Centre de commande & Crises intersectorielles (alertes, crises, veille) | PRC-05, PRC-11, PRC-13, ABB-EXPOSITION-DONNEES-ANALYTIQUES, ART-5, ART-0, ENF-2, CAP-05, CAP-06, VS-02, VS-04, DO-18, DO-19, DO-20, DO-25 | active | CMP-02 |
 | CMP-03 | Entrepôt Lakehouse & Projections analytiques (pipeline ETL, Lakehouse, projections) | PRC-09, PRC-11, ABB-EXPOSITION-DONNEES-ANALYTIQUES, ABB-RECONCILIATION-DONNEES, ART-6, ART-9, ENF-5, CAP-13, CAP-16, VS-04, DO-16, DO-17, DO-25 | active | CMP-03 |
 | CMP-04 | Moteur analytique & IA (IA prédictive, routeur alertes, Grand Livre) | PRC-05, PRC-09, ABB-EXPOSITION-DONNEES-ANALYTIQUES, ABB-AUDIT-PROVENANCE, ART-5, ART-9, ENF-2, ENF-5, CAP-13, CAP-15, VS-02, VS-04, DO-16, DO-17, DO-18, DO-19, DO-20 | active | CMP-04 |
@@ -65,8 +65,8 @@ Cette vue regroupe les patrons, fondations et blocs d'architecture réutilisable
 | CMP-09 | Référentiel des métadonnées d'exploitation (ART-4) | PRC-07, PRC-08, ABB-GESTION-CONSENTEMENT, ART-4, ENF-4, CAP-09, VS-03, TERM-SNOMED-CT, TERM-RXNORM, TERM-ATC, TERM-DCI, TERM-CIM-11, TERM-LOINC, TERM-CODIFICATION-COMMUNE | active | CMP-09 |
 | CMP-10 | Registre des terminologies | PRC-07, PRC-08, ABB-SERVICE-TERMINOLOGIE, ART-4, ENF-4, CAP-09, VS-03, TERM-SNOMED-CT, TERM-RXNORM, TERM-ATC, TERM-DCI, TERM-CIM-11, TERM-LOINC, TERM-CODIFICATION-COMMUNE | active | CMP-10 |
 | CMP-11 | Registre des clients / Index National des Patients (INP — ART-4A) | PRC-04, PRC-05, PRC-06, ABB-IDENTITE-BENEFICIAIRE, ART-4A, ENF-3, CAP-09, VS-02, DO-01 | active | CMP-11 |
-| CMP-12 | Registre d'éligibilité et de couverture (CSU — ART-4C) | PRC-09, PRC-10, ABB-ELIGIBILITE-COUVERTURE, ART-4C, CAP-07, VS-03, DO-14, DO-16, DO-17 | active | CMP-12 |
-| CMP-13 | Registre des personnels | PRC-04, PRC-05, ABB-GESTION-CONSENTEMENT, ART-4, ENF-3, CAP-09, VS-02, DO-23, DO-24 | active | CMP-13 |
+| CMP-12 | Registre d'éligibilité et de couverture (CSU — ART-4C) | PRC-08, PRC-09, PRC-10, ABB-ELIGIBILITE-COUVERTURE, ART-4C, CAP-07, VS-03, DO-14, DO-16, DO-17 | active | CMP-12 |
+| CMP-13 | Registre des personnels | PRC-01, PRC-03, PRC-04, PRC-05, PRC-10, ABB-GESTION-CONSENTEMENT, ART-4, ENF-3, CAP-09, VS-02, DO-23, DO-24 | active | CMP-13 |
 | CMP-14 | Registre des produits, intrants et indicateurs | PRC-05, PRC-06, ABB-SERVICE-TERMINOLOGIE, ABB-ECHANGE-LOGISTIQUE-LMIS, ART-4, ENF-3, CAP-09, VS-02, DO-11, DO-25 | active | CMP-14 |
 | CMP-15 | API Gateway | PRC-04, PRC-05, PRC-06, PRC-13, ABB-AUDIT-PROVENANCE, ART-5, ENF-3, CAP-10, VS-02 | active | CMP-15 |
 | CMP-16 | Registre de schémas (F.3) | PRC-07, PRC-08, ABB-AUDIT-PROVENANCE, ART-5, ENF-4, CAP-10, VS-03 | active | CMP-16 |
@@ -88,8 +88,8 @@ Cette vue regroupe les patrons, fondations et blocs d'architecture réutilisable
 | CMP-32 | Gestion des identites | ART-7, VS-04, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31 | active | CMP-32 |
 | CMP-33 | Controle d'acces fin (RBAC/ABAC) | ART-7, VS-04, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31 | active | CMP-33 |
 | CMP-34 | Gestion des consentements | ART-7, VS-04, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31 | active | CMP-34 |
-| CMP-35 | Infrastructure de cles publiques (PKI) | ART-7, VS-04, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31 | active | CMP-35 |
-| CMP-36 | Passerelle de confiance mondiale OMS (GDHCN) | ART-7, VS-02, VS-04, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31 | active | CMP-36 |
+| CMP-35 | Infrastructure de cles publiques (PKI) | ART-7, VS-04, DO-31, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31 | active | CMP-35 |
+| CMP-36 | Passerelle de confiance mondiale OMS (GDHCN) | ART-7, VS-02, VS-04, DO-31, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31 | active | CMP-36 |
 | CMP-37 | Journal d'audit immuable | ART-7, VS-04, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31 | active | CMP-37 |
 | CMP-38 | Moteur de chiffrement | ART-7, VS-04, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31 | active | CMP-38 |
 | F-1 | Résilience face à la réalité géographique du pays | ENF-1, CAP-08 | stable | F-1 |

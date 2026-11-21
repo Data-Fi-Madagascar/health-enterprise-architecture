@@ -13,7 +13,7 @@ implements: []
 applies_to: ["CAP-01", "CAP-02", "CAP-04", "CAP-11", "CAP-13", "CAP-14", "CAP-15"]
 related: ["VS-01-01", "VS-01-02", "VS-01", "BO-01"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-01"]
-uses: ["CMP-19", "CMP-21", "CMP-22"]
+uses: ["CMP-13", "CMP-19", "CMP-21", "CMP-22"]
 performed_by: ["ROL-01", "ACT-01"]
 accesses: ["DO-01", "DO-03", "DO-05", "DO-07", "DO-09", "DO-23"]
 ---

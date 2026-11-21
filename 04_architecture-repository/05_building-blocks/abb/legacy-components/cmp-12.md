@@ -11,7 +11,7 @@ version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
 maps_to: ["ABB-ELIGIBILITE-COUVERTURE"]
 implements: ["ART-4C"]
-applies_to: ["PRC-09", "PRC-10"]
+applies_to: ["PRC-08", "PRC-09", "PRC-10"]
 accesses: ["DO-14", "DO-16", "DO-17"]
 related: ["CAP-07", "VS-03"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-12", "couche-4"]

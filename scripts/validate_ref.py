@@ -681,6 +681,109 @@ def check_data_object_governance(objects):
     return errors
 
 
+def check_process_data_access_backing(objects):
+    """Vérifie que l'accès d'un processus à un objet de données est adossé.
+
+    La relation `accesses` porte deux énoncés de nature différente : le
+    processus qui manipule la donnée et le composant qui la détient. Une
+    arête PRC vers DO doit donc être adossée à un composant que le processus
+    mobilise (`uses`) et qui déclare lui-même `accesses` vers l'objet.
+    Sans cet adossement, le processus manipule une donnée qu'aucun de ses
+    composants ne porte, et la chaîne à quatre couches est rompue à ce
+    maillon.
+    """
+    errors = []
+    for oid, obj in sorted(objects.items()):
+        if obj.get("type") != TYPE_OBJET_DONNEES:
+            continue
+        relations = obj.get("relations", {})
+        for prc_id in sorted(relations.get("accessed_by", set())):
+            prc = objects.get(prc_id)
+            if prc is None or prc.get("type") != "processus-metier":
+                continue
+            mobilised = prc.get("relations", {}).get("uses", set())
+            carriers = [
+                cmp_id for cmp_id in sorted(mobilised)
+                if oid in objects.get(cmp_id, {}).get("relations", {})
+                .get("accesses", set())
+            ]
+            if not carriers:
+                errors.append((
+                    obj["file"], oid, prc_id,
+                    "Accès du processus non adossé à un composant mobilisé "
+                    "qui porte l'objet de données",
+                ))
+    return errors
+
+
+def check_system_of_record_accessibility(objects):
+    """Vérifie que le système de référence accède bien à l'objet.
+
+    `system_of_record` désigne le système qui détient la version faisant
+    foi de la donnée. Un système qui n'accède pas à l'objet ne peut en
+    détenir la version faisant foi : la déclaration est alors une
+    attribution sans fondement dans le graphe. Le contrôle porte sur la
+    déclaration d'accès portée par le système lui-même, qui fait foi,
+    et non sur la liste inverse portée par l'objet.
+    """
+    errors = []
+    for oid, obj in sorted(objects.items()):
+        if obj.get("type") != TYPE_OBJET_DONNEES:
+            continue
+        relations = obj.get("relations", {})
+        for target_id in sorted(relations.get("system_of_record", set())):
+            target = objects.get(target_id)
+            if target is None:
+                errors.append((
+                    obj["file"], oid, target_id,
+                    "Le system_of_record ne désigne pas un élément du graphe",
+                ))
+                continue
+            if oid not in target.get("relations", {}).get("accesses", set()):
+                errors.append((
+                    obj["file"], oid, target_id,
+                    "Le system_of_record n'accède pas à l'objet de données",
+                ))
+    return errors
+
+
+def check_uses_applies_to_symmetry(objects):
+    """Vérifie la symétrie de `uses` et `applies_to` pour le couple PRC/CMP.
+
+    Un processus mobilise (`uses`) les composants qui le réalisent, et un
+    composant s'applique (`applies_to`) aux processus qu'il sert. Ce sont les
+    deux sens d'une même relation de service : ils doivent rester cohérents.
+    """
+    errors = []
+    for oid, obj in sorted(objects.items()):
+        if obj.get("type") != "processus-metier":
+            continue
+        for cmp_id in sorted(obj.get("relations", {}).get("uses", set())):
+            cmp = objects.get(cmp_id)
+            if cmp is None or cmp.get("type") not in TYPE_COMPOSANT_TYPES:
+                continue
+            if oid not in cmp.get("relations", {}).get("applies_to", set()):
+                errors.append((
+                    obj["file"], oid, cmp_id,
+                    "Le processus mobilise un composant qui ne s'applique pas "
+                    "à lui (uses et applies_to asymétriques)",
+                ))
+    for oid, obj in sorted(objects.items()):
+        if obj.get("type") not in TYPE_COMPOSANT_TYPES:
+            continue
+        for prc_id in sorted(obj.get("relations", {}).get("applies_to", set())):
+            prc = objects.get(prc_id)
+            if prc is None or prc.get("type") != "processus-metier":
+                continue
+            if oid not in prc.get("relations", {}).get("uses", set()):
+                errors.append((
+                    obj["file"], oid, prc_id,
+                    "Le composant s'applique à un processus qui ne le mobilise "
+                    "pas (applies_to et uses asymétriques)",
+                ))
+    return errors
+
+
 def load_do_migration(path=None):
     """Charge la trace machine-lisible des fusions du catalogue des DO.
 
@@ -1341,6 +1444,41 @@ def main():
     else:
         print("[OK] Les %d fusions du catalogue des objets de données sont tracées."
               % len(migration))
+
+    backing_errors = check_process_data_access_backing(objects)
+    if backing_errors:
+        ok = False
+        print("\n[ERREUR] Accès d'un processus non adossé à un composant "
+              "mobilisé : %d" % len(backing_errors))
+        for f, source_id, target_id, message in backing_errors[:50]:
+            print("  - %s (%s) [%s] : %s"
+                  % (os.path.relpath(f, REPO_ROOT), source_id, target_id, message))
+    else:
+        print("[OK] Tout accès d'un processus à un objet de données est adossé "
+              "à un composant mobilisé.")
+
+    sor_errors = check_system_of_record_accessibility(objects)
+    if sor_errors:
+        ok = False
+        print("\n[ERREUR] Système de référence sans accès à l'objet : %d"
+              % len(sor_errors))
+        for f, source_id, target_id, message in sor_errors[:50]:
+            print("  - %s (%s) [%s] : %s"
+                  % (os.path.relpath(f, REPO_ROOT), source_id, target_id, message))
+    else:
+        print("[OK] Tout system_of_record accède à l'objet dont il est le "
+              "système de référence.")
+
+    symmetry_errors = check_uses_applies_to_symmetry(objects)
+    if symmetry_errors:
+        ok = False
+        print("\n[ERREUR] Relations uses et applies_to asymétriques : %d"
+              % len(symmetry_errors))
+        for f, source_id, target_id, message in symmetry_errors[:50]:
+            print("  - %s (%s) [%s] : %s"
+                  % (os.path.relpath(f, REPO_ROOT), source_id, target_id, message))
+    else:
+        print("[OK] Les relations uses et applies_to sont symétriques.")
 
     gap_governance_errors = check_gap_governance(objects)
     if gap_governance_errors:

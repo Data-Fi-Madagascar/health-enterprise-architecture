@@ -49,6 +49,7 @@ Cette vue consolide les décisions CNISN et les registres de gouvernance du dép
 | ADR-0012 | ADR-0012 : Rattachement One Health à la surveillance et au pilotage | PART-ONE-HEALTH, VS-02, VS-04, CAP-08, CAP-18, CMP-02, ABB-ECHANGE-MEDIATION, ABB-EXPOSITION-DONNEES-ANALYTIQUES, PT-15, WP-07 | candidate | ADR-0012 |
 | ADR-0013 | ADR-0013 : Taxonomie des fonctions de domaine comme référence de couverture et réconciliation de la chaîne vers les données | CAP-01, CAP-02, CAP-03, CAP-04, CAP-05, CAP-06, CAP-07, CAP-08, CAP-09, CAP-10, CAP-11, CAP-12, CAP-13, CAP-14, CAP-15, CAP-17, CAP-18 | candidate | ADR-0013 |
 | ADR-0014 | ADR-0014 : Rationalisation du catalogue des objets de données par fusion, gouvernance de la valeur d'usage et traçabilité des retraits | DO-01, DO-03, DO-07, DO-12, DO-14, DO-18, DO-25, DO-29, DO-32, CMP-01 | candidate | ADR-0014 |
+| ADR-0015 | ADR-0015 : Deux emplois de l'accès aux données, adossement des arêtes de processus et autorité du système de référence | DO-17, DO-23, DO-24, DO-27, DO-31, PRC-01, PRC-03, PRC-04, PRC-08, PRC-10, CMP-01, CMP-05, CMP-12, CMP-13, CMP-35, CMP-36, ABB-REFERENTIEL-STRUCTURES-SERVICES | candidate | ADR-0015 |
 | ADR-CHANGE-LOG | Journal des modifications des ADR | — | active | ADR-CHANGE-LOG |
 | DECISIONS | Décisions d'architecture (ADR) | — | draft | DECISIONS |
 | REGISTRE-DECISIONS | Registre des décisions d'architecture (ADR) | — | draft | REGISTRE-DECISIONS |

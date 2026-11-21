@@ -11,7 +11,7 @@ version: "0.0.1"
 envelope: 02_artsn/05_cartographie/composants.md
 maps_to: ["ABB-GESTION-CONSENTEMENT"]
 implements: ["ART-4"]
-applies_to: ["PRC-04", "PRC-05"]
+applies_to: ["PRC-01", "PRC-03", "PRC-04", "PRC-05", "PRC-10"]
 accesses: ["DO-23", "DO-24"]
 related: ["ENF-3", "CAP-09", "VS-02"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-13", "couche-4"]
