@@ -22,6 +22,8 @@ related: ["PART-ONE-HEALTH", "CAP-18", "CAP-05", "CMP-02", "CMP-04", "CMP-06", "
 
 Ce profil technique définit les standards, protocoles et configurations pour la surveillance intégrée des maladies zoonotiques et des risques sanitaires émergents, en lien avec les secteurs animal (OIE/WAHIS), environnemental (GBIF) et climatique (WMO).
 
+Il couvre la surveillance et la riposte dans VS-02 par CAP-18, ainsi que le pilotage intersectoriel et la redevabilité dans VS-04 par CAP-08. Les échanges reposent sur ABB-ECHANGE-MEDIATION et l'accès gouverné aux indicateurs sur ABB-EXPOSITION-DONNEES-ANALYTIQUES. CMP-02, CMP-04 et CMP-06 demeurent les composants de solution utilisés par le profil.
+
 | Dimension | Portée |
 |-----------|--------|
 | **Partenaires** | OIE/WAHIS, FAO, GBIF, WMO, CDC Africa, instituts nationaux vétérinaires |
@@ -34,7 +36,10 @@ Ce profil technique définit les standards, protocoles et configurations pour la
 - [PART-ONE-HEALTH: Échanges intersectoriels One Health](../../04_architecture-repository/01_partitions/sectorielles/part-one-health.md)
 - [RD-DONNEES-ENVIRONNEMENTALES-CLIMAT: Surveillance et alertes multi-sectorielles](../../04_architecture-repository/02_architecture-elements/data/reference-data/rd-donnees-environnementales-climat.md)
 - [CAP-18: Coordination intersectorielle (One Health)](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-18.md)
+- [CAP-08 : Gouvernance institutionnelle, planification, coordination et redevabilité](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-08.md)
 - [CAP-05: Terminologie et codification communes](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-05.md)
+- [ABB-ECHANGE-MEDIATION : Échange et médiation inter-systèmes](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md)
+- [ABB-EXPOSITION-DONNEES-ANALYTIQUES : Accès et exposition des données analytiques](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md)
 
 ## 3. Chapitres ART applicables
 

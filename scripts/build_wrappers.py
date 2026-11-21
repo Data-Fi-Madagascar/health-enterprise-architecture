@@ -46,6 +46,8 @@ DERIVED_ARCH_REPOSITORY_DOCS = {
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "requirements-repository.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "solutions-landscape.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "adm-traceability.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "partition-traceability.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "gap-closure-roadmap.md"),
 }
 STATIC_ARCH_REPOSITORY_DOCS = {
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "cap-int-migration.md"),
@@ -68,6 +70,8 @@ FACE = ["candidate", "deprecated"]
 RATTACHEMENT_KEYS = (
     "applies_to", "maps_to", "realizes", "implements", "related",
     "contributes_to", "governs", "serves", "accesses", "uses",
+    "partitions", "between", "target_plateau", "addressed_by",
+    "evidenced_by",
 )
 
 NATURAL_RE = re.compile(r"(\d+)")
@@ -151,8 +155,10 @@ def load_objects():
             objects[rel] = {
                 "rel": rel,
                 "id": fields.get("id", ""),
+                "type": fields.get("type", ""),
                 "title": fields.get("title", ""),
                 "status": fields.get("status", ""),
+                "owner": fields.get("owner", ""),
                 "envelope": fields.get("envelope", ""),
                 "maturity_condition": fields.get("maturity_condition", "") or "",
                 "maps_to": fields.get("maps_to", []) or [],
@@ -165,6 +171,14 @@ def load_objects():
                 "serves": fields.get("serves", []) or [],
                 "accesses": fields.get("accesses", []) or [],
                 "uses": fields.get("uses", []) or [],
+                "partitions": fields.get("partitions", []) or [],
+                "between": fields.get("between", []) or [],
+                "gap_state": fields.get("gap_state", "") or "",
+                "target_plateau": fields.get("target_plateau", []) or [],
+                "addressed_by": fields.get("addressed_by", []) or [],
+                "evidenced_by": fields.get("evidenced_by", []) or [],
+                "closure_criteria": fields.get("closure_criteria", []) or [],
+                "partition_kind": fields.get("partition_kind", ""),
                 "body": body,
             }
     return objects
@@ -237,11 +251,45 @@ def badge_for(obj):
     return None
 
 
+def render_gap_governance(obj):
+    """Rend le pilotage d'un gap uniquement depuis son frontmatter canonique."""
+    if not obj.get("gap_state"):
+        return ""
+
+    work_packages = obj.get("addressed_by", [])
+    evidence = obj.get("evidenced_by", [])
+    lines = [
+        "## Pilotage de la fermeture",
+        "",
+        "**État du gap :** %s" % obj["gap_state"],
+        "",
+        "**Plateau cible :** %s" % ", ".join(obj.get("target_plateau", [])),
+        "",
+        "**%s :** %s" % (
+            "Work package" if len(work_packages) == 1 else "Work packages",
+            ", ".join(work_packages),
+        ),
+        "",
+        "**%s :** %s" % (
+            "Preuve attendue" if len(evidence) == 1 else "Preuves attendues",
+            ", ".join(evidence),
+        ),
+        "",
+        "## Critères de fermeture",
+        "",
+    ]
+    lines.extend("- %s" % criterion for criterion in obj.get("closure_criteria", []))
+    return "\n".join(lines)
+
+
 def render_transclusion(obj, mode, path_by_id):
     body = obj["body"]
     to_dir = os.path.dirname(os.path.join(REPO_ROOT, obj["envelope"]))
     from_dir = os.path.dirname(os.path.join(REPO_ROOT, obj["rel"]))
     body = rewrite_links(body, from_dir, to_dir)
+    gap_governance = render_gap_governance(obj)
+    if gap_governance:
+        body = body.rstrip() + "\n\n" + gap_governance
 
     if mode == "monographie":
         lines = body.splitlines(keepends=True)
@@ -278,8 +326,10 @@ def markdown_table_entry(rel):
     return {
         "rel": rel,
         "id": oid,
+        "type": fields.get("type", ""),
         "title": fields.get("title", "") or oid,
         "status": fields.get("status", ""),
+        "owner": fields.get("owner", ""),
         "envelope": fields.get("envelope", ""),
         "maturity_condition": fields.get("maturity_condition", "") or "",
         "maps_to": fields.get("maps_to", []) or [],
@@ -292,6 +342,13 @@ def markdown_table_entry(rel):
         "serves": fields.get("serves", []) or [],
         "accesses": fields.get("accesses", []) or [],
         "uses": fields.get("uses", []) or [],
+        "partitions": fields.get("partitions", []) or [],
+        "between": fields.get("between", []) or [],
+        "gap_state": fields.get("gap_state", "") or "",
+        "target_plateau": fields.get("target_plateau", []) or [],
+        "addressed_by": fields.get("addressed_by", []) or [],
+        "evidenced_by": fields.get("evidenced_by", []) or [],
+        "closure_criteria": fields.get("closure_criteria", []) or [],
         "body": "",
     }
 
@@ -355,6 +412,237 @@ def render_maturity(objects, source_glob, to_dir):
         lines.append("| %s | %s | %s | %s | [%s](%s) |"
                      % (code, titre.replace("|", "\\|"), statut,
                         cond.replace("|", "\\|"), code, fiche))
+    return "\n".join(lines)
+
+
+def render_partition_traceability(objects, path_by_id, to_dir):
+    """Construit la chaîne PART -> VS -> CAP -> PRC -> DO/ABB/SBB."""
+    del path_by_id, to_dir  # interface homogène avec les autres rendus
+    by_id = {obj["id"]: obj for obj in objects.values()}
+
+    def related_ids(obj, *keys):
+        values = set()
+        for key in keys:
+            values.update(obj.get(key, []) or [])
+        return values
+
+    def ids_of_type(candidate_ids, accepted_types):
+        return {
+            candidate_id for candidate_id in candidate_ids
+            if by_id.get(candidate_id, {}).get("type") in accepted_types
+        }
+
+    def value_streams_for_partition(partition, seen=None):
+        seen = set() if seen is None else seen
+        if partition["id"] in seen:
+            return set()
+        seen.add(partition["id"])
+        direct = related_ids(partition, "applies_to", "related")
+        value_streams = ids_of_type(direct, {"flux-valeur"})
+        for nested_id in ids_of_type(direct, {"architecture-partition"}):
+            value_streams.update(value_streams_for_partition(by_id[nested_id], seen))
+        return value_streams
+
+    partitions = sorted(
+        (obj for obj in objects.values()
+         if obj.get("type") == "architecture-partition"),
+        key=lambda obj: natural_key(obj["id"]),
+    )
+    lines = [
+        "| Partition | VS | CAP | PRC | DO | ABB | SBB / PT |",
+        "|---|---|---|---|---|---|---|",
+    ]
+
+    for partition in partitions:
+        direct = related_ids(partition, "applies_to", "related")
+        value_streams = value_streams_for_partition(partition)
+        direct_capabilities = ids_of_type(direct, {"capabilite"})
+        value_stream_capabilities = set()
+        for value_stream_id in value_streams:
+            value_stream_capabilities.update(ids_of_type(
+                related_ids(by_id[value_stream_id], "applies_to", "related"),
+                {"capabilite"},
+            ))
+
+        assigned_building_blocks = {
+            candidate["id"] for candidate in by_id.values()
+            if (candidate.get("type") == "architecture-building-block" and
+                partition["id"] in set(candidate.get("partitions", [])))
+        }
+        assigned_capabilities = set()
+        for building_block_id in assigned_building_blocks:
+            assigned_capabilities.update(ids_of_type(
+                set(by_id[building_block_id].get("maps_to", [])),
+                {"capabilite"},
+            ))
+
+        full_value_stream_scope = partition.get("partition_kind") == "value-stream"
+        if full_value_stream_scope:
+            # L'affectation d'un ABB enrichit une partition de flux entier.
+            # Elle ne réduit pas les capacités déclarées par ce flux.
+            capabilities = value_stream_capabilities | direct_capabilities | assigned_capabilities
+        elif assigned_building_blocks:
+            capabilities = direct_capabilities | assigned_capabilities
+        elif direct_capabilities:
+            capabilities = direct_capabilities
+        else:
+            capabilities = value_stream_capabilities
+
+        if not value_streams and capabilities:
+            value_stream_candidates = [
+                candidate for candidate in by_id.values()
+                if candidate.get("type") == "flux-valeur"
+            ]
+            value_streams.update(
+                candidate["id"] for candidate in value_stream_candidates
+                if capabilities <= set(candidate.get("applies_to", []))
+            )
+            if not value_streams:
+                value_streams.update(
+                    candidate["id"] for candidate in value_stream_candidates
+                    if set(candidate.get("applies_to", [])) & capabilities
+                )
+
+        building_blocks = (
+            ids_of_type(direct, {"architecture-building-block"}) |
+            assigned_building_blocks
+        )
+        if full_value_stream_scope or not assigned_building_blocks:
+            for candidate in by_id.values():
+                if candidate.get("type") != "architecture-building-block":
+                    continue
+                if set(candidate.get("maps_to", [])) & capabilities:
+                    building_blocks.add(candidate["id"])
+
+        solution_blocks = ids_of_type(direct, {"solution-building-block", "profil"})
+        for candidate in by_id.values():
+            if candidate.get("type") not in {"solution-building-block", "profil"}:
+                continue
+            maps_to = set(candidate.get("maps_to", []))
+            if partition["id"] in maps_to or maps_to & building_blocks:
+                solution_blocks.add(candidate["id"])
+        if not solution_blocks:
+            for candidate in by_id.values():
+                if candidate.get("type") not in {"solution-building-block", "profil"}:
+                    continue
+                if set(candidate.get("maps_to", [])) & capabilities:
+                    solution_blocks.add(candidate["id"])
+
+        def cell(values):
+            ordered = sorted(values, key=natural_key)
+            return ", ".join(ordered) if ordered else "n/a"
+
+        # Une ligne par flux évite de masquer la portée réelle des partitions
+        # transverses derrière une agrégation de l'ensemble des processus.
+        scoped_value_streams = sorted(value_streams, key=natural_key) or [None]
+        for value_stream_id in scoped_value_streams:
+            if value_stream_id:
+                stream_capabilities = ids_of_type(
+                    related_ids(by_id[value_stream_id], "applies_to", "related"),
+                    {"capabilite"},
+                )
+                scoped_capabilities = capabilities & stream_capabilities
+            else:
+                scoped_capabilities = capabilities
+
+            processes = ids_of_type(direct, {"processus-metier"})
+            if value_stream_id:
+                for process_id in ids_of_type(
+                        set(by_id[value_stream_id].get("related", [])),
+                        {"processus-metier"}):
+                    process_capabilities = set(by_id[process_id].get("applies_to", []))
+                    if scoped_capabilities and process_capabilities & scoped_capabilities:
+                        processes.add(process_id)
+
+            data_objects = ids_of_type(direct, {"objet-de-donnees"})
+            for process_id in processes:
+                data_objects.update(ids_of_type(
+                    set(by_id[process_id].get("accesses", [])),
+                    {"objet-de-donnees"},
+                ))
+
+            lines.append(
+                "| %s | %s | %s | %s | %s | %s | %s |" % (
+                    partition["id"],
+                    value_stream_id or "n/a",
+                    cell(scoped_capabilities),
+                    cell(processes),
+                    cell(data_objects),
+                    cell(building_blocks),
+                    cell(solution_blocks),
+                )
+            )
+
+    return "\n".join(lines)
+
+
+def render_gap_closure_roadmap(objects, path_by_id, to_dir):
+    """Construit la chaîne de fermeture gouvernée de chaque gap."""
+    gaps = sorted(
+        (obj for obj in objects.values() if obj.get("type") == "gap"),
+        key=lambda obj: natural_key(obj["id"]),
+    )
+
+    def escape(value):
+        return str(value).replace("|", "\\|").replace("\n", " ")
+
+    def link(object_id):
+        rel = path_by_id.get(object_id)
+        if not rel:
+            return escape(object_id)
+        target = os.path.relpath(
+            os.path.join(REPO_ROOT, rel), to_dir
+        ).replace(os.sep, "/")
+        return "[%s](%s)" % (escape(object_id), target)
+
+    def links(object_ids):
+        return ", ".join(link(object_id) for object_id in object_ids) or "—"
+
+    lines = [
+        "| Gap | État | Transition | Plateau cible | Responsable | Work packages | Objets impactés | Critères de clôture | Preuves |",
+        "|---|---|---|---|---|---|---|---|---|",
+    ]
+    for gap in gaps:
+        target_ids = list(gap.get("target_plateau", []))
+        target_id = target_ids[0] if target_ids else ""
+        between = list(gap.get("between", []))
+        source_ids = [object_id for object_id in between if object_id != target_id]
+        source = links(source_ids) if source_ids else "État initial"
+        transition = "%s → %s → %s" % (
+            source,
+            link(gap["id"]),
+            link(target_id) if target_id else "—",
+        )
+        structural_ids = set(between)
+        structural_ids.update(target_ids)
+        structural_ids.update(gap.get("addressed_by", []))
+        structural_ids.update(gap.get("evidenced_by", []))
+        impacts = sorted(
+            set(gap.get("related", [])) - structural_ids,
+            key=natural_key,
+        )
+        title = gap.get("title", "")
+        gap_cell = link(gap["id"])
+        if title and title != gap["id"]:
+            gap_cell += " — " + escape(title)
+        criteria = "<br>".join(
+            escape(value) for value in gap.get("closure_criteria", [])
+        ) or "—"
+        lines.append(
+            "| %s | %s | %s | %s | %s | %s | %s | %s | %s |"
+            % (
+                gap_cell,
+                escape(gap.get("gap_state", "") or "—"),
+                transition,
+                links(target_ids),
+                escape(gap.get("owner", "") or "—"),
+                links(sorted(gap.get("addressed_by", []), key=natural_key)),
+                links(impacts),
+                criteria,
+                links(sorted(gap.get("evidenced_by", []), key=natural_key)),
+            )
+        )
+
     return "\n".join(lines)
 
 
@@ -451,6 +739,12 @@ def generate_file(objects, path_by_id, rel):
             to_dir = os.path.dirname(abs_path)
             content = render_maturity(objects, globs, to_dir)
             body = content
+        elif attrs["mode"] == "partition-traceability":
+            to_dir = os.path.dirname(abs_path)
+            body = render_partition_traceability(objects, path_by_id, to_dir)
+        elif attrs["mode"] == "gap-closure-roadmap":
+            to_dir = os.path.dirname(abs_path)
+            body = render_gap_closure_roadmap(objects, path_by_id, to_dir)
         else:
             covered = []
             candidates = attached

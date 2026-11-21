@@ -255,6 +255,8 @@
               "/cnisn/decisions/adr-0008-atna",
               "/cnisn/decisions/adr-0009-terminologie",
               "/cnisn/decisions/adr-0010-cadre-legal",
+              "/cnisn/decisions/adr-0011-eligibilite-couverture",
+              "/cnisn/decisions/adr-0012-one-health-pilotage",
               "/cnisn/decisions/adr-0000-template",
               "/cnisn/decisions/adr-change-log",
               "/cnisn/decisions/template-modification"
@@ -471,7 +473,8 @@
               "/ptisn/profils/pt-16-orchestration-processus",
               "/ptisn/profils/pt-17-logistique-lmis",
               "/ptisn/profils/pt-18-echange-reclamations-paiements",
-              "/ptisn/profils/pt-19-aide-decision-clinique"
+              "/ptisn/profils/pt-19-aide-decision-clinique",
+              "/ptisn/profils/pt-20-eligibilite-couverture"
             ],
             "root": "/ptisn/profils/pt-00-index"
           },

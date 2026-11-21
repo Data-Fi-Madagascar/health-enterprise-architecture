@@ -25,14 +25,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Succès",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MeasureReport"
-                }
-              }
-            }
+            "description": "Rapport agrégé traité : accusé de réception"
           },
           "400": {
             "description": "Requête invalide"
@@ -64,7 +57,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "MeasureReport"
+            "enum": [
+              "MeasureReport"
+            ]
           },
           "id": {
             "type": "string",
@@ -95,7 +90,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Bundle"
+            "enum": [
+              "Bundle"
+            ]
           },
           "id": {
             "type": "string",

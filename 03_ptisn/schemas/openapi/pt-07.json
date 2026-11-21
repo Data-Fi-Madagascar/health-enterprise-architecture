@@ -147,7 +147,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "CodeSystem"
+            "enum": [
+              "CodeSystem"
+            ]
           },
           "id": {
             "type": "string",
@@ -178,7 +180,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "ConceptMap"
+            "enum": [
+              "ConceptMap"
+            ]
           },
           "id": {
             "type": "string",
@@ -209,7 +213,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "ValueSet"
+            "enum": [
+              "ValueSet"
+            ]
           },
           "id": {
             "type": "string",
@@ -240,7 +246,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Bundle"
+            "enum": [
+              "Bundle"
+            ]
           },
           "id": {
             "type": "string",

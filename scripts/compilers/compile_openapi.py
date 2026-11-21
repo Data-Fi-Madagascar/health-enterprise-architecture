@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 """Compile les profils techniques HEA en spécifications OpenAPI 3.0.
 
-Générateur générique : dérive une spécification OpenAPI 3.0 pour chacun des
-19 profils techniques (PT-01..PT-19) depuis la source structurée
+Générateur générique : dérive une spécification OpenAPI 3.0 pour chaque profil
+technique du catalogue depuis la source structurée
 `04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-*.md` (tableau des transactions, acteurs, standards,
 content modules). Le générateur ne code rien en dur : chaque opération est
 déduite de la transaction (standard → méthode HTTP + chemin + schémas).
@@ -18,7 +18,7 @@ versionné, source de vérité des contrats API).
 
 Usage :
     python3 scripts/compilers/compile_openapi.py               # génère 03_ptisn/schemas/openapi/
-    python3 scripts/compilers/compile_openapi.py --validate    # valide les 19 specs
+    python3 scripts/compilers/compile_openapi.py --validate    # valide les specs
     python3 scripts/compilers/compile_openapi.py --check       # vérifie sans écrire
     python3 scripts/compilers/compile_openapi.py --output /tmp/...   # répertoire custom
 """
@@ -140,7 +140,8 @@ FHIR_RESOURCES = [
     "MeasureReport", "Group", "AuditEvent", "Provenance", "Consent",
     "Composition", "ServiceRequest", "Observation", "Communication",
     "Medication", "MedicationKnowledge", "InventoryReport", "SupplyDelivery",
-    "SupplyRequest", "CoverageEligibilityRequest", "CoverageEligibilityResponse",
+    "SupplyRequest", "Coverage", "CoverageEligibilityRequest", "CoverageEligibilityResponse",
+    "InsurancePlan",
     "Claim", "ClaimResponse", "PaymentNotice", "PlanDefinition",
     "ActivityDefinition", "Bundle", "MessageHeader", "OperationDefinition",
     "Task", "Questionnaire", "QuestionnaireResponse", "Encounter", "Procedure",
@@ -292,6 +293,26 @@ def build_fhir_operation(resource, verb, profile_id, transaction):
             {"name": "name", "in": "query",
              "schema": {"type": "string"}, "description": "Nom / libellé"}
         ]
+        # Sélecteurs FHIR R4 de ces ressources financières : `name` n'est
+        # défini ni pour Coverage ni pour CoverageEligibilityResponse.
+        # La référence de demande permet de retrouver la réponse corrélée.
+        if resource in ("Coverage", "CoverageEligibilityResponse"):
+            selectors = (
+                [("beneficiary", "Bénéficiaire (Coverage.beneficiary)", "Patient/123"),
+                 ("patient", "Patient couvert (Coverage.beneficiary)", "Patient/123")]
+                if resource == "Coverage" else
+                [("request", "Demande corrélée (CoverageEligibilityResponse.request)",
+                  "CoverageEligibilityRequest/123"),
+                 ("patient", "Patient (CoverageEligibilityResponse.patient)", "Patient/123")]
+            )
+            op["parameters"] = [
+                {"name": "identifier", "in": "query", "schema": {"type": "string"},
+                 "description": "Identifiant métier de %s (recherche FHIR token : system|value)" % resource}
+            ] + [
+                {"name": name, "in": "query", "schema": {"type": "string"},
+                 "description": description + " ; recherche FHIR reference", "example": example}
+                for name, description, example in selectors
+            ]
 
     if verb in ("create", "update", "authorize", "validate", "expand", "translate"):
         op["requestBody"] = {
@@ -316,7 +337,47 @@ def build_fhir_operation(resource, verb, profile_id, transaction):
             }
         }
 
+    if verb == "create":
+        # FHIR R4 REST create : la référence assignée par le serveur est
+        # fournie dans Location, même sans représentation dans le corps.
+        created_response = op["responses"].pop("200")
+        created_response["description"] = "Ressource créée (représentation selon Prefer)"
+        created_response["headers"] = {
+            "Location": {
+                "required": True,
+                "description": "Référence de la ressource créée : [base]/%s/[id]/_history/[vid] "
+                               "(ou [base]/%s/[id] sans versionnement)" % (resource, resource),
+                "schema": {"type": "string"},
+            }
+        }
+        op["responses"]["201"] = created_response
+
     return path, method, op
+
+
+def build_aggregate_report_operation(profile_id, transaction):
+    """Soumission ADX/mADX : accusé de traitement, sans création REST FHIR."""
+    resource = "MeasureReport"
+    description = "%s — %s (R/O : %s). Standard : %s" % (
+        transaction["name"], transaction["actors"], transaction["ro"],
+        transaction["standard"])
+    # Conserver le chemin, la méthode et l'identifiant d'opération publiés.
+    op = build_simple_operation(profile_id, resource, "create", resource,
+                                transaction["name"], description, method_hint="post")
+    op["requestBody"] = {
+        "required": True,
+        "content": {"application/json": {
+            "schema": {"$ref": "#/components/schemas/MeasureReport"}
+        }},
+    }
+    # QRPH-58 : 200 signifie que le rapport a été traité. L'accusé n'impose
+    # ni Location de création ni représentation de la ressource envoyée.
+    op["responses"]["200"] = {"description": "Rapport agrégé traité : accusé de réception"}
+    if re.search(r"\b(?:asynchrone|asynchronous|async)\b", transaction["standard"], re.IGNORECASE):
+        op["responses"]["202"] = {
+            "description": "Rapport agrégé accepté pour traitement ; traitement non terminé"
+        }
+    return "/MeasureReport", "post", op
 
 
 def map_standard_to_operations(t, profile_id, schema_resolver):
@@ -328,6 +389,12 @@ def map_standard_to_operations(t, profile_id, schema_resolver):
     std = t["standard"]
     text = (name + " " + std)
     tag = None
+
+    # Une transaction agrégée reste une soumission même si son standard
+    # cite explicitement la ressource FHIR MeasureReport.
+    if re.search(r"\b(?:madx|adx)\b", std, re.IGNORECASE):
+        path, method, op = build_aggregate_report_operation(profile_id, t)
+        return [(path, method, op, "MeasureReport")], "MeasureReport"
 
     # ---- Opérations FHIR par ien source de ressource ----
     resources = find_fhir_resources(std)
@@ -400,10 +467,6 @@ def map_standard_to_operations(t, profile_id, schema_resolver):
                                     name, "%s (%s)" % (name, std),
                                     method_hint="post", path_tpl=path)
         return [(path, "post", op, "Token")], "Auth"
-    if "madx" in s or "adx" in s:
-        res = "MeasureReport"
-        path, method, op = build_fhir_operation(res, "create", profile_id, t)
-        return [(path, method, op, res)], res
     if "cds hooks" in s:
         path = "/cds-services/{hook}"
         op = build_simple_operation(profile_id, "CDSHooksRequest", "invoke",
@@ -427,7 +490,7 @@ def build_fhir_schema(resource):
         "properties": {
             "resourceType": {
                 "type": "string",
-                "const": resource
+                "enum": [resource]
             },
             "id": {
                 "type": "string",
@@ -1154,6 +1217,10 @@ SERVER_BY_PROFILE = {
     "PT-17": ("https://lmis.health.mg/api/v1", "Service logistique et chaîne d'approvisionnement (LMIS)"),
     "PT-18": ("https://claims.health.mg/api/v1", "Bus d'échange de réclamations et paiements"),
     "PT-19": ("https://cds.health.mg/api/v1", "Service national d'aide à la décision clinique"),
+    "PT-20": (
+        "https://coverage.health.mg/fhir",
+        "Registre national d'éligibilité et de couverture",
+    ),
 }
 
 SPECIAL_GENERATORS = {
@@ -1297,7 +1364,8 @@ def collect_profiles():
     profiles = []
     profile_pattern = os.path.join(LEGACY_PROFILES_DIR, "pt-*.md")
     for path in sorted(glob.glob(profile_pattern)):
-        text = open(path, encoding="utf-8").read()
+        with open(path, encoding="utf-8") as source:
+            text = source.read()
         fm = parse_frontmatter(text)
         if fm is None:
             continue

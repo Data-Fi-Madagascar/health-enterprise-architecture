@@ -30,6 +30,10 @@
     "bo_04Ref": {
       "type": "string",
       "description": "Référence à BO-04"
+    },
+    "abb_eligibilite_couvertureRef": {
+      "type": "string",
+      "description": "Référence à ABB-ELIGIBILITE-COUVERTURE"
     }
   },
   "required": [

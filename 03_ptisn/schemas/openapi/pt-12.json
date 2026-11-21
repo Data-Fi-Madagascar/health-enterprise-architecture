@@ -24,16 +24,6 @@
           "AuditEvent"
         ],
         "responses": {
-          "200": {
-            "description": "Succès",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/AuditEvent"
-                }
-              }
-            }
-          },
           "400": {
             "description": "Requête invalide"
           },
@@ -42,6 +32,25 @@
           },
           "500": {
             "description": "Erreur serveur"
+          },
+          "201": {
+            "description": "Ressource créée (représentation selon Prefer)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuditEvent"
+                }
+              }
+            },
+            "headers": {
+              "Location": {
+                "required": true,
+                "description": "Référence de la ressource créée : [base]/AuditEvent/[id]/_history/[vid] (ou [base]/AuditEvent/[id] sans versionnement)",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
           }
         },
         "requestBody": {
@@ -65,16 +74,6 @@
           "Provenance"
         ],
         "responses": {
-          "200": {
-            "description": "Succès",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Provenance"
-                }
-              }
-            }
-          },
           "400": {
             "description": "Requête invalide"
           },
@@ -83,6 +82,25 @@
           },
           "500": {
             "description": "Erreur serveur"
+          },
+          "201": {
+            "description": "Ressource créée (représentation selon Prefer)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Provenance"
+                }
+              }
+            },
+            "headers": {
+              "Location": {
+                "required": true,
+                "description": "Référence de la ressource créée : [base]/Provenance/[id]/_history/[vid] (ou [base]/Provenance/[id] sans versionnement)",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
           }
         },
         "requestBody": {
@@ -105,7 +123,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "AuditEvent"
+            "enum": [
+              "AuditEvent"
+            ]
           },
           "id": {
             "type": "string",
@@ -136,7 +156,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Provenance"
+            "enum": [
+              "Provenance"
+            ]
           },
           "id": {
             "type": "string",
@@ -167,7 +189,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Bundle"
+            "enum": [
+              "Bundle"
+            ]
           },
           "id": {
             "type": "string",

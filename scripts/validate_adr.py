@@ -28,6 +28,7 @@ ADR_DIR = REPO_ROOT / "01_cnisn" / "06_decisions"
 REGISTRE_FILE = ADR_DIR / "registre-decisions.md"
 INDEX_FILE = ADR_DIR / "index.md"
 TEMPLATE_FILE = ADR_DIR / "adr-0000-template.md"
+ADR_EXCLUDED_FILENAMES = {TEMPLATE_FILE.name, "adr-change-log.md"}
 
 # Statuts valides pour les ADR
 VALID_STATUSES = {"proposé", "accepté", "appliqué", "remplacé", "déprécié", "candidate", "active", "draft"}
@@ -223,7 +224,7 @@ def load_all_adrs():
         return adrs
     
     for filepath in sorted(ADR_DIR.glob("adr-*.md")):
-        if filepath.name == "adr-0000-template.md":
+        if filepath.name in ADR_EXCLUDED_FILENAMES:
             continue
         adr = ADR(filepath)
         adrs[adr.id] = adr

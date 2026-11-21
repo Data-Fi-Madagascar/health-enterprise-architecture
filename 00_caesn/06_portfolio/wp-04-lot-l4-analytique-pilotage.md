@@ -22,7 +22,7 @@ tags: ["artsn", "work-package", "wp-04", "lots"]
 
 Le lot L4 construit la capacité analytique et les tableaux de bord décisionnels : entrepôt Lakehouse, moteur de graphes, IA prédictive, centre de commande et grand livre de réconciliation.
 
-Ce paquet de travail [réalise le composant de pilotage](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-12.md), le [service de pilotage et tableaux de bord](../../04_architecture-repository/05_building-blocks/abb/legacy-services/srv-06.md), la [capacité « Pilotage et performance »](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-03.md) et le [chapitre ART-6 (analytique)](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md). Il [contribue au plateau 3](../../04_architecture-repository/07_migration/plateaux/pl-03.md).
+Ce paquet de travail réalise le [centre de commande](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-02.md), l'[entrepôt analytique](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-03.md), le [moteur analytique](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-04.md), le [service de pilotage et tableaux de bord](../../04_architecture-repository/05_building-blocks/abb/legacy-services/srv-06.md), l'[ABB d'exposition des données analytiques](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md), la [capacité « Qualité, sécurité des soins et amélioration continue »](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-03.md) et le [chapitre ART-6 (analytique)](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md). Il [contribue au plateau 3](../../04_architecture-repository/07_migration/plateaux/pl-03.md).
 
 ## Unité de temps
 
@@ -34,7 +34,7 @@ Il produit les livrables suivants : entrepôt analytique, 3 modèles d'IA et tab
 
 ## Objectifs
 
-Il réalise les éléments de l'architecture cible : [CMP-12](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-12.md), [SRV-06](../../04_architecture-repository/05_building-blocks/abb/legacy-services/srv-06.md), [CAP-03](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-03.md), [ART-6](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md).
+Il réalise les éléments de l'architecture cible : [CMP-02](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-02.md), [CMP-03](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-03.md), [CMP-04](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-04.md), [SRV-06](../../04_architecture-repository/05_building-blocks/abb/legacy-services/srv-06.md), [ABB-EXPOSITION-DONNEES-ANALYTIQUES](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md), [CAP-03](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-03.md) et [ART-6](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md).
 
 ## Ressources assignées
 

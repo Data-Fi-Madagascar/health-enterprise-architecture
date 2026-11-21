@@ -31,4 +31,21 @@ S'inscrit [PL-01](../../04_architecture-repository/07_migration/plateaux/pl-01.m
 
 Décrit ce qui n'est pas encore couvert dans le passage d'un état à l'autre (capacité, service ou condition non réalisée).
 
+## Pilotage de la fermeture
+
+**État du gap :** planned
+
+**Plateau cible :** PL-01
+
+**Work package :** WP-01
+
+**Preuve attendue :** EVID-GAP-03-CADRE-LEGAL
+
+## Critères de fermeture
+
+- Cadre CNASN approuvé et publié
+- Charte de protection approuvée et publiée
+- Références officielles enregistrées
+- Pièces utilisables dans le processus d'homologation
+
 <!-- END:GENERATED -->

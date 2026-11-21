@@ -23,7 +23,7 @@ Le PTISN décline, pour chaque initiative, le niveau 3 au niveau propre de la so
 | Glossaire du PTISN | ○ | ◐ | ● | ◐ | ◐ |
 | Acronymes du PTISN | ○ | ◐ | ● | ◐ | ◐ |
 
-Le catalogue des **profils nationaux de référence** (Partie III, PT-01…PT-19) est déjà listé ci-dessous. Chaque initiative instancie sa propre fiche d'initiative selon le template de la Partie V (un dossier `ptisn/<initiative-id>/` par initiative, produit par l'initiative et non versionné dans ce cadre de référence).
+Le catalogue des **profils nationaux de référence** (Partie III, PT-01…PT-20) est déjà listé ci-dessous. Chaque initiative instancie sa propre fiche d'initiative selon le template de la Partie V (un dossier `ptisn/<initiative-id>/` par initiative, produit par l'initiative et non versionné dans ce cadre de référence).
 
 ## Matrices des autres niveaux
 
@@ -78,6 +78,7 @@ Pour consulter les matrices de lecture des niveaux supérieurs, le lecteur se re
 - [ptisn-PT-08: PT-08 : Profil technique national](03_profils/pt-08-echange-donnees-agregees.md)
 - [ptisn-PT-06: PT-06 : Profil technique national](03_profils/pt-06-referentiel-structures-services.md)
 - [ptisn-PT-14: PT-14 : Interopérabilité transfrontalière](03_profils/pt-14-interopabilite-transfrontaliere.md)
+- [ptisn-PT-20: PT-20 : Éligibilité et couverture](03_profils/pt-20-eligibilite-couverture.md)
 - [ptisn-exemples: Exemples de profils d'initiative remplis](08_annexes/f-exemples-profils.md)
 - [ptisn-matrice-alignement: Partie IV : Matrice d'alignement](04_matrice-alignement/index.md)
 - [ptisn-regles-utilisation: Partie I : Règles d'utilisation du PTISN](01_regles-utilisation/index.md)

@@ -30,6 +30,9 @@ Cette vue consolide les décisions CNISN et les registres de gouvernance du dép
 | CMP-45 | Cellule d'audit | ART-0, F-4, CMP-01, CMP-02, CMP-03, CMP-04, CMP-05, CMP-06, CMP-07, CMP-08, CMP-09, CMP-10, CMP-11, CMP-12, CMP-13, CMP-14, CMP-15, CMP-16, CMP-17, CMP-18, CMP-19, CMP-20, CMP-21, CMP-22, CMP-23, CMP-24, CMP-25, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38, CMP-39, CMP-40, CMP-41, CMP-42, CMP-43, CMP-44, CMP-45, CMP-46 | active | CMP-45 |
 | CMP-46 | Arbitrage et risques | ART-0, F-4, CMP-01, CMP-02, CMP-03, CMP-04, CMP-05, CMP-06, CMP-07, CMP-08, CMP-09, CMP-10, CMP-11, CMP-12, CMP-13, CMP-14, CMP-15, CMP-16, CMP-17, CMP-18, CMP-19, CMP-20, CMP-21, CMP-22, CMP-23, CMP-24, CMP-25, CMP-26, CMP-27, CMP-28, CMP-29, CMP-30, CMP-31, CMP-32, CMP-33, CMP-34, CMP-35, CMP-36, CMP-37, CMP-38, CMP-39, CMP-40, CMP-41, CMP-42, CMP-43, CMP-44, CMP-45, CMP-46 | active | CMP-46 |
 | COMP-HOMOLOGATION-INTEROPERABILITE | Homologation d'interopérabilité | CAP-14, CAP-16, F-4, EVID-TESTS-INTEROPERABILITE, P-INT-23, P-INT-24, P-INT-25 | candidate | COMP-HOMOLOGATION-INTEROPERABILITE |
+| EVID-GAP-01-QUALIFICATION-OFFLINE | Preuve de qualification hors ligne et de synchronisation | GAP-01, WP-02 | candidate | EVID-GAP-01-QUALIFICATION-OFFLINE |
+| EVID-GAP-02-INTEROPERABILITE-ETENDUE | Dossier d'interopérabilité transfrontalière et One Health | GAP-02, WP-06, WP-07 | candidate | EVID-GAP-02-INTEROPERABILITE-ETENDUE |
+| EVID-GAP-03-CADRE-LEGAL | Dossier de publication et d'applicabilité du cadre légal | GAP-03, WP-01 | candidate | EVID-GAP-03-CADRE-LEGAL |
 | EVID-TESTS-INTEROPERABILITE | Preuves de tests d'interopérabilité | CAP-16, F-4, COMP-HOMOLOGATION-INTEROPERABILITE | candidate | EVID-TESTS-INTEROPERABILITE |
 | ADR-0000 | ADR-0000 : <Titre de la décision> | — | candidate | ADR-0000 |
 | ADR-0001 | ADR-0001 : Adoption de X-Road comme plateforme d'échange interinstitutionnel | LOT L3, LOT L7, PT-01 | active | ADR-0001 |
@@ -42,6 +45,8 @@ Cette vue consolide les décisions CNISN et les registres de gouvernance du dép
 | ADR-0008 | ADR-0008 : Adoption d'ATNA et journalisation pour l'audit et la traçabilité | LOT L4, LOT L1, PT-12 | candidate | ADR-0008 |
 | ADR-0009 | ADR-0009 : Adoption d'un référentiel terminologique national (CIM-11 + LOINC) | PT-07 | candidate | ADR-0009 |
 | ADR-0010 | ADR-0010 : Cadre légal et mandat d'opposabilité du CNASN | LOT L1, PT-11 | candidate | ADR-0010 |
+| ADR-0011 | ADR-0011 : Séparation du service d'éligibilité et de couverture | ABB-ELIGIBILITE-COUVERTURE, CAP-07, ART-4C, ART-9, WP-03 | candidate | ADR-0011 |
+| ADR-0012 | ADR-0012 : Rattachement One Health à la surveillance et au pilotage | PART-ONE-HEALTH, VS-02, VS-04, CAP-08, CAP-18, CMP-02, ABB-ECHANGE-MEDIATION, ABB-EXPOSITION-DONNEES-ANALYTIQUES, PT-15, WP-07 | candidate | ADR-0012 |
 | ADR-CHANGE-LOG | Journal des modifications des ADR | — | active | ADR-CHANGE-LOG |
 | DECISIONS | Décisions d'architecture (ADR) | — | draft | DECISIONS |
 | REGISTRE-DECISIONS | Registre des décisions d'architecture (ADR) | — | draft | REGISTRE-DECISIONS |

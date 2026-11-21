@@ -31,4 +31,23 @@ S'inscrit [PL-02](../../04_architecture-repository/07_migration/plateaux/pl-02.m
 
 Décrit ce qui n'est pas encore couvert dans le passage d'un état à l'autre (capacité, service ou condition non réalisée).
 
+## Pilotage de la fermeture
+
+**État du gap :** planned
+
+**Plateau cible :** PL-03
+
+**Work packages :** WP-06, WP-07
+
+**Preuve attendue :** EVID-GAP-02-INTEROPERABILITE-ETENDUE
+
+## Critères de fermeture
+
+- Accord de gouvernance disponible pour le périmètre transfrontalier
+- Accord de gouvernance disponible pour le périmètre One Health
+- Contrats d'échange applicables identifiés
+- Échange transfrontalier testé
+- Échange One Health testé
+- Responsabilités et remédiations documentées
+
 <!-- END:GENERATED -->

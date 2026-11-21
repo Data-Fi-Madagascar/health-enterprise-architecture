@@ -74,14 +74,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Succès",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MeasureReport"
-                }
-              }
-            }
+            "description": "Rapport agrégé traité : accusé de réception"
           },
           "400": {
             "description": "Requête invalide"
@@ -91,6 +84,9 @@
           },
           "500": {
             "description": "Erreur serveur"
+          },
+          "202": {
+            "description": "Rapport agrégé accepté pour traitement ; traitement non terminé"
           }
         },
         "requestBody": {
@@ -145,16 +141,6 @@
           "ServiceRequest"
         ],
         "responses": {
-          "200": {
-            "description": "Succès",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ServiceRequest"
-                }
-              }
-            }
-          },
           "400": {
             "description": "Requête invalide"
           },
@@ -163,6 +149,25 @@
           },
           "500": {
             "description": "Erreur serveur"
+          },
+          "201": {
+            "description": "Ressource créée (représentation selon Prefer)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ServiceRequest"
+                }
+              }
+            },
+            "headers": {
+              "Location": {
+                "required": true,
+                "description": "Référence de la ressource créée : [base]/ServiceRequest/[id]/_history/[vid] (ou [base]/ServiceRequest/[id] sans versionnement)",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
           }
         },
         "requestBody": {
@@ -185,7 +190,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Composition"
+            "enum": [
+              "Composition"
+            ]
           },
           "id": {
             "type": "string",
@@ -216,7 +223,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "MeasureReport"
+            "enum": [
+              "MeasureReport"
+            ]
           },
           "id": {
             "type": "string",
@@ -247,7 +256,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Patient"
+            "enum": [
+              "Patient"
+            ]
           },
           "id": {
             "type": "string",
@@ -278,7 +289,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "ServiceRequest"
+            "enum": [
+              "ServiceRequest"
+            ]
           },
           "id": {
             "type": "string",
@@ -309,7 +322,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Bundle"
+            "enum": [
+              "Bundle"
+            ]
           },
           "id": {
             "type": "string",

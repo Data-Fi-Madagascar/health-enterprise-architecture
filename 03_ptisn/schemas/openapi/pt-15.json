@@ -121,7 +121,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Communication"
+            "enum": [
+              "Communication"
+            ]
           },
           "id": {
             "type": "string",
@@ -152,7 +154,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Observation"
+            "enum": [
+              "Observation"
+            ]
           },
           "id": {
             "type": "string",
@@ -183,7 +187,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Bundle"
+            "enum": [
+              "Bundle"
+            ]
           },
           "id": {
             "type": "string",
@@ -221,6 +227,9 @@
   "x-hea-maps-to": [
     "PART-ONE-HEALTH",
     "RD-DONNEES-ENVIRONNEMENTALES-CLIMAT",
+    "ABB-ECHANGE-MEDIATION",
+    "ABB-EXPOSITION-DONNEES-ANALYTIQUES",
+    "CAP-08",
     "CAP-18",
     "CAP-05",
     "CMP-02",

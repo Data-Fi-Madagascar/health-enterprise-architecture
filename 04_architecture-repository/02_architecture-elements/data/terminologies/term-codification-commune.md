@@ -18,6 +18,7 @@ architecture_state: target
 maps_to: ["CAP-13", "CAP-14"]
 implements: ["ART-2", "ART-4", "ART-5"]
 related: ["ABB-SERVICE-TERMINOLOGIE", "STD-0007"]
+accessed_by: ["SRV-03"]
 tags: ["cnisn", "terminology", "codification", "snomed-ct"]
 ---
 # Terminologie et codification communes

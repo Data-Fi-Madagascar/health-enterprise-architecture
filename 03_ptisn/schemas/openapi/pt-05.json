@@ -103,7 +103,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Organization"
+            "enum": [
+              "Organization"
+            ]
           },
           "id": {
             "type": "string",
@@ -134,7 +136,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Bundle"
+            "enum": [
+              "Bundle"
+            ]
           },
           "id": {
             "type": "string",
@@ -177,8 +181,7 @@
   "x-hea-implements": [
     "ART-4",
     "ART-4A",
-    "ART-7",
-    "ART-4C"
+    "ART-7"
   ],
   "x-hea-applies-to": [
     "CMP-13"

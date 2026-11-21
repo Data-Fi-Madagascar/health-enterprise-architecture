@@ -24,16 +24,6 @@
           "InventoryReport"
         ],
         "responses": {
-          "200": {
-            "description": "Succès",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/InventoryReport"
-                }
-              }
-            }
-          },
           "400": {
             "description": "Requête invalide"
           },
@@ -42,6 +32,25 @@
           },
           "500": {
             "description": "Erreur serveur"
+          },
+          "201": {
+            "description": "Ressource créée (représentation selon Prefer)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InventoryReport"
+                }
+              }
+            },
+            "headers": {
+              "Location": {
+                "required": true,
+                "description": "Référence de la ressource créée : [base]/InventoryReport/[id]/_history/[vid] (ou [base]/InventoryReport/[id] sans versionnement)",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
           }
         },
         "requestBody": {
@@ -65,16 +74,6 @@
           "SupplyDelivery"
         ],
         "responses": {
-          "200": {
-            "description": "Succès",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SupplyDelivery"
-                }
-              }
-            }
-          },
           "400": {
             "description": "Requête invalide"
           },
@@ -83,6 +82,25 @@
           },
           "500": {
             "description": "Erreur serveur"
+          },
+          "201": {
+            "description": "Ressource créée (représentation selon Prefer)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SupplyDelivery"
+                }
+              }
+            },
+            "headers": {
+              "Location": {
+                "required": true,
+                "description": "Référence de la ressource créée : [base]/SupplyDelivery/[id]/_history/[vid] (ou [base]/SupplyDelivery/[id] sans versionnement)",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
           }
         },
         "requestBody": {
@@ -106,16 +124,6 @@
           "SupplyRequest"
         ],
         "responses": {
-          "200": {
-            "description": "Succès",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SupplyRequest"
-                }
-              }
-            }
-          },
           "400": {
             "description": "Requête invalide"
           },
@@ -124,6 +132,25 @@
           },
           "500": {
             "description": "Erreur serveur"
+          },
+          "201": {
+            "description": "Ressource créée (représentation selon Prefer)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SupplyRequest"
+                }
+              }
+            },
+            "headers": {
+              "Location": {
+                "required": true,
+                "description": "Référence de la ressource créée : [base]/SupplyRequest/[id]/_history/[vid] (ou [base]/SupplyRequest/[id] sans versionnement)",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
           }
         },
         "requestBody": {
@@ -177,7 +204,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "InventoryReport"
+            "enum": [
+              "InventoryReport"
+            ]
           },
           "id": {
             "type": "string",
@@ -208,7 +237,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "SupplyDelivery"
+            "enum": [
+              "SupplyDelivery"
+            ]
           },
           "id": {
             "type": "string",
@@ -239,7 +270,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "SupplyRequest"
+            "enum": [
+              "SupplyRequest"
+            ]
           },
           "id": {
             "type": "string",
@@ -270,7 +303,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "XRoadResponse"
+            "enum": [
+              "XRoadResponse"
+            ]
           },
           "id": {
             "type": "string",
@@ -301,7 +336,9 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "const": "Bundle"
+            "enum": [
+              "Bundle"
+            ]
           },
           "id": {
             "type": "string",
