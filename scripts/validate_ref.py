@@ -36,14 +36,10 @@ LINK_DIRS = ["00_caesn", "01_cnisn", "02_artsn", "03_ptisn", ARCH_REPOSITORY_DIR
 # Le graphe de relations (maps_to/implements/...) ne concerne que le référentiel,
 # source de vérité. Les documents « enveloppes » (00_caesn … 03_ptisn) ne portent
 # pas ces champs et ne doivent pas être traités comme des îlots.
-<<<<<<< HEAD
 REL_DIRS = [ARCH_REPOSITORY_DIR]
-=======
-REL_DIRS = ["referentiel"]
 
 # Répertoires contenant les ADR (Architecture Decision Records)
 ADR_DIRS = ["01_cnisn/06_decisions"]
->>>>>>> e303ad08347610696acff15be39d5708bd6d068c
 EXCLUDE_DIRS = {".git", "__pycache__", "node_modules", "dist", ".venv",
                 "graphify-out", ".agents", ".claude", "mintlify-site", "docs"}
 DERIVED_ARCH_REPOSITORY_DOCS = {
@@ -62,6 +58,10 @@ STATIC_ARCH_REPOSITORY_DOCS = {
 LEGACY_INTEROP_ALLOWED_FILES = {
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "cap-int-migration.yaml"),
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "cap-int-migration.md"),
+    # Journal chronologique des ADR : consigne l'etat des objets a la date de
+    # l'evenement. Une reference a un ancien identifiant y est un fait
+    # historique, pas une relation active vers un objet deconcerne.
+    os.path.join("01_cnisn", "06_decisions", "adr-change-log.md"),
 }
 EXCLUDED_GRAPH_DOCS = {
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "schema.md"),
