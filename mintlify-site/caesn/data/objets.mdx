@@ -1,10 +1,10 @@
 ---
-title: "Objets de données métier"
+title: "Thèmes de données"
 description: "Niveau 1 — Architecture d'entreprise du secteur santé numérique de Madagascar"
 owner: "Cellule du Système d'Information Sanitaire"
-version: "1.0.0"
+version: "1.1.0"
 status: "draft"
-last_reviewed: "2026-08-08"
+last_reviewed: "2026-11-21"
 ---
 
 ## Pour qui lire ce document
@@ -13,223 +13,128 @@ last_reviewed: "2026-08-08"
 
 Les décideurs institutionnels et les directions métier y trouveront une lecture complémentaire, tandis que l'équipe DEPSI, les équipes techniques, et les équipes SIS, données et suivi-évaluation y trouveront une lecture prioritaire. Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
-Ce document définit les **objets de données métier** (BO) du niveau 1 (CAESN) : l'atome d'information porteur de sens pour l'action publique, indépendant de toute technologie. Chaque objet métier est **réalisé** par un ou plusieurs objets de données de l'ARTSN (`../../02_artsn/03_objets-de-donnees/index.md`), qui en fixent la forme normalisée et les contrats d'interfaces.
+Ce document présente les **thèmes de données** du niveau 1 (CAESN). Un thème n'est pas un objet du référentiel : c'est une facette de classification qui rassemble des objets de données partageant une même finalité métier. Chaque objet de données de l'ARTSN porte la propriété `theme` qui l'inscrit dans l'un de ces thèmes ; le vocabulaire et l'ordre de présentation sont fixés par le référentiel d'architecture, et la partition elle-même ne se lit qu'à un seul endroit, dans la propriété `theme` de chaque objet.
 
-## 01. Patient & identité
+Cette organisation remplace les sept « objets métier » retirés du catalogue par l'ADR-0017. Leur contenu utile n'a pas disparu : les thèmes conservent le périmètre, la description et la couverture en flux de valeur qui étaient attachés à ces objets, et les objets de données conservent leur rattachement fonctionnel.
 
-<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/business/business-objects/bo-01.md -->
+## Vue par thème
+
+<!-- BEGIN:GENERATED mode=theme source=04_architecture-repository/02_architecture-elements/data/data-objects/do-*.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### BO-01 : Patient & identité
+<a id="patient-identite"></a>
+
+## Patient & identité
 
 Identité de la personne prise en charge, épisodes de soins, dossier et référencements. Pilier de toute continuité de prise en charge.
 
-#### Description
+**Flux de valeur** : VS-01, VS-03
 
-L'objet métier BO-01 : Patient & identité structure et pilote les concepts de données suivants, garants de la cohérence métier de la prise en charge. Il alimente les flux de valeur VS-01, VS-03 et s'inscrit dans la continuité des chapitres ARTSN (médiation et normalisation, échange et résidence).
+**Dictionnaire** : [Dictionnaire de données fonctionnelles](/artsn/objets-de-donnees/index#patient-identite)
 
-#### Objets de données réalisés (ARTSN)
+| Objet de données | Tier | Système de référence |
+|---|---|---|
+| DO-01 : Patient | A | CMP-11 |
+| DO-03 : Dossier et épisode de soins | B | CMP-08 |
 
-- DO-01 : Patient
-- DO-03 : Dossier et épisode de soins
-- DO-03 : Dossier et épisode de soins
+<a id="prestation-soins"></a>
 
-#### Flux de valeur
-
-- VS-01
-- VS-03
-
-#### Réalise (ARTSN)
-
-- **Dictionnaire de données fonctionnelles** : [Dictionnaire de données fonctionnelles](/artsn/objets-de-donnees/index)
-
-<!-- END:GENERATED -->
-
-## 02. Prestation & soins
-
-<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/business/business-objects/bo-02.md -->
-<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
-
-### BO-02 : Prestation & soins
+## Prestation & soins
 
 Actes cliniques, prescriptions, références et évacuations constituant le parcours de soins.
 
-#### Description
+**Flux de valeur** : VS-01, VS-02
 
-L'objet métier BO-02 : Prestation & soins structure et pilote les concepts de données suivants, garants de la cohérence métier de la prise en charge. Il alimente les flux de valeur VS-01, VS-02 et s'inscrit dans la continuité des chapitres ARTSN (médiation et normalisation, échange et résidence).
+**Dictionnaire** : [Dictionnaire de données fonctionnelles](/artsn/objets-de-donnees/index#prestation-soins)
 
-#### Objets de données réalisés (ARTSN)
+| Objet de données | Tier | Système de référence |
+|---|---|---|
+| DO-05 : Consultation | B | CMP-19 |
+| DO-06 : Prescription | B | CMP-19 |
+| DO-07 : Référence et contre-référence | B | CMP-19 |
+| DO-09 : Évacuation sanitaire | B | CMP-19 |
+| DO-32 : Examen et résultat de laboratoire | B | CMP-19, CMP-24 |
 
-- DO-05 : Consultation
-- DO-06 : Prescription
-- DO-07 : Référence et contre-référence
-- DO-07 : Référence et contre-référence
-- DO-09 : Évacuation sanitaire
+<a id="dispensation-produits"></a>
 
-#### Flux de valeur
-
-- VS-01
-- VS-02
-
-#### Réalise (ARTSN)
-
-- **Dictionnaire de données fonctionnelles** : [Dictionnaire de données fonctionnelles](/artsn/objets-de-donnees/index)
-
-<!-- END:GENERATED -->
-
-## 03. Dispensation & produits
-
-<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/business/business-objects/bo-03.md -->
-<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
-
-### BO-03 : Dispensation & produits
+## Dispensation & produits
 
 Médicaments, produits de santé, lots et stocks dispensés sur le terrain.
 
-#### Description
+**Flux de valeur** : VS-01, VS-02, VS-04
 
-L'objet métier BO-03 : Dispensation & produits structure et pilote les concepts de données suivants, garants de la cohérence métier de la prise en charge. Il alimente les flux de valeur VS-01, VS-02, VS-04 et s'inscrit dans la continuité des chapitres ARTSN (médiation et normalisation, échange et résidence).
+**Dictionnaire** : [Dictionnaire de données fonctionnelles](/artsn/objets-de-donnees/index#dispensation-produits)
 
-#### Objets de données réalisés (ARTSN)
+| Objet de données | Tier | Système de référence |
+|---|---|---|
+| DO-10 : Dispensation | B | CMP-20 |
+| DO-11 : Produit de santé | A | CMP-14 |
+| DO-12 : Lot et stock | B | CMP-23 |
 
-- DO-10 : Dispensation
-- DO-11 : Produit de santé
-- DO-12 : Lot et stock
-- DO-12 : Lot et stock
+<a id="financement-couverture"></a>
 
-#### Flux de valeur
-
-- VS-01
-- VS-02
-- VS-04
-
-#### Réalise (ARTSN)
-
-- **Dictionnaire de données fonctionnelles** : [Dictionnaire de données fonctionnelles](/artsn/objets-de-donnees/index)
-
-<!-- END:GENERATED -->
-
-## 04. Financement & couverture
-
-<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/business/business-objects/bo-04.md -->
-<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
-
-### BO-04 : Financement & couverture
+## Financement & couverture
 
 Éligibilité, couverture, facturation et vérification financière des soins.
 
-#### Description
+**Flux de valeur** : VS-03, VS-04
 
-L'objet métier BO-04 : Financement & couverture structure et pilote les concepts de données suivants, garants de la cohérence métier de la prise en charge. Il alimente les flux de valeur VS-03, VS-04 et s'inscrit dans la continuité des chapitres ARTSN (médiation et normalisation, échange et résidence).
+**Dictionnaire** : [Dictionnaire de données fonctionnelles](/artsn/objets-de-donnees/index#financement-couverture)
 
-#### Objets de données réalisés (ARTSN)
+| Objet de données | Tier | Système de référence |
+|---|---|---|
+| DO-14 : Couverture sanitaire et éligibilité | B | CMP-12 |
+| DO-16 : Facturation et demande de remboursement | B | CMP-12 |
+| DO-17 : Demande et preuve de vérification d'éligibilité | B | CMP-12 |
 
-- DO-14 : Couverture sanitaire et éligibilité
-- DO-14 : Couverture sanitaire et éligibilité
-- DO-16 : Facturation et demande de remboursement
-- DO-17 : Demande et preuve de vérification d'éligibilité
+<a id="risque-surveillance"></a>
 
-#### Flux de valeur
+## Risque & surveillance
 
-- VS-03
-- VS-04
+Signaux, foyers, investigations et alertes de surveillance sanitaire, y compris dans une perspective One Health.
 
-#### Réalise (ARTSN)
+**Flux de valeur** : VS-02, VS-04
 
-- **Dictionnaire de données fonctionnelles** : [Dictionnaire de données fonctionnelles](/artsn/objets-de-donnees/index)
+**Dictionnaire** : [Dictionnaire de données fonctionnelles](/artsn/objets-de-donnees/index#risque-surveillance)
 
-<!-- END:GENERATED -->
+| Objet de données | Tier | Système de référence |
+|---|---|---|
+| DO-18 : Signal, notification et alerte sanitaires | B | CMP-02 |
+| DO-19 : Foyer épidémique | B | CMP-02 |
+| DO-20 : Investigation épidémiologique | B | CMP-02 |
 
-## 05. Risque & surveillance
+<a id="exploitation-gestion"></a>
 
-<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/business/business-objects/bo-05.md -->
-<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
-
-### BO-05 : Risque & surveillance
-
-Signaux, foyers, investigations et alertes de surveillance sanitaire (y compris One Health).
-
-#### Description
-
-L'objet métier BO-05 : Risque & surveillance structure et pilote les concepts de données suivants, garants de la cohérence métier de la prise en charge. Il alimente les flux de valeur VS-02, VS-04 et s'inscrit dans la continuité des chapitres ARTSN (médiation et normalisation, échange et résidence).
-
-#### Objets de données réalisés (ARTSN)
-
-- DO-18 : Signal, notification et alerte sanitaires
-- DO-19 : Foyer épidémique
-- DO-20 : Investigation épidémiologique
-- DO-18 : Signal, notification et alerte sanitaires
-
-#### Flux de valeur
-
-- VS-02
-- VS-04
-
-#### Réalise (ARTSN)
-
-- **Dictionnaire de données fonctionnelles** : [Dictionnaire de données fonctionnelles](/artsn/objets-de-donnees/index)
-
-<!-- END:GENERATED -->
-
-## 06. Exploitation & gestion
-
-<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/business/business-objects/bo-06.md -->
-<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
-
-### BO-06 : Exploitation & gestion
+## Exploitation & gestion
 
 Structures, agents, indicateurs, zones et tableaux de bord de pilotage.
 
-#### Description
+**Flux de valeur** : VS-01, VS-02, VS-03, VS-04
 
-L'objet métier BO-06 : Exploitation & gestion structure et pilote les concepts de données suivants, garants de la cohérence métier de la prise en charge. Il alimente les flux de valeur VS-01, VS-02, VS-03, VS-04 et s'inscrit dans la continuité des chapitres ARTSN (médiation et normalisation, échange et résidence).
+**Dictionnaire** : [Dictionnaire de données fonctionnelles](/artsn/objets-de-donnees/index#exploitation-gestion)
 
-#### Objets de données réalisés (ARTSN)
+| Objet de données | Tier | Système de référence |
+|---|---|---|
+| DO-23 : Formation sanitaire | A | ABB-REFERENTIEL-STRUCTURES-SERVICES, CMP-05 |
+| DO-24 : Agent de santé | A | CMP-13 |
+| DO-25 : Indicateur sanitaire | C | CMP-14 |
+| DO-26 : Zone sanitaire | A | ABB-REFERENTIEL-STRUCTURES-SERVICES, CMP-05 |
+| DO-27 : Tâche et action de suivi | B | CMP-01 |
 
-- DO-23 : Formation sanitaire
-- DO-24 : Agent de santé
-- DO-25 : Indicateur sanitaire
-- DO-26 : Zone sanitaire
-- DO-27 : Tâche et action de suivi
+<a id="interop-transfrontalier"></a>
 
-#### Flux de valeur
-
-- VS-01
-- VS-02
-- VS-03
-- VS-04
-
-#### Réalise (ARTSN)
-
-- **Dictionnaire de données fonctionnelles** : [Dictionnaire de données fonctionnelles](/artsn/objets-de-donnees/index)
-
-<!-- END:GENERATED -->
-
-## 07. Interopérabilité transfrontalière
-
-<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/business/business-objects/bo-07.md -->
-<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
-
-### BO-07 : Interopérabilité transfrontalière
+## Interopérabilité transfrontalière
 
 Résumé patient international, sections et confiance pour les échanges hors frontières.
 
-#### Description
+**Flux de valeur** : VS-02
 
-L'objet métier BO-07 : Interopérabilité transfrontalière structure et pilote les concepts de données suivants, garants de la cohérence métier de la prise en charge. Il alimente les flux de valeur VS-02 et s'inscrit dans la continuité des chapitres ARTSN (médiation et normalisation, échange et résidence).
+**Dictionnaire** : [Dictionnaire de données fonctionnelles](/artsn/objets-de-donnees/index#interop-transfrontalier)
 
-#### Objets de données réalisés (ARTSN)
-
-- DO-29 : Résumé international du patient
-- DO-31 : Ancre de confiance
-
-#### Flux de valeur
-
-- VS-02
-
-#### Réalise (ARTSN)
-
-- **Dictionnaire de données fonctionnelles** : [Dictionnaire de données fonctionnelles](/artsn/objets-de-donnees/index)
+| Objet de données | Tier | Système de référence |
+|---|---|---|
+| DO-29 : Résumé international du patient | B | CMP-06 |
+| DO-31 : Ancre de confiance | A | CMP-35, CMP-36 |
 
 <!-- END:GENERATED -->
 
@@ -243,3 +148,4 @@ L'objet métier BO-07 : Interopérabilité transfrontalière structure et pilote
 - **Domaines de données** : Domaines de données prioritaires (`00_caesn/04_data/domains.md`)
 - **Objets de données ARTSN** : Objets de données (`../../02_artsn/03_objets-de-donnees/index.md`)
 - **Chapitre ART-2 (médiation)** : Médiation et normalisation (`../../04_architecture-repository/04_patterns/artsn-rules/art-2.md`)
+- **Vocabulaire des thèmes** : Thèmes de données (`04_architecture-repository/00_metamodel/themes.yaml`)

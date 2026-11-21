@@ -112,8 +112,7 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 | Composants | [`04_architecture-repository/05_building-blocks/abb/legacy-components/`](04_architecture-repository/05_building-blocks/abb/legacy-components) | Composants applicatifs, infrastructure et sécurité |
 | Registres de gouvernance | [`04_architecture-repository/06_governance/registers/`](04_architecture-repository/06_governance/registers) | Registres CMP-39..46 |
 | Profils | [`04_architecture-repository/05_building-blocks/sbb/legacy-profiles/`](04_architecture-repository/05_building-blocks/sbb/legacy-profiles) | Profils PT-01..19 |
-| Objets métier | [`04_architecture-repository/02_architecture-elements/business/business-objects/`](04_architecture-repository/02_architecture-elements/business/business-objects) | Objets métier BO |
-| Objets de données | [`04_architecture-repository/02_architecture-elements/data/data-objects/`](04_architecture-repository/02_architecture-elements/data/data-objects) | Objets de données DO |
+| Objets de données | [`04_architecture-repository/02_architecture-elements/data/data-objects/`](04_architecture-repository/02_architecture-elements/data/data-objects) | Objets de données DO, répartis en sept thèmes de données |
 | Services métier | [`04_architecture-repository/02_architecture-elements/business/business-services/`](04_architecture-repository/02_architecture-elements/business/business-services) | Service métier SRV-01 |
 | Services legacy | [`04_architecture-repository/05_building-blocks/abb/legacy-services/`](04_architecture-repository/05_building-blocks/abb/legacy-services) | Services applicatifs et technologiques SRV-02..06 |
 | Processus | [`04_architecture-repository/02_architecture-elements/business/processes/`](04_architecture-repository/02_architecture-elements/business/processes) | Processus métier PRC |

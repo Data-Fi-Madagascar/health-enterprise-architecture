@@ -125,7 +125,7 @@ Les huit familles reprennent le découpage du chapitre Partie II du CNISN. Chaqu
 | Objet CNISN/TOGAF | Composants applicatifs | Chapitres ARTSN | Profils PTISN |
 |----------------|------------------------|-----------------|---------------|
 | **ABB-CONFIANCE-AUTORISATION** Confiance, sécurité et autorisation | CMP-07 Orchestrateur de parcours, CMP-22 Espace sante patient | ART-0, ART-4B, ART-7, ART-9 | PT-10 |
-| **ABB-GESTION-CONSENTEMENT** Gestion des consentements et bases d'autorisation | CMP-08 Répertoire de données cliniques, CMP-09 Référentiel des métadonnées, CMP-10 Registre des terminologies, CMP-12 Registre d'éligibilité et de, CMP-13 Registre des personnels, CMP-14 Registre des produits, CMP-19 Dossiers, CMP-20 Gestion des pharmacies, CMP-21 Sante communautaire mobile, CMP-25 Enquetes | ART-0, ART-11, ART-4B, ART-7 | PT-11 |
+| **ABB-GESTION-CONSENTEMENT** Gestion des consentements et bases d'autorisation | CMP-08 Répertoire de données cliniques, CMP-10 Registre des terminologies, CMP-12 Registre d'éligibilité et de, CMP-13 Registre des personnels, CMP-14 Registre des produits, CMP-19 Dossiers, CMP-20 Gestion des pharmacies, CMP-21 Sante communautaire mobile, CMP-25 Enquetes | ART-0, ART-11, ART-4B, ART-7 | PT-11 |
 | **ABB-AUDIT-PROVENANCE** Provenance, audit et traçabilité | CMP-04 Moteur analytique, CMP-15 API Gateway, CMP-16 Registre de schémas, CMP-17 Message broker asynchrone, CMP-18 Compensateur, CMP-23 Chaine logistique | ART-3, ART-7, ART-9, F-1, F-5, F-6 | PT-12, PT-17 |
 
 ### 3.5 Famille 5 : Qualité et conformité
@@ -165,7 +165,7 @@ Les huit familles reprennent le découpage du chapitre Partie II du CNISN. Chaqu
 |--------------|------------------------|
 | **Couche 6** : Pilotage | CMP-01 Tableaux de bord, CMP-02 Centre de commande |
 | **Couche 5** : Projections analytiques | CMP-03 Entrepôt Lakehouse, CMP-04 Moteur analytique, CMP-05 Moteur de graphes |
-| **Couche 4** : Interopérabilité et référentiels | CMP-06 Intégration, CMP-07 Orchestrateur de parcours, CMP-08 Répertoire de données cliniques, CMP-09 Référentiel des métadonnées, CMP-10 Registre des terminologies, CMP-11 Registre des clients, CMP-12 Registre d'éligibilité et de, CMP-13 Registre des personnels, CMP-14 Registre des produits |
+| **Couche 4** : Interopérabilité et référentiels | CMP-06 Intégration, CMP-07 Orchestrateur de parcours, CMP-08 Répertoire de données cliniques, CMP-10 Registre des terminologies, CMP-11 Registre des clients, CMP-12 Registre d'éligibilité et de, CMP-13 Registre des personnels, CMP-14 Registre des produits |
 | **Couche 3** : Échange | CMP-15 API Gateway, CMP-16 Registre de schémas, CMP-17 Message broker asynchrone, CMP-18 Compensateur |
 | **Couche 2** : Applications de terrain | CMP-19 Dossiers, CMP-20 Gestion des pharmacies, CMP-21 Sante communautaire mobile, CMP-22 Espace sante patient, CMP-23 Chaine logistique, CMP-24 Surveillance de la sante animale, CMP-25 Enquetes |
 | **Couche 1** : Infrastructure | CMP-26 Noeud central, CMP-27 Noeuds regionaux, CMP-28 Noeuds locaux, CMP-29 Liaisons dediees, CMP-30 Reseau prive MPLS, CMP-31 Reseaux mobiles prives |
@@ -182,8 +182,8 @@ Les huit familles reprennent le découpage du chapitre Partie II du CNISN. Chaqu
 | **VS-02** | PRC-04 Veille, prévention et surveillance sanitaire | CMP-07, CMP-08, CMP-11, CMP-13, CMP-15, CMP-17, CMP-18, CMP-24, CMP-25 |
 | **VS-02** | PRC-05 Alerte, investigation et riposte | CMP-02, CMP-04, CMP-07, CMP-08, CMP-11, CMP-13, CMP-14, CMP-15, CMP-17, CMP-18, CMP-20, CMP-23, CMP-24, CMP-25 |
 | **VS-02** | PRC-06 Clôture et capitalisation des épisodes | CMP-07, CMP-11, CMP-14, CMP-15, CMP-17, CMP-18, CMP-19 |
-| **VS-03** | PRC-07 Identification et droits des bénéficiaires | CMP-09, CMP-10, CMP-16, CMP-22 |
-| **VS-03** | PRC-08 Financement et exemption au point de service | CMP-09, CMP-10, CMP-16, CMP-22 |
+| **VS-03** | PRC-07 Identification et droits des bénéficiaires | CMP-10, CMP-16, CMP-22 |
+| **VS-03** | PRC-08 Financement et exemption au point de service | CMP-10, CMP-16, CMP-22 |
 | **VS-03** | PRC-09 Remboursement et régulation des mécanismes | CMP-03, CMP-04, CMP-12 |
 | **VS-04** | PRC-10 Planification et allocation des ressources | CMP-01, CMP-12, CMP-23 |
 | **VS-04** | PRC-11 Suivi et pilotage de la performance | CMP-01, CMP-02, CMP-03, CMP-25 |
@@ -204,7 +204,7 @@ Les huit familles reprennent le découpage du chapitre Partie II du CNISN. Chaqu
 | PT-08 Échange de données agrégées | CMP-01, CMP-02, CMP-03, CMP-04, CMP-05, CMP-06 | ABB-ECHANGE-MEDIATION, ABB-EXPOSITION-DONNEES-ANALYTIQUES |
 | PT-09 Analytique et exposition de données | CMP-01, CMP-02, CMP-03, CMP-04 | ABB-EXPOSITION-DONNEES-ANALYTIQUES |
 | PT-10 Confiance, authentification et autorisation | CMP-07, CMP-22 | ABB-CONFIANCE-AUTORISATION |
-| PT-11 Consentement et bases d’autorisation | CMP-08, CMP-09, CMP-10, CMP-11, CMP-12, CMP-13, CMP-14, CMP-19, CMP-20, CMP-21, CMP-25 | ABB-GESTION-CONSENTEMENT |
+| PT-11 Consentement et bases d’autorisation | CMP-08, CMP-10, CMP-11, CMP-12, CMP-13, CMP-14, CMP-19, CMP-20, CMP-21, CMP-25 | ABB-GESTION-CONSENTEMENT |
 | PT-12 Audit, provenance et traçabilité | CMP-04, CMP-15, CMP-16, CMP-17, CMP-18, CMP-23 | ABB-AUDIT-PROVENANCE |
 | PT-13 Qualité et réconciliation | CMP-01, CMP-03 | ABB-RECONCILIATION-DONNEES |
 | PT-14 Interopérabilité transfrontalière | : | PART-ECHANGE-TRANSFRONTALIER |
@@ -226,7 +226,7 @@ Les huit familles reprennent le découpage du chapitre Partie II du CNISN. Chaqu
 | CAP-06 Vaccination, prévention et promotion de la santé | ABB-ECHANGE-LOGISTIQUE-LMIS | CMP-02 |
 | CAP-07 Protection financière, couverture santé universelle | ABB-IDENTITE-BENEFICIAIRE | : |
 | CAP-08 Gouvernance institutionnelle, planification, coordination et redevabilité | ABB-AUDIT-PROVENANCE | CMP-07 |
-| CAP-09 Gestion des ressources humaines en santé | ABB-REGISTRE-PROFESSIONNELS | CMP-08, CMP-09, CMP-10, CMP-11, CMP-12, CMP-13, CMP-14 |
+| CAP-09 Gestion des ressources humaines en santé | ABB-REGISTRE-PROFESSIONNELS | CMP-08, CMP-10, CMP-11, CMP-12, CMP-13, CMP-14 |
 | CAP-10 Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement | ABB-ECHANGE-LOGISTIQUE-LMIS | CMP-15, CMP-16, CMP-17, CMP-18 |
 | CAP-11 Gestion des infrastructures, équipements et maintenance | ABB-ECHANGE-LOGISTIQUE-LMIS, ABB-REFERENTIEL-STRUCTURES-SERVICES, RD-STRUCTURES-SERVICES | : |
 | CAP-12 Finances publiques, budget et allocation des ressources | ABB-AUDIT-PROVENANCE, ABB-CATALOGUE-CONTRATS, AC-CATALOGUE-SERVICES | : |

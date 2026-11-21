@@ -1,5 +1,6 @@
 import importlib.util
 from pathlib import Path
+import re
 import subprocess
 import sys
 from tempfile import TemporaryDirectory
@@ -720,6 +721,198 @@ class DataObjectMigrationRepositoryTests(unittest.TestCase):
         self.assertEqual([], self.validator.check_retired_data_objects(
             objects, self.validator.load_do_migration()))
 
+
+class ThemeAssignmentTests(unittest.TestCase):
+    def setUp(self):
+        self.validator = load_validator()
+
+    def data_object(self, object_id, theme=None):
+        relations = {}
+        if theme is not None:
+            relations["theme"] = {theme}
+        return {
+            "id": object_id,
+            "file": "/tmp/%s.md" % object_id.lower(),
+            "type": "objet-de-donnees",
+            "out": set(),
+            "relations": relations,
+        }
+
+    def test_rejects_a_data_object_without_theme(self):
+        objects = {"DO-01": self.data_object("DO-01")}
+
+        errors = self.validator.check_theme_assignment(objects, {}, {})
+
+        self.assertEqual(1, len(errors))
+        self.assertIn("sans thème", errors[0][3])
+
+    def test_rejects_a_theme_outside_the_controlled_vocabulary(self):
+        objects = {"DO-01": self.data_object("DO-01", "theme-inconnu")}
+
+        errors = self.validator.check_theme_assignment(objects, {}, {})
+
+        self.assertEqual(1, len(errors))
+        self.assertIn("hors du vocabulaire", errors[0][3])
+
+    def test_rejects_a_theme_of_the_vocabulary_without_any_object(self):
+        objects = {"DO-01": self.data_object("DO-01", "patient-identite")}
+
+        errors = self.validator.check_theme_assignment(
+            objects, {"patient-identite": {}, "prestation-soins": {}}, {})
+
+        self.assertEqual(1, len(errors))
+        self.assertIn("sans objet de données", errors[0][3])
+
+    def test_rejects_a_partition_that_differs_from_the_retired_scope(self):
+        migration = {
+            "BO-01": {
+                "legacy_id": "BO-01",
+                "disposition": "retired",
+                "theme": "patient-identite",
+                "replacement_ids": {"DO-01", "DO-03"},
+            },
+        }
+        objects = {
+            "DO-01": self.data_object("DO-01", "patient-identite"),
+            "DO-02": self.data_object("DO-02", "patient-identite"),
+        }
+
+        errors = self.validator.check_theme_assignment(
+            objects, {"patient-identite": {}}, migration)
+
+        self.assertEqual(2, len(errors))
+        self.assertEqual({"DO-02", "DO-03"}, {error[2] for error in errors})
+
+    def test_accepts_a_partition_equal_to_the_retired_scope(self):
+        migration = {
+            "BO-01": {
+                "legacy_id": "BO-01",
+                "disposition": "retired",
+                "theme": "patient-identite",
+                "replacement_ids": {"DO-01", "DO-03"},
+            },
+        }
+        objects = {
+            "DO-01": self.data_object("DO-01", "patient-identite"),
+            "DO-03": self.data_object("DO-03", "patient-identite"),
+        }
+
+        errors = self.validator.check_theme_assignment(
+            objects, {"patient-identite": {}}, migration)
+
+        self.assertEqual([], errors)
+
+
+class ThemeVocabularyRepositoryTests(unittest.TestCase):
+    def setUp(self):
+        self.validator = load_validator()
+
+    def test_vocabulary_declares_the_seven_themes(self):
+        themes = self.validator.load_themes()
+
+        self.assertEqual(
+            {
+                "patient-identite", "prestation-soins", "dispensation-produits",
+                "financement-couverture", "risque-surveillance",
+                "exploitation-gestion", "interop-transfrontalier",
+            },
+            set(themes),
+        )
+        for slug, theme in themes.items():
+            self.assertTrue(theme["label"], slug)
+            self.assertTrue(theme["description"], slug)
+            self.assertTrue(theme["value_streams"], slug)
+
+    def test_every_data_object_declares_a_theme_of_the_vocabulary(self):
+        objects, _paths, _unresolved, _legacy = self.validator.load_relation_graph()
+        themes = self.validator.load_themes()
+        migration = self.validator.load_object_migration()
+
+        self.assertEqual([], self.validator.check_theme_assignment(
+            objects, themes, migration))
+
+    def test_theme_partition_reproduces_the_sections_of_the_data_dictionary(self):
+        objects, _paths, _unresolved, _legacy = self.validator.load_relation_graph()
+        themes = self.validator.load_themes()
+
+        grouped = {}
+        for oid, obj in objects.items():
+            if obj.get("type") != "objet-de-donnees":
+                continue
+            theme = sorted(obj.get("relations", {}).get("theme", set()))[0]
+            grouped.setdefault(theme, set()).add(oid)
+
+        # Le dictionnaire des données fonctionnelles classe déjà les objets
+        # actifs en sept sections ; la propriété `theme` doit reproduire
+        # exactement ce découpage.
+        dictionary = (
+            REPO_ROOT / "02_artsn/03_objets-de-donnees/index.md"
+        ).read_text(encoding="utf-8")
+        sections = re.split(r"\n## ", dictionary)
+        expected = {}
+        for section in sections:
+            match = re.match(r"([1-7])\.\s", section)
+            if not match:
+                continue
+            ids = {
+                oid for oid in re.findall(r"\bDO-\d\d\b", section)
+                if oid in grouped_objects(objects)
+            }
+            if ids:
+                expected[int(match.group(1))] = ids
+
+        self.assertEqual(7, len(expected))
+        self.assertEqual(
+            sorted(sorted(ids) for ids in expected.values()),
+            sorted(sorted(ids) for ids in grouped.values()),
+        )
+
+
+def grouped_objects(objects):
+    return {
+        oid for oid, obj in objects.items()
+        if obj.get("type") == "objet-de-donnees"
+    }
+
+
+class RetiredObjectTests(unittest.TestCase):
+    def setUp(self):
+        self.validator = load_validator()
+
+    def test_retirement_trace_declares_the_eight_retirements(self):
+        migration = self.validator.load_object_migration()
+
+        self.assertEqual(
+            {
+                "BO-01", "BO-02", "BO-03", "BO-04", "BO-05", "BO-06",
+                "BO-07", "CMP-09",
+            },
+            set(migration),
+        )
+        for legacy_id, entry in migration.items():
+            self.assertTrue(
+                entry["disposition"] in {"merged", "retired"}, legacy_id)
+            self.assertTrue(entry["rationale"], legacy_id)
+
+    def test_merged_component_names_its_primary_replacement(self):
+        migration = self.validator.load_object_migration()
+
+        self.assertEqual("CMP-10", migration["CMP-09"]["primary_replacement"])
+
+    def test_repository_has_no_residual_reference_to_retired_objects(self):
+        objects, _paths, _unresolved, _legacy = self.validator.load_relation_graph()
+        migration = self.validator.load_object_migration()
+
+        self.assertEqual([], self.validator.check_retired_objects(
+            objects, migration))
+
+    def test_object_type_business_object_no_longer_exists(self):
+        objects, _paths, _unresolved, _legacy = self.validator.load_relation_graph()
+
+        self.assertEqual([], [
+            oid for oid, obj in objects.items()
+            if obj.get("type") == "objet-metier"
+        ])
 
 class CanonicalMappingTests(unittest.TestCase):
     def setUp(self):

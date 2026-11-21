@@ -64,14 +64,14 @@ Cette couche applique physiquement et directement le pattern CQRS (ART-6). Elle 
 
 ## Couche 4 : Interopérabilité et services partagés
 
-Cette couche exécute la source de vérité au présent (Profil B d'ART-3) et les Référentiels Nationaux (ART-4). Elle associe CMP-06 moteur d'intégration & médiation (ART-2), CMP-07 orchestrateur de parcours / gestionnaire de Sagas (ART-8A), CMP-08 répertoire de données cliniques opérationnelles, CMP-09 référentiel des métadonnées d'exploitation (ART-4), CMP-10 registre des terminologies, CMP-11 registre des clients / Index National des Patients (INP : ART-4A), CMP-12 registre d'éligibilité et de couverture (CSU : ART-4C), CMP-13 registre des personnels, et CMP-14 registre des produits, intrants et indicateurs. Les objets de données métier normalisés ([objets-de-donnees](../03_objets-de-donnees/index.md)) alimentent la médiation sémantique de cette couche. Son statut est Stable.
+Cette couche exécute la source de vérité au présent (Profil B d'ART-3) et les Référentiels Nationaux (ART-4). Elle associe CMP-06 moteur d'intégration & médiation (ART-2), CMP-07 orchestrateur de parcours / gestionnaire de Sagas (ART-8A), CMP-08 répertoire de données cliniques opérationnelles, CMP-10 registre des terminologies (ART-4), CMP-11 registre des clients / Index National des Patients (INP : ART-4A), CMP-12 registre d'éligibilité et de couverture (CSU : ART-4C), CMP-13 registre des personnels, et CMP-14 registre des produits, intrants et indicateurs. Les objets de données métier normalisés ([objets-de-donnees](../03_objets-de-donnees/index.md)) alimentent la médiation sémantique de cette couche. Son statut est Stable.
 
 ### Composants associés
 
 - [CMP-06 : Intégration, Médiation, API Gateway, Broker & Registre schémas](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-06.md)
 - [CMP-07 : Orchestrateur de parcours & Gestionnaire de Sagas (ART-8A)](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-07.md)
 - [CMP-08 : Répertoire de données cliniques opérationnelles](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-08.md)
-- [CMP-09 : Référentiel des métadonnées d'exploitation (ART-4)](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-09.md)
+- 
 - [CMP-10 : Registre des terminologies](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-10.md)
 - [CMP-11 : Registre des clients / Index National des Patients (INP, ART-4A)](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-11.md)
 - [CMP-12 : Registre d'éligibilité et de couverture (CSU, ART-4C)](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-12.md)
@@ -272,7 +272,7 @@ package "Couche 4 : Interopérabilité" as C4 {
   component "CMP-06 : Intégration & médiation"
   component "CMP-07 : Orchestrateur de parcours"
   component "CMP-08 : Données cliniques opérationnelles"
-  component "CMP-09 : Métadonnées d'exploitation"
+  component " : Métadonnées d'exploitation"
   component "CMP-10 : Terminologies"
   component "CMP-11 : Index National des Patients"
   component "CMP-12 : Éligibilité & couverture"
@@ -374,7 +374,6 @@ Les chapitres et patterns de référence constituent le socle normatif de cette 
 - **CMP-06** : Intégration, Médiation, API Gateway, Broker & Registre schémas (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-06.md`)
 - **CMP-07** : Orchestrateur de parcours & Gestionnaire de Sagas (ART-8A) (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-07.md`)
 - **CMP-08** : Répertoire de données cliniques opérationnelles (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-08.md`)
-- **CMP-09** : Référentiel des métadonnées d'exploitation (ART-4) (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-09.md`)
 - **CMP-10** : Registre des terminologies (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-10.md`)
 - **CMP-11** : Registre des clients / Index National des Patients (INP : ART-4A) (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-11.md`)
 - **CMP-12** : Registre d'éligibilité et de couverture (CSU : ART-4C) (`04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-12.md`)

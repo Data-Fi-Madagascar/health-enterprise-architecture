@@ -93,10 +93,14 @@ GAP_METADATA_KEYS = ["gap_state", "closure_criteria"]
 # des relations du graphe : elles décrivent la valeur d'usage de la donnée et
 # ne créent donc aucune arête. `absorbs` est confronté à la trace de migration
 # `00_metamodel/do-migration.yaml`.
-DO_METADATA_KEYS = ["tier", "system_of_record", "absorbs"]
+DO_METADATA_KEYS = ["tier", "system_of_record", "absorbs", "theme"]
 DO_TIERS = {"A", "B", "C"}
 DO_MIGRATION_REL = os.path.join(
     ARCH_REPOSITORY_DIR, "00_metamodel", "do-migration.yaml")
+THEMES_REL = os.path.join(
+    ARCH_REPOSITORY_DIR, "00_metamodel", "themes.yaml")
+OBJECT_MIGRATION_REL = os.path.join(
+    ARCH_REPOSITORY_DIR, "00_metamodel", "object-migration.yaml")
 TYPE_ABB = "architecture-building-block"
 
 # Îlots légitimes attendus (candidats non encore reliés) — ne font pas échouer.
@@ -115,12 +119,11 @@ TYPE_PLATEAU = "plateau"
 TYPE_WORK_PACKAGE = "work-package"
 TYPE_EVIDENCE = "evidence"
 TYPE_OBJET_DONNEES = "objet-de-donnees"
-TYPE_OBJET_METIER = "objet-metier"
 TYPE_TERMINOLOGIE = "terminology"
 TYPE_COMPOSANT_TYPES = ("composant-applicatif", "composant-infrastructure",
                         "composant-securite", "composant-gouvernance",
                         "registre-gouvernance")
-ACCESSIBLE_TYPES = (TYPE_OBJET_DONNEES, TYPE_OBJET_METIER, TYPE_TERMINOLOGIE)
+ACCESSIBLE_TYPES = (TYPE_OBJET_DONNEES, TYPE_TERMINOLOGIE)
 GAP_STATES = {"identified", "planned", "in-remediation", "closed", "accepted-risk"}
 
 SCHEME_RE = re.compile(r"^[a-zA-Z][a-zA-Z0-9+.-]*://")
@@ -417,8 +420,8 @@ def check_access_relation_types(objects):
     """Vérifie que `accesses` ne cible que des objets ou des terminologies.
 
     Le pont données de la chaîne à quatre couches relie un composant, un
-    service ou un processus à un objet de données, un objet métier ou une
-    terminologie. Toute autre cible rompt la chaîne.
+    service ou un processus à un objet de données ou une terminologie. Toute
+    autre cible rompt la chaîne.
     """
     errors = []
     for oid, obj in sorted(objects.items()):
@@ -431,9 +434,8 @@ def check_access_relation_types(objects):
                     obj["file"],
                     oid,
                     target_id,
-                    "La relation accesses doit cibler un objet de données, un "
-                    "objet métier ou une terminologie, pas %s"
-                    % target.get("type"),
+                    "La relation accesses doit cibler un objet de données ou "
+                    "une terminologie, pas %s" % target.get("type"),
                 ))
     return errors
 
@@ -970,6 +972,256 @@ def check_retired_frontmatter_references(migration):
     return errors
 
 
+def load_themes(path=None):
+    """Charge le vocabulaire des thèmes de données.
+
+    Le fichier `04_architecture-repository/00_metamodel/themes.yaml` est
+    l'unique source de la liste des thèmes et de leurs libellés. Il ne
+    déclare pas le périmètre d'un thème : celui-ci résulte de la propriété
+    `theme` portée par chaque objet de données.
+    """
+    themes_path = path or os.path.join(REPO_ROOT, THEMES_REL)
+    if not os.path.exists(themes_path):
+        return {}
+    text = open(themes_path, encoding="utf-8").read()
+    raw = None
+    try:
+        import yaml
+        loaded = yaml.safe_load(text)
+        if isinstance(loaded, dict):
+            raw = loaded.get("themes") or []
+    except Exception:
+        raw = None
+    if raw is None:
+        raw = []
+        current = None
+        for line in text.splitlines():
+            match = re.match(r"^\s*-\s+slug:\s*(.+?)\s*$", line)
+            if match:
+                current = {"slug": match.group(1).strip().strip('"').strip("'")}
+                raw.append(current)
+                continue
+            match = re.match(r"^\s+([A-Za-z_][\w-]*):\s*(.*)$", line)
+            if match and current is not None:
+                value = match.group(2).strip()
+                if value.startswith("[") and value.endswith("]"):
+                    value = list_value(value)
+                else:
+                    value = value.strip('"').strip("'")
+                current[match.group(1)] = value
+
+    themes = {}
+    for entry in raw:
+        if not isinstance(entry, dict):
+            continue
+        slug = str(entry.get("slug", "")).strip()
+        if not slug:
+            continue
+        value_streams = entry.get("value_streams") or []
+        if isinstance(value_streams, str):
+            value_streams = list_value(value_streams)
+        themes[slug] = {
+            "slug": slug,
+            "label": str(entry.get("label", "") or slug),
+            "description": str(entry.get("description", "") or ""),
+            "value_streams": [str(v).strip() for v in value_streams if str(v).strip()],
+        }
+    return themes
+
+
+def load_object_migration(path=None):
+    """Charge la trace machine-lisible des objets retirés du référentiel.
+
+    Le fichier `04_architecture-repository/00_metamodel/object-migration.yaml`
+    est la seule source qui autorise la mention d'un identifiant retiré. Il
+    porte deux familles de retraits : les objets métier, dont la charge utile
+    est reprise par un thème de données, et les composants fusionnés.
+    """
+    migration_path = path or os.path.join(REPO_ROOT, OBJECT_MIGRATION_REL)
+    if not os.path.exists(migration_path):
+        return {}
+    text = open(migration_path, encoding="utf-8").read()
+    raw = None
+    try:
+        import yaml
+        loaded = yaml.safe_load(text)
+        if isinstance(loaded, list):
+            raw = loaded
+    except Exception:
+        raw = None
+    if raw is None:
+        raw = []
+        current = None
+        for line in text.splitlines():
+            match = re.match(r"^\s*-\s+legacy_id:\s*(.+?)\s*$", line)
+            if match:
+                current = {"legacy_id": match.group(1).strip().strip('"').strip("'")}
+                raw.append(current)
+                continue
+            match = re.match(r"^\s+([A-Za-z_][\w-]*):\s*(.*)$", line)
+            if match and current is not None:
+                value = match.group(2).strip()
+                if value.startswith("[") and value.endswith("]"):
+                    value = list_value(value)
+                else:
+                    value = value.strip('"').strip("'")
+                current[match.group(1)] = value
+
+    entries = {}
+    for entry in raw:
+        if not isinstance(entry, dict):
+            continue
+        legacy_id = str(entry.get("legacy_id", "")).strip().strip('"').strip("'")
+        if not legacy_id:
+            continue
+        replacement_ids = entry.get("replacement_ids", [])
+        if isinstance(replacement_ids, str):
+            replacement_ids = list_value(replacement_ids)
+        entries[legacy_id] = {
+            "legacy_id": legacy_id,
+            "legacy_type": str(entry.get("legacy_type", "")).strip(),
+            "disposition": str(entry.get("disposition", "")).strip(),
+            "theme": str(entry.get("theme", "")).strip(),
+            "primary_replacement": str(
+                entry.get("primary_replacement", "")).strip().strip('"').strip("'"),
+            "replacement_ids": {
+                str(value).strip().strip('"').strip("'")
+                for value in replacement_ids if str(value).strip()
+            },
+            "rationale": str(entry.get("rationale", "")).strip(),
+        }
+    return entries
+
+
+def check_theme_assignment(objects, themes, migration):
+    """Vérifie l'affectation des objets de données aux thèmes.
+
+    La propriété `theme` est une facette de classification : elle ne crée
+    aucune arête de relation, mais elle doit être présente, appartenir au
+    vocabulaire contrôlé, et reproduire exactement le périmètre que l'objet
+    métier retiré portait. Cette dernière exigence garantit que la retraite
+    des objets métier ne fait perdre aucune classification au corpus.
+    """
+    errors = []
+    themes_path = os.path.join(REPO_ROOT, THEMES_REL)
+    grouped = {}
+    for oid, obj in sorted(objects.items()):
+        if obj.get("type") != TYPE_OBJET_DONNEES:
+            continue
+        declared = sorted(obj.get("relations", {}).get("theme", set()))
+        if not declared:
+            errors.append((
+                obj["file"], oid, "theme",
+                "Objet de données sans thème de classification",
+            ))
+            continue
+        if len(declared) > 1:
+            errors.append((
+                obj["file"], oid, ", ".join(declared),
+                "Un objet de données ne porte qu'un seul thème",
+            ))
+            continue
+        theme = declared[0]
+        if theme not in themes:
+            errors.append((
+                obj["file"], oid, theme,
+                "Thème hors du vocabulaire contrôlé",
+            ))
+            continue
+        grouped.setdefault(theme, set()).add(oid)
+
+    for slug in sorted(themes):
+        if not grouped.get(slug):
+            errors.append((
+                themes_path, slug, slug,
+                "Thème du vocabulaire sans objet de données",
+            ))
+
+    for legacy_id, entry in sorted(migration.items()):
+        theme = entry.get("theme")
+        if not theme:
+            continue
+        expected = entry.get("replacement_ids", set())
+        actual = grouped.get(theme, set())
+        for missing in sorted(expected - actual):
+            errors.append((
+                themes_path, legacy_id, missing,
+                "Objet de données attendu dans le thème « %s »" % theme,
+            ))
+        for extra in sorted(actual - expected):
+            errors.append((
+                themes_path, legacy_id, extra,
+                "Objet de données absent du périmètre historique du thème "
+                "« %s »" % theme,
+            ))
+    return errors
+
+
+RETIRED_PROSE_ALLOWED_DIRS = ("01_cnisn/06_decisions",)
+RETIRED_PROSE_ALLOWED_FILES = (
+    os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "schema.md"),
+)
+FUSION_SECTION_RE = re.compile(r"^#{2,6}\s+(Fusions?|Retraits?)\s*$", re.IGNORECASE)
+
+
+def check_retired_objects(objects, migration):
+    """Vérifie qu'un objet retiré ne subsiste pas dans le corpus.
+
+    Trois formes de résidu sont refusées : l'objet lui-même, une relation qui
+    le cible, et une mention en prose qui le présenterait encore comme un
+    élément actif du référentiel. Seules sont tolérées les mentions qui
+    documentent le retrait : la décision qui l'a prononcé, la fiche de
+    métamodèle et la section de fusion de l'objet successeur.
+    """
+    errors = []
+    retired = set(migration)
+    if not retired:
+        return errors
+
+    for legacy_id in sorted(retired):
+        if legacy_id in objects:
+            errors.append((
+                objects[legacy_id]["file"], legacy_id, legacy_id,
+                "Un objet retiré figure encore comme objet actif",
+            ))
+
+    pattern = re.compile(
+        r"\b(?:%s)\b" % "|".join(sorted(re.escape(rid) for rid in retired)))
+
+    for path in iter_md(REPO_ROOT, LINK_DIRS):
+        rel_path = os.path.relpath(path, REPO_ROOT)
+        with open(path, encoding="utf-8") as fh:
+            text = fh.read()
+        fm, _body = parse_frontmatter(text)
+        if fm is not None:
+            for key in RELATION_KEYS:
+                for target_id in list_value(fm_field(fm, key)):
+                    if target_id in retired:
+                        errors.append((
+                            path, key, target_id,
+                            "Le frontmatter pointe vers un identifiant retiré",
+                        ))
+        allowed = (
+            rel_path in RETIRED_PROSE_ALLOWED_FILES
+            or rel_path.startswith(RETIRED_PROSE_ALLOWED_DIRS)
+        )
+        in_fusion = False
+        for number, line in enumerate(text.splitlines(), start=1):
+            stripped = line.strip()
+            if stripped.startswith("#"):
+                in_fusion = bool(FUSION_SECTION_RE.match(stripped))
+                continue
+            if allowed or in_fusion:
+                continue
+            for match in pattern.finditer(line):
+                errors.append((
+                    path, rel_path, match.group(0),
+                    "Mention en prose d'un identifiant retiré (ligne %d)"
+                    % number,
+                ))
+    return errors
+
+
 def check_partition_value_stream_coverage(objects):
     """Vérifie que chaque flux déclaré partage une capabilité avec sa partition."""
     errors = []
@@ -1367,7 +1619,7 @@ def main():
             print("  - %s (%s) -> %s : %s"
                   % (os.path.relpath(f, REPO_ROOT), source_id, target_id, message))
     else:
-        print("[OK] Toute relation accesses cible un objet de données, un objet métier ou une terminologie.")
+        print("[OK] Toute relation accesses cible un objet de données ou une terminologie.")
 
     semantic_type_errors = check_semantic_relation_types(objects)
     if semantic_type_errors:
@@ -1444,6 +1696,34 @@ def main():
     else:
         print("[OK] Les %d fusions du catalogue des objets de données sont tracées."
               % len(migration))
+
+    themes = load_themes()
+    object_migration = load_object_migration()
+    theme_errors = check_theme_assignment(objects, themes, object_migration)
+    if theme_errors:
+        ok = False
+        print("\n[ERREUR] Affectation des objets de données aux thèmes "
+              "invalide : %d" % len(theme_errors))
+        for f, source_id, target_id, message in theme_errors[:50]:
+            print("  - %s (%s) [%s] : %s"
+                  % (os.path.relpath(f, REPO_ROOT), source_id, target_id, message))
+    else:
+        print("[OK] Les %d objets de données sont répartis dans les %d thèmes "
+              "contrôlés." % (sum(1 for o in objects.values()
+                                   if o.get("type") == TYPE_OBJET_DONNEES),
+                              len(themes)))
+
+    retired_object_errors = check_retired_objects(objects, object_migration)
+    if retired_object_errors:
+        ok = False
+        print("\n[ERREUR] Objets retirés encore présents dans le corpus : %d"
+              % len(retired_object_errors))
+        for f, source_id, target_id, message in retired_object_errors[:50]:
+            print("  - %s (%s) [%s] : %s"
+                  % (os.path.relpath(f, REPO_ROOT), source_id, target_id, message))
+    else:
+        print("[OK] Les %d objets retirés ne subsistent ni comme objet, ni "
+              "comme relation, ni en prose." % len(object_migration))
 
     backing_errors = check_process_data_access_backing(objects)
     if backing_errors:

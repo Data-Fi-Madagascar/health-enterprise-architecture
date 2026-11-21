@@ -128,6 +128,14 @@ La déclaration `fhir_resources` fait foi sur la projection FHIR : le compilateu
 |----|-------|--------|------|--------------|--------|
 | ADR-0016 | La déclaration `fhir_resources` fait foi sur la projection FHIR des objets de données | **proposé** | 2026-11-21 | DEPSI | Élevé : interopérabilité R4 vérifiable |
 
+### Réduction de la redondance entre objets métier et composants
+
+La couche des objets métier est retirée du graphe : son périmètre est repris par une propriété `theme` portée par les vingt-trois objets de données, dont le vocabulaire est contrôlé. Le composant dupliqué CMP-09 est fusionné dans CMP-10. Les huit retraits sont tracés dans un fichier de migration dédié.
+
+| ID | Titre | Statut | Date | Propriétaire | Impact |
+|----|-------|--------|------|--------------|--------|
+| ADR-0017 | Retrait des objets métier au profit des thèmes de données et fusion dans CMP-10 | **proposé** | 2026-11-21 | DEPSI | Élevé : réduction de la redondance et vérifiabilité de la décomposition du domaine |
+
 
 ## Processus d'enregistrement
 
@@ -146,12 +154,12 @@ La déclaration `fhir_resources` fait foi sur la projection FHIR : le compilateu
 
 | Statut | Nombre |
 |--------|--------|
-| Proposé | 12 |
+| Proposé | 13 |
 | Accepté | 0 |
 | Appliqué | 4 |
 | Remplacé | 0 |
 | Déprécié | 0 |
-| **Total** | **16** |
+| **Total** | **17** |
 
 
 ## Liens
@@ -179,6 +187,7 @@ La déclaration `fhir_resources` fait foi sur la projection FHIR : le compilateu
 - **ADR-0014** : Rationalisation du catalogue des objets de données par fusion, gouvernance de la valeur d'usage et traçabilité des retraits (`01_cnisn/06_decisions/adr-0014-rationalisation-catalogue-donnees.md`)
 - **ADR-0015** : Deux emplois de l'accès aux données, adossement des arêtes de processus et autorité du système de référence (`01_cnisn/06_decisions/adr-0015-semantique-acces-donnees.md`)
 - **ADR-0016** : La déclaration `fhir_resources` fait foi sur la projection FHIR des objets de données (`01_cnisn/06_decisions/adr-0016-projection-fhir-source-de-verite.md`)
+- **ADR-0017** : Retrait des objets métier au profit des thèmes de données et fusion dans CMP-10 (`01_cnisn/06_decisions/adr-0017-reduction-redondance-objets-metier-composants.md`)
 - **Template ADR** : <Titre de la décision> (`01_cnisn/06_decisions/adr-0000-template.md`)
 - **Index des décisions** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
 - **Gouvernance** : Partie III : Gouvernance (`01_cnisn/03_gouvernance/index.md`)

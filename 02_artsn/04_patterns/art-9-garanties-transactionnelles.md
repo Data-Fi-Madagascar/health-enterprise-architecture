@@ -41,7 +41,7 @@ ART-9 : Garanties transactionnelles fortes constitue un chapitre du **cadre norm
 
 - **Rattachement** : recouvre partiellement [CAP-07: Protection financière, couverture santé universelle](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-07.md) (protection financière).
 - **Normes CNISN** : [ADR-0008: Audit ATNA](../../01_cnisn/06_decisions/adr-0008-atna.md) (journal d'audit immuable), [STD-0002: Sécurité et chiffrement](../../01_cnisn/05_standards/std-0002-securite-chiffrement.md).
-- **Objets de données** : [BO-03 Dispensation & produits](../../00_caesn/04_data/objets.md), [BO-04 Financement & couverture](../../00_caesn/04_data/objets.md) (objets métier CAESN) ; voir aussi le [dictionnaire des objets de données ARTSN](../03_objets-de-donnees/index.md).
+- **Thèmes de données** : [Dispensation & produits](../../00_caesn/04_data/objets.md#dispensation-produits), [Financement & couverture](../../00_caesn/04_data/objets.md#financement-couverture) (thèmes de données CAESN) ; voir aussi le [dictionnaire des objets de données ARTSN](../03_objets-de-donnees/index.md).
 - **Équation cible** : entrées − sorties = solde.
 - **Déduit selon** : [ENF-2: Intégrité des flux et traçabilité des valeurs](../../04_architecture-repository/03_requirements/enf-2.md) (grade comptable anti-fraude).
 - **Statut : Proposition ouverte.**

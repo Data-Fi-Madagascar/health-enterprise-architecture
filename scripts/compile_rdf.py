@@ -71,7 +71,6 @@ TYPE_TO_CLASS = {
     "plateau": "Plateau",
     "gap": "Gap",
     "objet-de-donnees": "ObjetDeDonnees",
-    "objet-metier": "ObjetMetier",
     "registre-gouvernance": "Composant",
     "valeur": "Valeur",
     # Types TOGAF introduits par le nouveau dépôt d'architecture.

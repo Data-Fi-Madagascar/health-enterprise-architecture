@@ -1,0 +1,75 @@
+# Vocabulaire des thèmes de données du référentiel HEA.
+#
+# Un thème est une facette de classification des objets de données, et non un
+# objet du graphe. Il succède aux sept « objets métier » BO-01 à BO-07,
+# retirés du catalogue par l'ADR-0017 : leur contenu utile n'a pas disparu,
+# il est désormais porté par la propriété `theme` de chaque objet de données.
+#
+# Comme `tier` et `system_of_record`, la propriété `theme` est une
+# métadonnée de classification : elle ne crée aucune arête de relation. Elle
+# est contrôlée par `scripts/validate_ref.py`, qui refuse un objet de données
+# sans thème, un thème hors vocabulaire, et un thème dont le périmètre diffère
+# de celui que l'objet métier retiré portait.
+#
+# `legacy_object` désigne l'identifiant de l'objet métier qui portait
+# historiquement ce thème. La trace complète du retrait, avec la liste des
+# objets de données que chaque thème recouvre, se trouve dans
+# `00_metamodel/object-migration.yaml`.
+#
+# `value_streams` déclare la couverture en flux de valeur du thème. Cette
+# information n'est pas dérivable du graphe : les objets de données ne portent
+# que leurs capacités, et une capacité habilitante s'applique à l'ensemble des
+# flux de valeur. Elle est déclarée ici pour que la retraite des objets métier
+# ne perde aucune information.
+#
+# Le périmètre d'un thème n'est pas déclaré ici : il résulte de la propriété
+# `theme` de chaque objet de données. La partition elle-même n'existe donc
+# qu'à un seul endroit.
+themes:
+  - slug: "patient-identite"
+    label: "Patient & identité"
+    legacy_object: "BO-01"
+    value_streams: ["VS-01", "VS-03"]
+    description: >-
+      Identité de la personne prise en charge, épisodes de soins, dossier et
+      référencements. Pilier de toute continuité de prise en charge.
+  - slug: "prestation-soins"
+    label: "Prestation & soins"
+    legacy_object: "BO-02"
+    value_streams: ["VS-01", "VS-02"]
+    description: >-
+      Actes cliniques, prescriptions, références et évacuations constituant le
+      parcours de soins.
+  - slug: "dispensation-produits"
+    label: "Dispensation & produits"
+    legacy_object: "BO-03"
+    value_streams: ["VS-01", "VS-02", "VS-04"]
+    description: >-
+      Médicaments, produits de santé, lots et stocks dispensés sur le terrain.
+  - slug: "financement-couverture"
+    label: "Financement & couverture"
+    legacy_object: "BO-04"
+    value_streams: ["VS-03", "VS-04"]
+    description: >-
+      Éligibilité, couverture, facturation et vérification financière des
+      soins.
+  - slug: "risque-surveillance"
+    label: "Risque & surveillance"
+    legacy_object: "BO-05"
+    value_streams: ["VS-02", "VS-04"]
+    description: >-
+      Signaux, foyers, investigations et alertes de surveillance sanitaire, y
+      compris dans une perspective One Health.
+  - slug: "exploitation-gestion"
+    label: "Exploitation & gestion"
+    legacy_object: "BO-06"
+    value_streams: ["VS-01", "VS-02", "VS-03", "VS-04"]
+    description: >-
+      Structures, agents, indicateurs, zones et tableaux de bord de pilotage.
+  - slug: "interop-transfrontalier"
+    label: "Interopérabilité transfrontalière"
+    legacy_object: "BO-07"
+    value_streams: ["VS-02"]
+    description: >-
+      Résumé patient international, sections et confiance pour les échanges
+      hors frontières.

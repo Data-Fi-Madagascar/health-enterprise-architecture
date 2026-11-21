@@ -11,9 +11,9 @@ envelope: 02_artsn/06_services/srv-02-service-de-dossier-patient.md
 categorie: applicatif
 serves: ["PP-05"]
 realizes: ["CAP-01"]
-accesses: ["BO-01", "DO-01"]
+accesses: ["DO-01"]
 implements: ["ART-2"]
-related: ["PP-05", "CAP-01", "BO-01", "DO-01", "ART-2", "CMP-09"]
+related: ["PP-05", "CAP-01", "DO-01", "ART-2", "CMP-10"]
 tags: ["artsn", "service", "srv-02", "patterns"]
 ---
 
@@ -25,7 +25,7 @@ tags: ["artsn", "service", "srv-02", "patterns"]
 
 Le service de dossier patient centralise et restitue l'historique clinique d'un bénéficiaire, garantissant sa continuité entre les structures. Il est le point de convergence des soins prodigués sur le terrain.
 
-Service de catégorie *applicatif*, il [sert l'agent de santé](../../04_architecture-repository/02_architecture-elements/motivation/stakeholders/pp-05.md), [réalise la capacité « Offre de soins et continuité »](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md), [accède à l'objet métier Patient](../../04_architecture-repository/02_architecture-elements/business/business-objects/bo-01.md) et à l'[objet de données du dossier](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-01.md). Il [met en œuvre le chapitre ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md) et s'appuie sur le [composant de dossiers](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-09.md).
+Service de catégorie *applicatif*, il [sert l'agent de santé](../../04_architecture-repository/02_architecture-elements/motivation/stakeholders/pp-05.md), [réalise la capacité « Offre de soins et continuité »](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md), [accède à l'objet de données Patient](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-01.md). Il [met en œuvre le chapitre ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md) et s'appuie sur le [registre des terminologies](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-10.md).
 
 ## Catégorie
 

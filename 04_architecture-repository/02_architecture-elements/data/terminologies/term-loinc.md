@@ -16,10 +16,10 @@ architecture_scope: semantics
 architecture_state: target
 maps_to: ["CAP-13", "CAP-14"]
 implements: ["ART-2", "ART-4"]
-related: ["TERM-CIM-11", "TERM-CODIFICATION-COMMUNE", "CMP-09", "CMP-10", "STD-0006"]
+related: ["TERM-CIM-11", "TERM-CODIFICATION-COMMUNE", "CMP-10", "STD-0006"]
 constrains: ["DO-20", "DO-32"]
 tags: ["artsn", "terminology", "term-loinc"]
-accessed_by: ["CMP-09", "CMP-10"]
+accessed_by: ["CMP-10"]
 ---
 # TERM-LOINC : Terminologie des observations de laboratoire
 
@@ -39,7 +39,7 @@ Fournir le referentiel international des observations de laboratoire, afin que l
 
 ## Rattachement
 
-- **Composants porteurs** : [CMP-09](../../../05_building-blocks/abb/legacy-components/cmp-09.md), [CMP-10](../../../05_building-blocks/abb/legacy-components/cmp-10.md)
+- **Composants porteurs** : , [CMP-10](../../../05_building-blocks/abb/legacy-components/cmp-10.md)
 - **Service de codification** : [SRV-03 : Service de terminologie et codification communes](../../../05_building-blocks/abb/legacy-services/srv-03.md)
 - **Terminologie chapeau** : [TERM-CODIFICATION-COMMUNE : Terminologie et codification communes](term-codification-commune.md)
 - **Norme de référence** : [STD-0006](../../../../01_cnisn/05_standards/std-0006-terminologie.md)

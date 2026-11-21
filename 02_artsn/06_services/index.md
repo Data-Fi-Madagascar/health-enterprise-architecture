@@ -22,4 +22,4 @@ Catalogue des services de l'architecture de référence, déclinés par catégor
 | [SRV-05: Service logistique (LMIS)](srv-05-service-logistique-lmis.md) | applicatif | PP-06 | ABB-AUDIT-PROVENANCE | ART-10 |
 | [SRV-06: Service de pilotage et tableaux de bord](srv-06-service-de-pilotage-et-tableaux-de-bord.md) | applicatif | PP-07 | CAP-03 | ART-3 |
 
-Ces services s'appuient sur les composants de la couche application (CMP-08 à CMP-12, CMP-23) et sur les objets métier/domaine (BO-01, DO-01 à DO-03).
+Ces services s'appuient sur les composants de la couche application (CMP-08 à CMP-12, CMP-23) et sur les objets de données (DO-01 à DO-03).
