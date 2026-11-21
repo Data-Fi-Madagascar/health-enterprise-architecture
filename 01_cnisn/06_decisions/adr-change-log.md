@@ -47,6 +47,14 @@ Chaque entree suit le format :
 
 ## Historique des modifications
 
+### [2026-11-21] - Creation - ADR-0013
+- **Auteur** : Equipes DEPSI
+- **Description** : Creation de la decision qui enregistre la taxonomie des fonctions de domaine transmise par le Ministere comme reference de couverture, sans creation de couche ni de type d'objet. La decision arbitre trois fonctions par absorption dans des capacites existantes et en laisse cinq a l'arbitrage ministeriel. Elle etablit egalement la regle d'adossement : tout objet de donnees declare les capacites qu'il sert via `maps_to`, et toute capacite declaree doit etre realisee par au moins un processus qui manipule l'objet.
+- **Statut initial** : `candidate`
+- **Justification** : Rendre la chaine descendant de la capacite vers la donnee verifiable par l'outil. La mesure sur le corpus avant correction relevait vingt-cinq attributions contradictoires reparties sur dix-sept objets de donnees.
+- **Liens** : [ADR-0013](adr-0013-cadrage-fonctions-domaine.md), [CAP-01](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md), [CAP-07](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-07.md), [CAP-10](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-10.md), [CAP-13](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md), [Chaine a quatre couches](../../04_architecture-repository/00_metamodel/schema.md)
+- **Impact** : Le validateur du referentiel refuse desormais un objet de donnees sans attribution de capacite, une attribution visant autre chose qu'une capacite, et une capacite declaree non realisee par un processus accessor. Les cinq arbitrages ministeriels restent ouverts.
+
 ### [2026-09-24] - Creation - ADR-0011
 - **Auteur** : Equipes DEPSI
 - **Description** : Creation de la decision qui institue un service distinct d'eligibilite et de couverture, separe des responsabilites de resolution d'identite et de consentement. Les echanges de couverture et de verification des droits utilisent HL7 FHIR R4.

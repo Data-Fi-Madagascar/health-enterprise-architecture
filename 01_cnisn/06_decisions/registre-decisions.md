@@ -96,6 +96,14 @@ Le rattachement sectoriel distingue la surveillance et la riposte du pilotage in
 |----|-------|--------|------|--------------|--------|
 | ADR-0012 | Rattachement One Health à la surveillance et au pilotage | **proposé** | 2026-09-24 | DEPSI | Élevé : coordination et redevabilité intersectorielles |
 
+### Cadrage fonctionnel et chaîne de traçabilité
+
+La taxonomie des fonctions de domaine est enregistrée comme référence de couverture et non comme couche. La règle d'adossement entre capacité déclarée et processus qui manipule l'objet rend la chaîne vers les données vérifiable.
+
+| ID | Titre | Statut | Date | Propriétaire | Impact |
+|----|-------|--------|------|--------------|--------|
+| ADR-0013 | Taxonomie des fonctions de domaine comme référence de couverture et réconciliation de la chaîne vers les données | **proposé** | 2026-11-21 | DEPSI | Élevé : complétude fonctionnelle et vérifiabilité de la chaîne |
+
 
 ## Processus d'enregistrement
 
@@ -114,12 +122,12 @@ Le rattachement sectoriel distingue la surveillance et la riposte du pilotage in
 
 | Statut | Nombre |
 |--------|--------|
-| Proposé | 8 |
+| Proposé | 9 |
 | Accepté | 0 |
 | Appliqué | 4 |
 | Remplacé | 0 |
 | Déprécié | 0 |
-| **Total** | **12** |
+| **Total** | **13** |
 
 
 ## Liens
@@ -143,6 +151,7 @@ Le rattachement sectoriel distingue la surveillance et la riposte du pilotage in
 - **ADR-0010** : Cadre légal et mandat d'opposabilité du CNASN (`01_cnisn/06_decisions/adr-0010-cadre-legal.md`)
 - **ADR-0011** : Séparation du service d'éligibilité et de couverture (`01_cnisn/06_decisions/adr-0011-eligibilite-couverture.md`)
 - **ADR-0012** : Rattachement One Health à la surveillance et au pilotage (`01_cnisn/06_decisions/adr-0012-one-health-pilotage.md`)
+- **ADR-0013** : Taxonomie des fonctions de domaine comme référence de couverture et réconciliation de la chaîne vers les données (`01_cnisn/06_decisions/adr-0013-cadrage-fonctions-domaine.md`)
 - **Template ADR** : <Titre de la décision> (`01_cnisn/06_decisions/adr-0000-template.md`)
 - **Index des décisions** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
 - **Gouvernance** : Partie III : Gouvernance (`01_cnisn/03_gouvernance/index.md`)

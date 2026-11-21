@@ -1,0 +1,174 @@
+---
+title: "ADR-0013 : Taxonomie des fonctions de domaine comme référence de couverture et réconciliation de la chaîne vers les données"
+sidebarTitle: "ADR-0013"
+description: "Niveau 2 — Règles d'interopérabilité entre systèmes d'information de santé"
+owner: "DEPSI"
+version: "1.0.0"
+status: "candidate"
+---
+
+## Pour qui lire ce document
+
+**Niveau :** niveau 2 : Cadre National d'Interopérabilité de la Santé Numérique.
+
+| Profil | Lecture |
+|--------|---------|
+| Décideurs institutionnels | ● |
+| Directions métier / programmes | ● |
+| DEPSI / équipes techniques | ● |
+| SIS / données / suivi-évaluation | ◐ |
+| Partenaires techniques et financiers | ○ |
+
+Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle.
+
+- **Statut** : proposé
+- **Date** : 2026-11-21
+- **Groupe concerné** : DEPSI, CNASN, directions techniques du Ministère de la Santé
+
+## Contexte
+
+Le Ministère de la Santé a transmis une taxonomie des fonctions de domaine de la santé numérique, répartie en six domaines et trente-trois fonctions. Cette liste est une nomenclature fonctionnelle de référence : elle décrit ce que le système de santé doit savoir faire, et non comment il est réalisé. Elle recoupe le cadre d'architecture sans s'y substituer.
+
+Deux questions se posaient au moment de son examen. La première est de couverture : quelles fonctions de la taxonomie sont aujourd'hui portées par une capacité du cadre CAESN, et lesquelles ne le sont pas. La seconde est de cohérence interne : la chaîne d'architecture à quatre couches, capacité, processus, composant, données, ne se lisait pas jusqu'au bout sur la couche données.
+
+Le second point a été mesuré sur le corpus avant correction. Sur les trente-et-un objets de données du référentiel, dix-sept portaient au total vingt-cinq attributions de capacité qu'aucun processus ne réalisaient. Un objet de données pouvait ainsi déclarer être au service d'une capacité sans qu'aucun des processus qui le manipulent ne porte cette responsabilité. Le cas le plus frappant concernait le bloc des cinq objets de risque, signal, foyer, investigation, notification et alerte, qui déclaraient tous deux mêmes capacités sans lien avec la surveillance, et les objets de référence et de contre-référence, qui attribuaient à la fois la gestion du parcours patient et la surveillance épidémiologique. La conséquence était directe : la chaîne descendant de la capacité vers la donnée ne pouvait pas être vérifiée, et le validateur du référentiel ne le vérifiait pas.
+
+## Décision
+
+### La taxonomie devient une référence de couverture, pas une couche
+
+La taxonomie des trente-trois fonctions est enregistrée dans le présent ADR comme **référence de couverture** : un instrument de comparaison entre le vocabulaire fonctionnel du Ministère et les capacités du cadre. Elle ne crée aucun type d'objet, aucune numérotation et aucune couche d'architecture. La couche de valeur du CAESN reste l'unique expression de l'offre nationale de santé, et le référentiel conserve ses quatre couches.
+
+Ce choix est structurant : une taxonomie fonctionnelle introduite comme couche parallèle produirait deux vocabulaires concurrents pour décrire la même réalité, sans relation typée entre eux, et romprait la lecture verticale du référentiel. En la conservant comme référence, on obtient au contraire un instrument de contrôle : à chaque nouvelle capacité, on peut vérifier qu'elle porte effectivement l'une des fonctions de référence, et à chaque fonction de référence, on peut vérifier qu'une capacité la porte.
+
+La matrice de couverture figure en annexe. Vingt-cinq fonctions sont portées par une capacité existante, trois fonctions sont absorbées dans des capacités existantes, et cinq fonctions restent à arbitrer par le Ministère.
+
+### Trois absorptions
+
+Trois fonctions de la taxonomie sont couvertes par des capacités existantes, mais sans que la capacité ne les nomme explicitement. Elles sont absorbées, sans création d'objet ni de module supplémentaire.
+
+| Fonction de la taxonomie | Capacité d'absorption | Justification |
+|---------------------------|----------------------|---------------|
+| Pharmacovigilance et assurance qualité des produits de santé | CAP-10 | La traçabilité et la qualité, lots, chaîne du froid et sécurité des produits, sont déjà portées par la gestion des médicaments, vaccins et intrants. |
+| Santé environnementale et santé au travail | CAP-18 et CAP-08 | La coordination intersectorielle porte l'articulation avec l'environnement et la santé animale ; la gouvernance institutionnelle porte la coordination et la redevabilité correspondantes. |
+| Tarification et gestion du package de prestations | CAP-07 et CAP-12 | L'achat stratégique, soutien à la contractualisation et au paiement des prestataires, et la couverture et protection financière relèvent de la protection financière et des finances publiques de santé. |
+
+### Cinq fonctions laissées à l'arbitrage ministériel
+
+Cinq fonctions de la taxonomie ne sont portées par aucune capacité actuelle. Elles ne sont pas arbitrées par le cadre d'architecture : elles le sont par le Ministère, qui connaît la répartition des mandats entre directions techniques. Elles sont consignées ici comme des fonctions à arbitrer, avec les capacités candidates.
+
+| Fonction de la taxonomie | Capacités candidates | Arbitre pressenti |
+|---------------------------|----------------------|--------------------|
+| Santé de la mère, du nouveau-né et de l'enfant | CAP-01, CAP-04, CAP-06 | Direction de la santé de la famille |
+| Gestion des maladies chroniques | CAP-01, et création à instruire | Direction des maladies non transmissibles |
+| Diagnostic et services de laboratoire | CAP-01, CAP-13 | Direction des programmes de santé |
+| Dépôt et adjudication des réclamations | CAP-07, CAP-13 | Direction du financement de la santé |
+| État civil et statistiques vitales | CAP-13, CAP-05 | Ministère de l'Intérieur et CNASN, hors périmètre technique actuel |
+
+Aucune de ces cinq fonctions ne peut être déclarée couverte tant que l'arbitrage n'est pas rendu. Tant qu'il n'est pas rendu, la traçabilité descendante ne peut pas être complète, et c'est pourquoi la question est portée ici plutôt que masquée par une attribution de convenience.
+
+### La chaîne est adossée à la déclaration
+
+L'attribution de portée d'un objet de données devient une déclaration vérifiable. Tout objet de données déclare, dans son frontmatter, les capacités CAESN qu'il sert, au moyen de la relation `maps_to`. Toute capacité ainsi déclarée doit être réalisée par au moins un processus métier qui manipule l'objet. Cette règle est contrôlée par `scripts/validate_ref.py`, qui refuse un objet de données sans attribution, une attribution visant autre chose qu'une capacité, et une capacité déclarée qu'aucun processus accessor ne réalise.
+
+La correction a porté sur dix-sept objets de données et vingt-cinq attributions. Dans chaque cas, l'anomalie a été localisée puis résolue dans le sens qui rendait la chaîne vérifiable : soit la déclaration était erronée et a été restreinte aux capacités réellement servies, soit la chaîne était interrompue et le processus responsable a été relié à l'objet. Six liens de processus vers objet ont ainsi été rétablis, sur l'orientation et l'admission, la continuité du suivi, la prestation des soins cliniques, la veille et la prévention, le financement au point de service et la planification des ressources.
+
+Le gain n'est pas seulement documentaire. La règle rend la chaîne descendante lisible par un tiers : lorsqu'un objet de données déclare une capacité, le lecteur peut remonter au processus qui la réalise, puis au composant qui le sert, sans reconstituer les relations à la main.
+
+## Justification
+
+La démarche collaborative HEAL soutient l'analyse des besoins avec les institutions de terrain : la taxonomie du Ministère est un matériau d'entretiens, et le référentiel doit pouvoir en absorber le vocabulaire sans le subir structurellement. Le HEAF impose une décomposition en valeurs et en capacités : la taxonomie est un bon moyen de vérifier que cette décomposition reste complète, et un mauvais moyen de la concurrencer. Le HEART impose la réutilisation d'artefacts : absorber une fonction dans une capacité existante préserve cette exigence, là où une capacité nouvelle créerait un îlot à financer et à gouverner.
+
+La règle d'adossement mérite une justification propre. Elle ne demande pas au corpus d'exprimer la même chose deux fois. Elle exige qu'une affirmation de portée soit corroborée par une relation structurelle. Un objet de données qui se déclare au service d'une capacité doit être manipulé par un processus qui réalise cette capacité : c'est la condition minimale pour que la chaîne ne soit pas une narration. La règle est volontairement faible, puisqu'elle admet qu'un objet soit manipulé par plusieurs processus dont les capacités réalisées diffèrent, et qu'une capacité déclarée soit réalisée par l'un d'eux seulement. Elle est suffisante pour interdire l'attribution orpheline, qui est la forme que l'erreur avait prise dans le corpus.
+
+La distinction entre la déclaration et la chaîne a été conservée dans le sens où le permet le corpus. Les objets de données dont la déclaration était fausse ont vu leur attribution restreinte : le stock de produits de santé ne relève pas de la chaîne d'approvisionnement pour la seule raison qu'il est un stock, et l'éligibilité financière ne relève pas de la gestion du parcours patient. Les objets dont la déclaration était juste mais la chaîne interrompue ont vu le processus responsable relié : la référence et la contre-référence sont bien des objets de gestion du parcours patient, et le processus qui oriente le patient les manipule.
+
+## Conséquences
+
+### Positives
+
+- La taxonomie du Ministère est opposable au cadre, fonction par fonction, sans introduire de vocabulaire concurrent.
+- La chaîne descendant de la capacité vers la donnée devient vérifiable par l'outil et non seulement par la lecture.
+- Les huit fonctions qui n'étaient pas portées par une capacité sont maintenant identifiées, localisées et attribuées à un arbitre.
+- La règle d'adossement s'applique par construction à toute capacité, tout objet de données et tout processus ajoutés ultérieurement.
+
+### Négatives
+
+- Le corpus gagne une contrainte de maintenance : toute évolution d'un objet de données ou d'un processus doit préserver l'adossement, faute de quoi le validateur échoue.
+- Les cinq arbitrages ministériels restent ouverts et font partie des prérequis de complétude de la chaîne.
+- La correction d'attribution a modifié le contenu de plusieurs objets de données, ce qui impose une relecture par les directions métier concernées.
+
+## Alternatives considérées
+
+| Alternative | Raison du refus |
+|-------------|-----------------|
+| Introduire la taxonomie comme cinquième couche du référentiel | Deux vocabulaires concurrents décrivent la même réalité sans relation typée ; la lecture verticale du référentiel devient impossible et la valeur CAESN perd son rôle de pivot unique. |
+| Créer une capacité par fonction de la taxonomie | Trente-trois capacités pour trente-trois fonctions produisent un référentiel plat, sans hiérarchie de valeur, et un îlot de gouvernance par fonction. |
+| Créer une capacité par fonction orpheline | Les huit fonctions concernées relèvent de mandats ministériels et non de choix d'architecture ; le cadre ne peut pas préempter cette répartition. |
+| Conserver les attributions de capacité telles quelles et les documenter | L'écart entre la déclaration et la chaîne devient invisible et non contrôlable ; c'est précisément l'état que la mesure a révélé. |
+| Renoncer à l'attribution de portée des objets de données | La couche données reste portée uniquement par ses composants et aucune relation ne relie l'objet à ce qu'il sert pour le système. |
+| Contrôler l'adossement par revue documentaire plutôt que par le validateur | Le contrôle manuel n'est pas reproductible et ne protège pas les évolutions futures du corpus. |
+
+## Annexe : matrice de couverture de la taxonomie
+
+La taxonomie de référence a été transmise en anglais ; la colonne des fonctions est donnée ici dans sa traduction de travail. Le statut traduit la position arrêtée par le présent ADR.
+
+| Domaine | Fonction | Capacité porteuse | Statut |
+|---------|----------|-------------------|--------|
+| Prestation de soins et services cliniques | Identification et enregistrement du patient | CAP-07, CAP-14, CAP-17 | Couverte |
+| Prestation de soins et services cliniques | Soins ambulatoires et de proximité | CAP-01 | Couverte |
+| Prestation de soins et services cliniques | Soins hospitaliers et urgences | CAP-01 | Couverte |
+| Prestation de soins et services cliniques | Santé de la mère, du nouveau-né et de l'enfant | CAP-01, CAP-04, CAP-06 | À arbitrer |
+| Prestation de soins et services cliniques | Gestion de la vaccination | CAP-06 | Couverte |
+| Prestation de soins et services cliniques | Gestion des maladies transmissibles et chroniques | CAP-01, CAP-05 | À arbitrer |
+| Prestation de soins et services cliniques | Diagnostic et services de laboratoire | CAP-01, CAP-13 | À arbitrer |
+| Prestation de soins et services cliniques | Pharmacie et dispensation | CAP-10 | Couverte |
+| Prestation de soins et services cliniques | Référence et coordination des soins | CAP-02 | Couverte |
+| Santé publique et surveillance de population | Surveillance des maladies et notification des cas | CAP-05 | Couverte |
+| Santé publique et surveillance de population | Investigation et riposte aux épidémies | CAP-05, CAP-18 | Couverte |
+| Santé publique et surveillance de population | État civil et statistiques vitales | CAP-13, CAP-05 | À arbitrer |
+| Santé publique et surveillance de population | Santé environnementale et santé au travail | CAP-18, CAP-08 | Absorbée |
+| Santé publique et surveillance de population | Promotion de la santé et engagement communautaire | CAP-04, CAP-06 | Couverte |
+| Chaîne d'approvisionnement et produits de santé | Prévision et quantification des besoins | CAP-10 | Couverte |
+| Chaîne d'approvisionnement et produits de santé | Achats et approvisionnement | CAP-10 | Couverte |
+| Chaîne d'approvisionnement et produits de santé | Stockage et gestion des stocks | CAP-10 | Couverte |
+| Chaîne d'approvisionnement et produits de santé | Distribution et chaîne du froid | CAP-10, CAP-11 | Couverte |
+| Chaîne d'approvisionnement et produits de santé | Pharmacovigilance et assurance qualité | CAP-10, CAP-03 | Absorbée |
+| Gestion des ressources humaines en santé | Registre des professionnels et autorisation d'exercice | CAP-09 | Couverte |
+| Gestion des ressources humaines en santé | Planification et déploiement des effectifs | CAP-09 | Couverte |
+| Gestion des ressources humaines en santé | Formation initiale et continue | CAP-09 | Couverte |
+| Gestion des ressources humaines en santé | Paie, présence et performance | CAP-09, CAP-03 | Couverte |
+| Financement et assurance maladie | Enregistrement et éligibilité des bénéficiaires | CAP-07 | Couverte |
+| Financement et assurance maladie | Tarification et gestion du package de prestations | CAP-07, CAP-12 | Absorbée |
+| Financement et assurance maladie | Dépôt et adjudication des réclamations | CAP-07, CAP-13 | À arbitrer |
+| Financement et assurance maladie | Budget et suivi des dépenses | CAP-12 | Couverte |
+| Gouvernance, données et infrastructure | Registre des formations sanitaires et données de référence | CAP-14, CAP-11 | Couverte |
+| Gouvernance, données et infrastructure | Échange d'information de santé et interopérabilité | CAP-14 | Couverte |
+| Gouvernance, données et infrastructure | Information sanitaire de routine et analyse | CAP-13 | Couverte |
+| Gouvernance, données et infrastructure | Protection des données personnelles et cybersécurité | CAP-15 | Couverte |
+| Gouvernance, données et infrastructure | Régulation, accréditation et qualité | CAP-08, CAP-03 | Couverte |
+| Gouvernance, données et infrastructure | Infrastructure numérique et connectivité | CAP-11, CAP-14 | Couverte |
+
+La matrice fait apparaître que la capacité CAP-16, gestion du portefeuille d'initiatives numériques, n'est pas mobilisée par la taxonomie des fonctions de domaine. Cette absence est attendue : le portefeuille d'initiatives est un objet de gouvernance du programme numérique et non une fonction de santé offerte au citoyen. La taxonomie ne contrôle donc pas la complétude du cadre CAESN, elle en contrôle la partie fonctionnelle.
+
+## Références
+
+- CAP-01 : Offre de soins et continuité des services
+- CAP-02 : Gestion du parcours patient, référence et contre-référence
+- CAP-03 : Qualité, sécurité des soins et amélioration continue
+- CAP-04 : Santé communautaire et engagement des communautés
+- CAP-05 : Surveillance épidémiologique, alerte, investigation et riposte
+- CAP-06 : Vaccination, prévention et promotion de la santé
+- CAP-07 : Protection financière, couverture santé universelle
+- CAP-08 : Gouvernance institutionnelle, planification, coordination et redevabilité
+- CAP-09 : Gestion des ressources humaines en santé
+- CAP-10 : Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement
+- CAP-11 : Gestion des infrastructures, équipements et maintenance
+- CAP-12 : Finances publiques, budget et allocation des ressources
+- CAP-13 : Système d'information sanitaire, données et recherche
+- CAP-14 : Interopérabilité, référentiels nationaux et infrastructure numérique partagée
+- CAP-15 : Cybersécurité, confidentialité et gouvernance des données personnelles
+- CAP-17 : Engagement patient et identité numérique
+- CAP-18 : Coordination intersectorielle (One Health)
+- Chaîne à quatre couches et règles d'intégrité
+- [ADR-0012 : Rattachement One Health à la surveillance et au pilotage](/cnisn/decisions/adr-0012-one-health-pilotage)

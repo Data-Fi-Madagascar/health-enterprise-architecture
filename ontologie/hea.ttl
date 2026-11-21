@@ -374,15 +374,16 @@ hea:contributesTo rdf:type owl:ObjectProperty ;
 
 # --- Mapping inter-niveaux (Association, extension domain-specific) ---
 # Pas de relationship ArchiMate standard pour la correspondance cross-layer.
-# Utilisé comme Association avec contraintes de domaine/range.
+# Association générique de correspondance entre couches. Le type autorisé de
+# la cible dépend du type de la source et est contrôlé par les shapes SHACL
+# (hea-shapes.ttl), qui décrivent mieux que l'ontologie la réalité du corpus :
+# un profil correspond à un chapitre, un composant à une capacité, un objet
+# de données à une capacité, etc.
 hea:mapsTo rdf:type owl:ObjectProperty ;
     rdfs:label "correspond à" ;
-    rdfs:comment "Association ArchiMate — correspondance inter-niveaux (Profil→objet de référence/Chapitre/Fondation)" ;
-    rdfs:domain hea:Profil ;
-    rdfs:range [
-        rdf:type owl:Class ;
-        owl:unionOf (hea:CapaciteInteroperabilite hea:Chapitre hea:Fondation hea:Composant)
-    ] .
+    rdfs:comment "Association ArchiMate — correspondance inter-couches (profil, chapitre, exigence, patron, contrat, composant, objet de données vers référentiel, capacité, partition ou composant). Le type de la cible est contraint par source dans les shapes SHACL." ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Resource .
 
 # --- Implements (Realization, extension domain-specific) ---
 # Un profil met en œuvre un chapitre ou une fondation.

@@ -150,37 +150,37 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | DA-06 | Les données doivent être utilisées pour des décisions réelles | VS-01, VS-02, VS-03, VS-04 | draft | DA-06 |
 | DA-07 | Les données personnelles de santé doivent être protégées dès la conception | VS-01, VS-02, VS-03, VS-04 | draft | DA-07 |
 | DA-08 | Les échanges de données doivent passer par des mécanismes gouvernés | VS-01, VS-02, VS-03, VS-04 | draft | DA-08 |
-| DO-01 | DO-01 : Patient | ART-2, ART-4, ART-7, BO-01 | draft | DO-01 |
-| DO-02 | DO-02 : Identifiant national d'identification | ART-2, ART-4, ART-7, BO-01 | draft | DO-02 |
-| DO-03 | DO-03 : Dossier patient | ART-2, ART-4, ART-7, BO-01 | draft | DO-03 |
-| DO-04 | DO-04 : Épisode de soins | ART-2, ART-4, ART-7, BO-01 | draft | DO-04 |
-| DO-05 | DO-05 : Consultation | ART-2, ART-3, BO-02, TERM-CIM-11 | draft | DO-05 |
-| DO-06 | DO-06 : Prescription | ART-2, ART-3, BO-02, TERM-SNOMED-CT, TERM-RXNORM, TERM-ATC, TERM-DCI | draft | DO-06 |
-| DO-07 | DO-07 : Référence | ART-2, ART-3, BO-02 | draft | DO-07 |
-| DO-08 | DO-08 : Contre-référence | ART-2, ART-3, BO-02 | draft | DO-08 |
-| DO-09 | DO-09 : Évacuation sanitaire | ART-2, ART-3, BO-02 | draft | DO-09 |
-| DO-10 | DO-10 : Dispensation | ART-2, ART-4, ART-9, BO-03, TERM-SNOMED-CT, TERM-RXNORM, TERM-ATC, TERM-DCI | draft | DO-10 |
-| DO-11 | DO-11 : Produit de santé | ART-2, ART-4, ART-9, BO-03, TERM-SNOMED-CT, TERM-RXNORM, TERM-ATC, TERM-DCI | draft | DO-11 |
-| DO-12 | DO-12 : Lot | ART-2, ART-4, ART-9, BO-03, TERM-DCI | draft | DO-12 |
-| DO-13 | DO-13 : Stock | ART-2, ART-4, ART-9, BO-03 | draft | DO-13 |
-| DO-14 | DO-14 : Éligibilité | ART-2, ART-4, ART-9, BO-04, ABB-ELIGIBILITE-COUVERTURE | draft | DO-14 |
-| DO-15 | DO-15 : Couverture sanitaire | ART-2, ART-4, ART-9, BO-04, ABB-ELIGIBILITE-COUVERTURE | draft | DO-15 |
-| DO-16 | DO-16 : Facturation | ART-2, ART-4, ART-9, BO-04, ABB-ELIGIBILITE-COUVERTURE | draft | DO-16 |
-| DO-17 | DO-17 : Vérification d'éligibilité | ART-2, ART-4, ART-9, BO-04, ABB-ELIGIBILITE-COUVERTURE | draft | DO-17 |
-| DO-18 | DO-18 : Signal | ART-2, ART-3, BO-05 | draft | DO-18 |
-| DO-19 | DO-19 : Foyer | ART-2, ART-3, BO-05 | draft | DO-19 |
-| DO-20 | DO-20 : Investigation | ART-2, ART-3, BO-05, TERM-LOINC | draft | DO-20 |
-| DO-21 | DO-21 : Notification sanitaire | ART-2, ART-3, BO-05 | draft | DO-21 |
-| DO-22 | DO-22 : Alerte sanitaire | ART-2, ART-3, BO-05 | draft | DO-22 |
-| DO-23 | DO-23 : Formation sanitaire | ART-2, ART-4, BO-06 | draft | DO-23 |
-| DO-24 | DO-24 : Agent de santé | ART-2, ART-4, BO-06 | draft | DO-24 |
-| DO-25 | DO-25 : Indicateur sanitaire | ART-2, ART-4, BO-06 | draft | DO-25 |
-| DO-26 | DO-26 : Zone sanitaire | ART-2, ART-4, BO-06 | draft | DO-26 |
-| DO-27 | DO-27 : Tâche | ART-2, ART-4, BO-06 | draft | DO-27 |
-| DO-28 | DO-28 : Tableau de bord | ART-2, ART-4, BO-06 | draft | DO-28 |
-| DO-29 | DO-29 : Résumé international du patient (IPS) | ART-2, ART-7, BO-07 | draft | DO-29 |
-| DO-30 | DO-30 : Section du résumé patient | ART-2, ART-7, BO-07 | draft | DO-30 |
-| DO-31 | DO-31 : Confiance internationale | ART-2, ART-7, BO-07 | draft | DO-31 |
+| DO-01 | DO-01 : Patient | CAP-01, CAP-13, ART-2, ART-4, ART-7, BO-01 | draft | DO-01 |
+| DO-02 | DO-02 : Identifiant national d'identification | CAP-14, CAP-17, ART-2, ART-4, ART-7, BO-01 | draft | DO-02 |
+| DO-03 | DO-03 : Dossier patient | CAP-01, CAP-13, ART-2, ART-4, ART-7, BO-01 | draft | DO-03 |
+| DO-04 | DO-04 : Épisode de soins | CAP-01, CAP-03, ART-2, ART-4, ART-7, BO-01 | draft | DO-04 |
+| DO-05 | DO-05 : Consultation | CAP-01, CAP-13, ART-2, ART-3, BO-02, TERM-CIM-11 | draft | DO-05 |
+| DO-06 | DO-06 : Prescription | CAP-01, CAP-10, ART-2, ART-3, BO-02, TERM-SNOMED-CT, TERM-RXNORM, TERM-ATC, TERM-DCI | draft | DO-06 |
+| DO-07 | DO-07 : Référence | CAP-02, CAP-14, ART-2, ART-3, BO-02 | draft | DO-07 |
+| DO-08 | DO-08 : Contre-référence | CAP-02, CAP-14, ART-2, ART-3, BO-02 | draft | DO-08 |
+| DO-09 | DO-09 : Évacuation sanitaire | CAP-02, CAP-14, CAP-15, ART-2, ART-3, BO-02 | draft | DO-09 |
+| DO-10 | DO-10 : Dispensation | CAP-10, CAP-13, ART-2, ART-4, ART-9, BO-03, TERM-SNOMED-CT, TERM-RXNORM, TERM-ATC, TERM-DCI | draft | DO-10 |
+| DO-11 | DO-11 : Produit de santé | CAP-10, CAP-14, ART-2, ART-4, ART-9, BO-03, TERM-SNOMED-CT, TERM-RXNORM, TERM-ATC, TERM-DCI | draft | DO-11 |
+| DO-12 | DO-12 : Lot | CAP-10, ART-2, ART-4, ART-9, BO-03, TERM-DCI | draft | DO-12 |
+| DO-13 | DO-13 : Stock | CAP-10, ART-2, ART-4, ART-9, BO-03 | draft | DO-13 |
+| DO-14 | DO-14 : Éligibilité | CAP-07, CAP-13, ART-2, ART-4, ART-9, BO-04, ABB-ELIGIBILITE-COUVERTURE | draft | DO-14 |
+| DO-15 | DO-15 : Couverture sanitaire | CAP-07, CAP-13, ART-2, ART-4, ART-9, BO-04, ABB-ELIGIBILITE-COUVERTURE | draft | DO-15 |
+| DO-16 | DO-16 : Facturation | CAP-07, ART-2, ART-4, ART-9, BO-04, ABB-ELIGIBILITE-COUVERTURE | draft | DO-16 |
+| DO-17 | DO-17 : Vérification d'éligibilité | CAP-07, CAP-08, ART-2, ART-4, ART-9, BO-04, ABB-ELIGIBILITE-COUVERTURE | draft | DO-17 |
+| DO-18 | DO-18 : Signal | CAP-04, CAP-05, ART-2, ART-3, BO-05 | draft | DO-18 |
+| DO-19 | DO-19 : Foyer | CAP-04, CAP-05, ART-2, ART-3, BO-05 | draft | DO-19 |
+| DO-20 | DO-20 : Investigation | CAP-04, CAP-05, CAP-18, ART-2, ART-3, BO-05, TERM-LOINC | draft | DO-20 |
+| DO-21 | DO-21 : Notification sanitaire | CAP-04, CAP-05, ART-2, ART-3, BO-05 | draft | DO-21 |
+| DO-22 | DO-22 : Alerte sanitaire | CAP-04, CAP-05, ART-2, ART-3, BO-05 | draft | DO-22 |
+| DO-23 | DO-23 : Formation sanitaire | CAP-11, CAP-14, ART-2, ART-4, BO-06 | draft | DO-23 |
+| DO-24 | DO-24 : Agent de santé | CAP-09, CAP-13, ART-2, ART-4, BO-06 | draft | DO-24 |
+| DO-25 | DO-25 : Indicateur sanitaire | CAP-03, CAP-08, ART-2, ART-4, BO-06 | draft | DO-25 |
+| DO-26 | DO-26 : Zone sanitaire | CAP-05, CAP-14, ART-2, ART-4, BO-06 | draft | DO-26 |
+| DO-27 | DO-27 : Tâche | CAP-06, CAP-08, ART-2, ART-4, BO-06 | draft | DO-27 |
+| DO-28 | DO-28 : Tableau de bord | CAP-08, CAP-16, ART-2, ART-4, BO-06 | draft | DO-28 |
+| DO-29 | DO-29 : Résumé international du patient (IPS) | CAP-17, ART-2, ART-7, BO-07 | draft | DO-29 |
+| DO-30 | DO-30 : Section du résumé patient | CAP-15, CAP-17, ART-2, ART-7, BO-07 | draft | DO-30 |
+| DO-31 | DO-31 : Confiance internationale | CAP-15, ART-2, ART-7, BO-07 | draft | DO-31 |
 | ENF-1 | Résilience à l'instabilité réseau | F-1, ART-1, ART-3, ART-7, ART-8C, ART-4C | draft | ENF-1 |
 | ENF-2 | Intégrité des flux et traçabilité des valeurs | ART-9, ART-4C, ART-8C | draft | ENF-2 |
 | ENF-3 | Unicité de l'identité et résilience face à la fragmentation applicative | ART-4A, ART-2 | draft | ENF-3 |
@@ -289,16 +289,16 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | PP-08 | Partenaires techniques et financiers | VS-02, VS-04 | draft | PP-08 |
 | PP-09 | Décideurs institutionnels | VS-04 | draft | PP-09 |
 | PP-10 | Équipes techniques (DEPSI / SIS) | VS-04 | draft | PP-10 |
-| PRC-01 | Accès, orientation et admission du patient | CAP-01, CAP-02, CAP-04, CAP-11, CAP-13, CAP-14, CAP-15, VS-01-01, VS-01-02, VS-01, BO-01, DO-01, DO-03, DO-04, DO-05, DO-23, CMP-19, CMP-21, CMP-22 | active | PRC-01 |
-| PRC-02 | Prestation des soins cliniques | CAP-01, CAP-03, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, VS-01-03, VS-01-04, VS-01-05, VS-01, BO-02, BO-03, DO-05, DO-06, DO-07, DO-08, DO-09, DO-10, DO-11, DO-12, CMP-19, CMP-20, CMP-21 | active | PRC-02 |
-| PRC-03 | Continuité, suivi et qualité des soins | CAP-02, CAP-03, CAP-04, CAP-13, CAP-14, CAP-15, VS-01-06, VS-01-07, VS-01, BO-02, DO-03, DO-05, DO-10, DO-24, CMP-19, CMP-21 | active | PRC-03 |
-| PRC-04 | Veille, prévention et surveillance sanitaire | CAP-04, CAP-05, CAP-06, CAP-13, CAP-14, CAP-15, CAP-17, VS-02-01, VS-02-02, VS-02, BO-05, DO-18, DO-19, DO-21, DO-25, DO-26, CMP-07, CMP-08, CMP-11, CMP-13, CMP-15, CMP-17, CMP-18, CMP-24, CMP-25 | active | PRC-04 |
+| PRC-01 | Accès, orientation et admission du patient | CAP-01, CAP-02, CAP-04, CAP-11, CAP-13, CAP-14, CAP-15, VS-01-01, VS-01-02, VS-01, BO-01, DO-01, DO-03, DO-04, DO-05, DO-07, DO-08, DO-09, DO-23, CMP-19, CMP-21, CMP-22 | active | PRC-01 |
+| PRC-02 | Prestation des soins cliniques | CAP-01, CAP-03, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, VS-01-03, VS-01-04, VS-01-05, VS-01, BO-02, BO-03, DO-05, DO-06, DO-07, DO-08, DO-09, DO-10, DO-11, DO-12, DO-13, CMP-19, CMP-20, CMP-21 | active | PRC-02 |
+| PRC-03 | Continuité, suivi et qualité des soins | CAP-02, CAP-03, CAP-04, CAP-13, CAP-14, CAP-15, VS-01-06, VS-01-07, VS-01, BO-02, DO-03, DO-05, DO-07, DO-08, DO-09, DO-10, DO-24, CMP-19, CMP-21 | active | PRC-03 |
+| PRC-04 | Veille, prévention et surveillance sanitaire | CAP-04, CAP-05, CAP-06, CAP-13, CAP-14, CAP-15, CAP-17, VS-02-01, VS-02-02, VS-02, BO-05, DO-18, DO-19, DO-21, DO-25, DO-26, DO-27, CMP-07, CMP-08, CMP-11, CMP-13, CMP-15, CMP-17, CMP-18, CMP-24, CMP-25 | active | PRC-04 |
 | PRC-05 | Alerte, investigation et riposte | CAP-04, CAP-05, CAP-13, CAP-14, CAP-15, CAP-17, CAP-18, VS-02-03, VS-02-04, VS-02-05, VS-02, BO-05, DO-13, DO-18, DO-19, DO-20, DO-21, DO-22, CMP-02, CMP-04, CMP-07, CMP-08, CMP-11, CMP-13, CMP-14, CMP-15, CMP-17, CMP-18, CMP-20, CMP-23, CMP-24, CMP-25 | active | PRC-05 |
 | PRC-06 | Clôture et capitalisation des épisodes | CAP-03, CAP-13, CAP-14, CAP-15, VS-02-06, VS-02-07, VS-02, BO-01, DO-01, DO-04, DO-25, CMP-07, CMP-11, CMP-14, CMP-15, CMP-17, CMP-18, CMP-19 | active | PRC-06 |
 | PRC-07 | Identification et droits des bénéficiaires | CAP-07, CAP-08, CAP-13, CAP-14, CAP-15, CAP-17, VS-03-01, VS-03-02, VS-03, BO-01, DO-01, DO-02, DO-14, DO-15, CMP-09, CMP-10, CMP-16, CMP-22 | active | PRC-07 |
-| PRC-08 | Financement et exemption au point de service | CAP-07, CAP-08, CAP-12, CAP-13, CAP-15, CAP-16, VS-03-03, VS-03-04, VS-03, BO-04, DO-14, DO-15, DO-16, CMP-09, CMP-10, CMP-16, CMP-22 | active | PRC-08 |
+| PRC-08 | Financement et exemption au point de service | CAP-07, CAP-08, CAP-12, CAP-13, CAP-15, CAP-16, VS-03-03, VS-03-04, VS-03, BO-04, DO-14, DO-15, DO-16, DO-17, CMP-09, CMP-10, CMP-16, CMP-22 | active | PRC-08 |
 | PRC-09 | Remboursement et régulation des mécanismes | CAP-07, CAP-12, CAP-13, CAP-14, CAP-15, VS-03-05, VS-03-06, VS-03-07, VS-03, BO-04, DO-16, DO-17, CMP-03, CMP-04, CMP-12 | active | PRC-09 |
-| PRC-10 | Planification et allocation des ressources | CAP-08, CAP-09, CAP-12, CAP-13, CAP-15, CAP-16, VS-04-01, VS-04-02, VS-04-03, VS-04, BO-03, BO-06, DO-25, DO-26, DO-27, CMP-01, CMP-12, CMP-23 | active | PRC-10 |
+| PRC-10 | Planification et allocation des ressources | CAP-08, CAP-09, CAP-12, CAP-13, CAP-15, CAP-16, VS-04-01, VS-04-02, VS-04-03, VS-04, BO-03, BO-06, DO-24, DO-25, DO-26, DO-27, CMP-01, CMP-12, CMP-23 | active | PRC-10 |
 | PRC-11 | Suivi et pilotage de la performance | CAP-03, CAP-08, CAP-13, CAP-14, CAP-15, CAP-16, VS-04-04, VS-04-05, VS-04, BO-06, DO-25, DO-28, CMP-01, CMP-02, CMP-03, CMP-25 | active | PRC-11 |
 | PRC-12 | Redevabilité et amélioration continue | CAP-03, CAP-08, CAP-13, CAP-14, CAP-15, CAP-16, VS-04-06, VS-04-07, VS-04, BO-06, DO-25, DO-28, CMP-01 | active | PRC-12 |
 | PRC-13 | Échange et coordination transfrontaliers | PART-ECHANGE-TRANSFRONTALIER, CAP-15, CAP-17, VS-02, BO-07, DO-29, DO-30, DO-31, CMP-02, CMP-06, CMP-15 | active | PRC-13 |
