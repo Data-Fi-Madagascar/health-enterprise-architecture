@@ -1,0 +1,169 @@
+---
+title: "Matrice de traçabilité (Flux de valeur, Capacités, Processus, Composants)"
+description: "Niveau 1 — Architecture d'entreprise du secteur santé numérique de Madagascar"
+owner: "DEPSI"
+version: "1.0.0"
+status: "draft"
+---
+
+Cette matrice dérive directement des champs de relation du référentiel (`applies_to`, `related`, `uses`). Elle matérialise l'articulation ArchiMate : le flux de valeur est **activé** par des capacités, le processus métier les **réalise**, et le composant applicatif les **rend possibles**.
+
+## 1. Synthèse par flux de valeur
+
+| Flux | Intitulé | Capacités activées | Processus métier |
+|------|----------|---------------------|-------------------|
+| VS-01 | Accéder à des services de santé essentiels, intégrés, équitables et de qualité | CAP-01, CAP-02, CAP-03, CAP-04, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, CAP-17 | PRC-01, PRC-02, PRC-03 |
+| VS-02 | Prévenir, détecter et répondre aux risques sanitaires | CAP-04, CAP-05, CAP-06, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, CAP-17, CAP-18 | PRC-04, PRC-05, PRC-06 |
+| VS-03 | Protéger financièrement la population face aux dépenses de santé | CAP-07, CAP-08, CAP-12, CAP-13, CAP-14, CAP-15, CAP-16 | PRC-07, PRC-08, PRC-09 |
+| VS-04 | Piloter, coordonner et améliorer la performance du système de santé | CAP-03, CAP-08, CAP-09, CAP-12, CAP-13, CAP-14, CAP-15, CAP-16 | PRC-10, PRC-11, PRC-12 |
+
+## 2. Chaîne Capacité → Processus → Composant
+
+### CAP-01 : Offre de soins et continuité des services
+
+- **Réalisée par** : PRC-01, PRC-02
+- **Servie par les composants** : CMP-19, CMP-20, CMP-21, CMP-22
+
+### CAP-02 : Gestion du parcours patient, référence et contre-référence
+
+- **Réalisée par** : PRC-01, PRC-03
+- **Servie par les composants** : CMP-19, CMP-21, CMP-22
+
+### CAP-03 : Qualité, sécurité des soins et amélioration continue
+
+- **Réalisée par** : PRC-02, PRC-03, PRC-06, PRC-11, PRC-12
+- **Servie par les composants** : CMP-01, CMP-02, CMP-03, CMP-07, CMP-11, CMP-14, CMP-15, CMP-17, CMP-18, CMP-19, CMP-20, CMP-21, CMP-25
+
+### CAP-04 : Santé communautaire et engagement des communautés
+
+- **Réalisée par** : PRC-01, PRC-03, PRC-04, PRC-05
+- **Servie par les composants** : CMP-02, CMP-04, CMP-07, CMP-08, CMP-11, CMP-13, CMP-14, CMP-15, CMP-17, CMP-18, CMP-19, CMP-20, CMP-21, CMP-22, CMP-23, CMP-24, CMP-25
+
+### CAP-05 : Surveillance épidémiologique, alerte, investigation et riposte
+
+- **Réalisée par** : PRC-04, PRC-05
+- **Servie par les composants** : CMP-02, CMP-04, CMP-07, CMP-08, CMP-11, CMP-13, CMP-14, CMP-15, CMP-17, CMP-18, CMP-20, CMP-23, CMP-24, CMP-25
+
+### CAP-06 : Vaccination, prévention et promotion de la santé
+
+- **Réalisée par** : PRC-04
+- **Servie par les composants** : CMP-07, CMP-08, CMP-11, CMP-13, CMP-15, CMP-17, CMP-18, CMP-24, CMP-25
+
+### CAP-07 : Protection financière, couverture santé universelle
+
+- **Réalisée par** : PRC-07, PRC-08, PRC-09
+- **Servie par les composants** : CMP-03, CMP-04, CMP-09, CMP-10, CMP-12, CMP-16, CMP-22
+
+### CAP-08 : Gouvernance institutionnelle, planification, coordination et redevabilité
+
+- **Réalisée par** : PRC-07, PRC-08, PRC-10, PRC-11, PRC-12
+- **Servie par les composants** : CMP-01, CMP-02, CMP-03, CMP-09, CMP-10, CMP-12, CMP-16, CMP-22, CMP-23, CMP-25
+
+### CAP-09 : Gestion des ressources humaines en santé
+
+- **Réalisée par** : PRC-02, PRC-10
+- **Servie par les composants** : CMP-01, CMP-12, CMP-19, CMP-20, CMP-21, CMP-23
+
+### CAP-10 : Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement
+
+- **Réalisée par** : PRC-02
+- **Servie par les composants** : CMP-19, CMP-20, CMP-21
+
+### CAP-11 : Gestion des infrastructures, équipements et maintenance
+
+- **Réalisée par** : PRC-01, PRC-02
+- **Servie par les composants** : CMP-19, CMP-20, CMP-21, CMP-22
+
+### CAP-12 : Finances publiques, budget et allocation des ressources
+
+- **Réalisée par** : PRC-08, PRC-09, PRC-10
+- **Servie par les composants** : CMP-01, CMP-03, CMP-04, CMP-09, CMP-10, CMP-12, CMP-16, CMP-22, CMP-23
+
+### CAP-13 : Système d'information sanitaire, données et recherche
+
+- **Réalisée par** : PRC-01, PRC-02, PRC-03, PRC-04, PRC-05, PRC-06, PRC-07, PRC-08, PRC-09, PRC-10, PRC-11, PRC-12
+- **Servie par les composants** : CMP-01, CMP-02, CMP-03, CMP-04, CMP-07, CMP-08, CMP-09, CMP-10, CMP-11, CMP-12, CMP-13, CMP-14, CMP-15, CMP-16, CMP-17, CMP-18, CMP-19, CMP-20, CMP-21, CMP-22, CMP-23, CMP-24, CMP-25
+
+### CAP-14 : Interopérabilité, référentiels nationaux et infrastructure numérique partagée
+
+- **Réalisée par** : PRC-01, PRC-02, PRC-03, PRC-04, PRC-05, PRC-06, PRC-07, PRC-09, PRC-11, PRC-12
+- **Servie par les composants** : CMP-01, CMP-02, CMP-03, CMP-04, CMP-07, CMP-08, CMP-09, CMP-10, CMP-11, CMP-12, CMP-13, CMP-14, CMP-15, CMP-16, CMP-17, CMP-18, CMP-19, CMP-20, CMP-21, CMP-22, CMP-23, CMP-24, CMP-25
+
+### CAP-15 : Cybersécurité, confidentialité et gouvernance des données personnelles
+
+- **Réalisée par** : PRC-01, PRC-02, PRC-03, PRC-04, PRC-05, PRC-06, PRC-07, PRC-08, PRC-09, PRC-10, PRC-11, PRC-12
+- **Servie par les composants** : CMP-01, CMP-02, CMP-03, CMP-04, CMP-07, CMP-08, CMP-09, CMP-10, CMP-11, CMP-12, CMP-13, CMP-14, CMP-15, CMP-16, CMP-17, CMP-18, CMP-19, CMP-20, CMP-21, CMP-22, CMP-23, CMP-24, CMP-25
+
+### CAP-16 : Gestion du portefeuille d'initiatives numériques
+
+- **Réalisée par** : PRC-08, PRC-10, PRC-11, PRC-12
+- **Servie par les composants** : CMP-01, CMP-02, CMP-03, CMP-09, CMP-10, CMP-12, CMP-16, CMP-22, CMP-23, CMP-25
+
+### CAP-17 : Engagement patient et identité numérique
+
+- **Réalisée par** : PRC-04, PRC-05, PRC-07
+- **Servie par les composants** : CMP-02, CMP-04, CMP-07, CMP-08, CMP-09, CMP-10, CMP-11, CMP-13, CMP-14, CMP-15, CMP-16, CMP-17, CMP-18, CMP-20, CMP-22, CMP-23, CMP-24, CMP-25
+
+### CAP-18 : Coordination intersectorielle (One Health)
+
+- **Réalisée par** : PRC-05
+- **Servie par les composants** : CMP-02, CMP-04, CMP-07, CMP-08, CMP-11, CMP-13, CMP-14, CMP-15, CMP-17, CMP-18, CMP-20, CMP-23, CMP-24, CMP-25
+
+## 3. Détail par processus métier
+
+| Processus | Capacités réalisées | Composants utilisés |
+|----------|----------------------|---------------------|
+| PRC-01 | CAP-01, CAP-02, CAP-04, CAP-11, CAP-13, CAP-14, CAP-15 | CMP-19, CMP-21, CMP-22 |
+| PRC-02 | CAP-01, CAP-03, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15 | CMP-19, CMP-20, CMP-21 |
+| PRC-03 | CAP-02, CAP-03, CAP-04, CAP-13, CAP-14, CAP-15 | CMP-19, CMP-21 |
+| PRC-04 | CAP-04, CAP-05, CAP-06, CAP-13, CAP-14, CAP-15, CAP-17 | CMP-07, CMP-08, CMP-11, CMP-13, CMP-15, CMP-17, CMP-18, CMP-24, CMP-25 |
+| PRC-05 | CAP-04, CAP-05, CAP-13, CAP-14, CAP-15, CAP-17, CAP-18 | CMP-02, CMP-04, CMP-07, CMP-08, CMP-11, CMP-13, CMP-14, CMP-15, CMP-17, CMP-18, CMP-20, CMP-23, CMP-24, CMP-25 |
+| PRC-06 | CAP-03, CAP-13, CAP-14, CAP-15 | CMP-07, CMP-11, CMP-14, CMP-15, CMP-17, CMP-18, CMP-19 |
+| PRC-07 | CAP-07, CAP-08, CAP-13, CAP-14, CAP-15, CAP-17 | CMP-09, CMP-10, CMP-16, CMP-22 |
+| PRC-08 | CAP-07, CAP-08, CAP-12, CAP-13, CAP-15, CAP-16 | CMP-09, CMP-10, CMP-16, CMP-22 |
+| PRC-09 | CAP-07, CAP-12, CAP-13, CAP-14, CAP-15 | CMP-03, CMP-04, CMP-12 |
+| PRC-10 | CAP-08, CAP-09, CAP-12, CAP-13, CAP-15, CAP-16 | CMP-01, CMP-12, CMP-23 |
+| PRC-11 | CAP-03, CAP-08, CAP-13, CAP-14, CAP-15, CAP-16 | CMP-01, CMP-02, CMP-03, CMP-25 |
+| PRC-12 | CAP-03, CAP-08, CAP-13, CAP-14, CAP-15, CAP-16 | CMP-01 |
+
+## 4. Socle transverse : infrastructure et securite
+
+Les processus ne sont pas lies directement au socle. La chaine ArchiMate correcte est : le processus **utilise** un composant applicatif, qui **utilise** (via `CMP.uses`) les services d'infrastructure et de securite. Le socle est partage par tous les composants applicatifs.
+
+| Composant du socle | Nature | Utilise par |
+|--------------------|--------|-------------|
+| CMP-26 | infrastructure | _(tous les composants applicatifs CMP-01..25)_ |
+| CMP-27 | infrastructure | _(tous les composants applicatifs CMP-01..25)_ |
+| CMP-28 | infrastructure | _(tous les composants applicatifs CMP-01..25)_ |
+| CMP-29 | infrastructure | _(tous les composants applicatifs CMP-01..25)_ |
+| CMP-30 | infrastructure | _(tous les composants applicatifs CMP-01..25)_ |
+| CMP-31 | infrastructure | _(tous les composants applicatifs CMP-01..25)_ |
+| CMP-32 | securite | _(tous les composants applicatifs CMP-01..25)_ |
+| CMP-33 | securite | _(tous les composants applicatifs CMP-01..25)_ |
+| CMP-34 | securite | _(tous les composants applicatifs CMP-01..25)_ |
+| CMP-35 | securite | _(tous les composants applicatifs CMP-01..25)_ |
+| CMP-36 | securite | _(tous les composants applicatifs CMP-01..25)_ |
+| CMP-37 | securite | _(tous les composants applicatifs CMP-01..25)_ |
+| CMP-38 | securite | _(tous les composants applicatifs CMP-01..25)_ |
+
+## 5. Encadrement gouvernance
+
+Les composants de gouvernance (CMP-39..46) n'utilisent pas `uses` : ils encadrent les composants via `CMP.governs` (relation de gouvernance, pas un service d'execution). Leur nature ArchiMate est portee par `categorie`.
+
+| Composant de gouvernance | Nature ArchiMate | Encadre |
+|--------------------------|------------------|---------|
+| CMP-39 | data-object | _(tous les composants CMP-01..46)_ |
+| CMP-40 | principe | _(tous les composants CMP-01..46)_ |
+| CMP-41 | regulation | _(tous les composants CMP-01..46)_ |
+| CMP-42 | acteur | _(tous les composants CMP-01..46)_ |
+| CMP-43 | data-object | _(tous les composants CMP-01..46)_ |
+| CMP-44 | acteur | _(tous les composants CMP-01..46)_ |
+| CMP-45 | work-package | _(tous les composants CMP-01..46)_ |
+| CMP-46 | principe | _(tous les composants CMP-01..46)_ |
+
+## 6. Notes
+
+- Les capacités transverses CAP-17 (Engagement patient & identité numérique) et CAP-18 (Coordination intersectorielle, One Health) sont rattachées aux flux VS-01/VS-02 et aux processus concernés.
+- Chaque processus liste ses capacités de façon granulaire (non par copie du flux parent).
+- La relation *service* entre processus et composants applicatifs est portée par `PRC.uses` (processus -> composant applicatif) et `CMP.applies_to` (composant -> processus). `PRC.uses` ne contient que des composants applicatifs (CMP-01..25).
+- Le socle transverse (infrastructure CMP-26..31, securite CMP-32..38) est atteint via `CMP.uses` depuis les composants applicatifs ; la gouvernance (CMP-39..46) via `CMP.governs`.

@@ -1,6 +1,10 @@
 ---
-title: "g-oda-conception-guide"
+title: "Annexe J : Guide de conception ODA (Ontology-Driven Architecture)"
 description: "Niveau 3 — Standards techniques, solutions et règles d'homologation"
+owner: "DEPSI"
+version: "1.0.0"
+status: "draft"
+last_reviewed: "2026-11-21"
 ---
 
 ## 1. Principe fondamental : deux modèles, un pont
@@ -12,7 +16,7 @@ L'architecture ODA du référentiel HEA repose sur la séparation claire de deux
 │                    MODÈLE DE GOUVERNANCE                        │
 │                    (Méta-schéma d'auteur)                       │
 │                                                                 │
-│  Source : YAML/Markdown dans 04_architecture-repository/                       │
+│  Source : YAML/Markdown dans 04_architecture-repository/        │
 │  Validateur : ontologie/hea-governance-schema.json              │
 │  Usage : validation des fichiers d'architecture sur GitHub      │
 │  Contraintes : id, version, status, owner, artRef, x-hea-*     │
@@ -40,35 +44,41 @@ L'architecture ODA du référentiel HEA repose sur la séparation claire de deux
 ```
 hea/
 ├── 04_architecture-repository/                          # SOURCE DE VÉRITÉ (Niveau 3)
-│   ├── objets-de-donnees/
-│   │   ├── do-01.md ... do-31.md        # Objets de données (YAML/MD)
-│   │   └── nomenclatures/               # NOUVEAU : nomenclatures autonomes
-│   │       └── fosa-status.md           #   Statut opérationnel FOSA
-│   └── profils/
-│       ├── pt-06.md                     # Profil mCSD
-│       └── pt-07.md                     # Profil SVCM
+│   ├── 02_architecture-elements/
+│   │   └── data/
+│   │       ├── data-objects/                           # Objets de données (MD/YAML)
+│   │       │   └── do-01.md ... do-31.md
+│   │       ├── reference-data/                         # Référentiels de données
+│   │       └── terminologies/                          # Terminologies de production
+│   └── 05_building-blocks/
+│       └── sbb/
+│           └── legacy-profiles/                       # Profils hérités
+│               ├── pt-06.md                            #   Profil mCSD
+│               └── pt-07.md                            #   Profil SVCM
+│
+├── 02_artsn/
+│   └── 03_objets-de-donnees/
+│       └── nomenclatures/                              # Nomenclatures autonomes
+│           └── fosa-status.md                          #   Statut opérationnel FOSA
 │
 ├── ontologie/                            # PONT SÉMANTIQUE
 │   ├── hea.ttl                           # Ontologie OWL (ArchiMate 3.1)
-│   ├── hea-shapes.ttl                   # SHACL shapes (gouvernance)
-│   └── hea-governance-schema.json       # NOUVEAU : JSON Schema gouvernance
+│   ├── hea-shapes.ttl                    # SHACL shapes (gouvernance)
+│   └── hea-governance-schema.json        # JSON Schema gouvernance
 │
 ├── 03_ptisn/schemas/                     # SCHÉMAS D'IMPLÉMENTATION (Niveau 4)
-│   ├── payloads/                        # NOUVEAU : schémas de payload
-│   │   ├── fosa-status.json             #   JSON Schema pour messages REST
-│   │   └── ...
-│   ├── terminologies/                   # NOUVEAU : ressources FHIR
-│   │   ├── hea-fosa-status-cs.json      #   CodeSystem FHIR R4
-│   │   └── ...
-│   └── openapi/                         # NOUVEAU : spécifications API
-│       ├── pt-06-mcsd.json             #   OpenAPI 3.0 pour mCSD
-│       └── pt-07-svcm.json             #   OpenAPI 3.0 pour SVCM
+│   ├── payloads/                         # Schémas de payload
+│   │   └── fosa-status.json              #   JSON Schema pour messages REST
+│   ├── terminologies/                    # Ressources FHIR
+│   │   └── hea-fosa-status-cs.json       #   CodeSystem FHIR R4
+│   └── openapi/                          # Spécifications API
+│       └── pt-06-mcsd.json               #   OpenAPI 3.0 pour mCSD
 │
 ├── scripts/compilers/                    # PONT DE COMPILATION
-│   ├── compile_oda.py                   # NOUVEAU : compilateur principal
-│   ├── compile_fhir.py                  # Existant : FHIR R4
-│   ├── compile_jsonschema.py            # Existant : JSON Schema
-│   └── compile_openapi.py              # Existant : OpenAPI 3.0
+│   ├── compile_oda.py                    # Compilateur principal
+│   ├── compile_fhir.py                   # FHIR R4
+│   ├── compile_jsonschema.py             # JSON Schema
+│   └── compile_openapi.py                # OpenAPI 3.0
 │
 └── dist/                                 # ARTÉFACTS GÉNÉRÉS (gitignorés)
     ├── schemas/
@@ -76,7 +86,7 @@ hea/
     └── openapi/
 ```
 
-## 3. Modèle de Gouvernance (Méta-schéma)
+## 3. Modèle de gouvernance (méta-schéma)
 
 Le méta-schéma valide les fichiers d'auteur YAML/Markdown sur GitHub.
 
@@ -98,12 +108,12 @@ Le méta-schéma valide les fichiers d'auteur YAML/Markdown sur GitHub.
 | Champ | Type | Obligatoire | Description |
 |-------|------|-------------|-------------|
 | `artRef` | array | Oui | Chapitres ARTSN concernés |
-| `maps_to` | array | Oui | Objets d'interopérabilité CNISN/TOGAF ou capabilités CAESN implémentées |
-| `implements` | array | Oui | Standards/fondations implémentés |
+| `maps_to` | array | Oui | Objets d'interopérabilité CNISN ou capabilités CAESN implémentées |
+| `implements` | array | Oui | Standards et fondations implémentés |
 | `related` | array | Non | Objets liés |
 | `tags` | array | Oui | Étiquettes de catégorisation |
 
-## 4. Modèle d'Implémentation (Payload)
+## 4. Modèle d'implémentation (payload)
 
 Les schémas de payload valident les données réelles en transit.
 
@@ -128,7 +138,7 @@ Les schémas de payload valident les données réelles en transit.
   "url": "https://healmadagascar.mg/fhir/CodeSystem/hea-fosa-status",
   "status": "active",
   "content": "complete",
-  "concept": [...]
+  "concept": []
 }
 ```
 
@@ -158,7 +168,7 @@ fosa-status.md  ──────────────►  compile_oda.py  �
 - La `version` doit être au format semver
 - L'`owner` doit être une entité connue
 - Les `artRef` doivent pointer vers des chapitres existants
-- Les `maps_to` doivent pointer vers des capacités existantes
+- Les `maps_to` doivent pointer vers des objets ou des capabilités existantes
 
 ### 6.2 Implémentation (JSON Schema)
 
@@ -173,3 +183,11 @@ fosa-status.md  ──────────────►  compile_oda.py  �
 - Chaque code doit avoir un libellé et une description
 - Les nomenclatures ne doivent pas être orphelines
 - Les versions doivent être cohérentes entre elles
+
+## Références
+
+- **Ontologie OWL du référentiel** : `ontologie/hea.ttl`
+- **Schéma de gouvernance** : `ontologie/hea-governance-schema.json`
+- **Compilateur ODA** : `scripts/compilers/compile_oda.py`
+- **Annexe B : Glossaire des patterns** : Glossaire des patterns cités (`02_artsn/09_annexes/b-glossaire-patterns.md`)
+- **Annexe I : Index des profils PTISN** : Index des profils PTISN implémentant chaque chapitre ART (`02_artsn/09_annexes/i-ptisn-artsn-alignement.md`)

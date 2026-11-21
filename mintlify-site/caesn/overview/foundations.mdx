@@ -41,20 +41,23 @@ Le cadre est structuré par un cadre juridique national et continental :
 
 ## Lecture des axes stratégiques du PDSS dans le cadre
 
-Certains axes génèrent directement un flux de valeur pour la population ; d'autres constituent des capabilités habilitantes.
+Certains axes génèrent directement un flux de valeur pour la population ; d'autres constituent des capabilités habilitantes. Le tableau ci-dessous est une grille de lecture : il rattache chaque axe du PDSS aux capabilités du catalogue canonique CAP-01 à CAP-18, sans créer un second référentiel de numérotation.
 
-| Code   | Axe stratégique PDSS                                       | Lecture dans le cadre                                   |
-| ------ | ---------------------------------------------------------- | ------------------------------------------------------- |
-| AXE-01 | Gouvernance, cadre institutionnel et coordination          | Capabilité de gouvernance soutenant le flux de pilotage |
-| AXE-02 | Gestion rationnelle des ressources                         | Capabilité habilitante ressources                       |
-| AXE-03 | Renforcement du capital humain                             | Capabilité habilitante ressources humaines              |
-| AXE-04 | Accès équitable aux soins essentiels intégrés de qualité   | Flux de valeur : soins                                  |
-| AXE-05 | Prévention, promotion, urgences, épidémies et catastrophes | Flux de valeur : protection sanitaire                   |
-| AXE-06 | Financement de la santé et protection financière           | Flux de valeur : protection financière                  |
-| AXE-07 | Système d'information sanitaire et recherche               | Capabilité décisionnelle transversale                   |
-| AXE-08 | Santé communautaire                                        | Canal et capabilité transversale de proximité           |
+| Code   | Axe stratégique PDSS                                       | Lecture dans le cadre                                   | Capacités rattachées           |
+| ------ | ---------------------------------------------------------- | ------------------------------------------------------- | ------------------------------ |
+| AXE-01 | Gouvernance, cadre institutionnel et coordination          | Capabilité de gouvernance soutenant le flux de pilotage | CAP-08, CAP-16               |
+| AXE-02 | Gestion rationnelle des ressources                         | Capabilité habilitante ressources                       | CAP-10, CAP-11, CAP-12       |
+| AXE-03 | Renforcement du capital humain                             | Capabilité habilitante ressources humaines              | CAP-09                       |
+| AXE-04 | Accès équitable aux soins essentiels intégrés de qualité   | Flux de valeur : soins                                  | CAP-01, CAP-02, CAP-03, CAP-04 |
+| AXE-05 | Prévention, promotion, urgences, épidémies et catastrophes | Flux de valeur : protection sanitaire                   | CAP-04, CAP-05, CAP-06       |
+| AXE-06 | Financement de la santé et protection financière           | Flux de valeur : protection financière                  | CAP-07                       |
+| AXE-07 | Système d'information sanitaire et recherche               | Capabilité décisionnelle transversale                   | CAP-13, CAP-14, CAP-15       |
+| AXE-08 | Santé communautaire                                        | Canal et capabilité transversale de proximité           | CAP-04, CAP-17               |
 
-Les quatre axes de la SNSD (gouvernance digitale, solutions, ressources, financement) sont lus comme des capabilités numériques transversales qui servent les flux de valeur santé sans en constituer eux-mêmes.
+Cette grille met en évidence deux propriétés du catalogue. D'une part, la plupart des axes se rattachent à plusieurs capabilités : l'axe AXE-05 mobilise CAP-04 pour l'ancrage communautaire, CAP-05 pour la surveillance et CAP-06 pour la prévention, ce qui confirme qu'une capacité sert simultanément plusieurs axes. D'autre part, AXE-07 concentre à lui seul les trois capabilités numériques les plus structurantes (système d'information, interopérabilité, cybersécurité), ce qui justifie son traitement transversal plutôt que son rattachement à un flux unique.
+
+Les quatre axes de la SNSD (gouvernance digitale, solutions, ressources, financement) sont lus comme des capabilités numériques transversales qui servent les flux de valeur santé sans en constituer eux-mêmes. Leur rattachement explicite aux capabilités du catalogue est établi dans [Capabilités numériques transversales](/caesn/capabilities/digital).
+
 ## Socle théorique : la trilogie HEAL, HEAF, HEART
 
 Le cadre repose sur trois référentiels méthodologiques de l'OMS/WHO Digital Health qui constituent son socle théorique. Issus d'une recherche universitaire africaine, ils définissent *pourquoi* et *comment* structurer un système d'information sanitaire national avant d'en prescrire les composantes techniques. Ils sont complétés par les référentiels d'implémentation présentés plus loin (DPI-H, OpenHIE, GovStack).
@@ -74,7 +77,7 @@ Trois caractéristiques clés le distinguent :
 | Caractéristique | Description | Traduction HEA |
 |-----------------|-------------|----------------|
 | **Légèreté et modularité** | Implémentation verticale rapide (paludisme, VIH) puis intégration au SIS national sans restructuration lourde | Capabilités et profils PTISN évolutifs |
-| **Modes hybrides** | Gestion native de la connectivité intermittente ou absente et de la coexistence papier/numérique | Principes de flexibilité PA-04 et de souveraineté PA-05 |
+| **Modes hybrides** | Gestion native de la connectivité intermittente ou absente et de la coexistence papier/numérique | Principes PA-09 (adaptation aux réalités du terrain) et PA-10 (souveraineté nationale) |
 | **Approche pilotée par les ontologies** | Unification logique de toutes les couches par des ontologies de domaine | Ontologie `ontologie/hea.ttl` + shapes SHACL + pipeline graphify |
 
 ### HEART (Health Enterprise Architecture Repository of Tools)
@@ -120,7 +123,7 @@ Le cadre **Digital Public Infrastructure for Health (DPI-H)** est une initiative
 
 La **Référence Architecture DPI-H** (publiée par l'OMS via SMART Guidelines) fournit les spécifications techniques pour chaque composante, basées sur HL7 FHIR R4. Elle est directement applicable à l'HEA : les 9 composantes DPI-H correspondent aux 16 profils PTISN.
 
-Le cadre **REDDHI** (*Resilient Essential Digital and Data Health Infrastructure*, OMS/ITU — GIDH) réitère cette vision DPI-H en la qualifiant d'infrastructure **essentielle, résiliente et sous possession nationale**. L'alignement détaillé REDDHI ↔ HEA (principes et 9 composantes traduits en chapitres ART et normes CNISN) fait l'objet de l'annexe G de l'ARTSN (`02_artsn/08_annexes/g-reddhi-alignement.md`).
+Le cadre **REDDHI** (*Resilient Essential Digital and Data Health Infrastructure*, OMS/ITU — GIDH) réitère cette vision DPI-H en la qualifiant d'infrastructure **essentielle, résiliente et sous possession nationale**. L'alignement détaillé REDDHI ↔ HEA (principes et 9 composantes traduits en chapitres ART et normes CNISN) fait l'objet de l'annexe G de l'ARTSN (`02_artsn/09_annexes/g-reddhi-alignement.md`).
 
 *Répond à :* que doit posséder le système national comme infrastructure partagée ?
 
@@ -187,10 +190,12 @@ Certaines technologies émergentes auront un impact significatif sur les systèm
 
 | Technologie | Potentiel santé | Principe HEA applicable | Standard existant | Niveau de maturité |
 |-------------|-----------------|------------------------|-------------------|-------------------|
-| Intelligence artificielle (IA) | Aide au diagnostic, prédiction épidémiologique, optimisation des parcours | PA-03 (interoperabilité), PA-05 (souveraineté) | FHIR R4 (données structurées) | Pilotes |
-| Internet des objets (IoT) | Capteurs connectés, télésurveillance, suivi des chaînes du froid | PA-01 (patient central), PD-05 (dispositifs) | FHIR Device, HL7 | Précoce |
-| Blockchain | Traçabilité des médicaments, consentement patient, identité décentralisée | PA-05 (souveraineté), PA-06 (confiance) | FHIR Consent, W3C DID | Expérimental |
-| Télémédecine | Consultations à distance, téléexpertise, e-préscription | PA-01 (patient central), PA-04 (flexibilité) | IHE PDQ, FHIR Telehealth | En déploiement |
+| Intelligence artificielle (IA) | Aide au diagnostic, prédiction épidémiologique, optimisation des parcours | PA-06 (interopérabilité), PA-10 (souveraineté) | FHIR R4 (données structurées) | Pilotes |
+| Internet des objets (IoT) | Capteurs connectés, télésurveillance, suivi des chaînes du froid | PA-01 (valeur pour la population), PD-VS02-01 (détection précoce) | FHIR Device, HL7 | Précoce |
+| Blockchain | Traçabilité des médicaments, consentement patient, identité décentralisée | PA-10 (souveraineté), PA-11 (confiance) | FHIR Consent, W3C DID | Expérimental |
+| Télémédecine | Consultations à distance, téléexpertise, e-préscription | PA-01 (valeur pour la population), PA-09 (adaptation au terrain) | IHE PDQ, FHIR Telehealth | En déploiement |
+
+Les identifiants PA et PD mobilisés dans ce tableau renvoient au catalogue canonique des principes : PA-01 à PA-12 pour les principes architecturaux transversaux, PD-VS<flux>-<rang> pour les principes de domaine. Les libellés abrégés sont des raccourcis de l'intitulé canonique, non des définitions distinctes.
 
 Ces technologies ne nécessitent pas de nouveau profil PTISN. Elles s'intègrent dans les capabilités existantes (capacité de décision, intégration des données, identité) et sont encadrées par les principes d'architecture du CAESN. Les standards FHIR R4 et HL7 fournissent les structures de données nécessaires ; les profils PTISN définissent les points d'entrée.
 
@@ -209,7 +214,7 @@ L'intégration de ces technologies fait l'objet d'une veille architecturale perm
 - **Flux de valeur** : Flux de valeur nationaux de santé (`00_caesn/01_value-streams/index.md`)
 - **Principes** : Principes d'architecture (`00_caesn/02_principles/index.md`)
 - **DPI-H Reference Architecture** : OMS/ITU (`https://smart.who.int/ra/`)
-- **REDDHI** : Resilient Essential Digital and Data Health Infrastructure, OMS/ITU (GIDH) — voir annexe G de l'ARTSN (`02_artsn/08_annexes/g-reddhi-alignement.md`)
+- **REDDHI** : Resilient Essential Digital and Data Health Infrastructure, OMS/ITU (GIDH) — voir annexe G de l'ARTSN (`02_artsn/09_annexes/g-reddhi-alignement.md`)
 - **OpenHIE Architecture Specification** : Communauté de pratique (`https://guides.ohie.org/arch-spec/`)
 - **GovStack Implementation Playbook** : Initiative mondiale (`https://specs.govstack.global/`)
 - **Fondement légal** : Fondement légal et cadre législatif (`00_caesn/07_governance/fondement-legal.md`)
@@ -220,6 +225,6 @@ L'intégration de ces technologies fait l'objet d'une veille architecturale perm
 
 - [valeur: Modèle national de valeur](/caesn/overview/value-model)
 - [caesn: Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN)](/caesn/overview/index)
-- verification-perennite-documents: Vérification de la pérennité : PDSS, SNSD, PSRSIS
+- [verification-perennite-documents: Vérification de la pérennité : PDSS, SNSD, PSRSIS](/caesn/overview/verification-perennite)
 
 <!-- liens-section-auto -->

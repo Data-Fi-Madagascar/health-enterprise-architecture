@@ -44,7 +44,7 @@ Le CNISN reste volontairement neutre sur le plan technologique : il ne sélectio
 |----------|-------|
 | Introduction | Nature du cadre, positionnement, portée |
 | Principes | 25 principes nationaux d'interopérabilité (P-INT-01 à P-INT-25) |
-| Capacités | 16 capacités nationales requises (ABB-IDENTITE-BENEFICIAIRE à RD-DONNEES-ENVIRONNEMENTALES-CLIMAT) |
+| Objets d'interopérabilité | 38 objets d'interopérabilité requis, répartis en 8 familles (ABB-IDENTITE-BENEFICIAIRE à RD-DONNEES-ENVIRONNEMENTALES-CLIMAT) |
 | Gouvernance | Instances, rôles, comités, propriétaire de capacités |
 | Conformité | Profil de conformité, dossier minimal, homologation, programme de conformité opérationnel |
 | Standards | Normes obligatoires et standards recommandés |
@@ -52,7 +52,7 @@ Le CNISN reste volontairement neutre sur le plan technologique : il ne sélectio
 | Trajectoire | 7 phases de mise en œuvre |
 | Indicateurs | Indicateurs de suivi (gouvernance, interopérabilité, référentiels, sécurité, conformité) |
 | Conclusion | Synthèse |
-| Annexes | Matrice principes-capacités, articulation ARTSN/PTISN/CAESN, principes de lecture |
+| Annexes | Matrice principes-objets d'interopérabilité, articulation ARTSN/PTISN/CAESN, principes de lecture |
 | Glossaire | Termes du périmètre d'interopérabilité |
 | Acronymes | Sigles du périmètre d'interopérabilité |
 
@@ -69,16 +69,16 @@ Le CNISN reste volontairement neutre sur le plan technologique : il ne sélectio
 - **`cnisn/`** : Cadre National d'Interopérabilité de la Santé Numérique (CNISN) (`01_cnisn/index.md`)
 - **Introduction** : Préambule du CNISN (`01_cnisn/00_introduction/index.md`)
 - **Principes** : Partie I : Principes nationaux d'interopérabilité de santé (`01_cnisn/01_principes/index.md`)
-- **Capacités** : Partie II : Capacités nationales requises (`01_cnisn/02_capacites/index.md`)
+- **Objets d'interopérabilité** : Partie II : Objets d'interopérabilité requis (`01_cnisn/02_objets-interoperabilite/index.md`)
 - **Gouvernance** : Partie III : Gouvernance (`01_cnisn/03_gouvernance/index.md`)
 - **Conformité** : Partie IV : Conformité (`01_cnisn/04_conformite/index.md`)
 - **Programme de conformité** : Partie IV bis : Programme de conformité opérationnel (`01_cnisn/04_conformite/programme-conformite.md`)
 - **ADR-0010** : Cadre légal et mandat d'opposabilité du CNASN (`01_cnisn/06_decisions/adr-0010-cadre-legal.md`)
 - **Standards** : Normes et standards d'architecture (`01_cnisn/05_standards/index.md`)
 - **Décisions** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
-- **Trajectoire** : Partie V : Trajectoire de mise en œuvre (`01_cnisn/05_trajectoire/index.md`)
-- **Indicateurs** : Partie VI : Indicateurs de suivi (`01_cnisn/06_indicateurs/index.md`)
-- **Conclusion** : Conclusion du CNISN (`01_cnisn/07_conclusion/index.md`)
+- **Trajectoire** : Partie V : Trajectoire de mise en œuvre (`01_cnisn/07_trajectoire/index.md`)
+- **Indicateurs** : Partie VI : Indicateurs de suivi (`01_cnisn/08_indicateurs/index.md`)
+- **Conclusion** : Conclusion du CNISN (`01_cnisn/09_conclusion/index.md`)
 - **Glossaire** : Glossaire du CNISN (niveau 2) (`01_cnisn/glossary.md`)
 - **Acronymes** : Acronymes et abréviations du CNISN (niveau 2) (`01_cnisn/acronyms.md`)
 - **Guide de lecture du CNISN** : Guide de lecture du CNISN (niveau 2) (`01_cnisn/reading-guide.md`)
@@ -91,7 +91,7 @@ Le CNISN reste volontairement neutre sur le plan technologique : il ne sélectio
 - [cnisn-glossary: Glossaire du CNISN (niveau 2)](/cnisn/glossary)
 - [cnisn-reading-matrix: Matrice de lecture du CNISN (niveau 2)](/cnisn/reading-matrix)
 - [cnisn-acronyms: Acronymes et abréviations du CNISN (niveau 2)](/cnisn/acronyms)
-- cnisn-reading-guide: Guide de lecture du CNISN (niveau 2)
+- [cnisn-reading-guide: Guide de lecture du CNISN (niveau 2)](/cnisn/reading-guide)
 - [std-0001: STD-0001 : Norme d'interopérabilité : HL7 FHIR R4](/cnisn/standards/std-0001-interopabilite-fhir)
 - [std-0003: STD-0003 : Norme d'échange interinstitutionnel : X-Road](/cnisn/standards/std-0003-x-road)
 - [norm-007: NORM-007 : Règlement Sanitaire International (RSI 2005)](/cnisn/standards/norm-007-rsi)
@@ -101,7 +101,7 @@ Le CNISN reste volontairement neutre sur le plan technologique : il ne sélectio
 - [std-0006: STD-0006 : Norme terminologique : CIM-11 + LOINC](/cnisn/standards/std-0006-terminologie)
 - [standards: Normes et standards d'architecture](/cnisn/standards/index)
 - [norm-008: NORM-008 : Tripartite Plus OMS–WOAH–FAO–PNUE](/cnisn/standards/norm-008-tripartite)
-- std-0000: STD-0000 : <Titre de la norme>
+- [std-0000: STD-0000 : <Titre de la norme>](/cnisn/standards/std-0000-template)
 - [std-0002: STD-0002 : Norme de sécurité : Chiffrement et contrôle d'accès](/cnisn/standards/std-0002-securite-chiffrement)
 - [cnisn-trajectoire: Partie V : Trajectoire de mise en œuvre](/cnisn/trajectoire/index)
 - [adr-0003: ADR-0003 : Utilisation de HL7 FHIR comme standard d'interopérabilité](/cnisn/decisions/adr-0003-fhir)
@@ -112,11 +112,11 @@ Le CNISN reste volontairement neutre sur le plan technologique : il ne sélectio
 - [decisions: Décisions d'architecture (ADR)](/cnisn/decisions/index)
 - [adr-0006: ADR-0006 : Adoption de l'Identité Nationale Patient (INP) via PIXm/PDQm](/cnisn/decisions/adr-0006-inp)
 - [adr-0010: ADR-0010 : Cadre légal et mandat d'opposabilité du CNASN](/cnisn/decisions/adr-0010-cadre-legal)
-- adr-0000: ADR-0000 : <Titre de la décision>
+- [adr-0000: ADR-0000 : <Titre de la décision>](/cnisn/decisions/adr-0000-template)
 - [adr-0002: ADR-0002 : Adoption du profil IHE mADX pour l'échange de données agrégées](/cnisn/decisions/adr-0002-madx)
 - [adr-0007: ADR-0007 : Adoption du GDHCN pour la confiance transfrontalière](/cnisn/decisions/adr-0007-gdhcn)
 - [registre-decisions: Registre des décisions d'architecture (ADR)](/cnisn/decisions/registre-decisions)
-- template-modification: Template : Demande de modification architecturale
+- [template-modification: Template : Demande de modification architecturale](/cnisn/decisions/template-modification)
 - [adr-0008: ADR-0008 : Adoption d'ATNA et journalisation pour l'audit et la traçabilité](/cnisn/decisions/adr-0008-atna)
 - [cnisn-indicateurs: Partie VI : Indicateurs de suivi](/cnisn/indicateurs/index)
 - [cnisn-introduction: Préambule du CNISN](/cnisn/introduction/index)
@@ -125,13 +125,14 @@ Le CNISN reste volontairement neutre sur le plan technologique : il ne sélectio
 - [cnisn-annexe-f: Annexe F : Articulation complète CAESN → CNISN → ARTSN → PTISN](/cnisn/annexes/f-articulation-complete)
 - [cnisn-annexe-g: Annexe G : Matrice des types d'interopérabilité](/cnisn/annexes/g-matrice-interop-types)
 - [cnisn-annexe-d: Annexe D : Principes de lecture](/cnisn/annexes/d-principes-lecture)
-- [cnisn-annexe-a: Annexe A : Matrice principes–capacités](/cnisn/annexes/a-matrice-principes-capacites)
+- [cnisn-annexe-a: Annexe A : Matrice principes-objets d'interopérabilité](/cnisn/annexes/a-matrice-principes-capacites)
 - [cnisn-annexe-b: Annexe B : Articulation avec l'ARTSN](/cnisn/annexes/b-articulation-art-sn)
 - [cnisn-annexe-e: Annexe E : Correspondance CAESN–CNISN](/cnisn/annexes/e-correspondance-caesn)
 - [cnisn-gouvernance: Partie III : Gouvernance](/cnisn/gouvernance/index)
-- [cnisn-capacites: Partie II : Capacités nationales requises](/cnisn/capacites/index)
+- [cnisn-objets-interoperabilite: Partie II : Objets d'interopérabilité requis](/cnisn/objets-interoperabilite/index)
 - [cnisn-conclusion: Conclusion du CNISN](/cnisn/conclusion/index)
 - [cnisn-programme-conformite: Partie IV bis : Programme de conformité opérationnel](/cnisn/conformite/programme-conformite)
 - [cnisn-conformite: Partie IV : Conformité](/cnisn/conformite/index)
+- [cnisn-annexes: Annexes du CNISN](/cnisn/annexes/index)
 
 <!-- liens-section-auto -->
