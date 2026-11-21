@@ -16,5 +16,5 @@ tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-45", "axe-gouvernance"]
 # CMP-45 : Cellule d'audit
 **Contenu normatif.** Ce registre consigne les audits de conformite, de securite et de qualite des composants et de l'architecture dans son ensemble. Il tient le plan d'audit, les rapports et le suivi des recommandations.
 **Discipline de mise en oeuvre.** Les audits sont planifies sur la base des risques et de l'homologation. Leurs recommandations sont suivies jusqu'a cloture et les ecarts remontes a l'arbitrage (CMP-46). Les conclusions alimentent la revue de l'architecture et le portefeuille.
-- **Rattachement** : [ART-0: Accords de partage inter-institutionnels](../../04_patterns/artsn-rules/art-0.md), [F-4: Homologation obligatoire](../../04_patterns/foundations/f-4.md).
+- **Rattachement** : [ART-0: Accords de partage inter-institutionnels](../../05_reference-library/patterns/artsn-rules/art-0.md), [F-4: Homologation obligatoire](../../05_reference-library/patterns/foundations/f-4.md).
 - **Statut : Brouillon.**

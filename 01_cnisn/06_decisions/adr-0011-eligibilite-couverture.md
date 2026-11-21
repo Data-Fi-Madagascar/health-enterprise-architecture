@@ -36,11 +36,11 @@ La vérification des droits à une couverture sanitaire exige une décision dép
 
 ## Décision
 
-Instituer [ABB-ELIGIBILITE-COUVERTURE](../../04_architecture-repository/05_building-blocks/abb/abb-eligibilite-couverture.md) comme bloc applicatif distinct pour la consultation de couverture, la vérification des droits, la décision temporelle, sa preuve et son audit. Le bloc reçoit l'identité résolue et l'autorisation nécessaire, mais ne réalise ni la résolution d'identité ni la gestion du consentement. Les échanges de couverture et d'éligibilité utilisent HL7 FHIR R4. Cette décision ne sélectionne aucun produit ni fournisseur.
+Instituer [ABB-ELIGIBILITE-COUVERTURE](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-eligibilite-couverture.md) comme bloc applicatif distinct pour la consultation de couverture, la vérification des droits, la décision temporelle, sa preuve et son audit. Le bloc reçoit l'identité résolue et l'autorisation nécessaire, mais ne réalise ni la résolution d'identité ni la gestion du consentement. Les échanges de couverture et d'éligibilité utilisent HL7 FHIR R4. Cette décision ne sélectionne aucun produit ni fournisseur.
 
 ## Justification
 
-La séparation traduit [CAP-07](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-07.md) dans la [partition VS-03](../../04_architecture-repository/01_partitions/value-streams/part-vs-03.md) et rend explicite le périmètre de [ART-4C](../../04_architecture-repository/04_patterns/artsn-rules/art-4c.md) et [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md). Une preuve horodatée, associée aux règles et à la période de validité, permet de reconstituer le droit applicable au moment de la prestation. FHIR R4 fournit le cadre d'échange commun aux données de couverture et aux demandes et réponses de vérification.
+La séparation traduit [CAP-07](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-07.md) dans la [partition VS-03](../../04_architecture-repository/01_partitions/value-streams/part-vs-03.md) et rend explicite le périmètre de [ART-4C](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4c.md) et [ART-9](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-9.md). Une preuve horodatée, associée aux règles et à la période de validité, permet de reconstituer le droit applicable au moment de la prestation. FHIR R4 fournit le cadre d'échange commun aux données de couverture et aux demandes et réponses de vérification.
 
 La recherche collaborative HEAL éclaire la validation des règles avec les programmes de terrain. La structure HEAF distingue ce bloc des services d'identité et d'autorisation ; le catalogue HEART favorise la réutilisation du contrat FHIR R4 et la production de métadonnées depuis la source de vérité.
 
@@ -67,7 +67,7 @@ La recherche collaborative HEAL éclaire la validation des règles avec les prog
 
 ## Références
 
-- [ABB-ELIGIBILITE-COUVERTURE](../../04_architecture-repository/05_building-blocks/abb/abb-eligibilite-couverture.md)
-- [CMP-12 : Registre d'éligibilité et de couverture](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-12.md)
+- [ABB-ELIGIBILITE-COUVERTURE](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-eligibilite-couverture.md)
+- [CMP-12 : Registre d'éligibilité et de couverture](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-12.md)
 - [WP-03 : Médiation et registres partagés](../../04_architecture-repository/07_migration/work-packages/wp-03.md)
 - ADR-0003 : Utilisation de HL7 FHIR comme standard d'interopérabilité

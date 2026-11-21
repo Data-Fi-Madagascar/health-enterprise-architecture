@@ -56,9 +56,9 @@ class ValidatorConfigurationTests(unittest.TestCase):
         profiles_dir = (
             REPO_ROOT
             / "04_architecture-repository"
-            / "05_building-blocks"
-            / "sbb"
-            / "legacy-profiles"
+            / "05_reference-library"
+            / "standards-base"
+            / "profiles"
         )
 
         for filename, replacement in expected.items():
@@ -934,7 +934,7 @@ class CanonicalMappingTests(unittest.TestCase):
             self.relation_values(partition, "applies_to"),
         )
         pt15 = Path(
-            "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-15.md"
+            "04_architecture-repository/05_reference-library/standards-base/profiles/pt-15.md"
         )
         self.assertTrue(
             {
@@ -945,7 +945,7 @@ class CanonicalMappingTests(unittest.TestCase):
 
     def test_pt_20_maps_eligibility_profile_to_architecture(self):
         pt20 = Path(
-            "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-20.md"
+            "04_architecture-repository/05_reference-library/standards-base/profiles/pt-20.md"
         )
         self.assertEqual(
             {"ABB-ELIGIBILITE-COUVERTURE", "CAP-07"},
@@ -962,7 +962,7 @@ class CanonicalMappingTests(unittest.TestCase):
             "srv-06.md": {"ABB-EXPOSITION-DONNEES-ANALYTIQUES"},
         }
         base = Path(
-            "04_architecture-repository/05_building-blocks/abb/legacy-services"
+            "04_architecture-repository/03_business-architecture/business/business-services"
         )
 
         for filename, targets in expected.items():
@@ -974,7 +974,7 @@ class CanonicalMappingTests(unittest.TestCase):
 
     def test_pt_01_maps_to_exchange_mediation(self):
         path = Path(
-            "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md"
+            "04_architecture-repository/05_reference-library/standards-base/profiles/pt-01.md"
         )
 
         targets = self.relation_values(path, "maps_to")
@@ -994,7 +994,7 @@ class CanonicalMappingTests(unittest.TestCase):
             "cmp-23.md": {"ABB-ECHANGE-LOGISTIQUE-LMIS"},
         }
         base = Path(
-            "04_architecture-repository/05_building-blocks/abb/legacy-components"
+            "04_architecture-repository/05_reference-library/building-blocks/sbb"
         )
 
         for filename, targets in expected.items():
@@ -1005,7 +1005,7 @@ class CanonicalMappingTests(unittest.TestCase):
             )
 
     def test_eligibility_is_separate_from_identity_and_consent(self):
-        abb = Path("04_architecture-repository/05_building-blocks/abb/abb-eligibilite-couverture.md")
+        abb = Path("04_architecture-repository/05_reference-library/building-blocks/abb/abb-eligibilite-couverture.md")
         self.assertEqual({"CAP-07"}, self.relation_values(abb, "maps_to"))
         self.assertEqual({"PART-VS-03"}, self.relation_values(abb, "partitions"))
         self.assertEqual({"ART-4C", "ART-9"}, self.relation_values(abb, "implements"))
@@ -1014,9 +1014,9 @@ class CanonicalMappingTests(unittest.TestCase):
             self.relation_values(abb, "accesses"),
         )
 
-        professionals = Path("04_architecture-repository/05_building-blocks/abb/abb-registre-professionnels.md")
-        pt05 = Path("04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md")
-        pt11 = Path("04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-11.md")
+        professionals = Path("04_architecture-repository/05_reference-library/building-blocks/abb/abb-registre-professionnels.md")
+        pt05 = Path("04_architecture-repository/05_reference-library/standards-base/profiles/pt-05.md")
+        pt11 = Path("04_architecture-repository/05_reference-library/standards-base/profiles/pt-11.md")
         self.assertNotIn("ART-4C", self.relation_values(professionals, "implements"))
         self.assertNotIn("ART-4C", self.relation_values(pt05, "implements"))
         self.assertNotIn("CMP-12", self.relation_values(pt11, "applies_to"))

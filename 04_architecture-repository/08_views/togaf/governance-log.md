@@ -52,6 +52,7 @@ Cette vue consolide les décisions CNISN et les registres de gouvernance du dép
 | ADR-0015 | ADR-0015 : Deux emplois de l'accès aux données, adossement des arêtes de processus et autorité du système de référence | DO-17, DO-23, DO-24, DO-27, DO-31, PRC-01, PRC-03, PRC-04, PRC-08, PRC-10, CMP-01, CMP-05, CMP-12, CMP-13, CMP-35, CMP-36, ABB-REFERENTIEL-STRUCTURES-SERVICES | candidate | ADR-0015 |
 | ADR-0016 | ADR-0016 : La déclaration `fhir_resources` fait foi sur la projection FHIR des objets de données | DO-01, DO-11, DO-12, DO-16, DO-31, CAP-13, CAP-14, PT-17, STD-0009, ART-2, ART-4 | candidate | ADR-0016 |
 | ADR-0017 | ADR-0017 : Retrait des objets métier au profit des thèmes de données et fusion dans CMP-10 | DO-01, DO-32, CMP-10, ART-4, CAP-13, CAP-14, WP-02, WP-03, ADR-0014 | candidate | ADR-0017 |
+| ADR-0018 | ADR-0018 : Réorganisation de l'arborescence du référentiel d'architecture en couches alignées sur le cycle de vie | ADR-0017, CAP-13, CAP-14, ART-4, DO-06 | candidate | ADR-0018 |
 | ADR-CHANGE-LOG | Journal des modifications des ADR | — | active | ADR-CHANGE-LOG |
 | DECISIONS | Décisions d'architecture (ADR) | — | draft | DECISIONS |
 | REGISTRE-DECISIONS | Registre des décisions d'architecture (ADR) | — | draft | REGISTRE-DECISIONS |

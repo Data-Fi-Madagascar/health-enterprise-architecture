@@ -15,7 +15,7 @@ tags: ["togaf", "requirements-repository", "repository-view"]
 
 Cette vue consolide les exigences contextuelles qui structurent l'ARTSN. Elle sert de registre transversal des contraintes persistantes : résilience réseau, fragmentation applicative, identité, cloisonnement interinstitutionnel et souveraineté.
 
-<!-- BEGIN:GENERATED mode=table source=04_architecture-repository/03_requirements/*.md -->
+<!-- BEGIN:GENERATED mode=table source=04_architecture-repository/02_requirements/*.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 | Code | Titre canonique | Rattachement | Statut | Fiche |

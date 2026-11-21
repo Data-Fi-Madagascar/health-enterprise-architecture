@@ -83,7 +83,7 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 |--------|----------|---------|
 | Créer un nouveau profil | [Règles d'utilisation](03_ptisn/01_regles-utilisation/index.md) | Template PT-XXXX |
 | Vérifier la conformité | [Conformité](02_artsn/07_gouvernance/conformite.md) | Dashboard de conformité |
-| Lister les composants | [Référentiel composants](04_architecture-repository/05_building-blocks/abb/legacy-components) | Composants logiques |
+| Lister les composants | [Référentiel composants](04_architecture-repository/05_reference-library/building-blocks/sbb) | Composants logiques |
 | Lire les standards | [std-0001: STD-0001 : Norme d'interopérabilité : HL7 FHIR R4](01_cnisn/05_standards/std-0001-interopabilite-fhir.md), [std-0002: STD-0002 : Norme de sécurité : Chiffrement et contrôle d'accès](01_cnisn/05_standards/std-0002-securite-chiffrement.md) | Normes obligatoires |
 | Consulter le RBAC | [PT-10 RBAC](03_ptisn/03_profils/pt-10-confiance-authentification-autorisation.md) | 13 rôles, 10 politiques |
 
@@ -112,9 +112,9 @@ Chaque profil d'utilisateur dispose d'un parcours pratique pour commencer à uti
 |--------|----------|---------|
 | Ajouter un concept | [Dictionnaire](02_artsn/03_objets-de-donnees/index.md) | Template concept, 7 champs |
 | Mapper vers FHIR | [Champs "Référentiel source"](02_artsn/03_objets-de-donnees/index.md) | Champ technique dans le dictionnaire |
-| Consulter les flux | [Flux de valeur](04_architecture-repository/02_architecture-elements/strategy/value-streams) | VS-01..04 |
+| Consulter les flux | [Flux de valeur](04_architecture-repository/03_business-architecture/strategy/value-streams) | VS-01..04 |
 | Suivre la trajectoire | [Trajectoire CNISN](01_cnisn/07_trajectoire/index.md) | 7 phases T4 2026–T2 2030 |
-| Vérifier la qualité | [PAT-QUALITE-RECONCILIATION: Qualité et réconciliation](04_architecture-repository/04_patterns/pat-qualite-reconciliation.md) | Qualité et réconciliation |
+| Vérifier la qualité | [PAT-QUALITE-RECONCILIATION: Qualité et réconciliation](04_architecture-repository/05_reference-library/patterns/pat-qualite-reconciliation.md) | Qualité et réconciliation |
 
 ### Check-list de définition d'un concept de données
 

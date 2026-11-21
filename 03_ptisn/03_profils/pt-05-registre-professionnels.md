@@ -23,13 +23,13 @@ Périmètre : identité, profession, qualification, spécialité, licence, ordre
 
 ## 2. Objet CNISN/TOGAF de référence
 
-Déclinaison de [ABB-REGISTRE-PROFESSIONNELS: Registre et résolution des professionnels de santé](../../04_architecture-repository/05_building-blocks/abb/abb-registre-professionnels.md), complétée par les capacités relatives à la gouvernance des professionnels.
+Déclinaison de [ABB-REGISTRE-PROFESSIONNELS: Registre et résolution des professionnels de santé](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-registre-professionnels.md), complétée par les capacités relatives à la gouvernance des professionnels.
 
 ## 3. Chapitres ART applicables
 
-- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
+- [ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md)
 - ART-4A — Résolution d’identité
-- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
+- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-7.md)
 
 ## 4. Acteurs (Actors)
 
@@ -37,7 +37,7 @@ Déclinaison de [ABB-REGISTRE-PROFESSIONNELS: Registre et résolution des profes
 - **Registre HWR (Care Services Registry / Directory)** — tient le registre national découvrable.
 - **Consommateur de services de santé (Care Services Consumer)** — système résolvant l’identité et le statut d’un professionnel.
 
-*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-REGISTRE-PROFESSIONNELS](../../04_architecture-repository/05_building-blocks/abb/abb-registre-professionnels.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-REGISTRE-PROFESSIONNELS](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-registre-professionnels.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -48,7 +48,7 @@ Déclinaison de [ABB-REGISTRE-PROFESSIONNELS: Registre et résolution des profes
 
 R = requis ; O = optionnel.
 
-*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-REGISTRE-PROFESSIONNELS](../../04_architecture-repository/05_building-blocks/abb/abb-registre-professionnels.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-REGISTRE-PROFESSIONNELS](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-registre-professionnels.md).
 ## 6. Content Modules
 
 - **HL7 FHIR Practitioner** : identité et qualification du professionnel.
@@ -89,9 +89,9 @@ Conformité attestée par l’exposition découvrable (mCSD), la détermination 
 
 ## 12. Articulation avec les autres profils
 
-- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md)
-- [PT-07: terminologie et codification](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-07.md)
-- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md)
+- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-04.md)
+- [PT-07: terminologie et codification](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-07.md)
+- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-10.md)
 
 Le registre fournit la qualité professionnelle ; l’authentification et l’autorisation sont assurées par PT-10.
 

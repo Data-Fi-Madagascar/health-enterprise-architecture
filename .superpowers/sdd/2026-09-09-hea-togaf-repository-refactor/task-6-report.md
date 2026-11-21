@@ -85,7 +85,7 @@ Deux findings HIGH du review indépendant ont été corrigés sans élargir le p
 | Finding | Correction appliquée |
 |---------|----------------------|
 | Famille logistique rendue sous la famille 7 | Ajout de l'en-tête source `## Famille 8 : Logistique et chaîne d'approvisionnement` avant le bloc généré logistique dans `01_cnisn/02_capacites/index.md`, puis régénération des enveloppes et de Mintlify. |
-| `REQ-OH-03` imposait une désanonymisation irréversible | Remplacement dans la source `04_architecture-repository/03_requirements/req-oh-03.md` par `irréversiblement anonymisées`, puis propagation générée vers l'enveloppe CNISN, les vues TOGAF et Mintlify. |
+| `REQ-OH-03` imposait une désanonymisation irréversible | Remplacement dans la source `04_architecture-repository/02_requirements/req-oh-03.md` par `irréversiblement anonymisées`, puis propagation générée vers l'enveloppe CNISN, les vues TOGAF et Mintlify. |
 
 Commandes exécutées pour cette passe:
 

@@ -25,7 +25,7 @@ tags: ["artsn", "service", "srv-03", "patterns"]
 
 Le service de référentiels gère les listes et terminologies partagées — produits, organisations, CIM-11, SNOMED CT, LOINC — sur lesquelles s'appuie toute la donnée de santé. Il assure l'interprétabilité et la comparabilité des échanges.
 
-Service de catégorie *applicatif*, il [sert la formation sanitaire](../../04_architecture-repository/02_architecture-elements/motivation/stakeholders/pp-06.md), [réalise le service de terminologie et codification communes](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md), accède aux terminologies ainsi qu'aux référentiels de produits, structures et indicateurs, et [met en œuvre le chapitre ART-4 (référentiels)](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md). Il s'appuie sur le [registre des terminologies](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-10.md).
+Service de catégorie *applicatif*, il [sert la formation sanitaire](../../04_architecture-repository/03_business-architecture/motivation/stakeholders/pp-06.md), [réalise le service de terminologie et codification communes](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-service-terminologie.md), accède aux terminologies ainsi qu'aux référentiels de produits, structures et indicateurs, et [met en œuvre le chapitre ART-4 (référentiels)](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md). Il s'appuie sur le [registre des terminologies](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-10.md).
 
 ## Catégorie
 
@@ -33,10 +33,10 @@ applicatif.
 
 ## Exposition
 
-Sert la partie prenante [PP-06](../../04_architecture-repository/02_architecture-elements/motivation/stakeholders/pp-06.md) et crée de la valeur pour son bénéficiaire.
+Sert la partie prenante [PP-06](../../04_architecture-repository/03_business-architecture/motivation/stakeholders/pp-06.md) et crée de la valeur pour son bénéficiaire.
 
 ## Réalisation
 
-Réalisé par [ABB-SERVICE-TERMINOLOGIE](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md) et mis en œuvre via le chapitre [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md).
+Réalisé par [ABB-SERVICE-TERMINOLOGIE](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-service-terminologie.md) et mis en œuvre via le chapitre [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md).
 
 <!-- END:GENERATED -->

@@ -65,7 +65,7 @@ L'ARTSN rattache ART-4A (résolution d'identité) et ART-4B (bases d'autorisatio
 | **Maturité cible** | 3/5 à 2 ans |
 | **Propriétaire** | DEPSI + Direction des Systèmes d'Information |
 
-**Statut** : décidé et appliqué. La fiche canonique est `04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-17.md`, qui rattache ART-4A et ART-4B.
+**Statut** : décidé et appliqué. La fiche canonique est `04_architecture-repository/03_business-architecture/strategy/capabilities/cap-17.md`, qui rattache ART-4A et ART-4B.
 
 ## Écart 2 : Capacité candidate « Coordination intersectorielle (One Health) »
 
@@ -75,7 +75,7 @@ L'ARTSN rattache ART-0 (accords de partage) et ART-8D (chorégraphie inter-insti
 
 ### Proposition d'arbitrage
 
-**Option A (recommandée, retenue) : la capabilité CAP-18 « Coordination intersectorielle (One Health) » a été créée** (voir `04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-18.md`).
+**Option A (recommandée, retenue) : la capabilité CAP-18 « Coordination intersectorielle (One Health) » a été créée** (voir `04_architecture-repository/03_business-architecture/strategy/capabilities/cap-18.md`).
 
 | Justification |
 |---------------|
@@ -104,7 +104,7 @@ L'ARTSN rattache ART-0 (accords de partage) et ART-8D (chorégraphie inter-insti
 | **Maturité cible** | 2/5 à 3 ans |
 | **Propriétaire** | Secrétariat Général du Ministère + DEPSI |
 
-**Statut** : décidé et appliqué. La fiche canonique est `04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-18.md`, qui rattache ART-0 et ART-8D.
+**Statut** : décidé et appliqué. La fiche canonique est `04_architecture-repository/03_business-architecture/strategy/capabilities/cap-18.md`, qui rattache ART-0 et ART-8D.
 
 ## Écart 3 : Référentiel normatif « Tripartite Plus / RSI »
 
@@ -184,13 +184,13 @@ ART-4D (référentiel géospatial et d'exploitation partagé) est rattaché à u
 | Ajouter ART-4D comme chapitre rattaché à CAP-05 |
 | Préciser que la surveillance spatio-temporelle couvre : géolocalisation des formations sanitaires, suivi des épidémies par zone, cartographie des risques |
 
-**Statut** : décidé et appliqué. La fiche CAP-05 mentionne explicitement la dimension géospatiale et rattache ART-4D : `04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-05.md`.
+**Statut** : décidé et appliqué. La fiche CAP-05 mentionne explicitement la dimension géospatiale et rattache ART-4D : `04_architecture-repository/03_business-architecture/strategy/capabilities/cap-05.md`.
 
 ## Écart 5 : Compte des principes : énumération ARTSN des 18 P-01..18 contre le catalogue PA + PD
 
 ### Constat
 
-Une version antérieure du document source de l'ARTSN énumérait **18 principes (P-01 à P-18)**. Cette énumération n'a jamais été portée au référentiel d'architecture : aucun objet de principe P-01..18 n'existe dans `04_architecture-repository/02_architecture-elements/motivation/principles/`. Le catalogue canonique en compte **12 principes transversaux (PA-01 à PA-12)** et **20 principes de domaine (PD-VS01-01 à PD-VS04-05)**.
+Une version antérieure du document source de l'ARTSN énumérait **18 principes (P-01 à P-18)**. Cette énumération n'a jamais été portée au référentiel d'architecture : aucun objet de principe P-01..18 n'existe dans `04_architecture-repository/03_business-architecture/motivation/principles/`. Le catalogue canonique en compte **12 principes transversaux (PA-01 à PA-12)** et **20 principes de domaine (PD-VS01-01 à PD-VS04-05)**.
 
 ### Proposition d'arbitrage
 
@@ -257,11 +257,11 @@ Les étapes de validation, d'arbitrage et de mise à jour des niveaux 1 et 3 son
 - **CAESN** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
 - **ARTSN** : Architecture de Référence Technique de la Santé Numérique (ARTSN) (`02_artsn/index.md`)
 - **point de vigilance** : Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health) (`00_caesn/07_governance/point-de-vigilance-caesn.md`)
-- **ART-4A (résolution d'identité)** : Résolution d'identité (`04_architecture-repository/04_patterns/artsn-rules/art-4a.md`)
-- **ART-4B (bases d'autorisation)** : Bases d'autorisation (`04_architecture-repository/04_patterns/artsn-rules/art-4b.md`)
-- **ART-0 (accords de partage)** : Accords de partage inter-institutionnels (`04_architecture-repository/04_patterns/artsn-rules/art-0.md`)
-- **ART-8D (chorégraphie inter-institutionnelle)** : Chorégraphie inter-institutionnelle (`04_architecture-repository/04_patterns/artsn-rules/art-8d.md`)
-- **ART-4D (référentiel géospatial et d'exploitation partagé)** : Référentiel géospatial et d'exploitation partagé (`04_architecture-repository/04_patterns/artsn-rules/art-4d.md`)
+- **ART-4A (résolution d'identité)** : Résolution d'identité (`04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4a.md`)
+- **ART-4B (bases d'autorisation)** : Bases d'autorisation (`04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4b.md`)
+- **ART-0 (accords de partage)** : Accords de partage inter-institutionnels (`04_architecture-repository/05_reference-library/patterns/artsn-rules/art-0.md`)
+- **ART-8D (chorégraphie inter-institutionnelle)** : Chorégraphie inter-institutionnelle (`04_architecture-repository/05_reference-library/patterns/artsn-rules/art-8d.md`)
+- **ART-4D (référentiel géospatial et d'exploitation partagé)** : Référentiel géospatial et d'exploitation partagé (`04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4d.md`)
 - **Point de vigilance CAESN** : Point de vigilance CAESN : capacité et référentiel manquants pour la coordination intersectorielle (One Health) (`00_caesn/07_governance/point-de-vigilance-caesn.md`)
 - **CAESN : capabilités** : Capabilités du système de santé (`00_caesn/03_capabilities/index.md`)
 - **ARTSN : Annexe C** : Annexe C : Renvoi CAESN et capacités candidates (`02_artsn/09_annexes/c-renvoi-capacites-candidates.md`)

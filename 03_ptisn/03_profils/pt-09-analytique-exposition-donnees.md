@@ -23,14 +23,14 @@ Périmètre : exposition et restitution analytique. Hors périmètre : l’écha
 
 ## 2. Objet CNISN/TOGAF de référence
 
-[ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md)
+[ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-exposition-donnees-analytiques.md)
 
 ## 3. Chapitres ART applicables
 
-- [ART-3: Historisation événementielle et profils de déploiement](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md) selon le profil retenu
-- [ART-5: Cohérence et qualité des données](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md)
-- [ART-6: Analytique et restitution](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md)
-- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
+- [ART-3: Historisation événementielle et profils de déploiement](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-3.md) selon le profil retenu
+- [ART-5: Cohérence et qualité des données](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-5.md)
+- [ART-6: Analytique et restitution](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-6.md)
+- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-7.md)
 
 ## 4. Acteurs (Actors)
 
@@ -39,7 +39,7 @@ Périmètre : exposition et restitution analytique. Hors périmètre : l’écha
 - **Consommateur analytique (Data Consumer)** — tableau de bord, programme ou partenaire consultant les données exposées.
 - **Service de publication (Data Publication Service)** — diffuse les jeux de données autorisés.
 
-*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-EXPOSITION-DONNEES-ANALYTIQUES](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-EXPOSITION-DONNEES-ANALYTIQUES](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-exposition-donnees-analytiques.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -50,7 +50,7 @@ Périmètre : exposition et restitution analytique. Hors périmètre : l’écha
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-EXPOSITION-DONNEES-ANALYTIQUES](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-EXPOSITION-DONNEES-ANALYTIQUES](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-exposition-donnees-analytiques.md).
 ## 6. Content Modules
 
 - **HL7 FHIR MeasureReport** : indicateurs agrégés exposés.
@@ -97,9 +97,9 @@ La plateforme de traçabilité RMA est reconnue comme **première initiative de 
 
 ## 12. Articulation avec les autres profils
 
-- [PT-08: échange de données agrégées](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-08.md)
-- [PT-06: référentiel des structures](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-06.md)
-- [PT-07: terminologie et codification](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-07.md)
+- [PT-08: échange de données agrégées](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-08.md)
+- [PT-06: référentiel des structures](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-06.md)
+- [PT-07: terminologie et codification](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-07.md)
 
 ## 13. Limites et dépendances
 

@@ -27,8 +27,8 @@ Cette partition externe cadre les échanges sanitaires transfrontaliers et les o
 
 ## Périmètre
 
-- Capabilités couvertes : [CAP-15](../../02_architecture-elements/strategy/capabilities/cap-15.md), [CAP-18](../../02_architecture-elements/strategy/capabilities/cap-18.md)
-- Objets de données couverts : [DO-29 : Résumé international du patient](../../02_architecture-elements/data/data-objects/do-29.md), [DO-31 : Ancre de confiance](../../02_architecture-elements/data/data-objects/do-31.md)
+- Capabilités couvertes : [CAP-15](../../03_business-architecture/strategy/capabilities/cap-15.md), [CAP-18](../../03_business-architecture/strategy/capabilities/cap-18.md)
+- Objets de données couverts : [DO-29 : Résumé international du patient](../../04_data-architecture/data-objects/do-29.md), [DO-31 : Ancre de confiance](../../04_data-architecture/data-objects/do-31.md)
 - Niveau TOGAF : extended-enterprise
 - Etat d'architecture : cible
 

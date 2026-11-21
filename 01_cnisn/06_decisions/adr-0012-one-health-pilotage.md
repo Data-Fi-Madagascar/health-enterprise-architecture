@@ -38,13 +38,13 @@ Le centre de commande CMP-02 consomme les alertes et les indicateurs pour souten
 
 ## Décision
 
-Conserver le rattachement de [PART-ONE-HEALTH](../../04_architecture-repository/01_partitions/sectorielles/part-one-health.md) à [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md) et à [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md), avec [CAP-18](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-18.md) pour la surveillance et la riposte, et [CAP-08](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-08.md) pour la gouvernance intersectorielle, le pilotage et la redevabilité. La création d'un nouveau flux de valeur One Health est explicitement rejetée.
+Conserver le rattachement de [PART-ONE-HEALTH](../../04_architecture-repository/01_partitions/sectorielles/part-one-health.md) à [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md) et à [VS-04](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-04.md), avec [CAP-18](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-18.md) pour la surveillance et la riposte, et [CAP-08](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-08.md) pour la gouvernance intersectorielle, le pilotage et la redevabilité. La création d'un nouveau flux de valeur One Health est explicitement rejetée.
 
-Les deux chaînes réutilisent [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md) et [ABB-EXPOSITION-DONNEES-ANALYTIQUES](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md), rattachés à la partition One Health en complément de leurs partitions transverses existantes. [PT-15](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-15.md) matérialise ces blocs avec les composants CMP-02, CMP-04 et CMP-06. [WP-07](../../04_architecture-repository/07_migration/work-packages/wp-07.md) réalise les deux capabilités, les deux ABB et le déploiement du profil.
+Les deux chaînes réutilisent [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-echange-mediation.md) et [ABB-EXPOSITION-DONNEES-ANALYTIQUES](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-exposition-donnees-analytiques.md), rattachés à la partition One Health en complément de leurs partitions transverses existantes. [PT-15](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-15.md) matérialise ces blocs avec les composants CMP-02, CMP-04 et CMP-06. [WP-07](../../04_architecture-repository/07_migration/work-packages/wp-07.md) réalise les deux capabilités, les deux ABB et le déploiement du profil.
 
 ## Justification
 
-VS-02 produit la valeur attendue de détection et de réponse aux menaces sanitaires ; VS-04 assure la coordination des autorités, le suivi des décisions et le rendu de comptes. Le maintien de VS-04 traduit la responsabilité institutionnelle du [centre de commande CMP-02](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-02.md), qui doit disposer d'indicateurs gouvernés et d'un cadre de décision partagé. CAP-08 fournit cette responsabilité de gouvernance ; CAP-18 porte son articulation entre secteurs pour la surveillance et la riposte.
+VS-02 produit la valeur attendue de détection et de réponse aux menaces sanitaires ; VS-04 assure la coordination des autorités, le suivi des décisions et le rendu de comptes. Le maintien de VS-04 traduit la responsabilité institutionnelle du [centre de commande CMP-02](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-02.md), qui doit disposer d'indicateurs gouvernés et d'un cadre de décision partagé. CAP-08 fournit cette responsabilité de gouvernance ; CAP-18 porte son articulation entre secteurs pour la surveillance et la riposte.
 
 Les échanges contrôlés et l'exposition analytique constituent des moyens réutilisables par plusieurs partitions. Leur rattachement à One Health ne modifie pas leur portée transverse. Les autorités de données demeurent distinctes et les accords de partage encadrent l'accès aux informations nécessaires au pilotage.
 
@@ -75,9 +75,9 @@ La démarche collaborative HEAL soutient l'analyse des besoins avec les institut
 ## Références
 
 - [PART-ONE-HEALTH : Partition One Health](../../04_architecture-repository/01_partitions/sectorielles/part-one-health.md)
-- [VS-02 : Surveillance et réponse aux menaces sanitaires](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)
-- [VS-04 : Pilotage, coordination et amélioration de la performance](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
-- [CAP-08 : Gouvernance institutionnelle, planification, coordination et redevabilité](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-08.md)
-- [CAP-18 : Coordination intersectorielle One Health](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-18.md)
-- [PT-15 : Surveillance One Health](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-15.md)
+- [VS-02 : Surveillance et réponse aux menaces sanitaires](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md)
+- [VS-04 : Pilotage, coordination et amélioration de la performance](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-04.md)
+- [CAP-08 : Gouvernance institutionnelle, planification, coordination et redevabilité](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-08.md)
+- [CAP-18 : Coordination intersectorielle One Health](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-18.md)
+- [PT-15 : Surveillance One Health](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-15.md)
 - [WP-07 : Coordination One Health](../../04_architecture-repository/07_migration/work-packages/wp-07.md)

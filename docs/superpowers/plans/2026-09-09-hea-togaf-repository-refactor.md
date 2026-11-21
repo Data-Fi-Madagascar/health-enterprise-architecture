@@ -45,25 +45,25 @@ This plan also closes one structural gap found before execution: existing `parti
 |----------------|---------------|
 | `referentiel/_schema.md` | `04_architecture-repository/00_metamodel/schema.md` |
 | `referentiel/_index.yaml` | `04_architecture-repository/_index.yaml` |
-| `referentiel/flux-valeur/` | `04_architecture-repository/02_architecture-elements/strategy/value-streams/` |
-| `referentiel/etapes-valeur/` | `04_architecture-repository/02_architecture-elements/strategy/value-stages/` |
-| `referentiel/capabilites/` | `04_architecture-repository/02_architecture-elements/strategy/capabilities/` |
-| `referentiel/valeurs/` | `04_architecture-repository/02_architecture-elements/motivation/values/` |
-| `referentiel/principes/` | `04_architecture-repository/02_architecture-elements/motivation/principles/` |
-| `referentiel/parties-prenantes/` | `04_architecture-repository/02_architecture-elements/motivation/stakeholders/` |
-| `referentiel/acteurs/` | `04_architecture-repository/02_architecture-elements/business/actors/` |
-| `referentiel/roles/` | `04_architecture-repository/02_architecture-elements/business/roles/` |
-| `referentiel/processus/` | `04_architecture-repository/02_architecture-elements/business/processes/` |
-| `referentiel/lieux/` | `04_architecture-repository/02_architecture-elements/business/locations/` |
-| `referentiel/objets-metier/` | `04_architecture-repository/02_architecture-elements/business/business-objects/` |
-| `referentiel/objets-de-donnees/` | `04_architecture-repository/02_architecture-elements/data/data-objects/` |
-| `referentiel/exigences/` | `04_architecture-repository/03_requirements/` |
-| `referentiel/fondations/` | `04_architecture-repository/04_patterns/foundations/` |
-| `referentiel/chapitres/` | `04_architecture-repository/04_patterns/artsn-rules/` |
-| `referentiel/composants/` with `type: composant-applicatif`, `composant-infrastructure` or `composant-securite` | `04_architecture-repository/05_building-blocks/abb/legacy-components/` |
-| `referentiel/services/` with `categorie: applicatif` or `technologique` | `04_architecture-repository/05_building-blocks/abb/legacy-services/` |
-| `referentiel/services/` with `categorie: business` | `04_architecture-repository/02_architecture-elements/business/business-services/` |
-| `referentiel/profils/` | `04_architecture-repository/05_building-blocks/sbb/legacy-profiles/` |
+| `referentiel/flux-valeur/` | `04_architecture-repository/03_business-architecture/strategy/value-streams/` |
+| `referentiel/etapes-valeur/` | `04_architecture-repository/03_business-architecture/strategy/value-stages/` |
+| `referentiel/capabilites/` | `04_architecture-repository/03_business-architecture/strategy/capabilities/` |
+| `referentiel/valeurs/` | `04_architecture-repository/03_business-architecture/motivation/values/` |
+| `referentiel/principes/` | `04_architecture-repository/03_business-architecture/motivation/principles/` |
+| `referentiel/parties-prenantes/` | `04_architecture-repository/03_business-architecture/motivation/stakeholders/` |
+| `referentiel/acteurs/` | `04_architecture-repository/03_business-architecture/business/actors/` |
+| `referentiel/roles/` | `04_architecture-repository/03_business-architecture/business/roles/` |
+| `referentiel/processus/` | `04_architecture-repository/03_business-architecture/business/processes/` |
+| `referentiel/lieux/` | `04_architecture-repository/03_business-architecture/business/locations/` |
+| `referentiel/objets-metier/` | `04_architecture-repository/03_business-architecture/business/business-objects/` |
+| `referentiel/objets-de-donnees/` | `04_architecture-repository/04_data-architecture/data-objects/` |
+| `referentiel/exigences/` | `04_architecture-repository/02_requirements/` |
+| `referentiel/fondations/` | `04_architecture-repository/05_reference-library/patterns/foundations/` |
+| `referentiel/chapitres/` | `04_architecture-repository/05_reference-library/patterns/artsn-rules/` |
+| `referentiel/composants/` with `type: composant-applicatif`, `composant-infrastructure` or `composant-securite` | `04_architecture-repository/05_reference-library/building-blocks/sbb/` |
+| `referentiel/services/` with `categorie: applicatif` or `technologique` | `04_architecture-repository/03_business-architecture/business/business-services/` |
+| `referentiel/services/` with `categorie: business` | `04_architecture-repository/03_business-architecture/business/business-services/` |
+| `referentiel/profils/` | `04_architecture-repository/05_reference-library/standards-base/profiles/` |
 | `referentiel/composants/` with `type: registre-gouvernance` | `04_architecture-repository/06_governance/registers/` |
 | `referentiel/work-packages/` | `04_architecture-repository/07_migration/work-packages/` |
 | `referentiel/plateaux/` | `04_architecture-repository/07_migration/plateaux/` |
@@ -312,12 +312,12 @@ Update relative links by path resolution, not by blind prefix replacement. Examp
 
 ```text
 ../../referentiel/capabilites/cap-14.md
-../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md
+../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-14.md
 ```
 
 ```text
 ../referentiel/profils/pt-04.md
-../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md
+../04_architecture-repository/05_reference-library/standards-base/profiles/pt-04.md
 ```
 
 - [ ] **Step 4: Update generated marker paths**
@@ -381,7 +381,7 @@ git commit -m "refactor: rename architecture repository root"
 Run:
 
 ```bash
-mkdir -p 04_architecture-repository/00_metamodel 04_architecture-repository/01_partitions/value-streams 04_architecture-repository/01_partitions/transverses 04_architecture-repository/01_partitions/sectorielles 04_architecture-repository/01_partitions/externes 04_architecture-repository/02_architecture-elements/motivation/stakeholders 04_architecture-repository/02_architecture-elements/motivation/principles 04_architecture-repository/02_architecture-elements/motivation/values 04_architecture-repository/02_architecture-elements/strategy/capabilities 04_architecture-repository/02_architecture-elements/strategy/value-streams 04_architecture-repository/02_architecture-elements/strategy/value-stages 04_architecture-repository/02_architecture-elements/business/actors 04_architecture-repository/02_architecture-elements/business/roles 04_architecture-repository/02_architecture-elements/business/functions 04_architecture-repository/02_architecture-elements/business/processes 04_architecture-repository/02_architecture-elements/business/locations 04_architecture-repository/02_architecture-elements/business/business-objects 04_architecture-repository/02_architecture-elements/business/business-services 04_architecture-repository/02_architecture-elements/data/data-objects 04_architecture-repository/02_architecture-elements/data/reference-data 04_architecture-repository/02_architecture-elements/data/terminologies 04_architecture-repository/03_requirements 04_architecture-repository/04_patterns/foundations 04_architecture-repository/04_patterns/artsn-rules 04_architecture-repository/05_building-blocks/abb/legacy-components 04_architecture-repository/05_building-blocks/abb/legacy-services 04_architecture-repository/05_building-blocks/sbb/legacy-profiles 04_architecture-repository/06_governance/registers 04_architecture-repository/06_governance/architecture-contracts 04_architecture-repository/06_governance/derogations 04_architecture-repository/06_governance/decisions 04_architecture-repository/06_governance/compliance 04_architecture-repository/06_governance/evidence 04_architecture-repository/07_migration/work-packages 04_architecture-repository/07_migration/plateaux 04_architecture-repository/07_migration/gaps 04_architecture-repository/08_views/togaf 04_architecture-repository/09_baselines
+mkdir -p 04_architecture-repository/00_metamodel 04_architecture-repository/01_partitions/value-streams 04_architecture-repository/01_partitions/transverses 04_architecture-repository/01_partitions/sectorielles 04_architecture-repository/01_partitions/externes 04_architecture-repository/03_business-architecture/motivation/stakeholders 04_architecture-repository/03_business-architecture/motivation/principles 04_architecture-repository/03_business-architecture/motivation/values 04_architecture-repository/03_business-architecture/strategy/capabilities 04_architecture-repository/03_business-architecture/strategy/value-streams 04_architecture-repository/03_business-architecture/strategy/value-stages 04_architecture-repository/03_business-architecture/business/actors 04_architecture-repository/03_business-architecture/business/roles 04_architecture-repository/03_business-architecture/business/functions 04_architecture-repository/03_business-architecture/business/processes 04_architecture-repository/03_business-architecture/business/locations 04_architecture-repository/03_business-architecture/business/business-objects 04_architecture-repository/03_business-architecture/business/business-services 04_architecture-repository/04_data-architecture/data-objects 04_architecture-repository/05_reference-library/standards-base/code-systems 04_architecture-repository/05_reference-library/standards-base/code-systems 04_architecture-repository/02_requirements 04_architecture-repository/05_reference-library/patterns/foundations 04_architecture-repository/05_reference-library/patterns/artsn-rules 04_architecture-repository/05_reference-library/building-blocks/sbb 04_architecture-repository/03_business-architecture/business/business-services 04_architecture-repository/05_reference-library/standards-base/profiles 04_architecture-repository/06_governance/registers 04_architecture-repository/06_governance/architecture-contracts 04_architecture-repository/06_governance/derogations 04_architecture-repository/06_governance/decisions 04_architecture-repository/06_governance/compliance 04_architecture-repository/06_governance/evidence 04_architecture-repository/07_migration/work-packages 04_architecture-repository/07_migration/plateaux 04_architecture-repository/07_migration/gaps 04_architecture-repository/08_views/togaf 04_architecture-repository/09_baselines
 ```
 
 - [ ] **Step 2: Move files according to the placement map**
@@ -574,19 +574,19 @@ applies_to: ["CAP-15", "CAP-18", "DO-29", "DO-30", "DO-31"]
 Each view file must contain frontmatter, a short analytical introduction, and at least one generated table marker. Example for `requirements-repository.md`:
 
 ```markdown
-<!-- BEGIN:GENERATED mode=table source=04_architecture-repository/03_requirements/*.md -->
+<!-- BEGIN:GENERATED mode=table source=04_architecture-repository/02_requirements/*.md -->
 <!-- END:GENERATED -->
 ```
 
 Use these marker sources:
 
 ```text
-architecture-landscape.md -> 04_architecture-repository/01_partitions/**/*.md,04_architecture-repository/02_architecture-elements/strategy/**/*.md
+architecture-landscape.md -> 04_architecture-repository/01_partitions/**/*.md,04_architecture-repository/03_business-architecture/strategy/**/*.md
 standards-information-base.md -> 01_cnisn/05_standards/*.md
-reference-library.md -> 04_architecture-repository/04_patterns/**/*.md,04_architecture-repository/05_building-blocks/abb/**/*.md
+reference-library.md -> 04_architecture-repository/05_reference-library/patterns/**/*.md,04_architecture-repository/05_reference-library/building-blocks/abb/**/*.md
 governance-log.md -> 01_cnisn/06_decisions/*.md,04_architecture-repository/06_governance/**/*.md
-requirements-repository.md -> 04_architecture-repository/03_requirements/*.md
-solutions-landscape.md -> 04_architecture-repository/05_building-blocks/sbb/**/*.md,03_ptisn/schemas/**/*.json
+requirements-repository.md -> 04_architecture-repository/02_requirements/*.md
+solutions-landscape.md -> 04_architecture-repository/05_reference-library/standards-base/**/*.md,03_ptisn/schemas/**/*.json
 adm-traceability.md -> 04_architecture-repository/**/*.md
 ```
 
@@ -626,29 +626,29 @@ git commit -m "docs: add TOGAF partitions and repository views"
 **Files:**
 - Create: `04_architecture-repository/00_metamodel/cap-int-migration.yaml`
 - Create: `04_architecture-repository/08_views/togaf/cap-int-migration.md`
-- Create: `04_architecture-repository/05_building-blocks/abb/abb-identite-beneficiaire.md`
-- Create: `04_architecture-repository/05_building-blocks/abb/abb-registre-professionnels.md`
-- Create: `04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md`
-- Create: `04_architecture-repository/05_building-blocks/abb/abb-referentiel-structures-services.md`
-- Create: `04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md`
-- Create: `04_architecture-repository/05_building-blocks/abb/abb-catalogue-contrats.md`
-- Create: `04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md`
-- Create: `04_architecture-repository/05_building-blocks/abb/abb-confiance-autorisation.md`
-- Create: `04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md`
-- Create: `04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md`
-- Create: `04_architecture-repository/05_building-blocks/abb/abb-reconciliation-donnees.md`
-- Create: `04_architecture-repository/05_building-blocks/abb/abb-echange-logistique-lmis.md`
-- Create: `04_architecture-repository/04_patterns/pat-echange-mediation.md`
-- Create: `04_architecture-repository/04_patterns/pat-qualite-reconciliation.md`
-- Create: `04_architecture-repository/04_patterns/pat-echange-international-ips.md`
-- Create: `04_architecture-repository/02_architecture-elements/data/reference-data/rd-structures-services.md`
-- Create: `04_architecture-repository/02_architecture-elements/data/reference-data/rd-donnees-environnementales-climat.md`
-- Create: `04_architecture-repository/02_architecture-elements/data/terminologies/term-codification-commune.md`
+- Create: `04_architecture-repository/05_reference-library/building-blocks/abb/abb-identite-beneficiaire.md`
+- Create: `04_architecture-repository/05_reference-library/building-blocks/abb/abb-registre-professionnels.md`
+- Create: `04_architecture-repository/05_reference-library/building-blocks/abb/abb-echange-mediation.md`
+- Create: `04_architecture-repository/05_reference-library/building-blocks/abb/abb-referentiel-structures-services.md`
+- Create: `04_architecture-repository/05_reference-library/building-blocks/abb/abb-service-terminologie.md`
+- Create: `04_architecture-repository/05_reference-library/building-blocks/abb/abb-catalogue-contrats.md`
+- Create: `04_architecture-repository/05_reference-library/building-blocks/abb/abb-exposition-donnees-analytiques.md`
+- Create: `04_architecture-repository/05_reference-library/building-blocks/abb/abb-confiance-autorisation.md`
+- Create: `04_architecture-repository/05_reference-library/building-blocks/abb/abb-gestion-consentement.md`
+- Create: `04_architecture-repository/05_reference-library/building-blocks/abb/abb-audit-provenance.md`
+- Create: `04_architecture-repository/05_reference-library/building-blocks/abb/abb-reconciliation-donnees.md`
+- Create: `04_architecture-repository/05_reference-library/building-blocks/abb/abb-echange-logistique-lmis.md`
+- Create: `04_architecture-repository/05_reference-library/patterns/pat-echange-mediation.md`
+- Create: `04_architecture-repository/05_reference-library/patterns/pat-qualite-reconciliation.md`
+- Create: `04_architecture-repository/05_reference-library/patterns/pat-echange-international-ips.md`
+- Create: `04_architecture-repository/05_reference-library/standards-base/code-systems/rd-structures-services.md`
+- Create: `04_architecture-repository/05_reference-library/standards-base/code-systems/rd-donnees-environnementales-climat.md`
+- Create: `04_architecture-repository/05_reference-library/standards-base/code-systems/term-codification-commune.md`
 - Create: `04_architecture-repository/06_governance/architecture-contracts/ac-catalogue-services.md`
 - Create: `04_architecture-repository/06_governance/compliance/comp-homologation-interoperabilite.md`
 - Create: `04_architecture-repository/06_governance/evidence/evid-tests-interoperabilite.md`
-- Create: `04_architecture-repository/03_requirements/req-tf-01.md` through `req-tf-08.md`
-- Create: `04_architecture-repository/03_requirements/req-oh-01.md` through `req-oh-07.md`
+- Create: `04_architecture-repository/02_requirements/req-tf-01.md` through `req-tf-08.md`
+- Create: `04_architecture-repository/02_requirements/req-oh-01.md` through `req-oh-07.md`
 - Modify: `01_cnisn/02_capacites/index.md`
 
 **Interfaces:**

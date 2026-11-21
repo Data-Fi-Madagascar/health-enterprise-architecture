@@ -23,7 +23,7 @@ tags: ["artsn", "plateau", "pl-02", "feuille-de-route"]
 
 Le plateau 2 est l'état cible où les applications de terrain sont déployées, la médiation opérationnelle, les registres nationaux actifs et les premiers échanges inter-institutionnels réalisés. C'est le passage à l'échelle de l'interopérabilité.
 
-Il [couvre la capacité « Offre de soins et continuité »](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md) et la [capacité « Référentiels et terminologies »](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md), et [précède le plateau 3](../../04_architecture-repository/07_migration/plateaux/pl-03.md). Les [paquets L2 et L3](../../04_architecture-repository/07_migration/work-packages/wp-02.md) le réalisent.
+Il [couvre la capacité « Offre de soins et continuité »](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-01.md) et la [capacité « Référentiels et terminologies »](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-echange-mediation.md), et [précède le plateau 3](../../04_architecture-repository/07_migration/plateaux/pl-03.md). Les [paquets L2 et L3](../../04_architecture-repository/07_migration/work-packages/wp-02.md) le réalisent.
 
 ## État cible (borne temporelle)
 
@@ -31,7 +31,7 @@ Atteint à l'issue des lots qui y contribuent — il s'agit d'un état cible int
 
 ## Capacités couvertes
 
-Ce plateau couvre les éléments suivants : [CAP-01](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md), [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
+Ce plateau couvre les éléments suivants : [CAP-01](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-01.md), [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-echange-mediation.md).
 
 ## Précédence
 

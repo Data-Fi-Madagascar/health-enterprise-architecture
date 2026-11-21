@@ -7,11 +7,16 @@ import glob
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 ARCH_REPOSITORY_DIR = "04_architecture-repository"
 ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
-PROFILES_DIR = os.path.join(ARCH_REPOSITORY_ROOT, "05_building-blocks", "sbb", "legacy-profiles")
-CAPABILITIES_DIR = os.path.join(ARCH_REPOSITORY_ROOT, "02_architecture-elements", "strategy", "capabilities")
-COMPONENTS_DIR = os.path.join(ARCH_REPOSITORY_ROOT, "05_building-blocks", "abb", "legacy-components")
-VALUE_STREAMS_DIR = os.path.join(ARCH_REPOSITORY_ROOT, "02_architecture-elements", "strategy", "value-streams")
-PROCESSES_DIR = os.path.join(ARCH_REPOSITORY_ROOT, "02_architecture-elements", "business", "processes")
+PROFILES_DIR = os.path.join(ARCH_REPOSITORY_ROOT, "05_reference-library",
+                             "standards-base", "profiles")
+CAPABILITIES_DIR = os.path.join(ARCH_REPOSITORY_ROOT, "03_business-architecture",
+                                "strategy", "capabilities")
+COMPONENTS_DIR = os.path.join(ARCH_REPOSITORY_ROOT, "05_reference-library",
+                              "building-blocks", "sbb")
+VALUE_STREAMS_DIR = os.path.join(ARCH_REPOSITORY_ROOT, "03_business-architecture",
+                                "strategy", "value-streams")
+PROCESSES_DIR = os.path.join(ARCH_REPOSITORY_ROOT, "03_business-architecture",
+                             "business", "processes")
 
 STATUS_FIXES = {
     os.path.join(PROFILES_DIR, "pt-*.md"):

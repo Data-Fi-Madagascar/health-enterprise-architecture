@@ -67,9 +67,9 @@ tags: ["hea", "validation", "togaf", "mappings"]
 ### Task 3: Corriger les mappings sémantiques hérités
 
 **Files:**
-- Modify: `04_architecture-repository/05_building-blocks/abb/legacy-services/srv-03.md` à `srv-06.md`
-- Modify: `04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md`
-- Modify: `04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-10.md`, `cmp-11.md`, `cmp-12.md`, `cmp-14.md`, `cmp-23.md`
+- Modify: `04_architecture-repository/03_business-architecture/business/business-services/srv-03.md` à `srv-06.md`
+- Modify: `04_architecture-repository/05_reference-library/standards-base/profiles/pt-01.md`
+- Modify: `04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-10.md`, `cmp-11.md`, `cmp-12.md`, `cmp-14.md`, `cmp-23.md`
 - Regenerate: `02_artsn/`, `03_ptisn/` et vues TOGAF concernées
 
 **Interfaces:**

@@ -56,12 +56,18 @@ DERIVED_ARCH_REPOSITORY_DOCS = {
 STATIC_ARCH_REPOSITORY_DOCS = {
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "cap-int-migration.md"),
 }
+NAVIGATIONAL_ARCH_REPOSITORY_DOCS = {
+    os.path.join(ARCH_REPOSITORY_DIR, "05_reference-library", "standards-base",
+                 "code-systems", "README.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "05_reference-library", "standards-base",
+                 "external-standards", "README.md"),
+}
 EXCLUDED_ARCH_REPOSITORY_DOCS = {
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "schema.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "togaf-mapping.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "archimate-mapping.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "cap-int-migration.yaml"),
-} | DERIVED_ARCH_REPOSITORY_DOCS | STATIC_ARCH_REPOSITORY_DOCS
+} | DERIVED_ARCH_REPOSITORY_DOCS | STATIC_ARCH_REPOSITORY_DOCS | NAVIGATIONAL_ARCH_REPOSITORY_DOCS
 DERIVED_ENVELOPES = sorted(DERIVED_ARCH_REPOSITORY_DOCS)
 
 BANNER = "<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->"

@@ -105,22 +105,22 @@ L'approche est celle d'une **Value-Driven Enterprise Architecture** : partir des
 
 | Type | Chemin | Contenu |
 |------|--------|---------|
-| Fondations | [`04_architecture-repository/04_patterns/foundations/`](04_architecture-repository/04_patterns/foundations) | Fondations F |
-| Principes | [`04_architecture-repository/02_architecture-elements/motivation/principles/`](04_architecture-repository/02_architecture-elements/motivation/principles) | Principes transversaux et de domaine |
-| Objets d'interopérabilité CNISN | [`04_architecture-repository/05_building-blocks/abb/`](04_architecture-repository/05_building-blocks/abb) | ABB, exigences, patterns, partitions, données et preuves remplaçant les anciens bundles CNISN |
-| Chapitres | [`04_architecture-repository/04_patterns/artsn-rules/`](04_architecture-repository/04_patterns/artsn-rules) | Chapitres ARTSN ART |
-| Composants | [`04_architecture-repository/05_building-blocks/abb/legacy-components/`](04_architecture-repository/05_building-blocks/abb/legacy-components) | Composants applicatifs, infrastructure et sécurité |
+| Fondations | [`04_architecture-repository/05_reference-library/patterns/foundations/`](04_architecture-repository/05_reference-library/patterns/foundations) | Fondations F |
+| Principes | [`04_architecture-repository/03_business-architecture/motivation/principles/`](04_architecture-repository/03_business-architecture/motivation/principles) | Principes transversaux et de domaine |
+| Objets d'interopérabilité CNISN | [`04_architecture-repository/05_reference-library/building-blocks/abb/`](04_architecture-repository/05_reference-library/building-blocks/abb) | ABB, exigences, patterns, partitions, données et preuves remplaçant les anciens bundles CNISN |
+| Chapitres | [`04_architecture-repository/05_reference-library/patterns/artsn-rules/`](04_architecture-repository/05_reference-library/patterns/artsn-rules) | Chapitres ARTSN ART |
+| Composants | [`04_architecture-repository/05_reference-library/building-blocks/sbb/`](04_architecture-repository/05_reference-library/building-blocks/sbb) | Composants applicatifs, infrastructure et sécurité |
 | Registres de gouvernance | [`04_architecture-repository/06_governance/registers/`](04_architecture-repository/06_governance/registers) | Registres CMP-39..46 |
-| Profils | [`04_architecture-repository/05_building-blocks/sbb/legacy-profiles/`](04_architecture-repository/05_building-blocks/sbb/legacy-profiles) | Profils PT-01..19 |
-| Objets de données | [`04_architecture-repository/02_architecture-elements/data/data-objects/`](04_architecture-repository/02_architecture-elements/data/data-objects) | Objets de données DO, répartis en sept thèmes de données |
-| Services métier | [`04_architecture-repository/02_architecture-elements/business/business-services/`](04_architecture-repository/02_architecture-elements/business/business-services) | Service métier SRV-01 |
-| Services legacy | [`04_architecture-repository/05_building-blocks/abb/legacy-services/`](04_architecture-repository/05_building-blocks/abb/legacy-services) | Services applicatifs et technologiques SRV-02..06 |
-| Processus | [`04_architecture-repository/02_architecture-elements/business/processes/`](04_architecture-repository/02_architecture-elements/business/processes) | Processus métier PRC |
+| Profils | [`04_architecture-repository/05_reference-library/standards-base/profiles/`](04_architecture-repository/05_reference-library/standards-base/profiles) | Profils PT-01..19 |
+| Objets de données | [`04_architecture-repository/04_data-architecture/data-objects/`](04_architecture-repository/04_data-architecture/data-objects) | Objets de données DO, répartis en sept thèmes de données |
+| Services métier | [`04_architecture-repository/03_business-architecture/business/business-services/`](04_architecture-repository/03_business-architecture/business/business-services) | Service métier SRV-01 |
+| Services legacy | [`04_architecture-repository/03_business-architecture/business/business-services/`](04_architecture-repository/03_business-architecture/business/business-services) | Services applicatifs et technologiques SRV-02..06 |
+| Processus | [`04_architecture-repository/03_business-architecture/business/processes/`](04_architecture-repository/03_business-architecture/business/processes) | Processus métier PRC |
 | Work packages | [`04_architecture-repository/07_migration/work-packages/`](04_architecture-repository/07_migration/work-packages) | Lots de mise en œuvre WP |
 | Plateaux | [`04_architecture-repository/07_migration/plateaux/`](04_architecture-repository/07_migration/plateaux) | Plateaux de trajectoire |
 | Gaps | [`04_architecture-repository/07_migration/gaps/`](04_architecture-repository/07_migration/gaps) | Écarts de trajectoire |
-| Flux de valeur | [`04_architecture-repository/02_architecture-elements/strategy/value-streams/`](04_architecture-repository/02_architecture-elements/strategy/value-streams) | VS-01..04 |
-| Étapes de valeur | [`04_architecture-repository/02_architecture-elements/strategy/value-stages/`](04_architecture-repository/02_architecture-elements/strategy/value-stages) | Étapes opérationnelles |
+| Flux de valeur | [`04_architecture-repository/03_business-architecture/strategy/value-streams/`](04_architecture-repository/03_business-architecture/strategy/value-streams) | VS-01..04 |
+| Étapes de valeur | [`04_architecture-repository/03_business-architecture/strategy/value-stages/`](04_architecture-repository/03_business-architecture/strategy/value-stages) | Étapes opérationnelles |
 
 ## Outils de gouvernance
 

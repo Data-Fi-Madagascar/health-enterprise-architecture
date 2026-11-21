@@ -23,15 +23,15 @@ Périmètre : événements métier, provenance des ressources, audit de sécurit
 
 ## 2. Objet CNISN/TOGAF de référence
 
-[ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md)
+[ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-audit-provenance.md)
 
 ## 3. Chapitres ART applicables
 
 - F.1
 - F.5
 - F.6
-- [ART-3: Historisation événementielle et profils de déploiement](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md)
-- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
+- [ART-3: Historisation événementielle et profils de déploiement](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-3.md)
+- [ART-7: Sécurité, contrôle d’accès et résidence de la donnée](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-7.md)
 
 ## 4. Acteurs (Actors)
 
@@ -40,7 +40,7 @@ Périmètre : événements métier, provenance des ressources, audit de sécurit
 - **Dépôt de provenance (Provenance Consumer/Repository)** — conserve l’origine et les transformations des ressources.
 - **Service d’observabilité (Observability Service)** — agrège logs, métriques, traces.
 
-*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-AUDIT-PROVENANCE](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-AUDIT-PROVENANCE](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-audit-provenance.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -52,7 +52,7 @@ Périmètre : événements métier, provenance des ressources, audit de sécurit
 
 R = requis ; O = optionnel.
 
-*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-AUDIT-PROVENANCE](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-AUDIT-PROVENANCE](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-audit-provenance.md).
 ## 6. Content Modules
 
 - **HL7 FHIR AuditEvent** : activité à portée d’audit.
@@ -134,9 +134,9 @@ Conformité attestée par l’adoption de FHIR `AuditEvent` et `Provenance`, la 
 
 ## 12. Articulation avec les autres profils
 
-- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md)
-- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md)
-- [PT-09: analytique et exposition de données](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-09.md)
+- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-10.md)
+- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-04.md)
+- [PT-09: analytique et exposition de données](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-09.md)
 
 ## 13. Limites et dépendances
 

@@ -23,16 +23,16 @@ Périmètre : médiation intra-secteur santé (transformation sémantique, routa
 
 ## 2. Objet CNISN/TOGAF de référence
 
-[ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md)
+[ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-echange-mediation.md)
 
 ## 3. Chapitres ART applicables
 
-- [ART-1: intégration](../../04_architecture-repository/04_patterns/artsn-rules/art-1.md)
-- [ART-2: médiation](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md)
-- [ART-5: qualité et réconciliation](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md)
-- [ART-7: sécurité](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
-- [ART-8: coordination lorsque applicable](../../04_architecture-repository/04_patterns/artsn-rules/art-8.md)
-- [ART-8C](../../04_architecture-repository/04_patterns/artsn-rules/art-8c.md), [ART-8D](../../04_architecture-repository/04_patterns/artsn-rules/art-8d.md)
+- [ART-1: intégration](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-1.md)
+- [ART-2: médiation](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md)
+- [ART-5: qualité et réconciliation](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-5.md)
+- [ART-7: sécurité](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-7.md)
+- [ART-8: coordination lorsque applicable](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-8.md)
+- [ART-8C](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-8c.md), [ART-8D](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-8d.md)
 
 ## 4. Acteurs (Actors)
 
@@ -42,7 +42,7 @@ Périmètre : médiation intra-secteur santé (transformation sémantique, routa
 - **Point d’échange sectoriel** — route vers la plateforme interinstitutionnelle le cas échéant.
 - **Plateforme interinstitutionnelle (PT-01)** — assure la confiance entre organisations hors secteur santé.
 
-*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-echange-mediation.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -54,7 +54,7 @@ Périmètre : médiation intra-secteur santé (transformation sémantique, routa
 
 R = requis ; O = optionnel.
 
-*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-echange-mediation.md).
 ## 6. Content Modules
 
 - **Ressources FHIR R4** : payloads normalisés par les profils métier (patient, practitioner, terminology…).
@@ -110,7 +110,7 @@ La conformité est attestée par : validation des profils consommés/exposés, j
 
 ## 12. Articulation avec les autres profils
 
-Le médiateur traite la sémantique et les règles sectorielles, puis route vers le point d’échange sectoriel et, le cas échéant, vers la plateforme interinstitutionnelle ([PT-01](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md)).
+Le médiateur traite la sémantique et les règles sectorielles, puis route vers le point d’échange sectoriel et, le cas échéant, vers la plateforme interinstitutionnelle ([PT-01](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-01.md)).
 
 ```plantuml
 @startuml
@@ -142,7 +142,7 @@ stop
 @enduml
 ```
 
-Il s’appuie sur les services nationaux [PT-04](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md) (identité), [PT-05](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md) (professionnels), [PT-07](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-07.md) (terminologie), [PT-10](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md) (autorisation), [PT-11](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-11.md) (consentement).
+Il s’appuie sur les services nationaux [PT-04](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-04.md) (identité), [PT-05](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-05.md) (professionnels), [PT-07](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-07.md) (terminologie), [PT-10](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-10.md) (autorisation), [PT-11](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-11.md) (consentement).
 
 ## 13. Limites et dépendances
 

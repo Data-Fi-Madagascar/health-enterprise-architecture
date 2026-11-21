@@ -109,11 +109,18 @@ health-enterprise-architecture/
 │   └── ...
 │
 ├── 04_architecture-repository/  # Source de vérité (objets de référence)
-│   ├── 02_architecture-elements/strategy/capabilities/  # CAP-01..18
-│   ├── 02_architecture-elements/motivation/principles/ # PA, P-INT, PD
-│   ├── 04_patterns/artsn-rules/                        # ART-0..12
-│   ├── 05_building-blocks/                             # ABB, SBB, PT-01..19
-│   ├── 06_governance/                                  # Contrats, conformité, preuves
+│   ├── 02_requirements/                              # Exigences REQ, ENF
+│   ├── 03_business-architecture/                     # Paysage A/B : motivation, stratégie, métier
+│   │   ├── motivation/principles/                    # PA, P-INT, PD
+│   │   ├── strategy/capabilities/                    # CAP-01..18
+│   │   └── business/processes/                       # PRC-01..13
+│   ├── 04_data-architecture/data-objects/             # DO-01..32
+│   ├── 05_reference-library/                         # Bibliothèque de référence TOGAF
+│   │   ├── patterns/artsn-rules/                     # ART-0..12
+│   │   ├── building-blocks/abb/                      # ABB
+│   │   ├── building-blocks/sbb/                      # CMP-01..38
+│   │   └── standards-base/profiles/                  # PT-01..20
+│   ├── 06_governance/                                # Contrats, conformité, preuves
 │   └── _index.yaml    # Registre de tous les objets
 │
 ├── scripts/           # Scripts Python de validation et génération
@@ -148,9 +155,9 @@ domain: 01_value-streams
 
 | Type | Exemple | Dossier concerné |
 |------|---------|------------------|
-| **Nouvelle capabilité** | Ajouter CAP-19 | `04_architecture-repository/02_architecture-elements/strategy/capabilities/` |
-| **Nouveau profil** | Ajouter PT-20 | `04_architecture-repository/05_building-blocks/sbb/legacy-profiles/` |
-| **Modification de principe** | Mettre à jour PA-01 | `04_architecture-repository/02_architecture-elements/motivation/principles/` |
+| **Nouvelle capabilité** | Ajouter CAP-19 | `04_architecture-repository/03_business-architecture/strategy/capabilities/` |
+| **Nouveau profil** | Ajouter PT-20 | `04_architecture-repository/05_reference-library/standards-base/profiles/` |
+| **Modification de principe** | Mettre à jour PA-01 | `04_architecture-repository/03_business-architecture/motivation/principles/` |
 | **Nouvelle décision** | ADR-0011 | `01_cnisn/06_decisions/` |
 | **Correction de bug** | Fixer un lien cassé | Tous les dossiers |
 

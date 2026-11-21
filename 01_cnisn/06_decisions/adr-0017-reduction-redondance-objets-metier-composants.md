@@ -163,5 +163,5 @@ Enfin, la suppression des mentions en prose est contrôlée, ce qui est plus str
 - [ADR-0014 : Rationalisation du catalogue des objets de données](adr-0014-rationalisation-catalogue-donnees.md)
 - [ADR-0015 : Deux emplois de l'accès aux données](adr-0015-semantique-acces-donnees.md)
 - [ADR-0016 : La déclaration `fhir_resources` fait foi sur la projection FHIR](adr-0016-projection-fhir-source-de-verite.md)
-- [CMP-10 : Registre des terminologies](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-10.md)
-- [ART-4 : Référentiels de métadonnées de gestion](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
+- [CMP-10 : Registre des terminologies](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-10.md)
+- [ART-4 : Référentiels de métadonnées de gestion](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md)

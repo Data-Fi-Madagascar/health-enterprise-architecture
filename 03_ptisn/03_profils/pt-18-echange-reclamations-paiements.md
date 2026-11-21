@@ -23,12 +23,12 @@ Périmètre : vérification d’éligibilité, soumission de réclamation, adjud
 
 ## 2. Objet CNISN/TOGAF de référence
 
-[CAP-07: Protection financière, couverture santé universelle](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-07.md)
+[CAP-07: Protection financière, couverture santé universelle](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-07.md)
 
 ## 3. Chapitres ART applicables
 
-- [ART-2: médiation et normalisation](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md)
-- [ART-9: garanties transactionnelles fortes](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md)
+- [ART-2: médiation et normalisation](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md)
+- [ART-9: garanties transactionnelles fortes](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-9.md)
 - [STD-0008: échange des réclamations et paiements](../../01_cnisn/05_standards/std-0008-echange-reclamations-paiements.md)
 
 ## 4. Acteurs (Actors)
@@ -37,7 +37,7 @@ Périmètre : vérification d’éligibilité, soumission de réclamation, adjud
 - **Payeur (Payer)** — système du payeur répondant à l’éligibilité, adjudiquant et notifiant le paiement.
 - **Bus d’échange de réclamations (Claims Exchange Hub)** — achemine et assure l’intégrité des flux entre prestataire et payeur.
 
-*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-REGISTRE-PROFESSIONNELS](../../04_architecture-repository/05_building-blocks/abb/abb-registre-professionnels.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-REGISTRE-PROFESSIONNELS](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-registre-professionnels.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -49,7 +49,7 @@ Périmètre : vérification d’éligibilité, soumission de réclamation, adjud
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-REGISTRE-PROFESSIONNELS](../../04_architecture-repository/05_building-blocks/abb/abb-registre-professionnels.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-REGISTRE-PROFESSIONNELS](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-registre-professionnels.md).
 ## 6. Content Modules
 
 - **FHIR `CoverageEligibilityRequest` / `Response`** : éligibilité et couverture (résolution du bénéficiaire STD-0005, du prestataire ABB-REGISTRE-PROFESSIONNELS).
@@ -101,10 +101,10 @@ Aucun produit national n’est encore retenu (**statut : à instruire**). Le bus
 
 ## 12. Articulation avec les autres profils
 
-- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md)
-- [PT-05: registre des professionnels](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md)
-- [PT-02: médiation intra-secteur](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-02.md)
-- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md)
+- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-04.md)
+- [PT-05: registre des professionnels](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-05.md)
+- [PT-02: médiation intra-secteur](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-02.md)
+- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-10.md)
 
 ## 13. Limites et dépendances
 

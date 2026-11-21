@@ -23,12 +23,12 @@ Périmètre : orchestration de processus métier bornés au secteur santé. Hors
 
 ## 2. Objet CNISN/TOGAF de référence
 
-[ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md)
+[ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-echange-mediation.md)
 
 ## 3. Chapitres ART applicables
 
 - ART-8A — orchestration de processus borné
-- [ART-7: sécurité](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
+- [ART-7: sécurité](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-7.md)
 
 ## 4. Acteurs (Actors)
 
@@ -37,7 +37,7 @@ Périmètre : orchestration de processus métier bornés au secteur santé. Hors
 - **Médiateur sectoriel (PT-02)** — assure le routage et la transformation des messages entre participants.
 - **Services participants (Service A/B/C)** — systèmes métier sollicités par le workflow.
 
-*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-echange-mediation.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -49,7 +49,7 @@ Périmètre : orchestration de processus métier bornés au secteur santé. Hors
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-echange-mediation.md).
 ## 6. Content Modules
 
 - **HL7 FHIR** : ressources et événements échangés entre participants.
@@ -100,7 +100,7 @@ Une solution alternative doit au minimum supporter :
 - observabilité des processus en cours ;
 - reprise en cas de défaillance ;
 - déploiement de workflows indépendants ;
-- intégration avec le médiateur sectoriel ([PT-02: médiation intra-secteur](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-02.md)).
+- intégration avec le médiateur sectoriel ([PT-02: médiation intra-secteur](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-02.md)).
 
 ## 11. Déclaration de conformité (Integration Statement)
 
@@ -108,7 +108,7 @@ Conformité attestée par l’intégration avec le médiateur sectoriel (PT-02),
 
 ## 12. Articulation avec les autres profils
 
-Le médiateur ([PT-02](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-02.md)) assure le routage et la transformation des messages. L’orchestrateur ([PT-16](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-16.md)) coordonne les processus métier multi-étapes et garantit la cohérence des parcours.
+Le médiateur ([PT-02](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-02.md)) assure le routage et la transformation des messages. L’orchestrateur ([PT-16](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-16.md)) coordonne les processus métier multi-étapes et garantit la cohérence des parcours.
 
 ```plantuml
 @startuml
@@ -121,10 +121,10 @@ skinparam activity {
 start
 :Envoie l'événement;
 
-|Médiateur sectoriel ([PT-02](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-02.md))|
+|Médiateur sectoriel ([PT-02](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-02.md))|
 :Route le message;
 
-|Orchestrateur ([PT-16](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-16.md))|
+|Orchestrateur ([PT-16](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-16.md))|
 :Exécute le workflow;
 :Gère les sagas
 et compensations;
@@ -139,7 +139,7 @@ end fork
 
 :Consolide le résultat;
 
-|Médiateur sectoriel ([PT-02](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-02.md))|
+|Médiateur sectoriel ([PT-02](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-02.md))|
 :Route la réponse;
 
 |Système cible|
