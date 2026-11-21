@@ -74,7 +74,6 @@ TYPE_ORDER = [
     "plateau",
     "gap",
     "objet-de-donnees",
-    "objet-metier",
     "reference-data",
     "terminology",
     "valeur",

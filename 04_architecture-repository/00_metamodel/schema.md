@@ -38,7 +38,6 @@ Ce document définit le modèle d’objets du référentiel. Il est la source de
 | `role` | actif | `04_architecture-repository/02_architecture-elements/business/roles/` | `rol-` | rôles métier CAESN |
 | `business-location` | actif | `04_architecture-repository/02_architecture-elements/business/locations/` | `loc-` | localisations métier |
 | `processus-metier` | actif | `04_architecture-repository/02_architecture-elements/business/processes/` | `prc-` | processus métier CAESN |
-| `objet-metier` | actif | `04_architecture-repository/02_architecture-elements/business/business-objects/` | `bo-` | objets métier CAESN |
 | `service` | actif legacy conservé | `04_architecture-repository/02_architecture-elements/business/business-services/` pour `SRV-01` ; `04_architecture-repository/05_building-blocks/abb/legacy-services/` pour `SRV-02..06` | `srv-` | services transverses |
 | `objet-de-donnees` | actif | `04_architecture-repository/02_architecture-elements/data/data-objects/` | `p-`, `s-`, `d-`, `f-`, `r-`, `e-`, `t-` | objets de données ARTSN |
 | `reference-data` | actif | `04_architecture-repository/02_architecture-elements/data/reference-data/` | `ref-` | données de référence |
@@ -118,8 +117,8 @@ tags: ["cnisn", "autorite", "donnees-de-reference"]
 | `performed_by` | non | Inverse de `performs` (coté processus) |
 | `located_at` | non | Acteur / composant / service / capacité localisé géographiquement (Location) — ArchiMate Association |
 | `serves` | non | Service rendu à une partie prenante / un acteur — ArchiMate Serving |
-| `accesses` | non | Accès à un objet métier / donnée, dans ses deux emplois : le processus qui manipule la donnée et le composant, le service ou le bloc qui la détient. ArchiMate Access |
-| `accessed_by` | non | Inverse de `accesses` (coté objet métier / donnée). Sur un objet de données, la liste mêle les deux emplois : le processus y figure pour la manipulation, le composant pour la détention |
+| `accesses` | non | Accès à un objet de données ou à une terminologie, dans ses deux emplois : le processus qui manipule la donnée et le composant, le service ou le bloc qui la détient. ArchiMate Access |
+| `accessed_by` | non | Inverse de `accesses` (coté objet de données ou terminologie). Sur un objet de données, la liste mêle les deux emplois : le processus y figure pour la manipulation, le composant pour la détention |
 | `constrained_by` | non | Objet de données dont les valeurs sont codées par une terminologie : Association sémantique (extension HEA) |
 | `constrains` | non | Inverse de `constrained_by` (coté terminologie) |
 | `realizes` | non | Service / paquet de travail / plateau réalise une capacité, composant ou service — ArchiMate Realization |
@@ -135,6 +134,7 @@ tags: ["cnisn", "autorite", "donnees-de-reference"]
 | `tier` | obligatoire pour `objet-de-donnees` | Classement de criticité de la donnée : `A` (référentiel et pilotage), `B` (transactionnel et opérationnel), `C` (appui analytique). Cette propriété n'est pas une relation |
 | `system_of_record` | obligatoire pour `objet-de-donnees` | Système(s) qui détiennent la version faisant foi de l'objet. Cible un composant applicatif ou un bloc d'architecture. Cette propriété n'est pas une relation |
 | `absorbs` | non | Identifiants d'objets de données retirés par fusion dans cet objet. Cette propriété n'est pas une relation : elle est confrontée à `00_metamodel/do-migration.yaml` par `scripts/validate_ref.py` |
+| `theme` | obligatoire pour `objet-de-donnees` | Thème de données auquel l'objet appartient. La valeur appartient au vocabulaire contrôlé de `00_metamodel/themes.yaml`, qui porte pour chaque thème son libellé, sa description et les flux de valeur qu'il dessert. Cette propriété n'est pas une relation : elle n'apparaît ni comme arête du graphe ni comme cible de relation. Elle est confrontée à `00_metamodel/object-migration.yaml` par `scripts/validate_ref.py` |
 | `fhir_resources` | obligatoire pour `objet-de-donnees` | Liste des ressources FHIR R4 par lesquelles l'objet s'échange. Cette déclaration est la source unique de vérité de la projection FHIR : le compilateur produit une StructureDefinition par ressource déclarée et n'en dérive aucune. Contrôlée par `scripts/compilers/compile_fhir.py` |
 | `categorie` | non | Sous-couche ArchiMate de l'objet : `applicatif`, `infrastructure`, `securite`, `principe`, `regulation`, `acteur`, `work-package`, `data-object` |
 | `governs` | non | Liens typés : element de gouvernance qui encadre/valide un composant (sens gouvernance -> composant) |
@@ -216,8 +216,8 @@ Le référentiel suit le modèle de relations d'ArchiMate : la **capacité** est
 | Acteur / Composant / Service / Capacité | `located_at` | Lieu (LOC) | Association géographique | la ressource est localisée sur le territoire |
 | Service (SRV) | `serves` | Partie prenante / Acteur | Service *serving* Stakeholder | le service crée de la valeur pour le bénéficiaire |
 | Processus métier (PRC) | `accesses` | Objet de données (DO) | Business Process *access* Data Object | le processus manipule la donnée : il la produit, la met à jour ou la consomme |
-| Composant / Service / Bloc (CMP, SRV, ABB) | `accesses` | Objet métier / Objet de données | Application Component *access* Data Object | le composant détient la donnée, la produit, l'expose ou la met à jour |
-| Objet métier / Objet de données | `accessed_by` | Processus / Composant / Service | inverse de `accesses` | navigabilité (coté objet) |
+| Composant / Service / Bloc (CMP, SRV, ABB) | `accesses` | Objet de données / Terminologie | Application Component *access* Data Object | le composant détient la donnée, la produit, l'expose ou la met à jour |
+| Objet de données / Terminologie | `accessed_by` | Processus / Composant / Service | inverse de `accesses` | navigabilité (coté objet) |
 | Objet de données (DO) | `maps_to` | Capacité CAESN (CAP) | Association (extension HEA) | l'objet de données est au service de la capacité déclarée |
 | Objet de données (DO) | `constrained_by` | Terminologie (TERM) | Association sémantique (extension HEA) | les valeurs portées par l'objet sont codées par la terminologie |
 | Terminologie (TERM) | `constrains` | Objet de données (DO) | inverse de `constrained_by` | navigabilité (coté terminologie) |
@@ -310,11 +310,11 @@ Cette projection illustre la fonction de chaque pont. Le pont applicatif relie l
 
 | Règle | Portée | Contrôle |
 |-------|--------|----------|
-| Toute relation `accesses` (X vers Y) dispose de son inverse `accessed_by` (Y vers X) | Objets de données et objets métier | `scripts/validate_ref.py` |
+| Toute relation `accesses` (X vers Y) dispose de son inverse `accessed_by` (Y vers X) | Objets de données et terminologies | `scripts/validate_ref.py` |
 | Toute arête `PRC` vers `DO` est adossée à un composant que le processus mobilise : ce composant déclare `accesses` vers l'objet | Objets de données et processus métiers | `scripts/validate_ref.py` |
 | Tout `system_of_record` d'un objet de données déclare lui-même l'accès à cet objet (`accesses`), et figure parmi ses accesseurs | Objets de données | `scripts/validate_ref.py` |
 | Toute relation `constrained_by` (DO vers TERM) dispose de son inverse `constrains` (TERM vers DO) | Objets de données et terminologies | `scripts/validate_ref.py` |
-| `accesses` ne cible qu'un objet métier, un objet de données ou une terminologie | Composants, services, processus | `scripts/validate_ref.py` |
+| `accesses` ne cible qu'un objet de données ou une terminologie | Composants, services, processus | `scripts/validate_ref.py` |
 | `constrained_by` ne cible qu'une terminologie | Objets de données | `scripts/validate_ref.py` |
 | `uses` (PRC vers CMP) et `applies_to` (CMP vers PRC) restent symétriques | Composants applicatifs | `scripts/validate_ref.py` |
 | Tout objet de données est détenu par au moins un composant et manipulé par au moins un processus | Objets de données | `scripts/validate_ref.py` |
@@ -325,6 +325,9 @@ Cette projection illustre la fonction de chaque pont. Le pont applicatif relie l
 | Tout objet de données déclare au moins un `system_of_record` ciblant un composant applicatif ou un bloc d'architecture | Objets de données | `scripts/validate_ref.py` |
 | Tout identifiant listé dans `absorbs` est un objet de données retiré, et sa fusion est déclarée dans `00_metamodel/do-migration.yaml` | Objets de données | `scripts/validate_ref.py` |
 | Aucun identifiant retiré par fusion ne subsiste comme objet actif ni comme cible de relation | Objets de données | `scripts/validate_ref.py` |
+| Tout objet de données déclare exactement un `theme`, et ce thème figure dans le vocabulaire contrôlé de `00_metamodel/themes.yaml` | Objets de données | `scripts/validate_ref.py` |
+| Chaque thème du vocabulaire contrôlé est porte par au moins un objet de données, et l'ensemble des objets d'un thème coïncide exactement avec la portée de l'objet retiré qui l'a créé | Objets de données et thèmes | `scripts/validate_ref.py` |
+| Aucun identifiant retiré par décision d'architecture ne subsiste comme objet actif, comme cible de relation, ni comme mention en prose hors des documents de décision et des traces de migration | Objets retirés | `scripts/validate_ref.py` |
 | Tout objet de données déclare au moins une ressource FHIR, et aucune ressource deux fois | Objets de données | `scripts/compilers/compile_fhir.py` |
 | Toute ressource FHIR déclarée existe dans le paquet FHIR R4 et porte un niveau de maturité FMM d'au moins un | Objets de données | `scripts/compilers/compile_fhir.py` |
 | Le bloc `fhir:` d'un objet de données déclare une base qui figure parmi les ressources déclarées | Objets de données | `scripts/compilers/compile_fhir.py` |
@@ -339,6 +342,20 @@ Une seconde exception, nommée et strictement limitée, porte sur l'ancre de con
 ## Registre des objets
 
 Le registre central de tous les objets est `04_architecture-repository/_index.yaml` : id, type, niveau, chemin, statut. Il est la source de vérité pour la vérification des comptes et la détection de perte pendant la migration.
+
+## Traces de migration et vocabulaire contrôlé
+
+Trois fichiers de `00_metamodel/` portent l'historique et les vocabulaires que le corpus ne peut plus exprimer par lui-même.
+
+| Fichier | Portée | Contenu |
+|---------|--------|---------|
+| `do-migration.yaml` | fusions d'objets de données | Pour chaque objet de données retiré par fusion, l'identifiant d'origine, l'identifiant qui l'absorbe et la date de la décision. Confronté à la propriété `absorbs` des objets actifs |
+| `object-migration.yaml` | retraits et fusions d'objets par décision d'architecture | Pour chaque objet retiré, sa disposition (`retired` ou `merged`), le thème ou le composant qui l'absorbe, et la liste des identifiants qui le remplacent. Ce fichier est la trace de référence des huit retraits du lot de réduction de redondance |
+| `themes.yaml` | vocabulaire contrôlé des thèmes de données | Pour chaque thème, son slug, son libellé, sa description et les flux de valeur qu'il dessert. Ce vocabulaire est la seule source admise pour la propriété `theme` d'un objet de données |
+
+La séparation des trois rôles est délibérée. Une trace de migration enregistre ce qui a disparu et vers quoi ; un vocabulaire contrôlé enregistre ce qui reste et comment il se nomme. Le validateur confronte les deux : la propriété `theme` de chaque objet doit appartenir au vocabulaire, chaque thème doit être порteur d'au moins un objet, et l'ensemble des objets d'un thème doit coïncider avec la portée de l'objet retiré qui l'a créé. Cette confrontation rend impossible l'ajout d'un objet dans un thème sans que la trace ne soit mise à jour, et impossible l'oubli d'un objet retiré sans que la propriété `theme` ne soit répartie.
+
+Les flux de valeur portés par `themes.yaml` ne sont pas redondants avec le graphe. La dérivation d'un thème vers un flux de valeur à partir des objets qu'il contient est mesurée : six des sept thèmes s'écartent de la dérivation, seul le thème d'exploitation et de gestion coïncide. Cette information est donc déclarée, et non reconstruite.
 
 ## Couverture des concepts ArchiMate
 
@@ -360,7 +377,7 @@ Matrice de présence des concepts ArchiMate dans le référentiel après le plac
 | Business | Role | `role` (ROL) | ✓ |
 | Business | Collaboration | N/A | hors périmètre |
 | Business | Location | `business-location`, legacy `lieu` (LOC) | ✓ |
-| Business | Object | `objet-metier` (BO) / `objet-de-donnees` (DO) | ✓ |
+| Business | Object | `objet-de-donnees` (DO), structuré par la propriété `theme` | ✓ |
 | Business | Function / Event / Product / Contract | N/A | hors périmètre |
 | Business | Business Service | `service` dans `business-services` | ✓ |
 | Application | Component | futur `architecture-building-block`, legacy `composant-applicatif` (CMP) | ✓ |

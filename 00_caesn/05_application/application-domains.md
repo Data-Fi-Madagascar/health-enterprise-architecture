@@ -45,7 +45,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 
 ## Composants applicatifs cibles
 
-<!-- BEGIN:GENERATED source=04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-01.md,04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-02.md,04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-03.md,04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-04.md,04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-05.md,04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-06.md,04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-07.md,04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-08.md,04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-09.md,04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-10.md,04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-11.md -->
+<!-- BEGIN:GENERATED source=04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-01.md,04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-02.md,04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-03.md,04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-04.md,04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-05.md,04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-06.md,04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-07.md,04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-08.md,04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-10.md,04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-11.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### Tableaux de bord & Portails nationaux
@@ -136,27 +136,24 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 - **Données portées** : [DO-03 : Dossier et épisode de soins](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-03.md), [DO-05 : Consultation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-05.md)
 - **Statut : Stable.**
 
-### Référentiel des métadonnées d'exploitation ([ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md))
-
-**Contenu normatif.** Ce composant définit et gère les métadonnées d'exploitation : nomenclatures, codifications et standards de données. Il assure l'interopérabilité sémantique entre les systèmes et garantit l'utilisation cohérente des terminologies et classifications.
-
-**Discipline de mise en œuvre.** Il est l'autorité sémantique de la plateforme. Toute définition de donnée clinique ou administrative passe par ce référentiel, ce qui garantit l'unicité des définitions à l'échelle nationale.
-
-- **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md).
-- **Processus soutenus** : [PRC-07: Identification et droits des bénéficiaires](../../04_architecture-repository/02_architecture-elements/business/processes/prc-07.md) (production données), [PRC-08: Financement et exemption au point de service](../../04_architecture-repository/02_architecture-elements/business/processes/prc-08.md) (qualité).
-- **Données portées** : [TERM-SNOMED-CT : Terminologie clinique SNOMED CT](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-snomed-ct.md), [TERM-RXNORM : Terminologie des médicaments RxNorm](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-rxnorm.md), [TERM-ATC : Classification pharmacologique ATC de l'OMS](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-atc.md), [TERM-DCI : Dénomination commune internationale](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-dci.md), [TERM-CIM-11 : Classification internationale des maladies](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-cim-11.md), [TERM-CODIFICATION-COMMUNE : Terminologie et codification communes](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-codification-commune.md)
-- **Statut : Stable.**
-
 ### Registre des terminologies
 
-**Contenu normatif.** Ce composant gère les terminologies médicales et de référence (CIM-11, SNOMED CT, LOINC, ATC, etc.). Il assure le mapping sémantique entre les systèmes et fournit les services de traduction et de validation des codages.
+**Contenu normatif.** Ce composant tient le registre national des terminologies et des référentiels de codification de la plateforme (CIM-11, SNOMED CT, LOINC, ATC, DCI, codification commune). Il assure le mapping sémantique entre les systèmes et fournit les services de traduction et de validation des codages. Il est l'autorité sémantique de la plateforme : toute définition de donnée clinique ou administrative passe par ce registre, ce qui garantit l'unicité des définitions à l'échelle nationale.
 
 **Discipline de mise en œuvre.** Il sert de pont sémantique entre les systèmes hétérogènes. Il garantit que les données codées dans un système sont interprétables et exploitables par un autre.
 
-- **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-SERVICE-TERMINOLOGIE: Service de terminologie et codification communes](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md).
-- **Processus soutenus** : [PRC-07: Identification et droits des bénéficiaires](../../04_architecture-repository/02_architecture-elements/business/processes/prc-07.md) (production données), [PRC-08: Financement et exemption au point de service](../../04_architecture-repository/02_architecture-elements/business/processes/prc-08.md) (qualité).
-- **Données portées** : [TERM-SNOMED-CT : Terminologie clinique SNOMED CT](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-snomed-ct.md), [TERM-RXNORM : Terminologie des médicaments RxNorm](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-rxnorm.md), [TERM-ATC : Classification pharmacologique ATC de l'OMS](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-atc.md), [TERM-DCI : Dénomination commune internationale](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-dci.md), [TERM-CIM-11 : Classification internationale des maladies](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-cim-11.md), [TERM-CODIFICATION-COMMUNE : Terminologie et codification communes](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-codification-commune.md)
-- **Statut : Stable.**
+- **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-SERVICE-TERMINOLOGIE: Service de terminologie et codification communes](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md).
+- **Processus soutenus** : [PRC-07: Identification et droits des bénéficiaires](../../04_architecture-repository/02_architecture-elements/business/processes/prc-07.md) (production données), [PRC-08: Financement et exemption au point de service](../../04_architecture-repository/02_architecture-elements/business/processes/prc-08.md) (qualité).
+- **Données portées** : [TERM-SNOMED-CT : Terminologie clinique SNOMED CT](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-snomed-ct.md), [TERM-RXNORM : Terminologie des médicaments RxNorm](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-rxnorm.md), [TERM-ATC : Classification pharmacologique ATC de l'OMS](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-atc.md), [TERM-DCI : Dénomination commune internationale](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-dci.md), [TERM-CIM-11 : Classification internationale des maladies](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-cim-11.md), [TERM-LOINC : Terminologie des observations de laboratoire](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-loinc.md), [TERM-CODIFICATION-COMMUNE : Terminologie et codification communes](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-codification-commune.md)
+- **Statut : Stable.**
+
+#### Fusion
+
+Ce composant est le résultat de la fusion du composant suivant, retiré du catalogue :
+
+- `CMP-09` (Référentiel des métadonnées d'exploitation)
+
+CMP-09 partageait la même signature relationnelle que CMP-10 : il implémentait ART-4, s'appliquait aux mêmes processus et accédait aux mêmes terminologies. La fusion est tracée dans `04_architecture-repository/00_metamodel/object-migration.yaml` et décidée par l'ADR-0017.
 
 ### Registre des clients / Index National des Patients (INP — ART-4A)
 

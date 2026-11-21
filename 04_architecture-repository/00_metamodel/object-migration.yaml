@@ -1,0 +1,104 @@
+# Migration des objets retirés du référentiel HEA, hors catalogue des objets
+# de données. La trace des fusions de ce catalogue se trouve dans
+# `do-migration.yaml`, qui suit la même logique.
+#
+# Ce fichier est la trace machine-lisible des retraits décidés par l'ADR-0017 :
+#
+#   - les sept « objets métier » BO-01 à BO-07, dont la charge utile est
+#     désormais portée par la propriété `theme` des objets de données ;
+#   - le composant CMP-09, fusionné dans CMP-10.
+#
+# Il est la seule source qui autorise la mention d'un identifiant retiré.
+# `scripts/validate_ref.py` s'en sert pour refuser un objet retiré présent
+# comme objet actif, une relation active pointant vers lui, et un écart
+# entre le périmètre d'un thème et celui que l'objet métier retiré portait.
+#
+# `disposition` :
+#   - "retired" : l'objet est retiré du catalogue, sa charge utile est
+#                 hébergée par un thème, un composant ou un bloc
+#                 d'architecture ;
+#   - "merged"  : l'objet est fusionné dans un autre objet de même type, qui
+#                 documente la fusion dans son corps.
+#
+# `theme` porte le vocabulaire de remplacement lorsque la charge utile retirée
+# est un thème de données. `replacement_ids` porte alors la liste exacte des
+# objets de données que ce thème recouvre.
+- legacy_id: "BO-01"
+  legacy_title: "Patient & identité"
+  legacy_type: "objet-metier"
+  disposition: "retired"
+  theme: "patient-identite"
+  replacement_ids: ["DO-01", "DO-03"]
+  rationale: >-
+    Le périmètre de l'objet métier est intégralement repris par le thème
+    « Patient & identité », déclaré par les deux objets de données qui le
+    concernaient.
+- legacy_id: "BO-02"
+  legacy_title: "Prestation & soins"
+  legacy_type: "objet-metier"
+  disposition: "retired"
+  theme: "prestation-soins"
+  replacement_ids: ["DO-05", "DO-06", "DO-07", "DO-09", "DO-32"]
+  rationale: >-
+    Le thème reprend le périmètre de l'objet métier et lui ajoute DO-32,
+    que le dictionnaire des données fonctionnelles classait déjà dans
+    « Prestation & soins » et que la liste de l'objet métier omettait.
+- legacy_id: "BO-03"
+  legacy_title: "Dispensation & produits"
+  legacy_type: "objet-metier"
+  disposition: "retired"
+  theme: "dispensation-produits"
+  replacement_ids: ["DO-10", "DO-11", "DO-12"]
+  rationale: >-
+    Le périmètre de l'objet métier est intégralement repris par le thème
+    « Dispensation & produits ».
+- legacy_id: "BO-04"
+  legacy_title: "Financement & couverture"
+  legacy_type: "objet-metier"
+  disposition: "retired"
+  theme: "financement-couverture"
+  replacement_ids: ["DO-14", "DO-16", "DO-17"]
+  rationale: >-
+    Le périmètre de l'objet métier est intégralement repris par le thème
+    « Financement & couverture ».
+- legacy_id: "BO-05"
+  legacy_title: "Risque & surveillance"
+  legacy_type: "objet-metier"
+  disposition: "retired"
+  theme: "risque-surveillance"
+  replacement_ids: ["DO-18", "DO-19", "DO-20"]
+  rationale: >-
+    Le périmètre de l'objet métier est intégralement repris par le thème
+    « Risque & surveillance ».
+- legacy_id: "BO-06"
+  legacy_title: "Exploitation & gestion"
+  legacy_type: "objet-metier"
+  disposition: "retired"
+  theme: "exploitation-gestion"
+  replacement_ids: ["DO-23", "DO-24", "DO-25", "DO-26", "DO-27"]
+  rationale: >-
+    Le périmètre de l'objet métier est intégralement repris par le thème
+    « Exploitation & gestion ».
+- legacy_id: "BO-07"
+  legacy_title: "Interopérabilité transfrontalière"
+  legacy_type: "objet-metier"
+  disposition: "retired"
+  theme: "interop-transfrontalier"
+  replacement_ids: ["DO-29", "DO-31"]
+  rationale: >-
+    Le périmètre de l'objet métier est intégralement repris par le thème
+    « Interopérabilité transfrontalière ».
+- legacy_id: "CMP-09"
+  legacy_title: "Référentiel des métadonnées d'exploitation (ART-4)"
+  legacy_type: "composant-applicatif"
+  disposition: "merged"
+  primary_replacement: "CMP-10"
+  replacement_ids: ["CMP-10"]
+  rationale: >-
+    CMP-09 et CMP-10 partagent la même signature relationnelle : ils
+    implémentent ART-4, s'appliquent aux mêmes processus et accèdent aux mêmes
+    sept terminologies. CMP-09 se déclarait rattaché au bloc de gestion du
+    consentement, ce que son propre contenu contredit : il décrit l'autorité
+    sémantique de la plateforme, c'est-à-dire le registre des terminologies.
+    La fusion est conservée sous l'identifiant CMP-10, dont la correspondance
+    avec le bloc de terminologie est exacte.

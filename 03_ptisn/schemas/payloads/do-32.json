@@ -41,14 +41,6 @@
     "art_4Ref": {
       "type": "string",
       "description": "Référence à ART-4"
-    },
-    "bo_02Ref": {
-      "type": "string",
-      "description": "Référence à BO-02"
-    },
-    "bo_05Ref": {
-      "type": "string",
-      "description": "Référence à BO-05"
     }
   },
   "required": [

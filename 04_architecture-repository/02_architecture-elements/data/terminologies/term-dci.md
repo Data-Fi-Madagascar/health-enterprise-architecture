@@ -19,7 +19,7 @@ implements: ["ART-2", "ART-4"]
 related: ["TERM-SNOMED-CT", "TERM-RXNORM", "TERM-CODIFICATION-COMMUNE", "CMP-10"]
 constrains: ["DO-06", "DO-10", "DO-11", "DO-12"]
 tags: ["artsn", "terminology", "term-dci"]
-accessed_by: ["CMP-09", "CMP-10"]
+accessed_by: ["CMP-10"]
 ---
 # TERM-DCI : Dénomination commune internationale
 

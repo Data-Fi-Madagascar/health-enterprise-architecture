@@ -8,9 +8,9 @@ status: draft
 owner: Direction du Numérique en Santé
 version: "0.1"
 envelope: 00_caesn/06_portfolio/wp-02-lot-l2-applications-terrain-collecte.md
-realizes: ["CMP-09", "CMP-23", "SRV-02", "SRV-05", "CAP-01"]
+realizes: ["CMP-10", "CMP-23", "SRV-02", "SRV-05", "CAP-01"]
 contributes_to: ["PL-02"]
-related: ["CMP-09", "CMP-23", "SRV-02", "SRV-05", "CAP-01", "PL-02"]
+related: ["CMP-10", "CMP-23", "SRV-02", "SRV-05", "CAP-01", "PL-02"]
 tags: ["artsn", "work-package", "wp-02", "lots"]
 ---
 
@@ -22,7 +22,7 @@ tags: ["artsn", "work-package", "wp-02", "lots"]
 
 Le lot L2 déploie les applications de terrain qui captent les données au plus près des formations sanitaires, y compris en mode hors-ligne : dossiers patients, gestion des pharmacies, santé communautaire, chaîne logistique et équipes mobiles, adossés à la couche transport asynchrone.
 
-Ce paquet de travail [réalise le composant de dossiers](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-09.md), le [composant de chaîne logistique](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-23.md), le [service de dossier patient](../../04_architecture-repository/05_building-blocks/abb/legacy-services/srv-02.md), le [service logistique](../../04_architecture-repository/05_building-blocks/abb/legacy-services/srv-05.md) et la [capacité « Offre de soins et continuité »](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md). Il [contribue au plateau 2](../../04_architecture-repository/07_migration/plateaux/pl-02.md).
+Ce paquet de travail [réalise le registre des terminologies](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-10.md), le [composant de chaîne logistique](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-23.md), le [service de dossier patient](../../04_architecture-repository/05_building-blocks/abb/legacy-services/srv-02.md), le [service logistique](../../04_architecture-repository/05_building-blocks/abb/legacy-services/srv-05.md) et la [capacité « Offre de soins et continuité »](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md). Il [contribue au plateau 2](../../04_architecture-repository/07_migration/plateaux/pl-02.md).
 
 ## Unité de temps
 
@@ -34,7 +34,7 @@ Il produit les livrables suivants : 5 applications terrain opérationnelles et c
 
 ## Objectifs
 
-Il réalise les éléments de l'architecture cible : [CMP-09](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-09.md), [CMP-23](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-23.md), [SRV-02](../../04_architecture-repository/05_building-blocks/abb/legacy-services/srv-02.md), [SRV-05](../../04_architecture-repository/05_building-blocks/abb/legacy-services/srv-05.md), [CAP-01](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md).
+Il réalise les éléments de l'architecture cible : [CMP-10 : Registre des terminologies](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-10.md), [CMP-23](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-23.md), [SRV-02](../../04_architecture-repository/05_building-blocks/abb/legacy-services/srv-02.md), [SRV-05](../../04_architecture-repository/05_building-blocks/abb/legacy-services/srv-05.md), [CAP-01](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md).
 
 ## Ressources assignées
 

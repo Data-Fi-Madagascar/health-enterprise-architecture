@@ -95,10 +95,6 @@ hea:ObjetDeDonnees rdf:type owl:Class ;
     rdfs:label "Objet de données" ;
     rdfs:comment "Objet de données du référentiel (DO-01..31). ArchiMate: Data Object." .
 
-hea:ObjetMetier rdf:type owl:Class ;
-    rdfs:label "Objet métier" ;
-    rdfs:comment "Objet métier du référentiel (BO-01..07). ArchiMate: Business Object." .
-
 # ===================================================================
 # Classes — Niveau 4 (PTISN)
 # ===================================================================
@@ -261,23 +257,23 @@ hea:realizedBy rdf:type owl:ObjectProperty ;
 # et le service de terminologie accède aux terminologies qu'il sert.
 hea:accesses rdf:type owl:ObjectProperty ;
     rdfs:label "accède à" ;
-    rdfs:comment "Access ArchiMate — un processus, un service ou un composant accède à un objet de données, un objet métier ou une terminologie" ;
+    rdfs:comment "Access ArchiMate — un processus, un service ou un composant accède à un objet de données ou une terminologie" ;
     rdfs:domain [
         rdf:type owl:Class ;
         owl:unionOf (hea:ProcessusMetier hea:Service hea:Composant)
     ] ;
     rdfs:range [
         rdf:type owl:Class ;
-        owl:unionOf (hea:ObjetDeDonnees hea:ObjetMetier hea:Terminology)
+        owl:unionOf (hea:ObjetDeDonnees hea:Terminology)
     ] .
 
 hea:accessedBy rdf:type owl:ObjectProperty ;
     rdfs:label "accédé par" ;
-    rdfs:comment "Inverse de hea:accesses pour naviguer depuis les objets métier, les objets de données et les terminologies" ;
+    rdfs:comment "Inverse de hea:accesses pour naviguer depuis les objets de données et les terminologies" ;
     owl:inverseOf hea:accesses ;
     rdfs:domain [
         rdf:type owl:Class ;
-        owl:unionOf (hea:ObjetDeDonnees hea:ObjetMetier hea:Terminology)
+        owl:unionOf (hea:ObjetDeDonnees hea:Terminology)
     ] ;
     rdfs:range [
         rdf:type owl:Class ;

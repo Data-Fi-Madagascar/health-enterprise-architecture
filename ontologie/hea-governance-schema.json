@@ -22,7 +22,6 @@
       "enum": [
         "nomenclature",
         "objet-de-donnees",
-        "objet-metier",
         "profil",
         "capabilite",
         "chapitre",

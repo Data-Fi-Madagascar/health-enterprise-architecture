@@ -16,10 +16,10 @@ architecture_scope: semantics
 architecture_state: target
 maps_to: ["CAP-13", "CAP-14"]
 implements: ["ART-2", "ART-4"]
-related: ["TERM-CODIFICATION-COMMUNE", "TERM-RXNORM", "CMP-09", "CMP-10", "STD-0007"]
+related: ["TERM-CODIFICATION-COMMUNE", "TERM-RXNORM", "CMP-10", "STD-0007"]
 constrains: ["DO-06", "DO-10", "DO-11"]
 tags: ["artsn", "terminology", "term-snomed-ct"]
-accessed_by: ["CMP-09", "CMP-10"]
+accessed_by: ["CMP-10"]
 ---
 # TERM-SNOMED-CT : Terminologie clinique SNOMED CT
 
@@ -41,7 +41,7 @@ Fournir la codification clinique internationale des concepts de santé, afin que
 
 ## Rattachement
 
-- **Composants porteurs** : [CMP-09](../../../05_building-blocks/abb/legacy-components/cmp-09.md), [CMP-10](../../../05_building-blocks/abb/legacy-components/cmp-10.md)
+- **Composants porteurs** : , [CMP-10](../../../05_building-blocks/abb/legacy-components/cmp-10.md)
 - **Service de codification** : [SRV-03 : Service de terminologie et codification communes](../../../05_building-blocks/abb/legacy-services/srv-03.md)
 - **Terminologie chapeau** : [TERM-CODIFICATION-COMMUNE : Terminologie et codification communes](term-codification-commune.md)
 - **Norme de référence** : [STD-0007](../../../../01_cnisn/05_standards/std-0007-snomed-ct.md)

@@ -19,7 +19,7 @@ implements: ["ART-2", "ART-4"]
 related: ["TERM-DCI", "TERM-CODIFICATION-COMMUNE", "CMP-10"]
 constrains: ["DO-06", "DO-10", "DO-11"]
 tags: ["artsn", "terminology", "term-atc"]
-accessed_by: ["CMP-09", "CMP-10"]
+accessed_by: ["CMP-10"]
 ---
 # TERM-ATC : Classification pharmacologique ATC de l'OMS
 

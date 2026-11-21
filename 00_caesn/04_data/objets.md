@@ -1,15 +1,15 @@
 ---
-title: Objets de données métier
-id: data-business-objects
+title: Thèmes de données
+id: data-themes
 domain: 04_data
-version: "1.0.0"
+version: "1.1.0"
 status: draft
-last_reviewed: 2026-08-08
+last_reviewed: 2026-11-21
 owner: Cellule du Système d'Information Sanitaire
-tags: ["données", "objets", "métier", "caesn"]
+tags: ["données", "thèmes", "caesn"]
 ---
 
-# Objets de données métier
+# Thèmes de données
 
 ## Pour qui lire ce document
 
@@ -17,223 +17,128 @@ tags: ["données", "objets", "métier", "caesn"]
 
 Les décideurs institutionnels et les directions métier y trouveront une lecture complémentaire, tandis que l'équipe DEPSI, les équipes techniques, et les équipes SIS, données et suivi-évaluation y trouveront une lecture prioritaire. Légende : ● prioritaire · ◐ complémentaire · ○ ponctuelle. Vue d'ensemble : matrice de lecture.
 
-Ce document définit les **objets de données métier** (BO) du niveau 1 (CAESN) : l'atome d'information porteur de sens pour l'action publique, indépendant de toute technologie. Chaque objet métier est **réalisé** par un ou plusieurs objets de données de l'ARTSN (`../../02_artsn/03_objets-de-donnees/index.md`), qui en fixent la forme normalisée et les contrats d'interfaces.
+Ce document présente les **thèmes de données** du niveau 1 (CAESN). Un thème n'est pas un objet du référentiel : c'est une facette de classification qui rassemble des objets de données partageant une même finalité métier. Chaque objet de données de l'ARTSN porte la propriété `theme` qui l'inscrit dans l'un de ces thèmes ; le vocabulaire et l'ordre de présentation sont fixés par le référentiel d'architecture, et la partition elle-même ne se lit qu'à un seul endroit, dans la propriété `theme` de chaque objet.
 
-## 01. Patient & identité
+Cette organisation remplace les sept « objets métier » retirés du catalogue par l'ADR-0017. Leur contenu utile n'a pas disparu : les thèmes conservent le périmètre, la description et la couverture en flux de valeur qui étaient attachés à ces objets, et les objets de données conservent leur rattachement fonctionnel.
 
-<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/business/business-objects/bo-01.md -->
+## Vue par thème
+
+<!-- BEGIN:GENERATED mode=theme source=04_architecture-repository/02_architecture-elements/data/data-objects/do-*.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
-### BO-01 : Patient & identité
+<a id="patient-identite"></a>
+
+## Patient & identité
 
 Identité de la personne prise en charge, épisodes de soins, dossier et référencements. Pilier de toute continuité de prise en charge.
 
-#### Description
+**Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md)
 
-L'objet métier BO-01 : Patient & identité structure et pilote les concepts de données suivants, garants de la cohérence métier de la prise en charge. Il alimente les flux de valeur [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md) et s'inscrit dans la continuité des chapitres ARTSN (médiation et normalisation, échange et résidence).
+**Dictionnaire** : [Dictionnaire de données fonctionnelles](../../02_artsn/03_objets-de-donnees/index.md#patient-identite)
 
-#### Objets de données réalisés (ARTSN)
+| Objet de données | Tier | Système de référence |
+|---|---|---|
+| [DO-01 : Patient](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-01.md) | A | [CMP-11](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-11.md) |
+| [DO-03 : Dossier et épisode de soins](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-03.md) | B | [CMP-08](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-08.md) |
 
-- [DO-01 : Patient](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-01.md)
-- [DO-03 : Dossier et épisode de soins](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-03.md)
-- [DO-03 : Dossier et épisode de soins](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-03.md)
+<a id="prestation-soins"></a>
 
-#### Flux de valeur
-
-- [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
-- [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md)
-
-#### Réalise (ARTSN)
-
-- **Dictionnaire de données fonctionnelles** : [Dictionnaire de données fonctionnelles](../../02_artsn/03_objets-de-donnees/index.md)
-
-<!-- END:GENERATED -->
-
-## 02. Prestation & soins
-
-<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/business/business-objects/bo-02.md -->
-<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
-
-### BO-02 : Prestation & soins
+## Prestation & soins
 
 Actes cliniques, prescriptions, références et évacuations constituant le parcours de soins.
 
-#### Description
+**Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)
 
-L'objet métier BO-02 : Prestation & soins structure et pilote les concepts de données suivants, garants de la cohérence métier de la prise en charge. Il alimente les flux de valeur [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md) et s'inscrit dans la continuité des chapitres ARTSN (médiation et normalisation, échange et résidence).
+**Dictionnaire** : [Dictionnaire de données fonctionnelles](../../02_artsn/03_objets-de-donnees/index.md#prestation-soins)
 
-#### Objets de données réalisés (ARTSN)
+| Objet de données | Tier | Système de référence |
+|---|---|---|
+| [DO-05 : Consultation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-05.md) | B | [CMP-19](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-19.md) |
+| [DO-06 : Prescription](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-06.md) | B | [CMP-19](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-19.md) |
+| [DO-07 : Référence et contre-référence](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-07.md) | B | [CMP-19](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-19.md) |
+| [DO-09 : Évacuation sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-09.md) | B | [CMP-19](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-19.md) |
+| [DO-32 : Examen et résultat de laboratoire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-32.md) | B | [CMP-19](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-19.md), [CMP-24](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-24.md) |
 
-- [DO-05 : Consultation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-05.md)
-- [DO-06 : Prescription](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-06.md)
-- [DO-07 : Référence et contre-référence](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-07.md)
-- [DO-07 : Référence et contre-référence](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-07.md)
-- [DO-09 : Évacuation sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-09.md)
+<a id="dispensation-produits"></a>
 
-#### Flux de valeur
-
-- [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
-- [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)
-
-#### Réalise (ARTSN)
-
-- **Dictionnaire de données fonctionnelles** : [Dictionnaire de données fonctionnelles](../../02_artsn/03_objets-de-donnees/index.md)
-
-<!-- END:GENERATED -->
-
-## 03. Dispensation & produits
-
-<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/business/business-objects/bo-03.md -->
-<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
-
-### BO-03 : Dispensation & produits
+## Dispensation & produits
 
 Médicaments, produits de santé, lots et stocks dispensés sur le terrain.
 
-#### Description
+**Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
 
-L'objet métier BO-03 : Dispensation & produits structure et pilote les concepts de données suivants, garants de la cohérence métier de la prise en charge. Il alimente les flux de valeur [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md) et s'inscrit dans la continuité des chapitres ARTSN (médiation et normalisation, échange et résidence).
+**Dictionnaire** : [Dictionnaire de données fonctionnelles](../../02_artsn/03_objets-de-donnees/index.md#dispensation-produits)
 
-#### Objets de données réalisés (ARTSN)
+| Objet de données | Tier | Système de référence |
+|---|---|---|
+| [DO-10 : Dispensation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-10.md) | B | [CMP-20](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-20.md) |
+| [DO-11 : Produit de santé](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-11.md) | A | [CMP-14](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-14.md) |
+| [DO-12 : Lot et stock](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-12.md) | B | [CMP-23](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-23.md) |
 
-- [DO-10 : Dispensation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-10.md)
-- [DO-11 : Produit de santé](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-11.md)
-- [DO-12 : Lot et stock](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-12.md)
-- [DO-12 : Lot et stock](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-12.md)
+<a id="financement-couverture"></a>
 
-#### Flux de valeur
-
-- [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
-- [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)
-- [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
-
-#### Réalise (ARTSN)
-
-- **Dictionnaire de données fonctionnelles** : [Dictionnaire de données fonctionnelles](../../02_artsn/03_objets-de-donnees/index.md)
-
-<!-- END:GENERATED -->
-
-## 04. Financement & couverture
-
-<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/business/business-objects/bo-04.md -->
-<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
-
-### BO-04 : Financement & couverture
+## Financement & couverture
 
 Éligibilité, couverture, facturation et vérification financière des soins.
 
-#### Description
+**Flux de valeur** : [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
 
-L'objet métier BO-04 : Financement & couverture structure et pilote les concepts de données suivants, garants de la cohérence métier de la prise en charge. Il alimente les flux de valeur [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md) et s'inscrit dans la continuité des chapitres ARTSN (médiation et normalisation, échange et résidence).
+**Dictionnaire** : [Dictionnaire de données fonctionnelles](../../02_artsn/03_objets-de-donnees/index.md#financement-couverture)
 
-#### Objets de données réalisés (ARTSN)
+| Objet de données | Tier | Système de référence |
+|---|---|---|
+| [DO-14 : Couverture sanitaire et éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-14.md) | B | [CMP-12](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-12.md) |
+| [DO-16 : Facturation et demande de remboursement](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-16.md) | B | [CMP-12](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-12.md) |
+| [DO-17 : Demande et preuve de vérification d'éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-17.md) | B | [CMP-12](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-12.md) |
 
-- [DO-14 : Couverture sanitaire et éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-14.md)
-- [DO-14 : Couverture sanitaire et éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-14.md)
-- [DO-16 : Facturation et demande de remboursement](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-16.md)
-- [DO-17 : Demande et preuve de vérification d'éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-17.md)
+<a id="risque-surveillance"></a>
 
-#### Flux de valeur
+## Risque & surveillance
 
-- [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md)
-- [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
+Signaux, foyers, investigations et alertes de surveillance sanitaire, y compris dans une perspective One Health.
 
-#### Réalise (ARTSN)
+**Flux de valeur** : [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
 
-- **Dictionnaire de données fonctionnelles** : [Dictionnaire de données fonctionnelles](../../02_artsn/03_objets-de-donnees/index.md)
+**Dictionnaire** : [Dictionnaire de données fonctionnelles](../../02_artsn/03_objets-de-donnees/index.md#risque-surveillance)
 
-<!-- END:GENERATED -->
+| Objet de données | Tier | Système de référence |
+|---|---|---|
+| [DO-18 : Signal, notification et alerte sanitaires](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-18.md) | B | [CMP-02](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-02.md) |
+| [DO-19 : Foyer épidémique](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-19.md) | B | [CMP-02](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-02.md) |
+| [DO-20 : Investigation épidémiologique](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-20.md) | B | [CMP-02](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-02.md) |
 
-## 05. Risque & surveillance
+<a id="exploitation-gestion"></a>
 
-<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/business/business-objects/bo-05.md -->
-<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
-
-### BO-05 : Risque & surveillance
-
-Signaux, foyers, investigations et alertes de surveillance sanitaire (y compris One Health).
-
-#### Description
-
-L'objet métier BO-05 : Risque & surveillance structure et pilote les concepts de données suivants, garants de la cohérence métier de la prise en charge. Il alimente les flux de valeur [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md) et s'inscrit dans la continuité des chapitres ARTSN (médiation et normalisation, échange et résidence).
-
-#### Objets de données réalisés (ARTSN)
-
-- [DO-18 : Signal, notification et alerte sanitaires](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-18.md)
-- [DO-19 : Foyer épidémique](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-19.md)
-- [DO-20 : Investigation épidémiologique](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-20.md)
-- [DO-18 : Signal, notification et alerte sanitaires](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-18.md)
-
-#### Flux de valeur
-
-- [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)
-- [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
-
-#### Réalise (ARTSN)
-
-- **Dictionnaire de données fonctionnelles** : [Dictionnaire de données fonctionnelles](../../02_artsn/03_objets-de-donnees/index.md)
-
-<!-- END:GENERATED -->
-
-## 06. Exploitation & gestion
-
-<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/business/business-objects/bo-06.md -->
-<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
-
-### BO-06 : Exploitation & gestion
+## Exploitation & gestion
 
 Structures, agents, indicateurs, zones et tableaux de bord de pilotage.
 
-#### Description
+**Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md), [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
 
-L'objet métier BO-06 : Exploitation & gestion structure et pilote les concepts de données suivants, garants de la cohérence métier de la prise en charge. Il alimente les flux de valeur [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md), [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md) et s'inscrit dans la continuité des chapitres ARTSN (médiation et normalisation, échange et résidence).
+**Dictionnaire** : [Dictionnaire de données fonctionnelles](../../02_artsn/03_objets-de-donnees/index.md#exploitation-gestion)
 
-#### Objets de données réalisés (ARTSN)
+| Objet de données | Tier | Système de référence |
+|---|---|---|
+| [DO-23 : Formation sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-23.md) | A | [ABB-REFERENTIEL-STRUCTURES-SERVICES](../../04_architecture-repository/05_building-blocks/abb/abb-referentiel-structures-services.md), [CMP-05](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-05.md) |
+| [DO-24 : Agent de santé](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-24.md) | A | [CMP-13](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-13.md) |
+| [DO-25 : Indicateur sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-25.md) | C | [CMP-14](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-14.md) |
+| [DO-26 : Zone sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-26.md) | A | [ABB-REFERENTIEL-STRUCTURES-SERVICES](../../04_architecture-repository/05_building-blocks/abb/abb-referentiel-structures-services.md), [CMP-05](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-05.md) |
+| [DO-27 : Tâche et action de suivi](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-27.md) | B | [CMP-01](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-01.md) |
 
-- [DO-23 : Formation sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-23.md)
-- [DO-24 : Agent de santé](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-24.md)
-- [DO-25 : Indicateur sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-25.md)
-- [DO-26 : Zone sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-26.md)
-- [DO-27 : Tâche et action de suivi](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-27.md)
+<a id="interop-transfrontalier"></a>
 
-#### Flux de valeur
-
-- [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
-- [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)
-- [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md)
-- [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
-
-#### Réalise (ARTSN)
-
-- **Dictionnaire de données fonctionnelles** : [Dictionnaire de données fonctionnelles](../../02_artsn/03_objets-de-donnees/index.md)
-
-<!-- END:GENERATED -->
-
-## 07. Interopérabilité transfrontalière
-
-<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/business/business-objects/bo-07.md -->
-<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
-
-### BO-07 : Interopérabilité transfrontalière
+## Interopérabilité transfrontalière
 
 Résumé patient international, sections et confiance pour les échanges hors frontières.
 
-#### Description
+**Flux de valeur** : [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)
 
-L'objet métier BO-07 : Interopérabilité transfrontalière structure et pilote les concepts de données suivants, garants de la cohérence métier de la prise en charge. Il alimente les flux de valeur [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md) et s'inscrit dans la continuité des chapitres ARTSN (médiation et normalisation, échange et résidence).
+**Dictionnaire** : [Dictionnaire de données fonctionnelles](../../02_artsn/03_objets-de-donnees/index.md#interop-transfrontalier)
 
-#### Objets de données réalisés (ARTSN)
-
-- [DO-29 : Résumé international du patient](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-29.md)
-- [DO-31 : Ancre de confiance](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-31.md)
-
-#### Flux de valeur
-
-- [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)
-
-#### Réalise (ARTSN)
-
-- **Dictionnaire de données fonctionnelles** : [Dictionnaire de données fonctionnelles](../../02_artsn/03_objets-de-donnees/index.md)
+| Objet de données | Tier | Système de référence |
+|---|---|---|
+| [DO-29 : Résumé international du patient](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-29.md) | B | [CMP-06](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-06.md) |
+| [DO-31 : Ancre de confiance](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-31.md) | A | [CMP-35](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-35.md), [CMP-36](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-36.md) |
 
 <!-- END:GENERATED -->
 
@@ -247,3 +152,4 @@ L'objet métier BO-07 : Interopérabilité transfrontalière structure et pilote
 - **Domaines de données** : Domaines de données prioritaires (`00_caesn/04_data/domains.md`)
 - **Objets de données ARTSN** : Objets de données (`../../02_artsn/03_objets-de-donnees/index.md`)
 - **Chapitre ART-2 (médiation)** : Médiation et normalisation (`../../04_architecture-repository/04_patterns/artsn-rules/art-2.md`)
+- **Vocabulaire des thèmes** : Thèmes de données (`04_architecture-repository/00_metamodel/themes.yaml`)

@@ -28,7 +28,7 @@ tags: ["artsn", "niveau-3", "chapitre", "ART-3"]
 
 - **Rattachement** : [CAP-13: Système d'information sanitaire, données et recherche](../../02_architecture-elements/strategy/capabilities/cap-13.md) (gestion des données sanitaires).
 - **Normes CNISN** : [STD-0003: X-Road](../../../01_cnisn/05_standards/std-0003-x-road.md) (transport inter-institutionnel, [ADR-0001](../../../01_cnisn/06_decisions/adr-0001-x-road.md)), [STD-0002: Sécurité et chiffrement](../../../01_cnisn/05_standards/std-0002-securite-chiffrement.md).
-- **Objets de données** : [BO-01 Patient & identité](../../../00_caesn/04_data/objets.md), [BO-02 Prestation & soins](../../../00_caesn/04_data/objets.md), [BO-05 Risque & surveillance](../../../00_caesn/04_data/objets.md), [BO-06 Exploitation & gestion](../../../00_caesn/04_data/objets.md) (objets métier CAESN) ; voir aussi le [dictionnaire des objets de données ARTSN](../../../02_artsn/03_objets-de-donnees/index.md).
+- **Thèmes de données** : [Patient & identité](../../../00_caesn/04_data/objets.md#patient-identite), [Prestation & soins](../../../00_caesn/04_data/objets.md#prestation-soins), [Risque & surveillance](../../../00_caesn/04_data/objets.md#risque-surveillance), [Exploitation & gestion](../../../00_caesn/04_data/objets.md#exploitation-gestion) (thèmes de données CAESN) ; voir aussi le [dictionnaire des objets de données ARTSN](../../../02_artsn/03_objets-de-donnees/index.md).
 - **Profils cibles** : Profil A, Profil B, Profil C.
 - **Déduit selon** : [ENF-1: Résilience à l'instabilité réseau](../../03_requirements/enf-1.md) (mode déconnecté).
 - **Statut : Stable.**

@@ -16,10 +16,10 @@ architecture_scope: semantics
 architecture_state: target
 maps_to: ["CAP-13", "CAP-14"]
 implements: ["ART-2", "ART-4"]
-related: ["TERM-CODIFICATION-COMMUNE", "CMP-09", "CMP-10", "STD-0006"]
+related: ["TERM-CODIFICATION-COMMUNE", "CMP-10", "STD-0006"]
 constrains: ["DO-05"]
 tags: ["artsn", "terminology", "term-cim-11"]
-accessed_by: ["CMP-09", "CMP-10"]
+accessed_by: ["CMP-10"]
 ---
 # TERM-CIM-11 : Classification internationale des maladies
 
@@ -39,7 +39,7 @@ Fournir la classification internationale des maladies, afin que les motifs de co
 
 ## Rattachement
 
-- **Composants porteurs** : [CMP-09](../../../05_building-blocks/abb/legacy-components/cmp-09.md), [CMP-10](../../../05_building-blocks/abb/legacy-components/cmp-10.md)
+- **Composants porteurs** : , [CMP-10](../../../05_building-blocks/abb/legacy-components/cmp-10.md)
 - **Service de codification** : [SRV-03 : Service de terminologie et codification communes](../../../05_building-blocks/abb/legacy-services/srv-03.md)
 - **Terminologie chapeau** : [TERM-CODIFICATION-COMMUNE : Terminologie et codification communes](term-codification-commune.md)
 - **Norme de référence** : [STD-0006](../../../../01_cnisn/05_standards/std-0006-terminologie.md)

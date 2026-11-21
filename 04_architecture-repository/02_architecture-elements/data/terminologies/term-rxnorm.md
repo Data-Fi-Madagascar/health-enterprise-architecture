@@ -19,7 +19,7 @@ implements: ["ART-2", "ART-4"]
 related: ["TERM-SNOMED-CT", "TERM-CODIFICATION-COMMUNE", "CMP-10", "STD-0007"]
 constrains: ["DO-06", "DO-10", "DO-11"]
 tags: ["artsn", "terminology", "term-rxnorm"]
-accessed_by: ["CMP-09", "CMP-10"]
+accessed_by: ["CMP-10"]
 ---
 # TERM-RXNORM : Terminologie des médicaments RxNorm
 

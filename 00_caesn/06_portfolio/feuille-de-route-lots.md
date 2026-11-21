@@ -31,7 +31,7 @@ les capacités du CAESN via les [work-packages `wp-01`…`wp-07`](../../04_archi
 | Lot | Périmètre (capacités livrées) | Séquence | Objectif | Financement |
 |-----|--------------------------------|----------|----------|-------------|
 | **L1 — Infrastructure & sécurité** | ABB-IDENTITE-BENEFICIAIRE, CMP-26, CMP-32, CMP-39, SRV-04 | T4 2026 – T2 2027 | Socle matériel, sécurité, référentiels de base et identité | [TCO L1](financement-tco.md#devis-indicatif-par-lot-ordre-de-grandeur) |
-| **L2 — Applications terrain & collecte** | CAP-01, CMP-09, CMP-23, SRV-02, SRV-05 | T2 2027 – T4 2027 | Applications de collecte au plus près des formations sanitaires | [TCO L2](financement-tco.md#devis-indicatif-par-lot-ordre-de-grandeur) |
+| **L2 — Applications terrain & collecte** | CAP-01, CMP-10, CMP-23, SRV-02, SRV-05 | T2 2027 – T4 2027 | Applications de collecte au plus près des formations sanitaires | [TCO L2](financement-tco.md#devis-indicatif-par-lot-ordre-de-grandeur) |
 | **L3 — Médiation & registres** | ABB-ECHANGE-MEDIATION, CMP-10, CMP-11, SRV-03, SRV-04 | T4 2027 – T2 2028 | Registres nationaux partagés et couche de médiation | [TCO L3](financement-tco.md#devis-indicatif-par-lot-ordre-de-grandeur) |
 | **L4 — Analytique & pilotage** | CAP-03, ART-6, CMP-12, SRV-06 | T2 2028 – T4 2028 | Entrepôt analytique, IA prédictive et tableaux de bord décisionnels | [TCO L4](financement-tco.md#devis-indicatif-par-lot-ordre-de-grandeur) |
 | **L5 — Extension & pérennisation** | ABB-CONFIANCE-AUTORISATION, CAP-03, PT-14, PT-15 | T4 2028 – T2 2029 | Généralisation, formation, évaluation et pérennité | [TCO L5](financement-tco.md#devis-indicatif-par-lot-ordre-de-grandeur) |

@@ -118,10 +118,9 @@ hea:ComposantShape a sh:NodeShape ;
         sh:minCount 0 ;
         sh:or (
             [ sh:class hea:ObjetDeDonnees ]
-            [ sh:class hea:ObjetMetier ]
             [ sh:class hea:Terminology ]
         ) ;
-        sh:message "Un composant ne peut accéder qu'à un objet de données, un objet métier ou une terminologie" ;
+        sh:message "Un composant ne peut accéder qu'à un objet de données ou une terminologie" ;
     ] .
 
 # --- Shape ObjetDeDonnees : contrainte sémantique vers une terminologie ---

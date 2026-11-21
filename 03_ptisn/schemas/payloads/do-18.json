@@ -37,10 +37,6 @@
     "art_3Ref": {
       "type": "string",
       "description": "Référence à ART-3"
-    },
-    "bo_05Ref": {
-      "type": "string",
-      "description": "Référence à BO-05"
     }
   },
   "required": [

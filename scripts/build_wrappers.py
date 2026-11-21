@@ -17,6 +17,9 @@ Conventions (spec docs/superpowers/specs/2026-08-11-enveloppes-lisibilite-design
     précisé explicitement sur le bloc (ex. enveloppe mixte : `mode=monographie` + `mode=catalogue`).
 - Avec `mode=table`, un tableau `code | titre canonique | rattachement | statut | fiche`
   des objets qui matchent les motifs (réservé aux fichiers d'index et de matrices).
+- Avec `mode=theme`, une vue par thème de données : les objets de sources sont
+  regroupés selon la facette de classification `theme`, dans l'ordre du
+  vocabulaire `00_metamodel/themes.yaml`.
 - Le filtre `source=` s'applique aux objets attachés à l'enveloppe (D3 : champ `envelope:`),
   sauf en `mode=table` où il sélectionne dans tout le référentiel.
 - Vérifications : union des blocs couvre tous les objets attachés ; `envelope:` inexistant
@@ -37,6 +40,7 @@ import sys
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ARCH_REPOSITORY_DIR = "04_architecture-repository"
 ARCH_REPOSITORY_ROOT = os.path.join(REPO_ROOT, ARCH_REPOSITORY_DIR)
+THEMES_REL = os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "themes.yaml")
 DERIVED_ARCH_REPOSITORY_DOCS = {
     os.path.join(ARCH_REPOSITORY_DIR, "01_partitions", "index.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "architecture-landscape.md"),
@@ -182,9 +186,83 @@ def load_objects():
                 "evidenced_by": fields.get("evidenced_by", []) or [],
                 "closure_criteria": fields.get("closure_criteria", []) or [],
                 "partition_kind": fields.get("partition_kind", ""),
+                "theme": fields.get("theme", "") or "",
+                "tier": fields.get("tier", "") or "",
+                "system_of_record": fields.get("system_of_record", []) or [],
                 "body": body,
             }
     return objects
+
+
+def load_themes(path=None):
+    """Charge le vocabulaire des thèmes de données.
+
+    Le fichier `04_architecture-repository/00_metamodel/themes.yaml` fixe
+    l'ordre d'affichage, le libellé et la description de chaque thème. Le
+    périmètre d'un thème (les objets de données qu'il recouvre) n'est pas
+    déclaré ici : il résulte de la propriété `theme` de chaque objet de
+    données, ce qui évite toute duplication de la partition.
+    """
+    themes_path = path or os.path.join(REPO_ROOT, THEMES_REL)
+    if not os.path.exists(themes_path):
+        return []
+
+    text = open(themes_path, encoding="utf-8").read()
+    raw = None
+    try:
+        import yaml
+        loaded = yaml.safe_load(text)
+        if isinstance(loaded, dict):
+            raw = loaded.get("themes") or []
+    except Exception:
+        raw = None
+
+    if raw is None:
+        raw = []
+        current = None
+        lines = text.splitlines()
+        for index, line in enumerate(lines):
+            match = re.match(r"^\s*-\s+slug:\s*(.+?)\s*$", line)
+            if match:
+                current = {"slug": match.group(1).strip().strip('"').strip("'")}
+                raw.append(current)
+                continue
+            match = re.match(r"^\s+([A-Za-z_][\w-]*):\s*(.*)$", line)
+            if not match or current is None:
+                continue
+            key, value = match.group(1), match.group(2).strip()
+            if value in (">-", "|", ">- ", "|"):
+                folded = []
+                for follow in lines[index + 1:]:
+                    if follow[:1] not in (" ", "\t"):
+                        break
+                    folded.append(follow.strip())
+                current[key] = " ".join(folded)
+                continue
+            if value.startswith("[") and value.endswith("]"):
+                value = [item.strip().strip('"').strip("'")
+                         for item in value[1:-1].split(",") if item.strip()]
+            else:
+                value = value.strip('"').strip("'")
+            current[key] = value
+
+    themes = []
+    for entry in raw:
+        if not isinstance(entry, dict):
+            continue
+        slug = str(entry.get("slug", "")).strip()
+        if not slug:
+            continue
+        value_streams = entry.get("value_streams") or []
+        if isinstance(value_streams, str):
+            value_streams = [value_streams]
+        themes.append({
+            "slug": slug,
+            "label": str(entry.get("label", "") or slug),
+            "description": str(entry.get("description", "") or "").strip(),
+            "value_streams": [str(v).strip() for v in value_streams if str(v).strip()],
+        })
+    return themes
 
 
 def id_to_path(objects):
@@ -199,7 +277,8 @@ def rewrite_links(text, from_dir, to_dir):
     the generated document's location, keeping every reference clickable.
 
     - A relative link whose target resolves to an existing file is rewritten to
-      the path relative to the target doc (so cross-references stay live).
+      the path relative to the target doc (so cross-references stay live). The
+      fragment, when present, is preserved.
     - Links that do not resolve, plus external URLs, anchors and absolute paths,
       are preserved as-is (label kept).
     """
@@ -210,9 +289,14 @@ def rewrite_links(text, from_dir, to_dir):
             return match.group(0)
         if target.startswith("/") or target.startswith("mailto:"):
             return match.group(0)
-        src = os.path.normpath(os.path.join(from_dir, target))
+        path_part, separator, fragment = target.partition("#")
+        if not path_part:
+            return match.group(0)
+        src = os.path.normpath(os.path.join(from_dir, path_part))
         if os.path.isfile(src):
             new_target = os.path.relpath(src, to_dir).replace(os.sep, "/")
+            if separator:
+                new_target = "%s#%s" % (new_target, fragment)
             return "[%s](%s)" % (label, new_target)
         return label
 
@@ -418,6 +502,90 @@ def render_maturity(objects, source_glob, to_dir):
                      % (code, titre.replace("|", "\\|"), statut,
                         cond.replace("|", "\\|"), code, fiche))
     return "\n".join(lines)
+
+
+def render_theme(objects, source_glob, path_by_id, to_dir, themes=None):
+    """Construit la vue par thème de données.
+
+    Le catalogue des objets de données est regroupé selon la facette de
+    classification `theme`. L'ordre d'affichage et les libellés viennent du
+    vocabulaire `00_metamodel/themes.yaml` ; le périmètre de chaque thème
+    provient des objets eux-mêmes, qui portent la propriété `theme`.
+    """
+    selected = []
+    seen = set()
+    for rel, obj in objects.items():
+        if any(fnmatch.fnmatch(rel, pattern) for pattern in source_glob):
+            selected.append(obj)
+            seen.add(rel)
+    for pattern in source_glob:
+        for path in glob.glob(os.path.join(REPO_ROOT, pattern), recursive=True):
+            if not os.path.isfile(path) or not path.endswith(".md"):
+                continue
+            rel = os.path.relpath(path, REPO_ROOT)
+            if rel in seen:
+                continue
+            if rel.startswith(ARCH_REPOSITORY_DIR + os.sep):
+                continue
+            selected.append(markdown_table_entry(rel))
+            seen.add(rel)
+
+    grouped = {}
+    for obj in selected:
+        theme = (obj.get("theme") or "").strip()
+        if not theme:
+            continue
+        grouped.setdefault(theme, []).append(obj)
+
+    vocabulary = themes if themes is not None else load_themes()
+    known = [theme["slug"] for theme in vocabulary]
+    unknown = sorted(set(grouped) - set(known))
+    if unknown:
+        raise SystemExit("themes hors vocabulaire : %s" % ", ".join(unknown))
+
+    def relative(oid):
+        rel = path_by_id.get(oid)
+        if not rel:
+            return None
+        return os.path.relpath(os.path.join(REPO_ROOT, rel), to_dir).replace(os.sep, "/")
+
+    chunks = []
+    for theme in vocabulary:
+        members = sorted(grouped.get(theme["slug"], []), key=lambda o: natural_key(o["id"]))
+        if not members:
+            raise SystemExit("theme sans objet de données : %s" % theme["slug"])
+        lines = ['<a id="%s"></a>' % theme["slug"], "", "## %s" % theme["label"], ""]
+        if theme["description"]:
+            lines.extend([theme["description"], ""])
+        if theme["value_streams"]:
+            links = []
+            for vs_id in theme["value_streams"]:
+                target = relative(vs_id)
+                links.append("[%s](%s)" % (vs_id, target) if target else vs_id)
+            lines.extend(["**Flux de valeur** : %s" % ", ".join(links), ""])
+        dictionary = members[0].get("envelope") or ""
+        if dictionary:
+            dictionary_target = os.path.relpath(
+                os.path.join(REPO_ROOT, dictionary), to_dir).replace(os.sep, "/")
+            lines.extend([
+                "**Dictionnaire** : [Dictionnaire de données fonctionnelles](%s#%s)"
+                % (dictionary_target, theme["slug"]),
+                "",
+            ])
+        lines.append("| Objet de données | Tier | Système de référence |")
+        lines.append("|---|---|---|")
+        for obj in members:
+            title = obj.get("title") or obj["id"]
+            target = relative(obj["id"]) or obj["rel"]
+            tier = obj.get("tier") or "—"
+            holders = []
+            for holder in obj.get("system_of_record", []) or []:
+                holder_target = relative(holder)
+                holders.append("[%s](%s)" % (holder, holder_target) if holder_target else holder)
+            holder_cell = ", ".join(holders) if holders else "—"
+            lines.append("| [%s](%s) | %s | %s |" % (title, target, tier, holder_cell))
+        chunks.append("\n".join(lines))
+    return "\n\n".join(chunks)
 
 
 def render_partition_traceability(objects, path_by_id, to_dir):
@@ -779,6 +947,11 @@ def generate_file(objects, path_by_id, rel):
         elif attrs["mode"] == "partition-traceability":
             to_dir = os.path.dirname(abs_path)
             body = render_partition_traceability(objects, path_by_id, to_dir)
+        elif attrs["mode"] == "theme":
+            if not globs:
+                raise SystemExit("bloc theme sans source dans %s" % rel)
+            to_dir = os.path.dirname(abs_path)
+            body = render_theme(objects, globs, path_by_id, to_dir)
         elif attrs["mode"] == "gap-closure-roadmap":
             to_dir = os.path.dirname(abs_path)
             body = render_gap_closure_roadmap(objects, path_by_id, to_dir)

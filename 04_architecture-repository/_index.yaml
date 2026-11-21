@@ -3,7 +3,7 @@
 # Source de vérité : frontmatter Markdown sous 04_architecture-repository/.
 # Champs : id, type, niveau, chemin, status, title.
 # Statuts : draft | active | stable | candidate | deprecated
-# Total : 372 objets
+# Total : 364 objets
 #
 # Comptes par type :
 # - acteur : 6
@@ -14,7 +14,7 @@
 # - capabilite : 18
 # - chapitre : 21
 # - compliance-rule : 1
-# - composant-applicatif : 25
+# - composant-applicatif : 24
 # - composant-infrastructure : 6
 # - composant-securite : 7
 # - etape-valeur : 28
@@ -25,7 +25,6 @@
 # - gap : 3
 # - lieu : 6
 # - objet-de-donnees : 23
-# - objet-metier : 7
 # - partie-prenante : 10
 # - plateau : 3
 # - principe : 74
@@ -40,8 +39,8 @@
 # - work-package : 7
 #
 # Comptes par status :
-# - draft : 177
-# - active : 111
+# - draft : 170
+# - active : 110
 # - stable : 29
 # - candidate : 55
 # - deprecated : 0
@@ -728,7 +727,7 @@
   status: "active"
   title: "Échange et coordination transfrontaliers"
 
-# niveau 1 / composant-applicatif (25)
+# niveau 1 / composant-applicatif (24)
 - id: "CMP-01"
   type: "composant-applicatif"
   niveau: "1"
@@ -777,12 +776,6 @@
   chemin: "05_building-blocks/abb/legacy-components/cmp-08.md"
   status: "active"
   title: "Répertoire de données cliniques opérationnelles"
-- id: "CMP-09"
-  type: "composant-applicatif"
-  niveau: "1"
-  chemin: "05_building-blocks/abb/legacy-components/cmp-09.md"
-  status: "active"
-  title: "Référentiel des métadonnées d'exploitation (ART-4)"
 - id: "CMP-10"
   type: "composant-applicatif"
   niveau: "1"
@@ -2305,47 +2298,3 @@
   chemin: "02_architecture-elements/data/data-objects/do-32.md"
   status: "draft"
   title: "DO-32 : Examen et résultat de laboratoire"
-
-# niveau ? / objet-metier (7)
-- id: "BO-01"
-  type: "objet-metier"
-  niveau: ""
-  chemin: "02_architecture-elements/business/business-objects/bo-01.md"
-  status: "draft"
-  title: "BO-01 : Patient & identité"
-- id: "BO-02"
-  type: "objet-metier"
-  niveau: ""
-  chemin: "02_architecture-elements/business/business-objects/bo-02.md"
-  status: "draft"
-  title: "BO-02 : Prestation & soins"
-- id: "BO-03"
-  type: "objet-metier"
-  niveau: ""
-  chemin: "02_architecture-elements/business/business-objects/bo-03.md"
-  status: "draft"
-  title: "BO-03 : Dispensation & produits"
-- id: "BO-04"
-  type: "objet-metier"
-  niveau: ""
-  chemin: "02_architecture-elements/business/business-objects/bo-04.md"
-  status: "draft"
-  title: "BO-04 : Financement & couverture"
-- id: "BO-05"
-  type: "objet-metier"
-  niveau: ""
-  chemin: "02_architecture-elements/business/business-objects/bo-05.md"
-  status: "draft"
-  title: "BO-05 : Risque & surveillance"
-- id: "BO-06"
-  type: "objet-metier"
-  niveau: ""
-  chemin: "02_architecture-elements/business/business-objects/bo-06.md"
-  status: "draft"
-  title: "BO-06 : Exploitation & gestion"
-- id: "BO-07"
-  type: "objet-metier"
-  niveau: ""
-  chemin: "02_architecture-elements/business/business-objects/bo-07.md"
-  status: "draft"
-  title: "BO-07 : Interopérabilité transfrontalière"
