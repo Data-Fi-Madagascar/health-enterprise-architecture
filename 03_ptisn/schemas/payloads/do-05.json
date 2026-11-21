@@ -44,7 +44,8 @@
   "x-hea-owner": "DEPSI",
   "x-hea-fhir-resource": "Encounter",
   "x-hea-fhir-resources": [
-    "Encounter"
+    "Encounter",
+    "Condition"
   ],
   "x-hea-source-ref": "FHIR Encounter, CIM-11 (diagnostics)"
 }

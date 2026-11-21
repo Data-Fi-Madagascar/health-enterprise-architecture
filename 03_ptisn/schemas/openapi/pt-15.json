@@ -215,8 +215,14 @@
           }
         }
       },
-      "DO21": {
-        "$ref": "https://healmadagascar.mg/schemas/payloads/do-21.json"
+      "DO18": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-18.json"
+      },
+      "DO20": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-20.json"
+      },
+      "DO32": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-32.json"
       }
     }
   },
@@ -250,7 +256,9 @@
     "Observation"
   ],
   "x-hea-data-objects": [
-    "DO-21"
+    "DO-18",
+    "DO-20",
+    "DO-32"
   ],
   "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-15.md"
 }

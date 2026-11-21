@@ -61,7 +61,7 @@ T3 retrouve la réponse par `GET [base]/CoverageEligibilityResponse?request=Cove
 - **FHIR R4 `Coverage`** : identifiant de couverture, bénéficiaire, période de validité, statut et payeur.
 - **FHIR R4 `CoverageEligibilityRequest` / `CoverageEligibilityResponse`** : demande et réponse de vérification des droits, avec corrélation et horodatage.
 - **FHIR R4 `InsurancePlan`** : catalogue optionnel des régimes et prestations.
-- **Objets de données** : [DO-14](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-14.md), [DO-15](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-15.md), [DO-16](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-16.md) et [DO-17](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-17.md), selon les contrats publiés.
+- **Objets de données** : [DO-14 : Couverture sanitaire et éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-14.md), [DO-16 : Facturation et demande de remboursement](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-16.md) et [DO-17 : Demande et preuve de vérification d'éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-17.md), selon les contrats publiés.
 
 ## 7. Options
 

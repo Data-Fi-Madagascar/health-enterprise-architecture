@@ -375,6 +375,191 @@ class GapGovernanceRepositoryTests(unittest.TestCase):
                 self.assertTrue(relations["closure_criteria"])
 
 
+class DataObjectGovernanceTests(unittest.TestCase):
+    def setUp(self):
+        self.validator = load_validator()
+
+    def data_object(self, **relations):
+        base = {
+            "id": "DO-TEST",
+            "file": "/tmp/do-test.md",
+            "type": "objet-de-donnees",
+            "out": set(),
+            "relations": {},
+        }
+        base["relations"].update(relations)
+        return base
+
+    def composant(self, component_id="CMP-19"):
+        return {
+            "id": component_id,
+            "file": "/tmp/%s.md" % component_id.lower(),
+            "type": "composant-applicatif",
+            "out": set(),
+            "relations": {},
+        }
+
+    def test_rejects_missing_tier(self):
+        objects = {
+            "DO-TEST": self.data_object(system_of_record=["CMP-19"]),
+            "CMP-19": self.composant(),
+        }
+
+        errors = self.validator.check_data_object_governance(objects)
+
+        self.assertEqual(1, len(errors))
+        self.assertEqual("tier", errors[0][2])
+
+    def test_rejects_unknown_tier(self):
+        objects = {
+            "DO-TEST": self.data_object(tier=["D"], system_of_record=["CMP-19"]),
+            "CMP-19": self.composant(),
+        }
+
+        errors = self.validator.check_data_object_governance(objects)
+
+        self.assertEqual(1, len(errors))
+        self.assertEqual("tier", errors[0][2])
+
+    def test_rejects_missing_system_of_record(self):
+        objects = {"DO-TEST": self.data_object(tier=["B"])}
+
+        errors = self.validator.check_data_object_governance(objects)
+
+        self.assertEqual(1, len(errors))
+        self.assertEqual("system_of_record", errors[0][2])
+
+    def test_rejects_system_of_record_targeting_a_data_object(self):
+        objects = {
+            "DO-TEST": self.data_object(tier=["B"], system_of_record=["DO-OTHER"]),
+            "DO-OTHER": self.data_object(tier=["B"], system_of_record=["CMP-19"]),
+            "CMP-19": self.composant(),
+        }
+
+        errors = self.validator.check_data_object_governance(objects)
+
+        self.assertEqual(1, len(errors))
+        self.assertEqual("DO-OTHER", errors[0][2])
+
+    def test_accepts_a_governed_data_object(self):
+        objects = {
+            "DO-TEST": self.data_object(tier=["B"], system_of_record=["CMP-19"]),
+            "CMP-19": self.composant(),
+        }
+
+        self.assertEqual([], self.validator.check_data_object_governance(objects))
+
+
+class RetiredDataObjectTests(unittest.TestCase):
+    def setUp(self):
+        self.validator = load_validator()
+
+    def migration(self):
+        return {
+            "DO-02": {
+                "legacy_id": "DO-02",
+                "legacy_title": "Identifiant national d'identification",
+                "disposition": "merged",
+                "primary_replacement": "DO-01",
+                "replacement_ids": {"DO-01"},
+                "rationale": "",
+            },
+        }
+
+    def data_object(self, object_id, **relations):
+        return {
+            "id": object_id,
+            "file": "/tmp/%s.md" % object_id.lower(),
+            "type": "objet-de-donnees",
+            "out": set(),
+            "relations": relations,
+        }
+
+    def test_rejects_retired_id_present_as_active_object(self):
+        objects = {
+            "DO-02": self.data_object("DO-02"),
+            "DO-01": self.data_object("DO-01", absorbs={"DO-02"}),
+        }
+
+        errors = self.validator.check_retired_data_objects(objects, self.migration())
+
+        self.assertEqual(1, len(errors))
+        self.assertIn("objet actif", errors[0][3])
+
+    def test_rejects_relation_targeting_a_retired_id(self):
+        successor = self.data_object("DO-01", absorbs={"DO-02"})
+        successor["out"] = {"DO-02"}
+
+        errors = self.validator.check_retired_data_objects(
+            {"DO-01": successor}, self.migration())
+
+        self.assertEqual(1, len(errors))
+        self.assertEqual("DO-02", errors[0][2])
+
+    def test_requires_the_successor_to_declare_absorbs(self):
+        objects = {"DO-01": self.data_object("DO-01")}
+
+        errors = self.validator.check_retired_data_objects(objects, self.migration())
+
+        self.assertEqual(1, len(errors))
+        self.assertIn("absorbs", errors[0][3])
+
+    def test_rejects_absorbs_not_declared_by_the_migration_trace(self):
+        objects = {
+            "DO-01": self.data_object("DO-01", absorbs={"DO-02", "DO-99"}),
+        }
+
+        errors = self.validator.check_retired_data_objects(objects, self.migration())
+
+        self.assertEqual(1, len(errors))
+        self.assertEqual("DO-99", errors[0][2])
+
+    def test_accepts_a_traced_merger(self):
+        objects = {"DO-01": self.data_object("DO-01", absorbs={"DO-02"})}
+
+        errors = self.validator.check_retired_data_objects(objects, self.migration())
+
+        self.assertEqual([], errors)
+
+
+class DataObjectMigrationRepositoryTests(unittest.TestCase):
+    def setUp(self):
+        self.validator = load_validator()
+
+    def test_migration_trace_declares_the_nine_retirements(self):
+        migration = self.validator.load_do_migration()
+
+        self.assertEqual(
+            {
+                "DO-02", "DO-04", "DO-08", "DO-13", "DO-15",
+                "DO-21", "DO-22", "DO-28", "DO-30",
+            },
+            set(migration),
+        )
+        for legacy_id, entry in migration.items():
+            self.assertTrue(entry["disposition"] in {"merged", "retired"}, legacy_id)
+            self.assertTrue(entry["primary_replacement"], legacy_id)
+
+    def test_repository_has_no_residual_reference_to_retired_objects(self):
+        migration = self.validator.load_do_migration()
+
+        errors = self.validator.check_retired_frontmatter_references(migration)
+
+        self.assertEqual([], errors)
+
+    def test_every_surviving_data_object_declares_its_governance(self):
+        objects, _paths, _unresolved, _legacy = self.validator.load_relation_graph()
+        data_objects = {
+            oid: obj for oid, obj in objects.items()
+            if obj.get("type") == "objet-de-donnees"
+        }
+
+        self.assertEqual(23, len(data_objects))
+        self.assertEqual([], self.validator.check_data_object_governance(objects))
+        self.assertEqual([], self.validator.check_retired_data_objects(
+            objects, self.validator.load_do_migration()))
+
+
 class CanonicalMappingTests(unittest.TestCase):
     def setUp(self):
         self.validator = load_validator()
@@ -471,7 +656,7 @@ class CanonicalMappingTests(unittest.TestCase):
         self.assertEqual({"PART-VS-03"}, self.relation_values(abb, "partitions"))
         self.assertEqual({"ART-4C", "ART-9"}, self.relation_values(abb, "implements"))
         self.assertEqual(
-            {"DO-14", "DO-15", "DO-16", "DO-17"},
+            {"DO-14", "DO-16", "DO-17"},
             self.relation_values(abb, "accesses"),
         )
 

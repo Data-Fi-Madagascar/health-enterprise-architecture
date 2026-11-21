@@ -15,7 +15,7 @@ architecture_level: extended-enterprise
 architecture_domain: application
 architecture_scope: cross-border-exchange
 architecture_state: target
-applies_to: ["CAP-15", "CAP-18", "DO-29", "DO-30", "DO-31"]
+applies_to: ["CAP-15", "CAP-18", "DO-29", "DO-31"]
 related: []
 tags: ["togaf", "partition", "externe"]
 ---
@@ -28,7 +28,7 @@ Cette partition externe cadre les échanges sanitaires transfrontaliers et les o
 ## Périmètre
 
 - Capabilités couvertes : [CAP-15](../../02_architecture-elements/strategy/capabilities/cap-15.md), [CAP-18](../../02_architecture-elements/strategy/capabilities/cap-18.md)
-- Objets de données couverts : [DO-29](../../02_architecture-elements/data/data-objects/do-29.md), [DO-30](../../02_architecture-elements/data/data-objects/do-30.md), [DO-31](../../02_architecture-elements/data/data-objects/do-31.md)
+- Objets de données couverts : [DO-29 : Résumé international du patient](../../02_architecture-elements/data/data-objects/do-29.md), [DO-31 : Ancre de confiance](../../02_architecture-elements/data/data-objects/do-31.md)
 - Niveau TOGAF : extended-enterprise
 - Etat d'architecture : cible
 

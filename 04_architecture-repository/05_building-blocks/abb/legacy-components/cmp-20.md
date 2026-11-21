@@ -12,7 +12,7 @@ envelope: 02_artsn/05_cartographie/composants.md
 implements: ["ENF-1", "F-1"]
 maps_to: ["ABB-GESTION-CONSENTEMENT"]
 applies_to: ["PRC-02", "PRC-05"]
-accesses: ["DO-10", "DO-11", "DO-12", "DO-13", "DO-16"]
+accesses: ["DO-10", "DO-11", "DO-12", "DO-16"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-20", "couche-2"]
 related: ["VS-01", "VS-04"]
 ---
@@ -21,5 +21,5 @@ related: ["VS-01", "VS-04"]
 **Discipline de mise en oeuvre.** L'usage des referentiels de medicaments normalises (CMP-07) est obligatoire ; aucune denomination locale ne circule hors referentiel. Les mouvements de stock sont historises de facon immuable et les seuils de securite declares. La facturation au point de service respecte les regles d'exemption (PRC-08) lorsqu'elles s'appliquent.
 - **Rattachement** : [ENF-1: Resilience a l'instabilite reseau](../../../03_requirements/enf-1.md), [F-1: Resilience face a la realite geographique du pays](../../../04_patterns/foundations/f-1.md).
 - **Processus soutenus** : [PRC-02: Prestation des soins cliniques](../../../02_architecture-elements/business/processes/prc-02.md) (dispensation aux soins), [PRC-05: Alerte, investigation et riposte](../../../02_architecture-elements/business/processes/prc-05.md) (pharmacovigilance et riposte).
-- **Données portées** : [DO-10 : Dispensation](../../../02_architecture-elements/data/data-objects/do-10.md), [DO-11 : Produit de santé](../../../02_architecture-elements/data/data-objects/do-11.md), [DO-12 : Lot](../../../02_architecture-elements/data/data-objects/do-12.md), [DO-13 : Stock](../../../02_architecture-elements/data/data-objects/do-13.md), [DO-16 : Facturation](../../../02_architecture-elements/data/data-objects/do-16.md)
+- **Données portées** : [DO-10 : Dispensation](../../../02_architecture-elements/data/data-objects/do-10.md), [DO-11 : Produit de santé](../../../02_architecture-elements/data/data-objects/do-11.md), [DO-12 : Lot et stock](../../../02_architecture-elements/data/data-objects/do-12.md), [DO-16 : Facturation et demande de remboursement](../../../02_architecture-elements/data/data-objects/do-16.md)
 - **Statut : Brouillon.**

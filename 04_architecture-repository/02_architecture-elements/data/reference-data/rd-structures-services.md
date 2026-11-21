@@ -55,4 +55,4 @@ Fournir une autorité commune sur :
 ## Rattachement
 
 - [ABB référentiel des structures et services](../../../05_building-blocks/abb/abb-referentiel-structures-services.md)
-- [DO-23](../data-objects/do-23.md)
+- [DO-23 : Formation sanitaire](../data-objects/do-23.md)

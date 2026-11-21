@@ -12,7 +12,7 @@ envelope: 02_artsn/03_objets-de-donnees/nomenclatures/fosa-status.md
 artRef: ["ART-4", "ART-5"]
 maps_to: ["ABB-REFERENTIEL-STRUCTURES-SERVICES"]
 implements: ["IHE mCSD"]
-related: ["DO-04", "DO-05", "PT-06"]
+related: ["DO-23", "DO-05", "PT-06"]
 tags: ["nomenclature", "fosa", "mCSD", "etablissement"]
 fhir_resource: "CodeSystem"
 fhir_url: "https://healmadagascar.mg/fhir/CodeSystem/hea-fosa-status"
@@ -70,5 +70,5 @@ Dans le cadre IHE mCSD (ITI-90), le statut est utilisé dans :
 - **ABB-REFERENTIEL-STRUCTURES-SERVICES** : Référentiel des structures et services de santé
 - **PT-06** : Référentiel des structures et services de santé (mCSD)
 - **IHE mCSD** : Master Client Directory
-- **DO-04** : Formation sanitaire
-- **DO-05** : Service de santé
+- **DO-23** : Formation sanitaire
+- **DO-05** : Consultation

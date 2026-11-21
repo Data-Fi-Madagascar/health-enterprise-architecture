@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://healmadagascar.mg/schemas/payloads/do-16.json",
-  "title": "DO-16 — DO-16 : Facturation",
+  "title": "DO-16 — DO-16 : Facturation et demande de remboursement",
   "description": "Processus de détermination et d'enregistrement des coûts des services et produits de santé fournis à un patient. Elle constitue la base du remboursement, du tiers-payant et du suivi financier.",
   "type": "object",
   "properties": {
@@ -57,7 +57,8 @@
   "x-hea-owner": "DEPSI",
   "x-hea-fhir-resource": "Claim",
   "x-hea-fhir-resources": [
-    "Claim"
+    "Claim",
+    "Invoice"
   ],
   "x-hea-source-ref": "FHIR Claim"
 }

@@ -72,7 +72,7 @@ Les profils consommés sont le PT-01 (transport des messages via X-Road ou API G
 | **PT-07** | Mapping terminologique (codes CSB → CIM-11 / LOINC) |
 | **PT-12** | Traçabilité de l'événement de référence |
 
-## Scénario 2 : Contre-référence (DO-08)
+## Scénario 2 : Contre-référence (DO-07)
 
 La contre-référence correspond au retour du patient vers l'établissement d'origine après prise en charge spécialisée, accompagné d'un compte-rendu et de recommandations. L'hôpital régional transmet un `ServiceRequest` (type referral) enrichi d'un `DocumentReference` contenant le compte-rendu de la prise en charge spécialisée. La médiation nationale valide et route la demande vers le CSB rural d'origine. Ce dernier accepte le retour et transmet les instructions de suivi, incluant les `MedicationRequest` (traitements à poursuivre) et le `CarePlan` (plan de suivi recommandé).
 
@@ -169,7 +169,7 @@ Le profil supplémentaire mobilisé pour l'international est le PT-14 (confiance
 | Scénario | PT-01 | PT-02 | PT-04 | PT-07 | PT-11 | PT-12 | PT-14 |
 |----------|-------|-------|-------|-------|-------|-------|-------|
 | Référence (DO-07) | ● | ● | ● | ● | ○ | ● | : |
-| Contre-référence (DO-08) | ● | ● | ● | ○ | ● | ● | : |
+| Contre-référence (DO-07) | ● | ● | ● | ○ | ● | ● | : |
 | Évacuation nationale (DO-09 N) | ● | ● | ● | ○ | ● | ● | : |
 | Évacuation internationale (DO-09 I) | ● | ● | ● | ○ | ● | ● | ● |
 
@@ -185,8 +185,7 @@ Légende : ● requis · ○ optionnel · : non applicable
 
 ## Liens
 
-- DO-07 : Référence
-- DO-08 : Contre-référence
+- DO-07 : Référence et contre-référence
 - DO-09 : Évacuation sanitaire
 - PT-01 : Échange interinstitutionnel
 - PT-02 : Médiation intra-secteur
@@ -196,8 +195,7 @@ Légende : ● requis · ○ optionnel · : non applicable
 
 ## Références
 
-- **DO-07 : Référence** : Dictionnaire de données fonctionnelles (`02_artsn/03_objets-de-donnees/index.md`)
-- **DO-08 : Contre-référence** : Dictionnaire de données fonctionnelles (`02_artsn/03_objets-de-donnees/index.md`)
+- **DO-07 : Référence et contre-référence** : Dictionnaire de données fonctionnelles (`02_artsn/03_objets-de-donnees/index.md`)
 - **DO-09 : Évacuation sanitaire** : Dictionnaire de données fonctionnelles (`02_artsn/03_objets-de-donnees/index.md`)
 - **PT-01 : Échange interinstitutionnel** : Profil technique national (`03_ptisn/03_profils/pt-01-echange-interinstitutionnel.md`)
 - **PT-02 : Médiation intra-secteur** : Profil technique national (`03_ptisn/03_profils/pt-02-mediation-intra-secteur.md`)

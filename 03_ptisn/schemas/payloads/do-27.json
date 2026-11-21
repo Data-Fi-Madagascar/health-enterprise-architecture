@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://healmadagascar.mg/schemas/payloads/do-27.json",
-  "title": "DO-27 — DO-27 : Tâche",
+  "title": "DO-27 — DO-27 : Tâche et action de suivi",
   "description": "Unité de travail assignée à un acteur (personne ou système) dans le cadre d'un processus opérationnel : investigation terrain, campagne de vaccination, distribution d'intrants, visite de suivi. La tâche porte un statut, des échéances et une traçabilité complète d'exécution.",
   "type": "object",
   "properties": {

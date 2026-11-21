@@ -41,9 +41,9 @@
   "x-hea-type": "objet-de-donnees",
   "x-hea-status": "draft",
   "x-hea-owner": "DEPSI",
-  "x-hea-fhir-resource": "Encounter",
+  "x-hea-fhir-resource": "ServiceRequest",
   "x-hea-fhir-resources": [
-    "Encounter"
+    "ServiceRequest"
   ],
   "x-hea-source-ref": "FHIR ServiceRequest (type: transfer) + FHIR Transport + HL7 FHIR IPS (données cliniques embarquées)"
 }

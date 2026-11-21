@@ -53,7 +53,8 @@
   "x-hea-owner": "DEPSI",
   "x-hea-fhir-resource": "Practitioner",
   "x-hea-fhir-resources": [
-    "Practitioner"
+    "Practitioner",
+    "PractitionerRole"
   ],
   "x-hea-source-ref": "Référentiel des agents de santé (CAESN)"
 }

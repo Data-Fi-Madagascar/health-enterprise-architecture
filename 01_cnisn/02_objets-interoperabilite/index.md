@@ -235,7 +235,7 @@ Fournir une autorité commune sur :
 #### Rattachement
 
 - [ABB référentiel des structures et services](../../04_architecture-repository/05_building-blocks/abb/abb-referentiel-structures-services.md)
-- [DO-23](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-23.md)
+- [DO-23 : Formation sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-23.md)
 
 **Statut : candidate**
 

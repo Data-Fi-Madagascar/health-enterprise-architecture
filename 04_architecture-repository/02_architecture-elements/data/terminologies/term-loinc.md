@@ -17,7 +17,7 @@ architecture_state: target
 maps_to: ["CAP-13", "CAP-14"]
 implements: ["ART-2", "ART-4"]
 related: ["TERM-CIM-11", "TERM-CODIFICATION-COMMUNE", "CMP-09", "CMP-10", "STD-0006"]
-constrains: ["DO-20"]
+constrains: ["DO-20", "DO-32"]
 tags: ["artsn", "terminology", "term-loinc"]
 accessed_by: ["CMP-09", "CMP-10"]
 ---

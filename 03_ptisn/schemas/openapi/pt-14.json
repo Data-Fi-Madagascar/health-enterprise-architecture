@@ -353,23 +353,14 @@
       "DO29": {
         "$ref": "https://healmadagascar.mg/schemas/payloads/do-29.json"
       },
-      "DO30": {
-        "$ref": "https://healmadagascar.mg/schemas/payloads/do-30.json"
-      },
-      "DO28": {
-        "$ref": "https://healmadagascar.mg/schemas/payloads/do-28.json"
-      },
       "DO01": {
         "$ref": "https://healmadagascar.mg/schemas/payloads/do-01.json"
-      },
-      "DO03": {
-        "$ref": "https://healmadagascar.mg/schemas/payloads/do-03.json"
       },
       "DO07": {
         "$ref": "https://healmadagascar.mg/schemas/payloads/do-07.json"
       },
-      "DO08": {
-        "$ref": "https://healmadagascar.mg/schemas/payloads/do-08.json"
+      "DO09": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-09.json"
       }
     }
   },
@@ -400,12 +391,9 @@
   ],
   "x-hea-data-objects": [
     "DO-01",
-    "DO-03",
     "DO-07",
-    "DO-08",
-    "DO-28",
-    "DO-29",
-    "DO-30"
+    "DO-09",
+    "DO-29"
   ],
   "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-14.md"
 }

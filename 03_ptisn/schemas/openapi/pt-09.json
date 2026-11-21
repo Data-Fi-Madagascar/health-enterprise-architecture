@@ -201,9 +201,6 @@
             }
           }
         }
-      },
-      "DO28": {
-        "$ref": "https://healmadagascar.mg/schemas/payloads/do-28.json"
       }
     }
   },
@@ -231,8 +228,6 @@
     "IndicatorResult",
     "MeasureReport"
   ],
-  "x-hea-data-objects": [
-    "DO-28"
-  ],
+  "x-hea-data-objects": [],
   "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-09.md"
 }

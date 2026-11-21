@@ -13,7 +13,8 @@ class AdrDiscoveryTests(unittest.TestCase):
         self.assertIn("adr-0011", validated_ids)
         self.assertIn("adr-0012", validated_ids)
         self.assertIn("adr-0013", validated_ids)
-        self.assertEqual(13, len(validated_ids))
+        self.assertIn("adr-0014", validated_ids)
+        self.assertEqual(14, len(validated_ids))
         self.assertEqual(validated_ids, indexed_ids)
 
 

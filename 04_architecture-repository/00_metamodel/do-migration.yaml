@@ -1,0 +1,77 @@
+# Migration du catalogue des objets de données (DO).
+#
+# Ce fichier est la trace machine-lisible des fusions décidées par l'ADR-0014.
+# Chaque objet retiré du catalogue y conserve son identifiant historique, son
+# titre d'origine, le sort qui lui est donné et l'objet qui le remplace.
+# Il est la seule source qui autorise la présence d'un identifiant retiré
+# dans le champ `absorbs` d'un objet de données vivant : la propriété
+# `absorbs` n'est pas une relation du graphe, elle est vérifiée contre ce
+# fichier par `scripts/validate_ref.py`.
+#
+# `disposition` :
+#   - "merged"  : l'objet est fusionné dans un autre objet de données ;
+#   - "retired" : l'objet est retiré du catalogue, sa charge utile est
+#                 hébergée par un composant ou un bloc d'architecture.
+- legacy_id: "DO-02"
+  legacy_title: "Identifiant national d'identification"
+  disposition: "merged"
+  primary_replacement: "DO-01"
+  replacement_ids: ["DO-01"]
+  caesn_capabilities: ["CAP-14", "CAP-17"]
+  rationale: "Le NIN est une valeur de l'identifiant patient et non un objet autonome : il est porté par DO-01."
+- legacy_id: "DO-04"
+  legacy_title: "Épisode de soins"
+  disposition: "merged"
+  primary_replacement: "DO-03"
+  replacement_ids: ["DO-03"]
+  caesn_capabilities: ["CAP-01", "CAP-03", "CAP-13"]
+  rationale: "L'épisode de soins est le regroupement porté par le dossier : DO-03 assume les deux rôles."
+- legacy_id: "DO-08"
+  legacy_title: "Contre-référence"
+  disposition: "merged"
+  primary_replacement: "DO-07"
+  replacement_ids: ["DO-07"]
+  caesn_capabilities: ["CAP-01", "CAP-02", "CAP-13"]
+  rationale: "La contre-référence est le retour de la référence : les deux forment un seul événement inter-établissement."
+- legacy_id: "DO-13"
+  legacy_title: "Stock"
+  disposition: "merged"
+  primary_replacement: "DO-12"
+  replacement_ids: ["DO-12"]
+  caesn_capabilities: ["CAP-10", "CAP-13"]
+  rationale: "Le stock est la mesure de quantité associée au lot : il rejoint DO-12 sous un seul objet."
+- legacy_id: "DO-15"
+  legacy_title: "Couverture sanitaire"
+  disposition: "merged"
+  primary_replacement: "DO-14"
+  replacement_ids: ["DO-14"]
+  caesn_capabilities: ["CAP-07", "CAP-13"]
+  rationale: "La couverture sanitaire et son statut d'éligibilité forment un seul objet de financement."
+- legacy_id: "DO-21"
+  legacy_title: "Notification sanitaire"
+  disposition: "merged"
+  primary_replacement: "DO-18"
+  replacement_ids: ["DO-18"]
+  caesn_capabilities: ["CAP-04", "CAP-05"]
+  rationale: "La notification est l'étape formelle du cycle signal, notification, alerte porté par DO-18."
+- legacy_id: "DO-22"
+  legacy_title: "Alerte sanitaire"
+  disposition: "merged"
+  primary_replacement: "DO-18"
+  replacement_ids: ["DO-18"]
+  caesn_capabilities: ["CAP-04", "CAP-05"]
+  rationale: "L'alerte est l'étape opérationnelle du même cycle de surveillance, portée par DO-18."
+- legacy_id: "DO-28"
+  legacy_title: "Tableau de bord"
+  disposition: "retired"
+  primary_replacement: "CMP-01"
+  replacement_ids: ["CMP-01"]
+  caesn_capabilities: ["CAP-08", "CAP-16"]
+  rationale: "Un tableau de bord est un artefact de restitution et de présentation, non une donnée : sa configuration est décrite par CMP-01, sa source de vérité restant DO-25."
+- legacy_id: "DO-30"
+  legacy_title: "Section du résumé patient"
+  disposition: "merged"
+  primary_replacement: "DO-29"
+  replacement_ids: ["DO-29"]
+  caesn_capabilities: ["CAP-15", "CAP-17"]
+  rationale: "La section IPS est la structure interne du résumé international du patient : elle rejoint DO-29."
