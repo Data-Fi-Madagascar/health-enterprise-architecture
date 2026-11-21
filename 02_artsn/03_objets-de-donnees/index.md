@@ -41,6 +41,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 | **Contraintes** | Règles de validation, format, cardinalité |
 | **Rattachement** | Capabilité(s) et/ou flux de valeur concerné(s) |
 | **Référentiel source** | Référentiel national ou standard international de référence |
+| **Codification** | Terminologie(s) dont les codes régissent les valeurs de l'objet |
 
 ## 1. Patient & identité
 
@@ -162,6 +163,7 @@ Ce concept est mobilisé par les capacités [CAP-01](../../04_architecture-repos
 - **Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
 - **Objet métier CAESN** : [BO-02 : Prestation & soins](../../04_architecture-repository/02_architecture-elements/business/business-objects/bo-02.md)
 - **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md)
+- **Codification** : [TERM-CIM-11 : Classification internationale des maladies](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-cim-11.md)
 
 ### DO-06 : Prescription
 
@@ -183,6 +185,7 @@ Ce concept est mobilisé par les capacités [CAP-01](../../04_architecture-repos
 - **Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
 - **Objet métier CAESN** : [BO-02 : Prestation & soins](../../04_architecture-repository/02_architecture-elements/business/business-objects/bo-02.md)
 - **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md)
+- **Codification** : [TERM-SNOMED-CT : Terminologie clinique SNOMED CT](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-snomed-ct.md), [TERM-RXNORM : Terminologie des médicaments RxNorm](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-rxnorm.md), [TERM-ATC : Classification pharmacologique ATC de l'OMS](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-atc.md), [TERM-DCI : Dénomination commune internationale](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-dci.md)
 
 ### DO-07 : Référence
 
@@ -282,6 +285,7 @@ Ce concept est mobilisé par les capacités [CAP-10](../../04_architecture-repos
 - **Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
 - **Objet métier CAESN** : [BO-03 : Dispensation & produits](../../04_architecture-repository/02_architecture-elements/business/business-objects/bo-03.md)
 - **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md)
+- **Codification** : [TERM-SNOMED-CT : Terminologie clinique SNOMED CT](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-snomed-ct.md), [TERM-RXNORM : Terminologie des médicaments RxNorm](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-rxnorm.md), [TERM-ATC : Classification pharmacologique ATC de l'OMS](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-atc.md), [TERM-DCI : Dénomination commune internationale](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-dci.md)
 
 ### DO-11 : Produit de santé
 
@@ -303,6 +307,7 @@ Ce concept est mobilisé par les capacités [CAP-10](../../04_architecture-repos
 - **Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)
 - **Objet métier CAESN** : [BO-03 : Dispensation & produits](../../04_architecture-repository/02_architecture-elements/business/business-objects/bo-03.md)
 - **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md)
+- **Codification** : [TERM-SNOMED-CT : Terminologie clinique SNOMED CT](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-snomed-ct.md), [TERM-RXNORM : Terminologie des médicaments RxNorm](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-rxnorm.md), [TERM-ATC : Classification pharmacologique ATC de l'OMS](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-atc.md), [TERM-DCI : Dénomination commune internationale](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-dci.md)
 
 ### DO-12 : Lot
 
@@ -324,6 +329,7 @@ Ce concept est mobilisé par les capacités [CAP-10](../../04_architecture-repos
 - **Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
 - **Objet métier CAESN** : [BO-03 : Dispensation & produits](../../04_architecture-repository/02_architecture-elements/business/business-objects/bo-03.md)
 - **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md)
+- **Codification** : [TERM-DCI : Dénomination commune internationale](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-dci.md)
 
 ### DO-13 : Stock
 
@@ -510,6 +516,7 @@ Ce concept est mobilisé par les capacités [CAP-06](../../04_architecture-repos
 - **Flux de valeur** : [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
 - **Objet métier CAESN** : [BO-05 : Risque & surveillance](../../04_architecture-repository/02_architecture-elements/business/business-objects/bo-05.md)
 - **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md)
+- **Codification** : [TERM-LOINC : Terminologie des observations de laboratoire](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-loinc.md)
 
 ### DO-21 : Notification sanitaire
 
@@ -777,6 +784,28 @@ Ce concept est mobilisé par les capacités [CAP-15](../../04_architecture-repos
 - **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-7](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
 
 <!-- END:GENERATED -->
+
+## 8. Terminologies et codification
+
+La couche sémantique du référentiel arrime les valeurs portées par les objets de données à des référentiels de codes publics et versionnés. Cette couche est la condition de comparabilité des données entre institutions : deux établissements qui échange le même objet de données n'échangent la même information que s'ils interprètent ses valeurs selon les mêmes codes. Elle conditionne également la validité des indicateurs calculés au-dessus de ces données, un indicateur n'ayant de sens que si sa population de départ est codée de façon homogène.
+
+Chaque terminologie du référentiel est un objet à part entière, porteur d'une finalité, d'un contenu et d'une portée. Une terminologie constrain un ou plusieurs objets de données, et chaque objet de données declare les terminologies qui régissent ses valeurs. Les deux relations sont réciproques et contrôlées par le validateur du référentiel : une terminologie sans objet de données contraint, ou un objet de données dont la codification n'est portée par aucun composant applicatif, sont considérés comme des anomalies.
+
+<!-- BEGIN:GENERATED mode=table source=04_architecture-repository/02_architecture-elements/data/terminologies/term-atc.md,04_architecture-repository/02_architecture-elements/data/terminologies/term-cim-11.md,04_architecture-repository/02_architecture-elements/data/terminologies/term-dci.md,04_architecture-repository/02_architecture-elements/data/terminologies/term-loinc.md,04_architecture-repository/02_architecture-elements/data/terminologies/term-rxnorm.md,04_architecture-repository/02_architecture-elements/data/terminologies/term-snomed-ct.md -->
+<!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
+
+| Code | Titre canonique | Rattachement | Statut | Fiche |
+|---|---|---|---|---|
+| TERM-ATC | TERM-ATC : Classification pharmacologique ATC de l'OMS | CAP-13, CAP-14, ART-2, ART-4, TERM-DCI, TERM-CODIFICATION-COMMUNE, CMP-10, DO-06, DO-10, DO-11 | candidate | TERM-ATC |
+| TERM-CIM-11 | TERM-CIM-11 : Classification internationale des maladies | CAP-13, CAP-14, ART-2, ART-4, TERM-CODIFICATION-COMMUNE, CMP-09, CMP-10, STD-0006, DO-05 | candidate | TERM-CIM-11 |
+| TERM-DCI | TERM-DCI : Dénomination commune internationale | CAP-13, CAP-14, ART-2, ART-4, TERM-SNOMED-CT, TERM-RXNORM, TERM-CODIFICATION-COMMUNE, CMP-10, DO-06, DO-10, DO-11, DO-12 | candidate | TERM-DCI |
+| TERM-LOINC | TERM-LOINC : Terminologie des observations de laboratoire | CAP-13, CAP-14, ART-2, ART-4, TERM-CIM-11, TERM-CODIFICATION-COMMUNE, CMP-09, CMP-10, STD-0006, DO-20 | candidate | TERM-LOINC |
+| TERM-RXNORM | TERM-RXNORM : Terminologie des médicaments RxNorm | CAP-13, CAP-14, ART-2, ART-4, TERM-SNOMED-CT, TERM-CODIFICATION-COMMUNE, CMP-10, STD-0007, DO-06, DO-10, DO-11 | candidate | TERM-RXNORM |
+| TERM-SNOMED-CT | TERM-SNOMED-CT : Terminologie clinique SNOMED CT | CAP-13, CAP-14, ART-2, ART-4, TERM-CODIFICATION-COMMUNE, TERM-RXNORM, CMP-09, CMP-10, STD-0007, DO-06, DO-10, DO-11 | candidate | TERM-SNOMED-CT |
+
+<!-- END:GENERATED -->
+
+Le registre chapeau de ces terminologies est publié au niveau CNISN sous l'identifiant [TERM-CODIFICATION-COMMUNE : Terminologie et codification communes](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-codification-commune.md). Il fixe les services de consultation de systèmes de codes, de validation, d'expansion, de recherche et de traduction. Les terminologies ci-dessus en sont les déclinaisons métier : elles définissent, pour un usage donné, quel référentiel de codes s'applique.
 
 ## Liens
 

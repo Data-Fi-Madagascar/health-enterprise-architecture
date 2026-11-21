@@ -12,6 +12,7 @@ envelope: 02_artsn/05_cartographie/composants.md
 maps_to: ["ABB-ELIGIBILITE-COUVERTURE"]
 implements: ["ART-4C"]
 applies_to: ["PRC-09", "PRC-10"]
+accesses: ["DO-14", "DO-15", "DO-16", "DO-17"]
 related: ["CAP-07", "VS-03"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-12", "couche-4"]
 realized_by: ["WP-03"]
@@ -24,4 +25,5 @@ realized_by: ["WP-03"]
 
 - **Rattachement** : [ART-4C](../../../04_patterns/artsn-rules/art-4c.md) (éligibilité/couverture), [CAP-07: Protection financière, couverture santé universelle](../../../02_architecture-elements/strategy/capabilities/cap-07.md). CMP-12 réalise l'[ABB-ELIGIBILITE-COUVERTURE](../abb-eligibilite-couverture.md) ; ce bloc porte la responsabilité de vérification des droits, distincte de l'identité et du consentement.
 - **Processus soutenus** : [PRC-09: Remboursement et régulation des mécanismes](../../../02_architecture-elements/business/processes/prc-09.md) (finance), [PRC-10: Planification et allocation des ressources](../../../02_architecture-elements/business/processes/prc-10.md) (planification).
+- **Données portées** : [DO-14 : Éligibilité](../../../02_architecture-elements/data/data-objects/do-14.md), [DO-15 : Couverture sanitaire](../../../02_architecture-elements/data/data-objects/do-15.md), [DO-16 : Facturation](../../../02_architecture-elements/data/data-objects/do-16.md), [DO-17 : Vérification d'éligibilité](../../../02_architecture-elements/data/data-objects/do-17.md)
 - **Statut : Stable.**

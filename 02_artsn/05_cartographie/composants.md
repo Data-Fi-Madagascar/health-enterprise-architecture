@@ -27,6 +27,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : [ART-6](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md) (projections analytiques), [ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md), [ABB-RECONCILIATION-DONNEES: Qualité et réconciliation](../../04_architecture-repository/05_building-blocks/abb/abb-reconciliation-donnees.md).
 - **Processus soutenus** : [PRC-10: Planification et allocation des ressources](../../04_architecture-repository/02_architecture-elements/business/processes/prc-10.md) (planification), [PRC-11: Suivi et pilotage de la performance](../../04_architecture-repository/02_architecture-elements/business/processes/prc-11.md) (pilotage performance), [PRC-12: Redevabilité et amélioration continue](../../04_architecture-repository/02_architecture-elements/business/processes/prc-12.md) (redevabilité).
+- **Données portées** : [DO-25 : Indicateur sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-25.md), [DO-26 : Zone sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-26.md), [DO-27 : Tâche](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-27.md), [DO-28 : Tableau de bord](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-28.md)
 - **Statut : Stable.**
 
 ### Centre de commande & Crises intersectorielles
@@ -37,6 +38,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : [ART-5](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md) (routeur alertes), [ART-0](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md) (accords partage), [ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md).
 - **Processus soutenus** : [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (alerte/investigation/riposte), [PRC-11: Suivi et pilotage de la performance](../../04_architecture-repository/02_architecture-elements/business/processes/prc-11.md) (pilotage performance).
+- **Données portées** : [DO-18 : Signal](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-18.md), [DO-19 : Foyer](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-19.md), [DO-20 : Investigation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-20.md), [DO-21 : Notification sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-21.md), [DO-22 : Alerte sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-22.md), [DO-25 : Indicateur sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-25.md), [DO-28 : Tableau de bord](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-28.md)
 - **Statut : Stable.**
 
 ### Entrepôt Lakehouse & Projections analytiques
@@ -47,6 +49,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : [ART-6](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md) (CQRS), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md) (Grand Livre), [ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md), [ABB-RECONCILIATION-DONNEES: Qualité et réconciliation](../../04_architecture-repository/05_building-blocks/abb/abb-reconciliation-donnees.md).
 - **Processus soutenus** : [PRC-09: Remboursement et régulation des mécanismes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-09.md) (remboursement), [PRC-11: Suivi et pilotage de la performance](../../04_architecture-repository/02_architecture-elements/business/processes/prc-11.md) (pilotage).
+- **Données portées** : [DO-16 : Facturation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-16.md), [DO-17 : Vérification d'éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-17.md), [DO-25 : Indicateur sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-25.md), [DO-28 : Tableau de bord](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-28.md)
 - **Statut : Stable.**
 
 ### Moteur analytique & IA
@@ -57,6 +60,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : [ART-5](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md) (alertes), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md) (Grand Livre), [ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md), [ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md).
 - **Processus soutenus** : [PRC-09: Remboursement et régulation des mécanismes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-09.md) (remboursement), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (alerte/riposte).
+- **Données portées** : [DO-16 : Facturation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-16.md), [DO-17 : Vérification d'éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-17.md), [DO-18 : Signal](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-18.md), [DO-19 : Foyer](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-19.md), [DO-20 : Investigation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-20.md), [DO-21 : Notification sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-21.md), [DO-22 : Alerte sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-22.md)
 - **Statut : Stable.**
 
 ### Moteur de graphes & Référentiel spatio-temporel
@@ -66,6 +70,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 **Discipline de mise en œuvre.** Il garantit la cohérence topologique du graphe national et la résilience spatiale ([ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../04_architecture-repository/03_requirements/enf-4.md)). Toute requête de navigation relationnelle passe par ce composant.
 
 - **Rattachement** : [ART-8B](../../04_architecture-repository/04_patterns/artsn-rules/art-8b.md) (graphe), [ART-4D](../../04_architecture-repository/04_patterns/artsn-rules/art-4d.md) (spatio-temporel), [ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md), [COMP-HOMOLOGATION-INTEROPERABILITE: Conformité et tests d’interopérabilité](../../04_architecture-repository/06_governance/compliance/comp-homologation-interoperabilite.md).
+- **Données portées** : [DO-01 : Patient](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-01.md), [DO-11 : Produit de santé](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-11.md), [DO-23 : Formation sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-23.md), [DO-24 : Agent de santé](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-24.md), [DO-26 : Zone sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-26.md)
 - **Statut : Stable.**
 
 ### Intégration, Médiation, API Gateway, Broker & Registre schémas
@@ -75,6 +80,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 **Discipline de mise en œuvre.** Il forme la bordure de la plateforme ; tout flux entrant ou sortant le traverse. Il garantit l'éradication des silos (F.3) et la conformité aux contrats ([ENF-1: Résilience à l'instabilité réseau](../../04_architecture-repository/03_requirements/enf-1.md), [ENF-3: Unicité de l'identité et résilience face à la fragmentation applicative](../../04_architecture-repository/03_requirements/enf-3.md)).
 
 - **Rattachement** : [ART-1](../../04_architecture-repository/04_patterns/artsn-rules/art-1.md) (ingestion), [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md) (médiation), [F.3](../../04_architecture-repository/04_patterns/foundations/f-3.md) (schémas), [ABB-IDENTITE-BENEFICIAIRE: Résolution d’identité du bénéficiaire](../../04_architecture-repository/05_building-blocks/abb/abb-identite-beneficiaire.md), [ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
+- **Données portées** : [DO-29 : Résumé international du patient (IPS)](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-29.md), [DO-30 : Section du résumé patient](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-30.md), [DO-31 : Confiance internationale](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-31.md)
 - **Statut : Stable.**
 
 ### Orchestrateur de parcours & Gestionnaire de Sagas (ART-8A)
@@ -85,6 +91,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : [ART-8A](../../04_architecture-repository/04_patterns/artsn-rules/art-8a.md) (orchestrateur de parcours), [ABB-CONFIANCE-AUTORISATION: Confiance, sécurité et autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-confiance-autorisation.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../04_architecture-repository/02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-06.md) (logistique).
+- **Données portées** : aucune. Composant transversal : orchestration et compensation des transactions distribuees. Le rattachement aux données est porté par les composants qui lui confient les flux.
 - **Statut : Stable.**
 
 ### Répertoire de données cliniques opérationnelles
@@ -95,6 +102,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../04_architecture-repository/02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie).
+- **Données portées** : [DO-03 : Dossier patient](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-03.md), [DO-04 : Épisode de soins](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-04.md), [DO-05 : Consultation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-05.md)
 - **Statut : Stable.**
 
 ### Référentiel des métadonnées d'exploitation ([ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md))
@@ -105,6 +113,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md).
 - **Processus soutenus** : [PRC-07: Identification et droits des bénéficiaires](../../04_architecture-repository/02_architecture-elements/business/processes/prc-07.md) (production données), [PRC-08: Financement et exemption au point de service](../../04_architecture-repository/02_architecture-elements/business/processes/prc-08.md) (qualité).
+- **Données portées** : [TERM-SNOMED-CT : Terminologie clinique SNOMED CT](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-snomed-ct.md), [TERM-RXNORM : Terminologie des médicaments RxNorm](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-rxnorm.md), [TERM-ATC : Classification pharmacologique ATC de l'OMS](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-atc.md), [TERM-DCI : Dénomination commune internationale](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-dci.md), [TERM-CIM-11 : Classification internationale des maladies](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-cim-11.md), [TERM-CODIFICATION-COMMUNE : Terminologie et codification communes](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-codification-commune.md)
 - **Statut : Stable.**
 
 ### Registre des terminologies
@@ -115,6 +124,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-SERVICE-TERMINOLOGIE: Service de terminologie et codification communes](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md).
 - **Processus soutenus** : [PRC-07: Identification et droits des bénéficiaires](../../04_architecture-repository/02_architecture-elements/business/processes/prc-07.md) (production données), [PRC-08: Financement et exemption au point de service](../../04_architecture-repository/02_architecture-elements/business/processes/prc-08.md) (qualité).
+- **Données portées** : [TERM-SNOMED-CT : Terminologie clinique SNOMED CT](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-snomed-ct.md), [TERM-RXNORM : Terminologie des médicaments RxNorm](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-rxnorm.md), [TERM-ATC : Classification pharmacologique ATC de l'OMS](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-atc.md), [TERM-DCI : Dénomination commune internationale](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-dci.md), [TERM-CIM-11 : Classification internationale des maladies](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-cim-11.md), [TERM-CODIFICATION-COMMUNE : Terminologie et codification communes](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-codification-commune.md)
 - **Statut : Stable.**
 
 ### Registre des clients / Index National des Patients (INP — ART-4A)
@@ -125,6 +135,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : [ART-4A](../../04_architecture-repository/04_patterns/artsn-rules/art-4a.md) (INP), [ABB-IDENTITE-BENEFICIAIRE: Résolution d'identité du bénéficiaire](../../04_architecture-repository/05_building-blocks/abb/abb-identite-beneficiaire.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../04_architecture-repository/02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-06.md) (logistique).
+- **Données portées** : [DO-01 : Patient](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-01.md), [DO-02 : Identifiant national d'identification](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-02.md)
 - **Statut : Stable.**
 
 ### Registre d'éligibilité et de couverture (CSU — ART-4C)
@@ -135,6 +146,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : [ART-4C](../../04_architecture-repository/04_patterns/artsn-rules/art-4c.md) (éligibilité/couverture), [CAP-07: Protection financière, couverture santé universelle](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-07.md). CMP-12 réalise l'[ABB-ELIGIBILITE-COUVERTURE](../../04_architecture-repository/05_building-blocks/abb/abb-eligibilite-couverture.md) ; ce bloc porte la responsabilité de vérification des droits, distincte de l'identité et du consentement.
 - **Processus soutenus** : [PRC-09: Remboursement et régulation des mécanismes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-09.md) (finance), [PRC-10: Planification et allocation des ressources](../../04_architecture-repository/02_architecture-elements/business/processes/prc-10.md) (planification).
+- **Données portées** : [DO-14 : Éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-14.md), [DO-15 : Couverture sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-15.md), [DO-16 : Facturation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-16.md), [DO-17 : Vérification d'éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-17.md)
 - **Statut : Stable.**
 
 ### Registre des personnels
@@ -145,6 +157,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../04_architecture-repository/02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie).
+- **Données portées** : [DO-23 : Formation sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-23.md), [DO-24 : Agent de santé](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-24.md)
 - **Statut : Stable.**
 
 ### Registre des produits, intrants et indicateurs
@@ -155,6 +168,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-SERVICE-TERMINOLOGIE: Service de terminologie et codification communes](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md) pour les nomenclatures, et [ABB-ECHANGE-LOGISTIQUE-LMIS: Échange logistique LMIS](../../04_architecture-repository/05_building-blocks/abb/abb-echange-logistique-lmis.md) pour le catalogue partagé des produits et intrants.
 - **Processus soutenus** : [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-06.md) (logistique).
+- **Données portées** : [DO-11 : Produit de santé](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-11.md), [DO-25 : Indicateur sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-25.md)
 - **Statut : Stable.**
 
 ### API Gateway
@@ -165,6 +179,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : [ART-5](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md) (routeur d'escalade), [ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../04_architecture-repository/02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-06.md) (logistique).
+- **Données portées** : aucune. Composant transversal : point d'entree des requetes et routage des echanges. Le rattachement aux données est porté par les composants qui lui confient les flux.
 - **Statut : Stable.**
 
 ### Registre de schémas (F.3)
@@ -175,6 +190,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : [ART-5](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md) (routeur d'escalade), [ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md).
 - **Processus soutenus** : [PRC-07: Identification et droits des bénéficiaires](../../04_architecture-repository/02_architecture-elements/business/processes/prc-07.md) (production données), [PRC-08: Financement et exemption au point de service](../../04_architecture-repository/02_architecture-elements/business/processes/prc-08.md) (qualité).
+- **Données portées** : aucune. Composant transversal : definition et validation des contrats d'echange. Le rattachement aux données est porté par les composants qui lui confient les flux.
 - **Statut : Stable.**
 
 ### Message broker asynchrone
@@ -185,6 +201,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : [ART-5](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md) (routeur d'escalade), [ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../04_architecture-repository/02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-06.md) (logistique).
+- **Données portées** : aucune. Composant transversal : acheminement asynchrone des messages. Le rattachement aux données est porté par les composants qui lui confient les flux.
 - **Statut : Stable.**
 
 ### Compensateur / Regroupeur de flux (Netting — ART-8C)
@@ -195,6 +212,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : [ART-8C](../../04_architecture-repository/04_patterns/artsn-rules/art-8c.md) (Netting), [ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../04_architecture-repository/02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-06.md) (logistique).
+- **Données portées** : aucune. Composant transversal : compensation et regroupement des flux. Le rattachement aux données est porté par les composants qui lui confient les flux.
 - **Statut : Stable.**
 
 ### CMP-19 : Dossiers & statistiques de sante (hopitaux)
@@ -202,6 +220,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 **Discipline de mise en oeuvre.** L'exhaustivite et l'exactitude des statistiques hospitalieres sont une discipline de premier ordre : tout episode de soin ouvert doit etre cloture et compte-rendu. Les donnees saisies restent reconciliables avec leur source clinique et horodatees. Le composant respecte les referentiels de terminologie (PT-07/CMP-07) et le format de messagerie HL7 FHIR pour l'echange avec le noeud regional (CMP-27).
 - **Rattachement** : [ENF-1: Resilience a l'instabilite reseau](../../04_architecture-repository/03_requirements/enf-1.md), [F-1: Resilience face a la realite geographique du pays](../../04_architecture-repository/04_patterns/foundations/f-1.md).
 - **Processus soutenus** : [PRC-01: Acces, orientation et admission du patient](../../04_architecture-repository/02_architecture-elements/business/processes/prc-01.md) (acces et admission), [PRC-02: Prestation des soins cliniques](../../04_architecture-repository/02_architecture-elements/business/processes/prc-02.md) (prestation des soins), [PRC-03: Continuite, suivi et qualite des soins](../../04_architecture-repository/02_architecture-elements/business/processes/prc-03.md) (suivi et qualite), [PRC-06: Cloture et capitalisation des episodes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-06.md) (cloture et capitalisation).
+- **Données portées** : [DO-03 : Dossier patient](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-03.md), [DO-04 : Épisode de soins](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-04.md), [DO-05 : Consultation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-05.md), [DO-06 : Prescription](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-06.md), [DO-07 : Référence](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-07.md), [DO-08 : Contre-référence](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-08.md), [DO-09 : Évacuation sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-09.md), [DO-10 : Dispensation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-10.md), [DO-25 : Indicateur sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-25.md)
 - **Statut : Brouillon.**
 
 ### CMP-20 : Gestion des pharmacies (PMIS)
@@ -209,6 +228,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 **Discipline de mise en oeuvre.** L'usage des referentiels de medicaments normalises (CMP-07) est obligatoire ; aucune denomination locale ne circule hors referentiel. Les mouvements de stock sont historises de facon immuable et les seuils de securite declares. La facturation au point de service respecte les regles d'exemption (PRC-08) lorsqu'elles s'appliquent.
 - **Rattachement** : [ENF-1: Resilience a l'instabilite reseau](../../04_architecture-repository/03_requirements/enf-1.md), [F-1: Resilience face a la realite geographique du pays](../../04_architecture-repository/04_patterns/foundations/f-1.md).
 - **Processus soutenus** : [PRC-02: Prestation des soins cliniques](../../04_architecture-repository/02_architecture-elements/business/processes/prc-02.md) (dispensation aux soins), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacovigilance et riposte).
+- **Données portées** : [DO-10 : Dispensation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-10.md), [DO-11 : Produit de santé](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-11.md), [DO-12 : Lot](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-12.md), [DO-13 : Stock](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-13.md), [DO-16 : Facturation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-16.md)
 - **Statut : Brouillon.**
 
 ### CMP-21 : Sante communautaire mobile (offline)
@@ -216,6 +236,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 **Discipline de mise en oeuvre.** La perte de connectivite ne doit entrainer aucune perte de donnee : une file d'attente locale chiffree conserve les ecritures en attente et la synchronisation differentielle se declenche au retour de couverture. Les terminaux sont authentifies et leurs donnees signees. Le composant reste conforme a l'exigence de resilience au reseau (ENF-1).
 - **Rattachement** : [ENF-1: Resilience a l'instabilite reseau](../../04_architecture-repository/03_requirements/enf-1.md), [F-1: Resilience face a la realite geographique du pays](../../04_architecture-repository/04_patterns/foundations/f-1.md).
 - **Processus soutenus** : [PRC-01: Acces, orientation et admission du patient](../../04_architecture-repository/02_architecture-elements/business/processes/prc-01.md) (acces au beneficiaire), [PRC-02: Prestation des soins cliniques](../../04_architecture-repository/02_architecture-elements/business/processes/prc-02.md) (soins de proximite), [PRC-03: Continuite, suivi et qualite des soins](../../04_architecture-repository/02_architecture-elements/business/processes/prc-03.md) (suivi communautaire).
+- **Données portées** : [DO-01 : Patient](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-01.md), [DO-05 : Consultation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-05.md), [DO-07 : Référence](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-07.md)
 - **Statut : Brouillon.**
 
 ### CMP-22 : Espace sante patient
@@ -223,6 +244,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 **Discipline de mise en oeuvre.** L'acces est strictement controle par authentification forte et consentement (CMP-34) ; aucune donnee a caractere personnel n'est exposee sans autorisation explicite. Les traces d'acces sont journalisees (CMP-37). Le portail ne detient pas les donnees sources : il les presente en lecture via les composants detenteurs, garantissant une source unique de verite.
 - **Rattachement** : [ENF-1: Resilience a l'instabilite reseau](../../04_architecture-repository/03_requirements/enf-1.md), [F-1: Resilience face a la realite geographique du pays](../../04_architecture-repository/04_patterns/foundations/f-1.md).
 - **Processus soutenus** : [PRC-01: Acces, orientation et admission du patient](../../04_architecture-repository/02_architecture-elements/business/processes/prc-01.md) (acces aux services), [PRC-07: Identification et droits des beneficiaires](../../04_architecture-repository/02_architecture-elements/business/processes/prc-07.md) (identification et droits), [PRC-08: Financement et exemption au point de service](../../04_architecture-repository/02_architecture-elements/business/processes/prc-08.md) (financement et exemption).
+- **Données portées** : [DO-01 : Patient](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-01.md), [DO-03 : Dossier patient](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-03.md), [DO-04 : Épisode de soins](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-04.md), [DO-14 : Éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-14.md), [DO-15 : Couverture sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-15.md), [DO-16 : Facturation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-16.md)
 - **Statut : Brouillon.**
 
 ### CMP-23 : Chaine logistique (LMIS)
@@ -230,6 +252,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 **Discipline de mise en oeuvre.** La tracabilite de bout en bout est obligatoire (lot, periode de validite, lieu). Les seuils de securite sont parametres par type d'intrant et de structure. Les donnees d'activite issues des etablissements (CMP-19) alimentent la prevision. Tout mouvement est historise de facon immuable et reconcilie avec la comptabilite.
 - **Rattachement** : [ABB-ECHANGE-LOGISTIQUE-LMIS: Echange logistique LMIS](../../04_architecture-repository/05_building-blocks/abb/abb-echange-logistique-lmis.md), [ART-10: Logistique](../../04_architecture-repository/04_patterns/artsn-rules/art-10.md), [ENF-1: Resilience a l'instabilite reseau](../../04_architecture-repository/03_requirements/enf-1.md), [F-1: Resilience face a la realite geographique du pays](../../04_architecture-repository/04_patterns/foundations/f-1.md). [ABB-AUDIT-PROVENANCE](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md) encadre la tracabilite transverse, sans remplacer le bloc logistique principal.
 - **Processus soutenus** : [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (approvisionnement et riposte), [PRC-10: Planification et allocation des ressources](../../04_architecture-repository/02_architecture-elements/business/processes/prc-10.md) (planification des ressources).
+- **Données portées** : [DO-11 : Produit de santé](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-11.md), [DO-12 : Lot](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-12.md), [DO-13 : Stock](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-13.md), [DO-25 : Indicateur sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-25.md)
 - **Statut : Brouillon.**
 
 ### CMP-24 : Surveillance de la sante animale (zoonoses)
@@ -237,6 +260,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 **Discipline de mise en oeuvre.** L'interoperabilite avec la surveillance humaine est obligatoire : un meme evenement peut avoir une composante animale et humaine. Les signalements respectent les formats de messagerie d'alerte (ART-8) et sont horodates. Les donnees zoologiques et humaines sont cloisonnees par finalite et ne sont jointes qu'au sein des pipelines d'analyse autorises (CMP-03/CMP-04).
 - **Rattachement** : [ENF-1: Resilience a l'instabilite reseau](../../04_architecture-repository/03_requirements/enf-1.md), [F-1: Resilience face a la realite geographique du pays](../../04_architecture-repository/04_patterns/foundations/f-1.md).
 - **Processus soutenus** : [PRC-04: Veille, prevention et surveillance sanitaire](../../04_architecture-repository/02_architecture-elements/business/processes/prc-04.md) (veille et prevention), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (alerte et riposte).
+- **Données portées** : [DO-18 : Signal](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-18.md), [DO-19 : Foyer](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-19.md), [DO-21 : Notification sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-21.md)
 - **Statut : Brouillon.**
 
 ### CMP-25 : Enquetes & capteurs terrain
@@ -244,6 +268,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 **Discipline de mise en oeuvre.** La qualite et la provenance des donnees capteurs sont garanties (signature a la source, horodatage fiable). Les resultats sont reconcilies avant publication afin d'eviter les doubles comptes. Les protocoles d'enquete sont versionnes et tracables. Les flux exterieurs (partenaires, capteurs tiers) sont admis selon des accords references (CMP-39).
 - **Rattachement** : [ENF-1: Resilience a l'instabilite reseau](../../04_architecture-repository/03_requirements/enf-1.md), [F-1: Resilience face a la realite geographique du pays](../../04_architecture-repository/04_patterns/foundations/f-1.md).
 - **Processus soutenus** : [PRC-04: Veille, prevention et surveillance sanitaire](../../04_architecture-repository/02_architecture-elements/business/processes/prc-04.md) (veille terrain), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (alerte), [PRC-11: Suivi et pilotage de la performance](../../04_architecture-repository/02_architecture-elements/business/processes/prc-11.md) (pilotage de la performance).
+- **Données portées** : [DO-21 : Notification sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-21.md), [DO-25 : Indicateur sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-25.md), [DO-26 : Zone sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-26.md)
 - **Statut : Brouillon.**
 
 <!-- END:GENERATED -->

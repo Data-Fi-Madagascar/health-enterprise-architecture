@@ -98,7 +98,7 @@ TYPE_TO_CLASS = {
 # Mapping type YAML → propriété de relation principale
 RELATION_FIELDS = ["maps_to", "implements", "applies_to", "related",
                    "realized_by", "contributes_to", "performs", "accesses",
-                   "accessed_by",
+                   "accessed_by", "uses", "constrained_by", "constrains",
                    "governs", "represents", "assigned_to", "has_role",
                    "located_at", "serves", "produced_by", "detenu_par",
                    "soutient_flux_de_valeur", "utilise_composant",
@@ -115,6 +115,9 @@ PROPERTY_MAP = {
     "performs": "performs",
     "accesses": "accesses",
     "accessed_by": "accessedBy",
+    "constrained_by": "constrainedBy",
+    "constrains": "constrains",
+    "uses": "serviPar",           # Serving ArchiMate, sens processus vers composant
     "governs": "serves",          # Serving ArchiMate (merge with applies_to)
     "represents": "represents",
     "assigned_to": "assignedTo",
@@ -128,6 +131,11 @@ PROPERTY_MAP = {
     "supporte_standard": "supporteStandard",
     "a_pour_proprietaire_fonctionnel": "aPourProprietaireFonctionnel",
 }
+
+# Types de source pour lesquels `uses` désigne une relation entre composants
+COMPOSANT_TYPES = ("composant-applicatif", "composant-infrastructure",
+                   "composant-securite", "composant-gouvernance",
+                   "registre-gouvernance")
 
 
 def parse_frontmatter(text):
@@ -245,10 +253,13 @@ def collect_objects():
 
 def resolve_property(rel, source_type, target):
     """Résout la propriété RDF en fonction du type source et de la cible.
-    
+
     ArchiMate strict : même champ frontmatter, propriété différente selon le contexte.
     - applies_to sur Composant → serves (Serving)
     - applies_to sur Capabilite → contributesTo (Influence) quand cible est FluxValeur
+    - applies_to sur ProcessusMetier → realise (Realization) quand cible est Capabilite
+    - uses sur ProcessusMetier → serviPar (Serving, sens processus vers composant)
+    - uses sur Composant → utiliseComposant (Association entre composants)
     - governs → serves (Serving)
     """
     base = PROPERTY_MAP.get(rel, rel)
@@ -267,15 +278,22 @@ def resolve_property(rel, source_type, target):
             if target.startswith("CAP-"):
                 return "contributesTo"
         if source_type in ("processus-metier",):
-            # ProcessusMetier → Capabilite = Association (related), not Serving
+            # ProcessusMetier → Capabilite = Realization (realise)
             if target.startswith("CAP-"):
-                return "related"
+                return "realise"
         if source_type in ("chapitre", "fondation"):
             # Chapitre/Fondation → Exigence = Association (related), not Serving
             if target.startswith("ENF-"):
                 return "related"
         # Composant → Capabilite/Service = Serving (serves)
         return "serves"
+
+    if rel == "uses":
+        # Composant → Composant = Association entre composants actifs
+        if source_type in COMPOSANT_TYPES:
+            return "utiliseComposant"
+        # Processus → Composant = Serving (serviPar)
+        return "serviPar"
 
     return base
 

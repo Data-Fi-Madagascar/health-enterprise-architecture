@@ -12,6 +12,7 @@ envelope: 02_artsn/05_cartographie/composants.md
 maps_to: ["ABB-AUDIT-PROVENANCE"]
 implements: ["ART-5"]
 applies_to: ["PRC-04", "PRC-05", "PRC-06", "PRC-13"]
+accesses: []
 related: ["ENF-3", "CAP-10", "VS-02"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-15", "couche-3"]
 ---
@@ -23,4 +24,5 @@ tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-15", "couche-3"]
 
 - **Rattachement** : [ART-5](../../../04_patterns/artsn-rules/art-5.md) (routeur d'escalade), [ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité](../abb-audit-provenance.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../../02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../../02_architecture-elements/business/processes/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../../02_architecture-elements/business/processes/prc-06.md) (logistique).
+- **Données portées** : aucune. Composant transversal : point d'entree des requetes et routage des echanges. Le rattachement aux données est porté par les composants qui lui confient les flux.
 - **Statut : Stable.**

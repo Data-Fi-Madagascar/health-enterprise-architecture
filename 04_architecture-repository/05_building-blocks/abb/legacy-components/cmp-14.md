@@ -12,6 +12,7 @@ envelope: 02_artsn/05_cartographie/composants.md
 maps_to: ["ABB-SERVICE-TERMINOLOGIE", "ABB-ECHANGE-LOGISTIQUE-LMIS"]
 implements: ["ART-4"]
 applies_to: ["PRC-05", "PRC-06"]
+accesses: ["DO-11", "DO-25"]
 related: ["ENF-3", "CAP-09", "VS-02"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-14", "couche-4"]
 ---
@@ -23,4 +24,5 @@ tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-14", "couche-4"]
 
 - **Rattachement** : [ART-4](../../../04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-SERVICE-TERMINOLOGIE: Service de terminologie et codification communes](../abb-service-terminologie.md) pour les nomenclatures, et [ABB-ECHANGE-LOGISTIQUE-LMIS: Échange logistique LMIS](../abb-echange-logistique-lmis.md) pour le catalogue partagé des produits et intrants.
 - **Processus soutenus** : [PRC-05: Alerte, investigation et riposte](../../../02_architecture-elements/business/processes/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../../02_architecture-elements/business/processes/prc-06.md) (logistique).
+- **Données portées** : [DO-11 : Produit de santé](../../../02_architecture-elements/data/data-objects/do-11.md), [DO-25 : Indicateur sanitaire](../../../02_architecture-elements/data/data-objects/do-25.md)
 - **Statut : Stable.**

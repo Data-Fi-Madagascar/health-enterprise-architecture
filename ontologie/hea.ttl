@@ -257,29 +257,73 @@ hea:realizedBy rdf:type owl:ObjectProperty ;
 # ArchiMate: "The Access relationship associates a behavioral element with an object that is accessed."
 # Behavioral elements: Process, Function, Interaction, Service.
 # Objects: Data Object, Artifact.
+# Extension HEA : le composant applicatif accède aux objets de données qu'il porte,
+# et le service de terminologie accède aux terminologies qu'il sert.
 hea:accesses rdf:type owl:ObjectProperty ;
     rdfs:label "accède à" ;
-    rdfs:comment "Access ArchiMate — un processus ou service accède à un objet de données" ;
+    rdfs:comment "Access ArchiMate — un processus, un service ou un composant accède à un objet de données, un objet métier ou une terminologie" ;
+    rdfs:domain [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:ProcessusMetier hea:Service hea:Composant)
+    ] ;
+    rdfs:range [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:ObjetDeDonnees hea:ObjetMetier hea:Terminology)
+    ] .
+
+hea:accessedBy rdf:type owl:ObjectProperty ;
+    rdfs:label "accédé par" ;
+    rdfs:comment "Inverse de hea:accesses pour naviguer depuis les objets métier, les objets de données et les terminologies" ;
+    owl:inverseOf hea:accesses ;
+    rdfs:domain [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:ObjetDeDonnees hea:ObjetMetier hea:Terminology)
+    ] ;
+    rdfs:range [
+        rdf:type owl:Class ;
+        owl:unionOf (hea:ProcessusMetier hea:Service hea:Composant)
+    ] .
+
+# --- Semantic constraint (un objet de données est codé par une terminologie) ---
+# Extension HEA : ArchiMate 3.1 ne prévoit pas de relation native entre un objet
+# de données et un référentiel de codes. La contrainte sémantique est modélisée
+# comme une Association dont le sens est unidirectionnel côté objet de données.
+hea:constrainedBy rdf:type owl:ObjectProperty ;
+    rdfs:label "contraint par" ;
+    rdfs:comment "Association sémantique HEA — les valeurs d'un objet de données sont codées par une terminologie" ;
+    rdfs:domain hea:ObjetDeDonnees ;
+    rdfs:range hea:Terminology .
+
+hea:constrains rdf:type owl:ObjectProperty ;
+    rdfs:label "contraint" ;
+    rdfs:comment "Inverse de hea:constrainedBy pour naviguer depuis la terminologie vers les objets de données qu'elle régit" ;
+    owl:inverseOf hea:constrainedBy ;
+    rdfs:domain hea:Terminology ;
+    rdfs:range hea:ObjetDeDonnees .
+
+# --- Realization (un processus métier réalise une capacité) ---
+# ArchiMate: "The Realization relationship models that an element (typically an active structure element)
+# realizes another element (typically a behavioral element)."
+# Couche Business du référentiel : le processus métier est la réalisation de la capacité.
+hea:realise rdf:type owl:ObjectProperty ;
+    rdfs:label "réalise" ;
+    rdfs:comment "Realization ArchiMate — un processus métier réalise une capacité métier" ;
+    rdfs:domain hea:ProcessusMetier ;
+    rdfs:range hea:Capabilite .
+
+# --- Serving inverse (un processus est servi par un composant) ---
+# Symétrique de hea:serves, dans le sens de la lecture métier vers application.
+hea:serviPar rdf:type owl:ObjectProperty ;
+    rdfs:label "servi par" ;
+    rdfs:comment "Serving ArchiMate — un processus métier est servi par un composant applicatif" ;
+    owl:inverseOf hea:serves ;
     rdfs:domain [
         rdf:type owl:Class ;
         owl:unionOf (hea:ProcessusMetier hea:Service)
     ] ;
     rdfs:range [
         rdf:type owl:Class ;
-        owl:unionOf (hea:ObjetDeDonnees hea:ObjetMetier)
-    ] .
-
-hea:accessedBy rdf:type owl:ObjectProperty ;
-    rdfs:label "accédé par" ;
-    rdfs:comment "Inverse de hea:accesses pour naviguer depuis les objets métier et les objets de données" ;
-    owl:inverseOf hea:accesses ;
-    rdfs:domain [
-        rdf:type owl:Class ;
-        owl:unionOf (hea:ObjetDeDonnees hea:ObjetMetier)
-    ] ;
-    rdfs:range [
-        rdf:type owl:Class ;
-        owl:unionOf (hea:ProcessusMetier hea:Service hea:Composant)
+        owl:unionOf (hea:Composant hea:Service)
     ] .
 
 # --- Assignment (responsabilité) ---

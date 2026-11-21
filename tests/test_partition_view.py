@@ -48,9 +48,9 @@ class PartitionTraceabilityViewTests(unittest.TestCase):
         self.assertEqual({"PRC-07", "PRC-08", "PRC-09"}, set(cells[3].split(", ")))
         self.assertTrue({"ABB-ELIGIBILITE-COUVERTURE", "ABB-IDENTITE-BENEFICIAIRE",
                          "ABB-CONFIANCE-AUTORISATION", "ABB-AUDIT-PROVENANCE"}
-                        <= set(cells[5].split(", ")))
+                        <= set(cells[7].split(", ")))
         self.assertTrue({"PT-04", "PT-10", "PT-12", "PT-18", "PT-20"}
-                        <= set(cells[6].split(", ")))
+                        <= set(cells[8].split(", ")))
 
     def test_assigned_abb_augments_stream_but_preserves_sectoral_scope(self):
         builder = load_builder()
@@ -72,11 +72,11 @@ class PartitionTraceabilityViewTests(unittest.TestCase):
         rows = {row.split("|")[1].strip(): [cell.strip() for cell in row.split("|")[1:-1]]
                 for row in rendered.splitlines() if row.startswith("| PART-")}
         self.assertEqual("CAP-07, CAP-08", rows["PART-VS-03"][2])
-        self.assertEqual("ABB-CONFIANCE, ABB-ELIGIBILITE", rows["PART-VS-03"][5])
-        self.assertEqual("PT-10, PT-20", rows["PART-VS-03"][6])
+        self.assertEqual("ABB-CONFIANCE, ABB-ELIGIBILITE", rows["PART-VS-03"][7])
+        self.assertEqual("PT-10, PT-20", rows["PART-VS-03"][8])
         self.assertEqual("CAP-07", rows["PART-SECTOR"][2])
-        self.assertEqual("ABB-ELIGIBILITE", rows["PART-SECTOR"][5])
-        self.assertEqual("PT-20", rows["PART-SECTOR"][6])
+        self.assertEqual("ABB-ELIGIBILITE", rows["PART-SECTOR"][7])
+        self.assertEqual("PT-20", rows["PART-SECTOR"][8])
 
     def test_one_health_renders_complete_surveillance_and_governance_chains(self):
         builder = load_builder()
@@ -99,11 +99,12 @@ class PartitionTraceabilityViewTests(unittest.TestCase):
                 cells = [cell.strip() for cell in row.split("|")[1:-1]]
                 self.assertNotEqual("n/a", cells[2])
                 self.assertNotEqual("n/a", cells[3])
-                self.assertIn("ABB-ECHANGE-MEDIATION", cells[5])
-                self.assertIn("ABB-EXPOSITION-DONNEES-ANALYTIQUES", cells[5])
-                self.assertIn("PT-15", cells[6])
-                self.assertNotIn("ABB-IDENTITE-BENEFICIAIRE", cells[5])
-                self.assertNotIn("PT-04", cells[6])
+                self.assertNotEqual("n/a", cells[4])
+                self.assertIn("ABB-ECHANGE-MEDIATION", cells[7])
+                self.assertIn("ABB-EXPOSITION-DONNEES-ANALYTIQUES", cells[7])
+                self.assertIn("PT-15", cells[8])
+                self.assertNotIn("ABB-IDENTITE-BENEFICIAIRE", cells[7])
+                self.assertNotIn("PT-04", cells[8])
 
     def test_renders_partition_to_solution_chain_from_relations(self):
         builder = load_builder()
@@ -124,8 +125,24 @@ class PartitionTraceabilityViewTests(unittest.TestCase):
                 applies_to=["CAP-01"],
                 related=["VS-01"],
                 accesses=["DO-01"],
+                uses=["CMP-01"],
             ),
-            "data": obj("DO-01", "objet-de-donnees"),
+            "component": obj(
+                "CMP-01",
+                "composant-applicatif",
+                applies_to=["PRC-01"],
+                accesses=["DO-01"],
+            ),
+            "data": obj(
+                "DO-01",
+                "objet-de-donnees",
+                constrained_by=["TERM-EXEMPLE"],
+            ),
+            "terminology": obj(
+                "TERM-EXEMPLE",
+                "terminology",
+                constrains=["DO-01"],
+            ),
             "abb": obj(
                 "ABB-EXEMPLE",
                 "architecture-building-block",
@@ -149,12 +166,21 @@ class PartitionTraceabilityViewTests(unittest.TestCase):
             "VS-01",
             "CAP-01",
             "PRC-01",
+            "CMP-01",
             "DO-01",
+            "TERM-EXEMPLE",
             "ABB-EXEMPLE",
             "PT-01",
         ):
             self.assertIn(expected_id, rendered)
         self.assertEqual(1, rendered.count("| PART-VS-01 |"))
+
+        cells = [cell.strip() for cell in
+                 [row for row in rendered.splitlines()
+                  if row.startswith("| PART-VS-01 |")][0].split("|")[1:-1]]
+        self.assertEqual("CMP-01", cells[4])
+        self.assertEqual("DO-01", cells[5])
+        self.assertEqual("TERM-EXEMPLE", cells[6])
 
 
 if __name__ == "__main__":

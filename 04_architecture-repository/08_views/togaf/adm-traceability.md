@@ -95,31 +95,31 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | CAP-16 | Gestion du portefeuille d'initiatives numériques | VS-03, VS-04 | stable | CAP-16 |
 | CAP-17 | Engagement patient et identité numérique | VS-01, VS-03, ABB-IDENTITE-BENEFICIAIRE, ABB-GESTION-CONSENTEMENT, VS-02, PRC-01, PRC-04, PRC-07 | stable | CAP-17 |
 | CAP-18 | Coordination intersectorielle (One Health) | VS-02, ABB-ECHANGE-MEDIATION, PART-ONE-HEALTH, PRC-04, PRC-05 | stable | CAP-18 |
-| CMP-01 | Tableaux de bord & Portails nationaux (performance, CSU, ressources, veille) | PRC-10, PRC-11, PRC-12, ABB-EXPOSITION-DONNEES-ANALYTIQUES, ABB-RECONCILIATION-DONNEES, ART-6, ENF-5, CAP-13, CAP-16, VS-04 | active | CMP-01 |
-| CMP-02 | Centre de commande & Crises intersectorielles (alertes, crises, veille) | PRC-05, PRC-11, PRC-13, ABB-EXPOSITION-DONNEES-ANALYTIQUES, ART-5, ART-0, ENF-2, CAP-05, CAP-06, VS-02, VS-04 | active | CMP-02 |
-| CMP-03 | Entrepôt Lakehouse & Projections analytiques (pipeline ETL, Lakehouse, projections) | PRC-09, PRC-11, ABB-EXPOSITION-DONNEES-ANALYTIQUES, ABB-RECONCILIATION-DONNEES, ART-6, ART-9, ENF-5, CAP-13, CAP-16, VS-04 | active | CMP-03 |
-| CMP-04 | Moteur analytique & IA (IA prédictive, routeur alertes, Grand Livre) | PRC-05, PRC-09, ABB-EXPOSITION-DONNEES-ANALYTIQUES, ABB-AUDIT-PROVENANCE, ART-5, ART-9, ENF-2, ENF-5, CAP-13, CAP-15, VS-02, VS-04 | active | CMP-04 |
-| CMP-05 | Moteur de graphes & Référentiel spatio-temporel (Graph Store, Spatio ART-4D) | ABB-ECHANGE-MEDIATION, COMP-HOMOLOGATION-INTEROPERABILITE, ART-8B, ART-4D, ENF-4, CAP-13, CAP-14, VS-04 | active | CMP-05 |
-| CMP-06 | Intégration, Médiation, API Gateway, Broker & Registre schémas | PRC-13, ABB-IDENTITE-BENEFICIAIRE, ABB-ECHANGE-MEDIATION, ART-1, ART-2, F-3, ENF-1, ENF-3, CAP-13, CAP-14, CAP-15, VS-01, VS-02, VS-03, VS-04 | active | CMP-06 |
+| CMP-01 | Tableaux de bord & Portails nationaux (performance, CSU, ressources, veille) | PRC-10, PRC-11, PRC-12, ABB-EXPOSITION-DONNEES-ANALYTIQUES, ABB-RECONCILIATION-DONNEES, ART-6, ENF-5, CAP-13, CAP-16, VS-04, DO-25, DO-26, DO-27, DO-28 | active | CMP-01 |
+| CMP-02 | Centre de commande & Crises intersectorielles (alertes, crises, veille) | PRC-05, PRC-11, PRC-13, ABB-EXPOSITION-DONNEES-ANALYTIQUES, ART-5, ART-0, ENF-2, CAP-05, CAP-06, VS-02, VS-04, DO-18, DO-19, DO-20, DO-21, DO-22, DO-25, DO-28 | active | CMP-02 |
+| CMP-03 | Entrepôt Lakehouse & Projections analytiques (pipeline ETL, Lakehouse, projections) | PRC-09, PRC-11, ABB-EXPOSITION-DONNEES-ANALYTIQUES, ABB-RECONCILIATION-DONNEES, ART-6, ART-9, ENF-5, CAP-13, CAP-16, VS-04, DO-16, DO-17, DO-25, DO-28 | active | CMP-03 |
+| CMP-04 | Moteur analytique & IA (IA prédictive, routeur alertes, Grand Livre) | PRC-05, PRC-09, ABB-EXPOSITION-DONNEES-ANALYTIQUES, ABB-AUDIT-PROVENANCE, ART-5, ART-9, ENF-2, ENF-5, CAP-13, CAP-15, VS-02, VS-04, DO-16, DO-17, DO-18, DO-19, DO-20, DO-21, DO-22 | active | CMP-04 |
+| CMP-05 | Moteur de graphes & Référentiel spatio-temporel (Graph Store, Spatio ART-4D) | ABB-ECHANGE-MEDIATION, COMP-HOMOLOGATION-INTEROPERABILITE, ART-8B, ART-4D, ENF-4, CAP-13, CAP-14, VS-04, DO-01, DO-11, DO-23, DO-24, DO-26 | active | CMP-05 |
+| CMP-06 | Intégration, Médiation, API Gateway, Broker & Registre schémas | PRC-13, ABB-IDENTITE-BENEFICIAIRE, ABB-ECHANGE-MEDIATION, ART-1, ART-2, F-3, ENF-1, ENF-3, CAP-13, CAP-14, CAP-15, VS-01, VS-02, VS-03, VS-04, DO-29, DO-30, DO-31 | active | CMP-06 |
 | CMP-07 | Orchestrateur de parcours & Gestionnaire de Sagas (ART-8A) | PRC-04, PRC-05, PRC-06, ABB-CONFIANCE-AUTORISATION, ART-8A, ENF-3, CAP-08, VS-02 | active | CMP-07 |
-| CMP-08 | Répertoire de données cliniques opérationnelles | PRC-04, PRC-05, ABB-GESTION-CONSENTEMENT, ART-4, ENF-3, CAP-09, VS-02 | active | CMP-08 |
-| CMP-09 | Référentiel des métadonnées d'exploitation (ART-4) | PRC-07, PRC-08, ABB-GESTION-CONSENTEMENT, ART-4, ENF-4, CAP-09, VS-03 | active | CMP-09 |
-| CMP-10 | Registre des terminologies | PRC-07, PRC-08, ABB-SERVICE-TERMINOLOGIE, ART-4, ENF-4, CAP-09, VS-03 | active | CMP-10 |
-| CMP-11 | Registre des clients / Index National des Patients (INP — ART-4A) | PRC-04, PRC-05, PRC-06, ABB-IDENTITE-BENEFICIAIRE, ART-4A, ENF-3, CAP-09, VS-02 | active | CMP-11 |
-| CMP-12 | Registre d'éligibilité et de couverture (CSU — ART-4C) | PRC-09, PRC-10, ABB-ELIGIBILITE-COUVERTURE, ART-4C, CAP-07, VS-03 | active | CMP-12 |
-| CMP-13 | Registre des personnels | PRC-04, PRC-05, ABB-GESTION-CONSENTEMENT, ART-4, ENF-3, CAP-09, VS-02 | active | CMP-13 |
-| CMP-14 | Registre des produits, intrants et indicateurs | PRC-05, PRC-06, ABB-SERVICE-TERMINOLOGIE, ABB-ECHANGE-LOGISTIQUE-LMIS, ART-4, ENF-3, CAP-09, VS-02 | active | CMP-14 |
+| CMP-08 | Répertoire de données cliniques opérationnelles | PRC-04, PRC-05, ABB-GESTION-CONSENTEMENT, ART-4, ENF-3, CAP-09, VS-02, DO-03, DO-04, DO-05 | active | CMP-08 |
+| CMP-09 | Référentiel des métadonnées d'exploitation (ART-4) | PRC-07, PRC-08, ABB-GESTION-CONSENTEMENT, ART-4, ENF-4, CAP-09, VS-03, TERM-SNOMED-CT, TERM-RXNORM, TERM-ATC, TERM-DCI, TERM-CIM-11, TERM-LOINC, TERM-CODIFICATION-COMMUNE | active | CMP-09 |
+| CMP-10 | Registre des terminologies | PRC-07, PRC-08, ABB-SERVICE-TERMINOLOGIE, ART-4, ENF-4, CAP-09, VS-03, TERM-SNOMED-CT, TERM-RXNORM, TERM-ATC, TERM-DCI, TERM-CIM-11, TERM-LOINC, TERM-CODIFICATION-COMMUNE | active | CMP-10 |
+| CMP-11 | Registre des clients / Index National des Patients (INP — ART-4A) | PRC-04, PRC-05, PRC-06, ABB-IDENTITE-BENEFICIAIRE, ART-4A, ENF-3, CAP-09, VS-02, DO-01, DO-02 | active | CMP-11 |
+| CMP-12 | Registre d'éligibilité et de couverture (CSU — ART-4C) | PRC-09, PRC-10, ABB-ELIGIBILITE-COUVERTURE, ART-4C, CAP-07, VS-03, DO-14, DO-15, DO-16, DO-17 | active | CMP-12 |
+| CMP-13 | Registre des personnels | PRC-04, PRC-05, ABB-GESTION-CONSENTEMENT, ART-4, ENF-3, CAP-09, VS-02, DO-23, DO-24 | active | CMP-13 |
+| CMP-14 | Registre des produits, intrants et indicateurs | PRC-05, PRC-06, ABB-SERVICE-TERMINOLOGIE, ABB-ECHANGE-LOGISTIQUE-LMIS, ART-4, ENF-3, CAP-09, VS-02, DO-11, DO-25 | active | CMP-14 |
 | CMP-15 | API Gateway | PRC-04, PRC-05, PRC-06, PRC-13, ABB-AUDIT-PROVENANCE, ART-5, ENF-3, CAP-10, VS-02 | active | CMP-15 |
 | CMP-16 | Registre de schémas (F.3) | PRC-07, PRC-08, ABB-AUDIT-PROVENANCE, ART-5, ENF-4, CAP-10, VS-03 | active | CMP-16 |
 | CMP-17 | Message broker asynchrone | PRC-04, PRC-05, PRC-06, ABB-AUDIT-PROVENANCE, ART-5, ENF-3, CAP-10, VS-02 | active | CMP-17 |
 | CMP-18 | Compensateur / Regroupeur de flux (Netting — ART-8C) | PRC-04, PRC-05, PRC-06, ABB-AUDIT-PROVENANCE, ART-8C, ENF-3, CAP-10, VS-02 | active | CMP-18 |
-| CMP-19 | Dossiers & statistiques de sante (hopitaux) | PRC-01, PRC-02, PRC-03, PRC-06, ABB-GESTION-CONSENTEMENT, ENF-1, F-1, VS-01, VS-04 | active | CMP-19 |
-| CMP-20 | Gestion des pharmacies (PMIS) | PRC-02, PRC-05, ABB-GESTION-CONSENTEMENT, ENF-1, F-1, VS-01, VS-04 | active | CMP-20 |
-| CMP-21 | Sante communautaire mobile (offline) | PRC-01, PRC-02, PRC-03, ABB-GESTION-CONSENTEMENT, ENF-1, F-1, VS-01, VS-02 | active | CMP-21 |
-| CMP-22 | Espace sante patient | PRC-01, PRC-07, PRC-08, ABB-CONFIANCE-AUTORISATION, ENF-1, F-1, VS-01, VS-03 | active | CMP-22 |
-| CMP-23 | Chaine logistique (LMIS) | PRC-05, PRC-10, ABB-ECHANGE-LOGISTIQUE-LMIS, ART-10, ENF-1, F-1, ABB-AUDIT-PROVENANCE, CAP-10, VS-01 | active | CMP-23 |
-| CMP-24 | Surveillance de la sante animale (zoonoses) | PRC-04, PRC-05, PART-ONE-HEALTH, ENF-1, F-1, VS-02, VS-04 | active | CMP-24 |
-| CMP-25 | Enquetes & capteurs terrain | PRC-04, PRC-05, PRC-11, ABB-GESTION-CONSENTEMENT, ENF-1, F-1, VS-02, VS-04 | active | CMP-25 |
+| CMP-19 | Dossiers & statistiques de sante (hopitaux) | PRC-01, PRC-02, PRC-03, PRC-06, ABB-GESTION-CONSENTEMENT, ENF-1, F-1, VS-01, VS-04, DO-03, DO-04, DO-05, DO-06, DO-07, DO-08, DO-09, DO-10, DO-25 | active | CMP-19 |
+| CMP-20 | Gestion des pharmacies (PMIS) | PRC-02, PRC-05, ABB-GESTION-CONSENTEMENT, ENF-1, F-1, VS-01, VS-04, DO-10, DO-11, DO-12, DO-13, DO-16 | active | CMP-20 |
+| CMP-21 | Sante communautaire mobile (offline) | PRC-01, PRC-02, PRC-03, ABB-GESTION-CONSENTEMENT, ENF-1, F-1, VS-01, VS-02, DO-01, DO-05, DO-07 | active | CMP-21 |
+| CMP-22 | Espace sante patient | PRC-01, PRC-07, PRC-08, ABB-CONFIANCE-AUTORISATION, ENF-1, F-1, VS-01, VS-03, DO-01, DO-03, DO-04, DO-14, DO-15, DO-16 | active | CMP-22 |
+| CMP-23 | Chaine logistique (LMIS) | PRC-05, PRC-10, ABB-ECHANGE-LOGISTIQUE-LMIS, ART-10, ENF-1, F-1, ABB-AUDIT-PROVENANCE, CAP-10, VS-01, DO-11, DO-12, DO-13, DO-25 | active | CMP-23 |
+| CMP-24 | Surveillance de la sante animale (zoonoses) | PRC-04, PRC-05, PART-ONE-HEALTH, ENF-1, F-1, VS-02, VS-04, DO-18, DO-19, DO-21 | active | CMP-24 |
+| CMP-25 | Enquetes & capteurs terrain | PRC-04, PRC-05, PRC-11, ABB-GESTION-CONSENTEMENT, ENF-1, F-1, VS-02, VS-04, DO-21, DO-25, DO-26 | active | CMP-25 |
 | CMP-26 | Noeud central (datacenters nationaux HDS) | ART-7, VS-04 | active | CMP-26 |
 | CMP-27 | Noeuds regionaux (clusters de district : Fog) | ART-7, VS-04 | active | CMP-27 |
 | CMP-28 | Noeuds locaux (equipements chiffres : Edge) | ART-7, VS-04 | active | CMP-28 |
@@ -154,14 +154,14 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | DO-02 | DO-02 : Identifiant national d'identification | ART-2, ART-4, ART-7, BO-01 | draft | DO-02 |
 | DO-03 | DO-03 : Dossier patient | ART-2, ART-4, ART-7, BO-01 | draft | DO-03 |
 | DO-04 | DO-04 : Épisode de soins | ART-2, ART-4, ART-7, BO-01 | draft | DO-04 |
-| DO-05 | DO-05 : Consultation | ART-2, ART-3, BO-02 | draft | DO-05 |
-| DO-06 | DO-06 : Prescription | ART-2, ART-3, BO-02 | draft | DO-06 |
+| DO-05 | DO-05 : Consultation | ART-2, ART-3, BO-02, TERM-CIM-11 | draft | DO-05 |
+| DO-06 | DO-06 : Prescription | ART-2, ART-3, BO-02, TERM-SNOMED-CT, TERM-RXNORM, TERM-ATC, TERM-DCI | draft | DO-06 |
 | DO-07 | DO-07 : Référence | ART-2, ART-3, BO-02 | draft | DO-07 |
 | DO-08 | DO-08 : Contre-référence | ART-2, ART-3, BO-02 | draft | DO-08 |
 | DO-09 | DO-09 : Évacuation sanitaire | ART-2, ART-3, BO-02 | draft | DO-09 |
-| DO-10 | DO-10 : Dispensation | ART-2, ART-4, ART-9, BO-03 | draft | DO-10 |
-| DO-11 | DO-11 : Produit de santé | ART-2, ART-4, ART-9, BO-03 | draft | DO-11 |
-| DO-12 | DO-12 : Lot | ART-2, ART-4, ART-9, BO-03 | draft | DO-12 |
+| DO-10 | DO-10 : Dispensation | ART-2, ART-4, ART-9, BO-03, TERM-SNOMED-CT, TERM-RXNORM, TERM-ATC, TERM-DCI | draft | DO-10 |
+| DO-11 | DO-11 : Produit de santé | ART-2, ART-4, ART-9, BO-03, TERM-SNOMED-CT, TERM-RXNORM, TERM-ATC, TERM-DCI | draft | DO-11 |
+| DO-12 | DO-12 : Lot | ART-2, ART-4, ART-9, BO-03, TERM-DCI | draft | DO-12 |
 | DO-13 | DO-13 : Stock | ART-2, ART-4, ART-9, BO-03 | draft | DO-13 |
 | DO-14 | DO-14 : Éligibilité | ART-2, ART-4, ART-9, BO-04, ABB-ELIGIBILITE-COUVERTURE | draft | DO-14 |
 | DO-15 | DO-15 : Couverture sanitaire | ART-2, ART-4, ART-9, BO-04, ABB-ELIGIBILITE-COUVERTURE | draft | DO-15 |
@@ -169,7 +169,7 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | DO-17 | DO-17 : Vérification d'éligibilité | ART-2, ART-4, ART-9, BO-04, ABB-ELIGIBILITE-COUVERTURE | draft | DO-17 |
 | DO-18 | DO-18 : Signal | ART-2, ART-3, BO-05 | draft | DO-18 |
 | DO-19 | DO-19 : Foyer | ART-2, ART-3, BO-05 | draft | DO-19 |
-| DO-20 | DO-20 : Investigation | ART-2, ART-3, BO-05 | draft | DO-20 |
+| DO-20 | DO-20 : Investigation | ART-2, ART-3, BO-05, TERM-LOINC | draft | DO-20 |
 | DO-21 | DO-21 : Notification sanitaire | ART-2, ART-3, BO-05 | draft | DO-21 |
 | DO-22 | DO-22 : Alerte sanitaire | ART-2, ART-3, BO-05 | draft | DO-22 |
 | DO-23 | DO-23 : Formation sanitaire | ART-2, ART-4, BO-06 | draft | DO-23 |
@@ -289,11 +289,11 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | PP-08 | Partenaires techniques et financiers | VS-02, VS-04 | draft | PP-08 |
 | PP-09 | Décideurs institutionnels | VS-04 | draft | PP-09 |
 | PP-10 | Équipes techniques (DEPSI / SIS) | VS-04 | draft | PP-10 |
-| PRC-01 | Accès, orientation et admission du patient | CAP-01, CAP-02, CAP-04, CAP-11, CAP-13, CAP-14, CAP-15, VS-01-01, VS-01-02, VS-01, BO-01, DO-01, DO-03, DO-04, DO-05, CMP-19, CMP-21, CMP-22 | active | PRC-01 |
-| PRC-02 | Prestation des soins cliniques | CAP-01, CAP-03, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, VS-01-03, VS-01-04, VS-01-05, VS-01, BO-02, BO-03, DO-05, DO-06, DO-07, DO-08, DO-10, CMP-19, CMP-20, CMP-21 | active | PRC-02 |
-| PRC-03 | Continuité, suivi et qualité des soins | CAP-02, CAP-03, CAP-04, CAP-13, CAP-14, CAP-15, VS-01-06, VS-01-07, VS-01, BO-02, DO-03, DO-05, DO-10, CMP-19, CMP-21 | active | PRC-03 |
+| PRC-01 | Accès, orientation et admission du patient | CAP-01, CAP-02, CAP-04, CAP-11, CAP-13, CAP-14, CAP-15, VS-01-01, VS-01-02, VS-01, BO-01, DO-01, DO-03, DO-04, DO-05, DO-23, CMP-19, CMP-21, CMP-22 | active | PRC-01 |
+| PRC-02 | Prestation des soins cliniques | CAP-01, CAP-03, CAP-09, CAP-10, CAP-11, CAP-13, CAP-14, CAP-15, VS-01-03, VS-01-04, VS-01-05, VS-01, BO-02, BO-03, DO-05, DO-06, DO-07, DO-08, DO-09, DO-10, DO-11, DO-12, CMP-19, CMP-20, CMP-21 | active | PRC-02 |
+| PRC-03 | Continuité, suivi et qualité des soins | CAP-02, CAP-03, CAP-04, CAP-13, CAP-14, CAP-15, VS-01-06, VS-01-07, VS-01, BO-02, DO-03, DO-05, DO-10, DO-24, CMP-19, CMP-21 | active | PRC-03 |
 | PRC-04 | Veille, prévention et surveillance sanitaire | CAP-04, CAP-05, CAP-06, CAP-13, CAP-14, CAP-15, CAP-17, VS-02-01, VS-02-02, VS-02, BO-05, DO-18, DO-19, DO-21, DO-25, DO-26, CMP-07, CMP-08, CMP-11, CMP-13, CMP-15, CMP-17, CMP-18, CMP-24, CMP-25 | active | PRC-04 |
-| PRC-05 | Alerte, investigation et riposte | CAP-04, CAP-05, CAP-13, CAP-14, CAP-15, CAP-17, CAP-18, VS-02-03, VS-02-04, VS-02-05, VS-02, BO-05, DO-18, DO-19, DO-20, DO-21, DO-22, CMP-02, CMP-04, CMP-07, CMP-08, CMP-11, CMP-13, CMP-14, CMP-15, CMP-17, CMP-18, CMP-20, CMP-23, CMP-24, CMP-25 | active | PRC-05 |
+| PRC-05 | Alerte, investigation et riposte | CAP-04, CAP-05, CAP-13, CAP-14, CAP-15, CAP-17, CAP-18, VS-02-03, VS-02-04, VS-02-05, VS-02, BO-05, DO-13, DO-18, DO-19, DO-20, DO-21, DO-22, CMP-02, CMP-04, CMP-07, CMP-08, CMP-11, CMP-13, CMP-14, CMP-15, CMP-17, CMP-18, CMP-20, CMP-23, CMP-24, CMP-25 | active | PRC-05 |
 | PRC-06 | Clôture et capitalisation des épisodes | CAP-03, CAP-13, CAP-14, CAP-15, VS-02-06, VS-02-07, VS-02, BO-01, DO-01, DO-04, DO-25, CMP-07, CMP-11, CMP-14, CMP-15, CMP-17, CMP-18, CMP-19 | active | PRC-06 |
 | PRC-07 | Identification et droits des bénéficiaires | CAP-07, CAP-08, CAP-13, CAP-14, CAP-15, CAP-17, VS-03-01, VS-03-02, VS-03, BO-01, DO-01, DO-02, DO-14, DO-15, CMP-09, CMP-10, CMP-16, CMP-22 | active | PRC-07 |
 | PRC-08 | Financement et exemption au point de service | CAP-07, CAP-08, CAP-12, CAP-13, CAP-15, CAP-16, VS-03-03, VS-03-04, VS-03, BO-04, DO-14, DO-15, DO-16, CMP-09, CMP-10, CMP-16, CMP-22 | active | PRC-08 |
@@ -350,7 +350,13 @@ Cette vue donne une lecture transversale du dépôt d'architecture selon les pha
 | SRV-04 | Service d'échange inter-systèmes | ABB-ECHANGE-MEDIATION, ART-1, ART-2, ART-7, PP-10, DO-03, CMP-06 | draft | SRV-04 |
 | SRV-05 | Service logistique (LMIS) | ABB-ECHANGE-LOGISTIQUE-LMIS, ART-10, PP-06, ABB-AUDIT-PROVENANCE, DO-11, DO-12, DO-13, CMP-23 | draft | SRV-05 |
 | SRV-06 | Service de pilotage et tableaux de bord | ABB-EXPOSITION-DONNEES-ANALYTIQUES, ART-3, ART-6, PP-07, CAP-03, DO-25, DO-28, CMP-03, CMP-04 | draft | SRV-06 |
+| TERM-ATC | TERM-ATC : Classification pharmacologique ATC de l'OMS | CAP-13, CAP-14, ART-2, ART-4, TERM-DCI, TERM-CODIFICATION-COMMUNE, CMP-10, DO-06, DO-10, DO-11 | candidate | TERM-ATC |
+| TERM-CIM-11 | TERM-CIM-11 : Classification internationale des maladies | CAP-13, CAP-14, ART-2, ART-4, TERM-CODIFICATION-COMMUNE, CMP-09, CMP-10, STD-0006, DO-05 | candidate | TERM-CIM-11 |
 | TERM-CODIFICATION-COMMUNE | Terminologie et codification communes | CAP-13, CAP-14, ART-2, ART-4, ART-5, ABB-SERVICE-TERMINOLOGIE, STD-0007 | candidate | TERM-CODIFICATION-COMMUNE |
+| TERM-DCI | TERM-DCI : Dénomination commune internationale | CAP-13, CAP-14, ART-2, ART-4, TERM-SNOMED-CT, TERM-RXNORM, TERM-CODIFICATION-COMMUNE, CMP-10, DO-06, DO-10, DO-11, DO-12 | candidate | TERM-DCI |
+| TERM-LOINC | TERM-LOINC : Terminologie des observations de laboratoire | CAP-13, CAP-14, ART-2, ART-4, TERM-CIM-11, TERM-CODIFICATION-COMMUNE, CMP-09, CMP-10, STD-0006, DO-20 | candidate | TERM-LOINC |
+| TERM-RXNORM | TERM-RXNORM : Terminologie des médicaments RxNorm | CAP-13, CAP-14, ART-2, ART-4, TERM-SNOMED-CT, TERM-CODIFICATION-COMMUNE, CMP-10, STD-0007, DO-06, DO-10, DO-11 | candidate | TERM-RXNORM |
+| TERM-SNOMED-CT | TERM-SNOMED-CT : Terminologie clinique SNOMED CT | CAP-13, CAP-14, ART-2, ART-4, TERM-CODIFICATION-COMMUNE, TERM-RXNORM, CMP-09, CMP-10, STD-0007, DO-06, DO-10, DO-11 | candidate | TERM-SNOMED-CT |
 | VAL-01 | Soins accessibles, continus, sûrs et de qualité | — | active | VAL-01 |
 | VAL-02 | Protection contre les maladies, épidémies et urgences sanitaires | — | active | VAL-02 |
 | VAL-03 | Protection financière contre les dépenses de santé | — | active | VAL-03 |

@@ -12,6 +12,7 @@ envelope: 02_artsn/05_cartographie/composants.md
 maps_to: ["ABB-AUDIT-PROVENANCE"]
 implements: ["ART-5"]
 applies_to: ["PRC-07", "PRC-08"]
+accesses: []
 related: ["ENF-4", "CAP-10", "VS-03"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-16", "couche-3"]
 ---
@@ -23,4 +24,5 @@ tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-16", "couche-3"]
 
 - **Rattachement** : [ART-5](../../../04_patterns/artsn-rules/art-5.md) (routeur d'escalade), [ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité](../abb-audit-provenance.md).
 - **Processus soutenus** : [PRC-07: Identification et droits des bénéficiaires](../../../02_architecture-elements/business/processes/prc-07.md) (production données), [PRC-08: Financement et exemption au point de service](../../../02_architecture-elements/business/processes/prc-08.md) (qualité).
+- **Données portées** : aucune. Composant transversal : definition et validation des contrats d'echange. Le rattachement aux données est porté par les composants qui lui confient les flux.
 - **Statut : Stable.**

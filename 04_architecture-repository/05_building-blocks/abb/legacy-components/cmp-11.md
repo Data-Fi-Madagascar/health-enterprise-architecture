@@ -12,6 +12,7 @@ envelope: 02_artsn/05_cartographie/composants.md
 maps_to: ["ABB-IDENTITE-BENEFICIAIRE"]
 implements: ["ART-4A"]
 applies_to: ["PRC-04", "PRC-05", "PRC-06"]
+accesses: ["DO-01", "DO-02"]
 related: ["ENF-3", "CAP-09", "VS-02"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-11", "couche-4"]
 realized_by: ["WP-03"]
@@ -24,4 +25,5 @@ realized_by: ["WP-03"]
 
 - **Rattachement** : [ART-4A](../../../04_patterns/artsn-rules/art-4a.md) (INP), [ABB-IDENTITE-BENEFICIAIRE: Résolution d'identité du bénéficiaire](../abb-identite-beneficiaire.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../../02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../../02_architecture-elements/business/processes/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../../02_architecture-elements/business/processes/prc-06.md) (logistique).
+- **Données portées** : [DO-01 : Patient](../../../02_architecture-elements/data/data-objects/do-01.md), [DO-02 : Identifiant national d'identification](../../../02_architecture-elements/data/data-objects/do-02.md)
 - **Statut : Stable.**

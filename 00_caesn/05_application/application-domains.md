@@ -56,6 +56,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 
 - **Rattachement** : [ART-6](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md) (projections analytiques), [ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md), [ABB-RECONCILIATION-DONNEES: Qualité et réconciliation](../../04_architecture-repository/05_building-blocks/abb/abb-reconciliation-donnees.md).
 - **Processus soutenus** : [PRC-10: Planification et allocation des ressources](../../04_architecture-repository/02_architecture-elements/business/processes/prc-10.md) (planification), [PRC-11: Suivi et pilotage de la performance](../../04_architecture-repository/02_architecture-elements/business/processes/prc-11.md) (pilotage performance), [PRC-12: Redevabilité et amélioration continue](../../04_architecture-repository/02_architecture-elements/business/processes/prc-12.md) (redevabilité).
+- **Données portées** : [DO-25 : Indicateur sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-25.md), [DO-26 : Zone sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-26.md), [DO-27 : Tâche](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-27.md), [DO-28 : Tableau de bord](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-28.md)
 - **Statut : Stable.**
 
 ### Centre de commande & Crises intersectorielles
@@ -66,6 +67,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 
 - **Rattachement** : [ART-5](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md) (routeur alertes), [ART-0](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md) (accords partage), [ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md).
 - **Processus soutenus** : [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (alerte/investigation/riposte), [PRC-11: Suivi et pilotage de la performance](../../04_architecture-repository/02_architecture-elements/business/processes/prc-11.md) (pilotage performance).
+- **Données portées** : [DO-18 : Signal](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-18.md), [DO-19 : Foyer](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-19.md), [DO-20 : Investigation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-20.md), [DO-21 : Notification sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-21.md), [DO-22 : Alerte sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-22.md), [DO-25 : Indicateur sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-25.md), [DO-28 : Tableau de bord](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-28.md)
 - **Statut : Stable.**
 
 ### Entrepôt Lakehouse & Projections analytiques
@@ -76,6 +78,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 
 - **Rattachement** : [ART-6](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md) (CQRS), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md) (Grand Livre), [ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md), [ABB-RECONCILIATION-DONNEES: Qualité et réconciliation](../../04_architecture-repository/05_building-blocks/abb/abb-reconciliation-donnees.md).
 - **Processus soutenus** : [PRC-09: Remboursement et régulation des mécanismes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-09.md) (remboursement), [PRC-11: Suivi et pilotage de la performance](../../04_architecture-repository/02_architecture-elements/business/processes/prc-11.md) (pilotage).
+- **Données portées** : [DO-16 : Facturation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-16.md), [DO-17 : Vérification d'éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-17.md), [DO-25 : Indicateur sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-25.md), [DO-28 : Tableau de bord](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-28.md)
 - **Statut : Stable.**
 
 ### Moteur analytique & IA
@@ -86,6 +89,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 
 - **Rattachement** : [ART-5](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md) (alertes), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md) (Grand Livre), [ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md), [ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md).
 - **Processus soutenus** : [PRC-09: Remboursement et régulation des mécanismes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-09.md) (remboursement), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (alerte/riposte).
+- **Données portées** : [DO-16 : Facturation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-16.md), [DO-17 : Vérification d'éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-17.md), [DO-18 : Signal](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-18.md), [DO-19 : Foyer](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-19.md), [DO-20 : Investigation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-20.md), [DO-21 : Notification sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-21.md), [DO-22 : Alerte sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-22.md)
 - **Statut : Stable.**
 
 ### Moteur de graphes & Référentiel spatio-temporel
@@ -95,6 +99,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 **Discipline de mise en œuvre.** Il garantit la cohérence topologique du graphe national et la résilience spatiale ([ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)](../../04_architecture-repository/03_requirements/enf-4.md)). Toute requête de navigation relationnelle passe par ce composant.
 
 - **Rattachement** : [ART-8B](../../04_architecture-repository/04_patterns/artsn-rules/art-8b.md) (graphe), [ART-4D](../../04_architecture-repository/04_patterns/artsn-rules/art-4d.md) (spatio-temporel), [ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md), [COMP-HOMOLOGATION-INTEROPERABILITE: Conformité et tests d’interopérabilité](../../04_architecture-repository/06_governance/compliance/comp-homologation-interoperabilite.md).
+- **Données portées** : [DO-01 : Patient](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-01.md), [DO-11 : Produit de santé](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-11.md), [DO-23 : Formation sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-23.md), [DO-24 : Agent de santé](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-24.md), [DO-26 : Zone sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-26.md)
 - **Statut : Stable.**
 
 ### Intégration, Médiation, API Gateway, Broker & Registre schémas
@@ -104,6 +109,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 **Discipline de mise en œuvre.** Il forme la bordure de la plateforme ; tout flux entrant ou sortant le traverse. Il garantit l'éradication des silos (F.3) et la conformité aux contrats ([ENF-1: Résilience à l'instabilité réseau](../../04_architecture-repository/03_requirements/enf-1.md), [ENF-3: Unicité de l'identité et résilience face à la fragmentation applicative](../../04_architecture-repository/03_requirements/enf-3.md)).
 
 - **Rattachement** : [ART-1](../../04_architecture-repository/04_patterns/artsn-rules/art-1.md) (ingestion), [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md) (médiation), [F.3](../../04_architecture-repository/04_patterns/foundations/f-3.md) (schémas), [ABB-IDENTITE-BENEFICIAIRE: Résolution d’identité du bénéficiaire](../../04_architecture-repository/05_building-blocks/abb/abb-identite-beneficiaire.md), [ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
+- **Données portées** : [DO-29 : Résumé international du patient (IPS)](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-29.md), [DO-30 : Section du résumé patient](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-30.md), [DO-31 : Confiance internationale](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-31.md)
 - **Statut : Stable.**
 
 ### Orchestrateur de parcours & Gestionnaire de Sagas (ART-8A)
@@ -114,6 +120,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 
 - **Rattachement** : [ART-8A](../../04_architecture-repository/04_patterns/artsn-rules/art-8a.md) (orchestrateur de parcours), [ABB-CONFIANCE-AUTORISATION: Confiance, sécurité et autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-confiance-autorisation.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../04_architecture-repository/02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-06.md) (logistique).
+- **Données portées** : aucune. Composant transversal : orchestration et compensation des transactions distribuees. Le rattachement aux données est porté par les composants qui lui confient les flux.
 - **Statut : Stable.**
 
 ### Répertoire de données cliniques opérationnelles
@@ -124,6 +131,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 
 - **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../04_architecture-repository/02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie).
+- **Données portées** : [DO-03 : Dossier patient](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-03.md), [DO-04 : Épisode de soins](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-04.md), [DO-05 : Consultation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-05.md)
 - **Statut : Stable.**
 
 ### Référentiel des métadonnées d'exploitation ([ART-4: Référentiels de métadonnées de gestion](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md))
@@ -134,6 +142,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 
 - **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md).
 - **Processus soutenus** : [PRC-07: Identification et droits des bénéficiaires](../../04_architecture-repository/02_architecture-elements/business/processes/prc-07.md) (production données), [PRC-08: Financement et exemption au point de service](../../04_architecture-repository/02_architecture-elements/business/processes/prc-08.md) (qualité).
+- **Données portées** : [TERM-SNOMED-CT : Terminologie clinique SNOMED CT](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-snomed-ct.md), [TERM-RXNORM : Terminologie des médicaments RxNorm](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-rxnorm.md), [TERM-ATC : Classification pharmacologique ATC de l'OMS](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-atc.md), [TERM-DCI : Dénomination commune internationale](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-dci.md), [TERM-CIM-11 : Classification internationale des maladies](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-cim-11.md), [TERM-CODIFICATION-COMMUNE : Terminologie et codification communes](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-codification-commune.md)
 - **Statut : Stable.**
 
 ### Registre des terminologies
@@ -144,6 +153,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 
 - **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-SERVICE-TERMINOLOGIE: Service de terminologie et codification communes](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md).
 - **Processus soutenus** : [PRC-07: Identification et droits des bénéficiaires](../../04_architecture-repository/02_architecture-elements/business/processes/prc-07.md) (production données), [PRC-08: Financement et exemption au point de service](../../04_architecture-repository/02_architecture-elements/business/processes/prc-08.md) (qualité).
+- **Données portées** : [TERM-SNOMED-CT : Terminologie clinique SNOMED CT](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-snomed-ct.md), [TERM-RXNORM : Terminologie des médicaments RxNorm](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-rxnorm.md), [TERM-ATC : Classification pharmacologique ATC de l'OMS](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-atc.md), [TERM-DCI : Dénomination commune internationale](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-dci.md), [TERM-CIM-11 : Classification internationale des maladies](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-cim-11.md), [TERM-CODIFICATION-COMMUNE : Terminologie et codification communes](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-codification-commune.md)
 - **Statut : Stable.**
 
 ### Registre des clients / Index National des Patients (INP — ART-4A)
@@ -154,6 +164,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 
 - **Rattachement** : [ART-4A](../../04_architecture-repository/04_patterns/artsn-rules/art-4a.md) (INP), [ABB-IDENTITE-BENEFICIAIRE: Résolution d'identité du bénéficiaire](../../04_architecture-repository/05_building-blocks/abb/abb-identite-beneficiaire.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../04_architecture-repository/02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-06.md) (logistique).
+- **Données portées** : [DO-01 : Patient](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-01.md), [DO-02 : Identifiant national d'identification](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-02.md)
 - **Statut : Stable.**
 
 <!-- END:GENERATED -->

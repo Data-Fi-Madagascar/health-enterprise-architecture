@@ -22,6 +22,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : ART-6 (projections analytiques), ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques, ABB-RECONCILIATION-DONNEES: Qualité et réconciliation.
 - **Processus soutenus** : PRC-10: Planification et allocation des ressources (planification), PRC-11: Suivi et pilotage de la performance (pilotage performance), PRC-12: Redevabilité et amélioration continue (redevabilité).
+- **Données portées** : DO-25 : Indicateur sanitaire, DO-26 : Zone sanitaire, DO-27 : Tâche, DO-28 : Tableau de bord
 - **Statut : Stable.**
 
 ### Centre de commande & Crises intersectorielles
@@ -32,6 +33,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : ART-5 (routeur alertes), ART-0 (accords partage), ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques.
 - **Processus soutenus** : PRC-05: Alerte, investigation et riposte (alerte/investigation/riposte), PRC-11: Suivi et pilotage de la performance (pilotage performance).
+- **Données portées** : DO-18 : Signal, DO-19 : Foyer, DO-20 : Investigation, DO-21 : Notification sanitaire, DO-22 : Alerte sanitaire, DO-25 : Indicateur sanitaire, DO-28 : Tableau de bord
 - **Statut : Stable.**
 
 ### Entrepôt Lakehouse & Projections analytiques
@@ -42,6 +44,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : ART-6 (CQRS), ART-9 (Grand Livre), ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques, ABB-RECONCILIATION-DONNEES: Qualité et réconciliation.
 - **Processus soutenus** : PRC-09: Remboursement et régulation des mécanismes (remboursement), PRC-11: Suivi et pilotage de la performance (pilotage).
+- **Données portées** : DO-16 : Facturation, DO-17 : Vérification d'éligibilité, DO-25 : Indicateur sanitaire, DO-28 : Tableau de bord
 - **Statut : Stable.**
 
 ### Moteur analytique & IA
@@ -52,6 +55,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : ART-5 (alertes), ART-9 (Grand Livre), ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques, ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité.
 - **Processus soutenus** : PRC-09: Remboursement et régulation des mécanismes (remboursement), PRC-05: Alerte, investigation et riposte (alerte/riposte).
+- **Données portées** : DO-16 : Facturation, DO-17 : Vérification d'éligibilité, DO-18 : Signal, DO-19 : Foyer, DO-20 : Investigation, DO-21 : Notification sanitaire, DO-22 : Alerte sanitaire
 - **Statut : Stable.**
 
 ### Moteur de graphes & Référentiel spatio-temporel
@@ -61,6 +65,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 **Discipline de mise en œuvre.** Il garantit la cohérence topologique du graphe national et la résilience spatiale (ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)). Toute requête de navigation relationnelle passe par ce composant.
 
 - **Rattachement** : ART-8B (graphe), ART-4D (spatio-temporel), ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes, COMP-HOMOLOGATION-INTEROPERABILITE: Conformité et tests d’interopérabilité.
+- **Données portées** : DO-01 : Patient, DO-11 : Produit de santé, DO-23 : Formation sanitaire, DO-24 : Agent de santé, DO-26 : Zone sanitaire
 - **Statut : Stable.**
 
 ### Intégration, Médiation, API Gateway, Broker & Registre schémas
@@ -70,6 +75,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 **Discipline de mise en œuvre.** Il forme la bordure de la plateforme ; tout flux entrant ou sortant le traverse. Il garantit l'éradication des silos (F.3) et la conformité aux contrats (ENF-1: Résilience à l'instabilité réseau, ENF-3: Unicité de l'identité et résilience face à la fragmentation applicative).
 
 - **Rattachement** : ART-1 (ingestion), ART-2 (médiation), F.3 (schémas), ABB-IDENTITE-BENEFICIAIRE: Résolution d’identité du bénéficiaire, ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes.
+- **Données portées** : DO-29 : Résumé international du patient (IPS), DO-30 : Section du résumé patient, DO-31 : Confiance internationale
 - **Statut : Stable.**
 
 ### Orchestrateur de parcours & Gestionnaire de Sagas (ART-8A)
@@ -80,6 +86,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : ART-8A (orchestrateur de parcours), ABB-CONFIANCE-AUTORISATION: Confiance, sécurité et autorisation.
 - **Processus soutenus** : PRC-04: Veille, prévention et surveillance sanitaire (soins), PRC-05: Alerte, investigation et riposte (pharmacie), PRC-06: Clôture et capitalisation des épisodes (logistique).
+- **Données portées** : aucune. Composant transversal : orchestration et compensation des transactions distribuees. Le rattachement aux données est porté par les composants qui lui confient les flux.
 - **Statut : Stable.**
 
 ### Répertoire de données cliniques opérationnelles
@@ -90,6 +97,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : ART-4 (référentiel des métadonnées), ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation.
 - **Processus soutenus** : PRC-04: Veille, prévention et surveillance sanitaire (soins), PRC-05: Alerte, investigation et riposte (pharmacie).
+- **Données portées** : DO-03 : Dossier patient, DO-04 : Épisode de soins, DO-05 : Consultation
 - **Statut : Stable.**
 
 ### Référentiel des métadonnées d'exploitation (ART-4: Référentiels de métadonnées de gestion)
@@ -100,6 +108,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : ART-4 (référentiel des métadonnées), ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation.
 - **Processus soutenus** : PRC-07: Identification et droits des bénéficiaires (production données), PRC-08: Financement et exemption au point de service (qualité).
+- **Données portées** : TERM-SNOMED-CT : Terminologie clinique SNOMED CT, TERM-RXNORM : Terminologie des médicaments RxNorm, TERM-ATC : Classification pharmacologique ATC de l'OMS, TERM-DCI : Dénomination commune internationale, TERM-CIM-11 : Classification internationale des maladies, TERM-CODIFICATION-COMMUNE : Terminologie et codification communes
 - **Statut : Stable.**
 
 ### Registre des terminologies
@@ -110,6 +119,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : ART-4 (référentiel des métadonnées), ABB-SERVICE-TERMINOLOGIE: Service de terminologie et codification communes.
 - **Processus soutenus** : PRC-07: Identification et droits des bénéficiaires (production données), PRC-08: Financement et exemption au point de service (qualité).
+- **Données portées** : TERM-SNOMED-CT : Terminologie clinique SNOMED CT, TERM-RXNORM : Terminologie des médicaments RxNorm, TERM-ATC : Classification pharmacologique ATC de l'OMS, TERM-DCI : Dénomination commune internationale, TERM-CIM-11 : Classification internationale des maladies, TERM-CODIFICATION-COMMUNE : Terminologie et codification communes
 - **Statut : Stable.**
 
 ### Registre des clients / Index National des Patients (INP — ART-4A)
@@ -120,6 +130,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : ART-4A (INP), ABB-IDENTITE-BENEFICIAIRE: Résolution d'identité du bénéficiaire.
 - **Processus soutenus** : PRC-04: Veille, prévention et surveillance sanitaire (soins), PRC-05: Alerte, investigation et riposte (pharmacie), PRC-06: Clôture et capitalisation des épisodes (logistique).
+- **Données portées** : DO-01 : Patient, DO-02 : Identifiant national d'identification
 - **Statut : Stable.**
 
 ### Registre d'éligibilité et de couverture (CSU — ART-4C)
@@ -130,6 +141,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : ART-4C (éligibilité/couverture), CAP-07: Protection financière, couverture santé universelle. CMP-12 réalise l'ABB-ELIGIBILITE-COUVERTURE ; ce bloc porte la responsabilité de vérification des droits, distincte de l'identité et du consentement.
 - **Processus soutenus** : PRC-09: Remboursement et régulation des mécanismes (finance), PRC-10: Planification et allocation des ressources (planification).
+- **Données portées** : DO-14 : Éligibilité, DO-15 : Couverture sanitaire, DO-16 : Facturation, DO-17 : Vérification d'éligibilité
 - **Statut : Stable.**
 
 ### Registre des personnels
@@ -140,6 +152,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : ART-4 (référentiel des métadonnées), ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation.
 - **Processus soutenus** : PRC-04: Veille, prévention et surveillance sanitaire (soins), PRC-05: Alerte, investigation et riposte (pharmacie).
+- **Données portées** : DO-23 : Formation sanitaire, DO-24 : Agent de santé
 - **Statut : Stable.**
 
 ### Registre des produits, intrants et indicateurs
@@ -150,6 +163,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : ART-4 (référentiel des métadonnées), ABB-SERVICE-TERMINOLOGIE: Service de terminologie et codification communes pour les nomenclatures, et ABB-ECHANGE-LOGISTIQUE-LMIS: Échange logistique LMIS pour le catalogue partagé des produits et intrants.
 - **Processus soutenus** : PRC-05: Alerte, investigation et riposte (pharmacie), PRC-06: Clôture et capitalisation des épisodes (logistique).
+- **Données portées** : DO-11 : Produit de santé, DO-25 : Indicateur sanitaire
 - **Statut : Stable.**
 
 ### API Gateway
@@ -160,6 +174,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : ART-5 (routeur d'escalade), ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité.
 - **Processus soutenus** : PRC-04: Veille, prévention et surveillance sanitaire (soins), PRC-05: Alerte, investigation et riposte (pharmacie), PRC-06: Clôture et capitalisation des épisodes (logistique).
+- **Données portées** : aucune. Composant transversal : point d'entree des requetes et routage des echanges. Le rattachement aux données est porté par les composants qui lui confient les flux.
 - **Statut : Stable.**
 
 ### Registre de schémas (F.3)
@@ -170,6 +185,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : ART-5 (routeur d'escalade), ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité.
 - **Processus soutenus** : PRC-07: Identification et droits des bénéficiaires (production données), PRC-08: Financement et exemption au point de service (qualité).
+- **Données portées** : aucune. Composant transversal : definition et validation des contrats d'echange. Le rattachement aux données est porté par les composants qui lui confient les flux.
 - **Statut : Stable.**
 
 ### Message broker asynchrone
@@ -180,6 +196,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : ART-5 (routeur d'escalade), ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité.
 - **Processus soutenus** : PRC-04: Veille, prévention et surveillance sanitaire (soins), PRC-05: Alerte, investigation et riposte (pharmacie), PRC-06: Clôture et capitalisation des épisodes (logistique).
+- **Données portées** : aucune. Composant transversal : acheminement asynchrone des messages. Le rattachement aux données est porté par les composants qui lui confient les flux.
 - **Statut : Stable.**
 
 ### Compensateur / Regroupeur de flux (Netting — ART-8C)
@@ -190,6 +207,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 
 - **Rattachement** : ART-8C (Netting), ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité.
 - **Processus soutenus** : PRC-04: Veille, prévention et surveillance sanitaire (soins), PRC-05: Alerte, investigation et riposte (pharmacie), PRC-06: Clôture et capitalisation des épisodes (logistique).
+- **Données portées** : aucune. Composant transversal : compensation et regroupement des flux. Le rattachement aux données est porté par les composants qui lui confient les flux.
 - **Statut : Stable.**
 
 ### CMP-19 : Dossiers & statistiques de sante (hopitaux)
@@ -197,6 +215,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 **Discipline de mise en oeuvre.** L'exhaustivite et l'exactitude des statistiques hospitalieres sont une discipline de premier ordre : tout episode de soin ouvert doit etre cloture et compte-rendu. Les donnees saisies restent reconciliables avec leur source clinique et horodatees. Le composant respecte les referentiels de terminologie (PT-07/CMP-07) et le format de messagerie HL7 FHIR pour l'echange avec le noeud regional (CMP-27).
 - **Rattachement** : ENF-1: Resilience a l'instabilite reseau, F-1: Resilience face a la realite geographique du pays.
 - **Processus soutenus** : PRC-01: Acces, orientation et admission du patient (acces et admission), PRC-02: Prestation des soins cliniques (prestation des soins), PRC-03: Continuite, suivi et qualite des soins (suivi et qualite), PRC-06: Cloture et capitalisation des episodes (cloture et capitalisation).
+- **Données portées** : DO-03 : Dossier patient, DO-04 : Épisode de soins, DO-05 : Consultation, DO-06 : Prescription, DO-07 : Référence, DO-08 : Contre-référence, DO-09 : Évacuation sanitaire, DO-10 : Dispensation, DO-25 : Indicateur sanitaire
 - **Statut : Brouillon.**
 
 ### CMP-20 : Gestion des pharmacies (PMIS)
@@ -204,6 +223,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 **Discipline de mise en oeuvre.** L'usage des referentiels de medicaments normalises (CMP-07) est obligatoire ; aucune denomination locale ne circule hors referentiel. Les mouvements de stock sont historises de facon immuable et les seuils de securite declares. La facturation au point de service respecte les regles d'exemption (PRC-08) lorsqu'elles s'appliquent.
 - **Rattachement** : ENF-1: Resilience a l'instabilite reseau, F-1: Resilience face a la realite geographique du pays.
 - **Processus soutenus** : PRC-02: Prestation des soins cliniques (dispensation aux soins), PRC-05: Alerte, investigation et riposte (pharmacovigilance et riposte).
+- **Données portées** : DO-10 : Dispensation, DO-11 : Produit de santé, DO-12 : Lot, DO-13 : Stock, DO-16 : Facturation
 - **Statut : Brouillon.**
 
 ### CMP-21 : Sante communautaire mobile (offline)
@@ -211,6 +231,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 **Discipline de mise en oeuvre.** La perte de connectivite ne doit entrainer aucune perte de donnee : une file d'attente locale chiffree conserve les ecritures en attente et la synchronisation differentielle se declenche au retour de couverture. Les terminaux sont authentifies et leurs donnees signees. Le composant reste conforme a l'exigence de resilience au reseau (ENF-1).
 - **Rattachement** : ENF-1: Resilience a l'instabilite reseau, F-1: Resilience face a la realite geographique du pays.
 - **Processus soutenus** : PRC-01: Acces, orientation et admission du patient (acces au beneficiaire), PRC-02: Prestation des soins cliniques (soins de proximite), PRC-03: Continuite, suivi et qualite des soins (suivi communautaire).
+- **Données portées** : DO-01 : Patient, DO-05 : Consultation, DO-07 : Référence
 - **Statut : Brouillon.**
 
 ### CMP-22 : Espace sante patient
@@ -218,6 +239,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 **Discipline de mise en oeuvre.** L'acces est strictement controle par authentification forte et consentement (CMP-34) ; aucune donnee a caractere personnel n'est exposee sans autorisation explicite. Les traces d'acces sont journalisees (CMP-37). Le portail ne detient pas les donnees sources : il les presente en lecture via les composants detenteurs, garantissant une source unique de verite.
 - **Rattachement** : ENF-1: Resilience a l'instabilite reseau, F-1: Resilience face a la realite geographique du pays.
 - **Processus soutenus** : PRC-01: Acces, orientation et admission du patient (acces aux services), PRC-07: Identification et droits des beneficiaires (identification et droits), PRC-08: Financement et exemption au point de service (financement et exemption).
+- **Données portées** : DO-01 : Patient, DO-03 : Dossier patient, DO-04 : Épisode de soins, DO-14 : Éligibilité, DO-15 : Couverture sanitaire, DO-16 : Facturation
 - **Statut : Brouillon.**
 
 ### CMP-23 : Chaine logistique (LMIS)
@@ -225,6 +247,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 **Discipline de mise en oeuvre.** La tracabilite de bout en bout est obligatoire (lot, periode de validite, lieu). Les seuils de securite sont parametres par type d'intrant et de structure. Les donnees d'activite issues des etablissements (CMP-19) alimentent la prevision. Tout mouvement est historise de facon immuable et reconcilie avec la comptabilite.
 - **Rattachement** : ABB-ECHANGE-LOGISTIQUE-LMIS: Echange logistique LMIS, ART-10: Logistique, ENF-1: Resilience a l'instabilite reseau, F-1: Resilience face a la realite geographique du pays. ABB-AUDIT-PROVENANCE encadre la tracabilite transverse, sans remplacer le bloc logistique principal.
 - **Processus soutenus** : PRC-05: Alerte, investigation et riposte (approvisionnement et riposte), PRC-10: Planification et allocation des ressources (planification des ressources).
+- **Données portées** : DO-11 : Produit de santé, DO-12 : Lot, DO-13 : Stock, DO-25 : Indicateur sanitaire
 - **Statut : Brouillon.**
 
 ### CMP-24 : Surveillance de la sante animale (zoonoses)
@@ -232,6 +255,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 **Discipline de mise en oeuvre.** L'interoperabilite avec la surveillance humaine est obligatoire : un meme evenement peut avoir une composante animale et humaine. Les signalements respectent les formats de messagerie d'alerte (ART-8) et sont horodates. Les donnees zoologiques et humaines sont cloisonnees par finalite et ne sont jointes qu'au sein des pipelines d'analyse autorises (CMP-03/CMP-04).
 - **Rattachement** : ENF-1: Resilience a l'instabilite reseau, F-1: Resilience face a la realite geographique du pays.
 - **Processus soutenus** : PRC-04: Veille, prevention et surveillance sanitaire (veille et prevention), PRC-05: Alerte, investigation et riposte (alerte et riposte).
+- **Données portées** : DO-18 : Signal, DO-19 : Foyer, DO-21 : Notification sanitaire
 - **Statut : Brouillon.**
 
 ### CMP-25 : Enquetes & capteurs terrain
@@ -239,6 +263,7 @@ Ce document agrege les monographies des composants reference par la cartographie
 **Discipline de mise en oeuvre.** La qualite et la provenance des donnees capteurs sont garanties (signature a la source, horodatage fiable). Les resultats sont reconcilies avant publication afin d'eviter les doubles comptes. Les protocoles d'enquete sont versionnes et tracables. Les flux exterieurs (partenaires, capteurs tiers) sont admis selon des accords references (CMP-39).
 - **Rattachement** : ENF-1: Resilience a l'instabilite reseau, F-1: Resilience face a la realite geographique du pays.
 - **Processus soutenus** : PRC-04: Veille, prevention et surveillance sanitaire (veille terrain), PRC-05: Alerte, investigation et riposte (alerte), PRC-11: Suivi et pilotage de la performance (pilotage de la performance).
+- **Données portées** : DO-21 : Notification sanitaire, DO-25 : Indicateur sanitaire, DO-26 : Zone sanitaire
 - **Statut : Brouillon.**
 
 <!-- END:GENERATED -->
