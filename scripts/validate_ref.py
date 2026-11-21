@@ -85,7 +85,8 @@ RELATION_KEYS = REACHABILITY_KEYS + [
                  "detenu_par", "soutient_flux_de_valeur",
                  "utilise_composant", "supporte_standard",
                  "a_pour_proprietaire_fonctionnel", "partitions", "between",
-                 "target_plateau", "addressed_by", "evidenced_by"]
+                 "target_plateau", "addressed_by", "evidenced_by",
+                 "uses", "constrained_by", "constrains"]
 GAP_METADATA_KEYS = ["gap_state", "closure_criteria"]
 
 # Îlots légitimes attendus (candidats non encore reliés) — ne font pas échouer.
@@ -103,6 +104,13 @@ TYPE_GAP = "gap"
 TYPE_PLATEAU = "plateau"
 TYPE_WORK_PACKAGE = "work-package"
 TYPE_EVIDENCE = "evidence"
+TYPE_OBJET_DONNEES = "objet-de-donnees"
+TYPE_OBJET_METIER = "objet-metier"
+TYPE_TERMINOLOGIE = "terminology"
+TYPE_COMPOSANT_TYPES = ("composant-applicatif", "composant-infrastructure",
+                        "composant-securite", "composant-gouvernance",
+                        "registre-gouvernance")
+ACCESSIBLE_TYPES = (TYPE_OBJET_DONNEES, TYPE_OBJET_METIER, TYPE_TERMINOLOGIE)
 GAP_STATES = {"identified", "planned", "in-remediation", "closed", "accepted-risk"}
 
 SCHEME_RE = re.compile(r"^[a-zA-Z][a-zA-Z0-9+.-]*://")
@@ -389,6 +397,169 @@ def check_partition_relation_types(objects):
                     target_id,
                     "La relation partitions doit cibler un objet de type "
                     "architecture-partition, pas %s" % target.get("type"),
+                ))
+    return errors
+
+
+def check_access_relation_types(objects):
+    """Vérifie que `accesses` ne cible que des objets ou des terminologies.
+
+    Le pont données de la chaîne à quatre couches relie un composant, un
+    service ou un processus à un objet de données, un objet métier ou une
+    terminologie. Toute autre cible rompt la chaîne.
+    """
+    errors = []
+    for oid, obj in sorted(objects.items()):
+        for target_id in sorted(obj.get("relations", {}).get("accesses", set())):
+            target = objects.get(target_id)
+            if target is None:
+                continue  # la cible non résolue est signalée par load_relation_graph
+            if target.get("type") not in ACCESSIBLE_TYPES:
+                errors.append((
+                    obj["file"],
+                    oid,
+                    target_id,
+                    "La relation accesses doit cibler un objet de données, un "
+                    "objet métier ou une terminologie, pas %s"
+                    % target.get("type"),
+                ))
+    return errors
+
+
+def check_semantic_relation_types(objects):
+    """Vérifie le pont sémantique : objets de données et terminologies.
+
+    `constrained_by` va de l'objet de données vers la terminologie qui régit
+    ses valeurs, `constrains` en est l'inverse côté terminologie.
+    """
+    errors = []
+    rules = (
+        ("constrained_by", TYPE_TERMINOLOGIE),
+        ("constrains", TYPE_OBJET_DONNEES),
+    )
+    for oid, obj in sorted(objects.items()):
+        for field, expected_type in rules:
+            for target_id in sorted(obj.get("relations", {}).get(field, set())):
+                target = objects.get(target_id)
+                if target is None:
+                    continue  # la cible non résolue est signalée par load_relation_graph
+                if target.get("type") != expected_type:
+                    errors.append((
+                        obj["file"],
+                        oid,
+                        target_id,
+                        "La relation %s doit cibler un objet de type %s, pas %s"
+                        % (field, expected_type, target.get("type")),
+                    ))
+    return errors
+
+
+def check_access_bidirectional(objects):
+    """Vérifie que `accesses` et `accessed_by` décrivent le même accès.
+
+    Les deux champs sont les deux sens d'une seule relation : un objet de
+    données accessible par un composant doit porter ce composant dans son
+    `accessed_by`, et réciproquement. Sans cette garantie, le pont données
+    devient impossible à relire depuis l'objet.
+    """
+    errors = []
+    for oid, obj in sorted(objects.items()):
+        relations = obj.get("relations", {})
+        for target_id in sorted(relations.get("accesses", set())):
+            target = objects.get(target_id)
+            if target is None:
+                continue
+            back = target.get("relations", {}).get("accessed_by", set())
+            if oid not in back:
+                errors.append((
+                    obj["file"],
+                    oid,
+                    target_id,
+                    "Accès déclaré sans l'inverse accessed_by sur %s" % target_id,
+                ))
+        for source_id in sorted(relations.get("accessed_by", set())):
+            source = objects.get(source_id)
+            if source is None:
+                continue
+            forward = source.get("relations", {}).get("accesses", set())
+            if oid not in forward:
+                errors.append((
+                    obj["file"],
+                    source_id,
+                    oid,
+                    "Accès inverse accessed_by sans la relation accesses "
+                    "correspondante sur %s" % source_id,
+                ))
+    return errors
+
+
+def check_chain_completeness(objects):
+    """Vérifie que la chaîne à quatre couches est bouclée.
+
+    Trois maillons doivent tenir pour que la chaîne soit relisible de bout en
+    bout : un objet de données doit être détenu par un composant applicatif,
+    un objet de données détenu par un composant doit être manipulé par un
+    processus métier, et une terminologie doit être portée par un composant
+    applicatif, faute de quoi la codification reste hors d'atteinte.
+    """
+    errors = []
+    composants = {oid for oid, obj in objects.items()
+                  if obj.get("type") in TYPE_COMPOSANT_TYPES}
+    processus = {oid for oid, obj in objects.items()
+                 if obj.get("type") == "processus-metier"}
+
+    def accessors(oid):
+        return objects[oid].get("relations", {}).get("accessed_by", set())
+
+    def holders(oid):
+        return objects[oid].get("relations", {}).get("accesses", set())
+
+    for oid, obj in sorted(objects.items()):
+        if obj.get("type") != TYPE_OBJET_DONNEES:
+            continue
+        if not accessors(oid) & composants:
+            errors.append((
+                obj["file"],
+                oid,
+                "",
+                "Objet de données non détenu par un composant applicatif",
+            ))
+        elif not accessors(oid) & processus:
+            errors.append((
+                obj["file"],
+                oid,
+                "",
+                "Objet de données détenu par un composant mais manipulé par "
+                "aucun processus métier",
+            ))
+
+    for oid, obj in sorted(objects.items()):
+        if obj.get("type") != TYPE_TERMINOLOGIE:
+            continue
+        if not accessors(oid) & composants:
+            errors.append((
+                obj["file"],
+                oid,
+                "",
+                "Terminologie non portée par un composant applicatif",
+            ))
+
+    # Un objet de données contraint doit l'être par une terminologie atteignable.
+    for oid, obj in sorted(objects.items()):
+        if obj.get("type") != TYPE_OBJET_DONNEES:
+            continue
+        for term_id in sorted(obj.get("relations", {}).get("constrained_by",
+                                                          set())):
+            term = objects.get(term_id)
+            if term is None:
+                continue
+            if not accessors(term_id) & composants:
+                errors.append((
+                    obj["file"],
+                    oid,
+                    term_id,
+                    "Terminologie contrainte sans composant applicatif qui la "
+                    "porte",
                 ))
     return errors
 
@@ -780,6 +951,56 @@ def main():
                      value_stream_id, message))
     else:
         print("[OK] Chaque flux déclaré par une partition partage une capabilité couverte.")
+
+    access_type_errors = check_access_relation_types(objects)
+    if access_type_errors:
+        ok = False
+        print("\n[ERREUR] Pont données : cibles de `accesses` invalides : %d"
+              % len(access_type_errors))
+        for f, source_id, target_id, message in access_type_errors[:50]:
+            print("  - %s (%s) -> %s : %s"
+                  % (os.path.relpath(f, REPO_ROOT), source_id, target_id, message))
+    else:
+        print("[OK] Toute relation accesses cible un objet de données, un objet métier ou une terminologie.")
+
+    semantic_type_errors = check_semantic_relation_types(objects)
+    if semantic_type_errors:
+        ok = False
+        print("\n[ERREUR] Pont sémantique : cibles invalides : %d"
+              % len(semantic_type_errors))
+        for f, source_id, target_id, message in semantic_type_errors[:50]:
+            print("  - %s (%s) -> %s : %s"
+                  % (os.path.relpath(f, REPO_ROOT), source_id, target_id, message))
+    else:
+        print("[OK] Le pont sémantique relie les objets de données aux terminologies.")
+
+    access_bidirectional_errors = check_access_bidirectional(objects)
+    if access_bidirectional_errors:
+        ok = False
+        print("\n[ERREUR] Pont données : accès sans inverse déclaré : %d"
+              % len(access_bidirectional_errors))
+        for f, source_id, target_id, message in access_bidirectional_errors[:50]:
+            print("  - %s (%s) -> %s : %s"
+                  % (os.path.relpath(f, REPO_ROOT), source_id, target_id, message))
+    else:
+        print("[OK] Les relations accesses et accessed_by sont symétriques.")
+
+    chain_errors = check_chain_completeness(objects)
+    if chain_errors:
+        ok = False
+        print("\n[ERREUR] Chaîne à quatre couches incomplète : %d"
+              % len(chain_errors))
+        for f, source_id, target_id, message in chain_errors[:50]:
+            if target_id:
+                print("  - %s (%s) -> %s : %s"
+                      % (os.path.relpath(f, REPO_ROOT), source_id, target_id,
+                         message))
+            else:
+                print("  - %s (%s) : %s"
+                      % (os.path.relpath(f, REPO_ROOT), source_id, message))
+    else:
+        print("[OK] La chaîne capability, processus, composant, données et "
+              "terminologie est bouclée.")
 
     gap_governance_errors = check_gap_governance(objects)
     if gap_governance_errors:

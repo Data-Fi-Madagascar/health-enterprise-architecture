@@ -54,31 +54,31 @@ Cette vue regroupe les patrons, fondations et blocs d'architecture réutilisable
 | ART-10 | Logistique | ENF-2, CAP-10, CAP-11 | candidate | ART-10 |
 | ART-11 | Coordination intersectorielle | ENF-4, CAP-08, CAP-18, PART-ONE-HEALTH, ART-0, ART-4D, ART-8B, ART-8D | stable | ART-11 |
 | ART-12 | Aide à la décision clinique | ART-6, CAP-13, CMP-08, ABB-SERVICE-TERMINOLOGIE, F-2 | draft | ART-12 |
-| CMP-01 | Tableaux de bord & Portails nationaux (performance, CSU, ressources, veille) | PRC-10, PRC-11, PRC-12, ABB-EXPOSITION-DONNEES-ANALYTIQUES, ABB-RECONCILIATION-DONNEES, ART-6, ENF-5, CAP-13, CAP-16, VS-04 | active | CMP-01 |
-| CMP-02 | Centre de commande & Crises intersectorielles (alertes, crises, veille) | PRC-05, PRC-11, PRC-13, ABB-EXPOSITION-DONNEES-ANALYTIQUES, ART-5, ART-0, ENF-2, CAP-05, CAP-06, VS-02, VS-04 | active | CMP-02 |
-| CMP-03 | Entrepôt Lakehouse & Projections analytiques (pipeline ETL, Lakehouse, projections) | PRC-09, PRC-11, ABB-EXPOSITION-DONNEES-ANALYTIQUES, ABB-RECONCILIATION-DONNEES, ART-6, ART-9, ENF-5, CAP-13, CAP-16, VS-04 | active | CMP-03 |
-| CMP-04 | Moteur analytique & IA (IA prédictive, routeur alertes, Grand Livre) | PRC-05, PRC-09, ABB-EXPOSITION-DONNEES-ANALYTIQUES, ABB-AUDIT-PROVENANCE, ART-5, ART-9, ENF-2, ENF-5, CAP-13, CAP-15, VS-02, VS-04 | active | CMP-04 |
-| CMP-05 | Moteur de graphes & Référentiel spatio-temporel (Graph Store, Spatio ART-4D) | ABB-ECHANGE-MEDIATION, COMP-HOMOLOGATION-INTEROPERABILITE, ART-8B, ART-4D, ENF-4, CAP-13, CAP-14, VS-04 | active | CMP-05 |
-| CMP-06 | Intégration, Médiation, API Gateway, Broker & Registre schémas | PRC-13, ABB-IDENTITE-BENEFICIAIRE, ABB-ECHANGE-MEDIATION, ART-1, ART-2, F-3, ENF-1, ENF-3, CAP-13, CAP-14, CAP-15, VS-01, VS-02, VS-03, VS-04 | active | CMP-06 |
+| CMP-01 | Tableaux de bord & Portails nationaux (performance, CSU, ressources, veille) | PRC-10, PRC-11, PRC-12, ABB-EXPOSITION-DONNEES-ANALYTIQUES, ABB-RECONCILIATION-DONNEES, ART-6, ENF-5, CAP-13, CAP-16, VS-04, DO-25, DO-26, DO-27, DO-28 | active | CMP-01 |
+| CMP-02 | Centre de commande & Crises intersectorielles (alertes, crises, veille) | PRC-05, PRC-11, PRC-13, ABB-EXPOSITION-DONNEES-ANALYTIQUES, ART-5, ART-0, ENF-2, CAP-05, CAP-06, VS-02, VS-04, DO-18, DO-19, DO-20, DO-21, DO-22, DO-25, DO-28 | active | CMP-02 |
+| CMP-03 | Entrepôt Lakehouse & Projections analytiques (pipeline ETL, Lakehouse, projections) | PRC-09, PRC-11, ABB-EXPOSITION-DONNEES-ANALYTIQUES, ABB-RECONCILIATION-DONNEES, ART-6, ART-9, ENF-5, CAP-13, CAP-16, VS-04, DO-16, DO-17, DO-25, DO-28 | active | CMP-03 |
+| CMP-04 | Moteur analytique & IA (IA prédictive, routeur alertes, Grand Livre) | PRC-05, PRC-09, ABB-EXPOSITION-DONNEES-ANALYTIQUES, ABB-AUDIT-PROVENANCE, ART-5, ART-9, ENF-2, ENF-5, CAP-13, CAP-15, VS-02, VS-04, DO-16, DO-17, DO-18, DO-19, DO-20, DO-21, DO-22 | active | CMP-04 |
+| CMP-05 | Moteur de graphes & Référentiel spatio-temporel (Graph Store, Spatio ART-4D) | ABB-ECHANGE-MEDIATION, COMP-HOMOLOGATION-INTEROPERABILITE, ART-8B, ART-4D, ENF-4, CAP-13, CAP-14, VS-04, DO-01, DO-11, DO-23, DO-24, DO-26 | active | CMP-05 |
+| CMP-06 | Intégration, Médiation, API Gateway, Broker & Registre schémas | PRC-13, ABB-IDENTITE-BENEFICIAIRE, ABB-ECHANGE-MEDIATION, ART-1, ART-2, F-3, ENF-1, ENF-3, CAP-13, CAP-14, CAP-15, VS-01, VS-02, VS-03, VS-04, DO-29, DO-30, DO-31 | active | CMP-06 |
 | CMP-07 | Orchestrateur de parcours & Gestionnaire de Sagas (ART-8A) | PRC-04, PRC-05, PRC-06, ABB-CONFIANCE-AUTORISATION, ART-8A, ENF-3, CAP-08, VS-02 | active | CMP-07 |
-| CMP-08 | Répertoire de données cliniques opérationnelles | PRC-04, PRC-05, ABB-GESTION-CONSENTEMENT, ART-4, ENF-3, CAP-09, VS-02 | active | CMP-08 |
-| CMP-09 | Référentiel des métadonnées d'exploitation (ART-4) | PRC-07, PRC-08, ABB-GESTION-CONSENTEMENT, ART-4, ENF-4, CAP-09, VS-03 | active | CMP-09 |
-| CMP-10 | Registre des terminologies | PRC-07, PRC-08, ABB-SERVICE-TERMINOLOGIE, ART-4, ENF-4, CAP-09, VS-03 | active | CMP-10 |
-| CMP-11 | Registre des clients / Index National des Patients (INP — ART-4A) | PRC-04, PRC-05, PRC-06, ABB-IDENTITE-BENEFICIAIRE, ART-4A, ENF-3, CAP-09, VS-02 | active | CMP-11 |
-| CMP-12 | Registre d'éligibilité et de couverture (CSU — ART-4C) | PRC-09, PRC-10, ABB-ELIGIBILITE-COUVERTURE, ART-4C, CAP-07, VS-03 | active | CMP-12 |
-| CMP-13 | Registre des personnels | PRC-04, PRC-05, ABB-GESTION-CONSENTEMENT, ART-4, ENF-3, CAP-09, VS-02 | active | CMP-13 |
-| CMP-14 | Registre des produits, intrants et indicateurs | PRC-05, PRC-06, ABB-SERVICE-TERMINOLOGIE, ABB-ECHANGE-LOGISTIQUE-LMIS, ART-4, ENF-3, CAP-09, VS-02 | active | CMP-14 |
+| CMP-08 | Répertoire de données cliniques opérationnelles | PRC-04, PRC-05, ABB-GESTION-CONSENTEMENT, ART-4, ENF-3, CAP-09, VS-02, DO-03, DO-04, DO-05 | active | CMP-08 |
+| CMP-09 | Référentiel des métadonnées d'exploitation (ART-4) | PRC-07, PRC-08, ABB-GESTION-CONSENTEMENT, ART-4, ENF-4, CAP-09, VS-03, TERM-SNOMED-CT, TERM-RXNORM, TERM-ATC, TERM-DCI, TERM-CIM-11, TERM-LOINC, TERM-CODIFICATION-COMMUNE | active | CMP-09 |
+| CMP-10 | Registre des terminologies | PRC-07, PRC-08, ABB-SERVICE-TERMINOLOGIE, ART-4, ENF-4, CAP-09, VS-03, TERM-SNOMED-CT, TERM-RXNORM, TERM-ATC, TERM-DCI, TERM-CIM-11, TERM-LOINC, TERM-CODIFICATION-COMMUNE | active | CMP-10 |
+| CMP-11 | Registre des clients / Index National des Patients (INP — ART-4A) | PRC-04, PRC-05, PRC-06, ABB-IDENTITE-BENEFICIAIRE, ART-4A, ENF-3, CAP-09, VS-02, DO-01, DO-02 | active | CMP-11 |
+| CMP-12 | Registre d'éligibilité et de couverture (CSU — ART-4C) | PRC-09, PRC-10, ABB-ELIGIBILITE-COUVERTURE, ART-4C, CAP-07, VS-03, DO-14, DO-15, DO-16, DO-17 | active | CMP-12 |
+| CMP-13 | Registre des personnels | PRC-04, PRC-05, ABB-GESTION-CONSENTEMENT, ART-4, ENF-3, CAP-09, VS-02, DO-23, DO-24 | active | CMP-13 |
+| CMP-14 | Registre des produits, intrants et indicateurs | PRC-05, PRC-06, ABB-SERVICE-TERMINOLOGIE, ABB-ECHANGE-LOGISTIQUE-LMIS, ART-4, ENF-3, CAP-09, VS-02, DO-11, DO-25 | active | CMP-14 |
 | CMP-15 | API Gateway | PRC-04, PRC-05, PRC-06, PRC-13, ABB-AUDIT-PROVENANCE, ART-5, ENF-3, CAP-10, VS-02 | active | CMP-15 |
 | CMP-16 | Registre de schémas (F.3) | PRC-07, PRC-08, ABB-AUDIT-PROVENANCE, ART-5, ENF-4, CAP-10, VS-03 | active | CMP-16 |
 | CMP-17 | Message broker asynchrone | PRC-04, PRC-05, PRC-06, ABB-AUDIT-PROVENANCE, ART-5, ENF-3, CAP-10, VS-02 | active | CMP-17 |
 | CMP-18 | Compensateur / Regroupeur de flux (Netting — ART-8C) | PRC-04, PRC-05, PRC-06, ABB-AUDIT-PROVENANCE, ART-8C, ENF-3, CAP-10, VS-02 | active | CMP-18 |
-| CMP-19 | Dossiers & statistiques de sante (hopitaux) | PRC-01, PRC-02, PRC-03, PRC-06, ABB-GESTION-CONSENTEMENT, ENF-1, F-1, VS-01, VS-04 | active | CMP-19 |
-| CMP-20 | Gestion des pharmacies (PMIS) | PRC-02, PRC-05, ABB-GESTION-CONSENTEMENT, ENF-1, F-1, VS-01, VS-04 | active | CMP-20 |
-| CMP-21 | Sante communautaire mobile (offline) | PRC-01, PRC-02, PRC-03, ABB-GESTION-CONSENTEMENT, ENF-1, F-1, VS-01, VS-02 | active | CMP-21 |
-| CMP-22 | Espace sante patient | PRC-01, PRC-07, PRC-08, ABB-CONFIANCE-AUTORISATION, ENF-1, F-1, VS-01, VS-03 | active | CMP-22 |
-| CMP-23 | Chaine logistique (LMIS) | PRC-05, PRC-10, ABB-ECHANGE-LOGISTIQUE-LMIS, ART-10, ENF-1, F-1, ABB-AUDIT-PROVENANCE, CAP-10, VS-01 | active | CMP-23 |
-| CMP-24 | Surveillance de la sante animale (zoonoses) | PRC-04, PRC-05, PART-ONE-HEALTH, ENF-1, F-1, VS-02, VS-04 | active | CMP-24 |
-| CMP-25 | Enquetes & capteurs terrain | PRC-04, PRC-05, PRC-11, ABB-GESTION-CONSENTEMENT, ENF-1, F-1, VS-02, VS-04 | active | CMP-25 |
+| CMP-19 | Dossiers & statistiques de sante (hopitaux) | PRC-01, PRC-02, PRC-03, PRC-06, ABB-GESTION-CONSENTEMENT, ENF-1, F-1, VS-01, VS-04, DO-03, DO-04, DO-05, DO-06, DO-07, DO-08, DO-09, DO-10, DO-25 | active | CMP-19 |
+| CMP-20 | Gestion des pharmacies (PMIS) | PRC-02, PRC-05, ABB-GESTION-CONSENTEMENT, ENF-1, F-1, VS-01, VS-04, DO-10, DO-11, DO-12, DO-13, DO-16 | active | CMP-20 |
+| CMP-21 | Sante communautaire mobile (offline) | PRC-01, PRC-02, PRC-03, ABB-GESTION-CONSENTEMENT, ENF-1, F-1, VS-01, VS-02, DO-01, DO-05, DO-07 | active | CMP-21 |
+| CMP-22 | Espace sante patient | PRC-01, PRC-07, PRC-08, ABB-CONFIANCE-AUTORISATION, ENF-1, F-1, VS-01, VS-03, DO-01, DO-03, DO-04, DO-14, DO-15, DO-16 | active | CMP-22 |
+| CMP-23 | Chaine logistique (LMIS) | PRC-05, PRC-10, ABB-ECHANGE-LOGISTIQUE-LMIS, ART-10, ENF-1, F-1, ABB-AUDIT-PROVENANCE, CAP-10, VS-01, DO-11, DO-12, DO-13, DO-25 | active | CMP-23 |
+| CMP-24 | Surveillance de la sante animale (zoonoses) | PRC-04, PRC-05, PART-ONE-HEALTH, ENF-1, F-1, VS-02, VS-04, DO-18, DO-19, DO-21 | active | CMP-24 |
+| CMP-25 | Enquetes & capteurs terrain | PRC-04, PRC-05, PRC-11, ABB-GESTION-CONSENTEMENT, ENF-1, F-1, VS-02, VS-04, DO-21, DO-25, DO-26 | active | CMP-25 |
 | CMP-26 | Noeud central (datacenters nationaux HDS) | ART-7, VS-04 | active | CMP-26 |
 | CMP-27 | Noeuds regionaux (clusters de district : Fog) | ART-7, VS-04 | active | CMP-27 |
 | CMP-28 | Noeuds locaux (equipements chiffres : Edge) | ART-7, VS-04 | active | CMP-28 |

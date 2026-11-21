@@ -91,7 +91,13 @@ Tableau généré depuis le référentiel : les objets d'interopérabilité requ
 | REQ-TF-06 | Les données souveraines ne quittent pas le territoire sauf dérogation. | CAP-15, CAP-18, ART-0, ART-7, PART-ECHANGE-TRANSFRONTALIER | candidate | REQ-TF-06 |
 | REQ-TF-07 | Les systèmes partenaires étrangers doivent démontrer leur conformité avant tout accès. | CAP-15, CAP-18, ART-0, ART-7, PART-ECHANGE-TRANSFRONTALIER | candidate | REQ-TF-07 |
 | REQ-TF-08 | Tout résumé patient échangé doit être conforme au profil HL7 FHIR IPS et contenir les sections minimales requises. | CAP-15, CAP-18, ART-0, ART-7, PART-ECHANGE-TRANSFRONTALIER | candidate | REQ-TF-08 |
+| TERM-ATC | TERM-ATC : Classification pharmacologique ATC de l'OMS | CAP-13, CAP-14, ART-2, ART-4, TERM-DCI, TERM-CODIFICATION-COMMUNE, CMP-10, DO-06, DO-10, DO-11 | candidate | TERM-ATC |
+| TERM-CIM-11 | TERM-CIM-11 : Classification internationale des maladies | CAP-13, CAP-14, ART-2, ART-4, TERM-CODIFICATION-COMMUNE, CMP-09, CMP-10, STD-0006, DO-05 | candidate | TERM-CIM-11 |
 | TERM-CODIFICATION-COMMUNE | Terminologie et codification communes | CAP-13, CAP-14, ART-2, ART-4, ART-5, ABB-SERVICE-TERMINOLOGIE, STD-0007 | candidate | TERM-CODIFICATION-COMMUNE |
+| TERM-DCI | TERM-DCI : Dénomination commune internationale | CAP-13, CAP-14, ART-2, ART-4, TERM-SNOMED-CT, TERM-RXNORM, TERM-CODIFICATION-COMMUNE, CMP-10, DO-06, DO-10, DO-11, DO-12 | candidate | TERM-DCI |
+| TERM-LOINC | TERM-LOINC : Terminologie des observations de laboratoire | CAP-13, CAP-14, ART-2, ART-4, TERM-CIM-11, TERM-CODIFICATION-COMMUNE, CMP-09, CMP-10, STD-0006, DO-20 | candidate | TERM-LOINC |
+| TERM-RXNORM | TERM-RXNORM : Terminologie des médicaments RxNorm | CAP-13, CAP-14, ART-2, ART-4, TERM-SNOMED-CT, TERM-CODIFICATION-COMMUNE, CMP-10, STD-0007, DO-06, DO-10, DO-11 | candidate | TERM-RXNORM |
+| TERM-SNOMED-CT | TERM-SNOMED-CT : Terminologie clinique SNOMED CT | CAP-13, CAP-14, ART-2, ART-4, TERM-CODIFICATION-COMMUNE, TERM-RXNORM, CMP-09, CMP-10, STD-0007, DO-06, DO-10, DO-11 | candidate | TERM-SNOMED-CT |
 
 <!-- END:GENERATED -->
 ---

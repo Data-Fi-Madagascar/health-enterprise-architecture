@@ -12,6 +12,7 @@ envelope: 02_artsn/05_cartographie/composants.md
 maps_to: ["ABB-CONFIANCE-AUTORISATION"]
 implements: ["ART-8A"]
 applies_to: ["PRC-04", "PRC-05", "PRC-06"]
+accesses: []
 related: ["ENF-3", "CAP-08", "VS-02"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-07", "couche-4"]
 ---
@@ -23,4 +24,5 @@ tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-07", "couche-4"]
 
 - **Rattachement** : [ART-8A](../../../04_patterns/artsn-rules/art-8a.md) (orchestrateur de parcours), [ABB-CONFIANCE-AUTORISATION: Confiance, sécurité et autorisation](../abb-confiance-autorisation.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../../02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../../02_architecture-elements/business/processes/prc-05.md) (pharmacie), [PRC-06: Clôture et capitalisation des épisodes](../../../02_architecture-elements/business/processes/prc-06.md) (logistique).
+- **Données portées** : aucune. Composant transversal : orchestration et compensation des transactions distribuees. Le rattachement aux données est porté par les composants qui lui confient les flux.
 - **Statut : Stable.**

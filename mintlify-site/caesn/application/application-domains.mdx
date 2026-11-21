@@ -51,6 +51,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 
 - **Rattachement** : ART-6 (projections analytiques), ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques, ABB-RECONCILIATION-DONNEES: Qualité et réconciliation.
 - **Processus soutenus** : PRC-10: Planification et allocation des ressources (planification), PRC-11: Suivi et pilotage de la performance (pilotage performance), PRC-12: Redevabilité et amélioration continue (redevabilité).
+- **Données portées** : DO-25 : Indicateur sanitaire, DO-26 : Zone sanitaire, DO-27 : Tâche, DO-28 : Tableau de bord
 - **Statut : Stable.**
 
 ### Centre de commande & Crises intersectorielles
@@ -61,6 +62,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 
 - **Rattachement** : ART-5 (routeur alertes), ART-0 (accords partage), ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques.
 - **Processus soutenus** : PRC-05: Alerte, investigation et riposte (alerte/investigation/riposte), PRC-11: Suivi et pilotage de la performance (pilotage performance).
+- **Données portées** : DO-18 : Signal, DO-19 : Foyer, DO-20 : Investigation, DO-21 : Notification sanitaire, DO-22 : Alerte sanitaire, DO-25 : Indicateur sanitaire, DO-28 : Tableau de bord
 - **Statut : Stable.**
 
 ### Entrepôt Lakehouse & Projections analytiques
@@ -71,6 +73,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 
 - **Rattachement** : ART-6 (CQRS), ART-9 (Grand Livre), ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques, ABB-RECONCILIATION-DONNEES: Qualité et réconciliation.
 - **Processus soutenus** : PRC-09: Remboursement et régulation des mécanismes (remboursement), PRC-11: Suivi et pilotage de la performance (pilotage).
+- **Données portées** : DO-16 : Facturation, DO-17 : Vérification d'éligibilité, DO-25 : Indicateur sanitaire, DO-28 : Tableau de bord
 - **Statut : Stable.**
 
 ### Moteur analytique & IA
@@ -81,6 +84,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 
 - **Rattachement** : ART-5 (alertes), ART-9 (Grand Livre), ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques, ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité.
 - **Processus soutenus** : PRC-09: Remboursement et régulation des mécanismes (remboursement), PRC-05: Alerte, investigation et riposte (alerte/riposte).
+- **Données portées** : DO-16 : Facturation, DO-17 : Vérification d'éligibilité, DO-18 : Signal, DO-19 : Foyer, DO-20 : Investigation, DO-21 : Notification sanitaire, DO-22 : Alerte sanitaire
 - **Statut : Stable.**
 
 ### Moteur de graphes & Référentiel spatio-temporel
@@ -90,6 +94,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 **Discipline de mise en œuvre.** Il garantit la cohérence topologique du graphe national et la résilience spatiale (ENF-4: Cloisonnement inter-institutionnel et étanchéité des données (One Health)). Toute requête de navigation relationnelle passe par ce composant.
 
 - **Rattachement** : ART-8B (graphe), ART-4D (spatio-temporel), ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes, COMP-HOMOLOGATION-INTEROPERABILITE: Conformité et tests d’interopérabilité.
+- **Données portées** : DO-01 : Patient, DO-11 : Produit de santé, DO-23 : Formation sanitaire, DO-24 : Agent de santé, DO-26 : Zone sanitaire
 - **Statut : Stable.**
 
 ### Intégration, Médiation, API Gateway, Broker & Registre schémas
@@ -99,6 +104,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 **Discipline de mise en œuvre.** Il forme la bordure de la plateforme ; tout flux entrant ou sortant le traverse. Il garantit l'éradication des silos (F.3) et la conformité aux contrats (ENF-1: Résilience à l'instabilité réseau, ENF-3: Unicité de l'identité et résilience face à la fragmentation applicative).
 
 - **Rattachement** : ART-1 (ingestion), ART-2 (médiation), F.3 (schémas), ABB-IDENTITE-BENEFICIAIRE: Résolution d’identité du bénéficiaire, ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes.
+- **Données portées** : DO-29 : Résumé international du patient (IPS), DO-30 : Section du résumé patient, DO-31 : Confiance internationale
 - **Statut : Stable.**
 
 ### Orchestrateur de parcours & Gestionnaire de Sagas (ART-8A)
@@ -109,6 +115,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 
 - **Rattachement** : ART-8A (orchestrateur de parcours), ABB-CONFIANCE-AUTORISATION: Confiance, sécurité et autorisation.
 - **Processus soutenus** : PRC-04: Veille, prévention et surveillance sanitaire (soins), PRC-05: Alerte, investigation et riposte (pharmacie), PRC-06: Clôture et capitalisation des épisodes (logistique).
+- **Données portées** : aucune. Composant transversal : orchestration et compensation des transactions distribuees. Le rattachement aux données est porté par les composants qui lui confient les flux.
 - **Statut : Stable.**
 
 ### Répertoire de données cliniques opérationnelles
@@ -119,6 +126,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 
 - **Rattachement** : ART-4 (référentiel des métadonnées), ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation.
 - **Processus soutenus** : PRC-04: Veille, prévention et surveillance sanitaire (soins), PRC-05: Alerte, investigation et riposte (pharmacie).
+- **Données portées** : DO-03 : Dossier patient, DO-04 : Épisode de soins, DO-05 : Consultation
 - **Statut : Stable.**
 
 ### Référentiel des métadonnées d'exploitation (ART-4: Référentiels de métadonnées de gestion)
@@ -129,6 +137,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 
 - **Rattachement** : ART-4 (référentiel des métadonnées), ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation.
 - **Processus soutenus** : PRC-07: Identification et droits des bénéficiaires (production données), PRC-08: Financement et exemption au point de service (qualité).
+- **Données portées** : TERM-SNOMED-CT : Terminologie clinique SNOMED CT, TERM-RXNORM : Terminologie des médicaments RxNorm, TERM-ATC : Classification pharmacologique ATC de l'OMS, TERM-DCI : Dénomination commune internationale, TERM-CIM-11 : Classification internationale des maladies, TERM-CODIFICATION-COMMUNE : Terminologie et codification communes
 - **Statut : Stable.**
 
 ### Registre des terminologies
@@ -139,6 +148,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 
 - **Rattachement** : ART-4 (référentiel des métadonnées), ABB-SERVICE-TERMINOLOGIE: Service de terminologie et codification communes.
 - **Processus soutenus** : PRC-07: Identification et droits des bénéficiaires (production données), PRC-08: Financement et exemption au point de service (qualité).
+- **Données portées** : TERM-SNOMED-CT : Terminologie clinique SNOMED CT, TERM-RXNORM : Terminologie des médicaments RxNorm, TERM-ATC : Classification pharmacologique ATC de l'OMS, TERM-DCI : Dénomination commune internationale, TERM-CIM-11 : Classification internationale des maladies, TERM-CODIFICATION-COMMUNE : Terminologie et codification communes
 - **Statut : Stable.**
 
 ### Registre des clients / Index National des Patients (INP — ART-4A)
@@ -149,6 +159,7 @@ Le cadre retient les domaines applicatifs suivants, qui décrivent des familles 
 
 - **Rattachement** : ART-4A (INP), ABB-IDENTITE-BENEFICIAIRE: Résolution d'identité du bénéficiaire.
 - **Processus soutenus** : PRC-04: Veille, prévention et surveillance sanitaire (soins), PRC-05: Alerte, investigation et riposte (pharmacie), PRC-06: Clôture et capitalisation des épisodes (logistique).
+- **Données portées** : DO-01 : Patient, DO-02 : Identifiant national d'identification
 - **Statut : Stable.**
 
 <!-- END:GENERATED -->

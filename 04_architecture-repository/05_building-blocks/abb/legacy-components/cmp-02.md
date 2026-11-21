@@ -12,6 +12,7 @@ envelope: 02_artsn/05_cartographie/composants.md
 maps_to: ["ABB-EXPOSITION-DONNEES-ANALYTIQUES"]
 implements: ["ART-5", "ART-0"]
 applies_to: ["PRC-05", "PRC-11", "PRC-13"]
+accesses: ["DO-18", "DO-19", "DO-20", "DO-21", "DO-22", "DO-25", "DO-28"]
 related: ["ENF-2", "CAP-05", "CAP-06", "VS-02", "VS-04"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-02", "couche-6"]
 realized_by: ["WP-07"]
@@ -24,4 +25,5 @@ realized_by: ["WP-07"]
 
 - **Rattachement** : [ART-5](../../../04_patterns/artsn-rules/art-5.md) (routeur alertes), [ART-0](../../../04_patterns/artsn-rules/art-0.md) (accords partage), [ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../abb-exposition-donnees-analytiques.md).
 - **Processus soutenus** : [PRC-05: Alerte, investigation et riposte](../../../02_architecture-elements/business/processes/prc-05.md) (alerte/investigation/riposte), [PRC-11: Suivi et pilotage de la performance](../../../02_architecture-elements/business/processes/prc-11.md) (pilotage performance).
+- **Données portées** : [DO-18 : Signal](../../../02_architecture-elements/data/data-objects/do-18.md), [DO-19 : Foyer](../../../02_architecture-elements/data/data-objects/do-19.md), [DO-20 : Investigation](../../../02_architecture-elements/data/data-objects/do-20.md), [DO-21 : Notification sanitaire](../../../02_architecture-elements/data/data-objects/do-21.md), [DO-22 : Alerte sanitaire](../../../02_architecture-elements/data/data-objects/do-22.md), [DO-25 : Indicateur sanitaire](../../../02_architecture-elements/data/data-objects/do-25.md), [DO-28 : Tableau de bord](../../../02_architecture-elements/data/data-objects/do-28.md)
 - **Statut : Stable.**

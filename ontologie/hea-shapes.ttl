@@ -112,6 +112,45 @@ hea:ComposantShape a sh:NodeShape ;
         sh:maxCount 1 ;
         sh:pattern "^CMP-\\d{2}$" ;
         sh:message "L'ID d'un composant doit être au format CMP-NN" ;
+    ] ;
+    sh:property [
+        sh:path hea:accesses ;
+        sh:minCount 0 ;
+        sh:or (
+            [ sh:class hea:ObjetDeDonnees ]
+            [ sh:class hea:ObjetMetier ]
+            [ sh:class hea:Terminology ]
+        ) ;
+        sh:message "Un composant ne peut accéder qu'à un objet de données, un objet métier ou une terminologie" ;
+    ] .
+
+# --- Shape ObjetDeDonnees : contrainte sémantique vers une terminologie ---
+# Le pont sémantique impose que toute terminologie déclarée sur un objet de
+# données soit effectivement une terminologie du référentiel.
+hea:ObjetDeDonneesShape a sh:NodeShape ;
+    sh:targetClass hea:ObjetDeDonnees ;
+    sh:property [
+        sh:path hea:constrainedBy ;
+        sh:minCount 0 ;
+        sh:class hea:Terminology ;
+        sh:message "La terminologie qui contraint un objet de données doit être de type Terminology" ;
+    ] .
+
+# --- Shape Terminology : identité et portée de la contrainte ---
+hea:TerminologyShape a sh:NodeShape ;
+    sh:targetClass hea:Terminology ;
+    sh:property [
+        sh:path hea:id ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:pattern "^TERM-[A-Z0-9-]+$" ;
+        sh:message "L'ID d'une terminologie doit être au format TERM-MAJUSCULES" ;
+    ] ;
+    sh:property [
+        sh:path hea:constrains ;
+        sh:minCount 0 ;
+        sh:class hea:ObjetDeDonnees ;
+        sh:message "Une terminologie ne peut contraindre qu'un objet de données" ;
     ] .
 
 # --- Shape Valeur : doit avoir produit et detenuPar ---

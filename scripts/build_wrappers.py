@@ -70,6 +70,7 @@ FACE = ["candidate", "deprecated"]
 RATTACHEMENT_KEYS = (
     "applies_to", "maps_to", "realizes", "implements", "related",
     "contributes_to", "governs", "serves", "accesses", "uses",
+    "constrained_by", "constrains",
     "partitions", "between", "target_plateau", "addressed_by",
     "evidenced_by",
 )
@@ -170,6 +171,8 @@ def load_objects():
                 "governs": fields.get("governs", []) or [],
                 "serves": fields.get("serves", []) or [],
                 "accesses": fields.get("accesses", []) or [],
+                "constrained_by": fields.get("constrained_by", []) or [],
+                "constrains": fields.get("constrains", []) or [],
                 "uses": fields.get("uses", []) or [],
                 "partitions": fields.get("partitions", []) or [],
                 "between": fields.get("between", []) or [],
@@ -341,6 +344,8 @@ def markdown_table_entry(rel):
         "governs": fields.get("governs", []) or [],
         "serves": fields.get("serves", []) or [],
         "accesses": fields.get("accesses", []) or [],
+        "constrained_by": fields.get("constrained_by", []) or [],
+        "constrains": fields.get("constrains", []) or [],
         "uses": fields.get("uses", []) or [],
         "partitions": fields.get("partitions", []) or [],
         "between": fields.get("between", []) or [],
@@ -449,8 +454,8 @@ def render_partition_traceability(objects, path_by_id, to_dir):
         key=lambda obj: natural_key(obj["id"]),
     )
     lines = [
-        "| Partition | VS | CAP | PRC | DO | ABB | SBB / PT |",
-        "|---|---|---|---|---|---|---|",
+        "| Partition | VS | CAP | PRC | CMP | DO | TERM | ABB | SBB / PT |",
+        "|---|---|---|---|---|---|---|---|---|",
     ]
 
     for partition in partitions:
@@ -561,13 +566,40 @@ def render_partition_traceability(objects, path_by_id, to_dir):
                     {"objet-de-donnees"},
                 ))
 
+            # Couche application : les composants qui tiennent les processus.
+            components = ids_of_type(
+                set().union(*[set(by_id[process_id].get("uses", []))
+                              for process_id in processes]) if processes else set(),
+                {"composant-applicatif", "composant-infrastructure",
+                 "composant-securite"},
+            )
+            # Sens inverse de la relation service : un composant qui déclare
+            # `applies_to` un processus de la ligne tient ce processus.
+            for candidate in by_id.values():
+                if candidate.get("type") not in {
+                        "composant-applicatif", "composant-infrastructure",
+                        "composant-securite"}:
+                    continue
+                if set(candidate.get("applies_to", [])) & processes:
+                    components.add(candidate["id"])
+
+            # Couche semantique : les terminologies qui codent les donnees.
+            terminologies = set()
+            for data_object_id in data_objects:
+                terminologies.update(ids_of_type(
+                    set(by_id[data_object_id].get("constrained_by", [])),
+                    {"terminology"},
+                ))
+
             lines.append(
-                "| %s | %s | %s | %s | %s | %s | %s |" % (
+                "| %s | %s | %s | %s | %s | %s | %s | %s | %s |" % (
                     partition["id"],
                     value_stream_id or "n/a",
                     cell(scoped_capabilities),
                     cell(processes),
+                    cell(components),
                     cell(data_objects),
+                    cell(terminologies),
                     cell(building_blocks),
                     cell(solution_blocks),
                 )
@@ -733,6 +765,11 @@ def generate_file(objects, path_by_id, rel):
             to_dir = os.path.dirname(abs_path)
             content = render_table(selected, path_by_id, to_dir)
             body = content
+            # Un tableau tabule les objets qu'il source : ces objets sont
+            # considered comme transclus par l'enveloppe.
+            for obj_rel in [entry["rel"] for entry in selected]:
+                if obj_rel in pending:
+                    pending.remove(obj_rel)
         elif attrs["mode"] == "maturity":
             if not globs:
                 raise SystemExit("bloc maturité sans source dans %s" % rel)

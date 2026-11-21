@@ -3,7 +3,7 @@
 # Source de vérité : frontmatter Markdown sous 04_architecture-repository/.
 # Champs : id, type, niveau, chemin, status, title.
 # Statuts : draft | active | stable | candidate | deprecated
-# Total : 374 objets
+# Total : 380 objets
 #
 # Comptes par type :
 # - acteur : 6
@@ -35,7 +35,7 @@
 # - registre-gouvernance : 8
 # - role : 5
 # - service : 6
-# - terminology : 1
+# - terminology : 7
 # - valeur : 4
 # - work-package : 7
 #
@@ -43,7 +43,7 @@
 # - draft : 185
 # - active : 111
 # - stable : 29
-# - candidate : 49
+# - candidate : 55
 # - deprecated : 0
 
 # niveau 1 / flux-valeur (4)
@@ -1550,7 +1550,7 @@
   status: "candidate"
   title: "Données de référence des structures et services"
 
-# niveau 2 / terminology (1)
+# niveau 2 / terminology (7)
 - id: "TERM-CODIFICATION-COMMUNE"
   type: "terminology"
   niveau: "2"
@@ -1775,6 +1775,44 @@
   chemin: "06_governance/evidence/evid-gap-03-cadre-legal.md"
   status: "candidate"
   title: "Dossier de publication et d'applicabilité du cadre légal"
+
+# niveau 3 / terminology (7)
+- id: "TERM-ATC"
+  type: "terminology"
+  niveau: "3"
+  chemin: "02_architecture-elements/data/terminologies/term-atc.md"
+  status: "candidate"
+  title: "TERM-ATC : Classification pharmacologique ATC de l'OMS"
+- id: "TERM-CIM-11"
+  type: "terminology"
+  niveau: "3"
+  chemin: "02_architecture-elements/data/terminologies/term-cim-11.md"
+  status: "candidate"
+  title: "TERM-CIM-11 : Classification internationale des maladies"
+- id: "TERM-DCI"
+  type: "terminology"
+  niveau: "3"
+  chemin: "02_architecture-elements/data/terminologies/term-dci.md"
+  status: "candidate"
+  title: "TERM-DCI : Dénomination commune internationale"
+- id: "TERM-LOINC"
+  type: "terminology"
+  niveau: "3"
+  chemin: "02_architecture-elements/data/terminologies/term-loinc.md"
+  status: "candidate"
+  title: "TERM-LOINC : Terminologie des observations de laboratoire"
+- id: "TERM-RXNORM"
+  type: "terminology"
+  niveau: "3"
+  chemin: "02_architecture-elements/data/terminologies/term-rxnorm.md"
+  status: "candidate"
+  title: "TERM-RXNORM : Terminologie des médicaments RxNorm"
+- id: "TERM-SNOMED-CT"
+  type: "terminology"
+  niveau: "3"
+  chemin: "02_architecture-elements/data/terminologies/term-snomed-ct.md"
+  status: "candidate"
+  title: "TERM-SNOMED-CT : Terminologie clinique SNOMED CT"
 
 # niveau 4 / profil (20)
 - id: "PT-01"

@@ -12,6 +12,7 @@ envelope: 02_artsn/05_cartographie/composants.md
 maps_to: ["ABB-EXPOSITION-DONNEES-ANALYTIQUES", "ABB-AUDIT-PROVENANCE"]
 implements: ["ART-5", "ART-9"]
 applies_to: ["PRC-05", "PRC-09"]
+accesses: ["DO-16", "DO-17", "DO-18", "DO-19", "DO-20", "DO-21", "DO-22"]
 related: ["ENF-2", "ENF-5", "CAP-13", "CAP-15", "VS-02", "VS-04"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-04", "couche-5"]
 ---
@@ -23,4 +24,5 @@ tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-04", "couche-5"]
 
 - **Rattachement** : [ART-5](../../../04_patterns/artsn-rules/art-5.md) (alertes), [ART-9](../../../04_patterns/artsn-rules/art-9.md) (Grand Livre), [ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../abb-exposition-donnees-analytiques.md), [ABB-AUDIT-PROVENANCE: Provenance, audit et traçabilité](../abb-audit-provenance.md).
 - **Processus soutenus** : [PRC-09: Remboursement et régulation des mécanismes](../../../02_architecture-elements/business/processes/prc-09.md) (remboursement), [PRC-05: Alerte, investigation et riposte](../../../02_architecture-elements/business/processes/prc-05.md) (alerte/riposte).
+- **Données portées** : [DO-16 : Facturation](../../../02_architecture-elements/data/data-objects/do-16.md), [DO-17 : Vérification d'éligibilité](../../../02_architecture-elements/data/data-objects/do-17.md), [DO-18 : Signal](../../../02_architecture-elements/data/data-objects/do-18.md), [DO-19 : Foyer](../../../02_architecture-elements/data/data-objects/do-19.md), [DO-20 : Investigation](../../../02_architecture-elements/data/data-objects/do-20.md), [DO-21 : Notification sanitaire](../../../02_architecture-elements/data/data-objects/do-21.md), [DO-22 : Alerte sanitaire](../../../02_architecture-elements/data/data-objects/do-22.md)
 - **Statut : Stable.**

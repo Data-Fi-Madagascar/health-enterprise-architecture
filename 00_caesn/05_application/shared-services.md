@@ -54,6 +54,7 @@ Certains services doivent être conçus comme des services nationaux partagés, 
 
 - **Rattachement** : [ART-4C](../../04_architecture-repository/04_patterns/artsn-rules/art-4c.md) (éligibilité/couverture), [CAP-07: Protection financière, couverture santé universelle](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-07.md). CMP-12 réalise l'[ABB-ELIGIBILITE-COUVERTURE](../../04_architecture-repository/05_building-blocks/abb/abb-eligibilite-couverture.md) ; ce bloc porte la responsabilité de vérification des droits, distincte de l'identité et du consentement.
 - **Processus soutenus** : [PRC-09: Remboursement et régulation des mécanismes](../../04_architecture-repository/02_architecture-elements/business/processes/prc-09.md) (finance), [PRC-10: Planification et allocation des ressources](../../04_architecture-repository/02_architecture-elements/business/processes/prc-10.md) (planification).
+- **Données portées** : [DO-14 : Éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-14.md), [DO-15 : Couverture sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-15.md), [DO-16 : Facturation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-16.md), [DO-17 : Vérification d'éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-17.md)
 - **Statut : Stable.**
 
 ### Registre des personnels
@@ -64,6 +65,7 @@ Certains services doivent être conçus comme des services nationaux partagés, 
 
 - **Rattachement** : [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md) (référentiel des métadonnées), [ABB-GESTION-CONSENTEMENT: Gestion des consentements et bases d’autorisation](../../04_architecture-repository/05_building-blocks/abb/abb-gestion-consentement.md).
 - **Processus soutenus** : [PRC-04: Veille, prévention et surveillance sanitaire](../../04_architecture-repository/02_architecture-elements/business/processes/prc-04.md) (soins), [PRC-05: Alerte, investigation et riposte](../../04_architecture-repository/02_architecture-elements/business/processes/prc-05.md) (pharmacie).
+- **Données portées** : [DO-23 : Formation sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-23.md), [DO-24 : Agent de santé](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-24.md)
 - **Statut : Stable.**
 
 <!-- END:GENERATED -->

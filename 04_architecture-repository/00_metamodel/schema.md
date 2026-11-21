@@ -120,6 +120,8 @@ tags: ["cnisn", "autorite", "donnees-de-reference"]
 | `serves` | non | Service rendu à une partie prenante / un acteur — ArchiMate Serving |
 | `accesses` | non | Service / composant / processus accède à un objet métier / donnée — ArchiMate Access |
 | `accessed_by` | non | Inverse de `accesses` (coté objet métier / donnée) |
+| `constrained_by` | non | Objet de données dont les valeurs sont codées par une terminologie : Association sémantique (extension HEA) |
+| `constrains` | non | Inverse de `constrained_by` (coté terminologie) |
 | `realizes` | non | Service / paquet de travail / plateau réalise une capacité, composant ou service — ArchiMate Realization |
 | `realized_by` | non | Inverse de `realizes` (coté capacité / composant / service) |
 | `contributes_to` | non | Paquet de travail contribue à un plateau |
@@ -211,6 +213,9 @@ Le référentiel suit le modèle de relations d'ArchiMate : la **capacité** est
 | Service (SRV) | `serves` | Partie prenante / Acteur | Service *serving* Stakeholder | le service crée de la valeur pour le bénéficiaire |
 | Service / Composant / Processus | `accesses` | Objet métier / Objet de données | Application/Component *access* Data Object | le service consomme / produit l'objet |
 | Objet métier / Objet de données | `accessed_by` | Service / Composant / Processus | inverse de `accesses` | navigabilité (coté objet) |
+| Composant (CMP) | `accesses` | Objet de données (DO) | Application Component *access* Data Object | le composant produit, expose ou met à jour l'objet de données |
+| Objet de données (DO) | `constrained_by` | Terminologie (TERM) | Association sémantique (extension HEA) | les valeurs portées par l'objet sont codées par la terminologie |
+| Terminologie (TERM) | `constrains` | Objet de données (DO) | inverse de `constrained_by` | navigabilité (coté terminologie) |
 | Service (SRV) | `realizes` / `implements` | Capabilité CAESN / objet CNISN/TOGAF / chapitre ART | Service *realization* Capability/Requirement | le service met en œuvre l'objet ou la capabilité |
 | Capacité / Composant / Service | `realized_by` | Service / Paquet de travail / Plateau | inverse de `realizes` | navigabilité (coté capacité) |
 | Paquet de travail (WP) | `realizes` | Capacité / Composant / Service | Work Package *realization* | le lot réalise la capacité / le composant |
@@ -237,7 +242,61 @@ evidenced_by: [EVID-GAP-01-QUALIFICATION-OFFLINE]
 closure_criteria: ["Qualification terrain acceptée", "Synchronisation sans perte démontrée"]
 ```
 
-Règle d'intégrité : un flux de valeur ne doit laisser aucune capacité orpheline ; chaque processus liste ses capacités réalisées de façon **granulaire** (pas par copie du flux parent) ; `uses` (PRC -> CMP applicatif) et `applies_to` (CMP applicatif -> PRC) sont les deux sens d'une même relation *service* et doivent rester cohérents. Le socle transverse (infrastructure CMP-26..31, securite CMP-32..38) n'est **pas** lié directement aux processus : il est atteint via `uses` depuis les composants applicatifs. La gouvernance (CMP-39..46) n'utilise pas `uses` ; elle encadre les composants via `governs`.
+Règle d'intégrité : un flux de valeur ne doit laisser aucune capacité orpheline ; chaque processus liste ses capacités réalisées de façon **granulaire** (pas par copie du flux parent) ; `uses` (PRC -> CMP applicatif) et `applies_to` (CMP applicatif -> PRC) sont les deux sens d'une même relation *service* et doivent rester cohérents. De la même manière, `accesses` (composant ou service -> objet de données) et `accessed_by` (objet de données -> composant ou service) décrivent un seul et même accès, et `constrained_by` (objet de données -> terminologie) et `constrains` (terminologie -> objet de données) une seule et même contrainte de codage. Le socle transverse (infrastructure CMP-26..31, securite CMP-32..38) n'est **pas** lié directement aux processus : il est atteint via `uses` depuis les composants applicatifs. La gouvernance (CMP-39..46) n'utilise pas `uses` ; elle encadre les composants via `governs`.
+
+## Chaîne à quatre couches
+
+Le référentiel n'est pas une collection d'objets juxtaposés : il articule quatre couches de sens, chacune portée par un type d'objet distinct, et il relie ces couches par deux ponts qui rendent la chaîne vérifiable de bout en bout. Cette structure répond à une question simple que tout lecteur d'architecture doit pouvoir poser à n'importe quel objet : à quoi cette donnée sert, qui la produit, comment elle est codée.
+
+| Couche | Question à laquelle elle répond | Type d'objet | Plage d'identifiants | Relation porteuse |
+|---------|-------------------------------|--------------|----------------------|-------------------|
+| 1. Business | Que le système de santé doit-il garantir au citoyen ? | `capabilite` | CAP-01 à CAP-18 | `applies_to` porté par le processus (PRC vers CAP) |
+| 2. Application | Par quel moyen numérique la capacité est-elle tenue ? | `composant-applicatif` | CMP-01 à CMP-25 | `uses` porté par le processus (PRC vers CMP), `applies_to` porté par le composant (CMP vers PRC) |
+| 3. Données | Sur quelles données la capacité opère-t-elle ? | `objet-de-donnees` | DO-01 à DO-31 | `accesses` porté par le composant (CMP vers DO), `accessed_by` porté par l'objet (DO vers CMP) |
+| 4. Sémantique | Selon quel référentiel de codes les données sont-elles interprétées ? | `terminology` | TERM-CODIFICATION-COMMUNE et les six terminologies de codes publics (TERM-SNOMED-CT, TERM-RXNORM, TERM-ATC, TERM-DCI, TERM-CIM-11, TERM-LOINC) | `constrained_by` porté par l'objet (DO vers TERM), `constrains` porté par la terminologie (TERM vers DO) |
+
+### Les deux ponts et leur portée réelle
+
+Les couches 1 et 2 sont historiquement portées par des relations déjà peuplées : un processus métier déclare les capacités qu'il réalise, et les composants applicatifs qu'il mobilise. Le référentiel s'arrêtait toutefois au milieu de la chaîne. Le pont vers les données n'existait qu'au niveau du processus : douze processus sur treize déclaraient les objets de données qu'ils manipulent, mais aucun des trente-huit composants ne déclarait l'objet de données qu'il porte. Le pont sémantique, lui, n'existait pas : une terminologie était atteinte par un service, mais aucun objet de données n'était jamais déclaré comme contraint par une terminologie. Trois conséquences en découlaient, toutes vérifiables dans le corpus avant correction.
+
+- Un composant applicatif ne pouvait pas être caractérisé par les données qu'il détient, alors que cette caractérisation est la seule qui distingue un registre de terminologies d'un entrepôt analytique.
+- Un objet de données ne pouvait pas dire sous quelles codifications ses valeurs doivent être interprétées, ce qui rendait impossible de garantir qu'une prescription échangée entre deux institutions désigne le même médicament.
+- La traçabilité entre la capacité stratégique et le code utilisé sur le terrain s'arrêtait à la frontière du composant.
+
+Le présent méta-modèle comble ces deux ponts : `accesses` devient une relation de premier rang pour les composants applicatifs, et `constrained_by` est introduit pour lier un objet de données à la terminologie qui en régit le codage.
+
+### Exemple travaillé
+
+La chaîne de référence est celle de la prescription de chimiothérapie. Le corpus ne comporte pas de capacité d'oncologie dédiée : la capacité de prise en charge du patient cancéreux se rattache à CAP-10 (Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement) et à CAP-01 (Offre de soins et continuité des services). La chaîne projetée dans le référentiel est la suivante.
+
+| Couche | Objet du corpus | Identifiant |
+|--------|-----------------|-------------|
+| Business | Gestion des médicaments, vaccins, intrants et chaîne d'approvisionnement | CAP-10 |
+| Business | Offre de soins et continuité des services | CAP-01 |
+| Application (processus) | Prestation des soins cliniques | PRC-02 |
+| Application (composant) | Dossiers et statistiques de santé (hôpitaux), système d'information hospitalier de base | CMP-19 |
+| Données | Prescription, ressource FHIR MedicationRequest | DO-06 |
+| Sémantique | Terminologie clinique SNOMED CT, codes de médicaments | TERM-SNOMED-CT |
+| Sémantique | Terminologie RxNorm des médicaments, source de correspondance internationale | TERM-RXNORM |
+| Sémantique | Classification ATC de l'OMS | TERM-ATC |
+
+Cette projection illustre la fonction de chaque pont. Le pont applicatif relie la capacité à un actif numérique identifiable et versionnable. Le pont données relie cet actif à un objet de données dont la ressource d'échange est fixée (FHIR MedicationRequest pour DO-06), ce qui rend la matérialité de l'échange discutable avec un tiers. Le pont sémantique fixe enfin les référentiels de codes admis pour les valeurs de l'objet, ce qui conditionne la comparabilité des données entre institutions et la validité des indicateurs calculés au-dessus.
+
+### Règles d'intégrité de la chaîne
+
+| Règle | Portée | Contrôle |
+|-------|--------|----------|
+| Toute relation `accesses` (X vers Y) dispose de son inverse `accessed_by` (Y vers X) | Objets de données et objets métier | `scripts/validate_ref.py` |
+| Toute relation `constrained_by` (DO vers TERM) dispose de son inverse `constrains` (TERM vers DO) | Objets de données et terminologies | `scripts/validate_ref.py` |
+| `accesses` ne cible qu'un objet métier, un objet de données ou une terminologie | Composants, services, processus | `scripts/validate_ref.py` |
+| `constrained_by` ne cible qu'une terminologie | Objets de données | `scripts/validate_ref.py` |
+| `uses` (PRC vers CMP) et `applies_to` (CMP vers PRC) restent symétriques | Composants applicatifs | `scripts/validate_ref.py` |
+| Tout objet de données est détenu par au moins un composant et manipulé par au moins un processus | Objets de données | `scripts/validate_ref.py` |
+| Toute terminologie est portée par au moins un composant applicatif | Terminologies | `scripts/validate_ref.py` |
+
+Ces règles sont strictes : le référentiel doit pouvoir être relu par un tiers sans reconstruire les relations à la main. L'état mesuré du corpus après correction est le suivant : sur les trente-huit composants, vingt déclarent des objets de données portés, les treize processus déclarent tous leurs données, les trente-et-un objets de données sont tous holders et tous utilisés, et les sept terminologies sont toutes portées par un composant.
+
+Une exception assumée existe pour les cinq composants de la couche de médiation (orchestrateur de parcours CMP-07, passerelle d'API CMP-15, registre de schémas CMP-16, courtier de messages CMP-17, compensateur de flux CMP-18) : ils transportent des objets de données sans être leur propriétaire, et ne déclarent donc pas d'`accesses` propre. Leur rattachement aux données est porté par les composants qui leur confient les flux. Le composant d'intégration CMP-06, qui assume la médiation de bout en bout, déclare en revanche les objets qu'il porte. Le socle transverse (infrastructure CMP-26 à CMP-31, sécurité CMP-32 à CMP-38) reste hors de la chaîne applicative par construction : il est atteint par `uses` depuis les composants qui l'exploitent et ne porte pas de données métier en propre.
 
 ## Registre des objets
 
@@ -284,12 +343,15 @@ Sémantique des relations ArchiMate : les 13 types natifs sont projetés sur un 
 | Assignment (Role↔Process) | `performs` / `performed_by` | oui |
 | Association (géo) | `located_at` | oui |
 | Serving (Service↔Stakeholder) | `serves` | oui |
-| Access (Service↔Data) | `accesses` / `accessed_by` | oui |
+| Serving (Composant↔Processus) | `applies_to` (CMP→PRC) / `uses` (PRC→CMP) | oui |
+| Access (Service/Composant/Processus↔Data) | `accesses` / `accessed_by` | oui |
+| Realization (Processus↔Capacité) | `applies_to` (PRC→CAP) | oui |
 | Realization (Service↔Capability) | `realizes` / `realized_by` | oui |
 | Realization (WorkPackage↔Capability) | `realizes` / `realized_by` | oui |
 | Realization (Plateau↔Capability) | `realizes` / `realized_by` | oui |
 | Triggering / Flow | `uses` (PRC→CMP) | oui |
 | Association (gouvernance) | `governs` | oui |
 | Association (roadmap) | `contributes_to` / `precedes` / `between` | oui |
+| Association (sémantique, extension HEA) | `constrained_by` / `constrains` | oui |
 
-Les champs ci-dessus s'ajoutent aux champs existants documentés plus haut (`related`, `uses`, `maps_to`, `applies_to`, `implements`, `governs`). La règle d'intégrité transverse reste : tout `uses` (PRC→CMP) doit avoir son `applies_to` inverse (CMP→PRC), et tout `realizes` doit avoir son `realized_by` correspondant.
+Les champs ci-dessus s'ajoutent aux champs existants documentés plus haut (`related`, `uses`, `maps_to`, `applies_to`, `implements`, `governs`). La règle d'intégrité transverse reste : tout `uses` (PRC→CMP) doit avoir son `applies_to` inverse (CMP→PRC), tout `realizes` doit avoir son `realized_by` correspondant, tout `accesses` doit avoir son `accessed_by` correspondant et tout `constrained_by` doit avoir son `constrains` correspondant.
