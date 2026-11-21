@@ -36,7 +36,7 @@ La continuité de la chaîne d'approvisionnement (médicaments, vaccins, intrant
 Toute solution numérique échangeant des données logistiques dans le secteur santé de Madagascar **doit** :
 
 1. **Coder les produits selon GS1** (GTIN pour l'article, SSCC pour les unités logistiques, lots et dates de péremption) ;
-2. **Utiliser HL7 FHIR R4** pour les ressources `Medication`, `MedicationKnowledge`, `SupplyDelivery`, `SupplyRequest` et `InventoryReport` (profilées selon l'ARTSN) ;
+2. **Utiliser HL7 FHIR R4** pour les ressources `Medication`, `SupplyDelivery` et `SupplyRequest` (profilées selon l'ARTSN), et deriver les niveaux de stock du solde des mouvements ;
 3. **Véhiculer les flux via l'échange interinstitutionnel X-Road** (STD-0003, ADR-0001) en mode asynchrone ;
 4. **Événementiser chaque mouvement** (réception, transfert, dispensation, destruction) comme événement immuable, horodaté, lié au lot et au lieu, réconcilié à somme nulle (Entrées − Sorties = Solde) selon ART-10 ;
 5. **Exposer les niveaux de stock et les alertes de rupture** selon un contrat de service partagé.
@@ -65,7 +65,7 @@ Lors de l'homologation, le Comité National vérifiera :
 | Critère | Vérification |
 |---------|--------------|
 | Codification produit | Articles codés GTIN ; unités logistiques SSCC |
-| Format d'échange | Ressources FHIR R4 (`Medication`, `SupplyDelivery`, `InventoryReport`) |
+| Format d'échange | Ressources FHIR R4 (`Medication`, `SupplyDelivery`, `SupplyRequest`) |
 | Transport | Flux véhiculés par X-Road (STD-0003) |
 | Traçabilité | Chaque mouvement est un événement immuable, lié au lot, réconcilié (E−S=Solde) |
 | Alertes | Niveaux de stock et alertes de rupture exposés |

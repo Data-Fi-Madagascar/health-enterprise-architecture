@@ -216,6 +216,9 @@
             }
           }
         }
+      },
+      "DO31": {
+        "$ref": "https://healmadagascar.mg/schemas/payloads/do-31.json"
       }
     }
   },
@@ -246,6 +249,8 @@
     "AuditEvent",
     "Provenance"
   ],
-  "x-hea-data-objects": [],
+  "x-hea-data-objects": [
+    "DO-31"
+  ],
   "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-12.md"
 }

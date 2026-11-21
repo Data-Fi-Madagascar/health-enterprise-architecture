@@ -59,9 +59,10 @@
   "x-hea-type": "objet-de-donnees",
   "x-hea-status": "draft",
   "x-hea-owner": "DEPSI",
-  "x-hea-fhir-resource": "InventoryItem",
+  "x-hea-fhir-resource": "Medication",
   "x-hea-fhir-resources": [
-    "InventoryItem"
+    "Medication",
+    "SupplyDelivery"
   ],
-  "x-hea-source-ref": "FHIR InventoryItem (lot) et LMIS (Logistics Management Information System) pour les soldes"
+  "x-hea-source-ref": "LMIS (Logistics Management Information System) pour les soldes ; projection FHIR R4 : `Medication.batch` (lot : numéro, fabrication, péremption) et `SupplyDelivery` (mouvements de stock)"
 }

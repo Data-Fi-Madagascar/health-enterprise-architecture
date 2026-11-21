@@ -58,7 +58,7 @@
   "x-hea-fhir-resource": "Claim",
   "x-hea-fhir-resources": [
     "Claim",
-    "Invoice"
+    "ClaimResponse"
   ],
-  "x-hea-source-ref": "FHIR Claim"
+  "x-hea-source-ref": "projection FHIR R4 : `Claim` (demande de facturation ou de remboursement) et `ClaimResponse` (réponse d'adjudication)"
 }

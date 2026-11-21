@@ -115,6 +115,14 @@ La relation `accesses` porte deux énoncés distincts, celui du processus qui ma
 |----|-------|--------|------|--------------|--------|
 | ADR-0015 | Deux emplois de l'accès aux données, adossement des arêtes de processus et autorité du système de référence | **proposé** | 2026-11-21 | DEPSI | Élevé : bouclage de la chaîne à quatre couches |
 
+### Projection FHIR des objets de données
+
+La déclaration `fhir_resources` fait foi sur la projection FHIR : le compilateur produit une StructureDefinition par ressource déclarée, refuse toute ressource absente du paquet FHIR R4 ou de maturité FMM nulle, et purge les artefacts qui ne correspondent plus à une déclaration.
+
+| ID | Titre | Statut | Date | Propriétaire | Impact |
+|----|-------|--------|------|--------------|--------|
+| ADR-0016 | La déclaration `fhir_resources` fait foi sur la projection FHIR des objets de données | **proposé** | 2026-11-21 | DEPSI | Élevé : interopérabilité R4 vérifiable |
+
 
 ## Processus d'enregistrement
 
@@ -133,12 +141,12 @@ La relation `accesses` porte deux énoncés distincts, celui du processus qui ma
 
 | Statut | Nombre |
 |--------|--------|
-| Proposé | 11 |
+| Proposé | 12 |
 | Accepté | 0 |
 | Appliqué | 4 |
 | Remplacé | 0 |
 | Déprécié | 0 |
-| **Total** | **15** |
+| **Total** | **16** |
 
 
 ## Liens
@@ -165,6 +173,7 @@ La relation `accesses` porte deux énoncés distincts, celui du processus qui ma
 - **ADR-0013** : Taxonomie des fonctions de domaine comme référence de couverture et réconciliation de la chaîne vers les données (`01_cnisn/06_decisions/adr-0013-cadrage-fonctions-domaine.md`)
 - **ADR-0014** : Rationalisation du catalogue des objets de données par fusion, gouvernance de la valeur d'usage et traçabilité des retraits (`01_cnisn/06_decisions/adr-0014-rationalisation-catalogue-donnees.md`)
 - **ADR-0015** : Deux emplois de l'accès aux données, adossement des arêtes de processus et autorité du système de référence (`01_cnisn/06_decisions/adr-0015-semantique-acces-donnees.md`)
+- **ADR-0016** : La déclaration `fhir_resources` fait foi sur la projection FHIR des objets de données (`01_cnisn/06_decisions/adr-0016-projection-fhir-source-de-verite.md`)
 - **Template ADR** : <Titre de la décision> (`01_cnisn/06_decisions/adr-0000-template.md`)
 - **Index des décisions** : Décisions d'architecture (ADR) (`01_cnisn/06_decisions/index.md`)
 - **Gouvernance** : Partie III : Gouvernance (`01_cnisn/03_gouvernance/index.md`)

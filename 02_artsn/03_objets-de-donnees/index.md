@@ -300,7 +300,7 @@ Ce concept est mobilisé par les capacités [CAP-10](../../04_architecture-repos
 
 - **Type** : Entité référentielle
 - **Contraintes** : Code DCI obligatoire ; nom commercial ; dosage ; forme pharmaceutique ; statut réglementaire (autorisé, enregistré, retiré)
-- **Référentiel source** : Référentiel des produits de santé (CAESN), OMS ATC
+- **Référentiel source** : Référentiel des produits de santé (CAESN), OMS ATC ; projection FHIR R4 : `Medication` (code DCI ou ATC, statut réglementaire)
 
 #### Rattachement
 
@@ -324,7 +324,7 @@ Ce concept est mobilisé par les capacités [CAP-10](../../04_architecture-repos
 
 - **Type** : Entité référentielle (lot) assortie de sa mesure de stock
 - **Contraintes** : Numéro de lot unique par produit ; date de fabrication ; date de péremption ; fabricant ; pays d'origine ; quantité de stock supérieure ou égale à zéro ; point de stockage identifié ; produit identifié ; date de dernière mise à jour ; seuil d'alerte de stock
-- **Référentiel source** : FHIR InventoryItem (lot) et LMIS (Logistics Management Information System) pour les soldes
+- **Référentiel source** : LMIS (Logistics Management Information System) pour les soldes ; projection FHIR R4 : `Medication.batch` (lot : numéro, fabrication, péremption) et `SupplyDelivery` (mouvements de stock)
 
 #### Rattachement
 
@@ -396,7 +396,7 @@ Ce concept est mobilisé par les capacités [CAP-07](../../04_architecture-repos
 
 - **Type** : Événement financier
 - **Contraintes** : Montant total détaillé par élément ; statut (payée, en attente, remboursée) ; mode de paiement ; référence au paiement
-- **Référentiel source** : FHIR Claim
+- **Référentiel source** : projection FHIR R4 : `Claim` (demande de facturation ou de remboursement) et `ClaimResponse` (réponse d'adjudication)
 
 #### Rattachement
 
@@ -711,7 +711,7 @@ Ce concept est mobilisé par les capacités [CAP-15](../../04_architecture-repos
 
 - **Type** : Entité infrastructure
 - **Contraintes** : Certificat X.509v3 signé par l'autorité GDHCN nationale ; révocation en temps réel (CRL/OCSP) ; renouvellement avant expiration ; journalisation de toutes les vérifications
-- **Référentiel source** : GDHCN, ITU-T X.509
+- **Référentiel source** : GDHCN, ITU-T X.509 ; projection FHIR R4 : `Endpoint` (point de service de l'ancre et des listes CRL/OCSP), `Provenance` (attestation signée par l'autorité) et `Binary` (charge utile X.509)
 
 #### Rattachement
 

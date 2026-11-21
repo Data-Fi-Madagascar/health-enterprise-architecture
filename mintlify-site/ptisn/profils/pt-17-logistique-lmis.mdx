@@ -39,7 +39,7 @@ Périmètre : mouvements de stock (livraison, dispensation, transfert, destructi
 
 | Transaction | Acteurs | R/O | Standard |
 |----|----|----|----|
-| T1 — Remontée de niveaux de stock | LMIS → Référentiel | R | FHIR `InventoryReport` (R4) |
+| T1 — Remontée de niveaux de stock | LMIS → Référentiel | R | FHIR `SupplyDelivery` (R4), recherche du solde par établissement |
 | T2 — Mouvement de stock | LMIS → LMIS/Partenaire | R | FHIR `SupplyDelivery` / `SupplyRequest` (R4) |
 | T3 — Alerte rupture / péremption | LMIS → Niveaux pertinents | R | Événement d’alerte |
 | T4 — Échange interopérable | LMIS ↔ Partenaire | R | X-Road (STD-0003, ADR-0001) — STD-0009 |
@@ -49,8 +49,8 @@ R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 *Référence - objet CNISN/TOGAF mis en œuvre : ABB-AUDIT-PROVENANCE.
 ## 6. Content Modules
 
-- **FHIR `Medication` / `MedicationKnowledge`** : catalogue produit (codification GS1 GTIN).
-- **FHIR `InventoryReport`** : niveaux de stock par établissement.
+- **FHIR `Medication`** : catalogue produit (codification GS1 GTIN) et lot (numéro de lot, date de péremption).
+- **Niveaux de stock** : solde des mouvements par établissement (entrées moins sorties), conformément à STD-0009.
 - **FHIR `SupplyDelivery` / `SupplyRequest`** : mouvements (réception, transfert, dispensation, destruction), liés au lot et au lieu.
 - **Alerte** : rupture et péremption diffusées aux niveaux pertinents.
 
@@ -75,7 +75,7 @@ Il expose en outre un **profil d'échange logistique interopérable** entre LMIS
 
 ### Stock et mouvements
 
-- remontée des niveaux de stock par établissement (`InventoryReport`) ;
+- remontée des niveaux de stock par établissement (solde des mouvements `SupplyDelivery`) ;
 - événementisation de chaque mouvement (réception, transfert, dispensation, destruction) comme événement immuable, lié au lot et au lieu ;
 - réconciliation à somme nulle (Entrées − Sorties = Solde).
 
@@ -87,8 +87,8 @@ Il expose en outre un **profil d'échange logistique interopérable** entre LMIS
 
 | Type d'échange | Format recommandé |
 |----------------|-------------------|
-| Produit | GS1 GTIN + FHIR `Medication` / `MedicationKnowledge` |
-| Stock | FHIR `InventoryReport` (R4) |
+| Produit | GS1 GTIN + FHIR `Medication` |
+| Stock | Solde des mouvements FHIR `SupplyDelivery` (R4) |
 | Mouvement | FHIR `SupplyDelivery` / `SupplyRequest` (R4) |
 | Transport | X-Road (STD-0003, ADR-0001) |
 | Lieux | mCSD (annuaire de sites) |

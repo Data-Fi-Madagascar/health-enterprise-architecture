@@ -134,12 +134,17 @@ def extract_transactions(body):
 # Découverte des ressources FHIR et objets de données dans une transaction
 # ---------------------------------------------------------------------------
 
+# Vocabulaire de détection des ressources FHIR citées dans un profil. Il
+# couvre les ressources mobilisées par les profils d'implémentation. Le
+# vocabulaire normatif du dépôt reste celui de compile_fhir.FHIR_R4_RESOURCE_TYPES :
+# une ressource absente du paquet R4, ou de maturité FMM 0, n'a pas de
+# projection et n'est donc pas détectée ici.
 FHIR_RESOURCES = [
     "Patient", "Practitioner", "PractitionerRole", "Organization", "Location",
     "HealthcareService", "CodeSystem", "ValueSet", "ConceptMap",
     "MeasureReport", "Group", "AuditEvent", "Provenance", "Consent",
     "Composition", "ServiceRequest", "Observation", "Communication",
-    "Medication", "MedicationKnowledge", "InventoryReport", "SupplyDelivery",
+    "Medication", "SupplyDelivery",
     "SupplyRequest", "Coverage", "CoverageEligibilityRequest", "CoverageEligibilityResponse",
     "InsurancePlan",
     "Claim", "ClaimResponse", "PaymentNotice", "PlanDefinition",

@@ -37,10 +37,11 @@
   "x-hea-type": "objet-de-donnees",
   "x-hea-status": "draft",
   "x-hea-owner": "DEPSI",
-  "x-hea-fhir-resource": "Certificate",
+  "x-hea-fhir-resource": "Endpoint",
   "x-hea-fhir-resources": [
-    "Certificate",
-    "Endpoint"
+    "Endpoint",
+    "Provenance",
+    "Binary"
   ],
-  "x-hea-source-ref": "GDHCN, ITU-T X.509"
+  "x-hea-source-ref": "GDHCN, ITU-T X.509 ; projection FHIR R4 : `Endpoint` (point de service de l'ancre et des listes CRL/OCSP), `Provenance` (attestation signée par l'autorité) et `Binary` (charge utile X.509)"
 }

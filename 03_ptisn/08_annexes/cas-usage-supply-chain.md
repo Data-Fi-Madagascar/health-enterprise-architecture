@@ -51,7 +51,7 @@ La supply chain est un **cas d'usage métier** qui consomme le profil d'échange
 
 ## Phase 3 : Dispensation et stock au point de service
 
-Le point de service dispense et met à jour son stock en temps réel ; l'`InventoryReport` FHIR remonte le niveau de stock. Cela alimente la disponibilité des intrants pour les soins (VS-01) et la qualité (O3).
+Le point de service dispense et met à jour son stock en temps réel ; le solde des mouvements `SupplyDelivery` FHIR remonte le niveau de stock. Cela alimente la disponibilité des intrants pour les soins (VS-01) et la qualité (O3).
 
 ## Phase 4 : Alerte de rupture et riposte
 
