@@ -214,6 +214,7 @@ Le référentiel suit le modèle de relations d'ArchiMate : la **capacité** est
 | Service / Composant / Processus | `accesses` | Objet métier / Objet de données | Application/Component *access* Data Object | le service consomme / produit l'objet |
 | Objet métier / Objet de données | `accessed_by` | Service / Composant / Processus | inverse de `accesses` | navigabilité (coté objet) |
 | Composant (CMP) | `accesses` | Objet de données (DO) | Application Component *access* Data Object | le composant produit, expose ou met à jour l'objet de données |
+| Objet de données (DO) | `maps_to` | Capacité CAESN (CAP) | Association (extension HEA) | l'objet de données est au service de la capacité déclarée |
 | Objet de données (DO) | `constrained_by` | Terminologie (TERM) | Association sémantique (extension HEA) | les valeurs portées par l'objet sont codées par la terminologie |
 | Terminologie (TERM) | `constrains` | Objet de données (DO) | inverse de `constrained_by` | navigabilité (coté terminologie) |
 | Service (SRV) | `realizes` / `implements` | Capabilité CAESN / objet CNISN/TOGAF / chapitre ART | Service *realization* Capability/Requirement | le service met en œuvre l'objet ou la capabilité |
@@ -252,7 +253,7 @@ Le référentiel n'est pas une collection d'objets juxtaposés : il articule qua
 |---------|-------------------------------|--------------|----------------------|-------------------|
 | 1. Business | Que le système de santé doit-il garantir au citoyen ? | `capabilite` | CAP-01 à CAP-18 | `applies_to` porté par le processus (PRC vers CAP) |
 | 2. Application | Par quel moyen numérique la capacité est-elle tenue ? | `composant-applicatif` | CMP-01 à CMP-25 | `uses` porté par le processus (PRC vers CMP), `applies_to` porté par le composant (CMP vers PRC) |
-| 3. Données | Sur quelles données la capacité opère-t-elle ? | `objet-de-donnees` | DO-01 à DO-31 | `accesses` porté par le composant (CMP vers DO), `accessed_by` porté par l'objet (DO vers CMP) |
+| 3. Données | Sur quelles données la capacité opère-t-elle ? | `objet-de-donnees` | DO-01 à DO-31 | `accesses` porté par le composant (CMP vers DO), `accessed_by` porté par l'objet (DO vers CMP), `maps_to` porté par l'objet (DO vers CAP) |
 | 4. Sémantique | Selon quel référentiel de codes les données sont-elles interprétées ? | `terminology` | TERM-CODIFICATION-COMMUNE et les six terminologies de codes publics (TERM-SNOMED-CT, TERM-RXNORM, TERM-ATC, TERM-DCI, TERM-CIM-11, TERM-LOINC) | `constrained_by` porté par l'objet (DO vers TERM), `constrains` porté par la terminologie (TERM vers DO) |
 
 ### Les deux ponts et leur portée réelle
@@ -276,11 +277,12 @@ La chaîne de référence est celle de la prescription de chimiothérapie. Le co
 | Application (processus) | Prestation des soins cliniques | PRC-02 |
 | Application (composant) | Dossiers et statistiques de santé (hôpitaux), système d'information hospitalier de base | CMP-19 |
 | Données | Prescription, ressource FHIR MedicationRequest | DO-06 |
+| Données (attribution de portée) | Capacités servies par cet objet : médicaments et chaîne d'approvisionnement, offre de soins et continuité | CAP-10, CAP-01 |
 | Sémantique | Terminologie clinique SNOMED CT, codes de médicaments | TERM-SNOMED-CT |
 | Sémantique | Terminologie RxNorm des médicaments, source de correspondance internationale | TERM-RXNORM |
 | Sémantique | Classification ATC de l'OMS | TERM-ATC |
 
-Cette projection illustre la fonction de chaque pont. Le pont applicatif relie la capacité à un actif numérique identifiable et versionnable. Le pont données relie cet actif à un objet de données dont la ressource d'échange est fixée (FHIR MedicationRequest pour DO-06), ce qui rend la matérialité de l'échange discutable avec un tiers. Le pont sémantique fixe enfin les référentiels de codes admis pour les valeurs de l'objet, ce qui conditionne la comparabilité des données entre institutions et la validité des indicateurs calculés au-dessus.
+Cette projection illustre la fonction de chaque pont. Le pont applicatif relie la capacité à un actif numérique identifiable et versionnable. Le pont données relie cet actif à un objet de données dont la ressource d'échange est fixée (FHIR MedicationRequest pour DO-06), ce qui rend la matérialité de l'échange discutable avec un tiers. Le pont sémantique fixe enfin les référentiels de codes admis pour les valeurs de l'objet, ce qui conditionne la comparabilité des données entre institutions et la validité des indicateurs calculés au-dessus. L'attribution de portée referme la boucle en descendant : l'objet de données déclare les capacités qu'il sert, et le validateur confronte cette déclaration aux processus qui le manipulent pour s'assurer qu'au moins l'un d'eux réalise la capacité annoncée.
 
 ### Règles d'intégrité de la chaîne
 
@@ -293,8 +295,10 @@ Cette projection illustre la fonction de chaque pont. Le pont applicatif relie l
 | `uses` (PRC vers CMP) et `applies_to` (CMP vers PRC) restent symétriques | Composants applicatifs | `scripts/validate_ref.py` |
 | Tout objet de données est détenu par au moins un composant et manipulé par au moins un processus | Objets de données | `scripts/validate_ref.py` |
 | Toute terminologie est portée par au moins un composant applicatif | Terminologies | `scripts/validate_ref.py` |
+| Le `maps_to` d'un objet de données cible au moins une capacité CAESN, et uniquement des capacités | Objets de données | `scripts/validate_ref.py` |
+| Toute capacité déclarée par le `maps_to` d'un objet de données est réalisée par au moins un processus qui manipule cet objet | Objets de données et processus métiers | `scripts/validate_ref.py` |
 
-Ces règles sont strictes : le référentiel doit pouvoir être relu par un tiers sans reconstruire les relations à la main. L'état mesuré du corpus après correction est le suivant : sur les trente-huit composants, vingt déclarent des objets de données portés, les treize processus déclarent tous leurs données, les trente-et-un objets de données sont tous holders et tous utilisés, et les sept terminologies sont toutes portées par un composant.
+Ces règles sont strictes : le référentiel doit pouvoir être relu par un tiers sans reconstruire les relations à la main. L'état mesuré du corpus après correction est le suivant : sur les trente-huit composants, vingt déclarent des objets de données portés, les treize processus déclarent tous leurs données, les trente-et-un objets de données sont tous holders et tous utilisés, et les sept terminologies sont toutes portées par un composant. Les trente-et-un objets de données déclarent en outre, via `maps_to`, les capacités CAESN qu'ils servent, et chacune de ces capacités est réalisée par au moins un processus qui manipule l'objet. L'attribution de portée n'est donc plus une mention portée à côté de la chaîne : elle en est le maillon, et le validateur refuse toute capacité déclarée dont aucun processus ne porterait la réalisation.
 
 Une exception assumée existe pour les cinq composants de la couche de médiation (orchestrateur de parcours CMP-07, passerelle d'API CMP-15, registre de schémas CMP-16, courtier de messages CMP-17, compensateur de flux CMP-18) : ils transportent des objets de données sans être leur propriétaire, et ne déclarent donc pas d'`accesses` propre. Leur rattachement aux données est porté par les composants qui leur confient les flux. Le composant d'intégration CMP-06, qui assume la médiation de bout en bout, déclare en revanche les objets qu'il porte. Le socle transverse (infrastructure CMP-26 à CMP-31, sécurité CMP-32 à CMP-38) reste hors de la chaîne applicative par construction : il est atteint par `uses` depuis les composants qui l'exploitent et ne porte pas de données métier en propre.
 

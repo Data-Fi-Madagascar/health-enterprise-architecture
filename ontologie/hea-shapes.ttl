@@ -127,6 +127,9 @@ hea:ComposantShape a sh:NodeShape ;
 # --- Shape ObjetDeDonnees : contrainte sémantique vers une terminologie ---
 # Le pont sémantique impose que toute terminologie déclarée sur un objet de
 # données soit effectivement une terminologie du référentiel.
+# L'attribution de portée impose par ailleurs que l'objet de données
+# déclare au moins une capacité CAESN et que celle-ci soit bien une
+# capacité : c'est le maillon qui relie la couche données à la couche métier.
 hea:ObjetDeDonneesShape a sh:NodeShape ;
     sh:targetClass hea:ObjetDeDonnees ;
     sh:property [
@@ -134,6 +137,12 @@ hea:ObjetDeDonneesShape a sh:NodeShape ;
         sh:minCount 0 ;
         sh:class hea:Terminology ;
         sh:message "La terminologie qui contraint un objet de données doit être de type Terminology" ;
+    ] ;
+    sh:property [
+        sh:path hea:mapsTo ;
+        sh:minCount 1 ;
+        sh:class hea:Capabilite ;
+        sh:message "L'attribution de portée d'un objet de données doit viser au moins une capacité CAESN" ;
     ] .
 
 # --- Shape Terminology : identité et portée de la contrainte ---

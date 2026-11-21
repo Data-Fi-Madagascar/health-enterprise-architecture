@@ -15,7 +15,7 @@ related: ["VS-01-03", "VS-01-04", "VS-01-05", "VS-01", "BO-02", "BO-03"]
 tags: ["caesn", "niveau-1", "processus-metier", "PRC-02"]
 uses: ["CMP-19", "CMP-20", "CMP-21"]
 performed_by: ["ROL-02"]
-accesses: ["DO-05", "DO-06", "DO-07", "DO-08", "DO-09", "DO-10", "DO-11", "DO-12"]
+accesses: ["DO-05", "DO-06", "DO-07", "DO-08", "DO-09", "DO-10", "DO-11", "DO-12", "DO-13"]
 ---
 # Prestation des soins cliniques
 

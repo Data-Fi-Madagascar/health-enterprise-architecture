@@ -564,6 +564,62 @@ def check_chain_completeness(objects):
     return errors
 
 
+def check_data_object_capability_attribution(objects):
+    """Vérifie l'attribution de portée des objets de données vers les capacités.
+
+    Un objet de données déclare, via `maps_to`, les capacités CAESN qu'il sert.
+    Cette attribution n'est recevable que si elle est adossée à la chaîne : au
+    moins un processus métier qui manipule l'objet doit réaliser la capacité
+    déclarée. Sans cet adossement, la couche données n'est plus qu'une
+    juxtaposition d'attributions, sans lien démontré avec la couche métier.
+    """
+    errors = []
+    processus = {oid for oid, obj in objects.items()
+                 if obj.get("type") == "processus-metier"}
+
+    for oid, obj in sorted(objects.items()):
+        if obj.get("type") != TYPE_OBJET_DONNEES:
+            continue
+        relations = obj.get("relations", {})
+        declared = relations.get("maps_to", set())
+        if not declared:
+            errors.append((
+                obj["file"],
+                oid,
+                "",
+                "Objet de données sans attribution de capacité "
+                "(maps_to vide)",
+            ))
+            continue
+        accessors = relations.get("accessed_by", set()) & processus
+        for cap_id in sorted(declared):
+            cap = objects.get(cap_id)
+            if cap is None:
+                continue  # cible non résolue : signalée par load_relation_graph
+            if cap.get("type") != TYPE_CAPABILITE:
+                errors.append((
+                    obj["file"],
+                    oid,
+                    cap_id,
+                    "L'attribution maps_to doit cibler une capacité CAESN, "
+                    "pas un objet de type %s" % cap.get("type"),
+                ))
+                continue
+            realised = any(
+                cap_id in objects[prc].get("relations", {}).get("applies_to", set())
+                for prc in accessors
+            )
+            if not realised:
+                errors.append((
+                    obj["file"],
+                    oid,
+                    cap_id,
+                    "Capacité déclarée sans processus qui la réalise et qui "
+                    "manipule l'objet",
+                ))
+    return errors
+
+
 def check_partition_value_stream_coverage(objects):
     """Vérifie que chaque flux déclaré partage une capabilité avec sa partition."""
     errors = []
@@ -1001,6 +1057,18 @@ def main():
     else:
         print("[OK] La chaîne capability, processus, composant, données et "
               "terminologie est bouclée.")
+
+    attribution_errors = check_data_object_capability_attribution(objects)
+    if attribution_errors:
+        ok = False
+        print("\n[ERREUR] Attribution de portée des objets de données incohérente : %d"
+              % len(attribution_errors))
+        for f, source_id, target_id, message in attribution_errors[:50]:
+            print("  - %s (%s) -> %s : %s"
+                  % (os.path.relpath(f, REPO_ROOT), source_id, target_id, message))
+    else:
+        print("[OK] Chaque capacité déclarée par un objet de données est réalisée "
+              "par un processus qui manipule l'objet.")
 
     gap_governance_errors = check_gap_governance(objects)
     if gap_governance_errors:
