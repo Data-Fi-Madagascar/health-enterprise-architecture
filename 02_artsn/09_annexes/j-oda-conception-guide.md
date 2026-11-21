@@ -48,17 +48,14 @@ L'architecture ODA du référentiel HEA repose sur la séparation claire de deux
 ```
 hea/
 ├── 04_architecture-repository/                          # SOURCE DE VÉRITÉ (Niveau 3)
-│   ├── 02_architecture-elements/
-│   │   └── data/
-│   │       ├── data-objects/                           # Objets de données (MD/YAML)
-│   │       │   └── do-01.md ... do-31.md
-│   │       ├── reference-data/                         # Référentiels de données
-│   │       └── terminologies/                          # Terminologies de production
-│   └── 05_building-blocks/
-│       └── sbb/
-│           └── legacy-profiles/                       # Profils hérités
-│               ├── pt-06.md                            #   Profil mCSD
-│               └── pt-07.md                            #   Profil SVCM
+│   ├── 04_data-architecture/
+│   │   └── data-objects/                          # Objets de données (MD/YAML)
+│   │       └── do-01.md ... do-32.md
+│   └── 05_reference-library/
+│       └── standards-base/
+│           └── profiles/                          # Profils hérités
+│               ├── pt-06.md                       #   Profil mCSD
+│               └── pt-07.md                       #   Profil SVCM
 │
 ├── 02_artsn/
 │   └── 03_objets-de-donnees/

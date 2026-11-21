@@ -26,7 +26,7 @@ Cette partition isole l'architecture cible du flux VS-04 afin de gouverner les c
 
 ## Périmètre
 
-- Flux de valeur couvert : [VS-04](../../02_architecture-elements/strategy/value-streams/vs-04.md)
+- Flux de valeur couvert : [VS-04](../../03_business-architecture/strategy/value-streams/vs-04.md)
 - Niveau TOGAF : segment
 - Domaine principal : business
 - Etat d'architecture : cible

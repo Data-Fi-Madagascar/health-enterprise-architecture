@@ -143,6 +143,7 @@
         "01_cnisn/06_decisions/adr-0015-semantique-acces-donnees.md",
         "01_cnisn/06_decisions/adr-0016-projection-fhir-source-de-verite.md",
         "01_cnisn/06_decisions/adr-0017-reduction-redondance-objets-metier-composants.md",
+        "01_cnisn/06_decisions/adr-0018-reorganisation-arborescence-referentiel.md",
         "01_cnisn/06_decisions/adr-0000-template.md",
         "01_cnisn/06_decisions/adr-change-log.md",
         "01_cnisn/06_decisions/template-modification.md",

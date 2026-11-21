@@ -23,22 +23,22 @@ Périmètre : rapports périodiques d’activité et indicateurs de programme. H
 
 ## 2. Objet CNISN/TOGAF de référence
 
-- [ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md)
-- contribution à [ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../../04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md)
+- [ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-echange-mediation.md)
+- contribution à [ABB-EXPOSITION-DONNEES-ANALYTIQUES: Accès et exposition des données analytiques](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-exposition-donnees-analytiques.md)
 
 ## 3. Chapitres ART applicables
 
-- [ART-1: Intégration et ingestion](../../04_architecture-repository/04_patterns/artsn-rules/art-1.md)
-- [ART-2: Médiation et normalisation](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md)
-- [ART-5: Cohérence et qualité des données](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md)
-- [ART-6: Analytique et restitution](../../04_architecture-repository/04_patterns/artsn-rules/art-6.md)
+- [ART-1: Intégration et ingestion](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-1.md)
+- [ART-2: Médiation et normalisation](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md)
+- [ART-5: Cohérence et qualité des données](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-5.md)
+- [ART-6: Analytique et restitution](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-6.md)
 
 ## 4. Acteurs (Actors)
 
 - **Déclarant (Aggregate Data Reporter)** — établissement ou système de collecte soumettant un rapport périodique.
 - **Récepteur de données agrégées (Aggregate Data Receiver)** — entrepôt national recevant et accusant réception des rapports.
 
-*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-echange-mediation.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -49,7 +49,7 @@ Périmètre : rapports périodiques d’activité et indicateurs de programme. H
 
 R = requis ; O = optionnel.
 
-*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-echange-mediation.md).
 ## 6. Content Modules
 
 - **HL7 FHIR MeasureReport** : rapport d’indicateurs agrégés.
@@ -89,10 +89,10 @@ La plateforme nationale de traçabilité RMA constitue une première initiative 
 
 ## 12. Articulation avec les autres profils
 
-- [PT-07: terminologie et codification](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-07.md)
-- [PT-06: référentiel des structures](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-06.md)
-- [PT-09: analytique et exposition de données](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-09.md)
-- [PT-01: échange interinstitutionnel](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-01.md)
+- [PT-07: terminologie et codification](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-07.md)
+- [PT-06: référentiel des structures](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-06.md)
+- [PT-09: analytique et exposition de données](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-09.md)
+- [PT-01: échange interinstitutionnel](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-01.md)
 
 ## 13. Limites et dépendances
 

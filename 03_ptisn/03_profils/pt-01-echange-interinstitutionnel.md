@@ -34,16 +34,16 @@ Il ne couvre pas les échanges internes au secteur santé (voir PT-02).
 
 ## 2. Objet CNISN/TOGAF de référence
 
-[ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md)
+[ABB-ECHANGE-MEDIATION: Échange et médiation inter-systèmes](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-echange-mediation.md)
 
 [COMP-HOMOLOGATION-INTEROPERABILITE: Partage intersectoriel des données](../../04_architecture-repository/06_governance/compliance/comp-homologation-interoperabilite.md)
 
 ## 3. Chapitres ART applicables
 
-- [ART-0: accords de partage](../../04_architecture-repository/04_patterns/artsn-rules/art-0.md)
-- [ART-1: intégration et ingestion](../../04_architecture-repository/04_patterns/artsn-rules/art-1.md)
-- [ART-7: sécurité et résidence](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
-- [ART-11: coordination intersectorielle](../../04_architecture-repository/04_patterns/artsn-rules/art-11.md)
+- [ART-0: accords de partage](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-0.md)
+- [ART-1: intégration et ingestion](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-1.md)
+- [ART-7: sécurité et résidence](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-7.md)
+- [ART-11: coordination intersectorielle](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-11.md)
 
 ## 4. Acteurs (Actors)
 
@@ -54,7 +54,7 @@ Dans le sens IHE (systèmes/composants assumant un rôle dans les échanges), le
 - **Serveur de sécurité (Security Server)** — point de raccordement de chaque membre à la fédération ; assure authentification, chiffrement, signature et journalisation au niveau transport.
 - **Autorité de gouvernance du CNI** — tient la fédération de confiance et les politiques d’accès/résidence communes.
 
-*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-echange-mediation.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -65,7 +65,7 @@ Dans le sens IHE (systèmes/composants assumant un rôle dans les échanges), le
 
 R = requis pour revendiquer le profil ; O = optionnel.
 
-*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-ECHANGE-MEDIATION](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-echange-mediation.md).
 ## 6. Content Modules
 
 - **En-têtes X-Road** : client (member/subsystem), serveur, `userId`, service, représentation temporelle.
@@ -122,13 +122,13 @@ La conformité est attestée par la **preuve de conformité au CNI** (§10) : al
 
 Le service national d’échange ne remplace pas les fonctions assurées par d’autres profils ; il s’y raccorde :
 
-- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md)
-- [PT-05: registre des professionnels](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md)
-- [PT-07: terminologie et codification](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-07.md)
-- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md)
-- [PT-11: consentement et bases d’autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-11.md)
-- [PT-02: médiation intra-secteur](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-02.md)
-- [PT-16: orchestration de processus](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-16.md)
+- [PT-04: résolution d’identité bénéficiaire](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-04.md)
+- [PT-05: registre des professionnels](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-05.md)
+- [PT-07: terminologie et codification](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-07.md)
+- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-10.md)
+- [PT-11: consentement et bases d’autorisation](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-11.md)
+- [PT-02: médiation intra-secteur](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-02.md)
+- [PT-16: orchestration de processus](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-16.md)
 
 ## 13. Limites et dépendances
 

@@ -108,7 +108,7 @@ Le CAESN est organisé en **11 domaines** :
 
 ## 4. Catalogue des capabilités
 
-Les 18 capabilités couvrent l'ensemble du système de santé. Le catalogue de référence est le référentiel d'objets [`CAP-01` à `CAP-18`](03_capabilities/maturity.md), dont les définitions canoniques sont les fiches du [référentiel d'architecture](../04_architecture-repository/02_architecture-elements/strategy/capabilities/) ; la matrice de maturité est le rendu opérationnel de ce même ensemble.
+Les 18 capabilités couvrent l'ensemble du système de santé. Le catalogue de référence est le référentiel d'objets [`CAP-01` à `CAP-18`](03_capabilities/maturity.md), dont les définitions canoniques sont les fiches du [référentiel d'architecture](../04_architecture-repository/03_business-architecture/strategy/capabilities) ; la matrice de maturité est le rendu opérationnel de ce même ensemble.
 
 | Capacité | Description |
 |----------|-------------|

@@ -55,6 +55,7 @@ Chaque ADR suit le modèle type, avec un statut parmi `proposé`, `accepté`, `a
 | adr-0015 | "ADR-0015 : Deux emplois de l'accès aux données, adossement des arêtes de processus et autorité du système de référence" | candidate | 2026-11-21 |
 | adr-0016 | "ADR-0016 : La déclaration `fhir_resources` fait foi sur la projection FHIR des objets de données" | candidate | 2026-11-21 |
 | adr-0017 | "ADR-0017 : Retrait des objets métier au profit des thèmes de données et fusion dans CMP-10" | candidate | 2026-11-21 |
+| adr-0018 | "ADR-0018 : Réorganisation de l'arborescence du référentiel d'architecture en couches alignées sur le cycle de vie" | candidate | 2026-11-21 |
 
 
 ## Outils de gestion des décisions

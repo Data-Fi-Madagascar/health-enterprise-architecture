@@ -28,40 +28,40 @@ Ce document définit le modèle d’objets du référentiel. Il est la source de
 |------|--------|------------|--------------|---------|
 | `architecture-partition` | actif | `04_architecture-repository/01_partitions/<famille>/` | `part-` | partitions TOGAF |
 | `repository-view` | non indexé | `04_architecture-repository/01_partitions/index.md` et `04_architecture-repository/08_views/togaf/` | `view-` | vues dérivées TOGAF |
-| `stakeholder` | actif | `04_architecture-repository/02_architecture-elements/motivation/stakeholders/` | `pp-` | parties prenantes CAESN |
-| `business-value` | actif | `04_architecture-repository/02_architecture-elements/motivation/values/` | `val-` | valeurs CAESN |
-| `principe` | actif | `04_architecture-repository/02_architecture-elements/motivation/principles/` | `p-`, `p-int-`, `pa-`, `pd-` | principes CAESN et CNISN |
-| `flux-valeur` | actif | `04_architecture-repository/02_architecture-elements/strategy/value-streams/` | `vs-` | flux de valeur CAESN |
-| `capabilite` | actif | `04_architecture-repository/02_architecture-elements/strategy/capabilities/` | `cap-` | capacités CAESN |
-| `etape-valeur` | actif | `04_architecture-repository/02_architecture-elements/strategy/value-stages/` | `ev-` | étapes de valeur CAESN |
-| `acteur` | actif | `04_architecture-repository/02_architecture-elements/business/actors/` | `act-` | acteurs métier CAESN |
-| `role` | actif | `04_architecture-repository/02_architecture-elements/business/roles/` | `rol-` | rôles métier CAESN |
-| `business-location` | actif | `04_architecture-repository/02_architecture-elements/business/locations/` | `loc-` | localisations métier |
-| `processus-metier` | actif | `04_architecture-repository/02_architecture-elements/business/processes/` | `prc-` | processus métier CAESN |
-| `service` | actif legacy conservé | `04_architecture-repository/02_architecture-elements/business/business-services/` pour `SRV-01` ; `04_architecture-repository/05_building-blocks/abb/legacy-services/` pour `SRV-02..06` | `srv-` | services transverses |
-| `objet-de-donnees` | actif | `04_architecture-repository/02_architecture-elements/data/data-objects/` | `p-`, `s-`, `d-`, `f-`, `r-`, `e-`, `t-` | objets de données ARTSN |
-| `reference-data` | actif | `04_architecture-repository/02_architecture-elements/data/reference-data/` | `ref-` | données de référence |
-| `terminology` | actif | `04_architecture-repository/02_architecture-elements/data/terminologies/` | `term-` | terminologies |
-| `exigence` | actif | `04_architecture-repository/03_requirements/` | `enf-`, `ex-` | exigences ARTSN |
-| `architecture-pattern` | actif | `04_architecture-repository/04_patterns/<famille>/` | `pat-` | patrons et règles ARTSN |
-| `architecture-building-block` | actif | `04_architecture-repository/05_building-blocks/abb/` | `abb-` | building blocks d'architecture |
-| `solution-building-block` | actif | `04_architecture-repository/05_building-blocks/sbb/` | `sbb-` | building blocks de solution |
+| `stakeholder` | actif | `04_architecture-repository/03_business-architecture/motivation/stakeholders/` | `pp-` | parties prenantes CAESN |
+| `business-value` | actif | `04_architecture-repository/03_business-architecture/motivation/values/` | `val-` | valeurs CAESN |
+| `principe` | actif | `04_architecture-repository/03_business-architecture/motivation/principles/` | `p-`, `p-int-`, `pa-`, `pd-` | principes CAESN et CNISN |
+| `flux-valeur` | actif | `04_architecture-repository/03_business-architecture/strategy/value-streams/` | `vs-` | flux de valeur CAESN |
+| `capabilite` | actif | `04_architecture-repository/03_business-architecture/strategy/capabilities/` | `cap-` | capacités CAESN |
+| `etape-valeur` | actif | `04_architecture-repository/03_business-architecture/strategy/value-stages/` | `ev-` | étapes de valeur CAESN |
+| `acteur` | actif | `04_architecture-repository/03_business-architecture/business/actors/` | `act-` | acteurs métier CAESN |
+| `role` | actif | `04_architecture-repository/03_business-architecture/business/roles/` | `rol-` | rôles métier CAESN |
+| `business-location` | actif | `04_architecture-repository/03_business-architecture/business/locations/` | `loc-` | localisations métier |
+| `processus-metier` | actif | `04_architecture-repository/03_business-architecture/business/processes/` | `prc-` | processus métier CAESN |
+| `service` | actif legacy conservé | `04_architecture-repository/03_business-architecture/business/business-services/` | `srv-` | services transverses |
+| `objet-de-donnees` | actif | `04_architecture-repository/04_data-architecture/data-objects/` | `p-`, `s-`, `d-`, `f-`, `r-`, `e-`, `t-` | objets de données ARTSN |
+| `reference-data` | actif | `04_architecture-repository/05_reference-library/standards-base/code-systems/` | `ref-` | données de référence |
+| `terminology` | actif | `04_architecture-repository/05_reference-library/standards-base/code-systems/` | `term-` | terminologies |
+| `exigence` | actif | `04_architecture-repository/02_requirements/` | `enf-`, `ex-` | exigences ARTSN |
+| `architecture-pattern` | actif | `04_architecture-repository/05_reference-library/patterns/` | `pat-` | patrons et règles ARTSN |
+| `architecture-building-block` | actif | `04_architecture-repository/05_reference-library/building-blocks/abb/` | `abb-` | building blocks d'architecture |
+| `solution-building-block` | actif | `04_architecture-repository/05_reference-library/building-blocks/sbb/` | `sbb-` | building blocks de solution |
 | `architecture-contract` | actif | `04_architecture-repository/06_governance/architecture-contracts/` | `contract-` | contrats d'architecture |
 | `compliance-rule` | actif | `04_architecture-repository/06_governance/compliance/` | `cmp-rule-` | règles de conformité |
 | `evidence` | actif | `04_architecture-repository/06_governance/evidence/` | `evd-` | preuves de conformité |
 | `work-package` | actif | `04_architecture-repository/07_migration/work-packages/` | `wp-` | paquets de travail |
 | `plateau` | actif | `04_architecture-repository/07_migration/plateaux/` | `pl-` | états cibles de l'architecture |
 | `gap` | actif | `04_architecture-repository/07_migration/gaps/` | `gap-` | écarts entre plateaux |
-| `fondation` | legacy conservé | `04_architecture-repository/04_patterns/foundations/` | `f-` | fondations ARTSN existantes |
-| `chapitre` | legacy conservé | `04_architecture-repository/04_patterns/artsn-rules/` | `art-` | règles ARTSN existantes |
-| `composant-applicatif` | legacy conservé | `04_architecture-repository/05_building-blocks/abb/legacy-components/` | `cmp-` | composants applicatifs CMP-01..25 |
-| `composant-infrastructure` | legacy conservé | `04_architecture-repository/05_building-blocks/abb/legacy-components/` | `cmp-` | composants d'infrastructure CMP-26..31 |
-| `composant-securite` | legacy conservé | `04_architecture-repository/05_building-blocks/abb/legacy-components/` | `cmp-` | composants de sécurité CMP-32..38 |
-| `profil` | legacy conservé | `04_architecture-repository/05_building-blocks/sbb/legacy-profiles/` | `pt-` | profils PTISN existants |
+| `fondation` | legacy conservé | `04_architecture-repository/05_reference-library/patterns/foundations/` | `f-` | fondations ARTSN existantes |
+| `chapitre` | legacy conservé | `04_architecture-repository/05_reference-library/patterns/artsn-rules/` | `art-` | règles ARTSN existantes |
+| `composant-applicatif` | legacy conservé | `04_architecture-repository/05_reference-library/building-blocks/sbb/` | `cmp-` | composants applicatifs CMP-01..25 |
+| `composant-infrastructure` | legacy conservé | `04_architecture-repository/05_reference-library/building-blocks/sbb/` | `cmp-` | composants d'infrastructure CMP-26..31 |
+| `composant-securite` | legacy conservé | `04_architecture-repository/05_reference-library/building-blocks/sbb/` | `cmp-` | composants de sécurité CMP-32..38 |
+| `profil` | legacy conservé | `04_architecture-repository/05_reference-library/standards-base/profiles/` | `pt-` | profils PTISN existants |
 | `registre-gouvernance` | legacy conservé | `04_architecture-repository/06_governance/registers/` | `cmp-` | registres de gouvernance CMP-39..46 |
-| `partie-prenante` | legacy conservé | `04_architecture-repository/02_architecture-elements/motivation/stakeholders/` | `pp-` | ancien nom de type pour `stakeholder` |
-| `valeur` | legacy conservé | `04_architecture-repository/02_architecture-elements/motivation/values/` | `val-` | ancien nom de type pour `business-value` |
-| `lieu` | legacy conservé | `04_architecture-repository/02_architecture-elements/business/locations/` | `loc-` | ancien nom de type pour `business-location` |
+| `partie-prenante` | legacy conservé | `04_architecture-repository/03_business-architecture/motivation/stakeholders/` | `pp-` | ancien nom de type pour `stakeholder` |
+| `valeur` | legacy conservé | `04_architecture-repository/03_business-architecture/motivation/values/` | `val-` | ancien nom de type pour `business-value` |
+| `lieu` | legacy conservé | `04_architecture-repository/03_business-architecture/business/locations/` | `loc-` | ancien nom de type pour `business-location` |
 | `capacite` | supprimé des objets actifs | aucune fiche active | n/a | ancien type d'interopérabilité interdit par `scripts/validate_ref.py` |
 | `meta` | non indexé | `04_architecture-repository/00_metamodel/` | `schema` | métamodèle et documentation technique |
 
@@ -178,7 +178,7 @@ Le corps suit le gabarit `H1 (titre) → H2 (finalité / contenu) → H3 (sous-s
 
 ## Liens
 
-- [ABB-IDENTITE-BENEFICIAIRE — Résolution d'identité du bénéficiaire](../05_building-blocks/abb/abb-identite-beneficiaire.md)
+- [ABB-IDENTITE-BENEFICIAIRE — Résolution d'identité du bénéficiaire](../05_reference-library/building-blocks/abb/abb-identite-beneficiaire.md)
 ```
 
 - Le **contenu textuel** des objets n’est **pas reformulé** : il est copié tel quel depuis la source (seule la structure de titres peut être normalisée).

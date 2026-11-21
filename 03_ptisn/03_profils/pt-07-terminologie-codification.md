@@ -23,20 +23,20 @@ Périmètre : consultation et gestion de systèmes de codes, ensembles de valeur
 
 ## 2. Objet CNISN/TOGAF de référence
 
-[ABB-SERVICE-TERMINOLOGIE: Terminologie et codification communes](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md)
+[ABB-SERVICE-TERMINOLOGIE: Terminologie et codification communes](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-service-terminologie.md)
 
 ## 3. Chapitres ART applicables
 
-- [ART-2: normalisation sémantique](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md)
-- [ART-4: référentiels](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
-- [ART-5: qualité](../../04_architecture-repository/04_patterns/artsn-rules/art-5.md)
+- [ART-2: normalisation sémantique](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md)
+- [ART-4: référentiels](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md)
+- [ART-5: qualité](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-5.md)
 
 ## 4. Acteurs (Actors)
 
 - **Consommateur terminologique (ValueSet Consumer)** — système résolvant/expectant des codes et ensembles de valeurs.
 - **Dépôt terminologique (ValueSet Directory)** — tient et diffuse les CodeSystem, ValueSet, ConceptMap nationaux.
 
-*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-SERVICE-TERMINOLOGIE](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-SERVICE-TERMINOLOGIE](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-service-terminologie.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -48,7 +48,7 @@ Périmètre : consultation et gestion de systèmes de codes, ensembles de valeur
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-SERVICE-TERMINOLOGIE](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-SERVICE-TERMINOLOGIE](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-service-terminologie.md).
 ## 6. Content Modules
 
 - **HL7 FHIR CodeSystem** : système de codes national ou référencé.
@@ -92,10 +92,10 @@ Conformité attestée par la publication des ressources `CodeSystem`/`ValueSet`/
 
 ## 12. Articulation avec les autres profils
 
-- [PT-02: médiation intra-secteur](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-02.md)
-- [PT-04: résolution d’identité](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md)
-- [PT-05: registre des professionnels](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md)
-- [PT-11: consentement et bases d’autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-11.md)
+- [PT-02: médiation intra-secteur](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-02.md)
+- [PT-04: résolution d’identité](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-04.md)
+- [PT-05: registre des professionnels](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-05.md)
+- [PT-11: consentement et bases d’autorisation](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-11.md)
 
 Le service terminologique est une dépendance transverse de tous les profils métier.
 

@@ -19,17 +19,17 @@ related: ["ABB-ELIGIBILITE-COUVERTURE", "CAP-07", "ART-4C", "ART-9", "CMP-12"]
 
 ## 1. Objet et périmètre
 
-Le **profil PT-20 — Éligibilité et couverture** définit la consultation d'une couverture et la vérification des droits d'un bénéficiaire auprès du registre national d'éligibilité. Il réalise [ABB-ELIGIBILITE-COUVERTURE](../../04_architecture-repository/05_building-blocks/abb/abb-eligibilite-couverture.md) pour la capacité [CAP-07](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-07.md). Il sépare la décision d'éligibilité de la résolution d'identité et des échanges de réclamations et paiements.
+Le **profil PT-20 — Éligibilité et couverture** définit la consultation d'une couverture et la vérification des droits d'un bénéficiaire auprès du registre national d'éligibilité. Il réalise [ABB-ELIGIBILITE-COUVERTURE](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-eligibilite-couverture.md) pour la capacité [CAP-07](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-07.md). Il sépare la décision d'éligibilité de la résolution d'identité et des échanges de réclamations et paiements.
 
 ## 2. Objet CNISN/TOGAF de référence
 
-- [ABB-ELIGIBILITE-COUVERTURE : service d'éligibilité et de couverture](../../04_architecture-repository/05_building-blocks/abb/abb-eligibilite-couverture.md)
-- [CMP-12 : composant d'éligibilité et de couverture](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-12.md)
+- [ABB-ELIGIBILITE-COUVERTURE : service d'éligibilité et de couverture](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-eligibilite-couverture.md)
+- [CMP-12 : composant d'éligibilité et de couverture](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-12.md)
 
 ## 3. Chapitres ART applicables
 
-- [ART-4C : éligibilité et couverture](../../04_architecture-repository/04_patterns/artsn-rules/art-4c.md)
-- [ART-9 : garanties transactionnelles](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md)
+- [ART-4C : éligibilité et couverture](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4c.md)
+- [ART-9 : garanties transactionnelles](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-9.md)
 
 ## 4. Acteurs (Actors)
 
@@ -61,7 +61,7 @@ T3 retrouve la réponse par `GET [base]/CoverageEligibilityResponse?request=Cove
 - **FHIR R4 `Coverage`** : identifiant de couverture, bénéficiaire, période de validité, statut et payeur.
 - **FHIR R4 `CoverageEligibilityRequest` / `CoverageEligibilityResponse`** : demande et réponse de vérification des droits, avec corrélation et horodatage.
 - **FHIR R4 `InsurancePlan`** : catalogue optionnel des régimes et prestations.
-- **Objets de données** : [DO-14 : Couverture sanitaire et éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-14.md), [DO-16 : Facturation et demande de remboursement](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-16.md) et [DO-17 : Demande et preuve de vérification d'éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-17.md), selon les contrats publiés.
+- **Objets de données** : [DO-14 : Couverture sanitaire et éligibilité](../../04_architecture-repository/04_data-architecture/data-objects/do-14.md), [DO-16 : Facturation et demande de remboursement](../../04_architecture-repository/04_data-architecture/data-objects/do-16.md) et [DO-17 : Demande et preuve de vérification d'éligibilité](../../04_architecture-repository/04_data-architecture/data-objects/do-17.md), selon les contrats publiés.
 
 ## 7. Options
 
@@ -70,7 +70,7 @@ T3 retrouve la réponse par `GET [base]/CoverageEligibilityResponse?request=Cove
 
 ## 8. Exigences de sécurité, audit et niveau de service
 
-Les appels sont authentifiés et autorisés suivant [PT-10](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md). L'accès aux droits est limité à la finalité de prise en charge déclarée ; les données personnelles et les réponses sont protégées en transit et au repos. Chaque consultation et décision est journalisée avec acteur, finalité, corrélation, horodatage et résultat selon [PT-12](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-12.md). La corrélation des échanges et la reprise des transactions suivent ART-9. Les journaux ne doivent pas exposer inutilement le détail des prestations.
+Les appels sont authentifiés et autorisés suivant [PT-10](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-10.md). L'accès aux droits est limité à la finalité de prise en charge déclarée ; les données personnelles et les réponses sont protégées en transit et au repos. Chaque consultation et décision est journalisée avec acteur, finalité, corrélation, horodatage et résultat selon [PT-12](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-12.md). La corrélation des échanges et la reprise des transactions suivent ART-9. Les journaux ne doivent pas exposer inutilement le détail des prestations.
 
 **SLA** : niveau important pour T1–T3 (disponibilité cible 99,9 %, réponse sous 5 s au 95e percentile, hors indisponibilité des sources amont). L'initiative publie ses seuils mesurés et sa procédure de reprise ; aucun seuil n'est imposé à l'option T4 avant cadrage.
 
@@ -80,9 +80,9 @@ Une implémentation conforme démontre les transactions requises T1–T3 et leur
 
 ## 10. Articulation et dépendances
 
-- [PT-04 : résolution d'identité bénéficiaire](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md) fournit l'identité de référence ; PT-20 évalue les droits de cette personne.
-- [PT-10 : confiance et autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md) protège l'accès aux données et aux décisions.
-- [PT-12 : audit et provenance](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-12.md) recueille la trace des consultations et décisions.
-- [PT-18 : réclamations et paiements](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-18.md) consomme une information de droits mais reste responsable des transactions financières.
+- [PT-04 : résolution d'identité bénéficiaire](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-04.md) fournit l'identité de référence ; PT-20 évalue les droits de cette personne.
+- [PT-10 : confiance et autorisation](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-10.md) protège l'accès aux données et aux décisions.
+- [PT-12 : audit et provenance](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-12.md) recueille la trace des consultations et décisions.
+- [PT-18 : réclamations et paiements](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-18.md) consomme une information de droits mais reste responsable des transactions financières.
 
 <!-- END:GENERATED -->

@@ -23,13 +23,13 @@ Périmètre : publication et invocation d’artefacts de connaissance (guides de
 
 ## 2. Objet CNISN/TOGAF de référence
 
-- [ABB-SERVICE-TERMINOLOGIE: Terminologie et codification](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md)
-- [CMP-08: Répertoire de données cliniques opérationnelles](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-08.md) (source de vérité clinique)
+- [ABB-SERVICE-TERMINOLOGIE: Terminologie et codification](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-service-terminologie.md)
+- [CMP-08: Répertoire de données cliniques opérationnelles](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-08.md) (source de vérité clinique)
 
 ## 3. Chapitres ART applicables
 
-- [ART-12: Aide à la décision clinique](../../04_architecture-repository/04_patterns/artsn-rules/art-12.md)
-- [ART-2: normalisation sémantique](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md)
+- [ART-12: Aide à la décision clinique](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-12.md)
+- [ART-2: normalisation sémantique](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md)
 
 ## 4. Acteurs (Actors)
 
@@ -37,7 +37,7 @@ Périmètre : publication et invocation d’artefacts de connaissance (guides de
 - **Service CDS (Knowledge Service)** — expose les artefacts et répond aux invocations contextuelles.
 - **Application de point de service (Point of Service / EHR)** — invoque le CDS et présente la recommandation au professionnel.
 
-*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-SERVICE-TERMINOLOGIE](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-SERVICE-TERMINOLOGIE](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-service-terminologie.md).
 ## 5. Transactions
 
 | Transaction | Acteurs | R/O | Standard |
@@ -48,7 +48,7 @@ Périmètre : publication et invocation d’artefacts de connaissance (guides de
 
 R = requis ; O = optionnel (à définir si le dépôt ne précise pas).
 
-*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-SERVICE-TERMINOLOGIE](../../04_architecture-repository/05_building-blocks/abb/abb-service-terminologie.md).
+*Référence - objet CNISN/TOGAF mis en œuvre : [ABB-SERVICE-TERMINOLOGIE](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-service-terminologie.md).
 ## 6. Content Modules
 
 - **FHIR `PlanDefinition` / `ActivityDefinition`** : règles de décision, ordonnances informatisées, guides de pratique.
@@ -96,9 +96,9 @@ Aucun produit national n’est encore retenu (**statut : à instruire**). Les ar
 
 ## 12. Articulation avec les autres profils
 
-- [PT-07: terminologie et codification](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-07.md)
-- [PT-05: registre des professionnels](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md)
-- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-10.md)
+- [PT-07: terminologie et codification](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-07.md)
+- [PT-05: registre des professionnels](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-05.md)
+- [PT-10: confiance, authentification, autorisation](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-10.md)
 
 ## 13. Limites et dépendances
 

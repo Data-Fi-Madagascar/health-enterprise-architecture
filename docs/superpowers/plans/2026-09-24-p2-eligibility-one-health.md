@@ -118,17 +118,17 @@ git commit -m "test: enforce partition value-stream coverage"
 ### Task 2: Créer l'ABB d'éligibilité et corriger les relations héritées
 
 **Files:**
-- Create: `04_architecture-repository/05_building-blocks/abb/abb-eligibilite-couverture.md`
+- Create: `04_architecture-repository/05_reference-library/building-blocks/abb/abb-eligibilite-couverture.md`
 - Create: `01_cnisn/06_decisions/adr-0011-eligibilite-couverture.md`
-- Modify: `04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-12.md`
-- Modify: `04_architecture-repository/05_building-blocks/abb/abb-registre-professionnels.md`
-- Modify: `04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md`
-- Modify: `04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-11.md`
+- Modify: `04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-12.md`
+- Modify: `04_architecture-repository/05_reference-library/building-blocks/abb/abb-registre-professionnels.md`
+- Modify: `04_architecture-repository/05_reference-library/standards-base/profiles/pt-05.md`
+- Modify: `04_architecture-repository/05_reference-library/standards-base/profiles/pt-11.md`
 - Modify: `04_architecture-repository/07_migration/work-packages/wp-03.md`
-- Modify: `04_architecture-repository/02_architecture-elements/data/data-objects/do-14.md`
-- Modify: `04_architecture-repository/02_architecture-elements/data/data-objects/do-15.md`
-- Modify: `04_architecture-repository/02_architecture-elements/data/data-objects/do-16.md`
-- Modify: `04_architecture-repository/02_architecture-elements/data/data-objects/do-17.md`
+- Modify: `04_architecture-repository/04_data-architecture/data-objects/do-14.md`
+- Modify: `04_architecture-repository/04_data-architecture/data-objects/do-15.md`
+- Modify: `04_architecture-repository/04_data-architecture/data-objects/do-16.md`
+- Modify: `04_architecture-repository/04_data-architecture/data-objects/do-17.md`
 - Modify: `tests/test_validate_ref.py`
 
 **Interfaces:**
@@ -143,7 +143,7 @@ Ajouter :
 
 ```python
 def test_eligibility_is_separate_from_identity_and_consent(self):
-    abb = Path("04_architecture-repository/05_building-blocks/abb/abb-eligibilite-couverture.md")
+    abb = Path("04_architecture-repository/05_reference-library/building-blocks/abb/abb-eligibilite-couverture.md")
     self.assertEqual({"CAP-07"}, self.relation_values(abb, "maps_to"))
     self.assertEqual({"PART-VS-03"}, self.relation_values(abb, "partitions"))
     self.assertEqual({"ART-4C", "ART-9"}, self.relation_values(abb, "implements"))
@@ -152,9 +152,9 @@ def test_eligibility_is_separate_from_identity_and_consent(self):
         self.relation_values(abb, "accesses"),
     )
 
-    professionals = Path("04_architecture-repository/05_building-blocks/abb/abb-registre-professionnels.md")
-    pt05 = Path("04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-05.md")
-    pt11 = Path("04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-11.md")
+    professionals = Path("04_architecture-repository/05_reference-library/building-blocks/abb/abb-registre-professionnels.md")
+    pt05 = Path("04_architecture-repository/05_reference-library/standards-base/profiles/pt-05.md")
+    pt11 = Path("04_architecture-repository/05_reference-library/standards-base/profiles/pt-11.md")
     self.assertNotIn("ART-4C", self.relation_values(professionals, "implements"))
     self.assertNotIn("ART-4C", self.relation_values(pt05, "implements"))
     self.assertNotIn("CMP-12", self.relation_values(pt11, "applies_to"))
@@ -241,7 +241,7 @@ git commit -m "feat: model eligibility coverage building block"
 ### Task 3: Ajouter PT-20 et son contrat OpenAPI
 
 **Files:**
-- Create: `04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-20.md`
+- Create: `04_architecture-repository/05_reference-library/standards-base/profiles/pt-20.md`
 - Create: `03_ptisn/03_profils/pt-20-eligibilite-couverture.md`
 - Create: `03_ptisn/schemas/openapi/pt-20.json` (généré)
 - Modify: `scripts/compilers/compile_openapi.py`
@@ -286,7 +286,7 @@ if __name__ == "__main__":
 Ajouter dans `CanonicalMappingTests` un test qui exige :
 
 ```python
-pt20 = Path("04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-20.md")
+pt20 = Path("04_architecture-repository/05_reference-library/standards-base/profiles/pt-20.md")
 self.assertEqual(
     {"ABB-ELIGIBILITE-COUVERTURE", "CAP-07"},
     self.relation_values(pt20, "maps_to"),
@@ -384,9 +384,9 @@ git commit -m "feat: add eligibility coverage profile PT-20"
 **Files:**
 - Create: `01_cnisn/06_decisions/adr-0012-one-health-pilotage.md`
 - Modify: `04_architecture-repository/01_partitions/sectorielles/part-one-health.md`
-- Modify: `04_architecture-repository/05_building-blocks/abb/abb-echange-mediation.md`
-- Modify: `04_architecture-repository/05_building-blocks/abb/abb-exposition-donnees-analytiques.md`
-- Modify: `04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-15.md`
+- Modify: `04_architecture-repository/05_reference-library/building-blocks/abb/abb-echange-mediation.md`
+- Modify: `04_architecture-repository/05_reference-library/building-blocks/abb/abb-exposition-donnees-analytiques.md`
+- Modify: `04_architecture-repository/05_reference-library/standards-base/profiles/pt-15.md`
 - Modify: `04_architecture-repository/07_migration/work-packages/wp-07.md`
 - Modify: `tests/test_validate_ref.py`
 - Modify: `tests/test_partition_view.py`
@@ -406,7 +406,7 @@ def test_one_health_covers_surveillance_and_governance(self):
         {"CAP-08", "CAP-18", "VS-02", "VS-04"},
         self.relation_values(partition, "applies_to"),
     )
-    pt15 = Path("04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-15.md")
+    pt15 = Path("04_architecture-repository/05_reference-library/standards-base/profiles/pt-15.md")
     self.assertTrue(
         {"ABB-ECHANGE-MEDIATION", "ABB-EXPOSITION-DONNEES-ANALYTIQUES", "CAP-05", "CAP-08", "CAP-18"}
         <= self.relation_values(pt15, "maps_to")

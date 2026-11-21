@@ -20,7 +20,7 @@ tags: ["artsn", "gap", "gap-03", "feuille-de-route"]
 
 Le décret CNASN et la charte de protection doivent être publiés pour valider juridiquement le socle. Tant que l'état initial n'atteint pas le plateau 1 sur le plan juridique, le déploiement opère dans une zone de risque réglementaire.
 
-Il s'inscrit [entre l'état initial et le plateau 1](../plateaux/pl-01.md), et repose sur le [composant de gouvernance](../../06_governance/registers/cmp-39.md) et la [capacité « Socle technique et sécurité »](../../05_building-blocks/abb/abb-identite-beneficiaire.md).
+Il s'inscrit [entre l'état initial et le plateau 1](../plateaux/pl-01.md), et repose sur le [composant de gouvernance](../../06_governance/registers/cmp-39.md) et la [capacité « Socle technique et sécurité »](../../05_reference-library/building-blocks/abb/abb-identite-beneficiaire.md).
 
 ## Plateau source et cible
 

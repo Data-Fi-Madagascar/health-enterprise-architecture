@@ -31,7 +31,7 @@ Le CAESN structure les principes en **12 principes architecturaux transversaux (
 
 Cette table établit la correspondance entre les deux nomenclatures. Les principes PA et PD sont la référence : les niveaux ARTSN et PTISN les référencent sans renumérotation, et les règles P-INT en constituent l'application opérationnelle.
 
-Les définitions canoniques sont les fiches du [référentiel d'architecture](../../04_architecture-repository/02_architecture-elements/motivation/principles/) : `pa-01.md` à `pa-12.md` pour les principes transversaux, `p-int-01.md` à `p-int-25.md` pour les règles d'interopérabilité, `pd-vs01-01.md` à `pd-vs04-05.md` pour les principes de domaine.
+Les définitions canoniques sont les fiches du [référentiel d'architecture](../../04_architecture-repository/03_business-architecture/motivation/principles) : `pa-01.md` à `pa-12.md` pour les principes transversaux, `p-int-01.md` à `p-int-25.md` pour les règles d'interopérabilité, `pd-vs01-01.md` à `pd-vs04-05.md` pour les principes de domaine.
 
 ## Correspondance PA ↔ P-INT
 

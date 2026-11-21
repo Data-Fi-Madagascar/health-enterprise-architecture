@@ -49,11 +49,11 @@ Rendre visibles, gouvernables et réutilisables les services et interfaces du se
 
 ## Principes associés
 
-- [P-INT-05: Contrat explicite](../../02_architecture-elements/motivation/principles/p-int-05.md)
-- [P-INT-06: Versionnement et compatibilité](../../02_architecture-elements/motivation/principles/p-int-06.md)
-- [P-INT-08: Publication au catalogue des services](../../02_architecture-elements/motivation/principles/p-int-08.md)
-- [P-INT-09: Publication des contrats](../../02_architecture-elements/motivation/principles/p-int-09.md)
+- [P-INT-05: Contrat explicite](../../03_business-architecture/motivation/principles/p-int-05.md)
+- [P-INT-06: Versionnement et compatibilité](../../03_business-architecture/motivation/principles/p-int-06.md)
+- [P-INT-08: Publication au catalogue des services](../../03_business-architecture/motivation/principles/p-int-08.md)
+- [P-INT-09: Publication des contrats](../../03_business-architecture/motivation/principles/p-int-09.md)
 
 ## Rattachement
 
-- [ABB catalogue des services et registre des contrats](../../05_building-blocks/abb/abb-catalogue-contrats.md)
+- [ABB catalogue des services et registre des contrats](../../05_reference-library/building-blocks/abb/abb-catalogue-contrats.md)

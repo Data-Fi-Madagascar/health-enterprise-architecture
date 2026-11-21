@@ -20,7 +20,7 @@ tags: ["artsn", "gap", "gap-02", "feuille-de-route"]
 
 L'ouverture internationale (GDHCN) et la coordination intersectorielle One Health ne sont couvertes qu'au dernier plateau. Cet écart signifie qu'une part de la valeur — échanges régionaux, surveillance multi-ministères — n'est produite que tardivement.
 
-Il s'inscrit [entre le plateau 2 et le plateau 3](../plateaux/pl-02.md), et mobilise la [capacité « Interopérabilité et échanges »](../../05_building-blocks/abb/abb-confiance-autorisation.md) ainsi que le profil [PT-15 (One Health)](../../05_building-blocks/sbb/legacy-profiles/pt-15.md).
+Il s'inscrit [entre le plateau 2 et le plateau 3](../plateaux/pl-02.md), et mobilise la [capacité « Interopérabilité et échanges »](../../05_reference-library/building-blocks/abb/abb-confiance-autorisation.md) ainsi que le profil [PT-15 (One Health)](../../05_reference-library/standards-base/profiles/pt-15.md).
 
 ## Plateau source et cible
 

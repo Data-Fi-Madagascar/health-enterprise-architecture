@@ -15,7 +15,7 @@ tags: ["togaf", "architecture-landscape", "repository-view"]
 
 Cette vue consolide les partitions d'architecture et les éléments stratégiques qui structurent le paysage cible HEA. Elle constitue le point d'entrée de lecture pour les revues de portée, d'alignement et de couverture des flux de valeur.
 
-<!-- BEGIN:GENERATED mode=table source=04_architecture-repository/01_partitions/**/*.md,04_architecture-repository/02_architecture-elements/strategy/**/*.md -->
+<!-- BEGIN:GENERATED mode=table source=04_architecture-repository/01_partitions/**/*.md,04_architecture-repository/03_business-architecture/strategy/**/*.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 | Code | Titre canonique | Rattachement | Statut | Fiche |

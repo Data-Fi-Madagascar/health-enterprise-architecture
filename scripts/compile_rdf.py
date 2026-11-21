@@ -35,12 +35,18 @@ DERIVED_ARCH_REPOSITORY_DOCS = {
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "adm-traceability.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "08_views", "togaf", "partition-traceability.md"),
 }
+NAVIGATIONAL_ARCH_REPOSITORY_DOCS = {
+    os.path.join(ARCH_REPOSITORY_DIR, "05_reference-library", "standards-base",
+                 "code-systems", "README.md"),
+    os.path.join(ARCH_REPOSITORY_DIR, "05_reference-library", "standards-base",
+                 "external-standards", "README.md"),
+}
 EXCLUDED_ARCH_REPOSITORY_DOCS = {
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "schema.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "togaf-mapping.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "archimate-mapping.md"),
     os.path.join(ARCH_REPOSITORY_DIR, "00_metamodel", "cap-int-migration.yaml"),
-} | DERIVED_ARCH_REPOSITORY_DOCS
+} | DERIVED_ARCH_REPOSITORY_DOCS | NAVIGATIONAL_ARCH_REPOSITORY_DOCS
 
 # Namespace HEA
 HEA_NS = "https://healmadagascar.mg/ontologie/hea#"

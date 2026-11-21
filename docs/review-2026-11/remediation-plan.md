@@ -68,7 +68,7 @@ Cette vague est peu coûteuse et produit l'effet le plus fort sur la perception 
 
 **Problème :** aucun profil ne définit le dossier de santé, et aucun profil ne couvre la référence et la contre-référence. PT-19 « Aide à la décision clinique » présuppose un dossier que rien ne définit. CAP-02 « Parcours patient et référence » est au niveau de maturité 1 et l'ensemble du flux VS-01 en dépend.
 
-**Action :** rédiger deux profils sources dans `04_architecture-repository/05_building-blocks/sbb/legacy-profiles/`, au format IHE : acteurs, transactions avec statut lecture/écriture, modules de contenu, sécurité, standards. **Un profil de dossier de santé**, portant FHIR R4, et **un profil de référence et contre-référence**, portant FHIR `ServiceRequest` et `Task`. Déclarer `implements` vers les chapitres ART concernés et `maps_to` vers CAP-02, CAP-03, CAP-13 et CAP-14. Rejouer `make wrappers` et `make check`.
+**Action :** rédiger deux profils sources dans `04_architecture-repository/05_reference-library/standards-base/profiles/`, au format IHE : acteurs, transactions avec statut lecture/écriture, modules de contenu, sécurité, standards. **Un profil de dossier de santé**, portant FHIR R4, et **un profil de référence et contre-référence**, portant FHIR `ServiceRequest` et `Task`. Déclarer `implements` vers les chapitres ART concernés et `maps_to` vers CAP-02, CAP-03, CAP-13 et CAP-14. Rejouer `make wrappers` et `make check`.
 
 **Critère de validation :** CAP-02 dispose d'au moins un profil déclaré ; un fournisseur peut déterminer, depuis le seul profil, comment un patient est identifié, référencé et pris en charge.
 

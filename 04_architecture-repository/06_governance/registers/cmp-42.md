@@ -16,5 +16,5 @@ tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-42", "axe-gouvernance"]
 # CMP-42 : Comite national d'homologation
 **Contenu normatif.** Ce registre trace les decisions du comite national d'homologation des composants et services numeriques de sante. Il consigne l'etat d'homologation, les conditions et les restrictions de mise en production de chaque element de l'architecture.
 **Discipline de mise en oeuvre.** Aucun composant n'entre en production sans homologation referencee. Le registre est consulte par le deploiement et la surveillance. Les conditions d'homologation sont suivies et leur non-respect suspend le service. La periodicite de re-homologation est definie.
-- **Rattachement** : [ART-0: Accords de partage inter-institutionnels](../../04_patterns/artsn-rules/art-0.md), [F-4: Homologation obligatoire](../../04_patterns/foundations/f-4.md).
+- **Rattachement** : [ART-0: Accords de partage inter-institutionnels](../../05_reference-library/patterns/artsn-rules/art-0.md), [F-4: Homologation obligatoire](../../05_reference-library/patterns/foundations/f-4.md).
 - **Statut : Brouillon.**

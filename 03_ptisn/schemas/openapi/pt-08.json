@@ -142,10 +142,10 @@
     "CMP-03",
     "CMP-06"
   ],
-  "x-hea-source": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-08.md",
+  "x-hea-source": "04_architecture-repository/05_reference-library/standards-base/profiles/pt-08.md",
   "x-hea-fhir-resources": [
     "MeasureReport"
   ],
   "x-hea-data-objects": [],
-  "x-hea-file": "04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-08.md"
+  "x-hea-file": "04_architecture-repository/05_reference-library/standards-base/profiles/pt-08.md"
 }

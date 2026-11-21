@@ -15,7 +15,7 @@ tags: ["togaf", "solutions-landscape", "repository-view"]
 
 Cette vue expose les blocs de solution et les contrats techniques qui matérialisent l'architecture cible dans les profils PTISN. Elle permet de distinguer les solutions réutilisables, les profils de mise en oeuvre et les schémas d'interface associés.
 
-<!-- BEGIN:GENERATED mode=table source=04_architecture-repository/05_building-blocks/sbb/**/*.md,03_ptisn/schemas/**/*.json -->
+<!-- BEGIN:GENERATED mode=table source=04_architecture-repository/05_reference-library/standards-base/**/*.md,03_ptisn/schemas/**/*.json -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 | Code | Titre canonique | Rattachement | Statut | Fiche |
@@ -40,6 +40,15 @@ Cette vue expose les blocs de solution et les contrats techniques qui matériali
 | PT-18 | Échange de réclamations et paiements | ABB-EXPOSITION-DONNEES-ANALYTIQUES, CAP-05, CAP-13, ART-2, ART-9 | active | PT-18 |
 | PT-19 | Aide à la décision clinique (CDS) | CMP-08, ABB-SERVICE-TERMINOLOGIE, CAP-13, CAP-14, ART-12, ART-2 | active | PT-19 |
 | PT-20 | Éligibilité et couverture | CMP-12, ABB-ELIGIBILITE-COUVERTURE, CAP-07, ART-4C, ART-9, DO-14, DO-16, DO-17 | candidate | PT-20 |
+| RD-DONNEES-ENVIRONNEMENTALES-CLIMAT | Données environnementales et de résilience climatique | CAP-04, CAP-05, CAP-18, ART-4D, ART-11, PART-ONE-HEALTH, ENF-4 | candidate | RD-DONNEES-ENVIRONNEMENTALES-CLIMAT |
+| RD-STRUCTURES-SERVICES | Données de référence des structures et services | CAP-11, CAP-13, CAP-14, ART-4, ART-5, ART-6, ABB-REFERENTIEL-STRUCTURES-SERVICES, DO-23 | candidate | RD-STRUCTURES-SERVICES |
+| TERM-ATC | TERM-ATC : Classification pharmacologique ATC de l'OMS | CAP-13, CAP-14, ART-2, ART-4, TERM-DCI, TERM-CODIFICATION-COMMUNE, CMP-10, DO-06, DO-10, DO-11 | candidate | TERM-ATC |
+| TERM-CIM-11 | TERM-CIM-11 : Classification internationale des maladies | CAP-13, CAP-14, ART-2, ART-4, TERM-CODIFICATION-COMMUNE, CMP-10, STD-0006, DO-05 | candidate | TERM-CIM-11 |
+| TERM-CODIFICATION-COMMUNE | Terminologie et codification communes | CAP-13, CAP-14, ART-2, ART-4, ART-5, ABB-SERVICE-TERMINOLOGIE, STD-0007 | candidate | TERM-CODIFICATION-COMMUNE |
+| TERM-DCI | TERM-DCI : Dénomination commune internationale | CAP-13, CAP-14, ART-2, ART-4, TERM-SNOMED-CT, TERM-RXNORM, TERM-CODIFICATION-COMMUNE, CMP-10, DO-06, DO-10, DO-11, DO-12 | candidate | TERM-DCI |
+| TERM-LOINC | TERM-LOINC : Terminologie des observations de laboratoire | CAP-13, CAP-14, ART-2, ART-4, TERM-CIM-11, TERM-CODIFICATION-COMMUNE, CMP-10, STD-0006, DO-20, DO-32 | candidate | TERM-LOINC |
+| TERM-RXNORM | TERM-RXNORM : Terminologie des médicaments RxNorm | CAP-13, CAP-14, ART-2, ART-4, TERM-SNOMED-CT, TERM-CODIFICATION-COMMUNE, CMP-10, STD-0007, DO-06, DO-10, DO-11 | candidate | TERM-RXNORM |
+| TERM-SNOMED-CT | TERM-SNOMED-CT : Terminologie clinique SNOMED CT | CAP-13, CAP-14, ART-2, ART-4, TERM-CODIFICATION-COMMUNE, TERM-RXNORM, CMP-10, STD-0007, DO-06, DO-10, DO-11 | candidate | TERM-SNOMED-CT |
 
 <!-- END:GENERATED -->
 

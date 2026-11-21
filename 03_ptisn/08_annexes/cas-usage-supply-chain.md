@@ -70,6 +70,6 @@ Lorsqu'un seuil de sécurité est franchi, le LMIS émet une alerte de rupture. 
 
 - Norme : [STD-0009 : échange des données logistiques (LMIS)](../../01_cnisn/05_standards/std-0009-echange-donnees-logistiques-lmis.md)
 - Profil : [PT-17 : Logistique & chaîne d'approvisionnement (LMIS)](../03_profils/pt-17-logistique-lmis.md)
-- Capacité : [ABB-ECHANGE-LOGISTIQUE-LMIS : chaîne d'approvisionnement sanitaire](../../04_architecture-repository/05_building-blocks/abb/abb-echange-logistique-lmis.md)
-- Chapitre : [ART-10 : Logistique](../../04_architecture-repository/04_patterns/artsn-rules/art-10.md)
-- Composant : [CMP-23 : Chaîne logistique (LMIS)](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-23.md)
+- Capacité : [ABB-ECHANGE-LOGISTIQUE-LMIS : chaîne d'approvisionnement sanitaire](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-echange-logistique-lmis.md)
+- Chapitre : [ART-10 : Logistique](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-10.md)
+- Composant : [CMP-23 : Chaîne logistique (LMIS)](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-23.md)

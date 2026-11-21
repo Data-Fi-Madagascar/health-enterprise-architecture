@@ -22,7 +22,7 @@ tags: ["artsn", "plateau", "pl-03", "feuille-de-route"]
 
 Le plateau 3 est l'état cible abouti : entrepôt analytique, tableaux de bord, extension nationale, interopérabilité transfrontalière (GDHCN) et coordination One Health. Le système devient intelligent, ouvert et intersectoriel.
 
-Il [couvre la capacité « Pilotage et performance »](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-03.md), la [capacité « Interopérabilité et échanges »](../../04_architecture-repository/05_building-blocks/abb/abb-confiance-autorisation.md) et la [capacité « Chaîne logistique et traçabilité »](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md). Les [paquets L4 à L7](../../04_architecture-repository/07_migration/work-packages/wp-04.md) le réalisent.
+Il [couvre la capacité « Pilotage et performance »](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-03.md), la [capacité « Interopérabilité et échanges »](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-confiance-autorisation.md) et la [capacité « Chaîne logistique et traçabilité »](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-audit-provenance.md). Les [paquets L4 à L7](../../04_architecture-repository/07_migration/work-packages/wp-04.md) le réalisent.
 
 ## État cible (borne temporelle)
 
@@ -30,7 +30,7 @@ Atteint à l'issue des lots qui y contribuent — il s'agit d'un état cible int
 
 ## Capacités couvertes
 
-Ce plateau couvre les éléments suivants : [CAP-03](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-03.md), [ABB-CONFIANCE-AUTORISATION](../../04_architecture-repository/05_building-blocks/abb/abb-confiance-autorisation.md), [ABB-AUDIT-PROVENANCE](../../04_architecture-repository/05_building-blocks/abb/abb-audit-provenance.md).
+Ce plateau couvre les éléments suivants : [CAP-03](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-03.md), [ABB-CONFIANCE-AUTORISATION](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-confiance-autorisation.md), [ABB-AUDIT-PROVENANCE](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-audit-provenance.md).
 
 ## Précédence
 

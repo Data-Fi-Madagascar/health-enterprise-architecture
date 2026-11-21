@@ -49,7 +49,7 @@ Chaque contrat technique d'interface publié dans le registre de schémas doit s
 
 **Thème** : [Patient & identité](../../00_caesn/04_data/objets.md#patient-identite).
 
-<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/data/data-objects/do-01.md,04_architecture-repository/02_architecture-elements/data/data-objects/do-03.md -->
+<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/04_data-architecture/data-objects/do-01.md,04_architecture-repository/04_data-architecture/data-objects/do-03.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### DO-01 : Patient
@@ -58,7 +58,7 @@ Personne physique bénéficiaire de soins de santé, identifiée de manière uni
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-01 (continuité des soins)](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md), [CAP-13 (interopérabilité données)](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md), [CAP-14 (référentiels nationaux)](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md) et [CAP-17 (engagement patient et identité numérique)](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-17.md), et contribue aux flux de valeur [VS-01 (parcours patient)](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-03 (protection financière)](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md). Il relève du thème « Patient & identité » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md), [ART-7](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md).
+Ce concept est mobilisé par les capacités [CAP-01 (continuité des soins)](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-01.md), [CAP-13 (interopérabilité données)](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-13.md), [CAP-14 (référentiels nationaux)](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-14.md) et [CAP-17 (engagement patient et identité numérique)](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-17.md), et contribue aux flux de valeur [VS-01 (parcours patient)](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md), [VS-03 (protection financière)](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-03.md). Il relève du thème « Patient & identité » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md), [ART-7](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-7.md).
 
 #### Attributs et contraintes
 
@@ -69,13 +69,13 @@ Ce concept est mobilisé par les capacités [CAP-01 (continuité des soins)](../
 
 #### Rattachement
 
-- **Capacités** : [CAP-01 (continuité des soins)](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md), [CAP-13 (interopérabilité données)](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md), [CAP-14 (référentiels nationaux)](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md), [CAP-17 (engagement patient et identité numérique)](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-17.md)
-- **Profils (PTISN)** : [PT-04 (identité nationale)](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-04.md)
+- **Capacités** : [CAP-01 (continuité des soins)](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-01.md), [CAP-13 (interopérabilité données)](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-13.md), [CAP-14 (référentiels nationaux)](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-14.md), [CAP-17 (engagement patient et identité numérique)](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-17.md)
+- **Profils (PTISN)** : [PT-04 (identité nationale)](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-04.md)
 - **Tier** : A - données de référence (registres maîtres)
-- **Système de référence** : [CMP-11 : Registre des clients / Index National des Patients](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-11.md)
-- **Flux de valeur** : [VS-01 (parcours patient)](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-03 (protection financière)](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md)
+- **Système de référence** : [CMP-11 : Registre des clients / Index National des Patients](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-11.md)
+- **Flux de valeur** : [VS-01 (parcours patient)](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md), [VS-03 (protection financière)](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-03.md)
 - **Thème** : Patient & identité
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md), [ART-7](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md), [ART-7](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-7.md)
 
 #### Fusions
 
@@ -91,7 +91,7 @@ Ensemble structuré des informations cliniques, administratives et de suivi rela
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-01](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md), [CAP-03 (qualité et sécurité des soins)](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-03.md), [CAP-13](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md). Il relève du thème « Patient & identité » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md), [ART-7](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md).
+Ce concept est mobilisé par les capacités [CAP-01](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-01.md), [CAP-03 (qualité et sécurité des soins)](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-03.md), [CAP-13](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-13.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md). Il relève du thème « Patient & identité » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md), [ART-7](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-7.md).
 
 #### Attributs et contraintes
 
@@ -101,12 +101,12 @@ Ce concept est mobilisé par les capacités [CAP-01](../../04_architecture-repos
 
 #### Rattachement
 
-- **Capacités** : [CAP-01](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md), [CAP-03 (qualité et sécurité des soins)](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-03.md), [CAP-13](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md)
+- **Capacités** : [CAP-01](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-01.md), [CAP-03 (qualité et sécurité des soins)](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-03.md), [CAP-13](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-13.md)
 - **Tier** : B - données transactionnelles et opérationnelles
-- **Système de référence** : [CMP-08 : Répertoire de données cliniques opérationnelles](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-08.md)
-- **Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
+- **Système de référence** : [CMP-08 : Répertoire de données cliniques opérationnelles](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-08.md)
+- **Flux de valeur** : [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md)
 - **Thème** : Patient & identité
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md), [ART-7](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md), [ART-7](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-7.md)
 
 #### Fusions
 
@@ -124,7 +124,7 @@ La fusion est tracée dans `04_architecture-repository/00_metamodel/do-migration
 
 **Thème** : [Prestation & soins](../../00_caesn/04_data/objets.md#prestation-soins).
 
-<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/data/data-objects/do-05.md,04_architecture-repository/02_architecture-elements/data/data-objects/do-06.md,04_architecture-repository/02_architecture-elements/data/data-objects/do-07.md,04_architecture-repository/02_architecture-elements/data/data-objects/do-09.md,04_architecture-repository/02_architecture-elements/data/data-objects/do-32.md -->
+<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/04_data-architecture/data-objects/do-05.md,04_architecture-repository/04_data-architecture/data-objects/do-06.md,04_architecture-repository/04_data-architecture/data-objects/do-07.md,04_architecture-repository/04_data-architecture/data-objects/do-09.md,04_architecture-repository/04_data-architecture/data-objects/do-32.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### DO-05 : Consultation
@@ -133,7 +133,7 @@ Acte clinique réalisé par un prestataire de soins lors d'une rencontre avec un
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-01](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md), [CAP-13](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md). Il relève du thème « Prestation & soins » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md).
+Ce concept est mobilisé par les capacités [CAP-01](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-01.md), [CAP-13](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-13.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md). Il relève du thème « Prestation & soins » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-3.md).
 
 #### Attributs et contraintes
 
@@ -143,13 +143,13 @@ Ce concept est mobilisé par les capacités [CAP-01](../../04_architecture-repos
 
 #### Rattachement
 
-- **Capacités** : [CAP-01](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md), [CAP-13](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md)
+- **Capacités** : [CAP-01](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-01.md), [CAP-13](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-13.md)
 - **Tier** : B - données transactionnelles et opérationnelles
-- **Système de référence** : [CMP-19 : Dossiers et statistiques de santé (hôpitaux)](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-19.md)
-- **Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
+- **Système de référence** : [CMP-19 : Dossiers et statistiques de santé (hôpitaux)](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-19.md)
+- **Flux de valeur** : [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md)
 - **Thème** : Prestation & soins
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md)
-- **Codification** : [TERM-CIM-11 : Classification internationale des maladies](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-cim-11.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-3.md)
+- **Codification** : [TERM-CIM-11 : Classification internationale des maladies](../../04_architecture-repository/05_reference-library/standards-base/code-systems/term-cim-11.md)
 
 ### DO-06 : Prescription
 
@@ -157,7 +157,7 @@ Ordonnance émise par un prestataire de soins, détaillant les médicaments, act
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-01](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md), [CAP-10](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-10.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md). Il relève du thème « Prestation & soins » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md).
+Ce concept est mobilisé par les capacités [CAP-01](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-01.md), [CAP-10](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-10.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md). Il relève du thème « Prestation & soins » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-3.md).
 
 #### Attributs et contraintes
 
@@ -167,13 +167,13 @@ Ce concept est mobilisé par les capacités [CAP-01](../../04_architecture-repos
 
 #### Rattachement
 
-- **Capacités** : [CAP-01](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md), [CAP-10](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-10.md)
+- **Capacités** : [CAP-01](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-01.md), [CAP-10](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-10.md)
 - **Tier** : B - données transactionnelles et opérationnelles
-- **Système de référence** : [CMP-19 : Dossiers et statistiques de santé (hôpitaux)](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-19.md)
-- **Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
+- **Système de référence** : [CMP-19 : Dossiers et statistiques de santé (hôpitaux)](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-19.md)
+- **Flux de valeur** : [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md)
 - **Thème** : Prestation & soins
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md)
-- **Codification** : [TERM-SNOMED-CT : Terminologie clinique SNOMED CT](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-snomed-ct.md), [TERM-RXNORM : Terminologie des médicaments RxNorm](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-rxnorm.md), [TERM-ATC : Classification pharmacologique ATC de l'OMS](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-atc.md), [TERM-DCI : Dénomination commune internationale](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-dci.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-3.md)
+- **Codification** : [TERM-SNOMED-CT : Terminologie clinique SNOMED CT](../../04_architecture-repository/05_reference-library/standards-base/code-systems/term-snomed-ct.md), [TERM-RXNORM : Terminologie des médicaments RxNorm](../../04_architecture-repository/05_reference-library/standards-base/code-systems/term-rxnorm.md), [TERM-ATC : Classification pharmacologique ATC de l'OMS](../../04_architecture-repository/05_reference-library/standards-base/code-systems/term-atc.md), [TERM-DCI : Dénomination commune internationale](../../04_architecture-repository/05_reference-library/standards-base/code-systems/term-dci.md)
 
 ### DO-07 : Référence et contre-référence
 
@@ -181,7 +181,7 @@ Orientation d'un patient d'un niveau de soins vers un autre (ex. : centre de san
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-02](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-02.md), [CAP-14](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md). Il relève du thème « Prestation & soins » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md).
+Ce concept est mobilisé par les capacités [CAP-02](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-02.md), [CAP-14](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-14.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md). Il relève du thème « Prestation & soins » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-3.md).
 
 #### Attributs et contraintes
 
@@ -191,12 +191,12 @@ Ce concept est mobilisé par les capacités [CAP-02](../../04_architecture-repos
 
 #### Rattachement
 
-- **Capacités** : [CAP-02](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-02.md), [CAP-14](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md)
+- **Capacités** : [CAP-02](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-02.md), [CAP-14](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-14.md)
 - **Tier** : B - données transactionnelles et opérationnelles
-- **Système de référence** : [CMP-19 : Dossiers et statistiques de santé (hôpitaux)](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-19.md)
-- **Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
+- **Système de référence** : [CMP-19 : Dossiers et statistiques de santé (hôpitaux)](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-19.md)
+- **Flux de valeur** : [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md)
 - **Thème** : Prestation & soins
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-3.md)
 
 #### Fusions
 
@@ -212,7 +212,7 @@ Transfert urgent d'un patient d'un établissement vers un autre établissement o
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-02](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-02.md), [CAP-14](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md), [CAP-15](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md). Il relève du thème « Prestation & soins » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md).
+Ce concept est mobilisé par les capacités [CAP-02](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-02.md), [CAP-14](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-14.md), [CAP-15](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-15.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md). Il relève du thème « Prestation & soins » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-3.md).
 
 #### Attributs et contraintes
 
@@ -222,12 +222,12 @@ Ce concept est mobilisé par les capacités [CAP-02](../../04_architecture-repos
 
 #### Rattachement
 
-- **Capacités** : [CAP-02](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-02.md), [CAP-14](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md), [CAP-15](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md)
+- **Capacités** : [CAP-02](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-02.md), [CAP-14](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-14.md), [CAP-15](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-15.md)
 - **Tier** : B - données transactionnelles et opérationnelles
-- **Système de référence** : [CMP-19 : Dossiers et statistiques de santé (hôpitaux)](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-19.md)
-- **Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)
+- **Système de référence** : [CMP-19 : Dossiers et statistiques de santé (hôpitaux)](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-19.md)
+- **Flux de valeur** : [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md)
 - **Thème** : Prestation & soins
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-3.md)
 #### Sous-types d'évacuation sanitaire
 
 - **EVA-N1** : Nationale primaire — CSB → Hôpital de district/régional — FHIR ServiceRequest
@@ -241,7 +241,7 @@ Examen biologique, microbiologique, parasitologique, sérologique ou d'imagerie 
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-01](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md), [CAP-04](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-04.md), [CAP-18](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-18.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md). Il relève du thème « Prestation & soins » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md).
+Ce concept est mobilisé par les capacités [CAP-01](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-01.md), [CAP-04](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-04.md), [CAP-18](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-18.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md). Il relève du thème « Prestation & soins » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md).
 
 #### Attributs et contraintes
 
@@ -251,13 +251,13 @@ Ce concept est mobilisé par les capacités [CAP-01](../../04_architecture-repos
 
 #### Rattachement
 
-- **Capacités** : [CAP-01](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-01.md), [CAP-04](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-04.md), [CAP-18](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-18.md)
+- **Capacités** : [CAP-01](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-01.md), [CAP-04](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-04.md), [CAP-18](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-18.md)
 - **Tier** : B - données transactionnelles et opérationnelles
-- **Système de référence** : [CMP-19 : Dossiers et statistiques de santé (hôpitaux)](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-19.md), [CMP-24 : Surveillance de la sante animale (zoonoses)](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-24.md)
-- **Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)
+- **Système de référence** : [CMP-19 : Dossiers et statistiques de santé (hôpitaux)](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-19.md), [CMP-24 : Surveillance de la sante animale (zoonoses)](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-24.md)
+- **Flux de valeur** : [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md)
 - **Thème** : Prestation & soins
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
-- **Codification** : [TERM-LOINC : Terminologie des observations de laboratoire](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-loinc.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md)
+- **Codification** : [TERM-LOINC : Terminologie des observations de laboratoire](../../04_architecture-repository/05_reference-library/standards-base/code-systems/term-loinc.md)
 
 <!-- END:GENERATED -->
 
@@ -267,7 +267,7 @@ Ce concept est mobilisé par les capacités [CAP-01](../../04_architecture-repos
 
 **Thème** : [Dispensation & produits](../../00_caesn/04_data/objets.md#dispensation-produits).
 
-<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/data/data-objects/do-10.md,04_architecture-repository/02_architecture-elements/data/data-objects/do-11.md,04_architecture-repository/02_architecture-elements/data/data-objects/do-12.md -->
+<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/04_data-architecture/data-objects/do-10.md,04_architecture-repository/04_data-architecture/data-objects/do-11.md,04_architecture-repository/04_data-architecture/data-objects/do-12.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### DO-10 : Dispensation
@@ -276,7 +276,7 @@ Fourniture effective d'un produit de santé (médicament, vaccin, intrant) à un
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-10](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-10.md), [CAP-13](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md). Il relève du thème « Dispensation & produits » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md).
+Ce concept est mobilisé par les capacités [CAP-10](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-10.md), [CAP-13](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-13.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md). Il relève du thème « Dispensation & produits » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-9.md).
 
 #### Attributs et contraintes
 
@@ -286,13 +286,13 @@ Ce concept est mobilisé par les capacités [CAP-10](../../04_architecture-repos
 
 #### Rattachement
 
-- **Capacités** : [CAP-10](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-10.md), [CAP-13](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md)
+- **Capacités** : [CAP-10](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-10.md), [CAP-13](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-13.md)
 - **Tier** : B - données transactionnelles et opérationnelles
-- **Système de référence** : [CMP-20 : Gestion des pharmacies (PMIS)](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-20.md)
-- **Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
+- **Système de référence** : [CMP-20 : Gestion des pharmacies (PMIS)](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-20.md)
+- **Flux de valeur** : [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md)
 - **Thème** : Dispensation & produits
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md)
-- **Codification** : [TERM-SNOMED-CT : Terminologie clinique SNOMED CT](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-snomed-ct.md), [TERM-RXNORM : Terminologie des médicaments RxNorm](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-rxnorm.md), [TERM-ATC : Classification pharmacologique ATC de l'OMS](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-atc.md), [TERM-DCI : Dénomination commune internationale](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-dci.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-9.md)
+- **Codification** : [TERM-SNOMED-CT : Terminologie clinique SNOMED CT](../../04_architecture-repository/05_reference-library/standards-base/code-systems/term-snomed-ct.md), [TERM-RXNORM : Terminologie des médicaments RxNorm](../../04_architecture-repository/05_reference-library/standards-base/code-systems/term-rxnorm.md), [TERM-ATC : Classification pharmacologique ATC de l'OMS](../../04_architecture-repository/05_reference-library/standards-base/code-systems/term-atc.md), [TERM-DCI : Dénomination commune internationale](../../04_architecture-repository/05_reference-library/standards-base/code-systems/term-dci.md)
 
 ### DO-11 : Produit de santé
 
@@ -300,7 +300,7 @@ Tout produit pharmaceutique, vaccin, dispositif médical ou intrant de santé so
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-10](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-10.md), [CAP-14](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md). Il relève du thème « Dispensation & produits » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md).
+Ce concept est mobilisé par les capacités [CAP-10](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-10.md), [CAP-14](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-14.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md). Il relève du thème « Dispensation & produits » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-9.md).
 
 #### Attributs et contraintes
 
@@ -310,13 +310,13 @@ Ce concept est mobilisé par les capacités [CAP-10](../../04_architecture-repos
 
 #### Rattachement
 
-- **Capacités** : [CAP-10](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-10.md), [CAP-14](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md)
+- **Capacités** : [CAP-10](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-10.md), [CAP-14](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-14.md)
 - **Tier** : A - données de référence (registres maîtres)
-- **Système de référence** : [CMP-14 : Registre des produits, intrants et indicateurs](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-14.md)
-- **Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)
+- **Système de référence** : [CMP-14 : Registre des produits, intrants et indicateurs](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-14.md)
+- **Flux de valeur** : [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md)
 - **Thème** : Dispensation & produits
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md)
-- **Codification** : [TERM-SNOMED-CT : Terminologie clinique SNOMED CT](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-snomed-ct.md), [TERM-RXNORM : Terminologie des médicaments RxNorm](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-rxnorm.md), [TERM-ATC : Classification pharmacologique ATC de l'OMS](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-atc.md), [TERM-DCI : Dénomination commune internationale](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-dci.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-9.md)
+- **Codification** : [TERM-SNOMED-CT : Terminologie clinique SNOMED CT](../../04_architecture-repository/05_reference-library/standards-base/code-systems/term-snomed-ct.md), [TERM-RXNORM : Terminologie des médicaments RxNorm](../../04_architecture-repository/05_reference-library/standards-base/code-systems/term-rxnorm.md), [TERM-ATC : Classification pharmacologique ATC de l'OMS](../../04_architecture-repository/05_reference-library/standards-base/code-systems/term-atc.md), [TERM-DCI : Dénomination commune internationale](../../04_architecture-repository/05_reference-library/standards-base/code-systems/term-dci.md)
 
 ### DO-12 : Lot et stock
 
@@ -324,7 +324,7 @@ Unité de production d'un produit de santé, identifiée par un numéro de lot, 
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-10](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-10.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md). Il relève du thème « Dispensation & produits » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md).
+Ce concept est mobilisé par les capacités [CAP-10](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-10.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md). Il relève du thème « Dispensation & produits » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-9.md).
 
 #### Attributs et contraintes
 
@@ -334,13 +334,13 @@ Ce concept est mobilisé par les capacités [CAP-10](../../04_architecture-repos
 
 #### Rattachement
 
-- **Capacités** : [CAP-10](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-10.md)
+- **Capacités** : [CAP-10](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-10.md)
 - **Tier** : B - données transactionnelles et opérationnelles
-- **Système de référence** : [CMP-23 : Chaîne logistique (LMIS)](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-23.md)
-- **Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
+- **Système de référence** : [CMP-23 : Chaîne logistique (LMIS)](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-23.md)
+- **Flux de valeur** : [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md)
 - **Thème** : Dispensation & produits
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md)
-- **Codification** : [TERM-DCI : Dénomination commune internationale](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-dci.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-9.md)
+- **Codification** : [TERM-DCI : Dénomination commune internationale](../../04_architecture-repository/05_reference-library/standards-base/code-systems/term-dci.md)
 
 #### Fusions
 
@@ -358,7 +358,7 @@ La fusion est tracée dans `04_architecture-repository/00_metamodel/do-migration
 
 **Thème** : [Financement & couverture](../../00_caesn/04_data/objets.md#financement-couverture).
 
-<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/data/data-objects/do-14.md,04_architecture-repository/02_architecture-elements/data/data-objects/do-16.md,04_architecture-repository/02_architecture-elements/data/data-objects/do-17.md -->
+<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/04_data-architecture/data-objects/do-14.md,04_architecture-repository/04_data-architecture/data-objects/do-16.md,04_architecture-repository/04_data-architecture/data-objects/do-17.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### DO-14 : Couverture sanitaire et éligibilité
@@ -367,7 +367,7 @@ Ensemble des mécanismes financiers protégeant un patient contre les coûts dir
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-07](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-07.md), [CAP-13](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md) et contribue aux flux de valeur [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md). Il relève du thème « Financement & couverture » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md).
+Ce concept est mobilisé par les capacités [CAP-07](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-07.md), [CAP-13](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-13.md) et contribue aux flux de valeur [VS-03](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-03.md). Il relève du thème « Financement & couverture » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-9.md).
 
 #### Attributs et contraintes
 
@@ -377,12 +377,12 @@ Ce concept est mobilisé par les capacités [CAP-07](../../04_architecture-repos
 
 #### Rattachement
 
-- **Capacités** : [CAP-07](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-07.md), [CAP-13](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md)
+- **Capacités** : [CAP-07](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-07.md), [CAP-13](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-13.md)
 - **Tier** : B - données transactionnelles et opérationnelles
-- **Système de référence** : [CMP-12 : Registre d'éligibilité et de couverture](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-12.md)
-- **Flux de valeur** : [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md)
+- **Système de référence** : [CMP-12 : Registre d'éligibilité et de couverture](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-12.md)
+- **Flux de valeur** : [VS-03](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-03.md)
 - **Thème** : Financement & couverture
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-9.md)
 
 #### Fusions
 
@@ -398,7 +398,7 @@ Processus de détermination et d'enregistrement des coûts des services et produ
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-07](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-07.md) et contribue aux flux de valeur [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md). Il relève du thème « Financement & couverture » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md).
+Ce concept est mobilisé par les capacités [CAP-07](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-07.md) et contribue aux flux de valeur [VS-03](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-04.md). Il relève du thème « Financement & couverture » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-9.md).
 
 #### Attributs et contraintes
 
@@ -408,12 +408,12 @@ Ce concept est mobilisé par les capacités [CAP-07](../../04_architecture-repos
 
 #### Rattachement
 
-- **Capacités** : [CAP-07](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-07.md)
+- **Capacités** : [CAP-07](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-07.md)
 - **Tier** : B - données transactionnelles et opérationnelles
-- **Système de référence** : [CMP-12 : Registre d'éligibilité et de couverture](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-12.md)
-- **Flux de valeur** : [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
+- **Système de référence** : [CMP-12 : Registre d'éligibilité et de couverture](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-12.md)
+- **Flux de valeur** : [VS-03](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-04.md)
 - **Thème** : Financement & couverture
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-9.md)
 
 ### DO-17 : Demande et preuve de vérification d'éligibilité
 
@@ -421,7 +421,7 @@ Contrôle en temps réel, au point de service, du statut d'éligibilité d'un pa
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-07](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-07.md), [CAP-08](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-08.md) et contribue aux flux de valeur [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md). Il relève du thème « Financement & couverture » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md).
+Ce concept est mobilisé par les capacités [CAP-07](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-07.md), [CAP-08](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-08.md) et contribue aux flux de valeur [VS-03](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-03.md). Il relève du thème « Financement & couverture » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-9.md).
 
 #### Attributs et contraintes
 
@@ -431,12 +431,12 @@ Ce concept est mobilisé par les capacités [CAP-07](../../04_architecture-repos
 
 #### Rattachement
 
-- **Capacités** : [CAP-07](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-07.md), [CAP-08](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-08.md)
+- **Capacités** : [CAP-07](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-07.md), [CAP-08](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-08.md)
 - **Tier** : B - données transactionnelles et opérationnelles
-- **Système de référence** : [CMP-12 : Registre d'éligibilité et de couverture](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-12.md)
-- **Flux de valeur** : [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md)
+- **Système de référence** : [CMP-12 : Registre d'éligibilité et de couverture](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-12.md)
+- **Flux de valeur** : [VS-03](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-03.md)
 - **Thème** : Financement & couverture
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/04_patterns/artsn-rules/art-9.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md), [ART-9](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-9.md)
 
 <!-- END:GENERATED -->
 
@@ -446,7 +446,7 @@ Ce concept est mobilisé par les capacités [CAP-07](../../04_architecture-repos
 
 **Thème** : [Risque & surveillance](../../00_caesn/04_data/objets.md#risque-surveillance).
 
-<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/data/data-objects/do-18.md,04_architecture-repository/02_architecture-elements/data/data-objects/do-19.md,04_architecture-repository/02_architecture-elements/data/data-objects/do-20.md -->
+<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/04_data-architecture/data-objects/do-18.md,04_architecture-repository/04_data-architecture/data-objects/do-19.md,04_architecture-repository/04_data-architecture/data-objects/do-20.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### DO-18 : Signal, notification et alerte sanitaires
@@ -455,7 +455,7 @@ Cycle de trois événements imbriqués qui structure la surveillance sanitaire. 
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-04](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-04.md), [CAP-05](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-05.md) et contribue aux flux de valeur [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md). Il relève du thème « Risque & surveillance » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md).
+Ce concept est mobilisé par les capacités [CAP-04](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-04.md), [CAP-05](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-05.md) et contribue aux flux de valeur [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md), [VS-04](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-04.md). Il relève du thème « Risque & surveillance » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-3.md).
 
 #### Attributs et contraintes
 
@@ -465,12 +465,12 @@ Ce concept est mobilisé par les capacités [CAP-04](../../04_architecture-repos
 
 #### Rattachement
 
-- **Capacités** : [CAP-04](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-04.md), [CAP-05](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-05.md)
+- **Capacités** : [CAP-04](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-04.md), [CAP-05](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-05.md)
 - **Tier** : B - données transactionnelles et opérationnelles
-- **Système de référence** : [CMP-02 : Centre de commande et Crises intersectorielles](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-02.md)
-- **Flux de valeur** : [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
+- **Système de référence** : [CMP-02 : Centre de commande et Crises intersectorielles](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-02.md)
+- **Flux de valeur** : [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md), [VS-04](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-04.md)
 - **Thème** : Risque & surveillance
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-3.md)
 
 #### Fusions
 
@@ -487,7 +487,7 @@ Zone géographique ou population définie dans laquelle un événement sanitaire
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-04](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-04.md), [CAP-05](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-05.md) et contribue aux flux de valeur [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md). Il relève du thème « Risque & surveillance » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md).
+Ce concept est mobilisé par les capacités [CAP-04](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-04.md), [CAP-05](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-05.md) et contribue aux flux de valeur [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md), [VS-04](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-04.md). Il relève du thème « Risque & surveillance » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-3.md).
 
 #### Attributs et contraintes
 
@@ -497,12 +497,12 @@ Ce concept est mobilisé par les capacités [CAP-04](../../04_architecture-repos
 
 #### Rattachement
 
-- **Capacités** : [CAP-04](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-04.md), [CAP-05](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-05.md)
+- **Capacités** : [CAP-04](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-04.md), [CAP-05](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-05.md)
 - **Tier** : B - données transactionnelles et opérationnelles
-- **Système de référence** : [CMP-02 : Centre de commande et Crises intersectorielles](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-02.md)
-- **Flux de valeur** : [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
+- **Système de référence** : [CMP-02 : Centre de commande et Crises intersectorielles](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-02.md)
+- **Flux de valeur** : [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md), [VS-04](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-04.md)
 - **Thème** : Risque & surveillance
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-3.md)
 
 ### DO-20 : Investigation épidémiologique
 
@@ -510,7 +510,7 @@ Enquête épidémiologique et/ou de laboratoire menée pour confirmer ou infirme
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-04](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-04.md), [CAP-05](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-05.md), [CAP-18](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-18.md) et contribue aux flux de valeur [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md). Il relève du thème « Risque & surveillance » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md).
+Ce concept est mobilisé par les capacités [CAP-04](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-04.md), [CAP-05](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-05.md), [CAP-18](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-18.md) et contribue aux flux de valeur [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md), [VS-04](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-04.md). Il relève du thème « Risque & surveillance » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-3.md).
 
 #### Attributs et contraintes
 
@@ -520,13 +520,13 @@ Ce concept est mobilisé par les capacités [CAP-04](../../04_architecture-repos
 
 #### Rattachement
 
-- **Capacités** : [CAP-04](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-04.md), [CAP-05](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-05.md), [CAP-18](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-18.md)
+- **Capacités** : [CAP-04](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-04.md), [CAP-05](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-05.md), [CAP-18](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-18.md)
 - **Tier** : B - données transactionnelles et opérationnelles
-- **Système de référence** : [CMP-02 : Centre de commande et Crises intersectorielles](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-02.md)
-- **Flux de valeur** : [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
+- **Système de référence** : [CMP-02 : Centre de commande et Crises intersectorielles](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-02.md)
+- **Flux de valeur** : [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md), [VS-04](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-04.md)
 - **Thème** : Risque & surveillance
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/04_patterns/artsn-rules/art-3.md)
-- **Codification** : [TERM-LOINC : Terminologie des observations de laboratoire](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-loinc.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-3](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-3.md)
+- **Codification** : [TERM-LOINC : Terminologie des observations de laboratoire](../../04_architecture-repository/05_reference-library/standards-base/code-systems/term-loinc.md)
 
 <!-- END:GENERATED -->
 
@@ -536,7 +536,7 @@ Ce concept est mobilisé par les capacités [CAP-04](../../04_architecture-repos
 
 **Thème** : [Exploitation & gestion](../../00_caesn/04_data/objets.md#exploitation-gestion).
 
-<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/data/data-objects/do-23.md,04_architecture-repository/02_architecture-elements/data/data-objects/do-24.md,04_architecture-repository/02_architecture-elements/data/data-objects/do-25.md,04_architecture-repository/02_architecture-elements/data/data-objects/do-26.md,04_architecture-repository/02_architecture-elements/data/data-objects/do-27.md -->
+<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/04_data-architecture/data-objects/do-23.md,04_architecture-repository/04_data-architecture/data-objects/do-24.md,04_architecture-repository/04_data-architecture/data-objects/do-25.md,04_architecture-repository/04_data-architecture/data-objects/do-26.md,04_architecture-repository/04_data-architecture/data-objects/do-27.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### DO-23 : Formation sanitaire
@@ -545,7 +545,7 @@ Toute structure de soins publique, privée, confessionnelle ou communautaire ide
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-11](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-11.md), [CAP-14](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md), [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md). Il relève du thème « Exploitation & gestion » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md).
+Ce concept est mobilisé par les capacités [CAP-11](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-11.md), [CAP-14](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-14.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md), [VS-03](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-04.md). Il relève du thème « Exploitation & gestion » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md).
 
 #### Attributs et contraintes
 
@@ -555,12 +555,12 @@ Ce concept est mobilisé par les capacités [CAP-11](../../04_architecture-repos
 
 #### Rattachement
 
-- **Capacités** : [CAP-11](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-11.md), [CAP-14](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md)
+- **Capacités** : [CAP-11](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-11.md), [CAP-14](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-14.md)
 - **Tier** : A - données de référence (registres maîtres)
-- **Système de référence** : [ABB-REFERENTIEL-STRUCTURES-SERVICES : Référentiel des structures et services de santé](../../04_architecture-repository/05_building-blocks/abb/abb-referentiel-structures-services.md), [CMP-05 : Moteur de graphes et Référentiel spatio-temporel](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-05.md)
-- **Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md), [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
+- **Système de référence** : [ABB-REFERENTIEL-STRUCTURES-SERVICES : Référentiel des structures et services de santé](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-referentiel-structures-services.md), [CMP-05 : Moteur de graphes et Référentiel spatio-temporel](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-05.md)
+- **Flux de valeur** : [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md), [VS-03](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-04.md)
 - **Thème** : Exploitation & gestion
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md)
 
 ### DO-24 : Agent de santé
 
@@ -568,7 +568,7 @@ Toute personne physique exerçant une activité de soins, de prévention ou de p
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-09](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-09.md), [CAP-13](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md), [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md). Il relève du thème « Exploitation & gestion » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md).
+Ce concept est mobilisé par les capacités [CAP-09](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-09.md), [CAP-13](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-13.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md), [VS-03](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-04.md). Il relève du thème « Exploitation & gestion » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md).
 
 #### Attributs et contraintes
 
@@ -578,12 +578,12 @@ Ce concept est mobilisé par les capacités [CAP-09](../../04_architecture-repos
 
 #### Rattachement
 
-- **Capacités** : [CAP-09](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-09.md), [CAP-13](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-13.md)
+- **Capacités** : [CAP-09](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-09.md), [CAP-13](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-13.md)
 - **Tier** : A - données de référence (registres maîtres)
-- **Système de référence** : [CMP-13 : Registre des personnels](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-13.md)
-- **Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md), [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
+- **Système de référence** : [CMP-13 : Registre des personnels](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-13.md)
+- **Flux de valeur** : [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md), [VS-03](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-04.md)
 - **Thème** : Exploitation & gestion
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md)
 
 ### DO-25 : Indicateur sanitaire
 
@@ -591,7 +591,7 @@ Mesure standardisée d'une performance, d'un résultat ou d'un processus dans le
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-03](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-03.md), [CAP-08](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-08.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md), [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md). Il relève du thème « Exploitation & gestion » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md).
+Ce concept est mobilisé par les capacités [CAP-03](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-03.md), [CAP-08](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-08.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md), [VS-03](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-04.md). Il relève du thème « Exploitation & gestion » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md).
 
 #### Attributs et contraintes
 
@@ -601,12 +601,12 @@ Ce concept est mobilisé par les capacités [CAP-03](../../04_architecture-repos
 
 #### Rattachement
 
-- **Capacités** : [CAP-03](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-03.md), [CAP-08](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-08.md)
+- **Capacités** : [CAP-03](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-03.md), [CAP-08](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-08.md)
 - **Tier** : C - données analytiques et agrégées
-- **Système de référence** : [CMP-14 : Registre des produits, intrants et indicateurs](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-14.md)
-- **Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md), [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
+- **Système de référence** : [CMP-14 : Registre des produits, intrants et indicateurs](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-14.md)
+- **Flux de valeur** : [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md), [VS-03](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-04.md)
 - **Thème** : Exploitation & gestion
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md)
 
 ### DO-26 : Zone sanitaire
 
@@ -614,7 +614,7 @@ Unité territoriale de planification et de coordination des services de santé, 
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-05](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-05.md), [CAP-14](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md), [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md). Il relève du thème « Exploitation & gestion » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md).
+Ce concept est mobilisé par les capacités [CAP-05](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-05.md), [CAP-14](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-14.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md), [VS-03](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-04.md). Il relève du thème « Exploitation & gestion » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md).
 
 #### Attributs et contraintes
 
@@ -624,12 +624,12 @@ Ce concept est mobilisé par les capacités [CAP-05](../../04_architecture-repos
 
 #### Rattachement
 
-- **Capacités** : [CAP-05](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-05.md), [CAP-14](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-14.md)
+- **Capacités** : [CAP-05](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-05.md), [CAP-14](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-14.md)
 - **Tier** : A - données de référence (registres maîtres)
-- **Système de référence** : [ABB-REFERENTIEL-STRUCTURES-SERVICES : Référentiel des structures et services de santé](../../04_architecture-repository/05_building-blocks/abb/abb-referentiel-structures-services.md), [CMP-05 : Moteur de graphes et Référentiel spatio-temporel](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-05.md)
-- **Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md), [VS-03](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-04.md)
+- **Système de référence** : [ABB-REFERENTIEL-STRUCTURES-SERVICES : Référentiel des structures et services de santé](../../04_architecture-repository/05_reference-library/building-blocks/abb/abb-referentiel-structures-services.md), [CMP-05 : Moteur de graphes et Référentiel spatio-temporel](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-05.md)
+- **Flux de valeur** : [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md), [VS-03](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-03.md), [VS-04](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-04.md)
 - **Thème** : Exploitation & gestion
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md)
 
 ### DO-27 : Tâche et action de suivi
 
@@ -637,7 +637,7 @@ Unité de travail assignée à un acteur (personne ou système) dans le cadre d'
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-06](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-06.md), [CAP-08](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-08.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md). Il relève du thème « Exploitation & gestion » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md).
+Ce concept est mobilisé par les capacités [CAP-06](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-06.md), [CAP-08](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-08.md) et contribue aux flux de valeur [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md). Il relève du thème « Exploitation & gestion » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md).
 
 #### Attributs et contraintes
 
@@ -647,12 +647,12 @@ Ce concept est mobilisé par les capacités [CAP-06](../../04_architecture-repos
 
 #### Rattachement
 
-- **Capacités** : [CAP-06](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-06.md), [CAP-08](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-08.md)
+- **Capacités** : [CAP-06](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-06.md), [CAP-08](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-08.md)
 - **Tier** : B - données transactionnelles et opérationnelles
-- **Système de référence** : [CMP-01 : Tableaux de bord et Portails nationaux](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-01.md)
-- **Flux de valeur** : [VS-01](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-02.md)
+- **Système de référence** : [CMP-01 : Tableaux de bord et Portails nationaux](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-01.md)
+- **Flux de valeur** : [VS-01](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md), [VS-02](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-02.md)
 - **Thème** : Exploitation & gestion
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/04_patterns/artsn-rules/art-4.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-4](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-4.md)
 
 <!-- END:GENERATED -->
 
@@ -662,7 +662,7 @@ Ce concept est mobilisé par les capacités [CAP-06](../../04_architecture-repos
 
 **Thème** : [Interopérabilité transfrontalière](../../00_caesn/04_data/objets.md#interop-transfrontalier).
 
-<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/02_architecture-elements/data/data-objects/do-29.md,04_architecture-repository/02_architecture-elements/data/data-objects/do-31.md -->
+<!-- BEGIN:GENERATED mode=catalogue source=04_architecture-repository/04_data-architecture/data-objects/do-29.md,04_architecture-repository/04_data-architecture/data-objects/do-31.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 ### DO-29 : Résumé international du patient
@@ -673,7 +673,7 @@ Il est composé de sections, unités structurées regroupant une catégorie clin
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-15](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md), [CAP-17 (engagement patient)](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-17.md) et contribue aux flux de valeur [VS-01 (parcours patient)](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md). Il relève du thème « Interopérabilité transfrontalière » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-7](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md).
+Ce concept est mobilisé par les capacités [CAP-15](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-15.md), [CAP-17 (engagement patient)](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-17.md) et contribue aux flux de valeur [VS-01 (parcours patient)](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md). Il relève du thème « Interopérabilité transfrontalière » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-7](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-7.md).
 
 #### Attributs et contraintes
 
@@ -696,14 +696,14 @@ Ce concept est mobilisé par les capacités [CAP-15](../../04_architecture-repos
 
 #### Rattachement
 
-- **Capacités** : [CAP-15](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md), [CAP-17 (engagement patient)](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-17.md)
+- **Capacités** : [CAP-15](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-15.md), [CAP-17 (engagement patient)](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-17.md)
 - **Tier** : B - données transactionnelles et opérationnelles
-- **Système de référence** : [CMP-06 : Intégration, Médiation, API Gateway, Broker et Registre schémas](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-06.md)
+- **Système de référence** : [CMP-06 : Intégration, Médiation, API Gateway, Broker et Registre schémas](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-06.md)
 - **Capacités intégrées (CNISN)** : [PART-ECHANGE-TRANSFRONTALIER (interopérabilité transfrontalière)](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md)
-- **Flux de valeur** : [VS-01 (parcours patient)](../../04_architecture-repository/02_architecture-elements/strategy/value-streams/vs-01.md)
-- **Profils (PTISN)** : [PT-14 (interopérabilité transfrontalière)](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-14.md)
+- **Flux de valeur** : [VS-01 (parcours patient)](../../04_architecture-repository/03_business-architecture/strategy/value-streams/vs-01.md)
+- **Profils (PTISN)** : [PT-14 (interopérabilité transfrontalière)](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-14.md)
 - **Thème** : Interopérabilité transfrontalière
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-7](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-7](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-7.md)
 
 #### Fusions
 
@@ -719,7 +719,7 @@ Point d'ancrage de confiance numérique permettant la vérification mutuelle de 
 
 #### Rôle et contexte
 
-Ce concept est mobilisé par les capacités [CAP-15](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md). Il relève du thème « Interopérabilité transfrontalière » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-7](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md).
+Ce concept est mobilisé par les capacités [CAP-15](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-15.md). Il relève du thème « Interopérabilité transfrontalière » et est traité dans les chapitres ARTSN [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-7](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-7.md).
 
 #### Attributs et contraintes
 
@@ -729,13 +729,13 @@ Ce concept est mobilisé par les capacités [CAP-15](../../04_architecture-repos
 
 #### Rattachement
 
-- **Capacités** : [CAP-15](../../04_architecture-repository/02_architecture-elements/strategy/capabilities/cap-15.md)
+- **Capacités** : [CAP-15](../../04_architecture-repository/03_business-architecture/strategy/capabilities/cap-15.md)
 - **Tier** : A - données de référence (registres maîtres)
-- **Système de référence** : [CMP-35 : Infrastructure de clés publiques (PKI)](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-35.md), [CMP-36 : Passerelle de confiance mondiale OMS (GDHCN)](../../04_architecture-repository/05_building-blocks/abb/legacy-components/cmp-36.md)
+- **Système de référence** : [CMP-35 : Infrastructure de clés publiques (PKI)](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-35.md), [CMP-36 : Passerelle de confiance mondiale OMS (GDHCN)](../../04_architecture-repository/05_reference-library/building-blocks/sbb/cmp-36.md)
 - **Capacités intégrées (CNISN)** : [PART-ECHANGE-TRANSFRONTALIER](../../04_architecture-repository/01_partitions/externes/part-echange-transfrontalier.md)
-- **Profils (PTISN)** : [PT-14](../../04_architecture-repository/05_building-blocks/sbb/legacy-profiles/pt-14.md)
+- **Profils (PTISN)** : [PT-14](../../04_architecture-repository/05_reference-library/standards-base/profiles/pt-14.md)
 - **Thème** : Interopérabilité transfrontalière
-- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/04_patterns/artsn-rules/art-2.md), [ART-7](../../04_architecture-repository/04_patterns/artsn-rules/art-7.md)
+- **Chapitres ARTSN** : [ART-2](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md), [ART-7](../../04_architecture-repository/05_reference-library/patterns/artsn-rules/art-7.md)
 
 <!-- END:GENERATED -->
 
@@ -745,7 +745,7 @@ La couche sémantique du référentiel arrime les valeurs portées par les objet
 
 Chaque terminologie du référentiel est un objet à part entière, porteur d'une finalité, d'un contenu et d'une portée. Une terminologie constrain un ou plusieurs objets de données, et chaque objet de données declare les terminologies qui régissent ses valeurs. Les deux relations sont réciproques et contrôlées par le validateur du référentiel : une terminologie sans objet de données contraint, ou un objet de données dont la codification n'est portée par aucun composant applicatif, sont considérés comme des anomalies.
 
-<!-- BEGIN:GENERATED mode=table source=04_architecture-repository/02_architecture-elements/data/terminologies/term-atc.md,04_architecture-repository/02_architecture-elements/data/terminologies/term-cim-11.md,04_architecture-repository/02_architecture-elements/data/terminologies/term-dci.md,04_architecture-repository/02_architecture-elements/data/terminologies/term-loinc.md,04_architecture-repository/02_architecture-elements/data/terminologies/term-rxnorm.md,04_architecture-repository/02_architecture-elements/data/terminologies/term-snomed-ct.md -->
+<!-- BEGIN:GENERATED mode=table source=04_architecture-repository/05_reference-library/standards-base/code-systems/term-atc.md,04_architecture-repository/05_reference-library/standards-base/code-systems/term-cim-11.md,04_architecture-repository/05_reference-library/standards-base/code-systems/term-dci.md,04_architecture-repository/05_reference-library/standards-base/code-systems/term-loinc.md,04_architecture-repository/05_reference-library/standards-base/code-systems/term-rxnorm.md,04_architecture-repository/05_reference-library/standards-base/code-systems/term-snomed-ct.md -->
 <!-- Généré par scripts/build_wrappers.py : ne pas éditer à la main -->
 
 | Code | Titre canonique | Rattachement | Statut | Fiche |
@@ -759,7 +759,7 @@ Chaque terminologie du référentiel est un objet à part entière, porteur d'un
 
 <!-- END:GENERATED -->
 
-Le registre chapeau de ces terminologies est publié au niveau CNISN sous l'identifiant [TERM-CODIFICATION-COMMUNE : Terminologie et codification communes](../../04_architecture-repository/02_architecture-elements/data/terminologies/term-codification-commune.md). Il fixe les services de consultation de systèmes de codes, de validation, d'expansion, de recherche et de traduction. Les terminologies ci-dessus en sont les déclinaisons métier : elles définissent, pour un usage donné, quel référentiel de codes s'applique.
+Le registre chapeau de ces terminologies est publié au niveau CNISN sous l'identifiant [TERM-CODIFICATION-COMMUNE : Terminologie et codification communes](../../04_architecture-repository/05_reference-library/standards-base/code-systems/term-codification-commune.md). Il fixe les services de consultation de systèmes de codes, de validation, d'expansion, de recherche et de traduction. Les terminologies ci-dessus en sont les déclinaisons métier : elles définissent, pour un usage donné, quel référentiel de codes s'applique.
 
 ## Liens
 
@@ -775,13 +775,13 @@ Le registre chapeau de ces terminologies est publié au niveau CNISN sous l'iden
 ## Références
 
 - **matrice de lecture** : Matrice de lecture de l'ARTSN (niveau 3) (`02_artsn/reading-matrix.md`)
-- **chapitre ART-2 (médiation et normalisation)** : Médiation et normalisation (`04_architecture-repository/04_patterns/artsn-rules/art-2.md`)
-- **F.2** : F.2 : Préservation de la souveraineté intersectorielle (`04_architecture-repository/04_patterns/foundations/f-2.md`)
-- **F.3** : F.3 : Éradication des silos technologiques (`04_architecture-repository/04_patterns/foundations/f-3.md`)
+- **chapitre ART-2 (médiation et normalisation)** : Médiation et normalisation (`04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md`)
+- **F.2** : F.2 : Préservation de la souveraineté intersectorielle (`04_architecture-repository/05_reference-library/patterns/foundations/f-2.md`)
+- **F.3** : F.3 : Éradication des silos technologiques (`04_architecture-repository/05_reference-library/patterns/foundations/f-3.md`)
 - **CAESN** : Cadre d'Architecture d'Entreprise de la Santé Numérique (CAESN) (`00_caesn/00_overview/index.md`)
 - **Chapitres et patterns de référence** : Chapitres et patterns de référence (`02_artsn/04_patterns/index.md`)
-- **ART-2 : Médiation et normalisation** : Médiation et normalisation (`04_architecture-repository/04_patterns/artsn-rules/art-2.md`)
-- **ART-7 : Sécurité, contrôle d'accès et résidence** : Sécurité, contrôle d'accès et résidence de la donnée (`04_architecture-repository/04_patterns/artsn-rules/art-7.md`)
+- **ART-2 : Médiation et normalisation** : Médiation et normalisation (`04_architecture-repository/05_reference-library/patterns/artsn-rules/art-2.md`)
+- **ART-7 : Sécurité, contrôle d'accès et résidence** : Sécurité, contrôle d'accès et résidence de la donnée (`04_architecture-repository/05_reference-library/patterns/artsn-rules/art-7.md`)
 - **PT-14 : Interopérabilité transfrontalière** : Interopérabilité transfrontalière (`03_ptisn/03_profils/pt-14-interopabilite-transfrontaliere.md`)
 - **PART-ECHANGE-TRANSFRONTALIER : Interopérabilité transfrontalière** : Partie II : Objets d'interopérabilité requis (`01_cnisn/02_objets-interoperabilite/index.md`)
 - **CAESN : données** : Architecture des données et de l'information sanitaire (`00_caesn/04_data/index.md`)
