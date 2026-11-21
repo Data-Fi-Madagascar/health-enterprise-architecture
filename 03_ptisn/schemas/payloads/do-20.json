@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://healmadagascar.mg/schemas/payloads/do-20.json",
-  "title": "DO-20 — DO-20 : Investigation",
+  "title": "DO-20 — DO-20 : Investigation épidémiologique",
   "description": "Enquête épidémiologique et/ou de laboratoire menée pour confirmer ou infirmer un signal, identifier la source, le mode de transmission et les facteurs de risque d'un événement sanitaire.",
   "type": "object",
   "properties": {
@@ -52,9 +52,10 @@
   "x-hea-type": "objet-de-donnees",
   "x-hea-status": "draft",
   "x-hea-owner": "DEPSI",
-  "x-hea-fhir-resource": "DiagnosticReport",
+  "x-hea-fhir-resource": "QuestionnaireResponse",
   "x-hea-fhir-resources": [
-    "DiagnosticReport"
+    "QuestionnaireResponse",
+    "Observation"
   ],
   "x-hea-source-ref": "DHIS2, OMS protocoles"
 }

@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://healmadagascar.mg/schemas/payloads/do-18.json",
-  "title": "DO-18 — DO-18 : Signal",
-  "description": "Information brute ou indice épidémiologique détecté par un agent communautaire, un formation sanitaire ou un système de surveillance, indiquant un événement sanitaire inhabituel susceptible de nécessiter une investigation.",
+  "title": "DO-18 — DO-18 : Signal, notification et alerte sanitaires",
+  "description": "Cycle de trois événements imbriqués qui structure la surveillance sanitaire. Le signal est l'information brute ou l'indice épidémiologique détecté par un agent communautaire, une formation sanitaire ou un système de surveillance, indiquant un événement sanitaire inhabituel susceptible de nécessiter une investigation. La notification est la transmission formelle et obligatoire d'un événement sanitaire suspecté ou confirmé aux autorités compétentes (district, région, ministère, OMS) ; elle initie le processus officiel de réponse et constitue un engagement juridique du déclarant. L'alerte est l'avertissement déclenché automatiquement ou manuellement lorsqu'un indicateur de surveillance dépasse un seuil prédéfini ; elle est l'action opérationnelle qui découle de la notification et vise à mobiliser rapidement les acteurs compétents pour la riposte.",
   "type": "object",
   "properties": {
     "id": {
@@ -54,7 +54,8 @@
   "x-hea-owner": "DEPSI",
   "x-hea-fhir-resource": "Flag",
   "x-hea-fhir-resources": [
-    "Flag"
+    "Flag",
+    "Communication"
   ],
-  "x-hea-source-ref": "Système EVIPNet, DHIS2"
+  "x-hea-source-ref": "Système EVIPNet, DHIS2, FHIR Flag et FHIR Communication, Règlement sanitaire international (RSI)"
 }

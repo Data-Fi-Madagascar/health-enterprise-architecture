@@ -35,9 +35,8 @@ L'objet métier BO-01 : Patient & identité structure et pilote les concepts de 
 #### Objets de données réalisés (ARTSN)
 
 - [DO-01 : Patient](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-01.md)
-- [DO-02 : Identifiant national](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-02.md)
-- [DO-03 : Dossier patient](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-03.md)
-- [DO-04 : Épisode de soins](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-04.md)
+- [DO-03 : Dossier et épisode de soins](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-03.md)
+- [DO-03 : Dossier et épisode de soins](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-03.md)
 
 #### Flux de valeur
 
@@ -67,8 +66,8 @@ L'objet métier BO-02 : Prestation & soins structure et pilote les concepts de d
 
 - [DO-05 : Consultation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-05.md)
 - [DO-06 : Prescription](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-06.md)
-- [DO-07 : Référence](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-07.md)
-- [DO-08 : Contre-référence](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-08.md)
+- [DO-07 : Référence et contre-référence](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-07.md)
+- [DO-07 : Référence et contre-référence](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-07.md)
 - [DO-09 : Évacuation sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-09.md)
 
 #### Flux de valeur
@@ -99,8 +98,8 @@ L'objet métier BO-03 : Dispensation & produits structure et pilote les concepts
 
 - [DO-10 : Dispensation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-10.md)
 - [DO-11 : Produit de santé](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-11.md)
-- [DO-12 : Lot](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-12.md)
-- [DO-13 : Stock](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-13.md)
+- [DO-12 : Lot et stock](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-12.md)
+- [DO-12 : Lot et stock](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-12.md)
 
 #### Flux de valeur
 
@@ -129,10 +128,10 @@ L'objet métier BO-04 : Financement & couverture structure et pilote les concept
 
 #### Objets de données réalisés (ARTSN)
 
-- [DO-14 : Éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-14.md)
-- [DO-15 : Couverture sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-15.md)
-- [DO-16 : Facturation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-16.md)
-- [DO-17 : Vérification d'éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-17.md)
+- [DO-14 : Couverture sanitaire et éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-14.md)
+- [DO-14 : Couverture sanitaire et éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-14.md)
+- [DO-16 : Facturation et demande de remboursement](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-16.md)
+- [DO-17 : Demande et preuve de vérification d'éligibilité](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-17.md)
 
 #### Flux de valeur
 
@@ -160,11 +159,10 @@ L'objet métier BO-05 : Risque & surveillance structure et pilote les concepts d
 
 #### Objets de données réalisés (ARTSN)
 
-- [DO-18 : Signal](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-18.md)
-- [DO-19 : Foyer](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-19.md)
-- [DO-20 : Investigation](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-20.md)
-- [DO-21 : Notification sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-21.md)
-- [DO-22 : Alerte sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-22.md)
+- [DO-18 : Signal, notification et alerte sanitaires](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-18.md)
+- [DO-19 : Foyer épidémique](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-19.md)
+- [DO-20 : Investigation épidémiologique](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-20.md)
+- [DO-18 : Signal, notification et alerte sanitaires](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-18.md)
 
 #### Flux de valeur
 
@@ -196,8 +194,7 @@ L'objet métier BO-06 : Exploitation & gestion structure et pilote les concepts 
 - [DO-24 : Agent de santé](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-24.md)
 - [DO-25 : Indicateur sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-25.md)
 - [DO-26 : Zone sanitaire](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-26.md)
-- [DO-27 : Tâche](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-27.md)
-- [DO-28 : Tableau de bord](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-28.md)
+- [DO-27 : Tâche et action de suivi](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-27.md)
 
 #### Flux de valeur
 
@@ -228,8 +225,7 @@ L'objet métier BO-07 : Interopérabilité transfrontalière structure et pilote
 #### Objets de données réalisés (ARTSN)
 
 - [DO-29 : Résumé international du patient](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-29.md)
-- [DO-30 : Section du résumé](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-30.md)
-- [DO-31 : Confiance internationale](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-31.md)
+- [DO-31 : Ancre de confiance](../../04_architecture-repository/02_architecture-elements/data/data-objects/do-31.md)
 
 #### Flux de valeur
 

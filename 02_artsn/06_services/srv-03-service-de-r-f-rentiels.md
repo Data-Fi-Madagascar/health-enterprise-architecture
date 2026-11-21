@@ -11,9 +11,9 @@ envelope: 02_artsn/06_services/srv-03-service-de-r-f-rentiels.md
 categorie: applicatif
 serves: ["PP-06"]
 realizes: ["ABB-ECHANGE-MEDIATION"]
-accesses: ["DO-02"]
+accesses: ["DO-01"]
 implements: ["ART-4"]
-related: ["PP-06", "ABB-ECHANGE-MEDIATION", "DO-02", "ART-4", "CMP-10"]
+related: ["PP-06", "ABB-ECHANGE-MEDIATION", "DO-01", "ART-4", "CMP-10"]
 tags: ["artsn", "service", "srv-03", "patterns"]
 ---
 

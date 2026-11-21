@@ -477,9 +477,6 @@
       "DO16": {
         "$ref": "https://healmadagascar.mg/schemas/payloads/do-16.json"
       },
-      "DO14": {
-        "$ref": "https://healmadagascar.mg/schemas/payloads/do-14.json"
-      },
       "DO17": {
         "$ref": "https://healmadagascar.mg/schemas/payloads/do-17.json"
       }
@@ -508,7 +505,6 @@
     "PaymentNotice"
   ],
   "x-hea-data-objects": [
-    "DO-14",
     "DO-16",
     "DO-17"
   ],

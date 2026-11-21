@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://healmadagascar.mg/schemas/payloads/do-29.json",
-  "title": "DO-29 — DO-29 : Résumé international du patient (IPS)",
+  "title": "DO-29 — DO-29 : Résumé international du patient",
   "description": "Document clinique structuré, minimal et non exhaustif, destiné à faciliter la continuité des soins lors d'un episode de soins transfrontalier. Conforme au standard HL7 IPS, il comprend les informations cliniques essentielles du patient : démographie, allergies, médicaments en cours, problèmes de santé, antécédents, vaccinations, résultats de diagnostic, dispositifs médicaux et procédures. Il est échangeable entre systèmes de santé de pays différents grâce aux profils FHIR IPS.",
   "type": "object",
   "properties": {
@@ -42,9 +42,10 @@
   "x-hea-type": "objet-de-donnees",
   "x-hea-status": "draft",
   "x-hea-owner": "DEPSI",
-  "x-hea-fhir-resource": "Composition",
+  "x-hea-fhir-resource": "Bundle",
   "x-hea-fhir-resources": [
+    "Bundle",
     "Composition"
   ],
-  "x-hea-source-ref": "HL7 FHIR R4 : International Patient Summary (IPS)"
+  "x-hea-source-ref": "HL7 FHIR R4 : International Patient Summary (IPS) et IPS Sections"
 }

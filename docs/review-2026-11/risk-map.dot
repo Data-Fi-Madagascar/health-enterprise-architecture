@@ -1,0 +1,123 @@
+// Réseau de risques du cadre HEA (Madagascar)
+// Source : docs/review-2026-11/architecture-review.md
+// Graphes : constats (R) -> objectifs d'architecture (G) et couches (L)
+// rankdir=TB : hiérarchie verticale, lisible en Canvas dense
+digraph HEA_RiskMap {
+  rankdir=TB;
+  graph [fontname="Helvetica", labelloc="t", label="HEA - Cartographie des risques d'architecture (revue 2026-11)\nContour = nature du defaut (architecture / preuve / institutionnel)", fontsize=16, nodesep=0.45, ranksep=0.75];
+  node [fontname="Helvetica", fontsize=10, style="filled", color="#4a4a4a", penwidth=1.0];
+  edge [fontname="Helvetica", fontsize=8, color="#6b6b6b", arrowsize=0.7];
+
+  // -----------------------------------------------------------
+  // Classes de risque
+  // -----------------------------------------------------------
+  subgraph cluster_architecture {
+    label="Nature : défaut d'architecture";
+    style="rounded,dashed";
+    color="#b03030";
+    fontcolor="#b03030";
+    R1 [label="R1\nAucun profil dossier de sante\nni profil reference", fillcolor="#f8d7d7", tooltip="CAP-02 au niveau de maturite 1 ; PT-19 presuppose un dossier qu'aucun profil ne definit."];
+    R2 [label="R2\nChaine VS-CAP-[INTEROP]-ART-PT\nrompue au niveau 2", fillcolor="#f8d7d7", tooltip="CAP-INT-01..16 retires ; 36 objets non-capacites ; compte obsolete en circulation."];
+    R3 [label="R3\nAucune autorisation d'API,\nnul modele de menace", fillcolor="#f8d7d7", tooltip="Ni OAuth2, ni OIDC, ni mTLS ; ni cycle de vie de cle."];
+    R4 [label="R4\nTCO sans cout unitaire\nni scenario ni sensibilite", fillcolor="#f8d7d7", tooltip="Enveloppe non discriminante : la priorisation a 7 criteres reste decorative."];
+    R7 [label="R7\nObservabilite et PRA\nsans composant ni lot avant L5", fillcolor="#f8d7d7", tooltip="F.6 nommee dans le modele de valeur ; pile de supervision decrite en annexe seule."];
+    R8 [label="R8\nAucun modele de charge\nni dimensionnement", fillcolor="#f8d7d7", tooltip="46 composants a instancier sans hypothese de volume."];
+    R10 [label="R10\nLes 3 ecarts de trajectoire\nsont des reserves vides", fillcolor="#f8d7d7", tooltip="Aucune table de lots ne reference un ecart."];
+    R11 [label="R11\nFHIR vs PIXm/PDQm\nSNOMED rejete puis recommande", fillcolor="#f8d7d7", tooltip="Deux contradictions techniques entre ADR-0009, STD-0001, STD-0005, STD-0007."];
+    R12 [label="R12\nRunway de maturite\nincompatible avec les lots", fillcolor="#f8d7d7", tooltip="CAP-13 niveau 5 a 12 mois vs lot L4 en T2-T4 2028."];
+    R13 [label="R13\nLiens service-composant-objet\nfaus mais resolus", fillcolor="#f8d7d7", tooltip="6 liens decales ; 22 chapitres ART sans implements declare."];
+  }
+
+  subgraph cluster_evidence {
+    label="Nature : defaut de preuve";
+    style="rounded,dashed";
+    color="#b07d20";
+    fontcolor="#b07d20";
+    R5 [label="R5\nRegistre ADR : 4 vocabulaires\n'applique' pour 'decide'", fillcolor="#fdf0d5", tooltip="ADR-0001..0004 dates 2026-07-01 alors que les echanges sont programmes T2-T3 2028."];
+    R6 [label="R6\nContradiction GDHM\nentre deux annexes", fillcolor="#fdf0d5", tooltip="comparaison = 'Non evalue' ; evaluation = Phase 3, 2,5/5, rang 17/32."];
+    R14 [label="R14\nAnnexes divergentes\ndu frontmatter referentiel", fillcolor="#fdf0d5", tooltip="~26 objets absents de l'annexe E ; annexes A et E contradictoires."];
+  }
+
+  subgraph cluster_institution {
+    label="Nature : defaut institutionnel";
+    style="rounded,dashed";
+    color="#3a6ea5";
+    fontcolor="#3a6ea5";
+    R9 [label="R9\nGouvernance et loi\nsequencees apres le lot L1", fillcolor="#d9e6f2", tooltip="CNASN T4 2026, instances 2027 ; L1 court T4 2026 - T2 2027."];
+    R15 [label="R15\nGestion des risques\ninter-sectoriels non couverte", fillcolor="#d9e6f2", tooltip="Traitee comme un critere sur quatorze, sans profil dedie."];
+  }
+
+  // -----------------------------------------------------------
+  // Objectifs d'architecture (le "pourquoi")
+  // -----------------------------------------------------------
+  subgraph cluster_goals {
+    label="Objectifs d'architecture affectes";
+    style="rounded";
+    color="#4a4a4a";
+    G1 [label="G1\nTracabilite bout en bout\nVS vers beneficaire", shape=box, fillcolor="#e8e8e8"];
+    G2 [label="G2\nCouverture du flux VS-01\n(soins, parcours, reference)", shape=box, fillcolor="#e8e8e8"];
+    G3 [label="G3\nOpposabilite et\nconformite des tiers", shape=box, fillcolor="#e8e8e8"];
+    G4 [label="G4\nSecurite et\nprotection des donnees", shape=box, fillcolor="#e8e8e8"];
+    G5 [label="G5\nFiabilite et\nexploitabilite en operation", shape=box, fillcolor="#e8e8e8"];
+    G6 [label="G6\nScalabilite et\nsoutenabilite financiere", shape=box, fillcolor="#e8e8e8"];
+    G7 [label="G7\nCredibilite du referentiel\nenvers bailleurs et comite", shape=box, fillcolor="#e8e8e8"];
+    G8 [label="G8\nInteroperabilite\noperationnelle", shape=box, fillcolor="#e8e8e8"];
+  }
+
+  // -----------------------------------------------------------
+  // Couche concernee
+  // -----------------------------------------------------------
+  L1 [label="Niveau 1\nCAESN", shape=ellipse, fillcolor="#f2f2f2"];
+  L2 [label="Niveau 2\nCNISN", shape=ellipse, fillcolor="#f2f2f2"];
+  L3 [label="Niveau 3\nARTSN", shape=ellipse, fillcolor="#f2f2f2"];
+  L4 [label="Niveau 4\nPTISN", shape=ellipse, fillcolor="#f2f2f2"];
+  L5 [label="Referentiel objet\n04_architecture-repository", shape=ellipse, fillcolor="#f2f2f2"];
+
+  // -----------------------------------------------------------
+  // Relations risque -> objectif
+  // -----------------------------------------------------------
+  R1 -> G2 [label="critique"];
+  R1 -> G1;
+  R2 -> G1 [label="critique"];
+  R2 -> G7;
+  R3 -> G4 [label="critique"];
+  R4 -> G6 [label="critique"];
+  R4 -> G7;
+  R5 -> G3 [label="eleve"];
+  R5 -> G7;
+  R6 -> G7 [label="eleve"];
+  R7 -> G5 [label="eleve"];
+  R8 -> G6 [label="eleve"];
+  R9 -> G3 [label="eleve"];
+  R9 -> G7;
+  R10 -> G1;
+  R10 -> G7;
+  R11 -> G8;
+  R12 -> G1;
+  R12 -> G6;
+  R13 -> G1;
+  R14 -> G1;
+  R15 -> G2;
+
+  // -----------------------------------------------------------
+  // Relations risque -> couche concernee (dashed = localisation)
+  // -----------------------------------------------------------
+  R1 -> L4 [style=dashed];
+  R2 -> L2 [style=dashed];
+  R2 -> L5 [style=dashed];
+  R3 -> L2 [style=dashed];
+  R3 -> L3 [style=dashed];
+  R4 -> L1 [style=dashed];
+  R5 -> L2 [style=dashed];
+  R6 -> L1 [style=dashed];
+  R7 -> L3 [style=dashed];
+  R8 -> L3 [style=dashed];
+  R9 -> L1 [style=dashed];
+  R10 -> L3 [style=dashed];
+  R11 -> L2 [style=dashed];
+  R12 -> L1 [style=dashed];
+  R13 -> L3 [style=dashed];
+  R13 -> L5 [style=dashed];
+  R14 -> L2 [style=dashed];
+  R15 -> L4 [style=dashed];
+}

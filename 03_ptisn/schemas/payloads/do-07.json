@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://healmadagascar.mg/schemas/payloads/do-07.json",
-  "title": "DO-07 — DO-07 : Référence",
-  "description": "Orientation d'un patient d'un niveau de soins vers un autre (ex. : centre de santé vers hôpital), accompagnée des informations cliniques pertinentes pour la prise en charge ultérieure. La référence initie un parcours inter-établissement : elle est émise par le prestataire d'origine et acceptée par l'établissement de destination.",
+  "title": "DO-07 — DO-07 : Référence et contre-référence",
+  "description": "Orientation d'un patient d'un niveau de soins vers un autre (ex. : centre de santé vers hôpital), accompagnée des informations cliniques pertinentes pour la prise en charge ultérieure. La référence initie un parcours inter-établissement : elle est émise par le prestataire d'origine et acceptée par l'établissement de destination. La contre-référence en est le retour : le patient revient à l'établissement d'origine après une prise en charge spécialisée, avec le compte-rendu clinique, les recommandations de suivi et les traitements à poursuivre. Elle clôt le parcours inter-établissement et rétablit la responsabilité clinique au niveau d'origine.",
   "type": "object",
   "properties": {
     "id": {
@@ -14,6 +14,10 @@
       "type": "string",
       "description": "Version de l'objet",
       "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "patientRef": {
+      "type": "string",
+      "description": "Référence au patient (DO-01)"
     },
     "art_2Ref": {
       "type": "string",
@@ -39,7 +43,8 @@
   "x-hea-owner": "DEPSI",
   "x-hea-fhir-resource": "ServiceRequest",
   "x-hea-fhir-resources": [
-    "ServiceRequest"
+    "ServiceRequest",
+    "DocumentReference"
   ],
-  "x-hea-source-ref": "FHIR ServiceRequest (type: referral)"
+  "x-hea-source-ref": "FHIR ServiceRequest (type: referral) et FHIR DocumentReference (compte-rendu de contre-référence)"
 }

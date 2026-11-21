@@ -10,9 +10,9 @@ envelope: 02_artsn/06_services/srv-06-service-de-pilotage-et-tableaux-de-bord.md
 categorie: applicatif
 serves: ["PP-07"]
 realizes: ["ABB-EXPOSITION-DONNEES-ANALYTIQUES"]
-accesses: ["DO-25", "DO-28"]
+accesses: ["DO-25"]
 implements: ["ART-3", "ART-6"]
-related: ["PP-07", "ABB-EXPOSITION-DONNEES-ANALYTIQUES", "CAP-03", "DO-25", "DO-28", "ART-3", "ART-6", "CMP-03", "CMP-04"]
+related: ["PP-07", "ABB-EXPOSITION-DONNEES-ANALYTIQUES", "CAP-03", "DO-25", "ART-3", "ART-6", "CMP-03", "CMP-04"]
 tags: ["artsn", "service", "srv-06", "patterns"]
 ---
 # Service de pilotage et tableaux de bord

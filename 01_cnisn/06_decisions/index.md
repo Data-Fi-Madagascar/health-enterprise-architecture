@@ -51,6 +51,7 @@ Chaque ADR suit le modèle type, avec un statut parmi `proposé`, `accepté`, `a
 | adr-0011 | "ADR-0011 : Séparation du service d'éligibilité et de couverture" | candidate | 2026-09-24 |
 | adr-0012 | "ADR-0012 : Rattachement One Health à la surveillance et au pilotage" | candidate | 2026-09-24 |
 | adr-0013 | "ADR-0013 : Taxonomie des fonctions de domaine comme référence de couverture et réconciliation de la chaîne vers les données" | candidate | 2026-11-21 |
+| adr-0014 | "ADR-0014 : Rationalisation du catalogue des objets de données par fusion, gouvernance de la valeur d'usage et traçabilité des retraits" | candidate | 2026-11-21 |
 
 
 ## Outils de gestion des décisions
@@ -84,6 +85,7 @@ Chaque ADR suit le modèle type, avec un statut parmi `proposé`, `accepté`, `a
 - **ATNA : Audit et traçabilité** : Adoption d'ATNA et journalisation pour l'audit et la traçabilité (`01_cnisn/06_decisions/adr-0008-atna.md`)
 - **Terminologie : CIM-11 + LOINC** : Adoption d'un référentiel terminologique national (CIM-11 + LOINC) (`01_cnisn/06_decisions/adr-0009-terminologie.md`)
 - **ADR-0013 : Cadrage des fonctions de domaine** : Taxonomie des fonctions de domaine comme référence de couverture et réconciliation de la chaîne vers les données (`01_cnisn/06_decisions/adr-0013-cadrage-fonctions-domaine.md`)
+- **ADR-0014 : Rationalisation du catalogue des objets de données** : Rationalisation du catalogue des objets de données par fusion, gouvernance de la valeur d'usage et traçabilité des retraits (`01_cnisn/06_decisions/adr-0014-rationalisation-catalogue-donnees.md`)
 - **Registre des décisions** : Registre des décisions d'architecture (ADR) (`01_cnisn/06_decisions/registre-decisions.md`)
 - **Template de modification** : Template : Demande de modification architecturale (`01_cnisn/06_decisions/template-modification.md`)
 - **Introduction du CNISN** : Préambule du CNISN (`01_cnisn/00_introduction/index.md`)
@@ -109,5 +111,6 @@ Chaque ADR suit le modèle type, avec un statut parmi `proposé`, `accepté`, `a
 - [adr-0008: ADR-0008 : Adoption d'ATNA et journalisation pour l'audit et la traçabilité](adr-0008-atna.md)
 - [adr-change-log: Journal des modifications des ADR](adr-change-log.md)
 - [adr-0013: ADR-0013 : Taxonomie des fonctions de domaine comme référence de couverture et réconciliation de la chaîne vers les données](adr-0013-cadrage-fonctions-domaine.md)
+- [adr-0014: ADR-0014 : Rationalisation du catalogue des objets de données par fusion, gouvernance de la valeur d'usage et traçabilité des retraits](adr-0014-rationalisation-catalogue-donnees.md)
 
 <!-- liens-section-auto -->

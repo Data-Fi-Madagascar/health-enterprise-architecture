@@ -11,9 +11,9 @@ envelope: 02_artsn/06_services/srv-06-service-de-pilotage-et-tableaux-de-bord.md
 categorie: applicatif
 serves: ["PP-07"]
 realizes: ["CAP-03"]
-accesses: ["DO-04"]
+accesses: ["DO-03"]
 implements: ["ART-3"]
-related: ["PP-07", "CAP-03", "DO-04", "ART-3", "CMP-12"]
+related: ["PP-07", "CAP-03", "DO-03", "ART-3", "CMP-12"]
 tags: ["artsn", "service", "srv-06", "patterns"]
 ---
 

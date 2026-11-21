@@ -55,9 +55,9 @@
   "x-hea-type": "objet-de-donnees",
   "x-hea-status": "draft",
   "x-hea-owner": "DEPSI",
-  "x-hea-fhir-resource": "Medication",
+  "x-hea-fhir-resource": "MedicationKnowledge",
   "x-hea-fhir-resources": [
-    "Medication"
+    "MedicationKnowledge"
   ],
   "x-hea-source-ref": "Référentiel des produits de santé (CAESN), OMS ATC"
 }

@@ -89,6 +89,16 @@ RELATION_KEYS = REACHABILITY_KEYS + [
                  "uses", "constrained_by", "constrains"]
 GAP_METADATA_KEYS = ["gap_state", "closure_criteria"]
 
+# Propriétés de gouvernance du catalogue des objets de données. Ce ne sont pas
+# des relations du graphe : elles décrivent la valeur d'usage de la donnée et
+# ne créent donc aucune arête. `absorbs` est confronté à la trace de migration
+# `00_metamodel/do-migration.yaml`.
+DO_METADATA_KEYS = ["tier", "system_of_record", "absorbs"]
+DO_TIERS = {"A", "B", "C"}
+DO_MIGRATION_REL = os.path.join(
+    ARCH_REPOSITORY_DIR, "00_metamodel", "do-migration.yaml")
+TYPE_ABB = "architecture-building-block"
+
 # Îlots légitimes attendus (candidats non encore reliés) — ne font pas échouer.
 KNOWN_ISLANDS = {"art-10", "art-11", "f-5", "f-6"}
 
@@ -338,6 +348,8 @@ def load_relation_graph():
             if k in REACHABILITY_KEYS:
                 reach_outgoing.update(targets)
         for k in GAP_METADATA_KEYS:
+            relations[k] = set(list_value(fm_field(fm, k)))
+        for k in DO_METADATA_KEYS:
             relations[k] = set(list_value(fm_field(fm, k)))
         objects[oid] = {
             "id": oid,
@@ -617,6 +629,241 @@ def check_data_object_capability_attribution(objects):
                     "Capacité déclarée sans processus qui la réalise et qui "
                     "manipule l'objet",
                 ))
+    return errors
+
+
+def check_data_object_governance(objects):
+    """Vérifie la gouvernance de valeur des objets de données.
+
+    Un objet de données doit déclarer son niveau de criticité (`tier`) et le
+    système qui détient la version faisant foi de la donnée
+    (`system_of_record`). Ces deux propriétés ne sont pas des relations : elles
+    décrivent la valeur d'usage de la donnée et la seule exigence qu'elles
+    portent est leur présence et la bonne nature de leurs cibles.
+    """
+    errors = []
+    for oid, obj in sorted(objects.items()):
+        if obj.get("type") != TYPE_OBJET_DONNEES:
+            continue
+        relations = obj.get("relations", {})
+
+        tiers = sorted(relations.get("tier", set()))
+        if not tiers:
+            errors.append((
+                obj["file"], oid, "tier",
+                "Objet de données sans niveau de criticité (tier)",
+            ))
+        elif len(tiers) > 1 or tiers[0] not in DO_TIERS:
+            errors.append((
+                obj["file"], oid, "tier",
+                "Le tier doit valoir A, B ou C, ou %s" % ", ".join(tiers),
+            ))
+
+        systems = sorted(relations.get("system_of_record", set()))
+        if not systems:
+            errors.append((
+                obj["file"], oid, "system_of_record",
+                "Objet de données sans système de référence (system_of_record)",
+            ))
+        for target_id in systems:
+            target = objects.get(target_id)
+            if target is None:
+                errors.append((
+                    obj["file"], oid, target_id,
+                    "Le system_of_record doit cibler un objet existant",
+                ))
+            elif target.get("type") not in TYPE_COMPOSANT_TYPES + (TYPE_ABB,):
+                errors.append((
+                    obj["file"], oid, target_id,
+                    "Le system_of_record doit cibler un composant ou un bloc "
+                    "d'architecture, pas un objet de type %s" % target.get("type"),
+                ))
+    return errors
+
+
+def load_do_migration(path=None):
+    """Charge la trace machine-lisible des fusions du catalogue des DO.
+
+    Le fichier `04_architecture-repository/00_metamodel/do-migration.yaml`
+    est l'unique source qui autorise la présence d'un identifiant retiré
+    dans le champ `absorbs` d'un objet de données vivant.
+    """
+    migration_path = path or os.path.join(REPO_ROOT, DO_MIGRATION_REL)
+    entries = {}
+    if not os.path.exists(migration_path):
+        return entries
+
+    text = open(migration_path, encoding="utf-8").read()
+    raw_entries = None
+    try:
+        import yaml
+        loaded = yaml.safe_load(text)
+        if isinstance(loaded, list):
+            raw_entries = loaded
+    except ImportError:
+        raw_entries = None
+    except Exception:
+        raw_entries = None
+
+    if raw_entries is None:
+        raw_entries = []
+        current = None
+        for line in text.splitlines():
+            match = re.match(r"^\s*-\s+legacy_id:\s*(.+?)\s*$", line)
+            if match:
+                current = {"legacy_id": match.group(1).strip().strip('"').strip("'")}
+                raw_entries.append(current)
+                continue
+            match = re.match(r"^\s+([A-Za-z_][\w-]*):\s*(.*)$", line)
+            if match and current is not None:
+                current[match.group(1)] = match.group(2).strip()
+
+    for entry in raw_entries:
+        if not isinstance(entry, dict):
+            continue
+        legacy_id = str(entry.get("legacy_id", "")).strip().strip('"').strip("'")
+        if not legacy_id:
+            continue
+        raw_ids = entry.get("replacement_ids", [])
+        if isinstance(raw_ids, str):
+            replacement_ids = set(list_value(raw_ids))
+        else:
+            replacement_ids = {
+                str(value).strip().strip('"').strip("'") for value in raw_ids
+            }
+        entries[legacy_id] = {
+            "legacy_id": legacy_id,
+            "legacy_title": str(entry.get("legacy_title", "")).strip(),
+            "disposition": str(entry.get("disposition", "")).strip(),
+            "primary_replacement": str(
+                entry.get("primary_replacement", "")).strip().strip('"').strip("'"),
+            "replacement_ids": replacement_ids,
+            "rationale": str(entry.get("rationale", "")).strip(),
+        }
+    return entries
+
+
+def check_retired_data_objects(objects, migration):
+    """Vérifie que les fusions du catalogue des objets de données sont tracées.
+
+    Un identifiant retiré ne doit plus figurer comme objet actif ni comme
+    cible d'une relation. Chaque fusion doit être déclarée par le champ
+    `absorbs` de son objet successeur, et le fichier de migration doit
+    rester la seule source de ces identifiants historiques.
+    """
+    errors = []
+    retired = {lid: entry for lid, entry in migration.items()}
+
+    # 1. Aucun identifiant retiré ne subsiste comme objet actif.
+    for legacy_id in sorted(retired):
+        if legacy_id in objects:
+            errors.append((
+                objects[legacy_id]["file"], legacy_id, "",
+                "Identifiant d'objet de données retiré présent comme objet actif",
+            ))
+
+    # 2. Aucune relation du graphe ne pointe vers un identifiant retiré.
+    for oid, obj in sorted(objects.items()):
+        for target_id in sorted(obj.get("out", set())):
+            if target_id in retired:
+                errors.append((
+                    obj["file"], oid, target_id,
+                    "Relation vers un identifiant d'objet de données retiré",
+                ))
+
+    # 3. Chaque fusion déclarée est tracée par `absorbs` côté successeur.
+    for legacy_id, entry in sorted(retired.items()):
+        disposition = entry["disposition"]
+        primary = entry["primary_replacement"]
+        if not primary:
+            errors.append((
+                os.path.join(REPO_ROOT, DO_MIGRATION_REL), legacy_id, "",
+                "La trace de migration ne déclare aucun objet successeur",
+            ))
+            continue
+        if disposition == "merged":
+            successor = objects.get(primary)
+            if successor is None:
+                errors.append((
+                    os.path.join(REPO_ROOT, DO_MIGRATION_REL), legacy_id, primary,
+                    "L'objet successeur de la fusion n'existe pas",
+                ))
+                continue
+            absorbed = successor.get("relations", {}).get("absorbs", set())
+            if legacy_id not in absorbed:
+                errors.append((
+                    successor["file"], primary, legacy_id,
+                    "Fusion non tracée : l'objet successeur ne déclare pas "
+                    "absorbs",
+                ))
+        elif disposition == "retired":
+            successor = objects.get(primary)
+            if successor is None:
+                errors.append((
+                    os.path.join(REPO_ROOT, DO_MIGRATION_REL), legacy_id, primary,
+                    "L'hôte de la charge utile retirée n'existe pas",
+                ))
+                continue
+            with open(successor["file"], encoding="utf-8") as fh:
+                body = fh.read()
+            if legacy_id not in body:
+                errors.append((
+                    successor["file"], primary, legacy_id,
+                    "L'hôte de la charge utile retirée ne documente pas "
+                    "l'identifiant retiré",
+                ))
+        else:
+            errors.append((
+                os.path.join(REPO_ROOT, DO_MIGRATION_REL), legacy_id, disposition,
+                "Disposition de migration inconnue (merged ou retired attendu)",
+            ))
+
+    # 4. Chaque `absorbs` renvoie à une fusion déclarée par la trace.
+    for oid, obj in sorted(objects.items()):
+        if obj.get("type") != TYPE_OBJET_DONNEES:
+            continue
+        for legacy_id in sorted(obj.get("relations", {}).get("absorbs", set())):
+            entry = retired.get(legacy_id)
+            if entry is None:
+                errors.append((
+                    obj["file"], oid, legacy_id,
+                    "Identifiant absorbé absent de la trace de migration",
+                ))
+            elif entry["primary_replacement"] != oid:
+                errors.append((
+                    obj["file"], oid, legacy_id,
+                    "La trace de migration désigne %s comme successeur"
+                    % entry["primary_replacement"],
+                ))
+    return errors
+
+
+def check_retired_frontmatter_references(migration):
+    """Vérifie qu'aucun frontmatter ne pointe vers un identifiant retiré.
+
+    La trace de migration est la seule source qui autorise la mention d'un
+    identifiant d'objet de données retiré. Le champ `absorbs` d'un objet
+    vivant en est la seule exception tolérée, parce qu'il matérialise la
+    fusion elle-même.
+    """
+    errors = []
+    retired = set(migration)
+    if not retired:
+        return errors
+    for path in iter_md(REPO_ROOT, LINK_DIRS):
+        with open(path, encoding="utf-8") as fh:
+            text = fh.read()
+        fm, _body = parse_frontmatter(text)
+        if fm is None:
+            continue
+        for key in RELATION_KEYS:
+            for target_id in list_value(fm_field(fm, key)):
+                if target_id in retired:
+                    errors.append((
+                        path, key, target_id,
+                        "Le frontmatter pointe vers un identifiant d'objet de "
+                        "données retiré",
+                    ))
     return errors
 
 
@@ -1069,6 +1316,31 @@ def main():
     else:
         print("[OK] Chaque capacité déclarée par un objet de données est réalisée "
               "par un processus qui manipule l'objet.")
+
+    governance_errors = check_data_object_governance(objects)
+    if governance_errors:
+        ok = False
+        print("\n[ERREUR] Gouvernance des objets de données incomplète : %d"
+              % len(governance_errors))
+        for f, source_id, target_id, message in governance_errors[:50]:
+            print("  - %s (%s) [%s] : %s"
+                  % (os.path.relpath(f, REPO_ROOT), source_id, target_id, message))
+    else:
+        print("[OK] Tout objet de données déclare son tier et son system_of_record.")
+
+    migration = load_do_migration()
+    retired_errors = check_retired_data_objects(objects, migration)
+    retired_errors += check_retired_frontmatter_references(migration)
+    if retired_errors:
+        ok = False
+        print("\n[ERREUR] Fusions du catalogue des objets de données non tracées : %d"
+              % len(retired_errors))
+        for f, source_id, target_id, message in retired_errors[:50]:
+            print("  - %s (%s) [%s] : %s"
+                  % (os.path.relpath(f, REPO_ROOT), source_id, target_id, message))
+    else:
+        print("[OK] Les %d fusions du catalogue des objets de données sont tracées."
+              % len(migration))
 
     gap_governance_errors = check_gap_governance(objects)
     if gap_governance_errors:

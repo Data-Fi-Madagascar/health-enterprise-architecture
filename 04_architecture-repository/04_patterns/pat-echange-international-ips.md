@@ -17,7 +17,7 @@ architecture_scope: interoperability
 architecture_state: target
 maps_to: ["CAP-15", "CAP-18"]
 implements: ["ART-0", "ART-1", "ART-7"]
-related: ["PART-ECHANGE-TRANSFRONTALIER", "DO-29", "DO-30", "DO-31"]
+related: ["PART-ECHANGE-TRANSFRONTALIER", "DO-29", "DO-31"]
 tags: ["cnisn", "pattern", "transfrontalier", "ips", "gdhcn"]
 ---
 # Pattern d'échange international IPS

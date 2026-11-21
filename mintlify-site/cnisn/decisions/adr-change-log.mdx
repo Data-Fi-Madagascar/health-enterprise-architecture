@@ -41,6 +41,14 @@ Chaque entree suit le format :
 
 ## Historique des modifications
 
+### [2026-11-21] - Creation - ADR-0014
+- **Auteur** : Equipes DEPSI
+- **Description** : Creation de la decision qui rationnalise le catalogue des objets de donnees. Le catalogue passe de trente et un a vingt-trois entrees : huit fusions, un retrait avec hebergement par CMP-01 pour le tableau de bord, et la creation de DO-32 pour l'examen et son resultat de laboratoire. La decision ajoute les proprietes `tier` et `system_of_record` a chaque objet de donnees, la propriete `absorbs` pour tracer les fusions, et le fichier `04_architecture-repository/00_metamodel/do-migration.yaml` comme source unique de la trace. La renumerotation proposee par le catalogue recu et quatre fusions supplementaires sont refusees.
+- **Statut initial** : `candidate`
+- **Justification** : La mesure avant correction relevait cinq familles de recouvrement dans un catalogue constitue par additions successives. Retirer une entree sans trace aurait casse deux cent dix-huit relations et deux cent soixante-quatorze liens sans laisser au lecteur de moyen de savoir ce que l'identifiant disparu designait.
+- **Liens** : [ADR-0014](/cnisn/decisions/adr-0014-rationalisation-catalogue-donnees), DO-01, DO-32, CMP-01, Trace de migration, Chaine a quatre couches
+- **Impact** : Le validateur refuse desormais un objet de donnees sans tier ou sans system_of_record, une fusion non tracee, et toute relation pointant vers un identifiant retire. Les neuf schemas de payload des objets retires sont supprimes : le changement est cassant pour leurs consommateurs.
+
 ### [2026-11-21] - Creation - ADR-0013
 - **Auteur** : Equipes DEPSI
 - **Description** : Creation de la decision qui enregistre la taxonomie des fonctions de domaine transmise par le Ministere comme reference de couverture, sans creation de couche ni de type d'objet. La decision arbitre trois fonctions par absorption dans des capacites existantes et en laisse cinq a l'arbitrage ministeriel. Elle etablit egalement la regle d'adossement : tout objet de donnees declare les capacites qu'il sert via `maps_to`, et toute capacite declaree doit etre realisee par au moins un processus qui manipule l'objet.

@@ -18,7 +18,7 @@ architecture_state: target
 partitions: ["PART-VS-03"]
 maps_to: ["CAP-07"]
 implements: ["ART-4C", "ART-9"]
-accesses: ["DO-14", "DO-15", "DO-16", "DO-17"]
+accesses: ["DO-14", "DO-16", "DO-17"]
 related: ["PART-VS-03", "PRC-09", "PRC-10"]
 tags: ["abb", "eligibilite", "couverture", "protection-financiere"]
 ---
@@ -38,7 +38,7 @@ La démarche collaborative HEAL guide l'évaluation des règles de droits avec l
 - conserver la preuve de chaque vérification et une piste d'audit permettant d'expliquer une décision ultérieure ;
 - exposer les données nécessaires aux processus [PRC-09](../../02_architecture-elements/business/processes/prc-09.md) et [PRC-10](../../02_architecture-elements/business/processes/prc-10.md).
 
-L'ABB consulte les objets [DO-14 : Éligibilité](../../02_architecture-elements/data/data-objects/do-14.md), [DO-15 : Couverture sanitaire](../../02_architecture-elements/data/data-objects/do-15.md), [DO-16 : Facturation](../../02_architecture-elements/data/data-objects/do-16.md) et [DO-17 : Vérification d'éligibilité](../../02_architecture-elements/data/data-objects/do-17.md). Leur échange s'appuie sur HL7 FHIR R4, sans imposer de produit.
+L'ABB consulte les objets [DO-14 : Couverture sanitaire et éligibilité](../../02_architecture-elements/data/data-objects/do-14.md), [DO-16 : Facturation et demande de remboursement](../../02_architecture-elements/data/data-objects/do-16.md) et [DO-17 : Demande et preuve de vérification d'éligibilité](../../02_architecture-elements/data/data-objects/do-17.md). Leur échange s'appuie sur HL7 FHIR R4, sans imposer de produit.
 
 ## Séparation des responsabilités
 

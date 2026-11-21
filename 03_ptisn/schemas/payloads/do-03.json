@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://healmadagascar.mg/schemas/payloads/do-03.json",
-  "title": "DO-03 — DO-03 : Dossier patient",
-  "description": "Ensemble structuré des informations cliniques, administratives et de suivi relatives à un patient au cours de sa vie. Il comprend les antécédents, les épisodes de soins, les prescriptions, les résultats d'examens et les documents cliniques.",
+  "title": "DO-03 — DO-03 : Dossier et épisode de soins",
+  "description": "Ensemble structuré des informations cliniques, administratives et de suivi relatives à un patient au cours de sa vie. Il comprend les antécédents, les épisodes de soins, les prescriptions, les résultats d'examens et les documents cliniques. Un épisode de soins est une période continue de prise en charge d'un patient par un ou plusieurs prestataires de soins, depuis l'admission jusqu'à la sortie ou le transfert ; il peut couvrir une consultation, une hospitalisation, un suivi communautaire ou une téléconsultation. Le dossier groupe les documents produits au cours de ces épisodes.",
   "type": "object",
   "properties": {
     "id": {
@@ -14,6 +14,11 @@
       "type": "string",
       "description": "Version de l'objet",
       "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date de l'événement"
     },
     "patientRef": {
       "type": "string",
@@ -45,9 +50,10 @@
   "x-hea-type": "objet-de-donnees",
   "x-hea-status": "draft",
   "x-hea-owner": "DEPSI",
-  "x-hea-fhir-resource": "Patient",
+  "x-hea-fhir-resource": "EpisodeOfCare",
   "x-hea-fhir-resources": [
-    "Patient"
+    "EpisodeOfCare",
+    "DocumentReference"
   ],
-  "x-hea-source-ref": "FHIR Patient, IHE PCD"
+  "x-hea-source-ref": "FHIR EpisodeOfCare (groupement) et FHIR DocumentReference (documents du dossier)"
 }

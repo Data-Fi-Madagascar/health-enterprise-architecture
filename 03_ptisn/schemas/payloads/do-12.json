@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://healmadagascar.mg/schemas/payloads/do-12.json",
-  "title": "DO-12 — DO-12 : Lot",
-  "description": "Unité de production d'un produit de santé, identifiée par un numéro de lot, une date de fabrication et une date de péremption. Le lot permet la traçabilité complète de la chaîne d'approvisionnement.",
+  "title": "DO-12 — DO-12 : Lot et stock",
+  "description": "Unité de production d'un produit de santé, identifiée par un numéro de lot, une date de fabrication et une date de péremption. Le lot permet la traçabilité complète de la chaîne d'approvisionnement. Le stock associé à un lot est la quantité disponible de ce produit dans un point de stockage (entrepôt, formation sanitaire, case de santé) : il se calcule comme le solde entre les entrées (réceptions, transferts) et les sorties (dispensations, pertes, péremptions).",
   "type": "object",
   "properties": {
     "id": {
@@ -19,6 +19,11 @@
       "type": "string",
       "format": "date-time",
       "description": "Date de l'événement"
+    },
+    "quantite": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Quantité"
     },
     "lot": {
       "type": "string",
@@ -58,5 +63,5 @@
   "x-hea-fhir-resources": [
     "InventoryItem"
   ],
-  "x-hea-source-ref": "FHIR Medication"
+  "x-hea-source-ref": "FHIR InventoryItem (lot) et LMIS (Logistics Management Information System) pour les soldes"
 }

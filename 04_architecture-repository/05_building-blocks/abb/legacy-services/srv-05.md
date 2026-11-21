@@ -10,9 +10,9 @@ envelope: 02_artsn/06_services/srv-05-service-logistique-lmis.md
 categorie: applicatif
 serves: ["PP-06"]
 realizes: ["ABB-ECHANGE-LOGISTIQUE-LMIS"]
-accesses: ["DO-11", "DO-12", "DO-13"]
+accesses: ["DO-11", "DO-12"]
 implements: ["ART-10"]
-related: ["PP-06", "ABB-ECHANGE-LOGISTIQUE-LMIS", "ABB-AUDIT-PROVENANCE", "DO-11", "DO-12", "DO-13", "ART-10", "CMP-23"]
+related: ["PP-06", "ABB-ECHANGE-LOGISTIQUE-LMIS", "ABB-AUDIT-PROVENANCE", "DO-11", "DO-12", "ART-10", "CMP-23"]
 tags: ["artsn", "service", "srv-05", "patterns"]
 ---
 # Service logistique (LMIS)

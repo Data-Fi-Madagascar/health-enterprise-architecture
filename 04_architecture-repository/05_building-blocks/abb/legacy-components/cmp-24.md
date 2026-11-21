@@ -12,7 +12,7 @@ envelope: 02_artsn/05_cartographie/composants.md
 implements: ["ENF-1", "F-1"]
 maps_to: ["PART-ONE-HEALTH"]
 applies_to: ["PRC-04", "PRC-05"]
-accesses: ["DO-18", "DO-19", "DO-21"]
+accesses: ["DO-18", "DO-19", "DO-32"]
 tags: ["artsn", "niveau-1", "composant-applicatif", "CMP-24", "couche-2"]
 related: ["VS-02", "VS-04"]
 ---
@@ -21,5 +21,5 @@ related: ["VS-02", "VS-04"]
 **Discipline de mise en oeuvre.** L'interoperabilite avec la surveillance humaine est obligatoire : un meme evenement peut avoir une composante animale et humaine. Les signalements respectent les formats de messagerie d'alerte (ART-8) et sont horodates. Les donnees zoologiques et humaines sont cloisonnees par finalite et ne sont jointes qu'au sein des pipelines d'analyse autorises (CMP-03/CMP-04).
 - **Rattachement** : [ENF-1: Resilience a l'instabilite reseau](../../../03_requirements/enf-1.md), [F-1: Resilience face a la realite geographique du pays](../../../04_patterns/foundations/f-1.md).
 - **Processus soutenus** : [PRC-04: Veille, prevention et surveillance sanitaire](../../../02_architecture-elements/business/processes/prc-04.md) (veille et prevention), [PRC-05: Alerte, investigation et riposte](../../../02_architecture-elements/business/processes/prc-05.md) (alerte et riposte).
-- **Données portées** : [DO-18 : Signal](../../../02_architecture-elements/data/data-objects/do-18.md), [DO-19 : Foyer](../../../02_architecture-elements/data/data-objects/do-19.md), [DO-21 : Notification sanitaire](../../../02_architecture-elements/data/data-objects/do-21.md)
+- **Données portées** : [DO-18 : Signal, notification et alerte sanitaires](../../../02_architecture-elements/data/data-objects/do-18.md), [DO-19 : Foyer épidémique](../../../02_architecture-elements/data/data-objects/do-19.md), [DO-32 : Examen et résultat de laboratoire](../../../02_architecture-elements/data/data-objects/do-32.md)
 - **Statut : Brouillon.**
